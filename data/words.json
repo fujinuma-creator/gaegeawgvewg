@@ -1,0 +1,130 @@
+[
+  {
+    "id": "1",
+    "word": "proud",
+    "definition": "feeling pleased and satisfied with something you or someone did",
+    "japanese": "誇りに思う",
+    "useCase": "成果・人を褒めるとき",
+    "examples": [
+      "I'm proud of you for passing the exam. (試験に合格して誇りに思うよ)",
+      "She's proud of her work. (彼女は自分の仕事を誇りに思っている)",
+      "He felt proud after finishing it. (やり終えて誇りを感じた)"
+    ],
+    "synonyms": [
+      "I'm pleased with the result. (結果に満足している)",
+      "She's satisfied with her progress. (彼女は進歩に満足している)",
+      "I'm honored to be here. (ここにいられて光栄です)"
+    ]
+  },
+  {
+    "id": "2",
+    "word": "do you understand what I'm trying to convey",
+    "definition": "asking if someone understands your message",
+    "japanese": "言いたいこと伝わってる？",
+    "useCase": "説明後",
+    "examples": [
+      "Do you get what I mean? (言いたいこと分かる？)",
+      "Am I making sense? (意味通じてる？)",
+      "Do you follow me? (理解できてる？)"
+    ],
+    "synonyms": [
+      "Do you get my point? (要点わかる？)",
+      "Are you following me? (ついてきてる？)"
+    ]
+  },
+  {
+    "id": "3",
+    "word": "can't disclose all the details",
+    "definition": "cannot share all information",
+    "japanese": "詳細は明かせない",
+    "useCase": "ビジネス・守秘",
+    "examples": [
+      "I can't disclose everything yet. (まだ全部は明かせない)",
+      "Some details are confidential. (一部は機密です)",
+      "I'm not allowed to share that. (それは共有できない)"
+    ],
+    "synonyms": [
+      "He revealed the truth. (彼は真実を明かした)",
+      "I can't share that info. (その情報は共有できない)"
+    ]
+  },
+  {
+    "id": "4",
+    "word": "I'm proud to say",
+    "definition": "happily state something",
+    "japanese": "誇りを持って言える",
+    "useCase": "ポジティブな報告",
+    "examples": [
+      "I'm proud to say we succeeded. (成功したと誇りを持って言える)",
+      "I'm proud to say we grew. (成長したと胸を張って言える)",
+      "I'm proud to say she's on our team. (彼女がチームにいるのを誇りに思う)"
+    ],
+    "synonyms": [
+      "I'm happy to say we won. (勝ったと嬉しく言える)",
+      "I'm glad to say it worked. (うまくいったと言えて嬉しい)"
+    ]
+  },
+  {
+    "id": "5",
+    "word": "doing 100% better than sth",
+    "definition": "performing much better than before",
+    "japanese": "以前より圧倒的に良い",
+    "useCase": "改善・回復",
+    "examples": [
+      "I'm doing 100% better than last week. (先週より全然良い)",
+      "This is way better now. (今はかなり良い)",
+      "He's doing much better. (彼はだいぶ良くなった)"
+    ],
+    "synonyms": [
+      "I feel much better today. (今日はかなり良い)",
+      "Sales significantly improved. (売上が大きく改善した)"
+    ]
+  },
+  {
+    "id": "6",
+    "word": "let my mind drift",
+    "definition": "allow thoughts to wander",
+    "japanese": "ぼーっとする",
+    "useCase": "リラックス・退屈",
+    "examples": [
+      "I let my mind drift during class. (授業中ぼーっとしてた)",
+      "My mind started drifting. (意識がそれていった)",
+      "I just sat and zoned out. (ただぼーっとしてた)"
+    ],
+    "synonyms": [
+      "I zoned out for a minute. (ちょっとぼーっとした)",
+      "She was daydreaming at work. (仕事中に空想していた)"
+    ]
+  },
+  {
+    "id": "7",
+    "word": "snow drift",
+    "definition": "snow piled by wind",
+    "japanese": "吹き溜まりの雪",
+    "useCase": "天気",
+    "examples": [
+      "Snow drifts blocked the road. (雪の吹き溜まりで道が塞がれた)",
+      "The car was buried in a snow drift. (車が雪に埋もれた)",
+      "We walked through snow drifts. (雪の吹き溜まりを歩いた)"
+    ],
+    "synonyms": [
+      "The car hit a snowbank. (車が雪の塊にぶつかった)"
+    ]
+  },
+  {
+    "id": "8",
+    "word": "I refused to do",
+    "definition": "firmly say no",
+    "japanese": "はっきり断る",
+    "useCase": "強い拒否",
+    "examples": [
+      "I refused to help him. (彼を助けるのを断った)",
+      "She refused to answer. (彼女は答えなかった)",
+      "He refused to go. (彼は行くのを拒否した)"
+    ],
+    "synonyms": [
+      "I declined the offer. (その申し出を断った)",
+      "She rejected the idea. (彼女はその案を却下した)"
+    ]
+  }
+]
