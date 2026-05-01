@@ -1,83 +1,91 @@
-# English Vocab App
+# English Vocab App (Xcode / SwiftUI)
 
-英単語を効率的に復習するiPhoneアプリです。エビングハウスの忘却曲線に基づいた復習スケジュール機能を搭載しています。
+エビングハウスの忘却曲線に基づいて英単語を復習するための、自分用 iOS アプリです。SwiftUI / Xcode ネイティブで作成されています。
 
 ## 機能
 
-- 📱 iPhone対応（React Native + Expo）
-- 🎯 ランダム単語表示
-- 📅 エビングハウス忘却曲線復習スケジュール
-- 💾 ローカルストレージに進捗保存
-- 📊 復習統計情報表示
+- 📱 SwiftUI 製のネイティブ iOS アプリ（Xcode で開く）
+- 🧠 エビングハウス忘却曲線ベースの復習スケジュール
+- ◎ ／ △ ／ × の3段階ボタンで自己評価
+- ➕ アプリ内から英単語を追加可能（1単語ずつ、好きなだけ）
+- 🔍 単語帳（一覧・検索・削除・詳細表示）
+- 💾 ローカル（端末内 Documents/words.json）に永続保存
 
-## 復習スケジュール
+## 復習スケジュールのルール
 
-3段階ボタンで復習日を自動管理：
+ユーザー仕様どおり、以下の3段階で次回復習日を決定します。
 
-- **〇 覚えた** → 2か月後（60日後）に復習
-- **△ 忘れそう** → 1週間後（7日後）に復習
-- **× 覚えてない** → 1日後に復習
+| ボタン | 意味 | 次回復習 |
+|:-:|:-|:-|
+| ◎ | 覚えた | **3か月後**（90日後）に再出題 |
+| △ | 忘れそう | **1週間後**（7日後）に再出題 |
+| × | 覚えてない | **翌日**（1日後）に再出題 |
 
-## セットアップ
+エビングハウス忘却曲線の各段階（1日後 / 3日後 / 1週間後 / 1か月後 / 2か月後 / 3か月後 → 以後ずっと3か月後）はモデル側に enum として定義されているため、将来的にプログレッシブな段階遷移ロジックに切り替えることもできます（`Models.swift` の `EbbinghausStage`）。
 
-### 1. 依存関係をインストール
+## 出題フォーマット
 
-```bash
-npm install
+復習画面では、追加された各単語は以下のフォーマットで自動的に表示されます。
+
+```
+<英単語>
+■ 英語の定義
+  <English definition> → <日本語訳>
+■ 使う場面
+  ・<シーン1>
+  ・<シーン2>
+■ 例文
+  1. <English> → <日本語>
+  2. ...
+■ 類義語
+  <類義語>（<意味>）
+   • <例文 EN> → <例文 JA>
+[ ◎ 覚えた ] [ △ 忘れそう ] [ × 覚えてない ]
 ```
 
-### 2. AsyncStorageをインストール
+シードデータとして `thread` と `spokesman` の2語が組み込まれています。
 
-```bash
-npm install @react-native-async-storage/async-storage
+## 起動方法
+
+1. macOS で Xcode 15 以上を開く
+2. `EnglishVocabApp/EnglishVocabApp.xcodeproj` を開く
+3. 上部のスキームから **EnglishVocabApp** を選択
+4. シミュレータまたは実機を選んで ⌘R で実行
+
+> ⚠️ 実機で動かす場合は、Xcode の **Signing & Capabilities** タブで自分の Apple ID（Team）を選択し、Bundle Identifier を `com.<あなた>.EnglishVocabApp` などユニークなものに変更してください。
+
+## 単語の追加方法
+
+アプリ内の「追加」タブからフォームに入力するだけで、新しい単語が単語帳と復習対象に追加されます。入力欄は次の構成です。
+
+- 英単語
+- 英語の定義 / 日本語訳
+- 使う場面（1行に1つ）
+- 例文（英語 + 日本語訳） … 例文は何個でも追加可能
+- 類義語（語 + 意味 + 例文） … 類義語ごと・例文ごとに追加可能
+
+追加された単語は即座に保存され、当日から復習対象になります。
+
+## 開発ブランチ
+
+`claude/english-vocab-app-YCZhY`
+
+## ファイル構成
+
 ```
-
-### 3. アプリを起動
-
-```bash
-npm start
+EnglishVocabApp/
+├── EnglishVocabApp.xcodeproj/
+└── EnglishVocabApp/
+    ├── EnglishVocabAppApp.swift   # @main エントリポイント
+    ├── ContentView.swift          # TabView ルート
+    ├── Models.swift               # Word / ExampleSentence / SynonymGroup / EbbinghausStage / ReviewMark
+    ├── WordStore.swift            # 永続化 + 復習スケジュール計算
+    ├── ReviewView.swift           # ◎△× ボタン付き復習画面
+    ├── AddWordView.swift          # 単語追加フォーム
+    ├── WordListView.swift         # 単語一覧 + 詳細
+    ├── Assets.xcassets/
+    └── Preview Content/
 ```
-
-### 4. iPhoneで実行
-
-1. iPhoneに「Expo Go」アプリをインストール
-2. ターミナルに表示されたQRコードをスキャン
-3. アプリが起動します！
-
-## 単語を追加する
-
-`data/words.json` に新しい単語を追加してください。
-
-```json
-{
-  "id": "9",
-  "word": "単語",
-  "definition": "英語での定義",
-  "japanese": "日本語",
-  "useCase": "使う場面",
-  "examples": [
-    "例文1",
-    "例文2",
-    "例文3"
-  ],
-  "synonyms": [
-    "類義語1",
-    "類義語2"
-  ]
-}
-```
-
-## 目安
-
-- 1日20分で約200個のペースに最適化
-- 毎日アプリを開くと、その日に復習すべき単語がランダムに表示されます
-
-## 使用技術
-
-- React Native
-- Expo
-- TypeScript
-- AsyncStorage
 
 ## ライセンス
 
