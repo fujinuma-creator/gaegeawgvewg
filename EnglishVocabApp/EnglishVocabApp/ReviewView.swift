@@ -1,189 +1,460 @@
 import SwiftUI
 
+// MARK: - Card-based Review (matches HTML mockup)
+
 struct ReviewView: View {
     @EnvironmentObject var store: WordStore
-    @State private var currentWord: Word?
-    @State private var showAnswer: Bool = false
+
+    enum ReviewFilter: String, CaseIterable, Identifiable {
+        case dueToday = "本日"
+        case all = "すべて"
+        case unlearned = "未習得"
+        case fuzzy = "あいまい"
+        var id: String { rawValue }
+    }
+
+    @State private var filter: ReviewFilter = .dueToday
+    @State private var shuffled: Bool = false
+    @State private var indexInQueue: Int = 0
+    @State private var dragOffset: CGSize = .zero
+    @State private var showResetAlert: Bool = false
+
+    private var queue: [Word] {
+        let base: [Word]
+        switch filter {
+        case .dueToday:  base = store.dueWords
+        case .all:       base = store.words
+        case .unlearned: base = store.words.filter { $0.status == .unlearned }
+        case .fuzzy:     base = store.words.filter { $0.status == .fuzzy }
+        }
+        return shuffled ? base.shuffled() : base
+    }
+
+    private var currentWord: Word? {
+        guard !queue.isEmpty, indexInQueue < queue.count else { return nil }
+        return queue[indexInQueue]
+    }
 
     var body: some View {
-        NavigationStack {
-            Group {
+        VStack(spacing: 0) {
+            header
+            controlsRow
+            swipeHints
+            ZStack {
                 if let word = currentWord {
-                    wordCard(word)
+                    cardView(for: word)
+                        .id(word.id)
+                        .offset(x: dragOffset.width, y: 0)
+                        .rotationEffect(.degrees(Double(dragOffset.width) / 20))
+                        .gesture(swipeGesture(for: word))
+                        .animation(.spring(response: 0.35, dampingFraction: 0.75), value: dragOffset)
+                        .transition(.opacity)
                 } else {
-                    emptyState
+                    completedView
                 }
             }
-            .navigationTitle("今日の復習")
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        pickNextDueWord()
-                    } label: {
-                        Image(systemName: "arrow.clockwise")
-                    }
-                }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            actionButtons
+                .padding(.horizontal, 16)
+                .padding(.bottom, 8)
+        }
+        .background(Color(.systemGroupedBackground).ignoresSafeArea())
+        .alert("進捗をリセットしますか？", isPresented: $showResetAlert) {
+            Button("キャンセル", role: .cancel) {}
+            Button("リセット", role: .destructive) {
+                store.resetAllProgress()
+                indexInQueue = 0
             }
-            .onAppear {
-                if currentWord == nil {
-                    pickNextDueWord()
-                }
-            }
+        } message: {
+            Text("全単語の復習回数とステータスが初期化されます。")
         }
     }
 
-    // MARK: - Empty state
+    // MARK: - Header
 
-    private var emptyState: some View {
-        VStack(spacing: 16) {
-            Image(systemName: "checkmark.seal.fill")
-                .font(.system(size: 64))
-                .foregroundStyle(.green)
-            Text("今日の復習は完了！")
-                .font(.title2.bold())
-            Text("次の復習予定までゆっくり休みましょう。")
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-            if let next = store.words.map(\.nextReviewDate).min() {
-                Text("次回: \(next.formatted(date: .abbreviated, time: .omitted))")
-                    .font(.callout)
+    private var header: some View {
+        VStack(spacing: 8) {
+            HStack {
+                Text("英単語の復習")
+                    .font(.title2.bold())
+                Spacer()
+                Button("リセット") { showResetAlert = true }
+                    .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
+            HStack(spacing: 6) {
+                Text("\(store.perfectCount)")
+                Text("◎").foregroundStyle(.indigo)
+                Text("·")
+                Text("\(store.fuzzyCount)").foregroundStyle(.orange)
+                Text("△").foregroundStyle(.orange)
+                Text("/ \(store.totalCount)")
+                Spacer()
+                Text("\(Int(store.progressFraction * 100))%")
+                    .foregroundStyle(.secondary)
+            }
+            .font(.subheadline)
+
+            ProgressView(value: store.progressFraction)
+                .progressViewStyle(.linear)
+                .tint(.indigo)
         }
-        .padding()
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
     }
 
-    // MARK: - Word card
+    // MARK: - Controls (counter + audio/shuffle/filter)
+
+    private var controlsRow: some View {
+        HStack {
+            Text("\(min(indexInQueue + 1, max(queue.count, 1))) / \(queue.count)")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            Spacer()
+            HStack(spacing: 8) {
+                circleIconButton(systemName: "speaker.wave.2") {
+                    if let w = currentWord { SpeechManager.shared.speak(w.word) }
+                }
+                circleIconButton(systemName: shuffled ? "shuffle.circle.fill" : "shuffle") {
+                    shuffled.toggle()
+                    indexInQueue = 0
+                }
+                Menu {
+                    ForEach(ReviewFilter.allCases) { f in
+                        Button {
+                            filter = f
+                            indexInQueue = 0
+                        } label: {
+                            if filter == f {
+                                Label(f.rawValue, systemImage: "checkmark")
+                            } else {
+                                Text(f.rawValue)
+                            }
+                        }
+                    }
+                } label: {
+                    circleIconLabel(systemName: "line.3.horizontal.decrease")
+                }
+            }
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
+    }
+
+    private var swipeHints: some View {
+        HStack {
+            Text("← 左スワイプ：× わからない")
+                .foregroundStyle(.red.opacity(0.85))
+            Spacer()
+            Text("◎ 完璧：右スワイプ →")
+                .foregroundStyle(.indigo.opacity(0.85))
+        }
+        .font(.caption)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+    }
+
+    // MARK: - Card
 
     @ViewBuilder
-    private func wordCard(_ word: Word) -> some View {
+    private func cardView(for word: Word) -> some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                // Header
-                Text(word.word)
-                    .font(.system(size: 34, weight: .bold))
-                    .frame(maxWidth: .infinity, alignment: .leading)
+            VStack(alignment: .leading, spacing: 16) {
+                HStack(alignment: .top) {
+                    Button {
+                        SpeechManager.shared.speak(word.word)
+                    } label: {
+                        Image(systemName: "speaker.wave.2.fill")
+                            .font(.system(size: 18))
+                            .foregroundStyle(.white)
+                            .frame(width: 44, height: 44)
+                            .background(Color.indigo)
+                            .clipShape(Circle())
+                    }
+                    Spacer()
+                    statusBadge(for: word)
+                }
 
-                Divider()
-
-                section("英語の定義") {
-                    Text(word.definitionEnglish)
-                    Text("→ \(word.definitionJapanese)")
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(word.word)
+                        .font(.system(size: 32, weight: .bold))
+                    Text(word.definitionJapanese)
+                        .font(.body)
                         .foregroundStyle(.secondary)
                 }
 
+                Divider()
+
+                sectionTitle("英語の定義")
+                HStack(alignment: .top, spacing: 8) {
+                    smallSpeakerButton(text: word.definitionEnglish)
+                    Text(word.definitionEnglish)
+                        .italic()
+                        .foregroundStyle(.primary)
+                }
+
                 if !word.useCases.isEmpty {
-                    section("使う場面") {
+                    sectionTitle("使う場面")
+                    VStack(alignment: .leading, spacing: 6) {
                         ForEach(word.useCases, id: \.self) { uc in
-                            Text("・\(uc)")
+                            HStack(alignment: .firstTextBaseline, spacing: 8) {
+                                Circle()
+                                    .fill(Color.indigo)
+                                    .frame(width: 5, height: 5)
+                                Text(uc)
+                            }
                         }
                     }
                 }
 
                 if !word.examples.isEmpty {
-                    section("例文") {
-                        ForEach(Array(word.examples.enumerated()), id: \.element.id) { idx, ex in
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text("\(idx + 1). \(ex.english)")
-                                Text("→ \(ex.japanese)")
-                                    .foregroundStyle(.secondary)
+                    sectionTitle("例文")
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(word.examples) { ex in
+                            HStack(alignment: .top, spacing: 8) {
+                                smallSpeakerButton(text: ex.english)
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(ex.english)
+                                    Text(ex.japanese)
+                                        .foregroundStyle(.secondary)
+                                        .font(.subheadline)
+                                }
                             }
-                            .padding(.bottom, 4)
                         }
                     }
                 }
 
                 if !word.synonyms.isEmpty {
-                    section("類義語") {
+                    sectionTitle("類義語")
+                    VStack(alignment: .leading, spacing: 12) {
                         ForEach(word.synonyms) { syn in
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text("\(syn.word)（\(syn.meaning)）")
-                                    .font(.headline)
-                                ForEach(syn.examples) { ex in
-                                    VStack(alignment: .leading, spacing: 1) {
-                                        Text("• \(ex.english)")
-                                        Text("  → \(ex.japanese)")
-                                            .foregroundStyle(.secondary)
-                                    }
-                                }
-                            }
-                            .padding(.bottom, 6)
+                            synonymCard(syn)
                         }
                     }
                 }
 
-                Divider().padding(.vertical, 4)
-
-                // Review buttons
-                HStack(spacing: 12) {
-                    reviewButton(.good, color: .green)
-                    reviewButton(.fuzzy, color: .orange)
-                    reviewButton(.forgot, color: .red)
-                }
-                .padding(.top, 4)
-
-                // Footer info
                 HStack {
-                    Text("現段階: \(word.stage.label)")
+                    Text("復習回数: \(word.reviewCount) 回")
                     Spacer()
                     Text("次回: \(word.nextReviewDate.formatted(date: .abbreviated, time: .omitted))")
                 }
                 .font(.caption)
-                .foregroundStyle(.secondary)
-                .padding(.top, 4)
+                .foregroundStyle(.tertiary)
+                .padding(.top, 8)
             }
-            .padding()
+            .padding(20)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(Color(.secondarySystemGroupedBackground))
+                    .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 2)
+            )
+            .padding(.horizontal, 12)
+            .padding(.top, 4)
         }
     }
 
     @ViewBuilder
-    private func section<Content: View>(
-        _ title: String,
-        @ViewBuilder content: () -> Content
-    ) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text("■ \(title)")
-                .font(.headline)
-            content()
+    private func synonymCard(_ syn: SynonymGroup) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 8) {
+                smallSpeakerButton(text: syn.word)
+                Text(syn.word)
+                    .font(.headline)
+                    .foregroundStyle(.indigo)
+                Text(syn.meaning)
+                    .foregroundStyle(.secondary)
+            }
+            if !syn.definitionEnglish.isEmpty {
+                Text("英語の定義").font(.caption).foregroundStyle(.tertiary)
+                HStack(alignment: .top, spacing: 8) {
+                    smallSpeakerButton(text: syn.definitionEnglish)
+                    Text(syn.definitionEnglish).italic()
+                }
+            }
+            if !syn.useCases.isEmpty {
+                Text("使う場面").font(.caption).foregroundStyle(.tertiary)
+                VStack(alignment: .leading, spacing: 4) {
+                    ForEach(syn.useCases, id: \.self) { uc in
+                        HStack(alignment: .firstTextBaseline, spacing: 8) {
+                            Circle().fill(Color.indigo).frame(width: 4, height: 4)
+                            Text(uc).font(.subheadline)
+                        }
+                    }
+                }
+            }
+            if !syn.examples.isEmpty {
+                ForEach(syn.examples) { ex in
+                    HStack(alignment: .top, spacing: 8) {
+                        smallSpeakerButton(text: ex.english)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(ex.english).font(.subheadline)
+                            Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
+                        }
+                    }
+                }
+            }
         }
+        .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12).fill(Color(.tertiarySystemGroupedBackground))
+        )
     }
 
-    private func reviewButton(_ mark: ReviewMark, color: Color) -> some View {
-        Button {
-            guard let w = currentWord else { return }
-            store.record(mark: mark, for: w)
-            pickNextDueWord()
-        } label: {
-            VStack(spacing: 4) {
-                Text(mark.symbol)
-                    .font(.system(size: 32, weight: .bold))
-                Text(mark.label)
-                    .font(.caption)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 14)
-            .background(color.opacity(0.15))
-            .foregroundStyle(color)
-            .clipShape(RoundedRectangle(cornerRadius: 14))
-            .overlay(
-                RoundedRectangle(cornerRadius: 14)
-                    .stroke(color.opacity(0.5), lineWidth: 1)
+    // MARK: - Action buttons
+
+    private var actionButtons: some View {
+        HStack(spacing: 10) {
+            actionButton(
+                mark: .forgot,
+                bg: Color(.systemBackground),
+                fg: .red,
+                strokeColor: .red.opacity(0.3)
+            )
+            actionButton(
+                mark: .fuzzy,
+                bg: Color(.systemBackground),
+                fg: .orange,
+                strokeColor: .orange.opacity(0.3)
+            )
+            actionButton(
+                mark: .perfect,
+                bg: Color.indigo,
+                fg: .white,
+                strokeColor: .clear
             )
         }
     }
 
-    // MARK: - Picking
-
-    private func pickNextDueWord() {
-        let due = store.dueWords
-        if due.isEmpty {
-            currentWord = nil
-        } else {
-            // Show due words in random order so the same word doesn't always come first.
-            let next = due.randomElement()
-            currentWord = next
+    private func actionButton(mark m: ReviewMark, bg: Color, fg: Color, strokeColor: Color) -> some View {
+        Button {
+            recordMark(m)
+        } label: {
+            VStack(spacing: 4) {
+                Text(m.symbol)
+                    .font(.system(size: 22, weight: .bold))
+                Text(m.label)
+                    .font(.caption)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 14)
+            .background(bg)
+            .foregroundStyle(fg)
+            .overlay(RoundedRectangle(cornerRadius: 12).stroke(strokeColor, lineWidth: 1))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .shadow(color: .black.opacity(0.04), radius: 2, y: 1)
         }
+        .disabled(currentWord == nil)
+    }
+
+    // MARK: - Swipe gesture
+
+    private func swipeGesture(for word: Word) -> some Gesture {
+        DragGesture(minimumDistance: 10)
+            .onChanged { value in
+                dragOffset = value.translation
+            }
+            .onEnded { value in
+                let threshold: CGFloat = 100
+                if value.translation.width > threshold {
+                    recordMark(.perfect)
+                } else if value.translation.width < -threshold {
+                    recordMark(.forgot)
+                } else {
+                    dragOffset = .zero
+                }
+            }
+    }
+
+    private func recordMark(_ m: ReviewMark) {
+        guard let word = currentWord else { return }
+        store.record(mark: m, for: word)
+        dragOffset = .zero
+        // Move to next word in queue. Since the queue is computed from store,
+        // the answered word is removed from "due" automatically, so keep index.
+        if filter == .dueToday {
+            // Don't increment because the just-answered word leaves the queue,
+            // shifting the next word into the same index.
+        } else {
+            indexInQueue += 1
+        }
+        if indexInQueue >= queue.count { indexInQueue = max(0, queue.count - 1) }
+    }
+
+    // MARK: - Helpers
+
+    private func statusBadge(for word: Word) -> some View {
+        Text(word.status.label)
+            .font(.caption)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(
+                Capsule().fill(badgeColor(for: word.status).opacity(0.15))
+            )
+            .foregroundStyle(badgeColor(for: word.status))
+    }
+
+    private func badgeColor(for s: WordStatus) -> Color {
+        switch s {
+        case .unlearned: return .gray
+        case .fuzzy:     return .orange
+        case .perfect:   return .indigo
+        }
+    }
+
+    private func sectionTitle(_ title: String) -> some View {
+        HStack(spacing: 6) {
+            Rectangle().fill(Color.indigo).frame(width: 3, height: 14)
+            Text(title)
+                .font(.subheadline.weight(.medium))
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    private func smallSpeakerButton(text: String) -> some View {
+        Button {
+            SpeechManager.shared.speak(text)
+        } label: {
+            Image(systemName: "speaker.wave.2.fill")
+                .font(.system(size: 11))
+                .foregroundStyle(.indigo)
+                .frame(width: 24, height: 24)
+                .background(Color.indigo.opacity(0.1))
+                .clipShape(Circle())
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func circleIconButton(systemName: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            circleIconLabel(systemName: systemName)
+        }
+    }
+
+    private func circleIconLabel(systemName: String) -> some View {
+        Image(systemName: systemName)
+            .font(.system(size: 14))
+            .foregroundStyle(.secondary)
+            .frame(width: 36, height: 36)
+            .background(Color(.systemBackground))
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color(.separator), lineWidth: 0.5))
+    }
+
+    private var completedView: some View {
+        VStack(spacing: 12) {
+            Image(systemName: "checkmark.seal.fill")
+                .font(.system(size: 56))
+                .foregroundStyle(.green)
+            Text("本日の復習は完了！")
+                .font(.title3.bold())
+            if let next = store.words.map(\.nextReviewDate).filter({ $0 > Date() }).min() {
+                Text("次回: \(next.formatted(date: .abbreviated, time: .omitted))")
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding()
     }
 }
 

@@ -5,19 +5,20 @@ struct ContentView: View {
         TabView {
             ReviewView()
                 .tabItem {
-                    Label("復習", systemImage: "rectangle.stack.fill")
+                    Label("カード", systemImage: "rectangle.on.rectangle")
+                }
+
+            QuizView()
+                .tabItem {
+                    Label("クイズ", systemImage: "questionmark.circle")
                 }
 
             WordListView()
                 .tabItem {
-                    Label("単語帳", systemImage: "book.fill")
-                }
-
-            AddWordView()
-                .tabItem {
-                    Label("追加", systemImage: "plus.circle.fill")
+                    Label("一覧", systemImage: "list.bullet")
                 }
         }
+        .tint(.indigo)
     }
 }
 

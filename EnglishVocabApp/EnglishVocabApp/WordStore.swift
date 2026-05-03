@@ -67,36 +67,68 @@ final class WordStore: ObservableObject {
         save()
     }
 
-    // MARK: - Review logic
-
-    var dueWords: [Word] {
+    /// Reset all words back to "未習得" with reviewCount=0 and due today.
+    func resetAllProgress() {
         let now = Date()
-        return words.filter { $0.nextReviewDate <= now }
-                    .sorted { $0.nextReviewDate < $1.nextReviewDate }
+        for i in words.indices {
+            words[i].reviewCount = 0
+            words[i].status = .unlearned
+            words[i].nextReviewDate = now
+            words[i].lastReviewedDate = nil
+        }
+        save()
     }
 
+    // MARK: - Stats
+
+    var totalCount: Int { words.count }
+    var perfectCount: Int { words.filter { $0.status == .perfect }.count }
+    var fuzzyCount: Int { words.filter { $0.status == .fuzzy }.count }
+    var unlearnedCount: Int { words.filter { $0.status == .unlearned }.count }
+
+    var progressFraction: Double {
+        guard totalCount > 0 else { return 0 }
+        return Double(perfectCount) / Double(totalCount)
+    }
+
+    /// Words due for review today (or earlier).
+    var dueWords: [Word] {
+        let now = Date()
+        return words
+            .filter { $0.nextReviewDate <= now }
+            .sorted { $0.nextReviewDate < $1.nextReviewDate }
+    }
+
+    // MARK: - Review logic
+
     /// Records a review and schedules the next review date.
-    /// - ◎ (good): jump to 3 months later (and stay at 3-month stage)
-    /// - △ (fuzzy): jump to 1 week later
-    /// - × (forgot): reset to next day
+    /// - ◎ 完璧: increment reviewCount, schedule by Ebbinghaus curve
+    /// - △ あいまい: keep reviewCount, schedule 1 week later
+    /// - × わからない: reset reviewCount=0, schedule next day
     func record(mark: ReviewMark, for word: Word) {
         guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
         var w = words[idx]
         let now = Date()
         w.lastReviewedDate = now
 
+        let daysUntilNext: Int
         switch mark {
-        case .good:
-            w.stage = .threeMonths
+        case .perfect:
+            w.reviewCount += 1
+            w.status = .perfect
+            daysUntilNext = intervalDays(forCompletedReviewCount: w.reviewCount)
         case .fuzzy:
-            w.stage = .oneWeek
+            w.status = .fuzzy
+            daysUntilNext = 7
         case .forgot:
-            w.stage = .nextDay
+            w.reviewCount = 0
+            w.status = .unlearned
+            daysUntilNext = 1
         }
 
         w.nextReviewDate = Calendar.current.date(
             byAdding: .day,
-            value: w.stage.days,
+            value: daysUntilNext,
             to: now
         ) ?? now
 
@@ -122,9 +154,11 @@ final class WordStore: ObservableObject {
                     SynonymGroup(
                         word: "string",
                         meaning: "ひも",
+                        definitionEnglish: "a thin, twisted material used for tying or binding things",
+                        useCases: ["物を縛る・結ぶとき", "工作・梱包の場面"],
                         examples: [
                             ExampleSentence(english: "Tie it with a string.", japanese: "ひもで結ぶ。"),
-                            ExampleSentence(english: "A piece of string", japanese: "一本のひも")
+                            ExampleSentence(english: "A piece of string.", japanese: "一本のひも。")
                         ]
                     )
                 ]
@@ -143,12 +177,86 @@ final class WordStore: ObservableObject {
                     SynonymGroup(
                         word: "representative",
                         meaning: "代表",
+                        definitionEnglish: "a person chosen to act or speak for a group",
+                        useCases: ["会社・団体の代表として動く人"],
                         examples: [
-                            ExampleSentence(english: "Company representative", japanese: "会社の代表"),
-                            ExampleSentence(english: "Official representative", japanese: "公式代表")
+                            ExampleSentence(english: "Company representative.", japanese: "会社の代表。"),
+                            ExampleSentence(english: "Official representative.", japanese: "公式代表。")
                         ]
                     )
                 ]
+            ),
+            Word(
+                word: "speaker",
+                definitionEnglish: "a person who is speaking; a device that produces sound",
+                definitionJapanese: "話し手／スピーカー（音響機器）",
+                useCases: [
+                    "プレゼン・講演で話している人を指すとき",
+                    "音楽用の音響機器について話すとき"
+                ],
+                examples: [
+                    ExampleSentence(english: "He is a great speaker.", japanese: "彼は話が上手だ。"),
+                    ExampleSentence(english: "Turn up the speaker volume.", japanese: "スピーカーの音量を上げて。"),
+                    ExampleSentence(english: "The keynote speaker arrived.", japanese: "基調講演者が到着した。")
+                ],
+                synonyms: []
+            ),
+            Word(
+                word: "box",
+                definitionEnglish: "a container with flat sides; to put into a box; to fight as a sport",
+                definitionJapanese: "箱／箱に入れる／ボクシングする",
+                useCases: [
+                    "物を入れる容器について話すとき",
+                    "梱包する動作を表すとき",
+                    "スポーツのボクシングをするとき"
+                ],
+                examples: [
+                    ExampleSentence(english: "Put it in the box.", japanese: "それを箱に入れて。"),
+                    ExampleSentence(english: "I'll box these up.", japanese: "これを箱詰めしておくね。"),
+                    ExampleSentence(english: "He boxes on weekends.", japanese: "彼は週末にボクシングをする。")
+                ],
+                synonyms: []
+            ),
+            Word(
+                word: "a bunch of",
+                definitionEnglish: "a large number or amount of something (informal)",
+                definitionJapanese: "たくさんの（カジュアル）",
+                useCases: [
+                    "カジュアルに「たくさん」と言いたいとき",
+                    "友達や同僚との日常会話"
+                ],
+                examples: [
+                    ExampleSentence(english: "I have a bunch of work to do.", japanese: "やることがたくさんある。"),
+                    ExampleSentence(english: "We bought a bunch of snacks.", japanese: "お菓子をいっぱい買った。"),
+                    ExampleSentence(english: "There were a bunch of people.", japanese: "人がたくさんいた。")
+                ],
+                synonyms: [
+                    SynonymGroup(
+                        word: "lots of",
+                        meaning: "たくさんの",
+                        definitionEnglish: "a large amount of something",
+                        useCases: ["カジュアルに量の多さを表す"],
+                        examples: [
+                            ExampleSentence(english: "Lots of fun.", japanese: "とても楽しい。"),
+                            ExampleSentence(english: "Lots of people came.", japanese: "たくさんの人が来た。")
+                        ]
+                    )
+                ]
+            ),
+            Word(
+                word: "playful",
+                definitionEnglish: "full of fun and energy; light-hearted and joking",
+                definitionJapanese: "遊び心のある・ふざけた（ポジティブ）",
+                useCases: [
+                    "人や雰囲気が陽気でユーモラスな様子",
+                    "デザインや言い回しに「遊び心」があるとき"
+                ],
+                examples: [
+                    ExampleSentence(english: "She has a playful personality.", japanese: "彼女は遊び心のある性格だ。"),
+                    ExampleSentence(english: "His tone was playful.", japanese: "彼の口調はおどけていた。"),
+                    ExampleSentence(english: "A playful design.", japanese: "遊び心のあるデザイン。")
+                ],
+                synonyms: []
             )
         ]
     }

@@ -2,144 +2,279 @@ import SwiftUI
 
 struct WordListView: View {
     @EnvironmentObject var store: WordStore
+
+    enum ListFilter: String, CaseIterable, Identifiable {
+        case all = "すべて"
+        case unlearned = "未習得"
+        case fuzzy = "あいまい"
+        case perfect = "完璧"
+        var id: String { rawValue }
+
+        var symbol: String {
+            switch self {
+            case .all: return ""
+            case .unlearned: return ""
+            case .fuzzy: return "△"
+            case .perfect: return "◎"
+            }
+        }
+    }
+
     @State private var searchText = ""
+    @State private var filter: ListFilter = .all
+    @State private var expandedIds: Set<UUID> = []
+    @State private var showAddSheet = false
 
     var filteredWords: [Word] {
-        let sorted = store.words.sorted { $0.nextReviewDate < $1.nextReviewDate }
+        let byStatus: [Word]
+        switch filter {
+        case .all:       byStatus = store.words
+        case .unlearned: byStatus = store.words.filter { $0.status == .unlearned }
+        case .fuzzy:     byStatus = store.words.filter { $0.status == .fuzzy }
+        case .perfect:   byStatus = store.words.filter { $0.status == .perfect }
+        }
+        let filtered: [Word]
         if searchText.isEmpty {
-            return sorted
+            filtered = byStatus
+        } else {
+            filtered = byStatus.filter {
+                $0.word.localizedCaseInsensitiveContains(searchText)
+                || $0.definitionJapanese.localizedCaseInsensitiveContains(searchText)
+                || $0.definitionEnglish.localizedCaseInsensitiveContains(searchText)
+            }
         }
-        return sorted.filter {
-            $0.word.localizedCaseInsensitiveContains(searchText)
-            || $0.definitionEnglish.localizedCaseInsensitiveContains(searchText)
-            || $0.definitionJapanese.localizedCaseInsensitiveContains(searchText)
-        }
+        return filtered.sorted { $0.createdAt < $1.createdAt }
     }
 
     var body: some View {
-        NavigationStack {
-            List {
-                ForEach(filteredWords) { word in
-                    NavigationLink(value: word) {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(word.word)
-                                .font(.headline)
-                            Text(word.definitionJapanese.isEmpty
-                                 ? word.definitionEnglish
-                                 : word.definitionJapanese)
-                                .font(.subheadline)
-                                .foregroundStyle(.secondary)
-                                .lineLimit(2)
-                            HStack(spacing: 8) {
-                                Label(word.stage.label, systemImage: "calendar")
-                                Spacer()
-                                Text("次回: \(word.nextReviewDate.formatted(date: .abbreviated, time: .omitted))")
-                            }
-                            .font(.caption)
-                            .foregroundStyle(.tertiary)
-                        }
+        VStack(spacing: 0) {
+            statsHeader
+            searchBox
+            filterPills
+            countLabel
+
+            ScrollView {
+                LazyVStack(spacing: 10) {
+                    ForEach(filteredWords) { w in
+                        listCard(for: w)
                     }
                 }
-                .onDelete(perform: store.delete(at:))
-            }
-            .navigationTitle("単語帳 (\(store.words.count))")
-            .searchable(text: $searchText, prompt: "単語を検索")
-            .navigationDestination(for: Word.self) { word in
-                WordDetailView(word: word)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
             }
         }
+        .background(Color(.systemGroupedBackground).ignoresSafeArea())
+        .overlay(alignment: .bottomTrailing) {
+            Button {
+                showAddSheet = true
+            } label: {
+                Image(systemName: "plus")
+                    .font(.title2.bold())
+                    .foregroundStyle(.white)
+                    .frame(width: 56, height: 56)
+                    .background(Color.indigo)
+                    .clipShape(Circle())
+                    .shadow(color: .black.opacity(0.2), radius: 6, y: 3)
+            }
+            .padding(.trailing, 20)
+            .padding(.bottom, 20)
+        }
+        .sheet(isPresented: $showAddSheet) {
+            AddWordView()
+                .environmentObject(store)
+        }
     }
-}
 
-struct WordDetailView: View {
-    @EnvironmentObject var store: WordStore
-    let word: Word
+    // MARK: - Stats header
 
-    var current: Word {
-        store.words.first(where: { $0.id == word.id }) ?? word
+    private var statsHeader: some View {
+        VStack(spacing: 6) {
+            HStack {
+                Text("英単語の復習").font(.title3.bold())
+                Spacer()
+            }
+            HStack(spacing: 6) {
+                Text("\(store.perfectCount)")
+                Text("◎").foregroundStyle(.indigo)
+                Text("·")
+                Text("\(store.fuzzyCount)").foregroundStyle(.orange)
+                Text("△").foregroundStyle(.orange)
+                Text("/ \(store.totalCount)")
+                Spacer()
+                Text("\(Int(store.progressFraction * 100))%")
+                    .foregroundStyle(.secondary)
+            }
+            .font(.subheadline)
+            ProgressView(value: store.progressFraction)
+                .tint(.indigo)
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
     }
 
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                Text(current.word)
-                    .font(.system(size: 30, weight: .bold))
+    // MARK: - Search
 
-                Divider()
+    private var searchBox: some View {
+        HStack {
+            Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
+            TextField("単語を検索…", text: $searchText)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 10)
+        .background(Color(.secondarySystemGroupedBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding(.horizontal, 16)
+        .padding(.top, 12)
+    }
 
-                Group {
-                    Text("■ 英語の定義").font(.headline)
-                    Text(current.definitionEnglish)
-                    Text("→ \(current.definitionJapanese)")
-                        .foregroundStyle(.secondary)
-                }
+    // MARK: - Filter pills
 
-                if !current.useCases.isEmpty {
-                    Group {
-                        Text("■ 使う場面").font(.headline)
-                        ForEach(current.useCases, id: \.self) { Text("・\($0)") }
-                    }
-                }
-
-                if !current.examples.isEmpty {
-                    Group {
-                        Text("■ 例文").font(.headline)
-                        ForEach(Array(current.examples.enumerated()), id: \.element.id) { idx, ex in
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text("\(idx + 1). \(ex.english)")
-                                Text("→ \(ex.japanese)")
-                                    .foregroundStyle(.secondary)
+    private var filterPills: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                ForEach(ListFilter.allCases) { f in
+                    Button {
+                        filter = f
+                    } label: {
+                        let isSelected = filter == f
+                        HStack(spacing: 4) {
+                            if !f.symbol.isEmpty {
+                                Text(f.symbol)
                             }
-                            .padding(.bottom, 4)
+                            Text(f.rawValue)
                         }
+                        .font(.subheadline.weight(isSelected ? .semibold : .regular))
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 8)
+                        .background(isSelected ? Color.black : Color(.secondarySystemGroupedBackground))
+                        .foregroundStyle(isSelected ? .white : .primary)
+                        .clipShape(Capsule())
                     }
                 }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+        }
+    }
 
-                if !current.synonyms.isEmpty {
-                    Group {
-                        Text("■ 類義語").font(.headline)
-                        ForEach(current.synonyms) { syn in
-                            VStack(alignment: .leading, spacing: 4) {
-                                Text("\(syn.word)（\(syn.meaning)）").font(.subheadline.bold())
-                                ForEach(syn.examples) { ex in
-                                    VStack(alignment: .leading) {
-                                        Text("• \(ex.english)")
-                                        Text("  → \(ex.japanese)")
-                                            .foregroundStyle(.secondary)
-                                    }
-                                }
-                            }
-                            .padding(.bottom, 6)
-                        }
-                    }
-                }
-
-                Divider()
-
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("復習状況").font(.headline)
-                    Text("段階: \(current.stage.label)")
-                    Text("次回復習: \(current.nextReviewDate.formatted(date: .complete, time: .omitted))")
-                    if let last = current.lastReviewedDate {
-                        Text("最終復習: \(last.formatted(date: .abbreviated, time: .omitted))")
-                    }
-                    Text("登録日: \(current.createdAt.formatted(date: .abbreviated, time: .omitted))")
-                }
-                .font(.callout)
+    private var countLabel: some View {
+        HStack {
+            Text("\(filteredWords.count) 件")
+                .font(.caption)
                 .foregroundStyle(.secondary)
-            }
-            .padding()
+            Spacer()
         }
-        .navigationTitle(current.word)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button(role: .destructive) {
-                    store.delete(id: current.id)
-                } label: {
-                    Image(systemName: "trash")
+        .padding(.horizontal, 20)
+        .padding(.bottom, 4)
+    }
+
+    // MARK: - List card
+
+    @ViewBuilder
+    private func listCard(for w: Word) -> some View {
+        let isExpanded = expandedIds.contains(w.id)
+        VStack(alignment: .leading, spacing: 0) {
+            Button {
+                if isExpanded { expandedIds.remove(w.id) } else { expandedIds.insert(w.id) }
+            } label: {
+                HStack(alignment: .top, spacing: 12) {
+                    Circle()
+                        .fill(statusColor(w.status).opacity(0.6))
+                        .frame(width: 8, height: 8)
+                        .padding(.top, 8)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(w.word)
+                            .font(.headline)
+                            .foregroundStyle(.primary)
+                        Text(w.definitionJapanese.isEmpty ? w.definitionEnglish : w.definitionJapanese)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                            .lineLimit(2)
+                        HStack(spacing: 8) {
+                            Label("\(w.reviewCount) 回", systemImage: "repeat")
+                            Text("·")
+                            Text("次回 \(w.nextReviewDate.formatted(date: .abbreviated, time: .omitted))")
+                        }
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                    }
+                    Spacer()
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        .font(.caption)
+                        .foregroundStyle(.tertiary)
+                }
+                .padding(14)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+
+            if isExpanded {
+                expandedDetail(w)
+            }
+        }
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(.secondarySystemGroupedBackground))
+        )
+        .contextMenu {
+            Button(role: .destructive) {
+                store.delete(id: w.id)
+            } label: {
+                Label("削除", systemImage: "trash")
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func expandedDetail(_ w: Word) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Divider()
+            HStack(alignment: .top, spacing: 8) {
+                Image(systemName: "speaker.wave.2.fill")
+                    .font(.system(size: 11))
+                    .foregroundStyle(.indigo)
+                    .frame(width: 24, height: 24)
+                    .background(Color.indigo.opacity(0.1))
+                    .clipShape(Circle())
+                    .onTapGesture { SpeechManager.shared.speak(w.definitionEnglish) }
+                Text(w.definitionEnglish)
+                    .italic()
+                    .font(.subheadline)
+            }
+            if !w.useCases.isEmpty {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("使う場面").font(.caption).foregroundStyle(.tertiary)
+                    ForEach(w.useCases, id: \.self) { uc in
+                        HStack(spacing: 6) {
+                            Circle().fill(Color.indigo).frame(width: 4, height: 4)
+                            Text(uc).font(.subheadline)
+                        }
+                    }
                 }
             }
+            if !w.examples.isEmpty {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("例文").font(.caption).foregroundStyle(.tertiary)
+                    ForEach(w.examples) { ex in
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text(ex.english).font(.subheadline)
+                            Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
+                        }
+                    }
+                }
+            }
+        }
+        .padding(.horizontal, 14)
+        .padding(.bottom, 14)
+    }
+
+    private func statusColor(_ s: WordStatus) -> Color {
+        switch s {
+        case .unlearned: return .gray
+        case .fuzzy:     return .orange
+        case .perfect:   return .indigo
         }
     }
 }

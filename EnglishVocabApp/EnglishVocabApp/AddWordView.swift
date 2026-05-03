@@ -2,6 +2,7 @@ import SwiftUI
 
 struct AddWordView: View {
     @EnvironmentObject var store: WordStore
+    @Environment(\.dismiss) private var dismiss
 
     @State private var word = ""
     @State private var definitionEnglish = ""
@@ -24,7 +25,7 @@ struct AddWordView: View {
                 Section("英語の定義 / 日本語訳") {
                     TextField("English definition", text: $definitionEnglish, axis: .vertical)
                         .lineLimit(2...5)
-                    TextField("日本語訳（→の右）", text: $definitionJapanese, axis: .vertical)
+                    TextField("日本語訳", text: $definitionJapanese, axis: .vertical)
                         .lineLimit(1...3)
                 }
 
@@ -57,6 +58,10 @@ struct AddWordView: View {
                                 .textInputAutocapitalization(.never)
                                 .autocorrectionDisabled()
                             TextField("意味（例: ひも）", text: $syn.meaning)
+                            TextField("英語の定義（任意）", text: $syn.definitionEnglish, axis: .vertical)
+                                .lineLimit(1...3)
+                            TextField("使う場面（1行に1つ・任意）", text: $syn.useCasesText, axis: .vertical)
+                                .lineLimit(1...4)
                             ForEach($syn.examples) { $ex in
                                 VStack(alignment: .leading) {
                                     TextField("English", text: $ex.english, axis: .vertical)
@@ -97,15 +102,21 @@ struct AddWordView: View {
                 }
             }
             .navigationTitle("単語を追加")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("閉じる") { dismiss() }
+                }
+            }
             .alert("追加しました", isPresented: $showSavedAlert) {
-                Button("OK", role: .cancel) {}
+                Button("続けて追加") { reset() }
+                Button("閉じる", role: .cancel) { dismiss() }
             }
         }
     }
 
     private var canSave: Bool {
         !word.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-            && !definitionEnglish.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            && !definitionJapanese.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
     private func save() {
@@ -124,7 +135,17 @@ struct AddWordView: View {
                 let exs = entry.examples
                     .filter { !$0.english.trimmingCharacters(in: .whitespaces).isEmpty }
                     .map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
-                return SynonymGroup(word: entry.word, meaning: entry.meaning, examples: exs)
+                let synUseCases = entry.useCasesText
+                    .split(whereSeparator: { $0.isNewline })
+                    .map { $0.trimmingCharacters(in: .whitespaces) }
+                    .filter { !$0.isEmpty }
+                return SynonymGroup(
+                    word: entry.word,
+                    meaning: entry.meaning,
+                    definitionEnglish: entry.definitionEnglish,
+                    useCases: synUseCases,
+                    examples: exs
+                )
             }
 
         let now = Date()
@@ -135,13 +156,13 @@ struct AddWordView: View {
             useCases: useCases,
             examples: examples,
             synonyms: synonyms,
-            stage: .nextDay,
+            reviewCount: 0,
+            status: .unlearned,
             nextReviewDate: now,
             lastReviewedDate: nil,
             createdAt: now
         )
         store.add(newWord)
-        reset()
         showSavedAlert = true
     }
 
@@ -167,6 +188,8 @@ struct SynonymEntry: Identifiable {
     let id = UUID()
     var word: String = ""
     var meaning: String = ""
+    var definitionEnglish: String = ""
+    var useCasesText: String = ""
     var examples: [ExampleEntry] = [.init(), .init()]
 }
 
