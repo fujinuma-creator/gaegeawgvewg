@@ -12,8 +12,15 @@ final class WordStore: ObservableObject {
 
     init() {
         load()
-        if words.isEmpty {
-            words = WordStore.seedWords()
+        // Merge in any seed words that don't already exist (matched by lowercased word).
+        // This way, app updates that add new vocabulary are reflected for existing users
+        // without overwriting their review progress on previously-saved words.
+        let existingWords = Set(words.map { $0.word.lowercased() })
+        let newSeeds = WordStore.seedWords().filter {
+            !existingWords.contains($0.word.lowercased())
+        }
+        if !newSeeds.isEmpty {
+            words.append(contentsOf: newSeeds)
             save()
         }
     }
@@ -139,6 +146,10 @@ final class WordStore: ObservableObject {
     // MARK: - Seed
 
     static func seedWords() -> [Word] {
+        return originalSeedWords() + SeedData.additionalWords
+    }
+
+    private static func originalSeedWords() -> [Word] {
         return [
             Word(
                 word: "thread",
