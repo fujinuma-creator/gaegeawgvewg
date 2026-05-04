@@ -64,6 +64,7 @@ struct QuizView: View {
         .sheet(isPresented: $showDetail) {
             if let detailWord {
                 WordDetailSheet(word: detailWord)
+                    .environmentObject(store)
             }
         }
         .onChange(of: activeTab) { _, newValue in
@@ -308,8 +309,22 @@ struct QuizView: View {
 // MARK: - Word detail sheet (reusable)
 
 struct WordDetailSheet: View {
-    let word: Word
+    let initialWord: Word
+    @EnvironmentObject var store: WordStore
     @Environment(\.dismiss) private var dismiss
+    @State private var isRegenerating: Bool = false
+    @State private var regenerateError: String? = nil
+    @State private var showRegenerateError: Bool = false
+
+    init(word: Word) {
+        self.initialWord = word
+    }
+
+    /// Always read the live word from the store so example regeneration shows
+    /// up immediately in this sheet.
+    private var word: Word {
+        store.words.first(where: { $0.id == initialWord.id }) ?? initialWord
+    }
 
     var body: some View {
         NavigationStack {
@@ -358,7 +373,30 @@ struct WordDetailSheet: View {
                     }
 
                     if !word.examples.isEmpty {
-                        sectionTitle("例文")
+                        HStack {
+                            sectionTitle("例文")
+                            Spacer()
+                            Button {
+                                Task { await regenerateExamples() }
+                            } label: {
+                                HStack(spacing: 4) {
+                                    if isRegenerating {
+                                        ProgressView().scaleEffect(0.7)
+                                        Text("生成中…")
+                                    } else {
+                                        Image(systemName: "sparkles")
+                                        Text("新しい例文を生成")
+                                    }
+                                }
+                                .font(.caption)
+                                .foregroundStyle(.indigo)
+                                .padding(.horizontal, 10)
+                                .padding(.vertical, 6)
+                                .background(Capsule().fill(Color.indigo.opacity(0.12)))
+                            }
+                            .buttonStyle(.plain)
+                            .disabled(isRegenerating)
+                        }
                         VStack(alignment: .leading, spacing: 12) {
                             ForEach(word.examples) { ex in
                                 HStack(alignment: .top, spacing: 8) {
@@ -402,6 +440,25 @@ struct WordDetailSheet: View {
                     Button("閉じる") { dismiss() }
                 }
             }
+            .alert("例文の生成に失敗しました", isPresented: $showRegenerateError, presenting: regenerateError) { _ in
+                Button("OK", role: .cancel) {}
+            } message: { msg in
+                Text(msg)
+            }
+        }
+    }
+
+    @MainActor
+    private func regenerateExamples() async {
+        isRegenerating = true
+        defer { isRegenerating = false }
+        do {
+            let new = try await GeminiService.regenerateExamples(for: word)
+            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+            store.updateExamples(for: word.id, with: mapped)
+        } catch {
+            regenerateError = error.localizedDescription
+            showRegenerateError = true
         }
     }
 

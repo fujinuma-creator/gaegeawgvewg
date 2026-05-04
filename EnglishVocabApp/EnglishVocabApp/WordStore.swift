@@ -95,6 +95,12 @@ final class WordStore: ObservableObject {
         save()
     }
 
+    func updateExamples(for wordId: UUID, with examples: [ExampleSentence]) {
+        guard let idx = words.firstIndex(where: { $0.id == wordId }) else { return }
+        words[idx].examples = examples
+        save()
+    }
+
     func delete(at offsets: IndexSet) {
         words.remove(atOffsets: offsets)
         save()

@@ -38,6 +38,10 @@ struct GeneratedWord: Decodable {
     let synonyms: [Synonym]?
 }
 
+struct GeneratedExamples: Decodable {
+    let examples: [GeneratedWord.Example]
+}
+
 /// Calls the Gemini REST API to generate a vocabulary entry from an English word.
 /// Uses the `responseMimeType: application/json` + `responseSchema` mode so the
 /// model returns parseable JSON every time.
@@ -47,7 +51,73 @@ enum GeminiService {
         URL(string: "https://generativelanguage.googleapis.com/v1beta/models/\(model):generateContent")
     }
 
+    /// Regenerates only the example sentences for an existing word, using the
+    /// existing definitions as context so the new examples stay on-meaning.
+    static func regenerateExamples(for word: Word) async throws -> [GeneratedWord.Example] {
+        let prompt = """
+        For the English word/phrase "\(word.word)" (meaning: \(word.definitionJapanese.isEmpty ? word.definitionEnglish : word.definitionJapanese)), generate 3 brand-new casual conversation example sentences. Avoid reusing these examples that are already in the user's deck:
+
+        \(word.examples.map { "- \($0.english)" }.joined(separator: "\n"))
+
+        Strict rules:
+        - Each example must be everyday spoken English (≤10 words). Contractions like I'm, don't, gonna are encouraged.
+        - No formal/news/business register.
+        - Vary the situation: at least 2 of the 3 should describe a different scenario from the existing examples.
+        - Pair each English sentence with a short, natural Japanese translation.
+        - Output JSON only, matching the schema. No markdown, no commentary.
+        """
+
+        let schema: [String: Any] = [
+            "type": "OBJECT",
+            "properties": [
+                "examples": [
+                    "type": "ARRAY",
+                    "items": [
+                        "type": "OBJECT",
+                        "properties": [
+                            "english": ["type": "STRING"],
+                            "japanese": ["type": "STRING"]
+                        ],
+                        "required": ["english", "japanese"]
+                    ]
+                ]
+            ],
+            "required": ["examples"]
+        ]
+
+        let textData = try await runGenerateContent(
+            prompt: prompt,
+            schema: schema,
+            temperature: 0.6
+        )
+        do {
+            let result = try JSONDecoder().decode(GeneratedExamples.self, from: textData)
+            return result.examples
+        } catch {
+            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
+        }
+    }
+
     static func generateWord(for word: String) async throws -> GeneratedWord {
+        let textData = try await runGenerateContent(
+            prompt: buildPrompt(for: word),
+            schema: responseSchema,
+            temperature: 0.3
+        )
+        do {
+            return try JSONDecoder().decode(GeneratedWord.self, from: textData)
+        } catch {
+            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
+        }
+    }
+
+    /// Shared HTTP transport: returns the raw JSON-text payload Gemini placed in
+    /// candidates[0].content.parts[0].text, ready for further `JSONDecoder` use.
+    private static func runGenerateContent(
+        prompt: String,
+        schema: [String: Any],
+        temperature: Double
+    ) async throws -> Data {
         guard let apiKey = KeychainHelper.get(SecretKey.geminiAPIKey),
               !apiKey.isEmpty else {
             throw GeminiServiceError.missingAPIKey
@@ -58,15 +128,14 @@ enum GeminiService {
         components.queryItems = [URLQueryItem(name: "key", value: apiKey)]
         guard let url = components.url else { throw GeminiServiceError.invalidResponse }
 
-        let prompt = buildPrompt(for: word)
         let body: [String: Any] = [
             "contents": [
                 ["parts": [["text": prompt]]]
             ],
             "generationConfig": [
-                "temperature": 0.3,
+                "temperature": temperature,
                 "responseMimeType": "application/json",
-                "responseSchema": responseSchema
+                "responseSchema": schema
             ]
         ]
 
@@ -82,11 +151,10 @@ enum GeminiService {
             throw GeminiServiceError.invalidResponse
         }
         guard (200..<300).contains(http.statusCode) else {
-            let body = String(data: data, encoding: .utf8) ?? ""
-            throw GeminiServiceError.http(http.statusCode, body)
+            let bodyText = String(data: data, encoding: .utf8) ?? ""
+            throw GeminiServiceError.http(http.statusCode, bodyText)
         }
 
-        // Gemini wraps the model output in: { candidates: [{ content: { parts: [{ text: "..." }] } }] }
         guard let envelope = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
               let candidates = envelope["candidates"] as? [[String: Any]],
               let first = candidates.first,
@@ -98,12 +166,7 @@ enum GeminiService {
         else {
             throw GeminiServiceError.noText
         }
-
-        do {
-            return try JSONDecoder().decode(GeneratedWord.self, from: textData)
-        } catch {
-            throw GeminiServiceError.decoding(text)
-        }
+        return textData
     }
 
     // MARK: - Prompt + Schema

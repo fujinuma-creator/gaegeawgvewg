@@ -18,6 +18,9 @@ struct ReviewView: View {
     @State private var indexInQueue: Int = 0
     @State private var dragOffset: CGSize = .zero
     @State private var showResetAlert: Bool = false
+    @State private var regeneratingExamplesForId: UUID? = nil
+    @State private var regenerateError: String? = nil
+    @State private var showRegenerateError: Bool = false
 
     private var queue: [Word] {
         let base: [Word]
@@ -63,6 +66,11 @@ struct ReviewView: View {
             }
         } message: {
             Text("全単語の復習回数とステータスが初期化されます。")
+        }
+        .alert("例文の生成に失敗しました", isPresented: $showRegenerateError, presenting: regenerateError) { _ in
+            Button("OK", role: .cancel) {}
+        } message: { msg in
+            Text(msg)
         }
     }
 
@@ -204,7 +212,11 @@ struct ReviewView: View {
                 }
 
                 if !word.examples.isEmpty {
-                    sectionTitle("例文")
+                    HStack {
+                        sectionTitle("例文")
+                        Spacer()
+                        regenerateExamplesButton(for: word)
+                    }
                     VStack(alignment: .leading, spacing: 12) {
                         ForEach(word.examples) { ex in
                             HStack(alignment: .top, spacing: 8) {
@@ -359,6 +371,45 @@ struct ReviewView: View {
             Text(title)
                 .font(.subheadline.weight(.medium))
                 .foregroundStyle(.secondary)
+        }
+    }
+
+    @ViewBuilder
+    private func regenerateExamplesButton(for word: Word) -> some View {
+        Button {
+            Task { await regenerateExamples(for: word) }
+        } label: {
+            HStack(spacing: 4) {
+                if regeneratingExamplesForId == word.id {
+                    ProgressView()
+                        .scaleEffect(0.7)
+                    Text("生成中…")
+                } else {
+                    Image(systemName: "sparkles")
+                    Text("新しい例文を生成")
+                }
+            }
+            .font(.caption)
+            .foregroundStyle(.indigo)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6)
+            .background(Capsule().fill(Color.indigo.opacity(0.12)))
+        }
+        .buttonStyle(.plain)
+        .disabled(regeneratingExamplesForId != nil)
+    }
+
+    @MainActor
+    private func regenerateExamples(for word: Word) async {
+        regeneratingExamplesForId = word.id
+        defer { regeneratingExamplesForId = nil }
+        do {
+            let new = try await GeminiService.regenerateExamples(for: word)
+            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+            store.updateExamples(for: word.id, with: mapped)
+        } catch {
+            regenerateError = error.localizedDescription
+            showRegenerateError = true
         }
     }
 
