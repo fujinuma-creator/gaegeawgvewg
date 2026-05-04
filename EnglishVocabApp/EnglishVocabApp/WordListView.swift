@@ -21,6 +21,9 @@ struct WordListView: View {
     @State private var filter: ListFilter = .all
     @State private var expandedIds: Set<UUID> = []
     @State private var showAddSheet = false
+    @State private var regeneratingExamplesForId: UUID? = nil
+    @State private var regenerateError: String? = nil
+    @State private var showRegenerateError: Bool = false
 
     var filteredWords: [Word] {
         let byStatus: [Word]
@@ -94,6 +97,11 @@ struct WordListView: View {
                 expandedIds.removeAll()
                 showAddSheet = false
             }
+        }
+        .alert("例文の生成に失敗しました", isPresented: $showRegenerateError, presenting: regenerateError) { _ in
+            Button("OK", role: .cancel) {}
+        } message: { msg in
+            Text(msg)
         }
         .onChange(of: filter) { _, _ in
             // Switching filter (e.g. すべて → 復習リスト) collapses any
@@ -294,7 +302,30 @@ struct WordListView: View {
             }
             if !w.examples.isEmpty {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("例文").font(.caption).foregroundStyle(.tertiary)
+                    HStack {
+                        Text("例文").font(.caption).foregroundStyle(.tertiary)
+                        Spacer()
+                        Button {
+                            Task { await regenerateExamples(for: w) }
+                        } label: {
+                            HStack(spacing: 4) {
+                                if regeneratingExamplesForId == w.id {
+                                    ProgressView().scaleEffect(0.6)
+                                    Text("生成中…")
+                                } else {
+                                    Image(systemName: "sparkles")
+                                    Text("新しい例文を生成")
+                                }
+                            }
+                            .font(.caption2)
+                            .foregroundStyle(.indigo)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 4)
+                            .background(Capsule().fill(Color.indigo.opacity(0.12)))
+                        }
+                        .buttonStyle(.plain)
+                        .disabled(regeneratingExamplesForId != nil)
+                    }
                     ForEach(w.examples) { ex in
                         VStack(alignment: .leading, spacing: 1) {
                             Text(ex.english).font(.subheadline)
@@ -306,6 +337,20 @@ struct WordListView: View {
         }
         .padding(.horizontal, 14)
         .padding(.bottom, 14)
+    }
+
+    @MainActor
+    private func regenerateExamples(for w: Word) async {
+        regeneratingExamplesForId = w.id
+        defer { regeneratingExamplesForId = nil }
+        do {
+            let new = try await GeminiService.regenerateExamples(for: w)
+            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+            store.updateExamples(for: w.id, with: mapped)
+        } catch {
+            regenerateError = error.localizedDescription
+            showRegenerateError = true
+        }
     }
 
     private func statusColor(_ s: WordStatus) -> Color {
