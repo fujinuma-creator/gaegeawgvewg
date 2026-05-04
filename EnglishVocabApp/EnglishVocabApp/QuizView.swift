@@ -3,6 +3,7 @@ import SwiftUI
 /// Multiple-choice quiz: show the English word, pick the correct "use case" (situation).
 struct QuizView: View {
     @EnvironmentObject var store: WordStore
+    @Binding var activeTab: ContentView.Tab
 
     /// One choice = a use case sentence + the word it belongs to.
     private struct QuizChoice: Identifiable {
@@ -63,6 +64,11 @@ struct QuizView: View {
         .sheet(isPresented: $showDetail) {
             if let detailWord {
                 WordDetailSheet(word: detailWord)
+            }
+        }
+        .onChange(of: activeTab) { _, newValue in
+            if newValue != .quiz {
+                showDetail = false
             }
         }
     }
@@ -484,6 +490,6 @@ struct WordDetailSheet: View {
 }
 
 #Preview {
-    QuizView()
+    QuizView(activeTab: .constant(.quiz))
         .environmentObject(WordStore())
 }

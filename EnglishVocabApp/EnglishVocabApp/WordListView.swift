@@ -2,6 +2,7 @@ import SwiftUI
 
 struct WordListView: View {
     @EnvironmentObject var store: WordStore
+    @Binding var activeTab: ContentView.Tab
 
     enum ListFilter: String, CaseIterable, Identifiable {
         case all = "すべて"
@@ -85,6 +86,11 @@ struct WordListView: View {
         .sheet(isPresented: $showAddSheet) {
             AddWordView()
                 .environmentObject(store)
+        }
+        .onChange(of: activeTab) { _, newValue in
+            if newValue != .list {
+                showAddSheet = false
+            }
         }
     }
 
@@ -311,6 +317,6 @@ struct WordListView: View {
 }
 
 #Preview {
-    WordListView()
+    WordListView(activeTab: .constant(.list))
         .environmentObject(WordStore())
 }

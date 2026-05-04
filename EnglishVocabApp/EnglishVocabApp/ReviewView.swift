@@ -4,6 +4,7 @@ import SwiftUI
 
 struct ReviewView: View {
     @EnvironmentObject var store: WordStore
+    @Binding var activeTab: ContentView.Tab
 
     enum ReviewFilter: String, CaseIterable, Identifiable {
         case dueToday = "本日"
@@ -488,6 +489,6 @@ struct ReviewView: View {
 }
 
 #Preview {
-    ReviewView()
+    ReviewView(activeTab: .constant(.card))
         .environmentObject(WordStore())
 }
