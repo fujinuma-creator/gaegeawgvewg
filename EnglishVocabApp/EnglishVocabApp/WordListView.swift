@@ -43,8 +43,17 @@ struct WordListView: View {
         }
         switch filter {
         case .all:
-            // Random order that stays the same all day, rotates at midnight.
-            return filtered.dailyShuffled()
+            // Words added today appear at the very top (newest first), so
+            // freshly-added words are easy to find. Everything older is
+            // shown in the daily-rotating random order.
+            let today = Calendar.current.startOfDay(for: Date())
+            let newToday = filtered
+                .filter { $0.createdAt >= today }
+                .sorted { $0.createdAt > $1.createdAt }
+            let older = filtered
+                .filter { $0.createdAt < today }
+                .dailyShuffled()
+            return newToday + older
         case .reviewList:
             // Most-recently pinned first.
             return filtered.sorted {
