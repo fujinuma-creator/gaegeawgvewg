@@ -59,13 +59,13 @@ struct QuizView: View {
     @State private var detailWord: Word? = nil
     @State private var showDetail: Bool = false
 
-    // Translation mode state
+    // Translation mode state — the picked problem persists until the user
+    // explicitly changes it (saved to AppStorage so it survives app launches).
     @State private var currentExample: ExampleSentence? = nil
     @State private var userTranslation: String = ""
-    @State private var grading: TranslationGrading? = nil
-    @State private var isGrading: Bool = false
-    @State private var gradingError: String? = nil
-    @State private var showGradingError: Bool = false
+    @State private var showAnswer: Bool = false
+    @AppStorage("translation.wordId") private var savedTranslationWordId: String = ""
+    @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
 
     private var eligibleWords: [Word] {
         // Quiz draws only from the user's review list (auto-expires after 7 days).
@@ -150,11 +150,6 @@ struct QuizView: View {
             if newValue != .quiz {
                 showDetail = false
             }
-        }
-        .alert("採点に失敗しました", isPresented: $showGradingError, presenting: gradingError) { _ in
-            Button("OK", role: .cancel) {}
-        } message: { msg in
-            Text(msg)
         }
     }
 
@@ -374,13 +369,18 @@ struct QuizView: View {
         }
 
         if mode == .translation {
-            let answerWord = pool[0]
-            guard let example = answerWord.examples.randomElement() else { return }
-            currentWord = answerWord
-            currentExample = example
-            userTranslation = ""
-            grading = nil
-            answered = false
+            // Translation: try to restore the saved problem first; only pick a
+            // fresh one if no problem was previously saved or the saved word
+            // no longer exists in the store.
+            if let saved = loadSavedTranslationProblem() {
+                currentWord = saved.word
+                currentExample = saved.example
+                userTranslation = ""
+                showAnswer = false
+                answered = false
+            } else {
+                pickFreshTranslationProblem()
+            }
             return
         }
 
@@ -429,7 +429,7 @@ struct QuizView: View {
         }
     }
 
-    // MARK: - Translation card
+    // MARK: - Translation card (no AI grading; pre-prepared answer + change button)
 
     @ViewBuilder
     private func translationCard(_ word: Word) -> some View {
@@ -487,7 +487,7 @@ struct QuizView: View {
                 .padding(.horizontal, 16)
 
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("あなたの英訳").font(.caption).foregroundStyle(.secondary)
+                    Text("あなたの英訳（自由入力）").font(.caption).foregroundStyle(.secondary)
                     TextEditor(text: $userTranslation)
                         .frame(minHeight: 90)
                         .padding(8)
@@ -495,145 +495,115 @@ struct QuizView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.separator), lineWidth: 0.5))
                         .textInputAutocapitalization(.sentences)
                         .autocorrectionDisabled(false)
-                        .disabled(answered || isGrading)
                 }
                 .padding(.horizontal, 16)
 
-                if !answered {
-                    Button {
-                        Task { await gradeNow(for: word) }
-                    } label: {
-                        HStack {
-                            Spacer()
-                            if isGrading {
-                                ProgressView().tint(.white).padding(.trailing, 4)
-                                Text("採点中…").bold()
-                            } else {
-                                Image(systemName: "checkmark.seal.fill")
-                                Text("AIで採点").bold()
-                            }
-                            Spacer()
-                        }
-                        .padding(.vertical, 14)
-                        .foregroundStyle(.white)
-                        .background(canGrade ? Color.indigo : Color.indigo.opacity(0.4))
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                Button {
+                    showAnswer.toggle()
+                } label: {
+                    HStack {
+                        Spacer()
+                        Image(systemName: showAnswer ? "eye.slash" : "eye")
+                        Text(showAnswer ? "答えを隠す" : "答えを見る").bold()
+                        Spacer()
                     }
-                    .disabled(!canGrade || isGrading)
-                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .foregroundStyle(.white)
+                    .background(Color.indigo)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+                .padding(.horizontal, 16)
+
+                if showAnswer, let ex = currentExample {
+                    answerView(ex)
+                        .padding(.horizontal, 16)
                 }
 
-                if let g = grading {
-                    gradingResultView(g)
-                        .padding(.horizontal, 16)
-                    Button {
-                        nextQuestion()
-                    } label: {
-                        Text("次の問題 →")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .padding(.vertical, 14)
-                            .background(Color.indigo)
-                            .foregroundStyle(.white)
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                Button {
+                    pickFreshTranslationProblem()
+                } label: {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "arrow.triangle.2.circlepath")
+                        Text("問題を変更").bold()
+                        Spacer()
                     }
-                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .foregroundStyle(.indigo)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.indigo, lineWidth: 1)
+                    )
                 }
+                .padding(.horizontal, 16)
 
                 Spacer(minLength: 12)
             }
         }
     }
 
-    private var canGrade: Bool {
-        !userTranslation.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-    }
-
     @ViewBuilder
-    private func gradingResultView(_ g: TranslationGrading) -> some View {
-        let color: Color = g.isCorrect ? .green : (g.isClose ? .orange : .red)
-        let label: String = g.isCorrect ? "◯ 正解" : (g.isClose ? "△ 惜しい" : "× 不正解")
-
+    private func answerView(_ ex: ExampleSentence) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack {
-                Text(label)
-                    .font(.headline)
-                    .foregroundStyle(color)
-                Spacer()
-                Text("\(g.score) / 100")
-                    .font(.subheadline.bold())
-                    .foregroundStyle(.secondary)
-            }
-            VStack(alignment: .leading, spacing: 4) {
-                Text("お手本の英訳").font(.caption).foregroundStyle(.tertiary)
-                HStack(alignment: .top, spacing: 8) {
-                    Button {
-                        SpeechManager.shared.speak(g.corrected)
-                    } label: {
-                        Image(systemName: "speaker.wave.2.fill")
-                            .font(.system(size: 11))
-                            .foregroundStyle(.indigo)
-                            .frame(width: 24, height: 24)
-                            .background(Color.indigo.opacity(0.1))
-                            .clipShape(Circle())
-                    }
-                    .buttonStyle(.plain)
-                    Text(g.corrected)
-                        .font(.body)
+            Text("お手本の英訳").font(.caption).foregroundStyle(.tertiary)
+            HStack(alignment: .top, spacing: 8) {
+                Button {
+                    SpeechManager.shared.speak(ex.english)
+                } label: {
+                    Image(systemName: "speaker.wave.2.fill")
+                        .font(.system(size: 11))
+                        .foregroundStyle(.indigo)
+                        .frame(width: 24, height: 24)
+                        .background(Color.indigo.opacity(0.1))
+                        .clipShape(Circle())
                 }
+                .buttonStyle(.plain)
+                Text(ex.english)
+                    .font(.body)
             }
-            VStack(alignment: .leading, spacing: 4) {
-                Text("解説").font(.caption).foregroundStyle(.tertiary)
-                Text(g.explanation)
-                    .font(.subheadline)
-                    .foregroundStyle(.primary)
-            }
+            Text(ex.japanese)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(color.opacity(0.10))
-        )
-        .overlay(
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(color.opacity(0.5), lineWidth: 1)
-        )
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color.green.opacity(0.10)))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.green.opacity(0.5), lineWidth: 1))
     }
 
-    @MainActor
-    private func gradeNow(for word: Word) async {
-        guard let example = currentExample else { return }
-        let userText = userTranslation.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !userText.isEmpty else { return }
-
-        isGrading = true
-        defer { isGrading = false }
-
-        do {
-            let result = try await GeminiService.gradeTranslation(
-                targetWord: word.word,
-                japanese: example.japanese,
-                referenceEnglish: example.english,
-                userEnglish: userText
-            )
-            grading = result
-            answered = true
-            totalCount += 1
-
-            // Map verdict back to the review-tracking system.
-            if result.isCorrect {
-                correctCount += 1
-                store.record(mark: .perfect, for: word)
-            } else if result.isClose {
-                store.record(mark: .fuzzy, for: word)
-            } else {
-                store.record(mark: .forgot, for: word)
-            }
-        } catch {
-            gradingError = error.localizedDescription
-            showGradingError = true
+    /// Restore the previously-shown problem if it's still valid; otherwise nil.
+    private func loadSavedTranslationProblem() -> (word: Word, example: ExampleSentence)? {
+        guard let id = UUID(uuidString: savedTranslationWordId),
+              let word = store.words.first(where: { $0.id == id }),
+              !word.examples.isEmpty else {
+            return nil
         }
+        let idx = max(0, min(savedTranslationExampleIdx, word.examples.count - 1))
+        return (word, word.examples[idx])
+    }
+
+    /// Pick a brand-new translation problem and persist its identity so it
+    /// stays the same across launches until the user changes it again.
+    private func pickFreshTranslationProblem() {
+        let pool = eligibleWords.shuffled()
+        // If the eligible pool is empty (e.g. nothing in the review list yet),
+        // fall back to all words with examples so the user still sees something.
+        let candidates = pool.isEmpty
+            ? store.words.filter { !$0.examples.isEmpty }.shuffled()
+            : pool
+        guard let word = candidates.first, !word.examples.isEmpty else {
+            currentWord = nil
+            currentExample = nil
+            return
+        }
+        let idx = Int.random(in: 0..<word.examples.count)
+        currentWord = word
+        currentExample = word.examples[idx]
+        savedTranslationWordId = word.id.uuidString
+        savedTranslationExampleIdx = idx
+        userTranslation = ""
+        showAnswer = false
+        answered = false
     }
 }
 
