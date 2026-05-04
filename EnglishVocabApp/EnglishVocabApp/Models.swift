@@ -81,10 +81,15 @@ struct Word: Codable, Identifiable, Hashable {
     var lastReviewedDate: Date? = nil
     var createdAt: Date = Date()
 
+    /// When the user manually pinned this word to the focused review list.
+    /// Entries automatically expire 7 days after they are added.
+    var addedToReviewListAt: Date? = nil
+
     enum CodingKeys: String, CodingKey {
         case id, word, definitionEnglish, definitionJapanese, useCases,
              examples, synonyms,
-             reviewCount, status, nextReviewDate, lastReviewedDate, createdAt
+             reviewCount, status, nextReviewDate, lastReviewedDate, createdAt,
+             addedToReviewListAt
     }
 
     init(
@@ -99,7 +104,8 @@ struct Word: Codable, Identifiable, Hashable {
         status: WordStatus = .unlearned,
         nextReviewDate: Date = Date(),
         lastReviewedDate: Date? = nil,
-        createdAt: Date = Date()
+        createdAt: Date = Date(),
+        addedToReviewListAt: Date? = nil
     ) {
         self.id = id
         self.word = word
@@ -113,6 +119,33 @@ struct Word: Codable, Identifiable, Hashable {
         self.nextReviewDate = nextReviewDate
         self.lastReviewedDate = lastReviewedDate
         self.createdAt = createdAt
+        self.addedToReviewListAt = addedToReviewListAt
+    }
+
+    /// Decoder that fills in defaults for fields added in later schema versions
+    /// so previously-saved data still loads cleanly.
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
+        self.word = try c.decode(String.self, forKey: .word)
+        self.definitionEnglish = try c.decodeIfPresent(String.self, forKey: .definitionEnglish) ?? ""
+        self.definitionJapanese = try c.decodeIfPresent(String.self, forKey: .definitionJapanese) ?? ""
+        self.useCases = try c.decodeIfPresent([String].self, forKey: .useCases) ?? []
+        self.examples = try c.decodeIfPresent([ExampleSentence].self, forKey: .examples) ?? []
+        self.synonyms = try c.decodeIfPresent([SynonymGroup].self, forKey: .synonyms) ?? []
+        self.reviewCount = try c.decodeIfPresent(Int.self, forKey: .reviewCount) ?? 0
+        self.status = try c.decodeIfPresent(WordStatus.self, forKey: .status) ?? .unlearned
+        self.nextReviewDate = try c.decodeIfPresent(Date.self, forKey: .nextReviewDate) ?? Date()
+        self.lastReviewedDate = try c.decodeIfPresent(Date.self, forKey: .lastReviewedDate)
+        self.createdAt = try c.decodeIfPresent(Date.self, forKey: .createdAt) ?? Date()
+        self.addedToReviewListAt = try c.decodeIfPresent(Date.self, forKey: .addedToReviewListAt)
+    }
+
+    /// True if the word is currently pinned to the focused review list
+    /// (added within the last 7 days).
+    var isInReviewList: Bool {
+        guard let added = addedToReviewListAt else { return false }
+        return Date().timeIntervalSince(added) < 7 * 24 * 60 * 60
     }
 }
 

@@ -23,6 +23,37 @@ final class WordStore: ObservableObject {
             words.append(contentsOf: newSeeds)
             save()
         }
+        // Drop any review-list pins that have aged past their 7-day window.
+        cleanupExpiredReviewListEntries()
+    }
+
+    // MARK: - Review list (manually pinned words, auto-expire after 7 days)
+
+    func toggleReviewList(for word: Word) {
+        guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
+        if words[idx].isInReviewList {
+            words[idx].addedToReviewListAt = nil
+        } else {
+            words[idx].addedToReviewListAt = Date()
+        }
+        save()
+    }
+
+    func cleanupExpiredReviewListEntries() {
+        var changed = false
+        for i in words.indices {
+            if let added = words[i].addedToReviewListAt,
+               Date().timeIntervalSince(added) >= 7 * 24 * 60 * 60 {
+                words[i].addedToReviewListAt = nil
+                changed = true
+            }
+        }
+        if changed { save() }
+    }
+
+    var reviewListWords: [Word] {
+        words.filter { $0.isInReviewList }
+            .sorted { ($0.addedToReviewListAt ?? .distantPast) > ($1.addedToReviewListAt ?? .distantPast) }
     }
 
     // MARK: - Persistence

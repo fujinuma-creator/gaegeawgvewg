@@ -74,8 +74,35 @@ struct QuizView: View {
 
     @ViewBuilder
     private func quizCard(_ word: Word) -> some View {
+        // Pull a fresh copy of the word from the store so the checkbox reflects
+        // the latest pinned state after toggling.
+        let liveWord = store.words.first(where: { $0.id == word.id }) ?? word
         VStack(spacing: 16) {
             VStack(spacing: 6) {
+                HStack {
+                    Button {
+                        store.toggleReviewList(for: liveWord)
+                    } label: {
+                        HStack(spacing: 4) {
+                            Image(systemName: liveWord.isInReviewList ? "checkmark.square.fill" : "square")
+                                .font(.system(size: 20))
+                            Text(liveWord.isInReviewList ? "復習リストに追加済" : "復習リストに追加")
+                                .font(.caption)
+                        }
+                        .foregroundStyle(liveWord.isInReviewList ? .indigo : .secondary)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 6)
+                        .background(
+                            Capsule().fill(
+                                liveWord.isInReviewList ? Color.indigo.opacity(0.12) : Color(.tertiarySystemGroupedBackground)
+                            )
+                        )
+                        .contentShape(Capsule())
+                    }
+                    .buttonStyle(.plain)
+                    Spacer()
+                }
+
                 Button {
                     SpeechManager.shared.speak(word.word)
                 } label: {

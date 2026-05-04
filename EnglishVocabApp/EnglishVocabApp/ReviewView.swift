@@ -7,6 +7,7 @@ struct ReviewView: View {
 
     enum ReviewFilter: String, CaseIterable, Identifiable {
         case dueToday = "本日"
+        case reviewList = "復習リスト"
         case all = "すべて"
         case unlearned = "未習得"
         case fuzzy = "あいまい"
@@ -22,10 +23,11 @@ struct ReviewView: View {
     private var queue: [Word] {
         let base: [Word]
         switch filter {
-        case .dueToday:  base = store.dueWords
-        case .all:       base = store.words
-        case .unlearned: base = store.words.filter { $0.status == .unlearned }
-        case .fuzzy:     base = store.words.filter { $0.status == .fuzzy }
+        case .dueToday:   base = store.dueWords
+        case .reviewList: base = store.reviewListWords
+        case .all:        base = store.words
+        case .unlearned:  base = store.words.filter { $0.status == .unlearned }
+        case .fuzzy:      base = store.words.filter { $0.status == .fuzzy }
         }
         return shuffled ? base.shuffled() : base
     }
@@ -444,17 +446,44 @@ struct ReviewView: View {
 
     private var completedView: some View {
         VStack(spacing: 12) {
-            Image(systemName: "checkmark.seal.fill")
+            Image(systemName: filter == .reviewList ? "star" : "checkmark.seal.fill")
                 .font(.system(size: 56))
-                .foregroundStyle(.green)
-            Text("本日の復習は完了！")
+                .foregroundStyle(filter == .reviewList ? .indigo : .green)
+            Text(emptyTitle)
                 .font(.title3.bold())
-            if let next = store.words.map(\.nextReviewDate).filter({ $0 > Date() }).min() {
-                Text("次回: \(next.formatted(date: .abbreviated, time: .omitted))")
-                    .foregroundStyle(.secondary)
-            }
+                .multilineTextAlignment(.center)
+            Text(emptyMessage)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
         }
         .padding()
+    }
+
+    private var emptyTitle: String {
+        switch filter {
+        case .dueToday:   return "本日の復習は完了！"
+        case .reviewList: return "復習リストは空です"
+        case .all:        return "単語がありません"
+        case .unlearned:  return "未習得の単語はありません"
+        case .fuzzy:      return "あいまいな単語はありません"
+        }
+    }
+
+    private var emptyMessage: String {
+        switch filter {
+        case .dueToday:
+            if let next = store.words.map(\.nextReviewDate).filter({ $0 > Date() }).min() {
+                return "次回: \(next.formatted(date: .abbreviated, time: .omitted))"
+            }
+            return "次の復習予定までゆっくり休みましょう。"
+        case .reviewList:
+            return "「一覧」や「クイズ」のチェック欄から追加できます\n（追加から1週間で自動的に消えます）"
+        case .all:
+            return "「一覧」タブから追加してください。"
+        case .unlearned, .fuzzy:
+            return "他のフィルタも試してみてください。"
+        }
     }
 }
 

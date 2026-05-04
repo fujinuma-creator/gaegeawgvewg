@@ -5,6 +5,7 @@ struct WordListView: View {
 
     enum ListFilter: String, CaseIterable, Identifiable {
         case all = "すべて"
+        case reviewList = "復習リスト"
         case unlearned = "未習得"
         case fuzzy = "あいまい"
         case perfect = "完璧"
@@ -13,6 +14,7 @@ struct WordListView: View {
         var symbol: String {
             switch self {
             case .all: return ""
+            case .reviewList: return "★"
             case .unlearned: return ""
             case .fuzzy: return "△"
             case .perfect: return "◎"
@@ -28,10 +30,11 @@ struct WordListView: View {
     var filteredWords: [Word] {
         let byStatus: [Word]
         switch filter {
-        case .all:       byStatus = store.words
-        case .unlearned: byStatus = store.words.filter { $0.status == .unlearned }
-        case .fuzzy:     byStatus = store.words.filter { $0.status == .fuzzy }
-        case .perfect:   byStatus = store.words.filter { $0.status == .perfect }
+        case .all:        byStatus = store.words
+        case .reviewList: byStatus = store.reviewListWords
+        case .unlearned:  byStatus = store.words.filter { $0.status == .unlearned }
+        case .fuzzy:      byStatus = store.words.filter { $0.status == .fuzzy }
+        case .perfect:    byStatus = store.words.filter { $0.status == .perfect }
         }
         let filtered: [Word]
         if searchText.isEmpty {
@@ -176,39 +179,60 @@ struct WordListView: View {
     private func listCard(for w: Word) -> some View {
         let isExpanded = expandedIds.contains(w.id)
         VStack(alignment: .leading, spacing: 0) {
-            Button {
-                if isExpanded { expandedIds.remove(w.id) } else { expandedIds.insert(w.id) }
-            } label: {
-                HStack(alignment: .top, spacing: 12) {
-                    Circle()
-                        .fill(statusColor(w.status).opacity(0.6))
-                        .frame(width: 8, height: 8)
-                        .padding(.top, 8)
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(w.word)
-                            .font(.headline)
-                            .foregroundStyle(.primary)
-                        Text(w.definitionJapanese.isEmpty ? w.definitionEnglish : w.definitionJapanese)
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                            .lineLimit(2)
-                        HStack(spacing: 8) {
-                            Label("\(w.reviewCount) 回", systemImage: "repeat")
-                            Text("·")
-                            Text("次回 \(w.nextReviewDate.formatted(date: .abbreviated, time: .omitted))")
-                        }
-                        .font(.caption2)
-                        .foregroundStyle(.tertiary)
-                    }
-                    Spacer()
-                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
+            HStack(alignment: .top, spacing: 8) {
+                // Review-list checkbox
+                Button {
+                    store.toggleReviewList(for: w)
+                } label: {
+                    Image(systemName: w.isInReviewList ? "checkmark.square.fill" : "square")
+                        .font(.system(size: 22))
+                        .foregroundStyle(w.isInReviewList ? .indigo : .secondary)
+                        .frame(width: 36, height: 36)
+                        .contentShape(Rectangle())
                 }
-                .padding(14)
-                .contentShape(Rectangle())
+                .buttonStyle(.plain)
+
+                Button {
+                    if isExpanded { expandedIds.remove(w.id) } else { expandedIds.insert(w.id) }
+                } label: {
+                    HStack(alignment: .top, spacing: 8) {
+                        Circle()
+                            .fill(statusColor(w.status).opacity(0.6))
+                            .frame(width: 8, height: 8)
+                            .padding(.top, 8)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(w.word)
+                                .font(.headline)
+                                .foregroundStyle(.primary)
+                            Text(w.definitionJapanese.isEmpty ? w.definitionEnglish : w.definitionJapanese)
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                                .lineLimit(2)
+                            HStack(spacing: 8) {
+                                Label("\(w.reviewCount) 回", systemImage: "repeat")
+                                Text("·")
+                                Text("次回 \(w.nextReviewDate.formatted(date: .abbreviated, time: .omitted))")
+                                if w.isInReviewList, let added = w.addedToReviewListAt {
+                                    Text("·")
+                                    Text("★ \(daysRemainingLabel(addedAt: added))")
+                                        .foregroundStyle(.indigo)
+                                }
+                            }
+                            .font(.caption2)
+                            .foregroundStyle(.tertiary)
+                        }
+                        Spacer()
+                        Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                    }
+                    .padding(.vertical, 14)
+                    .padding(.trailing, 14)
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
             }
-            .buttonStyle(.plain)
+            .padding(.leading, 6)
 
             if isExpanded {
                 expandedDetail(w)
@@ -276,6 +300,13 @@ struct WordListView: View {
         case .fuzzy:     return .orange
         case .perfect:   return .indigo
         }
+    }
+
+    private func daysRemainingLabel(addedAt: Date) -> String {
+        let elapsed = Date().timeIntervalSince(addedAt)
+        let remaining = (7 * 24 * 60 * 60) - elapsed
+        let daysLeft = max(0, Int(ceil(remaining / (24 * 60 * 60))))
+        return "あと\(daysLeft)日"
     }
 }
 
