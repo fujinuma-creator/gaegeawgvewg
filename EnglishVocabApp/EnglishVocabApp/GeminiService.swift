@@ -111,6 +111,55 @@ enum GeminiService {
         }
     }
 
+    /// Generates a Japanese-language grammar / usage explanation for an example
+    /// sentence. Walks through tense choices (e.g. why "I've decided" rather
+    /// than "I decided"), notable collocations, and the target word's role.
+    static func explainExample(
+        targetWord: String,
+        english: String,
+        japanese: String
+    ) async throws -> String {
+        let prompt = """
+        日本語学習者に、以下の英文の文法・語法を詳しく解説してください。
+
+        英文: \(english)
+        日本語訳: \(japanese)
+        学習中の単語/フレーズ: \(targetWord)
+
+        書き方:
+        - 必ず日本語で。
+        - 4〜8個程度の箇条書き（行頭は「・」）。
+        - 取り上げる観点（該当するものだけ）:
+          1) 時制・相の選択理由（例: なぜ "I've decided" で現在完了か、過去形ではない理由）。
+          2) 助動詞・冠詞・前置詞・代名詞の用法。
+          3) 文中の他の重要な語句・コロケーション・イディオム。
+          4) 学習中の \(targetWord) がこの文でどう機能しているか。
+          5) 別の自然な言い換え（あれば）と意味の差。
+        - 機械的な羅列にならないよう、なぜそうなるかを具体的に。
+        - 出力は箇条書きの本文のみ。前置きや見出しは不要。
+        """
+
+        let schema: [String: Any] = [
+            "type": "OBJECT",
+            "properties": [
+                "explanation": ["type": "STRING"]
+            ],
+            "required": ["explanation"]
+        ]
+
+        let textData = try await runGenerateContent(
+            prompt: prompt,
+            schema: schema,
+            temperature: 0.4
+        )
+        struct Wrap: Decodable { let explanation: String }
+        do {
+            return try JSONDecoder().decode(Wrap.self, from: textData).explanation
+        } catch {
+            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
+        }
+    }
+
     /// Shared HTTP transport: returns the raw JSON-text payload Gemini placed in
     /// candidates[0].content.parts[0].text, ready for further `JSONDecoder` use.
     private static func runGenerateContent(
