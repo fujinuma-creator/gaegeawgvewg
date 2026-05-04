@@ -22,9 +22,13 @@ struct QuizView: View {
 
         var emptyMessage: String {
             switch self {
-            case .useCase:    return "「使う場面」付きの単語が4つ以上必要です"
-            case .definition: return "「英語の定義」付きの単語が4つ以上必要です"
+            case .useCase:    return "復習リスト内に「使う場面」付きの単語が4つ以上必要です"
+            case .definition: return "復習リスト内に「英語の定義」付きの単語が4つ以上必要です"
             }
+        }
+
+        var emptyHint: String {
+            "「一覧」タブのチェックで単語を復習リストに追加してください\n（追加から1週間で自動的に消えます）"
         }
     }
 
@@ -47,11 +51,13 @@ struct QuizView: View {
     @State private var showDetail: Bool = false
 
     private var eligibleWords: [Word] {
+        // Quiz draws only from the user's review list (auto-expires after 7 days).
+        let pinned = store.reviewListWords
         switch mode {
         case .useCase:
-            return store.words.filter { !$0.useCases.isEmpty }
+            return pinned.filter { !$0.useCases.isEmpty }
         case .definition:
-            return store.words.filter {
+            return pinned.filter {
                 !$0.definitionEnglish.trimmingCharacters(in: .whitespaces).isEmpty
             }
         }
@@ -80,12 +86,16 @@ struct QuizView: View {
             if eligibleWords.count < 4 {
                 Spacer()
                 VStack(spacing: 10) {
-                    Image(systemName: "questionmark.circle")
+                    Image(systemName: "star")
                         .font(.system(size: 50))
-                        .foregroundStyle(.secondary)
+                        .foregroundStyle(.indigo)
                     Text(mode.emptyMessage)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.secondary)
+                    Text(mode.emptyHint)
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(.tertiary)
                 }
                 .padding()
                 Spacer()
