@@ -1,15 +1,27 @@
 import SwiftUI
 
-/// Multiple-choice quiz: show the English word, pick the correct Japanese meaning.
+/// Multiple-choice quiz: show the English word, pick the correct "use case" (situation).
 struct QuizView: View {
     @EnvironmentObject var store: WordStore
 
+    /// One choice = a use case sentence + the word it belongs to.
+    private struct QuizChoice: Identifiable {
+        let id = UUID()
+        let useCase: String
+        let sourceWord: Word
+    }
+
     @State private var currentWord: Word?
-    @State private var choices: [Word] = []
-    @State private var selected: UUID? = nil
+    @State private var correctChoiceId: UUID? = nil
+    @State private var choices: [QuizChoice] = []
+    @State private var selectedId: UUID? = nil
     @State private var answered = false
     @State private var correctCount = 0
     @State private var totalCount = 0
+
+    private var wordsWithUseCases: [Word] {
+        store.words.filter { !$0.useCases.isEmpty }
+    }
 
     var body: some View {
         VStack(spacing: 20) {
@@ -23,13 +35,13 @@ struct QuizView: View {
             .padding(.horizontal, 16)
             .padding(.top, 12)
 
-            if store.words.count < 4 {
+            if wordsWithUseCases.count < 4 {
                 Spacer()
                 VStack(spacing: 10) {
                     Image(systemName: "questionmark.circle")
                         .font(.system(size: 50))
                         .foregroundStyle(.secondary)
-                    Text("単語を4つ以上追加するとクイズが始まります")
+                    Text("「使う場面」付きの単語が4つ以上必要です")
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.secondary)
                 }
@@ -66,7 +78,7 @@ struct QuizView: View {
                     .font(.system(size: 28, weight: .bold))
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
-                Text("使う場面に最も近い意味は？")
+                Text("この単語を使う場面はどれ？")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -80,12 +92,14 @@ struct QuizView: View {
 
             VStack(spacing: 10) {
                 ForEach(choices) { choice in
-                    choiceButton(choice, correctId: word.id)
+                    choiceButton(choice)
                 }
             }
             .padding(.horizontal, 16)
 
-            if answered {
+            if answered, let word = currentWord {
+                answerExplanation(word)
+                    .padding(.horizontal, 16)
                 Button {
                     nextQuestion()
                 } label: {
@@ -103,9 +117,9 @@ struct QuizView: View {
         }
     }
 
-    private func choiceButton(_ choice: Word, correctId: UUID) -> some View {
-        let isCorrect = choice.id == correctId
-        let isSelected = selected == choice.id
+    private func choiceButton(_ choice: QuizChoice) -> some View {
+        let isCorrect = choice.id == correctChoiceId
+        let isSelected = selectedId == choice.id
         let bgColor: Color = {
             guard answered else { return Color(.secondarySystemGroupedBackground) }
             if isCorrect { return Color.green.opacity(0.2) }
@@ -121,18 +135,19 @@ struct QuizView: View {
 
         return Button {
             guard !answered else { return }
-            selected = choice.id
+            selectedId = choice.id
             answered = true
             totalCount += 1
+            guard let word = currentWord else { return }
             if isCorrect {
                 correctCount += 1
-                store.record(mark: .perfect, for: choice)
+                store.record(mark: .perfect, for: word)
             } else {
-                store.record(mark: .forgot, for: currentWord!)
+                store.record(mark: .forgot, for: word)
             }
         } label: {
             HStack(alignment: .top, spacing: 10) {
-                Text(choice.definitionJapanese)
+                Text(choice.useCase)
                     .multilineTextAlignment(.leading)
                 Spacer()
                 if answered && isCorrect {
@@ -151,16 +166,55 @@ struct QuizView: View {
         .disabled(answered)
     }
 
+    /// Shows the chosen wrong answer's source word + the correct word's full meaning,
+    /// so the user can learn from each question.
+    @ViewBuilder
+    private func answerExplanation(_ word: Word) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("正解の単語: \(word.word)")
+                .font(.subheadline.bold())
+                .foregroundStyle(.indigo)
+            Text(word.definitionJapanese)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            if let selectedChoice = choices.first(where: { $0.id == selectedId }),
+               selectedChoice.id != correctChoiceId {
+                Divider().padding(.vertical, 4)
+                Text("選んだ場面は「\(selectedChoice.sourceWord.word)」の使い方です")
+                    .font(.caption)
+                    .foregroundStyle(.red.opacity(0.85))
+            }
+        }
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 10)
+                .fill(Color(.tertiarySystemGroupedBackground))
+        )
+    }
+
     private func nextQuestion() {
-        guard store.words.count >= 4 else { return }
-        let pool = store.words.shuffled()
-        let answer = pool[0]
-        let distractors = Array(pool.dropFirst().prefix(3))
-        var newChoices = ([answer] + distractors).shuffled()
-        if newChoices.count < 4 { newChoices = Array(pool.prefix(4)) }
-        currentWord = answer
-        choices = newChoices
-        selected = nil
+        let pool = wordsWithUseCases.shuffled()
+        guard pool.count >= 4 else { return }
+
+        let answerWord = pool[0]
+        guard let correctUseCase = answerWord.useCases.randomElement() else { return }
+
+        // Pick distractor use cases from 3 different other words.
+        let distractorWords = pool.dropFirst().prefix(3)
+        let distractors: [QuizChoice] = distractorWords.compactMap { dw in
+            guard let uc = dw.useCases.randomElement() else { return nil }
+            return QuizChoice(useCase: uc, sourceWord: dw)
+        }
+        guard distractors.count == 3 else { return }
+
+        let correctChoice = QuizChoice(useCase: correctUseCase, sourceWord: answerWord)
+        let allChoices = ([correctChoice] + distractors).shuffled()
+
+        currentWord = answerWord
+        correctChoiceId = correctChoice.id
+        choices = allChoices
+        selectedId = nil
         answered = false
     }
 }
