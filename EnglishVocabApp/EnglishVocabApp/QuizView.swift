@@ -1,17 +1,41 @@
 import SwiftUI
 
-/// Multiple-choice quiz: show the English word, pick the correct "use case" (situation).
+/// Multiple-choice quiz: show the English word, pick the correct answer.
+/// Two modes are supported, switchable via a segmented control:
+/// - 使う場面: pick the situation/scene where the word is used
+/// - 英語の定義: pick the English definition
 struct QuizView: View {
     @EnvironmentObject var store: WordStore
     @Binding var activeTab: ContentView.Tab
 
-    /// One choice = a use case sentence + the word it belongs to.
+    enum QuizMode: String, CaseIterable, Identifiable {
+        case useCase = "使う場面"
+        case definition = "英語の定義"
+        var id: String { rawValue }
+
+        var prompt: String {
+            switch self {
+            case .useCase:    return "この単語を使う場面はどれ？"
+            case .definition: return "この単語の英語の定義はどれ？"
+            }
+        }
+
+        var emptyMessage: String {
+            switch self {
+            case .useCase:    return "「使う場面」付きの単語が4つ以上必要です"
+            case .definition: return "「英語の定義」付きの単語が4つ以上必要です"
+            }
+        }
+    }
+
+    /// One choice = an answer text + the word it belongs to.
     private struct QuizChoice: Identifiable {
         let id = UUID()
-        let useCase: String
+        let text: String
         let sourceWord: Word
     }
 
+    @State private var mode: QuizMode = .useCase
     @State private var currentWord: Word?
     @State private var correctChoiceId: UUID? = nil
     @State private var choices: [QuizChoice] = []
@@ -22,12 +46,19 @@ struct QuizView: View {
     @State private var detailWord: Word? = nil
     @State private var showDetail: Bool = false
 
-    private var wordsWithUseCases: [Word] {
-        store.words.filter { !$0.useCases.isEmpty }
+    private var eligibleWords: [Word] {
+        switch mode {
+        case .useCase:
+            return store.words.filter { !$0.useCases.isEmpty }
+        case .definition:
+            return store.words.filter {
+                !$0.definitionEnglish.trimmingCharacters(in: .whitespaces).isEmpty
+            }
+        }
     }
 
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 16) {
             HStack {
                 Text("クイズ").font(.title2.bold())
                 Spacer()
@@ -38,13 +69,21 @@ struct QuizView: View {
             .padding(.horizontal, 16)
             .padding(.top, 12)
 
-            if wordsWithUseCases.count < 4 {
+            Picker("出題形式", selection: $mode) {
+                ForEach(QuizMode.allCases) { m in
+                    Text(m.rawValue).tag(m)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal, 16)
+
+            if eligibleWords.count < 4 {
                 Spacer()
                 VStack(spacing: 10) {
                     Image(systemName: "questionmark.circle")
                         .font(.system(size: 50))
                         .foregroundStyle(.secondary)
-                    Text("「使う場面」付きの単語が4つ以上必要です")
+                    Text(mode.emptyMessage)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.secondary)
                 }
@@ -61,6 +100,13 @@ struct QuizView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground).ignoresSafeArea())
         .onAppear { if currentWord == nil { nextQuestion() } }
+        .onChange(of: mode) { _, _ in
+            // Reset session counters and start a fresh question whenever
+            // the user switches the quiz format.
+            correctCount = 0
+            totalCount = 0
+            nextQuestion()
+        }
         .sheet(isPresented: $showDetail) {
             if let detailWord {
                 WordDetailSheet(word: detailWord)
@@ -141,7 +187,7 @@ struct QuizView: View {
                     .font(.caption2)
                     .foregroundStyle(.indigo)
 
-                Text("この単語を使う場面はどれ？")
+                Text(mode.prompt)
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .padding(.top, 4)
@@ -211,7 +257,7 @@ struct QuizView: View {
             }
         } label: {
             HStack(alignment: .top, spacing: 10) {
-                Text(choice.useCase)
+                Text(choice.text)
                     .multilineTextAlignment(.leading)
                 Spacer()
                 if answered && isCorrect {
@@ -259,7 +305,7 @@ struct QuizView: View {
                     openDetail(for: selectedChoice.sourceWord)
                 } label: {
                     HStack {
-                        Text("選んだ場面は「\(selectedChoice.sourceWord.word)」の使い方です")
+                        Text(wrongChoiceCopy(for: selectedChoice.sourceWord))
                             .font(.caption)
                             .foregroundStyle(.red.opacity(0.85))
                             .multilineTextAlignment(.leading)
@@ -281,21 +327,24 @@ struct QuizView: View {
     }
 
     private func nextQuestion() {
-        let pool = wordsWithUseCases.shuffled()
-        guard pool.count >= 4 else { return }
+        let pool = eligibleWords.shuffled()
+        guard pool.count >= 4 else {
+            currentWord = nil
+            choices = []
+            return
+        }
 
         let answerWord = pool[0]
-        guard let correctUseCase = answerWord.useCases.randomElement() else { return }
+        guard let correctText = choiceText(for: answerWord) else { return }
 
-        // Pick distractor use cases from 3 different other words.
         let distractorWords = pool.dropFirst().prefix(3)
         let distractors: [QuizChoice] = distractorWords.compactMap { dw in
-            guard let uc = dw.useCases.randomElement() else { return nil }
-            return QuizChoice(useCase: uc, sourceWord: dw)
+            guard let t = choiceText(for: dw) else { return nil }
+            return QuizChoice(text: t, sourceWord: dw)
         }
         guard distractors.count == 3 else { return }
 
-        let correctChoice = QuizChoice(useCase: correctUseCase, sourceWord: answerWord)
+        let correctChoice = QuizChoice(text: correctText, sourceWord: answerWord)
         let allChoices = ([correctChoice] + distractors).shuffled()
 
         currentWord = answerWord
@@ -303,6 +352,26 @@ struct QuizView: View {
         choices = allChoices
         selectedId = nil
         answered = false
+    }
+
+    /// Picks the answer text for a word based on the current quiz mode.
+    private func choiceText(for word: Word) -> String? {
+        switch mode {
+        case .useCase:
+            return word.useCases.randomElement()
+        case .definition:
+            let def = word.definitionEnglish.trimmingCharacters(in: .whitespaces)
+            return def.isEmpty ? nil : def
+        }
+    }
+
+    private func wrongChoiceCopy(for sourceWord: Word) -> String {
+        switch mode {
+        case .useCase:
+            return "選んだ場面は「\(sourceWord.word)」の使い方です"
+        case .definition:
+            return "選んだ定義は「\(sourceWord.word)」のものです"
+        }
     }
 }
 
