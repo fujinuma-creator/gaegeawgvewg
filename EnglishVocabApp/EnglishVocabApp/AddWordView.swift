@@ -4,33 +4,47 @@ struct AddWordView: View {
     @EnvironmentObject var store: WordStore
     @Environment(\.dismiss) private var dismiss
 
-    @State private var word = ""
-    @State private var definitionEnglish = ""
-    @State private var definitionJapanese = ""
-    @State private var useCasesText = ""
-    @State private var exampleEntries: [ExampleEntry] = [.init(), .init(), .init()]
-    @State private var synonymEntries: [SynonymEntry] = [.init()]
+    @State private var wordsText: String = ""
+    @State private var apiKey: String = ""
+    @State private var revealKey: Bool = false
+    @State private var showAPIKeyHelp: Bool = false
 
-    @State private var showSavedAlert = false
-    @State private var isGenerating = false
-    @State private var generationError: String? = nil
-    @State private var showGenerationError = false
+    @State private var isGenerating: Bool = false
+    @State private var progressDone: Int = 0
+    @State private var progressTotal: Int = 0
+    @State private var addedCount: Int = 0
+    @State private var skippedDuplicates: [String] = []
+    @State private var failedWords: [(word: String, message: String)] = []
+    @State private var showResult: Bool = false
 
     var body: some View {
         NavigationStack {
             Form {
-                Section("英単語") {
-                    TextField("例: thread", text: $word)
+                Section {
+                    TextEditor(text: $wordsText)
+                        .frame(minHeight: 180)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
+                        .font(.body)
+                } header: {
+                    Text("英単語を入力（改行で区切る・推奨10個まで）")
+                } footer: {
+                    Text(footerCount)
+                        .foregroundStyle(footerColor)
+                }
+
+                Section {
                     Button {
-                        Task { await generateWithAI() }
+                        Task { await generate() }
                     } label: {
                         HStack {
+                            Spacer()
                             if isGenerating {
                                 ProgressView()
+                                    .tint(.white)
                                     .padding(.trailing, 4)
-                                Text("AI で生成中…")
+                                Text("\(progressDone) / \(progressTotal) 単語を生成中…")
+                                    .bold()
                             } else {
                                 Image(systemName: "sparkles")
                                 Text("AI で自動生成")
@@ -38,234 +52,238 @@ struct AddWordView: View {
                             }
                             Spacer()
                         }
-                        .foregroundStyle(canGenerate ? .indigo : .secondary)
-                    }
-                    .disabled(!canGenerate || isGenerating)
-                }
-
-                Section("英語の定義 / 日本語訳") {
-                    TextField("English definition", text: $definitionEnglish, axis: .vertical)
-                        .lineLimit(2...5)
-                    TextField("日本語訳", text: $definitionJapanese, axis: .vertical)
-                        .lineLimit(1...3)
-                }
-
-                Section("使う場面（1行に1つ）") {
-                    TextField("例: 裁縫の糸\nXや掲示板の投稿の流れ", text: $useCasesText, axis: .vertical)
-                        .lineLimit(2...6)
-                }
-
-                Section("例文") {
-                    ForEach($exampleEntries) { $entry in
-                        VStack(alignment: .leading) {
-                            TextField("English", text: $entry.english, axis: .vertical)
-                                .lineLimit(1...3)
-                            TextField("日本語訳", text: $entry.japanese, axis: .vertical)
-                                .lineLimit(1...3)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                    Button {
-                        exampleEntries.append(.init())
-                    } label: {
-                        Label("例文を追加", systemImage: "plus.circle")
-                    }
-                }
-
-                Section("類義語") {
-                    ForEach($synonymEntries) { $syn in
-                        VStack(alignment: .leading, spacing: 8) {
-                            TextField("類義語（例: string）", text: $syn.word)
-                                .textInputAutocapitalization(.never)
-                                .autocorrectionDisabled()
-                            TextField("意味（例: ひも）", text: $syn.meaning)
-                            TextField("英語の定義（任意）", text: $syn.definitionEnglish, axis: .vertical)
-                                .lineLimit(1...3)
-                            TextField("使う場面（1行に1つ・任意）", text: $syn.useCasesText, axis: .vertical)
-                                .lineLimit(1...4)
-                            ForEach($syn.examples) { $ex in
-                                VStack(alignment: .leading) {
-                                    TextField("English", text: $ex.english, axis: .vertical)
-                                        .lineLimit(1...3)
-                                    TextField("日本語訳", text: $ex.japanese, axis: .vertical)
-                                        .lineLimit(1...3)
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
-                            Button {
-                                syn.examples.append(.init())
-                            } label: {
-                                Label("例文を追加", systemImage: "plus.circle")
-                            }
-                            .font(.footnote)
-                        }
                         .padding(.vertical, 4)
+                        .foregroundStyle(.white)
                     }
-                    Button {
-                        synonymEntries.append(.init())
-                    } label: {
-                        Label("類義語を追加", systemImage: "plus.circle")
-                    }
+                    .listRowBackground(canGenerate ? Color.indigo : Color.indigo.opacity(0.4))
+                    .disabled(!canGenerate)
                 }
 
                 Section {
-                    Button {
-                        save()
-                    } label: {
-                        HStack {
-                            Spacer()
-                            Text("単語を追加")
-                                .bold()
-                            Spacer()
-                        }
+                    if revealKey {
+                        TextField("AIzaSy...", text: $apiKey)
+                            .textInputAutocapitalization(.never)
+                            .autocorrectionDisabled()
+                            .font(.system(.body, design: .monospaced))
+                            .onChange(of: apiKey) { _, newValue in
+                                saveKey(newValue)
+                            }
+                    } else {
+                        SecureField("AIzaSy...", text: $apiKey)
+                            .textInputAutocapitalization(.never)
+                            .autocorrectionDisabled()
+                            .font(.system(.body, design: .monospaced))
+                            .onChange(of: apiKey) { _, newValue in
+                                saveKey(newValue)
+                            }
                     }
-                    .disabled(!canSave)
+                    Toggle("キーを表示", isOn: $revealKey)
+                        .font(.subheadline)
+                    DisclosureGroup(isExpanded: $showAPIKeyHelp) {
+                        APIKeyHelpView()
+                    } label: {
+                        Label("Gemini API キーの取得方法", systemImage: "questionmark.circle")
+                            .font(.subheadline)
+                    }
+                } header: {
+                    Text("Gemini API キー（必須）")
+                } footer: {
+                    Text("入力すると自動的に端末の Keychain に暗号化して保存されます。")
                 }
             }
             .navigationTitle("単語を追加")
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("閉じる") { dismiss() }
+                        .disabled(isGenerating)
                 }
             }
-            .alert("追加しました", isPresented: $showSavedAlert) {
-                Button("続けて追加") { reset() }
-                Button("閉じる", role: .cancel) { dismiss() }
+            .onAppear {
+                apiKey = KeychainHelper.get(SecretKey.geminiAPIKey) ?? ""
             }
-            .alert("AI 生成に失敗しました", isPresented: $showGenerationError, presenting: generationError) { _ in
-                Button("OK", role: .cancel) {}
-            } message: { msg in
-                Text(msg)
+            .alert(resultTitle, isPresented: $showResult) {
+                if addedCount > 0 && failedWords.isEmpty && skippedDuplicates.isEmpty {
+                    Button("OK", role: .cancel) {
+                        wordsText = ""
+                        dismiss()
+                    }
+                } else {
+                    Button("OK", role: .cancel) {
+                        // Keep the typed words around so user can retry the failures.
+                    }
+                }
+            } message: {
+                Text(resultMessage)
             }
         }
     }
 
-    private var canGenerate: Bool {
-        !word.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-    }
+    // MARK: - Derived
 
-    @MainActor
-    private func generateWithAI() async {
-        let term = word.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !term.isEmpty else { return }
-        isGenerating = true
-        defer { isGenerating = false }
-        do {
-            let result = try await GeminiService.generateWord(for: term)
-            applyGenerated(result)
-        } catch {
-            generationError = error.localizedDescription
-            showGenerationError = true
-        }
-    }
-
-    private func applyGenerated(_ g: GeneratedWord) {
-        definitionEnglish = g.definitionEnglish
-        definitionJapanese = g.definitionJapanese
-        useCasesText = g.useCases.joined(separator: "\n")
-        exampleEntries = g.examples.map { ex in
-            var e = ExampleEntry()
-            e.english = ex.english
-            e.japanese = ex.japanese
-            return e
-        }
-        if exampleEntries.isEmpty { exampleEntries = [.init()] }
-
-        synonymEntries = (g.synonyms ?? []).map { syn in
-            var e = SynonymEntry()
-            e.word = syn.word
-            e.meaning = syn.meaning
-            e.definitionEnglish = syn.definitionEnglish ?? ""
-            e.useCasesText = (syn.useCases ?? []).joined(separator: "\n")
-            e.examples = (syn.examples ?? []).map { ex in
-                var ee = ExampleEntry()
-                ee.english = ex.english
-                ee.japanese = ex.japanese
-                return ee
-            }
-            if e.examples.isEmpty { e.examples = [.init()] }
-            return e
-        }
-        if synonymEntries.isEmpty { synonymEntries = [.init()] }
-    }
-
-    private var canSave: Bool {
-        !word.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-            && !definitionJapanese.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-    }
-
-    private func save() {
-        let useCases = useCasesText
+    private var trimmedWords: [String] {
+        wordsText
             .split(whereSeparator: { $0.isNewline })
             .map { $0.trimmingCharacters(in: .whitespaces) }
             .filter { !$0.isEmpty }
+    }
 
-        let examples: [ExampleSentence] = exampleEntries
-            .filter { !$0.english.trimmingCharacters(in: .whitespaces).isEmpty }
-            .map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+    private var canGenerate: Bool {
+        !isGenerating && !trimmedWords.isEmpty && !apiKey.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
 
-        let synonyms: [SynonymGroup] = synonymEntries
-            .filter { !$0.word.trimmingCharacters(in: .whitespaces).isEmpty }
-            .map { entry in
-                let exs = entry.examples
-                    .filter { !$0.english.trimmingCharacters(in: .whitespaces).isEmpty }
-                    .map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
-                let synUseCases = entry.useCasesText
-                    .split(whereSeparator: { $0.isNewline })
-                    .map { $0.trimmingCharacters(in: .whitespaces) }
-                    .filter { !$0.isEmpty }
-                return SynonymGroup(
-                    word: entry.word,
-                    meaning: entry.meaning,
-                    definitionEnglish: entry.definitionEnglish,
-                    useCases: synUseCases,
-                    examples: exs
+    private var footerCount: String {
+        let n = trimmedWords.count
+        if n == 0 { return "まだ単語が入力されていません。" }
+        if n > 10 { return "\(n) 個入力中（推奨は10個まで・処理に時間がかかります）" }
+        return "\(n) 個入力中"
+    }
+
+    private var footerColor: Color {
+        trimmedWords.count > 10 ? .orange : .secondary
+    }
+
+    private var resultTitle: String {
+        if addedCount > 0 && failedWords.isEmpty && skippedDuplicates.isEmpty {
+            return "\(addedCount) 個追加しました"
+        } else if addedCount == 0 && (!failedWords.isEmpty || !skippedDuplicates.isEmpty) {
+            return "追加できませんでした"
+        } else {
+            return "完了：\(addedCount) 個追加"
+        }
+    }
+
+    private var resultMessage: String {
+        var lines: [String] = []
+        if !skippedDuplicates.isEmpty {
+            lines.append("既に存在: \(skippedDuplicates.joined(separator: ", "))")
+        }
+        if !failedWords.isEmpty {
+            let summary = failedWords
+                .prefix(5)
+                .map { "・\($0.word): \($0.message)" }
+                .joined(separator: "\n")
+            lines.append("失敗:\n\(summary)")
+            if failedWords.count > 5 {
+                lines.append("…他 \(failedWords.count - 5) 件")
+            }
+        }
+        return lines.isEmpty ? "" : lines.joined(separator: "\n\n")
+    }
+
+    // MARK: - Actions
+
+    private func saveKey(_ value: String) {
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        KeychainHelper.set(trimmed.isEmpty ? nil : trimmed, for: SecretKey.geminiAPIKey)
+    }
+
+    @MainActor
+    private func generate() async {
+        let words = trimmedWords
+        guard !words.isEmpty else { return }
+        let existing = Set(store.words.map { $0.word.lowercased() })
+
+        isGenerating = true
+        progressDone = 0
+        progressTotal = words.count
+        addedCount = 0
+        skippedDuplicates = []
+        failedWords = []
+
+        for w in words {
+            defer { progressDone += 1 }
+            if existing.contains(w.lowercased())
+                || store.words.contains(where: { $0.word.lowercased() == w.lowercased() }) {
+                skippedDuplicates.append(w)
+                continue
+            }
+            do {
+                let g = try await GeminiService.generateWord(for: w)
+                let now = Date()
+                let newWord = Word(
+                    word: w,
+                    definitionEnglish: g.definitionEnglish,
+                    definitionJapanese: g.definitionJapanese,
+                    useCases: g.useCases,
+                    examples: g.examples.map { ExampleSentence(english: $0.english, japanese: $0.japanese) },
+                    synonyms: (g.synonyms ?? []).map { syn in
+                        SynonymGroup(
+                            word: syn.word,
+                            meaning: syn.meaning,
+                            definitionEnglish: syn.definitionEnglish ?? "",
+                            useCases: syn.useCases ?? [],
+                            examples: (syn.examples ?? []).map {
+                                ExampleSentence(english: $0.english, japanese: $0.japanese)
+                            }
+                        )
+                    },
+                    reviewCount: 0,
+                    status: .unlearned,
+                    nextReviewDate: now,
+                    lastReviewedDate: nil,
+                    createdAt: now
                 )
+                store.add(newWord)
+                addedCount += 1
+            } catch {
+                failedWords.append((word: w, message: error.localizedDescription))
+            }
+        }
+
+        isGenerating = false
+        showResult = true
+    }
+}
+
+// MARK: - API key help
+
+private struct APIKeyHelpView: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            stepRow("1.", "下のリンクをタップして Google AI Studio を開く")
+            Link(destination: URL(string: "https://aistudio.google.com/apikey")!) {
+                Label("aistudio.google.com/apikey", systemImage: "safari")
+                    .font(.subheadline)
+            }
+            .padding(.leading, 28)
+
+            stepRow("2.", "Google アカウントでログイン（普段使ってる Gmail でOK）")
+            stepRow("3.", "「Create API key」または「APIキーを作成」をタップ")
+            stepRow("4.", "プロジェクトを選択（なければ新規作成、デフォルトでOK）")
+            stepRow("5.", "表示された「AIzaSy…」で始まる文字列をコピー")
+            stepRow("6.", "このアプリに戻り、上の入力欄に貼り付ける")
+
+            Divider().padding(.vertical, 4)
+
+            VStack(alignment: .leading, spacing: 6) {
+                Label("料金について", systemImage: "yensign.circle")
+                    .font(.subheadline.bold())
+                Text("無料枠で十分使えます（個人利用なら使い切ることはほぼありません）。クレジットカードを登録しなければ自動課金は発生しません。")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
 
-        let now = Date()
-        let newWord = Word(
-            word: word.trimmingCharacters(in: .whitespaces),
-            definitionEnglish: definitionEnglish,
-            definitionJapanese: definitionJapanese,
-            useCases: useCases,
-            examples: examples,
-            synonyms: synonyms,
-            reviewCount: 0,
-            status: .unlearned,
-            nextReviewDate: now,
-            lastReviewedDate: nil,
-            createdAt: now
-        )
-        store.add(newWord)
-        showSavedAlert = true
+            VStack(alignment: .leading, spacing: 6) {
+                Label("セキュリティ", systemImage: "lock.shield")
+                    .font(.subheadline.bold())
+                Text("入力したキーは端末内の Keychain に暗号化して保存されます。サーバーやログには送信されません。万一漏れた場合は Google AI Studio の同じページで再発行できます。")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding(.vertical, 8)
     }
 
-    private func reset() {
-        word = ""
-        definitionEnglish = ""
-        definitionJapanese = ""
-        useCasesText = ""
-        exampleEntries = [.init(), .init(), .init()]
-        synonymEntries = [.init()]
+    private func stepRow(_ number: String, _ text: String) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 8) {
+            Text(number)
+                .font(.subheadline.bold())
+                .foregroundStyle(.indigo)
+                .frame(width: 20, alignment: .leading)
+            Text(text)
+                .font(.subheadline)
+        }
     }
-}
-
-// MARK: - Form helper structs
-
-struct ExampleEntry: Identifiable {
-    let id = UUID()
-    var english: String = ""
-    var japanese: String = ""
-}
-
-struct SynonymEntry: Identifiable {
-    let id = UUID()
-    var word: String = ""
-    var meaning: String = ""
-    var definitionEnglish: String = ""
-    var useCasesText: String = ""
-    var examples: [ExampleEntry] = [.init(), .init()]
 }
 
 #Preview {
