@@ -354,7 +354,7 @@ struct WordListView: View {
         defer { regeneratingExamplesForId = nil }
         do {
             let new = try await GeminiService.regenerateExamples(for: w)
-            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese, grammar: $0.grammar) }
             store.updateExamples(for: w.id, with: mapped)
         } catch {
             regenerateError = error.localizedDescription

@@ -4,8 +4,15 @@ struct ExampleSentence: Codable, Identifiable, Hashable {
     var id = UUID()
     var english: String
     var japanese: String
+    /// Pre-generated Japanese explanation of the grammar / usage of this
+    /// example sentence (e.g. why "I've decided" rather than "I decided").
+    /// Optional for backward compatibility with examples saved before this
+    /// field existed and for the seed data that ships without explanations.
+    var grammar: String? = nil
 
-    enum CodingKeys: String, CodingKey { case english, japanese }
+    enum CodingKeys: String, CodingKey {
+        case english, japanese, grammar
+    }
 }
 
 struct SynonymGroup: Codable, Identifiable, Hashable {

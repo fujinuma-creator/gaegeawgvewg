@@ -23,6 +23,9 @@ struct GeneratedWord: Decodable {
     struct Example: Decodable {
         let english: String
         let japanese: String
+        /// Japanese grammar / usage explanation for this sentence.
+        /// Optional because some older AI calls didn't include it.
+        let grammar: String?
     }
     struct Synonym: Decodable {
         let word: String
@@ -64,6 +67,7 @@ enum GeminiService {
         - No formal/news/business register.
         - Vary the situation: at least 2 of the 3 should describe a different scenario from the existing examples.
         - Pair each English sentence with a short, natural Japanese translation.
+        - Each example must also include a "grammar" field: 必ず日本語で、その英文の文法・語法・コロケーションを2〜4個の箇条書き（行頭は「・」）で具体的に解説。時制・冠詞・前置詞・助動詞・代名詞などについて「なぜその形か」を説明する。
         - Output JSON only, matching the schema. No markdown, no commentary.
         """
 
@@ -76,9 +80,10 @@ enum GeminiService {
                         "type": "OBJECT",
                         "properties": [
                             "english": ["type": "STRING"],
-                            "japanese": ["type": "STRING"]
+                            "japanese": ["type": "STRING"],
+                            "grammar": ["type": "STRING"]
                         ],
-                        "required": ["english", "japanese"]
+                        "required": ["english", "japanese", "grammar"]
                     ]
                 ]
             ],
@@ -106,55 +111,6 @@ enum GeminiService {
         )
         do {
             return try JSONDecoder().decode(GeneratedWord.self, from: textData)
-        } catch {
-            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
-        }
-    }
-
-    /// Generates a Japanese-language grammar / usage explanation for an example
-    /// sentence. Walks through tense choices (e.g. why "I've decided" rather
-    /// than "I decided"), notable collocations, and the target word's role.
-    static func explainExample(
-        targetWord: String,
-        english: String,
-        japanese: String
-    ) async throws -> String {
-        let prompt = """
-        日本語学習者に、以下の英文の文法・語法を詳しく解説してください。
-
-        英文: \(english)
-        日本語訳: \(japanese)
-        学習中の単語/フレーズ: \(targetWord)
-
-        書き方:
-        - 必ず日本語で。
-        - 4〜8個程度の箇条書き（行頭は「・」）。
-        - 取り上げる観点（該当するものだけ）:
-          1) 時制・相の選択理由（例: なぜ "I've decided" で現在完了か、過去形ではない理由）。
-          2) 助動詞・冠詞・前置詞・代名詞の用法。
-          3) 文中の他の重要な語句・コロケーション・イディオム。
-          4) 学習中の \(targetWord) がこの文でどう機能しているか。
-          5) 別の自然な言い換え（あれば）と意味の差。
-        - 機械的な羅列にならないよう、なぜそうなるかを具体的に。
-        - 出力は箇条書きの本文のみ。前置きや見出しは不要。
-        """
-
-        let schema: [String: Any] = [
-            "type": "OBJECT",
-            "properties": [
-                "explanation": ["type": "STRING"]
-            ],
-            "required": ["explanation"]
-        ]
-
-        let textData = try await runGenerateContent(
-            prompt: prompt,
-            schema: schema,
-            temperature: 0.4
-        )
-        struct Wrap: Decodable { let explanation: String }
-        do {
-            return try JSONDecoder().decode(Wrap.self, from: textData).explanation
         } catch {
             throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
         }
@@ -230,9 +186,13 @@ enum GeminiService {
         - useCases: 2〜3個。各項目は5〜12文字程度の短い体言止めフレーズ。「〜とき」で終わる場面・シチュエーションのみ。文章にしないこと。意味の翻訳や言い換えは禁止。
           OK例: 「会議で意見を出すとき」「友達と予定を決めるとき」
           NG例: 「アイデアや解決策を提案する場面で使う」（長すぎ・説明的）
-        - examples: 2〜3個。日常会話で実際に使う、カジュアルで口語的な短い英文（10語以下が目安）。フォーマルな書き言葉やニュース調はNG。短縮形（I'm, don't, gonna 等）OK。各英文に自然で短い日本語訳を付ける。
-          OK例: "I came up with a plan." / "Let me figure it out."
-          NG例: "The committee has come up with a comprehensive proposal." (堅すぎ・長すぎ)
+        - examples: 2〜3個。各要素は english / japanese / grammar の3フィールド。
+          ・english: 日常会話で実際に使う、カジュアルで口語的な短い英文（10語以下が目安）。フォーマルな書き言葉やニュース調はNG。短縮形（I'm, don't, gonna 等）OK。
+            OK例: "I came up with a plan." / "Let me figure it out."
+            NG例: "The committee has come up with a comprehensive proposal." (堅すぎ・長すぎ)
+          ・japanese: 自然で短い日本語訳。
+          ・grammar: 必ず日本語で。その英文の文法・語法・コロケーションを2〜4個の箇条書き（行頭は「・」）で簡潔に解説。なぜその時制・冠詞・前置詞・助動詞・代名詞かを具体的に説明する。
+            例: 「・"I've decided" は現在完了形。過去の決断が今も有効であることを示す。"I decided" だと過去の一回の事実だけ。」「・"to take" は to不定詞。decide は to不定詞のみと結びつく。」
         - synonyms: もっとも近い類義語を1個だけ、無ければ空配列。本体と同じく短く。各要素 word, meaning（短い日本語）, definitionEnglish（1行）, useCases（1〜2個・短句）, examples（1〜2個・口語）。
         - Output JSON only. No markdown, no extra text.
 
@@ -256,9 +216,10 @@ enum GeminiService {
                         "type": "OBJECT",
                         "properties": [
                             "english": ["type": "STRING"],
-                            "japanese": ["type": "STRING"]
+                            "japanese": ["type": "STRING"],
+                            "grammar": ["type": "STRING"]
                         ],
-                        "required": ["english", "japanese"]
+                        "required": ["english", "japanese", "grammar"]
                     ]
                 ],
                 "synonyms": [

@@ -205,7 +205,9 @@ struct AddWordView: View {
                     definitionEnglish: g.definitionEnglish,
                     definitionJapanese: g.definitionJapanese,
                     useCases: g.useCases,
-                    examples: g.examples.map { ExampleSentence(english: $0.english, japanese: $0.japanese) },
+                    examples: g.examples.map {
+                        ExampleSentence(english: $0.english, japanese: $0.japanese, grammar: $0.grammar)
+                    },
                     synonyms: (g.synonyms ?? []).map { syn in
                         SynonymGroup(
                             word: syn.word,
@@ -213,7 +215,7 @@ struct AddWordView: View {
                             definitionEnglish: syn.definitionEnglish ?? "",
                             useCases: syn.useCases ?? [],
                             examples: (syn.examples ?? []).map {
-                                ExampleSentence(english: $0.english, japanese: $0.japanese)
+                                ExampleSentence(english: $0.english, japanese: $0.japanese, grammar: $0.grammar)
                             }
                         )
                     },

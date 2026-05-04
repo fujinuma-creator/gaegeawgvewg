@@ -405,7 +405,7 @@ struct ReviewView: View {
         defer { regeneratingExamplesForId = nil }
         do {
             let new = try await GeminiService.regenerateExamples(for: word)
-            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese, grammar: $0.grammar) }
             store.updateExamples(for: word.id, with: mapped)
         } catch {
             regenerateError = error.localizedDescription

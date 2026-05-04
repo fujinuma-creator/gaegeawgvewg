@@ -66,13 +66,6 @@ struct QuizView: View {
     @State private var showAnswer: Bool = false
     @AppStorage("translation.wordId") private var savedTranslationWordId: String = ""
     @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
-    /// Cached AI grammar explanation for the current problem; stored on
-    /// AppStorage so it doesn't need to be regenerated across launches.
-    @AppStorage("translation.explanationKey") private var cachedExplanationKey: String = ""
-    @AppStorage("translation.explanationText") private var cachedExplanationText: String = ""
-    @State private var isLoadingExplanation: Bool = false
-    @State private var explanationError: String? = nil
-    @State private var showExplanationError: Bool = false
 
     private var eligibleWords: [Word] {
         // Quiz draws only from the user's review list (auto-expires after 7 days).
@@ -157,11 +150,6 @@ struct QuizView: View {
             if newValue != .quiz {
                 showDetail = false
             }
-        }
-        .alert("解説の取得に失敗しました", isPresented: $showExplanationError, presenting: explanationError) { _ in
-            Button("OK", role: .cancel) {}
-        } message: { msg in
-            Text(msg)
         }
     }
 
@@ -512,9 +500,6 @@ struct QuizView: View {
 
                 Button {
                     showAnswer.toggle()
-                    if showAnswer, let w = currentWord, let ex = currentExample {
-                        Task { await loadExplanationIfNeeded(word: w, example: ex) }
-                    }
                 } label: {
                     HStack {
                         Spacer()
@@ -559,9 +544,6 @@ struct QuizView: View {
 
     @ViewBuilder
     private func answerView(_ ex: ExampleSentence, word: Word) -> some View {
-        let key = explanationKey(for: word, example: ex)
-        let cachedExplanation = cachedExplanationKey == key ? cachedExplanationText : ""
-
         VStack(alignment: .leading, spacing: 12) {
             VStack(alignment: .leading, spacing: 8) {
                 Text("お手本の英訳").font(.caption).foregroundStyle(.tertiary)
@@ -587,34 +569,15 @@ struct QuizView: View {
             Divider()
 
             VStack(alignment: .leading, spacing: 8) {
-                HStack {
-                    Text("文法・語法の解説（AI）").font(.caption).foregroundStyle(.tertiary)
-                    Spacer()
-                    Button {
-                        Task { await loadExplanationIfNeeded(word: word, example: ex, force: true) }
-                    } label: {
-                        HStack(spacing: 4) {
-                            Image(systemName: "arrow.clockwise")
-                            Text("再生成").font(.caption2)
-                        }
-                        .foregroundStyle(.indigo)
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(isLoadingExplanation)
-                }
-
-                if isLoadingExplanation {
-                    HStack(spacing: 8) {
-                        ProgressView().scaleEffect(0.8)
-                        Text("解説を生成中…").font(.subheadline).foregroundStyle(.secondary)
-                    }
-                } else if !cachedExplanation.isEmpty {
-                    Text(cachedExplanation)
+                Text("文法・語法の解説").font(.caption).foregroundStyle(.tertiary)
+                if let grammar = ex.grammar?.trimmingCharacters(in: .whitespacesAndNewlines),
+                   !grammar.isEmpty {
+                    Text(grammar)
                         .font(.subheadline)
                         .foregroundStyle(.primary)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 } else {
-                    Text("解説の取得に失敗しました。再生成を押してください。")
+                    Text("この例文には解説がまだ用意されていません。\n「新しい例文を生成」を押すと、文法解説付きの例文に差し替わります。")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
@@ -624,32 +587,6 @@ struct QuizView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(RoundedRectangle(cornerRadius: 12).fill(Color.green.opacity(0.10)))
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.green.opacity(0.5), lineWidth: 1))
-    }
-
-    private func explanationKey(for word: Word, example: ExampleSentence) -> String {
-        "\(word.id.uuidString)|\(example.id.uuidString)"
-    }
-
-    @MainActor
-    private func loadExplanationIfNeeded(word: Word, example: ExampleSentence, force: Bool = false) async {
-        let key = explanationKey(for: word, example: example)
-        if !force, cachedExplanationKey == key, !cachedExplanationText.isEmpty {
-            return
-        }
-        isLoadingExplanation = true
-        defer { isLoadingExplanation = false }
-        do {
-            let text = try await GeminiService.explainExample(
-                targetWord: word.word,
-                english: example.english,
-                japanese: example.japanese
-            )
-            cachedExplanationKey = key
-            cachedExplanationText = text
-        } catch {
-            explanationError = error.localizedDescription
-            showExplanationError = true
-        }
     }
 
     /// Restore the previously-shown problem if it's still valid; otherwise nil.
@@ -836,7 +773,7 @@ struct WordDetailSheet: View {
         defer { isRegenerating = false }
         do {
             let new = try await GeminiService.regenerateExamples(for: word)
-            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese) }
+            let mapped = new.map { ExampleSentence(english: $0.english, japanese: $0.japanese, grammar: $0.grammar) }
             store.updateExamples(for: word.id, with: mapped)
         } catch {
             regenerateError = error.localizedDescription
