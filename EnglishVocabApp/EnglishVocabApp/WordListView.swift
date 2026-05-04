@@ -27,6 +27,7 @@ struct WordListView: View {
     @State private var filter: ListFilter = .all
     @State private var expandedIds: Set<UUID> = []
     @State private var showAddSheet = false
+    @State private var showSettings = false
 
     var filteredWords: [Word] {
         let byStatus: [Word]
@@ -87,12 +88,16 @@ struct WordListView: View {
             AddWordView()
                 .environmentObject(store)
         }
+        .sheet(isPresented: $showSettings) {
+            SettingsView()
+        }
         .onChange(of: activeTab) { _, newValue in
             if newValue != .list {
                 // Leaving the list tab — collapse every expanded card
                 // and dismiss the add-word sheet so coming back is clean.
                 expandedIds.removeAll()
                 showAddSheet = false
+                showSettings = false
             }
         }
         .onChange(of: filter) { _, _ in
@@ -109,6 +114,16 @@ struct WordListView: View {
             HStack {
                 Text("英単語の復習").font(.title3.bold())
                 Spacer()
+                Button {
+                    showSettings = true
+                } label: {
+                    Image(systemName: "gearshape.fill")
+                        .font(.system(size: 18))
+                        .foregroundStyle(.secondary)
+                        .frame(width: 36, height: 36)
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
             }
             HStack(spacing: 6) {
                 Text("\(store.perfectCount)")

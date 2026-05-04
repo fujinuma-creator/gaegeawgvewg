@@ -12,6 +12,9 @@ struct AddWordView: View {
     @State private var synonymEntries: [SynonymEntry] = [.init()]
 
     @State private var showSavedAlert = false
+    @State private var isGenerating = false
+    @State private var generationError: String? = nil
+    @State private var showGenerationError = false
 
     var body: some View {
         NavigationStack {
@@ -20,6 +23,24 @@ struct AddWordView: View {
                     TextField("例: thread", text: $word)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
+                    Button {
+                        Task { await generateWithAI() }
+                    } label: {
+                        HStack {
+                            if isGenerating {
+                                ProgressView()
+                                    .padding(.trailing, 4)
+                                Text("AI で生成中…")
+                            } else {
+                                Image(systemName: "sparkles")
+                                Text("AI で自動生成")
+                                    .bold()
+                            }
+                            Spacer()
+                        }
+                        .foregroundStyle(canGenerate ? .indigo : .secondary)
+                    }
+                    .disabled(!canGenerate || isGenerating)
                 }
 
                 Section("英語の定義 / 日本語訳") {
@@ -111,7 +132,61 @@ struct AddWordView: View {
                 Button("続けて追加") { reset() }
                 Button("閉じる", role: .cancel) { dismiss() }
             }
+            .alert("AI 生成に失敗しました", isPresented: $showGenerationError, presenting: generationError) { _ in
+                Button("OK", role: .cancel) {}
+            } message: { msg in
+                Text(msg)
+            }
         }
+    }
+
+    private var canGenerate: Bool {
+        !word.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
+    @MainActor
+    private func generateWithAI() async {
+        let term = word.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !term.isEmpty else { return }
+        isGenerating = true
+        defer { isGenerating = false }
+        do {
+            let result = try await GeminiService.generateWord(for: term)
+            applyGenerated(result)
+        } catch {
+            generationError = error.localizedDescription
+            showGenerationError = true
+        }
+    }
+
+    private func applyGenerated(_ g: GeneratedWord) {
+        definitionEnglish = g.definitionEnglish
+        definitionJapanese = g.definitionJapanese
+        useCasesText = g.useCases.joined(separator: "\n")
+        exampleEntries = g.examples.map { ex in
+            var e = ExampleEntry()
+            e.english = ex.english
+            e.japanese = ex.japanese
+            return e
+        }
+        if exampleEntries.isEmpty { exampleEntries = [.init()] }
+
+        synonymEntries = (g.synonyms ?? []).map { syn in
+            var e = SynonymEntry()
+            e.word = syn.word
+            e.meaning = syn.meaning
+            e.definitionEnglish = syn.definitionEnglish ?? ""
+            e.useCasesText = (syn.useCases ?? []).joined(separator: "\n")
+            e.examples = (syn.examples ?? []).map { ex in
+                var ee = ExampleEntry()
+                ee.english = ex.english
+                ee.japanese = ex.japanese
+                return ee
+            }
+            if e.examples.isEmpty { e.examples = [.init()] }
+            return e
+        }
+        if synonymEntries.isEmpty { synonymEntries = [.init()] }
     }
 
     private var canSave: Bool {
