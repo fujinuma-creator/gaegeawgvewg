@@ -405,6 +405,7 @@ struct QuizView: View {
     }
 
     /// Picks the answer text for a word based on the current quiz mode.
+    /// Translation mode doesn't use multiple-choice, so it returns nil.
     private func choiceText(for word: Word) -> String? {
         switch mode {
         case .useCase:
@@ -412,6 +413,8 @@ struct QuizView: View {
         case .definition:
             let def = word.definitionEnglish.trimmingCharacters(in: .whitespaces)
             return def.isEmpty ? nil : def
+        case .translation:
+            return nil
         }
     }
 
