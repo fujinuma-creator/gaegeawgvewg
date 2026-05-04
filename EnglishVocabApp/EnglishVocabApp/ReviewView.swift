@@ -53,9 +53,6 @@ struct ReviewView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            actionButtons
-                .padding(.horizontal, 16)
-                .padding(.bottom, 8)
         }
         .background(Color(.systemGroupedBackground).ignoresSafeArea())
         .alert("進捗をリセットしますか？", isPresented: $showResetAlert) {
@@ -299,52 +296,6 @@ struct ReviewView: View {
         .background(
             RoundedRectangle(cornerRadius: 12).fill(Color(.tertiarySystemGroupedBackground))
         )
-    }
-
-    // MARK: - Action buttons
-
-    private var actionButtons: some View {
-        HStack(spacing: 10) {
-            actionButton(
-                mark: .forgot,
-                bg: Color(.systemBackground),
-                fg: .red,
-                strokeColor: .red.opacity(0.3)
-            )
-            actionButton(
-                mark: .fuzzy,
-                bg: Color(.systemBackground),
-                fg: .orange,
-                strokeColor: .orange.opacity(0.3)
-            )
-            actionButton(
-                mark: .perfect,
-                bg: Color.indigo,
-                fg: .white,
-                strokeColor: .clear
-            )
-        }
-    }
-
-    private func actionButton(mark m: ReviewMark, bg: Color, fg: Color, strokeColor: Color) -> some View {
-        Button {
-            recordMark(m)
-        } label: {
-            VStack(spacing: 4) {
-                Text(m.symbol)
-                    .font(.system(size: 22, weight: .bold))
-                Text(m.label)
-                    .font(.caption)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 14)
-            .background(bg)
-            .foregroundStyle(fg)
-            .overlay(RoundedRectangle(cornerRadius: 12).stroke(strokeColor, lineWidth: 1))
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .shadow(color: .black.opacity(0.04), radius: 2, y: 1)
-        }
-        .disabled(currentWord == nil)
     }
 
     // MARK: - Swipe gesture
