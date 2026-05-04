@@ -47,7 +47,7 @@ struct WordListView: View {
                 || $0.definitionEnglish.localizedCaseInsensitiveContains(searchText)
             }
         }
-        return filtered.sorted { $0.createdAt < $1.createdAt }
+        return filtered.sorted { $0.createdAt > $1.createdAt }
     }
 
     var body: some View {

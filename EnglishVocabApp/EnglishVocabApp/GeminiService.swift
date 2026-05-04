@@ -64,7 +64,7 @@ enum GeminiService {
                 ["parts": [["text": prompt]]]
             ],
             "generationConfig": [
-                "temperature": 0.4,
+                "temperature": 0.3,
                 "responseMimeType": "application/json",
                 "responseSchema": responseSchema
             ]
@@ -110,17 +110,21 @@ enum GeminiService {
 
     private static func buildPrompt(for word: String) -> String {
         """
-        You are a Japanese-English vocabulary tutor. For the word/phrase below, produce a JSON object that follows the schema exactly.
+        You are an English-Japanese vocabulary coach for flashcard-style memorization. Output a JSON object that matches the schema exactly. Keep every field SHORT and easy to memorize.
 
-        Rules:
-        - definitionEnglish: a concise English definition (1 sentence).
-        - definitionJapanese: 自然な日本語訳。複数の主要な意味があれば「／」で区切る。
-        - useCases: 2〜3個。日本語で「どんな場面・文脈でこの単語を使うか」を説明する短い句。意味の翻訳ではなく、シーン。
-        - examples: 自然な口語の例文を3個。english と日本語訳のペア。
-        - synonyms: 1〜2個まで。特に類義語が思いつかない場合は空配列でOK。各要素は word, meaning, definitionEnglish, useCases (1〜2個), examples (1〜2個)。
-        - 出力は JSON のみ。Markdown や説明文は出さない。
+        Strict style rules:
+        - definitionEnglish: ONE very short line (max ~10 words). Plain, memorable wording. No commas-list, no semicolons.
+        - definitionJapanese: ONE short line. Core meaning only. 12文字前後を目安。複数の意味は「／」で簡潔に区切る。冗長な補足は書かない。
+        - useCases: 2〜3個。各項目は5〜12文字程度の短い体言止めフレーズ。「〜とき」で終わる場面・シチュエーションのみ。文章にしないこと。意味の翻訳や言い換えは禁止。
+          OK例: 「会議で意見を出すとき」「友達と予定を決めるとき」
+          NG例: 「アイデアや解決策を提案する場面で使う」（長すぎ・説明的）
+        - examples: 2〜3個。日常会話で実際に使う、カジュアルで口語的な短い英文（10語以下が目安）。フォーマルな書き言葉やニュース調はNG。短縮形（I'm, don't, gonna 等）OK。各英文に自然で短い日本語訳を付ける。
+          OK例: "I came up with a plan." / "Let me figure it out."
+          NG例: "The committee has come up with a comprehensive proposal." (堅すぎ・長すぎ)
+        - synonyms: もっとも近い類義語を1個だけ、無ければ空配列。本体と同じく短く。各要素 word, meaning（短い日本語）, definitionEnglish（1行）, useCases（1〜2個・短句）, examples（1〜2個・口語）。
+        - Output JSON only. No markdown, no extra text.
 
-        対象の英単語/フレーズ: \(word)
+        Word: \(word)
         """
     }
 
