@@ -89,8 +89,16 @@ struct WordListView: View {
         }
         .onChange(of: activeTab) { _, newValue in
             if newValue != .list {
+                // Leaving the list tab — collapse every expanded card
+                // and dismiss the add-word sheet so coming back is clean.
+                expandedIds.removeAll()
                 showAddSheet = false
             }
+        }
+        .onChange(of: filter) { _, _ in
+            // Switching filter (e.g. すべて → 復習リスト) collapses any
+            // currently-open cards so the new filtered list starts fresh.
+            expandedIds.removeAll()
         }
     }
 
