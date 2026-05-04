@@ -19,6 +19,7 @@ struct QuizView: View {
     @State private var correctCount = 0
     @State private var totalCount = 0
     @State private var detailWord: Word? = nil
+    @State private var showDetail: Bool = false
 
     private var wordsWithUseCases: [Word] {
         store.words.filter { !$0.useCases.isEmpty }
@@ -59,9 +60,16 @@ struct QuizView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground).ignoresSafeArea())
         .onAppear { if currentWord == nil { nextQuestion() } }
-        .sheet(item: $detailWord) { word in
-            WordDetailSheet(word: word)
+        .sheet(isPresented: $showDetail) {
+            if let detailWord {
+                WordDetailSheet(word: detailWord)
+            }
         }
+    }
+
+    private func openDetail(for word: Word) {
+        detailWord = word
+        showDetail = true
     }
 
     @ViewBuilder
@@ -79,23 +87,30 @@ struct QuizView: View {
                         .clipShape(Circle())
                 }
                 Button {
-                    detailWord = word
+                    openDetail(for: word)
                 } label: {
-                    VStack(spacing: 4) {
+                    HStack(spacing: 6) {
                         Text(word.word)
                             .font(.system(size: 28, weight: .bold))
-                            .multilineTextAlignment(.center)
                             .foregroundStyle(.primary)
-                        Text("タップで詳細を見る")
-                            .font(.caption2)
+                        Image(systemName: "info.circle.fill")
+                            .font(.system(size: 18))
                             .foregroundStyle(.indigo)
                     }
-                    .padding(.horizontal)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 6)
+                    .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
+
+                Text("タップで詳細（意味・例文・類義語）を表示")
+                    .font(.caption2)
+                    .foregroundStyle(.indigo)
+
                 Text("この単語を使う場面はどれ？")
                     .font(.caption)
                     .foregroundStyle(.secondary)
+                    .padding(.top, 4)
             }
             .padding(.vertical, 18)
             .frame(maxWidth: .infinity)
@@ -187,7 +202,7 @@ struct QuizView: View {
     private func answerExplanation(_ word: Word) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Button {
-                detailWord = word
+                openDetail(for: word)
             } label: {
                 HStack {
                     Text("正解の単語: \(word.word)")
@@ -197,6 +212,7 @@ struct QuizView: View {
                         .font(.caption2)
                         .foregroundStyle(.indigo)
                 }
+                .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
             Text(word.definitionJapanese)
@@ -206,7 +222,7 @@ struct QuizView: View {
                selectedChoice.id != correctChoiceId {
                 Divider().padding(.vertical, 4)
                 Button {
-                    detailWord = selectedChoice.sourceWord
+                    openDetail(for: selectedChoice.sourceWord)
                 } label: {
                     HStack {
                         Text("選んだ場面は「\(selectedChoice.sourceWord.word)」の使い方です")
@@ -217,6 +233,7 @@ struct QuizView: View {
                             .font(.caption2)
                             .foregroundStyle(.red.opacity(0.85))
                     }
+                    .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
             }
