@@ -42,6 +42,20 @@ struct GeneratedExamples: Decodable {
     let examples: [GeneratedWord.Example]
 }
 
+struct TranslationGrading: Decodable {
+    /// "correct" / "close" / "incorrect"
+    let verdict: String
+    /// 0–100 quality score
+    let score: Int
+    /// A natural English translation (the AI's recommendation)
+    let corrected: String
+    /// Japanese explanation of what's right/wrong, grammar notes, alternatives.
+    let explanation: String
+
+    var isCorrect: Bool { verdict.lowercased() == "correct" }
+    var isClose: Bool   { verdict.lowercased() == "close" }
+}
+
 /// Calls the Gemini REST API to generate a vocabulary entry from an English word.
 /// Uses the `responseMimeType: application/json` + `responseSchema` mode so the
 /// model returns parseable JSON every time.
@@ -106,6 +120,59 @@ enum GeminiService {
         )
         do {
             return try JSONDecoder().decode(GeneratedWord.self, from: textData)
+        } catch {
+            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
+        }
+    }
+
+    /// Grades the user's English translation of a Japanese example sentence.
+    /// The reference English is provided as one valid answer, but the model is
+    /// instructed to accept any natural translation that conveys the meaning.
+    static func gradeTranslation(
+        targetWord: String,
+        japanese: String,
+        referenceEnglish: String,
+        userEnglish: String
+    ) async throws -> TranslationGrading {
+        let prompt = """
+        You are a friendly English teacher grading a Japanese learner's English translation. Be lenient but accurate.
+
+        Target word/phrase the learner is studying: \(targetWord)
+        Japanese sentence to translate: \(japanese)
+        One valid reference English translation: \(referenceEnglish)
+        Learner's translation: \(userEnglish)
+
+        Evaluate and return JSON exactly matching the schema:
+        - verdict: "correct" if grammatically fine AND conveys the meaning naturally,
+                   "close" if mostly OK but with minor grammar/word-choice issues,
+                   "incorrect" if major mistakes that change the meaning or are ungrammatical.
+        - score: integer 0–100.
+        - corrected: the most natural English translation (you can rephrase the reference).
+        - explanation: 必ず日本語で。最大4文程度。良かった点・誤り（文法・語彙・自然さ）・直し方を具体的に。間違いがなければ「自然な訳です」など短く。
+
+        Be tolerant of style differences. Multiple valid translations exist. Don't penalize unless meaning or grammar is broken.
+
+        Output JSON only.
+        """
+
+        let schema: [String: Any] = [
+            "type": "OBJECT",
+            "properties": [
+                "verdict": ["type": "STRING"],
+                "score": ["type": "INTEGER"],
+                "corrected": ["type": "STRING"],
+                "explanation": ["type": "STRING"]
+            ],
+            "required": ["verdict", "score", "corrected", "explanation"]
+        ]
+
+        let textData = try await runGenerateContent(
+            prompt: prompt,
+            schema: schema,
+            temperature: 0.2
+        )
+        do {
+            return try JSONDecoder().decode(TranslationGrading.self, from: textData)
         } catch {
             throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
         }
