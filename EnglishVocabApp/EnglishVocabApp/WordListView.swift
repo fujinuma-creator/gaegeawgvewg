@@ -7,18 +7,12 @@ struct WordListView: View {
     enum ListFilter: String, CaseIterable, Identifiable {
         case all = "すべて"
         case reviewList = "復習リスト"
-        case unlearned = "未習得"
-        case fuzzy = "あいまい"
-        case perfect = "完璧"
         var id: String { rawValue }
 
         var symbol: String {
             switch self {
             case .all: return ""
             case .reviewList: return "★"
-            case .unlearned: return ""
-            case .fuzzy: return "△"
-            case .perfect: return "◎"
             }
         }
     }
@@ -33,9 +27,6 @@ struct WordListView: View {
         switch filter {
         case .all:        byStatus = store.words
         case .reviewList: byStatus = store.reviewListWords
-        case .unlearned:  byStatus = store.words.filter { $0.status == .unlearned }
-        case .fuzzy:      byStatus = store.words.filter { $0.status == .fuzzy }
-        case .perfect:    byStatus = store.words.filter { $0.status == .perfect }
         }
         let filtered: [Word]
         if searchText.isEmpty {

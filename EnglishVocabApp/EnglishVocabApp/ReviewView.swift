@@ -10,8 +10,6 @@ struct ReviewView: View {
         case dueToday = "本日"
         case reviewList = "復習リスト"
         case all = "すべて"
-        case unlearned = "未習得"
-        case fuzzy = "あいまい"
         var id: String { rawValue }
     }
 
@@ -27,8 +25,6 @@ struct ReviewView: View {
         case .dueToday:   base = store.dueWords
         case .reviewList: base = store.reviewListWords
         case .all:        base = store.words
-        case .unlearned:  base = store.words.filter { $0.status == .unlearned }
-        case .fuzzy:      base = store.words.filter { $0.status == .fuzzy }
         }
         return shuffled ? base.shuffled() : base
     }
@@ -466,8 +462,6 @@ struct ReviewView: View {
         case .dueToday:   return "本日の復習は完了！"
         case .reviewList: return "復習リストは空です"
         case .all:        return "単語がありません"
-        case .unlearned:  return "未習得の単語はありません"
-        case .fuzzy:      return "あいまいな単語はありません"
         }
     }
 
@@ -482,8 +476,6 @@ struct ReviewView: View {
             return "「一覧」や「クイズ」のチェック欄から追加できます\n（追加から1週間で自動的に消えます）"
         case .all:
             return "「一覧」タブから追加してください。"
-        case .unlearned, .fuzzy:
-            return "他のフィルタも試してみてください。"
         }
     }
 }
