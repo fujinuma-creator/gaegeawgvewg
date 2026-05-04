@@ -58,15 +58,19 @@ enum GeminiService {
     /// existing definitions as context so the new examples stay on-meaning.
     static func regenerateExamples(for word: Word) async throws -> [GeneratedWord.Example] {
         let prompt = """
-        For the English word/phrase "\(word.word)" (meaning: \(word.definitionJapanese.isEmpty ? word.definitionEnglish : word.definitionJapanese)), generate 3 brand-new casual conversation example sentences. Avoid reusing these examples that are already in the user's deck:
+        For the English word/phrase "\(word.word)" (meaning: \(word.definitionJapanese.isEmpty ? word.definitionEnglish : word.definitionJapanese)), write 3 brand-new example sentences that sound like things a native English speaker actually says or texts to a friend. Avoid these examples already in the user's deck:
 
         \(word.examples.map { "- \($0.english)" }.joined(separator: "\n"))
 
-        Strict rules:
-        - Each example must be everyday spoken English (≤10 words). Contractions like I'm, don't, gonna are encouraged.
-        - No formal/news/business register.
-        - Vary the situation: at least 2 of the 3 should describe a different scenario from the existing examples.
-        - Pair each English sentence with a short, natural Japanese translation.
+        Strict native-speaker rules:
+        - Imagine two friends chatting in person or over text. Casual, natural, off-the-cuff.
+        - 5–10 words each. Short. Punchy.
+        - Use contractions everywhere they fit: I'm, you're, it's, don't, won't, gonna, wanna, kinda, gotta.
+        - Use natural discourse markers when they help: "honestly", "actually", "kinda", "totally", "like", "I mean", "you know".
+        - Questions, exclamations, and short fragments are great. Mix declaratives with at least one question or fragment.
+        - Avoid translation-textbook English. NO: "I have decided to take it." / "It is necessary that we...". YES: "I'm gonna take it." / "We kinda have to."
+        - Each example should fit a different everyday context (work chat, friends, family, daily life). Don't repeat the same pattern.
+        - Pair each English sentence with a short, natural Japanese translation written the way a Japanese speaker would actually say it (くだけた口語OK).
         - Each example must also include a "grammar" field: 必ず日本語で、その英文の文法・語法・コロケーションを2〜4個の箇条書き（行頭は「・」）で具体的に解説。時制・冠詞・前置詞・助動詞・代名詞などについて「なぜその形か」を説明する。
         - Output JSON only, matching the schema. No markdown, no commentary.
         """
@@ -187,10 +191,14 @@ enum GeminiService {
           OK例: 「会議で意見を出すとき」「友達と予定を決めるとき」
           NG例: 「アイデアや解決策を提案する場面で使う」（長すぎ・説明的）
         - examples: 2〜3個。各要素は english / japanese / grammar の3フィールド。
-          ・english: 日常会話で実際に使う、カジュアルで口語的な短い英文（10語以下が目安）。フォーマルな書き言葉やニュース調はNG。短縮形（I'm, don't, gonna 等）OK。
-            OK例: "I came up with a plan." / "Let me figure it out."
-            NG例: "The committee has come up with a comprehensive proposal." (堅すぎ・長すぎ)
-          ・japanese: 自然で短い日本語訳。
+          ・english: ネイティブが友達と日常会話・テキストで実際に使うような自然で短い口語の英文（5〜10語が目安）。
+            必須: 短縮形をどんどん使う（I'm, you're, it's, don't, won't, gonna, wanna, kinda, gotta 等）。
+            自然なディスコースマーカーを混ぜてよい: "honestly" "actually" "kinda" "totally" "like" "I mean"。
+            短い断片文・疑問文・感嘆文OK。文末を必ずピリオドで揃える必要なし。
+            毎回違うシチュエーション（職場のチャット・友達との雑談・家族・日常）から選ぶ。同じパターンを繰り返さない。
+            ❌ 翻訳教科書調・ニュース調・ビジネス文書調はNG: "The committee has come up with a comprehensive proposal." / "I have decided to take it."
+            ✅ ネイティブが言いそうな口語: "I came up with a plan." / "Let me figure it out." / "Honestly, I'm gonna go for it." / "Wait, you really think so?"
+          ・japanese: 短く自然な日本語訳。くだけた口語OK。
           ・grammar: 必ず日本語で。その英文の文法・語法・コロケーションを2〜4個の箇条書き（行頭は「・」）で簡潔に解説。なぜその時制・冠詞・前置詞・助動詞・代名詞かを具体的に説明する。
             例: 「・"I've decided" は現在完了形。過去の決断が今も有効であることを示す。"I decided" だと過去の一回の事実だけ。」「・"to take" は to不定詞。decide は to不定詞のみと結びつく。」
         - synonyms: もっとも近い類義語を1個だけ、無ければ空配列。本体と同じく短く。各要素 word, meaning（短い日本語）, definitionEnglish（1行）, useCases（1〜2個・短句）, examples（1〜2個・口語）。
