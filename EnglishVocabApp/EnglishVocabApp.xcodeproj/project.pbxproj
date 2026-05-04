@@ -21,6 +21,7 @@
 		2000000000000000000000AC /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000AC /* SeedData.swift */; };
 		2000000000000000000000AD /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000AD /* KeychainHelper.swift */; };
 		2000000000000000000000AE /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000AE /* GeminiService.swift */; };
+		2000000000000000000000B1 /* RandomOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000B1 /* RandomOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1000000000000000000000AC /* SeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedData.swift; sourceTree = "<group>"; };
 		1000000000000000000000AD /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		1000000000000000000000AE /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		1000000000000000000000B1 /* RandomOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomOrder.swift; sourceTree = "<group>"; };
 		1000000000000000000000B0 /* EnglishVocabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishVocabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				1000000000000000000000AC /* SeedData.swift */,
 				1000000000000000000000AD /* KeychainHelper.swift */,
 				1000000000000000000000AE /* GeminiService.swift */,
+				1000000000000000000000B1 /* RandomOrder.swift */,
 				1000000000000000000000A5 /* ReviewView.swift */,
 				1000000000000000000000A6 /* AddWordView.swift */,
 				1000000000000000000000A7 /* WordListView.swift */,
@@ -176,6 +179,7 @@
 				2000000000000000000000AC /* SeedData.swift in Sources */,
 				2000000000000000000000AD /* KeychainHelper.swift in Sources */,
 				2000000000000000000000AE /* GeminiService.swift in Sources */,
+				2000000000000000000000B1 /* RandomOrder.swift in Sources */,
 				2000000000000000000000A5 /* ReviewView.swift in Sources */,
 				2000000000000000000000A6 /* AddWordView.swift in Sources */,
 				2000000000000000000000A7 /* WordListView.swift in Sources */,

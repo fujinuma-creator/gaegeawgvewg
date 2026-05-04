@@ -38,7 +38,16 @@ struct WordListView: View {
                 || $0.definitionEnglish.localizedCaseInsensitiveContains(searchText)
             }
         }
-        return filtered.sorted { $0.createdAt > $1.createdAt }
+        switch filter {
+        case .all:
+            // Random order that stays the same all day, rotates at midnight.
+            return filtered.dailyShuffled()
+        case .reviewList:
+            // Most-recently pinned first.
+            return filtered.sorted {
+                ($0.addedToReviewListAt ?? .distantPast) > ($1.addedToReviewListAt ?? .distantPast)
+            }
+        }
     }
 
     var body: some View {
