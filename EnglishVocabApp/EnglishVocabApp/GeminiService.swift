@@ -58,19 +58,24 @@ enum GeminiService {
     /// existing definitions as context so the new examples stay on-meaning.
     static func regenerateExamples(for word: Word) async throws -> [GeneratedWord.Example] {
         let prompt = """
-        For the English word/phrase "\(word.word)" (meaning: \(word.definitionJapanese.isEmpty ? word.definitionEnglish : word.definitionJapanese)), write 3 brand-new example sentences that sound like things a native English speaker actually says or texts to a friend. Avoid these examples already in the user's deck:
+        For the English word/phrase "\(word.word)" (meaning: \(word.definitionJapanese.isEmpty ? word.definitionEnglish : word.definitionJapanese)), write 3 brand-new example sentences that sound like real things a native English speaker would say in everyday situations — chatting with a friend, dealing with a tech problem, asking a question to support, talking about plans, etc. Avoid these examples already in the user's deck:
 
         \(word.examples.map { "- \($0.english)" }.joined(separator: "\n"))
 
-        Strict native-speaker rules:
-        - Imagine two friends chatting in person or over text. Casual, natural, off-the-cuff.
-        - 5–10 words each. Short. Punchy.
-        - Use contractions everywhere they fit: I'm, you're, it's, don't, won't, gonna, wanna, kinda, gotta.
-        - Use natural discourse markers when they help: "honestly", "actually", "kinda", "totally", "like", "I mean", "you know".
-        - Questions, exclamations, and short fragments are great. Mix declaratives with at least one question or fragment.
+        Native-speaker rules (strict):
+        - Roughly 5–15 words each. Real, situational, not cookie-cutter.
+        - Heavy contractions: I'm, you're, it's, don't, won't, gonna, wanna, kinda, gotta, can't, we'll.
+        - Use natural verbal phrasings and collocations: "stuck on …", "swap out X for Y", "set to …", "any way to …?", "kicked off …", "ran into … with …", "ended up …", "kinda".
+        - Mix discourse markers when they fit: "honestly", "actually", "I mean", "like", "you know".
+        - Mix sentence types: at least one of the three should be a question or request, or a fragment / exclamation.
+        - Each example should sit in a different real-life scene (e.g. an account/region issue, a phone or laptop hiccup, weekend plans with friends, asking support for help, swapping items, work standup chat).
         - Avoid translation-textbook English. NO: "I have decided to take it." / "It is necessary that we...". YES: "I'm gonna take it." / "We kinda have to."
-        - Each example should fit a different everyday context (work chat, friends, family, daily life). Don't repeat the same pattern.
-        - Pair each English sentence with a short, natural Japanese translation written the way a Japanese speaker would actually say it (くだけた口語OK).
+        - Native conversational anchors to imitate the *register* of:
+          • "My account is currently set to Singapore."
+          • "The region on my dev account is stuck on Singapore."
+          • "Is there any way to update my country/region?"
+          • "Can I swap out my phone number for a Japanese one?"
+        - Pair each English sentence with a short, natural Japanese translation in casual spoken style (「〜なんだ」「〜してくれる？」「〜だよね？」 OK).
         - Each example must also include a "grammar" field: 必ず日本語で、その英文の文法・語法・コロケーションを2〜4個の箇条書き（行頭は「・」）で具体的に解説。時制・冠詞・前置詞・助動詞・代名詞などについて「なぜその形か」を説明する。
         - Output JSON only, matching the schema. No markdown, no commentary.
         """
@@ -191,14 +196,23 @@ enum GeminiService {
           OK例: 「会議で意見を出すとき」「友達と予定を決めるとき」
           NG例: 「アイデアや解決策を提案する場面で使う」（長すぎ・説明的）
         - examples: 2〜3個。各要素は english / japanese / grammar の3フィールド。
-          ・english: ネイティブが友達と日常会話・テキストで実際に使うような自然で短い口語の英文（5〜10語が目安）。
-            必須: 短縮形をどんどん使う（I'm, you're, it's, don't, won't, gonna, wanna, kinda, gotta 等）。
-            自然なディスコースマーカーを混ぜてよい: "honestly" "actually" "kinda" "totally" "like" "I mean"。
-            短い断片文・疑問文・感嘆文OK。文末を必ずピリオドで揃える必要なし。
-            毎回違うシチュエーション（職場のチャット・友達との雑談・家族・日常）から選ぶ。同じパターンを繰り返さない。
+          ・english: ネイティブが実際の生活で使う、状況がリアルに感じられる自然な口語英文（だいたい5〜15語）。
+            雰囲気の目安: アカウント設定の不具合をエンジニア仲間に相談する／カフェで友達に最近の悩みをこぼす／海外サポートに気軽に質問する、そんな感じの普段の発話。
+            必須: 短縮形を積極的に使う（I'm, you're, it's, don't, won't, gonna, wanna, kinda, gotta, can't）。
+            自然な動詞句・コロケーションを使う: "stuck on …", "swap out … for …", "set to …", "kicked off the meeting", "ran into trouble with …", "any way to …?", "ended up doing …"。
+            自然なディスコースマーカー混入OK: honestly / actually / kinda / totally / I mean / like。
+            疑問文・依頼文・気持ちの吐露・短い断片もOK。文末ピリオドがなくても可（語尾が "?", "!"）。
+            文脈は毎回違うシーンから（仕事の困りごと、買い物、家族の予定、技術トラブル、外食、SNS、旅行など）。
             ❌ 翻訳教科書調・ニュース調・ビジネス文書調はNG: "The committee has come up with a comprehensive proposal." / "I have decided to take it."
-            ✅ ネイティブが言いそうな口語: "I came up with a plan." / "Let me figure it out." / "Honestly, I'm gonna go for it." / "Wait, you really think so?"
-          ・japanese: 短く自然な日本語訳。くだけた口語OK。
+            ✅ ネイティブ口語のお手本イメージ:
+              - "My account is currently set to Singapore."
+              - "The region on my dev account is stuck on Singapore."
+              - "Is there any way to update my country/region?"
+              - "Can I swap out my phone number for a Japanese one?"
+              - "Honestly, I'm gonna go for it."
+              - "Wait, you really think so?"
+              - "Let me figure it out before I bug support."
+          ・japanese: 短く自然な日本語訳。くだけた口語OK（「〜なんだ」「〜だよね？」「〜してくれる？」など）。
           ・grammar: 必ず日本語で。その英文の文法・語法・コロケーションを2〜4個の箇条書き（行頭は「・」）で簡潔に解説。なぜその時制・冠詞・前置詞・助動詞・代名詞かを具体的に説明する。
             例: 「・"I've decided" は現在完了形。過去の決断が今も有効であることを示す。"I decided" だと過去の一回の事実だけ。」「・"to take" は to不定詞。decide は to不定詞のみと結びつく。」
         - synonyms: もっとも近い類義語を1個だけ、無ければ空配列。本体と同じく短く。各要素 word, meaning（短い日本語）, definitionEnglish（1行）, useCases（1〜2個・短句）, examples（1〜2個・口語）。
