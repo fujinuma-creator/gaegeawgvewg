@@ -12,6 +12,8 @@ enum SeedData {
             + timeAndFrequency + communication + dailyCore
             + extraPhrasalVerbs + extraIdioms + extraAdjectives
             + conversationFillers + connectives
+            + extraPhrasalVerbs2 + extraVerbs + extraAdjectives2
+            + extraNouns + extraIdioms2
     }
 
     private static func make(
@@ -2200,6 +2202,741 @@ enum SeedData {
                  examples: [
                     ("Mind you, it wasn't easy.", "言っておくけど、簡単じゃなかった。"),
                     ("It was great, mind you.", "ちなみに最高だったよ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 句動詞（追加 30）
+
+    private static var extraPhrasalVerbs2: [Word] {
+        [
+            make("wear off", "gradually lose effect",
+                 "効果が薄れる",
+                 useCases: ["薬や麻酔が切れてくる話", "気持ちが薄れていくとき"],
+                 examples: [
+                    ("The painkiller's wearing off.", "鎮痛剤の効きが薄れてきた。"),
+                    ("The excitement wore off.", "興奮も薄れた。")
+                 ]),
+            make("wash up", "clean dishes; or be carried ashore",
+                 "洗い物をする・漂着する",
+                 useCases: ["食後の片付けの話", "海に漂着した物の話"],
+                 examples: [
+                    ("I'll wash up after dinner.", "夕食後、洗い物するね。"),
+                    ("A bottle washed up on the beach.", "瓶が浜辺に漂着した。")
+                 ]),
+            make("wake up to", "become aware of something",
+                 "〜に気づく・目覚める",
+                 useCases: ["問題の重大さに気づくとき"],
+                 examples: [
+                    ("People are waking up to climate change.", "みんな気候変動に気づき始めてる。"),
+                    ("Wake up to reality.", "現実を見ろ。")
+                 ]),
+            make("turn up", "appear; increase volume",
+                 "現れる・音量を上げる",
+                 useCases: ["人が突然来た話", "音量を上げる場面"],
+                 examples: [
+                    ("She turned up late.", "彼女、遅れて現れた。"),
+                    ("Turn up the music.", "音楽の音量上げて。")
+                 ]),
+            make("turn over", "flip; hand over",
+                 "ひっくり返す・引き渡す",
+                 useCases: ["物を裏返すとき", "鍵などを引き渡す場面"],
+                 examples: [
+                    ("Turn the page over.", "ページめくって。"),
+                    ("He turned over the keys.", "彼は鍵を渡した。")
+                 ]),
+            make("turn against", "become hostile to",
+                 "敵対する・反発する",
+                 useCases: ["味方が敵に回る場面"],
+                 examples: [
+                    ("They turned against him.", "彼らは彼に反発した。"),
+                    ("Don't turn against me.", "敵に回らないで。")
+                 ]),
+            make("stop by", "make a quick visit",
+                 "立ち寄る",
+                 useCases: ["軽く寄っていく話"],
+                 examples: [
+                    ("I'll stop by later.", "あとでちょっと寄るね。"),
+                    ("Stop by anytime.", "いつでも寄って。")
+                 ]),
+            make("stick to", "stay loyal to; cling",
+                 "固執する・くっつく",
+                 useCases: ["決めたことを守る話"],
+                 examples: [
+                    ("Stick to the plan.", "計画通りに進めて。"),
+                    ("Stick to the rules.", "ルールを守って。")
+                 ]),
+            make("stick with", "continue with the same choice",
+                 "そのまま続ける",
+                 useCases: ["同じものを使い続ける話"],
+                 examples: [
+                    ("I'll stick with coffee.", "コーヒーのままでいいや。"),
+                    ("Just stick with it.", "そのまま続けて。")
+                 ]),
+            make("stand by", "wait; support",
+                 "待機する・支持する",
+                 useCases: ["待機する場面", "誰かを支える話"],
+                 examples: [
+                    ("Stand by for updates.", "更新を待って。"),
+                    ("I stand by him.", "彼を支持する。")
+                 ]),
+            make("stand for", "represent; symbolize",
+                 "表す・象徴する",
+                 useCases: ["略語の意味を聞くとき"],
+                 examples: [
+                    ("What does NASA stand for?", "NASAって何の略？"),
+                    ("It stands for love.", "それは愛を象徴してる。")
+                 ]),
+            make("stand out", "be noticeable",
+                 "目立つ",
+                 useCases: ["群衆の中で目立つ話"],
+                 examples: [
+                    ("She really stands out.", "彼女、すごく目立つ。"),
+                    ("This one stands out.", "これは目立つね。")
+                 ]),
+            make("slow down", "reduce speed",
+                 "速度を落とす・ゆっくりする",
+                 useCases: ["急ぎすぎを止めるとき"],
+                 examples: [
+                    ("Slow down, you're going too fast.", "落ち着いて、速すぎる。"),
+                    ("I need to slow down.", "ペース落とさないと。")
+                 ]),
+            make("show off", "boast or display proudly",
+                 "見せびらかす",
+                 useCases: ["自慢する人を表すとき"],
+                 examples: [
+                    ("He's just showing off.", "彼、自慢してるだけ。"),
+                    ("Don't show off.", "見せびらかさないで。")
+                 ]),
+            make("shut down", "close; stop operating",
+                 "閉鎖する・停止する",
+                 useCases: ["店や工場を閉める話", "PCを切るとき"],
+                 examples: [
+                    ("They shut down the store.", "店を閉めた。"),
+                    ("Shut it down.", "停止して。")
+                 ]),
+            make("shut up", "stop talking",
+                 "黙る",
+                 useCases: ["強めに黙ってと言うとき"],
+                 examples: [
+                    ("Shut up!", "黙って！"),
+                    ("Just shut up already.", "もういい加減黙って。")
+                 ]),
+            make("roll out", "release or launch something",
+                 "展開する・発表する",
+                 useCases: ["新製品や機能をリリースするとき"],
+                 examples: [
+                    ("They rolled out the new feature.", "新機能をリリースした。"),
+                    ("Rolling out next week.", "来週公開するよ。")
+                 ]),
+            make("rip up", "tear into pieces",
+                 "破り捨てる",
+                 useCases: ["紙をビリビリ破る話"],
+                 examples: [
+                    ("He ripped up the letter.", "彼、手紙を破り捨てた。"),
+                    ("Don't rip it up!", "破かないで！")
+                 ]),
+            make("rest assured", "be confident about",
+                 "安心してください",
+                 useCases: ["保証を伝える丁寧な言い方"],
+                 examples: [
+                    ("Rest assured, it's safe.", "安心して、安全だから。"),
+                    ("Rest assured, we'll handle it.", "ご安心を、こちらで対応します。")
+                 ]),
+            make("read up on", "study a topic carefully",
+                 "〜について詳しく読む",
+                 useCases: ["特定のテーマを下調べする話"],
+                 examples: [
+                    ("I read up on it last night.", "昨晩それについて調べた。"),
+                    ("Read up on the topic.", "そのテーマを下調べして。")
+                 ]),
+            make("plug in", "connect to a power source",
+                 "プラグを差し込む",
+                 useCases: ["電源を入れる動作"],
+                 examples: [
+                    ("Plug in the charger.", "充電器差して。"),
+                    ("It's plugged in.", "コンセント刺さってるよ。")
+                 ]),
+            make("pile up", "accumulate",
+                 "積み重なる・たまる",
+                 useCases: ["仕事や書類が溜まる話"],
+                 examples: [
+                    ("Work is piling up.", "仕事が溜まってる。"),
+                    ("Bills are piling up.", "請求書が積み上がってる。")
+                 ]),
+            make("patch up", "repair; reconcile",
+                 "修復する・仲直りする",
+                 useCases: ["関係を修復する話"],
+                 examples: [
+                    ("They patched things up.", "彼ら仲直りした。"),
+                    ("Patch up the hole.", "穴を直して。")
+                 ]),
+            make("opt out", "choose not to participate",
+                 "選ばない・脱退する",
+                 useCases: ["参加しない選択をする話"],
+                 examples: [
+                    ("I opted out of the trip.", "旅行は不参加にした。"),
+                    ("You can opt out anytime.", "いつでも辞退できる。")
+                 ]),
+            make("opt for", "choose something",
+                 "〜を選ぶ",
+                 useCases: ["選択肢から選ぶ話"],
+                 examples: [
+                    ("I opted for tea.", "紅茶にした。"),
+                    ("She opted for the larger size.", "彼女は大きいサイズを選んだ。")
+                 ]),
+            make("mess up", "make a mistake; ruin",
+                 "しくじる・台無しにする",
+                 useCases: ["失敗を伝えるとき"],
+                 examples: [
+                    ("I really messed up.", "完全にやらかした。"),
+                    ("Don't mess this up.", "これ台無しにしないで。")
+                 ]),
+            make("lighten up", "relax; cheer up",
+                 "元気を出す・気楽になる",
+                 useCases: ["重い空気を和らげるとき"],
+                 examples: [
+                    ("Lighten up, it's a joke.", "気楽に、冗談だよ。"),
+                    ("Just lighten up.", "リラックスして。")
+                 ]),
+            make("let down", "disappoint",
+                 "失望させる",
+                 useCases: ["期待を裏切られた話"],
+                 examples: [
+                    ("Don't let me down.", "がっかりさせないで。"),
+                    ("He let me down again.", "彼にまた裏切られた。")
+                 ]),
+            make("lash out", "attack verbally or violently",
+                 "激しく非難する・八つ当たりする",
+                 useCases: ["怒って人に当たる話"],
+                 examples: [
+                    ("He lashed out at me.", "彼、私に八つ当たりした。"),
+                    ("Don't lash out.", "感情的に当たらないで。")
+                 ]),
+            make("iron out", "resolve issues; smooth over",
+                 "解決する・調整する",
+                 useCases: ["問題点を整える話"],
+                 examples: [
+                    ("Let's iron out the details.", "細部を詰めよう。"),
+                    ("We need to iron out a few things.", "いくつか調整しないと。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞（追加 20）
+
+    private static var extraVerbs: [Word] {
+        [
+            make("prevent", "stop something from happening",
+                 "防ぐ・予防する",
+                 useCases: ["事故や問題を未然に防ぐとき"],
+                 examples: [
+                    ("This will prevent problems.", "これで問題を防げる。"),
+                    ("Prevent the spread.", "拡大を防ぐ。")
+                 ]),
+            make("prohibit", "officially forbid",
+                 "禁止する",
+                 useCases: ["公式に禁止されている事柄"],
+                 examples: [
+                    ("Smoking is prohibited here.", "ここは禁煙です。"),
+                    ("They prohibit pets.", "ペット禁止だ。")
+                 ]),
+            make("promote", "encourage; raise in rank",
+                 "促進する・昇進させる",
+                 useCases: ["売り込みや昇進の話"],
+                 examples: [
+                    ("She got promoted.", "彼女、昇進した。"),
+                    ("They promote teamwork.", "チームワークを推進してる。")
+                 ]),
+            make("propose", "suggest; ask to marry",
+                 "提案する・プロポーズする",
+                 useCases: ["案を出すとき", "結婚を申し込む場面"],
+                 examples: [
+                    ("I propose a toast.", "乾杯を提案するよ。"),
+                    ("He proposed last night.", "昨夜彼がプロポーズした。")
+                 ]),
+            make("provide", "supply; give what's needed",
+                 "提供する",
+                 useCases: ["サービスや物を提供するとき"],
+                 examples: [
+                    ("We provide free Wi-Fi.", "無料Wi-Fiあります。"),
+                    ("They provided meals.", "食事を出してくれた。")
+                 ]),
+            make("purchase", "buy something",
+                 "購入する",
+                 useCases: ["フォーマルに買い物の話をするとき"],
+                 examples: [
+                    ("I purchased a new laptop.", "新しいPCを買った。"),
+                    ("Where did you purchase it?", "どこで買ったの？")
+                 ]),
+            make("pursue", "follow or chase after",
+                 "追求する・追いかける",
+                 useCases: ["夢やキャリアを追う話"],
+                 examples: [
+                    ("She pursued her dream.", "彼女は夢を追いかけた。"),
+                    ("Pursue what you love.", "好きなことを追求して。")
+                 ]),
+            make("qualify", "meet requirements",
+                 "資格を得る・適合する",
+                 useCases: ["条件を満たして資格を得る話"],
+                 examples: [
+                    ("Do I qualify for this?", "これに該当する？"),
+                    ("He qualified for the finals.", "彼は決勝に進出した。")
+                 ]),
+            make("rebuild", "build again",
+                 "再建する",
+                 useCases: ["建物や関係を建て直す話"],
+                 examples: [
+                    ("They rebuilt the house.", "家を建て直した。"),
+                    ("Rebuild your confidence.", "自信を取り戻して。")
+                 ]),
+            make("refer to", "mention; consult",
+                 "言及する・参照する",
+                 useCases: ["資料を参照する場面", "話題を指す場面"],
+                 examples: [
+                    ("Refer to the manual.", "マニュアルを見て。"),
+                    ("She referred to the article.", "彼女はその記事に触れた。")
+                 ]),
+            make("reflect", "show; think deeply",
+                 "反映する・熟考する",
+                 useCases: ["鏡や水面に映る話", "じっくり考える話"],
+                 examples: [
+                    ("It reflects your effort.", "あなたの努力が表れてる。"),
+                    ("Take time to reflect.", "じっくり考えて。")
+                 ]),
+            make("regret", "feel sorry for an action",
+                 "後悔する",
+                 useCases: ["過去の行動を悔やむとき"],
+                 examples: [
+                    ("I regret saying that.", "あれ言ったの後悔してる。"),
+                    ("No regrets.", "後悔はない。")
+                 ]),
+            make("rely on", "depend on for support",
+                 "頼る・依存する",
+                 useCases: ["信頼して任せる話"],
+                 examples: [
+                    ("You can rely on me.", "私を頼っていいよ。"),
+                    ("She relies on her car.", "彼女は車に頼ってる。")
+                 ]),
+            make("remind", "make someone remember",
+                 "思い出させる",
+                 useCases: ["相手にリマインドする場面"],
+                 examples: [
+                    ("Remind me later.", "あとで言って。"),
+                    ("It reminds me of home.", "家を思い出すよ。")
+                 ]),
+            make("replace", "put something in another's place",
+                 "取り替える・代わりにする",
+                 useCases: ["故障した物を交換する話"],
+                 examples: [
+                    ("Replace the battery.", "電池替えて。"),
+                    ("Nothing can replace her.", "彼女の代わりはいない。")
+                 ]),
+            make("represent", "stand for; act on behalf of",
+                 "代表する・表す",
+                 useCases: ["代表して発言・行動する話"],
+                 examples: [
+                    ("She represents our team.", "彼女が私たちのチームを代表する。"),
+                    ("This logo represents us.", "このロゴが我々を表す。")
+                 ]),
+            make("request", "ask for formally",
+                 "要請する・依頼する",
+                 useCases: ["丁寧にお願いするとき"],
+                 examples: [
+                    ("I'd like to request a meeting.", "会議をお願いしたいです。"),
+                    ("Request approved.", "依頼は承認された。")
+                 ]),
+            make("require", "need; demand",
+                 "必要とする",
+                 useCases: ["条件として必要なものを示すとき"],
+                 examples: [
+                    ("This requires patience.", "これには忍耐が必要だ。"),
+                    ("ID is required.", "身分証必須。")
+                 ]),
+            make("reveal", "make known; uncover",
+                 "明かす・暴露する",
+                 useCases: ["秘密を打ち明けるとき"],
+                 examples: [
+                    ("He revealed the truth.", "彼は真実を明かした。"),
+                    ("Don't reveal the ending.", "結末バラさないで。")
+                 ]),
+            make("rush", "hurry; charge forward",
+                 "急ぐ・突進する",
+                 useCases: ["急いでいる場面"],
+                 examples: [
+                    ("Don't rush.", "急がなくていいよ。"),
+                    ("I'm in a rush.", "急いでるんだ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞（追加 20）
+
+    private static var extraAdjectives2: [Word] {
+        [
+            make("adequate", "enough; sufficient",
+                 "十分な・適切な",
+                 useCases: ["最低限満たしていることを伝えるとき"],
+                 examples: [
+                    ("Adequate for the job.", "仕事に十分。"),
+                    ("Not entirely adequate.", "完全には十分じゃない。")
+                 ]),
+            make("apparent", "clearly visible or understood",
+                 "明らかな・見たところの",
+                 useCases: ["明白な事実を述べるとき"],
+                 examples: [
+                    ("It's apparent he's lying.", "彼が嘘ついてるのは明らかだ。"),
+                    ("No apparent reason.", "明確な理由はない。")
+                 ]),
+            make("arrogant", "having too much pride",
+                 "傲慢な",
+                 useCases: ["態度が偉そうな人を批判するとき"],
+                 examples: [
+                    ("He's so arrogant.", "彼、めっちゃ傲慢。"),
+                    ("Don't be arrogant.", "傲慢にならないで。")
+                 ]),
+            make("awful", "very bad",
+                 "ひどい・最悪な",
+                 useCases: ["強く否定的な評価を伝えるとき"],
+                 examples: [
+                    ("That's awful.", "それひどい。"),
+                    ("The food was awful.", "料理がひどかった。")
+                 ]),
+            make("brilliant", "very smart; outstanding",
+                 "素晴らしい・優秀な",
+                 useCases: ["賞賛するとき"],
+                 examples: [
+                    ("Brilliant idea!", "素晴らしいアイデア！"),
+                    ("She's brilliant.", "彼女は優秀だ。")
+                 ]),
+            make("bold", "brave; daring",
+                 "大胆な",
+                 useCases: ["勇気ある決断や発言を表すとき"],
+                 examples: [
+                    ("That's a bold move.", "それは大胆な行動だ。"),
+                    ("Be bold.", "大胆にいこう。")
+                 ]),
+            make("cautious", "careful; wary",
+                 "慎重な",
+                 useCases: ["危険を避けて慎重に動く話"],
+                 examples: [
+                    ("Be cautious.", "慎重にね。"),
+                    ("She's cautious by nature.", "彼女は元々慎重なタイプ。")
+                 ]),
+            make("chaotic", "very disorganized",
+                 "混沌とした",
+                 useCases: ["大混乱の状況を表すとき"],
+                 examples: [
+                    ("The room was chaotic.", "部屋がカオスだった。"),
+                    ("It's been chaotic at work.", "仕事がてんやわんや。")
+                 ]),
+            make("competitive", "wanting to win",
+                 "競争心の強い",
+                 useCases: ["勝負好きな性格を表すとき"],
+                 examples: [
+                    ("He's super competitive.", "彼、すごい負けず嫌い。"),
+                    ("It's a competitive market.", "競争の激しい市場だ。")
+                 ]),
+            make("complex", "having many parts; not simple",
+                 "複雑な",
+                 useCases: ["難しい問題やシステムを表すとき"],
+                 examples: [
+                    ("It's a complex issue.", "複雑な問題だ。"),
+                    ("Pretty complex.", "結構複雑。")
+                 ]),
+            make("confident", "self-assured",
+                 "自信のある",
+                 useCases: ["自信ある態度を表すとき"],
+                 examples: [
+                    ("She's so confident.", "彼女、自信に満ちてる。"),
+                    ("I'm confident about it.", "自信があるよ。")
+                 ]),
+            make("considerate", "thinking of others",
+                 "思いやりのある",
+                 useCases: ["他人の立場を考える人を褒めるとき"],
+                 examples: [
+                    ("That's considerate of you.", "気を遣ってくれてありがとう。"),
+                    ("He's very considerate.", "彼はすごく思いやりがある。")
+                 ]),
+            make("convenient", "easy to use; well located",
+                 "便利な",
+                 useCases: ["都合がいい場所や時間"],
+                 examples: [
+                    ("Super convenient location.", "立地めっちゃ便利。"),
+                    ("Whatever's convenient.", "都合のいい時で。")
+                 ]),
+            make("creative", "showing imagination",
+                 "創造的な・クリエイティブな",
+                 useCases: ["独創性を褒めるとき"],
+                 examples: [
+                    ("Very creative idea!", "とても独創的なアイデア！"),
+                    ("She's so creative.", "彼女、すごくクリエイティブ。")
+                 ]),
+            make("curious", "eager to know",
+                 "好奇心旺盛な",
+                 useCases: ["興味津々な様子を表すとき"],
+                 examples: [
+                    ("I'm curious about it.", "気になる。"),
+                    ("She's a curious kid.", "彼女、好奇心旺盛な子だ。")
+                 ]),
+            make("delicate", "fragile; subtle",
+                 "繊細な・壊れやすい",
+                 useCases: ["扱いに注意がいる物や問題"],
+                 examples: [
+                    ("It's delicate.", "壊れやすいよ。"),
+                    ("A delicate situation.", "デリケートな状況。")
+                 ]),
+            make("dependent", "needing support",
+                 "依存している",
+                 useCases: ["他者や物に頼っている状態"],
+                 examples: [
+                    ("He's dependent on coffee.", "彼コーヒー依存だ。"),
+                    ("Too dependent on her phone.", "携帯に依存しすぎ。")
+                 ]),
+            make("desperate", "having no hope; reckless",
+                 "必死の・絶望的な",
+                 useCases: ["切羽詰まった状況を表すとき"],
+                 examples: [
+                    ("I was desperate.", "必死だった。"),
+                    ("Desperate times.", "厳しい時代だ。")
+                 ]),
+            make("diverse", "varied; from many different sources",
+                 "多様な",
+                 useCases: ["バラエティ豊かな構成を表すとき"],
+                 examples: [
+                    ("A diverse team.", "多様性のあるチーム。"),
+                    ("Tokyo is super diverse.", "東京はすごく多様性がある。")
+                 ]),
+            make("dynamic", "active; full of energy",
+                 "動的な・活発な",
+                 useCases: ["勢いがあるものや人を表すとき"],
+                 examples: [
+                    ("A dynamic speaker.", "エネルギッシュな話し手。"),
+                    ("Dynamic environment.", "動きのある職場。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞（追加 15）
+
+    private static var extraNouns: [Word] {
+        [
+            make("achievement", "something accomplished",
+                 "達成・業績",
+                 useCases: ["成果を讃えるとき"],
+                 examples: [
+                    ("That's a huge achievement.", "それは大きな成果だ。"),
+                    ("Personal achievement.", "個人的な達成。")
+                 ]),
+            make("alternative", "another option",
+                 "代替案・別の選択肢",
+                 useCases: ["他の選択肢を提案するとき"],
+                 examples: [
+                    ("Any alternative?", "他の選択肢ある？"),
+                    ("A vegan alternative.", "ビーガン用の代替品。")
+                 ]),
+            make("approach", "way of doing; come closer",
+                 "アプローチ・近づくこと",
+                 useCases: ["やり方や戦略を話すとき"],
+                 examples: [
+                    ("Different approach.", "違うアプローチ。"),
+                    ("Try a new approach.", "新しい方法でやってみて。")
+                 ]),
+            make("awareness", "knowledge of something",
+                 "意識・認識",
+                 useCases: ["問題への注目を高める話"],
+                 examples: [
+                    ("Raise awareness.", "意識を高める。"),
+                    ("Lack of awareness.", "認識不足。")
+                 ]),
+            make("boundary", "a limit; a line dividing two areas",
+                 "境界・限界",
+                 useCases: ["人間関係の境界線", "区域の境を話すとき"],
+                 examples: [
+                    ("Set boundaries.", "線引きしよう。"),
+                    ("Cross the boundary.", "境界を越える。")
+                 ]),
+            make("challenge", "a difficult task; a dare",
+                 "挑戦・難題",
+                 useCases: ["新しい挑戦に取り組む話"],
+                 examples: [
+                    ("Big challenge ahead.", "大きな挑戦が待ってる。"),
+                    ("I love a challenge.", "挑戦が好きなんだ。")
+                 ]),
+            make("conclusion", "the end or final decision",
+                 "結論",
+                 useCases: ["話し合いをまとめるとき"],
+                 examples: [
+                    ("In conclusion, yes.", "結論としてはYES。"),
+                    ("Jumped to a conclusion.", "結論を急いだ。")
+                 ]),
+            make("concern", "worry; matter of interest",
+                 "心配・関心事",
+                 useCases: ["懸念を表明するとき"],
+                 examples: [
+                    ("That's my concern.", "それが気になってる。"),
+                    ("Cause for concern.", "心配の種。")
+                 ]),
+            make("conflict", "a serious disagreement",
+                 "対立・衝突",
+                 useCases: ["意見や価値観の衝突を表すとき"],
+                 examples: [
+                    ("There's a conflict.", "対立がある。"),
+                    ("Avoid conflict.", "もめるのは避けよう。")
+                 ]),
+            make("diversity", "variety; different kinds",
+                 "多様性",
+                 useCases: ["人や文化の多様性について話すとき"],
+                 examples: [
+                    ("Diversity matters.", "多様性は大事。"),
+                    ("Cultural diversity.", "文化の多様性。")
+                 ]),
+            make("emergency", "an urgent serious situation",
+                 "緊急事態",
+                 useCases: ["急ぎの危険な事態の話"],
+                 examples: [
+                    ("It's an emergency.", "緊急事態だ。"),
+                    ("In case of emergency.", "緊急時には。")
+                 ]),
+            make("encounter", "an unexpected meeting",
+                 "出会い・遭遇",
+                 useCases: ["珍しい出会いの話"],
+                 examples: [
+                    ("A strange encounter.", "奇妙な出会い。"),
+                    ("Brief encounter.", "短い出会い。")
+                 ]),
+            make("evidence", "facts that prove something",
+                 "証拠",
+                 useCases: ["主張の裏付けを話すとき"],
+                 examples: [
+                    ("No evidence yet.", "まだ証拠がない。"),
+                    ("Strong evidence.", "強い証拠だ。")
+                 ]),
+            make("experience", "knowledge from doing things",
+                 "経験",
+                 useCases: ["過去の体験や実績を話すとき"],
+                 examples: [
+                    ("Great experience.", "いい経験だった。"),
+                    ("Years of experience.", "何年もの経験。")
+                 ]),
+            make("exception", "something different from the rule",
+                 "例外",
+                 useCases: ["ルールから外れた事例を示すとき"],
+                 examples: [
+                    ("With one exception.", "1つだけ例外あり。"),
+                    ("No exceptions.", "例外なし。")
+                 ])
+        ]
+    }
+
+    // MARK: - 慣用表現・口語表現（追加 15）
+
+    private static var extraIdioms2: [Word] {
+        [
+            make("at all costs", "no matter what",
+                 "何としても",
+                 useCases: ["強い決意を表すとき"],
+                 examples: [
+                    ("Avoid him at all costs.", "何としても彼を避けて。"),
+                    ("I'll finish it at all costs.", "何としてもやり遂げる。")
+                 ]),
+            make("for the sake of", "for the purpose of",
+                 "〜のために",
+                 useCases: ["目的を強調するとき"],
+                 examples: [
+                    ("For the sake of clarity.", "明確にするために。"),
+                    ("For the sake of peace.", "平和のために。")
+                 ]),
+            make("at any rate", "in any case; anyway",
+                 "とにかく・いずれにせよ",
+                 useCases: ["話を前に進めるとき"],
+                 examples: [
+                    ("At any rate, let's go.", "とにかく行こう。"),
+                    ("At any rate, it's done.", "いずれにせよ終わった。")
+                 ]),
+            make("in spite of", "despite",
+                 "〜にもかかわらず",
+                 useCases: ["逆境を踏まえて結果を述べるとき"],
+                 examples: [
+                    ("In spite of the rain, we went.", "雨にもかかわらず行った。"),
+                    ("In spite of everything.", "何があっても。")
+                 ]),
+            make("as opposed to", "in contrast to",
+                 "〜とは対照的に",
+                 useCases: ["2つの選択肢を対比するとき"],
+                 examples: [
+                    ("Tea, as opposed to coffee.", "コーヒーじゃなくて紅茶ね。"),
+                    ("As opposed to last year.", "去年と対照的に。")
+                 ]),
+            make("with respect to", "regarding",
+                 "〜に関して",
+                 useCases: ["フォーマルに話題を導入するとき"],
+                 examples: [
+                    ("With respect to your question...", "ご質問に関しては…"),
+                    ("With respect to safety.", "安全面に関して。")
+                 ]),
+            make("in the wake of", "as a result of; just after",
+                 "〜の余波で・直後に",
+                 useCases: ["出来事の影響を受けた状況を伝えるとき"],
+                 examples: [
+                    ("In the wake of the crisis.", "危機の余波で。"),
+                    ("In the wake of the storm.", "嵐の直後に。")
+                 ]),
+            make("at odds with", "in disagreement with",
+                 "〜と対立して",
+                 useCases: ["意見が衝突している話"],
+                 examples: [
+                    ("He's at odds with his boss.", "彼、上司ともめてる。"),
+                    ("At odds with the rules.", "規則と矛盾してる。")
+                 ]),
+            make("on behalf of", "as a representative of",
+                 "〜を代表して",
+                 useCases: ["代表として発言するとき"],
+                 examples: [
+                    ("On behalf of the team.", "チームを代表して。"),
+                    ("On behalf of all of us.", "私たち皆を代表して。")
+                 ]),
+            make("in light of", "considering",
+                 "〜を考慮して",
+                 useCases: ["事情を踏まえて判断するとき"],
+                 examples: [
+                    ("In light of recent events.", "最近の事件を踏まえて。"),
+                    ("In light of the data.", "データを考慮して。")
+                 ]),
+            make("at the expense of", "while sacrificing",
+                 "〜を犠牲にして",
+                 useCases: ["何かを犠牲にして得る話"],
+                 examples: [
+                    ("Worked at the expense of sleep.", "睡眠を削って働いた。"),
+                    ("At the expense of others.", "他人を犠牲にして。")
+                 ]),
+            make("prior to", "before",
+                 "〜の前に",
+                 useCases: ["フォーマルに「〜の前に」と言うとき"],
+                 examples: [
+                    ("Prior to the meeting.", "会議の前に。"),
+                    ("Prior to that, I lived in Tokyo.", "それ以前は東京に住んでた。")
+                 ]),
+            make("subsequent to", "after; following",
+                 "〜の後に",
+                 useCases: ["フォーマルに時間順を示すとき"],
+                 examples: [
+                    ("Subsequent to the launch.", "発売後に。"),
+                    ("Subsequent to that event.", "その出来事の後で。")
+                 ]),
+            make("with the exception of", "except for",
+                 "〜を除いて",
+                 useCases: ["フォーマルに例外を示すとき"],
+                 examples: [
+                    ("With the exception of Sunday.", "日曜を除いて。"),
+                    ("Open daily, with the exception of Monday.", "月曜以外は毎日営業。")
+                 ]),
+            make("in conjunction with", "together with",
+                 "〜と連携して・〜と組み合わせて",
+                 useCases: ["共同作業や組み合わせを示すとき"],
+                 examples: [
+                    ("In conjunction with the team.", "チームと連携して。"),
+                    ("Use in conjunction with the app.", "アプリと組み合わせて使って。")
                  ])
         ]
     }
