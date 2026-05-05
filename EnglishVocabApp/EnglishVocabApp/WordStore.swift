@@ -143,6 +143,50 @@ final class WordStore: ObservableObject {
             .sorted { $0.nextReviewDate < $1.nextReviewDate }
     }
 
+    // MARK: - Home dashboard stats
+
+    /// Words that need review today (nextReviewDate ≤ end of today).
+    var dueTodayCount: Int {
+        let cal = Calendar.current
+        guard let endOfToday = cal.date(byAdding: .day, value: 1, to: cal.startOfDay(for: Date())) else {
+            return dueWords.count
+        }
+        return words.filter { $0.nextReviewDate < endOfToday }.count
+    }
+
+    /// Words reviewed at least once today.
+    var reviewedTodayCount: Int {
+        let cal = Calendar.current
+        let today = cal.startOfDay(for: Date())
+        return words.filter {
+            guard let d = $0.lastReviewedDate else { return false }
+            return cal.isDate(d, inSameDayAs: today)
+        }.count
+    }
+
+    /// Words that will be due within the next 7 days (including those
+    /// already overdue).
+    var dueThisWeekCount: Int {
+        let cal = Calendar.current
+        guard let endOfWeek = cal.date(
+            byAdding: .day,
+            value: 7,
+            to: cal.startOfDay(for: Date())
+        ) else {
+            return dueWords.count
+        }
+        return words.filter { $0.nextReviewDate < endOfWeek }.count
+    }
+
+    /// Words reviewed at least once in the past 7 days (rolling window).
+    var reviewedThisWeekCount: Int {
+        let weekAgo = Date().addingTimeInterval(-7 * 24 * 60 * 60)
+        return words.filter {
+            guard let d = $0.lastReviewedDate else { return false }
+            return d >= weekAgo
+        }.count
+    }
+
     // MARK: - Review logic
 
     /// Records a review and schedules the next review date.
