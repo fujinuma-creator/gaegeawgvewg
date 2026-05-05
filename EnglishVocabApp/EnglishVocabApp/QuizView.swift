@@ -12,6 +12,7 @@ struct QuizView: View {
         case useCase = "使う場面"
         case definition = "英語の定義"
         case translation = "例文翻訳"
+        case shadowing = "シャドウイング"
         var id: String { rawValue }
 
         var prompt: String {
@@ -19,13 +20,17 @@ struct QuizView: View {
             case .useCase:     return "この単語を使う場面はどれ？"
             case .definition:  return "この単語の英語の定義はどれ？"
             case .translation: return "下の日本語を英語に訳してください"
+            case .shadowing:   return "音声に続けて発音してみよう"
             }
         }
 
         var minimumEligible: Int {
             // Multiple-choice modes need 4 distinct words for distractors.
-            // Translation mode just needs at least 1 word with examples.
-            self == .translation ? 1 : 4
+            // Translation and shadowing only need 1 word with examples.
+            switch self {
+            case .useCase, .definition: return 4
+            case .translation, .shadowing: return 1
+            }
         }
 
         var emptyMessage: String {
@@ -33,6 +38,7 @@ struct QuizView: View {
             case .useCase:     return "復習リスト内に「使う場面」付きの単語が4つ以上必要です"
             case .definition:  return "復習リスト内に「英語の定義」付きの単語が4つ以上必要です"
             case .translation: return "復習リスト内に「例文」付きの単語が必要です"
+            case .shadowing:   return "復習リスト内に「例文」付きの単語が必要です"
             }
         }
 
@@ -79,6 +85,8 @@ struct QuizView: View {
             }
         case .translation:
             return pinned.filter { !$0.examples.isEmpty }
+        case .shadowing:
+            return pinned.filter { !$0.examples.isEmpty }
         }
     }
 
@@ -118,6 +126,8 @@ struct QuizView: View {
                 }
                 .padding()
                 Spacer()
+            } else if mode == .shadowing {
+                shadowingView()
             } else if let word = currentWord {
                 if mode == .translation {
                     translationCard(word)
@@ -409,7 +419,7 @@ struct QuizView: View {
     }
 
     /// Picks the answer text for a word based on the current quiz mode.
-    /// Translation mode doesn't use multiple-choice, so it returns nil.
+    /// Non-multiple-choice modes return nil.
     private func choiceText(for word: Word) -> String? {
         switch mode {
         case .useCase:
@@ -417,7 +427,7 @@ struct QuizView: View {
         case .definition:
             let def = word.definitionEnglish.trimmingCharacters(in: .whitespaces)
             return def.isEmpty ? nil : def
-        case .translation:
+        case .translation, .shadowing:
             return nil
         }
     }
@@ -428,7 +438,7 @@ struct QuizView: View {
             return "選んだ場面は「\(sourceWord.word)」の使い方です"
         case .definition:
             return "選んだ定義は「\(sourceWord.word)」のものです"
-        case .translation:
+        case .translation, .shadowing:
             return ""  // not used in translation mode
         }
     }
@@ -593,6 +603,108 @@ struct QuizView: View {
         savedTranslationExampleIdx = pair.exampleIdx
         showAnswer = false
         userTranslation = ""
+    }
+
+    // MARK: - Shadowing list
+
+    @ViewBuilder
+    private func shadowingView() -> some View {
+        let queue = translationQueue
+        if queue.isEmpty {
+            VStack(spacing: 10) {
+                Image(systemName: "headphones")
+                    .font(.system(size: 50))
+                    .foregroundStyle(.indigo)
+                Text("シャドウイングする例文がありません")
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+            }
+            .frame(maxHeight: .infinity)
+            .padding()
+        } else {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("音声を聞いて、続けて発音してみよう（\(queue.count) 文）")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 6)
+                    LazyVStack(spacing: 10) {
+                        ForEach(queue.indices, id: \.self) { idx in
+                            let pair = queue[idx]
+                            if pair.exampleIdx < pair.word.examples.count {
+                                shadowingRow(
+                                    index: idx,
+                                    word: pair.word,
+                                    example: pair.word.examples[pair.exampleIdx]
+                                )
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 16)
+                }
+            }
+        }
+    }
+
+    private func shadowingRow(index: Int, word: Word, example: ExampleSentence) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text("\(index + 1).")
+                    .font(.caption.bold())
+                    .foregroundStyle(.tertiary)
+                Text(word.word)
+                    .font(.caption.bold())
+                    .foregroundStyle(.indigo)
+                Spacer()
+            }
+
+            Text(example.english)
+                .font(.body)
+
+            Text(example.japanese)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+
+            HStack(spacing: 8) {
+                Button {
+                    SpeechManager.shared.speak(example.english, rate: 0.48)
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "play.fill")
+                        Text("通常").font(.caption.bold())
+                    }
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(Color.indigo))
+                }
+                .buttonStyle(.plain)
+
+                Button {
+                    SpeechManager.shared.speak(example.english, rate: 0.32)
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "tortoise.fill")
+                        Text("ゆっくり").font(.caption.bold())
+                    }
+                    .foregroundStyle(.indigo)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(Color.indigo.opacity(0.12)))
+                }
+                .buttonStyle(.plain)
+
+                Spacer()
+            }
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(.secondarySystemGroupedBackground))
+        )
     }
 
     // MARK: - Review gauge
