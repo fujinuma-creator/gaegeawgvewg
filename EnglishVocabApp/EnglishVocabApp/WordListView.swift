@@ -336,9 +336,22 @@ struct WordListView: View {
                         .disabled(regeneratingExamplesForId != nil)
                     }
                     ForEach(w.examples) { ex in
-                        VStack(alignment: .leading, spacing: 1) {
-                            Text(ex.english).font(.subheadline)
-                            Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
+                        HStack(alignment: .top, spacing: 8) {
+                            Button {
+                                SpeechManager.shared.speak(ex.english)
+                            } label: {
+                                Image(systemName: "speaker.wave.2.fill")
+                                    .font(.system(size: 11))
+                                    .foregroundStyle(.indigo)
+                                    .frame(width: 24, height: 24)
+                                    .background(Color.indigo.opacity(0.1))
+                                    .clipShape(Circle())
+                            }
+                            .buttonStyle(.plain)
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text(ex.english).font(.subheadline)
+                                Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
+                            }
                         }
                     }
                 }
