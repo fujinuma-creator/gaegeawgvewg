@@ -568,8 +568,10 @@ struct QuizView: View {
     private var translationQueue: [(word: Word, exampleIdx: Int)] {
         eligibleWords
             .dailyShuffled()
-            .flatMap { word in
-                (0..<word.examples.count).map { (word, $0) }
+            .flatMap { (w: Word) -> [(word: Word, exampleIdx: Int)] in
+                (0..<w.examples.count).map { idx in
+                    (word: w, exampleIdx: idx)
+                }
             }
     }
 
@@ -605,32 +607,36 @@ struct QuizView: View {
 
     // MARK: - Review gauge
 
-    @ViewBuilder
-    private func reviewGauge(for word: Word) -> some View {
-        let count = word.reviewCount
-        let stage: Int
+    private struct ReviewStage {
+        let filled: Int
         let label: String
         let color: Color
-        switch count {
-        case 0:    stage = 0; label = "未学習";    color = .gray
-        case 1:    stage = 1; label = "1回目";    color = .red
-        case 2:    stage = 2; label = "復習中";    color = .yellow
-        case 3:    stage = 3; label = "3回目";    color = .cyan
-        default:   stage = 4; label = "復習完了";  color = .purple
-        }
-        let isRainbow = stage == 4
+        let isRainbow: Bool
+    }
 
-        HStack(spacing: 8) {
+    private func reviewStage(forCount count: Int) -> ReviewStage {
+        switch count {
+        case 0:  return ReviewStage(filled: 0, label: "未学習",   color: .gray,   isRainbow: false)
+        case 1:  return ReviewStage(filled: 1, label: "1回目",   color: .red,    isRainbow: false)
+        case 2:  return ReviewStage(filled: 2, label: "復習中",   color: .yellow, isRainbow: false)
+        case 3:  return ReviewStage(filled: 3, label: "3回目",   color: .cyan,   isRainbow: false)
+        default: return ReviewStage(filled: 4, label: "復習完了", color: .purple, isRainbow: true)
+        }
+    }
+
+    private func reviewGauge(for word: Word) -> some View {
+        let info = reviewStage(forCount: word.reviewCount)
+        return HStack(spacing: 8) {
             HStack(spacing: 3) {
-                ForEach(0..<4) { idx in
-                    gaugeSegment(filled: idx < stage, isRainbow: isRainbow, solidColor: color)
+                ForEach(0..<4, id: \.self) { idx in
+                    gaugeSegment(filled: idx < info.filled, isRainbow: info.isRainbow, solidColor: info.color)
                 }
             }
-            Text(label)
+            Text(info.label)
                 .font(.caption2.bold())
-                .foregroundStyle(isRainbow ? Color.purple : color)
+                .foregroundStyle(info.color)
             Spacer()
-            Text("復習 \(count) 回")
+            Text("復習 \(word.reviewCount) 回")
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
         }
@@ -638,23 +644,21 @@ struct QuizView: View {
 
     @ViewBuilder
     private func gaugeSegment(filled: Bool, isRainbow: Bool, solidColor: Color) -> some View {
-        let height: CGFloat = 6
-        let width: CGFloat = 22
         if filled && isRainbow {
             Capsule()
                 .fill(LinearGradient(
                     colors: [.red, .orange, .yellow, .green, .blue, .purple],
                     startPoint: .leading, endPoint: .trailing
                 ))
-                .frame(width: width, height: height)
+                .frame(width: 22, height: 6)
         } else if filled {
             Capsule()
                 .fill(solidColor)
-                .frame(width: width, height: height)
+                .frame(width: 22, height: 6)
         } else {
             Capsule()
                 .fill(Color.gray.opacity(0.2))
-                .frame(width: width, height: height)
+                .frame(width: 22, height: 6)
         }
     }
 
