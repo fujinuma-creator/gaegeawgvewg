@@ -661,21 +661,9 @@ struct QuizView: View {
                     .font(.caption.bold())
                     .foregroundStyle(.indigo)
                 Spacer()
-                Button {
-                    if isExpanded {
-                        expandedShadowingIds.remove(example.id)
-                    } else {
-                        expandedShadowingIds.insert(example.id)
-                    }
-                } label: {
-                    HStack(spacing: 4) {
-                        Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                        Text(isExpanded ? "閉じる" : "開く")
-                    }
-                    .font(.caption2.bold())
-                    .foregroundStyle(.indigo)
-                }
-                .buttonStyle(.plain)
+                Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
             }
 
             HStack(alignment: .top, spacing: 8) {
@@ -723,6 +711,14 @@ struct QuizView: View {
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color(.secondarySystemGroupedBackground))
         )
+        .contentShape(Rectangle())
+        .onTapGesture {
+            if isExpanded {
+                expandedShadowingIds.remove(example.id)
+            } else {
+                expandedShadowingIds.insert(example.id)
+            }
+        }
     }
 
     // MARK: - Review gauge
