@@ -732,7 +732,6 @@ struct QuizView: View {
         }
     }
 
-    @ViewBuilder
     /// Two self-rate buttons shown under the translation answer panel so
     /// the user can mark whether they got it right. The result feeds into
     /// the per-mode count for "translation".
