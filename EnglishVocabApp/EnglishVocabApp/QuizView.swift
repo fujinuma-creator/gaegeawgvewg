@@ -189,6 +189,10 @@ struct QuizView: View {
                     Spacer()
                 }
 
+                reviewGauge(for: liveWord)
+                    .padding(.horizontal, 4)
+                    .padding(.bottom, 4)
+
                 Button {
                     SpeechManager.shared.speak(word.word)
                 } label: {
@@ -463,27 +467,13 @@ struct QuizView: View {
                     reviewGauge(for: liveWord)
                         .padding(.vertical, 2)
 
-                    Button {
-                        openDetail(for: word)
-                    } label: {
-                        HStack(spacing: 6) {
-                            Text(word.word)
-                                .font(.system(size: 24, weight: .bold))
-                                .foregroundStyle(.primary)
-                            Image(systemName: "info.circle.fill")
-                                .foregroundStyle(.indigo)
-                        }
-                        .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
-
                     if let ex = currentExample {
                         VStack(spacing: 6) {
                             Text("下の日本語を英語に訳してください")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                             Text(ex.japanese)
-                                .font(.system(size: 20, weight: .medium))
+                                .font(.system(size: 22, weight: .medium))
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
                         }
