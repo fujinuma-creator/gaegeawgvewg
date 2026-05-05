@@ -689,7 +689,7 @@ struct QuizView: View {
                         .background(Circle().fill(Color.indigo))
                 }
                 .buttonStyle(.plain)
-                Text(example.english)
+                Text(example.japanese)
                     .font(.body)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
@@ -697,9 +697,9 @@ struct QuizView: View {
             if isExpanded {
                 Divider().padding(.vertical, 2)
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("日本語訳").font(.caption2).foregroundStyle(.tertiary)
-                    Text(example.japanese)
-                        .font(.subheadline)
+                    Text("英語例文").font(.caption2).foregroundStyle(.tertiary)
+                    Text(example.english)
+                        .font(.body)
                         .foregroundStyle(.primary)
                 }
                 VStack(alignment: .leading, spacing: 6) {
