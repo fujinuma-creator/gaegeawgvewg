@@ -29,37 +29,37 @@ struct HomeView: View {
         VStack(spacing: 2) {
             Text("AI 英単語帳")
                 .font(.system(size: 34, weight: .black, design: .rounded))
-                .foregroundStyle(.white)
+                .foregroundStyle(.black)
                 .minimumScaleFactor(0.6)
                 .lineLimit(1)
-                .shadow(color: .white.opacity(0.4), radius: 8)
             Text("AI English Vocabulary")
                 .font(.system(size: 11, weight: .medium))
-                .foregroundStyle(.white.opacity(0.6))
+                .foregroundStyle(.black.opacity(0.55))
                 .tracking(2)
                 .lineLimit(1)
         }
-        .padding(.vertical, 12)
-        .padding(.horizontal, 16)
+        .padding(.vertical, 14)
+        .padding(.horizontal, 18)
         .frame(maxWidth: .infinity)
+        .background(tileBackground)
     }
 
-    // MARK: - Tiles (centered, white-on-translucent over space)
+    // MARK: - Tiles (centered, dark text on solid white card)
 
     private func statTile(label: String, number: Int, suffix: String) -> some View {
         VStack(spacing: 3) {
             Text(label)
                 .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(.white.opacity(0.75))
+                .foregroundStyle(.black.opacity(0.7))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
             HStack(alignment: .lastTextBaseline, spacing: 4) {
                 Text("\(number)")
                     .font(.system(size: 26, weight: .black, design: .rounded))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.black)
                 Text(suffix)
                     .font(.system(size: 13, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.white.opacity(0.6))
+                    .foregroundStyle(.black.opacity(0.55))
             }
             .lineLimit(1)
             .minimumScaleFactor(0.7)
@@ -76,22 +76,22 @@ struct HomeView: View {
         return VStack(spacing: 3) {
             Text(label)
                 .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(.white.opacity(0.75))
+                .foregroundStyle(.black.opacity(0.7))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
             HStack(alignment: .lastTextBaseline, spacing: 4) {
                 Text("\(done)")
                     .font(.system(size: 26, weight: .black, design: .rounded))
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.black)
                 Text("/ \(total)")
                     .font(.system(size: 13, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.white.opacity(0.6))
+                    .foregroundStyle(.black.opacity(0.55))
             }
             .lineLimit(1)
             .minimumScaleFactor(0.7)
             ProgressView(value: progress)
                 .progressViewStyle(.linear)
-                .tint(.white)
+                .tint(.black)
                 .scaleEffect(x: 1, y: 0.6, anchor: .center)
                 .frame(maxWidth: 180)
         }
@@ -101,13 +101,16 @@ struct HomeView: View {
         .background(tileBackground)
     }
 
+    /// Solid-ish white card so text never overlaps with the gray solar
+    /// system rendered behind it.
     private var tileBackground: some View {
         RoundedRectangle(cornerRadius: 14)
-            .fill(.white.opacity(0.08))
+            .fill(Color.white.opacity(0.92))
             .overlay(
                 RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.white.opacity(0.20), lineWidth: 0.8)
+                    .stroke(Color.black.opacity(0.15), lineWidth: 0.8)
             )
+            .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
     }
 }
 
