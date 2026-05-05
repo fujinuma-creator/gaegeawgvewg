@@ -101,14 +101,18 @@ struct HomeView: View {
         .background(tileBackground)
     }
 
-    /// Solid-ish white card so text never overlaps with the gray solar
-    /// system rendered behind it.
+    /// Translucent card: lets the geometric pattern faintly show through
+    /// while keeping enough contrast for the dark text on top to read.
     private var tileBackground: some View {
         RoundedRectangle(cornerRadius: 14)
-            .fill(Color.white.opacity(0.92))
+            .fill(.ultraThinMaterial)
             .overlay(
                 RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.black.opacity(0.15), lineWidth: 0.8)
+                    .fill(Color.white.opacity(0.35))
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 14)
+                    .stroke(Color.black.opacity(0.18), lineWidth: 0.8)
             )
             .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
     }
