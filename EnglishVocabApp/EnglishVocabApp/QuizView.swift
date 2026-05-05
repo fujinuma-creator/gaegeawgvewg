@@ -119,6 +119,14 @@ struct QuizView: View {
         !store.reviewListWords.isEmpty && eligibleWords.isEmpty
     }
 
+    /// Daily session cap for the multiple-choice modes: after 4 correct
+    /// answers in the current session we finish the session and show the
+    /// "本日のタスクは終了しました" view. Translation mode has no
+    /// auto-graded counter so this cap doesn't apply there.
+    private var sessionComplete: Bool {
+        mode != .translation && correctCount >= 4
+    }
+
     var body: some View {
         VStack(spacing: 16) {
             HStack {
@@ -139,9 +147,9 @@ struct QuizView: View {
             .pickerStyle(.segmented)
             .padding(.horizontal, 16)
 
-            if !canShowQuiz {
+            if !canShowQuiz || sessionComplete {
                 Spacer()
-                if allTasksDone {
+                if allTasksDone || sessionComplete {
                     VStack(spacing: 12) {
                         Image(systemName: "checkmark.seal.fill")
                             .font(.system(size: 56))
