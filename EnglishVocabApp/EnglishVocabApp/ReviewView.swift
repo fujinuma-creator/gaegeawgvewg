@@ -322,6 +322,12 @@ struct ReviewView: View {
                 if value.translation.width > threshold {
                     recordMark(.perfect)
                 } else if value.translation.width < -threshold {
+                    // Left swipe: also auto-pin the word to the review list
+                    // (no-op if already there) so the user can quickly send
+                    // weak words into focused practice.
+                    if let w = currentWord, !w.isInReviewList {
+                        store.toggleReviewList(for: w)
+                    }
                     recordMark(.forgot)
                 } else {
                     dragOffset = .zero
