@@ -8,105 +8,97 @@ struct HomeView: View {
             GeometricBackground()
                 .ignoresSafeArea()
 
-            VStack(spacing: 14) {
-                titleBlock
-                statsBlock
+            VStack(spacing: 6) {
+                titleRow
+                statRow(label: "全単語数", number: store.totalCount, suffix: "語")
+                progressRow(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
+                progressRow(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
                 Spacer(minLength: 0)
             }
-            .padding(.horizontal, 14)
-            .padding(.top, 8)
-            .padding(.bottom, 12)
+            .padding(.horizontal, 12)
+            .padding(.top, 6)
+            .padding(.bottom, 6)
         }
-        // Lock dynamic type so the home dashboard fits even when the
-        // user's iOS-wide text size is set very large.
         .dynamicTypeSize(.medium)
     }
 
-    private var titleBlock: some View {
-        VStack(spacing: 2) {
-            Text("AI 英単語帳")
-                .font(.system(size: 26, weight: .black, design: .rounded))
+    // MARK: - Title
+
+    private var titleRow: some View {
+        Text("AI 英単語帳")
+            .font(.system(size: 24, weight: .black, design: .rounded))
+            .foregroundStyle(.black)
+            .minimumScaleFactor(0.5)
+            .lineLimit(1)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
+            .background(rowBackground)
+    }
+
+    // MARK: - Stat rows
+
+    private func statRow(label: String, number: Int, suffix: String) -> some View {
+        HStack(alignment: .firstTextBaseline) {
+            Text(label)
+                .font(.system(size: 14, weight: .bold))
                 .foregroundStyle(.black)
-                .minimumScaleFactor(0.5)
                 .lineLimit(1)
-            Text("AI English Vocabulary")
-                .font(.system(size: 11, weight: .medium))
-                .foregroundStyle(.black.opacity(0.55))
-                .tracking(2)
-                .minimumScaleFactor(0.6)
-                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+            Spacer(minLength: 8)
+            HStack(alignment: .firstTextBaseline, spacing: 3) {
+                Text("\(number)")
+                    .font(.system(size: 22, weight: .black, design: .rounded))
+                    .foregroundStyle(.black)
+                Text(suffix)
+                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.black.opacity(0.5))
+            }
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
         }
-        .padding(.vertical, 10)
-        .padding(.horizontal, 14)
-        .frame(maxWidth: .infinity)
-        .background(rowBackground(corner: 14))
+        .padding(.vertical, 6)
+        .padding(.horizontal, 12)
+        .background(rowBackground)
     }
 
-    private var statsBlock: some View {
-        VStack(spacing: 8) {
-            statRow(title: "全単語数", subtitle: "Total words", number: store.totalCount, suffix: "語", showProgress: false, total: store.totalCount)
-            statRow(title: "本日の復習", subtitle: "Today", number: store.reviewedTodayCount, suffix: "/ \(store.dueTodayCount)", showProgress: true, total: store.dueTodayCount)
-            statRow(title: "今週の復習", subtitle: "This week", number: store.reviewedThisWeekCount, suffix: "/ \(store.dueThisWeekCount)", showProgress: true, total: store.dueThisWeekCount)
-        }
-    }
-
-    @ViewBuilder
-    private func statRow(
-        title: String,
-        subtitle: String,
-        number: Int,
-        suffix: String,
-        showProgress: Bool,
-        total: Int
-    ) -> some View {
-        let progress: Double = {
-            let safeTotal = max(total, 1)
-            return min(Double(number) / Double(safeTotal), 1.0)
-        }()
-
-        VStack(alignment: .leading, spacing: 4) {
-            HStack(alignment: .lastTextBaseline) {
-                VStack(alignment: .leading, spacing: 1) {
-                    Text(title)
-                        .font(.system(size: 13, weight: .bold))
-                        .foregroundStyle(.black)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.7)
-                    Text(subtitle)
-                        .font(.system(size: 9))
-                        .foregroundStyle(.black.opacity(0.5))
-                        .tracking(1)
-                        .lineLimit(1)
-                }
+    private func progressRow(label: String, done: Int, total: Int) -> some View {
+        let safeTotal = max(total, 1)
+        let progress = min(Double(done) / Double(safeTotal), 1.0)
+        return VStack(spacing: 3) {
+            HStack(alignment: .firstTextBaseline) {
+                Text(label)
+                    .font(.system(size: 14, weight: .bold))
+                    .foregroundStyle(.black)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
                 Spacer(minLength: 8)
-                HStack(alignment: .lastTextBaseline, spacing: 3) {
-                    Text("\(number)")
+                HStack(alignment: .firstTextBaseline, spacing: 3) {
+                    Text("\(done)")
                         .font(.system(size: 22, weight: .black, design: .rounded))
                         .foregroundStyle(.black)
-                    Text(suffix)
+                    Text("/ \(total)")
                         .font(.system(size: 12, weight: .semibold, design: .rounded))
                         .foregroundStyle(.black.opacity(0.5))
                 }
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
             }
-
-            if showProgress {
-                ProgressView(value: progress)
-                    .progressViewStyle(.linear)
-                    .tint(.black)
-            }
+            ProgressView(value: progress)
+                .progressViewStyle(.linear)
+                .tint(.black)
+                .scaleEffect(x: 1, y: 0.6, anchor: .center)
         }
-        .padding(.vertical, 8)
-        .padding(.horizontal, 14)
-        .background(rowBackground(corner: 14))
+        .padding(.vertical, 6)
+        .padding(.horizontal, 12)
+        .background(rowBackground)
     }
 
-    private func rowBackground(corner: CGFloat) -> some View {
-        RoundedRectangle(cornerRadius: corner)
+    private var rowBackground: some View {
+        RoundedRectangle(cornerRadius: 12)
             .fill(.white.opacity(0.7))
             .overlay(
-                RoundedRectangle(cornerRadius: corner)
+                RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.black.opacity(0.12), lineWidth: 1)
             )
     }
