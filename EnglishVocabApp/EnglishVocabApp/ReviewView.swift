@@ -483,6 +483,6 @@ struct ReviewView: View {
 }
 
 #Preview {
-    ReviewView(activeTab: .constant(.card))
+    ReviewView(activeTab: .constant(.list))
         .environmentObject(WordStore())
 }

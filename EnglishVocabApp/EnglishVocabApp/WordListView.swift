@@ -17,6 +17,14 @@ struct WordListView: View {
         }
     }
 
+    enum Section: String, CaseIterable, Identifiable {
+        case list = "一覧"
+        case card = "カード"
+        case shadowing = "シャドウイング"
+        var id: String { rawValue }
+    }
+
+    @State private var section: Section = .list
     @State private var searchText = ""
     @State private var filter: ListFilter = .all
     @State private var expandedIds: Set<UUID> = []
@@ -64,36 +72,33 @@ struct WordListView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            statsHeader
-            searchBox
-            filterPills
-            countLabel
-
-            ScrollView {
-                LazyVStack(spacing: 10) {
-                    ForEach(filteredWords) { w in
-                        listCard(for: w)
-                    }
-                }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
+            sectionPicker
+            switch section {
+            case .list:
+                listSection
+            case .card:
+                ReviewView(activeTab: $activeTab)
+            case .shadowing:
+                ShadowingListView()
             }
         }
         .background(Color(.systemGroupedBackground).ignoresSafeArea())
         .overlay(alignment: .bottomTrailing) {
-            Button {
-                showAddSheet = true
-            } label: {
-                Image(systemName: "plus")
-                    .font(.title2.bold())
-                    .foregroundStyle(.white)
-                    .frame(width: 56, height: 56)
-                    .background(Color.indigo)
-                    .clipShape(Circle())
-                    .shadow(color: .black.opacity(0.2), radius: 6, y: 3)
+            if section == .list {
+                Button {
+                    showAddSheet = true
+                } label: {
+                    Image(systemName: "plus")
+                        .font(.title2.bold())
+                        .foregroundStyle(.white)
+                        .frame(width: 56, height: 56)
+                        .background(Color.indigo)
+                        .clipShape(Circle())
+                        .shadow(color: .black.opacity(0.2), radius: 6, y: 3)
+                }
+                .padding(.trailing, 20)
+                .padding(.bottom, 20)
             }
-            .padding(.trailing, 20)
-            .padding(.bottom, 20)
         }
         .sheet(isPresented: $showAddSheet) {
             AddWordView()
@@ -116,6 +121,37 @@ struct WordListView: View {
             // Switching filter (e.g. すべて → 復習リスト) collapses any
             // currently-open cards so the new filtered list starts fresh.
             expandedIds.removeAll()
+        }
+    }
+
+    // MARK: - Section picker + list body
+
+    private var sectionPicker: some View {
+        Picker("表示", selection: $section) {
+            ForEach(Section.allCases) { s in
+                Text(s.rawValue).tag(s)
+            }
+        }
+        .pickerStyle(.segmented)
+        .padding(.horizontal, 16)
+        .padding(.top, 8)
+    }
+
+    private var listSection: some View {
+        VStack(spacing: 0) {
+            statsHeader
+            searchBox
+            filterPills
+            countLabel
+            ScrollView {
+                LazyVStack(spacing: 10) {
+                    ForEach(filteredWords) { w in
+                        listCard(for: w)
+                    }
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+            }
         }
     }
 

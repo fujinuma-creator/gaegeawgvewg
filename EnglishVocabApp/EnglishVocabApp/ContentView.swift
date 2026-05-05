@@ -2,19 +2,13 @@ import SwiftUI
 
 struct ContentView: View {
     enum Tab: Hashable {
-        case card, quiz, list
+        case quiz, list
     }
 
-    @State private var selectedTab: Tab = .card
+    @State private var selectedTab: Tab = .list
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            ReviewView(activeTab: $selectedTab)
-                .tabItem {
-                    Label("カード", systemImage: "rectangle.on.rectangle")
-                }
-                .tag(Tab.card)
-
             QuizView(activeTab: $selectedTab)
                 .tabItem {
                     Label("クイズ", systemImage: "questionmark.circle")
