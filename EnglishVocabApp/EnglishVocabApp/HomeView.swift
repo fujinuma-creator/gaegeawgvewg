@@ -8,16 +8,16 @@ struct HomeView: View {
             GeometricBackground()
                 .ignoresSafeArea()
 
-            VStack(spacing: 6) {
+            VStack(spacing: 8) {
+                Spacer(minLength: 0)
                 titleRow
                 statRow(label: "全単語数", number: store.totalCount, suffix: "語")
                 progressRow(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
                 progressRow(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
                 Spacer(minLength: 0)
             }
-            .padding(.horizontal, 12)
-            .padding(.top, 6)
-            .padding(.bottom, 6)
+            .padding(.horizontal, 16)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .dynamicTypeSize(.medium)
     }
