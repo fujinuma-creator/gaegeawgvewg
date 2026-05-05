@@ -434,6 +434,8 @@ struct QuizView: View {
     @ViewBuilder
     private func translationCard(_ word: Word) -> some View {
         let liveWord = store.words.first(where: { $0.id == word.id }) ?? word
+        let queue = translationQueue
+        let position = currentQueuePosition(in: queue)
         ScrollView {
             VStack(spacing: 16) {
                 VStack(spacing: 10) {
@@ -453,7 +455,13 @@ struct QuizView: View {
                         }
                         .buttonStyle(.plain)
                         Spacer()
+                        Text("\(position + 1) / \(max(queue.count, 1))")
+                            .font(.caption.bold())
+                            .foregroundStyle(.secondary)
                     }
+
+                    reviewGauge(for: liveWord)
+                        .padding(.vertical, 2)
 
                     Button {
                         openDetail(for: word)
@@ -480,11 +488,39 @@ struct QuizView: View {
                                 .padding(.horizontal)
                         }
                     }
+
+                    HStack {
+                        HStack(spacing: 4) {
+                            Image(systemName: "chevron.left")
+                            Text("左で前")
+                        }
+                        Spacer()
+                        HStack(spacing: 4) {
+                            Text("右で次")
+                            Image(systemName: "chevron.right")
+                        }
+                    }
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .padding(.top, 4)
                 }
                 .padding(.vertical, 18)
+                .padding(.horizontal, 14)
                 .frame(maxWidth: .infinity)
                 .background(RoundedRectangle(cornerRadius: 14).fill(Color(.secondarySystemGroupedBackground)))
                 .padding(.horizontal, 16)
+                .contentShape(Rectangle())
+                .gesture(
+                    DragGesture(minimumDistance: 30)
+                        .onEnded { value in
+                            let threshold: CGFloat = 60
+                            if value.translation.width > threshold {
+                                nextProblem()
+                            } else if value.translation.width < -threshold {
+                                prevProblem()
+                            }
+                        }
+                )
 
                 VStack(alignment: .leading, spacing: 8) {
                     Text("あなたの英訳（自由入力）").font(.caption).foregroundStyle(.secondary)
@@ -519,26 +555,106 @@ struct QuizView: View {
                         .padding(.horizontal, 16)
                 }
 
-                Button {
-                    pickFreshTranslationProblem()
-                } label: {
-                    HStack {
-                        Spacer()
-                        Image(systemName: "arrow.triangle.2.circlepath")
-                        Text("問題を変更").bold()
-                        Spacer()
-                    }
-                    .padding(.vertical, 12)
-                    .foregroundStyle(.indigo)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.indigo, lineWidth: 1)
-                    )
-                }
-                .padding(.horizontal, 16)
-
                 Spacer(minLength: 12)
             }
+        }
+    }
+
+    // MARK: - Translation queue / navigation
+
+    /// Stable list of (word, exampleIdx) pairs from every eligible word's
+    /// examples. Order rotates daily for variety, but stays the same within
+    /// a day so swipe-navigation feels predictable.
+    private var translationQueue: [(word: Word, exampleIdx: Int)] {
+        eligibleWords
+            .dailyShuffled()
+            .flatMap { word in
+                (0..<word.examples.count).map { (word, $0) }
+            }
+    }
+
+    private func currentQueuePosition(in queue: [(word: Word, exampleIdx: Int)]) -> Int {
+        guard let w = currentWord, let ex = currentExample,
+              let exIdx = w.examples.firstIndex(where: { $0.id == ex.id }) else { return 0 }
+        return queue.firstIndex { $0.word.id == w.id && $0.exampleIdx == exIdx } ?? 0
+    }
+
+    private func nextProblem() {
+        let queue = translationQueue
+        guard !queue.isEmpty else { return }
+        let pos = (currentQueuePosition(in: queue) + 1) % queue.count
+        moveToProblem(queue[pos])
+    }
+
+    private func prevProblem() {
+        let queue = translationQueue
+        guard !queue.isEmpty else { return }
+        let pos = (currentQueuePosition(in: queue) - 1 + queue.count) % queue.count
+        moveToProblem(queue[pos])
+    }
+
+    private func moveToProblem(_ pair: (word: Word, exampleIdx: Int)) {
+        guard pair.exampleIdx < pair.word.examples.count else { return }
+        currentWord = pair.word
+        currentExample = pair.word.examples[pair.exampleIdx]
+        savedTranslationWordId = pair.word.id.uuidString
+        savedTranslationExampleIdx = pair.exampleIdx
+        showAnswer = false
+        userTranslation = ""
+    }
+
+    // MARK: - Review gauge
+
+    @ViewBuilder
+    private func reviewGauge(for word: Word) -> some View {
+        let count = word.reviewCount
+        let stage: Int
+        let label: String
+        let color: Color
+        switch count {
+        case 0:    stage = 0; label = "未学習";    color = .gray
+        case 1:    stage = 1; label = "1回目";    color = .red
+        case 2:    stage = 2; label = "復習中";    color = .yellow
+        case 3:    stage = 3; label = "3回目";    color = .cyan
+        default:   stage = 4; label = "復習完了";  color = .purple
+        }
+        let isRainbow = stage == 4
+
+        HStack(spacing: 8) {
+            HStack(spacing: 3) {
+                ForEach(0..<4) { idx in
+                    gaugeSegment(filled: idx < stage, isRainbow: isRainbow, solidColor: color)
+                }
+            }
+            Text(label)
+                .font(.caption2.bold())
+                .foregroundStyle(isRainbow ? Color.purple : color)
+            Spacer()
+            Text("復習 \(count) 回")
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
+        }
+    }
+
+    @ViewBuilder
+    private func gaugeSegment(filled: Bool, isRainbow: Bool, solidColor: Color) -> some View {
+        let height: CGFloat = 6
+        let width: CGFloat = 22
+        if filled && isRainbow {
+            Capsule()
+                .fill(LinearGradient(
+                    colors: [.red, .orange, .yellow, .green, .blue, .purple],
+                    startPoint: .leading, endPoint: .trailing
+                ))
+                .frame(width: width, height: height)
+        } else if filled {
+            Capsule()
+                .fill(solidColor)
+                .frame(width: width, height: height)
+        } else {
+            Capsule()
+                .fill(Color.gray.opacity(0.2))
+                .frame(width: width, height: height)
         }
     }
 
