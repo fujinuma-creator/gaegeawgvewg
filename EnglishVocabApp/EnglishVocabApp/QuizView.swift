@@ -180,7 +180,7 @@ struct QuizView: View {
                         .padding(.vertical, 6)
                         .background(
                             Capsule().fill(
-                                liveWord.isInReviewList ? Color.indigo.opacity(0.12) : Color(.tertiarySystemGroupedBackground)
+                                liveWord.isInReviewList ? Color.indigo.opacity(0.12) : Color.white.opacity(0.7)
                             )
                         )
                         .contentShape(Capsule())
@@ -233,7 +233,7 @@ struct QuizView: View {
             .frame(maxWidth: .infinity)
             .background(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color(.secondarySystemGroupedBackground))
+                    .fill(Color.white.opacity(0.82))
             )
             .padding(.horizontal, 16)
 
@@ -268,10 +268,10 @@ struct QuizView: View {
         let isCorrect = choice.id == correctChoiceId
         let isSelected = selectedId == choice.id
         let bgColor: Color = {
-            guard answered else { return Color(.secondarySystemGroupedBackground) }
+            guard answered else { return Color.white.opacity(0.82) }
             if isCorrect { return Color.green.opacity(0.2) }
             if isSelected && !isCorrect { return Color.red.opacity(0.2) }
-            return Color(.secondarySystemGroupedBackground)
+            return Color.white.opacity(0.82)
         }()
         let strokeColor: Color = {
             guard answered else { return Color(.separator) }
@@ -359,7 +359,7 @@ struct QuizView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color(.tertiarySystemGroupedBackground))
+                .fill(Color.white.opacity(0.7))
         )
     }
 
@@ -455,7 +455,7 @@ struct QuizView: View {
                             }
                             .foregroundStyle(liveWord.isInReviewList ? .indigo : .secondary)
                             .padding(.horizontal, 12).padding(.vertical, 6)
-                            .background(Capsule().fill(liveWord.isInReviewList ? Color.indigo.opacity(0.12) : Color(.tertiarySystemGroupedBackground)))
+                            .background(Capsule().fill(liveWord.isInReviewList ? Color.indigo.opacity(0.12) : Color.white.opacity(0.7)))
                         }
                         .buttonStyle(.plain)
                         Spacer()
@@ -497,7 +497,7 @@ struct QuizView: View {
                 .padding(.vertical, 18)
                 .padding(.horizontal, 14)
                 .frame(maxWidth: .infinity)
-                .background(RoundedRectangle(cornerRadius: 14).fill(Color(.secondarySystemGroupedBackground)))
+                .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
                 .padding(.horizontal, 16)
                 .contentShape(Rectangle())
                 .gesture(
@@ -517,7 +517,7 @@ struct QuizView: View {
                     TextEditor(text: $userTranslation)
                         .frame(minHeight: 90)
                         .padding(8)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color(.secondarySystemGroupedBackground)))
+                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.white.opacity(0.82)))
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.separator), lineWidth: 0.5))
                         .textInputAutocapitalization(.sentences)
                         .autocorrectionDisabled(false)
@@ -971,7 +971,7 @@ struct WordDetailSheet: View {
         }
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 12).fill(Color(.tertiarySystemGroupedBackground)))
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.7)))
     }
 }
 

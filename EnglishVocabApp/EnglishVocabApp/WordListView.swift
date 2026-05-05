@@ -193,7 +193,7 @@ struct WordListView: View {
         }
         .padding(.horizontal, 14)
         .padding(.vertical, 10)
-        .background(Color(.secondarySystemGroupedBackground))
+        .background(Color.white.opacity(0.82))
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .padding(.horizontal, 16)
         .padding(.top, 12)
@@ -218,7 +218,7 @@ struct WordListView: View {
                         .font(.subheadline.weight(isSelected ? .semibold : .regular))
                         .padding(.horizontal, 16)
                         .padding(.vertical, 8)
-                        .background(isSelected ? Color.black : Color(.secondarySystemGroupedBackground))
+                        .background(isSelected ? Color.black : Color.white.opacity(0.82))
                         .foregroundStyle(isSelected ? .white : .primary)
                         .clipShape(Capsule())
                     }
@@ -307,7 +307,7 @@ struct WordListView: View {
         }
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color(.secondarySystemGroupedBackground))
+                .fill(Color.white.opacity(0.82))
         )
         .contextMenu {
             Button(role: .destructive) {

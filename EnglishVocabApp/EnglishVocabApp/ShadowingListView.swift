@@ -122,7 +122,7 @@ struct ShadowingListView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .fill(Color(.secondarySystemGroupedBackground))
+                .fill(Color.white.opacity(0.82))
         )
         .contentShape(Rectangle())
         .onTapGesture {

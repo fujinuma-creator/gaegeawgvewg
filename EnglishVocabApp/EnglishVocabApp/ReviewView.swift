@@ -254,7 +254,7 @@ struct ReviewView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 18)
-                    .fill(Color(.secondarySystemGroupedBackground))
+                    .fill(Color.white.opacity(0.82))
                     .shadow(color: .black.opacity(0.06), radius: 8, x: 0, y: 2)
             )
             .padding(.horizontal, 12)
@@ -306,7 +306,7 @@ struct ReviewView: View {
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
-            RoundedRectangle(cornerRadius: 12).fill(Color(.tertiarySystemGroupedBackground))
+            RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.7))
         )
     }
 
