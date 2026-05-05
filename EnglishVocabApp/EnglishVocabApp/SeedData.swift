@@ -7,6 +7,9 @@ enum SeedData {
 
     static var additionalWords: [Word] {
         return phrasalVerbs + idioms + adjectives + verbs + nouns
+            + dailyAndEmotion + workAndBusiness + travel
+            + moneyAndShopping + healthAndBody + tech
+            + timeAndFrequency + communication + dailyCore
     }
 
     private static func make(
@@ -697,6 +700,769 @@ enum SeedData {
                  examples: [
                     ("Patience is a virtue.", "忍耐は美徳。"),
                     ("His main virtue.", "彼の主な長所。")
+                 ])
+        ]
+    }
+
+    // MARK: - 日常生活・感情 (15)
+
+    private static var dailyAndEmotion: [Word] {
+        [
+            make("miss out", "lose a chance to do or get something",
+                 "チャンスを逃す・参加しそびれる",
+                 useCases: ["楽しい予定を逃したとき", "セールやイベントを逃したとき"],
+                 examples: [
+                    ("Don't miss out on this deal.", "このセール逃すなよ。"),
+                    ("I missed out on the party.", "パーティー行きそびれた。")
+                 ]),
+            make("keep in mind", "remember to consider something",
+                 "心に留めておく・覚えておく",
+                 useCases: ["注意点を念押しするとき", "後で思い出してほしいことを伝えるとき"],
+                 examples: [
+                    ("Keep in mind we have a meeting at 3.", "3時に会議あるって覚えといて。"),
+                    ("Just keep that in mind.", "それだけ覚えといて。")
+                 ]),
+            make("on purpose", "intentionally; not by accident",
+                 "わざと・意図的に",
+                 useCases: ["故意かどうか確認するとき", "意図的な行動を表すとき"],
+                 examples: [
+                    ("Did you do that on purpose?", "わざとやった？"),
+                    ("I broke it on purpose.", "わざと壊したんだ。")
+                 ]),
+            make("get used to", "become familiar with something",
+                 "慣れる",
+                 useCases: ["新しい環境に慣れる話をするとき", "時間が経って慣れたと言うとき"],
+                 examples: [
+                    ("I'm getting used to the new job.", "新しい仕事に慣れてきた。"),
+                    ("You'll get used to it.", "そのうち慣れるよ。")
+                 ]),
+            make("feel free to", "you're welcome to do something",
+                 "気軽に〜してね",
+                 useCases: ["気軽な行動を促すとき", "丁寧に許可を出すとき"],
+                 examples: [
+                    ("Feel free to ask me anything.", "何でも気軽に聞いてね。"),
+                    ("Feel free to grab a snack.", "好きにお菓子つまんで。")
+                 ]),
+            make("come in handy", "be useful when needed",
+                 "役に立つ・重宝する",
+                 useCases: ["後で使えると伝えるとき", "もしもの時に便利だと言うとき"],
+                 examples: [
+                    ("This will come in handy.", "これ後で役立つよ。"),
+                    ("That tip came in handy.", "そのコツ役に立った。")
+                 ]),
+            make("on second thought", "after reconsidering",
+                 "やっぱり・考え直して",
+                 useCases: ["決断を変えるとき", "言い直すとき"],
+                 examples: [
+                    ("On second thought, let's stay home.", "やっぱり家にいよう。"),
+                    ("On second thought, I'll skip dessert.", "やっぱりデザートはやめとく。")
+                 ]),
+            make("in case", "as a precaution; if something happens",
+                 "念のため・万一に備えて",
+                 useCases: ["保険として準備するとき", "もしもに備えると言うとき"],
+                 examples: [
+                    ("Bring a jacket in case it's cold.", "寒い時用にジャケット持ってきて。"),
+                    ("Just in case.", "念のためね。")
+                 ]),
+            make("by mistake", "unintentionally; accidentally",
+                 "間違って・うっかり",
+                 useCases: ["うっかりミスを伝えるとき", "故意でないと釈明するとき"],
+                 examples: [
+                    ("I texted her by mistake.", "間違えて彼女にメッセージ送った。"),
+                    ("I deleted it by mistake.", "間違えて消しちゃった。")
+                 ]),
+            make("in advance", "ahead of time; beforehand",
+                 "事前に・前もって",
+                 useCases: ["事前準備の話をするとき", "予約や予告について話すとき"],
+                 examples: [
+                    ("Let me know in advance.", "前もって教えて。"),
+                    ("Thanks in advance.", "先にありがとう。")
+                 ]),
+            make("out of the blue", "unexpectedly; suddenly",
+                 "突然・急に",
+                 useCases: ["予期せぬ出来事を伝えるとき", "予告なしの連絡に驚いたとき"],
+                 examples: [
+                    ("She called me out of the blue.", "急に彼女から電話来たんだ。"),
+                    ("It happened out of the blue.", "急に起きたんだ。")
+                 ]),
+            make("sooner or later", "at some point; eventually",
+                 "遅かれ早かれ・いずれ",
+                 useCases: ["いずれ起きると伝えるとき", "避けられない結果を予測するとき"],
+                 examples: [
+                    ("You'll find out sooner or later.", "遅かれ早かれわかるよ。"),
+                    ("Sooner or later, he'll quit.", "そのうち彼辞めるよ。")
+                 ]),
+            make("believe it or not", "you may find this surprising",
+                 "信じられないかもしれないけど",
+                 useCases: ["驚きの話を切り出すとき", "意外な事実を共有するとき"],
+                 examples: [
+                    ("Believe it or not, I won.", "信じられないけど勝ったんだ。"),
+                    ("Believe it or not, he's 50.", "信じられる？彼50歳なんだ。")
+                 ]),
+            make("speaking of", "since you mentioned that",
+                 "そういえば・〜と言えば",
+                 useCases: ["話題を関連事項に繋げるとき", "ふと思い出して話を振るとき"],
+                 examples: [
+                    ("Speaking of food, I'm hungry.", "食べ物といえばお腹減った。"),
+                    ("Speaking of work, did you hear?", "そういえば仕事の話聞いた？")
+                 ]),
+            make("as usual", "in the same way as normal",
+                 "いつものように・相変わらず",
+                 useCases: ["普段通りであることを表すとき", "繰り返し起きる事象を述べるとき"],
+                 examples: [
+                    ("She's late, as usual.", "彼女、いつも通り遅刻。"),
+                    ("Same place as usual?", "いつものとこで？")
+                 ])
+        ]
+    }
+
+    // MARK: - 仕事・ビジネス (15)
+
+    private static var workAndBusiness: [Word] {
+        [
+            make("deadline", "the latest time something must be done",
+                 "締切・期限",
+                 useCases: ["締切を確認するとき", "プロジェクトの納期について話すとき"],
+                 examples: [
+                    ("What's the deadline?", "締切いつ？"),
+                    ("I missed the deadline.", "締切過ぎちゃった。")
+                 ]),
+            make("workload", "the amount of work to do",
+                 "仕事量・業務量",
+                 useCases: ["業務の多さを伝えるとき", "誰かに負担を聞くとき"],
+                 examples: [
+                    ("My workload is crazy this week.", "今週仕事量ヤバい。"),
+                    ("Heavy workload again.", "また仕事量多い。")
+                 ]),
+            make("overtime", "work beyond regular hours",
+                 "残業・時間外労働",
+                 useCases: ["残業について話すとき", "勤務時間の話をするとき"],
+                 examples: [
+                    ("I'm working overtime tonight.", "今夜残業だ。"),
+                    ("Too much overtime lately.", "最近残業多すぎ。")
+                 ]),
+            make("colleague", "a person you work with",
+                 "同僚",
+                 useCases: ["職場の人を紹介するとき", "同じ会社のメンバーを指すとき"],
+                 examples: [
+                    ("She's my colleague.", "彼女、同僚なんだ。"),
+                    ("I had lunch with a colleague.", "同僚とランチした。")
+                 ]),
+            make("feedback", "comments on something you've done",
+                 "フィードバック・意見",
+                 useCases: ["意見を求めるとき", "改善点を共有するとき"],
+                 examples: [
+                    ("Can I get your feedback?", "意見もらえる？"),
+                    ("Thanks for the feedback.", "フィードバックありがとう。")
+                 ]),
+            make("in charge of", "responsible for something",
+                 "〜の担当・責任者",
+                 useCases: ["責任者を確認するとき", "業務分担を伝えるとき"],
+                 examples: [
+                    ("Who's in charge of this project?", "この案件誰が担当？"),
+                    ("I'm in charge of marketing.", "マーケティング担当してます。")
+                 ]),
+            make("due to", "because of",
+                 "〜のため・〜が原因で",
+                 useCases: ["原因を説明するとき", "予定変更の理由を述べるとき"],
+                 examples: [
+                    ("Delayed due to traffic.", "渋滞で遅れた。"),
+                    ("Due to weather, we cancelled.", "天気のせいでキャンセルした。")
+                 ]),
+            make("approve", "officially agree to something",
+                 "承認する・OKを出す",
+                 useCases: ["決済や許可を出すとき", "上司の承認待ちの話をするとき"],
+                 examples: [
+                    ("My boss approved it.", "上司がOK出した。"),
+                    ("Has it been approved yet?", "もう承認された？")
+                 ]),
+            make("decline", "politely refuse",
+                 "断る・辞退する",
+                 useCases: ["招待や提案を断るとき", "丁寧に拒否するとき"],
+                 examples: [
+                    ("I had to decline the offer.", "オファー断るしかなかった。"),
+                    ("She declined politely.", "彼女は丁寧に断った。")
+                 ]),
+            make("client", "a customer or person you do work for",
+                 "クライアント・顧客",
+                 useCases: ["取引先について話すとき", "顧客対応の話題のとき"],
+                 examples: [
+                    ("The client wants changes.", "クライアントが変更を希望してる。"),
+                    ("Big client meeting today.", "今日大事なクライアントとの会議。")
+                 ]),
+            make("meeting", "a planned discussion with people",
+                 "会議・打ち合わせ",
+                 useCases: ["打ち合わせの予定を伝えるとき", "ミーティング全般について話すとき"],
+                 examples: [
+                    ("I have a meeting at 2.", "2時に会議ある。"),
+                    ("That meeting was useless.", "あの会議無駄だった。")
+                 ]),
+            make("presentation", "a talk that explains something",
+                 "プレゼン・発表",
+                 useCases: ["発表の準備や本番について話すとき", "学校・仕事の場面で"],
+                 examples: [
+                    ("I'm nervous about the presentation.", "プレゼン緊張する。"),
+                    ("Great presentation!", "プレゼンよかった！")
+                 ]),
+            make("brainstorm", "throw out ideas together",
+                 "アイデアを出し合う・ブレストする",
+                 useCases: ["新企画の発想会で", "ブレストの場面を表現するとき"],
+                 examples: [
+                    ("Let's brainstorm some ideas.", "アイデア出し合おう。"),
+                    ("We brainstormed for an hour.", "1時間ブレストした。")
+                 ]),
+            make("on track", "going as planned",
+                 "順調に・予定通りに",
+                 useCases: ["プロジェクト進捗を伝えるとき", "計画通りと言うとき"],
+                 examples: [
+                    ("We're on track to finish.", "完了に向けて順調。"),
+                    ("Everything's on track.", "全部順調。")
+                 ]),
+            make("behind schedule", "later than planned",
+                 "予定より遅れている",
+                 useCases: ["遅延を伝えるとき", "プロジェクトが遅れていると報告するとき"],
+                 examples: [
+                    ("We're behind schedule.", "予定より遅れてる。"),
+                    ("The project is behind schedule.", "プロジェクト遅れてる。")
+                 ])
+        ]
+    }
+
+    // MARK: - 旅行・移動 (15)
+
+    private static var travel: [Word] {
+        [
+            make("book", "reserve a place or seat in advance",
+                 "予約する",
+                 useCases: ["ホテルや航空券を予約するとき", "予約済みと伝えるとき"],
+                 examples: [
+                    ("I booked a flight.", "フライト予約した。"),
+                    ("Did you book the hotel?", "ホテル予約した？")
+                 ]),
+            make("cancel", "call off a plan or reservation",
+                 "キャンセルする",
+                 useCases: ["予定や予約を取り消すとき"],
+                 examples: [
+                    ("I had to cancel the trip.", "旅行キャンセルしないといけなかった。"),
+                    ("They cancelled the flight.", "フライトがキャンセルになった。")
+                 ]),
+            make("departure", "leaving from a place",
+                 "出発",
+                 useCases: ["飛行機・電車の出発時刻を確認するとき"],
+                 examples: [
+                    ("What's your departure time?", "出発何時？"),
+                    ("Departure is at 9.", "出発は9時だ。")
+                 ]),
+            make("arrival", "reaching a place",
+                 "到着",
+                 useCases: ["到着予定時刻を確認するとき"],
+                 examples: [
+                    ("Arrival's around 5.", "到着は5時くらい。"),
+                    ("Check the arrival board.", "到着案内板見て。")
+                 ]),
+            make("luggage", "bags you take when traveling",
+                 "荷物・手荷物",
+                 useCases: ["旅行の荷物について話すとき", "空港でのやり取り"],
+                 examples: [
+                    ("Don't forget your luggage.", "荷物忘れないで。"),
+                    ("My luggage didn't arrive.", "荷物届かなかった。")
+                 ]),
+            make("head to", "go in the direction of",
+                 "〜へ向かう",
+                 useCases: ["これから行く場所を伝えるとき"],
+                 examples: [
+                    ("I'm heading to the airport.", "これから空港に向かう。"),
+                    ("Let's head to the cafe.", "カフェに行こう。")
+                 ]),
+            make("pull over", "stop a car at the side of the road",
+                 "路肩に車を寄せる",
+                 useCases: ["運転中に止まる必要があるとき", "警察に止められた話をするとき"],
+                 examples: [
+                    ("Pull over up here.", "ここで止めて。"),
+                    ("The cop pulled me over.", "警察に止められた。")
+                 ]),
+            make("detour", "an alternative route around something",
+                 "迂回路・回り道",
+                 useCases: ["道路工事や事故で迂回するとき"],
+                 examples: [
+                    ("There's a detour ahead.", "この先迂回路あるよ。"),
+                    ("We had to take a detour.", "迂回するしかなかった。")
+                 ]),
+            make("shortcut", "a quicker route",
+                 "近道・ショートカット",
+                 useCases: ["最短ルートを提案するとき"],
+                 examples: [
+                    ("I know a shortcut.", "近道知ってる。"),
+                    ("Take the shortcut.", "近道使って。")
+                 ]),
+            make("in the middle of", "currently doing something",
+                 "〜の最中・〜している途中",
+                 useCases: ["何かをやっている途中だと伝えるとき"],
+                 examples: [
+                    ("I'm in the middle of something.", "ちょっと今手が離せない。"),
+                    ("In the middle of dinner.", "今ご飯中。")
+                 ]),
+            make("all set", "ready; everything's done",
+                 "準備万端・もう大丈夫",
+                 useCases: ["準備完了を確認するとき", "支払い完了などを伝えるとき"],
+                 examples: [
+                    ("Are you all set?", "準備できた？"),
+                    ("We're all set.", "準備OK。")
+                 ]),
+            make("check in", "register on arrival",
+                 "チェックインする",
+                 useCases: ["ホテルや空港でチェックインするとき", "出勤時の打刻"],
+                 examples: [
+                    ("Let's check in at the hotel.", "ホテルでチェックインしよう。"),
+                    ("I'll check in online.", "オンラインでチェックインする。")
+                 ]),
+            make("check out", "leave; or take a look at",
+                 "チェックアウトする・見てみる",
+                 useCases: ["ホテルを出るとき", "新しいものを見てみてと言うとき"],
+                 examples: [
+                    ("I'll check out at 11.", "11時にチェックアウトする。"),
+                    ("Check out this song.", "この曲聴いてみて。")
+                 ]),
+            make("on the way", "in the process of going somewhere",
+                 "向かっている途中・道中で",
+                 useCases: ["移動中であることを伝えるとき"],
+                 examples: [
+                    ("I'm on the way.", "今向かってる。"),
+                    ("On the way home now.", "今帰り道。")
+                 ]),
+            make("in person", "face to face, not online",
+                 "直接・対面で",
+                 useCases: ["会って話したいとき", "オンラインではなく対面と区別するとき"],
+                 examples: [
+                    ("Let's talk in person.", "直接会って話そう。"),
+                    ("I want to meet in person.", "実際に会いたい。")
+                 ])
+        ]
+    }
+
+    // MARK: - お金・買い物 (10)
+
+    private static var moneyAndShopping: [Word] {
+        [
+            make("afford", "have enough money for something",
+                 "〜する余裕がある・買える",
+                 useCases: ["金銭的余裕を話すとき"],
+                 examples: [
+                    ("I can't afford it.", "余裕ないよ。"),
+                    ("Can you afford that?", "それ買える？")
+                 ]),
+            make("discount", "a reduction in price",
+                 "割引・値引き",
+                 useCases: ["値引きについて話すとき"],
+                 examples: [
+                    ("Any discount?", "割引ある？"),
+                    ("They gave me a discount.", "割引してくれた。")
+                 ]),
+            make("refund", "money returned to you",
+                 "返金",
+                 useCases: ["返品時の返金を求めるとき"],
+                 examples: [
+                    ("Can I get a refund?", "返金できる？"),
+                    ("I want a refund.", "返金してほしい。")
+                 ]),
+            make("split the bill", "divide the cost evenly",
+                 "割り勘する",
+                 useCases: ["友達と食事代を分けるとき"],
+                 examples: [
+                    ("Let's split the bill.", "割り勘しよう。"),
+                    ("Split the bill, OK?", "割り勘でいい？")
+                 ]),
+            make("on sale", "available at a reduced price",
+                 "セール中・特価で",
+                 useCases: ["セール商品を見つけたとき"],
+                 examples: [
+                    ("It's on sale!", "セール中だ！"),
+                    ("These shoes are on sale.", "この靴セール中。")
+                 ]),
+            make("receipt", "proof of purchase",
+                 "レシート・領収書",
+                 useCases: ["買い物のレシートをやり取りするとき"],
+                 examples: [
+                    ("Can I have the receipt?", "レシートもらえる？"),
+                    ("Save the receipt.", "レシート取っといて。")
+                 ]),
+            make("expense", "money spent",
+                 "経費・出費",
+                 useCases: ["費用について話すとき", "出費が大きいと嘆くとき"],
+                 examples: [
+                    ("That's a big expense.", "それ大きい出費だ。"),
+                    ("I'll claim it as an expense.", "経費で落とす。")
+                 ]),
+            make("service charge", "an extra fee for service",
+                 "サービス料",
+                 useCases: ["レストランの請求を確認するとき"],
+                 examples: [
+                    ("There's a service charge.", "サービス料込みだ。"),
+                    ("Service charge is 10%.", "サービス料は10%。")
+                 ]),
+            make("out of stock", "no longer available",
+                 "在庫切れ",
+                 useCases: ["商品が買えないとき"],
+                 examples: [
+                    ("It's out of stock.", "在庫切れだ。"),
+                    ("Sorry, it's out of stock.", "ごめん、在庫切れ。")
+                 ]),
+            make("warranty", "a guarantee on a product",
+                 "保証",
+                 useCases: ["保証期間について話すとき"],
+                 examples: [
+                    ("Is there a warranty?", "保証ある？"),
+                    ("It's still under warranty.", "まだ保証期間内だ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 健康・体 (10)
+
+    private static var healthAndBody: [Word] {
+        [
+            make("recover", "get well again",
+                 "回復する・治る",
+                 useCases: ["病気から治ったと伝えるとき", "怪我の回復について話すとき"],
+                 examples: [
+                    ("I'm recovering well.", "順調に回復してる。"),
+                    ("Hope you recover soon.", "早く治るといいね。")
+                 ]),
+            make("prescription", "doctor's note for medicine",
+                 "処方箋",
+                 useCases: ["薬を処方されたとき"],
+                 examples: [
+                    ("I need to fill my prescription.", "処方箋出さないと。"),
+                    ("Got a prescription from the doctor.", "医者から処方箋もらった。")
+                 ]),
+            make("symptom", "a sign of illness",
+                 "症状",
+                 useCases: ["体調不良を医者に説明するとき"],
+                 examples: [
+                    ("What are your symptoms?", "症状は？"),
+                    ("Cold-like symptoms.", "風邪っぽい症状。")
+                 ]),
+            make("appointment", "a scheduled meeting",
+                 "予約・アポ",
+                 useCases: ["医者や美容院のアポを取るとき"],
+                 examples: [
+                    ("I have an appointment at 2.", "2時にアポある。"),
+                    ("Book an appointment.", "予約取って。")
+                 ]),
+            make("sore", "painful, especially muscle pain",
+                 "痛い・筋肉痛で",
+                 useCases: ["体が痛いと伝えるとき"],
+                 examples: [
+                    ("My legs are sore.", "脚が痛い。"),
+                    ("I've got a sore throat.", "喉が痛い。")
+                 ]),
+            make("workout", "a session of exercise",
+                 "トレーニング・運動",
+                 useCases: ["運動について話すとき"],
+                 examples: [
+                    ("Good workout today.", "今日のトレ良かった。"),
+                    ("I'm done with my workout.", "トレ終わった。")
+                 ]),
+            make("stress out", "feel very stressed",
+                 "ストレスがたまる・イライラする",
+                 useCases: ["仕事や生活のストレスを話すとき"],
+                 examples: [
+                    ("Don't stress out.", "ストレスためないで。"),
+                    ("I'm super stressed out.", "めっちゃストレスたまってる。")
+                 ]),
+            make("diet", "what you eat; eating plan",
+                 "食事・ダイエット",
+                 useCases: ["食事制限の話をするとき"],
+                 examples: [
+                    ("I'm on a diet.", "ダイエット中。"),
+                    ("Bad for your diet.", "ダイエットに悪いよ。")
+                 ]),
+            make("fall asleep", "drift off to sleep",
+                 "寝落ちする・眠ってしまう",
+                 useCases: ["寝てしまった話をするとき"],
+                 examples: [
+                    ("I fell asleep on the couch.", "ソファで寝落ちした。"),
+                    ("Don't fall asleep!", "寝るな！")
+                 ]),
+            make("wake up", "stop sleeping",
+                 "起きる・目を覚ます",
+                 useCases: ["朝の習慣を話すとき"],
+                 examples: [
+                    ("I wake up at 6.", "6時に起きる。"),
+                    ("Wake up!", "起きろ！")
+                 ])
+        ]
+    }
+
+    // MARK: - テック・ネット (10)
+
+    private static var tech: [Word] {
+        [
+            make("download", "transfer a file to your device",
+                 "ダウンロードする",
+                 useCases: ["アプリやファイルを取得するとき"],
+                 examples: [
+                    ("Did you download the app?", "アプリダウンロードした？"),
+                    ("It's downloading now.", "今ダウンロード中。")
+                 ]),
+            make("upload", "send a file from your device",
+                 "アップロードする",
+                 useCases: ["ファイルやデータを送るとき"],
+                 examples: [
+                    ("I'll upload it later.", "あとでアップする。"),
+                    ("Upload finished.", "アップロード終わった。")
+                 ]),
+            make("log in", "sign into an account",
+                 "ログインする",
+                 useCases: ["アカウントにアクセスするとき"],
+                 examples: [
+                    ("I can't log in.", "ログインできない。"),
+                    ("Just log in here.", "ここでログインして。")
+                 ]),
+            make("sign up", "create a new account",
+                 "登録する・サインアップする",
+                 useCases: ["新規アカウント作成のとき"],
+                 examples: [
+                    ("Did you sign up?", "登録した？"),
+                    ("Sign up for free.", "無料登録できるよ。")
+                 ]),
+            make("update", "make something more current",
+                 "アップデート・更新する",
+                 useCases: ["ソフトの更新の話", "近況の最新情報を伝えるとき"],
+                 examples: [
+                    ("Update your app.", "アプリ更新して。"),
+                    ("Got an update?", "なんか進捗ある？")
+                 ]),
+            make("crash", "stop working unexpectedly",
+                 "クラッシュする・落ちる",
+                 useCases: ["アプリやPCが落ちたとき"],
+                 examples: [
+                    ("My app keeps crashing.", "アプリよく落ちる。"),
+                    ("The system crashed.", "システムが落ちた。")
+                 ]),
+            make("swipe", "drag your finger across the screen",
+                 "スワイプする",
+                 useCases: ["スマホの操作を伝えるとき"],
+                 examples: [
+                    ("Swipe right to like.", "右にスワイプでいいね。"),
+                    ("Just swipe up.", "上にスワイプして。")
+                 ]),
+            make("settings", "options to control the app/device",
+                 "設定",
+                 useCases: ["アプリやデバイスの設定を確認するとき"],
+                 examples: [
+                    ("Check your settings.", "設定見て。"),
+                    ("It's in the settings.", "設定の中にあるよ。")
+                 ]),
+            make("backup", "a copy of data for safety",
+                 "バックアップ",
+                 useCases: ["データを保存するとき"],
+                 examples: [
+                    ("Did you back up your phone?", "携帯バックアップ取った？"),
+                    ("I lost the backup.", "バックアップ消えた。")
+                 ]),
+            make("notification", "an alert from an app",
+                 "通知",
+                 useCases: ["通知設定や通知音について話すとき"],
+                 examples: [
+                    ("Turn off notifications.", "通知切って。"),
+                    ("I missed your notification.", "通知見落とした。")
+                 ])
+        ]
+    }
+
+    // MARK: - 時間・頻度 (10)
+
+    private static var timeAndFrequency: [Word] {
+        [
+            make("as soon as", "immediately when something happens",
+                 "〜したらすぐに",
+                 useCases: ["何かが終わり次第すぐにと伝えるとき"],
+                 examples: [
+                    ("Call me as soon as you arrive.", "着いたらすぐ電話して。"),
+                    ("I'll do it as soon as I can.", "できる限りすぐやる。")
+                 ]),
+            make("meanwhile", "at the same time",
+                 "その間に・一方で",
+                 useCases: ["並行して別のことが起きていると伝えるとき"],
+                 examples: [
+                    ("I cooked. Meanwhile, she set the table.", "料理してる間に彼女がテーブル準備した。"),
+                    ("Meanwhile, let's wait.", "とりあえず待とう。")
+                 ]),
+            make("these days", "currently; in the recent period",
+                 "最近・このごろ",
+                 useCases: ["近況を伝えるとき"],
+                 examples: [
+                    ("I've been busy these days.", "最近忙しい。"),
+                    ("It's hot these days.", "最近暑い。")
+                 ]),
+            make("the other day", "recently in the past",
+                 "先日・この前",
+                 useCases: ["過去のちょっと前の出来事を話すとき"],
+                 examples: [
+                    ("I saw him the other day.", "この前彼に会った。"),
+                    ("The other day, I went hiking.", "先日ハイキング行った。")
+                 ]),
+            make("in a row", "consecutively",
+                 "連続して・続けて",
+                 useCases: ["連続記録について話すとき"],
+                 examples: [
+                    ("Three days in a row.", "3日連続。"),
+                    ("I won 5 in a row.", "5回連続で勝った。")
+                 ]),
+            make("from now on", "starting at this moment",
+                 "今後は・これから先",
+                 useCases: ["習慣を変えると宣言するとき"],
+                 examples: [
+                    ("From now on, I'll be early.", "これからは早めに行く。"),
+                    ("From now on, no junk food.", "これからジャンクフード禁止。")
+                 ]),
+            make("a while ago", "some time in the past",
+                 "少し前に・しばらく前に",
+                 useCases: ["少し前の出来事を伝えるとき"],
+                 examples: [
+                    ("She left a while ago.", "彼女ちょっと前に出た。"),
+                    ("I texted you a while ago.", "少し前にメッセージ送ったよ。")
+                 ]),
+            make("any minute now", "very soon",
+                 "今にも・もうすぐ",
+                 useCases: ["何かが起きる直前に"],
+                 examples: [
+                    ("He should be here any minute now.", "彼すぐ来るはず。"),
+                    ("It'll start any minute now.", "今にも始まる。")
+                 ]),
+            make("every now and then", "occasionally",
+                 "時々・たまに",
+                 useCases: ["たまに起きることを話すとき"],
+                 examples: [
+                    ("I see her every now and then.", "彼女には時々会う。"),
+                    ("Every now and then I cook.", "たまに料理する。")
+                 ]),
+            make("way too", "excessively",
+                 "あまりにも〜すぎる",
+                 useCases: ["強調して文句や驚きを言うとき"],
+                 examples: [
+                    ("It's way too cold.", "寒すぎ。"),
+                    ("Way too expensive.", "高すぎ。")
+                 ])
+        ]
+    }
+
+    // MARK: - コミュニケーション・意見 (10)
+
+    private static var communication: [Word] {
+        [
+            make("agree with", "share the same opinion as",
+                 "〜に同意する・賛成する",
+                 useCases: ["相手の意見に賛成するとき"],
+                 examples: [
+                    ("I agree with you.", "君に賛成。"),
+                    ("She agrees with me.", "彼女も同意してる。")
+                 ]),
+            make("disagree", "have a different opinion",
+                 "反対する・同意しない",
+                 useCases: ["反対意見を述べるとき"],
+                 examples: [
+                    ("I disagree, honestly.", "正直反対だな。"),
+                    ("They disagreed on everything.", "彼ら全部で意見合わなかった。")
+                 ]),
+            make("convince", "make someone believe or agree",
+                 "説得する・納得させる",
+                 useCases: ["相手を説得する場面で"],
+                 examples: [
+                    ("I convinced her to come.", "彼女説得して連れてきた。"),
+                    ("Convince me.", "納得させて。")
+                 ]),
+            make("argue", "exchange opposing views; quarrel",
+                 "議論する・言い争う",
+                 useCases: ["口論や議論を表すとき"],
+                 examples: [
+                    ("They were arguing again.", "また言い合いしてた。"),
+                    ("Don't argue with me.", "言い返さないで。")
+                 ]),
+            make("complain", "express dissatisfaction",
+                 "文句を言う・不満を述べる",
+                 useCases: ["不満を述べるとき"],
+                 examples: [
+                    ("Stop complaining.", "文句言うのやめて。"),
+                    ("She complained about the food.", "彼女料理に文句言ってた。")
+                 ]),
+            make("explain", "make something clear",
+                 "説明する",
+                 useCases: ["何かを分かりやすく伝えるとき"],
+                 examples: [
+                    ("Can you explain it?", "説明してくれる？"),
+                    ("Let me explain.", "説明させて。")
+                 ]),
+            make("mention", "refer to something briefly",
+                 "ちょっと触れる・言及する",
+                 useCases: ["話題にちらっと触れるとき"],
+                 examples: [
+                    ("Did she mention it?", "彼女それ言ってた？"),
+                    ("Just mentioned it briefly.", "ちらっと言っただけ。")
+                 ]),
+            make("reply", "respond to a message",
+                 "返信する・返事する",
+                 useCases: ["メッセージや問い合わせに返事するとき"],
+                 examples: [
+                    ("I'll reply later.", "あとで返信する。"),
+                    ("She didn't reply.", "彼女返事くれなかった。")
+                 ]),
+            make("swear", "promise strongly; or curse",
+                 "誓う・罵り言葉を使う",
+                 useCases: ["強く約束するとき", "口の悪さを注意する場面"],
+                 examples: [
+                    ("I swear I didn't do it.", "やってないって誓う。"),
+                    ("Don't swear.", "口悪くしないで。")
+                 ]),
+            make("whisper", "speak very quietly",
+                 "ささやく・小声で話す",
+                 useCases: ["小声で話すとき"],
+                 examples: [
+                    ("She whispered something.", "彼女何かささやいた。"),
+                    ("Why are you whispering?", "なんでひそひそ話してるの？")
+                 ])
+        ]
+    }
+
+    // MARK: - 日常動詞・名詞 (5)
+
+    private static var dailyCore: [Word] {
+        [
+            make("borrow", "take with permission to return later",
+                 "借りる",
+                 useCases: ["人から物を借りるとき"],
+                 examples: [
+                    ("Can I borrow your pen?", "ペン借りていい？"),
+                    ("I borrowed his book.", "彼の本借りた。")
+                 ]),
+            make("lend", "give with the expectation of return",
+                 "貸す",
+                 useCases: ["人に物を貸すとき"],
+                 examples: [
+                    ("I'll lend it to you.", "貸してあげるよ。"),
+                    ("Can you lend me $5?", "5ドル貸してくれる？")
+                 ]),
+            make("return", "give back; come back",
+                 "返す・返却する・戻る",
+                 useCases: ["借りた物を戻すとき", "店に返品するとき"],
+                 examples: [
+                    ("I'll return it tomorrow.", "明日返す。"),
+                    ("Returned the book.", "本返した。")
+                 ]),
+            make("share", "use or have something jointly",
+                 "共有する・分け合う",
+                 useCases: ["物や情報をシェアするとき"],
+                 examples: [
+                    ("Let's share the pizza.", "ピザシェアしよう。"),
+                    ("Share the link.", "リンク共有して。")
+                 ]),
+            make("reach", "get in touch with; arrive at",
+                 "連絡を取る・到達する",
+                 useCases: ["連絡が取れるか確認するとき", "目的地に着く場面で"],
+                 examples: [
+                    ("I couldn't reach her.", "彼女に連絡取れなかった。"),
+                    ("We finally reached the top.", "ついに頂上に着いた。")
                  ])
         ]
     }
