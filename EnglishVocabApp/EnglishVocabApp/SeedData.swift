@@ -10,6 +10,8 @@ enum SeedData {
             + dailyAndEmotion + workAndBusiness + travel
             + moneyAndShopping + healthAndBody + tech
             + timeAndFrequency + communication + dailyCore
+            + extraPhrasalVerbs + extraIdioms + extraAdjectives
+            + conversationFillers + connectives
     }
 
     private static func make(
@@ -1463,6 +1465,741 @@ enum SeedData {
                  examples: [
                     ("I couldn't reach her.", "彼女に連絡取れなかった。"),
                     ("We finally reached the top.", "ついに頂上に着いた。")
+                 ])
+        ]
+    }
+
+    // MARK: - 句動詞（追加 30）
+
+    private static var extraPhrasalVerbs: [Word] {
+        [
+            make("knock it off", "stop doing something annoying",
+                 "やめろ・いい加減にしろ",
+                 useCases: ["相手の悪ふざけを止めるとき"],
+                 examples: [
+                    ("Knock it off, you two!", "二人ともいい加減にして！"),
+                    ("Knock it off, that's not funny.", "やめろよ、面白くない。")
+                 ]),
+            make("rule out", "exclude as a possibility",
+                 "除外する・可能性を排除する",
+                 useCases: ["選択肢から外すとき", "原因を絞り込むとき"],
+                 examples: [
+                    ("Let's rule out food poisoning first.", "まず食中毒は除外しよう。"),
+                    ("I wouldn't rule it out.", "可能性は否定しないよ。")
+                 ]),
+            make("bring about", "cause something to happen",
+                 "引き起こす・もたらす",
+                 useCases: ["変化や結果を引き起こすとき"],
+                 examples: [
+                    ("Tech brought about huge change.", "テクノロジーが大きな変化をもたらした。"),
+                    ("It brought about a new era.", "新しい時代をもたらした。")
+                 ]),
+            make("carry on", "continue doing something",
+                 "続ける",
+                 useCases: ["作業を続けてと伝えるとき", "継続を促すとき"],
+                 examples: [
+                    ("Carry on with what you were doing.", "やってたこと続けて。"),
+                    ("Just carry on, I'll catch up.", "先進んで、追いつくから。")
+                 ]),
+            make("look after", "take care of someone or something",
+                 "世話をする・面倒を見る",
+                 useCases: ["子どもやペットの世話", "誰かのケアを頼むとき"],
+                 examples: [
+                    ("Can you look after my dog?", "うちの犬の世話お願いできる？"),
+                    ("She looks after her mom.", "彼女はお母さんの世話してる。")
+                 ]),
+            make("look up", "search for information; raise your eyes",
+                 "調べる・見上げる",
+                 useCases: ["辞書やネットで情報を調べるとき", "上を見上げる動作"],
+                 examples: [
+                    ("Look it up online.", "ネットで調べて。"),
+                    ("Look up at the stars.", "星を見上げてみて。")
+                 ]),
+            make("look down on", "regard as inferior",
+                 "見下す",
+                 useCases: ["他人を軽く扱う態度を表すとき"],
+                 examples: [
+                    ("Don't look down on him.", "彼を見下さないで。"),
+                    ("She looks down on us.", "彼女は私たちを見下してる。")
+                 ]),
+            make("take after", "resemble a family member",
+                 "（家族に）似ている",
+                 useCases: ["親や親戚に似ていると言うとき"],
+                 examples: [
+                    ("She takes after her mom.", "彼女はお母さん似だ。"),
+                    ("You really take after your dad.", "君、お父さんにそっくり。")
+                 ]),
+            make("take in", "understand; absorb; let in",
+                 "理解する・受け入れる",
+                 useCases: ["情報を頭に入れるとき", "誰かを家に迎え入れるとき"],
+                 examples: [
+                    ("Hard to take in all at once.", "一度に全部理解するのは難しい。"),
+                    ("They took in a stray cat.", "彼ら、野良猫を引き取った。")
+                 ]),
+            make("take off", "depart; remove; gain popularity",
+                 "離陸する・脱ぐ・人気が出る",
+                 useCases: ["飛行機の出発", "服を脱ぐとき", "ヒットする話"],
+                 examples: [
+                    ("The flight just took off.", "便、たった今離陸した。"),
+                    ("Take off your shoes.", "靴脱いで。")
+                 ]),
+            make("take on", "accept a task or challenge",
+                 "引き受ける・挑む",
+                 useCases: ["新しい仕事を引き受けるとき"],
+                 examples: [
+                    ("She took on the project.", "彼女、その案件引き受けた。"),
+                    ("Take on the challenge.", "その挑戦受けて立てよ。")
+                 ]),
+            make("take up", "start a hobby; occupy space or time",
+                 "始める（趣味を）・占める",
+                 useCases: ["新しい趣味を始める話", "場所や時間を取るとき"],
+                 examples: [
+                    ("I took up yoga.", "ヨガ始めた。"),
+                    ("This takes up too much room.", "これ場所取りすぎ。")
+                 ]),
+            make("put up with", "tolerate something annoying",
+                 "我慢する・耐える",
+                 useCases: ["不快なことを我慢する話"],
+                 examples: [
+                    ("I can't put up with the noise.", "この騒音は我慢できない。"),
+                    ("She puts up with a lot.", "彼女はいろいろ我慢してる。")
+                 ]),
+            make("put down", "place down; criticize harshly",
+                 "置く・けなす",
+                 useCases: ["物を下に置くとき", "誰かを馬鹿にするとき"],
+                 examples: [
+                    ("Put it down here.", "ここに置いて。"),
+                    ("Stop putting him down.", "彼をけなすのやめて。")
+                 ]),
+            make("put together", "assemble; organize",
+                 "組み立てる・まとめる",
+                 useCases: ["家具を組み立てる", "資料や計画をまとめる"],
+                 examples: [
+                    ("I put together a slideshow.", "スライド作った。"),
+                    ("Help me put this together.", "これ組み立てるの手伝って。")
+                 ]),
+            make("put aside", "set apart; save for later",
+                 "脇に置く・取っておく",
+                 useCases: ["後で使う物を取っておくとき", "感情を一旦置いておくとき"],
+                 examples: [
+                    ("Put aside some money each month.", "毎月少しずつ貯金してる。"),
+                    ("Let's put that aside for now.", "今はそれ脇に置いとこう。")
+                 ]),
+            make("get over", "recover from something",
+                 "乗り越える・克服する",
+                 useCases: ["失恋や病気から立ち直る話"],
+                 examples: [
+                    ("Get over it!", "もう忘れなよ。"),
+                    ("I'm finally getting over the flu.", "やっとインフルから回復してきた。")
+                 ]),
+            make("get through", "finish or survive a difficult thing",
+                 "やり遂げる・通り抜ける",
+                 useCases: ["大変な期間を乗り切る話"],
+                 examples: [
+                    ("We got through the week.", "なんとか今週乗り切った。"),
+                    ("I'll get through this somehow.", "なんとかこれを乗り切る。")
+                 ]),
+            make("get by", "manage to survive with what you have",
+                 "何とかやっていく",
+                 useCases: ["最低限の生活でしのぐ話"],
+                 examples: [
+                    ("We get by on a small budget.", "少ない予算でやりくりしてる。"),
+                    ("I'm just getting by.", "なんとか食いつないでる。")
+                 ]),
+            make("get ahead", "advance or succeed",
+                 "先に進む・出世する",
+                 useCases: ["キャリアで成功する話"],
+                 examples: [
+                    ("She works hard to get ahead.", "彼女は出世のために頑張ってる。"),
+                    ("Just trying to get ahead.", "前に進もうとしてるだけ。")
+                 ]),
+            make("make out", "understand; perceive",
+                 "理解する・見分ける",
+                 useCases: ["小さな声や字を読み取る話"],
+                 examples: [
+                    ("I can't make out what he's saying.", "彼が何言ってるか分からない。"),
+                    ("Can you make out the sign?", "あの標識読める？")
+                 ]),
+            make("make do", "manage with what you have",
+                 "間に合わせる・代用する",
+                 useCases: ["足りない物で済ますとき"],
+                 examples: [
+                    ("We'll have to make do.", "間に合わせるしかない。"),
+                    ("Make do with what you've got.", "あるもので何とかして。")
+                 ]),
+            make("wear out", "exhaust; become worn",
+                 "すり減らす・疲れさせる",
+                 useCases: ["疲れ切ったとき", "靴や服が古くなるとき"],
+                 examples: [
+                    ("The kids wore me out.", "子どもたちにヘトヘトにされた。"),
+                    ("My shoes are worn out.", "靴がボロボロだ。")
+                 ]),
+            make("carry through", "complete a task to the end",
+                 "やり遂げる",
+                 useCases: ["最後までやり通すとき"],
+                 examples: [
+                    ("She carried it through.", "彼女は最後までやり遂げた。"),
+                    ("Carry the plan through.", "計画を最後までやり通して。")
+                 ]),
+            make("pull through", "survive a tough situation",
+                 "困難を乗り越える",
+                 useCases: ["病気や危機から回復する話"],
+                 examples: [
+                    ("He pulled through the surgery.", "彼は手術を乗り越えた。"),
+                    ("We'll pull through this.", "これ乗り越えられるよ。")
+                 ]),
+            make("pull up", "stop a vehicle; bring up",
+                 "車を停める・引き上げる",
+                 useCases: ["車を寄せて停めるとき", "椅子を寄せるとき"],
+                 examples: [
+                    ("Pull up over there.", "あそこに停めて。"),
+                    ("Pull up a chair.", "椅子持ってきて座って。")
+                 ]),
+            make("pull together", "cooperate as a team",
+                 "力を合わせる",
+                 useCases: ["チームで頑張る話"],
+                 examples: [
+                    ("Let's pull together.", "みんなで力合わせよう。"),
+                    ("They pulled together to win.", "彼らは力を合わせて勝った。")
+                 ]),
+            make("set aside", "save or reserve",
+                 "取っておく・脇に置く",
+                 useCases: ["お金や時間を確保する話"],
+                 examples: [
+                    ("Set aside some time.", "ちょっと時間取っといて。"),
+                    ("I set aside money for travel.", "旅行用にお金取ってある。")
+                 ]),
+            make("set off", "depart; trigger something",
+                 "出発する・引き起こす",
+                 useCases: ["旅行に出発する話", "アラームを鳴らす場面"],
+                 examples: [
+                    ("We set off at dawn.", "夜明けに出発した。"),
+                    ("That set off the alarm.", "それでアラーム鳴った。")
+                 ]),
+            make("set out", "begin a journey or task",
+                 "出発する・着手する",
+                 useCases: ["何かに取り組み始めるとき"],
+                 examples: [
+                    ("We set out to find a solution.", "解決策を探し始めた。"),
+                    ("They set out early.", "彼らは早めに出発した。")
+                 ])
+        ]
+    }
+
+    // MARK: - イディオム（追加 25）
+
+    private static var extraIdioms: [Word] {
+        [
+            make("a piece of work", "a difficult or annoying person",
+                 "困った人・厄介な物",
+                 useCases: ["扱いにくい人について話すとき"],
+                 examples: [
+                    ("That guy is a piece of work.", "あいつ、ほんと厄介。"),
+                    ("She's quite a piece of work.", "彼女はかなり面倒な人。")
+                 ]),
+            make("a tough cookie", "a strong, resilient person",
+                 "タフな人・芯の強い人",
+                 useCases: ["逆境に強い人を表すとき"],
+                 examples: [
+                    ("She's a tough cookie.", "彼女は芯が強い。"),
+                    ("Don't worry, he's a tough cookie.", "心配しないで、彼タフだから。")
+                 ]),
+            make("the last straw", "the final irritation that causes a reaction",
+                 "我慢の限界",
+                 useCases: ["もう耐えられないと言うとき"],
+                 examples: [
+                    ("That was the last straw.", "もう限界。"),
+                    ("This is the last straw for me.", "これが最後の堪忍袋の緒だ。")
+                 ]),
+            make("a wild goose chase", "a pointless pursuit",
+                 "無駄足・的外れな追跡",
+                 useCases: ["徒労に終わった追跡を表すとき"],
+                 examples: [
+                    ("It was a wild goose chase.", "完全に無駄足だった。"),
+                    ("He sent us on a wild goose chase.", "彼に振り回された。")
+                 ]),
+            make("add fuel to the fire", "make a bad situation worse",
+                 "火に油を注ぐ",
+                 useCases: ["状況を悪化させる発言や行動"],
+                 examples: [
+                    ("That just added fuel to the fire.", "それで火に油注いだ。"),
+                    ("Don't add fuel to the fire.", "火に油注ぐようなことしないで。")
+                 ]),
+            make("let bygones be bygones", "let the past be the past",
+                 "過去のことは水に流す",
+                 useCases: ["仲直りや和解の場面で"],
+                 examples: [
+                    ("Let's let bygones be bygones.", "過去のことは水に流そう。"),
+                    ("Just let bygones be bygones.", "もう昔のことだから。")
+                 ]),
+            make("water under the bridge", "something past and forgotten",
+                 "過ぎたこと",
+                 useCases: ["昔のトラブルを蒸し返さないとき"],
+                 examples: [
+                    ("It's all water under the bridge.", "全部もう過ぎたことだ。"),
+                    ("That's water under the bridge now.", "それはもう昔の話。")
+                 ]),
+            make("don't judge a book by its cover", "don't judge by appearance",
+                 "見かけで判断するな",
+                 useCases: ["第一印象で人を判断しないよう諭すとき"],
+                 examples: [
+                    ("Don't judge a book by its cover.", "見た目で判断しないで。"),
+                    ("Hey, don't judge a book by its cover.", "見かけだけで決めるなよ。")
+                 ]),
+            make("the apple of my eye", "someone you cherish",
+                 "大切な人・宝物",
+                 useCases: ["最愛の人を表すとき"],
+                 examples: [
+                    ("She's the apple of my eye.", "彼女は私の宝物。"),
+                    ("He's the apple of his mom's eye.", "彼はお母さんの宝物だ。")
+                 ]),
+            make("break the news", "share important news",
+                 "ニュースを伝える",
+                 useCases: ["重要な知らせを切り出すとき"],
+                 examples: [
+                    ("I had to break the news.", "知らせを伝えるしかなかった。"),
+                    ("Who's gonna break the news?", "誰が伝える？")
+                 ]),
+            make("caught red-handed", "caught in the act",
+                 "現行犯で捕まる",
+                 useCases: ["悪いことをしている最中に見つかる場面"],
+                 examples: [
+                    ("They caught him red-handed.", "彼、現行犯で捕まった。"),
+                    ("Caught red-handed!", "現行犯！")
+                 ]),
+            make("once and for all", "definitively; finally",
+                 "きっぱりと・最終的に",
+                 useCases: ["はっきり決着をつけるとき"],
+                 examples: [
+                    ("Let's settle this once and for all.", "これ、はっきり決着つけよう。"),
+                    ("Once and for all, no.", "もう最後、ノーだ。")
+                 ]),
+            make("out of the woods", "past a difficult phase",
+                 "危機を脱した",
+                 useCases: ["困難な状況を抜けた話"],
+                 examples: [
+                    ("We're not out of the woods yet.", "まだ油断はできない。"),
+                    ("He's out of the woods.", "彼はもう大丈夫。")
+                 ]),
+            make("off the hook", "freed from responsibility",
+                 "責任を免れた",
+                 useCases: ["面倒事から逃れた話"],
+                 examples: [
+                    ("Looks like I'm off the hook.", "私はお咎めなしみたい。"),
+                    ("You're off the hook this time.", "今回は許してあげる。")
+                 ]),
+            make("on thin ice", "in a risky situation",
+                 "危険な状況にある",
+                 useCases: ["失敗が許されない状況の話"],
+                 examples: [
+                    ("You're on thin ice.", "君、もう後がないよ。"),
+                    ("I'm on thin ice with my boss.", "上司との関係がヤバい。")
+                 ]),
+            make("in the dark", "uninformed",
+                 "知らされていない",
+                 useCases: ["情報共有されていないと不満を言うとき"],
+                 examples: [
+                    ("I'm totally in the dark.", "全然知らされてない。"),
+                    ("They kept us in the dark.", "彼らは私たちに知らせなかった。")
+                 ]),
+            make("walking on eggshells", "being very careful around someone",
+                 "慎重に振る舞う・腫れ物に触るよう",
+                 useCases: ["気難しい人に気を遣う話"],
+                 examples: [
+                    ("I'm walking on eggshells around her.", "彼女に気を遣いまくり。"),
+                    ("Stop walking on eggshells.", "そんな気を遣わなくていいよ。")
+                 ]),
+            make("rain check", "a deferred invitation",
+                 "また今度・延期",
+                 useCases: ["誘いを断りつつ次回に約束するとき"],
+                 examples: [
+                    ("Can I take a rain check?", "また今度でもいい？"),
+                    ("I'll take a rain check.", "また誘って。")
+                 ]),
+            make("a long shot", "an unlikely possibility",
+                 "望み薄・一か八か",
+                 useCases: ["可能性が低いが試す話"],
+                 examples: [
+                    ("It's a long shot.", "可能性低いけど。"),
+                    ("That's a long shot at best.", "一か八かだね。")
+                 ]),
+            make("kill two birds with one stone", "achieve two goals at once",
+                 "一石二鳥",
+                 useCases: ["1つの行動で2つの効果を狙うとき"],
+                 examples: [
+                    ("Kill two birds with one stone.", "一石二鳥だね。"),
+                    ("Let's kill two birds with one stone.", "ついでに済ませよう。")
+                 ]),
+            make("the tip of the iceberg", "a small visible part of a bigger problem",
+                 "氷山の一角",
+                 useCases: ["問題の一部しか見えていない話"],
+                 examples: [
+                    ("That's just the tip of the iceberg.", "それは氷山の一角だ。"),
+                    ("Tip of the iceberg, honestly.", "正直、氷山の一角。")
+                 ]),
+            make("a drop in the bucket", "a tiny insignificant amount",
+                 "焼け石に水",
+                 useCases: ["対策が小さすぎると評するとき"],
+                 examples: [
+                    ("It's just a drop in the bucket.", "焼け石に水だ。"),
+                    ("That's a drop in the bucket.", "そんなの全然足りない。")
+                 ]),
+            make("easier said than done", "talking is easier than doing",
+                 "言うは易し",
+                 useCases: ["簡単に言うけど実行は難しいと反論するとき"],
+                 examples: [
+                    ("Easier said than done.", "言うのは簡単だよね。"),
+                    ("Yeah, easier said than done.", "うん、それ言うほど簡単じゃない。")
+                 ]),
+            make("actions speak louder than words", "what you do matters more than what you say",
+                 "行動は言葉より雄弁",
+                 useCases: ["口だけの人に対して使うとき"],
+                 examples: [
+                    ("Actions speak louder than words.", "行動が大事だよ。"),
+                    ("Remember, actions speak louder than words.", "言葉より行動だよ。")
+                 ]),
+            make("when pigs fly", "something that will never happen",
+                 "そんなことありえない",
+                 useCases: ["絶対起こらないと冗談で言うとき"],
+                 examples: [
+                    ("Yeah, when pigs fly.", "うん、そんなのありえない。"),
+                    ("He'll apologize when pigs fly.", "彼が謝るなんて天地がひっくり返ってもない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞・状態表現（追加 20）
+
+    private static var extraAdjectives: [Word] {
+        [
+            make("fed up", "annoyed and impatient",
+                 "うんざりした",
+                 useCases: ["我慢の限界に達した話"],
+                 examples: [
+                    ("I'm fed up with this.", "もうこれにうんざり。"),
+                    ("She's fed up with him.", "彼女は彼にうんざり。")
+                 ]),
+            make("worn out", "very tired",
+                 "疲れ果てた・くたくた",
+                 useCases: ["疲労困憊を表すとき"],
+                 examples: [
+                    ("I'm worn out.", "もうクタクタ。"),
+                    ("Worn out from work.", "仕事で疲れ果てた。")
+                 ]),
+            make("stuck up", "arrogant; snobbish",
+                 "高慢な・お高くとまった",
+                 useCases: ["態度が偉そうな人を批評するとき"],
+                 examples: [
+                    ("She's so stuck up.", "彼女、すごい上から目線。"),
+                    ("Don't be stuck up.", "そんなお高く止まらないで。")
+                 ]),
+            make("laid back", "relaxed; easygoing",
+                 "のんびりした",
+                 useCases: ["リラックスした性格を表すとき"],
+                 examples: [
+                    ("He's super laid back.", "彼、めっちゃのんびりしてる。"),
+                    ("A laid back vibe.", "のんびりした雰囲気。")
+                 ]),
+            make("uptight", "tense; overly strict",
+                 "神経質な・堅苦しい",
+                 useCases: ["緊張しすぎた態度を表すとき"],
+                 examples: [
+                    ("Don't be so uptight.", "そんなに固くならないで。"),
+                    ("He's pretty uptight.", "彼ちょっと堅すぎ。")
+                 ]),
+            make("easygoing", "relaxed and tolerant",
+                 "大らかな・気楽な",
+                 useCases: ["性格を褒めるとき"],
+                 examples: [
+                    ("She's so easygoing.", "彼女、すごく大らか。"),
+                    ("Easygoing personality.", "気楽な性格だよ。")
+                 ]),
+            make("outgoing", "sociable; extroverted",
+                 "社交的な",
+                 useCases: ["人との交流が好きな性格を表すとき"],
+                 examples: [
+                    ("She's really outgoing.", "彼女、すごく社交的。"),
+                    ("Are you outgoing?", "社交的なほう？")
+                 ]),
+            make("picky", "very selective",
+                 "好き嫌いが激しい・うるさい",
+                 useCases: ["食べ物や好みのこだわりを表すとき"],
+                 examples: [
+                    ("He's a picky eater.", "彼は好き嫌い多い。"),
+                    ("Don't be so picky.", "そんなにうるさく言うな。")
+                 ]),
+            make("stubborn", "refusing to change one's mind",
+                 "頑固な",
+                 useCases: ["意見を曲げない人を表すとき"],
+                 examples: [
+                    ("He's so stubborn.", "彼、頑固すぎ。"),
+                    ("Don't be stubborn.", "頑固にならないで。")
+                 ]),
+            make("humble", "modest; not arrogant",
+                 "謙虚な",
+                 useCases: ["控えめな人を褒めるとき"],
+                 examples: [
+                    ("She's really humble.", "彼女はすごく謙虚。"),
+                    ("Stay humble.", "謙虚でいて。")
+                 ]),
+            make("brave", "showing courage",
+                 "勇敢な・勇気のある",
+                 useCases: ["勇気ある行動を称えるとき"],
+                 examples: [
+                    ("That was brave of you.", "勇敢だったね。"),
+                    ("Be brave.", "勇気出して。")
+                 ]),
+            make("shy", "reserved around others",
+                 "内気な・恥ずかしがり",
+                 useCases: ["人見知りを表すとき"],
+                 examples: [
+                    ("I'm a bit shy.", "ちょっと内気なんだ。"),
+                    ("Don't be shy.", "恥ずかしがらないで。")
+                 ]),
+            make("awkward", "uncomfortable; clumsy socially",
+                 "気まずい・ぎこちない",
+                 useCases: ["変な空気を表すとき", "ぎこちない動作を言うとき"],
+                 examples: [
+                    ("That was so awkward.", "あれ気まずかった。"),
+                    ("It feels awkward.", "なんか気まずい。")
+                 ]),
+            make("clumsy", "awkward in movement",
+                 "不器用な・ドジな",
+                 useCases: ["失敗が多い人を表すとき"],
+                 examples: [
+                    ("Sorry, I'm clumsy.", "ごめん、不器用なんだ。"),
+                    ("Clumsy me!", "私ったらドジ！")
+                 ]),
+            make("mature", "developed; grown up",
+                 "成熟した・大人びた",
+                 useCases: ["精神的に大人な人を表すとき"],
+                 examples: [
+                    ("She's so mature for her age.", "彼女、年の割に大人びてる。"),
+                    ("That's not very mature.", "それ大人げないよ。")
+                 ]),
+            make("selfish", "thinking only of oneself",
+                 "利己的な・自分勝手な",
+                 useCases: ["自己中心的な行動を批判するとき"],
+                 examples: [
+                    ("Don't be selfish.", "自分勝手にならないで。"),
+                    ("That's selfish of him.", "彼ったら自己中。")
+                 ]),
+            make("generous", "willing to give",
+                 "寛大な・気前のいい",
+                 useCases: ["気前よくおごってくれる人を褒めるとき"],
+                 examples: [
+                    ("That's so generous of you.", "本当に気前いいね。"),
+                    ("He's a generous guy.", "彼は気前のいい人。")
+                 ]),
+            make("reliable", "dependable; trustworthy",
+                 "信頼できる",
+                 useCases: ["頼れる人を表すとき"],
+                 examples: [
+                    ("He's super reliable.", "彼はめっちゃ頼れる。"),
+                    ("A reliable friend.", "信頼できる友達。")
+                 ]),
+            make("stunning", "extremely impressive or beautiful",
+                 "見事な・素晴らしい",
+                 useCases: ["美しさや出来栄えを褒めるとき"],
+                 examples: [
+                    ("You look stunning.", "めっちゃきれい。"),
+                    ("Stunning view!", "絶景！")
+                 ]),
+            make("decent", "satisfactory; respectable",
+                 "まともな・きちんとした",
+                 useCases: ["最低限十分な質を表すとき"],
+                 examples: [
+                    ("That's a decent meal.", "まあまあいい食事。"),
+                    ("He's a decent guy.", "彼はちゃんとした人だ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 会話表現・相づち（追加 15）
+
+    private static var conversationFillers: [Word] {
+        [
+            make("fair enough", "that's reasonable",
+                 "まあそうだね・了解",
+                 useCases: ["相手の言い分に納得するとき"],
+                 examples: [
+                    ("Fair enough.", "まあそうだね。"),
+                    ("Fair enough, I get it.", "了解、わかった。")
+                 ]),
+            make("suit yourself", "do what you want",
+                 "好きにすれば",
+                 useCases: ["相手の決定に呆れて任せるとき"],
+                 examples: [
+                    ("Fine, suit yourself.", "好きにしなよ。"),
+                    ("Suit yourself, then.", "じゃあ勝手にして。")
+                 ]),
+            make("whatever", "I don't care",
+                 "どうでもいい・なんでも",
+                 useCases: ["興味がないと示すとき"],
+                 examples: [
+                    ("Whatever, it doesn't matter.", "別にどうでもいい。"),
+                    ("Whatever you want.", "君の好きにして。")
+                 ]),
+            make("says who", "who said that?",
+                 "誰がそう言った？",
+                 useCases: ["主張に反論するとき"],
+                 examples: [
+                    ("Says who?", "誰がそう言った？"),
+                    ("Yeah, says who?", "は？誰がそう言ったの？")
+                 ]),
+            make("for real", "seriously; truly",
+                 "マジで・本当に",
+                 useCases: ["本気か確認するとき", "強調するとき"],
+                 examples: [
+                    ("Are you for real?", "マジで言ってる？"),
+                    ("For real, it was awesome.", "本当に最高だった。")
+                 ]),
+            make("kind of", "somewhat; a little",
+                 "ちょっと・なんとなく",
+                 useCases: ["はっきり言わずぼかすとき"],
+                 examples: [
+                    ("Kind of tired.", "ちょっと疲れた。"),
+                    ("It's kind of weird.", "なんか変だよ。")
+                 ]),
+            make("sort of", "somewhat; like",
+                 "みたいな・ちょっと",
+                 useCases: ["曖昧に表現したいとき"],
+                 examples: [
+                    ("Sort of, yeah.", "まあ、そんな感じ。"),
+                    ("It's sort of like a hat.", "帽子みたいなものだ。")
+                 ]),
+            make("and stuff", "and other things",
+                 "などなど",
+                 useCases: ["列挙の最後に省略するとき"],
+                 examples: [
+                    ("Snacks, drinks, and stuff.", "お菓子とか飲み物とか。"),
+                    ("Books and stuff.", "本とかいろいろ。")
+                 ]),
+            make("or something", "or something like that",
+                 "か何か",
+                 useCases: ["はっきりしない代替を示すとき"],
+                 examples: [
+                    ("Coffee or something?", "コーヒーか何か？"),
+                    ("She's a doctor or something.", "彼女医者か何かだ。")
+                 ]),
+            make("you know what", "let me tell you",
+                 "あのね・ちょっと聞いて",
+                 useCases: ["話を切り出すとき"],
+                 examples: [
+                    ("You know what, forget it.", "ねえ、もういいや。"),
+                    ("You know what? I'm done.", "あのさ、もう無理。")
+                 ]),
+            make("guess what", "I have surprising news",
+                 "何だと思う？",
+                 useCases: ["驚きの話を切り出すとき"],
+                 examples: [
+                    ("Guess what! I got the job.", "聞いて！採用された！"),
+                    ("Guess what happened.", "何が起きたと思う？")
+                 ]),
+            make("here we go", "we're about to start",
+                 "さあ始めるよ",
+                 useCases: ["始まりの合図として"],
+                 examples: [
+                    ("Here we go!", "さあ行くぞ！"),
+                    ("Okay, here we go.", "よし、始めよう。")
+                 ]),
+            make("there you go", "exactly; well done",
+                 "そうそう・そんな感じ",
+                 useCases: ["相手の理解や成功を称えるとき"],
+                 examples: [
+                    ("There you go!", "そう、それでいい！"),
+                    ("There you go, you did it.", "ほら、できたじゃん。")
+                 ]),
+            make("look here", "hey; listen",
+                 "おい・ねえ",
+                 useCases: ["注意を引きたいとき", "やや強めに呼びかけるとき"],
+                 examples: [
+                    ("Look here, I told you no.", "おい、ダメって言っただろ。"),
+                    ("Look here, listen up.", "ねえ、ちょっと聞いて。")
+                 ]),
+            make("how come", "why",
+                 "なんで？",
+                 useCases: ["カジュアルに理由を聞くとき"],
+                 examples: [
+                    ("How come you're late?", "なんで遅れたの？"),
+                    ("How come?", "なんで？")
+                 ])
+        ]
+    }
+
+    // MARK: - つなぎ表現・談話標識（追加 10）
+
+    private static var connectives: [Word] {
+        [
+            make("as it stands", "given the current situation",
+                 "現状では",
+                 useCases: ["今の状況を踏まえて話すとき"],
+                 examples: [
+                    ("As it stands, we can't move.", "現状では動けない。"),
+                    ("As it stands now, no.", "今のところ無理。")
+                 ]),
+            make("at the end of the day", "ultimately",
+                 "結局のところ",
+                 useCases: ["要点をまとめるとき"],
+                 examples: [
+                    ("At the end of the day, we tried.", "結局のところ、頑張ったよ。"),
+                    ("At the end of the day, it's up to you.", "最終的には君次第だ。")
+                 ]),
+            make("when push comes to shove", "when it really matters",
+                 "いざという時",
+                 useCases: ["最後の局面の話をするとき"],
+                 examples: [
+                    ("When push comes to shove, he'll help.", "いざという時、彼は助けてくれる。"),
+                    ("When push comes to shove, decide quickly.", "いざとなったら即決して。")
+                 ]),
+            make("come hell or high water", "no matter what happens",
+                 "何があっても",
+                 useCases: ["強い決意を表すとき"],
+                 examples: [
+                    ("I'll be there, come hell or high water.", "何があっても行く。"),
+                    ("Come hell or high water, we finish.", "何があってもやり遂げる。")
+                 ]),
+            make("be that as it may", "even if that's true",
+                 "それはともかく",
+                 useCases: ["話題を切り替えつつ前提は認めるとき"],
+                 examples: [
+                    ("Be that as it may, we have to go.", "そうかもしれないけど、行かないと。"),
+                    ("Be that as it may, I disagree.", "それはともかく、私は反対。")
+                 ]),
+            make("for what it's worth", "I'm not sure if this helps, but...",
+                 "役に立つかわからないけど",
+                 useCases: ["控えめに意見を伝えるとき"],
+                 examples: [
+                    ("For what it's worth, I think you're right.", "参考までに、君が正しいと思うよ。"),
+                    ("For what it's worth, sorry.", "気休めだけど、ごめん。")
+                 ]),
+            make("to put it mildly", "saying it gently",
+                 "控えめに言って",
+                 useCases: ["強い表現をやわらげるとき"],
+                 examples: [
+                    ("It was bad, to put it mildly.", "控えめに言ってひどかった。"),
+                    ("To put it mildly, awkward.", "控えめに言って気まずい。")
+                 ]),
+            make("to put it bluntly", "speaking frankly",
+                 "率直に言って",
+                 useCases: ["遠慮なく本音を言うとき"],
+                 examples: [
+                    ("To put it bluntly, you're wrong.", "率直に言って間違ってる。"),
+                    ("To put it bluntly, no.", "はっきり言うと、無理。")
+                 ]),
+            make("needless to say", "obviously",
+                 "言うまでもなく",
+                 useCases: ["当然のことを強調するとき"],
+                 examples: [
+                    ("Needless to say, I was happy.", "言うまでもなく嬉しかった。"),
+                    ("Needless to say, it works.", "もちろん、ちゃんと動く。")
+                 ]),
+            make("mind you", "by the way; just so you know",
+                 "言っとくけど・断っておくが",
+                 useCases: ["補足や注意を加えるとき"],
+                 examples: [
+                    ("Mind you, it wasn't easy.", "言っておくけど、簡単じゃなかった。"),
+                    ("It was great, mind you.", "ちなみに最高だったよ。")
                  ])
         ]
     }
