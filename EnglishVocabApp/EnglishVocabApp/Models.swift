@@ -92,11 +92,22 @@ struct Word: Codable, Identifiable, Hashable {
     /// Entries automatically expire 7 days after they are added.
     var addedToReviewListAt: Date? = nil
 
+    /// Per-quiz-mode "正解した回数". Keys are QuizMode.modeKey strings:
+    /// "useCase", "definition", "translation". A word is considered
+    /// 復習完了 in a mode once its count reaches 4. Independent of the
+    /// overall reviewCount used by the card view.
+    var modeCounts: [String: Int] = [:]
+
+    /// Per-quiz-mode next review date (Ebbinghaus). Mirrors modeCounts:
+    /// each (word, mode) pair gets its own due date.
+    var modeNextReviewDates: [String: Date] = [:]
+
     enum CodingKeys: String, CodingKey {
         case id, word, definitionEnglish, definitionJapanese, useCases,
              examples, synonyms,
              reviewCount, status, nextReviewDate, lastReviewedDate, createdAt,
-             addedToReviewListAt
+             addedToReviewListAt,
+             modeCounts, modeNextReviewDates
     }
 
     init(
@@ -112,7 +123,9 @@ struct Word: Codable, Identifiable, Hashable {
         nextReviewDate: Date = Date(),
         lastReviewedDate: Date? = nil,
         createdAt: Date = Date(),
-        addedToReviewListAt: Date? = nil
+        addedToReviewListAt: Date? = nil,
+        modeCounts: [String: Int] = [:],
+        modeNextReviewDates: [String: Date] = [:]
     ) {
         self.id = id
         self.word = word
@@ -127,6 +140,8 @@ struct Word: Codable, Identifiable, Hashable {
         self.lastReviewedDate = lastReviewedDate
         self.createdAt = createdAt
         self.addedToReviewListAt = addedToReviewListAt
+        self.modeCounts = modeCounts
+        self.modeNextReviewDates = modeNextReviewDates
     }
 
     /// Decoder that fills in defaults for fields added in later schema versions
@@ -146,6 +161,17 @@ struct Word: Codable, Identifiable, Hashable {
         self.lastReviewedDate = try c.decodeIfPresent(Date.self, forKey: .lastReviewedDate)
         self.createdAt = try c.decodeIfPresent(Date.self, forKey: .createdAt) ?? Date()
         self.addedToReviewListAt = try c.decodeIfPresent(Date.self, forKey: .addedToReviewListAt)
+        self.modeCounts = try c.decodeIfPresent([String: Int].self, forKey: .modeCounts) ?? [:]
+        self.modeNextReviewDates = try c.decodeIfPresent([String: Date].self, forKey: .modeNextReviewDates) ?? [:]
+    }
+
+    /// True when every quiz mode has been answered correctly at least 4 times
+    /// (= 復習完了 across the board). Used to push the word to the bottom of
+    /// the 一覧 list and remove it from quiz pools.
+    var isFullyCompleted: Bool {
+        ["useCase", "definition", "translation"].allSatisfy {
+            (modeCounts[$0] ?? 0) >= 4
+        }
     }
 
     /// True if the word is currently pinned to the focused review list

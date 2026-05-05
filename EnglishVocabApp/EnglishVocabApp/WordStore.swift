@@ -193,6 +193,46 @@ final class WordStore: ObservableObject {
     /// - ◎ 完璧: increment reviewCount, schedule by Ebbinghaus curve
     /// - △ あいまい: keep reviewCount, schedule 1 week later
     /// - × わからない: reset reviewCount=0, schedule next day
+    /// Records a per-quiz-mode answer. Each (word, mode) pair has its own
+    /// count and Ebbinghaus next-review date, so a word can be 復習完了 in
+    /// 使う場面 mode while still being practiced in 例文翻訳 mode.
+    func recordModeAnswer(_ mark: ReviewMark, for word: Word, modeKey: String) {
+        guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
+        var w = words[idx]
+        let now = Date()
+        w.lastReviewedDate = now
+
+        let currentCount = w.modeCounts[modeKey] ?? 0
+        let newCount: Int
+        let daysUntilNext: Int
+        switch mark {
+        case .perfect:
+            newCount = currentCount + 1
+            daysUntilNext = intervalDays(forCompletedReviewCount: newCount)
+        case .fuzzy:
+            newCount = currentCount
+            daysUntilNext = 7
+        case .forgot:
+            newCount = 0
+            daysUntilNext = 1
+        }
+
+        w.modeCounts[modeKey] = newCount
+        w.modeNextReviewDates[modeKey] = Calendar.current.date(
+            byAdding: .day, value: daysUntilNext, to: now
+        ) ?? now
+
+        // Keep the legacy reviewCount in sync (use the highest mode count) so
+        // existing card-view UIs and the 一覧 sort continue to behave.
+        w.reviewCount = max(w.reviewCount, w.modeCounts.values.max() ?? 0)
+        if mark == .perfect { w.status = .perfect }
+        if mark == .fuzzy { w.status = .fuzzy }
+        if mark == .forgot { w.status = .unlearned }
+
+        words[idx] = w
+        save()
+    }
+
     func record(mark: ReviewMark, for word: Word) {
         guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
         var w = words[idx]

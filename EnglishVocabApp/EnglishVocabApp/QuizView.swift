@@ -14,6 +14,17 @@ struct QuizView: View {
         case translation = "例文翻訳"
         var id: String { rawValue }
 
+        /// Stable English key used for Word.modeCounts /
+        /// Word.modeNextReviewDates dictionaries. Independent of the
+        /// localized rawValue display name.
+        var modeKey: String {
+            switch self {
+            case .useCase:     return "useCase"
+            case .definition:  return "definition"
+            case .translation: return "translation"
+            }
+        }
+
         var prompt: String {
             switch self {
             case .useCase:     return "この単語を使う場面はどれ？"
@@ -67,23 +78,29 @@ struct QuizView: View {
     @AppStorage("translation.wordId") private var savedTranslationWordId: String = ""
     @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
 
-    /// Words from the review list that are eligible to be the *question*
-    /// for the current mode: not yet 復習完了 AND due now under the
-    /// Ebbinghaus schedule AND have the content the mode needs.
+    /// Words from the review list eligible to be the *question* for the
+    /// current mode: per-mode count < 4 AND per-mode next-review date is
+    /// on/before now (Ebbinghaus). Each (word, mode) pair tracks its own
+    /// progress.
     private var eligibleWords: [Word] {
         let now = Date()
-        let pinned = store.reviewListWords.filter {
-            $0.reviewCount < 4 && $0.nextReviewDate <= now
+        let key = mode.modeKey
+        let pinned = store.reviewListWords.filter { word in
+            let count = word.modeCounts[key] ?? 0
+            let nextDate = word.modeNextReviewDates[key] ?? .distantPast
+            return count < 4 && nextDate <= now
         }
         return filterByModeContent(pinned)
     }
 
-    /// All non-completed pinned words that satisfy the mode's content
-    /// requirements. Used as the *distractor* pool for multiple-choice
-    /// modes, so we can still build 4 options when only a couple of
-    /// words are actually due today.
+    /// Distractor pool for multiple-choice modes: any pinned word whose
+    /// per-mode count is still < 4 (Ebbinghaus-agnostic) so we can always
+    /// assemble 4 options.
     private var distractorPool: [Word] {
-        let pinned = store.reviewListWords.filter { $0.reviewCount < 4 }
+        let key = mode.modeKey
+        let pinned = store.reviewListWords.filter { word in
+            (word.modeCounts[key] ?? 0) < 4
+        }
         return filterByModeContent(pinned)
     }
 
@@ -119,13 +136,6 @@ struct QuizView: View {
         !store.reviewListWords.isEmpty && eligibleWords.isEmpty
     }
 
-    /// Daily session cap for the multiple-choice modes: after 4 correct
-    /// answers in the current session we finish the session and show the
-    /// "本日のタスクは終了しました" view. Translation mode has no
-    /// auto-graded counter so this cap doesn't apply there.
-    private var sessionComplete: Bool {
-        mode != .translation && correctCount >= 4
-    }
 
     var body: some View {
         VStack(spacing: 16) {
@@ -147,9 +157,9 @@ struct QuizView: View {
             .pickerStyle(.segmented)
             .padding(.horizontal, 16)
 
-            if !canShowQuiz || sessionComplete {
+            if !canShowQuiz {
                 Spacer()
-                if allTasksDone || sessionComplete {
+                if allTasksDone {
                     VStack(spacing: 12) {
                         Image(systemName: "checkmark.seal.fill")
                             .font(.system(size: 56))
@@ -348,9 +358,9 @@ struct QuizView: View {
             guard let word = currentWord else { return }
             if isCorrect {
                 correctCount += 1
-                store.record(mark: .perfect, for: word)
+                store.recordModeAnswer(.perfect, for: word, modeKey: mode.modeKey)
             } else {
-                store.record(mark: .forgot, for: word)
+                store.recordModeAnswer(.forgot, for: word, modeKey: mode.modeKey)
             }
         } label: {
             HStack(alignment: .top, spacing: 10) {
@@ -609,6 +619,8 @@ struct QuizView: View {
                 if showAnswer, let ex = currentExample, let w = currentWord {
                     answerView(ex, word: w)
                         .padding(.horizontal, 16)
+                    selfRateRow(for: w)
+                        .padding(.horizontal, 16)
                 }
 
                 Spacer(minLength: 12)
@@ -681,7 +693,9 @@ struct QuizView: View {
     }
 
     private func reviewGauge(for word: Word) -> some View {
-        let info = reviewStage(forCount: word.reviewCount)
+        // Show the per-mode count so the gauge advances per quiz mode.
+        let count = word.modeCounts[mode.modeKey] ?? 0
+        let info = reviewStage(forCount: count)
         return HStack(spacing: 8) {
             HStack(spacing: 3) {
                 ForEach(0..<4, id: \.self) { idx in
@@ -692,7 +706,7 @@ struct QuizView: View {
                 .font(.caption2.bold())
                 .foregroundStyle(info.color)
             Spacer()
-            Text("復習 \(word.reviewCount) 回")
+            Text("復習 \(count) 回")
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
         }
@@ -719,6 +733,53 @@ struct QuizView: View {
     }
 
     @ViewBuilder
+    /// Two self-rate buttons shown under the translation answer panel so
+    /// the user can mark whether they got it right. The result feeds into
+    /// the per-mode count for "translation".
+    @ViewBuilder
+    private func selfRateRow(for word: Word) -> some View {
+        HStack(spacing: 10) {
+            Button {
+                store.recordModeAnswer(.forgot, for: word, modeKey: mode.modeKey)
+                advanceTranslationAfterRating()
+            } label: {
+                HStack {
+                    Spacer()
+                    Image(systemName: "xmark.circle.fill")
+                    Text("できなかった").bold()
+                    Spacer()
+                }
+                .padding(.vertical, 12)
+                .foregroundStyle(.red)
+                .background(Color.red.opacity(0.10))
+                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.red.opacity(0.4), lineWidth: 1))
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+            }
+
+            Button {
+                correctCount += 1
+                store.recordModeAnswer(.perfect, for: word, modeKey: mode.modeKey)
+                advanceTranslationAfterRating()
+            } label: {
+                HStack {
+                    Spacer()
+                    Image(systemName: "checkmark.circle.fill")
+                    Text("できた").bold()
+                    Spacer()
+                }
+                .padding(.vertical, 12)
+                .foregroundStyle(.white)
+                .background(Color.indigo)
+                .clipShape(RoundedRectangle(cornerRadius: 12))
+            }
+        }
+    }
+
+    /// Move to the next translation problem after a self-rating tap.
+    private func advanceTranslationAfterRating() {
+        nextProblem()
+    }
+
     private func answerView(_ ex: ExampleSentence, word: Word) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             VStack(alignment: .leading, spacing: 8) {
