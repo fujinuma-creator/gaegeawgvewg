@@ -68,8 +68,13 @@ struct QuizView: View {
     @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
 
     private var eligibleWords: [Word] {
-        // Quiz draws only from the user's review list (auto-expires after 7 days).
-        let pinned = store.reviewListWords
+        // Quiz draws only from the user's review list (auto-expires after 7 days),
+        // skipping words that have reached 復習完了 (reviewCount >= 4) and only
+        // showing words that are due now under the Ebbinghaus schedule.
+        let now = Date()
+        let pinned = store.reviewListWords.filter {
+            $0.reviewCount < 4 && $0.nextReviewDate <= now
+        }
         switch mode {
         case .useCase:
             return pinned.filter { !$0.useCases.isEmpty }
@@ -80,6 +85,14 @@ struct QuizView: View {
         case .translation:
             return pinned.filter { !$0.examples.isEmpty }
         }
+    }
+
+    /// True when the user has at least one word pinned to the review list,
+    /// but none of them are due / not yet completed for the current mode.
+    /// In that case we celebrate with "本日のタスクは終了しました".
+    private var allTasksDone: Bool {
+        guard !store.reviewListWords.isEmpty else { return false }
+        return eligibleWords.isEmpty
     }
 
     var body: some View {
@@ -104,19 +117,34 @@ struct QuizView: View {
 
             if eligibleWords.count < mode.minimumEligible {
                 Spacer()
-                VStack(spacing: 10) {
-                    Image(systemName: "star")
-                        .font(.system(size: 50))
-                        .foregroundStyle(.indigo)
-                    Text(mode.emptyMessage)
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(.secondary)
-                    Text(mode.emptyHint)
-                        .font(.caption)
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(.tertiary)
+                if allTasksDone {
+                    VStack(spacing: 12) {
+                        Image(systemName: "checkmark.seal.fill")
+                            .font(.system(size: 56))
+                            .foregroundStyle(.green)
+                        Text("本日のタスクは終了しました")
+                            .font(.title3.bold())
+                            .multilineTextAlignment(.center)
+                        Text("復習リスト内の単語はすべて復習完了、または次回出題まで間隔を置いた状態です。")
+                            .font(.caption)
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(.secondary)
+                            .padding(.horizontal, 24)
+                    }
+                } else {
+                    VStack(spacing: 10) {
+                        Image(systemName: "star")
+                            .font(.system(size: 50))
+                            .foregroundStyle(.indigo)
+                        Text(mode.emptyMessage)
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(.secondary)
+                        Text(mode.emptyHint)
+                            .font(.caption)
+                            .multilineTextAlignment(.center)
+                            .foregroundStyle(.tertiary)
+                    }
                 }
-                .padding()
                 Spacer()
             } else if let word = currentWord {
                 if mode == .translation {

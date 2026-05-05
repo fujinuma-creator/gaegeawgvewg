@@ -51,17 +51,26 @@ struct WordListView: View {
         }
         switch filter {
         case .all:
-            // Words added today appear at the very top (newest first), so
-            // freshly-added words are easy to find. Everything older is
-            // shown in the daily-rotating random order.
+            // Layered ordering for the "すべて" tab:
+            //   1) Newest first: words added today (jumped to the top so the
+            //      user sees freshly-added vocabulary).
+            //   2) Active words: not added today, not yet 復習完了 — shown
+            //      in the daily-rotating random order.
+            //   3) Completed words (reviewCount >= 4 = 復習完了 / もう
+            //      復習リストから外れていく単語): pushed to the bottom,
+            //      sorted alphabetically for stability.
             let today = Calendar.current.startOfDay(for: Date())
             let newToday = filtered
                 .filter { $0.createdAt >= today }
                 .sorted { $0.createdAt > $1.createdAt }
-            let older = filtered
-                .filter { $0.createdAt < today }
+            let older = filtered.filter { $0.createdAt < today }
+            let active = older
+                .filter { $0.reviewCount < 4 }
                 .dailyShuffled()
-            return newToday + older
+            let completed = older
+                .filter { $0.reviewCount >= 4 }
+                .sorted { $0.word.lowercased() < $1.word.lowercased() }
+            return newToday + active + completed
         case .reviewList:
             // Most-recently pinned first.
             return filtered.sorted {
