@@ -8,15 +8,13 @@ struct HomeView: View {
             GeometricBackground()
                 .ignoresSafeArea()
 
-            VStack(spacing: 8) {
+            VStack(spacing: 10) {
                 Spacer(minLength: 0)
                 titleRow
-                statRow(label: "全単語数", number: store.totalCount, suffix: "語")
-                progressRow(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
-                progressRow(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
+                grid
                 Spacer(minLength: 0)
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 14)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .dynamicTypeSize(.medium)
@@ -26,79 +24,90 @@ struct HomeView: View {
 
     private var titleRow: some View {
         Text("AI 英単語帳")
-            .font(.system(size: 24, weight: .black, design: .rounded))
+            .font(.system(size: 26, weight: .black, design: .rounded))
             .foregroundStyle(.black)
             .minimumScaleFactor(0.5)
             .lineLimit(1)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 8)
+            .padding(.vertical, 10)
             .padding(.horizontal, 12)
             .background(rowBackground)
     }
 
-    // MARK: - Stat rows
+    // MARK: - Stats grid
 
-    private func statRow(label: String, number: Int, suffix: String) -> some View {
-        HStack(alignment: .firstTextBaseline) {
+    private var grid: some View {
+        let cols = [
+            GridItem(.flexible(), spacing: 8),
+            GridItem(.flexible(), spacing: 8)
+        ]
+        return LazyVGrid(columns: cols, spacing: 8) {
+            statTile(label: "全単語数", number: store.totalCount, suffix: "語")
+            statTile(label: "復習リスト", number: store.reviewListWords.count, suffix: "語")
+            progressTile(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
+            progressTile(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
+        }
+    }
+
+    private func statTile(label: String, number: Int, suffix: String) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
             Text(label)
-                .font(.system(size: 14, weight: .bold))
+                .font(.system(size: 13, weight: .bold))
                 .foregroundStyle(.black)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            Spacer(minLength: 8)
-            HStack(alignment: .firstTextBaseline, spacing: 3) {
+            HStack(alignment: .lastTextBaseline, spacing: 3) {
                 Text("\(number)")
-                    .font(.system(size: 22, weight: .black, design: .rounded))
+                    .font(.system(size: 28, weight: .black, design: .rounded))
                     .foregroundStyle(.black)
                 Text(suffix)
-                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
                     .foregroundStyle(.black.opacity(0.5))
             }
             .lineLimit(1)
             .minimumScaleFactor(0.7)
         }
-        .padding(.vertical, 6)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, 10)
         .padding(.horizontal, 12)
         .background(rowBackground)
     }
 
-    private func progressRow(label: String, done: Int, total: Int) -> some View {
+    private func progressTile(label: String, done: Int, total: Int) -> some View {
         let safeTotal = max(total, 1)
         let progress = min(Double(done) / Double(safeTotal), 1.0)
-        return VStack(spacing: 3) {
-            HStack(alignment: .firstTextBaseline) {
-                Text(label)
-                    .font(.system(size: 14, weight: .bold))
-                    .foregroundStyle(.black)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                Spacer(minLength: 8)
-                HStack(alignment: .firstTextBaseline, spacing: 3) {
-                    Text("\(done)")
-                        .font(.system(size: 22, weight: .black, design: .rounded))
-                        .foregroundStyle(.black)
-                    Text("/ \(total)")
-                        .font(.system(size: 12, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.black.opacity(0.5))
-                }
+        return VStack(alignment: .leading, spacing: 4) {
+            Text(label)
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(.black)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
+            HStack(alignment: .lastTextBaseline, spacing: 3) {
+                Text("\(done)")
+                    .font(.system(size: 28, weight: .black, design: .rounded))
+                    .foregroundStyle(.black)
+                Text("/ \(total)")
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.black.opacity(0.5))
             }
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
             ProgressView(value: progress)
                 .progressViewStyle(.linear)
                 .tint(.black)
                 .scaleEffect(x: 1, y: 0.6, anchor: .center)
         }
-        .padding(.vertical, 6)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, 10)
         .padding(.horizontal, 12)
         .background(rowBackground)
     }
 
     private var rowBackground: some View {
-        RoundedRectangle(cornerRadius: 12)
+        RoundedRectangle(cornerRadius: 14)
             .fill(.white.opacity(0.7))
             .overlay(
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 14)
                     .stroke(Color.black.opacity(0.12), lineWidth: 1)
             )
     }
