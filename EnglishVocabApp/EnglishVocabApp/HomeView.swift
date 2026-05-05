@@ -34,14 +34,10 @@ struct HomeView: View {
             .background(rowBackground)
     }
 
-    // MARK: - Stats grid
+    // MARK: - Stats column
 
     private var grid: some View {
-        let cols = [
-            GridItem(.flexible(), spacing: 8),
-            GridItem(.flexible(), spacing: 8)
-        ]
-        return LazyVGrid(columns: cols, spacing: 8) {
+        VStack(spacing: 8) {
             statTile(label: "全単語数", number: store.totalCount, suffix: "語")
             statTile(label: "復習リスト", number: store.reviewListWords.count, suffix: "語")
             progressTile(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
