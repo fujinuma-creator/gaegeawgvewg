@@ -8,7 +8,7 @@ struct HomeView: View {
             GeometricBackground()
                 .ignoresSafeArea()
 
-            VStack(spacing: 6) {
+            VStack(spacing: 10) {
                 Spacer(minLength: 0)
                 titleRow
                 statTile(label: "全単語数", number: store.totalCount, suffix: "語")
@@ -17,7 +17,7 @@ struct HomeView: View {
                 progressTile(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
                 Spacer(minLength: 0)
             }
-            .padding(.horizontal, 14)
+            .padding(.horizontal, 16)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .dynamicTypeSize(.medium)
@@ -26,80 +26,87 @@ struct HomeView: View {
     // MARK: - Title
 
     private var titleRow: some View {
-        Text("AI 英単語帳")
-            .font(.system(size: 20, weight: .black, design: .rounded))
-            .foregroundStyle(.black)
-            .minimumScaleFactor(0.5)
-            .lineLimit(1)
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 6)
-            .padding(.horizontal, 12)
-            .background(rowBackground)
+        VStack(spacing: 2) {
+            Text("AI 英単語帳")
+                .font(.system(size: 34, weight: .black, design: .rounded))
+                .foregroundStyle(.white)
+                .minimumScaleFactor(0.6)
+                .lineLimit(1)
+                .shadow(color: .white.opacity(0.4), radius: 8)
+            Text("AI English Vocabulary")
+                .font(.system(size: 11, weight: .medium))
+                .foregroundStyle(.white.opacity(0.6))
+                .tracking(2)
+                .lineLimit(1)
+        }
+        .padding(.vertical, 12)
+        .padding(.horizontal, 16)
+        .frame(maxWidth: .infinity)
     }
 
-    // MARK: - Tiles (centered)
+    // MARK: - Tiles (centered, white-on-translucent over space)
 
     private func statTile(label: String, number: Int, suffix: String) -> some View {
-        VStack(spacing: 2) {
+        VStack(spacing: 3) {
             Text(label)
-                .font(.system(size: 11, weight: .bold))
-                .foregroundStyle(.black.opacity(0.65))
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(.white.opacity(0.75))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            HStack(alignment: .lastTextBaseline, spacing: 3) {
+            HStack(alignment: .lastTextBaseline, spacing: 4) {
                 Text("\(number)")
-                    .font(.system(size: 20, weight: .black, design: .rounded))
-                    .foregroundStyle(.black)
+                    .font(.system(size: 26, weight: .black, design: .rounded))
+                    .foregroundStyle(.white)
                 Text(suffix)
-                    .font(.system(size: 11, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.black.opacity(0.5))
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.white.opacity(0.6))
             }
             .lineLimit(1)
             .minimumScaleFactor(0.7)
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 5)
-        .padding(.horizontal, 10)
-        .background(rowBackground)
+        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .background(tileBackground)
     }
 
     private func progressTile(label: String, done: Int, total: Int) -> some View {
         let safeTotal = max(total, 1)
         let progress = min(Double(done) / Double(safeTotal), 1.0)
-        return VStack(spacing: 2) {
+        return VStack(spacing: 3) {
             Text(label)
-                .font(.system(size: 11, weight: .bold))
-                .foregroundStyle(.black.opacity(0.65))
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(.white.opacity(0.75))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            HStack(alignment: .lastTextBaseline, spacing: 3) {
+            HStack(alignment: .lastTextBaseline, spacing: 4) {
                 Text("\(done)")
-                    .font(.system(size: 20, weight: .black, design: .rounded))
-                    .foregroundStyle(.black)
+                    .font(.system(size: 26, weight: .black, design: .rounded))
+                    .foregroundStyle(.white)
                 Text("/ \(total)")
-                    .font(.system(size: 11, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.black.opacity(0.5))
+                    .font(.system(size: 13, weight: .semibold, design: .rounded))
+                    .foregroundStyle(.white.opacity(0.6))
             }
             .lineLimit(1)
             .minimumScaleFactor(0.7)
             ProgressView(value: progress)
                 .progressViewStyle(.linear)
-                .tint(.black)
-                .scaleEffect(x: 1, y: 0.5, anchor: .center)
-                .frame(maxWidth: 160)
+                .tint(.white)
+                .scaleEffect(x: 1, y: 0.6, anchor: .center)
+                .frame(maxWidth: 180)
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 5)
-        .padding(.horizontal, 10)
-        .background(rowBackground)
+        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .background(tileBackground)
     }
 
-    private var rowBackground: some View {
-        RoundedRectangle(cornerRadius: 12)
-            .fill(.white.opacity(0.7))
+    private var tileBackground: some View {
+        RoundedRectangle(cornerRadius: 14)
+            .fill(.white.opacity(0.08))
             .overlay(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(Color.black.opacity(0.12), lineWidth: 1)
+                RoundedRectangle(cornerRadius: 14)
+                    .stroke(Color.white.opacity(0.20), lineWidth: 0.8)
             )
     }
 }

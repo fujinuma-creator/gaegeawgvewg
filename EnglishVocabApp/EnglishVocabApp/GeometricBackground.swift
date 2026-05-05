@@ -1,114 +1,123 @@
 import SwiftUI
 
-/// Soft, monochrome geometric pattern that drifts and rotates slowly.
-/// Pure SwiftUI — no images, no GPU-heavy effects. Designed to sit
-/// behind translucent or system-colored cards in any tab.
+/// Monochrome "solar system" backdrop: a glowing white sun in the center,
+/// concentric orbital rings, planets orbiting at different speeds, and a
+/// scattering of subtle starfield specks. Pure SwiftUI, animated via
+/// TimelineView so it costs nothing at rest.
 struct GeometricBackground: View {
     var body: some View {
         TimelineView(.animation) { context in
             let t = context.date.timeIntervalSinceReferenceDate
-            ZStack {
-                // Use a very light gray base so the existing white card
-                // backgrounds in the rest of the app still pop visually.
-                Color(.systemGroupedBackground)
-                concentricCircles(t: t)
-                rotatingPolygons(t: t)
-                gridLines(t: t)
-                drifters(t: t)
+            GeometryReader { geo in
+                let center = CGPoint(x: geo.size.width / 2, y: geo.size.height / 2)
+                ZStack {
+                    // Deep-space base
+                    Color.black
+
+                    // Faint twinkling stars
+                    starField(t: t, size: geo.size)
+
+                    // Orbital rings
+                    orbits(center: center, in: geo.size)
+
+                    // Glowing central sun
+                    sun(t: t)
+                        .position(center)
+
+                    // Planets traveling along the orbits
+                    planets(t: t, center: center)
+                }
             }
         }
     }
 
-    private func concentricCircles(t: TimeInterval) -> some View {
+    // MARK: - Layers
+
+    private func starField(t: TimeInterval, size: CGSize) -> some View {
+        Canvas { ctx, _ in
+            // Pseudo-random but stable layout: derive coords from indices.
+            for i in 0..<80 {
+                let xSeed = Double((i * 97 + 13) % 1000) / 1000.0
+                let ySeed = Double((i * 53 + 41) % 1000) / 1000.0
+                let x = CGFloat(xSeed) * size.width
+                let y = CGFloat(ySeed) * size.height
+                let twinkle = 0.3 + (sin(t * 1.3 + Double(i) * 0.7) + 1) * 0.25
+                let r: CGFloat = CGFloat(0.8 + Double(i % 3) * 0.5)
+                ctx.opacity = max(0, min(0.9, twinkle))
+                ctx.fill(
+                    Path(ellipseIn: CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)),
+                    with: .color(.white)
+                )
+            }
+        }
+        .allowsHitTesting(false)
+    }
+
+    private func orbits(center: CGPoint, in size: CGSize) -> some View {
         ZStack {
-            ForEach(0..<10, id: \.self) { i in
+            ForEach(1...5, id: \.self) { i in
                 Circle()
-                    .stroke(Color.black.opacity(0.05), lineWidth: 0.6)
-                    .frame(width: CGFloat(80 + i * 50), height: CGFloat(80 + i * 50))
-                    .offset(
-                        x: CGFloat(sin(t * 0.18 + Double(i) * 0.6) * 28),
-                        y: CGFloat(cos(t * 0.14 + Double(i) * 0.45) * 22)
+                    .stroke(Color.white.opacity(0.10), lineWidth: 0.6)
+                    .frame(
+                        width: CGFloat(i) * 120,
+                        height: CGFloat(i) * 120
                     )
+                    .position(center)
             }
         }
+        .frame(width: size.width, height: size.height, alignment: .center)
     }
 
-    private func rotatingPolygons(t: TimeInterval) -> some View {
+    private func sun(t: TimeInterval) -> some View {
+        let pulse = CGFloat(1.0 + sin(t * 1.6) * 0.08)
+        return ZStack {
+            // Outer glow
+            Circle()
+                .fill(
+                    RadialGradient(
+                        colors: [Color.white.opacity(0.35), Color.white.opacity(0)],
+                        center: .center,
+                        startRadius: 6,
+                        endRadius: 90
+                    )
+                )
+                .frame(width: 220, height: 220)
+            // Core
+            Circle()
+                .fill(Color.white)
+                .frame(width: 26, height: 26)
+                .shadow(color: .white.opacity(0.6), radius: 20)
+        }
+        .scaleEffect(pulse)
+    }
+
+    private func planets(t: TimeInterval, center: CGPoint) -> some View {
         ZStack {
-            ForEach(0..<3, id: \.self) { i in
-                GeometricPolygon(sides: 6)
-                    .stroke(Color.black.opacity(0.08), lineWidth: 0.8)
-                    .frame(width: CGFloat(220 + i * 120), height: CGFloat(220 + i * 120))
-                    .rotationEffect(.degrees(t * (4 + Double(i) * 1.5)))
-                    .opacity(0.9)
-            }
-            ForEach(0..<2, id: \.self) { i in
-                GeometricPolygon(sides: 3)
-                    .stroke(Color.black.opacity(0.07), lineWidth: 0.8)
-                    .frame(width: CGFloat(180 + i * 80), height: CGFloat(180 + i * 80))
-                    .rotationEffect(.degrees(-t * (3 + Double(i) * 1.2)))
+            ForEach(1...5, id: \.self) { i in
+                planet(index: i, t: t)
+                    .position(center)
             }
         }
+        .allowsHitTesting(false)
     }
 
-    private func gridLines(t: TimeInterval) -> some View {
-        Canvas { ctx, size in
-            let drift = CGFloat((sin(t * 0.05) + 1) * 20)
-            let step: CGFloat = 60
-            ctx.opacity = 0.04
-            for x in stride(from: 0 - drift, through: size.width + step, by: step) {
-                var path = Path()
-                path.move(to: CGPoint(x: x, y: 0))
-                path.addLine(to: CGPoint(x: x, y: size.height))
-                ctx.stroke(path, with: .color(.black), lineWidth: 0.5)
-            }
-            for y in stride(from: 0 - drift, through: size.height + step, by: step) {
-                var path = Path()
-                path.move(to: CGPoint(x: 0, y: y))
-                path.addLine(to: CGPoint(x: size.width, y: y))
-                ctx.stroke(path, with: .color(.black), lineWidth: 0.5)
-            }
-        }
-    }
+    @ViewBuilder
+    private func planet(index i: Int, t: TimeInterval) -> some View {
+        // Each planet has a different orbit radius, speed and starting angle.
+        let radius: CGFloat = CGFloat(i) * 60
+        let speed: Double = 0.6 / Double(i)             // outer planets are slower
+        let phase: Double = Double(i) * 1.7
+        let angle = t * speed + phase
+        let x = CGFloat(cos(angle)) * radius
+        let y = CGFloat(sin(angle)) * radius
 
-    private func drifters(t: TimeInterval) -> some View {
-        Canvas { ctx, size in
-            let centerX = size.width / 2
-            let centerY = size.height / 2
-            for i in 0..<14 {
-                let phase = Double(i) * 0.7
-                let radius = 80 + Double(i) * 18
-                let x = centerX + CGFloat(cos(t * 0.25 + phase) * radius)
-                let y = centerY + CGFloat(sin(t * 0.18 + phase * 1.2) * radius)
-                let r: CGFloat = CGFloat(2 + (i % 3))
-                let rect = CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)
-                ctx.fill(Path(ellipseIn: rect), with: .color(Color.black.opacity(0.18)))
-            }
-        }
-    }
-}
+        let diameter: CGFloat = CGFloat(8 + (i % 3) * 3)
+        let opacity: Double = 0.6 + Double(i % 3) * 0.12
 
-struct GeometricPolygon: Shape {
-    let sides: Int
-
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        guard sides >= 3 else { return path }
-        let center = CGPoint(x: rect.midX, y: rect.midY)
-        let radius = min(rect.width, rect.height) / 2
-        for i in 0..<sides {
-            let angle = (Double(i) / Double(sides)) * .pi * 2 - .pi / 2
-            let point = CGPoint(
-                x: center.x + CGFloat(cos(angle)) * radius,
-                y: center.y + CGFloat(sin(angle)) * radius
-            )
-            if i == 0 {
-                path.move(to: point)
-            } else {
-                path.addLine(to: point)
-            }
-        }
-        path.closeSubpath()
-        return path
+        Circle()
+            .fill(Color.white.opacity(opacity))
+            .frame(width: diameter, height: diameter)
+            .shadow(color: .white.opacity(0.4), radius: 4)
+            .offset(x: x, y: y)
     }
 }
