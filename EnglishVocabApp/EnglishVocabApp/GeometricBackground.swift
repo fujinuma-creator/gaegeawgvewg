@@ -50,10 +50,10 @@ struct GeometricBackground: View {
         Canvas { ctx, _ in
             let step: CGFloat = 28
             let drift = CGFloat((sin(t * 0.05) + 1) * 6)
-            ctx.opacity = 0.10
+            ctx.opacity = 0.18
             for x in stride(from: -drift, through: size.width + step, by: step) {
                 for y in stride(from: -drift, through: size.height + step, by: step) {
-                    let r: CGFloat = 0.9
+                    let r: CGFloat = 1.0
                     ctx.fill(
                         Path(ellipseIn: CGRect(x: x - r, y: y - r, width: r * 2, height: r * 2)),
                         with: .color(.black)
@@ -73,7 +73,7 @@ struct GeometricBackground: View {
     ) -> some View {
         let dimension = min(size.width, size.height) * sizeMultiplier
         return GeometryPolygon(sides: sides)
-            .stroke(Color.black.opacity(0.08), lineWidth: 0.6)
+            .stroke(Color.black.opacity(0.16), lineWidth: 0.8)
             .frame(width: dimension, height: dimension)
             .rotationEffect(.degrees(t * speed * 60))
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -83,7 +83,7 @@ struct GeometricBackground: View {
         ZStack {
             ForEach(1...count, id: \.self) { i in
                 Circle()
-                    .stroke(Color.black.opacity(0.10), lineWidth: 0.5)
+                    .stroke(Color.black.opacity(0.18), lineWidth: 0.6)
                     .frame(width: CGFloat(i) * 110, height: CGFloat(i) * 110)
                     .position(center)
             }
@@ -103,7 +103,7 @@ struct GeometricBackground: View {
                 var path = Path()
                 path.move(to: center)
                 path.addLine(to: CGPoint(x: endX, y: endY))
-                ctx.stroke(path, with: .color(Color.black.opacity(0.10)), lineWidth: 0.5)
+                ctx.stroke(path, with: .color(Color.black.opacity(0.18)), lineWidth: 0.6)
             }
         }
         .allowsHitTesting(false)

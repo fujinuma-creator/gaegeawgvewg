@@ -101,20 +101,18 @@ struct HomeView: View {
         .background(tileBackground)
     }
 
-    /// Translucent card: lets the geometric pattern faintly show through
-    /// while keeping enough contrast for the dark text on top to read.
+    /// Truly translucent card: a thin white wash so the math-paper and
+    /// solar-system elements behind it are clearly visible through the
+    /// surface, with a darker stroke and a small shadow keeping text
+    /// edges legible.
     private var tileBackground: some View {
         RoundedRectangle(cornerRadius: 14)
-            .fill(.ultraThinMaterial)
+            .fill(Color.white.opacity(0.42))
             .overlay(
                 RoundedRectangle(cornerRadius: 14)
-                    .fill(Color.white.opacity(0.35))
+                    .stroke(Color.black.opacity(0.22), lineWidth: 0.8)
             )
-            .overlay(
-                RoundedRectangle(cornerRadius: 14)
-                    .stroke(Color.black.opacity(0.18), lineWidth: 0.8)
-            )
-            .shadow(color: .black.opacity(0.05), radius: 4, y: 1)
+            .shadow(color: .black.opacity(0.06), radius: 3, y: 1)
     }
 }
 
