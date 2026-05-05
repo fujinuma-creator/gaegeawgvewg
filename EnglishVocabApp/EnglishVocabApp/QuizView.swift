@@ -605,6 +605,8 @@ struct QuizView: View {
         userTranslation = ""
     }
 
+    @State private var expandedShadowingIds: Set<UUID> = []
+
     // MARK: - Shadowing list
 
     @ViewBuilder
@@ -649,7 +651,8 @@ struct QuizView: View {
     }
 
     private func shadowingRow(index: Int, word: Word, example: ExampleSentence) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
+        let isExpanded = expandedShadowingIds.contains(example.id)
+        return VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("\(index + 1).")
                     .font(.caption.bold())
@@ -658,45 +661,60 @@ struct QuizView: View {
                     .font(.caption.bold())
                     .foregroundStyle(.indigo)
                 Spacer()
+                Button {
+                    if isExpanded {
+                        expandedShadowingIds.remove(example.id)
+                    } else {
+                        expandedShadowingIds.insert(example.id)
+                    }
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                        Text(isExpanded ? "閉じる" : "開く")
+                    }
+                    .font(.caption2.bold())
+                    .foregroundStyle(.indigo)
+                }
+                .buttonStyle(.plain)
             }
 
-            Text(example.english)
-                .font(.body)
-
-            Text(example.japanese)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-
-            HStack(spacing: 8) {
+            HStack(alignment: .top, spacing: 8) {
                 Button {
                     SpeechManager.shared.speak(example.english, rate: 0.48)
                 } label: {
-                    HStack(spacing: 4) {
-                        Image(systemName: "play.fill")
-                        Text("通常").font(.caption.bold())
-                    }
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
-                    .background(Capsule().fill(Color.indigo))
+                    Image(systemName: "play.fill")
+                        .font(.system(size: 13))
+                        .foregroundStyle(.white)
+                        .frame(width: 32, height: 32)
+                        .background(Circle().fill(Color.indigo))
                 }
                 .buttonStyle(.plain)
+                Text(example.english)
+                    .font(.body)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
 
-                Button {
-                    SpeechManager.shared.speak(example.english, rate: 0.32)
-                } label: {
-                    HStack(spacing: 4) {
-                        Image(systemName: "tortoise.fill")
-                        Text("ゆっくり").font(.caption.bold())
-                    }
-                    .foregroundStyle(.indigo)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
-                    .background(Capsule().fill(Color.indigo.opacity(0.12)))
+            if isExpanded {
+                Divider().padding(.vertical, 2)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("日本語訳").font(.caption2).foregroundStyle(.tertiary)
+                    Text(example.japanese)
+                        .font(.subheadline)
+                        .foregroundStyle(.primary)
                 }
-                .buttonStyle(.plain)
-
-                Spacer()
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("文法・語法の解説").font(.caption2).foregroundStyle(.tertiary)
+                    if let grammar = example.grammar?.trimmingCharacters(in: .whitespacesAndNewlines),
+                       !grammar.isEmpty {
+                        Text(grammar)
+                            .font(.subheadline)
+                            .foregroundStyle(.primary)
+                    } else {
+                        Text("この例文には解説がまだありません。「新しい例文を生成」で更新できます。")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
             }
         }
         .padding(14)
