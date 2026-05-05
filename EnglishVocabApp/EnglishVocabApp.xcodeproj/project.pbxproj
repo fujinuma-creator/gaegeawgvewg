@@ -24,6 +24,7 @@
 		2000000000000000000000B1 /* RandomOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000B1 /* RandomOrder.swift */; };
 		2000000000000000000000B2 /* ShadowingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000B2 /* ShadowingListView.swift */; };
 		2000000000000000000000B3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000B3 /* HomeView.swift */; };
+		2000000000000000000000B4 /* GeometricBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000B4 /* GeometricBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		1000000000000000000000B1 /* RandomOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomOrder.swift; sourceTree = "<group>"; };
 		1000000000000000000000B2 /* ShadowingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowingListView.swift; sourceTree = "<group>"; };
 		1000000000000000000000B3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1000000000000000000000B4 /* GeometricBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricBackground.swift; sourceTree = "<group>"; };
 		1000000000000000000000B0 /* EnglishVocabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishVocabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				1000000000000000000000B1 /* RandomOrder.swift */,
 				1000000000000000000000B2 /* ShadowingListView.swift */,
 				1000000000000000000000B3 /* HomeView.swift */,
+				1000000000000000000000B4 /* GeometricBackground.swift */,
 				1000000000000000000000A5 /* ReviewView.swift */,
 				1000000000000000000000A6 /* AddWordView.swift */,
 				1000000000000000000000A7 /* WordListView.swift */,
@@ -188,6 +191,7 @@
 				2000000000000000000000B1 /* RandomOrder.swift in Sources */,
 				2000000000000000000000B2 /* ShadowingListView.swift in Sources */,
 				2000000000000000000000B3 /* HomeView.swift in Sources */,
+				2000000000000000000000B4 /* GeometricBackground.swift in Sources */,
 				2000000000000000000000A5 /* ReviewView.swift in Sources */,
 				2000000000000000000000A6 /* AddWordView.swift in Sources */,
 				2000000000000000000000A7 /* WordListView.swift in Sources */,

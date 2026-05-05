@@ -57,7 +57,7 @@ struct ReviewView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .background(Color(.systemGroupedBackground).ignoresSafeArea())
+        .background(GeometricBackground().ignoresSafeArea())
         .alert("進捗をリセットしますか？", isPresented: $showResetAlert) {
             Button("キャンセル", role: .cancel) {}
             Button("リセット", role: .destructive) {

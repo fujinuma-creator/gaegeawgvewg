@@ -82,7 +82,7 @@ struct WordListView: View {
                 ShadowingListView()
             }
         }
-        .background(Color(.systemGroupedBackground).ignoresSafeArea())
+        .background(GeometricBackground().ignoresSafeArea())
         .overlay(alignment: .bottomTrailing) {
             if section == .list {
                 Button {

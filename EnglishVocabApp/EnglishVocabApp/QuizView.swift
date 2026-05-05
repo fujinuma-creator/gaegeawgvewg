@@ -131,7 +131,7 @@ struct QuizView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemGroupedBackground).ignoresSafeArea())
+        .background(GeometricBackground().ignoresSafeArea())
         .onAppear { if currentWord == nil { nextQuestion() } }
         .onChange(of: mode) { _, _ in
             // Reset session counters and start a fresh question whenever
