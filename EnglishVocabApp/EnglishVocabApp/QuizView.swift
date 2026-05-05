@@ -67,32 +67,56 @@ struct QuizView: View {
     @AppStorage("translation.wordId") private var savedTranslationWordId: String = ""
     @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
 
+    /// Words from the review list that are eligible to be the *question*
+    /// for the current mode: not yet 復習完了 AND due now under the
+    /// Ebbinghaus schedule AND have the content the mode needs.
     private var eligibleWords: [Word] {
-        // Quiz draws only from the user's review list (auto-expires after 7 days),
-        // skipping words that have reached 復習完了 (reviewCount >= 4) and only
-        // showing words that are due now under the Ebbinghaus schedule.
         let now = Date()
         let pinned = store.reviewListWords.filter {
             $0.reviewCount < 4 && $0.nextReviewDate <= now
         }
+        return filterByModeContent(pinned)
+    }
+
+    /// All non-completed pinned words that satisfy the mode's content
+    /// requirements. Used as the *distractor* pool for multiple-choice
+    /// modes, so we can still build 4 options when only a couple of
+    /// words are actually due today.
+    private var distractorPool: [Word] {
+        let pinned = store.reviewListWords.filter { $0.reviewCount < 4 }
+        return filterByModeContent(pinned)
+    }
+
+    private func filterByModeContent(_ words: [Word]) -> [Word] {
         switch mode {
         case .useCase:
-            return pinned.filter { !$0.useCases.isEmpty }
+            return words.filter { !$0.useCases.isEmpty }
         case .definition:
-            return pinned.filter {
+            return words.filter {
                 !$0.definitionEnglish.trimmingCharacters(in: .whitespaces).isEmpty
             }
         case .translation:
-            return pinned.filter { !$0.examples.isEmpty }
+            return words.filter { !$0.examples.isEmpty }
         }
     }
 
-    /// True when the user has at least one word pinned to the review list,
-    /// but none of them are due / not yet completed for the current mode.
-    /// In that case we celebrate with "本日のタスクは終了しました".
+    /// Can we actually run the quiz right now?
+    private var canShowQuiz: Bool {
+        guard !eligibleWords.isEmpty else { return false }
+        switch mode {
+        case .useCase, .definition:
+            return distractorPool.count >= 4
+        case .translation:
+            return true
+        }
+    }
+
+    /// True when the user has at least one word pinned but no eligible
+    /// question word remains today (everything is either 復習完了 or
+    /// scheduled out by the Ebbinghaus curve). Triggers the
+    /// "本日のタスクは終了しました" celebration view.
     private var allTasksDone: Bool {
-        guard !store.reviewListWords.isEmpty else { return false }
-        return eligibleWords.isEmpty
+        !store.reviewListWords.isEmpty && eligibleWords.isEmpty
     }
 
     var body: some View {
@@ -115,7 +139,7 @@ struct QuizView: View {
             .pickerStyle(.segmented)
             .padding(.horizontal, 16)
 
-            if eligibleWords.count < mode.minimumEligible {
+            if !canShowQuiz {
                 Spacer()
                 if allTasksDone {
                     VStack(spacing: 12) {
@@ -392,8 +416,7 @@ struct QuizView: View {
     }
 
     private func nextQuestion() {
-        let pool = eligibleWords.shuffled()
-        guard pool.count >= mode.minimumEligible else {
+        guard canShowQuiz else {
             currentWord = nil
             choices = []
             currentExample = nil
@@ -416,10 +439,17 @@ struct QuizView: View {
             return
         }
 
-        let answerWord = pool[0]
+        // Multiple choice: question word from eligibleWords (due + not
+        // completed), distractors from the broader distractorPool so we can
+        // always assemble 4 options even if only one or two words are due.
+        let dueShuffled = eligibleWords.shuffled()
+        guard let answerWord = dueShuffled.first else { return }
         guard let correctText = choiceText(for: answerWord) else { return }
 
-        let distractorWords = pool.dropFirst().prefix(3)
+        let distractorWords = distractorPool
+            .filter { $0.id != answerWord.id }
+            .shuffled()
+            .prefix(3)
         let distractors: [QuizChoice] = distractorWords.compactMap { dw in
             guard let t = choiceText(for: dw) else { return nil }
             return QuizChoice(text: t, sourceWord: dw)
