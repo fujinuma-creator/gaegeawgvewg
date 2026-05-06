@@ -16,6 +16,8 @@ enum SeedData {
             + extraNouns + extraIdioms2
             + extraPhrasalVerbs3 + extraVerbs3 + extraAdjectives3
             + extraNouns3 + extraConnectives3
+            + casualPhrasals + casualFillers + reactionWords
+            + casualIdioms + emotionStates
     }
 
     private static func make(
@@ -3674,6 +3676,517 @@ enum SeedData {
                  examples: [
                     ("Considering that, well done.", "それを考えれば、よくやった。"),
                     ("Considering that, fair.", "それを踏まえれば妥当。")
+                 ])
+        ]
+    }
+
+    // MARK: - 句動詞・カジュアル（追加 16）
+
+    private static var casualPhrasals: [Word] {
+        [
+            make("hang in there", "stay strong; keep going",
+                 "頑張れ・耐えて",
+                 useCases: ["くじけそうな相手を励ますとき"],
+                 examples: [
+                    ("Hang in there!", "頑張って！"),
+                    ("Just hang in there a bit longer.", "もう少し耐えて。")
+                 ]),
+            make("freak out", "panic or get very upset",
+                 "パニックになる・取り乱す",
+                 useCases: ["びっくりしすぎて慌てる話"],
+                 examples: [
+                    ("Don't freak out.", "パニックにならないで。"),
+                    ("She freaked out when she saw it.", "彼女、見てパニックになった。")
+                 ]),
+            make("calm down", "become less upset",
+                 "落ち着く",
+                 useCases: ["興奮している人をなだめるとき"],
+                 examples: [
+                    ("Calm down, it's fine.", "落ち着いて、大丈夫だから。"),
+                    ("Just calm down for a sec.", "ちょっと落ち着いて。")
+                 ]),
+            make("cut it out", "stop doing something annoying",
+                 "やめろ",
+                 useCases: ["うるさい行為を止めるとき"],
+                 examples: [
+                    ("Cut it out!", "やめて！"),
+                    ("Hey, cut it out.", "おい、やめろよ。")
+                 ]),
+            make("get out", "leave; or expression of disbelief",
+                 "出て行け・うそでしょ",
+                 useCases: ["強く追い出すとき", "信じられない時の感嘆として"],
+                 examples: [
+                    ("Get out of here.", "出てけ。"),
+                    ("Get out! No way!", "うそでしょ！マジで！？")
+                 ]),
+            make("come on", "hurry up; expression of disbelief",
+                 "早く・冗談でしょ",
+                 useCases: ["急かすとき", "ありえない反応をするとき"],
+                 examples: [
+                    ("Come on, let's go!", "ほら、行こう！"),
+                    ("Oh come on, really?", "ちょっと、マジで？")
+                 ]),
+            make("hang on", "wait a moment",
+                 "待って・ちょっと",
+                 useCases: ["相手にちょっと待ってと言うとき"],
+                 examples: [
+                    ("Hang on a sec.", "ちょっと待って。"),
+                    ("Hang on, let me check.", "待って、確認する。")
+                 ]),
+            make("mess around", "fool around; play",
+                 "ふざける・遊ぶ",
+                 useCases: ["友達とじゃれてる話", "真面目にやらない話"],
+                 examples: [
+                    ("Stop messing around.", "ふざけないで。"),
+                    ("We were just messing around.", "ただふざけてただけ。")
+                 ]),
+            make("goof off", "slack off; mess around",
+                 "サボる・ふざける",
+                 useCases: ["仕事や勉強をさぼる話"],
+                 examples: [
+                    ("Don't goof off in class.", "授業中ふざけるな。"),
+                    ("They were goofing off all day.", "彼ら一日中サボってた。")
+                 ]),
+            make("chill out", "relax; calm down",
+                 "リラックスする",
+                 useCases: ["焦ってる相手をなだめるとき"],
+                 examples: [
+                    ("Just chill out.", "リラックスして。"),
+                    ("Let's chill out tonight.", "今夜はゆっくりしよう。")
+                 ]),
+            make("speed up", "go faster",
+                 "早めて・スピードを上げる",
+                 useCases: ["急ぐよう促すとき"],
+                 examples: [
+                    ("Speed up, we're late.", "急いで、遅れるよ。"),
+                    ("Can you speed it up?", "もっと早くできる？")
+                 ]),
+            make("swing by", "make a quick stop",
+                 "ちょっと寄る",
+                 useCases: ["軽く立ち寄る予定の話"],
+                 examples: [
+                    ("I'll swing by later.", "後でちょっと寄るね。"),
+                    ("Swing by the store.", "店にちょっと寄って。")
+                 ]),
+            make("head out", "leave; depart",
+                 "出る・出発する",
+                 useCases: ["そろそろ帰る・出発する話"],
+                 examples: [
+                    ("I gotta head out.", "そろそろ出るね。"),
+                    ("We'll head out around 8.", "8時くらいに出るよ。")
+                 ]),
+            make("get going", "start moving; depart",
+                 "出発する・取りかかる",
+                 useCases: ["移動や作業を始める話"],
+                 examples: [
+                    ("Let's get going.", "そろそろ行こう。"),
+                    ("Time to get going.", "もう出発の時間。")
+                 ]),
+            make("wrap up", "finish; conclude",
+                 "終わらせる・まとめる",
+                 useCases: ["仕事や会議を締めくくる話"],
+                 examples: [
+                    ("Let's wrap this up.", "これ終わらせよう。"),
+                    ("I'll wrap up by 5.", "5時までに片付ける。")
+                 ]),
+            make("screw up", "make a serious mistake",
+                 "失敗する・ヘマする",
+                 useCases: ["大きなミスをした話"],
+                 examples: [
+                    ("I really screwed up.", "完全にやらかした。"),
+                    ("Don't screw it up.", "ミスらないで。")
+                 ])
+        ]
+    }
+
+    // MARK: - カジュアル口語フィラー（追加 10）
+
+    private static var casualFillers: [Word] {
+        [
+            make("no way", "absolutely not; that's incredible",
+                 "ありえない・うそでしょ",
+                 useCases: ["強い拒否や驚きを表すとき"],
+                 examples: [
+                    ("No way!", "ありえない！"),
+                    ("No way, really?", "うそ、マジで？")
+                 ]),
+            make("so what", "why does that matter?",
+                 "だから何？",
+                 useCases: ["相手の主張を軽く突き返すとき"],
+                 examples: [
+                    ("So what?", "だから何？"),
+                    ("So what if I do?", "だから何？やってもいいでしょ。")
+                 ]),
+            make("not really", "not exactly; a soft no",
+                 "そうでもない・別に",
+                 useCases: ["否定をやんわり伝えるとき"],
+                 examples: [
+                    ("Not really, no.", "うーん、別に。"),
+                    ("Tired? Not really.", "疲れてる？まあそうでもない。")
+                 ]),
+            make("kind of like", "somewhat similar to",
+                 "みたいな感じ",
+                 useCases: ["何かに似ていると説明するとき"],
+                 examples: [
+                    ("It's kind of like Twitter.", "Twitter みたいな感じ。"),
+                    ("Kind of like a hat, but bigger.", "帽子みたいだけど大きい。")
+                 ]),
+            make("or whatever", "or something similar",
+                 "か何か",
+                 useCases: ["はっきり指定せずぼかすとき"],
+                 examples: [
+                    ("Pizza or whatever.", "ピザか何か。"),
+                    ("Friday or whatever works.", "金曜とか、都合つく日で。")
+                 ]),
+            make("pretty much", "almost completely",
+                 "ほぼ・大体",
+                 useCases: ["ほぼ完了している話を伝えるとき"],
+                 examples: [
+                    ("Pretty much done.", "ほぼ終わってる。"),
+                    ("That's pretty much it.", "まあそんなとこ。")
+                 ]),
+            make("more or less", "approximately; roughly",
+                 "だいたい・ほぼ",
+                 useCases: ["大雑把に言うとき"],
+                 examples: [
+                    ("More or less, yeah.", "まあだいたいそんな感じ。"),
+                    ("More or less the same.", "ほぼ同じ。")
+                 ]),
+            make("big time", "to a great extent",
+                 "超・めっちゃ",
+                 useCases: ["強調したいとき"],
+                 examples: [
+                    ("I owe you big time.", "めっちゃ恩がある。"),
+                    ("He messed up big time.", "彼、超やらかした。")
+                 ]),
+            make("for sure", "definitely; absolutely",
+                 "確かに・もちろん",
+                 useCases: ["強く同意するとき"],
+                 examples: [
+                    ("For sure!", "もちろん！"),
+                    ("That's a yes for sure.", "それは確実にYES。")
+                 ]),
+            make("no doubt", "without question",
+                 "間違いない",
+                 useCases: ["疑いなく賛同するとき"],
+                 examples: [
+                    ("No doubt about it.", "間違いない。"),
+                    ("She'll win, no doubt.", "彼女が勝つよ、間違いなく。")
+                 ])
+        ]
+    }
+
+    // MARK: - リアクション・返事（追加 20）
+
+    private static var reactionWords: [Word] {
+        [
+            make("my bad", "my mistake; sorry",
+                 "ごめん・私のミス",
+                 useCases: ["軽く謝るとき"],
+                 examples: [
+                    ("My bad.", "ごめん。"),
+                    ("Oh, my bad — didn't see you.", "あ、ごめん、気づかなかった。")
+                 ]),
+            make("no worries", "don't worry; it's fine",
+                 "気にしないで",
+                 useCases: ["相手の謝罪を軽く受け流すとき"],
+                 examples: [
+                    ("No worries!", "気にしないで！"),
+                    ("No worries, it's fine.", "大丈夫、平気だよ。")
+                 ]),
+            make("no problem", "no trouble at all",
+                 "問題ない・どういたしまして",
+                 useCases: ["お礼に応えるとき"],
+                 examples: [
+                    ("No problem!", "どういたしまして！"),
+                    ("No problem, anytime.", "全然大丈夫、いつでも。")
+                 ]),
+            make("no biggie", "not a big deal",
+                 "大したことない",
+                 useCases: ["軽く済ませるとき"],
+                 examples: [
+                    ("It's no biggie.", "大したことないよ。"),
+                    ("No biggie, forget it.", "気にしないで、忘れて。")
+                 ]),
+            make("no sweat", "no problem; easy",
+                 "楽勝・問題なし",
+                 useCases: ["余裕でできると伝えるとき"],
+                 examples: [
+                    ("No sweat.", "楽勝。"),
+                    ("Yeah, no sweat.", "うん、余裕。")
+                 ]),
+            make("you bet", "of course; certainly",
+                 "もちろん",
+                 useCases: ["快く同意するとき"],
+                 examples: [
+                    ("You bet!", "もちろん！"),
+                    ("You bet I will.", "やるに決まってる。")
+                 ]),
+            make("you got it", "got it; I'll do it",
+                 "任せて・了解",
+                 useCases: ["頼みを快く引き受けるとき"],
+                 examples: [
+                    ("You got it!", "任せて！"),
+                    ("You got it, boss.", "了解、ボス。")
+                 ]),
+            make("got it", "I understand",
+                 "分かった",
+                 useCases: ["内容を理解したと伝えるとき"],
+                 examples: [
+                    ("Got it.", "分かった。"),
+                    ("Got it, thanks.", "了解、ありがとう。")
+                 ]),
+            make("gotcha", "I understand; got you",
+                 "分かった・捕まえた",
+                 useCases: ["カジュアルに「了解」と伝えるとき"],
+                 examples: [
+                    ("Gotcha.", "了解。"),
+                    ("Gotcha, makes sense.", "なるほど、わかる。")
+                 ]),
+            make("right on", "exactly; cool",
+                 "その通り・いいね",
+                 useCases: ["賛同や称賛を軽く伝えるとき"],
+                 examples: [
+                    ("Right on!", "いいね！"),
+                    ("Right on, dude.", "その通りだよ。")
+                 ]),
+            make("way to go", "good job",
+                 "よくやった",
+                 useCases: ["称賛するとき（皮肉でも）"],
+                 examples: [
+                    ("Way to go!", "やったね！"),
+                    ("Hey, way to go!", "よくやった！")
+                 ]),
+            make("good for you", "I'm happy for you",
+                 "よかったね",
+                 useCases: ["相手の成功を喜ぶとき"],
+                 examples: [
+                    ("Good for you!", "よかったね！"),
+                    ("Aww, good for you.", "わー、よかったじゃん。")
+                 ]),
+            make("lucky you", "lucky on your part",
+                 "いいなあ・うらやましい",
+                 useCases: ["相手をうらやむとき"],
+                 examples: [
+                    ("Lucky you!", "いいなあ！"),
+                    ("Lucky you got the day off.", "休みもらえてラッキーだね。")
+                 ]),
+            make("bummer", "that's too bad",
+                 "残念",
+                 useCases: ["残念な話に共感するとき"],
+                 examples: [
+                    ("That's a bummer.", "それは残念。"),
+                    ("Aw, bummer.", "あー、残念。")
+                 ]),
+            make("shoot", "darn; mild expression of frustration",
+                 "しまった",
+                 useCases: ["軽く失敗した時の独り言"],
+                 examples: [
+                    ("Shoot, I forgot.", "しまった、忘れた。"),
+                    ("Shoot!", "しまった！")
+                 ]),
+            make("dang", "dammit (mild)",
+                 "くそ・ちぇっ",
+                 useCases: ["軽くがっかりした時の表現"],
+                 examples: [
+                    ("Dang, that's expensive.", "くそっ、高い。"),
+                    ("Dang it.", "ちぇっ。")
+                 ]),
+            make("darn", "darn; mild expletive",
+                 "ちくしょう",
+                 useCases: ["軽い悔しさ"],
+                 examples: [
+                    ("Darn, I missed it.", "ちくしょう、逃した。"),
+                    ("Darn it!", "ちぇっ！")
+                 ]),
+            make("crap", "expression of frustration",
+                 "まずい・くそ",
+                 useCases: ["失敗・困った時の口語"],
+                 examples: [
+                    ("Crap, I forgot my keys.", "まずい、鍵忘れた。"),
+                    ("Oh crap.", "やばい。")
+                 ]),
+            make("whoops", "oops; I made a small mistake",
+                 "おっと",
+                 useCases: ["小さなミスをした時"],
+                 examples: [
+                    ("Whoops, sorry!", "おっと、ごめん！"),
+                    ("Whoops, my bad.", "あ、ごめんごめん。")
+                 ]),
+            make("oops", "oh, a small mistake",
+                 "しまった",
+                 useCases: ["うっかりミスを伝えるとき"],
+                 examples: [
+                    ("Oops!", "しまった！"),
+                    ("Oops, I dropped it.", "あ、落とした。")
+                 ])
+        ]
+    }
+
+    // MARK: - 口語イディオム（追加 12）
+
+    private static var casualIdioms: [Word] {
+        [
+            make("hit the road", "leave; start a journey",
+                 "出発する",
+                 useCases: ["そろそろ出ようと言うとき"],
+                 examples: [
+                    ("Time to hit the road.", "そろそろ出発しよう。"),
+                    ("Let's hit the road.", "出発しよう。")
+                 ]),
+            make("call it a night", "end the day; go to sleep",
+                 "今夜はもう寝る・お開きにする",
+                 useCases: ["夜の集まりを終える話"],
+                 examples: [
+                    ("Let's call it a night.", "そろそろ寝よう。"),
+                    ("I'm calling it a night.", "もう寝るね。")
+                 ]),
+            make("grab a bite", "eat a quick meal",
+                 "軽く食べる",
+                 useCases: ["気軽に食事に行く話"],
+                 examples: [
+                    ("Wanna grab a bite?", "ちょっと食べに行く？"),
+                    ("Let's grab a bite.", "軽く食べに行こう。")
+                 ]),
+            make("grab coffee", "go for coffee",
+                 "コーヒーを飲みに行く",
+                 useCases: ["カジュアルにお茶しようと誘うとき"],
+                 examples: [
+                    ("Wanna grab coffee?", "コーヒー行く？"),
+                    ("Let's grab coffee tomorrow.", "明日コーヒーしよう。")
+                 ]),
+            make("catch some Z's", "get some sleep",
+                 "ひと眠りする",
+                 useCases: ["眠りに行くカジュアルな表現"],
+                 examples: [
+                    ("Gonna catch some Z's.", "ちょっと寝てくる。"),
+                    ("Need to catch some Z's.", "ひと眠りしないと。")
+                 ]),
+            make("be beat", "be very tired",
+                 "疲れ果てている",
+                 useCases: ["疲労を伝える口語表現"],
+                 examples: [
+                    ("I'm beat.", "もうクタクタ。"),
+                    ("She looks beat.", "彼女、疲れて見える。")
+                 ]),
+            make("be wiped out", "be exhausted",
+                 "クタクタ・へとへと",
+                 useCases: ["極度に疲れているとき"],
+                 examples: [
+                    ("I'm wiped out.", "もうへとへと。"),
+                    ("Wiped out from work.", "仕事でクタクタ。")
+                 ]),
+            make("butter up", "flatter to gain favor",
+                 "おだてる・機嫌を取る",
+                 useCases: ["お世辞を言って何か頼む話"],
+                 examples: [
+                    ("Stop trying to butter me up.", "おだてないで。"),
+                    ("He's buttering up the boss.", "彼、上司にゴマすってる。")
+                 ]),
+            make("bail on", "back out of plans",
+                 "約束をすっぽかす",
+                 useCases: ["予定を急にキャンセルする話"],
+                 examples: [
+                    ("She bailed on me.", "彼女、ドタキャンした。"),
+                    ("Don't bail on us!", "ドタキャンしないで！")
+                 ]),
+            make("flake out", "fail to show up; cancel last minute",
+                 "ドタキャンする",
+                 useCases: ["人の信用を落とすキャンセル行動"],
+                 examples: [
+                    ("He flaked out again.", "またドタキャンされた。"),
+                    ("Don't flake out on me.", "ドタキャンしないで。")
+                 ]),
+            make("chicken out", "lose courage and back away",
+                 "ビビる・尻込みする",
+                 useCases: ["怖気付いてやめる話"],
+                 examples: [
+                    ("Don't chicken out!", "ビビるなよ！"),
+                    ("I chickened out.", "怖くてやめちゃった。")
+                 ]),
+            make("suck up to", "flatter to gain favor",
+                 "ゴマをする",
+                 useCases: ["上司に媚びる話"],
+                 examples: [
+                    ("He always sucks up to the boss.", "彼、いつも上司にゴマすってる。"),
+                    ("Stop sucking up.", "ゴマすりやめて。")
+                 ])
+        ]
+    }
+
+    // MARK: - 感情・状態（追加 10）
+
+    private static var emotionStates: [Word] {
+        [
+            make("bummed", "feeling down; disappointed",
+                 "落ち込んでる・がっかり",
+                 useCases: ["残念な気持ちを伝えるとき"],
+                 examples: [
+                    ("I'm so bummed.", "めっちゃ落ち込んでる。"),
+                    ("Bummed about the trip.", "旅行行けなくてがっかり。")
+                 ]),
+            make("stressed out", "very stressed",
+                 "ストレスでまいってる",
+                 useCases: ["ストレス過剰な状態を伝えるとき"],
+                 examples: [
+                    ("I'm stressed out.", "もうストレスたまってる。"),
+                    ("She's super stressed out.", "彼女、めっちゃストレスためてる。")
+                 ]),
+            make("freaked out", "shocked or panicked",
+                 "びっくりした・動揺した",
+                 useCases: ["びっくりして動揺した話"],
+                 examples: [
+                    ("I was so freaked out.", "めっちゃびっくりした。"),
+                    ("She looked freaked out.", "彼女、動揺してた。")
+                 ]),
+            make("psyched", "very excited",
+                 "ワクワクしてる",
+                 useCases: ["楽しみで仕方ない気持ちを伝えるとき"],
+                 examples: [
+                    ("I'm psyched!", "めっちゃ楽しみ！"),
+                    ("Totally psyched for the trip.", "旅行ワクワクしてる。")
+                 ]),
+            make("stoked", "extremely excited",
+                 "めっちゃ興奮してる",
+                 useCases: ["カジュアルに興奮を表すとき"],
+                 examples: [
+                    ("I'm stoked!", "めっちゃテンション上がってる！"),
+                    ("Stoked to see you.", "会えるの楽しみ。")
+                 ]),
+            make("pumped", "fired up; energized",
+                 "気合入ってる・テンション高い",
+                 useCases: ["やる気満々の状態を表すとき"],
+                 examples: [
+                    ("I'm pumped for this!", "これ、めっちゃテンション上がる！"),
+                    ("She's pumped up.", "彼女、気合入ってる。")
+                 ]),
+            make("wasted", "drunk; or exhausted",
+                 "酔っ払い・疲れ果て",
+                 useCases: ["酔っている話", "完全に疲れた話"],
+                 examples: [
+                    ("He got wasted last night.", "彼、昨夜ベロベロだった。"),
+                    ("I'm wasted from work.", "仕事でぐったり。")
+                 ]),
+            make("jet-lagged", "suffering from jet lag",
+                 "時差ボケ",
+                 useCases: ["長距離フライト後のだるさ"],
+                 examples: [
+                    ("I'm so jet-lagged.", "時差ボケがひどい。"),
+                    ("Still jet-lagged from Japan.", "日本からの時差ボケが残ってる。")
+                 ]),
+            make("starving", "very hungry",
+                 "めっちゃお腹空いた",
+                 useCases: ["強い空腹を表すとき"],
+                 examples: [
+                    ("I'm starving!", "お腹ペコペコ！"),
+                    ("Starving — let's eat.", "お腹空いた、食べよう。")
+                 ]),
+            make("full", "no longer hungry",
+                 "お腹いっぱい",
+                 useCases: ["食事の後で満腹を伝えるとき"],
+                 examples: [
+                    ("I'm full.", "お腹いっぱい。"),
+                    ("So full I can't move.", "満腹で動けない。")
                  ])
         ]
     }
