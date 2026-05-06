@@ -18,6 +18,9 @@ enum SeedData {
             + extraNouns3 + extraConnectives3
             + casualPhrasals + casualFillers + reactionWords
             + casualIdioms + emotionStates
+            + casualPhrasals4 + casualVerbs4 + casualAdjectives4
+            + casualNouns4 + casualIdioms4 + casualConnectives4
+            + grammarPhrases4
     }
 
     private static func make(
@@ -4187,6 +4190,727 @@ enum SeedData {
                  examples: [
                     ("I'm full.", "お腹いっぱい。"),
                     ("So full I can't move.", "満腹で動けない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 句動詞（追加 25）
+
+    private static var casualPhrasals4: [Word] {
+        [
+            make("blow off", "ignore; skip out on",
+                 "すっぽかす・無視する",
+                 useCases: ["約束を無視する話", "課題を放置する話"],
+                 examples: [
+                    ("He blew off the meeting.", "彼、会議すっぽかした。"),
+                    ("Don't blow it off.", "無視しないで。")
+                 ]),
+            make("brush off", "dismiss casually",
+                 "軽くあしらう・無視する",
+                 useCases: ["相手の発言を軽く受け流す話"],
+                 examples: [
+                    ("She brushed me off.", "彼女、私を軽くあしらった。"),
+                    ("Don't brush it off.", "軽くあしらわないで。")
+                 ]),
+            make("brush up on", "review or refresh skills",
+                 "復習する・腕を磨き直す",
+                 useCases: ["スキルを再確認する話"],
+                 examples: [
+                    ("I need to brush up on my Spanish.", "スペイン語復習しないと。"),
+                    ("Brush up on the basics.", "基礎を復習して。")
+                 ]),
+            make("catch on", "understand; become popular",
+                 "理解する・流行る",
+                 useCases: ["新しい流れに気づく話", "コツを掴む話"],
+                 examples: [
+                    ("She caught on quickly.", "彼女、すぐに理解した。"),
+                    ("This trend is catching on.", "この流行、広がってる。")
+                 ]),
+            make("come around", "change one's mind; regain consciousness",
+                 "考えを変える・意識を取り戻す",
+                 useCases: ["相手が納得し始める話", "気絶から意識が戻る話"],
+                 examples: [
+                    ("He'll come around eventually.", "そのうち彼も納得するよ。"),
+                    ("She came around after fainting.", "彼女、気絶から意識が戻った。")
+                 ]),
+            make("cop out", "back out; make excuses",
+                 "言い逃れする・逃げる",
+                 useCases: ["責任から逃げる話"],
+                 examples: [
+                    ("Don't cop out.", "逃げないで。"),
+                    ("That's a cop-out answer.", "それは逃げの答えだ。")
+                 ]),
+            make("crack down on", "enforce strictly",
+                 "厳しく取り締まる",
+                 useCases: ["違反者を厳しく取り締まる話"],
+                 examples: [
+                    ("They cracked down on speeders.", "スピード違反を取り締まった。"),
+                    ("Cops are cracking down.", "警察が取り締まり強化してる。")
+                 ]),
+            make("doll up", "dress up nicely",
+                 "めかしこむ",
+                 useCases: ["きれいに着飾る話"],
+                 examples: [
+                    ("She dolled up for the party.", "彼女、パーティー用にめかしこんだ。"),
+                    ("All dolled up tonight!", "今夜はバッチリ決めてるね！")
+                 ]),
+            make("drag out", "make something take longer",
+                 "長引かせる",
+                 useCases: ["話や手続きを引き延ばす話"],
+                 examples: [
+                    ("Don't drag this out.", "長引かせないで。"),
+                    ("They dragged out the meeting.", "会議を引き延ばした。")
+                 ]),
+            make("drum up", "gather; stir up",
+                 "かき集める・盛り上げる",
+                 useCases: ["興味や支援を集める話"],
+                 examples: [
+                    ("Drum up some support.", "支持を集めよう。"),
+                    ("Trying to drum up business.", "ビジネスを盛り上げようとしてる。")
+                 ]),
+            make("gloss over", "treat superficially; cover up",
+                 "ごまかす・うわべを取り繕う",
+                 useCases: ["重要な点を流して説明する話"],
+                 examples: [
+                    ("He glossed over the details.", "彼、細かい部分はごまかした。"),
+                    ("Don't gloss over it.", "適当にごまかさないで。")
+                 ]),
+            make("goof around", "fool around; loaf about",
+                 "ぶらぶら遊ぶ・だらける",
+                 useCases: ["特に目的なく遊ぶ話"],
+                 examples: [
+                    ("We goofed around all day.", "一日中ダラダラ遊んでた。"),
+                    ("Stop goofing around.", "ふざけてないで。")
+                 ]),
+            make("harp on", "talk about repeatedly",
+                 "くどくどと言う",
+                 useCases: ["同じ話を繰り返し蒸し返す話"],
+                 examples: [
+                    ("Stop harping on about it.", "そのことくどくど言わないで。"),
+                    ("She always harps on about money.", "彼女、いつもお金の話ばっかり。")
+                 ]),
+            make("hash out", "discuss to resolve",
+                 "議論して解決する",
+                 useCases: ["問題を話し合いで詰める話"],
+                 examples: [
+                    ("Let's hash it out.", "話し合って決めよう。"),
+                    ("We hashed out a plan.", "計画をまとめた。")
+                 ]),
+            make("kick back", "relax; chill",
+                 "くつろぐ・リラックス",
+                 useCases: ["仕事終わりにのんびりする話"],
+                 examples: [
+                    ("Just kick back and relax.", "ただゆっくりしよう。"),
+                    ("Kick back with a beer.", "ビール片手にくつろぐ。")
+                 ]),
+            make("knuckle down", "buckle down; work seriously",
+                 "真剣に取り組む",
+                 useCases: ["気合を入れて作業する話"],
+                 examples: [
+                    ("Time to knuckle down.", "本気出す時間だ。"),
+                    ("Knuckle down and study.", "本気で勉強しよう。")
+                 ]),
+            make("muscle in", "force one's way in",
+                 "強引に割り込む",
+                 useCases: ["強引に介入する話"],
+                 examples: [
+                    ("He muscled in on the deal.", "彼、その案件に強引に割り込んだ。"),
+                    ("Don't muscle in.", "強引に入ってこないで。")
+                 ]),
+            make("nail down", "pin down; finalize",
+                 "はっきりさせる・確定する",
+                 useCases: ["不確定なことを固める話"],
+                 examples: [
+                    ("Let's nail down the date.", "日付を確定させよう。"),
+                    ("Nail down the details.", "細部を詰めて。")
+                 ]),
+            make("own up", "admit; confess",
+                 "認める・白状する",
+                 useCases: ["悪いことを正直に告白する話"],
+                 examples: [
+                    ("Own up to it.", "正直に認めて。"),
+                    ("He finally owned up.", "彼ついに白状した。")
+                 ]),
+            make("rope into", "persuade or trick into",
+                 "巻き込む・引き込む",
+                 useCases: ["気が乗らないことを誘い込む話"],
+                 examples: [
+                    ("She roped me into helping.", "彼女に手伝いに引き込まれた。"),
+                    ("Don't rope me into this.", "これに巻き込まないで。")
+                 ]),
+            make("scrap together", "gather scraps; piece together",
+                 "かき集める",
+                 useCases: ["少しずつ集めてなんとかする話"],
+                 examples: [
+                    ("I scraped together some money.", "なんとかお金をかき集めた。"),
+                    ("Scrap together a meal.", "なんとか食事を作る。")
+                 ]),
+            make("shrug off", "dismiss; brush aside",
+                 "軽く受け流す",
+                 useCases: ["気にせず流す話"],
+                 examples: [
+                    ("She shrugged it off.", "彼女、軽く受け流した。"),
+                    ("Just shrug it off.", "気にしないで流して。")
+                 ]),
+            make("size up", "evaluate; assess",
+                 "値踏みする・見極める",
+                 useCases: ["人や状況を判断する話"],
+                 examples: [
+                    ("He sized me up.", "彼、私を品定めしてた。"),
+                    ("Size up the competition.", "ライバルを見極めて。")
+                 ]),
+            make("square away", "put in order",
+                 "きちんと片付ける",
+                 useCases: ["手続きや問題を整理する話"],
+                 examples: [
+                    ("Get things squared away.", "色々整理してから。"),
+                    ("It's all squared away.", "全部片付いた。")
+                 ]),
+            make("whip out", "pull out quickly",
+                 "さっと取り出す",
+                 useCases: ["スマホや財布を素早く出す話"],
+                 examples: [
+                    ("He whipped out his phone.", "彼、サッと携帯出した。"),
+                    ("Whip out the camera.", "カメラ取り出して。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞（追加 25）
+
+    private static var casualVerbs4: [Word] {
+        [
+            make("bicker", "argue about petty things",
+                 "些細なことで言い争う",
+                 useCases: ["ささいな口論を表すとき"],
+                 examples: [
+                    ("They're always bickering.", "あの二人、いつも言い争ってる。"),
+                    ("Stop bickering!", "口喧嘩やめて！")
+                 ]),
+            make("bluff", "pretend; deceive",
+                 "はったりをかける",
+                 useCases: ["ポーカーや交渉で強がる話"],
+                 examples: [
+                    ("He's bluffing.", "あいつハッタリだ。"),
+                    ("Don't bluff me.", "はったりかけないで。")
+                 ]),
+            make("brag", "boast about oneself",
+                 "自慢する",
+                 useCases: ["自慢話をする人を表すとき"],
+                 examples: [
+                    ("Stop bragging.", "自慢やめて。"),
+                    ("He brags about everything.", "彼、何でも自慢する。")
+                 ]),
+            make("dodge", "avoid by quick movement",
+                 "かわす・避ける",
+                 useCases: ["物理的にかわす話", "質問を避ける話"],
+                 examples: [
+                    ("She dodged the question.", "彼女、質問をかわした。"),
+                    ("Dodge the ball!", "ボール避けて！")
+                 ]),
+            make("drift", "move slowly; lose focus",
+                 "漂う・話がそれる",
+                 useCases: ["注意が散漫になる話", "話題が脱線する話"],
+                 examples: [
+                    ("My mind drifted.", "気が散ってた。"),
+                    ("We drifted off topic.", "話がそれた。")
+                 ]),
+            make("fiddle", "play around with absentmindedly",
+                 "いじくる・もてあそぶ",
+                 useCases: ["手元の物を意味なく触る話"],
+                 examples: [
+                    ("Stop fiddling with that.", "それいじくらないで。"),
+                    ("She fiddled with her ring.", "彼女、指輪をいじってた。")
+                 ]),
+            make("fumble", "handle clumsily; struggle",
+                 "まごつく・手探りする",
+                 useCases: ["うまく扱えなくて慌てる話"],
+                 examples: [
+                    ("He fumbled with the keys.", "彼、鍵をまごついて出した。"),
+                    ("Fumbled the ball.", "ボール落とした。")
+                 ]),
+            make("giggle", "laugh in a silly way",
+                 "クスクス笑う",
+                 useCases: ["軽い笑い・はにかみ笑い"],
+                 examples: [
+                    ("She giggled.", "彼女、クスッと笑った。"),
+                    ("Stop giggling.", "笑わないで。")
+                 ]),
+            make("gobble", "eat quickly and noisily",
+                 "がつがつ食べる",
+                 useCases: ["勢いよく食べる様子"],
+                 examples: [
+                    ("He gobbled up the pizza.", "彼、ピザがっついた。"),
+                    ("Don't gobble!", "がっつかないで！")
+                 ]),
+            make("grumble", "complain in a low voice",
+                 "ぶつぶつ言う",
+                 useCases: ["小声で不満を漏らす話"],
+                 examples: [
+                    ("He's grumbling about work.", "彼、仕事のことぶつぶつ言ってる。"),
+                    ("Stop grumbling.", "ぶつぶつ言わないで。")
+                 ]),
+            make("hover", "linger; stay close",
+                 "うろうろする・近くにいる",
+                 useCases: ["近くで様子を伺う話"],
+                 examples: [
+                    ("Stop hovering!", "うろちょろしないで！"),
+                    ("He hovered behind me.", "彼、後ろでうろうろしてた。")
+                 ]),
+            make("lecture", "give a long talk; scold",
+                 "説教する",
+                 useCases: ["長々と諭す話"],
+                 examples: [
+                    ("Don't lecture me.", "説教しないで。"),
+                    ("She lectured me for an hour.", "1時間も説教された。")
+                 ]),
+            make("linger", "stay longer; be slow to leave",
+                 "ぐずぐずする・残る",
+                 useCases: ["なかなか帰らない様子"],
+                 examples: [
+                    ("The smell lingered.", "匂いが残ってた。"),
+                    ("Don't linger.", "ぐずぐずしないで。")
+                 ]),
+            make("mumble", "speak unclearly",
+                 "もごもご言う",
+                 useCases: ["口の中で何か言う話"],
+                 examples: [
+                    ("Stop mumbling.", "はっきり言って。"),
+                    ("He mumbled an apology.", "彼、ぼそっと謝った。")
+                 ]),
+            make("nag", "complain or remind repeatedly",
+                 "小言を言う・うるさく言う",
+                 useCases: ["何度も繰り返し注意する話"],
+                 examples: [
+                    ("Stop nagging me.", "ガミガミ言わないで。"),
+                    ("She nags about everything.", "彼女、何でもうるさく言う。")
+                 ]),
+            make("peek", "look quickly and secretly",
+                 "こっそり覗く",
+                 useCases: ["ちらっと盗み見する話"],
+                 examples: [
+                    ("Don't peek!", "覗かないで！"),
+                    ("She peeked at the gift.", "彼女、こっそりプレゼント見た。")
+                 ]),
+            make("ponder", "think deeply about",
+                 "じっくり考える",
+                 useCases: ["熟考する話"],
+                 examples: [
+                    ("Let me ponder it.", "ちょっと考えさせて。"),
+                    ("He pondered the question.", "彼は質問をじっくり考えた。")
+                 ]),
+            make("rant", "speak angrily at length",
+                 "まくし立てる・怒鳴る",
+                 useCases: ["怒って長々と話す話"],
+                 examples: [
+                    ("He's ranting again.", "彼、また熱弁してる。"),
+                    ("Don't rant at me.", "私にまくし立てないで。")
+                 ]),
+            make("scribble", "write hastily",
+                 "走り書きする",
+                 useCases: ["雑にメモする話"],
+                 examples: [
+                    ("I scribbled a note.", "メモを走り書きした。"),
+                    ("Just scribble it down.", "ささっとメモして。")
+                 ]),
+            make("sigh", "exhale audibly",
+                 "ため息をつく",
+                 useCases: ["疲労や落胆のサイン"],
+                 examples: [
+                    ("She sighed deeply.", "彼女、深いため息をついた。"),
+                    ("He sighed in relief.", "彼、ほっとしてため息ついた。")
+                 ]),
+            make("smirk", "smile smugly or knowingly",
+                 "ニヤつく・薄笑いを浮かべる",
+                 useCases: ["得意げ・皮肉の笑み"],
+                 examples: [
+                    ("He smirked at me.", "彼、私にニヤッとした。"),
+                    ("Wipe that smirk off your face.", "そのニヤけた顔やめて。")
+                 ]),
+            make("stammer", "speak with hesitation",
+                 "どもる",
+                 useCases: ["緊張で言葉が詰まる話"],
+                 examples: [
+                    ("She stammered an answer.", "彼女、どもりながら答えた。"),
+                    ("I stammered through it.", "なんとかどもりながら話した。")
+                 ]),
+            make("sulk", "be silently moody",
+                 "すねる・むくれる",
+                 useCases: ["不機嫌で黙り込む話"],
+                 examples: [
+                    ("Don't sulk.", "すねないで。"),
+                    ("He's sulking in his room.", "彼、部屋でむくれてる。")
+                 ]),
+            make("vent", "express frustration",
+                 "愚痴をこぼす・発散する",
+                 useCases: ["不満を吐き出す話"],
+                 examples: [
+                    ("Let me vent for a sec.", "ちょっと愚痴らせて。"),
+                    ("She vented to me.", "彼女、私に愚痴った。")
+                 ]),
+            make("wander", "move aimlessly; lose focus",
+                 "さまよう・気が散る",
+                 useCases: ["目的なく歩く話", "注意が散漫になる話"],
+                 examples: [
+                    ("My mind wandered.", "気が散ってた。"),
+                    ("She wandered off.", "彼女、ふらっといなくなった。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞（追加 20）
+
+    private static var casualAdjectives4: [Word] {
+        [
+            make("bossy", "domineering",
+                 "威張りたがる・仕切りたがる",
+                 useCases: ["仕切りたがる人を表すとき"],
+                 examples: [
+                    ("Don't be so bossy.", "そんなに仕切らないで。"),
+                    ("She's super bossy.", "彼女、めっちゃ仕切るタイプ。")
+                 ]),
+            make("broke", "having no money",
+                 "金欠の・無一文",
+                 useCases: ["お金がない時の口語"],
+                 examples: [
+                    ("I'm broke.", "金欠。"),
+                    ("Totally broke this month.", "今月マジ金欠。")
+                 ]),
+            make("catchy", "easy to remember; appealing",
+                 "耳に残る・キャッチーな",
+                 useCases: ["音楽や言い回しが耳に残る話"],
+                 examples: [
+                    ("Catchy tune!", "耳に残る曲！"),
+                    ("That's a catchy slogan.", "キャッチーな標語だ。")
+                 ]),
+            make("cheesy", "tacky; corny",
+                 "安っぽい・わざとらしい",
+                 useCases: ["くさい演出や台詞を表すとき"],
+                 examples: [
+                    ("That's so cheesy.", "それくさいなあ。"),
+                    ("Cheesy pickup line.", "ベタなナンパ文句。")
+                 ]),
+            make("clingy", "overly attached",
+                 "まとわりつく・依存的な",
+                 useCases: ["距離感の近すぎる人を表すとき"],
+                 examples: [
+                    ("He's so clingy.", "彼、構ってちゃん。"),
+                    ("Don't be clingy.", "依存しすぎないで。")
+                 ]),
+            make("cocky", "overconfident; arrogant",
+                 "生意気な・自惚れた",
+                 useCases: ["自信過剰な態度を表すとき"],
+                 examples: [
+                    ("Don't get cocky.", "調子に乗らないで。"),
+                    ("He's a bit cocky.", "彼ちょっと生意気。")
+                 ]),
+            make("corny", "old-fashioned; lame",
+                 "古臭い・寒い",
+                 useCases: ["くだらないジョークや演出"],
+                 examples: [
+                    ("That joke is corny.", "そのジョーク寒い。"),
+                    ("Corny but cute.", "ベタだけど可愛い。")
+                 ]),
+            make("creepy", "unsettling; weird",
+                 "気味悪い",
+                 useCases: ["気味悪い人や場所を表すとき"],
+                 examples: [
+                    ("That's creepy.", "気持ち悪い。"),
+                    ("Creepy vibes.", "ゾッとする雰囲気。")
+                 ]),
+            make("fishy", "suspicious; doubtful",
+                 "怪しい・うさんくさい",
+                 useCases: ["何か怪しいと感じるとき"],
+                 examples: [
+                    ("Something's fishy.", "なんか怪しい。"),
+                    ("That sounds fishy.", "それ怪しい。")
+                 ]),
+            make("flaky", "unreliable; capricious",
+                 "当てにならない・気まぐれ",
+                 useCases: ["約束を守らない人を表すとき"],
+                 examples: [
+                    ("He's so flaky.", "彼、当てにならない。"),
+                    ("Don't be flaky.", "ドタキャンとかしないで。")
+                 ]),
+            make("fussy", "picky; hard to please",
+                 "気難しい・うるさい",
+                 useCases: ["細かいことにこだわる人を表すとき"],
+                 examples: [
+                    ("She's a fussy eater.", "彼女、好き嫌い多い。"),
+                    ("Don't be fussy.", "うるさく言わないで。")
+                 ]),
+            make("groggy", "dazed; sleepy",
+                 "ぼんやりした・寝起きの",
+                 useCases: ["寝起きや疲れで頭が回らない話"],
+                 examples: [
+                    ("I'm still groggy.", "まだ寝ぼけてる。"),
+                    ("Feeling groggy this morning.", "今朝はぼーっとしてる。")
+                 ]),
+            make("hectic", "chaotic and busy",
+                 "めちゃくちゃ忙しい",
+                 useCases: ["バタバタしている状況"],
+                 examples: [
+                    ("It's been hectic.", "バタバタしてた。"),
+                    ("Hectic week.", "ヘクティックな週。")
+                 ]),
+            make("iffy", "uncertain; questionable",
+                 "微妙・怪しい",
+                 useCases: ["不確かな状況を表すとき"],
+                 examples: [
+                    ("It's a bit iffy.", "ちょっと怪しい。"),
+                    ("The weather's iffy.", "天気微妙。")
+                 ]),
+            make("moody", "having unpredictable moods",
+                 "気分屋の",
+                 useCases: ["気分の浮き沈みが激しい人"],
+                 examples: [
+                    ("She's so moody today.", "彼女、今日機嫌悪い。"),
+                    ("He's a moody guy.", "彼は気分屋。")
+                 ]),
+            make("needy", "overly demanding of attention",
+                 "構ってちゃん・依存的",
+                 useCases: ["構ってもらいたがる人"],
+                 examples: [
+                    ("Don't be needy.", "構ってちゃんにならないで。"),
+                    ("He's pretty needy.", "彼かなり構ってちゃん。")
+                 ]),
+            make("nosy", "too curious about others' affairs",
+                 "詮索好き",
+                 useCases: ["プライバシーに踏み込む人"],
+                 examples: [
+                    ("Don't be nosy.", "詮索しないで。"),
+                    ("Nosy neighbors.", "詮索好きな隣人。")
+                 ]),
+            make("petty", "small-minded; trivial",
+                 "細かい・くだらない",
+                 useCases: ["どうでもいいことに執着する話"],
+                 examples: [
+                    ("That's so petty.", "それ細かすぎ。"),
+                    ("Don't be petty.", "細かいこと気にしないで。")
+                 ]),
+            make("shady", "suspicious; unreliable",
+                 "怪しい・うさんくさい",
+                 useCases: ["怪しい人物や取引"],
+                 examples: [
+                    ("That guy looks shady.", "あいつ怪しい。"),
+                    ("Sketchy and shady.", "色々怪しい。")
+                 ]),
+            make("sketchy", "dubious; unclear",
+                 "怪しい・あやふや",
+                 useCases: ["不審な場所や記憶を表すとき"],
+                 examples: [
+                    ("That neighborhood is sketchy.", "あそこ治安悪い。"),
+                    ("My memory's sketchy.", "記憶が曖昧。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞（追加 13・rant と bummer は既出のため除外）
+
+    private static var casualNouns4: [Word] {
+        [
+            make("catch", "a hidden drawback",
+                 "落とし穴・不利な点",
+                 useCases: ["うますぎる話の裏を疑うとき"],
+                 examples: [
+                    ("What's the catch?", "何か裏あるんでしょ？"),
+                    ("There's always a catch.", "必ず落とし穴がある。")
+                 ]),
+            make("drag", "a boring or tedious thing",
+                 "退屈な人/物・面倒",
+                 useCases: ["つまらない、面倒なことを言うとき"],
+                 examples: [
+                    ("What a drag.", "面倒だなー。"),
+                    ("This party is a drag.", "このパーティーつまらない。")
+                 ]),
+            make("fluke", "a lucky accident",
+                 "まぐれ・偶然",
+                 useCases: ["運良くできたことを表すとき"],
+                 examples: [
+                    ("Pure fluke.", "完全にまぐれ。"),
+                    ("It was a fluke.", "ただの偶然だ。")
+                 ]),
+            make("gist", "the main point",
+                 "要点・大筋",
+                 useCases: ["話の核心を伝えるとき"],
+                 examples: [
+                    ("Get the gist?", "要点わかる？"),
+                    ("Just the gist of it.", "要点だけね。")
+                 ]),
+            make("glimpse", "a brief look",
+                 "ちらっと見ること",
+                 useCases: ["一瞬だけ見る話"],
+                 examples: [
+                    ("I caught a glimpse.", "ちらっと見えた。"),
+                    ("Just a glimpse.", "ちらっとだけ。")
+                 ]),
+            make("hassle", "annoying trouble",
+                 "面倒・厄介事",
+                 useCases: ["面倒な手続きや事情"],
+                 examples: [
+                    ("What a hassle.", "面倒だな。"),
+                    ("Too much hassle.", "手間かかりすぎ。")
+                 ]),
+            make("hunch", "intuitive feeling",
+                 "直感・予感",
+                 useCases: ["論理ではなく勘で判断する話"],
+                 examples: [
+                    ("I have a hunch.", "なんとなく予感がする。"),
+                    ("Just a hunch.", "ただの勘。")
+                 ]),
+            make("jerk", "a rude or annoying person",
+                 "嫌な奴・ろくでなし",
+                 useCases: ["失礼な人を表すカジュアル表現"],
+                 examples: [
+                    ("Don't be a jerk.", "嫌な奴になるな。"),
+                    ("What a jerk.", "ひどいやつ。")
+                 ]),
+            make("kicker", "the surprising twist",
+                 "落とし所・どんでん返し",
+                 useCases: ["話のオチを伝えるとき"],
+                 examples: [
+                    ("Here's the kicker.", "ここがオチ。"),
+                    ("And the kicker is...", "そして驚きなのが…")
+                 ]),
+            make("knack", "a clever talent",
+                 "コツ・才能",
+                 useCases: ["何かが得意な人を表すとき"],
+                 examples: [
+                    ("She has a knack for it.", "彼女、それコツ掴んでる。"),
+                    ("Got the knack.", "コツ掴んだ。")
+                 ]),
+            make("loophole", "a gap in rules",
+                 "抜け穴",
+                 useCases: ["法律やルールの抜け道を話すとき"],
+                 examples: [
+                    ("Found a loophole.", "抜け穴見つけた。"),
+                    ("Tax loophole.", "税の抜け穴。")
+                 ]),
+            make("scoop", "the latest news",
+                 "内輪話・特ダネ",
+                 useCases: ["最新の噂やゴシップ"],
+                 examples: [
+                    ("What's the scoop?", "最新情報何？"),
+                    ("Got the scoop on her.", "彼女のスクープゲットした。")
+                 ]),
+            make("snag", "a small obstacle",
+                 "障害・問題",
+                 useCases: ["小さなトラブルが起きた話"],
+                 examples: [
+                    ("Hit a snag.", "ちょっとつまずいた。"),
+                    ("Small snag in the plan.", "計画にちょっと問題あり。")
+                 ])
+        ]
+    }
+
+    // MARK: - 慣用表現（追加 5）
+
+    private static var casualIdioms4: [Word] {
+        [
+            make("a no-brainer", "an obvious choice",
+                 "考えるまでもないこと",
+                 useCases: ["明らかに正しい選択を表すとき"],
+                 examples: [
+                    ("It's a no-brainer.", "考えるまでもないでしょ。"),
+                    ("That's a no-brainer for sure.", "それは絶対即決だね。")
+                 ]),
+            make("a deal-breaker", "an unacceptable condition",
+                 "譲れない条件・ダメな条件",
+                 useCases: ["これがダメなら成立しない要素"],
+                 examples: [
+                    ("That's a deal-breaker for me.", "それは無理。"),
+                    ("Pets are a deal-breaker.", "ペット不可は無理。")
+                 ]),
+            make("the elephant in the room", "an obvious issue everyone avoids",
+                 "みんな気づいてるのに触れない問題",
+                 useCases: ["話しにくい話題に切り込むとき"],
+                 examples: [
+                    ("Let's address the elephant in the room.", "触れにくい話に触れよう。"),
+                    ("It's the elephant in the room.", "皆避けてる話題だよね。")
+                 ]),
+            make("a wake-up call", "a warning that prompts change",
+                 "目が覚めるような出来事・警告",
+                 useCases: ["気付かされる体験を語るとき"],
+                 examples: [
+                    ("That was a real wake-up call.", "あれは目が覚めた。"),
+                    ("It's a wake-up call.", "目を覚まさせる出来事だ。")
+                 ]),
+            make("a long story", "complicated to explain",
+                 "話せば長い",
+                 useCases: ["説明が長くなることを示唆するとき"],
+                 examples: [
+                    ("It's a long story.", "話せば長くなる。"),
+                    ("Long story short, no.", "結論を言うとダメ。")
+                 ])
+        ]
+    }
+
+    // MARK: - つなぎ表現（追加 3・mind you と for what it's worth は既出）
+
+    private static var casualConnectives4: [Word] {
+        [
+            make("truth be told", "honestly speaking",
+                 "本当のことを言うと",
+                 useCases: ["本音を打ち明けるとき"],
+                 examples: [
+                    ("Truth be told, I forgot.", "正直忘れてた。"),
+                    ("Truth be told, I'm tired.", "本音を言うと疲れてる。")
+                 ]),
+            make("come to think of it", "now that I think about it",
+                 "そういえば",
+                 useCases: ["ふと思い出して話すとき"],
+                 examples: [
+                    ("Come to think of it, he called.", "そういえば彼から電話あった。"),
+                    ("Come to think of it, that's strange.", "考えてみればおかしい。")
+                 ]),
+            make("case in point", "a perfect example",
+                 "その良い例・典型",
+                 useCases: ["主張の具体例を挙げるとき"],
+                 examples: [
+                    ("Case in point: yesterday.", "その例が昨日のこと。"),
+                    ("Case in point, look at this.", "好例だよ、これ見て。")
+                 ])
+        ]
+    }
+
+    // MARK: - 文法表現（追加 5）
+
+    private static var grammarPhrases4: [Word] {
+        [
+            make("might as well", "since there's no better option",
+                 "〜してもいいかな・どうせなら",
+                 useCases: ["選択肢が他にないから何かをする話"],
+                 examples: [
+                    ("Might as well stay.", "残ってもいいかな。"),
+                    ("Might as well give it a shot.", "どうせならやってみよう。")
+                 ]),
+            make("may as well", "we might as well",
+                 "〜してもいいかな（同上）",
+                 useCases: ["might as well と同じ意味の少し丁寧め"],
+                 examples: [
+                    ("May as well try.", "どうせなら試そう。"),
+                    ("May as well start now.", "今始めてもいいかな。")
+                 ]),
+            make("would rather", "prefer to do something",
+                 "〜したい（の方がまし）",
+                 useCases: ["代案の方が良いと伝えるとき"],
+                 examples: [
+                    ("I'd rather walk.", "歩く方がいい。"),
+                    ("I'd rather stay home.", "家にいたい。")
+                 ]),
+            make("could use", "would benefit from",
+                 "〜が欲しい・必要",
+                 useCases: ["欲しい物を控えめに伝えるとき"],
+                 examples: [
+                    ("I could use a coffee.", "コーヒー飲みたい。"),
+                    ("Could use some help.", "ちょっと手伝ってほしい。")
+                 ]),
+            make("better off", "in a better situation",
+                 "〜した方がいい・よりまし",
+                 useCases: ["別の状態の方が良いと伝えるとき"],
+                 examples: [
+                    ("You're better off without him.", "彼なしの方がいい。"),
+                    ("Better off staying.", "残った方がいい。")
                  ])
         ]
     }
