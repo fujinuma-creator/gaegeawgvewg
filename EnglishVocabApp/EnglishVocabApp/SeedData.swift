@@ -40,6 +40,11 @@ enum SeedData {
             + elegantHedging8 + elegantStructure8 + elegantSuggestions8
             + elegantEvaluations8 + elegantConnectives8
             + miscBatch9
+            + actionVerbs10 + thinkingVerbs10 + communicationVerbs10
+            + stateChangeVerbs10 + handlingVerbs10
+            + iVerbSimple10 + youVerbCheck10 + thatsReactions10
+            + howVerbQuestions10 + verbGerund10 + verbInfinitive10
+            + toBeAdj10 + sentenceEnders10
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -7210,6 +7215,629 @@ enum SeedData {
                  examples: [
                     ("It's hot, don't you think?", "暑いと思わない？"),
                     ("That's strange, don't you think?", "それ変だと思わない？")
+                 ])
+        ]
+    }
+
+    // MARK: - 動作・行動の動詞（追加 18・rush, drag は既出）
+
+    private static var actionVerbs10: [Word] {
+        [
+            make("dash", "go quickly; run",
+                 "急いで行く・走る",
+                 useCases: ["急いで移動する話"],
+                 examples: [
+                    ("I gotta dash.", "急いで行かなきゃ。"),
+                    ("Dash to the store.", "急いで店に行く。")
+                 ]),
+            make("hurry up", "be quick",
+                 "急ぐ",
+                 useCases: ["相手を急かすとき"],
+                 examples: [
+                    ("Hurry up!", "早く！"),
+                    ("Hurry up, we're late.", "急いで、遅れる。")
+                 ]),
+            make("slip", "slide; sneak something in",
+                 "滑る・こっそり入れる",
+                 useCases: ["転倒する話", "そっと挟み込む話"],
+                 examples: [
+                    ("I slipped on ice.", "氷で滑った。"),
+                    ("She slipped a note in.", "メモをこっそり挟んだ。")
+                 ]),
+            make("trip", "stumble",
+                 "つまずく",
+                 useCases: ["足を引っ掛けて転びかける話"],
+                 examples: [
+                    ("I tripped on the rug.", "敷物でつまずいた。"),
+                    ("Don't trip!", "転ばないで！")
+                 ]),
+            make("bump into", "collide; meet by chance",
+                 "ぶつかる・偶然会う",
+                 useCases: ["人にバッタリ会う話"],
+                 examples: [
+                    ("Bumped into John.", "ジョンに偶然会った。"),
+                    ("Sorry, bumped into you.", "ごめん、ぶつかっちゃった。")
+                 ]),
+            make("crash into", "smash into",
+                 "激突する",
+                 useCases: ["車などが何かにぶつかる話"],
+                 examples: [
+                    ("Crashed into a wall.", "壁にぶつかった。"),
+                    ("The car crashed into a tree.", "車が木に激突した。")
+                 ]),
+            make("grab", "take quickly",
+                 "つかむ・素早く取る",
+                 useCases: ["素早く何かを取る話"],
+                 examples: [
+                    ("Grab a coffee.", "コーヒーを買う。"),
+                    ("Grab my hand!", "手を掴んで！")
+                 ]),
+            make("toss", "throw lightly",
+                 "投げる・放る",
+                 useCases: ["軽く投げる話"],
+                 examples: [
+                    ("Toss it over.", "こっちに投げて。"),
+                    ("Toss it in the bin.", "ゴミ箱に放って。")
+                 ]),
+            make("shove", "push roughly",
+                 "押しのける・突っ込む",
+                 useCases: ["強く押す話"],
+                 examples: [
+                    ("Don't shove me!", "押さないで！"),
+                    ("He shoved past me.", "彼、押しのけて通った。")
+                 ]),
+            make("squeeze", "press; force through",
+                 "押し込む・絞る",
+                 useCases: ["人混みを通り抜ける話", "果汁を絞る話"],
+                 examples: [
+                    ("Squeeze through the crowd.", "人混みを押し分ける。"),
+                    ("Squeeze the lemon.", "レモンを絞って。")
+                 ]),
+            make("stretch", "extend; do stretches",
+                 "伸ばす・ストレッチする",
+                 useCases: ["体を伸ばす話"],
+                 examples: [
+                    ("Stretch your legs.", "足を伸ばして。"),
+                    ("Time to stretch.", "ストレッチの時間。")
+                 ]),
+            make("bend over", "lean down",
+                 "かがむ",
+                 useCases: ["前かがみになる話"],
+                 examples: [
+                    ("Bend over to pick it up.", "かがんで拾う。"),
+                    ("Don't bend over too far.", "前にかがみすぎないで。")
+                 ]),
+            make("lean on", "rest against; depend on",
+                 "もたれかかる・頼る",
+                 useCases: ["物理的に寄りかかる話", "誰かを頼る話"],
+                 examples: [
+                    ("Lean on me.", "頼ってね。"),
+                    ("Lean on the wall.", "壁にもたれて。")
+                 ]),
+            make("knock", "tap; rap on a door",
+                 "ノックする・叩く",
+                 useCases: ["ドアを叩く話"],
+                 examples: [
+                    ("Knock before entering.", "入る前にノック。"),
+                    ("Someone's knocking.", "誰かノックしてる。")
+                 ]),
+            make("kick", "strike with foot; start",
+                 "蹴る・始める",
+                 useCases: ["ボールを蹴る話", "活動を始める話"],
+                 examples: [
+                    ("Kick the ball.", "ボールを蹴る。"),
+                    ("Kick off the meeting.", "会議を始める。")
+                 ]),
+            make("swing", "sway; rotate around",
+                 "揺れる・振る",
+                 useCases: ["バットを振る話", "揺れる話"],
+                 examples: [
+                    ("Swing the bat.", "バットを振る。"),
+                    ("The door swung open.", "ドアが開いた。")
+                 ]),
+            make("flip", "turn over; switch quickly",
+                 "ひっくり返す・パッと変える",
+                 useCases: ["パンケーキを返す話", "状態を切り替える話"],
+                 examples: [
+                    ("Flip the pancake.", "パンケーキを返す。"),
+                    ("Flip the switch.", "スイッチを入れて。")
+                 ]),
+            make("wave", "move hand; sway",
+                 "手を振る・揺れる",
+                 useCases: ["別れの手を振る話"],
+                 examples: [
+                    ("Wave goodbye.", "バイバイを振る。"),
+                    ("She waved at me.", "彼女が手を振ってくれた。")
+                 ])
+        ]
+    }
+
+    // MARK: - 思考・感情の動詞（追加 9・assume, bear in mind, come up with, dawn on, freak out, stress out は既出）
+
+    private static var thinkingVerbs10: [Word] {
+        [
+            make("suspect", "have a hunch; doubt someone",
+                 "疑う・〜だと思う",
+                 useCases: ["怪しむ・推測する話"],
+                 examples: [
+                    ("I suspect he lied.", "彼が嘘ついたと思う。"),
+                    ("Suspect foul play.", "不正を疑う。")
+                 ]),
+            make("wonder", "be curious; ponder",
+                 "不思議に思う・〜かなと思う",
+                 useCases: ["疑問を投げかけるとき"],
+                 examples: [
+                    ("I wonder why.", "なぜだろう。"),
+                    ("Just wondering.", "ちょっと気になっただけ。")
+                 ]),
+            make("figure", "think; assume",
+                 "〜だろうと思う",
+                 useCases: ["推測を述べるとき"],
+                 examples: [
+                    ("I figure he's late.", "彼は遅刻だろう。"),
+                    ("Figure it'll work.", "うまくいくだろう。")
+                 ]),
+            make("realize", "become aware",
+                 "はっと気づく",
+                 useCases: ["後から気づく話"],
+                 examples: [
+                    ("I realized too late.", "遅く気づいた。"),
+                    ("Realize the truth.", "真実に気づく。")
+                 ]),
+            make("recall", "remember",
+                 "思い出す",
+                 useCases: ["記憶を辿る話"],
+                 examples: [
+                    ("I can't recall.", "思い出せない。"),
+                    ("Do you recall the meeting?", "あの会議覚えてる？")
+                 ]),
+            make("picture", "visualize; imagine",
+                 "想像する・思い浮かべる",
+                 useCases: ["イメージしてもらうとき"],
+                 examples: [
+                    ("Picture this.", "想像してみて。"),
+                    ("Picture a beach.", "ビーチを思い浮かべて。")
+                 ]),
+            make("strike", "occur to suddenly",
+                 "急に思い浮かぶ",
+                 useCases: ["ふと印象を受ける話"],
+                 examples: [
+                    ("It struck me as odd.", "変だなと思った。"),
+                    ("It struck me suddenly.", "突然思いついた。")
+                 ]),
+            make("occur to", "come to mind",
+                 "ふと思いつく",
+                 useCases: ["突然思いつく話"],
+                 examples: [
+                    ("It occurred to me.", "ふと思った。"),
+                    ("It just occurred to me.", "今ふと気づいた。")
+                 ]),
+            make("chill", "relax",
+                 "リラックスする",
+                 useCases: ["カジュアルにくつろぐ話"],
+                 examples: [
+                    ("Just chill.", "落ち着いて。"),
+                    ("Chill at home.", "家でゆっくりする。")
+                 ])
+        ]
+    }
+
+    // MARK: - コミュニケーションの動詞（追加 6・bring up, whisper, mumble は既出）
+
+    private static var communicationVerbs10: [Word] {
+        [
+            make("chime in", "join in a conversation",
+                 "口を挟む・意見を言う",
+                 useCases: ["会話に参加する話"],
+                 examples: [
+                    ("Chime in anytime.", "いつでも口を挟んで。"),
+                    ("She chimed in with a joke.", "彼女、冗談で参加してきた。")
+                 ]),
+            make("butt in", "interrupt rudely",
+                 "割り込む",
+                 useCases: ["失礼に話に割り込む話"],
+                 examples: [
+                    ("Don't butt in!", "割り込まないで！"),
+                    ("He butted in.", "彼、口を挟んできた。")
+                 ]),
+            make("cut off", "interrupt; disconnect",
+                 "話を遮る・切断する",
+                 useCases: ["話を遮る話", "電話が切れる話"],
+                 examples: [
+                    ("Don't cut me off.", "話を遮らないで。"),
+                    ("The call got cut off.", "電話が切れた。")
+                 ]),
+            make("shout out", "call out loudly; mention",
+                 "大声で呼ぶ・触れる",
+                 useCases: ["呼びかける話", "誰かに言及する話"],
+                 examples: [
+                    ("Shout out if you need help.", "助けが要れば叫んで。"),
+                    ("Shout out to my team.", "うちのチームに感謝。")
+                 ]),
+            make("yell", "shout loudly",
+                 "怒鳴る・大声で叫ぶ",
+                 useCases: ["怒って叫ぶ話"],
+                 examples: [
+                    ("Don't yell at me.", "怒鳴らないで。"),
+                    ("She yelled across the room.", "彼女、部屋越しに叫んだ。")
+                 ]),
+            make("drop a hint", "give a subtle suggestion",
+                 "ほのめかす",
+                 useCases: ["遠回しに伝える話"],
+                 examples: [
+                    ("She dropped a hint.", "彼女がほのめかした。"),
+                    ("Drop a hint about it.", "それとなく言って。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状態変化・進展（追加 7・wear off, catch on, wear out は既出）
+
+    private static var stateChangeVerbs10: [Word] {
+        [
+            make("turn into", "transform into",
+                 "〜に変わる",
+                 useCases: ["変化を伝える話"],
+                 examples: [
+                    ("Rain turned into snow.", "雨が雪になった。"),
+                    ("It turned into a mess.", "混乱に変わった。")
+                 ]),
+            make("grow into", "develop to fit",
+                 "成長して〜になる",
+                 useCases: ["役割や服装に馴染む話"],
+                 examples: [
+                    ("Grow into the role.", "役割に馴染む。"),
+                    ("She'll grow into the dress.", "そのドレス、いずれ着られるよ。")
+                 ]),
+            make("build up", "accumulate gradually",
+                 "蓄積する・徐々に増える",
+                 useCases: ["疲れやストレスが溜まる話"],
+                 examples: [
+                    ("Stress builds up.", "ストレスが溜まる。"),
+                    ("Tension's building up.", "緊張感が高まってる。")
+                 ]),
+            make("die down", "subside; calm",
+                 "静まる・収まる",
+                 useCases: ["騒ぎや風が収まる話"],
+                 examples: [
+                    ("The wind died down.", "風が収まった。"),
+                    ("Things died down.", "騒ぎが収まった。")
+                 ]),
+            make("fade away", "gradually disappear",
+                 "消えていく",
+                 useCases: ["記憶や音が薄れる話"],
+                 examples: [
+                    ("Memories fade away.", "記憶は薄れる。"),
+                    ("The pain faded away.", "痛みが消えた。")
+                 ]),
+            make("kick in", "start to take effect",
+                 "効き始める・始動する",
+                 useCases: ["薬や効果が出始める話"],
+                 examples: [
+                    ("The medicine kicked in.", "薬が効いてきた。"),
+                    ("Adrenaline kicked in.", "アドレナリンが出てきた。")
+                 ]),
+            make("break out", "suddenly start; escape",
+                 "急に発生する・脱出する",
+                 useCases: ["災害や戦争が起きる話", "脱獄の話"],
+                 examples: [
+                    ("A fire broke out.", "火事が発生。"),
+                    ("They broke out of jail.", "彼ら、脱獄した。")
+                 ])
+        ]
+    }
+
+    // MARK: - 取り扱い・処理（追加 5）
+
+    private static var handlingVerbs10: [Word] {
+        [
+            make("handle", "deal with",
+                 "扱う・対処する",
+                 useCases: ["問題を任される話"],
+                 examples: [
+                    ("I'll handle it.", "私が対処する。"),
+                    ("Can you handle this?", "これ任せていい？")
+                 ]),
+            make("deal with", "handle; manage",
+                 "対処する",
+                 useCases: ["問題に向き合う話"],
+                 examples: [
+                    ("Deal with the problem.", "問題に対処。"),
+                    ("I'll deal with him.", "彼の対応は俺がやる。")
+                 ]),
+            make("tackle", "address; confront",
+                 "取り組む・立ち向かう",
+                 useCases: ["難題に挑む話"],
+                 examples: [
+                    ("Tackle the issue.", "問題に取り組む。"),
+                    ("Tackle it head-on.", "正面から立ち向かう。")
+                 ]),
+            make("manage", "manage; cope",
+                 "なんとかする・管理する",
+                 useCases: ["何とか乗り切る話"],
+                 examples: [
+                    ("I'll manage.", "なんとかする。"),
+                    ("Manage the team.", "チームを管理する。")
+                 ]),
+            make("cope with", "deal with; endure",
+                 "対処する・乗り越える",
+                 useCases: ["ストレスや困難に対応する話"],
+                 examples: [
+                    ("Cope with stress.", "ストレスに対処。"),
+                    ("How do you cope?", "どう乗り越えてる？")
+                 ])
+        ]
+    }
+
+    // MARK: - I + 動詞（追加 1・I bet, I figure, I take it, I'd hate to は既出）
+
+    private static var iVerbSimple10: [Word] {
+        [
+            make("I doubt", "I don't think",
+                 "〜とは思えない",
+                 useCases: ["懐疑的な意見を伝えるとき"],
+                 examples: [
+                    ("I doubt it'll work.", "うまく行くとは思えない。"),
+                    ("I doubt that.", "それは疑わしい。")
+                 ])
+        ]
+    }
+
+    // MARK: - You + 動詞（追加 4・you'd better は既出）
+
+    private static var youVerbCheck10: [Word] {
+        [
+            make("you'll see", "you'll find out",
+                 "分かるよ・見てな",
+                 useCases: ["後で分かると伝えるとき"],
+                 examples: [
+                    ("You'll see why.", "理由が分かるよ。"),
+                    ("Just wait, you'll see.", "待って、見てな。")
+                 ]),
+            make("you can tell", "it's obvious",
+                 "分かるよね",
+                 useCases: ["明白だと伝えるとき"],
+                 examples: [
+                    ("You can tell he's lying.", "嘘ついてるって分かる。"),
+                    ("You can tell she's tired.", "疲れてるの分かるよ。")
+                 ]),
+            make("you wouldn't believe", "you'd be amazed",
+                 "信じられないよ",
+                 useCases: ["驚きの話を切り出すとき"],
+                 examples: [
+                    ("You wouldn't believe what happened.", "何があったか信じられない。"),
+                    ("You wouldn't believe the price.", "値段、信じられないよ。")
+                 ]),
+            make("you might want to", "you should consider",
+                 "〜した方がいいかも",
+                 useCases: ["やんわり提案するとき"],
+                 examples: [
+                    ("You might want to leave.", "出た方がいいかも。"),
+                    ("You might want to check.", "確認した方がいいかも。")
+                 ])
+        ]
+    }
+
+    // MARK: - That's + 名詞/形容詞 反応（追加 5）
+
+    private static var thatsReactions10: [Word] {
+        [
+            make("that's a relief", "I'm relieved",
+                 "ほっとした",
+                 useCases: ["心配が解けた瞬間"],
+                 examples: [
+                    ("That's a relief!", "よかった！"),
+                    ("Phew, that's a relief.", "ふー、ほっとした。")
+                 ]),
+            make("that's a shame", "what a pity",
+                 "残念",
+                 useCases: ["残念な話に共感するとき"],
+                 examples: [
+                    ("That's a shame.", "残念だね。"),
+                    ("Oh, that's a real shame.", "あー、本当に残念。")
+                 ]),
+            make("that's the spirit", "good attitude",
+                 "その意気だ",
+                 useCases: ["前向きな姿勢を称えるとき"],
+                 examples: [
+                    ("That's the spirit!", "その調子！"),
+                    ("Yes, that's the spirit.", "うん、その意気だ。")
+                 ]),
+            make("that's the way", "that's how",
+                 "そう、それでいい",
+                 useCases: ["上手くやれている時"],
+                 examples: [
+                    ("That's the way!", "その調子！"),
+                    ("That's the way, keep it up.", "それそれ、続けて。")
+                 ]),
+            make("that's enough", "stop now",
+                 "もう十分・やめろ",
+                 useCases: ["やめさせるとき"],
+                 examples: [
+                    ("That's enough!", "もうやめて！"),
+                    ("That's enough for today.", "今日はここまで。")
+                 ])
+        ]
+    }
+
+    // MARK: - How + 動詞 質問・感嘆（追加 3・how come, how about は既出）
+
+    private static var howVerbQuestions10: [Word] {
+        [
+            make("how dare you", "expression of indignation",
+                 "よくも〜できるな",
+                 useCases: ["強い怒りを表すとき"],
+                 examples: [
+                    ("How dare you say that!", "よくもそんなこと！"),
+                    ("How dare you!", "よくも！")
+                 ]),
+            make("how nice", "how kind / lovely",
+                 "なんて素敵",
+                 useCases: ["相手の優しさを称えるとき"],
+                 examples: [
+                    ("How nice of you!", "親切だね！"),
+                    ("How nice!", "素敵！")
+                 ]),
+            make("how on earth", "in what way (incredulous)",
+                 "一体どうやって〜？",
+                 useCases: ["驚きと疑問を強く表すとき"],
+                 examples: [
+                    ("How on earth did you?", "一体どうやって？"),
+                    ("How on earth did you find this?", "どうやってこれ見つけた？")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞 + 動名詞（追加 5）
+
+    private static var verbGerund10: [Word] {
+        [
+            make("mind doing", "be willing / would you",
+                 "〜してもいい？",
+                 useCases: ["丁寧にお願いするとき"],
+                 examples: [
+                    ("Mind opening the door?", "ドア開けてもらえる？"),
+                    ("Mind helping me?", "手伝ってくれる？")
+                 ]),
+            make("finish doing", "complete the action",
+                 "〜し終える",
+                 useCases: ["作業を終える話"],
+                 examples: [
+                    ("Finish reading.", "読み終える。"),
+                    ("Finish eating first.", "まずは食べ終わって。")
+                 ]),
+            make("enjoy doing", "have fun doing",
+                 "〜を楽しむ",
+                 useCases: ["趣味や活動を楽しむ話"],
+                 examples: [
+                    ("Enjoy cooking.", "料理を楽しむ。"),
+                    ("I enjoy reading.", "読書が好き。")
+                 ]),
+            make("avoid doing", "stay away from doing",
+                 "〜を避ける",
+                 useCases: ["やらないように気をつける話"],
+                 examples: [
+                    ("Avoid going late.", "遅く行くのを避ける。"),
+                    ("Avoid eating sweets.", "甘いものを避ける。")
+                 ]),
+            make("keep doing", "continue doing",
+                 "〜し続ける",
+                 useCases: ["継続して何かをする話"],
+                 examples: [
+                    ("Keep trying.", "試し続けて。"),
+                    ("Keep walking.", "歩き続けて。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞 + 不定詞（追加 5）
+
+    private static var verbInfinitive10: [Word] {
+        [
+            make("decide to", "choose to do",
+                 "〜することに決める",
+                 useCases: ["決定したと伝えるとき"],
+                 examples: [
+                    ("Decided to leave.", "出ることにした。"),
+                    ("She decided to stay.", "彼女は残ることにした。")
+                 ]),
+            make("promise to", "commit to do",
+                 "〜すると約束",
+                 useCases: ["約束を伝えるとき"],
+                 examples: [
+                    ("Promise to call.", "電話すると約束。"),
+                    ("Promise to be on time.", "時間通りに来ると約束する。")
+                 ]),
+            make("refuse to", "decline to do",
+                 "〜を拒む",
+                 useCases: ["強く断る話"],
+                 examples: [
+                    ("Refused to come.", "来るのを拒んだ。"),
+                    ("She refused to listen.", "彼女、聞こうとしなかった。")
+                 ]),
+            make("agree to", "consent to do",
+                 "〜に同意",
+                 useCases: ["合意して何かをすると伝えるとき"],
+                 examples: [
+                    ("Agreed to help.", "手伝うと同意。"),
+                    ("They agreed to meet.", "会うことに同意した。")
+                 ]),
+            make("offer to", "volunteer to do",
+                 "〜しようと申し出る",
+                 useCases: ["親切で申し出る話"],
+                 examples: [
+                    ("Offered to drive.", "運転を申し出た。"),
+                    ("She offered to help.", "彼女、手伝うと申し出た。")
+                 ])
+        ]
+    }
+
+    // MARK: - to be + 形容詞（追加 4・to be honest は既出）
+
+    private static var toBeAdj10: [Word] {
+        [
+            make("to be fair", "in fairness",
+                 "公平に言うと",
+                 useCases: ["相手にも一理あると認めるとき"],
+                 examples: [
+                    ("To be fair, he tried.", "公平に言うと頑張った。"),
+                    ("To be fair, it's hard.", "公平に言って難しい。")
+                 ]),
+            make("to be precise", "more accurately",
+                 "正確には",
+                 useCases: ["数字や時間を正確に伝えるとき"],
+                 examples: [
+                    ("5pm, to be precise.", "正確には5時。"),
+                    ("Three years, to be precise.", "正確に言うと3年。")
+                 ]),
+            make("to be frank", "honestly speaking",
+                 "率直に",
+                 useCases: ["遠慮なく本音を言うとき"],
+                 examples: [
+                    ("To be frank, no.", "率直に言ってノー。"),
+                    ("To be frank, I disagree.", "率直に言うと反対。")
+                 ]),
+            make("to be safe", "as a precaution",
+                 "念のため",
+                 useCases: ["保険として何かをするとき"],
+                 examples: [
+                    ("To be safe, take an umbrella.", "念のため傘を。"),
+                    ("To be safe, double-check.", "念のため再確認して。")
+                 ])
+        ]
+    }
+
+    // MARK: - 文末・つなぎ（追加 4・believe it or not は既出）
+
+    private static var sentenceEnders10: [Word] {
+        [
+            make("if you know what I mean", "you get the idea",
+                 "〜分かるでしょ",
+                 useCases: ["遠回しな表現の後に意味を補足するとき"],
+                 examples: [
+                    ("It's complicated, if you know what I mean.", "複雑なんだよ、分かるでしょ。"),
+                    ("He's a piece of work, if you know what I mean.", "彼ってアレな人、分かるでしょ。")
+                 ]),
+            make("or so they say", "or so the saying goes",
+                 "〜らしい",
+                 useCases: ["伝聞情報を伝えるとき"],
+                 examples: [
+                    ("It's true, or so they say.", "本当らしい。"),
+                    ("Money buys happiness, or so they say.", "金は幸せを買えるらしい。")
+                 ]),
+            make("and that's that", "and that's final",
+                 "それで終わり",
+                 useCases: ["議論を打ち切るとき"],
+                 examples: [
+                    ("No, and that's that.", "ノー、以上。"),
+                    ("I said no, and that's that.", "ダメと言ったら終わり。")
+                 ]),
+            make("whether you like it or not", "regardless of preference",
+                 "好むと好まざるとに関わらず",
+                 useCases: ["強制力を伝えるとき"],
+                 examples: [
+                    ("You're going, whether you like it or not.", "嫌でも行くんだよ。"),
+                    ("It's happening, whether you like it or not.", "好き嫌い関係なくこうなる。")
                  ])
         ]
     }
