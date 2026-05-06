@@ -33,6 +33,10 @@ enum SeedData {
             + endUpVariations6 + supposedToForms6 + predictions6
             + wheneverPatterns6 + negativePatterns6 + theXIs6
             + comeGoVerb6 + sentenceEnders6
+            + britishGreetings7 + britishReactions7 + britishDegree7
+            + britishFood7 + britishSuggestions7 + britishVerbs7
+            + britishComplaints7 + britishAgreement7
+            + singlishCommon7 + singlishFood7 + singlishFrequent7
     }
 
     private static func make(
@@ -6421,6 +6425,552 @@ enum SeedData {
                  examples: [
                     ("You agree, right?", "賛成だよね？"),
                     ("It's hot, right?", "暑いよね？")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 挨拶・呼びかけ（追加 8）
+
+    private static var britishGreetings7: [Word] {
+        [
+            make("cheers", "thanks; cheers (toast); see you",
+                 "ありがとう／乾杯／じゃあね（万能）",
+                 useCases: ["軽くお礼を言うとき", "別れ際", "乾杯"],
+                 examples: [
+                    ("Cheers, mate!", "どうも！"),
+                    ("Cheers!", "ありがとう！")
+                 ]),
+            make("mate", "friend; pal (UK/AUS)",
+                 "友よ・お前（男性同士）",
+                 useCases: ["イギリスやオーストラリアでの呼びかけ"],
+                 examples: [
+                    ("Alright, mate?", "元気か？"),
+                    ("Thanks, mate.", "ありがとう、相棒。")
+                 ]),
+            make("love", "term of endearment to a customer or friend",
+                 "あなた（お店の人がお客に）",
+                 useCases: ["カフェや店員が客に呼びかけるとき"],
+                 examples: [
+                    ("That'll be £5, love.", "5ポンドだよ。"),
+                    ("Here you go, love.", "はいどうぞ。")
+                 ]),
+            make("alright?", "are you well? (UK greeting)",
+                 "元気？・どうも？",
+                 useCases: ["イギリスでの挨拶"],
+                 examples: [
+                    ("Alright?", "どうも？"),
+                    ("Alright! Long time no see.", "おう！久しぶり。")
+                 ]),
+            make("you alright?", "are you okay? (UK greeting)",
+                 "大丈夫？・元気？",
+                 useCases: ["相手の様子を確認するとき"],
+                 examples: [
+                    ("You alright, mate?", "元気か？"),
+                    ("You alright? You look tired.", "大丈夫？疲れて見える。")
+                 ]),
+            make("how's it going?", "how are things",
+                 "調子どう？",
+                 useCases: ["気軽な挨拶として"],
+                 examples: [
+                    ("How's it going?", "元気？"),
+                    ("Hey, how's it going?", "やあ、調子どう？")
+                 ]),
+            make("ta", "thanks (very casual UK)",
+                 "ありがとう（超カジュアル）",
+                 useCases: ["イギリスで軽くお礼を言うとき"],
+                 examples: [
+                    ("Ta!", "どうも！"),
+                    ("Ta very much.", "どうもありがとう。")
+                 ]),
+            make("see you later", "see you later",
+                 "じゃあね・またね",
+                 useCases: ["別れ際の決まり文句"],
+                 examples: [
+                    ("See you later.", "またね。"),
+                    ("See you later, alligator.", "じゃあね。")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 感想・反応（追加 9・brilliant は既出）
+
+    private static var britishReactions7: [Word] {
+        [
+            make("lovely", "delightful; nice",
+                 "素敵・いいね（万能）",
+                 useCases: ["人や物・天気などを褒める万能語"],
+                 examples: [
+                    ("Lovely day!", "いい天気だね。"),
+                    ("That's lovely, thanks.", "素敵、ありがとう。")
+                 ]),
+            make("mental", "crazy; amazing (UK slang)",
+                 "狂ってる・すごい",
+                 useCases: ["驚きや興奮を表すとき"],
+                 examples: [
+                    ("That's mental!", "マジでヤバい。"),
+                    ("It was absolutely mental.", "完全にイカれてた。")
+                 ]),
+            make("chuffed", "very pleased",
+                 "嬉しい・満足",
+                 useCases: ["イギリスで嬉しさを表現するとき"],
+                 examples: [
+                    ("Well chuffed!", "超嬉しい。"),
+                    ("Chuffed to bits.", "めっちゃ嬉しい。")
+                 ]),
+            make("gutted", "really disappointed",
+                 "がっかり・凹む",
+                 useCases: ["落胆を強く伝えるとき"],
+                 examples: [
+                    ("I'm gutted.", "めっちゃ凹む。"),
+                    ("Absolutely gutted!", "完全に落ち込んでる。")
+                 ]),
+            make("knackered", "exhausted (UK)",
+                 "クタクタ・疲れ果てた",
+                 useCases: ["強い疲労を表すとき"],
+                 examples: [
+                    ("I'm knackered.", "もうへとへと。"),
+                    ("Knackered after work.", "仕事でクタクタ。")
+                 ]),
+            make("shattered", "exhausted",
+                 "疲れ切った",
+                 useCases: ["疲労困憊を表すとき"],
+                 examples: [
+                    ("Absolutely shattered.", "マジで疲れた。"),
+                    ("I'm shattered, going to bed.", "クタクタ、寝るね。")
+                 ]),
+            make("sorted", "settled; taken care of",
+                 "解決済み・OK",
+                 useCases: ["問題が片付いた話"],
+                 examples: [
+                    ("It's sorted.", "もう片付いた。"),
+                    ("All sorted, no worries.", "全部解決、心配ないよ。")
+                 ]),
+            make("dodgy", "dubious; iffy (UK)",
+                 "怪しい・うさんくさい",
+                 useCases: ["信用できない物事"],
+                 examples: [
+                    ("That's dodgy.", "それ怪しい。"),
+                    ("Dodgy neighborhood.", "治安悪い地区。")
+                 ]),
+            make("cheeky", "saucy; impudent in a charming way",
+                 "生意気な・ずる賢い",
+                 useCases: ["軽くからかう・かわいげのあるイタズラ"],
+                 examples: [
+                    ("Cheeky little thing.", "生意気な奴だな。"),
+                    ("A cheeky pint.", "ちょっと一杯。")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 程度（追加 5）
+
+    private static var britishDegree7: [Word] {
+        [
+            make("quite", "fairly; very (UK)",
+                 "かなり",
+                 useCases: ["イギリスでよく使う程度副詞"],
+                 examples: [
+                    ("Quite good.", "かなりいい。"),
+                    ("Quite a lot.", "結構たくさん。")
+                 ]),
+            make("rather", "fairly; somewhat",
+                 "かなり・むしろ",
+                 useCases: ["やや控えめな評価のとき"],
+                 examples: [
+                    ("Rather expensive.", "けっこう高い。"),
+                    ("Rather nice, actually.", "実は結構良い。")
+                 ]),
+            make("proper", "real; genuine; thorough (UK)",
+                 "本物の・ちゃんとした",
+                 useCases: ["きちんとしている、本物だと強調するとき"],
+                 examples: [
+                    ("A proper meal.", "ちゃんとした食事。"),
+                    ("Proper job!", "よくやった！")
+                 ]),
+            make("dead", "very (UK slang)",
+                 "めっちゃ〜",
+                 useCases: ["強調副詞として"],
+                 examples: [
+                    ("Dead tired.", "めっちゃ疲れた。"),
+                    ("Dead easy.", "超簡単。")
+                 ]),
+            make("bloody", "damn (UK intensifier)",
+                 "めっちゃ・くそ",
+                 useCases: ["強い感情を込めるとき"],
+                 examples: [
+                    ("Bloody brilliant!", "マジで最高！"),
+                    ("Bloody hell!", "なんてこった！")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 食事・飲み物（追加 5）
+
+    private static var britishFood7: [Word] {
+        [
+            make("pint", "a pint of beer",
+                 "パイント（ビール一杯）",
+                 useCases: ["パブでビールを誘うとき"],
+                 examples: [
+                    ("Fancy a pint?", "一杯どう？"),
+                    ("Two pints, please.", "ビール2杯ください。")
+                 ]),
+            make("brew", "tea; sometimes coffee",
+                 "お茶（紅茶）",
+                 useCases: ["ティータイムを誘うとき"],
+                 examples: [
+                    ("Cup of brew?", "お茶どう？"),
+                    ("Make us a brew.", "お茶入れて。")
+                 ]),
+            make("cuppa", "a cup of tea",
+                 "一杯のお茶",
+                 useCases: ["ティーを誘うイギリス的表現"],
+                 examples: [
+                    ("Fancy a cuppa?", "お茶飲む？"),
+                    ("I'll put the cuppa on.", "お茶用意するね。")
+                 ]),
+            make("takeaway", "takeout food (UK)",
+                 "持ち帰り",
+                 useCases: ["持ち帰り注文するとき"],
+                 examples: [
+                    ("Order a takeaway.", "持ち帰り頼もう。"),
+                    ("Indian takeaway tonight?", "今夜インド料理のテイク？")
+                 ]),
+            make("chippy", "fish and chips shop",
+                 "フィッシュ&チップス店",
+                 useCases: ["イギリスのチップ屋を指すとき"],
+                 examples: [
+                    ("Off to the chippy.", "チッピーに行く。"),
+                    ("Local chippy is great.", "近所のチッピー美味しい。")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 提案・誘い（追加 4・fancy は既出）
+
+    private static var britishSuggestions7: [Word] {
+        [
+            make("fancy that!", "what a surprise",
+                 "まさか！・なんと！",
+                 useCases: ["驚きを表す感嘆として"],
+                 examples: [
+                    ("Fancy that!", "そりゃ驚き！"),
+                    ("Well, fancy that!", "へえ、驚いた！")
+                 ]),
+            make("shall we", "shall we go (let's)",
+                 "〜しましょうか",
+                 useCases: ["丁寧に誘うとき"],
+                 examples: [
+                    ("Shall we go?", "行きましょうか？"),
+                    ("Shall we, then?", "じゃあ、行こうか？")
+                 ]),
+            make("how about a cuppa", "how about tea",
+                 "お茶でもどう？",
+                 useCases: ["お茶に誘う定番フレーズ"],
+                 examples: [
+                    ("How about a cuppa?", "お茶でも？"),
+                    ("How about a cuppa and a chat?", "お茶しながら話す？")
+                 ]),
+            make("let's pop out", "let's step out briefly",
+                 "ちょっと出よう",
+                 useCases: ["ちょっと外に出ようと誘うとき"],
+                 examples: [
+                    ("Let's pop out for lunch.", "昼ごはんに出よう。"),
+                    ("Let's pop out to the shop.", "店に行こう。")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 動詞・行動（追加 10）
+
+    private static var britishVerbs7: [Word] {
+        [
+            make("pop in", "drop by briefly",
+                 "ちょっと寄る",
+                 useCases: ["軽く立ち寄る話"],
+                 examples: [
+                    ("Pop in later.", "後で寄る。"),
+                    ("I'll pop in to say hi.", "顔出しに寄る。")
+                 ]),
+            make("pop round", "drop by",
+                 "立ち寄る",
+                 useCases: ["カジュアルに訪問するとき"],
+                 examples: [
+                    ("Pop round tomorrow.", "明日寄るね。"),
+                    ("Pop round for tea?", "お茶に寄る？")
+                 ]),
+            make("nip out", "step out briefly",
+                 "ちょっと出る",
+                 useCases: ["短時間外出する話"],
+                 examples: [
+                    ("Nip out for milk.", "牛乳買いに出る。"),
+                    ("I'll just nip out.", "ちょっと出てくる。")
+                 ]),
+            make("queue", "line up (UK)",
+                 "並ぶ",
+                 useCases: ["イギリスで列を作るとき"],
+                 examples: [
+                    ("Queue here.", "ここで並んで。"),
+                    ("Queue's long.", "列が長い。")
+                 ]),
+            make("post", "mail something (UK)",
+                 "投函する",
+                 useCases: ["手紙や荷物を出す話"],
+                 examples: [
+                    ("Post the letter.", "手紙を出す。"),
+                    ("I'll post it tomorrow.", "明日出すね。")
+                 ]),
+            make("ring", "call on the phone (UK)",
+                 "電話する",
+                 useCases: ["電話の連絡を取るとき"],
+                 examples: [
+                    ("I'll ring you.", "電話するよ。"),
+                    ("Give me a ring.", "電話して。")
+                 ]),
+            make("fortnight", "two weeks",
+                 "2週間",
+                 useCases: ["2週間の期間を表すとき"],
+                 examples: [
+                    ("In a fortnight.", "2週間後に。"),
+                    ("Once a fortnight.", "2週間に1回。")
+                 ]),
+            make("wee", "small (Scottish/UK)",
+                 "小さい・ちょっと",
+                 useCases: ["小ささや少量を表すとき"],
+                 examples: [
+                    ("A wee bit.", "ちょっとだけ。"),
+                    ("Just a wee minute.", "ちょっと待って。")
+                 ]),
+            make("nick", "steal; arrest (UK)",
+                 "盗む・捕まえる",
+                 useCases: ["盗難の話", "警察に捕まる話"],
+                 examples: [
+                    ("Someone nicked it.", "誰かに盗まれた。"),
+                    ("Got nicked!", "捕まった！")
+                 ]),
+            make("reckon", "think; suppose (UK/AUS)",
+                 "〜だと思う",
+                 useCases: ["カジュアルに意見を述べるとき"],
+                 examples: [
+                    ("I reckon so.", "そう思う。"),
+                    ("Reckon he'll come?", "彼来ると思う？")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 不満・がっかり（追加 3・fed up は既出）
+
+    private static var britishComplaints7: [Word] {
+        [
+            make("bloody hell", "damn it; oh my god (UK)",
+                 "くそ・なんてこった",
+                 useCases: ["驚きや怒りを強く表すとき"],
+                 examples: [
+                    ("Bloody hell!", "マジかよ！"),
+                    ("Bloody hell, that's expensive.", "高すぎだろ！")
+                 ]),
+            make("bollocks", "nonsense; rubbish (UK vulgar)",
+                 "でたらめ・くそ",
+                 useCases: ["強く否定する場面"],
+                 examples: [
+                    ("That's bollocks.", "でたらめだ。"),
+                    ("Bollocks!", "くそっ！")
+                 ]),
+            make("rubbish", "nonsense; trash",
+                 "くだらない・ゴミ",
+                 useCases: ["価値がないと否定するとき"],
+                 examples: [
+                    ("That's rubbish.", "くだらない。"),
+                    ("Take out the rubbish.", "ゴミ出して。")
+                 ])
+        ]
+    }
+
+    // MARK: - 英国英語: 同意・理解（追加 3）
+
+    private static var britishAgreement7: [Word] {
+        [
+            make("innit?", "isn't it (UK contraction)",
+                 "〜だよね？",
+                 useCases: ["イギリス英語のタグクエスチョン"],
+                 examples: [
+                    ("It's hot, innit?", "暑いよね？"),
+                    ("Wicked, innit?", "ヤバい、だろ？")
+                 ]),
+            make("right", "okay; that's correct",
+                 "そうだよね・了解",
+                 useCases: ["相づち", "話を進めるための合いの手"],
+                 examples: [
+                    ("Right, let's go.", "よし、行こう。"),
+                    ("Right, got it.", "了解、わかった。")
+                 ]),
+            make("spot on", "exactly right",
+                 "その通り・ピッタリ",
+                 useCases: ["完璧な答えに賛同するとき"],
+                 examples: [
+                    ("Spot on!", "その通り！"),
+                    ("That's spot on.", "ぴったり。")
+                 ])
+        ]
+    }
+
+    // MARK: - シングリッシュ: よく使う表現（追加 9）
+
+    private static var singlishCommon7: [Word] {
+        [
+            make("cannot", "can't (Singlish)",
+                 "できない・ダメ",
+                 useCases: ["シンガポールでよく使う否定形"],
+                 examples: [
+                    ("Cannot lah.", "できないよ。"),
+                    ("Cannot one.", "絶対無理。")
+                 ]),
+            make("shiok", "awesome; great; tasty (Singlish)",
+                 "最高・気持ちいい・うまい",
+                 useCases: ["気持ちいい・美味しい・最高の体験"],
+                 examples: [
+                    ("Shiok!", "最高！"),
+                    ("So shiok!", "めっちゃ気持ちいい！")
+                 ]),
+            make("sian", "bored; fed up (Singlish)",
+                 "だるい・つまらない・うんざり",
+                 useCases: ["退屈や倦怠感を表すとき"],
+                 examples: [
+                    ("So sian.", "マジでつまんない。"),
+                    ("Sian half.", "超だるい。")
+                 ]),
+            make("paiseh", "embarrassed; awkward (Singlish)",
+                 "恥ずかしい・気まずい・申し訳ない",
+                 useCases: ["軽い謝罪や照れ隠し"],
+                 examples: [
+                    ("Paiseh ah.", "ごめんね。"),
+                    ("So paiseh.", "恥ずかしい。")
+                 ]),
+            make("kiasu", "afraid of losing out (Singlish)",
+                 "負けず嫌い・取り残されるのを恐れる",
+                 useCases: ["シンガポール文化を表す代表語"],
+                 examples: [
+                    ("Don't be so kiasu.", "そんなに焦るなよ。"),
+                    ("Singaporeans are kiasu.", "シンガポール人は負けず嫌い。")
+                 ]),
+            make("kiasi", "afraid of dying; cowardly (Singlish)",
+                 "怖がり・臆病",
+                 useCases: ["kiasu とセットで使う"],
+                 examples: [
+                    ("Don't be kiasi.", "ビビるなよ。"),
+                    ("Kiasi people don't try new things.", "怖がりは新しいこと試さない。")
+                 ]),
+            make("alamak", "oh no; oops (Singlish/Malay)",
+                 "おっと・しまった・あらら",
+                 useCases: ["驚き・困惑の感嘆詞"],
+                 examples: [
+                    ("Alamak! Forgot already.", "しまった、忘れてた。"),
+                    ("Alamak, not again.", "あらら、また？")
+                 ]),
+            make("wah", "wow (Singlish)",
+                 "わお・うわー",
+                 useCases: ["驚き・感嘆を表すとき"],
+                 examples: [
+                    ("Wah, so nice!", "うわ、いいね！"),
+                    ("Wah lao!", "マジで！")
+                 ]),
+            make("chope", "reserve (a seat)",
+                 "席取りする・予約する",
+                 useCases: ["シンガポールのフードコート文化"],
+                 examples: [
+                    ("Chope the seat.", "席取って。"),
+                    ("Choped already.", "もう取ってある。")
+                 ])
+        ]
+    }
+
+    // MARK: - シングリッシュ: 食事関連（追加 4）
+
+    private static var singlishFood7: [Word] {
+        [
+            make("makan", "to eat; food (Singlish/Malay)",
+                 "食べる・食事",
+                 useCases: ["食事に誘うシングリッシュ定番"],
+                 examples: [
+                    ("Let's go makan.", "ご飯食べに行こう。"),
+                    ("Already makan?", "もう食べた？")
+                 ]),
+            make("dabao", "takeaway (Singlish)",
+                 "持ち帰り",
+                 useCases: ["ホーカーセンターでの注文"],
+                 examples: [
+                    ("Dabao please.", "持ち帰りで。"),
+                    ("Dabao for two.", "2人分テイクアウトで。")
+                 ]),
+            make("kopi", "coffee (Singapore-style)",
+                 "コーヒー（シンガポール式）",
+                 useCases: ["伝統的な注文の仕方"],
+                 examples: [
+                    ("One kopi please.", "コーヒー一つ。"),
+                    ("Kopi-O, please.", "砂糖入りブラックで。")
+                 ]),
+            make("teh", "tea (Singapore-style)",
+                 "紅茶（シンガポール式）",
+                 useCases: ["kopi と並ぶ定番ドリンク"],
+                 examples: [
+                    ("Teh please.", "紅茶ください。"),
+                    ("Teh tarik for me.", "テタリックで。")
+                 ])
+        ]
+    }
+
+    // MARK: - シングリッシュ: よく使う表現（追加 7・how come と on the way は既出）
+
+    private static var singlishFrequent7: [Word] {
+        [
+            make("see how", "let's see; depends",
+                 "様子見・状況次第",
+                 useCases: ["決定を保留するときの定番"],
+                 examples: [
+                    ("See how lah.", "様子を見よう。"),
+                    ("See how first.", "とりあえず様子見。")
+                 ]),
+            make("like that", "like so; that's how (Singlish)",
+                 "そんな感じ・そうだよ",
+                 useCases: ["状況描写の万能フレーズ"],
+                 examples: [
+                    ("Like that lor.", "そんなもんだよ。"),
+                    ("Why like that?", "なんでそうなの？")
+                 ]),
+            make("last time", "previously; back then (Singlish)",
+                 "昔は・以前は",
+                 useCases: ["以前の話を切り出すとき"],
+                 examples: [
+                    ("Last time got.", "昔はあった。"),
+                    ("Last time we walked.", "昔は歩いて行った。")
+                 ]),
+            make("next time", "another time (Singlish)",
+                 "今度・また",
+                 useCases: ["誘いを丁重に断るとき"],
+                 examples: [
+                    ("Next time lah.", "また今度ね。"),
+                    ("Next time, OK?", "今度ね？")
+                 ]),
+            make("where got", "no way; that's not true",
+                 "そんなことない",
+                 useCases: ["否定の決まり文句"],
+                 examples: [
+                    ("Where got?", "そんなことないよ。"),
+                    ("Where got time?", "時間なんかないよ。")
+                 ]),
+            make("got or not", "is there any?",
+                 "ある？",
+                 useCases: ["シンプルな質問形"],
+                 examples: [
+                    ("Got or not?", "ある？"),
+                    ("Time got or not?", "時間ある？")
+                 ]),
+            make("already", "already (sentence-end completion marker)",
+                 "もう・すでに",
+                 useCases: ["完了形の代わりに使う文末"],
+                 examples: [
+                    ("I eat already.", "もう食べた。"),
+                    ("Done already.", "もう終わった。")
                  ])
         ]
     }
