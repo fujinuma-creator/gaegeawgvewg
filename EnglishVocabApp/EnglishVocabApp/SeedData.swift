@@ -39,6 +39,7 @@ enum SeedData {
             + elegantOpeners8 + elegantAgreement8 + elegantDisagreement8
             + elegantHedging8 + elegantStructure8 + elegantSuggestions8
             + elegantEvaluations8 + elegantConnectives8
+            + miscBatch9
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -7125,6 +7126,90 @@ enum SeedData {
                  examples: [
                     ("In which case, we'll go.", "その場合は行きます。"),
                     ("In which case, let me check.", "その場合は確認させて。")
+                 ])
+        ]
+    }
+
+    // MARK: - 雑多な追加（11）
+
+    private static var miscBatch9: [Word] {
+        [
+            make("boycott", "refuse to buy or use as protest",
+                 "ボイコットする・不買する",
+                 useCases: ["不満から購入や参加を拒否する話"],
+                 examples: [
+                    ("They boycotted the brand.", "そのブランドをボイコットした。"),
+                    ("We're boycotting the meeting.", "会議に出ない。")
+                 ]),
+            make("fuss over", "pay excessive attention to",
+                 "大げさに気を遣う・かまいすぎる",
+                 useCases: ["過剰に世話を焼く話"],
+                 examples: [
+                    ("Don't fuss over me.", "そんなに気を遣わないで。"),
+                    ("She fussed over the kids.", "彼女、子どもたちにかまいすぎてた。")
+                 ]),
+            make("moan", "complain in a whiny tone",
+                 "ぐちぐち言う・うめく",
+                 useCases: ["不満を漏らす話"],
+                 examples: [
+                    ("Stop moaning.", "ぐちぐち言わないで。"),
+                    ("He's always moaning.", "彼、いつもブーブー言ってる。")
+                 ]),
+            make("pop over", "drop by quickly",
+                 "ちょっと立ち寄る",
+                 useCases: ["近所の家にふらっと行く話"],
+                 examples: [
+                    ("Pop over for a tea.", "お茶しに来てよ。"),
+                    ("I'll pop over later.", "後で寄るね。")
+                 ]),
+            make("buzzing", "very excited; energetic",
+                 "ワクワクしてる・盛り上がってる",
+                 useCases: ["興奮や活気を表すとき"],
+                 examples: [
+                    ("I'm buzzing!", "テンション上がってる！"),
+                    ("The crowd was buzzing.", "観客が盛り上がってた。")
+                 ]),
+            make("wreck", "ruin; a person who's a mess",
+                 "台無しにする・ボロボロの人",
+                 useCases: ["何かを壊す話", "疲労困憊した人を表すとき"],
+                 examples: [
+                    ("That wrecked my plan.", "それで計画が台無し。"),
+                    ("I'm a wreck today.", "今日ボロボロ。")
+                 ]),
+            make("maniac", "crazy or fanatical person",
+                 "狂人・〜マニア",
+                 useCases: ["危ない人や熱狂的なファンを表すとき"],
+                 examples: [
+                    ("He drives like a maniac.", "彼、運転が荒い。"),
+                    ("A coffee maniac.", "コーヒーマニア。")
+                 ]),
+            make("have a go", "give it a try (UK)",
+                 "挑戦してみる・やってみる",
+                 useCases: ["試しにやってみるとき"],
+                 examples: [
+                    ("Have a go.", "やってみて。"),
+                    ("I'll have a go at it.", "ちょっと試してみる。")
+                 ]),
+            make("if you ask me", "in my opinion",
+                 "私に言わせれば",
+                 useCases: ["率直な意見を切り出すとき"],
+                 examples: [
+                    ("If you ask me, it's silly.", "私に言わせればバカげてる。"),
+                    ("If you ask me, he's right.", "言わせてもらえれば、彼は正しい。")
+                 ]),
+            make("good on you", "good for you (UK/AUS)",
+                 "よくやったね・偉い",
+                 useCases: ["相手の頑張りを称えるとき"],
+                 examples: [
+                    ("Good on you!", "よくやった！"),
+                    ("Good on you for trying.", "挑戦して偉い。")
+                 ]),
+            make("don't you think", "wouldn't you agree",
+                 "〜だと思わない？",
+                 useCases: ["相手の同意を促すとき"],
+                 examples: [
+                    ("It's hot, don't you think?", "暑いと思わない？"),
+                    ("That's strange, don't you think?", "それ変だと思わない？")
                  ])
         ]
     }
