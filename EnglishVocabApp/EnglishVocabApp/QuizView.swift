@@ -68,6 +68,9 @@ struct QuizView: View {
     @State private var correctCount = 0
     @State private var totalCount = 0
     @State private var detailWord: Word? = nil
+    /// Drag offset used to animate the translation question card while the
+    /// user is swiping between problems (Tinder-style follow-the-finger).
+    @State private var translationDragOffset: CGSize = .zero
     @State private var showDetail: Bool = false
 
     // Translation mode state — the picked problem persists until the user
@@ -575,15 +578,24 @@ struct QuizView: View {
                 .frame(maxWidth: .infinity)
                 .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
                 .padding(.horizontal, 16)
+                .offset(x: translationDragOffset.width, y: translationDragOffset.height * 0.4)
+                .rotationEffect(.degrees(Double(translationDragOffset.width) / 22))
                 .contentShape(Rectangle())
                 .gesture(
-                    DragGesture(minimumDistance: 30)
+                    DragGesture(minimumDistance: 10)
+                        .onChanged { value in
+                            translationDragOffset = value.translation
+                        }
                         .onEnded { value in
-                            let threshold: CGFloat = 60
+                            let threshold: CGFloat = 80
                             if value.translation.width > threshold {
-                                nextProblem()
+                                flyOffTranslation(direction: 1) { nextProblem() }
                             } else if value.translation.width < -threshold {
-                                prevProblem()
+                                flyOffTranslation(direction: -1) { prevProblem() }
+                            } else {
+                                withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                                    translationDragOffset = .zero
+                                }
                             }
                         }
                 )
@@ -647,6 +659,26 @@ struct QuizView: View {
         guard let w = currentWord, let ex = currentExample,
               let exIdx = w.examples.firstIndex(where: { $0.id == ex.id }) else { return 0 }
         return queue.firstIndex { $0.word.id == w.id && $0.exampleIdx == exIdx } ?? 0
+    }
+
+    /// Animate the current translation question card off-screen, then call
+    /// the actual problem-change closure with the offset reset (no animation)
+    /// so the next card pops in at the centre instead of sliding back.
+    private func flyOffTranslation(direction: CGFloat, completion: @escaping () -> Void) {
+        withAnimation(.easeOut(duration: 0.25)) {
+            translationDragOffset = CGSize(
+                width: direction * 700,
+                height: translationDragOffset.height
+            )
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            var t = Transaction()
+            t.disablesAnimations = true
+            withTransaction(t) {
+                translationDragOffset = .zero
+                completion()
+            }
+        }
     }
 
     private func nextProblem() {

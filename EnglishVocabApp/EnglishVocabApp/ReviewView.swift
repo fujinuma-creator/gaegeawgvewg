@@ -46,11 +46,10 @@ struct ReviewView: View {
                 if let word = currentWord {
                     cardView(for: word)
                         .id(word.id)
-                        .offset(x: dragOffset.width, y: 0)
-                        .rotationEffect(.degrees(Double(dragOffset.width) / 20))
+                        .offset(x: dragOffset.width, y: dragOffset.height * 0.4)
+                        .rotationEffect(.degrees(Double(dragOffset.width) / 18))
                         .gesture(swipeGesture(for: word))
-                        .animation(.spring(response: 0.35, dampingFraction: 0.75), value: dragOffset)
-                        .transition(.opacity)
+                        .transition(.opacity.combined(with: .scale(scale: 0.96)))
                 } else {
                     completedView
                 }
@@ -320,19 +319,43 @@ struct ReviewView: View {
             .onEnded { value in
                 let threshold: CGFloat = 100
                 if value.translation.width > threshold {
-                    recordMark(.perfect)
+                    flyOff(direction: 1) {
+                        recordMark(.perfect)
+                    }
                 } else if value.translation.width < -threshold {
                     // Left swipe: also auto-pin the word to the review list
                     // (no-op if already there) so the user can quickly send
                     // weak words into focused practice.
-                    if let w = currentWord, !w.isInReviewList {
-                        store.toggleReviewList(for: w)
+                    flyOff(direction: -1) {
+                        if let w = currentWord, !w.isInReviewList {
+                            store.toggleReviewList(for: w)
+                        }
+                        recordMark(.forgot)
                     }
-                    recordMark(.forgot)
                 } else {
-                    dragOffset = .zero
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                        dragOffset = .zero
+                    }
                 }
             }
+    }
+
+    /// Tinder-style fly-off animation: animate the card past the screen edge,
+    /// then snap dragOffset back to zero (without animation) so the next card
+    /// — keyed by the new word's id — appears at center instead of sliding
+    /// back from the off-screen position.
+    private func flyOff(direction: CGFloat, completion: @escaping () -> Void) {
+        withAnimation(.easeOut(duration: 0.25)) {
+            dragOffset = CGSize(width: direction * 700, height: dragOffset.height)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            var t = Transaction()
+            t.disablesAnimations = true
+            withTransaction(t) {
+                dragOffset = .zero
+                completion()
+            }
+        }
     }
 
     private func recordMark(_ m: ReviewMark) {
