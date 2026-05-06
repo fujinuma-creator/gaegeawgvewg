@@ -45,6 +45,12 @@ enum SeedData {
             + iVerbSimple10 + youVerbCheck10 + thatsReactions10
             + howVerbQuestions10 + verbGerund10 + verbInfinitive10
             + toBeAdj10 + sentenceEnders10
+            + howReactions11 + ifPatterns11 + theresPatterns11
+            + itsPatterns11 + causativePatterns11 + whatPatterns11
+            + adverbPatterns11 + endingPatterns11
+            + failureSuccessVerbs11 + relationshipVerbs11
+            + mindChangeVerbs11 + observationVerbs11
+            + prepositionalConnectors11
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -7838,6 +7844,615 @@ enum SeedData {
                  examples: [
                     ("You're going, whether you like it or not.", "嫌でも行くんだよ。"),
                     ("It's happening, whether you like it or not.", "好き嫌い関係なくこうなる。")
+                 ])
+        ]
+    }
+
+    // MARK: - How + 形容詞/副詞 感嘆（追加 5）
+
+    private static var howReactions11: [Word] {
+        [
+            make("How time flies", "time passes quickly",
+                 "時が経つのは早い",
+                 useCases: ["久しぶりに何かを思い出したとき"],
+                 examples: [
+                    ("How time flies!", "時が経つのは早い！"),
+                    ("How time flies — already a year.", "早いね、もう一年。")
+                 ]),
+            make("How sweet of you", "what a kind gesture",
+                 "なんて優しい",
+                 useCases: ["相手の気遣いに感謝するとき"],
+                 examples: [
+                    ("How sweet of you!", "優しいね！"),
+                    ("How sweet of you to remember.", "覚えててくれて優しい。")
+                 ]),
+            make("How thoughtful", "very considerate",
+                 "気が利くね",
+                 useCases: ["細やかな気配りを褒めるとき"],
+                 examples: [
+                    ("How thoughtful!", "気が利くね！"),
+                    ("How thoughtful of him.", "彼って気が利く。")
+                 ]),
+            make("How embarrassing", "very awkward",
+                 "恥ずかしい",
+                 useCases: ["気まずい状況を表すとき"],
+                 examples: [
+                    ("How embarrassing!", "恥ずかしい！"),
+                    ("How embarrassing for him.", "彼にとって気まずいね。")
+                 ]),
+            make("How disappointing", "what a letdown",
+                 "がっかりだ",
+                 useCases: ["期待外れの結果に失望したとき"],
+                 examples: [
+                    ("How disappointing.", "がっかり。"),
+                    ("How disappointing the result was.", "結果はがっかりだった。")
+                 ])
+        ]
+    }
+
+    // MARK: - If + 主語 条件パターン（追加 5）
+
+    private static var ifPatterns11: [Word] {
+        [
+            make("if only", "I wish that",
+                 "〜さえあれば",
+                 useCases: ["叶わない願望を語るとき"],
+                 examples: [
+                    ("If only I knew.", "知ってたら。"),
+                    ("If only it were true.", "本当ならいいのに。")
+                 ]),
+            make("if anything", "rather; on the contrary",
+                 "むしろ・どちらかと言えば",
+                 useCases: ["むしろ反対のことを示唆するとき"],
+                 examples: [
+                    ("If anything, it's better.", "むしろ良くなった。"),
+                    ("If anything, he's nicer.", "どちらかと言えば彼の方が優しい。")
+                 ]),
+            make("if need be", "if necessary",
+                 "必要なら",
+                 useCases: ["条件付きで対応を申し出るとき"],
+                 examples: [
+                    ("If need be, I'll go.", "必要なら行く。"),
+                    ("Call me if need be.", "必要なら電話して。")
+                 ]),
+            make("if you must know", "since you insist on asking",
+                 "そんなに知りたいなら",
+                 useCases: ["しつこく聞かれて渋々答えるとき"],
+                 examples: [
+                    ("If you must know, I left.", "どうしてもなら、帰った。"),
+                    ("If you must know, I said no.", "そんなに知りたいなら、断った。")
+                 ]),
+            make("if push comes to shove", "if the situation becomes critical",
+                 "いざとなれば",
+                 useCases: ["最悪の場合の対応を述べるとき"],
+                 examples: [
+                    ("If push comes to shove, fight.", "いざとなれば戦う。"),
+                    ("If push comes to shove, we'll cancel.", "いざとなれば中止する。")
+                 ])
+        ]
+    }
+
+    // MARK: - There's + 名詞 構文（追加 5）
+
+    private static var theresPatterns11: [Word] {
+        [
+            make("there's no way", "it's impossible",
+                 "〜のはずがない",
+                 useCases: ["強く否定するとき"],
+                 examples: [
+                    ("There's no way!", "ありえない！"),
+                    ("There's no way he did it.", "彼がやったはずがない。")
+                 ]),
+            make("there's no point", "it's pointless",
+                 "意味がない",
+                 useCases: ["やっても無駄だと伝えるとき"],
+                 examples: [
+                    ("There's no point arguing.", "議論しても無駄。"),
+                    ("There's no point waiting.", "待っても意味ない。")
+                 ]),
+            make("there's no telling", "it's impossible to know",
+                 "分からない",
+                 useCases: ["予測不可能なことを表すとき"],
+                 examples: [
+                    ("There's no telling what'll happen.", "何が起こるか分からない。"),
+                    ("There's no telling when he'll come.", "いつ来るか分からない。")
+                 ]),
+            make("there's no rush", "no need to hurry",
+                 "急がなくていい",
+                 useCases: ["相手を急がせないように伝えるとき"],
+                 examples: [
+                    ("There's no rush.", "ゆっくりでいい。"),
+                    ("Take your time, there's no rush.", "ゆっくりどうぞ、急がなくていい。")
+                 ]),
+            make("there's something about", "there is a certain quality in",
+                 "どこか〜なところがある",
+                 useCases: ["言葉にできない印象を語るとき"],
+                 examples: [
+                    ("There's something about him.", "彼にはどこか〜なところがある。"),
+                    ("There's something about this place.", "この場所には何かある。")
+                 ])
+        ]
+    }
+
+    // MARK: - It's + 名詞/形容詞 反応（追加 5）
+
+    private static var itsPatterns11: [Word] {
+        [
+            make("it's about time", "finally; long overdue",
+                 "そろそろだ・やっとだ",
+                 useCases: ["待っていたことが起きたとき"],
+                 examples: [
+                    ("It's about time!", "やっとだ！"),
+                    ("It's about time you called.", "やっと電話してきた。")
+                 ]),
+            make("it's no use", "it's pointless",
+                 "無駄だ",
+                 useCases: ["諦めを表すとき"],
+                 examples: [
+                    ("It's no use crying.", "泣いても無駄。"),
+                    ("It's no use trying.", "やっても無駄。")
+                 ]),
+            make("it's worth it", "it has value",
+                 "価値がある",
+                 useCases: ["努力や出費に見合うと伝えるとき"],
+                 examples: [
+                    ("It's worth it.", "その価値ある。"),
+                    ("Trust me, it's worth it.", "信じて、価値ある。")
+                 ]),
+            make("it's beyond me", "I can't understand it",
+                 "私には理解できない",
+                 useCases: ["理解不能なことに対するとき"],
+                 examples: [
+                    ("It's beyond me.", "理解不能。"),
+                    ("Why he did it is beyond me.", "なぜやったか分からない。")
+                 ]),
+            make("it's up to you", "your decision",
+                 "あなた次第",
+                 useCases: ["相手に判断を委ねるとき"],
+                 examples: [
+                    ("It's up to you.", "あなた次第。"),
+                    ("Either way, it's up to you.", "どっちでもあなた次第。")
+                 ])
+        ]
+    }
+
+    // MARK: - Make / Have 使役・依頼（追加 3・get/have someone do は既出）
+
+    private static var causativePatterns11: [Word] {
+        [
+            make("make sure", "ensure; be certain",
+                 "必ず〜する",
+                 useCases: ["相手に確実な行動を依頼するとき"],
+                 examples: [
+                    ("Make sure to call.", "必ず電話して。"),
+                    ("Make sure the door is locked.", "ドアの鍵を必ず確認して。")
+                 ]),
+            make("make do with", "manage with what is available",
+                 "〜で間に合わせる",
+                 useCases: ["足りないものでやりくりするとき"],
+                 examples: [
+                    ("Make do with this.", "これで我慢。"),
+                    ("We'll make do with what we have.", "あるもので何とかする。")
+                 ]),
+            make("have a go at", "give it a try",
+                 "試してみる",
+                 useCases: ["挑戦してみるよう促すとき"],
+                 examples: [
+                    ("Have a go at it.", "試してみて。"),
+                    ("I'll have a go at fixing it.", "直すのを試してみる。")
+                 ])
+        ]
+    }
+
+    // MARK: - What + 主語 構文（追加 5）
+
+    private static var whatPatterns11: [Word] {
+        [
+            make("what gets me is", "what bothers me is",
+                 "気になるのは",
+                 useCases: ["不満や引っかかる点を伝えるとき"],
+                 examples: [
+                    ("What gets me is his attitude.", "気になるのは彼の態度。"),
+                    ("What gets me is the timing.", "気になるのはタイミング。")
+                 ]),
+            make("what I mean is", "in other words",
+                 "つまり",
+                 useCases: ["言い直して説明するとき"],
+                 examples: [
+                    ("What I mean is, no.", "つまりノー。"),
+                    ("What I mean is, it's complicated.", "つまり複雑なんだ。")
+                 ]),
+            make("what I'm saying is", "the point I'm making is",
+                 "言いたいのは",
+                 useCases: ["要点を強調して伝えるとき"],
+                 examples: [
+                    ("What I'm saying is, careful.", "言いたいのは、注意してと。"),
+                    ("What I'm saying is, we should wait.", "言いたいのは待つべきってこと。")
+                 ]),
+            make("what's wrong with", "what is the problem with",
+                 "〜の何が悪い？",
+                 useCases: ["反論や弁護として使うとき"],
+                 examples: [
+                    ("What's wrong with that?", "それの何が悪い？"),
+                    ("What's wrong with trying?", "試して何が悪い？")
+                 ]),
+            make("what's the matter", "what is the problem",
+                 "どうしたの？",
+                 useCases: ["相手の様子を心配して尋ねるとき"],
+                 examples: [
+                    ("What's the matter?", "どうした？"),
+                    ("What's the matter with you?", "どうしたの、君？")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞 + 副詞 パターン（追加 5）
+
+    private static var adverbPatterns11: [Word] {
+        [
+            make("right away", "immediately",
+                 "すぐに",
+                 useCases: ["即座に行動することを伝えるとき"],
+                 examples: [
+                    ("I'll do it right away.", "すぐやる。"),
+                    ("Send it right away.", "すぐ送って。")
+                 ]),
+            make("right now", "at this moment",
+                 "今すぐ",
+                 useCases: ["即時の対応を求めるとき"],
+                 examples: [
+                    ("Right now, please.", "今すぐお願い。"),
+                    ("I need it right now.", "今すぐ必要。")
+                 ]),
+            make("just about", "almost; nearly",
+                 "ほぼ・もう少しで",
+                 useCases: ["完了直前を表すとき"],
+                 examples: [
+                    ("Just about done.", "ほぼ終わり。"),
+                    ("I'm just about ready.", "もう少しで準備完了。")
+                 ]),
+            make("just barely", "by a very small margin",
+                 "ぎりぎり",
+                 useCases: ["かろうじて成功したとき"],
+                 examples: [
+                    ("Just barely made it.", "ぎりぎり間に合った。"),
+                    ("Just barely passed.", "ぎりぎり合格。")
+                 ]),
+            make("way off", "completely wrong; far from correct",
+                 "大間違い・大ハズレ",
+                 useCases: ["予想や答えが大きく外れているとき"],
+                 examples: [
+                    ("Way off the mark.", "大ハズレ。"),
+                    ("Your guess is way off.", "予想は大外れ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 文末で意味を加える（追加 4・in a row は既出）
+
+    private static var endingPatterns11: [Word] {
+        [
+            make("for once", "this one time",
+                 "一度くらいは",
+                 useCases: ["普段と違う行動を促すとき"],
+                 examples: [
+                    ("Be quiet for once.", "一度くらい静かに。"),
+                    ("Listen for once.", "たまには聞いて。")
+                 ]),
+            make("by far", "by a large margin",
+                 "圧倒的に",
+                 useCases: ["群を抜いていることを強調するとき"],
+                 examples: [
+                    ("Best by far.", "断然最高。"),
+                    ("By far the easiest.", "圧倒的に一番楽。")
+                 ]),
+            make("in a heartbeat", "instantly; without hesitation",
+                 "即座に",
+                 useCases: ["迷いなく行動する意志を示すとき"],
+                 examples: [
+                    ("I'd go in a heartbeat.", "即行く。"),
+                    ("She'd say yes in a heartbeat.", "彼女なら即イエス。")
+                 ]),
+            make("for the life of me", "no matter how hard I try",
+                 "どうしても〜できない",
+                 useCases: ["何かを思い出せない・できない強調"],
+                 examples: [
+                    ("Can't remember for the life of me.", "どうしても思い出せない。"),
+                    ("For the life of me, I can't find it.", "どうしても見つからない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 失敗・成功の動詞（追加 10・screw up は既出）
+
+    private static var failureSuccessVerbs11: [Word] {
+        [
+            make("doze off", "fall asleep unintentionally",
+                 "うたた寝する",
+                 useCases: ["授業や会議でうとうとしてしまうとき"],
+                 examples: [
+                    ("I dozed off in class.", "授業中うたた寝した。"),
+                    ("Don't doze off!", "寝落ちしないで！")
+                 ]),
+            make("rip off", "cheat by overcharging",
+                 "ぼったくる",
+                 useCases: ["不当に高く請求されたとき"],
+                 examples: [
+                    ("They ripped me off.", "ぼったくられた。"),
+                    ("That's a rip-off.", "それぼったくり。")
+                 ]),
+            make("save up", "accumulate money over time",
+                 "貯金する",
+                 useCases: ["何かのために少しずつ貯めるとき"],
+                 examples: [
+                    ("I'm saving up for a car.", "車のため貯金中。"),
+                    ("Save up for a rainy day.", "万が一に備えて貯めて。")
+                 ]),
+            make("bomb", "fail badly",
+                 "大失敗する",
+                 useCases: ["プレゼンや試験で大コケしたとき"],
+                 examples: [
+                    ("I bombed the test.", "テスト大失敗。"),
+                    ("The show bombed.", "ショーは大コケ。")
+                 ]),
+            make("fall flat", "fail to achieve the intended effect",
+                 "ウケない・失敗する",
+                 useCases: ["冗談やアイデアが受けなかったとき"],
+                 examples: [
+                    ("My joke fell flat.", "冗談が滑った。"),
+                    ("The plan fell flat.", "計画は失敗。")
+                 ]),
+            make("flunk", "fail an exam or course",
+                 "落第する",
+                 useCases: ["試験や授業で落ちたとき"],
+                 examples: [
+                    ("I flunked math.", "数学落とした。"),
+                    ("Don't flunk the test.", "テスト落ちないで。")
+                 ]),
+            make("blow it", "miss an opportunity by failing",
+                 "しくじる・台無しにする",
+                 useCases: ["大事な場面で失敗したとき"],
+                 examples: [
+                    ("I blew it.", "しくじった。"),
+                    ("Don't blow it now.", "今しくじらないで。")
+                 ]),
+            make("ace", "do extremely well",
+                 "完璧にこなす",
+                 useCases: ["試験や面接で抜群の成果を出したとき"],
+                 examples: [
+                    ("I aced the test.", "テスト満点。"),
+                    ("She aced the interview.", "面接バッチリ。")
+                 ]),
+            make("nail it", "do something perfectly",
+                 "見事に決める",
+                 useCases: ["パフォーマンスや作業を完璧にこなしたとき"],
+                 examples: [
+                    ("You nailed it!", "完璧！"),
+                    ("She nailed the speech.", "スピーチ完璧だった。")
+                 ]),
+            make("pull out", "withdraw from an event or commitment",
+                 "撤退する・手を引く",
+                 useCases: ["参加を取りやめるとき"],
+                 examples: [
+                    ("He pulled out of the deal.", "取引から手を引いた。"),
+                    ("I had to pull out.", "降りざるを得なかった。")
+                 ])
+        ]
+    }
+
+    // MARK: - 人間関係の動詞（追加 10）
+
+    private static var relationshipVerbs11: [Word] {
+        [
+            make("get back together", "resume a relationship",
+                 "よりを戻す",
+                 useCases: ["別れたカップルが再び付き合うとき"],
+                 examples: [
+                    ("They got back together.", "彼らはよりを戻した。"),
+                    ("Will you two get back together?", "二人またヨリ戻す？")
+                 ]),
+            make("pull myself together", "regain composure",
+                 "気を取り直す",
+                 useCases: ["落ち込みから立ち直るとき"],
+                 examples: [
+                    ("I need to pull myself together.", "気を取り直さなきゃ。"),
+                    ("Pull yourself together!", "しっかりしろ！")
+                 ]),
+            make("side with", "support one party in a dispute",
+                 "〜の味方をする",
+                 useCases: ["争いで誰かを支持するとき"],
+                 examples: [
+                    ("She sided with me.", "彼女は私の味方をした。"),
+                    ("Don't side with him.", "彼の肩を持たないで。")
+                 ]),
+            make("be behind", "support; be the cause of",
+                 "支持する・〜の裏にいる",
+                 useCases: ["背後で誰かを支えている、または黒幕であるとき"],
+                 examples: [
+                    ("I'm behind you.", "応援してる。"),
+                    ("Who's behind this?", "誰の仕業？")
+                 ]),
+            make("break up", "end a romantic relationship",
+                 "別れる",
+                 useCases: ["カップルが関係を終えるとき"],
+                 examples: [
+                    ("We broke up.", "別れた。"),
+                    ("They broke up last week.", "先週別れた。")
+                 ]),
+            make("drift apart", "gradually become less close",
+                 "疎遠になる",
+                 useCases: ["友人や恋人と自然に距離ができたとき"],
+                 examples: [
+                    ("We drifted apart.", "疎遠になった。"),
+                    ("Old friends sometimes drift apart.", "旧友は疎遠になることもある。")
+                 ]),
+            make("hit it off", "get along well immediately",
+                 "意気投合する",
+                 useCases: ["初対面で仲良くなれたとき"],
+                 examples: [
+                    ("We hit it off right away.", "すぐ意気投合した。"),
+                    ("They really hit it off.", "彼らは本当に気が合った。")
+                 ]),
+            make("hit on", "make a romantic advance toward",
+                 "口説く・ナンパする",
+                 useCases: ["恋愛的にアプローチするとき"],
+                 examples: [
+                    ("He hit on her at the bar.", "バーで彼女を口説いた。"),
+                    ("Are you hitting on me?", "口説いてる？")
+                 ]),
+            make("make up with", "reconcile after a fight",
+                 "仲直りする",
+                 useCases: ["喧嘩を終えて関係を修復するとき"],
+                 examples: [
+                    ("I made up with him.", "彼と仲直りした。"),
+                    ("Did you make up with her?", "彼女と仲直りした？")
+                 ]),
+            make("fall out with", "have a quarrel and stop being friends",
+                 "仲違いする",
+                 useCases: ["喧嘩して関係が悪化したとき"],
+                 examples: [
+                    ("I fell out with him.", "彼と仲違いした。"),
+                    ("They fell out over money.", "金で仲違いした。")
+                 ])
+        ]
+    }
+
+    // MARK: - 思考・発言・心境変化（追加 10）
+
+    private static var mindChangeVerbs11: [Word] {
+        [
+            make("toy with", "consider casually; play with",
+                 "もてあそぶ・軽く考える",
+                 useCases: ["アイデアや感情を軽く検討するとき"],
+                 examples: [
+                    ("I'm toying with the idea.", "そのアイデアを検討中。"),
+                    ("Don't toy with my feelings.", "気持ちをもてあそばないで。")
+                 ]),
+            make("determine", "decide firmly; ascertain",
+                 "決定する・突き止める",
+                 useCases: ["事実を確定したり決断したりするとき"],
+                 examples: [
+                    ("We need to determine the cause.", "原因を突き止める必要がある。"),
+                    ("She determined to leave.", "彼女は去る決意をした。")
+                 ]),
+            make("have second thoughts", "begin to doubt a decision",
+                 "考え直す・迷い始める",
+                 useCases: ["決断後に迷いが生じたとき"],
+                 examples: [
+                    ("I'm having second thoughts.", "考え直してる。"),
+                    ("She had second thoughts about it.", "彼女はそれを迷い始めた。")
+                 ]),
+            make("give it a second thought", "reconsider it",
+                 "考え直す",
+                 useCases: ["再考を促す、または再考するとき"],
+                 examples: [
+                    ("Don't give it a second thought.", "気にしないで。"),
+                    ("I gave it a second thought.", "考え直した。")
+                 ]),
+            make("brush aside", "dismiss without consideration",
+                 "軽く受け流す",
+                 useCases: ["意見や懸念を無視するとき"],
+                 examples: [
+                    ("He brushed aside my concerns.", "私の懸念を流した。"),
+                    ("Don't brush it aside.", "軽く流さないで。")
+                 ]),
+            make("change my mind", "decide differently",
+                 "気が変わる",
+                 useCases: ["決めたことを変更するとき"],
+                 examples: [
+                    ("I changed my mind.", "気が変わった。"),
+                    ("Don't change your mind now.", "今さら変えないで。")
+                 ]),
+            make("spit out", "say something quickly or reluctantly",
+                 "吐き出す・早く言う",
+                 useCases: ["言いにくいことを促すとき、口から出すとき"],
+                 examples: [
+                    ("Spit it out!", "早く言って！"),
+                    ("He spat out the food.", "食べ物を吐き出した。")
+                 ]),
+            make("let slip", "reveal accidentally",
+                 "うっかり漏らす",
+                 useCases: ["秘密を不意に話してしまったとき"],
+                 examples: [
+                    ("I let slip the secret.", "秘密をうっかり漏らした。"),
+                    ("She let it slip.", "彼女がうっかり言った。")
+                 ]),
+            make("gossip about", "talk maliciously about others",
+                 "〜について噂話をする",
+                 useCases: ["他人の私生活を話題にするとき"],
+                 examples: [
+                    ("They gossip about everyone.", "みんなの噂話してる。"),
+                    ("Don't gossip about her.", "彼女のこと噂しないで。")
+                 ]),
+            make("joking apart", "speaking seriously now",
+                 "冗談はさておき",
+                 useCases: ["軽口の後で本題に戻すとき"],
+                 examples: [
+                    ("Joking apart, we need to act.", "冗談はさておき、動く必要がある。"),
+                    ("Joking apart, I'm worried.", "冗談抜きで心配。")
+                 ])
+        ]
+    }
+
+    // MARK: - 観察・確認の動詞（追加 5・point out は既出）
+
+    private static var observationVerbs11: [Word] {
+        [
+            make("eye", "look at carefully; observe",
+                 "じっと見る",
+                 useCases: ["値踏みするように観察するとき"],
+                 examples: [
+                    ("He eyed me suspiciously.", "彼は私を疑い深く見た。"),
+                    ("She eyed the cake.", "彼女はケーキをじっと見た。")
+                 ]),
+            make("scan", "look over quickly; examine systematically",
+                 "ざっと見る・走査する",
+                 useCases: ["ざっと目を通す、機械で読み取るとき"],
+                 examples: [
+                    ("I scanned the article.", "記事をざっと読んだ。"),
+                    ("Scan the document.", "書類をスキャンして。")
+                 ]),
+            make("stare at", "look fixedly",
+                 "じっと見つめる",
+                 useCases: ["凝視するとき"],
+                 examples: [
+                    ("Don't stare at me.", "じろじろ見ないで。"),
+                    ("She stared at the screen.", "画面を凝視した。")
+                 ]),
+            make("spot check", "carry out a brief inspection",
+                 "抜き打ち検査",
+                 useCases: ["抜き打ちで確認するとき"],
+                 examples: [
+                    ("They did a spot check.", "抜き打ち検査をした。"),
+                    ("Random spot checks happen daily.", "抜き打ち検査が毎日ある。")
+                 ]),
+            make("sector", "a distinct part or division",
+                 "部門・区域",
+                 useCases: ["業界や領域を分類して語るとき"],
+                 examples: [
+                    ("The tech sector is growing.", "テック業界は成長中。"),
+                    ("The private sector hires more.", "民間部門の方が雇う。")
+                 ])
+        ]
+    }
+
+    // MARK: - 接続表現（追加 2）
+
+    private static var prepositionalConnectors11: [Word] {
+        [
+            make("aside from", "apart from; except for",
+                 "〜は別として",
+                 useCases: ["例外を述べるとき"],
+                 examples: [
+                    ("Aside from that, it's fine.", "それは別として大丈夫。"),
+                    ("Aside from him, no one came.", "彼以外誰も来なかった。")
+                 ]),
+            make("together with", "along with; in addition to",
+                 "〜と一緒に",
+                 useCases: ["伴うものを述べるとき"],
+                 examples: [
+                    ("Together with him, we went.", "彼と一緒に行った。"),
+                    ("Send the form together with the fee.", "用紙と費用を一緒に送って。")
                  ])
         ]
     }
