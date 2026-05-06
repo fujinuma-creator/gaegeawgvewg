@@ -46,20 +46,12 @@ struct ReviewView: View {
                 if let word = currentWord {
                     cardView(for: word)
                         .id(word.id)
-                        .offset(x: dragOffset.width, y: dragOffset.height * 0.4)
-                        .rotationEffect(.degrees(Double(dragOffset.width) / 18))
-                        .overlay(
-                            swipeHintOverlay
-                                .allowsHitTesting(false)
-                        )
                         .transition(.opacity.combined(with: .scale(scale: 0.96)))
                 } else {
                     completedView
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .contentShape(Rectangle())
-            .gesture(globalSwipeGesture)
         }
         .background(GeometricBackground().ignoresSafeArea())
         .alert("進捗をリセットしますか？", isPresented: $showResetAlert) {
@@ -263,6 +255,11 @@ struct ReviewView: View {
             )
             .padding(.horizontal, 12)
             .padding(.top, 4)
+            .offset(x: dragOffset.width, y: dragOffset.height * 0.4)
+            .rotationEffect(.degrees(Double(dragOffset.width) / 18))
+            .overlay(swipeHintOverlay.allowsHitTesting(false))
+            .contentShape(Rectangle())
+            .gesture(globalSwipeGesture)
         }
     }
 
