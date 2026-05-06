@@ -36,8 +36,19 @@ enum SeedData {
             + britishGreetings7 + britishReactions7 + britishDegree7
             + britishFood7 + britishSuggestions7 + britishVerbs7
             + britishComplaints7 + britishAgreement7
-            + singlishCommon7 + singlishFood7 + singlishFrequent7
     }
+
+    /// Words that have been removed from the seed list and should also be
+    /// purged from existing users' libraries on next launch (one-time
+    /// cleanup driven by WordStore).
+    static let retiredWords: [String] = [
+        // Singlish words — removed per user request.
+        "cannot", "shiok", "sian", "paiseh", "kiasu", "kiasi",
+        "alamak", "wah", "chope",
+        "makan", "dabao", "kopi", "teh",
+        "see how", "like that", "last time", "next time",
+        "where got", "got or not", "already"
+    ]
 
     private static func make(
         _ word: String,
@@ -6814,164 +6825,4 @@ enum SeedData {
         ]
     }
 
-    // MARK: - シングリッシュ: よく使う表現（追加 9）
-
-    private static var singlishCommon7: [Word] {
-        [
-            make("cannot", "can't (Singlish)",
-                 "できない・ダメ",
-                 useCases: ["シンガポールでよく使う否定形"],
-                 examples: [
-                    ("Cannot lah.", "できないよ。"),
-                    ("Cannot one.", "絶対無理。")
-                 ]),
-            make("shiok", "awesome; great; tasty (Singlish)",
-                 "最高・気持ちいい・うまい",
-                 useCases: ["気持ちいい・美味しい・最高の体験"],
-                 examples: [
-                    ("Shiok!", "最高！"),
-                    ("So shiok!", "めっちゃ気持ちいい！")
-                 ]),
-            make("sian", "bored; fed up (Singlish)",
-                 "だるい・つまらない・うんざり",
-                 useCases: ["退屈や倦怠感を表すとき"],
-                 examples: [
-                    ("So sian.", "マジでつまんない。"),
-                    ("Sian half.", "超だるい。")
-                 ]),
-            make("paiseh", "embarrassed; awkward (Singlish)",
-                 "恥ずかしい・気まずい・申し訳ない",
-                 useCases: ["軽い謝罪や照れ隠し"],
-                 examples: [
-                    ("Paiseh ah.", "ごめんね。"),
-                    ("So paiseh.", "恥ずかしい。")
-                 ]),
-            make("kiasu", "afraid of losing out (Singlish)",
-                 "負けず嫌い・取り残されるのを恐れる",
-                 useCases: ["シンガポール文化を表す代表語"],
-                 examples: [
-                    ("Don't be so kiasu.", "そんなに焦るなよ。"),
-                    ("Singaporeans are kiasu.", "シンガポール人は負けず嫌い。")
-                 ]),
-            make("kiasi", "afraid of dying; cowardly (Singlish)",
-                 "怖がり・臆病",
-                 useCases: ["kiasu とセットで使う"],
-                 examples: [
-                    ("Don't be kiasi.", "ビビるなよ。"),
-                    ("Kiasi people don't try new things.", "怖がりは新しいこと試さない。")
-                 ]),
-            make("alamak", "oh no; oops (Singlish/Malay)",
-                 "おっと・しまった・あらら",
-                 useCases: ["驚き・困惑の感嘆詞"],
-                 examples: [
-                    ("Alamak! Forgot already.", "しまった、忘れてた。"),
-                    ("Alamak, not again.", "あらら、また？")
-                 ]),
-            make("wah", "wow (Singlish)",
-                 "わお・うわー",
-                 useCases: ["驚き・感嘆を表すとき"],
-                 examples: [
-                    ("Wah, so nice!", "うわ、いいね！"),
-                    ("Wah lao!", "マジで！")
-                 ]),
-            make("chope", "reserve (a seat)",
-                 "席取りする・予約する",
-                 useCases: ["シンガポールのフードコート文化"],
-                 examples: [
-                    ("Chope the seat.", "席取って。"),
-                    ("Choped already.", "もう取ってある。")
-                 ])
-        ]
-    }
-
-    // MARK: - シングリッシュ: 食事関連（追加 4）
-
-    private static var singlishFood7: [Word] {
-        [
-            make("makan", "to eat; food (Singlish/Malay)",
-                 "食べる・食事",
-                 useCases: ["食事に誘うシングリッシュ定番"],
-                 examples: [
-                    ("Let's go makan.", "ご飯食べに行こう。"),
-                    ("Already makan?", "もう食べた？")
-                 ]),
-            make("dabao", "takeaway (Singlish)",
-                 "持ち帰り",
-                 useCases: ["ホーカーセンターでの注文"],
-                 examples: [
-                    ("Dabao please.", "持ち帰りで。"),
-                    ("Dabao for two.", "2人分テイクアウトで。")
-                 ]),
-            make("kopi", "coffee (Singapore-style)",
-                 "コーヒー（シンガポール式）",
-                 useCases: ["伝統的な注文の仕方"],
-                 examples: [
-                    ("One kopi please.", "コーヒー一つ。"),
-                    ("Kopi-O, please.", "砂糖入りブラックで。")
-                 ]),
-            make("teh", "tea (Singapore-style)",
-                 "紅茶（シンガポール式）",
-                 useCases: ["kopi と並ぶ定番ドリンク"],
-                 examples: [
-                    ("Teh please.", "紅茶ください。"),
-                    ("Teh tarik for me.", "テタリックで。")
-                 ])
-        ]
-    }
-
-    // MARK: - シングリッシュ: よく使う表現（追加 7・how come と on the way は既出）
-
-    private static var singlishFrequent7: [Word] {
-        [
-            make("see how", "let's see; depends",
-                 "様子見・状況次第",
-                 useCases: ["決定を保留するときの定番"],
-                 examples: [
-                    ("See how lah.", "様子を見よう。"),
-                    ("See how first.", "とりあえず様子見。")
-                 ]),
-            make("like that", "like so; that's how (Singlish)",
-                 "そんな感じ・そうだよ",
-                 useCases: ["状況描写の万能フレーズ"],
-                 examples: [
-                    ("Like that lor.", "そんなもんだよ。"),
-                    ("Why like that?", "なんでそうなの？")
-                 ]),
-            make("last time", "previously; back then (Singlish)",
-                 "昔は・以前は",
-                 useCases: ["以前の話を切り出すとき"],
-                 examples: [
-                    ("Last time got.", "昔はあった。"),
-                    ("Last time we walked.", "昔は歩いて行った。")
-                 ]),
-            make("next time", "another time (Singlish)",
-                 "今度・また",
-                 useCases: ["誘いを丁重に断るとき"],
-                 examples: [
-                    ("Next time lah.", "また今度ね。"),
-                    ("Next time, OK?", "今度ね？")
-                 ]),
-            make("where got", "no way; that's not true",
-                 "そんなことない",
-                 useCases: ["否定の決まり文句"],
-                 examples: [
-                    ("Where got?", "そんなことないよ。"),
-                    ("Where got time?", "時間なんかないよ。")
-                 ]),
-            make("got or not", "is there any?",
-                 "ある？",
-                 useCases: ["シンプルな質問形"],
-                 examples: [
-                    ("Got or not?", "ある？"),
-                    ("Time got or not?", "時間ある？")
-                 ]),
-            make("already", "already (sentence-end completion marker)",
-                 "もう・すでに",
-                 useCases: ["完了形の代わりに使う文末"],
-                 examples: [
-                    ("I eat already.", "もう食べた。"),
-                    ("Done already.", "もう終わった。")
-                 ])
-        ]
-    }
 }

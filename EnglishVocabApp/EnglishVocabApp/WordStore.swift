@@ -12,6 +12,10 @@ final class WordStore: ObservableObject {
 
     init() {
         load()
+        // Drop any words that were retired from the seed list (e.g. the
+        // Singlish set the user asked to remove). Runs every launch so
+        // newly-retired words are scrubbed without manual user action.
+        purgeRetiredWords()
         // Merge in any seed words that don't already exist (matched by lowercased word).
         // This way, app updates that add new vocabulary are reflected for existing users
         // without overwriting their review progress on previously-saved words.
@@ -25,6 +29,17 @@ final class WordStore: ObservableObject {
         }
         // Drop any review-list pins that have aged past their 7-day window.
         cleanupExpiredReviewListEntries()
+    }
+
+    /// Remove any words whose lowercased text matches an entry in
+    /// `SeedData.retiredWords`. Saves once if anything changed.
+    private func purgeRetiredWords() {
+        let retired = Set(SeedData.retiredWords.map { $0.lowercased() })
+        let before = words.count
+        words.removeAll { retired.contains($0.word.lowercased()) }
+        if words.count != before {
+            save()
+        }
     }
 
     // MARK: - Review list (manually pinned words, auto-expire after 7 days)
