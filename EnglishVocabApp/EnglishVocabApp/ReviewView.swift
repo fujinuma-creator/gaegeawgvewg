@@ -48,13 +48,18 @@ struct ReviewView: View {
                         .id(word.id)
                         .offset(x: dragOffset.width, y: dragOffset.height * 0.4)
                         .rotationEffect(.degrees(Double(dragOffset.width) / 18))
-                        .gesture(swipeGesture(for: word))
+                        .overlay(
+                            swipeHintOverlay
+                                .allowsHitTesting(false)
+                        )
                         .transition(.opacity.combined(with: .scale(scale: 0.96)))
                 } else {
                     completedView
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .contentShape(Rectangle())
+            .gesture(globalSwipeGesture)
         }
         .background(GeometricBackground().ignoresSafeArea())
         .alert("進捗をリセットしますか？", isPresented: $showResetAlert) {
@@ -311,13 +316,23 @@ struct ReviewView: View {
 
     // MARK: - Swipe gesture
 
+    /// Per-word gesture (kept for the cardView call site if needed).
     private func swipeGesture(for word: Word) -> some Gesture {
-        DragGesture(minimumDistance: 10)
+        globalSwipeGesture
+    }
+
+    /// Drag gesture attached to the whole card area (not just the card itself)
+    /// so the user can swipe from anywhere on screen. Uses a low minimum
+    /// distance so the gesture fires immediately, and a relaxed threshold so
+    /// shorter swipes commit. Holding past the threshold without releasing
+    /// keeps the card pinned to the side until the user lets go.
+    private var globalSwipeGesture: some Gesture {
+        DragGesture(minimumDistance: 2)
             .onChanged { value in
                 dragOffset = value.translation
             }
             .onEnded { value in
-                let threshold: CGFloat = 100
+                let threshold: CGFloat = 60
                 if value.translation.width > threshold {
                     flyOff(direction: 1) {
                         recordMark(.perfect)
@@ -338,6 +353,37 @@ struct ReviewView: View {
                     }
                 }
             }
+    }
+
+    /// Big colored stamp that appears as the user drags the card.
+    /// Provides visual feedback so the user can tell when their hold has
+    /// crossed the swipe threshold without releasing.
+    @ViewBuilder
+    private var swipeHintOverlay: some View {
+        let progress = min(abs(dragOffset.width) / 60, 1.0)
+        let isRight = dragOffset.width > 0
+
+        if progress > 0.05 {
+            ZStack {
+                if isRight {
+                    Text("◎")
+                        .font(.system(size: 110, weight: .black))
+                        .foregroundStyle(.green.opacity(0.8 * progress))
+                        .rotationEffect(.degrees(-15))
+                        .offset(x: -50, y: -120)
+                        .shadow(color: .green.opacity(0.4 * progress), radius: 8)
+                } else {
+                    Text("×")
+                        .font(.system(size: 130, weight: .black))
+                        .foregroundStyle(.red.opacity(0.8 * progress))
+                        .rotationEffect(.degrees(15))
+                        .offset(x: 50, y: -120)
+                        .shadow(color: .red.opacity(0.4 * progress), radius: 8)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .animation(.easeOut(duration: 0.1), value: dragOffset)
+        }
     }
 
     /// Tinder-style fly-off animation: animate the card past the screen edge,

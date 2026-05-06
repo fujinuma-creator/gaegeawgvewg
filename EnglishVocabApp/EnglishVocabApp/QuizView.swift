@@ -580,14 +580,15 @@ struct QuizView: View {
                 .padding(.horizontal, 16)
                 .offset(x: translationDragOffset.width, y: translationDragOffset.height * 0.4)
                 .rotationEffect(.degrees(Double(translationDragOffset.width) / 22))
+                .overlay(translationSwipeHint.allowsHitTesting(false))
                 .contentShape(Rectangle())
                 .gesture(
-                    DragGesture(minimumDistance: 10)
+                    DragGesture(minimumDistance: 2)
                         .onChanged { value in
                             translationDragOffset = value.translation
                         }
                         .onEnded { value in
-                            let threshold: CGFloat = 80
+                            let threshold: CGFloat = 50
                             if value.translation.width > threshold {
                                 flyOffTranslation(direction: 1) { nextProblem() }
                             } else if value.translation.width < -threshold {
@@ -659,6 +660,33 @@ struct QuizView: View {
         guard let w = currentWord, let ex = currentExample,
               let exIdx = w.examples.firstIndex(where: { $0.id == ex.id }) else { return 0 }
         return queue.firstIndex { $0.word.id == w.id && $0.exampleIdx == exIdx } ?? 0
+    }
+
+    /// Visual hint that appears as the user holds the translation card to one
+    /// side, so it's clear which way the swipe is going.
+    @ViewBuilder
+    private var translationSwipeHint: some View {
+        let progress = min(abs(translationDragOffset.width) / 50, 1.0)
+        if progress > 0.05 {
+            let isRight = translationDragOffset.width > 0
+            HStack {
+                if !isRight {
+                    Image(systemName: "chevron.left.circle.fill")
+                        .font(.system(size: 60))
+                        .foregroundStyle(.indigo.opacity(0.55 * progress))
+                        .padding(.leading, 20)
+                    Spacer()
+                } else {
+                    Spacer()
+                    Image(systemName: "chevron.right.circle.fill")
+                        .font(.system(size: 60))
+                        .foregroundStyle(.indigo.opacity(0.55 * progress))
+                        .padding(.trailing, 20)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .animation(.easeOut(duration: 0.1), value: translationDragOffset)
+        }
     }
 
     /// Animate the current translation question card off-screen, then call
