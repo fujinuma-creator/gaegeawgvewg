@@ -21,6 +21,11 @@ enum SeedData {
             + casualPhrasals4 + casualVerbs4 + casualAdjectives4
             + casualNouns4 + casualIdioms4 + casualConnectives4
             + grammarPhrases4
+            + directionPhrases5 + howQuestions5 + whatQuestions5
+            + causatives5 + comeGetUsed5 + emphasis5 + comparatives5
+            + conditionals5 + thereIts5 + requestPatterns5
+            + tooEnoughSo5 + gerundPatterns5 + seemAppear5
+            + casualConstructions5
     }
 
     private static func make(
@@ -4911,6 +4916,783 @@ enum SeedData {
                  examples: [
                     ("You're better off without him.", "彼なしの方がいい。"),
                     ("Better off staying.", "残った方がいい。")
+                 ])
+        ]
+    }
+
+    // MARK: - 方向・位置表現（追加 10）
+
+    private static var directionPhrases5: [Word] {
+        [
+            make("straight ahead", "directly in front",
+                 "まっすぐ前に",
+                 useCases: ["道案内するとき"],
+                 examples: [
+                    ("Go straight ahead.", "まっすぐ進んで。"),
+                    ("It's straight ahead.", "まっすぐ前にあるよ。")
+                 ]),
+            make("right around the corner", "very near; almost here",
+                 "すぐそこ・もうすぐ",
+                 useCases: ["近い距離・近い時期を伝えるとき"],
+                 examples: [
+                    ("Summer's right around the corner.", "夏はもうすぐ。"),
+                    ("The cafe is right around the corner.", "カフェはすぐそこ。")
+                 ]),
+            make("all the way", "entirely; the whole way",
+                 "ずっと・はるばる",
+                 useCases: ["最後までやり通す話", "遠路はるばる"],
+                 examples: [
+                    ("All the way to Tokyo.", "東京までずっと。"),
+                    ("I support you all the way.", "ずっと応援してる。")
+                 ]),
+            make("way back", "long ago; far behind",
+                 "ずっと昔・かなり後ろ",
+                 useCases: ["ずっと昔の話・離れた距離"],
+                 examples: [
+                    ("Way back in 2010.", "ずっと昔の2010年に。"),
+                    ("He's way back there.", "彼はかなり後ろにいる。")
+                 ]),
+            make("up front", "in advance; honestly",
+                 "前もって・正直に",
+                 useCases: ["事前に伝える話", "率直に話す話"],
+                 examples: [
+                    ("I'll be up front.", "正直に言うね。"),
+                    ("Pay up front.", "前払いで。")
+                 ]),
+            make("all over the place", "everywhere; messy",
+                 "そこら中に・めちゃくちゃ",
+                 useCases: ["散らかっている様子", "話があちこち飛ぶ話"],
+                 examples: [
+                    ("Stuff is all over the place.", "物がそこら中に。"),
+                    ("My mind is all over the place.", "頭の中ぐちゃぐちゃ。")
+                 ]),
+            make("on and off", "intermittently",
+                 "断続的に",
+                 useCases: ["途切れ途切れに続く話"],
+                 examples: [
+                    ("Rain on and off all day.", "一日中雨が降ったり止んだり。"),
+                    ("We've dated on and off.", "付き合ったり別れたりしてた。")
+                 ]),
+            make("back and forth", "to and fro",
+                 "行ったり来たり",
+                 useCases: ["何度も往復する話"],
+                 examples: [
+                    ("He paced back and forth.", "彼、行ったり来たりしてた。"),
+                    ("Emails back and forth.", "メールのやり取り。")
+                 ]),
+            make("side by side", "next to each other",
+                 "並んで",
+                 useCases: ["横並びで何かを行う話"],
+                 examples: [
+                    ("They walked side by side.", "二人並んで歩いた。"),
+                    ("Stood side by side.", "横に並んで立った。")
+                 ]),
+            make("upside down", "inverted",
+                 "逆さま",
+                 useCases: ["物を裏返している話"],
+                 examples: [
+                    ("The book is upside down.", "本が逆さまだ。"),
+                    ("Turn it upside down.", "逆さまにして。")
+                 ])
+        ]
+    }
+
+    // MARK: - 「How do you...?」系の質問パターン（追加 5）
+
+    private static var howQuestions5: [Word] {
+        [
+            make("how do you mean", "what do you mean",
+                 "どういう意味？",
+                 useCases: ["相手の発言の意図を確認するとき"],
+                 examples: [
+                    ("How do you mean?", "どういう意味？"),
+                    ("Wait, how do you mean exactly?", "ちょっと、具体的にどういう意味？")
+                 ]),
+            make("how do you figure", "what makes you think that",
+                 "どうしてそう思うの？",
+                 useCases: ["相手の推論の根拠を聞くとき"],
+                 examples: [
+                    ("How do you figure?", "どうしてそう思うの？"),
+                    ("Why? How do you figure that?", "なんで？どう考えたの？")
+                 ]),
+            make("how do you like", "what do you think of",
+                 "〜はどう？気に入った？",
+                 useCases: ["感想を聞くとき"],
+                 examples: [
+                    ("How do you like the new job?", "新しい仕事どう？"),
+                    ("How do you like it here?", "ここどう？")
+                 ]),
+            make("how do you say", "ask for translation or pronunciation",
+                 "〜は…語で何と言う？",
+                 useCases: ["別言語での言い方を聞くとき"],
+                 examples: [
+                    ("How do you say it in English?", "英語で何て言う？"),
+                    ("How do you say 'thank you' in Japanese?", "thank you は日本語で何？")
+                 ]),
+            make("how would you feel about", "what do you think about",
+                 "〜についてどう思う？",
+                 useCases: ["提案について意見を聞くとき"],
+                 examples: [
+                    ("How would you feel about pizza?", "ピザはどう？"),
+                    ("How would you feel about leaving early?", "早めに出るのどう思う？")
+                 ])
+        ]
+    }
+
+    // MARK: - 「What...?」系の質問パターン（追加 10）
+
+    private static var whatQuestions5: [Word] {
+        [
+            make("what's it like", "what's it look or feel like",
+                 "どんな感じ？",
+                 useCases: ["体験や場所の感想を聞くとき"],
+                 examples: [
+                    ("What's it like in Japan?", "日本どんな感じ？"),
+                    ("What's it like working there?", "そこで働くのどう？")
+                 ]),
+            make("what for", "for what purpose",
+                 "何のために？",
+                 useCases: ["理由・目的を聞くとき"],
+                 examples: [
+                    ("What for?", "何のために？"),
+                    ("Wait, what for?", "ちょっと、なんで？")
+                 ]),
+            make("what if", "what would happen if",
+                 "もし〜だったら？",
+                 useCases: ["仮定の話を切り出すとき"],
+                 examples: [
+                    ("What if it rains?", "もし雨だったら？"),
+                    ("What if he's late?", "彼が遅れたらどうする？")
+                 ]),
+            make("what's the point", "what's the purpose",
+                 "何の意味がある？",
+                 useCases: ["やる意義を疑問視するとき"],
+                 examples: [
+                    ("What's the point?", "意味ある？"),
+                    ("What's the point of this?", "これ何のため？")
+                 ]),
+            make("what's wrong with", "what's the issue with",
+                 "〜の何がダメ？／どうしたの？",
+                 useCases: ["何が問題かを問うとき"],
+                 examples: [
+                    ("What's wrong with you?", "どうしたの？"),
+                    ("What's wrong with this idea?", "このアイデアの何が悪い？")
+                 ]),
+            make("what's up with", "what's going on with",
+                 "〜どうしたの？",
+                 useCases: ["状況を尋ねる口語"],
+                 examples: [
+                    ("What's up with him?", "彼どうしたの？"),
+                    ("What's up with the noise?", "あの音何？")
+                 ]),
+            make("what's it to you", "why is it your business",
+                 "お前に関係ない",
+                 useCases: ["余計な詮索に反論するとき"],
+                 examples: [
+                    ("What's it to you?", "あなたに関係ある？"),
+                    ("And what's it to you?", "で、何の関係？")
+                 ]),
+            make("what kind of", "what type of",
+                 "どんな〜？",
+                 useCases: ["種類を尋ねるとき"],
+                 examples: [
+                    ("What kind of music?", "どんな音楽？"),
+                    ("What kind of person is he?", "彼ってどんな人？")
+                 ]),
+            make("what brings you here", "why are you here",
+                 "どうしてここに？",
+                 useCases: ["来訪の理由を聞くとき"],
+                 examples: [
+                    ("What brings you here?", "どうしてここに？"),
+                    ("Hey! What brings you here?", "ねえ、どうしたの？")
+                 ]),
+            make("what do you say", "what's your reaction; how about",
+                 "どう？・〜しない？",
+                 useCases: ["提案に対する反応を伺うとき"],
+                 examples: [
+                    ("What do you say?", "どう？"),
+                    ("What do you say we go now?", "今行くのどう？")
+                 ])
+        ]
+    }
+
+    // MARK: - 使役・被害の構文（追加 10）
+
+    private static var causatives5: [Word] {
+        [
+            make("get something done", "have something done by someone",
+                 "〜してもらう・してもらった",
+                 useCases: ["人に何かをしてもらった結果を伝えるとき"],
+                 examples: [
+                    ("I got my hair cut.", "髪切ってもらった。"),
+                    ("Got my phone fixed.", "携帯直してもらった。")
+                 ]),
+            make("have something done", "have something done (formal-ish)",
+                 "〜してもらう（やや改まった）",
+                 useCases: ["業者やプロに作業してもらう話"],
+                 examples: [
+                    ("I had my car fixed.", "車を直してもらった。"),
+                    ("Had the photos printed.", "写真を印刷してもらった。")
+                 ]),
+            make("get someone to do", "persuade someone to do",
+                 "人に〜させる・してもらう",
+                 useCases: ["説得して動いてもらう話"],
+                 examples: [
+                    ("I got him to help.", "彼に手伝ってもらった。"),
+                    ("Get her to call back.", "彼女から折り返してもらって。")
+                 ]),
+            make("have someone do", "ask or order someone to do",
+                 "人に〜させる",
+                 useCases: ["指示して動かす話"],
+                 examples: [
+                    ("I had him wait.", "彼に待たせた。"),
+                    ("Have her come over.", "彼女に来てもらって。")
+                 ]),
+            make("make someone do", "force someone to do",
+                 "人に〜させる（強制）",
+                 useCases: ["強制的にやらせる話"],
+                 examples: [
+                    ("He made me cry.", "彼が私を泣かせた。"),
+                    ("Don't make me wait.", "待たせないで。")
+                 ]),
+            make("let someone do", "allow someone to do",
+                 "人に〜させる（許可）",
+                 useCases: ["許可を与える話"],
+                 examples: [
+                    ("Let me know.", "知らせて。"),
+                    ("Let him try.", "彼に試させて。")
+                 ]),
+            make("help someone do", "assist someone with doing",
+                 "〜するのを手伝う",
+                 useCases: ["手伝う場面"],
+                 examples: [
+                    ("Help me carry this.", "運ぶの手伝って。"),
+                    ("She helped me move.", "彼女が引っ越し手伝ってくれた。")
+                 ]),
+            make("see someone doing", "observe someone in the act",
+                 "〜しているのを見る/聞く",
+                 useCases: ["途中を目撃する話"],
+                 examples: [
+                    ("I saw him leaving.", "彼が出ていくところを見た。"),
+                    ("I heard her singing.", "彼女が歌うのを聞いた。")
+                 ]),
+            make("catch someone doing", "discover someone in the act",
+                 "〜しているのを目撃する",
+                 useCases: ["不意に見つける話"],
+                 examples: [
+                    ("I caught him lying.", "嘘をついているのを見つけた。"),
+                    ("Caught them sneaking out.", "こっそり出るのを見つけた。")
+                 ]),
+            make("find someone doing", "discover someone in a state",
+                 "〜だと気づく",
+                 useCases: ["ある状態を見つける話"],
+                 examples: [
+                    ("I found her crying.", "泣いているのを見た。"),
+                    ("Found him asleep.", "彼が寝ているのを見つけた。")
+                 ])
+        ]
+    }
+
+    // MARK: - 「come to / get to / used to」系（追加 9・come to think of it と get used to は既出）
+
+    private static var comeGetUsed5: [Word] {
+        [
+            make("come to find out", "later discover",
+                 "後で分かった",
+                 useCases: ["後から判明したことを語るとき"],
+                 examples: [
+                    ("Come to find out, he was lying.", "後でわかったけど、彼嘘ついてた。"),
+                    ("Come to find out, it's free.", "あとで分かったけど無料だった。")
+                 ]),
+            make("come to realize", "gradually understand",
+                 "気づくに至る",
+                 useCases: ["徐々に気づく話"],
+                 examples: [
+                    ("I came to realize the truth.", "真実に気づくに至った。"),
+                    ("She came to realize her mistake.", "彼女、自分の過ちに気づいた。")
+                 ]),
+            make("get to do", "have the chance to do",
+                 "〜できる機会を得る",
+                 useCases: ["珍しい機会を得た話"],
+                 examples: [
+                    ("I got to meet him.", "彼に会えた。"),
+                    ("Got to try sushi for the first time.", "初めて寿司食べられた。")
+                 ]),
+            make("get to a place", "arrive at a place",
+                 "〜に着く",
+                 useCases: ["目的地に到着する話"],
+                 examples: [
+                    ("How do I get to the station?", "駅へどう行く？"),
+                    ("We got to the hotel late.", "ホテルに遅く着いた。")
+                 ]),
+            make("used to", "did regularly in the past",
+                 "かつて〜していた",
+                 useCases: ["昔の習慣を語るとき"],
+                 examples: [
+                    ("I used to smoke.", "昔タバコを吸ってた。"),
+                    ("Used to live in NY.", "ニューヨークに住んでた。")
+                 ]),
+            make("be used to", "be familiar with",
+                 "〜に慣れている",
+                 useCases: ["既に慣れている状態を表すとき"],
+                 examples: [
+                    ("I'm used to it.", "慣れてる。"),
+                    ("Are you used to the cold?", "寒さに慣れた？")
+                 ]),
+            make("be supposed to", "expected to",
+                 "〜することになっている",
+                 useCases: ["予定や規則を伝えるとき"],
+                 examples: [
+                    ("I'm supposed to call her.", "彼女に電話することになってる。"),
+                    ("You're not supposed to be here.", "ここにいちゃダメ。")
+                 ]),
+            make("be about to", "on the verge of",
+                 "今にも〜しようとしている",
+                 useCases: ["直前の動作を伝えるとき"],
+                 examples: [
+                    ("I was about to leave.", "ちょうど出るところだった。"),
+                    ("It's about to rain.", "今にも雨が降りそう。")
+                 ]),
+            make("come down to", "ultimately depend on",
+                 "結局〜次第になる",
+                 useCases: ["最終的に何で決まるかを話すとき"],
+                 examples: [
+                    ("It comes down to money.", "結局はお金の問題。"),
+                    ("Comes down to your choice.", "君の選択次第。")
+                 ])
+        ]
+    }
+
+    // MARK: - 強調構文・倒置（追加 5）
+
+    private static var emphasis5: [Word] {
+        [
+            make("it is that", "emphasis pattern: it is X that…",
+                 "〜なのは…だ（強調）",
+                 useCases: ["要素を強調する書き方"],
+                 examples: [
+                    ("It is you that I love.", "愛しているのはあなた。"),
+                    ("It is here that we met.", "出会ったのはここだ。")
+                 ]),
+            make("what I want is", "the thing I want is…",
+                 "私が〜なのは",
+                 useCases: ["欲しいものを強調するとき"],
+                 examples: [
+                    ("What I want is rest.", "欲しいのは休息。"),
+                    ("What I need is time.", "必要なのは時間。")
+                 ]),
+            make("all I want is", "the only thing I want is",
+                 "私が〜することは全て",
+                 useCases: ["欲しいものを限定して伝えるとき"],
+                 examples: [
+                    ("All I want is peace.", "欲しいのは平和だけ。"),
+                    ("All I need is one chance.", "必要なのは1回のチャンスだけ。")
+                 ]),
+            make("the thing is", "actually; here's the thing",
+                 "実はね",
+                 useCases: ["切り出しの前置き"],
+                 examples: [
+                    ("The thing is, I forgot.", "実は忘れた。"),
+                    ("The thing is, it's expensive.", "実はそれ高いんだよ。")
+                 ]),
+            make("the point is", "what matters is",
+                 "要点はこうだ",
+                 useCases: ["要点をまとめるとき"],
+                 examples: [
+                    ("The point is, we lost.", "要は負けた。"),
+                    ("The point is to try.", "大事なのは挑戦すること。")
+                 ])
+        ]
+    }
+
+    // MARK: - 比較構文（追加 9・rather than は既出）
+
+    private static var comparatives5: [Word] {
+        [
+            make("the more, the more", "the more X, the more Y",
+                 "〜すればするほど…",
+                 useCases: ["相関関係を強調するとき"],
+                 examples: [
+                    ("The more, the better.", "多いほどいい。"),
+                    ("The more you practice, the better you get.", "練習するほど上手くなる。")
+                 ]),
+            make("as as possible", "as X as possible",
+                 "できるだけ〜",
+                 useCases: ["最大限を要求するとき"],
+                 examples: [
+                    ("As soon as possible.", "できるだけ早く。"),
+                    ("As quietly as possible.", "できるだけ静かに。")
+                 ]),
+            make("as as can be", "as X as can be",
+                 "この上なく〜",
+                 useCases: ["極限の状態を表すとき"],
+                 examples: [
+                    ("As happy as can be.", "最高に幸せ。"),
+                    ("As busy as can be.", "ものすごく忙しい。")
+                 ]),
+            make("no more than", "not exceeding; only",
+                 "〜以下・〜だけ",
+                 useCases: ["上限や控えめな量を示すとき"],
+                 examples: [
+                    ("No more than $10.", "10ドル以下。"),
+                    ("No more than 5 people.", "5人まで。")
+                 ]),
+            make("less than", "fewer than",
+                 "〜より少なく",
+                 useCases: ["量や程度を比較して少ないと言うとき"],
+                 examples: [
+                    ("Less than I thought.", "思ったより少ない。"),
+                    ("Less than 10 minutes.", "10分以内。")
+                 ]),
+            make("better than nothing", "preferable to none",
+                 "ないよりまし",
+                 useCases: ["少しでもあった方が良いと言うとき"],
+                 examples: [
+                    ("It's better than nothing.", "ないよりはマシ。"),
+                    ("Hey, better than nothing!", "まあ、無いよりはマシ！")
+                 ]),
+            make("the same as", "identical to",
+                 "〜と同じ",
+                 useCases: ["同じだと伝えるとき"],
+                 examples: [
+                    ("Same as before.", "前と同じ。"),
+                    ("The same as yours.", "あなたのと同じ。")
+                 ]),
+            make("different from", "not the same as",
+                 "〜と違う",
+                 useCases: ["違いを伝えるとき"],
+                 examples: [
+                    ("Different from yesterday.", "昨日と違う。"),
+                    ("It's different from what I expected.", "思ったのと違う。")
+                 ]),
+            make("as good as", "almost; equivalent to",
+                 "〜と同じくらい・ほぼ〜",
+                 useCases: ["ほぼ同等であることを伝えるとき"],
+                 examples: [
+                    ("As good as new.", "ほぼ新品。"),
+                    ("As good as done.", "ほぼ終わったも同然。")
+                 ])
+        ]
+    }
+
+    // MARK: - 仮定法・条件（追加 5）
+
+    private static var conditionals5: [Word] {
+        [
+            make("if I were you", "if I were in your position",
+                 "私があなたなら",
+                 useCases: ["助言の前置きとして"],
+                 examples: [
+                    ("If I were you, I'd go.", "私なら行く。"),
+                    ("If I were you, I'd quit.", "私なら辞める。")
+                 ]),
+            make("if it weren't for", "if not for",
+                 "〜がなかったら",
+                 useCases: ["仮定で原因や恩を語るとき"],
+                 examples: [
+                    ("If it weren't for you, I'd fail.", "君がいなきゃ失敗してた。"),
+                    ("If it weren't for the rain.", "雨さえなければね。")
+                 ]),
+            make("but for", "if not for (formal)",
+                 "〜がなければ",
+                 useCases: ["フォーマルに「if it weren't for」と同じ意味で"],
+                 examples: [
+                    ("But for your help, I'd be lost.", "君の助けがなければ困ってた。"),
+                    ("But for that, perfect.", "それさえなければ完璧。")
+                 ]),
+            make("suppose", "assume; what if",
+                 "仮に〜なら",
+                 useCases: ["仮定の話を切り出すとき"],
+                 examples: [
+                    ("Suppose he comes?", "もし彼が来たら？"),
+                    ("Supposing it rains, what then?", "もし雨ならどうする？")
+                 ]),
+            make("I wish", "I would like it to be (counterfactual)",
+                 "〜だったらなあ",
+                 useCases: ["叶わない願いを語るとき"],
+                 examples: [
+                    ("I wish I knew.", "知ってたらなあ。"),
+                    ("I wish it were Friday.", "金曜だったらいいのに。")
+                 ])
+        ]
+    }
+
+    // MARK: - 「There's...」「It's...」構文（追加 5）
+
+    private static var thereIts5: [Word] {
+        [
+            make("there's no way", "it's impossible",
+                 "〜のはずがない",
+                 useCases: ["強く否定するとき"],
+                 examples: [
+                    ("There's no way he'll come.", "彼が来るはずない。"),
+                    ("No way I can do that.", "そんなのできるわけない。")
+                 ]),
+            make("there's no need to", "it's not necessary to",
+                 "〜する必要はない",
+                 useCases: ["不要だと伝えるとき"],
+                 examples: [
+                    ("There's no need to worry.", "心配いらない。"),
+                    ("No need to apologize.", "謝らなくていいよ。")
+                 ]),
+            make("there's a chance", "there's a possibility",
+                 "可能性がある",
+                 useCases: ["ありえると伝えるとき"],
+                 examples: [
+                    ("There's a chance it'll rain.", "雨の可能性がある。"),
+                    ("There's a chance, sure.", "可能性はあるね。")
+                 ]),
+            make("it takes to", "it requires X to do",
+                 "〜するのに…かかる",
+                 useCases: ["所要時間や努力を表すとき"],
+                 examples: [
+                    ("It takes time to learn.", "学ぶには時間がかかる。"),
+                    ("It takes courage to speak.", "話すには勇気がいる。")
+                 ]),
+            make("it occurs to me", "a thought comes to mind",
+                 "ふと思いつく",
+                 useCases: ["突然思いつく場面"],
+                 examples: [
+                    ("It occurred to me.", "ふと思った。"),
+                    ("It just occurred to me, why don't we go?", "ふと思ったんだけど、行かない？")
+                 ])
+        ]
+    }
+
+    // MARK: - 命令・依頼パターン（追加 5）
+
+    private static var requestPatterns5: [Word] {
+        [
+            make("how about", "what do you think of",
+                 "〜するのはどう？",
+                 useCases: ["提案するとき"],
+                 examples: [
+                    ("How about going?", "行くのはどう？"),
+                    ("How about pizza?", "ピザはどう？")
+                 ]),
+            make("why don't you", "why not do; suggestion",
+                 "〜したら？",
+                 useCases: ["軽く提案するとき"],
+                 examples: [
+                    ("Why don't we eat?", "食べない？"),
+                    ("Why don't you call her?", "彼女に電話したら？")
+                 ]),
+            make("what do you say we", "shall we; how about we",
+                 "〜するのどう？",
+                 useCases: ["共同行動を提案するとき"],
+                 examples: [
+                    ("What do you say we leave?", "出るのどう？"),
+                    ("What do you say we grab lunch?", "ランチ食べに行かない？")
+                 ]),
+            make("let's not", "I suggest we don't",
+                 "〜するのやめよう",
+                 useCases: ["何かをしないように提案するとき"],
+                 examples: [
+                    ("Let's not fight.", "喧嘩やめよう。"),
+                    ("Let's not be late.", "遅れないようにしよう。")
+                 ]),
+            make("don't bother", "don't trouble yourself",
+                 "わざわざ〜しないで",
+                 useCases: ["面倒を引き受けなくていいと伝えるとき"],
+                 examples: [
+                    ("Don't bother calling.", "わざわざ電話しなくていい。"),
+                    ("Don't bother explaining.", "説明しなくていいよ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 「too / enough / so」構文（追加 5）
+
+    private static var tooEnoughSo5: [Word] {
+        [
+            make("too to", "too X to do",
+                 "〜するには…すぎる",
+                 useCases: ["できないほど〜であると伝えるとき"],
+                 examples: [
+                    ("Too tired to walk.", "歩くには疲れすぎ。"),
+                    ("Too late to call.", "電話するには遅すぎ。")
+                 ]),
+            make("enough to", "X enough to do",
+                 "〜するのに十分",
+                 useCases: ["十分な程度を伝えるとき"],
+                 examples: [
+                    ("Old enough to vote.", "投票するのに十分な年齢。"),
+                    ("Strong enough to lift it.", "持ち上げられるくらい強い。")
+                 ]),
+            make("so that", "so X that Y",
+                 "とても…なので〜",
+                 useCases: ["原因と結果を結びつけるとき"],
+                 examples: [
+                    ("So tired that I slept.", "疲れすぎて寝た。"),
+                    ("So hot that we melted.", "暑すぎて溶けそう。")
+                 ]),
+            make("such that", "such X that Y",
+                 "それほどの…なので〜",
+                 useCases: ["名詞を強調する形での原因結果"],
+                 examples: [
+                    ("Such a long day that I'm done.", "長い一日でクタクタ。"),
+                    ("Such a mess that I gave up.", "あまりにめちゃくちゃで諦めた。")
+                 ]),
+            make("not so much as", "not so much X as Y",
+                 "〜というよりむしろ",
+                 useCases: ["ニュアンスを訂正するとき"],
+                 examples: [
+                    ("Not so much tired as bored.", "疲れたというより退屈。"),
+                    ("Not so much angry as confused.", "怒ってるというより混乱してる。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動名詞・不定詞のパターン（追加 9・feel like は seemAppear5 に集約）
+
+    private static var gerundPatterns5: [Word] {
+        [
+            make("end up doing", "wind up doing in the end",
+                 "結局〜することになる",
+                 useCases: ["予定と違う結末を伝えるとき"],
+                 examples: [
+                    ("End up staying home.", "結局家にいた。"),
+                    ("Ended up walking.", "結局歩くことになった。")
+                 ]),
+            make("wind up doing", "end up doing",
+                 "結局〜になる",
+                 useCases: ["end up と同じ意味で使うとき"],
+                 examples: [
+                    ("We wound up paying.", "結局払うはめになった。"),
+                    ("Wound up missing the train.", "結局電車逃した。")
+                 ]),
+            make("can't help doing", "can't stop doing involuntarily",
+                 "〜せずにいられない",
+                 useCases: ["抑えられない反応を伝えるとき"],
+                 examples: [
+                    ("Can't help laughing.", "笑わずにいられない。"),
+                    ("Can't help worrying.", "心配せずにいられない。")
+                 ]),
+            make("can't stand doing", "can't tolerate doing",
+                 "〜が我慢できない",
+                 useCases: ["強い嫌悪を表すとき"],
+                 examples: [
+                    ("Can't stand waiting.", "待つのが耐えられない。"),
+                    ("Can't stand his attitude.", "彼の態度が我慢できない。")
+                 ]),
+            make("worth doing", "worthwhile to do",
+                 "〜する価値がある",
+                 useCases: ["価値があると勧めるとき"],
+                 examples: [
+                    ("Worth trying.", "試す価値あり。"),
+                    ("This place is worth visiting.", "ここは行く価値ある。")
+                 ]),
+            make("have a hard time doing", "find it difficult to do",
+                 "〜するのに苦労する",
+                 useCases: ["難しさを訴えるとき"],
+                 examples: [
+                    ("Have a hard time sleeping.", "寝るのが大変。"),
+                    ("Hard time understanding.", "理解するのが難しい。")
+                 ]),
+            make("have trouble doing", "have difficulty doing",
+                 "〜するのに苦労する",
+                 useCases: ["問題を抱えていることを伝えるとき"],
+                 examples: [
+                    ("Have trouble focusing.", "集中するのが大変。"),
+                    ("Trouble logging in.", "ログインするのに苦労してる。")
+                 ]),
+            make("spend time doing", "use time doing",
+                 "〜して時間を過ごす",
+                 useCases: ["時間の使い方を伝えるとき"],
+                 examples: [
+                    ("Spend time reading.", "読書で時間を過ごす。"),
+                    ("Spent the afternoon studying.", "午後は勉強して過ごした。")
+                 ]),
+            make("busy doing", "occupied doing",
+                 "〜するのに忙しい",
+                 useCases: ["何かに追われていると伝えるとき"],
+                 examples: [
+                    ("Busy working.", "仕事で忙しい。"),
+                    ("She's busy cooking.", "彼女は料理で忙しい。")
+                 ])
+        ]
+    }
+
+    // MARK: - 「seem / appear / look」構文（追加 5）
+
+    private static var seemAppear5: [Word] {
+        [
+            make("seem to", "appear to",
+                 "〜するように見える",
+                 useCases: ["他者の状態を推測するとき"],
+                 examples: [
+                    ("You seem tired.", "疲れて見える。"),
+                    ("She seems happy.", "彼女、楽しそう。")
+                 ]),
+            make("it seems", "it appears that",
+                 "〜のようだ",
+                 useCases: ["やや距離を置いて推測するとき"],
+                 examples: [
+                    ("It seems he left.", "彼は出たようだ。"),
+                    ("Seems he forgot.", "忘れたみたい。")
+                 ]),
+            make("look like", "appear similar to",
+                 "〜のようだ・〜に似てる",
+                 useCases: ["見た目から推測するとき"],
+                 examples: [
+                    ("Looks like rain.", "雨が降りそう。"),
+                    ("You look like your mom.", "お母さんに似てるね。")
+                 ]),
+            make("sound like", "seem like (auditory)",
+                 "〜のように聞こえる",
+                 useCases: ["話の内容や音から推測するとき"],
+                 examples: [
+                    ("Sounds like fun.", "楽しそう。"),
+                    ("Sounds like a plan.", "いい計画みたい。")
+                 ]),
+            make("feel like", "seem like; have the urge to",
+                 "〜のような感じ・〜したい気分",
+                 useCases: ["雰囲気を伝えるとき", "気分を伝えるとき"],
+                 examples: [
+                    ("Feels like Monday.", "月曜みたい。"),
+                    ("Feel like pizza tonight.", "今夜はピザ食べたい気分。")
+                 ])
+        ]
+    }
+
+    // MARK: - よくあるカジュアル構文（追加 5）
+
+    private static var casualConstructions5: [Word] {
+        [
+            make("you'd better", "you should",
+                 "〜した方がいい",
+                 useCases: ["強めに勧めるとき"],
+                 examples: [
+                    ("You'd better go.", "行った方がいい。"),
+                    ("You'd better hurry.", "急いだ方がいい。")
+                 ]),
+            make("I'd say", "I'd estimate; my guess",
+                 "〜と思う・言うなら",
+                 useCases: ["控えめに意見を述べるとき"],
+                 examples: [
+                    ("I'd say it's fine.", "大丈夫だと思う。"),
+                    ("I'd say about 5 minutes.", "5分くらいかな。")
+                 ]),
+            make("I bet", "I'm sure",
+                 "〜に違いない・きっと",
+                 useCases: ["強い確信を伝えるとき"],
+                 examples: [
+                    ("I bet he's late.", "きっと遅刻。"),
+                    ("I bet you're tired.", "絶対疲れてるでしょ。")
+                 ]),
+            make("I take it", "I assume; I gather",
+                 "〜ということだね",
+                 useCases: ["相手の意図を確認するとき"],
+                 examples: [
+                    ("I take it you agree.", "賛成ってことね。"),
+                    ("I take it you've heard.", "もう聞いたんでしょ。")
+                 ]),
+            make("as far as I know", "to my knowledge",
+                 "私の知る限り",
+                 useCases: ["自分の知識の範囲で答えるとき"],
+                 examples: [
+                    ("As far as I know, yes.", "知る限りはイエス。"),
+                    ("As far as I know, it's open.", "私の知る限りオープンしてる。")
                  ])
         ]
     }
