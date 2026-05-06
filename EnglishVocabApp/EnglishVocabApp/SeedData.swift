@@ -36,6 +36,9 @@ enum SeedData {
             + britishGreetings7 + britishReactions7 + britishDegree7
             + britishFood7 + britishSuggestions7 + britishVerbs7
             + britishComplaints7 + britishAgreement7
+            + elegantOpeners8 + elegantAgreement8 + elegantDisagreement8
+            + elegantHedging8 + elegantStructure8 + elegantSuggestions8
+            + elegantEvaluations8 + elegantConnectives8
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -6825,4 +6828,304 @@ enum SeedData {
         ]
     }
 
+    // MARK: - エレガント: 知的な切り出し（追加 7）
+
+    private static var elegantOpeners8: [Word] {
+        [
+            make("I would argue that", "I would maintain that",
+                 "〜だと主張したい・〜と考える",
+                 useCases: ["論理的な意見を控えめに切り出すとき"],
+                 examples: [
+                    ("I would argue that quality matters more.", "質の方が大事だと考える。"),
+                    ("I would argue that timing is everything.", "タイミングが全てだと言いたい。")
+                 ]),
+            make("It strikes me as", "it appears to me as",
+                 "〜のように感じる",
+                 useCases: ["自分の印象を知的に伝えるとき"],
+                 examples: [
+                    ("It strikes me as odd.", "なんか奇妙に感じる。"),
+                    ("It strikes me as a bit risky.", "少しリスキーに感じる。")
+                 ]),
+            make("It seems to me that", "in my view it seems",
+                 "〜のように思える",
+                 useCases: ["押し付けがましくなく意見を伝えるとき"],
+                 examples: [
+                    ("It seems to me that we agree.", "私たちは同意してるように思える。"),
+                    ("It seems to me that this works.", "これでうまくいくように思う。")
+                 ]),
+            make("From my perspective", "from my point of view",
+                 "私の視点では",
+                 useCases: ["立場を明確にしつつ意見を述べるとき"],
+                 examples: [
+                    ("From my perspective, it works.", "私の視点ではうまくいく。"),
+                    ("From my perspective, it's worth it.", "私から見れば価値がある。")
+                 ]),
+            make("As far as I can tell", "from what I can see",
+                 "私の見る限り",
+                 useCases: ["限定的な確信を控えめに伝えるとき"],
+                 examples: [
+                    ("As far as I can tell, fine.", "見る限り問題なし。"),
+                    ("As far as I can tell, no issues.", "私が見る限り問題ない。")
+                 ]),
+            make("If I may", "if you'll allow me",
+                 "もしよろしければ",
+                 useCases: ["丁寧に発言の許可を求めるとき"],
+                 examples: [
+                    ("If I may, I'd suggest…", "よろしければご提案を…"),
+                    ("If I may, one more thing.", "もしよければ、もう一つ。")
+                 ]),
+            make("Allow me to", "let me",
+                 "〜させてください",
+                 useCases: ["フォーマルな前置きとして"],
+                 examples: [
+                    ("Allow me to explain.", "説明させてください。"),
+                    ("Allow me to introduce myself.", "自己紹介させてください。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 同意・部分同意（追加 5）
+
+    private static var elegantAgreement8: [Word] {
+        [
+            make("I take your point", "I understand your argument",
+                 "おっしゃることは分かります",
+                 useCases: ["相手を尊重しつつ反論する大人の表現"],
+                 examples: [
+                    ("I take your point, but…", "おっしゃることは分かりますが…"),
+                    ("I take your point on cost.", "コストの件は理解します。")
+                 ]),
+            make("That's a fair point", "that's a valid point",
+                 "それは妥当な指摘ですね",
+                 useCases: ["建設的な議論で知的に同意するとき"],
+                 examples: [
+                    ("That's a fair point.", "それは妥当な指摘。"),
+                    ("Hmm, that's a fair point.", "うん、もっともだ。")
+                 ]),
+            make("I see where you're coming from", "I understand your position",
+                 "あなたの立場は理解できる",
+                 useCases: ["意見が違っても相手を尊重するとき"],
+                 examples: [
+                    ("I see where you're coming from.", "言いたいことは分かる。"),
+                    ("I see where you're coming from, but…", "立場は分かるけど…")
+                 ]),
+            make("there's something to that", "there's some truth in that",
+                 "一理ある",
+                 useCases: ["完全には同意しないが認めるとき"],
+                 examples: [
+                    ("There's something to that.", "一理あるね。"),
+                    ("Actually, there's something to that.", "確かに、一理ある。")
+                 ]),
+            make("to a certain extent", "to some degree",
+                 "ある程度は",
+                 useCases: ["部分的同意を知的に表現するとき"],
+                 examples: [
+                    ("To a certain extent, yes.", "ある程度はそうだね。"),
+                    ("Agree, to a certain extent.", "ある程度は同意。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 反対・異論（追加 5）
+
+    private static var elegantDisagreement8: [Word] {
+        [
+            make("I beg to differ", "I respectfully disagree",
+                 "失礼ながら異論があります",
+                 useCases: ["丁寧に反対する英国的なエレガンス"],
+                 examples: [
+                    ("I beg to differ on that.", "その点は異論があります。"),
+                    ("I beg to differ.", "失礼ながら違うと思います。")
+                 ]),
+            make("With all due respect", "while respecting you",
+                 "失礼ながら",
+                 useCases: ["強い反対を礼儀正しく言う定番"],
+                 examples: [
+                    ("With all due respect, I disagree.", "失礼ながら反対です。"),
+                    ("With all due respect, that's wrong.", "失礼ですが間違っています。")
+                 ]),
+            make("I'm not entirely convinced", "I have doubts",
+                 "完全には納得していない",
+                 useCases: ["強くは否定せず疑問を投げかけるとき"],
+                 examples: [
+                    ("I'm not entirely convinced.", "完全には納得していない。"),
+                    ("I'm not entirely convinced of the plan.", "計画に完全には納得していない。")
+                 ]),
+            make("I would argue otherwise", "I'd say the opposite",
+                 "私はそうは思いません",
+                 useCases: ["知的に異論を提示するとき"],
+                 examples: [
+                    ("I would argue otherwise.", "私はそうは思いません。"),
+                    ("Actually, I would argue otherwise.", "実は逆だと思う。")
+                 ]),
+            make("That's debatable", "that's open to debate",
+                 "それは議論の余地があるね",
+                 useCases: ["賛成も反対もしないクールな立場"],
+                 examples: [
+                    ("That's debatable.", "それは議論の余地あり。"),
+                    ("Hmm, that's debatable.", "それはちょっと議論の余地あるね。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 婉曲・控えめ（追加 2・rather, quite, somewhat は既出）
+
+    private static var elegantHedging8: [Word] {
+        [
+            make("a tad", "slightly; a bit (charming)",
+                 "ちょっと〜",
+                 useCases: ["かわいらしく婉曲に程度を言うとき"],
+                 examples: [
+                    ("A tad expensive.", "ちょっと高い。"),
+                    ("A tad too sweet.", "少し甘すぎる。")
+                 ]),
+            make("slightly", "to a small degree",
+                 "少し〜",
+                 useCases: ["直接的な批判を避ける決まり文句"],
+                 examples: [
+                    ("Slightly disappointing.", "少しがっかり。"),
+                    ("Slightly off.", "少しずれてる。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 議論の構造（追加 4・be that as it may は既出）
+
+    private static var elegantStructure8: [Word] {
+        [
+            make("on the one hand", "on one side of the argument",
+                 "一方では〜",
+                 useCases: ["論理的な対比を構築するとき"],
+                 examples: [
+                    ("On the one hand, fast. On the other, costly.", "一方で速い。他方で高い。"),
+                    ("On the one hand, it's cheap.", "一方では安い。")
+                 ]),
+            make("that being said", "having said that",
+                 "とはいえ",
+                 useCases: ["前言を踏まえて展開する大人の表現"],
+                 examples: [
+                    ("That being said, I agree.", "とはいえ、賛成。"),
+                    ("That being said, we should try.", "そうは言っても、やってみるべき。")
+                 ]),
+            make("having said that", "that being said",
+                 "そうは言っても",
+                 useCases: ["前提を認めつつ別の見方を出すとき"],
+                 examples: [
+                    ("Having said that, let's try.", "そうは言ってもやってみよう。"),
+                    ("Having said that, it's risky.", "とはいえリスクはある。")
+                 ]),
+            make("in any event", "anyway; in any case",
+                 "いずれにせよ",
+                 useCases: ["anyway より洗練された印象で結論に進むとき"],
+                 examples: [
+                    ("In any event, thank you.", "いずれにせよ、ありがとう。"),
+                    ("In any event, we move on.", "いずれにせよ、先に進もう。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 提案・気遣い（追加 5）
+
+    private static var elegantSuggestions8: [Word] {
+        [
+            make("Might I suggest", "may I suggest (very polite)",
+                 "〜してはいかがでしょう",
+                 useCases: ["上品でプロフェッショナルな提案"],
+                 examples: [
+                    ("Might I suggest a coffee?", "コーヒーはいかがですか？"),
+                    ("Might I suggest a different approach?", "別のアプローチはいかがでしょう？")
+                 ]),
+            make("Perhaps we could", "maybe we could",
+                 "おそらく〜できるかも",
+                 useCases: ["押し付けがましくない提案"],
+                 examples: [
+                    ("Perhaps we could meet later.", "後で会えるといいかも。"),
+                    ("Perhaps we could try this.", "これを試してみても。")
+                 ]),
+            make("I was wondering if", "I'd like to ask if",
+                 "〜してもらえたらと",
+                 useCases: ["丁寧な依頼の定番"],
+                 examples: [
+                    ("I was wondering if you could help.", "手伝ってもらえないかと思って。"),
+                    ("I was wondering if we could meet.", "お会いできないかと思って。")
+                 ]),
+            make("Would you mind", "do you mind if (polite)",
+                 "〜していただけませんか",
+                 useCases: ["丁寧な依頼で必須"],
+                 examples: [
+                    ("Would you mind waiting?", "少々お待ちいただけますか？"),
+                    ("Would you mind closing the door?", "ドアを閉めていただけますか？")
+                 ]),
+            make("It would be lovely if", "it would be wonderful if",
+                 "〜していただけたら嬉しいです",
+                 useCases: ["lovely を使う英国的優雅さ"],
+                 examples: [
+                    ("It would be lovely if you could come.", "来ていただけたら嬉しいです。"),
+                    ("It would be lovely if we met soon.", "近いうちに会えたら素敵。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 感想・評価（追加 5）
+
+    private static var elegantEvaluations8: [Word] {
+        [
+            make("Quite remarkable", "really impressive (UK)",
+                 "なかなか素晴らしい",
+                 useCases: ["「すごい」を上品に表現するとき"],
+                 examples: [
+                    ("Quite remarkable, isn't it?", "なかなかすごいよね。"),
+                    ("Quite remarkable indeed.", "実に素晴らしい。")
+                 ]),
+            make("Rather impressive", "fairly impressive",
+                 "かなり印象的",
+                 useCases: ["抑制された褒め言葉"],
+                 examples: [
+                    ("Rather impressive work.", "なかなか印象的な仕事。"),
+                    ("Rather impressive, I must say.", "正直、かなり印象的。")
+                 ]),
+            make("Most enjoyable", "very enjoyable (UK elegant)",
+                 "とても楽しい",
+                 useCases: ["very より most を使う英国的優雅さ"],
+                 examples: [
+                    ("It was most enjoyable.", "とても楽しかったです。"),
+                    ("Most enjoyable evening.", "とても楽しい夜でした。")
+                 ]),
+            make("Genuinely", "really; truly (intelligent)",
+                 "心から〜・本当に〜",
+                 useCases: ["「really」の知的バージョン"],
+                 examples: [
+                    ("Genuinely surprised.", "心から驚いた。"),
+                    ("Genuinely impressed.", "本当に感心した。")
+                 ]),
+            make("Frankly speaking", "to be frank (refined)",
+                 "率直に言うと",
+                 useCases: ["honestly より洗練された前置き"],
+                 examples: [
+                    ("Frankly speaking, no.", "率直に言って、ノー。"),
+                    ("Frankly speaking, I'm worried.", "正直なところ、心配だ。")
+                 ])
+        ]
+    }
+
+    // MARK: - エレガント: 接続表現（追加 2）
+
+    private static var elegantConnectives8: [Word] {
+        [
+            make("As such", "therefore; consequently",
+                 "そのため・それゆえに",
+                 useCases: ["so より知的に結論を導くとき"],
+                 examples: [
+                    ("As such, we declined.", "そのため辞退しました。"),
+                    ("As such, the meeting was postponed.", "それゆえ会議は延期。")
+                 ]),
+            make("In which case", "if that's the case",
+                 "その場合は",
+                 useCases: ["条件付き返答を上品に作るとき"],
+                 examples: [
+                    ("In which case, we'll go.", "その場合は行きます。"),
+                    ("In which case, let me check.", "その場合は確認させて。")
+                 ])
+        ]
+    }
 }
