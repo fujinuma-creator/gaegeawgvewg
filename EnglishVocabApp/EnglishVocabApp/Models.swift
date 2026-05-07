@@ -182,6 +182,24 @@ struct Word: Codable, Identifiable, Hashable {
     }
 }
 
+/// One user attempt at translating an example sentence, paired with the
+/// AI feedback returned for it. Stored per-example so the user can scroll
+/// back through their progress.
+struct CompositionAttempt: Codable, Identifiable, Hashable {
+    var id: UUID = UUID()
+    var date: Date = Date()
+    var userText: String
+    var feedback: String
+}
+
+/// All AI-assisted study artifacts attached to a single example sentence:
+/// the on-demand grammar explanation Gemini wrote, plus the user's past
+/// composition attempts with their AI corrections.
+struct ExampleStudyLog: Codable, Hashable {
+    var aiGrammar: String? = nil
+    var attempts: [CompositionAttempt] = []
+}
+
 /// Returns the number of days until the next review based on completed review count.
 /// User-specified Ebbinghaus curve:
 /// - 1st review done → 1 day later

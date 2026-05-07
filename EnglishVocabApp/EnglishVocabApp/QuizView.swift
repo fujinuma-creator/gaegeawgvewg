@@ -81,6 +81,14 @@ struct QuizView: View {
     @AppStorage("translation.wordId") private var savedTranslationWordId: String = ""
     @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
 
+    // AI assistance state for the current translation problem.
+    @State private var isFetchingGrammar: Bool = false
+    @State private var isCorrectingComposition: Bool = false
+    @State private var latestComposition: CompositionAttempt? = nil
+    @State private var aiErrorMessage: String? = nil
+    @State private var showAIError: Bool = false
+    @State private var showHistory: Bool = false
+
     /// Words from the review list eligible to be the *question* for the
     /// current mode: per-mode count < 4 AND per-mode next-review date is
     /// on/before now (Ebbinghaus). Each (word, mode) pair tracks its own
@@ -610,8 +618,35 @@ struct QuizView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.separator), lineWidth: 0.5))
                         .textInputAutocapitalization(.sentences)
                         .autocorrectionDisabled(false)
+
+                    Button {
+                        Task { await correctMyComposition() }
+                    } label: {
+                        HStack {
+                            Spacer()
+                            if isCorrectingComposition {
+                                ProgressView().scaleEffect(0.8)
+                                Text("AIが添削中…").bold()
+                            } else {
+                                Image(systemName: "sparkles")
+                                Text("AIに添削してもらう").bold()
+                            }
+                            Spacer()
+                        }
+                        .padding(.vertical, 12)
+                        .foregroundStyle(.white)
+                        .background(Color.purple)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .opacity(canSubmitComposition ? 1.0 : 0.5)
+                    }
+                    .disabled(!canSubmitComposition)
                 }
                 .padding(.horizontal, 16)
+
+                if let attempt = latestComposition {
+                    compositionFeedbackCard(attempt, isLatest: true)
+                        .padding(.horizontal, 16)
+                }
 
                 Button {
                     showAnswer.toggle()
@@ -632,6 +667,10 @@ struct QuizView: View {
                 if showAnswer, let ex = currentExample, let w = currentWord {
                     answerView(ex, word: w)
                         .padding(.horizontal, 16)
+                    aiAssistSection(for: ex)
+                        .padding(.horizontal, 16)
+                    compositionHistorySection()
+                        .padding(.horizontal, 16)
                     selfRateRow(for: w)
                         .padding(.horizontal, 16)
                 }
@@ -639,6 +678,16 @@ struct QuizView: View {
                 Spacer(minLength: 12)
             }
         }
+        .alert("AI 呼び出しに失敗しました", isPresented: $showAIError, presenting: aiErrorMessage) { _ in
+            Button("OK", role: .cancel) {}
+        } message: { msg in
+            Text(msg)
+        }
+    }
+
+    private var canSubmitComposition: Bool {
+        !userTranslation.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+            && !isCorrectingComposition
     }
 
     // MARK: - Translation queue / navigation
@@ -731,6 +780,18 @@ struct QuizView: View {
         savedTranslationExampleIdx = pair.exampleIdx
         showAnswer = false
         userTranslation = ""
+        latestComposition = nil
+        showHistory = false
+    }
+
+    /// Stable key per (current word, example slot index) used for storing
+    /// AI grammar explanations and composition attempts in WordStore.studyLogs.
+    private var studyLogKey: String? {
+        guard let w = currentWord, let ex = currentExample,
+              let idx = w.examples.firstIndex(where: { $0.id == ex.id }) else {
+            return nil
+        }
+        return "\(w.id.uuidString)#\(idx)"
     }
 
     // MARK: - Review gauge
@@ -918,6 +979,186 @@ struct QuizView: View {
         userTranslation = ""
         showAnswer = false
         answered = false
+        latestComposition = nil
+        showHistory = false
+    }
+
+    // MARK: - AI assistance for translation mode
+
+    @MainActor
+    private func fetchAIGrammar() async {
+        guard let ex = currentExample, let key = studyLogKey else { return }
+        isFetchingGrammar = true
+        defer { isFetchingGrammar = false }
+        do {
+            let text = try await GeminiService.explainGrammar(
+                english: ex.english,
+                japanese: ex.japanese
+            )
+            store.setAIGrammar(text, forKey: key)
+        } catch {
+            aiErrorMessage = error.localizedDescription
+            showAIError = true
+        }
+    }
+
+    @MainActor
+    private func correctMyComposition() async {
+        guard let ex = currentExample, let key = studyLogKey else { return }
+        let trimmed = userTranslation.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        isCorrectingComposition = true
+        defer { isCorrectingComposition = false }
+        do {
+            let feedback = try await GeminiService.correctComposition(
+                userEnglish: trimmed,
+                targetJapanese: ex.japanese,
+                referenceEnglish: ex.english
+            )
+            store.appendCompositionAttempt(
+                userText: trimmed,
+                feedback: feedback,
+                forKey: key
+            )
+            // Show the freshly-saved attempt at the top of the screen.
+            if let saved = store.studyLog(forKey: key).attempts.first {
+                latestComposition = saved
+            }
+            // Also auto-reveal the model answer so the user can compare.
+            showAnswer = true
+        } catch {
+            aiErrorMessage = error.localizedDescription
+            showAIError = true
+        }
+    }
+
+    @ViewBuilder
+    private func aiAssistSection(for ex: ExampleSentence) -> some View {
+        let key = studyLogKey ?? ""
+        let log = store.studyLog(forKey: key)
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 8) {
+                Image(systemName: "sparkles").foregroundStyle(.indigo)
+                Text("AI 文法・語法の解説")
+                    .font(.subheadline.bold())
+                Spacer()
+                Button {
+                    Task { await fetchAIGrammar() }
+                } label: {
+                    HStack(spacing: 4) {
+                        if isFetchingGrammar {
+                            ProgressView().scaleEffect(0.7)
+                            Text("生成中…")
+                        } else {
+                            Image(systemName: log.aiGrammar == nil ? "wand.and.stars" : "arrow.clockwise")
+                            Text(log.aiGrammar == nil ? "Geminiに解説させる" : "再生成")
+                        }
+                    }
+                    .font(.caption.bold())
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(Color.indigo))
+                }
+                .buttonStyle(.plain)
+                .disabled(isFetchingGrammar)
+            }
+
+            if let g = log.aiGrammar, !g.isEmpty {
+                Text(g)
+                    .font(.subheadline)
+                    .foregroundStyle(.primary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            } else if !isFetchingGrammar {
+                Text("ボタンを押すとGeminiが文法・語法・コロケーションを箇条書きで解説します。一度生成すると自動保存されて次回以降も表示されます。")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color.indigo.opacity(0.08)))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.indigo.opacity(0.4), lineWidth: 1))
+    }
+
+    @ViewBuilder
+    private func compositionFeedbackCard(_ attempt: CompositionAttempt, isLatest: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Image(systemName: "pencil.and.outline").foregroundStyle(.purple)
+                Text(isLatest ? "AI 添削結果" : attempt.date.formatted(date: .abbreviated, time: .shortened))
+                    .font(.caption.bold())
+                    .foregroundStyle(.purple)
+                Spacer()
+                if !isLatest, let key = studyLogKey {
+                    Button(role: .destructive) {
+                        store.deleteCompositionAttempt(id: attempt.id, forKey: key)
+                    } label: {
+                        Image(systemName: "trash")
+                            .font(.caption)
+                            .foregroundStyle(.red.opacity(0.7))
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            Text("あなたの英訳:")
+                .font(.caption2)
+                .foregroundStyle(.tertiary)
+            Text(attempt.userText)
+                .font(.subheadline)
+                .padding(8)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(RoundedRectangle(cornerRadius: 6).fill(Color.white.opacity(0.7)))
+            Text(attempt.feedback)
+                .font(.subheadline)
+                .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color.purple.opacity(0.08)))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.purple.opacity(0.4), lineWidth: 1))
+    }
+
+    @ViewBuilder
+    private func compositionHistorySection() -> some View {
+        let key = studyLogKey ?? ""
+        let log = store.studyLog(forKey: key)
+        // Hide the most-recently-saved attempt from the history list when it
+        // is currently being shown above as the "AI 添削結果" card.
+        let pastAttempts: [CompositionAttempt] = {
+            if let latest = latestComposition {
+                return log.attempts.filter { $0.id != latest.id }
+            }
+            return log.attempts
+        }()
+        if !pastAttempts.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+                Button {
+                    withAnimation { showHistory.toggle() }
+                } label: {
+                    HStack {
+                        Image(systemName: "clock.arrow.circlepath")
+                        Text("過去の添削履歴 (\(pastAttempts.count))")
+                            .font(.caption.bold())
+                        Spacer()
+                        Image(systemName: showHistory ? "chevron.up" : "chevron.down")
+                    }
+                    .foregroundStyle(.purple)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
+                    .background(Capsule().fill(Color.purple.opacity(0.10)))
+                }
+                .buttonStyle(.plain)
+
+                if showHistory {
+                    VStack(spacing: 8) {
+                        ForEach(pastAttempts) { attempt in
+                            compositionFeedbackCard(attempt, isLatest: false)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

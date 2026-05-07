@@ -112,6 +112,103 @@ enum GeminiService {
         }
     }
 
+    /// Asks Gemini for a focused grammar/usage breakdown of one example
+    /// sentence. The result is plain Japanese text (bulleted with 「・」).
+    static func explainGrammar(english: String, japanese: String) async throws -> String {
+        let prompt = """
+        以下の英文について、文法・語法・コロケーション・自然さのポイントを、初〜中級学習者にも分かるように日本語で詳しく解説してください。
+
+        出力フォーマット:
+        - 行頭は必ず「・」で箇条書き
+        - 5〜8項目
+        - 各項目は1〜3文程度
+        - 時制、冠詞、前置詞、助動詞、語順、慣用表現、ネイティブが好む言い回し、よくある誤訳の落とし穴に触れる
+        - Markdown記号（**、#、-）は使わず、プレーンテキストのみで
+
+        英文: \(english)
+        日本語訳: \(japanese)
+        """
+        return try await runPlainText(prompt: prompt, temperature: 0.4)
+    }
+
+    /// Sends the user's English attempt + the reference English to Gemini
+    /// and returns a structured Japanese feedback string.
+    static func correctComposition(
+        userEnglish: String,
+        targetJapanese: String,
+        referenceEnglish: String
+    ) async throws -> String {
+        let prompt = """
+        あなたは英作文の添削者です。次の日本語を英訳する課題に対して、ユーザーが書いた英文を添削してください。
+
+        出力は日本語のプレーンテキストで、以下の見出し（「【】」付き）を順に必ず含めてください。Markdown記号（**、#、-）は使わないでください。
+
+        【評価】◎（合格）／△（要修正）／×（やり直し） のいずれか1つと、20字以内の一言コメント
+        【修正後の英文】文法的に正しく、より自然なネイティブ寄りの英文を1〜2案
+        【良い点】箇条書き「・」で1〜3項目
+        【改善点】箇条書き「・」で2〜5項目（文法ミス・語法・コロケーション・冠詞・時制など具体的に）
+        【お手本との違い】お手本英訳と比較して何が違うか、なぜそうなるかの解説（1〜3文）
+
+        日本語の課題: \(targetJapanese)
+        お手本英訳: \(referenceEnglish)
+        ユーザーの英訳: \(userEnglish)
+        """
+        return try await runPlainText(prompt: prompt, temperature: 0.3)
+    }
+
+    /// Plain-text Gemini call (no JSON schema). Returns the body text from
+    /// candidates[0].content.parts[0].text directly.
+    private static func runPlainText(
+        prompt: String,
+        temperature: Double
+    ) async throws -> String {
+        guard let apiKey = KeychainHelper.get(SecretKey.geminiAPIKey),
+              !apiKey.isEmpty else {
+            throw GeminiServiceError.missingAPIKey
+        }
+        guard var components = URLComponents(url: endpoint!, resolvingAgainstBaseURL: false) else {
+            throw GeminiServiceError.invalidResponse
+        }
+        components.queryItems = [URLQueryItem(name: "key", value: apiKey)]
+        guard let url = components.url else { throw GeminiServiceError.invalidResponse }
+
+        let body: [String: Any] = [
+            "contents": [
+                ["parts": [["text": prompt]]]
+            ],
+            "generationConfig": [
+                "temperature": temperature
+            ]
+        ]
+
+        var req = URLRequest(url: url)
+        req.httpMethod = "POST"
+        req.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        req.httpBody = try JSONSerialization.data(withJSONObject: body)
+        req.timeoutInterval = 30
+
+        let (data, response) = try await URLSession.shared.data(for: req)
+        guard let http = response as? HTTPURLResponse else {
+            throw GeminiServiceError.invalidResponse
+        }
+        guard (200..<300).contains(http.statusCode) else {
+            let bodyText = String(data: data, encoding: .utf8) ?? ""
+            throw GeminiServiceError.http(http.statusCode, bodyText)
+        }
+
+        guard let envelope = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let candidates = envelope["candidates"] as? [[String: Any]],
+              let first = candidates.first,
+              let content = first["content"] as? [String: Any],
+              let parts = content["parts"] as? [[String: Any]],
+              let text = parts.first?["text"] as? String,
+              !text.isEmpty
+        else {
+            throw GeminiServiceError.noText
+        }
+        return text.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
     static func generateWord(for word: String) async throws -> GeneratedWord {
         let textData = try await runGenerateContent(
             prompt: buildPrompt(for: word),

@@ -5,13 +5,26 @@ import SwiftUI
 final class WordStore: ObservableObject {
     @Published private(set) var words: [Word] = []
 
+    /// AI-assisted study logs keyed by example sentence id (UUID string).
+    /// Stores the on-demand grammar explanation Gemini wrote and the user's
+    /// past composition attempts with AI corrections. Persisted to a
+    /// separate JSON file so it survives example regeneration if the user
+    /// hasn't replaced the example yet.
+    @Published private(set) var studyLogs: [String: ExampleStudyLog] = [:]
+
     private let fileURL: URL = {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return docs.appendingPathComponent("words.json")
     }()
 
+    private let studyLogsURL: URL = {
+        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return docs.appendingPathComponent("study_logs.json")
+    }()
+
     init() {
         load()
+        loadStudyLogs()
         // Drop any words that were retired from the seed list (e.g. the
         // Singlish set the user asked to remove). Runs every launch so
         // newly-retired words are scrubbed without manual user action.
@@ -95,6 +108,60 @@ final class WordStore: ObservableObject {
         } catch {
             print("Failed to save words: \(error)")
         }
+    }
+
+    // MARK: - Study logs (AI grammar explanations + composition attempts)
+
+    private func loadStudyLogs() {
+        guard FileManager.default.fileExists(atPath: studyLogsURL.path) else { return }
+        do {
+            let data = try Data(contentsOf: studyLogsURL)
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            studyLogs = try decoder.decode([String: ExampleStudyLog].self, from: data)
+        } catch {
+            print("Failed to load study logs: \(error)")
+        }
+    }
+
+    private func saveStudyLogs() {
+        do {
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .iso8601
+            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            let data = try encoder.encode(studyLogs)
+            try data.write(to: studyLogsURL, options: .atomic)
+        } catch {
+            print("Failed to save study logs: \(error)")
+        }
+    }
+
+    func studyLog(forKey key: String) -> ExampleStudyLog {
+        studyLogs[key] ?? ExampleStudyLog()
+    }
+
+    func setAIGrammar(_ text: String, forKey key: String) {
+        var log = studyLogs[key] ?? ExampleStudyLog()
+        log.aiGrammar = text
+        studyLogs[key] = log
+        saveStudyLogs()
+    }
+
+    func appendCompositionAttempt(userText: String, feedback: String, forKey key: String) {
+        var log = studyLogs[key] ?? ExampleStudyLog()
+        log.attempts.insert(
+            CompositionAttempt(date: Date(), userText: userText, feedback: feedback),
+            at: 0
+        )
+        studyLogs[key] = log
+        saveStudyLogs()
+    }
+
+    func deleteCompositionAttempt(id: UUID, forKey key: String) {
+        guard var log = studyLogs[key] else { return }
+        log.attempts.removeAll { $0.id == id }
+        studyLogs[key] = log
+        saveStudyLogs()
     }
 
     // MARK: - CRUD
