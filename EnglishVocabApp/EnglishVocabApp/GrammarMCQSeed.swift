@@ -1568,6 +1568,275 @@ enum GrammarMCQSeed {
             ・提案・要求の動詞 (suggest/recommend/insist/demand/propose) の that 節では基本ルール
             ・※「(事実を)示唆する」意味なら通常時制(The data suggests that ... is wrong.)
             """
+        ),
+        GrammarQuestion(
+            id: "q121",
+            question: "___ prevented him from attending the meeting was a sudden illness.",
+            choices: ["That", "It", "What", "Which"],
+            correctIndex: 2,
+            translation: "「彼が会議に出席できなかったのは突然の病気のためだった」",
+            explanation: """
+            ・What = 「〜こと/もの」(先行詞を含む関係代名詞)
+            ・文の主語の位置で「〜こと」を表すには What を使う
+            ・= "The thing which prevented him..." と言い換え可能
+            ・That は接続詞、It は形式主語の構文(It was X that...)、Which は先行詞が必要
+            """
+        ),
+        GrammarQuestion(
+            id: "q122",
+            question: "The new evidence ___ doubt on the original theory.",
+            choices: ["puts", "makes", "throws", "gives"],
+            correctIndex: 2,
+            translation: "「新しい証拠が元の理論に疑問を投げかける」",
+            explanation: """
+            ・throw doubt on ~ = 「〜に疑問を投げかける」のコロケーション
+            ・問7の cast doubt on と同じ意味で、こちらは throw を使う
+            ・put / make / give doubt とは言わない
+            ・「疑問を投げる」というイメージで throw / cast の動詞を選ぶ
+            """
+        ),
+        GrammarQuestion(
+            id: "q123",
+            question: "Rarely ___ such dedication in young employees these days.",
+            choices: ["we see", "do we see", "we do see", "seen we"],
+            correctIndex: 1,
+            translation: "「最近の若手社員にこれほどの献身を見ることは滅多にない」",
+            explanation: """
+            ・Rarely / Seldom が文頭の否定的副詞 → 倒置(疑問文の語順)
+            ・一般動詞 see なので do/does/did を借りてくる
+            ・現在のことなので do → do we see
+            ・Hardly ever, Scarcely ever も同じ倒置パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q124",
+            question: "The success of the campaign owes much ___ social media.",
+            choices: ["for", "on", "to", "with"],
+            correctIndex: 2,
+            translation: "「キャンペーンの成功は SNS によるところが大きい」",
+            explanation: """
+            ・owe A to B = 「A は B のおかげである」
+            ・「成功はSNSに負っている」の感覚で前置詞 to
+            ・I owe my success to my parents.(私の成功は両親のおかげ)
+            ・thanks to / due to と同じく to を取る感謝・原因の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q125",
+            question: "The committee is ___ the verge of reaching an agreement.",
+            choices: ["at", "in", "on", "by"],
+            correctIndex: 2,
+            translation: "「委員会は合意に達する寸前である」",
+            explanation: """
+            ・on the verge of ~ = 「〜の瀬戸際で、まさに〜しようとして」
+            ・on the brink of も同じ意味で言い換え可能
+            ・the verge は「縁、瀬戸際」の意味で、「縁の上に立っている」イメージ → on
+            ・後ろは名詞または動名詞(-ing)を取る
+            """
+        ),
+        GrammarQuestion(
+            id: "q126",
+            question: "He decided to take the job, ___ the long commute.",
+            choices: ["although", "despite of", "regardless of", "because of"],
+            correctIndex: 2,
+            translation: "「彼は長い通勤距離にかかわらず、その仕事を引き受けることを決めた」",
+            explanation: """
+            ・regardless of ~ = 「〜にかかわらず、〜を考慮せずに」
+            ・「気にしない」というニュアンスで譲歩を表す
+            ・although は接続詞で節を取る、despite of は誤り(of 不要)
+            ・because of は逆の意味(原因を示す)
+            ・似た表現: irrespective of(同じく「〜に関係なく」)
+            """
+        ),
+        GrammarQuestion(
+            id: "q127",
+            question: "The new factory will ___ over 200 jobs in the region.",
+            choices: ["make", "create", "build", "put"],
+            correctIndex: 1,
+            translation: "「新しい工場はその地域で200以上の雇用を創出する」",
+            explanation: """
+            ・create jobs = 「雇用を創出する」の決まったコロケーション
+            ・make jobs / build jobs / put jobs とは言わない
+            ・似た表現: generate employment, provide opportunities
+            ・IELTS Writing(社会・経済トピック)で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q128",
+            question: "The two countries are working together ___ a long-standing dispute.",
+            choices: ["for solving", "at solving", "to resolve", "by resolve"],
+            correctIndex: 2,
+            translation: "「両国は長年の紛争を解決するために協力している」",
+            explanation: """
+            ・to + 動詞原形 = 「〜するために」(目的を表す不定詞)
+            ・"work together to do" の形で目的を示すのが最も自然
+            ・"work on solving" なら可だが、選択肢にはない
+            ・resolve a dispute(紛争を解決する)は decisive な解決を表すコロケーション
+            ・by resolve は誤り(by の後ろに動詞原形は来ない)
+            """
+        ),
+        GrammarQuestion(
+            id: "q129",
+            question: "The government should take action to ___ the gap between rich and poor.",
+            choices: ["shorten", "reduce", "bridge", "cut"],
+            correctIndex: 2,
+            translation: "「政府は貧富の差を埋めるための行動を取るべきだ」",
+            explanation: """
+            ・bridge the gap = 「(差・ギャップを)埋める、橋渡しをする」のコロケーション
+            ・bridge は名詞「橋」だが動詞で「橋渡しをする」の意味
+            ・reduce the gap も使えるが、bridge の方が「橋を架けて両者をつなぐ」イメージで具体的
+            ・shorten/cut the gap とは普通言わない
+            ・IELTS Writing(社会問題)で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q130",
+            question: "___ is no doubt that climate change is a serious issue.",
+            choices: ["It", "That", "There", "This"],
+            correctIndex: 2,
+            translation: "「気候変動が深刻な問題であることに疑いはない」",
+            explanation: """
+            ・There is no doubt that ~ = 「〜であることに疑いはない」の決まった型
+            ・存在文 There is/are の応用
+            ・It is no doubt は誤り。It is true that ~ などとは構文が違う
+            ・主張を強調する際の常套句、IELTS Writing でも使える定型表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q131",
+            question: "The proposal is worth ___ further discussion.",
+            choices: ["of", "for", "to", "at"],
+            correctIndex: 0,
+            translation: "「その提案はさらなる議論に値する」",
+            explanation: """
+            ・選択肢の中で最も近いのは of(worthy of の感覚)
+            ・本来 worth は前置詞なしで名詞/-ing を直接取る: worth further discussion
+            ・worthy of + 名詞 なら of が必須(worthy of consideration)
+            ・worth と worthy は似て非なる単語。微妙な違いに注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q132",
+            question: "He had hardly begun his speech ___ the audience started clapping.",
+            choices: ["than", "when", "before", "while"],
+            correctIndex: 1,
+            translation: "「彼がスピーチを始めるかどうかのうちに、聴衆は拍手を始めた」",
+            explanation: """
+            ・Hardly...when... または Scarcely...when... = 「〜するかしないかのうちに」
+            ・No sooner...than... と区別 → こちらは than を取る
+            ・before / while ではこの意味の構文にならない
+            ・倒置形(Hardly had he begun...when...)も同じ意味だが、ここでは通常の語順
+            """
+        ),
+        GrammarQuestion(
+            id: "q133",
+            question: "The new policy will be implemented ___ January 2027.",
+            choices: ["at", "in", "on", "by"],
+            correctIndex: 1,
+            translation: "「新しい方針は2027年1月に実施される」",
+            explanation: """
+            ・in + 月/年/季節 = 月名や年と組み合わせる前置詞
+            ・at + 時刻、on + 日付/曜日、in + 月/年/世紀 のルール
+            ・by January なら「1月までに(期限)」で別の意味
+            ・in January 2027 で「2027年の1月に」
+            """
+        ),
+        GrammarQuestion(
+            id: "q134",
+            question: "The minister announced that taxes ___ next year.",
+            choices: ["will rise", "would rise", "rise", "had risen"],
+            correctIndex: 1,
+            translation: "「大臣は来年税金が上がると発表した」",
+            explanation: """
+            ・時制の一致: 主節が過去(announced)なら、従属節の will → would
+            ・間接話法のルール: 主節の時制に合わせて従属節も一段階過去にする
+            ・元の発言は "Taxes will rise." → 報告すると "...announced that taxes would rise."
+            ・「来年」が主節時点から見て未来であっても、文法上は would を使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q135",
+            question: "___ of the candidates was qualified for the position.",
+            choices: ["Both", "All", "Neither", "Few"],
+            correctIndex: 2,
+            translation: "「候補者のどちらも、その役職に適任ではなかった」",
+            explanation: """
+            ・Neither + of + 複数名詞 + 単数動詞 = 「(2人/2つの)どちらも〜ない」
+            ・was(単数動詞)があるので、複数扱いの選択肢は不可
+            ・Neither は2つを否定するときに使い、単数動詞を取る(現代英語では複数も許容)
+            ・Both / All は複数動詞 were を取る → was と合わない
+            ・Few は複数扱い → "Few of the candidates were"
+            """
+        ),
+        GrammarQuestion(
+            id: "q136",
+            question: "The new manager has a reputation ___ being strict but fair.",
+            choices: ["of", "for", "to", "with"],
+            correctIndex: 1,
+            translation: "「新しいマネージャーは厳しいが公平だという評判がある」",
+            explanation: """
+            ・have a reputation for ~ = 「〜という評判がある」のコロケーション
+            ・for の後ろは名詞または動名詞(-ing)
+            ・「〜で知られている」の意味で be known for ~ も同じパターン
+            ・of/to/with は使わない
+            ・似た表現: be famous for(良い意味), be notorious for(悪い意味)
+            """
+        ),
+        GrammarQuestion(
+            id: "q137",
+            question: "Despite the fact ___ he was tired, he kept working.",
+            choices: ["of", "which", "that", "what"],
+            correctIndex: 2,
+            translation: "「疲れているという事実にもかかわらず、彼は働き続けた」",
+            explanation: """
+            ・the fact that + 節 = 「〜という事実」(同格の that)
+            ・the fact / the idea / the news などの抽象名詞の後で内容を説明する that
+            ・which は関係代名詞で、後ろの節が不完全になる必要があるが、ここでは完全な文
+            ・of は前置詞で節を取らない、what は先行詞を含むので不可
+            ・Despite + 名詞句 全体で「〜という事実にもかかわらず」
+            """
+        ),
+        GrammarQuestion(
+            id: "q138",
+            question: "___ is widely believed that exercise improves mental health.",
+            choices: ["That", "It", "There", "This"],
+            correctIndex: 1,
+            translation: "「運動は精神的健康を改善すると広く信じられている」",
+            explanation: """
+            ・形式主語の It + 真主語(that 節) の構文
+            ・直訳すると「(後ろの内容)は広く信じられている」
+            ・It is said that / It is believed that / It is reported that などの定型
+            ・That を文頭に置くと "That exercise improves..." となり、長すぎる主語で不自然
+            ・IELTS Writing で意見を客観的に述べるときの定番表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q139",
+            question: "He is ___ to arrive any minute now.",
+            choices: ["waited", "waiting", "expected", "about"],
+            correctIndex: 2,
+            translation: "「彼は今すぐにでも到着することになっている」",
+            explanation: """
+            ・be expected to + 動詞原形 = 「〜すると予想されている、〜することになっている」
+            ・主語が「予想される側」 → 受動態の expected
+            ・be supposed to / be due to も似た意味だが、expected は「予測・期待」のニュアンス
+            ・about は be about to do(まさに〜しようとしている)で形が違う(to が必要)
+            ・waited / waiting では文意が通らない
+            """
+        ),
+        GrammarQuestion(
+            id: "q140",
+            question: "The decision will be made ___ the merits of each case.",
+            choices: ["by", "on", "for", "with"],
+            correctIndex: 1,
+            translation: "「決定は各ケースの利点に基づいてなされる」",
+            explanation: """
+            ・on the basis of ~ や based on ~ の応用
+            ・"on the merits of ~" = 「〜の利点・本質に基づいて」
+            ・判断・決定の根拠を示すときの on
+            ・by/for/with では、この意味を表せない
+            ・法律・ビジネス文書で頻出のフォーマルな前置詞用法
+            """
         )
     ]
 }
