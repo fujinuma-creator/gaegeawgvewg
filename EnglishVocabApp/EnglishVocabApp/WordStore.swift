@@ -12,11 +12,6 @@ final class WordStore: ObservableObject {
     /// hasn't replaced the example yet.
     @Published private(set) var studyLogs: [String: ExampleStudyLog] = [:]
 
-    /// Per-topic grammar lesson state keyed by `GrammarTopic.id`. Holds the
-    /// most-recently generated translation/MCQ problems plus the user's
-    /// composition attempt history for each topic.
-    @Published private(set) var grammarStates: [String: GrammarTopicState] = [:]
-
     private let fileURL: URL = {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return docs.appendingPathComponent("words.json")
@@ -27,15 +22,9 @@ final class WordStore: ObservableObject {
         return docs.appendingPathComponent("study_logs.json")
     }()
 
-    private let grammarStatesURL: URL = {
-        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("grammar_states.json")
-    }()
-
     init() {
         load()
         loadStudyLogs()
-        loadGrammarStates()
         // Drop any words that were retired from the seed list (e.g. the
         // Singlish set the user asked to remove). Runs every launch so
         // newly-retired words are scrubbed without manual user action.
@@ -173,75 +162,6 @@ final class WordStore: ObservableObject {
         log.attempts.removeAll { $0.id == id }
         studyLogs[key] = log
         saveStudyLogs()
-    }
-
-    // MARK: - Grammar lesson state
-
-    private func loadGrammarStates() {
-        guard FileManager.default.fileExists(atPath: grammarStatesURL.path) else { return }
-        do {
-            let data = try Data(contentsOf: grammarStatesURL)
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .iso8601
-            grammarStates = try decoder.decode([String: GrammarTopicState].self, from: data)
-        } catch {
-            print("Failed to load grammar states: \(error)")
-        }
-    }
-
-    private func saveGrammarStates() {
-        do {
-            let encoder = JSONEncoder()
-            encoder.dateEncodingStrategy = .iso8601
-            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-            let data = try encoder.encode(grammarStates)
-            try data.write(to: grammarStatesURL, options: .atomic)
-        } catch {
-            print("Failed to save grammar states: \(error)")
-        }
-    }
-
-    func grammarState(forTopic topicId: String) -> GrammarTopicState {
-        grammarStates[topicId] ?? GrammarTopicState()
-    }
-
-    func setGrammarTranslation(_ problem: GrammarTranslationProblem, forTopic topicId: String) {
-        var s = grammarStates[topicId] ?? GrammarTopicState()
-        s.translation = problem
-        grammarStates[topicId] = s
-        saveGrammarStates()
-    }
-
-    func appendGrammarTranslationAttempt(userText: String, feedback: String, forTopic topicId: String) {
-        var s = grammarStates[topicId] ?? GrammarTopicState()
-        s.translationAttempts.insert(
-            CompositionAttempt(date: Date(), userText: userText, feedback: feedback),
-            at: 0
-        )
-        grammarStates[topicId] = s
-        saveGrammarStates()
-    }
-
-    func deleteGrammarTranslationAttempt(id: UUID, forTopic topicId: String) {
-        guard var s = grammarStates[topicId] else { return }
-        s.translationAttempts.removeAll { $0.id == id }
-        grammarStates[topicId] = s
-        saveGrammarStates()
-    }
-
-    func setGrammarMCQ(_ problem: GrammarMultipleChoiceProblem, forTopic topicId: String) {
-        var s = grammarStates[topicId] ?? GrammarTopicState()
-        s.mcq = problem
-        s.mcqLastSelectedOptionId = nil
-        grammarStates[topicId] = s
-        saveGrammarStates()
-    }
-
-    func setGrammarMCQSelection(_ optionId: UUID?, forTopic topicId: String) {
-        var s = grammarStates[topicId] ?? GrammarTopicState()
-        s.mcqLastSelectedOptionId = optionId
-        grammarStates[topicId] = s
-        saveGrammarStates()
     }
 
     // MARK: - CRUD
