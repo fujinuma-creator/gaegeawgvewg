@@ -1303,6 +1303,271 @@ enum GrammarMCQSeed {
             ・現在のことなら "I wish I had more time"(仮定法過去)
             ・when I was younger という過去の時点が出ているので、もう一段階前の過去 → 過去完了
             """
+        ),
+        GrammarQuestion(
+            id: "q101",
+            question: "The professor's lecture was so confusing that ___ of the students could follow it.",
+            choices: ["some", "many", "few", "a few"],
+            correctIndex: 2,
+            translation: "「教授の講義はあまりに分かりにくかったので、ついていける学生はほとんどいなかった」",
+            explanation: """
+            ・few = 「ほとんど〜ない」(否定的なニュアンス)
+            ・a few = 「少しはある」(肯定的なニュアンス) → "a" の有無で意味が逆転
+            ・文脈「分かりにくかった」→ ついていけない学生が多い → 否定の few
+            ・little / a little も同じ関係(little=ほとんどない、a little=少しある)で不可算名詞用
+            """
+        ),
+        GrammarQuestion(
+            id: "q102",
+            question: "___ being tired, he kept working until the project was finished.",
+            choices: ["Although", "Even", "Despite", "Because"],
+            correctIndex: 2,
+            translation: "「疲れているにもかかわらず、彼はプロジェクトが終わるまで働き続けた」",
+            explanation: """
+            ・Despite + 動名詞(-ing) = 「〜にもかかわらず」
+            ・Despite は前置詞 → 後ろは名詞または動名詞(節は不可)
+            ・Although は接続詞 → 後ろは「主語+動詞」(Although he was tired なら可)
+            ・in spite of being tired も同じ意味で言い換え可能
+            """
+        ),
+        GrammarQuestion(
+            id: "q103",
+            question: "He gave me ___ advice that I followed it immediately.",
+            choices: ["so good", "so a good", "such good", "such a good"],
+            correctIndex: 2,
+            translation: "「彼があまりにいい助言をくれたので、私はすぐに従った」",
+            explanation: """
+            ・such + 形容詞 + 不可算名詞 + that = 「あまりに〜なので…」
+            ・advice は 不可算名詞 なので a/an は付かない → such a good は誤り
+            ・可算名詞なら "such a good idea that..." と a が必要
+            ・so なら "so good that I followed it immediately" だが、advice 自体を修飾するときは such
+            """
+        ),
+        GrammarQuestion(
+            id: "q104",
+            question: "The new system enables us ___ work more efficiently.",
+            choices: ["to", "for", "in", "of"],
+            correctIndex: 0,
+            translation: "「新しいシステムによって、私たちはより効率的に働けるようになる」",
+            explanation: """
+            ・enable + 人 + to + 動詞原形 = 「(人が)〜できるようにする」
+            ・enable は必ず to不定詞を取る、他の前置詞は不可
+            ・同じ構文を取る動詞: allow / permit / encourage / persuade / advise + 人 + to do
+            ・似た意味の make + 人 + 動詞原形(to なし)とは形が違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q105",
+            question: "The report was ___ short notice, so it contains some errors.",
+            choices: ["on", "at", "in", "by"],
+            correctIndex: 1,
+            translation: "「その報告書は急ぎで作られたので、いくつか誤りがある」",
+            explanation: """
+            ・at short notice = 「急な通知で、急ぎで」(時間的余裕がない状態)
+            ・「直前の通知時点で」→ 時点を表す at
+            ・on/in/by では使わない、丸ごと暗記する慣用句
+            ・似た表現: at the last minute(土壇場で), in advance(前もって)
+            """
+        ),
+        GrammarQuestion(
+            id: "q106",
+            question: "He's been studying English ___ he was a child.",
+            choices: ["for", "since", "from", "during"],
+            correctIndex: 1,
+            translation: "「彼は子供の頃から英語を勉強し続けている」",
+            explanation: """
+            ・since + 過去の時点(節も可) = 「〜以来ずっと」
+            ・ここでは "he was a child" という節が時点を表す → since
+            ・for は 期間 と組み合わせる(for 20 years)
+            ・from は「〜から」だが、現在完了とは相性が悪い
+            ・現在完了進行形 has been -ing と since はセットで覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q107",
+            question: "The conference was attended by ___ 500 delegates.",
+            choices: ["almost of", "nearly", "most of", "much"],
+            correctIndex: 1,
+            translation: "「その会議には500人近くの代表が出席した」",
+            explanation: """
+            ・nearly + 数字 = 「ほぼ〜、〜近く」(数字をやや下回る)
+            ・nearly 500 = 「500に近い数(490など)」
+            ・almost も同じ意味で使えるが、almost of という形は誤り(almost + 名詞は基本不可)
+            ・most of は「〜の大部分」で意味が違う
+            ・much は不可算名詞用、500 のような可算には使わない
+            """
+        ),
+        GrammarQuestion(
+            id: "q108",
+            question: "___ surprise was so great that I couldn't speak.",
+            choices: ["My", "Mine", "Me", "The"],
+            correctIndex: 0,
+            translation: "「驚きがあまりに大きくて、私は言葉を失った」",
+            explanation: """
+            ・名詞 surprise の前に置く所有格 → My(所有格)
+            ・mine は所有代名詞(単独で「私のもの」を意味し、後ろに名詞は来ない)
+            ・me は目的格、the は所有を示せない
+            ・「驚きの程度を表す感情の所有」では my/his/her などを名詞の前に置く
+            """
+        ),
+        GrammarQuestion(
+            id: "q109",
+            question: "___ studying hard, she failed the entrance exam.",
+            choices: ["Although", "Despite", "In spite of", "Because of"],
+            correctIndex: 2,
+            translation: "「一生懸命勉強したにもかかわらず、彼女は入試に落ちた」",
+            explanation: """
+            ・In spite of + 動名詞 = 「〜にもかかわらず」
+            ・Despite も同じ意味で置き換え可能だが、選択肢になければ In spite of
+            ・Although は接続詞で後ろに節が必要 → studying(動名詞単独)とは合わない
+            ・Because of は「〜のために(原因)」で逆の意味
+            """
+        ),
+        GrammarQuestion(
+            id: "q110",
+            question: "The doctor recommended that he ___ smoking immediately.",
+            choices: ["stops", "stop", "stopped", "will stop"],
+            correctIndex: 1,
+            translation: "「医者は彼が直ちに喫煙をやめるよう勧めた」",
+            explanation: """
+            ・recommend / suggest / insist / demand + that + S + 動詞原形 = 仮定法現在
+            ・主語が三人称単数(he)でも -s を付けない → stop
+            ・提案・要求を表す動詞の that 節では時制に関係なく動詞原形
+            ・イギリス英語では "should stop" の形でもOK
+            """
+        ),
+        GrammarQuestion(
+            id: "q111",
+            question: "I'd appreciate it ___ you could send me the document by tomorrow.",
+            choices: ["when", "if", "that", "whether"],
+            correctIndex: 1,
+            translation: "「明日までに書類を送っていただけるとありがたいのですが」",
+            explanation: """
+            ・I'd appreciate it if you could ~ = 「〜していただけると幸いです」(丁寧な依頼の決まった型)
+            ・仮定法 could を使うことで丁寧さを出す
+            ・it は形式目的語で、後ろの if 節を指す
+            ・ビジネスメールで頻出の定型表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q112",
+            question: "The company has ___ a significant increase in profits this year.",
+            choices: ["made", "seen", "given", "put"],
+            correctIndex: 1,
+            translation: "「その会社は今年、利益の大幅な増加を経験した」",
+            explanation: """
+            ・see + an increase / a decrease / a rise / a decline = 「〜を経験する」
+            ・主語が組織や時期で、変化を「経験・記録する」ときに使うコロケーション
+            ・This year has seen a rise in unemployment.(今年は失業率の上昇があった)
+            ・made/given/put では同じ意味にならない
+            ・IELTS Writing Task 1(グラフ説明)で必須の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q113",
+            question: "___ as the best player in the team, he felt a great responsibility.",
+            choices: ["Choosing", "Chosen", "Having chosen", "To choose"],
+            correctIndex: 1,
+            translation: "「チームで最高の選手に選ばれて、彼は大きな責任を感じた」",
+            explanation: """
+            ・主語 he は「選ばれる側」 → 受動の意味 → 過去分詞 Chosen
+            ・= "Because he was chosen as the best player..." の分詞構文
+            ・Choosing(現在分詞)は能動で「自分が選んでいる」意味になり不自然
+            ・分詞構文では、主語との関係(する側/される側)で現在分詞か過去分詞かを決める
+            """
+        ),
+        GrammarQuestion(
+            id: "q114",
+            question: "He must have left already; ___ , his car is gone.",
+            choices: ["however", "therefore", "nevertheless", "after all"],
+            correctIndex: 3,
+            translation: "「彼はもう帰ったに違いない。なんと言っても車がないのだから」",
+            explanation: """
+            ・after all = 「結局、何といっても、なにしろ」(根拠を補足するときの接続副詞)
+            ・however は逆接、therefore は結論、nevertheless は逆接
+            ・「車がない」が「帰ったに違いない」の根拠を補強する文脈 → after all が最適
+            ・文頭で「結局のところ〜」と理由を示すときの定番
+            """
+        ),
+        GrammarQuestion(
+            id: "q115",
+            question: "The new product is ___ to be launched next month.",
+            choices: ["due", "due to", "about", "supposed"],
+            correctIndex: 0,
+            translation: "「新製品は来月発売予定だ」",
+            explanation: """
+            ・be due to + 動詞原形 = 「〜する予定である」(スケジュール上の予定)
+            ・選択肢 b) due to を選ぶと "be due to to be" となり to が重複 → 誤り
+            ・be about to do は「まさに〜しようとしている」(直前の行動)で時間感覚が違う
+            ・be supposed to do も「〜するはず」だが、こちらはやや義務・期待感のニュアンス
+            """
+        ),
+        GrammarQuestion(
+            id: "q116",
+            question: "Not until I read the book ___ understand the author's perspective.",
+            choices: ["I did", "did I", "I had", "had I"],
+            correctIndex: 1,
+            translation: "「その本を読んで初めて、著者の視点を理解した」",
+            explanation: """
+            ・Not until + 節 + 倒置 = 「〜して初めて…した」
+            ・Not until が文頭の否定句 → 主節で倒置 → did I understand
+            ・一般動詞 understand なので do/does/did を使う
+            ・過去のことなので did → did I understand
+            ・これは Only when と同じパターンの倒置
+            """
+        ),
+        GrammarQuestion(
+            id: "q117",
+            question: "The students were asked to ___ their own opinions in the essay.",
+            choices: ["make", "express", "say", "tell"],
+            correctIndex: 1,
+            translation: "「生徒たちはエッセイで自分の意見を述べるよう求められた」",
+            explanation: """
+            ・express one's opinion = 「意見を述べる」の決まったコロケーション
+            ・make / say / tell + opinion とは普通言わない
+            ・似た表現: voice an opinion(意見を表明する), share an opinion(意見を共有する)
+            ・give an opinion も使えるが、ここでは選択肢にない
+            """
+        ),
+        GrammarQuestion(
+            id: "q118",
+            question: "___ his age, he is remarkably energetic.",
+            choices: ["Although", "For", "Despite of", "Even"],
+            correctIndex: 1,
+            translation: "「年齢の割には、彼は非常に元気だ」",
+            explanation: """
+            ・for + 名詞 = 「〜の割には」(基準・期待値との比較を表す前置詞)
+            ・For his age = 年齢を基準として考えると
+            ・He is tall for a Japanese man.(日本人の男性としては背が高い)
+            ・Despite of は誤り(of は不要)、Although は節を取るので名詞単独とは合わない
+            """
+        ),
+        GrammarQuestion(
+            id: "q119",
+            question: "The team worked ___ the night to finish the project.",
+            choices: ["through", "during", "by", "until"],
+            correctIndex: 0,
+            translation: "「チームはプロジェクトを終わらせるために夜通し働いた」",
+            explanation: """
+            ・through the night = 「夜通し、夜を通して」(始めから終わりまで)
+            ・through は「〜を貫いて、最初から最後まで」のイメージ
+            ・during the night は「夜の間に」(時間帯を示すだけ)で「ずっと」のニュアンスが薄い
+            ・by the night は意味不明、until the night は「夜まで」(夜以前)で意味が違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q120",
+            question: "The article suggests that the policy ___ reconsidered.",
+            choices: ["is", "was", "be", "being"],
+            correctIndex: 2,
+            translation: "「その記事はその方針が再考されるべきだと示唆している」",
+            explanation: """
+            ・suggest that + S + (should) + 動詞原形 = 仮定法現在
+            ・受動態でも同じルール → "(should) be reconsidered" の should を省略した形
+            ・主語が三人称単数でも、時制が過去でも、原形 be を使う
+            ・提案・要求の動詞 (suggest/recommend/insist/demand/propose) の that 節では基本ルール
+            ・※「(事実を)示唆する」意味なら通常時制(The data suggests that ... is wrong.)
+            """
         )
     ]
 }
