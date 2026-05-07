@@ -526,6 +526,275 @@ enum GrammarMCQSeed {
             ・文の「However や対比」のヒントがなくても、文脈で対立か一致かを読み取る
             ・odds は「対立、不一致」の意味で複数形で使う
             """
+        ),
+        GrammarQuestion(
+            id: "q41",
+            question: "___ harder, you would have caught the train.",
+            choices: ["If you ran", "Should you run", "Had you run", "Were you to run"],
+            correctIndex: 2,
+            translation: "「もっと早く走っていたら、電車に間に合っただろう」",
+            explanation: """
+            ・後半 "would have caught" → 過去の事実と反対を言う仮定法過去完了
+            ・通常は "If you had run" → if 省略の倒置で Had you run
+            ・a) If you ran は仮定法過去で、後半の時制と合わない
+            ・d) Were you to run は未来のことを仮定する形
+            """
+        ),
+        GrammarQuestion(
+            id: "q42",
+            question: "The decision rests ___ the board of directors.",
+            choices: ["on", "at", "with", "for"],
+            correctIndex: 2,
+            translation: "「その決定は取締役会次第である」",
+            explanation: """
+            ・rest with ~ = 「(決定・責任が)〜にある、〜次第である」の決まった型
+            ・「決定権は誰の手にあるか」を表す慣用表現
+            ・rest on は「〜に基づく、〜にかかっている(物理的・抽象的支え)」で別の意味
+            ・It rests with you to decide. のように責任の所在を示すときに使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q43",
+            question: "The new manager is keen ___ improving team morale.",
+            choices: ["to", "on", "for", "about"],
+            correctIndex: 1,
+            translation: "「新しいマネージャーはチームの士気向上に熱心だ」",
+            explanation: """
+            ・be keen on -ing = 「〜することに熱心である」
+            ・be keen + to不定詞 も使えるが「-ing」のときは必ず on
+            ・be interested in と同じ感覚で in の代わりに on を取る
+            ・be fond of -ing(好き)、be good at -ing(得意)など、形容詞ごとに前置詞が決まっている
+            """
+        ),
+        GrammarQuestion(
+            id: "q44",
+            question: "The teacher made the students ___ the essay again.",
+            choices: ["to write", "writing", "write", "written"],
+            correctIndex: 2,
+            translation: "「先生は生徒たちにエッセイをもう一度書かせた」",
+            explanation: """
+            ・make + 人 + 動詞原形 = 「(人に)〜させる」(使役動詞)
+            ・make/let/have の使役動詞は to を付けない動詞原形を取る
+            ・受動態にするときだけ to が復活する → "were made to write"
+            ・同じ「させる」でも force/get は to 不定詞を取る(force them to write)
+            """
+        ),
+        GrammarQuestion(
+            id: "q45",
+            question: "___ as he is, he never boasts about his achievements.",
+            choices: ["Successful", "Successful though", "Although successful", "Despite successful"],
+            correctIndex: 1,
+            translation: "「彼は成功しているが、自分の業績を自慢することはない」",
+            explanation: """
+            ・形容詞 + though + S + V = 「〜だけれども」の倒置構文(古風だがフォーマル)
+            ・通常の "Though he is successful" を "Successful though he is" と倒置
+            ・as でも同じ構文が可能 → "Successful as he is"
+            ・c) は語順が違う(Although + S + V が普通)
+            ・d) Despite は名詞が後ろに来る前置詞、形容詞単独は不可
+            """
+        ),
+        GrammarQuestion(
+            id: "q46",
+            question: "The new evidence brought ___ a major shift in public opinion.",
+            choices: ["up", "on", "about", "out"],
+            correctIndex: 2,
+            translation: "「新しい証拠が世論の大きな変化を引き起こした」",
+            explanation: """
+            ・bring about ~ = 「〜を引き起こす、もたらす」(変化・結果の発生)
+            ・bring up は「(子供を)育てる、(話題を)持ち出す」
+            ・bring on は「(病気・トラブルを)招く」(やや否定的)
+            ・bring out は「(性質を)引き出す、出版する」
+            ・同じ bring でも前置詞で意味が大きく変わる典型例
+            """
+        ),
+        GrammarQuestion(
+            id: "q47",
+            question: "The report needs ___ before the deadline.",
+            choices: ["finishing", "to finish", "to be finished", "being finished"],
+            correctIndex: 2,
+            translation: "「その報告書は締め切り前に完成させる必要がある」",
+            explanation: """
+            ・主語 the report は「完成させられる側」 → 受動の意味が必要
+            ・need + to be 過去分詞 = 「〜される必要がある」
+            ・実は a) finishing も正解とされる(need + -ing で受動の意味になる特殊用法)
+            ・ただし4択の中で文法的に明確に正しいのは c) to be finished
+            ・"The report needs finishing." も口語では使うが、書き言葉なら c が安全
+            """
+        ),
+        GrammarQuestion(
+            id: "q48",
+            question: "She is ___ than her sister.",
+            choices: ["more taller", "more tall", "taller", "tallest"],
+            correctIndex: 2,
+            translation: "「彼女は姉(妹)より背が高い」",
+            explanation: """
+            ・1音節の短い形容詞(tall, big, fast など)は -er を付けて比較級
+            ・2音節以上の長い形容詞(beautiful, important など)は more を前に置く
+            ・比較級に more と -er を両方付けるのは誤り(二重比較級)
+            ・than があるので比較級が必要 → 最上級の tallest は不可
+            """
+        ),
+        GrammarQuestion(
+            id: "q49",
+            question: "He ran fast ___ catch up with the others.",
+            choices: ["for", "so as to", "so that", "in order"],
+            correctIndex: 1,
+            translation: "「彼は他の人に追いつくために速く走った」",
+            explanation: """
+            ・so as to + 動詞原形 = 「〜するために」(目的)
+            ・in order to + 動詞原形 も同じ意味だが、in order だけでは不完全
+            ・so that は「主語+動詞」の節を取る → "so that he could catch up"
+            ・for + 動名詞(for catching up)も理論上可能だが、目的を表すなら so as to が標準
+            """
+        ),
+        GrammarQuestion(
+            id: "q50",
+            question: "The weather was ___ that we had to cancel the picnic.",
+            choices: ["so bad", "such bad", "too bad", "very bad"],
+            correctIndex: 0,
+            translation: "「天気がとても悪かったので、ピクニックを中止せざるを得なかった」",
+            explanation: """
+            ・so + 形容詞 + that + 結果 = 「あまりに〜なので…」
+            ・such を使うなら "such bad weather that..."(such + 形容詞 + 名詞 + that)
+            ・too bad だと「残念だ」の意味になる、または「〜すぎて…できない」の構文(too...to)
+            ・very bad は強調するだけで that 節と結びつかない
+            """
+        ),
+        GrammarQuestion(
+            id: "q51",
+            question: "The minister was accused ___ misusing public funds.",
+            choices: ["for", "with", "of", "about"],
+            correctIndex: 2,
+            translation: "「大臣は公金を不正に使用したとして非難された」",
+            explanation: """
+            ・be accused of -ing = 「〜したとして非難される/告発される」
+            ・罪・非難の内容を示すときは of
+            ・似た blame は "blame A for B"(A をBで責める)で前置詞が違う
+            ・be guilty of, be suspected of, be convicted of も同じく of を取る(罪の内容)
+            """
+        ),
+        GrammarQuestion(
+            id: "q52",
+            question: "___ surprised me most was his calm reaction.",
+            choices: ["That", "It", "What", "Which"],
+            correctIndex: 2,
+            translation: "「私を最も驚かせたのは、彼の冷静な反応だった」",
+            explanation: """
+            ・What = 「〜こと/もの」(先行詞を含む関係代名詞)
+            ・主語の位置で「〜こと」を表すには What を使う
+            ・That は接続詞では使えるが、ここでは主語にならない
+            ・It は形式主語で使えるが、後ろの構造が違う(It was his calm reaction that surprised me most.)
+            ・Which は先行詞が必要
+            """
+        ),
+        GrammarQuestion(
+            id: "q53",
+            question: "The boss had me ___ overtime last night.",
+            choices: ["to work", "worked", "work", "working"],
+            correctIndex: 2,
+            translation: "「上司は昨夜、私に残業させた」",
+            explanation: """
+            ・have + 人 + 動詞原形 = 「(人に)〜させる、〜してもらう」(使役動詞)
+            ・make/let/have は to なしの動詞原形を取る
+            ・have + 物 + 過去分詞 なら "have my hair cut"(髪を切ってもらう)で形が違う
+            ・working(現在分詞)を使うと「〜している状態にしておく」の意味で文意が変わる
+            """
+        ),
+        GrammarQuestion(
+            id: "q54",
+            question: "We had no choice ___ accept their offer.",
+            choices: ["but to", "but", "than", "than to"],
+            correctIndex: 0,
+            translation: "「私たちは彼らの申し出を受け入れる以外に選択肢がなかった」",
+            explanation: """
+            ・have no choice but to + 動詞原形 = 「〜する以外に選択肢がない」の決まった型
+            ・but は「〜以外」の意味で、後ろに to 不定詞を取るのが正解
+            ・"no choice but" だけで動詞原形を直接取らない
+            ・"no choice than" は誤り。比較の than ではない
+            """
+        ),
+        GrammarQuestion(
+            id: "q55",
+            question: "The book is well worth ___.",
+            choices: ["to read", "reading", "read", "being read"],
+            correctIndex: 1,
+            translation: "「その本は読む価値が十分にある」",
+            explanation: """
+            ・be worth + -ing = 「〜する価値がある」の決まった型
+            ・worth は形容詞だが、後ろは必ず動名詞(-ing)
+            ・主語が「読まれる側」だが、worth + -ing は能動の形のまま受動の意味を表す特殊な用法
+            ・"be worth being read" は使わない(冗長で誤り)
+            ・This place is worth visiting. なども同じパターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q56",
+            question: "___ leaving the office, he realized he had forgotten his keys.",
+            choices: ["On", "At", "In", "By"],
+            correctIndex: 0,
+            translation: "「オフィスを出るとき、彼は鍵を忘れたことに気づいた」",
+            explanation: """
+            ・On + -ing = 「〜するとすぐに、〜するときに」(同時または直後の動作)
+            ・= "When he was leaving the office..." と同じ意味
+            ・フォーマルな書き言葉でよく使われる構文
+            ・At/In/By + 動名詞ではこの意味にならない
+            ・Upon + -ing も同じ意味で使える(より固い表現)
+            """
+        ),
+        GrammarQuestion(
+            id: "q57",
+            question: "I'd rather you ___ tell anyone about this.",
+            choices: ["don't", "won't", "didn't", "wouldn't"],
+            correctIndex: 2,
+            translation: "「あなたにこのことを誰にも話してほしくない」",
+            explanation: """
+            ・would rather + 主語 + 過去形 = 「(主語に)〜してほしい/してほしくない」(仮定法)
+            ・現在の希望でも過去形を使うのが特徴(仮定法のルール)
+            ・"I'd rather + 動詞原形"(I'd rather not tell)は「自分が」したくない場合
+            ・主語が変わる(you)ときは過去形(didn't)を取る
+            ・I wish you didn't... と同じ感覚
+            """
+        ),
+        GrammarQuestion(
+            id: "q58",
+            question: "The teacher insisted that the student ___ the assignment immediately.",
+            choices: ["submits", "submit", "submitted", "would submit"],
+            correctIndex: 1,
+            translation: "「先生は生徒がすぐに課題を提出することを強く求めた」",
+            explanation: """
+            ・insist that + 主語 + 動詞原形 = 「〜するよう強く求める」(仮定法現在)
+            ・提案・要求・主張の動詞(insist/suggest/demand/recommend/propose)は that 節で動詞原形を取る
+            ・主語が三人称単数(the student)でも -s を付けない
+            ・イギリス英語では "should submit" の形も使う
+            ・※ insist が「主張する(事実)」の意味なら通常の時制でOK(He insisted that he was right.)
+            """
+        ),
+        GrammarQuestion(
+            id: "q59",
+            question: "___ is no point in arguing with him.",
+            choices: ["That", "It", "There", "This"],
+            correctIndex: 2,
+            translation: "「彼と議論しても意味がない」",
+            explanation: """
+            ・There is no point in -ing = 「〜しても意味がない」の決まった型
+            ・There is(was)で「〜が存在する/ない」を表す存在文
+            ・It is no point は誤り。It is no use -ing(〜しても無駄)とは混同しないこと
+            ・"There's no point in worrying."(心配しても仕方ない)など日常会話でも頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q60",
+            question: "The harder he tried, ___ he became.",
+            choices: ["the frustrated", "more frustrated", "the more frustrated", "the frustrating"],
+            correctIndex: 2,
+            translation: "「努力すればするほど、彼はますます苛立つようになった」",
+            explanation: """
+            ・The 比較級..., the 比較級... = 「〜すればするほど〜」の構文
+            ・後半も必ず "the + 比較級" の形にする → the more frustrated
+            ・frustrated(苛立った)は2音節以上なので more を付けて比較級
+            ・frustrating(イライラさせる)は感情を引き起こす側 → 主語(he)が「苛立つ側」なので frustrated が正しい
+            ・The more, the better.(多ければ多いほど良い)が最もシンプルな例
+            """
         )
     ]
 }
