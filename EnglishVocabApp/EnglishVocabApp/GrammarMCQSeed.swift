@@ -269,6 +269,263 @@ enum GrammarMCQSeed {
             ・「根拠の上に立って判断する」イメージで on
             ・in/by/for では使わない、丸ごと暗記する慣用句
             """
+        ),
+        GrammarQuestion(
+            id: "q22",
+            question: "The minister ___ to comment on the ongoing investigation.",
+            choices: ["refused", "refrained", "declined", "denied"],
+            correctIndex: 2,
+            translation: "「大臣は進行中の捜査についてコメントを控えた」",
+            explanation: """
+            ・decline to do = 「丁重に断る、(コメントを)控える」
+            ・refuse は「強く拒否する」で攻撃的なニュアンス → 政治家が公式の場で使うと角が立つ
+            ・refrain from -ing は形が違う(to 不定詞は取らない)
+            ・deny は「否定する」で「コメントを否定する」では意味が通らない
+            """
+        ),
+        GrammarQuestion(
+            id: "q23",
+            question: "___ the harsh weather conditions, the climbers reached the summit.",
+            choices: ["Although", "Because of", "In spite of", "Owing to"],
+            correctIndex: 2,
+            translation: "「厳しい天候にもかかわらず、登山者たちは頂上に到達した」",
+            explanation: """
+            ・In spite of + 名詞 = 「〜にもかかわらず」(despite と同義)
+            ・Although は接続詞で、後ろは「主語+動詞」の節 → ここは名詞句なので不可
+            ・Because of / Owing to は「〜のために(原因)」で逆の意味
+            ・名詞句が続くか節が続くかで使い分ける
+            """
+        ),
+        GrammarQuestion(
+            id: "q24",
+            question: "Little ___ that his decision would change the course of history.",
+            choices: ["he knew", "did he know", "he did know", "knew he"],
+            correctIndex: 1,
+            translation: "「自分の決断が歴史の流れを変えるとは、彼はほとんど知らなかった」",
+            explanation: """
+            ・Little が文頭に来ると否定的な意味なので倒置(疑問文の語順)
+            ・一般動詞 know なので do/does/did を借りてくる必要がある
+            ・過去のことなので did → did he know
+            ・Little did I know that... は物語の冒頭で「まさかとは思わなかった」とよく使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q25",
+            question: "The court ruled that the company was ___ for the damages.",
+            choices: ["liable", "reliable", "likable", "viable"],
+            correctIndex: 0,
+            translation: "「裁判所はその会社が損害について責任を負うと判決した」",
+            explanation: """
+            ・liable for ~ = 「〜について法的責任がある」(法律用語)
+            ・reliable = 信頼できる(全く別の意味)
+            ・likable = 好感の持てる
+            ・viable = 実現可能な
+            ・似たスペルだが意味は完全に別物。法律の文脈なら liable
+            """
+        ),
+        GrammarQuestion(
+            id: "q26",
+            question: "The new evidence ___ the defendant's claim of innocence.",
+            choices: ["supports", "substantiates", "sustains", "suspends"],
+            correctIndex: 1,
+            translation: "「新しい証拠は被告の無罪主張を裏付ける」",
+            explanation: """
+            ・substantiate = (証拠で)裏付ける、立証する(法律・学術で頻出)
+            ・support は「支持する」で意味は近いが弱い。証拠が「立証」するなら substantiate
+            ・sustain = 支え続ける、被る(損害を)
+            ・suspend = 一時停止する
+            ・「証拠が主張を裏付ける」の決まった言い回し
+            """
+        ),
+        GrammarQuestion(
+            id: "q27",
+            question: "The researcher's findings ___ light on a previously misunderstood phenomenon.",
+            choices: ["cast", "put", "shed", "gave"],
+            correctIndex: 2,
+            translation: "「研究者の発見は、以前は誤解されていた現象に光を当てた」",
+            explanation: """
+            ・shed light on ~ = 「〜を解明する、明らかにする」の決まった型
+            ・shed は「(光や涙を)流す、注ぐ」の意味、過去形も shed(変化なし)
+            ・cast/put/give light という言い方はない
+            ・「光を当てる」=「明らかにする」の比喩。研究や調査の文脈で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q28",
+            question: "The two theories are not mutually ___; both can be true simultaneously.",
+            choices: ["excluding", "exclusive", "excluded", "exclusion"],
+            correctIndex: 1,
+            translation: "「2つの理論は相互排他的ではなく、両方が同時に真でありうる」",
+            explanation: """
+            ・mutually exclusive = 「相互排他的な」(片方が真ならもう片方は偽)の決まった型
+            ・数学・論理学・統計でよく使う専門用語
+            ・excluding = 〜を除いて(前置詞)
+            ・excluded = 除外された(過去分詞)
+            ・exclusion = 名詞「除外」
+            ・mutually(副詞) + 形容詞 の形なので b
+            """
+        ),
+        GrammarQuestion(
+            id: "q29",
+            question: "The CEO emphasized the need to ___ a culture of innovation.",
+            choices: ["foster", "foster up", "raise", "breed"],
+            correctIndex: 0,
+            translation: "「CEOはイノベーション文化を育む必要性を強調した」",
+            explanation: """
+            ・foster = (考え・関係・文化などを)育む、促進する
+            ・foster は単独で他動詞、up は不要
+            ・raise は「子供を育てる」「資金を集める」で文化には使わない
+            ・breed は「動物を繁殖させる」で人間社会の文化には不自然
+            ・foster a culture / foster relationships は定番のコロケーション
+            """
+        ),
+        GrammarQuestion(
+            id: "q30",
+            question: "___ in the 19th century, this technique is still used today.",
+            choices: ["Developing", "Developed", "Having developed", "Develop"],
+            correctIndex: 1,
+            translation: "「19世紀に開発されたこの技術は、今日でも使われている」",
+            explanation: """
+            ・主語 this technique は「開発される側」 → 受動の意味なので 過去分詞 Developed
+            ・Developing(現在分詞)だと「開発している」になり、技術が自分で開発する意味で不自然
+            ・Having developed は完了の能動 → これも「自分で開発した」意味
+            ・分詞構文では、主語との関係(する側か、される側か)で現在分詞か過去分詞かを決める
+            """
+        ),
+        GrammarQuestion(
+            id: "q31",
+            question: "The economy is showing signs of ___ after years of recession.",
+            choices: ["recovery", "recover", "recovering", "recovered"],
+            correctIndex: 0,
+            translation: "「経済は長年の不況の後、回復の兆しを見せている」",
+            explanation: """
+            ・前置詞 of の後ろは名詞または動名詞 → recover(動詞原形)は不可
+            ・signs of + 名詞 のコロケーション → recovery(名詞)が自然
+            ・signs of recovering(動名詞)も文法的にはOKだが、決まった言い回しでは recovery
+            ・「兆候」を表すときは sign of + 名詞形を覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q32",
+            question: "The proposal was ___ rejected by the board members.",
+            choices: ["unanimous", "unanimously", "unanimity", "unanimousness"],
+            correctIndex: 1,
+            translation: "「その提案は理事会メンバーによって満場一致で却下された」",
+            explanation: """
+            ・動詞 rejected(過去分詞) を修飾するので副詞 → unanimously
+            ・unanimous = 形容詞「満場一致の」
+            ・unanimity = 名詞「満場一致」
+            ・d) unanimousness はそもそも単語として一般的でない
+            ・動詞を修飾する → 副詞(-ly) というルールの基本問題
+            """
+        ),
+        GrammarQuestion(
+            id: "q33",
+            question: "The findings have far-reaching ___ for public policy.",
+            choices: ["effects", "affects", "implications", "influences"],
+            correctIndex: 2,
+            translation: "「その発見は公共政策に対して広範な意味合いを持つ」",
+            explanation: """
+            ・implications = (将来的な)影響、含意、意味合い(まだ起きていない、潜在的な影響)
+            ・effects は「実際に起きた結果」で、未来の話には少しずれる
+            ・affects は動詞(影響を与える)で名詞ではない → 文法的に不可
+            ・influences は「(人や物の)影響力」でやや弱い
+            ・far-reaching implications は学術論文で頻出のコロケーション
+            """
+        ),
+        GrammarQuestion(
+            id: "q34",
+            question: "Scarcely ___ the door when the phone started ringing.",
+            choices: ["I had closed", "had I closed", "I closed", "did I close"],
+            correctIndex: 1,
+            translation: "「ドアを閉めるやいなや電話が鳴り始めた」",
+            explanation: """
+            ・Scarcely...when... = 「〜するやいなや」(Hardly...when... と同じ)
+            ・Scarcely が文頭にある否定語なので倒置 → 助動詞 had が前に出る
+            ・「閉めた」のは「鳴り始めた」より前 → 過去完了 had + 過去分詞
+            ・closed → had I closed の語順になる
+            """
+        ),
+        GrammarQuestion(
+            id: "q35",
+            question: "The committee ___ the proposal at length before reaching a decision.",
+            choices: ["discussed about", "discussed", "discussed on", "discussed over"],
+            correctIndex: 1,
+            translation: "「委員会は決定に至る前に提案を長時間議論した」",
+            explanation: """
+            ・discuss は他動詞 → 直接目的語を取る、前置詞は不要
+            ・日本語の「〜について議論する」につられて about を付けるのは典型的なミス
+            ・"talk about ~" は◯ だが "discuss about ~" は ✗
+            ・mention/marry/enter/reach なども同様に前置詞を付けない他動詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q36",
+            question: "Under no circumstances ___ enter the restricted area.",
+            choices: ["you should", "should you", "you must", "you can"],
+            correctIndex: 1,
+            translation: "「いかなる状況でも、その制限区域に立ち入ってはならない」",
+            explanation: """
+            ・Under no circumstances が文頭に来ると否定語句なので倒置
+            ・助動詞(should/must/will/can)が主語の前に出る → should you
+            ・a) c) d) は語順が普通のままで倒置していない → 文法的に誤り
+            ・警告・注意書きでよく見る構文。「決して〜してはいけない」を強調
+            """
+        ),
+        GrammarQuestion(
+            id: "q37",
+            question: "The decline in sales can be ___ to the recent economic downturn.",
+            choices: ["attributed", "contributed", "distributed", "substituted"],
+            correctIndex: 0,
+            translation: "「売上の減少は最近の景気後退に起因すると考えられる」",
+            explanation: """
+            ・be attributed to ~ = 「〜のせいだとされる、〜に起因する」(原因を示す決まった型)
+            ・contributed to は「〜に貢献する」で正反対の意味
+            ・distributed は「配布される」
+            ・substituted は「置き換えられる」
+            ・似た -bute 系の単語だが意味は全く違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q38",
+            question: "The professor advised us to ___ from making hasty conclusions.",
+            choices: ["avoid", "prevent", "refrain", "decline"],
+            correctIndex: 2,
+            translation: "「教授は早急な結論を出すのを控えるよう私たちに助言した」",
+            explanation: """
+            ・refrain from -ing = 「〜することを控える」の決まった型
+            ・avoid は前置詞 from を取らない → "avoid making" なら正しい
+            ・prevent は「prevent A from -ing」(AがBするのを防ぐ)で構文が違う
+            ・decline は to 不定詞を取る(decline to do)
+            ・各動詞で取る前置詞・形が決まっているので注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q39",
+            question: "The new policy will have a ___ impact on small businesses.",
+            choices: ["profound", "profuse", "prosperous", "prolonged"],
+            correctIndex: 0,
+            translation: "「新しい方針は中小企業に深刻な影響を与えるだろう」",
+            explanation: """
+            ・profound impact = 「深刻な/重大な影響」の定番コロケーション
+            ・profuse = 大量の(汗・お礼など)
+            ・prosperous = 繁栄している(国・ビジネス)
+            ・prolonged = 長引いた(期間)
+            ・似た pro- で始まるが、impact と組み合わさるのは profound のみ
+            """
+        ),
+        GrammarQuestion(
+            id: "q40",
+            question: "The conclusions of the report were ___ with the government's official stance.",
+            choices: ["consistent", "at odds", "compatible", "in line"],
+            correctIndex: 1,
+            translation: "「報告書の結論は政府の公式見解と食い違っていた」",
+            explanation: """
+            ・at odds with ~ = 「〜と対立して、食い違って」の決まった型
+            ・consistent with / compatible with / in line with はすべて「〜と一致している」で逆の意味
+            ・文の「However や対比」のヒントがなくても、文脈で対立か一致かを読み取る
+            ・odds は「対立、不一致」の意味で複数形で使う
+            """
         )
     ]
 }
