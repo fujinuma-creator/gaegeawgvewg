@@ -200,6 +200,45 @@ struct ExampleStudyLog: Codable, Hashable {
     var attempts: [CompositionAttempt] = []
 }
 
+// MARK: - Grammar lesson models
+
+/// One Japanese-to-English translation problem aligned with a grammar
+/// topic. `modelEnglish` is the reference answer used when grading the
+/// user's own attempt.
+struct GrammarTranslationProblem: Codable, Hashable, Identifiable {
+    var id: UUID = UUID()
+    var japanese: String
+    var modelEnglish: String
+    var hint: String? = nil
+}
+
+/// One option inside a `GrammarMultipleChoiceProblem`.
+struct GrammarMCQOption: Codable, Hashable, Identifiable {
+    var id: UUID = UUID()
+    var text: String
+}
+
+/// One multiple-choice grammar question. `correctOptionId` matches one of
+/// the option ids in `options`. `explanation` is a Japanese write-up of
+/// why the answer is correct (and the others wrong).
+struct GrammarMultipleChoiceProblem: Codable, Hashable, Identifiable {
+    var id: UUID = UUID()
+    var question: String
+    var options: [GrammarMCQOption]
+    var correctOptionId: UUID
+    var explanation: String
+}
+
+/// Per-topic mutable state persisted to disk: the latest generated
+/// translation/MCQ problems plus the user's composition history for
+/// translation tasks on this topic.
+struct GrammarTopicState: Codable, Hashable {
+    var translation: GrammarTranslationProblem? = nil
+    var translationAttempts: [CompositionAttempt] = []
+    var mcq: GrammarMultipleChoiceProblem? = nil
+    var mcqLastSelectedOptionId: UUID? = nil
+}
+
 /// Returns the number of days until the next review based on completed review count.
 /// User-specified Ebbinghaus curve:
 /// - 1st review done → 1 day later

@@ -156,6 +156,133 @@ enum GeminiService {
         return try await runPlainText(prompt: prompt, temperature: 0.3)
     }
 
+    /// Generates a Japanese-to-English translation problem that practices a
+    /// specific grammar topic. Returns (japanese, modelEnglish, hint).
+    static func generateGrammarTranslationProblem(
+        topicTitle: String,
+        topicSummary: String,
+        explanation: String
+    ) async throws -> GrammarTranslationProblem {
+        let prompt = """
+        英文法の指導者として、トピック「\(topicTitle) (\(topicSummary))」の理解度を測る、日本語→英語の和文英訳問題を1問作成してください。
+
+        要件:
+        - その文法ポイントを必ず使わないと正しく訳せない問題にする
+        - 大学受験〜TOEIC600〜800レベルの難易度
+        - 日本語は1〜2文、自然な日本語
+        - 英訳のお手本 (modelEnglish) は文法的に正しく、自然な英語1〜2文
+        - hint には、訳す際に注目すべき文法ポイントを日本語で1〜2文で記述
+
+        対象トピックの解説:
+        \(explanation)
+
+        出力フォーマット (JSON のみ・余計な装飾なし):
+        {
+          "japanese": "...",
+          "english": "...",
+          "hint": "..."
+        }
+        """
+        let schema: [String: Any] = [
+            "type": "OBJECT",
+            "properties": [
+                "japanese": ["type": "STRING"],
+                "english": ["type": "STRING"],
+                "hint": ["type": "STRING"]
+            ],
+            "required": ["japanese", "english", "hint"]
+        ]
+        let textData = try await runGenerateContent(
+            prompt: prompt,
+            schema: schema,
+            temperature: 0.7
+        )
+        struct Raw: Decodable { let japanese: String; let english: String; let hint: String }
+        do {
+            let r = try JSONDecoder().decode(Raw.self, from: textData)
+            return GrammarTranslationProblem(
+                japanese: r.japanese,
+                modelEnglish: r.english,
+                hint: r.hint
+            )
+        } catch {
+            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
+        }
+    }
+
+    /// Generates a 4-option multiple-choice grammar question with a
+    /// detailed Japanese explanation. Difficulty is intentionally pushed
+    /// to the upper end (TOEIC 700+ / 大学受験上位).
+    static func generateGrammarMCQ(
+        topicTitle: String,
+        topicSummary: String,
+        explanation: String
+    ) async throws -> GrammarMultipleChoiceProblem {
+        let prompt = """
+        英文法の指導者として、トピック「\(topicTitle) (\(topicSummary))」を問う4択問題を1問作成してください。
+
+        要件:
+        - 難易度は大学入試上位〜TOEIC 700+ 相当 (引っかけ要素あり)
+        - 文中に空所 ( ___ ) を1か所だけ作る
+        - 4つの選択肢を用意し、文法的に紛らわしい誤答を3つ含める
+        - correctIndex (0始まり) で正解を示す
+        - explanation には、なぜ正解が正しく、なぜ各誤答が誤りなのかを日本語で詳しく解説 (5〜8文または箇条書き「・」)
+
+        対象トピックの解説:
+        \(explanation)
+
+        出力フォーマット (JSON のみ・余計な装飾なし):
+        {
+          "question": "He ___ the report by tomorrow.",
+          "choices": ["finishes", "finished", "will have finished", "would finish"],
+          "correctIndex": 2,
+          "explanation": "..."
+        }
+        """
+        let schema: [String: Any] = [
+            "type": "OBJECT",
+            "properties": [
+                "question": ["type": "STRING"],
+                "choices": [
+                    "type": "ARRAY",
+                    "items": ["type": "STRING"]
+                ],
+                "correctIndex": ["type": "INTEGER"],
+                "explanation": ["type": "STRING"]
+            ],
+            "required": ["question", "choices", "correctIndex", "explanation"]
+        ]
+        let textData = try await runGenerateContent(
+            prompt: prompt,
+            schema: schema,
+            temperature: 0.7
+        )
+        struct Raw: Decodable {
+            let question: String
+            let choices: [String]
+            let correctIndex: Int
+            let explanation: String
+        }
+        do {
+            let r = try JSONDecoder().decode(Raw.self, from: textData)
+            guard r.choices.count >= 2,
+                  r.correctIndex >= 0,
+                  r.correctIndex < r.choices.count else {
+                throw GeminiServiceError.decoding("invalid MCQ shape")
+            }
+            let options = r.choices.map { GrammarMCQOption(text: $0) }
+            let correctId = options[r.correctIndex].id
+            return GrammarMultipleChoiceProblem(
+                question: r.question,
+                options: options,
+                correctOptionId: correctId,
+                explanation: r.explanation
+            )
+        } catch {
+            throw GeminiServiceError.decoding(String(data: textData, encoding: .utf8) ?? "")
+        }
+    }
+
     /// Plain-text Gemini call (no JSON schema). Returns the body text from
     /// candidates[0].content.parts[0].text directly.
     private static func runPlainText(
