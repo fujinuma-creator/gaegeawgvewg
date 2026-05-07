@@ -12,6 +12,10 @@ final class WordStore: ObservableObject {
     /// hasn't replaced the example yet.
     @Published private(set) var studyLogs: [String: ExampleStudyLog] = [:]
 
+    /// User's selected choice (0-based index) for each grammar MCQ.
+    /// Keyed by `GrammarQuestion.id`. nil entry means unanswered.
+    @Published private(set) var grammarAnswers: [String: Int] = [:]
+
     private let fileURL: URL = {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return docs.appendingPathComponent("words.json")
@@ -22,9 +26,15 @@ final class WordStore: ObservableObject {
         return docs.appendingPathComponent("study_logs.json")
     }()
 
+    private let grammarAnswersURL: URL = {
+        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return docs.appendingPathComponent("grammar_answers.json")
+    }()
+
     init() {
         load()
         loadStudyLogs()
+        loadGrammarAnswers()
         // Drop any words that were retired from the seed list (e.g. the
         // Singlish set the user asked to remove). Runs every launch so
         // newly-retired words are scrubbed without manual user action.
@@ -162,6 +172,44 @@ final class WordStore: ObservableObject {
         log.attempts.removeAll { $0.id == id }
         studyLogs[key] = log
         saveStudyLogs()
+    }
+
+    // MARK: - Grammar MCQ answers
+
+    private func loadGrammarAnswers() {
+        guard FileManager.default.fileExists(atPath: grammarAnswersURL.path) else { return }
+        do {
+            let data = try Data(contentsOf: grammarAnswersURL)
+            grammarAnswers = try JSONDecoder().decode([String: Int].self, from: data)
+        } catch {
+            print("Failed to load grammar answers: \(error)")
+        }
+    }
+
+    private func saveGrammarAnswers() {
+        do {
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            let data = try encoder.encode(grammarAnswers)
+            try data.write(to: grammarAnswersURL, options: .atomic)
+        } catch {
+            print("Failed to save grammar answers: \(error)")
+        }
+    }
+
+    func recordGrammarAnswer(questionId: String, selectedIndex: Int) {
+        grammarAnswers[questionId] = selectedIndex
+        saveGrammarAnswers()
+    }
+
+    func resetGrammarAnswer(questionId: String) {
+        grammarAnswers.removeValue(forKey: questionId)
+        saveGrammarAnswers()
+    }
+
+    func resetAllGrammarAnswers() {
+        grammarAnswers.removeAll()
+        saveGrammarAnswers()
     }
 
     // MARK: - CRUD

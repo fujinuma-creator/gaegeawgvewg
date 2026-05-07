@@ -16,6 +16,7 @@ struct WordListView: View {
     enum Section: String, CaseIterable, Identifiable {
         case list = "一覧"
         case card = "カード"
+        case grammar = "文法"
         case shadowing = "シャドウイング"
         var id: String { rawValue }
     }
@@ -31,6 +32,8 @@ struct WordListView: View {
                 WordListContent(filter: .all, resetTrigger: activeTab)
             case .card:
                 ReviewView(activeTab: $activeTab)
+            case .grammar:
+                GrammarView()
             case .shadowing:
                 ShadowingListView()
             }

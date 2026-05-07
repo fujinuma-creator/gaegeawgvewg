@@ -200,6 +200,19 @@ struct ExampleStudyLog: Codable, Hashable {
     var attempts: [CompositionAttempt] = []
 }
 
+/// One curated 4-choice grammar question. Bundled with the app and
+/// extended over time. `correctIndex` is 0-based; `translation` is a
+/// short Japanese rendering of the sentence; `explanation` is the
+/// bullet-style Japanese commentary shown after the user answers.
+struct GrammarQuestion: Identifiable, Hashable, Codable {
+    var id: String
+    var question: String
+    var choices: [String]
+    var correctIndex: Int
+    var translation: String
+    var explanation: String
+}
+
 /// Returns the number of days until the next review based on completed review count.
 /// User-specified Ebbinghaus curve:
 /// - 1st review done → 1 day later
