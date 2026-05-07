@@ -1,21 +1,17 @@
 import SwiftUI
 
+/// Filter applied by `WordListContent`. `.all` shows every word with the
+/// daily-shuffled ordering; `.reviewList` shows only pinned words sorted
+/// by most-recently pinned.
+enum WordListFilter: String, Identifiable {
+    case all
+    case reviewList
+    var id: String { rawValue }
+}
+
 struct WordListView: View {
     @EnvironmentObject var store: WordStore
     @Binding var activeTab: ContentView.Tab
-
-    enum ListFilter: String, CaseIterable, Identifiable {
-        case all = "すべて"
-        case reviewList = "復習リスト"
-        var id: String { rawValue }
-
-        var symbol: String {
-            switch self {
-            case .all: return ""
-            case .reviewList: return "★"
-            }
-        }
-    }
 
     enum Section: String, CaseIterable, Identifiable {
         case list = "一覧"
@@ -25,66 +21,14 @@ struct WordListView: View {
     }
 
     @State private var section: Section = .list
-    @State private var searchText = ""
-    @State private var filter: ListFilter = .all
-    @State private var expandedIds: Set<UUID> = []
     @State private var showAddSheet = false
-    @State private var regeneratingExamplesForId: UUID? = nil
-    @State private var regenerateError: String? = nil
-    @State private var showRegenerateError: Bool = false
-
-    var filteredWords: [Word] {
-        let byStatus: [Word]
-        switch filter {
-        case .all:        byStatus = store.words
-        case .reviewList: byStatus = store.reviewListWords
-        }
-        let filtered: [Word]
-        if searchText.isEmpty {
-            filtered = byStatus
-        } else {
-            filtered = byStatus.filter {
-                $0.word.localizedCaseInsensitiveContains(searchText)
-                || $0.definitionJapanese.localizedCaseInsensitiveContains(searchText)
-                || $0.definitionEnglish.localizedCaseInsensitiveContains(searchText)
-            }
-        }
-        switch filter {
-        case .all:
-            // Layered ordering for the "すべて" tab:
-            //   1) Newest first: words added today (jumped to the top so the
-            //      user sees freshly-added vocabulary).
-            //   2) Active words: not added today, not yet 復習完了 — shown
-            //      in the daily-rotating random order.
-            //   3) Completed words (reviewCount >= 4 = 復習完了 / もう
-            //      復習リストから外れていく単語): pushed to the bottom,
-            //      sorted alphabetically for stability.
-            let today = Calendar.current.startOfDay(for: Date())
-            let newToday = filtered
-                .filter { $0.createdAt >= today }
-                .sorted { $0.createdAt > $1.createdAt }
-            let older = filtered.filter { $0.createdAt < today }
-            let active = older
-                .filter { $0.reviewCount < 4 }
-                .dailyShuffled()
-            let completed = older
-                .filter { $0.reviewCount >= 4 }
-                .sorted { $0.word.lowercased() < $1.word.lowercased() }
-            return newToday + active + completed
-        case .reviewList:
-            // Most-recently pinned first.
-            return filtered.sorted {
-                ($0.addedToReviewListAt ?? .distantPast) > ($1.addedToReviewListAt ?? .distantPast)
-            }
-        }
-    }
 
     var body: some View {
         VStack(spacing: 0) {
             sectionPicker
             switch section {
             case .list:
-                listSection
+                WordListContent(filter: .all, resetTrigger: activeTab)
             case .card:
                 ReviewView(activeTab: $activeTab)
             case .shadowing:
@@ -115,25 +59,10 @@ struct WordListView: View {
         }
         .onChange(of: activeTab) { _, newValue in
             if newValue != .list {
-                // Leaving the list tab — collapse every expanded card
-                // and dismiss the add-word sheet so coming back is clean.
-                expandedIds.removeAll()
                 showAddSheet = false
             }
         }
-        .alert("例文の生成に失敗しました", isPresented: $showRegenerateError, presenting: regenerateError) { _ in
-            Button("OK", role: .cancel) {}
-        } message: { msg in
-            Text(msg)
-        }
-        .onChange(of: filter) { _, _ in
-            // Switching filter (e.g. すべて → 復習リスト) collapses any
-            // currently-open cards so the new filtered list starts fresh.
-            expandedIds.removeAll()
-        }
     }
-
-    // MARK: - Section picker + list body
 
     private var sectionPicker: some View {
         Picker("表示", selection: $section) {
@@ -145,12 +74,62 @@ struct WordListView: View {
         .padding(.horizontal, 16)
         .padding(.top, 8)
     }
+}
 
-    private var listSection: some View {
+/// Renders the filtered word list (search, stats header, expandable cards).
+/// Re-used by the main 一覧 tab and the home-screen tap-through sheets.
+struct WordListContent<Trigger: Equatable>: View {
+    @EnvironmentObject var store: WordStore
+    let filter: WordListFilter
+    /// External value whose change should collapse expanded cards (e.g. the
+    /// active tab). Pass `0` if not needed.
+    let resetTrigger: Trigger
+
+    @State private var searchText = ""
+    @State private var expandedIds: Set<UUID> = []
+    @State private var regeneratingExamplesForId: UUID? = nil
+    @State private var regenerateError: String? = nil
+    @State private var showRegenerateError: Bool = false
+
+    private var filteredWords: [Word] {
+        let baseList: [Word] = (filter == .all) ? store.words : store.reviewListWords
+        let filtered: [Word]
+        if searchText.isEmpty {
+            filtered = baseList
+        } else {
+            filtered = baseList.filter {
+                $0.word.localizedCaseInsensitiveContains(searchText)
+                || $0.definitionJapanese.localizedCaseInsensitiveContains(searchText)
+                || $0.definitionEnglish.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+        switch filter {
+        case .all:
+            // Layered ordering: newest-today first, then daily-shuffled
+            // active words, then 復習完了 words pushed to the bottom.
+            let today = Calendar.current.startOfDay(for: Date())
+            let newToday = filtered
+                .filter { $0.createdAt >= today }
+                .sorted { $0.createdAt > $1.createdAt }
+            let older = filtered.filter { $0.createdAt < today }
+            let active = older
+                .filter { $0.reviewCount < 4 }
+                .dailyShuffled()
+            let completed = older
+                .filter { $0.reviewCount >= 4 }
+                .sorted { $0.word.lowercased() < $1.word.lowercased() }
+            return newToday + active + completed
+        case .reviewList:
+            return filtered.sorted {
+                ($0.addedToReviewListAt ?? .distantPast) > ($1.addedToReviewListAt ?? .distantPast)
+            }
+        }
+    }
+
+    var body: some View {
         VStack(spacing: 0) {
             statsHeader
             searchBox
-            filterPills
             countLabel
             ScrollView {
                 LazyVStack(spacing: 10) {
@@ -162,14 +141,21 @@ struct WordListView: View {
                 .padding(.vertical, 8)
             }
         }
+        .alert("例文の生成に失敗しました", isPresented: $showRegenerateError, presenting: regenerateError) { _ in
+            Button("OK", role: .cancel) {}
+        } message: { msg in
+            Text(msg)
+        }
+        .onChange(of: resetTrigger) { _, _ in
+            expandedIds.removeAll()
+        }
     }
-
-    // MARK: - Stats header
 
     private var statsHeader: some View {
         VStack(spacing: 6) {
             HStack {
-                Text("英単語の復習").font(.title3.bold())
+                Text(filter == .all ? "英単語の復習" : "復習リスト")
+                    .font(.title3.bold())
                 Spacer()
             }
             HStack(spacing: 6) {
@@ -191,8 +177,6 @@ struct WordListView: View {
         .padding(.top, 8)
     }
 
-    // MARK: - Search
-
     private var searchBox: some View {
         HStack {
             Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
@@ -208,36 +192,6 @@ struct WordListView: View {
         .padding(.top, 12)
     }
 
-    // MARK: - Filter pills
-
-    private var filterPills: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                ForEach(ListFilter.allCases) { f in
-                    Button {
-                        filter = f
-                    } label: {
-                        let isSelected = filter == f
-                        HStack(spacing: 4) {
-                            if !f.symbol.isEmpty {
-                                Text(f.symbol)
-                            }
-                            Text(f.rawValue)
-                        }
-                        .font(.subheadline.weight(isSelected ? .semibold : .regular))
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 8)
-                        .background(isSelected ? Color.black : Color.white.opacity(0.82))
-                        .foregroundStyle(isSelected ? .white : .primary)
-                        .clipShape(Capsule())
-                    }
-                }
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 10)
-        }
-    }
-
     private var countLabel: some View {
         HStack {
             Text("\(filteredWords.count) 件")
@@ -247,16 +201,14 @@ struct WordListView: View {
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 4)
+        .padding(.top, 6)
     }
-
-    // MARK: - List card
 
     @ViewBuilder
     private func listCard(for w: Word) -> some View {
         let isExpanded = expandedIds.contains(w.id)
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .top, spacing: 8) {
-                // Review-list checkbox
                 Button {
                     store.toggleReviewList(for: w)
                 } label: {
@@ -433,6 +385,28 @@ struct WordListView: View {
         let remaining = (7 * 24 * 60 * 60) - elapsed
         let daysLeft = max(0, Int(ceil(remaining / (24 * 60 * 60))))
         return "あと\(daysLeft)日"
+    }
+}
+
+/// Modal sheet wrapping `WordListContent` for tap-through from the home
+/// screen tiles (全単語数 / 復習リスト).
+struct WordListSheet: View {
+    @EnvironmentObject var store: WordStore
+    @Environment(\.dismiss) private var dismiss
+    let filter: WordListFilter
+
+    var body: some View {
+        NavigationStack {
+            WordListContent(filter: filter, resetTrigger: 0)
+                .background(GeometricBackground().ignoresSafeArea())
+                .navigationTitle(filter == .all ? "全単語" : "復習リスト")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("閉じる") { dismiss() }
+                    }
+                }
+        }
     }
 }
 
