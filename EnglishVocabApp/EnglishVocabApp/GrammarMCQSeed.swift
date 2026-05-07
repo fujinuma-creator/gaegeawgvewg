@@ -1055,6 +1055,254 @@ enum GrammarMCQSeed {
             ・-ing 形を使うと「進行中の一部を見た」というニュアンスに変わる(see him jumping = 飛んでいる途中を見た)
             ・"and disappear" と動詞原形が並列されているので、jump も同じ形が自然
             """
+        ),
+        GrammarQuestion(
+            id: "q82",
+            question: "The data must be interpreted ___ caution.",
+            choices: ["in", "by", "with", "on"],
+            correctIndex: 2,
+            translation: "「そのデータは慎重に解釈されなければならない」",
+            explanation: """
+            ・with caution / with care / with confidence = 「〜を持って、〜に」(様態を表す with)
+            ・「慎重さを伴って」というイメージ
+            ・handle with care(取り扱い注意)も同じパターン
+            ・in/by/on ではこの意味にならない
+            """
+        ),
+        GrammarQuestion(
+            id: "q83",
+            question: "The new policy aims ___ reducing inequality.",
+            choices: ["to", "at", "for", "on"],
+            correctIndex: 1,
+            translation: "「新しい方針は不平等の削減を目指している」",
+            explanation: """
+            ・aim at + 動名詞 = 「〜することを目指す」
+            ・aim + to不定詞 (aim to reduce) も正しいが、-ing が来るときは at
+            ・"be aimed at -ing" の受動形でも at を使う
+            ・矢を「的に向ける(at)」イメージで覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q84",
+            question: "He spoke so quietly that I could ___ hear him.",
+            choices: ["almost", "hardly", "nearly", "mostly"],
+            correctIndex: 1,
+            translation: "「彼があまりに静かに話したので、ほとんど聞き取れなかった」",
+            explanation: """
+            ・hardly = 「ほとんど〜ない」(否定の意味を含む副詞)
+            ・"I could hardly hear" = 聞き取れない状態に近い
+            ・almost/nearly は「もう少しで〜する」(肯定的)で意味が逆
+            ・hardly の文には not を付けない(二重否定になる)
+            """
+        ),
+        GrammarQuestion(
+            id: "q85",
+            question: "The teacher explained the rule ___ that everyone could understand.",
+            choices: ["so", "such", "in such a way", "in a such way"],
+            correctIndex: 2,
+            translation: "「先生は誰もが理解できるような形でそのルールを説明した」",
+            explanation: """
+            ・in such a way that ~ = 「〜するような方法で」の決まった型
+            ・語順は in + such + a + 形容詞(なし) + way + that
+            ・d) in a such way は語順が誤り(such が a の後ろには来ない)
+            ・so + 形容詞 + that の構文とは別物。手段・方法を表すときに使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q86",
+            question: "The proposal was rejected, ___ was disappointing for the team.",
+            choices: ["that", "what", "it", "which"],
+            correctIndex: 3,
+            translation: "「提案は却下され、それはチームにとって残念なことだった」",
+            explanation: """
+            ・非制限用法の関係代名詞 which = 前の文全体を受ける
+            ・「提案が却下されたこと」全体を受けて「それは残念だった」と続ける
+            ・that は非制限用法では使えない(コンマの後は which)
+            ・what は先行詞を含むので、ここでは構造的に合わない
+            """
+        ),
+        GrammarQuestion(
+            id: "q87",
+            question: "___ the truth, I would have told you.",
+            choices: ["If I knew", "Did I know", "Had I known", "Knowing"],
+            correctIndex: 2,
+            translation: "「真実を知っていたら、あなたに話していただろう」",
+            explanation: """
+            ・後半 "would have told" → 仮定法過去完了
+            ・通常は "If I had known" → if 省略の倒置で Had I known
+            ・a) If I knew は仮定法過去で、後半の時制と合わない
+            ・倒置パターンは IELTS Writing でフォーマルさを出す定番テクニック
+            """
+        ),
+        GrammarQuestion(
+            id: "q88",
+            question: "The interview consisted ___ three parts.",
+            choices: ["in", "of", "with", "from"],
+            correctIndex: 1,
+            translation: "「その面接は3つのパートで構成されていた」",
+            explanation: """
+            ・consist of ~ = 「〜から成る」(全体が部分から構成される)
+            ・consist in は「(本質が)〜にある」で別の意味(Happiness consists in simple things.)
+            ・be made up of / be composed of も同じ意味
+            ・受動態にしないこと(× be consisted of)
+            """
+        ),
+        GrammarQuestion(
+            id: "q89",
+            question: "I'm having difficulty ___ the new software.",
+            choices: ["to use", "for using", "using", "with use"],
+            correctIndex: 2,
+            translation: "「新しいソフトウェアの使い方に苦労している」",
+            explanation: """
+            ・have difficulty (in) -ing = 「〜するのに苦労する」の決まった型
+            ・in は省略可能、to不定詞は不可
+            ・have trouble -ing / have a hard time -ing も同じパターン
+            ・動名詞を取る慣用表現として一括で覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q90",
+            question: "The price of houses has risen ___ the past decade.",
+            choices: ["since", "for", "over", "from"],
+            correctIndex: 2,
+            translation: "「家の価格はここ10年にわたって上昇してきた」",
+            explanation: """
+            ・over the past + 期間 = 「過去〜の間にわたって」(変化・推移を表す)
+            ・since + 過去の時点(since 2010)、for + 期間(for 10 years)とは形が違う
+            ・統計やデータの説明で頻出 → IELTS Task 1(グラフ説明)で必須表現
+            ・"in the past decade" も使えるが、変化の動詞には over がより自然
+            """
+        ),
+        GrammarQuestion(
+            id: "q91",
+            question: "___ the heavy rain, the match was postponed.",
+            choices: ["Because", "Due to", "Since", "As"],
+            correctIndex: 1,
+            translation: "「大雨のため、試合は延期された」",
+            explanation: """
+            ・Due to / Owing to + 名詞 = 「〜のために」(原因)
+            ・Because / Since / As は接続詞で、後ろは「主語+動詞」の節を取る
+            ・後ろが名詞句(the heavy rain)なので前置詞句が必要 → Due to
+            ・Because of も同じ意味で名詞を取る前置詞句
+            """
+        ),
+        GrammarQuestion(
+            id: "q92",
+            question: "He acted as ___ he were the boss.",
+            choices: ["though", "for", "so", "like"],
+            correctIndex: 0,
+            translation: "「彼はまるで自分が上司であるかのように振る舞った」",
+            explanation: """
+            ・as though / as if = 「まるで〜かのように」
+            ・事実と異なる仮定 → 仮定法過去で were を使う(was でも口語ではOK)
+            ・like も口語では使われるが、フォーマルなライティングでは as though が標準
+            ・as for は「〜については」で別の意味
+            """
+        ),
+        GrammarQuestion(
+            id: "q93",
+            question: "___ exhausted, she continued working until midnight.",
+            choices: ["Although", "Despite", "In spite", "Even"],
+            correctIndex: 0,
+            translation: "「疲れ切っていたが、彼女は真夜中まで働き続けた」",
+            explanation: """
+            ・Although + (S+V) = 「〜だけれども」(接続詞)
+            ・"Although (she was) exhausted" の she was が省略された分詞構文的な形
+            ・Despite/In spite of は名詞を取る前置詞句で、形容詞単独は不可
+            ・Even だけでは接続詞にならない(Even though なら可)
+            """
+        ),
+        GrammarQuestion(
+            id: "q94",
+            question: "The new manager is responsible ___ overseeing the whole project.",
+            choices: ["of", "for", "to", "about"],
+            correctIndex: 1,
+            translation: "「新しいマネージャーはプロジェクト全体の監督に責任を負っている」",
+            explanation: """
+            ・be responsible for ~ = 「〜に責任がある」の定型
+            ・of/to/about は使わない
+            ・for の後ろは名詞または動名詞(-ing)
+            ・似た responsibility(名詞)も "responsibility for ~" で同じ前置詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q95",
+            question: "___ make matters worse, the train was delayed by an hour.",
+            choices: ["For", "In", "To", "By"],
+            correctIndex: 2,
+            translation: "「さらに悪いことに、電車が1時間遅れた」",
+            explanation: """
+            ・To make matters worse = 「さらに悪いことに」(独立不定詞の慣用句)
+            ・状況がさらに悪化したことを述べる前置きフレーズ
+            ・to不定詞が文頭で文全体を修飾する慣用表現の一つ
+            ・似たフレーズ: To tell the truth(実を言うと), To be honest(正直に言うと)
+            """
+        ),
+        GrammarQuestion(
+            id: "q96",
+            question: "The book ___ I borrowed from the library was very informative.",
+            choices: ["what", "who", "that", "whose"],
+            correctIndex: 2,
+            translation: "「図書館から借りた本はとても役立つ内容だった」",
+            explanation: """
+            ・先行詞 the book(物) + 目的格関係代名詞 → that または which
+            ・which も正解だが、選択肢にないので that
+            ・what は先行詞を含むので、the book と一緒には使えない
+            ・関係代名詞の目的格は省略も可能(The book I borrowed...)
+            """
+        ),
+        GrammarQuestion(
+            id: "q97",
+            question: "___ the recent changes, the company is performing better than ever.",
+            choices: ["Because", "Despite", "Although", "Thanks to"],
+            correctIndex: 3,
+            translation: "「最近の変化のおかげで、会社はかつてないほど好調だ」",
+            explanation: """
+            ・Thanks to ~ = 「〜のおかげで」(良い結果の原因を示す前置詞句)
+            ・Because は接続詞で名詞は取らない
+            ・Despite は「にもかかわらず」で、後半の「好調」とは因果関係が逆
+            ・Although は接続詞で、節を取る
+            ・文意(良い結果)から「おかげで」が最適
+            """
+        ),
+        GrammarQuestion(
+            id: "q98",
+            question: "The committee will reach a decision ___ the end of this week.",
+            choices: ["until", "by", "on", "in"],
+            correctIndex: 1,
+            translation: "「委員会は今週末までに決定に達するだろう」",
+            explanation: """
+            ・by + 時点 = 「〜までに」(期限・締め切り)
+            ・until は「〜までずっと(継続)」で、決定という瞬間的行為には合わない
+            ・「いつまでに完了するか」を示すときは必ず by
+            ・問30と同じ by/until の使い分け、IELTSでは超頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q99",
+            question: "___ all the candidates I interviewed, she was the most impressive.",
+            choices: ["From", "Of", "Among", "Between"],
+            correctIndex: 1,
+            translation: "「面接した全候補者の中で、彼女が最も印象的だった」",
+            explanation: """
+            ・Of + all + 複数名詞 = 「すべての〜の中で」(最上級と組み合わせる定型)
+            ・Among も「〜の中で」だが、最上級と一緒なら Of が標準
+            ・Between は2つの間に限定される(候補者は複数なので不可)
+            ・From は出発点を示す前置詞で、選択の中での比較には使わない
+            """
+        ),
+        GrammarQuestion(
+            id: "q100",
+            question: "I wish I ___ more time to study English when I was younger.",
+            choices: ["have", "had", "have had", "had had"],
+            correctIndex: 3,
+            translation: "「若いとき、もっと英語を勉強する時間があればよかったのに」",
+            explanation: """
+            ・I wish + 仮定法過去完了 (had + 過去分詞) = 過去のことへの後悔
+            ・「(過去に)〜だったらよかったのに」 → 過去の事実と反対
+            ・現在のことなら "I wish I had more time"(仮定法過去)
+            ・when I was younger という過去の時点が出ているので、もう一段階前の過去 → 過去完了
+            """
         )
     ]
 }
