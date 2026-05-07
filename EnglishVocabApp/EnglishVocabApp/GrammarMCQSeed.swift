@@ -795,6 +795,266 @@ enum GrammarMCQSeed {
             ・frustrating(イライラさせる)は感情を引き起こす側 → 主語(he)が「苛立つ側」なので frustrated が正しい
             ・The more, the better.(多ければ多いほど良い)が最もシンプルな例
             """
+        ),
+        GrammarQuestion(
+            id: "q61",
+            question: "It is imperative that every employee ___ the new safety guidelines.",
+            choices: ["follows", "follow", "followed", "is following"],
+            correctIndex: 1,
+            translation: "「全従業員が新しい安全規則に従うことが極めて重要だ」",
+            explanation: """
+            ・It is essential / imperative / necessary that + S + 動詞原形 = 仮定法現在
+            ・要求・必要性・提案を表す形容詞の後の that 節では、主語が三人称単数でも -s を付けない
+            ・insist/suggest/demand/recommend などの動詞でも同じルール
+            ・イギリス英語では "should follow" の形も使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q62",
+            question: "The man ___ by the window is our new manager.",
+            choices: ["stand", "stood", "standing", "was standing"],
+            correctIndex: 2,
+            translation: "「窓のそばに立っている男性が私たちの新しいマネージャーだ」",
+            explanation: """
+            ・短縮関係詞節 (reduced relative clause)
+            ・元の文 "The man who is standing by the window..." から who is を省略した形
+            ・能動の意味なら現在分詞 (-ing)、受動の意味なら過去分詞
+            ・書き言葉でよく見る省略パターン。文を簡潔にする効果がある
+            """
+        ),
+        GrammarQuestion(
+            id: "q63",
+            question: "The bridge ___ in 1890 is still in use today.",
+            choices: ["building", "builds", "built", "was built"],
+            correctIndex: 2,
+            translation: "「1890年に建設されたその橋は今日もなお使われている」",
+            explanation: """
+            ・短縮関係詞節の受動バージョン
+            ・元の文 "The bridge which was built in 1890..." から which was を省略
+            ・主語 the bridge は「建設される側」 → 受動 → 過去分詞 built
+            ・問題62と同じ構文だが、能動か受動かで分詞が変わる点を区別
+            """
+        ),
+        GrammarQuestion(
+            id: "q64",
+            question: "___ was John who broke the window, not Mary.",
+            choices: ["That", "It", "There", "This"],
+            correctIndex: 1,
+            translation: "「窓を割ったのはジョンだ、メアリーじゃない」",
+            explanation: """
+            ・It is/was X that ~ = 強調構文 (cleft sentence)
+            ・元の文 "John broke the window" の John を強調するために It was と that で挟む
+            ・強調する部分が人なら that の代わりに who も使える(It was John who broke...)
+            ・「他の誰かじゃなくて〜なんだ」と特定したいときの定番表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q65",
+            question: "Only after the meeting ended ___ the seriousness of the situation.",
+            choices: ["we realized", "did we realize", "we did realize", "realize we"],
+            correctIndex: 1,
+            translation: "「会議が終わってからやっと、私たちは事態の深刻さに気づいた」",
+            explanation: """
+            ・Only + 副詞句が文頭 に来ると倒置(疑問文の語順)
+            ・一般動詞 realize なので do/does/did を借りてくる必要がある
+            ・過去のことなので did → did we realize
+            ・Only after / Only when / Only by はすべて同じ倒置パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q66",
+            question: "Never ___ such a breathtaking view before.",
+            choices: ["I have seen", "have I seen", "I had seen", "did I see"],
+            correctIndex: 1,
+            translation: "「こんなに息を呑むような景色は今まで見たことがない」",
+            explanation: """
+            ・Never が文頭の否定語句として倒置を引き起こす
+            ・"before" があるので「今までに」の意味 → 経験を表す現在完了形が自然
+            ・助動詞 have が主語の前に出る → have I seen
+            ・Never have I... は劇的な強調表現で、感動を伝えるときに使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q67",
+            question: "___ for your help, I would never have finished on time.",
+            choices: ["Without", "Except", "But for", "Apart from"],
+            correctIndex: 2,
+            translation: "「あなたの助けがなかったら、時間通りに終えられなかっただろう」",
+            explanation: """
+            ・But for ~ = 「もし〜がなかったら」(=Without)
+            ・後半の "would never have finished" が仮定法過去完了 → 過去の事実と反対の仮定
+            ・Without でも文法的にはOK だが、選択肢にあれば But for が IELTS で問われやすい
+            ・"But for the rain, we would have gone hiking." のようにフォーマルに使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q68",
+            question: "Neither he nor his colleagues ___ aware of the new policy.",
+            choices: ["is", "were", "was", "has been"],
+            correctIndex: 1,
+            translation: "「彼も彼の同僚たちも新しい方針について知らなかった」",
+            explanation: """
+            ・Neither A nor B / Either A or B では、動詞は B(後ろ側) に合わせる
+            ・B = his colleagues(複数) → 動詞は were
+            ・もし語順が "Neither his colleagues nor he" だったら → was(he に合わせる)
+            ・主語と動詞の一致(subject-verb agreement)の応用ルール
+            """
+        ),
+        GrammarQuestion(
+            id: "q69",
+            question: "The committee will decide ___ to approve the proposal or not.",
+            choices: ["if", "whether", "that", "what"],
+            correctIndex: 1,
+            translation: "「委員会は提案を承認するかどうかを決定する」",
+            explanation: """
+            ・whether + to不定詞 = 「〜するかどうか」(if は to不定詞と一緒に使えない)
+            ・"decide if to approve" は文法的に誤り
+            ・whether は or not と組み合わせて使える(whether...or not)
+            ・動詞 decide / wonder / consider の後では whether が標準
+            """
+        ),
+        GrammarQuestion(
+            id: "q70",
+            question: "He talks ___ he knew everything about the subject.",
+            choices: ["like", "as if", "so that", "such as"],
+            correctIndex: 1,
+            translation: "「彼はその話題について何でも知っているかのように話す」",
+            explanation: """
+            ・as if / as though = 「まるで〜かのように」
+            ・事実と異なることを言うときは仮定法 → 後ろは過去形 (knew)
+            ・実際は「全部は知らない」という事実への反対 → 仮定法過去
+            ・口語では like も使うが、フォーマルなライティングでは as if が標準
+            """
+        ),
+        GrammarQuestion(
+            id: "q71",
+            question: "Suppose you ___ the lottery, how would you spend the money?",
+            choices: ["win", "won", "will win", "would win"],
+            correctIndex: 1,
+            translation: "「もし宝くじに当たったら、お金をどう使う?」",
+            explanation: """
+            ・Suppose / Supposing = If と同じ意味で条件を導く
+            ・後半 "how would you spend" が仮定法過去 → 前半も過去形 won
+            ・現実にはまだ起きていないことを仮定するので、現在形ではなく過去形を使うのがポイント
+            ・会話で「もし〜だったら?」と聞きたいときの自然な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q72",
+            question: "It's high time we ___ this old computer.",
+            choices: ["replace", "are replacing", "replaced", "had replaced"],
+            correctIndex: 2,
+            translation: "「もうこの古いパソコンを買い替える時期だ」",
+            explanation: """
+            ・It's (high) time + S + 過去形 = 「もう〜してもいい頃だ」(まだしていないことへの催促)
+            ・仮定法の特殊な使い方で、現在の話なのに過去形を使う
+            ・"It's about time" もほぼ同じ意味
+            ・過去完了 had replaced は「もうとっくに〜しているべきだった」という更に強い催促
+            """
+        ),
+        GrammarQuestion(
+            id: "q73",
+            question: "You ___ better leave now, or you'll miss the bus.",
+            choices: ["had", "have", "would", "should"],
+            correctIndex: 0,
+            translation: "「今すぐ出発した方がいい、さもないとバスを逃す」",
+            explanation: """
+            ・had better + 動詞原形 = 「〜した方がいい」(警告・忠告のニュアンス)
+            ・should より強く、「そうしないと困るぞ」という含みがある
+            ・短縮形 'd better で会話でよく使う(You'd better hurry.)
+            ・否定形は had better not + 動詞原形(not の位置に注意)
+            """
+        ),
+        GrammarQuestion(
+            id: "q74",
+            question: "By the time the rescue team arrived, the climbers ___ for over six hours.",
+            choices: ["waited", "had waited", "had been waiting", "were waiting"],
+            correctIndex: 2,
+            translation: "「救助隊が到着したときには、登山者たちは6時間以上も待ち続けていた」",
+            explanation: """
+            ・過去のある時点(救助到着)までの 継続 を表す → 過去完了進行形 had been + -ing
+            ・"for over six hours" という期間表現が継続のヒント
+            ・過去完了 had waited でも通じるが、「待ち続けていた」の継続感は進行形の方が強い
+            ・現在完了進行形(have been -ing)の過去版と覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q75",
+            question: "This time tomorrow, I ___ on a beach in Okinawa.",
+            choices: ["will lie", "will be lying", "am lying", "lie"],
+            correctIndex: 1,
+            translation: "「明日の今頃、私は沖縄のビーチで横になっているだろう」",
+            explanation: """
+            ・未来進行形 will be + -ing = 未来のある時点で進行中の動作
+            ・"This time tomorrow / At 3 p.m. tomorrow" のように特定の未来時点が示される
+            ・will lie だと「横になる」という動作の発生だけを示し、進行のニュアンスがない
+            ・「未来のあのとき、こんなことしてるだろうな」と想像するときの構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q76",
+            question: "He ___ at the meeting now; his car is in the parking lot.",
+            choices: ["might be", "must be", "should be", "could have been"],
+            correctIndex: 1,
+            translation: "「彼は今会議に出ているに違いない、車が駐車場にあるから」",
+            explanation: """
+            ・must be + 場所/-ing = 現在の状況からの 強い推量「〜しているに違いない」
+            ・状況証拠(車がある)から確信を持って推測している → must
+            ・might be は「かもしれない(弱い推量)」、should be は「〜のはず(期待)」
+            ・could have been は過去の可能性で時制が合わない
+            """
+        ),
+        GrammarQuestion(
+            id: "q77",
+            question: "I'm getting my car ___ next week.",
+            choices: ["repair", "repaired", "repairing", "to repair"],
+            correctIndex: 1,
+            translation: "「来週、車を修理してもらう予定だ」",
+            explanation: """
+            ・get + 物 + 過去分詞 = 「〜してもらう」(have と同じ意味で口語的)
+            ・物 (my car) は「修理される側」 → 過去分詞 repaired
+            ・have my car repaired と get my car repaired はほぼ同じ意味
+            ・get の方がカジュアル、have は中立的
+            """
+        ),
+        GrammarQuestion(
+            id: "q78",
+            question: "Could you tell me ___ ?",
+            choices: ["where is the post office", "where the post office is", "where does the post office is", "is where the post office"],
+            correctIndex: 1,
+            translation: "「郵便局はどこか教えてもらえますか?」",
+            explanation: """
+            ・間接疑問文 では、疑問文の語順を 平叙文の語順 に戻す
+            ・直接 "Where is the post office?" → 間接 "where the post office is"(主語+動詞)
+            ・Could you tell me / Do you know / I wonder などの後ろは間接疑問文
+            ・日本人がよく間違えるポイント。is/does の位置に注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q79",
+            question: "So beautiful ___ the painting that everyone stopped to admire it.",
+            choices: ["was", "it was", "it is", "did it be"],
+            correctIndex: 0,
+            translation: "「その絵はあまりに美しかったので、誰もが立ち止まって見とれた」",
+            explanation: """
+            ・So + 形容詞 + 倒置 + that... = 「あまりに〜なので…」の強調構文
+            ・普通の "The painting was so beautiful that..." の so beautiful を文頭に出すと倒置
+            ・be動詞が主語の前に出る → was the painting の語順
+            ・Such was + 名詞 + that... と並ぶフォーマルな強調表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q80",
+            question: "I saw the thief ___ out of the window and disappear into the crowd.",
+            choices: ["jump", "jumped", "to jump", "jumps"],
+            correctIndex: 0,
+            translation: "「私はその泥棒が窓から飛び降り、群衆の中に消えるのを見た」",
+            explanation: """
+            ・知覚動詞 (see/hear/watch/feel) + 目的語 + 動詞原形 = 動作の最初から最後まで全体を見る
+            ・to不定詞は使わない(知覚動詞のルール)
+            ・-ing 形を使うと「進行中の一部を見た」というニュアンスに変わる(see him jumping = 飛んでいる途中を見た)
+            ・"and disappear" と動詞原形が並列されているので、jump も同じ形が自然
+            """
         )
     ]
 }
