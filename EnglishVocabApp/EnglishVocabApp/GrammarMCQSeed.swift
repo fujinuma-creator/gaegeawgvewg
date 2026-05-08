@@ -1837,6 +1837,278 @@ enum GrammarMCQSeed {
             ・by/for/with では、この意味を表せない
             ・法律・ビジネス文書で頻出のフォーマルな前置詞用法
             """
+        ),
+        GrammarQuestion(
+            id: "q141",
+            question: "I'll meet you at ___ corner of Fifth Avenue and 42nd Street.",
+            choices: ["a", "the", "(no article)", "some"],
+            correctIndex: 1,
+            translation: "「5番街と42番街の角で会いましょう」",
+            explanation: """
+            ・the corner of A and B = 「A と B の角」(具体的に特定された角)
+            ・5番街と42番街が交わる「あの角」と特定できる → the
+            ・a corner だと「(どこかの)角」になり、待ち合わせ場所が曖昧
+            ・street/road も同様に "the street where I live"(住んでいる通り)のように特定すれば the
+            """
+        ),
+        GrammarQuestion(
+            id: "q142",
+            question: "She's the woman ___ I was telling you about yesterday.",
+            choices: ["that", "what", "which", "whose"],
+            correctIndex: 0,
+            translation: "「昨日話していた女性って彼女のことだよ」",
+            explanation: """
+            ・先行詞 the woman(人) + 目的格関係代名詞 → that または who(m)
+            ・口語では who/whom より that が頻出、または省略する(She's the woman I was telling you about.)
+            ・which は物が先行詞のとき、whose は所有格、what は先行詞を含む
+            ・前置詞 about が文末に残る形は会話で超頻出 → about whom は堅すぎる
+            """
+        ),
+        GrammarQuestion(
+            id: "q143",
+            question: "Could you turn ___ the music? I'm trying to sleep.",
+            choices: ["off", "up", "down", "in"],
+            correctIndex: 2,
+            translation: "「音楽の音を下げてくれない?寝ようとしてるんだ」",
+            explanation: """
+            ・turn down = 音量を下げる
+            ・turn off = 完全に消す → 「下げる」より強い
+            ・turn up = 音量を上げる(逆)
+            ・turn in = 提出する/寝る
+            ・文脈「寝ようとしている」+ 音楽はかかっている状態 → 完全に消すか下げるかだが、「下げて」と頼むのが自然
+            """
+        ),
+        GrammarQuestion(
+            id: "q144",
+            question: "I haven't seen him ___ ages.",
+            choices: ["since", "for", "from", "during"],
+            correctIndex: 1,
+            translation: "「彼にはずいぶん長いこと会っていない」",
+            explanation: """
+            ・for ages = 「長いこと、ずっと」(口語の決まったフレーズ)
+            ・ages は「(長い)期間」を表す → 期間には for
+            ・since は「特定の時点から」(since last week)で、ages のような漠然とした期間とは合わない
+            ・"It's been ages since I saw him."(最後に会ってからずいぶん経つ)では since が使えるが、構文が違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q145",
+            question: "Can you pick ___ some milk on your way home?",
+            choices: ["out", "off", "up", "in"],
+            correctIndex: 2,
+            translation: "「帰りに牛乳買ってきてくれる?」",
+            explanation: """
+            ・pick up = (店で物を)買う、ついでに手に入れる、(人を)迎えに行く
+            ・口語で超頻出。"I'll pick you up at 7."(7時に迎えに行く)も同じ pick up
+            ・pick out = 選び出す
+            ・pick off = (1つずつ)取り除く
+            ・「ついでに買ってくる」は pick up が定番
+            """
+        ),
+        GrammarQuestion(
+            id: "q146",
+            question: "There's ___ bottle of wine in the fridge. ___ bottle is for tonight's dinner.",
+            choices: ["the / A", "a / The", "a / A", "the / The"],
+            correctIndex: 1,
+            translation: "「冷蔵庫にワインのボトルがある。そのボトルは今夜の夕食用だ」",
+            explanation: """
+            ・冠詞の基本ルール: 初出は a、再登場は the
+            ・1文目: 初めて話題に出す → a bottle(まだ特定されていない)
+            ・2文目: もう話題に出ているそのボトル → The bottle(特定されている)
+            ・会話・文章の流れで「あれね」と分かるかどうかで判断する
+            """
+        ),
+        GrammarQuestion(
+            id: "q147",
+            question: "I'm not really ___ jazz. I prefer rock music.",
+            choices: ["on", "at", "into", "for"],
+            correctIndex: 2,
+            translation: "「ジャズはあまり好きじゃないんだ。ロックの方が好き」",
+            explanation: """
+            ・be into ~ = 「〜にハマっている、〜が好き」(口語)
+            ・趣味・興味を表すときの定番表現
+            ・be on ~ は「〜の上に」(物理的)、be at ~ は「〜にいる」(場所)
+            ・"I'm really into K-pop."(K-popにハマってる)のように使う
+            ・like より熱量が伝わるカジュアルな表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q148",
+            question: "Sorry, I can't make it tonight. Can we ___?",
+            choices: ["take a break", "take a rain check", "call it off", "put it off"],
+            correctIndex: 1,
+            translation: "「今夜は無理なんだ。また今度にしてくれる?」",
+            explanation: """
+            ・take a rain check = 「(誘いを)また今度に延ばす」(口語の決まったイディオム)
+            ・元々は野球の雨天順延チケットから来た表現
+            ・call it off = キャンセルする(完全に取り消し)、put it off = 延期する(日付未定)
+            ・rain check は「またの機会に」のニュアンスで、誘ってくれた相手への配慮を示す
+            ・ネイティブとの会話で使えると印象が良い表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q149",
+            question: "I ran ___ my old teacher at the supermarket yesterday.",
+            choices: ["over", "out", "into", "after"],
+            correctIndex: 2,
+            translation: "「昨日スーパーで昔の先生にばったり会った」",
+            explanation: """
+            ・run into ~ = 「〜に偶然出会う」(=bump into)
+            ・計画していなかった偶然の出会いを表す
+            ・run over = 車でひく、run out = 使い切る、run after = 追いかける
+            ・"I ran into an old friend." は会話で頻出
+            ・似た表現: come across(偶然見つける/出会う)
+            """
+        ),
+        GrammarQuestion(
+            id: "q150",
+            question: "The thing ___ bothers me most is his lack of punctuality.",
+            choices: ["what", "that", "who", "whose"],
+            correctIndex: 1,
+            translation: "「一番気になるのは、彼の時間にルーズなところだ」",
+            explanation: """
+            ・先行詞 The thing(物) + 主格関係代名詞 → that または which
+            ・口語では that が圧倒的に頻出
+            ・what は先行詞を含むので、The thing what は誤り(二重に「もの」を表すことになる)
+            ・"The thing that bothers me..." と "What bothers me..." はどちらも正しいが、先行詞 The thing がある場合は that/which
+            """
+        ),
+        GrammarQuestion(
+            id: "q151",
+            question: "It's not the money I care about; it's ___ principle of the thing.",
+            choices: ["a", "the", "(no article)", "some"],
+            correctIndex: 1,
+            translation: "「お金が問題なんじゃない、これは原則の問題なんだ」",
+            explanation: """
+            ・the principle of the thing = 「(その件の)原則の問題」(口語の決まった言い回し)
+            ・抽象名詞 principle に the を付けるのは、文脈で特定の原則を指しているから
+            ・"It's the thought that counts."(気持ちが大切)などと同様、決まったフレーズでは the が定着している
+            ・不可算名詞でも、文脈で特定されれば the を取るのが冠詞の基本ルール
+            """
+        ),
+        GrammarQuestion(
+            id: "q152",
+            question: "Whatever you do, don't bring ___ politics at the dinner table.",
+            choices: ["on", "over", "up", "out"],
+            correctIndex: 2,
+            translation: "「何があっても、夕食の席で政治の話を持ち出さないで」",
+            explanation: """
+            ・bring up = (話題を)持ち出す、(子供を)育てる
+            ・会話の文脈で「話題を出す」意味が定着
+            ・bring on = 引き起こす、bring over = 持ってくる、bring out = 引き出す/出版する
+            ・"Don't bring that up again."(その話また持ち出さないで)も同じ用法
+            ・"raise a topic" でも同じ意味だが、bring up の方が口語的
+            """
+        ),
+        GrammarQuestion(
+            id: "q153",
+            question: "I have ___ headache. Do you have ___ aspirin?",
+            choices: ["(no article) / an", "a / (no article)", "the / an", "a / the"],
+            correctIndex: 1,
+            translation: "「頭痛がする。アスピリンある?」",
+            explanation: """
+            ・have a headache = 頭痛がする(数えられる症状として a が付く)
+            ・aspirin は不可算名詞として扱われる(薬として漠然とした意味) → 冠詞なし
+            ・同様に: have a cold(風邪をひいている)、have a fever(熱がある)
+            ・でも have flu / have cancer は無冠詞(深刻な病気は不可算扱い)
+            ・病気の冠詞は決まりがあるので個別に覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q154",
+            question: "I'll catch ___ with you later. I have to run now.",
+            choices: ["on", "up", "out", "over"],
+            correctIndex: 1,
+            translation: "「後で連絡するね。もう行かなきゃ」",
+            explanation: """
+            ・catch up with ~ = 「〜と近況を話す、〜に追いつく」
+            ・久しぶりの友人に「最近どう?」と話すときに使う
+            ・"Let's catch up over coffee."(コーヒーでも飲みながら近況話そう)
+            ・catch on = 流行る、理解する; catch out = (誤りを)見抜く
+            ・口語で頻出の友人間の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q155",
+            question: "He's the kind of person ___ always thinks of others first.",
+            choices: ["what", "which", "who", "whose"],
+            correctIndex: 2,
+            translation: "「彼は常に他人のことを最初に考えるタイプの人だ」",
+            explanation: """
+            ・先行詞 person(人) + 主格関係代名詞 → who または that
+            ・口語でも書き言葉でも who が標準
+            ・which は物の先行詞、whose は所有格、what は先行詞を含む
+            ・"the kind of person who ~"(〜するようなタイプの人)は人物描写の定番表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q156",
+            question: "Can you keep ___ eye on my bag while I go to the bathroom?",
+            choices: ["(no article)", "an", "the", "some"],
+            correctIndex: 1,
+            translation: "「トイレに行ってる間、私のバッグ見ててくれる?」",
+            explanation: """
+            ・keep an eye on ~ = 「〜を見張る、注意して見ておく」(イディオム)
+            ・eye が母音発音で始まるので an
+            ・慣用句なので「片目だけ」という意味ではなく、「注意を向ける」の比喩
+            ・似た表現: have an eye for(〜を見る目がある)、turn a blind eye(見て見ぬふりをする)
+            ・イディオム内の冠詞は決まっているので丸ごと暗記
+            """
+        ),
+        GrammarQuestion(
+            id: "q157",
+            question: "I'm sorry, I didn't mean ___ you.",
+            choices: ["upset", "upsetting", "to upset", "for upsetting"],
+            correctIndex: 2,
+            translation: "「ごめん、君を怒らせるつもりじゃなかったんだ」",
+            explanation: """
+            ・mean to + 動詞原形 = 「〜するつもりである」
+            ・"didn't mean to" = 「〜するつもりじゃなかった」(謝罪・弁明の定番)
+            ・mean + -ing は「〜を意味する」で意味が違う(Missing the train means waiting an hour. = 電車を逃すことは1時間待つことを意味する)
+            ・同じ動詞でも to不定詞か動名詞かで意味が変わる典型例
+            """
+        ),
+        GrammarQuestion(
+            id: "q158",
+            question: "Let's go to ___ bed. It's already past midnight.",
+            choices: ["the", "a", "(no article)", "some"],
+            correctIndex: 2,
+            translation: "「もう寝よう。もう真夜中過ぎだよ」",
+            explanation: """
+            ・go to bed = 寝る(無冠詞の決まった表現)
+            ・bed が「寝る場所」ではなく「寝る行為」を表す抽象的な意味のとき → 無冠詞
+            ・同様: go to school(通学する)、go to church(礼拝に行く)、go to work(仕事に行く)
+            ・"go to the bed" は物理的に「ベッドに行く」(座るためなど)で意味が違う
+            ・「行為」を表すときは無冠詞、「物理的な物」を表すときは the/a
+            """
+        ),
+        GrammarQuestion(
+            id: "q159",
+            question: "You can't have ___ cake and eat it.",
+            choices: ["a", "the", "some", "your"],
+            correctIndex: 3,
+            translation: "「いいとこ取りはできないよ」",
+            explanation: """
+            ・have your cake and eat it (too) = 「いいとこ取りをする」(両立しないことを両方やろうとする)
+            ・慣用句で your が固定(状況に応じて my/his も可)
+            ・直訳:「ケーキを持っていて、しかも食べる」 → 持ち続けることと食べてしまうことは両立しない
+            ・a/the/some では成立しないイディオム
+            ・会話で「都合よく考えてるよ」と諭すときに使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q160",
+            question: "The food was ___ this restaurant gets a Michelin star.",
+            choices: ["so good", "so good that", "such good", "such good that"],
+            correctIndex: 1,
+            translation: "「料理がとても美味しくて、このレストランがミシュラン星を取るのも納得だ」",
+            explanation: """
+            ・so + 形容詞 + that + 結果 = 「あまりに〜なので…」
+            ・food は不可算名詞 → such を使うなら "such good food that"(such + 形容詞 + 名詞)
+            ・形容詞 good 単独を強調するなら so good that
+            ・a) は that がなく結果節とつながらない、c)d) は food が必要なのに省略
+            ・口語でも頻出の構文「so...that...」
+            """
         )
     ]
 }
