@@ -2529,6 +2529,155 @@ enum GrammarMCQSeed {
             ・"It's time you went to bed."(もう寝る時間だよ)も同じパターン
             ・had made(過去完了)は「もうとっくに決めているべきだった」と更に強い催促
             """
+        ),
+        GrammarQuestion(
+            id: "q191",
+            question: "I ___ to Paris three times so far.",
+            choices: ["went", "have been", "have gone", "was going"],
+            correctIndex: 1,
+            translation: "「これまでに3回パリに行ったことがある」",
+            explanation: """
+            ・have been to = 「〜に行ったことがある」(経験、今は戻ってきている)
+            ・have gone to = 「〜に行ってしまった」(今そこにいない、不在)
+            ・"so far" (これまでのところ) は経験を表す現在完了の典型的な副詞
+            ・"went" (過去形) は具体的な過去の時点が必要 → so far(現在まで)とは合わない
+            ・He has gone to Paris. = 彼は今パリにいる(ここにいない)
+            ・「行ったことがある」と「行ってしまった」を区別する典型問題
+            """
+        ),
+        GrammarQuestion(
+            id: "q192",
+            question: "___ you ever ___ sushi before?",
+            choices: ["Did / eat", "Have / ate", "Have / eaten", "Do / eat"],
+            correctIndex: 2,
+            translation: "「これまでに寿司を食べたことはありますか?」",
+            explanation: """
+            ・現在完了の疑問文 = Have/Has + 主語 + 過去分詞
+            ・"ever" (今までに)、"before" (以前に) は経験を表す現在完了の代表的な副詞
+            ・b) のように have の後ろに過去形 ate を置くのは典型的なミス
+            ・過去分詞 eaten が正解
+            ・不規則動詞は eat-ate-eaten のように3つ目の形(過去分詞)を覚える必要がある
+            ・似た不規則: see-saw-seen、do-did-done、go-went-gone、speak-spoke-spoken
+            """
+        ),
+        GrammarQuestion(
+            id: "q193",
+            question: "I ___ him at the conference last year.",
+            choices: ["have met", "met", "have been meeting", "had met"],
+            correctIndex: 1,
+            translation: "「去年の会議で彼に会った」",
+            explanation: """
+            ・last year / yesterday / 〜 ago / in 2020 など 明確な過去の時点 がある場合 → 過去形
+            ・現在完了は「過去から現在までの繋がり」を示すので、明確な過去の時点とは相性が悪い
+            ・「去年」と特定された瞬間に、現在との繋がりは切れる
+            ・"I have met him last year." は典型的な日本人英語のミス
+            ・過去の特定の時点 = 過去形、現在まで続く影響 = 現在完了
+            """
+        ),
+        GrammarQuestion(
+            id: "q194",
+            question: "She ___ in this company since 2018.",
+            choices: ["works", "worked", "is working", "has been working"],
+            correctIndex: 3,
+            translation: "「彼女は2018年からこの会社で働いている」",
+            explanation: """
+            ・現在完了進行形 (have been + -ing) = 過去から現在までの 継続中の動作
+            ・since 2018 = 2018年から現在までずっと → 継続を強調
+            ・"has worked" (現在完了) でも文法的にはOKだが、進行形の方が「今もずっと働いている」感が強い
+            ・動作動詞(work, study, live, run)では現在完了進行形が自然
+            ・状態動詞(know, have, like, believe)は進行形にしないので have + 過去分詞のまま
+            ・例: I have known him for 10 years.(✗ have been knowing)
+            """
+        ),
+        GrammarQuestion(
+            id: "q195",
+            question: "How long ___ you ___ each other?",
+            choices: ["do / know", "did / know", "have / known", "have / been knowing"],
+            correctIndex: 2,
+            translation: "「お互いを知り合ってどれくらいですか?」",
+            explanation: """
+            ・How long have/has + 主語 + 過去分詞? = 期間を尋ねる現在完了の疑問文
+            ・know は 状態動詞 → 進行形にしない → "have been knowing" は誤り
+            ・状態動詞は have + 過去分詞のままで継続を表す
+            ・主な状態動詞: know, like, love, hate, believe, understand, own, belong, seem, exist
+            ・動作動詞なら "How long have you been studying English?"(進行形可)
+            ・「知り合いの期間」を尋ねる定番表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q196",
+            question: "The train ___ already ___ when we arrived at the station.",
+            choices: ["has / left", "have / left", "had / left", "was / leaving"],
+            correctIndex: 2,
+            translation: "「私たちが駅に着いたとき、電車はもう出発してしまっていた」",
+            explanation: """
+            ・過去完了 (had + 過去分詞) = 過去のある時点よりさらに前の出来事
+            ・「駅に着いた」が過去の時点、「電車が出発した」はそれより前 → 過去完了
+            ・現在完了 has/have left は「今この瞬間までの繋がり」を示すので、過去の文脈には合わない
+            ・過去完了は「過去の過去」を表す時制
+            ・"by the time" / "when" / "before" などと共によく使われる
+            ・現在完了と過去完了の区別は時間の基準点(現在 vs 過去)で決まる
+            """
+        ),
+        GrammarQuestion(
+            id: "q197",
+            question: "I ___ this book three times, and I still love it.",
+            choices: ["read", "have read", "am reading", "had read"],
+            correctIndex: 1,
+            translation: "「この本を3回読んだことがあり、今でも大好きだ」",
+            explanation: """
+            ・have + 過去分詞 = 経験を表す現在完了
+            ・"three times" は経験の回数を示す典型的な現在完了の副詞
+            ・"still love it" (今でも好き) → 現在まで影響が続いている → 現在完了が自然
+            ・read は 発音が変わる(現在: /riːd/、過去・過去分詞: /red/)が、スペルは同じ
+            ・不規則動詞で形が変わらないもの: read-read-read、cut-cut-cut、put-put-put、let-let-let
+            ・文脈と副詞(three times, still)から現在完了を判断する
+            """
+        ),
+        GrammarQuestion(
+            id: "q198",
+            question: "___ you finished your homework ___ ?",
+            choices: ["Did / yet", "Have / already", "Have / yet", "Did / already"],
+            correctIndex: 2,
+            translation: "「もう宿題は終わった?」",
+            explanation: """
+            ・yet = 「もう〜?(疑問)」「まだ〜ない(否定)」 → 現在完了の 疑問文・否定文 で使う
+            ・already = 「もう〜した」 → 現在完了の 肯定文 で使う(疑問文では「驚き」を含む)
+            ・yet と already は使う文タイプが違う
+            ・否定例: I haven't finished yet.(まだ終わっていない)
+            ・肯定例: I have already finished.(もう終わった)
+            ・疑問で already を使うと "Have you already finished?"(もう終わったの?と驚き)になり、ニュアンスが違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q199",
+            question: "We ___ each other for 10 years before we got married.",
+            choices: ["had known", "have known", "knew", "had been knowing"],
+            correctIndex: 0,
+            translation: "「結婚する前、私たちは10年間お互いを知っていた」",
+            explanation: """
+            ・過去完了 (had + 過去分詞) = 過去のある時点までの継続
+            ・"got married"(結婚した)が過去の時点、それまでの10年間の継続 → 過去完了
+            ・現在完了 have known は「今もまだ知っている」感じになり、文脈と合わない(結婚という過去のイベントが基準)
+            ・knew(過去形)だと「10年間知っていた」とそのまま訳せるが、英語では「過去の時点までの継続」には過去完了を使うのが厳密
+            ・know は状態動詞 → had been knowing は誤り
+            ・過去完了は「過去の過去」、または「過去のある時点までの継続」を表す
+            """
+        ),
+        GrammarQuestion(
+            id: "q200",
+            question: "I ___ to Tokyo many times, but I ___ there last year for the first time on business.",
+            choices: ["have been / have gone", "went / have been", "have been / went", "was / went"],
+            correctIndex: 2,
+            translation: "「東京には何度も行ったことがあるが、去年初めて出張で行った」",
+            explanation: """
+            ・前半: 経験(現在完了) → "have been to Tokyo many times"(何度も行ったことがある)
+            ・後半: 明確な過去(過去形) → "went there last year"(去年行った)
+            ・"many times" は経験(現在完了)、"last year" は過去の時点(過去形)
+            ・同じ「行く」でも、「これまでの経験」なら現在完了、「特定の過去の出来事」なら過去形
+            ・1つの文の中で時制を切り替える典型例
+            ・日本人が混同しやすいので、副詞で時制を見極める習慣をつける
+            """
         )
     ]
 }
