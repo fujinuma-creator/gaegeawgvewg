@@ -2109,6 +2109,426 @@ enum GrammarMCQSeed {
             ・a) は that がなく結果節とつながらない、c)d) は food が必要なのに省略
             ・口語でも頻出の構文「so...that...」
             """
+        ),
+        GrammarQuestion(
+            id: "q161",
+            question: "The number of students in this class ___ steadily increasing.",
+            choices: ["are", "is", "have been", "were"],
+            correctIndex: 1,
+            translation: "「このクラスの生徒数は着実に増加している」",
+            explanation: """
+            ・The number of + 複数名詞 は単数扱い → 動詞は単数形
+            ・「数」そのものが主語で、students は of 句の中身にすぎない
+            ・紛らわしいのが A number of + 複数名詞 = 「多くの〜」(複数扱い)
+            ・A number of students are absent today.(多くの生徒が今日欠席)
+            ・The number of (= ~の数)/ A number of (= 多くの〜) は意味も動詞の数も逆
+            """
+        ),
+        GrammarQuestion(
+            id: "q162",
+            question: "The news ___ shocking, but I'm trying to stay calm.",
+            choices: ["are", "is", "were", "have been"],
+            correctIndex: 1,
+            translation: "「ニュースは衝撃的だけど、冷静でいようとしている」",
+            explanation: """
+            ・news は -s で終わるが 不可算名詞 → 単数扱い
+            ・同じく -s で終わるのに単数扱いの名詞: physics, mathematics, economics, politics, statistics(学問名)
+            ・ただし statistics が「統計データ」の意味なら複数扱い → The statistics show ~
+            ・学問は単数、データは複数と覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q163",
+            question: "Twenty miles ___ a long way to walk in one day.",
+            choices: ["are", "is", "were", "have been"],
+            correctIndex: 1,
+            translation: "「20マイルは1日で歩くには長い距離だ」",
+            explanation: """
+            ・距離・時間・金額・重さを表す数字+名詞は、ひとまとまりの量として 単数扱い
+            ・Twenty miles を「1つの距離(20マイルという量)」として捉える
+            ・同様: Ten dollars is all I have.(10ドルしか持っていない)
+            ・Five years is a long time.(5年は長い時間だ)
+            ・「20マイル分の長さ」が主語というイメージ
+            """
+        ),
+        GrammarQuestion(
+            id: "q164",
+            question: "Either you or your brother ___ to apologize.",
+            choices: ["has", "have", "are", "were"],
+            correctIndex: 0,
+            translation: "「あなたかあなたのお兄さんのどちらかが謝らなければならない」",
+            explanation: """
+            ・Either A or B / Neither A nor B では、動詞は B(後ろ側) に合わせる
+            ・B = your brother(三人称単数) → has
+            ・語順を逆にすると: Either your brother or you have to apologize.(you に合わせる)
+            ・主語と動詞の一致(subject-verb agreement)の応用
+            ・一見複数主語に見えるが、片方を選ぶ表現なので動詞は近い方に合わせる
+            """
+        ),
+        GrammarQuestion(
+            id: "q165",
+            question: "The police ___ investigating the case.",
+            choices: ["is", "are", "has been", "was"],
+            correctIndex: 1,
+            translation: "「警察はその事件を捜査中だ」",
+            explanation: """
+            ・the police は 常に複数扱い → 動詞は複数形
+            ・「警察」は組織だが、英語では「警察官たち」の集合体として捉える
+            ・同様に常に複数扱いの集合名詞: the people(人々), cattle(牛の群れ)
+            ・一方 the family / the team / the staff はイギリス英語では複数、アメリカ英語では単数寄り
+            ・police officer なら単数(個別の警官)で is でOK
+            """
+        ),
+        GrammarQuestion(
+            id: "q166",
+            question: "There ___ a lot of information available on this topic.",
+            choices: ["are", "is", "were", "have been"],
+            correctIndex: 1,
+            translation: "「このトピックについては多くの情報が入手可能だ」",
+            explanation: """
+            ・information は 不可算名詞 → 単数扱い → is
+            ・a lot of に騙されてはいけない。後ろの名詞が可算か不可算かで動詞が決まる
+            ・a lot of students → are(可算)、a lot of information → is(不可算)
+            ・同じく不可算で間違いやすい: advice, furniture, equipment, luggage, baggage, knowledge, evidence, research
+            """
+        ),
+        GrammarQuestion(
+            id: "q167",
+            question: "Two-thirds of the cake ___ been eaten.",
+            choices: ["has", "have", "is", "are"],
+            correctIndex: 0,
+            translation: "「ケーキの3分の2が食べられた」",
+            explanation: """
+            ・分数 + of + 名詞 では、of の後ろの名詞の可算/不可算で動詞が決まる
+            ・the cake は不可算扱い(1つのケーキ全体) → 単数 has
+            ・もし "Two-thirds of the students have been notified." なら students は複数 → have
+            ・「分数の後ろにある名詞」がカギ。分数の数字につられない
+            """
+        ),
+        GrammarQuestion(
+            id: "q168",
+            question: "Each of the proposals ___ its own merits.",
+            choices: ["have", "has", "are having", "were"],
+            correctIndex: 1,
+            translation: "「それぞれの提案にはそれぞれの利点がある」",
+            explanation: """
+            ・Each of + 複数名詞 + 単数動詞 が原則
+            ・Each は「それぞれ1つずつ」という単数の概念
+            ・同様に Every, Either, Neither も単数動詞を取る
+            ・"Each student has a textbook." も同じパターン
+            ・of the proposals(複数)に騙されないこと、主語は Each
+            """
+        ),
+        GrammarQuestion(
+            id: "q169",
+            question: "A pair of scissors ___ on the desk.",
+            choices: ["are", "is", "were", "have been"],
+            correctIndex: 1,
+            translation: "「ハサミが机の上にある」",
+            explanation: """
+            ・A pair of + 複数名詞は、ひとまとまりの「1組」として単数扱い → is
+            ・scissors / glasses / trousers / pants / jeans は2つの部分から成るので常に複数形だが、a pair of を付けると単数
+            ・"Scissors are sharp."(ハサミは鋭い)→ 複数扱い
+            ・"A pair of scissors is missing."(ハサミが1つ足りない)→ 単数扱い
+            ・pair が単数主語になるので動詞も単数
+            """
+        ),
+        GrammarQuestion(
+            id: "q170",
+            question: "The data ___ that the experiment was successful.",
+            choices: ["shows", "show", "is showing", "has shown"],
+            correctIndex: 1,
+            translation: "「データは実験が成功したことを示している」",
+            explanation: """
+            ・data は 複数形(単数は datum) → 厳密には複数扱い
+            ・学術・科学的文脈では複数扱いが標準 → The data show / The data are
+            ・日常会話・ビジネスでは単数扱いも増えている(The data shows も許容)
+            ・IELTS/Academic Writing では複数扱いが安全
+            ・同様の語: media(複数。単数は medium)、criteria(複数。単数は criterion)、phenomena(複数。単数は phenomenon)
+            """
+        ),
+        GrammarQuestion(
+            id: "q171",
+            question: "He's been working ___ this project ___ three months now.",
+            choices: ["on / since", "on / for", "at / for", "in / since"],
+            correctIndex: 1,
+            translation: "「彼はもう3ヶ月この計画に取り組んでいる」",
+            explanation: """
+            ・work on + プロジェクト/問題 = 「〜に取り組む」のコロケーション
+            ・work at は「(場所)で働く」(I work at Google.) で意味が違う
+            ・期間 three months の前は for(期間を表す前置詞)
+            ・since は 過去の時点(since March / since I joined)と組み合わせる
+            ・日本人が混同しやすい work on / work at / work in を文脈で区別する
+            """
+        ),
+        GrammarQuestion(
+            id: "q172",
+            question: "The book is ___ the desk, ___ the lamp.",
+            choices: ["on / under", "on / next to", "in / on", "at / by"],
+            correctIndex: 1,
+            translation: "「本は机の上、ランプの隣にある」",
+            explanation: """
+            ・on the desk = 机の表面に接触している → on
+            ・next to the lamp = ランプの隣 → next to
+            ・in the desk だと「机の中(引き出しの中)」、at the desk だと「机のところ(座っている)」
+            ・under the lamp は「ランプの下」で意味が違う
+            ・物の位置関係を正確に伝える前置詞の基本+応用
+            """
+        ),
+        GrammarQuestion(
+            id: "q173",
+            question: "We discussed the issue ___ great length.",
+            choices: ["on", "in", "at", "with"],
+            correctIndex: 2,
+            translation: "「私たちはその問題について長時間議論した」",
+            explanation: """
+            ・at length = 「長々と、詳細に」(時間をかけて議論する)
+            ・"at great length" で「非常に詳しく、長時間にわたって」
+            ・in length も使えるが、「物理的な長さ」(2 meters in length)の意味
+            ・on/with length とは言わない
+            ・似た表現: in detail(詳細に)、in depth(深く)
+            """
+        ),
+        GrammarQuestion(
+            id: "q174",
+            question: "He arrived ___ the airport ___ time for his flight.",
+            choices: ["at / on", "to / in", "at / in", "to / on"],
+            correctIndex: 2,
+            translation: "「彼はフライトに間に合うように空港に到着した」",
+            explanation: """
+            ・arrive at + 場所(比較的小さい・特定の場所) = 空港、駅、建物
+            ・arrive in + 場所(都市・国などの大きな場所) = 国・都市
+            ・"arrive in Tokyo" "arrive at Tokyo Station" の使い分け(arrive to は誤り)
+            ・in time = 「間に合って」(余裕を持って到着、遅れずに)
+            ・on time = 「時間通りに」(予定の時刻ぴったり)
+            ・on time は時刻ぴったり、in time は何かに間に合う(微妙な違い)
+            """
+        ),
+        GrammarQuestion(
+            id: "q175",
+            question: "She succeeded ___ passing the exam ___ her third attempt.",
+            choices: ["at / at", "in / on", "on / at", "for / in"],
+            correctIndex: 1,
+            translation: "「彼女は3回目の挑戦で試験に合格した」",
+            explanation: """
+            ・succeed in + -ing = 「〜することに成功する」
+            ・succeed at は使われるが、in が標準。succeed at は「(分野で)成功する」(succeed at business)
+            ・on one's + 序数 + attempt = 「〜回目の挑戦で」
+            ・日付の感覚で on(特定の試行回数の上で)
+            ・IELTS Speakingでも頻出のコロケーション
+            """
+        ),
+        GrammarQuestion(
+            id: "q176",
+            question: "He's responsible ___ the team ___ the manager.",
+            choices: ["for / for", "for / to", "to / for", "of / for"],
+            correctIndex: 1,
+            translation: "「彼はチームに対して責任を持ち、マネージャーに報告する立場だ」",
+            explanation: """
+            ・be responsible for + 物/事 = 「〜に対して責任がある」(担当する対象)
+            ・be responsible to + 人 = 「〜に対して報告義務がある」(上司・上位者)
+            ・for と to の使い分けが重要
+            ・He is responsible for the project.(プロジェクトを担当)
+            ・He is responsible to the CEO.(CEOに報告する立場)
+            ・同じ責任でも、対象が「物・事」なら for、「人(上司)」なら to
+            """
+        ),
+        GrammarQuestion(
+            id: "q177",
+            question: "I prefer tea ___ coffee ___ the morning.",
+            choices: ["than / on", "to / in", "over / at", "than / in"],
+            correctIndex: 1,
+            translation: "「朝はコーヒーよりお茶の方が好きだ」",
+            explanation: """
+            ・prefer A to B = 「BよりAが好き」(than ではない、要注意)
+            ・like A more than B との混同に注意
+            ・prefer に than を使うのは誤り(prefer than は不可)
+            ・in the morning / in the afternoon / in the evening = 時間帯は in
+            ・ただし at night は at(例外として覚える)
+            """
+        ),
+        GrammarQuestion(
+            id: "q178",
+            question: "The book is ___ Shakespeare and is set ___ the 16th century.",
+            choices: ["of / on", "by / in", "from / at", "by / on"],
+            correctIndex: 1,
+            translation: "「その本はシェイクスピアによって書かれ、16世紀を舞台にしている」",
+            explanation: """
+            ・by + 著者/作者 = 「〜による(作品)」
+            ・a book by Shakespeare、a song by Beatles のように、創作者を示すときは by
+            ・be set in + 時代/場所 = 「(物語の)舞台が〜である」
+            ・in the 16th century / in Tokyo / in the future のように、舞台設定は in
+            ・of は「〜の(所有・所属)」、from は「〜から(出身・出所)」で意味が違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q179",
+            question: "I bought this ___ ¥3,000 ___ the internet.",
+            choices: ["at / in", "for / on", "with / at", "by / on"],
+            correctIndex: 1,
+            translation: "「これをネットで3,000円で買った」",
+            explanation: """
+            ・for + 金額 = 「〜の値段で」(取引の金額を示す)
+            ・"I bought it for $20." のように、支払う金額には for
+            ・at price なら "at a low price"(安い価格で)のように price と組み合わせる
+            ・on the internet / on the radio / on TV = メディア・ネット上では on
+            ・in the newspaper(新聞では)も同じ感覚で覚える
+            """
+        ),
+        GrammarQuestion(
+            id: "q180",
+            question: "He is good ___ math but bad ___ remembering names.",
+            choices: ["in / at", "at / at", "for / with", "at / in"],
+            correctIndex: 1,
+            translation: "「彼は数学は得意だが、名前を覚えるのは苦手だ」",
+            explanation: """
+            ・be good at / bad at + 名詞/動名詞 = 「〜が得意/苦手」
+            ・両方とも at で揃える(in や for は誤り)
+            ・動名詞の前でも at remembering(at + -ing) でOK
+            ・似た形容詞: skilled at / experienced at / clever at もすべて at
+            ・一方、be good for は「〜にとって良い」で別の意味(Exercise is good for health.)
+            """
+        ),
+        GrammarQuestion(
+            id: "q181",
+            question: "___ I really need is a long vacation.",
+            choices: ["That", "It", "What", "Which"],
+            correctIndex: 2,
+            translation: "「私が本当に必要なのは長い休暇だ」",
+            explanation: """
+            ・What + S + V = 「〜こと/もの」(先行詞を含む関係代名詞)
+            ・文の主語の位置で「私が必要としているもの」を表す → What
+            ・= "The thing that I really need..." と言い換え可能
+            ・That を文頭に置くと接続詞になり、主語の役割を果たせない
+            ・It は形式主語、Which は先行詞が必要 → ここでは不可
+            """
+        ),
+        GrammarQuestion(
+            id: "q182",
+            question: "___ surprised me most was his sudden change of heart.",
+            choices: ["That", "It", "What", "Which"],
+            correctIndex: 2,
+            translation: "「私が一番驚いたのは、彼の突然の心変わりだった」",
+            explanation: """
+            ・What + V で「〜したこと」を表す主語
+            ・主語+動詞のセットがない場合(What surprised me)も、What 自体が主語になれる
+            ・= "The thing that surprised me most..." と同じ
+            ・構文「What 〜 was 〜」は「〜こと/もの」を強調する自然な表現
+            ・IELTS Writing でも使えるフォーマル度の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q183",
+            question: "___ matters most is your effort, not the result.",
+            choices: ["That", "It", "What", "Whatever"],
+            correctIndex: 2,
+            translation: "「最も重要なのは結果ではなく努力だ」",
+            explanation: """
+            ・What matters = 「重要なこと」(慣用的な言い回し)
+            ・"What matters is ~" は会話・文章で頻出のフレーズ
+            ・Whatever matters は「重要なものは何でも」と意味が広がりすぎる
+            ・That/It では構文上、主語の役割を果たせない
+            ・似た定番フレーズ: What counts is ~、What concerns me is ~
+            """
+        ),
+        GrammarQuestion(
+            id: "q184",
+            question: "___ surprises me ___ that he hasn't called yet.",
+            choices: ["What / what", "What / is", "That / is", "It / that"],
+            correctIndex: 1,
+            translation: "「私が驚いているのは、彼がまだ電話してこないことだ」",
+            explanation: """
+            ・What + V(主語) + is/was + that 節(補語) の構文
+            ・What surprises me = 私を驚かせること(主語)
+            ・is = 連結動詞
+            ・that he hasn't called yet = 補語(主語の正体を説明)
+            ・a) は2つ目に what が来て構造が崩れる
+            ・IELTS で「強調したいこと」を述べる定番パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q185",
+            question: "___ I like about her ___ her sense of humor.",
+            choices: ["That / is", "What / is", "Which / is", "What / are"],
+            correctIndex: 1,
+            translation: "「彼女について好きなところは、ユーモアのセンスだ」",
+            explanation: """
+            ・What + S + V(主語) + is + 補語 の構文
+            ・What I like about her = 彼女について私が好きなこと
+            ・her sense of humor は単数 → 動詞も単数 is
+            ・もし補語が複数なら are(What I like about her are her smile and her laugh.)
+            ・about her の前置詞句があっても、What で始まる名詞節は単数扱い
+            """
+        ),
+        GrammarQuestion(
+            id: "q186",
+            question: "If I ___ you, I wouldn't trust him so easily.",
+            choices: ["am", "was", "were", "had been"],
+            correctIndex: 2,
+            translation: "「もし私があなたなら、彼をそんなに簡単に信用しない」",
+            explanation: """
+            ・If I were you = 「もし私があなたなら」(現在の事実と反対の仮定)
+            ・仮定法過去では be動詞は人称に関係なく were が標準
+            ・現代英語の口語では was も許容(If I was you...)だが、フォーマルでは were
+            ・助言・忠告の定番フレーズ "If I were you, I would ~"
+            ・had been は仮定法過去完了で時制が合わない(後半は would not trust = 現在の話)
+            """
+        ),
+        GrammarQuestion(
+            id: "q187",
+            question: "I wish I ___ harder when I was in school.",
+            choices: ["studied", "have studied", "was studying", "had studied"],
+            correctIndex: 3,
+            translation: "「学生時代にもっと勉強しておけばよかった」",
+            explanation: """
+            ・I wish + 仮定法過去完了 (had + 過去分詞) = 過去のことへの後悔
+            ・「(過去に)〜していたらよかったのに」 → 過去の事実と反対
+            ・"when I was in school" という過去の時点 → さらに前の過去 → 過去完了
+            ・現在のことなら "I wish I studied harder."(仮定法過去)
+            ・後悔・反省を表す典型的な仮定法過去完了
+            """
+        ),
+        GrammarQuestion(
+            id: "q188",
+            question: "If it ___ for your help, I would have failed.",
+            choices: ["wasn't", "weren't", "hadn't been", "isn't"],
+            correctIndex: 2,
+            translation: "「あなたの助けがなかったら、私は失敗していただろう」",
+            explanation: """
+            ・後半 "would have failed" → 仮定法過去完了
+            ・If it had not been for ~ = 「もし(過去に)〜がなかったら」
+            ・短縮形の hadn't been を選ぶ
+            ・現在のことなら "If it weren't for ~"(現在)で wouldn't fail と続く
+            ・時制を後半の主節と合わせる(過去完了+would have 過去分詞)
+            """
+        ),
+        GrammarQuestion(
+            id: "q189",
+            question: "He talks ___ he knew everything, but he doesn't.",
+            choices: ["like", "as if", "so that", "when"],
+            correctIndex: 1,
+            translation: "「彼は何でも知っているかのように話すが、実際は知らない」",
+            explanation: """
+            ・as if / as though + 仮定法過去 = 「まるで〜かのように」(事実と反対)
+            ・実際は「全部は知らない」 → 仮定法で表現する
+            ・後ろの "but he doesn't" が「事実と反対」のヒント
+            ・like は口語で同じ意味で使うが、フォーマルでは as if が標準
+            ・as if + 仮定法過去 → 現在の事実と反対、as if + 仮定法過去完了 → 過去の事実と反対
+            """
+        ),
+        GrammarQuestion(
+            id: "q190",
+            question: "It's high time you ___ a decision.",
+            choices: ["make", "made", "have made", "had made"],
+            correctIndex: 1,
+            translation: "「もうそろそろ決断する時だよ」",
+            explanation: """
+            ・It's (high) time + S + 過去形 = 「もう〜してもいい頃だ」(まだしていないことへの催促)
+            ・現在の話なのに過去形を使うのが特徴 → 仮定法の特殊用法
+            ・「まだ決断していない」現在の状況に対する催促
+            ・"It's time you went to bed."(もう寝る時間だよ)も同じパターン
+            ・had made(過去完了)は「もうとっくに決めているべきだった」と更に強い催促
+            """
         )
     ]
 }
