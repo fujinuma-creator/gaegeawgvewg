@@ -614,6 +614,627 @@ enum GrammarMCQSeed {
             ・"Nothing to speak of." = 大したことではない
             ・ビジネスでは speak about、日常では talk about が一般的
             """
+        ),
+        GrammarQuestion(
+            id: "q241",
+            question: "What are you guys ___ ___?",
+            choices: ["talking / about", "talking / on", "saying / about", "speaking / for"],
+            correctIndex: 0,
+            translation: "「君たち何の話してるの?」",
+            explanation: """
+            ・talk about + 話題 = 「〜について話す」(超頻出・カジュアル)
+            ・talk to/with + 人 = 〜と話す
+            ・"What are you talking about?" は驚き・困惑の鉄板
+            ・"Now you're talking!" = そうこなくっちゃ!
+            ・"Talk about + 名詞!" は「まさに〜だ!」の感嘆: Talk about lucky!
+            ・"Speaking of which ~" = そう言えば〜
+            ・speak(改まった) vs talk(カジュアル・双方向)
+            """
+        ),
+        GrammarQuestion(
+            id: "q242",
+            question: "I need to ___ ___ you about something important.",
+            choices: ["talk / to", "talk / about", "speak / for", "say / to"],
+            correctIndex: 0,
+            translation: "「大事な話があるんだ」",
+            explanation: """
+            ・talk to + 人 = 「〜と話す」(カジュアル・超頻出)
+            ・talk with + 人 = 〜と話し合う(やや改まった)
+            ・"Can I talk to you?" / "We need to talk."(やや重い)
+            ・"I'm not talking to you." = もう口きかない(怒り)
+            ・別れ際の定番: "Talk to you later."
+            ・電話の決まり文句: "Who am I talking to?"
+            ・日常会話ではほぼ talk to を使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q243",
+            question: "This will take a few hours, ___ ___ all day.",
+            choices: ["if / not", "when / not", "but / not", "and / not"],
+            correctIndex: 0,
+            translation: "「これには数時間、もしかして一日中かかるかも」",
+            explanation: """
+            ・if not = 「もしそうでなければ・〜ないにせよ」条件節の省略形
+            ・「もしそうでないなら」: "Are you coming? If not, let me know."
+            ・「〜ないにせよ」: "It'll take hours, if not days."
+            ・「〜でなければ何だ?」(反語): "If not now, when?"
+            ・"Good, if not great." / "Difficult, if not impossible."
+            ・"Most, if not all." = ほとんど、いや全てかも
+            ・「控えめに見積もって〜、もしかして〜」の幅を持たせる表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q244",
+            question: "I ___ wanted to say thanks.",
+            choices: ["just", "only", "merely", "Both A and B"],
+            correctIndex: 3,
+            translation: "「ただお礼が言いたかっただけ」",
+            explanation: """
+            ・just は多義的で口語超頻出: ただ〜だけ/ちょうど/今しがた/まさに
+            ・"Just a moment." / "Just in time." / "I just got here."
+            ・"Just stop it!" = 強調「もうやめてよ!」
+            ・口語決まり文句: Just kidding / Just saying / Just relax / Just because
+            ・要求や発言をやわらげる効果が大: Wait!(強) vs Just wait(柔らかい)
+            ・only も「ただ〜だけ」の意味で使えるため両方正解
+            ・口語では just がより自然
+            """
+        ),
+        GrammarQuestion(
+            id: "q245",
+            question: "___ ___ for the bus, I read a book.",
+            choices: ["While / waiting", "Where / waiting", "When / wait", "While / wait"],
+            correctIndex: 0,
+            translation: "「バスを待っている間、本を読んだ」",
+            explanation: """
+            ・while + V-ing = 「〜している間に」(主語と be動詞の省略)
+            ・While waiting = While I was waiting
+            ・主語が主節と同じ場合に省略可能
+            ・"While cooking, I listen to music." / "While driving, don't text."
+            ・while(接続詞 + 節/V-ing) vs during(前置詞 + 名詞)
+            ・○ During the meeting / × While the meeting
+            ・"While you're at it, ~" = そのついでに〜(便利な口語表現)
+            """
+        ),
+        GrammarQuestion(
+            id: "q246",
+            question: "I ate the ___ pizza by myself.",
+            choices: ["all", "every", "whole", "total"],
+            correctIndex: 2,
+            translation: "「ピザを一人で丸ごと食べた」",
+            explanation: """
+            ・whole = 「全体の・丸ごと」単数の可算名詞を修飾
+            ・the whole + 単数名詞 = 〜全体
+            ・"The whole story." / "The whole point." / "A whole new world."
+            ・all + 複数/不可算 vs whole + 単数
+            ・口語の万能フレーズ: the whole thing(全体)
+            ・"I missed the whole thing." / "Forget the whole thing."
+            ・強調の重複: the whole entire ~
+            """
+        ),
+        GrammarQuestion(
+            id: "q247",
+            question: "We spent the ___ day at the beach.",
+            choices: ["entire", "entirely", "every", "all"],
+            correctIndex: 0,
+            translation: "「一日中ビーチで過ごした」",
+            explanation: """
+            ・entire = 「全体の・全部の」whole とほぼ同じだがやや改まった強調
+            ・the entire + 単数名詞 = 〜全体
+            ・whole(一般・カジュアル) vs entire(改まった・強調)
+            ・"The entire room was silent." / "My entire life ~"
+            ・よく組む名詞: entire family / entire collection / entire population
+            ・副詞形 entirely: "Not entirely true." / "I entirely agree."
+            ・プレゼンや書き言葉で強調したいときは entire の方が映える
+            """
+        ),
+        GrammarQuestion(
+            id: "q248",
+            question: "I'd like coffee, ___.",
+            choices: ["as well", "as much", "too well", "so well"],
+            correctIndex: 0,
+            translation: "「私もコーヒーをお願い」",
+            explanation: """
+            ・as well = 「〜も」文末表現、too よりやや改まった
+            ・also(文中・改まった) / too(文末・カジュアル) / as well(文末・やや改まった)
+            ・"He came as well." / "Why not invite Tom as well?"
+            ・区別: as well(単独) vs as well as + 名詞(〜と同様に・〜だけでなく)
+            ・"He speaks French as well as Spanish."
+            ・might as well / may as well = どうせなら〜(諦め混じり)
+            ・イギリス英語では as well が too より頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q249",
+            question: "___, prevention is better than cure.",
+            choices: ["In many cases", "Many in cases", "In case many", "On many cases"],
+            correctIndex: 0,
+            translation: "「多くの場合、予防は治療に勝る」",
+            explanation: """
+            ・in many cases = 「多くの場合」フォーマル寄りの副詞句
+            ・in most cases / in some cases / in this case
+            ・"In many cases, it works." / "In most cases, yes."
+            ・"Just in case." = 念のため
+            ・"Bring a coat, just in case." / "in case of fire" / "in case of emergency"
+            ・類似: often / generally / usually / as a rule(概して)
+            ・ビジネスやプレゼンで論じる時の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q250",
+            question: "I didn't ___ ___ ___. What a surprise!",
+            choices: ["see / it / coming", "saw / it / coming", "see / coming / it", "seen / it / come"],
+            correctIndex: 0,
+            translation: "「予想外だった!何という驚き!」",
+            explanation: """
+            ・see + 物 + coming = 「〜を予測する・予感する」口語表現
+            ・"I didn't see that coming!" = 予想外!
+            ・"I saw it coming a mile away." = はるか前から予測してた
+            ・"We should have seen this coming." = 予測すべきだった
+            ・類似表現: Out of the blue / Caught me off guard / Came out of nowhere
+            ・別れ・解雇・サプライズ・悪い知らせなどショッキングな出来事に頻出
+            ・「気配を察する」というニュアンスで日常会話に欠かせない
+            """
+        ),
+        GrammarQuestion(
+            id: "q251",
+            question: "___ ___ until you reach the corner.",
+            choices: ["Keep / walking", "Keep / walk", "Keep / to walk", "Keeping / walk"],
+            correctIndex: 0,
+            translation: "「角に着くまで歩き続けて」",
+            explanation: """
+            ・keep + V-ing = 「〜し続ける」継続表現
+            ・keep on + V-ing = 〜し続ける(強調)
+            ・"Keep going!" / "Keep trying." / "Don't keep me waiting." / "Keep it up!"
+            ・励まし: "Keep at it." / "Keep your head up."
+            ・keep + 形容詞: Keep quiet / Keep calm
+            ・keep + 名詞 + 形容詞: "Keep the door open."
+            ・continue to V(フォーマル) vs keep V-ing(口語的)
+            """
+        ),
+        GrammarQuestion(
+            id: "q252",
+            question: "I love fruits ___ ___ apples and oranges.",
+            choices: ["such / as", "such / like", "like / as", "as / such"],
+            correctIndex: 0,
+            translation: "「リンゴやオレンジのような果物が好き」",
+            explanation: """
+            ・such as = 「〜のような」具体例の列挙(フォーマル)
+            ・like + 例 = 〜のような(カジュアル)
+            ・"Fruits such as apples"(書き言葉) vs "Fruits like apples"(話し言葉)
+            ・"colors such as red, blue, and green"
+            ・口語では like がほぼ常用、エッセイやレポートでは such as
+            ・派生表現: as such = そのため・それ自体(次問詳述)
+            """
+        ),
+        GrammarQuestion(
+            id: "q253",
+            question: "He's the boss, and ___ ___, he makes the final decisions.",
+            choices: ["such / as", "as / such", "like / that", "so / much"],
+            correctIndex: 1,
+            translation: "「彼はボスで、そういうわけで最終決定を下す」",
+            explanation: """
+            ・as such = 「そのため・それ自体・そういうわけで」フォーマルな接続副詞
+            ・「結果」: "As such, we proceed."
+            ・「限定」: "It's not a problem as such." = それ自体は問題ではない
+            ・"He's not a teacher as such, but he teaches." = 厳密には教師じゃないが教えている
+            ・such as(例の導入) vs as such(結論) ── 語順で意味が全く逆転
+            ・フォーマルな結論: therefore / thus / hence / as such
+            ・アカデミックな英語で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q254",
+            question: "I'm ___ sorry for what happened.",
+            choices: ["genuine", "generous", "genuinely", "genuinity"],
+            correctIndex: 2,
+            translation: "「起きてしまったことを心からお詫びします」",
+            explanation: """
+            ・genuinely = 「心から・本当に」副詞、誠実さを強調
+            ・really(カジュアル・多用) vs genuinely(誠実さ強調・改まった) vs truly(フォーマル)
+            ・"I'm genuinely sorry." / "Genuinely surprised." / "Genuinely interested."
+            ・効果的な場面: 謝罪・興味の表明・称賛
+            ・"Genuinely impressive!" = 本当に素晴らしい
+            ・genuine(形容詞): genuine smile / genuine concern / genuine leather
+            ・お世辞ではなく本心からを強調したい時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q255",
+            question: "___ ___ your weekend?",
+            choices: ["How / was", "How / is", "What / was", "How / it was"],
+            correctIndex: 0,
+            translation: "「週末はどうだった?」",
+            explanation: """
+            ・How was + 名詞? = 「〜はどうだった?」過去の経験を尋ねる定番
+            ・"How was your day?" / "How was the trip?" / "How was it?"
+            ・返答例: Pretty good! / Not bad. / Could've been better. / Awesome! / Tiring.
+            ・類似: How's it going?(現在) / How are things? / How did it go?(出来事)
+            ・区別: How is ~?(現在) / How was ~?(過去) / How will ~ be?(未来)
+            ・"How was your weekend?" は月曜の朝の英語圏の挨拶代わり
+            """
+        ),
+        GrammarQuestion(
+            id: "q256",
+            question: "___ ___ on a tropical beach right now.",
+            choices: ["Imagine / be", "Imagine / to be", "Imagine / being", "Imagined / be"],
+            correctIndex: 2,
+            translation: "「今、南国のビーチにいることを想像してみて」",
+            explanation: """
+            ・imagine + V-ing = 「〜することを想像する」動名詞を取る
+            ・imagine + 名詞 / + that 節 も可
+            ・"Imagine being rich!" / "Can you imagine living abroad?"
+            ・動名詞のみを取る動詞: enjoy / avoid / finish / suggest / consider / mind / miss
+            ・口語の感嘆: "Just imagine!" / "Can you imagine?" / "I can't imagine."
+            ・驚きや空想を表現するときに頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q257",
+            question: "You ___ ___ tired after such a long flight.",
+            choices: ["must / be", "must / been", "must / have", "have / been"],
+            correctIndex: 0,
+            translation: "「こんなに長いフライトの後、お疲れでしょう」",
+            explanation: """
+            ・must be + 形容詞 = 「〜に違いない」現在の推量
+            ・must have + 過去分詞 = 「〜だったに違いない」過去の推量
+            ・"You must be tired." / "That must be expensive."
+            ・must の二大用法: 義務 vs 推量
+            ・推量の確信度: must(90%+) > should(70%) > might/may(50%) > could(40%)
+            ・過去の推量: "He must have left." / "It must have been hard."
+            ・「お察しします」のニュアンスで気遣いを表す表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q258",
+            question: "Are you ___ ___ the exam?",
+            choices: ["ready / for", "ready / to", "prepared / about", "ready / with"],
+            correctIndex: 0,
+            translation: "「試験の準備はできた?」",
+            explanation: """
+            ・ready for + 名詞 = 「〜の準備ができている」
+            ・ready to + 動詞 = 〜する準備ができている
+            ・"Ready for the trip?" / "I'm ready for anything." / "Ready for bed?"
+            ・"Ready for breakfast?"(名詞) vs "Ready to eat?"(動詞)
+            ・決まり文句: "Ready or not, here I come!"(かくれんぼ)
+            ・派生: all set / good to go / primed and ready
+            ・"Ready?" は「もう行ける?」の超頻出表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q259",
+            question: "___ ___ shouldn't be made hastily.",
+            choices: ["Such / decisions", "Decisions / such", "These / such", "Such / decision"],
+            correctIndex: 0,
+            translation: "「そのような決定は急いで下すべきではない」",
+            explanation: """
+            ・such + 複数/不可算名詞 = 「そのような〜」
+            ・such a + 単数可算名詞: "Such a beautiful day!"
+            ・"Such decisions"(複数) / "Such information"(不可算) / "Such a decision"(単数)
+            ・強調: "Such fun!" / "Such style!" / "Such talent!"
+            ・so + 形容詞(so beautiful) vs such a + 形容詞 + 名詞(such a beautiful day)
+            ・口語の感嘆: "Such a ~!" は「なんて〜!」の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q260",
+            question: "I'd be ___ ___ help you with this.",
+            choices: ["delighted / to", "delighted / for", "delight / to", "delight / for"],
+            correctIndex: 0,
+            translation: "「喜んでお手伝いいたします」",
+            explanation: """
+            ・be delighted to + 動詞 = 「喜んで〜する」フォーマル寄り
+            ・"I'd be delighted to come." / "Delighted to meet you."
+            ・喜びの強度: happy < pleased < delighted < thrilled < over the moon < stoked
+            ・ビジネス頻出: "We're delighted to announce ~" / "Delighted to have you on board."
+            ・招待や提案を快諾する時、フォーマルさを保ちつつ熱意を伝える最適表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q261",
+            question: "\"Wanna grab dinner tomorrow?\" \"___ ___!\"",
+            choices: ["I'd / love to", "I love / it", "I'm / loving", "I'd / like for"],
+            correctIndex: 0,
+            translation: "「『明日ご飯どう?』『ぜひ!』」",
+            explanation: """
+            ・I'd love to = 「ぜひしたい」超頻出の快諾表現(I would love to の短縮)
+            ・"I'd love to!" / "I'd love to come." / "I'd love to try."
+            ・丁寧な断り: "I'd love to, but I'm busy." / "I'd love to, but I have plans."
+            ・強度: I'd like to < I'd love to < I'd be delighted to
+            ・口語カジュアル: "Love to!" / "Sure, why not!" / "Sounds great!"
+            ・誘いに対する応答として最重要表現の一つ
+            """
+        ),
+        GrammarQuestion(
+            id: "q262",
+            question: "___ ___ he forgot our meeting.",
+            choices: ["It seems / that", "It seemed / that", "Seems / it", "That seems"],
+            correctIndex: 0,
+            translation: "「彼は会議を忘れたようだ」",
+            explanation: """
+            ・It seems that + 文 = 「〜のようだ」間接的な推量
+            ・It seems + 形容詞 / It seems like + 名詞/文 も可
+            ・"It seems that he's late." / "It seems like rain." / "It seems impossible."
+            ・口語では that がよく省略: "It seems he forgot." / "Seems he forgot."(it も省略)
+            ・類似: It appears that(フォーマル) / It looks like(カジュアル) / Apparently
+            ・確信度: It must be(強) > It seems(中) > It could be(弱)
+            ・"Seems about right." / "It seems so." / "So it seems."
+            """
+        ),
+        GrammarQuestion(
+            id: "q263",
+            question: "\"He doesn't like my haircut.\" \"___?\"",
+            choices: ["Who cares", "Who caring", "Whose care", "Who about"],
+            correctIndex: 0,
+            translation: "「『彼が私の髪型を気に入らないって』『どうでもいいじゃん』」",
+            explanation: """
+            ・Who cares? = 「誰が気にする?」=「気にしない・どうでもいい」反語的口語
+            ・"Who cares what he thinks?" / "Who cares anyway?"
+            ・段階: I don't mind(柔らかい) → I don't care(中立) → Who cares?(強い) → As if I care!(皮肉)
+            ・注意: 相手の悩みに対して使うとデリカシー欠落: A: I lost my keys. B: Who cares? ← 失礼
+            ・軽い話題や自虐の場面で使うのが安全
+            ・派生: What does it matter? / So what? / Big deal.
+            """
+        ),
+        GrammarQuestion(
+            id: "q264",
+            question: "This is the place ___ ___ ___.",
+            choices: ["where / we / met", "we / where / met", "where / met / we", "we / met / where"],
+            correctIndex: 0,
+            translation: "「ここが私たちが出会った場所だ」",
+            explanation: """
+            ・where + 主語 + 動詞 = 場所を表す関係副詞
+            ・the place where SV / the city where SV / the country where SV
+            ・"This is where I work." / "Tokyo is where I grew up."
+            ・関係副詞 where = in/at which と置き換え可
+            ・先行詞なしでも使える: "Show me where to go." / "That's where you're wrong."
+            ・口語の決まり文句: "Where I come from ~" / "Where I'm from ~"
+            ・文化の違いを語る時の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q265",
+            question: "I'm learning Spanish, and I'm ___ ___ French.",
+            choices: ["also / studying", "studying / also", "also / study", "study / also"],
+            correctIndex: 0,
+            translation: "「スペイン語を学んでいて、フランス語も勉強している」",
+            explanation: """
+            ・be動詞 + also + ~ / also + 一般動詞 / 助動詞 + also + V
+            ・"I'm also studying French." / "He's also coming."
+            ・also(中立・フォーマル) / too(文末・カジュアル) / as well(文末・やや改まった)
+            ・"I also like coffee." / "I like coffee too." / "I like coffee as well." 全て同じ
+            ・文頭の Also: "Also, we need bread."(それと、パンも要る)
+            ・進行形と組み合わせる時の語順を間違えやすいので注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q266",
+            question: "The man ___ ___ ___ the meeting was late.",
+            choices: ["who / led / yesterday", "which / led / yesterday", "who / leading / yesterday", "was / led / yesterday"],
+            correctIndex: 0,
+            translation: "「昨日会議を進行した男性は遅刻した」",
+            explanation: """
+            ・先行詞(人) + who + 動詞 = 関係代名詞 who、人を後ろから説明
+            ・"The girl who called me." / "Anyone who agrees." / "People who travel."
+            ・who(主格) vs whom(目的格・フォーマル・古め)
+            ・口語では whom はあまり使わず who か that で代用
+            ・目的格は省略可能: "The man I met." / "The book I read."
+            ・"Whoever wins gets the prize." / "I'm the one who called."
+            """
+        ),
+        GrammarQuestion(
+            id: "q267",
+            question: "I ___ ___ where my keys are.",
+            choices: ["have no / clue", "have a / clue", "don't have / clue", "am not / clue"],
+            correctIndex: 0,
+            translation: "「鍵がどこにあるかさっぱり分からない」",
+            explanation: """
+            ・have no clue = 「全く分からない」強い否定の口語表現
+            ・"I have no clue." / "No clue!" / "Not a clue." / "He doesn't have a clue."
+            ・段階: not sure(弱) < don't know(中) < no idea(強) < no clue(強・口語) < Beats me(カジュアル)
+            ・clue(手がかり)の他: "Got a clue?" / "Give me a clue." / "He's clueless."
+            ・派生: clueless(形容詞・何も分かっていない) "Totally clueless."
+            ・困った時、答えに窮した時のリアクション
+            """
+        ),
+        GrammarQuestion(
+            id: "q268",
+            question: "___ ___ my friends came to the party.",
+            choices: ["None / of", "No / of", "Not / of", "Nothing / of"],
+            correctIndex: 0,
+            translation: "「友達の誰もパーティーに来なかった」",
+            explanation: """
+            ・none of + 限定された名詞 = 「〜のうち一人/一つも〜ない」強い否定
+            ・"None of us agree." / "None of this matters."
+            ・"None of your business." = お前に関係ない(決まり文句)
+            ・動詞の一致: 正式には単数、口語では複数も可
+            ・no + 名詞(一般) vs none of + 限定名詞(特定の集団から)
+            ・"None other than ~" = 他ならぬ〜 / "Second to none." = 誰にも劣らない(最高)
+            ・"None for me, thanks." = 私はいらない、ありがとう
+            """
+        ),
+        GrammarQuestion(
+            id: "q269",
+            question: "\"What did you do today?\" \"___ much.\"",
+            choices: ["Anything", "Nothing", "Something", "Everything"],
+            correctIndex: 1,
+            translation: "「『今日何した?』『大したことしてない』」",
+            explanation: """
+            ・Nothing much. = 別に何も(近況の返事の鉄板)
+            ・"Nothing's wrong." / "It's nothing." = 大したことない
+            ・nothing to + V: "Nothing to do." / "Nothing to say." / "Nothing to worry about."
+            ・強調: Nothing at all / Absolutely nothing / Sweet nothing(甘い囁き)
+            ・"A: Thank you so much! B: Oh, it's nothing." = いえいえ、大したことじゃない
+            ・「気にしないで」のニュアンスで応答に頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q270",
+            question: "This is ___ ___ ___ big as that one.",
+            choices: ["twice / as / as", "two / times / as", "twice / more / than", "two / as / as"],
+            correctIndex: 0,
+            translation: "「これはあれの2倍の大きさだ」",
+            explanation: """
+            ・twice as + 形容詞 + as = 「〜の2倍…」倍数比較
+            ・three times as + 形容詞 + as = 〜の3倍…
+            ・half as + 形容詞 + as = 〜の半分の…
+            ・"Twice as big." / "Three times as expensive." / "Half as long."
+            ・2倍 = twice、3倍以上 = times(× two times は通常 twice を使う)
+            ・口語: "Twice the size." / "Twice the price." / "Twice the fun."
+            ・「半分」「2倍」を表現する時の必須パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q271",
+            question: "This is the ___ day of my week.",
+            choices: ["busy", "busier", "busiest", "most busy"],
+            correctIndex: 2,
+            translation: "「今週で一番忙しい日だ」",
+            explanation: """
+            ・busy の最上級は busiest(-y で終わる形容詞は y → i + est)
+            ・happy → happiest / easy → easiest / pretty → prettiest
+            ・短い形容詞: -est、長い形容詞: most、不規則: good→best / bad→worst
+            ・"The busiest day." / "The busiest time of year."
+            ・最上級の強調: by far the busiest / easily the busiest / the very busiest
+            ・「これまでで一番〜」を表現する時の基本
+            """
+        ),
+        GrammarQuestion(
+            id: "q272",
+            question: "___ ___ me, I prefer coffee over tea.",
+            choices: ["As / for", "For / me", "About / for", "As / to"],
+            correctIndex: 0,
+            translation: "「私はと言えば、紅茶よりコーヒーが好き」",
+            explanation: """
+            ・as for + 名詞/代名詞 = 「〜については・〜に関して言えば」話題転換
+            ・"As for me, I'm fine." / "As for tomorrow, I'm free."
+            ・類似: about / regarding / with regard to(フォーマル) / when it comes to
+            ・区別: "As for me"(話題切り替え) vs "About me"(中立) vs "When it comes to me"(強調)
+            ・通常は文頭で話題を切り替える
+            ・複数の話題を扱う時に「次は〜については」と切り替える便利な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q273",
+            question: "This is ___ ___ the best restaurant in town.",
+            choices: ["by / far", "by / much", "of / far", "much / by"],
+            correctIndex: 0,
+            translation: "「ここは町で圧倒的に最高のレストランだ」",
+            explanation: """
+            ・by far = 「はるかに・圧倒的に」最上級や比較級を強める
+            ・"By far the best." / "By far the most expensive." / "Better by far."
+            ・強さ: by far > far > much > a lot > slightly > a bit
+            ・位置: by far + 最上級(by far the best) / 比較級 + by far(better by far) 両方可
+            ・口語: Easily the best / Hands down the best / By a long shot
+            ・「他とは段違い」を伝える鉄板表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q274",
+            question: "I ___ ___ ___ for two hours and I'm exhausted.",
+            choices: ["have / been / running", "had / been / running", "am / running / been", "have / been / run"],
+            correctIndex: 0,
+            translation: "「2時間走り続けてヘトヘトだ」",
+            explanation: """
+            ・have been + V-ing = 現在完了進行形「ずっと〜している」
+            ・had been + V-ing = 過去完了進行形「ずっと〜していた」
+            ・"I've been running for two hours." / "She's been working hard."
+            ・have V-ed(状態的) vs have been V-ing(動作的・継続強調)
+            ・状態動詞は進行形不可: × I've been knowing him. ○ I've known him.
+            ・時間表現: for + 期間 / since + 起点 / all day / lately / recently
+            ・"Have you been working out?" / "I've been meaning to call."
+            """
+        ),
+        GrammarQuestion(
+            id: "q275",
+            question: "I haven't seen him ___ last summer.",
+            choices: ["for", "since", "from", "by"],
+            correctIndex: 1,
+            translation: "「去年の夏以来、彼に会っていない」",
+            explanation: """
+            ・since + 過去の時点/節 = 「〜以来・〜から」起点
+            ・for + 期間(for two hours) vs since + 起点(since 2020)
+            ・"I haven't seen her since Monday." / "Since when?" = いつから?(驚き)
+            ・"Ever since ~" = 〜以来ずっと
+            ・他の意味: 理由「〜なので」(Since you're here, let's start.)
+            ・組合せ: long since(とっくに) / since then / since birth
+            ・現在完了形と頻繁にペアになる
+            """
+        ),
+        GrammarQuestion(
+            id: "q276",
+            question: "The book is ___ the table.",
+            choices: ["on", "in", "at", "above"],
+            correctIndex: 0,
+            translation: "「本は机の上にある」",
+            explanation: """
+            ・on = 「〜の上に(接触している)」前置詞
+            ・主な意味: 接触(on the table) / 日付(on Monday) / 乗り物(on the train) / 状態(on fire) / メディア(on TV)
+            ・"On the way." / "On time." / "On purpose." / "On sale."
+            ・場所の前置詞: at(地点) / in(内部) / on(表面) / above(真上) / over(覆う) / under(真下)
+            ・口語フレーズ: on me(私のおごり) / on the house(店のサービス) / on board(賛成・乗船)
+            ・前置詞は感覚的に覚える必要があり、ネイティブの直感が問われる
+            """
+        ),
+        GrammarQuestion(
+            id: "q277",
+            question: "I'll go to the party ___ ___ it rains.",
+            choices: ["how / even", "even / if", "even / when", "how / when"],
+            correctIndex: 1,
+            translation: "「たとえ雨が降っても、パーティーに行く」",
+            explanation: """
+            ・even if + 仮定 = 「たとえ〜でも」(雨かどうか分からない)
+            ・even though + 事実 = 〜にもかかわらず(実際に雨が降っている)
+            ・"Even if it rains, we'll go." / "Even if you ask, no."
+            ・パターン: Even if you're right ~ / Even if I had time ~ / Even if it costs more ~
+            ・even + 接続詞/前置詞: even when / even after / even before
+            ・「条件に関わらず〜する」という強い意志を表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q278",
+            question: "___ ___ ___ ___ president will face many challenges.",
+            choices: ["The / one / who / becomes", "Who / the / one / becomes", "The / who / one / becomes", "Becomes / the / one / who"],
+            correctIndex: 0,
+            translation: "「大統領になる人は多くの困難に直面するだろう」",
+            explanation: """
+            ・the one who + V = 「〜する人」関係代名詞構文
+            ・"The one who called." / "I'm the one who did it."
+            ・強調: "You're the one!" / "He's the one I love." / "She's not the one."
+            ・「運命の人」: the one(恋愛) / the right one / the chosen one
+            ・口語応用: "Are you the one who called?" / "The one who pays decides."
+            ・人を特定して説明する基本構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q279",
+            question: "I don't have ___ ___ ___ penny.",
+            choices: ["even / a / single", "only / a / single", "just / one / single", "even / one / and"],
+            correctIndex: 0,
+            translation: "「一銭たりとも持っていない」",
+            explanation: """
+            ・not + even a single + 名詞 = 「たった一つも〜ない」強い否定の強調
+            ・"Not even a single penny." / "Not even a single word." / "Not a single one."
+            ・段階: no penny(中立) < not a single penny(強) < not even a single penny(最強)
+            ・"not a single soul"(一人も) / "not a single drop"(一滴も) / "not a single moment"(一瞬たりとも)
+            ・"Every single + 名詞" = 〜の一つ一つ全て(逆の強調)
+            ・「全く〜ない」を強調する時の最終兵器
+            """
+        ),
+        GrammarQuestion(
+            id: "q280",
+            question: "I have ___ ___ ___ 5 dollars in my wallet.",
+            choices: ["no / more / than", "not / more / than", "no / less / than", "no / much / than"],
+            correctIndex: 0,
+            translation: "「財布にはたった5ドルしかない」",
+            explanation: """
+            ・no more than + 数 = 「たった〜(しかない)」少なさを強調
+            ・no less than + 数 = 〜も(多さを強調)
+            ・not more than = 〜以下(中立) / not less than = 〜以上(中立)
+            ・比較: no more than 10(たった10・不満) / not more than 10(10以下・中立的上限)
+            ・no less than 10(10も・驚き) / not less than 10(10以上・中立的下限)
+            ・"No more than 5 dollars." / "No less than 100 people."
+            ・主観的ニュアンスを伝える比較表現、フォーマル英語で頻出
+            """
         )
     ]
 }
