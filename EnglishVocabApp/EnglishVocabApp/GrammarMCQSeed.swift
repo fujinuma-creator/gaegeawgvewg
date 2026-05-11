@@ -1235,6 +1235,314 @@ enum GrammarMCQSeed {
             ・"No more than 5 dollars." / "No less than 100 people."
             ・主観的ニュアンスを伝える比較表現、フォーマル英語で頻出
             """
+        ),
+        GrammarQuestion(
+            id: "q281",
+            question: "This document is ___ ___ ___ — please keep it safe.",
+            choices: ["of / great / importance", "of / great / important", "at / great / importance", "with / great / importance"],
+            correctIndex: 0,
+            translation: "「この書類は非常に重要なので、大切に保管してください」",
+            explanation: """
+            ・of + 形容詞 + 抽象名詞 = 「〜な性質を持つ」形容詞句として機能
+            ・of importance = important / of value = valuable / of use = useful / of interest = interesting
+            ・段階: of little/no/some/great/vital/utmost importance
+            ・"This is important." (中立) vs "This is of great importance." (フォーマル強調)
+            ・"of interest to ~" / "of great value" / "of help" も同じパターン
+            ・ビジネス・公的文書: Matters of importance / Issues of concern / Topics of interest
+            ・口語では important / valuable が自然、書き言葉で効果的
+            """
+        ),
+        GrammarQuestion(
+            id: "q282",
+            question: "That was an ___ disaster!",
+            choices: ["absolutely", "absolute", "absolution", "absolved"],
+            correctIndex: 1,
+            translation: "「あれはまったくの大失敗だった!」",
+            explanation: """
+            ・absolute(形容詞) = 「完全な・絶対的な」名詞の前で強調
+            ・absolutely(副詞) = 完全に〜・絶対に〜(形容詞/動詞を修飾)
+            ・"An absolute disaster!" / "An absolute mess." / "An absolute nightmare."
+            ・"The absolute truth." / "An absolute genius."
+            ・ネガティブな名詞と組んで感情を強める: absolute chaos / absolute waste
+            ・"Absolutely!" (強い同意) / "Absolutely not!" / "I absolutely love it."
+            ・驚き・不満・称賛を強める時の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q283",
+            question: "The cat jumped ___ the table.",
+            choices: ["on", "onto", "into", "to"],
+            correctIndex: 1,
+            translation: "「猫は机の上に飛び乗った」",
+            explanation: """
+            ・onto = 「〜の上へ(動き)」方向 + 接触面
+            ・on(静止) vs onto(移動): "The book is on the table." vs "Put the book onto the table."
+            ・"Jump onto the bed." / "Climb onto the roof." / "Step onto the stage."
+            ・比喩: "I'm onto you." = お前の魂胆は分かってる
+            ・"Moving onto the next topic." = 次の話題に移る
+            ・"You're onto something." = 君は何かを掴んでる
+            ・口語: "Hold onto your hat!" / "Hold onto this." / "Get onto it!"
+            """
+        ),
+        GrammarQuestion(
+            id: "q284",
+            question: "She walked ___ the room and sat down.",
+            choices: ["on", "onto", "into", "to"],
+            correctIndex: 2,
+            translation: "「彼女は部屋に入って座った」",
+            explanation: """
+            ・into = 「〜の中へ(動き)」方向 + 内部
+            ・in(状態) vs into(移動): "Stay in the room." vs "Go into the room."
+            ・比喩: "I'm into jazz."(ハマってる) / "Turn it into gold."(変える) / "Run into him."(偶然会う)
+            ・"Cut it into pieces." / "Get into the habit of ~"
+            ・口語: "I'm not into it." / "Are you into him?" / "Look into it." / "Get into trouble."
+            ・覚え方: onto = on + to(上面に移動) / into = in + to(内部に移動)
+            ・英会話で "I'm really into ~" は「ハマってる」の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q285",
+            question: "He walked ___ the door slowly.",
+            choices: ["towards", "to", "at", "in"],
+            correctIndex: 0,
+            translation: "「彼はゆっくりとドアの方へ歩いた」",
+            explanation: """
+            ・towards(英)/toward(米) = 「〜の方へ」方向のみ(到達は含まない)
+            ・to(到達点)との違い: "Go to the door."(まで行く) vs "Walk towards the door."(の方へ)
+            ・比喩: "His attitude towards work." / "Looking towards the future."
+            ・"Her attitude towards him." / "Working towards a goal." / "Towards the end of the day."
+            ・towards(英) / toward(米) どちらも正しい
+            ・口語: "Towards me." / "Towards the end." / "Step towards ~"
+            ・「向かっている途中」を強調する時に便利
+            """
+        ),
+        GrammarQuestion(
+            id: "q286",
+            question: "I found my keys ___ the cushion.",
+            choices: ["under", "underneath", "below", "Both A and B"],
+            correctIndex: 3,
+            translation: "「クッションの下に鍵を見つけた」",
+            explanation: """
+            ・underneath = 「〜の下に(隠れて)」under とほぼ同じだが「覆われている」ニュアンスが強い
+            ・under(真下・最も一般的) / underneath(覆われ・隠れ) / below(位置関係) / beneath(フォーマル・文学的)
+            ・"Underneath the bed." / "Hide underneath the blanket."
+            ・比喩: "Underneath it all, he's kind." / "Underneath his rough exterior."
+            ・"Deep down underneath." = 心の奥深くで
+            ・"Underneath my coat I wear a sweater." = コートの下にセーター
+            ・「外から見えないもの」を指す時に上品な選択
+            """
+        ),
+        GrammarQuestion(
+            id: "q287",
+            question: "I can't go to the party — I'm tired, ___ ___, I don't know anyone there.",
+            choices: ["and / besides", "and / beside", "but / besides", "so / beside"],
+            correctIndex: 0,
+            translation: "「パーティーに行けない — 疲れてるし、それに誰も知り合いがいない」",
+            explanation: """
+            ・and besides = 「その上・しかも」理由を追加する接続表現
+            ・"I'm tired. Besides, I have work." / "Besides, who cares?"
+            ・besides の意味: 「その上」(追加) / 「〜以外に」(除外)
+            ・"No one besides me knows." = 私以外誰も知らない
+            ・要注意: besides(その上・〜以外に) vs beside(〜のそばに) → s の有無で意味が変わる
+            ・"Besides me"(私以外にも) vs "Beside me"(私のそばに)
+            ・「言い訳を重ねる」時の決まりパターン、説得力が増す
+            """
+        ),
+        GrammarQuestion(
+            id: "q288",
+            question: "She was sitting ___ me on the bench.",
+            choices: ["besides", "beside", "by side", "along"],
+            correctIndex: 1,
+            translation: "「彼女はベンチで私のそばに座っていた」",
+            explanation: """
+            ・beside = 「〜のそばに・〜の横に」物理的な位置関係
+            ・"Sit beside me." / "The dog is beside the bed." / "Walk beside her."
+            ・比喩「比較すれば」: "Beside her, I look small."
+            ・決まり文句「我を忘れて」: "He was beside himself with joy." / "Beside herself with grief."
+            ・beside(〜のそばに) vs besides(その上・〜以外に) ── s の有無で意味が全く変わる
+            ・類似: next to / by / alongside
+            ・口語: "Right beside me." / "Sit beside me." / "Stand beside her."
+            """
+        ),
+        GrammarQuestion(
+            id: "q289",
+            question: "Please put your phone ___ and listen.",
+            choices: ["aside", "beside", "outside", "inside"],
+            correctIndex: 0,
+            translation: "「スマホを脇に置いて聞いて」",
+            explanation: """
+            ・aside = 「脇に・わきに」主要な場所から離れた位置
+            ・put ~ aside / set ~ aside / step aside
+            ・"Put it aside." / "Set aside some money." / "Take him aside."(内緒話)
+            ・"Joking aside" / "Kidding aside" = 冗談はさておき
+            ・"Aside from that" = それを除けば / "Aside from the cost" = 費用は別にして
+            ・"Set aside time" / "Set aside money" = 取っておく
+            ・beside(前置詞・〜のそばに) / aside(副詞・脇に) / besides(副詞・その上)
+            ・「除外」「保留」「保管」の3つのニュアンス
+            """
+        ),
+        GrammarQuestion(
+            id: "q290",
+            question: "Please take your feet ___ the table.",
+            choices: ["off", "of", "out", "from"],
+            correctIndex: 0,
+            translation: "「机から足をどけて」",
+            explanation: """
+            ・off + 物 = 「〜から離れて」接触からの分離
+            ・"Get off the bed!" / "Take your hands off!" / "Stay off the grass."
+            ・多様な意味: 離れる(get off the bus) / 電源切る(turn off) / 休み(day off) / 割引(20% off) / 出発(I'm off!)
+            ・重要句動詞: take off / get off / show off / call off / put off / kick off / back off / pay off
+            ・"Off the top of my head" / "Off the record" / "Off and on"
+            ・「接触からの離脱」が基本イメージ、多様な意味に派生
+            """
+        ),
+        GrammarQuestion(
+            id: "q291",
+            question: "I have a lot of ___ to do today.",
+            choices: ["thing", "things", "stuff", "stuffs"],
+            correctIndex: 2,
+            translation: "「今日やることがたくさんある」",
+            explanation: """
+            ・stuff = 「物・こと(漠然と)」不可算名詞、複数形にしない(× stuffs)
+            ・"I have stuff to do." / "That's good stuff!" / "Move your stuff." / "Old stuff."
+            ・things(可算・個別) vs stuff(不可算・漠然)
+            ・"I bought some things."(個別) vs "I bought some stuff."(いろいろ)
+            ・口語: "and stuff" / "and all that stuff" / "stuff like that"
+            ・"good stuff" / "strong stuff" / "the real stuff"
+            ・"I know stuff." / "Tell me stuff."
+            ・動詞用法: "Stuff it into the bag." / "I'm stuffed!" = 満腹!
+            """
+        ),
+        GrammarQuestion(
+            id: "q292",
+            question: "He's ___ ___ ___ called me yesterday.",
+            choices: ["the / one / who", "one / who / the", "the / who / one", "who / one / the"],
+            correctIndex: 0,
+            translation: "「昨日電話してきたのは彼だ」",
+            explanation: """
+            ・the one who + V = 「〜する人」関係代名詞構文、特定の一人を指す
+            ・"I'm the one who called." / "You're the one I love." / "He's the one who can help."
+            ・強調パターン: 普通(I called you) → 強調(I'm the one who called you)
+            ・運命的: "Is she the one?" / "He's not the one."
+            ・応用: the only one who / the first one who / the last one who
+            ・関係詞: 人→who/that / 物→which/that / 場所→where / 時→when / 理由→why
+            ・"I'm the one paying!" / "You're the one to blame."
+            """
+        ),
+        GrammarQuestion(
+            id: "q293",
+            question: "There are two cakes. ___ ___ do you want?",
+            choices: ["Which / one", "What / one", "Which / it", "That / one"],
+            correctIndex: 0,
+            translation: "「ケーキが2つある。どっちが欲しい?」",
+            explanation: """
+            ・Which one = 「どれ・どちら」選択疑問、限られた選択肢から
+            ・Which(限定された選択肢) vs What(自由に選ぶ)
+            ・"Which one do you like?" / "Which one is yours?"
+            ・買い物: "Which one should I buy?" / "Which one is on sale?"
+            ・"Which one would you prefer?" / "Pick which one you like."
+            ・"Which one? / This one or that one? / Either one is fine."
+            ・応答: This one / That one / Either / Both / Neither
+            """
+        ),
+        GrammarQuestion(
+            id: "q294",
+            question: "___ ___, we'll all be using AI for everything.",
+            choices: ["Before / long", "Long / before", "Soon / long", "Quickly / before"],
+            correctIndex: 0,
+            translation: "「まもなく、私たちは全てにAIを使うようになるだろう」",
+            explanation: """
+            ・before long = 「まもなく・近いうちに」近い未来
+            ・"Before long, you'll see." / "Things will improve before long."
+            ・段階: soon(最一般) / shortly(フォーマル) / in a bit(カジュアル) / in no time / any minute now
+            ・混同注意: before long(まもなく・未来) vs long before(〜よりずっと前に・過去)
+            ・"Before long, he came."(まもなく) vs "Long before he came, I had left."(ずっと前)
+            ・文頭・文中・文末どこでも配置可
+            ・予測や予言で使うと知的に響く
+            """
+        ),
+        GrammarQuestion(
+            id: "q295",
+            question: "Let's meet ___ ___ the movie.",
+            choices: ["right / after", "just / before", "right / behind", "soon / after"],
+            correctIndex: 0,
+            translation: "「映画のすぐ後に会おう」",
+            explanation: """
+            ・right after = 「〜のすぐ後」、right が「すぐ」を強調
+            ・time: right after / right before / right now / right away
+            ・place: right here / right there / right next to / right behind
+            ・direction: right in front of / right above / right below
+            ・"Right after work." / "Right after class." / "Right after this."
+            ・"Right after dinner." / "I'll be right back." / "Right then and there."
+            ・right の他: 正しい(That's right) / 右(Turn right) / 権利(Human rights)
+            ・時間を強調する「すぐ」を表す重要副詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q296",
+            question: "It's freezing ___ ___ — let's go back inside.",
+            choices: ["out / here", "on / here", "out / there", "here / out"],
+            correctIndex: 0,
+            translation: "「こっちの外は凍えるくらい寒い — 中に戻ろう」",
+            explanation: """
+            ・out here = 「こっちの外で(話者がいる外)」
+            ・vs out there(離れた外で) / vs in here(こっちの中) / vs in there(そっちの中)
+            ・シリーズ: up here / down here / out here / in here / over here / back here
+            ・"It's cold out here." / "Out here in the countryside." / "Come out here."
+            ・"It's beautiful out here."(自分が外) vs "It's dangerous out there."(離れた外)
+            ・比喩: "Out there in the world." / "Somewhere out there."
+            ・"What are you doing out here?" / "It's a jungle out there."
+            ・話者の視点を意識して使い分ける
+            """
+        ),
+        GrammarQuestion(
+            id: "q297",
+            question: "He's not answering. ___ ___ been disconnected.",
+            choices: ["It / might've", "It / might", "It / mighty", "It / may"],
+            correctIndex: 0,
+            translation: "「彼は応答しない。電話が切れたかもしれない」",
+            explanation: """
+            ・might've = might have の短縮形「〜したかもしれない」過去の推量
+            ・"It might've been him." / "I might've left it home." / "We might've missed it."
+            ・確信度: must've(90%) > should've(後悔) > might've/could've(50%)
+            ・発音: might've /ˈmaɪtəv/ → 「ハ」音がほぼ消えて「マイタブ」と聞こえる
+            ・書き言葉: might have(正式) / might've(短縮) / × might of(誤り・音が同じだが綴り違い)
+            ・"Could've been worse." / "Should've known." / "Would've helped."
+            ・過去への推量・後悔を表現する重要構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q298",
+            question: "I ___ ___ studied harder for the test.",
+            choices: ["should / have", "should / had", "would / have", "might / have"],
+            correctIndex: 0,
+            translation: "「テストのためにもっと勉強しておくべきだった」",
+            explanation: """
+            ・should have + 過去分詞 = 「〜すべきだった(のにしなかった)」後悔・非難
+            ・shouldn't have + 過去分詞 = 〜すべきじゃなかった
+            ・"I should've studied." / "You should've called." / "She should've known better."
+            ・自分への後悔 / 相手への非難 / 過去の予想 の3用法
+            ・発音: should've /ˈʃʊdəv/
+            ・"should've known better" / "should've seen it coming"
+            ・× I should have went. / ○ I should have gone.(過去分詞)
+            ・返事: A: Why didn't you come? B: I should've.
+            ・「後悔」を表す英語の最重要表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q299",
+            question: "Let's go to the park, ___ ___?",
+            choices: ["shall / we", "will / we", "shall / I", "do / we"],
+            correctIndex: 0,
+            translation: "「公園に行きましょうか?」",
+            explanation: """
+            ・shall we? = 「〜しましょうか?」提案の付加疑問、Let's の文に付ける
+            ・"Let's begin, shall we?" / "Let's eat, shall we?" / "Shall we go?"
+            ・shall の用法: 提案(Shall we dance?) / 意志確認(Shall I help?) / 強い意志・法的義務(We shall overcome.)
+            ・will(一般的・普段使い) vs shall(提案・意志確認・やや古風で英国寄り)
+            ・米国口語では shall はあまり使われず、Let's ~ や Should we ~? が一般的
+            ・丁寧さ・上品さを出したい時に効果的
+            """
         )
     ]
 }
