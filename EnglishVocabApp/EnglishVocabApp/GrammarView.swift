@@ -1,14 +1,26 @@
 import SwiftUI
 
-/// 4-choice grammar question list. Each curated question is rendered as
-/// a card; tapping a choice locks the answer, reveals the correct option,
-/// the Japanese translation, and a bullet-style explanation.
-/// User's selected option is persisted via `WordStore.grammarAnswers`.
+/// 4-choice grammar quiz, one question at a time. Mirrors the
+/// 英語の定義 quiz UX in QuizView: tap a choice → see correct/wrong
+/// highlight + Japanese translation + explanation → tap 「次の問題 →」
+/// to advance. Position and per-question answer are persisted so the
+/// user resumes where they left off across launches.
 struct GrammarView: View {
     @EnvironmentObject var store: WordStore
+    @AppStorage("grammar.currentIndex") private var currentIndex: Int = 0
     @State private var showResetAlert: Bool = false
 
     private var questions: [GrammarQuestion] { GrammarMCQSeed.questions }
+
+    private var safeIndex: Int {
+        guard !questions.isEmpty else { return 0 }
+        return min(max(currentIndex, 0), questions.count - 1)
+    }
+
+    private var currentQuestion: GrammarQuestion? {
+        guard !questions.isEmpty else { return nil }
+        return questions[safeIndex]
+    }
 
     private var answeredCount: Int {
         questions.reduce(0) { $0 + (store.grammarAnswers[$1.id] == nil ? 0 : 1) }
@@ -22,27 +34,33 @@ struct GrammarView: View {
     }
 
     var body: some View {
-        VStack(spacing: 0) {
+        VStack(spacing: 16) {
             statsHeader
-            ScrollView {
-                LazyVStack(spacing: 12) {
-                    ForEach(Array(questions.enumerated()), id: \.element.id) { idx, q in
-                        questionCard(index: idx, question: q)
-                    }
+            if questions.isEmpty {
+                Spacer()
+                emptyView
+                Spacer()
+            } else if let q = currentQuestion {
+                ScrollView {
+                    quizCard(q)
+                        .padding(.horizontal, 16)
+                        .padding(.bottom, 24)
                 }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 10)
             }
         }
+        .padding(.top, 8)
         .alert("解答をリセットしますか？", isPresented: $showResetAlert) {
             Button("キャンセル", role: .cancel) {}
             Button("リセット", role: .destructive) {
                 store.resetAllGrammarAnswers()
+                currentIndex = 0
             }
         } message: {
-            Text("\(answeredCount) 問の解答記録をすべて削除します。")
+            Text("\(answeredCount) 問の解答記録をすべて削除し、最初の問題に戻ります。")
         }
     }
+
+    // MARK: - Header
 
     private var statsHeader: some View {
         VStack(spacing: 6) {
@@ -63,37 +81,59 @@ struct GrammarView: View {
                 .disabled(answeredCount == 0)
                 .opacity(answeredCount == 0 ? 0.4 : 1)
             }
-            HStack(spacing: 6) {
-                Text("正解: \(correctCount) / \(questions.count)")
-                    .foregroundStyle(.indigo)
-                Text("·")
-                Text("解答済: \(answeredCount) / \(questions.count)")
-                    .foregroundStyle(.secondary)
-                Spacer()
-                if answeredCount > 0 {
-                    Text("\(Int(Double(correctCount) / Double(max(answeredCount, 1)) * 100))%")
-                        .foregroundStyle(.tertiary)
+            if !questions.isEmpty {
+                HStack(spacing: 6) {
+                    Text("Q.\(safeIndex + 1) / \(questions.count)")
+                        .foregroundStyle(.primary)
+                    Spacer()
+                    Text("正解 \(correctCount) / \(answeredCount)")
+                        .foregroundStyle(.indigo)
+                    if answeredCount > 0 {
+                        Text("(\(Int(Double(correctCount) / Double(max(answeredCount, 1)) * 100))%)")
+                            .foregroundStyle(.tertiary)
+                    }
                 }
-            }
-            .font(.subheadline)
-            ProgressView(value: Double(answeredCount), total: Double(max(questions.count, 1)))
+                .font(.subheadline)
+                ProgressView(
+                    value: Double(safeIndex + 1),
+                    total: Double(max(questions.count, 1))
+                )
                 .tint(.indigo)
+            }
         }
         .padding(.horizontal, 16)
-        .padding(.top, 10)
-        .padding(.bottom, 4)
     }
 
+    // MARK: - Empty
+
+    private var emptyView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "doc.text.magnifyingglass")
+                .font(.system(size: 48))
+                .foregroundStyle(.indigo.opacity(0.5))
+            Text("問題が用意されていません")
+                .font(.subheadline.bold())
+            Text("新しい4択文法問題が追加されると、ここに表示されます。")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 32)
+        }
+    }
+
+    // MARK: - Quiz card
+
     @ViewBuilder
-    private func questionCard(index: Int, question q: GrammarQuestion) -> some View {
+    private func quizCard(_ q: GrammarQuestion) -> some View {
         let selectedIndex = store.grammarAnswers[q.id]
         let answered = selectedIndex != nil
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 14) {
+            // Question number badge
             HStack {
-                Text("Q\(index + 1)")
+                Text("Q.\(safeIndex + 1)")
                     .font(.caption.bold())
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 3)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 4)
                     .background(Capsule().fill(Color.indigo.opacity(0.15)))
                     .foregroundStyle(.indigo)
                 Spacer()
@@ -107,21 +147,15 @@ struct GrammarView: View {
                             .font(.caption.bold())
                             .foregroundStyle(.red)
                     }
-                    Button {
-                        store.resetGrammarAnswer(questionId: q.id)
-                    } label: {
-                        Image(systemName: "arrow.counterclockwise")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                    }
-                    .buttonStyle(.plain)
                 }
             }
 
+            // Question text
             Text(q.question)
-                .font(.system(size: 16, weight: .medium))
+                .font(.system(size: 17, weight: .medium))
                 .frame(maxWidth: .infinity, alignment: .leading)
 
+            // Choices
             VStack(spacing: 8) {
                 ForEach(Array(q.choices.enumerated()), id: \.offset) { i, choice in
                     choiceButton(
@@ -133,13 +167,17 @@ struct GrammarView: View {
                 }
             }
 
+            // Explanation panel (after answering)
             if answered {
                 explanationView(q)
             }
+
+            // Nav buttons
+            navRow(answered: answered)
         }
-        .padding(14)
+        .padding(16)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.85)))
+        .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.88)))
     }
 
     private func choiceButton(
@@ -184,11 +222,11 @@ struct GrammarView: View {
                     Image(systemName: "xmark.circle.fill").foregroundStyle(.red)
                 }
             }
-            .padding(10)
+            .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
             .background(bg)
-            .overlay(RoundedRectangle(cornerRadius: 8).stroke(stroke, lineWidth: 1))
-            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(stroke, lineWidth: 1))
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             .foregroundStyle(.primary)
         }
         .buttonStyle(.plain)
@@ -218,6 +256,81 @@ struct GrammarView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(RoundedRectangle(cornerRadius: 10).fill(Color.indigo.opacity(0.08)))
         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.indigo.opacity(0.35), lineWidth: 1))
+    }
+
+    @ViewBuilder
+    private func navRow(answered: Bool) -> some View {
+        HStack(spacing: 10) {
+            Button {
+                goPrev()
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "chevron.left")
+                    Text("前の問題")
+                }
+                .font(.subheadline.bold())
+                .padding(.horizontal, 14).padding(.vertical, 10)
+                .foregroundStyle(.indigo)
+                .background(Capsule().fill(Color.indigo.opacity(0.12)))
+            }
+            .buttonStyle(.plain)
+            .disabled(safeIndex == 0)
+            .opacity(safeIndex == 0 ? 0.4 : 1)
+
+            Spacer()
+
+            if answered, let q = currentQuestion {
+                Button {
+                    store.resetGrammarAnswer(questionId: q.id)
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "arrow.counterclockwise")
+                        Text("やり直し")
+                    }
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .padding(.horizontal, 10).padding(.vertical, 8)
+                    .background(Capsule().fill(Color.gray.opacity(0.12)))
+                }
+                .buttonStyle(.plain)
+            }
+
+            Button {
+                goNext()
+            } label: {
+                HStack(spacing: 6) {
+                    Text(isLastQuestion ? "最初に戻る" : "次の問題")
+                    Image(systemName: isLastQuestion ? "arrow.uturn.left" : "chevron.right")
+                }
+                .font(.subheadline.bold())
+                .padding(.horizontal, 14).padding(.vertical, 10)
+                .foregroundStyle(.white)
+                .background(Capsule().fill(Color.indigo))
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.top, 4)
+    }
+
+    private var isLastQuestion: Bool {
+        guard !questions.isEmpty else { return false }
+        return safeIndex >= questions.count - 1
+    }
+
+    private func goNext() {
+        guard !questions.isEmpty else { return }
+        if safeIndex >= questions.count - 1 {
+            currentIndex = 0
+        } else {
+            currentIndex = safeIndex + 1
+        }
+    }
+
+    private func goPrev() {
+        guard !questions.isEmpty else { return }
+        if safeIndex > 0 {
+            currentIndex = safeIndex - 1
+        }
     }
 }
 
