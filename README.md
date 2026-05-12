@@ -1,81 +1,97 @@
-# Chinese Vocab App (iOS / SwiftUI)
+# Vocab App (英語＋中国語)
 
-中国語の単語を効率的に復習する iPhone アプリです。エビングハウス忘却曲線に基づいた復習スケジュール機能を搭載しています。
-同リポジトリ内の React Native 版 (`App.tsx`) のデザイン・構成を参考にしています。
+英単語・中国語単語を効率的に復習する iPhone アプリです（React Native + Expo）。
+エビングハウスの忘却曲線に基づいた復習スケジュール機能を搭載し、英語と中国語を切り替えて学習できます。
 
 ## 機能
 
-- iPhone / iPad 対応 (SwiftUI, iOS 17+)
-- ランダム単語表示
-- エビングハウス忘却曲線復習スケジュール
-- ローカルストレージ (UserDefaults) に進捗保存
-- 復習統計情報表示
-- 漢字 / 拼音 (pinyin) / 日本語訳 / 利用シーン / 例文 / 類義語
+- 📱 iPhone対応（React Native + Expo）
+- 🌐 **言語切り替え**（英語 / 中国語）
+- 🇨🇳 中国語は **拼音 (pinyin) 表示**にも対応
+- 🎯 ランダム単語表示
+- 📅 エビングハウス忘却曲線復習スケジュール
+- 💾 ローカルストレージに進捗保存（英語/中国語で別々）
+- 📊 復習統計情報表示
 
 ## 復習スケジュール
 
-3段階ボタンで次回復習日を自動管理：
+3段階ボタンで復習日を自動管理：
 
-- **〇 覚えた** → 60日後に復習
-- **△ 忘れそう** → 7日後に復習
+- **〇 覚えた** → 2か月後（60日後）に復習
+- **△ 忘れそう** → 1週間後（7日後）に復習
 - **× 覚えてない** → 1日後に復習
-
-## 構成
-
-```
-ChineseVocabApp.xcodeproj/
-ChineseVocabApp/
-  ├── ChineseVocabAppApp.swift   # アプリ エントリポイント
-  ├── ContentView.swift          # ヘッダー / 統計 / ルートレイアウト
-  ├── WordCardView.swift         # 単語カード
-  ├── CompletedView.swift        # 全復習完了時の画面
-  ├── Models.swift               # Word / ReviewData / ReviewResult
-  ├── WordStore.swift            # 状態管理 + 永続化
-  ├── words.json                 # 中国語単語データ
-  └── Assets.xcassets / Preview Content/
-```
 
 ## セットアップ
 
-1. `ChineseVocabApp.xcodeproj` を Xcode 15 以降で開く
-2. iPhone シミュレータ（iOS 17+）を選択
-3. Run
+### 1. 依存関係をインストール
+
+```bash
+npm install
+```
+
+### 2. AsyncStorageをインストール
+
+```bash
+npm install @react-native-async-storage/async-storage
+```
+
+### 3. アプリを起動
+
+```bash
+npm start
+```
+
+### 4. iPhoneで実行
+
+1. iPhoneに「Expo Go」アプリをインストール
+2. ターミナルに表示されたQRコードをスキャン
+3. アプリが起動 → トップ画面で **English** か **中文** を選択
 
 ## 単語を追加する
 
-`ChineseVocabApp/words.json` に下記の形式で追加してください。
+- **英単語**: `data/words.json` に追加
+- **中国語**: `data/chinese-words.json` に追加（`pinyin` フィールド付き）
+
+### 英語のフォーマット
+
+```json
+{
+  "id": "9",
+  "word": "単語",
+  "definition": "英語での定義",
+  "japanese": "日本語",
+  "useCase": "使う場面",
+  "examples": ["例文1", "例文2"],
+  "synonyms": ["類義語1", "類義語2"]
+}
+```
+
+### 中国語のフォーマット
 
 ```json
 {
   "id": "21",
   "word": "你好",
   "pinyin": "nǐ hǎo",
+  "definition": "出会ったときの挨拶",
   "japanese": "こんにちは",
-  "definition": "出会ったときの最も一般的な挨拶",
   "useCase": "日常の挨拶",
-  "examples": [
-    "你好，我叫小明。 (こんにちは、私はシャオミンです)"
-  ],
-  "synonyms": [
-    "您好 (nín hǎo) — 丁寧な「こんにちは」"
-  ]
+  "examples": ["你好，我叫小明。 (こんにちは、私はシャオミンです)"],
+  "synonyms": ["您好 (nín hǎo) — 丁寧な「こんにちは」"]
 }
 ```
 
 ## 目安
 
-- 1日 20 分で約 200 単語ペースに最適化
-- 毎日アプリを開くと、その日に復習すべき単語がランダムに 1 つ表示されます
+- 1日20分で約200個のペースに最適化
+- 毎日アプリを開くと、その日に復習すべき単語がランダムに表示されます
 
 ## 使用技術
 
-- Swift 5 / SwiftUI
-- iOS 17+
-- UserDefaults
-
-## 参考: React Native 版
-
-`App.tsx`, `data/words.json` は元の React Native + Expo 版のソースで、本 iOS アプリのデザイン参考用に残されています。
+- React Native
+- Expo
+- TypeScript
+- AsyncStorage
 
 ## ライセンス
 

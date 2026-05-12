@@ -3,13 +3,13 @@
     "id": "1",
     "word": "你好",
     "pinyin": "nǐ hǎo",
-    "japanese": "こんにちは",
     "definition": "出会ったときの最も一般的な挨拶",
+    "japanese": "こんにちは",
     "useCase": "日常の挨拶",
     "examples": [
       "你好，我叫小明。 (こんにちは、私はシャオミンです)",
       "你好，很高兴认识你。 (こんにちは、お会いできて嬉しいです)",
-      "你好，请问你叫什么名字？ (こんにちは、お名前は何ですか？)"
+      "你好，请问你叫什么名字？ (お名前は何ですか？)"
     ],
     "synonyms": [
       "您好 (nín hǎo) — 丁寧な「こんにちは」",
@@ -21,8 +21,8 @@
     "id": "2",
     "word": "谢谢",
     "pinyin": "xiè xie",
-    "japanese": "ありがとう",
     "definition": "感謝を表す最も基本的な表現",
+    "japanese": "ありがとう",
     "useCase": "感謝を伝えるとき",
     "examples": [
       "谢谢你的帮助。 (助けてくれてありがとう)",
@@ -32,15 +32,15 @@
     "synonyms": [
       "多谢 (duō xiè) — どうもありがとう",
       "感谢 (gǎn xiè) — 感謝する",
-      "麻烦你了 (má fan nǐ le) — お手数をおかけしました"
+      "麻烦你了 (má fan nǐ le) — お手数おかけしました"
     ]
   },
   {
     "id": "3",
     "word": "对不起",
     "pinyin": "duì bu qǐ",
-    "japanese": "ごめんなさい",
     "definition": "謝罪を表す表現",
+    "japanese": "ごめんなさい",
     "useCase": "謝るとき",
     "examples": [
       "对不起，我迟到了。 (ごめんなさい、遅刻しました)",
@@ -57,10 +57,9 @@
     "id": "4",
     "word": "没关系",
     "pinyin": "méi guān xi",
-    "japanese": "大丈夫です／問題ないです",
     "definition": "謝罪に対する返答や、気にしないと伝える表現",
+    "japanese": "大丈夫です／問題ないです",
     "useCase": "謝罪への返答",
-    "useCase_extra": "",
     "examples": [
       "没关系，别担心。 (大丈夫、心配しないで)",
       "没关系，我不介意。 (大丈夫、気にしません)",
@@ -76,8 +75,8 @@
     "id": "5",
     "word": "请问",
     "pinyin": "qǐng wèn",
-    "japanese": "お尋ねしますが",
     "definition": "丁寧に質問を切り出す表現",
+    "japanese": "お尋ねしますが",
     "useCase": "質問するとき",
     "examples": [
       "请问，洗手间在哪里？ (すみません、トイレはどこですか？)",
@@ -94,8 +93,8 @@
     "id": "6",
     "word": "多少钱",
     "pinyin": "duō shao qián",
-    "japanese": "いくらですか",
     "definition": "値段を尋ねる表現",
+    "japanese": "いくらですか",
     "useCase": "買い物・値段確認",
     "examples": [
       "这个多少钱？ (これはいくらですか？)",
@@ -112,8 +111,8 @@
     "id": "7",
     "word": "听不懂",
     "pinyin": "tīng bu dǒng",
-    "japanese": "聞いてもわからない",
     "definition": "話されている言葉が理解できないこと",
+    "japanese": "聞いてもわからない",
     "useCase": "会話で困ったとき",
     "examples": [
       "对不起，我听不懂。 (すみません、聞き取れません)",
@@ -130,8 +129,8 @@
     "id": "8",
     "word": "再说一遍",
     "pinyin": "zài shuō yí biàn",
-    "japanese": "もう一度言ってください",
     "definition": "話を繰り返してもらう依頼",
+    "japanese": "もう一度言ってください",
     "useCase": "聞き返すとき",
     "examples": [
       "请再说一遍。 (もう一度言ってください)",
@@ -148,8 +147,8 @@
     "id": "9",
     "word": "加油",
     "pinyin": "jiā yóu",
-    "japanese": "頑張れ",
     "definition": "応援や励ましの言葉",
+    "japanese": "頑張れ",
     "useCase": "応援するとき",
     "examples": [
       "加油！你可以的。 (頑張れ！君ならできる)",
@@ -166,8 +165,8 @@
     "id": "10",
     "word": "怎么办",
     "pinyin": "zěn me bàn",
-    "japanese": "どうしよう",
     "definition": "困ったときに発する疑問",
+    "japanese": "どうしよう",
     "useCase": "困惑・相談",
     "examples": [
       "我迟到了，怎么办？ (遅刻した、どうしよう？)",
@@ -184,8 +183,8 @@
     "id": "11",
     "word": "差不多",
     "pinyin": "chà bu duō",
-    "japanese": "だいたい／ほぼ同じ",
     "definition": "おおよそ同じ、もしくはほぼ完了している状態",
+    "japanese": "だいたい／ほぼ同じ",
     "useCase": "あいまいな表現",
     "examples": [
       "我们差不多到了。 (ほぼ着きました)",
@@ -202,8 +201,8 @@
     "id": "12",
     "word": "马上",
     "pinyin": "mǎ shàng",
-    "japanese": "すぐに",
     "definition": "ただちに、もうすぐ",
+    "japanese": "すぐに",
     "useCase": "時間表現",
     "examples": [
       "我马上来。 (すぐ行きます)",
@@ -220,8 +219,8 @@
     "id": "13",
     "word": "随便",
     "pinyin": "suí biàn",
-    "japanese": "何でもいい／好きにして",
     "definition": "選択を相手に委ねる、または気軽さを表す",
+    "japanese": "何でもいい／好きにして",
     "useCase": "選択を委ねる",
     "examples": [
       "随便你。 (好きにして)",
@@ -238,8 +237,8 @@
     "id": "14",
     "word": "厉害",
     "pinyin": "lì hai",
-    "japanese": "すごい",
     "definition": "能力や程度がすごい、あるいは厳しいこと",
+    "japanese": "すごい",
     "useCase": "称賛するとき",
     "examples": [
       "你太厉害了！ (君は本当にすごい！)",
@@ -256,8 +255,8 @@
     "id": "15",
     "word": "好吃",
     "pinyin": "hǎo chī",
-    "japanese": "おいしい",
     "definition": "食べ物の味が良いこと",
+    "japanese": "おいしい",
     "useCase": "食事の感想",
     "examples": [
       "这个菜真好吃。 (この料理は本当に美味しい)",
@@ -274,8 +273,8 @@
     "id": "16",
     "word": "明白",
     "pinyin": "míng bai",
-    "japanese": "わかる／理解する",
     "definition": "意味や状況を理解すること",
+    "japanese": "わかる／理解する",
     "useCase": "理解を示す",
     "examples": [
       "我明白了。 (わかりました)",
@@ -292,8 +291,8 @@
     "id": "17",
     "word": "麻烦",
     "pinyin": "má fan",
-    "japanese": "面倒／お手数",
     "definition": "手間がかかること、または依頼の前置き",
+    "japanese": "面倒／お手数",
     "useCase": "依頼や苦労を表す",
     "examples": [
       "麻烦你帮个忙。 (お手数ですが手伝ってください)",
@@ -310,8 +309,8 @@
     "id": "18",
     "word": "习惯",
     "pinyin": "xí guàn",
-    "japanese": "慣れる／習慣",
     "definition": "繰り返されて身についた行動や状態に慣れること",
+    "japanese": "慣れる／習慣",
     "useCase": "慣れを表す",
     "examples": [
       "我习惯了早起。 (早起きに慣れた)",
@@ -328,8 +327,8 @@
     "id": "19",
     "word": "想",
     "pinyin": "xiǎng",
-    "japanese": "〜したい／思う",
     "definition": "願望や思考を表す動詞",
+    "japanese": "〜したい／思う",
     "useCase": "希望・意図",
     "examples": [
       "我想喝水。 (水が飲みたい)",
@@ -346,8 +345,8 @@
     "id": "20",
     "word": "知道",
     "pinyin": "zhī dào",
-    "japanese": "知っている／わかる",
     "definition": "情報や事実を知っていること",
+    "japanese": "知っている／わかる",
     "useCase": "情報を伝える",
     "examples": [
       "我知道了。 (わかりました)",
