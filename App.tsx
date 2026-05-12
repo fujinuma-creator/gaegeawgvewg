@@ -10,10 +10,7 @@ import {
   Alert,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import englishWords from './data/words.json';
-import chineseWords from './data/chinese-words.json';
-
-type Language = 'english' | 'chinese';
+import words from './data/words.json';
 
 interface Word {
   id: string;
@@ -23,7 +20,6 @@ interface Word {
   useCase: string;
   examples: string[];
   synonyms: string[];
-  pinyin?: string;
 }
 
 interface ReviewData {
@@ -34,79 +30,22 @@ interface ReviewData {
   isReviewed: boolean;
 }
 
-const LANGUAGE_CONFIG: Record<
-  Language,
-  { title: string; words: Word[]; storageKey: string }
-> = {
-  english: {
-    title: 'English Vocab',
-    words: englishWords as Word[],
-    storageKey: 'reviewData',
-  },
-  chinese: {
-    title: 'Chinese Vocab',
-    words: chineseWords as Word[],
-    storageKey: 'reviewData_chinese',
-  },
-};
-
 const App = () => {
-  const [language, setLanguage] = useState<Language | null>(null);
-
-  if (!language) {
-    return <LanguagePicker onPick={setLanguage} />;
-  }
-  return <VocabApp language={language} onBack={() => setLanguage(null)} />;
-};
-
-const LanguagePicker = ({ onPick }: { onPick: (lang: Language) => void }) => (
-  <SafeAreaView style={styles.container}>
-    <View style={styles.pickerContainer}>
-      <Text style={styles.pickerTitle}>単語復習アプリ</Text>
-      <Text style={styles.pickerSubtitle}>学びたい言語を選択</Text>
-
-      <TouchableOpacity
-        style={[styles.pickerButton, styles.englishButton]}
-        onPress={() => onPick('english')}
-      >
-        <Text style={styles.pickerButtonText}>🇬🇧 English</Text>
-        <Text style={styles.pickerButtonSub}>英単語復習</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={[styles.pickerButton, styles.chineseButton]}
-        onPress={() => onPick('chinese')}
-      >
-        <Text style={styles.pickerButtonText}>🇨🇳 中文</Text>
-        <Text style={styles.pickerButtonSub}>中国語単語復習</Text>
-      </TouchableOpacity>
-    </View>
-  </SafeAreaView>
-);
-
-const VocabApp = ({
-  language,
-  onBack,
-}: {
-  language: Language;
-  onBack: () => void;
-}) => {
-  const config = LANGUAGE_CONFIG[language];
-  const words = config.words;
-
   const [currentWord, setCurrentWord] = useState<Word | null>(null);
   const [reviewData, setReviewData] = useState<ReviewData[]>([]);
   const [stats, setStats] = useState({ total: 0, reviewed: 0, todayReview: 0 });
   const [loading, setLoading] = useState(true);
   const [showAnswer, setShowAnswer] = useState(false);
 
+  // アプリ起動時：復習データ読み込み
   useEffect(() => {
     loadReviewData();
-  }, [language]);
+  }, []);
 
+  // 復習データ読み込み
   const loadReviewData = async () => {
     try {
-      const stored = await AsyncStorage.getItem(config.storageKey);
+      const stored = await AsyncStorage.getItem('reviewData');
       const data = stored ? JSON.parse(stored) : initializeReviewData();
       setReviewData(data);
       loadTodayWord(data);
@@ -119,15 +58,18 @@ const VocabApp = ({
     }
   };
 
-  const initializeReviewData = (): ReviewData[] =>
-    words.map((word) => ({
+  // 初期化：すべての単語を登録
+  const initializeReviewData = (): ReviewData[] => {
+    return words.map((word: Word) => ({
       wordId: word.id,
       lastReviewDate: 0,
       nextReviewDate: 0,
       reviewCount: 0,
       isReviewed: false,
     }));
+  };
 
+  // 今日復習すべき単語をランダムに取得
   const loadTodayWord = (data: ReviewData[]) => {
     const now = Date.now();
     const todayWords = data.filter(
@@ -139,15 +81,19 @@ const VocabApp = ({
       return;
     }
 
-    const randomReview =
-      todayWords[Math.floor(Math.random() * todayWords.length)];
-    const word = words.find((w) => w.id === randomReview.wordId);
+    // ランダムに1つ選択
+    const randomReview = todayWords[Math.floor(Math.random() * todayWords.length)];
+    const word = words.find((w: Word) => w.id === randomReview.wordId);
     setCurrentWord(word || null);
     setShowAnswer(false);
   };
 
+  // 統計情報を更新
   const updateStats = (data: ReviewData[]) => {
     const now = Date.now();
+    const today = new Date(now);
+    today.setHours(0, 0, 0, 0);
+
     const todayReview = data.filter(
       (review) => review.nextReviewDate <= now && !review.isReviewed
     ).length;
@@ -159,18 +105,21 @@ const VocabApp = ({
     });
   };
 
+  // 復習ボタン押下
   const handleReview = (button: '〇' | '△' | '×') => {
     if (!currentWord) return;
 
     const now = Date.now();
     const updated = [...reviewData];
-    const reviewIndex = updated.findIndex((r) => r.wordId === currentWord.id);
+    const reviewIndex = updated.findIndex(
+      (r) => r.wordId === currentWord.id
+    );
 
     if (reviewIndex !== -1) {
       let nextReviewDays = 1;
-      if (button === '〇') nextReviewDays = 60;
-      else if (button === '△') nextReviewDays = 7;
-      else if (button === '×') nextReviewDays = 1;
+      if (button === '〇') nextReviewDays = 60; // 2か月後
+      else if (button === '△') nextReviewDays = 7; // 1週間後
+      else if (button === '×') nextReviewDays = 1; // 1日後
 
       updated[reviewIndex] = {
         ...updated[reviewIndex],
@@ -181,7 +130,7 @@ const VocabApp = ({
       };
 
       setReviewData(updated);
-      AsyncStorage.setItem(config.storageKey, JSON.stringify(updated));
+      AsyncStorage.setItem('reviewData', JSON.stringify(updated));
       updateStats(updated);
       loadTodayWord(updated);
     }
@@ -198,14 +147,9 @@ const VocabApp = ({
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
-        {/* 戻るボタン */}
-        <TouchableOpacity style={styles.backButton} onPress={onBack}>
-          <Text style={styles.backButtonText}>← 言語選択へ</Text>
-        </TouchableOpacity>
-
         {/* ヘッダー */}
         <View style={styles.header}>
-          <Text style={styles.title}>{config.title}</Text>
+          <Text style={styles.title}>English Vocab</Text>
           <Text style={styles.subtitle}>エビングハウス復習アプリ</Text>
         </View>
 
@@ -229,13 +173,12 @@ const VocabApp = ({
         {currentWord ? (
           <View style={styles.cardContainer}>
             <View style={styles.card}>
+              {/* 単語 */}
               <Text style={styles.word}>{currentWord.word}</Text>
-              {currentWord.pinyin && (
-                <Text style={styles.pinyin}>{currentWord.pinyin}</Text>
-              )}
               <Text style={styles.japanese}>{currentWord.japanese}</Text>
               <Text style={styles.useCase}>{currentWord.useCase}</Text>
 
+              {/* 回答表示ボタン */}
               <TouchableOpacity
                 style={styles.showButton}
                 onPress={() => setShowAnswer(!showAnswer)}
@@ -245,6 +188,7 @@ const VocabApp = ({
                 </Text>
               </TouchableOpacity>
 
+              {/* 回答 */}
               {showAnswer && (
                 <View style={styles.answerContainer}>
                   <Text style={styles.definition}>
@@ -269,6 +213,7 @@ const VocabApp = ({
               )}
             </View>
 
+            {/* ボタン */}
             {showAnswer && (
               <View style={styles.buttonContainer}>
                 <TouchableOpacity
@@ -309,65 +254,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f5f5f5',
   },
-  pickerContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 24,
-  },
-  pickerTitle: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#000',
-    marginBottom: 4,
-  },
-  pickerSubtitle: {
-    fontSize: 14,
-    color: '#999',
-    marginBottom: 40,
-  },
-  pickerButton: {
-    width: '100%',
-    paddingVertical: 24,
-    borderRadius: 12,
-    alignItems: 'center',
-    marginBottom: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
-  },
-  englishButton: {
-    backgroundColor: '#007AFF',
-  },
-  chineseButton: {
-    backgroundColor: '#FF3B30',
-  },
-  pickerButtonText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#fff',
-  },
-  pickerButtonSub: {
-    fontSize: 13,
-    color: '#fff',
-    marginTop: 4,
-    opacity: 0.9,
-  },
   scrollContainer: {
     padding: 16,
     paddingBottom: 40,
-  },
-  backButton: {
-    alignSelf: 'flex-start',
-    paddingVertical: 4,
-    paddingHorizontal: 8,
-    marginBottom: 8,
-  },
-  backButtonText: {
-    color: '#007AFF',
-    fontSize: 14,
   },
   header: {
     alignItems: 'center',
@@ -428,11 +317,6 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     color: '#000',
-    marginBottom: 8,
-  },
-  pinyin: {
-    fontSize: 18,
-    color: '#666',
     marginBottom: 8,
   },
   japanese: {
