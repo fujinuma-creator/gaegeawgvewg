@@ -2227,6 +2227,438 @@ enum GrammarMCQSeed {
             ・区別: about(中立・〜について) vs all about(強調・〜が全て)
             ・哲学的・励まし的なメッセージで頻出
             """
+        ),
+        GrammarQuestion(
+            id: "q341",
+            question: "Would you like ___ cup of coffee?",
+            choices: ["another", "other", "others", "the other"],
+            correctIndex: 0,
+            translation: "「もう一杯コーヒーいかが?」",
+            explanation: """
+            ・another = an + other、必ず単数の名詞の前で使う「もう一つの・別の」
+            ・コーヒーのおかわりを勧めたり、別の選択肢を提示したりする時の定番
+            ・不特定の「もう一つ」を指す
+            ・"Have another." / "Let's try another approach."
+            ・類義: one more(数の追加) / a different(違いを強調)
+            ・3つ以上の中から1つを選ぶ時は another、2つのうち残り1つは the other
+            ・冠詞 a と組合せて使わない(× a another) — 既に a が含まれる
+            """
+        ),
+        GrammarQuestion(
+            id: "q342",
+            question: "I have two brothers — one lives in Tokyo and ___ lives in London.",
+            choices: ["the other", "another", "others", "other one"],
+            correctIndex: 0,
+            translation: "「兄弟が2人いて、1人は東京、もう1人はロンドンに住んでいる」",
+            explanation: """
+            ・2つのうち「一方」と「もう一方」をセットで言う時は one ~ the other
+            ・the がつくのは2つしかない時に残りが自動的に特定されるから
+            ・手袋、靴、双子、二択など「2つ1組」の話で頻出
+            ・3つ以上から1つ選ぶ時は another を使う
+            ・"One is red, the other is blue." / "On the one hand ~, on the other hand ~"
+            ・類義: the second(順序) / the remaining one(残りの方)
+            ・「2つ目で最後」のニュアンス
+            """
+        ),
+        GrammarQuestion(
+            id: "q343",
+            question: "Some people like coffee, ___ prefer tea.",
+            choices: ["others", "other", "another", "the other"],
+            correctIndex: 0,
+            translation: "「コーヒーが好きな人もいれば、紅茶を好む人もいる」",
+            explanation: """
+            ・Some ~ others = 「ある人は〜、他の人は〜」2つのグループを対比する定型
+            ・others は「他の人たち(不特定の複数)」を指す代名詞
+            ・意見・好み・行動の違いを語る時に頻出
+            ・the others にすると「残りの全員」と特定される(ニュアンス変化)
+            ・"Some say yes, others say no." / "Help others." / "Be kind to others."
+            ・類義: some people(一部の人々) / the rest(残りの人々・特定)
+            ・other(形容詞) vs others(代名詞・複数) の違いに注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q344",
+            question: "___ ___ ___, be honest with yourself.",
+            choices: ["Above / all / else", "Over / all / else", "Beyond / all / else", "On / all / else"],
+            correctIndex: 0,
+            translation: "「何よりもまず、自分自身に正直でいなさい」",
+            explanation: """
+            ・above all else = 「何よりも大切なのは・とりわけ」強調表現
+            ・アドバイスや人生の教訓を伝える時に使う
+            ・"色々あるけど、結局これが一番"というニュアンス
+            ・above all だけでも同じ意味だが、else を加えるとさらに強調
+            ・"Above all else, be kind." / "Above all else, stay safe."
+            ・類義: most importantly(最も重要なのは) / first and foremost(何よりもまず)
+            ・スピーチやエッセイの締めくくりで効果的
+            """
+        ),
+        GrammarQuestion(
+            id: "q345",
+            question: "I love ___ ___ ___ smiles.",
+            choices: ["the / way / she", "the / how / she", "that / way / she", "the / way / how"],
+            correctIndex: 0,
+            translation: "「彼女の笑い方が好きだ」",
+            explanation: """
+            ・the way + 主語 + 動詞 = 「〜のやり方・〜する様子」
+            ・how と同じ意味だが、口語では the way の方が圧倒的に頻出
+            ・誰かの振る舞い・話し方・笑顔などを描写する時の定番
+            ・"I love the way you laugh." / "The way he talks." / "The way it works."
+            ・類義: how + SV(やや改まった) / the manner in which(フォーマル)
+            ・※ the way how は誤り(重複)、片方だけ使う
+            ・人や物の特徴を語る時の万能パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q346",
+            question: "Good ingredients ___ ___ a great meal.",
+            choices: ["make / for", "make / up", "make / of", "make / from"],
+            correctIndex: 0,
+            translation: "「良い材料が素晴らしい食事を作る」",
+            explanation: """
+            ・make for + 名詞 = 「〜の役に立つ・〜を生み出す」要因が結果を生むニュアンス
+            ・料理・人間関係・状況の評価で頻出
+            ・"Honesty makes for a good relationship." / "These conditions make for a great day."
+            ・類義: lead to(〜につながる) / contribute to(〜に貢献する)
+            ・他の make + 前置詞: make up(構成する/化粧する) / make of(〜製) / make from(〜から作る)
+            ・原因→結果を表す時に便利な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q347",
+            question: "I was born ___ March 15th, 1995.",
+            choices: ["on", "in", "at", "by"],
+            correctIndex: 0,
+            translation: "「1995年3月15日に生まれた」",
+            explanation: """
+            ・特定の日付には on を使う(ルール)
+            ・日付・曜日・特定の日(誕生日、記念日など)はすべて on
+            ・"on March 15" / "on my birthday" / "on Christmas Day"
+            ・月や年だけなら in(in March, in 1995)、時刻なら at(at 3pm)
+            ・3つのルール: at(時刻) / on(日付・曜日) / in(月・年・季節)
+            ・類義: on the day of / during(期間)
+            ・特定の日 → on は絶対ルール
+            """
+        ),
+        GrammarQuestion(
+            id: "q348",
+            question: "Let's meet ___ Monday.",
+            choices: ["on", "in", "at", "by"],
+            correctIndex: 0,
+            translation: "「月曜日に会いましょう」",
+            explanation: """
+            ・曜日の前は必ず on を使う
+            ・on Monday(月曜日に) / on Mondays(毎週月曜・複数形は習慣)
+            ・"See you on Friday." / "I work on weekdays."
+            ・会話では "See you Monday." のように on を省略することもあるが、文法的には on が正
+            ・類義: every Monday(毎週月曜) / next Monday(次の月曜)
+            ・on the weekend(米) / at the weekend(英) の違い
+            ・曜日 → on は基本ルール
+            """
+        ),
+        GrammarQuestion(
+            id: "q349",
+            question: "___ ___ ___ he forgot the meeting.",
+            choices: ["It / appears / that", "It / appears / for", "That / appears / it", "Appears / it / that"],
+            correctIndex: 0,
+            translation: "「彼は会議を忘れたようだ」",
+            explanation: """
+            ・It appears that + 文 = 「〜のようだ・〜らしい」フォーマル寄りの推量
+            ・It seems that とほぼ同じだが、appears の方がやや改まった
+            ・確信は持てないが状況から判断して「〜らしい」と伝える時
+            ・ビジネスメールや改まった会話に最適
+            ・"It appears that they are running late."
+            ・口語では that 省略可: "It appears he forgot."
+            ・類義: It seems that(最も一般的) / Apparently(口語・どうやら)
+            """
+        ),
+        GrammarQuestion(
+            id: "q350",
+            question: "He changed his mind ___ ___ ___ ___.",
+            choices: ["at / the / last / moment", "on / the / last / moment", "in / the / last / moment", "by / the / last / moment"],
+            correctIndex: 0,
+            translation: "「彼は土壇場で気が変わった」",
+            explanation: """
+            ・at the last moment = 「ぎりぎりで・土壇場で」慣用句
+            ・ドラマチックな転換やぎりぎりの決断を表す時に使う
+            ・"土壇場でキャンセル" / "最後の最後で気が変わった"
+            ・前置詞は at で固定
+            ・"He decided at the last moment." / "Always at the last moment!"
+            ・類義: at the last minute(ぎりぎり・同義) / in the nick of time(間一髪・ポジティブ寄り)
+            ・緊張感のあるシチュエーションに最適
+            """
+        ),
+        GrammarQuestion(
+            id: "q351",
+            question: "He should arrive ___ ___.",
+            choices: ["anytime / now", "any / time", "some / time", "every / time"],
+            correctIndex: 0,
+            translation: "「彼はもうすぐ着くはずだ」",
+            explanation: """
+            ・anytime now = 「もうすぐ・今にも」口語表現
+            ・何かが起こる直前の期待感を表す
+            ・"He'll be here anytime now." / "It should start anytime now."
+            ・any minute now とほぼ同じ意味で交換可能
+            ・類義: any minute now(今にも) / soon(まもなく・中立)
+            ・「待ち望んでいる」ニュアンスが込められている
+            ・スペース無し anytime と空けて any time 両方あるが、副詞「いつでも」の意味では anytime が標準
+            """
+        ),
+        GrammarQuestion(
+            id: "q352",
+            question: "The train should be here ___ ___.",
+            choices: ["any / minute", "some / minute", "every / minute", "no / minute"],
+            correctIndex: 0,
+            translation: "「電車はもうすぐ来るはずだ」",
+            explanation: """
+            ・any minute (now) = 「今にも・もうすぐ」
+            ・電車・人の到着、出来事の発生など、間もなく起こることを伝える定番
+            ・any second(今すぐ) / any moment(その瞬間にも) も同じパターン
+            ・"He'll arrive any minute now." / "It could happen any moment."
+            ・類義: any moment(今その瞬間にも) / at any time(いつでも)
+            ・緊迫感や期待感を出せる表現
+            ・通常 now を付けて "any minute now" で使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q353",
+            question: "Let me ___ ___ to the airport.",
+            choices: ["take / you", "bring / you", "carry / you", "get / you"],
+            correctIndex: 0,
+            translation: "「空港まで送らせて」",
+            explanation: """
+            ・take + 人 + to + 場所 = 「人を〜へ連れて行く」話し手から離れる方向の移動
+            ・"空港まで送るよ" / "子供を学校に連れて行く"
+            ・bring は逆に「こちらへ連れてくる」(注意)
+            ・"Take me with you." / "I'll take you home." / "Take her to the doctor."
+            ・類義: drive(車で送る) / escort(案内する・フォーマル)
+            ・take vs bring: 視点が離れるか近づくかで使い分け
+            ・"Can you take this to John?"(向こうへ) vs "Can you bring this to me?"(こちらへ)
+            """
+        ),
+        GrammarQuestion(
+            id: "q354",
+            question: "Do you ___ ___ ___ know his number?",
+            choices: ["by / any / chance", "on / any / chance", "at / any / chance", "in / any / chance"],
+            correctIndex: 0,
+            translation: "「もしかして彼の電話番号知ってる?」",
+            explanation: """
+            ・by any chance = 「もしかして・ひょっとして」控えめな質問表現
+            ・相手にプレッシャーをかけずに尋ねたい時に使う
+            ・「もしかして知ってる?」「ひょっとして空いてる?」ダメ元で聞きたい時
+            ・文末でも文中でも使える
+            ・"Are you free tonight, by any chance?" / "By any chance, do you have a pen?"
+            ・類義: happen to(たまたま〜する・同じ用法) / perhaps(フォーマル)
+            ・ビジネスでも日常でも丁寧な印象を与える
+            """
+        ),
+        GrammarQuestion(
+            id: "q355",
+            question: "___ ___ ___ he'll be late again.",
+            choices: ["The / chances / are", "The / chance / are", "A / chance / is", "Chance / are / the"],
+            correctIndex: 0,
+            translation: "「彼はまた遅刻するだろう」",
+            explanation: """
+            ・The chances are (that) + 文 = 「おそらく〜だろう・〜の可能性が高い」口語
+            ・probably のもう少し砕けたバージョン
+            ・推測や予想を伝える時。that はほぼ省略
+            ・"Chances are he'll forget." / "The chances are it'll rain."
+            ・「経験則からの予測」ニュアンス
+            ・類義: chances are(the も省略可) / most likely(おそらく)
+            ・"What are the chances?" = 「ありえるか?」と確率を尋ねる定番
+            """
+        ),
+        GrammarQuestion(
+            id: "q356",
+            question: "___ ___ been a long day.",
+            choices: ["It / has", "It / had", "It / have", "That / has"],
+            correctIndex: 0,
+            translation: "「長い一日だった」",
+            explanation: """
+            ・It has been + 形容詞/期間 = 「〜だった」現在完了形
+            ・今この瞬間まで続いている状況を述べる時に使う
+            ・"長い一日だった" / "久しぶりだね"
+            ・"It's been" と短縮されることがほとんど
+            ・"It's been ages!" / "It's been a while." / "It has been challenging."
+            ・類義: It's been(短縮形・口語) / It was(過去形・完全に終わった話)
+            ・感想や経過時間を伝える定番
+            """
+        ),
+        GrammarQuestion(
+            id: "q357",
+            question: "___ ___ ___ more communication in this team.",
+            choices: ["There / should / be", "There / will / be", "There / has / be", "That / should / be"],
+            correctIndex: 0,
+            translation: "「このチームにはもっとコミュニケーションがあるべきだ」",
+            explanation: """
+            ・There should be + 名詞 = 「〜があるべきだ」理想や提案
+            ・現状への改善要求や望ましい状態を表現
+            ・"There should be more rules." / "There should be transparency."
+            ・should で「義務・推奨」のニュアンス
+            ・類義: There ought to be(やや古風) / We need(直接的)
+            ・提案やアドバイスをやわらかく表現する時に最適
+            ・ビジネス会議や議論で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q358",
+            question: "___ ___ ___ a meeting tomorrow.",
+            choices: ["There / will / be", "There / is / be", "There / has / be", "That / will / be"],
+            correctIndex: 0,
+            translation: "「明日会議があるだろう」",
+            explanation: """
+            ・There will be + 名詞 = 「〜があるだろう」未来の存在文
+            ・予定・予測・約束を伝える時に使う
+            ・"明日会議がある" / "変化があるだろう"
+            ・"There will be changes." / "There will be a party."
+            ・類義: There's going to be(口語) / We will have(別の言い方)
+            ・ビジネスでも日常でも頻出
+            ・告知やアナウンスの定番表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q359",
+            question: "___ ___ ___ all morning.",
+            choices: ["It's / been / raining", "It / is / raining", "It / was / raining", "It / rained"],
+            correctIndex: 0,
+            translation: "「朝からずっと雨が降っている」",
+            explanation: """
+            ・It's been + V-ing = 「ずっと〜している」現在完了進行形
+            ・過去のある時点から今まで続いている動作を強調
+            ・"朝からずっと雨が降ってる" / "ずっと考えてた"
+            ・It has been raining の短縮形(口語ではほぼ短縮形)
+            ・"It's been snowing for hours." / "I've been waiting all day."
+            ・類義: It has been ~ing(書き言葉) / It's still ~ing(継続強調)
+            ・継続性を伝える重要な時制
+            """
+        ),
+        GrammarQuestion(
+            id: "q360",
+            question: "She loves jazz, ___ ___ ___ ___ she plays it daily.",
+            choices: ["so / much / so / that", "so / much / as / that", "too / much / so / that", "such / much / so / that"],
+            correctIndex: 0,
+            translation: "「彼女はジャズが大好きで、毎日演奏するほどだ」",
+            explanation: """
+            ・so much so that + 文 = 「あまりに〜なので…」程度の強調
+            ・前の文を受けて「それほどまでに〜だから」と結果を導く
+            ・"すごくジャズが好きで、毎日聴くほど" のように強い程度から結果へ
+            ・"He's brilliant, so much so that everyone admires him."
+            ・書き言葉や少し改まった会話で頻出
+            ・類義: to the point that(〜するほどに) / so much that(とても〜なので)
+            ・前の主張を強調して具体例を続ける時に効果的
+            """
+        ),
+        GrammarQuestion(
+            id: "q361",
+            question: "___ ___ it helpful to read every day.",
+            choices: ["I've / found", "I / find", "I'm / found", "I / found"],
+            correctIndex: 0,
+            translation: "「毎日読書することが役立つと感じている」",
+            explanation: """
+            ・I've found + 目的語 + 形容詞/補語 = 「〜だと分かった・経験から〜と感じている」
+            ・過去から今までの経験を通じて得た気づきを伝える
+            ・"毎日読書するのが役立つと分かった" / "彼は信頼できると思っている"
+            ・"I've found this approach effective." / "I've found him very helpful."
+            ・類義: I've realized(気づいた) / I've learned(学んだ)
+            ・経験に基づく結論を述べる定番
+            ・「ずっとそう感じていて、今も」というニュアンス
+            """
+        ),
+        GrammarQuestion(
+            id: "q362",
+            question: "___ ___ ___ quit my job.",
+            choices: ["I've / decided / to", "I / decided / to", "I'm / deciding / to", "I've / decide / to"],
+            correctIndex: 0,
+            translation: "「仕事を辞めることに決めた」",
+            explanation: """
+            ・I've decided to + 動詞原形 = 「〜することに決めた」現在完了形
+            ・決断した瞬間からその決意が現在も続いているニュアンス
+            ・I decided to(過去形)よりも「今もその気持ち」が伝わる
+            ・重大な決断や報告を伝える時の鉄板
+            ・"I've decided to move abroad." / "She's decided to start her own business."
+            ・類義: I've made up my mind to / I've chosen to
+            ・決意表明の最強表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q363",
+            question: "___ ___ ___ understand French.",
+            choices: ["I'm / starting / to", "I / start / to", "I'm / start / to", "I / started / to"],
+            correctIndex: 0,
+            translation: "「フランス語が分かるようになってきた」",
+            explanation: """
+            ・I'm starting to + 動詞原形 = 「〜し始めている」変化が今まさに進行中
+            ・"フランス語が分かるようになってきた" / "彼が好きになってきた"
+            ・徐々に状態が変わっていく感覚を表現
+            ・気づきや成長を伝える時に最適
+            ・"I'm starting to like it here." / "She's starting to feel better."
+            ・類義: I'm beginning to(やや改まった) / I'm getting to(〜するようになる)
+            ・"start" は動作の開始、"start + ing" / "start + to" 両方OK(若干ニュアンス差)
+            """
+        ),
+        GrammarQuestion(
+            id: "q364",
+            question: "Let's ___ the meeting now.",
+            choices: ["begin", "began", "begun", "beginning"],
+            correctIndex: 0,
+            translation: "「では会議を始めましょう」",
+            explanation: """
+            ・begin + 名詞/動名詞 = 「〜を始める」start よりやや改まった
+            ・会議・授業・プロジェクトなど公式に何かをスタートさせる時に自然
+            ・Let's begin は会議や授業の開始の定番
+            ・"Let's begin our journey." / "We'll begin shortly."
+            ・類義: start(最も一般的) / kick off(カジュアル)
+            ・Let's の後は必ず動詞原形(× Let's began)
+            ・begin-began-begun の不規則変化
+            """
+        ),
+        GrammarQuestion(
+            id: "q365",
+            question: "I like ___ coffee ___ tea.",
+            choices: ["both / and", "both / or", "either / and", "neither / and"],
+            correctIndex: 0,
+            translation: "「コーヒーも紅茶も両方好きだ」",
+            explanation: """
+            ・both A and B = 「AもBも両方」並列表現
+            ・2つとも好き・両方該当することを強調
+            ・"コーヒーも紅茶も好き" / "彼も彼女も来た"
+            ・A と B は同じ品詞(名詞同士・形容詞同士)にする
+            ・"Both happy and sad." / "Both you and I know this."
+            ・類義: A as well as B / not only A but also B(強調)
+            ・他の選択肢: either/or(どちらか) / neither/nor(両方否定)
+            """
+        ),
+        GrammarQuestion(
+            id: "q366",
+            question: "You're wearing your shirt ___ ___.",
+            choices: ["inside / out", "outside / in", "inside / in", "out / inside"],
+            correctIndex: 0,
+            translation: "「シャツを裏返しに着てるよ」",
+            explanation: """
+            ・inside out = 「裏返しに・裏表逆に」慣用表現
+            ・服を間違えて着た時の定番表現
+            ・比喩で「徹底的に」: know something inside out = 〜を熟知している
+            ・"He knows this city inside out." / "Turn it inside out."
+            ・類義: upside down(上下逆さま) / backwards(前後逆)
+            ・完全な理解を表す時にも使える比喩
+            ・固定語順(× outside in は誤り)
+            """
+        ),
+        GrammarQuestion(
+            id: "q367",
+            question: "Stop ___ ___! Don't move.",
+            choices: ["right / there", "just / there", "on / there", "at / there"],
+            correctIndex: 0,
+            translation: "「そこで止まれ!動くな!」",
+            explanation: """
+            ・right there = 「まさにそこに・ちょうどそこで」
+            ・right が「ちょうど・まさに」と位置を強調
+            ・"そこで止まって!" / "ほら、そこだよ"
+            ・特定の場所を指差すような時に使う
+            ・"It's right there." / "Wait right there."
+            ・同パターン: right here(まさにここ) / right now(まさに今) / right after(すぐ後)
+            ・類義: right here(まさにここ) / just there(ちょうどそこ)
+            ・位置・時間を強調する right の用法
+            """
         )
     ]
 }
