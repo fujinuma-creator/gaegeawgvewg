@@ -3027,6 +3027,620 @@ enum GrammarMCQSeed {
             ・類義: whichever way(どちらの方法でも) / anyhow(とにかく・カジュアル)
             ・選択肢を踏まえた結論を示す万能フレーズ
             """
+        ),
+        GrammarQuestion(
+            id: "q391",
+            question: "___ ___ been to Paris before.",
+            choices: ["I've / never", "I / never", "I've / not", "I'm / never"],
+            correctIndex: 0,
+            translation: "「これまでパリに行ったことがない」",
+            explanation: """
+            ・I've never + 過去分詞 = 「今までに一度も〜したことがない」現在完了の否定
+            ・never = 「これまで一度もない」経験の完全否定
+            ・生まれてから今までの経験を語る
+            ・"I've never seen that before." / "I've never been so happy."
+            ・類義: I haven't ever(やや堅い) / I've yet to(まだ〜していない・フォーマル)
+            ・初体験を強調する時の鉄板
+            ・"Never have I ever ~" は倒置の強調形
+            """
+        ),
+        GrammarQuestion(
+            id: "q392",
+            question: "___ ___ ___ all morning.",
+            choices: ["I've / been / studying", "I / am / studying", "I / was / studied", "I / studied"],
+            correctIndex: 0,
+            translation: "「朝からずっと勉強している」",
+            explanation: """
+            ・I've been + V-ing = 現在完了進行形「過去から今までずっと〜している」
+            ・継続性を強調するのが特徴
+            ・"朝からずっと勉強してる" / "最近忙しくしてる"
+            ・"I've been working hard." / "She's been studying for hours."
+            ・現在完了 I've studied(完了・経験) vs 進行形(継続)
+            ・類義: I have been ~ing(短縮なし・書き言葉) / I've been + 名詞(状態)
+            ・動作が続いている感覚を伝える
+            """
+        ),
+        GrammarQuestion(
+            id: "q393",
+            question: "The hotel is cheap. ___, the location is perfect.",
+            choices: ["Moreover", "However", "Nevertheless", "Otherwise"],
+            correctIndex: 0,
+            translation: "「ホテルは安い。さらに、立地も完璧だ」",
+            explanation: """
+            ・Moreover = 「さらに・その上」フォーマルな追加情報のつなぎ語
+            ・同類の情報を加える時。ポジティブな情報の積み重ねに最適
+            ・ビジネス文書、エッセイ、プレゼンで頻出
+            ・会話では Plus / On top of that の方が自然
+            ・"Moreover, the staff was excellent." / "The plan is feasible. Moreover, it's cost-effective."
+            ・類義: Furthermore(さらに・フォーマル) / In addition(加えて・中立)
+            ・対比: However(しかし) / Otherwise(さもなければ)
+            """
+        ),
+        GrammarQuestion(
+            id: "q394",
+            question: "He ___ ___ paying for dinner.",
+            choices: ["insisted / on", "insisted / for", "insisted / to", "insisted / about"],
+            correctIndex: 0,
+            translation: "「彼は夕食代を払うと言って譲らなかった」",
+            explanation: """
+            ・insist on + 名詞/動名詞 = 「〜を主張する・強く言い張る」前置詞は on で固定
+            ・「夕食代を払うと言って譲らない」「自分のやり方にこだわる」
+            ・後ろは必ず名詞または動名詞(-ing)、不定詞は使えない
+            ・"She insisted on coming with us." / "He insisted on his innocence."
+            ・類義: demand(強く要求) / be adamant about(断固たる・フォーマル)
+            ・強い主張や譲らない姿勢を表す
+            ・insist that 節も可: "He insisted that I take it."(仮定法現在)
+            """
+        ),
+        GrammarQuestion(
+            id: "q395",
+            question: "The food was ___ ___.",
+            choices: ["pretty / good", "pretty / well", "very / well", "pretty / better"],
+            correctIndex: 0,
+            translation: "「料理はけっこう美味しかった」",
+            explanation: """
+            ・pretty + 形容詞 = 「かなり〜・けっこう〜」口語的な強調
+            ・very ほど強くなく、控えめだが肯定的
+            ・「けっこう美味しい」「まあまあいい」
+            ・アメリカ英語で特によく使う
+            ・"Pretty good!" / "Pretty cool." / "Pretty easy."
+            ・pretty good(けっこう良い) vs pretty well(けっこう上手に・副詞修飾)
+            ・類義: fairly(まあまあ・中立) / quite(けっこう・英)
+            ・形容詞 good を修飾 → pretty good が正解(× pretty well)
+            """
+        ),
+        GrammarQuestion(
+            id: "q396",
+            question: "___, are you really going to quit?",
+            choices: ["Seriously", "Serious", "In serious", "Seriousness"],
+            correctIndex: 0,
+            translation: "「マジで?本当に辞めるの?」",
+            explanation: """
+            ・Seriously = 「真面目に・本気で」副詞
+            ・文頭で「マジで?本気?」と相手の発言の真意を確認する口語
+            ・Seriously? 単独で「マジで?」
+            ・"Seriously, ~" で話題を真剣モードに切り替える
+            ・"Seriously, I love it." / "Seriously? No way!"
+            ・類義: Really?(本当に?) / For real?(マジで?・カジュアル)
+            ・驚き、疑問、強調などのニュアンスを伴う
+            ・take ~ seriously = 〜を真面目に受け取る
+            """
+        ),
+        GrammarQuestion(
+            id: "q397",
+            question: "He's busy at work, ___ ___ ___ studying for his exam.",
+            choices: ["on / top / of", "on / the / top", "at / top / of", "in / top / of"],
+            correctIndex: 0,
+            translation: "「仕事で忙しいうえに、試験勉強もある」",
+            explanation: """
+            ・on top of + 名詞 = 「〜に加えて・〜の上に」
+            ・物理的に「上に」だけでなく、プラスαの状況を表す比喩
+            ・「仕事で忙しい、その上勉強もある」 — 負担や状況の積み重ね
+            ・"On top of everything else, ~" / "On top of that, ~"
+            ・"On top of the world." = 最高の気分(慣用句)
+            ・"On top of things." = 把握している
+            ・類義: in addition to(〜に加えて・フォーマル) / plus(その上・カジュアル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q398",
+            question: "She walked ___ ___ ___ in the room.",
+            choices: ["back / and / forth", "forth / and / back", "back / and / front", "from / and / to"],
+            correctIndex: 0,
+            translation: "「彼女は部屋を行ったり来たりした」",
+            explanation: """
+            ・back and forth = 「行ったり来たり・往復して」慣用句
+            ・順序固定で forth and back とは言わない
+            ・物理的な往復だけでなく、議論やメールのやり取りでも使う
+            ・"Walking back and forth." / "Emails back and forth."
+            ・動作の反復や非効率さを表すニュアンスも
+            ・類義: to and fro(古風) / up and down(上下・縦の往復)
+            ・"Back and forth, back and forth." — 強調の反復
+            """
+        ),
+        GrammarQuestion(
+            id: "q399",
+            question: "Trends ___ ___ ___, but classics stay.",
+            choices: ["come / and / go", "go / and / come", "come / or / go", "come / and / leave"],
+            correctIndex: 0,
+            translation: "「流行は来ては去るが、定番は残る」",
+            explanation: """
+            ・come and go = 「来ては去る・現れては消える」慣用句
+            ・順序固定で語順を変えない
+            ・流行、人々、感情、痛みなど一時的なものを表現
+            ・"Trends come and go." / "Pain comes and goes."
+            ・人生の無常や変化を語る時にも詩的に使える
+            ・"Easy come, easy go." = 簡単に得たものは簡単に失う(諺)
+            ・類義: come and pass(過ぎ去る) / fluctuate(変動・フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q400",
+            question: "___ ___ ___ ___ ___ on this decision for weeks.",
+            choices: ["I've / been / back / and / forth", "I / am / back / and / forth", "I / went / back / and / forth", "I'm / been / back / and / forth"],
+            correctIndex: 0,
+            translation: "「この決定について何週間も迷っている」",
+            explanation: """
+            ・I've been back and forth = 「ずっと迷っている・行ったり来たり」
+            ・back and forth を現在完了進行形と組合せて長期間の迷いや往復を表す
+            ・「何週間も決められない」「決断に揺れ動いている」
+            ・"I've been back and forth on this." / "We've been back and forth all day."
+            ・優柔不断な状況や物理的な往復の継続
+            ・類義: I've been torn(引き裂かれている) / I've been undecided(決められない)
+            ・決断に迷う時の鉄板表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q401",
+            question: "I see him ___ ___ ___ ___.",
+            choices: ["once / in / a / while", "one / in / a / while", "once / at / a / while", "once / on / the / while"],
+            correctIndex: 0,
+            translation: "「彼にはたまに会う」",
+            explanation: """
+            ・once in a while = 「たまに・時々」慣用句
+            ・頻度の低さを表す口語的表現
+            ・「たまに会う」「時々連絡する」
+            ・sometimes(時々)より頻度がさらに低い、rarely(めったに〜ない)よりは多い
+            ・"I treat myself once in a while." / "Once in a while it's nice to relax."
+            ・類義: every now and then(同義) / occasionally(時折・フォーマル)
+            ・完全に途絶えてもいない関係や習慣を表す
+            """
+        ),
+        GrammarQuestion(
+            id: "q402",
+            question: "___ ___ start, you can't stop.",
+            choices: ["Once / you", "When / you", "Since / you", "Until / you"],
+            correctIndex: 0,
+            translation: "「いったん始めたら、止められない」",
+            explanation: """
+            ・Once + 主語 + 動詞 = 「いったん〜すると・〜したら」接続詞
+            ・when(〜する時)より「一度〜してしまえば」のニュアンスが強い
+            ・「始めたら止まらない」「慣れたら簡単」
+            ・"Once you try it, you'll love it." / "Once I make up my mind, that's it."
+            ・動作の開始後の状態を強調
+            ・類義: as soon as(〜するとすぐに) / after(〜の後で)
+            ・条件と時間の両方の意味を併せ持つ便利な接続詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q403",
+            question: "The party ___ ___ to be a huge success.",
+            choices: ["turned / out", "turned / on", "turned / into", "turned / over"],
+            correctIndex: 0,
+            translation: "「パーティーは結果的に大成功だった」",
+            explanation: """
+            ・turn out + to be/形容詞 = 「結果として〜になる・〜だと判明する」
+            ・予想と違った結果や最終的に明らかになった事実を伝える
+            ・「結果的に大成功」「実は彼が正しかった」
+            ・"It turned out to be a mistake." / "She turned out to be wonderful."
+            ・"How did it turn out?" = どうなった?(頻出)
+            ・類義: end up(結局〜になる・カジュアル) / prove to be(〜だと判明・フォーマル)
+            ・ストーリーの結末や意外な展開を語る時の鉄板
+            ・他: turn on(つける) / turn into(変える) / turn over(裏返す)
+            """
+        ),
+        GrammarQuestion(
+            id: "q404",
+            question: "___ ___ ___ decide to move?",
+            choices: ["What / made / you", "Why / made / you", "How / made / you", "What / makes / you"],
+            correctIndex: 0,
+            translation: "「何があなたに引っ越そうと決めさせたの?(なぜ引っ越そうと?)」",
+            explanation: """
+            ・What made you + 動詞原形? = 「なぜ〜したの?」動機を尋ねる
+            ・Why did you ~? と同じ意味だが、より柔らかく好奇心を込めた印象
+            ・相手の決断や選択の背景を知りたい時に
+            ・"What made you choose this?" / "What made you change your mind?"
+            ・類義: Why did you(直接的) / What inspired you to(ポジティブ)
+            ・興味を示しつつ尋ねられる
+            ・made + you = 使役、後ろは動詞原形
+            """
+        ),
+        GrammarQuestion(
+            id: "q405",
+            question: "___ ___ ___ here today?",
+            choices: ["What / brought / you", "Who / brought / you", "Why / brought / you", "How / brought / you"],
+            correctIndex: 0,
+            translation: "「何があなたを今日ここに連れてきたの?(どうしてここに?)」",
+            explanation: """
+            ・What brought you + 場所? = 「なぜここに?」来訪の理由を尋ねる
+            ・"Why are you here?" より丁寧で好奇心のあるニュアンス
+            ・初対面や久しぶりの再会で使うと自然
+            ・「何の用事で?」「どうしてここに?」
+            ・"What brings you here?"(現在形・今の理由)
+            ・類義: What brings you(現在) / What's the occasion?(何の機会で?)
+            ・柔らかく聞ける丁寧な質問
+            """
+        ),
+        GrammarQuestion(
+            id: "q406",
+            question: "We'll discuss this ___ ___.",
+            choices: ["later / on", "later / in", "after / on", "more / later"],
+            correctIndex: 0,
+            translation: "「これについては後ほど話し合おう」",
+            explanation: """
+            ・later on = 「後で・後ほど」口語表現
+            ・later 単独でも「後で」だが、later on は「もう少し後で」の具体的な感覚
+            ・"未来のある時点を曖昧に指す"
+            ・"Talk later on." / "We'll see later on."
+            ・ビジネスでも日常でも使える便利なフレーズ
+            ・相手に時間を与える時に重宝
+            ・類義: afterwards(後で・フォーマル) / in a bit(ちょっとしたら・カジュアル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q407",
+            question: "The ___ ___ people agreed with the decision.",
+            choices: ["majority / of", "major / of", "most / of", "many / of"],
+            correctIndex: 0,
+            translation: "「大多数の人が決定に賛成した」",
+            explanation: """
+            ・the majority of + 名詞 = 「〜の大多数・過半数」フォーマル
+            ・most of より「半分以上」という数値的なニュアンスが明確
+            ・アンケート、投票、世論などの統計的な文脈で頻出
+            ・"大多数が賛成した" / "多くの人が反対"
+            ・"The majority of voters supported it." / "The vast majority agreed."
+            ・類義: most of(一般的) / the bulk of(大部分・フォーマル)
+            ・集団の中の優勢な部分を表現する時に
+            ・反対: the minority of(少数派)
+            """
+        ),
+        GrammarQuestion(
+            id: "q408",
+            question: "I did it ___.",
+            choices: ["myself", "by my", "for me", "my own"],
+            correctIndex: 0,
+            translation: "「自分でやった」",
+            explanation: """
+            ・myself = 再帰代名詞「自分自身で・自分を」
+            ・文末で使うと「他人の助けなしで」を強調
+            ・「自分でやった」「自分で作った」
+            ・"I made it myself." / "She did it herself."
+            ・by myself(一人で) / myself 単独は「自分の手で」と能動性強調
+            ・類義: by myself(一人で・孤独感) / on my own(自力で・独立性)
+            ・myself, yourself, himself, herself, itself, ourselves, yourselves, themselves
+            """
+        ),
+        GrammarQuestion(
+            id: "q409",
+            question: "She ___ ___ help.",
+            choices: ["asked / for", "asked / to", "asked / about", "asked / on"],
+            correctIndex: 0,
+            translation: "「彼女は助けを求めた」",
+            explanation: """
+            ・ask for + 名詞 = 「〜を求める・〜を頼む」前置詞は for で固定
+            ・"Ask for help." / "Ask for directions." / "Ask for the bill."
+            ・ask about ~(〜について尋ねる)とは意味が違う
+            ・レストランやお店でのリクエストにも使える
+            ・"Ask for water, please." / "She asked for a raise."
+            ・類義: request(要請・フォーマル) / demand(要求・強い)
+            ・何かを欲しいと頼む時に使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q410",
+            question: "___ ___ ___ go for a walk?",
+            choices: ["Why / don't / we", "Why / not / we", "How / don't / we", "What / don't / we"],
+            correctIndex: 0,
+            translation: "「散歩に行きませんか?」",
+            explanation: """
+            ・Why don't we + 動詞原形? = 「〜しませんか?・〜しよう」提案表現
+            ・直訳の「なぜしないの?」ではなく軽い誘いの定型句
+            ・Let's ~ よりも丁寧で、相手の意見を尊重するニュアンス
+            ・"Why don't we try?" / "Why don't we meet tomorrow?"
+            ・"Why don't you ~?" = 「〜してみては?」相手への提案
+            ・類義: Let's(直接的) / How about ~ing?(〜するのはどう?)
+            ・友達や同僚への気軽な提案で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q411",
+            question: "The rain ___ ___ ___ cancel the picnic.",
+            choices: ["forced / us / to", "forced / us / for", "forced / to / us", "forced / us / on"],
+            correctIndex: 0,
+            translation: "「雨のせいでピクニックを中止せざるを得なかった」",
+            explanation: """
+            ・force + 人 + to + 動詞原形 = 「人に強制的に〜させる」
+            ・意志に反して何かをさせられるニュアンス
+            ・「雨で中止せざるを得なかった」「無理やり決断させられた」
+            ・"He forced me to apologize." / "Don't force yourself."
+            ・受動態 be forced to ~(〜せざるを得ない)も頻出
+            ・類義: compel + 人 + to(余儀なくさせる・フォーマル) / make + 人 + V(より一般的)
+            ・強い圧力や状況による強制を表す
+            """
+        ),
+        GrammarQuestion(
+            id: "q412",
+            question: "I can't wait ___ ___.",
+            choices: ["any / longer", "some / longer", "more / longer", "no / longer"],
+            correctIndex: 0,
+            translation: "「もうこれ以上待てない」",
+            explanation: """
+            ・any longer = 「もうこれ以上〜ない」否定文と組合せ
+            ・我慢の限界を表す時の定番
+            ・「もう待てない」「もう続けられない」
+            ・"I can't stand it any longer." / "Won't be needed any longer."
+            ・anymore(もう〜ない)とほぼ同じだが、any longer は時間の継続を強調
+            ・類義: anymore(同義) / no longer(肯定文で使う・「もはや〜ない」)
+            ・"No longer needed."(肯定文) vs "Not needed any longer."(否定文) — 位置と形が違う
+            """
+        ),
+        GrammarQuestion(
+            id: "q413",
+            question: "I want ___ ___ coffee — I've had enough.",
+            choices: ["no / more", "no / less", "not / more", "any / more"],
+            correctIndex: 0,
+            translation: "「もうコーヒーはいらない、十分飲んだ」",
+            explanation: """
+            ・no more + 名詞 = 「もう〜はいらない・これ以上〜なし」
+            ・完全な拒否や終了を表す
+            ・「もうコーヒーはいい」「もう議論はやめよう」
+            ・"No more excuses!" = 言い訳はもうやめろ!
+            ・"No more drama." / "No more questions."
+            ・強い禁止や決別を伝える時にも使える
+            ・類義: no further(これ以上〜ない・フォーマル) / that's enough(もう十分)
+            """
+        ),
+        GrammarQuestion(
+            id: "q414",
+            question: "She earned $10,000, ___ ___ than her boss.",
+            choices: ["no / less", "no / more", "not / less", "any / less"],
+            correctIndex: 0,
+            translation: "「彼女は1万ドル、上司に劣らず稼いだ」",
+            explanation: """
+            ・no less than + 数値/名詞 = 「〜も・〜と同じくらい」驚きや感心を込めて
+            ・「上司と同じくらい稼いだ」のように、少なくない多さを強調
+            ・"No less than $10,000."(なんと1万ドルも)
+            ・"No less than 100 people came."
+            ・フォーマル寄りの強調表現
+            ・類義: as much as(〜も) / a whopping(なんと・カジュアル)
+            ・no more than(たった・少ない) vs no less than(も・多い) ── 対の関係
+            """
+        ),
+        GrammarQuestion(
+            id: "q415",
+            question: "The trip took ___ ___ an hour.",
+            choices: ["less / than", "more / than", "fewer / than", "least / than"],
+            correctIndex: 0,
+            translation: "「旅行は1時間もかからなかった」",
+            explanation: """
+            ・less than + 数値 = 「〜未満・〜より少なく」比較表現
+            ・不可算名詞や時間・距離に使う
+            ・「1時間未満」「20ドル未満」
+            ・"Less than an hour." / "Less than $20." / "Less than 10 minutes."
+            ・可算名詞には fewer than(より少ない)を使うのが正式
+            ・口語では less than が混用されることも多い
+            ・類義: fewer than(可算名詞) / under(〜未満・口語)
+            """
+        ),
+        GrammarQuestion(
+            id: "q416",
+            question: "___ ___ you can come tomorrow.",
+            choices: ["I / hope", "I / wish", "I'm / hoping", "I / hoped"],
+            correctIndex: 0,
+            translation: "「明日来られるといいな」",
+            explanation: """
+            ・I hope + 文 = 「〜だといいな」実現可能なことへの期待
+            ・I wish との違い: hope(現実的な希望) / wish(実現困難な願望)
+            ・"明日来られるといいな" / "うまくいきますように"
+            ・"I hope so." / "I hope not." / "I hope you're well."
+            ・that 節の that は省略可
+            ・類義: I'm hoping(進行形で強調) / I trust(やや改まった)
+            ・ポジティブで前向きな期待を伝える時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q417",
+            question: "___ ___ I had more time.",
+            choices: ["I / wish", "I / hope", "I / wished", "I'm / wishing"],
+            correctIndex: 0,
+            translation: "「もっと時間があったらなあ」",
+            explanation: """
+            ・I wish + 過去形/仮定法 = 「〜だったらなあ」現実と違うことへの願望
+            ・I wish I had(〜があれば) / I wish I were(〜であれば)など過去形を使う
+            ・実現困難または不可能な願望
+            ・"I wish I could fly." / "I wish I were younger."
+            ・I hope(実現可能な期待) vs I wish(実現困難) — 時制と意味で明確に違う
+            ・類義: If only(〜だったらなあ・強い後悔) / I'd love to(できればしたい・前向き)
+            ・後悔や憧れを表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q418",
+            question: "___ ___ leave, please lock the door.",
+            choices: ["Before / you", "After / you", "Until / you", "Since / you"],
+            correctIndex: 0,
+            translation: "「出かける前に、ドアに鍵をかけてね」",
+            explanation: """
+            ・Before + 主語 + 動詞 = 「〜する前に」接続詞
+            ・動作の順序を明確にする時に
+            ・「出かける前に」「決める前に」
+            ・"Before you go ~" / "Before I forget" / "Before it's too late"
+            ・会話やビジネスメールで頻出
+            ・類義: prior to(〜の前に・フォーマル) / earlier than(〜より早く)
+            ・注意喚起や指示にも使える便利な接続詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q419",
+            question: "Sorry, I'm busy now. Can we talk ___ ___?",
+            choices: ["another / time", "other / time", "more / time", "some / time"],
+            correctIndex: 0,
+            translation: "「ごめん、今忙しい。また今度話せる?」",
+            explanation: """
+            ・another time = 「また今度・別の時に」
+            ・今は無理だが将来的にというニュアンスを丁寧に伝える
+            ・誘いを断る時の社交辞令としても使える
+            ・「また今度ね」「別の機会に」
+            ・"Let's do it another time." / "Maybe another time."
+            ・完全な拒否ではなく、可能性を残す柔らかい言い回し
+            ・類義: some other time(また別の時に) / later(後で・カジュアル)
+            ・相手を傷つけずに済む配慮の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q420",
+            question: "___ ___ stay home tonight.",
+            choices: ["I'd / rather", "I'm / rather", "I / rather", "I've / rather"],
+            correctIndex: 0,
+            translation: "「今夜は家にいたい」",
+            explanation: """
+            ・I'd rather + 動詞原形 = 「〜したい・〜の方がいい」控えめな好み
+            ・I would rather の短縮形
+            ・「むしろ〜したい」というニュアンスで、強くない好みを丁寧に
+            ・"I'd rather not."(〜したくない・丁寧な断り)
+            ・"I'd rather walk." / "I'd rather stay quiet."
+            ・I'd rather A than B = BよりAしたい
+            ・類義: I'd prefer to(〜の方がいい・フォーマル) / I'd rather not(できれば〜したくない)
+            ・丁寧な断りの定番
+            """
+        ),
+        GrammarQuestion(
+            id: "q421",
+            question: "I don't want to ___ ___ ___ their argument.",
+            choices: ["get / involved / in", "get / involve / in", "be / involved / on", "get / involved / for"],
+            correctIndex: 0,
+            translation: "「彼らの議論に巻き込まれたくない」",
+            explanation: """
+            ・get involved in + 名詞 = 「〜に関わる・〜に巻き込まれる」前置詞は in で固定
+            ・「議論に巻き込まれる」「プロジェクトに関わる」
+            ・主体的または受動的な関与を表す
+            ・"Get involved in the community." / "Don't get involved in their fight."
+            ・"don't want to get involved" = 関わりたくない(トラブルから距離を置く)
+            ・類義: be part of(〜の一部になる) / engage in(〜に従事する・フォーマル)
+            ・人間関係やトラブルの話で頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q422",
+            question: "The bill comes to $50 ___.",
+            choices: ["altogether", "all together", "together all", "totally"],
+            correctIndex: 0,
+            translation: "「お会計は合計50ドルです」",
+            explanation: """
+            ・altogether(1語) = 「合計で・完全に」副詞
+            ・2語の all together は「皆一緒に」と意味が違うので注意
+            ・「合計50ドル」「完全に違う」
+            ・"That's $50 altogether." / "It's altogether different."
+            ・"Not altogether wrong." = 完全には間違ってない
+            ・類義: in total(合計で・中立) / completely(完全に・程度)
+            ・1語と2語で全く別の意味になる典型
+            """
+        ),
+        GrammarQuestion(
+            id: "q423",
+            question: "Let's start ___ ___ ___.",
+            choices: ["from / the / beginning", "on / the / beginning", "at / the / beginning", "since / the / beginning"],
+            correctIndex: 0,
+            translation: "「最初から始めよう」",
+            explanation: """
+            ・from the beginning = 「最初から・初めから」前置詞は from(起点)
+            ・「最初からやり直そう」「最初から知っていた」
+            ・"From the very beginning." / "I knew from the beginning."
+            ・at the beginning(最初の段階で・冒頭で)とニュアンスが少し違う
+            ・"At the beginning of the year"(年初に) vs "From the beginning"(初めから)
+            ・類義: from the start(同義) / right from the get-go(最初から・カジュアル)
+            ・ある時点を起点に語る時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q424",
+            question: "Are you ___ ___ help us?",
+            choices: ["willing / to", "wanting / to", "willing / for", "will / to"],
+            correctIndex: 0,
+            translation: "「私たちを手伝う気はある?」",
+            explanation: """
+            ・be willing to + 動詞原形 = 「進んで〜する・〜する意思がある」
+            ・強制ではなく自主的な意志を表す
+            ・「手伝う気はある?」「協力する用意がある」
+            ・want to(〜したい)よりも控えめで「気持ちはある」のニュアンス
+            ・"I'm willing to listen." / "She's willing to try."
+            ・類義: ready to(準備ができている) / prepared to(用意がある・フォーマル)
+            ・ビジネスでも日常でも便利な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q425",
+            question: "\"Do you mind if I open the window?\" \"___ ___ ___.\"",
+            choices: ["Not / at / all", "No / at / all", "Not / in / all", "Not / for / all"],
+            correctIndex: 0,
+            translation: "「『窓を開けてもいい?』『全然構いません』」",
+            explanation: """
+            ・Not at all = 「全然構わない・どういたしまして」完全否定の慣用句
+            ・Do you mind ~?(〜してもいい?)への返答として肯定的に
+            ・お礼への返答: "Thanks." → "Not at all."(どういたしまして)
+            ・直訳の「全然〜ない」だが、丁寧な反応として定着
+            ・"Not at all, please."(どうぞどうぞ)
+            ・類義: No problem(問題ない・カジュアル) / You're welcome(どういたしまして)
+            ・※ Do you mind ~? に Yes と答えると「気にする = 嫌だ」になるので注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q426",
+            question: "___ ___ ___ with this problem for hours.",
+            choices: ["I've / been / struggling", "I / am / struggling", "I / struggled / been", "I've / struggled / been"],
+            correctIndex: 0,
+            translation: "「何時間もこの問題に悩んでいる」",
+            explanation: """
+            ・I've been struggling = 「ずっと苦戦している・悩んでいる」現在完了進行形
+            ・過去から今までずっと続いている困難を強調
+            ・「何時間も悩んでる」「ずっと苦しんでいる」
+            ・"I've been struggling with English." / "She's been struggling at work."
+            ・長期的な苦労や葛藤を伝える時に
+            ・類義: I've been having trouble(困っている) / I've been wrestling with(格闘している・改まった)
+            ・仕事、勉強、感情の問題などで頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q427",
+            question: "He started exercising ___ ___ ___ ___ lose weight.",
+            choices: ["as / a / way / to", "as / way / to", "for / a / way / to", "by / a / way / to"],
+            correctIndex: 0,
+            translation: "「彼は痩せる方法として運動を始めた」",
+            explanation: """
+            ・as a way to + 動詞原形 = 「〜する方法として・〜するために」
+            ・目的や手段を表す
+            ・「痩せるために運動を始めた」「ストレス解消の方法として読書をする」
+            ・"As a way to relax." / "As a way to make money."
+            ・何かをする目的・手段を説明する時に
+            ・類義: in order to(〜するために・フォーマル) / as a means of ~ing(〜する手段として)
+            ・具体的な手段を強調するニュアンス
+            """
+        ),
+        GrammarQuestion(
+            id: "q428",
+            question: "___ ___ ___ ___ you had a great time!",
+            choices: ["It / sounds / as / if", "It / sounds / like / it", "It / sounds / as / that", "It / sound / as / if"],
+            correctIndex: 0,
+            translation: "「楽しかったみたいだね!」",
+            explanation: """
+            ・It sounds as if + 文 = 「〜のように聞こえる・〜のようだ」
+            ・相手の話から得た印象を伝える時に
+            ・「楽しかったみたいだね」「疲れているみたいだね」
+            ・"It sounds as if she's upset." / "It sounds as if you're tired."
+            ・共感を込めて反応する時に最適
+            ・It sounds like ~ も同じ意味で口語ではこちらが頻出
+            ・類義: It sounds like(カジュアル) / It seems that(中立)
+            """
         )
     ]
 }
