@@ -4047,6 +4047,207 @@ enum GrammarMCQSeed {
             ・類義: kind of(同義) / a bit(少し・英国寄り)
             ・強い表現を和らげる役割
             """
+        ),
+        GrammarQuestion(
+            id: "q454",
+            question: "___ ___ ___ ___ ___, I haven't seen him in a while.",
+            choices: ["Come / to / think / of / it", "Coming / to / think / of / it", "Come / for / think / of / it", "Come / to / thinking / of / it"],
+            correctIndex: 0,
+            translation: "「そういえば、しばらく彼に会っていない」",
+            explanation: """
+            ・come to think of it = 「そういえば・考えてみると」慣用句
+            ・会話の途中で何かを思い出した時に使う
+            ・「そう言われてみれば」など、ふと気づいたことを切り出す定番
+            ・文頭で使うことが多く、思考の方向転換を示す
+            ・"Come to think of it, I never asked her name."
+            ・類義: now that you mention it(言われてみれば) / speaking of which(そう言えば)
+            ・口語で会話を自然に展開するときの便利な表現
+            ・固定表現で語順は変えない
+            """
+        ),
+        GrammarQuestion(
+            id: "q455",
+            question: "___ ___ is your daughter?",
+            choices: ["How / old", "What / old", "How / age", "What / age"],
+            correctIndex: 0,
+            translation: "「娘さんは何歳ですか?」",
+            explanation: """
+            ・How old + be動詞 + 主語? = 「〜は何歳?」年齢を尋ねる基本疑問
+            ・直訳「どれくらい古い?」だが、年齢の質問として定着
+            ・物の年代を聞く時にも使える(建物が築何年か等)
+            ・返事: "She's five (years old)." / "About 30."
+            ・"How old is this house?" / "How old were you then?"
+            ・類義: What age(やや改まった) / How many years old(冗長)
+            ・※ What's your age? は失礼に響くことがあるので注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q456",
+            question: "___ ___ is the building?",
+            choices: ["How / tall", "What / tall", "How / height", "How / high"],
+            correctIndex: 0,
+            translation: "「その建物はどれくらい高い?」",
+            explanation: """
+            ・How tall + be動詞 + 主語? = 「〜はどれくらい背が高い?」
+            ・tall は縦に伸びた物体(人、建物、木)に使う
+            ・how high(どれくらい高い位置・標高)とは違う
+            ・mountains は high、人や建物は tall を使い分け
+            ・返事: "It's 100 meters tall." / "He's six feet tall."
+            ・"How tall are you?" / "How tall is the tower?"
+            ・類義: how high(高さ・位置) / what's the height of(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q457",
+            question: "___ ___ ___ get there without a car?",
+            choices: ["How / will / you", "What / will / you", "Why / will / you", "How / you / will"],
+            correctIndex: 0,
+            translation: "「車なしでどうやってそこに行くの?」",
+            explanation: """
+            ・How will you + 動詞原形? = 「どうやって〜するつもり?」方法・手段の未来疑問
+            ・how(方法) + will you(未来の意思)
+            ・「車なしでどう行く?」「どう乗り切るつもり?」
+            ・"How will you handle this?" / "How will you manage?"
+            ・挑戦的・心配のニュアンスを含むことも
+            ・類義: How do you plan to(具体的計画) / How are you going to(同義)
+            ・相手の戦略を尋ねる時の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q458",
+            question: "___ ___ ___ fire, use the stairs.",
+            choices: ["In / case / of", "On / case / of", "At / case / of", "For / case / of"],
+            correctIndex: 0,
+            translation: "「火災の場合は階段を使ってください」",
+            explanation: """
+            ・in case of + 名詞 = 「〜の場合には・〜の際は」
+            ・緊急時の指示や注意書きで頻出
+            ・「火災の場合」「緊急事態」など起こり得る状況への対応
+            ・"In case of emergency, call 911." / "In case of rain, stay inside."
+            ・in case + 文(〜の場合に備えて)とは少し違う
+            ・"Take an umbrella in case it rains."(備え・節)
+            ・"In case of rain, ..."(状況・名詞)
+            ・類義: in the event of(フォーマル) / should there be(もし〜があれば・フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q459",
+            question: "I'll wait ___ you come back.",
+            choices: ["until", "by", "for", "on"],
+            correctIndex: 0,
+            translation: "「君が戻るまで待つよ」",
+            explanation: """
+            ・until + 主語 + 動詞 = 「〜するまで(ずっと)」接続詞・前置詞
+            ・動作や状態の継続を表す
+            ・「君が戻るまで待つ」「終わるまで頑張る」
+            ・by(〜までに・期限)とは違うので注意
+            ・until = 継続 / by = 期限
+            ・"Wait until tomorrow."(継続) vs "Finish by tomorrow."(期限)
+            ・"Until further notice." = 追って通知あるまで
+            ・類義: till(カジュアル・同義) / up to(〜まで・時間・量)
+            """
+        ),
+        GrammarQuestion(
+            id: "q460",
+            question: "We met ___ ___ ___ ___ the year.",
+            choices: ["at / the / end / of", "in / the / end / of", "on / the / end / of", "by / the / end / of"],
+            correctIndex: 0,
+            translation: "「私たちは年末に出会った」",
+            explanation: """
+            ・at the end of + 名詞 = 「〜の終わりに・〜の末に」特定の時間・場所の終点
+            ・「年末に」「映画の終わりに」「通りの突き当たりに」
+            ・前置詞は at(地点・終点)
+            ・"At the end of the day."(一日の終わりに・比喩で「結局のところ」)
+            ・"At the end of the street." / "At the end of the chapter."
+            ・in the end(最終的に・結論)と混同しやすいが、at the end of は具体的な終わりを指す
+            ・類義: by the end of(〜の終わりまでに・期限) / toward the end of(〜の終わり頃に)
+            """
+        ),
+        GrammarQuestion(
+            id: "q461",
+            question: "___ ___ ___, we decided to stay home.",
+            choices: ["In / the / end", "At / the / end", "On / the / end", "By / the / end"],
+            correctIndex: 0,
+            translation: "「結局のところ、私たちは家にいることに決めた」",
+            explanation: """
+            ・In the end = 「最終的に・結局のところ」慣用句
+            ・長い議論や試行錯誤の末の結論を表す
+            ・「いろいろあったけど結局家にいた」「最後にはみんな納得した」
+            ・at the end of ~(具体的な終点)と違い、in the end は結末・結論を強調
+            ・"In the end, it all worked out." / "In the end, what matters is family."
+            ・文頭で使うことが多い
+            ・類義: eventually(最終的に・フォーマル) / finally(ついに・待ち望んだ結果)
+            ・物語の締めくくりや人生の教訓を伝える時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q462",
+            question: "We ___ ___ ___ at a fancy restaurant.",
+            choices: ["ended / up / eating", "ended / up / to / eat", "end / up / ate", "ended / on / eating"],
+            correctIndex: 0,
+            translation: "「私たちは結局高級レストランで食事することになった」",
+            explanation: """
+            ・end up + V-ing = 「結局〜することになる」
+            ・予想外の結果や意図しなかった結末を表す
+            ・「結局高級レストランで食べた」「結局買ってしまった」
+            ・動詞は必ず -ing 形に
+            ・"We ended up staying late." / "I ended up buying it."
+            ・end up + 形容詞/場所 の形も: end up tired(結局疲れる) / end up at home(結局家にいる)
+            ・類義: wind up + ~ing(同義) / eventually + V(最終的に〜する)
+            ・口語で頻出の重要表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q463",
+            question: "This phone was ___ ___ ___.",
+            choices: ["a / good / deal", "a / good / sale", "the / good / deal", "a / better / deal"],
+            correctIndex: 0,
+            translation: "「このスマホはいい買い物だった」",
+            explanation: """
+            ・a good deal = 「お買い得・いい取引」価格に対して価値が高い
+            ・「いい買い物だった」「お得な取引」
+            ・"What a good deal!" / "Got a great deal on it."
+            ・a great deal(すごくお得) はさらに強調
+            ・a good deal of + 名詞(かなりの量の〜)は別の意味(量を表す)なので注意
+            ・"a good deal of money" = かなりのお金(量)
+            ・類義: a great deal(非常にお得) / a steal(めっちゃ安い・口語)
+            ・ショッピングやビジネスで頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q464",
+            question: "I was completely ___ when I heard the news.",
+            choices: ["speechless", "speakless", "wordless", "silentless"],
+            correctIndex: 0,
+            translation: "「そのニュースを聞いた時、完全に言葉を失った」",
+            explanation: """
+            ・speechless = 「言葉を失った・絶句した」形容詞
+            ・強い感情で言葉が出ない状態を表す
+            ・speech + less(スピーチがない)で構成
+            ・驚き、感動、ショック、怒りなどで何も言えなくなる状況
+            ・「ニュースを聞いて絶句した」「彼の優しさに言葉を失った」
+            ・"I'm speechless!" / "Left me speechless."
+            ・ポジティブにもネガティブにも使える
+            ・類義: at a loss for words(言葉に詰まる) / stunned(衝撃で呆然)
+            ・※ speakless / wordless / silentless は誤り(正しい単語ではない)
+            """
+        ),
+        GrammarQuestion(
+            id: "q465",
+            question: "I'm ___ ___ the store. Need anything?",
+            choices: ["off / to", "out / to", "on / to", "off / for"],
+            correctIndex: 0,
+            translation: "「お店に行ってくるよ。何か必要?」",
+            explanation: """
+            ・be off to + 場所 = 「〜へ出発する・〜へ向かう」口語表現
+            ・今まさに出かけるニュアンス
+            ・「店に行ってくる」「学校に向かう」
+            ・"I'm off to work." / "Off to the gym!"
+            ・文末で: "I'm off!" = 行ってきます!
+            ・"気軽な出発" を表す英語らしい言い回し
+            ・類義: heading to(同義) / leaving for(フォーマル)
+            ・"Off you go!" = さあ行って!(送り出し)
+            """
         )
     ]
 }
