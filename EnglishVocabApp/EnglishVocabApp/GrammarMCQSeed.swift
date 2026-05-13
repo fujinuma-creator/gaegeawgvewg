@@ -1984,6 +1984,249 @@ enum GrammarMCQSeed {
             ・派生: one way or the other = どちらにせよ
             ・困難な状況で諦めない姿勢を示す決まり文句
             """
+        ),
+        GrammarQuestion(
+            id: "q327",
+            question: "You can eat ___ you want.",
+            choices: ["whatever", "whoever", "wherever", "whenever"],
+            correctIndex: 0,
+            translation: "「好きなものを何でも食べていいよ」",
+            explanation: """
+            ・whatever + (主語) + 動詞 = 「〜するものは何でも」「何を〜しようと」複合関係代名詞
+            ・2用法: 〜するものは何でも(Take whatever you need) / 何を〜しようと(Whatever you say, I won't change)
+            ・"Eat whatever you want." / "Whatever happens, stay calm." / "Do whatever you like."
+            ・口語: "Whatever you say." / "Whatever it takes." / "Whatever works." / "Whatever the case."
+            ・単独 Whatever. = 「どうでもいい」(やや投げやり・失礼なので使用に注意)
+            ・"whatever" ≒ "no matter what"(互換可能)
+            ・ビジネス: "Whatever the outcome, ~" / "Whatever your needs, we'll help."
+            """
+        ),
+        GrammarQuestion(
+            id: "q328",
+            question: "There's ___ to hide in this small room.",
+            choices: ["nowhere", "somewhere", "anywhere", "everywhere"],
+            correctIndex: 0,
+            translation: "「この狭い部屋には隠れる場所がない」",
+            explanation: """
+            ・nowhere = 「どこにもない・どこにも〜ない」否定の場所副詞
+            ・nowhere to + V = 〜する場所がない
+            ・"Nowhere to go." / "Nowhere to be found." / "We're going nowhere."(進展なし)
+            ・"In the middle of nowhere" = 何もない辺鄙な場所
+            ・"Out of nowhere" = どこからともなく
+            ・"Nowhere near" = 全然届かない / "Nowhere to be seen" = どこにも見当たらない
+            ・nowhere to sit / nowhere to run / nowhere to go
+            ・"He appeared out of nowhere." / "We're in the middle of nowhere."
+            """
+        ),
+        GrammarQuestion(
+            id: "q329",
+            question: "You can sit ___ you like.",
+            choices: ["anywhere", "nowhere", "somewhere", "everywhere"],
+            correctIndex: 0,
+            translation: "「好きなところに座って」",
+            explanation: """
+            ・anywhere = 「どこにでも・どこかに」場所の代名詞・副詞
+            ・3用法: 疑問(Have you seen it anywhere?) / 否定(I can't find it anywhere.) / 肯定(Sit anywhere = どこでも)
+            ・"Go anywhere." / "Anywhere is fine." / "I'd go anywhere with you."
+            ・○ I left it somewhere.(具体的) / × I left it anywhere.
+            ・"anywhere in the world" / "anywhere on earth" / "anywhere from 10 to 20"(範囲)
+            ・"I'd go anywhere for you." / "Anywhere but here."
+            ・"We're not getting anywhere." / "That won't get you anywhere."
+            ・区別: anywhere(選択肢の一つ) vs everywhere(全部の場所)
+            """
+        ),
+        GrammarQuestion(
+            id: "q330",
+            question: "I want to find ___ ___ ___ I can study quietly.",
+            choices: ["any / place / where", "any / place / which", "some / place / who", "every / place / what"],
+            correctIndex: 0,
+            translation: "「静かに勉強できる場所をどこか見つけたい」",
+            explanation: """
+            ・any place where + 主語 + 動詞 = 「〜できる場所ならどこでも」関係副詞構文
+            ・any(自由・無制限) vs some(具体的・限定)
+            ・"Any place where it's quiet." / "Some place where we can talk." / "A place where I belong."
+            ・関係副詞: where(場所) / when(時) / why(理由) / how(方法)
+            ・"a place to relax" / "a place where I can study" — that/where は省略可
+            ・"Know any place where they serve good coffee?" / "Any place where it's not crowded."
+            ・"Some place where I can be alone."
+            ・フォーマル: a location/venue/spot where ~
+            """
+        ),
+        GrammarQuestion(
+            id: "q331",
+            question: "We need to find a solution ___ ___ wins.",
+            choices: ["where / everyone", "which / everyone", "where / no one", "what / everyone"],
+            correctIndex: 0,
+            translation: "「全員が勝つ(Win-Win)な解決策を見つける必要がある」",
+            explanation: """
+            ・場所以外の名詞 + where + SV = 「〜という状況の〜」関係副詞の応用(抽象的な「場所」)
+            ・"situation/case/moment where + SV"
+            ・"A situation where you win." / "A case where it works." / "A moment where time stops."
+            ・抽象用法: scenario/stage/position/circumstances/point/moment/time where ~
+            ・"I'm at a point where I can't continue." / "We're at a stage where decisions matter."
+            ・"find a way where ~" / "create an environment where ~" / "a relationship where ~"
+            ・ビジネス: "A scenario where everyone wins." / "Look for opportunities where we can grow."
+            ・区別: where(場所・状況の関係副詞) vs which(物の関係代名詞)
+            """
+        ),
+        GrammarQuestion(
+            id: "q332",
+            question: "You can choose ___ one you like.",
+            choices: ["whichever", "whoever", "whatever", "however"],
+            correctIndex: 0,
+            translation: "「好きなのをどれでも選んでいいよ」",
+            explanation: """
+            ・whichever + 名詞 = 「どちらでも・〜のうちどれでも」選択肢からの自由選択
+            ・"Take whichever you like." / "Whichever way works." / "Whichever comes first."
+            ・区別: whichever(限られた選択肢から具体的) vs whatever(無制限・抽象的)
+            ・"Eat whichever you want."(選択肢) vs "Eat whatever you want."(無制限)
+            ・"Whichever comes first" / "Whichever way you look at it" / "Whichever way it goes"
+            ・"Pick whichever." / "Whichever works for you." / "Whichever is cheaper."
+            ・選択肢の数: either(2つ) / whichever(2つ以上・具体) / whatever(無制限)
+            ・「決断を委ねる」: "Whichever you decide." / "Whichever feels right."
+            """
+        ),
+        GrammarQuestion(
+            id: "q333",
+            question: "___ ___ ___ hard I try, I can't do it.",
+            choices: ["No / matter / how", "Not / matter / how", "No / how / matter", "None / matter / how"],
+            correctIndex: 0,
+            translation: "「どんなに頑張ってもできない」",
+            explanation: """
+            ・No matter how + 形容詞/副詞 + 主語 + 動詞 = 「どんなに〜しても」譲歩
+            ・"No matter how hard, I'll try." / "No matter how late, call me." / "No matter how cold, we go."
+            ・バリエーション: no matter how/what/where/when/who/which/why
+            ・"no matter how hard/long/cold/slowly/fast/much/many times"
+            ・"No matter what, I love you." / "No matter what happens." / "No matter what people say."
+            ・互換: no matter how ≒ however / no matter what ≒ whatever
+            ・"However hard you try" / "However much you pay"
+            ・"No matter how far you go, I'll find you." 強い決意・愛情を表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q334",
+            question: "___ ___ ___ ___, we need more time.",
+            choices: ["As / I / mentioned / earlier", "Like / I / mentioned / before", "As / mentioned / I / earlier", "Both A and B"],
+            correctIndex: 3,
+            translation: "「先ほど述べたように、もっと時間が必要だ」",
+            explanation: """
+            ・As I mentioned earlier = 「前述したように・先ほど述べたように」フォーマル
+            ・As I mentioned + 時間 / As I said + 時間
+            ・フォーマル度: As I mentioned earlier(高・プレゼン) > As I said before(中) > Like I said(口語) > You know what I said
+            ・過去への言及: "as I mentioned earlier/before" / "as previously mentioned"(最フォーマル)
+            ・再確認: "as we discussed" / "as you saw" / "as you know"
+            ・口語: "Like I said earlier" / "As I was saying" / "Going back to what I said"
+            ・フォーマル版: "As previously stated" / "As outlined above" / "As indicated earlier"
+            ・ビジネスメール: "As I mentioned in my last email ~" / "As per our previous discussion ~"
+            """
+        ),
+        GrammarQuestion(
+            id: "q335",
+            question: "___ ___ ___ price, this is a great deal.",
+            choices: ["In / terms / of", "On / terms / of", "By / terms / of", "For / terms / of"],
+            correctIndex: 0,
+            translation: "「価格の点で、これはお買い得だ」",
+            explanation: """
+            ・In terms of + 名詞 = 「〜の点で・〜に関して」観点・側面を表すフォーマル
+            ・"In terms of price." / "In terms of quality." / "In terms of speed."
+            ・"In terms of price, it's cheap." / "Good in terms of quality." / "Worse in terms of cost."
+            ・類似: in terms of / regarding / with respect to / when it comes to / as far as ~ is concerned
+            ・区別: in terms of(客観的観点) vs when it comes to(主観的)
+            ・ビジネス: "In terms of ROI ~" / "In terms of efficiency ~" / "In terms of scalability ~"
+            ・"In broad terms" / "In real terms" / "In simple terms" / "In no uncertain terms"
+            ・「〜の観点では」をフォーマルに伝える鉄板表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q336",
+            question: "All her efforts were ___ ___.",
+            choices: ["in / vain", "for / vain", "at / vain", "on / vain"],
+            correctIndex: 0,
+            translation: "「彼女のすべての努力は無駄に終わった」",
+            explanation: """
+            ・in vain = 「無駄に・むなしく」フォーマル寄りの慣用句
+            ・"All in vain." / "Tried in vain." / "Not in vain."
+            ・段階: in vain(文学的) / a waste of time(カジュアル) / for nothing(不満) / pointless(強い) / futile(フォーマル)
+            ・「無駄じゃない」(前向き): "His sacrifice was not in vain."
+            ・「無駄に終わった」(過去): All in vain / Tried in vain / Searched in vain
+            ・"try in vain to + V" = 〜しようとして無駄に終わる
+            ・特殊用法: "Take someone's name in vain" = 〜の名をみだりに口にする
+            ・区別: in vain(副詞句・無駄に) vs vain(形容詞・虚栄心の強い / 無駄な)
+            ・努力が報われなかった残念さ・悲しみを含む文学的響き
+            """
+        ),
+        GrammarQuestion(
+            id: "q337",
+            question: "We're still ___ ___ ___ our old friends.",
+            choices: ["in / contact / with", "on / contact / with", "by / contact / with", "at / contact / with"],
+            correctIndex: 0,
+            translation: "「私たちは昔の友達と今も連絡を取り合っている」",
+            explanation: """
+            ・in contact with + 人 = 「〜と連絡を取って・〜と接触して」
+            ・keep in contact / lose contact / get in contact
+            ・"I'm in contact with him." / "Stay in contact." / "Lost contact with her."
+            ・類似: in contact with(やや改まった) / in touch with(カジュアル)
+            ・"Stay in touch!"(最も口語的) / "Keep in contact."(やや改まった)
+            ・連絡が途絶える: lose contact / out of contact / fall out of touch
+            ・他の用法: physical/eye contact / contact list / contact information
+            ・ビジネス: "Please contact us." / "We'll be in contact soon." / "Stay in contact with the client."
+            ・人間関係維持の慣用句、別れ際の挨拶に頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q338",
+            question: "She's ___ ___ lot of pressure at work.",
+            choices: ["under / a", "under / on", "on / a", "under / for"],
+            correctIndex: 0,
+            translation: "「彼女は仕事で大きなプレッシャーを受けている」",
+            explanation: """
+            ・under + 名詞 = 「〜の下に・〜の影響下で」抽象的な「影響」も表す
+            ・物理: under the table/bed
+            ・状態: under pressure/stress/attack/arrest
+            ・進行: under construction/investigation/review/discussion/repair
+            ・未満: under $20 / under 18
+            ・"under the weather" = 体調不良 / "under the radar" = 目立たないように
+            ・"under your nose" = すぐ目の前で / "under the table" = こっそりと・賄賂で
+            ・"Under no circumstances." = どんな状況でも〜ない(強い否定)
+            ・フォーマル: under the auspices/leadership/supervision of ~
+            ・ビジネス: Under new management / Under different ownership
+            """
+        ),
+        GrammarQuestion(
+            id: "q339",
+            question: "I'm ___ ___ finished with the report.",
+            choices: ["just / about", "just / over", "almost / about", "just / to"],
+            correctIndex: 0,
+            translation: "「報告書はほぼ終わりかけている」",
+            explanation: """
+            ・just about = 「ほぼ・ほとんど」(almost と同じ) / 「まさに〜しようとしている」(be just about to V)
+            ・"Just about done." / "Just about ready." / "Just about every day."
+            ・"I'm just about to leave." / "Just about to call you."
+            ・段階: just about(口語) / almost(中立) / nearly / practically / virtually / roughly
+            ・"just about everyone/everything/every time/now/ready/finished/here/there"
+            ・"Just about right!" / "Just about perfect." / "Just about killed me."
+            ・"just about anyone/anything/anywhere" = ほぼ誰でも/何でも/どこでも
+            ・強調: "just about every single day" / "just about as much"
+            ・カジュアルな「ほぼ〜」「まさに〜」の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q340",
+            question: "This book is ___ ___ finding yourself.",
+            choices: ["all / about", "all / for", "all / of", "all / with"],
+            correctIndex: 0,
+            translation: "「この本は自分自身を見つけることが全てだ」",
+            explanation: """
+            ・all about + 名詞/動名詞 = 「〜が全てである・〜について全て」強調表現
+            ・"Life is all about choices." / "It's all about timing." / "That's what it's all about."
+            ・3用法: 強調・本質 / 詳しく知っている / 特性・特徴
+            ・"Tell me all about it." / "I know all about that." / "He's all about success."
+            ・"That's what it's all about!" / "Life is all about ~" / "It's all about ~"
+            ・"It's not all about you." / "Life isn't all about money."
+            ・"what + S + be + all about": "That's what life is all about."
+            ・区別: about(中立・〜について) vs all about(強調・〜が全て)
+            ・哲学的・励まし的なメッセージで頻出
+            """
         )
     ]
 }
