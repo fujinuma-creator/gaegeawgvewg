@@ -1543,6 +1543,447 @@ enum GrammarMCQSeed {
             ・米国口語では shall はあまり使われず、Let's ~ や Should we ~? が一般的
             ・丁寧さ・上品さを出したい時に効果的
             """
+        ),
+        GrammarQuestion(
+            id: "q300",
+            question: "Things are tough enough ___ ___ ___ — don't make it worse.",
+            choices: ["as / it / is", "as / they / are", "as / it / does", "like / it / is"],
+            correctIndex: 0,
+            translation: "「ただでさえ事態は十分厳しいんだ — もっと悪くしないで」",
+            explanation: """
+            ・as it is = 「現状のままで・そのままで」/ 「ただでさえ」(困難の強調)
+            ・3用法: 現状(I'll leave it as it is.) / ただでさえ(It's hard enough as it is.) / 実情は(As it is, I have work.)
+            ・"Things are bad enough as it is." / "Leave it as it is."
+            ・"As it is, we can't afford it." = 実情として、買う余裕はない
+            ・区別: as it is(現在) / as it was(過去) / as is(販売「現状渡し・無保証」)
+            ・"I have enough on my plate as it is." = ただでさえ手一杯
+            ・困難や状況の重さを訴える時の知的表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q301",
+            question: "___ ___ you could lend me your car this weekend?",
+            choices: ["Any / chance", "Some / chance", "What / chance", "Have / chance"],
+            correctIndex: 0,
+            translation: "「今週末、車を貸してもらえる可能性ある?」",
+            explanation: """
+            ・Any chance + 文? = 「〜できる可能性ある?」「もしかして〜できる?」丁寧な依頼
+            ・Any chance + 主語 + 動詞? / Any chance of + V-ing
+            ・"Any chance you could help?" / "Any chance of a discount?"
+            ・丁寧さ: Help me(命令) < Can you help(普通) < Could you help(丁寧) < Any chance you could ~(謙虚) < Would you mind(最丁寧)
+            ・「相手に断られる可能性を認めている」謙虚さで強要しない
+            ・応答: Sure, no problem / I'm afraid not / Maybe, let me think
+            ・ビジネスでも日常でも使える鉄板表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q302",
+            question: "This is ___ ___ ___ ever had!",
+            choices: ["the / best / I've", "the / better / I've", "a / best / I've", "the / best / I'd"],
+            correctIndex: 0,
+            translation: "「これはこれまで食べた中で最高だ!」",
+            explanation: """
+            ・the best (that) I've + 過去分詞 = 「これまでで最高の〜」経験を踏まえた最上級
+            ・"The best meal I've ever had." / "The worst experience I've ever had."
+            ・that はほぼ常に省略可能
+            ・ever は「これまでに」を強調する副詞
+            ・"the best book I've ever read" / "the most beautiful place I've ever been"
+            ・応用: "the first time I've ever ~" / "one of the best ~ I've ever"
+            ・口語感嘆: "Best ever!" / "Worst day ever." / "Best decision I've ever made."
+            """
+        ),
+        GrammarQuestion(
+            id: "q303",
+            question: "___ ___ tried Japanese food before?",
+            choices: ["Have / you", "Did / you", "Are / you", "Do / you"],
+            correctIndex: 0,
+            translation: "「これまでに日本食を食べたことある?」",
+            explanation: """
+            ・Have you + 過去分詞 (+ before)? = 「〜したことある?」現在完了の疑問形
+            ・"Have you ever been to Japan?" / "Have you tried this?"
+            ・Have you ~(現在の状態・経験) vs Did you ~(過去の事実)
+            ・時間表現: ever(経験) / yet(完了) / already / just
+            ・返答: Yes, I have / No, I haven't / Not yet / Yes, many times
+            ・"Have you eaten?" は中華系挨拶でも使う
+            ・経験・完了を尋ねる最重要疑問形
+            """
+        ),
+        GrammarQuestion(
+            id: "q304",
+            question: "___ ___ is the damage?",
+            choices: ["How / bad", "How / badly", "What / bad", "Why / bad"],
+            correctIndex: 0,
+            translation: "「被害はどのくらいひどい?」",
+            explanation: """
+            ・How + 形容詞 + 主語 + 動詞? = 「どのくらい〜?」程度を尋ねる疑問
+            ・"How bad?" / "How big?" / "How long?" / "How far?"
+            ・How tall / old / wide / heavy / expensive / serious / busy
+            ・How + 副詞: How fast? / How well? / How often?
+            ・"How bad is it?" / "How bad can it be?" / "How bad do you want it?"
+            ・感嘆にも: "How sad!" / "How nice!" / "How embarrassing!"
+            ・「程度」を確認する万能パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q305",
+            question: "After that scandal, his career ___ ___ ___.",
+            choices: ["is / done / for", "was / done / by", "is / done / to", "was / doing / for"],
+            correctIndex: 0,
+            translation: "「あのスキャンダル後、彼のキャリアはもう終わりだ」",
+            explanation: """
+            ・be done for = 「破滅する・もうダメだ」修復不可能な状態
+            ・"We're done for!" / "His career is done for." / "If they find out, I'm done for."
+            ・done の3用法: 完了(I'm done) / うんざり(I'm done with this) / 破滅(I'm done for)
+            ・類似: toast(I'm toast!) / cooked(I'm cooked!) / screwed(粗) / in deep trouble
+            ・"Looks like we're done for." / "His political career is done for."
+            ・通常 for がついて初めて「破滅」の意味になる
+            ・絶望的な状況のドラマチックな口語表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q306",
+            question: "The product was made ___ ___ ___ safety regulations.",
+            choices: ["in / accordance / with", "on / accordance / with", "by / accordance / with", "at / accordance / for"],
+            correctIndex: 0,
+            translation: "「その製品は安全規則に従って作られた」",
+            explanation: """
+            ・in accordance with + 名詞 = 「〜に従って・〜に準じて」フォーマル
+            ・"In accordance with the law." / "In accordance with company policy." / "In accordance with your wishes."
+            ・段階: as per > in accordance with > in line with > according to > based on > following
+            ・区別: in accordance with(規則に従う行動) vs according to(情報源「〜によると」)
+            ・類似フォーマル: in conformity with / in compliance with / pursuant to(法律用語)
+            ・契約書、規約、ビジネスメールで多用
+            """
+        ),
+        GrammarQuestion(
+            id: "q307",
+            question: "___ ___ the weather forecast, it'll snow tomorrow.",
+            choices: ["According / to", "According / for", "In accordance / with", "Accordingly / with"],
+            correctIndex: 0,
+            translation: "「天気予報によると、明日は雪が降るそうだ」",
+            explanation: """
+            ・according to + 情報源 = 「〜によると」情報の出所
+            ・"According to the news." / "According to the data."
+            ・注意: 自分自身を情報源にできない → × According to me / ○ In my opinion
+            ・段階: According to ~ / Based on ~ / As reported by ~ / Sources say / They say / Rumor has it
+            ・"According to him" / "According to plan" / "Each according to their ability."
+            ・対象: the news / report / survey / experts / data / sources / witnesses
+            ・プレゼン・記事: "According to studies, ~" / "According to statistics, ~"
+            """
+        ),
+        GrammarQuestion(
+            id: "q308",
+            question: "I thought he'd be late, and ___ ___, he arrived an hour late.",
+            choices: ["sure / enough", "true / enough", "surely / enough", "for / sure"],
+            correctIndex: 0,
+            translation: "「彼は遅れると思ってたら、案の定1時間遅刻した」",
+            explanation: """
+            ・sure enough = 「案の定・予想通り」予測の的中
+            ・"Sure enough, he was late." / "Sure enough, it rained." / "And sure enough, ~"
+            ・段階: sure enough(口語) / as expected / predictably(フォーマル) / of course / as I thought
+            ・区別: sure enough(案の定・確認) vs surely(きっと・強調)
+            ・"Sure enough, he came." vs "He'll surely come."
+            ・派生: fair enough / strangely enough / funnily enough / oddly enough
+            ・「やっぱりね」「思った通り」の鉄板表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q309",
+            question: "___ ___ ___, he tried his best.",
+            choices: ["To / be / fair", "For / being / fair", "To / fair / be", "For / be / fair"],
+            correctIndex: 0,
+            translation: "「公平に言って、彼は最善を尽くした」",
+            explanation: """
+            ・To be fair, + 文 = 「公平に言って・正直に言うと」バランスを取るつなぎ
+            ・批判や否定的な意見の後にバランスを取るために使う
+            ・"He's lazy, but to be fair, he's been sick."
+            ・同類: To be honest / To be fair / To be frank / To be precise / To be safe / To tell the truth
+            ・"To be fair, you didn't ask." / "In fairness ~" (より改まった)
+            ・フォーマル版: In all fairness / To give credit where credit's due
+            ・英国では文末にも: "He's not bad, to be fair."
+            ・議論や評価で「バランスの取れた視点」を示す上品な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q310",
+            question: "She has ___ ___ ___ humor that I love.",
+            choices: ["a / sense / of", "the / sense / for", "some / sense / of", "a / sensing / of"],
+            correctIndex: 0,
+            translation: "「彼女には私が大好きなユーモアセンスがある」",
+            explanation: """
+            ・a sense of + 名詞 = 「〜の感覚・〜のセンス」重要な慣用パターン
+            ・sense of humor / duty / belonging / urgency / purpose / pride / accomplishment / relief / responsibility / direction / timing / style
+            ・比喩: common sense(常識) / sixth sense(第六感) / make sense(理にかなう) / come to one's senses(正気に戻る)
+            ・"He has a great sense of humor." / "She has no sense of style." / "They have a strong sense of duty."
+            ・フォーマル: a profound sense of / a strong sense of / a keen sense of
+            ・人や場所の特性を表現する必須パターン
+            """
+        ),
+        GrammarQuestion(
+            id: "q311",
+            question: "All good things must ___ ___ ___ ___.",
+            choices: ["come / to / an / end", "come / to / the / end", "go / to / an / end", "come / for / an / end"],
+            correctIndex: 0,
+            translation: "「良いことには必ず終わりがある」",
+            explanation: """
+            ・come to an end = 「終わる・終了する」フォーマル寄り、finish の上品版
+            ・"All good things come to an end." (諺) / "The era came to an end."
+            ・段階: end(中立) / finish / come to an end(フォーマル) / wrap up(口語) / conclude(フォーマル) / draw to a close(文学的)
+            ・派生: put an end to ~ / bring to an end / bring something to an end
+            ・"Our journey has come to an end." / "Long marriage came to an end."
+            ・ビジネス: "Today's session has come to an end." / "Our partnership has come to an end."
+            ・文末や結語で使うと文章に重みが出る
+            """
+        ),
+        GrammarQuestion(
+            id: "q312",
+            question: "He didn't waste ___ ___ ___ minute.",
+            choices: ["even / a / single", "only / a / single", "just / one / and", "even / one / from"],
+            correctIndex: 0,
+            translation: "「彼は一分たりとも無駄にしなかった」",
+            explanation: """
+            ・not + even a single + 名詞 = 「たった一つも〜ない」最強の否定強調
+            ・段階: no(弱) < not any(中) < not a single(強) < not even a single(最強)
+            ・組合せ: not even a single drop/moment/soul/penny/word/complaint/mistake
+            ・対の表現: every single + 名詞(〜の一つ一つ全て): every single day / every single one
+            ・"She didn't shed a single tear." / "He gave us not even a single chance."
+            ・"Not a single soul came." / "Without a single complaint." / "Every single time."
+            ・絶対否定や絶対肯定を強調する重要表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q313",
+            question: "There's some doubt ___ ___ whether he'll come.",
+            choices: ["as / to", "up / to", "due / to", "for / to"],
+            correctIndex: 0,
+            translation: "「彼が来るかどうかについて疑問が残る」",
+            explanation: """
+            ・as to + 名詞/wh-節 = 「〜について・〜に関して」フォーマルな前置詞句
+            ・"Doubts as to his honesty." / "No idea as to where he is." / "As to your question, ~"
+            ・段階: as to(高) / with regard to(高) / regarding(中〜高) / about(低) / on(低)
+            ・"Questions as to ~" / "Uncertainty as to ~" / "Decisions as to ~"
+            ・"No clue as to who did it." / "Doubts as to how it works."
+            ・区別: about(カジュアル) vs as to(フォーマル・書き言葉)
+            ・日常会話では about / on、ビジネス文書や論文で使うと知的
+            """
+        ),
+        GrammarQuestion(
+            id: "q314",
+            question: "___ ___ tomorrow, the new policy will take effect.",
+            choices: ["As / of", "As / for", "As / to", "On / of"],
+            correctIndex: 0,
+            translation: "「明日から、新しい方針が施行される」",
+            explanation: """
+            ・as of + 日付/時間 = 「〜から(起点)・〜の時点で(基準時点)」フォーマル
+            ・2用法: 起点(As of January 1st, prices increase.) / 時点(As of today, no decisions made.)
+            ・"As of next Monday." / "As of today." / "As of now."
+            ・類似: as of / from / starting / effective / beginning
+            ・ビジネス: "Effective as of ~" / "As of the latest report" / "Valid as of ~"
+            ・"As of yet" = 現在まで(まだ): "As of yet, no answer."
+            ・"As of now" / "As of late" / "As of writing"
+            """
+        ),
+        GrammarQuestion(
+            id: "q315",
+            question: "___ ___ need any help, please call me.",
+            choices: ["Should / you", "Would / you", "If / you", "Could / you"],
+            correctIndex: 0,
+            translation: "「万一助けが必要なら、お電話ください」",
+            explanation: """
+            ・Should + 主語 + V, ~ = 「もし〜なら」仮定法倒置のフォーマル表現(If you should V の倒置)
+            ・"Should you have any questions, contact us." / "Should you need help, let me know."
+            ・3つの倒置: Should you ~(万一) / Were I you ~(私なら) / Had I known ~(知ってたら)
+            ・段階: Should you ~(高・書き言葉) / If you should ~(中) / If you ~(普通)
+            ・ビジネス頻出: "Should you require further information, ~" / "Should you wish to ~"
+            ・倒置することで「万一〜なら」の控えめな仮定を表す
+            ・公式メールやアナウンスで知的な印象
+            """
+        ),
+        GrammarQuestion(
+            id: "q316",
+            question: "Please submit the report ___ Friday.",
+            choices: ["by", "until", "at", "for"],
+            correctIndex: 0,
+            translation: "「金曜日までに報告書を提出してください」",
+            explanation: """
+            ・by + 時間/日付 = 「〜までに(期限)」完了の期限
+            ・区別: by(期限・完了点) vs until(継続の終点)
+            ・"Submit by Friday."(期限) vs "Wait until Friday."(継続)
+            ・"Finish by tomorrow." / "Done by 5 PM." / "Reply by the end of the day."
+            ・by の他: 手段(by car) / 行為者(by him) / そばに(by the window) / 差(by 10 points) / 単位(by the hour)
+            ・"by the end of the day" / "by then" / "by now"
+            ・"By the time + 主語 + 動詞" = 〜する頃には
+            ・ビジネス: by EOD(End of Day) / by EOW / by the deadline
+            """
+        ),
+        GrammarQuestion(
+            id: "q317",
+            question: "She helped me, and I gave her some chocolates ___ ___.",
+            choices: ["in / return", "for / return", "on / return", "at / return"],
+            correctIndex: 0,
+            translation: "「彼女が助けてくれたので、お返しにチョコレートをあげた」",
+            explanation: """
+            ・in return = 「お返しに・見返りとして」
+            ・in return for + 名詞 = 〜のお返しに
+            ・"Help me, and I'll help you in return." / "In return for your kindness." / "I expect nothing in return."
+            ・類似: in return / in exchange / as a reward / to repay / in gratitude
+            ・"Asking nothing in return." / "I owe you one."
+            ・"Many happy returns!"(誕生日のお祝い) / "Return to sender" / "Point of no return"
+            ・ビジネス: "In return for our services" / "In return for your loyalty"
+            ・互恵関係を表現する時の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q318",
+            question: "Take a few days ___ work and rest.",
+            choices: ["off", "of", "on", "from"],
+            correctIndex: 0,
+            translation: "「数日仕事を休んで、休息を取って」",
+            explanation: """
+            ・take + 時間 + off + 場所/仕事 = 「〜を休んで時間を取る」
+            ・"Take time off work." / "Day off" / "I'm off today." / "Take a week off."
+            ・off の3用法: 離れる(get off the bus) / 休み(day off) / 割引(50% off)
+            ・"Off the top of my head" / "Off the record" / "Off the chart" / "Off the hook" / "Off the cuff"
+            ・"off duty" / "off limits" / "off topic" / "off course" / "off balance"
+            ・"I'm off!" / "Off you go." / "Show off"
+            ・「分離・除外」を表す重要前置詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q319",
+            question: "\"Did you finish the project?\" \"___ ___ ___.\"",
+            choices: ["Not / even / close", "No / even / close", "Not / very / close", "Not / close / even"],
+            correctIndex: 0,
+            translation: "「『プロジェクト終わった?』『全然』」",
+            explanation: """
+            ・not even close = 「全然違う・全然及ばない」強い否定の口語
+            ・段階: not really(弱) < not exactly(中) < not at all(強) < not even close(最強) < no way
+            ・"Not even close!" / "Not even close to finished." / "Not even close to the truth."
+            ・派生: "Close, but no cigar." = 惜しい、でも違う / "So close!" / "Way off."
+            ・フォーマル: Far from it / Nothing like ~
+            ・"Are we there yet? Not even close." / "Done? Not even close."
+            ・強調: Not even remotely close / Nowhere near
+            ・予想や見込みが外れた時の決まり文句
+            """
+        ),
+        GrammarQuestion(
+            id: "q320",
+            question: "\"Do you know him?\" \"Not personally, but I ___ ___ him.\"",
+            choices: ["know / of", "know / about", "know / for", "know / from"],
+            correctIndex: 0,
+            translation: "「『彼を知ってる?』『個人的にではないけど、聞いたことはある』」",
+            explanation: """
+            ・know of + 人/名詞 = 「〜のことを知っている(個人的にではなく)」間接的な認識
+            ・区別: know + 人(個人的) / know of + 人(名前を聞いた) / know about + 人(情報を持っている)
+            ・"I know him."(友人) vs "I know of him."(有名人など) vs "I know about him."(詳しい)
+            ・"I know of a good restaurant." / "Not that I know of."
+            ・"Not that I know of." = 私の知る限り違う(自信なく否定)
+            ・フォーマル: To my knowledge ~ / As far as I know ~
+            ・知識のレベルと自信の度合いを精密に表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q321",
+            question: "___ ___ ___ ___ ___ waiting any longer.",
+            choices: ["There / is / no / point / in", "It / has / no / point / in", "There / is / not / point / of", "There / is / any / point / on"],
+            correctIndex: 0,
+            translation: "「もう待っても意味がない」",
+            explanation: """
+            ・There's no point in + V-ing = 「〜しても無駄・〜する意味がない」
+            ・What's the point of + V-ing = 〜する意味は?
+            ・"There's no point in arguing." / "No point in worrying." / "What's the point?"
+            ・段階: There's no point(理性的) / It's no use(諦め) / It's pointless(強い) / A waste of time / In vain(フォーマル)
+            ・組合せ: crying/worrying/arguing/waiting/trying/complaining
+            ・"There's no point crying over spilled milk." = 覆水盆に返らず
+            ・フォーマル: "There is little point in ~" / "It serves no purpose to ~"
+            ・励まし・諦めの両方に使える万能フレーズ
+            """
+        ),
+        GrammarQuestion(
+            id: "q322",
+            question: "I finally ___ ___ ___ meet my favorite author yesterday.",
+            choices: ["got / to / meet", "got / for / meet", "get / to / meeting", "got / meet / to"],
+            correctIndex: 0,
+            translation: "「昨日ついに、大好きな作家に会えた」",
+            explanation: """
+            ・get to + V (原形) = 「〜できる機会を得る・〜する機会に恵まれる」幸運な機会
+            ・"I got to meet him." / "Do I get to come?" / "Never got to try it."
+            ・2意味: 機会(I got to travel.) / 到達(Get to the point.)
+            ・対比: have to V(義務) vs get to V(機会・幸運)
+            ・"I have to work."(義務) vs "I got to work."(幸運)
+            ・"Do I get to choose?" / "I never got to thank her."
+            ・派生: getting to know / get to it! / get to grips with
+            ・「機会を得る」と「到達する」の多義的で重要な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q323",
+            question: "He's ___ ___ ___ ___ ___ singer than an actor.",
+            choices: ["more / of / a / singer / than", "more / a / singer / than", "much / of / singer / than", "most / of / a / than"],
+            correctIndex: 0,
+            translation: "「彼は俳優というより歌手だ」",
+            explanation: """
+            ・more of a + 名詞 + than ~ = 「〜というよりむしろ〜」性質や役割の比較
+            ・"He's more of a singer than an actor." / "It's more of a hobby than a job."
+            ・通常の比較級は形容詞、この構文は名詞を比較
+            ・反対: less of a X than Y
+            ・"I'm more of a coffee person." / "He's more of a thinker than a doer."
+            ・"more of a ~ kind of person": "I'm more of a morning person."
+            ・冠詞 a が必須(× more singer)
+            ・"More of a maybe." / "Not so much a X as a Y."(同義の別表現)
+            ・フォーマル: rather than(He's a singer rather than an actor.)
+            """
+        ),
+        GrammarQuestion(
+            id: "q324",
+            question: "We have a lot ___ ___.",
+            choices: ["in / common", "on / common", "by / common", "at / common"],
+            correctIndex: 0,
+            translation: "「私たちは共通点が多い」",
+            explanation: """
+            ・have ~ in common = 「〜の共通点がある」
+            ・have + 量 + in common / in common with + 人
+            ・"We have a lot in common." / "Nothing in common." / "Something in common with you."
+            ・組合せ: a lot / something / nothing / little / much in common
+            ・他の用法: common interests / common goal / common ground / common sense / common knowledge / common area
+            ・"We hit it off — we have a lot in common." / "Nothing in common with each other."
+            ・"have ~ in common with + 人" : "I have a lot in common with my dad."
+            ・フォーマル: share commonalities / similar features / parallel characteristics
+            """
+        ),
+        GrammarQuestion(
+            id: "q325",
+            question: "\"I love Italian food.\" \"___ ___ ___, let's go to that new place.\"",
+            choices: ["Speaking / of / which", "Speak / about / which", "Talking / about / what", "About / which / speak"],
+            correctIndex: 0,
+            translation: "「『イタリア料理大好き』『そう言えば、あの新しい店に行こう』」",
+            explanation: """
+            ・Speaking of which, + 文 = 「そう言えば・関連して」話題の自然な転換
+            ・"Speaking of which, did you call?" / "Speaking of food, I'm hungry." / "Speaking of John, where is he?"
+            ・直前に言及されたことから自然に話題を発展させる
+            ・Speaking of + 名詞: Speaking of work / Speaking of weather / Speaking of money
+            ・類似: That reminds me of ~ / Now that you mention it ~ / Come to think of it ~
+            ・フォーマル: On that topic ~ / Regarding which ~ / Pertaining to that ~
+            ・"Speaking of which, what about lunch?" / "Speaking of which, I owe you money."
+            ・会話を自然につなぐ万能フレーズ
+            """
+        ),
+        GrammarQuestion(
+            id: "q326",
+            question: "___ ___ ___ ___, we'll find a solution.",
+            choices: ["One / way / or / another", "Some / way / or / another", "Any / way / or / another", "One / way / or / other"],
+            correctIndex: 0,
+            translation: "「何としても、解決策を見つけよう」",
+            explanation: """
+            ・One way or another, + 文 = 「何としても・どうにかして」強い決意
+            ・"One way or another, I'll do it." / "We'll get there one way or another."
+            ・段階: somehow(何となく) < one way or another(何かしらの方法) < whatever it takes(必要なこと全て) < come hell or high water(何があっても・最強) < at all costs
+            ・「方法は分からないが結果は確実」というニュアンス
+            ・"We'll figure it out one way or another." / "They'll catch him one way or another."
+            ・区別: one way or another(中立) vs whatever it takes(強い決意)
+            ・派生: one way or the other = どちらにせよ
+            ・困難な状況で諦めない姿勢を示す決まり文句
+            """
         )
     ]
 }
