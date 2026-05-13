@@ -2659,6 +2659,374 @@ enum GrammarMCQSeed {
             ・類義: right here(まさにここ) / just there(ちょうどそこ)
             ・位置・時間を強調する right の用法
             """
+        ),
+        GrammarQuestion(
+            id: "q368",
+            question: "The weather is ___ cold today.",
+            choices: ["rather", "very much", "too many", "so very"],
+            correctIndex: 0,
+            translation: "「今日はけっこう寒い」",
+            explanation: """
+            ・rather + 形容詞 = 「かなり〜・なかなか〜」控えめな強調
+            ・very(とても)より少し抑えた印象、英国英語で特によく使う
+            ・「すごく寒い」だと大げさ → 「けっこう寒いね」と上品に
+            ・"It's rather difficult." / "Rather nice, isn't it?"
+            ・類義: quite(けっこう・英) / pretty(かなり・米)
+            ・直接的すぎる表現を避ける英国的な感覚
+            ・rather like = むしろ好き、I'd rather = むしろ〜したい(別用法)
+            """
+        ),
+        GrammarQuestion(
+            id: "q369",
+            question: "I try to exercise ___ ___ ___ I can.",
+            choices: ["as / much / as", "so / much / as", "too / much / as", "more / much / than"],
+            correctIndex: 0,
+            translation: "「できる限り運動するようにしている」",
+            explanation: """
+            ・as much as ~ = 「〜と同じくらい多く・〜できるだけ」同等比較
+            ・量や程度の比較。「できるだけ運動する」「君と同じくらい愛してる」
+            ・可算名詞には as many as、不可算名詞には as much as
+            ・"I love you as much as you love me." / "Drink as much as you can."
+            ・類義: as many as(可算) / as much as possible(可能な限り)
+            ・否定形: not as much as(〜ほどではない)
+            ・限界や同等性を表す重要な比較構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q370",
+            question: "The traffic today wasn't ___ ___ ___ yesterday.",
+            choices: ["as / bad / as", "so / bad / as", "too / bad / as", "more / bad / than"],
+            correctIndex: 0,
+            translation: "「今日の渋滞は昨日ほどひどくなかった」",
+            explanation: """
+            ・as bad as ~ = 「〜と同じくらい悪い」ネガティブな同等比較
+            ・否定形 not as bad as = 「思ったほど悪くない」(慰めの場面で頻出)
+            ・"見た目ほど悪くない" / "予想したほどひどくなかった"
+            ・"It's not as bad as it looks." / "Not as bad as I thought."
+            ・類義: just as bad as(強調・全く同じ) / worse than(比較級)
+            ・マイナスの程度を比較する時に
+            ・口語: so bad as は古風、現代では as bad as
+            """
+        ),
+        GrammarQuestion(
+            id: "q371",
+            question: "This box is ___ ___ ___ ___ the other one.",
+            choices: ["twice / as / heavy / as", "two / times / as / heavy", "twice / so / heavy / as", "two / heavy / than"],
+            correctIndex: 0,
+            translation: "「この箱はもう一つの2倍重い」",
+            explanation: """
+            ・twice as + 形容詞 + as = 「〜の2倍…」倍数比較の基本
+            ・2倍 = twice / 3倍以上 = three times を使う
+            ・"Twice as big." / "Twice as fast." / "Twice as expensive."
+            ・類義: three times as ~ as / double the size of
+            ・two times as は通常 twice に置き換える
+            ・物理的な大きさ、値段、時間など何でも比較できる
+            ・"This costs twice as much as that one."
+            """
+        ),
+        GrammarQuestion(
+            id: "q372",
+            question: "This bottle holds ___ ___ ___ ___ water as the big one.",
+            choices: ["one / fourth / as / much", "one / fourth / as / many", "one / quarter / as / few", "one / four / as / much"],
+            correctIndex: 0,
+            translation: "「このボトルは大きい方の4分の1の水しか入らない」",
+            explanation: """
+            ・one fourth as + much/many + as = 「〜の4分の1の…」分数比較
+            ・water は不可算名詞 → as much / 可算名詞なら as many
+            ・one fourth = a quarter(同じ意味)、時間やお金では quarter が頻出
+            ・"quarter past three" = 3時15分
+            ・"half as much as" = 〜の半分の量
+            ・類義: a quarter as much as / half as much as
+            ・分数表現: half / one third / two thirds / one fourth / three quarters
+            """
+        ),
+        GrammarQuestion(
+            id: "q373",
+            question: "Stay ___ — it's freezing outside.",
+            choices: ["inside", "outside", "onto", "into"],
+            correctIndex: 0,
+            translation: "「中にいて、外は凍えるほど寒いから」",
+            explanation: """
+            ・inside = 「中に・内側に」副詞・前置詞・名詞として使える万能語
+            ・「外と対比して中」を強調。in より「内と外の対比」を意識
+            ・"Come inside!" / "Stay inside." / "Inside the box."
+            ・比喩: deep inside(心の奥底で)
+            ・類義: indoors(屋内に・副詞) / within(〜の内部に・フォーマル)
+            ・"What's inside?" = 中身は何?
+            """
+        ),
+        GrammarQuestion(
+            id: "q374",
+            question: "The kids are playing ___.",
+            choices: ["outside", "inside", "onto", "overhead"],
+            correctIndex: 0,
+            translation: "「子供たちは外で遊んでいる」",
+            explanation: """
+            ・outside = 「外に・外側に」inside の反対
+            ・屋外で何かをしている時の定番
+            ・比喩: "think outside the box" = 既存の枠を超えて考える
+            ・"Wait outside." / "Outside the house." / "It's cold outside."
+            ・類義: outdoors(屋外で・副詞) / out(外に・カジュアル)
+            ・前置詞としても: outside the building(建物の外で)
+            ・「外で遊ぶ」「外で待つ」など物理的な外を表す基本表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q375",
+            question: "He ran ___ ___ the building when he heard the alarm.",
+            choices: ["out / of", "outside / of", "onto / to", "over / of"],
+            correctIndex: 0,
+            translation: "「警報を聞いて彼は建物から走り出た」",
+            explanation: """
+            ・out of + 名詞 = 「〜から外へ」動きを伴う離脱
+            ・outside(外で・場所)との違いは、out of には「動き」がある
+            ・"Get out of here!" / "out of bed" / "out of the room"
+            ・状態・動機も表す: out of stock(在庫切れ) / out of curiosity(好奇心から) / out of breath(息切れ)
+            ・out of order(故障中) / out of work(失業中) / out of control(制御不能)
+            ・類義: from(一般的) / away from(離れて)
+            ・動きを伴う多義的な重要表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q376",
+            question: "She has worked ___ some great artists.",
+            choices: ["alongside", "along", "inside", "outside"],
+            correctIndex: 0,
+            translation: "「彼女は素晴らしいアーティストたちと協力して働いてきた」",
+            explanation: """
+            ・alongside = 「〜と並んで・〜と協力して」対等な立場で一緒に
+            ・work alongside(協力して働く) / stand alongside(並んで立つ)
+            ・連帯感を出したい時に使うと知的な印象
+            ・beside(そばに)より能動的な関係性を示す
+            ・"They fought alongside their allies." / "Working alongside experts."
+            ・類義: side by side with(並んで・同義) / together with(〜と一緒に)
+            ・ビジネスや報道で頻出する協力関係の表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q377",
+            question: "This project is ___ my expertise.",
+            choices: ["beyond", "below", "above", "under"],
+            correctIndex: 0,
+            translation: "「このプロジェクトは私の専門外だ」",
+            explanation: """
+            ・beyond + 名詞 = 「〜を超えて」物理的にも抽象的にも「超越」
+            ・「専門外」「理解を超える」「期待以上」など限界の外を示す
+            ・beyond belief(信じられない) / beyond compare(比類なき) / beyond doubt(疑いの余地なく)
+            ・"beyond my control" / "beyond my reach" / "beyond expectations"
+            ・類義: past(〜を過ぎて) / outside the scope of(〜の範囲外)
+            ・over より知的・フォーマルな響き
+            ・強調表現でも頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q378",
+            question: "The clouds gathered ___.",
+            choices: ["overhead", "above", "over", "up"],
+            correctIndex: 0,
+            translation: "「雲が頭上に集まってきた」",
+            explanation: """
+            ・overhead = 「頭上に・上空に」自分の頭の真上という具体的な位置
+            ・空や天井方向を見上げる場面で使う
+            ・"A plane flew overhead." / "Clouds gathered overhead."
+            ・名詞: overhead costs(諸経費・ビジネス)
+            ・類義: above(より上に・位置関係) / up above(上の方に・口語)
+            ・直接頭上 → overhead、漠然と上 → above
+            ・ドラマチックな場面描写に適する
+            """
+        ),
+        GrammarQuestion(
+            id: "q379",
+            question: "The kids ran ___ ___ the park.",
+            choices: ["all / over", "all / above", "over / all", "all / on"],
+            correctIndex: 0,
+            translation: "「子供たちは公園のあちこちを走り回った」",
+            explanation: """
+            ・all over + 場所 = 「〜中・あちこちで」広範囲
+            ・「世界中(all over the world)」「公園のあちこち」
+            ・"It's all over." = もう終わった
+            ・"all over again" = もう一度最初から
+            ・everywhere より「広く散らばっている」感が強い
+            ・類義: everywhere(どこでも) / throughout(〜全体に・フォーマル)
+            ・"All over the place." = あちこちに・乱雑に
+            """
+        ),
+        GrammarQuestion(
+            id: "q380",
+            question: "The plane flew ___ the clouds.",
+            choices: ["above", "over", "on", "up"],
+            correctIndex: 0,
+            translation: "「飛行機は雲の上を飛んだ」",
+            explanation: """
+            ・above + 名詞 = 「〜より上に」位置関係を表す
+            ・over(覆う)との違い: above は「上の方にある」だけで接触や覆いを示さない
+            ・"above sea level" / "above average" / "above all"(何よりも)
+            ・"above and beyond" = 期待以上に
+            ・類義: higher than(〜より高い) / over(〜の上に・接触・覆い)
+            ・抽象的な「より上」も表す: above average(平均以上)
+            ・重要フレーズ多数の前置詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q381",
+            question: "The temperature dropped ___ zero.",
+            choices: ["below", "over", "above", "under"],
+            correctIndex: 0,
+            translation: "「気温は氷点下に下がった」",
+            explanation: """
+            ・below + 名詞 = 「〜より下に・〜以下に」above の反対
+            ・under(下に潜る)との違い: below は「位置関係としての下」
+            ・「氷点下」「平均以下」「期待以下」など数値や水準を下回る時
+            ・"below zero" / "below average" / "below sea level"
+            ・"see below" = 下記参照(ビジネス文書の定番)
+            ・類義: under(下に・接触・覆い) / beneath(下に・フォーマル)
+            ・数値や階層の下を表す時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q382",
+            question: "He ___ come to the party tonight.",
+            choices: ["won't", "wouldn't", "didn't", "hasn't"],
+            correctIndex: 0,
+            translation: "「彼は今夜のパーティーには来ないだろう」",
+            explanation: """
+            ・won't = will not の短縮形「〜しないだろう・〜する意志がない」
+            ・日常会話ではほぼ短縮形を使う
+            ・未来の否定 / 強い拒絶(やらない!) / 物の「動かない・効かない」も表す
+            ・"The door won't open." = ドアが開かない
+            ・"I won't tell anyone." = 誰にも言わない
+            ・類義: will not(強調・フォーマル) / am/is/are not going to(〜する予定がない)
+            ・意志の否定が核心
+            """
+        ),
+        GrammarQuestion(
+            id: "q383",
+            question: "The company ___ ___ tolerate any misconduct.",
+            choices: ["will / not", "won't / not", "does / not", "would / not"],
+            correctIndex: 0,
+            translation: "「当社は不正行為を一切容認しない」",
+            explanation: """
+            ・will not = won't のフォーマル版、意志の強さを強調
+            ・短縮しないことで「絶対に〜しない」という固い決意を表す
+            ・公式声明、契約書、重要な宣言で頻出
+            ・"We will not tolerate ~"(〜は容認しません) — ビジネスや政治演説の定番
+            ・普段の会話なら won't で十分
+            ・類義: won't(短縮・カジュアル) / refuse to(さらに強い・拒否)
+            ・正式な決意表明
+            """
+        ),
+        GrammarQuestion(
+            id: "q384",
+            question: "___ ___ please pass the salt?",
+            choices: ["Would / you", "Did / you", "Will / you", "Could / you"],
+            correctIndex: 0,
+            translation: "「塩を取っていただけますか?」",
+            explanation: """
+            ・Would you + 動詞? = 「〜してくれますか?」丁寧な依頼の定番
+            ・Can you? より丁寧、Could you? とほぼ同じ丁寧さ
+            ・レストラン、職場、知らない人への依頼など丁寧さが必要な場面で
+            ・"Would you like ~?" は提案の鉄板表現(〜はいかがですか?)
+            ・"Would you mind ~ing?" は最も丁寧な依頼
+            ・類義: Could you(同等の丁寧さ) / Would you mind ~ing(最丁寧)
+            ・ビジネスの基本依頼表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q385",
+            question: "I'll help you ___ ___ ___ ___ ___.",
+            choices: ["as / much / as / I / can", "so / much / as / I / can", "too / much / as / I / can", "as / many / as / I / can"],
+            correctIndex: 0,
+            translation: "「できる限りお手伝いします」",
+            explanation: """
+            ・as much as I can = 「できるだけ・できる限り」慣用句
+            ・自分の能力の限界内で最大限というニュアンス
+            ・「できるだけ手伝う」「可能な限り頑張る」など、努力を約束する時の鉄板
+            ・help は不可算扱い → much / 可算名詞なら as many as I can
+            ・"I'll do as much as I can." / "Eat as much as you can."
+            ・類義: as much as possible(可能な限り) / to the best of my ability(全力で・フォーマル)
+            ・努力を約束する時の重要表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q386",
+            question: "This shirt is ___ ___ ___ yours.",
+            choices: ["the / same / as", "the / same / like", "a / same / as", "the / same / than"],
+            correctIndex: 0,
+            translation: "「このシャツはあなたのと同じだ」",
+            explanation: """
+            ・the same as + 名詞 = 「〜と同じ」完全な同一性
+            ・similar to(似ている)と違い、全く同じことを強調
+            ・「いつもと同じ」「以前と同じ」など日常で多用
+            ・返事: Same here.(私も同じ) / Same to you.(そちらも) — 便利
+            ・"Just the same as before." / "Exactly the same as mine."
+            ・類義: identical to(完全に一致・フォーマル) / just like(〜と同じ・口語)
+            ・the は必須、as と組合せる(× the same than)
+            """
+        ),
+        GrammarQuestion(
+            id: "q387",
+            question: "___ ___ a problem with your order.",
+            choices: ["There / is", "It / has", "There / has", "That / is"],
+            correctIndex: 0,
+            translation: "「あなたの注文に問題があります」",
+            explanation: """
+            ・There is/are + 名詞 = 「〜がある・いる」存在文の基本構文
+            ・新しい情報を導入する時に使う
+            ・単数・不可算 → there is / 複数 → there are
+            ・口語では there's と短縮(複数でも there's を使うことがある)
+            ・"There is a problem." / "There are many options." / "There's no time."
+            ・類義: There exists(〜が存在する・フォーマル) / We have(別の言い方)
+            ・存在を伝える時の絶対基本構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q388",
+            question: "\"Where is John?\" \"He ___ ___ at the office.\"",
+            choices: ["could / be", "is / be", "might / been", "can / been"],
+            correctIndex: 0,
+            translation: "「『ジョンはどこ?』『オフィスにいるかも』」",
+            explanation: """
+            ・could be + 形容詞/場所 = 「〜かもしれない」中立的な推量
+            ・確信度は50%くらい、「あり得る」というニュアンス
+            ・「家にいるかも」「正しいかも」など
+            ・"Could be worse." = もっと悪くなり得た(慰め)
+            ・"Could be better." = もっと良くなり得る(不満)
+            ・"It could be him." / "Could be true."
+            ・類義: might be(〜かもしれない・やや弱い) / may be(中立)
+            ・推量の鉄板表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q389",
+            question: "She knew ___ ___ detail of the case.",
+            choices: ["every / single", "every / and", "each / single", "any / single"],
+            correctIndex: 0,
+            translation: "「彼女はその事件の一つ一つの詳細を知っていた」",
+            explanation: """
+            ・every single + 単数名詞 = 「一つ一つすべて」完全な強調
+            ・every だけより「漏れなく・例外なく」のニュアンスが強い
+            ・"細部一つ残らず知っている" / "毎日欠かさず"
+            ・"every single day" / "every single one" / "every single time"
+            ・称賛、苛立ち、決意などドラマチックな場面に最適
+            ・類義: each and every(一人一人すべて) / every last(最後の一つまで)
+            ・感情の重みを込めた強調表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q390",
+            question: "You can go by train or by bus — ___ ___, you'll get there.",
+            choices: ["either / way", "any / way", "some / way", "both / way"],
+            correctIndex: 0,
+            translation: "「電車でもバスでも、どちらでも着くよ」",
+            explanation: """
+            ・either way = 「どちらにせよ・どちらでも」口語表現
+            ・2つの選択肢どちらでも結果が同じことを示す
+            ・「どっちでも着く」「どちらにせよ決めよう」
+            ・anyway(とにかく)と似ているが、either way は2つの選択肢を踏まえての結論
+            ・"Either way works for me." / "Either way, I'm in."
+            ・類義: whichever way(どちらの方法でも) / anyhow(とにかく・カジュアル)
+            ・選択肢を踏まえた結論を示す万能フレーズ
+            """
         )
     ]
 }
