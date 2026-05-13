@@ -3641,6 +3641,412 @@ enum GrammarMCQSeed {
             ・It sounds like ~ も同じ意味で口語ではこちらが頻出
             ・類義: It sounds like(カジュアル) / It seems that(中立)
             """
+        ),
+        GrammarQuestion(
+            id: "q429",
+            question: "This deal sounds ___ ___ ___ be true.",
+            choices: ["too / good / to", "so / good / to", "very / good / to", "too / good / for"],
+            correctIndex: 0,
+            translation: "「この話、うますぎて本当とは思えない」",
+            explanation: """
+            ・too good to be true = 「うますぎて本当とは思えない」慣用句
+            ・too + 形容詞 + to + 動詞原形 = 「〜すぎて…できない」の構文
+            ・詐欺やうますぎる話に対して警戒を示す時の鉄板表現
+            ・"If it sounds too good to be true, it probably is."(諺)
+            ・否定的な意味を含むので注意
+            ・類義: sounds fishy(怪しい・口語) / seems suspicious(疑わしい)
+            ・"too + 形 + to + V" は否定不要(× too good not to be true)
+            """
+        ),
+        GrammarQuestion(
+            id: "q430",
+            question: "Let's ___ ___ ___ chat before the meeting.",
+            choices: ["have / a / quick", "make / a / quick", "do / a / quick", "take / a / quick"],
+            correctIndex: 0,
+            translation: "「会議の前にちょっと話そう」",
+            explanation: """
+            ・have a quick + 名詞 = 「ちょっと〜する・手短に〜する」口語表現
+            ・quick が「短時間で済む」ニュアンスを加える
+            ・「ちょっと話そう」「軽く一杯」「サッと確認」
+            ・"Let's have a quick lunch." / "Have a quick look."
+            ・have は経験・行為を表す動詞として汎用的
+            ・類義: have a brief / grab a quick(カジュアル)
+            ・時間をかけずに何かをする時に便利
+            """
+        ),
+        GrammarQuestion(
+            id: "q431",
+            question: "___ ___! How's it going?",
+            choices: ["Hey / there", "Hi / there", "Hello / there", "すべて正解"],
+            correctIndex: 3,
+            translation: "「やあ!元気?」",
+            explanation: """
+            ・Hey there / Hi there / Hello there = いずれも親しみのカジュアルな挨拶
+            ・there は特定の場所を指すのではなく、呼びかけの軽い添え物
+            ・テキスト、SNS、友達への気軽な挨拶で多用
+            ・Hey there(最もカジュアル) / Hi there(中立) / Hello there(やや丁寧)
+            ・相手との距離を縮める効果
+            ・類義: What's up?(最もカジュアル) / Howdy(米南部)
+            ・"Well hello there!" = ちょっと驚き混じりの挨拶
+            """
+        ),
+        GrammarQuestion(
+            id: "q432",
+            question: "Try doing the steps ___ ___.",
+            choices: ["in / reverse", "on / reverse", "by / reverse", "at / reverse"],
+            correctIndex: 0,
+            translation: "「手順を逆にやってみて」",
+            explanation: """
+            ・in reverse = 「逆順に・逆方向に」順序や方向の逆転
+            ・「手順を逆にやる」「車をバックする」
+            ・"Do it in reverse." / "Put the car in reverse."
+            ・比喩: life in reverse(人生を逆から)
+            ・"in reverse order" = 逆順で
+            ・類義: backwards(後ろ向きに) / in the opposite order(反対の順序で)
+            ・シンプルで便利な前置詞句
+            """
+        ),
+        GrammarQuestion(
+            id: "q433",
+            question: "___ ___ ___ ___, I feel completely happy.",
+            choices: ["In / this / very / moment", "On / this / very / moment", "At / this / very / moment", "Both A and C"],
+            correctIndex: 3,
+            translation: "「まさに今この瞬間、完全に幸せだと感じる」",
+            explanation: """
+            ・at this very moment / in this very moment = 「まさに今この瞬間」強調
+            ・very を加えることで「まさに・ちょうど」と瞬間を強調
+            ・at の方が一般的、in も使われる
+            ・"At this very moment, history is being made."
+            ・現在の瞬間の特別さを強調する時に詩的・感情的に使う
+            ・類義: right now(まさに今・口語) / at this very instant(まさにこの瞬間・フォーマル)
+            ・スピーチやドラマで効果的な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q434",
+            question: "I'll call you ___ ___ ___ I arrive.",
+            choices: ["as / soon / as", "so / soon / as", "as / fast / as", "as / quick / as"],
+            correctIndex: 0,
+            translation: "「着いたらすぐ電話するね」",
+            explanation: """
+            ・as soon as + 主語 + 動詞 = 「〜するとすぐに・〜したらすぐ」接続詞
+            ・動作の直後を強調
+            ・「着いたらすぐ電話する」「分かり次第連絡する」
+            ・時制注意: 未来のことでも as soon as の後は現在形(× as soon as I will arrive)
+            ・"As soon as he comes, tell me." / "I'll do it as soon as possible."
+            ・"as soon as possible (ASAP)" = できるだけ早く(超頻出)
+            ・類義: the moment(〜した瞬間に) / immediately after(直後に・フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q435",
+            question: "You can stay ___ ___ ___ you want.",
+            choices: ["as / long / as", "so / long / as", "as / longer / as", "until / long / as"],
+            correctIndex: 0,
+            translation: "「君が望む限りいていいよ」",
+            explanation: """
+            ・as long as + 主語 + 動詞 = 2つの意味
+            ・①「〜する限り」(条件) / ②「〜する間ずっと」(期間)
+            ・「望む限りいていい」「君が来るなら行く」
+            ・"As long as you're happy." / "Stay as long as you like."
+            ・条件と期間の両方を表現できる便利な接続詞
+            ・類義: provided that(〜という条件で・フォーマル) / so long as(同義)
+            ・文脈で意味を判断する
+            """
+        ),
+        GrammarQuestion(
+            id: "q436",
+            question: "___ ___ ___ I know, he's still in town.",
+            choices: ["As / far / as", "So / far / as", "As / much / as", "As / long / as"],
+            correctIndex: 0,
+            translation: "「私が知る限り、彼はまだ町にいる」",
+            explanation: """
+            ・as far as + 主語 + 動詞 = 「〜する限りでは・〜の範囲では」情報や認識の限界
+            ・「私が知る限り」「私が見る限り」断定を避けて控えめに意見を述べる
+            ・"As far as I know" / "As far as I'm concerned" / "As far as I can tell"
+            ・「私の知る限り」(自信を弱めて発言)
+            ・類義: to my knowledge(フォーマル) / from what I can tell(私が判断する限り)
+            ・「責任回避」の効果もある慎重な表現
+            ・※ as far as ... is concerned = 〜に関する限りでは
+            """
+        ),
+        GrammarQuestion(
+            id: "q437",
+            question: "He talked ___ ___ ___ for hours.",
+            choices: ["on / and / on", "over / and / over", "and / and / on", "up / and / on"],
+            correctIndex: 0,
+            translation: "「彼は何時間も延々と話し続けた」",
+            explanation: """
+            ・on and on = 「延々と・続けて」慣用句
+            ・動作や話が長く続くことを強調、しばしばうんざりするニュアンス
+            ・"He went on and on about his job." / "It just keeps going on and on."
+            ・go on and on(延々と続く) / talk on and on(延々と話す)で頻出
+            ・類義: endlessly(延々と・フォーマル) / non-stop(止まらずに・口語)
+            ・反復・退屈さを表すドラマチックな表現
+            ・"over and over"(何度も繰り返し)とは別物
+            """
+        ),
+        GrammarQuestion(
+            id: "q438",
+            question: "Let's settle this ___ ___ ___ ___.",
+            choices: ["once / and / for / all", "one / and / for / all", "once / for / and / all", "once / and / to / all"],
+            correctIndex: 0,
+            translation: "「これをきっぱり決着させよう」",
+            explanation: """
+            ・once and for all = 「きっぱりと・最終的に」慣用句
+            ・長引いていた問題を完全に解決するニュアンス
+            ・「これで終わりにしよう」「決着をつけよう」
+            ・"Let's end this once and for all."
+            ・強い決意や最終決定を表す
+            ・順序は固定で変えられない
+            ・類義: definitively(決定的に・フォーマル) / for good(永久に・カジュアル)
+            ・議論や争いに終止符を打つ時の定番
+            """
+        ),
+        GrammarQuestion(
+            id: "q439",
+            question: "Please be ___ ___ for the meeting.",
+            choices: ["on / time", "in / time", "at / time", "for / time"],
+            correctIndex: 0,
+            translation: "「会議には時間通りに来てください」",
+            explanation: """
+            ・on time = 「時間通りに・予定通りに」遅刻も早すぎもしない、ぴったりの時刻
+            ・in time(間に合って)とは違うので注意
+            ・on time(時刻に正確) vs in time(締切などに間に合う)
+            ・"The train arrived on time." / "He's always on time."
+            ・"in time for the meeting"(会議に間に合って) — 別の意味
+            ・類義: punctual(時間厳守・フォーマル形容詞) / in time(間に合って・締切前)
+            ・電車、会議、約束で「時間厳守」を表す時の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q440",
+            question: "___ hearing the news, she cried.",
+            choices: ["Upon", "On", "At", "Both A and B"],
+            correctIndex: 3,
+            translation: "「ニュースを聞いた途端、彼女は泣いた」",
+            explanation: """
+            ・upon + 名詞/動名詞 = 「〜する時・〜するとすぐに」フォーマル寄り
+            ・on と意味は同じだが、upon の方が改まった印象
+            ・両方正解だが、upon は書き言葉、契約書、文学的表現で頻出
+            ・"Upon arrival, please report to the front desk."
+            ・"On hearing the news"(中立) / "Upon hearing the news"(やや改まった)
+            ・類義: on ~ing(中立) / as soon as(口語)
+            ・ある動作の直後の出来事を表す
+            """
+        ),
+        GrammarQuestion(
+            id: "q441",
+            question: "We can't be in two places ___ ___ ___ ___.",
+            choices: ["at / the / same / time", "on / the / same / time", "in / the / same / time", "for / the / same / time"],
+            correctIndex: 0,
+            translation: "「同時に二箇所にはいられない」",
+            explanation: """
+            ・at the same time = 「同時に・一方で」
+            ・物理的な同時性と論理的な対比の両方に使える
+            ・「同時に二箇所にはいられない」「一方で〜とも言える」
+            ・"At the same time, we should consider ~"(議論で相反する意見を導入)
+            ・"They arrived at the same time."(物理的同時)
+            ・文頭で使うと「とはいえ」「同時に〜だが」のニュアンス
+            ・類義: simultaneously(同時に・フォーマル) / meanwhile(一方で・つなぎ語)
+            """
+        ),
+        GrammarQuestion(
+            id: "q442",
+            question: "___ ___ ___ eating pizza tonight.",
+            choices: ["I / feel / like", "I / feel / for", "I / feel / to", "I'm / feeling / on"],
+            correctIndex: 0,
+            translation: "「今夜はピザが食べたい気分」",
+            explanation: """
+            ・I feel like + 名詞/動名詞 = 「〜したい気分・〜が食べたい」口語表現
+            ・今の気分や欲求を表す時の定番
+            ・「ピザが食べたい気分」「映画見たい気分」
+            ・"I feel like coffee." / "I feel like going home."
+            ・I feel like + 文(〜のような気がする)とは別の意味
+            ・"I feel like I'm being watched." = 見られている気がする
+            ・類義: I'm in the mood for(同義) / I want to(直接的)
+            ・文脈で2つの意味を使い分ける
+            """
+        ),
+        GrammarQuestion(
+            id: "q443",
+            question: "___ ___ work hard usually succeed.",
+            choices: ["People / who", "People / which", "People / they", "People / what"],
+            correctIndex: 0,
+            translation: "「努力する人はたいてい成功する」",
+            explanation: """
+            ・people who + 動詞 = 「〜する人々」関係代名詞構文
+            ・who は人を先行詞に取る関係代名詞
+            ・「頑張る人」「成功する人」など、人物の特性を語る
+            ・"People who travel learn more." / "People who care about quality."
+            ・口語では who を that で代用することも多いが、人には who が標準
+            ・類義: those who(やや改まった) / anyone who(〜する人なら誰でも)
+            ・後ろから人を説明する基本構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q444",
+            question: "___ wins gets the prize.",
+            choices: ["Whoever", "Whatever", "Whichever", "Wherever"],
+            correctIndex: 0,
+            translation: "「勝った人が賞をもらう」",
+            explanation: """
+            ・Whoever + 動詞 = 「〜する人は誰でも」複合関係代名詞
+            ・不特定の人を指す
+            ・「勝った人が賞をもらう」「来た人を歓迎する」
+            ・"Whoever you are, ~" / "Whoever did this, ~"
+            ・anyone who ~ と同じ意味だが、whoever は一語で簡潔
+            ・譲歩の意味(誰が〜しても)でも使える
+            ・類義: anyone who(〜する人は誰でも) / no matter who(誰が〜しても)
+            ・whoever / whatever / whichever / wherever / whenever / however のセット
+            """
+        ),
+        GrammarQuestion(
+            id: "q445",
+            question: "I bought ___ ___ ___ for $20.",
+            choices: ["the / whole / lot", "the / all / lot", "the / whole / total", "all / the / lot"],
+            correctIndex: 0,
+            translation: "「全部20ドルで買った」",
+            explanation: """
+            ・the whole lot = 「全部・一括して」口語表現、英国英語で特に頻出
+            ・まとめて全てというニュアンス
+            ・「全部で20ドル」「全員で行く」
+            ・"I'll take the whole lot." / "The whole lot of them came."
+            ・ひとまとまりの量や数を強調
+            ・類義: the whole thing(全部・中立) / all of it(その全て)
+            ・人にも物にも使える便利な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q446",
+            question: "___ ___ ___ ___ finish it tonight.",
+            choices: ["I'm / gonna / try / to", "I / am / try / to", "I'm / going / try / to", "I / try / gonna / to"],
+            correctIndex: 0,
+            translation: "「今夜終わらせようと頑張る」",
+            explanation: """
+            ・I'm gonna try to + 動詞原形 = 「〜しようと頑張る・〜してみる」口語
+            ・gonna = going to の話し言葉短縮形
+            ・意志と努力を控えめに表現
+            ・「今夜終わらせようと頑張る」「やってみる」
+            ・"I'm gonna try to help." / "Gonna try my best."
+            ・確約せずに試みを伝えるニュアンス
+            ・書く時は I'm going to try to が正式
+            ・類義: I'll try to(〜してみる) / I'll do my best to(全力で〜する)
+            """
+        ),
+        GrammarQuestion(
+            id: "q447",
+            question: "I ___ ___ ___ ___ for your help.",
+            choices: ["can't / thank / you / enough", "can / thank / you / enough", "can't / thanks / you / enough", "can't / thank / you / too"],
+            correctIndex: 0,
+            translation: "「あなたの助けにどんなに感謝してもしきれない」",
+            explanation: """
+            ・can't thank you enough = 「感謝してもしきれない」深い感謝の慣用句
+            ・Thank you だけでは足りない感謝の気持ちを伝える時の最強表現
+            ・"I really can't thank you enough." / "We can't thank you enough for everything."
+            ・フォーマルでもカジュアルでも使えるが、心からの感謝を込めて
+            ・類義: I really appreciate it(本当に感謝・フォーマル) / Thanks a million(本当にありがとう・カジュアル)
+            ・大切な相手や恩人への感謝表明に最適
+            """
+        ),
+        GrammarQuestion(
+            id: "q448",
+            question: "I'm ___ ___ ___ ___.",
+            choices: ["in / my / late / twenties", "on / my / late / twenties", "at / my / late / twenties", "in / a / late / twenty"],
+            correctIndex: 0,
+            translation: "「私は20代後半だ」",
+            explanation: """
+            ・in my late twenties = 「20代後半」年齢表現
+            ・early / mid / late で世代の前半・中盤・後半を表す
+            ・early twenties(20代前半) / mid twenties(20代半ば) / late twenties(20代後半)
+            ・thirties, forties など他の年代でも同じパターン
+            ・"She's in her mid-thirties." / "He's in his early forties."
+            ・具体的な年齢を言いたくない時に便利
+            ・類義: late 20s(同じ・数字表記) / pushing 30(もうすぐ30歳・口語)
+            ・年齢の十年単位は複数形 + s
+            """
+        ),
+        GrammarQuestion(
+            id: "q449",
+            question: "Our vacation plans are still ___ ___ ___ ___.",
+            choices: ["up / in / the / air", "on / in / the / air", "up / on / the / air", "up / for / the / air"],
+            correctIndex: 0,
+            translation: "「私たちの休暇の予定はまだ未定だ」",
+            explanation: """
+            ・up in the air = 「未定の・宙ぶらりんの」慣用句
+            ・まだ決まっていない不確実な状態
+            ・「予定がまだ未定」「決断保留中」
+            ・"Plans are up in the air." / "Everything is still up in the air."
+            ・決定が下せない、複数の要因が絡み合っている状況
+            ・類義: undecided(未決定・フォーマル) / unsettled(未解決の)
+            ・ビジネスや日常で「状況不明」を伝える時に便利
+            """
+        ),
+        GrammarQuestion(
+            id: "q450",
+            question: "There was ___ ___ ___ people at the concert.",
+            choices: ["a / mass / of", "the / mass / of", "a / many / of", "a / much / of"],
+            correctIndex: 0,
+            translation: "「コンサートには大勢の人がいた」",
+            explanation: """
+            ・a mass of + 名詞 = 「大量の・大勢の」
+            ・大きな集まりや塊を表す
+            ・「大勢の人」「大量の情報」
+            ・"A mass of data." / "A mass of confusion."
+            ・a lot of より「圧倒的な量」というドラマチックなニュアンス
+            ・類義: a great deal of(多くの・不可算) / a huge crowd of(大群の・人)
+            ・フォーマル寄りで、書き言葉やニュースで頻出
+            ・masses of(口語) も同じ意味で使える
+            """
+        ),
+        GrammarQuestion(
+            id: "q451",
+            question: "You ___ ___ ___ the weather.",
+            choices: ["were / right / about", "were / right / on", "are / right / for", "were / correct / about"],
+            correctIndex: 0,
+            translation: "「天気についての君の予想は当たってた」",
+            explanation: """
+            ・be right about + 名詞 = 「〜について正しい・〜の予想が当たる」前置詞は about で固定
+            ・「天気の予想が当たった」「彼について正しかった」
+            ・"You were right about him." / "I was right about that."
+            ・判断や予測が正しかったことを認める時に
+            ・"You were right."(君が正しかった) — 認める場面で頻出
+            ・類義: be correct about(フォーマル) / be spot on about(的確・カジュアル)
+            ・素直に相手を認める表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q452",
+            question: "Add a ___ ___ sugar.",
+            choices: ["spoonful / of", "spoon / of", "spoonful / for", "spoon / for"],
+            correctIndex: 0,
+            translation: "「砂糖をスプーン一杯入れて」",
+            explanation: """
+            ・a spoonful of + 名詞 = 「スプーン一杯の〜」量表現
+            ・-ful = 「いっぱい分」を意味する接尾辞
+            ・handful(一握り) / mouthful(一口) / cupful(一杯分) / armful(腕一杯分)
+            ・"A handful of nuts." / "A mouthful of food."
+            ・"A spoonful of sugar helps the medicine go down."(歌詞でも有名)
+            ・レシピや料理の場面で頻出
+            ・類義: a tablespoon of(大さじ一杯) / a teaspoon of(小さじ一杯)
+            """
+        ),
+        GrammarQuestion(
+            id: "q453",
+            question: "I'm ___ ___ tired today.",
+            choices: ["sort / of", "sort / for", "kind / for", "some / of"],
+            correctIndex: 0,
+            translation: "「今日はちょっと疲れてる」",
+            explanation: """
+            ・sort of = 「ちょっと・なんとなく」控えめな表現
+            ・kind of と同じ意味で、断定を避けるクッション語
+            ・「ちょっと疲れた」「なんとなく好き」
+            ・"I sort of like it." / "It's sort of weird."
+            ・口語では sorta /ˈsɔːrtə/ と発音されることも
+            ・kind of(カインダ) と同様、ネイティブの会話で多用
+            ・類義: kind of(同義) / a bit(少し・英国寄り)
+            ・強い表現を和らげる役割
+            """
         )
     ]
 }
