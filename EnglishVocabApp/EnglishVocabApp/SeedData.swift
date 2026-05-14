@@ -59,6 +59,9 @@ enum SeedData {
             + dailyWords13 + troubleWords13 + evaluationWords13
             + casualWords13
             + pathAndOthers14
+            + peopleWords15 + emotionWords15 + relationshipWords15
+            + workWords15 + dailyWords15 + troubleWords15
+            + evaluationWords15 + situationWords15
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -9602,6 +9605,377 @@ enum SeedData {
                  examples: [
                     ("They paved the road.", "道路を舗装した。"),
                     ("Pave the way for change.", "変化への道を開く。")
+                 ])
+        ]
+    }
+
+    // MARK: - 人物関係(追加 6)
+
+    private static var peopleWords15: [Word] {
+        [
+            make("sibling", "a brother or sister",
+                 "きょうだい",
+                 useCases: ["兄弟姉妹をまとめて表すとき"],
+                 examples: [
+                    ("Do you have siblings?", "兄弟いる?"),
+                    ("My younger sibling.", "下のきょうだい。")
+                 ]),
+            make("in-laws", "relatives by marriage",
+                 "義理の家族",
+                 useCases: ["配偶者の家族について話すとき"],
+                 examples: [
+                    ("Meet my in-laws.", "義理の家族に会う。"),
+                    ("Dinner with the in-laws.", "義理の家族と夕食。")
+                 ]),
+            make("bff", "best friend forever",
+                 "親友",
+                 useCases: ["特別な親友を表すカジュアル略語"],
+                 examples: [
+                    ("She's my BFF.", "彼女は親友。"),
+                    ("My BFF since high school.", "高校からの親友。")
+                 ]),
+            make("frenemy", "a person who is both friend and rival",
+                 "友達のような敵",
+                 useCases: ["仲良くも対立もある複雑な関係を表すとき"],
+                 examples: [
+                    ("She's my frenemy.", "彼女は友敵。"),
+                    ("Classic frenemy behavior.", "典型的な友敵的振る舞い。")
+                 ]),
+            make("newbie", "a newcomer or beginner",
+                 "新人・初心者",
+                 useCases: ["初心者であることを軽く表すとき"],
+                 examples: [
+                    ("I'm a newbie here.", "ここでは新人。"),
+                    ("Total newbie at coding.", "コードは完全初心者。")
+                 ]),
+            make("local", "a person who lives in a particular area",
+                 "地元の人",
+                 useCases: ["観光客と対比して地元住民を表すとき"],
+                 examples: [
+                    ("Ask the locals.", "地元の人に聞いて。"),
+                    ("This is a local spot.", "これは地元の店。")
+                 ])
+        ]
+    }
+
+    // MARK: - 感情・心理(追加 6)
+
+    private static var emotionWords15: [Word] {
+        [
+            make("grudge", "persistent resentment",
+                 "恨み",
+                 useCases: ["過去のことを根に持っていることを表すとき"],
+                 examples: [
+                    ("Hold a grudge.", "恨みを抱く。"),
+                    ("Don't hold grudges.", "恨みを引きずらないで。")
+                 ]),
+            make("comfort zone", "a place or situation where one feels secure",
+                 "居心地のいい範囲",
+                 useCases: ["挑戦と対比して安全圏を表すとき"],
+                 examples: [
+                    ("Step out of your comfort zone.", "コンフォートゾーンから出て。"),
+                    ("Staying in my comfort zone.", "安全圏にとどまってる。")
+                 ]),
+            make("peace of mind", "freedom from worry",
+                 "心の安らぎ",
+                 useCases: ["安心感を保証するとき"],
+                 examples: [
+                    ("For peace of mind.", "安心のため。"),
+                    ("Brings me peace of mind.", "私を安心させる。")
+                 ]),
+            make("pet peeve", "a particular annoyance",
+                 "特に気に障ること",
+                 useCases: ["細かいけど自分には特に嫌なことを表すとき"],
+                 examples: [
+                    ("That's my pet peeve.", "それが私のツボにハマる嫌さ。"),
+                    ("My biggest pet peeve.", "一番のイラポイント。")
+                 ]),
+            make("wake-up call", "an event that prompts reflection",
+                 "目を覚まさせる出来事",
+                 useCases: ["気付かせてくれる出来事を表すとき"],
+                 examples: [
+                    ("It was a wake-up call.", "目を覚まされた。"),
+                    ("Took it as a wake-up call.", "戒めとして受け止めた。")
+                 ]),
+            make("soft spot", "a fond feeling for something",
+                 "弱み・好きなもの",
+                 useCases: ["特定の人や物に弱いことを表すとき"],
+                 examples: [
+                    ("I have a soft spot for cats.", "猫には弱い。"),
+                    ("She has a soft spot for him.", "彼女は彼に弱い。")
+                 ])
+        ]
+    }
+
+    // MARK: - 会話・人間関係(追加 6)
+
+    private static var relationshipWords15: [Word] {
+        [
+            make("icebreaker", "something that eases initial tension",
+                 "場を和ませるもの",
+                 useCases: ["緊張をほぐすきっかけを表すとき"],
+                 examples: [
+                    ("A good icebreaker question.", "良いアイスブレイクの質問。"),
+                    ("Use a joke as an icebreaker.", "冗談でアイスブレイク。")
+                 ]),
+            make("inside joke", "a joke understood only by a particular group",
+                 "内輪のジョーク",
+                 useCases: ["仲間内だけで分かる冗談を表すとき"],
+                 examples: [
+                    ("It's an inside joke.", "内輪ネタなんだ。"),
+                    ("We have lots of inside jokes.", "内輪ジョークがたくさん。")
+                 ]),
+            make("cold shoulder", "a deliberately unfriendly attitude",
+                 "冷たい態度",
+                 useCases: ["わざと無視するような対応を表すとき"],
+                 examples: [
+                    ("Give the cold shoulder.", "冷たい態度を取る。"),
+                    ("Got the cold shoulder.", "冷たくあしらわれた。")
+                 ]),
+            make("silent treatment", "ignoring someone deliberately",
+                 "無視する態度",
+                 useCases: ["怒って口をきかない態度を表すとき"],
+                 examples: [
+                    ("She's giving me the silent treatment.", "彼女に無視されてる。"),
+                    ("Stop the silent treatment.", "無視するのやめて。")
+                 ]),
+            make("shoutout", "a public acknowledgment or greeting",
+                 "言及・称賛",
+                 useCases: ["特定の人を公の場で称えるとき"],
+                 examples: [
+                    ("Shoutout to my mom!", "母にシャウトアウト!"),
+                    ("Big shoutout to the team.", "チームに大いに感謝。")
+                 ]),
+            make("throwback", "something from the past brought up again",
+                 "懐かしいもの・回想",
+                 useCases: ["昔の写真や思い出を共有するとき"],
+                 examples: [
+                    ("Throwback Thursday.", "懐かしの木曜(SNS用語)。"),
+                    ("What a throwback!", "懐かしい!")
+                 ])
+        ]
+    }
+
+    // MARK: - 仕事・お金(追加 6・workload は既出)
+
+    private static var workWords15: [Word] {
+        [
+            make("coworking", "shared workspace arrangement",
+                 "コワーキング・共同作業",
+                 useCases: ["共有オフィスや協働を表すとき"],
+                 examples: [
+                    ("A coworking space.", "コワーキングスペース。"),
+                    ("I work at a coworking spot.", "コワーキングで働いてる。")
+                 ]),
+            make("side hustle", "a secondary job for extra income",
+                 "副業",
+                 useCases: ["本業以外の収入源を表すとき"],
+                 examples: [
+                    ("My side hustle is freelancing.", "副業はフリーランス。"),
+                    ("Start a side hustle.", "副業を始める。")
+                 ]),
+            make("layoff", "dismissal from employment",
+                 "解雇・人員削減",
+                 useCases: ["会社都合での解雇を表すとき"],
+                 examples: [
+                    ("Mass layoffs.", "大量解雇。"),
+                    ("Survived the layoff.", "解雇を免れた。")
+                 ]),
+            make("perks", "benefits provided to employees",
+                 "福利厚生・特典",
+                 useCases: ["仕事の付加価値を話すとき"],
+                 examples: [
+                    ("Great perks at this job.", "ここは福利厚生がいい。"),
+                    ("Free coffee is one of the perks.", "コーヒー無料は特典の一つ。")
+                 ]),
+            make("red tape", "excessive bureaucratic procedures",
+                 "お役所仕事・煩雑な手続き",
+                 useCases: ["手続きの煩雑さに不満を述べるとき"],
+                 examples: [
+                    ("Too much red tape.", "手続きが多すぎる。"),
+                    ("Cut through the red tape.", "面倒な手続きを省く。")
+                 ]),
+            make("networking", "building professional connections",
+                 "人脈作り",
+                 useCases: ["仕事関連の人間関係を広げるとき"],
+                 examples: [
+                    ("Networking events.", "人脈作りのイベント。"),
+                    ("Good at networking.", "人脈作りが得意。")
+                 ])
+        ]
+    }
+
+    // MARK: - 日常生活(追加 6)
+
+    private static var dailyWords15: [Word] {
+        [
+            make("takeout", "food prepared to be eaten elsewhere",
+                 "持ち帰り料理",
+                 useCases: ["店から持ち帰る食事を表すとき"],
+                 examples: [
+                    ("Let's order takeout.", "テイクアウト頼もう。"),
+                    ("Chinese takeout tonight.", "今夜は中華のテイクアウト。")
+                 ]),
+            make("hangover", "the unpleasant after-effects of drinking",
+                 "二日酔い",
+                 useCases: ["飲み過ぎの翌日の体調を表すとき"],
+                 examples: [
+                    ("I have a hangover.", "二日酔いだ。"),
+                    ("Bad hangover today.", "今日はひどい二日酔い。")
+                 ]),
+            make("jet lag", "fatigue after long-distance travel",
+                 "時差ぼけ",
+                 useCases: ["長距離フライト後の疲れを表すとき"],
+                 examples: [
+                    ("Still have jet lag.", "まだ時差ぼけ。"),
+                    ("Jet lag is killing me.", "時差ぼけがつらい。")
+                 ]),
+            make("cabin fever", "irritability from being confined indoors",
+                 "引きこもりによる退屈・イライラ",
+                 useCases: ["長く家にいて落ち着かない状態を表すとき"],
+                 examples: [
+                    ("Getting cabin fever.", "引きこもりでイライラ。"),
+                    ("Cabin fever is setting in.", "閉じ込められたストレスがきた。")
+                 ]),
+            make("spring cleaning", "thorough cleaning of a home",
+                 "大掃除",
+                 useCases: ["家を徹底的に掃除する作業を表すとき"],
+                 examples: [
+                    ("Time for spring cleaning.", "大掃除の時期。"),
+                    ("Spring cleaning the closet.", "クローゼットを大掃除。")
+                 ]),
+            make("lifesaver", "something or someone extremely helpful",
+                 "救いの神・とても助かるもの",
+                 useCases: ["困っているところを助けてくれた人や物を表すとき"],
+                 examples: [
+                    ("You're a lifesaver!", "命の恩人!"),
+                    ("This app is a lifesaver.", "このアプリ救世主。")
+                 ])
+        ]
+    }
+
+    // MARK: - 問題・トラブル(追加 5・loophole は既出)
+
+    private static var troubleWords15: [Word] {
+        [
+            make("glitch", "a minor malfunction or error",
+                 "不具合・故障",
+                 useCases: ["技術的な小トラブルを表すとき"],
+                 examples: [
+                    ("A small glitch.", "ちょっとした不具合。"),
+                    ("System glitch.", "システムの不具合。")
+                 ]),
+            make("mishap", "an unlucky accident",
+                 "ちょっとした事故・不運",
+                 useCases: ["些細なトラブルを表すとき"],
+                 examples: [
+                    ("A minor mishap.", "ちょっとしたトラブル。"),
+                    ("Despite a few mishaps.", "いくつかの不運にもかかわらず。")
+                 ]),
+            make("blind spot", "an area where vision or judgment is limited",
+                 "死角・見落とし",
+                 useCases: ["気づきにくい弱点や見えない部分を表すとき"],
+                 examples: [
+                    ("That's my blind spot.", "そこが私の死角。"),
+                    ("Check your blind spot.", "死角を確認して。")
+                 ]),
+            make("ripple effect", "a spreading consequence",
+                 "波及効果",
+                 useCases: ["一つの出来事が広く影響を及ぼすとき"],
+                 examples: [
+                    ("A ripple effect on the market.", "市場への波及効果。"),
+                    ("Created a ripple effect.", "波及効果を生んだ。")
+                 ]),
+            make("last straw", "the final cause of frustration",
+                 "我慢の限界",
+                 useCases: ["最後の決定打となった出来事を表すとき"],
+                 examples: [
+                    ("That was the last straw.", "それが限界だった。"),
+                    ("The last straw for me.", "私にとっての最後の一押し。")
+                 ])
+        ]
+    }
+
+    // MARK: - 評価・判断(追加 4・game changer, gist は既出)
+
+    private static var evaluationWords15: [Word] {
+        [
+            make("no-brainer", "a decision requiring little thought",
+                 "考えるまでもないこと",
+                 useCases: ["明らかな選択を表すとき"],
+                 examples: [
+                    ("It's a no-brainer.", "迷うまでもない。"),
+                    ("Saying yes was a no-brainer.", "イエスは即決。")
+                 ]),
+            make("trade-off", "a balance between competing factors",
+                 "一長一短・引き換え",
+                 useCases: ["何かを得るために何かを犠牲にする状況を表すとき"],
+                 examples: [
+                    ("A classic trade-off.", "典型的なトレードオフ。"),
+                    ("Time-money trade-off.", "時間と金のトレードオフ。")
+                 ]),
+            make("bottom line", "the essential point",
+                 "結論・肝心な点",
+                 useCases: ["話の核心や最終的な結論を述べるとき"],
+                 examples: [
+                    ("The bottom line is, we need more time.", "結論として、時間が必要だ。"),
+                    ("What's the bottom line?", "結論は?")
+                 ]),
+            make("ballpark", "an approximate range or figure",
+                 "おおよその数字",
+                 useCases: ["大体の見積もりを話すとき"],
+                 examples: [
+                    ("Give me a ballpark figure.", "おおよその数字をちょうだい。"),
+                    ("In the right ballpark.", "ほぼ合ってる範囲。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状況・出来事(追加 6・milestone は既出)
+
+    private static var situationWords15: [Word] {
+        [
+            make("turning point", "a moment of significant change",
+                 "転換点",
+                 useCases: ["人生や歴史の節目を表すとき"],
+                 examples: [
+                    ("A turning point in my life.", "人生の転換点。"),
+                    ("This is the turning point.", "ここが転換点。")
+                 ]),
+            make("close call", "a narrow escape from danger",
+                 "危機一髪",
+                 useCases: ["危険を辛うじて回避したとき"],
+                 examples: [
+                    ("That was a close call!", "あぶなかった!"),
+                    ("Too close a call.", "ぎりぎりすぎた。")
+                 ]),
+            make("fresh start", "a new beginning",
+                 "新たな出発",
+                 useCases: ["心機一転して新しく始めるとき"],
+                 examples: [
+                    ("Time for a fresh start.", "心機一転の時。"),
+                    ("Need a fresh start.", "新たな出発が必要。")
+                 ]),
+            make("blessing in disguise", "an apparent misfortune that turns out for the best",
+                 "災い転じて福となす",
+                 useCases: ["悪く見えた出来事が結果的に良かったとき"],
+                 examples: [
+                    ("It was a blessing in disguise.", "結果的には幸運だった。"),
+                    ("Sometimes setbacks are blessings in disguise.", "後退も実は幸運のことがある。")
+                 ]),
+            make("silver lining", "a positive aspect of a difficult situation",
+                 "不幸中の幸い",
+                 useCases: ["悪い状況の中の明るい面を見つけるとき"],
+                 examples: [
+                    ("Find the silver lining.", "明るい面を見つけて。"),
+                    ("Every cloud has a silver lining.", "どんな暗雲にも光がある(諺)。")
+                 ]),
+            make("coincidence", "a remarkable concurrence of events",
+                 "偶然",
+                 useCases: ["驚くほどタイミングよく起きたことを表すとき"],
+                 examples: [
+                    ("What a coincidence!", "なんて偶然!"),
+                    ("By coincidence.", "偶然にも。")
                  ])
         ]
     }
