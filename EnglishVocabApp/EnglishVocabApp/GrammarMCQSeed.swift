@@ -4690,6 +4690,342 @@ enum GrammarMCQSeed {
             ・順序は固定で down upside とは言わない
             ・類義: inverted(逆さの・フォーマル) / inside out(裏返しに・向きが違う)
             """
+        ),
+        GrammarQuestion(
+            id: "q493",
+            question: "We ___ ___ ___ be there at 9.",
+            choices: ["are / supposed / to", "are / suppose / to", "are / supposed / for", "supposed / to / be"],
+            correctIndex: 0,
+            translation: "「私たちは9時にそこにいることになっている」",
+            explanation: """
+            ・be supposed to + 動詞原形 = 「〜することになっている」予定・約束・ルール
+            ・「9時に着くことになってる」「上司に報告すべき」
+            ・実際にそうなるかは別問題というニュアンス
+            ・"I was supposed to call." = 〜するはずだったのに(実際はしなかった)
+            ・"You're supposed to wait here." / "We're supposed to bring food."
+            ・類義: be expected to(期待されている) / should(同義)
+            ・※ suppose は動詞、supposed は過去分詞(形容詞的用法) ── be supposed が正しい
+            """
+        ),
+        GrammarQuestion(
+            id: "q494",
+            question: "I'm slowly ___ ___ ___ the cold weather.",
+            choices: ["getting / used / to", "getting / use / to", "got / used / for", "get / used / on"],
+            correctIndex: 0,
+            translation: "「徐々に寒い気候に慣れてきている」",
+            explanation: """
+            ・get used to + 名詞/動名詞 = 「〜に慣れる(プロセス)」
+            ・be used to(慣れている・状態)と区別が重要
+            ・「徐々に寒さに慣れている」「新しい仕事に慣れてきた」
+            ・後ろは名詞または動名詞(-ing)
+            ・"I'm getting used to it." / "He got used to waking up early."
+            ・※ used to + 動詞原形(昔〜していた)とは別物
+            ・類義: be used to(状態) / adjust to(順応・フォーマル)
+            ・進行形 getting で「徐々に」のニュアンスが強まる
+            """
+        ),
+        GrammarQuestion(
+            id: "q495",
+            question: "___ ___ ___, did you finish the report?",
+            choices: ["By / the / way", "On / the / way", "In / the / way", "For / the / way"],
+            correctIndex: 0,
+            translation: "「ところで、レポートは終わった?」",
+            explanation: """
+            ・By the way = 「ところで」話題転換の決まり文句
+            ・会話の流れを変えたい時、ふと思い出したことを話したい時に
+            ・「ところで、最近どう?」「ところで、君に頼みがある」
+            ・文頭で使うのが一般的
+            ・テキストやメールでは BTW と略される
+            ・"By the way, how's your family?" / "Oh, by the way, ~"
+            ・類義: speaking of which(関連の話題転換) / incidentally(フォーマル)
+            ・※ on the way(途中で) / in the way(邪魔で) は別意味
+            """
+        ),
+        GrammarQuestion(
+            id: "q496",
+            question: "\"He won the lottery!\" \"___ ___!\"",
+            choices: ["No / way", "Not / way", "Never / way", "None / way"],
+            correctIndex: 0,
+            translation: "「『彼が宝くじに当たった!』『まさか!』」",
+            explanation: """
+            ・No way! = 「ありえない・まさか」驚きや否定の口語
+            ・信じられないニュースへの反応や、強い拒否を表す
+            ・「マジで!?」のような驚き / 「絶対嫌!」のような拒否
+            ・両方の意味があるので文脈で判断
+            ・"No way, José" = 絶対ダメ(カジュアルな決まり文句)
+            ・"No way I'm doing that!" = 絶対やらない!
+            ・類義: Are you serious?(驚き) / Not a chance(拒否)
+            ・テンションが高い時のリアクション
+            """
+        ),
+        GrammarQuestion(
+            id: "q497",
+            question: "He acts ___ ___ he knows everything.",
+            choices: ["as / if", "as / that", "like / if", "as / how"],
+            correctIndex: 0,
+            translation: "「彼は何でも知っているかのように振る舞う」",
+            explanation: """
+            ・as if + 文 = 「まるで〜のように」比喩表現
+            ・事実とは違う様子を描写
+            ・「何でも知っているかのように振る舞う」「子供のようにはしゃぐ」
+            ・口語では as though も同じ意味
+            ・"as if he were here" = まるで彼がここにいるかのように(過去形で実際は違うニュアンス)
+            ・"It looks as if it's going to rain."
+            ・類義: as though(同義) / like(カジュアル)
+            ・フォーマルな書き言葉でも頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q498",
+            question: "I'm ___ ___ hungry.",
+            choices: ["kind / of", "kind / for", "kind / a", "kinds / of"],
+            correctIndex: 0,
+            translation: "「ちょっとお腹空いた」",
+            explanation: """
+            ・kind of + 形容詞/動詞 = 「ちょっと・なんとなく」控えめな表現
+            ・sort of と同義、断定を避けるクッション語
+            ・「ちょっとお腹空いた」「なんとなく好き」
+            ・口語では kinda /ˈkaɪndə/ と発音
+            ・"I kind of like him." / "It's kind of weird."
+            ・アメリカ英語で特に頻出する万能フレーズ
+            ・強い表現を和らげる役割
+            ・類義: sort of(同義) / a bit(英国寄り)
+            """
+        ),
+        GrammarQuestion(
+            id: "q499",
+            question: "I'm ___ ___ ___ ___ something. Can I call you back?",
+            choices: ["in / the / middle / of", "on / the / middle / of", "at / the / middle / of", "by / the / middle / of"],
+            correctIndex: 0,
+            translation: "「今ちょっと立て込んでて、後でかけ直していい?」",
+            explanation: """
+            ・in the middle of + 名詞/動名詞 = 「〜の最中で・〜の真ん中で」
+            ・動作や場所の中央を表す
+            ・「何かやってる最中」「会議中」 ── 忙しさを伝えるのに頻出
+            ・"in the middle of nowhere" = 何もない田舎で(決まり文句)
+            ・"in the middle of dinner" / "in the middle of a meeting"
+            ・物理的にも: in the middle of the room(部屋の真ん中)
+            ・類義: in the midst of(フォーマル) / busy with(忙しい)
+            """
+        ),
+        GrammarQuestion(
+            id: "q500",
+            question: "I prefer tea ___ ___ ___ coffee.",
+            choices: ["as / opposed / to", "as / opposite / to", "as / opposed / for", "on / opposed / to"],
+            correctIndex: 0,
+            translation: "「コーヒーではなく紅茶の方が好きだ」",
+            explanation: """
+            ・as opposed to + 名詞 = 「〜とは対照的に・〜ではなく」2つを対比
+            ・「コーヒーではなく紅茶が好み」「夏ではなく冬が好き」
+            ・フォーマル寄りで、書き言葉や改まった会話で頻出
+            ・"Quality, as opposed to quantity."(量ではなく質)
+            ・"Active learning as opposed to passive learning."
+            ・rather than と似ているが、as opposed to の方が明確な対立構造
+            ・類義: rather than(口語寄り) / in contrast to(フォーマル)
+            ・明確な選択や違いを示す
+            """
+        ),
+        GrammarQuestion(
+            id: "q501",
+            question: "___ ___ ___ ___ you were sick!",
+            choices: ["I / had / no / idea", "I / have / no / idea", "I / had / not / idea", "I / had / any / idea"],
+            correctIndex: 0,
+            translation: "「あなたが病気だったなんて全然知らなかった!」",
+            explanation: """
+            ・I had no idea + 文 = 「全く知らなかった・気づかなかった」過去の無知強調
+            ・「病気だったなんて知らなかった」「そんなことになっていたとは」
+            ・現在形 I have no idea(全く分からない)と区別
+            ・後ろの that は通常省略
+            ・"I had no idea it was that important." / "Had no idea you were here."
+            ・相手の状況に気づけなかった時の謝罪や驚きで使う
+            ・類義: I wasn't aware(フォーマル) / I didn't realize(気づかなかった)
+            """
+        ),
+        GrammarQuestion(
+            id: "q502",
+            question: "Can you ___ ___ ___ at this email?",
+            choices: ["take / a / look", "take / the / look", "make / a / look", "get / a / look"],
+            correctIndex: 0,
+            translation: "「このメール見てくれる?」",
+            explanation: """
+            ・take a look (at + 名詞) = 「〜を見る・チェックする」口語表現
+            ・look at と同じ意味だがカジュアルで軽い印象
+            ・「ちょっと見て」「目を通して」 ── 軽く確認を頼む時に
+            ・"Take a quick look at this." / "Take a closer look."
+            ・派生: take a quick look(サッと見る) / have a look(英国寄り)
+            ・"Let me take a look." = ちょっと見せて
+            ・類義: have a look(英国寄り) / check out(カジュアル)
+            ・軽くチェックを頼む万能表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q503",
+            question: "Let's ___ ___ this weekend.",
+            choices: ["hang / out", "hung / out", "hang / for", "hang / up"],
+            correctIndex: 0,
+            translation: "「今週末一緒に過ごそう」",
+            explanation: """
+            ・hang out = 「ぶらぶらする・一緒に過ごす」口語表現
+            ・特に目的なく友人と時間を過ごすニュアンス
+            ・「週末に遊ぼう」「カフェでまったり」 ── 若者言葉として超頻出
+            ・hang out with + 人 / hang out at + 場所
+            ・"Wanna hang out tonight?" / "We hung out at the park."
+            ・※ hang up(電話を切る) とは別物
+            ・類義: spend time together(中立) / chill(まったり・カジュアル)
+            ・友達への気軽な誘いで多用
+            """
+        ),
+        GrammarQuestion(
+            id: "q504",
+            question: "Let's ___ ___ ___ after I move.",
+            choices: ["keep / in / touch", "keep / on / touch", "stay / in / touched", "keep / a / touch"],
+            correctIndex: 0,
+            translation: "「引っ越しても連絡を取り合おうね」",
+            explanation: """
+            ・keep in touch = 「連絡を取り合う」慣用句
+            ・人間関係を維持する時の決まり文句、別れの挨拶で頻出
+            ・「引っ越した後も連絡してね」「久しぶりに連絡しよう」
+            ・stay in touch も同じ意味で交換可能
+            ・get in touch(連絡を取る・新しく連絡) とは違うので注意
+            ・"Let's keep in touch!" / "Keep in touch, alright?"
+            ・類義: stay in touch(同義) / keep in contact(やや改まった)
+            ・別れ際の鉄板フレーズ
+            """
+        ),
+        GrammarQuestion(
+            id: "q505",
+            question: "Please ___ ___ ___ ___ about which one to buy.",
+            choices: ["make / up / your / mind", "make / your / mind / up", "make / up / for / mind", "Both A and B"],
+            correctIndex: 3,
+            translation: "「どっちを買うか決めてください」",
+            explanation: """
+            ・make up one's mind = 「決心する・決める」慣用句
+            ・語順: make up + 所有格 + mind / make + 所有格 + mind + up どちらも可
+            ・「どっち買うか決めて」「早く決めて」
+            ・"I can't make up my mind." = 決められない(決まり文句)
+            ・"Have you made up your mind?" / "Make your mind up!"
+            ・迷っている人に決断を促す時に
+            ・類義: decide(中立) / come to a decision(フォーマル)
+            ・両方の語順とも自然な英語
+            """
+        ),
+        GrammarQuestion(
+            id: "q506",
+            question: "I ___ ___ ___ my coworkers.",
+            choices: ["get / along / with", "get / along / for", "go / along / with", "get / along / on"],
+            correctIndex: 0,
+            translation: "「私は同僚たちとうまくやっている」",
+            explanation: """
+            ・get along with + 人 = 「〜と仲良くやる・うまくいく」
+            ・「同僚と仲がいい」「義理の母とうまくやっている」
+            ・"I don't get along with him." = 〜とうまくいかない(否定形も頻出)
+            ・"They get along well." / "How do you get along with your roommate?"
+            ・get along well with ~ = 〜と特に仲がいい(強調)
+            ・類義: be on good terms with(フォーマル) / get on with(英国寄り)
+            ・人間関係の良好さを表す
+            """
+        ),
+        GrammarQuestion(
+            id: "q507",
+            question: "I can't ___ ___ how to solve this problem.",
+            choices: ["figure / out", "figure / for", "figure / on", "figure / to"],
+            correctIndex: 0,
+            translation: "「この問題の解き方が分からない」",
+            explanation: """
+            ・figure out + 名詞/疑問詞節 = 「〜を理解する・解明する」
+            ・考えて答えを導き出すニュアンス
+            ・「解き方が分からない」「謎を解明する」「彼の意図が読めない」
+            ・"I'll figure it out." = 自分で何とかする(決まり文句)
+            ・"Let me figure this out." / "Can you figure out what this means?"
+            ・頭を使って何かを把握する時に
+            ・類義: work out(解決・似た意味) / solve(解く・中立)
+            ・figure out は思考プロセスを強調
+            """
+        ),
+        GrammarQuestion(
+            id: "q508",
+            question: "She called me ___ ___ ___ ___.",
+            choices: ["out / of / the / blue", "out / from / the / blue", "out / on / the / blue", "from / out / the / blue"],
+            correctIndex: 0,
+            translation: "「彼女が突然電話してきた」",
+            explanation: """
+            ・out of the blue = 「突然・思いがけなく」慣用句
+            ・予期せぬ出来事を表す
+            ・「突然電話してきた」「いきなり連絡が来た」
+            ・直訳「青の中から」 ── 青空から雷が落ちるイメージ
+            ・順序は固定
+            ・"He showed up out of the blue." / "Out of the blue, she quit."
+            ・類義: unexpectedly(フォーマル) / all of a sudden(口語)
+            ・ドラマチックな驚きを伝える時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q509",
+            question: "It takes a while to ___ ___ ___ ___ it.",
+            choices: ["get / the / hang / of", "get / a / hang / of", "get / the / hang / for", "catch / the / hang / of"],
+            correctIndex: 0,
+            translation: "「コツをつかむのに少し時間がかかる」",
+            explanation: """
+            ・get the hang of + 名詞/動名詞 = 「〜のコツをつかむ・〜に慣れる」口語
+            ・新しいスキルや作業に慣れる時に
+            ・「少し時間がかかるけど慣れる」「コツをつかむまで練習」
+            ・"Once you get the hang of it" = コツをつかめば(決まり文句)
+            ・"It took me a week to get the hang of it."
+            ・学習プロセスを表す便利な表現
+            ・類義: get used to(慣れる・プロセス) / master(習得・フォーマル)
+            ・the は必須(× get a hang of)
+            """
+        ),
+        GrammarQuestion(
+            id: "q510",
+            question: "I'm really ___ Japanese anime these days.",
+            choices: ["into", "on", "for", "about"],
+            correctIndex: 0,
+            translation: "「最近、日本のアニメにハマっている」",
+            explanation: """
+            ・be into + 名詞/動名詞 = 「〜に夢中・〜にハマっている」口語表現
+            ・強い興味や熱中を表す
+            ・「最近アニメにハマっている」「ジャズに夢中」
+            ・"I'm not into ~" = 〜に興味がない
+            ・"He's into you." = 彼は君に夢中(恋愛)
+            ・"I'm really into K-pop." / "She's into yoga."
+            ・趣味や好みを語る時に頻出
+            ・類義: be obsessed with(取り憑かれている・強い) / be a fan of(ファン・中立)
+            """
+        ),
+        GrammarQuestion(
+            id: "q511",
+            question: "___ ___ ___, I'll support you.",
+            choices: ["No / matter / what", "No / what / matter", "Not / matter / what", "No / matters / what"],
+            correctIndex: 0,
+            translation: "「何があろうと、あなたを支えるよ」",
+            explanation: """
+            ・No matter what = 「何があろうと・どんなことでも」強い決意や条件不問
+            ・「何があっても支える」「どんな結果でも受け入れる」
+            ・no matter how/where/when/who も同じパターン
+            ・文頭でも文末でも自然
+            ・"No matter what happens, I'm here." / "I love you no matter what."
+            ・揺るがない意志を伝える鉄板表現
+            ・類義: whatever happens / regardless of what(フォーマル)
+            ・愛情や友情を強調する時にも頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q512",
+            question: "___ ___ ___ ___ ___, I do know him.",
+            choices: ["As / a / matter / of / fact", "As / the / matter / of / fact", "In / a / matter / of / fact", "For / a / matter / of / fact"],
+            correctIndex: 0,
+            translation: "「実は、彼のことを知ってるんだ」",
+            explanation: """
+            ・As a matter of fact = 「実は・実際のところ」強調・訂正
+            ・相手の予想に反する情報を提供する時に
+            ・「実は彼を知っている」「実際は逆なんだ」
+            ・文頭で使うことが多い
+            ・"As a matter of fact, I have." / "As a matter of fact, you're right."
+            ・actually と同じ意味だが、as a matter of fact の方がやや改まった
+            ・簡単に In fact に置き換えても通じる
+            ・類義: actually(カジュアル) / in fact(中立)
+            """
         )
     ]
 }
