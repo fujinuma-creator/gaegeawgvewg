@@ -58,6 +58,7 @@ enum SeedData {
             + emotionWords13 + communicationWords13 + workWords13
             + dailyWords13 + troubleWords13 + evaluationWords13
             + casualWords13
+            + pathAndOthers14
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -9531,6 +9532,76 @@ enum SeedData {
                  examples: [
                     ("Don't get me wrong, I like him.", "誤解しないで、彼好きだよ。"),
                     ("Don't get me wrong, but ~", "誤解しないでほしいけど〜")
+                 ])
+        ]
+    }
+
+    // MARK: - 道・性質・動作の混合(追加 9)
+
+    private static var pathAndOthers14: [Word] {
+        [
+            make("simple", "easy to understand or do; plain",
+                 "簡単な・単純な",
+                 useCases: ["難しくないことを表すとき"],
+                 examples: [
+                    ("Keep it simple.", "シンプルに。"),
+                    ("That's a simple question.", "簡単な質問だ。")
+                 ]),
+            make("broken", "damaged and no longer working",
+                 "壊れた・故障した",
+                 useCases: ["物や心の状態が壊れていることを表すとき"],
+                 examples: [
+                    ("The phone is broken.", "電話が壊れてる。"),
+                    ("Broken promises.", "破られた約束。")
+                 ]),
+            make("blur", "make unclear or indistinct",
+                 "ぼかす・かすませる",
+                 useCases: ["輪郭や境界をはっきりさせなくするとき"],
+                 examples: [
+                    ("Blur the background.", "背景をぼかす。"),
+                    ("Tears blurred my vision.", "涙で視界がぼやけた。")
+                 ]),
+            make("path", "a way or track for walking",
+                 "小道・進路",
+                 useCases: ["歩く道や人生の進路を表すとき"],
+                 examples: [
+                    ("Follow the path.", "道に沿って進んで。"),
+                    ("A different path in life.", "別の人生の道。")
+                 ]),
+            make("skypath", "an elevated pedestrian walkway",
+                 "高架の歩道・スカイパス",
+                 useCases: ["建物間を結ぶ高架の通路を表すとき"],
+                 examples: [
+                    ("Use the skypath to cross.", "スカイパスで渡って。"),
+                    ("The skypath connects two buildings.", "スカイパスが二棟をつなぐ。")
+                 ]),
+            make("sidewalk", "a paved path for pedestrians beside a road",
+                 "歩道",
+                 useCases: ["車道の脇の歩く道を表すとき"],
+                 examples: [
+                    ("Walk on the sidewalk.", "歩道を歩いて。"),
+                    ("Cracks in the sidewalk.", "歩道のひび。")
+                 ]),
+            make("footpath", "a narrow path for walking",
+                 "小道・歩道",
+                 useCases: ["公園や郊外などの細い歩道を表すとき"],
+                 examples: [
+                    ("A scenic footpath.", "景色のいい小道。"),
+                    ("The footpath leads to the lake.", "小道は湖に通じる。")
+                 ]),
+            make("deserved", "earned because of one's actions",
+                 "当然の・ふさわしい",
+                 useCases: ["努力や行いに見合った結果を表すとき"],
+                 examples: [
+                    ("A well-deserved break.", "当然の休息。"),
+                    ("Deserved recognition.", "ふさわしい評価。")
+                 ]),
+            make("pave", "cover a road or path with a hard surface",
+                 "舗装する",
+                 useCases: ["道路を整備するとき、または土台を作る比喩"],
+                 examples: [
+                    ("They paved the road.", "道路を舗装した。"),
+                    ("Pave the way for change.", "変化への道を開く。")
                  ])
         ]
     }
