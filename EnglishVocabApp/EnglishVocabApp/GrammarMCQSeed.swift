@@ -6032,6 +6032,146 @@ enum GrammarMCQSeed {
             ・類義: there isn't anything(やや堅い) / nothing can be done(受動的)
             ・nothing + to不定詞/形容詞 の形が頻出
             """
+        ),
+        GrammarQuestion(
+            id: "q572",
+            question: "He's traveled ___ ___ ___ over the years.",
+            choices: ["quite / a / bit", "quite / a / few", "quite / bit", "quite / the / bit"],
+            correctIndex: 0,
+            translation: "「彼は長年にわたってかなり旅行してきた」",
+            explanation: """
+            ・quite a bit = 「かなり・結構たくさん」
+            ・不可算名詞や程度・頻度に使う
+            ・「彼は長年でかなり旅行してきた」
+            ・quite a few(かなり多くの)は可算名詞用 ── 使い分けが必要
+            ・quite a bit of + 不可算名詞 = かなりの量の〜
+            ・"quite a bit of money" / "quite a bit of time"
+            ・"I learned quite a bit." / "It cost quite a bit."
+            ・類義: quite a lot(中立) / a good deal(フォーマル)
+            ・※ quite a few(可算) vs quite a bit(不可算・程度)
+            """
+        ),
+        GrammarQuestion(
+            id: "q573",
+            question: "She listened to the same song ___ ___ ___ ___.",
+            choices: ["over / and / over / again", "over / and / again / over", "again / over / and / over", "over / over / and / again"],
+            correctIndex: 0,
+            translation: "「彼女は同じ曲を何度も繰り返し聞いた」",
+            explanation: """
+            ・over and over (again) = 「何度も何度も・繰り返し」慣用句
+            ・同じことの反復を強調
+            ・「彼女は同じ曲を何度も繰り返し聞いた」
+            ・again は省略可能だが、つけると反復のニュアンスがさらに強まる
+            ・うんざり感や執着を表すこともある
+            ・順序は固定
+            ・"He keeps making the same mistake over and over." / "I've told you over and over."
+            ・類義: repeatedly(フォーマル) / time and time again(強調)
+            ・"again and again" もほぼ同義
+            """
+        ),
+        GrammarQuestion(
+            id: "q574",
+            question: "He left ___ ___ — you just missed him.",
+            choices: ["just / now", "now / just", "just / then", "right / now"],
+            correctIndex: 0,
+            translation: "「彼はたった今出ていった、ちょうど入れ違いだったね」",
+            explanation: """
+            ・just now = 「たった今・ついさっき」ごく直前の過去
+            ・「彼はたった今出ていった、ちょうど会えなかったね」
+            ・基本的に過去形と一緒に使う(現在完了ではない点に注意)
+            ・"He called just now." / "I saw her just now."
+            ・※ right now(今すぐ・現在)とは意味が違うので混同に注意
+            ・"just now"(過去) vs "right now"(現在)
+            ・類義: a moment ago(中立) / a second ago(カジュアル)
+            ・直近の過去を伝える便利な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q575",
+            question: "I've ___ finished my homework.",
+            choices: ["already", "yet", "still", "ever"],
+            correctIndex: 0,
+            translation: "「もう宿題を終わらせた」",
+            explanation: """
+            ・already = 「すでに・もう」予想より早く完了していること
+            ・「もう宿題を終わらせた」
+            ・肯定文で使い、現在完了形と相性が良い
+            ・位置: have/has と過去分詞の間、または文末
+            ・"I've already done it." / "She's already left."
+            ・疑問文で「もう〜したの?」と驚き: "Have you finished already?"
+            ・※ yet(否定文・疑問文で「まだ・もう」) と区別
+            ・"I haven't done it yet." / "Have you done it yet?"
+            ・類義: by now(時間の経過) / as early as(強調)
+            """
+        ),
+        GrammarQuestion(
+            id: "q576",
+            question: "___ ___ ___ ___, the meeting was moved to 3 p.m.",
+            choices: ["Just / so / you / know", "Just / for / you / know", "Just / so / you / known", "So / just / you / know"],
+            correctIndex: 0,
+            translation: "「念のため言っておくと、会議は午後3時に変更された」",
+            explanation: """
+            ・Just so you know = 「念のため言っておくと・一応お伝えしておくと」口語
+            ・相手に知っておいてほしい情報を軽く伝える時の前置き
+            ・「念のため言っておくと、会議は午後3時に変更された」
+            ・少しカジュアルで、時に「言っておくけどね」と軽い主張・釘刺しのニュアンスも
+            ・"Just so you know, I'm leaving early." / "Just so you know, it's not free."
+            ・類義: for your information(中立・FYI と略す) / just to let you know(柔らかい)
+            ・会話やテキストで頻出のクッション語
+            """
+        ),
+        GrammarQuestion(
+            id: "q577",
+            question: "___ ___ ___ ___ arrive 30 minutes early.",
+            choices: ["You / are / advised / to", "You / are / advise / to", "You / are / advised / for", "You / advised / are / to"],
+            correctIndex: 0,
+            translation: "「30分早く到着することをお勧めします」",
+            explanation: """
+            ・You are advised to + 動詞原形 = 「〜することをお勧めします・〜してください」
+            ・フォーマルな表現、公式な案内・指示で使う受動態
+            ・「30分早く到着することをお勧めします」
+            ・advise(助言する)の受動態
+            ・案内文、注意書き、公式メールで頻出
+            ・命令ほど強くなく、丁寧に推奨するニュアンス
+            ・"You are advised to read the manual." / "Passengers are advised to ~"
+            ・類義: it is recommended that(フォーマル) / we suggest(柔らかい)
+            ・空港、ホテル、公的機関のアナウンスでよく聞く
+            """
+        ),
+        GrammarQuestion(
+            id: "q578",
+            question: "___ ___ what happened at the party.",
+            choices: ["Tell / me", "Say / me", "Talk / me", "Speak / me"],
+            correctIndex: 0,
+            translation: "「パーティーで何があったか教えて」",
+            explanation: """
+            ・tell + 人 + 物事 = 「人に〜を伝える・教える」
+            ・tell は必ず「誰に」言うかの目的語が必要
+            ・「パーティーで何があったか教えて」
+            ・※ say は人を直接目的語に取れない(× say me)
+            ・"Tell me about it." / "Tell me if you need help."
+            ・"tell me about ~" / "tell me if ~" / "tell me why ~"
+            ・類義: let me know(カジュアル) / inform me(フォーマル)
+            ・※ talk to me / speak to me は「に話す・話しかける」(別の用法)
+            ・"say to me"(私に言う) は使えるが、命令形では tell が自然
+            """
+        ),
+        GrammarQuestion(
+            id: "q579",
+            question: "This medicine ___ ___ ___ be taken after meals.",
+            choices: ["is / meant / to", "is / mean / to", "is / meaning / to", "means / to / be"],
+            correctIndex: 0,
+            translation: "「この薬は食後に飲むことになっている」",
+            explanation: """
+            ・be meant to + 動詞原形 = 「〜することになっている・〜するはずだ」
+            ・本来の目的・意図・ルールを表す
+            ・「この薬は食後に飲むことになっている」
+            ・be supposed to とほぼ同じ意味だが、be meant to は「そういう目的で作られた・意図された」ニュアンス
+            ・運命的に「〜する運命だ」の意味でも使う
+            ・"We were meant to be." = 私たちは結ばれる運命だった(恋愛)
+            ・"This isn't meant to hurt you." / "What's it meant to do?"
+            ・類義: be supposed to(同義) / be intended to(フォーマル)
+            """
         )
     ]
 }
