@@ -5838,6 +5838,200 @@ enum GrammarMCQSeed {
             ・類義: several(中立) / quite a few(口語)
             ・※ amount は不可算名詞用(× a amount of)
             """
+        ),
+        GrammarQuestion(
+            id: "q561",
+            question: "___ ___ ___ people showed up at the event.",
+            choices: ["Quite / a / few", "Quite / a / little", "Quite / few", "Quite / the / few"],
+            correctIndex: 0,
+            translation: "「かなり多くの人がイベントに来た」",
+            explanation: """
+            ・quite a few + 複数名詞 = 「かなり多くの・結構な数の」
+            ・few(少ない)が入っているのに「多い」という意味になる紛らわしい表現
+            ・a few(少しの)に quite がつくと逆転して「結構多い」
+            ・「かなり多くの人がイベントに来た」
+            ・可算名詞に使う、不可算名詞には quite a bit(かなりの量)
+            ・"Quite a few of my friends came." / "Quite a few mistakes."
+            ・類義: a good number of(中立) / a lot of(カジュアル)
+            ・※ few(否定的・少ない) vs a few(肯定的・少しは) vs quite a few(多い)
+            """
+        ),
+        GrammarQuestion(
+            id: "q562",
+            question: "___ ___ rain later, so take an umbrella.",
+            choices: ["It's / gonna", "It / gonna", "Its / gonna", "It's / gunna"],
+            correctIndex: 0,
+            translation: "「後で雨が降りそうだから、傘を持って行って」",
+            explanation: """
+            ・it's gonna + 動詞原形 = it is going to の口語短縮形「〜しそうだ・〜するだろう」
+            ・未来の予測を表す
+            ・「後で雨が降りそうだから傘を持って」
+            ・gonna は会話やカジュアルな文章で頻出
+            ・フォーマルな文書では going to と書く
+            ・発音は「イッツガナ」、聞き取りでも重要
+            ・"It's gonna be okay." / "It's gonna take a while."
+            ・類義: it's going to(正式表記) / it'll(will の短縮)
+            ・※ Its(所有格) と It's(it is) の混同に注意
+            """
+        ),
+        GrammarQuestion(
+            id: "q563",
+            question: "She ___ ___ ___ ___ solve complex problems.",
+            choices: ["has / the / ability / to", "has / the / ability / for", "has / a / ability / to", "have / the / ability / to"],
+            correctIndex: 0,
+            translation: "「彼女は複雑な問題を解決する能力がある」",
+            explanation: """
+            ・have the ability to + 動詞原形 = 「〜する能力がある」フォーマル寄り
+            ・潜在的な能力・才能を表す
+            ・can や be able to よりも、能力そのものを名詞として強調
+            ・後ろは to + 動詞原形
+            ・"He has the ability to lead." / "Children have the ability to learn quickly."
+            ・ability は数えられる名詞だが、特定の能力を指すので the
+            ・類義: be capable of doing(of + -ing) / can(シンプル)
+            ・※ a ability は誤り(母音前なので an ability)、ここでは the
+            """
+        ),
+        GrammarQuestion(
+            id: "q564",
+            question: "The new technology ___ ___ huge changes in the industry.",
+            choices: ["brought / about", "brought / up", "brought / on", "brought / out"],
+            correctIndex: 0,
+            translation: "「新技術が業界に大きな変化をもたらした」",
+            explanation: """
+            ・bring about + 名詞 = 「〜を引き起こす・〜をもたらす」句動詞
+            ・変化や結果を生じさせるニュアンス
+            ・「新技術が業界に大きな変化をもたらした」
+            ・"bring about change" は鉄板の組合せ
+            ・"What brought about this change?" / "The reform brought about progress."
+            ・区別: bring up(話題/育てる) / bring on(招く・否定的) / bring out(引き出す・出版)
+            ・類義: cause(シンプル) / lead to(中立)
+            ・bring の不規則変化: bring-brought-brought
+            """
+        ),
+        GrammarQuestion(
+            id: "q565",
+            question: "I'm ___ ___ agree with you on this.",
+            choices: ["inclined / to", "inclined / for", "inclining / to", "inclined / with"],
+            correctIndex: 0,
+            translation: "「この件については、君に賛成したい気がする」",
+            explanation: """
+            ・be inclined to + 動詞原形 = 「〜する傾向がある・〜したい気がする」
+            ・気持ちや考えがある方向に傾いているニュアンス
+            ・「この件では君に賛成したい気がする」
+            ・tend to より個人の意向・気持ちを表すことが多い
+            ・控えめに意見や傾向を述べる時に使うフォーマル寄りの表現
+            ・"I'm inclined to think so." / "She was inclined to agree."
+            ・類義: tend to(一般的傾向) / be likely to(確率)
+            ・"feel inclined to" もほぼ同義
+            """
+        ),
+        GrammarQuestion(
+            id: "q566",
+            question: "___ ___ ___ ___, there lived a king.",
+            choices: ["Once / upon / a / time", "Once / on / a / time", "Once / upon / the / time", "Once / at / a / time"],
+            correctIndex: 0,
+            translation: "「昔々、ある王様が住んでいました」",
+            explanation: """
+            ・Once upon a time = 「昔々」おとぎ話の決まり文句
+            ・物語の冒頭で使う定型表現
+            ・「昔々、ある王様が住んでいました」
+            ・童話、寓話の始まりとして英語圏では誰もが知るフレーズ
+            ・比喩的に「昔は〜だった」と回想する時にも使える
+            ・順序は固定で変えられない
+            ・"Once upon a time, in a faraway land, ~"
+            ・類義: long, long ago(物語調) / back in the day(カジュアルな回想)
+            ・※ once upon は「ある時に」というやや古風な前置詞句
+            """
+        ),
+        GrammarQuestion(
+            id: "q567",
+            question: "Luck ___ ___ ___ ___ his success.",
+            choices: ["played / a / part / in", "played / a / part / for", "played / the / part / in", "play / a / part / in"],
+            correctIndex: 0,
+            translation: "「彼の成功には運も一役買った」",
+            explanation: """
+            ・play a part in + 名詞 = 「〜に一役買う・〜に関与する」
+            ・何かの要因・役割の一つになるニュアンス
+            ・前置詞は in
+            ・「運も彼の成功に一役買った」
+            ・play a role in も同じ意味で交換可能
+            ・"play a big/important part in" のように形容詞を加えられる
+            ・"Education plays an important part in life."
+            ・類義: play a role in(同義) / contribute to(貢献)
+            ・※ "play the part of ~" は「〜の役を演じる」(劇場用語)
+            """
+        ),
+        GrammarQuestion(
+            id: "q568",
+            question: "Managers should be ___ ___ their team's performance.",
+            choices: ["accountable / for", "accountable / to", "accountable / of", "accountable / with"],
+            correctIndex: 0,
+            translation: "「マネージャーはチームの業績に責任を負うべきだ」",
+            explanation: """
+            ・be accountable for + 名詞 = 「〜に対して説明責任がある・〜の責任を負う」
+            ・結果に対して責任を取り、説明する義務があるというフォーマルなニュアンス
+            ・「管理職はチームの成績に責任を負うべき」
+            ・be responsible for と似ているが、accountable は「説明・釈明する義務」がより強い
+            ・ビジネスで頻出
+            ・"Hold someone accountable for ~" = 〜の責任を取らせる
+            ・"He's accountable to the board." = 取締役会に責任を負う(to + 人)
+            ・類義: be responsible for(一般的) / be answerable for(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q569",
+            question: "\"I don't like horror movies.\" \"___ ___ ___.\"",
+            choices: ["Neither / do / I", "Either / do / I", "Neither / I / do", "So / do / I"],
+            correctIndex: 0,
+            translation: "「『ホラー映画は好きじゃない』『私も』」",
+            explanation: """
+            ・Neither do I = 「私も〜ない」否定文への同意
+            ・相手の否定的な発言に「自分も同じ」と返す時に
+            ・neither の後は倒置(助動詞+主語)
+            ・元の文の動詞に合わせる:
+            ・"I'm not tired." → "Neither am I."
+            ・"I can't swim." → "Neither can I."
+            ・"I didn't go." → "Neither did I."
+            ・口語では Me neither. も同義
+            ・類義: Me neither.(カジュアル・口語) / Nor do I.(フォーマル)
+            ・※ So do I は肯定文への同意で意味が逆
+            """
+        ),
+        GrammarQuestion(
+            id: "q570",
+            question: "\"I'm tired.\" \"___ ___ ___.\"",
+            choices: ["So / am / I", "So / I / am", "So / do / I", "Neither / am / I"],
+            correctIndex: 0,
+            translation: "「『疲れた』『私も』」",
+            explanation: """
+            ・So am I = 「私も〜だ」肯定文への同意
+            ・相手の肯定的な発言に「自分も同じ」と返す
+            ・so の後は倒置(助動詞/be動詞+主語)
+            ・元の文に合わせる:
+            ・"I'm tired." → "So am I."(be動詞)
+            ・"I like it." → "So do I."(一般動詞)
+            ・"I can swim." → "So can I."(can)
+            ・※ "So I am."(語順が逆) = 「本当にそうだね」(別意味)
+            ・類義: Me too.(カジュアル) / I am too.(中立)
+            """
+        ),
+        GrammarQuestion(
+            id: "q571",
+            question: "___ ___ we can do about it now.",
+            choices: ["There's / nothing", "There's / not / anything", "It's / nothing", "There / nothing"],
+            correctIndex: 0,
+            translation: "「今それについてできることは何もない」",
+            explanation: """
+            ・There's nothing (+ that) + 主語 + 動詞 = 「〜できることは何もない」
+            ・選択肢や可能性が全くないことを表す
+            ・「今それについてできることは何もない」
+            ・nothing の後の that は省略可能
+            ・"There's nothing to do." = やることがない
+            ・"There's nothing wrong." = 何も問題ない
+            ・"There's nothing I can say." / "There's nothing more to add."
+            ・類義: there isn't anything(やや堅い) / nothing can be done(受動的)
+            ・nothing + to不定詞/形容詞 の形が頻出
+            """
         )
     ]
 }
