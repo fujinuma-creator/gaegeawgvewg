@@ -55,6 +55,9 @@ enum SeedData {
             + situationNouns12 + reactionVerbs12 + changeVerbs12
             + enjoyVerbs12 + destructionVerbs12 + supportVerbs12
             + feelingPhrases12 + sayingPhrases12 + conversationFlow12
+            + emotionWords13 + communicationWords13 + workWords13
+            + dailyWords13 + troubleWords13 + evaluationWords13
+            + casualWords13
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -9199,6 +9202,335 @@ enum SeedData {
                  examples: [
                     ("Off the top of my head, three.", "パッと3つ思いつく。"),
                     ("Off the top of my head, no idea.", "パッとは分からない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 感情・心理(追加 7・guilt, relief, regret は既出)
+
+    private static var emotionWords13: [Word] {
+        [
+            make("mood", "a state of mind or feeling",
+                 "気分",
+                 useCases: ["今の気持ちを表すとき"],
+                 examples: [
+                    ("I'm in a good mood.", "気分いいよ。"),
+                    ("Not in the mood today.", "今日はそんな気分じゃない。")
+                 ]),
+            make("vibe", "a feeling or atmosphere",
+                 "雰囲気・空気感",
+                 useCases: ["場や人の雰囲気を表すとき"],
+                 examples: [
+                    ("Good vibes only.", "良い雰囲気だけで。"),
+                    ("I get weird vibes from him.", "彼から変な空気を感じる。")
+                 ]),
+            make("gut feeling", "an instinctive belief",
+                 "直感・第六感",
+                 useCases: ["理屈ではなく直感で判断するとき"],
+                 examples: [
+                    ("My gut feeling says no.", "直感的にダメ。"),
+                    ("Trust your gut feeling.", "直感を信じて。")
+                 ]),
+            make("crush", "an intense but brief infatuation",
+                 "夢中・片思い",
+                 useCases: ["誰かに一時的に夢中になっているとき"],
+                 examples: [
+                    ("I have a crush on her.", "彼女に夢中なんだ。"),
+                    ("It's just a crush.", "ただの片思い。")
+                 ]),
+            make("burnout", "exhaustion from prolonged stress",
+                 "燃え尽き症候群",
+                 useCases: ["仕事や勉強で疲弊しきった状態を表すとき"],
+                 examples: [
+                    ("I'm close to burnout.", "燃え尽きそう。"),
+                    ("Burnout is real.", "燃え尽きは本当にある。")
+                 ]),
+            make("baggage", "emotional burdens from the past",
+                 "心の重荷・過去の傷",
+                 useCases: ["過去のトラウマや感情的負担を表すとき"],
+                 examples: [
+                    ("He has a lot of baggage.", "彼は心の重荷が多い。"),
+                    ("Emotional baggage.", "心の傷。")
+                 ]),
+            make("closure", "a sense of resolution",
+                 "気持ちの区切り",
+                 useCases: ["終わったことに対する心の整理を表すとき"],
+                 examples: [
+                    ("I need closure.", "気持ちの区切りが欲しい。"),
+                    ("She found closure.", "彼女は区切りをつけた。")
+                 ])
+        ]
+    }
+
+    // MARK: - 会話・人間関係(追加 6・argument, drama, gossip(about), a heads-up は既出)
+
+    private static var communicationWords13: [Word] {
+        [
+            make("small talk", "polite casual conversation",
+                 "世間話",
+                 useCases: ["挨拶程度の軽い会話を表すとき"],
+                 examples: [
+                    ("I hate small talk.", "世間話が苦手。"),
+                    ("Just making small talk.", "世間話してるだけ。")
+                 ]),
+            make("favor", "a kind act done for someone",
+                 "頼みごと・親切",
+                 useCases: ["人に何かをお願いするとき"],
+                 examples: [
+                    ("Can I ask a favor?", "お願いしていい?"),
+                    ("Do me a favor.", "頼みごと聞いて。")
+                 ]),
+            make("excuse", "an explanation for a fault",
+                 "言い訳・口実",
+                 useCases: ["失敗や遅刻の理由を述べるとき"],
+                 examples: [
+                    ("No more excuses.", "もう言い訳しないで。"),
+                    ("That's a lame excuse.", "ひどい言い訳。")
+                 ]),
+            make("apology", "an expression of regret",
+                 "謝罪",
+                 useCases: ["謝罪の言葉や行為を表すとき"],
+                 examples: [
+                    ("I owe you an apology.", "謝らないと。"),
+                    ("Accept my apology.", "私の謝罪を受け入れて。")
+                 ]),
+            make("compliment", "an expression of praise",
+                 "褒め言葉",
+                 useCases: ["相手を褒めるとき"],
+                 examples: [
+                    ("Thanks for the compliment.", "褒めてくれてありがとう。"),
+                    ("Take it as a compliment.", "褒め言葉として受け取って。")
+                 ]),
+            make("misunderstanding", "a failure to understand correctly",
+                 "誤解",
+                 useCases: ["話が食い違ったとき"],
+                 examples: [
+                    ("It was a misunderstanding.", "誤解だった。"),
+                    ("Clear up the misunderstanding.", "誤解を解こう。")
+                 ])
+        ]
+    }
+
+    // MARK: - 仕事・お金(追加 7・deadline, shift, overtime は既出)
+
+    private static var workWords13: [Word] {
+        [
+            make("raise", "an increase in salary",
+                 "昇給",
+                 useCases: ["給料アップを話題にするとき"],
+                 examples: [
+                    ("I got a raise!", "昇給した!"),
+                    ("Asking for a raise.", "昇給を頼む。")
+                 ]),
+            make("paycheck", "a check for an employee's wages",
+                 "給料・給料の小切手",
+                 useCases: ["給料日や手取りの話をするとき"],
+                 examples: [
+                    ("Live paycheck to paycheck.", "ギリギリの生活。"),
+                    ("Got my paycheck today.", "今日給料日だった。")
+                 ]),
+            make("bonus", "an extra payment or perk",
+                 "ボーナス・特典",
+                 useCases: ["臨時収入や特典について話すとき"],
+                 examples: [
+                    ("Year-end bonus.", "年末ボーナス。"),
+                    ("That's a nice bonus.", "それは嬉しい特典。")
+                 ]),
+            make("interview", "a formal meeting for evaluation",
+                 "面接",
+                 useCases: ["仕事や入学の面接について話すとき"],
+                 examples: [
+                    ("Job interview tomorrow.", "明日面接。"),
+                    ("Nail the interview.", "面接決めて。")
+                 ]),
+            make("resume", "a summary of one's work history",
+                 "履歴書",
+                 useCases: ["就職活動の書類について話すとき"],
+                 examples: [
+                    ("Send your resume.", "履歴書を送って。"),
+                    ("Update my resume.", "履歴書を更新する。")
+                 ]),
+            make("promotion", "advancement in rank",
+                 "昇進",
+                 useCases: ["仕事上の出世について話すとき"],
+                 examples: [
+                    ("Got a promotion.", "昇進した。"),
+                    ("In line for promotion.", "昇進候補。")
+                 ]),
+            make("budget", "an amount of money planned",
+                 "予算",
+                 useCases: ["お金の使い道を計画するとき"],
+                 examples: [
+                    ("On a tight budget.", "予算がきつい。"),
+                    ("Stay within budget.", "予算内に収める。")
+                 ])
+        ]
+    }
+
+    // MARK: - 日常生活(追加 4・errand, chore, routine, leftovers, commute, appointment は既出)
+
+    private static var dailyWords13: [Word] {
+        [
+            make("checkup", "a routine medical examination",
+                 "健康診断",
+                 useCases: ["定期検診について話すとき"],
+                 examples: [
+                    ("Annual checkup.", "年に一度の検診。"),
+                    ("Time for a checkup.", "検診の時期だ。")
+                 ]),
+            make("groceries", "food and household supplies",
+                 "食料品",
+                 useCases: ["スーパーで買う日用品を表すとき"],
+                 examples: [
+                    ("Going to buy groceries.", "食料品買いに行く。"),
+                    ("Carry the groceries.", "食料品運んで。")
+                 ]),
+            make("rent", "regular payment for a place to live",
+                 "家賃",
+                 useCases: ["家賃の話をするとき"],
+                 examples: [
+                    ("Pay the rent.", "家賃を払う。"),
+                    ("Rent is going up.", "家賃が上がる。")
+                 ]),
+            make("utilities", "essential household services",
+                 "光熱費・公共料金",
+                 useCases: ["電気・ガス・水道代を話題にするとき"],
+                 examples: [
+                    ("Utilities are expensive.", "光熱費が高い。"),
+                    ("Rent includes utilities.", "家賃に光熱費込み。")
+                 ])
+        ]
+    }
+
+    // MARK: - 問題・トラブル(追加 6・mess, hassle, nightmare, emergency は既出)
+
+    private static var troubleWords13: [Word] {
+        [
+            make("issue", "a problem or matter of concern",
+                 "問題・課題",
+                 useCases: ["問題点を提起するとき"],
+                 examples: [
+                    ("There's an issue with the app.", "アプリに問題がある。"),
+                    ("That's a big issue.", "それは大きな問題。")
+                 ]),
+            make("trouble", "difficulty or problems",
+                 "面倒・トラブル",
+                 useCases: ["厄介な状況を表すとき"],
+                 examples: [
+                    ("In big trouble.", "大ピンチ。"),
+                    ("Save you the trouble.", "面倒を省くため。")
+                 ]),
+            make("disaster", "a complete failure or calamity",
+                 "大失敗・大惨事",
+                 useCases: ["最悪の結果や災難について話すとき"],
+                 examples: [
+                    ("It was a total disaster.", "完全な大失敗。"),
+                    ("Disaster waiting to happen.", "災難が起きそう。")
+                 ]),
+            make("setback", "a reversal or check in progress",
+                 "後退・つまずき",
+                 useCases: ["計画や進捗が妨げられたとき"],
+                 examples: [
+                    ("A minor setback.", "ちょっとした後退。"),
+                    ("Recover from a setback.", "つまずきから立ち直る。")
+                 ]),
+            make("red flag", "a warning sign",
+                 "危険信号",
+                 useCases: ["問題の兆候や警戒すべきサインを表すとき"],
+                 examples: [
+                    ("That's a red flag.", "それは危険信号。"),
+                    ("Red flags everywhere.", "あちこちに危険信号。")
+                 ]),
+            make("dealbreaker", "an issue that ends a negotiation or relationship",
+                 "致命的な条件・決定打",
+                 useCases: ["交渉や関係を終わらせる決定的な要素を話すとき"],
+                 examples: [
+                    ("That's a dealbreaker.", "それは決定打。"),
+                    ("Lateness is a dealbreaker.", "遅刻は致命的。")
+                 ])
+        ]
+    }
+
+    // MARK: - 評価・判断(追加 6・point, priority は既出)
+
+    private static var evaluationWords13: [Word] {
+        [
+            make("deal", "a transaction or bargain",
+                 "取引・お買い得",
+                 useCases: ["商談やお得な買い物について話すとき"],
+                 examples: [
+                    ("What a great deal!", "すごくお得!"),
+                    ("It's a deal.", "決まり。")
+                 ]),
+            make("perk", "an extra benefit or advantage",
+                 "特典・福利厚生",
+                 useCases: ["仕事や会員サービスの特典を話すとき"],
+                 examples: [
+                    ("Job perks are great.", "仕事の特典がいい。"),
+                    ("That's a nice perk.", "それは嬉しい特典。")
+                 ]),
+            make("downside", "a disadvantage or drawback",
+                 "欠点・マイナス面",
+                 useCases: ["物事の悪い面を述べるとき"],
+                 examples: [
+                    ("The only downside is the price.", "唯一の欠点は値段。"),
+                    ("Every job has downsides.", "どんな仕事にも欠点がある。")
+                 ]),
+            make("upside", "an advantage or positive aspect",
+                 "利点・プラス面",
+                 useCases: ["物事の良い面を述べるとき"],
+                 examples: [
+                    ("The upside is the flexibility.", "利点は柔軟さ。"),
+                    ("Look on the upside.", "良い面を見て。")
+                 ]),
+            make("option", "a choice or alternative",
+                 "選択肢",
+                 useCases: ["可能な選択を話すとき"],
+                 examples: [
+                    ("Weigh your options.", "選択肢を検討して。"),
+                    ("Not an option.", "選択肢にない。")
+                 ]),
+            make("effort", "vigorous attempt or work",
+                 "努力",
+                 useCases: ["頑張りや手間について話すとき"],
+                 examples: [
+                    ("Put in the effort.", "努力する。"),
+                    ("Worth the effort.", "努力する価値あり。")
+                 ])
+        ]
+    }
+
+    // MARK: - 口語のリアクション・つなぎ(追加 4・no way, my bad, fair enough, long story short, to be fair, for what it's worth は既出)
+
+    private static var casualWords13: [Word] {
+        [
+            make("good point", "an insightful observation",
+                 "いい指摘",
+                 useCases: ["相手の意見に納得して同意するとき"],
+                 examples: [
+                    ("Good point.", "いい指摘。"),
+                    ("That's a good point.", "それいい視点だ。")
+                 ]),
+            make("no offense", "without intending to insult",
+                 "悪気はないけど",
+                 useCases: ["失礼な発言の前に断りを入れるとき"],
+                 examples: [
+                    ("No offense, but ~", "悪気はないけど〜"),
+                    ("None taken.", "気にしてないよ。")
+                 ]),
+            make("just saying", "merely stating an opinion",
+                 "言ってみただけ",
+                 useCases: ["主張をやわらげる時の捨て台詞"],
+                 examples: [
+                    ("Just saying.", "言ってみただけ。"),
+                    ("I'm just saying, ~", "ただ言いたいのは〜")
+                 ]),
+            make("don't get me wrong", "don't misunderstand",
+                 "誤解しないで",
+                 useCases: ["否定的なことを言う前に弁解するとき"],
+                 examples: [
+                    ("Don't get me wrong, I like him.", "誤解しないで、彼好きだよ。"),
+                    ("Don't get me wrong, but ~", "誤解しないでほしいけど〜")
                  ])
         ]
     }
