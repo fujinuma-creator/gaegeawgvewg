@@ -5364,6 +5364,224 @@ enum GrammarMCQSeed {
             ・類義: be grateful for(フォーマル) / thanks for(カジュアル)
             ・状態動詞なので進行形にしない(× I'm appreciating)
             """
+        ),
+        GrammarQuestion(
+            id: "q533",
+            question: "She baked the cake ___ ___.",
+            choices: ["from / scratch", "from / start", "by / scratch", "on / scratch"],
+            correctIndex: 0,
+            translation: "「彼女はケーキを一から焼いた」",
+            explanation: """
+            ・from scratch = 「ゼロから・一から」慣用句
+            ・何も用意せず、最初の段階から作り上げるニュアンス
+            ・「ケーキを一から焼いた」「ビジネスをゼロから立ち上げた」
+            ・既製品やテンプレートを使わない手作り感・努力を強調
+            ・"Build it from scratch." / "Start from scratch."
+            ・料理、創作、起業の話で頻出
+            ・類義: from the ground up(ビジネス寄り) / from square one(振り出しから)
+            ・洗練された表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q534",
+            question: "___ ___ ___, the project failed.",
+            choices: ["In / a / nutshell", "In / the / nutshell", "On / a / nutshell", "By / a / nutshell"],
+            correctIndex: 0,
+            translation: "「要するに、プロジェクトは失敗した」",
+            explanation: """
+            ・in a nutshell = 「要するに・手短に言えば」慣用句
+            ・複雑な話を一言でまとめる時に
+            ・直訳「クルミの殻の中に」 — 小さくまとめるイメージ
+            ・長い説明の後や、結論を急ぐ時に便利
+            ・"In a nutshell, it's about love." / "To put it in a nutshell, ~"
+            ・プレゼンや会話で知的な印象
+            ・類義: to sum up(フォーマル) / long story short(カジュアル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q535",
+            question: "Losing that job was ___ ___ ___ ___.",
+            choices: ["a / blessing / in / disguise", "a / blessing / in / disguised", "the / blessing / in / disguise", "a / blessing / on / disguise"],
+            correctIndex: 0,
+            translation: "「あの仕事を失ったのは、結果的に幸運だった」",
+            explanation: """
+            ・a blessing in disguise = 「不幸に見えて実は幸運・災い転じて福となす」
+            ・最初は悪く見えたが、結果的に良かった出来事
+            ・「あの失業は実は幸運だった」
+            ・人生の転機を前向きに捉える洗練された表現
+            ・"It was a blessing in disguise." / "Turned out to be a blessing in disguise."
+            ・慰めや振り返りの場面で頻出
+            ・類義: silver lining(不幸中の幸い) / turned out for the best(結果的に良かった)
+            ・disguise = 変装・偽装、in disguise = 変装した姿で
+            """
+        ),
+        GrammarQuestion(
+            id: "q536",
+            question: "Let's make sure we're ___ ___ ___ ___.",
+            choices: ["on / the / same / page", "in / the / same / page", "at / the / same / page", "on / a / same / page"],
+            correctIndex: 0,
+            translation: "「認識を合わせておこう」",
+            explanation: """
+            ・on the same page = 「認識が一致している・同じ理解でいる」
+            ・チームや相手と考えや情報を共有している状態
+            ・「認識を合わせよう」「みんな同じ理解でいる?」
+            ・ビジネス会議で超頻出
+            ・直訳「同じページにいる」 — 本を一緒に読むイメージ
+            ・"Are we all on the same page?" / "Get on the same page."
+            ・意思疎通を確認する洗練された表現
+            ・類義: in agreement(フォーマル) / on the same wavelength(波長が合う)
+            """
+        ),
+        GrammarQuestion(
+            id: "q537",
+            question: "Let's ___ ___ ___ ___ — what do you want?",
+            choices: ["cut / to / the / chase", "cut / for / the / chase", "get / to / the / chase", "cut / to / a / chase"],
+            correctIndex: 0,
+            translation: "「単刀直入に言って — 何が欲しいの?」",
+            explanation: """
+            ・cut to the chase = 「本題に入る・核心を突く」慣用句
+            ・前置きを省いて重要なことを話すニュアンス
+            ・「本題に入ろう」「単刀直入に言うと」
+            ・映画の「追跡シーン(chase)にカットする」が語源 — 退屈な部分を飛ばす
+            ・"Let me cut to the chase." / "Cutting to the chase, ~"
+            ・ビジネスや忙しい場面で効率を求める洗練された表現
+            ・類義: get to the point(中立) / get down to business(本題に入る)
+            """
+        ),
+        GrammarQuestion(
+            id: "q538",
+            question: "___ ___ ___ is, we need more time.",
+            choices: ["The / bottom / line", "A / bottom / line", "The / bottom / point", "On / bottom / line"],
+            correctIndex: 0,
+            translation: "「結局のところ、もっと時間が必要だ」",
+            explanation: """
+            ・the bottom line = 「結論・要点・肝心なこと」
+            ・最も重要な事実や結果を表す
+            ・「結局のところ、もっと時間が必要だ」
+            ・会計用語(決算書の最終行)が語源、ビジネスで超頻出
+            ・"The bottom line is (that) ~" の形で使う
+            ・"The bottom line is we can't afford it." / "What's the bottom line?"
+            ・議論を締めくくり、核心を示す洗練された表現
+            ・類義: the key point(中立) / what it comes down to(つまるところ)
+            """
+        ),
+        GrammarQuestion(
+            id: "q539",
+            question: "I'm still ___ ___ ___ about which car to buy.",
+            choices: ["on / the / fence", "in / the / fence", "at / the / fence", "on / a / fence"],
+            correctIndex: 0,
+            translation: "「どの車を買うか、まだ迷っている」",
+            explanation: """
+            ・on the fence = 「決めかねている・どっちつかず」
+            ・2つの選択肢の間で迷っている状態
+            ・「どの車を買うかまだ迷っている」
+            ・直訳「フェンスの上に座る」 — どちらの側にも降りられない優柔不断なイメージ
+            ・"He's on the fence about it." / "Don't sit on the fence."
+            ・決断を保留している状況を表す洗練された表現
+            ・類義: undecided(フォーマル) / torn between(〜の間で引き裂かれる)
+            """
+        ),
+        GrammarQuestion(
+            id: "q540",
+            question: "You ___ ___ ___ ___ ___ ___ with that comment.",
+            choices: ["hit / the / nail / on / the / head", "hit / the / nail / on / a / head", "hit / a / nail / on / the / head", "get / the / nail / on / the / head"],
+            correctIndex: 0,
+            translation: "「そのコメントは核心を突いていた」",
+            explanation: """
+            ・hit the nail on the head = 「核心を突く・的を射る」
+            ・まさにその通りのことを言い当てるニュアンス
+            ・「そのコメントはまさに的確だった」
+            ・釘を正確に打つイメージから
+            ・"You hit the nail on the head!" / "That hits the nail on the head."
+            ・相手の発言や分析を「完璧に正しい」と称賛
+            ・類義: be spot on(カジュアル) / be exactly right(中立)
+            ・洗練された褒め言葉
+            """
+        ),
+        GrammarQuestion(
+            id: "q541",
+            question: "I'm feeling a bit ___ ___ ___ today.",
+            choices: ["under / the / weather", "under / a / weather", "below / the / weather", "in / the / weather"],
+            correctIndex: 0,
+            translation: "「今日はちょっと体調がすぐれない」",
+            explanation: """
+            ・under the weather = 「体調が悪い・気分がすぐれない」
+            ・軽い不調を婉曲的に伝える表現
+            ・「今日はちょっと体調が悪い」
+            ・sick(病気)と言うほどではないが元気がない時に
+            ・"I'm feeling under the weather." / "She's a bit under the weather."
+            ・直接的な表現を避ける上品なニュアンス
+            ・仕事を休む時や、誘いを断る時に便利
+            ・類義: not feeling well(中立) / a bit off(カジュアル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q542",
+            question: "The test was ___ ___ ___ ___.",
+            choices: ["a / piece / of / cake", "a / piece / for / cake", "the / piece / of / cake", "a / slice / of / cake"],
+            correctIndex: 0,
+            translation: "「テストは朝飯前だった」",
+            explanation: """
+            ・a piece of cake = 「とても簡単・朝飯前」
+            ・労せずできる、楽勝なこと
+            ・「テストは簡単だった」
+            ・ケーキを一切れ食べるくらい簡単、というイメージ
+            ・"It was a piece of cake!" / "This is a piece of cake."
+            ・easy(簡単)よりカジュアルで楽しい響き
+            ・難しいと思われたことが意外に簡単だった時に
+            ・類義: a breeze(カジュアル) / child's play(やや古風)
+            """
+        ),
+        GrammarQuestion(
+            id: "q543",
+            question: "He ___ ___ ___ right before the wedding.",
+            choices: ["got / cold / feet", "get / cold / feet", "got / cold / foot", "had / warm / feet"],
+            correctIndex: 0,
+            translation: "「彼は結婚式の直前に怖気づいた」",
+            explanation: """
+            ・get cold feet = 「怖気づく・土壇場でためらう」
+            ・重要な決断や行動の直前に不安になるニュアンス
+            ・「結婚式直前に怖気づいた」「プレゼン前にビビった」
+            ・足が冷たくなる = 動けなくなるイメージ
+            ・"Don't get cold feet now!" / "He had cold feet about the deal."
+            ・複数形 feet が固定(× cold foot)
+            ・緊張や恐怖で決意が揺らぐ状況
+            ・類義: get nervous(中立) / chicken out(ビビってやめる・カジュアル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q544",
+            question: "You need to ___ ___ ___ ___ to understand his real message.",
+            choices: ["read / between / the / lines", "read / among / the / lines", "read / in / the / lines", "read / between / a / lines"],
+            correctIndex: 0,
+            translation: "「彼の本当のメッセージを理解するには行間を読む必要がある」",
+            explanation: """
+            ・read between the lines = 「行間を読む・言外の意味を察する」
+            ・直接書かれていない・言われていない真意を読み取る
+            ・「彼の本当のメッセージを理解するには行間を読む必要がある」
+            ・言葉の裏にある感情や意図を察する能力
+            ・"Read between the lines." / "If you read between the lines, ~"
+            ・洗練された察しの表現
+            ・類義: pick up on the subtext(フォーマル) / catch the hidden meaning(隠れた意味)
+            ・コミュニケーションの高度な技術
+            """
+        ),
+        GrammarQuestion(
+            id: "q545",
+            question: "We've worked enough — let's ___ ___ ___ ___.",
+            choices: ["call / it / a / day", "call / it / the / day", "call / it / for / day", "make / it / a / day"],
+            correctIndex: 0,
+            translation: "「十分働いた、今日はここまでにしよう」",
+            explanation: """
+            ・call it a day = 「(仕事などを)切り上げる・今日はここまでにする」
+            ・作業を終了する時の定番表現
+            ・「十分働いた、今日はここまでにしよう」
+            ・finish(終える)よりも、区切りをつけて自主的に終える洗練されたニュアンス
+            ・"Let's call it a day." / "I'm going to call it a day."
+            ・仕事、勉強、プロジェクトの終了で頻出
+            ・類義: wrap up(中立) / call it quits(やめる・カジュアル)
+            ・"call it a night" = (夜の)切り上げ
+            """
         )
     ]
 }
