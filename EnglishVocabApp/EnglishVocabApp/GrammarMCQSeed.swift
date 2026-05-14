@@ -5026,6 +5026,344 @@ enum GrammarMCQSeed {
             ・簡単に In fact に置き換えても通じる
             ・類義: actually(カジュアル) / in fact(中立)
             """
+        ),
+        GrammarQuestion(
+            id: "q513",
+            question: "I'll ___ ___ ___ you with the details tomorrow.",
+            choices: ["get / back / to", "get / back / for", "come / back / to", "get / back / on"],
+            correctIndex: 0,
+            translation: "「明日詳細を連絡します」",
+            explanation: """
+            ・get back to + 人/事柄 = 「〜に返事をする・〜に戻る」
+            ・後で連絡し直す時の定番表現
+            ・「明日詳細を連絡する」「後で返事する」
+            ・"I'll get back to you on that." = その件は後で返事する(決まり文句)
+            ・"Get back to work." = 仕事に戻る
+            ・ビジネスや日常で頻出
+            ・類義: respond to(フォーマル) / follow up with(ビジネス)
+            ・「いったん保留して後で対応」のニュアンス
+            """
+        ),
+        GrammarQuestion(
+            id: "q514",
+            question: "I'm ___ ___ ___ seeing you next week.",
+            choices: ["looking / forward / to", "looking / forward / for", "look / forward / to", "looked / forward / to"],
+            correctIndex: 0,
+            translation: "「来週お会いするのを楽しみにしています」",
+            explanation: """
+            ・look forward to + 名詞/動名詞 = 「〜を楽しみにしている」
+            ・後ろは必ず動名詞(-ing)または名詞、to不定詞ではない点に注意
+            ・「来週会えるのを楽しみにしてる」「旅行が楽しみ」
+            ・"I look forward to hearing from you."(ご連絡お待ちしています) — ビジネスメール頻出
+            ・"Looking forward to it!" / "I'm looking forward to the weekend."
+            ・進行形 I'm looking forward to がカジュアルでよく使われる
+            ・類義: can't wait to(カジュアル) / eagerly anticipate(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q515",
+            question: "I ___ ___ an old photo while cleaning.",
+            choices: ["came / across", "came / for", "come / on", "came / by"],
+            correctIndex: 0,
+            translation: "「掃除している時に古い写真を見つけた」",
+            explanation: """
+            ・come across + 名詞 = 「〜に偶然出くわす・〜を見つける」句動詞
+            ・意図せず発見するニュアンス
+            ・「掃除中に古い写真を見つけた」「街で偶然会った」
+            ・物にも人にも使える
+            ・come across as + 形容詞 = 〜のように見える(印象)
+            ・"He comes across as arrogant." = 彼は傲慢に見える
+            ・"I came across this article." / "She came across as friendly."
+            ・類義: stumble upon(偶然見つける) / run into(偶然会う・人)
+            """
+        ),
+        GrammarQuestion(
+            id: "q516",
+            question: "I'll ___ ___ it later.",
+            choices: ["deal / with", "deal / for", "deal / on", "deal / about"],
+            correctIndex: 0,
+            translation: "「後でそれに対処するよ」",
+            explanation: """
+            ・deal with + 名詞 = 「〜に対処する・〜を処理する」
+            ・問題・状況・人などに向き合う
+            ・「後で対処する」「問題に取り組む」「難しい客に対応する」
+            ・ビジネスでも日常でも超頻出
+            ・"I can't deal with this." = これは無理(感情的な負担)
+            ・"How do you deal with stress?" / "We'll deal with it later."
+            ・類義: handle(扱う・対処) / take care of(カジュアル)
+            ・対処能力を表す重要動詞句
+            """
+        ),
+        GrammarQuestion(
+            id: "q517",
+            question: "Sorry, I didn't do it ___ ___.",
+            choices: ["on / purpose", "by / purpose", "for / purpose", "in / purpose"],
+            correctIndex: 0,
+            translation: "「ごめん、わざとじゃないんだ」",
+            explanation: """
+            ・on purpose = 「わざと・故意に」慣用句
+            ・意図的な行動を表す
+            ・「わざとじゃない」「故意に壊した」
+            ・否定形 not on purpose(わざとじゃない)は謝罪の場面で頻出
+            ・反対: by accident(偶然・うっかり)
+            ・"You did that on purpose!" / "I didn't break it on purpose."
+            ・子供同士の言い合い「わざとだろ!」「違うよ!」のような場面で頻出
+            ・類義: deliberately(フォーマル) / intentionally(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q518",
+            question: "She won three games ___ ___ ___.",
+            choices: ["in / a / row", "on / a / row", "at / a / row", "by / a / row"],
+            correctIndex: 0,
+            translation: "「彼女は3試合連続で勝った」",
+            explanation: """
+            ・in a row = 「連続で・続けて」
+            ・連続した回数や日数を表す
+            ・「3試合連続で勝った」「3日連続で雨」「5回連続でミス」
+            ・three days in a row / five times in a row のように数字とセット
+            ・"Won 10 games in a row." / "Three rainy days in a row."
+            ・スポーツ、出来事、習慣などで頻出
+            ・類義: consecutively(フォーマル) / back-to-back(カジュアル)
+            ・記録や継続を強調する時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q519",
+            question: "I love the city. ___ ___ ___ ___, it's expensive.",
+            choices: ["On / the / other / hand", "In / the / other / hand", "For / the / other / hand", "At / the / other / hand"],
+            correctIndex: 0,
+            translation: "「都会が好きだ。一方で、お金がかかる」",
+            explanation: """
+            ・On the other hand = 「一方で・しかし」対比のつなぎ語
+            ・メリットとデメリット、賛成と反対などを並べる時に
+            ・「街が好きだが、一方で高い」「便利だけど、一方で騒がしい」
+            ・"on one hand ~, on the other hand ~"(一方では〜他方では〜)と対で使うこともある
+            ・エッセイ、プレゼン、議論で頻出
+            ・"On the other hand, we should consider ~"
+            ・類義: however(中立) / at the same time(同義)
+            ・バランスの取れた意見表明に
+            """
+        ),
+        GrammarQuestion(
+            id: "q520",
+            question: "I need to ___ ___ ___ these old clothes.",
+            choices: ["get / rid / of", "get / ride / of", "get / red / of", "get / rid / from"],
+            correctIndex: 0,
+            translation: "「これらの古い服を処分しなきゃ」",
+            explanation: """
+            ・get rid of + 名詞 = 「〜を処分する・捨てる」
+            ・不要なものを取り除くニュアンス
+            ・「古い服を捨てる」「悪い習慣をやめる」「風邪を治す」
+            ・物だけでなく抽象的なものにも使える
+            ・"How do I get rid of this?" / "Let's get rid of him."(追い払う)
+            ・"Got rid of all my old books."
+            ・類義: dispose of(フォーマル) / throw out(カジュアル)
+            ・※ rid は変化しない動詞(rid-rid-rid)
+            """
+        ),
+        GrammarQuestion(
+            id: "q521",
+            question: "I traveled there ___ ___.",
+            choices: ["by / myself", "on / myself", "for / myself", "with / myself"],
+            correctIndex: 0,
+            translation: "「私はそこに一人で旅した」",
+            explanation: """
+            ・by myself = 「一人で・独力で」
+            ・他人の助けなしまたは孤独を表す
+            ・「一人で旅行した」「自分で作った」
+            ・alone と同じ意味だが、by myself の方が能動的に一人で行動するニュアンス
+            ・on my own も同じ意味
+            ・myself は主語に応じて変える: by yourself / by himself / by herself
+            ・"I did it by myself." / "She lives by herself."
+            ・類義: alone(中立) / on my own(独立性強調)
+            """
+        ),
+        GrammarQuestion(
+            id: "q522",
+            question: "___ ___ ___ ___, I'll be more careful.",
+            choices: ["From / now / on", "After / now / on", "Since / now / on", "For / now / on"],
+            correctIndex: 0,
+            translation: "「今後はもっと気をつけます」",
+            explanation: """
+            ・From now on = 「これから先・今後ずっと」
+            ・今を起点に未来へ続くニュアンス
+            ・「これからは気をつける」「今後は早起きする」
+            ・決意や習慣の変更を伝える時に
+            ・"From now on, no more excuses." / "From now on, things will change."
+            ・文頭で使うのが一般的
+            ・from this point on も同じ意味で交換可能
+            ・類義: going forward(ビジネス寄り) / starting now(カジュアル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q523",
+            question: "I don't like it ___ ___.",
+            choices: ["at / all", "in / all", "on / all", "for / all"],
+            correctIndex: 0,
+            translation: "「それは全然好きじゃない」",
+            explanation: """
+            ・at all = 否定文を強調「全然・少しも〜ない」
+            ・「全然好きじゃない」「全く分からない」
+            ・疑問文では「そもそも〜?」: "Do you like it at all?"
+            ・"Not at all." = 全然構わない / どういたしまして(超頻出)
+            ・"I don't mind at all." / "Nothing at all."
+            ・否定の度合いを強める便利な副詞句
+            ・類義: whatsoever(強調・フォーマル) / in the slightest(フォーマル)
+            ・文末で使うのが一般的
+            """
+        ),
+        GrammarQuestion(
+            id: "q524",
+            question: "She ___ ___ ___ a tough time last year.",
+            choices: ["went / through", "went / over", "gone / through", "went / for"],
+            correctIndex: 0,
+            translation: "「彼女は去年辛い時期を経験した」",
+            explanation: """
+            ・go through + 名詞 = 「〜を経験する・〜を切り抜ける」
+            ・困難な経験や時期を乗り越えるニュアンス
+            ・「辛い時期を経験した」「離婚を経験した」
+            ・人生のチャレンジを語る時に
+            ・物理的にも: go through the door(ドアを通る) / go through the list(リストを確認)
+            ・"I went through a lot." / "We're going through tough times."
+            ・類義: experience(中立) / endure(耐え抜く・フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q525",
+            question: "He talks about ___ ___ money.",
+            choices: ["nothing / but", "anything / but", "something / but", "only / but"],
+            correctIndex: 0,
+            translation: "「彼はお金の話ばかりする」",
+            explanation: """
+            ・nothing but + 名詞 = 「〜ばかり・〜以外何もない」強調
+            ・「お金の話ばかり」「不満ばかり」
+            ・only(〜だけ)よりもネガティブな含みが多い
+            ・"Nothing but trouble." = 問題ばかり
+            ・"Nothing but the best." = 最高のものだけ(ポジティブも可)
+            ・"He cares about nothing but himself."
+            ・類義: only(中立) / just(カジュアル)
+            ・偏りや極端さを強調する表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q526",
+            question: "___ ___ he forgot again.",
+            choices: ["I / bet", "I'm / bet", "I / betting", "I / am / bet"],
+            correctIndex: 0,
+            translation: "「きっとまた忘れたんだ」",
+            explanation: """
+            ・I bet + 文 = 「きっと〜だ・〜に違いない」口語表現
+            ・直訳「賭けてもいい」だが、強い確信や予想
+            ・「きっとまた忘れたんだ」「絶対楽しいよ」
+            ・"I bet you're tired." / "I bet she'll love it."
+            ・I'd bet ~(賭けてもいい)も同じ意味
+            ・"I bet!" = だろうね!(同意のリアクション)
+            ・類義: I'm sure(中立) / I guarantee(強い・保証)
+            ・感情を込めた予想を伝える時に
+            """
+        ),
+        GrammarQuestion(
+            id: "q527",
+            question: "___ ___, I'll be right back.",
+            choices: ["Hold / on", "Hold / up", "Hold / out", "Hold / for"],
+            correctIndex: 0,
+            translation: "「ちょっと待って、すぐ戻るから」",
+            explanation: """
+            ・Hold on = 「ちょっと待って・つかまって」口語表現
+            ・短い待機を促す時の鉄板
+            ・「ちょっと待ってて」「電話で少々お待ちを」
+            ・電話、会話、緊急時で頻出
+            ・物理的「つかまる」: "Hold on tight!" = しっかりつかまって!
+            ・"Hold on a second." / "Hold on, let me check."
+            ・類義: wait a minute(同義) / hang on(英国寄り)
+            ・※ Hold up(待って・遅らせる) / Hold out(差し出す) は別意味
+            """
+        ),
+        GrammarQuestion(
+            id: "q528",
+            question: "You should ___ ___ ___ the risks.",
+            choices: ["be / aware / of", "be / aware / for", "be / awareness / of", "be / aware / about"],
+            correctIndex: 0,
+            translation: "「リスクを認識すべきだ」",
+            explanation: """
+            ・be aware of + 名詞 = 「〜を意識している・〜を知っている」
+            ・情報や状況を認識している状態
+            ・「リスクを認識すべき」「彼の影響力を理解すべき」
+            ・注意喚起や警告で頻出
+            ・"I'm aware that ~" = 〜だと知っている(節を取る)
+            ・"Be aware of your surroundings." / "Are you aware of the risks?"
+            ・反対: unaware(気づいていない)
+            ・類義: be conscious of(フォーマル) / realize(動的・気づく)
+            """
+        ),
+        GrammarQuestion(
+            id: "q529",
+            question: "Her talent really ___ ___.",
+            choices: ["stands / out", "stand / out", "stood / on", "stands / off"],
+            correctIndex: 0,
+            translation: "「彼女の才能は本当に際立っている」",
+            explanation: """
+            ・stand out = 「目立つ・際立つ」句動詞
+            ・他と比べて優れている・違いが明確な時に
+            ・「彼女の才能が際立っている」「この製品が群を抜いている」
+            ・ポジティブな意味で使うことが多い
+            ・"stand out from the crowd" = 群衆から際立つ(決まり文句)
+            ・"Her resume really stands out." / "He stood out in the crowd."
+            ・履歴書や面接の場面でも頻出
+            ・類義: be distinctive(フォーマル) / be noticeable(中立)
+            """
+        ),
+        GrammarQuestion(
+            id: "q530",
+            question: "I'm ___ ___ done with the report.",
+            choices: ["pretty / much", "very / much", "pretty / very", "much / pretty"],
+            correctIndex: 0,
+            translation: "「レポートはほぼ終わってる」",
+            explanation: """
+            ・pretty much = 「ほぼ・大体」口語表現
+            ・ほとんど完了している状態を伝える
+            ・「レポートはほぼ終わり」「ほぼ同じ」
+            ・almost と似ているが、pretty much の方がカジュアル
+            ・"That's pretty much it." = だいたいそんな感じ(便利な締めくくり)
+            ・"Pretty much everyone." / "It's pretty much done."
+            ・文末でも文中でも使える
+            ・類義: almost(中立) / basically(基本的に・要約)
+            """
+        ),
+        GrammarQuestion(
+            id: "q531",
+            question: "___ ___? You look upset.",
+            choices: ["What's / wrong", "What / wrong", "What's / bad", "How's / wrong"],
+            correctIndex: 0,
+            translation: "「どうしたの?動揺してるみたい」",
+            explanation: """
+            ・What's wrong? = 「どうしたの?」心配や気遣いの質問
+            ・What is wrong? の短縮形
+            ・相手が落ち込んでいる・元気がない時に
+            ・「どうしたの?」「何かあった?」と相手を気遣う優しい問いかけ
+            ・"What's wrong with you?" は文脈次第(心配 or 非難)
+            ・"You look sad. What's wrong?"
+            ・類義: What's the matter?(同義) / Is something wrong?(より丁寧)
+            ・友達や家族への気遣いに頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q532",
+            question: "___ ___ your help.",
+            choices: ["I / appreciate", "I'm / appreciate", "I've / appreciate", "I / appreciating"],
+            correctIndex: 0,
+            translation: "「あなたの助けに感謝しています」",
+            explanation: """
+            ・I appreciate + 名詞/動名詞 = 「〜に感謝する」
+            ・Thank you よりもフォーマルで深い感謝
+            ・「助けてくれてありがとう」「お時間を割いていただき感謝」
+            ・"I really appreciate it." / "I appreciate your effort."
+            ・"I'd appreciate it if ~" = 〜していただけるとありがたい(丁寧な依頼)
+            ・ビジネスや改まった場面で頻出
+            ・類義: be grateful for(フォーマル) / thanks for(カジュアル)
+            ・状態動詞なので進行形にしない(× I'm appreciating)
+            """
         )
     ]
 }
