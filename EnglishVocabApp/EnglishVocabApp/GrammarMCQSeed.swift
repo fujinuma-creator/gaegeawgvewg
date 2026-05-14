@@ -5582,6 +5582,262 @@ enum GrammarMCQSeed {
             ・類義: wrap up(中立) / call it quits(やめる・カジュアル)
             ・"call it a night" = (夜の)切り上げ
             """
+        ),
+        GrammarQuestion(
+            id: "q546",
+            question: "This problem ___ ___ ___ ___ ___ me.",
+            choices: ["has / nothing / to / do / with", "has / nothing / to / do / for", "is / nothing / to / do / with", "has / no / thing / to / with"],
+            correctIndex: 0,
+            translation: "「この問題は私とは全く関係ない」",
+            explanation: """
+            ・have nothing to do with + 名詞 = 「〜とは全く関係ない」
+            ・無関係であることをはっきり示す表現
+            ・「この問題は私とは無関係だ」
+            ・責任や関与を否定する時に頻出
+            ・"It has nothing to do with me." / "I have nothing to do with that."
+            ・逆: have something to do with / have a lot to do with
+            ・類義: be unrelated to(フォーマル) / be none of one's business(口語)
+            ・関係性の否定を強調する重要表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q547",
+            question: "The new policy ___ ___ ___ ___ small businesses.",
+            choices: ["has / an / impact / on", "has / an / impact / for", "has / a / impact / on", "gives / an / impact / on"],
+            correctIndex: 0,
+            translation: "「新政策は中小企業に影響を与える」",
+            explanation: """
+            ・have an impact on + 名詞 = 「〜に影響を与える」
+            ・前置詞は on で固定
+            ・impact は母音で始まるので冠詞は an
+            ・"have a positive/negative impact on" = 良い/悪い影響を与える
+            ・"The decision had a huge impact on the team."
+            ・"Climate change has an impact on agriculture."
+            ・類義: affect(動詞・シンプル) / influence(中立)
+            ・※ give an impact は誤り、have / make / leave an impact が正しい
+            """
+        ),
+        GrammarQuestion(
+            id: "q548",
+            question: "He's ___ ___ going to be late again.",
+            choices: ["most / likely", "most / like", "more / likely", "much / likely"],
+            correctIndex: 0,
+            translation: "「彼はおそらくまた遅刻するだろう」",
+            explanation: """
+            ・most likely = 「おそらく・十中八九」高い確率での予測
+            ・probably(たぶん)よりも確信度がやや高い
+            ・文中、文頭、文末どこでも使える柔軟な副詞句
+            ・"He's most likely to win." / "Most likely, she'll come."
+            ・most likely + to + 動詞 = 〜する可能性が最も高い
+            ・"the most likely candidate" = 最有力候補
+            ・類義: probably(中立) / in all likelihood(フォーマル)
+            ・確信度: definitely > most likely > probably > maybe
+            """
+        ),
+        GrammarQuestion(
+            id: "q549",
+            question: "They wasted ___ ___ ___ ___ money.",
+            choices: ["a / large / amount / of", "a / large / number / of", "a / many / amount / of", "large / amount / of"],
+            correctIndex: 0,
+            translation: "「彼らは大量のお金を無駄にした」",
+            explanation: """
+            ・a large amount of + 不可算名詞 = 「大量の〜」
+            ・不可算名詞(money, water, time, information)に使う
+            ・数えられる名詞には a large number of(多数の〜)
+            ・"A large amount of money was spent." / "A large amount of time."
+            ・amount(量) vs number(数) の使い分けが重要
+            ・"a large number of students"(数えられる・複数) vs "a large amount of work"(不可算)
+            ・類義: a great deal of(フォーマル) / plenty of(可算・不可算両方)
+            ・"a small/large amount of" のセット
+            """
+        ),
+        GrammarQuestion(
+            id: "q550",
+            question: "When I was a child, I ___ ___ play in this park.",
+            choices: ["would / often", "will / often", "used / often", "would / always"],
+            correctIndex: 0,
+            translation: "「子供の頃、この公園でよく遊んだものだ」",
+            explanation: """
+            ・would often + 動詞原形 = 「(昔は)よく〜したものだ」過去の習慣的動作
+            ・used to と似ているが、would は動作にのみ使い、状態(住んでいた等)には使えない
+            ・"I would often visit my grandparents." / "She would often sing in the morning."
+            ・often(よく)を加えると習慣性が強調される
+            ・回想・ノスタルジーの場面で頻出
+            ・類義: used to(動作・状態両方) / would always(いつも〜したものだ)
+            ・※ 状態には used to: "I used to live in Tokyo."(× I would live)
+            """
+        ),
+        GrammarQuestion(
+            id: "q551",
+            question: "She ___ ___ ___ managing the team.",
+            choices: ["is / responsible / for", "is / responsible / to", "is / responsible / of", "has / responsible / for"],
+            correctIndex: 0,
+            translation: "「彼女はチーム管理を担当している」",
+            explanation: """
+            ・be responsible for + 名詞/動名詞 = 「〜に責任がある・〜を担当している」
+            ・役割や責任の所在を示す
+            ・前置詞は for で固定、後ろは名詞か動名詞(-ing)
+            ・「彼女はチーム管理を担当している」
+            ・良いことにも悪いことにも使える: responsible for the mistake / responsible for the success
+            ・"Who is responsible for this?" / "I'm responsible for marketing."
+            ・※ be responsible to + 人 = 〜に報告義務がある(別意味)
+            ・類義: be in charge of(同義) / be accountable for(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q552",
+            question: "Lack of sleep can ___ ___ health problems.",
+            choices: ["contribute / to", "contribute / for", "contribute / with", "contribute / on"],
+            correctIndex: 0,
+            translation: "「睡眠不足は健康問題の一因になりうる」",
+            explanation: """
+            ・contribute to + 名詞 = 「〜の一因となる・〜に貢献する」
+            ・何かを引き起こす要因の一つになるニュアンス
+            ・前置詞は to で固定
+            ・良い意味(貢献する)も悪い意味(一因となる)も両方
+            ・"contribute to society" = 社会に貢献する
+            ・"Stress can contribute to illness." / "She contributed to the project."
+            ・類義: lead to(結果重視) / play a part in(一役買う)
+            ・原因・要因を表す重要動詞
+            """
+        ),
+        GrammarQuestion(
+            id: "q553",
+            question: "I wasn't ___ ___ the meeting had been canceled.",
+            choices: ["aware / that", "aware / of", "awake / that", "aware / for"],
+            correctIndex: 0,
+            translation: "「会議が中止になったことを知らなかった」",
+            explanation: """
+            ・be aware that + 文 = 「〜だと気づいている・知っている」
+            ・情報や事実を認識している状態
+            ・"I wasn't aware that ~" = 〜だと知らなかった
+            ・be aware of + 名詞 と使い分ける: 節(文)なら that、名詞なら of
+            ・"I'm aware that you're busy." / "Be aware of the risks."
+            ・"make 人 aware" = 人に知らせる
+            ・反対: unaware(気づいていない)
+            ・類義: know that(中立) / realize that(動的・気づく)
+            """
+        ),
+        GrammarQuestion(
+            id: "q554",
+            question: "___ ___ ___ price, this option is better.",
+            choices: ["In / terms / of", "In / term / of", "On / terms / of", "By / terms / of"],
+            correctIndex: 0,
+            translation: "「価格の点では、こちらの選択肢の方がいい」",
+            explanation: """
+            ・in terms of + 名詞 = 「〜の点で・〜に関して」観点・基準
+            ・特定の観点から評価する時に使う
+            ・「価格の点では、この選択肢の方がいい」
+            ・terms は必ず複数形
+            ・"In terms of quality, it's excellent." / "In terms of cost, no problem."
+            ・比較や分析でよく使うフォーマル寄りの表現
+            ・類義: regarding(フォーマル) / when it comes to(口語)
+            ・「〜という観点から見ると」と論点を絞る時の便利な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q555",
+            question: "People ___ ___ eat more when they're stressed.",
+            choices: ["tend / to", "tend / for", "tends / to", "tending / to"],
+            correctIndex: 0,
+            translation: "「人はストレスを感じるとつい食べすぎる傾向がある」",
+            explanation: """
+            ・tend to + 動詞原形 = 「〜する傾向がある・〜しがちだ」
+            ・一般的な傾向や習性を表す
+            ・断定を避けて「だいたいそうなる」と述べる時に便利
+            ・tend to be + 形容詞 = 〜になりがち
+            ・"He tends to forget things." / "Prices tend to rise."
+            ・性質や統計的傾向を語る時に頻出
+            ・類義: be inclined to(フォーマル) / usually(副詞・シンプル)
+            ・主語が複数なら tend、三人称単数なら tends
+            """
+        ),
+        GrammarQuestion(
+            id: "q556",
+            question: "Poor planning often ___ ___ failure.",
+            choices: ["results / in", "results / to", "results / from", "result / in"],
+            correctIndex: 0,
+            translation: "「ずさんな計画は失敗を招きがちだ」",
+            explanation: """
+            ・result in + 名詞 = 「〜という結果になる・〜を引き起こす」
+            ・原因 → 結果の流れで、結果を示す
+            ・"Poor planning often results in failure."
+            ・逆向きの result from(〜が原因で起こる)と混同注意
+            ・result in = →結果 / result from = ←原因
+            ・"The accident resulted in serious injuries." / "Success results from hard work."
+            ・因果関係を述べる時に頻出
+            ・類義: lead to(同義) / bring about(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q557",
+            question: "She ___ ___ ___ handling difficult situations.",
+            choices: ["is / capable / of", "is / capable / to", "is / able / of", "has / capable / of"],
+            correctIndex: 0,
+            translation: "「彼女は難しい状況に対処する能力がある」",
+            explanation: """
+            ・be capable of + 名詞/動名詞 = 「〜する能力がある・〜できる」
+            ・潜在的な能力や可能性を表す
+            ・前置詞は of で固定、後ろは名詞か動名詞(-ing)
+            ・「彼女は難しい状況に対処できる」
+            ・"He's capable of great things." / "The car is capable of 200 mph."
+            ・be able to + 動詞原形 と意味は近いが構文が違う
+            ・"She is able to handle ~"(動詞原形) vs "She is capable of handling ~"(-ing)
+            ・類義: be able to(構文が違う) / have the ability to(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q558",
+            question: "He didn't study. ___ ___ ___, he failed the exam.",
+            choices: ["As / a / result", "As / the / result", "In / a / result", "For / a / result"],
+            correctIndex: 0,
+            translation: "「彼は勉強しなかった。その結果、試験に落ちた」",
+            explanation: """
+            ・As a result = 「その結果・結果として」つなぎ語
+            ・前文の出来事が原因となった結果を導く
+            ・文頭で使い、後ろにカンマを置くのが一般的
+            ・"As a result, prices went up." / "As a result of the storm, ~"
+            ・as a result of + 名詞 = 〜の結果として
+            ・因果関係を明示する時に頻出
+            ・類義: consequently(フォーマル) / therefore(フォーマル)
+            ・エッセイやレポートでも使える
+            """
+        ),
+        GrammarQuestion(
+            id: "q559",
+            question: "Are you ___ ___ this software?",
+            choices: ["familiar / with", "familiar / to", "familiar / of", "familiar / for"],
+            correctIndex: 0,
+            translation: "「このソフトに詳しいですか?」",
+            explanation: """
+            ・be familiar with + 名詞 = 「〜をよく知っている・〜に詳しい」
+            ・知識や経験があって馴染みがある状態
+            ・前置詞は with
+            ・「このソフトに詳しい?」
+            ・"I'm familiar with this area." / "Are you familiar with Python?"
+            ・※ be familiar to + 人 = 人にとって馴染みがある(主語と前置詞が逆)
+            ・"This software is familiar to me."(このソフトは私には馴染みがある)
+            ・類義: know well(中立) / be well-versed in(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q560",
+            question: "___ ___ ___ students were absent today.",
+            choices: ["A / number / of", "A / amount / of", "The / number / of", "A / numbers / of"],
+            correctIndex: 0,
+            translation: "「今日は何人もの生徒が欠席した」",
+            explanation: """
+            ・a number of + 複数名詞 = 「いくつかの・多数の」
+            ・数えられる名詞の複数形に使い、「複数ある」ことを表す
+            ・動詞は複数扱い
+            ・「今日、何人かの生徒が欠席した」
+            ・"A number of people came." / "A number of issues need attention."
+            ・※ the number of(〜の数)とは違う:
+            ・"The number of students is increasing."(生徒の数は・単数扱い)
+            ・"A number of students are absent."(何人かの生徒が・複数扱い)
+            ・類義: several(中立) / quite a few(口語)
+            ・※ amount は不可算名詞用(× a amount of)
+            """
         )
     ]
 }
