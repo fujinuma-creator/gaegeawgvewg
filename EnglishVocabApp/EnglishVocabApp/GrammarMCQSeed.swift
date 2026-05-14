@@ -4248,6 +4248,220 @@ enum GrammarMCQSeed {
             ・類義: heading to(同義) / leaving for(フォーマル)
             ・"Off you go!" = さあ行って!(送り出し)
             """
+        ),
+        GrammarQuestion(
+            id: "q466",
+            question: "You ___ ___ ___ bring an umbrella today.",
+            choices: ["may / need / to", "may / need / for", "may / needing / to", "might / need / for"],
+            correctIndex: 0,
+            translation: "「今日は傘を持っていく必要があるかもしれない」",
+            explanation: """
+            ・may need to + 動詞原形 = 「〜する必要があるかもしれない」
+            ・可能性 + 必要性を組み合わせた表現
+            ・may(〜かも) + need to(〜する必要がある)で柔らかい忠告
+            ・「傘が必要かも」「準備しといた方がいいかも」
+            ・"You may need to wait." / "We may need to change plans."
+            ・類義: might need to(より控えめ) / should probably(より直接的)
+            ・断定を避けた優しい助言
+            """
+        ),
+        GrammarQuestion(
+            id: "q467",
+            question: "I ___ come to the party — I'm not sure yet.",
+            choices: ["might", "must", "should", "can"],
+            correctIndex: 0,
+            translation: "「パーティーに行くかもしれない、まだ分からない」",
+            explanation: """
+            ・might + 動詞原形 = 「〜かもしれない」控えめな可能性
+            ・may よりも可能性が低めで、不確実性を強調
+            ・「行くかもしれない」「ダメかもしれない」
+            ・"I might call you later." / "She might know the answer."
+            ・会話では may より頻出
+            ・might have + 過去分詞 = 「〜したかも」(過去の推量)
+            ・類義: may(やや確信度が高い) / could(中立)
+            ・"I'm not sure" との相性が良い
+            """
+        ),
+        GrammarQuestion(
+            id: "q468",
+            question: "I ___ ___ come, but I was sick.",
+            choices: ["would / have", "will / have", "would / had", "had / would"],
+            correctIndex: 0,
+            translation: "「行こうと思ったのに、病気だった」",
+            explanation: """
+            ・would have + 過去分詞 = 「〜したのに(しなかった)」仮定法過去完了
+            ・過去の事実に反する仮定や後悔を表す
+            ・「行ったのに(実際は行けなかった)」「電話したのに(しなかった)」
+            ・会話では would've /ˈwʊdəv/ と短縮
+            ・"I would have helped." / "She would have come."
+            ・類義: could have + 過去分詞(〜できたのに) / should have + 過去分詞(〜すべきだった)
+            ・実現しなかった過去を語る時の重要構文
+            """
+        ),
+        GrammarQuestion(
+            id: "q469",
+            question: "___ ___ like some coffee?",
+            choices: ["Would / you", "Will / you", "Do / you", "Could / you"],
+            correctIndex: 0,
+            translation: "「コーヒーはいかがですか?」",
+            explanation: """
+            ・Would you like + 名詞? = 「〜はいかがですか?」丁寧な提案・申し出
+            ・Do you want ~?(欲しい?)より丁寧、レストランや接客で頻出
+            ・「コーヒーいかが?」「お代わりいかが?」
+            ・Would you like to + 動詞?(〜したい?)も同じパターン
+            ・"Would you like a drink?" / "Would you like to sit down?"
+            ・類義: Would you care for(より改まった) / Do you want(カジュアル)
+            ・相手を思いやる丁寧な表現
+            """
+        ),
+        GrammarQuestion(
+            id: "q470",
+            question: "___ ___ help me with this?",
+            choices: ["Will / you", "Are / you", "Would / you", "Do / you"],
+            correctIndex: 0,
+            translation: "「これ手伝ってくれる?」",
+            explanation: """
+            ・Will you + 動詞原形? = 「〜してくれる?」依頼または未来の意思
+            ・Would you? より直接的でカジュアル
+            ・「手伝ってくれる?」「明日来る?」
+            ・命令形に近いニュアンスもある
+            ・目上の人や知らない人には Would you? の方が無難
+            ・親しい間柄では Will you? で十分
+            ・類義: Can you(同じく依頼) / Could you(より丁寧)
+            ・"Will you marry me?" のようなプロポーズの定番でもある
+            """
+        ),
+        GrammarQuestion(
+            id: "q471",
+            question: "___ ___ have a seat?",
+            choices: ["Won't / you", "Will / you", "Do / you", "Aren't / you"],
+            correctIndex: 0,
+            translation: "「お座りになりませんか?」",
+            explanation: """
+            ・Won't you + 動詞原形? = 「〜しませんか?」丁寧な勧め
+            ・直訳「〜しないの?」ではなく、相手を温かく誘うニュアンス
+            ・「お座りになりませんか?」「一緒に来ませんか?」
+            ・おもてなしや誘いで使う、やや古風で改まった印象
+            ・"Won't you join us?" / "Won't you come in?"
+            ・上品な接客や歓迎の場面で頻出
+            ・類義: Why don't you(提案) / Please(最もシンプル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q472",
+            question: "___ ___ tell anyone, I promise.",
+            choices: ["I / won't", "I'm / not", "I / can't", "I / don't"],
+            correctIndex: 0,
+            translation: "「誰にも言わないと約束する」",
+            explanation: """
+            ・I won't + 動詞原形 = 「〜しない・〜するつもりはない」
+            ・will not の短縮形、意志の否定や約束
+            ・「誰にも言わない」「諦めない」
+            ・"I won't forget." / "I won't let you down."
+            ・物に対して: "The door won't open."(動かない・作動しない)
+            ・I won't は会話で頻出、書き言葉では I will not の方が丁寧
+            ・類義: I will not(強調・フォーマル) / I refuse to(強い拒否)
+            """
+        ),
+        GrammarQuestion(
+            id: "q473",
+            question: "___ ___ ___ speak three languages.",
+            choices: ["I / am / able / to", "I / can / able / to", "I / am / able / for", "I / will / able / to"],
+            correctIndex: 0,
+            translation: "「私は3か国語を話すことができる」",
+            explanation: """
+            ・be able to + 動詞原形 = 「〜できる」can とほぼ同じ意味
+            ・現在・未来・過去すべての時制で使える柔軟さ(can には未来形がない)
+            ・「3か国語話せる」「仕事を完了できる」
+            ・"will be able to" / "was able to" / "have been able to"
+            ・フォーマル寄りで、書き言葉や改まった場面で頻出
+            ・類義: can(カジュアル・同義) / be capable of ~ing(フォーマル)
+            ・"I was able to finish it."(過去にできた) は I could finish よりも明確
+            """
+        ),
+        GrammarQuestion(
+            id: "q474",
+            question: "___ ___ find my keys this morning.",
+            choices: ["I / couldn't", "I / can't", "I / didn't / can", "I / haven't"],
+            correctIndex: 0,
+            translation: "「今朝、鍵が見つからなかった」",
+            explanation: """
+            ・I couldn't + 動詞原形 = 「〜できなかった」could not の短縮形
+            ・過去にできなかったことを表す
+            ・「鍵が見つからなかった」「眠れなかった」
+            ・"I couldn't sleep last night." / "We couldn't agree."
+            ・"I couldn't agree more." = 強く同意します(決まり文句)
+            ・仮定法では「〜できないだろう」の意味にもなる
+            ・類義: I wasn't able to(フォーマル) / I failed to(強い失敗感)
+            """
+        ),
+        GrammarQuestion(
+            id: "q475",
+            question: "I ___ ___ he'll come tomorrow.",
+            choices: ["wonder / if", "wonder / that", "wondered / for", "wonder / about"],
+            correctIndex: 0,
+            translation: "「彼が明日来るかな」",
+            explanation: """
+            ・I wonder if + 文 = 「〜かしら・〜だろうか」控えめな疑問
+            ・心の中で考えていることを表す
+            ・「明日来るかな」「正しいかな」
+            ・I wonder + wh-節 も可: I wonder why ~ / I wonder what ~
+            ・"I was wondering if you could ~" = 〜してもらえないかな(丁寧な依頼)
+            ・"I wonder if it's true." / "I wonder why she's late."
+            ・類義: I'm not sure if(〜か分からない) / I'm curious about(気になる)
+            ・丁寧に質問する時の鉄板
+            """
+        ),
+        GrammarQuestion(
+            id: "q476",
+            question: "The cafe is ___ the bank and the post office.",
+            choices: ["between", "among", "middle", "center"],
+            correctIndex: 0,
+            translation: "「カフェは銀行と郵便局の間にある」",
+            explanation: """
+            ・between A and B = 「AとBの間に」前置詞
+            ・2つの物・人・場所の間を指す
+            ・「銀行と郵便局の間」「君と私の間で」
+            ・3つ以上の中だと among(〜の中で)が正式だが、口語では between でもOK
+            ・"between us" = ここだけの話
+            ・"between you and me" = 内緒の話
+            ・類義: in the middle of(真ん中で) / among(3つ以上の中で)
+            ・"between a rock and a hard place" = 板挟み(慣用句)
+            """
+        ),
+        GrammarQuestion(
+            id: "q477",
+            question: "He finally arrived. ___ ___ ___ ___!",
+            choices: ["Better / late / than / never", "Better / lately / than / never", "Late / better / than / never", "Better / late / for / never"],
+            correctIndex: 0,
+            translation: "「彼がやっと到着した。遅くてもしないよりまし!」",
+            explanation: """
+            ・Better late than never = 「遅くてもしないよりまし」諺
+            ・遅れた行動を肯定する時の慰めや励まし
+            ・「遅くなったけど来てくれただけありがたい」
+            ・「諦めるよりは遅くてもやろう」
+            ・新しいことを始めるのに遅すぎることはない、という前向きなメッセージ
+            ・日常会話、教訓、自己啓発で頻出
+            ・類義: at least you came(来てくれただけまし) / it's never too late(遅すぎることはない)
+            ・固定表現で語順は変えない
+            """
+        ),
+        GrammarQuestion(
+            id: "q478",
+            question: "The taxi is waiting ___ ___.",
+            choices: ["right / outside", "just / outside", "right / on", "Both A and B"],
+            correctIndex: 3,
+            translation: "「タクシーがすぐ外で待っているよ」",
+            explanation: """
+            ・right outside = 「すぐ外に・真ん前に」right が「すぐ・まさに」と位置を強調
+            ・just outside も同じ意味で交換可能
+            ・「タクシーがすぐ外で待ってる」「ドアのすぐ前」
+            ・距離の近さを伝える時に
+            ・"Right outside the door." / "Just outside the building."
+            ・同パターン: right here(まさにここ) / right there(まさにそこ) / right next to(すぐ隣)
+            ・類義: right by(すぐそばに)
+            ・両方の選択肢が正解(right と just はどちらも強調)
+            """
         )
     ]
 }
