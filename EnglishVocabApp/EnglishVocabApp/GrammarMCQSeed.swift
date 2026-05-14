@@ -4462,6 +4462,234 @@ enum GrammarMCQSeed {
             ・類義: right by(すぐそばに)
             ・両方の選択肢が正解(right と just はどちらも強調)
             """
+        ),
+        GrammarQuestion(
+            id: "q479",
+            question: "You ___ ___ more water every day.",
+            choices: ["should / drink", "should / to / drink", "should / drinking", "shoulds / drink"],
+            correctIndex: 0,
+            translation: "「毎日もっと水を飲むべきだ」",
+            explanation: """
+            ・should + 動詞原形 = 「〜すべき・〜した方がいい」忠告・推奨
+            ・must(〜しなければならない)より柔らかく、強制力が弱い
+            ・「水を飲むべき」「もっと寝た方がいい」
+            ・助動詞の後は必ず動詞の原形(to は不要)
+            ・"You should rest." / "We should leave now."
+            ・類義: ought to(やや古風・フォーマル) / had better(警告的)
+            ・相手のためのアドバイスで頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q480",
+            question: "You ___ ___ told me earlier!",
+            choices: ["could / have", "could / had", "would / had", "can / have"],
+            correctIndex: 0,
+            translation: "「もっと早く教えてくれてもよかったのに!」",
+            explanation: """
+            ・could have + 過去分詞 = 「〜できたのに(しなかった)」仮定法過去完了
+            ・過去にできたが実際はしなかったことへの非難や後悔
+            ・「もっと早く言えたじゃない」「電話できたのに」
+            ・会話では could've /ˈkʊdəv/ と短縮
+            ・"You could have called." / "I could have helped."
+            ・類義: could've(短縮形) / might have(〜したかも・推量)
+            ・should have(〜すべきだった)と並んで頻出
+            """
+        ),
+        GrammarQuestion(
+            id: "q481",
+            question: "I ___ ___ studied harder for the test.",
+            choices: ["should / have", "should / had", "should / would", "had / should"],
+            correctIndex: 0,
+            translation: "「テストのためにもっと勉強すべきだった」",
+            explanation: """
+            ・should have + 過去分詞 = 「〜すべきだった(のにしなかった)」後悔・反省
+            ・過去の行動に対する「ああすればよかった」
+            ・「もっと勉強すべきだった」「早く起きるべきだった」
+            ・会話では should've /ˈʃʊdəv/ と短縮
+            ・"I should have called you." / "She should have stayed."
+            ・自分への後悔にも他人への非難にも使える
+            ・類義: should've(口語) / ought to have(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q482",
+            question: "___ ___ ___ ___ some tea?",
+            choices: ["Would / you / care / for", "Would / you / care / about", "Will / you / care / for", "Could / you / care / for"],
+            correctIndex: 0,
+            translation: "「お茶はいかがですか?」",
+            explanation: """
+            ・Would you care for + 名詞? = 「〜はいかがですか?」最も丁寧な提案
+            ・Would you like ~? より改まった印象
+            ・上品なレストランやおもてなしの場で頻出
+            ・「お茶はいかが?」「デザートをご用意しますか?」
+            ・"Would you care for a drink?" / "Care for a snack?"
+            ・接客やフォーマルな場で使うと品が出る
+            ・類義: Would you like(中立) / May I offer you(最高に丁寧)
+            ・※ care about = 〜を気にかける(別意味)
+            """
+        ),
+        GrammarQuestion(
+            id: "q483",
+            question: "___ ___ ___ lie to my parents.",
+            choices: ["I / refuse / to", "I / refuse / for", "I'm / refuse / to", "I / refused / for"],
+            correctIndex: 0,
+            translation: "「両親に嘘をつくことを拒否する」",
+            explanation: """
+            ・I refuse to + 動詞原形 = 「〜することを拒否する」強い拒絶
+            ・I won't ~ よりも強く、断固として〜しないという決意
+            ・「親に嘘はつかない」「諦めない」
+            ・"I refuse to give up." / "He refused to answer."
+            ・信念や原則に基づく拒否を伝える時に
+            ・後ろは必ず動詞の原形
+            ・類義: I won't(中立) / I have no intention of ~ing(フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q484",
+            question: "___ ___ ___ finish the project on time.",
+            choices: ["I / failed / to", "I / fail / to", "I'm / failed / to", "I / failed / for"],
+            correctIndex: 0,
+            translation: "「期限内にプロジェクトを終わらせることができなかった」",
+            explanation: """
+            ・I failed to + 動詞原形 = 「〜できなかった・〜することに失敗した」
+            ・I couldn't ~ よりも失敗の重みや責任感を強調
+            ・「期限内に終えられなかった」「約束を守れなかった」
+            ・"He failed to deliver." / "We failed to notice."
+            ・フォーマル寄りで、ビジネスや報告書で頻出
+            ・※ 試験の不合格 fail the test は別の用法(他動詞)
+            ・類義: I wasn't able to(中立) / I couldn't manage to(やや砕けた)
+            """
+        ),
+        GrammarQuestion(
+            id: "q485",
+            question: "I ___ ___ ___ attend the meeting yesterday.",
+            choices: ["wasn't / able / to", "wasn't / able / for", "didn't / able / to", "couldn't / able / to"],
+            correctIndex: 0,
+            translation: "「昨日は会議に出席できなかった」",
+            explanation: """
+            ・wasn't able to + 動詞原形 = 「〜できなかった」couldn't のフォーマル版
+            ・過去にできなかった具体的な出来事を表す
+            ・「会議に出られなかった」「電話できなかった」
+            ・"I wasn't able to come." / "She wasn't able to finish."
+            ・couldn't よりも一回限りの過去の不可能を明確にする時に好まれる
+            ・書き言葉や報告書で頻出
+            ・類義: couldn't(口語) / failed to(失敗感が強い)
+            """
+        ),
+        GrammarQuestion(
+            id: "q486",
+            question: "It's ___ ___ ___ to start learning.",
+            choices: ["never / too / late", "not / too / late", "never / late / too", "never / so / late"],
+            correctIndex: 0,
+            translation: "「学び始めるのに遅すぎることはない」",
+            explanation: """
+            ・It's never too late to + 動詞原形 = 「〜するのに遅すぎることはない」前向きな励まし
+            ・年齢、タイミング、機会などを言い訳にしている人を励ます時に
+            ・「学び始めるのに遅すぎることはない」「夢を諦めるな」
+            ・"It's never too late to change." / "Never too late to start over."
+            ・自己啓発や応援メッセージで頻出
+            ・順序は固定
+            ・類義: better late than never(遅くてもしないよりまし) / the time is now(強い励まし)
+            """
+        ),
+        GrammarQuestion(
+            id: "q487",
+            question: "___ ___, we tried our best.",
+            choices: ["At / least", "On / least", "In / least", "For / least"],
+            correctIndex: 0,
+            translation: "「少なくとも、私たちは最善を尽くした」",
+            explanation: """
+            ・At least = 「少なくとも・せめて」最低限の評価や慰め
+            ・「最善は尽くした」「せめて来てくれた」
+            ・"At least try." / "At least it didn't rain."
+            ・ネガティブな状況でもポジティブな面を見つける時に
+            ・数値にも: at least 10 people(少なくとも10人)
+            ・文頭でも文中でも使える
+            ・類義: at the very least(最低でも・強調) / at any rate(とにかく・フォーマル)
+            """
+        ),
+        GrammarQuestion(
+            id: "q488",
+            question: "The store is ___ ___ the station.",
+            choices: ["right / by", "right / on", "right / at", "right / for"],
+            correctIndex: 0,
+            translation: "「その店は駅のすぐそばにある」",
+            explanation: """
+            ・right by + 場所 = 「〜のすぐそばに」
+            ・right が「まさに・ちょうど」と強調、by が「〜のそばに」
+            ・「駅のすぐ横」「家のすぐ近く」
+            ・"Right by the door." / "It's right by my house."
+            ・距離の近さを伝える時に
+            ・類義: right next to(すぐ隣・同義) / just by(すぐそばに)
+            ・近接を表す重要な前置詞句
+            """
+        ),
+        GrammarQuestion(
+            id: "q489",
+            question: "___, he agreed to help us.",
+            choices: ["Eventually", "Sudden", "Immediately", "Currently"],
+            correctIndex: 0,
+            translation: "「最終的に、彼は私たちを手伝うことに同意した」",
+            explanation: """
+            ・Eventually = 「最終的に・結局」副詞
+            ・長い時間や過程を経た末の結果を表す
+            ・「時間はかかったが、結局〜」というニュアンス
+            ・「やっと同意してくれた」「最終的にうまくいった」
+            ・"Eventually, things worked out." / "He'll eventually understand."
+            ・finally(待ち望んだ結果)と似ているが、eventually は時間の経過と必然性を強調
+            ・類義: finally(待望感) / in the end(結局・カジュアル)
+            ・文頭、文中で使う
+            """
+        ),
+        GrammarQuestion(
+            id: "q490",
+            question: "The park is ___ the street from my house.",
+            choices: ["across", "cross", "over", "through"],
+            correctIndex: 0,
+            translation: "「公園は私の家の通りの向かい側にある」",
+            explanation: """
+            ・across + 場所 = 「〜を横切って・〜の向こう側に」前置詞
+            ・横断する動きまたは反対側の位置
+            ・「通りの向かい側」「川を渡って」
+            ・"across from ~" = 〜の向かい側(よく使うパターン)
+            ・"Walk across the street." / "The bakery is across the street."
+            ・動詞 cross(横切る)の前置詞版
+            ・through(〜を通って・貫通)とは違うので注意
+            ・類義: on the other side of(向こう側) / opposite(反対側)
+            """
+        ),
+        GrammarQuestion(
+            id: "q491",
+            question: "The cafe is ___ the bank.",
+            choices: ["opposite", "across", "front", "over"],
+            correctIndex: 0,
+            translation: "「カフェは銀行の向かい側にある」",
+            explanation: """
+            ・opposite + 名詞 = 「〜の向かい側に・〜の正反対に」
+            ・正面で向かい合う位置関係
+            ・「銀行の向かい」「彼女の正面に座る」
+            ・"Sit opposite me." / "The hotel is opposite the park."
+            ・across from ~ と同じ意味だが、opposite の方が完全に正対しているニュアンス
+            ・形容詞・名詞・前置詞として使える多機能語
+            ・"the opposite direction" = 反対方向
+            ・類義: across from(米国寄り) / facing(動詞・分詞)
+            """
+        ),
+        GrammarQuestion(
+            id: "q492",
+            question: "You're holding the map ___ ___.",
+            choices: ["upside / down", "up / downside", "downside / up", "down / side / up"],
+            correctIndex: 0,
+            translation: "「地図を逆さまに持ってるよ」",
+            explanation: """
+            ・upside down = 「上下逆さま・逆さに」慣用句
+            ・上下が反転している状態
+            ・「地図を逆さに持ってる」「写真が逆さま」
+            ・"The picture is upside down." / "Hang it upside down."
+            ・比喩: "turn my life upside down" = 人生がひっくり返る(大きな変化や混乱)
+            ・順序は固定で down upside とは言わない
+            ・類義: inverted(逆さの・フォーマル) / inside out(裏返しに・向きが違う)
+            """
         )
     ]
 }
