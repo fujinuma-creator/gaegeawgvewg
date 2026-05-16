@@ -1,16 +1,33 @@
 import SwiftUI
 
-/// 4-choice grammar quiz, one question at a time. Mirrors the
-/// 英語の定義 quiz UX in QuizView: tap a choice → see correct/wrong
-/// highlight + Japanese translation + explanation → tap 「次の問題 →」
-/// to advance. Position and per-question answer are persisted so the
-/// user resumes where they left off across launches.
+/// 4-choice grammar quiz, one question at a time. Each day:
+/// - The question order is shuffled deterministically (so it's stable
+///   within a day but rotates at midnight).
+/// - User answers from the previous day are wiped automatically the
+///   first time the view appears that day, so each day starts fresh.
+///
+/// Inside a day, the user can:
+/// - Tap a choice to lock in their answer (reveals correctness + Japanese
+///   translation + a detailed explanation).
+/// - Swipe the card left/right to flip between problems (or tap the
+///   nav buttons). Right swipe = next, left swipe = previous.
 struct GrammarView: View {
     @EnvironmentObject var store: WordStore
     @AppStorage("grammar.currentIndex") private var currentIndex: Int = 0
+    /// startOfDay timestamp (TimeInterval) of the last automatic reset.
+    /// Used to detect day rollover and wipe answers once per day.
+    @AppStorage("grammar.lastResetDay") private var lastResetDay: Double = 0
     @State private var showResetAlert: Bool = false
+    @State private var dragOffset: CGSize = .zero
 
-    private var questions: [GrammarQuestion] { GrammarMCQSeed.questions }
+    private var allQuestions: [GrammarQuestion] { GrammarMCQSeed.questions }
+
+    /// Today's deterministically-shuffled question list. The seed is
+    /// derived from today's startOfDay so the order stays stable for
+    /// the whole day and rotates at midnight.
+    private var questions: [GrammarQuestion] {
+        allQuestions.dailyShuffled()
+    }
 
     private var safeIndex: Int {
         guard !questions.isEmpty else { return 0 }
@@ -45,10 +62,16 @@ struct GrammarView: View {
                     quizCard(q)
                         .padding(.horizontal, 16)
                         .padding(.bottom, 24)
+                        .offset(x: dragOffset.width, y: dragOffset.height * 0.3)
+                        .rotationEffect(.degrees(Double(dragOffset.width) / 22))
+                        .overlay(swipeHint.allowsHitTesting(false))
+                        .contentShape(Rectangle())
+                        .gesture(swipeGesture)
                 }
             }
         }
         .padding(.top, 8)
+        .onAppear { performDailyResetIfNeeded() }
         .alert("解答をリセットしますか？", isPresented: $showResetAlert) {
             Button("キャンセル", role: .cancel) {}
             Button("リセット", role: .destructive) {
@@ -57,6 +80,87 @@ struct GrammarView: View {
             }
         } message: {
             Text("\(answeredCount) 問の解答記録をすべて削除し、最初の問題に戻ります。")
+        }
+    }
+
+    // MARK: - Daily auto-reset
+
+    /// Wipes all grammar answers and rewinds to question 1 if the calendar
+    /// day has changed since the last automatic reset. Runs once each time
+    /// the view appears.
+    private func performDailyResetIfNeeded() {
+        let todayStart = Calendar.current.startOfDay(for: Date()).timeIntervalSince1970
+        if lastResetDay == 0 {
+            // First-ever appearance: just record today's start without wiping.
+            lastResetDay = todayStart
+            return
+        }
+        if todayStart > lastResetDay {
+            store.resetAllGrammarAnswers()
+            currentIndex = 0
+            lastResetDay = todayStart
+        }
+    }
+
+    // MARK: - Swipe gesture
+
+    private var swipeGesture: some Gesture {
+        DragGesture(minimumDistance: 2)
+            .onChanged { value in
+                dragOffset = value.translation
+            }
+            .onEnded { value in
+                let threshold: CGFloat = 50
+                if value.translation.width > threshold {
+                    flyOff(direction: 1) { goPrev() }
+                } else if value.translation.width < -threshold {
+                    flyOff(direction: -1) { goNext() }
+                } else {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                        dragOffset = .zero
+                    }
+                }
+            }
+    }
+
+    /// Visual hint that appears as the card is dragged to one side, so the
+    /// user can see which way the swipe is going (left = next, right = prev).
+    @ViewBuilder
+    private var swipeHint: some View {
+        let progress = min(abs(dragOffset.width) / 50, 1.0)
+        if progress > 0.05 {
+            let isLeft = dragOffset.width < 0
+            HStack {
+                if !isLeft {
+                    Image(systemName: "chevron.left.circle.fill")
+                        .font(.system(size: 60))
+                        .foregroundStyle(.indigo.opacity(0.55 * progress))
+                        .padding(.leading, 20)
+                    Spacer()
+                } else {
+                    Spacer()
+                    Image(systemName: "chevron.right.circle.fill")
+                        .font(.system(size: 60))
+                        .foregroundStyle(.indigo.opacity(0.55 * progress))
+                        .padding(.trailing, 20)
+                }
+            }
+            .frame(maxWidth: .infinity)
+            .animation(.easeOut(duration: 0.1), value: dragOffset)
+        }
+    }
+
+    private func flyOff(direction: CGFloat, completion: @escaping () -> Void) {
+        withAnimation(.easeOut(duration: 0.25)) {
+            dragOffset = CGSize(width: direction * 700, height: dragOffset.height)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            var t = Transaction()
+            t.disablesAnimations = true
+            withTransaction(t) {
+                dragOffset = .zero
+                completion()
+            }
         }
     }
 
@@ -94,11 +198,19 @@ struct GrammarView: View {
                     }
                 }
                 .font(.subheadline)
-                ProgressView(
-                    value: Double(safeIndex + 1),
-                    total: Double(max(questions.count, 1))
-                )
-                .tint(.indigo)
+                HStack(spacing: 8) {
+                    ProgressView(
+                        value: Double(safeIndex + 1),
+                        total: Double(max(questions.count, 1))
+                    )
+                    .tint(.indigo)
+                    Image(systemName: "sparkles")
+                        .font(.caption2)
+                        .foregroundStyle(.indigo.opacity(0.6))
+                    Text("日替わり")
+                        .font(.caption2)
+                        .foregroundStyle(.tertiary)
+                }
             }
         }
         .padding(.horizontal, 16)
@@ -137,6 +249,12 @@ struct GrammarView: View {
                     .background(Capsule().fill(Color.indigo.opacity(0.15)))
                     .foregroundStyle(.indigo)
                 Spacer()
+                Image(systemName: "hand.draw")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
+                Text("スワイプで次へ")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
                 if answered {
                     if selectedIndex == q.correctIndex {
                         Label("正解", systemImage: "checkmark.circle.fill")
