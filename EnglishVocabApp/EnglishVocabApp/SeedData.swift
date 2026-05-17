@@ -75,6 +75,7 @@ enum SeedData {
             + characterStates22 + evaluationMedia22
             + personalityTypes23 + planningThoughts23
             + actionObjects23 + conceptsStates23
+            + legalSocial24 + qualityVerbs24
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -12446,6 +12447,160 @@ enum SeedData {
                  examples: [
                     ("Give me a hint.", "ヒントちょうだい。"),
                     ("A subtle hint.", "それとなくほのめかす。")
+                 ])
+        ]
+    }
+
+    // MARK: - 法律・社会 (追加 10)
+
+    private static var legalSocial24: [Word] {
+        [
+            make("compensation", "payment for loss or damages",
+                 "補償・賠償金",
+                 useCases: ["損害や努力に対する金銭的見返りを表すとき"],
+                 examples: [
+                    ("Compensation package.", "報酬パッケージ。"),
+                    ("Demand compensation.", "賠償を求める。")
+                 ]),
+            make("lock down", "restrict movement strictly",
+                 "封鎖する・ロックダウン",
+                 useCases: ["施設や地域への出入り制限を表すとき"],
+                 examples: [
+                    ("The city is on lock down.", "街はロックダウン中。"),
+                    ("Lock down the building.", "建物を封鎖する。")
+                 ]),
+            make("deport", "expel from a country",
+                 "国外追放する",
+                 useCases: ["不法移民や違反者を国外退去させるとき"],
+                 examples: [
+                    ("Deport illegal immigrants.", "不法移民を国外退去。"),
+                    ("Risk of being deported.", "国外追放のリスク。")
+                 ]),
+            make("citizen", "a legally recognized national",
+                 "市民・国民",
+                 useCases: ["国家の構成員を表すとき"],
+                 examples: [
+                    ("Japanese citizen.", "日本国民。"),
+                    ("Citizens' rights.", "市民の権利。")
+                 ]),
+            make("discrimination", "unfair treatment based on category",
+                 "差別",
+                 useCases: ["性別・人種などによる不当な扱いを表すとき"],
+                 examples: [
+                    ("Racial discrimination.", "人種差別。"),
+                    ("Fight discrimination.", "差別と戦う。")
+                 ]),
+            make("agency", "an organization or office",
+                 "代理店・機関",
+                 useCases: ["特定の業務を担う組織を表すとき"],
+                 examples: [
+                    ("Travel agency.", "旅行代理店。"),
+                    ("Government agency.", "政府機関。")
+                 ]),
+            make("confirm", "verify or make certain",
+                 "確認する・確定する",
+                 useCases: ["情報や予約の正しさを確かめるとき"],
+                 examples: [
+                    ("Please confirm your reservation.", "予約をご確認ください。"),
+                    ("Confirmed!", "確認済み!")
+                 ]),
+            make("enemy", "a hostile opponent",
+                 "敵",
+                 useCases: ["敵対する相手を表すとき"],
+                 examples: [
+                    ("Make an enemy.", "敵を作る。"),
+                    ("Public enemy.", "公敵。")
+                 ]),
+            make("dismantle", "take apart or abolish",
+                 "解体する・廃止する",
+                 useCases: ["機械や組織を分解・廃止するとき"],
+                 examples: [
+                    ("Dismantle the system.", "システムを解体する。"),
+                    ("Dismantle the machine.", "機械を分解する。")
+                 ]),
+            make("adopt sth", "take up or formally accept",
+                 "(方針などを)採用する・養子にする",
+                 useCases: ["方針・習慣・子供などを正式に受け入れるとき"],
+                 examples: [
+                    ("Adopt a new policy.", "新方針を採用。"),
+                    ("Adopt a child.", "子供を養子にする。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性質・動詞 (追加 10)
+
+    private static var qualityVerbs24: [Word] {
+        [
+            make("stupid", "lacking intelligence; foolish",
+                 "馬鹿な・愚かな",
+                 useCases: ["賢くない行動や判断を批判するとき(やや強い)"],
+                 examples: [
+                    ("That's stupid.", "それは馬鹿げてる。"),
+                    ("Stupid idea.", "バカな案。")
+                 ]),
+            make("pointless", "having no purpose",
+                 "無意味な",
+                 useCases: ["無駄な努力や議論を表すとき"],
+                 examples: [
+                    ("It's pointless.", "意味がない。"),
+                    ("A pointless argument.", "無意味な議論。")
+                 ]),
+            make("profession", "a paid occupation requiring training",
+                 "職業・専門職",
+                 useCases: ["専門知識を要する仕事を表すとき"],
+                 examples: [
+                    ("What's your profession?", "ご職業は?"),
+                    ("Teaching profession.", "教職。")
+                 ]),
+            make("intention", "an aim or plan",
+                 "意図・目的",
+                 useCases: ["何かをするつもりを表すとき"],
+                 examples: [
+                    ("Good intentions.", "良い意図。"),
+                    ("I have no intention of leaving.", "辞める気はない。")
+                 ]),
+            make("disappear", "stop being visible",
+                 "消える・姿を消す",
+                 useCases: ["物や人がいなくなるとき"],
+                 examples: [
+                    ("It disappeared!", "消えた!"),
+                    ("She just disappeared.", "彼女は突然いなくなった。")
+                 ]),
+            make("cosmetic", "relating to appearance; superficial",
+                 "化粧の・表面的な",
+                 useCases: ["美容関連、または見せかけだけの変更を表すとき"],
+                 examples: [
+                    ("Cosmetic surgery.", "美容整形。"),
+                    ("Just cosmetic changes.", "表面的な変更のみ。")
+                 ]),
+            make("remarkably", "in a striking way",
+                 "驚くほど・目立って",
+                 useCases: ["際立った特徴を強調するとき"],
+                 examples: [
+                    ("Remarkably similar.", "驚くほど似てる。"),
+                    ("Remarkably well.", "目覚ましく上手。")
+                 ]),
+            make("rise", "go up; increase",
+                 "上がる・上昇",
+                 useCases: ["価格・温度・人気などが上がるとき、または日の出"],
+                 examples: [
+                    ("Prices rise.", "値段が上がる。"),
+                    ("The sun rises.", "日が昇る。")
+                 ]),
+            make("charming", "delightfully attractive",
+                 "魅力的な",
+                 useCases: ["人や場所の魅力を褒めるとき"],
+                 examples: [
+                    ("A charming village.", "魅力的な村。"),
+                    ("He's so charming.", "彼は魅力的。")
+                 ]),
+            make("stalk", "follow secretly; pursue obsessively",
+                 "つけ回す・ストーキングする",
+                 useCases: ["人をひそかに追跡する不健全な行動"],
+                 examples: [
+                    ("Stop stalking me.", "つけ回さないで。"),
+                    ("She felt stalked.", "つけ回されていると感じた。")
                  ])
         ]
     }
