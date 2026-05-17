@@ -68,6 +68,7 @@ enum SeedData {
             + workComms17 + critiqueWords17 + outcomeWords17
             + adjectiveWords17 + verbWords17 + idiomWords17
             + thinkingPhrases18 + businessVerbs18 + learningWords18
+            + discussionPhrases19 + actionAdjectives19 + conceptPhrases19
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -11228,6 +11229,188 @@ enum SeedData {
                  examples: [
                     ("Read between the lines.", "行間を読んで。"),
                     ("If you read between the lines, ~", "行間を読めば〜")
+                 ])
+        ]
+    }
+
+    // MARK: - 議論・意見表明 (追加 10)
+
+    private static var discussionPhrases19: [Word] {
+        [
+            make("if I'm wrong", "in case I am mistaken",
+                 "もし私が間違っていたら",
+                 useCases: ["訂正を促す前置きとして"],
+                 examples: [
+                    ("Correct me if I'm wrong.", "間違ってたら教えて。"),
+                    ("If I'm wrong, let me know.", "間違ってたら教えてね。")
+                 ]),
+            make("correct", "right; free from error",
+                 "正しい・訂正する",
+                 useCases: ["事実や答えが合っていることを表すとき"],
+                 examples: [
+                    ("That's correct.", "正解。"),
+                    ("Please correct me.", "訂正してください。")
+                 ]),
+            make("as a matter of fact", "in actuality",
+                 "実は・実際のところ",
+                 useCases: ["相手の予想に反する情報を伝えるとき"],
+                 examples: [
+                    ("As a matter of fact, I do know him.", "実は彼を知ってる。"),
+                    ("As a matter of fact, you're right.", "実際、君は正しい。")
+                 ]),
+            make("in that sense", "from that perspective",
+                 "その意味では",
+                 useCases: ["特定の観点に絞って述べるとき"],
+                 examples: [
+                    ("In that sense, yes.", "その意味ではイエス。"),
+                    ("In that sense, we agree.", "その意味では一致。")
+                 ]),
+            make("for instance", "for example",
+                 "例えば",
+                 useCases: ["具体例を挙げるとき"],
+                 examples: [
+                    ("For instance, take Japan.", "例えば日本を考えてみよう。"),
+                    ("Many cities, for instance Tokyo.", "多くの都市、例えば東京。")
+                 ]),
+            make("technically", "strictly according to facts",
+                 "厳密には・テクニカルに言うと",
+                 useCases: ["細かい事実関係を強調するとき"],
+                 examples: [
+                    ("Technically, that's true.", "厳密にはそれは正しい。"),
+                    ("Technically, you're right.", "技術的には合ってる。")
+                 ]),
+            make("literally", "in a literal sense; actually",
+                 "文字通り・マジで",
+                 useCases: ["強調する時の口語(本来の意味と俗な強調の両方)"],
+                 examples: [
+                    ("I literally cried.", "マジで泣いた。"),
+                    ("Literally everyone.", "文字通り全員。")
+                 ]),
+            make("my understanding is that", "I believe / I assume that",
+                 "私の理解では〜だ",
+                 useCases: ["自分の理解を慎重に提示するとき"],
+                 examples: [
+                    ("My understanding is that we agreed.", "私の理解では合意したと。"),
+                    ("My understanding is that it starts at 9.", "9時開始と理解している。")
+                 ]),
+            make("good to know", "thanks for the information",
+                 "知れてよかった・参考になる",
+                 useCases: ["情報を受け取ったときのリアクション"],
+                 examples: [
+                    ("Good to know!", "それはいい情報。"),
+                    ("Good to know, thanks!", "知れてよかった、ありがとう!")
+                 ]),
+            make("how does that sound", "what do you think of that",
+                 "それでどうかな・どう思う?",
+                 useCases: ["提案の感触を尋ねるとき"],
+                 examples: [
+                    ("Friday at 3 — how does that sound?", "金曜3時、どう?"),
+                    ("How does that sound to you?", "それで君はどう思う?")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・性質 (追加 8)
+
+    private static var actionAdjectives19: [Word] {
+        [
+            make("streamline", "make more efficient",
+                 "(プロセスを)効率化する",
+                 useCases: ["手順や組織を簡素化・効率化するとき"],
+                 examples: [
+                    ("Streamline the workflow.", "業務フローを効率化。"),
+                    ("We need to streamline operations.", "業務を簡素化する必要がある。")
+                 ]),
+            make("prioritize", "treat as more important",
+                 "優先する",
+                 useCases: ["何かを他より優先順位を上げるとき"],
+                 examples: [
+                    ("Prioritize your health.", "健康を優先して。"),
+                    ("Let's prioritize this task.", "このタスクを優先しよう。")
+                 ]),
+            make("up to", "depending on; until; capable of",
+                 "〜次第・〜まで・〜にかかっている",
+                 useCases: ["責任・限度・進行中の活動を表すとき"],
+                 examples: [
+                    ("It's up to you.", "あなた次第。"),
+                    ("What are you up to?", "何してるの?")
+                 ]),
+            make("demanding", "requiring much effort",
+                 "要求の多い・大変な",
+                 useCases: ["仕事や人が手のかかる状態を表すとき"],
+                 examples: [
+                    ("A demanding job.", "厳しい仕事。"),
+                    ("She's very demanding.", "彼女は要求が多い。")
+                 ]),
+            make("solid", "reliable; well-built; impressive",
+                 "しっかりした・確かな・最高の",
+                 useCases: ["信頼性や完成度を称えるとき"],
+                 examples: [
+                    ("A solid plan.", "しっかりした計画。"),
+                    ("Solid work!", "いい仕事!")
+                 ]),
+            make("sustainable", "able to be maintained",
+                 "持続可能な",
+                 useCases: ["環境・経営・習慣が長続きすることを表すとき"],
+                 examples: [
+                    ("Sustainable energy.", "持続可能なエネルギー。"),
+                    ("Not sustainable.", "持続できない。")
+                 ]),
+            make("let sth go", "stop holding on to",
+                 "(物事を)手放す・忘れる",
+                 useCases: ["執着を手放したり許したりするとき"],
+                 examples: [
+                    ("Let it go.", "もう忘れて。"),
+                    ("Hard to let it go.", "手放すのが難しい。")
+                 ]),
+            make("native", "born in a place; one's first language",
+                 "ネイティブの・生まれつきの",
+                 useCases: ["出身や母語を表すとき"],
+                 examples: [
+                    ("Native speaker.", "ネイティブスピーカー。"),
+                    ("Native to Japan.", "日本原産。")
+                 ])
+        ]
+    }
+
+    // MARK: - 概念・慣用句 (追加 5)
+
+    private static var conceptPhrases19: [Word] {
+        [
+            make("nuance", "a subtle difference or shade of meaning",
+                 "ニュアンス・微妙な違い",
+                 useCases: ["細かい言葉や態度の差を表すとき"],
+                 examples: [
+                    ("Subtle nuance.", "微妙なニュアンス。"),
+                    ("Lost in translation — nuances.", "翻訳で失われる微妙な差。")
+                 ]),
+            make("interchangeable", "able to be used in place of each other",
+                 "交換可能な・互いに置き換えられる",
+                 useCases: ["2つの語や物が同じように使えるとき"],
+                 examples: [
+                    ("These words are interchangeable.", "これらの語は置き換え可能。"),
+                    ("Interchangeable parts.", "互換性のある部品。")
+                 ]),
+            make("pros and cons", "arguments for and against",
+                 "長所と短所",
+                 useCases: ["判断のため両面を比較するとき"],
+                 examples: [
+                    ("Weigh the pros and cons.", "長所と短所を比較する。"),
+                    ("List the pros and cons.", "メリットとデメリットを列挙。")
+                 ]),
+            make("make a difference", "have a significant effect",
+                 "違いを生む・影響を与える",
+                 useCases: ["行動が結果に影響することを強調するとき"],
+                 examples: [
+                    ("You can make a difference.", "あなたが変えられる。"),
+                    ("It really made a difference.", "本当に違いを生んだ。")
+                 ]),
+            make("haven't thought about", "haven't considered",
+                 "考えてもみなかった",
+                 useCases: ["想定外の話題について考えたことがないと答えるとき"],
+                 examples: [
+                    ("I haven't thought about it.", "考えたことなかった。"),
+                    ("Haven't thought about that yet.", "まだ考えてない。")
                  ])
         ]
     }
