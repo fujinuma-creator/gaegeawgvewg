@@ -70,6 +70,7 @@ enum SeedData {
             + thinkingPhrases18 + businessVerbs18 + learningWords18
             + discussionPhrases19 + actionAdjectives19 + conceptPhrases19
             + reactionWords20 + mediaAndOthers20
+            + opinionPhrases21 + learningPhrases21 + actionPhrases21
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -11538,6 +11539,244 @@ enum SeedData {
                  examples: [
                     ("Insulate the house.", "家を断熱する。"),
                     ("Insulated from criticism.", "批判から守られている。")
+                 ])
+        ]
+    }
+
+    // MARK: - 意見・反応 (追加 10)
+
+    private static var opinionPhrases21: [Word] {
+        [
+            make("my point is that", "what I'm trying to say is",
+                 "私が言いたいのは〜だ",
+                 useCases: ["要点を改めて伝えるとき"],
+                 examples: [
+                    ("My point is that we need more time.", "私が言いたいのは時間が必要ってこと。"),
+                    ("My point is, it's complicated.", "要するに複雑なんだ。")
+                 ]),
+            make("a big fan of", "really enjoy or admire",
+                 "〜の大ファン",
+                 useCases: ["強い好みや支持を表すとき"],
+                 examples: [
+                    ("I'm a big fan of jazz.", "ジャズの大ファン。"),
+                    ("Not a big fan of horror.", "ホラーはあまり好きじゃない。")
+                 ]),
+            make("strongly believe", "have a firm conviction",
+                 "強く信じる",
+                 useCases: ["意見や信念を断固として表明するとき"],
+                 examples: [
+                    ("I strongly believe in this.", "これを強く信じている。"),
+                    ("We strongly believe it works.", "うまくいくと強く信じている。")
+                 ]),
+            make("couldn't agree more", "completely agree",
+                 "全く同感",
+                 useCases: ["相手の意見に100%賛同するとき"],
+                 examples: [
+                    ("I couldn't agree more.", "全く同感。"),
+                    ("Couldn't agree more on that.", "それは完全に同意。")
+                 ]),
+            make("valid", "well-founded; reasonable",
+                 "妥当な・正当な",
+                 useCases: ["意見や懸念がもっともだと認めるとき"],
+                 examples: [
+                    ("That's a valid point.", "それは妥当な意見。"),
+                    ("Your feelings are valid.", "君の気持ちは正当。")
+                 ]),
+            make("be with you on sth", "agree with you about",
+                 "(その件で)君に同意する",
+                 useCases: ["相手の意見に共感を示すとき"],
+                 examples: [
+                    ("I'm with you on that.", "それに関しては同意。"),
+                    ("Totally with you on this.", "それなら完全に賛成。")
+                 ]),
+            make("that figures", "that makes sense",
+                 "やっぱりね・そうだろうな",
+                 useCases: ["予想通りの結果に対する反応"],
+                 examples: [
+                    ("That figures!", "やっぱりね!"),
+                    ("Late again? That figures.", "また遅刻?だろうね。")
+                 ]),
+            make("can relate to", "be able to identify with",
+                 "共感できる・同じ経験がある",
+                 useCases: ["他人の状況や気持ちに共感するとき"],
+                 examples: [
+                    ("I can relate to that.", "それ分かるわ。"),
+                    ("Can totally relate.", "めっちゃ共感。")
+                 ]),
+            make("moving forward", "from now on",
+                 "今後は・これから",
+                 useCases: ["今後の方針を述べる時のビジネス表現"],
+                 examples: [
+                    ("Moving forward, we'll be more careful.", "今後は気をつけます。"),
+                    ("Moving forward with the plan.", "計画を進めていく。")
+                 ]),
+            make("before I forget", "while it's still on my mind",
+                 "忘れないうちに",
+                 useCases: ["重要なことを思い出して伝えるとき"],
+                 examples: [
+                    ("Before I forget, you owe me $10.", "忘れないうちに、10ドル貸してる。"),
+                    ("Oh, before I forget, ~", "忘れないうちに〜")
+                 ])
+        ]
+    }
+
+    // MARK: - 学習・分析 (追加 10)
+
+    private static var learningPhrases21: [Word] {
+        [
+            make("slang", "informal language",
+                 "スラング・俗語",
+                 useCases: ["カジュアルな言い回しを話題にするとき"],
+                 examples: [
+                    ("Teen slang.", "若者スラング。"),
+                    ("Internet slang.", "ネットスラング。")
+                 ]),
+            make("term", "a word or expression for something specific",
+                 "用語・言葉",
+                 useCases: ["特定の言葉を話題にするとき"],
+                 examples: [
+                    ("Technical term.", "専門用語。"),
+                    ("In simple terms, ~", "簡単に言うと〜")
+                 ]),
+            make("literally means", "the literal meaning is",
+                 "文字通りの意味は〜",
+                 useCases: ["語源や直訳を説明するとき"],
+                 examples: [
+                    ("'Karoshi' literally means death from overwork.", "「過労死」は文字通り働きすぎによる死を意味する。"),
+                    ("It literally means 'cherry blossom'.", "文字通り「桜」を意味する。")
+                 ]),
+            make("master", "become highly skilled at",
+                 "習得する・極める",
+                 useCases: ["スキルや言語を完全に身につけるとき"],
+                 examples: [
+                    ("Master a new language.", "新しい言語を習得する。"),
+                    ("Master the basics first.", "まず基礎を極めて。")
+                 ]),
+            make("differentiate", "distinguish between things",
+                 "区別する・差別化する",
+                 useCases: ["違いを明確にするとき"],
+                 examples: [
+                    ("Differentiate the two.", "2つを区別する。"),
+                    ("Differentiate your brand.", "ブランドを差別化する。")
+                 ]),
+            make("tell apart", "distinguish between similar things",
+                 "見分ける",
+                 useCases: ["似たものの違いを見抜くとき"],
+                 examples: [
+                    ("I can't tell them apart.", "見分けがつかない。"),
+                    ("Hard to tell apart.", "区別が難しい。")
+                 ]),
+            make("incorporate", "include as part of a whole",
+                 "取り入れる・組み込む",
+                 useCases: ["要素を全体に組み入れるとき"],
+                 examples: [
+                    ("Incorporate feedback.", "フィードバックを取り入れる。"),
+                    ("Incorporate exercise into your day.", "日常に運動を組み込む。")
+                 ]),
+            make("focus", "concentrate attention",
+                 "集中する・焦点",
+                 useCases: ["注意を集中するときや、ある一点を強調するとき"],
+                 examples: [
+                    ("Focus on the goal.", "目標に集中。"),
+                    ("My main focus is health.", "私の最大の焦点は健康。")
+                 ]),
+            make("track sth", "monitor or follow progress",
+                 "追跡する・記録する",
+                 useCases: ["進捗や数値を継続的に管理するとき"],
+                 examples: [
+                    ("Track your spending.", "支出を記録する。"),
+                    ("Track the package.", "荷物を追跡する。")
+                 ]),
+            make("progress", "forward movement; improvement",
+                 "進捗・進歩",
+                 useCases: ["前進や成長を表すとき"],
+                 examples: [
+                    ("Making progress.", "進展してる。"),
+                    ("Track your progress.", "進捗を記録する。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動作・状態 (追加 11)
+
+    private static var actionPhrases21: [Word] {
+        [
+            make("obstacle", "something that blocks progress",
+                 "障害・障害物",
+                 useCases: ["前進を妨げるものを表すとき"],
+                 examples: [
+                    ("Overcome obstacles.", "障害を乗り越える。"),
+                    ("Major obstacle.", "大きな障害。")
+                 ]),
+            make("step out", "leave briefly",
+                 "ちょっと外す・出る",
+                 useCases: ["短時間だけ場を離れるとき"],
+                 examples: [
+                    ("I need to step out for a sec.", "ちょっと席を外すね。"),
+                    ("She stepped out for lunch.", "彼女は昼食に出てる。")
+                 ]),
+            make("set sth", "place or arrange something",
+                 "設置する・設定する",
+                 useCases: ["物を置く、設定する動作を表すとき"],
+                 examples: [
+                    ("Set the table.", "テーブルセッティング。"),
+                    ("Set a goal.", "目標を設定。")
+                 ]),
+            make("recharge", "restore energy or power",
+                 "充電する・元気を取り戻す",
+                 useCases: ["電子機器の充電や、人がリフレッシュするとき"],
+                 examples: [
+                    ("Recharge my phone.", "スマホを充電する。"),
+                    ("I need to recharge.", "リフレッシュが必要。")
+                 ]),
+            make("come across as", "give the impression of being",
+                 "〜の印象を与える・〜のように見える",
+                 useCases: ["人の振る舞いがどう映るかを語るとき"],
+                 examples: [
+                    ("He comes across as arrogant.", "彼は傲慢に見える。"),
+                    ("She came across as friendly.", "彼女は親しみやすく見えた。")
+                 ]),
+            make("keep up", "maintain the pace or continue",
+                 "ついていく・続ける",
+                 useCases: ["相手や状況に遅れずに進むとき"],
+                 examples: [
+                    ("Keep up the good work!", "その調子で頑張って!"),
+                    ("Can't keep up.", "ついていけない。")
+                 ]),
+            make("move on to", "shift to the next thing",
+                 "(次の話題などに)進む",
+                 useCases: ["別の話題やタスクに移るとき"],
+                 examples: [
+                    ("Let's move on to the next topic.", "次の話題に移ろう。"),
+                    ("Moving on to step 2.", "ステップ2に進む。")
+                 ]),
+            make("vibrant", "full of energy and color",
+                 "活気のある・鮮やかな",
+                 useCases: ["街・色・雰囲気が生き生きしていることを表すとき"],
+                 examples: [
+                    ("A vibrant city.", "活気ある街。"),
+                    ("Vibrant colors.", "鮮やかな色。")
+                 ]),
+            make("sophisticated", "refined; complex",
+                 "洗練された・高度な",
+                 useCases: ["品の良さや高度さを表すとき"],
+                 examples: [
+                    ("A sophisticated design.", "洗練されたデザイン。"),
+                    ("Sophisticated taste.", "洗練された趣味。")
+                 ]),
+            make("break the ice", "ease initial awkwardness",
+                 "場の緊張をほぐす",
+                 useCases: ["初対面や気まずい場面で会話のきっかけを作るとき"],
+                 examples: [
+                    ("Break the ice with a joke.", "冗談で場を和ませる。"),
+                    ("Who's going to break the ice?", "誰が口火を切る?")
+                 ]),
+            make("blink", "open and shut eyes quickly",
+                 "まばたきする",
+                 useCases: ["目をパチパチさせる動作、または瞬く間の比喩"],
+                 examples: [
+                    ("Don't blink.", "瞬きしないで。"),
+                    ("In the blink of an eye.", "あっという間に。")
                  ])
         ]
     }
