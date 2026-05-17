@@ -71,6 +71,8 @@ enum SeedData {
             + discussionPhrases19 + actionAdjectives19 + conceptPhrases19
             + reactionWords20 + mediaAndOthers20
             + opinionPhrases21 + learningPhrases21 + actionPhrases21
+            + economySocial22 + businessTerms22 + actionVerbs22
+            + characterStates22 + evaluationMedia22
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -11777,6 +11779,391 @@ enum SeedData {
                  examples: [
                     ("Don't blink.", "瞬きしないで。"),
                     ("In the blink of an eye.", "あっという間に。")
+                 ])
+        ]
+    }
+
+    // MARK: - 経済・社会 (追加 10)
+
+    private static var economySocial22: [Word] {
+        [
+            make("transit", "the act of being conveyed",
+                 "輸送・通過・移動",
+                 useCases: ["公共交通や物の運搬を表すとき"],
+                 examples: [
+                    ("Public transit.", "公共交通機関。"),
+                    ("In transit.", "輸送中。")
+                 ]),
+            make("vicious cycle", "self-reinforcing harmful pattern",
+                 "悪循環",
+                 useCases: ["悪い状況が悪化を呼ぶ繰り返しを表すとき"],
+                 examples: [
+                    ("Break the vicious cycle.", "悪循環を断ち切る。"),
+                    ("Stuck in a vicious cycle.", "悪循環から抜け出せない。")
+                 ]),
+            make("tipping point", "a critical moment of change",
+                 "転換点・臨界点",
+                 useCases: ["大きな変化が始まる瞬間を表すとき"],
+                 examples: [
+                    ("Reached the tipping point.", "臨界点に達した。"),
+                    ("This is the tipping point.", "ここが転換点。")
+                 ]),
+            make("safety net", "a system that protects against loss",
+                 "安全網・セーフティネット",
+                 useCases: ["社会保障や保険のように万一に備える仕組み"],
+                 examples: [
+                    ("Social safety net.", "社会的セーフティネット。"),
+                    ("A financial safety net.", "経済的な安全網。")
+                 ]),
+            make("disposable", "intended to be thrown away",
+                 "使い捨ての・処分可能な",
+                 useCases: ["一度使って捨てる物や、自由に使える資源を表すとき"],
+                 examples: [
+                    ("Disposable cups.", "使い捨てコップ。"),
+                    ("Disposable income.", "可処分所得。")
+                 ]),
+            make("income", "money received from work or investments",
+                 "収入・所得",
+                 useCases: ["お金の受け取りを表すとき"],
+                 examples: [
+                    ("Monthly income.", "月収。"),
+                    ("Increase your income.", "収入を増やす。")
+                 ]),
+            make("gap", "an opening or disparity",
+                 "隙間・格差・空白",
+                 useCases: ["物理的な隙間や能力・収入の差を表すとき"],
+                 examples: [
+                    ("Income gap.", "所得格差。"),
+                    ("Mind the gap.", "隙間にご注意(駅放送)。")
+                 ]),
+            make("brain drain", "loss of talented people to other places",
+                 "頭脳流出",
+                 useCases: ["優秀人材が国外や別組織へ流れる現象を表すとき"],
+                 examples: [
+                    ("The brain drain to Silicon Valley.", "シリコンバレーへの頭脳流出。"),
+                    ("Reverse the brain drain.", "頭脳流出を逆転させる。")
+                 ]),
+            make("burden", "a heavy load or responsibility",
+                 "重荷・負担",
+                 useCases: ["重い責任や心理的負担を表すとき"],
+                 examples: [
+                    ("A heavy burden.", "重い負担。"),
+                    ("Don't burden yourself.", "自分を追い詰めないで。")
+                 ]),
+            make("gray area", "an unclear or ambiguous situation",
+                 "グレーゾーン・曖昧な領域",
+                 useCases: ["善悪や合法違法の境界が不明確な状況"],
+                 examples: [
+                    ("That's a gray area.", "それはグレーゾーン。"),
+                    ("A legal gray area.", "法的なグレーゾーン。")
+                 ])
+        ]
+    }
+
+    // MARK: - ビジネス・取引用語 (追加 10)
+
+    private static var businessTerms22: [Word] {
+        [
+            make("win-win", "beneficial for both sides",
+                 "双方が得をする・ウィンウィン",
+                 useCases: ["全員にとって有利な状況を表すとき"],
+                 examples: [
+                    ("A win-win situation.", "ウィンウィンの状況。"),
+                    ("Let's make it win-win.", "双方が得する形にしよう。")
+                 ]),
+            make("gem", "something or someone of great value",
+                 "宝石・隠れた逸品",
+                 useCases: ["素晴らしい人や物、隠れた名作を表すとき"],
+                 examples: [
+                    ("A hidden gem.", "隠れた名所。"),
+                    ("She's a real gem.", "彼女は本当に素晴らしい人。")
+                 ]),
+            make("gray out", "become temporarily disabled or faded",
+                 "(画面が)グレーアウトする・一時的に意識が遠のく",
+                 useCases: ["UIで無効化される、または立ちくらみの状態"],
+                 examples: [
+                    ("The button is grayed out.", "ボタンがグレーアウトしてる。"),
+                    ("I grayed out for a moment.", "一瞬意識が遠のいた。")
+                 ]),
+            make("party", "a person or group in an agreement",
+                 "当事者・関係者",
+                 useCases: ["契約や訴訟の関係者を表すとき(法的・ビジネス用語)"],
+                 examples: [
+                    ("Third party.", "第三者。"),
+                    ("Both parties agreed.", "両当事者が合意した。")
+                 ]),
+            make("out of pocket", "paying with one's own money",
+                 "自腹で・連絡が取れない",
+                 useCases: ["自費負担、または連絡不能な状態を表すとき"],
+                 examples: [
+                    ("Paid out of pocket.", "自腹で払った。"),
+                    ("I'll be out of pocket today.", "今日は連絡取れない。")
+                 ]),
+            make("benchmark", "a standard to compare against",
+                 "基準・指標・ベンチマーク",
+                 useCases: ["比較のための標準を設定するとき"],
+                 examples: [
+                    ("Industry benchmark.", "業界基準。"),
+                    ("Set a benchmark.", "基準を設定する。")
+                 ]),
+            make("record", "a documented account or fastest result",
+                 "記録・録音",
+                 useCases: ["記録を保管・更新するとき、または録音するとき"],
+                 examples: [
+                    ("Break the record.", "記録を破る。"),
+                    ("On the record.", "公式に。")
+                 ]),
+            make("incentive", "something that motivates action",
+                 "誘因・インセンティブ",
+                 useCases: ["動機付けや報酬を表すとき"],
+                 examples: [
+                    ("Financial incentive.", "金銭的インセンティブ。"),
+                    ("Provide an incentive.", "誘因を提供する。")
+                 ]),
+            make("asset", "a valuable thing or quality",
+                 "資産・財産・強み",
+                 useCases: ["お金や能力など価値のあるものを表すとき"],
+                 examples: [
+                    ("A valuable asset.", "貴重な資産。"),
+                    ("She's an asset to the team.", "彼女はチームの財産。")
+                 ]),
+            make("liability", "a debt or burden",
+                 "負債・厄介者",
+                 useCases: ["金銭的負債や、足を引っ張る存在を表すとき"],
+                 examples: [
+                    ("Assets and liabilities.", "資産と負債。"),
+                    ("He's a liability.", "彼はお荷物。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var actionVerbs22: [Word] {
+        [
+            make("lever", "use as leverage",
+                 "てこ・梃子のように使う",
+                 useCases: ["物理的なてこや影響力としての梃子を表すとき"],
+                 examples: [
+                    ("Pull the lever.", "レバーを引く。"),
+                    ("Use it as a lever.", "梃子として使う。")
+                 ]),
+            make("sweeten", "make more attractive",
+                 "甘くする・(取引を)魅力的にする",
+                 useCases: ["飲食物を甘くする、または取引条件を良くするとき"],
+                 examples: [
+                    ("Sweeten the deal.", "取引条件を良くする。"),
+                    ("Sweeten my coffee.", "コーヒーを甘くする。")
+                 ]),
+            make("string", "a series; a thin cord",
+                 "ひも・連続・条件",
+                 useCases: ["紐の意味、連続するもの、または「条件付き」の比喩"],
+                 examples: [
+                    ("A string of wins.", "連勝。"),
+                    ("No strings attached.", "条件なし。")
+                 ]),
+            make("swindle", "cheat someone out of money",
+                 "騙し取る・詐取する",
+                 useCases: ["詐欺で金銭をだまし取るとき"],
+                 examples: [
+                    ("She was swindled.", "彼女は騙された。"),
+                    ("A swindle of millions.", "数百万の詐欺。")
+                 ]),
+            make("balance sth", "keep in equilibrium",
+                 "〜のバランスを取る",
+                 useCases: ["時間・お金・物理的な釣り合いを保つとき"],
+                 examples: [
+                    ("Balance work and life.", "仕事と生活を両立。"),
+                    ("Balance the books.", "帳簿を均衡させる。")
+                 ]),
+            make("conclude", "bring to an end; reach a decision",
+                 "結論を出す・終結する",
+                 useCases: ["話や調査を締めくくり、判断を下すとき"],
+                 examples: [
+                    ("Conclude the meeting.", "会議を締めくくる。"),
+                    ("I conclude that ~", "〜と結論する。")
+                 ]),
+            make("compromise", "settle by mutual concession",
+                 "妥協する・妥協案",
+                 useCases: ["双方が譲り合って合意するとき"],
+                 examples: [
+                    ("Reach a compromise.", "妥協に達する。"),
+                    ("Don't compromise on quality.", "品質では妥協するな。")
+                 ]),
+            make("resort to", "use as a last option",
+                 "(最後の手段として)頼る",
+                 useCases: ["望ましくない手段に頼らざるを得ないとき"],
+                 examples: [
+                    ("Resort to violence.", "暴力に訴える。"),
+                    ("Had to resort to begging.", "懇願に頼るしかなかった。")
+                 ]),
+            make("plate", "a flat dish; a license plate",
+                 "皿・ナンバープレート",
+                 useCases: ["食器や車のナンバー、責任の量の比喩"],
+                 examples: [
+                    ("Clean your plate.", "皿をきれいに食べて。"),
+                    ("A lot on my plate.", "やることが山積み。")
+                 ]),
+            make("tag", "label or mark; identify in a post",
+                 "タグ・(SNSで)タグ付けする",
+                 useCases: ["値札やラベル、またはSNSで誰かを言及するとき"],
+                 examples: [
+                    ("Price tag.", "値札。"),
+                    ("Tag me in the photo.", "写真にタグ付けして。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性格・状態・物 (追加 10)
+
+    private static var characterStates22: [Word] {
+        [
+            make("nasty", "unpleasant; mean",
+                 "不快な・意地悪な",
+                 useCases: ["人や状況の嫌な性質を表すとき"],
+                 examples: [
+                    ("Nasty weather.", "嫌な天気。"),
+                    ("Don't be nasty.", "意地悪しないで。")
+                 ]),
+            make("naughty", "mischievous; misbehaving",
+                 "いたずらな・行儀の悪い",
+                 useCases: ["子供のいたずら、または大人のいかがわしさを表すとき"],
+                 examples: [
+                    ("Naughty kids.", "いたずらっ子。"),
+                    ("Naughty boy!", "悪い子!")
+                 ]),
+            make("gut", "the intestines; instinct",
+                 "腸・本能・直感",
+                 useCases: ["内臓を指す、または本能・度胸の比喩"],
+                 examples: [
+                    ("Trust your gut.", "直感を信じて。"),
+                    ("Takes guts.", "度胸が要る。")
+                 ]),
+            make("thumb", "the short thick finger",
+                 "親指",
+                 useCases: ["親指、または「経験則」のような比喩"],
+                 examples: [
+                    ("Thumbs up!", "親指立てて(いいね)!"),
+                    ("Rule of thumb.", "経験則。")
+                 ]),
+            make("comfort food", "food that gives emotional comfort",
+                 "心が落ち着く食べ物",
+                 useCases: ["懐かしくて気持ちが安らぐ料理を表すとき"],
+                 examples: [
+                    ("Ramen is my comfort food.", "ラーメンは私のソウルフード。"),
+                    ("Need some comfort food.", "癒し系の食事が欲しい。")
+                 ]),
+            make("work in progress", "something still being developed",
+                 "進行中・未完成",
+                 useCases: ["完成していない作業や自己改善を表すとき"],
+                 examples: [
+                    ("It's a work in progress.", "まだ作業中。"),
+                    ("I'm a work in progress.", "私は成長途中。")
+                 ]),
+            make("uphill", "going up a slope; difficult",
+                 "上り坂の・困難な",
+                 useCases: ["物理的な上り坂や、苦戦している状況を表すとき"],
+                 examples: [
+                    ("An uphill battle.", "苦戦・困難な戦い。"),
+                    ("Uphill climb.", "上り坂。")
+                 ]),
+            make("battle", "a fight or struggle",
+                 "戦い・闘争",
+                 useCases: ["物理的な戦闘や、困難との奮闘を表すとき"],
+                 examples: [
+                    ("Battle for survival.", "生存をかけた戦い。"),
+                    ("An uphill battle.", "困難な戦い。")
+                 ]),
+            make("cushion", "a soft pad; to soften impact",
+                 "クッション・衝撃を和らげる",
+                 useCases: ["物理的クッション、または衝撃緩和の比喩"],
+                 examples: [
+                    ("Sit on the cushion.", "クッションに座って。"),
+                    ("Cushion the blow.", "衝撃を和らげる。")
+                 ]),
+            make("wheel", "a circular object that turns",
+                 "車輪・ハンドル",
+                 useCases: ["車輪や運転席のハンドルを表すとき"],
+                 examples: [
+                    ("Behind the wheel.", "ハンドルを握って。"),
+                    ("Reinvent the wheel.", "車輪の再発明をする(無駄な努力)。")
+                 ])
+        ]
+    }
+
+    // MARK: - 評価・メディア・その他 (追加 10)
+
+    private static var evaluationMedia22: [Word] {
+        [
+            make("masterpiece", "an outstanding work of art",
+                 "傑作",
+                 useCases: ["最高峰の作品を称えるとき"],
+                 examples: [
+                    ("A literary masterpiece.", "文学の傑作。"),
+                    ("This film is a masterpiece.", "この映画は傑作。")
+                 ]),
+            make("page turner", "a very engaging book",
+                 "読みだしたら止まらない本",
+                 useCases: ["夢中になって読んでしまう小説などを表すとき"],
+                 examples: [
+                    ("A real page turner.", "本当のページターナー。"),
+                    ("This novel is a page turner.", "この小説は止まらない。")
+                 ]),
+            make("flop", "a complete failure",
+                 "大失敗・コケる",
+                 useCases: ["映画や商品が興行・売上で失敗したとき"],
+                 examples: [
+                    ("Box office flop.", "興行的大コケ。"),
+                    ("The launch was a flop.", "ローンチは失敗。")
+                 ]),
+            make("overrated", "rated more highly than deserved",
+                 "過大評価された",
+                 useCases: ["評判ほど良くないと感じるものを表すとき"],
+                 examples: [
+                    ("Overrated movie.", "過大評価の映画。"),
+                    ("Honestly, overrated.", "正直、過大評価。")
+                 ]),
+            make("cult", "a small devoted following",
+                 "カルト的な・熱狂的支持",
+                 useCases: ["熱狂的なファンの少ない集団を表すとき"],
+                 examples: [
+                    ("Cult classic.", "カルト的名作。"),
+                    ("Has a cult following.", "熱狂的ファンを持つ。")
+                 ]),
+            make("classic", "a timeless example of excellence",
+                 "古典・定番・典型的な",
+                 useCases: ["時代を超えて愛される作品や物を表すとき"],
+                 examples: [
+                    ("A classic film.", "定番映画。"),
+                    ("Classic mistake.", "典型的なミス。")
+                 ]),
+            make("discrepancy", "an inconsistency",
+                 "食い違い・不一致",
+                 useCases: ["データや証言の不整合を表すとき"],
+                 examples: [
+                    ("A discrepancy in the data.", "データの不一致。"),
+                    ("Explain the discrepancy.", "食い違いを説明して。")
+                 ]),
+            make("prerequisite", "something required beforehand",
+                 "前提条件・必須要件",
+                 useCases: ["何かを始める前に必要な条件を表すとき"],
+                 examples: [
+                    ("Math is a prerequisite.", "数学が必須。"),
+                    ("Meet the prerequisites.", "前提条件を満たす。")
+                 ]),
+            make("last resort", "a final option",
+                 "最後の手段",
+                 useCases: ["他の選択肢が尽きた時の最後の選択肢"],
+                 examples: [
+                    ("As a last resort.", "最後の手段として。"),
+                    ("Surgery is the last resort.", "手術は最終手段。")
+                 ]),
+            make("catalyst", "something that triggers change",
+                 "触媒・きっかけ",
+                 useCases: ["変化や事件のきっかけを表すとき"],
+                 examples: [
+                    ("A catalyst for change.", "変化のきっかけ。"),
+                    ("The event was the catalyst.", "あの出来事が触媒となった。")
                  ])
         ]
     }
