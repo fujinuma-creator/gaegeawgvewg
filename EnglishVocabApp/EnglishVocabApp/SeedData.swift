@@ -69,6 +69,7 @@ enum SeedData {
             + adjectiveWords17 + verbWords17 + idiomWords17
             + thinkingPhrases18 + businessVerbs18 + learningWords18
             + discussionPhrases19 + actionAdjectives19 + conceptPhrases19
+            + reactionWords20 + mediaAndOthers20
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -11411,6 +11412,132 @@ enum SeedData {
                  examples: [
                     ("I haven't thought about it.", "考えたことなかった。"),
                     ("Haven't thought about that yet.", "まだ考えてない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 反応・特性 (追加 8)
+
+    private static var reactionWords20: [Word] {
+        [
+            make("call out", "publicly criticize or point out",
+                 "公然と指摘する・呼びかける",
+                 useCases: ["誰かの問題行動を名指しで批判するとき"],
+                 examples: [
+                    ("Call out the hypocrisy.", "偽善を指摘する。"),
+                    ("She called him out on it.", "彼女がそれを指摘した。")
+                 ]),
+            make("green flag", "a positive sign in a relationship",
+                 "好材料・好印象のサイン",
+                 useCases: ["red flag(危険信号)の反対、良い兆候を表すとき"],
+                 examples: [
+                    ("Big green flag!", "完全に好印象!"),
+                    ("That's a green flag.", "それは良いサイン。")
+                 ]),
+            make("goosebumps", "raised bumps on skin from emotion",
+                 "鳥肌",
+                 useCases: ["感動や恐怖などで肌が反応した時"],
+                 examples: [
+                    ("I got goosebumps.", "鳥肌立った。"),
+                    ("Pure goosebumps moment.", "完全に鳥肌もの。")
+                 ]),
+            make("ick", "a sudden feeling of repulsion",
+                 "急に冷める感じ・キモい瞬間",
+                 useCases: ["デート相手などに急に幻滅したときのZ世代スラング"],
+                 examples: [
+                    ("That gave me the ick.", "それで一気に冷めた。"),
+                    ("Major ick.", "完全にキモい。")
+                 ]),
+            make("soulmate", "a perfectly compatible partner",
+                 "ソウルメイト・運命の人",
+                 useCases: ["心から通じ合える相手を表すとき"],
+                 examples: [
+                    ("She's my soulmate.", "彼女は運命の人。"),
+                    ("Looking for a soulmate.", "ソウルメイトを探してる。")
+                 ]),
+            make("brainrot", "low-quality content that dulls thinking",
+                 "脳を腐らせるコンテンツ",
+                 useCases: ["中毒性の低俗ネットコンテンツを表すZ世代用語"],
+                 examples: [
+                    ("Pure brainrot.", "完全に脳が腐る。"),
+                    ("Stop watching brainrot.", "脳腐りコンテンツを見るのやめて。")
+                 ]),
+            make("nerd", "an enthusiast or studious person",
+                 "オタク・勉強好き",
+                 useCases: ["特定分野に熱中する人を表すとき(時に親愛・時に揶揄)"],
+                 examples: [
+                    ("Total nerd.", "完全にオタク。"),
+                    ("Math nerd.", "数学オタク。")
+                 ]),
+            make("point of view", "a particular perspective",
+                 "視点・観点",
+                 useCases: ["意見や見方の角度を述べるとき"],
+                 examples: [
+                    ("From my point of view, ~", "私の視点では〜"),
+                    ("Different point of view.", "別の視点。")
+                 ])
+        ]
+    }
+
+    // MARK: - メディア・市場・その他 (追加 8)
+
+    private static var mediaAndOthers20: [Word] {
+        [
+            make("bull market", "a rising market",
+                 "上昇相場・強気市場",
+                 useCases: ["株価などが上がり続けている市況を表すとき"],
+                 examples: [
+                    ("We're in a bull market.", "強気相場だ。"),
+                    ("Bull market rally.", "上昇相場のラリー。")
+                 ]),
+            make("dip", "a small drop in price or quantity",
+                 "値下がり・浸ける",
+                 useCases: ["株価や数値の一時的低下、または食べ物を浸す動作"],
+                 examples: [
+                    ("Buy the dip.", "値下がりで買え(投資用語)。"),
+                    ("Dip it in sauce.", "ソースに浸して。")
+                 ]),
+            make("legacy media", "traditional news outlets",
+                 "既存大手メディア",
+                 useCases: ["新興ネットメディアと対比して旧来のテレビ・新聞を指すとき"],
+                 examples: [
+                    ("Don't trust legacy media.", "既存メディアを信じるな。"),
+                    ("Legacy media is dying.", "オールドメディアは終わりつつある。")
+                 ]),
+            make("free speech", "freedom of expression",
+                 "言論の自由",
+                 useCases: ["表現や発言の自由を語るとき"],
+                 examples: [
+                    ("Defend free speech.", "言論の自由を守れ。"),
+                    ("Free speech matters.", "言論の自由は大事。")
+                 ]),
+            make("whip", "a fast strike or stir vigorously",
+                 "鞭打つ・素早く混ぜる・(政党の)党鞭",
+                 useCases: ["強く叩く・かき混ぜる動作、また政治の党議拘束役"],
+                 examples: [
+                    ("Whip the cream.", "クリームを泡立てる。"),
+                    ("Party whip.", "党の党鞭(議員)。")
+                 ]),
+            make("blind", "unable to see; lacking perception",
+                 "盲目の・見えない",
+                 useCases: ["視覚障害、または比喩で偏った見方を表すとき"],
+                 examples: [
+                    ("Color blind.", "色盲。"),
+                    ("Blind to the truth.", "真実に対して盲目。")
+                 ]),
+            make("spotlight", "intense focus or attention",
+                 "脚光・スポットライト",
+                 useCases: ["注目を浴びている状態を表すとき"],
+                 examples: [
+                    ("In the spotlight.", "脚光を浴びて。"),
+                    ("Shine a spotlight on the issue.", "問題に光を当てる。")
+                 ]),
+            make("insulate", "protect from heat, cold, or impact",
+                 "断熱する・隔離する",
+                 useCases: ["熱・寒さ・影響などから守るとき"],
+                 examples: [
+                    ("Insulate the house.", "家を断熱する。"),
+                    ("Insulated from criticism.", "批判から守られている。")
                  ])
         ]
     }
