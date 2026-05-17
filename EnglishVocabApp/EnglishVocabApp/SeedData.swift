@@ -73,6 +73,8 @@ enum SeedData {
             + opinionPhrases21 + learningPhrases21 + actionPhrases21
             + economySocial22 + businessTerms22 + actionVerbs22
             + characterStates22 + evaluationMedia22
+            + personalityTypes23 + planningThoughts23
+            + actionObjects23 + conceptsStates23
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -12164,6 +12166,286 @@ enum SeedData {
                  examples: [
                     ("A catalyst for change.", "変化のきっかけ。"),
                     ("The event was the catalyst.", "あの出来事が触媒となった。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性格・タイプ (追加 9)
+
+    private static var personalityTypes23: [Word] {
+        [
+            make("warm heart", "a kind and caring nature",
+                 "温かい心",
+                 useCases: ["優しく思いやりのある性格を表すとき"],
+                 examples: [
+                    ("She has a warm heart.", "彼女は温かい心の持ち主。"),
+                    ("A warm-hearted person.", "心の温かい人。")
+                 ]),
+            make("early bird", "a person who gets up early",
+                 "早起きの人",
+                 useCases: ["朝型の人を表すとき"],
+                 examples: [
+                    ("I'm an early bird.", "私は朝型。"),
+                    ("Early bird catches the worm.", "早起きは三文の徳。")
+                 ]),
+            make("night owl", "a person who stays up late",
+                 "夜型の人",
+                 useCases: ["夜遅くまで起きている人を表すとき"],
+                 examples: [
+                    ("I'm a night owl.", "私は夜型。"),
+                    ("Night owls work better at night.", "夜型は夜に冴える。")
+                 ]),
+            make("homebody", "a person who prefers being at home",
+                 "インドア派",
+                 useCases: ["外出より家にいるのが好きな人を表すとき"],
+                 examples: [
+                    ("I'm a total homebody.", "完全なインドア派。"),
+                    ("She's a homebody.", "彼女は家にいるのが好き。")
+                 ]),
+            make("backseat", "a non-driver who tells the driver what to do",
+                 "後部座席・口出しする人",
+                 useCases: ["物理的な後ろの席や、口出しばかりする態度"],
+                 examples: [
+                    ("Sit in the backseat.", "後部座席に座って。"),
+                    ("Don't be a backseat driver.", "口出しドライバーやめて。")
+                 ]),
+            make("overthink", "think about too much",
+                 "考えすぎる",
+                 useCases: ["些細なことを延々と考えてしまうとき"],
+                 examples: [
+                    ("Don't overthink it.", "考えすぎないで。"),
+                    ("I tend to overthink.", "考えすぎる癖がある。")
+                 ]),
+            make("copycat", "a person who imitates others",
+                 "真似ばかりする人",
+                 useCases: ["他人の真似をする人を批判するとき"],
+                 examples: [
+                    ("Stop being a copycat.", "真似ばかりしないで。"),
+                    ("That's a copycat product.", "それは模倣品。")
+                 ]),
+            make("blood", "the red liquid; family lineage",
+                 "血・血筋",
+                 useCases: ["身体の血液、または家系・気質の比喩"],
+                 examples: [
+                    ("It's in my blood.", "血に流れてる。"),
+                    ("Blood is thicker than water.", "血は水よりも濃い。")
+                 ]),
+            make("alien", "a foreigner; from another planet",
+                 "外国人・宇宙人・異質な",
+                 useCases: ["異質なものや宇宙人を表すとき"],
+                 examples: [
+                    ("Alien concept.", "馴染みのない概念。"),
+                    ("Resident alien.", "在留外国人(法律用語)。")
+                 ])
+        ]
+    }
+
+    // MARK: - 計画・思考 (追加 9)
+
+    private static var planningThoughts23: [Word] {
+        [
+            make("game plan", "a strategy for achieving a goal",
+                 "作戦・戦略",
+                 useCases: ["目標達成のための計画を話すとき"],
+                 examples: [
+                    ("What's the game plan?", "作戦は?"),
+                    ("Stick to the game plan.", "計画通りに行こう。")
+                 ]),
+            make("backlog", "a build-up of unfinished work",
+                 "未処理の山・バックログ",
+                 useCases: ["溜まった仕事やタスクを表すとき"],
+                 examples: [
+                    ("Clear the backlog.", "未処理を片付ける。"),
+                    ("Big backlog of emails.", "メールが大量に未処理。")
+                 ]),
+            make("second opinion", "another expert's view",
+                 "別の専門家の意見",
+                 useCases: ["医療やビジネスで別の見解を求めるとき"],
+                 examples: [
+                    ("Get a second opinion.", "セカンドオピニオンをもらう。"),
+                    ("I'd like a second opinion.", "別の意見も聞きたい。")
+                 ]),
+            make("afterthought", "an idea added later",
+                 "後付け・思い付き",
+                 useCases: ["主な計画の後で付け加えたものを表すとき"],
+                 examples: [
+                    ("Just an afterthought.", "単なる後付け。"),
+                    ("Added as an afterthought.", "思い付きで追加。")
+                 ]),
+            make("brainwave", "a sudden bright idea",
+                 "ひらめき・名案",
+                 useCases: ["突然いいアイデアが浮かんだとき"],
+                 examples: [
+                    ("I had a brainwave!", "ひらめいた!"),
+                    ("Great brainwave.", "素晴らしい名案。")
+                 ]),
+            make("paralysis", "inability to act or decide",
+                 "麻痺・決断不能",
+                 useCases: ["身体や思考が動けない状態を表すとき"],
+                 examples: [
+                    ("Analysis paralysis.", "分析しすぎて動けない状態。"),
+                    ("Temporary paralysis.", "一時的な麻痺。")
+                 ]),
+            make("brain fog", "mental cloudiness",
+                 "頭がぼーっとする・思考の靄",
+                 useCases: ["集中できない・考えがまとまらない状態"],
+                 examples: [
+                    ("Bad brain fog today.", "今日は頭がぼーっとする。"),
+                    ("Brain fog from lack of sleep.", "睡眠不足で思考が霧。")
+                 ]),
+            make("mental block", "inability to think or remember",
+                 "思考停止・思い出せない状態",
+                 useCases: ["何も思い浮かばない状態を表すとき"],
+                 examples: [
+                    ("I have a mental block.", "頭が真っ白。"),
+                    ("Hit a mental block.", "思考停止に陥った。")
+                 ]),
+            make("sort out", "organize or resolve",
+                 "整理する・解決する",
+                 useCases: ["物事を整理したり問題を片付けるとき"],
+                 examples: [
+                    ("Sort out the papers.", "書類を整理する。"),
+                    ("Let's sort this out.", "これを解決しよう。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・物 (追加 9)
+
+    private static var actionObjects23: [Word] {
+        [
+            make("hidden", "concealed; not visible",
+                 "隠された",
+                 useCases: ["見えないところにあるものを表すとき"],
+                 examples: [
+                    ("Hidden gem.", "隠れた逸品。"),
+                    ("Hidden meaning.", "隠された意味。")
+                 ]),
+            make("hide", "conceal from view",
+                 "隠す・隠れる",
+                 useCases: ["物理的または感情的に隠す動作"],
+                 examples: [
+                    ("Hide and seek.", "かくれんぼ。"),
+                    ("Don't hide your feelings.", "気持ちを隠さないで。")
+                 ]),
+            make("steal", "take without permission",
+                 "盗む・こっそり取る",
+                 useCases: ["物理的な窃盗、または比喩的な「奪う」"],
+                 examples: [
+                    ("Don't steal!", "盗むな!"),
+                    ("Steal the show.", "場をさらう。")
+                 ]),
+            make("flush", "redden; clean with water",
+                 "(顔が)赤くなる・水で流す",
+                 useCases: ["顔が紅潮する、またはトイレを流すなど"],
+                 examples: [
+                    ("Flush the toilet.", "トイレを流して。"),
+                    ("Flush with embarrassment.", "恥ずかしさで赤面。")
+                 ]),
+            make("sock", "a foot covering",
+                 "靴下",
+                 useCases: ["足を保護する衣類を表すとき"],
+                 examples: [
+                    ("Put on your socks.", "靴下を履いて。"),
+                    ("A pair of socks.", "靴下一足。")
+                 ]),
+            make("spray", "a fine mist of liquid",
+                 "スプレー・噴霧する",
+                 useCases: ["液体を細かく噴き出すとき"],
+                 examples: [
+                    ("Spray bottle.", "スプレーボトル。"),
+                    ("Spray the plants.", "植物に水を吹きかけて。")
+                 ]),
+            make("shortcoming", "a weakness or fault",
+                 "欠点・短所",
+                 useCases: ["人や物の弱点を表すとき"],
+                 examples: [
+                    ("Admit your shortcomings.", "短所を認めて。"),
+                    ("Despite his shortcomings.", "彼の欠点にもかかわらず。")
+                 ]),
+            make("oppression", "prolonged cruel treatment",
+                 "抑圧・圧政",
+                 useCases: ["権力による不当な支配を表すとき"],
+                 examples: [
+                    ("Fight oppression.", "抑圧と戦う。"),
+                    ("Under oppression.", "圧政下で。")
+                 ]),
+            make("nest egg", "savings set aside for the future",
+                 "蓄え・へそくり",
+                 useCases: ["将来のために貯めたお金を表すとき"],
+                 examples: [
+                    ("Build a nest egg.", "蓄えを作る。"),
+                    ("My retirement nest egg.", "老後の資金。")
+                 ])
+        ]
+    }
+
+    // MARK: - 概念・状態 (追加 9)
+
+    private static var conceptsStates23: [Word] {
+        [
+            make("please", "make happy; (polite request)",
+                 "喜ばせる・どうぞ",
+                 useCases: ["相手を喜ばせる動詞、または丁寧な依頼の副詞"],
+                 examples: [
+                    ("Please help me.", "助けてください。"),
+                    ("Eager to please.", "喜ばせたい一心で。")
+                 ]),
+            make("pleasure", "a feeling of happy satisfaction",
+                 "喜び・楽しみ",
+                 useCases: ["楽しみや満足感を表すとき"],
+                 examples: [
+                    ("My pleasure!", "どういたしまして!"),
+                    ("Pure pleasure.", "純粋な喜び。")
+                 ]),
+            make("communal", "shared by a community",
+                 "共同の・共有の",
+                 useCases: ["共同体やシェアの状態を表すとき"],
+                 examples: [
+                    ("Communal kitchen.", "共有キッチン。"),
+                    ("Communal living.", "共同生活。")
+                 ]),
+            make("ending", "the final part",
+                 "結末・エンディング",
+                 useCases: ["話や物事の終わりを表すとき"],
+                 examples: [
+                    ("Happy ending.", "ハッピーエンド。"),
+                    ("The ending was sad.", "結末は悲しかった。")
+                 ]),
+            make("entertain", "amuse; consider an idea",
+                 "楽しませる・(案を)検討する",
+                 useCases: ["人を楽しませる、または考えを巡らすとき"],
+                 examples: [
+                    ("Entertain the guests.", "客をもてなす。"),
+                    ("Entertain the idea.", "アイデアを検討する。")
+                 ]),
+            make("under control", "being managed properly",
+                 "管理下にある・コントロールできている",
+                 useCases: ["状況が制御されていることを伝えるとき"],
+                 examples: [
+                    ("Everything's under control.", "全部コントロール内。"),
+                    ("Keep it under control.", "制御を保って。")
+                 ]),
+            make("aside", "to one side; apart from",
+                 "脇に・別として",
+                 useCases: ["脇へ寄せる、または「冗談はさておき」のように"],
+                 examples: [
+                    ("Step aside.", "脇に寄って。"),
+                    ("Joking aside, ~", "冗談はさておき〜")
+                 ]),
+            make("gratitude", "a feeling of thankfulness",
+                 "感謝の気持ち",
+                 useCases: ["心からの感謝を表すとき"],
+                 examples: [
+                    ("Express gratitude.", "感謝を表す。"),
+                    ("Deep gratitude.", "深い感謝。")
+                 ]),
+            make("hint", "a slight indication",
+                 "ヒント・ほのめかし",
+                 useCases: ["微妙に示唆する、または手がかりを与えるとき"],
+                 examples: [
+                    ("Give me a hint.", "ヒントちょうだい。"),
+                    ("A subtle hint.", "それとなくほのめかす。")
                  ])
         ]
     }
