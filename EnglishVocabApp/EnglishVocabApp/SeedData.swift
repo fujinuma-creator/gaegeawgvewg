@@ -62,6 +62,9 @@ enum SeedData {
             + peopleWords15 + emotionWords15 + relationshipWords15
             + workWords15 + dailyWords15 + troubleWords15
             + evaluationWords15 + situationWords15
+            + slangActions16 + slangFeelings16 + slangPraise16
+            + slangReactions16 + slangAbbreviations16
+            + slangPeopleAndMoney16 + slangStateAndOthers16
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -9976,6 +9979,552 @@ enum SeedData {
                  examples: [
                     ("What a coincidence!", "なんて偶然!"),
                     ("By coincidence.", "偶然にも。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 行動 (追加 10)
+
+    private static var slangActions16: [Word] {
+        [
+            make("hang out", "spend time casually",
+                 "(友達と)遊ぶ・ぶらぶらする",
+                 useCases: ["友達と気楽に過ごすとき"],
+                 examples: [
+                    ("Wanna hang out tonight?", "今夜遊ばない?"),
+                    ("Let's hang out this weekend.", "週末ぶらぶらしよう。")
+                 ]),
+            make("hit me up", "contact me",
+                 "連絡して",
+                 useCases: ["カジュアルに連絡を促すとき(略 HMU)"],
+                 examples: [
+                    ("Hit me up later.", "あとで連絡してね。"),
+                    ("Just HMU when you're free.", "暇な時連絡してね。")
+                 ]),
+            make("ditch", "abandon plans or someone",
+                 "ドタキャン・サボる",
+                 useCases: ["予定や人を放棄するとき"],
+                 examples: [
+                    ("Don't ditch me!", "ドタキャンしないで!"),
+                    ("Let's ditch class.", "授業サボろう。")
+                 ]),
+            make("flake", "someone who flakes out on plans",
+                 "ドタキャンする人",
+                 useCases: ["約束をよく破る人を表すとき"],
+                 examples: [
+                    ("She's such a flake.", "彼女マジでドタキャン女王。"),
+                    ("Don't be a flake.", "ドタキャンするなよ。")
+                 ]),
+            make("muck up", "make a mess of",
+                 "失敗する・めちゃくちゃにする",
+                 useCases: ["やらかして台無しにしたとき(英国寄り)"],
+                 examples: [
+                    ("I mucked it up.", "やらかした。"),
+                    ("Don't muck this up.", "失敗するな。")
+                 ]),
+            make("ghost", "cut off contact suddenly",
+                 "音信不通になる・バックレる",
+                 useCases: ["既読スルーや突然連絡を絶つこと"],
+                 examples: [
+                    ("He ghosted me.", "彼にバックれられた。"),
+                    ("Don't ghost me!", "音信不通にしないで!")
+                 ]),
+            make("dump", "end a romantic relationship",
+                 "(恋人を)振る",
+                 useCases: ["別れを切り出すとき"],
+                 examples: [
+                    ("She dumped him.", "彼女が彼を振った。"),
+                    ("I got dumped.", "振られた。")
+                 ]),
+            make("keep in touch", "stay in contact",
+                 "連絡を取り合おう",
+                 useCases: ["別れ際の挨拶として"],
+                 examples: [
+                    ("Let's keep in touch!", "連絡取り合おうね!"),
+                    ("Keep in touch, OK?", "連絡してね?")
+                 ]),
+            make("loop in", "include someone in communication",
+                 "話の輪に入れる",
+                 useCases: ["メールやチャットに人を加えるとき"],
+                 examples: [
+                    ("Loop me in.", "私も入れて。"),
+                    ("I'll loop you in.", "話の輪に入れるね。")
+                 ]),
+            make("binge-watch", "watch many episodes in a row",
+                 "(配信などを)一気見する",
+                 useCases: ["シリーズドラマを連続で見るとき"],
+                 examples: [
+                    ("I binge-watched the whole season.", "1シーズン一気見した。"),
+                    ("Perfect binge-watching weather.", "一気見日和。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 感情・状態 (追加 10)
+
+    private static var slangFeelings16: [Word] {
+        [
+            make("screwed", "in serious trouble",
+                 "終わった・詰んだ",
+                 useCases: ["困った状況を表すカジュアルな表現"],
+                 examples: [
+                    ("We're screwed.", "詰んだ。"),
+                    ("I'm so screwed.", "マジで終わった。")
+                 ]),
+            make("pissed off", "very angry",
+                 "めちゃくちゃ怒っている",
+                 useCases: ["強い不満や怒りを表すとき"],
+                 examples: [
+                    ("I'm so pissed off.", "マジでムカつく。"),
+                    ("That pissed me off.", "それイラっとした。")
+                 ]),
+            make("busted", "caught doing something wrong",
+                 "バレた・見つかった",
+                 useCases: ["悪事や秘密がバレたとき"],
+                 examples: [
+                    ("Busted!", "バレた!"),
+                    ("We got busted.", "見つかっちゃった。")
+                 ]),
+            make("cringe", "feel embarrassed for others",
+                 "ドン引きする・痛々しい",
+                 useCases: ["見ていて気まずくなるとき"],
+                 examples: [
+                    ("That's so cringe.", "それマジで痛い。"),
+                    ("I cringed so hard.", "ドン引きした。")
+                 ]),
+            make("craving", "a strong desire for food",
+                 "無性に食べたい気持ち",
+                 useCases: ["特定の食べ物が欲しくてたまらないとき"],
+                 examples: [
+                    ("I have a craving for ramen.", "ラーメン食べたい。"),
+                    ("Pizza craving!", "ピザ食べたい!")
+                 ]),
+            make("hungover", "suffering from a hangover",
+                 "二日酔いの",
+                 useCases: ["昨夜の飲み過ぎで体調が悪いとき(形容詞)"],
+                 examples: [
+                    ("I'm so hungover.", "二日酔いがひどい。"),
+                    ("Are you hungover?", "二日酔い?")
+                 ]),
+            make("black out", "lose consciousness or memory",
+                 "(飲み過ぎで)記憶をなくす",
+                 useCases: ["お酒や疲労で意識・記憶が飛ぶとき"],
+                 examples: [
+                    ("I blacked out last night.", "昨夜記憶ない。"),
+                    ("Don't black out!", "気を失うな!")
+                 ]),
+            make("I'm dead", "find something hilarious",
+                 "笑い死ぬ・面白すぎる",
+                 useCases: ["大爆笑して動けない時の口語"],
+                 examples: [
+                    ("LOL, I'm dead!", "草、笑い死ぬ!"),
+                    ("That's so funny, I'm dead.", "面白すぎ、死んだ。")
+                 ]),
+            make("hype", "intense excitement or buzz",
+                 "期待・大騒ぎ",
+                 useCases: ["盛り上がりや過剰な期待を表すとき"],
+                 examples: [
+                    ("Don't believe the hype.", "期待しすぎるな。"),
+                    ("So much hype around it.", "盛り上がりがすごい。")
+                 ]),
+            make("freaking", "darn (mild intensifier)",
+                 "めちゃくちゃ(強調)",
+                 useCases: ["カジュアルに強調する very の代わり"],
+                 examples: [
+                    ("That's freaking cool!", "マジでかっこいい!"),
+                    ("It's freaking cold.", "めちゃ寒い。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 称賛 (追加 10)
+
+    private static var slangPraise16: [Word] {
+        [
+            make("props", "respect or credit",
+                 "敬意・称賛",
+                 useCases: ["相手の功績を認めるとき"],
+                 examples: [
+                    ("Props to you!", "お見事!"),
+                    ("Big props for that.", "それは称賛物。")
+                 ]),
+            make("savage", "ruthlessly cool or brutal",
+                 "容赦ない・尖ってる",
+                 useCases: ["辛口な発言や行動に対する褒め言葉"],
+                 examples: [
+                    ("That comment was savage.", "そのコメント、容赦ない。"),
+                    ("She's so savage!", "彼女マジで尖ってる!")
+                 ]),
+            make("epic", "amazing on a grand scale",
+                 "最高・ヤバい",
+                 useCases: ["スケールの大きな素晴らしさを表すとき"],
+                 examples: [
+                    ("That was epic!", "あれは最高だった!"),
+                    ("Epic fail.", "大失敗。")
+                 ]),
+            make("slay", "do something exceptionally well",
+                 "最高にキマってる",
+                 useCases: ["完璧なパフォーマンスを褒めるとき"],
+                 examples: [
+                    ("You slayed!", "完璧だったよ!"),
+                    ("Slay, queen!", "最高!")
+                 ]),
+            make("GOAT", "Greatest Of All Time",
+                 "史上最高・神",
+                 useCases: ["最高峰の人物を称えるとき"],
+                 examples: [
+                    ("He's the GOAT.", "彼は史上最高。"),
+                    ("Messi is the GOAT.", "メッシは神。")
+                 ]),
+            make("on point", "perfect or just right",
+                 "バッチリ・完璧",
+                 useCases: ["ピタッと決まっている状態を褒めるとき"],
+                 examples: [
+                    ("Your outfit is on point!", "コーデバッチリ!"),
+                    ("Right on point.", "完璧。")
+                 ]),
+            make("sharp", "precisely on time",
+                 "(時間が)きっちり",
+                 useCases: ["時刻をぴったり指定するとき"],
+                 examples: [
+                    ("Be there at 7 sharp.", "7時きっかりに来て。"),
+                    ("Meeting at 9 sharp.", "9時ぴったり会議。")
+                 ]),
+            make("legit", "genuine; really impressive",
+                 "ガチ・本物",
+                 useCases: ["本物であることを強調するとき(legitimateの略)"],
+                 examples: [
+                    ("That's legit.", "ガチだね。"),
+                    ("Legit good!", "マジで良い!")
+                 ]),
+            make("sweet", "great or nice",
+                 "いいね・最高",
+                 useCases: ["何かを褒めるカジュアルな反応"],
+                 examples: [
+                    ("Sweet!", "いいね!"),
+                    ("That's a sweet car.", "いい車。")
+                 ]),
+            make("sick", "extremely cool",
+                 "ヤバい・かっこいい",
+                 useCases: ["スラングで「すごい」を表すとき"],
+                 examples: [
+                    ("That's sick!", "ヤバい!"),
+                    ("Sick moves.", "かっこいい動き。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 反応・返事 (追加 10)
+
+    private static var slangReactions16: [Word] {
+        [
+            make("totally", "completely; absolutely",
+                 "完全に同意・それな",
+                 useCases: ["強い同意を表すとき"],
+                 examples: [
+                    ("Totally!", "それな!"),
+                    ("I totally agree.", "完全同意。")
+                 ]),
+            make("same here", "I feel the same way",
+                 "私も同じ",
+                 useCases: ["相手の発言に共感するとき"],
+                 examples: [
+                    ("Same here.", "私も。"),
+                    ("A: I'm tired. B: Same here.", "「疲れた」「私も」")
+                 ]),
+            make("ditto", "the same",
+                 "同上・私も同じく",
+                 useCases: ["相手の発言に同意するカジュアル表現"],
+                 examples: [
+                    ("Ditto!", "同感!"),
+                    ("Ditto on that.", "それな。")
+                 ]),
+            make("bet", "agreement or affirmation",
+                 "了解・それな",
+                 useCases: ["カジュアルに同意・了承を伝えるとき"],
+                 examples: [
+                    ("Bet!", "了解!"),
+                    ("You wanna bet?", "賭ける?")
+                 ]),
+            make("what's up?", "how are things?",
+                 "最近どう?・よぉ",
+                 useCases: ["カジュアルな挨拶"],
+                 examples: [
+                    ("Hey, what's up?", "よぉ、どう?"),
+                    ("What's up, dude?", "おう、調子は?")
+                 ]),
+            make("not much", "nothing in particular",
+                 "別に何も",
+                 useCases: ["「最近どう?」への定番の返し"],
+                 examples: [
+                    ("Not much, you?", "別に、君は?"),
+                    ("Not much, just chilling.", "別にダラダラしてる。")
+                 ]),
+            make("my treat", "I'll pay for this",
+                 "私のおごり",
+                 useCases: ["相手の支払いを引き受けるとき"],
+                 examples: [
+                    ("It's my treat tonight.", "今夜は私のおごり。"),
+                    ("My treat!", "おごるよ!")
+                 ]),
+            make("go Dutch", "split the bill",
+                 "割り勘にする",
+                 useCases: ["それぞれが自分の分を払うとき"],
+                 examples: [
+                    ("Let's go Dutch.", "割り勘にしよう。"),
+                    ("We always go Dutch.", "私たちはいつも割り勘。")
+                 ]),
+            make("no hard feelings", "no resentment",
+                 "恨みっこなしね",
+                 useCases: ["対立後にわだかまりを残さないとき"],
+                 examples: [
+                    ("No hard feelings, right?", "恨みっこなしだよね?"),
+                    ("OK, no hard feelings.", "うん、悪気はないから。")
+                 ]),
+            make("that's it", "that's all",
+                 "以上・それだけ",
+                 useCases: ["話や指示を締めくくるとき"],
+                 examples: [
+                    ("That's it!", "それだけ!"),
+                    ("That's it for today.", "今日はここまで。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 略語・俗語 (追加 10)
+
+    private static var slangAbbreviations16: [Word] {
+        [
+            make("vibe check", "checking the mood of a place",
+                 "雰囲気チェック",
+                 useCases: ["その場の空気や相手のノリを確かめるとき"],
+                 examples: [
+                    ("Vibe check!", "雰囲気チェック!"),
+                    ("Failed the vibe check.", "ノリが合わなかった。")
+                 ]),
+            make("NBD", "no big deal",
+                 "大したことじゃない",
+                 useCases: ["軽く流すとき(Not a Big Deal の略)"],
+                 examples: [
+                    ("NBD, really.", "マジで気にしないで。"),
+                    ("It's NBD.", "大したことない。")
+                 ]),
+            make("TGIF", "Thank God It's Friday",
+                 "やっと金曜だ",
+                 useCases: ["週末の解放感を表すとき"],
+                 examples: [
+                    ("TGIF!", "やっと金曜!"),
+                    ("Finally, TGIF.", "ついに金曜。")
+                 ]),
+            make("TMI", "too much information",
+                 "情報多すぎ",
+                 useCases: ["聞きたくないことを言われたとき"],
+                 examples: [
+                    ("TMI, dude.", "それは言わなくていい。"),
+                    ("Whoa, TMI!", "ちょ、TMI!")
+                 ]),
+            make("IMO", "in my opinion",
+                 "私の意見では",
+                 useCases: ["チャットで意見を述べる略語"],
+                 examples: [
+                    ("IMO, it's overrated.", "個人的には過大評価。"),
+                    ("IMO, you should go.", "個人的には行くべき。")
+                 ]),
+            make("BYOB", "Bring Your Own Beer/Beverage",
+                 "飲み物は各自持参で",
+                 useCases: ["パーティーの招待で飲み物持参を伝えるとき"],
+                 examples: [
+                    ("It's a BYOB party.", "飲み物持参パーティー。"),
+                    ("BYOB tonight.", "今夜は飲み物持参で。")
+                 ]),
+            make("ASAP", "as soon as possible",
+                 "できるだけ早く",
+                 useCases: ["急ぎの対応を頼むとき"],
+                 examples: [
+                    ("Send it ASAP.", "至急送って。"),
+                    ("I need it ASAP.", "急ぎで欲しい。")
+                 ]),
+            make("sus", "suspicious",
+                 "怪しい",
+                 useCases: ["ゲームAmong Us から流行ったスラング"],
+                 examples: [
+                    ("That's sus.", "それ怪しい。"),
+                    ("He's acting sus.", "彼の動き怪しい。")
+                 ]),
+            make("no cap", "no lie; for real",
+                 "嘘偽りなし・マジで",
+                 useCases: ["強調・本気度を表すZ世代スラング"],
+                 examples: [
+                    ("No cap, it's the best.", "マジで最高。"),
+                    ("That's true, no cap.", "ガチで本当。")
+                 ]),
+            make("period", "and that's final",
+                 "以上・以下なし",
+                 useCases: ["議論の余地なしと締めくくるとき"],
+                 examples: [
+                    ("She's the best, period.", "彼女が最高、以上。"),
+                    ("That's the answer, period.", "それが答え、以上。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 人物・物・お金 (追加 10)
+
+    private static var slangPeopleAndMoney16: [Word] {
+        [
+            make("wheels", "a car",
+                 "車",
+                 useCases: ["車を口語的に表すとき"],
+                 examples: [
+                    ("Nice wheels!", "いい車じゃん!"),
+                    ("New wheels?", "新車?")
+                 ]),
+            make("bucks", "dollars",
+                 "ドル",
+                 useCases: ["カジュアルに金額を表すとき"],
+                 examples: [
+                    ("It's 5 bucks.", "5ドルだよ。"),
+                    ("Got a few bucks?", "何ドルか持ってる?")
+                 ]),
+            make("grand", "one thousand dollars",
+                 "1,000ドル",
+                 useCases: ["1000ドル単位で話すとき"],
+                 examples: [
+                    ("It cost two grand.", "2,000ドルした。"),
+                    ("A grand a month.", "月1000ドル。")
+                 ]),
+            make("chicken", "a coward",
+                 "臆病者・チキン",
+                 useCases: ["勇気のない人をからかうとき(名詞)"],
+                 examples: [
+                    ("Don't be a chicken.", "ビビるなよ。"),
+                    ("You're such a chicken!", "ほんとチキンだな!")
+                 ]),
+            make("couch potato", "a lazy TV watcher",
+                 "ソファでゴロゴロしてる人",
+                 useCases: ["怠惰なテレビ漬けの人を表すとき"],
+                 examples: [
+                    ("Total couch potato.", "完全なゴロ寝族。"),
+                    ("Don't be a couch potato.", "ソファ漬けやめて。")
+                 ]),
+            make("rip-off", "an overpriced product",
+                 "ぼったくり",
+                 useCases: ["価格が不当に高いと感じたとき"],
+                 examples: [
+                    ("What a rip-off!", "ぼったくり!"),
+                    ("Total rip-off.", "完全にぼったくり。")
+                 ]),
+            make("dumpster fire", "a complete disaster",
+                 "大惨事・めちゃくちゃな状況",
+                 useCases: ["手のつけられない状況を表すとき"],
+                 examples: [
+                    ("This project is a dumpster fire.", "このプロジェクトは大惨事。"),
+                    ("Total dumpster fire.", "完全カオス。")
+                 ]),
+            make("kudos", "praise; well done",
+                 "称賛・よくやった",
+                 useCases: ["相手の功績を称えるとき"],
+                 examples: [
+                    ("Kudos to you!", "お見事!"),
+                    ("Kudos for finishing.", "完走お見事。")
+                 ]),
+            make("I'm down", "I'm in / I'll join",
+                 "乗った・行く行く",
+                 useCases: ["誘いに快諾するとき"],
+                 examples: [
+                    ("I'm down for pizza.", "ピザ乗った。"),
+                    ("I'm down!", "行く!")
+                 ]),
+            make("it sucks", "it's terrible",
+                 "最悪・がっかり",
+                 useCases: ["不満や失望を表すとき"],
+                 examples: [
+                    ("This sucks.", "最悪。"),
+                    ("It sucks, but oh well.", "残念だけど仕方ない。")
+                 ])
+        ]
+    }
+
+    // MARK: - スラング/口語 状態・その他 (追加 11)
+
+    private static var slangStateAndOthers16: [Word] {
+        [
+            make("low-key", "subtly; secretly",
+                 "密かに・ぶっちゃけ",
+                 useCases: ["控えめに気持ちを表すとき"],
+                 examples: [
+                    ("I low-key love it.", "ぶっちゃけ好き。"),
+                    ("Low-key tired.", "地味に疲れた。")
+                 ]),
+            make("high-key", "openly; obviously",
+                 "明らかに・堂々と",
+                 useCases: ["低キーの反対、はっきり表すとき"],
+                 examples: [
+                    ("High-key obsessed.", "明らかにハマってる。"),
+                    ("I high-key want this.", "ガチで欲しい。")
+                 ]),
+            make("flex", "show off",
+                 "自慢する・見せびらかす",
+                 useCases: ["自分の物や能力を誇示するとき"],
+                 examples: [
+                    ("Stop flexing.", "自慢やめて。"),
+                    ("Weird flex but OK.", "変な自慢だけどまあいいや。")
+                 ]),
+            make("chillax", "chill out and relax",
+                 "落ち着いてリラックスする",
+                 useCases: ["chill と relax の混成語、肩の力を抜くとき"],
+                 examples: [
+                    ("Just chillax!", "落ち着いて!"),
+                    ("Chillax, dude.", "リラックスしろよ。")
+                 ]),
+            make("get a life", "find better things to do",
+                 "自分の心配しなよ",
+                 useCases: ["余計なお世話への返しなどに使う皮肉"],
+                 examples: [
+                    ("Get a life!", "大きなお世話!"),
+                    ("Seriously, get a life.", "マジで自分の心配しろ。")
+                 ]),
+            make("shrug", "raise the shoulders to show indifference",
+                 "肩をすくめる",
+                 useCases: ["「さあね」のジェスチャーや無関心を表すとき"],
+                 examples: [
+                    ("He just shrugged.", "彼は肩をすくめただけ。"),
+                    ("Shrug. Whatever.", "肩すくめ。まあいいや。")
+                 ]),
+            make("Zzz", "sleeping; sleepy",
+                 "眠い・寝ている",
+                 useCases: ["眠気や退屈を表す絵文字的表現"],
+                 examples: [
+                    ("Zzz...", "眠い…"),
+                    ("This class is so Zzz.", "この授業眠すぎ。")
+                 ]),
+            make("hit the gym", "go to the gym",
+                 "ジムに行く",
+                 useCases: ["運動の予定を伝えるカジュアル表現"],
+                 examples: [
+                    ("Time to hit the gym.", "ジムの時間。"),
+                    ("Let's hit the gym.", "ジム行こう。")
+                 ]),
+            make("grab a coffee", "go to get a coffee together",
+                 "コーヒー飲みに行く",
+                 useCases: ["軽い会合や息抜きを誘うとき"],
+                 examples: [
+                    ("Wanna grab a coffee?", "コーヒーでもどう?"),
+                    ("Let's grab a coffee.", "コーヒー行こう。")
+                 ]),
+            make("rip", "rest in peace; over",
+                 "ご冥福を・終わった",
+                 useCases: ["カジュアルに「終わった・残念」を表すとき(R.I.P.)"],
+                 examples: [
+                    ("RIP my phone battery.", "スマホ電池終了。"),
+                    ("Rip, that's sad.", "うわ、残念。")
+                 ]),
+            make("out of nowhere", "suddenly without warning",
+                 "突然・どこからともなく",
+                 useCases: ["予期せぬ出来事の登場を表すとき"],
+                 examples: [
+                    ("He appeared out of nowhere.", "彼が突然現れた。"),
+                    ("Came out of nowhere.", "どこからともなく来た。")
                  ])
         ]
     }
