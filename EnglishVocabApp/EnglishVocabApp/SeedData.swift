@@ -65,6 +65,8 @@ enum SeedData {
             + slangActions16 + slangFeelings16 + slangPraise16
             + slangReactions16 + slangAbbreviations16
             + slangPeopleAndMoney16 + slangStateAndOthers16
+            + workComms17 + critiqueWords17 + outcomeWords17
+            + adjectiveWords17 + verbWords17 + idiomWords17
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -10525,6 +10527,489 @@ enum SeedData {
                  examples: [
                     ("He appeared out of nowhere.", "彼が突然現れた。"),
                     ("Came out of nowhere.", "どこからともなく来た。")
+                 ])
+        ]
+    }
+
+    // MARK: - 仕事・コミュニケーション (追加 10)
+
+    private static var workComms17: [Word] {
+        [
+            make("touch base", "briefly make contact",
+                 "軽く連絡を取る・確認する",
+                 useCases: ["状況確認のため短く連絡するとき"],
+                 examples: [
+                    ("Let's touch base next week.", "来週軽く連絡取り合おう。"),
+                    ("Just touching base.", "確認まで連絡。")
+                 ]),
+            make("behind the scenes", "out of public view",
+                 "舞台裏で・水面下で",
+                 useCases: ["表に出ない部分や裏の動きを表すとき"],
+                 examples: [
+                    ("A lot happens behind the scenes.", "舞台裏で色々起きてる。"),
+                    ("Behind-the-scenes footage.", "舞台裏映像。")
+                 ]),
+            make("in parallel", "simultaneously",
+                 "並行して・同時に",
+                 useCases: ["複数の作業を同時進行させるとき"],
+                 examples: [
+                    ("Run two tasks in parallel.", "2つを並行して実行。"),
+                    ("Working in parallel.", "並行作業中。")
+                 ]),
+            make("deep dive", "thorough investigation",
+                 "深掘り・徹底調査",
+                 useCases: ["特定のテーマを詳しく掘り下げるとき"],
+                 examples: [
+                    ("Let's do a deep dive.", "深掘りしよう。"),
+                    ("A deep dive into the data.", "データの徹底分析。")
+                 ]),
+            make("take action", "act on something",
+                 "行動を起こす",
+                 useCases: ["決意して行動に移すよう促すとき"],
+                 examples: [
+                    ("Time to take action.", "行動の時。"),
+                    ("Take action now.", "今行動しよう。")
+                 ]),
+            make("stay tuned", "wait for more information",
+                 "乞うご期待・続報を待て",
+                 useCases: ["後で続報があると伝えるとき"],
+                 examples: [
+                    ("Stay tuned for updates.", "続報をお待ちください。"),
+                    ("More to come — stay tuned!", "続きあり、お楽しみに!")
+                 ]),
+            make("keep in the loop", "keep someone informed",
+                 "(話の輪に)入れておく",
+                 useCases: ["情報共有を続けるよう頼むとき"],
+                 examples: [
+                    ("Keep me in the loop.", "私にも共有して。"),
+                    ("Always keeping us in the loop.", "いつも輪に入れてくれる。")
+                 ]),
+            make("loop", "communication chain",
+                 "話の輪・連絡網",
+                 useCases: ["情報共有のチェーンや繰り返しを表すとき"],
+                 examples: [
+                    ("Out of the loop.", "話に入れていない。"),
+                    ("Stuck in a loop.", "ループにハマってる。")
+                 ]),
+            make("ship it", "release a product",
+                 "(商品を)世に出す・リリースする",
+                 useCases: ["開発したものを公開するとき(IT・スタートアップ用語)"],
+                 examples: [
+                    ("Let's ship it!", "リリースしよう!"),
+                    ("Ship it Friday.", "金曜リリース。")
+                 ]),
+            make("next level", "a much higher standard",
+                 "ワンランク上・次元が違う",
+                 useCases: ["飛び抜けた品質や性能を表すとき"],
+                 examples: [
+                    ("That's next level.", "別次元。"),
+                    ("Take it to the next level.", "次のレベルへ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 批判・ネットスラング (追加 10)
+
+    private static var critiqueWords17: [Word] {
+        [
+            make("meltdown", "an emotional collapse",
+                 "感情的に取り乱すこと",
+                 useCases: ["パニックや怒りで自制を失ったとき"],
+                 examples: [
+                    ("She had a meltdown.", "彼女ブチ切れた。"),
+                    ("A complete meltdown.", "完全な取り乱し。")
+                 ]),
+            make("cry more", "stop complaining",
+                 "もっと泣け(嘲り)",
+                 useCases: ["不満を訴える相手を皮肉るネットスラング"],
+                 examples: [
+                    ("Cry more, noob.", "もっと泣け、雑魚。"),
+                    ("Lol, cry more.", "草、もっと泣け。")
+                 ]),
+            make("clown", "a foolish person",
+                 "道化・バカ",
+                 useCases: ["愚かな行動をした人を皮肉るとき"],
+                 examples: [
+                    ("Don't be a clown.", "バカやるな。"),
+                    ("Total clown.", "完全な道化。")
+                 ]),
+            make("shitposting", "deliberately low-quality online posting",
+                 "煽り・ふざけた投稿(俗)",
+                 useCases: ["わざとくだらない投稿をすること"],
+                 examples: [
+                    ("Stop shitposting.", "煽り投稿やめろ。"),
+                    ("Pure shitposting.", "完全に煽り。")
+                 ]),
+            make("troll", "online provocateur",
+                 "荒らし・煽る人",
+                 useCases: ["ネットで挑発する人を表すとき"],
+                 examples: [
+                    ("Don't feed the trolls.", "荒らしに餌を与えるな。"),
+                    ("He's just trolling.", "ただ煽ってるだけ。")
+                 ]),
+            make("hardcore", "extremely intense or devoted",
+                 "ガチ・本格派",
+                 useCases: ["熱中度や強度が高いものを表すとき"],
+                 examples: [
+                    ("Hardcore fan.", "ガチファン。"),
+                    ("That's hardcore.", "ガチだな。")
+                 ]),
+            make("corrupt", "morally depraved or dishonest",
+                 "腐敗した・汚職にまみれた",
+                 useCases: ["政治家や組織の不正を批判するとき"],
+                 examples: [
+                    ("Corrupt politicians.", "腐敗政治家。"),
+                    ("A corrupt system.", "腐敗したシステム。")
+                 ]),
+            make("hypocrisy", "claiming morals one doesn't have",
+                 "偽善",
+                 useCases: ["言行不一致を批判するとき"],
+                 examples: [
+                    ("That's pure hypocrisy.", "完全に偽善。"),
+                    ("Call out the hypocrisy.", "偽善を指摘する。")
+                 ]),
+            make("double standard", "applying different rules unfairly",
+                 "二重基準・ダブスタ",
+                 useCases: ["相手と自分で基準を変えていることを批判するとき"],
+                 examples: [
+                    ("That's a double standard.", "それダブスタ。"),
+                    ("Stop the double standard.", "二重基準やめて。")
+                 ]),
+            make("propaganda", "biased information for influence",
+                 "プロパガンダ・世論誘導",
+                 useCases: ["政府や組織の意図的な宣伝を批判するとき"],
+                 examples: [
+                    ("Pure propaganda.", "ただのプロパガンダ。"),
+                    ("Spreading propaganda.", "プロパガンダを広める。")
+                 ])
+        ]
+    }
+
+    // MARK: - 結果・状況 (追加 10)
+
+    private static var outcomeWords17: [Word] {
+        [
+            make("undefeated", "never been beaten",
+                 "無敗の",
+                 useCases: ["連勝記録や負け知らずの状態を表すとき"],
+                 examples: [
+                    ("Undefeated champion.", "無敗の王者。"),
+                    ("Still undefeated.", "まだ負けなし。")
+                 ]),
+            make("endgame", "final stage",
+                 "最終局面・大詰め",
+                 useCases: ["勝負や計画の最終段階を表すとき"],
+                 examples: [
+                    ("This is the endgame.", "ここが大詰め。"),
+                    ("What's the endgame?", "最終目標は?")
+                 ]),
+            make("game over", "it's all done",
+                 "終わりだ・詰んだ",
+                 useCases: ["勝ち目がない状況を宣言するとき"],
+                 examples: [
+                    ("Game over, man.", "もう詰みだよ。"),
+                    ("If they find out, game over.", "バレたら終わり。")
+                 ]),
+            make("zero chance", "no possibility at all",
+                 "可能性ゼロ",
+                 useCases: ["完全否定や絶望的状況を強調するとき"],
+                 examples: [
+                    ("Zero chance of winning.", "勝ち目ゼロ。"),
+                    ("Zero chance, period.", "可能性ゼロ、以上。")
+                 ]),
+            make("exponential", "growing at increasing rate",
+                 "指数関数的な",
+                 useCases: ["急成長を表すとき(AIや技術)"],
+                 examples: [
+                    ("Exponential growth.", "指数関数的成長。"),
+                    ("AI is improving exponentially.", "AIは指数関数的に進化中。")
+                 ]),
+            make("taxpayer", "a person who pays taxes",
+                 "納税者",
+                 useCases: ["税金で運営されることや市民の負担を語るとき"],
+                 examples: [
+                    ("Taxpayer money.", "税金。"),
+                    ("Hardworking taxpayers.", "勤勉な納税者。")
+                 ]),
+            make("in the red", "operating at a loss",
+                 "赤字で",
+                 useCases: ["経営や家計の赤字を表すとき"],
+                 examples: [
+                    ("We're in the red.", "うちは赤字。"),
+                    ("The company is in the red.", "会社は赤字。")
+                 ]),
+            make("deficit", "a shortfall in revenue or amount",
+                 "不足・赤字",
+                 useCases: ["経済や予算の赤字、不足を表すとき"],
+                 examples: [
+                    ("Budget deficit.", "予算赤字。"),
+                    ("Calorie deficit.", "カロリー不足(ダイエット用語)。")
+                 ]),
+            make("margin", "the edge or profit difference",
+                 "利益率・余白",
+                 useCases: ["利益・余地・差を表すとき"],
+                 examples: [
+                    ("Profit margin.", "利益率。"),
+                    ("Won by a small margin.", "僅差で勝利。")
+                 ]),
+            make("lucrative", "highly profitable",
+                 "儲かる・割のいい",
+                 useCases: ["事業・契約が大きな利益をもたらすとき"],
+                 examples: [
+                    ("A lucrative business.", "儲かるビジネス。"),
+                    ("Lucrative deal.", "おいしい契約。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞・性質 (追加 11)
+
+    private static var adjectiveWords17: [Word] {
+        [
+            make("density", "the degree of compactness",
+                 "密度",
+                 useCases: ["物の詰まり具合や人口密度を表すとき"],
+                 examples: [
+                    ("Population density.", "人口密度。"),
+                    ("High density area.", "高密度地域。")
+                 ]),
+            make("concerning", "worrying; troubling",
+                 "気がかりな・懸念される",
+                 useCases: ["心配すべき状況を表すとき"],
+                 examples: [
+                    ("That's concerning.", "それは気がかり。"),
+                    ("Deeply concerning data.", "深刻なデータ。")
+                 ]),
+            make("principle", "a fundamental rule or belief",
+                 "原則・信念",
+                 useCases: ["基本ルールや信条を表すとき"],
+                 examples: [
+                    ("On principle.", "原則として。"),
+                    ("It's a matter of principle.", "信念の問題。")
+                 ]),
+            make("subtle", "delicately complex; not obvious",
+                 "微妙な・繊細な",
+                 useCases: ["はっきりせず気づきにくい違いを表すとき"],
+                 examples: [
+                    ("Subtle difference.", "微妙な違い。"),
+                    ("A subtle hint.", "それとなくほのめかす。")
+                 ]),
+            make("compelling", "evoking strong interest",
+                 "説得力のある・引き込まれる",
+                 useCases: ["強く引きつけられる議論や物語を表すとき"],
+                 examples: [
+                    ("A compelling argument.", "説得力のある主張。"),
+                    ("Compelling evidence.", "有力な証拠。")
+                 ]),
+            make("resilient", "able to recover quickly",
+                 "回復力のある・しなやかな",
+                 useCases: ["困難に強い人や組織を表すとき"],
+                 examples: [
+                    ("She's so resilient.", "彼女は本当にタフ。"),
+                    ("A resilient economy.", "強靭な経済。")
+                 ]),
+            make("ridiculous", "absurd; unreasonable",
+                 "ばかげた・あり得ない",
+                 useCases: ["呆れた状況や物事を批判するとき"],
+                 examples: [
+                    ("That's ridiculous.", "あり得ない。"),
+                    ("Ridiculously expensive.", "バカ高い。")
+                 ]),
+            make("inevitable", "unavoidable",
+                 "避けられない・必然の",
+                 useCases: ["どうしても起こることを表すとき"],
+                 examples: [
+                    ("Change is inevitable.", "変化は必然。"),
+                    ("It was inevitable.", "避けられなかった。")
+                 ]),
+            make("candid", "truthful and straightforward",
+                 "率直な・包み隠さない",
+                 useCases: ["遠慮せず本音で話すことを表すとき"],
+                 examples: [
+                    ("Be candid with me.", "正直に言って。"),
+                    ("A candid conversation.", "率直な対話。")
+                 ]),
+            make("frank", "open and sincere",
+                 "率直な・遠慮のない",
+                 useCases: ["遠回しでない直接的な発言を表すとき"],
+                 examples: [
+                    ("To be frank, ~", "率直に言うと〜"),
+                    ("Frank discussion.", "率直な議論。")
+                 ]),
+            make("eccentric", "unconventional and strange",
+                 "風変わりな・型破りな",
+                 useCases: ["変わった性格や行動を表すとき"],
+                 examples: [
+                    ("An eccentric artist.", "型破りな芸術家。"),
+                    ("Quite eccentric.", "かなり風変わり。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var verbWords17: [Word] {
+        [
+            make("obsess", "be preoccupied with",
+                 "執着する・とらわれる",
+                 useCases: ["何かに過度にこだわるとき"],
+                 examples: [
+                    ("Don't obsess over it.", "こだわりすぎないで。"),
+                    ("I'm obsessed!", "ハマってる!")
+                 ]),
+            make("stumble upon", "find by chance",
+                 "偶然見つける",
+                 useCases: ["探していなかったものを偶然発見するとき"],
+                 examples: [
+                    ("I stumbled upon a great book.", "良い本に偶然出会った。"),
+                    ("Stumbled upon the truth.", "真実に偶然たどり着いた。")
+                 ]),
+            make("pass through", "go through a place briefly",
+                 "通過する・通り抜ける",
+                 useCases: ["短時間だけ立ち寄る・通るとき"],
+                 examples: [
+                    ("Just passing through.", "通り過ぎるだけ。"),
+                    ("Pass through customs.", "税関を通過。")
+                 ]),
+            make("migrate", "move from one place to another",
+                 "移住する・(データを)移行する",
+                 useCases: ["人・動物・データの移動を表すとき"],
+                 examples: [
+                    ("Birds migrate south.", "鳥が南へ渡る。"),
+                    ("Migrate to a new system.", "新システムへ移行。")
+                 ]),
+            make("advocate", "publicly support a cause",
+                 "提唱する・支持する",
+                 useCases: ["主義主張を擁護・推進するとき"],
+                 examples: [
+                    ("Advocate for change.", "変化を提唱する。"),
+                    ("A strong advocate.", "強力な支持者。")
+                 ]),
+            make("turn a blind eye", "ignore wrongdoing deliberately",
+                 "見て見ぬふりをする",
+                 useCases: ["不正を意図的に無視するとき"],
+                 examples: [
+                    ("Turn a blind eye to it.", "見て見ぬふりする。"),
+                    ("Don't turn a blind eye.", "見過ごさないで。")
+                 ]),
+            make("pave the way", "make progress possible",
+                 "道を開く",
+                 useCases: ["後続のために土台を作るとき"],
+                 examples: [
+                    ("Pave the way for reform.", "改革への道を開く。"),
+                    ("She paved the way.", "彼女が道を切り開いた。")
+                 ]),
+            make("bite your tongue", "stop yourself from speaking",
+                 "言葉を飲み込む",
+                 useCases: ["言いたいことを我慢するとき"],
+                 examples: [
+                    ("Bite your tongue!", "言葉を慎め!"),
+                    ("Had to bite my tongue.", "言いたいの我慢した。")
+                 ]),
+            make("sit tight", "wait patiently",
+                 "じっと待つ",
+                 useCases: ["動かずに様子を見るよう促すとき"],
+                 examples: [
+                    ("Just sit tight.", "じっとしてて。"),
+                    ("Sit tight, help is coming.", "待ってて、助けが来る。")
+                 ]),
+            make("hit the nail on the head", "be exactly right",
+                 "核心を突く",
+                 useCases: ["まさにその通りのことを言い当てたとき"],
+                 examples: [
+                    ("You hit the nail on the head.", "まさにその通り。"),
+                    ("That hits the nail on the head.", "図星。")
+                 ])
+        ]
+    }
+
+    // MARK: - 慣用句・その他 (追加 12)
+
+    private static var idiomWords17: [Word] {
+        [
+            make("odds", "probability of happening",
+                 "確率・見込み",
+                 useCases: ["可能性の高低を表すとき"],
+                 examples: [
+                    ("The odds are high.", "確率が高い。"),
+                    ("What are the odds?", "確率は?")
+                 ]),
+            make("injury", "physical damage to the body",
+                 "けが",
+                 useCases: ["身体的な負傷を表すとき"],
+                 examples: [
+                    ("A serious injury.", "重傷。"),
+                    ("Recovering from an injury.", "けがから回復中。")
+                 ]),
+            make("skeleton", "the bony frame; a skeleton crew",
+                 "骸骨・骨組み・最小限",
+                 useCases: ["骨組みや最小限の構成を表すとき"],
+                 examples: [
+                    ("A skeleton crew.", "最小限のスタッフ。"),
+                    ("Skeleton in the closet.", "隠された秘密(慣用)。")
+                 ]),
+            make("once in a blue moon", "very rarely",
+                 "ごくまれに・めったに〜ない",
+                 useCases: ["非常に珍しい出来事を表すとき"],
+                 examples: [
+                    ("I see him once in a blue moon.", "めったに会わない。"),
+                    ("Once in a blue moon, ~", "ごくまれに〜")
+                 ]),
+            make("stagnant", "not flowing or changing",
+                 "停滞した・よどんだ",
+                 useCases: ["経済や水などが動かない状態を表すとき"],
+                 examples: [
+                    ("Stagnant economy.", "停滞する経済。"),
+                    ("Stagnant water.", "よどんだ水。")
+                 ]),
+            make("touch and go", "uncertain; risky",
+                 "予断を許さない",
+                 useCases: ["どちらに転ぶか分からない緊迫した状況"],
+                 examples: [
+                    ("It's touch and go.", "予断を許さない。"),
+                    ("Things were touch and go.", "ギリギリの状態だった。")
+                 ]),
+            make("pull strings", "use influence behind the scenes",
+                 "コネを使う・裏で動く",
+                 useCases: ["影響力を使って物事を動かすとき"],
+                 examples: [
+                    ("He pulled some strings.", "彼がコネを使った。"),
+                    ("Pull strings to get in.", "コネで入る。")
+                 ]),
+            make("volatile", "liable to change rapidly",
+                 "不安定な・変動の激しい",
+                 useCases: ["市場や感情が荒れやすい状態を表すとき"],
+                 examples: [
+                    ("A volatile market.", "不安定な市場。"),
+                    ("Volatile temper.", "短気。")
+                 ]),
+            make("spill", "let liquid fall out; reveal a secret",
+                 "こぼす・(秘密を)漏らす",
+                 useCases: ["液体をこぼす、または情報を漏らすとき"],
+                 examples: [
+                    ("Don't spill the coffee.", "コーヒーこぼさないで。"),
+                    ("Spill the tea.", "秘密を漏らせ(俗)。")
+                 ]),
+            make("spoilage", "the process of going bad",
+                 "腐敗・劣化",
+                 useCases: ["食品などが傷んで使えなくなることを表すとき"],
+                 examples: [
+                    ("Food spoilage.", "食品の腐敗。"),
+                    ("Reduce spoilage.", "劣化を減らす。")
+                 ]),
+            make("plausible", "seeming reasonable or probable",
+                 "もっともらしい・あり得る",
+                 useCases: ["説明や説が筋が通っていることを表すとき"],
+                 examples: [
+                    ("A plausible explanation.", "もっともらしい説明。"),
+                    ("Sounds plausible.", "あり得そう。")
+                 ]),
+            make("unprecedented", "never done or seen before",
+                 "前例のない・空前の",
+                 useCases: ["史上初の出来事や規模を表すとき"],
+                 examples: [
+                    ("Unprecedented growth.", "空前の成長。"),
+                    ("An unprecedented event.", "前例のない事態。")
                  ])
         ]
     }
