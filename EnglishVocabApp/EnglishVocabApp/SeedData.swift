@@ -67,6 +67,7 @@ enum SeedData {
             + slangPeopleAndMoney16 + slangStateAndOthers16
             + workComms17 + critiqueWords17 + outcomeWords17
             + adjectiveWords17 + verbWords17 + idiomWords17
+            + thinkingPhrases18 + businessVerbs18 + learningWords18
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -11010,6 +11011,223 @@ enum SeedData {
                  examples: [
                     ("Unprecedented growth.", "空前の成長。"),
                     ("An unprecedented event.", "前例のない事態。")
+                 ])
+        ]
+    }
+
+    // MARK: - 業務・思考表現 (追加 10)
+
+    private static var thinkingPhrases18: [Word] {
+        [
+            make("get sth wrong", "misunderstand or misinterpret",
+                 "(何かを)誤解する・間違える",
+                 useCases: ["事実や意図を取り違えたとき"],
+                 examples: [
+                    ("I got the date wrong.", "日付を間違えた。"),
+                    ("Don't get this wrong.", "これを誤解しないで。")
+                 ]),
+            make("get sth right", "do or understand correctly",
+                 "正しく行う・正しく理解する",
+                 useCases: ["正しい結果や認識にたどり着くとき"],
+                 examples: [
+                    ("Let me get this right.", "確認させて。"),
+                    ("Got it right the first time.", "一発で正解。")
+                 ]),
+            make("at the end of", "by the end of a period",
+                 "〜の終わりに",
+                 useCases: ["期間や場所の終点を表すとき"],
+                 examples: [
+                    ("At the end of the day.", "結局のところ(慣用)。"),
+                    ("At the end of the street.", "通りの突き当たり。")
+                 ]),
+            make("at the age of", "when one was a certain age",
+                 "〜歳のときに",
+                 useCases: ["年齢を指定して出来事を語るとき"],
+                 examples: [
+                    ("At the age of 18.", "18歳のときに。"),
+                    ("Started college at the age of 20.", "20歳で大学を始めた。")
+                 ]),
+            make("for the most part", "mostly; generally",
+                 "大部分は・概ね",
+                 useCases: ["大筋を述べるときの控えめな断り"],
+                 examples: [
+                    ("For the most part, it works.", "大体は機能する。"),
+                    ("True for the most part.", "概ねその通り。")
+                 ]),
+            make("slip my mind", "be forgotten",
+                 "うっかり忘れる",
+                 useCases: ["うっかり忘れたことを謝罪・説明するとき"],
+                 examples: [
+                    ("It slipped my mind.", "うっかり忘れてた。"),
+                    ("Sorry, it just slipped my mind.", "ごめん、つい忘れた。")
+                 ]),
+            make("dwell on", "think about something for too long",
+                 "くよくよ考える・こだわる",
+                 useCases: ["過去の失敗などを引きずるとき"],
+                 examples: [
+                    ("Don't dwell on it.", "くよくよしないで。"),
+                    ("Stop dwelling on the past.", "過去にこだわるな。")
+                 ]),
+            make("second-guess", "doubt or reconsider a decision",
+                 "あとから疑う・推測し直す",
+                 useCases: ["決断を後から疑うとき"],
+                 examples: [
+                    ("Don't second-guess yourself.", "自分を疑わないで。"),
+                    ("I keep second-guessing my choices.", "選択を疑い続けてる。")
+                 ]),
+            make("go the extra mile", "make a special effort",
+                 "ひと手間かける・特別に頑張る",
+                 useCases: ["求められた以上の努力をするとき"],
+                 examples: [
+                    ("She always goes the extra mile.", "彼女はいつも余計に頑張る。"),
+                    ("Go the extra mile for clients.", "顧客のために一歩踏み込む。")
+                 ]),
+            make("play it by ear", "decide as the situation develops",
+                 "臨機応変にやる",
+                 useCases: ["計画を立てず状況に合わせて判断するとき"],
+                 examples: [
+                    ("Let's play it by ear.", "成り行きでいこう。"),
+                    ("We'll play it by ear.", "臨機応変にする。")
+                 ])
+        ]
+    }
+
+    // MARK: - ビジネス動詞・出力 (追加 9)
+
+    private static var businessVerbs18: [Word] {
+        [
+            make("keep tabs on", "monitor closely",
+                 "目を光らせる・動向を把握する",
+                 useCases: ["人や状況を継続的に観察するとき"],
+                 examples: [
+                    ("Keep tabs on the budget.", "予算に目を光らせて。"),
+                    ("She keeps tabs on the team.", "彼女はチームの動向を把握している。")
+                 ]),
+            make("leverage", "use to maximum advantage",
+                 "活用する・てこ入れする",
+                 useCases: ["持っている資源を有効活用するとき"],
+                 examples: [
+                    ("Leverage your skills.", "スキルを活用して。"),
+                    ("Leverage social media.", "SNSを活用する。")
+                 ]),
+            make("optimize", "make as effective as possible",
+                 "最適化する",
+                 useCases: ["効率や性能を最大化するとき"],
+                 examples: [
+                    ("Optimize for speed.", "スピードを最適化。"),
+                    ("Optimize the process.", "プロセスを最適化する。")
+                 ]),
+            make("elaborate", "explain in more detail",
+                 "詳しく説明する",
+                 useCases: ["相手にもっと詳細を求めるとき"],
+                 examples: [
+                    ("Could you elaborate?", "詳しく説明してくれる?"),
+                    ("Let me elaborate.", "もう少し詳しく言うと。")
+                 ]),
+            make("implement", "put into effect",
+                 "実施する・導入する",
+                 useCases: ["計画や方針を実行に移すとき"],
+                 examples: [
+                    ("Implement the new policy.", "新方針を導入する。"),
+                    ("Fully implemented.", "完全に実装済み。")
+                 ]),
+            make("facilitate", "make easier to do",
+                 "促進する・容易にする",
+                 useCases: ["プロセスや議論をスムーズにするとき"],
+                 examples: [
+                    ("Facilitate the discussion.", "議論を促進する。"),
+                    ("Tools that facilitate learning.", "学習を促進するツール。")
+                 ]),
+            make("see eye to eye", "agree completely",
+                 "意見が完全に一致する",
+                 useCases: ["主に否定形で意見の食い違いを表現するとき"],
+                 examples: [
+                    ("We don't see eye to eye.", "意見が合わない。"),
+                    ("We see eye to eye on this.", "この件は意見が一致。")
+                 ]),
+            make("output", "the amount produced",
+                 "生産量・出力",
+                 useCases: ["生産・処理の結果を表すとき"],
+                 examples: [
+                    ("Increase output.", "生産量を上げる。"),
+                    ("High-quality output.", "高品質な出力。")
+                 ]),
+            make("consistency", "the quality of being stable",
+                 "一貫性・継続性",
+                 useCases: ["習慣やブランドの安定感を語るとき"],
+                 examples: [
+                    ("Consistency is key.", "一貫性が鍵。"),
+                    ("Lack of consistency.", "一貫性の欠如。")
+                 ])
+        ]
+    }
+
+    // MARK: - 学習・人格・慣用句 (追加 9)
+
+    private static var learningWords18: [Word] {
+        [
+            make("immersion", "deep involvement in a language or activity",
+                 "没頭・浸ること",
+                 useCases: ["言語学習などに集中的に取り組むとき"],
+                 examples: [
+                    ("Language immersion.", "言語への没頭。"),
+                    ("Total immersion learning.", "完全没入学習。")
+                 ]),
+            make("mindset", "a person's mental attitude",
+                 "心構え・物の見方",
+                 useCases: ["考え方や姿勢を表すとき"],
+                 examples: [
+                    ("Growth mindset.", "成長マインドセット。"),
+                    ("Change your mindset.", "考え方を変えて。")
+                 ]),
+            make("discipline", "self-control; a field of study",
+                 "規律・自己鍛錬・専門分野",
+                 useCases: ["継続的な努力や学問領域を表すとき"],
+                 examples: [
+                    ("Self-discipline is key.", "自己鍛錬が鍵。"),
+                    ("A different discipline.", "別の分野。")
+                 ]),
+            make("by memory", "without notes or aid",
+                 "記憶で・暗記で",
+                 useCases: ["何も見ずに思い出して言うとき"],
+                 examples: [
+                    ("I know it by memory.", "暗記してる。"),
+                    ("Recite by memory.", "暗唱する。")
+                 ]),
+            make("take it for granted", "assume without appreciation",
+                 "当たり前と思う",
+                 useCases: ["感謝を忘れて当然視するとき"],
+                 examples: [
+                    ("Don't take it for granted.", "当たり前と思わないで。"),
+                    ("We take freedom for granted.", "自由を当然視してる。")
+                 ]),
+            make("grant", "give formally; allow",
+                 "授ける・与える・認める",
+                 useCases: ["公式に許可・助成・付与するとき"],
+                 examples: [
+                    ("Grant permission.", "許可を与える。"),
+                    ("Research grant.", "研究助成金。")
+                 ]),
+            make("cut corners", "do something cheaply or quickly",
+                 "手抜きする・近道する",
+                 useCases: ["手間や費用を省いて雑にやるとき"],
+                 examples: [
+                    ("Don't cut corners.", "手抜きしないで。"),
+                    ("They cut corners on safety.", "安全面で手を抜いた。")
+                 ]),
+            make("under the weather", "feeling slightly ill",
+                 "体調が悪い",
+                 useCases: ["軽い不調を婉曲的に伝えるとき"],
+                 examples: [
+                    ("I'm feeling under the weather.", "ちょっと体調が悪い。"),
+                    ("A bit under the weather today.", "今日は少し調子が悪い。")
+                 ]),
+            make("read between the lines", "find hidden meaning",
+                 "行間を読む",
+                 useCases: ["言外の意味を察するとき"],
+                 examples: [
+                    ("Read between the lines.", "行間を読んで。"),
+                    ("If you read between the lines, ~", "行間を読めば〜")
                  ])
         ]
     }
