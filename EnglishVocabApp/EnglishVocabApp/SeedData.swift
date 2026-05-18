@@ -78,6 +78,7 @@ enum SeedData {
             + legalSocial24 + qualityVerbs24
             + emotionMood25 + actionMotion25 + adjectiveObjects25
             + emotionStates26 + qualityAdjectives26 + verbNouns26
+            + impressionEmotion27 + stateLocation27 + verbFlow27
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -12995,6 +12996,188 @@ enum SeedData {
                  examples: [
                     ("Cut my bangs.", "前髪を切る。"),
                     ("I love your bangs.", "前髪かわいい。")
+                 ])
+        ]
+    }
+
+    // MARK: - 印象・感情 (追加 8)
+
+    private static var impressionEmotion27: [Word] {
+        [
+            make("iconic", "widely recognized and admired",
+                 "象徴的な・アイコン的な",
+                 useCases: ["時代や文化を象徴する人・物を表すとき"],
+                 examples: [
+                    ("Iconic movie.", "象徴的な映画。"),
+                    ("She's an iconic figure.", "彼女はアイコン的存在。")
+                 ]),
+            make("icon", "a symbol or famous figure",
+                 "象徴・偶像・アイコン",
+                 useCases: ["時代を代表する有名人や象徴的な物を表すとき"],
+                 examples: [
+                    ("Style icon.", "ファッションアイコン。"),
+                    ("Cultural icon.", "文化的象徴。")
+                 ]),
+            make("hit me in the feels", "deeply move emotionally",
+                 "心にグサッとくる",
+                 useCases: ["強く感情を揺さぶられたときの口語表現"],
+                 examples: [
+                    ("That song hit me in the feels.", "あの曲、心にグッときた。"),
+                    ("Hit me right in the feels.", "もろ心に来た。")
+                 ]),
+            make("sunshine", "bright sunlight; a cheerful person",
+                 "日差し・元気の源",
+                 useCases: ["太陽の光、または明るい人を比喩で表すとき"],
+                 examples: [
+                    ("Lots of sunshine today.", "今日は日差したっぷり。"),
+                    ("You're my sunshine.", "君は私の元気の源。")
+                 ]),
+            make("lasting", "continuing to exist or be effective",
+                 "長続きする・永続的な",
+                 useCases: ["影響や効果が長く続くものを表すとき"],
+                 examples: [
+                    ("Lasting impression.", "強い印象。"),
+                    ("Lasting friendship.", "長続きする友情。")
+                 ]),
+            make("era", "a long period of historical time",
+                 "時代",
+                 useCases: ["歴史区分や個人の人生段階を表すとき"],
+                 examples: [
+                    ("The end of an era.", "ある時代の終わり。"),
+                    ("My college era.", "大学時代。")
+                 ]),
+            make("chuckle", "laugh softly",
+                 "クスクス笑う",
+                 useCases: ["静かに笑うときの動詞・名詞"],
+                 examples: [
+                    ("He chuckled to himself.", "彼は一人クスッと笑った。"),
+                    ("A soft chuckle.", "静かな笑い。")
+                 ]),
+            make("preoccupy", "occupy someone's thoughts",
+                 "頭から離れない・心を奪う",
+                 useCases: ["何かに気を取られている状態を表すとき"],
+                 examples: [
+                    ("Preoccupied with work.", "仕事で頭がいっぱい。"),
+                    ("Don't let it preoccupy you.", "それに気を取られないで。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状態・場所 (追加 8)
+
+    private static var stateLocation27: [Word] {
+        [
+            make("all to myself", "entirely for me",
+                 "独り占め",
+                 useCases: ["他人がおらず自分だけで楽しめる状況"],
+                 examples: [
+                    ("The beach was all to myself.", "ビーチを独り占め。"),
+                    ("A whole pizza all to myself.", "ピザ一枚独り占め。")
+                 ]),
+            make("on demand", "available when wanted",
+                 "オンデマンドで・要求に応じて",
+                 useCases: ["必要な時にすぐ利用できることを表すとき"],
+                 examples: [
+                    ("Video on demand.", "オンデマンド動画。"),
+                    ("Available on demand.", "要望に応じて利用可。")
+                 ]),
+            make("in working condition", "still functioning",
+                 "稼働状態で・使える状態で",
+                 useCases: ["機械や物がまだ正常に動くことを表すとき"],
+                 examples: [
+                    ("Still in working condition.", "まだ動く状態。"),
+                    ("Keep it in working condition.", "使える状態で保って。")
+                 ]),
+            make("bit by bit", "little by little",
+                 "少しずつ",
+                 useCases: ["徐々に進む様子を表すとき"],
+                 examples: [
+                    ("Bit by bit, it improved.", "少しずつ良くなった。"),
+                    ("Learn bit by bit.", "少しずつ学ぶ。")
+                 ]),
+            make("footage", "filmed video material",
+                 "映像・フッテージ",
+                 useCases: ["記録映像やビデオ素材を表すとき"],
+                 examples: [
+                    ("Security footage.", "防犯カメラ映像。"),
+                    ("Behind-the-scenes footage.", "舞台裏映像。")
+                 ]),
+            make("background", "a person's history or visual back area",
+                 "背景・経歴",
+                 useCases: ["人の経歴、または画像・場面の背景を表すとき"],
+                 examples: [
+                    ("Cultural background.", "文化的背景。"),
+                    ("Blurry background.", "ぼやけた背景。")
+                 ]),
+            make("rural", "characteristic of the countryside",
+                 "田舎の・地方の",
+                 useCases: ["都会の対比で田舎を表すとき"],
+                 examples: [
+                    ("Rural area.", "地方・田舎。"),
+                    ("Rural life.", "田舎暮らし。")
+                 ]),
+            make("as I mentioned earlier", "as previously stated",
+                 "先ほど述べたように",
+                 useCases: ["プレゼンや会議で前述を再度参照するとき"],
+                 examples: [
+                    ("As I mentioned earlier, ~", "先ほどお伝えしたように〜"),
+                    ("As I mentioned earlier in the report.", "報告で先述したように。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・流れ・状態 (追加 7)
+
+    private static var verbFlow27: [Word] {
+        [
+            make("streak", "a continuous series; a stripe",
+                 "連続・縞模様",
+                 useCases: ["連勝や記録の連続、または線状の色違いを表すとき"],
+                 examples: [
+                    ("Winning streak.", "連勝記録。"),
+                    ("A streak of bad luck.", "不運の連続。")
+                 ]),
+            make("strand", "a single thread; leave stranded",
+                 "(髪などの)一筋・取り残す",
+                 useCases: ["髪や糸の一本、または身動き取れない状態を表すとき"],
+                 examples: [
+                    ("A strand of hair.", "髪の一筋。"),
+                    ("Stranded at the airport.", "空港で足止め。")
+                 ]),
+            make("flood", "an overflow of water; overwhelm",
+                 "洪水・殺到",
+                 useCases: ["水の氾濫、または情報や感情が押し寄せるとき"],
+                 examples: [
+                    ("Flash flood.", "鉄砲水。"),
+                    ("Flood of messages.", "メッセージが殺到。")
+                 ]),
+            make("flow", "move steadily; the steady movement",
+                 "流れる・流れ",
+                 useCases: ["液体・人・情報の継続的な動きを表すとき"],
+                 examples: [
+                    ("Cash flow.", "キャッシュフロー。"),
+                    ("Go with the flow.", "流れに身を任せて。")
+                 ]),
+            make("foster", "encourage development of; bring up as one's own",
+                 "育む・里親になる",
+                 useCases: ["考え・関係・文化を促進する、または里親として育てる"],
+                 examples: [
+                    ("Foster creativity.", "創造性を育む。"),
+                    ("Foster a child.", "里子を育てる。")
+                 ]),
+            make("touch down", "land on a surface",
+                 "着陸する・タッチダウン",
+                 useCases: ["飛行機が着陸する、またはアメフトの得点を表すとき"],
+                 examples: [
+                    ("The plane touched down.", "飛行機が着陸した。"),
+                    ("Score a touchdown.", "タッチダウンを決める。")
+                 ]),
+            make("patrol", "guard or move around an area regularly",
+                 "巡回する・パトロール",
+                 useCases: ["警官や警備員が見回るとき"],
+                 examples: [
+                    ("Police patrol.", "警察のパトロール。"),
+                    ("On patrol.", "巡回中。")
                  ])
         ]
     }
