@@ -77,6 +77,7 @@ enum SeedData {
             + actionObjects23 + conceptsStates23
             + legalSocial24 + qualityVerbs24
             + emotionMood25 + actionMotion25 + adjectiveObjects25
+            + emotionStates26 + qualityAdjectives26 + verbNouns26
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -12812,6 +12813,188 @@ enum SeedData {
                  examples: [
                     ("Through the tunnel.", "トンネルを通って。"),
                     ("Light at the end of the tunnel.", "トンネルの先の光(希望の比喩)。")
+                 ])
+        ]
+    }
+
+    // MARK: - 感情・状態 (追加 8)
+
+    private static var emotionStates26: [Word] {
+        [
+            make("best kind of pain", "a pain that feels worth it",
+                 "最高の痛み・心地よい痛み",
+                 useCases: ["懐かしさや努力の充実感など、悪くない痛みを表すとき"],
+                 examples: [
+                    ("Nostalgia is the best kind of pain.", "ノスタルジアは最高の痛み。"),
+                    ("That workout was the best kind of pain.", "あの運動は心地いい痛みだった。")
+                 ]),
+            make("coziness", "a feeling of warm comfort",
+                 "ぬくもり・居心地のよさ",
+                 useCases: ["温かくくつろげる雰囲気そのものを名詞で表すとき"],
+                 examples: [
+                    ("The coziness of home.", "家のぬくもり。"),
+                    ("Pure coziness.", "純粋な居心地のよさ。")
+                 ]),
+            make("immense", "extremely large; vast",
+                 "計り知れない・莫大な",
+                 useCases: ["規模や感情が極めて大きいことを表すとき"],
+                 examples: [
+                    ("Immense pressure.", "計り知れないプレッシャー。"),
+                    ("An immense ocean.", "果てしない海。")
+                 ]),
+            make("overwhelming", "very strong or intense",
+                 "圧倒的な・押し寄せる",
+                 useCases: ["感情や物量に圧倒される様子を表すとき"],
+                 examples: [
+                    ("Overwhelming support.", "圧倒的な支持。"),
+                    ("Feeling overwhelmed.", "押しつぶされそう。")
+                 ]),
+            make("melancholic", "feeling pensive sadness",
+                 "もの悲しい・憂愁の",
+                 useCases: ["静かで深い悲しみを表すとき"],
+                 examples: [
+                    ("A melancholic mood.", "もの悲しい気分。"),
+                    ("Melancholic music.", "憂いのある音楽。")
+                 ]),
+            make("sadness", "the feeling of being sad",
+                 "悲しみ",
+                 useCases: ["悲しい気持ちそのものを表すとき"],
+                 examples: [
+                    ("A wave of sadness.", "悲しみの波。"),
+                    ("Pure sadness.", "純粋な悲しみ。")
+                 ]),
+            make("hold it together", "stay composed under stress",
+                 "気をしっかり保つ",
+                 useCases: ["崩れそうな感情をなんとか抑えるとき"],
+                 examples: [
+                    ("Try to hold it together.", "踏ん張って。"),
+                    ("I can barely hold it together.", "ギリギリ持ちこたえてる。")
+                 ]),
+            make("sob", "cry noisily",
+                 "むせび泣く",
+                 useCases: ["激しく泣くときに"],
+                 examples: [
+                    ("She sobbed quietly.", "彼女は静かに泣いた。"),
+                    ("Burst into sobs.", "泣き崩れた。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性質・形容詞 (追加 8)
+
+    private static var qualityAdjectives26: [Word] {
+        [
+            make("secure", "safe; firmly fixed",
+                 "安全な・確保された",
+                 useCases: ["安全性や安定した状態、または「確保する」動詞"],
+                 examples: [
+                    ("A secure job.", "安定した仕事。"),
+                    ("Secure the lock.", "鍵をしっかり閉めて。")
+                 ]),
+            make("unmatched", "having no equal",
+                 "比類のない・並ぶものがない",
+                 useCases: ["他を寄せ付けない優れた品質を表すとき"],
+                 examples: [
+                    ("Unmatched quality.", "比類なき品質。"),
+                    ("Her skill is unmatched.", "彼女の腕は他にいない。")
+                 ]),
+            make("nonstop", "without stopping",
+                 "ノンストップの・休みなしの",
+                 useCases: ["途切れず続く動作や直行便を表すとき"],
+                 examples: [
+                    ("Nonstop flight.", "直行便。"),
+                    ("Working nonstop.", "ぶっ通しで働く。")
+                 ]),
+            make("oddly", "in a strange way",
+                 "奇妙にも・不思議と",
+                 useCases: ["普通とは違った印象や感覚を表すとき"],
+                 examples: [
+                    ("Oddly satisfying.", "妙に気持ちいい。"),
+                    ("Oddly enough, ~", "奇妙なことに〜")
+                 ]),
+            make("profound", "very great or deep",
+                 "深い・深遠な",
+                 useCases: ["感動や影響が深いことを表すとき"],
+                 examples: [
+                    ("Profound impact.", "深い影響。"),
+                    ("Profound silence.", "深い沈黙。")
+                 ]),
+            make("shiny", "reflecting light brightly",
+                 "ピカピカの・光沢のある",
+                 useCases: ["光を反射して輝いている物を表すとき"],
+                 examples: [
+                    ("Shiny new car.", "ピカピカの新車。"),
+                    ("Shiny hair.", "ツヤツヤの髪。")
+                 ]),
+            make("intact", "undamaged; complete",
+                 "無傷の・そのままの",
+                 useCases: ["元の状態で保たれているものを表すとき"],
+                 examples: [
+                    ("Still intact.", "まだ無傷。"),
+                    ("Reputation intact.", "評判は守られた。")
+                 ]),
+            make("simpler", "easier or more straightforward",
+                 "よりシンプルな・もっと簡単な",
+                 useCases: ["より単純化した表現を提案するとき(simpleの比較級)"],
+                 examples: [
+                    ("Make it simpler.", "もっとシンプルにして。"),
+                    ("Life was simpler then.", "あの頃はもっとシンプルだった。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・名詞 (追加 7)
+
+    private static var verbNouns26: [Word] {
+        [
+            make("exposure", "being subjected to something",
+                 "露出・経験・暴露",
+                 useCases: ["紫外線や情報、経験にさらされることを表すとき"],
+                 examples: [
+                    ("Sun exposure.", "日光に当たること。"),
+                    ("Gained exposure.", "知名度を得た。")
+                 ]),
+            make("stay up", "remain awake",
+                 "夜更かしする・起きている",
+                 useCases: ["遅くまで寝ないでいることを表すとき"],
+                 examples: [
+                    ("Stay up late.", "夜更かしする。"),
+                    ("Stayed up till 3am.", "3時まで起きてた。")
+                 ]),
+            make("instantly", "immediately",
+                 "瞬時に・即座に",
+                 useCases: ["時間をかけず即座に起きる動作を表すとき"],
+                 examples: [
+                    ("Reply instantly.", "即返事して。"),
+                    ("Instantly fell asleep.", "瞬時に眠った。")
+                 ]),
+            make("hunt", "search for or pursue",
+                 "狩りをする・探し回る",
+                 useCases: ["獲物や物を必死に探すときの動詞・名詞"],
+                 examples: [
+                    ("Job hunt.", "就活。"),
+                    ("Hunt for clues.", "手がかりを探す。")
+                 ]),
+            make("simultaneously", "at the same time",
+                 "同時に",
+                 useCases: ["複数のことが平行して起きるとき(フォーマル)"],
+                 examples: [
+                    ("Happen simultaneously.", "同時に起きる。"),
+                    ("Work on two things simultaneously.", "2つを同時に進める。")
+                 ]),
+            make("responsibility", "the state of being accountable",
+                 "責任",
+                 useCases: ["役割や義務を表すとき"],
+                 examples: [
+                    ("Take responsibility.", "責任を取る。"),
+                    ("Heavy responsibility.", "重い責任。")
+                 ]),
+            make("bangs", "hair cut to hang over the forehead",
+                 "前髪",
+                 useCases: ["額にかかる前髪のヘアスタイルを表すとき(米)"],
+                 examples: [
+                    ("Cut my bangs.", "前髪を切る。"),
+                    ("I love your bangs.", "前髪かわいい。")
                  ])
         ]
     }
