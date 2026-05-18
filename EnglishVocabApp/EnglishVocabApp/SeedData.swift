@@ -79,6 +79,7 @@ enum SeedData {
             + emotionMood25 + actionMotion25 + adjectiveObjects25
             + emotionStates26 + qualityAdjectives26 + verbNouns26
             + impressionEmotion27 + stateLocation27 + verbFlow27
+            + emotionMemory28 + actionVerbs28 + nounAdjective28
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -13178,6 +13179,216 @@ enum SeedData {
                  examples: [
                     ("Police patrol.", "警察のパトロール。"),
                     ("On patrol.", "巡回中。")
+                 ])
+        ]
+    }
+
+    // MARK: - 感情・記憶・印象 (追加 9)
+
+    private static var emotionMemory28: [Word] {
+        [
+            make("hit me hard", "affect deeply emotionally",
+                 "心にグサッと来た",
+                 useCases: ["ニュースや言葉に強く打ちのめされたとき"],
+                 examples: [
+                    ("The news hit me hard.", "そのニュースが心に響いた。"),
+                    ("That hit me hard.", "それはきつかった。")
+                 ]),
+            make("on repeat", "playing repeatedly",
+                 "リピート再生で・何度も",
+                 useCases: ["同じ曲や動画を繰り返し再生するとき"],
+                 examples: [
+                    ("Song on repeat.", "リピート再生。"),
+                    ("Watching it on repeat.", "何度も観てる。")
+                 ]),
+            make("time has flown by", "time has passed very quickly",
+                 "時が飛ぶように過ぎた",
+                 useCases: ["振り返って早かったと感じるとき"],
+                 examples: [
+                    ("Wow, time has flown by!", "わぁ、もうこんなに経った!"),
+                    ("Time has flown by since then.", "あれから時間があっという間。")
+                 ]),
+            make("warmth", "the quality of being warm",
+                 "温かさ・ぬくもり",
+                 useCases: ["物理的・感情的な温もりを表すとき"],
+                 examples: [
+                    ("Feel the warmth.", "温かさを感じる。"),
+                    ("Warmth of family.", "家族のぬくもり。")
+                 ]),
+            make("sentiment", "a thought or feeling",
+                 "感情・心情",
+                 useCases: ["心からの気持ちや世論を表すとき"],
+                 examples: [
+                    ("Public sentiment.", "世論・国民感情。"),
+                    ("Nice sentiment.", "素敵な気持ちだね。")
+                 ]),
+            make("take a moment", "pause briefly",
+                 "ちょっと時間を取る",
+                 useCases: ["立ち止まって考える・気持ちを落ち着けるとき"],
+                 examples: [
+                    ("Take a moment to relax.", "ちょっと一息ついて。"),
+                    ("Let's take a moment.", "少し時間を取ろう。")
+                 ]),
+            make("leave an impression", "be memorable",
+                 "印象を残す",
+                 useCases: ["人や物が記憶に残るとき"],
+                 examples: [
+                    ("Leave a lasting impression.", "強い印象を残す。"),
+                    ("She left an impression on me.", "彼女が私に印象を残した。")
+                 ]),
+            make("until my last breath", "until I die",
+                 "最後の息まで・死ぬまで",
+                 useCases: ["生涯にわたる強い決意や愛情を表すとき"],
+                 examples: [
+                    ("I'll fight until my last breath.", "息絶えるまで戦う。"),
+                    ("Love you until my last breath.", "死ぬまで愛してる。")
+                 ]),
+            make("go back in time", "return to the past",
+                 "過去に戻る",
+                 useCases: ["過去をやり直したい願望や懐古を表すとき"],
+                 examples: [
+                    ("I wish I could go back in time.", "過去に戻れたらいいのに。"),
+                    ("Go back in time and ~", "時を戻して〜")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 9)
+
+    private static var actionVerbs28: [Word] {
+        [
+            make("fix sth", "repair or arrange",
+                 "(物を)直す・解決する",
+                 useCases: ["壊れた物や問題を修理・解決するとき"],
+                 examples: [
+                    ("Fix the bug.", "バグを直す。"),
+                    ("Fix the problem.", "問題を解決する。")
+                 ]),
+            make("fix on", "focus attention on",
+                 "〜に注目する・固定する",
+                 useCases: ["視線や考えをそこに据えるとき"],
+                 examples: [
+                    ("Her eyes were fixed on him.", "彼女の視線は彼に釘付け。"),
+                    ("Fix on a goal.", "目標を見据える。")
+                 ]),
+            make("fool around", "behave playfully or waste time",
+                 "ふざける・遊び回る",
+                 useCases: ["真面目にせず遊んでいるとき"],
+                 examples: [
+                    ("Stop fooling around.", "ふざけるのやめて。"),
+                    ("We fooled around all day.", "一日中遊び回った。")
+                 ]),
+            make("go and move on", "leave and move forward",
+                 "去って前進する・忘れて進む",
+                 useCases: ["過去を断ち切って次へ進むとき"],
+                 examples: [
+                    ("Time to go and move on.", "去って前へ進む時。"),
+                    ("Just go and move on.", "もう忘れて進もう。")
+                 ]),
+            make("unknowingly", "without being aware",
+                 "知らずに・無自覚に",
+                 useCases: ["気づかないうちに何かをしたとき"],
+                 examples: [
+                    ("Unknowingly broke the rule.", "知らずに規則を破った。"),
+                    ("Unknowingly helped them.", "知らぬ間に助けていた。")
+                 ]),
+            make("spiral", "wind in a curve; deteriorate",
+                 "螺旋・悪化する",
+                 useCases: ["渦巻き状の動きや、状況が悪化するとき"],
+                 examples: [
+                    ("Downward spiral.", "悪循環。"),
+                    ("Spiral out of control.", "制御不能になる。")
+                 ]),
+            make("stump", "confuse or baffle",
+                 "困らせる・行き詰まらせる",
+                 useCases: ["難問で困惑させるとき"],
+                 examples: [
+                    ("That stumped me.", "それで詰まった。"),
+                    ("Don't get stumped.", "つまずかないで。")
+                 ]),
+            make("distort", "twist out of shape; misrepresent",
+                 "歪める・捻じ曲げる",
+                 useCases: ["形や事実を歪曲するとき"],
+                 examples: [
+                    ("Distort the truth.", "真実を捻じ曲げる。"),
+                    ("Distorted image.", "歪んだイメージ。")
+                 ]),
+            make("fracture", "break or crack",
+                 "骨折する・ひびが入る",
+                 useCases: ["骨折や物・関係のひびを表すとき"],
+                 examples: [
+                    ("Fracture a bone.", "骨折する。"),
+                    ("A fractured relationship.", "ひびの入った関係。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞・形容詞 (追加 9)
+
+    private static var nounAdjective28: [Word] {
+        [
+            make("spoonful", "an amount a spoon can hold",
+                 "スプーン一杯",
+                 useCases: ["料理や薬の分量を表すとき"],
+                 examples: [
+                    ("A spoonful of sugar.", "スプーン一杯の砂糖。"),
+                    ("Two spoonfuls.", "スプーン2杯。")
+                 ]),
+            make("membrane", "a thin layer of tissue",
+                 "膜",
+                 useCases: ["細胞膜や薄い層を表すとき"],
+                 examples: [
+                    ("Cell membrane.", "細胞膜。"),
+                    ("Mucous membrane.", "粘膜。")
+                 ]),
+            make("backdrop", "the scenery behind",
+                 "背景・舞台幕",
+                 useCases: ["舞台や写真、出来事の背景を表すとき"],
+                 examples: [
+                    ("Mountain backdrop.", "山を背景に。"),
+                    ("Against this backdrop.", "この背景の中で。")
+                 ]),
+            make("fluorescent", "emitting glowing light",
+                 "蛍光の・蛍光灯の",
+                 useCases: ["蛍光ペンや蛍光灯など発光するものを表すとき"],
+                 examples: [
+                    ("Fluorescent light.", "蛍光灯。"),
+                    ("Fluorescent yellow.", "蛍光イエロー。")
+                 ]),
+            make("now that", "given the fact that",
+                 "〜である今は・〜したからには",
+                 useCases: ["新しい状況を踏まえて結論を述べるとき"],
+                 examples: [
+                    ("Now that I think about it, ~", "考えてみれば〜"),
+                    ("Now that you're here, let's start.", "君が来たから始めよう。")
+                 ]),
+            make("flawless", "without any flaw",
+                 "完璧な・欠点のない",
+                 useCases: ["申し分のない品質や見た目を表すとき"],
+                 examples: [
+                    ("Flawless performance.", "完璧なパフォーマンス。"),
+                    ("Flawless skin.", "完璧な肌。")
+                 ]),
+            make("blanket", "a thick cover; covering broadly",
+                 "毛布・全体的な",
+                 useCases: ["寝具の毛布、または広範囲をカバーする比喩"],
+                 examples: [
+                    ("Warm blanket.", "暖かい毛布。"),
+                    ("Blanket statement.", "ひとくくりの発言。")
+                 ]),
+            make("cooked", "prepared by heat; (slang) done for",
+                 "調理された・(俗)終わった",
+                 useCases: ["料理の状態、またはスラングで「終わった・ヤバい」"],
+                 examples: [
+                    ("Cooked rice.", "炊いたお米。"),
+                    ("I'm cooked!", "もう終わった!")
+                 ]),
+            make("fishing", "the activity of catching fish",
+                 "釣り・釣りをすること",
+                 useCases: ["趣味としての釣りや「探りを入れる」比喩"],
+                 examples: [
+                    ("Go fishing.", "釣りに行く。"),
+                    ("Fishing for compliments.", "褒められたがる。")
                  ])
         ]
     }
