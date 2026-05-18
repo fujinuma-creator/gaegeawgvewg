@@ -76,6 +76,7 @@ enum SeedData {
             + personalityTypes23 + planningThoughts23
             + actionObjects23 + conceptsStates23
             + legalSocial24 + qualityVerbs24
+            + emotionMood25 + actionMotion25 + adjectiveObjects25
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -12601,6 +12602,216 @@ enum SeedData {
                  examples: [
                     ("Stop stalking me.", "つけ回さないで。"),
                     ("She felt stalked.", "つけ回されていると感じた。")
+                 ])
+        ]
+    }
+
+    // MARK: - 感情・心境 (追加 9)
+
+    private static var emotionMood25: [Word] {
+        [
+            make("cozy", "warm and comfortable",
+                 "居心地のいい・ぬくぬくした",
+                 useCases: ["温かくくつろげる雰囲気を表すとき"],
+                 examples: [
+                    ("A cozy cafe.", "居心地のいいカフェ。"),
+                    ("Get cozy.", "ゆっくりくつろいで。")
+                 ]),
+            make("nostalgia", "sentimental longing for the past",
+                 "ノスタルジア・懐かしさ",
+                 useCases: ["昔を思い出す感傷的な気持ちを表すとき"],
+                 examples: [
+                    ("A wave of nostalgia.", "懐かしさの波。"),
+                    ("Pure nostalgia.", "純粋な郷愁。")
+                 ]),
+            make("in tears", "crying",
+                 "泣いている",
+                 useCases: ["涙を流している状態を表すとき"],
+                 examples: [
+                    ("She was in tears.", "彼女は泣いていた。"),
+                    ("Left them in tears.", "彼らを泣かせた。")
+                 ]),
+            make("magical", "wonderfully enchanting",
+                 "魔法のような・素晴らしい",
+                 useCases: ["うっとりするほど素敵な瞬間を表すとき"],
+                 examples: [
+                    ("A magical moment.", "魔法のような瞬間。"),
+                    ("It felt magical.", "魔法のようだった。")
+                 ]),
+            make("thankful", "grateful",
+                 "感謝している",
+                 useCases: ["感謝の気持ちを表すとき"],
+                 examples: [
+                    ("I'm thankful for you.", "君に感謝してる。"),
+                    ("Be thankful.", "感謝の気持ちを忘れずに。")
+                 ]),
+            make("mentally", "in terms of the mind",
+                 "精神的に",
+                 useCases: ["心の状態や準備について話すとき"],
+                 examples: [
+                    ("Mentally exhausted.", "精神的に疲れた。"),
+                    ("Mentally prepared.", "心の準備ができている。")
+                 ]),
+            make("prepared", "ready in advance",
+                 "準備された",
+                 useCases: ["事前準備ができている状態を表すとき"],
+                 examples: [
+                    ("Always be prepared.", "常に備えあれ。"),
+                    ("I'm well prepared.", "しっかり準備できてる。")
+                 ]),
+            make("good old days", "the past remembered fondly",
+                 "懐かしい古き良き時代",
+                 useCases: ["楽しかった昔を懐かしむとき"],
+                 examples: [
+                    ("The good old days.", "古き良き時代。"),
+                    ("Miss the good old days.", "あの頃が懐かしい。")
+                 ]),
+            make("bless my ears", "what a wonderful sound to hear",
+                 "耳に心地いい・なんと嬉しい言葉",
+                 useCases: ["心地よい音や嬉しい言葉に感動するとき"],
+                 examples: [
+                    ("Bless my ears!", "なんと嬉しい音!"),
+                    ("That voice blesses my ears.", "あの声が耳に心地いい。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・動作 (追加 9)
+
+    private static var actionMotion25: [Word] {
+        [
+            make("calm sb", "make someone less anxious",
+                 "〜を落ち着かせる",
+                 useCases: ["興奮や不安を鎮めるとき"],
+                 examples: [
+                    ("Calm her down.", "彼女を落ち着かせて。"),
+                    ("Try to calm me.", "私を落ち着かせようとして。")
+                 ]),
+            make("break into pieces", "shatter into fragments",
+                 "粉々に砕ける・壊れる",
+                 useCases: ["物理的にも比喩的にも粉々に砕ける状況"],
+                 examples: [
+                    ("It broke into pieces.", "粉々になった。"),
+                    ("My heart broke into pieces.", "心がバラバラになった。")
+                 ]),
+            make("tear down", "demolish",
+                 "取り壊す・打ち砕く",
+                 useCases: ["建物や信念を破壊するとき"],
+                 examples: [
+                    ("Tear down the wall.", "壁を取り壊す。"),
+                    ("Tear down barriers.", "壁を打ち壊す。")
+                 ]),
+            make("all-nighter", "stay up all night",
+                 "徹夜",
+                 useCases: ["一晩中起きて勉強や仕事をしたとき"],
+                 examples: [
+                    ("Pulled an all-nighter.", "徹夜した。"),
+                    ("Need an all-nighter.", "徹夜が必要。")
+                 ]),
+            make("relieve", "ease pain or stress",
+                 "和らげる・軽減する",
+                 useCases: ["痛み・ストレス・負担を減らすとき"],
+                 examples: [
+                    ("Relieve stress.", "ストレスを和らげる。"),
+                    ("Relieve the pressure.", "プレッシャーを軽減。")
+                 ]),
+            make("trigger", "cause a reaction",
+                 "引き金になる・誘発する",
+                 useCases: ["反応・感情・記憶などを引き起こすとき"],
+                 examples: [
+                    ("Trigger memories.", "記憶を呼び起こす。"),
+                    ("Pull the trigger.", "引き金を引く。")
+                 ]),
+            make("die at peace", "pass away peacefully",
+                 "安らかに死ぬ",
+                 useCases: ["穏やかな最期を表すとき"],
+                 examples: [
+                    ("She died at peace.", "彼女は安らかに亡くなった。"),
+                    ("May he die at peace.", "彼が安らかに逝けますように。")
+                 ]),
+            make("reminder", "something that helps you remember",
+                 "リマインダー・思い出させるもの",
+                 useCases: ["忘れないように促す通知や品物を表すとき"],
+                 examples: [
+                    ("Set a reminder.", "リマインダーを設定。"),
+                    ("Friendly reminder.", "親切なお知らせ。")
+                 ]),
+            make("journey", "a long trip or process",
+                 "旅・道のり",
+                 useCases: ["物理的な旅や人生の歩みを表すとき"],
+                 examples: [
+                    ("A long journey.", "長い旅。"),
+                    ("Life is a journey.", "人生は旅。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞・物 (追加 9)
+
+    private static var adjectiveObjects25: [Word] {
+        [
+            make("intentional", "done on purpose",
+                 "意図的な",
+                 useCases: ["わざと行ったことを表すとき"],
+                 examples: [
+                    ("It was intentional.", "わざとだった。"),
+                    ("Intentional design.", "意図的なデザイン。")
+                 ]),
+            make("remote", "far away; controlled from a distance",
+                 "遠隔の・人里離れた",
+                 useCases: ["距離が遠い場所、またはリモートワークなど"],
+                 examples: [
+                    ("Remote work.", "リモートワーク。"),
+                    ("A remote village.", "辺鄙な村。")
+                 ]),
+            make("pixel art", "digital art made of pixels",
+                 "ピクセルアート",
+                 useCases: ["ドット絵の作品やレトロゲーム風グラフィックを表すとき"],
+                 examples: [
+                    ("Love pixel art.", "ピクセルアート大好き。"),
+                    ("Pixel art game.", "ドット絵ゲーム。")
+                 ]),
+            make("well done", "cooked thoroughly; nicely accomplished",
+                 "ウェルダン・お見事",
+                 useCases: ["肉の焼き加減や仕事の褒め言葉として"],
+                 examples: [
+                    ("Steak well done, please.", "ステーキはウェルダンで。"),
+                    ("Well done!", "お見事!")
+                 ]),
+            make("soundtrack", "music for a film or show",
+                 "サウンドトラック",
+                 useCases: ["映画やゲームの音楽を表すとき"],
+                 examples: [
+                    ("Movie soundtrack.", "映画のサントラ。"),
+                    ("Great soundtrack.", "サントラが素晴らしい。")
+                 ]),
+            make("for a sec", "for a short moment",
+                 "ちょっとだけ・一瞬",
+                 useCases: ["短い時間を表すカジュアル口語(for a second の略)"],
+                 examples: [
+                    ("Wait for a sec.", "ちょっと待って。"),
+                    ("Step out for a sec.", "ちょっと外す。")
+                 ]),
+            make("personal", "relating to one individual privately",
+                 "個人的な",
+                 useCases: ["プライベートで重要なことを表すとき"],
+                 examples: [
+                    ("Don't take it personal.", "個人攻撃と受け取らないで。"),
+                    ("Personal experience.", "個人的な経験。")
+                 ]),
+            make("uncontrollable", "impossible to control",
+                 "制御不能な",
+                 useCases: ["抑えきれない感情や行動を表すとき"],
+                 examples: [
+                    ("Uncontrollable laughter.", "止まらない笑い。"),
+                    ("It became uncontrollable.", "手に負えなくなった。")
+                 ]),
+            make("tunnel", "an underground passage",
+                 "トンネル",
+                 useCases: ["地下や山を貫く通路、または比喩的な道のり"],
+                 examples: [
+                    ("Through the tunnel.", "トンネルを通って。"),
+                    ("Light at the end of the tunnel.", "トンネルの先の光(希望の比喩)。")
                  ])
         ]
     }
