@@ -80,6 +80,7 @@ enum SeedData {
             + emotionStates26 + qualityAdjectives26 + verbNouns26
             + impressionEmotion27 + stateLocation27 + verbFlow27
             + emotionMemory28 + actionVerbs28 + nounAdjective28
+            + actionStates29 + qualityConcepts29
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -13389,6 +13390,118 @@ enum SeedData {
                  examples: [
                     ("Go fishing.", "釣りに行く。"),
                     ("Fishing for compliments.", "褒められたがる。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・状態 (追加 7)
+
+    private static var actionStates29: [Word] {
+        [
+            make("extract", "remove or pull out",
+                 "抽出する・取り出す",
+                 useCases: ["情報・成分・物を取り出すとき"],
+                 examples: [
+                    ("Extract the data.", "データを抽出する。"),
+                    ("Tooth extraction.", "歯の抜歯。")
+                 ]),
+            make("live up to", "fulfill or match expectations",
+                 "(期待に)応える",
+                 useCases: ["評判や期待に見合うものを表すとき"],
+                 examples: [
+                    ("Live up to the hype.", "前評判に応える。"),
+                    ("Live up to expectations.", "期待に応える。")
+                 ]),
+            make("add up", "make sense; total to",
+                 "辻褄が合う・合計する",
+                 useCases: ["話の筋が通る、または数字の合計を表すとき"],
+                 examples: [
+                    ("That doesn't add up.", "辻褄が合わない。"),
+                    ("It all adds up.", "全部つながる。")
+                 ]),
+            make("filter", "remove unwanted parts; selectively pass",
+                 "ろ過する・フィルター",
+                 useCases: ["物理的な濾過、または情報を選別するとき"],
+                 examples: [
+                    ("Filter the water.", "水を濾す。"),
+                    ("Apply a photo filter.", "写真にフィルターをかける。")
+                 ]),
+            make("score", "earn points; get something good",
+                 "得点する・うまく手に入れる",
+                 useCases: ["試合の得点、または「ゲット」のスラング"],
+                 examples: [
+                    ("Score a goal.", "ゴールを決める。"),
+                    ("Scored tickets!", "チケット手に入れた!")
+                 ]),
+            make("peak", "the highest point",
+                 "頂点・最盛期",
+                 useCases: ["物事の最高点や絶頂期を表すとき"],
+                 examples: [
+                    ("Peak performance.", "ピークパフォーマンス。"),
+                    ("Reach the peak.", "頂点に達する。")
+                 ]),
+            make("ever told", "have ever said to someone",
+                 "今までに〜と言われた",
+                 useCases: ["過去に誰かから言われた経験を尋ねるとき"],
+                 examples: [
+                    ("Best advice I've ever told.", "私が言った中で最高の助言。"),
+                    ("Have I ever told you ~?", "今までに〜って話したっけ?")
+                 ])
+        ]
+    }
+
+    // MARK: - 性質・概念 (追加 7)
+
+    private static var qualityConcepts29: [Word] {
+        [
+            make("simply", "in a simple way; just",
+                 "ただ単に・シンプルに",
+                 useCases: ["余計なものなしで言いたいことを伝えるとき"],
+                 examples: [
+                    ("Simply put, ~", "簡単に言うと〜"),
+                    ("Simply amazing.", "ただただ素晴らしい。")
+                 ]),
+            make("greatest", "the most outstanding",
+                 "最も偉大な・最高の",
+                 useCases: ["史上最高や最も優れたものを表すとき"],
+                 examples: [
+                    ("The greatest of all time.", "史上最高。"),
+                    ("My greatest love.", "私の最愛。")
+                 ]),
+            make("heartfelt", "deeply sincere",
+                 "心からの",
+                 useCases: ["感情がこもった言葉や行動を表すとき"],
+                 examples: [
+                    ("Heartfelt apology.", "心からの謝罪。"),
+                    ("Heartfelt thanks.", "心からの感謝。")
+                 ]),
+            make("as light", "as a lightly as; light as ~",
+                 "〜と同じくらい軽い",
+                 useCases: ["軽さを比較するとき(as light as a feather など)"],
+                 examples: [
+                    ("As light as a feather.", "羽根のように軽い。"),
+                    ("As light as air.", "空気のように軽やか。")
+                 ]),
+            make("youth", "the period of being young",
+                 "若さ・青春",
+                 useCases: ["若い時期や若者を表すとき"],
+                 examples: [
+                    ("In my youth.", "若い頃に。"),
+                    ("The youth of today.", "今の若者。")
+                 ]),
+            make("adolescence", "the transitional stage to adulthood",
+                 "思春期・青年期",
+                 useCases: ["子供から大人への移行期を表すとき"],
+                 examples: [
+                    ("Adolescence is tough.", "思春期は大変。"),
+                    ("Late adolescence.", "青年期後半。")
+                 ]),
+            make("kindness", "the quality of being kind",
+                 "優しさ・親切",
+                 useCases: ["他人への思いやりや親切な行為を表すとき"],
+                 examples: [
+                    ("Act of kindness.", "親切な行為。"),
+                    ("Kindness goes a long way.", "優しさは大きな力を持つ。")
                  ])
         ]
     }
