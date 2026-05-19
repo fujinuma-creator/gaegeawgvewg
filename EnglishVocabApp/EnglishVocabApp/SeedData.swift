@@ -83,6 +83,7 @@ enum SeedData {
             + actionStates29 + qualityConcepts29
             + actionVerbs30 + qualityExpression30
             + actionVerbs31 + qualityAdjectives31
+            + conversationalPhrases32
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -13812,6 +13813,48 @@ enum SeedData {
                  examples: [
                     ("Mutant virus.", "変異ウイルス。"),
                     ("X-Men are mutants.", "X-メンは変異体。")
+                 ])
+        ]
+    }
+
+    // MARK: - 会話表現 (追加 5・at the end of は既出)
+
+    private static var conversationalPhrases32: [Word] {
+        [
+            make("for quite a long time", "for a considerably long period",
+                 "かなり長い間",
+                 useCases: ["長い期間続いたことを強調するとき"],
+                 examples: [
+                    ("I've known him for quite a long time.", "彼とはかなり長い付き合い。"),
+                    ("Lived here for quite a long time.", "ここにかなり長く住んでる。")
+                 ]),
+            make("I guess it depends on sth", "it varies depending on",
+                 "それは〜次第かな",
+                 useCases: ["条件次第で答えが変わるとき"],
+                 examples: [
+                    ("I guess it depends on the price.", "値段次第かな。"),
+                    ("It depends on the weather.", "天気次第。")
+                 ]),
+            make("I have a body / brain", "I also need physical/mental care",
+                 "私にも体/脳がある(同じ人間だ)",
+                 useCases: ["自分も人間として扱われたい・休みたいと訴えるとき"],
+                 examples: [
+                    ("I have a body too — let me rest.", "私だって体があるんだ、休ませて。"),
+                    ("I have a brain — let me think.", "私にも頭があるんだから考えさせて。")
+                 ]),
+            make("not as easy as it looks", "harder than it appears",
+                 "見た目ほど簡単じゃない",
+                 useCases: ["簡単そうに見えるが実は難しいことを言うとき"],
+                 examples: [
+                    ("It's not as easy as it looks.", "見た目ほど簡単じゃない。"),
+                    ("Trust me, not as easy as it looks.", "本当に、見かけほど楽じゃない。")
+                 ]),
+            make("I can't function without sth", "I rely heavily on something",
+                 "〜なしじゃやっていけない",
+                 useCases: ["何かが生活や仕事に不可欠だと強調するとき"],
+                 examples: [
+                    ("I can't function without coffee.", "コーヒーなしじゃ動けない。"),
+                    ("Can't function without my phone.", "スマホなしじゃ生きられない。")
                  ])
         ]
     }
