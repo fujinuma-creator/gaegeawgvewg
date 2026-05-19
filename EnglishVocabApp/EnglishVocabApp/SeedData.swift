@@ -82,6 +82,7 @@ enum SeedData {
             + emotionMemory28 + actionVerbs28 + nounAdjective28
             + actionStates29 + qualityConcepts29
             + actionVerbs30 + qualityExpression30
+            + actionVerbs31 + qualityAdjectives31
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -13657,6 +13658,160 @@ enum SeedData {
                  examples: [
                     ("Worth a try.", "試す価値あり。"),
                     ("Net worth.", "純資産。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var actionVerbs31: [Word] {
+        [
+            make("carry over", "transfer to another period",
+                 "持ち越す・繰り越す",
+                 useCases: ["残った分や有給を次の期間に持ち越すとき"],
+                 examples: [
+                    ("Carry over to next year.", "来年に繰り越す。"),
+                    ("Vacation days carry over.", "有給は持ち越せる。")
+                 ]),
+            make("change up", "alter or vary",
+                 "変える・刷新する",
+                 useCases: ["日常やルーティンを変えるとき"],
+                 examples: [
+                    ("Change up the routine.", "ルーティンを変える。"),
+                    ("Let's change it up.", "刷新しよう。")
+                 ]),
+            make("obtain", "acquire or get",
+                 "得る・入手する",
+                 useCases: ["努力や手続きで何かを手に入れるとき"],
+                 examples: [
+                    ("Obtain a permit.", "許可を取得する。"),
+                    ("Information was obtained.", "情報を入手した。")
+                 ]),
+            make("reward", "give in recognition of effort",
+                 "報酬・報いる",
+                 useCases: ["努力や貢献に対する見返りを表すとき"],
+                 examples: [
+                    ("Hard work has its rewards.", "努力は報われる。"),
+                    ("Reward yourself.", "自分にご褒美を。")
+                 ]),
+            make("glorify", "give praise or higher honor",
+                 "美化する・賛美する",
+                 useCases: ["過度に持ち上げる、または神聖視するとき"],
+                 examples: [
+                    ("Glorify violence.", "暴力を美化する。"),
+                    ("Glorified version.", "美化された姿。")
+                 ]),
+            make("trash sth", "throw away; criticize harshly",
+                 "捨てる・酷評する",
+                 useCases: ["物を捨てる、または激しく批判するとき"],
+                 examples: [
+                    ("Trash the old papers.", "古い書類を捨てる。"),
+                    ("Critics trashed the movie.", "批評家が映画を酷評した。")
+                 ]),
+            make("start all over", "begin again from scratch",
+                 "最初からやり直す",
+                 useCases: ["完全にゼロから再スタートするとき"],
+                 examples: [
+                    ("Let's start all over.", "最初からやり直そう。"),
+                    ("Start all over again.", "もう一度ゼロから。")
+                 ]),
+            make("be cool with", "be okay with",
+                 "〜で大丈夫・〜に異論ない",
+                 useCases: ["何かを了承する・受け入れるカジュアル表現"],
+                 examples: [
+                    ("I'm cool with that.", "それでいいよ。"),
+                    ("Are you cool with this plan?", "この案で大丈夫?")
+                 ]),
+            make("you gotta", "you have to",
+                 "君は〜しなきゃ",
+                 useCases: ["くだけた口語で「〜すべき」を伝えるとき"],
+                 examples: [
+                    ("You gotta try this.", "これは試さなきゃ。"),
+                    ("You gotta be kidding.", "冗談だろう。")
+                 ]),
+            make("saved", "rescued; stored",
+                 "救われた・保存された",
+                 useCases: ["助けられた、または記録として保存された状態"],
+                 examples: [
+                    ("You saved me!", "助かった!"),
+                    ("Files are saved.", "ファイルは保存済み。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性質・形容詞 (追加 10)
+
+    private static var qualityAdjectives31: [Word] {
+        [
+            make("otherwise", "in different circumstances",
+                 "そうでなければ・他の点では",
+                 useCases: ["条件付きや別の見方を加えるとき"],
+                 examples: [
+                    ("Hurry up, otherwise we'll be late.", "急いで、じゃないと遅れる。"),
+                    ("Otherwise fine.", "他の点では大丈夫。")
+                 ]),
+            make("unnecessarily", "in a way that is not needed",
+                 "不必要に",
+                 useCases: ["余計にしている度合いを表すとき"],
+                 examples: [
+                    ("Unnecessarily complicated.", "無駄に複雑。"),
+                    ("Don't worry unnecessarily.", "余計に心配しないで。")
+                 ]),
+            make("consuming", "using up; taking time/attention",
+                 "消費する・時間/注意を奪う",
+                 useCases: ["時間や精神を多く費やすことを表すとき"],
+                 examples: [
+                    ("Time-consuming.", "時間がかかる。"),
+                    ("All-consuming passion.", "全てを注ぐ情熱。")
+                 ]),
+            make("that would be", "that is going to be / that's likely",
+                 "それは〜だね・〜になる",
+                 useCases: ["想定や答えを述べるとき"],
+                 examples: [
+                    ("That would be great!", "それいいね!"),
+                    ("That would be a mistake.", "それは間違いになる。")
+                 ]),
+            make("great", "excellent; very good",
+                 "素晴らしい・偉大な",
+                 useCases: ["賛辞や量の多さを表すとき"],
+                 examples: [
+                    ("That's great!", "素晴らしい!"),
+                    ("Great achievement.", "偉大な功績。")
+                 ]),
+            make("effect", "a change produced by action",
+                 "効果・影響",
+                 useCases: ["原因の結果として生じる変化を表すとき"],
+                 examples: [
+                    ("Side effect.", "副作用。"),
+                    ("Take effect.", "効力を発する。")
+                 ]),
+            make("dumb", "stupid; unable to speak",
+                 "馬鹿げた・口がきけない",
+                 useCases: ["愚かさを表すスラング、または無言を表すとき"],
+                 examples: [
+                    ("That's so dumb.", "それマジで馬鹿げてる。"),
+                    ("Dumbfounded.", "唖然とした。")
+                 ]),
+            make("brutal", "savage; harsh",
+                 "残忍な・容赦のない",
+                 useCases: ["過酷さや厳しさを表すとき"],
+                 examples: [
+                    ("Brutal workout.", "ハードなトレーニング。"),
+                    ("Brutal honesty.", "残酷な正直さ。")
+                 ]),
+            make("as a whole", "considered all together",
+                 "全体として",
+                 useCases: ["全体を一つの単位として捉えるとき"],
+                 examples: [
+                    ("Society as a whole.", "社会全体として。"),
+                    ("Looking at it as a whole.", "全体として見ると。")
+                 ]),
+            make("mutant", "an organism with a mutation",
+                 "突然変異体・ミュータント",
+                 useCases: ["生物学的な変異体、またはフィクションの変身者"],
+                 examples: [
+                    ("Mutant virus.", "変異ウイルス。"),
+                    ("X-Men are mutants.", "X-メンは変異体。")
                  ])
         ]
     }
