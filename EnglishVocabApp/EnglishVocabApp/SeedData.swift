@@ -84,6 +84,8 @@ enum SeedData {
             + actionVerbs30 + qualityExpression30
             + actionVerbs31 + qualityAdjectives31
             + conversationalPhrases32
+            + actionVerbs33 + emotionStates33
+            + expressionFillers33 + nounConcepts33
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -13855,6 +13857,251 @@ enum SeedData {
                  examples: [
                     ("I can't function without coffee.", "コーヒーなしじゃ動けない。"),
                     ("Can't function without my phone.", "スマホなしじゃ生きられない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 8)
+
+    private static var actionVerbs33: [Word] {
+        [
+            make("hook up", "connect; meet up (casually)",
+                 "(機器を)接続する・(人と)落ち合う",
+                 useCases: ["物を繋ぐ、または非公式に人と会うとき"],
+                 examples: [
+                    ("Hook up the TV.", "テレビを繋ぐ。"),
+                    ("Let's hook up later.", "あとで会おう。")
+                 ]),
+            make("confess", "admit something privately",
+                 "告白する・白状する",
+                 useCases: ["秘密や罪を打ち明けるとき"],
+                 examples: [
+                    ("He confessed his love.", "彼は愛を告白した。"),
+                    ("Confess your sins.", "罪を告白して。")
+                 ]),
+            make("flirt", "behave amorously without serious intent",
+                 "イチャつく・気を引く",
+                 useCases: ["恋愛感情を匂わせる振る舞いを表すとき"],
+                 examples: [
+                    ("Stop flirting!", "ナンパやめて!"),
+                    ("She's flirting with him.", "彼女、彼と楽しそうに話してる。")
+                 ]),
+            make("take opportunity", "use a chance",
+                 "機会を利用する",
+                 useCases: ["訪れた好機を活かすとき"],
+                 examples: [
+                    ("Take this opportunity to ~", "この機会に〜"),
+                    ("She took the opportunity.", "彼女はチャンスをものにした。")
+                 ]),
+            make("climb", "go up by gripping or stepping",
+                 "登る・上昇する",
+                 useCases: ["物理的に登る、または順位・価値が上がるとき"],
+                 examples: [
+                    ("Climb the mountain.", "山を登る。"),
+                    ("Climb the ranks.", "出世の階段を登る。")
+                 ]),
+            make("thrust", "push with force",
+                 "強く押す・突き出す",
+                 useCases: ["物理的に強く押す、または比喩的に立場を押し付けるとき"],
+                 examples: [
+                    ("Thrust the door open.", "ドアを押し開ける。"),
+                    ("Thrust into the spotlight.", "脚光を浴びさせられる。")
+                 ]),
+            make("come down", "descend; fall (price, rain etc.)",
+                 "降りる・下がる",
+                 useCases: ["物理的に降りる、価格が下がる、雨が降るときなど"],
+                 examples: [
+                    ("Come down from there.", "そこから降りて。"),
+                    ("Prices are coming down.", "値段が下がってる。")
+                 ]),
+            make("wear sth", "have on the body",
+                 "(衣服などを)身につける",
+                 useCases: ["服や装飾品を着用するとき"],
+                 examples: [
+                    ("Wear a mask.", "マスクをして。"),
+                    ("She wears glasses.", "彼女はメガネをかけている。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状況・感情 (追加 8)
+
+    private static var emotionStates33: [Word] {
+        [
+            make("grow up", "become an adult; mature",
+                 "成長する・大人になる",
+                 useCases: ["子供から大人になる、または精神的に成熟するとき"],
+                 examples: [
+                    ("Grow up!", "大人になれよ!"),
+                    ("Where did you grow up?", "どこで育った?")
+                 ]),
+            make("grounded", "well-balanced; punished by staying home",
+                 "地に足のついた・外出禁止",
+                 useCases: ["安定した性格、または外出禁止のお仕置きを表すとき"],
+                 examples: [
+                    ("She's so grounded.", "彼女は地に足が着いてる。"),
+                    ("You're grounded!", "外出禁止だよ!")
+                 ]),
+            make("getting adjective", "becoming (adj) - going through a change",
+                 "〜になりつつある(get + 形容詞)",
+                 useCases: ["状態がだんだん変わっていくときの構文(getting tired等)"],
+                 examples: [
+                    ("Getting tired.", "疲れてきた。"),
+                    ("It's getting cold.", "寒くなってきた。")
+                 ]),
+            make("guilt-trip", "make someone feel guilty",
+                 "罪悪感を抱かせる",
+                 useCases: ["相手を遠回しに責めて罪の意識を持たせるとき"],
+                 examples: [
+                    ("Stop guilt-tripping me.", "罪悪感を植え付けないで。"),
+                    ("Classic guilt trip.", "典型的な罪悪感攻撃。")
+                 ]),
+            make("tipsy", "slightly drunk",
+                 "ほろ酔いの",
+                 useCases: ["軽くお酒が入った気持ちのいい状態を表すとき"],
+                 examples: [
+                    ("Feeling tipsy.", "ほろ酔い気分。"),
+                    ("A bit tipsy.", "ちょっと酔ってる。")
+                 ]),
+            make("random", "happening without pattern",
+                 "ランダムな・脈絡のない",
+                 useCases: ["脈絡なく起こることや、知らない人を指すとき"],
+                 examples: [
+                    ("That's so random!", "脈絡なさすぎ!"),
+                    ("Some random guy.", "知らない男性。")
+                 ]),
+            make("obviously", "clearly; evidently",
+                 "明らかに・当然",
+                 useCases: ["明白なことを強調するとき"],
+                 examples: [
+                    ("Obviously, yes.", "当然イエス。"),
+                    ("Obviously upset.", "明らかに怒ってる。")
+                 ]),
+            make("all good", "everything is fine",
+                 "全部大丈夫・問題ない",
+                 useCases: ["「気にしないで」「全然OK」のカジュアル返答"],
+                 examples: [
+                    ("It's all good.", "全部OK。"),
+                    ("All good, no worries.", "大丈夫、気にしないで。")
+                 ])
+        ]
+    }
+
+    // MARK: - 表現・つなぎ (追加 8)
+
+    private static var expressionFillers33: [Word] {
+        [
+            make("what was I doing", "what was I in the middle of",
+                 "何してたんだっけ?",
+                 useCases: ["うっかり中断して思い出せないとき"],
+                 examples: [
+                    ("Wait, what was I doing?", "あれ、何してたんだっけ?"),
+                    ("What was I doing again?", "私何してたっけ?")
+                 ]),
+            make("I was like", "I sort of said/thought",
+                 "私は〜って感じだった",
+                 useCases: ["自分の発言や反応を再現するカジュアル表現"],
+                 examples: [
+                    ("I was like, no way!", "私『嘘でしょ!』って感じ。"),
+                    ("She was like, whatever.", "彼女『どうでもいい』って感じ。")
+                 ]),
+            make("in my dream", "in my imagination only",
+                 "私の夢の中で・空想で",
+                 useCases: ["夢で起きたこと、または願望を表すとき"],
+                 examples: [
+                    ("In my dream, I could fly.", "夢の中で空を飛べた。"),
+                    ("Only in my dream.", "夢の中だけの話。")
+                 ]),
+            make("all this", "everything happening here",
+                 "これ全部・このすべて",
+                 useCases: ["目の前の状況や物事をひとくくりに指すとき"],
+                 examples: [
+                    ("After all this, you quit?", "ここまで来て辞めるの?"),
+                    ("All this is for you.", "これ全部君のため。")
+                 ]),
+            make("I have not", "I haven't (formal)",
+                 "私はまだ〜していない",
+                 useCases: ["I haven't のフォーマル/強調形"],
+                 examples: [
+                    ("I have not decided yet.", "まだ決めていません。"),
+                    ("No, I have not.", "いいえ、していません。")
+                 ]),
+            make("if you ever need", "should you ever require",
+                 "もし必要があれば",
+                 useCases: ["将来の援助を申し出るとき"],
+                 examples: [
+                    ("If you ever need help, call me.", "助けが必要なら電話して。"),
+                    ("If you ever need anything ~", "何かあったら〜")
+                 ]),
+            make("as you can see", "as is visible",
+                 "ご覧の通り",
+                 useCases: ["プレゼンや説明で見えている内容を指すとき"],
+                 examples: [
+                    ("As you can see, sales are up.", "ご覧の通り売上が上昇。"),
+                    ("As you can see in the chart, ~", "図の通り〜")
+                 ]),
+            make("this is how you do it", "here's the method",
+                 "こうやってやるんだよ",
+                 useCases: ["やり方を実演しながら教えるとき"],
+                 examples: [
+                    ("Watch — this is how you do it.", "見て、こうやるんだ。"),
+                    ("This is how you do it properly.", "正しいやり方はこう。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞・概念 (追加 7)
+
+    private static var nounConcepts33: [Word] {
+        [
+            make("bastard", "an offensive insult; an illegitimate person",
+                 "嫌な奴・私生児(差別的)",
+                 useCases: ["強い侮辱語、または法律上の用語(やや古風)"],
+                 examples: [
+                    ("That bastard!", "あのクソ野郎!"),
+                    ("Lucky bastard.", "羨ましい奴(カジュアル)。")
+                 ]),
+            make("apartment", "a self-contained housing unit",
+                 "アパート・マンション(米)",
+                 useCases: ["集合住宅の一区画を表すとき"],
+                 examples: [
+                    ("My apartment is small.", "うちのアパートは狭い。"),
+                    ("Apartment hunting.", "物件探し中。")
+                 ]),
+            make("rest of", "the remaining part",
+                 "残りの〜",
+                 useCases: ["全体から一部を除いた残りを表すとき"],
+                 examples: [
+                    ("The rest of the day.", "残りの一日。"),
+                    ("Rest of the world.", "世界の他の地域。")
+                 ]),
+            make("farm", "land for growing crops or raising animals",
+                 "農場・農業",
+                 useCases: ["農地や動物を育てる場所を表すとき"],
+                 examples: [
+                    ("On the farm.", "農場で。"),
+                    ("Farm to table.", "農場から食卓へ。")
+                 ]),
+            make("spare time", "free time",
+                 "暇な時間・自由時間",
+                 useCases: ["仕事や義務の合間に空いた時間を表すとき"],
+                 examples: [
+                    ("In my spare time, I read.", "暇な時は本を読む。"),
+                    ("Got any spare time?", "暇ある?")
+                 ]),
+            make("apparently", "seemingly; it appears that",
+                 "どうやら・聞くところによると",
+                 useCases: ["伝聞や見た目から判断するとき"],
+                 examples: [
+                    ("Apparently, he's coming.", "どうやら彼は来る。"),
+                    ("Apparently not.", "違うらしい。")
+                 ]),
+            make("everything is clear", "all is understood",
+                 "全部はっきりしている・了解",
+                 useCases: ["状況・指示が完全に分かったときに返事として"],
+                 examples: [
+                    ("Everything is clear, thanks.", "全部分かりました、ありがとう。"),
+                    ("Now everything is clear.", "もう全部はっきりした。")
                  ])
         ]
     }
