@@ -81,6 +81,7 @@ enum SeedData {
             + impressionEmotion27 + stateLocation27 + verbFlow27
             + emotionMemory28 + actionVerbs28 + nounAdjective28
             + actionStates29 + qualityConcepts29
+            + actionVerbs30 + qualityExpression30
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -13502,6 +13503,160 @@ enum SeedData {
                  examples: [
                     ("Act of kindness.", "親切な行為。"),
                     ("Kindness goes a long way.", "優しさは大きな力を持つ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var actionVerbs30: [Word] {
+        [
+            make("lag behind", "fall behind in progress",
+                 "遅れを取る・後れる",
+                 useCases: ["他に比べて進行が遅いことを表すとき"],
+                 examples: [
+                    ("Don't lag behind.", "遅れないで。"),
+                    ("Lagging behind competitors.", "競合に後れを取っている。")
+                 ]),
+            make("be done with", "have finished or had enough",
+                 "〜を終える・〜にうんざり",
+                 useCases: ["完了、または見限るとき"],
+                 examples: [
+                    ("I'm done with homework.", "宿題終わった。"),
+                    ("Done with this drama.", "この騒ぎはもう終わり。")
+                 ]),
+            make("design", "create a plan or pattern",
+                 "デザインする・設計する",
+                 useCases: ["見た目や仕組みを計画的に作るとき"],
+                 examples: [
+                    ("Design a logo.", "ロゴをデザインする。"),
+                    ("Designed by ~", "〜が設計。")
+                 ]),
+            make("remake", "make again or anew",
+                 "作り直す・リメイク",
+                 useCases: ["映画やゲームなどを新しく作り直すとき"],
+                 examples: [
+                    ("Remake of the classic.", "名作のリメイク。"),
+                    ("Let's remake it.", "作り直そう。")
+                 ]),
+            make("remembering", "calling to mind",
+                 "思い出すこと",
+                 useCases: ["記憶を呼び起こす行為そのものを表すとき"],
+                 examples: [
+                    ("Remembering the past.", "過去を思い出すこと。"),
+                    ("Just remembering you.", "君を思い出しているだけ。")
+                 ]),
+            make("adore", "love deeply",
+                 "とても愛する・崇拝する",
+                 useCases: ["強い愛情や敬愛を表すとき"],
+                 examples: [
+                    ("I adore her.", "彼女が大好き。"),
+                    ("Adored by fans.", "ファンに愛されている。")
+                 ]),
+            make("injure", "cause physical harm",
+                 "怪我をさせる",
+                 useCases: ["人や動物に身体的損傷を与えるとき(動詞)"],
+                 examples: [
+                    ("Injured in the accident.", "事故で負傷。"),
+                    ("Don't injure yourself.", "怪我しないで。")
+                 ]),
+            make("feature", "highlight as a special attribute",
+                 "特徴・取り上げる",
+                 useCases: ["特徴の名詞や、何かを目立たせる動詞として"],
+                 examples: [
+                    ("Key feature.", "重要な特徴。"),
+                    ("Featuring a special guest.", "特別ゲストを迎えて。")
+                 ]),
+            make("sprinkle", "scatter in small amounts",
+                 "振りかける・少しまく",
+                 useCases: ["塩や砂糖を散らす、または雨が小降りなとき"],
+                 examples: [
+                    ("Sprinkle salt.", "塩を振る。"),
+                    ("A light sprinkle of rain.", "小雨。")
+                 ]),
+            make("plus", "in addition; positive aspect",
+                 "プラス・しかも",
+                 useCases: ["追加の利点や情報を述べるとき"],
+                 examples: [
+                    ("Plus, it's free!", "しかも無料!"),
+                    ("A definite plus.", "明らかなプラス。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性質・表現 (追加 10)
+
+    private static var qualityExpression30: [Word] {
+        [
+            make("unfortunate", "having or marked by bad luck",
+                 "不運な・残念な",
+                 useCases: ["残念な状況や運の悪さを表すとき"],
+                 examples: [
+                    ("An unfortunate event.", "不運な出来事。"),
+                    ("How unfortunate.", "なんて残念。")
+                 ]),
+            make("recipe", "instructions for preparing food",
+                 "レシピ・処方",
+                 useCases: ["料理の手順や成功の秘訣を表すとき"],
+                 examples: [
+                    ("Family recipe.", "家伝のレシピ。"),
+                    ("Recipe for disaster.", "失敗の元(慣用)。")
+                 ]),
+            make("fun fact", "an interesting bit of trivia",
+                 "ちょっとした豆知識",
+                 useCases: ["雑学やトリビアを紹介するとき"],
+                 examples: [
+                    ("Fun fact: ~", "豆知識: 〜"),
+                    ("Here's a fun fact.", "ちょっとした豆知識。")
+                 ]),
+            make("unreal", "amazing; not real",
+                 "信じられない・非現実的な",
+                 useCases: ["驚くほど素晴らしい、または非現実的なものを表すとき"],
+                 examples: [
+                    ("That's unreal!", "信じられない!"),
+                    ("Unreal beauty.", "現実離れした美しさ。")
+                 ]),
+            make("every single", "absolutely every one",
+                 "〜の一つ一つ全て",
+                 useCases: ["漏れなく全部であることを強調するとき"],
+                 examples: [
+                    ("Every single day.", "毎日欠かさず。"),
+                    ("Every single one.", "一つ残らず。")
+                 ]),
+            make("permanent", "lasting indefinitely",
+                 "永続的な",
+                 useCases: ["変わらず長く続くものを表すとき"],
+                 examples: [
+                    ("Permanent job.", "正社員。"),
+                    ("Permanent change.", "永続的な変化。")
+                 ]),
+            make("next up", "the next thing to come",
+                 "次は・お次は",
+                 useCases: ["順番が来た次の人や物を紹介するとき"],
+                 examples: [
+                    ("Next up: dessert.", "お次はデザート。"),
+                    ("Next up on the list.", "リストの次。")
+                 ]),
+            make("badge", "an emblem or mark of achievement",
+                 "バッジ・記章",
+                 useCases: ["所属や達成を示すバッジを表すとき"],
+                 examples: [
+                    ("Wear the badge.", "バッジを着ける。"),
+                    ("Badge of honor.", "名誉のバッジ。")
+                 ]),
+            make("from the beginning", "from the start",
+                 "最初から",
+                 useCases: ["ある時点を起点に説明するとき"],
+                 examples: [
+                    ("Tell me from the beginning.", "最初から話して。"),
+                    ("Knew it from the beginning.", "最初から知ってた。")
+                 ]),
+            make("worth", "having value; deserving of",
+                 "〜の価値がある・値する",
+                 useCases: ["価値や見合った価値があることを表すとき"],
+                 examples: [
+                    ("Worth a try.", "試す価値あり。"),
+                    ("Net worth.", "純資産。")
                  ])
         ]
     }
