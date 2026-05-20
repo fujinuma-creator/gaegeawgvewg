@@ -104,6 +104,7 @@ enum SeedData {
             + techConcepts47
             + politicsActions48
             + landscapeConcepts49 + verbStates49 + abstractTraits49
+            + actionVerbs50 + nounAdjectives50
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16024,6 +16025,118 @@ enum SeedData {
                  examples: [
                     ("A mere coincidence.", "ただの偶然。"),
                     ("Mere seconds away.", "ほんの数秒先。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞 (追加 7)
+
+    private static var actionVerbs50: [Word] {
+        [
+            make("maximize", "make as great as possible",
+                 "最大化する",
+                 useCases: ["効果や利益を最大限にするとき"],
+                 examples: [
+                    ("Maximize profits.", "利益を最大化する。"),
+                    ("Maximize the window.", "ウィンドウを最大化。")
+                 ]),
+            make("survive", "continue to live or exist",
+                 "生き延びる・乗り切る",
+                 useCases: ["危機や困難を切り抜けるとき"],
+                 examples: [
+                    ("Survive the storm.", "嵐を生き延びる。"),
+                    ("Hard to survive.", "生き残るのが難しい。")
+                 ]),
+            make("express", "convey thoughts; rapid",
+                 "表現する・急行の",
+                 useCases: ["気持ちや考えを伝える、または急行列車を表すとき"],
+                 examples: [
+                    ("Express your feelings.", "気持ちを表現して。"),
+                    ("Express train.", "急行列車。")
+                 ]),
+            make("terminate", "bring to an end",
+                 "終了する・解雇する",
+                 useCases: ["契約・雇用・プロセスを終わらせるとき"],
+                 examples: [
+                    ("Terminate the contract.", "契約を解除する。"),
+                    ("Employment was terminated.", "雇用が終了した。")
+                 ]),
+            make("abandon", "give up completely",
+                 "放棄する・見捨てる",
+                 useCases: ["人や物を見捨てたり計画を放棄するとき"],
+                 examples: [
+                    ("Abandon ship!", "船を放棄しろ!"),
+                    ("Don't abandon hope.", "希望を捨てないで。")
+                 ]),
+            make("choke", "block the airway; struggle to breathe",
+                 "窒息する・喉を詰まらせる",
+                 useCases: ["呼吸困難になる、または感情で喉が詰まるとき"],
+                 examples: [
+                    ("Choke on food.", "食べ物で詰まる。"),
+                    ("Choke up.", "感極まる。")
+                 ]),
+            make("lodge", "stay temporarily; file a complaint",
+                 "宿泊する・(苦情を)申し立てる",
+                 useCases: ["臨時の宿泊、または公的に苦情を提出するとき"],
+                 examples: [
+                    ("Lodge a complaint.", "苦情を申し立てる。"),
+                    ("Lodge for the night.", "一晩宿泊する。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞・形容詞 (追加 7)
+
+    private static var nounAdjectives50: [Word] {
+        [
+            make("civilization", "an advanced state of human society",
+                 "文明",
+                 useCases: ["人類の文化的・技術的発展段階を表すとき"],
+                 examples: [
+                    ("Ancient civilization.", "古代文明。"),
+                    ("Modern civilization.", "現代文明。")
+                 ]),
+            make("darkness", "the absence of light",
+                 "暗闇・暗さ",
+                 useCases: ["物理的な暗さや心の闇を表すとき"],
+                 examples: [
+                    ("In darkness.", "暗闇の中で。"),
+                    ("Darkness of the soul.", "魂の闇。")
+                 ]),
+            make("ubiquitous", "present everywhere",
+                 "至るところにある・遍在する",
+                 useCases: ["どこにでも見られる物事を表すとき"],
+                 examples: [
+                    ("Ubiquitous smartphones.", "スマホはどこにでも。"),
+                    ("Ubiquitous in modern life.", "現代生活で偏在的。")
+                 ]),
+            make("universal", "applicable to all cases",
+                 "普遍的な・万国の",
+                 useCases: ["どこでも誰にでも当てはまるものを表すとき"],
+                 examples: [
+                    ("Universal truth.", "普遍的な真実。"),
+                    ("Universal remote.", "汎用リモコン。")
+                 ]),
+            make("view", "what can be seen; an opinion",
+                 "眺め・見解",
+                 useCases: ["景色や意見を表すとき"],
+                 examples: [
+                    ("Great view.", "素晴らしい眺め。"),
+                    ("In my view, ~", "私の見解では〜")
+                 ]),
+            make("explosion", "a violent burst",
+                 "爆発",
+                 useCases: ["物理的な爆発や急増を表すとき"],
+                 examples: [
+                    ("Loud explosion.", "大きな爆発音。"),
+                    ("Explosion of growth.", "爆発的成長。")
+                 ]),
+            make("tiny", "very small",
+                 "とても小さい",
+                 useCases: ["非常に小さいものを表すとき"],
+                 examples: [
+                    ("Tiny insect.", "小さな虫。"),
+                    ("Tiny detail.", "細かな詳細。")
                  ])
         ]
     }
