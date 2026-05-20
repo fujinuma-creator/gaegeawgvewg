@@ -97,6 +97,7 @@ enum SeedData {
             + verbsActions40 + adjectiveNouns40
             + conversationOpeners41
             + idiomsObjects42
+            + sizeQualities43
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15338,6 +15339,69 @@ enum SeedData {
                  examples: [
                     ("Watch the parade.", "パレードを見る。"),
                     ("Don't rain on my parade.", "私の楽しみを台無しにしないで。")
+                 ])
+        ]
+    }
+
+    // MARK: - サイズ・性質 (追加 8)
+
+    private static var sizeQualities43: [Word] {
+        [
+            make("load", "a heavy weight; a quantity carried",
+                 "荷物・負担・読み込む",
+                 useCases: ["物理的な荷物、または読み込みやデータの量"],
+                 examples: [
+                    ("Heavy load.", "重い荷物。"),
+                    ("Load the page.", "ページを読み込む。")
+                 ]),
+            make("intelligent", "having mental ability",
+                 "知的な・頭のいい",
+                 useCases: ["賢さや判断力を表すとき"],
+                 examples: [
+                    ("Intelligent person.", "頭のいい人。"),
+                    ("Intelligent decision.", "賢明な判断。")
+                 ]),
+            make("grave", "serious; a burial site",
+                 "深刻な・墓",
+                 useCases: ["重大な状況、または埋葬場所を表すとき"],
+                 examples: [
+                    ("A grave situation.", "深刻な状況。"),
+                    ("Visit the grave.", "お墓参り。")
+                 ]),
+            make("massive", "very large and heavy",
+                 "巨大な・大規模な",
+                 useCases: ["とても大きいものや規模の大きさを表すとき"],
+                 examples: [
+                    ("Massive building.", "巨大な建物。"),
+                    ("Massive impact.", "甚大な影響。")
+                 ]),
+            make("huge", "extremely large",
+                 "巨大な・とても大きな",
+                 useCases: ["大きさや重要度の高さを表すとき"],
+                 examples: [
+                    ("Huge difference.", "大きな違い。"),
+                    ("Huge fan.", "大ファン。")
+                 ]),
+            make("narrow", "small in width",
+                 "狭い・細い",
+                 useCases: ["幅が狭い物理的状態や限定された範囲を表すとき"],
+                 examples: [
+                    ("Narrow street.", "狭い道。"),
+                    ("Narrow escape.", "間一髪の脱出。")
+                 ]),
+            make("pointy", "having a sharp point",
+                 "とがった",
+                 useCases: ["先が尖った物や顔立ちを表すとき"],
+                 examples: [
+                    ("Pointy shoes.", "先のとがった靴。"),
+                    ("Pointy ears.", "とがった耳。")
+                 ]),
+            make("lame", "unimpressive; (literally) limping",
+                 "つまらない・(俗)ダサい",
+                 useCases: ["面白くない・残念な、または身体的な不自由を表すとき"],
+                 examples: [
+                    ("That's so lame.", "ダサい。"),
+                    ("A lame excuse.", "ひどい言い訳。")
                  ])
         ]
     }
