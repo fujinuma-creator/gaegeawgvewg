@@ -105,6 +105,7 @@ enum SeedData {
             + politicsActions48
             + landscapeConcepts49 + verbStates49 + abstractTraits49
             + actionVerbs50 + nounAdjectives50
+            + skillsAndStyle51
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16137,6 +16138,62 @@ enum SeedData {
                  examples: [
                     ("Tiny insect.", "小さな虫。"),
                     ("Tiny detail.", "細かな詳細。")
+                 ])
+        ]
+    }
+
+    // MARK: - スキル・ライフスタイル (追加 7)
+
+    private static var skillsAndStyle51: [Word] {
+        [
+            make("proficient", "competent or skilled",
+                 "熟達した・堪能な",
+                 useCases: ["特定の技能に長けていることを表すとき"],
+                 examples: [
+                    ("Proficient in English.", "英語に堪能。"),
+                    ("Highly proficient.", "非常に熟達している。")
+                 ]),
+            make("highlight", "draw attention to; the best part",
+                 "強調する・ハイライト",
+                 useCases: ["重要部分を目立たせる、または最高の瞬間を表すとき"],
+                 examples: [
+                    ("Highlight the key points.", "要点を強調する。"),
+                    ("Highlight of the trip.", "旅のハイライト。")
+                 ]),
+            make("shake", "move quickly back and forth",
+                 "振る・揺れる・握手する",
+                 useCases: ["物理的な揺れや、握手・震えを表すとき"],
+                 examples: [
+                    ("Shake hands.", "握手する。"),
+                    ("The earth shakes.", "地面が揺れる。")
+                 ]),
+            make("listen to", "pay attention to sound or advice",
+                 "〜を聴く・〜の話を聞く",
+                 useCases: ["音楽や人の意見に耳を傾けるとき"],
+                 examples: [
+                    ("Listen to music.", "音楽を聴く。"),
+                    ("Listen to your heart.", "心の声を聴いて。")
+                 ]),
+            make("approach sth", "come near; tackle",
+                 "〜に近づく・〜に取り組む",
+                 useCases: ["物理的に近づく、または問題に取り掛かるとき"],
+                 examples: [
+                    ("Approach the problem.", "問題に取り組む。"),
+                    ("Approach with care.", "慎重に近づく。")
+                 ]),
+            make("be viewed as", "be regarded as",
+                 "〜と見なされる",
+                 useCases: ["世間や他者からの評価・見方を述べるとき"],
+                 examples: [
+                    ("Viewed as a leader.", "リーダーと見なされる。"),
+                    ("Often viewed as ~", "〜と見なされがち。")
+                 ]),
+            make("lifestyle", "a way of living",
+                 "ライフスタイル・生活様式",
+                 useCases: ["人々の暮らし方や習慣を表すとき"],
+                 examples: [
+                    ("Healthy lifestyle.", "健康的なライフスタイル。"),
+                    ("Lifestyle changes.", "生活スタイルの変化。")
                  ])
         ]
     }
