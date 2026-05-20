@@ -102,6 +102,7 @@ enum SeedData {
             + greetingsReactions45 + verbStates45
             + conceptsNouns46
             + techConcepts47
+            + politicsActions48
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15756,6 +15757,104 @@ enum SeedData {
                  examples: [
                     ("All of humanity.", "全人類。"),
                     ("Show humanity.", "人間性を見せて。")
+                 ])
+        ]
+    }
+
+    // MARK: - 政治・行動 (追加 13)
+
+    private static var politicsActions48: [Word] {
+        [
+            make("risk sth", "expose to danger or loss",
+                 "〜を危険にさらす",
+                 useCases: ["何かを失うリスクを取るとき"],
+                 examples: [
+                    ("Risk your life.", "命を懸ける。"),
+                    ("Risk it all.", "全てを賭ける。")
+                 ]),
+            make("associate", "connect mentally; a colleague",
+                 "関連付ける・仲間・連想する",
+                 useCases: ["物事を結びつける、または同僚を表すとき"],
+                 examples: [
+                    ("Associate with success.", "成功と結びつける。"),
+                    ("Business associate.", "ビジネス仲間。")
+                 ]),
+            make("artificial", "made by humans; not natural",
+                 "人工の・人為的な",
+                 useCases: ["自然ではなく人間が作った物を表すとき"],
+                 examples: [
+                    ("Artificial intelligence.", "人工知能。"),
+                    ("Artificial flavors.", "人工香料。")
+                 ]),
+            make("getaway", "an escape; a holiday",
+                 "逃走・休暇",
+                 useCases: ["逃げる手段、または短い旅行を表すとき"],
+                 examples: [
+                    ("Weekend getaway.", "週末の小旅行。"),
+                    ("Quick getaway.", "素早い逃走。")
+                 ]),
+            make("warn", "give notice of danger",
+                 "警告する・注意する",
+                 useCases: ["危険や問題を事前に知らせるとき"],
+                 examples: [
+                    ("Warn the public.", "市民に警告する。"),
+                    ("I warned you.", "言ったでしょ。")
+                 ]),
+            make("counterpart", "someone equivalent in role",
+                 "対応する人・相手",
+                 useCases: ["他国・他組織で同じ役割を持つ人を表すとき"],
+                 examples: [
+                    ("Japanese counterpart.", "日本側の担当者。"),
+                    ("Meet his counterpart.", "対応する役職者と会う。")
+                 ]),
+            make("manipulate", "control or influence skillfully",
+                 "操作する・(人を)操る",
+                 useCases: ["物理的に動かす、または不正に影響を及ぼすとき"],
+                 examples: [
+                    ("Manipulate the data.", "データを操作する。"),
+                    ("Manipulate people.", "人を操る。")
+                 ]),
+            make("persuade", "cause to believe or act",
+                 "説得する",
+                 useCases: ["相手に行動や考えを変えさせるとき"],
+                 examples: [
+                    ("Persuade him to come.", "彼を説得して来させる。"),
+                    ("Hard to persuade.", "説得しにくい。")
+                 ]),
+            make("capacity", "the ability to hold or do",
+                 "容量・能力",
+                 useCases: ["収容量や処理能力、または役割を表すとき"],
+                 examples: [
+                    ("Full capacity.", "満員・最大容量。"),
+                    ("In what capacity?", "どんな立場で?")
+                 ]),
+            make("specifically", "in a precise manner",
+                 "具体的に・特に",
+                 useCases: ["対象を限定して述べるとき"],
+                 examples: [
+                    ("Specifically designed for ~", "〜のために特別設計。"),
+                    ("Specifically, I mean ~", "具体的には〜")
+                 ]),
+            make("point to", "indicate; suggest",
+                 "〜を指し示す・示唆する",
+                 useCases: ["証拠が結論を指し示すような場面で使う"],
+                 examples: [
+                    ("Evidence points to him.", "証拠が彼を指している。"),
+                    ("Point to the door.", "ドアを指さして。")
+                 ]),
+            make("influence", "the capacity to affect",
+                 "影響・影響を与える",
+                 useCases: ["他者や状況を変える力を表すとき"],
+                 examples: [
+                    ("Under the influence.", "影響下で・酒気帯び。"),
+                    ("Influence the outcome.", "結果に影響する。")
+                 ]),
+            make("election", "the process of voting",
+                 "選挙",
+                 useCases: ["政治家や代表を選ぶ投票を表すとき"],
+                 examples: [
+                    ("Presidential election.", "大統領選挙。"),
+                    ("Win the election.", "選挙に勝つ。")
                  ])
         ]
     }
