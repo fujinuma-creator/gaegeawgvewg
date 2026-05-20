@@ -87,6 +87,7 @@ enum SeedData {
             + actionVerbs33 + emotionStates33
             + expressionFillers33 + nounConcepts33
             + businessCommerce34 + actionVerbs34
+            + idiomsProverbs35 + nounExpressions35
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -14222,6 +14223,132 @@ enum SeedData {
                  examples: [
                     ("Destined for greatness.", "偉大なる運命。"),
                     ("Destined to fail.", "失敗の運命。")
+                 ])
+        ]
+    }
+
+    // MARK: - イディオム・諺 (追加 8)
+
+    private static var idiomsProverbs35: [Word] {
+        [
+            make("chatterbox", "a person who talks a lot",
+                 "おしゃべりな人",
+                 useCases: ["よく喋る人を表すカジュアル名詞"],
+                 examples: [
+                    ("She's such a chatterbox.", "彼女、本当におしゃべり。"),
+                    ("Total chatterbox!", "完全におしゃべり!")
+                 ]),
+            make("speak of the devil", "the person being talked about appears",
+                 "うわさをすれば",
+                 useCases: ["話題にしていた人が現れた瞬間に使う決まり文句"],
+                 examples: [
+                    ("Speak of the devil!", "うわさをすれば!"),
+                    ("Well, speak of the devil — there he is.", "うわさをすれば本人登場。")
+                 ]),
+            make("get something out of my system", "release pent-up urges",
+                 "(欲求などを)発散する・スッキリさせる",
+                 useCases: ["やりたいことや言いたいことを一旦やって気を済ますとき"],
+                 examples: [
+                    ("I had to get it out of my system.", "発散しなきゃ気が済まなかった。"),
+                    ("Get the anger out of your system.", "怒りを発散して。")
+                 ]),
+            make("when it rains it pours", "troubles come all at once",
+                 "降れば土砂降り(悪いことは重なる)",
+                 useCases: ["不運が立て続けに起こる状況を表すとき"],
+                 examples: [
+                    ("Lost my keys, then my wallet — when it rains, it pours.", "鍵失くした、財布も。本当に重なる時は重なる。"),
+                    ("When it rains, it pours.", "悪いことは続くもの。")
+                 ]),
+            make("pick your brain", "ask someone for their ideas",
+                 "(知恵を)拝借する・意見を聞く",
+                 useCases: ["相手の専門知識やアイデアを聞きたいとき"],
+                 examples: [
+                    ("Can I pick your brain?", "ちょっと知恵を貸してくれる?"),
+                    ("Let me pick your brain about ~", "〜について意見を聞かせて。")
+                 ]),
+            make("go the whole nine yards", "do everything possible",
+                 "とことんやる・完全にやり遂げる",
+                 useCases: ["全力で取り組むことを表すとき"],
+                 examples: [
+                    ("She went the whole nine yards.", "彼女は徹底的にやり切った。"),
+                    ("Let's go the whole nine yards.", "とことんやろう。")
+                 ]),
+            make("never mind", "forget it; don't worry",
+                 "気にしないで・なんでもない",
+                 useCases: ["前言を撤回したり相手を安心させたりするとき"],
+                 examples: [
+                    ("Never mind, it's fine.", "気にしないで、大丈夫。"),
+                    ("Never mind what I said.", "今のは忘れて。")
+                 ]),
+            make("kidding", "joking",
+                 "冗談を言っている",
+                 useCases: ["冗談だと伝えるとき"],
+                 examples: [
+                    ("Just kidding!", "冗談だよ!"),
+                    ("Are you kidding me?", "冗談だろ?")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞・表現 (追加 8)
+
+    private static var nounExpressions35: [Word] {
+        [
+            make("mighty", "having great power; very",
+                 "強力な・非常に",
+                 useCases: ["力強さや程度を強調するとき(やや古風)"],
+                 examples: [
+                    ("A mighty warrior.", "強力な戦士。"),
+                    ("Mighty fine!", "実にいい!")
+                 ]),
+            make("right back", "returning very soon",
+                 "すぐ戻る・すぐにそちらへ",
+                 useCases: ["短時間で戻ることを伝えるとき"],
+                 examples: [
+                    ("I'll be right back.", "すぐ戻る。"),
+                    ("Right back at you!", "そっちこそ!")
+                 ]),
+            make("in real life", "in actual reality (not online)",
+                 "現実世界では・リアルでは",
+                 useCases: ["ネット・ゲームの中と対比して実世界を指すとき(IRL)"],
+                 examples: [
+                    ("Meet in real life.", "リアルで会う。"),
+                    ("He's nice in real life.", "彼、実生活ではいい人。")
+                 ]),
+            make("for your information", "just so you know (FYI)",
+                 "ご参考までに・念のため",
+                 useCases: ["情報を提供する前置き、または軽い反論として"],
+                 examples: [
+                    ("For your information, I was busy.", "念のため、忙しかったんだ。"),
+                    ("FYI, the meeting moved.", "ご参考まで、会議が移動。")
+                 ]),
+            make("reference", "a source or mention",
+                 "参考・言及・推薦",
+                 useCases: ["資料・推薦状・話題の参照を表すとき"],
+                 examples: [
+                    ("For reference.", "参考までに。"),
+                    ("Cultural reference.", "文化的な言及。")
+                 ]),
+            make("insomnia", "inability to sleep",
+                 "不眠症",
+                 useCases: ["眠れない症状を表すとき"],
+                 examples: [
+                    ("Suffer from insomnia.", "不眠症に悩む。"),
+                    ("Bad case of insomnia.", "ひどい不眠。")
+                 ]),
+            make("imagination", "the faculty of forming ideas",
+                 "想像力",
+                 useCases: ["創造的に思い描く力を表すとき"],
+                 examples: [
+                    ("Use your imagination.", "想像力を使って。"),
+                    ("Wild imagination.", "豊かな想像力。")
+                 ]),
+            make("intuition", "instinctive understanding",
+                 "直感",
+                 useCases: ["理屈ではなく感覚で理解する能力を表すとき"],
+                 examples: [
+                    ("Trust your intuition.", "直感を信じて。"),
+                    ("Woman's intuition.", "女の直感。")
                  ])
         ]
     }
