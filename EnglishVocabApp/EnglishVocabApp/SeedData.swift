@@ -88,6 +88,9 @@ enum SeedData {
             + expressionFillers33 + nounConcepts33
             + businessCommerce34 + actionVerbs34
             + idiomsProverbs35 + nounExpressions35
+            + actionVerbs36 + qualityAdjectives36
+            + objectsItems36 + foodAndAnimals36
+            + conceptStates36
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -14349,6 +14352,328 @@ enum SeedData {
                  examples: [
                     ("Trust your intuition.", "直感を信じて。"),
                     ("Woman's intuition.", "女の直感。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var actionVerbs36: [Word] {
+        [
+            make("sensor sth", "detect with a sensor (informal)",
+                 "センサーで感知する",
+                 useCases: ["センサーで検知する動作を表すとき(口語)"],
+                 examples: [
+                    ("The door sensors movement.", "ドアが動きを感知。"),
+                    ("Sensors the temperature.", "温度を感知する。")
+                 ]),
+            make("aim for", "set as a goal",
+                 "〜を目指す",
+                 useCases: ["目標を定めて努力するとき"],
+                 examples: [
+                    ("Aim for the top.", "頂上を目指せ。"),
+                    ("Aim for excellence.", "卓越を目指す。")
+                 ]),
+            make("examine", "inspect closely",
+                 "詳しく調べる・診察する",
+                 useCases: ["医療や調査で精査するとき"],
+                 examples: [
+                    ("Examine the evidence.", "証拠を精査する。"),
+                    ("Doctor examined me.", "医者に診てもらった。")
+                 ]),
+            make("halt", "bring to an abrupt stop",
+                 "停止する・中止する",
+                 useCases: ["動きや活動を急に止めるとき"],
+                 examples: [
+                    ("Halt the production.", "生産を停止する。"),
+                    ("Come to a halt.", "停止する。")
+                 ]),
+            make("suspend", "stop temporarily; hang",
+                 "一時停止する・吊るす",
+                 useCases: ["業務や決定を一時保留する、または物を吊るすとき"],
+                 examples: [
+                    ("Suspend the meeting.", "会議を中断する。"),
+                    ("Suspended from school.", "停学処分。")
+                 ]),
+            make("amplify", "increase the volume or effect",
+                 "増幅する・強化する",
+                 useCases: ["音や影響を大きくするとき"],
+                 examples: [
+                    ("Amplify the sound.", "音を大きくする。"),
+                    ("Amplify the message.", "メッセージを広める。")
+                 ]),
+            make("boil", "heat to bubbling point",
+                 "沸騰させる・茹でる",
+                 useCases: ["水や液体を沸かす、または感情の比喩"],
+                 examples: [
+                    ("Boil the water.", "お湯を沸かす。"),
+                    ("Blood was boiling.", "血が煮えくり返った。")
+                 ]),
+            make("polish", "make shiny by rubbing; refine",
+                 "磨く・洗練させる",
+                 useCases: ["物を磨く、または文章・技術を洗練するとき"],
+                 examples: [
+                    ("Polish the shoes.", "靴を磨く。"),
+                    ("Polish your speech.", "スピーチを洗練させる。")
+                 ]),
+            make("hike", "a long walk; to raise sharply",
+                 "ハイキング・(価格を)引き上げる",
+                 useCases: ["長距離の散歩や、料金の値上げを表すとき"],
+                 examples: [
+                    ("Go on a hike.", "ハイキングに行く。"),
+                    ("Price hike.", "値上げ。")
+                 ]),
+            make("photograph", "an image; to take a picture",
+                 "写真・写真を撮る",
+                 useCases: ["記念や記録の写真を表すとき"],
+                 examples: [
+                    ("Family photograph.", "家族写真。"),
+                    ("Photograph the scenery.", "景色を撮影。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞・性質 (追加 10)
+
+    private static var qualityAdjectives36: [Word] {
+        [
+            make("awesome", "extremely impressive",
+                 "最高・すごい",
+                 useCases: ["カジュアルに称賛するとき"],
+                 examples: [
+                    ("Awesome!", "最高!"),
+                    ("That's awesome.", "それすごい。")
+                 ]),
+            make("brand new", "completely new",
+                 "新品の・真新しい",
+                 useCases: ["買ったばかり、または完全に新しいものを表すとき"],
+                 examples: [
+                    ("Brand new car.", "新車。"),
+                    ("Brand new feature.", "新機能。")
+                 ]),
+            make("chilly", "moderately cold",
+                 "肌寒い",
+                 useCases: ["寒すぎず少し涼しい気温を表すとき"],
+                 examples: [
+                    ("A chilly morning.", "肌寒い朝。"),
+                    ("It's chilly outside.", "外は肌寒い。")
+                 ]),
+            make("freezing", "extremely cold",
+                 "凍えるほど寒い",
+                 useCases: ["極めて寒い気温を表すとき"],
+                 examples: [
+                    ("It's freezing!", "凍えるほど寒い!"),
+                    ("Freezing temperatures.", "氷点下の気温。")
+                 ]),
+            make("dim", "not bright",
+                 "薄暗い・薄い",
+                 useCases: ["光が弱い、または認識が薄いことを表すとき"],
+                 examples: [
+                    ("Dim lights.", "薄暗い照明。"),
+                    ("A dim memory.", "おぼろげな記憶。")
+                 ]),
+            make("squishy", "soft and easily squashed",
+                 "ぐにゃぐにゃの・ぷにぷにの",
+                 useCases: ["柔らかくて押し潰せる感触を表すとき"],
+                 examples: [
+                    ("Squishy toy.", "ぷにぷにのおもちゃ。"),
+                    ("Squishy texture.", "ぷにぷにした感触。")
+                 ]),
+            make("rock hard", "extremely hard",
+                 "石のように硬い",
+                 useCases: ["非常に硬い物の質感を表すとき"],
+                 examples: [
+                    ("Rock hard muscles.", "石のような筋肉。"),
+                    ("Rock hard bread.", "カチカチのパン。")
+                 ]),
+            make("striking", "very noticeable; impressive",
+                 "印象的な・目を引く",
+                 useCases: ["際立つ美しさや特徴を表すとき"],
+                 examples: [
+                    ("Striking beauty.", "目を引く美しさ。"),
+                    ("Striking similarity.", "驚くほど似てる。")
+                 ]),
+            make("graceful", "moving with elegance",
+                 "優雅な",
+                 useCases: ["上品で美しい動きや態度を表すとき"],
+                 examples: [
+                    ("Graceful dancer.", "優雅なダンサー。"),
+                    ("Graceful movement.", "優美な動き。")
+                 ]),
+            make("terrible", "extremely bad",
+                 "ひどい・最悪な",
+                 useCases: ["強い不快感や悪さを表すとき"],
+                 examples: [
+                    ("Terrible weather.", "最悪な天気。"),
+                    ("I feel terrible.", "気分が最悪。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞・物 (追加 10)
+
+    private static var objectsItems36: [Word] {
+        [
+            make("box office", "movie ticket sales counter",
+                 "(映画の)興行収入・チケット窓口",
+                 useCases: ["映画の売上や劇場のチケット販売を表すとき"],
+                 examples: [
+                    ("Box office hit.", "興行的大ヒット。"),
+                    ("Box office flop.", "興行的失敗。")
+                 ]),
+            make("apron", "a protective garment worn over clothes",
+                 "エプロン",
+                 useCases: ["料理や作業時に衣服を守る前掛けを表すとき"],
+                 examples: [
+                    ("Wear an apron.", "エプロンを着けて。"),
+                    ("Chef's apron.", "シェフのエプロン。")
+                 ]),
+            make("can opener", "a tool for opening cans",
+                 "缶切り",
+                 useCases: ["缶詰を開ける道具"],
+                 examples: [
+                    ("Use the can opener.", "缶切りを使って。"),
+                    ("Electric can opener.", "電動缶切り。")
+                 ]),
+            make("buff", "polish; a fan or muscular person",
+                 "磨く・愛好家・筋肉質の",
+                 useCases: ["磨く動作、ファン、または鍛えられた体を表すとき"],
+                 examples: [
+                    ("Buff the floor.", "床を磨く。"),
+                    ("History buff.", "歴史愛好家。")
+                 ]),
+            make("dehumidifier", "a device that removes moisture from air",
+                 "除湿機",
+                 useCases: ["湿度を下げる家電を表すとき"],
+                 examples: [
+                    ("Run the dehumidifier.", "除湿機を稼働。"),
+                    ("Need a dehumidifier.", "除湿機が必要。")
+                 ]),
+            make("outlet", "an electrical socket; a means of release",
+                 "コンセント・はけ口",
+                 useCases: ["電源差込口、または感情の発散先を表すとき"],
+                 examples: [
+                    ("Plug into the outlet.", "コンセントに差して。"),
+                    ("Creative outlet.", "創造的なはけ口。")
+                 ]),
+            make("square", "a four-sided shape with equal sides",
+                 "正方形・四角",
+                 useCases: ["幾何学的な形や町の広場を表すとき"],
+                 examples: [
+                    ("Town square.", "町の広場。"),
+                    ("Draw a square.", "正方形を描いて。")
+                 ]),
+            make("triangle", "a three-sided shape",
+                 "三角形",
+                 useCases: ["三辺の図形や三角関係を表すとき"],
+                 examples: [
+                    ("Draw a triangle.", "三角形を描いて。"),
+                    ("Love triangle.", "三角関係。")
+                 ]),
+            make("cube", "a six-sided 3D shape",
+                 "立方体・キューブ",
+                 useCases: ["立体的な六面体を表すとき"],
+                 examples: [
+                    ("Ice cube.", "氷のキューブ。"),
+                    ("Rubik's cube.", "ルービックキューブ。")
+                 ]),
+            make("cubicle", "a small partitioned space",
+                 "間仕切りの個室・キュービクル",
+                 useCases: ["オフィスの仕切られた個人スペースを表すとき"],
+                 examples: [
+                    ("Office cubicle.", "オフィスのキュービクル。"),
+                    ("Stuck in a cubicle.", "個室作業漬け。")
+                 ])
+        ]
+    }
+
+    // MARK: - 食べ物・動物 (追加 5)
+
+    private static var foodAndAnimals36: [Word] {
+        [
+            make("stir fry", "cook quickly in oil while stirring",
+                 "炒め物・炒める",
+                 useCases: ["中華風の炒め料理を表すとき"],
+                 examples: [
+                    ("Stir fry vegetables.", "野菜を炒める。"),
+                    ("Beef stir fry.", "牛肉の炒め物。")
+                 ]),
+            make("saute", "fry briefly over high heat",
+                 "ソテーする",
+                 useCases: ["フライパンで短時間に炒める調理"],
+                 examples: [
+                    ("Saute the onions.", "玉ねぎをソテー。"),
+                    ("Saute in butter.", "バターでソテー。")
+                 ]),
+            make("crayfish", "a freshwater crustacean",
+                 "ザリガニ",
+                 useCases: ["淡水に住む甲殻類を表すとき"],
+                 examples: [
+                    ("Catch crayfish.", "ザリガニを獲る。"),
+                    ("Crayfish boil.", "ザリガニ茹で(料理)。")
+                 ]),
+            make("parrot", "a colorful talking bird",
+                 "オウム",
+                 useCases: ["話す鳥、または「人の言葉を繰り返す」比喩"],
+                 examples: [
+                    ("Talking parrot.", "おしゃべりオウム。"),
+                    ("Don't parrot me.", "オウム返しするな。")
+                 ]),
+            make("equal", "the same in quantity or status",
+                 "等しい・平等な",
+                 useCases: ["量や立場が同じであることを表すとき"],
+                 examples: [
+                    ("Equal rights.", "平等な権利。"),
+                    ("All men are equal.", "人は皆平等。")
+                 ])
+        ]
+    }
+
+    // MARK: - 概念・状態 (追加 6)
+
+    private static var conceptStates36: [Word] {
+        [
+            make("speedily", "rapidly",
+                 "速やかに・急いで",
+                 useCases: ["迅速に行うことを表す副詞"],
+                 examples: [
+                    ("Speedily resolved.", "速やかに解決。"),
+                    ("Reply speedily.", "速やかに返信。")
+                 ]),
+            make("infamous", "well-known for a bad reason",
+                 "悪名高い",
+                 useCases: ["悪い意味で有名なものを表すとき"],
+                 examples: [
+                    ("Infamous criminal.", "悪名高い犯罪者。"),
+                    ("Infamous for ~", "〜で悪名高い。")
+                 ]),
+            make("epidemic", "a widespread outbreak of disease",
+                 "(病気の)流行・蔓延",
+                 useCases: ["特定地域で病気が広がる状況を表すとき"],
+                 examples: [
+                    ("Flu epidemic.", "インフル流行。"),
+                    ("An epidemic of obesity.", "肥満の蔓延。")
+                 ]),
+            make("career", "a chosen occupation",
+                 "キャリア・職業",
+                 useCases: ["長期的な職業人生を表すとき"],
+                 examples: [
+                    ("Career path.", "キャリアパス。"),
+                    ("Career change.", "転職。")
+                 ]),
+            make("height", "the measurement from base to top",
+                 "高さ・身長",
+                 useCases: ["人の身長や物の高さを表すとき"],
+                 examples: [
+                    ("What's your height?", "身長は?"),
+                    ("Height of the building.", "建物の高さ。")
+                 ]),
+            make("indigenous", "originating naturally in a region",
+                 "先住の・原産の",
+                 useCases: ["先住民や原産の動植物を表すとき"],
+                 examples: [
+                    ("Indigenous people.", "先住民。"),
+                    ("Indigenous to Japan.", "日本原産の。")
                  ])
         ]
     }
