@@ -107,6 +107,7 @@ enum SeedData {
             + actionVerbs50 + nounAdjectives50
             + skillsAndStyle51
             + businessAnalysis52 + verbsAndRelations52
+            + miscNouns53
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16342,6 +16343,34 @@ enum SeedData {
                  examples: [
                     ("Encourage creativity.", "創造性を促進。"),
                     ("Encourage your team.", "チームを励まして。")
+                 ])
+        ]
+    }
+
+    // MARK: - その他名詞 (追加 3)
+
+    private static var miscNouns53: [Word] {
+        [
+            make("idol", "a person greatly admired; an icon",
+                 "アイドル・偶像",
+                 useCases: ["憧れの人物や崇拝対象を表すとき"],
+                 examples: [
+                    ("Childhood idol.", "子供の頃の憧れ。"),
+                    ("Pop idol.", "ポップアイドル。")
+                 ]),
+            make("quotation", "a passage cited from someone",
+                 "引用・見積もり",
+                 useCases: ["有名な引用句、または価格の見積もりを表すとき"],
+                 examples: [
+                    ("Famous quotation.", "有名な引用句。"),
+                    ("Request a quotation.", "見積もりを依頼する。")
+                 ]),
+            make("status", "the position or condition of something",
+                 "地位・状態・ステータス",
+                 useCases: ["社会的立場や物事の現状を表すとき"],
+                 examples: [
+                    ("Social status.", "社会的地位。"),
+                    ("Status update.", "近況・更新情報。")
                  ])
         ]
     }
