@@ -100,6 +100,7 @@ enum SeedData {
             + sizeQualities43
             + casualExpressions44
             + greetingsReactions45 + verbStates45
+            + conceptsNouns46
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15579,6 +15580,90 @@ enum SeedData {
                  examples: [
                     ("Tricky question.", "厄介な質問。"),
                     ("A tricky situation.", "難しい状況。")
+                 ])
+        ]
+    }
+
+    // MARK: - 概念・名詞 (追加 11)
+
+    private static var conceptsNouns46: [Word] {
+        [
+            make("laughter", "the sound of laughing",
+                 "笑い・笑い声",
+                 useCases: ["人が笑う音や行為を表すとき"],
+                 examples: [
+                    ("Laughter is the best medicine.", "笑いは最良の薬。"),
+                    ("Filled with laughter.", "笑いに満ちて。")
+                 ]),
+            make("unity", "the state of being united",
+                 "団結・一体感",
+                 useCases: ["人々や集団がまとまっている状態を表すとき"],
+                 examples: [
+                    ("Strength in unity.", "団結に力あり。"),
+                    ("National unity.", "国民の団結。")
+                 ]),
+            make("care", "serious attention; concern",
+                 "ケア・気遣い",
+                 useCases: ["世話や注意を払うこと、または気にかけることを表すとき"],
+                 examples: [
+                    ("Take care.", "気をつけて。"),
+                    ("Health care.", "医療。")
+                 ]),
+            make("care for", "look after; like",
+                 "〜の世話をする・〜が好き",
+                 useCases: ["人や物の世話、または好み(やや改まった)を表すとき"],
+                 examples: [
+                    ("Care for the elderly.", "高齢者の世話をする。"),
+                    ("Would you care for some tea?", "お茶はいかが?")
+                 ]),
+            make("modernize", "make more modern",
+                 "近代化する・現代風にする",
+                 useCases: ["設備や考えを最新化するとき"],
+                 examples: [
+                    ("Modernize the system.", "システムを近代化する。"),
+                    ("Modernize the kitchen.", "キッチンをリフォーム。")
+                 ]),
+            make("thrive", "prosper; flourish",
+                 "繁栄する・うまく育つ",
+                 useCases: ["事業や生物が良好に成長するとき"],
+                 examples: [
+                    ("Business is thriving.", "ビジネスが繁盛している。"),
+                    ("Children thrive on love.", "子供は愛で育つ。")
+                 ]),
+            make("it has never been", "it has not previously been",
+                 "今までこれほど〜だったことはない",
+                 useCases: ["過去にない状態を強調する構文(It has never been + 形容詞)"],
+                 examples: [
+                    ("It has never been easier.", "今ほど簡単な時はない。"),
+                    ("It has never been more important.", "今ほど重要な時はない。")
+                 ]),
+            make("border", "a line separating areas",
+                 "国境・境界",
+                 useCases: ["国や地域、または抽象的な境目を表すとき"],
+                 examples: [
+                    ("Cross the border.", "国境を越える。"),
+                    ("Border between countries.", "国の境。")
+                 ]),
+            make("borderline", "on the boundary; ambiguous",
+                 "境界線・どっちつかずの",
+                 useCases: ["明確な区分の境目や、ぎりぎりの状態を表すとき"],
+                 examples: [
+                    ("Borderline case.", "境界線上のケース。"),
+                    ("Borderline acceptable.", "ぎりぎり許容範囲。")
+                 ]),
+            make("in the history of", "at any time in the history",
+                 "〜の歴史の中で",
+                 useCases: ["史上初・史上最高などを強調するとき"],
+                 examples: [
+                    ("Best in the history of the team.", "チーム史上最高。"),
+                    ("First time in the history of Japan.", "日本史上初。")
+                 ]),
+            make("privilege", "a special right or advantage",
+                 "特権・名誉",
+                 useCases: ["特別な権利や恵まれた立場を表すとき"],
+                 examples: [
+                    ("It's a privilege.", "光栄です。"),
+                    ("Check your privilege.", "自分の特権を自覚しろ(現代的批判)。")
                  ])
         ]
     }
