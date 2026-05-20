@@ -95,6 +95,7 @@ enum SeedData {
             + businessComms38 + actionResponses38
             + casualReactions39
             + verbsActions40 + adjectiveNouns40
+            + conversationOpeners41
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15245,6 +15246,48 @@ enum SeedData {
                  examples: [
                     ("Cast a shadow.", "影を落とす。"),
                     ("Shadow of doubt.", "疑いの影。")
+                 ])
+        ]
+    }
+
+    // MARK: - 会話の前置き (追加 5)
+
+    private static var conversationOpeners41: [Word] {
+        [
+            make("I was just wondering", "I was thinking to ask",
+                 "ちょっと聞きたかったんだけど",
+                 useCases: ["相手に質問する際の控えめな前置き"],
+                 examples: [
+                    ("I was just wondering if you're free.", "ちょっと空いてるか聞きたくて。"),
+                    ("Just wondering, ~", "ふと思ったんだけど〜")
+                 ]),
+            make("this is something that", "this is a thing which",
+                 "これは〜なものだ",
+                 useCases: ["重要な内容を切り出すときの前置き"],
+                 examples: [
+                    ("This is something that matters.", "これは重要なこと。"),
+                    ("This is something that needs attention.", "これは注目すべき事柄。")
+                 ]),
+            make("I might be, but", "I could be (something), but",
+                 "(自信なく)〜かもしれないけど",
+                 useCases: ["控えめに意見を表明するときの前置き"],
+                 examples: [
+                    ("I might be wrong, but ~", "間違ってるかもしれないけど〜"),
+                    ("I might be biased, but I think so.", "偏ってるかもしれないけど、そう思う。")
+                 ]),
+            make("all about sth", "centered on something",
+                 "〜が全て・〜こそが重要",
+                 useCases: ["何かを最重要視する強調表現"],
+                 examples: [
+                    ("Life is all about choices.", "人生は選択が全て。"),
+                    ("It's all about timing.", "タイミングが全て。")
+                 ]),
+            make("standpoint", "a particular point of view",
+                 "観点・立場",
+                 useCases: ["特定の視点から議論するとき"],
+                 examples: [
+                    ("From my standpoint, ~", "私の観点では〜"),
+                    ("Different standpoint.", "別の視点。")
                  ])
         ]
     }
