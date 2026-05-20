@@ -94,6 +94,7 @@ enum SeedData {
             + assumptionPhrases37 + sentencePatterns37 + responsePhrases37
             + businessComms38 + actionResponses38
             + casualReactions39
+            + verbsActions40 + adjectiveNouns40
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15097,6 +15098,153 @@ enum SeedData {
                  examples: [
                     ("Fingers crossed!", "うまくいきますように!"),
                     ("Keep your fingers crossed for me.", "祈ってて。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var verbsActions40: [Word] {
+        [
+            make("pray", "speak to a deity; hope strongly",
+                 "祈る",
+                 useCases: ["宗教的に祈る、または強く願うとき"],
+                 examples: [
+                    ("Pray for peace.", "平和を祈る。"),
+                    ("I'm praying for you.", "あなたのために祈ってる。")
+                 ]),
+            make("play", "engage in activity for enjoyment",
+                 "遊ぶ・演奏する・(役を)演じる",
+                 useCases: ["遊び、演奏、演技などを表すとき"],
+                 examples: [
+                    ("Play the piano.", "ピアノを弾く。"),
+                    ("Kids play outside.", "子供たちは外で遊ぶ。")
+                 ]),
+            make("cheat", "act dishonestly; be unfaithful",
+                 "ズルする・カンニングする・浮気する",
+                 useCases: ["不正行為や裏切りを表すとき"],
+                 examples: [
+                    ("Don't cheat.", "ズルしないで。"),
+                    ("He cheated on her.", "彼が彼女を裏切った。")
+                 ]),
+            make("involved", "actively engaged in",
+                 "関わっている・複雑な",
+                 useCases: ["何かに巻き込まれている、または込み入っている状態"],
+                 examples: [
+                    ("Get involved.", "関わる。"),
+                    ("It's complicated and involved.", "複雑で込み入ってる。")
+                 ]),
+            make("beat", "defeat; hit rhythmically",
+                 "打ち負かす・拍子・脈動",
+                 useCases: ["勝つこと、または音や心臓のリズムを表すとき"],
+                 examples: [
+                    ("Beat the record.", "記録を破る。"),
+                    ("Heart beat.", "心臓の鼓動。")
+                 ]),
+            make("juggle", "balance multiple tasks; toss objects",
+                 "ジャグリング・複数を同時にこなす",
+                 useCases: ["仕事や責任を複数同時に処理するとき"],
+                 examples: [
+                    ("Juggle work and family.", "仕事と家庭を両立。"),
+                    ("Juggle three balls.", "ボール3つでジャグリング。")
+                 ]),
+            make("tingle", "feel a slight prickling sensation",
+                 "ピリピリする・ゾクゾクする",
+                 useCases: ["皮膚がピリピリしたり期待で興奮する感覚"],
+                 examples: [
+                    ("Tingling sensation.", "ピリピリ感。"),
+                    ("Tingled with excitement.", "ゾクゾクするほどワクワクした。")
+                 ]),
+            make("toggle", "switch between two states",
+                 "切り替える・トグル",
+                 useCases: ["設定やスイッチをON/OFF切り替えるとき"],
+                 examples: [
+                    ("Toggle the switch.", "スイッチを切り替える。"),
+                    ("Toggle between modes.", "モードを切り替える。")
+                 ]),
+            make("trust", "believe in reliability",
+                 "信頼する・信頼",
+                 useCases: ["人や情報を信用するとき"],
+                 examples: [
+                    ("Trust me.", "信じて。"),
+                    ("Build trust.", "信頼を築く。")
+                 ]),
+            make("have access", "be able to use or enter",
+                 "アクセスできる・利用できる",
+                 useCases: ["情報・施設・サービスを使える権限を表すとき"],
+                 examples: [
+                    ("Have access to the data.", "データにアクセスできる。"),
+                    ("No access to the building.", "建物に入れない。")
+                 ])
+        ]
+    }
+
+    // MARK: - 形容詞・名詞 (追加 9)
+
+    private static var adjectiveNouns40: [Word] {
+        [
+            make("legitimate", "valid; lawful",
+                 "正当な・合法な",
+                 useCases: ["合法・正当性のあるものを表すとき"],
+                 examples: [
+                    ("Legitimate business.", "合法的なビジネス。"),
+                    ("A legitimate concern.", "正当な懸念。")
+                 ]),
+            make("method", "a way of doing something",
+                 "方法・手段",
+                 useCases: ["特定のやり方や手順を表すとき"],
+                 examples: [
+                    ("Best method.", "最良の方法。"),
+                    ("Scientific method.", "科学的手法。")
+                 ]),
+            make("mostly", "for the most part",
+                 "ほとんど・大体は",
+                 useCases: ["大部分を占めることを表すとき"],
+                 examples: [
+                    ("Mostly true.", "ほぼ本当。"),
+                    ("Mostly sunny.", "おおむね晴れ。")
+                 ]),
+            make("talent", "natural skill or ability",
+                 "才能",
+                 useCases: ["生まれつきの能力や、才能ある人を表すとき"],
+                 examples: [
+                    ("Hidden talent.", "隠れた才能。"),
+                    ("Show your talent.", "才能を見せて。")
+                 ]),
+            make("at that time", "in that period of the past",
+                 "その当時・あの頃",
+                 useCases: ["過去の特定の時期を指すとき"],
+                 examples: [
+                    ("At that time, we were young.", "あの頃は若かった。"),
+                    ("At that time, no one knew.", "当時は誰も知らなかった。")
+                 ]),
+            make("controversy", "disagreement or dispute",
+                 "論争・物議",
+                 useCases: ["意見が激しく対立する問題を表すとき"],
+                 examples: [
+                    ("Cause controversy.", "物議を醸す。"),
+                    ("Major controversy.", "大きな論争。")
+                 ]),
+            make("conservative", "averse to change; cautious",
+                 "保守的な・控えめな",
+                 useCases: ["伝統や慎重さを重んじる姿勢を表すとき"],
+                 examples: [
+                    ("Conservative estimate.", "控えめな見積もり。"),
+                    ("Conservative views.", "保守的な考え。")
+                 ]),
+            make("elite", "the most powerful or skilled group",
+                 "エリート・選ばれた層",
+                 useCases: ["上流階級や精鋭層を表すとき"],
+                 examples: [
+                    ("The elite few.", "選ばれし少数。"),
+                    ("Elite athletes.", "一流選手。")
+                 ]),
+            make("shadow", "a dark shape from blocked light",
+                 "影",
+                 useCases: ["物が光を遮ってできる影、または影のように付き添うこと"],
+                 examples: [
+                    ("Cast a shadow.", "影を落とす。"),
+                    ("Shadow of doubt.", "疑いの影。")
                  ])
         ]
     }
