@@ -92,6 +92,7 @@ enum SeedData {
             + objectsItems36 + foodAndAnimals36
             + conceptStates36
             + assumptionPhrases37 + sentencePatterns37 + responsePhrases37
+            + businessComms38 + actionResponses38
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -14871,6 +14872,160 @@ enum SeedData {
                  examples: [
                     ("Friday at 3, if that works for you.", "金曜3時で都合よければ。"),
                     ("If that works for you, let me know.", "都合よければ教えて。")
+                 ])
+        ]
+    }
+
+    // MARK: - ビジネス会話 (追加 10)
+
+    private static var businessComms38: [Word] {
+        [
+            make("inbox", "where incoming messages are stored",
+                 "受信トレイ",
+                 useCases: ["メールやメッセージの受信箱を表すとき"],
+                 examples: [
+                    ("Check your inbox.", "受信トレイ確認して。"),
+                    ("Inbox is full.", "受信箱がいっぱい。")
+                 ]),
+            make("go through sth", "examine or experience",
+                 "〜に目を通す・〜を経験する",
+                 useCases: ["書類などを精査するとき、または辛い経験"],
+                 examples: [
+                    ("Go through the report.", "報告書を読み込む。"),
+                    ("Go through tough times.", "辛い時期を経験する。")
+                 ]),
+            make("clarify sth", "make clearer",
+                 "〜を明確にする",
+                 useCases: ["曖昧な点をはっきりさせるとき"],
+                 examples: [
+                    ("Clarify the point.", "要点を明確にする。"),
+                    ("Let me clarify.", "明確にさせて。")
+                 ]),
+            make("just to confirm", "to verify briefly",
+                 "念のため確認すると",
+                 useCases: ["情報を再確認する前置きとして"],
+                 examples: [
+                    ("Just to confirm, 3 PM?", "念のため、3時で?"),
+                    ("Just to confirm the schedule.", "予定の確認まで。")
+                 ]),
+            make("due", "expected by a certain time",
+                 "期日の・〜の予定",
+                 useCases: ["締切や予定日を表すとき"],
+                 examples: [
+                    ("Report due Friday.", "金曜が期日の報告書。"),
+                    ("Due in May.", "5月予定。")
+                 ]),
+            make("meet up", "gather together",
+                 "会う・集まる",
+                 useCases: ["友人や同僚と落ち合うとき"],
+                 examples: [
+                    ("Let's meet up tomorrow.", "明日会おう。"),
+                    ("Meet up at 5.", "5時に集合。")
+                 ]),
+            make("have a conflict", "have a scheduling clash",
+                 "(予定が)かぶる",
+                 useCases: ["既に他の予定があり都合がつかないとき"],
+                 examples: [
+                    ("I have a conflict that day.", "その日は予定がかぶる。"),
+                    ("Sorry, have a conflict.", "ごめん、予定が重なってる。")
+                 ]),
+            make("assist sb with", "help someone with",
+                 "〜を手伝う",
+                 useCases: ["何かを手伝う依頼や申し出をするとき"],
+                 examples: [
+                    ("Can you assist me with this?", "これ手伝ってくれる?"),
+                    ("Happy to assist you with anything.", "何でも喜んでお手伝い。")
+                 ]),
+            make("collaborate", "work jointly on",
+                 "共同で取り組む",
+                 useCases: ["協力してプロジェクトを進めるとき"],
+                 examples: [
+                    ("Collaborate on a project.", "プロジェクトで協力する。"),
+                    ("Let's collaborate.", "一緒にやろう。")
+                 ]),
+            make("my part", "the portion belonging to me",
+                 "私の分担・私の部分",
+                 useCases: ["責任や役割の自分の分を指すとき"],
+                 examples: [
+                    ("I did my part.", "自分の分はやった。"),
+                    ("That's my part of the job.", "それが私の仕事分。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・状況 (追加 10)
+
+    private static var actionResponses38: [Word] {
+        [
+            make("have a weekend", "spend a weekend (often with adj)",
+                 "週末を過ごす",
+                 useCases: ["週末について話すとき(Have a good weekend など)"],
+                 examples: [
+                    ("Have a good weekend!", "よい週末を!"),
+                    ("Had a great weekend.", "いい週末だった。")
+                 ]),
+            make("talk to sb about sth", "discuss with someone",
+                 "(人)と(物事)について話す",
+                 useCases: ["特定の話題について誰かと話すとき"],
+                 examples: [
+                    ("Talk to him about it.", "彼にそのこと話して。"),
+                    ("Need to talk to you about something.", "ちょっと話があるんだ。")
+                 ]),
+            make("bother sb", "trouble or annoy someone",
+                 "〜の邪魔をする・困らせる",
+                 useCases: ["相手の手間や時間を取らせるとき"],
+                 examples: [
+                    ("Sorry to bother you.", "邪魔してごめん。"),
+                    ("Don't bother him.", "彼を邪魔しないで。")
+                 ]),
+            make("interrupt", "break the continuity of",
+                 "中断する・口を挟む",
+                 useCases: ["会話や作業を遮るとき"],
+                 examples: [
+                    ("Sorry to interrupt.", "話の腰折ってごめん。"),
+                    ("Don't interrupt me.", "邪魔しないで。")
+                 ]),
+            make("see your point", "understand your view",
+                 "言いたいこと分かる",
+                 useCases: ["相手の論理を理解したと示すとき"],
+                 examples: [
+                    ("I see your point.", "なるほど。"),
+                    ("I see your point, but ~", "言いたいことは分かるけど〜")
+                 ]),
+            make("before we end", "before we wrap up",
+                 "終わる前に",
+                 useCases: ["会議や通話を締めくくる前に話を残すとき"],
+                 examples: [
+                    ("Before we end, any questions?", "終わる前に質問は?"),
+                    ("One last thing before we end.", "終わる前に最後に一つ。")
+                 ]),
+            make("later", "at some time afterward",
+                 "後で・じゃあね",
+                 useCases: ["時間的に後、または別れの挨拶"],
+                 examples: [
+                    ("Talk later.", "また後で。"),
+                    ("See you later!", "じゃあね!")
+                 ]),
+            make("swamped", "overwhelmed with work",
+                 "仕事に追われている",
+                 useCases: ["業務でいっぱいいっぱいの状態を表すとき"],
+                 examples: [
+                    ("I'm swamped right now.", "今めっちゃ忙しい。"),
+                    ("Totally swamped this week.", "今週は完全に手一杯。")
+                 ]),
+            make("can it", "stop talking; (also: container)",
+                 "黙れ・止めて",
+                 useCases: ["うるさい人を黙らせる強めの口語、または「缶詰にする」"],
+                 examples: [
+                    ("Can it!", "黙れ!"),
+                    ("Just can it, please.", "もう静かにして。")
+                 ]),
+            make("run behind", "be late or delayed",
+                 "予定より遅れている",
+                 useCases: ["スケジュールが押しているとき"],
+                 examples: [
+                    ("Running behind today.", "今日は予定が押してる。"),
+                    ("We're running behind schedule.", "予定より遅れてる。")
                  ])
         ]
     }
