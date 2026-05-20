@@ -109,6 +109,7 @@ enum SeedData {
             + businessAnalysis52 + verbsAndRelations52
             + miscNouns53
             + statesAndJudgments54
+            + actionVerbs55 + nounConcepts55 + statesExpressions55
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16463,6 +16464,230 @@ enum SeedData {
                  examples: [
                     ("Commonplace issue.", "ありふれた問題。"),
                     ("Now commonplace.", "今や日常的。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 10)
+
+    private static var actionVerbs55: [Word] {
+        [
+            make("socialize", "interact with others socially",
+                 "社交する・人付き合いする",
+                 useCases: ["パーティーや人付き合いをすることを表すとき"],
+                 examples: [
+                    ("I don't socialize much.", "あまり社交的じゃない。"),
+                    ("Socialize with coworkers.", "同僚と交流する。")
+                 ]),
+            make("get stuck", "become unable to move forward",
+                 "行き詰まる・はまる",
+                 useCases: ["物理的・精神的に進めない状況"],
+                 examples: [
+                    ("I got stuck in traffic.", "渋滞にはまった。"),
+                    ("Stuck on a problem.", "問題で詰まってる。")
+                 ]),
+            make("branch out", "expand into new areas",
+                 "新分野に乗り出す・枝分かれする",
+                 useCases: ["新たな試みや分野に挑戦するとき"],
+                 examples: [
+                    ("Branch out into design.", "デザイン分野に進出。"),
+                    ("Time to branch out.", "新分野へ進む時。")
+                 ]),
+            make("hold back", "restrain; withhold",
+                 "抑える・控える",
+                 useCases: ["感情や情報を抑えるとき"],
+                 examples: [
+                    ("Don't hold back.", "遠慮しないで。"),
+                    ("Hold back tears.", "涙をこらえる。")
+                 ]),
+            make("keep sth going", "maintain momentum",
+                 "〜を続ける・勢いを保つ",
+                 useCases: ["何かを止めずに継続させたいとき"],
+                 examples: [
+                    ("Keep the conversation going.", "会話を続けよう。"),
+                    ("Keep it going!", "その調子!")
+                 ]),
+            make("try out", "test or audition",
+                 "試してみる・オーディションを受ける",
+                 useCases: ["新しい物や活動を試すとき"],
+                 examples: [
+                    ("Try out a new recipe.", "新レシピを試す。"),
+                    ("Try out for the team.", "チームのトライアウトを受ける。")
+                 ]),
+            make("pull sth out of", "extract from",
+                 "〜から〜を引き出す",
+                 useCases: ["物理的に取り出す、または比喩的に引き出すとき"],
+                 examples: [
+                    ("Pull a rabbit out of a hat.", "帽子からウサギを出す。"),
+                    ("Pull yourself out of bed.", "ベッドから自分を引きずり出す。")
+                 ]),
+            make("putting sth aside", "setting something to one side",
+                 "〜を脇に置く・保留する",
+                 useCases: ["他のことを後回しにして集中するとき"],
+                 examples: [
+                    ("Putting that aside, ~", "それは脇に置いておいて〜"),
+                    ("Putting differences aside.", "意見の相違を脇に置いて。")
+                 ]),
+            make("boil down", "be reduced to the essence",
+                 "煮詰める・要するに〜になる",
+                 useCases: ["複雑な話を本質に絞るとき"],
+                 examples: [
+                    ("It boils down to money.", "結局は金の問題。"),
+                    ("Boil down the data.", "データを集約する。")
+                 ]),
+            make("transition into", "move into a new state",
+                 "〜へ移行する",
+                 useCases: ["状態やキャリアが切り替わるとき"],
+                 examples: [
+                    ("Transition into a new role.", "新しい役割に移る。"),
+                    ("Transition into adulthood.", "大人へ移行する。")
+                 ])
+        ]
+    }
+
+    // MARK: - 名詞・概念 (追加 10)
+
+    private static var nounConcepts55: [Word] {
+        [
+            make("social", "relating to society",
+                 "社交的な・社会的な",
+                 useCases: ["人付き合いや社会に関することを表すとき"],
+                 examples: [
+                    ("Social media.", "SNS。"),
+                    ("Social event.", "社交イベント。")
+                 ]),
+            make("choice", "an act of selecting; an option",
+                 "選択・選択肢",
+                 useCases: ["決断や複数ある選択肢を表すとき"],
+                 examples: [
+                    ("Tough choice.", "難しい選択。"),
+                    ("Your choice.", "君の選択次第。")
+                 ]),
+            make("ultimate", "the best or most extreme",
+                 "究極の・最終的な",
+                 useCases: ["最高峰や最終形を表すとき"],
+                 examples: [
+                    ("Ultimate goal.", "究極の目標。"),
+                    ("Ultimate experience.", "究極の体験。")
+                 ]),
+            make("tier", "a level in a hierarchy",
+                 "層・段階",
+                 useCases: ["料金プランやランクの区分を表すとき"],
+                 examples: [
+                    ("Top tier.", "トップクラス。"),
+                    ("Three-tier system.", "三段階のシステム。")
+                 ]),
+            make("material", "matter; relevant content",
+                 "材料・素材・資料",
+                 useCases: ["物質や教材、議論の素材を表すとき"],
+                 examples: [
+                    ("Raw material.", "原材料。"),
+                    ("Reading material.", "読み物。")
+                 ]),
+            make("a pass", "permission or skip; an attempt",
+                 "パス・見送り",
+                 useCases: ["許可証、または「今回は遠慮する」というスラング"],
+                 examples: [
+                    ("I'll take a pass.", "今回は遠慮しとく。"),
+                    ("A free pass.", "免除パス。")
+                 ]),
+            make("dead-end", "no possibility of progress",
+                 "行き止まり・将来性のない",
+                 useCases: ["袋小路の道や、見込みのない仕事を表すとき"],
+                 examples: [
+                    ("Dead-end street.", "行き止まりの道。"),
+                    ("Dead-end job.", "将来性のない仕事。")
+                 ]),
+            make("reaction", "a response to something",
+                 "反応",
+                 useCases: ["出来事や言葉に対する人の反応を表すとき"],
+                 examples: [
+                    ("Strong reaction.", "強い反応。"),
+                    ("Reaction time.", "反応時間。")
+                 ]),
+            make("mirror", "a reflective surface; reflect",
+                 "鏡・反映する",
+                 useCases: ["鏡像、または比喩的に反映する状態を表すとき"],
+                 examples: [
+                    ("Look in the mirror.", "鏡を見て。"),
+                    ("Mirror the trend.", "傾向を映し出す。")
+                 ]),
+            make("magic", "the use of supernatural power",
+                 "魔法・マジック",
+                 useCases: ["奇跡的な力や見事な技を表すとき"],
+                 examples: [
+                    ("Like magic.", "まるで魔法のよう。"),
+                    ("Magic trick.", "手品。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状態・表現 (追加 9)
+
+    private static var statesExpressions55: [Word] {
+        [
+            make("showtime", "the start of a performance",
+                 "ショータイム・本番",
+                 useCases: ["パフォーマンスや大事な瞬間が始まるとき"],
+                 examples: [
+                    ("It's showtime!", "いよいよ本番!"),
+                    ("Showtime is at 7.", "ショーは7時から。")
+                 ]),
+            make("the very next day", "the day immediately after",
+                 "翌日すぐ・その翌日",
+                 useCases: ["何かが起きた直後の日を強調するとき"],
+                 examples: [
+                    ("The very next day, he called.", "翌日にすぐ彼は電話してきた。"),
+                    ("The very next day, everything changed.", "翌日にはすべてが変わった。")
+                 ]),
+            make("this stuff", "this kind of thing",
+                 "こういうもの・このもの",
+                 useCases: ["目の前の物事や状況を漠然と指すとき"],
+                 examples: [
+                    ("Don't drink this stuff.", "このやつ飲むなよ。"),
+                    ("This stuff is amazing!", "これすごい!")
+                 ]),
+            make("can literally feel", "physically perceive (intensified)",
+                 "本当に感じることができる",
+                 useCases: ["強い感覚や感情を強調するとき"],
+                 examples: [
+                    ("I can literally feel my heart racing.", "心臓のドキドキを本当に感じる。"),
+                    ("Can literally feel the cold.", "寒さがリアルに伝わる。")
+                 ]),
+            make("depressed", "feeling severe sadness",
+                 "落ち込んだ・抑うつの",
+                 useCases: ["悲しみや無気力な状態を表すとき"],
+                 examples: [
+                    ("Feeling depressed.", "落ち込んでる。"),
+                    ("Clinically depressed.", "うつ病の。")
+                 ]),
+            make("for free", "without payment",
+                 "無料で",
+                 useCases: ["お金を払わずに何かを得るとき"],
+                 examples: [
+                    ("Got it for free.", "無料で手に入れた。"),
+                    ("For free!", "無料で!")
+                 ]),
+            make("bio", "a short biography",
+                 "経歴・プロフィール",
+                 useCases: ["SNSやプロフィール欄の自己紹介文を表すとき"],
+                 examples: [
+                    ("Check my bio.", "プロフィール見て。"),
+                    ("Short bio.", "簡単な経歴。")
+                 ]),
+            make("premise", "a basis for argument or work",
+                 "前提・原則",
+                 useCases: ["議論や物語の出発点を表すとき"],
+                 examples: [
+                    ("Movie premise.", "映画の前提設定。"),
+                    ("Faulty premise.", "誤った前提。")
+                 ]),
+            make("silence", "the absence of sound",
+                 "沈黙・静けさ",
+                 useCases: ["無音や口を閉ざした状態を表すとき"],
+                 examples: [
+                    ("Awkward silence.", "気まずい沈黙。"),
+                    ("Silence is golden.", "沈黙は金。")
                  ])
         ]
     }
