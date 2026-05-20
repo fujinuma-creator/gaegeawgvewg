@@ -98,6 +98,7 @@ enum SeedData {
             + conversationOpeners41
             + idiomsObjects42
             + sizeQualities43
+            + casualExpressions44
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15402,6 +15403,69 @@ enum SeedData {
                  examples: [
                     ("That's so lame.", "ダサい。"),
                     ("A lame excuse.", "ひどい言い訳。")
+                 ])
+        ]
+    }
+
+    // MARK: - 口語表現 (追加 8)
+
+    private static var casualExpressions44: [Word] {
+        [
+            make("offend", "cause to feel hurt or insulted",
+                 "気分を害する・侮辱する",
+                 useCases: ["相手を不快にさせるとき"],
+                 examples: [
+                    ("Didn't mean to offend.", "気分を害するつもりはなかった。"),
+                    ("Easily offended.", "怒りっぽい。")
+                 ]),
+            make("leave it to", "rely on someone to handle it",
+                 "〜に任せる",
+                 useCases: ["特定の人なら絶対やってくれると信頼するとき"],
+                 examples: [
+                    ("Leave it to me.", "任せて。"),
+                    ("Leave it to her.", "彼女に任せて。")
+                 ]),
+            make("be on sth", "be using or taking",
+                 "〜を服用中・〜中",
+                 useCases: ["薬・ダイエット・職務などに従事中であるとき"],
+                 examples: [
+                    ("She's on medication.", "彼女は薬を飲んでいる。"),
+                    ("I'm on a diet.", "ダイエット中。")
+                 ]),
+            make("it is what it is", "accept the situation as it stands",
+                 "そういうもんだ・仕方ない",
+                 useCases: ["変えられない現実を受け入れる諦め交じりの表現"],
+                 examples: [
+                    ("It is what it is.", "そういうもんだ。"),
+                    ("Well, it is what it is.", "まあ、仕方ない。")
+                 ]),
+            make("agree to disagree", "accept difference of opinion",
+                 "意見の相違を認める",
+                 useCases: ["議論を平和的に終える方法"],
+                 examples: [
+                    ("Let's agree to disagree.", "意見の相違として終わりにしよう。"),
+                    ("We agreed to disagree.", "意見が合わないと受け入れた。")
+                 ]),
+            make("big deal", "an important matter",
+                 "大した事・大事",
+                 useCases: ["重要さを強調、または逆に皮肉で「大したことない」"],
+                 examples: [
+                    ("Big deal!", "大したことない!(皮肉)"),
+                    ("It's a big deal.", "重要なことだ。")
+                 ]),
+            make("keep sb pp", "keep someone in a state (past participle)",
+                 "(人)を〜のままにしておく",
+                 useCases: ["keep + 人 + 過去分詞 の構文(keep me posted など)"],
+                 examples: [
+                    ("Keep me posted.", "進捗教えて。"),
+                    ("Keep me informed.", "情報をください。")
+                 ]),
+            make("you never know", "something unexpected may happen",
+                 "何が起きるかわからない",
+                 useCases: ["将来の不確実性を示すとき"],
+                 examples: [
+                    ("You never know.", "何が起こるか分からない。"),
+                    ("You never know what'll happen.", "何が起きるか分からないよ。")
                  ])
         ]
     }
