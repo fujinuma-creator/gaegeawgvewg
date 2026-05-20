@@ -96,6 +96,7 @@ enum SeedData {
             + casualReactions39
             + verbsActions40 + adjectiveNouns40
             + conversationOpeners41
+            + idiomsObjects42
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15288,6 +15289,55 @@ enum SeedData {
                  examples: [
                     ("From my standpoint, ~", "私の観点では〜"),
                     ("Different standpoint.", "別の視点。")
+                 ])
+        ]
+    }
+
+    // MARK: - イディオム・物 (追加 6)
+
+    private static var idiomsObjects42: [Word] {
+        [
+            make("through thick and thin", "in good times and bad",
+                 "どんな時も・苦楽を共に",
+                 useCases: ["変わらぬ忠誠や友情を表すとき"],
+                 examples: [
+                    ("Friends through thick and thin.", "苦楽を共にする友。"),
+                    ("Stuck with him through thick and thin.", "どんな時も彼を支えた。")
+                 ]),
+            make("on the fence", "undecided",
+                 "決めかねている・どっちつかず",
+                 useCases: ["2つの選択肢の間で迷っている状態"],
+                 examples: [
+                    ("I'm on the fence about it.", "それについては迷ってる。"),
+                    ("Still on the fence.", "まだ決められない。")
+                 ]),
+            make("in your court", "your turn to act",
+                 "あなたの番・判断はそちら次第",
+                 useCases: ["決断や行動を相手に委ねるとき(the ball is in your court)"],
+                 examples: [
+                    ("The ball's in your court.", "君次第だよ。"),
+                    ("It's in your court now.", "もうそっちの番。")
+                 ]),
+            make("shell", "the hard outer covering; a casing",
+                 "殻・外殻",
+                 useCases: ["卵や貝、または感情的な殻を表すとき"],
+                 examples: [
+                    ("Crack the shell.", "殻を割る。"),
+                    ("Come out of your shell.", "殻を破って。")
+                 ]),
+            make("shelter", "a place of safety",
+                 "避難所・保護施設",
+                 useCases: ["雨風・危険から守る場所、または動物保護施設"],
+                 examples: [
+                    ("Take shelter.", "避難する。"),
+                    ("Animal shelter.", "動物保護施設。")
+                 ]),
+            make("parade", "a public procession",
+                 "パレード・行進",
+                 useCases: ["祝祭などで行われる行進、または比喩で並べ立てる"],
+                 examples: [
+                    ("Watch the parade.", "パレードを見る。"),
+                    ("Don't rain on my parade.", "私の楽しみを台無しにしないで。")
                  ])
         ]
     }
