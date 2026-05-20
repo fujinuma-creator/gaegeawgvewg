@@ -106,6 +106,7 @@ enum SeedData {
             + landscapeConcepts49 + verbStates49 + abstractTraits49
             + actionVerbs50 + nounAdjectives50
             + skillsAndStyle51
+            + businessAnalysis52 + verbsAndRelations52
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16194,6 +16195,153 @@ enum SeedData {
                  examples: [
                     ("Healthy lifestyle.", "健康的なライフスタイル。"),
                     ("Lifestyle changes.", "生活スタイルの変化。")
+                 ])
+        ]
+    }
+
+    // MARK: - ビジネス・分析 (追加 10)
+
+    private static var businessAnalysis52: [Word] {
+        [
+            make("case study", "an in-depth analysis of a single subject",
+                 "事例研究・ケーススタディ",
+                 useCases: ["特定事例を詳細に分析する研究を表すとき"],
+                 examples: [
+                    ("A case study of success.", "成功事例の研究。"),
+                    ("Present a case study.", "ケーススタディを発表。")
+                 ]),
+            make("tip", "a piece of advice; small reward; pointed end",
+                 "ヒント・チップ・先端",
+                 useCases: ["助言、サービスへの心づけ、または物の先を表すとき"],
+                 examples: [
+                    ("Helpful tip.", "役立つコツ。"),
+                    ("Leave a tip.", "チップを置いて。")
+                 ]),
+            make("import sth", "bring goods from abroad",
+                 "〜を輸入する",
+                 useCases: ["外国から商品や文化を取り入れるとき"],
+                 examples: [
+                    ("Import wine.", "ワインを輸入する。"),
+                    ("Imported from Japan.", "日本から輸入。")
+                 ]),
+            make("compatible", "able to exist or work together",
+                 "互換性のある・気の合う",
+                 useCases: ["機器同士、または人同士の相性を表すとき"],
+                 examples: [
+                    ("Compatible with iPhone.", "iPhone対応。"),
+                    ("Compatible personalities.", "気の合う性格。")
+                 ]),
+            make("practical", "concerned with actual use",
+                 "実用的な・現実的な",
+                 useCases: ["机上の理論ではなく実際に役立つことを表すとき"],
+                 examples: [
+                    ("Practical advice.", "実用的な助言。"),
+                    ("Practical approach.", "現実的なアプローチ。")
+                 ]),
+            make("engaging", "charming and attractive",
+                 "魅力的な・引き込まれる",
+                 useCases: ["興味を引きつけ続ける内容や人物を表すとき"],
+                 examples: [
+                    ("Engaging story.", "引き込まれる物語。"),
+                    ("Engaging speaker.", "魅力的な話し手。")
+                 ]),
+            make("ongoing", "continuing to happen",
+                 "進行中の・継続中の",
+                 useCases: ["進行している作業や状況を表すとき"],
+                 examples: [
+                    ("Ongoing project.", "進行中のプロジェクト。"),
+                    ("Ongoing issue.", "継続中の問題。")
+                 ]),
+            make("hospitality", "friendly reception of guests",
+                 "おもてなし・接客",
+                 useCases: ["温かい迎え入れや接客業界を表すとき"],
+                 examples: [
+                    ("Japanese hospitality.", "日本のおもてなし。"),
+                    ("Hospitality industry.", "ホスピタリティ産業。")
+                 ]),
+            make("gesture", "a motion of the hands or body",
+                 "ジェスチャー・身振り",
+                 useCases: ["手振りや好意の表れを表すとき"],
+                 examples: [
+                    ("Hand gesture.", "手のジェスチャー。"),
+                    ("Nice gesture.", "気の利いた配慮。")
+                 ]),
+            make("recap", "summarize the main points",
+                 "要約・おさらい",
+                 useCases: ["前回の内容を簡潔にまとめるとき"],
+                 examples: [
+                    ("Quick recap.", "サッと振り返り。"),
+                    ("Let me recap.", "おさらいさせて。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・関係 (追加 9)
+
+    private static var verbsAndRelations52: [Word] {
+        [
+            make("establish", "set up firmly",
+                 "確立する・設立する",
+                 useCases: ["制度や組織、信頼を築くとき"],
+                 examples: [
+                    ("Establish a company.", "会社を設立する。"),
+                    ("Establish trust.", "信頼を築く。")
+                 ]),
+            make("detach", "separate from",
+                 "切り離す・取り外す",
+                 useCases: ["物理的に離す、または感情的に距離を置くとき"],
+                 examples: [
+                    ("Detach the cable.", "ケーブルを外す。"),
+                    ("Detach emotionally.", "感情的に距離を置く。")
+                 ]),
+            make("inject", "introduce a fluid; add an element",
+                 "注射する・注入する",
+                 useCases: ["液体を体内に入れる、または要素を加えるとき"],
+                 examples: [
+                    ("Inject the medicine.", "薬を注射する。"),
+                    ("Inject energy.", "活力を吹き込む。")
+                 ]),
+            make("factual", "based on facts",
+                 "事実に基づく",
+                 useCases: ["客観的な事実であることを強調するとき"],
+                 examples: [
+                    ("Factual report.", "事実に基づく報告。"),
+                    ("Factual error.", "事実誤認。")
+                 ]),
+            make("factor in", "include as a consideration",
+                 "考慮に入れる",
+                 useCases: ["計算や判断に要素を加えるとき"],
+                 examples: [
+                    ("Factor in shipping.", "送料を考慮に入れる。"),
+                    ("Factor in fatigue.", "疲労を計算に入れる。")
+                 ]),
+            make("keep sth flowing", "maintain continuous movement",
+                 "〜を流し続ける",
+                 useCases: ["会話・物資・お金などが滞らないようにするとき"],
+                 examples: [
+                    ("Keep the conversation flowing.", "会話を続ける。"),
+                    ("Keep cash flowing.", "現金の流れを保つ。")
+                 ]),
+            make("generate", "produce or create",
+                 "生み出す・発生させる",
+                 useCases: ["電力や収入、アイデアを生み出すとき"],
+                 examples: [
+                    ("Generate electricity.", "電力を発電。"),
+                    ("Generate ideas.", "アイデアを生む。")
+                 ]),
+            make("by extension", "as a logical consequence",
+                 "延長線上で・つまり",
+                 useCases: ["論理的に派生する結論や対象を示すとき"],
+                 examples: [
+                    ("And by extension, his family.", "ひいては彼の家族も。"),
+                    ("By extension, we benefit.", "結果として我々も恩恵を受ける。")
+                 ]),
+            make("encourage", "give support and confidence",
+                 "励ます・促進する",
+                 useCases: ["人を励ましたり、行動を後押しするとき"],
+                 examples: [
+                    ("Encourage creativity.", "創造性を促進。"),
+                    ("Encourage your team.", "チームを励まして。")
                  ])
         ]
     }
