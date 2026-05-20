@@ -86,6 +86,7 @@ enum SeedData {
             + conversationalPhrases32
             + actionVerbs33 + emotionStates33
             + expressionFillers33 + nounConcepts33
+            + businessCommerce34 + actionVerbs34
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -14102,6 +14103,125 @@ enum SeedData {
                  examples: [
                     ("Everything is clear, thanks.", "全部分かりました、ありがとう。"),
                     ("Now everything is clear.", "もう全部はっきりした。")
+                 ])
+        ]
+    }
+
+    // MARK: - ビジネス・商業 (追加 8)
+
+    private static var businessCommerce34: [Word] {
+        [
+            make("retail", "sale of goods to the public",
+                 "小売・小売の",
+                 useCases: ["卸売りと対比して、消費者への直販を表すとき"],
+                 examples: [
+                    ("Retail store.", "小売店。"),
+                    ("Retail therapy.", "ショッピング療法。")
+                 ]),
+            make("contain", "include or hold within",
+                 "含む・抑える",
+                 useCases: ["要素が含まれている、または感情・拡散を抑え込むとき"],
+                 examples: [
+                    ("This contains nuts.", "ナッツが入ってる。"),
+                    ("Contain the spread.", "拡散を抑える。")
+                 ]),
+            make("buyout", "purchase of a company or stake",
+                 "買収・買い取り",
+                 useCases: ["企業や株主の持ち分を全て買い取るとき"],
+                 examples: [
+                    ("Management buyout.", "MBO・経営陣による買収。"),
+                    ("A buyout offer.", "買収提案。")
+                 ]),
+            make("enterprise", "a business or initiative",
+                 "企業・事業",
+                 useCases: ["大規模なビジネスや組織を表すとき"],
+                 examples: [
+                    ("Free enterprise.", "自由企業制。"),
+                    ("Enterprise software.", "企業向けソフト。")
+                 ]),
+            make("institute", "an organization for promoting a cause",
+                 "機関・協会・(制度を)導入する",
+                 useCases: ["研究機関や、制度の導入を表すとき"],
+                 examples: [
+                    ("Research institute.", "研究機関。"),
+                    ("Institute a new policy.", "新方針を導入。")
+                 ]),
+            make("estate", "extensive land or real property",
+                 "地所・遺産",
+                 useCases: ["不動産や遺された財産を表すとき"],
+                 examples: [
+                    ("Real estate.", "不動産。"),
+                    ("Family estate.", "一族の所有地・遺産。")
+                 ]),
+            make("section", "a distinct part",
+                 "区画・部門",
+                 useCases: ["文書・建物・組織の一部を表すとき"],
+                 examples: [
+                    ("Section 5.", "第5節。"),
+                    ("Sports section.", "スポーツ欄。")
+                 ]),
+            make("team up", "join forces with",
+                 "チームを組む・協力する",
+                 useCases: ["共通の目的のために協力するとき"],
+                 examples: [
+                    ("Team up with him.", "彼と組もう。"),
+                    ("Let's team up!", "協力しよう!")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 7)
+
+    private static var actionVerbs34: [Word] {
+        [
+            make("insist on", "demand firmly",
+                 "〜を主張する・〜と譲らない",
+                 useCases: ["強く主張して譲らないとき"],
+                 examples: [
+                    ("He insisted on paying.", "彼は支払うと譲らなかった。"),
+                    ("I insist on quality.", "品質には妥協しない。")
+                 ]),
+            make("provoke", "stimulate or anger",
+                 "挑発する・引き起こす",
+                 useCases: ["反応や怒りを引き起こすとき"],
+                 examples: [
+                    ("Don't provoke him.", "彼を挑発するな。"),
+                    ("Provoke a response.", "反応を引き出す。")
+                 ]),
+            make("select", "carefully choose",
+                 "選ぶ・選抜する",
+                 useCases: ["候補から慎重に選び抜くとき"],
+                 examples: [
+                    ("Select an option.", "選択肢を選んで。"),
+                    ("Selected for the team.", "チームに選抜された。")
+                 ]),
+            make("buy into", "accept as true; invest in",
+                 "(考えを)信じる・投資する",
+                 useCases: ["人の意見や計画を受け入れるとき"],
+                 examples: [
+                    ("I don't buy into that.", "それは信じない。"),
+                    ("Buy into the company.", "会社に出資する。")
+                 ]),
+            make("be into V-ing", "be enthusiastic about doing",
+                 "〜することにハマっている",
+                 useCases: ["何かの活動に夢中であることを表すとき"],
+                 examples: [
+                    ("I'm into running these days.", "最近ランニングにハマってる。"),
+                    ("She's into baking.", "彼女はお菓子作りにハマってる。")
+                 ]),
+            make("go out of one's way", "make a special effort",
+                 "わざわざ〜する",
+                 useCases: ["普段の範囲を超えて努力するとき"],
+                 examples: [
+                    ("He went out of his way to help.", "彼はわざわざ助けてくれた。"),
+                    ("Don't go out of your way.", "無理しないで。")
+                 ]),
+            make("destine", "intend or set apart for a purpose",
+                 "運命づける・予定する",
+                 useCases: ["運命や予定として何かが定められているとき"],
+                 examples: [
+                    ("Destined for greatness.", "偉大なる運命。"),
+                    ("Destined to fail.", "失敗の運命。")
                  ])
         ]
     }
