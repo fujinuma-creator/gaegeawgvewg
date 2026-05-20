@@ -103,6 +103,7 @@ enum SeedData {
             + conceptsNouns46
             + techConcepts47
             + politicsActions48
+            + landscapeConcepts49 + verbStates49 + abstractTraits49
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15855,6 +15856,174 @@ enum SeedData {
                  examples: [
                     ("Presidential election.", "大統領選挙。"),
                     ("Win the election.", "選挙に勝つ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 景観・概念 (追加 7)
+
+    private static var landscapeConcepts49: [Word] {
+        [
+            make("landscape", "all the features of a land area",
+                 "風景・地形・状況",
+                 useCases: ["景色や、業界・分野の全体像を表すとき"],
+                 examples: [
+                    ("Beautiful landscape.", "美しい風景。"),
+                    ("Political landscape.", "政治情勢。")
+                 ]),
+            make("scenery", "the natural features of a landscape",
+                 "景色・風景",
+                 useCases: ["旅行先や場面の美しい景色を表すとき"],
+                 examples: [
+                    ("Mountain scenery.", "山の景色。"),
+                    ("Enjoy the scenery.", "景色を楽しむ。")
+                 ]),
+            make("insight", "a deep understanding",
+                 "洞察・気づき",
+                 useCases: ["物事の本質を見抜く力や鋭い視点を表すとき"],
+                 examples: [
+                    ("Valuable insight.", "貴重な洞察。"),
+                    ("Gain insight.", "洞察を得る。")
+                 ]),
+            make("critical", "extremely important; analytical",
+                 "極めて重要な・批判的な",
+                 useCases: ["決定的な重要性や厳しい分析を表すとき"],
+                 examples: [
+                    ("Critical situation.", "深刻な状況。"),
+                    ("Critical thinking.", "批判的思考。")
+                 ]),
+            make("formidable", "inspiring respect through size or skill",
+                 "手強い・恐ろしい",
+                 useCases: ["相手や課題が大きく圧倒的なとき"],
+                 examples: [
+                    ("A formidable opponent.", "手強い相手。"),
+                    ("Formidable challenge.", "難題。")
+                 ]),
+            make("infrastructure", "basic systems supporting society",
+                 "インフラ・基盤",
+                 useCases: ["道路・電力・通信などの社会基盤を表すとき"],
+                 examples: [
+                    ("Public infrastructure.", "公共インフラ。"),
+                    ("Build infrastructure.", "基盤を構築。")
+                 ]),
+            make("transition", "the process of changing",
+                 "移行・変化",
+                 useCases: ["ある状態から別の状態へ移るとき"],
+                 examples: [
+                    ("Smooth transition.", "スムーズな移行。"),
+                    ("In transition.", "移行期にある。")
+                 ])
+        ]
+    }
+
+    // MARK: - 動詞・状態 (追加 7)
+
+    private static var verbStates49: [Word] {
+        [
+            make("double sth", "make twice as much",
+                 "〜を2倍にする",
+                 useCases: ["量・サイズ・価値を2倍にするとき"],
+                 examples: [
+                    ("Double the recipe.", "レシピを2倍に。"),
+                    ("Double down.", "倍賭けする・固執する。")
+                 ]),
+            make("flat", "level; without slope; (also) apartment",
+                 "平らな・平坦な・アパート(英)",
+                 useCases: ["平らな表面、または英国式の集合住宅"],
+                 examples: [
+                    ("Flat surface.", "平らな面。"),
+                    ("Rent a flat.", "アパートを借りる(英)。")
+                 ]),
+            make("match", "be equal to; pair up; a contest",
+                 "合う・試合・マッチ",
+                 useCases: ["何かが釣り合う、または試合を表すとき"],
+                 examples: [
+                    ("Perfect match.", "ぴったり。"),
+                    ("Tennis match.", "テニスの試合。")
+                 ]),
+            make("fit", "be the right size; in shape",
+                 "合う・体型が良い",
+                 useCases: ["サイズが合う、または健康で引き締まっている状態"],
+                 examples: [
+                    ("These shoes fit.", "この靴ぴったり。"),
+                    ("Stay fit.", "健康を保って。")
+                 ]),
+            make("ban sth", "officially prohibit",
+                 "〜を禁止する",
+                 useCases: ["政府や組織が公式に禁止するとき"],
+                 examples: [
+                    ("Ban smoking.", "喫煙を禁止する。"),
+                    ("Banned from the site.", "サイトから締め出された。")
+                 ]),
+            make("stack", "a neat pile; to arrange in piles",
+                 "積み重ねる・山",
+                 useCases: ["物を積み上げる、または比喩で「山積み」"],
+                 examples: [
+                    ("Stack of books.", "本の山。"),
+                    ("Stack up against ~", "〜と比較する。")
+                 ]),
+            make("dilute", "make weaker by adding water",
+                 "薄める・希釈する",
+                 useCases: ["液体や効果を薄めるとき"],
+                 examples: [
+                    ("Dilute the juice.", "ジュースを薄める。"),
+                    ("Diluted message.", "薄まったメッセージ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 性質・抽象 (追加 7)
+
+    private static var abstractTraits49: [Word] {
+        [
+            make("rapid", "happening quickly",
+                 "急速な・速い",
+                 useCases: ["変化や成長が早いことを表すとき(類: fast)"],
+                 examples: [
+                    ("Rapid growth.", "急成長。"),
+                    ("Rapid response.", "迅速な対応。")
+                 ]),
+            make("adoption", "the act of taking up an idea or child",
+                 "採用・養子縁組",
+                 useCases: ["方針や子供を正式に受け入れるとき"],
+                 examples: [
+                    ("Adoption of new technology.", "新技術の採用。"),
+                    ("Pet adoption.", "ペットの里親。")
+                 ]),
+            make("for good", "permanently",
+                 "永久に・これっきり",
+                 useCases: ["変化や別れが続くことを強調するとき"],
+                 examples: [
+                    ("Gone for good.", "永久に去った。"),
+                    ("Quit for good.", "きっぱり辞める。")
+                 ]),
+            make("application", "the act of applying; a request",
+                 "応用・申請・アプリ",
+                 useCases: ["活用、申込、ソフトウェアなどを表すとき"],
+                 examples: [
+                    ("Job application.", "求職申請。"),
+                    ("Practical application.", "実用的な応用。")
+                 ]),
+            make("diffusion", "the spreading of something",
+                 "拡散・浸透",
+                 useCases: ["物質・情報・文化などが広がるとき"],
+                 examples: [
+                    ("Diffusion of innovation.", "イノベーションの普及。"),
+                    ("Gas diffusion.", "気体の拡散。")
+                 ]),
+            make("eventually", "in the end",
+                 "結局・最終的に",
+                 useCases: ["時間を経て最終的に何かが起こるとき"],
+                 examples: [
+                    ("Eventually, things worked out.", "最終的にうまくいった。"),
+                    ("He'll come around eventually.", "そのうち彼も納得する。")
+                 ]),
+            make("mere", "nothing more than",
+                 "ただの・ほんの",
+                 useCases: ["量や重要度が少ないことを強調するとき"],
+                 examples: [
+                    ("A mere coincidence.", "ただの偶然。"),
+                    ("Mere seconds away.", "ほんの数秒先。")
                  ])
         ]
     }
