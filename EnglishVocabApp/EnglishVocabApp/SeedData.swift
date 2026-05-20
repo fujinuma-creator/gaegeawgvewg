@@ -108,6 +108,7 @@ enum SeedData {
             + skillsAndStyle51
             + businessAnalysis52 + verbsAndRelations52
             + miscNouns53
+            + statesAndJudgments54
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16371,6 +16372,97 @@ enum SeedData {
                  examples: [
                     ("Social status.", "社会的地位。"),
                     ("Status update.", "近況・更新情報。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状態・判断 (追加 12)
+
+    private static var statesAndJudgments54: [Word] {
+        [
+            make("as things stand", "given the current situation",
+                 "今のところは・現状では",
+                 useCases: ["現状を踏まえて判断や予測をするとき"],
+                 examples: [
+                    ("As things stand, we'll lose.", "今の状況では負ける。"),
+                    ("As things stand, no changes.", "現状では変更なし。")
+                 ]),
+            make("all things considered", "taking everything into account",
+                 "全てを考慮すると",
+                 useCases: ["全体的な評価を述べるとき"],
+                 examples: [
+                    ("All things considered, it went well.", "総合的に見てうまくいった。"),
+                    ("All things considered, we did our best.", "全てを考えると最善を尽くした。")
+                 ]),
+            make("without a doubt", "with absolute certainty",
+                 "間違いなく",
+                 useCases: ["確信を強く伝えるとき"],
+                 examples: [
+                    ("Without a doubt, the best.", "間違いなく最高。"),
+                    ("Without a doubt, he'll come.", "間違いなく彼は来る。")
+                 ]),
+            make("mood swing", "an abrupt change in emotion",
+                 "気分の浮き沈み・感情の波",
+                 useCases: ["感情が急変することを表すとき"],
+                 examples: [
+                    ("Bad mood swing.", "気分の落ち込み。"),
+                    ("Hormonal mood swings.", "ホルモンによる気分の波。")
+                 ]),
+            make("gut check", "a moment of honest self-evaluation",
+                 "自問自答・覚悟の確認",
+                 useCases: ["自分の決意や本気度を確かめるとき"],
+                 examples: [
+                    ("Time for a gut check.", "自問自答の時。"),
+                    ("Gut check moment.", "決意を試される瞬間。")
+                 ]),
+            make("ego", "a person's sense of self-importance",
+                 "エゴ・自尊心",
+                 useCases: ["自我や自己評価について話すとき"],
+                 examples: [
+                    ("Big ego.", "プライドが高い。"),
+                    ("Bruise the ego.", "プライドを傷つける。")
+                 ]),
+            make("bottleneck", "a point of congestion or obstruction",
+                 "ボトルネック・障害",
+                 useCases: ["処理速度や進捗を遅らせている要因を表すとき"],
+                 examples: [
+                    ("Identify the bottleneck.", "ボトルネックを特定する。"),
+                    ("Major bottleneck.", "大きな障害。")
+                 ]),
+            make("track record", "the past performance of someone",
+                 "実績・経歴",
+                 useCases: ["これまでの成果や信頼性を語るとき"],
+                 examples: [
+                    ("Solid track record.", "確かな実績。"),
+                    ("Proven track record.", "証明済みの実績。")
+                 ]),
+            make("microscope", "an instrument for viewing tiny things",
+                 "顕微鏡",
+                 useCases: ["細かな観察や徹底的な精査の比喩にも使う"],
+                 examples: [
+                    ("Under a microscope.", "顕微鏡で観察・徹底調査されて。"),
+                    ("Through a microscope.", "顕微鏡を通して。")
+                 ]),
+            make("micromanagement", "controlling every small detail",
+                 "マイクロマネジメント・細かい管理",
+                 useCases: ["上司が細部まで口出しする管理スタイルを批判するとき"],
+                 examples: [
+                    ("Stop the micromanagement.", "細かく口出しするのやめて。"),
+                    ("Hate micromanagement.", "細かい管理が嫌い。")
+                 ]),
+            make("redundant", "no longer needed; excessive",
+                 "余分な・冗長な・解雇された(英)",
+                 useCases: ["不要な要素、または英国で「解雇」を意味するとき"],
+                 examples: [
+                    ("Redundant information.", "余分な情報。"),
+                    ("Made redundant.", "解雇された(英)。")
+                 ]),
+            make("commonplace", "ordinary; widespread",
+                 "ありふれた・日常的な",
+                 useCases: ["特別ではなく一般的なことを表すとき"],
+                 examples: [
+                    ("Commonplace issue.", "ありふれた問題。"),
+                    ("Now commonplace.", "今や日常的。")
                  ])
         ]
     }
