@@ -91,6 +91,7 @@ enum SeedData {
             + actionVerbs36 + qualityAdjectives36
             + objectsItems36 + foodAndAnimals36
             + conceptStates36
+            + assumptionPhrases37 + sentencePatterns37 + responsePhrases37
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -14674,6 +14675,202 @@ enum SeedData {
                  examples: [
                     ("Indigenous people.", "先住民。"),
                     ("Indigenous to Japan.", "日本原産の。")
+                 ])
+        ]
+    }
+
+    // MARK: - 仮定・推測 (追加 9)
+
+    private static var assumptionPhrases37: [Word] {
+        [
+            make("feel like V-ing", "be in the mood to",
+                 "〜したい気分",
+                 useCases: ["今の気分や欲求を表すとき"],
+                 examples: [
+                    ("Feel like eating pizza.", "ピザ食べたい気分。"),
+                    ("Don't feel like working.", "働く気がしない。")
+                 ]),
+            make("there is no way", "it's impossible that",
+                 "〜のはずがない・ありえない",
+                 useCases: ["強く否定するとき"],
+                 examples: [
+                    ("There is no way I'd do that.", "そんなことするわけない。"),
+                    ("There's no way!", "ありえない!")
+                 ]),
+            make("I wonder if", "I'm not sure whether",
+                 "〜かしら・〜だろうか",
+                 useCases: ["控えめに疑問や推測を表すとき"],
+                 examples: [
+                    ("I wonder if it'll rain.", "雨かなぁ。"),
+                    ("I wonder if she's home.", "彼女家にいるかな。")
+                 ]),
+            make("out of curiosity", "because I'm curious",
+                 "好奇心から・ちょっと興味で",
+                 useCases: ["余計な質問を控えめにする前置き"],
+                 examples: [
+                    ("Out of curiosity, how old are you?", "ちょっと興味なんだけど、何歳?"),
+                    ("Just out of curiosity, ~", "好奇心からだけど〜")
+                 ]),
+            make("if that makes sense", "if that's clear",
+                 "意味通じてれば・分かるかな",
+                 useCases: ["説明後に相手の理解を確認するとき"],
+                 examples: [
+                    ("It's complicated, if that makes sense.", "複雑だけど、伝わるかな。"),
+                    ("If that makes sense at all.", "もし通じてれば。")
+                 ]),
+            make("If I were to do", "if I happened to do",
+                 "もし仮に〜するとしたら",
+                 useCases: ["可能性の低い仮定をするとき"],
+                 examples: [
+                    ("If I were to quit, ~", "仮に辞めるとしたら〜"),
+                    ("If I were to choose, ~", "選ぶとしたら〜")
+                 ]),
+            make("it's said that", "people say that",
+                 "〜と言われている",
+                 useCases: ["伝聞・通説を伝えるとき"],
+                 examples: [
+                    ("It's said that he's rich.", "彼は金持ちと言われている。"),
+                    ("It's said that ~", "〜と言われている。")
+                 ]),
+            make("let's say", "suppose; for example",
+                 "例えば・仮に",
+                 useCases: ["仮定や例示の前置きとして"],
+                 examples: [
+                    ("Let's say it costs $100.", "例えば100ドルとすると。"),
+                    ("Let's say you're right.", "仮に君が正しいとして。")
+                 ]),
+            make("more like", "actually more accurately",
+                 "どちらかというと・むしろ",
+                 useCases: ["相手の発言を訂正したり言い直したりするとき"],
+                 examples: [
+                    ("Tired? More like exhausted.", "疲れた?いや、ヘトヘトだよ。"),
+                    ("It's more like blue than green.", "緑というよりは青。")
+                 ])
+        ]
+    }
+
+    // MARK: - 構文・関係 (追加 8)
+
+    private static var sentencePatterns37: [Word] {
+        [
+            make("at the stage where", "at a point at which",
+                 "〜という段階で",
+                 useCases: ["進行段階や成長フェーズを表すとき"],
+                 examples: [
+                    ("At the stage where decisions matter.", "決断が大事な段階で。"),
+                    ("We're at the stage where ~", "我々は〜の段階。")
+                 ]),
+            make("is worth V-ing", "deserves doing",
+                 "〜する価値がある",
+                 useCases: ["何かが価値のあることを表すとき"],
+                 examples: [
+                    ("This book is worth reading.", "この本は読む価値あり。"),
+                    ("Worth trying.", "試す価値あり。")
+                 ]),
+            make("without V-ing", "not doing",
+                 "〜せずに",
+                 useCases: ["動作なしの状態を表すとき"],
+                 examples: [
+                    ("Without asking.", "尋ねずに。"),
+                    ("Without saying a word.", "一言も言わずに。")
+                 ]),
+            make("with sth C", "with object + complement",
+                 "〜を…の状態で(付帯状況)",
+                 useCases: ["with + 目的語 + 補語の付帯状況構文"],
+                 examples: [
+                    ("With his eyes closed.", "目を閉じたまま。"),
+                    ("With dinner ready.", "夕食ができた状態で。")
+                 ]),
+            make("What I like about sth", "the thing I appreciate is",
+                 "〜について好きなのは",
+                 useCases: ["人や物の好きな点を強調するとき"],
+                 examples: [
+                    ("What I like about him is his honesty.", "彼の好きなところは正直さ。"),
+                    ("What I like about this place is the view.", "この場所の良さは景色。")
+                 ]),
+            make("when it comes to", "regarding; concerning",
+                 "〜のこととなると",
+                 useCases: ["特定の話題に焦点を絞るとき"],
+                 examples: [
+                    ("When it comes to cooking, she's the best.", "料理となると彼女が一番。"),
+                    ("When it comes to money, ~", "お金のこととなると〜")
+                 ]),
+            make("be going to have to do", "will need to do",
+                 "〜しなければならなくなる",
+                 useCases: ["将来必要になるであろう行動を予測するとき"],
+                 examples: [
+                    ("You're going to have to leave.", "出なきゃならなくなるよ。"),
+                    ("We're going to have to decide soon.", "そろそろ決めなきゃ。")
+                 ]),
+            make("the reason V-ing", "the cause of doing",
+                 "〜する理由",
+                 useCases: ["動名詞の前に置いて理由を表す構文"],
+                 examples: [
+                    ("The reason for crying.", "泣いている理由。"),
+                    ("The reason for asking.", "尋ねる理由。")
+                 ])
+        ]
+    }
+
+    // MARK: - 表現・返事 (追加 8)
+
+    private static var responsePhrases37: [Word] {
+        [
+            make("I know, right", "exactly; I agree",
+                 "それな・分かる",
+                 useCases: ["相手の意見に強く共感するとき"],
+                 examples: [
+                    ("I know, right?", "それな?"),
+                    ("So annoying! — I know, right.", "イラつくよね — それな。")
+                 ]),
+            make("what is called", "the thing referred to as",
+                 "いわゆる〜",
+                 useCases: ["俗に呼ばれる名称を紹介するとき"],
+                 examples: [
+                    ("This is what is called a vibe.", "これがいわゆる「雰囲気」。"),
+                    ("It's what is called a classic.", "いわゆる定番。")
+                 ]),
+            make("fair point", "a reasonable argument",
+                 "それは一理ある",
+                 useCases: ["相手の意見を認めるとき"],
+                 examples: [
+                    ("Fair point.", "なるほど。"),
+                    ("That's a fair point.", "一理ある。")
+                 ]),
+            make("more about", "additional information about",
+                 "〜についてもっと",
+                 useCases: ["話題の詳細を求める/提供するとき"],
+                 examples: [
+                    ("Tell me more about it.", "もっと教えて。"),
+                    ("More about that later.", "詳しくは後ほど。")
+                 ]),
+            make("in general", "broadly speaking",
+                 "一般的に・概して",
+                 useCases: ["広く一般論を述べるとき"],
+                 examples: [
+                    ("In general, this is true.", "一般的に言って真実。"),
+                    ("People in general.", "一般的な人々。")
+                 ]),
+            make("process", "a series of actions; treat formally",
+                 "プロセス・処理する",
+                 useCases: ["手順や情報・感情を処理することを表すとき"],
+                 examples: [
+                    ("Long process.", "長いプロセス。"),
+                    ("Process the data.", "データを処理する。")
+                 ]),
+            make("instead", "in place of that",
+                 "代わりに",
+                 useCases: ["別の選択肢を提示するとき"],
+                 examples: [
+                    ("Tea instead of coffee.", "コーヒーじゃなくお茶を。"),
+                    ("Go home instead.", "代わりに帰る。")
+                 ]),
+            make("if that works for you", "if it suits you",
+                 "それで都合よければ",
+                 useCases: ["提案を控えめに伝えるとき"],
+                 examples: [
+                    ("Friday at 3, if that works for you.", "金曜3時で都合よければ。"),
+                    ("If that works for you, let me know.", "都合よければ教えて。")
                  ])
         ]
     }
