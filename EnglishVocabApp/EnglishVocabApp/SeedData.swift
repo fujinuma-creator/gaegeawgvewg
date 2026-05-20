@@ -101,6 +101,7 @@ enum SeedData {
             + casualExpressions44
             + greetingsReactions45 + verbStates45
             + conceptsNouns46
+            + techConcepts47
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15664,6 +15665,97 @@ enum SeedData {
                  examples: [
                     ("It's a privilege.", "光栄です。"),
                     ("Check your privilege.", "自分の特権を自覚しろ(現代的批判)。")
+                 ])
+        ]
+    }
+
+    // MARK: - テクノロジー・概念 (追加 12)
+
+    private static var techConcepts47: [Word] {
+        [
+            make("engineering", "the discipline of designing systems",
+                 "工学・エンジニアリング",
+                 useCases: ["設計や技術分野を表すとき"],
+                 examples: [
+                    ("Software engineering.", "ソフトウェア工学。"),
+                    ("Civil engineering.", "土木工学。")
+                 ]),
+            make("scale up", "increase in size or scope",
+                 "規模を拡大する",
+                 useCases: ["事業や生産を大きくするとき"],
+                 examples: [
+                    ("Scale up the production.", "生産規模を拡大。"),
+                    ("Time to scale up.", "拡大の時。")
+                 ]),
+            make("scale", "size; weighing instrument; climb",
+                 "規模・尺度・体重計",
+                 useCases: ["大きさの度合い、または測定器・登る動作"],
+                 examples: [
+                    ("Large scale project.", "大規模プロジェクト。"),
+                    ("Step on the scale.", "体重計に乗って。")
+                 ]),
+            make("dialogue", "a conversation between two or more",
+                 "対話・会話",
+                 useCases: ["建設的な意見交換や脚本のセリフを表すとき"],
+                 examples: [
+                    ("Open dialogue.", "開かれた対話。"),
+                    ("Dialogue between cultures.", "文化間の対話。")
+                 ]),
+            make("overall", "in general; in total",
+                 "全体として・全般的に",
+                 useCases: ["総合的な評価や全体像を述べるとき"],
+                 examples: [
+                    ("Overall, it's good.", "全体的に良い。"),
+                    ("Overall winner.", "総合優勝。")
+                 ]),
+            make("consciousness", "awareness; state of being awake",
+                 "意識・自覚",
+                 useCases: ["意識ある状態や問題意識を表すとき"],
+                 examples: [
+                    ("Lose consciousness.", "意識を失う。"),
+                    ("Social consciousness.", "社会意識。")
+                 ]),
+            make("earth", "the planet; soil",
+                 "地球・土",
+                 useCases: ["惑星としての地球、または土壌を表すとき"],
+                 examples: [
+                    ("Save the earth.", "地球を救え。"),
+                    ("Down to earth.", "地に足が着いた。")
+                 ]),
+            make("advancing", "moving forward; progressing",
+                 "前進している・進歩している",
+                 useCases: ["技術や軍が前進している様子を表すとき"],
+                 examples: [
+                    ("Advancing technology.", "進歩する技術。"),
+                    ("Advancing age.", "老いていく年齢。")
+                 ]),
+            make("man-made", "created by humans, not natural",
+                 "人工の・人造の",
+                 useCases: ["自然ではなく人間が作ったものを表すとき"],
+                 examples: [
+                    ("Man-made lake.", "人工湖。"),
+                    ("Man-made disaster.", "人災。")
+                 ]),
+            make("humanoid", "having a human form",
+                 "ヒューマノイド・人型",
+                 useCases: ["人間に似たロボットやキャラクターを表すとき"],
+                 examples: [
+                    ("Humanoid robot.", "人型ロボット。"),
+                    ("Humanoid alien.", "人型エイリアン。")
+                 ]),
+            make("optimistic", "hopeful about the future",
+                 "楽観的な",
+                 useCases: ["明るい未来を信じる姿勢を表すとき"],
+                 examples: [
+                    ("Optimistic outlook.", "楽観的な見通し。"),
+                    ("Stay optimistic.", "楽観的でいよう。")
+                 ]),
+            make("humanity", "human beings as a whole; kindness",
+                 "人類・人間性",
+                 useCases: ["人類全体や人間らしさを表すとき"],
+                 examples: [
+                    ("All of humanity.", "全人類。"),
+                    ("Show humanity.", "人間性を見せて。")
                  ])
         ]
     }
