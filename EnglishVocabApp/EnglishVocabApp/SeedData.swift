@@ -99,6 +99,7 @@ enum SeedData {
             + idiomsObjects42
             + sizeQualities43
             + casualExpressions44
+            + greetingsReactions45 + verbStates45
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15466,6 +15467,118 @@ enum SeedData {
                  examples: [
                     ("You never know.", "何が起こるか分からない。"),
                     ("You never know what'll happen.", "何が起きるか分からないよ。")
+                 ])
+        ]
+    }
+
+    // MARK: - 挨拶・反応 (追加 7)
+
+    private static var greetingsReactions45: [Word] {
+        [
+            make("how have you been", "how have things been for you",
+                 "元気だった?",
+                 useCases: ["久しぶりに会った人への挨拶"],
+                 examples: [
+                    ("How have you been?", "元気だった?"),
+                    ("Hey! How have you been?", "やあ!最近どう?")
+                 ]),
+            make("give me a break", "stop bothering me; be reasonable",
+                 "いい加減にして・勘弁してよ",
+                 useCases: ["相手のしつこさや無理な要求に対する不満"],
+                 examples: [
+                    ("Oh give me a break!", "もう勘弁して!"),
+                    ("Give me a break, will you?", "ちょっと許してよ。")
+                 ]),
+            make("sure thing", "of course; no problem",
+                 "もちろん・了解",
+                 useCases: ["快諾するときのカジュアル表現"],
+                 examples: [
+                    ("Sure thing!", "もちろん!"),
+                    ("Sure thing, I got it.", "了解、任せて。")
+                 ]),
+            make("take care of yourself", "look after your wellbeing",
+                 "体に気をつけて",
+                 useCases: ["別れ際に相手の健康を気遣うとき"],
+                 examples: [
+                    ("Take care of yourself!", "体に気をつけて!"),
+                    ("Take care of yourself, OK?", "お大事にね。")
+                 ]),
+            make("watch out", "be careful; beware",
+                 "気をつけて・注意",
+                 useCases: ["危険を警告するとき"],
+                 examples: [
+                    ("Watch out!", "危ない!"),
+                    ("Watch out for the car!", "車に気をつけて!")
+                 ]),
+            make("second to none", "unsurpassed; the best",
+                 "誰にも劣らない",
+                 useCases: ["最高峰の品質や能力を称えるとき"],
+                 examples: [
+                    ("Their service is second to none.", "サービスは他に並ぶものなし。"),
+                    ("Second to none in quality.", "品質では誰にも負けない。")
+                 ]),
+            make("have a look", "take a quick glance",
+                 "見てみる・チェックする",
+                 useCases: ["軽く何かを確認するとき(英国寄り)"],
+                 examples: [
+                    ("Have a look at this.", "これ見てみて。"),
+                    ("I'll have a look.", "ちょっと見てみる。")
+                 ])
+        ]
+    }
+
+    // MARK: - 状態・動詞 (追加 7)
+
+    private static var verbStates45: [Word] {
+        [
+            make("coffee break", "a short break for coffee",
+                 "コーヒー休憩",
+                 useCases: ["仕事中の短い休憩を表すとき"],
+                 examples: [
+                    ("Take a coffee break.", "コーヒー休憩しよう。"),
+                    ("Quick coffee break.", "サッとコーヒー休憩。")
+                 ]),
+            make("be sure", "be certain or confident",
+                 "確かである・必ず〜する",
+                 useCases: ["確信を伝える、または念を押すとき"],
+                 examples: [
+                    ("Be sure to call.", "必ず電話して。"),
+                    ("Are you sure?", "本当に?")
+                 ]),
+            make("be sick of", "be tired of; fed up with",
+                 "〜にうんざりしている",
+                 useCases: ["何かに飽き飽きしているとき"],
+                 examples: [
+                    ("I'm sick of this.", "もうこれにうんざり。"),
+                    ("Sick of waiting.", "待つのにうんざり。")
+                 ]),
+            make("can live with", "be able to accept",
+                 "我慢できる・受け入れられる",
+                 useCases: ["不満はあるが許容できることを表すとき"],
+                 examples: [
+                    ("I can live with that.", "それでよし。"),
+                    ("Something I can live with.", "受け入れられること。")
+                 ]),
+            make("take sth as", "interpret as; regard as",
+                 "〜と受け取る・とらえる",
+                 useCases: ["相手の発言や行動を特定の意味で解釈するとき"],
+                 examples: [
+                    ("Take it as a compliment.", "褒め言葉として受け取って。"),
+                    ("Take that as a yes.", "それはイエスと受け取る。")
+                 ]),
+            make("confused", "unable to think clearly",
+                 "混乱した・困惑した",
+                 useCases: ["状況や説明が分からないとき"],
+                 examples: [
+                    ("I'm confused.", "よく分からない。"),
+                    ("Confused look.", "困惑した表情。")
+                 ]),
+            make("tricky", "difficult to deal with",
+                 "扱いが難しい・厄介な",
+                 useCases: ["微妙で慎重を要する事柄を表すとき"],
+                 examples: [
+                    ("Tricky question.", "厄介な質問。"),
+                    ("A tricky situation.", "難しい状況。")
                  ])
         ]
     }
