@@ -93,6 +93,7 @@ enum SeedData {
             + conceptStates36
             + assumptionPhrases37 + sentencePatterns37 + responsePhrases37
             + businessComms38 + actionResponses38
+            + casualReactions39
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -15026,6 +15027,76 @@ enum SeedData {
                  examples: [
                     ("Running behind today.", "今日は予定が押してる。"),
                     ("We're running behind schedule.", "予定より遅れてる。")
+                 ])
+        ]
+    }
+
+    // MARK: - カジュアル反応 (追加 9)
+
+    private static var casualReactions39: [Word] {
+        [
+            make("catch sb", "find or meet someone",
+                 "(人を)捕まえる・つかまえる",
+                 useCases: ["遭遇する、または時間を取らせるとき"],
+                 examples: [
+                    ("Catch you later!", "また後でね!"),
+                    ("Caught me at a bad time.", "悪い時に捕まった。")
+                 ]),
+            make("do well", "perform successfully",
+                 "うまくやる・成績がいい",
+                 useCases: ["仕事や試験で成果を出すとき"],
+                 examples: [
+                    ("He's doing well.", "彼は順調。"),
+                    ("Hope you do well!", "うまくいくといいね!")
+                 ]),
+            make("it's time to do", "the moment has come to",
+                 "そろそろ〜する時間だ",
+                 useCases: ["行動を開始する時を促すとき"],
+                 examples: [
+                    ("It's time to go.", "もう行く時間。"),
+                    ("It's time to make a change.", "変える時。")
+                 ]),
+            make("guess", "estimate or suppose",
+                 "推測する・たぶん",
+                 useCases: ["確信なく予想するとき"],
+                 examples: [
+                    ("I guess so.", "たぶんね。"),
+                    ("Guess what!", "聞いて!")
+                 ]),
+            make("sounds like a plan", "that's a good plan",
+                 "それでいこう・いい案",
+                 useCases: ["相手の提案に賛同するとき"],
+                 examples: [
+                    ("Sounds like a plan!", "それでいこう!"),
+                    ("Yeah, sounds like a plan.", "うん、それいいね。")
+                 ]),
+            make("tied up", "busy with something",
+                 "手が離せない・予定が詰まっている",
+                 useCases: ["忙しくて対応できないことを伝えるとき"],
+                 examples: [
+                    ("I'm tied up at the moment.", "今手が離せない。"),
+                    ("Tied up all day.", "一日中忙しい。")
+                 ]),
+            make("call it a day", "stop working for the day",
+                 "今日はここまでにする",
+                 useCases: ["作業や仕事を切り上げるとき"],
+                 examples: [
+                    ("Let's call it a day.", "今日はここまでにしよう。"),
+                    ("I'm calling it a day.", "もう切り上げる。")
+                 ]),
+            make("my thing", "what I personally enjoy or do",
+                 "私の得意・好きな分野",
+                 useCases: ["自分の得意分野や好みを表すとき"],
+                 examples: [
+                    ("Not really my thing.", "あんまり私の好みじゃない。"),
+                    ("That's my thing.", "それ私の得意分野。")
+                 ]),
+            make("fingers crossed", "hoping for good luck",
+                 "うまくいきますように・幸運を祈って",
+                 useCases: ["願掛けや幸運を祈るときの口語表現"],
+                 examples: [
+                    ("Fingers crossed!", "うまくいきますように!"),
+                    ("Keep your fingers crossed for me.", "祈ってて。")
                  ])
         ]
     }
