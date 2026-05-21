@@ -110,6 +110,7 @@ enum SeedData {
             + miscNouns53
             + statesAndJudgments54
             + actionVerbs55 + nounConcepts55 + statesExpressions55
+            + businessNouns56 + verbsActions56 + adjectivesTraits56
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16688,6 +16689,133 @@ enum SeedData {
                  examples: [
                     ("Awkward silence.", "気まずい沈黙。"),
                     ("Silence is golden.", "沈黙は金。")
+                 ])
+        ]
+    }
+
+    private static var businessNouns56: [Word] {
+        [
+            make("revenue",
+                 "Income generated from business activities, especially sales.",
+                 "収益、売上",
+                 useCases: ["business reports", "earnings calls", "startup pitches"],
+                 examples: [
+                    ("The company's revenue grew 30% year over year.", "その会社の収益は前年比30%増加した。"),
+                    ("Most of our revenue comes from subscriptions.", "売上の大半はサブスクリプションから来ている。")
+                 ]),
+            make("breakthrough",
+                 "A sudden, important discovery or development.",
+                 "ブレークスルー、突破口",
+                 useCases: ["research", "innovation talks", "product launches"],
+                 examples: [
+                    ("The team made a major breakthrough in AI research.", "チームはAI研究で大きなブレークスルーを果たした。"),
+                    ("This product is a breakthrough in the industry.", "この製品は業界における画期的なものだ。")
+                 ]),
+            make("returns",
+                 "Profit gained from an investment; also: items sent back.",
+                 "リターン、収益、返品",
+                 useCases: ["investing", "e-commerce", "finance"],
+                 examples: [
+                    ("Investors expect higher returns from this fund.", "投資家はこのファンドにより高いリターンを期待している。"),
+                    ("Returns are accepted within 30 days.", "返品は30日以内に受け付けます。")
+                 ]),
+            make("consultant",
+                 "An expert who gives professional advice to organizations.",
+                 "コンサルタント",
+                 useCases: ["business meetings", "résumés", "professional services"],
+                 examples: [
+                    ("We hired a consultant to improve our processes.", "業務改善のためにコンサルタントを雇った。"),
+                    ("She works as a marketing consultant.", "彼女はマーケティングコンサルタントとして働いている。")
+                 ]),
+            make("rate",
+                 "A measured amount, speed, or price per unit; or to evaluate.",
+                 "率、レート、評価する",
+                 useCases: ["finance", "reviews", "metrics"],
+                 examples: [
+                    ("The interest rate has gone up again.", "金利がまた上がった。"),
+                    ("How would you rate this product?", "この商品をどう評価しますか？")
+                 ])
+        ]
+    }
+
+    private static var verbsActions56: [Word] {
+        [
+            make("experiment",
+                 "To try something new to see what happens or learn from it.",
+                 "実験する、試してみる",
+                 useCases: ["science", "product design", "personal growth"],
+                 examples: [
+                    ("We're experimenting with a new pricing model.", "新しい価格モデルを試している。"),
+                    ("Don't be afraid to experiment with different styles.", "色々なスタイルを試すことを恐れないで。")
+                 ]),
+            make("trial sth",
+                 "To test something on a limited basis before fully adopting it.",
+                 "～を試験的に導入する、試行する",
+                 useCases: ["product testing", "workplace pilots", "software rollouts"],
+                 examples: [
+                    ("We're trialing the new tool with a small team first.", "まずは小さなチームで新しいツールを試行している。"),
+                    ("They trialed the feature for two weeks.", "彼らはその機能を2週間試験運用した。")
+                 ]),
+            make("bring in",
+                 "To introduce someone or something, or to earn (money).",
+                 "～を導入する、連れてくる、稼ぐ",
+                 useCases: ["business", "hiring", "revenue"],
+                 examples: [
+                    ("Let's bring in an expert to help us out.", "専門家を呼んで助けてもらおう。"),
+                    ("The store brings in millions each year.", "その店は毎年何百万も稼いでいる。")
+                 ]),
+            make("relate",
+                 "To connect with or understand someone's feelings or experience.",
+                 "共感する、関連付ける",
+                 useCases: ["conversations", "empathy", "presentations"],
+                 examples: [
+                    ("I can totally relate to what you're going through.", "あなたの状況にすごく共感できる。"),
+                    ("How does this relate to our main goal?", "これは私たちの主な目標とどう関係しているの？")
+                 ])
+        ]
+    }
+
+    private static var adjectivesTraits56: [Word] {
+        [
+            make("reusable",
+                 "Able to be used more than once.",
+                 "再利用可能な",
+                 useCases: ["sustainability", "engineering", "everyday products"],
+                 examples: [
+                    ("I always carry a reusable water bottle.", "いつも再利用できる水筒を持ち歩いている。"),
+                    ("These components are designed to be reusable.", "これらの部品は再利用できるように設計されている。")
+                 ]),
+            make("misplaced",
+                 "Lost temporarily; or directed at the wrong target (e.g., trust).",
+                 "置き忘れた、見当違いの",
+                 useCases: ["daily life", "criticism", "trust issues"],
+                 examples: [
+                    ("I've misplaced my keys again.", "また鍵をどこかに置き忘れてしまった。"),
+                    ("His trust in them turned out to be misplaced.", "彼が彼らを信頼したのは見当違いだった。")
+                 ]),
+            make("autonomous",
+                 "Acting independently or having the freedom to govern itself.",
+                 "自律的な、自治の",
+                 useCases: ["tech", "management", "robotics"],
+                 examples: [
+                    ("They're building an autonomous driving system.", "彼らは自動運転システムを開発している。"),
+                    ("The team operates as an autonomous unit.", "そのチームは自律的に動く単位として機能している。")
+                 ]),
+            make("anonymous",
+                 "Not identified by name; unknown.",
+                 "匿名の",
+                 useCases: ["surveys", "donations", "online forums"],
+                 examples: [
+                    ("Feedback can be submitted anonymously.", "フィードバックは匿名で提出できる。"),
+                    ("An anonymous donor gave a large gift.", "匿名の寄付者が多額の寄付をした。")
+                 ]),
+            make("capable",
+                 "Having the ability or qualities to do something well.",
+                 "有能な、～できる",
+                 useCases: ["hiring", "compliments", "self-assessment"],
+                 examples: [
+                    ("She's more than capable of handling this project.", "彼女はこのプロジェクトを十分にこなせる。"),
+                    ("This laptop is capable of running heavy software.", "このノートPCは重いソフトも動かせる性能がある。")
                  ])
         ]
     }
