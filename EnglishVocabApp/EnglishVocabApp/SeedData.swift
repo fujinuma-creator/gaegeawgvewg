@@ -111,6 +111,7 @@ enum SeedData {
             + statesAndJudgments54
             + actionVerbs55 + nounConcepts55 + statesExpressions55
             + businessNouns56 + verbsActions56 + adjectivesTraits56
+            + phrasesAndExpressions57
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -16816,6 +16817,51 @@ enum SeedData {
                  examples: [
                     ("She's more than capable of handling this project.", "彼女はこのプロジェクトを十分にこなせる。"),
                     ("This laptop is capable of running heavy software.", "このノートPCは重いソフトも動かせる性能がある。")
+                 ])
+        ]
+    }
+
+    private static var phrasesAndExpressions57: [Word] {
+        [
+            make("that sounds like",
+                 "Used to react to something just heard, often making a guess or comparison.",
+                 "それは～みたい、～のように聞こえる",
+                 useCases: ["casual conversation", "reactions", "empathy"],
+                 examples: [
+                    ("That sounds like a great idea.", "それはいい考えだね。"),
+                    ("That sounds like a lot of work.", "それは大変な作業のように聞こえる。")
+                 ]),
+            make("enjoy sth",
+                 "To take pleasure in something or have a good time doing it.",
+                 "～を楽しむ",
+                 useCases: ["small talk", "recommendations", "feedback"],
+                 examples: [
+                    ("I really enjoy reading before bed.", "寝る前の読書がすごく楽しい。"),
+                    ("Did you enjoy the movie?", "映画は楽しかった？")
+                 ]),
+            make("don't be",
+                 "Used to tell someone not to feel or act a certain way.",
+                 "～にならないで、～しないで",
+                 useCases: ["reassurance", "advice", "casual conversation"],
+                 examples: [
+                    ("Don't be shy — come and join us.", "恥ずかしがらないで、こっちに来て一緒にやろう。"),
+                    ("Don't be too hard on yourself.", "自分に厳しくしすぎないで。")
+                 ]),
+            make("think of",
+                 "To bring something to mind; to have an opinion about something.",
+                 "～を思いつく、～について考える",
+                 useCases: ["brainstorming", "opinions", "memory"],
+                 examples: [
+                    ("I can't think of his name right now.", "彼の名前が今ちょっと出てこない。"),
+                    ("What do you think of the new design?", "新しいデザインはどう思う？")
+                 ]),
+            make("big ask",
+                 "A request that is difficult or demanding to fulfill.",
+                 "大きなお願い、無理な頼み",
+                 useCases: ["workplace requests", "favors", "negotiation"],
+                 examples: [
+                    ("I know it's a big ask, but could you finish it by tomorrow?", "無理なお願いなのは分かってるけど、明日までに仕上げてもらえる？"),
+                    ("Quitting your job to start over is a big ask.", "仕事を辞めて一からやり直すというのは大きな決断だ。")
                  ])
         ]
     }
