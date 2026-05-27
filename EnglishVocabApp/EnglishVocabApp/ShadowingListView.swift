@@ -73,6 +73,11 @@ struct ShadowingListView: View {
                 Text(word.word)
                     .font(.caption.bold())
                     .foregroundStyle(.indigo)
+                if let ipa = word.ipa, !ipa.isEmpty {
+                    Text(ipa)
+                        .font(.caption2)
+                        .foregroundStyle(.indigo.opacity(0.7))
+                }
                 Spacer()
                 Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
                     .font(.caption2)

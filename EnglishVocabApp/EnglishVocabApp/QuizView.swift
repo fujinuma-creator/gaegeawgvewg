@@ -287,13 +287,20 @@ struct QuizView: View {
                 Button {
                     openDetail(for: word)
                 } label: {
-                    HStack(spacing: 6) {
-                        Text(word.word)
-                            .font(.system(size: 28, weight: .bold))
-                            .foregroundStyle(.primary)
-                        Image(systemName: "info.circle.fill")
-                            .font(.system(size: 18))
-                            .foregroundStyle(.indigo)
+                    VStack(spacing: 4) {
+                        HStack(spacing: 6) {
+                            Text(word.word)
+                                .font(.system(size: 28, weight: .bold))
+                                .foregroundStyle(.primary)
+                            Image(systemName: "info.circle.fill")
+                                .font(.system(size: 18))
+                                .foregroundStyle(.indigo)
+                        }
+                        if let ipa = word.ipa, !ipa.isEmpty {
+                            Text(ipa)
+                                .font(.system(size: 14, design: .serif))
+                                .foregroundStyle(.indigo.opacity(0.85))
+                        }
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 6)
@@ -1204,6 +1211,11 @@ struct WordDetailSheet: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(word.word)
                             .font(.system(size: 30, weight: .bold))
+                        if let ipa = word.ipa, !ipa.isEmpty {
+                            Text(ipa)
+                                .font(.system(size: 15, design: .serif))
+                                .foregroundStyle(.indigo)
+                        }
                         Text(word.definitionJapanese)
                             .foregroundStyle(.secondary)
                     }
