@@ -75,6 +75,10 @@ enum ReviewMark: String, Codable {
 struct Word: Codable, Identifiable, Hashable {
     var id: UUID = UUID()
     var word: String
+    /// British English IPA transcription, e.g. /ˈrɛvənjuː/. Optional —
+    /// older saved words and entries that haven't been transcribed yet
+    /// won't have one.
+    var ipa: String? = nil
     var definitionEnglish: String
     var definitionJapanese: String
     var useCases: [String]
@@ -103,7 +107,7 @@ struct Word: Codable, Identifiable, Hashable {
     var modeNextReviewDates: [String: Date] = [:]
 
     enum CodingKeys: String, CodingKey {
-        case id, word, definitionEnglish, definitionJapanese, useCases,
+        case id, word, ipa, definitionEnglish, definitionJapanese, useCases,
              examples, synonyms,
              reviewCount, status, nextReviewDate, lastReviewedDate, createdAt,
              addedToReviewListAt,
@@ -113,6 +117,7 @@ struct Word: Codable, Identifiable, Hashable {
     init(
         id: UUID = UUID(),
         word: String,
+        ipa: String? = nil,
         definitionEnglish: String,
         definitionJapanese: String,
         useCases: [String],
@@ -129,6 +134,7 @@ struct Word: Codable, Identifiable, Hashable {
     ) {
         self.id = id
         self.word = word
+        self.ipa = ipa
         self.definitionEnglish = definitionEnglish
         self.definitionJapanese = definitionJapanese
         self.useCases = useCases
@@ -150,6 +156,7 @@ struct Word: Codable, Identifiable, Hashable {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
         self.word = try c.decode(String.self, forKey: .word)
+        self.ipa = try c.decodeIfPresent(String.self, forKey: .ipa)
         self.definitionEnglish = try c.decodeIfPresent(String.self, forKey: .definitionEnglish) ?? ""
         self.definitionJapanese = try c.decodeIfPresent(String.self, forKey: .definitionJapanese) ?? ""
         self.useCases = try c.decodeIfPresent([String].self, forKey: .useCases) ?? []

@@ -178,6 +178,11 @@ struct ReviewView: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(word.word)
                         .font(.system(size: 32, weight: .bold))
+                    if let ipa = word.ipa, !ipa.isEmpty {
+                        Text(ipa)
+                            .font(.system(size: 15, design: .serif))
+                            .foregroundStyle(.indigo)
+                    }
                     Text(word.definitionJapanese)
                         .font(.body)
                         .foregroundStyle(.secondary)

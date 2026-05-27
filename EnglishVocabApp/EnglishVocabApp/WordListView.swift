@@ -232,9 +232,16 @@ struct WordListContent<Trigger: Equatable>: View {
                             .frame(width: 8, height: 8)
                             .padding(.top, 8)
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(w.word)
-                                .font(.headline)
-                                .foregroundStyle(.primary)
+                            HStack(alignment: .firstTextBaseline, spacing: 6) {
+                                Text(w.word)
+                                    .font(.headline)
+                                    .foregroundStyle(.primary)
+                                if let ipa = w.ipa, !ipa.isEmpty {
+                                    Text(ipa)
+                                        .font(.caption)
+                                        .foregroundStyle(.indigo.opacity(0.85))
+                                }
+                            }
                             Text(w.definitionJapanese.isEmpty ? w.definitionEnglish : w.definitionJapanese)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)

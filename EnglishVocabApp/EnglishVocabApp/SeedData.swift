@@ -131,10 +131,12 @@ enum SeedData {
         _ defEN: String,
         _ defJA: String,
         useCases: [String],
-        examples: [(String, String)]
+        examples: [(String, String)],
+        ipa: String? = nil
     ) -> Word {
         Word(
             word: word,
+            ipa: ipa,
             definitionEnglish: defEN,
             definitionJapanese: defJA,
             useCases: useCases,
@@ -16480,70 +16482,70 @@ enum SeedData {
                  examples: [
                     ("I don't socialize much.", "あまり社交的じゃない。"),
                     ("Socialize with coworkers.", "同僚と交流する。")
-                 ]),
+                 ], ipa: "/ˈsəʊʃəlaɪz/"),
             make("get stuck", "become unable to move forward",
                  "行き詰まる・はまる",
                  useCases: ["物理的・精神的に進めない状況"],
                  examples: [
                     ("I got stuck in traffic.", "渋滞にはまった。"),
                     ("Stuck on a problem.", "問題で詰まってる。")
-                 ]),
+                 ], ipa: "/ɡɛt stʌk/"),
             make("branch out", "expand into new areas",
                  "新分野に乗り出す・枝分かれする",
                  useCases: ["新たな試みや分野に挑戦するとき"],
                  examples: [
                     ("Branch out into design.", "デザイン分野に進出。"),
                     ("Time to branch out.", "新分野へ進む時。")
-                 ]),
+                 ], ipa: "/brɑːntʃ aʊt/"),
             make("hold back", "restrain; withhold",
                  "抑える・控える",
                  useCases: ["感情や情報を抑えるとき"],
                  examples: [
                     ("Don't hold back.", "遠慮しないで。"),
                     ("Hold back tears.", "涙をこらえる。")
-                 ]),
+                 ], ipa: "/həʊld bæk/"),
             make("keep sth going", "maintain momentum",
                  "〜を続ける・勢いを保つ",
                  useCases: ["何かを止めずに継続させたいとき"],
                  examples: [
                     ("Keep the conversation going.", "会話を続けよう。"),
                     ("Keep it going!", "その調子!")
-                 ]),
+                 ], ipa: "/kiːp ˈsʌmθɪŋ ˈɡəʊɪŋ/"),
             make("try out", "test or audition",
                  "試してみる・オーディションを受ける",
                  useCases: ["新しい物や活動を試すとき"],
                  examples: [
                     ("Try out a new recipe.", "新レシピを試す。"),
                     ("Try out for the team.", "チームのトライアウトを受ける。")
-                 ]),
+                 ], ipa: "/traɪ aʊt/"),
             make("pull sth out of", "extract from",
                  "〜から〜を引き出す",
                  useCases: ["物理的に取り出す、または比喩的に引き出すとき"],
                  examples: [
                     ("Pull a rabbit out of a hat.", "帽子からウサギを出す。"),
                     ("Pull yourself out of bed.", "ベッドから自分を引きずり出す。")
-                 ]),
+                 ], ipa: "/pʊl ˈsʌmθɪŋ aʊt ɒv/"),
             make("putting sth aside", "setting something to one side",
                  "〜を脇に置く・保留する",
                  useCases: ["他のことを後回しにして集中するとき"],
                  examples: [
                     ("Putting that aside, ~", "それは脇に置いておいて〜"),
                     ("Putting differences aside.", "意見の相違を脇に置いて。")
-                 ]),
+                 ], ipa: "/ˈpʊtɪŋ ˈsʌmθɪŋ əˈsaɪd/"),
             make("boil down", "be reduced to the essence",
                  "煮詰める・要するに〜になる",
                  useCases: ["複雑な話を本質に絞るとき"],
                  examples: [
                     ("It boils down to money.", "結局は金の問題。"),
                     ("Boil down the data.", "データを集約する。")
-                 ]),
+                 ], ipa: "/bɔɪl daʊn/"),
             make("transition into", "move into a new state",
                  "〜へ移行する",
                  useCases: ["状態やキャリアが切り替わるとき"],
                  examples: [
                     ("Transition into a new role.", "新しい役割に移る。"),
                     ("Transition into adulthood.", "大人へ移行する。")
-                 ])
+                 ], ipa: "/trænˈzɪʃən ˈɪntuː/")
         ]
     }
 
@@ -16557,70 +16559,70 @@ enum SeedData {
                  examples: [
                     ("Social media.", "SNS。"),
                     ("Social event.", "社交イベント。")
-                 ]),
+                 ], ipa: "/ˈsəʊʃəl/"),
             make("choice", "an act of selecting; an option",
                  "選択・選択肢",
                  useCases: ["決断や複数ある選択肢を表すとき"],
                  examples: [
                     ("Tough choice.", "難しい選択。"),
                     ("Your choice.", "君の選択次第。")
-                 ]),
+                 ], ipa: "/tʃɔɪs/"),
             make("ultimate", "the best or most extreme",
                  "究極の・最終的な",
                  useCases: ["最高峰や最終形を表すとき"],
                  examples: [
                     ("Ultimate goal.", "究極の目標。"),
                     ("Ultimate experience.", "究極の体験。")
-                 ]),
+                 ], ipa: "/ˈʌltɪmət/"),
             make("tier", "a level in a hierarchy",
                  "層・段階",
                  useCases: ["料金プランやランクの区分を表すとき"],
                  examples: [
                     ("Top tier.", "トップクラス。"),
                     ("Three-tier system.", "三段階のシステム。")
-                 ]),
+                 ], ipa: "/tɪə/"),
             make("material", "matter; relevant content",
                  "材料・素材・資料",
                  useCases: ["物質や教材、議論の素材を表すとき"],
                  examples: [
                     ("Raw material.", "原材料。"),
                     ("Reading material.", "読み物。")
-                 ]),
+                 ], ipa: "/məˈtɪəriəl/"),
             make("a pass", "permission or skip; an attempt",
                  "パス・見送り",
                  useCases: ["許可証、または「今回は遠慮する」というスラング"],
                  examples: [
                     ("I'll take a pass.", "今回は遠慮しとく。"),
                     ("A free pass.", "免除パス。")
-                 ]),
+                 ], ipa: "/ə pɑːs/"),
             make("dead-end", "no possibility of progress",
                  "行き止まり・将来性のない",
                  useCases: ["袋小路の道や、見込みのない仕事を表すとき"],
                  examples: [
                     ("Dead-end street.", "行き止まりの道。"),
                     ("Dead-end job.", "将来性のない仕事。")
-                 ]),
+                 ], ipa: "/ˌdɛdˈɛnd/"),
             make("reaction", "a response to something",
                  "反応",
                  useCases: ["出来事や言葉に対する人の反応を表すとき"],
                  examples: [
                     ("Strong reaction.", "強い反応。"),
                     ("Reaction time.", "反応時間。")
-                 ]),
+                 ], ipa: "/riˈækʃən/"),
             make("mirror", "a reflective surface; reflect",
                  "鏡・反映する",
                  useCases: ["鏡像、または比喩的に反映する状態を表すとき"],
                  examples: [
                     ("Look in the mirror.", "鏡を見て。"),
                     ("Mirror the trend.", "傾向を映し出す。")
-                 ]),
+                 ], ipa: "/ˈmɪrə/"),
             make("magic", "the use of supernatural power",
                  "魔法・マジック",
                  useCases: ["奇跡的な力や見事な技を表すとき"],
                  examples: [
                     ("Like magic.", "まるで魔法のよう。"),
                     ("Magic trick.", "手品。")
-                 ])
+                 ], ipa: "/ˈmædʒɪk/")
         ]
     }
 
@@ -16634,63 +16636,63 @@ enum SeedData {
                  examples: [
                     ("It's showtime!", "いよいよ本番!"),
                     ("Showtime is at 7.", "ショーは7時から。")
-                 ]),
+                 ], ipa: "/ˈʃəʊtaɪm/"),
             make("the very next day", "the day immediately after",
                  "翌日すぐ・その翌日",
                  useCases: ["何かが起きた直後の日を強調するとき"],
                  examples: [
                     ("The very next day, he called.", "翌日にすぐ彼は電話してきた。"),
                     ("The very next day, everything changed.", "翌日にはすべてが変わった。")
-                 ]),
+                 ], ipa: "/ðə ˈvɛri nɛkst deɪ/"),
             make("this stuff", "this kind of thing",
                  "こういうもの・このもの",
                  useCases: ["目の前の物事や状況を漠然と指すとき"],
                  examples: [
                     ("Don't drink this stuff.", "このやつ飲むなよ。"),
                     ("This stuff is amazing!", "これすごい!")
-                 ]),
+                 ], ipa: "/ðɪs stʌf/"),
             make("can literally feel", "physically perceive (intensified)",
                  "本当に感じることができる",
                  useCases: ["強い感覚や感情を強調するとき"],
                  examples: [
                     ("I can literally feel my heart racing.", "心臓のドキドキを本当に感じる。"),
                     ("Can literally feel the cold.", "寒さがリアルに伝わる。")
-                 ]),
+                 ], ipa: "/kən ˈlɪtərəli fiːl/"),
             make("depressed", "feeling severe sadness",
                  "落ち込んだ・抑うつの",
                  useCases: ["悲しみや無気力な状態を表すとき"],
                  examples: [
                     ("Feeling depressed.", "落ち込んでる。"),
                     ("Clinically depressed.", "うつ病の。")
-                 ]),
+                 ], ipa: "/dɪˈprɛst/"),
             make("for free", "without payment",
                  "無料で",
                  useCases: ["お金を払わずに何かを得るとき"],
                  examples: [
                     ("Got it for free.", "無料で手に入れた。"),
                     ("For free!", "無料で!")
-                 ]),
+                 ], ipa: "/fɔː friː/"),
             make("bio", "a short biography",
                  "経歴・プロフィール",
                  useCases: ["SNSやプロフィール欄の自己紹介文を表すとき"],
                  examples: [
                     ("Check my bio.", "プロフィール見て。"),
                     ("Short bio.", "簡単な経歴。")
-                 ]),
+                 ], ipa: "/ˈbaɪəʊ/"),
             make("premise", "a basis for argument or work",
                  "前提・原則",
                  useCases: ["議論や物語の出発点を表すとき"],
                  examples: [
                     ("Movie premise.", "映画の前提設定。"),
                     ("Faulty premise.", "誤った前提。")
-                 ]),
+                 ], ipa: "/ˈprɛmɪs/"),
             make("silence", "the absence of sound",
                  "沈黙・静けさ",
                  useCases: ["無音や口を閉ざした状態を表すとき"],
                  examples: [
                     ("Awkward silence.", "気まずい沈黙。"),
                     ("Silence is golden.", "沈黙は金。")
-                 ])
+                 ], ipa: "/ˈsaɪləns/")
         ]
     }
 
@@ -16703,7 +16705,7 @@ enum SeedData {
                  examples: [
                     ("The company's revenue grew 30% year over year.", "その会社の収益は前年比30%増加した。"),
                     ("Most of our revenue comes from subscriptions.", "売上の大半はサブスクリプションから来ている。")
-                 ]),
+                 ], ipa: "/ˈrɛvənjuː/"),
             make("breakthrough",
                  "A sudden, important discovery or development.",
                  "ブレークスルー、突破口",
@@ -16711,7 +16713,7 @@ enum SeedData {
                  examples: [
                     ("The team made a major breakthrough in AI research.", "チームはAI研究で大きなブレークスルーを果たした。"),
                     ("This product is a breakthrough in the industry.", "この製品は業界における画期的なものだ。")
-                 ]),
+                 ], ipa: "/ˈbreɪkθruː/"),
             make("returns",
                  "Profit gained from an investment; also: items sent back.",
                  "リターン、収益、返品",
@@ -16719,7 +16721,7 @@ enum SeedData {
                  examples: [
                     ("Investors expect higher returns from this fund.", "投資家はこのファンドにより高いリターンを期待している。"),
                     ("Returns are accepted within 30 days.", "返品は30日以内に受け付けます。")
-                 ]),
+                 ], ipa: "/rɪˈtɜːnz/"),
             make("consultant",
                  "An expert who gives professional advice to organizations.",
                  "コンサルタント",
@@ -16727,7 +16729,7 @@ enum SeedData {
                  examples: [
                     ("We hired a consultant to improve our processes.", "業務改善のためにコンサルタントを雇った。"),
                     ("She works as a marketing consultant.", "彼女はマーケティングコンサルタントとして働いている。")
-                 ]),
+                 ], ipa: "/kənˈsʌltənt/"),
             make("rate",
                  "A measured amount, speed, or price per unit; or to evaluate.",
                  "率、レート、評価する",
@@ -16735,7 +16737,7 @@ enum SeedData {
                  examples: [
                     ("The interest rate has gone up again.", "金利がまた上がった。"),
                     ("How would you rate this product?", "この商品をどう評価しますか？")
-                 ])
+                 ], ipa: "/reɪt/")
         ]
     }
 
@@ -16748,7 +16750,7 @@ enum SeedData {
                  examples: [
                     ("We're experimenting with a new pricing model.", "新しい価格モデルを試している。"),
                     ("Don't be afraid to experiment with different styles.", "色々なスタイルを試すことを恐れないで。")
-                 ]),
+                 ], ipa: "/ɪkˈspɛrɪmənt/"),
             make("trial sth",
                  "To test something on a limited basis before fully adopting it.",
                  "～を試験的に導入する、試行する",
@@ -16756,7 +16758,7 @@ enum SeedData {
                  examples: [
                     ("We're trialing the new tool with a small team first.", "まずは小さなチームで新しいツールを試行している。"),
                     ("They trialed the feature for two weeks.", "彼らはその機能を2週間試験運用した。")
-                 ]),
+                 ], ipa: "/ˈtraɪəl ˈsʌmθɪŋ/"),
             make("bring in",
                  "To introduce someone or something, or to earn (money).",
                  "～を導入する、連れてくる、稼ぐ",
@@ -16764,7 +16766,7 @@ enum SeedData {
                  examples: [
                     ("Let's bring in an expert to help us out.", "専門家を呼んで助けてもらおう。"),
                     ("The store brings in millions each year.", "その店は毎年何百万も稼いでいる。")
-                 ]),
+                 ], ipa: "/brɪŋ ɪn/"),
             make("relate",
                  "To connect with or understand someone's feelings or experience.",
                  "共感する、関連付ける",
@@ -16772,7 +16774,7 @@ enum SeedData {
                  examples: [
                     ("I can totally relate to what you're going through.", "あなたの状況にすごく共感できる。"),
                     ("How does this relate to our main goal?", "これは私たちの主な目標とどう関係しているの？")
-                 ])
+                 ], ipa: "/rɪˈleɪt/")
         ]
     }
 
@@ -16785,7 +16787,7 @@ enum SeedData {
                  examples: [
                     ("I always carry a reusable water bottle.", "いつも再利用できる水筒を持ち歩いている。"),
                     ("These components are designed to be reusable.", "これらの部品は再利用できるように設計されている。")
-                 ]),
+                 ], ipa: "/riˈjuːzəbəl/"),
             make("misplaced",
                  "Lost temporarily; or directed at the wrong target (e.g., trust).",
                  "置き忘れた、見当違いの",
@@ -16793,7 +16795,7 @@ enum SeedData {
                  examples: [
                     ("I've misplaced my keys again.", "また鍵をどこかに置き忘れてしまった。"),
                     ("His trust in them turned out to be misplaced.", "彼が彼らを信頼したのは見当違いだった。")
-                 ]),
+                 ], ipa: "/ˌmɪsˈpleɪst/"),
             make("autonomous",
                  "Acting independently or having the freedom to govern itself.",
                  "自律的な、自治の",
@@ -16801,7 +16803,7 @@ enum SeedData {
                  examples: [
                     ("They're building an autonomous driving system.", "彼らは自動運転システムを開発している。"),
                     ("The team operates as an autonomous unit.", "そのチームは自律的に動く単位として機能している。")
-                 ]),
+                 ], ipa: "/ɔːˈtɒnəməs/"),
             make("anonymous",
                  "Not identified by name; unknown.",
                  "匿名の",
@@ -16809,7 +16811,7 @@ enum SeedData {
                  examples: [
                     ("Feedback can be submitted anonymously.", "フィードバックは匿名で提出できる。"),
                     ("An anonymous donor gave a large gift.", "匿名の寄付者が多額の寄付をした。")
-                 ]),
+                 ], ipa: "/əˈnɒnɪməs/"),
             make("capable",
                  "Having the ability or qualities to do something well.",
                  "有能な、～できる",
@@ -16817,7 +16819,7 @@ enum SeedData {
                  examples: [
                     ("She's more than capable of handling this project.", "彼女はこのプロジェクトを十分にこなせる。"),
                     ("This laptop is capable of running heavy software.", "このノートPCは重いソフトも動かせる性能がある。")
-                 ])
+                 ], ipa: "/ˈkeɪpəbəl/")
         ]
     }
 
@@ -16830,7 +16832,7 @@ enum SeedData {
                  examples: [
                     ("That sounds like a great idea.", "それはいい考えだね。"),
                     ("That sounds like a lot of work.", "それは大変な作業のように聞こえる。")
-                 ]),
+                 ], ipa: "/ðæt saʊndz laɪk/"),
             make("enjoy sth",
                  "To take pleasure in something or have a good time doing it.",
                  "～を楽しむ",
@@ -16838,7 +16840,7 @@ enum SeedData {
                  examples: [
                     ("I really enjoy reading before bed.", "寝る前の読書がすごく楽しい。"),
                     ("Did you enjoy the movie?", "映画は楽しかった？")
-                 ]),
+                 ], ipa: "/ɪnˈdʒɔɪ ˈsʌmθɪŋ/"),
             make("don't be",
                  "Used to tell someone not to feel or act a certain way.",
                  "～にならないで、～しないで",
@@ -16846,7 +16848,7 @@ enum SeedData {
                  examples: [
                     ("Don't be shy — come and join us.", "恥ずかしがらないで、こっちに来て一緒にやろう。"),
                     ("Don't be too hard on yourself.", "自分に厳しくしすぎないで。")
-                 ]),
+                 ], ipa: "/dəʊnt biː/"),
             make("think of",
                  "To bring something to mind; to have an opinion about something.",
                  "～を思いつく、～について考える",
@@ -16854,7 +16856,7 @@ enum SeedData {
                  examples: [
                     ("I can't think of his name right now.", "彼の名前が今ちょっと出てこない。"),
                     ("What do you think of the new design?", "新しいデザインはどう思う？")
-                 ]),
+                 ], ipa: "/θɪŋk ɒv/"),
             make("big ask",
                  "A request that is difficult or demanding to fulfill.",
                  "大きなお願い、無理な頼み",
@@ -16862,7 +16864,7 @@ enum SeedData {
                  examples: [
                     ("I know it's a big ask, but could you finish it by tomorrow?", "無理なお願いなのは分かってるけど、明日までに仕上げてもらえる？"),
                     ("Quitting your job to start over is a big ask.", "仕事を辞めて一からやり直すというのは大きな決断だ。")
-                 ])
+                 ], ipa: "/bɪɡ ɑːsk/")
         ]
     }
 }
