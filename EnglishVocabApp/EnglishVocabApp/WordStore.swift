@@ -50,8 +50,30 @@ final class WordStore: ObservableObject {
             words.append(contentsOf: newSeeds)
             save()
         }
+        // Backfill IPA on previously-saved words that pre-date the
+        // pronunciation feature. Looks each word up in the current seed
+        // by lowercased text and copies its IPA across, preserving all
+        // other user data (review counts, dates, etc.).
+        backfillIPAFromSeed()
         // Drop any review-list pins that have aged past their 7-day window.
         cleanupExpiredReviewListEntries()
+    }
+
+    private func backfillIPAFromSeed() {
+        let seedPairs: [(String, String)] = WordStore.seedWords().compactMap { w in
+            guard let ipa = w.ipa, !ipa.isEmpty else { return nil }
+            return (w.word.lowercased(), ipa)
+        }
+        let seedIPA = Dictionary(seedPairs, uniquingKeysWith: { first, _ in first })
+        var changed = false
+        for i in words.indices {
+            if (words[i].ipa == nil || words[i].ipa?.isEmpty == true),
+               let ipa = seedIPA[words[i].word.lowercased()] {
+                words[i].ipa = ipa
+                changed = true
+            }
+        }
+        if changed { save() }
     }
 
     /// Remove any words whose lowercased text matches an entry in
