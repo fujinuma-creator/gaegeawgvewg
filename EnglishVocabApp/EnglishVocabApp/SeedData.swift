@@ -123,6 +123,8 @@ enum SeedData {
             + adjectivesStates62 + expressionsPhrases62 + education62
             + politeRequests63 + casualPhrases63 + schedulingMisc63
             + verbsAndPhrases63 + nounsAndMisc63 + statesAndFaults63
+            + weatherHealth64 + travelLife64 + verbsActions64
+            + nounsConcepts64 + expressions64
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -20941,6 +20943,377 @@ enum SeedData {
                     ("Have you eaten?", "ご飯食べた？"),
                     ("Have you finished?", "もう終わった？")
                  ], ipa: "/hˈæv juː/")
+        ]
+    }
+
+    // MARK: - 天気・健康 (追加 64)
+
+    private static var weatherHealth64: [Word] {
+        [
+            make("thunder", "the loud sound that follows lightning",
+                 "雷",
+                 useCases: ["雷の音を表すとき"],
+                 examples: [
+                    ("Thunder and lightning.", "雷と稲妻。"),
+                    ("Hear thunder.", "雷の音が聞こえる。")
+                 ], ipa: "/θˈʌndɐ/"),
+            make("rain cats and dogs", "rain very heavily",
+                 "土砂降りに降る",
+                 useCases: ["豪雨を比喩的に表すとき"],
+                 examples: [
+                    ("It's raining cats and dogs.", "土砂降りだ。"),
+                    ("Yesterday rained cats and dogs.", "昨日は土砂降りだった。")
+                 ], ipa: "/ɹˈeɪn kˈæts ænd dˈɒɡz/"),
+            make("sb cough", "someone makes a sudden noise from the throat",
+                 "(人)が咳をする",
+                 useCases: ["人が咳をしている状況を表すとき"],
+                 examples: [
+                    ("She coughed loudly.", "彼女は大きく咳をした。"),
+                    ("Stop coughing on me.", "こっちで咳しないで。")
+                 ], ipa: "/sˈʌmbɒdɪ kˈɒf/"),
+            make("susceptible", "easily affected or influenced",
+                 "影響を受けやすい",
+                 useCases: ["病気や影響に弱い体質や性質を表すとき"],
+                 examples: [
+                    ("Susceptible to colds.", "風邪をひきやすい。"),
+                    ("Highly susceptible.", "かなり影響を受けやすい。")
+                 ], ipa: "/səsˈɛptɪbəl/"),
+            make("after effects", "later consequences of an event",
+                 "後遺症・後の影響",
+                 useCases: ["薬や事故、出来事の後に残る影響を表すとき"],
+                 examples: [
+                    ("After effects of the flu.", "インフルの後遺症。"),
+                    ("Strong after effects.", "強い後遺症。")
+                 ], ipa: "/ˈɑːftɐɹ ɪfˈɛkts/"),
+            make("infectious", "able to spread from one to another",
+                 "感染性の・伝染する",
+                 useCases: ["病気や感情が広がる性質を表すとき"],
+                 examples: [
+                    ("Highly infectious disease.", "高い感染力の病気。"),
+                    ("Infectious laughter.", "つられて笑える笑い声。")
+                 ], ipa: "/ɪnfˈɛkʃəs/"),
+            make("vaccinate", "give a vaccine to protect against disease",
+                 "ワクチン接種をする",
+                 useCases: ["予防接種を打つときに使う動詞"],
+                 examples: [
+                    ("Vaccinate the kids.", "子どもにワクチンを打つ。"),
+                    ("Get vaccinated.", "ワクチンを接種する。")
+                 ], ipa: "/vˈæksɪnˌeɪt/"),
+            make("muscular", "having well-developed muscles; relating to muscles",
+                 "筋肉質の・筋肉の",
+                 useCases: ["筋肉の発達した体や筋肉系を表すとき"],
+                 examples: [
+                    ("A muscular build.", "筋肉質な体格。"),
+                    ("Muscular pain.", "筋肉痛。")
+                 ], ipa: "/mˈʌskjʊlɐ/"),
+            make("blood flow", "the circulation of blood through the body",
+                 "血流",
+                 useCases: ["体内を巡る血液の流れを表すとき"],
+                 examples: [
+                    ("Improve blood flow.", "血流を良くする。"),
+                    ("Poor blood flow.", "血流が悪い。")
+                 ], ipa: "/blˈʌd flˈəʊ/"),
+            make("single", "only one; unmarried",
+                 "一つの・独身の",
+                 useCases: ["単一であること、または独身であることを表すとき"],
+                 examples: [
+                    ("A single piece.", "一個。"),
+                    ("She's single.", "彼女は独身。")
+                 ], ipa: "/sˈɪŋɡəl/")
+        ]
+    }
+
+    // MARK: - 旅行・生活 (追加 64)
+
+    private static var travelLife64: [Word] {
+        [
+            make("armrest", "the support for the arm on a chair or seat",
+                 "肘掛け",
+                 useCases: ["椅子や座席の肘を置く部分を表すとき"],
+                 examples: [
+                    ("Use the armrest.", "肘掛けを使って。"),
+                    ("The armrest is broken.", "肘掛けが壊れてる。")
+                 ], ipa: "/ˈɑːmɹɛst/"),
+            make("isle seat", "an aisle seat by the walkway",
+                 "通路側の席",
+                 useCases: ["機内などで通路側の席を表すとき(本来は aisle seat)"],
+                 examples: [
+                    ("I prefer the isle seat.", "通路側の席が好き。"),
+                    ("Book an isle seat.", "通路側の席を取る。")
+                 ], ipa: "/ˈaɪəl sˈiːt/"),
+            make("reunite", "bring together again after being apart",
+                 "再会させる・再結成する",
+                 useCases: ["別れていた人や物が再び集うとき"],
+                 examples: [
+                    ("Reunite with family.", "家族と再会する。"),
+                    ("The band reunited.", "バンドが再結成した。")
+                 ], ipa: "/ɹˌiːjuːnˈaɪt/"),
+            make("elsewhere", "in or to another place",
+                 "他の場所で・他で",
+                 useCases: ["別の場所にあることや行くことを表すとき"],
+                 examples: [
+                    ("Look elsewhere.", "他を当たって。"),
+                    ("Cheaper elsewhere.", "他の方が安い。")
+                 ], ipa: "/ˈɛlsweə/"),
+            make("for a change", "for variety; as a switch from the usual",
+                 "気分を変えて・たまには",
+                 useCases: ["普段と違うことをしてみるとき"],
+                 examples: [
+                    ("Let's eat out for a change.", "たまには外食しよう。"),
+                    ("Try something new for a change.", "気分を変えて新しいことを。")
+                 ], ipa: "/fəɹɐ tʃˈeɪndʒ/"),
+            make("hemisphere", "half of a sphere, esp. of the earth or brain",
+                 "半球",
+                 useCases: ["地球の北半球・南半球や脳の半球を表すとき"],
+                 examples: [
+                    ("Northern hemisphere.", "北半球。"),
+                    ("Left hemisphere of the brain.", "脳の左半球。")
+                 ], ipa: "/hˈɛmɪsfˌiə/"),
+            make("farmer", "a person who works on a farm",
+                 "農家・農場主",
+                 useCases: ["農業に従事する人を表すとき"],
+                 examples: [
+                    ("A local farmer.", "地元の農家。"),
+                    ("Become a farmer.", "農家になる。")
+                 ], ipa: "/fˈɑːmɐ/"),
+            make("distributor", "a person or company that supplies goods to retailers",
+                 "販売代理店・流通業者",
+                 useCases: ["商品をお店に卸す会社や人を表すとき"],
+                 examples: [
+                    ("Our distributor in Japan.", "日本の代理店。"),
+                    ("Become a distributor.", "代理店になる。")
+                 ], ipa: "/dɪstɹˈɪbjuːtɐ/"),
+            make("big move", "a major change or step",
+                 "大きな決断・大きな引っ越し",
+                 useCases: ["人生の重要な転換や引っ越しを表すとき"],
+                 examples: [
+                    ("That's a big move.", "大きな決断だね。"),
+                    ("Make a big move.", "大胆な一手を打つ。")
+                 ], ipa: "/bˈɪɡ mˈuːv/"),
+            make("trial", "a test or court process",
+                 "試験・裁判",
+                 useCases: ["何かを試す期間や法廷の裁判を表すとき"],
+                 examples: [
+                    ("A free trial.", "無料お試し期間。"),
+                    ("On trial.", "裁判中。")
+                 ], ipa: "/tɹˈaɪəl/")
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 64)
+
+    private static var verbsActions64: [Word] {
+        [
+            make("can hardly", "barely able to",
+                 "ほとんど〜できない",
+                 useCases: ["かろうじてしかできない状態を表すとき"],
+                 examples: [
+                    ("I can hardly believe it.", "信じがたい。"),
+                    ("I can hardly hear you.", "ほとんど聞こえない。")
+                 ], ipa: "/kæn hˈɑːdlɪ/"),
+            make("scare", "frighten; cause sudden fear",
+                 "怖がらせる",
+                 useCases: ["人をびっくりさせるとき"],
+                 examples: [
+                    ("You scared me!", "驚かさないで!"),
+                    ("Scare the kids.", "子どもを怖がらせる。")
+                 ], ipa: "/skˈeə/"),
+            make("tie sth tight", "fasten firmly with a knot",
+                 "〜をきつく結ぶ",
+                 useCases: ["紐や紐状の物をしっかり結ぶとき"],
+                 examples: [
+                    ("Tie the rope tight.", "ロープをきつく結んで。"),
+                    ("Tie your shoes tight.", "靴ひもをしっかり結んで。")
+                 ], ipa: "/tˈaɪ sˈʌmθɪŋ tˈaɪt/"),
+            make("stick out", "extend beyond a surface; be noticeable",
+                 "突き出る・目立つ",
+                 useCases: ["はみ出す、または目立つことを表すとき"],
+                 examples: [
+                    ("Stick out your tongue.", "舌を出して。"),
+                    ("It stuck out a lot.", "すごく目立っていた。")
+                 ], ipa: "/stˈɪk ˈaʊt/"),
+            make("refresh sth", "give new energy to; reload information",
+                 "〜を再表示する・元気づける",
+                 useCases: ["ページを更新する、または気分を一新するとき"],
+                 examples: [
+                    ("Refresh the page.", "ページを更新する。"),
+                    ("Refresh your memory.", "記憶を呼び覚ます。")
+                 ], ipa: "/ɹɪfɹˈɛʃ sˈʌmθɪŋ/"),
+            make("bite sth", "use teeth to cut into",
+                 "〜を噛む",
+                 useCases: ["食べ物を噛む、または何かに噛みつくとき"],
+                 examples: [
+                    ("Bite the apple.", "リンゴを噛む。"),
+                    ("The dog bit me.", "犬に噛まれた。")
+                 ], ipa: "/bˈaɪt sˈʌmθɪŋ/"),
+            make("to start off", "to begin with",
+                 "まず始めに・最初に",
+                 useCases: ["話や作業の始まりを切り出すとき"],
+                 examples: [
+                    ("To start off, let me say thanks.", "まず始めにお礼を。"),
+                    ("To start off the day.", "一日のスタートに。")
+                 ], ipa: "/tə stˈɑːt ˈɒf/"),
+            make("get it rolling", "get something started or moving",
+                 "始動させる・動き出させる",
+                 useCases: ["プロジェクトや活動を始めるとき"],
+                 examples: [
+                    ("Let's get it rolling.", "さあ動き出そう。"),
+                    ("Get the project rolling.", "プロジェクトを動かす。")
+                 ], ipa: "/ɡɛt ɪt ɹˈəʊlɪŋ/"),
+            make("work together", "cooperate to do something",
+                 "一緒に働く・協力する",
+                 useCases: ["人々が協力して取り組むとき"],
+                 examples: [
+                    ("Let's work together.", "一緒にやろう。"),
+                    ("Work together as a team.", "チームとして協力する。")
+                 ], ipa: "/wˈɜːk təɡˈɛðɐ/"),
+            make("watch over", "guard and protect someone",
+                 "〜を見守る・見張る",
+                 useCases: ["人や物に気を配るとき"],
+                 examples: [
+                    ("Watch over the kids.", "子どもを見ていて。"),
+                    ("Watch over your things.", "荷物を見ていて。")
+                 ], ipa: "/wˈɒtʃ ˈəʊvɐ/"),
+            make("need sleep", "require rest",
+                 "睡眠が必要だ",
+                 useCases: ["眠気や疲れを訴えるとき"],
+                 examples: [
+                    ("I need sleep.", "寝ないと無理。"),
+                    ("You need sleep.", "君は寝た方がいい。")
+                 ], ipa: "/nˈiːd slˈiːp/"),
+            make("want sth so bad", "want something very much",
+                 "〜がどうしても欲しい",
+                 useCases: ["強い欲求や願望を口語で表すとき"],
+                 examples: [
+                    ("I want this so bad.", "これがどうしても欲しい。"),
+                    ("Want it so bad.", "めちゃくちゃ欲しい。")
+                 ], ipa: "/wˈɒnt sˈʌmθɪŋ sˌəʊ bˈæd/"),
+            make("divert", "redirect to a different course",
+                 "〜をそらす・迂回させる",
+                 useCases: ["注意や交通の流れを別の方向に変えるとき"],
+                 examples: [
+                    ("Divert traffic.", "交通を迂回させる。"),
+                    ("Divert attention.", "注意をそらす。")
+                 ], ipa: "/daɪvˈɜːt/"),
+            make("be welcome to do", "be free or invited to do",
+                 "ご自由に〜していい",
+                 useCases: ["相手に許可や歓迎を伝えるとき"],
+                 examples: [
+                    ("You're welcome to stay.", "ご自由にお泊まりください。"),
+                    ("You're welcome to try it.", "どうぞ試してみて。")
+                 ], ipa: "/biː wˈɛlkʌm tə dˈuː/"),
+            make("take sb into", "lead someone into a place or situation",
+                 "(人)を中に入れる・連れて行く",
+                 useCases: ["人を場所や状況に導くとき"],
+                 examples: [
+                    ("Take her into the room.", "彼女を部屋に入れて。"),
+                    ("Take him into confidence.", "彼を信頼して打ち明ける。")
+                 ], ipa: "/tˈeɪk sˈʌmbɒdɪ ˌɪntʊ/"),
+            make("lead sb", "guide someone in a direction or activity",
+                 "(人)を導く・連れて行く",
+                 useCases: ["人を案内する、または率いるとき"],
+                 examples: [
+                    ("Lead me to the exit.", "出口まで案内して。"),
+                    ("Lead the team.", "チームを率いる。")
+                 ], ipa: "/lˈiːd sˈʌmbɒdɪ/")
+        ]
+    }
+
+    // MARK: - 名詞・概念 (追加 64)
+
+    private static var nounsConcepts64: [Word] {
+        [
+            make("chocolate brown", "a deep brown color like chocolate",
+                 "チョコレート色",
+                 useCases: ["濃い茶色を表すとき"],
+                 examples: [
+                    ("Chocolate brown eyes.", "チョコレート色の瞳。"),
+                    ("A chocolate brown coat.", "チョコ色のコート。")
+                 ], ipa: "/tʃˈɒklət bɹˈaʊn/"),
+            make("prediction", "a forecast of what will happen",
+                 "予測・予想",
+                 useCases: ["将来起こることへの予想を表すとき"],
+                 examples: [
+                    ("Make a prediction.", "予想する。"),
+                    ("Weather prediction.", "天気予報。")
+                 ], ipa: "/pɹɪdˈɪkʃən/"),
+            make("savior", "a person who rescues someone from harm",
+                 "救世主・救い主",
+                 useCases: ["危機から救ってくれる存在を表すとき"],
+                 examples: [
+                    ("You're my savior!", "君は救世主だ!"),
+                    ("A savior of the team.", "チームの救世主。")
+                 ], ipa: "/sˈeɪvjɐ/"),
+            make("believer", "a person who believes in something",
+                 "信じる人・信者",
+                 useCases: ["信仰や考えを支持する人を表すとき"],
+                 examples: [
+                    ("A firm believer.", "強い信奉者。"),
+                    ("I'm a believer.", "私は信じている派だ。")
+                 ], ipa: "/bɪlˈiːvɐ/"),
+            make("phantom", "a ghost; something imagined",
+                 "幻影・幽霊",
+                 useCases: ["実在しないが見える(感じる)ものを表すとき"],
+                 examples: [
+                    ("A phantom pain.", "幻肢痛。"),
+                    ("The Phantom of the Opera.", "オペラ座の怪人。")
+                 ], ipa: "/fˈɑːntəm/"),
+            make("quite a bit of", "a fairly large amount of",
+                 "かなりの量の",
+                 useCases: ["割と多い量や数を表すとき"],
+                 examples: [
+                    ("Quite a bit of money.", "けっこうな金額。"),
+                    ("Quite a bit of effort.", "かなりの努力。")
+                 ], ipa: "/kwˈaɪt ɐ bˈɪt ɒv/")
+        ]
+    }
+
+    // MARK: - 表現・フレーズ (追加 64)
+
+    private static var expressions64: [Word] {
+        [
+            make("as sth compare to", "in comparison with",
+                 "〜と比べて",
+                 useCases: ["二つを比較するとき"],
+                 examples: [
+                    ("As this compares to that.", "これがあれと比べて。"),
+                    ("As prices compare to last year.", "去年の価格と比べて。")
+                 ], ipa: "/æz sˈʌmθɪŋ kəmpˈeə tuː/"),
+            make("in a cycle of", "trapped in a repeating pattern of",
+                 "〜のサイクルに入り込んで",
+                 useCases: ["繰り返しのパターンに陥っている様子を表すとき"],
+                 examples: [
+                    ("In a cycle of debt.", "借金の連鎖に陥って。"),
+                    ("In a cycle of bad habits.", "悪い習慣の繰り返しの中で。")
+                 ], ipa: "/ɪn ɐ sˈaɪkəl ɒv/"),
+            make("in a bad way", "in a poor condition or state",
+                 "ひどい状態で",
+                 useCases: ["体調や状況がかなり悪いことを表すとき"],
+                 examples: [
+                    ("He's in a bad way.", "彼はかなり悪い状態だ。"),
+                    ("The car is in a bad way.", "車はひどい状態だ。")
+                 ], ipa: "/ɪn ɐ bˈæd wˈeɪ/"),
+            make("none the worse for ing", "not damaged or harmed by doing",
+                 "〜したけれど無事に",
+                 useCases: ["大変な経験の後でも問題ないと述べるとき"],
+                 examples: [
+                    ("None the worse for waiting.", "待ったけれど別に問題ない。"),
+                    ("None the worse for the journey.", "旅の影響はまるでない。")
+                 ], ipa: "/nˈɒn ðə wˈɜːs fɔːɹ ˈɪŋ/"),
+            make("from day to day", "varying from one day to the next",
+                 "日々・日に日に",
+                 useCases: ["毎日少しずつ変わる様子を表すとき"],
+                 examples: [
+                    ("It changes from day to day.", "日によって変わる。"),
+                    ("Live from day to day.", "その日その日を生きる。")
+                 ], ipa: "/fɹɒm dˈeɪ tə dˈeɪ/"),
+            make("make things pp at home", "have things done by oneself at home",
+                 "家で物事をやってもらう・整える",
+                 useCases: ["自分の家で物事が行われる状況を表すとき(make things done at home)"],
+                 examples: [
+                    ("Make things done at home.", "家で済ませる。"),
+                    ("Make things repaired at home.", "家で修理してもらう。")
+                 ], ipa: "/mˌeɪk θˈɪŋz pˌiːpˈiː æt hˈəʊm/")
         ]
     }
 }
