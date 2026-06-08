@@ -117,6 +117,8 @@ enum SeedData {
             + dayOffLife59 + workStudy59 + gamingSports59
             + dataConcepts59 + sensoryMisc59
             + expressionsQA60 + thingsObjects60 + verbsMix60 + adjectivesMix60
+            + healthBody61 + businessConcepts61 + verbsActions61
+            + nounsObjects61 + expressionsPhrases61
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -19150,6 +19152,454 @@ enum SeedData {
                     ("Simultaneous translation.", "同時通訳。"),
                     ("Simultaneous launch.", "同時発売。")
                  ], ipa: "/sˌɪməltˈeɪniəs/")
+        ]
+    }
+
+    // MARK: - 健康・体調 (追加 61)
+
+    private static var healthBody61: [Word] {
+        [
+            make("dementia", "a chronic disorder of mental processes",
+                 "認知症",
+                 useCases: ["記憶や判断の障害を表すとき"],
+                 examples: [
+                    ("Early signs of dementia.", "認知症の初期症状。"),
+                    ("Living with dementia.", "認知症と共に生きる。")
+                 ], ipa: "/dɪmˈɛnʃɐ/"),
+            make("upset stomach", "discomfort or nausea in the stomach",
+                 "胃の不調",
+                 useCases: ["お腹の調子が悪いことを表すとき"],
+                 examples: [
+                    ("I have an upset stomach.", "お腹の調子が悪い。"),
+                    ("Upset stomach from spicy food.", "辛い物で胃が荒れた。")
+                 ], ipa: "/ʌpsˈɛt stˈʌmək/"),
+            make("upset", "unhappy or annoyed; to disturb",
+                 "動揺した・〜を動揺させる",
+                 useCases: ["気分が悪い、または人を動揺させるとき"],
+                 examples: [
+                    ("Don't get upset.", "怒らないで。"),
+                    ("It upset her.", "それで彼女は動揺した。")
+                 ], ipa: "/ʌpsˈɛt/"),
+            make("medicine", "a substance taken to treat illness",
+                 "薬・医学",
+                 useCases: ["薬や医療全般を表すとき"],
+                 examples: [
+                    ("Take your medicine.", "薬を飲んで。"),
+                    ("Study medicine.", "医学を学ぶ。")
+                 ], ipa: "/mˈɛdsən/"),
+            make("diarrhea", "the condition of having frequent loose stools",
+                 "下痢",
+                 useCases: ["お腹を下している状態を表すとき"],
+                 examples: [
+                    ("Suffer from diarrhea.", "下痢に苦しむ。"),
+                    ("Diarrhea from bad food.", "悪い食べ物で下痢になった。")
+                 ], ipa: "/dˌaɪəɹˈiə/"),
+            make("feel a bit off", "feel slightly unwell or strange",
+                 "体調がいまいち・調子が変だ",
+                 useCases: ["はっきりしないけど不調なときに使う"],
+                 examples: [
+                    ("I feel a bit off today.", "今日は少し調子が悪い。"),
+                    ("Feel a bit off after lunch.", "昼食後どうも調子が悪い。")
+                 ], ipa: "/fˈiːl ɐ bˈɪt ˈɒf/"),
+            make("leg day", "a workout session focused on the legs",
+                 "脚の日(脚のトレーニング日)",
+                 useCases: ["ジムで脚を鍛える日を表すとき"],
+                 examples: [
+                    ("Never skip leg day.", "脚の日は飛ばすな。"),
+                    ("Today is leg day.", "今日は脚の日だ。")
+                 ], ipa: "/lˈɛɡ dˈeɪ/")
+        ]
+    }
+
+    // MARK: - ビジネス・概念 (追加 61)
+
+    private static var businessConcepts61: [Word] {
+        [
+            make("agent", "a person who acts on behalf of another",
+                 "代理人・エージェント",
+                 useCases: ["代理で行動する人や仲介役を表すとき"],
+                 examples: [
+                    ("A real estate agent.", "不動産業者。"),
+                    ("A talent agent.", "タレントエージェント。")
+                 ], ipa: "/ˈeɪdʒənt/"),
+            make("compliance", "the act of obeying rules or laws",
+                 "コンプライアンス・法令遵守",
+                 useCases: ["規則や法令の遵守を表すとき"],
+                 examples: [
+                    ("In compliance with the law.", "法に従って。"),
+                    ("Compliance training.", "コンプライアンス研修。")
+                 ], ipa: "/kəmplˈaɪəns/"),
+            make("credit", "trust to pay later; recognition for an achievement",
+                 "信用・クレジット・功績",
+                 useCases: ["金融の信用、賞賛、または評価を表すとき"],
+                 examples: [
+                    ("Credit card.", "クレジットカード。"),
+                    ("Give him credit.", "彼の功績を認める。")
+                 ], ipa: "/kɹˈɛdɪt/"),
+            make("intern", "a trainee working to gain experience",
+                 "インターン・実習生",
+                 useCases: ["研修目的で働く人を表すとき"],
+                 examples: [
+                    ("Summer intern.", "夏のインターン生。"),
+                    ("Hire an intern.", "インターンを採用する。")
+                 ], ipa: "/ˈɪntɜːn/"),
+            make("incur", "bring upon oneself (cost or trouble)",
+                 "(費用・損失などを)被る",
+                 useCases: ["コストや損失、罰を自ら招くとき"],
+                 examples: [
+                    ("Incur extra costs.", "追加費用が発生する。"),
+                    ("Incur debt.", "借金を背負う。")
+                 ], ipa: "/ɪŋkˈɜː/"),
+            make("excess", "more than necessary or allowed",
+                 "過剰・超過",
+                 useCases: ["必要以上にある状態や量を表すとき"],
+                 examples: [
+                    ("Excess baggage.", "超過手荷物。"),
+                    ("In excess of the limit.", "上限を超えて。")
+                 ], ipa: "/ɪksˈɛs/"),
+            make("demand", "request firmly; a desire for a product",
+                 "要求する・需要",
+                 useCases: ["強く求めるとき、また市場の需要を表すとき"],
+                 examples: [
+                    ("Demand an apology.", "謝罪を求める。"),
+                    ("High demand.", "高い需要。")
+                 ], ipa: "/dɪmˈɑːnd/"),
+            make("breaking news", "newly received and important news",
+                 "速報",
+                 useCases: ["緊急の報道を表すとき"],
+                 examples: [
+                    ("Breaking news just in.", "ただいま入った速報。"),
+                    ("Watch the breaking news.", "速報を見る。")
+                 ], ipa: "/bɹˈeɪkɪŋ njˈuːz/"),
+            make("undoubtedly", "without any doubt; certainly",
+                 "疑いなく・間違いなく",
+                 useCases: ["強い確信を表すとき"],
+                 examples: [
+                    ("Undoubtedly the best.", "間違いなく最高だ。"),
+                    ("She is undoubtedly talented.", "彼女は間違いなく才能がある。")
+                 ], ipa: "/ʌndˈaʊtɪdlɪ/"),
+            make("upper class", "the highest social class",
+                 "上流階級",
+                 useCases: ["社会的に裕福で地位の高い層を表すとき"],
+                 examples: [
+                    ("The upper class.", "上流階級。"),
+                    ("An upper class family.", "上流階級の家族。")
+                 ], ipa: "/ˌʌpɐ klˈɑːs/"),
+            make("thrift", "careful management of money",
+                 "倹約・古着屋(thrift store)",
+                 useCases: ["節約や中古品店を表すとき"],
+                 examples: [
+                    ("Practice thrift.", "倹約を心がける。"),
+                    ("A thrift shop.", "古着屋・リサイクル店。")
+                 ], ipa: "/θɹˈɪft/")
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 61)
+
+    private static var verbsActions61: [Word] {
+        [
+            make("place sth", "put something in a particular position",
+                 "〜を置く・配置する",
+                 useCases: ["物を特定の場所に置くとき"],
+                 examples: [
+                    ("Place it on the table.", "テーブルに置いて。"),
+                    ("Place an order.", "注文する。")
+                 ], ipa: "/plˈeɪs sˈʌmθɪŋ/"),
+            make("take place of", "replace; serve as a substitute for",
+                 "〜の代わりを務める",
+                 useCases: ["別のものや人の代わりに役目を果たすとき"],
+                 examples: [
+                    ("AI takes place of manual work.", "AIが手作業の代わりを務める。"),
+                    ("Nothing can take place of family.", "家族の代わりになるものはない。")
+                 ], ipa: "/tˈeɪk plˈeɪs ɒv/"),
+            make("take place", "happen; occur",
+                 "起こる・行われる",
+                 useCases: ["イベントや事件が発生するとき"],
+                 examples: [
+                    ("The event takes place tomorrow.", "そのイベントは明日行われる。"),
+                    ("When did it take place?", "それはいつ起きたの？")
+                 ], ipa: "/tˈeɪk plˈeɪs/"),
+            make("sprinkle sth into", "scatter small amounts into",
+                 "〜に〜をふりかける",
+                 useCases: ["調味料などを少しずつ加えるとき"],
+                 examples: [
+                    ("Sprinkle salt into the dish.", "料理に塩をふりかける。"),
+                    ("Sprinkle sugar into coffee.", "コーヒーに砂糖をふりかける。")
+                 ], ipa: "/spɹˈɪŋkəl sˈʌmθɪŋ ˌɪntʊ/"),
+            make("lower sth", "reduce in level or amount",
+                 "〜を下げる・低くする",
+                 useCases: ["価格や音量、視線を下げるとき"],
+                 examples: [
+                    ("Lower your voice.", "声を下げて。"),
+                    ("Lower the price.", "値段を下げる。")
+                 ], ipa: "/lˈəʊɐ sˈʌmθɪŋ/"),
+            make("originate", "have a specified beginning",
+                 "起源を持つ・〜から始まる",
+                 useCases: ["物事の出所や起源を表すとき"],
+                 examples: [
+                    ("Originate in Japan.", "日本発祥。"),
+                    ("The custom originated long ago.", "その風習は昔に始まった。")
+                 ], ipa: "/əɹˈɪdʒɪnˌeɪt/"),
+            make("result in", "have a specified outcome",
+                 "結果として〜になる",
+                 useCases: ["原因と結果を結びつけて述べるとき"],
+                 examples: [
+                    ("It resulted in success.", "結果として成功した。"),
+                    ("Lack of sleep results in fatigue.", "睡眠不足は疲労を招く。")
+                 ], ipa: "/ɹɪzˈʌlt ˈɪn/"),
+            make("host sth", "hold or organize an event",
+                 "〜を主催する・開催する",
+                 useCases: ["イベントやパーティを主催するとき"],
+                 examples: [
+                    ("Host a party.", "パーティを主催する。"),
+                    ("Host the conference.", "会議を主催する。")
+                 ], ipa: "/hˈəʊst sˈʌmθɪŋ/"),
+            make("drill", "a tool for boring holes; repetitive practice",
+                 "ドリル・反復練習",
+                 useCases: ["穴あけ工具や繰り返し練習を表すとき"],
+                 examples: [
+                    ("Use a drill.", "ドリルを使う。"),
+                    ("Fire drill.", "避難訓練。")
+                 ], ipa: "/dɹˈɪl/"),
+            make("come and go", "appear briefly and then leave",
+                 "現れては消える・出入りする",
+                 useCases: ["人や物が一時的にだけ現れる様子を表すとき"],
+                 examples: [
+                    ("The pain comes and goes.", "痛みが出たり消えたりする。"),
+                    ("Trends come and go.", "流行は移り変わる。")
+                 ], ipa: "/kˈʌm ænd ɡˈəʊ/"),
+            make("rise up", "stand up; rebel; ascend",
+                 "立ち上がる・蜂起する",
+                 useCases: ["反乱や奮起、上昇する動きを表すとき"],
+                 examples: [
+                    ("Rise up against injustice.", "不正に立ち上がる。"),
+                    ("Rise up to the challenge.", "挑戦に立ち向かう。")
+                 ], ipa: "/ɹˈaɪz ˈʌp/"),
+            make("roll down", "move down by turning; let down a window",
+                 "転がり落ちる・(窓を)下ろす",
+                 useCases: ["転がり落ちる、窓を下ろすときなど"],
+                 examples: [
+                    ("Tears rolled down her face.", "涙が頬を伝った。"),
+                    ("Roll down the window.", "窓を下ろして。")
+                 ], ipa: "/ɹˈəʊl dˈaʊn/"),
+            make("come to an end", "finish; reach a conclusion",
+                 "終わる・終焉を迎える",
+                 useCases: ["長く続いていたものが終わることを表すとき"],
+                 examples: [
+                    ("The era came to an end.", "その時代は終わった。"),
+                    ("All things come to an end.", "全ての物事には終わりがある。")
+                 ], ipa: "/kˈʌm tʊ ɐn ˈɛnd/")
+        ]
+    }
+
+    // MARK: - 名詞・物事 (追加 61)
+
+    private static var nounsObjects61: [Word] {
+        [
+            make("cardboard", "thick stiff paper used for boxes",
+                 "段ボール",
+                 useCases: ["箱や梱包材として使われる厚紙を表すとき"],
+                 examples: [
+                    ("A cardboard box.", "段ボール箱。"),
+                    ("Recycled cardboard.", "再生段ボール。")
+                 ], ipa: "/kˈɑːdbɔːd/"),
+            make("hardware", "tools, machinery, or computer components",
+                 "ハードウェア・金物",
+                 useCases: ["機械や物理的な機器、工具を表すとき"],
+                 examples: [
+                    ("Computer hardware.", "コンピューターのハードウェア。"),
+                    ("Hardware store.", "金物店・ホームセンター。")
+                 ], ipa: "/hˈɑːdweə/"),
+            make("overnight", "for the duration of one night; very rapidly",
+                 "一晩・一夜にして",
+                 useCases: ["夜通し、または急速な変化を表すとき"],
+                 examples: [
+                    ("Stay overnight.", "一泊する。"),
+                    ("Famous overnight.", "一夜で有名になった。")
+                 ], ipa: "/ˌəʊvənˈaɪt/"),
+            make("tulip", "a brightly-colored spring flower",
+                 "チューリップ",
+                 useCases: ["春に咲く花を表すとき"],
+                 examples: [
+                    ("Red tulips.", "赤いチューリップ。"),
+                    ("A field of tulips.", "チューリップ畑。")
+                 ], ipa: "/tjˈuːlɪp/"),
+            make("syrup", "a thick sweet liquid",
+                 "シロップ",
+                 useCases: ["甘い液体の調味料を表すとき"],
+                 examples: [
+                    ("Maple syrup.", "メープルシロップ。"),
+                    ("Cough syrup.", "咳止めシロップ。")
+                 ], ipa: "/sˈɪɹʌp/"),
+            make("rim", "the outer edge of a circular object",
+                 "縁・リム",
+                 useCases: ["カップや車輪のふちを表すとき"],
+                 examples: [
+                    ("The rim of the cup.", "カップの縁。"),
+                    ("Wheel rim.", "ホイールリム。")
+                 ], ipa: "/ɹˈɪm/"),
+            make("photosynthesis", "the process by which plants make food using light",
+                 "光合成",
+                 useCases: ["植物が光から栄養を作る働きを表すとき"],
+                 examples: [
+                    ("Photosynthesis requires sunlight.", "光合成には日光が必要だ。"),
+                    ("Study photosynthesis.", "光合成を学ぶ。")
+                 ], ipa: "/fˌəʊtəʊsˈɪnθəsˌɪs/"),
+            make("pride", "a feeling of satisfaction or self-respect",
+                 "誇り・プライド",
+                 useCases: ["自尊心や誇りに思う気持ちを表すとき"],
+                 examples: [
+                    ("Take pride in your work.", "仕事に誇りを持つ。"),
+                    ("Swallow your pride.", "プライドを捨てる。")
+                 ], ipa: "/pɹˈaɪd/"),
+            make("fight", "a struggle or physical battle",
+                 "戦い・けんか",
+                 useCases: ["戦いや対立、議論などを表すとき"],
+                 examples: [
+                    ("Pick a fight.", "けんかをふっかける。"),
+                    ("Fight for your rights.", "権利のために戦う。")
+                 ], ipa: "/fˈaɪt/"),
+            make("wooden", "made of wood",
+                 "木製の",
+                 useCases: ["木でできた物を表すとき"],
+                 examples: [
+                    ("A wooden chair.", "木製の椅子。"),
+                    ("Wooden floors.", "木の床。")
+                 ], ipa: "/wˈʊdən/"),
+            make("belt", "a strap worn around the waist",
+                 "ベルト・帯",
+                 useCases: ["ズボンを留めるベルトや工業用ベルトを表すとき"],
+                 examples: [
+                    ("Tighten your belt.", "ベルトを締めて。"),
+                    ("A black belt.", "黒帯。")
+                 ], ipa: "/bˈɛlt/"),
+            make("quantum", "an extremely small unit; relating to quantum physics",
+                 "量子・大きな飛躍",
+                 useCases: ["物理学の量子や、大きな進歩を比喩で表すとき"],
+                 examples: [
+                    ("Quantum physics.", "量子物理学。"),
+                    ("A quantum leap.", "飛躍的な進歩。")
+                 ], ipa: "/kwˈɒntəm/"),
+            make("hill", "a raised area of land smaller than a mountain",
+                 "丘",
+                 useCases: ["山ほど高くない盛り上がった地形を表すとき"],
+                 examples: [
+                    ("Climb the hill.", "丘を登る。"),
+                    ("A green hill.", "緑の丘。")
+                 ], ipa: "/hˈɪl/"),
+            make("stain", "a mark or discoloration that is hard to remove",
+                 "シミ・汚れ",
+                 useCases: ["布や物にこびりついた汚れを表すとき"],
+                 examples: [
+                    ("Remove the stain.", "シミを取る。"),
+                    ("Coffee stain.", "コーヒーのシミ。")
+                 ], ipa: "/stˈeɪn/"),
+            make("poop", "feces (informal); to defecate",
+                 "うんち・うんちをする",
+                 useCases: ["排泄を表すくだけた言い方"],
+                 examples: [
+                    ("Dog poop.", "犬のうんち。"),
+                    ("The baby pooped.", "赤ちゃんがうんちをした。")
+                 ], ipa: "/pˈuːp/"),
+            make("toilet seat", "the seat of a toilet",
+                 "便座",
+                 useCases: ["トイレの座る部分を表すとき"],
+                 examples: [
+                    ("Lower the toilet seat.", "便座を下ろして。"),
+                    ("Clean the toilet seat.", "便座を掃除する。")
+                 ], ipa: "/tˈɔɪlɪt sˈiːt/"),
+            make("main character", "the central figure in a story",
+                 "主人公",
+                 useCases: ["物語の中心人物を表すとき"],
+                 examples: [
+                    ("The main character of the novel.", "小説の主人公。"),
+                    ("Live as the main character.", "主人公として生きる。")
+                 ], ipa: "/mˈeɪn kˈæɹɪktɐ/"),
+            make("surge of", "a sudden powerful increase of",
+                 "〜の急増・〜の波",
+                 useCases: ["感情や数値、流れが急に高まるとき"],
+                 examples: [
+                    ("A surge of energy.", "エネルギーの急上昇。"),
+                    ("A surge of emotion.", "感情の高ぶり。")
+                 ], ipa: "/sˈɜːdʒ ɒv/")
+        ]
+    }
+
+    // MARK: - 表現・フレーズ (追加 61)
+
+    private static var expressionsPhrases61: [Word] {
+        [
+            make("right shape", "the correct or ideal form",
+                 "正しい形・あるべき形",
+                 useCases: ["形やコンディションが整っていることを表すとき"],
+                 examples: [
+                    ("In the right shape.", "正しい形で。"),
+                    ("Get into the right shape.", "あるべき状態に整える。")
+                 ], ipa: "/ɹˈaɪt ʃˈeɪp/"),
+            make("coherent", "logical and consistent",
+                 "首尾一貫した・筋の通った",
+                 useCases: ["話や論理がつながっていることを表すとき"],
+                 examples: [
+                    ("A coherent argument.", "首尾一貫した主張。"),
+                    ("Be more coherent.", "もっと筋が通った話をして。")
+                 ], ipa: "/kəʊhˈiəɹənt/"),
+            make("one of the saddest moment", "among the saddest moments",
+                 "最も悲しい瞬間の一つ",
+                 useCases: ["強い悲しみを伴う出来事を強調するとき"],
+                 examples: [
+                    ("One of the saddest moments of my life.", "私の人生で最も悲しい瞬間の一つ。"),
+                    ("One of the saddest moments I've seen.", "見た中で最も悲しい場面の一つ。")
+                 ], ipa: "/wˈɒn ɒvðə sˈædɪst mˈəʊmənt/"),
+            make("bored", "feeling weary because nothing interesting is happening",
+                 "退屈な",
+                 useCases: ["何もすることがなく飽きている状態を表すとき"],
+                 examples: [
+                    ("I'm bored.", "退屈だ。"),
+                    ("Bored to death.", "死ぬほど退屈。")
+                 ], ipa: "/bˈɔːd/"),
+            make("mission accomplished", "the task has been successfully completed",
+                 "任務完了",
+                 useCases: ["大事な作業を終えたときに使う口語表現"],
+                 examples: [
+                    ("Mission accomplished!", "任務完了!"),
+                    ("Mission accomplished — let's celebrate.", "やり遂げた、お祝いしよう。")
+                 ], ipa: "/mˈɪʃən ɐkˈɒmplɪʃt/"),
+            make("it should sound like", "the expected sound should be",
+                 "〜のような音であるべき",
+                 useCases: ["音や発音の正解イメージを示すとき"],
+                 examples: [
+                    ("It should sound like this.", "こんな感じの音であるべき。"),
+                    ("It should sound like a native.", "ネイティブのように聞こえるべきだ。")
+                 ], ipa: "/ɪt ʃˌʊd sˈaʊnd lˈaɪk/"),
+            make("nothing feels", "no feeling matches the description",
+                 "何も〜と感じない・〜なものは何もない",
+                 useCases: ["他に比べられないことを強調するとき"],
+                 examples: [
+                    ("Nothing feels better than this.", "これほど良い気分は他にない。"),
+                    ("Nothing feels right today.", "今日は何もしっくりこない。")
+                 ], ipa: "/nˈʌθɪŋ fˈiːlz/"),
+            make("randomly", "in a way that lacks a pattern or order",
+                 "ランダムに・無作為に",
+                 useCases: ["順序を決めずに選ぶことを表すとき"],
+                 examples: [
+                    ("Chosen randomly.", "無作為に選ばれた。"),
+                    ("Randomly bumped into him.", "偶然彼に会った。")
+                 ], ipa: "/ɹˈændəmlɪ/"),
+            make("it grosses me out", "it disgusts me",
+                 "気持ち悪い・うえっとなる",
+                 useCases: ["強い嫌悪感を口語で表すとき"],
+                 examples: [
+                    ("It grosses me out.", "うわっ気持ち悪い。"),
+                    ("Eating bugs grosses me out.", "虫を食べるのは気持ち悪い。")
+                 ], ipa: "/ɪt ɡɹˈəʊsɪz mˌiː ˈaʊt/"),
+            make("in the name of", "for the sake of; under the authority of",
+                 "〜の名のもとに・〜のために",
+                 useCases: ["正当性や大義名分を強調するとき"],
+                 examples: [
+                    ("In the name of love.", "愛の名のもとに。"),
+                    ("In the name of justice.", "正義の名のもとに。")
+                 ], ipa: "/ɪnðə nˈeɪm ɒv/")
         ]
     }
 }
