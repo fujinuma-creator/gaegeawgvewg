@@ -119,6 +119,8 @@ enum SeedData {
             + expressionsQA60 + thingsObjects60 + verbsMix60 + adjectivesMix60
             + healthBody61 + businessConcepts61 + verbsActions61
             + nounsObjects61 + expressionsPhrases61
+            + dailyLife62 + verbsActions62 + nounsObjects62
+            + adjectivesStates62 + expressionsPhrases62 + education62
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -19600,6 +19602,622 @@ enum SeedData {
                     ("In the name of love.", "愛の名のもとに。"),
                     ("In the name of justice.", "正義の名のもとに。")
                  ], ipa: "/ɪnðə nˈeɪm ɒv/")
+        ]
+    }
+
+    // MARK: - 日常・生活 (追加 62)
+
+    private static var dailyLife62: [Word] {
+        [
+            make("dispose of", "get rid of; throw away",
+                 "〜を処分する・捨てる",
+                 useCases: ["不要なものを廃棄するとき"],
+                 examples: [
+                    ("Dispose of the trash.", "ゴミを処分する。"),
+                    ("Dispose of old papers.", "古い書類を処分する。")
+                 ], ipa: "/dɪspˈəʊz ɒv/"),
+            make("leftover", "food remaining from a meal",
+                 "残り物・食べ残し",
+                 useCases: ["昨夜の食事の残りなどを表すとき"],
+                 examples: [
+                    ("Leftover pizza.", "残り物のピザ。"),
+                    ("Eat the leftovers.", "残り物を食べる。")
+                 ], ipa: "/lˈɛftəʊvɐ/"),
+            make("kettle", "a container for boiling water",
+                 "やかん・電気ケトル",
+                 useCases: ["お湯を沸かす器具を表すとき"],
+                 examples: [
+                    ("Put the kettle on.", "お湯を沸かして。"),
+                    ("Electric kettle.", "電気ケトル。")
+                 ], ipa: "/kˈɛtəl/"),
+            make("pet", "an animal kept for companionship",
+                 "ペット",
+                 useCases: ["家族として飼う動物を表すとき"],
+                 examples: [
+                    ("Have a pet dog.", "犬を飼っている。"),
+                    ("Pet shop.", "ペットショップ。")
+                 ], ipa: "/pˈɛt/"),
+            make("delicious", "having a very pleasant taste",
+                 "とても美味しい",
+                 useCases: ["味が素晴らしいことを表すとき"],
+                 examples: [
+                    ("This is delicious!", "これは美味しい!"),
+                    ("A delicious meal.", "美味しい食事。")
+                 ], ipa: "/dɪlˈɪʃəs/"),
+            make("drunk", "affected by alcohol",
+                 "酔っ払った",
+                 useCases: ["お酒で酔っている状態を表すとき"],
+                 examples: [
+                    ("Don't drive drunk.", "飲んで運転するな。"),
+                    ("He was a bit drunk.", "彼はちょっと酔ってた。")
+                 ], ipa: "/dɹˈʌŋk/"),
+            make("lint roller", "a sticky roller used to remove lint from clothes",
+                 "コロコロ(粘着クリーナー)",
+                 useCases: ["服のホコリや毛を取る道具を表すとき"],
+                 examples: [
+                    ("Use a lint roller.", "コロコロを使う。"),
+                    ("I need a lint roller.", "コロコロが必要。")
+                 ], ipa: "/lˈɪnt ɹˈəʊlɐ/"),
+            make("all year", "throughout the entire year",
+                 "一年中",
+                 useCases: ["年間を通じて続くことを表すとき"],
+                 examples: [
+                    ("Open all year.", "一年中営業。"),
+                    ("Warm all year.", "一年中暖かい。")
+                 ], ipa: "/ˈɔːl jˈiə/"),
+            make("audio silent", "with audio muted",
+                 "音声をオフにして",
+                 useCases: ["音声がない、または無音設定を表すとき"],
+                 examples: [
+                    ("Keep the audio silent.", "音声はオフのままに。"),
+                    ("Watch with audio silent.", "音声を消して見る。")
+                 ], ipa: "/ˈɔːdɪˌəʊ sˈaɪlənt/"),
+            make("tons of", "a large amount of",
+                 "大量の・たくさんの",
+                 useCases: ["多いことを口語で強調するとき"],
+                 examples: [
+                    ("Tons of work.", "仕事が山ほどある。"),
+                    ("Tons of fun.", "めちゃくちゃ楽しい。")
+                 ], ipa: "/tˈʌnz ɒv/"),
+            make("pass away", "die (a polite expression)",
+                 "亡くなる(婉曲表現)",
+                 useCases: ["人の死を丁寧に伝えるとき"],
+                 examples: [
+                    ("She passed away peacefully.", "彼女は安らかに亡くなった。"),
+                    ("He passed away last year.", "彼は昨年亡くなった。")
+                 ], ipa: "/pˈɑːs ɐwˈeɪ/"),
+            make("come closer", "approach nearer",
+                 "もっと近づく",
+                 useCases: ["人や物に近づくよう促すとき"],
+                 examples: [
+                    ("Come closer, please.", "もっと近づいて。"),
+                    ("Come closer to the screen.", "画面にもっと寄って。")
+                 ], ipa: "/kˈʌm klˈəʊsɐ/"),
+            make("opening soon", "about to open in the near future",
+                 "近日開店・近日公開",
+                 useCases: ["店や映画などがもうすぐ始まることを表すとき"],
+                 examples: [
+                    ("Opening soon!", "近日オープン!"),
+                    ("New store opening soon.", "新店舗が近日開店。")
+                 ], ipa: "/ˈəʊpənɪŋ sˈuːn/"),
+            make("closing day", "the final day of business or an event",
+                 "閉店日・最終日",
+                 useCases: ["閉店日や最終営業日を表すとき"],
+                 examples: [
+                    ("Today is closing day.", "今日が最終日。"),
+                    ("The store's closing day is Friday.", "閉店日は金曜日。")
+                 ], ipa: "/klˈəʊzɪŋ dˈeɪ/")
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 62)
+
+    private static var verbsActions62: [Word] {
+        [
+            make("cascade", "fall or flow in a series of stages",
+                 "段々に流れ落ちる・連鎖する",
+                 useCases: ["滝のように連続して流れる様を表すとき"],
+                 examples: [
+                    ("Water cascades down the rocks.", "水が岩を伝って流れ落ちる。"),
+                    ("Errors cascade through the system.", "エラーがシステム全体に連鎖する。")
+                 ], ipa: "/kɐskˈeɪd/"),
+            make("ascend", "go up; rise",
+                 "上昇する・登る",
+                 useCases: ["階段や地位を上がるとき"],
+                 examples: [
+                    ("Ascend the throne.", "王位に就く。"),
+                    ("The plane ascended.", "飛行機は上昇した。")
+                 ], ipa: "/ɐsˈɛnd/"),
+            make("force yourself to do", "make yourself do despite reluctance",
+                 "無理に〜する",
+                 useCases: ["気が進まないことを自分に強いるとき"],
+                 examples: [
+                    ("Force yourself to exercise.", "無理してでも運動する。"),
+                    ("Don't force yourself to eat.", "無理して食べないで。")
+                 ], ipa: "/fˈɔːs jɔːsˈɛlf tə dˈuː/"),
+            make("startle sb", "cause someone sudden surprise",
+                 "(人)をびっくりさせる",
+                 useCases: ["突然驚かせるとき"],
+                 examples: [
+                    ("You startled me.", "びっくりした。"),
+                    ("Don't startle the cat.", "猫を驚かせないで。")
+                 ], ipa: "/stˈɑːtəl sˈʌmbɒdɪ/"),
+            make("vow", "make a solemn promise",
+                 "誓う・誓い",
+                 useCases: ["強い約束をするとき"],
+                 examples: [
+                    ("Vow to do better.", "もっと頑張ると誓う。"),
+                    ("Marriage vows.", "結婚の誓い。")
+                 ], ipa: "/vˈaʊ/"),
+            make("count on", "rely on; trust",
+                 "〜を当てにする・頼りにする",
+                 useCases: ["人や物に頼ることを表すとき"],
+                 examples: [
+                    ("You can count on me.", "私に任せて。"),
+                    ("Count on the team.", "チームを頼りにする。")
+                 ], ipa: "/kˈaʊnt ˈɒn/"),
+            make("shift sth", "move something from one position to another",
+                 "〜を移す・転換する",
+                 useCases: ["位置や焦点を変えるとき"],
+                 examples: [
+                    ("Shift the focus.", "焦点を移す。"),
+                    ("Shift the boxes.", "箱を動かす。")
+                 ], ipa: "/ʃˈɪft sˈʌmθɪŋ/"),
+            make("shift the issue", "redirect the topic of discussion",
+                 "問題をずらす・論点をすり替える",
+                 useCases: ["話題や責任を別のところへずらすとき"],
+                 examples: [
+                    ("Don't shift the issue.", "論点をすり替えないで。"),
+                    ("He shifted the issue.", "彼は論点をずらした。")
+                 ], ipa: "/ʃˈɪft ðɪ ˈɪʃuː/"),
+            make("lie down", "rest in a horizontal position",
+                 "横になる",
+                 useCases: ["身体を横たえて休むとき"],
+                 examples: [
+                    ("Lie down for a nap.", "ちょっと横になる。"),
+                    ("I need to lie down.", "横になりたい。")
+                 ], ipa: "/lˈaɪ dˈaʊn/"),
+            make("sth lie in", "something rests or is rooted in",
+                 "〜は〜にある",
+                 useCases: ["原因や本質がどこにあるかを表すとき"],
+                 examples: [
+                    ("The truth lies in the details.", "真実は細部にある。"),
+                    ("The problem lies in the design.", "問題は設計にある。")
+                 ], ipa: "/sˈʌmθɪŋ lˈaɪ ˈɪn/"),
+            make("spark my interest", "ignite my curiosity",
+                 "私の興味をかき立てる",
+                 useCases: ["何かに関心を持ち始めるとき"],
+                 examples: [
+                    ("That sparked my interest.", "あれで興味が湧いた。"),
+                    ("Sparked my interest in art.", "アートへの関心に火がついた。")
+                 ], ipa: "/spˈɑːk maɪ ˈɪntɹɛst/"),
+            make("sth spark", "something triggers or ignites",
+                 "〜が引き起こす・きっかけを生む",
+                 useCases: ["小さなきっかけが大きな反応を呼ぶとき"],
+                 examples: [
+                    ("The comment sparked debate.", "その発言が議論を呼んだ。"),
+                    ("A spark of hope.", "希望の火種。")
+                 ], ipa: "/sˈʌmθɪŋ spˈɑːk/"),
+            make("blend in", "merge with surroundings",
+                 "周囲に溶け込む・混ざる",
+                 useCases: ["目立たず環境に溶け込むとき"],
+                 examples: [
+                    ("Blend in with the crowd.", "人混みに紛れる。"),
+                    ("Try to blend in.", "溶け込もうとする。")
+                 ], ipa: "/blˈɛnd ˈɪn/"),
+            make("reflect on", "think carefully about something past",
+                 "〜について深く考える",
+                 useCases: ["過去や経験を振り返るとき"],
+                 examples: [
+                    ("Reflect on your choices.", "選択を振り返る。"),
+                    ("Time to reflect on the year.", "一年を振り返る時。")
+                 ], ipa: "/ɹɪflˈɛkt ˈɒn/"),
+            make("hatch", "come out of an egg; devise a plan",
+                 "孵化する・(計画を)企てる",
+                 useCases: ["卵から生まれる、または計画を練るとき"],
+                 examples: [
+                    ("The eggs hatched.", "卵が孵った。"),
+                    ("Hatch a plan.", "計画を企てる。")
+                 ], ipa: "/hˈætʃ/"),
+            make("join together", "unite or combine",
+                 "結合する・一緒になる",
+                 useCases: ["人や物が一つになるとき"],
+                 examples: [
+                    ("Join together as one.", "一つになる。"),
+                    ("Join the pieces together.", "部品をくっつける。")
+                 ], ipa: "/dʒˈɔɪn təɡˈɛðɐ/"),
+            make("station", "place oneself or someone at a position",
+                 "配置する・(動詞)位置につける",
+                 useCases: ["人や物をある場所に配置するとき"],
+                 examples: [
+                    ("Station guards at the door.", "ドアに警備員を配置する。"),
+                    ("He was stationed in Germany.", "彼はドイツに配属された。")
+                 ], ipa: "/stˈeɪʃən/"),
+            make("phase in", "introduce gradually",
+                 "段階的に導入する",
+                 useCases: ["新制度や機能をゆっくり取り入れるとき"],
+                 examples: [
+                    ("Phase in the new system.", "新システムを段階導入する。"),
+                    ("Phase in the changes.", "変更を順次反映する。")
+                 ], ipa: "/fˈeɪz ˈɪn/"),
+            make("make a change", "alter something",
+                 "変化を起こす・変える",
+                 useCases: ["何かを意図的に変えるとき"],
+                 examples: [
+                    ("Make a change in your life.", "人生に変化を起こす。"),
+                    ("Time to make a change.", "変える時だ。")
+                 ], ipa: "/mˌeɪk ɐ tʃˈeɪndʒ/"),
+            make("predict sth bad", "foresee a negative outcome",
+                 "悪いことを予測する",
+                 useCases: ["望ましくない結果を予想するとき"],
+                 examples: [
+                    ("Don't predict sth bad.", "悪いことを予測しないで。"),
+                    ("Experts predict sth bad next year.", "来年は悪化すると専門家は予測する。")
+                 ], ipa: "/pɹɪdˈɪkt sˈʌmθɪŋ bˈæd/"),
+            make("save sb sth", "spare someone trouble or expense",
+                 "(人)に〜を省かせる・助ける",
+                 useCases: ["相手の手間や費用を省いてあげるとき"],
+                 examples: [
+                    ("Save me a seat.", "席をとっておいて。"),
+                    ("That'll save you time.", "それで時間が節約できる。")
+                 ], ipa: "/sˈeɪv sˈʌmbɒdɪ sˈʌmθɪŋ/"),
+            make("go in ahead", "go in before others",
+                 "先に入る",
+                 useCases: ["他より先に中へ入るとき"],
+                 examples: [
+                    ("You go in ahead.", "先に入ってて。"),
+                    ("Go in ahead of me.", "私より先に入って。")
+                 ], ipa: "/ɡˌəʊ ɪn ɐhˈɛd/")
+        ]
+    }
+
+    // MARK: - 名詞・物事 (追加 62)
+
+    private static var nounsObjects62: [Word] {
+        [
+            make("asking price", "the price requested by a seller",
+                 "売り出し価格",
+                 useCases: ["売り手が提示している価格を表すとき"],
+                 examples: [
+                    ("What's the asking price?", "売値はいくら？"),
+                    ("Above the asking price.", "売値以上で。")
+                 ], ipa: "/ˈɑːskɪŋ pɹˈaɪs/"),
+            make("net", "a mesh material; the remaining amount after deductions",
+                 "網・正味の",
+                 useCases: ["網状の物、または差し引き後の正味金額を表すとき"],
+                 examples: [
+                    ("A fishing net.", "漁網。"),
+                    ("Net income.", "純利益。")
+                 ], ipa: "/nˈɛt/"),
+            make("yard", "an area outside a house; a unit of length",
+                 "庭・ヤード(長さの単位)",
+                 useCases: ["家の外スペースや長さの単位を表すとき"],
+                 examples: [
+                    ("In the back yard.", "裏庭で。"),
+                    ("Three yards long.", "3ヤードの長さ。")
+                 ], ipa: "/jˈɑːd/"),
+            make("graveyard", "a burial ground; a cemetery",
+                 "墓地",
+                 useCases: ["墓のある場所を表すとき"],
+                 examples: [
+                    ("Visit the graveyard.", "墓地を訪れる。"),
+                    ("A quiet graveyard.", "静かな墓地。")
+                 ], ipa: "/ɡɹˈeɪvjɑːd/"),
+            make("ecstasy", "an overwhelming feeling of joy",
+                 "歓喜・恍惚",
+                 useCases: ["非常に強い喜びや恍惚状態を表すとき"],
+                 examples: [
+                    ("Pure ecstasy.", "純粋な歓喜。"),
+                    ("In ecstasy over the news.", "知らせに有頂天。")
+                 ], ipa: "/ˈɛkstəsɪ/"),
+            make("highlights", "the most interesting parts of something",
+                 "ハイライト・見どころ",
+                 useCases: ["注目すべき場面や髪のメッシュを表すとき"],
+                 examples: [
+                    ("Game highlights.", "試合のハイライト。"),
+                    ("Hair highlights.", "ハイライトの髪色。")
+                 ], ipa: "/hˈaɪlaɪts/"),
+            make("upper deck", "the higher level of a vehicle or ship",
+                 "上層階・上階デッキ",
+                 useCases: ["二階建てバスや船の上の階を表すとき"],
+                 examples: [
+                    ("Sit on the upper deck.", "上のデッキに座る。"),
+                    ("The upper deck has a view.", "上の階は眺めが良い。")
+                 ], ipa: "/ˌʌpɐ dˈɛk/"),
+            make("calf", "the back part of the lower leg; a young cow",
+                 "ふくらはぎ・子牛",
+                 useCases: ["脚のふくらはぎや子牛を表すとき"],
+                 examples: [
+                    ("Stretch your calves.", "ふくらはぎを伸ばす。"),
+                    ("A baby calf.", "子牛。")
+                 ], ipa: "/kˈɑːf/"),
+            make("slime", "a soft, sticky substance",
+                 "粘液・スライム",
+                 useCases: ["ぬるぬるした物質やおもちゃのスライムを表すとき"],
+                 examples: [
+                    ("Make slime.", "スライムを作る。"),
+                    ("Covered in slime.", "粘液まみれ。")
+                 ], ipa: "/slˈaɪm/"),
+            make("pipe", "a tube; a smoking device",
+                 "パイプ・管",
+                 useCases: ["水道管や喫煙具を表すとき"],
+                 examples: [
+                    ("Water pipe.", "水道管。"),
+                    ("Smoke a pipe.", "パイプタバコを吸う。")
+                 ], ipa: "/pˈaɪp/"),
+            make("roundup", "a summary of news or events",
+                 "総まとめ・要約",
+                 useCases: ["ニュースや出来事をまとめて伝えるとき"],
+                 examples: [
+                    ("News roundup.", "ニュースまとめ。"),
+                    ("A weekly roundup.", "週間まとめ。")
+                 ], ipa: "/ɹˈaʊndʌp/"),
+            make("notice period", "the time given before leaving a job",
+                 "予告期間",
+                 useCases: ["退職や契約終了前の通知期間を表すとき"],
+                 examples: [
+                    ("One month notice period.", "1か月の予告期間。"),
+                    ("My notice period is two weeks.", "予告期間は2週間。")
+                 ], ipa: "/nˈəʊtɪs pˈiəɹɪəd/"),
+            make("opponent", "a person on the other side of a contest",
+                 "対戦相手",
+                 useCases: ["試合や議論の相手を表すとき"],
+                 examples: [
+                    ("A tough opponent.", "手強い相手。"),
+                    ("Face your opponent.", "相手と向き合う。")
+                 ], ipa: "/əpˈəʊnənt/"),
+            make("hallucination", "a perception of something not actually present",
+                 "幻覚",
+                 useCases: ["実在しないものが見えたり聞こえたりする状態"],
+                 examples: [
+                    ("Have hallucinations.", "幻覚を見る。"),
+                    ("Drug-induced hallucination.", "薬物による幻覚。")
+                 ], ipa: "/hɐlˌuːsɪnˈeɪʃən/"),
+            make("ivory coast", "the country Côte d'Ivoire in West Africa",
+                 "コートジボワール",
+                 useCases: ["西アフリカの国を表すとき"],
+                 examples: [
+                    ("Travel to Ivory Coast.", "コートジボワールに行く。"),
+                    ("From Ivory Coast.", "コートジボワール出身。")
+                 ], ipa: "/ˈaɪvəɹɪ kˈəʊst/"),
+            make("joint", "shared; a place where two bones meet",
+                 "共同の・関節",
+                 useCases: ["共同で行うことや体の関節を表すとき"],
+                 examples: [
+                    ("Joint effort.", "共同作業。"),
+                    ("Knee joint.", "膝の関節。")
+                 ], ipa: "/dʒˈɔɪnt/"),
+            make("cluster", "a group of similar things close together",
+                 "群れ・集まり",
+                 useCases: ["近くに集まったもののまとまりを表すとき"],
+                 examples: [
+                    ("A cluster of stars.", "星団。"),
+                    ("Cluster of houses.", "家々の集まり。")
+                 ], ipa: "/klˈʌstɐ/"),
+            make("surplus", "an amount left over; extra",
+                 "余剰・黒字",
+                 useCases: ["必要分以上に残った量を表すとき"],
+                 examples: [
+                    ("Trade surplus.", "貿易黒字。"),
+                    ("Food surplus.", "食料の余剰。")
+                 ], ipa: "/sˈɜːpləs/"),
+            make("sensitivity", "the quality of being easily affected or sensing",
+                 "感度・繊細さ",
+                 useCases: ["敏感さや受容性、機器の感度を表すとき"],
+                 examples: [
+                    ("Skin sensitivity.", "肌の敏感さ。"),
+                    ("High sensitivity.", "高い感度。")
+                 ], ipa: "/sˌɛnsɪtˈɪvɪtɪ/"),
+            make("apprenticeship", "a period training under a skilled worker",
+                 "見習い期間・修行",
+                 useCases: ["熟練者のもとで技を学ぶ期間を表すとき"],
+                 examples: [
+                    ("Complete an apprenticeship.", "見習い期間を終える。"),
+                    ("Apprenticeship program.", "見習い制度。")
+                 ], ipa: "/ɐpɹˈɛntɪsʃˌɪp/")
+        ]
+    }
+
+    // MARK: - 形容詞・状態 (追加 62)
+
+    private static var adjectivesStates62: [Word] {
+        [
+            make("suit sth", "be acceptable or appropriate for",
+                 "〜に合う・〜に向いている",
+                 useCases: ["人や状況に適していると述べるとき"],
+                 examples: [
+                    ("Does this time suit you?", "この時間で大丈夫？"),
+                    ("That color suits you.", "その色似合うよ。")
+                 ], ipa: "/sˈuːt sˈʌmθɪŋ/"),
+            make("suitable", "right or appropriate for a purpose",
+                 "ふさわしい・適した",
+                 useCases: ["目的に合った人や物を表すとき"],
+                 examples: [
+                    ("A suitable candidate.", "適任者。"),
+                    ("Suitable for kids.", "子ども向け。")
+                 ], ipa: "/sˈuːtəbəl/"),
+            make("be opposed to", "be against; disagree with",
+                 "〜に反対している",
+                 useCases: ["何かに賛成しない立場を表すとき"],
+                 examples: [
+                    ("I'm opposed to the plan.", "その計画には反対だ。"),
+                    ("They are opposed to change.", "彼らは変化に反対だ。")
+                 ], ipa: "/biː əpˈəʊzd tuː/"),
+            make("crystal clear", "completely transparent or easy to understand",
+                 "極めて明瞭な",
+                 useCases: ["とても透明・明快なことを表すとき"],
+                 examples: [
+                    ("Crystal clear water.", "透き通った水。"),
+                    ("The rules are crystal clear.", "ルールは極めて明確だ。")
+                 ], ipa: "/kɹˈɪstəl klˈiə/"),
+            make("good enough", "sufficient; acceptable",
+                 "十分なほど良い",
+                 useCases: ["合格水準を満たしていることを表すとき"],
+                 examples: [
+                    ("That's good enough.", "それで十分。"),
+                    ("Good enough for me.", "私には十分だ。")
+                 ], ipa: "/ɡˈʊd ɪnˈʌf/"),
+            make("sure enough", "as expected",
+                 "案の定・やっぱり",
+                 useCases: ["予想通りの結果を表すとき"],
+                 examples: [
+                    ("Sure enough, he was late.", "案の定、彼は遅れた。"),
+                    ("Sure enough, it rained.", "やっぱり雨になった。")
+                 ], ipa: "/ʃˈɔːɹ ɪnˈʌf/"),
+            make("be down about", "feel sad regarding something",
+                 "〜について落ち込んでいる",
+                 useCases: ["特定のことで気落ちしている状態を表すとき"],
+                 examples: [
+                    ("He's down about the loss.", "彼は敗北で落ち込んでいる。"),
+                    ("Don't be down about it.", "そのことで落ち込まないで。")
+                 ], ipa: "/biː dˌaʊn ɐbˈaʊt/"),
+            make("underway", "in progress; happening now",
+                 "進行中で",
+                 useCases: ["計画や作業がすでに動いていることを表すとき"],
+                 examples: [
+                    ("Work is underway.", "作業は進行中。"),
+                    ("Plans are underway.", "計画が進んでいる。")
+                 ], ipa: "/ˌʌndəwˈeɪ/"),
+            make("arguably", "as may be shown by argument; possibly",
+                 "おそらく・議論の余地はあるが",
+                 useCases: ["議論はあれど〜だと言うとき"],
+                 examples: [
+                    ("Arguably the best.", "間違いなく最高と言える。"),
+                    ("Arguably true.", "ほぼ真実だろう。")
+                 ], ipa: "/ˈɑːɡjuːəblɪ/")
+        ]
+    }
+
+    // MARK: - 表現・フレーズ (追加 62)
+
+    private static var expressionsPhrases62: [Word] {
+        [
+            make("it goes without saying", "it is obvious",
+                 "言うまでもなく",
+                 useCases: ["明らかなことを念のため述べるとき"],
+                 examples: [
+                    ("It goes without saying.", "言うまでもないね。"),
+                    ("It goes without saying that safety matters.", "言うまでもなく安全は大事だ。")
+                 ], ipa: "/ɪt ɡəʊz wɪðˌaʊt sˈeɪɪŋ/"),
+            make("you don't have to force yourself to do", "you don't need to push yourself",
+                 "無理して〜しなくていい",
+                 useCases: ["相手に無理を強いないよう伝えるとき"],
+                 examples: [
+                    ("You don't have to force yourself to eat.", "無理に食べなくていい。"),
+                    ("You don't have to force yourself to go.", "無理に行かなくていい。")
+                 ], ipa: "/juː dˈəʊnt hæv tə fˈɔːs jɔːsˈɛlf tə dˈuː/"),
+            make("since you've got the chance", "while you have the opportunity",
+                 "せっかくの機会だから",
+                 useCases: ["せっかくの機会を活かすよう促すとき"],
+                 examples: [
+                    ("Since you've got the chance, try it.", "せっかくだから試してみて。"),
+                    ("Since you've got the chance, ask him.", "せっかくの機会、彼に聞いて。")
+                 ], ipa: "/sˈɪns juːv ɡɒt ðə tʃˈɑːns/"),
+            make("it that's how it will end up", "if that's the eventual outcome",
+                 "もしそうなるなら",
+                 useCases: ["想定される結末を述べるとき"],
+                 examples: [
+                    ("It that's how it will end up, so be it.", "そうなるならそれでいい。"),
+                    ("It that's how it will end up, I'll prepare.", "そうなるなら備えるよ。")
+                 ], ipa: "/ɪt ðæts hˌaʊ ɪt wɪl ˈɛnd ˈʌp/"),
+            make("at the time of", "during the moment of",
+                 "〜の時点で",
+                 useCases: ["特定の時点や瞬間に起きたことを述べるとき"],
+                 examples: [
+                    ("At the time of writing.", "執筆時点で。"),
+                    ("At the time of the accident.", "事故が起きた時に。")
+                 ], ipa: "/æt ðə tˈaɪm ɒv/"),
+            make("I'd really rather you didn't", "I really prefer that you don't",
+                 "本当に〜しないでほしい",
+                 useCases: ["丁寧だが強く相手の行為を控えるよう求めるとき"],
+                 examples: [
+                    ("I'd really rather you didn't smoke here.", "ここでは吸わないでほしい。"),
+                    ("I'd really rather you didn't tell him.", "彼に言わないでほしい。")
+                 ], ipa: "/aɪd ɹˈiəlɪ ɹˈɑːðɐ juː dˈɪdnt/"),
+            make("there used to be more", "there were previously more",
+                 "昔はもっとあった",
+                 useCases: ["以前と比べ減ったものを述べるとき"],
+                 examples: [
+                    ("There used to be more shops.", "昔はもっと店があった。"),
+                    ("There used to be more snow.", "昔はもっと雪が降った。")
+                 ], ipa: "/ðeə jˈuːzd təbɪ mˈɔː/"),
+            make("in your dream", "not going to happen; never (sarcastic)",
+                 "夢でも見てな・あり得ない",
+                 useCases: ["相手の望みを揶揄するくだけた表現"],
+                 examples: [
+                    ("In your dream!", "夢のまた夢だね。"),
+                    ("Win the lottery? In your dream.", "宝くじ当たる？夢見ろ。")
+                 ], ipa: "/ɪn jɔː dɹˈiːm/"),
+            make("so much so that", "to such a great extent that",
+                 "あまりに〜なので",
+                 useCases: ["程度がひどく結果を引き起こすことを述べるとき"],
+                 examples: [
+                    ("It rained, so much so that we cancelled.", "雨があまりにひどくて中止した。"),
+                    ("She loves it, so much so that she cries.", "好きすぎて泣くほどだ。")
+                 ], ipa: "/sˈəʊ mˌʌtʃ sˌəʊ ðˈæt/"),
+            make("be included in", "be part of",
+                 "〜に含まれている",
+                 useCases: ["何かの中に入っているものを述べるとき"],
+                 examples: [
+                    ("Tax is included in the price.", "価格に税が含まれている。"),
+                    ("Breakfast is included in the room.", "朝食付き。")
+                 ], ipa: "/biː ɪŋklˈuːdɪd ˈɪn/"),
+            make("the point of", "the purpose of",
+                 "〜の目的・意義",
+                 useCases: ["行為の目的を問うとき"],
+                 examples: [
+                    ("What's the point of this?", "これの目的は？"),
+                    ("Miss the point of it.", "本質を見落とす。")
+                 ], ipa: "/ðə pˈɔɪnt ɒv/"),
+            make("what impacts do you think sth have on", "what effects do you believe X has on",
+                 "〜がどんな影響を及ぼすと思いますか",
+                 useCases: ["相手に影響の見解を尋ねるとき"],
+                 examples: [
+                    ("What impacts do you think AI have on jobs?", "AIが仕事に与える影響をどう思う？"),
+                    ("What impacts do you think SNS have on teens?", "SNSが10代に与える影響は？")
+                 ], ipa: "/wˌɒt ˈɪmpækts dˈuː juː θˈɪŋk sˈʌmθɪŋ hæv ˈɒn/")
+        ]
+    }
+
+    // MARK: - 教育・その他 (追加 62)
+
+    private static var education62: [Word] {
+        [
+            make("grade", "a level of quality or a mark for schoolwork",
+                 "成績・等級",
+                 useCases: ["学校の評価や品質ランクを表すとき"],
+                 examples: [
+                    ("Get a good grade.", "良い成績を取る。"),
+                    ("Top grade beef.", "最高ランクの牛肉。")
+                 ], ipa: "/ɡɹˈeɪd/"),
+            make("subject", "a topic or course of study",
+                 "科目・主題",
+                 useCases: ["学校の科目や話題を表すとき"],
+                 examples: [
+                    ("Favorite subject.", "得意科目。"),
+                    ("Change the subject.", "話題を変える。")
+                 ], ipa: "/sˈʌbdʒɛkt/"),
+            make("coursework", "work done during a course of study",
+                 "授業課題・コース課題",
+                 useCases: ["授業期間中に課される課題を表すとき"],
+                 examples: [
+                    ("Submit your coursework.", "課題を提出する。"),
+                    ("Heavy coursework.", "重い課題。")
+                 ], ipa: "/kˈɔːsjuːˌɜːk/"),
+            make("syllabus", "an outline of a course's topics",
+                 "シラバス・授業計画",
+                 useCases: ["授業の内容や予定を示す資料を表すとき"],
+                 examples: [
+                    ("Check the syllabus.", "シラバスを確認する。"),
+                    ("On the syllabus.", "授業計画に含まれている。")
+                 ], ipa: "/sˈɪlæbəs/"),
+            make("findings", "results of an investigation or study",
+                 "発見・調査結果",
+                 useCases: ["研究や調査で得られた結果を表すとき"],
+                 examples: [
+                    ("Present the findings.", "調査結果を発表する。"),
+                    ("Key findings.", "主要な発見。")
+                 ], ipa: "/fˈaɪndɪŋz/")
         ]
     }
 }
