@@ -125,6 +125,8 @@ enum SeedData {
             + verbsAndPhrases63 + nounsAndMisc63 + statesAndFaults63
             + weatherHealth64 + travelLife64 + verbsActions64
             + nounsConcepts64 + expressions64
+            + workCareer65 + idiomsCasual65 + verbsAndActions65
+            + nounsAndObjects65 + adjectivesAndStates65
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -21314,6 +21316,475 @@ enum SeedData {
                     ("Make things done at home.", "家で済ませる。"),
                     ("Make things repaired at home.", "家で修理してもらう。")
                  ], ipa: "/mˌeɪk θˈɪŋz pˌiːpˈiː æt hˈəʊm/")
+        ]
+    }
+
+    // MARK: - 仕事・キャリア (追加 65)
+
+    private static var workCareer65: [Word] {
+        [
+            make("vocational", "relating to job skills training",
+                 "職業訓練の・専門学校の",
+                 useCases: ["特定の職業のための訓練・教育を表すとき"],
+                 examples: [
+                    ("Vocational school.", "職業訓練学校。"),
+                    ("Vocational training.", "職業訓練。")
+                 ], ipa: "/vəʊkˈeɪʃənəl/"),
+            make("vacant", "empty; not occupied",
+                 "空いている・空席の",
+                 useCases: ["席や部屋、役職が空いていることを表すとき"],
+                 examples: [
+                    ("A vacant seat.", "空席。"),
+                    ("A vacant position.", "空きポジション。")
+                 ], ipa: "/vˈeɪkənt/"),
+            make("occupation", "a person's job or activity",
+                 "職業・占領",
+                 useCases: ["仕事や使用状態、占拠を表すとき"],
+                 examples: [
+                    ("State your occupation.", "職業を述べてください。"),
+                    ("Military occupation.", "軍事占領。")
+                 ], ipa: "/ˌɒkjʊpˈeɪʃən/"),
+            make("occupy", "fill space or time; live in a place",
+                 "占める・使用する",
+                 useCases: ["場所や時間、地位を占めるとき"],
+                 examples: [
+                    ("Occupy the room.", "部屋を使う。"),
+                    ("Occupy your mind.", "気を紛らわす。")
+                 ], ipa: "/ˈɒkjʊpˌaɪ/"),
+            make("supply and demand", "the relation between availability and need",
+                 "需要と供給",
+                 useCases: ["経済での需要と供給の関係を表すとき"],
+                 examples: [
+                    ("Driven by supply and demand.", "需給で動く。"),
+                    ("Supply and demand balance.", "需給のバランス。")
+                 ], ipa: "/səplˈaɪ ænd dɪmˈɑːnd/"),
+            make("between jobs", "currently unemployed",
+                 "(婉曲)無職で・転職中で",
+                 useCases: ["転職活動中の状態を遠回しに表すとき"],
+                 examples: [
+                    ("I'm between jobs.", "今は転職中なんだ。"),
+                    ("He's between jobs right now.", "彼は今仕事を探している。")
+                 ], ipa: "/bɪtwˌiːn dʒˈɒbz/"),
+            make("happy hour", "a period when drinks are cheaper",
+                 "ハッピーアワー",
+                 useCases: ["飲食店で割引時間帯を表すとき"],
+                 examples: [
+                    ("Happy hour starts at five.", "ハッピーアワーは5時から。"),
+                    ("Catch happy hour.", "ハッピーアワーに行く。")
+                 ], ipa: "/hˈæpɪ ˈaʊɐ/"),
+            make("expatriate", "a person living outside their native country",
+                 "国外居住者・駐在員",
+                 useCases: ["海外に住む人を指すとき"],
+                 examples: [
+                    ("Expatriate workers.", "海外駐在員。"),
+                    ("Life as an expatriate.", "海外居住者としての暮らし。")
+                 ], ipa: "/ɪkspˈætɹɪˌeɪt/")
+        ]
+    }
+
+    // MARK: - イディオム・口語 (追加 65)
+
+    private static var idiomsCasual65: [Word] {
+        [
+            make("spoil the beans", "reveal a secret (variant of spill the beans)",
+                 "秘密をバラす",
+                 useCases: ["うっかり秘密を漏らすときに使う口語表現"],
+                 examples: [
+                    ("Don't spoil the beans.", "秘密をバラさないで。"),
+                    ("She spoiled the beans.", "彼女がバラしちゃった。")
+                 ], ipa: "/spˈɔɪl ðə bˈiːnz/"),
+            make("have a ball", "have a very enjoyable time",
+                 "とても楽しむ",
+                 useCases: ["大いに楽しんでいるときの口語表現"],
+                 examples: [
+                    ("We had a ball.", "めっちゃ楽しかった。"),
+                    ("Have a ball at the party.", "パーティで楽しんで。")
+                 ], ipa: "/hæv ɐ bˈɔːl/"),
+            make("cold feet", "a sudden loss of confidence",
+                 "急に怖気づくこと",
+                 useCases: ["土壇場で不安になり腰が引けるとき"],
+                 examples: [
+                    ("Get cold feet.", "怖気づく。"),
+                    ("Don't get cold feet now.", "今になって怖気づくな。")
+                 ], ipa: "/kˈəʊld fˈiːt/"),
+            make("washed up", "no longer successful or relevant",
+                 "落ち目の・もう終わった",
+                 useCases: ["かつて活躍したが今は影が薄い人を表すとき"],
+                 examples: [
+                    ("He's washed up.", "彼はもう落ち目だ。"),
+                    ("A washed up actor.", "落ちぶれた俳優。")
+                 ], ipa: "/wˈɒʃt ˈʌp/"),
+            make("get real", "be realistic; stop fantasizing",
+                 "現実を見ろ",
+                 useCases: ["相手に現実的になるよう促すとき"],
+                 examples: [
+                    ("Oh, get real!", "おい、現実を見ろよ。"),
+                    ("Get real about it.", "それについて現実的になって。")
+                 ], ipa: "/ɡɛt ɹˈiəl/"),
+            make("off color", "slightly unwell; improper or rude",
+                 "体調がいまいち・きわどい",
+                 useCases: ["体調不良や下品な冗談を表すとき"],
+                 examples: [
+                    ("I feel a bit off color.", "ちょっと体調が悪い。"),
+                    ("An off color joke.", "きわどい冗談。")
+                 ], ipa: "/ˈɒf kˈʌlɐ/"),
+            make("chin up", "stay cheerful; keep your spirits up",
+                 "元気出して",
+                 useCases: ["落ち込んでいる人を励ますとき"],
+                 examples: [
+                    ("Chin up, mate!", "元気出せよ。"),
+                    ("Chin up, it'll be okay.", "気を取り直して、大丈夫だよ。")
+                 ], ipa: "/tʃˈɪn ˈʌp/"),
+            make("live in my head rent free", "occupy my thoughts constantly",
+                 "頭の中に居座っている",
+                 useCases: ["気になって頭から離れない人や考えを表すとき"],
+                 examples: [
+                    ("That song lives in my head rent free.", "あの曲が頭から離れない。"),
+                    ("He lives in my head rent free.", "彼のことがずっと頭にある。")
+                 ], ipa: "/lˈɪv ɪn maɪ hˈɛd ɹˈɛnt fɹˈiː/"),
+            make("toss and turn", "be unable to sleep, moving restlessly",
+                 "寝返りばかり打つ",
+                 useCases: ["眠れずに何度も寝返りを打つとき"],
+                 examples: [
+                    ("I tossed and turned all night.", "一晩中寝返りを打っていた。"),
+                    ("Stop tossing and turning.", "そんなに寝返り打たないで。")
+                 ], ipa: "/tˈɒs ænd tˈɜːn/"),
+            make("sleep like a log", "sleep very deeply",
+                 "ぐっすり眠る",
+                 useCases: ["まったく目を覚まさず深く眠ったときの口語"],
+                 examples: [
+                    ("I slept like a log.", "ぐっすり寝た。"),
+                    ("Slept like a log after the hike.", "ハイクの後ぐっすり眠った。")
+                 ], ipa: "/slˈiːp lˈaɪk ɐ lˈɒɡ/"),
+            make("mean a lot", "be very important or meaningful",
+                 "とても意味がある・嬉しい",
+                 useCases: ["相手の好意などに深い感謝を伝えるとき"],
+                 examples: [
+                    ("It means a lot to me.", "それは私にとってとても大事。"),
+                    ("Your help means a lot.", "君の助けは本当にありがたい。")
+                 ], ipa: "/mˈiːn ɐ lˈɒt/"),
+            make("to my surprise", "surprisingly to me",
+                 "驚いたことに",
+                 useCases: ["予期しない展開を伝えるとき"],
+                 examples: [
+                    ("To my surprise, he agreed.", "驚いたことに彼は同意した。"),
+                    ("To my surprise, it worked.", "驚いたことにうまくいった。")
+                 ], ipa: "/tə maɪ səpɹˈaɪz/"),
+            make("have you by any chance", "do you happen to",
+                 "もしかして〜したことある？",
+                 useCases: ["丁寧かつ控えめに尋ねるとき"],
+                 examples: [
+                    ("Have you by any chance seen my keys?", "もしかして私の鍵を見ませんでした？"),
+                    ("Have you by any chance been to Japan?", "もしかして日本に行ったことありますか？")
+                 ], ipa: "/hæv juː baɪ ˌɛnɪ tʃˈɑːns/")
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 65)
+
+    private static var verbsAndActions65: [Word] {
+        [
+            make("leak", "let liquid or info escape",
+                 "漏れる・漏らす",
+                 useCases: ["液体や情報、ガスなどが漏れるとき"],
+                 examples: [
+                    ("The roof leaks.", "屋根から雨漏りする。"),
+                    ("Leak the news.", "ニュースをリークする。")
+                 ], ipa: "/lˈiːk/"),
+            make("inflate", "fill with air; increase in price",
+                 "膨らませる・値上がりする",
+                 useCases: ["風船に空気を入れる、物価が上がるとき"],
+                 examples: [
+                    ("Inflate the tire.", "タイヤに空気を入れる。"),
+                    ("Inflate the price.", "値段を釣り上げる。")
+                 ], ipa: "/ɪnflˈeɪt/"),
+            make("worsen", "make or become worse",
+                 "悪化する・悪化させる",
+                 useCases: ["状況や体調が悪くなるとき"],
+                 examples: [
+                    ("His health worsened.", "彼の体調は悪化した。"),
+                    ("Worsen the problem.", "問題を悪化させる。")
+                 ], ipa: "/wˈɜːsən/"),
+            make("leave sth unsupervised", "leave something without watching",
+                 "〜を放置したままにする",
+                 useCases: ["注意せずに置きっぱなしにすることを表すとき"],
+                 examples: [
+                    ("Don't leave kids unsupervised.", "子どもを放置しないで。"),
+                    ("Leave it unsupervised at your own risk.", "目を離すなら自己責任。")
+                 ], ipa: "/lˈiːv sˈʌmθɪŋ ʌnsˈuːpəvˌaɪzd/"),
+            make("take the leak", "take a piss; urinate (slang)",
+                 "おしっこに行く(俗)",
+                 useCases: ["小便に行くことのくだけた言い方"],
+                 examples: [
+                    ("Need to take the leak.", "ちょっとトイレ行ってくる。"),
+                    ("Take a quick leak.", "ささっと用を足す。")
+                 ], ipa: "/tˈeɪk ðə lˈiːk/"),
+            make("inhale", "breathe in",
+                 "息を吸う・吸い込む",
+                 useCases: ["息や空気を取り込むとき"],
+                 examples: [
+                    ("Inhale deeply.", "深く息を吸って。"),
+                    ("Inhale the smoke.", "煙を吸い込む。")
+                 ], ipa: "/ɪnhˈeɪl/"),
+            make("blast", "an explosion; have a great time (slang)",
+                 "爆発・最高に楽しい時間",
+                 useCases: ["爆発や、すごく楽しい時間を表すとき"],
+                 examples: [
+                    ("A loud blast.", "大きな爆発音。"),
+                    ("We had a blast.", "最高に楽しかった。")
+                 ], ipa: "/blˈɑːst/"),
+            make("play up", "exaggerate; emphasize",
+                 "強調する・大げさにする",
+                 useCases: ["特徴を目立たせるとき"],
+                 examples: [
+                    ("Play up your strengths.", "長所を強調する。"),
+                    ("Play up the drama.", "ドラマチックに見せる。")
+                 ], ipa: "/plˈeɪ ˈʌp/"),
+            make("save sth", "keep safe or set aside for later",
+                 "〜を保存する・取っておく",
+                 useCases: ["データを保存する、後で使うために取っておくとき"],
+                 examples: [
+                    ("Save the file.", "ファイルを保存する。"),
+                    ("Save some for me.", "私の分も残しといて。")
+                 ], ipa: "/sˈeɪv sˈʌmθɪŋ/"),
+            make("limit sth", "set a restriction on",
+                 "〜を制限する",
+                 useCases: ["量や時間を制限するとき"],
+                 examples: [
+                    ("Limit screen time.", "画面時間を制限する。"),
+                    ("Limit your intake.", "摂取量を抑える。")
+                 ], ipa: "/lˈɪmɪt sˈʌmθɪŋ/"),
+            make("have an attitude", "show a hostile or arrogant manner",
+                 "態度が悪い・反抗的だ",
+                 useCases: ["生意気な態度を取っている人を表すとき"],
+                 examples: [
+                    ("Don't have an attitude with me.", "私に生意気な態度を取らないで。"),
+                    ("She has an attitude today.", "彼女今日は当たりが強い。")
+                 ], ipa: "/hæv ɐn ˈætɪtjˌuːd/"),
+            make("cover up", "hide or conceal",
+                 "隠す・隠蔽する",
+                 useCases: ["失敗や事実を隠そうとするとき"],
+                 examples: [
+                    ("Cover up the truth.", "真実を隠す。"),
+                    ("Cover up a mistake.", "失敗を取り繕う。")
+                 ], ipa: "/kˈʌvɐɹ ˈʌp/"),
+            make("misplace", "lose something temporarily",
+                 "置き場所を忘れる・置き忘れる",
+                 useCases: ["どこに置いたか分からなくなるとき"],
+                 examples: [
+                    ("I misplaced my keys.", "鍵をどこに置いたか分からない。"),
+                    ("Don't misplace it.", "置き忘れないで。")
+                 ], ipa: "/mɪsplˈeɪs/"),
+            make("dislike", "feel aversion to; a feeling of distaste",
+                 "嫌う・嫌悪感",
+                 useCases: ["何かが嫌いだと述べるとき"],
+                 examples: [
+                    ("I dislike loud noises.", "うるさい音が嫌い。"),
+                    ("A strong dislike.", "強い嫌悪。")
+                 ], ipa: "/dɪslˈaɪk/")
+        ]
+    }
+
+    // MARK: - 名詞・物事 (追加 65)
+
+    private static var nounsAndObjects65: [Word] {
+        [
+            make("exit", "the way out of a place",
+                 "出口・退出",
+                 useCases: ["出口や退出することを表すとき"],
+                 examples: [
+                    ("Emergency exit.", "非常口。"),
+                    ("Exit the room.", "部屋を出る。")
+                 ], ipa: "/ˈɛɡzɪt/"),
+            make("way out", "an exit; a solution to a problem",
+                 "出口・解決法",
+                 useCases: ["建物の出口や、困難からの抜け道を表すとき"],
+                 examples: [
+                    ("Find a way out.", "出口(解決策)を見つける。"),
+                    ("There's no way out.", "逃げ道はない。")
+                 ], ipa: "/wˈeɪ ˈaʊt/"),
+            make("mud", "wet soil that is soft and sticky",
+                 "泥",
+                 useCases: ["雨上がりの泥や泥遊びを表すとき"],
+                 examples: [
+                    ("Stuck in the mud.", "泥にはまる。"),
+                    ("Cover in mud.", "泥まみれ。")
+                 ], ipa: "/mˈʌd/"),
+            make("rubber", "a flexible material used in tires; an eraser",
+                 "ゴム・消しゴム",
+                 useCases: ["ゴム製品や消しゴムを表すとき(英)"],
+                 examples: [
+                    ("Rubber tires.", "ゴム製のタイヤ。"),
+                    ("Pass me a rubber.", "消しゴム取って。")
+                 ], ipa: "/ɹˈʌbɐ/"),
+            make("clutch", "grasp tightly; a clutch bag; vehicle pedal",
+                 "握り締める・クラッチバッグ",
+                 useCases: ["強く握る、または車のクラッチや小型バッグを指す"],
+                 examples: [
+                    ("Clutch the bag tightly.", "バッグをしっかり握って。"),
+                    ("Press the clutch.", "クラッチを踏む。")
+                 ], ipa: "/klˈʌtʃ/"),
+            make("selfie", "a photo of oneself taken with a phone",
+                 "自撮り写真",
+                 useCases: ["自分自身を写した写真を表すとき"],
+                 examples: [
+                    ("Take a selfie.", "自撮りする。"),
+                    ("Group selfie.", "みんなで自撮り。")
+                 ], ipa: "/sˈɛlfɪ/"),
+            make("boob", "a breast (slang); a foolish mistake",
+                 "おっぱい(俗)・失敗",
+                 useCases: ["胸を指す俗語や、失敗を意味するくだけた語"],
+                 examples: [
+                    ("That was a boob.", "あれはミスだった。"),
+                    ("Boob job.", "豊胸手術。")
+                 ], ipa: "/bˈuːb/"),
+            make("bean", "a seed of certain plants used as food",
+                 "豆",
+                 useCases: ["コーヒー豆や食用の豆を表すとき"],
+                 examples: [
+                    ("Coffee bean.", "コーヒー豆。"),
+                    ("Black beans.", "黒豆。")
+                 ], ipa: "/bˈiːn/"),
+            make("shade", "an area shielded from light; a slight nuance",
+                 "日陰・色合い",
+                 useCases: ["日差しを遮る場所や色のニュアンスを表すとき"],
+                 examples: [
+                    ("Sit in the shade.", "日陰に座る。"),
+                    ("A nice shade of blue.", "いい青の色合い。")
+                 ], ipa: "/ʃˈeɪd/"),
+            make("grass", "green plants growing in lawns and fields",
+                 "草・芝",
+                 useCases: ["草や芝生を表すとき"],
+                 examples: [
+                    ("Cut the grass.", "芝を刈る。"),
+                    ("Lie on the grass.", "芝の上に寝転がる。")
+                 ], ipa: "/ɡɹˈɑːs/"),
+            make("grasshopper", "a leaping insect with long hind legs",
+                 "バッタ・キリギリス",
+                 useCases: ["飛び跳ねる昆虫を表すとき"],
+                 examples: [
+                    ("A grasshopper jumped.", "バッタが跳ねた。"),
+                    ("Like a grasshopper.", "バッタみたい。")
+                 ], ipa: "/ɡɹˈɑːshɒpɐ/"),
+            make("outlier", "a value or person that differs much from others",
+                 "外れ値・例外的な存在",
+                 useCases: ["集団から大きく外れた値や人を表すとき"],
+                 examples: [
+                    ("Remove the outlier.", "外れ値を除く。"),
+                    ("He's an outlier.", "彼は例外的だ。")
+                 ], ipa: "/ˈaʊtlˌaɪə/"),
+            make("craftsmanship", "skill in creating things by hand",
+                 "職人技・匠の技",
+                 useCases: ["手作業の高い技術を表すとき"],
+                 examples: [
+                    ("Excellent craftsmanship.", "素晴らしい職人技。"),
+                    ("Japanese craftsmanship.", "日本の匠の技。")
+                 ], ipa: "/kɹˈɑːftsmənʃˌɪp/"),
+            make("handcraft", "an item made by hand; making things by hand",
+                 "手工芸・手作り品",
+                 useCases: ["手作りの工芸品を表すとき"],
+                 examples: [
+                    ("Handcraft a chair.", "手作りで椅子を作る。"),
+                    ("Local handcraft.", "地元の手工芸品。")
+                 ], ipa: "/hˈændkɹɑːft/"),
+            make("wellbeing", "the state of being healthy and happy",
+                 "幸福・健康",
+                 useCases: ["心身ともに良好な状態を表すとき"],
+                 examples: [
+                    ("Mental wellbeing.", "メンタルの健康。"),
+                    ("Care for your wellbeing.", "心身の健康に気を配る。")
+                 ], ipa: "/wˈɛlbiːɪŋ/"),
+            make("carpet", "thick fabric covering a floor",
+                 "じゅうたん・カーペット",
+                 useCases: ["床に敷く布を表すとき"],
+                 examples: [
+                    ("Vacuum the carpet.", "カーペットに掃除機をかける。"),
+                    ("Red carpet.", "レッドカーペット。")
+                 ], ipa: "/kˈɑːpɪt/"),
+            make("secret area", "a hidden or restricted zone",
+                 "秘密の場所",
+                 useCases: ["隠された区画や立ち入り禁止区域を表すとき"],
+                 examples: [
+                    ("Find a secret area.", "秘密の場所を見つける。"),
+                    ("Enter the secret area.", "秘密の区域に入る。")
+                 ], ipa: "/sˈiːkɹɪt ˈeəɹiə/"),
+            make("a bunch of socks", "many pairs of socks",
+                 "靴下たくさん",
+                 useCases: ["靴下が大量にある状態を表すとき"],
+                 examples: [
+                    ("I have a bunch of socks.", "靴下がたくさんある。"),
+                    ("Pack a bunch of socks.", "靴下をたくさん詰める。")
+                 ], ipa: "/ɐ bˈʌntʃ ɒv sˈɒks/"),
+            make("highway", "a main public road, esp. one connecting cities",
+                 "幹線道路・高速道路",
+                 useCases: ["主要道や高速道路を表すとき"],
+                 examples: [
+                    ("Drive on the highway.", "高速道路を走る。"),
+                    ("A busy highway.", "混雑した幹線道路。")
+                 ], ipa: "/hˈaɪweɪ/")
+        ]
+    }
+
+    // MARK: - 形容詞・状態 (追加 65)
+
+    private static var adjectivesAndStates65: [Word] {
+        [
+            make("supervised", "watched or directed by someone in charge",
+                 "監督されている",
+                 useCases: ["責任者の監督下にあることを表すとき"],
+                 examples: [
+                    ("Supervised play.", "見守り付きの遊び。"),
+                    ("Supervised release.", "監視付きの解放。")
+                 ], ipa: "/sˈuːpəvˌaɪzd/"),
+            make("dirty", "not clean; dishonest",
+                 "汚い・卑劣な",
+                 useCases: ["汚れている、または卑怯なことを表すとき"],
+                 examples: [
+                    ("Dirty clothes.", "汚れた服。"),
+                    ("Dirty trick.", "卑怯な手段。")
+                 ], ipa: "/dˈɜːtɪ/"),
+            make("back and forth between", "moving repeatedly between two things",
+                 "〜の間を行ったり来たり",
+                 useCases: ["二つの場所や案を行き来する状態を表すとき"],
+                 examples: [
+                    ("Go back and forth between home and work.", "家と職場を行き来する。"),
+                    ("Back and forth between two ideas.", "二つの案で揺れ動く。")
+                 ], ipa: "/bˈæk ænd fˈɔːθ bɪtwˈiːn/"),
+            make("dark", "with little or no light; mysterious or evil",
+                 "暗い・闇の",
+                 useCases: ["光が少ない場所や陰鬱な雰囲気を表すとき"],
+                 examples: [
+                    ("It's getting dark.", "暗くなってきた。"),
+                    ("A dark secret.", "暗い秘密。")
+                 ], ipa: "/dˈɑːk/"),
+            make("stray", "wander; an animal that has lost its home",
+                 "迷う・はぐれた・野良の",
+                 useCases: ["迷い猫や脱線した話を表すとき"],
+                 examples: [
+                    ("A stray cat.", "野良猫。"),
+                    ("Stray from the topic.", "話題から逸れる。")
+                 ], ipa: "/stɹˈeɪ/"),
+            make("healthy", "in good physical or mental condition",
+                 "健康な",
+                 useCases: ["体や習慣が健康的であることを表すとき"],
+                 examples: [
+                    ("Stay healthy.", "健康でいて。"),
+                    ("A healthy diet.", "健康的な食事。")
+                 ], ipa: "/hˈɛlθɪ/"),
+            make("in moderation", "within sensible limits; not excessively",
+                 "適度に・ほどほどに",
+                 useCases: ["摂りすぎないよう適度を保つとき"],
+                 examples: [
+                    ("Drink in moderation.", "適度に飲む。"),
+                    ("Everything in moderation.", "何事もほどほどに。")
+                 ], ipa: "/ɪn mˌɒdəɹˈeɪʃən/"),
+            make("unpleasant", "not enjoyable; disagreeable",
+                 "不快な",
+                 useCases: ["人や場面が嫌な感じだと述べるとき"],
+                 examples: [
+                    ("An unpleasant smell.", "不快な匂い。"),
+                    ("Unpleasant person.", "嫌な人。")
+                 ], ipa: "/ʌnplˈɛzənt/")
         ]
     }
 }
