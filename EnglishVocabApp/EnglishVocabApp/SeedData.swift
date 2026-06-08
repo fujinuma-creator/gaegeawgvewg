@@ -121,6 +121,8 @@ enum SeedData {
             + nounsObjects61 + expressionsPhrases61
             + dailyLife62 + verbsActions62 + nounsObjects62
             + adjectivesStates62 + expressionsPhrases62 + education62
+            + politeRequests63 + casualPhrases63 + schedulingMisc63
+            + verbsAndPhrases63 + nounsAndMisc63 + statesAndFaults63
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -20218,6 +20220,727 @@ enum SeedData {
                     ("Present the findings.", "調査結果を発表する。"),
                     ("Key findings.", "主要な発見。")
                  ], ipa: "/fˈaɪndɪŋz/")
+        ]
+    }
+
+    // MARK: - 丁寧な依頼 (追加 63)
+
+    private static var politeRequests63: [Word] {
+        [
+            make("do you think you could", "polite way to ask for a favor",
+                 "〜してもらえそうですか",
+                 useCases: ["丁寧にお願いするとき"],
+                 examples: [
+                    ("Do you think you could help me?", "手伝ってもらえる？"),
+                    ("Do you think you could check this?", "これ確認してもらえる？")
+                 ], ipa: "/dˈuː juː θˈɪŋk juː kˈʊd/"),
+            make("I'd appreciate it if you could", "I would be grateful if you could",
+                 "〜していただけるとありがたいです",
+                 useCases: ["丁寧に感謝を込めて依頼するとき"],
+                 examples: [
+                    ("I'd appreciate it if you could reply soon.", "早めにお返事いただけるとありがたいです。"),
+                    ("I'd appreciate it if you could share.", "シェアしていただけると助かります。")
+                 ], ipa: "/aɪd ɐpɹˈiːʃɪˌeɪt ɪt ɪf juː kˈʊd/"),
+            make("would it be possible", "is it feasible to",
+                 "〜は可能でしょうか",
+                 useCases: ["丁寧に可能かどうか尋ねるとき"],
+                 examples: [
+                    ("Would it be possible to meet?", "お会いするのは可能でしょうか。"),
+                    ("Would it be possible to extend the deadline?", "締切を延長することは可能ですか。")
+                 ], ipa: "/wʊd ɪt biː pˈɒsɪbəl/"),
+            make("would you mind ing", "would it be an inconvenience to",
+                 "〜していただけませんか",
+                 useCases: ["相手に丁寧に依頼するとき"],
+                 examples: [
+                    ("Would you mind closing the window?", "窓を閉めていただけませんか。"),
+                    ("Would you mind waiting?", "お待ちいただけますか。")
+                 ], ipa: "/wʊd juː mˈaɪnd ˈɪŋ/"),
+            make("do I have to", "is it required for me to",
+                 "〜しないといけないの？",
+                 useCases: ["義務かどうかを確かめるとき"],
+                 examples: [
+                    ("Do I have to go?", "行かないといけない？"),
+                    ("Do I have to pay now?", "今払わないとダメ？")
+                 ], ipa: "/dˈuː aɪ hˈæv tuː/"),
+            make("you're free to", "you are allowed to",
+                 "ご自由に〜してください",
+                 useCases: ["相手に許可や選択肢を与えるとき"],
+                 examples: [
+                    ("You're free to leave.", "ご自由にお帰りください。"),
+                    ("You're free to choose.", "自由に選んでいいよ。")
+                 ], ipa: "/jɔː fɹˈiː tuː/"),
+            make("it's your choice whether or not", "you can decide if",
+                 "〜するかしないかはあなた次第",
+                 useCases: ["相手に判断を委ねるとき"],
+                 examples: [
+                    ("It's your choice whether or not to come.", "来るかどうかは君次第。"),
+                    ("It's your choice whether or not to agree.", "同意するかは君次第。")
+                 ], ipa: "/ɪts jɔː tʃˈɔɪs wˈɛðɐ ɔː nˈɒt/"),
+            make("need a favor", "request a favor from someone",
+                 "お願いがあるんだ",
+                 useCases: ["人に頼みごとがあるとき"],
+                 examples: [
+                    ("I need a favor.", "お願いがあるんだけど。"),
+                    ("I need a favor from you.", "君に頼みたいことがある。")
+                 ], ipa: "/nˈiːd ɐ fˈeɪvɐ/"),
+            make("do sb a favor", "perform a kind service for someone",
+                 "(人)に親切なことをする",
+                 useCases: ["相手の頼みを聞く、または依頼するとき"],
+                 examples: [
+                    ("Do me a favor.", "頼みごとがあるんだ。"),
+                    ("Do him a favor.", "彼を助けてあげて。")
+                 ], ipa: "/dˈuː sˈʌmbɒdɪ ɐ fˈeɪvɐ/"),
+            make("bother sb for a sec", "interrupt someone briefly",
+                 "ちょっとお邪魔するけど",
+                 useCases: ["ほんの少し話しかける前置きとして"],
+                 examples: [
+                    ("Sorry to bother you for a sec.", "ちょっとだけお邪魔します。"),
+                    ("Can I bother you for a sec?", "少しだけお時間いいですか？")
+                 ], ipa: "/bˈɒðɐ sˈʌmbɒdɪ fəɹɐ sˈɛk/"),
+            make("have a minute", "have a brief moment to spare",
+                 "ちょっと時間ある？",
+                 useCases: ["短時間の余裕があるか尋ねるとき"],
+                 examples: [
+                    ("Do you have a minute?", "ちょっと時間ある？"),
+                    ("Got a minute?", "今ちょっといい？")
+                 ], ipa: "/hæv ɐ mˈɪnɪt/")
+        ]
+    }
+
+    // MARK: - カジュアル表現 (追加 63)
+
+    private static var casualPhrases63: [Word] {
+        [
+            make("drama queen", "a person who reacts overly dramatically",
+                 "大げさに騒ぐ人",
+                 useCases: ["小さなことで大騒ぎする人を表すくだけた言い方"],
+                 examples: [
+                    ("Don't be such a drama queen.", "そんなに大げさにしないで。"),
+                    ("She's a total drama queen.", "彼女はめっちゃドラマクイーン。")
+                 ], ipa: "/dɹˈɑːmɐ kwˈiːn/"),
+            make("know what you mean", "understand what you're saying",
+                 "言いたいことが分かる",
+                 useCases: ["相手の発言に共感するとき"],
+                 examples: [
+                    ("I know what you mean.", "分かるよ、その気持ち。"),
+                    ("Yeah, I know what you mean.", "うん、わかる。")
+                 ], ipa: "/nˈəʊ wɒt juː mˈiːn/"),
+            make("that's so you", "that's typical of you",
+                 "それあなたらしい",
+                 useCases: ["その人らしい行動だと指摘するとき"],
+                 examples: [
+                    ("That's so you!", "それ、めっちゃ君らしい!"),
+                    ("Late again? That's so you.", "また遅刻？君らしいね。")
+                 ], ipa: "/ðæts sˈəʊ juː/"),
+            make("only child", "a child with no siblings",
+                 "一人っ子",
+                 useCases: ["兄弟姉妹がいない人を表すとき"],
+                 examples: [
+                    ("I'm an only child.", "私は一人っ子です。"),
+                    ("Only child syndrome.", "一人っ子症候群。")
+                 ], ipa: "/ˈəʊnlɪ tʃˈaɪld/"),
+            make("haha fine", "okay then (resigned, friendly)",
+                 "はは、わかったよ",
+                 useCases: ["軽くあきらめて同意するとき"],
+                 examples: [
+                    ("Haha fine, you win.", "はは、わかった、君の勝ち。"),
+                    ("Haha fine, I'll do it.", "はは、しょうがない、やるよ。")
+                 ], ipa: "/hɑːhˈɑː fˈaɪn/"),
+            make("keep my mouth shut", "stay silent; not tell",
+                 "口を閉じておく・黙っておく",
+                 useCases: ["秘密を漏らさないように黙っておくとき"],
+                 examples: [
+                    ("I'll keep my mouth shut.", "黙っとくよ。"),
+                    ("Keep your mouth shut about this.", "このことは口外しないで。")
+                 ], ipa: "/kˈiːp maɪ mˈaʊθ ʃˈʌt/"),
+            make("wanna", "want to (informal)",
+                 "〜したい(口語)",
+                 useCases: ["want toのくだけた言い方"],
+                 examples: [
+                    ("Wanna go?", "行きたい？"),
+                    ("I wanna try.", "やってみたい。")
+                 ], ipa: "/wˈɒnɐ/"),
+            make("can we", "are we able to / may we",
+                 "〜してもいい？・〜できる？",
+                 useCases: ["相手と一緒に何かする提案や許可を求めるとき"],
+                 examples: [
+                    ("Can we leave now?", "もう出ていい？"),
+                    ("Can we talk?", "ちょっと話せる？")
+                 ], ipa: "/kˈæn wiː/"),
+            make("hit up", "contact someone (informal)",
+                 "(人)に連絡する",
+                 useCases: ["人にメッセージや電話で連絡するくだけた言い方"],
+                 examples: [
+                    ("Hit me up later.", "あとで連絡して。"),
+                    ("Hit her up.", "彼女に連絡してみて。")
+                 ], ipa: "/hˈɪt ˈʌp/"),
+            make("hinge", "a turning point; a hinge joint",
+                 "蝶番・要となるもの",
+                 useCases: ["扉の蝶番や物事の鍵になる要素を表すとき"],
+                 examples: [
+                    ("The door hinges creaked.", "ドアの蝶番が軋んだ。"),
+                    ("Everything hinges on this.", "全てはこれにかかっている。")
+                 ], ipa: "/hˈɪndʒ/"),
+            make("take care", "be careful; goodbye (informal)",
+                 "気をつけて・じゃあね",
+                 useCases: ["別れ際の挨拶や注意を促すとき"],
+                 examples: [
+                    ("Take care.", "じゃあね、気をつけて。"),
+                    ("Take care of yourself.", "体に気をつけて。")
+                 ], ipa: "/tˈeɪk kˈeə/"),
+            make("getting late", "becoming late in time",
+                 "もう遅くなってきた",
+                 useCases: ["時間が遅いことを伝えるとき"],
+                 examples: [
+                    ("It's getting late.", "もう遅くなってきた。"),
+                    ("Getting late, I should go.", "もう遅いから帰るよ。")
+                 ], ipa: "/ɡˌɛtɪŋ lˈeɪt/"),
+            make("gotta run", "I have to leave now (informal)",
+                 "もう行かなきゃ",
+                 useCases: ["急いで立ち去る時のカジュアルな別れの挨拶"],
+                 examples: [
+                    ("Gotta run, see you!", "もう行くね、じゃ!"),
+                    ("Sorry, gotta run.", "ごめん、急いでるんだ。")
+                 ], ipa: "/ɡˈɒtɐ ɹˈʌn/"),
+            make("can't be late", "must not be late",
+                 "遅れるわけにはいかない",
+                 useCases: ["遅刻が許されない状況を強調するとき"],
+                 examples: [
+                    ("I can't be late.", "遅刻できない。"),
+                    ("Can't be late today.", "今日は遅れちゃいけない。")
+                 ], ipa: "/kˈɑːnt biː lˈeɪt/"),
+            make("I'll be there soon", "I will arrive shortly",
+                 "もうすぐ着くよ",
+                 useCases: ["まもなく到着することを伝えるとき"],
+                 examples: [
+                    ("I'll be there soon.", "もうすぐ着く。"),
+                    ("Wait, I'll be there soon.", "待ってて、すぐ着くから。")
+                 ], ipa: "/aɪl biː ðeə sˈuːn/"),
+            make("amazing", "extremely impressive",
+                 "素晴らしい・驚くべき",
+                 useCases: ["強い感嘆を表すとき"],
+                 examples: [
+                    ("That's amazing!", "それすごい!"),
+                    ("An amazing performance.", "見事な演技。")
+                 ], ipa: "/ɐmˈeɪzɪŋ/"),
+            make("just looking", "browsing without intent to buy",
+                 "見てるだけです",
+                 useCases: ["店で店員に声をかけられたとき"],
+                 examples: [
+                    ("Just looking, thanks.", "見てるだけです、ありがとう。"),
+                    ("I'm just looking.", "ただ見ているだけ。")
+                 ], ipa: "/dʒˈʌst lˈʊkɪŋ/"),
+            make("to go please", "for takeaway please",
+                 "持ち帰りでお願いします",
+                 useCases: ["飲食店で持ち帰りを頼むとき"],
+                 examples: [
+                    ("One coffee to go please.", "コーヒー1つテイクアウトで。"),
+                    ("To go please.", "持ち帰りで。")
+                 ], ipa: "/tə ɡˌəʊ plˈiːz/")
+        ]
+    }
+
+    // MARK: - スケジュール・依頼 (追加 63)
+
+    private static var schedulingMisc63: [Word] {
+        [
+            make("schedule sth", "arrange a time for something",
+                 "〜の予定を組む",
+                 useCases: ["会議や予約の時間を決めるとき"],
+                 examples: [
+                    ("Schedule a meeting.", "会議を設定する。"),
+                    ("Let's schedule a call.", "電話の予定を組もう。")
+                 ], ipa: "/ʃˈɛdjuːl sˈʌmθɪŋ/"),
+            make("availability", "the state of being free to be used or seen",
+                 "都合・空き状況",
+                 useCases: ["人や物の予定の空きを表すとき"],
+                 examples: [
+                    ("Check my availability.", "私の空きを確認する。"),
+                    ("Confirm availability.", "空き状況を確認する。")
+                 ], ipa: "/ɐvˌeɪləbˈɪlɪtɪ/"),
+            make("sth works perfectly", "something fits or functions perfectly",
+                 "〜は完璧にうまくいく",
+                 useCases: ["予定や物がぴったり合っているとき"],
+                 examples: [
+                    ("That time works perfectly.", "その時間でばっちりです。"),
+                    ("Friday works perfectly.", "金曜日が完璧です。")
+                 ], ipa: "/sˈʌmθɪŋ wˈɜːks pˈɜːfɛktlɪ/"),
+            make("either of these", "any one of these (two)",
+                 "これらのどちらでも",
+                 useCases: ["2択のうちどちらでも構わないと示すとき"],
+                 examples: [
+                    ("Either of these works.", "どちらでも大丈夫。"),
+                    ("Pick either of these.", "どちらか選んで。")
+                 ], ipa: "/ˈaɪðɐɹ ɒv ðˈiːz/"),
+            make("what time works", "what time is suitable",
+                 "何時が都合いい？",
+                 useCases: ["相手の都合の良い時間を尋ねるとき"],
+                 examples: [
+                    ("What time works for you?", "何時が都合いい？"),
+                    ("What time works best?", "何時が一番いい？")
+                 ], ipa: "/wˌɒt tˈaɪm wˈɜːks/"),
+            make("in a hurry", "rushed or pressed for time",
+                 "急いで",
+                 useCases: ["時間に追われている状況を表すとき"],
+                 examples: [
+                    ("I'm in a hurry.", "急いでるんだ。"),
+                    ("Why the hurry?", "なんでそんなに急いでるの？")
+                 ], ipa: "/ɪn ɐ hˈʌɹɪ/"),
+            make("altogether", "in total; entirely",
+                 "全部で・全体的に",
+                 useCases: ["合計や全体的な様子を述べるとき"],
+                 examples: [
+                    ("Altogether, it costs $50.", "全部で50ドル。"),
+                    ("Altogether different.", "全く違う。")
+                 ], ipa: "/ˌɔːltəɡˈɛðɐ/"),
+            make("half of", "fifty percent of",
+                 "〜の半分",
+                 useCases: ["全体の半分を表すとき"],
+                 examples: [
+                    ("Half of the cake.", "ケーキの半分。"),
+                    ("Half of them agree.", "半数が同意。")
+                 ], ipa: "/hˈɑːf ɒv/"),
+            make("halve", "divide into two equal parts",
+                 "半分にする",
+                 useCases: ["二等分するときや半減させるとき"],
+                 examples: [
+                    ("Halve the cost.", "コストを半分にする。"),
+                    ("Halve the apple.", "リンゴを半分に切る。")
+                 ], ipa: "/hˈɑːv/"),
+            make("first come first served basis", "served in the order of arrival",
+                 "先着順",
+                 useCases: ["先着で対応する方式を表すとき"],
+                 examples: [
+                    ("On a first come first served basis.", "先着順で。"),
+                    ("Seats are first come first served basis.", "席は先着順です。")
+                 ], ipa: "/fˈɜːst kˈʌm fˈɜːst sˈɜːvd bˈeɪsɪs/"),
+            make("nearby", "close at hand",
+                 "近くの・すぐそばに",
+                 useCases: ["近い場所を表すとき"],
+                 examples: [
+                    ("A nearby café.", "近くのカフェ。"),
+                    ("Is there a station nearby?", "近くに駅ある？")
+                 ], ipa: "/niəbˈaɪ/"),
+            make("location", "a particular place or position",
+                 "場所・所在地",
+                 useCases: ["地理的な位置や店舗の場所を表すとき"],
+                 examples: [
+                    ("Send your location.", "現在地を送って。"),
+                    ("A great location.", "好立地。")
+                 ], ipa: "/ləʊkˈeɪʃən/"),
+            make("locate sth", "find or place something",
+                 "〜の場所を突き止める・配置する",
+                 useCases: ["位置を特定する、または設置するとき"],
+                 examples: [
+                    ("Locate the file.", "ファイルを探し当てる。"),
+                    ("Locate the new office.", "新オフィスを配置する。")
+                 ], ipa: "/ləʊkˈeɪt sˈʌmθɪŋ/")
+        ]
+    }
+
+    // MARK: - 動詞・依頼・行動 (追加 63)
+
+    private static var verbsAndPhrases63: [Word] {
+        [
+            make("go on a trip", "take a journey",
+                 "旅行に行く",
+                 useCases: ["旅行や出張に出かけるとき"],
+                 examples: [
+                    ("Go on a trip to Italy.", "イタリアへ旅行に行く。"),
+                    ("Let's go on a trip.", "旅行に行こう。")
+                 ], ipa: "/ɡˌəʊ ˌɒn ɐ tɹˈɪp/"),
+            make("be hesitant", "be reluctant or unsure to do something",
+                 "ためらっている",
+                 useCases: ["決断を渋っている状態を表すとき"],
+                 examples: [
+                    ("I'm hesitant to say yes.", "うんと言うのをためらっている。"),
+                    ("Don't be hesitant.", "ためらわないで。")
+                 ], ipa: "/biː hˈɛzɪtənt/"),
+            make("be overwhelmed with", "be flooded by too much of something",
+                 "〜に圧倒されている",
+                 useCases: ["仕事や感情に押しつぶされそうな状態を表すとき"],
+                 examples: [
+                    ("I'm overwhelmed with work.", "仕事に圧倒されている。"),
+                    ("Be overwhelmed with joy.", "喜びでいっぱい。")
+                 ], ipa: "/biː ˌəʊvəwˈɛlmd wɪð/"),
+            make("hoping to", "wishing or planning to",
+                 "〜したいと思っている",
+                 useCases: ["希望や予定を控えめに伝えるとき"],
+                 examples: [
+                    ("Hoping to see you soon.", "近いうちに会えたら。"),
+                    ("Hoping to travel this year.", "今年旅行できたらいいな。")
+                 ], ipa: "/hˈəʊpɪŋ tuː/"),
+            make("spoil sth", "ruin something; reveal a plot in advance",
+                 "〜を台無しにする・ネタバレする",
+                 useCases: ["楽しみを台無しにしたり物を傷ませるとき"],
+                 examples: [
+                    ("Don't spoil the ending.", "結末をバラさないで。"),
+                    ("Spoil the surprise.", "サプライズを台無しにする。")
+                 ], ipa: "/spˈɔɪl sˈʌmθɪŋ/"),
+            make("get dressed", "put clothes on",
+                 "服を着る",
+                 useCases: ["朝の身支度やドレスアップを表すとき"],
+                 examples: [
+                    ("Time to get dressed.", "服を着る時間だ。"),
+                    ("Get dressed quickly.", "早く着替えて。")
+                 ], ipa: "/ɡɛt dɹˈɛst/"),
+            make("get sb sth", "obtain something for someone",
+                 "(人)に(物)を手に入れてあげる",
+                 useCases: ["人のために何かを買う・取ってくるとき"],
+                 examples: [
+                    ("Get me some water.", "水を取ってきて。"),
+                    ("Get him a present.", "彼にプレゼントを買う。")
+                 ], ipa: "/ɡɛt sˈʌmbɒdɪ sˈʌmθɪŋ/"),
+            make("give me a hand", "help me with something",
+                 "手伝ってくれる？",
+                 useCases: ["手伝いを頼むくだけた言い方"],
+                 examples: [
+                    ("Give me a hand here.", "ちょっと手伝って。"),
+                    ("Can you give me a hand?", "手を貸してくれる？")
+                 ], ipa: "/ɡˈɪv mˌiː ɐ hˈænd/"),
+            make("volunteer", "offer help without payment; a person who does so",
+                 "ボランティアをする・志願者",
+                 useCases: ["無償で何かを引き受ける、または志願する人を表すとき"],
+                 examples: [
+                    ("Volunteer at the shelter.", "保護施設でボランティアする。"),
+                    ("I'll volunteer.", "私が手を挙げます。")
+                 ], ipa: "/vˌɒləntˈiə/"),
+            make("lack sth", "be without enough of something",
+                 "〜が不足している",
+                 useCases: ["必要なものが足りないことを表すとき"],
+                 examples: [
+                    ("Lack confidence.", "自信が足りない。"),
+                    ("Lack of sleep.", "睡眠不足。")
+                 ], ipa: "/lˈæk sˈʌmθɪŋ/"),
+            make("count too much on", "rely excessively on",
+                 "〜を当てにしすぎる",
+                 useCases: ["過度に頼りすぎていることを表すとき"],
+                 examples: [
+                    ("Don't count too much on luck.", "運に頼りすぎないで。"),
+                    ("Count too much on him.", "彼を当てにしすぎる。")
+                 ], ipa: "/kˈaʊnt tˈuː mʌtʃ ˈɒn/"),
+            make("take kindness for granted", "treat kindness as if owed",
+                 "親切を当然と思う",
+                 useCases: ["人の優しさをありがたがらない態度を諫めるとき"],
+                 examples: [
+                    ("Don't take kindness for granted.", "親切を当たり前と思わないで。"),
+                    ("She takes kindness for granted.", "彼女は人の親切を当然と思っている。")
+                 ], ipa: "/tˈeɪk kˈaɪndnəs fɔː ɡɹˈɑːntɪd/"),
+            make("chicken out", "back out because of fear",
+                 "怖気づいてやめる",
+                 useCases: ["怖くなって途中で逃げ出すとき"],
+                 examples: [
+                    ("Don't chicken out.", "怖気づくなよ。"),
+                    ("He chickened out.", "彼はビビって逃げた。")
+                 ], ipa: "/tʃˈɪkɪn ˈaʊt/"),
+            make("surpass", "exceed; go beyond a limit",
+                 "〜を上回る・超える",
+                 useCases: ["他を超える、限界を超えるとき"],
+                 examples: [
+                    ("Surpass expectations.", "期待を超える。"),
+                    ("Surpass the record.", "記録を更新する。")
+                 ], ipa: "/səpˈɑːs/"),
+            make("be hard on", "treat strictly or harshly",
+                 "〜に厳しい",
+                 useCases: ["人に厳しく当たることを表すとき"],
+                 examples: [
+                    ("Don't be hard on yourself.", "自分に厳しくしすぎないで。"),
+                    ("She's hard on her kids.", "彼女は子どもに厳しい。")
+                 ], ipa: "/biː hˈɑːd ˈɒn/"),
+            make("tease", "make fun of in a playful or annoying way",
+                 "からかう・じらす",
+                 useCases: ["軽い冗談や悪戯で人をいじるとき"],
+                 examples: [
+                    ("Don't tease him.", "彼をからかわないで。"),
+                    ("Just teasing.", "ただからかってるだけ。")
+                 ], ipa: "/tˈiːz/"),
+            make("have you ever gone to", "have you visited",
+                 "〜に行ったことある？",
+                 useCases: ["過去の訪問経験を尋ねるとき"],
+                 examples: [
+                    ("Have you ever gone to Paris?", "パリ行ったことある？"),
+                    ("Have you ever gone to a concert?", "コンサート行ったことある？")
+                 ], ipa: "/hæv juː ˈɛvɐ ɡˈɒn tuː/"),
+            make("correct sth", "make right or improve",
+                 "〜を訂正する・直す",
+                 useCases: ["間違いを直すとき"],
+                 examples: [
+                    ("Correct your mistake.", "間違いを直す。"),
+                    ("Please correct this sentence.", "この文を直してください。")
+                 ], ipa: "/kəɹˈɛkt sˈʌmθɪŋ/"),
+            make("proofread", "read to find and fix errors",
+                 "校正する",
+                 useCases: ["文章をチェックして誤りを正すとき"],
+                 examples: [
+                    ("Proofread the article.", "記事を校正する。"),
+                    ("I'll proofread it for you.", "校正しといてあげる。")
+                 ], ipa: "/pɹˈuːfɹiːd/"),
+            make("inform sb", "give someone information",
+                 "(人)に知らせる",
+                 useCases: ["人に情報を伝えるとき"],
+                 examples: [
+                    ("Inform me of any changes.", "変更があれば教えて。"),
+                    ("Inform the team.", "チームに知らせる。")
+                 ], ipa: "/ɪnfˈɔːm sˈʌmbɒdɪ/"),
+            make("hold up", "delay; raise; cope; rob",
+                 "遅らせる・持ちこたえる",
+                 useCases: ["待たせる、持ちこたえる、強盗などに使う"],
+                 examples: [
+                    ("Sorry to hold you up.", "お待たせしてごめん。"),
+                    ("Hold up, wait a sec.", "ちょっと待って。")
+                 ], ipa: "/hˈəʊld ˈʌp/"),
+            make("sit on the fence", "remain neutral; avoid taking sides",
+                 "中立の立場をとる・どっちつかず",
+                 useCases: ["立場を決めず態度を保留するとき"],
+                 examples: [
+                    ("Stop sitting on the fence.", "態度を決めて。"),
+                    ("He's sitting on the fence.", "彼はどっちつかずだ。")
+                 ], ipa: "/sˈɪt ɒnðə fˈɛns/"),
+            make("flick", "a quick light movement; a movie (slang)",
+                 "軽く弾く・映画(俗)",
+                 useCases: ["指で弾く動作や映画を俗に呼ぶとき"],
+                 examples: [
+                    ("Flick the switch.", "スイッチをパチンと押す。"),
+                    ("Watch a flick.", "映画を観る。")
+                 ], ipa: "/flˈɪk/"),
+            make("ride", "travel on or in a vehicle; a journey",
+                 "乗る・乗車",
+                 useCases: ["乗り物に乗る、乗る行為を表すとき"],
+                 examples: [
+                    ("Ride a bike.", "自転車に乗る。"),
+                    ("Need a ride?", "送ろうか？")
+                 ], ipa: "/ɹˈaɪd/")
+        ]
+    }
+
+    // MARK: - 名詞・その他 (追加 63)
+
+    private static var nounsAndMisc63: [Word] {
+        [
+            make("oral", "relating to the mouth or spoken",
+                 "口の・口頭の",
+                 useCases: ["口に関する、または口頭での説明を表すとき"],
+                 examples: [
+                    ("Oral exam.", "口頭試験。"),
+                    ("Oral health.", "口腔の健康。")
+                 ], ipa: "/ˈɔːɹəl/"),
+            make("minutes", "an official record of a meeting",
+                 "議事録",
+                 useCases: ["会議の記録を表すとき"],
+                 examples: [
+                    ("Take the minutes.", "議事録を取る。"),
+                    ("Meeting minutes.", "会議議事録。")
+                 ], ipa: "/mˈɪnɪts/"),
+            make("textbook", "a book used for studying a subject",
+                 "教科書",
+                 useCases: ["授業で使う教科書を表すとき"],
+                 examples: [
+                    ("Open your textbook.", "教科書を開いて。"),
+                    ("A textbook example.", "典型的な例。")
+                 ], ipa: "/tˈɛkstbʊk/"),
+            make("nothing but thanks", "only gratitude",
+                 "感謝以外にない・ただただ感謝",
+                 useCases: ["心からのお礼を強調するとき"],
+                 examples: [
+                    ("Nothing but thanks from me.", "ただただ感謝しかない。"),
+                    ("I have nothing but thanks.", "感謝の言葉しかない。")
+                 ], ipa: "/nˈʌθɪŋ bˌʌt θˈæŋks/"),
+            make("picnic weather", "weather perfect for a picnic",
+                 "ピクニック日和",
+                 useCases: ["外で過ごすのにぴったりの天気を表すとき"],
+                 examples: [
+                    ("Today is picnic weather.", "今日はピクニック日和。"),
+                    ("Picnic weather at last.", "やっとピクニック日和。")
+                 ], ipa: "/pˈɪknɪk wˈɛðɐ/"),
+            make("hidden gem", "a little-known but valuable thing or place",
+                 "知る人ぞ知る名所・隠れた宝",
+                 useCases: ["隠れた良いお店や場所を表すとき"],
+                 examples: [
+                    ("This café is a hidden gem.", "ここは隠れた名店だ。"),
+                    ("A hidden gem of a movie.", "知られざる名作映画。")
+                 ], ipa: "/hˈɪdən dʒˈɛm/"),
+            make("a surprise", "an unexpected event or gift",
+                 "驚き・サプライズ",
+                 useCases: ["予期せぬ出来事や贈り物を表すとき"],
+                 examples: [
+                    ("What a surprise!", "びっくり!"),
+                    ("It was a nice surprise.", "嬉しいサプライズだった。")
+                 ], ipa: "/ɐ səpɹˈaɪz/"),
+            make("slave driver", "a person who makes others work very hard",
+                 "扱使う人・人使いの荒い人",
+                 useCases: ["過酷に人を働かせる上司などをくだけて表すとき"],
+                 examples: [
+                    ("Our boss is a slave driver.", "うちの上司は人使いが荒い。"),
+                    ("Don't be a slave driver.", "そんなに働かせないで。")
+                 ], ipa: "/slˈeɪv dɹˈaɪvɐ/"),
+            make("the time has come", "the moment has arrived",
+                 "その時が来た",
+                 useCases: ["決断や行動の時を厳かに告げるとき"],
+                 examples: [
+                    ("The time has come to decide.", "決断の時が来た。"),
+                    ("The time has come at last.", "ついにその時が来た。")
+                 ], ipa: "/ðə tˈaɪm hɐz kˈʌm/"),
+            make("rope", "a thick strong cord",
+                 "ロープ・縄",
+                 useCases: ["太い縄や紐を表すとき"],
+                 examples: [
+                    ("Tie with a rope.", "ロープで縛る。"),
+                    ("A jump rope.", "縄跳び。")
+                 ], ipa: "/ɹˈəʊp/"),
+            make("light", "illumination; not heavy; ignite",
+                 "光・軽い・点灯する",
+                 useCases: ["光、軽さ、火をつけるなど多義に使う"],
+                 examples: [
+                    ("Turn on the light.", "明かりを点けて。"),
+                    ("Light as a feather.", "羽のように軽い。")
+                 ], ipa: "/lˈaɪt/"),
+            make("rest in peace to", "may they rest in peace",
+                 "〜の安らかな眠りを",
+                 useCases: ["亡くなった人への追悼を表すとき"],
+                 examples: [
+                    ("Rest in peace to grandma.", "祖母の安らかな眠りを。"),
+                    ("Rest in peace to all victims.", "全ての犠牲者に安らかな眠りを。")
+                 ], ipa: "/ɹˈɛst ɪn pˈiːs tuː/"),
+            make("abdominal", "relating to the abdomen",
+                 "腹部の",
+                 useCases: ["お腹に関する筋肉や痛みを表すとき"],
+                 examples: [
+                    ("Abdominal muscles.", "腹筋。"),
+                    ("Abdominal pain.", "腹痛。")
+                 ], ipa: "/æbdˈɒmɪnəl/"),
+            make("in the loop", "informed about something",
+                 "情報を共有している",
+                 useCases: ["情報の輪の中にいる状態を表すとき"],
+                 examples: [
+                    ("Keep me in the loop.", "情報共有よろしく。"),
+                    ("I'm in the loop.", "私もその件知ってる。")
+                 ], ipa: "/ɪnðə lˈuːp/"),
+            make("clickbait", "online content with misleading attractive titles",
+                 "クリックベイト・釣り見出し",
+                 useCases: ["クリックを誘うために誇張された見出しを表すとき"],
+                 examples: [
+                    ("Don't fall for clickbait.", "釣り記事にだまされないで。"),
+                    ("That headline is clickbait.", "あの見出しは釣りだ。")
+                 ], ipa: "/klˈɪkbeɪt/")
+        ]
+    }
+
+    // MARK: - 状態・責任 (追加 63)
+
+    private static var statesAndFaults63: [Word] {
+        [
+            make("all my fault", "entirely my responsibility",
+                 "全部私のせい",
+                 useCases: ["責任を完全に引き受けるとき"],
+                 examples: [
+                    ("It's all my fault.", "全部私のせいだ。"),
+                    ("All my fault, I'm sorry.", "全部僕のせい、ごめん。")
+                 ], ipa: "/ˈɔːl maɪ fˈɒlt/"),
+            make("at fault", "responsible for an error",
+                 "落ち度がある",
+                 useCases: ["過失や責任を負っている状態を表すとき"],
+                 examples: [
+                    ("Who's at fault?", "誰が悪いの？"),
+                    ("I'm at fault.", "私に落ち度があります。")
+                 ], ipa: "/æt fˈɒlt/"),
+            make("at risk", "in danger of harm or loss",
+                 "危険にさらされている",
+                 useCases: ["損害や被害の可能性がある状態を表すとき"],
+                 examples: [
+                    ("At risk of failure.", "失敗の危険にある。"),
+                    ("Lives are at risk.", "命が危険にさらされている。")
+                 ], ipa: "/æt ɹˈɪsk/"),
+            make("be to blame", "be responsible for something bad",
+                 "〜のせいだ・責められるべき",
+                 useCases: ["問題の原因が特定の人物にあると述べるとき"],
+                 examples: [
+                    ("He is to blame.", "彼のせいだ。"),
+                    ("No one is to blame.", "誰のせいでもない。")
+                 ], ipa: "/biː tə blˈeɪm/"),
+            make("if I were in your shoes", "if I were in your position",
+                 "もし私があなたの立場なら",
+                 useCases: ["相手の立場で意見を述べるとき"],
+                 examples: [
+                    ("If I were in your shoes, I'd quit.", "私なら辞めるね。"),
+                    ("If I were in your shoes, I'd wait.", "私だったら待つよ。")
+                 ], ipa: "/ɪf aɪ wɜːɹ ɪn jɔː ʃˈuːz/"),
+            make("too good to be true", "so good that it seems unreal",
+                 "話がうますぎる",
+                 useCases: ["信じられないほど好条件のものを疑うとき"],
+                 examples: [
+                    ("Sounds too good to be true.", "話がうますぎる。"),
+                    ("This deal is too good to be true.", "この取引はうますぎる。")
+                 ], ipa: "/tˈuː ɡˈʊd təbɪ tɹˈuː/"),
+            make("unwelcome", "not invited or wanted",
+                 "歓迎されない",
+                 useCases: ["望まれていない訪問や知らせを表すとき"],
+                 examples: [
+                    ("An unwelcome guest.", "招かれざる客。"),
+                    ("Unwelcome news.", "ありがたくない知らせ。")
+                 ], ipa: "/ʌnwˈɛlkʌm/"),
+            make("unwell", "not in good health",
+                 "体調が悪い",
+                 useCases: ["体調がすぐれない状態を婉曲に表すとき"],
+                 examples: [
+                    ("I feel unwell today.", "今日は体調が悪い。"),
+                    ("She's unwell.", "彼女は体調が悪い。")
+                 ], ipa: "/ʌnwˈɛl/"),
+            make("are you saying", "do you mean to say",
+                 "つまり〜と言ってるの？",
+                 useCases: ["相手の発言の意図を確認するとき"],
+                 examples: [
+                    ("Are you saying I'm wrong?", "私が間違ってるってこと？"),
+                    ("Are you saying it's over?", "もう終わりってこと？")
+                 ], ipa: "/ɑː juː sˈeɪɪŋ/"),
+            make("I'd be lying to you if I said", "I would lie if I told you",
+                 "もし〜と言ったら嘘になる",
+                 useCases: ["本音を伝える前置きとして"],
+                 examples: [
+                    ("I'd be lying to you if I said I wasn't upset.", "怒ってないと言ったら嘘になる。"),
+                    ("I'd be lying to you if I said it was easy.", "簡単だと言ったら嘘だ。")
+                 ], ipa: "/aɪd biː lˈaɪɪŋ tə juː ɪf aɪ sˈɛd/"),
+            make("at a stand mill", "stuck in one place; making no progress",
+                 "膠着状態で",
+                 useCases: ["進展しない状況を比喩で表すとき"],
+                 examples: [
+                    ("The talks are at a stand mill.", "交渉は膠着状態だ。"),
+                    ("I'm at a stand mill.", "全然進まない。")
+                 ], ipa: "/ætɐ stˈænd mˈɪl/"),
+            make("so much for", "that's the end of (sarcastic)",
+                 "〜なんてもう終わり・〜って何だったんだ",
+                 useCases: ["期待外れの結果を皮肉るとき"],
+                 examples: [
+                    ("So much for our plan.", "計画も台無しだ。"),
+                    ("So much for being on time.", "時間通りって何だったんだ。")
+                 ], ipa: "/sˈəʊ mˌʌtʃ fɔː/"),
+            make("there's nothing like", "nothing compares to",
+                 "〜に勝るものはない",
+                 useCases: ["特定のものを最高だと強調するとき"],
+                 examples: [
+                    ("There's nothing like home.", "我が家に勝るものはない。"),
+                    ("There's nothing like fresh bread.", "焼きたてパンに勝るものはない。")
+                 ], ipa: "/ðeəz nˈʌθɪŋ lˈaɪk/"),
+            make("gone", "departed; no longer present",
+                 "去った・なくなった",
+                 useCases: ["人や物がもうそこにない状態を表すとき"],
+                 examples: [
+                    ("She's gone.", "彼女は行ってしまった。"),
+                    ("All gone.", "全部なくなった。")
+                 ], ipa: "/ɡˈɒn/"),
+            make("I'm coming now", "I am on my way",
+                 "今行きます",
+                 useCases: ["呼ばれた時にすぐ向かうと伝えるとき"],
+                 examples: [
+                    ("I'm coming now!", "今行く!"),
+                    ("Wait, I'm coming now.", "待って、今向かってる。")
+                 ], ipa: "/aɪm kˈʌmɪŋ nˈaʊ/"),
+            make("have you ?", "have you (done sth)?",
+                 "〜したことある？",
+                 useCases: ["過去の経験や完了を尋ねるくだけた言い方"],
+                 examples: [
+                    ("Have you eaten?", "ご飯食べた？"),
+                    ("Have you finished?", "もう終わった？")
+                 ], ipa: "/hˈæv juː/")
         ]
     }
 }
