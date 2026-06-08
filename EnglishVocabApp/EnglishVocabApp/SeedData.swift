@@ -116,6 +116,7 @@ enum SeedData {
             + nounsObjects58 + adjectives58 + expressions58 + eduMisc58
             + dayOffLife59 + workStudy59 + gamingSports59
             + dataConcepts59 + sensoryMisc59
+            + expressionsQA60 + thingsObjects60 + verbsMix60 + adjectivesMix60
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -18883,6 +18884,272 @@ enum SeedData {
                     ("Build stamina.", "持久力をつける。"),
                     ("Run out of stamina.", "スタミナ切れ。")
                  ], ipa: "/stˈæmɪnɐ/")
+        ]
+    }
+
+    // MARK: - フレーズ・問いかけ (追加 60)
+
+    private static var expressionsQA60: [Word] {
+        [
+            make("last time", "the most recent occasion",
+                 "前回・この前",
+                 useCases: ["前回起きたことを引き合いに出すとき"],
+                 examples: [
+                    ("Last time was fun.", "前回は楽しかった。"),
+                    ("Last time I checked.", "この前確認したときは。")
+                 ], ipa: "/lˈɑːst tˈaɪm/"),
+            make("where on earth", "where (with strong frustration or surprise)",
+                 "一体どこに",
+                 useCases: ["強い苛立ちや驚きで「どこ」を尋ねるとき"],
+                 examples: [
+                    ("Where on earth are my keys?", "鍵は一体どこ？"),
+                    ("Where on earth have you been?", "一体どこに行ってたの？")
+                 ], ipa: "/wˌeəɹ ˌɒn ˈɜːθ/"),
+            make("no sth in", "there is no X inside",
+                 "中に〜がない",
+                 useCases: ["中身がないことを述べるとき"],
+                 examples: [
+                    ("No milk in the fridge.", "冷蔵庫に牛乳がない。"),
+                    ("No money in my wallet.", "財布に金がない。")
+                 ], ipa: "/nˈəʊ sˈʌmθɪŋ ˈɪn/"),
+            make("where am I supposed to", "where am I expected to (frustrated)",
+                 "どこで〜すればいいんだ",
+                 useCases: ["指示がなく困っているときの問いかけ"],
+                 examples: [
+                    ("Where am I supposed to park?", "どこに停めればいいの？"),
+                    ("Where am I supposed to sit?", "どこに座ればいいの？")
+                 ], ipa: "/wˌeəɹ æm aɪ səpˈəʊzd tuː/"),
+            make("the weather is lovely", "the weather is wonderfully pleasant",
+                 "天気が素敵だ",
+                 useCases: ["晴れて気持ちの良い天気を表すとき"],
+                 examples: [
+                    ("The weather is lovely today.", "今日は天気が素敵だ。"),
+                    ("The weather is lovely outside.", "外は気持ちの良い天気だ。")
+                 ], ipa: "/ðə wˈɛðɐɹ ɪz lˈʌvlɪ/"),
+            make("wait for some care", "wait until care or attention is given",
+                 "ケアを待つ・手入れを待つ",
+                 useCases: ["世話や対処を待つ状況を表すとき"],
+                 examples: [
+                    ("The plants wait for some care.", "植物は手入れを待っている。"),
+                    ("Patients wait for some care.", "患者は治療を待っている。")
+                 ], ipa: "/wˈeɪt fɔː sˌʌm kˈeə/"),
+            make("made in", "produced or manufactured in (place)",
+                 "〜製",
+                 useCases: ["製造国を表すとき"],
+                 examples: [
+                    ("Made in Japan.", "日本製。"),
+                    ("Made in Italy.", "イタリア製。")
+                 ], ipa: "/mˌeɪd ˈɪn/"),
+            make("has it been", "has the time/state continued (since)",
+                 "もう〜経つ？・〜だった？",
+                 useCases: ["時間の経過や状態の継続を尋ねるとき"],
+                 examples: [
+                    ("Has it been a year already?", "もう一年経つの？"),
+                    ("Has it been hard?", "大変だった？")
+                 ], ipa: "/hɐz ɪt bˈiːn/"),
+            make("send sb sth", "send someone something",
+                 "(人)に(物)を送る",
+                 useCases: ["人に物・情報を送るとき"],
+                 examples: [
+                    ("Send me the link.", "リンクを送って。"),
+                    ("Send him a gift.", "彼にプレゼントを送る。")
+                 ], ipa: "/sˈɛnd sˈʌmbɒdɪ sˈʌmθɪŋ/"),
+            make("damn", "an exclamation of annoyance or emphasis",
+                 "ちくしょう・すごい(強調)",
+                 useCases: ["失敗時の悔しさや強い感情を表すくだけた表現"],
+                 examples: [
+                    ("Damn, I forgot.", "しまった、忘れてた。"),
+                    ("Damn, that's good.", "うわ、これは旨い。")
+                 ], ipa: "/dˈæm/")
+        ]
+    }
+
+    // MARK: - 物・道具・場所 (追加 60)
+
+    private static var thingsObjects60: [Word] {
+        [
+            make("marching", "walking with rhythmic, regular steps",
+                 "行進している",
+                 useCases: ["軍隊やバンドが規則正しく歩くことを表すとき"],
+                 examples: [
+                    ("A marching band.", "マーチングバンド。"),
+                    ("Soldiers marching past.", "兵士たちが行進していく。")
+                 ], ipa: "/mˈɑːtʃɪŋ/"),
+            make("plugs", "devices for connecting to a power outlet",
+                 "プラグ・差込口",
+                 useCases: ["コンセントの差込部分を表すとき"],
+                 examples: [
+                    ("Different plugs in the UK.", "イギリスは違う形のプラグ。"),
+                    ("Bring an adapter for the plugs.", "プラグ用アダプタを持って行って。")
+                 ], ipa: "/plˈʌɡz/"),
+            make("garden", "an area where plants and flowers are grown",
+                 "庭・庭園",
+                 useCases: ["家や公園にある植物を育てる場所を表すとき"],
+                 examples: [
+                    ("Work in the garden.", "庭で作業する。"),
+                    ("A beautiful garden.", "美しい庭。")
+                 ], ipa: "/ɡˈɑːdən/"),
+            make("pot", "a deep round container for cooking or plants",
+                 "鍋・鉢",
+                 useCases: ["料理用の鍋や植木鉢を表すとき"],
+                 examples: [
+                    ("A pot of tea.", "ティーポット一杯のお茶。"),
+                    ("A flower pot.", "植木鉢。")
+                 ], ipa: "/pˈɒt/"),
+            make("ant nest", "a colony built by ants",
+                 "蟻の巣",
+                 useCases: ["蟻の住処を表すとき"],
+                 examples: [
+                    ("An ant nest in the garden.", "庭にある蟻の巣。"),
+                    ("Don't disturb the ant nest.", "蟻の巣を荒らさないで。")
+                 ], ipa: "/ˈænt nˈɛst/"),
+            make("measurement", "the size, length, or amount of something",
+                 "測定・寸法",
+                 useCases: ["物の大きさや長さを表すとき"],
+                 examples: [
+                    ("Take measurements.", "寸法を測る。"),
+                    ("Exact measurement.", "正確な計測。")
+                 ], ipa: "/mˈɛʒəmənt/"),
+            make("thermometer", "an instrument for measuring temperature",
+                 "温度計・体温計",
+                 useCases: ["気温や体温を測る器具を表すとき"],
+                 examples: [
+                    ("Check the thermometer.", "温度計を見る。"),
+                    ("A digital thermometer.", "デジタル体温計。")
+                 ], ipa: "/θɜːmˈɒmɪtɐ/"),
+            make("thermography", "imaging using heat patterns",
+                 "サーモグラフィ",
+                 useCases: ["温度差を画像化する技術を表すとき"],
+                 examples: [
+                    ("Thermography reveals heat loss.", "サーモグラフィで熱漏れが分かる。"),
+                    ("A thermography scan.", "サーモグラフィ検査。")
+                 ], ipa: "/θɜːmˈɒɡɹəfɪ/"),
+            make("a pane of", "a flat sheet of (esp. glass)",
+                 "一枚の(板状の)〜",
+                 useCases: ["ガラス板など平らな一枚を表すとき"],
+                 examples: [
+                    ("A pane of glass.", "一枚のガラス。"),
+                    ("Replace a pane of glass.", "ガラス一枚を取り替える。")
+                 ], ipa: "/ɐ pˈeɪn ɒv/"),
+            make("scent", "a pleasant smell; an animal's odor trail",
+                 "香り・匂い",
+                 useCases: ["香水や花、痕跡の匂いを表すとき"],
+                 examples: [
+                    ("A sweet scent.", "甘い香り。"),
+                    ("The scent of roses.", "バラの香り。")
+                 ], ipa: "/sˈɛnt/"),
+            make("timeline", "a sequence of events arranged in time order",
+                 "時系列・スケジュール",
+                 useCases: ["時間の流れに沿った計画や履歴を表すとき"],
+                 examples: [
+                    ("Project timeline.", "プロジェクトの工程表。"),
+                    ("A clear timeline.", "明確なスケジュール。")
+                 ], ipa: "/tˈaɪmlaɪn/"),
+            make("wireless", "without using wires; using radio signals",
+                 "無線の・ワイヤレスの",
+                 useCases: ["コード不要な機器や通信を表すとき"],
+                 examples: [
+                    ("Wireless headphones.", "ワイヤレスヘッドホン。"),
+                    ("Wireless internet.", "無線インターネット。")
+                 ], ipa: "/wˈaɪələs/"),
+            make("exchange rate", "the value of one currency relative to another",
+                 "為替レート",
+                 useCases: ["通貨同士の交換比率を表すとき"],
+                 examples: [
+                    ("Check the exchange rate.", "為替レートを確認する。"),
+                    ("A favorable exchange rate.", "有利な為替レート。")
+                 ], ipa: "/ɪkstʃˈeɪndʒ ɹˈeɪt/"),
+            make("guy", "a man (informal); a person (in plural)",
+                 "男・(複数で)みんな",
+                 useCases: ["男性を指すくだけた言い方、複数なら男女問わず"],
+                 examples: [
+                    ("That guy over there.", "あそこの男の人。"),
+                    ("Hey guys!", "やあ、みんな!")
+                 ], ipa: "/ɡˈaɪ/")
+        ]
+    }
+
+    // MARK: - 動詞・行動 (追加 60)
+
+    private static var verbsMix60: [Word] {
+        [
+            make("summon sth", "call something forth or order to appear",
+                 "〜を呼び出す・召喚する",
+                 useCases: ["気力や人を呼び起こすとき"],
+                 examples: [
+                    ("Summon the courage.", "勇気を奮い起こす。"),
+                    ("Summon a witness.", "証人を召喚する。")
+                 ], ipa: "/sˈʌmən sˈʌmθɪŋ/"),
+            make("attribute to", "consider as caused or made by",
+                 "〜のせいにする・〜に帰する",
+                 useCases: ["原因や作者を特定するとき"],
+                 examples: [
+                    ("Attribute success to luck.", "成功を運のおかげにする。"),
+                    ("Attributed to Shakespeare.", "シェイクスピア作とされる。")
+                 ], ipa: "/ˈætɹɪbjˌuːt tuː/"),
+            make("entertain sb", "amuse or host someone",
+                 "(人)を楽しませる・もてなす",
+                 useCases: ["客を楽しませたりもてなしたりするとき"],
+                 examples: [
+                    ("Entertain the guests.", "ゲストをもてなす。"),
+                    ("She entertained the kids.", "彼女は子どもたちを楽しませた。")
+                 ], ipa: "/ˌɛntətˈeɪn sˈʌmbɒdɪ/"),
+            make("behave oneself", "act properly and politely",
+                 "行儀よくする",
+                 useCases: ["子どもや人に礼儀正しく振る舞うよう促すとき"],
+                 examples: [
+                    ("Behave yourself!", "行儀よくしなさい!"),
+                    ("Try to behave yourself.", "ちゃんとしてね。")
+                 ], ipa: "/bɪhˈeɪv wɒnsˈɛlf/"),
+            make("install sth", "set up equipment or software for use",
+                 "〜をインストールする・取り付ける",
+                 useCases: ["機器やソフトを設置するとき"],
+                 examples: [
+                    ("Install the app.", "アプリをインストールする。"),
+                    ("Install a new lock.", "新しい鍵を取り付ける。")
+                 ], ipa: "/ɪnstˈɔːl sˈʌmθɪŋ/"),
+            make("underrate", "rate or value lower than deserved",
+                 "過小評価する",
+                 useCases: ["価値を実際より低く見るとき"],
+                 examples: [
+                    ("Don't underrate her skills.", "彼女の力を侮るな。"),
+                    ("An underrated movie.", "過小評価されている映画。")
+                 ], ipa: "/ˌʌndəɹˈeɪt/"),
+            make("upscale", "improve quality; aimed at wealthier customers",
+                 "高級な・グレードを上げる",
+                 useCases: ["高級志向のサービスや向上させる行為を表すとき"],
+                 examples: [
+                    ("An upscale restaurant.", "高級レストラン。"),
+                    ("Upscale the brand.", "ブランドを格上げする。")
+                 ], ipa: "/ˈʌpskeɪl/")
+        ]
+    }
+
+    // MARK: - 形容詞・その他 (追加 60)
+
+    private static var adjectivesMix60: [Word] {
+        [
+            make("malice", "intent to do evil or harm",
+                 "悪意",
+                 useCases: ["相手を害する意図を表すとき"],
+                 examples: [
+                    ("Without malice.", "悪意はなく。"),
+                    ("Acts of malice.", "悪意ある行為。")
+                 ], ipa: "/mˈælɪs/"),
+            make("sacred", "holy; deserving of deep respect",
+                 "神聖な・尊い",
+                 useCases: ["宗教的に神聖、または非常に大切なものを表すとき"],
+                 examples: [
+                    ("A sacred place.", "神聖な場所。"),
+                    ("A sacred promise.", "尊い約束。")
+                 ], ipa: "/sˈeɪkɹɪd/"),
+            make("simultaneous", "happening at the same time",
+                 "同時の・同時発生の",
+                 useCases: ["複数のことが同時に起こることを表すとき"],
+                 examples: [
+                    ("Simultaneous translation.", "同時通訳。"),
+                    ("Simultaneous launch.", "同時発売。")
+                 ], ipa: "/sˌɪməltˈeɪniəs/")
         ]
     }
 }
