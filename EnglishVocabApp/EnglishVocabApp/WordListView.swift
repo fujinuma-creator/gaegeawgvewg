@@ -123,9 +123,8 @@ struct WordListContent<Trigger: Equatable>: View {
                 .sorted { $0.word.lowercased() < $1.word.lowercased() }
             return newToday + active + completed
         case .reviewList:
-            return filtered.sorted {
-                ($0.addedToReviewListAt ?? .distantPast) > ($1.addedToReviewListAt ?? .distantPast)
-            }
+            // Order re-shuffled once per day (stable within a day).
+            return filtered.dailyShuffled()
         }
     }
 

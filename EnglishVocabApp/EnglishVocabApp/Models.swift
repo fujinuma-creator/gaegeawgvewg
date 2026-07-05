@@ -96,6 +96,11 @@ struct Word: Codable, Identifiable, Hashable {
     /// Entries automatically expire 7 days after they are added.
     var addedToReviewListAt: Date? = nil
 
+    /// When this word was auto-selected into the weekly review set. The set
+    /// is refreshed once a week (500 random words), and words picked one
+    /// week are excluded from the immediately following week's pick.
+    var weeklyReviewAt: Date? = nil
+
     /// Per-quiz-mode "正解した回数". Keys are QuizMode.modeKey strings:
     /// "useCase", "definition", "translation". A word is considered
     /// 復習完了 in a mode once its count reaches 4. Independent of the
@@ -110,7 +115,7 @@ struct Word: Codable, Identifiable, Hashable {
         case id, word, ipa, definitionEnglish, definitionJapanese, useCases,
              examples, synonyms,
              reviewCount, status, nextReviewDate, lastReviewedDate, createdAt,
-             addedToReviewListAt,
+             addedToReviewListAt, weeklyReviewAt,
              modeCounts, modeNextReviewDates
     }
 
@@ -129,6 +134,7 @@ struct Word: Codable, Identifiable, Hashable {
         lastReviewedDate: Date? = nil,
         createdAt: Date = Date(),
         addedToReviewListAt: Date? = nil,
+        weeklyReviewAt: Date? = nil,
         modeCounts: [String: Int] = [:],
         modeNextReviewDates: [String: Date] = [:]
     ) {
@@ -146,6 +152,7 @@ struct Word: Codable, Identifiable, Hashable {
         self.lastReviewedDate = lastReviewedDate
         self.createdAt = createdAt
         self.addedToReviewListAt = addedToReviewListAt
+        self.weeklyReviewAt = weeklyReviewAt
         self.modeCounts = modeCounts
         self.modeNextReviewDates = modeNextReviewDates
     }
@@ -168,6 +175,7 @@ struct Word: Codable, Identifiable, Hashable {
         self.lastReviewedDate = try c.decodeIfPresent(Date.self, forKey: .lastReviewedDate)
         self.createdAt = try c.decodeIfPresent(Date.self, forKey: .createdAt) ?? Date()
         self.addedToReviewListAt = try c.decodeIfPresent(Date.self, forKey: .addedToReviewListAt)
+        self.weeklyReviewAt = try c.decodeIfPresent(Date.self, forKey: .weeklyReviewAt)
         self.modeCounts = try c.decodeIfPresent([String: Int].self, forKey: .modeCounts) ?? [:]
         self.modeNextReviewDates = try c.decodeIfPresent([String: Date].self, forKey: .modeNextReviewDates) ?? [:]
     }
@@ -186,6 +194,17 @@ struct Word: Codable, Identifiable, Hashable {
     var isInReviewList: Bool {
         guard let added = addedToReviewListAt else { return false }
         return Date().timeIntervalSince(added) < 7 * 24 * 60 * 60
+    }
+
+    /// True if the word is part of this week's auto-selected review set.
+    var isInWeeklyReview: Bool {
+        weeklyReviewAt != nil
+    }
+
+    /// True if the word should appear in the focused review list, whether it
+    /// was pinned manually or picked by the weekly auto-selection.
+    var isInAnyReviewList: Bool {
+        isInReviewList || isInWeeklyReview
     }
 }
 

@@ -26,8 +26,8 @@ struct ReviewView: View {
         let base: [Word]
         switch filter {
         case .dueToday:   base = store.dueWords
-        case .reviewList: base = store.reviewListWords
-        case .all:        base = store.words
+        case .reviewList: base = store.reviewListWords   // already daily-shuffled
+        case .all:        base = store.words.dailyShuffled()
         }
         return shuffled ? base.shuffled() : base
     }

@@ -57,6 +57,55 @@ final class WordStore: ObservableObject {
         backfillIPAFromSeed()
         // Drop any review-list pins that have aged past their 7-day window.
         cleanupExpiredReviewListEntries()
+        // Auto-select 500 random words into the weekly review set (once a
+        // week), excluding whatever was picked the previous week.
+        refreshWeeklyReviewIfNeeded()
+    }
+
+    // MARK: - Weekly auto review set (500 random words, rotates weekly)
+
+    /// Number of words auto-added to the review list each week.
+    private let weeklyReviewCount = 500
+
+    /// startOfDay timestamp of the last weekly auto-refresh, persisted in
+    /// UserDefaults (WordStore is not a View, so @AppStorage is unavailable).
+    private var weeklyReviewRefreshDay: Double {
+        get { UserDefaults.standard.double(forKey: "reviewList.weeklyRefreshDay") }
+        set { UserDefaults.standard.set(newValue, forKey: "reviewList.weeklyRefreshDay") }
+    }
+
+    /// Runs the weekly pick if it has never run, or if at least 7 days have
+    /// passed since the last pick.
+    private func refreshWeeklyReviewIfNeeded() {
+        let todayStart = Calendar.current.startOfDay(for: Date()).timeIntervalSince1970
+        let last = weeklyReviewRefreshDay
+        if last == 0 || todayStart - last >= 7 * 24 * 60 * 60 {
+            performWeeklyReviewRefresh()
+            weeklyReviewRefreshDay = todayStart
+        }
+    }
+
+    /// Clears last week's auto picks and selects a fresh set of up to 500
+    /// random words. Words picked the previous week are excluded so the same
+    /// word is never chosen two weeks in a row. Manual pins are untouched.
+    private func performWeeklyReviewRefresh() {
+        // The currently-flagged words are last week's picks.
+        let previousIDs = Set(words.filter { $0.weeklyReviewAt != nil }.map { $0.id })
+        // Clear all existing weekly flags.
+        for i in words.indices where words[i].weeklyReviewAt != nil {
+            words[i].weeklyReviewAt = nil
+        }
+        // Candidate pool excludes last week's picks. If there aren't enough
+        // words left after the exclusion, fall back to the full list so we
+        // can still fill the set.
+        let candidates = words.filter { !previousIDs.contains($0.id) }
+        let pool = candidates.count >= weeklyReviewCount ? candidates : words
+        let pickedIDs = Set(pool.shuffled().prefix(weeklyReviewCount).map { $0.id })
+        let now = Date()
+        for i in words.indices where pickedIDs.contains(words[i].id) {
+            words[i].weeklyReviewAt = now
+        }
+        save()
     }
 
     private func backfillIPAFromSeed() {
@@ -111,9 +160,12 @@ final class WordStore: ObservableObject {
         if changed { save() }
     }
 
+    /// Words shown in the focused review list: manual pins plus this week's
+    /// auto-selected set. The order is re-shuffled once per day (stable
+    /// within a day, rotates at midnight).
     var reviewListWords: [Word] {
-        words.filter { $0.isInReviewList }
-            .sorted { ($0.addedToReviewListAt ?? .distantPast) > ($1.addedToReviewListAt ?? .distantPast) }
+        words.filter { $0.isInAnyReviewList }
+            .dailyShuffled()
     }
 
     // MARK: - Persistence
