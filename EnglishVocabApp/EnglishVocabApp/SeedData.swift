@@ -133,6 +133,8 @@ enum SeedData {
             + gardenWork67 + verbsActions67 + nounsConcepts67 + expressions67
             + sportsGame68 + socialDiscourse68 + objectsTech68 + verbsActions68
             + expressionsA68 + expressionsB68 + adjectivesStates68
+            + businessFormal69 + politeEmail69 + healthMind69
+            + lifeCulture69 + phrasesA69 + phrasesB69
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -25061,6 +25063,818 @@ enum SeedData {
                     ("They shook hands.", "彼らは握手した。"),
                     ("Let's shake hands on it.", "それで手を打とう。")
                  ], ipa: "/ʃˈeɪk hˈændz/")
+        ]
+    }
+
+    // MARK: - ビジネス・書式 (追加 69)
+
+    private static var businessFormal69: [Word] {
+        [
+            make("lease sth", "rent property or equipment by contract",
+                 "〜を賃貸借する・リースする",
+                 useCases: ["契約で物件や機材を借りる・貸すとき"],
+                 examples: [
+                    ("Lease an apartment.", "アパートを借りる。"),
+                    ("Lease a car.", "車をリースする。")
+                 ], ipa: "/lˈiːs sˈʌmθɪŋ/"),
+            make("statutory body", "an organization set up by law",
+                 "法定機関",
+                 useCases: ["法律に基づいて設立された組織を表すとき"],
+                 examples: [
+                    ("A statutory body regulates it.", "法定機関がそれを規制する。"),
+                    ("Report to the statutory body.", "法定機関に報告する。")
+                 ], ipa: "/stˈætʃuːtəɹɪ bˈɒdɪ/"),
+            make("waive", "give up a right or requirement",
+                 "(権利などを)放棄する・免除する",
+                 useCases: ["権利や料金を免除・放棄するとき"],
+                 examples: [
+                    ("Waive the fee.", "料金を免除する。"),
+                    ("Waive your rights.", "権利を放棄する。")
+                 ], ipa: "/wˈeɪv/"),
+            make("sth shall be", "something is required to be (formal/legal)",
+                 "〜は〜とする(法的・正式)",
+                 useCases: ["契約書や規則で義務を定めるとき"],
+                 examples: [
+                    ("Payment shall be made in full.", "支払いは全額とする。"),
+                    ("The tenant shall be responsible.", "借主が責任を負うものとする。")
+                 ], ipa: "/sˈʌmθɪŋ ʃˌæl bˈiː/"),
+            make("acceptance", "the act of agreeing or receiving",
+                 "受諾・受け入れ",
+                 useCases: ["申し出や条件を受け入れることを表すとき"],
+                 examples: [
+                    ("Letter of acceptance.", "承諾書。"),
+                    ("Acceptance of the offer.", "申し出の受諾。")
+                 ], ipa: "/ɐksˈɛptəns/"),
+            make("contractor", "a person or firm that does work under contract",
+                 "請負業者・契約業者",
+                 useCases: ["契約に基づき工事や業務を請け負う人を表すとき"],
+                 examples: [
+                    ("Hire a contractor.", "業者を雇う。"),
+                    ("An independent contractor.", "個人事業主・業務委託。")
+                 ], ipa: "/kəntɹˈæktɐ/"),
+            make("division", "a section of an organization; the act of dividing",
+                 "部門・分割",
+                 useCases: ["会社の部門や分けることを表すとき"],
+                 examples: [
+                    ("The sales division.", "販売部門。"),
+                    ("Division of labor.", "分業。")
+                 ], ipa: "/dɪvˈɪʒən/"),
+            make("advisory", "offering advice; a warning notice",
+                 "助言的な・勧告",
+                 useCases: ["助言を行う立場や、注意喚起の告知を表すとき"],
+                 examples: [
+                    ("An advisory role.", "助言的な役割。"),
+                    ("A weather advisory.", "気象注意報。")
+                 ], ipa: "/ɐdvˈaɪzəɹɪ/"),
+            make("inventory", "a complete list of goods in stock",
+                 "在庫・棚卸し",
+                 useCases: ["店や倉庫の在庫を表すとき"],
+                 examples: [
+                    ("Check the inventory.", "在庫を確認する。"),
+                    ("Low inventory.", "在庫僅少。")
+                 ], ipa: "/ˈɪnvəntɹɪ/"),
+            make("place an order", "request goods to be supplied",
+                 "注文する",
+                 useCases: ["商品を発注するとき"],
+                 examples: [
+                    ("Place an order online.", "オンラインで注文する。"),
+                    ("I'd like to place an order.", "注文したいのですが。")
+                 ], ipa: "/plˈeɪs ɐn ˈɔːdɐ/"),
+            make("run out", "use up the entire supply",
+                 "使い切る・切らす",
+                 useCases: ["在庫や資源がなくなるとき"],
+                 examples: [
+                    ("We ran out of milk.", "牛乳を切らした。"),
+                    ("Time is running out.", "時間がなくなってきた。")
+                 ], ipa: "/ɹˈʌn ˈaʊt/"),
+            make("delivery address", "the location where goods are sent",
+                 "配送先住所",
+                 useCases: ["商品を届ける住所を表すとき"],
+                 examples: [
+                    ("Enter your delivery address.", "配送先住所を入力してください。"),
+                    ("Confirm the delivery address.", "お届け先を確認する。")
+                 ], ipa: "/dɪlˈɪvəɹɪ ɐdɹˈɛs/"),
+            make("the person in charge", "the one responsible or in authority",
+                 "担当者・責任者",
+                 useCases: ["その件を取り仕切る人を表すとき"],
+                 examples: [
+                    ("Speak to the person in charge.", "責任者と話したい。"),
+                    ("Who is the person in charge?", "担当者はどなたですか？")
+                 ], ipa: "/ðə pˈɜːsən ɪn tʃˈɑːdʒ/"),
+            make("render", "provide; cause to become; represent visually",
+                 "(サービスなどを)提供する・〜の状態にする",
+                 useCases: ["援助を提供する、ある状態にする、描画するとき"],
+                 examples: [
+                    ("Render assistance.", "援助を提供する。"),
+                    ("It rendered him speechless.", "それは彼を絶句させた。")
+                 ], ipa: "/ɹˈɛndɐ/"),
+            make("revert back", "return to a previous state",
+                 "元に戻る・戻す",
+                 useCases: ["以前の状態に戻すことを表すとき(revertの口語)"],
+                 examples: [
+                    ("Revert back to the old version.", "旧バージョンに戻す。"),
+                    ("It reverted back to normal.", "元通りに戻った。")
+                 ], ipa: "/ɹɪvˈɜːt bˈæk/"),
+            make("enter into", "begin or become involved in (an agreement)",
+                 "(契約などを)結ぶ・入り込む",
+                 useCases: ["契約や議論に正式に入るとき"],
+                 examples: [
+                    ("Enter into a contract.", "契約を結ぶ。"),
+                    ("Enter into negotiations.", "交渉に入る。")
+                 ], ipa: "/ˈɛntɐɹ ˌɪntʊ/"),
+            make("function", "the purpose or role; an event; to work",
+                 "機能・役割・催し",
+                 useCases: ["働きや役目、正式な催しを表すとき"],
+                 examples: [
+                    ("The function of the heart.", "心臓の働き。"),
+                    ("A formal function.", "正式な催し。")
+                 ], ipa: "/fˈʌŋkʃən/"),
+            make("by way of sth", "via; as a form of",
+                 "〜を経由して・〜として",
+                 useCases: ["経路や手段を示すとき"],
+                 examples: [
+                    ("By way of London.", "ロンドン経由で。"),
+                    ("By way of apology.", "お詫びのしるしとして。")
+                 ], ipa: "/baɪ wˈeɪ ɒv sˈʌmθɪŋ/"),
+            make("not more than", "no greater than; at most",
+                 "〜以下・多くとも",
+                 useCases: ["上限を示すとき"],
+                 examples: [
+                    ("Not more than ten people.", "10人以下。"),
+                    ("It costs not more than $5.", "せいぜい5ドルだ。")
+                 ], ipa: "/nˌɒt mˈɔː ðɐn/"),
+            make("out to", "aiming or intending to (do)",
+                 "〜しようとして",
+                 useCases: ["何かを目論んでいることを表すとき"],
+                 examples: [
+                    ("He's out to win.", "彼は勝つ気満々だ。"),
+                    ("They're out to get me.", "彼らは私を陥れようとしている。")
+                 ], ipa: "/ˈaʊt tuː/"),
+            make("skip", "omit; jump lightly; not attend",
+                 "飛ばす・スキップする・サボる",
+                 useCases: ["何かを省く、軽く跳ねる、欠席するとき"],
+                 examples: [
+                    ("Skip a step.", "一段飛ばす。"),
+                    ("Skip class.", "授業をサボる。")
+                 ], ipa: "/skˈɪp/")
+        ]
+    }
+
+    // MARK: - 丁寧・メール表現 (追加 69)
+
+    private static var politeEmail69: [Word] {
+        [
+            make("we're pleased to", "we are happy to (formal)",
+                 "喜んで〜いたします",
+                 useCases: ["丁寧に良い知らせを伝えるとき"],
+                 examples: [
+                    ("We're pleased to inform you.", "謹んでお知らせいたします。"),
+                    ("We're pleased to announce it.", "喜んで発表いたします。")
+                 ], ipa: "/wiə plˈiːzd tuː/"),
+            make("should you have any queries", "if you have any questions (formal)",
+                 "ご不明な点がございましたら",
+                 useCases: ["ビジネスメールで問い合わせを促すとき"],
+                 examples: [
+                    ("Should you have any queries, contact us.", "ご不明点があればご連絡ください。"),
+                    ("Should you have any queries, please ask.", "ご質問があればお尋ねください。")
+                 ], ipa: "/ʃˌʊd juː hæv ˌɛnɪ kwˈiəɹɪz/"),
+            make("I wish you a wonderful day", "polite well-wishing",
+                 "素敵な一日を",
+                 useCases: ["別れ際に相手の幸福を願うとき"],
+                 examples: [
+                    ("I wish you a wonderful day.", "素敵な一日をお過ごしください。"),
+                    ("Thanks, and I wish you a wonderful day.", "ありがとう、良い一日を。")
+                 ], ipa: "/aɪ wˈɪʃ juː ɐ wˈʌndəfəl dˈeɪ/"),
+            make("may everything go well", "a wish for things to succeed",
+                 "すべてがうまくいきますように",
+                 useCases: ["相手の成功や幸運を祈るとき"],
+                 examples: [
+                    ("May everything go well for you.", "すべてがうまくいきますように。"),
+                    ("May everything go well tomorrow.", "明日がうまくいきますように。")
+                 ], ipa: "/mˈeɪ ˈɛvɹɪθˌɪŋ ɡˌəʊ wˈɛl/"),
+            make("good day to you", "a formal or old-fashioned greeting",
+                 "ごきげんよう",
+                 useCases: ["改まった、またはやや古風な挨拶として"],
+                 examples: [
+                    ("Good day to you, sir.", "ごきげんよう。"),
+                    ("Good day to you all.", "皆様、ごきげんよう。")
+                 ], ipa: "/ɡˈʊd dˈeɪ tə juː/"),
+            make("privileged", "having special rights; honored",
+                 "特権のある・光栄な",
+                 useCases: ["恵まれた立場や光栄に思う気持ちを表すとき"],
+                 examples: [
+                    ("A privileged few.", "一部の特権階級。"),
+                    ("I'm privileged to be here.", "ここにいられて光栄です。")
+                 ], ipa: "/pɹˈɪvɪlɪdʒd/"),
+            make("confidential", "meant to be kept secret",
+                 "機密の・秘密の",
+                 useCases: ["外部に漏らしてはいけない情報を表すとき"],
+                 examples: [
+                    ("Confidential information.", "機密情報。"),
+                    ("Keep it confidential.", "内密にしてください。")
+                 ], ipa: "/kˌɒnfɪdˈɛnʃəl/"),
+            make("kindly", "please (polite); in a kind way",
+                 "どうか〜してください・親切に",
+                 useCases: ["丁寧に依頼する、または親切な様子を表すとき"],
+                 examples: [
+                    ("Kindly reply by Friday.", "金曜までにご返信ください。"),
+                    ("She smiled kindly.", "彼女は優しく微笑んだ。")
+                 ], ipa: "/kˈaɪndlɪ/"),
+            make("enclose", "include with a letter or package",
+                 "(手紙などに)同封する",
+                 useCases: ["書類などを一緒に入れて送るとき"],
+                 examples: [
+                    ("Please find enclosed the invoice.", "請求書を同封いたします。"),
+                    ("Enclose a photo.", "写真を同封する。")
+                 ], ipa: "/ɪŋklˈəʊz/"),
+            make("a few words about me", "a short self-introduction",
+                 "私についての簡単な紹介",
+                 useCases: ["自己紹介を切り出すとき"],
+                 examples: [
+                    ("A few words about me: I'm a teacher.", "簡単に自己紹介すると、教師です。"),
+                    ("Let me say a few words about me.", "少し自己紹介させてください。")
+                 ], ipa: "/ɐ fjˈuː wˈɜːdz ɐbˈaʊt mˌiː/"),
+            make("have a good rest", "get plenty of rest",
+                 "よく休んでね",
+                 useCases: ["相手にゆっくり休むよう伝えるとき"],
+                 examples: [
+                    ("Have a good rest.", "ゆっくり休んで。"),
+                    ("Have a good rest tonight.", "今夜はよく休んでね。")
+                 ], ipa: "/hæv ɐ ɡˈʊd ɹˈɛst/"),
+            make("let's keep going", "let us continue",
+                 "続けよう・この調子で",
+                 useCases: ["やめずに続けようと促すとき"],
+                 examples: [
+                    ("We're close, let's keep going.", "もう少しだ、続けよう。"),
+                    ("Let's keep going a bit more.", "もう少し続けよう。")
+                 ], ipa: "/lˈɛts kˈiːp ɡˈəʊɪŋ/"),
+            make("I've done it !", "I have succeeded! (exclamation)",
+                 "やった、できた!",
+                 useCases: ["何かをやり遂げた喜びを表すとき"],
+                 examples: [
+                    ("I've done it!", "やったぞ!"),
+                    ("Finally, I've done it!", "ついにやり遂げた!")
+                 ], ipa: "/aɪv dˈʌn ɪt/"),
+            make("how nice !", "an exclamation of pleasant surprise",
+                 "なんて素敵!",
+                 useCases: ["嬉しい驚きを表すとき"],
+                 examples: [
+                    ("How nice!", "まあ素敵!"),
+                    ("A gift? How nice!", "プレゼント？なんて素敵!")
+                 ], ipa: "/hˌaʊ nˈaɪs/"),
+            make("here's a thought", "I have a suggestion",
+                 "ちょっと考えたんだけど",
+                 useCases: ["提案を軽く切り出すとき"],
+                 examples: [
+                    ("Here's a thought: let's ask them.", "こう考えてみたら？彼らに聞こう。"),
+                    ("Here's a thought for you.", "ひとつ提案があるんだ。")
+                 ], ipa: "/hˈiəz ɐ θˈɔːt/"),
+            make("wait for update", "await new information",
+                 "更新(続報)を待つ",
+                 useCases: ["続報や進展を待つとき"],
+                 examples: [
+                    ("Please wait for update.", "続報をお待ちください。"),
+                    ("We'll wait for an update.", "更新を待ちます。")
+                 ], ipa: "/wˈeɪt fɔːɹ ˈʌpdeɪt/"),
+            make("for the next days", "over the coming days",
+                 "この先数日間",
+                 useCases: ["今後数日にわたることを表すとき"],
+                 examples: [
+                    ("Rain is expected for the next days.", "この先数日は雨の予報だ。"),
+                    ("Rest for the next days.", "数日間休んで。")
+                 ], ipa: "/fəðə nˈɛkst dˈeɪz/"),
+            make("it's expected to be around", "it is anticipated to be approximately",
+                 "だいたい〜になる見込みだ",
+                 useCases: ["おおよその予想値を述べるとき"],
+                 examples: [
+                    ("It's expected to be around 30 degrees.", "だいたい30度になる見込みだ。"),
+                    ("It's expected to be around noon.", "正午ごろの見込みです。")
+                 ], ipa: "/ɪts ɪkspˈɛktɪd təbɪ ɐɹˈaʊnd/")
+        ]
+    }
+
+    // MARK: - 健康・メンタル (追加 69)
+
+    private static var healthMind69: [Word] {
+        [
+            make("mood swings", "abrupt changes in emotional state",
+                 "気分の浮き沈み",
+                 useCases: ["感情が激しく上下する状態を表すとき"],
+                 examples: [
+                    ("She has mood swings.", "彼女は気分の浮き沈みがある。"),
+                    ("Hormonal mood swings.", "ホルモンによる気分変動。")
+                 ], ipa: "/mˈuːd swˈɪŋz/"),
+            make("cyclothymic disorder", "a mild chronic mood disorder",
+                 "気分循環性障害",
+                 useCases: ["軽度の気分の波が慢性的に続く障害を表すとき"],
+                 examples: [
+                    ("Diagnosed with cyclothymic disorder.", "気分循環性障害と診断された。"),
+                    ("Cyclothymic disorder is a mood disorder.", "気分循環性障害は気分障害の一種だ。")
+                 ], ipa: "/sˌaɪklɒθˈɪmɪk dɪsˈɔːdɐ/"),
+            make("in despair", "in a state of hopelessness",
+                 "絶望して",
+                 useCases: ["望みを失った状態を表すとき"],
+                 examples: [
+                    ("He was in despair.", "彼は絶望していた。"),
+                    ("Don't give in to despair.", "絶望に負けないで。")
+                 ], ipa: "/ɪn dɪspˈeə/"),
+            make("have sleepless night", "spend a night unable to sleep",
+                 "眠れない夜を過ごす",
+                 useCases: ["不眠の夜を表すとき"],
+                 examples: [
+                    ("I had a sleepless night.", "眠れない夜を過ごした。"),
+                    ("Worry gave me a sleepless night.", "心配で一睡もできなかった。")
+                 ], ipa: "/hæv slˈiːpləs nˈaɪt/"),
+            make("sleep schedule", "one's regular pattern of sleeping",
+                 "睡眠スケジュール",
+                 useCases: ["寝起きのリズムを表すとき"],
+                 examples: [
+                    ("Fix your sleep schedule.", "睡眠リズムを整える。"),
+                    ("A messed up sleep schedule.", "乱れた睡眠スケジュール。")
+                 ], ipa: "/slˈiːp ʃˈɛdjuːl/"),
+            make("have no life", "have no social or personal life (self-critical)",
+                 "私生活が充実していない・つまらない生活だ",
+                 useCases: ["仕事や勉強ばかりで楽しみがない状態を自嘲するとき"],
+                 examples: [
+                    ("I have no life.", "私は生活に潤いがない。"),
+                    ("Working weekends? Get a life.", "週末も仕事？もっと人生を楽しめよ。")
+                 ], ipa: "/hæv nˈəʊ lˈaɪf/"),
+            make("let me feel bad", "allow me to feel guilty or sad",
+                 "私を落ち込ませる・罪悪感を抱かせる",
+                 useCases: ["何かのせいで気分が沈むことを表すとき"],
+                 examples: [
+                    ("Don't let me feel bad about it.", "そのことで私を落ち込ませないで。"),
+                    ("It let me feel bad all day.", "そのせいで一日中気分が沈んだ。")
+                 ], ipa: "/lˈɛt mˌiː fˈiːl bˈæd/"),
+            make("be positive about", "have an optimistic attitude toward",
+                 "〜に前向きだ",
+                 useCases: ["物事を楽観的に捉えるとき"],
+                 examples: [
+                    ("Be positive about the future.", "未来に前向きでいて。"),
+                    ("Try to be positive about it.", "それについて前向きに考えて。")
+                 ], ipa: "/biː pˈɒzɪtˌɪv ɐbˈaʊt/"),
+            make("growth mindset", "the belief that ability can be developed",
+                 "成長マインドセット",
+                 useCases: ["努力で能力は伸びるという考え方を表すとき"],
+                 examples: [
+                    ("Adopt a growth mindset.", "成長マインドを持つ。"),
+                    ("A growth mindset helps you learn.", "成長思考は学びを助ける。")
+                 ], ipa: "/ɡɹˈəʊθ mˈaɪndsɛt/"),
+            make("fighting spirit", "a determined, never-give-up attitude",
+                 "闘志・ファイティングスピリット",
+                 useCases: ["粘り強く戦う気概を表すとき"],
+                 examples: [
+                    ("Show your fighting spirit.", "闘志を見せろ。"),
+                    ("Full of fighting spirit.", "闘志にあふれている。")
+                 ], ipa: "/fˈaɪtɪŋ spˈɪɹɪt/"),
+            make("clogged", "blocked so nothing can pass",
+                 "詰まった",
+                 useCases: ["排水管や鼻などが詰まった状態を表すとき"],
+                 examples: [
+                    ("The drain is clogged.", "排水口が詰まっている。"),
+                    ("A clogged nose.", "鼻づまり。")
+                 ], ipa: "/klˈɒɡd/"),
+            make("stink", "have a strong unpleasant smell",
+                 "ひどい臭いがする",
+                 useCases: ["悪臭を放つことを表すとき"],
+                 examples: [
+                    ("It stinks in here.", "ここ臭いよ。"),
+                    ("Your socks stink.", "君の靴下くさい。")
+                 ], ipa: "/stˈɪŋk/")
+        ]
+    }
+
+    // MARK: - 生活・文化 (追加 69)
+
+    private static var lifeCulture69: [Word] {
+        [
+            make("japanese literature", "the body of written works from Japan",
+                 "日本文学",
+                 useCases: ["日本の文学作品を表すとき"],
+                 examples: [
+                    ("Study Japanese literature.", "日本文学を学ぶ。"),
+                    ("A classic of Japanese literature.", "日本文学の名作。")
+                 ], ipa: "/dʒˌæpənˈiːz lˈɪtɹɪtʃɐ/"),
+            make("leisurely", "unhurried and relaxed",
+                 "ゆったりとした・のんびりした",
+                 useCases: ["急がずくつろいだ様子を表すとき"],
+                 examples: [
+                    ("A leisurely walk.", "のんびりした散歩。"),
+                    ("Eat at a leisurely pace.", "ゆっくり食べる。")
+                 ], ipa: "/lˈɛʒəlɪ/"),
+            make("affair", "an event or matter; a romantic liaison",
+                 "出来事・情事",
+                 useCases: ["事柄や催し、または不倫関係を表すとき"],
+                 examples: [
+                    ("A grand affair.", "盛大な催し。"),
+                    ("Have an affair.", "浮気をする。")
+                 ], ipa: "/ɐfˈeə/"),
+            make("breathtaking", "astonishingly beautiful or impressive",
+                 "息をのむような",
+                 useCases: ["驚くほど美しい景色などを表すとき"],
+                 examples: [
+                    ("A breathtaking view.", "息をのむ絶景。"),
+                    ("Breathtaking beauty.", "はっとする美しさ。")
+                 ], ipa: "/bɹˈɛθteɪkɪŋ/"),
+            make("exhibitions", "public displays of art or items",
+                 "展覧会・展示",
+                 useCases: ["美術品や品物を公開する催しを表すとき"],
+                 examples: [
+                    ("Art exhibitions.", "美術展。"),
+                    ("Visit exhibitions.", "展覧会に行く。")
+                 ], ipa: "/ɛksɪbˈɪʃənz/"),
+            make("artsy museum", "an artistic, stylish museum",
+                 "アートっぽい美術館",
+                 useCases: ["芸術的でおしゃれな美術館を表すくだけた言い方"],
+                 examples: [
+                    ("We went to an artsy museum.", "おしゃれな美術館に行った。"),
+                    ("An artsy museum downtown.", "街中のアートな美術館。")
+                 ], ipa: "/ˈɑːtsɪ mjuːzˈiəm/"),
+            make("culinary", "relating to cooking or the kitchen",
+                 "料理の・調理の",
+                 useCases: ["料理や調理に関することを表すとき"],
+                 examples: [
+                    ("Culinary skills.", "料理の腕。"),
+                    ("A culinary school.", "料理学校。")
+                 ], ipa: "/kjˈʊlɪnəɹɪ/"),
+            make("delight", "great pleasure; something that delights",
+                 "喜び・楽しみ",
+                 useCases: ["大きな喜びや楽しませるものを表すとき"],
+                 examples: [
+                    ("To my delight.", "嬉しいことに。"),
+                    ("A culinary delight.", "食の楽しみ。")
+                 ], ipa: "/dɪlˈaɪt/"),
+            make("continent", "one of the earth's large landmasses",
+                 "大陸",
+                 useCases: ["アジアやヨーロッパなどの大陸を表すとき"],
+                 examples: [
+                    ("The African continent.", "アフリカ大陸。"),
+                    ("Travel across the continent.", "大陸を横断する。")
+                 ], ipa: "/kˈɒntɪnənt/"),
+            make("summer break", "the holiday period in summer",
+                 "夏休み",
+                 useCases: ["学校や仕事の夏季休暇を表すとき"],
+                 examples: [
+                    ("During summer break.", "夏休みの間。"),
+                    ("Plans for summer break.", "夏休みの予定。")
+                 ], ipa: "/sˈʌmɐ bɹˈeɪk/"),
+            make("sunset", "the time when the sun goes down",
+                 "日の入り・夕焼け",
+                 useCases: ["日が沈む時間や光景を表すとき"],
+                 examples: [
+                    ("Watch the sunset.", "夕日を眺める。"),
+                    ("A beautiful sunset.", "美しい夕焼け。")
+                 ], ipa: "/sˈʌnsɛt/"),
+            make("firework", "a device that explodes with light and sound",
+                 "花火",
+                 useCases: ["祭りなどで打ち上げる花火を表すとき"],
+                 examples: [
+                    ("Watch the fireworks.", "花火を見る。"),
+                    ("A firework display.", "花火大会。")
+                 ], ipa: "/fˈaɪəwɜːk/"),
+            make("firewall", "a security system controlling network traffic",
+                 "ファイアウォール",
+                 useCases: ["不正アクセスを防ぐ防御の仕組みを表すとき"],
+                 examples: [
+                    ("Set up a firewall.", "ファイアウォールを設定する。"),
+                    ("The firewall blocked it.", "ファイアウォールがそれを遮断した。")
+                 ], ipa: "/fˈaɪəwɔːl/"),
+            make("new chapter", "a fresh phase in life",
+                 "人生の新たな章・新章",
+                 useCases: ["新しい段階の始まりを表すとき"],
+                 examples: [
+                    ("Start a new chapter.", "新たな章を始める。"),
+                    ("A new chapter in my life.", "人生の新章。")
+                 ], ipa: "/njˈuː tʃˈæptɐ/"),
+            make("noble person", "a person of high moral character or rank",
+                 "高潔な人・貴族",
+                 useCases: ["立派な人格者や高貴な身分の人を表すとき"],
+                 examples: [
+                    ("A truly noble person.", "本当に高潔な人。"),
+                    ("She's a noble person.", "彼女は気高い人だ。")
+                 ], ipa: "/nˈəʊbəl pˈɜːsən/"),
+            make("homeless person", "someone without a home",
+                 "ホームレスの人",
+                 useCases: ["住まいのない人を表すとき"],
+                 examples: [
+                    ("Help a homeless person.", "ホームレスの人を助ける。"),
+                    ("A homeless person on the street.", "路上のホームレスの人。")
+                 ], ipa: "/hˈəʊmləs pˈɜːsən/"),
+            make("trolley", "a cart for carrying goods; a tram",
+                 "カート・台車・路面電車",
+                 useCases: ["買い物カートや台車、路面電車を表すとき(英)"],
+                 examples: [
+                    ("A shopping trolley.", "ショッピングカート。"),
+                    ("Push the trolley.", "台車を押す。")
+                 ], ipa: "/tɹˈɒlɪ/"),
+            make("bunny", "a rabbit (childish or affectionate)",
+                 "うさぎちゃん",
+                 useCases: ["ウサギを可愛らしく呼ぶとき"],
+                 examples: [
+                    ("A cute bunny.", "可愛いうさぎ。"),
+                    ("The Easter bunny.", "イースターバニー。")
+                 ], ipa: "/bˈʌnɪ/"),
+            make("chains", "connected metal links; a restraint",
+                 "鎖・束縛",
+                 useCases: ["金属の鎖や、比喩的な束縛を表すとき"],
+                 examples: [
+                    ("Break the chains.", "鎖を断ち切る。"),
+                    ("Chains of habit.", "習慣の束縛。")
+                 ], ipa: "/tʃˈeɪnz/")
+        ]
+    }
+
+    // MARK: - 表現・フレーズ A (追加 69)
+
+    private static var phrasesA69: [Word] {
+        [
+            make("for nothing", "without result or payment; in vain",
+                 "無駄に・ただで",
+                 useCases: ["努力が無駄になる、または無料であることを表すとき"],
+                 examples: [
+                    ("All that work for nothing.", "あの苦労が全部無駄だった。"),
+                    ("I got it for nothing.", "ただで手に入れた。")
+                 ], ipa: "/fɔː nˈʌθɪŋ/"),
+            make("waiting around for nothing", "idly waiting with no result",
+                 "無駄に待たされている",
+                 useCases: ["意味もなく待たされる状況を表すとき"],
+                 examples: [
+                    ("I'm waiting around for nothing.", "無駄に待たされてる。"),
+                    ("Stop waiting around for nothing.", "意味なく待つのはやめて。")
+                 ], ipa: "/wˈeɪtɪŋ ɐɹˈaʊnd fɔː nˈʌθɪŋ/"),
+            make("walking dead", "someone exhausted or doomed",
+                 "生ける屍・へとへとの状態",
+                 useCases: ["疲れ果てた人やゾンビを表すとき"],
+                 examples: [
+                    ("I feel like the walking dead.", "生ける屍みたいな気分だ。"),
+                    ("The walking dead.", "ウォーキング・デッド(ゾンビ)。")
+                 ], ipa: "/wˈɔːkɪŋ dˈɛd/"),
+            make("from every corner of", "from all parts of a place",
+                 "〜のあらゆる所から",
+                 useCases: ["各地から集まる様子を表すとき"],
+                 examples: [
+                    ("People from every corner of the world.", "世界中のあらゆる場所からの人々。"),
+                    ("Fans from every corner of the country.", "国中のあらゆる所からのファン。")
+                 ], ipa: "/fɹɒm ˈɛvɹɪ kˈɔːnɐɹ ɒv/"),
+            make("from here", "starting at this point or place",
+                 "ここから",
+                 useCases: ["この場所や時点を起点にするとき"],
+                 examples: [
+                    ("It's ten minutes from here.", "ここから10分だ。"),
+                    ("Where do we go from here?", "ここからどうする？")
+                 ], ipa: "/fɹɒm hˈiə/"),
+            make("hella fun", "very fun (slang)",
+                 "めっちゃ楽しい(スラング)",
+                 useCases: ["とても楽しいことを強調するくだけた言い方"],
+                 examples: [
+                    ("That was hella fun.", "あれめっちゃ楽しかった。"),
+                    ("It's hella fun.", "超楽しいよ。")
+                 ], ipa: "/hˈɛlɐ fˈʌn/"),
+            make("I've been obsessed with", "I have been fixated on lately",
+                 "最近〜にハマっている",
+                 useCases: ["最近夢中になっているものを述べるとき"],
+                 examples: [
+                    ("I've been obsessed with this song.", "最近この曲にハマってる。"),
+                    ("I've been obsessed with cooking.", "最近料理に夢中だ。")
+                 ], ipa: "/aɪv bˌiːn ɒbsˈɛst wɪð/"),
+            make("these past days", "over the recent few days",
+                 "ここ数日",
+                 useCases: ["最近の数日間を振り返るとき"],
+                 examples: [
+                    ("These past days have been hard.", "ここ数日は大変だった。"),
+                    ("I've felt off these past days.", "この数日、調子が悪い。")
+                 ], ipa: "/ðiːz pˈɑːst dˈeɪz/"),
+            make("go out of sth", "leave or run out of something",
+                 "〜から出る・〜がなくなる",
+                 useCases: ["場所から出る、または尽きることを表すとき"],
+                 examples: [
+                    ("Go out of business.", "廃業する。"),
+                    ("Go out of style.", "流行遅れになる。")
+                 ], ipa: "/ɡˌəʊ ˌaʊtəv sˈʌmθɪŋ/"),
+            make("be strong at", "be skilled in a particular area",
+                 "〜が得意だ",
+                 useCases: ["特定分野に強いことを表すとき"],
+                 examples: [
+                    ("I'm strong at math.", "数学が得意だ。"),
+                    ("She's strong at negotiation.", "彼女は交渉に強い。")
+                 ], ipa: "/biː stɹˈɒŋ æt/"),
+            make("is one of them", "belongs to that group",
+                 "その一つ(一人)だ",
+                 useCases: ["ある集団に属していることを表すとき"],
+                 examples: [
+                    ("He is one of them.", "彼もその一人だ。"),
+                    ("This is one of them.", "これがそのうちの一つだ。")
+                 ], ipa: "/ɪz wˈɒn ɒv ðˌɛm/"),
+            make("come here", "approach this place",
+                 "こっちに来て",
+                 useCases: ["人を自分の方へ呼ぶとき"],
+                 examples: [
+                    ("Come here, please.", "こっちに来て。"),
+                    ("Come here, I'll show you.", "おいで、見せてあげる。")
+                 ], ipa: "/kˈʌm hˈiə/"),
+            make("look at this", "direct attention to this",
+                 "これを見て",
+                 useCases: ["相手に何かを見せるとき"],
+                 examples: [
+                    ("Look at this!", "これ見て!"),
+                    ("Look at this photo.", "この写真見て。")
+                 ], ipa: "/lˈʊk æt ðˈɪs/"),
+            make("big crowds", "large gatherings of people",
+                 "大勢の人だかり",
+                 useCases: ["多くの人が集まる様子を表すとき"],
+                 examples: [
+                    ("Big crowds gathered.", "大勢の人が集まった。"),
+                    ("I hate big crowds.", "人混みが苦手だ。")
+                 ], ipa: "/bˈɪɡ kɹˈaʊdz/"),
+            make("on my own", "by myself; independently",
+                 "自分一人で",
+                 useCases: ["他の助けなしで行うことを表すとき"],
+                 examples: [
+                    ("I did it on my own.", "自分一人でやった。"),
+                    ("Living on my own.", "一人暮らし。")
+                 ], ipa: "/ˌɒn maɪ ˈəʊn/"),
+            make("take walk", "go for a walk",
+                 "散歩する",
+                 useCases: ["歩いて出かけることを表すとき(take a walk)"],
+                 examples: [
+                    ("Let's take a walk.", "散歩しよう。"),
+                    ("I took a walk in the park.", "公園を散歩した。")
+                 ], ipa: "/tˈeɪk wˈɔːk/"),
+            make("I've never seen sth like this before", "this is unlike anything I've seen",
+                 "こんなの見たことない",
+                 useCases: ["初めて見る驚きを表すとき"],
+                 examples: [
+                    ("I've never seen anything like this before.", "こんなのは見たことがない。"),
+                    ("Wow, I've never seen something like this before.", "うわ、こんなの初めて見た。")
+                 ], ipa: "/aɪv nˈɛvɐ sˈiːn sˈʌmθɪŋ lˈaɪk ðɪs bɪfˈɔː/"),
+            make("what type of", "which kind of",
+                 "どんな種類の",
+                 useCases: ["種類を尋ねるとき"],
+                 examples: [
+                    ("What type of music do you like?", "どんな音楽が好き？"),
+                    ("What type of person is he?", "彼はどんなタイプの人？")
+                 ], ipa: "/wˌɒt tˈaɪp ɒv/"),
+            make("have a son", "be the parent of a boy",
+                 "息子がいる",
+                 useCases: ["男の子の子どもがいることを表すとき"],
+                 examples: [
+                    ("They have a son.", "彼らには息子がいる。"),
+                    ("I have a son and a daughter.", "息子と娘がいます。")
+                 ], ipa: "/hæv ɐ sˈʌn/")
+        ]
+    }
+
+    // MARK: - 表現・フレーズ B (追加 69)
+
+    private static var phrasesB69: [Word] {
+        [
+            make("anyone else who doesn't have", "any other person lacking",
+                 "〜を持っていない他の誰か",
+                 useCases: ["同じ境遇の他の人を呼びかけるとき"],
+                 examples: [
+                    ("Anyone else who doesn't have a ticket?", "チケットがない人は他にいますか？"),
+                    ("Anyone else who doesn't have access?", "アクセス権がない人は他に？")
+                 ], ipa: "/ˈɛnɪwˌɒn ˈɛls hˌuː dˈʌzənt hˈæv/"),
+            make("be divided into", "be split into parts",
+                 "〜に分けられる",
+                 useCases: ["いくつかの部分に分割されることを表すとき"],
+                 examples: [
+                    ("The book is divided into five parts.", "その本は5部に分かれている。"),
+                    ("Divided into teams.", "チームに分けられる。")
+                 ], ipa: "/biː dɪvˈaɪdɪd ˌɪntʊ/"),
+            make("from all over the world", "from everywhere globally",
+                 "世界中から",
+                 useCases: ["世界各地から集まることを表すとき"],
+                 examples: [
+                    ("People from all over the world.", "世界中の人々。"),
+                    ("Fans from all over the world.", "世界中のファン。")
+                 ], ipa: "/fɹɒm ˈɔːl ˌəʊvɐ ðə wˈɜːld/"),
+            make("chat with sb", "have a casual conversation with someone",
+                 "(人)とおしゃべりする",
+                 useCases: ["気軽に会話するとき"],
+                 examples: [
+                    ("Chat with friends.", "友達とおしゃべりする。"),
+                    ("I chatted with her online.", "彼女とネットで話した。")
+                 ], ipa: "/tʃˈæt wɪð sˈʌmbɒdɪ/"),
+            make("I'll carry on with", "I will continue with",
+                 "〜を続けます",
+                 useCases: ["中断せず続けることを伝えるとき"],
+                 examples: [
+                    ("I'll carry on with the work.", "作業を続けます。"),
+                    ("I'll carry on with the plan.", "計画を進めます。")
+                 ], ipa: "/aɪl kˈæɹɪ ˈɒn wɪð/"),
+            make("exam preparation", "getting ready for a test",
+                 "試験勉強・受験準備",
+                 useCases: ["試験に備えることを表すとき"],
+                 examples: [
+                    ("Exam preparation takes time.", "試験勉強は時間がかかる。"),
+                    ("Busy with exam preparation.", "受験準備で忙しい。")
+                 ], ipa: "/ɪɡzˈæm pɹˌɛpəɹˈeɪʃən/"),
+            make("most well known", "the most famous",
+                 "最もよく知られた",
+                 useCases: ["知名度が一番高いものを表すとき"],
+                 examples: [
+                    ("The most well known brand.", "最も有名なブランド。"),
+                    ("His most well known work.", "彼の最も有名な作品。")
+                 ], ipa: "/mˈəʊst wˈɛl nˈəʊn/"),
+            make("sth that shocked me", "something that surprised me greatly",
+                 "私に衝撃を与えたこと",
+                 useCases: ["強い驚きを与えた出来事を表すとき"],
+                 examples: [
+                    ("Something that shocked me happened.", "私に衝撃を与えることが起きた。"),
+                    ("Here's something that shocked me.", "衝撃を受けたことを話すね。")
+                 ], ipa: "/sˈʌmθɪŋ ðæt ʃˈɒkt mˌiː/"),
+            make("what was supposed to happen", "the intended or expected outcome",
+                 "本来起こるはずだったこと",
+                 useCases: ["予定・想定と違った結果を語るとき"],
+                 examples: [
+                    ("That's not what was supposed to happen.", "そうなるはずじゃなかった。"),
+                    ("What was supposed to happen didn't.", "起こるはずのことが起きなかった。")
+                 ], ipa: "/wˌɒt wɒz səpˈəʊzd tə hˈæpən/"),
+            make("sth by which", "something through the means of which",
+                 "それによって〜する手段",
+                 useCases: ["手段や基準を関係詞で説明するとき"],
+                 examples: [
+                    ("A standard by which we judge.", "私たちが判断する基準。"),
+                    ("The method by which it works.", "それが機能する仕組み。")
+                 ], ipa: "/sˈʌmθɪŋ baɪ wˈɪtʃ/"),
+            make("what I could V is", "the thing I am able to do is",
+                 "私にできるのは〜だ",
+                 useCases: ["自分にできる選択肢を提示するとき"],
+                 examples: [
+                    ("What I could do is call them.", "私にできるのは彼らに電話することだ。"),
+                    ("What I could offer is a discount.", "私が提供できるのは割引です。")
+                 ], ipa: "/wˌɒt aɪ kʊd vˈiː ɪz/"),
+            make("any one of", "any single member of a group",
+                 "〜のうちのどれか一つ",
+                 useCases: ["複数の中からどれでも一つを指すとき"],
+                 examples: [
+                    ("Any one of these will do.", "このうちどれでもいい。"),
+                    ("Any one of us could go.", "私たちの誰か一人が行けばいい。")
+                 ], ipa: "/ˌɛnɪ wˈɒn ɒv/"),
+            make("all in one", "combining several functions in a single unit",
+                 "オールインワンの",
+                 useCases: ["一つで複数の機能を兼ねることを表すとき"],
+                 examples: [
+                    ("An all in one printer.", "オールインワンのプリンター。"),
+                    ("All in one solution.", "一括ソリューション。")
+                 ], ipa: "/ˈɔːl ɪn wˌɒn/"),
+            make("make my order", "place my order",
+                 "注文する",
+                 useCases: ["飲食店などで注文を決めるとき"],
+                 examples: [
+                    ("Can I make my order now?", "今注文してもいい？"),
+                    ("I'd like to make my order.", "注文したいです。")
+                 ], ipa: "/mˌeɪk maɪ ˈɔːdɐ/"),
+            make("just in", "just arrived (news or stock)",
+                 "入荷したばかり・入ったばかり(速報)",
+                 useCases: ["最新のニュースや入荷品を表すとき"],
+                 examples: [
+                    ("News just in.", "たった今入ったニュース。"),
+                    ("New stock just in.", "新入荷したばかり。")
+                 ], ipa: "/dʒˈʌst ˈɪn/"),
+            make("make it win win", "arrange for both sides to benefit",
+                 "ウィンウィンにする",
+                 useCases: ["双方が得をする状況にするとき"],
+                 examples: [
+                    ("Let's make it win win.", "お互い得する形にしよう。"),
+                    ("Make it a win win deal.", "ウィンウィンの取引にする。")
+                 ], ipa: "/mˌeɪk ɪt wˈɪn wˈɪn/"),
+            make("a little earlier than usual", "somewhat sooner than normal",
+                 "いつもより少し早く",
+                 useCases: ["普段より早めであることを表すとき"],
+                 examples: [
+                    ("I woke up a little earlier than usual.", "いつもより少し早く起きた。"),
+                    ("Let's start a little earlier than usual.", "いつもより少し早く始めよう。")
+                 ], ipa: "/ɐ lˈɪtəl ˈɜːlɪɐ ðɐn jˈuːʒuːəl/"),
+            make("move forward", "make progress; proceed",
+                 "前進する・進める",
+                 useCases: ["物事を先へ進めるとき"],
+                 examples: [
+                    ("Let's move forward.", "前に進もう。"),
+                    ("Move forward with the plan.", "計画を進める。")
+                 ], ipa: "/mˈuːv fˈɔːwəd/"),
+            make("never get old", "always remain enjoyable",
+                 "何度でも楽しめる・飽きない",
+                 useCases: ["繰り返しても魅力が色あせないことを表すとき"],
+                 examples: [
+                    ("This joke never gets old.", "このジョークは何度聞いても飽きない。"),
+                    ("Sunsets never get old.", "夕日は何度見ても飽きない。")
+                 ], ipa: "/nˈɛvɐ ɡɛt ˈəʊld/"),
+            make("populous", "having a large population",
+                 "人口の多い",
+                 useCases: ["人が多く住む場所を表すとき"],
+                 examples: [
+                    ("A populous city.", "人口の多い都市。"),
+                    ("The most populous country.", "最も人口の多い国。")
+                 ], ipa: "/pˈɒpjʊləs/"),
+            make("silly", "foolish or lacking seriousness",
+                 "ばかげた・おふざけの",
+                 useCases: ["ちょっと愚かで愛嬌のある様子を表すとき"],
+                 examples: [
+                    ("Don't be silly.", "ばかなこと言わないで。"),
+                    ("A silly mistake.", "うっかりミス。")
+                 ], ipa: "/sˈɪlɪ/")
         ]
     }
 }
