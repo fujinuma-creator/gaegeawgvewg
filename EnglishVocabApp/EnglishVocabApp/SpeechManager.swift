@@ -10,8 +10,10 @@ final class SpeechManager {
     /// consecutive tap on the same button so it can be played back slowly.
     private var lastSpokenText: String?
 
-    /// How much to slow the speech on the second consecutive tap (0.25×).
-    private let slowFactor: Float = 0.25
+    /// Playback speed factors: the first tap plays at 0.25×, a second
+    /// consecutive tap on the same button plays even slower at 0.1×.
+    private let firstFactor: Float = 0.25
+    private let secondFactor: Float = 0.1
 
     private init() {
         try? AVAudioSession.sharedInstance().setCategory(
@@ -21,9 +23,10 @@ final class SpeechManager {
         )
     }
 
-    /// Speaks `text`. Tapping the same button twice in a row plays the second
-    /// time at 0.25× speed (a slow, careful reading); a third tap returns to
-    /// normal speed, and so on. Tapping a different text resets the cycle.
+    /// Speaks `text` slowly. The first tap plays at 0.25× speed; a second
+    /// consecutive tap on the same button plays at an even slower 0.1×. A
+    /// third tap returns to 0.25×, and so on. Tapping a different text resets
+    /// the cycle back to 0.25×.
     func speak(_ text: String, language: String = "en-GB", rate: Float = 0.50) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
@@ -32,12 +35,11 @@ final class SpeechManager {
             synthesizer.stopSpeaking(at: .immediate)
         }
 
-        // Second tap on the same text → slow playback; then reset so the
-        // next tap on it is normal again.
+        // First tap → 0.25×; second consecutive tap on the same text → 0.1×;
+        // then reset so the next tap on it is 0.25× again.
         let isRepeat = (trimmed == lastSpokenText)
-        let effectiveRate = isRepeat
-            ? max(rate * slowFactor, AVSpeechUtteranceMinimumSpeechRate)
-            : rate
+        let factor = isRepeat ? secondFactor : firstFactor
+        let effectiveRate = max(rate * factor, AVSpeechUtteranceMinimumSpeechRate)
         lastSpokenText = isRepeat ? nil : trimmed
 
         let utterance = AVSpeechUtterance(string: trimmed)
