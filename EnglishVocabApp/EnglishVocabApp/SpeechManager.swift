@@ -6,6 +6,13 @@ final class SpeechManager {
     private let synthesizer = AVSpeechSynthesizer()
     private var cachedVoice: AVSpeechSynthesisVoice?
 
+    /// The text spoken by the previous `speak` call. Used to detect a second
+    /// consecutive tap on the same button so it can be played back slowly.
+    private var lastSpokenText: String?
+
+    /// How much to slow the speech on the second consecutive tap (0.25×).
+    private let slowFactor: Float = 0.25
+
     private init() {
         try? AVAudioSession.sharedInstance().setCategory(
             .playback,
@@ -14,6 +21,9 @@ final class SpeechManager {
         )
     }
 
+    /// Speaks `text`. Tapping the same button twice in a row plays the second
+    /// time at 0.25× speed (a slow, careful reading); a third tap returns to
+    /// normal speed, and so on. Tapping a different text resets the cycle.
     func speak(_ text: String, language: String = "en-GB", rate: Float = 0.50) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
@@ -22,9 +32,17 @@ final class SpeechManager {
             synthesizer.stopSpeaking(at: .immediate)
         }
 
+        // Second tap on the same text → slow playback; then reset so the
+        // next tap on it is normal again.
+        let isRepeat = (trimmed == lastSpokenText)
+        let effectiveRate = isRepeat
+            ? max(rate * slowFactor, AVSpeechUtteranceMinimumSpeechRate)
+            : rate
+        lastSpokenText = isRepeat ? nil : trimmed
+
         let utterance = AVSpeechUtterance(string: trimmed)
         utterance.voice = bestVoice(for: language)
-        utterance.rate = rate
+        utterance.rate = effectiveRate
         utterance.pitchMultiplier = 0.96
         utterance.preUtteranceDelay = 0
         utterance.postUtteranceDelay = 0
@@ -35,6 +53,7 @@ final class SpeechManager {
         if synthesizer.isSpeaking {
             synthesizer.stopSpeaking(at: .immediate)
         }
+        lastSpokenText = nil
     }
 
     /// Picks the most natural-sounding installed voice for the given
