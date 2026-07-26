@@ -13,7 +13,10 @@ struct ReviewView: View {
         var id: String { rawValue }
     }
 
-    @State private var filter: ReviewFilter = .dueToday
+    // The card deck is locked to the review list: it always shows exactly the
+    // words currently in the review list, and updates automatically when that
+    // set changes (e.g. the weekly 500-word refresh or a manual pin).
+    @State private var filter: ReviewFilter = .reviewList
     @State private var shuffled: Bool = false
     @State private var indexInQueue: Int = 0
     @State private var dragOffset: CGSize = .zero
@@ -118,22 +121,6 @@ struct ReviewView: View {
                 circleIconButton(systemName: shuffled ? "shuffle.circle.fill" : "shuffle") {
                     shuffled.toggle()
                     indexInQueue = 0
-                }
-                Menu {
-                    ForEach(ReviewFilter.allCases) { f in
-                        Button {
-                            filter = f
-                            indexInQueue = 0
-                        } label: {
-                            if filter == f {
-                                Label(f.rawValue, systemImage: "checkmark")
-                            } else {
-                                Text(f.rawValue)
-                            }
-                        }
-                    }
-                } label: {
-                    circleIconLabel(systemName: "line.3.horizontal.decrease")
                 }
             }
         }
