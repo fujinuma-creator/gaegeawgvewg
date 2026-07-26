@@ -23,7 +23,7 @@ struct ContentView: View {
 
             WordListView(activeTab: $selectedTab)
                 .tabItem {
-                    Label("一覧", systemImage: "list.bullet")
+                    Label("カード", systemImage: "rectangle.stack")
                 }
                 .tag(Tab.list)
         }

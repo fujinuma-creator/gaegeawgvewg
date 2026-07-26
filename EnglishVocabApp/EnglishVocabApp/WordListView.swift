@@ -14,33 +14,27 @@ struct WordListView: View {
     @Binding var activeTab: ContentView.Tab
 
     enum Section: String, CaseIterable, Identifiable {
-        case list = "一覧"
         case card = "カード"
         case grammar = "文法"
-        case shadowing = "シャドウイング"
         var id: String { rawValue }
     }
 
-    @State private var section: Section = .list
+    @State private var section: Section = .card
     @State private var showAddSheet = false
 
     var body: some View {
         VStack(spacing: 0) {
             sectionPicker
             switch section {
-            case .list:
-                WordListContent(filter: .all, resetTrigger: activeTab)
             case .card:
                 ReviewView(activeTab: $activeTab)
             case .grammar:
                 GrammarView()
-            case .shadowing:
-                ShadowingListView()
             }
         }
         .background(GeometricBackground().ignoresSafeArea())
         .overlay(alignment: .bottomTrailing) {
-            if section == .list {
+            if section == .card {
                 Button {
                     showAddSheet = true
                 } label: {
