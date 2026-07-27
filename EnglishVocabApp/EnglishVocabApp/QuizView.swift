@@ -73,6 +73,9 @@ struct QuizView: View {
     /// Drag offset used to animate the translation question card while the
     /// user is swiping between problems (Tinder-style follow-the-finger).
     @State private var translationDragOffset: CGSize = .zero
+    /// Whether the in-progress drag is moving the card (nil until decided at
+    /// the start of the drag; false means the ScrollView gets it instead).
+    @State private var translationDragFollows: Bool? = nil
 
     // Translation mode state — the picked problem persists until the user
     // explicitly changes it (saved to AppStorage so it survives app launches).
@@ -607,7 +610,7 @@ struct QuizView: View {
                 .frame(maxWidth: .infinity)
                 .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
                 .padding(.horizontal, 16)
-                .offset(x: translationDragOffset.width, y: translationDragOffset.height * 0.4)
+                .offset(x: translationDragOffset.width, y: translationDragOffset.height)
                 .rotationEffect(.degrees(Double(translationDragOffset.width) / 22))
                 .overlay(translationSwipeHint.allowsHitTesting(false))
                 .contentShape(Rectangle())
@@ -626,7 +629,7 @@ struct QuizView: View {
                     // user doesn't have to scroll back up to the question.
                     answerView(ex, word: w)
                         .padding(.horizontal, 16)
-                        .offset(x: translationDragOffset.width)
+                        .offset(x: translationDragOffset.width, y: translationDragOffset.height)
                         .contentShape(Rectangle())
                         .gesture(translationSwipeGesture)
                     aiAssistSection(for: ex)
@@ -665,25 +668,35 @@ struct QuizView: View {
         return queue.firstIndex { $0.word.id == w.id && $0.exampleIdx == exIdx } ?? 0
     }
 
-    /// Horizontal swipe that moves between translation problems
-    /// (right = next, left = previous). Shared by the question card and the
-    /// answer card.
+    /// Drag used to move between translation problems. The card follows the
+    /// finger freely in every direction; only the horizontal distance decides
+    /// whether we advance (right = next, left = previous) or spring back.
     ///
-    /// Drags that are more vertical than horizontal are ignored so the
-    /// surrounding ScrollView still scrolls normally — that matters because
-    /// the answer card sits partway down a scrollable page.
+    /// Direction handling: while the answer is hidden the page has nothing to
+    /// scroll, so the card follows the finger no matter which way the drag
+    /// starts. Once the answer is shown the page becomes scrollable, so a drag
+    /// that starts vertically is handed to the ScrollView instead. The choice
+    /// is made once at the start of each drag and then held, so a swipe that
+    /// begins sideways keeps following the finger even if it curves upward.
     private var translationSwipeGesture: some Gesture {
-        DragGesture(minimumDistance: 12)
+        DragGesture(minimumDistance: 8)
             .onChanged { value in
-                guard abs(value.translation.width) > abs(value.translation.height) else { return }
+                if translationDragFollows == nil {
+                    let dx = abs(value.translation.width)
+                    let dy = abs(value.translation.height)
+                    guard max(dx, dy) >= 8 else { return }
+                    translationDragFollows = showAnswer ? (dx >= dy) : true
+                }
+                guard translationDragFollows == true else { return }
                 translationDragOffset = value.translation
             }
             .onEnded { value in
+                let wasFollowing = (translationDragFollows == true)
+                translationDragFollows = nil
                 let threshold: CGFloat = 50
-                let isHorizontal = abs(value.translation.width) > abs(value.translation.height)
-                if isHorizontal, value.translation.width > threshold {
+                if wasFollowing, value.translation.width > threshold {
                     flyOffTranslation(direction: 1) { nextProblem() }
-                } else if isHorizontal, value.translation.width < -threshold {
+                } else if wasFollowing, value.translation.width < -threshold {
                     flyOffTranslation(direction: -1) { prevProblem() }
                 } else {
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
