@@ -603,24 +603,7 @@ struct QuizView: View {
                 .rotationEffect(.degrees(Double(translationDragOffset.width) / 22))
                 .overlay(translationSwipeHint.allowsHitTesting(false))
                 .contentShape(Rectangle())
-                .gesture(
-                    DragGesture(minimumDistance: 2)
-                        .onChanged { value in
-                            translationDragOffset = value.translation
-                        }
-                        .onEnded { value in
-                            let threshold: CGFloat = 50
-                            if value.translation.width > threshold {
-                                flyOffTranslation(direction: 1) { nextProblem() }
-                            } else if value.translation.width < -threshold {
-                                flyOffTranslation(direction: -1) { prevProblem() }
-                            } else {
-                                withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
-                                    translationDragOffset = .zero
-                                }
-                            }
-                        }
-                )
+                .gesture(translationSwipeGesture)
 
                 Button {
                     showAnswer.toggle()
@@ -639,8 +622,13 @@ struct QuizView: View {
                 .padding(.horizontal, 16)
 
                 if showAnswer, let ex = currentExample, let w = currentWord {
+                    // The answer card swipes between problems too, so the
+                    // user doesn't have to scroll back up to the question.
                     answerView(ex, word: w)
                         .padding(.horizontal, 16)
+                        .offset(x: translationDragOffset.width)
+                        .contentShape(Rectangle())
+                        .gesture(translationSwipeGesture)
                     aiAssistSection(for: ex)
                         .padding(.horizontal, 16)
                     selfRateRow(for: w)
@@ -675,6 +663,34 @@ struct QuizView: View {
         guard let w = currentWord, let ex = currentExample,
               let exIdx = w.examples.firstIndex(where: { $0.id == ex.id }) else { return 0 }
         return queue.firstIndex { $0.word.id == w.id && $0.exampleIdx == exIdx } ?? 0
+    }
+
+    /// Horizontal swipe that moves between translation problems
+    /// (right = next, left = previous). Shared by the question card and the
+    /// answer card.
+    ///
+    /// Drags that are more vertical than horizontal are ignored so the
+    /// surrounding ScrollView still scrolls normally — that matters because
+    /// the answer card sits partway down a scrollable page.
+    private var translationSwipeGesture: some Gesture {
+        DragGesture(minimumDistance: 12)
+            .onChanged { value in
+                guard abs(value.translation.width) > abs(value.translation.height) else { return }
+                translationDragOffset = value.translation
+            }
+            .onEnded { value in
+                let threshold: CGFloat = 50
+                let isHorizontal = abs(value.translation.width) > abs(value.translation.height)
+                if isHorizontal, value.translation.width > threshold {
+                    flyOffTranslation(direction: 1) { nextProblem() }
+                } else if isHorizontal, value.translation.width < -threshold {
+                    flyOffTranslation(direction: -1) { prevProblem() }
+                } else {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                        translationDragOffset = .zero
+                    }
+                }
+            }
     }
 
     /// Visual hint that appears as the user holds the translation card to one
