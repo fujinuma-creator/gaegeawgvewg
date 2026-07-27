@@ -579,6 +579,14 @@ struct QuizView: View {
                         }
                     }
 
+                    HStack(spacing: 6) {
+                        Image(systemName: showAnswer ? "eye.slash" : "hand.tap")
+                        Text(showAnswer ? "タップで答えを隠す" : "タップで答えを表示")
+                    }
+                    .font(.caption2.bold())
+                    .foregroundStyle(.indigo)
+                    .padding(.top, 6)
+
                     HStack {
                         HStack(spacing: 4) {
                             Image(systemName: "chevron.left")
@@ -603,23 +611,15 @@ struct QuizView: View {
                 .rotationEffect(.degrees(Double(translationDragOffset.width) / 22))
                 .overlay(translationSwipeHint.allowsHitTesting(false))
                 .contentShape(Rectangle())
-                .gesture(translationSwipeGesture)
-
-                Button {
-                    showAnswer.toggle()
-                } label: {
-                    HStack {
-                        Spacer()
-                        Image(systemName: showAnswer ? "eye.slash" : "eye")
-                        Text(showAnswer ? "答えを隠す" : "答えを見る").bold()
-                        Spacer()
+                // Tap the question card to reveal the answer, tap again to
+                // hide it. (Replaces the old 答えを見る button.) The swipe
+                // gesture needs 12pt of movement, so it never eats the tap.
+                .onTapGesture {
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        showAnswer.toggle()
                     }
-                    .padding(.vertical, 12)
-                    .foregroundStyle(.white)
-                    .background(Color.indigo)
-                    .clipShape(RoundedRectangle(cornerRadius: 12))
                 }
-                .padding(.horizontal, 16)
+                .gesture(translationSwipeGesture)
 
                 if showAnswer, let ex = currentExample, let w = currentWord {
                     // The answer card swipes between problems too, so the
