@@ -9,9 +9,11 @@ struct QuizView: View {
     @Binding var activeTab: ContentView.Tab
 
     enum QuizMode: String, CaseIterable, Identifiable {
+        // Declaration order drives the segmented control order:
+        // 例文翻訳 (left) → 使う場面 (middle) → 英語の定義 (right).
+        case translation = "例文翻訳"
         case useCase = "使う場面"
         case definition = "英語の定義"
-        case translation = "例文翻訳"
         var id: String { rawValue }
 
         /// Stable English key used for Word.modeCounts /
@@ -43,7 +45,7 @@ struct QuizView: View {
             switch self {
             case .useCase:     return "復習リスト内に「使う場面」付きの単語が4つ以上必要です"
             case .definition:  return "復習リスト内に「英語の定義」付きの単語が4つ以上必要です"
-            case .translation: return "復習リスト内に「例文」付きの単語が必要です"
+            case .translation: return "本日分の例文がありません"
             }
         }
 
@@ -71,23 +73,18 @@ struct QuizView: View {
     /// Drag offset used to animate the translation question card while the
     /// user is swiping between problems (Tinder-style follow-the-finger).
     @State private var translationDragOffset: CGSize = .zero
-    @State private var showDetail: Bool = false
 
     // Translation mode state — the picked problem persists until the user
     // explicitly changes it (saved to AppStorage so it survives app launches).
     @State private var currentExample: ExampleSentence? = nil
-    @State private var userTranslation: String = ""
     @State private var showAnswer: Bool = false
     @AppStorage("translation.wordId") private var savedTranslationWordId: String = ""
     @AppStorage("translation.exampleIdx") private var savedTranslationExampleIdx: Int = 0
 
     // AI assistance state for the current translation problem.
     @State private var isFetchingGrammar: Bool = false
-    @State private var isCorrectingComposition: Bool = false
-    @State private var latestComposition: CompositionAttempt? = nil
     @State private var aiErrorMessage: String? = nil
     @State private var showAIError: Bool = false
-    @State private var showHistory: Bool = false
 
     /// Words from the review list eligible to be the *question* for the
     /// current mode: per-mode count < 4 AND per-mode next-review date is
@@ -130,12 +127,14 @@ struct QuizView: View {
 
     /// Can we actually run the quiz right now?
     private var canShowQuiz: Bool {
-        guard !eligibleWords.isEmpty else { return false }
         switch mode {
         case .useCase, .definition:
+            guard !eligibleWords.isEmpty else { return false }
             return distractorPool.count >= 4
         case .translation:
-            return true
+            // Translation is driven by the daily example plan, not the
+            // review list, so it only needs today's Day to be non-empty.
+            return !translationQueue.isEmpty
         }
     }
 
@@ -144,7 +143,9 @@ struct QuizView: View {
     /// scheduled out by the Ebbinghaus curve). Triggers the
     /// "本日のタスクは終了しました" celebration view.
     private var allTasksDone: Bool {
-        !store.reviewListWords.isEmpty && eligibleWords.isEmpty
+        // Translation never "runs out": it always serves today's Day.
+        guard mode != .translation else { return false }
+        return !store.reviewListWords.isEmpty && eligibleWords.isEmpty
     }
 
 
@@ -221,22 +222,22 @@ struct QuizView: View {
             totalCount = 0
             nextQuestion()
         }
-        .sheet(isPresented: $showDetail) {
-            if let detailWord {
-                WordDetailSheet(word: detailWord)
-                    .environmentObject(store)
-            }
+        // `.sheet(item:)` rather than `isPresented` + a separate state var:
+        // with the latter, the sheet body is built before `detailWord` has
+        // been committed, so the *first* tap opened an empty sheet.
+        .sheet(item: $detailWord) { w in
+            WordDetailSheet(word: w)
+                .environmentObject(store)
         }
         .onChange(of: activeTab) { _, newValue in
             if newValue != .quiz {
-                showDetail = false
+                detailWord = nil
             }
         }
     }
 
     private func openDetail(for word: Word) {
         detailWord = word
-        showDetail = true
     }
 
     @ViewBuilder
@@ -466,7 +467,6 @@ struct QuizView: View {
             if let saved = loadSavedTranslationProblem() {
                 currentWord = saved.word
                 currentExample = saved.example
-                userTranslation = ""
                 showAnswer = false
                 answered = false
             } else {
@@ -553,6 +553,12 @@ struct QuizView: View {
                         }
                         .buttonStyle(.plain)
                         Spacer()
+                        Text("Day \(translationDay)")
+                            .font(.caption2.bold())
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(Capsule().fill(Color.indigo))
                         Text("\(position + 1) / \(max(queue.count, 1))")
                             .font(.caption.bold())
                             .foregroundStyle(.secondary)
@@ -616,45 +622,6 @@ struct QuizView: View {
                         }
                 )
 
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("あなたの英訳（自由入力）").font(.caption).foregroundStyle(.secondary)
-                    TextEditor(text: $userTranslation)
-                        .frame(minHeight: 90)
-                        .padding(8)
-                        .background(RoundedRectangle(cornerRadius: 10).fill(Color.white.opacity(0.82)))
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color(.separator), lineWidth: 0.5))
-                        .textInputAutocapitalization(.sentences)
-                        .autocorrectionDisabled(false)
-
-                    Button {
-                        Task { await correctMyComposition() }
-                    } label: {
-                        HStack {
-                            Spacer()
-                            if isCorrectingComposition {
-                                ProgressView().scaleEffect(0.8)
-                                Text("AIが添削中…").bold()
-                            } else {
-                                Image(systemName: "sparkles")
-                                Text("AIに添削してもらう").bold()
-                            }
-                            Spacer()
-                        }
-                        .padding(.vertical, 12)
-                        .foregroundStyle(.white)
-                        .background(Color.purple)
-                        .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .opacity(canSubmitComposition ? 1.0 : 0.5)
-                    }
-                    .disabled(!canSubmitComposition)
-                }
-                .padding(.horizontal, 16)
-
-                if let attempt = latestComposition {
-                    compositionFeedbackCard(attempt, isLatest: true)
-                        .padding(.horizontal, 16)
-                }
-
                 Button {
                     showAnswer.toggle()
                 } label: {
@@ -676,8 +643,6 @@ struct QuizView: View {
                         .padding(.horizontal, 16)
                     aiAssistSection(for: ex)
                         .padding(.horizontal, 16)
-                    compositionHistorySection()
-                        .padding(.horizontal, 16)
                     selfRateRow(for: w)
                         .padding(.horizontal, 16)
                 }
@@ -692,24 +657,18 @@ struct QuizView: View {
         }
     }
 
-    private var canSubmitComposition: Bool {
-        !userTranslation.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-            && !isCorrectingComposition
-    }
-
     // MARK: - Translation queue / navigation
 
-    /// Stable list of (word, exampleIdx) pairs from every eligible word's
-    /// examples. Order rotates daily for variety, but stays the same within
-    /// a day so swipe-navigation feels predictable.
+    /// The Day of the example study plan being served today. Advances by one
+    /// every calendar day (Day 1 → Day 2 → Day 3 …).
+    private var translationDay: Int {
+        ExamplePlan.currentDay(in: store.words)
+    }
+
+    /// The problems for the quiz, taken straight from today's Day in the
+    /// 例文 list (60 sentences, same order as shown there) — not random.
     private var translationQueue: [(word: Word, exampleIdx: Int)] {
-        eligibleWords
-            .dailyShuffled()
-            .flatMap { (w: Word) -> [(word: Word, exampleIdx: Int)] in
-                (0..<w.examples.count).map { idx in
-                    (word: w, exampleIdx: idx)
-                }
-            }
+        ExamplePlan.pairs(forDay: translationDay, in: store.words)
     }
 
     private func currentQueuePosition(in queue: [(word: Word, exampleIdx: Int)]) -> Int {
@@ -786,9 +745,6 @@ struct QuizView: View {
         savedTranslationWordId = pair.word.id.uuidString
         savedTranslationExampleIdx = pair.exampleIdx
         showAnswer = false
-        userTranslation = ""
-        latestComposition = nil
-        showHistory = false
     }
 
     /// Stable key per (current word, example slot index) used for storing
@@ -910,7 +866,16 @@ struct QuizView: View {
     private func answerView(_ ex: ExampleSentence, word: Word) -> some View {
         VStack(alignment: .leading, spacing: 12) {
             VStack(alignment: .leading, spacing: 8) {
-                Text("お手本の英訳").font(.caption).foregroundStyle(.tertiary)
+                HStack(spacing: 6) {
+                    Text("お手本の英訳").font(.caption).foregroundStyle(.tertiary)
+                    Spacer()
+                    Text("タップで単語カード")
+                        .font(.caption2)
+                        .foregroundStyle(.indigo.opacity(0.8))
+                    Image(systemName: "info.circle.fill")
+                        .font(.caption2)
+                        .foregroundStyle(.indigo.opacity(0.8))
+                }
                 HStack(alignment: .top, spacing: 8) {
                     Button {
                         SpeechManager.shared.speak(ex.english)
@@ -923,11 +888,27 @@ struct QuizView: View {
                             .clipShape(Circle())
                     }
                     .buttonStyle(.plain)
-                    Text(ex.english).font(.body)
+                    // Tapping the sentence opens the card for the word it
+                    // belongs to.
+                    Button {
+                        openDetail(for: word)
+                    } label: {
+                        Text(ex.english)
+                            .font(.body)
+                            .foregroundStyle(.primary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .buttonStyle(.plain)
                 }
-                Text(ex.japanese)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                Button {
+                    openDetail(for: word)
+                } label: {
+                    Text(ex.japanese)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .buttonStyle(.plain)
             }
 
             Divider()
@@ -953,7 +934,9 @@ struct QuizView: View {
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.green.opacity(0.5), lineWidth: 1))
     }
 
-    /// Restore the previously-shown problem if it's still valid; otherwise nil.
+    /// Restore the previously-shown problem, but only if it is part of
+    /// today's Day — otherwise the day has rolled over and we start the new
+    /// Day from its first sentence.
     private func loadSavedTranslationProblem() -> (word: Word, example: ExampleSentence)? {
         guard let id = UUID(uuidString: savedTranslationWordId),
               let word = store.words.first(where: { $0.id == id }),
@@ -961,33 +944,20 @@ struct QuizView: View {
             return nil
         }
         let idx = max(0, min(savedTranslationExampleIdx, word.examples.count - 1))
+        let isInToday = translationQueue.contains { $0.word.id == id && $0.exampleIdx == idx }
+        guard isInToday else { return nil }
         return (word, word.examples[idx])
     }
 
-    /// Pick a brand-new translation problem and persist its identity so it
-    /// stays the same across launches until the user changes it again.
+    /// Start today's Day at its first sentence.
     private func pickFreshTranslationProblem() {
-        let pool = eligibleWords.shuffled()
-        // If the eligible pool is empty (e.g. nothing in the review list yet),
-        // fall back to all words with examples so the user still sees something.
-        let candidates = pool.isEmpty
-            ? store.words.filter { !$0.examples.isEmpty }.shuffled()
-            : pool
-        guard let word = candidates.first, !word.examples.isEmpty else {
+        guard let first = translationQueue.first else {
             currentWord = nil
             currentExample = nil
             return
         }
-        let idx = Int.random(in: 0..<word.examples.count)
-        currentWord = word
-        currentExample = word.examples[idx]
-        savedTranslationWordId = word.id.uuidString
-        savedTranslationExampleIdx = idx
-        userTranslation = ""
-        showAnswer = false
+        moveToProblem(first)
         answered = false
-        latestComposition = nil
-        showHistory = false
     }
 
     // MARK: - AI assistance for translation mode
@@ -1003,36 +973,6 @@ struct QuizView: View {
                 japanese: ex.japanese
             )
             store.setAIGrammar(text, forKey: key)
-        } catch {
-            aiErrorMessage = error.localizedDescription
-            showAIError = true
-        }
-    }
-
-    @MainActor
-    private func correctMyComposition() async {
-        guard let ex = currentExample, let key = studyLogKey else { return }
-        let trimmed = userTranslation.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return }
-        isCorrectingComposition = true
-        defer { isCorrectingComposition = false }
-        do {
-            let feedback = try await GeminiService.correctComposition(
-                userEnglish: trimmed,
-                targetJapanese: ex.japanese,
-                referenceEnglish: ex.english
-            )
-            store.appendCompositionAttempt(
-                userText: trimmed,
-                feedback: feedback,
-                forKey: key
-            )
-            // Show the freshly-saved attempt at the top of the screen.
-            if let saved = store.studyLog(forKey: key).attempts.first {
-                latestComposition = saved
-            }
-            // Also auto-reveal the model answer so the user can compare.
-            showAnswer = true
         } catch {
             aiErrorMessage = error.localizedDescription
             showAIError = true
@@ -1088,85 +1028,6 @@ struct QuizView: View {
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.indigo.opacity(0.4), lineWidth: 1))
     }
 
-    @ViewBuilder
-    private func compositionFeedbackCard(_ attempt: CompositionAttempt, isLatest: Bool) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Image(systemName: "pencil.and.outline").foregroundStyle(.purple)
-                Text(isLatest ? "AI 添削結果" : attempt.date.formatted(date: .abbreviated, time: .shortened))
-                    .font(.caption.bold())
-                    .foregroundStyle(.purple)
-                Spacer()
-                if !isLatest, let key = studyLogKey {
-                    Button(role: .destructive) {
-                        store.deleteCompositionAttempt(id: attempt.id, forKey: key)
-                    } label: {
-                        Image(systemName: "trash")
-                            .font(.caption)
-                            .foregroundStyle(.red.opacity(0.7))
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-            Text("あなたの英訳:")
-                .font(.caption2)
-                .foregroundStyle(.tertiary)
-            Text(attempt.userText)
-                .font(.subheadline)
-                .padding(8)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .background(RoundedRectangle(cornerRadius: 6).fill(Color.white.opacity(0.7)))
-            Text(attempt.feedback)
-                .font(.subheadline)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 12).fill(Color.purple.opacity(0.08)))
-        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.purple.opacity(0.4), lineWidth: 1))
-    }
-
-    @ViewBuilder
-    private func compositionHistorySection() -> some View {
-        let key = studyLogKey ?? ""
-        let log = store.studyLog(forKey: key)
-        // Hide the most-recently-saved attempt from the history list when it
-        // is currently being shown above as the "AI 添削結果" card.
-        let pastAttempts: [CompositionAttempt] = {
-            if let latest = latestComposition {
-                return log.attempts.filter { $0.id != latest.id }
-            }
-            return log.attempts
-        }()
-        if !pastAttempts.isEmpty {
-            VStack(alignment: .leading, spacing: 8) {
-                Button {
-                    withAnimation { showHistory.toggle() }
-                } label: {
-                    HStack {
-                        Image(systemName: "clock.arrow.circlepath")
-                        Text("過去の添削履歴 (\(pastAttempts.count))")
-                            .font(.caption.bold())
-                        Spacer()
-                        Image(systemName: showHistory ? "chevron.up" : "chevron.down")
-                    }
-                    .foregroundStyle(.purple)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 8)
-                    .background(Capsule().fill(Color.purple.opacity(0.10)))
-                }
-                .buttonStyle(.plain)
-
-                if showHistory {
-                    VStack(spacing: 8) {
-                        ForEach(pastAttempts) { attempt in
-                            compositionFeedbackCard(attempt, isLatest: false)
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 // MARK: - Word detail sheet (reusable)

@@ -60,6 +60,9 @@ final class WordStore: ObservableObject {
         // Auto-select 500 random words into the weekly review set (once a
         // week), excluding whatever was picked the previous week.
         refreshWeeklyReviewIfNeeded()
+        // Pin "today" as Day 1 of the example study plan on first launch so
+        // the Day counter can advance from a fixed anchor.
+        ExamplePlan.ensureAnchor()
     }
 
     // MARK: - Weekly auto review set (500 random words, rotates weekly)
