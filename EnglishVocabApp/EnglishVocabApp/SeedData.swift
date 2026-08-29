@@ -1001,7 +1001,7 @@ enum SeedData {
                     ("Who's in charge of this project?", "この案件誰が担当？"),
                     ("I'm in charge of marketing.", "マーケティング担当してます。")
                  ], ipa: "/ɪn tʃˈɑːdʒ ɒv/"),
-            make("due to", "because of",
+            make("due to", "caused by; as a result of",
                  "〜のため・〜が原因で",
                  useCases: ["原因を説明するとき", "予定変更の理由を述べるとき"],
                  examples: [
@@ -1225,7 +1225,7 @@ enum SeedData {
                     ("Can I have the receipt?", "レシートもらえる？"),
                     ("Save the receipt.", "レシート取っといて。")
                  ], ipa: "/ɹɪsˈiːt/"),
-            make("expense", "money spent",
+            make("expense", "the cost of something, or money that is spent",
                  "経費・出費",
                  useCases: ["費用について話すとき", "出費が大きいと嘆くとき"],
                  examples: [
@@ -1463,7 +1463,7 @@ enum SeedData {
                     ("She left a while ago.", "彼女ちょっと前に出た。"),
                     ("I texted you a while ago.", "少し前にメッセージ送ったよ。")
                  ], ipa: "/ɐ wˈaɪl ɐɡˈəʊ/"),
-            make("any minute now", "very soon",
+            make("any minute now", "expected to happen extremely soon",
                  "今にも・もうすぐ",
                  useCases: ["何かが起きる直前に"],
                  examples: [
@@ -1477,7 +1477,7 @@ enum SeedData {
                     ("I see her every now and then.", "彼女には時々会う。"),
                     ("Every now and then I cook.", "たまに料理する。")
                  ], ipa: "/ˈɛvɹɪ nˈaʊ ænd ðˈɛn/"),
-            make("way too", "excessively",
+            make("way too", "far more than is acceptable or needed",
                  "あまりにも〜すぎる",
                  useCases: ["強調して文句や驚きを言うとき"],
                  examples: [
@@ -1932,7 +1932,7 @@ enum SeedData {
                     ("You're on thin ice.", "君、もう後がないよ。"),
                     ("I'm on thin ice with my boss.", "上司との関係がヤバい。")
                  ], ipa: "/ˌɒn θˈɪn ˈaɪs/"),
-            make("in the dark", "uninformed",
+            make("in the dark", "not told about something that others know",
                  "知らされていない",
                  useCases: ["情報共有されていないと不満を言うとき"],
                  examples: [
@@ -2016,7 +2016,7 @@ enum SeedData {
                     ("I'm fed up with this.", "もうこれにうんざり。"),
                     ("She's fed up with him.", "彼女は彼にうんざり。")
                  ], ipa: "/fˈɛd ˈʌp/"),
-            make("worn out", "very tired",
+            make("worn out", "extremely tired, or damaged from long use",
                  "疲れ果てた・くたくた",
                  useCases: ["疲労困憊を表すとき"],
                  examples: [
@@ -2247,14 +2247,14 @@ enum SeedData {
                     ("There you go!", "そう、それでいい！"),
                     ("There you go, you did it.", "ほら、できたじゃん。")
                  ], ipa: "/ðeə juː ɡˈəʊ/"),
-            make("look here", "hey; listen",
+            make("look here", "said to get attention before making a point",
                  "おい・ねえ",
                  useCases: ["注意を引きたいとき", "やや強めに呼びかけるとき"],
                  examples: [
                     ("Look here, I told you no.", "おい、ダメって言っただろ。"),
                     ("Look here, listen up.", "ねえ、ちょっと聞いて。")
                  ], ipa: "/lˈʊk hˈiə/"),
-            make("how come", "why",
+            make("how come", "used to ask the reason for something (informal)",
                  "なんで？",
                  useCases: ["カジュアルに理由を聞くとき"],
                  examples: [
@@ -2275,7 +2275,7 @@ enum SeedData {
                     ("As it stands, we can't move.", "現状では動けない。"),
                     ("As it stands now, no.", "今のところ無理。")
                  ], ipa: "/æz ɪt stˈændz/"),
-            make("at the end of the day", "ultimately",
+            make("at the end of the day", "when everything is considered; the main point",
                  "結局のところ",
                  useCases: ["要点をまとめるとき"],
                  examples: [
@@ -2324,7 +2324,7 @@ enum SeedData {
                     ("To put it bluntly, you're wrong.", "率直に言って間違ってる。"),
                     ("To put it bluntly, no.", "はっきり言うと、無理。")
                  ], ipa: "/tə pˌʊt ɪt blˈʌntlɪ/"),
-            make("needless to say", "obviously",
+            make("needless to say", "used before something the listener already knows",
                  "言うまでもなく",
                  useCases: ["当然のことを強調するとき"],
                  examples: [
@@ -2492,7 +2492,7 @@ enum SeedData {
                     ("Plug in the charger.", "充電器差して。"),
                     ("It's plugged in.", "コンセント刺さってるよ。")
                  ], ipa: "/plˈʌɡ ˈɪn/"),
-            make("pile up", "accumulate",
+            make("pile up", "gather into a growing heap or amount",
                  "積み重なる・たまる",
                  useCases: ["仕事や書類が溜まる話"],
                  examples: [
@@ -2534,7 +2534,7 @@ enum SeedData {
                     ("Lighten up, it's a joke.", "気楽に、冗談だよ。"),
                     ("Just lighten up.", "リラックスして。")
                  ], ipa: "/lˈaɪtən ˈʌp/"),
-            make("let down", "disappoint",
+            make("let down", "fail to do what someone hoped or expected",
                  "失望させる",
                  useCases: ["期待を裏切られた話"],
                  examples: [
@@ -2618,7 +2618,7 @@ enum SeedData {
                     ("Do I qualify for this?", "これに該当する？"),
                     ("He qualified for the finals.", "彼は決勝に進出した。")
                  ], ipa: "/kwˈɒlɪfˌaɪ/"),
-            make("rebuild", "build again",
+            make("rebuild", "build something again after damage or loss",
                  "再建する",
                  useCases: ["建物や関係を建て直す話"],
                  examples: [
@@ -2730,7 +2730,7 @@ enum SeedData {
                     ("He's so arrogant.", "彼、めっちゃ傲慢。"),
                     ("Don't be arrogant.", "傲慢にならないで。")
                  ], ipa: "/ˈæɹəɡənt/"),
-            make("awful", "very bad",
+            make("awful", "extremely bad or unpleasant",
                  "ひどい・最悪な",
                  useCases: ["強く否定的な評価を伝えるとき"],
                  examples: [
@@ -2989,7 +2989,7 @@ enum SeedData {
                     ("At any rate, let's go.", "とにかく行こう。"),
                     ("At any rate, it's done.", "いずれにせよ終わった。")
                  ], ipa: "/æt ˌɛnɪ ɹˈeɪt/"),
-            make("in spite of", "despite",
+            make("in spite of", "even though something might have prevented it",
                  "〜にもかかわらず",
                  useCases: ["逆境を踏まえて結果を述べるとき"],
                  examples: [
@@ -3003,7 +3003,7 @@ enum SeedData {
                     ("Tea, as opposed to coffee.", "コーヒーじゃなくて紅茶ね。"),
                     ("As opposed to last year.", "去年と対照的に。")
                  ], ipa: "/æz əpˈəʊzd tuː/"),
-            make("with respect to", "regarding",
+            make("with respect to", "concerning; in relation to a particular thing",
                  "〜に関して",
                  useCases: ["フォーマルに話題を導入するとき"],
                  examples: [
@@ -3031,7 +3031,7 @@ enum SeedData {
                     ("On behalf of the team.", "チームを代表して。"),
                     ("On behalf of all of us.", "私たち皆を代表して。")
                  ], ipa: "/ˌɒn bɪhˈɑːf ɒv/"),
-            make("in light of", "considering",
+            make("in light of", "taking new information into account",
                  "〜を考慮して",
                  useCases: ["事情を踏まえて判断するとき"],
                  examples: [
@@ -3045,7 +3045,7 @@ enum SeedData {
                     ("Worked at the expense of sleep.", "睡眠を削って働いた。"),
                     ("At the expense of others.", "他人を犠牲にして。")
                  ], ipa: "/æt ðɪ ɪkspˈɛns ɒv/"),
-            make("prior to", "before",
+            make("prior to", "happening before a particular time or event",
                  "〜の前に",
                  useCases: ["フォーマルに「〜の前に」と言うとき"],
                  examples: [
@@ -3059,7 +3059,7 @@ enum SeedData {
                     ("Subsequent to the launch.", "発売後に。"),
                     ("Subsequent to that event.", "その出来事の後で。")
                  ], ipa: "/sˈʌbsɪkwənt tuː/"),
-            make("with the exception of", "except for",
+            make("with the exception of", "not including one particular person or thing",
                  "〜を除いて",
                  useCases: ["フォーマルに例外を示すとき"],
                  examples: [
@@ -3164,7 +3164,7 @@ enum SeedData {
                     ("It cleared up by noon.", "昼には晴れた。"),
                     ("Let's clear up the misunderstanding.", "誤解を解こう。")
                  ], ipa: "/klˈiəɹ ˈʌp/"),
-            make("clean up", "make tidy",
+            make("clean up", "make a place tidy by removing mess or dirt",
                  "きれいにする・片付ける",
                  useCases: ["部屋を片付ける話"],
                  examples: [
@@ -3276,7 +3276,7 @@ enum SeedData {
                     ("I admit I was wrong.", "間違ってたって認める。"),
                     ("Children aren't admitted.", "子どもは入場不可です。")
                  ], ipa: "/ɐdmˈɪt/"),
-            make("advise", "give advice",
+            make("advise", "tell someone what you think they should do",
                  "助言する・アドバイスする",
                  useCases: ["人に勧める場面"],
                  examples: [
@@ -3465,7 +3465,7 @@ enum SeedData {
                     ("The fridge is empty.", "冷蔵庫空っぽ。"),
                     ("Empty room.", "空っぽの部屋。")
                  ], ipa: "/ˈɛmptɪ/"),
-            make("enormous", "very large",
+            make("enormous", "extremely large in size or amount",
                  "巨大な・莫大な",
                  useCases: ["とても大きいものを強調するとき"],
                  examples: [
@@ -3535,7 +3535,7 @@ enum SeedData {
                     ("I'm so frustrated.", "めっちゃイライラ。"),
                     ("Frustrated with traffic.", "渋滞でイラついた。")
                  ], ipa: "/fɹʌstɹˈeɪtɪd/"),
-            make("gentle", "kind; mild",
+            make("gentle", "kind and calm; not rough or forceful",
                  "優しい・穏やかな",
                  useCases: ["柔らかい性格や扱いを表すとき"],
                  examples: [
@@ -3745,7 +3745,7 @@ enum SeedData {
                     ("On top of everything, I lost my keys.", "おまけに鍵までなくした。"),
                     ("On top of everything else.", "それに加えて。")
                  ], ipa: "/ˌɒn tˈɒp ɒv ˈɛvɹɪθˌɪŋ/"),
-            make("in addition to", "as well as",
+            make("in addition to", "as an extra thing besides what already exists",
                  "〜に加えて",
                  useCases: ["要素を追加して話すとき"],
                  examples: [
@@ -3759,14 +3759,14 @@ enum SeedData {
                     ("She sings as well as dances.", "彼女、歌も踊りもできる。"),
                     ("Tea as well as coffee.", "コーヒーだけでなく紅茶も。")
                  ], ipa: "/æz wˈɛl æz/"),
-            make("rather than", "instead of",
+            make("rather than", "used to show a choice made over another option",
                  "〜よりむしろ",
                  useCases: ["優先する選択肢を伝えるとき"],
                  examples: [
                     ("Tea rather than coffee.", "コーヒーじゃなくて紅茶。"),
                     ("Walk rather than drive.", "車じゃなくて歩こう。")
                  ], ipa: "/ɹˈɑːðɐ ðɐn/"),
-            make("instead of", "in place of",
+            make("instead of", "in place of something or someone else",
                  "〜の代わりに",
                  useCases: ["代替案を提示するとき"],
                  examples: [
@@ -3885,7 +3885,7 @@ enum SeedData {
                     ("Just chill out.", "リラックスして。"),
                     ("Let's chill out tonight.", "今夜はゆっくりしよう。")
                  ], ipa: "/tʃˈɪl ˈaʊt/"),
-            make("speed up", "go faster",
+            make("speed up", "move or make progress more quickly",
                  "早めて・スピードを上げる",
                  useCases: ["急ぐよう促すとき"],
                  examples: [
@@ -4081,7 +4081,7 @@ enum SeedData {
                     ("Right on!", "いいね！"),
                     ("Right on, dude.", "その通りだよ。")
                  ], ipa: "/ɹˈaɪt ˈɒn/"),
-            make("way to go", "good job",
+            make("way to go", "said to praise someone for doing well",
                  "よくやった",
                  useCases: ["称賛するとき（皮肉でも）"],
                  examples: [
@@ -4305,7 +4305,7 @@ enum SeedData {
                     ("I'm so jet-lagged.", "時差ボケがひどい。"),
                     ("Still jet-lagged from Japan.", "日本からの時差ボケが残ってる。")
                  ], ipa: "/dʒˈɛtlˈæɡd/"),
-            make("starving", "very hungry",
+            make("starving", "extremely hungry (often an exaggeration)",
                  "めっちゃお腹空いた",
                  useCases: ["強い空腹を表すとき"],
                  examples: [
@@ -4690,7 +4690,7 @@ enum SeedData {
 
     private static var casualAdjectives4: [Word] {
         [
-            make("bossy", "domineering",
+            make("bossy", "always telling other people what to do",
                  "威張りたがる・仕切りたがる",
                  useCases: ["仕切りたがる人を表すとき"],
                  examples: [
@@ -5096,7 +5096,7 @@ enum SeedData {
                     ("Rain on and off all day.", "一日中雨が降ったり止んだり。"),
                     ("We've dated on and off.", "付き合ったり別れたりしてた。")
                  ], ipa: "/ˌɒn ænd ˈɒf/"),
-            make("back and forth", "to and fro",
+            make("back and forth", "moving repeatedly between two points",
                  "行ったり来たり",
                  useCases: ["何度も往復する話"],
                  examples: [
@@ -5110,7 +5110,7 @@ enum SeedData {
                     ("They walked side by side.", "二人並んで歩いた。"),
                     ("Stood side by side.", "横に並んで立った。")
                  ], ipa: "/sˈaɪd baɪ sˈaɪd/"),
-            make("upside down", "inverted",
+            make("upside down", "turned so that the top faces the bottom",
                  "逆さま",
                  useCases: ["物を裏返している話"],
                  examples: [
@@ -5362,7 +5362,7 @@ enum SeedData {
                     ("I'm used to it.", "慣れてる。"),
                     ("Are you used to the cold?", "寒さに慣れた？")
                  ], ipa: "/biː jˈuːzd tuː/"),
-            make("be supposed to", "expected to",
+            make("be supposed to", "be expected or required to do something",
                  "〜することになっている",
                  useCases: ["予定や規則を伝えるとき"],
                  examples: [
@@ -5460,7 +5460,7 @@ enum SeedData {
                     ("No more than $10.", "10ドル以下。"),
                     ("No more than 5 people.", "5人まで。")
                  ], ipa: "/nˈəʊmˌɔː ðɐn/"),
-            make("less than", "fewer than",
+            make("less than", "smaller in amount or number than",
                  "〜より少なく",
                  useCases: ["量や程度を比較して少ないと言うとき"],
                  examples: [
@@ -5509,7 +5509,7 @@ enum SeedData {
                     ("If I were you, I'd go.", "私なら行く。"),
                     ("If I were you, I'd quit.", "私なら辞める。")
                  ], ipa: "/ɪf aɪ wɜː jˈuː/"),
-            make("if it weren't for", "if not for",
+            make("if it weren't for", "used to say something happened only because of X",
                  "〜がなかったら",
                  useCases: ["仮定で原因や恩を語るとき"],
                  examples: [
@@ -5628,7 +5628,7 @@ enum SeedData {
 
     private static var tooEnoughSo5: [Word] {
         [
-            make("too to", "too X to do",
+            make("too to", "so much of a quality that something is impossible",
                  "〜するには…すぎる",
                  useCases: ["できないほど〜であると伝えるとき"],
                  examples: [
@@ -5642,7 +5642,7 @@ enum SeedData {
                     ("Old enough to vote.", "投票するのに十分な年齢。"),
                     ("Strong enough to lift it.", "持ち上げられるくらい強い。")
                  ], ipa: "/ɪnˈʌf tuː/"),
-            make("so that", "so X that Y",
+            make("so that", "used to show a degree that causes a result",
                  "とても…なので〜",
                  useCases: ["原因と結果を結びつけるとき"],
                  examples: [
@@ -5740,7 +5740,7 @@ enum SeedData {
 
     private static var seemAppear5: [Word] {
         [
-            make("seem to", "appear to",
+            make("seem to", "give the impression of being or doing something",
                  "〜するように見える",
                  useCases: ["他者の状態を推測するとき"],
                  examples: [
@@ -5782,7 +5782,7 @@ enum SeedData {
 
     private static var casualConstructions5: [Word] {
         [
-            make("you'd better", "you should",
+            make("you'd better", "used to give strong advice or a mild warning",
                  "〜した方がいい",
                  useCases: ["強めに勧めるとき"],
                  examples: [
@@ -5796,7 +5796,7 @@ enum SeedData {
                     ("I'd say it's fine.", "大丈夫だと思う。"),
                     ("I'd say about 5 minutes.", "5分くらいかな。")
                  ], ipa: "/aɪd sˈeɪ/"),
-            make("I bet", "I'm sure",
+            make("I bet", "used to say you are confident something is true",
                  "〜に違いない・きっと",
                  useCases: ["強い確信を伝えるとき"],
                  examples: [
@@ -5824,7 +5824,7 @@ enum SeedData {
 
     private static var plansAndIntentions6: [Word] {
         [
-            make("I'm thinking of", "considering",
+            make("I'm thinking of", "used to say you are considering doing something",
                  "〜しようかと思って",
                  useCases: ["検討中の予定を伝えるとき"],
                  examples: [
@@ -5838,7 +5838,7 @@ enum SeedData {
                     ("I'm planning to go.", "行く予定。"),
                     ("Planning to leave at 8.", "8時に出る予定。")
                  ], ipa: "/aɪm plˈænɪŋ tuː/"),
-            make("I'm hoping to", "hoping to",
+            make("I'm hoping to", "used to say you want and expect to do something",
                  "〜できればと思って",
                  useCases: ["希望を控えめに伝えるとき"],
                  examples: [
@@ -5873,7 +5873,7 @@ enum SeedData {
                     ("So I was walking and...", "歩いてたらね…"),
                     ("So I was at the cafe.", "カフェにいたら。")
                  ], ipa: "/sˈəʊ aɪ wɒz/"),
-            make("back in the day", "long ago",
+            make("back in the day", "in the past, remembered fondly",
                  "昔は",
                  useCases: ["昔話の前置き"],
                  examples: [
@@ -5915,7 +5915,7 @@ enum SeedData {
                     ("I guess so.", "そうかも。"),
                     ("I guess he forgot.", "忘れたんじゃないかな。")
                  ], ipa: "/aɪ ɡˈɛs/"),
-            make("I figure", "I assume",
+            make("I figure", "used to give what you assume to be true",
                  "〜だろう",
                  useCases: ["推測を伝えるとき"],
                  examples: [
@@ -5929,7 +5929,7 @@ enum SeedData {
 
     private static var youCheckPatterns6: [Word] {
         [
-            make("you mean", "do you mean",
+            make("you mean", "used to check what someone is trying to say",
                  "〜ってこと？",
                  useCases: ["相手の真意を確認するとき"],
                  examples: [
@@ -6027,7 +6027,7 @@ enum SeedData {
                     ("Want me to help?", "手伝おうか？"),
                     ("Want me to drive?", "運転しようか？")
                  ], ipa: "/wˈɒnt mˌiː tuː/"),
-            make("shall I", "should I",
+            make("shall I", "used to offer to do something or ask for direction",
                  "〜しましょうか？",
                  useCases: ["丁寧に申し出るとき"],
                  examples: [
@@ -6055,7 +6055,7 @@ enum SeedData {
                     ("Speaking of which, where's John?", "そういえばジョンは？"),
                     ("Speaking of which, did you eat?", "そういえばご飯食べた？")
                  ], ipa: "/spˈiːkɪŋ ɒvwˈɪtʃ/"),
-            make("judging from", "based on",
+            make("judging from", "forming an opinion using the evidence you have",
                  "〜から判断すると",
                  useCases: ["手がかりから判断するとき"],
                  examples: [
@@ -6139,7 +6139,7 @@ enum SeedData {
                     ("I'd rather not say.", "言いたくない。"),
                     ("I'd rather not go.", "行きたくない。")
                  ], ipa: "/aɪd ɹˈɑːðɐ nˈɒt/"),
-            make("I'd better", "I should",
+            make("I'd better", "used to say what you should do to avoid trouble",
                  "〜した方がいい",
                  useCases: ["自分が動くべきだと示すとき"],
                  examples: [
@@ -6160,7 +6160,7 @@ enum SeedData {
                     ("I tend to forget.", "忘れがち。"),
                     ("She tends to overthink.", "彼女、考えすぎる傾向ある。")
                  ], ipa: "/tˈɛnd tuː/"),
-            make("happen to", "by chance",
+            make("happen to", "do something by chance rather than by plan",
                  "たまたま〜する",
                  useCases: ["偶然性を強調するとき"],
                  examples: [
@@ -6202,7 +6202,7 @@ enum SeedData {
                     ("What a day!", "なんて日！"),
                     ("What a mess!", "なんて散らかり！")
                  ], ipa: "/wˌɒt ˈeɪ/"),
-            make("how (adjective)", "how + adj",
+            make("how (adjective)", "used to ask or exclaim about a degree or extent",
                  "なんて〜",
                  useCases: ["驚きや称賛を表すとき"],
                  examples: [
@@ -6216,7 +6216,7 @@ enum SeedData {
                     ("Such a long day.", "なんて長い一日。"),
                     ("Such a kind person.", "本当に優しい人。")
                  ], ipa: "/sˈʌtʃ ˈeɪ/"),
-            make("so (adjective)", "very + adj",
+            make("so (adjective)", "used to stress the degree of a quality",
                  "とても〜",
                  useCases: ["感情を強調するとき"],
                  examples: [
@@ -6237,14 +6237,14 @@ enum SeedData {
 
     private static var hedgingPatterns6: [Word] {
         [
-            make("a bit", "a little",
+            make("a bit", "a small amount or degree of something",
                  "少し〜",
                  useCases: ["軽い程度を伝えるとき"],
                  examples: [
                     ("A bit cold.", "ちょっと寒い。"),
                     ("I'm a bit busy.", "ちょっと忙しい。")
                  ], ipa: "/ɐ bˈɪt/"),
-            make("a little", "slightly",
+            make("a little", "a small amount; to a small degree",
                  "少し〜",
                  useCases: ["やわらかく程度を伝えるとき"],
                  examples: [
@@ -6293,7 +6293,7 @@ enum SeedData {
                     ("Was supposed to come.", "来るはずだった。"),
                     ("I was supposed to call.", "電話するはずだった。")
                  ], ipa: "/wɒz səpˈəʊzd tuː/"),
-            make("not supposed to", "shouldn't",
+            make("not supposed to", "not allowed or not expected to do something",
                  "〜してはいけない",
                  useCases: ["禁止されている話"],
                  examples: [
@@ -6328,14 +6328,14 @@ enum SeedData {
                     ("Wouldn't surprise me if he quits.", "辞めても驚かない。"),
                     ("Wouldn't surprise me if it rains.", "雨でも驚かない。")
                  ], ipa: "/ɪt wˈʊdənt səpɹˈaɪz mˌiː ɪf/"),
-            make("chances are", "probably",
+            make("chances are", "used to say something is likely to be true",
                  "おそらく",
                  useCases: ["確率高く起きる予測を伝えるとき"],
                  examples: [
                     ("Chances are he's late.", "おそらく遅れる。"),
                     ("Chances are she'll say yes.", "彼女はOKと言うだろう。")
                  ], ipa: "/tʃˈɑːnsɪz ɑː/"),
-            make("odds are", "it's likely",
+            make("odds are", "used to say something is likely to happen",
                  "多分",
                  useCases: ["カジュアルな予測"],
                  examples: [
@@ -6433,14 +6433,14 @@ enum SeedData {
 
     private static var theXIs6: [Word] {
         [
-            make("the fact is", "in reality",
+            make("the fact is", "used to introduce the plain truth of a matter",
                  "事実はこうだ",
                  useCases: ["事実を強く伝えるとき"],
                  examples: [
                     ("The fact is, he lied.", "事実は彼が嘘ついた。"),
                     ("The fact is, we lost.", "事実、負けた。")
                  ], ipa: "/ðə fˈækt ɪz/"),
-            make("the truth is", "honestly",
+            make("the truth is", "used before an honest, often blunt statement",
                  "本当のところ",
                  useCases: ["本音を打ち明けるとき"],
                  examples: [
@@ -6475,7 +6475,7 @@ enum SeedData {
                     ("Come see me.", "会いに来て。"),
                     ("Come see this!", "これ見に来て！")
                  ], ipa: "/kˈʌm sˈiː/"),
-            make("go get", "go and get",
+            make("go get", "go somewhere and bring something back",
                  "取りに行く",
                  useCases: ["何かを取って来てと頼むとき"],
                  examples: [
@@ -6489,7 +6489,7 @@ enum SeedData {
                     ("Come help me.", "助けに来て。"),
                     ("Come help us out.", "手伝いに来て。")
                  ], ipa: "/kˈʌm hˈɛlp/"),
-            make("go grab", "go and grab",
+            make("go grab", "go and quickly get something (informal)",
                  "取って来る",
                  useCases: ["軽くつかみに行く話"],
                  examples: [
@@ -6524,7 +6524,7 @@ enum SeedData {
                     ("Cool or what?", "かっこよくない？"),
                     ("Crazy or what?", "やばくない？")
                  ], ipa: "/ɔː wˈɒt/"),
-            make("or not", "yes or no",
+            make("or not", "used to include the opposite possibility",
                  "〜かどうか",
                  useCases: ["二択を迫るとき"],
                  examples: [
@@ -6643,7 +6643,7 @@ enum SeedData {
                     ("I'm knackered.", "もうへとへと。"),
                     ("Knackered after work.", "仕事でクタクタ。")
                  ], ipa: "/nˈækəd/"),
-            make("shattered", "exhausted",
+            make("shattered", "completely exhausted, or broken into pieces",
                  "疲れ切った",
                  useCases: ["疲労困憊を表すとき"],
                  examples: [
@@ -6804,7 +6804,7 @@ enum SeedData {
                     ("Pop in later.", "後で寄る。"),
                     ("I'll pop in to say hi.", "顔出しに寄る。")
                  ], ipa: "/pˈɒp ˈɪn/"),
-            make("pop round", "drop by",
+            make("pop round", "visit someone briefly and casually (British)",
                  "立ち寄る",
                  useCases: ["カジュアルに訪問するとき"],
                  examples: [
@@ -6839,7 +6839,7 @@ enum SeedData {
                     ("I'll ring you.", "電話するよ。"),
                     ("Give me a ring.", "電話して。")
                  ], ipa: "/ɹˈɪŋ/"),
-            make("fortnight", "two weeks",
+            make("fortnight", "a period of two weeks (British)",
                  "2週間",
                  useCases: ["2週間の期間を表すとき"],
                  examples: [
@@ -6972,7 +6972,7 @@ enum SeedData {
                     ("If I may, I'd suggest…", "よろしければご提案を…"),
                     ("If I may, one more thing.", "もしよければ、もう一つ。")
                  ], ipa: "/ɪf aɪ mˈeɪ/"),
-            make("Allow me to", "let me",
+            make("Allow me to", "a polite way to offer to do something",
                  "〜させてください",
                  useCases: ["フォーマルな前置きとして"],
                  examples: [
@@ -7322,7 +7322,7 @@ enum SeedData {
                     ("I gotta dash.", "急いで行かなきゃ。"),
                     ("Dash to the store.", "急いで店に行く。")
                  ], ipa: "/dˈæʃ/"),
-            make("hurry up", "be quick",
+            make("hurry up", "do something faster than you are now",
                  "急ぐ",
                  useCases: ["相手を急かすとき"],
                  examples: [
@@ -7336,7 +7336,7 @@ enum SeedData {
                     ("I slipped on ice.", "氷で滑った。"),
                     ("She slipped a note in.", "メモをこっそり挟んだ。")
                  ], ipa: "/slˈɪp/"),
-            make("trip", "stumble",
+            make("trip", "catch your foot and lose balance; a journey",
                  "つまずく",
                  useCases: ["足を引っ掛けて転びかける話"],
                  examples: [
@@ -7350,7 +7350,7 @@ enum SeedData {
                     ("Bumped into John.", "ジョンに偶然会った。"),
                     ("Sorry, bumped into you.", "ごめん、ぶつかっちゃった。")
                  ], ipa: "/bˈʌmp ˌɪntʊ/"),
-            make("crash into", "smash into",
+            make("crash into", "hit something hard and suddenly while moving",
                  "激突する",
                  useCases: ["車などが何かにぶつかる話"],
                  examples: [
@@ -7392,7 +7392,7 @@ enum SeedData {
                     ("Stretch your legs.", "足を伸ばして。"),
                     ("Time to stretch.", "ストレッチの時間。")
                  ], ipa: "/stɹˈɛtʃ/"),
-            make("bend over", "lean down",
+            make("bend over", "lean the upper body forward and down",
                  "かがむ",
                  useCases: ["前かがみになる話"],
                  examples: [
@@ -7476,7 +7476,7 @@ enum SeedData {
                     ("I realized too late.", "遅く気づいた。"),
                     ("Realize the truth.", "真実に気づく。")
                  ], ipa: "/ɹˈiəlaɪz/"),
-            make("recall", "remember",
+            make("recall", "bring something back to mind; call back a product",
                  "思い出す",
                  useCases: ["記憶を辿る話"],
                  examples: [
@@ -7504,7 +7504,7 @@ enum SeedData {
                     ("It occurred to me.", "ふと思った。"),
                     ("It just occurred to me.", "今ふと気づいた。")
                  ], ipa: "/əkˈɜː tuː/"),
-            make("chill", "relax",
+            make("chill", "relax and take things easy; make something cold",
                  "リラックスする",
                  useCases: ["カジュアルにくつろぐ話"],
                  examples: [
@@ -7623,7 +7623,7 @@ enum SeedData {
 
     private static var handlingVerbs10: [Word] {
         [
-            make("handle", "deal with",
+            make("handle", "deal with a situation; a part you hold",
                  "扱う・対処する",
                  useCases: ["問題を任される話"],
                  examples: [
@@ -7721,7 +7721,7 @@ enum SeedData {
                     ("That's a relief!", "よかった！"),
                     ("Phew, that's a relief.", "ふー、ほっとした。")
                  ], ipa: "/ðæts ɐ ɹɪlˈiːf/"),
-            make("that's a shame", "what a pity",
+            make("that's a shame", "used to show sympathy about bad news",
                  "残念",
                  useCases: ["残念な話に共感するとき"],
                  examples: [
@@ -7735,14 +7735,14 @@ enum SeedData {
                     ("That's the spirit!", "その調子！"),
                     ("Yes, that's the spirit.", "うん、その意気だ。")
                  ], ipa: "/ðæts ðə spˈɪɹɪt/"),
-            make("that's the way", "that's how",
+            make("that's the way", "used to say something is being done correctly",
                  "そう、それでいい",
                  useCases: ["上手くやれている時"],
                  examples: [
                     ("That's the way!", "その調子！"),
                     ("That's the way, keep it up.", "それそれ、続けて。")
                  ], ipa: "/ðæts ðə wˈeɪ/"),
-            make("that's enough", "stop now",
+            make("that's enough", "used to tell someone to stop",
                  "もう十分・やめろ",
                  useCases: ["やめさせるとき"],
                  examples: [
@@ -7868,7 +7868,7 @@ enum SeedData {
 
     private static var toBeAdj10: [Word] {
         [
-            make("to be fair", "in fairness",
+            make("to be fair", "used before giving the other side of an argument",
                  "公平に言うと",
                  useCases: ["相手にも一理あると認めるとき"],
                  examples: [
@@ -7980,7 +7980,7 @@ enum SeedData {
 
     private static var ifPatterns11: [Word] {
         [
-            make("if only", "I wish that",
+            make("if only", "used to express a strong wish or a regret",
                  "〜さえあれば",
                  useCases: ["叶わない願望を語るとき"],
                  examples: [
@@ -8176,7 +8176,7 @@ enum SeedData {
 
     private static var adverbPatterns11: [Word] {
         [
-            make("right away", "immediately",
+            make("right away", "at once, without any delay",
                  "すぐに",
                  useCases: ["即座に行動することを伝えるとき"],
                  examples: [
@@ -8274,7 +8274,7 @@ enum SeedData {
                     ("I'm saving up for a car.", "車のため貯金中。"),
                     ("Save up for a rainy day.", "万が一に備えて貯めて。")
                  ], ipa: "/sˈeɪv ˈʌp/"),
-            make("bomb", "fail badly",
+            make("bomb", "fail completely, especially in public; an explosive",
                  "大失敗する",
                  useCases: ["プレゼンや試験で大コケしたとき"],
                  examples: [
@@ -10066,7 +10066,7 @@ enum SeedData {
                     ("Wanna hang out tonight?", "今夜遊ばない?"),
                     ("Let's hang out this weekend.", "週末ぶらぶらしよう。")
                  ], ipa: "/hˈæŋ ˈaʊt/"),
-            make("hit me up", "contact me",
+            make("hit me up", "get in touch with me (informal)",
                  "連絡して",
                  useCases: ["カジュアルに連絡を促すとき(略 HMU)"],
                  examples: [
@@ -10143,7 +10143,7 @@ enum SeedData {
                     ("We're screwed.", "詰んだ。"),
                     ("I'm so screwed.", "マジで終わった。")
                  ], ipa: "/skɹˈuːd/"),
-            make("pissed off", "very angry",
+            make("pissed off", "annoyed or angry (informal)",
                  "めちゃくちゃ怒っている",
                  useCases: ["強い不満や怒りを表すとき"],
                  examples: [
@@ -10304,7 +10304,7 @@ enum SeedData {
                     ("Same here.", "私も。"),
                     ("A: I'm tired. B: Same here.", "「疲れた」「私も」")
                  ], ipa: "/sˈeɪm hˈiə/"),
-            make("ditto", "the same",
+            make("ditto", "used to say the same thing applies to you",
                  "同上・私も同じく",
                  useCases: ["相手の発言に同意するカジュアル表現"],
                  examples: [
@@ -10353,7 +10353,7 @@ enum SeedData {
                     ("No hard feelings, right?", "恨みっこなしだよね?"),
                     ("OK, no hard feelings.", "うん、悪気はないから。")
                  ], ipa: "/nˈəʊ hˈɑːd fˈiːlɪŋz/"),
-            make("that's it", "that's all",
+            make("that's it", "used to say something is finished or correct",
                  "以上・それだけ",
                  useCases: ["話や指示を締めくくるとき"],
                  examples: [
@@ -10374,7 +10374,7 @@ enum SeedData {
                     ("Vibe check!", "雰囲気チェック!"),
                     ("Failed the vibe check.", "ノリが合わなかった。")
                  ], ipa: "/vˈaɪb tʃˈɛk/"),
-            make("NBD", "no big deal",
+            make("NBD", "short for 'no big deal'; nothing to worry about",
                  "大したことじゃない",
                  useCases: ["軽く流すとき(Not a Big Deal の略)"],
                  examples: [
@@ -10416,7 +10416,7 @@ enum SeedData {
                     ("Send it ASAP.", "至急送って。"),
                     ("I need it ASAP.", "急ぎで欲しい。")
                  ], ipa: "/ˌeɪˌɛsˌeɪpˈiː/"),
-            make("sus", "suspicious",
+            make("sus", "seeming dishonest or untrustworthy (slang)",
                  "怪しい",
                  useCases: ["ゲームAmong Us から流行ったスラング"],
                  examples: [
@@ -10444,14 +10444,14 @@ enum SeedData {
 
     private static var slangPeopleAndMoney16: [Word] {
         [
-            make("wheels", "a car",
+            make("wheels", "a car (informal)",
                  "車",
                  useCases: ["車を口語的に表すとき"],
                  examples: [
                     ("Nice wheels!", "いい車じゃん!"),
                     ("New wheels?", "新車?")
                  ], ipa: "/wˈiːlz/"),
-            make("bucks", "dollars",
+            make("bucks", "dollars (informal)",
                  "ドル",
                  useCases: ["カジュアルに金額を表すとき"],
                  examples: [
@@ -10465,7 +10465,7 @@ enum SeedData {
                     ("It cost two grand.", "2,000ドルした。"),
                     ("A grand a month.", "月1000ドル。")
                  ], ipa: "/ɡɹˈænd/"),
-            make("chicken", "a coward",
+            make("chicken", "someone who is too afraid to act; a bird",
                  "臆病者・チキン",
                  useCases: ["勇気のない人をからかうとき(名詞)"],
                  examples: [
@@ -10535,7 +10535,7 @@ enum SeedData {
                     ("High-key obsessed.", "明らかにハマってる。"),
                     ("I high-key want this.", "ガチで欲しい。")
                  ], ipa: "/hˈaɪkˈiː/"),
-            make("flex", "show off",
+            make("flex", "show off what you have or can do (slang)",
                  "自慢する・見せびらかす",
                  useCases: ["自分の物や能力を誇示するとき"],
                  examples: [
@@ -10766,7 +10766,7 @@ enum SeedData {
                     ("Undefeated champion.", "無敗の王者。"),
                     ("Still undefeated.", "まだ負けなし。")
                  ], ipa: "/ˌʌndɪfˈiːtɪd/"),
-            make("endgame", "final stage",
+            make("endgame", "the final stage, when the outcome is decided",
                  "最終局面・大詰め",
                  useCases: ["勝負や計画の最終段階を表すとき"],
                  examples: [
@@ -10885,7 +10885,7 @@ enum SeedData {
                     ("That's ridiculous.", "あり得ない。"),
                     ("Ridiculously expensive.", "バカ高い。")
                  ], ipa: "/ɹɪdˈɪkjʊləs/"),
-            make("inevitable", "unavoidable",
+            make("inevitable", "certain to happen and impossible to avoid",
                  "避けられない・必然の",
                  useCases: ["どうしても起こることを表すとき"],
                  examples: [
@@ -11018,7 +11018,7 @@ enum SeedData {
                     ("A skeleton crew.", "最小限のスタッフ。"),
                     ("Skeleton in the closet.", "隠された秘密(慣用)。")
                  ], ipa: "/skˈɛlɪtən/"),
-            make("once in a blue moon", "very rarely",
+            make("once in a blue moon", "very rarely; almost never",
                  "ごくまれに・めったに〜ない",
                  useCases: ["非常に珍しい出来事を表すとき"],
                  examples: [
@@ -11333,7 +11333,7 @@ enum SeedData {
                     ("In that sense, yes.", "その意味ではイエス。"),
                     ("In that sense, we agree.", "その意味では一致。")
                  ], ipa: "/ɪn ðæt sˈɛns/"),
-            make("for instance", "for example",
+            make("for instance", "used to introduce an example",
                  "例えば",
                  useCases: ["具体例を挙げるとき"],
                  examples: [
@@ -11669,7 +11669,7 @@ enum SeedData {
                     ("I can relate to that.", "それ分かるわ。"),
                     ("Can totally relate.", "めっちゃ共感。")
                  ], ipa: "/kæn ɹɪlˈeɪt tuː/"),
-            make("moving forward", "from now on",
+            make("moving forward", "from this point onward; in the future",
                  "今後は・これから",
                  useCases: ["今後の方針を述べる時のビジネス表現"],
                  examples: [
@@ -12684,7 +12684,7 @@ enum SeedData {
                     ("A wave of nostalgia.", "懐かしさの波。"),
                     ("Pure nostalgia.", "純粋な郷愁。")
                  ], ipa: "/nəstˈældʒɐ/"),
-            make("in tears", "crying",
+            make("in tears", "crying because of strong emotion",
                  "泣いている",
                  useCases: ["涙を流している状態を表すとき"],
                  examples: [
@@ -12698,7 +12698,7 @@ enum SeedData {
                     ("A magical moment.", "魔法のような瞬間。"),
                     ("It felt magical.", "魔法のようだった。")
                  ], ipa: "/mˈædʒɪkəl/"),
-            make("thankful", "grateful",
+            make("thankful", "feeling glad about something good you received",
                  "感謝している",
                  useCases: ["感謝の気持ちを表すとき"],
                  examples: [
@@ -12754,7 +12754,7 @@ enum SeedData {
                     ("It broke into pieces.", "粉々になった。"),
                     ("My heart broke into pieces.", "心がバラバラになった。")
                  ], ipa: "/bɹˈeɪk ˌɪntʊ pˈiːsɪz/"),
-            make("tear down", "demolish",
+            make("tear down", "pull a building or structure to the ground",
                  "取り壊す・打ち砕く",
                  useCases: ["建物や信念を破壊するとき"],
                  examples: [
@@ -12929,7 +12929,7 @@ enum SeedData {
                     ("Try to hold it together.", "踏ん張って。"),
                     ("I can barely hold it together.", "ギリギリ持ちこたえてる。")
                  ], ipa: "/hˈəʊld ɪt təɡˈɛðɐ/"),
-            make("sob", "cry noisily",
+            make("sob", "cry loudly while gasping for breath",
                  "むせび泣く",
                  useCases: ["激しく泣くときに"],
                  examples: [
@@ -13020,7 +13020,7 @@ enum SeedData {
                     ("Stay up late.", "夜更かしする。"),
                     ("Stayed up till 3am.", "3時まで起きてた。")
                  ], ipa: "/stˈeɪ ˈʌp/"),
-            make("instantly", "immediately",
+            make("instantly", "at once, with no delay at all",
                  "瞬時に・即座に",
                  useCases: ["時間をかけず即座に起きる動作を表すとき"],
                  examples: [
@@ -13293,7 +13293,7 @@ enum SeedData {
                     ("Leave a lasting impression.", "強い印象を残す。"),
                     ("She left an impression on me.", "彼女が私に印象を残した。")
                  ], ipa: "/lˈiːv ɐn ɪmpɹˈɛʃən/"),
-            make("until my last breath", "until I die",
+            make("until my last breath", "for the rest of my life; until I die",
                  "最後の息まで・死ぬまで",
                  useCases: ["生涯にわたる強い決意や愛情を表すとき"],
                  examples: [
@@ -13601,7 +13601,7 @@ enum SeedData {
                     ("Remembering the past.", "過去を思い出すこと。"),
                     ("Just remembering you.", "君を思い出しているだけ。")
                  ], ipa: "/ɹɪmˈɛmbəɹɪŋ/"),
-            make("adore", "love deeply",
+            make("adore", "love or admire someone very much",
                  "とても愛する・崇拝する",
                  useCases: ["強い愛情や敬愛を表すとき"],
                  examples: [
@@ -13776,7 +13776,7 @@ enum SeedData {
                     ("I'm cool with that.", "それでいいよ。"),
                     ("Are you cool with this plan?", "この案で大丈夫?")
                  ], ipa: "/biː kˈuːl wɪð/"),
-            make("you gotta", "you have to",
+            make("you gotta", "you have to; you must (informal)",
                  "君は〜しなきゃ",
                  useCases: ["くだけた口語で「〜すべき」を伝えるとき"],
                  examples: [
@@ -14133,7 +14133,7 @@ enum SeedData {
                     ("On the farm.", "農場で。"),
                     ("Farm to table.", "農場から食卓へ。")
                  ], ipa: "/fˈɑːm/"),
-            make("spare time", "free time",
+            make("spare time", "time when you are not working or busy",
                  "暇な時間・自由時間",
                  useCases: ["仕事や義務の合間に空いた時間を表すとき"],
                  examples: [
@@ -14329,7 +14329,7 @@ enum SeedData {
                     ("Never mind, it's fine.", "気にしないで、大丈夫。"),
                     ("Never mind what I said.", "今のは忘れて。")
                  ], ipa: "/nˈɛvɐ mˈaɪnd/"),
-            make("kidding", "joking",
+            make("kidding", "saying something untrue as a joke",
                  "冗談を言っている",
                  useCases: ["冗談だと伝えるとき"],
                  examples: [
@@ -14511,7 +14511,7 @@ enum SeedData {
                     ("It's freezing!", "凍えるほど寒い!"),
                     ("Freezing temperatures.", "氷点下の気温。")
                  ], ipa: "/fɹˈiːzɪŋ/"),
-            make("dim", "not bright",
+            make("dim", "giving little light; not bright",
                  "薄暗い・薄い",
                  useCases: ["光が弱い、または認識が薄いことを表すとき"],
                  examples: [
@@ -14679,7 +14679,7 @@ enum SeedData {
 
     private static var conceptStates36: [Word] {
         [
-            make("speedily", "rapidly",
+            make("speedily", "quickly and without wasting time",
                  "速やかに・急いで",
                  useCases: ["迅速に行うことを表す副詞"],
                  examples: [
@@ -14812,7 +14812,7 @@ enum SeedData {
                     ("This book is worth reading.", "この本は読む価値あり。"),
                     ("Worth trying.", "試す価値あり。")
                  ], ipa: "/ɪz wˈɜːθ vˈiːˈɪŋ/"),
-            make("without V-ing", "not doing",
+            make("without V-ing", "used to say one action did not accompany another",
                  "〜せずに",
                  useCases: ["動作なしの状態を表すとき"],
                  examples: [
@@ -15344,7 +15344,7 @@ enum SeedData {
                     ("Friends through thick and thin.", "苦楽を共にする友。"),
                     ("Stuck with him through thick and thin.", "どんな時も彼を支えた。")
                  ], ipa: "/θɹuː θˈɪk ænd θˈɪn/"),
-            make("on the fence", "undecided",
+            make("on the fence", "unable to decide between two choices",
                  "決めかねている・どっちつかず",
                  useCases: ["2つの選択肢の間で迷っている状態"],
                  examples: [
@@ -16023,7 +16023,7 @@ enum SeedData {
                     ("Adoption of new technology.", "新技術の採用。"),
                     ("Pet adoption.", "ペットの里親。")
                  ], ipa: "/ɐdˈɒpʃən/"),
-            make("for good", "permanently",
+            make("for good", "permanently; forever",
                  "永久に・これっきり",
                  useCases: ["変化や別れが続くことを強調するとき"],
                  examples: [
@@ -16044,7 +16044,7 @@ enum SeedData {
                     ("Diffusion of innovation.", "イノベーションの普及。"),
                     ("Gas diffusion.", "気体の拡散。")
                  ], ipa: "/dɪfjˈuːʒən/"),
-            make("eventually", "in the end",
+            make("eventually", "in the end, after a long time or delay",
                  "結局・最終的に",
                  useCases: ["時間を経て最終的に何かが起こるとき"],
                  examples: [
@@ -16163,7 +16163,7 @@ enum SeedData {
                     ("Loud explosion.", "大きな爆発音。"),
                     ("Explosion of growth.", "爆発的成長。")
                  ], ipa: "/ɪksplˈəʊʒən/"),
-            make("tiny", "very small",
+            make("tiny", "extremely small",
                  "とても小さい",
                  useCases: ["非常に小さいものを表すとき"],
                  examples: [
@@ -19735,7 +19735,7 @@ enum SeedData {
                     ("Water cascades down the rocks.", "水が岩を伝って流れ落ちる。"),
                     ("Errors cascade through the system.", "エラーがシステム全体に連鎖する。")
                  ], ipa: "/kɐskˈeɪd/"),
-            make("ascend", "go up; rise",
+            make("ascend", "move upward; rise to a higher position",
                  "上昇する・登る",
                  useCases: ["階段や地位を上がるとき"],
                  examples: [
@@ -20071,7 +20071,7 @@ enum SeedData {
                     ("That's good enough.", "それで十分。"),
                     ("Good enough for me.", "私には十分だ。")
                  ], ipa: "/ɡˈʊd ɪnˈʌf/"),
-            make("sure enough", "as expected",
+            make("sure enough", "as was expected or predicted",
                  "案の定・やっぱり",
                  useCases: ["予想通りの結果を表すとき"],
                  examples: [
@@ -20169,7 +20169,7 @@ enum SeedData {
                     ("It rained, so much so that we cancelled.", "雨があまりにひどくて中止した。"),
                     ("She loves it, so much so that she cries.", "好きすぎて泣くほどだ。")
                  ], ipa: "/sˈəʊ mˌʌtʃ sˌəʊ ðˈæt/"),
-            make("be included in", "be part of",
+            make("be included in", "be counted as part of something larger",
                  "〜に含まれている",
                  useCases: ["何かの中に入っているものを述べるとき"],
                  examples: [
@@ -21527,7 +21527,7 @@ enum SeedData {
                     ("Need to take the leak.", "ちょっとトイレ行ってくる。"),
                     ("Take a quick leak.", "ささっと用を足す。")
                  ], ipa: "/tˈeɪk ðə lˈiːk/"),
-            make("inhale", "breathe in",
+            make("inhale", "take air or smoke into the lungs",
                  "息を吸う・吸い込む",
                  useCases: ["息や空気を取り込むとき"],
                  examples: [
@@ -23096,7 +23096,7 @@ enum SeedData {
                     ("The deal is off.", "その話は中止だ。"),
                     ("The milk smells off.", "牛乳が傷んだ匂いがする。")
                  ], ipa: "/ˈɒf/"),
-            make("so much worse", "far worse",
+            make("so much worse", "far worse than something else",
                  "ずっとひどい",
                  useCases: ["比較してはるかに悪いことを強調するとき"],
                  examples: [
@@ -24706,7 +24706,7 @@ enum SeedData {
                     ("They've got talent.", "彼らには才能がある。"),
                     ("They've got a point.", "彼らの言うことも一理ある。")
                  ], ipa: "/ðeɪv ɡˈɒt/"),
-            make("yet in reality", "but in fact",
+            make("yet in reality", "used to contrast appearance with the truth",
                  "しかし実際には",
                  useCases: ["建前と現実の食い違いを述べるとき"],
                  examples: [
