@@ -1542,6 +1542,8 @@ struct WordReviewSessionView: View {
     @State private var results: [Int: Bool] = [:]
     @State private var dragOffset: CGSize = .zero
     @State private var isFlyingOff: Bool = false
+    /// Word whose full card the user opened via 「カードを見る」.
+    @State private var detailRanked: RankedWord? = nil
 
     private var isFinished: Bool { index >= words.count }
     private var current: RankedWord? { isFinished ? nil : words[index] }
@@ -1571,6 +1573,17 @@ struct WordReviewSessionView: View {
                 card(w)
                     .padding(.horizontal, 20)
                 Spacer(minLength: 8)
+            }
+        }
+        // `.sheet(item:)` rather than `isPresented` so the first tap already
+        // has the word committed and opens the right card.
+        .sheet(item: $detailRanked) { w in
+            if let registered = store.registeredWord(for: w) {
+                WordDetailSheet(word: registered)
+                    .environmentObject(store)
+            } else {
+                RankedWordCard(word: w)
+                    .environmentObject(store)
             }
         }
     }
@@ -1617,6 +1630,25 @@ struct WordReviewSessionView: View {
                 .minimumScaleFactor(0.6)
                 .lineLimit(3)
                 .padding(.horizontal, 8)
+
+            // Straight to the word's own card. Sits directly under the word;
+            // being a Button, its tap wins over the card's reveal gesture.
+            Button {
+                detailRanked = w
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: "rectangle.stack")
+                        .font(.system(size: 12))
+                    Text("カードを見る")
+                        .font(.caption.bold())
+                }
+                .foregroundStyle(.indigo)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 6)
+                .background(Capsule().fill(Color.indigo.opacity(0.12)))
+                .contentShape(Capsule())
+            }
+            .buttonStyle(.plain)
 
             if showAnswer {
                 Divider().padding(.horizontal, 24)
