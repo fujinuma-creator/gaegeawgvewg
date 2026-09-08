@@ -363,33 +363,30 @@ struct ExampleDayView: View {
     ExampleListView()
         .environmentObject(WordStore())
 }
+// MARK: - Conversational-frequency review list (日本語 / 英語 / 会話頻度)
 
-// MARK: - Chinese review list (Home screen, second list)
-
-/// Excel-style list of the Chinese vocabulary: 日本語 / 中国語 / ピンイン / 会話頻度.
-///
-/// Rows are deliberately short so a lot of words fit on screen for fast
-/// review. Only 300 words are rendered at a time (chosen from the menu),
-/// because putting several thousand rows in one scroll view is slow.
-///
-/// - Tap the **Chinese word** to open its card.
-/// - Tap **anywhere else in the row** to mark it yellow ("don't know");
-///   tap again to clear it.
-struct ChineseReviewListView: View {
+/// Second review list on the Home screen: 3,000 words laid out like a
+/// spreadsheet — Japanese, the English word, and a ☆1–☆5 conversational
+/// frequency rank — with deliberately short rows so the whole list can be
+/// skimmed fast. Tapping the English word opens its registered card;
+/// tapping anywhere else on the row paints it yellow ("don't know") and
+/// tapping again clears it. Rows are paged 300 at a time so SwiftUI never
+/// has to lay out all 3,000 at once.
+struct RankedReviewListView: View {
     @EnvironmentObject var store: WordStore
 
     /// How many words one page holds.
     private let pageSize = 300
 
-    @AppStorage("chinese.page") private var page: Int = 0
-    @State private var cardWord: ChineseWord? = nil
+    @AppStorage("ranked.page") private var page: Int = 0
+    @State private var cardWord: RankedWord? = nil
 
-    private var all: [ChineseWord] { store.chineseWords }
+    private var all: [RankedWord] { store.rankedWords }
     private var pageCount: Int {
         max(1, (all.count + pageSize - 1) / pageSize)
     }
     private var safePage: Int { min(max(page, 0), pageCount - 1) }
-    private var rows: [ChineseWord] {
+    private var rows: [RankedWord] {
         let start = safePage * pageSize
         guard start < all.count else { return [] }
         return Array(all[start..<min(start + pageSize, all.count)])
@@ -431,8 +428,15 @@ struct ChineseReviewListView: View {
         }
         .background(Color(.systemBackground))
         .sheet(item: $cardWord) { w in
-            ChineseWordCard(word: w)
-                .environmentObject(store)
+            // Prefer the word's own card in the app; fall back to a compact
+            // card for the few rows that have no registered entry.
+            if let registered = store.registeredWord(for: w) {
+                WordDetailSheet(word: registered)
+                    .environmentObject(store)
+            } else {
+                RankedWordCard(word: w)
+                    .environmentObject(store)
+            }
         }
     }
 
@@ -466,16 +470,16 @@ struct ChineseReviewListView: View {
 
             Spacer()
 
-            Text("\(store.chineseMarks.count) 語")
+            Text("\(store.rankedMarks.count) 語")
                 .font(.caption)
                 .foregroundStyle(.secondary)
             Button {
-                store.clearChineseMarks()
+                store.clearRankedMarks()
             } label: {
                 Text("黄色をリセット").font(.caption)
             }
-            .disabled(store.chineseMarks.isEmpty)
-            .opacity(store.chineseMarks.isEmpty ? 0.4 : 1)
+            .disabled(store.rankedMarks.isEmpty)
+            .opacity(store.rankedMarks.isEmpty ? 0.4 : 1)
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
@@ -484,9 +488,8 @@ struct ChineseReviewListView: View {
     private var header: some View {
         HStack(spacing: 6) {
             Text("日本語").frame(maxWidth: .infinity, alignment: .leading)
-            Text("中国語").frame(width: 96, alignment: .leading)
-            Text("ピンイン").frame(width: 84, alignment: .leading)
-            Text("頻度").frame(width: 56, alignment: .leading)
+            Text("英語").frame(width: 132, alignment: .leading)
+            Text("会話頻度").frame(width: 56, alignment: .leading)
         }
         .font(.caption2.bold())
         .foregroundStyle(.secondary)
@@ -497,30 +500,27 @@ struct ChineseReviewListView: View {
 
     // MARK: Row
 
-    private func row(_ w: ChineseWord) -> some View {
-        let marked = store.chineseMarks.contains(w.id)
+    private func row(_ w: RankedWord) -> some View {
+        let marked = store.rankedMarks.contains(w.id)
         return HStack(spacing: 6) {
             Text(w.japanese)
                 .lineLimit(1)
                 .truncationMode(.tail)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            // Tapping the Chinese word opens the card; the rest of the row
+            // Tapping the English word opens its card; the rest of the row
             // toggles the yellow "don't know" highlight.
             Button {
                 cardWord = w
             } label: {
-                Text(w.chinese)
+                Text(w.english)
                     .fontWeight(.semibold)
                     .foregroundStyle(.indigo)
                     .lineLimit(1)
-                    .frame(width: 96, alignment: .leading)
+                    .truncationMode(.tail)
+                    .frame(width: 132, alignment: .leading)
                     .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            Text(w.pinyin)
-                .foregroundStyle(.secondary)
-                .lineLimit(1)
-                .frame(width: 84, alignment: .leading)
             Text(w.stars)
                 .foregroundStyle(.orange)
                 .frame(width: 56, alignment: .leading)
@@ -532,14 +532,15 @@ struct ChineseReviewListView: View {
         .background(marked ? Color.yellow.opacity(0.55) : Color.clear)
         .contentShape(Rectangle())
         .onTapGesture {
-            store.toggleChineseMark(w.id)
+            store.toggleRankedMark(w.id)
         }
     }
 }
 
-/// Card shown when a Chinese word in the review list is tapped.
-struct ChineseWordCard: View {
-    let word: ChineseWord
+/// Fallback card for a frequency-list word that has no registered entry in
+/// the main vocabulary.
+struct RankedWordCard: View {
+    let word: RankedWord
     @EnvironmentObject var store: WordStore
     @Environment(\.dismiss) private var dismiss
 
@@ -548,14 +549,11 @@ struct ChineseWordCard: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     VStack(alignment: .leading, spacing: 6) {
-                        Text(word.chinese)
-                            .font(.system(size: 34, weight: .bold))
-                        Text(word.pinyin)
+                        Text(word.english)
+                            .font(.system(size: 32, weight: .bold))
+                        Text(word.japanese)
                             .font(.title3)
                             .foregroundStyle(.indigo)
-                        Text(word.japanese)
-                            .font(.body)
-                            .foregroundStyle(.secondary)
                     }
 
                     HStack(spacing: 8) {
@@ -563,22 +561,34 @@ struct ChineseWordCard: View {
                         Text(word.stars).font(.subheadline).foregroundStyle(.orange)
                     }
 
-                    if !word.exampleList.isEmpty {
+                    if !word.gloss.isEmpty {
                         Divider()
-                        Text("よく使う用例").font(.caption).foregroundStyle(.tertiary)
-                        VStack(alignment: .leading, spacing: 10) {
-                            ForEach(Array(word.exampleList.enumerated()), id: \.offset) { _, ex in
-                                Text(ex)
-                                    .font(.body)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                            }
-                        }
+                        Text("英語の説明").font(.caption).foregroundStyle(.tertiary)
+                        Text(word.gloss)
+                            .font(.body)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
 
                     Button {
-                        store.toggleChineseMark(word.id)
+                        SpeechManager.shared.speak(word.english)
                     } label: {
-                        let marked = store.chineseMarks.contains(word.id)
+                        HStack {
+                            Spacer()
+                            Image(systemName: "speaker.wave.2.fill")
+                            Text("発音を聞く").bold()
+                            Spacer()
+                        }
+                        .padding(.vertical, 12)
+                        .foregroundStyle(.indigo)
+                        .background(Color.indigo.opacity(0.12))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                    .buttonStyle(.plain)
+
+                    Button {
+                        store.toggleRankedMark(word.id)
+                    } label: {
+                        let marked = store.rankedMarks.contains(word.id)
                         HStack {
                             Spacer()
                             Image(systemName: marked ? "checkmark.circle.fill" : "circle")

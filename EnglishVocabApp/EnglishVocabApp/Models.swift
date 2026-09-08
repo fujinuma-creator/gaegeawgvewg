@@ -208,29 +208,22 @@ struct Word: Codable, Identifiable, Hashable {
     }
 }
 
-/// One entry in the Chinese review list shown on the Home screen.
-/// `id` is the 1-based row number in `ChineseSeed`, which stays stable across
+/// One entry in the conversational-frequency review list shown on the Home
+/// screen (日本語 / 英語 / 会話頻度).
+/// `id` is the 1-based row number in `RankedSeed`, which stays stable across
 /// launches, so it can be used as the key for the "don't know" marks.
-struct ChineseWord: Identifiable, Hashable {
+struct RankedWord: Identifiable, Hashable {
     let id: Int
     let japanese: String
-    let chinese: String
-    let pinyin: String
+    let english: String
     /// Conversational frequency, 1 (rare) … 5 (very common).
     let frequency: Int
-    /// Example sentences, separated by "／".
-    let examples: String
+    /// Short English explanation of the word.
+    let gloss: String
 
     var stars: String {
         String(repeating: "★", count: max(0, min(frequency, 5)))
             + String(repeating: "☆", count: max(0, 5 - frequency))
-    }
-
-    var exampleList: [String] {
-        examples
-            .split(whereSeparator: { $0 == "／" || $0 == "/" })
-            .map { $0.trimmingCharacters(in: .whitespaces) }
-            .filter { !$0.isEmpty }
     }
 }
 

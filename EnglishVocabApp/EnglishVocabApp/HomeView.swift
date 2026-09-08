@@ -5,7 +5,7 @@ struct HomeView: View {
 
     @State private var showAllWords = false
     @State private var showReviewList = false
-    @State private var showChineseList = false
+    @State private var showRankedList = false
 
     var body: some View {
         ZStack {
@@ -28,9 +28,9 @@ struct HomeView: View {
                 }
                 .buttonStyle(.plain)
                 Button {
-                    showChineseList = true
+                    showRankedList = true
                 } label: {
-                    statTile(label: "復習リスト（中国語）", number: store.chineseWords.count, suffix: "語", tappable: true)
+                    statTile(label: "復習リスト（会話頻度順）", number: store.rankedWords.count, suffix: "語", tappable: true)
                 }
                 .buttonStyle(.plain)
                 progressTile(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
@@ -49,15 +49,15 @@ struct HomeView: View {
             WordListSheet(filter: .reviewList)
                 .environmentObject(store)
         }
-        .sheet(isPresented: $showChineseList) {
+        .sheet(isPresented: $showRankedList) {
             NavigationStack {
-                ChineseReviewListView()
+                RankedReviewListView()
                     .environmentObject(store)
-                    .navigationTitle("復習リスト（中国語）")
+                    .navigationTitle("復習リスト（会話頻度順）")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItem(placement: .topBarTrailing) {
-                            Button("閉じる") { showChineseList = false }
+                            Button("閉じる") { showRankedList = false }
                         }
                     }
             }

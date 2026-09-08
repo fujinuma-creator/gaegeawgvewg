@@ -31,53 +31,61 @@ final class WordStore: ObservableObject {
         return docs.appendingPathComponent("grammar_answers.json")
     }()
 
-    // MARK: - Chinese review list
+    // MARK: - Conversational-frequency review list
 
-    /// Rows of the Chinese review list. Loaded lazily the first time the list
-    /// is opened so app launch isn't slowed by parsing several thousand rows.
-    private(set) lazy var chineseWords: [ChineseWord] = ChineseSeed.words
+    /// Rows of the frequency-ranked review list (日本語 / 英語 / 会話頻度).
+    /// Loaded lazily the first time the list is opened so app launch isn't
+    /// slowed by parsing several thousand rows.
+    private(set) lazy var rankedWords: [RankedWord] = RankedSeed.words
 
     /// Ids of the words the user tapped as "don't know" (shown in yellow).
-    @Published private(set) var chineseMarks: Set<Int> = []
+    @Published private(set) var rankedMarks: Set<Int> = []
 
-    private let chineseMarksURL: URL = {
+    private let rankedMarksURL: URL = {
         let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("chinese_marks.json")
+        return docs.appendingPathComponent("ranked_marks.json")
     }()
 
-    func toggleChineseMark(_ id: Int) {
-        if chineseMarks.contains(id) {
-            chineseMarks.remove(id)
+    func toggleRankedMark(_ id: Int) {
+        if rankedMarks.contains(id) {
+            rankedMarks.remove(id)
         } else {
-            chineseMarks.insert(id)
+            rankedMarks.insert(id)
         }
-        saveChineseMarks()
+        saveRankedMarks()
     }
 
-    func clearChineseMarks() {
-        chineseMarks = []
-        saveChineseMarks()
+    func clearRankedMarks() {
+        rankedMarks = []
+        saveRankedMarks()
     }
 
-    private func loadChineseMarks() {
-        guard FileManager.default.fileExists(atPath: chineseMarksURL.path) else { return }
-        if let data = try? Data(contentsOf: chineseMarksURL),
+    private func loadRankedMarks() {
+        guard FileManager.default.fileExists(atPath: rankedMarksURL.path) else { return }
+        if let data = try? Data(contentsOf: rankedMarksURL),
            let ids = try? JSONDecoder().decode([Int].self, from: data) {
-            chineseMarks = Set(ids)
+            rankedMarks = Set(ids)
         }
     }
 
-    private func saveChineseMarks() {
-        if let data = try? JSONEncoder().encode(Array(chineseMarks).sorted()) {
-            try? data.write(to: chineseMarksURL, options: .atomic)
+    private func saveRankedMarks() {
+        if let data = try? JSONEncoder().encode(Array(rankedMarks).sorted()) {
+            try? data.write(to: rankedMarksURL, options: .atomic)
         }
+    }
+
+    /// The app card registered for a row in the frequency list, matched by
+    /// lowercased headword. Nil when the row has no card of its own.
+    func registeredWord(for ranked: RankedWord) -> Word? {
+        let key = ranked.english.trimmingCharacters(in: .whitespaces).lowercased()
+        return words.first { $0.word.trimmingCharacters(in: .whitespaces).lowercased() == key }
     }
 
     init() {
         load()
         loadStudyLogs()
         loadGrammarAnswers()
-        loadChineseMarks()
+        loadRankedMarks()
         // Drop any words that were retired from the seed list (e.g. the
         // Singlish set the user asked to remove). Runs every launch so
         // newly-retired words are scrubbed without manual user action.
