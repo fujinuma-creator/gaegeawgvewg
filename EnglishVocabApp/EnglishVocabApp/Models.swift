@@ -208,6 +208,32 @@ struct Word: Codable, Identifiable, Hashable {
     }
 }
 
+/// One entry in the Chinese review list shown on the Home screen.
+/// `id` is the 1-based row number in `ChineseSeed`, which stays stable across
+/// launches, so it can be used as the key for the "don't know" marks.
+struct ChineseWord: Identifiable, Hashable {
+    let id: Int
+    let japanese: String
+    let chinese: String
+    let pinyin: String
+    /// Conversational frequency, 1 (rare) … 5 (very common).
+    let frequency: Int
+    /// Example sentences, separated by "／".
+    let examples: String
+
+    var stars: String {
+        String(repeating: "★", count: max(0, min(frequency, 5)))
+            + String(repeating: "☆", count: max(0, 5 - frequency))
+    }
+
+    var exampleList: [String] {
+        examples
+            .split(whereSeparator: { $0 == "／" || $0 == "/" })
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+            .filter { !$0.isEmpty }
+    }
+}
+
 /// One user attempt at translating an example sentence, paired with the
 /// AI feedback returned for it. Stored per-example so the user can scroll
 /// back through their progress.

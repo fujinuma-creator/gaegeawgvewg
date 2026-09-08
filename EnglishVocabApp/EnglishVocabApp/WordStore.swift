@@ -31,10 +31,53 @@ final class WordStore: ObservableObject {
         return docs.appendingPathComponent("grammar_answers.json")
     }()
 
+    // MARK: - Chinese review list
+
+    /// Rows of the Chinese review list. Loaded lazily the first time the list
+    /// is opened so app launch isn't slowed by parsing several thousand rows.
+    private(set) lazy var chineseWords: [ChineseWord] = ChineseSeed.words
+
+    /// Ids of the words the user tapped as "don't know" (shown in yellow).
+    @Published private(set) var chineseMarks: Set<Int> = []
+
+    private let chineseMarksURL: URL = {
+        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return docs.appendingPathComponent("chinese_marks.json")
+    }()
+
+    func toggleChineseMark(_ id: Int) {
+        if chineseMarks.contains(id) {
+            chineseMarks.remove(id)
+        } else {
+            chineseMarks.insert(id)
+        }
+        saveChineseMarks()
+    }
+
+    func clearChineseMarks() {
+        chineseMarks = []
+        saveChineseMarks()
+    }
+
+    private func loadChineseMarks() {
+        guard FileManager.default.fileExists(atPath: chineseMarksURL.path) else { return }
+        if let data = try? Data(contentsOf: chineseMarksURL),
+           let ids = try? JSONDecoder().decode([Int].self, from: data) {
+            chineseMarks = Set(ids)
+        }
+    }
+
+    private func saveChineseMarks() {
+        if let data = try? JSONEncoder().encode(Array(chineseMarks).sorted()) {
+            try? data.write(to: chineseMarksURL, options: .atomic)
+        }
+    }
+
     init() {
         load()
         loadStudyLogs()
         loadGrammarAnswers()
+        loadChineseMarks()
         // Drop any words that were retired from the seed list (e.g. the
         // Singlish set the user asked to remove). Runs every launch so
         // newly-retired words are scrubbed without manual user action.

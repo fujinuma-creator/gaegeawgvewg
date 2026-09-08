@@ -363,3 +363,246 @@ struct ExampleDayView: View {
     ExampleListView()
         .environmentObject(WordStore())
 }
+
+// MARK: - Chinese review list (Home screen, second list)
+
+/// Excel-style list of the Chinese vocabulary: 日本語 / 中国語 / ピンイン / 会話頻度.
+///
+/// Rows are deliberately short so a lot of words fit on screen for fast
+/// review. Only 300 words are rendered at a time (chosen from the menu),
+/// because putting several thousand rows in one scroll view is slow.
+///
+/// - Tap the **Chinese word** to open its card.
+/// - Tap **anywhere else in the row** to mark it yellow ("don't know");
+///   tap again to clear it.
+struct ChineseReviewListView: View {
+    @EnvironmentObject var store: WordStore
+
+    /// How many words one page holds.
+    private let pageSize = 300
+
+    @AppStorage("chinese.page") private var page: Int = 0
+    @State private var cardWord: ChineseWord? = nil
+
+    private var all: [ChineseWord] { store.chineseWords }
+    private var pageCount: Int {
+        max(1, (all.count + pageSize - 1) / pageSize)
+    }
+    private var safePage: Int { min(max(page, 0), pageCount - 1) }
+    private var rows: [ChineseWord] {
+        let start = safePage * pageSize
+        guard start < all.count else { return [] }
+        return Array(all[start..<min(start + pageSize, all.count)])
+    }
+
+    private func rangeLabel(_ i: Int) -> String {
+        let s = i * pageSize + 1
+        let e = min((i + 1) * pageSize, all.count)
+        return "\(s) 〜 \(e)"
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            toolbar
+            header
+            Divider()
+            if all.isEmpty {
+                Spacer()
+                Text("単語が登録されていません")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                Spacer()
+            } else {
+                ScrollViewReader { proxy in
+                    ScrollView {
+                        LazyVStack(spacing: 0) {
+                            ForEach(rows) { w in
+                                row(w)
+                                Divider().opacity(0.4)
+                            }
+                        }
+                        .id(safePage)          // jump back to the top on page change
+                    }
+                    .onChange(of: safePage) { _, _ in
+                        proxy.scrollTo(safePage, anchor: .top)
+                    }
+                }
+            }
+        }
+        .background(Color(.systemBackground))
+        .sheet(item: $cardWord) { w in
+            ChineseWordCard(word: w)
+                .environmentObject(store)
+        }
+    }
+
+    // MARK: Toolbar (page picker + marked counter)
+
+    private var toolbar: some View {
+        HStack(spacing: 10) {
+            Menu {
+                ForEach(0..<pageCount, id: \.self) { i in
+                    Button {
+                        page = i
+                    } label: {
+                        if i == safePage {
+                            Label(rangeLabel(i), systemImage: "checkmark")
+                        } else {
+                            Text(rangeLabel(i))
+                        }
+                    }
+                }
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: "list.number")
+                    Text(rangeLabel(safePage)).bold()
+                    Image(systemName: "chevron.down").font(.caption2)
+                }
+                .font(.subheadline)
+                .padding(.horizontal, 12).padding(.vertical, 7)
+                .background(Capsule().fill(Color.indigo.opacity(0.12)))
+                .foregroundStyle(.indigo)
+            }
+
+            Spacer()
+
+            Text("\(store.chineseMarks.count) 語")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            Button {
+                store.clearChineseMarks()
+            } label: {
+                Text("黄色をリセット").font(.caption)
+            }
+            .disabled(store.chineseMarks.isEmpty)
+            .opacity(store.chineseMarks.isEmpty ? 0.4 : 1)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+    }
+
+    private var header: some View {
+        HStack(spacing: 6) {
+            Text("日本語").frame(maxWidth: .infinity, alignment: .leading)
+            Text("中国語").frame(width: 96, alignment: .leading)
+            Text("ピンイン").frame(width: 84, alignment: .leading)
+            Text("頻度").frame(width: 56, alignment: .leading)
+        }
+        .font(.caption2.bold())
+        .foregroundStyle(.secondary)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 5)
+        .background(Color.indigo.opacity(0.06))
+    }
+
+    // MARK: Row
+
+    private func row(_ w: ChineseWord) -> some View {
+        let marked = store.chineseMarks.contains(w.id)
+        return HStack(spacing: 6) {
+            Text(w.japanese)
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            // Tapping the Chinese word opens the card; the rest of the row
+            // toggles the yellow "don't know" highlight.
+            Button {
+                cardWord = w
+            } label: {
+                Text(w.chinese)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.indigo)
+                    .lineLimit(1)
+                    .frame(width: 96, alignment: .leading)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            Text(w.pinyin)
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+                .frame(width: 84, alignment: .leading)
+            Text(w.stars)
+                .foregroundStyle(.orange)
+                .frame(width: 56, alignment: .leading)
+        }
+        .font(.system(size: 12))
+        .padding(.horizontal, 12)
+        .padding(.vertical, 5)          // keep rows short for fast scanning
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(marked ? Color.yellow.opacity(0.55) : Color.clear)
+        .contentShape(Rectangle())
+        .onTapGesture {
+            store.toggleChineseMark(w.id)
+        }
+    }
+}
+
+/// Card shown when a Chinese word in the review list is tapped.
+struct ChineseWordCard: View {
+    let word: ChineseWord
+    @EnvironmentObject var store: WordStore
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(word.chinese)
+                            .font(.system(size: 34, weight: .bold))
+                        Text(word.pinyin)
+                            .font(.title3)
+                            .foregroundStyle(.indigo)
+                        Text(word.japanese)
+                            .font(.body)
+                            .foregroundStyle(.secondary)
+                    }
+
+                    HStack(spacing: 8) {
+                        Text("会話頻度").font(.caption).foregroundStyle(.tertiary)
+                        Text(word.stars).font(.subheadline).foregroundStyle(.orange)
+                    }
+
+                    if !word.exampleList.isEmpty {
+                        Divider()
+                        Text("よく使う用例").font(.caption).foregroundStyle(.tertiary)
+                        VStack(alignment: .leading, spacing: 10) {
+                            ForEach(Array(word.exampleList.enumerated()), id: \.offset) { _, ex in
+                                Text(ex)
+                                    .font(.body)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                    }
+
+                    Button {
+                        store.toggleChineseMark(word.id)
+                    } label: {
+                        let marked = store.chineseMarks.contains(word.id)
+                        HStack {
+                            Spacer()
+                            Image(systemName: marked ? "checkmark.circle.fill" : "circle")
+                            Text(marked ? "分からない（マーク中）" : "分からないをマーク").bold()
+                            Spacer()
+                        }
+                        .padding(.vertical, 12)
+                        .foregroundStyle(marked ? .black : .indigo)
+                        .background(marked ? Color.yellow.opacity(0.7) : Color.indigo.opacity(0.12))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                    .buttonStyle(.plain)
+
+                    Spacer(minLength: 12)
+                }
+                .padding(16)
+            }
+            .navigationTitle("単語カード")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("閉じる") { dismiss() }
+                }
+            }
+        }
+    }
+}
