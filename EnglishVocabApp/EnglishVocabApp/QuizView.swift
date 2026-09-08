@@ -14,6 +14,9 @@ struct QuizView: View {
         case translation = "例文翻訳"
         case useCase = "使う場面"
         case definition = "英語の定義"
+        /// Swipe-through flashcards drawn from the 復習リスト（会話頻度順）
+        /// table. Has its own menu screen (今日の単語 / 復習単語 / 全部の単語).
+        case wordReview = "単語復習"
         var id: String { rawValue }
 
         /// Stable English key used for Word.modeCounts /
@@ -24,6 +27,7 @@ struct QuizView: View {
             case .useCase:     return "useCase"
             case .definition:  return "definition"
             case .translation: return "translation"
+            case .wordReview:  return "wordReview"
             }
         }
 
@@ -32,13 +36,14 @@ struct QuizView: View {
             case .useCase:     return "この単語を使う場面はどれ？"
             case .definition:  return "この単語の英語の定義はどれ？"
             case .translation: return "下の日本語を英語に訳してください"
+            case .wordReview:  return ""
             }
         }
 
         var minimumEligible: Int {
             // Multiple-choice modes need 4 distinct words for distractors.
-            // Translation only needs 1 word with examples.
-            self == .translation ? 1 : 4
+            // Translation / word review only need 1.
+            (self == .translation || self == .wordReview) ? 1 : 4
         }
 
         var emptyMessage: String {
@@ -46,6 +51,7 @@ struct QuizView: View {
             case .useCase:     return "復習リスト内に「使う場面」付きの単語が4つ以上必要です"
             case .definition:  return "復習リスト内に「英語の定義」付きの単語が4つ以上必要です"
             case .translation: return "本日分の例文がありません"
+            case .wordReview:  return "単語が登録されていません"
             }
         }
 
@@ -125,6 +131,8 @@ struct QuizView: View {
             }
         case .translation:
             return words.filter { !$0.examples.isEmpty }
+        case .wordReview:
+            return words   // not used: word review has its own data source
         }
     }
 
@@ -138,6 +146,9 @@ struct QuizView: View {
             // Translation is driven by the daily example plan, not the
             // review list, so it only needs today's Day to be non-empty.
             return !translationQueue.isEmpty
+        case .wordReview:
+            // Word review manages its own empty states inside its menu.
+            return true
         }
     }
 
@@ -147,7 +158,7 @@ struct QuizView: View {
     /// "本日のタスクは終了しました" celebration view.
     private var allTasksDone: Bool {
         // Translation never "runs out": it always serves today's Day.
-        guard mode != .translation else { return false }
+        guard mode != .translation, mode != .wordReview else { return false }
         return !store.reviewListWords.isEmpty && eligibleWords.isEmpty
     }
 
@@ -157,9 +168,13 @@ struct QuizView: View {
             HStack {
                 Text("クイズ").font(.title2.bold())
                 Spacer()
-                Text("\(correctCount) / \(totalCount)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                // Word review deliberately shows no score / counter up top;
+                // its "X / N" position lives just above the word instead.
+                if mode != .wordReview {
+                    Text("\(correctCount) / \(totalCount)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
             }
             .padding(.horizontal, 16)
             .padding(.top, 12)
@@ -172,7 +187,10 @@ struct QuizView: View {
             .pickerStyle(.segmented)
             .padding(.horizontal, 16)
 
-            if !canShowQuiz {
+            if mode == .wordReview {
+                WordReviewView()
+                    .environmentObject(store)
+            } else if !canShowQuiz {
                 Spacer()
                 if allTasksDone {
                     VStack(spacing: 12) {
@@ -456,7 +474,7 @@ struct QuizView: View {
     }
 
     private func nextQuestion() {
-        guard canShowQuiz else {
+        guard canShowQuiz, mode != .wordReview else {
             currentWord = nil
             choices = []
             currentExample = nil
@@ -514,7 +532,7 @@ struct QuizView: View {
         case .definition:
             let def = word.definitionEnglish.trimmingCharacters(in: .whitespaces)
             return def.isEmpty ? nil : def
-        case .translation:
+        case .translation, .wordReview:
             return nil
         }
     }
@@ -525,8 +543,8 @@ struct QuizView: View {
             return "選んだ場面は「\(sourceWord.word)」の使い方です"
         case .definition:
             return "選んだ定義は「\(sourceWord.word)」のものです"
-        case .translation:
-            return ""  // not used in translation mode
+        case .translation, .wordReview:
+            return ""  // not used in these modes
         }
     }
 
@@ -1301,6 +1319,532 @@ struct WordDetailSheet: View {
         .padding(12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.7)))
+    }
+}
+
+// MARK: - 単語復習 (swipe flashcards from the 復習リスト（会話頻度順） table)
+
+/// Which language is shown on the front of the card.
+enum WordReviewDirection: String, CaseIterable, Identifiable {
+    case jaToEn = "日本語 → 英語"
+    case enToJa = "英語 → 日本語"
+    /// Alternates every card: 日→英, 英→日, 日→英 …
+    case alternate = "交互"
+    var id: String { rawValue }
+}
+
+/// The pool a 単語復習 session draws from. Chosen on the menu screen.
+enum WordReviewSource: Hashable {
+    case today
+    case review
+    case all(page: Int)
+
+    var title: String {
+        switch self {
+        case .today: return "今日の単語"
+        case .review: return "復習単語"
+        case .all: return "全部の単語 \(rangeLabel)"
+        }
+    }
+
+    /// "1〜500", "501〜1000", … for the 全部の単語 pages; empty otherwise.
+    var rangeLabel: String {
+        guard case .all(let page) = self else { return "" }
+        let s = page * WordStore.wordReviewPageSize + 1
+        let e = (page + 1) * WordStore.wordReviewPageSize
+        return "\(s)〜\(e)"
+    }
+}
+
+/// Entry point for 単語復習. Shows the menu first; picking an item starts a
+/// session (the swipe cards), and finishing or backing out returns here.
+struct WordReviewView: View {
+    @EnvironmentObject var store: WordStore
+
+    @AppStorage("wordReview.direction") private var directionRaw: String = WordReviewDirection.jaToEn.rawValue
+    @State private var activeSource: WordReviewSource? = nil
+    /// Snapshot of the words taken when the session started, so the list
+    /// doesn't shift underneath the user (e.g. un-ticking a word on the
+    /// summary screen of a 復習単語 session must not remove its row).
+    @State private var sessionWords: [RankedWord] = []
+    /// Bumped on every start so the session view's @State is rebuilt.
+    @State private var sessionToken: Int = 0
+
+    private var direction: WordReviewDirection {
+        WordReviewDirection(rawValue: directionRaw) ?? .jaToEn
+    }
+
+    private var allWords: [RankedWord] { store.allWordReviewShuffled }
+    private var pageCount: Int {
+        max(1, (allWords.count + WordStore.wordReviewPageSize - 1) / WordStore.wordReviewPageSize)
+    }
+
+    private func words(for source: WordReviewSource) -> [RankedWord] {
+        switch source {
+        case .today:
+            return store.todaysWordReview
+        case .review:
+            return store.wordReviewWords
+        case .all(let page):
+            let all = allWords
+            let start = page * WordStore.wordReviewPageSize
+            guard start < all.count else { return [] }
+            return Array(all[start..<min(start + WordStore.wordReviewPageSize, all.count)])
+        }
+    }
+
+    var body: some View {
+        if let source = activeSource {
+            WordReviewSessionView(
+                title: source.title,
+                words: sessionWords,
+                direction: direction,
+                onExit: { activeSource = nil }
+            )
+            .id(sessionToken)
+            .environmentObject(store)
+        } else {
+            menu
+        }
+    }
+
+    private func start(_ source: WordReviewSource) {
+        sessionWords = words(for: source)
+        sessionToken += 1
+        activeSource = source
+    }
+
+    // MARK: Menu screen
+
+    private var menu: some View {
+        ScrollView {
+            VStack(spacing: 14) {
+                VStack(spacing: 4) {
+                    Text("単語復習")
+                        .font(.title3.bold())
+                    Text("メニューを選んで学習を始めます")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.top, 8)
+
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("表示の向き")
+                        .font(.caption.bold())
+                        .foregroundStyle(.secondary)
+                    Picker("表示の向き", selection: $directionRaw) {
+                        ForEach(WordReviewDirection.allCases) { d in
+                            Text(d.rawValue).tag(d.rawValue)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+                .padding(14)
+                .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
+
+                menuRow(
+                    icon: "sun.max.fill",
+                    title: "今日の単語",
+                    subtitle: "\(store.todaysWordReview.count)語・毎日ランダムに入れ替わります",
+                    enabled: !store.todaysWordReview.isEmpty
+                ) {
+                    start(.today)
+                }
+
+                menuRow(
+                    icon: "arrow.counterclockwise.circle.fill",
+                    title: "復習単語",
+                    subtitle: store.wordReviewWords.isEmpty
+                        ? "❌にした単語がここに入ります（3日でリセット）"
+                        : "\(store.wordReviewWords.count)語・❌にした単語（3日でリセット）",
+                    enabled: !store.wordReviewWords.isEmpty
+                ) {
+                    start(.review)
+                }
+
+                Menu {
+                    ForEach(0..<pageCount, id: \.self) { i in
+                        Button(WordReviewSource.all(page: i).rangeLabel) {
+                            start(.all(page: i))
+                        }
+                    }
+                } label: {
+                    menuRowLabel(
+                        icon: "square.stack.3d.up.fill",
+                        title: "全部の単語",
+                        subtitle: "\(allWords.count)語・500語ずつ選択（順番は毎日ランダム）",
+                        trailing: "chevron.down",
+                        enabled: !allWords.isEmpty
+                    )
+                }
+                .disabled(allWords.isEmpty)
+
+                Spacer(minLength: 12)
+            }
+            .padding(.horizontal, 16)
+            .padding(.bottom, 16)
+        }
+    }
+
+    private func menuRow(icon: String, title: String, subtitle: String, enabled: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            menuRowLabel(icon: icon, title: title, subtitle: subtitle, trailing: "chevron.right", enabled: enabled)
+        }
+        .buttonStyle(.plain)
+        .disabled(!enabled)
+    }
+
+    private func menuRowLabel(icon: String, title: String, subtitle: String, trailing: String, enabled: Bool) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: icon)
+                .font(.system(size: 22))
+                .foregroundStyle(.indigo)
+                .frame(width: 32)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(title)
+                    .font(.headline)
+                    .foregroundStyle(.primary)
+                Text(subtitle)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.leading)
+            }
+            Spacer()
+            Image(systemName: trailing)
+                .font(.caption.bold())
+                .foregroundStyle(.secondary)
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
+        .opacity(enabled ? 1 : 0.45)
+        .contentShape(Rectangle())
+    }
+}
+
+/// One 単語復習 session: swipe through `words` one card at a time.
+/// - tap the card → show / hide the translation
+/// - swipe right → ⭕️ (知っている), next card
+/// - swipe left  → ❌, the word goes straight into 復習単語, next card
+/// When the last card is done, every word is listed with a tick that adds
+/// it to / removes it from 復習単語.
+struct WordReviewSessionView: View {
+    let title: String
+    let words: [RankedWord]
+    let direction: WordReviewDirection
+    let onExit: () -> Void
+
+    @EnvironmentObject var store: WordStore
+
+    @State private var index: Int = 0
+    @State private var showAnswer: Bool = false
+    /// RankedWord id → true (⭕️) / false (❌) for cards already swiped.
+    @State private var results: [Int: Bool] = [:]
+    @State private var dragOffset: CGSize = .zero
+    @State private var isFlyingOff: Bool = false
+
+    private var isFinished: Bool { index >= words.count }
+    private var current: RankedWord? { isFinished ? nil : words[index] }
+
+    /// English on the front for this card?
+    private func englishFront(at i: Int) -> Bool {
+        switch direction {
+        case .jaToEn: return false
+        case .enToJa: return true
+        case .alternate: return i % 2 == 1
+        }
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            topBar
+            if words.isEmpty {
+                Spacer()
+                Text("単語がありません")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                Spacer()
+            } else if isFinished {
+                summary
+            } else if let w = current {
+                Spacer(minLength: 8)
+                card(w)
+                    .padding(.horizontal, 20)
+                Spacer(minLength: 8)
+            }
+        }
+    }
+
+    // MARK: Top bar — only a way back to the menu; no counters or hints here
+
+    private var topBar: some View {
+        HStack {
+            Button {
+                onExit()
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: "chevron.left")
+                    Text("メニュー")
+                }
+                .font(.subheadline)
+                .foregroundStyle(.indigo)
+            }
+            .buttonStyle(.plain)
+            Spacer()
+            Text(title)
+                .font(.caption)
+                .foregroundStyle(.secondary)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+    }
+
+    // MARK: Card
+
+    private func card(_ w: RankedWord) -> some View {
+        let enFront = englishFront(at: index)
+        let front = enFront ? w.english : w.japanese
+        let back = enFront ? w.japanese : w.english
+        return VStack(spacing: 14) {
+            // Position, just above the word.
+            Text("\(index + 1) / \(words.count)")
+                .font(.caption.bold())
+                .foregroundStyle(.secondary)
+
+            Text(front)
+                .font(.system(size: enFront ? 30 : 26, weight: .bold))
+                .multilineTextAlignment(.center)
+                .minimumScaleFactor(0.6)
+                .lineLimit(3)
+                .padding(.horizontal, 8)
+
+            if showAnswer {
+                Divider().padding(.horizontal, 24)
+                HStack(spacing: 8) {
+                    Text(back)
+                        .font(.system(size: enFront ? 22 : 26, weight: .semibold))
+                        .foregroundStyle(.indigo)
+                        .multilineTextAlignment(.center)
+                        .minimumScaleFactor(0.6)
+                        .lineLimit(3)
+                    Button {
+                        SpeechManager.shared.speak(w.english)
+                    } label: {
+                        Image(systemName: "speaker.wave.2.fill")
+                            .font(.system(size: 16))
+                            .foregroundStyle(.indigo)
+                    }
+                    .buttonStyle(.plain)
+                }
+                if !w.gloss.isEmpty {
+                    Text(w.gloss)
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 12)
+                }
+                Text(w.stars)
+                    .font(.caption)
+                    .foregroundStyle(.orange)
+            } else {
+                HStack(spacing: 6) {
+                    Image(systemName: "hand.tap")
+                    Text("タップで答えを表示")
+                }
+                .font(.caption2.bold())
+                .foregroundStyle(.indigo.opacity(0.8))
+                .padding(.top, 4)
+            }
+        }
+        .padding(.vertical, 28)
+        .padding(.horizontal, 14)
+        .frame(maxWidth: .infinity)
+        .frame(minHeight: 260)
+        .background(RoundedRectangle(cornerRadius: 18).fill(Color.white.opacity(0.9)))
+        .overlay(swipeHint.allowsHitTesting(false))
+        .offset(x: dragOffset.width, y: dragOffset.height)
+        .rotationEffect(.degrees(Double(dragOffset.width) / 22))
+        .contentShape(Rectangle())
+        .onTapGesture {
+            withAnimation(.easeInOut(duration: 0.18)) {
+                showAnswer.toggle()
+            }
+        }
+        .gesture(swipeGesture)
+    }
+
+    /// ⭕️ / ❌ fades in on the card as it is dragged, so the direction is
+    /// unmistakable while the finger is still down.
+    @ViewBuilder
+    private var swipeHint: some View {
+        let progress = min(abs(dragOffset.width) / 60, 1.0)
+        if progress > 0.05 {
+            let isRight = dragOffset.width > 0
+            VStack {
+                HStack {
+                    if isRight { Spacer() }
+                    Text(isRight ? "⭕️" : "❌")
+                        .font(.system(size: 44))
+                        .opacity(Double(progress))
+                        .padding(16)
+                    if !isRight { Spacer() }
+                }
+                Spacer()
+            }
+            .animation(.easeOut(duration: 0.1), value: dragOffset)
+        }
+    }
+
+    /// The card follows the finger freely in every direction; only the
+    /// horizontal distance at release decides ⭕️ (right) / ❌ (left).
+    private var swipeGesture: some Gesture {
+        DragGesture(minimumDistance: 10)
+            .onChanged { value in
+                guard !isFlyingOff else { return }
+                dragOffset = value.translation
+            }
+            .onEnded { value in
+                guard !isFlyingOff else { return }
+                let threshold: CGFloat = 60
+                if value.translation.width > threshold {
+                    flyOff(direction: 1) { mark(known: true) }
+                } else if value.translation.width < -threshold {
+                    flyOff(direction: -1) { mark(known: false) }
+                } else {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                        dragOffset = .zero
+                    }
+                }
+            }
+    }
+
+    private func flyOff(direction: CGFloat, completion: @escaping () -> Void) {
+        isFlyingOff = true
+        withAnimation(.easeOut(duration: 0.22)) {
+            dragOffset = CGSize(width: direction * 700, height: dragOffset.height)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.22) {
+            var t = Transaction()
+            t.disablesAnimations = true
+            withTransaction(t) {
+                dragOffset = .zero
+                completion()
+                isFlyingOff = false
+            }
+        }
+    }
+
+    private func mark(known: Bool) {
+        guard let w = current else { return }
+        results[w.id] = known
+        if !known {
+            // ❌ goes straight into 復習単語.
+            store.addToWordReview(w.id)
+        }
+        showAnswer = false
+        index += 1
+    }
+
+    // MARK: Summary — every word with a tick for 復習単語
+
+    private var knownCount: Int { results.values.filter { $0 }.count }
+    private var unknownCount: Int { results.values.filter { !$0 }.count }
+
+    private var summary: some View {
+        VStack(spacing: 0) {
+            VStack(spacing: 6) {
+                Text("終了！")
+                    .font(.title3.bold())
+                HStack(spacing: 16) {
+                    Text("⭕️ \(knownCount)")
+                    Text("❌ \(unknownCount)")
+                }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                Text("チェックを入れた単語が復習単語に入ります")
+                    .font(.caption2)
+                    .foregroundStyle(.tertiary)
+            }
+            .padding(.vertical, 10)
+
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(words) { w in
+                        summaryRow(w)
+                        Divider().opacity(0.4)
+                    }
+                }
+                .background(RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.85)))
+                .padding(.horizontal, 16)
+            }
+
+            HStack(spacing: 12) {
+                Button {
+                    restart()
+                } label: {
+                    Label("もう一度", systemImage: "arrow.counterclockwise")
+                        .font(.subheadline.bold())
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .background(Capsule().fill(Color.white.opacity(0.85)))
+                        .foregroundStyle(.indigo)
+                }
+                .buttonStyle(.plain)
+                Button {
+                    onExit()
+                } label: {
+                    Label("メニューへ", systemImage: "list.bullet")
+                        .font(.subheadline.bold())
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .background(Capsule().fill(Color.indigo))
+                        .foregroundStyle(.white)
+                }
+                .buttonStyle(.plain)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+        }
+    }
+
+    private func summaryRow(_ w: RankedWord) -> some View {
+        let inReview = store.isInWordReview(w.id)
+        let result = results[w.id]
+        return HStack(spacing: 8) {
+            Button {
+                store.toggleWordReview(w.id)
+            } label: {
+                Image(systemName: inReview ? "checkmark.square.fill" : "square")
+                    .font(.system(size: 20))
+                    .foregroundStyle(inReview ? .indigo : .secondary)
+                    .frame(width: 28)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            Text(w.japanese)
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            Text(w.english)
+                .fontWeight(.semibold)
+                .foregroundStyle(.indigo)
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .frame(width: 130, alignment: .leading)
+            Text(result.map { $0 ? "⭕️" : "❌" } ?? "")
+                .frame(width: 24)
+        }
+        .font(.system(size: 13))
+        .padding(.horizontal, 12)
+        .padding(.vertical, 6)
+        .background(inReview ? Color.yellow.opacity(0.35) : Color.clear)
+    }
+
+    private func restart() {
+        index = 0
+        results = [:]
+        showAnswer = false
+        dragOffset = .zero
     }
 }
 

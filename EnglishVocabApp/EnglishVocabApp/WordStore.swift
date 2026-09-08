@@ -81,11 +81,104 @@ final class WordStore: ObservableObject {
         return words.first { $0.word.trimmingCharacters(in: .whitespaces).lowercased() == key }
     }
 
+    // MARK: - 単語復習 (swipe flashcards over the frequency list)
+
+    /// How many words 今日の単語 serves each day.
+    static let wordReviewDailyCount = 100
+    /// Page size of 全部の単語 (3,000 at once would freeze the screen).
+    static let wordReviewPageSize = 500
+    /// 復習単語 entries drop out automatically this many days after being added.
+    private static let wordReviewLifetimeDays = 3
+
+    private struct WordReviewEntry: Codable {
+        let id: Int
+        let addedAt: Date
+    }
+
+    /// RankedWord ids the user swiped ❌ (or ticked) in 単語復習, with the
+    /// time each was added. Entries older than 3 days are purged on launch
+    /// and ignored when read.
+    @Published private(set) var wordReviewAdded: [Int: Date] = [:]
+
+    private let wordReviewURL: URL = {
+        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return docs.appendingPathComponent("word_review.json")
+    }()
+
+    private var wordReviewCutoff: Date {
+        Calendar.current.date(byAdding: .day, value: -WordStore.wordReviewLifetimeDays, to: Date()) ?? .distantPast
+    }
+
+    func isInWordReview(_ id: Int) -> Bool {
+        guard let added = wordReviewAdded[id] else { return false }
+        return added >= wordReviewCutoff
+    }
+
+    func addToWordReview(_ id: Int) {
+        guard !isInWordReview(id) else { return }
+        wordReviewAdded[id] = Date()
+        saveWordReview()
+    }
+
+    func removeFromWordReview(_ id: Int) {
+        guard wordReviewAdded.removeValue(forKey: id) != nil else { return }
+        saveWordReview()
+    }
+
+    func toggleWordReview(_ id: Int) {
+        if isInWordReview(id) {
+            removeFromWordReview(id)
+        } else {
+            addToWordReview(id)
+        }
+    }
+
+    /// 今日の単語: 100 words picked at random from the frequency list, fixed
+    /// for the day and re-drawn at midnight.
+    var todaysWordReview: [RankedWord] {
+        Array(rankedWords.dailyShuffled().prefix(WordStore.wordReviewDailyCount))
+    }
+
+    /// 復習単語: the words swiped ❌ / ticked within the last 3 days, in the
+    /// order they sit in the frequency list.
+    var wordReviewWords: [RankedWord] {
+        rankedWords.filter { isInWordReview($0.id) }
+    }
+
+    /// 全部の単語, reshuffled once a day, sliced 500 at a time.
+    var allWordReviewShuffled: [RankedWord] {
+        rankedWords.dailyShuffled()
+    }
+
+    private func loadWordReview() {
+        guard FileManager.default.fileExists(atPath: wordReviewURL.path) else { return }
+        if let data = try? Data(contentsOf: wordReviewURL),
+           let entries = try? JSONDecoder().decode([WordReviewEntry].self, from: data) {
+            let cutoff = wordReviewCutoff
+            var dict: [Int: Date] = [:]
+            for e in entries where e.addedAt >= cutoff {
+                dict[e.id] = e.addedAt
+            }
+            wordReviewAdded = dict
+            if dict.count != entries.count { saveWordReview() }   // drop expired
+        }
+    }
+
+    private func saveWordReview() {
+        let entries = wordReviewAdded
+            .map { WordReviewEntry(id: $0.key, addedAt: $0.value) }
+            .sorted { $0.addedAt < $1.addedAt }
+        if let data = try? JSONEncoder().encode(entries) {
+            try? data.write(to: wordReviewURL, options: .atomic)
+        }
+    }
+
     init() {
         load()
         loadStudyLogs()
         loadGrammarAnswers()
         loadRankedMarks()
+        loadWordReview()
         // Drop any words that were retired from the seed list (e.g. the
         // Singlish set the user asked to remove). Runs every launch so
         // newly-retired words are scrubbed without manual user action.
