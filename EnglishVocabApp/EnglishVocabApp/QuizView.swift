@@ -1746,15 +1746,28 @@ struct WordReviewSessionView: View {
 
     @EnvironmentObject var store: WordStore
 
+    /// What the card is showing. A single tap steps through these in order
+    /// and wraps: 単語 → 訳 → カードの内容 → 単語. Only single taps are used,
+    /// so nothing has to wait on a double-tap timer and every switch is
+    /// immediate.
+    private enum CardStage {
+        case front, answer, detail
+
+        var next: CardStage {
+            switch self {
+            case .front:  return .answer
+            case .answer: return .detail
+            case .detail: return .front
+            }
+        }
+    }
+
     @State private var index: Int = 0
-    @State private var showAnswer: Bool = false
+    @State private var stage: CardStage = .front
     /// RankedWord id → true (⭕️) / false (❌) for cards already swiped.
     @State private var results: [Int: Bool] = [:]
     @State private var dragOffset: CGSize = .zero
     @State private var isFlyingOff: Bool = false
-    /// Double tap swaps the card over to the word's own contents; a single
-    /// tap swaps it back. Kept inline (not a sheet) so switching is instant.
-    @State private var showDetail: Bool = false
 
     private var isFinished: Bool { index >= words.count }
     private var current: RankedWord? { isFinished ? nil : words[index] }
@@ -1824,7 +1837,7 @@ struct WordReviewSessionView: View {
                 .font(.caption.bold())
                 .foregroundStyle(.secondary)
 
-            if showDetail {
+            if stage == .detail {
                 detailBody(w)
             } else {
                 Text(front)
@@ -1834,7 +1847,7 @@ struct WordReviewSessionView: View {
                     .lineLimit(3)
                     .padding(.horizontal, 8)
 
-                if showAnswer {
+                if stage == .answer {
                     Divider().padding(.horizontal, 24)
                     HStack(spacing: 8) {
                         Text(back)
@@ -1862,18 +1875,9 @@ struct WordReviewSessionView: View {
                     Text(w.stars)
                         .font(.caption)
                         .foregroundStyle(.orange)
+                    tapHint("もう一度タップでカードの内容")
                 } else {
-                    VStack(spacing: 3) {
-                        HStack(spacing: 6) {
-                            Image(systemName: "hand.tap")
-                            Text("タップで答えを表示")
-                        }
-                        Text("2回タップでカードの内容")
-                            .foregroundStyle(.secondary)
-                    }
-                    .font(.caption2.bold())
-                    .foregroundStyle(.indigo.opacity(0.8))
-                    .padding(.top, 4)
+                    tapHint("タップで答えを表示")
                 }
             }
         }
@@ -1886,21 +1890,22 @@ struct WordReviewSessionView: View {
         .offset(x: dragOffset.width, y: dragOffset.height)
         .rotationEffect(.degrees(Double(dragOffset.width) / 22))
         .contentShape(Rectangle())
-        // Double tap → the word's own card contents, rendered right here so
-        // the switch is instant. Must be attached before the single-tap
-        // gesture for SwiftUI to tell the two apart.
-        .onTapGesture(count: 2) {
-            showDetail = true
-        }
+        // One tap steps to the next stage. No animation, and no double-tap
+        // gesture to wait on, so the switch lands the moment the finger lifts.
         .onTapGesture {
-            // No animation: the user asked for the fastest possible switch.
-            if showDetail {
-                showDetail = false
-            } else {
-                showAnswer.toggle()
-            }
+            stage = stage.next
         }
         .gesture(swipeGesture)
+    }
+
+    private func tapHint(_ text: String) -> some View {
+        HStack(spacing: 6) {
+            Image(systemName: "hand.tap")
+            Text(text)
+        }
+        .font(.caption2.bold())
+        .foregroundStyle(.indigo.opacity(0.8))
+        .padding(.top, 4)
     }
 
     /// The word's own card contents, drawn inline instead of in a sheet so
@@ -1968,7 +1973,7 @@ struct WordReviewSessionView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
 
-            Text("タップで戻る")
+            Text("タップで単語に戻る")
                 .font(.caption2.bold())
                 .foregroundStyle(.indigo.opacity(0.7))
                 .padding(.top, 2)
@@ -2063,8 +2068,7 @@ struct WordReviewSessionView: View {
             // ❌ goes straight into 復習単語.
             store.addToWordReview(w.id)
         }
-        showAnswer = false
-        showDetail = false
+        stage = .front
         index += 1
     }
 
@@ -2166,8 +2170,7 @@ struct WordReviewSessionView: View {
     private func restart() {
         index = 0
         results = [:]
-        showAnswer = false
-        showDetail = false
+        stage = .front
         dragOffset = .zero
     }
 }
