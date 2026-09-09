@@ -1542,8 +1542,9 @@ struct WordReviewSessionView: View {
     @State private var results: [Int: Bool] = [:]
     @State private var dragOffset: CGSize = .zero
     @State private var isFlyingOff: Bool = false
-    /// Word whose full card the user opened via 「カードを見る」.
-    @State private var detailRanked: RankedWord? = nil
+    /// Double tap swaps the card over to the word's own contents; a single
+    /// tap swaps it back. Kept inline (not a sheet) so switching is instant.
+    @State private var showDetail: Bool = false
 
     private var isFinished: Bool { index >= words.count }
     private var current: RankedWord? { isFinished ? nil : words[index] }
@@ -1573,17 +1574,6 @@ struct WordReviewSessionView: View {
                 card(w)
                     .padding(.horizontal, 20)
                 Spacer(minLength: 8)
-            }
-        }
-        // `.sheet(item:)` rather than `isPresented` so the first tap already
-        // has the word committed and opens the right card.
-        .sheet(item: $detailRanked) { w in
-            if let registered = store.registeredWord(for: w) {
-                WordDetailSheet(word: registered)
-                    .environmentObject(store)
-            } else {
-                RankedWordCard(word: w)
-                    .environmentObject(store)
             }
         }
     }
@@ -1624,68 +1614,57 @@ struct WordReviewSessionView: View {
                 .font(.caption.bold())
                 .foregroundStyle(.secondary)
 
-            Text(front)
-                .font(.system(size: enFront ? 30 : 26, weight: .bold))
-                .multilineTextAlignment(.center)
-                .minimumScaleFactor(0.6)
-                .lineLimit(3)
-                .padding(.horizontal, 8)
-
-            // Straight to the word's own card. Sits directly under the word;
-            // being a Button, its tap wins over the card's reveal gesture.
-            Button {
-                detailRanked = w
-            } label: {
-                HStack(spacing: 4) {
-                    Image(systemName: "rectangle.stack")
-                        .font(.system(size: 12))
-                    Text("カードを見る")
-                        .font(.caption.bold())
-                }
-                .foregroundStyle(.indigo)
-                .padding(.horizontal, 14)
-                .padding(.vertical, 6)
-                .background(Capsule().fill(Color.indigo.opacity(0.12)))
-                .contentShape(Capsule())
-            }
-            .buttonStyle(.plain)
-
-            if showAnswer {
-                Divider().padding(.horizontal, 24)
-                HStack(spacing: 8) {
-                    Text(back)
-                        .font(.system(size: enFront ? 22 : 26, weight: .semibold))
-                        .foregroundStyle(.indigo)
-                        .multilineTextAlignment(.center)
-                        .minimumScaleFactor(0.6)
-                        .lineLimit(3)
-                    Button {
-                        SpeechManager.shared.speak(w.english)
-                    } label: {
-                        Image(systemName: "speaker.wave.2.fill")
-                            .font(.system(size: 16))
-                            .foregroundStyle(.indigo)
-                    }
-                    .buttonStyle(.plain)
-                }
-                if !w.gloss.isEmpty {
-                    Text(w.gloss)
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 12)
-                }
-                Text(w.stars)
-                    .font(.caption)
-                    .foregroundStyle(.orange)
+            if showDetail {
+                detailBody(w)
             } else {
-                HStack(spacing: 6) {
-                    Image(systemName: "hand.tap")
-                    Text("タップで答えを表示")
+                Text(front)
+                    .font(.system(size: enFront ? 30 : 26, weight: .bold))
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(3)
+                    .padding(.horizontal, 8)
+
+                if showAnswer {
+                    Divider().padding(.horizontal, 24)
+                    HStack(spacing: 8) {
+                        Text(back)
+                            .font(.system(size: enFront ? 22 : 26, weight: .semibold))
+                            .foregroundStyle(.indigo)
+                            .multilineTextAlignment(.center)
+                            .minimumScaleFactor(0.6)
+                            .lineLimit(3)
+                        Button {
+                            SpeechManager.shared.speak(w.english)
+                        } label: {
+                            Image(systemName: "speaker.wave.2.fill")
+                                .font(.system(size: 16))
+                                .foregroundStyle(.indigo)
+                        }
+                        .buttonStyle(.plain)
+                    }
+                    if !w.gloss.isEmpty {
+                        Text(w.gloss)
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 12)
+                    }
+                    Text(w.stars)
+                        .font(.caption)
+                        .foregroundStyle(.orange)
+                } else {
+                    VStack(spacing: 3) {
+                        HStack(spacing: 6) {
+                            Image(systemName: "hand.tap")
+                            Text("タップで答えを表示")
+                        }
+                        Text("2回タップでカードの内容")
+                            .foregroundStyle(.secondary)
+                    }
+                    .font(.caption2.bold())
+                    .foregroundStyle(.indigo.opacity(0.8))
+                    .padding(.top, 4)
                 }
-                .font(.caption2.bold())
-                .foregroundStyle(.indigo.opacity(0.8))
-                .padding(.top, 4)
             }
         }
         .padding(.vertical, 28)
@@ -1697,12 +1676,113 @@ struct WordReviewSessionView: View {
         .offset(x: dragOffset.width, y: dragOffset.height)
         .rotationEffect(.degrees(Double(dragOffset.width) / 22))
         .contentShape(Rectangle())
+        // Double tap → the word's own card contents, rendered right here so
+        // the switch is instant. Must be attached before the single-tap
+        // gesture for SwiftUI to tell the two apart.
+        .onTapGesture(count: 2) {
+            showDetail = true
+        }
         .onTapGesture {
-            withAnimation(.easeInOut(duration: 0.18)) {
+            // No animation: the user asked for the fastest possible switch.
+            if showDetail {
+                showDetail = false
+            } else {
                 showAnswer.toggle()
             }
         }
         .gesture(swipeGesture)
+    }
+
+    /// The word's own card contents, drawn inline instead of in a sheet so
+    /// double tap → back is instant and the swipe keeps working on top of it.
+    /// Everything is capped to a couple of lines so the card stays one fixed
+    /// size and never needs its own scroll view (which would eat the swipe).
+    @ViewBuilder
+    private func detailBody(_ w: RankedWord) -> some View {
+        let registered = store.registeredWord(for: w)
+        let meaning = trimmedOrNil(registered?.definitionJapanese) ?? w.japanese
+        let definition = trimmedOrNil(registered?.definitionEnglish) ?? w.gloss
+        VStack(spacing: 9) {
+            HStack(spacing: 8) {
+                Text(w.english)
+                    .font(.system(size: 26, weight: .bold))
+                    .minimumScaleFactor(0.6)
+                    .lineLimit(2)
+                Button {
+                    SpeechManager.shared.speak(w.english)
+                } label: {
+                    Image(systemName: "speaker.wave.2.fill")
+                        .font(.system(size: 16))
+                        .foregroundStyle(.indigo)
+                }
+                .buttonStyle(.plain)
+            }
+            if let ipa = trimmedOrNil(registered?.ipa) {
+                Text(ipa)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
+            Text(meaning)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(.indigo)
+                .multilineTextAlignment(.center)
+                .lineLimit(2)
+            Text(w.stars)
+                .font(.caption)
+                .foregroundStyle(.orange)
+
+            if !definition.isEmpty {
+                detailSection("英語の定義", [definition])
+            }
+            if let uses = registered?.useCases, !uses.isEmpty {
+                detailSection("使う場面", Array(uses.prefix(2)))
+            }
+            if let examples = registered?.examples, !examples.isEmpty {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("例文")
+                        .font(.caption2.bold())
+                        .foregroundStyle(.tertiary)
+                    ForEach(Array(examples.prefix(2))) { ex in
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text(ex.english)
+                                .font(.footnote)
+                                .lineLimit(2)
+                            Text(ex.japanese)
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
+                                .lineLimit(2)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+
+            Text("タップで戻る")
+                .font(.caption2.bold())
+                .foregroundStyle(.indigo.opacity(0.7))
+                .padding(.top, 2)
+        }
+    }
+
+    private func trimmedOrNil(_ s: String?) -> String? {
+        guard let t = s?.trimmingCharacters(in: .whitespacesAndNewlines), !t.isEmpty else { return nil }
+        return t
+    }
+
+    private func detailSection(_ title: String, _ lines: [String]) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(title)
+                .font(.caption2.bold())
+                .foregroundStyle(.tertiary)
+            ForEach(Array(lines.enumerated()), id: \.offset) { _, line in
+                Text(line)
+                    .font(.footnote)
+                    .lineLimit(2)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     /// ⭕️ / ❌ fades in on the card as it is dragged, so the direction is
@@ -1774,6 +1854,7 @@ struct WordReviewSessionView: View {
             store.addToWordReview(w.id)
         }
         showAnswer = false
+        showDetail = false
         index += 1
     }
 
@@ -1876,6 +1957,7 @@ struct WordReviewSessionView: View {
         index = 0
         results = [:]
         showAnswer = false
+        showDetail = false
         dragOffset = .zero
     }
 }
