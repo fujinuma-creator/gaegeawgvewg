@@ -1472,8 +1472,8 @@ struct WordReviewView: View {
                     icon: "arrow.counterclockwise.circle.fill",
                     title: "復習単語",
                     subtitle: store.wordReviewWords.isEmpty
-                        ? "❌にした単語がここに入ります（3日でリセット）"
-                        : "\(store.wordReviewWords.count)語・❌にした単語（3日でリセット）",
+                        ? "チェックを入れた単語がここに入ります（3日でリセット）"
+                        : "\(store.wordReviewWords.count)語・チェックした単語（3日でリセット）",
                     enabled: !store.wordReviewWords.isEmpty
                 ) {
                     Button { start(.review) } label: {
@@ -1613,7 +1613,7 @@ struct WordReviewListView: View {
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                         if isReviewDeck {
-                            Text("単語復習で❌にした単語がここに入ります（3日でリセット）")
+                            Text("チェックを入れた単語がここに入ります（3日でリセット）")
                                 .font(.caption)
                                 .foregroundStyle(.tertiary)
                                 .multilineTextAlignment(.center)
@@ -1734,10 +1734,10 @@ struct WordReviewListView: View {
 
 /// One 単語復習 session: swipe through `words` one card at a time.
 /// - tap the card → show / hide the translation
-/// - swipe right → ⭕️ (知っている), next card
-/// - swipe left  → ❌, the word goes straight into 復習単語, next card
-/// When the last card is done, every word is listed with a tick that adds
-/// it to / removes it from 復習単語.
+/// - tap the card → 単語 → 訳 → カードの内容 → 単語
+/// - swipe right → 進む (next card), swipe left → 戻る (previous card)
+/// Swiping right past the last card ends the session: every word is then
+/// listed with a tick that adds it to / removes it from 復習単語.
 struct WordReviewSessionView: View {
     let title: String
     let words: [RankedWord]
@@ -1764,8 +1764,6 @@ struct WordReviewSessionView: View {
 
     @State private var index: Int = 0
     @State private var stage: CardStage = .front
-    /// RankedWord id → true (⭕️) / false (❌) for cards already swiped.
-    @State private var results: [Int: Bool] = [:]
     @State private var dragOffset: CGSize = .zero
     @State private var isFlyingOff: Bool = false
 
@@ -2000,30 +1998,28 @@ struct WordReviewSessionView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
     }
 
-    /// ⭕️ / ❌ fades in on the card as it is dragged, so the direction is
-    /// unmistakable while the finger is still down.
+    /// A chevron fades in on the card as it is dragged, so it's clear which
+    /// way the card is about to move.
     @ViewBuilder
     private var swipeHint: some View {
         let progress = min(abs(dragOffset.width) / 60, 1.0)
         if progress > 0.05 {
             let isRight = dragOffset.width > 0
-            VStack {
-                HStack {
-                    if isRight { Spacer() }
-                    Text(isRight ? "⭕️" : "❌")
-                        .font(.system(size: 44))
-                        .opacity(Double(progress))
-                        .padding(16)
-                    if !isRight { Spacer() }
-                }
-                Spacer()
+            HStack {
+                if isRight { Spacer() }
+                Image(systemName: isRight ? "chevron.right.circle.fill" : "chevron.left.circle.fill")
+                    .font(.system(size: 48))
+                    .foregroundStyle(.indigo.opacity(0.55 * Double(progress)))
+                    .padding(.horizontal, 18)
+                if !isRight { Spacer() }
             }
+            .frame(maxWidth: .infinity)
             .animation(.easeOut(duration: 0.1), value: dragOffset)
         }
     }
 
     /// The card follows the finger freely in every direction; only the
-    /// horizontal distance at release decides ⭕️ (right) / ❌ (left).
+    /// horizontal distance at release decides 進む (right) / 戻る (left).
     private var swipeGesture: some Gesture {
         DragGesture(minimumDistance: 10)
             .onChanged { value in
@@ -2034,9 +2030,9 @@ struct WordReviewSessionView: View {
                 guard !isFlyingOff else { return }
                 let threshold: CGFloat = 60
                 if value.translation.width > threshold {
-                    flyOff(direction: 1) { mark(known: true) }
-                } else if value.translation.width < -threshold {
-                    flyOff(direction: -1) { mark(known: false) }
+                    flyOff(direction: 1) { nextCard() }
+                } else if value.translation.width < -threshold, index > 0 {
+                    flyOff(direction: -1) { prevCard() }
                 } else {
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
                         dragOffset = .zero
@@ -2061,33 +2057,29 @@ struct WordReviewSessionView: View {
         }
     }
 
-    private func mark(known: Bool) {
-        guard let w = current else { return }
-        results[w.id] = known
-        if !known {
-            // ❌ goes straight into 復習単語.
-            store.addToWordReview(w.id)
-        }
+    /// Right swipe. Past the last card this lands on the summary, where the
+    /// whole deck can be ticked into 復習単語.
+    private func nextCard() {
         stage = .front
         index += 1
     }
 
-    // MARK: Summary — every word with a tick for 復習単語
+    /// Left swipe. Stops at the first card.
+    private func prevCard() {
+        stage = .front
+        index = max(index - 1, 0)
+    }
 
-    private var knownCount: Int { results.values.filter { $0 }.count }
-    private var unknownCount: Int { results.values.filter { !$0 }.count }
+    // MARK: Summary — every word with a tick for 復習単語
 
     private var summary: some View {
         VStack(spacing: 0) {
             VStack(spacing: 6) {
                 Text("終了！")
                     .font(.title3.bold())
-                HStack(spacing: 16) {
-                    Text("⭕️ \(knownCount)")
-                    Text("❌ \(unknownCount)")
-                }
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+                Text("\(words.count)語")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
                 Text("チェックを入れた単語が復習単語に入ります")
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
@@ -2136,7 +2128,6 @@ struct WordReviewSessionView: View {
 
     private func summaryRow(_ w: RankedWord) -> some View {
         let inReview = store.isInWordReview(w.id)
-        let result = results[w.id]
         return HStack(spacing: 8) {
             Button {
                 store.toggleWordReview(w.id)
@@ -2158,8 +2149,10 @@ struct WordReviewSessionView: View {
                 .lineLimit(1)
                 .truncationMode(.tail)
                 .frame(width: 130, alignment: .leading)
-            Text(result.map { $0 ? "⭕️" : "❌" } ?? "")
-                .frame(width: 24)
+            Text(w.stars)
+                .font(.caption2)
+                .foregroundStyle(.orange)
+                .frame(width: 52, alignment: .trailing)
         }
         .font(.system(size: 13))
         .padding(.horizontal, 12)
@@ -2169,7 +2162,6 @@ struct WordReviewSessionView: View {
 
     private func restart() {
         index = 0
-        results = [:]
         stage = .front
         dragOffset = .zero
     }
