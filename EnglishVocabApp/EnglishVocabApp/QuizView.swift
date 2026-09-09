@@ -1334,10 +1334,14 @@ enum WordReviewDirection: String, CaseIterable, Identifiable {
 }
 
 /// The pool a 単語復習 session draws from. Chosen on the menu screen.
-enum WordReviewSource: Hashable {
+enum WordReviewSource: Hashable, Identifiable {
     case today
     case review
     case all(page: Int)
+
+    /// Unique per deck (and per page of 全部の単語) so it can drive
+    /// `.sheet(item:)` for the list view.
+    var id: String { title }
 
     var title: String {
         switch self {
@@ -1363,8 +1367,8 @@ struct WordReviewView: View {
 
     @AppStorage("wordReview.direction") private var directionRaw: String = WordReviewDirection.jaToEn.rawValue
     @State private var activeSource: WordReviewSource? = nil
-    /// 復習単語 shown as a plain list rather than as a swipe session.
-    @State private var showReviewList = false
+    /// The deck currently being shown as a plain list rather than swiped.
+    @State private var listSource: WordReviewSource? = nil
     /// Snapshot of the words taken when the session started, so the list
     /// doesn't shift underneath the user (e.g. un-ticking a word on the
     /// summary screen of a 復習単語 session must not remove its row).
@@ -1444,16 +1448,27 @@ struct WordReviewView: View {
                 .padding(14)
                 .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
 
-                menuRow(
+                // Each deck offers the same two things: swipe through it
+                // (学習する) or read it as a list (一覧).
+                deckCard(
                     icon: "sun.max.fill",
                     title: "今日の単語",
                     subtitle: "\(store.todaysWordReview.count)語・毎日ランダムに入れ替わります",
                     enabled: !store.todaysWordReview.isEmpty
                 ) {
-                    start(.today)
+                    Button { start(.today) } label: {
+                        actionPill("学習する", "play.fill", filled: true)
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(store.todaysWordReview.isEmpty)
+                    Button { listSource = .today } label: {
+                        actionPill("一覧", "list.bullet", filled: false)
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(store.todaysWordReview.isEmpty)
                 }
 
-                menuRow(
+                deckCard(
                     icon: "arrow.counterclockwise.circle.fill",
                     title: "復習単語",
                     subtitle: store.wordReviewWords.isEmpty
@@ -1461,109 +1476,129 @@ struct WordReviewView: View {
                         : "\(store.wordReviewWords.count)語・❌にした単語（3日でリセット）",
                     enabled: !store.wordReviewWords.isEmpty
                 ) {
-                    start(.review)
-                }
-
-                // Read the same set as a list instead of swiping through it.
-                Button {
-                    showReviewList = true
-                } label: {
-                    HStack(spacing: 8) {
-                        Image(systemName: "list.bullet.rectangle")
-                            .font(.system(size: 14))
-                        Text("復習単語の一覧を見る")
-                            .font(.subheadline.bold())
-                        Spacer()
-                        Text("\(store.wordReviewWords.count)語")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
-                        Image(systemName: "chevron.right")
-                            .font(.caption2.bold())
-                            .foregroundStyle(.secondary)
+                    Button { start(.review) } label: {
+                        actionPill("学習する", "play.fill", filled: true)
                     }
-                    .foregroundStyle(.indigo)
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 11)
-                    .frame(maxWidth: .infinity)
-                    .background(RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.7)))
-                    .contentShape(Rectangle())
+                    .buttonStyle(.plain)
+                    .disabled(store.wordReviewWords.isEmpty)
+                    Button { listSource = .review } label: {
+                        actionPill("一覧", "list.bullet", filled: false)
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(store.wordReviewWords.isEmpty)
                 }
-                .buttonStyle(.plain)
 
-                Menu {
-                    ForEach(0..<pageCount, id: \.self) { i in
-                        Button(WordReviewSource.all(page: i).rangeLabel) {
-                            start(.all(page: i))
+                // 全部の単語 needs a page picker on both actions — 3,000 rows
+                // at once would freeze the screen either way.
+                deckCard(
+                    icon: "square.stack.3d.up.fill",
+                    title: "全部の単語",
+                    subtitle: "\(allWords.count)語・500語ずつ選択（順番は毎日ランダム）",
+                    enabled: !allWords.isEmpty
+                ) {
+                    Menu {
+                        ForEach(0..<pageCount, id: \.self) { i in
+                            Button(WordReviewSource.all(page: i).rangeLabel) {
+                                start(.all(page: i))
+                            }
                         }
+                    } label: {
+                        actionPill("学習する", "play.fill", filled: true)
                     }
-                } label: {
-                    menuRowLabel(
-                        icon: "square.stack.3d.up.fill",
-                        title: "全部の単語",
-                        subtitle: "\(allWords.count)語・500語ずつ選択（順番は毎日ランダム）",
-                        trailing: "chevron.down",
-                        enabled: !allWords.isEmpty
-                    )
+                    .disabled(allWords.isEmpty)
+                    Menu {
+                        ForEach(0..<pageCount, id: \.self) { i in
+                            Button(WordReviewSource.all(page: i).rangeLabel) {
+                                listSource = .all(page: i)
+                            }
+                        }
+                    } label: {
+                        actionPill("一覧", "list.bullet", filled: false)
+                    }
+                    .disabled(allWords.isEmpty)
                 }
-                .disabled(allWords.isEmpty)
 
                 Spacer(minLength: 12)
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 16)
         }
-        .sheet(isPresented: $showReviewList) {
-            WordReviewListView()
-                .environmentObject(store)
+        .sheet(item: $listSource) { source in
+            WordReviewListView(
+                title: source.title,
+                words: words(for: source),
+                isReviewDeck: source == .review
+            )
+            .environmentObject(store)
         }
     }
 
-    private func menuRow(icon: String, title: String, subtitle: String, enabled: Bool, action: @escaping () -> Void) -> some View {
-        Button(action: action) {
-            menuRowLabel(icon: icon, title: title, subtitle: subtitle, trailing: "chevron.right", enabled: enabled)
-        }
-        .buttonStyle(.plain)
-        .disabled(!enabled)
-    }
-
-    private func menuRowLabel(icon: String, title: String, subtitle: String, trailing: String, enabled: Bool) -> some View {
-        HStack(spacing: 12) {
-            Image(systemName: icon)
-                .font(.system(size: 22))
-                .foregroundStyle(.indigo)
-                .frame(width: 32)
-            VStack(alignment: .leading, spacing: 3) {
-                Text(title)
-                    .font(.headline)
-                    .foregroundStyle(.primary)
-                Text(subtitle)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.leading)
+    private func deckCard<A: View>(
+        icon: String,
+        title: String,
+        subtitle: String,
+        enabled: Bool,
+        @ViewBuilder actions: () -> A
+    ) -> some View {
+        VStack(alignment: .leading, spacing: 11) {
+            HStack(spacing: 12) {
+                Image(systemName: icon)
+                    .font(.system(size: 22))
+                    .foregroundStyle(.indigo)
+                    .frame(width: 32)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(title)
+                        .font(.headline)
+                        .foregroundStyle(.primary)
+                    Text(subtitle)
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.leading)
+                }
+                Spacer()
             }
-            Spacer()
-            Image(systemName: trailing)
-                .font(.caption.bold())
-                .foregroundStyle(.secondary)
+            HStack(spacing: 10) {
+                actions()
+            }
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
-        .opacity(enabled ? 1 : 0.45)
-        .contentShape(Rectangle())
+        .opacity(enabled ? 1 : 0.5)
+    }
+
+    private func actionPill(_ title: String, _ icon: String, filled: Bool) -> some View {
+        HStack(spacing: 5) {
+            Image(systemName: icon)
+                .font(.system(size: 12))
+            Text(title)
+                .font(.subheadline.bold())
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 9)
+        .background(Capsule().fill(filled ? Color.indigo : Color.indigo.opacity(0.12)))
+        .foregroundStyle(filled ? Color.white : Color.indigo)
+        .contentShape(Capsule())
     }
 }
 
-/// 復習単語 as a plain, compact list: read it top to bottom instead of
-/// swiping through it. Untick a row to drop the word from 復習単語, tap the
-/// English word to open its card.
+/// Any 単語復習 deck as a plain, compact list: read it top to bottom instead
+/// of swiping through it. The tick adds a word to / removes it from 復習単語,
+/// and tapping the English word opens its card.
 struct WordReviewListView: View {
     @EnvironmentObject var store: WordStore
     @Environment(\.dismiss) private var dismiss
 
+    /// Deck title, shown in the navigation bar.
+    let title: String
+    /// The deck's words, snapshotted by the caller.
+    let words: [RankedWord]
+    /// True for 復習単語, which shows the days-left column and can be tidied.
+    let isReviewDeck: Bool
+
     @State private var detailWord: RankedWord? = nil
     /// Snapshot taken on open so unticking a row doesn't make it vanish
-    /// mid-read; refreshed by the 整理する button.
+    /// mid-read; refreshed by the 整理する button (復習単語 only).
     @State private var rows: [RankedWord] = []
 
     var body: some View {
@@ -1574,40 +1609,48 @@ struct WordReviewListView: View {
                         Image(systemName: "tray")
                             .font(.system(size: 44))
                             .foregroundStyle(.secondary)
-                        Text("復習単語はありません")
+                        Text("単語がありません")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
-                        Text("単語復習で❌にした単語がここに入ります（3日でリセット）")
-                            .font(.caption)
-                            .foregroundStyle(.tertiary)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 32)
+                        if isReviewDeck {
+                            Text("単語復習で❌にした単語がここに入ります（3日でリセット）")
+                                .font(.caption)
+                                .foregroundStyle(.tertiary)
+                                .multilineTextAlignment(.center)
+                                .padding(.horizontal, 32)
+                        }
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } else {
-                    ScrollView {
-                        LazyVStack(spacing: 0) {
-                            ForEach(rows) { w in
-                                row(w)
-                                Divider().opacity(0.4)
+                    VStack(spacing: 0) {
+                        header
+                        Divider()
+                        ScrollView {
+                            LazyVStack(spacing: 0) {
+                                ForEach(rows) { w in
+                                    row(w)
+                                    Divider().opacity(0.4)
+                                }
                             }
                         }
                     }
                 }
             }
-            .navigationTitle("復習単語")
+            .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button("整理する") { rows = store.wordReviewWords }
-                        .disabled(rows.count == store.wordReviewWords.count)
+                if isReviewDeck {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button("整理する") { rows = store.wordReviewWords }
+                            .disabled(rows.count == store.wordReviewWords.count)
+                    }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("閉じる") { dismiss() }
                 }
             }
         }
-        .onAppear { rows = store.wordReviewWords }
+        .onAppear { if rows.isEmpty { rows = words } }
         .sheet(item: $detailWord) { w in
             if let registered = store.registeredWord(for: w) {
                 WordDetailSheet(word: registered)
@@ -1619,15 +1662,36 @@ struct WordReviewListView: View {
         }
     }
 
+    private var header: some View {
+        HStack(spacing: 8) {
+            Text("復習")
+                .frame(width: 26)
+            Text("日本語")
+                .frame(maxWidth: .infinity, alignment: .leading)
+            Text("英語")
+                .frame(width: 126, alignment: .leading)
+            Text(isReviewDeck ? "残り" : "頻度")
+                .frame(width: 52, alignment: .trailing)
+        }
+        .font(.caption2.bold())
+        .foregroundStyle(.secondary)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 5)
+        .background(Color.indigo.opacity(0.06))
+    }
+
     private func row(_ w: RankedWord) -> some View {
-        let kept = store.isInWordReview(w.id)
+        let inReview = store.isInWordReview(w.id)
+        // On the 復習単語 page an unticked row is on its way out, so it fades.
+        // On the other pages the tick is simply "add this to 復習単語".
+        let dimmed = isReviewDeck && !inReview
         return HStack(spacing: 8) {
             Button {
                 store.toggleWordReview(w.id)
             } label: {
-                Image(systemName: kept ? "checkmark.square.fill" : "square")
+                Image(systemName: inReview ? "checkmark.square.fill" : "square")
                     .font(.system(size: 19))
-                    .foregroundStyle(kept ? .indigo : .secondary)
+                    .foregroundStyle(inReview ? .indigo : .secondary)
                     .frame(width: 26)
                     .contentShape(Rectangle())
             }
@@ -1648,15 +1712,23 @@ struct WordReviewListView: View {
                     .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
-            Text(store.wordReviewDaysLeft(w.id).map { "あと\($0)日" } ?? "—")
-                .font(.caption2)
-                .foregroundStyle(.secondary)
-                .frame(width: 48, alignment: .trailing)
+            if isReviewDeck {
+                Text(store.wordReviewDaysLeft(w.id).map { "あと\($0)日" } ?? "—")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .frame(width: 52, alignment: .trailing)
+            } else {
+                Text(w.stars)
+                    .font(.caption2)
+                    .foregroundStyle(.orange)
+                    .frame(width: 52, alignment: .trailing)
+            }
         }
         .font(.system(size: 13))
         .padding(.horizontal, 12)
         .padding(.vertical, 6)
-        .opacity(kept ? 1 : 0.4)
+        .background(!isReviewDeck && inReview ? Color.yellow.opacity(0.3) : Color.clear)
+        .opacity(dimmed ? 0.4 : 1)
     }
 }
 
