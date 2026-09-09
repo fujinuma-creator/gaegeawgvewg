@@ -1363,6 +1363,8 @@ struct WordReviewView: View {
 
     @AppStorage("wordReview.direction") private var directionRaw: String = WordReviewDirection.jaToEn.rawValue
     @State private var activeSource: WordReviewSource? = nil
+    /// 復習単語 shown as a plain list rather than as a swipe session.
+    @State private var showReviewList = false
     /// Snapshot of the words taken when the session started, so the list
     /// doesn't shift underneath the user (e.g. un-ticking a word on the
     /// summary screen of a 復習単語 session must not remove its row).
@@ -1462,6 +1464,32 @@ struct WordReviewView: View {
                     start(.review)
                 }
 
+                // Read the same set as a list instead of swiping through it.
+                Button {
+                    showReviewList = true
+                } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "list.bullet.rectangle")
+                            .font(.system(size: 14))
+                        Text("復習単語の一覧を見る")
+                            .font(.subheadline.bold())
+                        Spacer()
+                        Text("\(store.wordReviewWords.count)語")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                        Image(systemName: "chevron.right")
+                            .font(.caption2.bold())
+                            .foregroundStyle(.secondary)
+                    }
+                    .foregroundStyle(.indigo)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 11)
+                    .frame(maxWidth: .infinity)
+                    .background(RoundedRectangle(cornerRadius: 12).fill(Color.white.opacity(0.7)))
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+
                 Menu {
                     ForEach(0..<pageCount, id: \.self) { i in
                         Button(WordReviewSource.all(page: i).rangeLabel) {
@@ -1483,6 +1511,10 @@ struct WordReviewView: View {
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 16)
+        }
+        .sheet(isPresented: $showReviewList) {
+            WordReviewListView()
+                .environmentObject(store)
         }
     }
 
@@ -1519,6 +1551,112 @@ struct WordReviewView: View {
         .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.82)))
         .opacity(enabled ? 1 : 0.45)
         .contentShape(Rectangle())
+    }
+}
+
+/// 復習単語 as a plain, compact list: read it top to bottom instead of
+/// swiping through it. Untick a row to drop the word from 復習単語, tap the
+/// English word to open its card.
+struct WordReviewListView: View {
+    @EnvironmentObject var store: WordStore
+    @Environment(\.dismiss) private var dismiss
+
+    @State private var detailWord: RankedWord? = nil
+    /// Snapshot taken on open so unticking a row doesn't make it vanish
+    /// mid-read; refreshed by the 整理する button.
+    @State private var rows: [RankedWord] = []
+
+    var body: some View {
+        NavigationStack {
+            Group {
+                if rows.isEmpty {
+                    VStack(spacing: 10) {
+                        Image(systemName: "tray")
+                            .font(.system(size: 44))
+                            .foregroundStyle(.secondary)
+                        Text("復習単語はありません")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        Text("単語復習で❌にした単語がここに入ります（3日でリセット）")
+                            .font(.caption)
+                            .foregroundStyle(.tertiary)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 32)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    ScrollView {
+                        LazyVStack(spacing: 0) {
+                            ForEach(rows) { w in
+                                row(w)
+                                Divider().opacity(0.4)
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationTitle("復習単語")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("整理する") { rows = store.wordReviewWords }
+                        .disabled(rows.count == store.wordReviewWords.count)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("閉じる") { dismiss() }
+                }
+            }
+        }
+        .onAppear { rows = store.wordReviewWords }
+        .sheet(item: $detailWord) { w in
+            if let registered = store.registeredWord(for: w) {
+                WordDetailSheet(word: registered)
+                    .environmentObject(store)
+            } else {
+                RankedWordCard(word: w)
+                    .environmentObject(store)
+            }
+        }
+    }
+
+    private func row(_ w: RankedWord) -> some View {
+        let kept = store.isInWordReview(w.id)
+        return HStack(spacing: 8) {
+            Button {
+                store.toggleWordReview(w.id)
+            } label: {
+                Image(systemName: kept ? "checkmark.square.fill" : "square")
+                    .font(.system(size: 19))
+                    .foregroundStyle(kept ? .indigo : .secondary)
+                    .frame(width: 26)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            Text(w.japanese)
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            Button {
+                detailWord = w
+            } label: {
+                Text(w.english)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.indigo)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+                    .frame(width: 126, alignment: .leading)
+                    .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            Text(store.wordReviewDaysLeft(w.id).map { "あと\($0)日" } ?? "—")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+                .frame(width: 48, alignment: .trailing)
+        }
+        .font(.system(size: 13))
+        .padding(.horizontal, 12)
+        .padding(.vertical, 6)
+        .opacity(kept ? 1 : 0.4)
     }
 }
 

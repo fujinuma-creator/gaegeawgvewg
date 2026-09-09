@@ -145,6 +145,17 @@ final class WordStore: ObservableObject {
         rankedWords.filter { isInWordReview($0.id) }
     }
 
+    /// Whole days left before a 復習単語 entry expires (1 = drops out
+    /// tomorrow). Nil when the word isn't in the list.
+    func wordReviewDaysLeft(_ id: Int) -> Int? {
+        guard let added = wordReviewAdded[id], added >= wordReviewCutoff else { return nil }
+        let expiry = Calendar.current.date(
+            byAdding: .day, value: WordStore.wordReviewLifetimeDays, to: added
+        ) ?? added
+        let days = Calendar.current.dateComponents([.day], from: Date(), to: expiry).day ?? 0
+        return max(days + 1, 1)
+    }
+
     /// 全部の単語, reshuffled once a day, sliced 500 at a time.
     var allWordReviewShuffled: [RankedWord] {
         rankedWords.dailyShuffled()
