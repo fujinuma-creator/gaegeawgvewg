@@ -44812,5 +44812,408 @@ B	Agree to disagree, I suppose.	意見の違いを認め合う、ってことか
 A	With people you love, that's the only option.	愛する人とは、それが唯一の選択肢だよ。
 B	And keep calling anyway.	それでも電話し続ける。
 A	And keep calling anyway.	それでも電話し続ける。
+T	👫	兄弟姉妹との年齢差や関係性を話す	雑談	there's a big gap, we didn't get on, closer now, like a second parent, we're friends now
+S	
+A	How much older is your brother?	お兄さんはどのくらい年上？
+B	Nine years. There's a big gap.	9歳。かなり離れてる。
+A	That's a lot. Were you close growing up?	それは大きいね。子どもの頃は仲良かった？
+B	Not really. He was fifteen when I was six. He wasn't interested.	あまり。私が6歳の時、彼は15歳。興味なかったみたい。
+A	That makes sense. Fifteen-year-olds don't want six-year-olds around.	わかるよ。15歳は6歳にそばにいてほしくないよね。
+B	He was more like a second parent. Told me off, drove me places.	第二の親みたいだった。叱って、車で送ってくれて。
+A	And now?	今は？
+B	Now we're friends. Actual friends. The gap doesn't matter anymore.	今は友達。本当の友達。もう年の差は関係ない。
+S	
+A	When did that change?	いつ変わったの？
+B	When I turned twenty-five, I think. Suddenly we were both adults.	25歳になった頃かな。急に2人とも大人になった。
+A	Same problems, same stage.	同じ問題、同じ段階。
+B	Exactly. We talk about mortgages now. Like equals.	そう。今は住宅ローンの話をする。対等に。
+A	That's nice. My sister's two years older. We fought constantly.	いいね。うちの姉は2歳上。ずっと喧嘩してた。
+B	Close in age is worse, I think. Too much competition.	年が近いほうが悪いと思う。競争が多すぎて。
+A	We shared a room until I was fourteen. Enough said.	14歳まで同じ部屋だった。それで十分伝わるでしょ。
+S	
+B	And now?	今は？
+A	Now she's my best friend. Funny how that works.	今は一番の親友。不思議だよね。
+B	Everyone gets there eventually. Just takes a few decades.	みんな最終的にはそうなる。数十年かかるだけ。
+T	📞	親に連絡を取る頻度を話す	雑談	how often do you call, once a week, not enough, she'd like more, guilty
+S	
+A	How often do you call your parents?	両親にはどのくらい電話する？
+B	Once a week. Sunday evening. It's a fixed thing.	週1回。日曜の夜。決まった習慣。
+A	Every Sunday?	毎週日曜？
+B	Every Sunday. If I miss it, my mum assumes I'm dead.	毎週日曜。逃すと、母は私が死んだと思う。
+A	Ha. Mine's the same. Any silence is a crisis.	はは。うちも同じ。沈黙は全部危機。
+B	How often do you call?	そっちはどのくらい？
+A	Not enough. Every two weeks, maybe. And I feel guilty every time.	足りない。2週間に1回くらい。毎回罪悪感がある。
+B	Does she say anything?	お母さんは何か言う？
+A	No. That's worse. She just says "it's nice to hear from you". Quietly.	言わない。それが余計につらい。「声が聞けてうれしいわ」って静かに言うだけ。
+S	
+B	Would once a week be so hard?	週1回はそんなに難しい？
+A	Twenty minutes. No. It's not hard. I just forget.	20分。難しくない。ただ忘れるんだ。
+B	Set a reminder. Sunday, seven o'clock. That's what I did.	リマインダーをセットして。日曜の7時。私はそうした。
+A	You needed a reminder to call your mum?	お母さんに電話するのにリマインダーが必要だった？
+B	For the first year. Now it's a habit. She's happier. I'm less guilty.	最初の1年はね。今は習慣。母は幸せで、私は罪悪感が減った。
+A	Okay. Sunday. Seven.	わかった。日曜。7時。
+S	
+B	She'll be thrilled. Don't tell her it's a reminder.	喜ぶよ。リマインダーだって言わないでね。
+A	Never. As far as she knows, I just thought of her.	絶対に。母が知る限り、ただ思い出しただけ。
+T	🏠	家族と離れて暮らす寂しさを話す	深い話	I miss them, especially at, it hits me, they're getting older, worth it but
+S	
+A	Do you miss home? Living this far away?	故郷が恋しい？ こんなに遠くに住んでて。
+B	Most days, a little. Some days, a lot.	ほとんどの日は少し。時々、すごく。
+A	When does it hit you?	どんな時に来る？
+B	Holidays. Birthdays. When something good happens and I want to tell them in person.	祝日。誕生日。いいことがあって、直接伝えたい時。
+A	And you can't.	それで、できない。
+B	I can call. It's not the same. You can't hug a screen.	電話はできる。同じじゃない。画面は抱きしめられない。
+A	My grandmother says that. "You can't hug a screen."	うちの祖母もそう言う。「画面は抱きしめられない」って。
+B	She's right.	その通りだね。
+S	
+A	Do you think about going back?	戻ることは考える？
+B	Sometimes. Especially now. They're getting older.	時々。特に今は。両親が年を取ってきてる。
+A	That's the hard part.	それが一番つらいところだね。
+B	It is. Every visit, I notice something. Slower steps. More grey.	そう。会うたびに、何かに気づく。歩みが遅くなって、白髪が増えて。
+A	I know that feeling.	その気持ち、わかるよ。
+B	But my life's here. Work, friends, you. It's worth it. But it costs something.	でも私の生活はここ。仕事も、友達も、あなたも。価値はある。でも代償はある。
+A	Everything worth it does.	価値のあるものには、必ず代償がある。
+S	
+B	I'm going home next month. Two weeks. I'm going to just sit in the kitchen.	来月帰る。2週間。ただキッチンに座ってるつもり。
+A	That's the best plan.	それが最高の計画だね。
+B	Sit, eat, listen to my mum complain about the neighbours. Heaven.	座って、食べて、母が隣人の文句を言うのを聞く。天国。
+T	💐	親孝行したいと話す	深い話	I want to do something for them, they gave up so much, it's my turn, take them somewhere, before it's too late
+S	
+A	I want to do something for my parents. Something big.	両親に何かしたい。大きなことを。
+B	Like what?	例えば？
+A	Take them somewhere. They've never been abroad. Not once.	どこかに連れて行く。海外に行ったことがないんだ。一度も。
+B	Really? Never?	本当？ 一度も？
+A	They spent every penny on us. School, university. There was never anything left for them.	全部私たちに使ったから。学校、大学。自分たちのためには何も残らなかった。
+B	So it's your turn.	じゃあ、あなたの番だね。
+A	It's my turn. I've been saving for a year. I want to take them to Italy.	私の番。1年間貯金してた。イタリアに連れて行きたい。
+B	Why Italy?	なんでイタリア？
+A	My mum's talked about it since I was small. She's never said it, but I know she wants to go.	母が私が小さい頃から話してた。口には出さないけど、行きたいのは知ってる。
+S	
+B	Have you told them?	もう伝えた？
+A	Not yet. I want to surprise them. Tickets in an envelope.	まだ。サプライズにしたい。封筒にチケットを入れて。
+B	She's going to cry.	お母さん、泣くね。
+A	She'll cry, then she'll say it's too much, then she'll pack. In that order.	泣いて、それからやりすぎだって言って、それから荷造りする。その順番で。
+B	And your dad?	お父さんは？
+A	He'll say nothing and then buy a guidebook. That's how he shows it.	何も言わずにガイドブックを買う。それが彼の表現方法。
+S	
+B	Do it soon. Before it's too late. That's the only advice.	早めにやって。手遅れになる前に。それだけがアドバイス。
+A	That's exactly why. They're not getting younger. Neither am I.	まさにそれが理由。両親も若返らないし、私も。
+B	Send me a photo from Rome. All three of you.	ローマから写真を送って。3人で。
+A	I will. Probably one where my mum's crying.	送るよ。たぶん母が泣いてるやつ。
+T	📱	連絡手段（電話・メール・チャット）の好みを話す	雑談	do you prefer to call or text, I hate phone calls, voice notes, email for work, just message me
+S	
+A	Do you prefer to call or text?	電話とメッセージ、どっちが好き？
+B	Text. Always. I hate phone calls.	メッセージ。絶対に。電話は嫌い。
+A	Why?	なんで？
+B	They're an ambush. You can't think. You just have to answer.	待ち伏せみたいだから。考えられない。ただ答えるしかない。
+A	I'm the opposite. Texting takes forever. A call is two minutes.	私は逆。メッセージは永遠にかかる。電話なら2分。
+B	Two minutes of panic.	2分間のパニック。
+A	Two minutes of getting things done.	2分間で片付く。
+S	
+B	What about voice notes?	ボイスメッセージは？
+A	The worst of both. Long, and I can't skim them.	両方の悪いところ。長くて、飛ばし読みできない。
+B	I love voice notes. It's like a call I can pause.	ボイスメッセージは大好き。一時停止できる電話みたい。
+A	You would.	あなたらしいね。
+B	And email for work. Nothing else. Work stays in email.	仕事はメール。それだけ。仕事はメールの中に留めておく。
+A	That's one thing we agree on.	それは意見が一致するね。
+S	
+A	Okay, so for us: I'll text you, you can voice-note me back.	じゃあ私たちの間では、私はメッセージして、あなたはボイスメッセージで返す。
+B	And you can call if it's urgent.	緊急なら電話してもいいよ。
+A	You'd answer?	出てくれる？
+B	I'd let it ring, panic, then call back. That counts.	鳴らしておいて、パニックになって、かけ直す。それで十分でしょ。
+T	🙏	返信が遅くなったことを謝る	人間関係	sorry for the slow reply, I've been swamped, I saw it and forgot, didn't mean to leave you hanging, no worries
+S	
+A	Hey — sorry for the slow reply. I've been swamped this week.	ねえ、返事が遅くなってごめん。今週は手一杯で。
+B	No worries. I figured.	大丈夫。そうだと思ってた。
+A	I saw your message on Monday and thought "I'll reply properly later". Then later never came.	月曜にメッセージを見て、「後でちゃんと返そう」って思って。それで後が来なかった。
+B	That's the trap. "Later."	それが罠だよね。「後で」。
+A	I didn't mean to leave you hanging. Especially about the dinner.	放置するつもりはなかったんだ。特にディナーのことは。
+B	It's fine. It's not till Saturday. We've still got time.	大丈夫。土曜までだから。まだ時間はあるよ。
+A	Are you still up for it?	まだ行く気ある？
+B	Of course. Same place?	もちろん。同じ店？
+S	
+A	Same place, seven. And I promise to reply faster next time.	同じ店、7時。それと次はもっと早く返事する。
+B	Don't promise. Just try. Everyone says they'll reply faster.	約束しないで。努力するだけで。みんなもっと早く返すって言うから。
+A	Fair. I'll try. And I'll put a reminder on the important ones.	たしかに。努力する。それと大事なのにはリマインダーをつける。
+B	A reminder to reply to a friend. Modern life.	友達に返信するためのリマインダー。現代の生活だね。
+A	Modern life. Sad but true.	現代の生活。悲しいけど本当。
+S	
+B	Anyway. Saturday. And I'm ordering dessert first.	とにかく。土曜。それでデザートを最初に頼む。
+A	Dessert first. That's the punishment?	デザートを最初に。それが罰？
+B	That's the punishment.	それが罰。
+T	📲	「後で連絡するね」と伝える	人間関係	I'll message you later, I'm in the middle of something, give me an hour, I'll get back to you, talk soon
+S	
+A	Hey, can I call you back? I'm in the middle of something.	ねえ、かけ直してもいい？ 今、作業の途中で。
+B	Sure. Is everything okay?	いいよ。何かあった？
+A	Fine. Just a deadline. Give me an hour.	大丈夫。締め切りがあるだけ。1時間ちょうだい。
+B	No rush. I just wanted to ask about the weekend.	急がなくていいよ。週末のことを聞きたかっただけ。
+A	I'll message you when I'm done. Promise.	終わったらメッセージするね。約束。
+B	Okay. Talk soon.	わかった。またあとで。
+S	
+A	Okay, done. Sorry about that. What's up with the weekend?	終わった。ごめんね。週末のことって？
+B	My cousin's in town. Do you want to come to dinner on Saturday?	いとこが来るんだ。土曜のディナーに来ない？
+A	Saturday's free. What time?	土曜は空いてる。何時？
+B	Seven. At mine. I'm cooking.	7時。うちで。私が料理する。
+A	You're cooking? Then I'm definitely coming.	料理するの？ じゃあ絶対に行く。
+B	Ha. I'll take that as a yes.	はは。イエスってことだね。
+S	
+A	Anything I should bring?	何か持っていくものある？
+B	Wine. And an appetite.	ワイン。それと食欲。
+A	Both easy. See you Saturday.	両方簡単。土曜にね。
+B	See you then. Good luck with the deadline.	その時に。締め切り、頑張って。
+T	🆘	緊急時の連絡先を確認する	手続き	emergency contact, who should we call, next of kin, in case anything happens, their number
+S	
+B	Before we start, I need an emergency contact. Who should we call if anything happens?	始める前に、緊急連絡先が必要です。何かあった場合、誰に連絡すればいいですか？
+A	My sister. She's the closest.	姉です。一番近くにいるので。
+B	And her number?	番号は？
+A	0-7-7-0-0, 1-2-3-4-5-6.	0-7-7-0-0、1-2-3-4-5-6です。
+B	Thank you. And her relationship to you? Next of kin?	ありがとうございます。あなたとの関係は？ 近親者ですか？
+A	Sister. Yes, next of kin.	姉です。はい、近親者です。
+B	Does she know she's your contact?	ご本人は緊急連絡先になっていることを知っていますか？
+A	She does. She'd want to be.	知っています。本人もそう望んでいます。
+S	
+B	Any medical conditions we should know about? Allergies, medication?	知っておくべき持病はありますか？ アレルギー、服薬など。
+A	Penicillin allergy. Nothing else.	ペニシリンアレルギーです。他はありません。
+B	Noted. That's important.	記録しました。それは重要です。
+A	Is there a second contact, just in case?	念のため、2人目の連絡先はありますか？
+B	If you'd like. Some people give a friend.	よろしければ。友人を登録する方もいます。
+A	My flatmate, then. Ellie. I'll write her number.	じゃあルームメイトのエリーを。番号を書きます。
+S	
+B	Perfect. Hopefully we never need any of this.	完璧です。どれも使う必要がないことを願います。
+A	Hopefully. But better to have it.	そうですね。でも、あったほうが安心です。
+B	Exactly. Right, you're all set.	その通りです。では、準備完了です。
+T	🌙	夜中の物音で眠れないと伝える	住まい	there's a noise, I couldn't sleep, it kept me up, what is that, could someone check
+S	
+A	Hi, I'm in room 311. There was a noise all night. I barely slept.	311号室です。一晩中音がしていて。ほとんど眠れませんでした。
+B	I'm sorry to hear that. What kind of noise?	申し訳ありません。どのような音ですか？
+A	A humming. Then a bang every twenty minutes or so. From the wall.	ブーンという音。それから20分おきくらいにドンという音。壁から。
+B	That could be the pipes. Or the heating system.	パイプかもしれません。または暖房システム。
+A	Whatever it is, it kept me up till four.	何であれ、4時まで眠れませんでした。
+B	Could someone come and check? Absolutely. I'll send maintenance now.	確認に伺いましょうか？ もちろんです。今すぐ整備担当を向かわせます。
+S	
+B	Maintenance says it's a valve in the pipe behind your wall. They can fix it today.	整備担当によると、壁の裏のパイプのバルブだそうです。今日中に直せます。
+A	Thank you. And tonight? Will it be quiet?	ありがとうございます。今夜は？ 静かになりますか？
+B	It should be. But if you'd prefer, I can move you to a different floor.	そのはずです。ただ、ご希望なら別の階にお移しできます。
+A	If it's fixed, I'll stay. I like the room.	直るなら、このままで。部屋は気に入っているので。
+B	Understood. And I'll take tonight off your bill. For the lost sleep.	承知しました。今夜の分は請求から外します。眠れなかったお詫びに。
+A	That's very kind. Thank you.	ご親切に。ありがとうございます。
+S	
+B	If it makes any noise at all tonight, call the desk straight away.	今夜少しでも音がしたら、すぐフロントにお電話ください。
+A	I will. Hopefully I'll sleep through.	そうします。ぐっすり眠れるといいのですが。
+B	You will. Sorry again.	眠れますよ。重ねてお詫びします。
+T	📺	隣の部屋の音楽やテレビの音が大きい	住まい	the TV's a bit loud, could you turn it down a bit, I can hear every word, thin walls, didn't realise
+S	
+A	Hey, sorry — is your TV on? It's a bit loud.	ねえ、ごめん、テレビつけてる？ ちょっと音が大きくて。
+B	Oh! Is it? Sorry, I had no idea.	あ！ そう？ ごめん、全然気づかなかった。
+A	I can hear every word from my room. The walls are thin.	自分の部屋から全部聞こえるんだ。壁が薄くて。
+B	I didn't realise. Let me turn it down.	気づかなかった。音を下げるね。
+A	Thanks. It's not a big deal. I just have an early start.	ありがとう。大したことじゃないんだ。ただ朝が早くて。
+B	No, it's fair. I'd hate it if it were the other way round.	いや、当然だよ。逆の立場だったら嫌だから。
+S	
+A	How's that?	これでどう？
+B	Better? I've turned it right down.	良くなった？ かなり下げたよ。
+A	Much better. I can only hear it if I try.	ずっといい。意識しないと聞こえないくらい。
+B	I'll use headphones after ten from now on.	これからは10時以降はヘッドホンを使うよ。
+A	You don't have to do that.	そこまでしなくても。
+B	I'd rather. It's easier than wondering if I'm annoying you.	そのほうがいい。迷惑をかけてるか気にするより楽だから。
+S	
+A	Thanks for being cool about it.	冷静に対応してくれてありがとう。
+B	Thanks for asking instead of just being annoyed.	イラつくだけじゃなくて、聞いてくれてありがとう。
+A	That's what flatmates do. Night.	ルームメイトってそういうものでしょ。おやすみ。
+B	Night. Sleep well.	おやすみ。よく眠って。
+T	🎧	通勤中のイヤホンの音漏れを指摘する	交通	your headphones are leaking, I can hear your music, could you turn it down, sorry to bother you, didn't mean to
+S	
+A	Excuse me, sorry to bother you. Your headphones are leaking a bit.	すみません、お邪魔してごめんなさい。ヘッドホンの音が少し漏れています。
+B	Oh! Really? Sorry.	あ！ 本当ですか？ すみません。
+A	I can hear your music from here. It's a good song, but still.	ここまで音楽が聞こえます。いい曲ですが、それでも。
+B	I had no idea. These are new. I'll turn it down.	全然気づきませんでした。新しいやつで。音を下げます。
+A	Thanks. I didn't mean to embarrass you.	ありがとう。恥をかかせるつもりはなかったんです。
+B	No, I'd rather know. Is that better?	いえ、知りたかったので。これでどうですか？
+A	Perfect. Can't hear a thing.	完璧です。何も聞こえません。
+S	
+B	What song was it? Since you could hear it.	何の曲でした？ 聞こえてたなら。
+A	The one with the trumpet. I actually quite liked it.	トランペットのやつ。実は結構好きでした。
+B	Ha. Well, at least I've got good taste.	はは。少なくとも趣味はいいんですね。
+A	You do. Just quieter, please.	いいですよ。ただ、もう少し静かに。
+S	
+B	Thanks for telling me nicely. Some people just glare.	感じよく教えてくれてありがとう。睨むだけの人もいるので。
+A	Glaring never works. You can't hear a glare.	睨んでも意味がないですから。睨みは聞こえませんし。
+B	True. Enjoy the rest of your journey.	たしかに。残りの道中、お気をつけて。
+T	🏡	部屋の内見を申し込む	住まい	I'd like to view the flat, when is it available to see, is it still available, could I come tomorrow, how many others are viewing
+S	
+A	Hi, I'm calling about the flat on Elm Road. Is it still available?	エルム通りのアパートについて電話しました。まだ空いていますか？
+B	It is. Are you looking to view it?	空いています。内見をご希望ですか？
+A	Yes, please. When could I see it?	はい。いつ見られますか？
+B	Tomorrow at four, or Thursday at eleven.	明日の4時か、木曜の11時。
+A	Tomorrow at four works.	明日の4時で大丈夫です。
+B	Perfect. I'll meet you outside. It's the blue door, number fourteen.	わかりました。外でお待ちしています。青いドアの14番です。
+S	
+A	Can I ask — how many others are viewing it?	伺ってもいいですか。他に内見する人は何人いますか？
+B	A few. It's a popular one. If you like it, don't wait.	数人。人気の物件です。気に入ったら、待たないほうがいいですよ。
+A	Understood. And what would I need to bring if I want to apply?	わかりました。申し込む場合、何を持っていけばいいですか？
+B	ID, proof of income, and a reference. Bring them tomorrow if you can.	身分証、収入証明、それと推薦状。できれば明日持ってきてください。
+A	I'll have them ready.	準備しておきます。
+S	
+B	Any questions before then?	それまでに質問はありますか？
+A	Is there parking?	駐車場はありますか？
+B	On the street. Permit needed. I'll explain tomorrow.	路上に。許可証が必要です。明日説明します。
+A	Great. See you at four.	わかりました。では4時に。
+T	📋	家賃・敷金・契約期間を確認する	住まい	how much is the rent, what's the deposit, how long is the lease, bills included, notice period
+S	
+A	So, how much is the rent exactly?	それで、家賃は正確にいくらですか？
+B	Twelve hundred a month. Bills not included.	月1200です。光熱費は別。
+A	What would bills come to, roughly?	光熱費はだいたいどのくらいになりますか？
+B	About one fifty. Gas, electric, water, internet.	150くらいです。ガス、電気、水道、ネット。
+A	And the deposit?	敷金は？
+B	Five weeks' rent. Held in a protected scheme, returned when you leave.	家賃5週間分。保護制度で管理され、退去時に返却されます。
+A	How long is the lease?	契約期間は？
+B	Twelve months minimum. Then it rolls monthly.	最低12か月。その後は月単位で更新。
+S	
+A	What's the notice period after that?	その後の解約予告期間は？
+B	One month from you. Two from us.	あなたからは1か月。こちらからは2か月。
+A	Can I leave before twelve months if something changes?	12か月前に何かあって退去する場合は？
+B	There's a break clause at six. Two months' notice at that point.	6か月目に中途解約条項があります。その時点で2か月前の通知で。
+A	That's reasonable.	それなら妥当ですね。
+B	We try to be. Any other questions?	そう心がけています。他に質問は？
+S	
+A	Just one. When could I move in?	1つだけ。いつ入居できますか？
+B	The first of next month. If your references come back in time.	来月1日。推薦状の確認が間に合えば。
+A	I'll chase them today.	今日中に催促します。
+T	🛋	家具や家電が付いているか聞く	住まい	is it furnished, does it come with, what's included, would I need to buy, unfurnished
+S	
+A	Is the flat furnished?	アパートは家具付きですか？
+B	Partly. Bed, wardrobe, sofa. No table or chairs.	一部は。ベッド、ワードローブ、ソファ。テーブルと椅子はなし。
+A	And the kitchen? Does it come with appliances?	キッチンは？ 家電は付いていますか？
+B	Fridge, oven, washing machine. No dishwasher, no microwave.	冷蔵庫、オーブン、洗濯機。食洗機と電子レンジはなし。
+A	So I'd need to buy a table, chairs, and a microwave.	じゃあ、テーブルと椅子と電子レンジを買う必要がありますね。
+B	That's about it. And curtains. Previous tenant took theirs.	それくらいです。あとカーテン。前の入居者が持っていったので。
+A	Curtains. Right.	カーテン。なるほど。
+S	
+A	What about the bed? Is it in good condition?	ベッドは？ 状態はいいですか？
+B	Two years old. Decent mattress. You can see it tomorrow.	2年物。まともなマットレスです。明日見られますよ。
+A	And if I wanted to bring my own?	自分のを持ち込みたい場合は？
+B	We can remove ours. Just ask before you move in.	こちらのを撤去できます。入居前に言ってください。
+A	Good to know. Is there storage?	わかりました。収納はありますか？
+B	A cupboard in the hall, and space under the stairs.	廊下に戸棚と、階段下のスペースがあります。
+S	
+A	It sounds like it needs a few things, but nothing huge.	いくつか必要なものはあるけど、大きなものはなさそうですね。
+B	A weekend of shopping and you're set.	週末1回の買い物で準備完了です。
+A	A weekend of shopping. I can manage that.	週末1回の買い物。それならできます。
+T	🛗	エレベーターで「お先にどうぞ」と譲る	日常	after you, you go ahead, there's room, I'll get the next one, no rush
+S	
+A	After you.	お先にどうぞ。
+B	Oh, are you sure? You were here first.	いいんですか？ 先にいらしたのに。
+A	You've got the pram. Go ahead, there's room.	ベビーカーがありますから。どうぞ、スペースはありますよ。
+B	That's kind. Thank you.	ご親切に。ありがとうございます。
+A	Which floor?	何階ですか？
+B	Six. Thanks.	6階。ありがとう。
+S	
+A	Is there space for me too, or shall I get the next one?	私も入れますか、それとも次を待ちましょうか？
+B	There's space. Squeeze in.	入れますよ。どうぞ。
+A	Thanks. Hello, little one.	ありがとう。こんにちは、おちびさん。
+B	She's shy. She'll stare at you the whole way up.	人見知りなんです。上まで、ずっとあなたを見つめると思います。
+A	That's fine. I've been stared at by worse.	大丈夫です。もっとひどい目で見られたことがありますから。
+S	
+B	This is us. Thanks again for letting us go first.	ここで降ります。先に入れてくれて、改めてありがとう。
+A	No rush. Have a good day.	急がなくていいですよ。良い一日を。
+B	Say bye. ...She waved!	バイバイして。…手を振った！
+T	⏳	エレベーターが混んでいて次を待つ	日常	it's full, I'll wait for the next one, go ahead without me, it'll be a minute, take the stairs
+S	
+A	Oh, it's full. I'll wait for the next one.	あ、満員だ。次を待ちます。
+B	Are you sure? I can squeeze in.	いいんですか？ 詰めますよ。
+A	No, go ahead without me. I'm not in a rush.	いえ、先に行ってください。急いでいないので。
+B	Okay. See you up there.	わかりました。上で会いましょう。
+A	See you.	また。
+S	
+A	Hmm. It's been a minute. Where is it?	うーん。1分経った。どこにいるんだろう。
+B	It's stuck on nine. Someone's holding the door.	9階で止まってる。誰かがドアを押さえてる。
+A	Of course they are. Should we take the stairs?	そうでしょうね。階段で行きます？
+B	Which floor?	何階？
+A	Four.	4階。
+B	Four's fine. Let's go. Faster than waiting.	4階なら大丈夫。行きましょう。待つより速い。
+S	
+A	Well, that's my exercise for the day.	これで今日の運動は終わりだね。
+B	And we beat the lift. Look, it's just arriving.	それにエレベーターに勝った。ほら、今着いたところ。
+A	Every time. Stairs win every time.	毎回そう。階段が毎回勝つ。
+T	🙏	道を教えてもらってお礼を言う	日常	thanks for the directions, you've saved me, I'd have been wandering, really helpful, have a good one
+S	
+A	Thank you so much. That was really helpful.	本当にありがとうございます。とても助かりました。
+B	No problem. It's easy to miss that turn.	どういたしまして。あの角は見落としやすいので。
+A	I'd have been wandering for an hour. I was completely turned around.	1時間は迷い歩いてたと思います。完全に方向を見失ってました。
+B	Everyone gets lost around here. The streets all look the same.	この辺りではみんな迷いますよ。道が全部同じに見えるので。
+A	They really do. Left at the bakery, right at the church?	本当にそうですね。パン屋を左、教会を右？
+B	That's it. Five minutes.	そうです。5分です。
+S	
+A	You've saved me. Can I buy you a coffee or something?	おかげで助かりました。コーヒーでもおごらせてもらえますか？
+B	Ha, no, don't be silly. It's just directions.	はは、いえ、大丈夫ですよ。ただの道案内ですから。
+A	Well, thank you anyway. Really.	でも、本当にありがとうございます。
+B	Go on, you'll be late.	さあ、遅れますよ。
+A	Right. Bakery, church. Have a good one!	そうでした。パン屋、教会。良い一日を！
+S	
+B	You too! And if you get lost again, ask anyone. People are friendly here.	あなたも！ また迷ったら、誰にでも聞いてください。ここの人は親切ですから。
+A	I can tell. Thanks again!	わかります。改めてありがとう！
+T	🎒	荷物を持ってもらってお礼を言う	日常	let me get that, thank you so much, you didn't have to, that was heavy, saved my back
+S	
+B	Here, let me get that.	はい、持ちますよ。
+A	Oh! Thank you. Are you sure? It's heavy.	あ！ ありがとうございます。いいんですか？ 重いですよ。
+B	I can see. Where's it going?	そのようですね。どこまで？
+A	Just up these stairs. Second floor.	この階段を上がって。2階です。
+B	Easy. Lead the way.	簡単です。案内してください。
+A	You really didn't have to.	本当にそこまでしなくても。
+B	You were about to lose it on the first step.	最初の段で落としそうでしたから。
+A	I was. I nearly went with it.	そうでした。一緒に落ちるところでした。
+S	
+A	Right here. Thank you so much. You've saved my back.	ここです。本当にありがとう。腰が救われました。
+B	What's in it? Bricks?	何が入ってるんですか？ レンガ？
+A	Books. Which are basically bricks.	本です。ほぼレンガですね。
+B	Ha. Well, they're up now.	はは。まあ、もう上に着きましたよ。
+A	Can I at least get you a drink? There's a café downstairs.	せめて飲み物をおごらせてください。下にカフェがあります。
+B	Honestly, it's fine. Just pay it forward.	本当に大丈夫です。次の人に同じことをしてあげてください。
+S	
+A	I will. Next person with a box of bricks.	そうします。次にレンガの箱を持ってる人に。
+B	That's the deal. Take care.	それでいいです。お気をつけて。
+T	💛	困っているときに助けてもらって感謝を伝える	人間関係	I don't know what I'd have done, you didn't have to, I owe you, I'll never forget, it meant everything
+S	
+A	I need to say something. About last week.	言いたいことがあるんだ。先週のことで。
+B	Okay.	うん。
+A	When my car broke down at midnight and you drove forty minutes to get me — I don't know what I'd have done without you.	夜中に車が故障して、40分かけて迎えに来てくれた時。あなたがいなかったら、どうしてたかわからない。
+B	You'd have called a taxi.	タクシーを呼んでたよ。
+A	I had no money on me and my phone was at three percent. I was scared.	お金を持ってなくて、スマホは3%だった。怖かった。
+B	I know. That's why I came.	わかってる。だから行ったんだ。
+A	You didn't have to. You had work at seven.	そこまでしなくてよかったのに。7時から仕事だったでしょ。
+B	I'd have done it at five. That's not the point.	5時からでも行ったよ。そういう問題じゃない。
+S	
+A	I owe you. Seriously.	借りがある。本気で。
+B	You don't owe me anything. You'd have done the same.	借りなんてないよ。あなたも同じことをしてくれる。
+A	I would. But I want you to know it meant everything. Not just the lift. Knowing someone would come.	するよ。でも、本当に大きなことだったって知ってほしい。送ってくれたことだけじゃなく。来てくれる人がいるってこと。
+B	Now you're going to make me cry.	泣かせないでよ。
+A	Good. You should know.	いいんだよ。知っておくべきだから。
+S	
+B	Okay. You can buy me dinner. That's the price.	わかった。ディナーをおごって。それが代償。
+A	Dinner every week for a month.	1か月間、毎週ディナー。
+B	One dinner. Don't be ridiculous.	1回でいい。大げさにしないで。
+A	Two. Final offer.	2回。最終提案。
+B	...Fine. Two.	…わかった。2回。
+T	🤝	困っている人に「大丈夫ですか？」と声をかける	日常	are you okay, do you need a hand, is everything all right, can I help, I'm fine thanks
+S	
+A	Excuse me, are you okay? You look a bit lost.	すみません、大丈夫ですか？ 少し迷っているように見えて。
+B	Oh! Yes, I... actually, no. I can't find the station.	あ！ はい、私… いや、実は違います。駅が見つからなくて。
+A	Which one?	どの駅ですか？
+B	The main one. I've been walking in circles.	中央駅です。ぐるぐる回ってました。
+A	You're close. It's just behind that building. Two minutes.	近いですよ。あの建物のすぐ裏です。2分。
+B	Behind the building? I've walked past it three times.	建物の裏？ 3回も通り過ぎてました。
+A	The entrance is hidden. Everyone misses it.	入口が隠れてるんです。みんな見逃します。
+B	Thank you. I was about to cry.	ありがとうございます。泣きそうでした。
+S	
+A	Do you need a hand with the bag? It looks heavy.	カバン、手伝いましょうか？ 重そうですね。
+B	I'm fine, thanks. It's got wheels. Just tired.	大丈夫です、ありがとう。車輪がついてるので。ただ疲れてて。
+A	Long day?	長い一日でしたか？
+B	Long week. And a missed train.	長い1週間でした。それに電車を逃して。
+A	There's another in ten minutes. You'll make it.	10分後に次があります。間に合いますよ。
+B	You're very kind. Thank you for stopping.	ご親切に。立ち止まってくれてありがとう。
+S	
+A	Anyone would. Well, some would.	誰でもそうしますよ。まあ、一部の人は。
+B	Not many did. You're the first.	多くはなかったです。あなたが最初。
+A	Then I'm glad I asked. Safe travels.	じゃあ、聞いてよかったです。お気をつけて。
 """#
 }
