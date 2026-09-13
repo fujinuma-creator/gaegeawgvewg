@@ -39826,5 +39826,441 @@ S
 A	Every time I think about it, I still laugh.	思い出すたびに、今でも笑う。
 B	Those are the best memories. The ridiculous ones.	そういうのが一番いい思い出だよね。ばかげたやつ。
 A	Nobody remembers the sensible days.	まともな日のことは誰も覚えてない。
+T	😲	今までで一番びっくりしたことを話す	雑談	the biggest shock, I couldn't believe it, out of nowhere, jaw dropped, never saw it coming
+S	
+A	What's the most surprised you've ever been?	人生で一番驚いたことは？
+B	My surprise thirtieth. I genuinely had no idea.	30歳のサプライズパーティー。本当に何も知らなかった。
+A	Nobody let it slip?	誰も口を滑らせなかった？
+B	Forty people kept a secret for two months. I still can't believe it.	40人が2か月間秘密を守った。今でも信じられない。
+A	What did you do when you walked in?	入った時、どうしたの？
+B	Screamed. Then cried. Then screamed again.	叫んだ。それから泣いた。それからまた叫んだ。
+A	Classic.	定番だね。
+S	
+B	What about you?	そっちは？
+A	My sister told us she was moving to Australia. At Sunday dinner. Out of nowhere.	姉がオーストラリアに引っ越すって言ったこと。日曜の夕食で。唐突に。
+B	No warning?	前触れなし？
+A	None. She'd already booked the flight. My mum dropped her fork.	なし。もう飛行機も予約してた。母がフォークを落とした。
+B	How did it go?	それでどうなった？
+A	She's been there three years. She loves it. But that dinner was silent.	もう3年いる。気に入ってる。でもあの夕食は静まり返ってた。
+S	
+A	I never saw it coming. None of us did.	全く予想してなかった。誰も。
+B	Some people just decide and go.	決めたらすぐ行動する人っているよね。
+A	She's always been like that. I'm still not over it.	姉は昔からそう。まだ立ち直れてない。
+T	😱	今までで一番怖かった体験を話す	雑談	the scariest moment, my heart stopped, I froze, thought I was going to, still gives me chills
+S	
+A	What's the scariest thing that's ever happened to you?	人生で一番怖かった経験は？
+B	Getting caught in a rip current. I was maybe sixteen.	離岸流に巻き込まれたこと。16歳くらいの時。
+A	That's terrifying.	それは恐ろしいね。
+B	I thought I was going to drown. I kept swimming and the beach kept getting further away.	溺れると思った。泳いでも泳いでも、浜辺が遠ざかっていった。
+A	How did you get out?	どうやって抜け出したの？
+B	A surfer saw me. He shouted to swim sideways. It worked.	サーファーが気づいてくれた。横に泳げって叫んでくれて。それで助かった。
+A	Do you still swim in the sea?	今でも海で泳ぐ？
+B	Yes. But I always check the flags now.	うん。でも今は必ず旗を確認する。
+S	
+B	Yours?	そっちは？
+A	Nothing that dramatic. A car pulled out in front of me on the motorway.	そんなにドラマチックじゃない。高速道路で前に車が飛び出してきた。
+B	That's plenty dramatic.	それで十分ドラマチックだよ。
+A	I froze. Then my hands just moved. Braked, swerved, missed it by nothing.	固まった。それから手が勝手に動いた。ブレーキ、ハンドル、ぎりぎりでかわした。
+B	Your body took over.	体が勝手に動いたんだね。
+A	Exactly. I had to pull over after. My heart wouldn't slow down for an hour.	そう。その後、路肩に停めた。1時間、心臓が落ち着かなかった。
+S	
+A	It still gives me chills, honestly.	正直、今でもぞっとする。
+B	Those moments stay with you.	そういう瞬間は残るよね。
+A	They do. But we're both still here.	残る。でも、2人ともまだここにいる。
+T	🍀	信じているジンクスや験担ぎを話す	雑談	lucky charm, I always, superstitious, it works, don't jinx it
+S	
+A	Are you superstitious at all?	迷信って信じる？
+B	A little. I always wear the same socks for important meetings.	少しね。大事な会議にはいつも同じ靴下を履く。
+A	Lucky socks?	幸運の靴下？
+B	Lucky socks. Blue with stripes. I've had them for years.	幸運の靴下。青いストライプ。何年も持ってる。
+A	Do they actually work?	本当に効くの？
+B	I've never had a bad meeting in them. So, yes.	その靴下で悪い会議になったことはない。だから、効く。
+A	Or you're just good at meetings.	それか、ただ会議が上手いだけ。
+B	Don't jinx it.	縁起でもないこと言わないで。
+S	
+B	What about you?	そっちは？
+A	I never say "everything's going well" out loud.	「順調にいってる」って口に出して言わない。
+B	Why not?	なんで？
+A	Because the moment I do, something breaks. Every time.	言った瞬間に、何かが壊れるから。毎回。
+B	That's not superstition, that's just life.	それは迷信じゃなくて、ただの人生だよ。
+A	Maybe. But I'm not risking it.	かもね。でもリスクは冒さない。
+S	
+A	Also, I knock on wood. Instinctively.	あと、木を叩く。反射的に。
+B	Everyone does that. Even people who say they don't.	みんなやるよ。やらないって言う人でも。
+A	Just in case.	念のためね。
+B	Just in case.	念のため。
+T	🔮	占いや性格診断の話で盛り上がる	雑談	what's your sign, that's so typical, I don't believe in it but, personality test, scarily accurate
+S	
+A	What's your star sign?	星座は何？
+B	Scorpio. Why?	蠍座。どうして？
+A	That explains so much.	それで納得がいった。
+B	What does that mean?	どういう意味？
+A	Intense, secretive, loyal to a fault. That's you.	情熱的で、秘密主義で、忠実すぎる。あなたそのものだよ。
+B	I don't believe in this stuff.	こういうの信じてないんだけど。
+A	That's such a Scorpio thing to say.	それこそ蠍座の典型的な発言だよ。
+S	
+B	Fine. What are you?	わかったよ。あなたは？
+A	Gemini.	双子座。
+B	Ah. Two-faced.	ああ。二面性があるやつね。
+A	Adaptable. We say adaptable.	適応力がある。私たちは適応力って言うの。
+B	Did you do that personality test that was going round?	最近流行ってた性格診断、やった？
+A	The one with four letters? Yes. It was scarily accurate.	4文字のやつ？ やった。怖いくらい当たってた。
+B	What were you?	何だった？
+A	The one that's "warm but disorganised". Rude.	「温かいけど整理が苦手」なやつ。失礼だよね。
+S	
+B	I don't believe in any of it. But I read mine every morning.	全部信じてない。でも毎朝自分のを読んでる。
+A	That's what everyone says.	みんなそう言うんだよ。
+B	And I check yours too. Just to see.	それとあなたのもチェックしてる。ただ見るだけ。
+A	Scorpio. Secretive.	蠍座。秘密主義。
+T	🦊	自分に似ている芸能人や動物を言い合う	雑談	people say I look like, spirit animal, I can see it, not even close, the eyebrows
+S	
+A	Who do people say you look like?	誰に似てるってよく言われる？
+B	That actor from the detective show. The grumpy one.	刑事ドラマの俳優。不機嫌そうなやつ。
+A	Oh! I can see it. The eyebrows.	あ！ わかる。眉毛が。
+B	It's always the eyebrows.	いつも眉毛なんだよね。
+A	Take it as a compliment. He's handsome.	褒め言葉として受け取りなよ。ハンサムだから。
+B	He's fifty-five.	55歳だよ。
+A	A handsome fifty-five.	ハンサムな55歳。
+S	
+B	What about you?	そっちは？
+A	Nobody, honestly. I have a very forgettable face.	正直、誰も。すごく忘れやすい顔なんだ。
+B	That's not true. You look like... hmm.	そんなことないよ。似てるのは… うーん。
+A	See? Nobody.	ほらね。誰もいない。
+B	Okay, animal then. What's your spirit animal?	じゃあ動物。守護動物は？
+A	A sloth. Slow, content, hanging around.	ナマケモノ。ゆっくりで、満足してて、ぶら下がってる。
+B	That's the most accurate thing you've ever said.	今まで言った中で一番正確だね。
+S	
+A	And you're a fox. Sharp, a bit sneaky.	あなたはキツネ。鋭くて、ちょっとずる賢い。
+B	Sneaky!	ずる賢い！
+A	Clever. I meant clever.	賢い。賢いって意味。
+B	You didn't.	そうは言ってなかった。
+A	Not even close.	全然違ったね。
+T	🏷	子どもの頃のあだ名を教え合う	雑談	what did they call you, my nickname was, it stuck, I hated it, because of
+S	
+A	Did you have a nickname as a kid?	子どもの頃、あだ名はあった？
+B	Ugh. Yes. "Beans."	うう。あった。「ビーンズ」。
+A	Beans? Why?	ビーンズ？ なんで？
+B	I brought baked beans to school every day for a year. In a flask.	1年間、毎日ベイクドビーンズを学校に持っていった。水筒に入れて。
+A	Every day?	毎日？
+B	I was seven. I liked beans. It stuck until I was sixteen.	7歳だった。豆が好きだったんだ。16歳までそのままだった。
+A	Did you hate it?	嫌だった？
+B	At first. Then I owned it. My rugby shirt said "Beans" on the back.	最初はね。それから開き直った。ラグビーのシャツの背中に「ビーンズ」って書いてた。
+S	
+B	What about you?	そっちは？
+A	"Professor." Because I wore glasses and asked too many questions.	「教授」。メガネをかけて、質問が多すぎたから。
+B	That's quite nice, actually.	それはむしろいいあだ名だね。
+A	It wasn't meant nicely. But I decided to like it.	いい意味じゃなかったんだ。でも気に入ることにした。
+B	Professor and Beans.	教授とビーンズ。
+A	We'd have been friends at school.	学校で友達になってただろうね。
+S	
+B	Do any of your old friends still use it?	昔の友達で、今も使ってる人はいる？
+A	One. Every Christmas card. "To the Professor."	1人。毎年クリスマスカードに。「教授へ」。
+B	That's sweet.	かわいいね。
+A	It is. I'd miss it if it stopped.	うん。なくなったら寂しいと思う。
+T	🏠	家族の変わったルールや口癖を話す	雑談	in my family we, my mum always says, it's a rule, weird tradition, everyone thinks it's normal
+S	
+A	Did your family have any weird rules?	家族に変わったルールってあった？
+B	No talking at the table until everyone's had three bites.	全員が3口食べるまで、食卓で話してはいけない。
+A	Three bites? Why three?	3口？ なんで3口？
+B	No idea. My grandmother started it. Nobody questioned it.	わからない。祖母が始めたんだ。誰も疑問に思わなかった。
+A	So you'd all sit there in silence?	じゃあ全員、黙って座ってたの？
+B	Counting. Everyone counting. Then chaos.	数えながら。全員が数えて。それからカオス。
+A	That's brilliant.	それは面白い。
+B	I thought every family did it until I was twelve.	12歳になるまで、どの家もそうだと思ってた。
+S	
+B	What about yours?	そっちは？
+A	My dad has a phrase. "Well, that's a Tuesday."	父の口癖。「まあ、火曜日ってやつだ」。
+B	Meaning?	意味は？
+A	Anything annoying. Car breaks down? "That's a Tuesday." Even on a Saturday.	何か嫌なことがあった時に。車が故障？「火曜日ってやつだ」。土曜でも。
+B	That's wonderfully unhelpful.	素晴らしく役に立たないね。
+A	I say it now. I can't stop. My friends are confused.	今は私も言ってる。やめられない。友達は困惑してる。
+S	
+B	Families are strange.	家族って変だよね。
+A	And everyone thinks their strange is normal.	そしてみんな、自分の家の変なところを普通だと思ってる。
+B	Three bites. I'm going to try it at dinner tonight.	3口。今夜の夕食で試してみる。
+T	🤫	親にバレたらまずい秘密を話す	雑談	my parents still don't know, if they found out, I've never told them, they think, it's better this way
+S	
+A	What's something your parents still don't know about you?	両親がまだ知らない、あなたのことって何？
+B	That I got a tattoo at eighteen. On my shoulder.	18歳でタトゥーを入れたこと。肩に。
+A	They've never seen it?	一度も見られてない？
+B	I've worn a T-shirt at every family beach day for twelve years.	12年間、家族の海水浴では毎回Tシャツを着てる。
+A	Twelve years!	12年も！
+B	My mum would be devastated. It's better this way.	母が知ったら打ちひしがれる。このほうがいいんだ。
+A	What is it?	何のタトゥー？
+B	A small bird. Nothing dramatic. But still.	小さな鳥。派手なものじゃない。でもね。
+S	
+B	What about you?	そっちは？
+A	They think I still go to church.	まだ教会に通ってると思われてる。
+B	And you don't?	通ってないの？
+A	Not for ten years. But every phone call, "how was church?" "Good, Mum."	10年間。でも電話のたびに「教会はどうだった？」「良かったよ、母さん」。
+B	That's a long-running lie.	長く続いてる嘘だね。
+A	It's not a lie. It's... a kindness.	嘘じゃない。これは… 優しさだよ。
+B	That's what we all say.	みんなそう言うんだよね。
+S	
+A	Would you ever tell them?	いつか言う？
+B	About the bird? Maybe at forty. When it's too late to be angry.	鳥のこと？ 40歳になったら、かな。怒るには遅すぎる頃に。
+A	Good plan. I'll tell mine about church at fifty.	いい計画。私は50歳で教会のことを言う。
+B	Some secrets have a schedule.	秘密にはスケジュールがあるんだね。
+T	🏫	学校でやった悪いことを暴露し合う	雑談	I once, we got caught, detention, never told anyone, the teacher never knew
+S	
+A	Confession time. Worst thing you did at school.	告白タイム。学校でやった一番悪いこと。
+B	I changed the clocks in three classrooms. Ten minutes fast.	3つの教室の時計を変えた。10分進めて。
+A	Why?	なんで？
+B	So we'd get out early. It worked for a week.	早く帰れるように。1週間はうまくいった。
+A	And then?	それから？
+B	A teacher noticed the bell was wrong. We got caught. Detention for a month.	先生がチャイムとずれてるのに気づいて。バレた。1か月の居残り。
+A	Worth it?	価値はあった？
+B	Every minute. Well, every ten minutes.	全部の時間が。というか、10分ずつ。
+S	
+B	Yours?	そっちは？
+A	I wrote a fake note from my mum to skip PE. Every week. For a term.	母からの偽の手紙を書いて、体育をサボった。毎週。1学期間。
+B	And they believed it?	信じられたの？
+A	My handwriting was very neat. The teacher never knew.	字がすごく綺麗だったから。先生は最後まで気づかなかった。
+B	Did your mum find out?	お母さんにはバレた？
+A	Parents' evening. The teacher thanked her for all the notes.	保護者面談で。先生が母に手紙のお礼を言った。
+B	Oh no.	うわ。
+A	I've never seen her face do that before.	あんな顔の母は見たことがなかった。
+S	
+B	We were terrible.	ひどい子どもだったね。
+A	Creative. We were creative.	創造的。創造的だったんだよ。
+B	Creatively terrible.	創造的にひどかった。
+T	📚	先生に怒られた話をする	雑談	got told off, in front of the whole class, I deserved it, still remember, made an example of
+S	
+A	Do you remember getting told off by a teacher? Properly?	先生にちゃんと怒られたこと、覚えてる？
+B	Once. Mrs Hart. Year eight. I still have nightmares.	一度。ハート先生。中2の時。今でも悪夢を見る。
+A	What did you do?	何をしたの？
+B	Passed a note. She read it out to the whole class.	手紙を回した。それを先生がクラス全員に読み上げた。
+A	What did the note say?	手紙には何て？
+B	That her cardigan looked like a sofa.	先生のカーディガンがソファみたいだって。
+A	Oh no.	うわ。
+B	She wore it the next day. Looked straight at me.	翌日も着てきた。まっすぐ私を見て。
+S	
+B	What about you?	そっちは？
+A	I corrected a teacher's spelling. In front of everyone.	先生のスペルミスを指摘した。みんなの前で。
+B	Were you right?	正しかったの？
+A	I was right. That made it worse.	正しかった。それが余計にまずかった。
+B	Made an example of you?	見せしめにされた？
+A	Kept me behind for "attitude". I deserved it, honestly. I was smug.	「態度」が悪いって居残り。正直、当然だった。生意気だったから。
+S	
+A	I still remember the exact word, though.	でも、その単語は今でも覚えてる。
+B	Which was?	何だった？
+A	"Necessary." One C, two S's. She'd done two C's.	「necessary」。Cが1つ、Sが2つ。先生はCを2つ書いてた。
+B	You're still smug about it.	まだ得意げだね。
+A	A little.	少しね。
+T	💌	学生時代のモテ期の話をする	雑談	my peak, everyone fancied, didn't even notice, it was a phase, never again
+S	
+A	Did you ever have a phase where everyone fancied you?	みんなにモテてた時期ってあった？
+B	Ha. One term, in sixth form. I got a haircut and suddenly people noticed me.	はは。高3の1学期。髪を切ったら、急に注目された。
+A	What was different?	何が変わったの？
+B	Nothing! Same person, shorter hair. It was bizarre.	何も！ 同じ人間で、髪が短くなっただけ。奇妙だった。
+A	Did you enjoy it?	楽しんだ？
+B	I didn't know what to do with it. I was terrified.	どうしていいかわからなかった。怖かった。
+A	And then?	それから？
+B	Hair grew back. Everyone forgot. My peak lasted eleven weeks.	髪が伸びた。みんな忘れた。私の全盛期は11週間だった。
+S	
+B	What about you?	そっちは？
+A	Apparently someone liked me for a whole year. I didn't even notice.	どうやら1年間、私を好きな人がいたらしい。全然気づかなかった。
+B	How did you find out?	どうやって知ったの？
+A	A reunion, ten years later. She told me. I was speechless.	10年後の同窓会で。本人に言われた。言葉が出なかった。
+B	That's tragic.	それは悲劇だね。
+A	She was married by then. To a nice man. So it worked out.	その頃にはもう結婚してた。いい人と。だからうまくいったんだ。
+S	
+A	Never again, though. Never had a phase since.	でもそれ以来、二度とないよ。モテ期は。
+B	Me neither. One term. That was it.	私も。1学期だけ。それで終わり。
+A	We peaked early.	早く全盛期を迎えたんだね。
+T	🤦	最近やらかしたドジな話をする	雑談	I did something so stupid, in front of everyone, I wanted to disappear, classic me, it gets worse
+S	
+A	I did something so stupid yesterday.	昨日、本当にばかなことをした。
+B	Go on.	聞かせて。
+A	I waved at someone across the office. They didn't wave back.	オフィスの向こうの人に手を振った。振り返してくれなかった。
+B	Awkward.	気まずいね。
+A	It gets worse. I kept waving. Bigger. Thinking they hadn't seen.	もっとひどい。振り続けた。もっと大きく。見えてないと思って。
+B	And?	それで？
+A	They were waving at someone behind me. The whole time.	私の後ろの人に手を振ってたんだ。ずっと。
+B	Oh no.	うわ。
+A	Twelve seconds of enthusiastic waving at nobody.	誰でもない相手に、12秒間の熱心な手振り。
+S	
+B	I've got one. I said "you too" when the waiter said "enjoy your meal".	私も1つ。ウェイターに「お食事をお楽しみください」って言われて、「あなたも」って言った。
+A	Everyone's done that.	それはみんなやったことある。
+B	Then I tried to correct it and said "I mean, enjoy your... work."	それで訂正しようとして、「いや、お仕事を… お楽しみください」って。
+A	Worse.	さらにひどい。
+B	Much worse. He just walked away.	ずっとひどい。そのまま去っていった。
+S	
+A	Classic us.	私たちらしいね。
+B	Maybe we shouldn't be allowed in public.	人前に出ちゃいけないのかもしれない。
+A	We're fine. Everyone's like this. They just hide it better.	大丈夫だよ。みんなこう。上手く隠してるだけ。
+T	😴	寝言や寝相の話をする	雑談	I talk in my sleep, apparently I, sleep like a starfish, steal the covers, snore
+S	
+A	Do you talk in your sleep?	寝言を言う？
+B	Apparently, yes. My flatmate says I gave a full presentation once.	らしいよ。ルームメイトによると、一度フルプレゼンをしたって。
+A	A presentation?	プレゼン？
+B	About quarterly targets. In my sleep. With hand gestures.	四半期の目標について。寝ながら。手振りつきで。
+A	That's the saddest thing I've ever heard.	今まで聞いた中で一番悲しい話だ。
+B	I know. Even asleep, I'm working.	わかってる。寝てても働いてる。
+S	
+B	What about you?	そっちは？
+A	I don't talk. But I sleep like a starfish. Whole bed.	寝言は言わない。でもヒトデみたいに寝る。ベッド全体を使って。
+B	That must be fun for anyone sharing.	一緒に寝る人は大変だね。
+A	Nobody's ever stayed twice.	2回泊まった人はいない。
+B	I'd believe it.	信じるよ。
+A	And I steal the covers. All of them. By midnight.	それに毛布を全部奪う。0時までに。
+B	A starfish and a thief.	ヒトデで泥棒。
+S	
+A	Do you snore?	いびきはかく？
+B	Only when I've had a drink. Then, apparently, like a tractor.	お酒を飲んだ時だけ。その時は、トラクターみたいらしい。
+A	So a sleep-talking tractor.	寝言を言うトラクターだね。
+B	And a cover-stealing starfish. We'd never share a room.	毛布を奪うヒトデと。絶対に同じ部屋には泊まれないね。
+T	👀	変な癖を指摘し合う	雑談	you always, have you noticed, I didn't know I did that, weird habit, can't stop now
+S	
+A	Have you noticed you always click your pen when you're thinking?	考えてる時、いつもペンをカチカチしてるの気づいてる？
+B	Do I?	そう？
+A	Constantly. Three clicks, pause, three clicks.	ずっと。3回カチカチ、間、3回カチカチ。
+B	I had no idea. Is it annoying?	全然知らなかった。うるさい？
+A	A bit. But now I'd miss it.	少し。でも今はないと寂しいかも。
+B	Well, you touch your ear when you're lying.	じゃあ、あなたは嘘をつく時に耳を触るよ。
+A	I do not.	触らないよ。
+B	You just did it.	今触った。
+S	
+A	Okay, that's unsettling.	それは不気味だね。
+B	I've known for years. I use it.	何年も前から知ってた。利用してる。
+A	You use it?	利用してる？
+B	Every time you say you're "fine".	「大丈夫」って言うたびに。
+A	...I didn't know I did that.	…そんなことしてるって知らなかった。
+B	Now you do. Can't stop now.	今わかったね。もうやめられないよ。
+S	
+A	What else do I do?	他に何をしてる？
+B	You hum when you cook. The same three notes. Forever.	料理中に鼻歌を歌う。同じ3音。永遠に。
+A	That's not a weird habit. That's a talent.	それは変な癖じゃない。才能だよ。
+B	It's three notes.	3音だよ。
+A	Three excellent notes.	3つの素晴らしい音。
+T	🍜	最近ハマっている食べ物を熱弁する	雑談	I'm obsessed with, I've had it every day, you have to try, life-changing, where have you been all my life
+S	
+A	Okay, I need to tell you about this thing I've been eating.	ねえ、最近食べてるものについて話さないといけない。
+B	Here we go.	始まった。
+A	Kimchi. On everything. Eggs, rice, toast. Everything.	キムチ。何にでも。卵、ご飯、トースト。全部。
+B	Toast?	トースト？
+A	Trust me. Butter, kimchi, toast. Life-changing.	信じて。バター、キムチ、トースト。人生が変わる。
+B	How long has this been going on?	いつからそうなってるの？
+A	Three weeks. I've had it every single day.	3週間。毎日食べてる。
+S	
+B	Are you okay?	大丈夫？
+A	I've never been better. Where has this been all my life?	今までで一番いい状態。なんで今まで知らなかったんだろう。
+B	In Korea. For centuries.	韓国に。何世紀も前から。
+A	Well, it's in my fridge now. Three jars.	今は私の冷蔵庫にある。3瓶。
+B	Three?	3瓶？
+A	Different types. I'm learning the differences.	種類が違うんだ。違いを勉強してる。
+S	
+B	Fine. Bring me some. I'll try the toast thing.	わかった。持ってきて。トーストのやつを試してみる。
+A	You'll be converted by lunch.	昼までには改宗するよ。
+B	We'll see. But I'm not putting it on eggs.	どうかな。でも卵には乗せないからね。
+A	You will. Give it a week.	乗せるよ。1週間待って。
+T	🏪	コンビニやスーパーの最強の組み合わせを教える	雑談	the perfect combo, you get, then you add, trust me on this, it shouldn't work but it does
+S	
+A	I have discovered the perfect convenience store combination.	コンビニの完璧な組み合わせを発見した。
+B	Go on.	聞かせて。
+A	You get the egg sandwich. Then you get the salted plum onigiri.	卵サンドを買う。それから梅おにぎりを買う。
+B	Separately?	別々に？
+A	No. You eat them together. Bite of one, bite of the other.	いや。一緒に食べる。一口ずつ交互に。
+B	That sounds wrong.	それは間違ってる気がする。
+A	It shouldn't work. But it does. Creamy, then sharp. Trust me on this.	うまくいくはずがない。でもうまくいく。クリーミーで、それから酸っぱい。信じて。
+S	
+B	Okay, mine. Frozen peas from the supermarket.	じゃあ私の。スーパーの冷凍グリーンピース。
+A	Just peas?	ただの豆？
+B	With butter and too much black pepper. Two minutes in the microwave.	バターと黒こしょうたっぷりで。電子レンジで2分。
+A	That's... a side dish.	それは… 付け合わせだよ。
+B	It's dinner. On a Wednesday. When you've given up.	夕飯だよ。水曜の。すべてを諦めた時の。
+A	That's actually quite sad.	それは実はかなり悲しいね。
+B	It's delicious. Sad and delicious.	美味しいんだよ。悲しくて美味しい。
+S	
+A	Egg sandwich and plum onigiri versus buttered peas.	卵サンドと梅おにぎり、対バター豆。
+B	Both cost under three pounds.	どっちも3ポンド以下。
+A	Both are perfect. We're geniuses.	どっちも完璧。私たち天才だね。
+B	Cheap geniuses.	安上がりな天才。
+T	🌙	究極の夜食を語り合う	雑談	late-night snack, at two in the morning, nothing else will do, I know I shouldn't, worth every regret
+S	
+A	What's the ultimate late-night snack?	究極の夜食は何？
+B	Instant noodles. At two in the morning. Nothing else will do.	インスタントラーメン。夜中の2時に。他のものじゃだめ。
+A	With anything on top?	上に何か乗せる？
+B	An egg, dropped in at the end. And a lot of chilli oil.	最後に卵を落とす。あとラー油たっぷり。
+A	I know I shouldn't, but that sounds incredible right now.	やめたほうがいいのはわかってるけど、今すごく食べたい。
+B	It's midnight. Perfect timing.	今0時。完璧なタイミング。
+S	
+B	What about you?	そっちは？
+A	Cold pizza. From the fridge. Standing up.	冷めたピザ。冷蔵庫から。立ったまま。
+B	Why standing?	なんで立ったまま？
+A	Because if you sit down, it's a meal. Standing, it's a snack.	座ったら食事になるから。立ってれば、おやつ。
+B	That's a loophole.	それは抜け穴だね。
+A	It's the law. Everyone knows it.	法律だよ。みんな知ってる。
+B	I'd never heard it.	聞いたことなかった。
+A	Now you have. Use it wisely.	今聞いたね。賢く使って。
+S	
+B	Both terrible for us.	どっちも体に悪いね。
+A	Worth every regret.	後悔する価値はあるよ。
+B	Noodles are on. Two minutes.	ラーメン、作り始めた。2分。
+A	I'll get the chilli oil.	ラー油を取ってくる。
+T	🍛	ラーメンやカレーなど「最強の一杯」を議論する	雑談	the best bowl, hands down, nothing comes close, you haven't lived until, we'll never agree
+S	
+A	Best ramen in the city. Go.	この街で一番のラーメン。どうぞ。
+B	Hands down, the place under the railway bridge. The tonkotsu.	文句なしで、鉄道橋の下の店。豚骨。
+A	The one with the queue?	行列の店？
+B	The queue is the proof. Nothing comes close.	行列が証明だよ。他は敵わない。
+A	I disagree. The little place near the park. Shoyu. Cleaner, more subtle.	反対。公園のそばの小さな店。醤油。すっきりして、繊細。
+B	Subtle? Ramen shouldn't be subtle. It should hit you.	繊細？ ラーメンは繊細じゃだめ。ガツンと来ないと。
+S	
+A	Okay, curry, then. Best curry.	じゃあカレー。一番のカレー。
+B	My mum's.	うちの母の。
+A	That's cheating.	それはずるい。
+B	It's true, though. Twenty spices, four hours. You haven't lived until you've had it.	でも本当なんだ。20種類のスパイス、4時間。食べるまで人生を知らないよ。
+A	Fine, restaurants only.	じゃあ、レストラン限定で。
+B	The Sri Lankan place on the high street. The black pork curry.	大通りのスリランカ料理店。黒豚カレー。
+A	Oh. Okay. I can't argue with that one.	ああ。それは反論できない。
+S	
+B	So we agree on curry and disagree on ramen.	カレーは一致して、ラーメンは不一致だね。
+A	We'll never agree on ramen.	ラーメンは永遠に意見が合わないよ。
+B	Let's settle it. Both places, one weekend, blind judging.	決着をつけよう。両方の店、1つの週末、目隠し審査。
+A	You're on.	受けて立つ。
+T	🌶	辛いもの・甘いものどこまでいけるか競う	雑談	how spicy can you go, I can handle, sweat, tap out, prove it
+S	
+A	How spicy can you actually go?	実際、どのくらい辛いのまでいける？
+B	Pretty far. I put chilli on everything.	かなり。何にでも唐辛子をかけてる。
+A	That's not the same as handling real heat.	それは本当の辛さに耐えるのとは違うよ。
+B	I've done the extra hot at that Thai place.	あのタイ料理店の激辛を食べたことがある。
+A	Everyone says that.	みんなそう言うんだよね。
+B	I did it without water. Prove me wrong.	水なしで食べた。間違ってるって証明してみて。
+S	
+A	Fine. Tonight. Hottest thing on the menu. Both of us.	わかった。今夜。メニューで一番辛いもの。2人とも。
+B	First one to drink milk loses.	先に牛乳を飲んだほうが負け。
+A	Deal. And sweet? How much sugar can you take?	決まり。甘いのは？ どのくらいの砂糖までいける？
+B	Not much, honestly. One slice of cake and I'm done.	正直、あまり。ケーキ1切れで限界。
+A	Weak. I could eat a whole cake.	弱いね。私はケーキ丸ごといけるよ。
+B	A whole cake?	丸ごと？
+A	I have. Twice. Not proud.	やったことある。2回。誇れないけど。
+S	
+B	So you win on sugar, and I win on spice.	じゃあ砂糖はあなたの勝ち、辛さは私の勝ち。
+A	We'll see about spice.	辛さはこれから決めよう。
+B	Tonight. Bring tissues.	今夜。ティッシュを持ってきて。
+A	For you, maybe.	あなた用にね。
+T	🥦	苦手な食べ物を克服した話をする	雑談	I used to hate, couldn't stand, then one day, now I love it, turns out
+S	
+A	Is there anything you used to hate and now love?	昔は嫌いで、今は好きな食べ物ってある？
+B	Coriander. Couldn't stand it. Tasted like soap.	パクチー。全く受け付けなかった。石鹸みたいな味で。
+A	And now?	今は？
+B	I put it in everything. I don't know what changed.	何にでも入れてる。何が変わったのかわからない。
+A	When did it happen?	いつ変わったの？
+B	A trip to Vietnam. It was in every dish. By day four, I stopped noticing. By day seven, I wanted more.	ベトナム旅行。全部の料理に入ってた。4日目に気にならなくなって、7日目にはもっと欲しくなってた。
+A	Exposure therapy.	曝露療法だね。
+B	Exactly. Turns out I just hadn't eaten enough of it.	そう。要は、食べる量が足りてなかっただけだった。
+S	
+B	What about you?	そっちは？
+A	Olives. I hated them until I was twenty-five.	オリーブ。25歳まで嫌いだった。
+B	What changed?	何が変わったの？
+A	A good one. I'd only ever had cheap ones from a jar.	いいオリーブを食べたんだ。それまで瓶詰めの安いのしか食べたことがなくて。
+B	Ah. Quality.	ああ。品質だね。
+A	One good olive in Spain and suddenly I understood.	スペインで美味しいオリーブを1つ食べたら、急にわかった。
+S	
+B	So the lesson is: try it again, but properly.	教訓は、もう一度、でもちゃんとしたものを試すこと。
+A	Exactly. Most things I "hate" I've only had badly.	そう。「嫌い」なもののほとんどは、まずいのを食べただけ。
+B	Except mushrooms. Mushrooms are still wrong.	きのこ以外はね。きのこはまだ無理。
+A	Give it time.	時間をかけて。
 """#
 }
