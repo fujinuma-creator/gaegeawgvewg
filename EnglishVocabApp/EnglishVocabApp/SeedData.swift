@@ -37724,5 +37724,418 @@ B	I'll try that at the next party.	次のパーティーで試してみるよ。
 A	Do. And if someone does want to tell you about their kids, they will.	ぜひ。子どもの話をしたい人は、自分から話してくれますから。
 B	Without me prying.	詮索しなくてもね。
 A	Exactly. Whatever works for them.	その通り。相手のペースで。
+T	🔄	話しすぎたと感じて相手に話題を振る	人間関係	I've been talking too much, enough about me, what about you, I want to hear, your turn
+S	
+A	...and then the third time the car broke down, we just gave up and camped.	…それで3回目に車が故障した時は、諦めてキャンプしたんだ。
+B	Ha, that sounds like quite a trip.	はは、すごい旅だったね。
+A	Sorry, I've been talking for ages. Enough about me.	ごめん、ずっと話しっぱなしだった。私の話はもう十分。
+B	No, it was a good story.	いや、面白い話だったよ。
+A	Still. What about you? What have you been up to?	それでも。あなたは？ 最近どうしてた？
+B	Nothing as dramatic as that.	そんなドラマチックなことはないよ。
+A	I don't need dramatic. I want to hear anyway.	ドラマチックじゃなくていい。とにかく聞きたい。
+S	
+B	Well, I started a pottery class.	そうだな、陶芸教室を始めたんだ。
+A	You did? When?	そうなの？ いつから？
+B	Last month. I'm terrible, but I love it.	先月から。下手だけど、大好き。
+A	That's brilliant. What have you made?	素敵だね。何を作ったの？
+B	A bowl. It's more of a lump, honestly.	ボウル。正直、塊に近いけど。
+A	I want to see the lump.	その塊、見たい。
+S	
+B	You're really asking a lot of questions.	ずいぶんたくさん質問するね。
+A	I'm making up for the last twenty minutes.	さっきの20分の埋め合わせをしてるんだ。
+B	Fair. Okay, I'll bring the lump next time.	なるほど。じゃあ、次は塊を持ってくるよ。
+A	Your turn to talk for twenty minutes. Go.	今度はあなたが20分話す番。どうぞ。
+T	🤝	「また機会があれば」と社交辞令で締める	人間関係	we should do this again sometime, keep in touch, if you're ever in, let's not leave it so long, take care
+S	
+A	Well, it was really good to see you.	会えて本当によかったよ。
+B	You too. We should do this again sometime.	こちらこそ。またこういう機会があるといいね。
+A	Definitely. Let's not leave it so long next time.	ぜひ。次はこんなに間を空けないようにしよう。
+B	Agreed. Life gets busy.	そうだね。忙しくなるからね。
+A	It does. But no excuse.	そう。でも言い訳にはならない。
+S	
+B	If you're ever in Manchester, let me know.	マンチェスターに来ることがあれば、連絡して。
+A	I will. And same if you're down here.	そうする。こっちに来る時も同じね。
+B	Of course. I'll message you.	もちろん。連絡するよ。
+A	Please do.	ぜひ。
+S	
+B	Right. Take care of yourself.	じゃあ。元気でね。
+A	You too. Safe trip back.	そっちも。気をつけて帰ってね。
+B	Bye, Kohei.	じゃあね、航平。
+A	Bye.	じゃあね。
+T	🌟	人生で一番影響を受けた人は誰かを聞く	深い話	who's influenced you most, changed the way I think, I owe a lot to, without them, shaped
+S	
+A	Who's had the biggest influence on you? Like, in your whole life.	人生で一番影響を受けた人は誰？ これまでの人生全体で。
+B	That's a big question.	大きな質問だね。
+A	I've been thinking about it myself. I'm curious.	自分でも考えてたんだ。気になって。
+B	Probably my grandmother. She raised me for a few years when my parents were working abroad.	たぶん祖母かな。両親が海外で働いてた数年間、育ててくれたんだ。
+A	What was she like?	どんな人だった？
+B	Tough. Funny. She didn't let anyone feel sorry for themselves.	強くて、面白くて。誰にも自己憐憫を許さなかった。
+S	
+A	How did she change the way you think?	どんなふうに考え方を変えてくれた？
+B	She used to say, "You can complain or you can cook. Pick one."	口癖が「文句を言うか、料理をするか。どっちか選べ」だった。
+A	Ha. That's very practical.	はは。すごく実践的だね。
+B	It stuck. Whenever I'm stuck, I hear her saying it.	それが残ってる。行き詰まると、彼女の声が聞こえるんだ。
+A	Is she still around?	まだご健在？
+B	She passed a few years ago. But I owe a lot to her.	数年前に亡くなった。でも彼女には本当に多くを負ってる。
+S	
+B	What about you?	そっちは？
+A	A teacher, actually. Mr Tanaka. He told me I could write, when nobody else did.	実は先生なんだ。田中先生。誰も言ってくれなかった時に、私には書く才能があるって言ってくれた。
+B	And you believed him?	それを信じた？
+A	Not at first. But he kept saying it until I did.	最初はね。でも信じるまで言い続けてくれた。
+B	That's what the good ones do.	いい先生ってそういうものだよね。
+T	🔀	人生の転機になった出来事を話す	深い話	turning point, everything changed, looking back, I wouldn't be here, took a chance
+S	
+A	Was there a moment when everything changed for you?	人生で、すべてが変わった瞬間ってあった？
+B	One, yes. I was twenty-four and I got made redundant.	1つあるよ。24歳の時に、リストラされたんだ。
+A	That sounds like the worst moment, not a turning point.	それは最悪の瞬間で、転機には聞こえないけど。
+B	It felt like that at the time. I cried in the car park.	その時はそう感じたよ。駐車場で泣いた。
+A	And then?	それで？
+B	I had nothing to lose, so I applied for the job I'd always been too scared to try.	失うものがなくなったから、ずっと怖くて応募できなかった仕事に応募した。
+S	
+A	And you got it?	それで受かった？
+B	I got it. Ten years later, I'm still there.	受かった。10年経った今も、そこにいる。
+A	So the redundancy was the push.	じゃあリストラが後押しになったんだね。
+B	Looking back, yes. I'd never have taken the chance otherwise.	振り返ればね。そうでなければ、絶対に挑戦しなかった。
+A	Do you ever think about where you'd be if it hadn't happened?	もしそれが起きてなかったら、って考えることある？
+B	Sometimes. Still in a job I hated, probably. Comfortable and miserable.	時々ね。たぶん嫌いな仕事をまだ続けてた。安定してて、不幸な状態で。
+S	
+B	What about you? Any turning points?	そっちは？ 転機はあった？
+A	Moving abroad. I nearly didn't. My visa came through the day before I was going to cancel.	海外への移住。危うくやめるところだった。キャンセルしようとした前日にビザが下りたんだ。
+B	One day.	1日の差。
+A	One day. I wouldn't be here talking to you otherwise.	1日。そうでなければ、今ここであなたと話してない。
+B	Then I'm glad the visa was quick.	じゃあ、ビザが早くてよかったよ。
+T	🌧	一番つらかった時期とどう乗り越えたかを話す	深い話	the hardest time, got me through, one day at a time, didn't think I'd, come out the other side
+S	
+A	What's been the hardest time in your life? If you don't mind me asking.	人生で一番つらかった時期は？ 聞いてもよければ。
+B	I don't mind. It was when my dad got sick. I was nineteen.	大丈夫だよ。父が病気になった時。19歳だった。
+A	That's young.	若かったね。
+B	Too young. I had to grow up fast. Hospital visits between lectures.	若すぎた。急いで大人にならないといけなかった。講義の合間に病院通い。
+A	How did you get through it?	どうやって乗り越えたの？
+B	Honestly? I didn't think I would. I just kept showing up.	正直？ 乗り越えられるとは思ってなかった。ただ、毎日を続けただけ。
+S	
+A	Was there anything that helped?	何か支えになったものはあった？
+B	My friends. They didn't try to fix it. They just brought food and sat with me.	友達。直そうとはしなかった。ただ食べ物を持ってきて、一緒にいてくれた。
+A	That's what I've heard. The sitting matters more than the fixing.	そう聞いたことがある。直すより、そばにいることのほうが大事だって。
+B	It really does. And running. I ran every morning. It was the only hour I wasn't thinking.	本当にそう。あとランニング。毎朝走った。何も考えずにいられる唯一の1時間だった。
+A	And your dad?	お父さんは？
+B	He recovered. Slowly. He's fine now, annoying as ever.	回復した。ゆっくりね。今は元気で、相変わらず口うるさい。
+S	
+B	You come out the other side. You don't believe it while you're in it, but you do.	向こう側に出られるんだ。渦中にいる時は信じられないけど、出られる。
+A	Thank you for telling me that.	話してくれてありがとう。
+B	Thank you for asking properly. Most people don't.	ちゃんと聞いてくれてありがとう。ほとんどの人は聞かないから。
+T	👨‍👩‍👧	両親からどんな影響を受けたか話す	深い話	I get that from, my mum always, my dad taught me, turning into my parents, for better or worse
+S	
+A	Do you think you're like your parents?	自分は両親に似てると思う？
+B	More than I'd like to admit. I'm turning into my mum.	認めたくないくらいね。母になりつつある。
+A	In what way?	どんなふうに？
+B	I say "we'll see" instead of "no". And I keep plastic bags. Just in case.	「だめ」の代わりに「考えとく」って言う。あとビニール袋を取っておく。念のために。
+A	Ha. The bags are universal.	はは。袋はどこの母親も同じだね。
+B	For better or worse, that's where I get it.	良くも悪くも、それは母譲りだよ。
+S	
+A	And your dad?	お父さんは？
+B	He taught me to fix things before replacing them. Anything. Toasters, chairs, friendships.	壊れたら買い替える前に直せって教えてくれた。何でも。トースター、椅子、友情。
+A	Friendships?	友情？
+B	He said the same thing about all of them. "Have you actually tried fixing it?"	全部に同じことを言ってた。「本当に直そうとしたか？」って。
+A	That's actually good advice.	それ、いいアドバイスだね。
+B	It's annoying how often it's right.	正しいことが多くて腹が立つよ。
+S	
+B	What about you? Which parent are you turning into?	そっちは？ どっちの親になりつつある？
+A	My dad. I've started reading the news out loud to people who didn't ask.	父。頼まれてもいないのに、ニュースを声に出して読み始めた。
+B	Oh no. It's happening.	うわ。始まってるね。
+A	I caught myself last week. I was horrified.	先週、自分でも気づいた。ぞっとしたよ。
+B	Welcome to the club.	ようこそ、同じ仲間へ。
+T	🧒	子どもの頃どんな性格だったか聞く	雑談	what were you like as a kid, shy, a troublemaker, changed a lot, still the same
+S	
+A	What were you like as a kid?	子どもの頃はどんな子だった？
+B	Painfully shy. I hid behind my mum's legs until I was about eight.	ものすごく内気だった。8歳くらいまで母の脚の後ろに隠れてた。
+A	You? Shy? I don't believe it.	あなたが？ 内気？ 信じられない。
+B	Ask anyone from my school. I barely spoke.	学校の誰かに聞いてみて。ほとんど話さなかった。
+A	So what changed?	何が変わったの？
+B	Drama club. At thirteen. My teacher basically made me join.	演劇部。13歳の時。先生に半ば無理やり入部させられた。
+A	And that was it?	それだけ？
+B	That was it. Once I'd been on a stage, talking to people felt easy.	それだけ。舞台に立ったら、人と話すのが簡単に感じるようになった。
+S	
+B	And you? Let me guess. Troublemaker.	そっちは？ 当ててみよう。問題児。
+A	How did you know?	なんでわかったの？
+B	You've got that look. Like you've been told off a lot.	そういう顔してる。よく叱られてきた顔。
+A	I was in the headmaster's office so often he gave me my own chair.	校長室に行きすぎて、専用の椅子をもらったよ。
+B	Ha! What did you do?	はは！ 何をしたの？
+A	Nothing bad. Just talked. Constantly. To everyone.	悪いことじゃない。ただ話してた。ずっと。誰にでも。
+S	
+B	So you haven't changed at all.	じゃあ、全然変わってないんだね。
+A	Not one bit. And you've changed completely.	一つも。それで、あなたは完全に変わった。
+B	Between us, we make one normal person.	2人合わせて、やっと1人分の普通の人だね。
+T	🎓	学生時代の一番の思い出を聞く	雑談	best memory, back at uni, the night we, I'll never forget, those were the days
+S	
+A	What's your best memory from uni?	大学時代の一番の思い出は？
+B	Easy. The night we climbed onto the library roof to watch the sunrise.	簡単。日の出を見るために図書館の屋根に登った夜。
+A	You climbed onto the library?	図書館に登ったの？
+B	There was a fire escape. It wasn't hard.	非常階段があったんだ。難しくなかった。
+A	Was it worth it?	それだけの価値はあった？
+B	Best sunrise I've ever seen. Six of us, freezing, totally silent.	人生で一番綺麗な日の出。6人で、凍えながら、完全に無言で。
+A	That sounds perfect.	完璧だね。
+B	Then the security guard found us. Less perfect.	それから警備員に見つかった。それは完璧じゃなかった。
+S	
+B	What about you?	そっちは？
+A	Nothing that adventurous. Probably just the late-night conversations in the kitchen.	そんな冒険じゃない。たぶん、キッチンでの深夜の会話かな。
+B	About what?	何について？
+A	Everything. Nothing. We'd start at midnight and somehow it was four.	何でも。何もない話。0時に始めて、気づいたら4時。
+B	Those were the days.	いい時代だったね。
+A	We had so much time. And we had no idea.	時間がたっぷりあった。それに気づいてなかった。
+S	
+B	Do you still see those people?	その人たちとはまだ会う？
+A	A couple. We still do the kitchen thing when we visit each other.	数人とは。お互いの家に行くと、まだキッチンでの会話をやるよ。
+B	Some things shouldn't change.	変わらなくていいこともあるね。
+T	💼	初めてのアルバイトの話をする	雑談	my first job, minimum wage, I was sixteen, taught me, I lasted
+S	
+A	What was your first job?	初めての仕事は何だった？
+B	Washing dishes in a hotel kitchen. I was sixteen.	ホテルの厨房で皿洗い。16歳だった。
+A	How was it?	どうだった？
+B	Brutal. Ten-hour shifts, boiling water, a chef who screamed at everyone.	過酷だった。10時間シフト、熱湯、みんなに怒鳴るシェフ。
+A	How long did you last?	どのくらい続いた？
+B	Two summers, actually. The money was good for a kid.	実は2回の夏。子どもにしては給料が良かったから。
+S	
+A	Did it teach you anything?	何か学んだ？
+B	That I never wanted to work in a kitchen again. And how to be fast.	二度と厨房では働きたくないってこと。それと、速く動くこと。
+A	The chef, though. Did you ever stand up to him?	でもそのシェフ。反抗したことはあった？
+B	Once. He respected me after that. Weirdly.	一度だけ。それ以来、認めてくれた。変な話だけど。
+A	Kitchens are strange places.	厨房って不思議な場所だよね。
+S	
+B	What about yours?	そっちは？
+A	Paper round. Five in the morning, every day, in the rain.	新聞配達。毎朝5時、雨の日も。
+B	That's very wholesome.	健全だね。
+A	It was minimum wage and I hated every second. But I bought my first guitar with it.	最低賃金で、毎秒が嫌だった。でもそのお金で最初のギターを買ったんだ。
+B	Then it was worth it.	じゃあ価値があったね。
+T	✈️	初めて海外に行った時の話をする	雑談	first time abroad, culture shock, I was so nervous, everything was different, changed how I see
+S	
+A	Do you remember your first trip abroad?	初めて海外に行った時のこと、覚えてる？
+B	Vividly. Spain, when I was twelve. With my family.	鮮明に。12歳の時のスペイン。家族と。
+A	What do you remember most?	一番覚えてるのは？
+B	The heat. And that people ate dinner at ten at night. I was amazed.	暑さ。あと、みんな夜10時に夕飯を食べてたこと。びっくりした。
+A	Culture shock at twelve.	12歳でカルチャーショックだね。
+B	Everything was different. The smells, the noise. I loved it.	何もかもが違った。匂いも、音も。大好きだった。
+S	
+A	Mine was later. Twenty-two, on my own.	私はもっと遅かった。22歳で、一人で。
+B	Where?	どこに？
+A	Vietnam. I was so nervous I nearly didn't get on the plane.	ベトナム。緊張しすぎて、飛行機に乗るのをやめそうになった。
+B	But you did.	でも乗ったんだね。
+A	I did. And by day three I'd stopped being scared of anything.	乗った。3日目には、何も怖くなくなってた。
+B	That's the thing about travel. It recalibrates you.	旅ってそういうものだよね。自分を調整し直してくれる。
+S	
+A	It changed how I see home, too.	故郷の見方も変わった。
+B	How so?	どんなふうに？
+A	I noticed things I'd never noticed. Good and bad.	今まで気づかなかったことに気づくようになった。良いことも悪いことも。
+B	That's the real souvenir.	それが本当のお土産だね。
+T	🏆	「一番の自慢」を照れながら話す	雑談	I don't like to brag, but, this is going to sound, if I'm honest, I'm quite proud of, don't tell anyone
+S	
+A	What's the thing you're most proud of? And you're not allowed to say "nothing".	一番誇りに思ってることは？ 「何もない」は禁止ね。
+B	Ugh. This is going to sound ridiculous.	うう。ばかみたいに聞こえると思うけど。
+A	Go on.	どうぞ。
+B	I taught myself to play the piano. As an adult. No lessons.	独学でピアノを覚えたんだ。大人になってから。レッスンなしで。
+A	That's not ridiculous. That's incredible.	ばかみたいじゃないよ。すごいことだよ。
+B	I can only play about five songs. But I can play them.	5曲くらいしか弾けないけど。でも弾けるんだ。
+S	
+A	How long did it take?	どのくらいかかった？
+B	Three years of practising badly every evening.	毎晩3年間、下手なりに練習して。
+A	And now?	それで今は？
+B	Now my neighbours don't complain. That's progress.	今は隣人から苦情が来なくなった。それが進歩。
+A	I want to hear you play.	演奏を聴いてみたい。
+B	Absolutely not. I said I'm proud, not that I'm good.	絶対だめ。誇りに思ってるって言っただけで、上手いとは言ってない。
+S	
+A	Fine. Mine's smaller. I've kept a plant alive for two years.	わかった。私のはもっと小さい。植物を2年間枯らさずにいる。
+B	Two years! That's the longest anyone in our family has managed.	2年！ うちの家族で一番長いよ。
+A	I don't like to brag, but she's thriving.	自慢はしたくないけど、元気に育ってる。
+B	Don't tell anyone. They'll start giving you their plants.	誰にも言わないほうがいい。みんな自分の植物を押し付けてくるから。
+T	🍂	好きな季節とその理由を話す	雑談	favourite season, can't beat, the light, that time of year, come alive
+S	
+A	What's your favourite season?	一番好きな季節は？
+B	Autumn. Without question.	秋。間違いなく。
+A	Why autumn?	なんで秋？
+B	The light. Everything goes gold in the afternoons. And you can wear jumpers again.	光だよ。午後になると何もかも金色になる。それにまたセーターが着られる。
+A	You're a jumper person.	セーター派なんだね。
+B	I'm a jumper person. I'm counting the days until September.	セーター派。9月まで指折り数えてる。
+S	
+B	What about you?	そっちは？
+A	Spring. That first warm day when everyone comes outside.	春。最初の暖かい日に、みんなが外に出てくる瞬間。
+B	The whole city comes alive.	街全体が生き返るよね。
+A	Exactly. And you can't beat that smell after rain.	そう。それに雨上がりのあの匂いは最高。
+B	Okay, spring's a strong second.	なるほど、春は強力な2位だね。
+A	Second? Your autumn is just spring with dying leaves.	2位？ あなたの秋なんて、葉っぱが枯れる春でしょ。
+B	How dare you.	よくもそんなことを。
+S	
+A	What about winter?	冬は？
+B	Only for the first snow. Then it can leave.	最初の雪だけ。あとは帰っていい。
+A	Ha. Agreed. Summer?	はは。同感。夏は？
+B	Too hot. I'm a jumper person, remember.	暑すぎる。セーター派だからね、忘れないで。
+T	🌿	一番落ち着く場所はどこか聞く	雑談	where do you feel most at peace, my happy place, switch off, nobody knows, just sit
+S	
+A	Where's the place you feel most at peace?	一番心が落ち着く場所ってどこ？
+B	There's a bench by the river, ten minutes from my flat.	うちから10分のところに、川沿いのベンチがあるんだ。
+A	A bench?	ベンチ？
+B	A specific bench. Under a willow. Nobody's ever there.	特定のベンチ。柳の下。誰もいたことがない。
+A	What do you do there?	そこで何をするの？
+B	Nothing. That's the point. I just sit and watch the water.	何も。それが大事なんだ。ただ座って水を眺める。
+A	For how long?	どのくらい？
+B	Twenty minutes, an hour. Until my head's quiet.	20分、1時間。頭が静かになるまで。
+S	
+B	What about you? Do you have a spot?	そっちは？ そういう場所ある？
+A	My grandparents' kitchen. Even now, with them gone.	祖父母の家のキッチン。2人がいなくなった今でも。
+B	Is the house still in the family?	家はまだ家族のもの？
+A	My uncle lives there. I visit twice a year and just sit in that kitchen.	叔父が住んでる。年に2回行って、ただそのキッチンに座るんだ。
+B	Does it still smell the same?	匂いはまだ同じ？
+A	Exactly the same. I don't know how. It's like time stopped.	全く同じ。どうしてかわからない。時間が止まってるみたいに。
+S	
+B	That's beautiful. Everyone needs a place like that.	素敵だね。誰にでもそういう場所が必要だよ。
+A	I'd like to see your bench sometime.	いつかあなたのベンチを見てみたい。
+B	Okay. But you have to be quiet.	いいよ。でも静かにしてね。
+A	I'll bring a book.	本を持っていくよ。
+T	🛋	理想の休日の過ごし方を聞く	雑談	perfect day off, no alarm, nowhere to be, guilty pleasure, recharge
+S	
+A	Describe your perfect day off. No limits.	理想の休日を教えて。制限なしで。
+B	No alarm, first of all.	まず、目覚ましなし。
+A	Obviously.	当然だね。
+B	Then a long breakfast. The kind that takes two hours.	それから長い朝食。2時間かかるようなやつ。
+A	Pancakes?	パンケーキ？
+B	Pancakes, coffee, and a newspaper. An actual paper one.	パンケーキとコーヒーと新聞。本物の紙のやつ。
+A	Very old-fashioned.	すごく古風だね。
+B	It's the best. Then a walk with nowhere to be.	それが最高なんだよ。それから、行き先のない散歩。
+S	
+B	What's yours?	そっちは？
+A	Honestly, mine's lazier. Films. All day. In pyjamas.	正直、私のはもっとだらしない。映画。一日中。パジャマで。
+B	That's a guilty pleasure.	それは罪深い楽しみだね。
+A	No guilt. Just pleasure. I've made my peace with it.	罪悪感はない。楽しみだけ。もう受け入れたんだ。
+B	How many films?	何本？
+A	Three, usually. Four if it's raining.	だいたい3本。雨なら4本。
+B	And then?	それから？
+A	Takeaway. Early night. Perfect.	テイクアウト。早く寝る。完璧。
+S	
+B	We should each do the other's perfect day.	お互いの理想の休日を交換してやってみようよ。
+A	You'd hate mine.	私のは嫌いになると思う。
+B	And you'd hate my walk. But that's the fun.	あなたは私の散歩が嫌いになる。でもそこが面白い。
+A	Fine. Next Sunday. Pancakes at yours, films at mine.	わかった。来週の日曜。パンケーキはあなたの家、映画は私の家で。
+T	🤔	もし今の仕事をしていなかったら何をしていたか聞く	雑談	if you weren't, in another life, I'd have been, never too late, plan B
+S	
+A	If you weren't doing this job, what would you be doing?	今の仕事をしてなかったら、何をしてたと思う？
+B	In another life? A chef.	別の人生なら？ シェフ。
+A	Really? I didn't know you cooked.	本当？ 料理するなんて知らなかった。
+B	I don't, much. That's why it's another life.	あまりしないよ。だから「別の人生」なんだ。
+A	What stopped you?	何が止めたの？
+B	Fear, mostly. And my parents thought it wasn't a real job.	主に怖さ。あと、両親がまともな仕事じゃないと思ってた。
+S	
+B	What about you?	そっちは？
+A	A carpenter. I like making things you can touch.	大工。触れるものを作るのが好きなんだ。
+B	You'd be good at that. You're patient.	向いてると思うよ。辛抱強いから。
+A	I've got a workbench in the garage. It's my plan B.	ガレージに作業台がある。それがプランB。
+B	A plan B you actually use?	実際に使ってるプランB？
+A	Every weekend. I've made three chairs. Two of them are safe to sit on.	毎週末。椅子を3つ作った。2つは座っても安全。
+S	
+B	Maybe it's never too late.	遅すぎることはないのかもね。
+A	For the carpentry or the cooking?	大工のこと？ それとも料理？
+B	Both. What if we just tried?	両方。やってみたらどうかな？
+A	You cook, I'll build you a table to serve it on.	あなたが料理して、私はそれを乗せるテーブルを作る。
+B	Deal. Worst case, we get a wobbly table and a burnt dinner.	決まり。最悪でも、ぐらつくテーブルと焦げた夕飯が手に入る。
+T	🙏	一番尊敬している人とその理由を聞く	深い話	who do you look up to, admire, the way they, never gave up, aspire to be
+S	
+A	Who do you look up to most?	一番尊敬してる人は誰？
+B	My old boss, actually. Sarah, at my first proper job.	実は、昔の上司。最初のちゃんとした仕事の時のサラ。
+A	What was it about her?	彼女のどこが？
+B	She never made anyone feel small. Even when they'd messed up.	誰にも小さく感じさせなかった。ミスをした時でも。
+A	That's rare.	それは珍しいね。
+B	Very. And she'd take the blame publicly and give the credit publicly. Every time.	すごく。それに責任は人前で引き受けて、功績は人前で譲ってた。毎回。
+A	I've had the opposite kind of boss.	私は逆のタイプの上司に当たったことがある。
+B	Most people have. That's why she stands out.	ほとんどの人がそうだよ。だから彼女が際立つんだ。
+S	
+A	Do you try to be like her?	彼女のようになろうとしてる？
+B	I aspire to. I fail a lot, but I try.	そう目指してる。よく失敗するけど、努力はしてる。
+A	What's the hardest part?	一番難しいのは？
+B	Taking the blame. My instinct is to explain. She just said "that's on me" and moved on.	責任を取ること。私の本能は言い訳することだから。彼女は「私の責任」って言って、先に進んでた。
+S	
+B	Who's yours?	そっちは？
+A	My sister. She raised two kids alone and finished a degree at the same time.	姉。一人で子ども2人を育てながら、同時に学位を取ったんだ。
+B	That's extraordinary.	それは並外れてるね。
+A	She never once complained. I complain when the Wi-Fi's slow.	一度も愚痴を言わなかった。私はWi-Fiが遅いだけで文句を言うのに。
+B	Ha. We all do. But you notice her. That counts.	はは。みんなそうだよ。でも、お姉さんのすごさに気づいてる。それが大事。
+T	📜	座右の銘や好きな言葉を聞く	深い話	words to live by, motto, someone once told me, stuck with me, remind myself
+S	
+A	Do you have a motto? Words you live by?	座右の銘ってある？ 大事にしてる言葉。
+B	Sort of. "Done is better than perfect."	まあね。「完璧より完了」。
+A	Where's that from?	どこから来た言葉？
+B	Someone told me when I was stuck on a project for months. It unstuck me.	何か月もプロジェクトで行き詰まってた時、誰かに言われたんだ。それで抜け出せた。
+A	Do you actually live by it?	本当にそれに従って生きてる？
+B	I try. I still want things perfect. But I ship them anyway.	努力はしてる。今でも完璧にしたいけど、とにかく出すようにしてる。
+S	
+B	What's yours?	そっちは？
+A	"Be kind. Everyone's fighting a battle you can't see."	「優しくあれ。誰もが見えない戦いをしている」。
+B	That's a good one.	いい言葉だね。
+A	My grandmother used to say it. I remind myself when someone's rude.	祖母がよく言ってた。誰かに失礼なことをされた時、自分に言い聞かせる。
+B	Does it work?	効果はある？
+A	Half the time. The other half, I'm just annoyed.	半分は。あとの半分は、ただイラついてる。
+B	Half is better than none.	半分でもゼロよりいいよ。
+S	
+A	What about a bad motto? Something you've unlearned?	逆に、捨てた座右の銘は？
+B	"Never let them see you sweat." Terrible advice. Let them see.	「弱みを見せるな」。ひどいアドバイスだった。見せていいんだよ。
+A	That's a good unlearning.	いい捨て方だね。
+T	⚖️	「お金」と「時間」どちらが大事かを話す	深い話	which matters more, you can't buy, trade, enough, what would you do with
+S	
+A	Money or time. Which matters more to you?	お金と時間。どっちが大事？
+B	Time. Every time.	時間。絶対に。
+A	That's easy to say when you have money.	お金がある人が言うのは簡単だよ。
+B	True. I've been broke, and then it's money.	たしかに。金欠だった時は、お金だった。
+A	So it depends.	じゃあ状況次第だね。
+B	It depends on whether you have enough. Once you do, it flips.	十分にあるかどうかによる。十分にあると、逆転する。
+S	
+A	What would you do with more time?	時間がもっとあったら、何をする？
+B	Nothing impressive. Cook properly. See my parents more. Read.	大したことじゃない。ちゃんと料理する。両親にもっと会う。本を読む。
+A	All things money can't buy.	全部、お金では買えないものだね。
+B	Exactly. And all things I keep putting off.	そう。そして全部、先延ばしにし続けてること。
+A	Because of work. Which is for money.	仕事のせいで。それはお金のため。
+B	You see the trap.	罠が見えてるね。
+S	
+A	I traded money for time last year. Went part-time.	去年、お金を時間と交換した。パートタイムにしたんだ。
+B	How's that going?	どう？
+A	Less stuff, more life. I don't regret it.	物は減って、人生は増えた。後悔してない。
+B	Maybe I should try that.	私もやってみるべきかな。
+A	Start with a day. See what you do with it.	1日から始めてみて。その日をどう使うか見てみるといい。
+T	☀️	幸せだと感じる瞬間を聞く	深い話	when do you feel happiest, small moments, it's the little things, content, that's enough
+S	
+A	When do you feel happiest? Genuinely.	本当に幸せだと感じるのはどんな時？
+B	Small moments, mostly. The first sip of coffee when the house is quiet.	だいたい小さな瞬間。家が静かな時の、最初の一口のコーヒー。
+A	That's a good one.	いいね。
+B	Or when my dog sees me come home. Pure joy, every day.	それか、犬が私の帰宅に気づく時。毎日、純粋な喜び。
+A	Nobody's ever that happy to see me.	誰もそんなに私を見て喜んでくれないよ。
+B	Get a dog.	犬を飼いなよ。
+S	
+B	What about you?	そっちは？
+A	Cooking for people. Watching them eat and not say anything because it's good.	人に料理を作ること。美味しくて何も言わずに食べてるのを見る時。
+B	The silence of a good meal.	美味しい食事の沈黙だね。
+A	That's exactly it. That silence is the best compliment.	まさにそれ。あの沈黙が最高の褒め言葉。
+B	You should cook for me sometime.	今度私にも作ってよ。
+A	I will. But you have to be silent.	いいよ。でも静かにしててね。
+S	
+A	It really is the little things, isn't it?	本当に些細なことなんだよね。
+B	It is. The big things are rare. The little ones are every day.	そう。大きなことは稀だけど、小さなことは毎日ある。
+A	That's enough, I think.	それで十分だと思う。
+B	More than enough.	十分すぎるくらい。
+T	🧘	ストレス発散の方法を教え合う	雑談	how do you deal with stress, blow off steam, switch off, works for me, give it a try
+S	
+A	How do you deal with stress? I need new ideas.	ストレスはどう発散してる？ 新しいアイデアが欲しくて。
+B	Running. It's boring, but it works.	ランニング。退屈だけど、効く。
+A	I've tried. I hate it.	試したよ。嫌いなんだ。
+B	Fair. What have you been doing?	なるほど。今は何をしてる？
+A	Mostly scrolling my phone and feeling worse.	主にスマホをスクロールして、余計に落ち込んでる。
+B	Yeah, that's not it.	うん、それは違うね。
+S	
+B	What about something with your hands? Cooking, drawing, anything.	手を使うことはどう？ 料理、絵、何でも。
+A	I do like cooking.	料理は好きだよ。
+B	Then cook something complicated. Something that takes all your attention.	じゃあ複雑な料理を作って。集中力を全部使うようなやつ。
+A	So I can't think about work.	仕事のことを考えられないように。
+B	Exactly. You can't worry about emails while you're making pasta from scratch.	そう。パスタを一から作ってる間は、メールの心配はできないから。
+A	That's actually clever.	それは賢いね。
+S	
+A	And what do you do when running doesn't work?	ランニングが効かない時はどうする？
+B	A hot bath and a terrible film. Something so bad I can't take it seriously.	熱いお風呂と、ひどい映画。真剣に見られないくらいひどいやつ。
+A	That I can do.	それならできる。
+B	Give both a try. Report back.	両方試してみて。報告して。
+A	Pasta and bad films. On it.	パスタとひどい映画。やってみる。
 """#
 }
