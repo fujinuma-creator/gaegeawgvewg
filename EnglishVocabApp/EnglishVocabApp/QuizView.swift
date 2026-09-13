@@ -10,9 +10,9 @@ struct QuizView: View {
 
     enum QuizMode: String, CaseIterable, Identifiable {
         // Declaration order drives the segmented control order:
-        // 例文翻訳 (left) → 使う場面 (middle) → 英語の定義 (right).
+        // 例文翻訳 → トピック会話 → 英語の定義 → 単語復習.
         case translation = "例文翻訳"
-        case useCase = "使う場面"
+        case topicTalk = "トピック会話"
         case definition = "英語の定義"
         /// Swipe-through flashcards drawn from the 復習リスト（会話頻度順）
         /// table. Has its own menu screen (今日の単語 / 復習単語 / 全部の単語).
@@ -24,7 +24,7 @@ struct QuizView: View {
         /// localized rawValue display name.
         var modeKey: String {
             switch self {
-            case .useCase:     return "useCase"
+            case .topicTalk:   return "topicTalk"
             case .definition:  return "definition"
             case .translation: return "translation"
             case .wordReview:  return "wordReview"
@@ -33,7 +33,7 @@ struct QuizView: View {
 
         var prompt: String {
             switch self {
-            case .useCase:     return "この単語を使う場面はどれ？"
+            case .topicTalk:   return ""
             case .definition:  return "この単語の英語の定義はどれ？"
             case .translation: return "下の日本語を英語に訳してください"
             case .wordReview:  return ""
@@ -41,14 +41,14 @@ struct QuizView: View {
         }
 
         var minimumEligible: Int {
-            // Multiple-choice modes need 4 distinct words for distractors.
-            // Translation / word review only need 1.
-            (self == .translation || self == .wordReview) ? 1 : 4
+            // 英語の定義 needs 4 distinct words for distractors; the other
+            // modes don't draw on the review list at all.
+            self == .definition ? 4 : 1
         }
 
         var emptyMessage: String {
             switch self {
-            case .useCase:     return "復習リスト内に「使う場面」付きの単語が4つ以上必要です"
+            case .topicTalk:   return "トピックがありません"
             case .definition:  return "復習リスト内に「英語の定義」付きの単語が4つ以上必要です"
             case .translation: return "本日分の例文がありません"
             case .wordReview:  return "単語が登録されていません"
@@ -67,7 +67,7 @@ struct QuizView: View {
         let sourceWord: Word
     }
 
-    @State private var mode: QuizMode = .useCase
+    @State private var mode: QuizMode = .translation
     @State private var currentWord: Word?
     @State private var correctChoiceId: UUID? = nil
     @State private var choices: [QuizChoice] = []
@@ -123,8 +123,8 @@ struct QuizView: View {
 
     private func filterByModeContent(_ words: [Word]) -> [Word] {
         switch mode {
-        case .useCase:
-            return words.filter { !$0.useCases.isEmpty }
+        case .topicTalk:
+            return words   // not used: topic talk has its own data source
         case .definition:
             return words.filter {
                 !$0.definitionEnglish.trimmingCharacters(in: .whitespaces).isEmpty
@@ -139,9 +139,12 @@ struct QuizView: View {
     /// Can we actually run the quiz right now?
     private var canShowQuiz: Bool {
         switch mode {
-        case .useCase, .definition:
+        case .definition:
             guard !eligibleWords.isEmpty else { return false }
             return distractorPool.count >= 4
+        case .topicTalk:
+            // Topic talk manages its own empty state inside its list.
+            return true
         case .translation:
             // Translation is driven by the daily example plan, not the
             // review list, so it only needs today's Day to be non-empty.
@@ -158,7 +161,7 @@ struct QuizView: View {
     /// "本日のタスクは終了しました" celebration view.
     private var allTasksDone: Bool {
         // Translation never "runs out": it always serves today's Day.
-        guard mode != .translation, mode != .wordReview else { return false }
+        guard mode == .definition else { return false }
         return !store.reviewListWords.isEmpty && eligibleWords.isEmpty
     }
 
@@ -170,7 +173,7 @@ struct QuizView: View {
                 Spacer()
                 // Word review deliberately shows no score / counter up top;
                 // its "X / N" position lives just above the word instead.
-                if mode != .wordReview {
+                if mode != .wordReview, mode != .topicTalk {
                     Text("\(correctCount) / \(totalCount)")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
@@ -189,6 +192,9 @@ struct QuizView: View {
 
             if mode == .wordReview {
                 WordReviewView()
+                    .environmentObject(store)
+            } else if mode == .topicTalk {
+                TopicTalkView()
                     .environmentObject(store)
             } else if !canShowQuiz {
                 Spacer()
@@ -474,7 +480,7 @@ struct QuizView: View {
     }
 
     private func nextQuestion() {
-        guard canShowQuiz, mode != .wordReview else {
+        guard canShowQuiz, mode != .wordReview, mode != .topicTalk else {
             currentWord = nil
             choices = []
             currentExample = nil
@@ -527,8 +533,8 @@ struct QuizView: View {
     /// Translation mode doesn't use multiple-choice, so it returns nil.
     private func choiceText(for word: Word) -> String? {
         switch mode {
-        case .useCase:
-            return word.useCases.randomElement()
+        case .topicTalk:
+            return nil
         case .definition:
             let def = word.definitionEnglish.trimmingCharacters(in: .whitespaces)
             return def.isEmpty ? nil : def
@@ -539,8 +545,8 @@ struct QuizView: View {
 
     private func wrongChoiceCopy(for sourceWord: Word) -> String {
         switch mode {
-        case .useCase:
-            return "選んだ場面は「\(sourceWord.word)」の使い方です"
+        case .topicTalk:
+            return ""  // not used in topic talk
         case .definition:
             return "選んだ定義は「\(sourceWord.word)」のものです"
         case .translation, .wordReview:
@@ -2164,6 +2170,348 @@ struct WordReviewSessionView: View {
         index = 0
         stage = .front
         dragOffset = .zero
+    }
+}
+
+// MARK: - トピック会話
+
+/// Topic list. Grouped by category, one clean card per topic, with the
+/// conversation itself pushed on top when a card is tapped.
+struct TopicTalkView: View {
+    @EnvironmentObject var store: WordStore
+
+    @State private var selected: TopicConversation? = nil
+    @State private var query: String = ""
+
+    private var topics: [TopicConversation] { TopicSeed.topics }
+
+    private var filtered: [TopicConversation] {
+        let q = query.trimmingCharacters(in: .whitespaces).lowercased()
+        guard !q.isEmpty else { return topics }
+        return topics.filter {
+            $0.title.lowercased().contains(q)
+                || $0.category.lowercased().contains(q)
+                || $0.keys.contains { $0.lowercased().contains(q) }
+        }
+    }
+
+    /// Categories in the order they first appear in the seed, so the list
+    /// reads in the order the topics were authored rather than alphabetically.
+    private var categories: [String] {
+        var seen: [String] = []
+        for t in filtered where !seen.contains(t.category) {
+            seen.append(t.category)
+        }
+        return seen
+    }
+
+    var body: some View {
+        VStack(spacing: 0) {
+            searchField
+            if filtered.isEmpty {
+                Spacer()
+                Text("該当するトピックがありません")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                Spacer()
+            } else {
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 18, pinnedViews: []) {
+                        ForEach(categories, id: \.self) { cat in
+                            VStack(alignment: .leading, spacing: 8) {
+                                categoryHeader(cat)
+                                VStack(spacing: 8) {
+                                    ForEach(filtered.filter { $0.category == cat }) { t in
+                                        Button { selected = t } label: { topicCard(t) }
+                                            .buttonStyle(.plain)
+                                    }
+                                }
+                            }
+                        }
+                        Spacer(minLength: 16)
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, 4)
+                }
+            }
+        }
+        .sheet(item: $selected) { t in
+            TopicConversationView(topic: t)
+                .environmentObject(store)
+        }
+    }
+
+    private var searchField: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "magnifyingglass")
+                .font(.system(size: 14))
+                .foregroundStyle(.secondary)
+            TextField("トピックを検索", text: $query)
+                .font(.subheadline)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
+            if !query.isEmpty {
+                Button {
+                    query = ""
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 15))
+                        .foregroundStyle(.secondary)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 9)
+        .background(Capsule().fill(Color.white.opacity(0.8)))
+        .padding(.horizontal, 16)
+        .padding(.bottom, 10)
+    }
+
+    private func categoryHeader(_ cat: String) -> some View {
+        HStack(spacing: 8) {
+            Text(cat)
+                .font(.caption.bold())
+                .foregroundStyle(.indigo)
+            Rectangle()
+                .fill(Color.indigo.opacity(0.18))
+                .frame(height: 1)
+        }
+    }
+
+    private func topicCard(_ t: TopicConversation) -> some View {
+        HStack(spacing: 12) {
+            Text(t.emoji)
+                .font(.system(size: 22))
+                .frame(width: 38, height: 38)
+                .background(Circle().fill(Color.indigo.opacity(0.10)))
+            VStack(alignment: .leading, spacing: 3) {
+                Text(t.title)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(.primary)
+                    .lineLimit(1)
+                Text(t.keys.prefix(3).joined(separator: " · "))
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+            }
+            Spacer(minLength: 6)
+            Text("\(t.lineCount)")
+                .font(.caption2.bold())
+                .foregroundStyle(.secondary)
+            Image(systemName: "chevron.right")
+                .font(.caption2.bold())
+                .foregroundStyle(.tertiary)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 13)
+                .fill(Color.white.opacity(0.86))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 13)
+                        .stroke(Color.black.opacity(0.06), lineWidth: 0.8)
+                )
+        )
+        .contentShape(Rectangle())
+    }
+}
+
+/// One topic's conversation: Japanese and English alternating, each line with
+/// its IPA and a play button. A tick in the toolbar hides the Japanese so the
+/// same page doubles as listening practice.
+struct TopicConversationView: View {
+    let topic: TopicConversation
+
+    @EnvironmentObject var store: WordStore
+    @Environment(\.dismiss) private var dismiss
+
+    @AppStorage("topicTalk.showJapanese") private var showJapanese: Bool = true
+    @AppStorage("topicTalk.showIPA") private var showIPA: Bool = true
+    @State private var detailWord: Word? = nil
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    ForEach(topic.scenes) { scene in
+                        VStack(alignment: .leading, spacing: 10) {
+                            if !scene.label.isEmpty {
+                                Text(scene.label)
+                                    .font(.caption.bold())
+                                    .foregroundStyle(.indigo)
+                                    .padding(.horizontal, 10)
+                                    .padding(.vertical, 4)
+                                    .background(Capsule().fill(Color.indigo.opacity(0.10)))
+                            }
+                            ForEach(scene.lines) { line in
+                                turn(line)
+                            }
+                        }
+                    }
+                    if !topic.keys.isEmpty {
+                        keySection
+                    }
+                    Spacer(minLength: 8)
+                }
+                .padding(.horizontal, 16)
+                .padding(.vertical, 12)
+            }
+            .background(Color(.systemGroupedBackground))
+            .navigationTitle("\(topic.emoji) \(topic.title)")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Menu {
+                        Toggle("日本語を表示", isOn: $showJapanese)
+                        Toggle("発音記号を表示", isOn: $showIPA)
+                    } label: {
+                        Image(systemName: "textformat")
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("閉じる") { dismiss() }
+                }
+            }
+        }
+        .sheet(item: $detailWord) { w in
+            WordDetailSheet(word: w)
+                .environmentObject(store)
+        }
+    }
+
+    /// One turn. A is left-aligned and neutral, B is tinted, so the two
+    /// speakers are easy to tell apart at a glance.
+    private func turn(_ line: TopicLine) -> some View {
+        let isA = line.speaker == "A"
+        return HStack(alignment: .top, spacing: 10) {
+            Text(line.speaker)
+                .font(.caption2.bold())
+                .foregroundStyle(isA ? Color.indigo : Color.teal)
+                .frame(width: 20, height: 20)
+                .background(Circle().fill((isA ? Color.indigo : Color.teal).opacity(0.13)))
+
+            VStack(alignment: .leading, spacing: 4) {
+                if showJapanese {
+                    Text(line.japanese)
+                        .font(.system(size: 13))
+                        .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    Text(line.english)
+                        .font(.system(size: 16, weight: .medium))
+                        .fixedSize(horizontal: false, vertical: true)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Button {
+                        // Whole sentence: natural pace first, half speed on a
+                        // second consecutive tap.
+                        SpeechManager.shared.speak(line.english, slowed: false)
+                    } label: {
+                        Image(systemName: "speaker.wave.2.fill")
+                            .font(.system(size: 13))
+                            .foregroundStyle(.indigo)
+                            .padding(4)
+                            .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
+                }
+                if showIPA, !line.ipa.isEmpty {
+                    Text("/\(line.ipa)/")
+                        .font(.system(size: 11))
+                        .foregroundStyle(.tertiary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(isA ? Color.white.opacity(0.9) : Color.indigo.opacity(0.06))
+        )
+    }
+
+    /// Key expressions as chips. A chip that matches a word in the app opens
+    /// its card; the rest are shown plain so there are no dead taps.
+    private var keySection: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("この会話の表現")
+                .font(.caption.bold())
+                .foregroundStyle(.secondary)
+            FlowLayout(spacing: 6) {
+                ForEach(topic.keys, id: \.self) { key in
+                    if let w = registered(key) {
+                        Button {
+                            detailWord = w
+                        } label: {
+                            chip(key, tappable: true)
+                        }
+                        .buttonStyle(.plain)
+                    } else {
+                        chip(key, tappable: false)
+                    }
+                }
+            }
+        }
+        .padding(.top, 4)
+    }
+
+    private func chip(_ text: String, tappable: Bool) -> some View {
+        Text(text)
+            .font(.caption)
+            .foregroundStyle(tappable ? Color.indigo : Color.secondary)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(
+                Capsule().fill(tappable ? Color.indigo.opacity(0.12) : Color.black.opacity(0.05))
+            )
+    }
+
+    private func registered(_ key: String) -> Word? {
+        let k = key.trimmingCharacters(in: .whitespaces).lowercased()
+        return store.words.first {
+            $0.word.trimmingCharacters(in: .whitespaces).lowercased() == k
+        }
+    }
+}
+
+/// Minimal wrapping stack, used for the expression chips. SwiftUI has no
+/// built-in flow layout before iOS 16's Layout protocol, which this uses.
+struct FlowLayout: Layout {
+    var spacing: CGFloat = 6
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        let maxWidth = proposal.width ?? .infinity
+        var x: CGFloat = 0, y: CGFloat = 0, rowHeight: CGFloat = 0
+        for s in subviews {
+            let size = s.sizeThatFits(.unspecified)
+            if x > 0, x + size.width > maxWidth {
+                x = 0
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
+        }
+        return CGSize(width: maxWidth == .infinity ? x : maxWidth, height: y + rowHeight)
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        var x = bounds.minX, y = bounds.minY, rowHeight: CGFloat = 0
+        for s in subviews {
+            let size = s.sizeThatFits(.unspecified)
+            if x > bounds.minX, x + size.width > bounds.maxX {
+                x = bounds.minX
+                y += rowHeight + spacing
+                rowHeight = 0
+            }
+            s.place(at: CGPoint(x: x, y: y), proposal: ProposedViewSize(size))
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
+        }
     }
 }
 

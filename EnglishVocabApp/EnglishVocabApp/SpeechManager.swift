@@ -15,6 +15,10 @@ final class SpeechManager {
     private let firstFactor: Float = 0.25
     private let secondFactor: Float = 0.1
 
+    /// Sentences play at full speed on the first tap; a second consecutive
+    /// tap on the same sentence halves it.
+    private let sentenceRepeatFactor: Float = 0.5
+
     private init() {
         try? AVAudioSession.sharedInstance().setCategory(
             .playback,
@@ -27,7 +31,12 @@ final class SpeechManager {
     /// consecutive tap on the same button plays at an even slower 0.1×. A
     /// third tap returns to 0.25×, and so on. Tapping a different text resets
     /// the cycle back to 0.25×.
-    func speak(_ text: String, language: String = "en-GB", rate: Float = 0.50) {
+    ///
+    /// Pass `slowed: false` for whole sentences — a conversation line read at
+    /// 0.25× is unlistenable. Those play once at a natural speaking pace, and
+    /// a second consecutive tap drops to 0.5× so a tricky line can still be
+    /// picked apart.
+    func speak(_ text: String, language: String = "en-GB", rate: Float = 0.50, slowed: Bool = true) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
 
@@ -38,7 +47,12 @@ final class SpeechManager {
         // First tap → 0.25×; second consecutive tap on the same text → 0.1×;
         // then reset so the next tap on it is 0.25× again.
         let isRepeat = (trimmed == lastSpokenText)
-        let factor = isRepeat ? secondFactor : firstFactor
+        let factor: Float
+        if slowed {
+            factor = isRepeat ? secondFactor : firstFactor
+        } else {
+            factor = isRepeat ? sentenceRepeatFactor : 1.0
+        }
         let effectiveRate = max(rate * factor, AVSpeechUtteranceMinimumSpeechRate)
         lastSpokenText = isRepeat ? nil : trimmed
 

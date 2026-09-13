@@ -102,7 +102,7 @@ struct Word: Codable, Identifiable, Hashable {
     var weeklyReviewAt: Date? = nil
 
     /// Per-quiz-mode "正解した回数". Keys are QuizMode.modeKey strings:
-    /// "useCase", "definition", "translation". A word is considered
+    /// "definition", "translation". A word is considered
     /// 復習完了 in a mode once its count reaches 4. Independent of the
     /// overall reviewCount used by the card view.
     var modeCounts: [String: Int] = [:]
@@ -180,11 +180,12 @@ struct Word: Codable, Identifiable, Hashable {
         self.modeNextReviewDates = try c.decodeIfPresent([String: Date].self, forKey: .modeNextReviewDates) ?? [:]
     }
 
-    /// True when every quiz mode has been answered correctly at least 4 times
-    /// (= 復習完了 across the board). Used to push the word to the bottom of
-    /// the 一覧 list and remove it from quiz pools.
+    /// True when every scored quiz mode has been answered correctly at least
+    /// 4 times (= 復習完了 across the board). Used to push the word to the
+    /// bottom of the 一覧 list and remove it from quiz pools. 使う場面 used to
+    /// count here too; words already carrying its progress are unaffected.
     var isFullyCompleted: Bool {
-        ["useCase", "definition", "translation"].allSatisfy {
+        ["definition", "translation"].allSatisfy {
             (modeCounts[$0] ?? 0) >= 4
         }
     }
