@@ -33384,5 +33384,401 @@ B	Thank you so much. I'll actually use this.	本当にありがとう。ちゃ�
 A	That's the idea. They're meant to be used.	それが狙い。使うためのものだから。
 B	How was the trip? Tell me everything.	旅行はどうだった？ 全部聞かせて。
 A	Over coffee. It's a long story.	コーヒーを飲みながらね。長い話になるから。
+T	🎁	プレゼントをもらってお礼を言う	人間関係	you shouldn't have, how did you know, it's perfect, thoughtful, I'll treasure it
+S	
+B	Happy birthday! This is for you.	誕生日おめでとう！ これ、どうぞ。
+A	Oh, you shouldn't have!	えっ、気を使わなくてよかったのに！
+B	Of course I should. Open it.	当然だよ。開けてみて。
+A	Okay, hang on... a record player?	わかった、ちょっと待って… レコードプレーヤー？
+B	You said you missed yours from uni.	大学時代のを懐かしがってたでしょ。
+A	I said that once! Months ago.	一度言っただけなのに！ 何か月も前に。
+S	
+B	I remembered.	覚えてたんだ。
+A	This is so thoughtful. I don't know what to say.	なんて気が利くんだろう。何て言えばいいかわからない。
+B	You don't have to say anything.	何も言わなくていいよ。
+A	How did you even know which one to get?	どれを買えばいいか、どうしてわかったの？
+B	I asked your brother. He was very helpful.	お兄さんに聞いた。すごく協力的だったよ。
+A	That sneak.	あの裏切り者。
+S	
+A	Thank you. Really. I'll use this every day.	ありがとう。本当に。毎日使うよ。
+B	That's all I want.	それだけで十分。
+A	Come round this weekend. First record's on me.	今週末うちに来て。最初の1枚は私が選ぶから。
+B	Deal. Something good, though.	いいね。ただし、いいやつね。
+T	💌	結婚式やパーティーに招待された	人間関係	you're invited, save the date, RSVP, plus one, wouldn't miss it
+S	
+B	So, I've got some news. We've set a date!	それで、お知らせがあるんだ。日取りが決まったよ！
+A	The wedding? When?	結婚式？ いつ？
+B	September the fourteenth. And you're invited, obviously.	9月14日。もちろん、あなたも招待するよ。
+A	I wouldn't miss it for the world.	何があっても行くよ。
+B	The invites are going out next month, but save the date.	招待状は来月送るけど、予定を空けておいて。
+A	Already in my calendar.	もうカレンダーに入れた。
+S	
+A	Where's it going to be?	場所はどこ？
+B	A small place in the countryside. Nothing fancy.	田舎の小さな会場。派手なものじゃないよ。
+A	That sounds lovely. Can I bring someone?	素敵だね。誰か連れて行ってもいい？
+B	Yes, there's a plus one. Just let me know by July.	うん、パートナー同伴OK。7月までに教えて。
+A	Will do. I'll RSVP as soon as the invite comes.	わかった。招待状が来たらすぐ返事する。
+S	
+B	Also — would you say a few words at the reception?	それから、披露宴で一言お願いできる？
+A	Me? Are you sure?	私？ 本当に？
+B	You're one of my oldest friends. Who else?	一番古い友達の一人だもん。他に誰がいる？
+A	I'd be honoured. I'll start thinking of embarrassing stories.	光栄だよ。恥ずかしい話を考え始めるね。
+B	Please don't.	それはやめて。
+T	👗	服装のドレスコードを確認する	人間関係	dress code, smart casual, black tie, overdressed, what are you wearing
+S	
+A	Quick question about Saturday. What's the dress code?	土曜のことで質問。ドレスコードは？
+B	Smart casual, I think. Nothing too formal.	スマートカジュアルだと思う。あまり堅苦しくないやつ。
+A	So no tie?	じゃあネクタイはなし？
+B	No tie. A nice shirt and trousers is fine.	ネクタイなし。きれいめのシャツとズボンで大丈夫。
+A	And jeans?	ジーンズは？
+B	Dark ones, maybe. Not the ripped ones.	濃い色ならいいかも。破れてるのはだめ。
+S	
+A	I'd rather be a bit overdressed than underdressed.	カジュアルすぎるより、少しきちんとしすぎるほうがいいな。
+B	Same. A jacket never hurts.	同じ。ジャケットは持っていて損はないよ。
+A	What are you wearing?	あなたは何を着るの？
+B	The green dress, probably. With flats. It's outdoors.	たぶん緑のワンピース。フラットシューズで。屋外だから。
+A	Good to know. I'll skip the fancy shoes then.	なるほど。じゃあ、おしゃれな靴はやめておく。
+S	
+B	Oh, and bring a layer. It gets cold in the evening.	あ、あと羽織るものを持ってきて。夜は冷えるから。
+A	Noted. Thanks for the intel.	了解。情報ありがとう。
+B	No problem. See you there!	どういたしまして。じゃあ当日！
+T	🤫	子どもに静かにしてほしいと伝える	日常	keep it down, inside voice, use your quiet voice, people are working, well done
+S	
+A	Hey, sweetheart, can you keep it down a bit?	ねえ、もう少し静かにしてくれる？
+B	But I'm playing!	でも遊んでるの！
+A	I know, and that's great. But we're in a library.	わかってる、それはいいことだよ。でもここは図書館なんだ。
+B	Oh.	あ。
+A	Use your inside voice, okay?	中の声で話そうね、いい？
+B	Okay.	わかった。
+S	
+B	Is this quiet enough?	これくらい静か？
+A	Much better. Well done.	ずっといいよ。えらいね。
+B	Why do we have to be quiet?	なんで静かにしないといけないの？
+A	Because people are reading and working. It's hard with noise.	みんな読書したり勉強したりしてるから。うるさいと難しいんだ。
+B	Like when I'm doing homework?	私が宿題してる時みたいに？
+A	Exactly like that.	まさにその通り。
+S	
+B	Can we be loud outside?	外に出たら大きい声でいい？
+A	Outside, you can be as loud as you like.	外では好きなだけ大きな声でいいよ。
+B	Yay!	やった！
+A	Ten more minutes, then the park. Deal?	あと10分したら公園。約束？
+B	Deal!	約束！
+T	🐕	ペットが吠えてうるさい	住まい	barking, all day, separation anxiety, trainer, get to the bottom of it
+S	
+A	Hi, I live upstairs. Can I ask you something about your dog?	上の階に住んでいる者です。犬のことで少し話せますか？
+B	Of course. Is everything okay?	もちろん。何かありましたか？
+A	He's been barking a lot during the day. For hours, sometimes.	日中、かなり吠えていて。時には何時間も。
+B	Oh no. I'm at work, so I had no idea.	そんな。仕事に出ているので、全然知りませんでした。
+A	I figured. That's why I wanted to tell you.	そうだと思いました。だからお伝えしたくて。
+S	
+B	Thank you for coming to me instead of complaining to the landlord.	大家に苦情を言わずに、直接来てくれてありがとうございます。
+A	I'd rather sort it between us.	お互いで解決できるほうがいいので。
+B	He might have separation anxiety. He's a rescue.	分離不安かもしれません。保護犬なんです。
+A	That makes sense. Poor thing.	なるほど。かわいそうに。
+B	I'll look into a trainer. And maybe a dog walker at lunch.	トレーナーを探してみます。昼にドッグウォーカーも頼もうかと。
+S	
+A	That sounds like a good plan.	それはいい計画ですね。
+B	Give me a couple of weeks to get to the bottom of it.	原因を突き止めるのに2週間ほどください。
+A	Of course. And let me know if I can help.	もちろんです。何か手伝えることがあれば言ってください。
+B	Actually, would you mind checking on him sometime?	実は、時々様子を見てもらえたりしますか？
+A	I'd be happy to. I like dogs.	喜んで。犬は好きなので。
+T	🗳	選挙や政治の話を振られて避けたい	人間関係	I'd rather not, keep politics out of it, agree to disagree, change the subject, no offence
+S	
+B	So, who are you voting for?	それで、誰に投票するの？
+A	Ha, I try to keep politics out of dinner.	はは、食事中は政治の話は避けるようにしてるんだ。
+B	Come on, I'm curious.	いいじゃない、気になるよ。
+A	I'd rather not, honestly. No offence.	正直、遠慮しておくよ。悪気はないけど。
+B	None taken. But you must have an opinion.	気にしてないよ。でも意見はあるでしょ。
+A	I do. I just keep it to myself.	あるよ。自分の中にしまってるだけ。
+S	
+B	Fair enough. It gets heated, I suppose.	なるほど。白熱しちゃうもんね。
+A	Exactly. And I like you too much to argue.	そう。それに、あなたと言い争うのは嫌だから。
+B	That's a nice way to put it.	いい言い方だね。
+A	Let's agree to disagree on things we haven't even discussed.	話してもいないことで、意見の相違を認め合おう。
+B	Ha, deal.	はは、決まり。
+S	
+A	Anyway, how's the new job?	それより、新しい仕事はどう？
+B	Smooth change of subject.	見事な話題転換だね。
+A	I've had practice.	練習してるから。
+B	It's going well, actually. Let me tell you about my boss.	実は順調だよ。上司の話を聞いて。
+T	📵	セールスの電話を断る	日常	not interested, take me off your list, how did you get my number, no thank you, hang up
+S	
+B	Hello, am I speaking to Mr Fujinuma?	もしもし、藤沼様でいらっしゃいますか？
+A	Speaking. Who's this?	はい。どちら様ですか？
+B	I'm calling about an exciting opportunity to save on your energy bills.	光熱費を節約できる素晴らしい機会についてお電話しました。
+A	Sorry, I'm not interested.	申し訳ないですが、興味ありません。
+B	It'll only take two minutes.	2分で済みますから。
+A	No, thank you.	いいえ、結構です。
+S	
+B	Can I at least ask who your current provider is?	せめて、現在の契約先だけでも伺えますか？
+A	I'd rather not say. How did you get my number?	お答えしたくありません。私の番号はどこで？
+B	It's on a public list.	公開リストにありました。
+A	Then please take me off it.	では、そこから削除してください。
+B	I can do that, but first—	それは可能ですが、その前に—
+A	No "but first". Just remove me, please.	「その前に」はなしで。削除だけお願いします。
+S	
+B	Understood. You'll be removed within forty-eight hours.	承知しました。48時間以内に削除されます。
+A	Thank you. Goodbye.	ありがとうございます。失礼します。
+B	Have a nice day.	良い一日を。
+A	Right. Blocking that number.	さて。この番号はブロック。
+T	📝	契約を解約したい	手続き	cancel my contract, notice period, early termination fee, in writing, confirmation
+S	
+A	Hi, I'd like to cancel my contract.	もしもし、契約を解約したいのですが。
+B	I'm sorry to hear that. May I ask why?	それは残念です。理由を伺ってもよろしいですか？
+A	I'm moving abroad next month.	来月、海外に引っ越すんです。
+B	I see. Let me pull up your account.	なるほど。アカウントを確認します。
+A	The name's Fujinuma, account ending 4-4-8.	藤沼で、アカウント番号の末尾は4-4-8です。
+S	
+B	Your contract runs until December. There's an early termination fee.	契約は12月までです。早期解約手数料がかかります。
+A	How much is it?	いくらですか？
+B	Sixty. Unless you can show proof of the move.	60です。ただし引っ越しの証明があれば免除されます。
+A	I have a flight booking and a lease. Would that do?	航空券の予約と賃貸契約書があります。それで足りますか？
+B	That should be fine. Email them to us.	それで大丈夫です。メールで送ってください。
+S	
+A	What's the notice period?	解約予告期間は？
+B	Thirty days from today.	今日から30日です。
+A	Okay. Can I get all of this in writing?	わかりました。これを全部書面でもらえますか？
+B	Of course. You'll get a confirmation email within the hour.	もちろんです。1時間以内に確認メールをお送りします。
+A	Thank you for making it straightforward.	わかりやすく対応していただいてありがとうございます。
+T	🔁	サブスクの解約方法を聞く	手続き	unsubscribe, cancel my subscription, auto-renew, where do I find, still be able to use
+S	
+A	Hi, how do I cancel my subscription? I can't find the option.	すみません、サブスクの解約はどうすればいいですか？ 選択肢が見つからなくて。
+B	Sure. Go to Settings, then Account, then Manage Subscription.	はい。設定、アカウント、そしてサブスクリプション管理に進んでください。
+A	Settings... Account... I don't see "Manage Subscription".	設定… アカウント… 「サブスクリプション管理」がありません。
+B	Are you on the app or the website?	アプリですか、ウェブサイトですか？
+A	The app.	アプリです。
+B	Ah, it's only on the website. Apps hide it.	ああ、それはウェブサイトだけです。アプリでは隠れています。
+S	
+A	Of course they do. Okay, I'm on the website now.	そうでしょうね。はい、今ウェブサイトを開きました。
+B	You should see a "Cancel" button at the bottom.	一番下に「解約」ボタンがあるはずです。
+A	Found it. It's asking if I'm sure.	ありました。本当によろしいですかって聞いてる。
+B	Yes, and there might be an offer to stay. Just decline it.	はい、継続の特典が出るかもしれません。断ってください。
+A	Declined. It says cancelled.	断りました。解約済みと出ました。
+S	
+A	Will I still be able to use it until the end of the month?	月末までは使えますか？
+B	Yes, until your current billing period ends.	はい、現在の請求期間が終わるまで。
+A	And it won't auto-renew?	自動更新はされませんね？
+B	No. You'll get an email confirming that.	されません。確認メールが届きます。
+A	Perfect. Thanks for the help.	完璧です。助かりました。
+T	🏷	相手の名前の由来や呼び方を聞く	人間関係	what does your name mean, named after, do you go by, nickname, call you
+S	
+A	Your name's really unusual. What does it mean?	珍しい名前だね。どういう意味？
+B	Thanks! It means "light" in Persian.	ありがとう！ ペルシャ語で「光」っていう意味。
+A	That's beautiful. Were you named after someone?	素敵。誰かにちなんで付けられたの？
+B	My grandmother. She passed away just before I was born.	祖母。私が生まれる直前に亡くなったんだ。
+A	That makes it even more special.	それはさらに特別だね。
+S	
+A	Do you go by anything shorter?	短い呼び名はある？
+B	My friends call me Roo.	友達はルーって呼ぶよ。
+A	Roo? Like the kangaroo?	ルー？ カンガルーの？
+B	Exactly like that. I hopped a lot as a kid.	まさにそれ。子どもの頃よく飛び跳ねてたから。
+A	Ha, I can see it.	はは、目に浮かぶ。
+B	What should I call you? Kohei, or something else?	あなたはどう呼べばいい？ 航平？ それとも別の？
+S	
+A	Kohei's fine. My family calls me Ko, but that's mostly them.	航平でいいよ。家族はコウって呼ぶけど、それは家族だけ。
+B	Ko. I like that. Can I use it?	コウ。いいね。使ってもいい？
+A	Sure, why not. Just don't tell my mum.	いいよ。母には言わないでね。
+B	Your secret's safe with me, Ko.	秘密は守るよ、コウ。
+T	🏡	どんな家族構成か・どこで育ったかを聞く	雑談	tell me about your family, big family, grow up, only child, move around a lot
+S	
+A	Tell me about your family. Big or small?	家族のこと教えて。大家族？ 少人数？
+B	Big. Three brothers and a sister.	大家族。兄弟が3人と姉妹が1人。
+A	Five kids! Your parents must have been busy.	5人兄弟！ ご両親は大変だったでしょうね。
+B	Chaos. Every day was chaos.	カオス。毎日がカオスだったよ。
+A	Where did you fit in?	何番目？
+B	Second youngest. So I got away with a lot.	下から2番目。だからかなり自由にやれた。
+S	
+A	Where did you grow up?	どこで育ったの？
+B	All over. My dad was in the military, so we moved every two years.	あちこち。父が軍人だったから、2年ごとに引っ越してた。
+A	That must have been hard.	それは大変だったね。
+B	Sometimes. But I can make friends anywhere now.	時々ね。でもおかげで今はどこでも友達を作れるよ。
+A	That's a real skill.	それは本当に貴重なスキルだね。
+B	What about you? Only child?	そっちは？ 一人っ子？
+S	
+A	Yes, just me. Same house my whole childhood.	うん、私だけ。子どもの頃はずっと同じ家。
+B	That sounds so stable.	すごく安定してるね。
+A	It was. Boring, maybe, but stable.	そうだね。退屈だったかもしれないけど、安定してた。
+B	I'd have loved boring, some years.	退屈なのも良かったなって思う年もあったよ。
+T	💼	今の仕事を選んだ理由を聞く	雑談	how did you get into, fall into, always wanted to, turned out, no regrets
+S	
+A	How did you get into architecture?	どうして建築の道に進んだの？
+B	Honestly, by accident.	正直、偶然なんだ。
+A	By accident?	偶然？
+B	I wanted to be an artist. My parents said get a real job.	画家になりたかったんだけど、両親にちゃんとした仕事をしろって言われて。
+A	So architecture was the compromise.	それで建築が妥協点だったんだね。
+B	Exactly. And it turned out I loved it.	そう。それで、実際やってみたら大好きになった。
+S	
+A	What do you love about it?	どこが好き？
+B	Seeing something I drew actually get built.	自分が描いたものが実際に建つのを見ること。
+A	That must be an amazing feeling.	それはすごい感覚だろうね。
+B	The first time, I cried. Don't tell anyone.	最初の時は泣いたよ。誰にも言わないで。
+A	Your secret's safe.	秘密は守るよ。
+S	
+A	Any regrets about not being an artist?	画家にならなかったことに後悔は？
+B	Not really. I still paint at weekends.	あまりね。週末には今でも絵を描いてるし。
+A	So you got both.	じゃあ両方手に入れたんだね。
+B	I suppose I did. Lucky, really.	そうかもね。本当に幸運だった。
+T	⚖️	仕事のやりがいや大変なところを聞く	雑談	what's the best part, the hardest part, rewarding, burn out, worth it
+S	
+A	What's the best part of being a nurse?	看護師の仕事で一番いいところは？
+B	When a patient walks out who came in on a stretcher.	担架で運ばれてきた患者さんが、自分の足で歩いて帰る時。
+A	That must be incredibly rewarding.	それはすごくやりがいがあるだろうね。
+B	It is. It's what keeps me going.	うん。それが続けられる理由。
+A	And the hardest part?	一番大変なところは？
+B	The ones who don't walk out.	歩いて帰れない人がいること。
+S	
+A	How do you cope with that?	それにはどう向き合ってるの？
+B	You learn to leave it at work. Mostly.	職場に置いてくることを覚えるんだ。だいたいはね。
+A	Mostly?	だいたい？
+B	Some days follow you home. That's just how it is.	家までついてくる日もある。そういうものだよ。
+A	Do you ever think about doing something else?	別の仕事を考えることはある？
+B	On the bad days, sure. But then a good day comes.	悪い日にはね。でもそのあと、いい日が来るんだ。
+S	
+A	I don't know how you do it.	どうやってやってるのか、想像もつかない。
+B	Same way anyone does. One shift at a time.	誰でもやってることだよ。1回のシフトずつ。
+A	Well, for what it's worth, I think you're amazing.	まあ、言うほどのことでもないけど、本当にすごいと思う。
+B	That's worth a lot, actually. Thank you.	それ、実はすごく大きいよ。ありがとう。
+T	🎓	学生時代に何をしていたか聞く	雑談	what did you study, back in uni, part-time job, a different person, wild
+S	
+A	What did you study at uni?	大学では何を勉強してたの？
+B	History. Completely useless, apparently.	歴史。完全に役に立たないらしいけど。
+A	Says who?	誰がそんなこと？
+B	Everyone who asked what I'd do with it.	それで何をするのって聞いてきた人全員。
+A	And what did you do with it?	それで、何をしたの？
+B	Became a project manager. Nothing to do with history.	プロジェクトマネージャーになった。歴史とは何の関係もない。
+S	
+A	Were you a good student?	いい学生だった？
+B	First year, no. I was a different person.	1年目は違うね。別人だった。
+A	Wild?	羽目を外してた？
+B	Very. Then I got a part-time job and calmed down.	かなり。そのあとバイトを始めて落ち着いた。
+A	What was the job?	どんなバイト？
+B	Bar work. Ironically, that's what calmed me down.	バーの仕事。皮肉なことに、それで落ち着いたんだ。
+S	
+A	Do you keep in touch with anyone from back then?	当時の友達とはまだ連絡取ってる？
+B	A few. We meet up once a year and pretend we're twenty.	数人。年に1回集まって、20歳のふりをするんだ。
+A	How does that go?	それはどんな感じ？
+B	We're in bed by eleven. Every time.	毎回11時には寝てる。
+T	😊	最近うれしかったことを聞く	雑談	what's made you happy lately, little things, made my week, good news, cheered me up
+S	
+A	Tell me something good. What's made you happy lately?	何かいいこと聞かせて。最近うれしかったことは？
+B	Hmm. Actually, my niece called me just to chat.	うーん。実は、姪が用もなく電話をくれたんだ。
+A	That's sweet. How old is she?	かわいいね。何歳？
+B	Nine. She wanted to tell me about a frog she found.	9歳。見つけたカエルの話をしたかったらしい。
+A	A frog.	カエル。
+B	A very important frog, apparently. It made my week.	とても大事なカエルだったみたい。今週一番の出来事だったよ。
+S	
+A	It's always the little things, isn't it?	いつも些細なことなんだよね。
+B	Always. What about you?	いつもね。そっちは？
+A	Someone left a note on my desk. Just saying thanks for helping them.	誰かがデスクにメモを残してくれたんだ。手伝ってくれてありがとうって。
+B	Anonymous?	匿名？
+A	Yes. I still don't know who.	うん。まだ誰かわからない。
+B	That's lovely. Someone noticed.	素敵だね。誰かが見ててくれたんだ。
+S	
+A	We should do this more often. Share the good stuff.	もっとこういうことをしよう。いいことを共有するの。
+B	Agreed. Bad news gets enough airtime.	賛成。悪いニュースはもう十分聞いてるから。
+A	Next week, same question.	来週も同じ質問ね。
+B	I'll have a better answer ready. Or another frog.	もっといい答えを用意しておくよ。またカエルかもしれないけど。
+T	🤔	最近ちょっと困っていることを相談する	人間関係	can I run something by you, bit of a situation, not sure how to handle, what would you do, good advice
+S	
+A	Can I run something by you?	ちょっと相談してもいい？
+B	Of course. What's going on?	もちろん。どうしたの？
+A	It's a bit of a situation with my flatmate.	ルームメイトとのことで、ちょっと困ってて。
+B	Go on.	続けて。
+A	She's started having her boyfriend over every night. He basically lives there now.	彼氏を毎晩泊めるようになって。もうほぼ住んでる状態なんだ。
+B	Ah. And he's not paying rent.	ああ。それで家賃は払ってないんだね。
+S	
+A	Exactly. And I'm not sure how to bring it up.	そう。どう切り出せばいいかわからなくて。
+B	Have you said anything at all?	何か言った？
+A	Not yet. I don't want to make it awkward.	まだ。気まずくしたくなくて。
+B	It's already awkward. You're just the only one feeling it.	もう気まずいよ。ただ、感じてるのがあなただけなだけ。
+A	That's a fair point.	たしかにそうだね。
+B	What would you want, ideally?	理想的にはどうしたい？
+S	
+A	Either he chips in, or he's not there every night.	彼が費用を出すか、毎晩いるのをやめるか。
+B	Then say exactly that. Calmly, not as an attack.	じゃあ、まさにそれを言えばいい。冷静に、攻撃じゃなくて。
+A	"I've noticed he's here a lot. Can we talk about how that works?"	「彼がよく来てるよね。それについて話せる？」
+B	Perfect. That's not accusing anyone.	完璧。誰も責めてない。
+A	Thanks. That's good advice.	ありがとう。いいアドバイスだ。
+T	😂	自分の失敗談を笑い話として話す	雑談	you'll never guess what I did, mortified, in front of everyone, I wanted the ground to swallow me, laugh about it now
+S	
+A	You'll never guess what I did this morning.	今朝私が何をしたか、絶対当てられないよ。
+B	Oh no. What?	うわ。何？
+A	I waved at someone across the street. Big wave. Really enthusiastic.	通りの向こうの人に手を振ったんだ。大きく。すごく元気よく。
+B	And?	それで？
+A	It wasn't who I thought it was. Total stranger.	思ってた人じゃなかった。完全に知らない人。
+B	No!	うそ！
+S	
+A	And they waved back, out of politeness. Then we both just stood there.	それで、向こうも礼儀で振り返して。そのまま2人で突っ立ってた。
+B	In the street?	通りで？
+A	In the street. I wanted the ground to swallow me.	通りで。穴があったら入りたかった。
+B	What did you do?	それでどうしたの？
+A	I pretended I was waving at a bus. There was no bus.	バスに手を振ってたふりをした。バスなんていなかったけど。
+B	I'm crying.	笑いすぎて涙が出る。
+S	
+A	I was mortified at the time. I can laugh about it now.	その時は恥ずかしすぎて死にそうだった。今は笑えるけど。
+B	Barely. It only happened this morning.	ぎりぎりだね。今朝の話でしょ。
+A	Fine, I'm still a bit mortified.	わかった、まだちょっと恥ずかしい。
+B	This is going in my top five stories about you.	あなたの話ベスト5に入るよ。
+A	There's a list?	リストがあるの？
+T	🧠	相手の得意なこと・詳しいことを教えてもらう	人間関係	you know a lot about, teach me, where do I start, beginner, pick your brain
+S	
+A	You know a lot about wine, right?	ワインに詳しいんだよね？
+B	A bit. It's a hobby that got out of hand.	ちょっとね。趣味が高じすぎた感じ。
+A	Can I pick your brain? I want to learn, but I don't know where to start.	少し教えてもらえる？ 学びたいんだけど、どこから始めればいいかわからなくて。
+B	Of course. What do you like so far?	もちろん。今のところ、何が好き？
+A	Honestly, I just drink whatever's on offer.	正直、セールになってるものを飲んでるだけ。
+B	Ha, that's a start.	はは、それも一歩だよ。
+S	
+B	The trick is to try one grape at a time and notice what you like.	コツは、ぶどうの品種を1つずつ試して、好みに気づくこと。
+A	One grape?	品種を1つ？
+B	Like, this month only drink Pinot Noir. From different places.	例えば今月はピノ・ノワールだけ。いろんな産地のを。
+A	Then I'd actually learn the difference.	そうすれば違いが本当にわかるね。
+B	Exactly. And keep notes. Just a line or two.	そう。あとメモを取って。1〜2行でいいから。
+A	That's very doable.	それならできそう。
+S	
+A	Would you come to a tasting with me sometime?	今度、テイスティングに一緒に来てくれる？
+B	I'd love to. There's a good one near the market on Saturdays.	喜んで。土曜に市場の近くでいいのがあるよ。
+A	Perfect. I'll be your beginner.	完璧。あなたの初心者になるよ。
+B	Everyone starts somewhere. Bring a notebook.	誰でも最初は初心者だよ。ノートを持ってきて。
+T	🍜	おすすめの店を教えてもらい、実際に行った感想を伝える	人間関係	I went to that place, you were right, lived up to, the best, next recommendation
+S	
+A	I finally went to that ramen place you told me about.	やっと、教えてくれたラーメン屋に行ってきたよ。
+B	You did? What did you think?	行ったの？ どうだった？
+A	You were completely right. Best ramen I've had outside Japan.	完全にあなたの言った通り。日本以外で食べた中で一番美味しかった。
+B	Told you! Did you get the tonkotsu?	でしょ！ 豚骨頼んだ？
+A	Of course. And the extra egg, like you said.	もちろん。あと、言われた通り味玉も追加。
+B	The egg is the whole point.	味玉が肝心なんだよ。
+S	
+A	The only downside was the queue. Forty minutes.	唯一の欠点は行列。40分待った。
+B	Ah, you went at seven, didn't you?	ああ、7時に行ったでしょ？
+A	Yes. Is that bad?	うん。それってまずい？
+B	Go at five thirty next time. No queue at all.	次は5時半に行って。全然並ばないよ。
+A	Noted. Worth the wait, though.	了解。でも待つ価値はあったよ。
+S	
+A	So, what's your next recommendation?	それで、次のおすすめは？
+B	There's a tiny Sichuan place near the station.	駅の近くに小さな四川料理の店があるんだ。
+A	Spicy?	辛い？
+B	Very. Order the dry-fried green beans. Trust me.	かなり。インゲンの乾煸を頼んで。信じて。
+A	I trust you completely now.	もう完全に信じるよ。
+T	🌮	相手の国や地元の食べ物を教えてもらう	文化	what's the food like, national dish, comfort food, you have to try, homemade
+S	
+A	What's the food like where you're from?	あなたの地元の食べ物ってどんな感じ？
+B	Heavy, honestly. Lots of bread, potatoes, cheese.	正直、重いよ。パンにじゃがいもにチーズ。
+A	That sounds like my kind of food.	それ、私の好みかも。
+B	The national dish is basically potato dumplings in cream.	国民食は、簡単に言うとじゃがいも団子のクリーム煮。
+A	Okay, I need to try that.	うわ、それ絶対食べてみたい。
+B	You do. But only the homemade version.	そうだね。でも手作りのやつだけね。
+S	
+A	Is that your comfort food?	それがあなたのほっとする料理？
+B	Definitely. My grandmother made it every Sunday.	絶対に。祖母が毎週日曜に作ってくれた。
+A	Can you make it?	作れる？
+B	Badly. Hers was better. Everyone's grandmother's is better.	下手だけどね。祖母のほうが上。みんな、おばあちゃんのが一番だから。
+A	That's true everywhere.	それはどこの国でも同じだね。
+S	
+B	What about you? What should I try from Japan?	そっちは？ 日本の料理で試すべきものは？
+A	Okonomiyaki. It's a savoury pancake with everything in it.	お好み焼き。全部入ったおかず系のパンケーキ。
+B	Everything?	全部？
+A	Cabbage, pork, whatever's in the fridge. It means "as you like it."	キャベツ、豚肉、冷蔵庫にあるもの何でも。「お好みで」って意味なんだ。
+B	Now that's my kind of dish.	それこそ私の好みの料理だ。
 """#
 }
