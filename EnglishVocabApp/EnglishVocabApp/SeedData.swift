@@ -43117,5 +43117,436 @@ A	Sweet. Without hesitation.	甘いもの。迷わず。
 B	Savoury. Also without hesitation.	しょっぱいもの。こちらも迷わず。
 A	We'd never fight over the last bite.	最後の一口を取り合うことは絶対ないね。
 B	The perfect dining partner.	完璧な食事のパートナーだ。
+T	🏕	インドア派かアウトドア派かを話す	雑談	indoors or outdoors, I'm happiest, fresh air, I burn, meet in the middle
+S	
+A	Indoor person or outdoor person?	インドア派？ アウトドア派？
+B	Outdoor. I'm happiest when I've got mud on my boots.	アウトドア。ブーツに泥がついてる時が一番幸せ。
+A	Even in the rain?	雨でも？
+B	Especially in the rain. Nobody else is out. You get the whole hill to yourself.	特に雨の時。他に誰もいない。丘を独り占めできる。
+A	I'm firmly indoors. Books, blankets, a kettle within reach.	私は完全にインドア。本、毛布、手の届く範囲にやかん。
+B	Don't you get restless?	落ち着かなくならない？
+A	Never. I get restless outside. Too much weather.	一度も。外だと落ち着かない。天気が多すぎる。
+B	"Too much weather."	「天気が多すぎる」。
+A	It's a real complaint.	本気の不満だよ。
+S	
+B	What about a garden? That's indoors with fresh air.	庭は？ 屋内みたいで、新鮮な空気もある。
+A	A garden I can do. Chair, book, back inside when it gets cold.	庭ならいける。椅子、本、寒くなったら中に戻る。
+B	That's a start. And I can come inside when I'm soaked.	それも一歩だね。私はびしょ濡れになったら中に入る。
+A	Meet in the middle. The doorway.	中間で会おう。玄関で。
+B	The doorway. Perfect.	玄関。完璧。
+S	
+A	Honestly, I think everyone needs a bit of both.	正直、誰にでも両方が少しずつ必要だと思う。
+B	You need more outside. I need more sitting still.	あなたはもっと外が必要。私はもっとじっとしてる時間が必要。
+A	Then we're good for each other.	じゃあお互いにとっていいんだね。
+T	🔇	賑やかな場所と静かな場所どちらが好きか話す	雑談	loud or quiet, I feed off, I need to recharge, drains me, a corner table
+S	
+A	Do you prefer loud places or quiet ones?	賑やかな場所と静かな場所、どっちが好き？
+B	Loud. I feed off the energy. Empty bars depress me.	賑やか。エネルギーをもらえる。空っぽのバーは気が滅入る。
+A	I'm the opposite. A busy room drains me in an hour.	私は逆。混んだ部屋だと1時間で消耗する。
+B	So you never go out?	じゃあ外に出ない？
+A	I go out. I just find a corner table and stay there.	出るよ。ただ隅のテーブルを見つけて、そこにいる。
+B	The corner table person. I know the type.	隅のテーブル派ね。そのタイプ知ってる。
+A	We're watching you. Quietly.	見てるよ。静かに。
+S	
+B	Doesn't quiet get boring?	静かだと退屈にならない？
+A	Quiet's where I think. Loud's where I can't hear myself.	静かな場所は考える場所。賑やかだと自分の考えが聞こえない。
+B	I don't want to hear myself. That's the point of going out.	自分の考えなんて聞きたくない。それが外に出る理由だよ。
+A	Ha. Fair. Different needs.	はは。なるほど。必要なものが違うんだね。
+B	I need to recharge in a crowd. You need to recharge alone.	私は人混みで充電する。あなたは一人で充電する。
+A	Exactly. Neither's wrong.	そう。どっちも間違ってない。
+S	
+B	Okay, tonight — loud bar, but I'll find you a corner.	じゃあ今夜は、賑やかなバー、でも隅の席を見つけてあげる。
+A	Deal. And you can come and visit the corner when you need a break.	決まり。休憩したくなったら、隅に来ればいい。
+B	A base camp.	ベースキャンプだね。
+A	A base camp for the loud person.	賑やかな人のためのベースキャンプ。
+T	⏰	何時に寝て何時に起きるかを話す	雑談	what time do you go to bed, I'm up at, eight hours, on a good night, I'm useless before
+S	
+A	What time do you usually go to bed?	普段、何時に寝る？
+B	Eleven, if I'm good. Half twelve, if I'm not.	ちゃんとしてれば11時。そうじゃなければ12時半。
+A	And up at?	起きるのは？
+B	Six thirty. So seven hours on a good night.	6時半。だからいい夜で7時間。
+A	Is that enough?	それで足りる？
+B	Barely. I'd love eight. It never happens.	ぎりぎり。8時間欲しいけど、一度も実現しない。
+S	
+B	You?	そっちは？
+A	Ten, and up at five.	10時に寝て、5時に起きる。
+B	Five! Why?	5時！ なんで？
+A	I like the quiet. The world's asleep. It's the best two hours of the day.	静けさが好きなんだ。世界が眠ってる。一日で最高の2時間。
+B	I'm useless before eight. Physically useless.	8時前は使い物にならない。身体的に。
+A	And I'm useless after nine at night. We're mirror images.	私は夜9時以降が使い物にならない。鏡みたいだね。
+B	We'd never see each other.	お互い顔を合わせることがないね。
+A	We'd have about two hours of overlap. Lunchtime.	重なるのは2時間くらい。お昼時。
+S	
+B	Lunchtime, then. That's our window.	じゃあお昼。それが私たちの時間。
+A	Every day at twelve, both awake and functioning.	毎日12時、2人とも起きて動いてる。
+B	A rare and precious thing.	珍しくて貴重な時間だね。
+T	😴	昼寝の習慣について話す	雑談	do you nap, twenty minutes, I wake up worse, power nap, my grandmother
+S	
+A	Do you nap? In the afternoon?	昼寝する？ 午後に。
+B	Every day I can. Twenty minutes, after lunch. It's sacred.	できる日は毎日。昼食後に20分。神聖な時間。
+A	Twenty minutes exactly?	きっちり20分？
+B	Any longer and I wake up worse. Confused and grumpy.	それ以上寝ると、起きた時のほうがひどい。混乱して不機嫌になる。
+A	That's the trap. I always sleep for two hours.	それが罠なんだよね。私はいつも2時間寝ちゃう。
+B	Two hours isn't a nap. That's a second night.	2時間は昼寝じゃない。2回目の夜だよ。
+A	I know. And then I can't sleep at night.	わかってる。それで夜眠れなくなる。
+B	Set an alarm. Twenty minutes. Trust the science.	目覚ましをセットして。20分。科学を信じて。
+S	
+B	My grandmother napped every day of her life. Lived to ninety-four.	うちの祖母は毎日昼寝してた。94歳まで生きた。
+A	Correlation isn't causation.	相関関係は因果関係じゃないよ。
+B	She'd have said the same. Then gone for a nap.	祖母も同じことを言っただろうね。それから昼寝しに行く。
+A	Fair. Maybe she was onto something.	なるほど。何かを掴んでたのかもね。
+S	
+A	Okay. Twenty minutes, alarm on. I'll try it tomorrow.	わかった。20分、目覚ましあり。明日試してみる。
+B	Report back. You'll be a convert.	報告して。改宗することになるよ。
+A	Or I'll sleep through the alarm. We'll see.	それか、目覚ましを寝過ごす。どうなるか見てみよう。
+T	😪	いびきや寝相を指摘された	雑談	apparently I snore, you kicked me, like a freight train, I don't believe you, there's a recording
+S	
+B	You snored all night.	一晩中いびきをかいてたよ。
+A	I don't snore.	いびきなんてかかないよ。
+B	You snored like a freight train. I moved to the sofa at three.	貨物列車みたいにいびきをかいてた。3時にソファに移動した。
+A	I don't believe you. Nobody's ever told me that.	信じない。誰にもそんなこと言われたことない。
+B	Nobody's ever slept next to you and survived.	隣で寝て生き延びた人がいないんだよ。
+A	That's harsh.	ひどいね。
+B	There's a recording. Do you want to hear it?	録音がある。聞きたい？
+A	...No.	…いや。
+S	
+B	And you kicked me. Twice.	それに蹴られた。2回。
+A	Now you're making things up.	それは作り話でしょ。
+B	I have a bruise. Look.	あざがある。見て。
+A	Oh. Sorry. I don't remember any of that.	あ。ごめん。全然覚えてない。
+B	Of course you don't. You were asleep. Loudly.	覚えてるわけないよ。寝てたんだから。大音量で。
+A	What do I do about it?	どうすればいい？
+B	Sleep on your side. And maybe see someone about the snoring.	横向きに寝て。あと、いびきについては誰かに相談したほうがいい。
+S	
+A	I'm mortified. I thought I was a peaceful sleeper.	恥ずかしい。穏やかな眠り方だと思ってた。
+B	You're a peaceful person. You're a violent sleeper.	穏やかな人だよ。寝てる時は暴力的なだけ。
+A	Tonight I'll take the sofa.	今夜は私がソファで寝るよ。
+B	Thank you. My bruises thank you.	ありがとう。あざも感謝してる。
+T	🌙	寝つきをよくする方法を教え合う	健康	I can't fall asleep, what works for you, no screens, warm bath, the trick is
+S	
+A	I can't fall asleep lately. I lie there for an hour.	最近、寝つけないんだ。1時間横になってる。
+B	What are you doing before bed?	寝る前に何をしてる？
+A	Phone. Emails. Sometimes work.	スマホ。メール。時々仕事。
+B	That's your answer.	それが答えだよ。
+A	I know, I know. But what works for you?	わかってる、わかってる。でもあなたには何が効く？
+B	No screens after nine. A warm bath. Then a boring book.	9時以降は画面なし。温かいお風呂。それから退屈な本。
+A	A boring book?	退屈な本？
+B	Something dull. History of concrete. I'm asleep in ten pages.	つまらないやつ。コンクリートの歴史。10ページで寝てる。
+S	
+A	That's a real book?	それ、本当にある本？
+B	It's a real book. It's my most valuable possession.	本当にある。一番大切な持ち物。
+A	What else?	他には？
+B	The trick is the same time every night. Your body learns.	コツは、毎晩同じ時間に寝ること。体が覚える。
+A	Even on weekends?	週末も？
+B	Even on weekends. Or you reset it every Monday.	週末も。じゃないと毎週月曜にリセットされる。
+A	That's the bit I can't do.	それができないんだよね。
+B	That's the bit that matters most.	それが一番大事なんだよ。
+S	
+A	Okay. Bath, boring book, same time. Starting tonight.	わかった。お風呂、退屈な本、同じ時間。今夜から。
+B	I'll lend you the concrete book.	コンクリートの本を貸すよ。
+A	I'll return it unread.	読まずに返すことになりそう。
+B	That's the point.	それが狙いだよ。
+T	📅	今の仕事の一日の流れを説明する	仕事	a typical day, first thing, most of the morning, after lunch, by the end of the day
+S	
+A	What's a typical day like for you?	普段の一日はどんな感じ？
+B	I'm a teacher, so it starts early. Seven thirty at school.	教師だから、朝は早い。7時半に学校。
+A	What's first thing?	最初にすることは？
+B	Marking. Half an hour before the kids arrive. Then the first class at nine.	採点。生徒が来る前の30分。それから9時に最初の授業。
+A	How many classes a day?	1日に何コマ？
+B	Five. Most of the morning is teaching, then a break at lunch.	5コマ。午前中はほとんど授業、それから昼休み。
+A	Do you actually get lunch?	ちゃんと昼食は取れる？
+B	Twenty minutes. Standing up. In the staff room.	20分。立ったまま。職員室で。
+S	
+A	And after lunch?	昼のあとは？
+B	Two more classes, then meetings. Or parents. Or both.	あと2コマ、それから会議。または保護者対応。または両方。
+A	When do you finish?	終わるのは？
+B	Officially, four. Realistically, six. Then more marking at home.	建前は4時。現実は6時。それから家でまた採点。
+A	That's a long day.	長い一日だね。
+B	By the end of it, I can't form sentences. But I love it.	終わる頃には文章が組み立てられない。でも大好きなんだ。
+S	
+A	What's the best bit?	一番いい部分は？
+B	When a kid gets it. That look on their face. Nothing beats it.	生徒が理解した時。あの表情。それに勝るものはない。
+A	That makes the marking worth it.	それなら採点も報われるね。
+B	Just about.	ぎりぎりね。
+T	⚖️	仕事のどこが好きか・嫌いかを話す	仕事	what do you love about, what do you hate about, the people, the paperwork, on balance
+S	
+A	What do you actually love about your job? And what do you hate?	仕事で本当に好きなところは？ 嫌いなところは？
+B	Love: the people. My team's brilliant. I'd work anywhere with them.	好き：人。チームが素晴らしい。彼らとならどこでも働ける。
+A	And hate?	嫌いなのは？
+B	The paperwork. Every good idea needs three forms and a meeting.	書類仕事。いいアイデアには毎回3つの書類と会議が必要。
+A	Everyone hates the paperwork.	みんな書類仕事は嫌いだよね。
+B	But mine's special. Mine has forms about the forms.	でもうちのは特別。書類についての書類がある。
+A	That's impressive.	それはすごいね。
+B	What about you?	そっちは？
+S	
+A	Love: I can see what I've made. It's on a screen, it works, people use it.	好き：自分が作ったものが見える。画面に出て、動いて、人が使う。
+B	That's a good feeling.	それはいい感覚だね。
+A	Hate: the meetings about the meetings.	嫌い：会議についての会議。
+B	Ha! Same problem, different shape.	はは！ 同じ問題、違う形だね。
+A	And the client who changes their mind every Friday.	あと、毎週金曜に気が変わるクライアント。
+B	Every job has that client.	どの仕事にもそういうクライアントはいる。
+S	
+A	On balance, though?	でも総合的には？
+B	On balance, I'd keep it. The good outweighs the forms.	総合的には、続けたい。良い部分が書類に勝ってる。
+A	Same. Just about.	同じ。ぎりぎりでね。
+B	Ask me again on a Monday.	月曜にもう一度聞いて。
+T	🔀	転職を考えていると打ち明ける	仕事	I've been thinking about leaving, don't tell anyone yet, I'm not sure, what's holding you back, sounds like you've decided
+S	
+A	Can I tell you something? Don't tell anyone yet.	話してもいい？ まだ誰にも言わないで。
+B	Of course.	もちろん。
+A	I've been thinking about leaving. Seriously thinking.	辞めようかと考えてる。本気で。
+B	The company?	会社を？
+A	The company. I've been here five years and I'm not growing anymore.	会社を。5年いて、もう成長してない。
+B	Have you got something else lined up?	次は決まってる？
+A	No. That's the scary part. I'd be jumping without a net.	いや。そこが怖いところ。安全網なしで飛ぶことになる。
+S	
+B	What's holding you back?	何が引き止めてる？
+A	Money, mostly. And the people. I'd miss the people.	主にお金。それと人。人が恋しくなると思う。
+B	You'd still see them. We'd still see each other.	それでも会えるよ。私たちも会える。
+A	I know. But it wouldn't be the same.	わかってる。でも同じじゃない。
+B	No. It wouldn't. But staying somewhere you've stopped growing isn't the same either.	そうだね。でも成長が止まった場所にいるのも、同じじゃない。
+A	That's what I keep telling myself.	自分にもそう言い聞かせてる。
+S	
+B	Sounds like you've already decided. You're just scared.	もう決めてるみたいだね。ただ怖いだけ。
+A	...Yeah. Maybe I have.	…うん。そうかもしれない。
+B	Then do it properly. Find something first. Then jump.	じゃあちゃんとやろう。まず次を見つけて。それから飛ぶ。
+A	That's sensible.	賢明だね。
+B	And I won't tell anyone. But you have to tell me when you do.	誰にも言わない。でも実行する時は教えて。
+T	🚀	副業や将来の独立について話す	仕事	side project, go it alone, in the evenings, it's not making money yet, one day
+S	
+A	What's this side project you keep mentioning?	よく話してる副業って何？
+B	I make furniture. Small stuff. Stools, shelves. In the evenings.	家具を作ってるんだ。小さいもの。スツール、棚。夜に。
+A	And you sell it?	それで売ってるの？
+B	A few pieces. Friends, mostly. It's not making money yet.	数点。主に友達に。まだお金にはなってない。
+A	But you'd like it to?	でもそうしたい？
+B	One day. The dream is to go it alone. Workshop, my own hours.	いつかね。夢は独立すること。工房と、自分で決める労働時間。
+A	What's stopping you?	何が止めてる？
+B	Rent. And fear. Mostly rent.	家賃。それと怖さ。主に家賃。
+S	
+A	Have you thought about part-time? Half the day job, half the wood?	パートタイムは考えた？ 半分は本業、半分は木工。
+B	I have. It's the sensible step. I keep not taking it.	考えた。それが賢明な一歩。でもずっと踏み出せてない。
+A	Why?	なんで？
+B	Because part-time feels like admitting I can't do both full-time.	パートタイムは、両方をフルでできないって認めるみたいだから。
+A	Nobody can do both full-time. That's not weakness, that's physics.	誰も両方をフルではできないよ。弱さじゃなくて、物理の問題。
+B	...Physics. Okay. I like that.	…物理。なるほど。いいね。
+S	
+A	Talk to your manager. See if three days is possible.	上司に話してみて。週3日が可能か。
+B	And if it isn't?	無理だったら？
+A	Then you know. And you plan differently.	じゃあ、それがわかる。別の計画を立てる。
+B	Okay. I'll ask next week. Don't let me chicken out.	わかった。来週聞いてみる。逃げさせないでね。
+T	🤝	職場の人間関係について相談する	仕事	there's someone at work, I don't know how to handle, it's getting to me, talk to them directly, keep it professional
+S	
+A	Can I ask your advice about something at work?	仕事のことで相談してもいい？
+B	Go on.	どうぞ。
+A	There's someone on my team. Every idea I have, she picks apart. In front of everyone.	チームにいる人なんだけど。私のアイデアを毎回、みんなの前で批判するんだ。
+B	Every idea?	毎回？
+A	Every one. Even the good ones. It's getting to me.	毎回。いいアイデアでも。参ってきてる。
+B	Is she like that with everyone, or just you?	彼女はみんなにそうなの？ それともあなただけ？
+A	Mostly me. Which makes it worse.	主に私。だから余計につらい。
+B	Have you talked to her directly?	直接話した？
+A	No. I've been avoiding her.	いや。避けてた。
+S	
+B	Then that's the first step. Not a fight. A conversation.	じゃあそれが最初の一歩。喧嘩じゃなくて、会話。
+A	What do I even say?	何て言えばいい？
+B	"I've noticed you push back on my ideas a lot. Is there something I'm missing?"	「私のアイデアによく反論するよね。何か見落としてることがある？」
+A	That's very calm.	すごく冷静だね。
+B	Calm is the point. Keep it professional. Give her the chance to explain.	冷静さが大事。プロフェッショナルに。彼女に説明の機会を与える。
+A	And if she's just being difficult?	それでも、ただ意地悪なだけだったら？
+B	Then you go to your manager. But not before you've tried.	その時は上司に。でも試す前にじゃなく。
+S	
+A	Okay. I'll ask her for a coffee tomorrow.	わかった。明日コーヒーに誘ってみる。
+B	Good. And tell me how it goes.	よし。どうだったか教えて。
+A	Whatever happens, at least I'll have done something.	どうなっても、少なくとも何か行動したことになる。
+B	That's usually the hardest part.	それがだいたい一番難しい部分だよ。
+T	⚖️	仕事とプライベートのバランスについて話す	仕事	work-life balance, switch off, always on, boundaries, what's the point of
+S	
+A	How's your work-life balance? Honestly.	仕事とプライベートのバランスはどう？ 正直に。
+B	Terrible. I check emails in bed. I dream about spreadsheets.	最悪。ベッドでメールをチェックしてる。表計算の夢を見る。
+A	That's not a balance. That's just work.	それはバランスじゃない。ただの仕事だよ。
+B	I know. I can't switch off. Even on holiday.	わかってる。切り替えられない。休暇中でも。
+A	Do you have to be always on? Does anyone actually need you at ten p.m.?	常に対応可能でいる必要はある？ 夜10時に本当にあなたを必要としてる人はいる？
+B	No. Nobody's ever emailed me at ten and needed an answer by eleven.	いない。10時にメールして、11時までに返事が必要だった人は一度もいない。
+A	So it's you. Not them.	じゃああなたの問題だね。相手じゃなくて。
+B	...It's me.	…私の問題だ。
+S	
+A	I set boundaries last year. Phone off at seven. Nothing on weekends.	去年、線引きをした。7時にスマホを切る。週末は何もしない。
+B	And nothing fell apart?	それで何も崩れなかった？
+A	Nothing. The world kept turning. My work got better, actually.	何も。世界は回り続けた。むしろ仕事の質が上がった。
+B	Better?	上がった？
+A	I was rested. I could think. Turns out tired people make bad decisions.	休めてたから。考えられた。疲れた人は悪い決断をするんだよ。
+B	That's an uncomfortable truth.	それは耳の痛い真実だね。
+S	
+A	What's the point of the job if it eats the life?	人生を食い尽くすなら、仕事の意味は何？
+B	To pay for the life I don't have time to live.	生きる時間のない人生の費用を払うため。
+A	Exactly. So try it. One week. Phone off at seven.	その通り。だから試してみて。1週間。7時にスマホを切る。
+B	One week. If it goes wrong, I'm blaming you.	1週間。うまくいかなかったら、あなたのせいにする。
+A	It won't go wrong. That's the whole point.	うまくいかないことはない。それが肝心なところだよ。
+T	🚆	この電車が目的地に行くか確認する	交通	does this train go to, the right platform, all stops, direct, you're on the right one
+S	
+A	Excuse me, does this train go to Brighton?	すみません、この電車はブライトンに行きますか？
+B	It does. Direct, no changes.	行きますよ。直通で、乗り換えなしです。
+A	Oh, good. I wasn't sure I was on the right platform.	よかった。正しいホームか自信がなくて。
+B	You're on the right one. This is the fast one, too.	正しいホームですよ。しかもこれは速いほうです。
+A	The fast one?	速いほう？
+B	The next one stops everywhere. This one's only four stops.	次のは各駅停車です。これは4駅しか停まりません。
+A	Perfect. How long is it?	完璧です。どのくらいかかりますか？
+B	About an hour. Fifty-five minutes.	1時間くらい。55分です。
+S	
+A	Is this carriage okay, or is it reserved?	この車両は大丈夫ですか、それとも予約席ですか？
+B	It's fine. The reserved ones are at the front. This is open seating.	大丈夫です。予約席は前のほうです。ここは自由席。
+A	Great. And is there a buffet car?	よかった。売店の車両はありますか？
+B	Not on this one. Grab something before you get on.	この電車にはありません。乗る前に何か買ってください。
+A	Do I have time?	時間はありますか？
+B	Four minutes. The kiosk's right there.	4分。売店はすぐそこです。
+S	
+A	Thanks so much. You've saved me a lot of worry.	本当にありがとう。おかげで安心できました。
+B	No problem. Enjoy Brighton. Get fish and chips on the pier.	どういたしまして。ブライトンを楽しんで。桟橋でフィッシュ＆チップスを。
+T	🌙	終電の時間を聞く	交通	what time is the last train, I need to catch, don't miss it, night bus, taxi after that
+S	
+A	What time's the last train back?	帰りの終電は何時？
+B	Eleven forty, I think. Let me check... eleven forty-two.	11時40分だったと思う。確認する… 11時42分。
+A	That's early.	早いね。
+B	It's a Sunday. Weekday's later, but Sunday's eleven forty-two.	日曜だから。平日はもっと遅いけど、日曜は11時42分。
+A	So we need to leave here by eleven fifteen.	じゃあ11時15分にはここを出ないと。
+B	At the latest. The walk's fifteen minutes.	遅くとも。歩いて15分だから。
+A	I'm setting an alarm.	目覚ましをセットしておく。
+B	Good idea. I've missed it before. Not fun.	いい考え。前に逃したことがある。楽しくなかった。
+S	
+A	What happens if we miss it?	逃したらどうなる？
+B	Night bus. Takes an hour and a half and smells of chips.	夜行バス。1時間半かかって、ポテトの匂いがする。
+A	Or a taxi?	タクシーは？
+B	Forty pounds. After midnight, it's more.	40ポンド。0時過ぎるともっと。
+A	Eleven fifteen it is. No excuses.	じゃあ11時15分。言い訳なし。
+B	Even if the band's still playing.	バンドがまだ演奏してても。
+A	Even then. I'm not paying forty pounds to smell chips.	それでも。ポテトの匂いを嗅ぐために40ポンドは払わない。
+S	
+B	Okay. Alarm set for eleven ten.	わかった。11時10分に目覚ましセット。
+A	And we actually leave when it goes off.	それで鳴ったら本当に出る。
+B	We actually leave. Promise.	本当に出る。約束。
+T	🚪	満員電車で「降ります」と伝える	交通	excuse me, getting off, coming through, sorry, could I just squeeze past
+S	
+A	Excuse me, sorry — getting off here.	すみません、ここで降ります。
+B	Oh, sorry. Let me move.	あ、すみません。動きますね。
+A	Thank you. Sorry, coming through.	ありがとうございます。すみません、通ります。
+B	Mind the bag.	カバンに気をつけて。
+A	Got it. Sorry. Excuse me.	はい。すみません。失礼します。
+S	
+A	Sorry, could I just squeeze past? This is my stop.	すみません、通してもらえますか？ ここで降りるんです。
+B	Of course. Here, I'll step out for a second.	もちろん。ちょっと外に出ますね。
+A	That's very kind. Thank you.	ご親切に。ありがとうございます。
+B	No problem. It's packed today.	どういたしまして。今日は混んでますね。
+A	Every day at this time.	この時間はいつもです。
+B	Go, go, the doors are closing.	早く、早く、ドアが閉まります。
+A	Thanks! Made it.	ありがとう！ 間に合った。
+S	
+B	Are you okay? You nearly lost a shoe.	大丈夫ですか？ 靴が脱げそうでしたよ。
+A	I'm fine. Shoe's still on. Barely.	大丈夫です。靴はまだ履いてます。ぎりぎり。
+B	Rush hour. Never gets easier.	ラッシュアワー。いつまで経っても楽にならないですね。
+T	🎒	車内で荷物をどかしてほしいと頼む	交通	is this seat free, would you mind moving your bag, sorry to ask, of course, there's not much room
+S	
+A	Excuse me, is this seat free?	すみません、この席は空いていますか？
+B	Oh, sorry. Yes. Let me move my bag.	あ、すみません。空いてます。カバンをどかしますね。
+A	Thank you. Sorry to ask.	ありがとうございます。お願いしてすみません。
+B	Not at all. I shouldn't have put it there.	とんでもない。置くべきじゃなかったです。
+A	It's fine. Everyone does it.	大丈夫です。みんなやりますから。
+B	Not much room in here, is there?	狭いですよね、ここ。
+A	Never is at this time.	この時間はいつもそうです。
+S	
+A	Sorry, would you mind moving your bag? It's in the aisle a bit.	すみません、カバンを動かしてもらえますか？ 少し通路にはみ出ていて。
+B	Oh! Sorry. I didn't notice.	あ！ すみません。気づきませんでした。
+A	No problem. Just so people can get past.	大丈夫です。人が通れるように。
+B	Is that better?	これで大丈夫ですか？
+A	Perfect. Thanks.	完璧です。ありがとう。
+B	I'd have been annoyed at myself if someone tripped.	誰かがつまずいてたら、自分に腹が立ってました。
+S	
+A	Where are you headed?	どちらまで？
+B	Central. Three more stops. You?	中央駅。あと3駅。あなたは？
+A	Same. We can suffer together.	同じです。一緒に耐えましょう。
+B	Ha. Company in the crush.	はは。すし詰めの中の仲間ですね。
+T	🔄	反対方向の電車に乗ってしまった	交通	wrong direction, I've gone the wrong way, get off at the next, cross over, how did I manage that
+S	
+A	Wait. This says "Eastbound". I need westbound.	待って。「東行き」って書いてある。西行きが必要なのに。
+B	You're going the wrong way, then.	じゃあ逆方向に乗ってますね。
+A	How did I manage that? I checked the sign!	どうしてそうなった？ 表示を確認したのに！
+B	The platforms are confusing here. Everyone does it once.	ここはホームがわかりにくいんです。誰でも一度はやりますよ。
+A	What do I do?	どうすればいい？
+B	Get off at the next stop, cross over to the other platform, and go back.	次の駅で降りて、反対のホームに渡って、戻ってください。
+A	How far back?	どのくらい戻る？
+B	Just two stops. Ten minutes lost, tops.	2駅だけ。せいぜい10分のロス。
+S	
+A	I feel ridiculous.	ばかみたいだ。
+B	Don't. I did it last week. Same platform.	気にしないで。先週、私もやりました。同じホームで。
+A	Really?	本当に？
+B	Really. I live here. Still did it.	本当に。ここに住んでるのに。それでもやった。
+A	That makes me feel better.	少し気が楽になりました。
+B	Next stop's coming up. Cross at the bridge, not the tunnel. Tunnel's slower.	次の駅が来ますよ。トンネルじゃなくて橋で渡ってください。トンネルは遅いので。
+S	
+A	Bridge. Got it. Thank you.	橋。わかりました。ありがとう。
+B	Good luck. Read the sign twice this time.	頑張って。今度は表示を2回読んでください。
+A	Three times. I'm not risking it.	3回。もうリスクは冒しません。
+T	📍	行き先を住所やランドマークで伝える	交通	do you know where that is, it's near, opposite the, the big grey building, I'll show you on my phone
+S	
+A	Hi, could you take me to 42 Harbour Street?	ハーバー通り42番地までお願いできますか？
+B	Harbour Street... which end? It's a long road.	ハーバー通り… どちらの端ですか？ 長い道なので。
+A	Near the old lighthouse. Opposite the fish market.	古い灯台の近く。魚市場の向かいです。
+B	Ah, the north end. I know it.	ああ、北の端ですね。わかります。
+A	It's the big grey building. With a red door.	大きな灰色の建物です。赤いドアの。
+B	The one that used to be a bank?	昔、銀行だったところ？
+A	That's it. I'll show you on my phone if it helps.	そこです。必要ならスマホで見せますね。
+B	No need. I've got it.	大丈夫です。わかりました。
+S	
+A	How long will it take?	どのくらいかかりますか？
+B	Fifteen minutes. Twenty if the bridge is busy.	15分。橋が混んでいれば20分。
+A	Is there a quicker way?	もっと速い道はありますか？
+B	The coast road. Longer, but no traffic. About the same in the end.	海岸道路。遠回りですが渋滞なし。結局ほぼ同じです。
+A	Whichever you think. You know the roads.	お任せします。道に詳しいのはあなたなので。
+B	Coast road, then. Nicer view too.	じゃあ海岸道路で。景色もいいですし。
+S	
+A	Perfect. Thank you.	完璧です。ありがとう。
+B	Meeting someone there?	そこで誰かと会うんですか？
+A	Dinner. A friend's cooking. If she's remembered.	夕食です。友人が料理してくれるんです。覚えていれば。
+T	🚕	メーターを使ってほしい・料金を先に確認する	交通	could you use the meter, how much to, is that the fixed price, I'd rather, before we go
+S	
+A	Hi. Could you use the meter, please?	こんにちは。メーターを使ってもらえますか？
+B	The meter's broken. Flat rate to the airport, forty.	メーターは壊れてます。空港まで定額で40。
+A	Forty? The app says it's about twenty-five.	40？ アプリだと25くらいです。
+B	Traffic is bad today.	今日は渋滞がひどいんです。
+A	I'd rather use the meter. Or I'll find another taxi.	メーターを使ってほしいです。でなければ別のタクシーを探します。
+B	...Fine. Meter's fine.	…わかりました。メーターでいいです。
+A	Thank you.	ありがとうございます。
+S	
+A	Sorry, before we go — how much to the central station, roughly?	すみません、出発前に。中央駅までだいたいいくらですか？
+B	About fifteen. Twenty if there's traffic.	15くらい。渋滞があれば20。
+A	And that's on the meter?	それはメーターで？
+B	On the meter. I'll turn it on now. See?	メーターで。今つけますね。ほら。
+A	Great. Thank you. Sorry to check.	よかった。ありがとう。確認してすみません。
+B	No, it's smart. Some drivers here aren't honest.	いや、賢明ですよ。ここには正直じゃない運転手もいますから。
+S	
+A	Do you get a lot of tourists asking that?	観光客によく聞かれますか？
+B	The smart ones. The others pay forty.	賢い人はね。他の人は40払います。
+A	Ha. I've been the other kind before.	はは。前に、その「他の人」だったことがあります。
+B	Not today.	今日は違いますね。
+T	⏱	急いでいるので近道をお願いする	交通	I'm in a hurry, is there a faster way, I'll pay extra, do what you can, made it
+S	
+A	Hi, the station, please. And I'm in a bit of a hurry.	駅までお願いします。それと、少し急いでいて。
+B	What time's your train?	電車は何時ですか？
+A	Twenty past. Eighteen minutes from now.	20分発。あと18分です。
+B	That's tight. Normally it's twenty-five.	ぎりぎりですね。通常25分かかります。
+A	Is there a faster way?	もっと速い道はありますか？
+B	The back roads. Not pretty, but no lights.	裏道。綺麗ではないけど、信号がない。
+A	Please. Whatever you can do.	お願いします。できることは何でも。
+B	Hold on, then.	じゃあ、つかまって。
+S	
+A	I'll pay extra if it helps.	役に立つなら追加で払います。
+B	No need. I just don't like losing.	要りませんよ。負けるのが嫌いなだけです。
+A	How are we doing?	どんな感じですか？
+B	Eight minutes, six to go. We'll make it.	8分経過、あと6分。間に合いますよ。
+A	You're a hero.	ヒーローですね。
+B	Tell me that after.	後で言ってください。
+S	
+B	Here. Two minutes to spare. Go, go.	着きました。2分余裕あり。行って、行って。
+A	Thank you! Here, keep the change.	ありがとう！ お釣りは取っておいてください。
+B	Run!	走って！
+A	Made it!	間に合った！
 """#
 }
