@@ -34547,5 +34547,382 @@ B	Yes, any branch. We'll repair or replace, usually within a week.	はい、ど�
 A	Good to know. Do I need to keep the receipt?	わかりました。レシートは取っておく必要がありますか？
 B	Yes, or register it online. I'll show you how.	はい、またはオンライン登録を。やり方をお見せします。
 A	Thanks. That's very thorough.	ありがとう。とても丁寧ですね。
+T	🎨	別の色やサイズを取り寄せてもらう	買い物	do you have it in, another branch, transfer it, put it aside, deposit
+S	
+A	I love this, but do you have it in black?	これすごく好きなんですが、黒はありますか？
+B	Not in this store, unfortunately. Let me check the other branches.	残念ながらこの店舗にはありません。他の店舗を確認しますね。
+A	That would be great.	お願いします。
+B	The city centre branch has two in your size.	市内中心の店舗に、あなたのサイズが2点あります。
+A	Could you have one sent here?	1点こちらに送ってもらえますか？
+B	Yes, we can transfer it. It'd be here by Wednesday.	はい、取り寄せできます。水曜には届きます。
+S	
+A	Do I need to pay now?	今払う必要はありますか？
+B	A small deposit, ten. It comes off the price.	少額のデポジット、10だけ。代金から差し引かれます。
+A	That's fine. And if I change my mind?	わかりました。もし気が変わったら？
+B	Fully refundable. No pressure at all.	全額返金します。ご心配なく。
+A	Perfect.	よかった。
+S	
+B	Could I take your name and number?	お名前と電話番号をいただけますか？
+A	Fujinuma. Here's my number.	藤沼です。番号はこちら。
+B	Thank you. We'll call you as soon as it arrives.	ありがとうございます。届き次第お電話します。
+A	Thanks for going to the trouble.	手間をかけてもらってありがとう。
+B	No trouble at all.	全然構いませんよ。
+T	🛒	オンラインで注文して店で受け取る	買い物	click and collect, order number, ready for pickup, ID, in the back
+S	
+A	Hi, I'm here to pick up an online order.	オンライン注文の商品を受け取りに来ました。
+B	Sure. Do you have the order number?	はい。注文番号はお持ちですか？
+A	It's on my phone. Here.	スマホにあります。これです。
+B	Thanks. Could I see some ID as well?	ありがとうございます。身分証もお願いできますか？
+A	Here's my driving licence.	運転免許証です。
+B	Perfect. Give me a minute, it's in the back.	ありがとうございます。少々お待ちください、奥にあります。
+S	
+B	Here you go. One pair of trainers, size nine.	どうぞ。スニーカー1足、サイズ9です。
+A	Can I try them on before I go?	帰る前に試し履きしてもいいですか？
+B	Of course. There's a bench just there.	もちろんです。すぐそこにベンチがあります。
+A	They fit. Great.	ぴったりです。よかった。
+B	Excellent. Anything else while you're here?	よかったです。他に何かございますか？
+A	No, that's it. Thanks.	いえ、これだけです。ありがとう。
+S	
+A	Oh, one thing — if they don't work out, can I return them here?	あ、1つ。合わなかったら、ここで返品できますか？
+B	Yes, within thirty days with the order confirmation.	はい、注文確認書があれば30日以内に。
+A	Good to know. Thanks.	わかりました。ありがとう。
+T	📦	配送先を変更したい	手続き	change the delivery address, hasn't shipped yet, redirect, update, confirmation
+S	
+A	Hi, I placed an order yesterday and I need to change the delivery address.	昨日注文したんですが、配送先を変更したいのです。
+B	Certainly. Has it shipped yet?	承知しました。もう発送されましたか？
+A	I don't think so. The status still says "processing".	まだだと思います。ステータスは「処理中」のままです。
+B	Good, then we can update it. What's the order number?	よかった、では変更できます。注文番号は？
+A	8-8-1-4-0-2.	8-8-1-4-0-2です。
+B	Thank you. And the new address?	ありがとうございます。新しい住所は？
+S	
+A	It's my office. 14 Bridge Street, third floor.	職場です。ブリッジ通り14番地、3階。
+B	Is there a company name for the label?	宛名に会社名は必要ですか？
+A	Yes, Northwind Design.	はい、ノースウィンド・デザインです。
+B	Got it. Updated.	承知しました。更新しました。
+A	Will the delivery date change?	配達日は変わりますか？
+B	No, it's still Thursday.	いいえ、木曜のままです。
+S	
+A	Can I get a confirmation email?	確認メールをもらえますか？
+B	Sending it now.	今送ります。
+A	Perfect. Thanks for being so quick.	完璧です。迅速に対応してくれてありがとう。
+B	You caught it just in time. Have a good day.	ぎりぎり間に合いましたね。良い一日を。
+T	❌	注文を間違えたので取り消したい	手続き	cancel my order, ordered by mistake, wrong item, refund, place a new order
+S	
+A	Hi, I need to cancel an order. I ordered the wrong thing by mistake.	注文をキャンセルしたいのですが。間違って違うものを注文してしまいました。
+B	No problem. What's the order number?	大丈夫ですよ。注文番号は？
+A	3-3-9-7-5-1.	3-3-9-7-5-1です。
+B	Let me see... two blue phone cases?	確認します… 青いスマホケースが2つ？
+A	Yes, I only meant to order one. And in green.	はい、1つだけのつもりだったんです。しかも緑で。
+B	Ah, easy mistake.	ああ、よくある間違いですね。
+S	
+B	It hasn't shipped, so I can cancel it completely.	まだ発送されていないので、完全にキャンセルできます。
+A	Great. And the refund?	よかった。返金は？
+B	Back to your card within five days.	5日以内にカードに戻ります。
+A	Should I place a new order for the green one?	緑のを新しく注文したほうがいいですか？
+B	I can do that for you right now, if you like.	よろしければ、今こちらで手配できますよ。
+A	Yes, please. One green case.	お願いします。緑のケースを1つ。
+S	
+B	Done. Same address, same card?	完了です。同じ住所、同じカードで？
+A	Yes, please.	はい、お願いします。
+B	You'll get two emails: one cancellation, one new order.	メールが2通届きます。キャンセルと、新規注文の。
+A	Perfect. Thank you for sorting it.	完璧です。対応ありがとう。
+T	🎟	アプリのクーポンが使えない	トラブル	the code isn't working, expired, apply the discount, error, manually
+S	
+A	Hi, I'm trying to use the coupon in the app, but it's not working.	アプリのクーポンを使おうとしているんですが、使えなくて。
+B	Let me have a look. Which coupon is it?	確認しますね。どのクーポンですか？
+A	The twenty percent off one. It says "code invalid".	20%オフのです。「コードが無効」と出ます。
+B	Can I see? Ah, this one expired yesterday.	見せてもらえますか？ ああ、これは昨日で期限切れです。
+A	Oh. It didn't say that anywhere.	えっ。どこにも書いてなかったのに。
+B	It's in the small print, unfortunately.	残念ながら、細かい注意書きに書いてあるんです。
+S	
+A	That's frustrating. I only downloaded the app for this.	それは困ります。このためだけにアプリを入れたのに。
+B	I understand. Let me see what I can do.	お気持ちはわかります。何かできることがないか見てみます。
+A	I'd appreciate that.	お願いします。
+B	I can apply the discount manually, just this once.	今回だけ、手動で割引を適用できます。
+A	Really? That's very kind.	本当ですか？ ありがとうございます。
+B	Just don't tell my manager.	店長には内緒ですよ。
+S	
+A	And there's a new code in the app now. Valid till next month.	それと、アプリに新しいコードがあります。来月まで有効です。
+B	Oh, so there is. I'll use that next time.	あ、本当だ。次回はそれを使います。
+A	Have a good one.	良い一日を。
+T	🔌	充電スポットがどこにあるか聞く	日常	is there somewhere I can charge, plug socket, charging station, low battery, by the window
+S	
+A	Excuse me, is there somewhere I can charge my phone?	すみません、スマホを充電できる場所はありますか？
+B	There are sockets under the tables by the window.	窓際のテーブルの下にコンセントがあります。
+A	Oh, perfect. Are they all taken?	それはよかった。全部埋まっていますか？
+B	The far one's free, I think.	一番奥のは空いていると思います。
+A	Thanks. I'm on two percent.	ありがとう。2%しかなくて。
+B	Ha, go quickly then.	はは、急いでください。
+S	
+A	Do you have a cable I could borrow? I left mine at home.	ケーブルを借りられますか？ 家に忘れてきてしまって。
+B	We've got a couple behind the counter. What type?	カウンターの後ろにいくつかあります。どのタイプですか？
+A	USB-C.	USB-Cです。
+B	Here. Just bring it back when you're done.	どうぞ。終わったら返してくださいね。
+A	Absolutely. You've saved my afternoon.	もちろんです。おかげで午後が救われました。
+S	
+B	There's also a charging station at the library, if you're around later.	あとで近くにいるなら、図書館にも充電ステーションがありますよ。
+A	Good to know. Thanks again.	覚えておきます。ありがとう。
+B	No problem.	どういたしまして。
+T	🧻	トイレットペーパーが切れている	住まい	we're out of, last roll, put it on the list, whose turn, spare
+S	
+A	Hey, we're out of toilet paper.	ねえ、トイレットペーパーが切れてる。
+B	Already? I bought some last week.	もう？ 先週買ったばかりなのに。
+A	That was the last roll. I used it this morning.	あれが最後の1個だった。今朝使い切っちゃった。
+B	Is there a spare in the cupboard?	戸棚に予備はない？
+A	I checked. Nothing.	確認した。何もない。
+B	Right. Emergency.	なるほど。緊急事態だね。
+S	
+A	Whose turn is it to do the shopping?	買い物当番は誰？
+B	Mine, technically. But I'm not back till late.	一応私。でも帰りが遅いんだ。
+A	I'll grab some on my way home. Add it to my tab.	帰りに買ってくるよ。私の分につけといて。
+B	Thanks. Get the big pack this time.	ありがとう。今回は大きいパックを買って。
+A	And I'm putting it on the shopping list so this doesn't happen again.	あと、二度とこうならないように買い物リストに入れておく。
+S	
+B	We need a system.	仕組みが必要だね。
+A	Rule: whoever opens the last pack buys the next one.	ルール：最後のパックを開けた人が次を買う。
+B	Deal. That's fair.	決まり。それは公平だね。
+A	Now, I need to go and find a café.	さて、カフェを探しに行かないと。
+T	🚿	シャワーの温度が調整できない	旅行	the shower's either scalding or freezing, can't adjust, mixer tap, send someone, switch rooms
+S	
+A	Hi, I'm in 208. The shower's either scalding or freezing. There's no in-between.	208号室です。シャワーが熱湯か冷水かのどちらかで。中間がありません。
+B	I'm sorry about that. Is the dial not turning?	申し訳ありません。ダイヤルが回らないのですか？
+A	It turns, but nothing changes until it suddenly jumps.	回りますが、突然変わるまで何も変化しなくて。
+B	That sounds like the mixer valve. I'll send maintenance up.	ミキシングバルブの問題のようですね。修理担当を向かわせます。
+A	Thank you. How long?	ありがとう。どのくらいかかりますか？
+B	About fifteen minutes.	15分ほどです。
+S	
+B	He's had a look. It needs a new part, which we don't have today.	確認したところ、部品交換が必要で、今日は在庫がないそうです。
+A	So no shower tonight?	じゃあ今夜はシャワーなし？
+B	We can move you to another room. 305 is free.	別のお部屋にご案内できます。305号室が空いています。
+A	That would be great. Is it similar?	それは助かります。同じような部屋ですか？
+B	Slightly bigger, actually. Same rate.	むしろ少し広いです。料金は同じで。
+A	Even better.	なおさらいいですね。
+S	
+B	I'll have someone help with your bags.	荷物は係の者が運びます。
+A	Thanks for sorting it so quickly.	すぐ対応してくれてありがとう。
+B	Not at all. Enjoy your hot shower.	とんでもない。熱いシャワーをどうぞ。
+T	🛏	ベッドのシーツを替えてほしい	旅行	change the sheets, fresh linen, housekeeping, while I'm out, extra pillow
+S	
+A	Hi, could I ask housekeeping to change the sheets today?	ハウスキーピングに今日シーツを替えてもらえるよう頼めますか？
+B	Of course. Any particular reason?	もちろんです。何か理由がございますか？
+A	I spilt some coffee on them this morning.	今朝、コーヒーをこぼしてしまって。
+B	No problem. We'll sort it while you're out.	大丈夫です。お出かけの間に対応します。
+A	Thank you. And could I get an extra pillow as well?	ありがとう。あと、枕をもう1つもらえますか？
+B	Certainly. Firm or soft?	かしこまりました。硬めですか、柔らかめですか？
+A	Soft, please.	柔らかめで。
+S	
+B	What time will you be out?	何時頃お出かけですか？
+A	From ten until about three.	10時から3時頃までです。
+B	Perfect. It'll be done by the time you're back.	承知しました。お戻りまでには終わっています。
+A	Great. Sorry about the coffee.	助かります。コーヒーの件、すみません。
+B	Happens every day. Don't worry.	毎日あることです。お気になさらず。
+S	
+A	Oh, and is there a laundry service? My shirt got it too.	あと、ランドリーサービスはありますか？ シャツにもかかってしまって。
+B	Yes. Leave it in the bag in the wardrobe and we'll collect it.	はい。クローゼットの袋に入れておいてください。回収します。
+A	Perfect. Thanks so much.	完璧です。ありがとうございました。
+T	🚫	掃除は不要だとホテルに伝える	旅行	no need to clean, skip housekeeping, do not disturb, just towels, environmentally
+S	
+A	Hi, I don't need my room cleaned today.	今日は部屋の掃除は不要です。
+B	No problem. Shall I let housekeeping know?	承知しました。ハウスキーピングに伝えましょうか？
+A	Yes, please. I've got the "do not disturb" sign up too.	お願いします。「起こさないで」の札も出しています。
+B	Perfect. Do you need anything at all?	わかりました。何か必要なものはありますか？
+A	Just a couple of fresh towels, if that's okay.	新しいタオルを2枚ほど、可能なら。
+B	Of course. We'll leave them outside the door.	もちろんです。ドアの外に置いておきます。
+S	
+A	Actually, can I skip cleaning for the whole stay? I'm only here three nights.	滞在中ずっと掃除なしでもいいですか？ 3泊だけなので。
+B	Absolutely. A lot of guests do that now.	もちろんです。最近そうされる方は多いですよ。
+A	Seems wasteful otherwise.	そうしないともったいない気がして。
+B	We appreciate it. And we'll still restock the coffee.	ありがたいです。コーヒーの補充はしますね。
+A	Oh, that's the important part.	あ、それが一番大事なんです。
+S	
+B	Just call if you change your mind.	気が変わったらお電話ください。
+A	Will do. Thanks.	そうします。ありがとう。
+T	📅	延泊したい	旅行	extend my stay, one more night, availability, same room, same rate
+S	
+A	Hi, I'd like to extend my stay by one more night, if possible.	可能なら、もう1泊延長したいのですが。
+B	Let me check availability. Which room are you in?	空き状況を確認します。お部屋番号は？
+A	412. I'm due to check out tomorrow.	412です。明日チェックアウトの予定です。
+B	Good news, the room's free tomorrow night.	よかったです、明日の夜も空いています。
+A	Great. Is it the same rate?	よかった。料金は同じですか？
+B	Slightly higher, as it's a Friday. One twenty instead of one ten.	金曜なので少し高くなります。110ではなく120です。
+S	
+A	That's fine. Can I stay in the same room?	大丈夫です。同じ部屋に泊まれますか？
+B	Yes, no need to move anything.	はい、荷物を動かす必要はありません。
+A	Perfect. Same card?	完璧です。同じカードで？
+B	I can use the one on file, if that's okay.	登録済みのカードでよろしければ。
+A	Yes, please.	お願いします。
+S	
+B	Done. You're now checking out Saturday at eleven.	完了です。チェックアウトは土曜の11時になります。
+A	Thank you. I'm glad I asked.	ありがとう。聞いてよかったです。
+B	Enjoy the extra day.	延長した一日を楽しんでください。
+T	⏰	チェックアウトを遅らせたい	旅行	late checkout, what's the latest, extra charge, until two, flight isn't until
+S	
+A	Hi, is it possible to get a late checkout tomorrow?	明日、レイトチェックアウトはできますか？
+B	Usually yes. What time were you thinking?	通常は可能です。何時頃をお考えですか？
+A	My flight isn't until the evening. Two o'clock?	フライトが夜なんです。2時はどうですか？
+B	Two is fine. There's a small charge for anything after one.	2時なら大丈夫です。1時以降は少し料金がかかります。
+A	How much?	いくらですか？
+B	Twenty. Or free if you're a member.	20です。会員なら無料ですが。
+S	
+A	I'm not a member. Can I sign up now?	会員ではないんです。今登録できますか？
+B	Yes, it's free, and it'd waive the fee.	はい、無料で、料金も免除になります。
+A	Then let's do that.	じゃあそうします。
+B	Just your email. Done. Late checkout at two, no charge.	メールアドレスだけで。完了です。2時にチェックアウト、無料です。
+A	That was easy.	簡単でしたね。
+S	
+A	And what's the very latest I could do?	一番遅くて何時までできますか？
+B	Four, but we'd have to charge half a night after two.	4時まで。ただ2時以降は半泊分いただくことになります。
+A	Two is plenty. Thank you.	2時で十分です。ありがとう。
+T	🧳	荷物を部屋まで運んでほしい	旅行	help with my bags, porter, take these up, tip, they're heavy
+S	
+A	Excuse me, could someone help me with my bags?	すみません、荷物を運ぶのを手伝ってもらえますか？
+B	Of course. I'll call the porter.	もちろんです。ポーターを呼びます。
+A	Thank you. They're quite heavy.	ありがとう。かなり重くて。
+B	That's what he's here for. Which room?	そのためにいますから。お部屋は？
+A	614.	614です。
+S	
+B	Good afternoon. Just these two?	こんにちは。こちらの2つですか？
+A	Yes. Careful with the small one, there's a laptop inside.	はい。小さいほうは気をつけてください、ノートパソコンが入っています。
+B	I'll carry that one myself. Follow me.	それは私が手で持ちます。こちらへどうぞ。
+A	Thanks. Is the lift this way?	ありがとう。エレベーターはこっちですか？
+B	Just round the corner.	角を曲がったところです。
+S	
+B	Here we are. Where would you like them?	着きました。どこに置きましょうか？
+A	By the wardrobe is fine. Thank you so much.	クローゼットのそばでお願いします。本当にありがとう。
+B	My pleasure. Enjoy your stay.	どういたしまして。ごゆっくりどうぞ。
+A	Here, for your trouble.	これ、お礼です。
+B	That's very kind. Thank you.	ご親切に。ありがとうございます。
+T	🏪	近くのコンビニやATMを聞く	旅行	is there a convenience store nearby, cash machine, open late, round the corner, twenty-four hours
+S	
+A	Hi, is there a convenience store nearby?	すみません、近くにコンビニはありますか？
+B	Yes, just round the corner to the left.	はい、角を左に曲がったすぐです。
+A	Is it open late?	遅くまで開いていますか？
+B	Twenty-four hours.	24時間営業です。
+A	Perfect. And a cash machine?	よかった。ATMは？
+B	There's one inside the store. Or the bank across the road.	店内にあります。または道の向かいの銀行にも。
+S	
+A	Does the one in the store charge a fee?	店内のは手数料がかかりますか？
+B	A small one, I think. The bank's is free.	少しかかると思います。銀行のは無料です。
+A	I'll use the bank, then.	じゃあ銀行を使います。
+B	It's open now, and the machine's outside anyway.	今開いていますし、ATMは外にありますから。
+A	Great, thanks.	よかった、ありがとう。
+S	
+B	Oh, and if you need a pharmacy, it's two doors down from the store.	あと薬局が必要なら、コンビニの2軒隣です。
+A	Good to know. You've thought of everything.	覚えておきます。何でも教えてくれますね。
+B	That's the job. Have a good evening.	それが仕事ですから。良い夜を。
+T	🗺	観光地までの行き方とかかる時間を聞く	旅行	how do I get to, how long does it take, the quickest way, by bus or train, well signposted
+S	
+A	Excuse me, how do I get to the castle from here?	すみません、ここからお城へはどう行けばいいですか？
+B	You can walk it, or take the number 12 bus.	歩いても行けますし、12番のバスでも。
+A	How long does it take to walk?	歩くとどのくらいかかりますか？
+B	About twenty-five minutes. It's uphill at the end.	25分ほどです。最後が上り坂ですが。
+A	And the bus?	バスだと？
+B	Ten minutes. It stops right outside.	10分です。お城のすぐ前に停まります。
+S	
+A	Which is the quickest way overall?	全体で一番早いのはどっちですか？
+B	The bus, if one's coming. They run every fifteen minutes.	バスが来ていればバスです。15分おきに出ています。
+A	Where's the stop?	バス停はどこですか？
+B	Across the road, by the bakery.	道の向かい、パン屋のそばです。
+A	Great. And is it well signposted from the bus stop?	わかりました。バス停からは案内表示が出ていますか？
+B	You can't miss it. It's a castle.	見逃しませんよ。お城ですから。
+S	
+A	Ha, fair point. Thanks a lot.	はは、たしかに。ありがとうございます。
+B	Enjoy it. The view from the top is worth the climb.	楽しんでください。頂上からの眺めは登る価値がありますよ。
+T	🎫	入場券をどこで買うか聞く	旅行	where do I buy tickets, ticket office, online, skip the queue, timed entry
+S	
+A	Hi, where do I buy tickets for the museum?	すみません、美術館のチケットはどこで買えますか？
+B	The ticket office is just inside, on the left.	チケット売り場は入ってすぐ左です。
+A	Is there a queue?	列はありますか？
+B	About twenty minutes right now.	今は20分ほどです。
+A	Hmm. Can I buy them online instead?	うーん。代わりにオンラインで買えますか？
+B	Yes, and you skip the queue. Scan that code.	はい、それなら列を飛ばせます。あのコードを読み取ってください。
+S	
+A	Is it the same price online?	オンラインも同じ価格ですか？
+B	Slightly cheaper, actually. Two off.	むしろ少し安いです。2引きです。
+A	Even better. Is it timed entry?	なおさらいいですね。時間指定制ですか？
+B	Yes, pick a slot. The next one's at two thirty.	はい、時間枠を選んでください。次は2時半です。
+A	Perfect, that's in ten minutes.	完璧、あと10分ですね。
+S	
+A	Done. Do I need to print it?	買えました。印刷は必要ですか？
+B	No, just show the code on your phone at the entrance.	いいえ、入口でスマホのコードを見せるだけです。
+A	Great. Thanks for the tip.	よかった。教えてくれてありがとう。
+B	Enjoy the exhibition.	展示を楽しんでください。
+T	🎓	学生割引が使えるか聞く	旅行	student discount, student ID, valid, concession, how much off
+S	
+A	Hi, do you do a student discount?	すみません、学生割引はありますか？
+B	We do. Have you got your student ID?	あります。学生証はお持ちですか？
+A	Yes, here. It's from a Japanese university, is that okay?	はい、こちら。日本の大学のものですが、大丈夫ですか？
+B	Let me see... yes, that's fine. It's got a photo and a date.	見せてください… はい、大丈夫です。写真と日付があるので。
+A	Great. How much is it off?	よかった。いくら引きですか？
+B	Half price. So eight instead of sixteen.	半額です。16が8になります。
+S	
+A	Is it valid for the special exhibition too?	特別展にも使えますか？
+B	Yes, the concession covers everything today.	はい、今日は学割ですべてカバーされます。
+A	Brilliant. One student ticket, please.	素晴らしい。学生券を1枚お願いします。
+B	Here you go. Keep your ID on you, they might check inside.	どうぞ。学生証は持っていてください、中で確認されることがあります。
+A	Will do.	そうします。
+S	
+A	Do you know if the café does a student rate too?	カフェにも学割があるか知っていますか？
+B	Ten percent, I think. Worth asking.	10%だったと思います。聞いてみる価値はありますよ。
+A	I'll ask. Thanks for your help.	聞いてみます。ありがとうございました。
+T	🧑‍🏫	ガイド付きツアーに申し込む	旅行	sign up for a tour, how long is it, in English, meet at, what's included
+S	
+A	Hi, I'd like to sign up for a guided tour.	ガイド付きツアーに申し込みたいのですが。
+B	Sure. We have one at eleven and one at two.	はい。11時と2時の回があります。
+A	Are they in English?	英語ですか？
+B	The eleven o'clock is. The two o'clock is in Spanish.	11時の回は英語です。2時はスペイン語です。
+A	Eleven, then. How long is it?	じゃあ11時で。どのくらいの時間ですか？
+B	About ninety minutes.	90分ほどです。
+S	
+A	What's included?	何が含まれていますか？
+B	The old town, the cathedral, and the market. Entry to the cathedral's included.	旧市街、大聖堂、市場です。大聖堂の入場料は含まれています。
+A	And how much is it?	料金はいくらですか？
+B	Fifteen per person.	1人15です。
+A	Okay, two tickets, please.	では2枚お願いします。
+B	Where do we meet?	集合場所はどこですか？
+S	
+B	Right here, ten minutes before. Look for the guide with the red umbrella.	ここに10分前に。赤い傘を持ったガイドを探してください。
+A	Red umbrella. Got it.	赤い傘。わかりました。
+B	And wear comfortable shoes. There's a lot of walking.	歩きやすい靴で。かなり歩きますから。
+A	Thanks for the warning.	教えてくれてありがとう。
+T	🎁	お土産で人気のものを聞く	旅行	what's a good souvenir, typical of the area, popular, local, easy to carry
+S	
+A	What's a good souvenir from around here?	この辺りのお土産で、いいものは何ですか？
+B	The local honey is very popular. And the ceramics.	地元のはちみつが人気です。あと陶器も。
+A	Honey? Is it special?	はちみつ？ 特別なんですか？
+B	It's from the lavender fields up the hill. You can't get it anywhere else.	丘の上のラベンダー畑のものです。他では手に入りません。
+A	That sounds perfect for my mum.	母にぴったりですね。
+B	Get the small jars. They're easier to carry.	小さい瓶がいいですよ。持ち運びやすいので。
+S	
+A	And the ceramics — where's the best place?	陶器は、どこで買うのが一番いいですか？
+B	The little workshop by the church. They make it right there.	教会のそばの小さな工房です。その場で作っています。
+A	Is it expensive?	高いですか？
+B	Not really. Small bowls start at about ten.	そうでもないです。小さいボウルは10くらいからです。
+A	That's very reasonable.	かなり良心的ですね。
+B	And they'll wrap it properly for the flight.	飛行機用にしっかり包んでくれますよ。
+S	
+A	What do people usually regret not buying?	みんな、買わずに後悔するものって何ですか？
+B	The honey. Everyone comes back for more.	はちみつです。みんなもっと欲しくて戻ってきます。
+A	Then I'll get three jars.	じゃあ3瓶買います。
+T	🍲	その土地の名物料理を聞く	旅行	local speciality, what's the region known for, must-try, where's the best place, traditional
+S	
+A	What's this region known for, food-wise?	この地域の名物料理は何ですか？
+B	Definitely the fish stew. It's what everyone comes for.	絶対に魚のシチューですね。みんなそれを目当てに来ます。
+A	What's in it?	何が入っていますか？
+B	Whatever was caught that morning, tomatoes, saffron, and a lot of garlic.	その朝獲れた魚と、トマト、サフラン、それにニンニクたっぷり。
+A	That sounds amazing.	美味しそうですね。
+B	It is. It's been made the same way for centuries.	美味しいですよ。何世紀も同じ作り方なんです。
+S	
+A	Where's the best place to try it?	一番美味しく食べられるのはどこですか？
+B	Down by the harbour. The place with the blue awning.	港のそばです。青い日よけのお店。
+A	Is it touristy?	観光客向けですか？
+B	A bit, but the locals go too. That's how you know it's good.	少し。でも地元の人も行きます。それが美味しい証拠です。
+A	Anything else I should try?	他に試すべきものは？
+B	The almond cake for dessert. It's traditional.	デザートにアーモンドケーキを。伝統的なものです。
+S	
+A	Stew, almond cake. I'm going tonight.	シチューにアーモンドケーキ。今夜行きます。
+B	Book ahead. It fills up by seven.	予約したほうがいいですよ。7時には満席になります。
+A	Thanks for the tip.	教えてくれてありがとう。
+B	Enjoy. Tell them Maria at the hotel sent you.	楽しんでください。ホテルのマリアの紹介だと伝えてください。
 """#
 }
