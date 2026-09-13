@@ -35714,5 +35714,417 @@ A	Now you're curious. That's how it starts.	好奇心が出てきたね。そう
 B	Don't push it. One new thing per meal.	調子に乗らないで。1食につき新しいもの1つまで。
 A	Deal. Next time, sea urchin.	決まり。次はウニね。
 B	...We'll see.	…考えとく。
+T	🤳	「その写真、盛れてる」と褒める	雑談	you look great in this, the lighting, good angle, post it, delete that one
+S	
+A	Let me see the photos from last night.	昨夜の写真、見せて。
+B	Here. Swipe through.	はい。スワイプして。
+A	Oh, this one! You look amazing here.	あ、これ！ すごくよく撮れてる。
+B	Really? I thought I looked tired.	そう？ 疲れて見えると思ったんだけど。
+A	No way. The lighting's perfect. And the angle.	全然。光が完璧だし、角度もいい。
+B	That's the one by the window, right?	窓のそばで撮ったやつだよね？
+A	Yes. Window light is magic.	うん。窓の光は魔法だよ。
+S	
+B	What about this one?	これは？
+A	Hmm. Delete that one.	うーん。それは消して。
+B	That bad?	そんなにひどい？
+A	Your eyes are half closed and I'm mid-sneeze.	目が半分閉じてて、私はくしゃみの途中。
+B	Ha! Okay, deleted.	はは！ わかった、消した。
+A	But the first one — post it. Seriously.	でも最初のやつは投稿して。本気で。
+S	
+B	You're in it too. Are you okay with that?	あなたも写ってるよ。大丈夫？
+A	In that one? Absolutely. I look good for once.	それなら？ もちろん。珍しくいい感じに写ってるし。
+B	"For once."	「珍しく」ね。
+A	Post it before I change my mind.	気が変わる前に投稿して。
+T	😂	二人だけの内輪ネタで笑う	雑談	remember when, inside joke, nobody else gets it, that face, still funny
+S	
+A	Pass the salt, please. And don't do the thing.	塩取って。あと、あれはやらないでね。
+B	What thing?	あれって何？
+A	You know the thing.	わかってるでしょ。
+B	"Salt? In this economy?"	「塩？ この不景気に？」
+A	You did the thing.	やったね。
+B	I couldn't help it. It's been three years and it's still funny.	我慢できなかった。3年経ってもまだ面白い。
+S	
+A	Nobody else gets it, you know.	他の人には誰もわからないんだよ、これ。
+B	That's the point of an inside joke.	それが内輪ネタの醍醐味でしょ。
+A	Sam asked me last week why we always say it.	先週サムに、なんでいつも言うのか聞かれた。
+B	What did you tell him?	何て言ったの？
+A	"You had to be there." He looked so confused.	「その場にいないとわからない」って。すごく困惑してた。
+B	Poor Sam.	かわいそうなサム。
+S	
+B	Remember the face the waiter made?	あのウェイターの顔、覚えてる？
+A	Don't. I'll choke on my dinner.	やめて。夕飯を喉に詰まらせる。
+B	That face is burned into my memory.	あの顔は記憶に焼き付いてる。
+A	Best night ever. Worst joke ever.	最高の夜だった。最低のジョークだったけど。
+T	🛋	くだらない話でだらだら盛り上がる	雑談	what's the point of, I've been thinking, hear me out, this is important, we've been talking for hours
+S	
+A	Okay, I've been thinking. Why do we say "a pair of trousers"? It's one thing.	ねえ、考えてたんだけど。なんで「ズボン一組」って言うの？ 1つのものなのに。
+B	Two legs. Two holes.	脚が2本。穴が2つ。
+A	By that logic, a shirt is a pair of shirts.	その理屈だと、シャツも「シャツ一組」になるよ。
+B	Hmm. You've got me there.	うーん。それは一本取られた。
+A	This is important. I need answers.	これは大事なことなんだ。答えが必要。
+S	
+B	Okay, here's mine. Why is it called a building if it's already built?	じゃあ私の番。もう建ってるのに、なんで「ビルディング（建てているもの）」なの？
+A	Oh no. That's going to keep me up.	うわ。それは今夜眠れなくなる。
+B	Should be a "built".	「ビルト」であるべきだよ。
+A	"I work in a built." Sounds terrible.	「ビルトで働いてます」。ひどい響き。
+B	Language makes no sense. None of it.	言葉って意味不明だよね。全部。
+S	
+A	Wait, what time is it?	待って、今何時？
+B	Nearly midnight. We've been talking about trousers for two hours.	もうすぐ0時。2時間ズボンの話をしてた。
+A	Was it worth it?	その価値はあった？
+B	Absolutely not. Same time next week?	全くない。来週も同じ時間に？
+A	Obviously.	当然。
+T	🌤	天気の話から雑談を始める	雑談	lovely day, finally, been a while, make the most of it, how've you been
+S	
+A	Lovely day, isn't it?	いい天気だね。
+B	Finally! I thought the rain would never stop.	やっと！ 雨は永遠に止まないかと思ってた。
+A	It's been a while since we've seen the sun.	太陽を見るのは久しぶりだよね。
+B	Two weeks, I think. Two grey weeks.	2週間かな。灰色の2週間。
+A	We should make the most of it.	この天気を最大限楽しまないと。
+S	
+B	Any plans to get outside?	外に出る予定は？
+A	A walk this afternoon, maybe. You?	午後に散歩でも。そっちは？
+B	Same, if I finish work in time. How've you been, anyway?	同じ、仕事が間に合えば。ところで、最近どう？
+A	Good, actually. Busy, but good.	元気だよ。忙しいけど。
+B	Busy with what?	何で忙しいの？
+A	New project at work. Interesting for once.	仕事の新しいプロジェクト。珍しく面白いんだ。
+S	
+B	Tell me about it on the walk?	散歩しながら聞かせてよ。
+A	Are you inviting yourself?	自分から参加しに来た？
+B	Yes. The weather's too good to walk alone.	うん。一人で歩くには良すぎる天気だから。
+A	Fair. Three o'clock, by the park gate.	なるほど。3時に、公園の門で。
+T	😏	相手の寝坊をからかう	雑談	nice of you to join us, overslept again, what time do you call this, alarm, never lived it down
+S	
+A	Well, well. Nice of you to join us.	おやおや。ご参加いただき光栄です。
+B	Don't start.	やめてよ。
+A	What time do you call this?	今何時だと思ってるの？
+B	I know, I know. My alarm didn't go off.	わかってる、わかってる。目覚ましが鳴らなかったんだ。
+A	Your alarm never goes off. It's the most unreliable alarm in history.	あなたの目覚ましは一度も鳴ったことがない。史上最も信頼できない目覚まし。
+B	It's not the alarm's fault.	目覚ましのせいじゃないよ。
+A	So it's your fault?	じゃあ自分のせい？
+B	...I'm not answering that.	…それには答えない。
+S	
+A	Remember the time you overslept for your own birthday brunch?	自分の誕生日ブランチに寝坊した時のこと、覚えてる？
+B	You're never going to let that go, are you?	それ、絶対忘れてくれないよね。
+A	Never. We waited an hour. For you. At your party.	絶対に。1時間待ったんだよ。あなたを。あなたのパーティーで。
+B	The pancakes were still good, though.	でもパンケーキは美味しかったでしょ。
+A	The pancakes were cold.	パンケーキは冷めてた。
+S	
+B	Okay, I'll set two alarms next time.	わかった、次は目覚ましを2つかける。
+A	Set three. And put one across the room.	3つかけて。1つは部屋の反対側に。
+B	Fine. Now can I have a coffee?	わかったよ。それで、コーヒー飲んでもいい？
+A	Only because you look terrible.	ひどい顔してるから、特別にね。
+T	🌙	「今日はもう帰ろう」と切り上げる	雑談	let's call it a night, I'm done, one more, early start, get the bill
+S	
+A	Right, I think that's me. Let's call it a night.	さて、私はここまでかな。今日はお開きにしよう。
+B	Already? It's only ten.	もう？ まだ10時だよ。
+A	Only ten! I've been up since six.	10時だよ！ 6時から起きてるんだから。
+B	One more drink?	もう一杯だけ？
+A	You always say one more.	いつももう一杯って言うよね。
+B	Because it's always a good idea.	いつもいい考えだからね。
+A	It's never a good idea. Not on a Wednesday.	一度もいい考えだったことはない。水曜は特に。
+S	
+B	Fine. But you're getting the bill.	わかった。でもお会計はそっちね。
+A	Why me?	なんで私？
+B	Because you're leaving early. It's the rules.	早く帰るから。ルールだよ。
+A	That's not a rule.	そんなルールないよ。
+B	It is now.	今できた。
+A	Fine. Half each, and I'm not arguing.	わかった。半分ずつ、それ以上は議論しない。
+S	
+B	Same time next week?	来週も同じ時間？
+A	Same time. And I'm staying till eleven. Maybe.	同じ時間。11時までいるよ。たぶん。
+B	I'll believe it when I see it.	見るまで信じない。
+A	Night. Get home safe.	おやすみ。気をつけて帰ってね。
+T	👋	「気をつけて帰ってね」と言う	雑談	get home safe, text me when you're in, mind how you go, it's late, see you soon
+S	
+A	Are you getting the train?	電車で帰る？
+B	Yeah, the ten forty. I should just make it.	うん、10時40分の。ぎりぎり間に合うはず。
+A	Okay. Get home safe.	わかった。気をつけて帰ってね。
+B	I will. It's only three stops.	大丈夫。3駅だけだから。
+A	Still. Text me when you're in.	それでも。着いたらメッセージして。
+B	You always say that.	いつもそう言うね。
+A	And I always mean it.	いつも本気で言ってるんだよ。
+S	
+B	It's late. Are you walking?	遅いね。歩いて帰るの？
+A	Just to the bus stop. It's well lit.	バス停までだけ。明るい道だから。
+B	Mind how you go.	気をつけてね。
+A	I will. Thanks for tonight.	うん。今夜はありがとう。
+B	Thank you. It was lovely.	こちらこそ。楽しかったよ。
+S	
+B	Okay, that's my train. See you soon!	よし、電車が来た。またね！
+A	See you! Don't fall asleep on it.	またね！ 乗り過ごさないでね。
+B	No promises.	保証はできない。
+T	🍸	バーやカフェで隣の人に自然に話しかける	人間関係	is this seat taken, what are you drinking, first time here, I'm Kohei, nice to meet you
+S	
+A	Is anyone sitting here?	ここ、誰か座ってますか？
+B	No, go ahead.	いいえ、どうぞ。
+A	Thanks. Busy tonight, isn't it?	ありがとう。今夜は混んでますね。
+B	It's always like this on Fridays.	金曜はいつもこうですよ。
+A	Ah, I'm new here. First time in this place.	ああ、私はここは初めてで。この店も初めてです。
+B	You picked a good one. The cocktails are great.	いい店を選びましたね。カクテルが美味しいんです。
+S	
+A	What are you drinking? That looks good.	何を飲んでるんですか？ 美味しそう。
+B	It's the house special. Gin, elderflower, something else.	ここの看板カクテル。ジンとエルダーフラワーと、あと何か。
+A	Sold. I'll get one of those.	決まり。それにします。
+B	Good choice. I'm Ellie, by the way.	いい選択ですね。私はエリーです。
+A	Kohei. Nice to meet you.	航平です。よろしく。
+B	Are you here on your own?	一人で来たんですか？
+A	Waiting for a friend. He's always late.	友達を待ってるんです。いつも遅刻するやつで。
+S	
+B	Well, you can wait here. I'm not going anywhere.	じゃあここで待てばいいですよ。私はどこにも行かないので。
+A	That's kind. So, do you live nearby?	ありがとう。この近くに住んでるんですか？
+B	Two streets away. This is basically my living room.	2本先の通りに。ここはほぼ私のリビングです。
+A	Then you'll have to tell me what else is good.	じゃあ、他にいい店も教えてもらわないと。
+T	🧣	相手の飲み物や服をきっかけに会話を始める	人間関係	I love your, where's that from, I've been meaning to try, good taste, same here
+S	
+A	Sorry, I have to ask — where did you get that jacket?	すみません、聞かずにいられなくて。そのジャケット、どこで買ったんですか？
+B	Oh, this? A little shop in Lisbon. Years ago.	これ？ リスボンの小さなお店で。何年も前に。
+A	It's brilliant. The colour especially.	素晴らしいですね。特にその色。
+B	Thank you! Nobody ever notices it.	ありがとう！ 誰も気づいてくれなくて。
+A	I noticed it from across the room.	部屋の向こうから気づきましたよ。
+S	
+B	And I've been staring at your drink. What is that?	私はあなたの飲み物が気になってました。それ何ですか？
+A	A yuzu sour. Have you tried one?	柚子サワー。飲んだことあります？
+B	No, but I've been meaning to. Is it very sour?	ないですが、ずっと試したいと思ってて。すごく酸っぱい？
+A	Sharp, but nice. Here, try a sip.	きりっとしてるけど、美味しいですよ。ひと口どうぞ。
+B	Oh, that's lovely. I'm getting one.	わあ、美味しい。私も頼みます。
+A	Good taste. In jackets and drinks.	センスいいですね。ジャケットも飲み物も。
+S	
+B	I'm Ellie.	エリーです。
+A	Kohei. This is a nice way to start an evening.	航平です。いい夜の始まり方ですね。
+B	Agreed. Now, tell me more about this yuzu.	同感。それで、柚子についてもっと教えてください。
+T	🧍	「一人で来たの？」と聞く	人間関係	are you here alone, on your own, stood up, keep you company, join us
+S	
+A	Are you here on your own?	一人で来たんですか？
+B	I am, actually. My friend cancelled last minute.	そうなんです。友達が直前でキャンセルして。
+A	Oh no. Stood up?	それは残念。すっぽかされた？
+B	Sort of. Her kid got sick. Not her fault.	まあそんな感じ。子どもが熱を出したらしくて。彼女のせいじゃないけど。
+A	Still, that's a shame.	それでも、残念ですね。
+B	I nearly went home. Then I thought, why waste the evening?	帰ろうかと思ったんですけど。せっかくの夜を無駄にするのもと思って。
+S	
+A	Good call. Do you want to join us? We're just over there.	いい判断ですね。一緒にどうですか？ あそこにいるんです。
+B	Are you sure? I don't want to intrude.	いいんですか？ 邪魔したくないので。
+A	Not at all. The more the merrier.	全然。人数が多いほうが楽しいですから。
+B	Well, if you insist.	じゃあ、お言葉に甘えて。
+A	I do. Come on, I'll introduce you.	ぜひ。来てください、紹介しますよ。
+S	
+B	Thank you. This is much better than going home.	ありがとう。家に帰るよりずっといいです。
+A	That's what we're here for. What are you drinking?	そのためにいますから。何を飲みます？
+B	Whatever you're having.	あなたと同じものを。
+T	🍻	一杯おごらせてほしいと言う	人間関係	let me get you a drink, on me, what are you having, you don't have to, next one's mine
+S	
+A	Let me get you a drink.	一杯おごらせてください。
+B	Oh, you don't have to do that.	そんな、いいですよ。
+A	I want to. You saved my seat for twenty minutes.	そうしたいんです。20分も席を取っておいてくれたので。
+B	Ha, that's hardly heroic.	はは、そんな大したことじゃないですよ。
+A	It is in this place. What are you having?	この店では大したことです。何にします？
+B	Same again, then. A pale ale.	じゃあ同じものを。ペールエール。
+S	
+B	Thank you. Cheers.	ありがとう。乾杯。
+A	Cheers. So, what brings you here tonight?	乾杯。それで、今夜はどうしてここに？
+B	Escaping my flatmates. They're having a "games night".	ルームメイトから逃げてきました。「ゲームナイト」をやってて。
+A	Sounds terrifying.	恐ろしそうですね。
+B	It is. Board games and shouting.	恐ろしいですよ。ボードゲームと怒鳴り声。
+A	Then this is a public service.	じゃあこれは社会奉仕ですね。
+S	
+B	Next one's mine, by the way.	次は私が出しますね。
+A	Deal. But only if you tell me more about the games night.	いいですよ。でもゲームナイトの話をもっと聞かせてくれるなら。
+B	Oh, there are stories.	話ならたくさんありますよ。
+T	📱	連絡先を聞く・断られたときの返し	恋愛	can I get your number, I'd love to see you again, no worries, no hard feelings, it was nice talking
+S	
+A	I've really enjoyed talking to you. Could I get your number?	話せて本当に楽しかったです。連絡先を聞いてもいいですか？
+B	That's sweet. But I'm actually seeing someone.	うれしいです。でも実は付き合ってる人がいて。
+A	Ah, of course. No worries at all.	ああ、そうなんですね。全然大丈夫です。
+B	I hope that's not awkward.	気まずくなってないといいんですけど。
+A	Not at all. It was nice talking to you regardless.	全然。それとは関係なく、話せてよかったです。
+B	Same here. Really.	私もです。本当に。
+S	
+B	Actually — I've had a lovely time. Here's my number.	実は、楽しかったです。これが番号です。
+A	Really? I wasn't sure you'd say yes.	本当に？ 断られるかと思ってました。
+B	You asked nicely. That's rarer than you'd think.	感じよく聞いてくれたから。それって意外と珍しいんですよ。
+A	I'll text you tomorrow. Not tonight, I promise.	明日メッセージしますね。今夜じゃなく、約束します。
+B	Ha, good. Tomorrow's perfect.	はは、よかった。明日で完璧です。
+S	
+A	Well, either way, thanks for the company.	どちらにしても、一緒に過ごしてくれてありがとう。
+B	Thank you. Get home safe.	こちらこそ。気をつけて帰ってください。
+A	You too. Goodnight.	そちらも。おやすみなさい。
+T	💌	デートに誘う（「今度ご飯行かない？」）	恋愛	would you like to, grab dinner sometime, I'd love that, how about, it's a date
+S	
+A	So, I was wondering. Would you like to grab dinner sometime?	それで、ちょっと思ったんだけど。今度、ご飯に行かない？
+B	Like, as a date?	それって、デートとして？
+A	Yes. As a date.	うん。デートとして。
+B	I'd love that.	ぜひ。
+A	Really? Great. I was nervous about asking.	本当に？ よかった。聞くの緊張してたんだ。
+B	You hid it well.	上手く隠してたね。
+S	
+A	How about Friday? There's a little Italian place I like.	金曜はどう？ 気に入ってるイタリアンの小さな店があるんだ。
+B	Friday works. What time?	金曜いいよ。何時？
+A	Seven? I'll book a table.	7時？ 席を予約するね。
+B	Seven's perfect. Should I dress up?	7時で完璧。ちゃんとした服のほうがいい？
+A	It's casual. Just come as you are.	カジュアルな店だよ。そのままで来て。
+S	
+B	Okay. It's a date, then.	わかった。じゃあ、デートだね。
+A	It's a date. I'll text you the address.	デートだね。住所を送るよ。
+B	Looking forward to it.	楽しみにしてる。
+A	Me too. More than I'm letting on.	私も。表に出してる以上に。
+T	😅	初デートで緊張していると伝える	恋愛	I'm a bit nervous, first date, don't usually do this, you're doing fine, me too
+S	
+A	I have to admit, I'm a bit nervous.	正直に言うと、ちょっと緊張してる。
+B	You are? You seem so relaxed.	そうなの？ すごくリラックスして見えるけど。
+A	That's the nerves. I go quiet when I'm nervous.	それが緊張なんだ。緊張すると静かになるから。
+B	Well, for what it's worth, I'm nervous too.	まあ、参考までに言うと、私も緊張してる。
+A	Really?	本当に？
+B	I changed my outfit four times.	服を4回着替えた。
+S	
+A	I don't usually do this. First dates, I mean.	普段こういうことはしないんだ。初デートっていうか。
+B	Me neither. I'm terrible at small talk.	私も。雑談が苦手で。
+A	You're doing fine.	ちゃんとできてるよ。
+B	So are you. Even with the quiet.	そっちもね。静かなところも含めて。
+A	Ha. Thanks. That helps.	はは。ありがとう。それで気が楽になった。
+S	
+B	Should we just admit we're both awkward and enjoy dinner?	お互い気まずいって認めて、ディナーを楽しもうか？
+A	Yes. Please. That's a huge relief.	うん。お願い。それはすごく気が楽。
+B	Good. Now, what's good on this menu?	よし。それで、このメニューで何が美味しい？
+T	💗	「タイプだと思った」とさりげなく好意を伝える	恋愛	I thought you were, my type, caught my eye, just so you know, no pressure
+S	
+A	Can I say something? No pressure, just so you know.	ひとつ言ってもいい？ プレッシャーはなしで、ただ知っておいてほしくて。
+B	Okay. Go on.	うん。どうぞ。
+A	When you walked in, I thought, "oh, she's exactly my type."	あなたが入ってきた時、「あ、完全にタイプだ」って思ったんだ。
+B	Oh! Really?	えっ！ 本当？
+A	Really. And then you started talking and it got worse.	本当に。それで、話し始めたらもっとそう思った。
+B	Worse?	もっと？
+A	Worse for me. Better for you.	私にとっては困ったことに。あなたにとってはいいことに。
+S	
+B	Well, if we're being honest... you caught my eye too.	じゃあ、正直に言うと… 私もあなたのこと、気になってた。
+A	You're just being kind.	優しさで言ってるでしょ。
+B	I'm not. You laugh with your whole face. It's nice.	違うよ。顔全体で笑うところ。素敵だと思った。
+A	Nobody's ever said that before.	そんなこと言われたの初めて。
+B	Then everyone else wasn't paying attention.	じゃあ他の人は見てなかったんだね。
+S	
+A	Okay, I'm officially flustered.	完全にどぎまぎしてる。
+B	Good. Now we're even.	よかった。これでおあいこ。
+T	🔍	気があるかどうか探る	恋愛	do you think, is there something there, I can't tell, mixed signals, just ask
+S	
+A	Can I ask you something about Sam?	サムのことで聞いてもいい？
+B	Sure. What's up?	いいよ。どうしたの？
+A	Do you think there's something there? Between us?	私たちの間に、何かあると思う？
+B	Honestly? I've been wondering the same thing.	正直？ 私も同じことを考えてた。
+A	So it's not just me.	じゃあ私だけじゃないんだね。
+B	He always sits next to you. Always.	彼、いつもあなたの隣に座るよね。いつも。
+S	
+A	But then he talks about other people he's met.	でも、他に出会った人の話もするんだ。
+B	Mixed signals.	はっきりしないサインだね。
+A	Exactly. I can't tell if he's interested or just friendly.	そう。興味があるのか、ただ人懐っこいだけなのかわからない。
+B	Some people are just like that.	そういう人もいるよ。
+A	That's what worries me.	それが心配なんだ。
+S	
+B	Here's the thing. You could spend months guessing.	ひとつ言えるのは、何か月も推測し続けることもできるってこと。
+A	Or?	それか？
+B	Or just ask him. Worst case, you know.	それか、直接聞く。最悪でも、答えはわかる。
+A	The worst case is terrifying.	最悪のケースが怖いんだよ。
+B	It's less terrifying than not knowing.	わからないままより怖くないよ。
+T	💞	告白するとき・返事を待つとき	恋愛	I like you, more than a friend, take your time, I needed to say it, whatever you decide
+S	
+A	I need to tell you something, and I don't want you to feel pressured.	伝えたいことがあるんだけど、プレッシャーには感じないでほしい。
+B	Okay. You're scaring me a bit.	うん。ちょっと怖くなってきた。
+A	I like you. More than a friend. I have for a while.	好きなんだ。友達以上に。しばらく前から。
+B	Oh.	そう。
+A	I know it's a lot. I just needed to say it.	重いのはわかってる。ただ言わなきゃいけなかった。
+B	I didn't know. I mean, I wondered, but I didn't know.	知らなかった。気になってはいたけど、確信はなかった。
+S	
+A	You don't have to answer now.	今答えなくていいよ。
+B	I think I need a bit of time.	少し時間が必要かもしれない。
+A	Take all the time you need.	必要なだけ時間をかけて。
+B	Are we okay? Whatever I decide?	私たち、大丈夫？ どんな答えでも？
+A	Yes. I'd rather have you as a friend than not at all.	うん。友達としてでも、いなくなるよりずっといい。
+B	Thank you for saying that.	そう言ってくれてありがとう。
+S	
+B	Can I call you tomorrow?	明日電話してもいい？
+A	Please. And no pressure. I mean that.	お願い。プレッシャーは本当になしで。
+B	I know you do. That's part of why I like you too.	わかってる。それも、私があなたを好きな理由の一つ。
+A	Wait. Did you just—	待って。今、それって—
+B	Tomorrow. I'll call you tomorrow.	明日。明日電話するね。
+T	🫂	本音で悩みを打ち明ける	深い話	I've been struggling, haven't told anyone, keep it together, honestly, thank you for listening
+S	
+A	Can I be honest with you about something?	正直に話してもいい？
+B	Always.	いつでも。
+A	I've been struggling a lot lately. More than I let on.	最近、かなりしんどいんだ。見せてる以上に。
+B	I'm listening.	聞いてるよ。
+A	I feel like I'm barely keeping it together. Work, home, all of it.	ギリギリで持ちこたえてる感じ。仕事も家も、全部。
+B	How long has it been like this?	いつからそんな状態？
+A	A couple of months. I haven't told anyone.	2か月くらい。誰にも話してない。
+S	
+B	Why not?	どうして？
+A	I didn't want to be a burden. Everyone's got their own stuff.	重荷になりたくなかった。みんな自分のことで手一杯だし。
+B	You're not a burden. Not to me.	重荷なんかじゃないよ。私にとっては。
+A	I know that, logically. It's just hard to believe it.	理屈ではわかってる。ただ、信じるのが難しくて。
+B	Then let me believe it for you until you can.	じゃあ、信じられるようになるまで、私が代わりに信じてるよ。
+A	That's... thank you.	それは… ありがとう。
+S	
+B	What would help? Right now, today.	何が助けになる？ 今、今日。
+A	Honestly, this. Just saying it out loud.	正直、これ。口に出すこと。
+B	Then we'll do this more. Not just when it's bad.	じゃあもっとこうしよう。つらい時だけじゃなくて。
+A	Thank you for listening. Really.	聞いてくれてありがとう。本当に。
+B	Thank you for telling me.	話してくれてありがとう。
+T	🪞	親友に叱ってほしい・意見が欲しいと頼む	深い話	I need you to be honest, don't sugarcoat it, tell me straight, tough love, you're right
+S	
+A	I need you to be honest with me. Brutally honest.	正直に言ってほしいんだ。容赦なく。
+B	About what?	何について？
+A	Me and this job. I keep complaining but I never leave.	私とこの仕事。文句ばかり言って、辞めないこと。
+B	Do you want me to be nice or useful?	優しく言ってほしい？ それとも役に立つことを？
+A	Useful. Don't sugarcoat it.	役に立つこと。オブラートに包まないで。
+B	Okay. You've been saying you'll leave for three years.	わかった。3年間ずっと辞めるって言ってるよね。
+S	
+A	Three years?	3年？
+B	Three years. I've been counting. And every time, you find a reason to stay.	3年。数えてたんだ。そして毎回、残る理由を見つける。
+A	The reasons are real.	理由は本当にあるんだよ。
+B	Some of them. But mostly, you're scared.	一部はね。でも大部分は、怖いだけ。
+A	That's harsh.	きついね。
+B	You asked for harsh.	きつくって言ったでしょ。
+S	
+A	...You're right. I hate that you're right.	…その通りだ。正しいのが悔しい。
+B	I'm not saying it to hurt you. I'm saying it because I'm tired of watching you unhappy.	傷つけるために言ってるんじゃない。不幸なあなたを見てるのに疲れたから言ってるんだ。
+A	I know. That's why I asked you and not anyone else.	わかってる。だから他の誰でもなく、あなたに聞いたんだ。
+B	So what are you going to do?	それで、どうするの？
+A	Update my CV. Tonight. Watch me.	履歴書を更新する。今夜。見てて。
+T	💬	言いにくいことを正直に指摘する	人間関係	this is hard to say, I've noticed, I'm telling you because, not trying to hurt you, I care
+S	
+A	There's something I want to say, and it's a bit hard.	言いたいことがあるんだけど、ちょっと言いにくくて。
+B	Okay...	うん…
+A	I've noticed you've been drinking a lot more lately.	最近、お酒の量がかなり増えてるのに気づいたんだ。
+B	It's not that much.	そんなに多くないよ。
+A	It's most nights now. And you don't remember things the next day.	今はほぼ毎晩だよ。それに翌日、覚えてないこともある。
+B	Are you seriously lecturing me?	本気で説教してるの？
+A	No. I'm telling you because I care, not because I'm judging.	違う。心配だから言ってるんだ。責めてるんじゃない。
+S	
+B	I'm fine. It's just been a stressful few months.	大丈夫だよ。ここ数か月ストレスが多かっただけ。
+A	I know it has. That's exactly why I'm worried.	わかってる。だからこそ心配なんだ。
+B	...I hadn't really thought about it like that.	…そういうふうには考えてなかった。
+A	I'm not trying to hurt you. I'd rather say it now than in a year.	傷つけたいわけじゃない。1年後より、今言ったほうがいいと思って。
+B	That's fair. I'd probably be angry at you if you didn't.	それはそうだね。言わなかったら、逆に怒ってたと思う。
+S	
+B	Thank you. It took guts to say that.	ありがとう。言うのに勇気がいったよね。
+A	It did. But you'd do the same for me.	うん。でもあなたも私に同じことをしてくれるでしょ。
+B	I would. Can we talk about it more? Properly?	するよ。もっと話せる？ ちゃんと。
+A	Whenever you want. I'm here.	いつでも。ここにいるから。
+T	😟	相手の恋人について心配していると伝える	人間関係	I'm worried about, the way he treats you, none of my business, but, I just want you to be happy, you deserve
+S	
+A	Can I say something about Mark? You can tell me it's none of my business.	マークのこと、話してもいい？ 余計なお世話って言ってくれてもいいから。
+B	What about him?	彼がどうしたの？
+A	I've noticed the way he talks to you sometimes. In front of people.	時々、人前であなたに話す時の言い方が気になってて。
+B	He's just joking.	冗談で言ってるだけだよ。
+A	Maybe. But you go quiet after. Every time.	そうかもね。でもそのあと、あなたは静かになる。毎回。
+B	...I didn't think anyone noticed.	…誰も気づいてないと思ってた。
+S	
+A	I'm not saying he's a bad person. I don't know him that well.	彼が悪い人だって言ってるんじゃない。そんなによく知らないし。
+B	Then what are you saying?	じゃあ何を言いたいの？
+A	That you seem smaller when he's around. And I miss the loud version of you.	彼がいると、あなたが小さくなって見える。にぎやかなあなたが恋しいんだ。
+B	That's... that's a lot to hear.	それは… 聞くのが重いね。
+A	I know. I'm sorry. I just want you to be happy.	わかってる。ごめん。ただ幸せでいてほしいだけ。
+S	
+B	I'm not going to pretend I haven't thought about it.	考えたことがないとは言わないよ。
+A	You don't have to decide anything today.	今日何かを決めなくていい。
+B	I know. But thank you for saying it. Nobody else has.	わかってる。でも言ってくれてありがとう。他に誰も言ってくれなかった。
+A	Whatever happens, I'm here. Loud version or quiet version.	何があっても、私はここにいるよ。にぎやかなあなたでも、静かなあなたでも。
 """#
 }
