@@ -29040,5 +29040,190 @@ B	Rest it, keep it elevated, and use ice to help with the swelling.	安静にし
 A	How long should I avoid putting weight on it?	どのくらい体重をかけないほうがいいですか？
 B	For the next few days, at least. If the pain gets worse, come back and see us.	少なくとも数日間はそうしてください。痛みがひどくなったら、また来てください。
 A	Got it. Thanks for your help.	分かりました。ありがとうございます。
+T	💳	会計の時、クレカで払う	日常	pay by card, go through, declined, no rush, you're all set
+S	
+B	That's twenty-six fifty altogether.	合計で26ドル50セントです。
+A	Can I pay by card?	カードで払えますか？
+B	Of course. Credit or debit?	もちろんです。クレジットですか、デビットですか？
+A	Credit. Do you take Visa?	クレジットです。Visaは使えますか？
+B	We do. Just tap or insert whenever you're ready.	使えます。タッチでも差し込みでも、どうぞ。
+S	
+A	Sorry, is it not going through?	すみません、通っていないですか？
+B	It's come up as declined. Do you want to try again?	拒否されたと出ています。もう一度試しますか？
+A	Let me try a different card.	別のカードを試してみます。
+B	No rush.	ごゆっくりどうぞ。
+A	There we go. That one worked.	よかった、こっちは通りました。
+B	Brilliant. Would you like your receipt?	よかったです。レシートはご入用ですか？
+S	
+A	Yes, please. Actually, can I get it emailed instead?	はい、お願いします。というか、メールで送ってもらえますか？
+B	Sure. What's your email address?	もちろんです。メールアドレスは？
+A	I'll write it down for you.	書いておきますね。
+B	Thanks. That's you all set.	ありがとうございます。これで完了です。
+A	Cheers, have a good one.	どうも、良い一日を。
+T	🎒	カバンを車に置いていくと伝える	日常	leave it in the car, valuable, out of sight, double-check, you can never be too careful
+S	
+A	I'll just leave my bag in the car.	カバンは車に置いていくね。
+B	Are you sure? Is there anything valuable in it?	大丈夫？ 中に貴重品ある？
+A	Just my jumper and a water bottle.	上着と水筒くらい。
+B	Fair enough. Take your wallet and phone with you, though.	なるほど。でも財布とスマホは持っていきなよ。
+A	Already got them.	もう持ってる。
+S	
+B	Chuck it in the boot so it's out of sight.	見えないようにトランクに入れておいて。
+A	Good shout. I'll move it now.	それいいね。今動かす。
+B	And make sure the doors are locked.	あと、ドアのロックも確認して。
+A	Yeah, I'll double-check.	うん、ちゃんと確認する。
+B	You can never be too careful round here.	この辺りは用心しすぎるくらいでちょうどいいから。
+S	
+A	Right, it's locked. Let's go.	よし、ロックした。行こう。
+B	Did you leave any windows open?	窓は開けっぱなしにしてない？
+A	No, all shut.	ううん、全部閉めた。
+B	Perfect. We shouldn't be more than an hour anyway.	完璧。どうせ1時間もかからないしね。
+T	🛍	ショッピングモールで買い物	日常	fine by me, impossible to shop for, pricey, keep it in mind, my feet are killing me
+S	
+A	Where do you want to start?	どこから見る？
+B	Let's do the shops on this floor first.	まずこの階のお店から回ろう。
+A	Fine by me. I need to find a birthday present.	いいよ。誕生日プレゼントを探さないと。
+B	Who's it for?	誰に？
+A	My sister. She's impossible to shop for.	妹。何を買えばいいか本当に難しくて。
+S	
+B	What about this?	これはどう？
+A	Hmm, it's nice but a bit pricey.	うーん、素敵だけどちょっと高いな。
+B	There's twenty percent off if you sign up.	会員登録すれば20%引きだって。
+A	Oh, actually that's not bad at all.	あ、それなら全然悪くないね。
+B	Do you want to have a look around first?	先に他も見てみる？
+A	Yeah, let's keep it in mind and come back.	うん、覚えておいて後で戻ろう。
+S	
+A	My feet are killing me.	足が限界。
+B	Same. Shall we grab a coffee?	私も。コーヒーでも飲む？
+A	Please. There's a place on the top floor.	ぜひ。最上階にお店があるよ。
+B	Let's go. We can decide about the present after.	行こう。プレゼントはそのあと決めればいいし。
+T	🪟	換気したい	日常	stuffy, do you mind if, crack a window, draught, clear out
+S	
+A	It's really stuffy in here.	ここ、すごく空気がこもってるね。
+B	Yeah, it is a bit.	うん、たしかに少し。
+A	Do you mind if I open a window?	窓を開けてもいい？
+B	Go ahead.	どうぞ。
+A	Thanks. It'll clear out in a minute.	ありがとう。すぐ空気が入れ替わるよ。
+S	
+B	Is it too cold with it open?	開けてると寒すぎない？
+A	A little. I'll just crack it instead of opening it fully.	少しね。全開じゃなくて少しだけ開けておく。
+B	That works. The heating's on anyway.	それでいいね。どうせ暖房もついてるし。
+A	I'll shut it in ten minutes or so.	10分くらいしたら閉めるよ。
+S	
+B	Actually, could we get some air through?	というか、風を通せない？
+A	Yeah, if I open the door too it'll create a draught.	うん、ドアも開ければ風が通るよ。
+B	That's much better already.	もうだいぶ良くなった。
+A	Right, that's enough. I'll close it now.	よし、もう十分。閉めるね。
+T	🚽	トイレが流れない	トラブル	blocked, flush, plunger, play up, it happens
+S	
+A	Sorry, I think the toilet's blocked.	すみません、トイレが詰まっているみたいです。
+B	Oh no. Is it overflowing?	それは大変。水は溢れていますか？
+A	No, it just won't flush.	いえ、流れないだけです。
+B	Did you try holding the handle down?	レバーを長めに押してみましたか？
+A	Yeah, a few times. Nothing happens.	はい、何度か。何も起きません。
+S	
+B	There should be a plunger under the sink.	洗面台の下にラバーカップがあるはずです。
+A	Found it. Do I just push down?	ありました。押し込むだけでいいですか？
+B	Push down and pull up, a few times.	押して引いてを何回か繰り返してください。
+A	Hang on... I think it's going down now.	ちょっと待って… 流れ始めた気がします。
+B	Try flushing it again.	もう一度流してみてください。
+S	
+A	It's working. Sorry about that.	直りました。お騒がせしました。
+B	Don't worry, it happens all the time.	気にしないでください、よくあることです。
+A	I'll let you know if it plays up again.	また調子が悪くなったら伝えます。
+B	Please do. I'll get someone in if it does.	お願いします。その時は業者を呼びます。
+T	🌙	眠れない	健康	on your mind, go over, drop off, give it a go, sleep it off
+S	
+A	You're up late.	まだ起きてるんだ。
+B	I can't sleep. I've been lying there for hours.	眠れなくて。何時間も横になってた。
+A	Is something on your mind?	何か気になることでもある？
+B	Work, mostly. I keep going over it.	だいたい仕事。ずっと考えちゃう。
+S	
+A	Have you tried getting up for a bit?	一度起きてみた？
+B	Not really. I just keep checking the time.	ううん。時計ばっかり見てる。
+A	That makes it worse, honestly.	正直それだと余計に眠れないよ。
+B	I know. And then I panic about how little sleep I'll get.	わかってる。それで睡眠時間が足りないって焦るの。
+A	Put your phone in another room. It really helps.	スマホを別の部屋に置いてみて。本当に効くよ。
+S	
+B	Maybe I'll make some tea.	お茶でも入れようかな。
+A	Something without caffeine.	カフェインの入ってないやつね。
+B	Obviously.	もちろん。
+A	And stop looking at the clock. You'll drop off eventually.	あと時計を見るのをやめて。そのうち寝落ちするから。
+B	Thanks. I'll give it a go.	ありがとう。やってみる。
+T	🔊	外の音がうるさすぎる	トラブル	going on for hours, say something, turn it down, come through the wall, sorry to bother you
+S	
+A	Can you hear that?	あれ聞こえる？
+B	The music from next door? Yeah, it's been going on for hours.	隣の音楽？ うん、何時間も続いてる。
+A	It's almost midnight.	もうすぐ0時だよ。
+B	I know. I can't hear myself think.	ほんと。自分の考えもまとまらない。
+S	
+A	Should we say something?	言いに行く？
+B	Let's give it another ten minutes.	あと10分だけ様子を見よう。
+A	If it doesn't stop, I'll knock.	やまなかったら私がノックする。
+B	Be nice about it. We have to live next to them.	感じよくね。隣同士なんだから。
+A	Of course.	もちろん。
+S	
+A	Hi, sorry to bother you so late.	こんばんは、遅くにすみません。
+B	No worries, what's up?	いえ、どうしました？
+A	The music's coming through the wall a bit. Could you turn it down?	音楽が壁越しに響いていて。少し下げてもらえますか？
+B	Oh, I had no idea. I'm so sorry.	え、全然気づきませんでした。すみません。
+A	It's fine, honestly. Thanks a lot.	大丈夫です、本当に。ありがとうございます。
+T	✈️	空港でチェックインする	旅行	booking reference, hand luggage, over the limit, aisle, boarding
+S	
+B	Good morning. Passport and booking reference, please.	おはようございます。パスポートと予約番号をお願いします。
+A	Here you go.	どうぞ。
+B	Thank you. Just the one bag to check in?	ありがとうございます。お預けは1つですか？
+A	Yes, and this one as hand luggage.	はい、こちらは機内持ち込みです。
+B	Could you pop the case on the belt for me?	スーツケースをベルトに乗せていただけますか？
+S	
+B	It's a kilo over, I'm afraid.	申し訳ありません、1キロ超過しています。
+A	Oh. Can I move something into my hand luggage?	そうですか。手荷物に移してもいいですか？
+B	Yes, that's fine.	はい、大丈夫です。
+A	How's that?	これでどうですか？
+B	Perfect, just under.	完璧です、ぎりぎり範囲内です。
+S	
+B	Window or aisle?	窓側と通路側、どちらになさいますか？
+A	Aisle, please. And is the flight on time?	通路側で。あと、定刻通りですか？
+B	It is. Boarding starts at ten past eleven, gate B12.	はい。搭乗は11時10分から、B12ゲートです。
+A	Great. Where's security from here?	わかりました。保安検査はどちらですか？
+B	Straight ahead and to your left. Have a good flight.	まっすぐ行って左です。良いご旅行を。
+T	🤒	風邪にかかってつらい	健康	come down with something, sound rough, temperature, appetite, sleep it off
+S	
+A	You sound rough.	声がひどいね。
+B	I've come down with something.	風邪をひいたみたい。
+A	How long have you had it?	いつから？
+B	Since Tuesday. It's just getting worse.	火曜から。悪化する一方。
+A	Have you got a temperature?	熱はある？
+S	
+B	A bit. And my throat's killing me.	少し。あと喉がすごく痛い。
+A	Are you eating anything?	何か食べてる？
+B	Not much. I've got no appetite.	あんまり。食欲がなくて。
+A	At least keep drinking water.	せめて水は飲んで。
+B	I know, I know.	わかってるって。
+S	
+A	Have you thought about seeing a doctor?	病院に行くことは考えた？
+B	If it's not better by Monday, I will.	月曜までに良くならなかったら行く。
+A	Don't leave it too long.	長引かせすぎないでね。
+B	I won't. I'm just going to sleep it off for now.	うん。とりあえず今は寝て治す。
+A	Good. Let me know if you need anything.	それがいい。何か要るなら言って。
+T	🚨	盗みを疑われた	トラブル	the alarm went off, would you mind if, nothing to hide, the tag, inconvenience
+S	
+B	Excuse me. Could you come with me for a moment?	すみません、少しよろしいですか？
+A	Is something wrong?	何かありましたか？
+B	The alarm went off as you were leaving.	お出になる際にアラームが鳴りまして。
+A	I've paid for everything. I've got the receipt right here.	全部支払っています。レシートもここにあります。
+B	Would you mind if I checked your bag?	カバンの中を確認させていただけますか？
+S	
+A	Go ahead, I've got nothing to hide.	どうぞ、やましいことはありません。
+B	Thank you for cooperating.	ご協力ありがとうございます。
+A	To be honest, this is pretty embarrassing.	正直、かなり気まずいです。
+B	I understand. We have to check whenever the alarm sounds.	お察しします。アラームが鳴った場合は確認する決まりでして。
+A	I get that, but people are staring.	それはわかりますが、みんな見ています。
+S	
+B	Here's the problem — the tag wasn't removed at the till.	原因がわかりました。レジでタグが外されていませんでした。
+A	So it was your mistake, not mine.	つまり、そちらのミスということですね。
+B	It was. I'm very sorry for the inconvenience.	はい。ご迷惑をおかけして申し訳ありません。
+A	That's all right. Just be careful how you approach people.	大丈夫です。ただ、声のかけ方には気をつけてください。
+B	Noted. Thank you for being so understanding.	承知しました。ご理解いただきありがとうございます。
 """#
 }
