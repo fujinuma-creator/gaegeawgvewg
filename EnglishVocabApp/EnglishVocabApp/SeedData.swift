@@ -30729,5 +30729,384 @@ A	Sorry, one more thing. Do you have headphones?	すみません、もう1つ。
 B	We do. Here you go.	ございます。どうぞ。
 A	Perfect. That's everything, I promise.	完璧です。これで本当に全部です。
 B	No trouble at all. Enjoy the flight.	全く問題ありませんよ。良いフライトを。
+T	💺	座席を替わってほしいと頼まれた	旅行	would you mind swapping, sit together, aisle seat, I'd rather, no worries
+S	
+B	Excuse me, sorry to bother you. Would you mind swapping seats?	すみません、お邪魔してごめんなさい。席を替わっていただけませんか？
+A	Oh, where are you sitting?	えっと、どちらの席ですか？
+B	Two rows back, by the window. My partner's next to you.	2列後ろの窓側です。パートナーがあなたの隣なんです。
+A	Ah, I see. You want to sit together.	なるほど。一緒に座りたいんですね。
+B	If it's not too much trouble.	ご迷惑でなければ。
+S	
+A	The thing is, I booked the aisle on purpose. I've got a bad knee.	実は、通路側をわざと取ったんです。膝が悪くて。
+B	Oh, of course. Don't worry about it.	あ、もちろんです。気にしないでください。
+A	Is there anyone on the aisle near you?	そちらの近くに通路側の席の人はいますか？
+B	Actually, yes. The man in 14C.	実は、はい。14Cの男性が。
+A	I'd happily swap with him, if he's up for it.	その方が良ければ、喜んで替わりますよ。
+S	
+B	He said yes! Thank you so much.	いいって言ってくれました！ 本当にありがとうございます。
+A	No worries. Let me grab my bag.	どういたしまして。荷物を取りますね。
+B	You've made our flight. Really.	おかげで楽しいフライトになります。本当に。
+A	Happy to help. Enjoy the trip.	お役に立てて何よりです。良い旅を。
+T	🔀	乗り換えの案内を聞く	交通	change trains, which platform, how many stops, direct, connection
+S	
+A	Excuse me, do I need to change to get to Richmond?	すみません、リッチモンドに行くには乗り換えが必要ですか？
+B	Yes, you'll need to change at Central.	はい、セントラルで乗り換えです。
+A	How many stops is that from here?	ここから何駅ですか？
+B	Four. Then take the green line from platform 2.	4駅です。それから2番ホームのグリーンラインに乗ってください。
+A	Green line, platform 2. Got it.	グリーンライン、2番ホーム。わかりました。
+S	
+A	How long is the connection, roughly?	乗り換えにはだいたいどのくらいかかりますか？
+B	About five minutes' walk between platforms.	ホーム間は歩いて5分ほどです。
+A	And how often does the green line run?	グリーンラインはどのくらいの頻度ですか？
+B	Every six minutes or so. You won't wait long.	6分おきくらいです。長くは待ちませんよ。
+A	Perfect.	よかった。
+S	
+A	Is there a direct train at all?	直通の電車はないんですか？
+B	Not from here. You'd have to go from the other station.	ここからは。別の駅からなら出ています。
+A	That's fine, the change sounds easy enough.	大丈夫です、乗り換えも難しくなさそうなので。
+B	It is. Just follow the green signs.	簡単ですよ。緑の案内表示に従ってください。
+A	Thanks so much.	本当にありがとう。
+T	🎫	切符の買い方がわからない	交通	how do I buy a ticket, machine, single or return, top up, tap in
+S	
+A	Excuse me, how do I buy a ticket? The machine's confusing me.	すみません、切符はどう買うんですか？ 券売機がよくわからなくて。
+B	No problem. Where are you going?	大丈夫ですよ。どちらまで？
+A	Just to the city centre.	市の中心部までです。
+B	Single or return?	片道ですか、往復ですか？
+A	Return, I'll be coming back tonight.	往復で。今夜戻ってくるので。
+S	
+B	Okay, press "Return", then choose "City Centre" from the list.	では「往復」を押して、リストから「シティセンター」を選んでください。
+A	Like this?	こうですか？
+B	That's it. Now it's asking how to pay.	そうです。次は支払い方法を聞いています。
+A	Can I use my card?	カードは使えますか？
+B	Yes, just tap it there.	はい、そこにタッチしてください。
+S	
+A	It's printed two tickets. Is that right?	切符が2枚出てきました。合っていますか？
+B	Yes, one for each way. Keep the return one safe.	はい、行きと帰りで1枚ずつ。帰りの分はなくさないように。
+A	Will do. Thank you so much for walking me through it.	そうします。一つ一つ教えてくれてありがとう。
+B	Happy to. It's not the most intuitive machine.	いいんですよ。あまりわかりやすい機械じゃないので。
+T	🚌	バスで降りる場所を運転手に確認する	交通	does this bus go to, let me know, get off, next stop, press the button
+S	
+A	Hi, does this bus go to the hospital?	すみません、このバスは病院に行きますか？
+B	It does. Hop on.	行きますよ。乗ってください。
+A	Could you let me know when we get there?	着いたら教えてもらえますか？
+B	Sure. It's about ten stops.	いいですよ。10停留所くらいです。
+A	Thanks. I'll sit near the front.	ありがとう。前のほうに座ります。
+S	
+B	Hospital's the next stop.	次が病院ですよ。
+A	Oh, thank you. Do I press the button?	ありがとうございます。ボタンを押せばいいですか？
+B	Yes, the red one on the pole.	はい、ポールの赤いボタンです。
+A	Got it. Which side do I get off?	わかりました。どちら側から降りますか？
+B	The middle doors. I'll open them for you.	真ん中のドアです。開けますね。
+S	
+A	Is the entrance right here?	入口はここですぐですか？
+B	Cross the road and it's straight ahead.	道を渡って、まっすぐ正面です。
+A	Perfect. Thanks for your help.	完璧です。ありがとうございました。
+B	No problem. Take care.	どういたしまして。お気をつけて。
+T	🚙	レンタカーを借りる	交通	pick up, driving licence, insurance, full tank, return it
+S	
+A	Hi, I've got a reservation for a rental car.	こんにちは、レンタカーを予約しています。
+B	Welcome. Can I see your driving licence and a credit card?	いらっしゃいませ。運転免許証とクレジットカードを拝見できますか？
+A	Here you go. It's an international licence.	どうぞ。国際免許証です。
+B	That's fine. You've booked a compact, is that right?	問題ありません。コンパクトカーのご予約ですね？
+A	Yes. Is it automatic?	はい。オートマですか？
+B	It is.	そうです。
+S	
+B	Would you like to add full insurance? It covers everything.	フル保険を付けますか？ すべてカバーされます。
+A	How much extra is that?	追加でいくらですか？
+B	Fifteen a day.	1日15です。
+A	Okay, let's do it. Better safe than sorry.	わかりました、付けます。用心するに越したことはないので。
+B	Sensible. Now, it comes with a full tank.	賢明ですね。それから、満タンでお渡しします。
+S	
+A	Do I need to return it full?	返す時も満タンにする必要がありますか？
+B	Yes, or we charge for the fuel at a higher rate.	はい、そうでないと割高な燃料代をいただくことになります。
+A	Understood. And where do I return it?	わかりました。返却場所は？
+B	Right here, by Sunday at noon. Keys in the box if we're closed.	ここに、日曜の正午までに。閉まっていればボックスに鍵を。
+A	Great. Thanks a lot.	わかりました。ありがとうございます。
+T	⛽	ガソリンスタンドで給油する	交通	fill it up, pump, unleaded, pay at the counter, how much
+S	
+A	Hi, can I fill up on pump three?	すみません、3番の給油機で満タンにしたいのですが。
+B	Sure. Unleaded or diesel?	はい。レギュラーですか、軽油ですか？
+A	Unleaded. Is it self-service?	レギュラーです。セルフですか？
+B	Yes, just lift the nozzle and it'll start.	はい、ノズルを持ち上げれば始まります。
+A	Do I pay first or after?	先払いですか、後払いですか？
+B	After. Come to the counter when you're done.	後払いです。終わったらカウンターに来てください。
+S	
+A	It stopped by itself at forty litres.	40リットルで自動的に止まりました。
+B	That means the tank's full.	満タンになったということです。
+A	Ah, right. So that's pump three.	なるほど。3番でした。
+B	Fifty-eight sixty, please.	58ドル60セントです。
+A	Card, please.	カードでお願いします。
+S	
+A	Do you sell windscreen wash?	ウォッシャー液は売っていますか？
+B	Yes, over by the door. Five for the big bottle.	はい、ドアのそばです。大きいので5ドルです。
+A	I'll grab one. And do you have a toilet?	1本もらいます。あとトイレはありますか？
+B	Round the side of the building.	建物の横を回ったところです。
+A	Perfect. Thanks.	助かります。ありがとう。
+T	🅿️	駐車場が満車	交通	car park's full, circle round, spot, overflow, park on the street
+S	
+A	The car park's full. Not a single space.	駐車場が満車だ。1台分も空いてない。
+B	Seriously? It's not even that busy.	マジで？ そんなに混んでるわけじゃないのに。
+A	I've circled round twice. Nothing.	2周したけど。何もない。
+B	Is there an overflow car park somewhere?	どこかに臨時駐車場はない？
+A	Let me ask the attendant.	係の人に聞いてみる。
+S	
+A	Excuse me, is there any other parking nearby?	すみません、近くに他の駐車場はありますか？
+B	There's a multi-storey two streets over. Usually has space.	2本先の通りに立体駐車場があります。だいたい空いていますよ。
+A	How much is it?	いくらですか？
+B	Three an hour. A bit more than here.	1時間3ドルです。ここより少し高いですが。
+A	That's fine. Thanks.	大丈夫です。ありがとう。
+S	
+B	Or we could just park on the street.	それか、路上に停めてもいいんじゃない？
+A	Is that allowed here?	ここ、停めてもいいの？
+B	There are meters on the next road. Two-hour limit.	次の道にメーターがあるよ。2時間制限だけど。
+A	We'll be longer than that. Multi-storey it is.	それより長くなるよね。立体駐車場にしよう。
+B	Fair enough. Let's go.	了解。行こう。
+T	💥	車をぶつけられた	トラブル	someone hit my car, exchange details, insurance, take photos, no one's hurt
+S	
+A	Someone's just hit my car!	誰かに車をぶつけられた！
+B	Are you okay? Is anyone hurt?	大丈夫？ 誰か怪我は？
+A	I'm fine. Just shaken. They clipped the back.	大丈夫。動揺してるだけ。後ろを擦られた。
+B	Are they still there?	相手はまだいる？
+A	Yes, they've pulled over.	うん、停まってくれた。
+B	Good. Don't argue, just stay calm.	よかった。言い争わずに、落ち着いてね。
+S	
+A	Hi. Are you all right?	こんにちは。大丈夫ですか？
+B	Yes, I'm so sorry. I didn't see you.	はい、本当にすみません。見えていませんでした。
+A	It's okay. Nobody's hurt, that's the main thing.	大丈夫です。誰も怪我していないのが一番です。
+B	Let's exchange details. Here's my insurance.	連絡先を交換しましょう。私の保険はこれです。
+A	Thank you. I'll take a few photos of the damage.	ありがとうございます。損傷の写真を何枚か撮りますね。
+B	Of course. Take as many as you need.	もちろんです。必要なだけ撮ってください。
+S	
+A	Should we call the police?	警察を呼びますか？
+B	For something this small, I don't think we need to.	これくらいの軽いものなら、必要ないと思います。
+A	Okay. I'll report it to my insurance today.	わかりました。今日中に保険会社に連絡します。
+B	Same. Again, I'm really sorry.	私も。重ねて、本当にすみませんでした。
+A	These things happen. Drive safe.	こういうことはありますよ。安全運転で。
+T	👛	財布・スマホをなくした	トラブル	I've lost my, retrace my steps, cancel my cards, last had it, lost and found
+S	
+A	I can't find my wallet.	財布が見つからない。
+B	When did you last have it?	最後に持ってたのはいつ？
+A	At the café, I think. I paid for the coffee.	カフェだと思う。コーヒーを払ったから。
+B	Then it's probably there. Let's go back.	じゃあたぶんそこにあるよ。戻ろう。
+A	Okay. I'm trying not to panic.	うん。パニックにならないようにしてる。
+S	
+A	Hi, I was here about an hour ago. Did anyone hand in a wallet?	すみません、1時間ほど前にここにいたんですが、財布が届いていませんか？
+B	What does it look like?	どんな財布ですか？
+A	Brown leather, with a zip.	茶色の革で、ファスナー付きです。
+B	Let me check lost and found. One moment.	遺失物を確認します。少々お待ちください。
+A	Thank you so much.	本当にありがとうございます。
+S	
+B	Is this it?	これですか？
+A	Yes! Oh, thank goodness.	はい！ ああ、よかった。
+B	Someone found it under the table.	テーブルの下で見つけた方がいました。
+A	I was about to cancel all my cards.	カードを全部止めるところでした。
+B	Glad we caught it in time.	間に合ってよかったです。
+T	👮	警察に届け出をする	手続き	file a report, stolen, description, crime reference number, for the insurance
+S	
+A	Hi, I'd like to report a theft.	すみません、盗難の届け出をしたいのですが。
+B	Of course. What was taken?	承知しました。何を盗まれましたか？
+A	My bag. It had my laptop and passport in it.	カバンです。ノートパソコンとパスポートが入っていました。
+B	When and where did this happen?	いつ、どこで起きましたか？
+A	About an hour ago, on the train from the airport.	1時間ほど前、空港からの電車の中で。
+S	
+B	Can you describe the bag?	カバンの特徴を教えてもらえますか？
+A	Black backpack, with a small yellow tag on the zip.	黒いリュックで、ファスナーに小さな黄色いタグが付いています。
+B	Did you see anyone suspicious?	不審な人物を見ましたか？
+A	Not really. It was crowded. I felt it go but it was too late.	特には。混んでいて。持っていかれた感覚はあったんですが、遅すぎました。
+B	That's very common on that line, unfortunately.	残念ながら、その路線ではよくあることです。
+S	
+B	Here's your crime reference number.	こちらが被害届の受理番号です。
+A	Thank you. I'll need that for the insurance, right?	ありがとうございます。保険に必要なんですよね？
+B	Yes, and for the embassy for your passport.	はい、それとパスポートの件で大使館にも。
+A	I'll go there next.	次にそこへ行きます。
+B	Good luck. We'll contact you if anything turns up.	お気をつけて。何か見つかればご連絡します。
+T	🔦	停電が起きた	住まい	the power's out, blackout, torch, fuse box, whole street
+S	
+A	Did the lights just go out?	今、電気消えた？
+B	Yeah, everything's off. Even the fridge.	うん、全部落ちた。冷蔵庫まで。
+A	Is it just us or the whole building?	うちだけ？ それとも建物全体？
+B	Let me look outside... The whole street's dark.	外を見てみる… 通り全体が真っ暗だ。
+A	Okay, so it's not our fuse box.	じゃあ、うちのブレーカーじゃないね。
+S	
+B	Where's the torch?	懐中電灯どこ？
+A	Kitchen drawer, I think. I'll use my phone for now.	キッチンの引き出しだったと思う。とりあえずスマホを使う。
+B	Don't drain it. We might need it.	バッテリー使い切らないでね。必要になるかも。
+A	Good point. Let me light some candles instead.	たしかに。代わりにろうそくをつけるよ。
+B	I'll check the power company's website for updates.	電力会社のサイトで情報を確認する。
+S	
+B	It says they're aware and expect it back in two hours.	把握済みで、2時間ほどで復旧見込みだって。
+A	Two hours. Well, at least it's not winter.	2時間か。まあ、冬じゃないだけマシだね。
+B	Don't open the fridge. Keep the cold in.	冷蔵庫は開けないで。冷気を逃がさないように。
+A	Board game by candlelight?	ろうそくの明かりでボードゲームでもする？
+B	Honestly, that sounds kind of nice.	正直、それ悪くないね。
+T	🚿	水が出ない・お湯が出ない	住まい	no hot water, boiler, plumber, pilot light, cold shower
+S	
+A	Hey, there's no hot water. Did you use it all?	ねえ、お湯が出ない。全部使っちゃった？
+B	No, I haven't showered yet. Is it just cold?	ううん、まだシャワー浴びてない。冷たいだけ？
+A	Ice cold. I let it run for ages.	氷みたいに冷たい。ずっと出しっぱなしにしたんだけど。
+B	Let me check the boiler.	給湯器を見てくる。
+A	Thanks. I really don't want a cold shower.	ありがとう。冷たいシャワーは本当に勘弁して。
+S	
+B	The light's off on it. I think it's tripped.	ランプが消えてる。止まっちゃったみたい。
+A	Can we restart it?	再起動できる？
+B	There's a reset button. Hold on... nothing.	リセットボタンがある。ちょっと待って… だめだ。
+A	We'll have to call the landlord.	大家さんに電話しないと。
+B	I'll do it now. Hopefully they can send someone today.	今かける。今日中に誰か来てくれるといいけど。
+S	
+B	Plumber's coming at two.	配管工が2時に来るって。
+A	Good. I'll work from home so I can let them in.	よかった。在宅にして、家に入れられるようにする。
+B	Thanks. And sorry, but I need to shower before then.	ありがとう。あと悪いけど、それまでにシャワー浴びないと。
+A	Rather you than me.	私じゃなくてよかった。
+B	Wish me luck.	幸運を祈ってて。
+T	🔕	隣人に騒音の苦情を言う	住まい	keep it down, after eleven, the walls are thin, on a work night, reasonable
+S	
+A	Hi, sorry to knock so late. I'm from next door.	こんばんは、遅くにすみません。隣の者です。
+B	Oh, hi. Is everything okay?	ああ、こんばんは。何かありましたか？
+A	The music's been quite loud the last few nights.	ここ数日、夜の音楽がかなり大きくて。
+B	Really? I didn't think it was that loud.	そうですか？ そんなに大きいとは思っていませんでした。
+A	The walls are pretty thin, unfortunately.	残念ながら、壁がかなり薄いんです。
+S	
+B	I'm so sorry. I had no idea it was coming through.	本当にすみません。響いているとは知りませんでした。
+A	It's fine. I just have early starts, so after eleven is hard.	大丈夫です。ただ朝が早いので、11時以降はきつくて。
+B	That's totally reasonable. I'll keep it down after eleven.	それはもっともです。11時以降は音を下げます。
+A	I'd really appreciate that.	そうしてもらえると本当に助かります。
+B	And if it's ever a problem, just knock. Seriously.	もし問題があれば、いつでもノックしてください。本当に。
+S	
+A	Thanks for being so understanding.	理解してくれてありがとう。
+B	Of course. Neighbours should look out for each other.	当然です。隣同士、気を配り合わないと。
+A	Agreed. Sorry again for the late knock.	同感です。遅くにお邪魔してすみませんでした。
+B	Not at all. Goodnight.	とんでもない。おやすみなさい。
+T	🔧	家の修理を業者に頼む	住まい	leaking, get someone out, quote, how soon, call-out fee
+S	
+A	Hi, I've got a leak under the kitchen sink. Could you send someone out?	もしもし、キッチンのシンクの下から水漏れしています。誰か来てもらえますか？
+B	Of course. How bad is it?	もちろんです。どのくらいひどいですか？
+A	It's a steady drip. I've put a bucket under it.	ぽたぽた止まらないです。バケツを置いています。
+B	Okay. When would suit you?	わかりました。ご都合はいつがいいですか？
+A	As soon as possible. Tomorrow morning?	できるだけ早く。明日の午前中は？
+S	
+B	I can do nine tomorrow. There's a call-out fee of sixty.	明日9時なら伺えます。出張料が60かかります。
+A	That's fine. Does that include the repair?	大丈夫です。修理代は含まれますか？
+B	No, that's just to come out. I'll give you a quote once I've seen it.	いえ、来るだけの料金です。見てから見積もりを出します。
+A	Understood. Roughly what might it cost?	わかりました。だいたいいくらくらいになりそうですか？
+B	If it's just a washer, maybe another twenty.	パッキンだけなら、あと20くらいでしょう。
+S	
+A	Do I need to do anything before you come?	来る前に何かしておくことはありますか？
+B	Just clear out the cupboard so I can get to it.	作業できるように、シンク下の物を出しておいてください。
+A	Will do. Thanks, see you at nine.	そうします。ありがとう、では9時に。
+B	See you then.	ではその時に。
+T	🏠	家賃の支払い方法を大家に確認する	住まい	pay the rent, bank transfer, due date, standing order, late fee
+S	
+A	Hi, I wanted to check how you'd like the rent paid.	家賃の支払い方法を確認したいのですが。
+B	Bank transfer is easiest. I'll send you the details.	銀行振込が一番簡単です。口座情報を送りますね。
+A	Great. And it's due on the first?	わかりました。支払日は1日ですか？
+B	Yes, the first of each month.	はい、毎月1日です。
+A	Can I set up a standing order?	自動振込を設定してもいいですか？
+B	Please do. It saves us both remembering.	ぜひ。お互い覚えておかなくて済みますから。
+S	
+A	What if it's a day or two late by accident?	うっかり1〜2日遅れたらどうなりますか？
+B	A day is fine. After a week there's a late fee.	1日なら大丈夫です。1週間過ぎると遅延料がかかります。
+A	How much?	いくらですか？
+B	Twenty-five. But I'd rather you just let me know if there's a problem.	25です。でも、何かあれば連絡してもらうほうがいいです。
+A	Of course. I'll always give you a heads up.	もちろんです。必ず事前に連絡します。
+S	
+A	And do I get a receipt each month?	毎月、領収書はもらえますか？
+B	I can email you one, if you need it.	必要ならメールで送ります。
+A	That would be helpful for my records.	記録用に助かります。
+B	No problem. Welcome to the building, by the way.	わかりました。ところで、入居おめでとうございます。
+A	Thanks. I'm really happy to be here.	ありがとう。ここに住めてうれしいです。
+T	📦	引っ越しの手伝いを頼む	住まい	give me a hand, moving day, heavy lifting, hire a van, owe you pizza
+S	
+A	Hey, are you free on Saturday?	ねえ、土曜って空いてる？
+B	I think so. Why, what's up?	たぶん。どうして？
+A	I'm moving flat and I could really use a hand.	引っ越しで、手伝ってもらえると本当に助かるんだ。
+B	Ah, moving day. How much stuff have you got?	ああ、引っ越しか。荷物はどのくらい？
+A	Not too much. But there's a sofa and a wardrobe.	そんなに多くない。でもソファとワードローブがある。
+S	
+B	Okay, that's heavy lifting. Are you hiring a van?	なるほど、重労働だね。トラックは借りるの？
+A	Yes, I've got one from nine to five.	うん、9時から5時まで借りてる。
+B	How many people have you got?	何人集まってる？
+A	Just you and my brother so far.	今のところ、あなたと弟だけ。
+B	Let me ask Tom. He's got a strong back.	トムに聞いてみる。あいつ力持ちだから。
+S	
+A	I'll get pizza and drinks for everyone, obviously.	もちろん、みんなにピザと飲み物は用意するよ。
+B	Now you're talking.	それでこそだよ。
+A	And I'll owe you one, properly.	それに、ちゃんと借りを返すから。
+B	Don't worry about it. That's what friends are for.	気にしないで。友達ってそういうものでしょ。
+A	Thank you. Nine o'clock Saturday, then.	ありがとう。じゃあ土曜の9時に。
+T	🚚	宅配の再配達を依頼する	手続き	missed delivery, reschedule, time slot, leave it with, safe place
+S	
+A	Hi, I missed a delivery today. I'd like to reschedule it.	もしもし、今日配達を受け取れなくて。再配達をお願いしたいのですが。
+B	Certainly. Do you have the card the driver left?	承知しました。ドライバーが残した不在票はお持ちですか？
+A	Yes. The reference is 7-7-3-0-2-1.	はい。番号は7-7-3-0-2-1です。
+B	Thank you. When would you like it redelivered?	ありがとうございます。いつ再配達をご希望ですか？
+A	Tomorrow, if possible. Any time after six.	できれば明日。6時以降ならいつでも。
+S	
+B	We have a slot between six and nine tomorrow evening.	明日の夜、6時から9時の枠がございます。
+A	That works. I'll be home.	それで大丈夫です。家にいます。
+B	Alternatively, we could leave it with a neighbour.	または、ご近所の方にお預けすることもできます。
+A	Let's keep it simple. Tomorrow evening's fine.	シンプルにいきましょう。明日の夜で大丈夫です。
+B	No problem. It's booked.	承知しました。手配しました。
+S	
+A	If I'm not there for some reason, is there a safe place option?	万が一いなかった場合、置き配のような選択肢はありますか？
+B	Yes, you can specify one in the app. Behind a gate, for example.	はい、アプリで指定できます。門の内側などです。
+A	Okay, I'll set that up as a backup.	わかりました、予備として設定しておきます。
+B	Sensible. Thank you for calling.	賢明ですね。お電話ありがとうございました。
+T	📦	荷物が破損して届いた	トラブル	arrived damaged, the box was crushed, photos, replacement, return label
+S	
+A	Hi, I received my order today, but it arrived damaged.	もしもし、今日注文品が届いたんですが、破損していました。
+B	I'm sorry to hear that. What's the damage?	申し訳ありません。どのような破損ですか？
+A	The box was crushed and the mug inside is cracked.	箱が潰れていて、中のマグカップにひびが入っています。
+B	Do you have photos?	写真はありますか？
+A	Yes, I took some as soon as I opened it.	はい、開けてすぐに撮りました。
+S	
+B	Could you email those to us? I'll give you the address.	メールで送っていただけますか？ アドレスをお伝えします。
+A	Sure. What happens after that?	わかりました。その後はどうなりますか？
+B	We'll send a replacement straight away.	すぐに代替品を発送します。
+A	Do I need to send the broken one back?	壊れたものは返送する必要がありますか？
+B	No, just dispose of it. We won't make you ship a broken mug.	いいえ、処分してください。壊れたマグを送り返させたりはしません。
+S	
+A	That's great. How long will the replacement take?	助かります。代替品はどのくらいで届きますか？
+B	Two to three working days.	2〜3営業日です。
+A	Perfect. Thanks for making it painless.	完璧です。手間なく対応してくれてありがとう。
+B	Sorry again. We'll pack this one better.	重ねてお詫びします。今度はもっとしっかり梱包します。
+T	📱	携帯のSIMカードを契約する	手続き	prepaid, data plan, activate, top up, unlocked
+S	
+A	Hi, I'd like to get a SIM card.	すみません、SIMカードが欲しいのですが。
+B	Sure. Prepaid or contract?	はい。プリペイドですか、契約ですか？
+A	Prepaid. I'm only here for a month.	プリペイドで。1か月しかいないので。
+B	No problem. How much data do you need?	承知しました。データはどのくらい必要ですか？
+A	Quite a lot. I use maps and video calls.	かなり。地図やビデオ通話を使うので。
+S	
+B	Then the twenty-gig plan for the month. It's thirty.	それなら月20ギガのプランですね。30です。
+A	That's fine. Does it include calls?	それで大丈夫です。通話も含まれますか？
+B	Yes, unlimited local calls.	はい、国内通話は無制限です。
+A	Great. Is my phone unlocked, do you know?	よかった。私のスマホ、SIMロック解除されてますか？
+B	Let me check... yes, it's fine.	確認します… はい、大丈夫です。
+S	
+B	I've put the SIM in. Give it a minute to activate.	SIMを入れました。有効化まで1分ほどお待ちください。
+A	And if I run out of data?	データを使い切ったら？
+B	You can top up online. It's quick.	オンラインでチャージできます。すぐですよ。
+A	Perfect. Oh, it's connected already.	完璧です。あ、もう繋がりました。
+B	You're all set. Enjoy your stay.	準備完了です。滞在を楽しんでください。
+T	🏦	銀行口座を開設する	手続き	open an account, proof of address, current account, debit card, online banking
+S	
+A	Hi, I'd like to open a bank account.	すみません、銀行口座を開設したいのですが。
+B	Certainly. Are you a resident here?	承知しました。こちらの居住者ですか？
+A	Yes, I moved here last month for work.	はい、先月仕事で引っ越してきました。
+B	Great. Do you have ID and proof of address?	わかりました。身分証と住所証明はお持ちですか？
+A	My passport and a tenancy agreement. Is that enough?	パスポートと賃貸契約書です。これで足りますか？
+B	That's perfect.	十分です。
+S	
+B	Would you like a current account or a savings account?	普通口座ですか、貯蓄口座ですか？
+A	Current, for now. I need it for my salary.	今は普通口座で。給与の受け取りに必要なので。
+B	Any monthly fees?	月額手数料はありますか？
+A	No, our basic account is free.	いいえ、基本口座は無料です。
+B	And there's a debit card included.	デビットカードも付いてきます。
+S	
+A	How long until I can use it?	使えるようになるまでどのくらいですか？
+B	The account's active today. The card arrives in five days.	口座は今日から使えます。カードは5日で届きます。
+A	Can I set up online banking now?	オンラインバンキングは今設定できますか？
+B	Yes, I'll walk you through it before you leave.	はい、お帰りになる前に一緒に設定しましょう。
+A	Excellent. Thank you.	助かります。ありがとうございます。
 """#
 }
