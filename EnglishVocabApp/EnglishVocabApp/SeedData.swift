@@ -38137,5 +38137,431 @@ B	A hot bath and a terrible film. Something so bad I can't take it seriously.	�
 A	That I can do.	それならできる。
 B	Give both a try. Report back.	両方試してみて。報告して。
 A	Pasta and bad films. On it.	パスタとひどい映画。やってみる。
+T	🌱	落ち込んだときに立ち直る方法を聞く	深い話	how do you bounce back, when you're down, get out of a slump, it passes, be gentle with yourself
+S	
+A	How do you bounce back when you're really down?	本当に落ち込んだ時、どうやって立ち直る？
+B	Slowly. There's no trick, honestly.	ゆっくりとね。正直、コツなんてないよ。
+A	No trick at all?	コツは全然ない？
+B	The only one I know is: don't make big decisions while you're in it.	知ってる唯一のコツは、その最中に大きな決断をしないこと。
+A	That's harder than it sounds.	それは思ったより難しいね。
+B	It is. Everything feels urgent when you're low. Nothing actually is.	そう。落ち込んでる時は何もかもが緊急に感じる。実際はそうじゃないのに。
+S	
+B	And I lower the bar. Way down.	あと、ハードルを下げる。ぐっと下に。
+A	What does that mean?	どういうこと？
+B	On a bad day, "success" is a shower and one meal. That's it.	つらい日は、シャワーと1回の食事で「成功」。それだけ。
+A	That sounds like giving up.	それは諦めてるみたいに聞こえるけど。
+B	It's the opposite. It's staying in the game until you can play properly again.	逆だよ。ちゃんとプレーできるようになるまで、試合に残り続けること。
+A	Huh. I'd never thought of it that way.	なるほど。そういうふうには考えたことなかった。
+S	
+A	Does it always pass?	いつも過ぎ去る？
+B	It always has. Every single time. I try to remember that when I'm in it.	今までは必ず。毎回。渦中にいる時は、それを思い出すようにしてる。
+A	Be gentle with yourself, basically.	要は、自分に優しくするってことだね。
+B	That's it. You'd be gentle with a friend. Be that friend to yourself.	そう。友達には優しくするでしょ。自分にとってのその友達になるんだ。
+T	🧩	自分の性格を一言で言うとどうかを聞く	雑談	in one word, how would you describe yourself, I'd say, others would say, that's fair
+S	
+A	Describe yourself in one word. Go.	自分を一言で表して。どうぞ。
+B	One word? That's cruel.	一言？ 残酷だね。
+A	One word.	一言。
+B	...Curious.	…好奇心旺盛。
+A	Curious. I like that. Why?	好奇心旺盛。いいね。どうして？
+B	I can't leave a question alone. It's why I'm always reading three things at once.	疑問をそのままにしておけないんだ。だからいつも3冊同時に読んでる。
+A	That tracks.	納得。
+S	
+B	Okay, your turn. One word.	じゃあそっちの番。一言。
+A	Loyal.	誠実。
+B	Hmm. What would other people say, though?	うーん。でも他の人は何て言うと思う？
+A	Stubborn, probably.	たぶん、頑固。
+B	Ha! That's fair. Same thing, different angle.	はは！ それは正しい。同じことを別の角度から見てるだけ。
+A	Loyal to a fault. Stubborn about the right things.	誠実すぎるくらい誠実。正しいことには頑固。
+B	I'll take that. Both are true.	それでいいよ。どっちも本当だから。
+S	
+A	What word would you give me?	あなたなら私にどんな言葉をつける？
+B	Warm. You make people comfortable without trying.	温かい。何もしなくても人を安心させる。
+A	That's... really nice, actually.	それは… 本当にうれしい。
+B	See? Warm. Even your reaction.	ほらね。温かい。反応まで。
+T	👀	初対面の印象と今の印象の違いを話す	雑談	first impression, I thought you were, turns out, couldn't have been more wrong, got to know you
+S	
+A	What did you think of me when we first met?	初めて会った時、私のことどう思った？
+B	Honestly? I thought you were a bit cold.	正直？ ちょっと冷たい人だと思った。
+A	Cold!	冷たい！
+B	You barely spoke for the first hour. I thought you didn't like me.	最初の1時間、ほとんど話さなかったから。嫌われてると思った。
+A	I was terrified. I'd just moved here.	怖かったんだよ。引っ越してきたばかりで。
+B	I know that now. But at the time, I was sure you were judging me.	今はわかってる。でもその時は、絶対に品定めされてると思った。
+S	
+A	And now?	それで今は？
+B	Now I know you're the opposite. You just take time to warm up.	今は正反対だってわかってる。打ち解けるのに時間がかかるだけ。
+A	I couldn't have been more different from your first impression, then.	じゃあ、第一印象とは正反対だったんだね。
+B	Completely. What about me? What did you think?	完全に。私は？ どう思った？
+A	That you were exhausting. You talked so much.	疲れる人だと思った。すごくたくさん話すから。
+B	Rude!	失礼！
+A	And now I know it's because you were nervous too.	今はそれが、あなたも緊張してたからだってわかる。
+S	
+B	So we were both wrong.	じゃあ2人とも間違ってたんだね。
+A	Both completely wrong. And here we are.	2人とも完全に。それで、今がある。
+B	Good thing we gave it a second chance.	セカンドチャンスを与えてよかったね。
+A	Best decision either of us made.	お互いにとって最高の決断だった。
+T	🎭	「実は〇〇なんだ」と意外な一面を明かす	雑談	you'd never guess, I've never told you this, secretly, don't laugh, who knew
+S	
+A	You'd never guess this about me.	これ、私のことで絶対に想像つかないと思うよ。
+B	Try me.	言ってみて。
+A	I was a competitive ballroom dancer. For six years.	社交ダンスの競技選手だったんだ。6年間。
+B	You? Ballroom?	あなたが？ 社交ダンス？
+A	Waltz, tango, the lot. I have trophies in my mum's attic.	ワルツ、タンゴ、全部。母の屋根裏にトロフィーがある。
+B	I cannot picture this at all.	全く想像できない。
+A	I stopped at eighteen. Nobody at work knows.	18歳でやめた。職場の誰も知らない。
+B	Well, they're about to.	まあ、もうすぐ知ることになるね。
+A	Don't you dare.	やめてよ。
+S	
+B	Okay, mine. I secretly love musicals.	じゃあ私の番。実はミュージカルが大好き。
+A	That's not that surprising.	それはそんなに驚かないな。
+B	I've seen the same one fourteen times.	同じ作品を14回観た。
+A	Fourteen?	14回？
+B	I know every word. I sing it in the car.	全部の歌詞を覚えてる。車で歌ってる。
+A	Who knew. Fourteen times.	驚いた。14回か。
+S	
+A	We should go together. You sing, I'll dance in the aisle.	一緒に行こうよ。あなたが歌って、私が通路で踊る。
+B	We'd get thrown out.	追い出されるよ。
+A	Worth it.	それでも価値はある。
+T	🔍	密かにやっているこだわりや習慣を話す	雑談	I have this thing where, it's a bit weird, I always have to, don't judge me, we all have one
+S	
+A	I have this thing where I have to check the door three times before I leave.	出かける前に、ドアを3回確認しないと気が済まないんだ。
+B	Three times exactly?	きっちり3回？
+A	Exactly three. If I lose count, I start again.	きっちり3回。数え間違えたら、最初からやり直し。
+B	That's very specific.	ずいぶん具体的だね。
+A	I know it's a bit weird. But I can't leave otherwise.	変なのはわかってる。でもそうしないと出られない。
+B	Don't worry. We all have one.	大丈夫。誰にでも1つはあるよ。
+S	
+A	What's yours?	あなたのは？
+B	I always eat the crusts of my sandwich first. Then the middle.	サンドイッチはいつも耳から先に食べる。それから真ん中。
+A	Why?	なんで？
+B	So the best bit is last. It makes sense to me.	一番いいところを最後に取っておくため。私には筋が通ってる。
+A	It does, actually. Saving the best.	たしかに筋は通ってる。一番いいところを取っておくのは。
+B	And I can't drink from a cup that has a chip in it. Even a tiny one.	あと、欠けたカップでは飲めない。ほんの少しでも。
+A	Don't judge me, but I'm the same.	批判しないでほしいけど、私も同じ。
+S	
+B	See? We're all a bit strange.	ほらね。みんなちょっと変なんだよ。
+A	Just in different ways.	ただ、変なところが違うだけ。
+B	That's what makes people interesting.	それが人を面白くするんだよね。
+T	🗿	ちょっと変わった趣味やコレクションを見せ合う	雑談	I collect, it started when, how many do you have, that's oddly specific, show me
+S	
+A	I have to show you something. Promise you won't laugh.	見せたいものがあるんだ。笑わないって約束して。
+B	I make no promises.	約束はしないよ。
+A	I collect hotel key cards. From every trip.	ホテルのカードキーを集めてるんだ。旅行のたびに。
+B	Key cards? How many do you have?	カードキー？ 何枚あるの？
+A	Two hundred and twelve.	212枚。
+B	That's oddly specific and slightly concerning.	妙に具体的で、ちょっと心配になる数だね。
+A	Each one's a memory. That's the point.	1枚1枚が思い出なんだ。それが大事。
+S	
+B	Okay. When did it start?	なるほど。いつから始めたの？
+A	My first trip abroad. I forgot to hand it back, and I just kept it.	初めての海外旅行。返し忘れて、そのまま取っておいた。
+B	And then it became a thing.	それで習慣になったんだね。
+A	Exactly. Now I have a whole box.	そう。今では箱いっぱい。
+B	Fine. Mine's worse. I collect pencils from museums.	わかった。私のはもっとひどい。美術館の鉛筆を集めてる。
+A	Pencils?	鉛筆？
+B	Ninety of them. Never sharpened. Never used.	90本。削ったことも、使ったこともない。
+S	
+A	We should never tell anyone about this conversation.	この会話は誰にも言わないでおこう。
+B	Agreed. But show me the key cards next time.	賛成。でも次はカードキーを見せて。
+A	Only if I can see the pencils.	鉛筆を見せてくれるならね。
+T	🧘	一人の時間に何をしているか話す	雑談	when you're on your own, me time, recharge, no plans, just enjoy
+S	
+A	What do you do when you're on your own? Just you, no plans.	一人の時って何してる？ 予定もなく、自分だけの時。
+B	Honestly? I talk to myself while cooking.	正直？ 料理しながら独り言を言ってる。
+A	Full conversations?	ちゃんとした会話？
+B	Full conversations. I narrate what I'm doing like a cooking show.	ちゃんとした会話。料理番組みたいに実況するんだ。
+A	I'd pay to watch that.	それ、お金を払ってでも見たい。
+B	Nobody gets to watch. That's the whole point of alone time.	誰にも見せないよ。それが一人の時間の意味なんだから。
+S	
+B	What about you?	そっちは？
+A	Long walks with no destination. Sometimes hours.	目的地のない長い散歩。時には何時間も。
+B	Do you listen to anything?	何か聴いてる？
+A	Nothing. Just the city. It's the only time my brain goes quiet.	何も。ただ街の音だけ。頭が静かになる唯一の時間なんだ。
+B	That sounds peaceful.	穏やかそうだね。
+A	It is. I come back a different person.	そう。別人になって帰ってくる。
+S	
+A	I think people are scared of being alone. But it's how I recharge.	一人になるのを怖がる人が多いと思う。でも私にとっては充電の時間。
+B	Same. I need it, or I'm no good to anyone.	同じ。それがないと、誰の役にも立てない。
+A	Introverts unite. Separately.	内向的な人たちよ、団結せよ。別々に。
+B	In our own homes.	それぞれの家で。
+T	🔄	最近始めたこと・やめたことを話す	雑談	I've started, I gave up, cold turkey, so far so good, made a difference
+S	
+A	I've started something new. Cold showers.	新しいことを始めたんだ。冷水シャワー。
+B	On purpose?	わざと？
+A	On purpose. Every morning. Thirty seconds.	わざと。毎朝。30秒。
+B	Why would you do that to yourself?	なんでそんなことを自分に？
+A	I read it helps with energy. And it does, weirdly.	エネルギーに効くって読んだんだ。それで実際、不思議と効く。
+B	How long have you been doing it?	どのくらい続けてる？
+A	Three weeks. So far so good. I still scream a bit.	3週間。今のところ順調。まだちょっと叫ぶけど。
+S	
+B	I've gone the other way. I've given something up.	私は逆で。何かをやめたんだ。
+A	What?	何を？
+B	Checking my phone first thing. I don't touch it till after breakfast now.	朝一番にスマホを見ること。今は朝食のあとまで触らない。
+A	How's that going?	どう？
+B	Better than I expected. My mornings are calmer.	思ったより順調。朝が穏やかになった。
+A	Did it make a difference to the rest of the day?	一日の残りにも影響あった？
+B	Massively. I'm not starting the day already stressed.	かなり。ストレスを抱えた状態で一日を始めなくて済む。
+S	
+A	So you calmed down and I got louder.	じゃあ、あなたは落ち着いて、私はうるさくなったんだね。
+B	Balance.	バランスだね。
+A	Want to try the cold shower?	冷水シャワー、試してみる？
+B	Absolutely not. But keep me posted.	絶対に嫌。でも報告はして。
+T	🎢	やってみたいけど勇気が出ないことを話す	深い話	I've always wanted to, but I'm scared, what's stopping you, what if it goes wrong, what if it goes right
+S	
+A	There's something I've always wanted to do, but I never have.	ずっとやりたいと思ってることがあるんだけど、一度もやってない。
+B	What is it?	何？
+A	Stand-up comedy. Just once. An open mic night.	スタンドアップコメディ。一度だけ。オープンマイクの夜に。
+B	You'd be good at that. You're funny.	向いてると思うよ。面白いから。
+A	To friends. To a room of strangers? I'd freeze.	友達相手にはね。知らない人だらけの部屋で？ 固まると思う。
+B	Everyone freezes the first time.	最初はみんな固まるよ。
+A	That's what I'm scared of.	それが怖いんだ。
+S	
+B	What's the worst that happens?	最悪の場合、どうなる？
+A	Silence. Five minutes of silence.	沈黙。5分間の沈黙。
+B	And then?	それから？
+A	And then... I go home, I suppose.	それから… 家に帰る、かな。
+B	And nobody remembers by next week.	来週には誰も覚えてない。
+A	That's true.	たしかに。
+B	Now — what if it goes right?	じゃあ、うまくいったら？
+A	I don't even let myself think about that.	それは考えないようにしてる。
+B	Maybe that's the real problem.	それが本当の問題なのかもね。
+S	
+B	There's an open mic on Thursday. I'll come with you.	木曜にオープンマイクがあるよ。一緒に行く。
+A	Thursday? That's four days.	木曜？ あと4日しかない。
+B	Four days is plenty for five minutes.	5分のためなら4日で十分。
+A	...Okay. Okay. Don't let me back out.	…わかった。わかった。逃げさせないでね。
+B	Not a chance.	絶対にね。
+T	📝	死ぬまでにやりたいことリストを見せ合う	深い話	bucket list, before I die, top of the list, crossed off, we should do that together
+S	
+A	Do you have a bucket list? Things you want to do before you die?	バケットリストってある？ 死ぬまでにやりたいことのリスト。
+B	I do, actually. It's in my notes app. Very serious.	あるよ。メモアプリに入ってる。すごく真面目なやつ。
+A	Read me the top three.	上位3つを読んで。
+B	See the northern lights. Learn to sail. Cook a meal for my whole family, from scratch, on my own.	オーロラを見る。セーリングを習う。家族全員に、一人で一から料理を作る。
+A	The last one's lovely.	最後のが素敵だね。
+B	It's the one I'm most scared of. Twelve people. My grandmother judging.	一番怖いやつ。12人。祖母の審査つき。
+S	
+B	What's on yours?	そっちのリストは？
+A	Run a marathon. Write a book. See a whale.	マラソンを走る。本を書く。クジラを見る。
+B	A whale?	クジラ？
+A	In the wild. Not an aquarium. I don't know why, it just gets me.	野生の。水族館じゃなくて。なんでかわからないけど、心が動くんだ。
+B	Have you crossed anything off yet?	もう何か達成した？
+A	The marathon. Last year. Slowly, but I finished.	マラソン。去年。遅かったけど、完走した。
+B	That's huge.	それはすごい。
+S	
+B	The northern lights and the whale — we could do those together.	オーロラとクジラ、一緒にできるよ。
+A	Norway. Both in one trip.	ノルウェー。1回の旅で両方。
+B	Look at that. Two items, one flight.	ほら。2項目を、1回のフライトで。
+A	Let's actually do it. Not just say it.	本当にやろう。言うだけじゃなくて。
+B	Next winter. I'm writing it down now.	来年の冬。今メモしてる。
+T	🏙	住んでみたい街について話す	雑談	if you could live anywhere, I could see myself in, the pace, for a year, too expensive
+S	
+A	If you could live anywhere for a year, where would it be?	1年間どこにでも住めるなら、どこがいい？
+B	Lisbon. I could see myself there.	リスボン。自分がそこにいるのが想像できる。
+A	What is it about Lisbon?	リスボンの何が？
+B	The light, the pace. Everyone seems to have time.	光と、生活のペース。みんな時間に余裕がありそうで。
+A	And the food.	それに食べ物。
+B	And the food. Obviously. What about you?	それに食べ物。当然ね。そっちは？
+S	
+A	Tokyo. But I'm biased.	東京。でも私はひいき目だから。
+B	You grew up there. Doesn't that count as living there?	そこで育ったでしょ。それって住んだうちに入らない？
+A	I grew up in the suburbs. I mean actually in the city. Middle of it.	郊外で育ったんだ。本当に都心に住むって意味。ど真ん中に。
+B	Too expensive.	高すぎるよ。
+A	For a year, I'd manage. Tiny flat, big city.	1年なら何とかなる。狭い部屋、大きな街。
+B	That's the trade.	それが取引だね。
+S	
+B	Okay, so you go to Tokyo, I go to Lisbon.	じゃあ、あなたは東京、私はリスボン。
+A	And we swap for the second year.	それで2年目は交換。
+B	I like that plan. Two cities, two years.	いい計画だね。2つの街、2年間。
+A	Now we just need the money.	あとはお金だけだね。
+B	Details.	些細なことだよ。
+T	🧳	旅先での失敗談を話す	雑談	worst travel mistake, missed the flight, wrong city, learnt the hard way, funny now
+S	
+A	What's your worst travel mistake?	旅行での一番の失敗は？
+B	I booked a flight to the wrong city.	違う都市行きの飛行機を予約した。
+A	How wrong?	どのくらい違う？
+B	I wanted Sydney, Australia. I got Sydney, Canada.	オーストラリアのシドニーに行きたかったのに、カナダのシドニーを取った。
+A	No. There's a Sydney in Canada?	嘘。カナダにシドニーがあるの？
+B	Population thirty thousand. Very nice people. Not what I'd packed for.	人口3万人。とても親切な人たち。でも持っていった服には合わなかった。
+A	How did you not notice?	どうして気づかなかったの？
+B	The flight was suspiciously cheap. That should have been the clue.	航空券が怪しいほど安かった。それがヒントだったんだよね。
+S	
+B	What about you?	そっちは？
+A	I missed a flight because I was in the wrong terminal. Watched it take off through the window.	ターミナルを間違えて飛行機に乗り遅れた。窓越しに離陸を見送った。
+B	That's painful.	それはつらい。
+A	I had to buy a new ticket. Three times the price.	新しいチケットを買わないといけなかった。3倍の値段で。
+B	Lesson learnt?	教訓は？
+A	Check the terminal. Every time. I'm paranoid about it now.	ターミナルを確認する。毎回。今は神経質なくらい。
+S	
+A	It's funny now, at least.	少なくとも、今は笑えるね。
+B	They always are. Eventually.	いつもそうなる。最終的には。
+A	The Canada thing is funnier, though.	でもカナダの話のほうが面白いよ。
+B	I know. I've dined out on it for years.	わかってる。何年もこの話で場を持たせてる。
+T	🍽	最高の食事の思い出を語る	雑談	the best meal I've ever had, I still think about it, it wasn't fancy, the setting, worth the trip
+S	
+A	What's the best meal you've ever had?	人生で一番美味しかった食事は？
+B	A bowl of noodles in a village in Vietnam. Six years ago.	ベトナムの村で食べた麺。6年前。
+A	Just noodles?	ただの麺？
+B	Just noodles. From a woman with one pot and a plastic table.	ただの麺。鍋1つとプラスチックのテーブルだけの女性が作ったもの。
+A	What made it so good?	何がそんなに良かったの？
+B	Everything. The broth, the heat, the fact I'd been walking for six hours.	全部。スープも、暑さも、6時間歩いたあとだったことも。
+A	The setting matters.	状況が大事なんだね。
+B	The setting is half the meal. I still think about it.	状況が食事の半分だよ。今でも思い出す。
+S	
+B	Yours?	そっちは？
+A	My grandmother's New Year's dinner. Every year, until she couldn't anymore.	祖母の正月料理。毎年、作れなくなるまで。
+B	What did she make?	何を作ってたの？
+A	Twenty dishes. Every one from scratch. It took her three days.	20品。全部一から。3日がかりだった。
+B	Twenty!	20品！
+A	And she'd sit and watch us eat. She barely ate herself.	それで、私たちが食べるのを座って見てた。自分はほとんど食べずに。
+B	That's love in the form of food.	それは食べ物の形をした愛だね。
+A	That's exactly what it was.	まさにそうだった。
+S	
+B	The best meals are never in restaurants, are they?	最高の食事って、レストランにはないよね。
+A	Never. They're wherever someone cared.	ないね。誰かが心を込めた場所にある。
+T	🍲	実家の味・母の味について話す	雑談	my mum's cooking, tastes like home, never quite the same, the recipe, comfort food
+S	
+A	What's the one dish that tastes like home?	「家の味」って感じる料理は何？
+B	My mum's chicken soup. Nothing else comes close.	母のチキンスープ。他のどれも敵わない。
+A	What's special about it?	何が特別なの？
+B	I honestly don't know. I've tried to make it. It's never quite the same.	正直わからない。作ってみたけど、どうしても同じにならない。
+A	Did you get the recipe?	レシピは教えてもらった？
+B	She doesn't have one. "A bit of this, a bit of that." Maddening.	レシピなんてないんだ。「これを少し、あれを少し」。腹が立つよ。
+S	
+B	What's yours?	そっちは？
+A	Nikujaga. Beef and potatoes, simmered. My mum made it every Thursday.	肉じゃが。牛肉とじゃがいもの煮物。母が毎週木曜に作ってた。
+B	Every Thursday?	毎週木曜？
+A	Like clockwork. I'd smell it from the front door.	時計みたいに正確に。玄関から匂いがわかった。
+B	Do you make it now?	今は自分で作る？
+A	When I'm homesick. It's not as good, but it's close enough.	ホームシックの時に。母のほどじゃないけど、十分近い。
+B	Close enough is the best any of us get.	「十分近い」が、私たちに手に入る最高のものだよね。
+S	
+A	Next time I'm home, I'm watching her make it. Taking notes.	次に帰省したら、作ってるところを見る。メモを取りながら。
+B	Do it. Before it's too late to ask.	やっておいて。聞けなくなる前に。
+A	That's exactly why.	まさにそれが理由。
+T	🍘	自分の国の懐かしいお菓子や料理を紹介する	文化	when I was a kid, we used to, you can't get it here, I brought some back, you have to try
+S	
+A	I brought something back from Japan. You have to try it.	日本から持ってきたものがあるんだ。食べてみて。
+B	What is it?	何？
+A	Senbei. Rice crackers. These are the ones I ate as a kid.	せんべい。米のクラッカー。子どもの頃に食べてたやつ。
+B	They look like... very serious crackers.	なんか… すごく真面目なクラッカーに見える。
+A	Soy sauce and seaweed. Try one.	醤油と海苔。1枚食べてみて。
+B	Oh! That's salty. And crunchy. I like it.	お！ しょっぱい。カリカリしてる。好き。
+S	
+A	My grandmother always had a tin of these. Every visit.	祖母の家にはいつも缶があったんだ。行くたびに。
+B	So it's a memory as much as a snack.	じゃあ、お菓子というより思い出なんだね。
+A	Exactly. You can't get them here. So I bring a bag every time.	そう。ここでは手に入らない。だから毎回1袋持ってくる。
+B	What else did you eat as a kid?	子どもの頃、他に何を食べてた？
+A	Milk candy, sweet bread with red bean paste. Simple things.	ミルクキャンディ、あんパン。シンプルなもの。
+B	Red bean in bread?	あんこをパンに？
+A	Sweet beans. It sounds odd, but it works. I'll bring one next time.	甘い豆。変に聞こえるけど、美味しいよ。次は持ってくる。
+S	
+B	What's your equivalent? Childhood snack?	そっちの子どもの頃のお菓子は？
+A	Jammie Dodgers. Biscuits with jam in the middle. My nan had them too.	ジャミー・ドジャーズ。真ん中にジャムが入ったビスケット。うちの祖母も持ってた。
+B	Grandmothers and tins of biscuits. Universal.	おばあちゃんとビスケットの缶。世界共通だね。
+A	Maybe that's the real culture exchange.	それが本当の文化交流なのかもね。
+T	🎬	一番好きな映画とその理由を熱く語る	雑談	my all-time favourite, I've seen it, every time, the scene where, you have to watch it
+S	
+A	What's your all-time favourite film?	人生で一番好きな映画は？
+B	Easy. "Spirited Away." I've seen it maybe twenty times.	簡単。「千と千尋の神隠し」。20回くらい観てる。
+A	Twenty? What keeps bringing you back?	20回？ 何がそんなに惹きつけるの？
+B	Every time I notice something new. A detail in the background, a look on someone's face.	毎回、新しい何かに気づくんだ。背景の細部とか、誰かの表情とか。
+A	It's a beautiful film.	美しい映画だよね。
+B	It's more than that. It's about growing up without losing yourself.	それ以上だよ。自分を失わずに大人になる話なんだ。
+A	That's a lot to get from a cartoon.	アニメからそれだけ受け取るのはすごいね。
+B	It's not a cartoon. Don't make me fight you.	アニメ「なんか」じゃないよ。喧嘩を売らないで。
+S	
+A	Okay, what's the scene?	じゃあ、一番の場面は？
+B	The train. Over the water. Nothing happens, and it's the best scene in cinema.	電車。水の上を走る。何も起こらないのに、映画史上最高の場面。
+A	I know exactly the one.	それ、正確にわかる。
+B	You've seen it?	観たことあるの？
+A	Once. Years ago. I clearly need to watch it again.	一度。何年も前に。明らかにもう一度観る必要があるね。
+B	Tonight. My place. I have the good version.	今夜。うちで。いい版を持ってるから。
+S	
+A	What do you mean, the good version?	いい版ってどういうこと？
+B	Original language, subtitles. Not the dub.	原語に字幕。吹き替えじゃないやつ。
+A	You really are serious about this.	本当に真剣なんだね。
+B	I told you. Twenty times.	言ったでしょ。20回。
+T	📖	人生観が変わった本や映画を紹介する	深い話	changed how I see, I read it at the right time, stayed with me, made me realise, you should read it
+S	
+A	Has a book ever changed how you see things?	本で人生観が変わったことってある？
+B	One, yes. "Man's Search for Meaning." I read it at exactly the right time.	1冊ある。「夜と霧」。まさにぴったりの時期に読んだ。
+A	What's it about?	どんな本？
+B	A psychiatrist who survived the camps. And what he learnt about why people keep going.	強制収容所を生き延びた精神科医の話。人はなぜ生き続けるのか、彼が学んだこと。
+A	That sounds heavy.	重そうだね。
+B	It is. But it's also the most hopeful thing I've read.	重いよ。でも今まで読んだ中で一番希望に満ちてる本でもある。
+A	How did it change you?	どんなふうに変わった？
+B	It made me realise that I can't control what happens. Only how I respond.	何が起こるかはコントロールできないって気づかせてくれた。どう応じるかだけ。
+S	
+B	Have you got one?	そっちは何かある？
+A	A film, actually. "Ikiru." An old Japanese one.	実は映画。「生きる」。古い日本映画。
+B	What's it about?	どんな話？
+A	A man finds out he's dying and decides to actually do something with the time he has left.	自分が死ぬと知った男が、残された時間で何かを成し遂げようと決意する話。
+B	And it stayed with you?	それがずっと残ってる？
+A	Twenty years. I think about it whenever I'm wasting a day.	20年。一日を無駄にしてる時、いつも思い出す。
+S	
+A	We should swap. I'll read yours, you watch mine.	交換しよう。私はあなたの本を読む、あなたは私の映画を観る。
+B	Deal. And then we talk about it.	決まり。それから語り合おう。
+A	That's the best kind of evening.	それが最高の夜の過ごし方だね。
+T	🎧	落ち込んだときに聴く曲を教え合う	雑談	when I'm down, on repeat, it gets me through, the lyrics, I'll send you
+S	
+A	What do you listen to when you're down?	落ち込んだ時、何を聴く？
+B	Depends. Sometimes something sad, to feel it properly.	時による。時には悲しい曲。ちゃんと感じるために。
+A	And sometimes?	それ以外は？
+B	Something loud to shake it off. There's this one song I put on repeat.	それを振り払うために、大音量の曲。リピートで流す曲があるんだ。
+A	Which one?	どの曲？
+B	I'll send it to you. It's embarrassing, but it works.	送るよ。恥ずかしいけど、効くんだ。
+S	
+B	What about you?	そっちは？
+A	There's a piano piece. No words. Just this slow, sad melody.	ピアノ曲。歌詞なし。ゆっくりで、悲しいメロディー。
+B	Does it make you feel better or worse?	それで気分は良くなる？ 悪くなる？
+A	Better, weirdly. It's like it does the crying for me.	不思議と良くなる。代わりに泣いてくれてるみたいで。
+B	That makes sense. Sometimes you need permission to feel bad.	わかるよ。時には、落ち込む許可が必要なんだよね。
+A	Exactly. And then I can move on.	その通り。それで、先に進める。
+S	
+A	Send me yours, I'll send you mine.	あなたのを送って、私のも送るから。
+B	A sad-song exchange. Very healthy.	悲しい曲の交換。すごく健全だね。
+A	Better than pretending we're fine.	平気なふりをするよりましだよ。
+T	🎵	思い出の曲とそのエピソードを話す	雑談	this song takes me back, every time I hear it, we were, it came on, I was right back there
+S	
+A	Oh, this song. It takes me right back.	あ、この曲。一気に思い出が蘇る。
+B	Back where?	どこに？
+A	Summer, seventeen years old. A car with no air conditioning.	夏、17歳。エアコンのない車。
+B	Who were you with?	誰と一緒だった？
+A	Three friends, driving to the coast. This came on the radio and we all screamed it.	友達3人と、海岸に向かってた。ラジオでこの曲が流れて、全員で叫ぶように歌った。
+B	I love that.	いいね。
+A	Every time I hear it, I'm right back there. Windows down, sunburnt.	聴くたびに、あの場所に戻る。窓を開けて、日焼けして。
+S	
+B	I've got one like that. But it's a sad one.	私にもそういう曲がある。でも悲しいやつ。
+A	Go on.	聞かせて。
+B	It played at my grandad's funeral. His favourite.	祖父の葬式で流れた曲。彼のお気に入りだった。
+A	Oh.	そうか。
+B	It came on in a café last month and I had to leave.	先月カフェで流れて、店を出ないといけなかった。
+A	That's the power of a song.	それが曲の力だね。
+B	It is. I can't skip it, but I can't listen to it either.	そう。飛ばすこともできないし、聴くこともできない。
+S	
+A	Maybe one day it'll be a good memory.	いつか、いい思い出になるかもね。
+B	Maybe. He'd want it to be. He loved that song.	かも。祖父もそう望むと思う。あの曲が大好きだったから。
+A	Then keep it. For him.	じゃあ持っておいて。おじいさんのために。
+T	🎤	カラオケの十八番を話す	雑談	my go-to song, I always sing, nail it, crowd-pleaser, don't ask me to sing it now
+S	
+A	What's your go-to karaoke song?	カラオケの十八番は？
+B	"Don't Stop Believin'." Every time. Without fail.	「ドント・ストップ・ビリーヴィン」。毎回。必ず。
+A	Classic. Can you actually sing it?	定番だね。実際に歌えるの？
+B	Badly. But loudly. The crowd does the rest.	下手にね。でも大声で。あとは周りがやってくれる。
+A	Crowd-pleaser, then.	盛り上げ役だね。
+B	That's the strategy. Pick something everyone knows.	それが作戦。みんなが知ってる曲を選ぶ。
+S	
+B	And yours?	そっちは？
+A	A Japanese ballad. Very slow, very dramatic.	日本のバラード。すごくゆっくりで、すごくドラマチック。
+B	A ballad? At karaoke?	バラード？ カラオケで？
+A	I nail it. People cry.	完璧に歌うよ。みんな泣く。
+B	From the emotion or the pain?	感動で？ それとも苦痛で？
+A	Emotion. Mostly.	感動。だいたいは。
+B	I need to see this.	それは見てみないと。
+S	
+A	Don't ask me to sing it now.	今歌えって言わないでね。
+B	I wasn't going to. But Friday, karaoke, you're first.	言うつもりはないよ。でも金曜、カラオケ、あなたが一番手ね。
+A	Only if you do "Don't Stop Believin'" straight after.	そのあとすぐ「ドント・ストップ・ビリーヴィン」を歌うならね。
+B	Deal. It's going to be a terrible night.	決まり。ひどい夜になりそうだ。
+A	The best kind.	最高の種類のね。
 """#
 }
