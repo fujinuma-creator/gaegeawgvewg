@@ -1,0 +1,409 @@
+T|🤫|現地の人しか知らない場所を教えてもらう|旅行|off the beaten track, locals only, hidden, don't tell everyone, keep it quiet
+S|
+A|Is there anywhere around here that only locals know about?|この辺りで、地元の人しか知らないような場所はありますか？
+B|Ha, you want the secrets.|はは、秘密が知りたいんですね。
+A|Only if you're willing to share.|教えてもらえるなら。
+B|Okay. There's a little beach past the lighthouse. No signs, no shops.|いいでしょう。灯台の先に小さなビーチがあります。看板もお店もない。
+A|How do I find it?|どうやって行けばいいですか？
+B|Follow the coast path for ten minutes, then there's a gap in the fence.|海岸沿いの道を10分歩くと、柵に隙間があります。
+S|
+A|A gap in the fence? That sounds very official.|柵の隙間？ ずいぶん公式な感じですね。
+B|It's not. That's the point.|公式じゃないです。それが肝心なんです。
+A|Is it safe to swim there?|そこで泳いでも安全ですか？
+B|In the morning, yes. The tide comes in fast after three.|午前中なら。3時以降は潮が速く満ちてきます。
+A|Good to know.|覚えておきます。
+B|And there's a woman who sells sandwiches from a cooler. Cash only.|あと、クーラーボックスでサンドイッチを売っている女性がいます。現金のみで。
+S|
+A|This is the best tip I've had all trip.|今回の旅で一番のヒントです。
+B|Just don't post it online. We like it quiet.|ネットには投稿しないでくださいね。静かなままがいいので。
+A|Your secret's safe with me.|秘密は守ります。
+B|Good. Enjoy it.|よかった。楽しんでください。
+
+T|🎆|祭りやイベントの日程を聞く|旅行|is there a festival, when is it, what happens, worth seeing, get there early
+S|
+A|I heard there's a festival this month. When is it?|今月お祭りがあると聞いたんですが、いつですか？
+B|The lantern festival? Next Saturday.|ランタン祭り？ 来週の土曜です。
+A|What happens?|どんなことをするんですか？
+B|Everyone releases lanterns on the river at sunset. Then there's music and food stalls.|日没に川にランタンを流します。そのあと音楽と屋台が出ます。
+A|That sounds beautiful.|素敵ですね。
+B|It is. It's the best night of the year here.|ええ。ここでは一年で一番の夜です。
+S|
+A|Do I need tickets?|チケットは必要ですか？
+B|No, it's free. But get there early for a good spot.|いいえ、無料です。でもいい場所を取るなら早めに。
+A|How early?|どのくらい早く？
+B|Six, at the latest. The bridge fills up fast.|遅くとも6時。橋はすぐ埋まります。
+A|Can I buy a lantern there?|ランタンはそこで買えますか？
+B|Yes, from the stalls. About five each.|はい、屋台で。1つ5くらいです。
+S|
+A|Anything else going on that weekend?|その週末、他にイベントはありますか？
+B|A food market on Sunday morning. Same square.|日曜の朝に食の市場があります。同じ広場で。
+A|Perfect. That's my whole weekend planned.|完璧。週末の予定が全部決まりました。
+B|You picked a good week to visit.|いい週に来ましたね。
+
+T|🏊|海やプールで泳いでいいか確認する|旅行|is it safe to swim, lifeguard, currents, flags, off limits
+S|
+A|Is it safe to swim here?|ここで泳いでも安全ですか？
+B|Between the flags, yes. There's a lifeguard until six.|旗の間ならね。6時までライフガードがいるよ。
+A|What about outside the flags?|旗の外は？
+B|I wouldn't. The currents get strong past the rocks.|やめたほうがいい。岩の先は流れが強くなるから。
+A|Good to know. Thanks.|覚えておきます。ありがとう。
+S|
+A|Excuse me, is the pool open to hotel guests?|すみません、プールは宿泊客も使えますか？
+B|Yes, until nine. Just bring your key card.|はい、9時まで。カードキーをお持ちください。
+A|Are kids allowed?|子どもも入れますか？
+B|Yes, in the shallow end. There's no lifeguard, though.|はい、浅いほうで。ただライフガードはいません。
+A|Understood. I'll keep an eye on them.|わかりました。目を離さないようにします。
+S|
+A|And the beach — any jellyfish this time of year?|それとビーチは、この時期クラゲはいますか？
+B|Sometimes. If there's a purple flag, stay out.|時々。紫の旗が出ていたら入らないでください。
+A|Purple flag. Okay. Anything else?|紫の旗。わかりました。他には？
+B|Sunscreen. The sun's stronger than it feels.|日焼け止めを。日差しは感じるより強いので。
+
+T|🧴|日焼け止めや虫よけを貸してほしい|旅行|can I borrow some, sunscreen, bug spray, forgot mine, run out
+S|
+A|Can I borrow some sunscreen? I forgot mine.|日焼け止め借りてもいい？ 忘れちゃって。
+B|Sure. It's in my bag, the front pocket.|いいよ。カバンの前ポケットに入ってる。
+A|What factor is it?|SPFはいくつ？
+B|Fifty. I don't mess around.|50。妥協しないから。
+A|Perfect. My skin thanks you.|完璧。肌が喜んでる。
+S|
+A|Have you got bug spray too?|虫よけも持ってる？
+B|Yeah, but I'm nearly out. There's maybe two sprays left.|うん、でもほぼなくなりそう。あと2回分くらい。
+A|I'll take one. Just for my ankles.|1回分もらうね。足首だけ。
+B|Go for it. We can buy more in town.|どうぞ。町でまた買えばいいし。
+A|I'll get it. It's the least I can do.|私が買うよ。それくらいはしないと。
+S|
+B|Did you bring a hat?|帽子は持ってきた？
+A|...No.|…いや。
+B|Kohei.|航平。
+A|I know, I know. I'll buy one of those too.|わかってる、わかってる。それも買う。
+
+T|📍|迷子になった友達と待ち合わせ場所を決める|旅行|where are you, lost you, meet at, landmark, stay put
+S|
+A|Where are you? I've lost you in the crowd.|どこにいる？ 人混みで見失っちゃった。
+B|I'm by the fountain. Where did you go?|噴水のそばだよ。どこ行ったの？
+A|I stopped to look at a stall and you were gone.|屋台を見てたら、いなくなってた。
+B|Okay, don't move. I'll come to you.|わかった、動かないで。そっちに行く。
+A|I don't know where I am, though.|でも自分がどこにいるかわからない。
+S|
+B|What can you see?|何が見える？
+A|A big red building and a statue of a man on a horse.|大きな赤い建物と、馬に乗った男の銅像。
+B|That's the old town hall. I'm five minutes away.|それは旧市庁舎だ。5分で着くよ。
+A|Should I stay put?|ここにいたほうがいい？
+B|Yes. Stand by the statue. It's easy to spot.|うん。銅像のそばに立ってて。見つけやすいから。
+A|Okay. By the horse.|わかった。馬のそば。
+S|
+B|I see you! Wave.|見えた！ 手を振って。
+A|Waving. Oh, there you are.|振ってる。あ、いた。
+B|Let's set a meeting point in case this happens again.|また同じことがあった時のために、集合場所を決めておこう。
+A|The horse. Always the horse.|馬。いつでも馬のところで。
+
+T|🌇|「今日何してた？」と一日の出来事を話す|雑談|how was your day, nothing special, the highlight, you'll never guess, and then
+S|
+A|How was your day?|今日はどうだった？
+B|Pretty normal. Work, lunch, more work.|わりと普通。仕事して、昼食べて、また仕事。
+A|Anything interesting happen?|何か面白いことあった？
+B|Actually, yes. A pigeon flew into the office.|実は、あった。オフィスに鳩が飛び込んできたんだ。
+A|What? How?|え？ どうやって？
+B|Someone left a window open. It went straight for the biscuits.|誰かが窓を開けっぱなしにして。まっすぐビスケットに向かっていった。
+S|
+A|How did you get it out?|どうやって追い出したの？
+B|Twenty minutes and a lot of screaming. Tom used a jacket.|20分と大量の悲鳴。トムがジャケットを使ったよ。
+A|That's the highlight of your day?|それが今日のハイライト？
+B|Highlight of my month, probably. What about you?|たぶん今月のハイライト。そっちは？
+A|Nothing that exciting. I finished that report.|そんな刺激的なことはない。あのレポートを終わらせた。
+B|That's not nothing! You've been on that for weeks.|それは大きいよ！ 何週間もかかってたじゃない。
+S|
+A|True. It felt good to send it.|たしかに。送信した時は気持ちよかった。
+B|Then we both had a good day.|じゃあ2人ともいい一日だったね。
+A|Yours had a pigeon in it. Yours wins.|そっちには鳩がいた。そっちの勝ち。
+
+T|💤|昨日見た夢の話をする|雑談|I had the weirdest dream, does that mean anything, so vivid, then I woke up, recurring
+S|
+A|I had the weirdest dream last night.|昨夜、すごく変な夢を見た。
+B|Go on.|聞かせて。
+A|I was back at school, but the teacher was my dentist.|学校に戻ってたんだけど、先生が私の歯医者だった。
+B|That's quite specific.|ずいぶん具体的だね。
+A|And the exam was in a language I don't speak.|しかも試験が、話せない言語だった。
+B|Classic anxiety dream.|典型的な不安の夢だね。
+S|
+A|Does that mean anything?|何か意味があるのかな？
+B|Probably that you're stressed about something.|たぶん何かにストレスを感じてるんだよ。
+A|I do have a review at work next week.|来週、仕事で評価面談があるんだ。
+B|There you go. Your brain's doing a rehearsal.|ほらね。脳が予行練習してるんだ。
+A|In a dentist's office?|歯医者で？
+B|Brains aren't subtle.|脳は繊細じゃないから。
+S|
+B|I keep having the one where I can fly, but only very slowly.|私はずっと、飛べるけどすごく遅い夢を見てる。
+A|Ha, that's so frustrating.|はは、それはもどかしいね。
+B|Every time. Then I wake up annoyed.|毎回。それでイライラして目が覚める。
+A|At least mine had a plot.|少なくとも私のには筋があったよ。
+
+T|🥱|「今日眠すぎる」と愚痴る|雑談|I'm so tired, barely slept, running on, can't keep my eyes open, need a nap
+S|
+A|I'm so tired today. I can barely keep my eyes open.|今日はすごく眠い。目を開けてるのがやっと。
+B|Late night?|夜更かし？
+A|I got maybe four hours. The neighbours were having a party.|4時間くらいかな。隣がパーティーしてて。
+B|On a Tuesday?|火曜に？
+A|On a Tuesday. Who does that?|火曜に。誰がそんなことするんだろう。
+S|
+B|Have you had coffee?|コーヒーは飲んだ？
+A|Three. I'm running on caffeine and spite.|3杯。カフェインと意地で動いてる。
+B|That's not sustainable.|それは持たないよ。
+A|I know. I might crash at my desk.|わかってる。デスクで寝落ちするかも。
+B|Go and take a nap in the car at lunch.|お昼に車で昼寝しておいで。
+A|Honestly, I might.|正直、そうしようかな。
+S|
+B|And go to bed at nine tonight. No excuses.|今夜は9時に寝て。言い訳なしで。
+A|If the neighbours let me.|隣が許してくれれば。
+B|Earplugs. I'll lend you mine.|耳栓。私の貸すよ。
+A|You're a lifesaver.|ほんと助かる。
+
+T|🍕|「お腹すいた、何食べる？」と相談する|雑談|I'm starving, what do you fancy, I could go for, not fussy, decide
+S|
+A|I'm starving. What do you fancy?|お腹ペコペコ。何食べたい？
+B|I don't know. What are you in the mood for?|わからない。何の気分？
+A|Anything, honestly. I'm not fussy.|正直、何でも。こだわりないよ。
+B|That's what you always say, and then you reject everything.|いつもそう言って、全部却下するじゃない。
+A|That's not true.|そんなことないよ。
+B|Pizza?|ピザ？
+A|Hmm, had it yesterday.|うーん、昨日食べた。
+B|See!|ほらね！
+S|
+B|Okay, I'll narrow it down. Noodles or curry?|じゃあ絞るよ。麺かカレーか。
+A|Curry. No, noodles. Curry.|カレー。いや、麺。カレー。
+B|Curry. Final answer?|カレー。最終回答？
+A|Final answer. I could really go for a curry.|最終回答。カレーが本当に食べたい。
+B|The place on Elm Street?|エルム通りの店？
+A|Perfect. Let's go before I change my mind.|完璧。気が変わる前に行こう。
+S|
+B|Should I order ahead?|先に注文しておく？
+A|Yes. Two of the usual.|うん。いつものを2つ。
+B|And naan?|ナンは？
+A|Obviously naan. What kind of question is that?|当然ナン。何を聞いてるの。
+
+T|👕|今日の服がダサいとお互いいじる|雑談|what are you wearing, that shirt, who dressed you, pot calling the kettle, bold choice
+S|
+A|What are you wearing?|何着てるの？
+B|What? It's a shirt.|え？ シャツだけど。
+A|It's a lot of shirt. Are those parrots?|かなり主張の強いシャツだね。それオウム？
+B|They're flamingos, thank you very much.|フラミンゴです、失礼な。
+A|Bold choice for a Wednesday.|水曜にしては大胆な選択だね。
+S|
+B|Says the person in socks and sandals.|靴下にサンダルの人が言う？
+A|These are comfortable.|これは快適なんだよ。
+B|They're a cry for help.|助けを求める叫びだよ。
+A|Okay, that's fair. My mum bought them.|わかった、それは認める。母が買ったんだ。
+B|Your mum has a lot to answer for.|お母さん、責任重大だね。
+S|
+A|We should not be seen in public together.|人前で一緒にいちゃいけないね。
+B|Agreed. Separate entrances.|同感。別々の入口から入ろう。
+A|Or we own it. Confidence is everything.|それか、開き直る。自信がすべてだよ。
+B|Flamingos and sandals. Let's go.|フラミンゴとサンダル。行こう。
+
+T|💇|髪型を変えようか迷っていると相談する|雑談|thinking about changing my hair, go shorter, what do you think, it'll grow back, suit you
+S|
+A|I'm thinking about changing my hair. Something different.|髪型を変えようかと思ってるんだ。何か違う感じに。
+B|Like what?|どんな？
+A|Shorter, maybe. Like, really short.|短く、かな。かなり短く。
+B|That would suit you, actually.|それ、似合うと思うよ。
+A|You think? I've had it long for ten years.|そう思う？ 10年間ずっと長かったんだ。
+B|Exactly. Time for a change.|だからこそ。変える時だよ。
+S|
+A|What if I hate it?|嫌いになったらどうしよう。
+B|It'll grow back. That's the thing about hair.|また伸びるよ。髪ってそういうものでしょ。
+A|That's true. But it takes so long.|たしかに。でもすごく時間がかかる。
+B|Show me what you're thinking.|考えてるやつを見せて。
+A|Something like this. Chin length.|こんな感じ。あごの長さ。
+B|Oh, yes. Do it. That's the one.|うん、いいね。やりなよ。それだよ。
+S|
+A|Okay. I'll book it for Saturday. Before I lose my nerve.|わかった。土曜に予約する。勇気がなくなる前に。
+B|Send me a photo after.|終わったら写真送って。
+A|And if it's terrible?|ひどかったら？
+B|Then we'll go hat shopping. Together.|その時は一緒に帽子を買いに行こう。
+
+T|⚖️|最近太った・痩せたと言い合う|雑談|put on a bit of weight, lost weight, you look great, winter weight, don't need to
+S|
+A|Have you lost weight? You look great.|痩せた？ すごくいい感じだね。
+B|A little. I've been walking to work.|少しね。職場まで歩くようにしてるんだ。
+A|It shows. Your face looks different.|わかるよ。顔つきが変わった。
+B|Thanks. And you? You look well.|ありがとう。そっちは？ 元気そうだね。
+A|Ha, "well" is code for "bigger", isn't it?|はは、「元気そう」って「太った」の言い換えでしょ？
+B|No! I meant it.|違うよ！ 本気で言ったんだ。
+S|
+A|I have put on a bit, honestly. Winter weight.|正直、少し太ったんだ。冬太り。
+B|It's cold. Everyone does.|寒いからね。みんなそうだよ。
+A|I've been eating like it's my job.|仕事みたいに食べ続けてた。
+B|Same as every winter. It'll go in spring.|毎年の冬と同じ。春には戻るよ。
+A|You're kind to say so.|優しいね。
+S|
+B|Want to walk to work with me? It's only twenty minutes.|一緒に職場まで歩く？ 20分だけだよ。
+A|Actually, yes. I need the motivation.|うん、そうする。動機づけが必要だから。
+B|Tomorrow, eight fifteen, by the bridge.|明日、8時15分、橋のところで。
+A|Deal. Don't let me bail.|決まり。逃げさせないでね。
+
+T|🧓|「歳とったなぁ」と嘆く|雑談|I'm getting old, my back, when did that happen, in my day, feel my age
+S|
+A|Ow. My back.|痛っ。腰が。
+B|What did you do?|何したの？
+A|I bent down to pick up a sock. That's it. A sock.|靴下を拾おうとかがんだだけ。それだけ。靴下。
+B|Welcome to your thirties.|30代へようこそ。
+A|When did this happen? I used to be able to do anything.|いつからこうなった？ 昔は何でもできたのに。
+B|Two years ago, roughly. It comes for us all.|だいたい2年前くらいかな。誰にでも来るんだよ。
+S|
+A|And I went to bed at ten last night. On a Friday.|しかも昨夜は10時に寝た。金曜なのに。
+B|Voluntarily?|自分から？
+A|Happily. I was excited about it.|喜んで。楽しみにしてたくらい。
+B|I know that feeling. I got excited about a new kettle last week.|わかるよ。先週、新しいやかんにワクワクしたもん。
+A|A kettle.|やかん。
+B|It boils really fast. Don't judge me.|すごく早く沸くんだよ。批判しないで。
+S|
+A|We're old.|年取ったね。
+B|We're not old. We're comfortable.|年取ってないよ。落ち着いただけ。
+A|That's what old people say.|それ、年寄りが言うセリフだよ。
+B|Fine. Pass me my reading glasses.|わかったよ。老眼鏡取って。
+
+T|📱|ネットで見た面白い動画を見せ合う|雑談|have you seen this, watch this, I can't stop laughing, send it to me, wait for it
+S|
+A|Have you seen this? Watch.|これ見た？ 見て。
+B|What is it?|何？
+A|Just watch. Wait for it.|いいから見て。ちょっと待って。
+B|Is that a cat on a robot vacuum?|ロボット掃除機に乗った猫？
+A|Wearing a shark costume. Yes.|サメの着ぐるみで。そう。
+B|Why is this so funny?|なんでこんなに面白いの？
+S|
+A|I've watched it eight times.|8回見た。
+B|Send it to me. I need it in my life.|送って。人生に必要。
+A|Sending now. Also, this one.|今送る。あとこれも。
+B|A dog that sings along to the doorbell?|玄関チャイムに合わせて歌う犬？
+A|He does it every time. Every single time.|毎回やるんだ。毎回。
+B|I'm crying. That's it, I'm done.|涙が出る。もうだめ、限界。
+S|
+B|Okay, my turn. Have you seen the goat one?|じゃあ私の番。ヤギのやつ見た？
+A|Which goat one?|どのヤギ？
+B|The one that screams like a person.|人間みたいに叫ぶやつ。
+A|Oh no, I know exactly which one. Play it.|あー、まさにそれ知ってる。再生して。
+
+T|🔥|SNSでバズっている話題を話す|雑談|it's everywhere, gone viral, have you seen, trending, can't escape it
+S|
+A|Have you seen that video everyone's sharing?|みんなが共有してるあの動画、見た？
+B|The one with the guy and the ladder?|はしごの男の人のやつ？
+A|That's the one. It's everywhere.|それそれ。どこを見てもある。
+B|I've seen it about fifty times today.|今日だけで50回くらい見た。
+A|Same. I can't escape it.|同じ。逃げられない。
+S|
+B|Why did it go viral, though? It's just a guy on a ladder.|でもなんでバズったんだろう。はしごに乗ってる男の人ってだけなのに。
+A|It's the way he says "not today". Something about it.|「今日は違う」って言い方だよ。何かあるんだよね。
+B|Everyone at work's been saying it.|職場でみんな言ってる。
+A|My mum sent it to me. My mum.|母が送ってきた。母が。
+B|Then it's officially over. Once mums get it, it's done.|じゃあ公式に終わりだね。母親世代に届いたら終わり。
+S|
+A|What's the next one going to be?|次は何がバズるんだろう。
+B|Something with a dog, probably. It's always a dog.|たぶん犬関係。いつも犬だから。
+A|Or a goat.|それかヤギ。
+B|Or a goat.|それかヤギ。
+
+T|⭐|芸能人やインフルエンサーの話をする|雑談|did you hear about, she's everywhere, overrated, huge fan, I don't get it
+S|
+A|Did you hear about that actor? The one from the spy films?|あの俳優のこと聞いた？ スパイ映画の。
+B|What about him?|彼がどうしたの？
+A|He's opened a bakery. In a tiny village. Just makes bread now.|パン屋を開いたんだ。小さな村で。今はパンを焼くだけ。
+B|You're joking.|冗談でしょ。
+A|Apparently he got tired of Hollywood.|ハリウッドに疲れたらしい。
+B|Fair enough. That's kind of lovely, actually.|なるほど。それはそれで素敵だね。
+S|
+B|Who's that influencer everyone's talking about?|みんなが話してるインフルエンサーって誰？
+A|The cleaning one? She's everywhere.|掃除の人？ どこ見てもいるよね。
+B|I don't get it. She just cleans.|わからない。掃除してるだけじゃん。
+A|It's weirdly calming. I watched her clean an oven for twenty minutes.|なぜか落ち着くんだよ。オーブン掃除を20分見ちゃった。
+B|Twenty minutes.|20分。
+A|I don't know what to tell you.|なんて言えばいいかわからない。
+S|
+B|I think half of them are overrated.|半分くらいは過大評価だと思う。
+A|Probably. But the bread guy is real.|たぶんね。でもパン屋の人は本物だよ。
+B|We should go. Buy a loaf from a movie star.|行こうよ。映画スターからパンを買おう。
+A|Road trip. I'm in.|ドライブだね。乗った。
+
+T|👀|「あの人、〇〇に似てない？」と話す|雑談|doesn't he look like, the spitting image, I can see it, from the side, that's uncanny
+S|
+A|Don't look now, but the guy by the door...|今見ないで。ドアのそばの男の人…
+B|What about him?|彼がどうしたの？
+A|Doesn't he look exactly like that actor? The one from the hospital show?|あの俳優にそっくりじゃない？ 病院ドラマの。
+B|Let me look... oh my goodness. The spitting image.|見てみる… うわ、本当だ。瓜二つ。
+A|Right? From the side especially.|でしょ？ 特に横顔。
+B|It's uncanny. Same jaw.|不気味なほど。あごが同じ。
+S|
+B|Should we ask him if he gets that a lot?|よく言われるか聞いてみる？
+A|No! That's so awkward.|だめ！ 気まずすぎる。
+B|He probably hears it every day.|たぶん毎日言われてるよ。
+A|Exactly why we shouldn't add to it.|だからこそ、私たちまで言わなくていい。
+B|Fine. I'll just stare from here.|わかった。ここから見つめるだけにする。
+A|Subtly.|さりげなくね。
+S|
+B|Wait, and the woman next to him looks like your cousin.|待って、隣の女の人はあなたのいとこに似てる。
+A|Oh, that's a bit creepy. She does.|うわ、ちょっと怖い。たしかに似てる。
+B|What is this place? A lookalike convention?|ここ何？ そっくりさん大会？
+A|Let's just eat our lunch.|お昼を食べよう。
+
+T|🎮|ゲームやアプリで盛り上がる|雑談|are you playing, what level, addicted, hooked, one more go
+S|
+A|Are you still playing that farm game?|まだあの農場ゲームやってる？
+B|Don't judge me. I'm on level forty-two.|批判しないで。レベル42まで来た。
+A|Forty-two? I got bored at ten.|42？ 私は10で飽きた。
+B|You gave up too early. It gets good.|諦めるのが早すぎたんだよ。後半面白くなるから。
+A|How much time have you spent on it?|どのくらい時間使ったの？
+B|Let's not check. I don't want to know.|確認しないでおこう。知りたくない。
+S|
+B|What about you? Anything new?|そっちは？ 何か新しいのある？
+A|There's this puzzle game where you sort colours. It's dangerously addictive.|色を分けるパズルゲーム。危険なくらい中毒性がある。
+B|Show me.|見せて。
+A|Here. Just try one level.|はい。1面だけやってみて。
+B|Okay... oh no. Oh no, I see it. One more go.|うん… やばい。やばい、わかった。もう1回。
+A|That's how it starts.|そうやって始まるんだよ。
+S|
+B|Send me the link. I need it.|リンク送って。必要。
+A|You're going to lose your evening.|夜がなくなるよ。
+B|I've already lost it to the farm. What's one more?|もう農場で夜はなくなってる。1つ増えても同じ。
+
+T|💖|推しの話を熱く語る|雑談|have you heard of, obsessed, their new album, you'd love them, hear me out
+S|
+A|Okay, hear me out. I need to tell you about this band.|ちょっと聞いて。このバンドについて話さなきゃいけない。
+B|Here we go.|始まった。
+A|I'm serious. They released a new album last week and I haven't stopped listening.|本気だよ。先週新しいアルバムが出て、ずっと聴き続けてる。
+B|What are they like?|どんな感じ？
+A|Sort of indie, sort of jazz. The drummer is unreal.|インディーっぽくて、ジャズっぽくて。ドラマーが信じられないくらいうまい。
+B|You said that about the last band.|前のバンドの時も同じこと言ってたよ。
+A|This is different. This is the one.|今回は違う。これが本命。
+S|
+B|Okay, play me something.|わかった、何かかけて。
+A|This track. Wait for the bit at two minutes.|この曲。2分のところまで待って。
+B|Hmm. It's... actually not bad.|うーん。これは… 実際、悪くないね。
+A|Not bad? It's incredible.|悪くない？ 最高だよ。
+B|Okay, the drums are good. I'll give you that.|わかった、ドラムはいい。それは認める。
+A|You'd love them live. They're touring in March.|ライブは絶対好きになるよ。3月にツアーがある。
+S|
+B|Are you asking me to a concert?|コンサートに誘ってるの？
+A|I'm telling you we're going.|行くって宣言してるの。
+B|Fine. But if it's bad, you're buying the drinks.|わかったよ。でもつまらなかったら、飲み物はあなた持ちね。
+A|It won't be bad. Trust me.|つまらないわけない。信じて。
+
+T|🛍|最近買ってよかったものを教え合う|雑談|best thing I've bought, game changer, worth every penny, should have got it years ago, recommend
+S|
+A|What's the best thing you've bought recently?|最近買った中で一番よかったものは？
+B|Easy. An electric kettle with temperature settings.|簡単。温度設定つきの電気ケトル。
+A|Really? A kettle?|本当？ ケトル？
+B|Game changer. Green tea at eighty degrees, coffee at ninety-five.|人生が変わった。緑茶は80度、コーヒーは95度。
+A|That's very specific.|ずいぶん具体的だね。
+B|It matters! You'd understand if you tried it.|大事なんだよ！ 試せばわかる。
+S|
+B|What about you?|そっちは？
+A|A good pillow. I should have done it years ago.|いい枕。何年も前に買うべきだった。
+B|How much was it?|いくらだった？
+A|More than I wanted to spend. Worth every penny, though.|思ってたより高かった。でもその価値は十分あった。
+B|Sleep is everything.|睡眠がすべてだからね。
+A|My neck agrees.|首もそう言ってる。
+S|
+B|Okay, send me the pillow link.|じゃあ、枕のリンク送って。
+A|And you send me the kettle.|そっちはケトルのを。
+B|We're going to be so well-rested and well-hydrated.|よく休んで、よく水分を取れるようになるね。
+A|Peak adulthood.|大人の頂点だ。
