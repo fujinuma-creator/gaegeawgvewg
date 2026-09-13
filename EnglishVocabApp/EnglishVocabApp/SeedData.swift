@@ -41868,5 +41868,419 @@ S
 A	Okay, I'm impressed. Another drink?	感心しました。もう一杯どうですか？
 B	I'd like that. This is going better than I thought.	ぜひ。思ったよりうまくいってますね。
 A	Don't jinx it.	縁起でもないこと言わないで。
+T	💑	付き合っている人の話を友達に紹介する	恋愛	I've been seeing someone, it's early days, you'd like her, she's the one who, bring her along
+S	
+A	So, I've got some news. I've been seeing someone.	実は、報告があるんだ。付き合ってる人がいる。
+B	What! Since when?	え！ いつから？
+A	About two months. I didn't want to say until it felt real.	2か月くらい。本物だと感じるまで言いたくなくて。
+B	And it feels real now?	それで、今は本物だと感じてる？
+A	It does. Her name's Ana. She's a nurse. She's funny, she's kind, she laughs at my terrible jokes.	うん。アナっていう名前で。看護師。面白くて、優しくて、私のひどいジョークで笑ってくれる。
+B	That last part's important.	最後のは大事だね。
+A	It's essential.	必須だよ。
+S	
+B	How did you meet?	どうやって出会ったの？
+A	At the climbing gym. She caught me when I fell. Literally.	クライミングジムで。落ちた私を受け止めてくれた。文字通り。
+B	That's a good story.	いい話だね。
+A	She says I fell on purpose. I didn't. Mostly.	わざと落ちたって言われる。違うよ。だいたいは。
+B	Mostly.	だいたいは。
+A	You'd like her. She's the one who talked me into the pottery class.	きっと気に入るよ。陶芸教室に誘ってくれたのも彼女なんだ。
+B	That was her? Then I already like her.	それが彼女？ じゃあもう気に入った。
+S	
+B	Bring her along next week. I want to meet her.	来週、連れてきて。会いたい。
+A	Okay. But be nice. It's early days.	わかった。でも優しくしてね。まだ始まったばかりだから。
+B	I'm always nice.	私はいつも優しいよ。
+A	You interrogated the last one.	前の人は尋問してたでしょ。
+B	The last one deserved it.	前の人は当然の報いだった。
+T	✈️	遠距離恋愛の悩みを話す	恋愛	long distance, time difference, we only see each other, it's hard, worth it
+S	
+A	How's it going with Mark? He's still in Tokyo, right?	マークとはどう？ まだ東京にいるんだよね？
+B	Still in Tokyo. Eight more months.	まだ東京。あと8か月。
+A	How are you finding it?	どう感じてる？
+B	Honestly? It's hard. The time difference kills us.	正直？ つらい。時差がきつくて。
+A	How many hours?	何時間差？
+B	Nine. When I wake up, he's finishing work. When I finish, he's asleep.	9時間。私が起きる頃、彼は仕事を終える。私が終わる頃、彼は寝てる。
+A	So there's a tiny window.	じゃあ、ほんの小さな窓しかないんだね。
+B	An hour a day, if we're lucky. We only see each other every three months.	運が良ければ1日1時間。会えるのは3か月に1回。
+S	
+A	Do you ever think about ending it?	終わらせようと思ったことは？
+B	Some nights, yes. When I'm tired and the call drops.	夜によってはね。疲れてて、通話が切れた時とか。
+A	And then?	それで？
+B	Then he sends me a photo of his lunch and I remember why I'm doing this.	それから彼が昼ごはんの写真を送ってきて、なんでこれを続けてるか思い出す。
+A	His lunch?	昼ごはん？
+B	It's a thing we do. Stupid, but it's ours.	私たちの習慣なんだ。ばかみたいだけど、私たちのもの。
+S	
+A	Eight months isn't forever.	8か月は永遠じゃないよ。
+B	I know. I keep telling myself that. It's worth it. He's worth it.	わかってる。自分に言い聞かせてる。価値はある。彼には価値がある。
+A	Then you're doing the right thing.	じゃあ正しいことをしてるよ。
+B	Thanks. I needed someone to say that out loud.	ありがとう。誰かに口に出して言ってほしかった。
+T	😠	浮気を疑って問いただす	恋愛	I need to ask you something, be honest with me, who is she, I saw the messages, don't lie to me
+S	
+A	I need to ask you something, and I need you to be honest.	聞きたいことがある。正直に答えてほしい。
+B	Okay. What's going on?	わかった。どうしたの？
+A	Who's Jess?	ジェスって誰？
+B	Jess? From work. Why?	ジェス？ 職場の人。どうして？
+A	I saw the messages. On your phone. Last night.	メッセージを見た。あなたのスマホで。昨夜。
+B	You looked at my phone?	スマホを見たの？
+A	It lit up. I saw "can't wait to see you tonight". Don't make this about the phone.	画面が光ったんだ。「今夜会えるのが待ちきれない」って見えた。スマホの話にすり替えないで。
+S	
+B	It's not what you think.	そういうことじゃない。
+A	Then what is it? Because it looks exactly like what I think.	じゃあ何？ 私が思ってる通りに見えるけど。
+B	It was a leaving do. Six of us. She was messaging the group.	送別会だよ。6人で。彼女はグループに送ってた。
+A	The message was to you.	メッセージはあなた宛てだった。
+B	Look. I'll show you the whole thread. Right now.	見て。スレッド全体を見せる。今すぐ。
+A	...Okay.	…わかった。
+B	Here. Group chat. Six names. Look at it.	ほら。グループチャット。6人の名前。見て。
+S	
+A	I'm sorry. I should have asked before assuming.	ごめん。決めつける前に聞くべきだった。
+B	Yes. You should. But I understand why it looked bad.	うん。そうすべきだった。でも、悪く見えた理由はわかる。
+A	I don't want to be that person. The one who checks phones.	そういう人間になりたくない。スマホをチェックするような。
+B	Then let's talk when something feels off. Before it gets to this.	じゃあ、何か変だと感じたら話そう。こうなる前に。
+A	Deal. I'm sorry.	わかった。ごめん。
+T	🏋	ジムで器具の使い方や順番を聞く	健康	how does this work, are you using this, how many sets, can I work in, adjust the seat
+S	
+A	Sorry, are you using this machine?	すみません、このマシン使ってますか？
+B	Just finishing. Two more sets. You can work in if you want.	もう少しで終わります。あと2セット。よければ交互に使いましょう。
+A	Thanks. Actually, do you know how it works? I've never used it.	ありがとう。というか、使い方わかりますか？ 使ったことがなくて。
+B	Sure. You adjust the seat here, so your knees line up with this pivot.	はい。ここで座席を調整して、膝がこの軸と揃うように。
+A	Like this?	こう？
+B	Bit higher. There. Then set the weight — start light.	もう少し高く。そう。それから重さを設定して。軽めから。
+A	How light?	どのくらい軽く？
+B	Twenty. See how it feels. You can always go up.	20。感覚を確かめて。いつでも上げられますから。
+S	
+A	How many sets do people normally do?	普通、何セットくらいやるんですか？
+B	Three sets of ten is a good start.	10回を3セットが最初はいいですね。
+A	And rest between?	間の休憩は？
+B	A minute. Enough to breathe, not enough to scroll your phone.	1分。息を整えるには十分、スマホを見るには足りない。
+A	Ha. Noted.	はは。了解。
+S	
+A	Thanks for showing me. I've been avoiding this machine for weeks.	教えてくれてありがとう。何週間もこのマシンを避けてました。
+B	Everyone does at first. It looks scarier than it is.	最初はみんなそうですよ。見た目ほど怖くないです。
+A	Okay, your turn. I'll wait.	じゃあ、あなたの番。待ちます。
+T	💪	筋トレの目標（体重・見た目）や成果を話す	健康	my goal is, I've put on, I've lost, I can see a difference, slowly but surely
+S	
+A	What's your goal with the gym? If you don't mind me asking.	ジムの目標は？ 聞いてもよければ。
+B	Not really about weight. I just want to be stronger. Carry my own shopping.	体重のことじゃないんだ。ただ強くなりたい。自分の買い物を自分で運べるように。
+A	That's a good goal.	いい目標だね。
+B	Six months ago I couldn't do a single push-up. Now I can do twelve.	半年前は腕立て伏せ1回もできなかった。今は12回できる。
+A	Twelve! That's a real change.	12回！ それは本当の変化だね。
+B	Slowly but surely. What about you?	ゆっくりだけど確実に。そっちは？
+S	
+A	I wanted to lose a bit. I've lost five kilos since March.	少し減らしたくて。3月から5キロ落ちた。
+B	That's great. Can you see a difference?	すごいね。違いは見える？
+A	In my face, mostly. My jeans fit again.	主に顔で。ジーンズがまた入るようになった。
+B	That's the best feeling.	それが一番いい気分だよね。
+A	It is. But honestly, I care less about the number now.	うん。でも正直、今は数字はあまり気にしなくなった。
+B	What do you care about?	何を気にしてる？
+A	Sleeping better. Having energy after work. That's the real result.	よく眠れること。仕事の後に元気があること。それが本当の成果。
+S	
+B	Funny how the goal changes once you start.	始めると目標が変わるって面白いよね。
+A	Completely. I came for the scales. I stayed for the sleep.	完全に。体重計のために来て、睡眠のために続けてる。
+T	🥤	プロテインや食事管理の話をする	健康	do you take protein, track what you eat, meal prep, cutting out, I'm not strict
+S	
+A	Do you take protein? After workouts?	プロテインは飲む？ トレーニングの後に。
+B	Yeah, a shake. Nothing fancy.	うん、シェイクを。特別なものじゃないけど。
+A	Does it actually help?	本当に効く？
+B	I think so. I recover faster. Less sore the next day.	効くと思う。回復が早い。翌日の筋肉痛が減る。
+A	I've been wondering whether to bother.	やるべきか迷ってたんだ。
+B	Try it for a month. If nothing changes, stop.	1か月試してみて。何も変わらなければやめればいい。
+S	
+A	Do you track what you eat?	食べたものを記録してる？
+B	I used to. It made me obsessive. Now I just meal prep on Sundays.	前はね。神経質になりすぎて。今は日曜に作り置きするだけ。
+A	What do you make?	何を作るの？
+B	Chicken, rice, vegetables. Five boxes. Same thing every day.	チキン、ご飯、野菜。5箱。毎日同じもの。
+A	Doesn't that get boring?	飽きない？
+B	Very. But it stops me eating rubbish at lunch.	かなり。でも昼に変なものを食べずに済む。
+A	I'm not strict at all. I just try not to eat crisps for dinner.	私は全然厳しくない。夕飯にポテチを食べないようにしてるだけ。
+B	That's a start. That's more than most people.	それも一歩だよ。ほとんどの人よりましだ。
+S	
+A	Are you cutting anything out?	何か抜いてる？
+B	Alcohol during the week. That made the biggest difference, honestly.	平日のお酒。正直、それが一番違いが出た。
+A	Hmm. That one's harder.	うーん。それは難しいな。
+B	Weekends are fine. Just not Tuesday.	週末はいいんだよ。火曜だけだめ。
+T	🤳	一緒に自撮りしようと誘う	雑談	let's take a selfie, get in, squeeze in, say cheese, one more
+S	
+A	Quick — let's take a selfie before the light goes.	早く、光がなくなる前に自撮りしよう。
+B	Ugh, I hate selfies.	うう、自撮りは嫌い。
+A	Everyone hates selfies. Get in.	みんな自撮りは嫌いだよ。入って。
+B	Fine. Where do I look?	わかった。どこを見ればいい？
+A	At the phone. Not at me. Squeeze in a bit.	スマホを。私じゃなくて。もう少し寄って。
+B	Like this?	こう？
+A	Perfect. Say cheese.	完璧。はい、チーズ。
+S	
+B	Let me see. Oh, that's not bad.	見せて。あ、悪くないね。
+A	Not bad? We look great.	悪くない？ 最高に写ってるよ。
+B	My eyes are half closed.	目が半分閉じてる。
+A	One more, then. Eyes open this time.	じゃあもう1枚。今度は目を開けて。
+B	Okay. Ready.	わかった。準備できた。
+A	Three, two, one.	3、2、1。
+B	That one's better. Send it to me.	そっちのほうがいい。送って。
+S	
+A	Sending. And I'm posting it.	送るね。それで投稿する。
+B	Only the good one.	いいほうだけね。
+A	Only the good one. I promise.	いいほうだけ。約束する。
+T	📐	自撮りの角度や写り方について話す	雑談	hold it higher, from above, my good side, the lighting, delete that
+S	
+A	Hold it higher. From above. It's more flattering.	もっと高く持って。上から。そのほうが映える。
+B	Why does that work?	なんでそれで良くなるの？
+A	Nobody knows. It just does. Everyone's better from above.	誰も知らない。ただ効くんだよ。みんな上からのほうがいい。
+B	And which side?	それで、どっち側？
+A	Left. That's your good side.	左。それがあなたのいい面。
+B	I have a good side?	いい面なんてあるの？
+A	Everyone has one. Yours is left. Trust me.	誰にでもある。あなたは左。信じて。
+S	
+B	What about the lighting?	光は？
+A	Face the window. Never have it behind you.	窓に向いて。後ろにしちゃだめ。
+B	Like this?	こう？
+A	Yes. See the difference? You look awake.	そう。違いがわかる？ 生き生きして見える。
+B	I look like a different person.	別人みたい。
+A	That's the trick. Same person, better light.	それがコツ。同じ人、いい光。
+S	
+B	Okay, what about this one from yesterday?	じゃあ、昨日のこれは？
+A	Delete that. Immediately.	消して。今すぐ。
+B	That bad?	そんなにひどい？
+A	Bottom angle, bad light, and you're mid-blink. Delete.	下からの角度、悪い光、しかも瞬きの途中。消して。
+B	Deleted. Harsh, but fair.	消した。厳しいけど、正しい。
+T	🛂	ビザやパスポートの有効期限を確認する	手続き	when does your passport expire, six months validity, renew, apply for a visa, before you travel
+S	
+A	Before you book, check your passport. When does it expire?	予約する前に、パスポートを確認して。有効期限はいつ？
+B	Hmm. Let me look... March next year.	えっと。見てみる… 来年の3月。
+A	And when's the trip?	旅行はいつ？
+B	October.	10月。
+A	That's only five months. Some countries need six months' validity.	それだと5か月しかない。国によっては6か月の有効期間が必要だよ。
+B	Really? I didn't know that.	本当？ 知らなかった。
+A	Check the rules for where you're going. It'd be awful to get turned away.	行き先のルールを確認して。入国を断られたら最悪だから。
+S	
+B	Should I just renew it now, to be safe?	念のため、今更新しておくべき？
+A	I would. It takes a few weeks anyway.	私ならそうする。どうせ数週間かかるし。
+B	And do I need a visa?	ビザは必要？
+A	Depends on the country. Some you can get on arrival, some you apply online.	国による。到着時に取れるところもあれば、オンラインで申請するところもある。
+B	I'll look tonight.	今夜調べる。
+A	Do it before you book anything. Not after.	何か予約する前にやって。後じゃなく。
+S	
+B	Thanks for checking. I'd have just turned up.	確認してくれてありがとう。何も考えずに行くところだった。
+A	That's what I'm here for. The boring, important stuff.	そのためにいるんだよ。退屈で、大事なこと。
+T	🛃	入国審査で滞在日数や宿泊先を聞かれた	旅行	how long are you staying, where will you be staying, address, return flight, enjoy your trip
+S	
+B	Good evening. How long are you staying in the country?	こんばんは。滞在期間はどのくらいですか？
+A	Two weeks. I fly back on the twenty-second.	2週間です。22日に帰ります。
+B	And where will you be staying?	滞在先はどちらですか？
+A	A hotel in the city for the first week, then with a friend.	最初の1週間は市内のホテルで、その後は友人のところに。
+B	Do you have the hotel address?	ホテルの住所はありますか？
+A	Yes, here's the booking confirmation.	はい、予約確認書です。
+B	And your friend's address?	ご友人の住所は？
+A	It's on my phone. One moment... here.	スマホに入っています。少々お待ちください… こちらです。
+S	
+B	What's the purpose of your visit?	滞在の目的は？
+A	Holiday. And to see my friend. We were at university together.	観光と、友人に会うためです。大学で一緒でした。
+B	Do you have a return ticket?	帰りの航空券はありますか？
+A	Yes, here it is.	はい、こちらです。
+B	And enough money for your stay?	滞在に十分なお金は？
+A	Yes. I have a card and some cash.	はい。カードと、現金も少し。
+S	
+B	All right. Everything looks fine.	わかりました。問題ありません。
+A	Thank you.	ありがとうございます。
+B	Enjoy your trip.	良い旅を。
+A	I will.	楽しみます。
+T	🧳	税関で申告するものがあるか聞かれた	旅行	anything to declare, nothing to declare, duty-free, over the limit, open your bag
+S	
+B	Do you have anything to declare?	申告するものはありますか？
+A	No, nothing to declare.	いいえ、ありません。
+B	Any alcohol, tobacco, food?	お酒、たばこ、食品は？
+A	One bottle of whisky from duty-free. That's within the limit, isn't it?	免税店で買ったウイスキーが1本。制限内ですよね？
+B	One litre is fine. Any food?	1リットルなら大丈夫です。食品は？
+A	Some packaged snacks. Sealed. Nothing fresh.	包装されたお菓子が少し。未開封で。生鮮品はありません。
+B	That's fine.	問題ありません。
+S	
+B	Could you open your bag for me, please?	カバンを開けていただけますか？
+A	Of course.	もちろんです。
+B	What's this?	これは何ですか？
+A	Green tea. A gift for my friend.	緑茶です。友人へのお土産で。
+B	Sealed?	未開封ですか？
+A	Yes. Straight from the shop.	はい。お店で買ったままです。
+B	All right. That's all fine.	わかりました。全部問題ありません。
+S	
+A	Thank you. Is that everything?	ありがとうございます。以上ですか？
+B	That's everything. Welcome.	以上です。ようこそ。
+A	Thanks. Have a good night.	ありがとう。良い夜を。
+T	🚌	空港から市内への行き方を聞く	旅行	how do I get to the city centre, the express train, shuttle bus, how much, how long does it take
+S	
+A	Excuse me, what's the best way to get to the city centre?	すみません、市内中心部への一番いい行き方は？
+B	The express train. It's the quickest. Thirty minutes.	急行電車です。一番速いです。30分。
+A	How much is it?	いくらですか？
+B	Fifteen. The bus is cheaper, but it takes an hour.	15です。バスは安いですが、1時間かかります。
+A	And a taxi?	タクシーは？
+B	Fifty, sixty. Depends on traffic.	50か60。渋滞次第です。
+A	Train it is. Where do I catch it?	じゃあ電車で。どこから乗れますか？
+B	Follow the signs for "Trains". Down the escalator, then left.	「電車」の表示に従ってください。エスカレーターを降りて、左です。
+S	
+A	Do I buy the ticket here or at the platform?	チケットはここで買いますか、ホームで買いますか？
+B	There's a machine at the platform. Or you can tap your card.	ホームに券売機があります。カードでタッチしても乗れますよ。
+A	Just tap? That's easy.	タッチするだけ？ 簡単ですね。
+B	Tap in here, tap out there. It works out the fare.	ここでタッチして、向こうでタッチ。運賃は自動計算です。
+A	Perfect. How often do they run?	完璧。どのくらいの頻度ですか？
+B	Every fifteen minutes.	15分おきです。
+S	
+A	Thank you so much. You've saved me a lot of guessing.	本当にありがとう。おかげで迷わずに済みます。
+B	Enjoy the city. It's a good time of year.	街を楽しんでください。いい季節ですよ。
+T	📶	現地SIMやWi-Fiレンタルを申し込む	旅行	pocket Wi-Fi, how many days, unlimited data, return it, deposit
+S	
+A	Hi, I'd like to rent a pocket Wi-Fi.	ポケットWi-Fiを借りたいのですが。
+B	Certainly. How many days?	かしこまりました。何日間ですか？
+A	Ten. I leave on the fifteenth.	10日間。15日に出発します。
+B	Ten days is sixty. Unlimited data.	10日間で60です。データ無制限。
+A	Does it work outside the city?	市外でも使えますか？
+B	Everywhere. Even in the mountains, mostly.	どこでも。山の中でもだいたい。
+A	How many devices can connect?	何台まで接続できますか？
+B	Up to five. Phones, laptops, whatever you need.	5台まで。スマホ、パソコン、何でも。
+S	
+A	And how do I return it?	返却はどうすれば？
+B	Here, or at the airport counter on your way out. Just drop it in the box.	ここか、帰りに空港カウンターで。ボックスに入れるだけです。
+A	Is there a deposit?	デポジットはありますか？
+B	We hold fifty on your card. Released when it's returned.	カードで50を仮押さえします。返却時に解除されます。
+A	That's fine. Let's do it.	わかりました。お願いします。
+S	
+B	Here you go. It's charged and ready. The password's on the back.	どうぞ。充電済みですぐ使えます。パスワードは裏面に。
+A	Perfect. Thanks.	完璧です。ありがとう。
+B	Charge it every night. It lasts about ten hours.	毎晩充電してください。10時間ほど持ちます。
+T	🏥	旅行保険で病院にかかる	健康	I have travel insurance, do I pay upfront, claim it back, policy number, keep the receipts
+S	
+A	Hi, I need to see a doctor. I have travel insurance.	医者に診てもらいたいのですが。旅行保険に入っています。
+B	Okay. Do you have your policy details?	わかりました。保険の詳細はお持ちですか？
+A	Yes, here's the card and the policy number.	はい、カードと証券番号です。
+B	Thank you. Do I pay upfront, or does the insurance cover it directly?	ありがとうございます。前払いですか、それとも保険が直接支払いますか？
+A	Sorry — that's my question. Do I pay now?	すみません、それは私の質問です。今払うんですか？
+B	Ah, yes. For a standard consultation, you pay now and claim it back.	ああ、はい。通常の診察なら、今支払って後で請求します。
+A	How much is that?	いくらですか？
+B	Eighty. Plus any tests.	80です。検査があれば追加で。
+S	
+A	Okay. And what do I need for the claim?	わかりました。請求には何が必要ですか？
+B	The receipt, the doctor's report, and the claim form from your insurer.	レシート、医師の診断書、それと保険会社の請求書です。
+A	Can you give me the report in English?	診断書は英語でもらえますか？
+B	Yes, we do that for tourists. No problem.	はい、観光客の方には対応しています。問題ありません。
+A	Great. I'll keep all the receipts.	よかった。レシートは全部取っておきます。
+S	
+B	The doctor will see you in about twenty minutes. Take a seat.	医師は20分ほどで診ます。お掛けください。
+A	Thank you. Sorry, one more — is there a pharmacy nearby, if I need medicine?	ありがとう。もう1つ、薬が必要な場合、近くに薬局はありますか？
+B	Right next door. They'll take the prescription.	すぐ隣です。処方箋を受け付けてくれます。
+T	💰	現地の物価が高い・安いと話す	旅行	everything's so cheap, twice the price, back home this would cost, you get used to it, worth it
+S	
+A	Everything's so cheap here! This whole meal was five pounds.	ここは何でも安いね！ この食事全部で5ポンド。
+B	I know. Back home this would cost twenty.	ほんと。自国なら20ポンドはする。
+A	And it's better.	しかも美味しい。
+B	Don't say that too loudly. They'll put the prices up.	あまり大きな声で言わないで。値上げされるから。
+A	I could live here on what I spend on lunch at home.	自国での昼食代で、ここでは暮らせるよ。
+B	People do. That's why there are so many expats.	実際そうしてる人はいる。だから外国人が多いんだ。
+S	
+B	The hotel's expensive, though. That surprised me.	でもホテルは高いね。それは驚いた。
+A	Tourist prices. The locals don't stay in hotels.	観光客向けの値段。地元の人はホテルに泊まらないから。
+B	True. And the taxi from the airport was twice what I expected.	たしかに。空港からのタクシーも予想の2倍だった。
+A	You paid tourist rate. There's a bus for a tenth of that.	観光客料金を払ったんだよ。バスなら10分の1で行ける。
+B	Now you tell me.	今さら言われても。
+S	
+A	Still. Cheap food, expensive beds. It balances out.	それでも。安い食事、高い宿。バランスが取れてる。
+B	I'll take that trade. The food's the point anyway.	その取引は受けるよ。どうせ食べ物が目的だし。
+T	😡	ぼったくりに遭ったと感じた	トラブル	I think I got ripped off, that can't be right, the meter wasn't on, I'm not paying that, lesson learnt
+S	
+A	That was forty. For a ten-minute ride. I think I got ripped off.	40だった。10分の乗車で。ぼったくられたと思う。
+B	Forty? That can't be right. It should be about twelve.	40？ それはおかしい。12くらいのはずだよ。
+A	The meter wasn't on. I noticed halfway and he said it was broken.	メーターがついてなかった。途中で気づいたら、壊れてるって言われた。
+B	Classic. Did you pay?	典型的だね。払った？
+A	I paid. I didn't want an argument in the dark.	払った。暗い中で言い争いたくなくて。
+B	Understandable. But that's the trick — they count on that.	わかるよ。でもそれが手口なんだ。それを見越してる。
+S	
+A	What should I have done?	どうすればよかった？
+B	Agreed a price before getting in. Or insisted on the meter. Or got out.	乗る前に料金を決める。メーターを使わせる。それか降りる。
+A	I didn't know any of that.	全部知らなかった。
+B	Now you do. Lesson learnt.	今は知ってるね。教訓になった。
+A	An expensive lesson.	高い教訓だった。
+B	Thirty pounds. Could be worse. Some people lose hundreds.	30ポンド。まだましだよ。何百も失う人もいる。
+S	
+A	Next time I'm using the app. Fixed price, no arguments.	次はアプリを使う。固定料金で、言い争いなし。
+B	Smart. And if a driver says the meter's broken, just say "then I'll find another taxi".	賢明だね。それとメーターが壊れてるって言われたら、「じゃあ別のタクシーを探します」って言えばいい。
+A	"Then I'll find another taxi." Got it.	「じゃあ別のタクシーを探します」。覚えた。
+T	🌃	現地の治安や夜出歩いていい場所を聞く	旅行	is it safe to walk around at night, which areas should I avoid, stick to, keep your bag, common sense
+S	
+A	Is it safe to walk around here at night?	夜、この辺りを歩いても安全ですか？
+B	The centre, yes. It's busy till late. Well lit.	中心部なら。遅くまで人が多いです。明るいし。
+A	Any areas I should avoid?	避けたほうがいい場所は？
+B	The area behind the station, after dark. Nothing terrible, but not worth it.	暗くなってからの駅裏。ひどいことはないけど、行く価値もない。
+A	Okay. And what about the old town?	わかりました。旧市街は？
+B	Lovely at night. Lots of bars, lots of people. Just keep your bag in front of you.	夜は素敵ですよ。バーも人もたくさん。カバンは前に持ってください。
+A	Pickpockets?	スリ？
+B	A few. Common sense, that's all. Same as any city.	少しは。常識で大丈夫。どの街も同じです。
+S	
+A	How late do the trains run?	電車は何時まで？
+B	Midnight. After that, taxis. Use the app, not the street.	0時まで。その後はタクシー。流しじゃなくてアプリで。
+A	Good to know. I got stung by a street taxi last night.	覚えておきます。昨夜、流しのタクシーでやられました。
+B	Ah. Yes. Sorry about that. It happens.	ああ。そうですか。それは残念。よくあることです。
+A	Lesson learnt.	教訓になりました。
+S	
+B	Honestly, it's a safe city. Just don't do anything you wouldn't do at home.	正直、安全な街ですよ。自国でしないことをしなければ大丈夫。
+A	That's fair. Thanks for the honest answer.	なるほど。正直に答えてくれてありがとう。
+B	Enjoy the old town. Try the bar with the green door.	旧市街を楽しんでください。緑のドアのバーに行ってみて。
+T	🛍	帰国前にお土産や免税手続きをする	旅行	tax refund, where do I get the form, show my passport, at the airport, before check-in
+S	
+A	Hi, I'd like to claim the tax refund on this. Is that possible?	これの免税手続きをしたいのですが、できますか？
+B	Yes. Is it over the minimum? Fifty?	はい。最低額を超えていますか？ 50？
+A	It's eighty.	80です。
+B	Then yes. Can I see your passport?	では大丈夫です。パスポートを拝見できますか？
+A	Here.	どうぞ。
+B	Thank you. I'll fill in the form. You'll need to show it at the airport.	ありがとうございます。書類を作成します。空港で提示が必要です。
+A	Where at the airport?	空港のどこで？
+B	The customs desk. Before check-in. They stamp it, then you get the refund.	税関のカウンター。チェックイン前に。そこで印を押してもらって、返金されます。
+S	
+A	Do I need to show the actual item?	実際の商品を見せる必要はありますか？
+B	Sometimes. Keep it in your hand luggage, just in case.	時々。念のため手荷物に入れておいてください。
+A	And how do I get the money?	返金はどうやって受け取れますか？
+B	Cash at the desk, or back on your card. Card takes a few weeks.	カウンターで現金か、カードへの返金。カードは数週間かかります。
+A	Cash, then.	じゃあ現金で。
+B	Sensible. Here's the form. Don't lose it.	賢明ですね。書類です。なくさないように。
+S	
+A	Thanks for your help. Oh, and could you wrap this? It's a gift.	ありがとうございます。あと、これを包んでもらえますか？ プレゼントなので。
+B	Of course. Give me two minutes.	もちろんです。2分ください。
+T	🗾	日本のどこがおすすめか聞かれた	文化	if you're going to Japan, skip, off the beaten track, my favourite place, you have to
+S	
+B	I'm going to Japan next spring. Where should I go?	来春、日本に行くんだ。どこに行くべき？
+A	How long have you got?	どのくらいの期間？
+B	Two weeks.	2週間。
+A	Okay. Tokyo and Kyoto, obviously. But don't spend all your time there.	じゃあ。東京と京都は当然。でもそこに全部使わないで。
+B	Where else?	他には？
+A	Kanazawa. Smaller, quieter, incredible food. It's my favourite place.	金沢。小さくて、静かで、食べ物が素晴らしい。一番好きな場所。
+B	I've never heard of it.	聞いたことない。
+A	Exactly. That's why you should go.	だからこそ。行くべき理由はそれ。
+S	
+B	What about the mountains?	山は？
+A	If you can, do a night in a ryokan. A traditional inn. Hot spring, dinner in your room.	できれば旅館に1泊して。伝統的な宿。温泉と、部屋での夕食。
+B	That sounds expensive.	高そうだね。
+A	It can be. But one night is worth it. You'll remember it forever.	高いこともある。でも1泊なら価値がある。一生忘れないよ。
+B	Okay. Kanazawa and a ryokan. What should I skip?	わかった。金沢と旅館。飛ばすべきところは？
+A	The really touristy shrines in Kyoto at midday. Go at seven a.m. instead.	京都の観光客だらけの神社を昼間に行くこと。代わりに朝7時に行って。
+S	
+B	Will you write this down for me?	書いてくれる？
+A	I'll do better. I'll send you a map with everything marked.	もっといいことをするよ。全部印をつけた地図を送る。
+B	You're the best.	最高だね。
+A	And eat everything. Even if you don't know what it is.	それと、何でも食べて。何かわからなくても。
+T	💴	日本の物価や生活費について聞かれた	文化	is it expensive, rent, eating out is, cheaper than you'd think, it depends where
+S	
+B	Is Japan expensive to live in? I've heard mixed things.	日本の生活費は高い？ いろんなことを聞くから。
+A	It depends where. Tokyo, yes. A smaller city, not really.	場所による。東京は高い。小さい街なら、そうでもない。
+B	What's rent like?	家賃はどのくらい？
+A	Tokyo, a small flat is maybe a thousand a month. Outside, half that.	東京だと小さい部屋で月1000くらい。地方ならその半分。
+B	That's cheaper than here.	ここより安いね。
+A	The flats are smaller, though. Much smaller.	でも部屋は狭い。ずっと狭い。
+S	
+B	And eating out?	外食は？
+A	That's the surprise. Eating out is cheap. A proper lunch for seven or eight.	そこが驚きなんだ。外食は安い。ちゃんとした昼食が7か8。
+B	Seven?	7？
+A	Good food, too. Not fast food. Sit-down places.	しかも美味しい。ファストフードじゃなくて。座って食べる店。
+B	That's cheaper than I'd think.	思ったより安いね。
+A	But fruit is expensive. A melon can cost twenty.	でも果物は高い。メロンが20することもある。
+B	Twenty! For a melon?	20！ メロン1個で？
+A	A fancy one. Regular ones are less. But still.	高級なやつはね。普通のはもっと安い。それでも高いけど。
+S	
+B	So cheap food, expensive fruit, small flats.	安い食事、高い果物、狭い部屋。
+A	That's Japan in one sentence. Roughly.	それが一言で言った日本。だいたいね。
+B	I could manage that.	それなら何とかなりそう。
+A	Most people can. Just don't buy the melon.	ほとんどの人はね。ただ、メロンは買わないで。
 """#
 }
