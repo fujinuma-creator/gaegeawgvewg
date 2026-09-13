@@ -42684,5 +42684,438 @@ S
 A	Thank you. We should have asked you a week ago.	ありがとう。1週間前に聞くべきだった。
 B	Yes. You should. Next time, come to me on day one.	そうだね。次は初日に来て。
 A	Deal. Countryside with city nights. Sam's going to love it.	決まり。田舎で、夜は街。サムも気に入るよ。
+T	🔍	喧嘩の原因を冷静に振り返る	人間関係	what actually happened, looking back, the real issue was, we both, next time
+S	
+A	Can we talk about Saturday? Calmly, this time.	土曜のこと、話せる？ 今度は冷静に。
+B	Yes. I've been thinking about it too.	うん。私も考えてた。
+A	Looking back, what actually started it? I genuinely can't remember.	振り返ると、何が発端だった？ 本当に思い出せない。
+B	You said the kitchen was a mess. I said I'd been working all day.	あなたがキッチンが散らかってるって言った。私は一日中働いてたって言った。
+A	And then it wasn't about the kitchen anymore.	それで、もうキッチンの話じゃなくなった。
+B	No. It was about everything. Every small thing from the last month.	うん。全部のことになった。この1か月の小さなこと全部。
+A	That's the pattern, isn't it? Small thing, then everything.	それがパターンだよね。小さなことから、全部に。
+S	
+B	I think the real issue was that we hadn't talked properly in weeks.	本当の問題は、何週間もちゃんと話してなかったことだと思う。
+A	Both of us busy. Both of us tired. The kitchen was just the spark.	2人とも忙しくて、疲れてた。キッチンはただのきっかけ。
+B	So we both let it build up.	じゃあ2人とも溜め込んでたんだね。
+A	We did. That's on both of us.	そう。2人の責任だ。
+B	Next time, can we say something when it's still small?	次は、まだ小さいうちに言い合える？
+A	Yes. Even if it feels petty. Especially if it feels petty.	うん。些細に感じても。特に些細に感じる時こそ。
+S	
+B	Okay. And I'll clean the kitchen.	わかった。それとキッチンは片付ける。
+A	And I'll stop keeping score.	私は貸し借りを数えるのをやめる。
+B	Deal. This was a better conversation than Saturday.	決まり。土曜よりずっといい会話だった。
+A	Much better. No shouting.	ずっといい。叫ばずに。
+T	🏙	都会と田舎どちらが住みやすいか討論する	雑談	city or countryside, the pace, everything's on your doorstep, peace and quiet, you'd go mad
+S	
+A	City or countryside? Where would you actually live?	都会と田舎、どっちに本当に住みたい？
+B	City. No question. Everything's on your doorstep.	都会。迷いなく。何でもすぐそこにある。
+A	But the noise. The crowds. The rent.	でも騒音。人混み。家賃。
+B	The restaurants. The people. The trains that come every three minutes.	レストラン。人々。3分おきに来る電車。
+A	You can't see the stars.	星が見えないよ。
+B	I can see a bar from my window. That's my stars.	窓からバーが見える。それが私の星。
+S	
+A	I'd go countryside. Peace and quiet. Space.	私は田舎。静かで穏やか。広さ。
+B	You'd go mad in a month.	1か月で気が狂うよ。
+A	I'd go mad happily. With a garden.	幸せに気が狂うよ。庭つきで。
+B	What about work?	仕事は？
+A	Remote. Two days in the city, five in the fields.	リモート。2日は都会、5日は野原。
+B	That's not countryside. That's commuting.	それは田舎じゃない。通勤だよ。
+A	It's the best of both.	両方のいいとこ取りだよ。
+S	
+B	Fine. Let's compromise. A town.	わかった。妥協しよう。地方都市。
+A	A town? That's nobody's dream.	地方都市？ それは誰の夢でもない。
+B	Exactly. Nobody's happy. That's what compromise means.	そう。誰も幸せじゃない。それが妥協ってことだよ。
+A	Ha. City for you, fields for me. We'll visit.	はは。あなたは都会、私は野原。お互い訪ね合おう。
+T	🏠	リモートワークと出社どちらがいいか討論する	仕事	remote or office, the commute, I get more done, you lose something, hybrid
+S	
+A	Honestly, do you prefer remote or the office?	正直、リモートと出社、どっちがいい？
+B	Remote. I get twice as much done. No interruptions.	リモート。作業量が2倍。邪魔が入らない。
+A	But don't you miss people?	でも人が恋しくない？
+B	I miss some people. I don't miss the commute.	一部の人は。通勤は恋しくない。
+A	I think you lose something, though. The random conversations.	でも失うものもあると思う。偶然の会話とか。
+B	Random conversations are how I lose an hour a day.	偶然の会話で、1日1時間失ってるんだよ。
+A	That hour is where the good ideas come from.	その1時間からいいアイデアが生まれるんだ。
+B	Some of them. Most of them are about someone's holiday.	一部はね。ほとんどは誰かの休暇の話だけど。
+S	
+A	What about new people? How do they learn if nobody's around?	新人は？ 周りに誰もいなかったら、どうやって学ぶの？
+B	That's fair. That's the one thing remote does badly.	それはもっともだね。リモートが苦手な唯一のこと。
+A	And you can't read a room over a screen.	それに、画面越しでは場の空気が読めない。
+B	You can. It's just harder.	読めるよ。難しいだけで。
+A	Harder is the point.	難しいってことが問題なんだよ。
+S	
+B	Okay, hybrid. Two days in, three days home.	じゃあハイブリッド。出社2日、在宅3日。
+A	Which two days?	どの2日？
+B	Whichever days you're in. That's the whole point.	あなたが出社する日。それが肝心なところ。
+A	That's the nicest thing you've said about the office.	オフィスについて、今まで一番いいこと言ったね。
+T	💍	早く結婚するか遅く結婚するかを討論する	雑談	marry young or wait, you grow together, you should know yourself first, there's no right age, my parents
+S	
+A	Do you think it's better to marry young or wait?	若くして結婚するのと、待つのと、どっちがいいと思う？
+B	Wait. You should know yourself first.	待つ。まず自分を知るべきだよ。
+A	But my parents married at twenty-two. Forty years later, still happy.	でも両親は22歳で結婚した。40年経っても、まだ幸せ。
+B	That's luck. Or they grew together.	それは運。それか、一緒に成長したんだ。
+A	That's the argument for young. You grow together instead of apart.	それが若くして結婚する論拠だよ。別々にじゃなく、一緒に成長する。
+B	Or you grow apart and realise you married a stranger.	それか、別々に成長して、他人と結婚したことに気づく。
+A	That happens at any age.	それはどの年齢でも起こるよ。
+S	
+B	I just think at twenty-two, I'd have picked the wrong person.	ただ、22歳の私なら、間違った人を選んでたと思う。
+A	Who would you have picked?	誰を選んでた？
+B	Someone exciting. Someone unreliable. Now I'd pick someone kind.	刺激的な人。頼りにならない人。今なら優しい人を選ぶ。
+A	That's a good point, actually.	それは実はいい指摘だね。
+B	Waiting isn't about being sure. It's about knowing what to look for.	待つのは確信を持つためじゃない。何を探すべきか知るためだよ。
+A	So there's no right age. Just a right person.	じゃあ正しい年齢はない。正しい人がいるだけ。
+S	
+B	That's a nicer way to put it.	いい言い方だね。
+A	Whenever you find them.	見つかった時に。
+B	Whenever. No rush. My mum disagrees.	いつでも。急がなくていい。母は納得しないけど。
+A	Mums always do.	母親ってそういうものだよね。
+T	⚖️	お金と自由な時間どちらを優先するか討論する	深い話	would you take the promotion, more money less life, what's the money for, you can't buy back, I'd take it
+S	
+A	Real question. They've offered me the promotion. Twenty percent more, but fifty-hour weeks.	真面目な質問。昇進のオファーをもらった。給料は20%増、でも週50時間労働。
+B	Would you take it?	受ける？
+A	I don't know. That's why I'm asking you.	わからない。だから聞いてるんだ。
+B	Honestly? I'd take it. For a few years. Then step back.	正直？ 私なら受ける。数年間。それから引く。
+A	That's what everyone says. Then they never step back.	みんなそう言う。それで結局引かない。
+B	Fair. But what's the money for? What would you do with it?	たしかに。でもそのお金は何のため？ 何に使う？
+A	Pay off the flat faster. Travel more.	家のローンを早く返す。もっと旅行する。
+B	Travel more, with less time to travel.	旅行する時間が減るのに、もっと旅行する。
+A	...When you put it like that.	…そう言われると。
+S	
+B	Here's my view. You can always earn more money. You can't buy back your thirties.	私の考えはこう。お金はいつでも稼げる。でも30代は買い戻せない。
+A	But money buys options. Later.	でもお金は選択肢を買える。後で。
+B	Later is a dangerous word.	「後で」は危険な言葉だよ。
+A	So you'd say no?	じゃあ断るべき？
+B	I'd ask for the money without the hours. See what they say.	時間を増やさずに給料だけ上げてもらう。どう答えるか見てみる。
+A	That's bold.	大胆だね。
+B	The worst they can say is no. Then you're where you are now.	最悪でも断られるだけ。今と同じ状態に戻るだけ。
+S	
+A	Okay. I'll ask. Ten percent, same hours.	わかった。聞いてみる。10%増、同じ労働時間で。
+B	Now you're negotiating.	交渉してるね。
+A	Whatever happens, thanks. I needed someone who'd argue back.	どうなっても、ありがとう。反論してくれる人が必要だった。
+T	📱	SNSは人生にプラスかマイナスかを討論する	雑談	is social media good or bad, connected but lonely, I've cut back, it depends how you use it, on balance
+S	
+A	Social media. Net good or net bad?	SNS。全体としてプラス？ マイナス？
+B	Bad. I've cut back and I'm happier.	マイナス。減らしたら幸せになった。
+A	But you found your flat through it. And half your friends.	でも家はそれで見つけたでしょ。友達の半分も。
+B	That's true. So it's useful. Useful isn't the same as good.	たしかに。役には立つ。でも役に立つのと良いのは違う。
+A	What's the difference?	何が違うの？
+B	Useful is a tool. Good is something that makes your life better on balance.	役に立つのは道具。良いのは、総合的に人生を良くするもの。
+A	And on balance?	それで総合的には？
+B	Connected but lonely. That's what it gave me.	繋がってるけど孤独。それが私が得たもの。
+S	
+A	I think it depends how you use it. I only follow people I actually know.	使い方によると思う。私は本当に知ってる人しかフォローしてない。
+B	No strangers?	知らない人はなし？
+A	None. No influencers, no news. Just friends and family.	なし。インフルエンサーも、ニュースも。友達と家族だけ。
+B	That sounds almost healthy.	それはほぼ健全だね。
+A	It is. Twenty minutes a day. Then I put it down.	そう。1日20分。それで置く。
+B	Twenty minutes. I was doing three hours.	20分。私は3時間だった。
+A	Three hours would make anyone lonely.	3時間なら誰でも孤独になるよ。
+S	
+B	So it's not the thing. It's the dose.	じゃあ物自体じゃなくて、量なんだね。
+A	Like everything. Like coffee.	何でもそう。コーヒーと同じ。
+B	Everything's like coffee with you.	あなたにとっては何でもコーヒーだね。
+A	Coffee is a good model for life.	コーヒーは人生のいいモデルだよ。
+T	🗣	自分の発音が通じているか確認する	学び	am I saying that right, did that make sense, can you understand me, my accent, say it back to me
+S	
+A	Can I check something? Am I saying "comfortable" right?	ちょっと確認していい？「comfortable」の発音、合ってる？
+B	Say it again.	もう一回言ってみて。
+A	Com-for-ta-ble.	コム・フォー・タ・ブル。
+B	Almost. It's more like "comf-tuh-bul". Three sounds, not four.	惜しい。「カンフタブル」に近い。4つじゃなくて3つの音。
+A	Comf-tuh-bul.	カンフタブル。
+B	Better. Nobody says the "or".	良くなった。誰も「or」は言わないんだ。
+A	That's the thing about English. Half the letters are decoration.	英語ってそういうところがある。文字の半分は飾り。
+B	Pretty much.	ほぼそうだね。
+S	
+A	And can people generally understand me? Be honest.	それと、私の英語は一般的に通じてる？ 正直に。
+B	Yes. Completely. Your accent's there, but it's clear.	うん。完全に。訛りはあるけど、明瞭だよ。
+A	My accent's there.	訛りはある、と。
+B	Everyone has an accent. Mine's there too. It's not a problem.	誰にでも訛りはある。私にもある。問題じゃない。
+A	Sometimes people ask me to repeat things.	時々、繰り返してって言われる。
+B	That's usually them, not you. People don't listen properly.	それはだいたい相手の問題で、あなたじゃない。みんなちゃんと聞いてないんだ。
+S	
+A	Say "comfortable" back to me. So I can hear it properly.	「comfortable」をもう一度言って。ちゃんと聞きたいから。
+B	Comfortable.	カンフタブル。
+A	Comfortable. Okay. I'll practise on the train.	カンフタブル。わかった。電車で練習する。
+B	Quietly. People will stare.	静かにね。じろじろ見られるから。
+T	🔤	発音しにくい単語を練習する	学び	I can never say, tongue twister, the hardest word, break it down, nailed it
+S	
+A	What's the hardest English word for you?	一番発音が難しい英単語は？
+B	"Squirrel". I physically cannot say it.	「squirrel」。物理的に言えない。
+A	Squirrel.	スクワラル。
+B	See? You did it. I say "skwee-rel". Like a broken bird.	ほら。できてる。私は「スクウィーレル」になる。壊れた鳥みたい。
+A	Break it down. "Skwuh" and then "rul". Two parts.	分解して。「スクウ」と「ラル」。2つの部分。
+B	Skwuh... rul. Skwuh-rul.	スクウ… ラル。スクウ・ラル。
+A	That's it! Faster.	それ！ もっと速く。
+B	Squirrel.	スクワラル。
+A	Nailed it.	完璧。
+S	
+B	Okay, yours. What can you never say?	じゃあ、そっちは？ 何が言えない？
+A	"Rural". And "world". The R and L together.	「rural」。それと「world」。RとLが一緒になるやつ。
+B	Try "world".	「world」を言ってみて。
+A	Wor-uld.	ウォー・ウルド。
+B	Close. Don't add the extra sound. "Wurld". One syllable.	惜しい。余計な音を足さないで。「ワールド」。1音節。
+A	Wurld.	ワールド。
+B	Perfect. Now "rural".	完璧。次は「rural」。
+A	...Roo-ral. No. I can't.	…ルー・ラル。だめ。無理。
+B	Nobody can. Even native speakers avoid that word.	誰もできないよ。ネイティブでもその単語は避ける。
+S	
+A	So we're even. You've got squirrel, I've got rural.	じゃあおあいこだね。あなたはsquirrel、私はrural。
+B	We'll never be able to describe a countryside squirrel.	田舎のリスについては、永遠に説明できないね。
+A	We'll just point.	指差せばいい。
+T	🎙	相手のアクセントを褒める・出身を聞く	人間関係	I love your accent, where's it from, I can't place it, you sound, it's softened
+S	
+A	I love your accent. Where's it from?	素敵なアクセントですね。どちらの出身ですか？
+B	Ha, thanks. Glasgow, originally.	はは、ありがとう。もともとはグラスゴーです。
+A	Scottish! I couldn't place it.	スコットランド！ どこだかわかりませんでした。
+B	It's softened. Fifteen years down south. My family says I sound English now.	柔らかくなったんです。南に来て15年。家族には今はイングランド人みたいだって言われます。
+A	It doesn't sound English to me.	私にはイングランド人には聞こえませんよ。
+B	Good. I'd hate that.	よかった。それは嫌なので。
+S	
+A	What does it sound like at home? When you go back?	地元に帰ると、どんな感じになるんですか？
+B	Completely different. Thicker, faster. My partner can't understand my mum.	全く別物。濃くて、速くて。パートナーは母の言うことが理解できません。
+A	Ha! Does she mind?	はは！ 気にしてます？
+B	She nods a lot. It works.	よく頷いてます。それでうまくいってる。
+A	And what do I sound like to you?	私はあなたにはどう聞こえます？
+B	Japanese, but clear. And you've picked up "cheers". That's very British.	日本人だけど、明瞭。それに「cheers」を覚えましたね。すごくイギリス的。
+A	I say it too much now.	今は言いすぎてるくらいです。
+S	
+B	Everyone does. It's the first thing you catch.	みんなそうですよ。最初に移るものです。
+A	Accents are the best part of meeting people.	アクセントって、人と出会う時の一番いい部分ですね。
+B	They're a map of where you've been.	どこにいたかの地図みたいなものですから。
+T	👮	警察に呼び止められて身分証を求められた	トラブル	can I see some ID, what's this about, I'm a tourist, is there a problem, am I free to go
+S	
+B	Excuse me, sir. Could I see some ID, please?	すみません。身分証を見せていただけますか？
+A	Of course. Is there a problem?	もちろんです。何か問題がありましたか？
+B	Routine check. Do you have a passport or a driving licence?	定期的な確認です。パスポートか運転免許証はお持ちですか？
+A	I have my passport. Here.	パスポートがあります。どうぞ。
+B	Thank you. You're a tourist?	ありがとうございます。観光客ですか？
+A	Yes. I've been here a week. I'm staying at the Grand Hotel.	はい。1週間滞在しています。グランドホテルに泊まっています。
+S	
+B	What are you doing in this area tonight?	今夜、この辺りで何を？
+A	Walking back from dinner. The restaurant on Bridge Street.	夕食からの帰りです。ブリッジ通りのレストラン。
+B	Alone?	一人で？
+A	Yes. My friend went home earlier.	はい。友人は先に帰りました。
+B	Okay. Everything looks in order.	わかりました。問題ないようです。
+A	Can I ask what this is about?	何のための確認か、伺ってもいいですか？
+B	There was a report nearby. We're checking the area. Nothing to do with you.	近くで通報がありまして。周辺を確認しています。あなたとは関係ありません。
+S	
+A	Am I free to go?	行ってもいいですか？
+B	You are. Thank you for your cooperation. Get back safely.	はい。ご協力ありがとうございました。気をつけてお帰りください。
+A	Thank you. Good night.	ありがとうございます。おやすみなさい。
+T	😨	知り合いが逮捕されたと聞いた	トラブル	did you hear, what did he do, I can't believe it, innocent until proven, what can we do
+S	
+A	Did you hear about Tom? He's been arrested.	トムのこと聞いた？ 逮捕されたって。
+B	What? Tom from the office?	え？ オフィスのトム？
+A	Yes. Last night. Sam told me this morning.	うん。昨夜。今朝サムから聞いた。
+B	What did he do?	何をしたの？
+A	Nobody knows exactly. Something about a fight outside a bar.	正確には誰も知らない。バーの外での喧嘩がどうとか。
+B	Tom? He's the calmest person I know.	トムが？ 私が知ってる中で一番穏やかな人なのに。
+A	I know. I can't believe it either.	わかってる。私も信じられない。
+S	
+B	Let's not jump to conclusions. We don't know what happened.	結論を急がないようにしよう。何があったかわからないんだから。
+A	You're right. Innocent until proven otherwise.	そうだね。証明されるまでは無実。
+B	Maybe he was defending someone. Maybe he was in the wrong place.	誰かを守ってたのかもしれない。たまたま居合わせただけかもしれない。
+A	Or maybe he did something stupid. People do.	それか、ばかなことをしたのかも。人間だから。
+B	Either way, he's still Tom.	どちらにしても、トムはトムだよ。
+A	Yeah. He is.	うん。そうだね。
+S	
+B	What can we do?	何かできることは？
+A	Not much yet. His sister's with him. I'll message her.	今はあまり。お姉さんが一緒にいる。連絡してみる。
+B	Let her know we're here. If he needs anything.	私たちがいるって伝えて。何か必要なら。
+A	I will. And let's not gossip about it at work.	そうする。それと、職場で噂話はしないようにしよう。
+B	Agreed. Whatever happened, he doesn't need that.	賛成。何があったにせよ、それは必要ないから。
+T	📄	契約書の内容を確認・質問する	手続き	before I sign, what does this clause mean, is this standard, can I have that in writing, I'd like to read it properly
+S	
+A	Before I sign, can I ask a few questions?	署名する前に、いくつか質問してもいいですか？
+B	Of course. Take your time.	もちろんです。ごゆっくり。
+A	This clause here — "the company may amend terms with thirty days' notice". What does that actually mean?	この条項、「会社は30日前の通知で条件を変更できる」。これは実際どういう意味ですか？
+B	It means if the price or terms change, we tell you a month before. You can cancel if you don't like it.	価格や条件が変わる場合、1か月前にお知らせします。気に入らなければ解約できます。
+A	Any change at all?	どんな変更でも？
+B	Any change. It's standard for this kind of contract.	どんな変更でも。この種の契約では標準的です。
+A	And I can cancel without a fee?	解約に手数料はかかりませんか？
+B	If it's because of a change we made, yes. No fee.	こちらの変更が理由なら、はい。手数料はありません。
+S	
+A	Can I have that in writing? The no-fee part?	それを書面でもらえますか？ 手数料なしの部分。
+B	It's in section eight. But I can highlight it for you.	第8条にあります。でも印をつけておきますね。
+A	Please. And this bit about "reasonable use" — who decides what's reasonable?	お願いします。それと「合理的な利用」の部分、何が合理的かは誰が決めるんですか？
+B	We do, but there's a definition on page four. It's quite generous.	当社ですが、4ページに定義があります。かなり寛容な内容です。
+A	I'd like to read that properly before I sign. Can I take it home?	署名する前にちゃんと読みたいです。持ち帰ってもいいですか？
+B	Absolutely. There's no rush.	もちろんです。急ぐことはありません。
+S	
+A	Thank you for being patient with the questions.	質問に辛抱強く答えてくれてありがとう。
+B	Not at all. I'd rather you understood it than signed it blind.	とんでもない。よくわからずに署名されるより、理解してもらうほうがいいです。
+A	I'll come back Thursday.	木曜に戻ってきます。
+T	⚖️	その国で合法か違法かを確認する	手続き	is that allowed here, is it legal to, I don't want to break any rules, what's the law on, better to ask
+S	
+A	Quick question — is it legal to drink in the park here?	ちょっと質問。ここの公園でお酒を飲むのは合法ですか？
+B	Depends on the park. Most, yes. Some have signs saying no.	公園によります。ほとんどは大丈夫。禁止の看板がある場所もありますが。
+A	And on the street?	路上では？
+B	Technically not. But nobody's bothered unless you're causing trouble.	厳密には違法。でも問題を起こさなければ誰も気にしません。
+A	I'd rather not risk it. I don't want to break any rules as a visitor.	リスクは避けたいです。訪問者としてルールは破りたくないので。
+B	Sensible. The park's fine. Just take your bottles with you.	賢明ですね。公園は大丈夫。瓶は持ち帰ってください。
+S	
+A	Another one. Jaywalking. Is that a thing here?	もう1つ。信号無視の横断。ここでは問題になりますか？
+B	It's illegal, yes. And they do fine people in the city centre.	違法です。市の中心部では実際に罰金を取られます。
+A	How much?	いくら？
+B	Fifty. It's rare, but it happens.	50。稀ですが、あります。
+A	Wait for the green man, then.	じゃあ青信号を待ちます。
+B	Better to ask than to find out the hard way.	痛い目を見るより、聞いておくほうがいいですね。
+S	
+A	Anything else that surprises visitors?	他に訪問者が驚くことは？
+B	Not tipping is fine. Some people feel guilty about that.	チップを払わなくても大丈夫です。罪悪感を持つ人もいますが。
+A	Really? That's a relief.	本当に？ それは安心しました。
+B	Save your money for the park. Legally.	お金は公園のために取っておいてください。合法的に。
+T	👩‍⚖️	弁護士に相談したいと伝える	手続き	I need legal advice, before I do anything, is there a fee for a consultation, my situation is, what are my options
+S	
+A	Hi, I'd like to speak to a lawyer. I need some advice before I do anything.	弁護士と話したいのですが。何かする前に助言が必要で。
+B	Of course. What's the matter about?	承知しました。どのような件ですか？
+A	A dispute with my landlord. He's keeping my deposit and I don't think he's allowed to.	大家との争いです。敷金を返してくれなくて、それは許されないと思うんです。
+B	That's a common one. We can help. Is there a fee for the first meeting?	よくあるケースです。お手伝いできます。初回の相談料はかかるか、ですね？
+A	Yes, that's my question.	はい、それが聞きたかったことです。
+B	The first thirty minutes are free. After that, we'll tell you the cost before continuing.	最初の30分は無料です。その後は、続ける前に費用をお伝えします。
+A	That's fair.	それなら安心です。
+S	
+B	What's your situation, briefly?	状況を簡単に教えてください。
+A	I moved out in March. The flat was clean. He says there's damage, but there are no photos.	3月に退去しました。部屋はきれいでした。損傷があると言われましたが、写真はありません。
+B	Did you take photos yourself?	ご自身で写真は撮りましたか？
+A	Yes. Before and after. And I have the inventory from when I moved in.	はい。入居前と退去後。入居時の備品リストもあります。
+B	Then you're in a strong position. Bring all of that.	それなら有利な立場です。全部持ってきてください。
+A	What are my options?	選択肢は何がありますか？
+B	A formal letter first. Most landlords back down at that point. If not, the tribunal.	まず正式な書面。ほとんどの大家はそこで引き下がります。だめなら審判所へ。
+S	
+A	Can I book a time this week?	今週、予約できますか？
+B	Thursday at ten?	木曜の10時は？
+A	Perfect. Thank you.	完璧です。ありがとう。
+B	Bring the photos. They'll do most of the talking.	写真を持ってきてください。それがほぼ全てを語ります。
+T	🎍	自分の国の伝統行事や祝い方を紹介する	文化	we celebrate, the whole family, traditional food, it goes on for days, my favourite part
+S	
+A	New Year's the big one in Japan. Bigger than Christmas.	日本では正月が一番大きいんだ。クリスマスより。
+B	What do you do?	何をするの？
+A	The whole family goes to my grandparents'. We eat special food, visit a shrine, and mostly sleep.	家族全員で祖父母の家に行く。特別な料理を食べて、神社に行って、あとはほとんど寝てる。
+B	Sleep?	寝る？
+A	It's the one time nobody works. It goes on for three days.	誰も働かない唯一の時期なんだ。3日間続く。
+B	What's the special food?	特別な料理って？
+A	Osechi. Dozens of little dishes in boxes. Each one means something. Long life, good luck.	おせち。重箱に入った何十種類もの小さな料理。それぞれに意味がある。長寿、幸運。
+B	That sounds beautiful.	素敵だね。
+A	It is. And it takes my grandmother a week to make.	そう。祖母が作るのに1週間かかる。
+S	
+B	What's your favourite part?	一番好きな部分は？
+A	Midnight on New Year's Eve. The temple bell rings one hundred and eight times.	大晦日の深夜。お寺の鐘が108回鳴る。
+B	Why one hundred and eight?	なんで108回？
+A	One for each human desire. To clear them for the new year.	人間の煩悩の数だけ。新年に向けて払うために。
+B	That's a lot of desires.	ずいぶん多い煩悩だね。
+A	We're complicated people.	複雑な人間なんだよ。
+S	
+B	I'd love to see that.	見てみたいな。
+A	Come next year. My grandmother would feed you for three days straight.	来年来て。祖母が3日間ぶっ通しで食べさせてくれるよ。
+B	I'm in.	乗った。
+T	👘	相手の国の伝統衣装や儀式について聞く	文化	what's the traditional dress, when do people wear it, what does it mean, have you ever worn one, it looks
+S	
+A	What's the traditional dress where you're from?	あなたの国の伝統衣装って何？
+B	A kimono, for Japan. Long robe, wide sleeves, a big sash at the waist.	日本なら着物。長い衣で、袖が広くて、腰に大きな帯。
+A	When do people wear them?	いつ着るの？
+B	Special occasions. Weddings, coming-of-age day, sometimes festivals.	特別な機会に。結婚式、成人式、時々お祭り。
+A	Not every day?	毎日じゃない？
+B	Almost never. They're hard to put on. My mum takes an hour.	ほぼ絶対に。着るのが難しいから。母は1時間かかる。
+A	An hour!	1時間！
+B	And you can't move properly. Small steps only.	しかもまともに動けない。小さな歩幅でしか。
+S	
+A	Have you ever worn one?	着たことある？
+B	Twice. Once at twenty for coming-of-age, once at my cousin's wedding.	2回。20歳の成人式で1回、いとこの結婚式で1回。
+A	What was it like?	どんな感じだった？
+B	Beautiful and uncomfortable. Like being a very elegant sausage.	美しくて、窮屈。すごく優雅なソーセージみたいな感じ。
+A	Ha! Do you have photos?	はは！ 写真はある？
+B	My mum has hundreds. She'll show you whether you want to see them or not.	母が何百枚も持ってる。見たいかどうかに関係なく、見せてくるよ。
+S	
+A	Does the pattern mean anything?	柄には意味があるの？
+B	Often. Cranes for long life, cherry blossoms for spring. My wedding one had cranes.	よくある。鶴は長寿、桜は春。結婚式のには鶴があった。
+A	That's lovely. Everything has a meaning.	素敵だね。全部に意味があるんだ。
+B	Everything. Even the way you tie the sash.	全部。帯の結び方まで。
+T	🌶	どんなスパイスが入っているか聞く	食事	what spices are in this, I can taste, is that cumin, the secret ingredient, could you write it down
+S	
+A	This is amazing. What spices are in it?	これ、すごく美味しい。何のスパイスが入ってるの？
+B	Cumin, coriander, turmeric, a bit of cinnamon.	クミン、コリアンダー、ターメリック、それにシナモン少々。
+A	Cinnamon? In a savoury dish?	シナモン？ おかずに？
+B	Just a pinch. It's what makes it warm.	ほんの一つまみ。それが温かみを出すんだ。
+A	I can taste something else. Something sharp.	他にも何か感じる。鋭い感じの。
+B	Black cardamom. That's the secret ingredient.	ブラックカルダモン。それが秘密の材料。
+A	I've never heard of it.	聞いたことない。
+B	Most people haven't. It's smoky. You can't replace it.	ほとんどの人はね。スモーキーなんだ。代わりがきかない。
+S	
+A	Where do you buy it?	どこで買うの？
+B	The Asian shop on the high street. Ask for the big black pods.	大通りのアジア食材店。大きな黒い鞘のやつって聞いて。
+A	Could you write the whole recipe down for me?	レシピを全部書いてくれる？
+B	I can try. But I don't really measure.	やってみる。でもあまり計量しないんだ。
+A	Rough amounts are fine.	だいたいの量でいいよ。
+B	Okay. "A handful" of this, "some" of that.	わかった。「ひとつかみ」のこれ、「少し」のあれ。
+A	That's how all the best recipes go.	最高のレシピってみんなそうだよね。
+S	
+B	Come round Sunday. I'll show you instead of writing it.	日曜に来て。書く代わりに見せるよ。
+A	Even better. I'll bring wine.	そのほうがいい。ワインを持っていく。
+T	🔥	辛さのレベルや使うスパイスの話で盛り上がる	食事	how hot do you like it, mild, I can't handle, build up a tolerance, the heat sneaks up on you
+S	
+A	How hot do you like your food?	辛さはどのくらいが好き？
+B	Hot. Properly hot. If I'm not sweating, it's not right.	辛いの。本気で辛いの。汗をかかなければ、正しくない。
+A	I'm the opposite. Mild. I can't handle much.	私は逆。マイルド。あまり辛いのは無理。
+B	You just need to build up a tolerance.	耐性をつければいいんだよ。
+A	That's what everyone says. Then I cry in a restaurant.	みんなそう言う。それでレストランで泣くことになる。
+B	Start small. A bit more chilli each time.	少しずつ。毎回、唐辛子をちょっとずつ増やして。
+A	How long does that take?	どのくらいかかる？
+B	A few months. Then one day you're ordering extra hot without thinking.	数か月。そしてある日、何も考えずに激辛を注文してる。
+S	
+B	Which chillies do you use, when you cook?	料理する時、どの唐辛子を使う？
+A	Whatever's at the supermarket. The generic red ones.	スーパーにあるやつ。普通の赤いの。
+B	Those are nothing. Try bird's eye. Small, but they mean it.	あれは大したことない。鷹の爪を試して。小さいけど、本気だよ。
+A	How hot are we talking?	どのくらい辛いの？
+B	The heat sneaks up on you. First bite, fine. Third bite, regret.	辛さがじわじわ来る。一口目は平気。三口目で後悔。
+A	That sounds like a trap.	それは罠みたいだね。
+B	It is. A delicious trap.	そう。美味しい罠。
+S	
+A	Fine. I'll try one. One chilli. Next week.	わかった。1つ試す。唐辛子1本。来週。
+B	I'll bring some. And milk. For after.	持っていくよ。あと牛乳も。その後用に。
+A	You're expecting me to fail.	失敗すると思ってるね。
+B	I'm expecting you to learn.	学ぶと思ってるんだよ。
+T	👗	服や色の好みを話す	雑談	what's your style, I mostly wear, that colour suits you, I can't pull off, comfortable over stylish
+S	
+A	How would you describe your style?	自分のスタイルをどう表現する？
+B	Boring, probably. Jeans, plain T-shirts, one good jacket.	たぶん退屈。ジーンズ、無地のTシャツ、いいジャケット1着。
+A	That's not boring. That's a uniform.	退屈じゃないよ。制服だよ。
+B	Ha, that's a nicer way to put it. What about you?	はは、いい言い方だね。そっちは？
+A	I like colour. Probably too much colour.	色が好き。たぶん色が多すぎる。
+B	I noticed the yellow coat.	黄色いコートには気づいてた。
+A	That's my quiet coat.	それは控えめなほうのコート。
+S	
+B	That colour suits you, though. The yellow.	でもその色、似合ってるよ。黄色。
+A	Thanks. Everyone tells me they could never wear it.	ありがとう。みんな、自分には着られないって言う。
+B	I couldn't. I'd look like a warning sign.	私は無理。警告標識みたいになる。
+A	You could pull it off. You just wouldn't feel like yourself.	着こなせると思うよ。ただ自分らしく感じないだけで。
+B	Exactly. I'd rather be comfortable than stylish.	そう。おしゃれより、心地よさを取りたい。
+A	Comfortable can be stylish. That's the trick.	心地よさもおしゃれになり得る。それがコツ。
+S	
+B	Maybe I'll try one colour. One. A scarf.	1色だけ試してみようかな。1つ。スカーフ。
+A	Start with a scarf. Nobody ever regretted a scarf.	スカーフから始めて。スカーフで後悔した人はいない。
+B	Not yellow, though.	でも黄色はなし。
+A	Not yellow. Baby steps.	黄色はなし。少しずつね。
+T	🍬	甘党か辛党かを話す	雑談	sweet tooth, savoury person, I'd skip dessert for, I can't resist, the last bite
+S	
+A	Are you a sweet or savoury person?	甘党？ それとも辛党？
+B	Savoury. All day. I'd skip dessert for a second helping of the main.	辛党。いつでも。デザートを飛ばして、メインのおかわりを取る。
+A	You'd skip dessert?	デザートを飛ばす？
+B	Every time. Give me cheese, olives, crisps. Sugar does nothing for me.	毎回。チーズ、オリーブ、ポテチをくれれば。砂糖には何も感じない。
+A	I can't imagine that. I've got a serious sweet tooth.	想像できない。私は重度の甘党。
+B	How serious?	どのくらい重度？
+A	I've had cake for breakfast. More than once. This week.	朝食にケーキを食べたことがある。一度じゃなく。今週。
+S	
+B	Do you ever crave savoury?	しょっぱいものが食べたくなることは？
+A	After sweet. To reset. Then back to sweet.	甘いものの後に。リセットするために。それからまた甘いもの。
+B	So it's a cycle.	じゃあ循環なんだね。
+A	A beautiful cycle. Chocolate, crisps, chocolate.	美しい循環。チョコレート、ポテチ、チョコレート。
+B	That's not a diet. That's a rollercoaster.	それは食事じゃない。ジェットコースターだよ。
+A	The best rollercoaster.	最高のジェットコースター。
+S	
+B	What if you could only have one for the rest of your life?	一生どちらか1つしか食べられないなら？
+A	Sweet. Without hesitation.	甘いもの。迷わず。
+B	Savoury. Also without hesitation.	しょっぱいもの。こちらも迷わず。
+A	We'd never fight over the last bite.	最後の一口を取り合うことは絶対ないね。
+B	The perfect dining partner.	完璧な食事のパートナーだ。
 """#
 }
