@@ -1,0 +1,374 @@
+T|🏧|ATMでカードが出てこない|トラブル|swallowed my card, retained, branch, cancel it, get it back
+S|
+A|Oh no. The machine's taken my card.|やばい。ATMにカードを飲み込まれた。
+B|What? It didn't give it back?|え？ 戻ってこなかったの？
+A|No. It just said "card retained" and went back to the start screen.|うん。「カードは回収されました」って出て、最初の画面に戻った。
+B|Is it your bank's machine?|それ、自分の銀行のATM？
+A|No, a different one. That's probably why.|ううん、別の銀行。それが原因かも。
+S|
+A|Hi, the cash machine outside has just kept my card.|すみません、外のATMにカードを回収されてしまいました。
+B|I'm sorry about that. Is it one of our cards?|申し訳ありません。当行のカードですか？
+A|No, it's from another bank.|いいえ、別の銀行のものです。
+B|In that case, we can't return it here. It'll be sent back to your bank.|その場合、こちらでは返却できません。ご利用の銀行に返送されます。
+A|How long will that take?|どのくらいかかりますか？
+B|Usually a week. I'd advise calling them and cancelling it, to be safe.|通常1週間ほどです。念のため、銀行に電話して止めることをお勧めします。
+S|
+A|Right, I'll call them now. Do you have a phone I can use?|わかりました、今電話します。使える電話はありますか？
+B|Of course, over here.|もちろんです、こちらへ。
+A|Thanks. What a morning.|ありがとう。なんて朝だ。
+B|It happens more than you'd think. You'll be fine.|意外とよくあることですよ。大丈夫です。
+
+T|💱|両替をする|手続き|exchange, rate, commission, small notes, how much would I get
+S|
+A|Hi, I'd like to exchange some money.|すみません、両替をお願いしたいのですが。
+B|Sure. What currency do you have?|はい。どの通貨をお持ちですか？
+A|Japanese yen. Fifty thousand.|日本円です。5万円。
+B|And you want pounds?|ポンドに替えますか？
+A|Yes, please. What's the rate today?|はい。今日のレートはいくらですか？
+S|
+B|It's 185 yen to the pound. So that's about 270 pounds.|1ポンド185円です。ですので約270ポンドになります。
+A|Is there a commission on top?|それに手数料はかかりますか？
+B|No commission. The rate includes everything.|手数料はありません。レートに全部含まれています。
+A|Okay, that's fine.|わかりました、それでお願いします。
+B|Could I see your passport?|パスポートを拝見できますか？
+S|
+A|Could I have some of it in small notes?|一部を小額紙幣にしてもらえますか？
+B|Of course. Tens and twenties?|もちろんです。10と20で？
+A|Perfect. And maybe a few fives for the bus.|完璧です。あとバス用に5ポンド札を何枚か。
+B|No problem. Here you go — count it, please.|承知しました。どうぞ。お確かめください。
+A|Two seventy. Thank you.|270です。ありがとう。
+
+T|🌐|海外送金をする|手続き|transfer money abroad, recipient, IBAN, transfer fee, how long does it take
+S|
+A|Hi, I need to send some money to Japan.|日本に送金したいのですが。
+B|No problem. Do you have the recipient's bank details?|承知しました。受取人の銀行情報はお持ちですか？
+A|Yes, the account number and the bank name.|はい、口座番号と銀行名は。
+B|We'll also need the SWIFT code and the full address.|SWIFTコードと住所も必要になります。
+A|Ah, I have the SWIFT code here.|ああ、SWIFTコードはここにあります。
+S|
+A|How much is the transfer fee?|送金手数料はいくらですか？
+B|Twenty for international. Plus the exchange rate.|海外送金は20です。それに為替レートが加わります。
+A|And how long does it take?|どのくらいかかりますか？
+B|Two to three working days, usually.|通常2〜3営業日です。
+A|Okay. I'd like to send five hundred.|わかりました。500を送りたいです。
+S|
+B|Let me confirm — five hundred to this account, in yen?|確認させてください。この口座に500、円建てで？
+A|Yes, in yen. My mum won't want pounds.|はい、円で。母はポンドは要らないので。
+B|Ha, understood. Sign here, please.|はは、承知しました。こちらにサインをお願いします。
+A|Done. Will I get a confirmation?|できました。確認書はもらえますか？
+B|Yes, by email within the hour.|はい、1時間以内にメールでお送りします。
+
+T|📄|保険の内容を確認する|手続き|what's covered, excess, claim, policy, in the small print
+S|
+A|Hi, I wanted to check what my travel insurance actually covers.|旅行保険が実際に何をカバーしているか確認したいのですが。
+B|Of course. Do you have your policy number?|承知しました。証券番号はお持ちですか？
+A|Yes, it's 2-2-9-4-5.|はい、2-2-9-4-5です。
+B|Thank you. What would you like to know?|ありがとうございます。何をお知りになりたいですか？
+A|Mainly medical. If I need a doctor abroad, is that covered?|主に医療です。海外で医者にかかった場合、カバーされますか？
+S|
+B|Yes, up to two million. There's a fifty excess per claim.|はい、200万まで。請求ごとに50の自己負担があります。
+A|And lost luggage?|荷物の紛失は？
+B|Covered up to fifteen hundred.|1500まで補償されます。
+A|What about cancelled flights?|フライトの欠航は？
+B|That's covered too, but you need proof from the airline.|それも対象ですが、航空会社の証明が必要です。
+S|
+A|Is there anything not covered that I should know about?|知っておくべき、対象外のものはありますか？
+B|Extreme sports. And pre-existing conditions unless declared.|エクストリームスポーツです。あと、申告していない既往症も。
+A|Good to know. I wasn't planning any bungee jumping.|なるほど。バンジージャンプの予定はないので。
+B|Then you're fine. It's all in the small print if you want to read it.|それなら大丈夫です。詳しくは約款に全部書いてあります。
+A|Thanks, that's really clear.|ありがとう、とてもわかりやすかったです。
+
+T|💊|薬局で症状を伝えて市販薬を探す|健康|over the counter, something for, take with food, side effects, drowsy
+S|
+A|Hi, do you have something for a headache?|すみません、頭痛に効くものはありますか？
+B|Sure. Is it a tension headache or more like a migraine?|はい。緊張型の頭痛ですか、それとも片頭痛のような？
+A|More of a dull ache. It's been there since this morning.|鈍い痛みです。今朝からずっと。
+B|Are you taking any other medication?|他に飲んでいる薬はありますか？
+A|No, nothing.|いいえ、何も。
+S|
+B|Then these should do the trick. One or two every four hours.|それならこれで大丈夫でしょう。4時間ごとに1〜2錠。
+A|Should I take them with food?|食事と一緒に飲んだほうがいいですか？
+B|Ideally, yes. It's easier on your stomach.|できればそのほうが。胃にやさしいので。
+A|Any side effects?|副作用は？
+B|Not usually. They won't make you drowsy.|通常はありません。眠くもなりませんよ。
+S|
+A|Great. I'll take a pack.|わかりました。1箱ください。
+B|If it hasn't gone in a couple of days, see a doctor.|2〜3日で治らなければ、医者に診てもらってください。
+A|I will. Thanks for the advice.|そうします。アドバイスありがとう。
+B|Hope you feel better soon.|早く良くなりますように。
+
+T|🦷|歯が痛くて歯医者に行く|健康|toothache, sensitive to, filling, numb, come back in
+S|
+B|So what's the problem?|どうされましたか？
+A|I've got a toothache on the lower left. It started two days ago.|左下の歯が痛くて。2日前から始まりました。
+B|Is it sensitive to hot or cold?|熱いものや冷たいものにしみますか？
+A|Cold, definitely. Even water makes me wince.|冷たいものは確実に。水でも顔をしかめます。
+B|Okay, open wide and let me take a look.|わかりました。大きく開けて、見せてください。
+S|
+B|There's a small cavity. You'll need a filling.|小さな虫歯がありますね。詰め物が必要です。
+A|Can you do it today?|今日できますか？
+B|Yes, we've got time. I'll numb it first.|はい、時間はあります。まず麻酔をします。
+A|How long will it take?|どのくらいかかりますか？
+B|About twenty minutes. You won't feel a thing.|20分ほどです。何も感じませんよ。
+S|
+B|All done. Don't eat for the next couple of hours.|終わりました。2時間ほどは食べないでください。
+A|My mouth feels weird.|口の中が変な感じです。
+B|That's the numbness. It'll wear off by this evening.|麻酔のせいです。夕方には切れますよ。
+A|Thank you. Do I need to come back?|ありがとうございます。また来る必要はありますか？
+B|Just for your regular check-up in six months.|6か月後の定期検診だけで大丈夫です。
+
+T|🤕|頭痛がひどいので早退したいと伝える|仕事|I'm not feeling well, head home early, splitting headache, make up the hours, feel better
+S|
+A|Have you got a minute?|少しお時間いいですか？
+B|Sure, what's up?|もちろん、どうしたの？
+A|I'm not feeling great. I've had a splitting headache all morning.|体調が良くなくて。午前中ずっと頭が割れそうに痛いんです。
+B|Oh no. Have you taken anything?|それは大変。何か薬は飲んだ？
+A|Yes, but it's not helping. I can barely look at my screen.|はい、でも効かなくて。画面もまともに見られません。
+S|
+B|You should head home. There's no point sitting here suffering.|帰ったほうがいいよ。ここで我慢していても仕方ない。
+A|Would that be okay? I've finished the urgent stuff.|いいでしょうか？ 急ぎのものは終わらせました。
+B|Of course. Is there anything that can't wait?|もちろん。待てないものはある？
+A|Just the client email. I can send it from my phone.|クライアントへのメールだけ。スマホから送れます。
+B|Do that and go.|それだけやって、帰りなさい。
+S|
+A|Should I make up the hours tomorrow?|明日、時間を埋め合わせたほうがいいですか？
+B|Don't worry about it. Just feel better.|気にしなくていい。とにかく良くなって。
+A|Thank you. I really appreciate it.|ありがとうございます。本当に助かります。
+B|Get some rest. Text me if you're not in tomorrow.|休んで。明日来られなかったらメッセージして。
+
+T|🌸|花粉症・鼻づまりがひどい|健康|hay fever, blocked nose, pollen count, antihistamines, sneeze
+S|
+A|Achoo! Sorry.|ハクション！ ごめん。
+B|Bless you. Hay fever?|お大事に。花粉症？
+A|Yeah, it's terrible today. My nose is completely blocked.|うん、今日はひどい。鼻が完全に詰まってる。
+B|The pollen count's really high this week.|今週は花粉の量がすごく多いんだよね。
+A|I can tell. My eyes are streaming too.|わかるよ。目も涙が止まらない。
+S|
+B|Have you taken antihistamines?|抗ヒスタミン薬は飲んだ？
+A|This morning, but they don't seem to be doing much.|今朝飲んだけど、あまり効いてない気がする。
+B|Try a different brand. Some work better than others.|別のブランドを試してみて。効き方が違うから。
+A|Really? I didn't know that.|そうなの？ 知らなかった。
+B|And a nasal spray helps with the blockage.|あと、点鼻薬が鼻づまりに効くよ。
+S|
+A|I might just stay inside until it's over.|もう花粉が終わるまで家にこもろうかな。
+B|Keep the windows shut, at least.|せめて窓は閉めておいて。
+A|And I'll wash my face when I get home.|帰ったら顔も洗う。
+B|Good idea. It gets the pollen off.|いいね。花粉を落とせるから。
+A|Achoo! Sorry, again.|ハクション！ またごめん。
+
+T|🏋️|ジムに入会する|健康|sign up, membership, monthly fee, cancel anytime, induction
+S|
+A|Hi, I'd like to sign up for a membership.|すみません、会員登録をしたいのですが。
+B|Great! Have you been to a gym before?|いいですね！ ジムに通ったことはありますか？
+A|A few years ago. I'm pretty out of shape now.|数年前に。今はかなり体がなまっています。
+B|Everyone starts somewhere. What are you looking to do?|誰でもどこかから始めますよ。目的は何ですか？
+A|Mostly get fitter. Maybe some weights.|主に体力をつけたくて。ウェイトも少し。
+S|
+A|How much is it a month?|月いくらですか？
+B|Forty, with no joining fee this month.|40です。今月は入会金無料です。
+A|Is there a minimum contract?|最低契約期間はありますか？
+B|No, you can cancel anytime with a month's notice.|いいえ、1か月前に伝えればいつでも解約できます。
+A|That's reasonable.|それなら良心的ですね。
+S|
+B|We also do a free induction with a trainer.|トレーナーによる無料の初回説明もあります。
+A|What's that?|それは何ですか？
+B|They show you the equipment and set up a basic plan.|器具の使い方を教えて、基本プランを作ってくれます。
+A|That'd be really useful. Can I book it now?|それはすごく助かります。今予約できますか？
+B|Absolutely. How about Thursday at six?|もちろんです。木曜の6時はどうですか？
+A|Perfect. Sign me up.|完璧です。登録をお願いします。
+
+T|💇|美容院で髪型を注文する|日常|what are we doing today, take a bit off, layers, fringe, show you a photo
+S|
+B|So, what are we doing today?|今日はどうされますか？
+A|I want something a bit different. Not too short, though.|少し違う感じにしたくて。でも短すぎないように。
+B|How much are you thinking of taking off?|どのくらい切るイメージですか？
+A|Maybe two inches? And some layers.|5センチくらい？ あとレイヤーを少し。
+B|Do you have a photo?|写真はありますか？
+A|Actually, yes. Something like this.|あ、はい。こんな感じです。
+S|
+B|That'll suit you. Do you want to keep the fringe?|お似合いだと思います。前髪は残しますか？
+A|Yes, but a bit shorter. It's in my eyes.|はい、でも少し短めに。目にかかっていて。
+B|Just above the eyebrows?|眉のすぐ上くらい？
+A|Perfect.|それでお願いします。
+B|And how do you normally style it?|普段はどうスタイリングしていますか？
+A|Honestly, I just let it dry. I'm lazy.|正直、乾かすだけです。面倒くさがりで。
+S|
+B|Okay, I'll cut it so it works with that.|わかりました、そのままでも決まるように切りますね。
+A|That's exactly what I need.|まさにそれが理想です。
+B|Right, let's get you washed first.|では、まずシャンプーから。
+A|Lovely.|お願いします。
+
+T|💆|マッサージで力加減を伝える|健康|pressure, a bit firmer, too hard, that spot, just right
+S|
+B|Is the pressure okay?|力加減はいかがですか？
+A|Could you go a bit firmer?|もう少し強めにしてもらえますか？
+B|Like this?|これくらい？
+A|Yes, that's better. My shoulders are really tight.|はい、そのほうがいいです。肩がすごく凝っていて。
+B|I can feel it. Do you sit at a desk a lot?|わかります。デスクワークが多いですか？
+A|All day, unfortunately.|一日中です、残念ながら。
+S|
+A|Ow — that's a bit too hard, sorry.|痛っ、ちょっと強すぎます、すみません。
+B|No problem. I'll ease off.|大丈夫ですよ。弱めます。
+A|That spot's really tender.|そこ、本当に痛いところです。
+B|There's a knot there. I'll work around it gently.|しこりがありますね。周りをやさしくほぐしていきます。
+A|Okay. That's just right now.|はい。今はちょうどいいです。
+S|
+B|Let me know if anything's uncomfortable.|不快なところがあれば教えてください。
+A|Will do. Honestly, this is exactly what I needed.|そうします。正直、まさにこれが必要でした。
+B|Try to drink plenty of water afterwards.|終わったら水をたくさん飲んでくださいね。
+A|I will. Thank you.|そうします。ありがとう。
+
+T|📅|会議の日程を調整する|仕事|does Tuesday work, move it, clash, pencil it in, send an invite
+S|
+A|I'm trying to find a time for the project meeting. Does Tuesday work?|プロジェクト会議の時間を決めたいんだけど、火曜は大丈夫？
+B|Morning or afternoon?|午前？ 午後？
+A|Say, two o'clock?|2時くらいでどう？
+B|Ah, I've got a clash at two. Could we do three?|2時は別の予定と重なってる。3時にできる？
+A|Three's fine by me. Let me check with Priya.|3時で大丈夫。プリヤに確認してみる。
+S|
+A|Priya can't do three. She's free at ten, though.|プリヤは3時が無理だって。でも10時は空いてる。
+B|Ten's tight, but I can move something.|10時はきついけど、何か動かせるよ。
+A|Are you sure? We could do Wednesday instead.|本当に？ 水曜でもいいんだけど。
+B|No, let's just get it done. Ten on Tuesday.|いや、さっさと決めよう。火曜の10時で。
+A|Great. I'll pencil it in for now.|よかった。ひとまず仮で入れておく。
+S|
+A|I'll send an invite with the agenda.|議題と一緒に招待を送るね。
+B|Perfect. How long do you need?|完璧。どのくらいの時間が必要？
+A|Forty-five minutes should do it.|45分あれば足りるはず。
+B|Good. Keep it tight.|いいね。手短にね。
+A|Always.|いつも通り。
+
+T|⏰|会議に遅れると連絡する|仕事|running late, stuck in, start without me, catch up, be there in
+S|
+A|Hi, it's me. I'm running about ten minutes late.|もしもし、私です。10分ほど遅れそうです。
+B|No problem. What's happened?|大丈夫だよ。何かあった？
+A|I'm stuck on the train. It's not moving.|電車の中で足止めされてて。動かないんです。
+B|Ah, the usual. Do you want us to start without you?|ああ、いつものやつね。先に始めておこうか？
+A|Yes, please. Don't wait for me.|お願いします。待たないでください。
+S|
+B|We'll go through the numbers first. That's Tom's bit.|先に数字の確認から進めるよ。トムの担当だから。
+A|Perfect. I'll catch up when I get there.|助かります。着いたら追いつきます。
+B|Do you want me to dial you in?|電話で繋いでおこうか？
+A|Actually, yes, if the signal holds.|はい、電波が持てば。
+B|Okay, I'll send you the link.|わかった、リンクを送るね。
+S|
+A|Okay, it's moving. I'll be there in five.|動き出しました。あと5分で着きます。
+B|Great. We're just on slide three.|了解。今ちょうどスライド3だよ。
+A|Sorry again for the delay.|遅れて本当にすみません。
+B|Don't worry, it happens. See you in a bit.|気にしないで、よくあることだから。じゃあすぐに。
+
+T|🏖|上司に休暇を申請する|仕事|book some time off, annual leave, cover, quiet period, put in the request
+S|
+A|Do you have a minute? I wanted to ask about some time off.|少しお時間いいですか？ 休暇について相談したくて。
+B|Sure. When were you thinking?|もちろん。いつ頃を考えてる？
+A|The last week of June, if that's possible.|可能なら、6月の最終週です。
+B|Let me check the calendar. How many days?|カレンダーを見てみるよ。何日間？
+A|Five. Monday to Friday.|5日です。月曜から金曜。
+S|
+B|That's after the launch, so it should be fine.|発売後だから、大丈夫だと思う。
+A|That's what I was hoping.|そう期待していました。
+B|Who'll cover your accounts?|担当の案件は誰がカバーする？
+A|I've spoken to Maria. She's happy to.|マリアに話しました。引き受けてくれるそうです。
+B|Good, that's sorted then.|よし、じゃあ決まりだね。
+S|
+A|Should I put in the request through the system?|システムで申請したほうがいいですか？
+B|Yes, and I'll approve it today.|うん、今日中に承認するよ。
+A|Thank you. I could really do with a break.|ありがとうございます。本当に休みが必要で。
+B|You've earned it. Going anywhere nice?|頑張ったからね。どこかいいところに行くの？
+A|Just home to see family. That's enough.|実家で家族に会うだけです。それで十分。
+
+T|🤝|同僚に仕事を手伝ってほしいと頼む|仕事|could you help me out, swamped, take some off my plate, return the favour, no worries
+S|
+A|Hey, have you got any capacity this week?|ねえ、今週は少し余裕ある？
+B|A bit. Why, what do you need?|少しなら。どうして、何か必要？
+A|I'm swamped with the client reports. Could you help me out?|クライアントのレポートで手一杯で。手伝ってもらえないかな？
+B|What sort of help?|どんな手伝い？
+A|Just the data checks on two of them. It's not complicated.|2件分のデータチェックだけ。難しくはないよ。
+S|
+B|Okay, I can do that. When do you need them by?|わかった、できるよ。いつまでに必要？
+A|Thursday, ideally.|できれば木曜。
+B|That's doable. Send them over.|それならいける。送って。
+A|You're a lifesaver. I'll return the favour, I promise.|ほんと助かる。この借りは必ず返すから。
+B|I'll hold you to that.|覚えておくよ。
+S|
+A|Anything you need from me to get started?|始めるのに何か必要なものある？
+B|Just the template and the raw data.|テンプレートと元データだけ。
+A|Sending now. And lunch is on me this week.|今送る。あと今週のランチはおごりね。
+B|Now we're talking.|それでこそだよ。
+
+T|📆|締め切りの延長をお願いする|仕事|push back the deadline, extension, realistic, quality, keep you posted
+S|
+A|I need to talk to you about the Friday deadline.|金曜の締め切りについて相談があります。
+B|Go on.|どうぞ。
+A|I don't think it's realistic anymore. The data came in late.|もう現実的ではないと思います。データの到着が遅れて。
+B|How late?|どのくらい遅れたの？
+A|Two days. And it needs a lot more cleaning than we expected.|2日です。しかも想定よりずっと整理が必要で。
+S|
+B|How much more time do you need?|あとどのくらい時間が必要？
+A|Until Tuesday. That gives me the weekend as a buffer.|火曜までです。週末を予備に使えます。
+B|Can you deliver a rough version on Friday?|金曜に大まかな版は出せる？
+A|Yes, absolutely. Just not the final.|はい、もちろん。最終版でなければ。
+B|Then let's do that. I'd rather it was right than rushed.|じゃあそうしよう。急いで雑になるより、正確なほうがいい。
+S|
+A|Thank you. I know it's not ideal.|ありがとうございます。理想的ではないとわかっています。
+B|It's fine. Just keep me posted if anything else slips.|大丈夫。他に遅れそうなことがあれば、随時知らせて。
+A|I will. I'll send an update Friday morning.|そうします。金曜の朝に進捗を送ります。
+B|Good. Thanks for flagging it early.|よし。早めに言ってくれてありがとう。
+
+T|🎤|自己紹介をプレゼンの冒頭でする|仕事|before I start, a bit about me, I'll be walking you through, feel free to, let's dive in
+S|
+A|Good morning, everyone. Thanks for being here.|皆さん、おはようございます。お集まりいただきありがとうございます。
+B|Morning.|おはようございます。
+A|Before I start, a bit about me. I'm Kohei, and I lead the design team.|始める前に、簡単に自己紹介を。航平です。デザインチームのリーダーをしています。
+B|How long have you been with the company?|会社にはどのくらいいらっしゃるんですか？
+A|About three years now. Before that, I was in Tokyo.|3年ほどです。その前は東京にいました。
+S|
+A|Today I'll be walking you through the new app design.|今日は新しいアプリのデザインをご説明します。
+B|Will there be time for questions?|質問の時間はありますか？
+A|Absolutely. Feel free to interrupt at any point.|もちろんです。いつでも割り込んでください。
+B|Great.|わかりました。
+A|I'd rather it was a conversation than a lecture.|講義よりも対話にしたいので。
+S|
+A|We've got about thirty minutes, so let's dive in.|時間は30分ほどですので、早速始めましょう。
+B|Sounds good.|いいですね。
+A|If you want the slides afterwards, just let me know.|後でスライドが必要な方は、お知らせください。
+B|Yes, please.|お願いします。
+A|Right. First slide.|では。最初のスライドです。
+
+T|💳|名刺交換をする|仕事|here's my card, do you have a card, get in touch, keep in touch, drop me a line
+S|
+A|It was great meeting you. Here's my card.|お会いできてよかったです。名刺をどうぞ。
+B|Thank you. And here's mine.|ありがとうございます。私のもどうぞ。
+A|Oh, you're at Northwind. I've heard good things.|ノースウィンドの方なんですね。良い評判を聞いています。
+B|That's nice to hear. Are you based here in the city?|うれしいですね。この街が拠点ですか？
+A|Yes, our office is just across the river.|はい、オフィスは川の向こうです。
+S|
+B|Is this the best email to reach you on?|連絡はこのメールアドレスが一番いいですか？
+A|Yes, that's my direct one.|はい、直通のものです。
+B|Great. I'll drop you a line next week about the project.|わかりました。来週、あのプロジェクトについてご連絡します。
+A|Please do. I'd love to hear more.|ぜひ。もっと詳しく伺いたいです。
+B|And feel free to get in touch if anything comes up.|何かあればいつでもご連絡ください。
+S|
+A|Let's keep in touch.|これからもよろしくお願いします。
+B|Definitely. Enjoy the rest of the event.|ぜひ。イベントの残りをお楽しみください。
+A|You too. Safe travels back.|そちらも。お気をつけてお帰りください。
+
+T|📧|メールの返事が来ないので催促する|仕事|follow up, just checking in, get a chance, gentle reminder, whenever you have a moment
+S|
+A|Hi, I'm just following up on the email I sent last week.|先週お送りしたメールの件で、確認のご連絡です。
+B|Oh, sorry, which one was that?|あ、すみません、どのメールでしたか？
+A|The one about the contract changes. I haven't heard back.|契約変更についてのものです。まだお返事をいただいていなくて。
+B|Ah, I saw it and then it got buried. My apologies.|ああ、見たんですが、そのまま埋もれてしまって。申し訳ない。
+A|No problem, I know how it is.|大丈夫です、よくわかります。
+S|
+A|Did you get a chance to look at the proposed dates?|提案した日程は確認していただけましたか？
+B|Briefly. I think they work, but I need to check with legal.|ざっとは。問題ないと思いますが、法務に確認が必要です。
+A|Of course. Is there anything you need from me?|もちろんです。何か私のほうで必要なものはありますか？
+B|Not right now. I'll chase legal today.|今のところは。今日、法務に催促します。
+A|That would be great.|助かります。
+S|
+A|Would it help if I sent a summary of the key points?|要点をまとめたものを送りましょうか？
+B|Actually, yes. That would speed things up.|それはありがたいです。話が早くなります。
+A|I'll send it within the hour.|1時間以内にお送りします。
+B|Thanks for the gentle reminder. I needed it.|やんわりと催促してくれてありがとう。必要でした。
+A|Ha, anytime.|はは、いつでも。

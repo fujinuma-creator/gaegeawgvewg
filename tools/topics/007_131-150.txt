@@ -1,0 +1,401 @@
+T|💰|給料や昇進について相談する|仕事|pay rise, taken on more, market rate, review, put a case together
+S|
+A|Thanks for making time. I wanted to talk about my role and my pay.|お時間ありがとうございます。役割と給与について相談したくて。
+B|Of course. What's on your mind?|もちろん。どんなこと？
+A|Over the last year I've taken on a lot more responsibility.|この1年で、かなり多くの責任を担うようになりました。
+B|That's true. The team's grown under you.|そうだね。君のもとでチームは大きくなった。
+A|But my salary hasn't really changed since I started.|でも給与は入社時からほとんど変わっていません。
+S|
+B|What are you looking for, specifically?|具体的には、何を求めている？
+A|I've looked at the market rate for this role, and I'm below it.|この職種の相場を調べたところ、それを下回っています。
+B|By how much?|どのくらい？
+A|Around fifteen percent. I've put the figures together here.|15%ほどです。数字をまとめてきました。
+B|This is helpful. You've clearly done your homework.|参考になるよ。しっかり準備してきたね。
+S|
+B|I can't promise anything today, but I'll raise it at the review.|今日は約束できないが、評価会議で提起するよ。
+A|I understand. When would I hear back?|わかりました。いつ頃返事をいただけますか？
+B|Within the month. And I'll be honest with you either way.|月内には。どちらの結果でも正直に伝える。
+A|That's all I ask. Thank you.|それで十分です。ありがとうございます。
+B|Thank you for bringing it up properly.|きちんと話してくれてありがとう。
+
+T|👋|退職を伝える|仕事|hand in my notice, move on, notice period, handover, on good terms
+S|
+A|Do you have a few minutes? There's something I need to tell you.|少しお時間ありますか？ お伝えしたいことがあります。
+B|Sure. Sit down.|もちろん。座って。
+A|I've decided to move on. I'll be handing in my notice today.|退職を決めました。今日、退職届を出します。
+B|Oh. I didn't see that coming.|そうか。予想していなかったな。
+A|It wasn't an easy decision.|簡単な決断ではありませんでした。
+S|
+B|Can I ask why?|理由を聞いてもいい？
+A|I've been offered a role that's closer to what I want to do long term.|長期的にやりたいことに近い仕事のオファーをもらったんです。
+B|That's fair. I'd be lying if I said I wasn't disappointed, though.|それはもっともだ。残念じゃないと言えば嘘になるけど。
+A|I know. I've learnt a lot here, and I mean that.|わかっています。ここで本当に多くを学びました。
+B|What's your notice period?|退職までの期間は？
+A|A month. So my last day would be the thirtieth.|1か月です。最終日は30日になります。
+S|
+B|Let's plan a proper handover. I don't want anything falling through the cracks.|ちゃんと引き継ぎを計画しよう。何も抜け落ちないように。
+A|Absolutely. I'll start writing things up this week.|もちろんです。今週から資料をまとめ始めます。
+B|And I hope we can stay in touch.|それと、これからも連絡を取り合えたらと思う。
+A|I'd like that. I want to leave on good terms.|ぜひ。円満に去りたいので。
+B|You will. Thanks for telling me in person.|そうなるよ。直接伝えてくれてありがとう。
+
+T|🎯|面接で志望動機を聞かれた|仕事|why do you want to work here, drawn to, align with, bring to the table, long-term
+S|
+B|So, why do you want to work here?|では、なぜ当社で働きたいのですか？
+A|A few reasons. Mainly, I've followed your products for years.|理由はいくつかあります。一番は、御社の製品を長年追ってきたことです。
+B|That's nice to hear. Which ones?|うれしいですね。どの製品ですか？
+A|The learning app, especially. I was drawn to how simple it is.|特に学習アプリです。あのシンプルさに惹かれました。
+B|Simplicity is something we work hard on.|シンプルさは、私たちがこだわっている点です。
+S|
+B|And what makes this role the right fit for you?|この職種があなたに合っていると思う理由は？
+A|My background's in design, but I've always cared about how people actually use things.|デザインの経験がありますが、人が実際にどう使うかにずっと関心がありました。
+B|So the user research side appeals to you.|つまり、ユーザーリサーチの側面に魅力を感じていると。
+A|Exactly. This role seems to sit right between the two.|その通りです。この職種はちょうどその2つの間にあると思いました。
+B|It does. That's a good read of it.|そうですね。よく理解されています。
+S|
+B|Where do you see this going long-term?|長期的にはどう考えていますか？
+A|I'd like to grow into leading a small team eventually.|ゆくゆくは小さなチームを率いる立場になりたいです。
+B|We like people who think ahead.|先を考える人は歓迎です。
+A|And honestly, I want to be somewhere I can stay for a while.|正直に言うと、長く腰を据えられる場所にいたいんです。
+B|That's a good answer. Let's move on.|良い答えですね。次に進みましょう。
+
+T|🎉|新しい同僚を歓迎する|仕事|welcome aboard, settle in, show you around, first day, any questions
+S|
+A|Hi, you must be the new starter. Welcome aboard!|こんにちは、新しく入った方ですね。ようこそ！
+B|Thank you! I'm Lena. It's my first day.|ありがとうございます！ レナです。今日が初日です。
+A|I'm Kohei. I sit just over there. How are you finding it so far?|航平です。すぐそこに座っています。ここまでどうですか？
+B|A bit overwhelming, honestly. So many names.|正直、少し圧倒されています。名前が多くて。
+A|Don't worry, nobody expects you to remember them all today.|大丈夫、今日中に全部覚えろなんて誰も思ってませんよ。
+S|
+A|Has anyone shown you around yet?|もう誰かに案内してもらいましたか？
+B|Just the desk and the kitchen.|デスクとキッチンだけです。
+A|Come on, I'll give you the full tour. Printer, good coffee, the works.|じゃあ、しっかり案内しますよ。プリンター、美味しいコーヒー、全部。
+B|That would be amazing.|それはありがたいです。
+A|And the emergency snacks drawer. That's the important one.|あと、非常用お菓子の引き出し。これが一番大事。
+S|
+A|If you've got any questions, just come and find me.|何か質問があれば、遠慮なく私のところに来てください。
+B|Thank you. I really appreciate that.|ありがとうございます。本当に助かります。
+A|A few of us are grabbing lunch at twelve. Join us?|12時に何人かでランチに行くんですが、一緒にどうですか？
+B|I'd love to.|ぜひ。
+A|Great. It'll help you settle in faster.|よかった。早く馴染めますよ。
+
+T|🍻|飲み会に誘う・断る|人間関係|a few of us, come along, I'll pass, next time, rain check
+S|
+A|A few of us are going for drinks after work. Want to come along?|仕事の後、何人かで飲みに行くんだけど、一緒にどう？
+B|Where are you going?|どこに行くの？
+A|That new place by the station. Just for an hour or two.|駅のそばの新しい店。1〜2時間だけ。
+B|Tempting. Who's going?|そそられるね。誰が来るの？
+A|Me, Sam, Priya. Maybe Tom.|私、サム、プリヤ。あとトムも来るかも。
+S|
+B|Ah, I'd love to, but I think I'll pass tonight.|行きたいけど、今夜はやめておくよ。
+A|No worries. Everything okay?|大丈夫だよ。何かあった？
+B|Yeah, I'm just wiped out. I need an early night.|うん、ただ疲れ切ってて。早く寝たいんだ。
+A|Fair enough. Rain check?|なるほど。また今度ね？
+B|Definitely. Next week, I'm in.|もちろん。来週なら行く。
+S|
+A|I'll hold you to that.|覚えておくからね。
+B|Please do. Have one for me.|ぜひ。私の分も飲んでおいて。
+A|Will do. Get some rest.|了解。ゆっくり休んで。
+B|Thanks. Say hi to everyone.|ありがとう。みんなによろしく。
+
+T|🍺|二日酔い|健康|hungover, rough, never again, greasy breakfast, sleep it off
+S|
+B|You look terrible.|ひどい顔してるね。
+A|I feel terrible. I'm so hungover.|ひどい気分。完全に二日酔い。
+B|How much did you drink?|どのくらい飲んだの？
+A|I lost count after the third round.|3杯目以降は数えてない。
+B|Classic. Did you at least have a good time?|お決まりのパターンだね。せめて楽しかった？
+A|I think so. The details are fuzzy.|たぶん。細かいことはぼんやりしてる。
+S|
+B|Have you eaten anything?|何か食べた？
+A|I can't face food right now.|今は食べ物を見るのも無理。
+B|You need a greasy breakfast. Trust me.|脂っこい朝食が必要だよ。信じて。
+A|Ugh. Maybe later.|うう。あとでね。
+B|And water. Lots of it.|あと水。たくさんね。
+S|
+A|Never again. I mean it this time.|もう二度と飲まない。今回は本気。
+B|You said that last month.|先月も同じこと言ってたよ。
+A|This time I'm serious.|今回は本当に本気。
+B|Sure. Go and sleep it off.|はいはい。寝て治しなよ。
+A|That's the best idea I've heard all day.|今日聞いた中で一番いいアイデアだ。
+
+T|🐈|ペットを飼っている話をする|雑談|do you have any pets, rescue, a handful, spoiled, fur everywhere
+S|
+A|Do you have any pets?|ペットは飼ってる？
+B|Yeah, a cat. Her name's Miso.|うん、猫を。名前はミソ。
+A|Miso! That's adorable. How old is she?|ミソ！ かわいい。何歳？
+B|Four. She's a rescue. I got her two years ago.|4歳。保護猫なんだ。2年前に引き取った。
+A|That's lovely. Is she friendly?|素敵だね。人懐っこい？
+S|
+B|With me, yes. With guests, not so much.|私にはね。お客さんにはあまり。
+A|Ha, typical cat.|はは、猫あるあるだね。
+B|She's completely spoiled, though. She sleeps on my pillow.|でも完全に甘やかしてる。私の枕の上で寝るんだ。
+A|And you let her?|それを許してるの？
+B|I don't really have a choice.|選択肢があるわけじゃないから。
+S|
+A|I've always wanted a cat, but my flat doesn't allow them.|ずっと猫を飼いたかったんだけど、うちのアパートは禁止で。
+B|That's a shame. You should come and meet Miso.|それは残念。ミソに会いに来なよ。
+A|I'd love to. As long as she doesn't hate me.|ぜひ。嫌われなければだけど。
+B|No promises. Bring treats.|保証はしないよ。おやつ持ってきて。
+A|Bribery. Got it.|賄賂ね。了解。
+
+T|🏫|子どもの学校の話をする|雑談|how's school going, settle in, homework, parents' evening, teacher
+S|
+A|How's your daughter finding her new school?|娘さん、新しい学校はどう？
+B|Better than I expected, honestly. She's made a couple of friends already.|正直、思ったより順調だよ。もう友達が2人できた。
+A|That's great. Was she nervous at first?|よかったね。最初は緊張してた？
+B|Terrified. She barely slept the night before.|怖がってたよ。前の晩はほとんど眠れなかった。
+A|I remember that feeling.|その気持ち、覚えてるよ。
+S|
+A|How's the homework situation?|宿題の状況は？
+B|A lot more than at her old school.|前の学校よりずっと多いね。
+A|Does she cope okay?|ちゃんとこなせてる？
+B|Mostly. Maths is a struggle, so I've been helping.|だいたいは。算数が苦手だから、手伝ってる。
+A|Are you any good at maths?|算数、得意なの？
+B|Absolutely not. We're learning together.|全然。一緒に勉強してるよ。
+S|
+B|We've got parents' evening next week.|来週、保護者面談があるんだ。
+A|Nervous?|緊張してる？
+B|A little. I want to hear how she's doing from the teacher.|少しね。先生から様子を聞きたいから。
+A|I'm sure it'll be good news.|きっといい話が聞けるよ。
+B|Hopefully. She seems happy, and that's the main thing.|だといいな。本人が楽しそうなのが一番だけど。
+
+T|💍|結婚や恋人の有無を聞かれた|人間関係|are you seeing anyone, single, it's complicated, not looking, change the subject
+S|
+B|So, are you married? Seeing anyone?|それで、結婚してるの？ 付き合ってる人は？
+A|Ha, straight to the point.|はは、ずいぶん直球だね。
+B|Sorry, is that too nosy?|ごめん、詮索しすぎ？
+A|No, it's fine. I'm single at the moment.|いや、大丈夫。今は独身だよ。
+B|By choice?|自分で選んで？
+A|Sort of. I'm not really looking right now.|まあね。今は特に探してないんだ。
+S|
+A|What about you?|そっちは？
+B|It's complicated.|ちょっと複雑でね。
+A|Ooh. That's a story.|おっと。何かありそうだね。
+B|Maybe after a couple of drinks.|何杯か飲んだあとでね。
+A|Fair enough, I won't push.|わかった、無理には聞かないよ。
+S|
+B|Honestly, I'm just enjoying my own company these days.|正直、最近は一人の時間を楽しんでるんだ。
+A|That's healthy. There's no rush.|健全だね。急ぐことはないよ。
+B|Exactly. My mum disagrees, but still.|そうそう。母は納得してないけど。
+A|Mums always do.|母親ってそういうものだよね。
+B|Anyway, enough about that. What do you do for fun?|まあ、この話はもういいや。趣味は何？
+
+T|💔|別れ話をする|恋愛|we need to talk, not working, drifted apart, deserve better, no hard feelings
+S|
+A|Can we sit down? We need to talk.|座って話せる？ 大事な話があるんだ。
+B|That sounds serious.|深刻そうだね。
+A|It is. I've been thinking about us for a while.|うん。私たちのこと、しばらく考えてた。
+B|And?|それで？
+A|I don't think it's working anymore.|もう上手くいっていないと思う。
+S|
+B|Is this about last week?|先週のこと？
+A|Not just that. We've drifted apart, and I think you feel it too.|それだけじゃない。気持ちが離れてしまったし、あなたも感じてると思う。
+B|Maybe. I didn't want to admit it.|そうかも。認めたくなかっただけで。
+A|I'm not blaming you. It's nobody's fault.|あなたを責めてるんじゃない。誰のせいでもないよ。
+B|It still hurts to hear.|それでも聞くのはつらいね。
+A|I know. It's hard for me to say.|わかってる。言うのもつらい。
+S|
+B|So what now?|それで、これからどうするの？
+A|I think we both deserve to be with someone who makes us happy.|お互い、自分を幸せにしてくれる人と一緒にいるべきだと思う。
+B|Yeah. I think you're right.|うん。その通りだと思う。
+A|I don't want us to hate each other.|お互いを嫌いになりたくはない。
+B|No hard feelings. Really. Thank you for being honest.|恨みはないよ。本当に。正直に言ってくれてありがとう。
+
+T|🤝|友人と喧嘩して仲直りする|人間関係|I owe you an apology, out of line, didn't mean it, clear the air, we're good
+S|
+A|Hey. Can we talk about the other night?|ねえ。この前の夜のこと、話せる？
+B|Yeah. I've been wanting to, actually.|うん。実は私も話したかった。
+A|I owe you an apology. What I said was out of line.|謝らないといけない。あの時言ったことは言いすぎだった。
+B|It really stung.|かなり刺さったよ。
+A|I know. I was stressed and I took it out on you. That's not an excuse.|わかってる。ストレスをあなたにぶつけた。言い訳にはならないけど。
+S|
+B|I wasn't exactly fair either. I shouldn't have walked out.|私もフェアじゃなかった。出て行くべきじゃなかった。
+A|I get why you did.|そうした理由はわかるよ。
+B|Still. We should've talked instead of shouting.|それでも。怒鳴り合うんじゃなくて、話すべきだった。
+A|Agreed. Let's not do that again.|同感。もうああいうのはやめよう。
+B|Deal.|約束。
+S|
+A|So, are we good?|それで、もう大丈夫？
+B|We're good. I'm glad you came to find me.|大丈夫だよ。会いに来てくれてうれしい。
+A|I couldn't leave it like that. You mean too much to me.|あのままにはできなかった。あなたは大切な友達だから。
+B|Same. Come on, let's get a coffee and clear the air properly.|私も。コーヒーでも飲んで、ちゃんと話そう。
+A|Best idea you've had all week.|今週一番のアイデアだね。
+
+T|💪|相手を励ます|人間関係|you've got this, believe in you, one step at a time, come a long way, I'm proud of you
+S|
+B|I don't think I can do this presentation tomorrow.|明日のプレゼン、できる気がしない。
+A|Yes, you can. You've been preparing for weeks.|できるよ。何週間も準備してきたじゃない。
+B|What if I freeze up in front of everyone?|みんなの前で固まったらどうしよう。
+A|Then you take a breath and carry on. That's all anyone does.|その時は深呼吸して続ければいい。みんなそうしてるよ。
+B|You make it sound easy.|簡単そうに言うね。
+S|
+A|Remember your first one? You could barely speak.|初めてのプレゼン、覚えてる？ ほとんど話せなかったよね。
+B|Don't remind me.|思い出させないで。
+A|And look at you now. You've come such a long way.|それが今のあなただよ。本当に成長した。
+B|I guess I have.|たしかに、そうかも。
+A|You know this stuff better than anyone in that room.|あの部屋の誰よりも、あなたはこの内容を理解してる。
+S|
+B|Thanks. I needed to hear that.|ありがとう。その言葉が必要だった。
+A|One step at a time. Just get through the first slide.|一歩ずつでいい。最初のスライドだけ乗り切って。
+B|First slide. Okay.|最初のスライド。わかった。
+A|And I'll be in the back, cheering silently.|私は後ろで、心の中で応援してるから。
+B|That actually helps a lot.|それ、本当に心強い。
+
+T|🕊|お悔やみを伝える|人間関係|I'm so sorry for your loss, thinking of you, if there's anything I can do, take all the time you need, here for you
+S|
+A|I just heard about your dad. I'm so sorry.|お父さんのこと、今聞いた。本当にお悔やみ申し上げます。
+B|Thank you. It's been a hard few days.|ありがとう。この数日はつらかった。
+A|I can't imagine. How are you holding up?|想像もつかないよ。気持ちは大丈夫？
+B|Some moments are okay. Others, not so much.|大丈夫な時もあれば、そうでない時もある。
+A|That's completely normal.|それは当然のことだよ。
+S|
+A|Is there anything I can do? Anything at all.|何かできることはある？ 何でもいいから。
+B|Honestly, I don't even know what I need right now.|正直、今は自分に何が必要かもわからない。
+A|Then let me bring dinner round this week. You shouldn't have to think about food.|じゃあ今週、夕飯を持っていくよ。食事のことまで考えなくていいように。
+B|That would help. Thank you.|それは助かる。ありがとう。
+A|And if you just want company, or to be left alone, either's fine.|一緒にいてほしい時も、一人になりたい時も、どっちでも言って。
+S|
+B|He'd have liked you. He was always asking about my friends.|父はあなたのこと、気に入ったと思う。いつも私の友達のことを聞いてたから。
+A|I wish I'd met him.|お会いしたかったな。
+B|The funeral's on Friday, if you want to come.|お葬式は金曜なんだ。もし来られたら。
+A|Of course I'll be there.|もちろん行くよ。
+B|Thank you for coming over. It means a lot.|来てくれてありがとう。本当にうれしい。
+
+T|🏥|病気の家族を見舞う|人間関係|visiting hours, how's she doing, on the mend, keep her spirits up, brought you something
+S|
+A|Hi, I'm here to see my aunt. What are the visiting hours?|叔母のお見舞いに来ました。面会時間は何時までですか？
+B|Until eight. She's in ward C, bed four.|8時までです。C病棟の4番ベッドです。
+A|Thank you. How's she doing today?|ありがとうございます。今日の様子はどうですか？
+B|Better. She ate a proper lunch, which is a good sign.|良くなっていますよ。お昼をちゃんと食べたので、良い兆候です。
+A|That's a relief.|それは安心しました。
+S|
+A|Hey, you. How are you feeling?|やあ。気分はどう？
+B|Bored, mostly. And the food is terrible.|ほとんど退屈。あと食事がひどい。
+A|Ha, that sounds like you're on the mend.|はは、それは回復してきてる証拠だね。
+B|The nurses say another week.|看護師さんはあと1週間って。
+A|That's not long. I brought you something.|そんなに長くないよ。何か持ってきたんだ。
+S|
+B|Is that the crossword book? You remembered!|それ、クロスワードの本？ 覚えててくれたんだ！
+A|Of course. And some proper snacks.|もちろん。あとちゃんとしたお菓子も。
+B|You're a good kid.|あなたはいい子だね。
+A|I'll come back on Thursday. Anything else you need?|木曜にまた来るよ。他に必要なものは？
+B|Just you. That's plenty.|あなたが来てくれれば。それで十分。
+
+T|📅|週末の予定を聞く|雑談|got any plans, up to much, take it easy, sounds nice, let me know
+S|
+A|Got any plans for the weekend?|週末の予定はある？
+B|Nothing set in stone. Maybe a hike on Saturday if the weather holds.|決まったものは特に。天気が持てば土曜にハイキングかな。
+A|Where were you thinking?|どこに行くつもり？
+B|The hills just north of town. It's an easy one.|町の北の丘。楽なコースだよ。
+A|That sounds nice. I've never been.|いいね。行ったことないな。
+S|
+B|You should come. It's about two hours round trip.|来なよ。往復2時間くらいだよ。
+A|I might, actually. What time?|行こうかな。何時？
+B|Leave around nine, back for lunch.|9時頃出て、昼には戻る。
+A|Perfect. I'll let you know tomorrow.|完璧。明日返事するね。
+B|No pressure either way.|どっちでも気にしないで。
+S|
+B|What about you? Up to much?|そっちは？ 何かある？
+A|Sunday I'm taking it easy. Laundry, maybe a film.|日曜はのんびり。洗濯と、映画でも観るかな。
+B|Living the dream.|理想の生活だね。
+A|Honestly, after this week, yes.|正直、今週のあとだと本当にそう。
+B|I hear you.|わかるよ。
+
+T|📸|旅行の思い出を話す|雑談|highlight of the trip, off the beaten track, would go back, once in a lifetime, the food alone
+S|
+A|How was Portugal?|ポルトガルはどうだった？
+B|Amazing. Honestly, one of the best trips I've done.|最高だった。正直、今までで一番良い旅の一つ。
+A|What was the highlight?|一番のハイライトは？
+B|A tiny village up in the hills. Totally off the beaten track.|丘の上の小さな村。完全に観光地から外れたところ。
+A|How did you find it?|どうやって見つけたの？
+B|A guy at a café told us about it. We just went.|カフェの人が教えてくれて。そのまま行ったんだ。
+S|
+A|What was it like?|どんなところだった？
+B|Stone houses, one restaurant, and the best views I've ever seen.|石造りの家に、レストランが1軒、あとは今まで見た中で最高の景色。
+A|That sounds unreal.|信じられないくらい素敵だね。
+B|And the food. The food alone was worth the flight.|それに料理。料理だけでも飛行機代の価値があった。
+A|Now I'm hungry and jealous.|お腹も空いたし、羨ましくなってきた。
+S|
+A|Would you go back?|また行きたい？
+B|In a heartbeat. I'm already planning it.|迷わずね。もう計画してる。
+A|Send me the details. I want in.|詳細送って。私も行きたい。
+B|Deal. You'll love it.|決まり。絶対気に入るよ。
+
+T|🎬|映画やドラマの感想を話し合う|雑談|what did you think, the ending, plot twist, didn't see it coming, worth watching
+S|
+A|So, what did you think of the film?|それで、映画はどうだった？
+B|Honestly? Mixed feelings.|正直に言うと、複雑な気持ち。
+A|Really? I loved it.|そう？ 私は大好きだった。
+B|The first half was great. The ending lost me.|前半は良かったよ。でも結末で置いていかれた。
+A|The twist? I didn't see it coming at all.|どんでん返し？ 全然予想できなかった。
+S|
+B|That's my problem. It came out of nowhere.|そこが問題なんだ。唐突すぎる。
+A|But that's what made it exciting.|でもそれがワクワクさせたんじゃない。
+B|Exciting, sure. But it didn't make sense with the rest.|ワクワクはね。でも他の部分と辻褄が合わない。
+A|Okay, I'll give you that. The middle bit was a stretch.|それは認める。中盤はちょっと無理があった。
+B|See? We agree on something.|ほらね。意見が合うところもある。
+S|
+A|Would you tell people to watch it, though?|それでも、人には観るよう勧める？
+B|Yeah, for the performances alone. The lead was incredible.|うん、演技だけでも観る価値はある。主演が素晴らしかった。
+A|Agreed. Same time next week? There's a new one out.|同感。来週も同じ時間に？ 新作が出るよ。
+B|You're on. My pick this time.|いいね。今度は私が選ぶ番。
+
+T|⚽|スポーツの試合を観戦しながら話す|雑談|what a goal, offside, come on, extra time, they've got this
+S|
+A|Did you see that? What a goal!|見た？ すごいゴール！
+B|Unbelievable. From that angle!|信じられない。あの角度から！
+A|That's why he's the best. Right, one-nil.|だから彼は最高なんだ。よし、1対0。
+B|Don't get comfortable. There's still forty minutes.|油断しないで。まだ40分ある。
+A|We've got this.|もう勝ったも同然。
+S|
+B|Wait, was that offside?|待って、今のオフサイド？
+A|No way, he was level.|絶対違う、並んでたよ。
+B|They're checking it. Come on...|今確認してる。頼む…
+A|Goal stands! One-one.|ゴール認められた！ 1対1。
+B|Told you not to get comfortable.|だから油断するなって言ったのに。
+S|
+A|This is going to extra time, isn't it?|これ、延長戦になりそうだね。
+B|Looks like it. I can't take the stress.|そうみたい。ストレスに耐えられない。
+A|Another drink?|もう一杯？
+B|Definitely. If they lose, I'm blaming you.|絶対。負けたらあなたのせいにするから。
+A|Fair enough.|まあ、仕方ないね。
+
+T|🌦|天気予報を確認して予定を変える|日常|forecast, chance of rain, call it off, move it to, play it by ear
+S|
+A|Have you checked the forecast for Saturday?|土曜の天気予報、見た？
+B|Just now. Seventy percent chance of rain.|今見たところ。降水確率70%。
+A|Seventy? That's not great for a picnic.|70%？ ピクニックにはきついね。
+B|No. And it's supposed to be windy too.|うん。しかも風も強いらしい。
+A|Should we call it off?|中止にする？
+S|
+B|What about moving it to Sunday?|日曜に変えるのはどう？
+A|Let me look... Sunday's sunny. Twenty-two degrees.|見てみる… 日曜は晴れ。22度。
+B|Perfect. Does that work for everyone?|完璧。みんな大丈夫かな？
+A|I'll message the group.|グループにメッセージするね。
+B|If not, we could do indoors on Saturday instead.|だめなら、土曜は室内で何かしてもいいし。
+S|
+A|Everyone's fine with Sunday.|みんな日曜で大丈夫だって。
+B|Great. Same place, same time?|よかった。同じ場所、同じ時間で？
+A|Yes. And let's play it by ear on the food. I'll bring a bit extra.|うん。食べ物は臨機応変に。少し多めに持っていく。
+B|Sounds good. Fingers crossed the forecast holds.|いいね。予報が当たりますように。
+
+T|🌀|地震・台風のときの安否確認|トラブル|are you okay, felt it, safe, stay indoors, check in
+S|
+A|Hey, are you okay? I just felt a big one.|ねえ、大丈夫？ 今すごく大きいのを感じた。
+B|I'm fine. It shook for ages, though.|大丈夫。でもかなり長く揺れたね。
+A|Anything fall over at yours?|そっちで何か倒れた？
+B|A couple of books. Nothing broken. You?|本が数冊。壊れたものはない。そっちは？
+A|Same. Just a bit shaken.|同じ。ちょっと動揺してるだけ。
+S|
+B|Have you heard from your parents?|ご両親とは連絡取れた？
+A|Not yet. The lines are busy.|まだ。回線が混んでる。
+B|Try messaging instead of calling. That usually gets through.|電話じゃなくてメッセージを試してみて。そのほうが繋がりやすいよ。
+A|Good idea. Doing that now.|そうだね。今やってみる。
+B|Let me know when you hear back.|返事が来たら教えて。
+S|
+A|They're fine. Just a lot of aftershocks.|無事だった。余震が多いだけ。
+B|Thank goodness. Are you staying in tonight?|よかった。今夜は家にいる？
+A|Yes. The news says stay indoors until it settles.|うん。ニュースで落ち着くまで屋内にいろって。
+B|Same here. Check in again in the morning?|私も。朝にまた連絡し合う？
+A|Definitely. Stay safe.|もちろん。気をつけてね。

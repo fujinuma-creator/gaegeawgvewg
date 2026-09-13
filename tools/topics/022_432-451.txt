@@ -1,0 +1,414 @@
+T|🤝|共通の知人を通じて紹介された|人間関係|I've heard a lot about you, all good things, how do you two know each other, finally meet, put a face to the name
+S|
+B|Kohei, this is Ana. Ana, Kohei — the one I keep telling you about.|航平、こちらアナ。アナ、こちらが航平。いつも話してる人だよ。
+A|Ana! I've heard a lot about you.|アナさん！ お噂はかねがね。
+B|All good things, I hope.|いいことばかりだといいけど。
+A|Mostly. There was one story about a karaoke night.|だいたいは。カラオケの夜の話が1つありましたけど。
+B|Sam! You promised.|サム！ 約束したのに。
+A|Ha, don't worry. He said you were brilliant.|はは、心配しないで。すごく上手かったって言ってましたよ。
+S|
+A|So how do you two know each other?|お二人はどういう知り合いなんですか？
+B|We were flatmates at uni. Three years of chaos.|大学時代のルームメイト。3年間のカオスだった。
+A|And you're still friends. That's impressive.|それでまだ友達なんですね。すごい。
+B|Barely. He never did the dishes.|ぎりぎりね。彼は一度も皿を洗わなかったから。
+A|Some things never change, then.|変わらないものってあるんですね。
+B|You're going to get on fine, you two.|2人とも、仲良くなれそうだね。
+S|
+A|It's nice to finally put a face to the name.|やっとお会いできてよかったです。
+B|Same. Sam talks about you constantly.|こちらこそ。サムはいつもあなたの話をしてるので。
+A|Now I'm worried about which stories.|どんな話をされてるか心配になってきました。
+B|Ha. Let's get a drink and I'll tell you.|はは。飲みながら教えますよ。
+
+T|🏷|名前の読み方や呼び方を確認する|人間関係|how do you pronounce, did I get that right, what do you prefer to be called, is it okay if I call you, correct me
+S|
+A|Sorry, how do you pronounce your name? I don't want to get it wrong.|すみません、お名前はどう発音するんですか？ 間違えたくなくて。
+B|It's "Nee-am". Spelled N-I-A-M-H.|「ニーヴ」です。綴りはN-I-A-M-H。
+A|Niamh. Did I get that right?|ニーヴ。合ってますか？
+B|Perfect. Most people say "Nye-am".|完璧です。ほとんどの人は「ナイアム」って言うんです。
+A|I can see why. The spelling doesn't help.|わかります。綴りが手がかりにならないですもんね。
+B|It's Irish. Nothing sounds like it looks.|アイルランドの名前で。見た目通りには発音しないんです。
+S|
+B|And you're Kohei? Am I saying that right?|あなたは航平さん？ 合ってますか？
+A|Close. It's "Ko-hey". Two syllables.|惜しい。「コウ・ヘイ」。2音節です。
+B|Kohei. Do you have a nickname, or is that fine?|コウヘイ。ニックネームはありますか、それともこれで？
+A|Kohei's fine. My friends sometimes say Ko.|航平で大丈夫です。友達は時々コウって呼びます。
+B|Is it okay if I call you Ko?|コウって呼んでもいいですか？
+A|Sure. That means we're friends now.|もちろん。じゃあもう友達ですね。
+S|
+A|Correct me if I slip up, though.|間違えたら直してくださいね。
+B|Same here. No offence taken either way.|こちらも。どちらにしても気にしませんから。
+A|Deal, Niamh.|決まりです、ニーヴ。
+B|Well done. You're a natural.|お見事。センスありますね。
+
+T|💼|相手の職業を聞いて話を広げる|人間関係|what do you do, what does that involve, how did you get into that, sounds fascinating, the best part
+S|
+A|So what do you do?|お仕事は何をされているんですか？
+B|I'm a sound engineer. Mostly for live events.|音響エンジニアです。主にライブイベントの。
+A|Oh, that's interesting. What does that involve?|面白そうですね。どんなことをするんですか？
+B|Setting up the equipment, mixing during the show, and fixing things when they break.|機材のセッティング、本番中のミキシング、それと壊れた時の修理です。
+A|So a lot of pressure on the night?|本番当日はかなりプレッシャーがある？
+B|A lot. If the sound goes, everyone looks at me.|かなり。音が止まったら、全員が私を見ますから。
+S|
+A|How did you get into that?|どうやってその道に？
+B|I was in a band that was terrible. But I was good at the technical side.|ひどいバンドにいたんです。でも技術面は得意で。
+A|So you switched sides.|それで裏方に回ったんですね。
+B|Exactly. Best decision I ever made.|その通り。人生最高の決断でした。
+A|What's the best part?|一番いいところは？
+B|That moment when the first note hits and the room reacts. Every time.|最初の音が鳴って、会場が反応するあの瞬間。毎回ですね。
+S|
+A|That sounds fascinating. I'd love to see it from your side sometime.|魅力的ですね。いつかそちら側から見てみたいです。
+B|Come to a show. I'll get you a spot at the desk.|ライブに来てください。卓のそばに場所を用意しますよ。
+A|Really? I'd love that.|本当に？ ぜひ。
+B|Give me your number. I'll let you know when.|番号を教えてください。日程を連絡します。
+
+T|🗣|自分の仕事をわかりやすく一言で説明する|人間関係|in a nutshell, basically, the simple version, what that means is, think of it as
+S|
+B|What do you do, then?|それで、お仕事は？
+A|In a nutshell, I help companies figure out what their customers actually want.|簡単に言うと、企業が顧客の本当のニーズを把握するのを手伝っています。
+B|Like market research?|市場調査みたいな？
+A|Sort of. But I talk to real people, not just numbers.|そんな感じ。でも数字だけじゃなく、実際の人と話すんです。
+B|Okay, what does that look like day to day?|なるほど、日々の仕事はどんな感じ？
+A|Interviews, watching people use products, then writing up what I learn.|インタビューをして、人が製品を使う様子を観察して、わかったことをまとめる。
+S|
+B|So you're the person who tells them the app is confusing.|つまり、アプリがわかりにくいって伝える人なんですね。
+A|Exactly. Politely, with evidence.|その通り。丁寧に、根拠つきで。
+B|Do they listen?|聞いてもらえます？
+A|Sometimes. The good ones do.|時々。いい会社は聞いてくれます。
+B|Think of it as... translation?|翻訳みたいなもの？
+A|That's a good way to put it. I translate between users and the people building things.|いい言い方ですね。ユーザーと作る側の間の通訳です。
+S|
+B|I'd never heard of that as a job.|そんな仕事があるって知らなかった。
+A|Most people haven't. That's why I keep the simple version ready.|ほとんどの人は知らないですね。だから簡単な説明を用意してるんです。
+B|Well, it worked. I get it now.|効果ありましたよ。今はわかります。
+
+T|🎪|「このイベントにはよく来るんですか？」と聞く|人間関係|do you come here often, first time, regular, what keeps you coming back, worth it
+S|
+A|Do you come to these events often?|こういうイベントにはよく来るんですか？
+B|Every month, pretty much. I'm a bit of a regular.|ほぼ毎月。常連みたいなものです。
+A|What keeps you coming back?|何が理由で通ってるんですか？
+B|The people, mainly. The talks are hit and miss, but the crowd's great.|主に人ですね。講演は当たり外れがあるけど、参加者がいいんです。
+A|That's reassuring. It's my first time.|それは心強いです。私は初めてで。
+B|Welcome! You'll be fine.|ようこそ！ 大丈夫ですよ。
+S|
+A|Is it always this busy?|いつもこんなに混んでいるんですか？
+B|Busier than usual. The speaker's quite well known.|いつもより多いですね。今日の講演者がわりと有名なので。
+A|Ah, that explains it.|なるほど、それでですね。
+B|Stick around after. That's when the real conversations happen.|終わった後も残るといいですよ。本当の会話はそこで生まれるので。
+A|I'll do that. Thanks for the tip.|そうします。教えてくれてありがとう。
+S|
+B|Is it worth it for you, do you think? Coming again?|来る価値がありそうですか？ また来ます？
+A|Ask me after the talk. But so far, yes.|講演の後に聞いてください。でも今のところ、はい。
+B|Good answer. I'll find you afterwards.|いい答えですね。終わったら探しますよ。
+
+T|🍷|会場や料理の感想を話して場をつなぐ|人間関係|nice venue, have you tried the, the food's good, what do you think of, break the ice
+S|
+A|Nice venue, isn't it?|いい会場ですね。
+B|It is. I've never been here before.|ですね。ここは初めて来ました。
+A|Me neither. The ceiling's incredible.|私も。天井がすごいですね。
+B|I was just looking at that. Is it original?|ちょうど見てたところです。当時のものかな？
+A|Apparently it's a hundred years old. Used to be a bank.|100年前のものらしいです。元は銀行だったとか。
+B|That explains all the marble.|それで大理石だらけなんですね。
+S|
+A|Have you tried the food yet?|料理はもう食べました？
+B|Just the little tarts. They're dangerous.|小さいタルトだけ。あれは危険です。
+A|I've had four. I'm not proud of it.|4つ食べました。誇れることじゃないですけど。
+B|Four is nothing. I'm going back for more.|4つなんて大したことないですよ。私はもっと取りに行きます。
+A|In that case, I'll join you.|それなら、ご一緒します。
+S|
+B|What do you think of the wine?|ワインはどうですか？
+A|Better than expected for a free event.|無料イベントにしては期待以上です。
+B|That's the spirit. I'm Ellie, by the way.|その通り。ところで、エリーです。
+A|Kohei. Nice to meet you over tarts.|航平です。タルトを挟んで、はじめまして。
+
+T|🔍|相手の話に興味を示して深掘りする|人間関係|tell me more, what was that like, how come, and then what, that's fascinating
+S|
+B|I spent a year living on a boat, actually.|実は、1年間船の上で暮らしていたんです。
+A|Wait, what? Tell me more.|え、何ですって？ もっと聞かせてください。
+B|It was a narrowboat on the canals. Tiny, but I loved it.|運河のナローボートで。小さいけど、大好きでした。
+A|What was that like day to day?|日々の暮らしはどんな感じでしたか？
+B|Slow. You move at four miles an hour. You notice everything.|ゆっくりです。時速6キロくらいで進むので。何もかもに気づくようになります。
+A|How come you decided to do it?|どうしてやろうと思ったんですか？
+B|I was burnt out. I needed to be somewhere that didn't rush.|燃え尽きていて。急かされない場所が必要だったんです。
+S|
+A|And did it work?|それで、効果はありましたか？
+B|Completely. I came back a different person.|完全に。別人になって戻ってきました。
+A|In what way?|どんなふうに？
+B|Calmer. I stopped needing to fill every minute.|穏やかになりました。毎分を何かで埋めなくてもよくなった。
+A|That's fascinating. Was there a hardest part?|興味深いですね。一番大変だったことは？
+B|Winter. Ice on the inside of the windows.|冬です。窓の内側に氷が張るんですよ。
+S|
+A|Would you do it again?|もう一度やりたいですか？
+B|Tomorrow, if I could.|できるなら明日にでも。
+A|I want to hear the whole story. Can we get a coffee sometime?|全部聞きたいです。今度コーヒーでも飲みながら話しませんか？
+B|I'd love that. Nobody usually asks this many questions.|ぜひ。普通はこんなにたくさん質問してくれないので。
+A|Their loss.|もったいないですね。
+
+T|🎯|共通点を見つけて盛り上がる|人間関係|no way, me too, same here, what are the odds, we have to
+S|
+A|Wait, you grew up in Bristol? Me too!|え、ブリストルで育ったんですか？ 私もです！
+B|No way! Which part?|嘘でしょ！ どの辺り？
+A|Near the harbour. My school was right by the water.|港の近く。学校が水辺のすぐそばでした。
+B|Not St Mary's?|セント・メアリーズじゃないですよね？
+A|St Mary's!|セント・メアリーズです！
+B|I was two years above you. What are the odds?|私は2学年上でした。なんて偶然！
+S|
+A|Did you have Mr Patel for science?|理科はパテル先生でした？
+B|The one who set fire to his own tie?|自分のネクタイに火をつけた人？
+A|The very same. I was there for that.|まさにその人。私、その場にいました。
+B|I've been telling that story for twenty years and nobody believes me.|20年間その話をしてるのに、誰も信じてくれなくて。
+A|I believe you. I saw it.|信じますよ。見ましたから。
+B|Finally, a witness.|やっと目撃者が。
+S|
+A|We have to go back sometime. See if the chip shop's still there.|いつか一緒に戻りましょう。あのフィッシュ＆チップスの店がまだあるか見に。
+B|Same here, I've been meaning to. Let's do it.|私もずっと行きたいと思ってて。行きましょう。
+A|Two Bristol kids in a room of strangers. What are the odds.|知らない人だらけの部屋にブリストル出身が2人。なんて偶然。
+B|Small world. Very small.|世間は狭い。すごく狭い。
+
+T|🌍|相手の出身地について知っていることを話す|人間関係|I've been there, isn't that where, I've heard, what's it really like, the stereotype
+S|
+A|You're from Osaka? I've actually been there.|大阪出身なんですか？ 実は行ったことがあります。
+B|Really? When?|本当に？ いつ？
+A|Three years ago. Just for a few days, but I loved it.|3年前。数日だけでしたが、大好きになりました。
+B|What did you think?|どう思いましたか？
+A|The food was unreal. I ate okonomiyaki twice a day.|食べ物が信じられないくらい美味しくて。お好み焼きを1日2回食べました。
+B|That's the correct amount.|それが正しい回数です。
+S|
+A|Isn't Osaka where people are known for being funny?|大阪って、面白い人が多いことで有名ですよね？
+B|That's the stereotype. It's mostly true.|それがステレオタイプです。だいたい本当ですけど。
+A|What's it really like, though? Beyond the stereotype.|でも実際はどうなんですか？ ステレオタイプの先は。
+B|Warmer than Tokyo. People talk to strangers. It's loud, in a good way.|東京より温かいです。知らない人にも話しかける。いい意味でにぎやかです。
+A|That's exactly how it felt.|まさにそう感じました。
+B|Then you got the real Osaka. Good.|じゃあ本物の大阪を体験したんですね。よかった。
+S|
+A|I've heard the castle's worth seeing. I missed it.|お城は見る価値があると聞きました。見逃したんです。
+B|Next time. And I'll take you to the places tourists don't find.|次回に。観光客が見つけない場所にも連れて行きますよ。
+A|That's a promise I'm holding you to.|その約束、覚えておきますからね。
+
+T|🤲|言葉が通じにくいときにジェスチャーで補う|学び|like this, point, show you, does that make sense, we got there
+S|
+A|Sorry, I don't know the word. It's... like this?|すみません、単語がわからなくて。えっと… こう？
+B|You're making a circle. A wheel?|円を描いてますね。車輪？
+A|No, smaller. For the door.|いえ、もっと小さい。ドアのための。
+B|A key?|鍵？
+A|Yes! Key. Sorry, my mind went blank.|そう！ 鍵。ごめんなさい、頭が真っ白になって。
+B|No problem. Happens to me in Japanese all the time.|大丈夫ですよ。私も日本語でしょっちゅうそうなります。
+S|
+A|I need the key... for the room... at the top?|鍵が必要で… 部屋の… 上の？
+B|The room upstairs? Let me show you. Come.|上の階の部屋？ 案内しますね。来て。
+A|Thank you. This is easier than words.|ありがとう。言葉より簡単ですね。
+B|Pointing is a language too.|指差しも言語ですよ。
+A|Does that make sense, what I said?|私が言ったこと、通じてました？
+B|Perfectly. We got there.|完璧に。ちゃんと伝わりました。
+S|
+A|I should learn more words.|もっと単語を覚えないと。
+B|You'll pick them up. You did well.|自然と身につきますよ。上手にできてました。
+A|Key. I won't forget that one now.|鍵。これはもう忘れません。
+B|Ha. Learned the hard way.|はは。苦労して覚えましたね。
+
+T|🚶|話が長くなりそうな相手からやんわり離れる|人間関係|I should let you go, I'll let you mingle, it was lovely chatting, I need to find, catch you later
+S|
+B|...and that's when I decided to buy a second boat. Now the first one—|…それで2隻目の船を買うことにしたんです。それで1隻目が—
+A|That's a great story. I should let you go, though — I'm sure you've got people to see.|素敵な話ですね。でも、そろそろ解放しないと。他にも会う人がいるでしょうし。
+B|Oh, I'm fine. Where was I?|いえ、大丈夫ですよ。どこまで話しましたっけ？
+A|The second boat. Actually, I need to find my colleague before she leaves.|2隻目の船。実は、同僚が帰る前に見つけないといけなくて。
+B|Oh, of course.|ああ、もちろん。
+A|It was lovely chatting. Really.|お話しできて楽しかったです。本当に。
+S|
+B|We should talk boats again sometime.|また船の話をしましょう。
+A|Definitely. I'll come and find you later, if you're still here.|ぜひ。まだいらっしゃったら、あとで探しますね。
+B|I'll be by the bar.|バーのそばにいますよ。
+A|Perfect. Catch you later.|わかりました。ではまたあとで。
+S|
+A|Sorry — Ellie! There you are.|ごめん、エリー！ いた。
+B|Were you stuck?|捕まってた？
+A|Twenty minutes on boats. He's lovely, but wow.|船の話を20分。いい人なんだけど、すごかった。
+B|You did well to escape. Drink?|よく逃げたね。飲む？
+A|Please. And keep me away from the bar.|お願い。あと、バーには近づかせないで。
+
+T|🙋|グループの会話に途中から入る|人間関係|mind if I join, what are we talking about, sorry to interrupt, I couldn't help overhearing, go on
+S|
+A|Mind if I join you? I don't know anyone else here.|ご一緒してもいいですか？ 他に知り合いがいなくて。
+B|Of course! Pull up a chair.|もちろん！ 椅子をどうぞ。
+A|Thanks. What are we talking about?|ありがとう。何の話をしてたんですか？
+B|Whether pineapple belongs on pizza. It's getting heated.|パイナップルはピザに合うかどうか。白熱してます。
+A|Oh, I have strong opinions on this.|それについては強い意見がありますよ。
+B|Good. We need a tiebreaker.|よかった。決着をつける人が必要だったんです。
+S|
+A|Sorry to interrupt, but I couldn't help overhearing — did you say you were in Lisbon last month?|割り込んですみません、つい聞こえてしまって。先月リスボンにいたって言いました？
+B|I did! Have you been?|はい！ 行ったことありますか？
+A|I'm going in June. Any tips?|6月に行くんです。何かアドバイスは？
+B|Loads. Sit down, this'll take a while.|たくさんあります。座ってください、長くなりますよ。
+A|That's what I was hoping.|それを期待してました。
+S|
+B|Anyway, where were we? Pineapple.|それで、どこまで話してたっけ？ パイナップル。
+A|Yes. For the record: it's fine on pizza.|そう。記録のために言うと、ピザにパイナップルはあり。
+B|Traitor!|裏切り者！
+A|Go on, convince me otherwise.|どうぞ、説得してみてください。
+
+T|✈️|飛行機や電車で隣の席の人と会話する|人間関係|heading home or away, long flight, what takes you to, first time flying, nice talking to you
+S|
+A|Heading home, or heading away?|帰るところですか、それとも出発？
+B|Home, finally. Two weeks of work travel.|やっと帰り。2週間の出張でした。
+A|That sounds exhausting.|大変そうですね。
+B|It was. And you?|そうでした。あなたは？
+A|Holiday. First time in Portugal.|休暇です。ポルトガルは初めてで。
+B|Oh, you'll love it. Where are you staying?|気に入りますよ。どこに泊まるんですか？
+S|
+A|Lisbon for a few days, then the coast.|リスボンに数日、それから海岸沿いに。
+B|Good plan. Try the custard tarts. All of them.|いい計画ですね。エッグタルトを食べてください。全部。
+A|That's the second time I've heard that today.|それを聞くのは今日2回目です。
+B|It's the law.|法律ですから。
+A|Do you fly a lot for work?|仕事でよく飛行機に乗るんですか？
+B|Too much. I know this airport better than my own kitchen.|乗りすぎです。自分のキッチンよりこの空港に詳しいですよ。
+S|
+B|Well, we're landing. It was nice talking to you.|さて、着陸ですね。お話しできて楽しかったです。
+A|You too. Enjoy being home.|こちらこそ。お家でゆっくりしてください。
+B|And you enjoy the tarts.|あなたはタルトを楽しんで。
+A|All of them. As instructed.|全部。言われた通りに。
+
+T|👶|子どもを連れた人に子どもの年齢を聞く|人間関係|how old is she, what a cutie, they grow so fast, at that age, handful
+S|
+A|What a cutie. How old is she?|かわいいですね。何歳ですか？
+B|Eighteen months. She's just started walking.|1歳半です。歩き始めたばかりで。
+A|Oh, that's a fun age.|楽しい時期ですね。
+B|Fun, and exhausting. She doesn't stop.|楽しいけど、疲れます。じっとしていなくて。
+A|I bet. My nephew's the same age. Absolute handful.|でしょうね。甥が同じ年で。本当に手がかかります。
+B|They're all handfuls at that age.|この年頃はみんなそうですよ。
+S|
+A|Is she saying much yet?|もう何か話しますか？
+B|A few words. "No" is her favourite.|いくつか。「いや」がお気に入りです。
+A|Ha, of course it is.|はは、やっぱりそうですよね。
+B|And "dog". Everything with four legs is a dog.|あと「わんわん」。四本足のものは全部わんわんです。
+A|That's adorable.|かわいいですね。
+B|It is until she calls a horse a dog in front of the farmer.|農家の人の前で馬をわんわんって呼ぶまではね。
+S|
+A|They grow so fast, though. Enjoy it.|でも本当に早く大きくなりますよね。楽しんでください。
+B|Everyone says that. I'm trying.|みんなそう言います。頑張ってます。
+A|Bye, little one. Bye!|バイバイ、おちびさん。バイバイ！
+B|She's waving. She likes you.|手を振ってますよ。気に入ったみたい。
+
+T|🐕|ペットの散歩中に飼い主同士で話す|人間関係|what breed is he, is he friendly, how old, they get on well, see you at the park
+S|
+A|Is he friendly? Can they say hello?|人懐っこいですか？ 挨拶させてもいいですか？
+B|Very friendly. Go ahead.|とても。どうぞ。
+A|Oh, they like each other. What breed is he?|お互い気に入ったみたいですね。何の犬種ですか？
+B|Border collie, mostly. A bit of something else in there.|ほぼボーダーコリー。少し他の血も入ってます。
+A|He's beautiful. How old?|綺麗な子ですね。何歳ですか？
+B|Three. Still thinks he's a puppy.|3歳。まだ自分が子犬だと思ってます。
+S|
+B|And yours? She's lovely.|そちらは？ かわいい子ですね。
+A|Milo. He's a rescue, so we're not sure. Some kind of terrier.|マイロです。保護犬なので、はっきりしなくて。テリアの一種かと。
+B|How long have you had him?|飼ってどのくらいですか？
+A|Six months. He's calmed down a lot.|6か月。だいぶ落ち着きました。
+B|They get on well, look.|仲良くしてますね、見て。
+A|They really do. It's rare for Milo.|本当ですね。マイロにしては珍しい。
+S|
+B|Do you come to this park often?|この公園にはよく来ますか？
+A|Every morning, around eight.|毎朝8時頃に。
+B|Same. Funny we haven't crossed paths.|同じです。今まで会わなかったのが不思議ですね。
+A|Well, now we have. See you tomorrow, maybe.|でも今日会えましたね。明日また会うかもしれませんね。
+B|Milo and Bruno. The new best friends.|マイロとブルーノ。新しい親友ですね。
+
+T|🏋|ジムや習い事で常連の人に声をかける|人間関係|I see you here a lot, how long have you been coming, any tips, you make it look easy, see you next week
+S|
+A|Hey, I see you here a lot. You're always on the rowing machine.|よくお見かけしますね。いつもローイングマシンで。
+B|Ha, you've noticed. Yeah, it's my thing.|はは、気づいてましたか。そう、これが好きなんです。
+A|How long have you been coming?|どのくらい通ってるんですか？
+B|About two years. Three times a week.|2年くらい。週3回。
+A|That's impressive. I'm on week three.|すごいですね。私は3週目です。
+B|Week three's the hard part. It gets easier.|3週目が一番大変なんです。だんだん楽になりますよ。
+S|
+A|Any tips for a beginner?|初心者にアドバイスはありますか？
+B|Don't try to keep up with anyone. Just show up.|誰かに合わせようとしないこと。とにかく来ること。
+A|That's it?|それだけ？
+B|That's ninety percent of it. The rest is technique.|それが9割。残りは技術です。
+A|You make it look so easy.|すごく楽そうにやってますね。
+B|Two years of not looking easy got me here.|楽じゃない2年間があって、今があるんです。
+S|
+A|Would you mind showing me the rowing form sometime?|今度、ローイングのフォームを見てもらえますか？
+B|Sure. I'm here Tuesdays and Thursdays at seven.|いいですよ。火曜と木曜の7時にいます。
+A|Thursday, then. Thanks.|じゃあ木曜に。ありがとう。
+B|See you then. Don't skip it.|その時に。サボらないでね。
+
+T|🏘|ご近所さんに引っ越しの挨拶をする|住まい|I've just moved in, next door, wanted to introduce myself, if you ever need anything, welcome to the street
+S|
+A|Hi, sorry to bother you. I've just moved in next door.|こんにちは、お邪魔します。隣に引っ越してきた者です。
+B|Oh, hello! We saw the van yesterday.|あら、こんにちは！ 昨日トラックを見ましたよ。
+A|That was us. I'm Kohei. I just wanted to introduce myself.|それです。航平です。ご挨拶に伺いました。
+B|Lovely to meet you. I'm Margaret. Welcome to the street.|お会いできてうれしいわ。マーガレットよ。この通りへようこそ。
+A|Thank you. I brought some biscuits, as a hello.|ありがとうございます。ご挨拶にビスケットをお持ちしました。
+B|Oh, you didn't have to! But I won't say no.|まあ、そんな気を使わなくても！ でもいただくわ。
+S|
+A|Is there anything I should know about the street?|この通りで知っておくべきことはありますか？
+B|Bins go out Tuesday night. And the postman comes at about ten.|ゴミは火曜の夜に出します。郵便屋さんは10時頃ですね。
+A|Good to know.|覚えておきます。
+B|And the parking's a bit tight on weekends. Get in early.|それと週末は駐車場が混みます。早めに停めるといいわ。
+A|I'll remember that.|覚えておきます。
+S|
+B|If you ever need anything — a cup of sugar, a hand with something — just knock.|何か必要なことがあれば、砂糖1杯でも、手伝いでも、ノックしてね。
+A|That's very kind. Same goes for you.|ご親切に。こちらも同じです。
+B|We look out for each other here. You'll like it.|ここではお互い気にかけ合ってるの。気に入ると思うわ。
+A|I already do.|もう気に入ってます。
+
+T|🛗|同じマンションの人とエレベーターで話す|住まい|which floor, have you lived here long, the lift's slow, nice to meet a neighbour, see you around
+S|
+A|Which floor?|何階ですか？
+B|Five, please. Thanks.|5階お願いします。ありがとう。
+A|Have you lived here long?|ここは長いんですか？
+B|About a year. You?|1年くらい。あなたは？
+A|Just moved in. Third floor.|引っ越してきたばかりです。3階。
+B|Oh, welcome! It's a good building. The lift's slow, though.|ようこそ！ いい建物ですよ。エレベーターは遅いけど。
+A|I'd noticed.|気づいてました。
+S|
+B|Have you found the good coffee place yet? The one on the corner?|美味しいコーヒーの店はもう見つけました？ 角の。
+A|Not yet. Is it worth it?|まだです。行く価値ありますか？
+B|Best in the area. Tell them you're new, they'll give you a discount.|この辺で一番。新しく来たって言えば割引してくれますよ。
+A|Really? That's a good tip.|本当ですか？ いい情報ですね。
+B|Neighbours have to stick together.|ご近所同士、助け合わないと。
+S|
+A|This is me. Nice to meet a neighbour.|ここで降ります。ご近所さんに会えてよかったです。
+B|You too. I'm Dan, by the way.|こちらこそ。ダンです。
+A|Kohei. See you around.|航平です。またどこかで。
+B|See you around, Kohei.|またね、航平さん。
+
+T|🩺|医者や店員など職業の人と雑談する|人間関係|busy day, how long have you worked here, must see all sorts, do you enjoy it, thanks for your help today
+S|
+A|Busy day today?|今日は忙しいですか？
+B|Non-stop since seven. You're my twelfth patient.|7時からずっとです。あなたが12人目の患者さん。
+A|Twelve! How do you keep going?|12人！ どうやって続けてるんですか？
+B|Coffee, mostly. And the occasional patient who asks how I am.|主にコーヒーです。あと、時々私の調子を聞いてくれる患者さん。
+A|Ha, glad I could help.|はは、お役に立てて何よりです。
+S|
+A|How long have you worked here?|ここで働いてどのくらいですか？
+B|Eight years now. It's changed a lot.|もう8年です。だいぶ変わりました。
+A|You must see all sorts.|いろんな人を見てきたでしょうね。
+B|You wouldn't believe half of it.|半分も信じてもらえないと思いますよ。
+A|Do you still enjoy it?|今でも楽しいですか？
+B|Most days. The good ones outweigh the bad.|ほとんどの日は。いい日のほうが悪い日より多いので。
+S|
+B|Right, you're all done. Take those twice a day.|さて、終わりです。それを1日2回飲んでください。
+A|Will do. Thanks for your help today.|そうします。今日はありがとうございました。
+B|Thanks for the chat. It's a nice break.|お話ありがとう。いい息抜きになりました。
+A|Hope the other patients are as charming.|他の患者さんも私くらい感じがいいといいですね。
+B|I'll keep you posted.|報告しますよ。
+
+T|🤐|相手の年齢や結婚の話を聞かないよう配慮する|人間関係|I won't ask, none of my business, whatever works for you, don't want to pry, some people find it
+S|
+B|So, are you married? Kids?|それで、結婚してるの？ 子どもは？
+A|Ha, I'll save you the trouble — I don't usually ask people that.|はは、私はそういうことはあまり聞かないようにしてるんです。
+B|Why not?|どうして？
+A|Some people find it a bit personal. And it's none of my business, really.|個人的すぎると感じる人もいるから。それに、私が口出しすることじゃないし。
+B|That's very considerate. I never thought about it.|気遣いがあるね。考えたこともなかった。
+A|I've been on the receiving end. It can be awkward.|聞かれる側になったことがあって。気まずいこともあるんです。
+S|
+B|What do you ask instead, then?|じゃあ代わりに何を聞くの？
+A|What they're into. What they've been up to. Where they'd go on holiday.|何にハマってるか。最近何をしてたか。休暇にどこに行きたいか。
+B|Safer questions.|安全な質問だね。
+A|More interesting ones, too. Nobody's ever bored talking about their holidays.|それに面白い質問でもある。休暇の話で退屈する人はいないから。
+B|Fair point. So, where would you go?|なるほど。それで、あなたならどこに行く？
+A|See? Already a better conversation.|ほらね。もう会話が良くなった。
+S|
+B|I'll try that at the next party.|次のパーティーで試してみるよ。
+A|Do. And if someone does want to tell you about their kids, they will.|ぜひ。子どもの話をしたい人は、自分から話してくれますから。
+B|Without me prying.|詮索しなくてもね。
+A|Exactly. Whatever works for them.|その通り。相手のペースで。

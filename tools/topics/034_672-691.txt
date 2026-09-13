@@ -1,0 +1,421 @@
+T|🙇|日本人の働き方や礼儀について聞かれた|文化|is it true that, work culture, it's changing, the stereotype, depends on the company
+S|
+B|Is it true that Japanese people work crazy hours?|日本人はとんでもない長時間働くって本当？
+A|Some do. It's the stereotype, and it's partly true.|一部はね。ステレオタイプで、部分的には本当。
+B|Partly?|部分的に？
+A|It depends on the company. Old ones, yes. Newer ones are changing.|会社による。古い会社はそう。新しい会社は変わってきてる。
+B|How late is "late"?|「遅い」ってどのくらい？
+A|Nine, ten at night. And you don't leave before your boss.|夜9時、10時。それに上司より先には帰らない。
+B|Even if you've finished?|仕事が終わってても？
+A|Even then. That part's silly, honestly. But it's changing.|それでも。正直、そこはばかげてる。でも変わってきてるよ。
+S|
+B|And the bowing? Is it really that formal?|お辞儀は？ 本当にそんなに形式的？
+A|At work, yes. There are different depths for different situations.|職場ではね。状況によって角度が違う。
+B|Different depths?|角度が違う？
+A|A quick nod for a colleague. Deeper for a client. Very deep for an apology.|同僚には軽く。クライアントには深く。謝罪はもっと深く。
+B|How do you know which one?|どれを使うか、どうしてわかるの？
+A|You grow up with it. I couldn't explain it, I just do it.|育つ中で身につくんだ。説明はできないけど、やってる。
+S|
+B|It sounds exhausting.|疲れそうだね。
+A|It can be. But there's a good side. People are careful with each other.|そういう面もある。でもいい面もあるよ。お互いに気を配る。
+B|I can see that.|それはわかる。
+A|Exhausting and considerate. That's Japan at work.|疲れるけど思いやりがある。それが日本の職場。
+
+T|🍣|日本の食べ物で何が有名か紹介する|文化|beyond sushi, comfort food, you have to try, it's not what you think, regional
+S|
+B|Okay, Japanese food. What should I know beyond sushi?|日本食について。寿司以外に何を知っておくべき？
+A|So much. Sushi's the famous one, but it's not what people eat every day.|たくさん。寿司は有名だけど、毎日食べるものじゃない。
+B|What do people eat every day?|毎日は何を食べるの？
+A|Rice, miso soup, grilled fish, pickles. Simple things. Comfort food.|ご飯、味噌汁、焼き魚、漬物。シンプルなもの。ほっとする料理。
+B|And for a treat?|ご馳走は？
+A|Ramen. Tonkatsu. Okonomiyaki. Each city has its own thing.|ラーメン。とんかつ。お好み焼き。街ごとに名物がある。
+S|
+B|What do you mean, each city?|街ごとって、どういうこと？
+A|Regional food is huge. Osaka does okonomiyaki, Hiroshima does it differently, Fukuoka has its own ramen.|地方料理がすごく重要なんだ。大阪はお好み焼き、広島は違うスタイル、福岡には独自のラーメンがある。
+B|Different ramen?|違うラーメン？
+A|Completely different broth. People argue about it. Seriously.|スープが全く違う。みんな議論する。本気で。
+B|Like pizza in Italy.|イタリアのピザみたいだね。
+A|Exactly like that.|まさにそう。
+S|
+B|What's the one thing I have to try?|絶対に試すべき1つは？
+A|Convenience store food. I'm serious. The egg sandwich will change your life.|コンビニの食べ物。本気だよ。卵サンドで人生が変わる。
+B|A convenience store?|コンビニ？
+A|It's not what you think. Trust me. Day one, egg sandwich.|想像してるのとは違う。信じて。初日は卵サンド。
+
+T|🗾|日本に来たときに案内すると約束する|文化|when you come to Japan, I'll show you around, I'll take you to, you'll stay with, it's a promise
+S|
+A|When you come to Japan, I'll show you around. Properly.|日本に来たら、案内するよ。ちゃんと。
+B|Really? You'd do that?|本当に？ そこまでしてくれるの？
+A|Of course. You can't go to Japan without a local.|もちろん。地元の人なしで日本に行っちゃだめだよ。
+B|Where would you take me?|どこに連れて行ってくれる？
+A|My grandmother's town first. Tiny. No tourists. Best food in the country.|まず祖母の町。小さくて、観光客なし。国内で一番美味しい食べ物がある。
+B|That sounds amazing.|素敵だね。
+A|Then Osaka, my city. I'll show you where I grew up.|それから大阪、私の街。育った場所を見せるよ。
+S|
+B|Where would I stay?|どこに泊まればいい？
+A|With my family for a few nights. My mum's already asked about you.|数日はうちの家族のところに。母はもうあなたのことを聞いてる。
+B|She has?|そうなの？
+A|She wants to know if you eat fish. I said yes.|魚を食べるかどうか知りたがってた。食べるって答えておいた。
+B|I do eat fish.|魚は食べるよ。
+A|Good. Because she's planning a menu.|よかった。もうメニューを考えてるから。
+S|
+B|Okay, I'm booking flights tonight.|よし、今夜飛行機を予約する。
+A|Do it. Spring, if you can. Cherry blossoms.|そうして。できれば春に。桜が見られる。
+B|Spring. It's a promise, then?|春。じゃあ約束だね？
+A|It's a promise. I'll be at the airport with a sign.|約束。看板を持って空港で待ってる。
+
+T|🤝|友達を別の友達に紹介する|人間関係|you two should meet, I think you'd get on, this is, I've told you about, I'll leave you to it
+S|
+A|Ellie, this is Sam. Sam, Ellie. I've been meaning to introduce you two for ages.|エリー、こちらサム。サム、エリー。ずっと前から2人を引き合わせたかったんだ。
+B|Hi! I've heard a lot about you.|こんにちは！ お噂はかねがね。
+A|Sam's the one who does the pottery. Ellie just started a class.|サムは陶芸をやってる人。エリーは教室を始めたばかり。
+B|Oh! Which studio?|あ！ どこの工房？
+A|See? I knew you'd get on.|ほらね。気が合うと思ってた。
+B|The one near the park. I'm terrible.|公園の近くの。全然下手なんだ。
+A|Sam was terrible too. For about a year.|サムも下手だったよ。1年くらい。
+S|
+B|Kohei says you make bowls that actually hold water now.|航平によると、今は水が漏れないボウルを作れるんだって。
+A|Most of them. Some are more like sieves.|ほとんどはね。ざるみたいなのもあるけど。
+B|I'd love to see your stuff.|作品を見てみたいな。
+A|Come to the studio on Saturday. I'll show you the wheel.|土曜に工房に来て。ろくろを見せるよ。
+B|Really? That would be brilliant.|本当に？ それは素晴らしい。
+S|
+A|Right, I'll leave you two to it. I'm getting drinks.|じゃあ、2人に任せるね。飲み物を取ってくる。
+B|Thanks for the introduction, Kohei.|紹介してくれてありがとう、航平。
+A|That's what I'm here for. Play nicely.|そのためにいるんだから。仲良くね。
+
+T|💼|同僚を取引先に紹介する|仕事|I'd like you to meet, she'll be your main contact, she's been leading, you're in good hands, I'll let her take it from here
+S|
+A|Ms Reyes, I'd like you to meet Lena. She'll be your main contact going forward.|レイエス様、レナを紹介させてください。今後、彼女が主な窓口になります。
+B|Nice to meet you, Lena.|はじめまして、レナさん。
+A|Lena's been leading the design side for two years. She knows the project better than I do.|レナは2年間デザイン側を主導してきました。私よりプロジェクトに詳しいです。
+B|That's reassuring.|それは心強いですね。
+A|You're in good hands. Anything design-related, she's your person.|安心してお任せください。デザインに関することは何でも、彼女が対応します。
+S|
+B|Will you still be involved, Kohei?|航平さんも引き続き関わるんですか？
+A|In the background. But Lena's the one you'll speak to day to day.|裏方としては。でも日常的にやり取りするのはレナです。
+B|And if I need to escalate something?|何かを上に上げる必要がある時は？
+A|Then me. But I doubt you'll need to.|その時は私に。でも、その必要はないと思いますよ。
+B|Good. Lena, could we set up a call for next week?|わかりました。レナさん、来週電話会議を設定できますか？
+A|Of course. I'll send some times tonight.|もちろんです。今夜、候補日時を送ります。
+S|
+A|Right, I'll let Lena take it from here.|では、ここからはレナに任せます。
+B|Thank you for the handover, Kohei. It's been a pleasure.|引き継ぎありがとうございます、航平さん。お世話になりました。
+A|Likewise. You'll like working with her.|こちらこそ。彼女との仕事、きっと気に入りますよ。
+
+T|🏢|自分の会社や事業を簡単に紹介する|仕事|we're a small company, we help, our clients are, we've been going since, in a sentence
+S|
+B|So what does your company do?|御社は何をしているんですか？
+A|In a sentence? We help small businesses look good online.|一言で？ 小さな会社がネット上で良く見えるよう手伝っています。
+B|Like websites?|ウェブサイトみたいな？
+A|Websites, branding, social media. Everything a small shop can't do themselves.|ウェブサイト、ブランディング、SNS。小さな店が自分でできないこと全部。
+B|How big are you?|規模は？
+A|Six people. We've been going since twenty-nineteen.|6人。2019年からやっています。
+B|Who are your clients?|クライアントは？
+A|Cafés, bakeries, a couple of gyms. Local places, mostly.|カフェ、パン屋、ジムがいくつか。主に地元の店です。
+S|
+B|What makes you different from the big agencies?|大きな代理店との違いは？
+A|We're cheap and we're honest. If something won't work, we say so.|安くて正直なところ。うまくいかないものは、そう言います。
+B|That's rare.|それは珍しいですね。
+A|It loses us some clients. It keeps the good ones.|それで失うクライアントもいます。でもいいクライアントは残る。
+B|Do you enjoy it?|楽しいですか？
+A|Most days. Seeing a bakery double its orders because of something we made? Yes.|ほとんどの日は。私たちが作ったもので、パン屋の注文が倍になるのを見る？ 楽しいですよ。
+S|
+B|I might know someone who needs you.|あなたたちを必要としてる人を知ってるかもしれません。
+A|Then send them my way. Here's my card.|ぜひ紹介してください。名刺です。
+B|Will do.|そうします。
+
+T|📇|おすすめの人（医者・美容師など）を紹介する|人間関係|I know a great, I've been going to her for years, tell them I sent you, she's brilliant, I'll send you the number
+S|
+A|You need a dentist? I know a great one.|歯医者を探してる？ いい人を知ってるよ。
+B|Really? I've been putting it off because I don't know anyone.|本当？ 誰も知らないから先延ばしにしてたんだ。
+A|Dr Patel. I've been going to her for five years. She's brilliant.|パテル先生。5年通ってる。素晴らしい先生だよ。
+B|Is she gentle? I'm terrified of dentists.|優しい？ 歯医者がすごく怖くて。
+A|The gentlest. She talks you through everything. No surprises.|一番優しい。全部説明してくれる。驚かされることはない。
+B|That's exactly what I need.|まさにそれが必要なんだ。
+S|
+A|I'll send you the number. Tell them I sent you — she'll fit you in.|番号を送るね。私の紹介だって伝えて。そうすれば予約を入れてくれる。
+B|Is she expensive?|高い？
+A|Fair. Not cheap, not silly. And she never pushes extra work on you.|適正。安くはないけど、法外でもない。それに余計な治療は勧めてこない。
+B|That's worth paying for.|それは払う価値があるね。
+A|It really is. I've had bad ones before. She's the opposite.|本当にそう。前にひどい歯医者に当たったことがある。彼女は正反対。
+S|
+B|Thank you. I'll call tomorrow.|ありがとう。明日電話する。
+A|Do it. And let me know how it goes.|そうして。それでどうだったか教えて。
+B|If it goes badly, I'm blaming you.|悪かったら、あなたのせいにするからね。
+A|It won't. I'd bet money on it.|悪くならないよ。お金を賭けてもいい。
+
+T|📧|紹介してもらった人に初めて連絡する|人間関係|I was given your name by, she suggested I get in touch, I hope you don't mind, would you have time, thank you in advance
+S|
+A|Hi, my name's Kohei. Sarah Miller gave me your name.|こんにちは、航平と申します。サラ・ミラーさんからお名前を伺いました。
+B|Oh, Sarah! Yes, she mentioned you.|ああ、サラ！ はい、あなたのことを聞いていました。
+A|She suggested I get in touch about the design role.|デザインの職について、連絡してみてはと勧められまして。
+B|She did say you'd be a good fit.|あなたなら合うだろうと言っていました。
+A|I hope you don't mind me contacting you directly.|直接ご連絡して、ご迷惑でなければいいのですが。
+B|Not at all. That's what introductions are for.|全然。紹介はそのためにあるんですから。
+S|
+A|Would you have time for a short call this week? Fifteen minutes?|今週、短い電話でお時間をいただけますか？ 15分ほど。
+B|Thursday afternoon works. Two o'clock?|木曜の午後なら。2時は？
+A|Two is perfect. Shall I send a calendar invite?|2時で完璧です。カレンダーの招待を送りましょうか？
+B|Please. And send your portfolio beforehand, if you have one.|お願いします。それと、ポートフォリオがあれば事前に送ってください。
+A|I'll send it today.|今日お送りします。
+S|
+A|Thank you in advance. And please thank Sarah for me.|よろしくお願いします。サラさんにもお礼をお伝えください。
+B|I will. Looking forward to Thursday.|伝えます。木曜を楽しみにしています。
+
+T|🤖|最新のテクノロジーやAIのニュースを話す|テクノロジー|did you see, it's moving so fast, I can't keep up, scary and exciting, in five years
+S|
+A|Did you see the news about the new AI model?|新しいAIモデルのニュース、見た？
+B|The one that writes code? Yes. It's a bit unsettling.|コードを書くやつ？ 見た。ちょっと不安になるね。
+A|It's moving so fast. Every week there's something.|進化が速すぎる。毎週何かある。
+B|I can't keep up. I stopped trying.|ついていけない。追うのをやめた。
+A|Same. I just read the headlines and hope for the best.|同じ。見出しだけ読んで、あとは祈ってる。
+S|
+B|Do you think it'll change your job?|自分の仕事は変わると思う？
+A|Already has. I use it for first drafts. Then I fix them.|もう変わってる。下書きに使ってる。それから自分で直す。
+B|Does it save time?|時間の節約になる？
+A|A bit. But you have to check everything. It's confident and wrong.|少し。でも全部確認しないといけない。自信満々で間違えるから。
+B|Like a very fast intern.|すごく速いインターンみたいだね。
+A|Exactly like that. Useful, but you can't leave it alone.|まさにそう。役に立つけど、放っておけない。
+S|
+B|Where do you think it'll be in five years?|5年後はどうなってると思う？
+A|Honestly? No idea. Nobody does. That's the scary and exciting part.|正直？ わからない。誰もわからない。そこが怖くて面白いところ。
+B|I'll settle for it not taking my job.|私の仕事を奪わなければ、それでいいよ。
+A|Same. And maybe doing my expenses.|同じ。あと経費精算をやってくれたら。
+
+T|🌍|宇宙や地球の話で盛り上がる|雑談|do you ever think about, how small we are, light years, blows my mind, look up
+S|
+A|Do you ever think about how small we are?|自分たちがどれだけ小さいか、考えることある？
+B|At two in the morning, yes. Regularly.|夜中の2時に、定期的にね。
+A|I was reading — the light from some stars left before humans existed.|読んだんだけど、一部の星の光は、人類が存在する前に出発したんだって。
+B|And we're only seeing it now.|それを今、やっと見てる。
+A|It blows my mind. We're looking at the past.|信じられない。過去を見てるんだよ。
+B|And some of those stars might not even exist anymore.|しかもその星の一部は、もう存在しないかもしれない。
+A|Okay, stop. That's too much.|やめて。それは重すぎる。
+S|
+B|Have you ever seen the Milky Way properly? No city lights?|天の川をちゃんと見たことある？ 街の光がないところで。
+A|Once. In the desert. I lay on the ground for an hour.|一度。砂漠で。1時間、地面に寝転がってた。
+B|What was it like?|どんな感じだった？
+A|Like the sky was falling on me. In a good way.|空が降ってくるみたい。いい意味で。
+B|I've never seen it. Light pollution everywhere.|見たことない。どこも光害だらけで。
+A|You have to. Everyone should, once. It rearranges your brain.|絶対見るべき。誰でも一度は。脳が組み替えられる。
+S|
+B|Let's go. Somewhere dark. This year.|行こう。暗い場所に。今年中に。
+A|I'll find a place. Bring a blanket and no phone.|場所を探すよ。毛布を持って、スマホは置いて。
+B|No phone?|スマホなし？
+A|Just look up. That's the whole trip.|ただ見上げる。それが旅のすべて。
+
+T|🔬|健康や栄養の科学的な話をする|健康|the research says, I read a study, it turns out, everything in moderation, the science keeps changing
+S|
+A|I read a study that says coffee's actually good for you now.|コーヒーは実は体にいいっていう研究を読んだ。
+B|Last year it was bad for you.|去年は体に悪いって言ってた。
+A|Exactly. The science keeps changing.|そう。科学は変わり続ける。
+B|Or the headlines keep changing. The science is probably more careful.|というか、見出しが変わり続けてる。科学はたぶんもっと慎重だよ。
+A|That's fair. The study said three cups is fine. Five is too many.|たしかに。研究では3杯は大丈夫。5杯は多すぎだって。
+B|I'm on four. Safe zone.|私は4杯。安全圏だね。
+A|Borderline.|ぎりぎりだね。
+S|
+B|What about sleep? I read that seven hours is the minimum.|睡眠は？ 7時間が最低ラインって読んだ。
+A|It turns out it's more about consistency. Same time every night.|実は規則性のほうが大事らしい。毎晩同じ時間に。
+B|So five hours regularly is better than seven irregularly?|じゃあ不規則な7時間より、規則的な5時間のほうがいい？
+A|No, five is still bad. But seven at random times isn't as good as people think.|いや、5時間はやっぱり悪い。でもバラバラの時間の7時間は、思われてるほど良くない。
+B|I'm failing on both counts.|両方失格だ。
+A|Most people are.|ほとんどの人がそうだよ。
+S|
+B|So what's the answer? Everything in moderation?|それで、答えは？ 何事もほどほどに？
+A|Boring, but yes. Sleep enough, move a bit, don't eat rubbish every day.|退屈だけど、そう。十分寝て、少し動いて、毎日変なものを食べない。
+B|Nobody's going to write a headline about that.|それじゃ誰も見出しにしないね。
+A|That's how you know it's true.|だからこそ本当なんだよ。
+
+T|🌱|気候変動や環境問題について話す|深い話|it's overwhelming, what can one person do, small changes, I try to, it adds up
+S|
+A|Do you think about climate change much?|気候変動について、よく考える？
+B|Too much, honestly. It's overwhelming.|正直、考えすぎるくらい。圧倒される。
+A|That's the problem. It feels too big to do anything about.|そこが問題なんだよね。大きすぎて、何もできない気がする。
+B|What can one person actually do?|一人の人間に実際何ができる？
+A|Not much on their own. But small changes add up if enough people make them.|一人ではあまり。でも十分な数の人が小さな変化を起こせば、積み重なる。
+B|That sounds like something you say to feel better.|それは気休めに言うことみたいに聞こえる。
+A|Maybe. But it's also true.|かもね。でも本当のことでもある。
+S|
+B|What do you actually do?|実際、何をしてる？
+A|I don't drive much. I eat less meat. I buy less stuff.|あまり運転しない。肉を減らした。物を買う量を減らした。
+B|Is that enough?|それで十分？
+A|No. But it's what I can control. The rest is governments and companies.|いや。でもそれが自分でコントロールできること。あとは政府と企業。
+B|So we vote and we complain.|じゃあ投票して、文句を言うんだね。
+A|And we don't give up. Giving up is the only thing that guarantees the worst.|それと、諦めない。諦めるのだけが、最悪を確実にする。
+S|
+B|That's a surprisingly hopeful way to look at it.|意外と希望のある見方だね。
+A|I have to be. The alternative is despair, and that helps nobody.|そうするしかない。代わりは絶望で、それは誰の役にも立たない。
+B|Fair. I'll eat less meat. Starting tomorrow.|なるほど。肉を減らす。明日から。
+A|Start tonight. We're having vegetables.|今夜から。夕飯は野菜だよ。
+
+T|🤔|意見が食い違ったときに相手の根拠を聞く|人間関係|what makes you say that, where's that coming from, help me understand, what's your reasoning, I want to get it
+S|
+A|You think we should cancel the whole event? Help me understand why.|イベント全体を中止すべきだって？ 理由を教えて。
+B|Because we won't get enough people. The last one was half empty.|十分な人が集まらないから。前回は半分空席だった。
+A|What makes you think this one would be the same?|今回も同じだと思う根拠は？
+B|Same time of year, same venue, same marketing.|同じ時期、同じ会場、同じ宣伝。
+A|Okay. Same marketing — that's the bit I'd question. We've got a bigger list now.|なるほど。同じ宣伝、そこは疑問だな。今はリストが大きくなってる。
+B|Twice the size. But half of them never open emails.|2倍の大きさ。でも半分はメールを開かない。
+A|Where's that number from?|その数字はどこから？
+B|The last campaign. Fifty percent open rate.|前回のキャンペーン。開封率50%。
+S|
+A|So your reasoning is: same venue, twice the list, half don't read. That's roughly the same turnout.|つまり根拠は、同じ会場、2倍のリスト、半分は読まない。だいたい同じ来場者数になると。
+B|Exactly.|その通り。
+A|I want to get it right. Is there anything that would change your mind?|ちゃんと理解したい。考えが変わる条件はある？
+B|If we could reach the other half. Phone calls, maybe.|残りの半分に届く方法があれば。電話とか。
+A|That's doable. That's a different plan, not a cancellation.|それならできる。中止じゃなくて、別の計画だね。
+S|
+B|Okay. I'm not against the event. I'm against doing it the same way.|わかった。イベントに反対してるんじゃない。同じやり方でやることに反対してる。
+A|That's a much smaller disagreement than I thought.|思ってたよりずっと小さな意見の違いだね。
+B|It usually is, once you ask.|聞いてみると、だいたいそうなんだよ。
+
+T|💬|自分の意見を理由つきで主張する|人間関係|I think we should, because, the reason is, my view is, hear me out
+S|
+A|I think we should push the launch back a month. Hear me out.|リリースを1か月遅らせるべきだと思う。聞いて。
+B|Okay. Go on.|わかった。続けて。
+A|The reason is simple. We haven't tested it with real users yet.|理由はシンプル。まだ実際のユーザーでテストしてない。
+B|We've tested it internally.|社内ではテストしたよ。
+A|Internally, we know how it's supposed to work. Real users don't. That's where it breaks.|社内では、どう動くべきか知ってる。実際のユーザーは知らない。そこで壊れるんだ。
+B|We're already behind, though.|でももう遅れてるよ。
+A|I know. But launching broken is worse than launching late. Late is forgotten. Broken is remembered.|わかってる。でも壊れたままリリースするほうが、遅れるより悪い。遅れは忘れられる。壊れてたのは記憶に残る。
+S|
+B|That's a fair point.|それはもっともだね。
+A|My view is: two weeks of testing, two weeks of fixing, then launch properly.|私の考えは、2週間テスト、2週間修正、それからちゃんとリリース。
+B|And if testing finds nothing?|テストで何も見つからなかったら？
+A|Then we've lost two weeks and gained confidence. That's a good trade.|その時は2週間失って、自信を得た。いい取引だよ。
+B|The client won't like it.|クライアントは喜ばないよ。
+A|The client will like a product that works. That's what they're paying for.|クライアントは動く製品を喜ぶ。それにお金を払ってるんだから。
+S|
+B|Okay. You've convinced me. Let's take it to the team.|わかった。説得された。チームに持っていこう。
+A|Thanks for hearing me out.|聞いてくれてありがとう。
+B|You made it easy. You had reasons, not just feelings.|簡単だったよ。感情じゃなくて、理由があったから。
+
+T|⚖️|相手の意見に一部賛成し一部反対する|人間関係|I agree with you on, but I see it differently when it comes to, you're right that, where I'd push back is, partly
+S|
+A|I agree with you on the timeline. Two months is realistic.|スケジュールについては賛成。2か月は現実的だね。
+B|Good.|よかった。
+A|But I see it differently when it comes to the budget.|でも予算については、違う見方をしてる。
+B|How so?|どういうふうに？
+A|You're right that we need to cut. Where I'd push back is cutting the design hours.|削減が必要なのは正しい。反論したいのは、デザインの時間を削ること。
+B|Design is the most expensive part.|デザインが一番高い部分だよ。
+A|It's also the part clients see. Cut it and the whole thing looks cheap.|クライアントが見る部分でもある。削れば全体が安っぽく見える。
+S|
+B|So where would you cut instead?|じゃあ代わりにどこを削る？
+A|Meetings. We spend ten hours a week in meetings that could be emails.|会議。メールで済む会議に週10時間使ってる。
+B|That's a fair point. I hadn't thought about that as a cost.|それはもっともだね。それをコストとして考えてなかった。
+A|It's the biggest hidden cost we have.|一番大きな隠れたコストだよ。
+B|Okay. I partly agree. Cut the meetings, keep most of the design hours.|わかった。部分的に賛成。会議を削って、デザインの時間はほぼ維持。
+A|Most of?|ほぼ？
+B|Ten percent off design. I need something.|デザインを10%削減。何かは必要だから。
+S|
+A|Ten percent I can live with. Deal.|10%なら受け入れられる。決まり。
+B|See? We agree on more than we disagree.|ほらね。意見が合うところのほうが多い。
+A|We usually do. It just takes a minute to find it.|だいたいそう。見つけるのに少し時間がかかるだけ。
+
+T|⏸|結論が出ないので一旦保留にすると提案する|人間関係|let's park this, we're going round in circles, come back to it, sleep on it, fresh eyes
+S|
+A|Okay, we've been at this for an hour. We're going round in circles.|もう1時間やってる。堂々巡りだね。
+B|I know. Same three points, over and over.|わかってる。同じ3つの論点を、何度も。
+A|Let's park it. Come back to it tomorrow.|一旦保留にしよう。明日戻ってこよう。
+B|Are you sure? We need a decision.|本当に？ 決断が必要だよ。
+A|We need a good decision. Not a tired one.|いい決断が必要なんだ。疲れた決断じゃなくて。
+B|That's fair.|それはそうだね。
+S|
+A|Let's each sleep on it. Write down your top reason tonight.|それぞれ一晩考えよう。今夜、一番の理由を書き出して。
+B|One reason?|理由を1つ？
+A|One. The one that matters most. Then we compare in the morning.|1つ。一番大事なやつ。それを朝に比べよう。
+B|That might actually work. Fresh eyes.|それは効くかもしれない。新しい目で見る。
+A|And if we still disagree, we bring in a third person.|それでも意見が合わなければ、第三者を入れる。
+B|Priya?|プリヤ？
+A|Priya. She's got no stake in it.|プリヤ。彼女は利害関係がないから。
+S|
+B|Okay. Parked. Nine tomorrow?|わかった。保留。明日9時？
+A|Nine. Coffee first, then the argument.|9時。まずコーヒー、それから議論。
+B|Discussion.|話し合い、ね。
+A|Discussion. Sorry.|話し合い。ごめん。
+
+T|😤|相手の態度にイラッとしたと伝える|人間関係|I have to be honest, that annoyed me, the way you, I felt, I'm not trying to start a fight
+S|
+A|Can I say something? I'm not trying to start a fight.|ひとつ言ってもいい？ 喧嘩を売ってるんじゃないんだけど。
+B|Okay.|うん。
+A|The way you spoke to me in the meeting. In front of everyone. That annoyed me.|会議での、私への話し方。みんなの前で。あれは腹が立った。
+B|What did I say?|何て言った？
+A|You said "obviously" three times. Like I was stupid for asking.|「当然でしょ」って3回言った。質問した私がばかみたいに。
+B|I didn't mean it like that.|そういうつもりじゃなかった。
+A|I know you didn't. But that's how it landed. I felt small.|わかってる。でもそう受け取った。惨めな気持ちになった。
+S|
+B|I'm sorry. I was stressed and it came out wrong.|ごめん。ストレスがあって、言い方が悪くなった。
+A|I figured. That's why I'm telling you now, and not stewing on it.|そうだと思った。だから今言ってる。溜め込まずに。
+B|I appreciate that. Most people would just go quiet.|それはありがたい。ほとんどの人は黙り込むから。
+A|I did go quiet. For about an hour. Then I decided to say something.|黙ってたよ。1時間くらい。それから言うことにした。
+B|Good. I'd rather know.|よかった。知りたいから。
+S|
+A|We're fine. I just needed it said.|大丈夫だよ。ただ言っておきたかっただけ。
+B|We're fine. And I'll watch the "obviously".|大丈夫。それと「当然でしょ」には気をつける。
+A|Thanks. Coffee?|ありがとう。コーヒー？
+B|My round.|私のおごりで。
+
+T|🧊|言い争いになって頭を冷やそうと提案する|人間関係|let's take a break, we're both getting heated, cool off, come back in ten, this isn't helping
+S|
+A|Okay, stop. We're both getting heated.|待って、やめよう。2人とも熱くなってる。
+B|I'm not heated.|熱くなってないよ。
+A|You're shouting. And so am I. This isn't helping.|叫んでる。私もそう。これじゃ何の役にも立たない。
+B|...Fine. You're right.|…わかった。その通りだね。
+A|Let's take ten minutes. Cool off. Then try again.|10分休もう。頭を冷やして。それからもう一度。
+B|Ten minutes.|10分ね。
+A|I'm going to make tea. Do you want one?|お茶を入れてくる。飲む？
+B|...Yes. Please.|…うん。お願い。
+S|
+A|Okay. Ten minutes. I've calmed down. Have you?|よし。10分経った。落ち着いたよ。そっちは？
+B|Mostly. I still think I'm right.|だいたい。まだ自分が正しいと思ってるけど。
+A|That's fine. You can think that. Just say it quieter.|それでいいよ。そう思ってていい。ただ、もっと静かに言って。
+B|Ha. Deal.|はは。わかった。
+A|So. Where were we? Without the shouting.|それで。どこまで話してたっけ？ 叫ばずに。
+B|The holiday dates. I want August, you want June.|休暇の日程。私は8月、あなたは6月。
+S|
+A|Right. Let's each say one reason. Calmly.|そう。それぞれ理由を1つ。冷静に。
+B|August is cheaper for me. Work's quieter.|8月のほうが私には都合がいい。仕事が落ち着いてるから。
+A|June is cooler. I can't do August heat.|6月は涼しい。8月の暑さは無理。
+B|...Okay. What about early July?|…わかった。7月初めはどう？
+A|See? That took two minutes. Without shouting.|ほらね。2分で済んだ。叫ばずに。
+
+T|🙏|言い過ぎたと反省して謝る|人間関係|I went too far, that was unfair, I shouldn't have said, I was angry but, I'm sorry
+S|
+A|About last night. I went too far.|昨夜のこと。言いすぎた。
+B|You did.|そうだね。
+A|What I said about your job — that was unfair. And untrue.|あなたの仕事について言ったこと。あれは不公平だった。それに事実でもない。
+B|It hurt.|傷ついた。
+A|I know. I was angry, but that's not an excuse. I shouldn't have said it.|わかってる。怒ってたけど、それは言い訳にならない。言うべきじゃなかった。
+B|Why did you?|なんで言ったの？
+A|Because I wanted to win the argument. Which is a terrible reason.|議論に勝ちたかったから。ひどい理由だけど。
+S|
+B|At least you're honest about it.|少なくとも、それについては正直だね。
+A|I've been thinking about it all day. I'm sorry. Properly sorry.|一日中考えてた。ごめん。本当にごめん。
+B|Thank you for saying that.|そう言ってくれてありがとう。
+A|I don't want to be someone who says things like that. Even angry.|ああいうことを言う人間になりたくない。怒ってても。
+B|Then don't be. Next time, walk away before you say it.|じゃあならないで。次は、言う前にその場を離れて。
+A|I will. I promise.|そうする。約束する。
+S|
+B|Okay. I forgive you. But I'm not forgetting it yet.|わかった。許すよ。でもまだ忘れてはいない。
+A|That's fair. I wouldn't either.|それは当然。私でもそうだよ。
+B|Come here. Let's have dinner.|こっちに来て。夕飯にしよう。
+
+T|🤝|第三者に仲裁を頼む|人間関係|could you help us sort this out, we can't agree, you're neutral, hear both sides, whatever you decide
+S|
+A|Priya, could you help us with something? We can't agree.|プリヤ、手伝ってくれる？ 意見が合わなくて。
+B|Uh oh. What's this about?|あらら。何のこと？
+A|The team offsite. Sam wants the countryside, I want the city. We've been arguing for a week.|チームの合宿。サムは田舎がよくて、私は都市。1週間言い争ってる。
+B|A week? Over a location?|1週間？ 場所で？
+A|I know. That's why we need you. You're neutral.|わかってる。だからあなたが必要なんだ。中立だから。
+B|Okay. I'll hear both sides. Sam first, then you. Two minutes each.|わかった。両方の言い分を聞く。まずサム、それからあなた。2分ずつ。
+S|
+B|Right. Sam says countryside — cheaper, fewer distractions, better for bonding.|さて。サムは田舎。安くて、気が散らなくて、団結に良い。
+A|And I say city — easier to get to, more to do, people won't be bored.|私は都市。行きやすくて、やることが多くて、みんな退屈しない。
+B|Both fair. Here's what I'd do. Countryside, but one hour from the city. Evening trips in.|どちらももっとも。私ならこうする。田舎、ただし都市から1時間。夜は街に出る。
+A|...That's actually good.|…それ、実はいいね。
+B|Whatever you decide, I've done my job. Now stop arguing.|どっちを選んでも、私の役目は終わり。もう言い争わないで。
+S|
+A|Thank you. We should have asked you a week ago.|ありがとう。1週間前に聞くべきだった。
+B|Yes. You should. Next time, come to me on day one.|そうだね。次は初日に来て。
+A|Deal. Countryside with city nights. Sam's going to love it.|決まり。田舎で、夜は街。サムも気に入るよ。

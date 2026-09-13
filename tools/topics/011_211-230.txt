@@ -1,0 +1,401 @@
+T|☕|コーヒーの砂糖・ミルクの有無を聞かれた|食事|milk and sugar, black, just a splash, oat milk, sweet tooth
+S|
+B|How do you take your coffee?|コーヒーはどうされますか？
+A|Just a splash of milk, no sugar.|ミルクを少しだけ、砂糖はなしで。
+B|Regular milk, or we've got oat and almond too.|普通のミルクですか、オーツやアーモンドもありますよ。
+A|Oat, please, if it's no trouble.|できればオーツで。
+B|No trouble at all.|全然構いませんよ。
+S|
+B|And for you? Black?|そちらは？ ブラックで？
+A|Black, but with two sugars.|ブラックで、でも砂糖は2つ。
+B|Sweet tooth?|甘党ですか？
+A|Very. I know it's a strange combination.|かなり。変な組み合わせだってわかってます。
+B|Not at all. Everyone's got their thing.|そんなことないですよ。人それぞれですから。
+S|
+B|Here you are. Oat milk, and black with two sugars.|どうぞ。オーツミルクと、ブラックに砂糖2つ。
+A|Perfect. Thank you.|完璧です。ありがとう。
+B|Let me know if it needs more milk.|ミルクが足りなければ言ってください。
+A|Looks just right.|ちょうどよさそうです。
+
+T|🛵|デリバリーが遅い・届かない|トラブル|still hasn't arrived, tracking, estimated time, on its way, refund
+S|
+A|Hi, I ordered food an hour ago and it still hasn't arrived.|もしもし、1時間前に注文したんですが、まだ届いていません。
+B|I'm sorry about that. Can I have your order number?|申し訳ありません。注文番号を教えてもらえますか？
+A|It's 5-5-1-2-9.|5-5-1-2-9です。
+B|Thank you. Let me see... it says the driver picked it up twenty minutes ago.|ありがとうございます。確認します… 20分前に配達員が受け取ったようです。
+A|Twenty minutes? It's a ten-minute drive.|20分？ 車で10分の距離ですよ。
+S|
+B|The tracking shows he's two streets away.|追跡では2本先の通りにいます。
+A|Okay. Is he lost?|そうですか。迷っているんですか？
+B|Possibly. Let me call him.|かもしれません。電話してみます。
+A|Please. I'm starving.|お願いします。お腹がペコペコで。
+B|He's at the wrong building. He'll be with you in two minutes.|違う建物にいたそうです。2分で着きます。
+S|
+A|Okay, it's here. But it's gone cold.|届きました。でも冷めてしまっています。
+B|I'm really sorry. I'll refund half the order.|本当に申し訳ありません。半額を返金します。
+A|Thank you. That's fair.|ありがとうございます。それなら納得です。
+B|And a voucher for next time. Again, apologies.|次回用のクーポンもお付けします。重ねてお詫びします。
+
+T|🧽|床に物をこぼしてしまった|日常|I've spilt, grab a cloth, mop it up, don't worry, before it stains
+S|
+A|Oh no, I've spilt my wine!|しまった、ワインをこぼしちゃった！
+B|Don't worry. Is it on the carpet?|大丈夫。カーペットの上？
+A|Yes. Right in the middle. I'm so sorry.|うん。ど真ん中。本当にごめん。
+B|It's fine, honestly. Let me grab a cloth.|本当に大丈夫だよ。布巾を持ってくる。
+A|Should I use water?|水を使ったほうがいい？
+B|Cold water and salt. Quick, before it stains.|冷たい水と塩。早く、シミになる前に。
+S|
+A|Like this? Just blot it?|こう？ 押さえるだけ？
+B|Yes, don't rub. That spreads it.|うん、こすらないで。広がるから。
+A|It's coming out a bit.|少し落ちてきた。
+B|See? It'll be fine.|ほらね。大丈夫だよ。
+A|I feel terrible.|申し訳なさすぎる。
+B|It's a carpet. It's seen worse.|カーペットだよ。もっとひどい目にも遭ってる。
+S|
+A|Let me at least buy you a new glass.|せめて新しいグラスを買わせて。
+B|The glass is fine! You just spilt it.|グラスは無事だよ！ こぼしただけでしょ。
+A|Right. Yes. Okay.|そうか。うん。わかった。
+B|Sit down and have another one. Carefully.|座って、もう1杯飲みなよ。慎重にね。
+
+T|🥂|グラスを割ってしまった|日常|I've broken, watch your feet, sweep it up, don't cut yourself, replace it
+S|
+A|Oops. I've broken a glass.|しまった。グラスを割っちゃった。
+B|Are you okay? Did you cut yourself?|大丈夫？ 手を切らなかった？
+A|No, I'm fine. It just slipped out of my hand.|大丈夫。手から滑っただけ。
+B|Okay, don't move. Watch your feet.|よし、動かないで。足元に気をつけて。
+A|There's glass everywhere.|ガラスがそこら中に。
+S|
+B|I'll get the dustpan. Stay there.|ちりとりを持ってくる。そこにいて。
+A|I'm really sorry. Was it an expensive one?|本当にごめん。高いやつだった？
+B|No, it's from a set of twelve. We've got plenty.|ううん、12個セットのやつ。たくさんあるよ。
+A|Still, let me replace it.|それでも、弁償させて。
+B|Honestly, don't. Just help me find the little bits.|本当にいいから。細かい破片を探すのを手伝って。
+S|
+A|I think that's all of it.|全部拾えたと思う。
+B|Let's run the vacuum over it to be safe.|念のため掃除機をかけよう。
+A|Good idea. I'll do it.|そうだね。私がやる。
+B|And put shoes on. There's always one piece you miss.|あと靴を履いて。必ず1個は見逃してるから。
+
+T|🧺|洗濯物が乾かない|住まい|won't dry, humid, tumble dryer, hang it up, smells damp
+S|
+A|My washing's been hanging for two days and it's still damp.|洗濯物を2日干してるのに、まだ湿ってる。
+B|It's the humidity. Nothing dries in this weather.|湿気のせいだよ。この天気だと何も乾かない。
+A|It's starting to smell a bit musty.|ちょっとカビ臭くなってきた。
+B|Yeah, that happens. You'll have to wash it again.|うん、そうなるよね。もう一度洗わないと。
+A|Great. Back to square one.|最高。振り出しに戻った。
+S|
+B|Have you got a tumble dryer?|乾燥機はある？
+A|No. Just the rack by the window.|ない。窓際の物干しだけ。
+B|Try putting it near the radiator. Or use a fan.|ラジエーターの近くに置いてみて。または扇風機を使うとか。
+A|A fan? Does that work?|扇風機？ それで乾くの？
+B|Surprisingly well. It moves the air around.|意外と効くよ。空気を動かすから。
+S|
+A|There's a launderette down the road with dryers.|通りの先にコインランドリーがあって、乾燥機があるよ。
+B|Honestly, in this weather, that's the answer.|正直、この天気だとそれが正解だね。
+A|Twenty minutes and it's done. Why didn't I think of that?|20分で終わる。なんで思いつかなかったんだろう。
+B|Because you're stubborn. Go.|頑固だからだよ。行ってきな。
+
+T|👔|クリーニングに服を出す|日常|dry cleaning, when will it be ready, stain, press, pick up
+S|
+A|Hi, I'd like to get this suit dry cleaned.|すみません、このスーツをクリーニングに出したいのですが。
+B|Certainly. Jacket and trousers?|かしこまりました。ジャケットとズボンですか？
+A|Yes, both. And there's a stain on the sleeve.|はい、両方。袖にシミがあって。
+B|Let me see. What is it?|見せてください。何のシミですか？
+A|Coffee, I think. From a few days ago.|コーヒーだと思います。数日前の。
+B|We should be able to get that out.|それなら落とせると思いますよ。
+S|
+A|When will it be ready?|いつ仕上がりますか？
+B|Thursday, after two.|木曜の2時以降です。
+A|Is there any way to get it sooner? I need it Wednesday.|もっと早くできませんか？ 水曜に必要で。
+B|We can do express for an extra five. Ready tomorrow evening.|追加5で特急ができます。明日の夕方には仕上がります。
+A|Perfect, let's do that.|それでお願いします。
+S|
+B|Here's your ticket. Bring it when you collect.|お預かり票です。受け取りの際にお持ちください。
+A|Thank you. Do you press it as well?|ありがとう。アイロンもかけてもらえますか？
+B|Yes, it's included.|はい、含まれています。
+A|Great. See you tomorrow.|よかった。では明日。
+
+T|🔌|掃除機やドライヤーを借りる|住まい|could I borrow, hairdryer, bring it back, is it okay if, spare
+S|
+A|Hey, could I borrow your hairdryer? Mine's just died.|ねえ、ドライヤー借りてもいい？ うちのが壊れちゃって。
+B|Sure, it's in the bathroom. Top drawer.|いいよ、洗面所にある。一番上の引き出し。
+A|Thanks. I'll bring it straight back.|ありがとう。すぐ返すね。
+B|No rush. I've already done my hair.|急がなくていいよ。もう髪は乾かしたから。
+A|You're a star.|助かる。
+S|
+A|Also, is it okay if I use the vacuum this evening?|あと、今夜掃除機を使ってもいい？
+B|Of course. It's in the hall cupboard.|もちろん。廊下の物置にあるよ。
+A|It won't bother you? I know you've got an early night.|迷惑じゃない？ 早く寝るって言ってたから。
+B|As long as it's before ten, I don't mind.|10時前なら気にしないよ。
+A|I'll be done by nine.|9時までには終わらせる。
+S|
+B|Oh, and the bag's nearly full. There are spares under the sink.|あ、あと紙パックがほぼいっぱいだよ。予備はシンクの下にある。
+A|Good to know. I'll change it.|わかった。交換しておく。
+B|Thanks. You're a good flatmate.|ありがとう。いいルームメイトだね。
+A|Only because you lend me things.|物を貸してくれるからだよ。
+
+T|🔒|鍵を家の中に置いたまま閉め出された|トラブル|locked out, left my keys inside, spare key, locksmith, climb in
+S|
+A|I can't believe it. I've locked myself out.|信じられない。閉め出された。
+B|What? How?|え？ どうして？
+A|I went to take the bins out and the door shut behind me.|ゴミを出しに行ったら、後ろでドアが閉まったんだ。
+B|And your keys are inside.|それで鍵は中に。
+A|On the kitchen table. I can see them through the window.|キッチンのテーブルの上。窓から見えるよ。
+B|That's the worst part.|それが一番つらいね。
+S|
+B|Does anyone have a spare?|誰か合鍵を持ってる？
+A|My flatmate, but she's at work until six.|ルームメイトが。でも6時まで仕事。
+B|Is any window open?|開いてる窓はない？
+A|The bathroom one, a crack. But it's on the first floor.|お風呂の窓が少しだけ。でも2階なんだ。
+B|Don't even think about climbing.|よじ登るなんて考えないで。
+A|I wasn't. Well, I was, briefly.|考えてないよ。まあ、ちょっとだけ考えた。
+S|
+B|Just come and wait at mine until six.|6時までうちで待ってなよ。
+A|Are you sure? That's three hours.|いいの？ 3時間だよ。
+B|We'll watch something. It's fine.|何か観てようよ。大丈夫。
+A|Thank you. And tomorrow I'm hiding a spare key somewhere.|ありがとう。明日、どこかに合鍵を隠しておく。
+B|Somewhere sensible, please.|まともな場所にしてね。
+
+T|🚧|近所で工事の音がうるさい|住まい|drilling, from seven in the morning, how long is it going on for, can't concentrate, earplugs
+S|
+A|That drilling again. It's been going since seven.|またあのドリルの音。7時からずっと。
+B|Seven in the morning? Is that even allowed?|朝の7時？ それって許されてるの？
+A|Apparently. Weekdays from seven to six.|らしいよ。平日の7時から6時まで。
+B|How long is it going on for?|いつまで続くの？
+A|The sign says three months.|看板には3か月って。
+B|Three months! You'll go mad.|3か月！ 気が狂うよ。
+S|
+A|I can't concentrate at all. I'm working from home.|全然集中できない。在宅勤務なんだ。
+B|Have you tried earplugs?|耳栓は試した？
+A|Yes. They help a bit, but I can still feel it.|うん。少しは効くけど、振動が伝わってくる。
+B|Noise-cancelling headphones?|ノイズキャンセリングのヘッドホンは？
+A|That's my next purchase, honestly.|正直、次に買うのはそれだね。
+S|
+B|You could work from a café for a while.|しばらくカフェで仕事すれば？
+A|I've started doing that. The one on the corner has good Wi-Fi.|そうし始めたよ。角のカフェはWi-Fiがいいんだ。
+B|Silver lining: you'll discover every café in the area.|良い面もある。この辺のカフェを全部制覇できるよ。
+A|At this rate, yes.|このペースだと、たしかに。
+
+T|♻️|ゴミの分別・収集日を聞く|住まい|recycling, what goes in which bin, collection day, put the bins out, general waste
+S|
+A|Hi, I've just moved in. Could you tell me how the bins work?|こんにちは、引っ越してきたばかりで。ゴミ出しの仕組みを教えてもらえますか？
+B|Of course. There are three: general waste, recycling, and food.|もちろん。3種類あります。一般ゴミ、資源ゴミ、生ゴミです。
+A|Which bin is which?|どのゴミ箱がどれですか？
+B|Black is general, blue is recycling, and the small green one is food.|黒が一般、青が資源、小さい緑が生ゴミです。
+A|And what goes in recycling?|資源ゴミには何を？
+B|Paper, cardboard, cans, and plastic bottles. Rinsed, ideally.|紙、段ボール、缶、ペットボトル。できればすすいで。
+S|
+A|When's collection day?|収集日はいつですか？
+B|Tuesday for general, Friday for recycling. Food's both days.|一般は火曜、資源は金曜。生ゴミは両日です。
+A|Do I put them out the night before?|前の晩に出しておけばいいですか？
+B|Yes, by the kerb. They come early, around six.|はい、道端に。6時頃と早いので。
+A|Six! Okay, night before it is.|6時！ わかりました、前の晩に出します。
+S|
+B|Oh, and glass goes to the bottle bank on the corner.|あ、瓶は角の回収ボックスに持っていってください。
+A|Not in the blue bin?|青のゴミ箱じゃなくて？
+B|No, they're strict about that.|はい、それは厳しいんです。
+A|Good to know. Thanks for explaining it all.|わかりました。全部教えてくれてありがとう。
+B|No problem. Welcome to the street!|どういたしまして。この通りへようこそ！
+
+T|🦟|蚊に刺されてかゆい|健康|mosquito bite, so itchy, don't scratch, cream, eaten alive
+S|
+A|I got eaten alive last night.|昨夜、蚊に食われまくった。
+B|Mosquitoes? How many bites?|蚊？ 何か所刺された？
+A|Seven. Three on one ankle.|7か所。片方の足首だけで3か所。
+B|Ankles are the worst. So itchy.|足首が一番ひどいよね。すごくかゆい。
+A|I can't stop scratching.|かくのが止まらない。
+B|Don't! It'll get infected.|だめ！ 化膿するよ。
+S|
+B|Have you got any cream?|薬は持ってる？
+A|No. I didn't think I'd need it.|ない。必要になるとは思わなかった。
+B|There's a pharmacy on the corner. Get the antihistamine one.|角に薬局があるよ。抗ヒスタミンのやつを買って。
+A|Does it actually help?|本当に効くの？
+B|Takes the itch away in minutes. Trust me.|数分でかゆみが消える。信じて。
+S|
+A|And how do I stop them tonight?|今夜はどう防げばいい？
+B|Spray, long sleeves, and shut the window before dark.|虫よけスプレー、長袖、暗くなる前に窓を閉める。
+A|The window. That's what I did wrong.|窓か。それを間違えたんだ。
+B|Everyone does, once.|みんな一度はやるよ。
+
+T|🌞|日焼けして肌が痛い|健康|sunburnt, peeling, aloe vera, should have reapplied, stay out of the sun
+S|
+A|Ow. Don't touch my shoulders.|痛っ。肩に触らないで。
+B|Oh no, you're bright red. Sunburn?|うわ、真っ赤だね。日焼け？
+A|Badly. I fell asleep on the beach.|ひどく。ビーチで寝ちゃって。
+B|Did you put sunscreen on?|日焼け止め塗った？
+A|Once, in the morning. I should have reapplied.|朝に一度だけ。塗り直すべきだった。
+B|Once is never enough.|一度じゃ絶対足りないよ。
+S|
+B|Have you got aloe vera?|アロエベラは持ってる？
+A|No. Does that help?|ない。効くの？
+B|It's the best thing. Keep it in the fridge and put it on cold.|一番効くよ。冷蔵庫で冷やして塗るといい。
+A|Cold. That sounds amazing right now.|冷たい。今それが最高に聞こえる。
+B|And drink loads of water. Sunburn dehydrates you.|あと水をたくさん飲んで。日焼けは脱水になるから。
+S|
+A|Is it going to peel?|皮がむける？
+B|Probably, in a few days. Don't pick at it.|たぶん数日後に。むしっちゃだめだよ。
+A|I'll try. And I'm staying out of the sun tomorrow.|頑張る。明日は日陰にいるよ。
+B|Good. Hat, shade, the works.|そうして。帽子、日陰、全部ね。
+
+T|💪|筋肉痛で体が動かない|健康|can barely move, aching, overdid it, stretch, walk it off
+S|
+A|Ugh. I can barely move today.|うう。今日は体がまともに動かない。
+B|What did you do?|何したの？
+A|Leg day at the gym. First time in months.|ジムで脚の日。数か月ぶりに。
+B|And you overdid it.|それでやりすぎたんだね。
+A|Massively. I can't even sit down without groaning.|大幅に。うめかずに座ることすらできない。
+B|Ha. The second day is always the worst.|はは。2日目が一番きついんだよね。
+S|
+A|Is there anything that helps?|何か楽になる方法ある？
+B|Gentle movement. Don't just lie there.|軽く動くこと。じっと寝てるだけじゃだめ。
+A|Moving is the problem.|動くのが問題なんだよ。
+B|A slow walk. And stretch when you can.|ゆっくり歩くとか。あとできる時にストレッチ。
+A|And a hot bath?|熱いお風呂は？
+B|That too. It really does help.|それもいいよ。本当に効く。
+S|
+A|Remind me never to skip leg day again.|もう二度と脚の日をサボらないように言い聞かせて。
+B|You say that every time.|毎回それ言ってるよ。
+A|This time I mean it. My legs have never hurt like this.|今回は本気。こんなに脚が痛いのは初めて。
+B|Walk it off. You'll be fine by Thursday.|歩いてほぐして。木曜には大丈夫だよ。
+
+T|🛌|寝違えて首が痛い|健康|slept funny, stiff neck, can't turn my head, heat pack, ease up
+S|
+A|I slept funny last night. My neck's completely stiff.|昨夜、変な寝方をしたみたい。首が完全に固まってる。
+B|Ouch. Can you turn your head?|痛そう。首は回せる？
+A|Barely. I have to turn my whole body.|ほとんど。体ごと回さないと。
+B|You look like a robot.|ロボットみたいだね。
+A|I feel like one.|自分でもそう思う。
+S|
+B|Try a heat pack. That usually loosens it.|温熱パッドを試してみて。だいたいそれでほぐれるよ。
+A|I've got one somewhere.|どこかにあったはず。
+B|And don't force it. Gentle stretches only.|無理に動かさないで。軽いストレッチだけ。
+A|How long does this usually last?|普通はどのくらい続くの？
+B|A day or two. It eases up on its own.|1〜2日。自然に楽になるよ。
+A|Two days of turning like a robot. Great.|2日間ロボットみたいに回るのか。最高。
+S|
+B|Maybe get a better pillow while you're at it.|ついでに、もっといい枕を買ったら？
+A|You think it's the pillow?|枕のせいだと思う？
+B|Mine was terrible until I changed it. Never had a stiff neck since.|うちのは変えるまでひどかった。それ以来、寝違えたことないよ。
+A|Okay, that's worth trying.|それは試す価値があるね。
+
+T|👁|目が疲れてしょぼしょぼする|健康|eye strain, staring at a screen, take a break, blurry, eye drops
+S|
+A|My eyes are killing me. Everything's gone blurry.|目がすごく疲れた。全部ぼやけて見える。
+B|Screen all day?|一日中画面見てた？
+A|Since eight this morning. I haven't looked away.|朝8時から。一度も目を離してない。
+B|That'll do it. Eye strain.|そりゃそうなるよ。眼精疲労。
+A|They feel dry and scratchy too.|乾いてゴロゴロする感じもある。
+S|
+B|Take a proper break. Look at something far away.|ちゃんと休憩して。遠くの物を見て。
+A|How far?|どのくらい遠く？
+B|Out the window. Twenty seconds, every twenty minutes.|窓の外。20分ごとに20秒。
+A|That's a lot of breaks.|休憩多いね。
+B|It's called the twenty-twenty-twenty rule. It works.|20-20-20ルールっていうんだ。効くよ。
+S|
+A|Have you got eye drops?|目薬持ってる？
+B|In my bag. Here.|カバンの中。はい。
+A|Oh, that's better already.|あ、もう楽になった。
+B|And turn your brightness down. You're sitting in front of a lamp.|あと画面の明るさを下げて。ランプの前に座ってるようなものだよ。
+A|Fair point.|たしかに。
+
+T|🩸|生理痛がつらいと伝える|健康|period pain, cramps, painkillers, hot water bottle, take it easy
+S|
+A|I'm not feeling great today.|今日はちょっと調子が悪くて。
+B|Oh no, what's wrong?|どうしたの？
+A|Bad period cramps. It's just one of those months.|生理痛がひどくて。今月はきつい月なんだ。
+B|I'm sorry. Have you taken anything?|それはつらいね。何か飲んだ？
+A|Painkillers, an hour ago. They're starting to kick in.|鎮痛剤を1時間前に。効き始めてきたところ。
+B|Good. Do you want to head home?|よかった。家に帰る？
+S|
+A|I think I'll stick it out, but I might be quiet.|なんとか乗り切るつもり。でも静かかもしれない。
+B|Of course. Do whatever you need.|もちろん。必要なことをして。
+A|Thanks for not making it awkward.|変な空気にしないでくれてありがとう。
+B|Why would I? It's normal.|なんで変にするの？ 普通のことだよ。
+A|Not everyone sees it that way.|そう思わない人もいるからね。
+S|
+B|Want me to grab you a hot water bottle from the kitchen?|キッチンから湯たんぽ持ってこようか？
+A|There's one there?|そこにあるの？
+B|Priya keeps one in the cupboard for exactly this.|プリヤがまさにこのために戸棚に置いてるんだ。
+A|That would be amazing. Thank you.|それは本当にありがたい。ありがとう。
+B|Take it easy today. I'll cover the meeting.|今日は無理しないで。会議は私がカバーするから。
+
+T|🥗|ダイエット中だと伝える|健康|on a diet, cutting back, watching what I eat, treat, don't tempt me
+S|
+B|Cake? I made it this morning.|ケーキ食べる？ 今朝作ったんだ。
+A|Oh, that looks amazing. But I'm going to say no.|わあ、美味しそう。でも今回はやめておく。
+B|Really? You never say no to cake.|本当？ ケーキを断ったことなんてないのに。
+A|I'm on a bit of a diet. Trying to cut back on sugar.|ちょっとダイエット中で。砂糖を減らそうとしてるんだ。
+B|Ah, fair enough. How's it going?|なるほど。調子はどう？
+A|Hard. Especially when people make cake.|大変。特に誰かがケーキを作ってくると。
+S|
+B|Sorry, I didn't know.|ごめん、知らなかった。
+A|Don't be. I'm not being strict, just watching what I eat.|気にしないで。厳しくやってるわけじゃなくて、食べるものに気をつけてるだけ。
+B|How long have you been doing it?|どのくらいやってるの？
+A|Three weeks. I've lost a couple of kilos.|3週間。2キロくらい減った。
+B|That's great. You look good, by the way.|すごいね。ちなみに、いい感じに見えるよ。
+A|Thanks. I feel better too.|ありがとう。体調もいいんだ。
+S|
+B|Well, I'll save you a slice for your cheat day.|じゃあ、チートデイ用に1切れ取っておくよ。
+A|Don't tempt me.|誘惑しないで。
+B|Saturday? I'll bring it round.|土曜？ 持っていくよ。
+A|...Fine. One slice. Small.|…わかった。1切れだけ。小さいの。
+
+T|🚭|禁煙していると伝える|健康|quit smoking, given up, cravings, cold turkey, proud of you
+S|
+B|Fancy stepping out for a smoke?|一服しに外に出ない？
+A|I'll come out with you, but I'm not smoking. I quit.|一緒に出るけど、吸わないよ。やめたんだ。
+B|You quit? Since when?|やめた？ いつから？
+A|Six weeks ago. Cold turkey.|6週間前。きっぱりと。
+B|Wow. I had no idea. Well done.|わあ。全然知らなかった。すごいね。
+A|Thanks. It's been rough, honestly.|ありがとう。正直、きつかったよ。
+S|
+B|Still getting cravings?|まだ吸いたくなる？
+A|Every day. Especially with coffee.|毎日。特にコーヒーの時。
+B|Should I not smoke around you?|そばで吸わないほうがいい？
+A|No, it's fine. I need to get used to it.|いや、大丈夫。慣れないといけないから。
+B|If it gets too much, just walk away. I won't be offended.|きつくなったら、離れていいからね。気にしないよ。
+S|
+B|What made you decide?|何がきっかけで決めたの？
+A|My doctor, mainly. And I was tired of smelling like it.|主に医者かな。あと、あの匂いがするのが嫌になって。
+B|That's a good reason. I'm proud of you.|いい理由だね。誇りに思うよ。
+A|Ask me again in six months.|6か月後にまた聞いてね。
+B|I will. And I might join you.|そうする。私も一緒にやめるかも。
+
+T|🎁|ご飯をおごると伝える|人間関係|this one's on me, my treat, put your wallet away, get the next one, you deserve it
+S|
+A|Put your wallet away. This one's on me.|財布はしまって。今日は私が出す。
+B|What? No, let me at least pay half.|え？ せめて半分は払わせて。
+A|Absolutely not. You helped me move last month.|絶対だめ。先月、引っ越しを手伝ってくれたでしょ。
+B|That was nothing.|あれくらい大したことないよ。
+A|It was a whole Saturday. You deserve a dinner.|土曜が丸一日潰れたんだから。ディナーくらい当然。
+S|
+B|Okay, but I'm getting the next one.|わかった、でも次は私が出すからね。
+A|Deal. That's how it works.|決まり。そうやって回していこう。
+B|Are you sure? This place isn't cheap.|本当にいいの？ ここ安くないよ。
+A|I'm sure. Order what you want.|いいって。好きなものを頼んで。
+B|In that case, I'm having dessert.|それなら、デザートも頼む。
+A|Now you're getting it.|そう来なくちゃ。
+S|
+B|Thank you. Honestly, this means a lot.|ありがとう。本当にうれしいよ。
+A|Don't mention it. That's what friends are for.|いいんだよ。友達ってそういうものでしょ。
+B|Next time, somewhere fancier. My treat.|次はもっと高級な店で。私のおごり。
+A|Now I'm looking forward to it.|それは楽しみだね。
+
+T|🎀|お土産を渡す|人間関係|I brought you something, from my trip, thought of you, you shouldn't have, love it
+S|
+A|I brought you something back from Japan.|日本からお土産を持ってきたよ。
+B|You didn't have to do that!|そんな気を使わなくてよかったのに！
+A|I wanted to. Here.|そうしたかったんだ。はい。
+B|Can I open it now?|今開けてもいい？
+A|Go ahead.|どうぞ。
+S|
+B|Oh, it's beautiful. What is it?|わあ、綺麗。これは何？
+A|A furoshiki. A wrapping cloth. You can use it as a scarf too.|風呂敷。包む布だよ。スカーフとしても使える。
+B|I love the pattern. Is this a traditional design?|この柄、素敵だね。伝統的なデザイン？
+A|Yes, it's waves. I saw it and thought of you.|うん、波の模様。見た瞬間にあなたを思い出したんだ。
+B|That's so thoughtful.|気が利くね。
+S|
+B|Thank you so much. I'll actually use this.|本当にありがとう。ちゃんと使うよ。
+A|That's the idea. They're meant to be used.|それが狙い。使うためのものだから。
+B|How was the trip? Tell me everything.|旅行はどうだった？ 全部聞かせて。
+A|Over coffee. It's a long story.|コーヒーを飲みながらね。長い話になるから。

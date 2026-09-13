@@ -1,0 +1,458 @@
+T|⚽|スポーツやチームへの愛を語る|雑談|I've supported them since, through thick and thin, never miss a game, it's in the blood, the season
+S|
+A|Are you a football fan?|サッカーファン？
+B|Fan is an understatement. I've supported the same team since I was five.|ファンなんて言葉じゃ足りない。5歳から同じチームを応援してる。
+A|Which team?|どのチーム？
+B|Don't laugh. A small one. We've never won anything.|笑わないで。小さいチーム。何も勝ったことがない。
+A|Then why?|じゃあなんで？
+B|My dad took me to my first game. It's in the blood now.|父が初めて試合に連れて行ってくれたんだ。もう血の中に流れてる。
+S|
+A|Do you go to every game?|全試合行くの？
+B|Every home game. Rain, snow, whatever. Twenty years.|ホームゲームは全部。雨でも雪でも。20年間。
+A|Even when they're losing?|負けてる時も？
+B|Especially then. Anyone can support a winning team.|特にその時こそ。勝ってるチームは誰でも応援できるから。
+A|Through thick and thin.|良い時も悪い時も。
+B|Mostly thin. But I wouldn't change it.|ほとんど悪い時だけど。でも変えるつもりはない。
+S|
+A|How's the season going?|今シーズンはどう？
+B|Terribly. We're second from bottom. I've never been happier.|最悪。下から2番目。でもこんなに幸せなことはない。
+A|That makes no sense.|意味がわからない。
+B|You'd have to be there. Come to a game. I'll explain on the way.|その場にいないとわからないよ。試合に来て。道中で説明する。
+A|Okay. But if I get hooked, it's your fault.|わかった。でもハマったら、あなたのせいだからね。
+
+T|🎮|子どもの頃にハマったゲームや遊びを話す|雑談|I was obsessed with, hours and hours, in the playground, do kids still, best days
+S|
+A|What were you obsessed with as a kid? Games, toys, anything.|子どもの頃、何に夢中だった？ ゲームでもおもちゃでも。
+B|Marbles. Hours and hours of marbles.|ビー玉。何時間も何時間も。
+A|Marbles? That's very retro.|ビー玉？ すごく懐かしいね。
+B|I had a whole collection. Traded them at school like they were gold.|コレクションが丸ごとあった。学校で金みたいに交換してた。
+A|Did you have a favourite?|お気に入りはあった？
+B|A big blue one. I called it "the boss." I still have it.|大きな青いやつ。「ボス」って呼んでた。今でも持ってる。
+S|
+B|What about you?|そっちは？
+A|Video games. The old handheld ones. I'd play under the covers with a torch.|テレビゲーム。昔の携帯ゲーム機。懐中電灯で布団の中でやってた。
+B|So your parents wouldn't know.|親にバレないように。
+A|They always knew. They just let me think I was sneaky.|いつもバレてた。こっそりやってると思わせてくれてただけ。
+B|Parents are like that.|親ってそういうものだよね。
+A|And in the playground, it was tag. Every break, every day.|校庭では鬼ごっこ。休み時間のたびに、毎日。
+S|
+B|Do kids still play tag?|今の子どもも鬼ごっこする？
+A|I hope so. Those were the best days.|してるといいな。あの頃が一番だった。
+B|No responsibilities. Just running.|責任もなくて。ただ走るだけ。
+A|We should play tag. Adults. In a park.|鬼ごっこしようよ。大人が。公園で。
+B|People would think we'd lost our minds.|正気を失ったと思われるよ。
+A|Worth it.|それでも価値はある。
+
+T|🚗|運転やドライブが好きか話す|雑談|do you like driving, road trip, behind the wheel, passenger, motorway
+S|
+A|Do you like driving?|運転は好き？
+B|Love it. Long drives especially. Just me and the road.|大好き。特に長距離。自分と道路だけ。
+A|What's your favourite kind of drive?|一番好きなのはどんなドライブ？
+B|Coast roads. Windows down, no destination.|海岸沿いの道。窓を開けて、目的地なしで。
+A|That sounds like freedom.|自由って感じだね。
+B|It is. Some of my best thinking happens behind the wheel.|そう。一番いい考えは運転中に浮かぶんだ。
+S|
+A|I'm the opposite. I hate driving.|私は逆。運転が嫌い。
+B|Really? Why?|本当？ なんで？
+A|The stress. Other drivers. Parking. All of it.|ストレス。他のドライバー。駐車。全部。
+B|So you're a passenger person.|じゃあ助手席派なんだね。
+A|A very good passenger. I do the snacks and the music.|すごく優秀な助手席。お菓子と音楽担当。
+B|That's an important job.|それは大事な役目だよ。
+A|Someone has to do it.|誰かがやらないとね。
+S|
+B|We'd make a good team, then. I drive, you DJ.|じゃあいいチームになるね。私が運転、あなたがDJ。
+A|Road trip?|ロードトリップ？
+B|Road trip. Coast road. This summer.|ロードトリップ。海岸沿い。この夏。
+A|I'll start the playlist tonight.|今夜からプレイリストを作り始めるよ。
+
+T|🍺|お酒の失敗談を話す|雑談|one time, I'd had a few too many, I woke up, never again, the walk of shame
+S|
+A|Worst drunk story. Go.|お酒での最悪の話。どうぞ。
+B|Oh no. Okay. One time I fell asleep on the last train and woke up at the depot.|うわ。わかった。一度、終電で寝て、車両基地で目が覚めた。
+A|The depot?|車両基地？
+B|Locked in. A cleaner found me at five in the morning.|閉じ込められてた。朝5時に清掃員に見つけてもらった。
+A|What did you say?|何て言ったの？
+B|"Good morning." What else could I say?|「おはようございます」。他に何が言える？
+S|
+B|Yours?|そっちは？
+A|I'd had a few too many at a wedding and gave a speech. Nobody had asked me to.|結婚式で飲みすぎて、スピーチをした。誰にも頼まれてないのに。
+B|Oh no.|うわ。
+A|Ten minutes. About the groom. Who I'd met twice.|10分間。新郎について。2回しか会ったことないのに。
+B|What did you say?|何を話したの？
+A|I don't remember. But there's a video.|覚えてない。でも動画がある。
+B|Have you watched it?|見た？
+A|I can't. I've tried. I get as far as my name and I have to stop.|見られない。試したけど。自分の名前のところで止めてしまう。
+S|
+B|Never again?|もう二度と？
+A|Never again. I stick to two drinks at weddings now.|二度と。今は結婚式では2杯まで。
+B|Wise. And I check which station I'm at before I close my eyes.|賢明だね。私は目を閉じる前に、どの駅か確認するようになった。
+A|We've both learnt something.|2人とも学んだね。
+
+T|🤝|一番仲のいい友達との出会いを話す|雑談|how did you meet, we didn't get on at first, hit it off, been friends ever since, inseparable
+S|
+A|How did you and Sam meet? You two are inseparable.|サムとはどうやって出会ったの？ 2人はいつも一緒だよね。
+B|Funny story. We hated each other at first.|面白い話なんだ。最初はお互い嫌いだった。
+A|What?|え？
+B|First day of uni. He took the last seat in the lecture. The one I'd been eyeing.|大学の初日。彼が講義室の最後の席を取ったんだ。私が狙ってた席を。
+A|That's it?|それだけ？
+B|That was enough at eighteen. I decided he was my enemy.|18歳にはそれで十分。彼を敵だと決めた。
+S|
+A|So how did it change?|それでどう変わったの？
+B|We got put in the same group for a project. Forced to talk.|同じグループでプロジェクトをやることになって。話さざるを得なくなった。
+A|And?|それで？
+B|Turned out we had the same terrible sense of humour. We hit it off in about ten minutes.|同じくらいひどいユーモアのセンスだってわかって。10分くらいで意気投合した。
+A|From enemies to best friends.|敵から親友に。
+B|Been friends ever since. Fifteen years.|それ以来ずっと友達。15年。
+S|
+A|Does he know about the seat thing?|席のこと、彼は知ってる？
+B|I told him at his wedding. In my speech.|彼の結婚式で話した。スピーチで。
+A|How did he react?|どんな反応だった？
+B|He said he'd taken it on purpose. He'd seen me looking.|わざと取ったって。私が見てるのに気づいてたって。
+A|So he started it.|じゃあ彼が始めたんだ。
+B|He started it. And I'm glad he did.|彼が始めた。それでよかったと思ってる。
+
+T|💭|友達に求めるものは何かを話す|深い話|what do you look for in a friend, someone who, shows up, honest with me, doesn't keep score
+S|
+A|What do you actually look for in a friend?|友達に本当に求めるものって何？
+B|Someone who shows up. That's it, really.|来てくれる人。本当にそれだけ。
+A|Shows up how?|来るってどういうふうに？
+B|When it matters. Not just for the fun stuff. When you're moving house, when you're sick.|大事な時に。楽しい時だけじゃなく。引っ越しの時とか、病気の時とか。
+A|That's a high bar.|それは高いハードルだね。
+B|It's the only bar. Everything else is just company.|それが唯一のハードルだよ。それ以外はただの付き合い。
+S|
+B|What about you?|そっちは？
+A|Honesty. Someone who tells me when I'm being an idiot.|正直さ。私がばかなことをしてる時に、そう言ってくれる人。
+B|Even when you don't want to hear it?|聞きたくない時でも？
+A|Especially then. Anyone can agree with me.|特にその時こそ。同意してくれるだけなら誰でもできる。
+B|And someone who doesn't keep score.|あと、貸し借りを数えない人。
+A|Yes. "I did this, so you owe me." That's not friendship.|そう。「これをしてあげたから、借りがある」。それは友情じゃない。
+B|It's accounting.|それは会計だよ。
+S|
+A|Do you think you're a good friend?|自分はいい友達だと思う？
+B|I try. I'm not always great at the showing up. Work gets in the way.|努力はしてる。来ることに関しては、いつも完璧じゃない。仕事が邪魔をする。
+A|Same. But I'm trying to be better.|同じ。でも、もっと良くなろうとしてる。
+B|That's the whole thing, isn't it. Trying.|それがすべてだよね。努力すること。
+
+T|💡|恋愛で学んだ教訓を話す|恋愛|the biggest lesson, I used to think, I learnt the hard way, red flag, the right person
+S|
+A|What's the biggest thing you've learnt from relationships?|恋愛から学んだ一番大きなことは？
+B|That being loved isn't the same as being seen.|愛されることと、理解されることは違うってこと。
+A|What do you mean?|どういう意味？
+B|I was with someone for three years who loved me. But he didn't know me. Not really.|3年間、私を愛してくれる人と付き合った。でも彼は私を知らなかった。本当の意味では。
+A|How did you realise?|どうやって気づいたの？
+B|I told him something important and he'd forgotten it by the next week.|大事なことを話したのに、翌週には忘れてた。
+A|That's a red flag.|それは危険信号だね。
+B|I learnt that the hard way.|痛い思いをして学んだよ。
+S|
+B|What about you?|そっちは？
+A|That you can't fix people. I used to think love meant rescuing.|人は変えられないってこと。昔は、愛とは救うことだと思ってた。
+B|And now?|今は？
+A|Now I think love means standing next to someone while they fix themselves.|今は、その人が自分で立ち直る間、隣に立っていることだと思う。
+B|That's a big shift.|大きな変化だね。
+A|It took two bad relationships to get there.|そこに至るまで、2回のつらい恋愛が必要だった。
+S|
+B|Do you think you'd recognise the right person now?|今なら、正しい相手がわかると思う？
+A|I think so. It's the one where I don't have to try so hard.|そう思う。頑張りすぎなくていい相手だよ。
+B|The one where it's easy.|楽な相手だね。
+A|Not easy. Just... not exhausting.|楽じゃない。ただ… 消耗しない相手。
+
+T|💘|初恋の話をする|恋愛|my first love, I was fifteen, I never told them, whatever happened to, still remember
+S|
+A|Tell me about your first love.|初恋の話を聞かせて。
+B|Oh no. Really?|えー。本当に？
+A|Really. Everyone has one.|本当に。誰にでもあるでしょ。
+B|Fine. I was fifteen. Her name was Emma. She sat behind me in maths.|わかったよ。15歳だった。エマっていう名前で。数学の授業で私の後ろに座ってた。
+A|And?|それで？
+B|And nothing. I never told her. I just stared at the back of my own head for a year.|それで何も。一度も伝えなかった。1年間、ただ前を見つめてただけ。
+A|A year!|1年も！
+B|A whole year. Then she moved schools.|丸1年。それから彼女は転校した。
+S|
+A|Do you know what happened to her?|彼女がどうなったか知ってる？
+B|She's a doctor now. Married, two kids. I saw it online.|今は医者。結婚して、子どもが2人。ネットで見た。
+A|Do you ever think about telling her?|伝えようと思ったことはある？
+B|Telling her what? "Hi, I liked you twenty years ago"?|何を伝えるの？ 「やあ、20年前好きでした」って？
+A|Ha. Fair.|はは。たしかに。
+B|Some things are better as memories.|思い出のままがいいこともあるよ。
+S|
+B|Your turn.|そっちの番。
+A|Mine was worse. I did tell him. In a letter. He read it out to his friends.|私のはもっとひどい。伝えたんだ。手紙で。彼はそれを友達に読み上げた。
+B|No!|嘘！
+A|I still remember the exact laugh.|あの笑い声を今でも覚えてる。
+B|I'm so sorry. That's awful.|それはひどい。かわいそうに。
+A|It's fine. It made me careful. Maybe too careful.|大丈夫。おかげで慎重になった。慎重すぎるかもしれないけど。
+
+T|🏡|理想の結婚生活や家庭像を話す|恋愛|what does your ideal, I picture, a partnership, doesn't have to be, the little things
+S|
+A|What does your ideal marriage look like? If you've thought about it.|理想の結婚生活ってどんな感じ？ 考えたことがあれば。
+B|I've thought about it. It's quieter than people expect.|考えたことあるよ。人が想像するより静かなもの。
+A|Quiet how?|静かってどんなふうに？
+B|Two people in the same room, doing different things. Comfortable. No performance.|同じ部屋で、別々のことをしてる2人。心地よくて。取り繕わない。
+A|That sounds like a partnership, not a fairy tale.|おとぎ話じゃなくて、パートナーシップって感じだね。
+B|Exactly. I don't want a fairy tale. I want someone to argue about the dishwasher with.|そう。おとぎ話は要らない。食洗機のことで言い合える相手がほしい。
+S|
+B|What about you?|そっちは？
+A|Similar. But with a big kitchen. Everyone ends up in the kitchen.|似てる。でも大きなキッチンがほしい。みんな結局キッチンに集まるから。
+B|That's very specific.|ずいぶん具体的だね。
+A|I picture Sunday mornings. Cooking, music, nowhere to be.|日曜の朝を想像するんだ。料理して、音楽をかけて、どこにも行かなくていい。
+B|Kids?|子どもは？
+A|Maybe. It doesn't have to be. The kitchen's the non-negotiable.|かもね。必須じゃない。キッチンだけは譲れない。
+S|
+B|I think the little things matter more than the big picture.|大きな絵より、小さなことのほうが大事だと思う。
+A|How so?|どういうふうに？
+B|Anyone can plan a wedding. Not everyone can make tea the way you like it, every day, for years.|結婚式は誰でも計画できる。でも、好みの通りにお茶を淹れるのを、毎日、何年も続けられる人は少ない。
+A|That's a good test.|いいテストだね。
+B|It's the only test.|唯一のテストだよ。
+
+T|👶|子どもを持ちたいかどうか話す|深い話|do you want kids, I'm not sure, it's a big decision, no right answer, whatever we decide
+S|
+A|Can I ask you something personal? Do you want kids?|個人的なこと聞いてもいい？ 子どもはほしい？
+B|Honestly? I'm not sure. I go back and forth.|正直？ わからない。気持ちが行ったり来たりしてる。
+A|What pulls you towards it?|何がほしいと思わせる？
+B|My sister's kids. When they run at me at the door. That feeling.|姉の子どもたち。玄関で駆け寄ってくる時。あの感覚。
+A|And what pulls you away?|逆に、ためらわせるのは？
+B|The world, honestly. And whether I'd be any good at it.|正直、世の中の状況。それに、自分がちゃんとやれるかどうか。
+A|Everyone worries about that.|誰でもそれは心配するよ。
+B|I know. But it's a big decision to make while unsure.|わかってる。でも迷ったまま決めるには大きすぎる。
+S|
+B|What about you?|そっちは？
+A|I used to say definitely yes. Now I'm less sure.|昔は絶対にほしいって言ってた。今はそこまで確信がない。
+B|What changed?|何が変わったの？
+A|I like my life. I'm scared of losing it. Is that selfish?|今の生活が好きなんだ。それを失うのが怖い。それって身勝手？
+B|No. It's honest. Better to know that now than later.|いや。正直なだけ。後で気づくより、今知っておくほうがいい。
+A|There's no right answer, is there?|正解はないんだよね？
+B|None. Just the one you can live with.|ない。自分が納得できる答えがあるだけ。
+S|
+A|Whatever we each decide, let's not judge each other.|お互いどう決めても、批判し合わないようにしよう。
+B|Deal. Kids or no kids, we're still doing Sunday lunch.|約束。子どもがいてもいなくても、日曜のランチは続けよう。
+A|With or without high chairs.|ハイチェアがあってもなくても。
+
+T|👨‍👩‍👧|親との関係が今どうかを話す|深い話|how are things with your parents, we're closer now, we used to fight, they've mellowed, make the effort
+S|
+A|How are things with your parents these days?|最近、ご両親との関係はどう？
+B|Better than they used to be. A lot better.|以前よりずっといい。かなり良くなった。
+A|Was it bad before?|前は悪かったの？
+B|We fought constantly when I was a teenager. About everything.|十代の頃はずっと喧嘩してた。何もかもで。
+A|What changed?|何が変わったの？
+B|I moved out. Distance helped. And I think they've mellowed.|家を出た。距離が役に立った。それに、両親も丸くなったと思う。
+A|Or you have.|それか、あなたが。
+B|Probably both.|たぶん両方。
+S|
+B|How about you?|そっちは？
+A|We're close. Always have been. But I don't call enough.|仲はいい。ずっとそうだった。でも電話が足りてない。
+B|How often?|どのくらい？
+A|Once a fortnight, maybe. They never complain, which makes it worse.|2週間に1回くらいかな。何も文句を言わないから、余計に申し訳なくて。
+B|The silent guilt.|静かな罪悪感だね。
+A|Exactly. I keep meaning to make more effort.|そう。もっと努力しようと思い続けてる。
+S|
+B|Call them tonight.|今夜電話しなよ。
+A|I will. What would I even say?|そうする。でも何を話せばいい？
+B|Nothing special. That's the point. They just want to hear your voice.|特別なことは要らない。それが大事。ただ声を聞きたいだけだから。
+A|You're right. Tonight.|そうだね。今夜。
+
+T|🧳|家族と最後に旅行したのはいつかを話す|雑談|the last time we all, it's been years, everyone's so busy, we should plan one, before it's too late
+S|
+A|When did you last go on holiday with your family? All of you?|最後に家族全員で旅行に行ったのはいつ？
+B|Oh, years. My sister's wedding trip, maybe? Six years ago.|ずいぶん前だよ。姉の結婚式の旅行かな？ 6年前。
+A|Six years!|6年も！
+B|Everyone's so busy. Kids, jobs, different cities.|みんな忙しくて。子ども、仕事、別々の街。
+A|It gets harder as you get older.|年を取るほど難しくなるよね。
+B|It does. And the parents aren't getting younger.|そう。それに両親も若返るわけじゃないし。
+S|
+B|What about you?|そっちは？
+A|Last summer. Just a weekend by the sea. Nothing fancy.|去年の夏。海辺で週末だけ。大したことはしてない。
+B|That's still something.|それでも大したものだよ。
+A|It was the first time in ages. My dad cried at dinner.|久しぶりだった。父が夕食で泣いたんだ。
+B|Why?|どうして？
+A|He said he didn't think we'd all be in one room again.|もう全員が一つの部屋に集まることはないと思ってたって。
+B|Oh. That's a lot.|そう。それは重いね。
+S|
+A|We should plan one. Before it's too late.|計画しようよ。手遅れになる前に。
+B|You're right. I'll message the family group tonight.|そうだね。今夜、家族のグループにメッセージする。
+A|Even just a weekend.|週末だけでも。
+B|Even just a weekend. That's how it starts.|週末だけでも。そこから始まるんだよね。
+
+T|🐾|ペットとの思い出や別れの話をする|深い話|we had him for, the day we lost, still miss, part of the family, get another one
+S|
+A|Did you have pets growing up?|子どもの頃、ペットは飼ってた？
+B|A dog. Max. We had him for fourteen years.|犬を。マックス。14年間一緒だった。
+A|That's a long time.|長いね。
+B|My whole childhood. He was there for every birthday, every bad day.|子ども時代の全部。誕生日も、つらい日も、いつもそばにいた。
+A|What was he like?|どんな犬だった？
+B|Gentle. Patient. He let my little sister dress him up in hats.|優しくて、辛抱強かった。妹に帽子をかぶせられても平気だった。
+S|
+A|When did you lose him?|いつ亡くなったの？
+B|I was nineteen. I came home from uni for the weekend and he was just... slower.|19歳の時。週末に大学から帰ったら、なんだか… 動きが遅くなってて。
+A|Were you there at the end?|最期には立ち会えた？
+B|I was. We all were. It's the only time I've seen my dad cry.|うん。全員が。父が泣くのを見た唯一の時だった。
+A|He was part of the family.|家族の一員だったんだね。
+B|He was the family. Everything revolved around him.|家族そのものだったよ。すべてが彼を中心に回ってた。
+S|
+A|Do you still miss him?|今でも恋しい？
+B|Every day. It's been ten years and I still expect him at the door.|毎日。10年経つのに、まだ玄関にいる気がする。
+A|Would you get another one?|また飼う？
+B|Maybe. Not to replace him. Just because life's better with a dog in it.|たぶん。彼の代わりじゃなくて。犬がいる人生のほうがいいから。
+A|That's a good reason.|いい理由だね。
+
+T|⚖️|自分の長所と短所を正直に話す|深い話|my biggest strength, my biggest flaw, I'm working on it, the flip side, honest with myself
+S|
+A|What's your biggest strength? Honestly.|自分の一番の長所は？ 正直に。
+B|I'm calm under pressure. When everything's falling apart, I get quieter, not louder.|プレッシャーの中で冷静でいられること。すべてが崩れそうな時、騒がずに静かになる。
+A|That's rare. Where does it come from?|珍しいね。どこから来てるの？
+B|My mum. She's the same. Nothing rattles her.|母。彼女も同じ。何にも動じない。
+A|And the flip side?|その裏返しは？
+B|I can seem cold. People think I don't care, when actually I'm just processing.|冷たく見えることがある。気にしてないと思われるけど、実は考えてるだけなんだ。
+S|
+B|Your turn. Strength.|そっちの番。長所。
+A|I'm good with people. I can read a room.|人と接するのが得意。場の空気が読める。
+B|You are. I've seen it.|たしかに。見たことある。
+A|But the flaw is, I say yes too much. I hate disappointing anyone.|でも短所は、イエスと言いすぎること。誰かをがっかりさせるのが嫌で。
+B|So you disappoint yourself instead.|それで代わりに自分をがっかりさせるんだね。
+A|...Yes. That's exactly it.|…そう。まさにそれ。
+B|Are you working on it?|直そうとしてる？
+A|Trying. I said no to something last week. Felt terrible. Did it anyway.|努力してる。先週何かを断った。ひどい気分だった。でもやった。
+S|
+B|That's progress.|進歩だね。
+A|It's hard being honest with yourself.|自分に正直になるのは難しい。
+B|It's harder not to. It just takes longer to notice.|そうしないほうがもっと難しいよ。気づくのに時間がかかるだけで。
+
+T|🪞|コンプレックスに思っていることを打ち明ける|深い話|I've always been self-conscious about, I hate my, nobody notices but me, it holds me back, I'm learning to
+S|
+A|Can I tell you something I've never really said out loud?|今まで口に出したことのないこと、話してもいい？
+B|Of course.|もちろん。
+A|I've always been self-conscious about my accent.|自分の訛りが、ずっとコンプレックスなんだ。
+B|Your accent? I like your accent.|訛り？ 私はあなたの訛り、好きだよ。
+A|I know people say that. But I hear every mistake. Every time.|みんなそう言うのはわかってる。でも自分では間違いが全部聞こえる。毎回。
+B|Nobody notices but you.|気づいてるのはあなただけだよ。
+A|Maybe. But it holds me back. I don't speak up in meetings because of it.|かもね。でも足を引っ張ってる。そのせいで会議で発言できない。
+S|
+B|That's a real cost, then. Not just a feeling.|じゃあ、それは実際の損失だね。ただの気持ちじゃなくて。
+A|Exactly. And I hate that I let it.|そう。それを許してる自分が嫌なんだ。
+B|Can I tell you mine?|私のも話していい？
+A|Please.|ぜひ。
+B|My teeth. I've never smiled properly in a photo. Twenty years of closed-mouth smiles.|歯。写真でちゃんと笑ったことがない。20年間、口を閉じた笑顔。
+A|I've never noticed.|気づかなかった。
+B|Nobody does. That's the thing about these. They're only huge to us.|誰も気づかない。こういうのはそういうものなんだ。本人にだけ巨大に見える。
+S|
+A|I'm learning to speak anyway. Accent and all.|訛りがあっても、話すようにしてる。
+B|And I'm going to smile in the next photo. Teeth and all.|私は次の写真で笑う。歯を見せて。
+A|Deal. We'll be terrified together.|決まり。一緒に怖がろう。
+B|Together's easier.|一緒なら楽だよ。
+
+T|🔄|昔と比べて変わったと思うことを話す|深い話|I used to be, these days, I've calmed down, grown into myself, wouldn't recognise
+S|
+A|How do you think you've changed in the last ten years?|この10年で、自分はどう変わったと思う？
+B|I've calmed down. Massively.|落ち着いた。かなり。
+A|Were you wild?|荒れてた？
+B|Not wild. Anxious. I cared what everyone thought about everything.|荒れてはない。不安だった。何もかも、みんなにどう思われるか気にしてた。
+A|And these days?|今は？
+B|I care what about five people think. The rest can think what they like.|5人くらいの意見は気にする。あとは好きに思えばいい。
+A|That's a good number.|いい数だね。
+B|It took a long time to get there.|そこに至るまで長い時間がかかったよ。
+S|
+B|What about you?|そっちは？
+A|I used to be so impatient. Everything had to happen now.|昔はすごくせっかちだった。何でも今すぐじゃないと気が済まなかった。
+B|And now?|今は？
+A|Now I actually enjoy waiting for things. Cooking slowly. Long trips.|今は待つことを楽しめる。ゆっくり料理したり、長い旅をしたり。
+B|The twenty-year-old you wouldn't recognise you.|20歳のあなたが見たら、誰だかわからないだろうね。
+A|He'd think I was boring.|退屈なやつだと思うだろうな。
+B|And you'd think he was exhausting.|そしてあなたは、彼を疲れるやつだと思う。
+A|Both right.|どっちも正しい。
+S|
+B|It's like growing into yourself.|自分自身に馴染んでいくって感じだね。
+A|That's exactly what it is. Slowly.|まさにそう。ゆっくりと。
+
+T|🎯|今年一番の目標を話す|深い話|my main goal, this year I want to, by December, hold me to it, halfway there
+S|
+A|What's your main goal this year? Just one.|今年の一番の目標は？ 1つだけ。
+B|Learn Spanish. Properly. Enough to have a real conversation.|スペイン語を覚える。ちゃんと。本物の会話ができるくらいに。
+A|How's it going?|進み具合は？
+B|Halfway through the year, halfway through the textbook. So, on track.|1年の半分で、教科書も半分。だから順調。
+A|Can you have a conversation yet?|もう会話はできる？
+B|About food and directions. Very confidently. Anything else, no.|食べ物と道案内なら。自信満々で。それ以外は、無理。
+A|That's a start.|それも一歩だね。
+S|
+B|Yours?|そっちは？
+A|Save enough to go part-time next year.|来年パートタイムにできるくらい貯金する。
+B|That's a big one.|大きな目標だね。
+A|I've cut everything. No takeaways, no new clothes, no impulse buys.|全部削った。テイクアウトも、新しい服も、衝動買いも。
+B|Are you on track?|順調？
+A|Slightly behind. But I've got till December.|少し遅れてる。でも12月まである。
+B|Hold you to it?|ちゃんとやるか見張る？
+A|Please. Ask me every month.|お願い。毎月聞いて。
+S|
+B|Deal. And you check on my Spanish.|決まり。あなたは私のスペイン語をチェックして。
+A|Every month. In Spanish.|毎月。スペイン語で。
+B|That's cruel.|残酷だね。
+A|That's motivation.|それがモチベーションだよ。
+
+T|🔮|5年後どうなっていたいかを話す|深い話|in five years, I'd like to be, who knows, the plan is, as long as
+S|
+A|Where do you want to be in five years?|5年後、どうなっていたい？
+B|Honestly? Somewhere with a garden.|正直？ 庭のあるところ。
+A|That's it? A garden?|それだけ？ 庭？
+B|And someone to share it with. But mostly the garden.|それと、それを分かち合える人。でも主に庭。
+A|What about work?|仕事は？
+B|Something I don't dread on Sunday nights. That's the bar.|日曜の夜に憂鬱にならない仕事。それが基準。
+A|That's a low bar.|低い基準だね。
+B|It's a surprisingly high one. Most people don't clear it.|意外と高い基準だよ。ほとんどの人は超えられてない。
+S|
+B|What about you?|そっちは？
+A|Running my own thing. Small. Just me and maybe two people.|自分の事業をやってる。小さく。私と、あと2人くらい。
+B|Doing what?|何を？
+A|Design. The kind of work I actually care about, not the kind that pays best.|デザイン。一番稼げる仕事じゃなくて、本当に大事だと思える仕事を。
+B|That's a real plan.|ちゃんとした計画だね。
+A|The plan is to start next year. Who knows if it'll work.|来年始める計画。うまくいくかは誰にもわからない。
+B|As long as you try.|挑戦するならね。
+S|
+A|Five years is a long time.|5年って長いね。
+B|It's also nothing. Five years ago was yesterday.|同時に、あっという間でもある。5年前なんて昨日のことみたいだ。
+A|Then we'd better start.|じゃあ、始めないとね。
+
+T|🌅|老後はどう過ごしたいかを話す|深い話|when I retire, I'd like to, slow down, by the sea, still be doing
+S|
+A|Have you ever thought about what you'd do when you retire?|退職後に何をするか、考えたことある？
+B|All the time. Mostly on Monday mornings.|しょっちゅう。主に月曜の朝に。
+A|Ha. So what's the dream?|はは。それで、夢は？
+B|A small place by the sea. A boat. Fishing every morning.|海辺の小さな家。船。毎朝釣り。
+A|You don't fish now.|今は釣りしてないよね。
+B|I'll learn. I'll have time.|覚えるよ。時間はあるから。
+A|That's fair.|なるほど。
+S|
+B|What about you?|そっちは？
+A|I don't think I'd want to stop completely.|完全にはやめたくないと思う。
+B|Really?|本当？
+A|I'd like to still be doing something. Teaching, maybe. A few days a week.|何かはやっていたい。教えるとか。週に数日。
+B|Slow down, but not stop.|ペースは落とすけど、止まらない。
+A|Exactly. I've seen people stop and just... fade.|そう。完全にやめて、ただ… しぼんでいく人を見てきたから。
+B|That's a real fear.|それは本当の恐怖だね。
+A|It is. So I'd want a reason to get up.|そう。だから起きる理由がほしい。
+S|
+B|Visit me at the sea. I'll cook what I catch.|海辺の私の家に来て。釣ったものを料理するよ。
+A|If you catch anything.|何か釣れたらね。
+B|I'll have thirty years to practise.|練習する時間が30年あるから。
+A|Deal. I'll bring the wine.|決まり。ワインを持っていくよ。
+
+T|⏳|「もし今日が最後の日なら」と想像して話す|深い話|if today was your last day, I'd want to, spend it with, wouldn't waste, what matters
+S|
+A|Weird question. If today was your last day, what would you do?|変な質問だけど。今日が最後の日だったら、何をする？
+B|That's not a weird question. That's the only question.|変な質問じゃないよ。唯一の質問だ。
+A|Okay, so?|じゃあ、どうする？
+B|I'd call my mum. Then I'd sit outside with the people I love and do nothing.|母に電話する。それから大切な人たちと外で座って、何もしない。
+A|Nothing?|何もしない？
+B|Nothing. No bucket list. Just being there.|何も。バケットリストなんて要らない。ただそこにいる。
+A|That's surprisingly simple.|意外とシンプルだね。
+B|The big stuff stops mattering. Only the people matter.|大きなことはどうでもよくなる。人だけが大事。
+S|
+B|What would you do?|あなたなら？
+A|Cook. One last big meal. Everyone round the table.|料理する。最後の大きな食事。みんなでテーブルを囲んで。
+B|Of course you would.|やっぱりね。
+A|And I'd say all the things I keep not saying.|それと、ずっと言わずにいることを全部言う。
+B|Like what?|例えば？
+A|That I'm grateful. That I love them. The obvious things nobody says.|感謝してるって。愛してるって。誰も言わない当たり前のこと。
+B|Why wait, though?|でも、なんで待つの？
+A|...That's a good point.|…いい指摘だね。
+S|
+B|Say it now. Today's not your last day, but it's still a day.|今言いなよ。今日は最後の日じゃないけど、それでも1日だから。
+A|You're right. I'm calling my sister after this.|そうだね。この後、姉に電話する。
+B|Good. And I'll call my mum.|よし。私は母に電話する。
+A|No time like the present.|今こそがその時だね。

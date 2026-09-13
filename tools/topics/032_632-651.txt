@@ -1,0 +1,434 @@
+T|📖|今何を勉強しているか聞かれた|学び|what are you studying, I'm working on, self-taught, in the evenings, it's slow going
+S|
+A|Are you studying anything at the moment?|今、何か勉強してる？
+B|Spanish. Badly. In the evenings.|スペイン語。下手だけど。夜に。
+A|How long have you been at it?|どのくらいやってるの？
+B|Six months. It's slow going.|6か月。なかなか進まない。
+A|Classes or on your own?|教室？ それとも独学？
+B|Self-taught. Apps and podcasts. I talk to my cat in Spanish.|独学。アプリとポッドキャスト。猫にスペイン語で話しかけてる。
+A|Does the cat respond?|猫は反応する？
+B|The cat ignores me in every language.|猫はどの言語でも私を無視する。
+S|
+B|What about you?|そっちは？
+A|Statistics, actually. For work. It's not exciting.|統計、実は。仕事のために。面白くはないよ。
+B|Why statistics?|なんで統計？
+A|Because I nod in meetings and don't understand the graphs.|会議で頷いてるけど、グラフが理解できてないから。
+B|Ha. Honest.|はは。正直だね。
+A|One hour, three nights a week. It's working, slowly.|1時間、週3晩。効果は出てる、ゆっくりと。
+S|
+A|We should study together. Different subjects, same table.|一緒に勉強しようよ。違う科目で、同じテーブルで。
+B|Accountability.|お互いに監視ってことね。
+A|Exactly. Tuesday nights?|そう。火曜の夜？
+B|Tuesday. Bring the graphs, I'll bring the cat.|火曜。グラフを持ってきて、私は猫を連れてくる。
+
+T|📝|資格試験の準備で忙しいと伝える|学び|I've got an exam coming up, studying every night, can't really, after the exam, wish me luck
+S|
+A|Do you want to come to the gig on Friday?|金曜のライブ、来ない？
+B|I'd love to, but I've got an exam in two weeks. I'm studying every night.|行きたいけど、2週間後に試験があって。毎晩勉強してるんだ。
+A|What exam?|何の試験？
+B|A professional certification. For work. If I pass, I get promoted.|職業資格。仕事のため。受かれば昇進できる。
+A|Oh, that's a big one.|それは大きいね。
+B|It is. So I can't really do anything until it's over.|うん。だから終わるまでは何もできなくて。
+S|
+A|How's the studying going?|勉強の調子は？
+B|Okay. I've done all the practice papers. My brain's full.|まあまあ。過去問は全部やった。脳がいっぱい。
+A|Are you sleeping?|寝てる？
+B|Not enough. But I'm nearly there.|十分じゃない。でももうすぐ終わる。
+A|Don't burn out before the exam.|試験の前に燃え尽きないでね。
+B|I'm trying. One more week of this, then rest.|頑張ってる。あと1週間で、それから休む。
+S|
+A|Okay. After the exam, we celebrate. Properly.|わかった。試験の後は、お祝いしよう。ちゃんと。
+B|Deal. I'll need it.|決まり。必要になるよ。
+A|Wish me luck?|「頑張って」って言ってくれる？
+B|That's my line. Good luck. You've got this.|それは私のセリフ。頑張って。大丈夫だから。
+
+T|😩|勉強のやる気が出ないと愚痴る|学び|I can't focus, I've been staring at the same page, I'll start tomorrow, motivation, just do ten minutes
+S|
+A|I can't focus. I've been staring at the same page for an hour.|集中できない。1時間同じページを見つめてる。
+B|What are you studying?|何を勉強してるの？
+A|Grammar. The boring kind. I'd rather clean the bathroom.|文法。退屈なやつ。トイレ掃除のほうがまし。
+B|That's a strong statement.|強い言葉だね。
+A|I keep saying I'll start properly tomorrow. I've said that for a week.|明日からちゃんと始めるって言い続けてる。1週間そう言ってる。
+B|Tomorrow never comes.|明日は永遠に来ないんだよね。
+S|
+B|Here's a trick. Just do ten minutes.|コツを教えるよ。10分だけやって。
+A|Ten minutes won't get me anywhere.|10分じゃどこにも辿り着けない。
+B|Ten minutes is better than zero. And usually it becomes thirty.|10分はゼロよりいい。それに、だいたい30分になる。
+A|That's what they say.|よく言われることだね。
+B|Because it's true. Start the timer.|本当だからだよ。タイマーをセットして。
+A|Fine. Ten minutes. Then I'm stopping.|わかった。10分。それでやめる。
+B|Sure you are.|そうだといいね。
+S|
+A|Okay... that was forty minutes.|うーん… 40分やってた。
+B|Told you.|でしょ。
+A|I hate that you were right.|あなたが正しくて腹が立つ。
+B|Same time tomorrow?|明日も同じ時間に？
+
+T|📚|効率のいい勉強法を教え合う|学び|what works for you, flashcards, spaced repetition, teach it back, cramming never works
+S|
+A|How do you actually study? What works for you?|実際、どうやって勉強してる？ 何が効く？
+B|Flashcards. Boring, but they work.|単語カード。退屈だけど、効く。
+A|Paper or an app?|紙？ それともアプリ？
+B|App. It does spaced repetition. Shows you the hard ones more often.|アプリ。間隔反復をやってくれる。難しいものを頻繁に出してくる。
+A|I've heard of that. Does it really make a difference?|それ聞いたことある。本当に違いが出る？
+B|Huge. I remember things months later. Cramming never did that.|かなり。何か月も後まで覚えてる。詰め込みではそうならなかった。
+S|
+B|What about you?|そっちは？
+A|I explain it to someone. Out loud. Even if nobody's there.|誰かに説明する。声に出して。誰もいなくても。
+B|To an empty room?|誰もいない部屋に？
+A|To the wall. If I can't explain it, I don't understand it.|壁に。説明できなければ、理解してないってこと。
+B|That's actually a well-known technique.|それ、実は有名な方法だよ。
+A|Is it? I thought I'd invented it.|そうなの？ 自分で発明したと思ってた。
+B|Sorry. Someone beat you to it.|ごめん。先を越されてたよ。
+S|
+A|Flashcards plus explaining to the wall.|単語カードと、壁への説明。
+B|Combined, we'd be unstoppable.|組み合わせれば、無敵だね。
+A|Or we'd just be two people talking to walls with cards.|それか、カードを持って壁に話しかける2人になるだけ。
+
+T|📋|試験の結果を報告する|学び|I got my results, I passed, I didn't get it, all that work, so relieved
+S|
+A|I got my results.|結果が出た。
+B|And? Don't leave me hanging.|それで？ 焦らさないで。
+A|I passed.|受かった。
+B|Yes! I knew you would!|やった！ 受かると思ってた！
+A|I didn't. I was sure I'd failed the last section.|私は思ってなかった。最後のセクションは絶対落ちたと思ってた。
+B|How did you do overall?|全体ではどうだった？
+A|Seventy-eight. Not top, but comfortably over the line.|78点。トップじゃないけど、合格ラインは余裕で超えた。
+B|That's brilliant. All that work paid off.|素晴らしい。頑張った甲斐があったね。
+S|
+A|I'm so relieved. I've been sick with nerves for a week.|本当にほっとした。1週間、緊張で気分が悪かった。
+B|I could tell. You went quiet.|わかってたよ。静かになってたから。
+A|Now I can sleep again.|やっとまた眠れる。
+B|And drink. We're going out.|それと飲める。出かけよう。
+A|Tonight?|今夜？
+B|Tonight. Non-negotiable. I've been waiting to celebrate for a month.|今夜。異論は認めない。1か月間、お祝いするのを待ってたんだから。
+S|
+A|Thanks for putting up with me during all this.|この間、我慢して付き合ってくれてありがとう。
+B|That's what I'm here for. Now, go and get changed.|そのためにいるんだから。ほら、着替えて。
+
+T|🗣|相手の言語で話す練習に付き合ってもらう|学び|can we practise, correct me, only in Japanese, I'll try, slowly please
+S|
+A|Can we practise Japanese for a bit? Just ten minutes.|少し日本語の練習に付き合ってもらえる？ 10分だけ。
+B|Sure. Only Japanese, no English?|いいよ。日本語だけで、英語なし？
+A|Only Japanese. Correct me when I mess up.|日本語だけ。間違えたら直して。
+B|Okay. Let's start easy. What did you do yesterday?|わかった。簡単なところから。昨日は何をしましたか？
+A|Kinou wa... tomodachi to... eiga wo mita.|昨日は… 友達と… 映画を見た。
+B|Perfect. Which film?|完璧。どの映画？
+A|Um... furui eiga. Nihon no.|えっと… 古い映画。日本の。
+B|Good! "Nihon no furui eiga." You'd put "Nihon no" first.|いいね！「日本の古い映画」。「日本の」が先に来るよ。
+S|
+A|Nihon no furui eiga. Slowly, please, I'm thinking.|日本の古い映画。ゆっくりお願い、考えてるから。
+B|Take your time. Did you like it?|ゆっくりで。面白かった？
+A|Hai. Totemo... kirei datta.|はい。とても… きれいだった。
+B|"Totemo kirei datta." Beautiful. That's exactly right.|「とてもきれいだった」。素晴らしい。完全に正しいよ。
+A|Really? I'm never sure with "datta".|本当？「だった」はいつも自信がなくて。
+B|You've got it. Your grammar's better than you think.|できてるよ。文法は自分で思ってるより上手い。
+S|
+A|Okay, that's ten minutes. My brain hurts.|よし、10分経った。頭が痛い。
+B|You did great. Same time tomorrow?|よくできたよ。明日も同じ時間に？
+A|Yes. But you have to practise English with me too.|うん。でもあなたも私と英語の練習をしないとだめだよ。
+B|Deal. Fair's fair.|決まり。公平にね。
+
+T|💭|言葉の意味やニュアンスの違いを聞く|学び|what's the difference between, when would you use, is it rude, it depends on the tone, native speakers
+S|
+A|What's the difference between "quite" and "pretty"? Like, "quite good" and "pretty good".|「quite」と「pretty」の違いは？「quite good」と「pretty good」みたいな。
+B|Hmm. Honestly, they're almost the same. "Pretty good" is a bit more casual.|うーん。正直、ほぼ同じ。「pretty good」のほうが少しカジュアル。
+A|And which is more positive?|どっちがよりポジティブ？
+B|Depends on the tone. "Quite good" can mean "not that good" in British English.|トーンによる。イギリス英語だと「quite good」は「そんなに良くない」の意味にもなる。
+A|Wait, really?|え、本当？
+B|Really. If I say your cooking is "quite good", I'm being polite.|本当。あなたの料理を「quite good」って言ったら、礼儀として言ってる。
+A|That's terrifying.|それは恐ろしい。
+S|
+A|Okay, another one. Is "whatever" rude?|じゃあもう1つ。「whatever」は失礼？
+B|Usually, yes. Unless you're talking about food. "I'll eat whatever."|だいたい失礼。食べ物の話なら別。「I'll eat whatever」。
+A|So "whatever" alone is rude, but "whatever you like" is fine?|「whatever」だけだと失礼で、「whatever you like」なら大丈夫？
+B|Exactly. It's all about what comes after.|その通り。後に何が来るかがすべて。
+A|English is a minefield.|英語は地雷原だね。
+B|Native speakers don't even know these rules. We just feel them.|ネイティブもこういうルールは知らないよ。ただ感じてるだけ。
+S|
+A|I'm writing these down.|メモしておく。
+B|Good. And ask me any time. I like these questions.|いいね。いつでも聞いて。こういう質問は好きだから。
+A|You'll regret saying that.|そう言ったこと、後悔するよ。
+
+T|😅|言い間違えて笑われたときの返し|学び|what did I say, oh no, what does that mean, I'll never live that down, at least you understood
+S|
+A|...so I told her I was very excited about the dinner.|…それで、ディナーがすごく楽しみだって彼女に言ったんだ。
+B|Ha! What did you actually say?|はは！ 実際は何て言ったの？
+A|What? What did I say?|え？ 何て言った？
+B|You said "excitado". That doesn't mean excited. Not in that way.|「excitado」って言った。それは「楽しみ」って意味じゃない。そういう意味ではね。
+A|Oh no. What does it mean?|うわ。どういう意味？
+B|It means... a different kind of excited. Physically.|意味は… 別の種類の興奮。身体的な。
+A|No!|嘘！
+B|Yes. Everyone at the table understood.|本当。テーブルの全員が理解してた。
+S|
+A|I'll never live that down.|一生言われ続けるね。
+B|You won't. But honestly, it's the classic mistake. Everyone makes it.|そうだね。でも正直、古典的な間違いだよ。みんなやる。
+A|Everyone?|みんな？
+B|Every single learner. There's a club.|学習者は全員。クラブがあるくらい。
+A|At least she understood what I meant.|少なくとも、言いたいことは伝わったよね。
+B|She understood. And she laughed for five minutes.|伝わった。それで5分間笑ってた。
+S|
+A|What should I have said?|何て言うべきだった？
+B|"Emocionado." Or "con ganas". Ganas is safer.|「emocionado」。または「con ganas」。ganasのほうが安全。
+A|Con ganas. Got it. Burned into my memory.|con ganas。覚えた。記憶に焼き付いた。
+B|That's how you learn. Through pain.|それが学び方だよ。痛みを通して。
+
+T|🧮|割り勘の金額を計算して伝える|食事|split it, that's X each, round up, I'll cover the tip, does that add up
+S|
+A|Right, the bill's a hundred and forty-four. Four of us.|えっと、お会計は144。4人で。
+B|So thirty-six each.|じゃあ1人36。
+A|Plus tip. Say ten percent, that's fourteen-forty.|それにチップ。10%だとして、14.4。
+B|Round it to fifteen. So one fifty-nine total.|15に切り上げて。合計159。
+A|Divided by four... thirty-nine seventy-five.|4で割って… 39.75。
+B|Call it forty each. Easier.|1人40にしよう。簡単だし。
+A|Forty each. Does that add up?|1人40。合ってる？
+B|One sixty. One pound over. The waiter can have it.|160。1ポンド多い。ウェイターにあげよう。
+S|
+A|Wait, Sam only had a starter. Should he pay less?|待って、サムは前菜だけだった。少なく払うべきじゃない？
+B|Sam, do you want to pay less?|サム、少なく払いたい？
+A|He says no. He says it's fine.|いいって言ってる。大丈夫だって。
+B|Then forty each. Done.|じゃあ1人40。決まり。
+A|I'll put it all on my card and you can send me yours.|私のカードで全部払うから、みんな送金して。
+B|Sending now.|今送る。
+S|
+A|Got it. And Sam's. And Priya's. Perfect.|受け取った。サムのも。プリヤのも。完璧。
+B|Fastest split ever.|史上最速の割り勘だね。
+A|We're getting good at this.|上手くなってきてる。
+
+T|💱|為替レートで日本円に換算して話す|雑談|what's that in yen, the exchange rate, roughly, that's expensive, works out to
+S|
+A|How much is this? Twenty pounds?|これいくら？ 20ポンド？
+B|Yes. What's that in yen?|うん。円だといくら？
+A|Let me think. The rate's about one-eighty-five right now.|えっと。今のレートは185くらい。
+B|So... three thousand seven hundred?|じゃあ… 3700？
+A|Roughly. Thirty-seven hundred for a sandwich and a coffee.|だいたい。サンドイッチとコーヒーで3700円。
+B|That's expensive.|高いね。
+A|Everything's expensive when you convert it.|換算すると何でも高くなるよ。
+B|The trick is to stop converting.|コツは換算をやめること。
+S|
+A|I can't. My brain does it automatically.|できない。脳が勝手にやっちゃう。
+B|How long have you been here?|ここに来てどのくらい？
+A|Two years. Still converting.|2年。まだ換算してる。
+B|It stops eventually. Around year three.|そのうち止まるよ。3年目くらいに。
+A|I'll believe it when it happens.|そうなったら信じる。
+S|
+B|Anyway. Thirty-seven hundred yen. Worth it?|とにかく。3700円。価値ある？
+A|The coffee, yes. The sandwich, no.|コーヒーはある。サンドイッチはない。
+B|Then next time, just the coffee.|じゃあ次はコーヒーだけ。
+A|And I'll bring my own sandwich. Like a student.|それでサンドイッチは持参する。学生みたいに。
+
+T|🧾|割引後の値段やチップの額を計算する|買い物|thirty percent off, that comes to, before tax, what's a good tip, in your head
+S|
+A|Okay, it's eighty and there's thirty percent off. What's that?|80で30%オフ。いくらになる？
+B|Thirty percent of eighty is twenty-four. So fifty-six.|80の30%は24。だから56。
+A|You did that fast.|早いね。
+B|Ten percent is eight, times three. Easy trick.|10%が8で、それを3倍。簡単な技。
+A|I always do it on my phone.|いつもスマホでやってる。
+B|Learn the ten percent thing. It works for everything.|10%の技を覚えて。何にでも使えるから。
+S|
+A|Does the fifty-six include tax?|56には税金が含まれてる？
+B|No. Tax is on top. Another eight percent.|いや。税金は別。さらに8%。
+A|So... sixty?|じゃあ… 60？
+B|Sixty and a bit. Sixty-four-forty, to be exact.|60と少し。正確には60.48。
+A|Close enough. Sixty.|十分近い。60。
+B|Close enough is fine for shopping.|買い物なら十分近ければいい。
+S|
+A|And if we tip on the coffee later? What's a good tip on twelve?|それで後でコーヒーにチップを払うなら？ 12に対していくら？
+B|Fifteen percent is one-eighty. Round to two.|15%は1.8。2に切り上げ。
+A|Two on twelve. Got it.|12に対して2。了解。
+B|You're learning. Soon you won't need me.|上達してるね。そのうち私が要らなくなる。
+A|I'll always need someone to check my maths.|計算をチェックしてくれる人は、いつでも必要だよ。
+
+T|🕐|今日は残業になりそうだと伝える|仕事|I'll be late tonight, working late, don't wait up, something came up, should be done by
+S|
+A|Hi, just a heads up — I'll be late tonight.|ちょっと連絡。今夜は遅くなる。
+B|How late?|どのくらい？
+A|Eight, maybe nine. Something came up at work.|8時、たぶん9時。仕事で急な用事が入って。
+B|What happened?|何があったの？
+A|A client moved the deadline forward. We've got to finish today.|クライアントが締め切りを前倒しした。今日中に終わらせないと。
+B|That's rough. Have you eaten?|それは大変だね。何か食べた？
+A|Not yet. I'll grab something here.|まだ。ここで何かつまむよ。
+S|
+B|I'll leave a plate in the fridge for when you get back.|帰ってきた時のために、冷蔵庫にお皿を入れておくね。
+A|You don't have to.|そんなことしなくても。
+B|I know. Don't wait up, though — I'll be asleep.|わかってる。でも起きて待ってないから、寝てるよ。
+A|Fair enough. I should be done by nine at the latest.|なるほど。遅くとも9時には終わるはず。
+B|Message me when you're leaving.|出る時にメッセージして。
+A|Will do.|そうする。
+S|
+A|Sorry about this. It's been a lot of late nights lately.|ごめんね。最近、遅い夜が多くて。
+B|I've noticed. Let's talk about that at the weekend.|気づいてたよ。週末に話そう。
+A|Okay. Yeah. We should.|わかった。うん。話すべきだね。
+
+T|😮‍💨|残業続きで疲れていると話す|仕事|I'm exhausted, every night this week, running on empty, can't keep this up, need a break
+S|
+A|I'm exhausted. Properly exhausted.|疲れた。本当に疲れ切ってる。
+B|You look it. When did you last finish on time?|そう見えるよ。最後に定時で帰ったのはいつ？
+A|I genuinely can't remember. Every night this week's been past eight.|正直、覚えてない。今週は毎晩8時過ぎ。
+B|That's not sustainable.|それは続かないよ。
+A|I know. I'm running on empty. I nearly fell asleep in a meeting today.|わかってる。もう空っぽ。今日、会議で寝落ちしそうになった。
+B|Does your manager know how bad it is?|上司はどれだけひどいか知ってる？
+A|She knows I'm busy. I don't think she knows I'm this tired.|忙しいのは知ってる。こんなに疲れてるとは思ってないと思う。
+S|
+B|Then tell her. Properly.|じゃあ言いなよ。ちゃんと。
+A|And say what? "I can't cope"?|何て言えばいい？「もう無理です」？
+B|Say you can't keep this up and something needs to change. That's not weakness.|このままでは続かないから、何かを変える必要があるって。弱さじゃないよ。
+A|It feels like weakness.|弱さに感じるんだ。
+B|Burning out is worse. Trust me, I've done it.|燃え尽きるほうがひどい。信じて、経験者だから。
+S|
+A|I'll talk to her tomorrow.|明日、話してみる。
+B|Good. And tonight, you go home at six. No arguments.|よし。それで今夜は6時に帰る。異論なし。
+A|Six. Okay. I need a break.|6時。わかった。休みが必要だ。
+B|You've needed one for weeks.|何週間も前から必要だったよ。
+
+T|🎉|現地の祝日やお祭りの意味を教えてもらう|文化|what's this holiday for, what do people do, it goes back to, traditional, everyone gets the day off
+S|
+A|What's the holiday on Monday? Everything's closed.|月曜の祝日は何？ 全部閉まってる。
+B|It's the harvest festival. Very old. Goes back hundreds of years.|収穫祭だよ。すごく古い。何百年も前から。
+A|What do people actually do?|実際、みんな何をするの？
+B|Family lunch, mostly. And there's a parade in the old town.|主に家族でランチ。それと旧市街でパレードがある。
+A|A parade of what?|何のパレード？
+B|People in traditional dress, carrying baskets of fruit. It sounds strange, but it's beautiful.|伝統衣装の人たちが果物のかごを運ぶ。変に聞こえるけど、綺麗だよ。
+A|Does everyone get the day off?|みんな休みになるの？
+B|Everyone. It's the one day even the shops respect.|全員。お店でさえ尊重する唯一の日。
+S|
+A|Is there special food?|特別な食べ物はある？
+B|A sweet bread with nuts. Only made this week. My grandmother's is the best.|ナッツ入りの甘いパン。この週だけ作られる。うちの祖母のが一番。
+A|Can I try some?|食べてみてもいい？
+B|Come to lunch. She'd love to feed a foreigner.|ランチに来なよ。祖母は外国人に食べさせるのが大好きだから。
+A|Really? I don't want to intrude.|本当に？ お邪魔したくないんだけど。
+B|You'd be the guest of honour. Seriously, come.|主賓になるよ。本当に、来て。
+S|
+A|Okay. What should I bring?|わかった。何を持っていけばいい？
+B|Nothing. Maybe flowers. And an empty stomach.|何も。花くらいかな。あと空腹のお腹。
+A|I can manage all three.|3つとも大丈夫。
+
+T|🙏|マナーやタブー（靴を脱ぐ、左手を使わない等）を確認する|文化|is it rude to, should I, what's the custom, I don't want to offend anyone, just to be safe
+S|
+A|Before we go in — should I take my shoes off?|入る前に、靴は脱いだほうがいい？
+B|Yes, always. At the door. There'll be slippers.|うん、必ず。玄関で。スリッパがあるよ。
+A|And do I bring a gift?|それと、お土産は持っていく？
+B|Something small. You've got the sweets, that's perfect.|小さいもので。お菓子を持ってきてるでしょ、それで完璧。
+A|Should I give it straight away or wait?|すぐ渡す？ それとも待つ？
+B|Straight away, with both hands. It shows respect.|すぐに、両手で。敬意を表すんだ。
+A|Both hands. Got it.|両手で。了解。
+S|
+A|Is there anything I should definitely not do? I don't want to offend anyone.|絶対にやっちゃいけないことは？ 誰も不快にさせたくなくて。
+B|Don't stick your chopsticks upright in rice. That's for funerals.|箸をご飯に突き立てないで。それは葬式のやり方だから。
+A|Oh. Good to know.|なるほど。覚えておく。
+B|And don't pour your own drink. Someone else pours for you, you pour for them.|あと、自分で自分の飲み物を注がないで。誰かが注いでくれて、あなたも誰かに注ぐ。
+A|That's actually nice.|それは素敵だね。
+B|It is. It keeps everyone looking after each other.|そう。お互いに気を配り合う仕組みなんだ。
+S|
+A|Anything else, just to be safe?|念のため、他には？
+B|Just be yourself. They'll forgive a foreigner anything as long as you try.|自然にしてればいい。努力してれば、外国人には何でも許してくれるから。
+A|That's reassuring.|安心した。
+B|And compliment the food. Loudly.|あと料理を褒めて。大きな声で。
+
+T|📚|今読んでいる本の話をする|雑談|what are you reading, I'm halfway through, I can't put it down, what's it about, is it any good
+S|
+A|What are you reading at the moment?|今、何を読んでる？
+B|A novel about a lighthouse keeper. I'm halfway through.|灯台守の小説。半分まで来た。
+A|Is it any good?|面白い？
+B|I can't put it down. I missed my stop yesterday because of it.|止まらない。昨日、それで乗り過ごした。
+A|That's a good sign.|それはいい兆候だね。
+B|Nothing happens for two hundred pages and it's still gripping. I don't know how.|200ページ何も起こらないのに、引き込まれる。どうしてかわからない。
+S|
+B|What about you?|そっちは？
+A|Non-fiction. About sleep. It's terrifying.|ノンフィクション。睡眠について。恐ろしいよ。
+B|Terrifying how?|どう恐ろしい？
+A|Everything I do is wrong, apparently. Phone in bed, coffee after two, all of it.|私のやってること全部が間違ってるらしい。ベッドでスマホ、2時以降のコーヒー、全部。
+B|Has it changed anything?|何か変わった？
+A|I put my phone in another room now. Two nights so far.|スマホを別の部屋に置くようになった。今のところ2晩。
+B|And?|それで？
+A|I slept. Actually slept. It's annoying that the book was right.|寝た。ちゃんと寝た。本が正しくて腹が立つ。
+S|
+A|Swap when we're done?|読み終わったら交換する？
+B|Lighthouse for sleep? Sure.|灯台と睡眠？ いいよ。
+A|You'll sleep better. I'll miss my stop.|あなたはよく眠れるようになる。私は乗り過ごす。
+
+T|📖|読書の習慣（紙か電子か、いつ読むか）を話す|雑談|paper or e-reader, I read before bed, the smell of books, on the train, I go through
+S|
+A|Paper or e-reader?|紙？ それとも電子書籍？
+B|Paper. Always. I need to feel the pages.|紙。絶対に。ページを感じないと。
+A|I've gone electronic. I read on the train.|私は電子に移行した。電車で読むから。
+B|Doesn't it feel wrong?|違和感ない？
+A|It did at first. Now I don't notice. And I carry fifty books in my pocket.|最初はね。今は気にならない。それにポケットに50冊入る。
+B|Fifty books you'll never finish.|読み終えることのない50冊ね。
+A|That's true of my shelves too.|それは本棚も同じだよ。
+S|
+B|When do you read?|いつ読むの？
+A|Commute, mostly. Forty minutes each way.|主に通勤中。片道40分。
+B|I read before bed. Half an hour, every night.|私は寝る前。毎晩30分。
+A|Doesn't it keep you up?|眠れなくならない？
+B|The opposite. It's the only thing that switches my brain off.|逆。脳を止められる唯一のもの。
+A|How many do you get through?|何冊読む？
+B|About two a month. You?|月2冊くらい。あなたは？
+A|Maybe three. But short ones. I cheat.|3冊くらい。でも短いやつ。ずるしてる。
+S|
+B|A book's a book.|本は本だよ。
+A|Even a short one on a screen?|画面で読む短いのでも？
+B|Even that. Reluctantly.|それでも。しぶしぶだけど。
+
+T|💬|在宅勤務中に「今話せる？」とチャットで確認する|仕事|got a sec, are you free, quick call, in the middle of something, ping me when
+S|
+A|Hey, got a sec? Quick question.|ねえ、少しいい？ ちょっと質問。
+B|In the middle of something. Give me ten?|今、作業中。10分待ってくれる？
+A|Sure. Ping me when you're free.|いいよ。空いたら連絡して。
+B|Will do.|そうする。
+S|
+B|Okay, free now. What's up?|よし、空いた。どうしたの？
+A|The report — do you want it as a PDF or the raw file?|レポートだけど、PDFがいい？ それとも元ファイル？
+B|Both, if you can. PDF for the client, raw for me.|できれば両方。クライアントにはPDF、私には元ファイル。
+A|Easy. Sending now.|簡単。今送る。
+B|Was that it? You could have just messaged.|それだけ？ メッセージで済んだのに。
+A|I thought it might turn into a longer thing. It didn't.|長い話になるかと思って。ならなかったね。
+S|
+B|Fair. Are you free at three for a quick call? Something did come up.|なるほど。3時に短い電話できる？ 実は別の件が出てきて。
+A|Three's fine. Video or just audio?|3時で大丈夫。ビデオ？ 音声だけ？
+B|Audio. I haven't brushed my hair.|音声。髪をとかしてないから。
+A|Ha. Audio it is.|はは。じゃあ音声で。
+
+T|🏠|在宅勤務の環境（集中できるか、運動不足など）を話す|仕事|working from home, hard to switch off, I don't leave the house, set up a proper desk, miss the office
+S|
+A|How are you finding working from home?|在宅勤務はどう？
+B|Mixed. I get more done, but I don't leave the house for days.|良し悪しかな。作業は捗るけど、何日も家から出ない。
+A|Same. I realised on Thursday I hadn't spoken out loud since Monday.|同じ。木曜に気づいたんだけど、月曜から一度も声を出してなかった。
+B|That's not healthy.|それは健康的じゃないね。
+A|No. I've started going for a walk at lunch. Just to see people.|うん。昼に散歩するようにした。人を見るためだけに。
+B|Do you have a proper desk?|ちゃんとしたデスクはある？
+A|Kitchen table. My back's destroyed.|キッチンのテーブル。腰がぼろぼろ。
+B|Get a desk. And a chair. Seriously.|デスクを買いなよ。それと椅子も。本気で。
+S|
+B|The hardest part for me is switching off. Work's always right there.|私にとって一番難しいのは、仕事から離れること。すぐそこにあるから。
+A|Do you have a routine for ending the day?|一日を終えるルーティンはある？
+B|I shut the laptop and put it in a drawer. Out of sight.|ノートパソコンを閉じて、引き出しにしまう。目に入らないように。
+A|That's smart.|賢いね。
+B|It's the only thing that works. Otherwise I'm checking emails at ten.|それしか効かない。じゃないと10時にメールをチェックしてる。
+S|
+A|Do you miss the office at all?|オフィスが恋しいことはある？
+B|The people, yes. The commute, never.|人はね。通勤は、絶対にない。
+A|Same. Maybe two days in, three days home.|同じ。出社2日、在宅3日くらいがいいかも。
+B|That's the dream.|それが理想だね。
+
+T|💘|マッチングアプリで会った相手と最初に話す|恋愛|you look like your photos, this is less awkward than I expected, so how does this work, what made you swipe, I almost didn't come
+S|
+A|Hi! You look like your photos. That's a relief.|こんにちは！ 写真通りですね。安心しました。
+B|Ha, you too. I almost didn't come.|はは、あなたも。危うく来ないところでした。
+A|Really? Why?|本当？ どうして？
+B|Nerves. I've had some bad ones.|緊張で。ひどい経験があって。
+A|Same. This is less awkward than I expected, though.|同じです。でも思ったより気まずくないですね。
+B|Give it time.|まだ始まったばかりですよ。
+S|
+A|So, what made you swipe right?|それで、なぜ右にスワイプしたんですか？
+B|The photo with the dog. Then the bit about bad cooking. It was honest.|犬の写真。それと、料理が下手っていう部分。正直だったから。
+A|The dog's my sister's. The bad cooking's mine.|犬は姉のです。料理の下手さは私のもの。
+B|Even better.|なおさらいいですね。
+A|And you? What's the thing you're most proud of on your profile?|あなたは？ プロフィールで一番誇りに思ってることは？
+B|I said I could name every capital city. It's true. Test me.|首都を全部言えるって書いた。本当ですよ。試してみて。
+A|Mongolia.|モンゴル。
+B|Ulaanbaatar. Next.|ウランバートル。次。
+S|
+A|Okay, I'm impressed. Another drink?|感心しました。もう一杯どうですか？
+B|I'd like that. This is going better than I thought.|ぜひ。思ったよりうまくいってますね。
+A|Don't jinx it.|縁起でもないこと言わないで。
