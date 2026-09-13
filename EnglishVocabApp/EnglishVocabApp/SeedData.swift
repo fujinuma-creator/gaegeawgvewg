@@ -34175,5 +34175,377 @@ S
 B	Deal. Okay, I'm exhausted. Sleep well!	決まり。じゃあ、もうクタクタ。おやすみ！
 A	You too. Talk soon.	そっちも。また近いうちに。
 B	Night!	おやすみ！
+T	📱	しばらく会っていない相手に近況を聞く	人間関係	long time no see, how have you been, what have you been up to, catch up properly, it's been too long
+S	
+A	Hey, stranger! Long time no see.	やあ、久しぶり！ ずいぶん会ってなかったね。
+B	Kohei! It's been ages. How have you been?	航平！ 本当に久しぶり。元気だった？
+A	Good, mostly. Busy. You?	まあまあ元気。忙しかったよ。そっちは？
+B	Same. Life just gets away from you, doesn't it?	同じ。気づいたら時間が経ってるよね。
+A	It really does. What have you been up to?	本当にそう。最近どうしてた？
+S	
+B	I changed jobs, actually. About six months ago.	実は転職したんだ。半年くらい前に。
+A	No way! Where are you now?	本当に？ 今はどこ？
+B	A small design studio. Much better than the old place.	小さなデザインスタジオ。前の会社よりずっといいよ。
+A	That's great. You always hated it there.	よかったね。前の会社はずっと嫌がってたもんね。
+B	And you? Still at the same company?	そっちは？ まだ同じ会社？
+A	Still there. But I moved flat. I'm on your side of town now.	まだいるよ。でも引っ越した。今はあなたと同じ側の街だよ。
+S	
+B	Then we have no excuse. Let's catch up properly.	じゃあ言い訳できないね。ちゃんと会って話そう。
+A	Dinner this week?	今週ディナーは？
+B	Thursday. And we're not leaving it this long again.	木曜。もうこんなに間を空けないようにしよう。
+A	Agreed. It's been too long.	同感。長すぎたよ。
+T	🏠	「今度うちに遊びに来て」と家に招く	人間関係	come round, my place, I'll cook, bring anything, make yourself at home
+S	
+A	You should come round to mine sometime.	今度うちに遊びに来てよ。
+B	I'd love to! I've never seen your place.	ぜひ！ あなたの家、見たことないから。
+A	It's small, but it's cosy. I'll cook.	狭いけど、居心地はいいよ。料理するね。
+B	You cook?	料理するの？
+A	Don't sound so surprised. Two dishes, both decent.	そんなに驚かないでよ。2品だけだけど、どっちもまともだから。
+B	Which two?	どの2品？
+A	Curry, and a very good pasta. You'll get one of them.	カレーと、かなり美味しいパスタ。どっちかが出るよ。
+S	
+B	Should I bring anything?	何か持っていく？
+A	Just yourself. Maybe a bottle of something, if you want.	手ぶらでいいよ。飲み物を1本くらいなら、よければ。
+B	What time?	何時？
+A	Seven? That gives me time to make it look tidy.	7時？ 片付けたふりをする時間ができるから。
+B	Ha. Don't tidy on my account.	はは。私のために片付けなくていいよ。
+A	I have to. My mum raised me right.	しないと。母のしつけがちゃんとしてるから。
+S	
+A	Oh, and it's the blue door, second floor. Just buzz.	あ、青いドアの2階ね。インターホン押して。
+B	Got it. Saturday at seven.	了解。土曜の7時。
+A	Come hungry.	お腹を空かせて来てね。
+T	🧍	レジで列に並んでいるか聞く	日常	are you in the queue, is this the line, go ahead, I'm just waiting for, after you
+S	
+A	Excuse me, are you in the queue?	すみません、列に並んでいますか？
+B	Oh, no, I'm just waiting for my friend. Go ahead.	いいえ、友達を待っているだけです。どうぞ。
+A	Thanks. It wasn't clear where it started.	ありがとう。どこから列なのかわかりにくくて。
+B	It never is in here.	この店はいつもそうなんです。
+A	Right? They should put a sign up.	ですよね。看板を立てればいいのに。
+S	
+A	Sorry, is this the line for the till?	すみません、これはレジの列ですか？
+B	Yes, it goes back to the door.	はい、ドアのところまで続いています。
+A	All the way back there?	あんな後ろまで？
+B	Afraid so. Lunchtime rush.	残念ながら。お昼のラッシュです。
+A	Okay. Thanks.	わかりました。ありがとう。
+S	
+B	Actually, there's a second till just opened.	あ、2つ目のレジが今開きましたよ。
+A	Oh, where?	え、どこですか？
+B	Over there, by the window.	あちら、窓のそばです。
+A	You saw it first. After you.	先に気づいたのはあなたです。お先にどうぞ。
+B	No, no, you go. I've got time.	いえいえ、どうぞ。私は時間がありますから。
+T	🙌	「先にどうぞ」と順番を譲る	日常	after you, go ahead, you were here first, I'm in no rush, that's kind
+S	
+A	After you.	お先にどうぞ。
+B	Oh, are you sure? You were here first.	あら、いいんですか？ 先にいらしたのに。
+A	I'm in no rush. Go ahead.	急いでいないので。どうぞ。
+B	That's very kind. Thank you.	ご親切に。ありがとうございます。
+A	Not at all.	とんでもないです。
+S	
+B	Actually, I only have one thing. You've got a whole basket.	でも私は1点だけで、あなたはカゴいっぱいですよね。
+A	That's exactly why you should go first.	だからこそ、お先にどうぞ。
+B	Ha, fair enough.	はは、なるほど。
+A	I'd only be standing here anyway.	どうせ待つだけですから。
+B	Well, thanks again.	では、改めてありがとうございます。
+S	
+B	Have a lovely day.	良い一日を。
+A	You too.	そちらも。
+T	🚪	ドアを押さえてもらってお礼を言う	日常	hold the door, thanks so much, no problem, hands full, got it
+S	
+A	Oh, thank you! You didn't have to wait.	あ、ありがとうございます！ 待たなくてもよかったのに。
+B	No problem. You looked like you had your hands full.	大丈夫ですよ。両手がふさがっているみたいだったので。
+A	I do. I always buy more than I can carry.	そうなんです。いつも持てる以上に買ってしまって。
+B	Happens to the best of us.	誰にでもあることですよ。
+A	Thanks again. Really.	本当にありがとう。
+S	
+A	Here, let me get this one for you.	今度は私が押さえますね。
+B	Oh, thanks. That's kind.	あ、ありがとう。ご親切に。
+A	Returning the favour.	お返しです。
+B	The building should really get automatic doors.	この建物、自動ドアにすべきですよね。
+A	Then we'd never talk to each other.	そうしたら誰とも話さなくなっちゃいますよ。
+B	Ha, true.	はは、たしかに。
+S	
+A	Which floor are you?	何階ですか？
+B	Fourth. You?	4階。あなたは？
+A	Third. Well, see you around.	3階。じゃあ、またどこかで。
+B	See you. Good luck with the bags.	また。荷物、頑張って。
+T	🤧	くしゃみをした人に声をかける	日常	bless you, coming down with something, allergies, tissue, hope you feel better
+S	
+B	Achoo!	ハクション！
+A	Bless you.	お大事に。
+B	Thanks. Sorry about that.	ありがとう。すみません。
+A	Don't be. Are you coming down with something?	気にしないで。風邪の引きはじめ？
+B	No, it's hay fever. Every spring.	いえ、花粉症です。毎年春に。
+A	Ah, I know that feeling.	ああ、その気持ちわかります。
+S	
+B	Achoo! Achoo!	ハクション！ ハクション！
+A	Bless you again. Do you need a tissue?	もう一度お大事に。ティッシュ要ります？
+B	Please. I've run out.	お願いします。切らしてしまって。
+A	Here, take the pack.	はい、パックごとどうぞ。
+B	You're a lifesaver.	本当に助かります。
+S	
+A	Have you tried the pharmacy? They've got good stuff for it.	薬局は試しました？ いい薬がありますよ。
+B	I have. It's just a bad day.	試しました。今日はひどい日なんです。
+A	Well, I hope it eases up.	早く楽になるといいですね。
+B	Thanks. And thanks for the tissues.	ありがとう。ティッシュもありがとう。
+T	🧤	落とし物を拾って渡す	日常	you dropped this, is this yours, glove, must have fallen, thank goodness
+S	
+A	Excuse me! You dropped this.	すみません！ これを落としましたよ。
+B	Oh! My glove. Thank you so much.	あ！ 手袋。本当にありがとうございます。
+A	It must have fallen out of your pocket.	ポケットから落ちたんでしょうね。
+B	I wouldn't have noticed until I got home.	家に帰るまで気づかなかったと思います。
+A	Glad I caught you.	追いつけてよかったです。
+S	
+B	These were a gift. I'd have been gutted.	これ、プレゼントでもらったものなんです。落としたら落ち込んでました。
+A	Then I'm doubly glad.	それなら、なおさらよかったです。
+B	Can I buy you a coffee or something?	コーヒーか何か、おごらせてもらえますか？
+A	No, no. It's just a glove.	いえいえ。手袋ですから。
+B	Well, thank you. Really.	でも、ありがとう。本当に。
+S	
+A	Check your other pocket too.	反対のポケットも確認したほうがいいですよ。
+B	Oh! Good idea. Yes, the other one's here.	あ！ そうですね。はい、もう片方はありました。
+A	Perfect. Have a good day.	よかった。良い一日を。
+B	You too. Thanks again!	そちらも。本当にありがとう！
+T	🪑	席が空いているか聞く	日常	is this seat taken, anyone sitting here, it's free, saving it, go ahead
+S	
+A	Excuse me, is this seat taken?	すみません、この席は空いていますか？
+B	No, it's free. Go ahead.	はい、空いていますよ。どうぞ。
+A	Thanks. It's packed in here today.	ありがとう。今日はすごく混んでいますね。
+B	It's the rain. Everyone's hiding inside.	雨のせいですね。みんな屋内に避難してるんです。
+A	Makes sense.	なるほど。
+S	
+A	Sorry, is anyone sitting here?	すみません、ここに誰か座っていますか？
+B	Actually, I'm saving it for a friend. Sorry.	実は友達のために取っているんです。すみません。
+A	No problem. Thanks anyway.	大丈夫です。ありがとう。
+B	There's one by the window, I think.	窓のそばに1つ空いてると思いますよ。
+A	Oh, so there is. Thanks!	あ、本当だ。ありがとう！
+S	
+A	Mind if I put my bag on this chair?	この椅子にカバンを置いてもいいですか？
+B	Not at all.	どうぞ。
+A	I'll move it if someone needs it.	誰か必要になったら、どかしますね。
+B	I'm sure it'll be fine.	きっと大丈夫ですよ。
+T	🍽	相席をお願いする	食事	would you mind sharing, join you, plenty of room, by all means, not at all
+S	
+A	Excuse me, would you mind if I joined you? There's nowhere else.	すみません、ご一緒してもよろしいですか？ 他に席がなくて。
+B	Not at all. Please, sit.	もちろんです。どうぞ座ってください。
+A	Thank you. I promise not to talk your ear off.	ありがとうございます。おしゃべりで邪魔はしませんから。
+B	Ha, talk as much as you like. I'm just reading.	はは、好きなだけ話してください。本を読んでいるだけなので。
+A	What are you reading?	何を読んでいるんですか？
+S	
+B	A crime novel. Nothing highbrow.	推理小説です。難しいものじゃないですよ。
+A	Any good?	面白いですか？
+B	I've been on the same page for ten minutes, so probably not.	10分間同じページにいるので、たぶんそうでもないです。
+A	Ha! Maybe the company's more interesting.	はは！ 話し相手のほうが面白いかもしれませんね。
+B	Maybe. What did you order?	かもしれませんね。何を注文したんですか？
+A	The soup. It's the only thing I can afford this week.	スープです。今週はそれしか買えなくて。
+S	
+B	I'm heading off in a minute. The table's all yours.	もうすぐ出ますので。テーブルは全部どうぞ。
+A	Oh, no rush.	あ、急がなくていいですよ。
+B	Really, I have to get back to work. Enjoy your soup.	本当に、仕事に戻らないと。スープ、楽しんでください。
+A	Thanks for sharing. Enjoy the rest of the book.	席をありがとう。本の続き、楽しんでください。
+T	🌡	店内が寒い・暑いので温度を変えてほしい	食事	a bit chilly, turn the heating up, air con, freezing, blanket
+S	
+A	Excuse me, sorry, is it possible to turn the air conditioning down a bit?	すみません、エアコンを少し弱めてもらえますか？
+B	Of course. Is it too cold?	かしこまりました。寒すぎますか？
+A	A little. My friend's got a thin jacket on.	少し。友人が薄いジャケットしか着ていなくて。
+B	I'll turn it down right away.	すぐに調整します。
+A	Thank you.	ありがとうございます。
+S	
+B	How's that? Any better?	いかがですか？ 少しは良くなりましたか？
+A	Much better. Thanks.	ずっと良くなりました。ありがとう。
+B	If it gets warm, just let me know.	暑くなったら、教えてくださいね。
+A	Will do.	そうします。
+S	
+A	Actually, do you have a blanket or anything?	あの、ブランケットか何かありますか？
+B	We do, for the terrace. Let me grab one.	テラス用のがあります。持ってきますね。
+A	That would be lovely.	それは助かります。
+B	Here you go.	どうぞ。
+A	Perfect. Now I can enjoy my dinner.	完璧。これでゆっくり食事ができます。
+T	🔉	音楽の音量を下げてほしい	食事	turn the music down, can't hear ourselves, a touch, would you mind, much better
+S	
+A	Excuse me, would you mind turning the music down a touch?	すみません、音楽を少し下げてもらえますか？
+B	Of course. Is it too loud?	かしこまりました。うるさすぎますか？
+A	Just a bit. We can't quite hear each other.	少しだけ。お互いの声が聞き取りにくくて。
+B	Sorry about that. I'll sort it now.	申し訳ありません。すぐに調整します。
+A	Thanks, we appreciate it.	ありがとう、助かります。
+S	
+B	Is that better?	これでいかがですか？
+A	Much better. Thank you.	ずっと良くなりました。ありがとう。
+B	Let me know if it creeps back up.	また大きくなったら教えてください。
+A	Will do. We're not trying to be difficult.	そうします。文句を言いたいわけじゃないんです。
+B	Not at all. It's a fair request.	とんでもない。当然の要望ですよ。
+S	
+A	Now we can actually have a conversation.	これでやっと会話ができる。
+B	What were you saying about your trip?	旅行の話、何て言ってたっけ？
+A	Right! So, day one...	そうそう！ 初日にね…
+T	👶	子ども用の椅子やメニューを頼む	食事	high chair, kids' menu, booster seat, colouring, smaller portion
+S	
+A	Hi, table for three, please. Two adults and a toddler.	すみません、3人でお願いします。大人2人と幼児1人です。
+B	Of course. Would you like a high chair?	かしこまりました。ハイチェアはご用意しましょうか？
+A	Yes, please. That would be great.	はい、お願いします。助かります。
+B	Right this way. I'll bring one over.	こちらへどうぞ。すぐお持ちします。
+A	Thank you.	ありがとう。
+S	
+A	Do you have a kids' menu?	お子様メニューはありますか？
+B	We do. And some crayons and colouring, if he wants.	ございます。お絵かき用のクレヨンも、よろしければ。
+A	Oh, he'd love that.	それは喜びます。
+B	The kids' pasta is popular. Or we can do a smaller portion of anything.	お子様パスタが人気です。あるいは、どの料理でも少なめにできますよ。
+A	The pasta, please. Plain, no sauce.	パスタで。ソースなしのプレーンで。
+B	Plain pasta. Got it.	プレーンパスタですね。承知しました。
+S	
+A	And could we get his first, if that's okay?	できれば、子どもの分を先に出してもらえますか？
+B	Absolutely. Kids first, always.	もちろんです。お子様優先で。
+A	You've done this before.	慣れていらっしゃいますね。
+B	Every day. Enjoy your meal.	毎日ですから。ごゆっくりどうぞ。
+T	🍹	アルコール抜きで作ってほしい	食事	without alcohol, virgin, mocktail, non-alcoholic, driving
+S	
+A	Could I get the mojito without the rum?	ラムなしのモヒートをお願いできますか？
+B	Sure, a virgin mojito. No problem.	はい、ノンアルコールのモヒートですね。大丈夫です。
+A	Thanks. I'm driving tonight.	ありがとう。今夜は運転なので。
+B	Sensible. Would you like it in the same glass?	賢明ですね。同じグラスでよろしいですか？
+A	Yes, please. So I still feel fancy.	はい。気分だけは楽しみたいので。
+B	Ha, understood.	はは、わかります。
+S	
+A	Do you have any other mocktails?	他にノンアルコールカクテルはありますか？
+B	A few. The passion fruit one's very popular.	いくつか。パッションフルーツのが人気です。
+A	What's in it?	何が入っていますか？
+B	Passion fruit, lime, soda, and a bit of mint.	パッションフルーツ、ライム、ソーダ、あとミント少々です。
+A	That sounds great. I'll try that next.	美味しそう。次はそれにします。
+S	
+B	Here's your virgin mojito.	ノンアルコールのモヒートです。
+A	It looks exactly like the real thing.	本物と全く同じ見た目ですね。
+B	That's the idea. Nobody has to know.	それが狙いです。誰にも気づかれません。
+A	Perfect. Cheers.	完璧。乾杯。
+T	📸	写真を撮っていいか店員に確認する	食事	is it okay to take photos, for social media, no flash, tag you, looks amazing
+S	
+A	Excuse me, is it okay if I take a photo of the food?	すみません、料理の写真を撮ってもいいですか？
+B	Of course! Go for it.	もちろんです！ どうぞ。
+A	It just looks too good not to.	撮らずにはいられない見た目で。
+B	The chef will be pleased to hear that.	シェフが聞いたら喜びますよ。
+A	Do you mind if I post it online?	ネットに投稿しても構いませんか？
+B	Not at all. Tag us, if you like.	全然。よければタグ付けしてください。
+S	
+A	What's your handle?	アカウント名は？
+B	It's on the menu, at the bottom. Same as the restaurant name.	メニューの一番下に。お店の名前と同じです。
+A	Perfect. Is flash okay?	わかりました。フラッシュは大丈夫ですか？
+B	We'd prefer no flash, just for the other guests.	他のお客様のために、フラッシュはご遠慮いただけると。
+A	Of course. The light's nice enough anyway.	もちろんです。どうせ光は十分ですから。
+S	
+B	Did you get a good one?	いい写真は撮れましたか？
+A	Yes, look. The colours came out great.	はい、見てください。色が綺麗に出ました。
+B	Oh, that's lovely. Enjoy your meal now, before it goes cold!	素敵ですね。冷める前に召し上がってください！
+A	Ha, good point.	はは、たしかに。
+T	🍣	食べ放題のルールを聞く	食事	all you can eat, time limit, order as you go, leftovers, is there a charge for
+S	
+A	Hi, how does the all-you-can-eat work here?	すみません、ここの食べ放題はどういう仕組みですか？
+B	It's ninety minutes. You order from the menu as you go.	90分制です。メニューから随時注文していただきます。
+A	As much as we want?	好きなだけ？
+B	As much as you want, five items at a time.	好きなだけ、一度に5品までです。
+A	And is the time from when we sit or when we order?	時間は座った時から？ それとも注文してから？
+B	From your first order.	最初の注文からです。
+S	
+A	Is everything on the menu included?	メニューの全部が対象ですか？
+B	Everything except the drinks and the specials at the back.	飲み物と、裏面のスペシャルメニュー以外は全部です。
+A	Got it. And is there a charge for leftovers?	わかりました。食べ残しには料金がかかりますか？
+B	Yes, a small one. So order what you'll eat.	はい、少しかかります。食べる分だけ注文してください。
+A	Fair enough. We'll pace ourselves.	なるほど。ペース配分しますね。
+S	
+B	Last orders are at seventy-five minutes.	ラストオーダーは75分の時点です。
+A	Perfect. Thanks for explaining.	わかりました。説明ありがとう。
+B	Enjoy. And take your time — sort of.	楽しんでください。ゆっくりと… ある程度ですけど。
+T	⏰	ラストオーダーの時間を聞く	食事	last orders, kitchen closes, still serving, squeeze in, just in time
+S	
+A	Excuse me, what time is last orders?	すみません、ラストオーダーは何時ですか？
+B	The kitchen closes at ten. So last food orders at nine forty-five.	厨房は10時に閉まります。なので料理のラストオーダーは9時45分です。
+A	And drinks?	飲み物は？
+B	Drinks until ten thirty.	飲み物は10時半までです。
+A	Perfect. We've got time, then.	わかりました。じゃあ時間はありますね。
+S	
+A	Sorry, are you still serving food? It's nine forty.	すみません、まだ料理は頼めますか？ 9時40分ですが。
+B	Just about. What would you like?	ぎりぎりですね。何になさいますか？
+A	Could we squeeze in one dessert to share?	シェア用のデザートを1つ、滑り込みで頼めますか？
+B	Of course. The chocolate tart's the quickest.	もちろんです。チョコレートタルトが一番早くお出しできます。
+A	That'll do nicely.	それでお願いします。
+B	Just in time. I'll put it through now.	ぎりぎり間に合いました。今通します。
+S	
+A	Thanks for fitting us in.	対応してくれてありがとう。
+B	No problem. Enjoy it.	どういたしまして。楽しんでください。
+T	💳	ポイントカードを持っているか聞かれた	買い物	do you have a loyalty card, sign up, collect points, app, no thanks
+S	
+B	Do you have a loyalty card with us?	当店のポイントカードはお持ちですか？
+A	No, I don't.	いいえ、持っていません。
+B	Would you like to sign up? It only takes a minute.	お作りしましょうか？ 1分で済みますよ。
+A	What do I get?	何か特典はありますか？
+B	A point for every dollar, and a free coffee after ten visits.	1ドルごとに1ポイント、10回来店で無料コーヒーです。
+A	Hmm. I do come here a lot.	うーん。ここにはよく来ますからね。
+S	
+A	Okay, sure. Is it a card or an app?	わかりました、作ります。カードですか、アプリですか？
+B	Either. The app's easier if you always have your phone.	どちらでも。スマホをいつも持っているならアプリが便利です。
+A	App, then. What do I need?	じゃあアプリで。何が必要ですか？
+B	Just your email. I'll scan this code and you're set.	メールアドレスだけです。このコードを読み取れば完了です。
+A	Done. That was quick.	できました。早いですね。
+S	
+B	And your first coffee's free today, as a welcome.	それと、今日は歓迎として最初のコーヒーが無料です。
+A	Oh, that's a nice surprise.	それはうれしいサプライズです。
+B	Enjoy. See you for the next nine!	楽しんでください。あと9回、お待ちしていますね！
+T	🏷	セール品かどうか確認する	買い物	is this on sale, the price tag says, discount, full price, ring it up
+S	
+A	Excuse me, is this on sale? The sign says thirty percent off.	すみません、これはセール品ですか？ 看板に30%オフとあるので。
+B	Let me check. Which rail was it on?	確認します。どのラックにありましたか？
+A	The one by the entrance, with the red sign.	入口のそば、赤い看板のところです。
+B	Ah, that rail is, but this item's from the new collection.	そのラックは対象ですが、こちらは新作なんです。
+A	So it's full price?	じゃあ定価ですか？
+B	I'm afraid so. It must have been put back in the wrong place.	残念ながら。間違った場所に戻されたんでしょうね。
+S	
+A	That's a shame. What's the full price?	残念ですね。定価はいくらですか？
+B	Eighty-five.	85です。
+A	Hmm. And the sale ones are similar?	うーん。セール品で似たようなものは？
+B	There's a very similar one on that rail, at fifty-nine.	そのラックにとても似たものが59であります。
+A	Could you show me?	見せてもらえますか？
+B	Of course, come with me.	もちろんです、こちらへ。
+S	
+A	Oh, I actually prefer this one.	あ、実はこっちのほうが好きです。
+B	And it's on sale. Win-win.	しかもセール品です。両方得ですね。
+A	Ring it up, please.	お会計お願いします。
+B	Happy to.	喜んで。
+T	🎁	ラッピングをお願いする	買い物	gift wrap, is it a present, which paper, ribbon, remove the price
+S	
+A	Hi, could I get this gift-wrapped, please?	すみません、これをプレゼント用に包んでもらえますか？
+B	Of course. Is there a charge? Let me check — no, it's free.	もちろんです。料金は… いえ、無料です。
+A	Perfect.	よかった。
+B	Which paper would you like? We have these three.	どの包装紙にしますか？ この3種類があります。
+A	The blue one, I think. It's for my dad.	青かな。父へのプレゼントなので。
+B	Blue it is. Ribbon?	青ですね。リボンは？
+A	Yes, please. Something simple.	お願いします。シンプルなもので。
+S	
+A	And could you remove the price tag?	あと、値札を外してもらえますか？
+B	Already done. I always check.	もう外しました。いつも確認しています。
+A	Thank you. That would have been awkward.	ありがとう。付いていたら気まずかったです。
+B	Would you like a card to go with it?	カードも付けますか？
+A	Actually, yes. A small one.	そうですね、お願いします。小さいのを。
+S	
+B	Here you go. All wrapped up.	どうぞ。包装完了です。
+A	That looks so much better than I'd have done it.	私がやるよりずっと綺麗です。
+B	That's what we're here for. Hope he likes it.	それが私たちの仕事ですから。気に入ってもらえるといいですね。
+A	Thank you!	ありがとう！
+T	📄	保証書やアフターサービスを確認する	買い物	warranty, how long is it covered, what does it cover, extended, repair or replace
+S	
+A	Before I buy this, does it come with a warranty?	買う前に確認したいのですが、保証は付いていますか？
+B	Yes, two years as standard.	はい、標準で2年間です。
+A	What does that cover?	何が対象ですか？
+B	Any manufacturing fault. Not accidental damage.	製造上の不具合すべてです。事故による損傷は対象外です。
+A	So if I drop it, that's on me.	落としたら自己責任ということですね。
+B	Exactly. Unless you take the extended cover.	その通りです。延長保証に入らなければ。
+S	
+A	How much is the extended cover?	延長保証はいくらですか？
+B	Thirty for three years. It includes accidental damage.	3年で30です。事故による損傷も含まれます。
+A	Hmm. Is it worth it?	うーん。入る価値はありますか？
+B	Honestly, for a laptop, I'd say yes.	正直、ノートパソコンなら入る価値はあると思います。
+A	Okay, add it on.	わかりました、付けてください。
+S	
+A	And if something goes wrong, do I bring it here?	もし不具合があったら、ここに持ってくればいいですか？
+B	Yes, any branch. We'll repair or replace, usually within a week.	はい、どの店舗でも。通常1週間以内に修理か交換します。
+A	Good to know. Do I need to keep the receipt?	わかりました。レシートは取っておく必要がありますか？
+B	Yes, or register it online. I'll show you how.	はい、またはオンライン登録を。やり方をお見せします。
+A	Thanks. That's very thorough.	ありがとう。とても丁寧ですね。
 """#
 }
