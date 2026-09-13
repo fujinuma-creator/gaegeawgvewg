@@ -41080,5 +41080,378 @@ A	So three seasons out of four.	じゃあ4つのうち3つを恋しく思って�
 B	Three out of four. Not bad.	4つのうち3つ。悪くない。
 A	I'd like to see the autumn one day.	いつか秋を見てみたいな。
 B	Come in November. I'll take you to the mountains.	11月に来て。山に連れて行くよ。
+T	📞	電話やアプリでレストランを予約する	食事	I'd like to book a table, for four, under the name, any dietary requirements, we'll hold it for
+S	
+B	Good afternoon, Marco's. How can I help?	こんにちは、マルコズです。ご用件は？
+A	Hi, I'd like to book a table for Saturday evening.	土曜の夜に席を予約したいのですが。
+B	Certainly. How many people?	かしこまりました。何名様ですか？
+A	Four. Around seven thirty, if possible.	4人です。できれば7時半頃に。
+B	Let me check... we have seven or eight. Seven thirty's gone.	確認します… 7時か8時なら空いています。7時半は埋まっていまして。
+A	Eight is fine.	8時で大丈夫です。
+S	
+B	And the name for the booking?	ご予約のお名前は？
+A	Fujinuma. F-U-J-I-N-U-M-A.	藤沼です。F-U-J-I-N-U-M-A。
+B	Thank you. Any dietary requirements?	ありがとうございます。食事制限はございますか？
+A	One vegetarian. Is that okay?	ベジタリアンが1人います。大丈夫ですか？
+B	Of course, we have plenty of options.	もちろんです、選択肢はたくさんあります。
+A	Great. And is there a dress code?	よかった。服装の決まりはありますか？
+B	Smart casual. Nothing formal.	スマートカジュアルで。堅苦しくなくて大丈夫です。
+S	
+B	So that's four people, Saturday at eight, under Fujinuma.	では、4名様、土曜の8時、藤沼様で。
+A	Perfect.	完璧です。
+B	We'll hold the table for fifteen minutes past. Please call if you're running late.	15分過ぎまでお席を確保します。遅れる場合はお電話ください。
+A	Will do. Thank you.	そうします。ありがとう。
+T	🪑	人数と時間を伝えて席が空いているか聞く	食事	do you have a table for, tonight, how long is the wait, we can do, fully booked
+S	
+A	Hi, do you have a table for six tonight? Around eight?	今夜、6人で席はありますか？ 8時頃に。
+B	Six is tricky. Let me see what we've got.	6名様は難しいですね。確認してみます。
+A	We're flexible on the time. Anywhere from seven to nine.	時間は融通が利きます。7時から9時のどこでも。
+B	We could do nine fifteen. Or seven, if you can get here quickly.	9時15分なら。または7時、すぐ来られるなら。
+A	Seven's in twenty minutes. We could just about make it.	7時はあと20分ですね。ぎりぎり間に合いそうです。
+B	Then I'll hold it. But I need you here by ten past.	では確保します。ただ、7時10分までには来てください。
+S	
+A	Understood. Can we sit together, or would it be two tables?	わかりました。一緒に座れますか、それとも2つのテーブルに？
+B	One long table. We'll push two together.	長いテーブル1つ。2つくっつけます。
+A	That's perfect.	それで完璧です。
+B	And the name?	お名前は？
+A	Fujinuma. We're leaving now.	藤沼です。今から出ます。
+S	
+B	See you at seven. Don't be late, we're fully booked after.	7時にお待ちしています。遅れないでください、その後は満席なので。
+A	We won't. Thank you so much for squeezing us in.	遅れません。無理に入れてもらってありがとう。
+B	Happy to help.	喜んで。
+T	🪟	窓際やテラス席をお願いする	食事	could we sit by the window, outside, is the terrace open, the view, if it's not too much trouble
+S	
+A	Hi, table for two. Could we sit by the window, if possible?	2人です。できれば窓際に座れますか？
+B	Let me check... yes, there's one free.	確認します… はい、1つ空いています。
+A	Wonderful. It's her birthday, and the view's lovely.	よかった。彼女の誕生日で、景色が素敵なので。
+B	Happy birthday! Right this way.	お誕生日おめでとうございます！ こちらへどうぞ。
+A	Thank you.	ありがとう。
+S	
+A	Actually, is the terrace open tonight?	あの、今夜テラスは開いていますか？
+B	It is, but it's a bit chilly out there.	開いていますが、少し肌寒いですよ。
+A	We don't mind. Do you have heaters?	気にしません。ヒーターはありますか？
+B	We do, and blankets. Would you prefer outside?	あります、ブランケットも。外のほうがよろしいですか？
+A	If it's not too much trouble.	お手数でなければ。
+B	Not at all. The terrace is nicer anyway. Follow me.	全然。どうせテラスのほうが素敵ですから。こちらへ。
+S	
+A	This is perfect. Thank you for moving us.	完璧です。移動させてくれてありがとう。
+B	My pleasure. I'll bring the blankets and the menus.	どういたしまして。ブランケットとメニューをお持ちします。
+A	And a candle, if you have one?	それと、キャンドルがあれば？
+B	Already on its way.	もう用意しています。
+T	⏰	予約時間に遅れると店に連絡する	食事	we're running late, hold the table, how long can you, stuck in traffic, on our way
+S	
+A	Hi, I have a booking at eight under Fujinuma. We're running a bit late.	8時に藤沼で予約している者です。少し遅れそうで。
+B	No problem. How late?	大丈夫ですよ。どのくらい？
+A	Maybe fifteen minutes. We're stuck in traffic.	15分くらいです。渋滞にはまっていて。
+B	We can hold the table for fifteen. After that it's tricky.	15分までなら確保できます。それ以上は難しいですが。
+A	Understood. We'll be there by quarter past.	わかりました。15分までには着きます。
+S	
+A	Sorry, it's me again. It's worse than I thought. Twenty-five minutes.	すみません、また私です。思ったよりひどくて。25分かかりそうです。
+B	Hmm. Let me see what I can do.	うーん。何かできることがないか見てみます。
+A	If it's a problem, we can come another night. I don't want to mess you around.	問題なら、別の日にします。ご迷惑をおかけしたくないので。
+B	Actually, the eight fifteen just cancelled. I can move you to that.	実は、8時15分の予約がキャンセルになりました。そちらに移せます。
+A	Oh, that's brilliant. Thank you.	それは助かります。ありがとう。
+B	Lucky timing. See you at eight thirty at the latest.	運がよかったですね。遅くとも8時半にお待ちしています。
+S	
+A	We're outside now. Parking.	今、外に着きました。駐車中です。
+B	Take your time. Your table's ready.	ごゆっくり。お席は準備できています。
+A	Thanks for being so patient.	待っていただいてありがとうございます。
+T	🍽	料理の説明（材料や調理法）を店員に聞く	食事	what's in it, how is it cooked, is it very rich, comes with, what would you compare it to
+S	
+A	What's in the special tonight?	今夜のスペシャルには何が入っていますか？
+B	Slow-braised lamb shoulder with white beans and rosemary.	ラムの肩肉をじっくり煮込んだもので、白いんげん豆とローズマリー入りです。
+A	How is it cooked?	どんな調理法ですか？
+B	Six hours in the oven. It falls apart when you touch it.	オーブンで6時間。触るとほろほろ崩れます。
+A	Is it very rich?	かなり濃厚ですか？
+B	It's hearty, but the beans balance it. Not heavy.	ボリュームはありますが、豆がバランスを取っています。重くはないです。
+S	
+A	And the fish? What would you compare it to?	魚は？ 何に例えられますか？
+B	It's like sea bass, but a bit firmer. Grilled, with lemon and herbs.	スズキに似ていますが、少し身が締まっています。レモンとハーブでグリルします。
+A	Does it come with anything?	付け合わせはありますか？
+B	Roasted potatoes and greens.	ローストポテトと青菜です。
+A	Any nuts in either? My friend's allergic.	どちらかにナッツは？ 友人がアレルギーで。
+B	No nuts in either. I'll flag it to the kitchen anyway.	どちらにもありません。念のため厨房に伝えておきます。
+S	
+A	Thank you. That was really helpful.	ありがとう。とても参考になりました。
+B	Any time. So, lamb or fish?	いつでも。それで、ラムか魚か？
+A	Lamb. You sold it at "falls apart".	ラム。「ほろほろ崩れる」で決まりました。
+T	⌛	料理が出てくるのが遅いので確認する	食事	we've been waiting, is everything okay, how much longer, no rush but, on its way
+S	
+A	Excuse me, sorry. We've been waiting about forty minutes. Is everything okay?	すみません。40分ほど待っているのですが、何かありましたか？
+B	I'm so sorry. Let me check with the kitchen.	申し訳ありません。厨房に確認します。
+A	No rush, but we were just wondering.	急いではいないのですが、気になって。
+B	Of course. One moment.	もちろんです。少々お待ちください。
+S	
+B	I've checked. There was a mix-up with your order. It's being made now.	確認しました。注文に行き違いがありまして。今作っています。
+A	Ah. How much longer?	なるほど。あとどのくらいですか？
+B	Ten minutes at most. I'm really sorry.	長くても10分です。本当に申し訳ありません。
+A	That's fine. Thanks for checking.	大丈夫です。確認してくれてありがとう。
+B	Let me bring you some bread and olives while you wait. On the house.	お待ちの間、パンとオリーブをお持ちします。お店からのサービスで。
+A	That's very kind.	ご親切に。
+S	
+B	Here's your food. Again, apologies for the wait.	お待たせしました。重ねてお詫び申し上げます。
+A	No harm done. It looks great.	大丈夫です。美味しそうですね。
+B	And I've taken the drinks off the bill.	お飲み物はお会計から外しました。
+A	You didn't have to. But thank you.	そこまでしなくても。でもありがとう。
+T	😋	料理の感想を店員や同席者に伝える	食事	this is incredible, compliments to the chef, best I've had, what did they put in this, I could eat this every day
+S	
+A	Oh, wow. You have to try this.	わあ。これ食べてみて。
+B	Good?	美味しい？
+A	Incredible. What did they put in this sauce?	信じられないくらい。このソース、何が入ってるんだろう。
+B	Let me try... okay, yes. That's very good.	ちょっと… うん、そう。すごく美味しい。
+A	I could eat this every day.	毎日食べられる。
+B	Mine's great too. The fish is perfect.	私のも最高。魚が完璧。
+S	
+B	Excuse me — everything's wonderful. Compliments to the chef.	すみません、全部素晴らしいです。シェフによろしくお伝えください。
+A	Seriously, the lamb is the best I've had.	本当に、このラムは今まで食べた中で一番です。
+B	Thank you! I'll tell him. He'll be thrilled.	ありがとうございます！ 伝えます。喜びますよ。
+A	Is the recipe a secret?	レシピは秘密ですか？
+B	Very. But I can tell you there's a lot of butter.	かなり。でも、バターがたっぷり入っていることは言えます。
+A	That explains it.	それで納得。
+S	
+A	We're coming back. Next week, probably.	また来ます。たぶん来週。
+B	We'd love to have you. Same table?	お待ちしています。同じ席で？
+A	Same table, same lamb.	同じ席、同じラム。
+T	🍷	ワインや飲み物のおすすめを聞く	食事	what would you recommend, goes well with, a glass or a bottle, not too dry, house wine
+S	
+A	What wine would you recommend with the lamb?	ラムに合うワインのおすすめは？
+B	A red, definitely. The Rioja goes beautifully with it.	赤ですね、間違いなく。リオハがとてもよく合います。
+A	Is it very dry?	かなり辛口ですか？
+B	Medium. Not too dry, quite smooth.	中くらいです。辛すぎず、なめらかです。
+A	And my friend's having the fish.	友人は魚を頼んでいます。
+B	Then maybe a glass of the white for her, and a glass of red for you.	では彼女にはグラスの白、あなたにはグラスの赤がいいでしょう。
+S	
+A	Glasses or a bottle — which is better value?	グラスとボトル、どちらがお得ですか？
+B	A bottle, if you'll have two glasses each. Otherwise, glasses.	お二人で2杯ずつ飲むなら、ボトルです。そうでなければグラスで。
+A	Probably just one each. We're driving later.	たぶん1杯ずつです。後で運転するので。
+B	Then glasses. Sensible.	ではグラスで。賢明ですね。
+A	And the house wine — is it any good?	ハウスワインはどうですか？
+B	Honestly, it's very good. Better than it has any right to be.	正直、とても良いですよ。値段以上の味です。
+S	
+A	Then the house red and the house white. Trust the house.	じゃあハウスの赤とハウスの白で。お店を信じます。
+B	Good choice. I'll bring them right over.	いい選択です。すぐお持ちします。
+T	🕯	店の雰囲気や料理を話題に同席者と盛り上がる	食事	I love this place, the atmosphere, how did you find it, we should come here more, look at that
+S	
+A	I love this place. How did you find it?	この店、大好き。どうやって見つけたの？
+B	A colleague. She said it was the best kept secret in the city.	同僚。街で一番の隠れた名店だって。
+A	She was right. Look at the ceiling.	正解だね。天井を見て。
+B	And the candles. It's like being in someone's home.	それにキャンドル。誰かの家にいるみたい。
+A	A very good cook's home.	すごく料理上手な人の家ね。
+S	
+B	Have you looked at the desserts yet?	デザート、もう見た？
+A	I'm trying not to. I'll want all of them.	見ないようにしてる。全部欲しくなるから。
+B	The table next to us has the chocolate thing. Look at that.	隣のテーブルがチョコレートのやつを頼んでる。見て。
+A	Okay, we're getting that.	よし、それを頼もう。
+B	Two spoons.	スプーン2本で。
+A	Obviously two spoons.	当然2本。
+S	
+A	We should come here more often.	もっと頻繁に来ようよ。
+B	Once a month. A standing date.	月に1回。定期的な約束にしよう。
+A	Same table. Same candles.	同じ席で。同じキャンドルで。
+B	And the chocolate thing.	それとチョコレートのやつ。
+T	☕	食事の締めにコーヒーやデザートを頼むか相談する	食事	room for dessert, share one, just a coffee, I'm stuffed but, when in doubt
+S	
+A	Have you got room for dessert?	デザート、まだ入る？
+B	Honestly? I'm stuffed. But...	正直？ お腹いっぱい。でも…
+A	But?	でも？
+B	But I saw the tiramisu going past.	ティラミスが運ばれていくのを見た。
+A	Share one?	1つシェアする？
+B	Share one. That's the compromise.	1つシェア。それが妥協点。
+S	
+A	And coffee? I'll be up all night.	コーヒーは？ 一晩中眠れなくなる。
+B	Decaf, then. Or just skip it.	じゃあカフェインレス。それか飛ばす。
+A	I never skip coffee. It's the proper ending.	コーヒーは飛ばさない。ちゃんとした締めだから。
+B	Fine. Two decafs and one tiramisu.	わかった。カフェインレス2つと、ティラミス1つ。
+A	Two spoons.	スプーン2本で。
+B	When in doubt, two spoons.	迷ったら、スプーン2本。
+S	
+A	Excuse me — one tiramisu, two spoons, and two decaf coffees.	すみません、ティラミス1つ、スプーン2本、カフェインレス2つお願いします。
+B	Coming right up. Good choice on the tiramisu.	すぐお持ちします。ティラミスはいい選択ですよ。
+A	We saw it go past. It sold itself.	運ばれていくのを見たんです。自分で売り込んでました。
+T	🎤	名前・出身・仕事を30秒でまとめて自己紹介する	人間関係	quick intro, I'm originally from, I work in, in a nutshell, that's me
+S	
+B	Okay, let's do quick intros. Thirty seconds each. Kohei?	じゃあ、簡単に自己紹介を。1人30秒。航平から？
+A	Sure. I'm Kohei. Originally from Osaka, been here about four years.	はい。航平です。大阪出身で、こちらに来て4年ほどです。
+B	And what do you do?	お仕事は？
+A	I work in design. Mostly apps. Right now, a language-learning one.	デザインの仕事をしています。主にアプリ。今は語学学習のアプリを。
+B	Nice.	いいですね。
+A	Outside work, I climb and I cook badly. That's me, in a nutshell.	仕事以外では、クライミングと、下手な料理。以上、簡単に言うと。
+S	
+B	Twenty-eight seconds. Well done.	28秒。お見事。
+A	I've practised. It's a useful thing to have ready.	練習したので。用意しておくと便利なんです。
+B	Do you always say the cooking bit?	料理のところはいつも言うんですか？
+A	Always. It makes people laugh, and then they remember me.	いつも。笑ってもらえて、覚えてもらえるので。
+B	That's a good trick.	いい技ですね。
+S	
+B	Right. Next. Ellie?	では、次。エリー？
+A	Wait, can I ask — where's the best place to eat around here? Since you're local.	待って、聞いてもいいですか。この辺で一番美味しい店は？ 地元の方なので。
+B	After intros. But yes. I'll tell you.	自己紹介の後で。でも、はい。教えますよ。
+T	💻	オンライン会議の冒頭で自己紹介する	仕事	for those who don't know me, I'm joining from, my role is, I'll be, looking forward to working with
+S	
+B	Let's go round and introduce ourselves for the new team members. Kohei, do you want to start?	新しいメンバーのために、順番に自己紹介しましょう。航平さん、始めてもらえますか？
+A	Sure. Hi everyone. For those who don't know me, I'm Kohei, joining from the Tokyo office.	はい。皆さん、こんにちは。ご存じない方のために、航平です。東京オフィスから参加しています。
+B	Can everyone hear Kohei okay?	航平さんの声、皆さん聞こえますか？
+A	Hopefully. My role is product design, and I'll be leading the interface work on this project.	聞こえているといいのですが。役割はプロダクトデザインで、このプロジェクトではインターフェース部分を担当します。
+B	Great.	わかりました。
+S	
+A	I've been with the company about three years. Before that, I was at a small studio.	会社には3年ほどいます。その前は小さなスタジオにいました。
+B	And what should people come to you for?	皆さんは、どんなことであなたに相談すればいいですか？
+A	Anything about how the product looks or feels. If it's confusing, that's my problem to fix.	製品の見た目や使い心地に関することなら何でも。わかりにくければ、それは私が直す問題です。
+B	Good to know.	覚えておきます。
+A	I'm looking forward to working with all of you. Feel free to message me directly.	皆さんと一緒に働けるのを楽しみにしています。直接メッセージしてもらって構いません。
+S	
+B	Thanks, Kohei. Next, Priya?	ありがとう、航平さん。次、プリヤさん？
+A	And my camera's off because my cat is currently sitting on my keyboard. Apologies.	カメラがオフなのは、今、猫がキーボードの上に座っているからです。すみません。
+B	Ha! Best excuse we've had.	はは！ 今までで一番いい言い訳ですね。
+T	🔄	グループで順番に自己紹介する	人間関係	let's go round, I'll go next, you're up, same as, nice to meet everyone
+S	
+B	Okay, let's go round the table. Name, where you're from, and one thing about you.	じゃあ、順番に。名前、出身、それと自分について1つ。
+A	I'll go first. Kohei, from Osaka, and I've never broken a bone.	私から。航平、大阪出身、骨折したことが一度もない。
+B	That's a strange fact.	変な事実だね。
+A	I'm quite proud of it.	けっこう誇りに思ってる。
+B	Fair enough. Next. Ellie, you're up.	なるほど。次。エリー、どうぞ。
+S	
+B	Ellie, Manchester, and I once met the Queen. Briefly.	エリー、マンチェスター出身、女王に会ったことがある。ほんの一瞬。
+A	Wait, what?	え、何？
+B	She walked past me at an event. She nodded. I nodded. That's it.	イベントで私の前を通った。会釈された。私も会釈した。それだけ。
+A	That still counts.	それでも数に入るよ。
+B	And Sam? Same as always?	それでサム？ いつものやつ？
+A	Sam, London, and he's allergic to cats but has two.	サム、ロンドン出身、猫アレルギーなのに2匹飼ってる。
+B	Every time. Every single time he says that.	毎回。毎回それを言うんだよね。
+S	
+A	Nice to meet everyone. This is a good group.	皆さん、よろしく。いいグループだね。
+B	Now we know each other's weird facts. That's the important part.	お互いの変な事実を知った。それが大事なところ。
+A	Bones, Queens, and cats.	骨、女王、そして猫。
+T	🎨	自己紹介で趣味や好きなことを一言添える	人間関係	outside of work, in my spare time, I'm really into, when I'm not, that's my thing
+S	
+A	I'm Kohei, I work in design. And outside of work, I'm really into climbing.	航平です。デザインの仕事をしています。仕事以外では、クライミングにハマっています。
+B	Indoor or outdoor?	屋内？ 屋外？
+A	Indoor, mostly. I'm not brave enough for real rocks yet.	主に屋内です。本物の岩に挑む勇気はまだなくて。
+B	That's still impressive. I can't even do a pull-up.	それでもすごいですよ。私は懸垂1回もできません。
+A	Neither could I, a year ago. That's the point.	1年前は私もできませんでした。それが面白いところです。
+S	
+B	What about you? What do you do when you're not working?	あなたは？ 仕事以外では何を？
+A	I bake. Bread, mostly. It's my thing.	パンを焼きます。主にパン。それが私の趣味です。
+B	Bread? That's a serious hobby.	パン？ それは本格的な趣味ですね。
+A	It's cheaper than therapy and you get to eat the results.	セラピーより安いし、結果を食べられますから。
+B	I need to try your bread.	あなたのパン、食べてみないと。
+A	Come to the office on Monday. I always bring a loaf.	月曜にオフィスに来てください。いつも1斤持ってくるので。
+S	
+B	Climbing and bread. That's a good combination.	クライミングとパン。いい組み合わせですね。
+A	One burns it off, the other puts it back.	片方で消費して、もう片方で戻す。
+B	Perfect balance.	完璧なバランス。
+T	❓	自己紹介の後に相手にも質問を返す	人間関係	and you, what about yourself, what brings you here, how about you, enough about me
+S	
+A	So that's me. Enough about me, though. What about you?	以上が私です。私の話はもう十分。あなたは？
+B	Oh, I'm Sarah. I'm in marketing, at a food company.	サラです。マーケティングで、食品会社にいます。
+A	Which company?	どちらの会社ですか？
+B	Northwind. We do the oat milk.	ノースウィンドです。オーツミルクを作っています。
+A	Oh! I drink that. Every morning.	あ！ 飲んでます。毎朝。
+B	Then I owe you a coffee.	じゃあコーヒーをおごらないと。
+S	
+A	What brings you to this event?	このイベントにはどうして？
+B	My boss made me. Honestly.	上司に言われて。正直に言うと。
+A	Ha, at least you're honest.	はは、正直でいいですね。
+B	But it's been better than I expected. How about you?	でも思ったより楽しいです。あなたは？
+A	I came for the free food. Stayed for the conversation.	無料の食事目当てで来ました。会話が楽しくて残っています。
+B	Also honest.	そちらも正直ですね。
+S	
+A	Where are you based?	拠点はどちらですか？
+B	Just across the river. Ten minutes' walk.	川の向こうです。歩いて10分。
+A	Small world. I'm two streets from there.	世間は狭いですね。そこから2本先の通りに住んでいます。
+B	Then we're neighbours. We should get that coffee.	じゃあご近所さんですね。そのコーヒー、行きましょう。
+T	🕐	「そろそろ行かないと」と切り上げる	人間関係	I should probably head off, it's getting late, I've got an early one, lovely to meet you, let's stay in touch
+S	
+A	I should probably head off. I've got an early one tomorrow.	そろそろ行かないと。明日は朝が早くて。
+B	Already? What time is it?	もう？ 今何時？
+A	Nearly ten. And I'm on a seven a.m. train.	もうすぐ10時。しかも朝7時の電車なんです。
+B	Fair enough. It was lovely to meet you.	なるほど。お会いできてよかったです。
+A	You too. Really. This was the best conversation I've had all week.	こちらこそ。本当に。今週一番の会話でした。
+S	
+B	Let's stay in touch. Are you on LinkedIn?	連絡を取り合いましょう。LinkedInやってます？
+A	I am. Or just take my number, it's quicker.	やってます。でも番号のほうが早いですよ。
+B	Number's better. Here, put it in.	番号のほうがいいですね。はい、入れてください。
+A	Done. I'll message you tomorrow.	入れました。明日メッセージします。
+B	Not at seven a.m.	朝7時にはしないでくださいね。
+A	Ha, no. Civilised hours.	はは、しません。まともな時間に。
+S	
+A	Right. Enjoy the rest of the evening.	では。残りの夜を楽しんでください。
+B	You too. Safe trip home.	あなたも。気をつけて帰ってください。
+A	Thanks. Bye!	ありがとう。さようなら！
+T	👋	「今日はありがとう、またね」と軽く別れて次につなげる	人間関係	thanks for today, that was fun, same time next week, I'll text you, see you soon
+S	
+A	Thanks for today. That was really fun.	今日はありがとう。本当に楽しかった。
+B	It was! I needed that.	楽しかったね！ 必要な時間だった。
+A	Same. I laughed more today than all last week.	私も。先週1週間より、今日のほうがたくさん笑った。
+B	That's either a compliment to me or an insult to your week.	それは私への褒め言葉か、あなたの1週間への侮辱か。
+A	Both.	両方。
+S	
+A	Should we do this again? Same time next week?	またやる？ 来週の同じ時間に？
+B	Definitely. Maybe somewhere new, though.	もちろん。でも、新しい場所がいいかも。
+A	I'll find a place. I'll text you.	場所を探しておくよ。メッセージするね。
+B	Sounds good.	いいね。
+A	And bring your friend next time. The one with the stories.	それと、次は友達も連れてきて。あの話が面白い人。
+B	Ha, I'll ask. She'll say yes. She loves an audience.	はは、聞いてみる。イエスって言うよ。観客が好きだから。
+S	
+A	Okay. See you soon, then.	じゃあ。また近いうちに。
+B	See you soon. Get home safe!	近いうちにね。気をつけて帰って！
+A	You too!	そっちも！
+T	📦	商品が説明と違うので店に苦情を伝える	トラブル	not as described, the listing said, misleading, I'd like a refund, false advertising
+S	
+A	Hi, I bought this speaker last week, and it's not what was described.	先週このスピーカーを買ったんですが、説明と違います。
+B	I'm sorry to hear that. What's the issue?	申し訳ありません。どのような問題ですか？
+A	The listing said it was waterproof. It's not. It says "splash resistant" on the box.	説明には防水とありました。違います。箱には「防滴」と書いてあります。
+B	Ah. Those are different things.	ああ。それは別物ですね。
+A	Very different. I bought it for the shower. I can't use it there.	かなり別物です。シャワー用に買ったんです。そこでは使えません。
+B	That does sound misleading.	たしかに誤解を招く説明ですね。
+S	
+A	I'd like a refund, please.	返金をお願いしたいです。
+B	Of course. Do you have the receipt and the box?	もちろんです。レシートと箱はお持ちですか？
+A	Both. And I've barely used it.	両方あります。ほとんど使っていません。
+B	Then that's no problem. Full refund.	それなら問題ありません。全額返金します。
+A	Thank you. And you might want to fix the listing. Someone else will get caught.	ありがとう。あと、説明を直したほうがいいですよ。他の人も引っかかります。
+B	I'll flag it to the online team today.	今日、オンライン担当に伝えます。
+S	
+A	I appreciate that. I'm not angry, I just don't want it to happen to anyone else.	ありがとうございます。怒っているわけじゃなくて、他の人に同じことが起きてほしくないだけです。
+B	Completely understood. Thank you for being so reasonable about it.	よくわかります。冷静に対応していただいてありがとうございます。
+T	🗣	サービスの対応が悪かったと責任者に伝える	トラブル	could I speak to a manager, the way I was treated, unacceptable, I'm not trying to get anyone in trouble, take it seriously
+S	
+A	Excuse me, could I speak to a manager, please?	すみません、責任者の方とお話しできますか？
+B	I'm the manager. What can I do for you?	私が責任者です。どうされましたか？
+A	I want to tell you about the way I was treated at the counter just now.	さっきカウンターでの対応について、お伝えしたいことがあります。
+B	Go on.	どうぞ。
+A	I asked a simple question and the member of staff rolled her eyes and walked away. Mid-sentence.	簡単な質問をしただけなのに、店員さんが目を回して立ち去りました。話の途中で。
+B	That's not acceptable. I'm sorry.	それは許されることではありません。申し訳ありません。
+S	
+A	I'm not trying to get anyone in trouble. But it wasn't okay.	誰かを困らせたいわけじゃありません。でも、あれはよくなかった。
+B	I understand. Can you tell me who it was?	わかります。誰だったか教えていただけますか？
+A	The woman with the red badge. About twenty minutes ago.	赤いバッジの女性です。20分ほど前に。
+B	I'll speak to her today. That's not how we do things here.	今日中に本人と話します。うちではそういう対応はしません。
+A	Thank you. That's all I wanted — for it to be taken seriously.	ありがとうございます。それだけです。真剣に受け止めてもらえれば。
+S	
+B	Is there anything I can do for you now? What was the question you had?	今、何かお役に立てることは？ 元々の質問は何でしたか？
+A	Just whether you had the blue one in stock.	青いのの在庫があるかどうか、それだけです。
+B	Let me check that for you myself.	私が直接お調べします。
+A	That would be great. Thank you.	それは助かります。ありがとう。
+T	😤	何度も同じ問題が起きていると強めに伝える	トラブル	this is the third time, I've been patient, enough is enough, what are you going to do about it, escalate
+S	
+A	This is the third time I'm calling about the same problem.	同じ問題で電話するのはこれで3回目です。
+B	I'm sorry. Can you remind me what the issue is?	申し訳ありません。問題の内容をもう一度教えていただけますか？
+A	The internet drops out every evening. Between seven and nine. Every night for three weeks.	毎晩インターネットが切れるんです。7時から9時の間。3週間、毎晩。
+B	And what's been done so far?	これまでどのような対応が？
+A	Twice I've been told to restart the router. Twice I've done it. Nothing's changed.	2回、ルーターを再起動しろと言われました。2回やりました。何も変わりません。
+B	I see.	なるほど。
+A	I've been patient. But enough is enough. I need this fixed, not another restart.	辛抱してきました。でももう限界です。直してほしいんです、再起動じゃなくて。
+S	
+B	I understand your frustration. Let me look at the line itself this time.	ご不満はごもっともです。今回は回線そのものを調べます。
+A	Thank you. That's what should have happened the first time.	ありがとうございます。それは最初にやるべきだったことです。
+B	You're right. I can see there's a fault on the line in your area.	おっしゃる通りです。お住まいの地域の回線に障害が見えます。
+A	So it was never my router.	つまり、ルーターの問題じゃなかった。
+B	No. I'm sorry you were told that. I'll escalate this to the engineers now.	はい。そう言われてしまって申し訳ありません。今すぐ技術者に上げます。
+S	
+A	When will I hear back?	いつ連絡をもらえますか？
+B	Within twenty-four hours. And I'm adding a credit to your account for the three weeks.	24時間以内に。それと、3週間分をアカウントに返金します。
+A	That's more like it. Thank you for actually listening.	それでこそです。ちゃんと聞いてくれてありがとう。
+B	Thank you for your patience. It shouldn't have taken three calls.	ご辛抱いただきありがとうございました。3回も電話させるべきではありませんでした。
 """#
 }
