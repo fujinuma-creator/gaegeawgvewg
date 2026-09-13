@@ -2263,7 +2263,7 @@ struct TopicTalkView: View {
         }
         .padding(.horizontal, 12)
         .padding(.vertical, 9)
-        .background(Capsule().fill(Color.white.opacity(0.8)))
+        .background(Capsule().fill(Color(.secondarySystemGroupedBackground)))
         .padding(.horizontal, 16)
         .padding(.bottom, 10)
     }
@@ -2280,39 +2280,36 @@ struct TopicTalkView: View {
     }
 
     private func topicCard(_ t: TopicConversation) -> some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 13) {
             Text(t.emoji)
-                .font(.system(size: 22))
-                .frame(width: 38, height: 38)
+                .font(.system(size: 21))
+                .frame(width: 42, height: 42)
                 .background(Circle().fill(Color.indigo.opacity(0.10)))
-            VStack(alignment: .leading, spacing: 3) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(t.title)
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(.primary)
                     .lineLimit(1)
-                Text(t.keys.prefix(3).joined(separator: " · "))
-                    .font(.caption2)
-                    .foregroundStyle(.secondary)
-                    .lineLimit(1)
+                HStack(spacing: 5) {
+                    Image(systemName: "bubble.left.and.bubble.right.fill")
+                        .font(.system(size: 9))
+                    Text("\(t.lineCount) 往復")
+                }
+                .font(.caption2)
+                .foregroundStyle(.secondary)
             }
             Spacer(minLength: 6)
-            Text("\(t.lineCount)")
-                .font(.caption2.bold())
-                .foregroundStyle(.secondary)
             Image(systemName: "chevron.right")
-                .font(.caption2.bold())
+                .font(.caption.bold())
                 .foregroundStyle(.tertiary)
         }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 10)
+        .padding(.horizontal, 13)
+        .padding(.vertical, 11)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
-            RoundedRectangle(cornerRadius: 13)
-                .fill(Color.white.opacity(0.86))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 13)
-                        .stroke(Color.black.opacity(0.06), lineWidth: 0.8)
-                )
+            RoundedRectangle(cornerRadius: 15, style: .continuous)
+                .fill(Color(.secondarySystemGroupedBackground))
+                .shadow(color: .black.opacity(0.05), radius: 3, y: 1)
         )
         .contentShape(Rectangle())
     }
@@ -2333,27 +2330,14 @@ struct TopicConversationView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 18) {
+                VStack(alignment: .leading, spacing: 0) {
                     // One conversation per topic. Scenes are just breaks in
-                    // the flow, drawn as a thin rule — no headings.
+                    // the flow, drawn as a divider — no headings.
                     ForEach(Array(topic.scenes.enumerated()), id: \.element.id) { idx, scene in
-                        VStack(alignment: .leading, spacing: 10) {
-                            if idx > 0 {
-                                if scene.label.isEmpty {
-                                    Rectangle()
-                                        .fill(Color.black.opacity(0.10))
-                                        .frame(height: 1)
-                                        .padding(.horizontal, 40)
-                                        .padding(.vertical, 2)
-                                } else {
-                                    Text(scene.label)
-                                        .font(.caption.bold())
-                                        .foregroundStyle(.indigo)
-                                        .padding(.horizontal, 10)
-                                        .padding(.vertical, 4)
-                                        .background(Capsule().fill(Color.indigo.opacity(0.10)))
-                                }
-                            }
+                        if idx > 0 {
+                            sceneBreak(scene.label)
+                        }
+                        VStack(alignment: .leading, spacing: 12) {
                             ForEach(scene.lines) { line in
                                 turn(line)
                             }
@@ -2361,21 +2345,25 @@ struct TopicConversationView: View {
                     }
                     if !topic.keys.isEmpty {
                         keySection
+                            .padding(.top, 24)
                     }
-                    Spacer(minLength: 8)
+                    Spacer(minLength: 12)
                 }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 12)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 14)
             }
             .background(Color(.systemGroupedBackground))
             .navigationTitle("\(topic.emoji) \(topic.title)")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Toggle(isOn: $showJapanese) {
-                        Image(systemName: "character.bubble")
+                    // Hide the Japanese to turn the same page into listening
+                    // practice.
+                    Button {
+                        showJapanese.toggle()
+                    } label: {
+                        Image(systemName: showJapanese ? "character.bubble.fill" : "character.bubble")
                     }
-                    .toggleStyle(.button)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("閉じる") { dismiss() }
@@ -2388,51 +2376,87 @@ struct TopicConversationView: View {
         }
     }
 
-    /// One turn. A is left-aligned and neutral, B is tinted, so the two
-    /// speakers are easy to tell apart at a glance.
+    /// A break between sections of the conversation (the --- in the source).
+    private func sceneBreak(_ label: String) -> some View {
+        HStack(spacing: 10) {
+            rule
+            if label.isEmpty {
+                Image(systemName: "ellipsis")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundStyle(.tertiary)
+            } else {
+                Text(label)
+                    .font(.caption2.bold())
+                    .foregroundStyle(.secondary)
+            }
+            rule
+        }
+        .padding(.vertical, 18)
+    }
+
+    private var rule: some View {
+        Rectangle()
+            .fill(Color.primary.opacity(0.10))
+            .frame(height: 1)
+    }
+
+    /// One turn, laid out as a chat bubble: A on the left in white, B on the
+    /// right in indigo. Side and colour together make it obvious who is
+    /// speaking without having to read a label on every line.
     private func turn(_ line: TopicLine) -> some View {
         let isA = line.speaker == "A"
-        return HStack(alignment: .top, spacing: 10) {
-            Text(line.speaker)
-                .font(.caption2.bold())
-                .foregroundStyle(isA ? Color.indigo : Color.teal)
-                .frame(width: 20, height: 20)
-                .background(Circle().fill((isA ? Color.indigo : Color.teal).opacity(0.13)))
+        return HStack(alignment: .bottom, spacing: 7) {
+            if !isA { Spacer(minLength: 28) }
+            if isA { avatar(isA) }
 
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 6) {
                 if showJapanese {
                     Text(line.japanese)
-                        .font(.system(size: 13))
-                        .foregroundStyle(.secondary)
+                        .font(.system(size: 12.5))
+                        .foregroundStyle(isA ? Color.secondary : Color.white.opacity(0.75))
                         .fixedSize(horizontal: false, vertical: true)
                 }
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                HStack(alignment: .bottom, spacing: 10) {
                     Text(line.english)
                         .font(.system(size: 16, weight: .medium))
+                        .foregroundStyle(isA ? Color.primary : Color.white)
+                        .lineSpacing(3)
                         .fixedSize(horizontal: false, vertical: true)
-                        .frame(maxWidth: .infinity, alignment: .leading)
                     Button {
                         // Whole sentence: natural pace first, half speed on a
                         // second consecutive tap.
                         SpeechManager.shared.speak(line.english, slowed: false)
                     } label: {
                         Image(systemName: "speaker.wave.2.fill")
-                            .font(.system(size: 13))
-                            .foregroundStyle(.indigo)
-                            .padding(4)
+                            .font(.system(size: 12))
+                            .foregroundStyle(isA ? Color.indigo : Color.white.opacity(0.85))
+                            .frame(width: 26, height: 26)
                             .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
+                    .offset(y: 4)
                 }
             }
+            .padding(.leading, 13)
+            .padding(.trailing, 5)
+            .padding(.vertical, 10)
+            .background(
+                RoundedRectangle(cornerRadius: 17, style: .continuous)
+                    .fill(isA ? Color(.secondarySystemGroupedBackground) : Color.indigo)
+            )
+
+            if !isA { avatar(isA) }
+            if isA { Spacer(minLength: 28) }
         }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 10)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(
-            RoundedRectangle(cornerRadius: 12)
-                .fill(isA ? Color.white.opacity(0.9) : Color.indigo.opacity(0.06))
-        )
+    }
+
+    private func avatar(_ isA: Bool) -> some View {
+        Text(isA ? "A" : "B")
+            .font(.system(size: 11, weight: .heavy))
+            .foregroundStyle(isA ? Color.indigo : Color.white)
+            .frame(width: 22, height: 22)
+            .background(Circle().fill(isA ? Color.indigo.opacity(0.14) : Color.indigo))
+            .offset(y: -2)
     }
 
     /// Key expressions as chips. A chip that matches a word in the app opens
