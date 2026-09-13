@@ -43957,5 +43957,427 @@ A	One more. Is there a service charge?	もう1つ。サービス料はありま�
 B	Not automatic. Tipping's up to you.	自動では取りません。チップはお任せです。
 A	Good to know. Thanks for being clear about it.	わかりました。はっきり教えてくれてありがとう。
 B	Nobody likes a surprise on the bill.	お会計でのサプライズは誰も好きじゃないですからね。
+T	💳	追加料金がかかるか確認する	食事	is there an extra charge, does that cost more, included in the price, how much extra, just so I know
+S	
+A	If I swap the chips for salad, is there an extra charge?	フライドポテトをサラダに替えたら、追加料金はかかりますか？
+B	No, that's a free swap.	いいえ、それは無料で替えられます。
+A	And adding cheese to the burger?	バーガーにチーズを追加すると？
+B	One extra. Bacon's one fifty.	1追加です。ベーコンは1.5。
+A	Just so I know — is the sauce included?	念のため、ソースは含まれていますか？
+B	One sauce is. Extra sauces are fifty each.	1つは含まれています。追加は各50セントです。
+A	Okay. Cheese, one sauce, salad instead of chips.	わかりました。チーズ、ソース1つ、ポテトの代わりにサラダ。
+B	So that's one extra in total.	合計で1の追加ですね。
+S	
+A	And the drinks — are refills free?	飲み物のおかわりは無料ですか？
+B	Soft drinks, yes. Juice, no.	ソフトドリンクは。ジュースは有料です。
+A	What about the terrace? Some places charge to sit outside.	テラスは？ 外の席に料金を取る店もあるので。
+B	Not here. Same price inside or out.	うちは違います。中でも外でも同じ価格です。
+A	That's a relief. I've been stung before.	それは安心。前に痛い目に遭ったので。
+B	We try to keep it simple. What you see is what you pay.	シンプルにするようにしています。見た通りの値段です。
+S	
+A	Thank you for going through it all.	全部説明してくれてありがとう。
+B	Happy to. Better than a surprise at the end.	喜んで。最後に驚かせるよりいいですから。
+T	🧾	サービス料や税金が含まれているか聞く	食事	is service included, does that include tax, plus VAT, the price on the menu, what's the total
+S	
+A	Is service included in the bill?	サービス料はお会計に含まれていますか？
+B	Twelve and a half percent is added automatically.	12.5%が自動的に加算されます。
+A	Ah. So I don't need to tip on top?	なるほど。じゃあその上にチップは要りませんね？
+B	Not unless you want to. It's optional.	お好みで。任意です。
+A	And is that the price on the menu, or plus tax?	メニューの価格は税込みですか、それとも税別？
+B	Menu prices include tax. Service is the only extra.	メニューは税込みです。追加はサービス料だけです。
+A	So the total is menu price plus twelve and a half.	じゃあ合計はメニューの価格プラス12.5%ですね。
+B	Exactly.	その通りです。
+S	
+A	What if the service wasn't good? Can I remove it?	サービスが良くなかった場合は？ 外せますか？
+B	Yes. Just ask. Nobody will argue.	はい。言っていただければ。誰も反論しません。
+A	Good to know. Not that I'm planning to.	覚えておきます。そのつもりはありませんが。
+B	Ha. I'll make sure you don't need to.	はは。その必要がないようにしますよ。
+S	
+A	One more. If we pay separately, is service split too?	もう1つ。別々に払う場合、サービス料も分けられますか？
+B	Yes, it's added to each bill proportionally.	はい、それぞれの会計に比例して加算されます。
+A	Perfect. That's everything.	完璧です。以上です。
+B	Enjoy your meal.	ごゆっくりどうぞ。
+T	😮‍💨	「お腹いっぱい、もう食べられない」と伝える	食事	I'm stuffed, I couldn't eat another bite, I've overdone it, need to lie down, no dessert for me
+S	
+A	Oh, I'm stuffed. I couldn't eat another bite.	うう、お腹いっぱい。もう一口も無理。
+B	You had the extra large.	特大を頼んだからね。
+A	I know. I've overdone it. I need to lie down.	わかってる。やりすぎた。横になりたい。
+B	There's still dessert.	まだデザートがあるよ。
+A	No dessert for me. Not even a spoon.	デザートは無理。スプーン一杯も。
+B	Not even the chocolate thing?	チョコレートのやつでも？
+A	...Don't tempt me. I physically can't.	…誘惑しないで。物理的に無理。
+S	
+B	Excuse me, we're done. No dessert, just the bill.	すみません、終わりました。デザートはなしで、お会計を。
+A	And could I get the rest of this to go?	残りを持ち帰りにできますか？
+B	Of course. That's most of the platter, though.	もちろんです。でもプレートのほとんどですね。
+A	I was ambitious.	野心的すぎました。
+B	Everyone is with that one.	あれを頼む人はみんなそうですよ。
+S	
+A	Tomorrow's lunch sorted, at least.	少なくとも明日の昼は決まったね。
+B	And the day after.	明後日も。
+A	Never ordering extra large again.	もう二度と特大は頼まない。
+B	You said that last month.	先月もそう言ってた。
+T	🥨	「小腹が空いた」と軽く何か食べようと言う	食事	I'm a bit peckish, something small, just a snack, not a full meal, tide me over
+S	
+A	I'm a bit peckish. Fancy something small?	ちょっと小腹が空いた。何か軽いものどう？
+B	Like what?	例えば？
+A	Just a snack. Not a full meal. Something to tide me over till dinner.	ただの軽食。ちゃんとした食事じゃなくて。夕飯までもたせるための何か。
+B	There's the bakery on the corner.	角にパン屋があるよ。
+A	Perfect. A pastry and a coffee.	完璧。ペストリーとコーヒー。
+B	That's basically a meal.	それはほぼ食事だよ。
+A	It's a snack if you eat it standing up.	立って食べればおやつ。
+S	
+B	What are you getting?	何にする？
+A	The cheese twist. And maybe the almond thing.	チーズのツイスト。あとアーモンドのやつも、かな。
+B	Two things is not "something small".	2つは「軽いもの」じゃない。
+A	Two small things. Add them up, still small.	小さいもの2つ。合計しても、まだ小さい。
+B	That's not how maths works.	それは数学的に違う。
+A	It's how snack maths works.	おやつの数学ではそうなんだよ。
+S	
+B	Fine. I'll get the sausage roll.	わかった。私はソーセージロールにする。
+A	See? You were peckish too.	ほらね。あなたも小腹が空いてた。
+B	I was being supportive.	付き合ってあげただけだよ。
+T	🍳	朝から何も食べていないと話す	食事	I haven't eaten since, I skipped breakfast, running on coffee, I'm starving, no wonder
+S	
+A	I haven't eaten since last night.	昨夜から何も食べてない。
+B	Nothing? It's two in the afternoon.	何も？ 午後2時だよ。
+A	I skipped breakfast. Then the meeting ran through lunch.	朝食を抜いて。それで会議が昼まで続いた。
+B	So you're running on coffee.	じゃあコーヒーだけで動いてるんだね。
+A	Three coffees. My hands are shaking slightly.	コーヒー3杯。手が少し震えてる。
+B	No wonder you're grumpy.	不機嫌なわけだ。
+A	I'm not grumpy.	不機嫌じゃないよ。
+B	You snapped at the printer.	プリンターに怒鳴ってたよ。
+A	...The printer deserved it.	…プリンターは当然の報いだ。
+S	
+B	Right. We're going to eat. Now.	よし。食べに行こう。今すぐ。
+A	I've got a call at half past.	2時半に電話がある。
+B	Then you've got thirty minutes. That's a sandwich and a sit-down.	じゃあ30分ある。サンドイッチと、座る時間。
+A	Fine. Where?	わかった。どこ？
+B	The café downstairs. Come on. Before you bite someone.	下のカフェ。行こう。誰かに噛みつく前に。
+S	
+A	Okay, that's better. I can think again.	よし、良くなった。また考えられる。
+B	Eat breakfast tomorrow.	明日は朝食を食べて。
+A	I will. I promise. Probably.	食べる。約束する。たぶん。
+T	🌱	家庭菜園や観葉植物の育て方を話す	雑談	I've started growing, how often do you water, too much sun, it's thriving, green fingers
+S	
+A	I've started growing herbs on the windowsill.	窓辺でハーブを育て始めたんだ。
+B	Oh, nice. Which ones?	いいね。何を？
+A	Basil, mint, and something I've forgotten the name of.	バジル、ミント、それと名前を忘れた何か。
+B	How's it going?	調子はどう？
+A	The mint's thriving. The basil's... struggling.	ミントは元気。バジルは… 苦戦中。
+B	How often do you water it?	どのくらいの頻度で水をやってる？
+A	Every day?	毎日？
+B	Too much. Basil hates wet feet. Every three days.	多すぎる。バジルは根が湿るのを嫌うんだ。3日に1回。
+A	Wet feet. I didn't know plants had feet.	根が湿る。植物に足があるなんて知らなかった。
+S	
+B	And where is it? In the sun?	それで、どこに置いてる？ 日向？
+A	Full sun. All day.	直射日光。一日中。
+B	Too much sun. Morning light, then shade.	日光が多すぎる。朝の光、それから日陰。
+A	So I've been drowning it and burning it.	じゃあ、溺れさせて、焼いてたんだね。
+B	Basically, yes. With love.	基本的にはそう。愛情を込めて。
+A	Poor basil.	かわいそうなバジル。
+S	
+B	You'll get there. Green fingers take practice.	そのうちできるようになるよ。園芸の腕は練習が必要。
+A	And the mint?	ミントは？
+B	You can't kill mint. Nobody can. It'll outlive us all.	ミントは殺せない。誰にも。私たち全員より長生きするよ。
+T	🥀	植物が枯れそうで対処法を聞く	雑談	the leaves are turning yellow, is it dying, can I save it, root rot, cut it back
+S	
+A	My plant's leaves are turning yellow. Is it dying?	植物の葉が黄色くなってきた。枯れかけてる？
+B	Which plant?	どの植物？
+A	The big one by the window. The one you gave me.	窓のそばの大きいやつ。あなたがくれたの。
+B	Ah. Yellow from the bottom or the top?	ああ。下から黄色くなってる？ それとも上から？
+A	Bottom. And the soil's a bit... soggy.	下から。それと土が少し… べちゃべちゃしてる。
+B	Overwatering. Classic. The roots are probably rotting.	水のやりすぎ。典型的だね。たぶん根が腐りかけてる。
+A	Can I save it?	助けられる？
+B	Probably. Take it out of the pot, cut off any brown mushy roots, fresh soil.	たぶん。鉢から出して、茶色くぐずぐずした根を切って、新しい土に。
+S	
+A	That sounds like surgery.	手術みたいだね。
+B	It is surgery. Plant surgery. Then don't water it for a week.	手術だよ。植物の手術。それから1週間水をやらないで。
+A	A whole week?	丸1週間？
+B	It needs to dry out. You've been loving it to death.	乾かさないと。愛情で殺しかけてたんだから。
+A	And the yellow leaves?	黄色い葉は？
+B	Cut them off. They won't turn green again. Let it focus on the new ones.	切って。もう緑には戻らない。新しい葉に集中させて。
+S	
+A	Okay. Surgery tonight. Wish me luck.	わかった。今夜手術。幸運を祈ってて。
+B	Send me a photo of the roots. I'll tell you if it's hopeless.	根の写真を送って。絶望的かどうか教えるから。
+A	That's very reassuring.	すごく心強いね。
+B	Plants are tougher than you think. Usually.	植物は思ってるより強いよ。だいたいは。
+T	🌾	農業や作物の育ち具合について話す	雑談	how's the harvest, the weather's been, a good year for, the crop, we lost half
+S	
+A	How's the farm doing this year?	今年の農場はどう？
+B	Mixed. The wheat's good. The apples, not so much.	良し悪し。小麦はいい。りんごはあまり。
+A	What happened to the apples?	りんごに何があったの？
+B	Late frost in April. Killed half the blossom.	4月の遅霜。花の半分がやられた。
+A	So half the crop's gone.	じゃあ収穫の半分がなくなった。
+B	About that. It's the third bad year in five.	そのくらい。5年で3回目の不作。
+A	That's rough.	それはきついね。
+B	The weather's not what it was. Nothing's on schedule anymore.	天気が昔と違う。もう何も予定通りにいかない。
+S	
+A	And the wheat? What made that good?	小麦は？ 何が良かったの？
+B	Dry summer. Wheat likes it dry at the end. So one crop's happy, one's sad.	乾いた夏。小麦は最後に乾燥が好きなんだ。だから片方は喜んで、片方は悲しんでる。
+A	Can't win them all.	全部はうまくいかないよね。
+B	Never can. That's farming. You plant, you hope, you see.	絶対にね。それが農業。植えて、祈って、見守る。
+A	Do you still enjoy it?	今でも楽しい？
+B	Most days. Not on frost days.	ほとんどの日は。霜の日以外は。
+S	
+A	Is there anything I can do? Buy apples?	何かできることは？ りんごを買うとか？
+B	Buy the ugly ones. They taste the same and nobody wants them.	見た目の悪いやつを買って。味は同じなのに、誰も欲しがらないから。
+A	Ugly apples. Got it.	見た目の悪いりんご。了解。
+T	🐢	パソコンの動作が重いので相談する	テクノロジー	it's so slow, takes forever to, too many tabs, clear some space, might be time for a new one
+S	
+A	My laptop's so slow. It takes forever to open anything.	ノートパソコンがすごく遅い。何を開くにも永遠にかかる。
+B	How old is it?	どのくらい古いの？
+A	Five years? Six?	5年？ 6年？
+B	That's old for a laptop. How many tabs have you got open?	ノートパソコンにしては古いね。タブは何個開いてる？
+A	Let me count... forty-three.	数えてみる… 43個。
+B	Forty-three! That's your problem right there.	43個！ それが問題だよ。
+A	I need them all.	全部必要なんだ。
+B	Nobody needs forty-three tabs. Close thirty.	43個のタブが必要な人はいない。30個閉じて。
+S	
+A	Okay, closed. Still slow.	わかった、閉じた。まだ遅い。
+B	How much storage is left?	ストレージはどのくらい残ってる？
+A	It says... two gigabytes.	表示は… 2ギガ。
+B	Two! It's suffocating. Clear some space. Delete old downloads.	2ギガ！ 窒息してるよ。空き容量を作って。古いダウンロードを消して。
+A	There are about four hundred files in downloads.	ダウンロードに400ファイルくらいある。
+B	Delete them all. You don't need any of them.	全部消して。どれも要らないよ。
+A	What if I do?	もし要るものがあったら？
+B	You won't. Nobody ever does.	ないよ。誰もそうならない。
+S	
+A	Okay. Deleted. It's... faster. Slightly.	わかった。消した。速く… なった。少し。
+B	Slightly is what you get from a six-year-old laptop. Might be time for a new one.	6年物のノートパソコンなら「少し」が限界だよ。買い替えの時期かもね。
+A	Don't say that. I can't afford it.	それは言わないで。買えないから。
+B	Then close the tabs. Permanently.	じゃあタブを閉じて。永遠に。
+T	💿	ソフトのインストール方法を聞く	テクノロジー	how do I install, download it from, which version, click next, it's asking for permission
+S	
+A	How do I install the design software? I've got the licence.	デザインソフトはどうインストールすればいい？ ライセンスは持ってる。
+B	Download it from their website. Not from anywhere else.	公式サイトからダウンロードして。他の場所からじゃなく。
+A	Okay, I'm there. There are three versions.	開いた。バージョンが3つある。
+B	Which computer are you on?	どのパソコン？
+A	Mac.	Mac。
+B	Then the middle one. The Mac version. Ignore the others.	じゃあ真ん中の。Mac版。他は無視して。
+A	Downloading. It's big.	ダウンロード中。大きいね。
+B	It'll take a few minutes. Get a coffee.	数分かかるよ。コーヒーでも飲んで。
+S	
+A	Okay, it's done. I've opened it. It's asking for permission to install.	終わった。開いた。インストールの許可を求めてる。
+B	Say yes. Then click next through the steps.	はいを押して。それから手順を「次へ」で進めて。
+A	Next, next, next... it wants my licence key.	次へ、次へ、次へ… ライセンスキーを求めてる。
+B	It's in the email they sent you. Long string of letters and numbers.	届いたメールに入ってる。長い文字と数字の列。
+A	Found it. Pasting. And... it's in.	見つけた。貼り付け。そして… 入った。
+B	Done. That's it. You're installed.	完了。以上。インストール終了。
+S	
+A	That was easier than I expected.	思ったより簡単だった。
+B	It always is. The scary bit is just clicking next.	いつもそうだよ。怖いのは「次へ」を押すことだけ。
+T	☁️	ファイルの共有方法（クラウドなど）を確認する	テクノロジー	how should I send you, too big to email, put it in the shared folder, send me a link, can you access it
+S	
+A	How should I send you the video? It's too big to email.	動画はどうやって送ればいい？ メールには大きすぎて。
+B	Put it in the shared folder. The team one.	共有フォルダに入れて。チームのやつ。
+A	Which one? There are about five.	どれ？ 5つくらいある。
+B	"Projects", then "Video". Just drop it in there.	「プロジェクト」の中の「動画」。そこに入れるだけ。
+A	Okay. It's uploading. Twenty minutes, apparently.	わかった。アップロード中。20分かかるって。
+B	Fine. Send me the link when it's done.	いいよ。終わったらリンクを送って。
+A	Can you access it from your phone?	スマホからアクセスできる？
+B	Yes, if you set the link to "anyone with the link".	うん、リンクを「リンクを知ってる人全員」に設定すれば。
+S	
+A	Is that safe? Anyone with the link?	それは安全？ リンクを知ってる人全員？
+B	For a video of a team meeting, yes. Not for a contract.	チーム会議の動画なら大丈夫。契約書ならだめ。
+A	What do I do for a contract?	契約書の場合はどうすれば？
+B	Share it to specific people. By email address. Then only they can open it.	特定の人に共有する。メールアドレスで。そうすればその人しか開けない。
+A	Got it. Video to anyone, contract to names.	わかった。動画は誰でも、契約書は名前指定。
+B	Exactly. And never put passwords in a shared folder.	その通り。それと、共有フォルダにパスワードを入れないで。
+A	Who would do that?	誰がそんなことするの？
+B	You'd be surprised.	驚くよ。
+S	
+A	Link's ready. Sent.	リンクできた。送った。
+B	Got it. Opening... yes, it works. Thanks.	届いた。開いてる… うん、見られる。ありがとう。
+T	💻	MacとWindowsどちらを使っているか話す	テクノロジー	Mac or Windows, I switched, I can't go back, it depends what you use it for, the keyboard
+S	
+A	Mac or Windows?	Mac？ Windows？
+B	Mac. Since about ten years ago.	Mac。10年くらい前から。
+A	What made you switch?	何がきっかけで変えたの？
+B	Work. Everyone in design used Mac. Now I can't go back.	仕事。デザインの人はみんなMacだったから。今は戻れない。
+A	What's the difference, really?	実際、何が違うの？
+B	Honestly? It just works. Fewer surprises.	正直？ ただ動く。驚きが少ない。
+A	I'm Windows. Always have been. It's what I know.	私はWindows。ずっと。慣れてるから。
+B	Nothing wrong with that. It depends what you use it for.	それも悪くないよ。何に使うかによる。
+S	
+A	What about the keyboard? I tried a Mac once and couldn't find anything.	キーボードは？ 一度Macを試したけど、何も見つけられなかった。
+B	That's the hardest bit. The shortcuts are all different.	そこが一番難しい。ショートカットが全部違う。
+A	Copy and paste took me five minutes.	コピー＆ペーストに5分かかった。
+B	It's a week of pain, then it's fine.	1週間苦しんで、それから大丈夫になる。
+A	A week of pain for what gain?	1週間の苦しみで何が得られる？
+B	Depends. If you're happy, don't switch. Nobody needs to switch.	人による。今幸せなら、変えなくていい。変える必要なんてない。
+S	
+A	I'm happy. Mostly. Until it updates in the middle of a presentation.	幸せだよ。だいたいは。プレゼンの最中にアップデートが始まるまでは。
+B	Ha. That's the one Windows thing I don't miss.	はは。それだけはWindowsで恋しくないところだね。
+A	One day I'll switch. Not today.	いつか変えるよ。今日じゃないけど。
+T	🖥	新しいパソコンの買い替えを相談する	テクノロジー	it's time for a new one, what should I get, what do you use it for, don't need the top model, it'll last
+S	
+A	I think it's time for a new laptop. What should I get?	そろそろ新しいノートパソコンの時期だと思う。何を買えばいい？
+B	What do you use it for?	何に使うの？
+A	Emails, documents, a bit of video editing. Nothing heavy.	メール、書類、少し動画編集。重い作業はしない。
+B	Then you don't need the top model. Mid-range is fine.	じゃあ最上位モデルは要らない。中間で十分。
+A	How much is mid-range?	中間ってどのくらい？
+B	Eight hundred to a thousand. It'll last five years if you look after it.	800から1000。大事に使えば5年持つ。
+A	The top one's two thousand.	最上位は2000だよ。
+B	And you'd use ten percent of it. Save the money.	それで使うのは10%だけ。お金を節約して。
+S	
+A	Should I get more storage or more memory?	ストレージとメモリ、どっちを増やすべき？
+B	Memory. Storage you can add later. Memory you can't.	メモリ。ストレージは後で足せる。メモリは足せない。
+A	How much memory?	メモリはどのくらい？
+B	Sixteen. Eight's not enough anymore.	16。8じゃもう足りない。
+A	Sixteen memory, mid-range, don't overspend.	メモリ16、中間モデル、使いすぎない。
+B	That's the whole advice. Everything else is marketing.	それがアドバイスの全部。あとはマーケティング。
+S	
+A	Will you come with me to buy it? I get talked into things.	一緒に買いに来てくれる？ 口車に乗せられるから。
+B	Sure. I'll stand behind you and shake my head.	いいよ。後ろに立って首を横に振ってる。
+A	That's exactly what I need.	まさにそれが必要。
+T	🤖	AIにどんな作業を任せているか話す	テクノロジー	I use it for, first drafts, saves me time, I still check everything, it's good at
+S	
+A	Do you use AI for work?	仕事でAIを使ってる？
+B	A bit. Mostly first drafts. Emails, summaries.	少し。主に下書き。メール、要約。
+A	Does it actually save time?	本当に時間の節約になる？
+B	Yes, but I still check everything. It's confident, not always right.	うん、でも全部確認してる。自信満々だけど、いつも正しいわけじゃない。
+A	What's it good at?	何が得意？
+B	Rewording things. Making my angry emails polite.	言い換え。怒りのメールを丁寧にすること。
+A	Ha. That's useful.	はは。それは便利だね。
+B	It's saved a few relationships.	いくつかの人間関係を救ってくれた。
+S	
+A	What do you not trust it with?	何を任せない？
+B	Numbers. Anything with facts I can't check quickly. And anything important.	数字。すぐ確認できない事実。それと重要なこと。
+A	So it's an assistant, not a replacement.	じゃあアシスタントであって、代わりじゃないんだね。
+B	A fast, slightly unreliable intern. That's how I think of it.	速くて、少し頼りないインターン。そう考えてる。
+A	I use it for meal planning.	私は献立に使ってる。
+B	Really?	本当に？
+A	"I have eggs, rice, and half an onion. What can I make?" It's great for that.	「卵、ご飯、玉ねぎ半分がある。何が作れる？」それにはすごくいい。
+S	
+B	That's the best use I've heard.	今まで聞いた中で一番いい使い方だね。
+A	Low stakes. If it's wrong, I just have a weird dinner.	リスクが低い。間違ってても、変な夕飯になるだけ。
+T	❌	AIの回答が間違っていたと話す	テクノロジー	it got it completely wrong, it made it up, sounded so confident, I nearly sent it, always double-check
+S	
+A	The AI got it completely wrong yesterday.	昨日、AIが完全に間違えた。
+B	What happened?	何があったの？
+A	I asked for a summary of a report. It invented a whole section.	レポートの要約を頼んだら、まるごと1セクションをでっち上げた。
+B	Invented?	でっち上げた？
+A	Made it up. Statistics, quotes, everything. None of it was in the report.	作り上げた。統計も、引用も、全部。レポートにはどれもなかった。
+B	And it sounded convincing?	それで説得力があった？
+A	Completely. It sounded so confident. I nearly sent it to the client.	完全に。すごく自信満々で。危うくクライアントに送るところだった。
+B	What stopped you?	何が止めたの？
+A	One number looked too neat. I checked. Then I checked everything.	1つの数字がきれいすぎた。確認した。それから全部確認した。
+S	
+B	That's the danger. It doesn't know when it's wrong.	それが危険なところだよね。自分が間違ってる時にわからない。
+A	It doesn't even hesitate. A person would say "I think". It just says.	ためらいもしない。人なら「たぶん」って言う。それはただ断言する。
+B	So what's the rule now?	それで、今のルールは？
+A	Always double-check. Anything with a number, a name, or a date.	必ず再確認。数字、名前、日付のあるものは全部。
+B	That's most things.	それはほとんど全部だね。
+A	That's most things. Which is why it's a tool, not a colleague.	ほとんど全部。だから道具であって、同僚じゃないんだ。
+S	
+B	Still useful, though?	それでも役に立つ？
+A	Still useful. Just not trustworthy. Like a very fast liar with good intentions.	役には立つ。ただ信頼はできない。善意の、すごく速い嘘つきみたいなもの。
+T	🔮	AIで仕事がなくなるかどうかを話す	テクノロジー	will it take our jobs, some jobs will change, the boring parts, adapt, nobody really knows
+S	
+A	Do you think AI's going to take our jobs?	AIは私たちの仕事を奪うと思う？
+B	Some jobs. Not all. Mostly the boring parts of jobs.	一部の仕事は。全部じゃない。主に仕事の退屈な部分。
+A	That's what everyone says. Then the boring parts turn out to be the whole job.	みんなそう言う。それで退屈な部分が仕事の全部だったってことになる。
+B	For some people, yes. That's the honest answer.	一部の人にとってはね。それが正直な答え。
+A	So what do we do?	じゃあどうすればいい？
+B	Adapt. Learn the tools. Be the person who uses it, not the person it replaces.	適応する。道具を学ぶ。使う側になる、置き換えられる側じゃなく。
+A	That's easy to say.	言うのは簡単だね。
+B	It is. I don't have a better answer. Nobody really knows.	そう。もっといい答えは持ってない。誰も本当のところは知らない。
+S	
+A	What about your job?	あなたの仕事は？
+B	Half of it could go. The writing, the research. The other half — the people — probably not.	半分はなくなるかも。文章、調査。もう半分の、人と関わる部分は、たぶん残る。
+A	And mine?	私のは？
+B	Design? It'll change. It won't disappear. Someone still has to decide what's good.	デザイン？ 変わるだろうね。消えはしない。何が良いか決める人は必要だから。
+A	That's slightly reassuring.	少しは安心した。
+B	Slightly is all I've got.	少しが精一杯だよ。
+S	
+A	Well, if it takes my job, I'll open a café.	まあ、仕事を奪われたら、カフェを開くよ。
+B	AI can't make a flat white. Yet.	AIはフラットホワイトを作れない。まだね。
+A	"Yet" is doing a lot of work in that sentence.	「まだ」がその文で重要な役割を果たしてるね。
+T	🛠	おすすめのAIツールを教え合う	テクノロジー	what do you use, have you tried, it's great for, free version, changed how I work
+S	
+A	What AI tools do you actually use?	実際に使ってるAIツールは？
+B	Mainly one for writing. It's great for cleaning up my emails.	主に文章用のやつ。メールを整えるのにすごくいい。
+A	Free or paid?	無料？ 有料？
+B	Free version. It's enough for what I do.	無料版。私の用途には十分。
+A	Have you tried the one that transcribes meetings?	会議を文字起こしするやつは試した？
+B	No. Is it good?	いや。いい？
+A	Changed how I work. I don't take notes anymore. It does, then summarises.	仕事のやり方が変わった。もうメモを取らない。それがやって、要約してくれる。
+B	Accurate?	正確？
+A	Ninety percent. I fix the rest. Still faster than typing.	90%。残りは直す。それでもタイプするより速い。
+S	
+B	I've been using one for images. Quick mockups for clients.	画像用のを使ってる。クライアント向けのモックアップを素早く。
+A	Does it look real?	本物っぽく見える？
+B	Real enough for a first idea. Not for the final thing.	最初のアイデアには十分。最終版には向かない。
+A	That's the pattern, isn't it. First drafts, not final drafts.	それがパターンだよね。下書きには使えて、最終版には使えない。
+B	Exactly. It gets you started. You finish.	その通り。始めるのを助けてくれる。仕上げは自分で。
+S	
+A	Send me the image one. I'll send you the meeting one.	画像のやつを送って。会議のやつを送るから。
+B	Deal. Tool exchange.	決まり。ツール交換。
+A	The modern version of swapping recipes.	レシピ交換の現代版だね。
+T	🌐	AIで翻訳して会話する	テクノロジー	let me translate that, hold on, it says, close enough, we're communicating
+S	
+A	Sorry, I don't speak Portuguese. Hold on, let me translate.	すみません、ポルトガル語は話せなくて。ちょっと待って、翻訳します。
+B	Okay, okay.	はい、はい。
+A	It says you're asking where the bus stop is?	バス停はどこかって聞いてる？
+B	Sim! Yes!	はい！ そう！
+A	Okay. Let me type... "It's two streets down, on the left."	わかった。入力する…「2本先の通り、左側」。
+B	Ah! Obrigado!	ああ！ ありがとう！
+A	You're welcome. That worked!	どういたしまして。通じた！
+S	
+B	You... from Japan?	あなた… 日本から？
+A	Yes! Japan. You?	はい！ 日本。あなたは？
+B	Brazil. Hold on... my phone says "how long are you here?"	ブラジル。待って… スマホが「どのくらい滞在？」って言ってる。
+A	One week. Holiday.	1週間。休暇で。
+B	Nice! Me too. Three days.	いいね！ 私も。3日。
+A	We're communicating. Slowly, but we are.	通じてる。ゆっくりだけど、通じてる。
+B	Slowly is fine.	ゆっくりでいいよ。
+S	
+A	Close enough for a bus stop.	バス停の話なら十分だね。
+B	My phone says "have a good trip"!	スマホが「良い旅を」って言ってる！
+A	You too! Boa viagem! Did I say that right?	あなたも！ ボア・ヴィアージェン！ 合ってる？
+B	Perfect! Almost.	完璧！ ほぼ。
+T	👔	今日の服装をどうするか相談する	日常	what should I wear, is it a smart thing, jeans okay, I don't want to overdress, that'll do
+S	
+A	What should I wear tonight? What kind of place is it?	今夜は何を着ればいい？ どんな店？
+B	Nice, but not fancy. A wine bar.	いい店だけど、高級ではない。ワインバー。
+A	So jeans are okay?	じゃあジーンズでいい？
+B	Dark jeans, yes. Not the ripped ones.	濃い色のジーンズならね。破れてるやつはだめ。
+A	And a shirt?	シャツは？
+B	A shirt's fine. Or a nice jumper. Don't overthink it.	シャツでいい。またはきれいめのセーター。考えすぎないで。
+A	I don't want to overdress and look like I'm trying.	着飾りすぎて、頑張ってるように見えたくない。
+B	You won't. Wine bar. Relaxed.	ならないよ。ワインバー。リラックスした感じ。
+S	
+A	What about shoes? Trainers or the boots?	靴は？ スニーカーかブーツか。
+B	Boots. Trainers say "gym". Boots say "evening".	ブーツ。スニーカーは「ジム」。ブーツは「夜」。
+A	That's a very specific philosophy.	ずいぶん具体的な哲学だね。
+B	It's served me well.	役に立ってきたよ。
+A	Okay. Dark jeans, shirt, boots. That'll do?	わかった。濃いジーンズ、シャツ、ブーツ。それでいい？
+B	That'll do. Add a jacket if it's cold.	それでいい。寒ければジャケットを足して。
+S	
+A	And you? What are you wearing?	あなたは？ 何を着るの？
+B	Same, basically. We'll look like a matching set.	基本的に同じ。お揃いみたいになるね。
+A	Great. Then nobody can tell who's overdressed.	よかった。じゃあどっちが着飾りすぎか、誰にもわからない。
+T	🎩	TPOに合った服かどうか確認する	日常	is this appropriate, too casual, dress code, I don't want to stand out, better safe than sorry
+S	
+A	Is this appropriate for a funeral? Be honest.	お葬式にこの服は適切？ 正直に。
+B	The suit's fine. The tie's a bit bright.	スーツは大丈夫。ネクタイが少し明るいね。
+A	It's the only one I've got.	これしか持ってないんだ。
+B	Then go without. Dark shirt, no tie. That's better than a bright one.	じゃあなしで。濃い色のシャツ、ネクタイなし。明るいのよりはいい。
+A	Really? No tie at a funeral?	本当に？ 葬式でネクタイなし？
+B	Better than a yellow one. Nobody will notice no tie. Everyone will notice yellow.	黄色よりはいい。ネクタイなしは誰も気づかない。黄色はみんな気づく。
+A	Fair. I don't want to stand out.	たしかに。目立ちたくない。
+S	
+B	What about the shoes?	靴は？
+A	These.	これ。
+B	Trainers? No. Absolutely not.	スニーカー？ だめ。絶対だめ。
+A	They're black.	黒だよ。
+B	They're trainers. Wear the boots. The plain ones.	スニーカーはスニーカー。ブーツを履いて。無地のやつ。
+A	Better safe than sorry.	用心するに越したことはないね。
+B	At a funeral, always.	葬式では、絶対に。
+S	
+A	Thanks. I'd have turned up in yellow and trainers.	ありがとう。黄色とスニーカーで行くところだった。
+B	And his mother would never have forgiven you.	それで彼のお母さんに一生許してもらえなくなる。
+A	Dark shirt, boots, no tie. Got it.	濃いシャツ、ブーツ、ネクタイなし。了解。
 """#
 }
