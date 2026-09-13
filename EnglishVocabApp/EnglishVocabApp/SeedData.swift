@@ -39002,5 +39002,416 @@ B	Say it now. Today's not your last day, but it's still a day.	今言いなよ�
 A	You're right. I'm calling my sister after this.	そうだね。この後、姉に電話する。
 B	Good. And I'll call my mum.	よし。私は母に電話する。
 A	No time like the present.	今こそがその時だね。
+T	🔄	生まれ変わったら何になりたいか話す	雑談	if you were reborn, come back as, next life, I'd choose, no responsibilities
+S	
+A	If you could come back as anything in your next life, what would it be?	生まれ変わるなら、何になりたい？
+B	A cat. Specifically, a cat in a sunny window.	猫。特に、日当たりのいい窓辺の猫。
+A	That's the dream, isn't it? No responsibilities.	それが理想だよね。責任ゼロ。
+B	Sleep, eat, judge people from a distance. Perfect.	寝て、食べて、遠くから人を品定めする。完璧。
+A	You do that already.	もうやってるじゃない。
+B	Then I'm halfway there.	じゃあ、もう半分は達成してるね。
+S	
+B	What about you?	そっちは？
+A	A tree. Something old. An oak in a field.	木。古いやつ。野原の樫の木。
+B	That's very calm.	すごく穏やかだね。
+A	Three hundred years of watching the seasons. Nobody expects anything from you.	300年間、季節を眺めるだけ。誰も何も期待しない。
+B	Except shade.	日陰以外はね。
+A	I can do shade. Shade's easy.	日陰ならできる。日陰は簡単。
+S	
+B	A cat under an oak tree.	樫の木の下の猫。
+A	We'd still be friends.	それでも友達だね。
+B	Some things carry over.	引き継がれるものもあるんだよ。
+T	🗾	自分の国の好きなところ・嫌いなところを話す	文化	what do you love about, what frustrates you, the best thing, the worst thing, on balance
+S	
+A	What do you love most about Japan? Now that you've been away.	日本のどこが一番好き？ 離れてみて。
+B	The reliability. Trains on time, things working. You don't notice until you leave.	信頼性。電車は時間通り、物はちゃんと動く。離れるまで気づかないんだ。
+A	And the food, presumably.	あと、食べ物もでしょ。
+B	Obviously. Convenience store food alone.	当然。コンビニの食べ物だけでもね。
+A	What frustrates you about it?	逆に、何が嫌？
+B	The pressure to fit in. Everyone watching what everyone else does.	周りに合わせる圧力。みんながみんなを見てる。
+A	Is that why you left?	それが離れた理由？
+B	Partly. I needed room to be a bit odd.	一部はね。少し変でいられる余地が必要だった。
+S	
+B	And you? What about England?	そっちは？ イギリスは？
+A	I love the humour. Nobody takes anything seriously.	ユーモアが好き。誰も何も真剣に受け取らない。
+B	That's true. Even funerals.	たしかに。葬式でさえ。
+A	Especially funerals. But the worst thing is the weather and the moaning about the weather.	特に葬式で。でも最悪なのは天気と、天気への文句。
+B	You're moaning about the moaning.	文句に文句を言ってるね。
+A	I'm English. It's mandatory.	イギリス人だから。義務なんだ。
+S	
+A	On balance, though?	でも総合的には？
+B	Home is home. The good and the bad.	故郷は故郷。良いところも悪いところも。
+A	That's the honest answer.	それが正直な答えだね。
+T	🌏	海外で暮らして感じた自分の変化を話す	深い話	living abroad changed me, I've become, I notice, more open, in between
+S	
+A	Do you think living abroad has changed you?	海外で暮らして、自分は変わったと思う？
+B	Completely. I'm not the person who got on that plane.	完全に。あの飛行機に乗った時の自分とは違う。
+A	How?	どんなふうに？
+B	I've become more direct. Back home, I'd hint. Here, I just say it.	もっと率直になった。母国では遠回しに言ってた。ここでは、はっきり言う。
+A	Is that good or bad?	それは良いこと？ 悪いこと？
+B	Good here. Confusing when I go home. My mum thinks I've become rude.	ここでは良い。帰ると混乱する。母は私が失礼になったと思ってる。
+S	
+A	Anything else?	他には？
+B	I notice things I never noticed. Both about here and about home.	今まで気づかなかったことに気づく。ここについても、故郷についても。
+A	Like what?	例えば？
+B	How much I used to apologise. And how quiet Japan actually is.	昔どれだけ謝ってたか。それに、日本が実際どれだけ静かか。
+A	You're in between now.	今は狭間にいるんだね。
+B	Exactly that. Not fully either. It's lonely sometimes, but I like it.	まさにそれ。どちらでもない。時々寂しいけど、気に入ってる。
+S	
+A	Do you ever wish you hadn't gone?	行かなければよかったと思うことはある？
+B	Never. Even the hard parts made me better.	一度もない。つらい部分も含めて、成長できた。
+A	That's a good thing to be able to say.	そう言えるのはいいことだね。
+B	It took a few years. But yes.	数年かかったけど。うん。
+T	💬	母国語にしかない表現を教え合う	文化	there's no word for it in English, the closest is, untranslatable, it means something like, you'd say it when
+S	
+A	Is there a Japanese word that doesn't exist in English?	英語にない日本語の言葉ってある？
+B	Loads. My favourite is "natsukashii".	たくさん。一番好きなのは「懐かしい」。
+A	What does it mean?	どういう意味？
+B	It's the feeling when something reminds you of the past. Warm, a bit sad.	何かに昔を思い出させられた時の気持ち。温かくて、少し切ない。
+A	Nostalgic?	ノスタルジック？
+B	Close, but softer. You'd say it when you smell your grandmother's cooking.	近いけど、もっと柔らかい。祖母の料理の匂いを嗅いだ時に言うような。
+A	Natsukashii. I like that.	懐かしい。いいね。
+S	
+B	What about English? Anything untranslatable?	英語は？ 翻訳できない言葉ある？
+A	"Awkward" is surprisingly hard. There's no perfect Japanese word.	「awkward」は意外と難しい。ぴったりの日本語がない。
+B	We just say the English word now.	今はもう英語のまま使ってるよ。
+A	Ha. That's cheating.	はは。ずるいね。
+B	What about "cosy"?	「cosy」は？
+A	That's another one. It's a feeling, not just a description.	それもそう。描写というより、感覚なんだ。
+B	Warm blanket, rain outside, cup of tea.	温かい毛布、外は雨、お茶。
+A	Exactly. That whole scene in one word.	そう。その全部が1つの言葉に。
+S	
+B	Languages carry what people care about.	言語って、人々が大切にするものを運ぶんだね。
+A	That's a nice way to put it.	いい言い方だね。
+B	Japanese cares about feelings. English cares about comfort.	日本語は感情を大切にして、英語は心地よさを大切にする。
+A	And both care about tea.	どちらもお茶を大切にしてる。
+T	😄	自分の国のジョークや面白い習慣を教える	文化	we have this thing, it sounds strange, everyone does it, you'd have to see it, it doesn't translate
+S	
+A	Tell me something funny about Japan that foreigners don't get.	外国人にはわからない、日本の面白いことを教えて。
+B	Okay. We have this thing where you pretend to be asleep on the train.	じゃあ。電車で寝たふりをするっていうのがあるんだ。
+A	Pretend?	ふり？
+B	So nobody talks to you. Everyone knows. Nobody admits it.	誰にも話しかけられないように。みんな知ってる。誰も認めないけど。
+A	That's brilliant.	それは素晴らしい。
+B	And you have to wake up exactly at your stop. It's a skill.	しかも自分の駅でぴったり目を覚まさないといけない。技術なんだよ。
+S	
+B	What about England? Anything strange?	イギリスは？ 何か変なこと？
+A	We say "sorry" when someone bumps into us.	誰かにぶつかられた時に「ごめん」って言う。
+B	When they bump into you?	向こうがぶつかってきたのに？
+A	Yes. It's automatic. I can't stop.	そう。反射的に。止められない。
+B	That's very polite. And very confusing.	すごく礼儀正しい。そしてすごく混乱する。
+A	And we queue for everything. Even when there's no queue.	あと、何にでも列を作る。列がなくても。
+B	How do you queue when there's no queue?	列がないのにどうやって並ぶの？
+A	You'd have to see it. It just... forms.	見ないとわからない。ただ… 自然にできるんだ。
+S	
+B	Some things just don't translate.	翻訳できないものってあるよね。
+A	And that's the best part.	それが一番いいところだよ。
+T	📚	相手の国について学びたいと伝える	文化	I'd love to learn more about, teach me, I don't know much about, where should I start, curious
+S	
+A	I'd love to learn more about Brazil. I know embarrassingly little.	ブラジルについてもっと知りたいんだ。恥ずかしいくらい何も知らなくて。
+B	That's okay. Most people know football and carnival.	大丈夫。ほとんどの人はサッカーとカーニバルしか知らないから。
+A	That's exactly what I know.	まさにそれだけ知ってる。
+B	Ha. Where should we start?	はは。どこから始めようか？
+A	Wherever you'd start. What should people know?	あなたが始めたいところから。何を知っておくべき？
+B	That it's huge. Different regions are like different countries.	とにかく広いってこと。地域ごとに別の国みたい。
+S	
+A	Where are you from?	どこの出身？
+B	The south. It's colder, more European. People are surprised.	南部。寒くて、よりヨーロッパ的。みんな驚くよ。
+A	I didn't know Brazil had cold parts.	ブラジルに寒い地域があるなんて知らなかった。
+B	See? Already learning. And the food's completely different from the north.	ほらね。もう学んでる。食べ物も北部とは全然違う。
+A	Teach me a phrase. Something useful.	フレーズを教えて。役に立つやつ。
+B	"Tudo bem?" It means "everything good?" You say it to everyone.	「トゥード・ベン？」「調子どう？」って意味。誰にでも言う。
+A	Tudo bem?	トゥード・ベン？
+B	Tudo bem. Now you're Brazilian.	トゥード・ベン。もうブラジル人だね。
+S	
+A	I'm going to read about it tonight.	今夜、調べてみるよ。
+B	And I'll bring you some proper food next week.	来週、本場の料理を持ってくるよ。
+A	Best cultural exchange ever.	史上最高の文化交流だね。
+T	🍳	一緒にお互いの国の料理を作ろうと誘う	文化	let's cook together, I'll make, you make, swap recipes, my kitchen or yours
+S	
+A	I've got an idea. Let's cook together. You make something from home, I make something from mine.	思いついた。一緒に料理しよう。あなたは故郷の料理、私は私の故郷の料理を作る。
+B	That's a great idea. What would you make?	いいね。何を作るの？
+A	Okonomiyaki. It's basically a pancake with everything in it.	お好み焼き。簡単に言うと、全部入ったパンケーキ。
+B	And I'd make feijoada. It's a bean stew. Takes hours.	私はフェイジョアーダ。豆のシチュー。何時間もかかる。
+A	Hours?	何時間も？
+B	Good things take time. We'd start in the morning.	良いものには時間がかかるんだ。朝から始めよう。
+S	
+A	My kitchen or yours?	うちのキッチン？ それともあなたの？
+B	Mine's bigger. And I've got the right pot.	私のほうが広い。それに、ちょうどいい鍋がある。
+A	Yours, then. What do I need to bring?	じゃあそっちで。何を持っていけばいい？
+B	Just your ingredients. And an appetite.	材料だけ。あと食欲。
+A	I'll bring the sauce too. You can't get it here.	ソースも持っていくよ。ここでは手に入らないから。
+B	Perfect. Saturday?	完璧。土曜？
+S	
+A	Saturday. And we swap recipes at the end.	土曜。最後にレシピを交換しよう。
+B	Written down. Properly. Not "a bit of this."	書いたやつで。ちゃんと。「これを少し」じゃなくて。
+A	Deal. Measurements and everything.	決まり。分量も全部。
+B	This is going to be the best meal of the year.	今年最高の食事になりそうだ。
+T	👨‍👩‍👧	相手の家族に会ってみたいと伝える	人間関係	I'd love to meet, they sound, next time they visit, put a face to, nervous but
+S	
+A	Your family sounds amazing. I'd love to meet them someday.	あなたの家族、素敵そうだね。いつか会ってみたいな。
+B	Really? They'd love that.	本当に？ 喜ぶと思うよ。
+A	You talk about your mum so much, I feel like I know her already.	お母さんの話をよくするから、もう知ってる気がする。
+B	You'd get on. She'd feed you until you couldn't move.	気が合うと思うよ。動けなくなるまで食べさせてくれる。
+A	That's my kind of person.	それは私の好きなタイプだ。
+S	
+B	They're visiting next month, actually.	実は来月、来るんだ。
+A	Then that's the time.	じゃあその時だね。
+B	Are you sure? My dad asks a lot of questions.	本当にいい？ 父は質問が多いよ。
+A	I can handle questions. I'm nervous, but I want to.	質問は大丈夫。緊張するけど、会いたい。
+B	Nervous why?	なんで緊張するの？
+A	Because they matter to you. So they matter to me.	あなたにとって大切だから。だから私にとっても大切なんだ。
+S	
+B	That's a nice thing to say.	うれしいこと言ってくれるね。
+A	I mean it. Put a face to all the stories.	本気だよ。話に出てくる人たちの顔を見てみたい。
+B	Okay. Dinner, the second Saturday. I'll warn them you're coming.	わかった。第2土曜のディナー。来るって伝えておく。
+A	Warn them?	伝えておく？
+B	Warn them to be nice. Ha.	優しくするように、ってね。はは。
+T	🏠	自分の家族を紹介する	人間関係	this is my, meet my, I've told them about you, she's the one who, make yourself at home
+S	
+A	Everyone, this is Ellie. Ellie, this is my family. Brace yourself.	みんな、こちらエリー。エリー、これが私の家族。覚悟して。
+B	Hi! It's so nice to finally meet you all.	こんにちは！ やっとお会いできてうれしいです。
+A	This is my mum. She's the one who taught me to cook.	これが母。料理を教えてくれた人。
+B	So you're the reason the curry's so good.	じゃあ、あのカレーが美味しいのはあなたのおかげなんですね。
+A	And my dad. He'll ask you about your job in about ten seconds.	それと父。10秒以内に仕事のことを聞いてくるよ。
+B	I'm ready.	準備できてます。
+S	
+A	My sister, Mika. She's the smart one.	妹の美香。頭がいいほう。
+B	I've heard a lot about you.	お噂はかねがね。
+A	And her kids. They'll climb on you. It's a sign of affection.	それと妹の子どもたち。よじ登ってくるよ。愛情表現だから。
+B	I've been warned.	覚悟してます。
+A	I've told them all about you. Only good things.	みんなにあなたのことは話してある。いいことだけね。
+B	Only good things?	いいことだけ？
+A	Mostly good things.	ほとんどいいこと。
+S	
+A	Right, make yourself at home. Mum's already put a plate out for you.	さて、くつろいで。母がもうあなたの分のお皿を出してる。
+B	That was fast.	早いですね。
+A	Told you. You'll be fed until you can't move.	言ったでしょ。動けなくなるまで食べさせられるよ。
+T	💛	「あなたのこういうところが好き」と伝える	人間関係	what I like about you is, the way you, you always, I've noticed, don't change
+S	
+A	Can I tell you something I like about you?	あなたの好きなところ、言ってもいい？
+B	That's a nice way to start a sentence.	会話の始め方として素敵だね。
+A	The way you remember things. Small things people mention once.	物事を覚えててくれるところ。人が一度しか言わないような小さなこと。
+B	I do?	そう？
+A	You asked about my sister's exam last week. I'd mentioned it a month ago.	先週、姉の試験のことを聞いてくれたでしょ。1か月前に一度言っただけなのに。
+B	I just... listen, I suppose.	ただ… 聞いてるだけかな。
+A	Most people don't. It makes people feel like they matter.	ほとんどの人は聞いてない。だから、自分が大切にされてるって感じるんだ。
+S	
+B	Well, since we're doing this — what I like about you is how you make people comfortable.	じゃあ、せっかくだから。私があなたを好きなのは、人を安心させるところ。
+A	Do I?	そう？
+B	You always find the one person who's standing alone at a party.	パーティーで一人で立ってる人を、いつも見つけるよね。
+A	I hate seeing people alone. I've been that person.	一人でいる人を見るのが嫌なんだ。自分もそうだったから。
+B	And you fix it without making a big deal of it.	それを、大げさにせずに解決する。
+A	Huh. I never thought of it as a thing.	へえ。そういうものだと思ったことなかった。
+S	
+B	Don't change that.	そこは変えないでね。
+A	And don't stop remembering things.	そっちも、覚えててくれるのをやめないで。
+B	Deal. This was nice. We should do this more.	決まり。これ、よかったね。もっとやろう。
+T	🌱	相手から学んだことを伝える	人間関係	I learnt that from you, you taught me, I wouldn't have, watching you, changed how I
+S	
+A	You know, I learnt something from you.	実は、あなたから学んだことがあるんだ。
+B	From me? What?	私から？ 何を？
+A	How to say no without feeling guilty.	罪悪感なしに断る方法。
+B	Ha. I'm good at that.	はは。それは得意だね。
+A	You are. I watched you turn down that project last year. So calmly.	うん。去年、あのプロジェクトを断ったのを見た。すごく冷静に。
+B	It wasn't right for me. That's all.	自分に合わなかっただけ。それだけ。
+A	But you didn't apologise or over-explain. You just said no, and thank you.	でも謝ったり、説明しすぎたりしなかった。ただ「いいえ、ありがとう」って。
+B	I used to over-explain everything. It took years.	昔は何でも説明しすぎてた。何年もかかったよ。
+S	
+B	Well, since we're here — I learnt from you too.	じゃあ、せっかくだから。私もあなたから学んだよ。
+A	What?	何を？
+B	To slow down. You take your time with things. Cooking, decisions, people.	ゆっくりすること。あなたは何事にも時間をかける。料理も、決断も、人間関係も。
+A	I'm just slow.	ただ遅いだけだよ。
+B	No, you're deliberate. Watching you changed how I do things.	違う、慎重なんだ。あなたを見て、自分のやり方が変わった。
+A	That's the nicest thing anyone's said about my slowness.	私の遅さについて言われた中で、一番いい言葉だ。
+S	
+A	We're a good influence on each other.	お互いに良い影響を与えてるね。
+B	Or a terrible one. Depends on the day.	それか、悪い影響。日によるね。
+T	🗣	「話しやすい」と感じていると伝える	人間関係	I find it easy to talk to you, I don't usually, it feels natural, you don't judge, safe
+S	
+A	Can I say something? I find it really easy to talk to you.	ひとつ言ってもいい？ あなたとは本当に話しやすい。
+B	Really?	本当に？
+A	I don't usually open up like this. Not this quickly.	普段はこんなふうに心を開かないんだ。こんなに早くは。
+B	What's different?	何が違うの？
+A	You don't judge. Or if you do, you hide it well.	批判しないところ。してるとしても、上手く隠してる。
+B	I don't. Everyone's got their stuff.	してないよ。誰にでも事情があるから。
+A	And you actually listen. You don't just wait to talk.	それに、ちゃんと聞いてくれる。自分が話す番を待ってるだけじゃなくて。
+S	
+B	For what it's worth, I feel the same.	参考までに言うと、私も同じ気持ち。
+A	You do?	そうなの？
+B	I told you about my dad last week. I haven't told anyone that.	先週、父のことを話したでしょ。誰にも話したことなかったんだ。
+A	I noticed. I didn't want to make a thing of it.	気づいてた。大げさにしたくなかったから。
+B	That's exactly why. It felt safe.	まさにそれが理由。安心できたんだ。
+S	
+A	Safe is a good word.	安心って、いい言葉だね。
+B	It's rare. I don't take it for granted.	珍しいことだよ。当たり前だとは思ってない。
+A	Neither do I.	私も。
+T	🤫	相手にしか話していないことがあると打ち明ける	深い話	I've never told anyone, you're the only one, I trust you, between us, thank you for
+S	
+A	There's something I've never told anyone. You're the first.	誰にも話したことのないことがあるんだ。あなたが最初。
+B	Okay. I'm listening.	わかった。聞いてるよ。
+A	I nearly didn't finish uni. I failed my second year and had to redo it.	大学を卒業できないところだった。2年生で落第して、やり直したんだ。
+B	That's not so bad.	そんなにひどいことじゃないよ。
+A	I told everyone I took a gap year. My parents still think that.	みんなにはギャップイヤーを取ったって言った。両親も今でもそう思ってる。
+B	Oh.	そうか。
+A	I've carried it for ten years. It sounds small, but it isn't to me.	10年間抱えてきた。小さく聞こえるかもしれないけど、私にとってはそうじゃない。
+S	
+B	Why tell me now?	なんで今、私に？
+A	Because I trust you. And because I'm tired of the story.	あなたを信頼してるから。それに、その作り話に疲れたから。
+B	Thank you for trusting me with it.	話してくれてありがとう。
+A	It stays between us.	ここだけの話にしてね。
+B	Of course. And for the record, redoing a year is harder than passing it first time.	もちろん。それと言っておくけど、やり直すほうが、一発で受かるより難しいよ。
+A	I'd never thought of it that way.	そういうふうに考えたことなかった。
+S	
+B	You should. It's not a failure story. It's a persistence story.	そう考えるべきだよ。失敗の話じゃない。粘り強さの話だ。
+A	Huh. Maybe I'll tell my parents one day.	なるほど。いつか両親にも話すかもしれない。
+B	Maybe. But only when you want to.	かもね。でも、話したい時にだけ。
+T	🤐	秘密を守ると約束する	人間関係	my lips are sealed, I won't tell a soul, you have my word, it goes no further, I promise
+S	
+A	Before I tell you this, you have to promise not to tell anyone.	話す前に、誰にも言わないって約束して。
+B	I promise. My lips are sealed.	約束する。口は堅いよ。
+A	Not even Sam.	サムにもだよ。
+B	Not even Sam. You have my word.	サムにも言わない。約束する。
+A	Okay. I'm applying for a job in Berlin.	わかった。ベルリンの仕事に応募してるんだ。
+B	Berlin! Wow.	ベルリン！ すごい。
+A	Nobody knows. I don't want people asking about it if I don't get it.	誰も知らない。受からなかった時に聞かれたくなくて。
+S	
+B	Makes sense. It goes no further.	わかる。ここから先には漏らさない。
+A	Thank you. I just needed to say it to someone.	ありがとう。誰かに言いたかっただけなんだ。
+B	When do you hear back?	返事はいつ？
+A	Two weeks. I'm trying not to think about it.	2週間後。考えないようにしてる。
+B	Well, if you need to think out loud, I'm here. And I'll forget it immediately.	考えを口に出したくなったら、ここにいるよ。そして、すぐ忘れる。
+A	That's exactly what I need.	まさにそれが必要なんだ。
+S	
+B	Seriously though, I hope you get it.	でも本当に、受かるといいね。
+A	Thanks. Now forget I said anything.	ありがとう。じゃあ、私が何か言ったことは忘れて。
+B	Said what?	何を言ったって？
+A	Perfect.	完璧。
+T	💬	言いたかったけど言えなかったことを打ち明ける	深い話	I should have said this, I've been meaning to, I didn't know how, it's been on my mind, better late than never
+S	
+A	There's something I should have said months ago.	何か月も前に言うべきだったことがあるんだ。
+B	Go on.	どうぞ。
+A	When you helped me move, I never properly thanked you. I just said "cheers" and moved on.	引っ越しを手伝ってくれた時、ちゃんとお礼を言わなかった。「どうも」で済ませてしまった。
+B	That was ages ago. It's fine.	ずいぶん前のことだよ。気にしないで。
+A	It's not fine. You gave up a whole weekend. I've felt bad about it since.	よくないよ。丸1週末を使ってくれたのに。ずっと申し訳なく思ってた。
+B	Why didn't you say?	なんで言わなかったの？
+A	I didn't know how. Then too much time passed and it felt weird.	どう言えばいいかわからなくて。それで時間が経ちすぎて、変な感じになった。
+S	
+B	Well, better late than never.	まあ、遅くても言わないよりいいよ。
+A	Thank you. Properly. That weekend meant a lot.	ありがとう。ちゃんと。あの週末は本当にありがたかった。
+B	You're welcome. Properly.	どういたしまして。ちゃんと。
+A	And I'm sorry it took this long.	こんなに時間がかかってごめん。
+B	I'm just glad you said it. It's been on your mind, hasn't it?	言ってくれてうれしいよ。ずっと気になってたんでしょ？
+A	Every time I saw the boxes you helped carry.	あなたが運んでくれた箱を見るたびに。
+S	
+B	Next time, say it straight away. Even if it's awkward.	次は、すぐに言って。気まずくても。
+A	I will. Lesson learnt.	そうする。教訓にした。
+B	Good. Now, want to help me move? I'm joking.	よし。じゃあ、私の引っ越しを手伝う？ 冗談だよ。
+A	I'd do it. Seriously.	やるよ。本気で。
+T	❓	自分が相手にとってどんな存在か聞く	深い話	what am I to you, how would you describe, where do I fit, honestly, more than
+S	
+A	Can I ask you something a bit strange?	ちょっと変なこと聞いてもいい？
+B	Sure.	いいよ。
+A	What am I to you? Like, how would you describe me to someone?	私はあなたにとって何？ 誰かに説明するとしたら、どう言う？
+B	That is a strange question.	たしかに変な質問だね。
+A	I know. I've just been thinking about it.	わかってる。ただ、考えてたんだ。
+B	Honestly? You're the person I call first. Good news, bad news, whatever.	正直？ 最初に電話する人。いいニュースも、悪いニュースも、何でも。
+A	Really?	本当？
+B	Really. Before my sister, even.	本当に。姉より先に。
+S	
+A	That's more than I expected.	思ってた以上だ。
+B	What did you expect?	何を期待してたの？
+A	I don't know. "A good friend." Something safe.	わからない。「いい友達」とか。無難なやつ。
+B	You're more than that. You know that.	それ以上だよ。わかってるでしょ。
+A	I hoped. I didn't know.	そう願ってた。確信はなかった。
+B	Well, now you know. Where do I fit for you?	じゃあ、今わかったね。私はあなたにとってどこにいる？
+S	
+A	Same. First call. Every time.	同じ。最初の電話。毎回。
+B	Good. Then we're on the same page.	よかった。じゃあ、同じ気持ちだね。
+A	I'm glad I asked.	聞いてよかった。
+B	Me too. Strange question, good answer.	私も。変な質問で、いい答え。
+T	📸	一緒に撮った写真を見返して話す	雑談	look at this one, remember that day, we look so young, what were we thinking, good times
+S	
+A	Look at this one. Remember that day?	これ見て。この日のこと覚えてる？
+B	The beach! With the terrible tent.	ビーチ！ あのひどいテントの。
+A	It blew away twice.	2回飛んでいったよね。
+B	And we just laughed. We didn't even care.	それで、ただ笑ってた。全然気にしてなかった。
+A	Look at your hair.	あなたの髪、見て。
+B	Don't. What was I thinking?	やめて。何を考えてたんだろう。
+A	We look so young.	すごく若いね。
+B	We were so young. That was, what, eight years ago?	本当に若かった。あれって、8年前？
+S	
+A	And this one. The night before your wedding.	それとこれ。結婚式の前夜。
+B	I'd forgotten about that. We stayed up till four.	忘れてた。4時まで起きてたね。
+A	You kept saying you weren't nervous.	緊張してないって言い続けてた。
+B	I was terrified. You knew.	怖くてたまらなかった。あなたは知ってたよね。
+A	I knew. That's why I stayed up.	知ってた。だから一緒に起きてたんだ。
+B	I never thanked you for that.	それについて、お礼を言ったことなかったね。
+A	You didn't have to.	言わなくてよかったんだよ。
+S	
+B	We should print some of these. Put them on the wall.	何枚か印刷しよう。壁に飾って。
+A	The tent one, definitely.	テントのやつは絶対。
+B	Not the hair one.	髪のやつは絶対だめ。
+A	Especially the hair one.	特に髪のやつを。
+T	🤝	「これからも仲良くしてほしい」と伝える	人間関係	I hope we stay, don't drift apart, keep this going, whatever happens, still be doing this
+S	
+A	I hope we stay friends. Like, properly. For a long time.	これからもずっと友達でいたいな。ちゃんと。長い間。
+B	Where's this coming from?	急にどうしたの？
+A	I've watched so many friendships just fade. I don't want that with you.	いろんな友情が自然消滅するのを見てきたから。あなたとはそうなりたくない。
+B	It won't. Not if we don't let it.	そうはならないよ。そうさせなければ。
+A	That's the thing, though. Nobody lets it. It just happens.	でもそこなんだよね。誰もそうさせようとしてないのに、そうなる。
+B	Then we do something about it. We make it a thing.	じゃあ何かしよう。決まりにするんだ。
+S	
+A	Like what?	例えば？
+B	Dinner, first Friday of every month. No matter what.	毎月第1金曜の夕飯。何があっても。
+A	Even when we're busy?	忙しい時でも？
+B	Especially then. That's when it slips.	特にその時こそ。そういう時に途切れるから。
+A	First Friday. I'm writing it down.	第1金曜。メモしておく。
+B	And when one of us moves or has kids or whatever — still the first Friday.	それで、どちらかが引っ越したり、子どもができたりしても、やっぱり第1金曜。
+A	Whatever happens.	何があっても。
+S	
+B	In thirty years, we'll still be doing this. Complaining about our backs.	30年後も、まだやってるよ。腰の痛みを愚痴りながら。
+A	I'd like that.	それ、いいね。
+B	Then it's settled.	じゃあ決まりだね。
+T	🫶	「いつでも頼って」と伝える	人間関係	I'm here if you need me, any time, don't hesitate, you don't have to go through it alone, call me
+S	
+A	Listen. I know things are hard right now. I just want you to know — I'm here.	ねえ。今、大変なのはわかってる。ただ伝えたくて。私はここにいるから。
+B	I know. Thank you.	わかってる。ありがとう。
+A	No, I mean it. Any time. Three in the morning, whatever.	いや、本気だよ。いつでも。朝の3時でも、何でも。
+B	I wouldn't call you at three in the morning.	朝の3時には電話しないよ。
+A	You should, if you need to. That's what I'm saying.	必要なら、すべきだよ。そう言ってるんだ。
+B	I don't want to be a burden.	重荷になりたくないんだ。
+A	You're not a burden. You'd do the same for me. You have done the same for me.	重荷なんかじゃない。あなたも私に同じことをしてくれる。実際、してくれたし。
+S	
+B	That's true.	たしかに。
+A	So don't hesitate. You don't have to go through this alone.	だから遠慮しないで。一人で抱える必要はないから。
+B	I've been trying to. It's not working very well.	一人でやろうとしてた。あまりうまくいってないけど。
+A	I can tell. That's why I'm saying it.	わかるよ。だから言ってるんだ。
+B	Okay. I'll call.	わかった。電話する。
+A	Promise?	約束？
+B	Promise.	約束。
+S	
+A	Good. And I'm coming round Sunday anyway. With food.	よし。それに、どうせ日曜に行くから。食べ物を持って。
+B	You always bring food.	いつも食べ物を持ってくるね。
+A	It's how I say things I can't say.	言葉にできないことを伝える方法なんだ。
+T	🌟	お互いの成長を認め合う	深い話	look how far you've come, you've grown so much, remember when, I'm proud of us, we did that
+S	
+A	Do you remember when we first met? How lost we both were?	初めて会った時のこと覚えてる？ 2人とも、どれだけ迷ってたか。
+B	Vividly. I was working a job I hated and crying most weeks.	鮮明に。嫌いな仕事をしながら、ほぼ毎週泣いてた。
+A	And I'd just moved here and didn't know anyone.	私は引っ越してきたばかりで、誰も知らなかった。
+B	Look at us now.	今の私たちを見て。
+A	You run your own studio.	あなたは自分のスタジオを持ってる。
+B	And you've got a whole life here. Friends, a flat, a favourite café.	あなたはここで人生を築いた。友達も、家も、行きつけのカフェも。
+S	
+A	You've grown so much. I mean that.	本当に成長したね。心から思う。
+B	So have you. You used to apologise for existing.	あなたもだよ。昔は存在してることすら謝ってた。
+A	I did, didn't I?	そうだったね。
+B	Now you take up space. It's good to see.	今は堂々としてる。見ていてうれしいよ。
+A	I learnt some of that from you.	その一部はあなたから学んだんだ。
+B	And I learnt patience from you. We did that. Together.	私はあなたから忍耐を学んだ。私たちがやり遂げたんだ。一緒に。
+S	
+A	I'm proud of us.	私たち、誇りに思うよ。
+B	Me too. Ten years from now, let's do this again.	私も。10年後、またこの話をしよう。
+A	See how far we've come.	どれだけ進んだか確かめるために。
+B	It's a date.	約束だね。
 """#
 }
