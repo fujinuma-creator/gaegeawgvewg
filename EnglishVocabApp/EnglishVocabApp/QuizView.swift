@@ -2335,15 +2335,25 @@ struct TopicConversationView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
-                    ForEach(topic.scenes) { scene in
+                    // One conversation per topic. Scenes are just breaks in
+                    // the flow, drawn as a thin rule — no headings.
+                    ForEach(Array(topic.scenes.enumerated()), id: \.element.id) { idx, scene in
                         VStack(alignment: .leading, spacing: 10) {
-                            if !scene.label.isEmpty {
-                                Text(scene.label)
-                                    .font(.caption.bold())
-                                    .foregroundStyle(.indigo)
-                                    .padding(.horizontal, 10)
-                                    .padding(.vertical, 4)
-                                    .background(Capsule().fill(Color.indigo.opacity(0.10)))
+                            if idx > 0 {
+                                if scene.label.isEmpty {
+                                    Rectangle()
+                                        .fill(Color.black.opacity(0.10))
+                                        .frame(height: 1)
+                                        .padding(.horizontal, 40)
+                                        .padding(.vertical, 2)
+                                } else {
+                                    Text(scene.label)
+                                        .font(.caption.bold())
+                                        .foregroundStyle(.indigo)
+                                        .padding(.horizontal, 10)
+                                        .padding(.vertical, 4)
+                                        .background(Capsule().fill(Color.indigo.opacity(0.10)))
+                                }
                             }
                             ForEach(scene.lines) { line in
                                 turn(line)

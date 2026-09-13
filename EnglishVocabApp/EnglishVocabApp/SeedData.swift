@@ -29014,14 +29014,14 @@ enum TopicSeed {
 
     private static let raw = #"""
 T	🚑	怪我をして救急に行く	健康	ER, get checked out, put weight on, swelling, fracture, elevated, that's a relief
-S	家で
+S	
 A	I think I need to go to the ER. I hurt my leg pretty badly.	救急に行ったほうがいいと思う。足をかなりひどく怪我しちゃった。	aɪ θˈɪŋk aɪ nˈiːd tə ɡˌəʊ tə ðɪ ˌiːˈɑː aɪ hˈɜːt maɪ lˈɛɡ pɹˈɪtɪ bˈædlɪ
 B	Oh, wow. What happened?	え、大丈夫？ どうしたの？	ˈəʊ wˈaʊ wˌɒt hˈæpənd
 A	I slipped on the stairs and landed pretty hard on my knee.	階段で滑って、膝をかなり強く打ったんだ。	aɪ slˈɪpt ɒnðə stˈeəz ænd lˈændɪd pɹˈɪtɪ hˈɑːd ˌɒn maɪ nˈiː
 B	Can you walk?	歩ける？	kæn juː wˈɔːk
 A	Barely. It hurts a lot when I put weight on it.	なんとか。でも体重をかけるとかなり痛い。	bˈeəlɪ ɪt hˈɜːts ɐ lˈɒt wɛn aɪ pˌʊt wˈeɪt ˈɒn ɪt
 B	Okay, let's get you checked out. Better to be safe.	じゃあ診てもらおう。念のため、そのほうがいいよ。	əʊkˈeɪ lˈɛts ɡɛt juː tʃˈɛkt ˈaʊt bˈɛtɐ təbɪ sˈeɪf
-S	受付で
+S	
 A	Hi, I injured my knee, and I'm having a lot of pain.	すみません、膝を怪我して、かなり痛みがあります。	hˈaɪ aɪ ˈɪndʒəd maɪ nˈiː ænd aɪm hˌævɪŋ ɐ lˈɒt ɒv pˈeɪn
 B	When did the injury happen?	いつ怪我をしましたか？	wˌɛn dˈɪd ðɪ ˈɪndʒəɹɪ hˈæpən
 A	About an hour ago. I slipped and hit my knee on the stairs.	1時間くらい前です。滑って、階段に膝をぶつけました。	ɐbˌaʊt ɐn ˈaʊɐɹ ɐɡˈəʊ aɪ slˈɪpt ænd hˈɪt maɪ nˈiː ɒnðə stˈeəz
@@ -29029,13 +29029,13 @@ B	Are you able to walk?	歩くことはできますか？	ɑː juː ˈeɪbəl t�
 A	Yes, but it's really painful.	はい、でもかなり痛いです。	jˈɛs bˌʌt ɪts ɹˈiəlɪ pˈeɪnfəl
 B	Have you noticed any swelling or bleeding?	腫れや出血はありますか？	hæv juː nˈəʊtɪst ˌɛnɪ swˈɛlɪŋ ɔː blˈiːdɪŋ
 A	It's starting to swell, but there's no bleeding.	腫れてきていますが、出血はありません。	ɪts stˈɑːtɪŋ tə swˈɛl bˌʌt ðeəz nˈəʊ blˈiːdɪŋ
-S	待っている間
+S	
 A	The pain is getting worse. Is there anything I can take for it?	痛みがだんだんひどくなっています。何か痛み止めを飲んでもいいですか？	ðə pˈeɪn ɪz ɡˌɛtɪŋ wˈɜːs ɪz ðeəɹ ˈɛnɪθˌɪŋ aɪ kæn tˈeɪk fɔːɹ ɪt
 B	The doctor will see you shortly. We'll check what's going on first.	もうすぐ先生が診ます。まず状態を確認しましょう。	ðə dˈɒktɐ wɪl sˈiː juː ʃˈɔːtlɪ wiːl tʃˈɛk wɒts ɡˌəʊɪŋ ˌɒn fˈɜːst
 A	Do you think I might have fractured it?	骨折している可能性はありますか？	dˈuː juː θˈɪŋk aɪ mˌaɪthɐv fɹˈæktʃəd ɪt
 B	It's hard to say without an X-ray.	レントゲンを撮らないと何とも言えません。	ɪts hˈɑːd tə sˈeɪ wɪðˌaʊt ɐn ˈɛksɹˈeɪ
 A	Okay. I understand.	分かりました。	əʊkˈeɪ aɪ ˌʌndəstˈænd
-S	診断結果
+S	
 B	The X-ray doesn't show a fracture, but you've got quite a bit of swelling.	レントゲンでは骨折は見られませんが、かなり腫れています。	ðɪ ˈɛksɹˈeɪ dˈʌzənt ʃˈəʊ ɐ fɹˈæktʃɐ bˌʌt juːv ɡɒt kwˈaɪt ɐ bˈɪt ɒv swˈɛlɪŋ
 A	That's a relief. So what should I do now?	それなら安心しました。では、これからどうすればいいですか？	ðæts ɐ ɹɪlˈiːf sˌəʊ wɒt ʃˌʊd aɪ dˈuː nˈaʊ
 B	Rest it, keep it elevated, and use ice to help with the swelling.	安静にして、足を高くして、腫れを抑えるために冷やしてください。	ɹˈɛst ɪt kˈiːp ɪt ˈɛlɪvˌeɪtɪd ænd jˈuːs ˈaɪs tə hˈɛlp wɪððə swˈɛlɪŋ
