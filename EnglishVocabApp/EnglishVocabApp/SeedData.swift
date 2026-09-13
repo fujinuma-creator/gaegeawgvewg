@@ -30358,5 +30358,376 @@ A	Oh, don't worry about that.	ああ、それは気にしないで。
 B	No, let me chip in a bit more then.	いや、じゃあ私がもう少し多めに出すよ。
 A	Honestly, it's fine. Get the next one.	本当にいいから。次におごって。
 B	Deal.	わかった。
+T	🧮	会計が間違っていると指摘する	食事	I think there's a mistake, charged twice, doesn't add up, run it again, sorted
+S	
+A	Excuse me, I think there might be a mistake on the bill.	すみません、お会計に間違いがあるようなんですが。
+B	Oh? Let me have a look.	そうですか？ 確認させてください。
+A	We only had two drinks, but it says three.	飲み物は2杯だけでしたが、3杯になっています。
+B	You're right. Let me check with the bar.	おっしゃる通りですね。バーに確認してきます。
+A	Thanks. It's not a big deal, just wanted to flag it.	ありがとう。大したことじゃないんですが、一応。
+S	
+B	So sorry, that drink was for the next table.	申し訳ありません。その1杯は隣のテーブルの分でした。
+A	Ah, that explains it.	なるほど、それでですね。
+B	I'll run it again without it.	それを除いて計算し直します。
+A	And the dessert — was that included?	あとデザートは、入っていますか？
+B	Yes, it's this line here. Everything else adds up.	はい、こちらの行です。他は合っています。
+S	
+B	Here's the corrected bill.	修正したお会計です。
+A	Perfect. That looks right now.	完璧です。これで合っています。
+B	Sorry again for the mix-up.	重ねてお詫びします。
+A	No problem at all. Thanks for sorting it.	全然大丈夫です。対応ありがとう。
+T	💵	チップを払うかどうか迷っている	食事	is tipping expected, service charge, how much is normal, round up, leave a tip
+S	
+A	Hey, do we need to tip here?	ねえ、ここってチップ必要？
+B	I think so. It's normal in this country.	たぶん。この国では普通だよ。
+A	How much is normal?	どのくらいが普通？
+B	Ten to fifteen percent, usually.	だいたい10〜15%かな。
+A	Even at a casual place like this?	こういうカジュアルな店でも？
+S	
+B	Let me check the bill. Is there a service charge already?	お会計を見てみよう。サービス料はもう入ってる？
+A	It says "service not included".	「サービス料別」って書いてある。
+B	Then yes, we should leave something.	じゃあ、いくらか置いたほうがいいね。
+A	Okay. The bill's forty-two, so...	わかった。42ドルだから…
+B	Just round up to fifty. Easy.	50に切り上げればいい。簡単。
+S	
+A	Do we leave it on the table or give it to the waiter?	テーブルに置く？ それとも店員に渡す？
+B	Either's fine. Table's easiest.	どっちでもいいよ。テーブルが一番楽。
+A	Right. Cash or add it to the card?	なるほど。現金？ それともカードに足す？
+B	There's a tip line on the receipt. Just write it in.	レシートにチップの欄があるよ。そこに書けばいい。
+A	Got it. Thanks for the crash course.	了解。短期集中講座ありがとう。
+T	🚰	水は水道水でいいと伝える	食事	tap water is fine, still or sparkling, a jug of, no need for, safe to drink
+S	
+B	Would you like still or sparkling water?	お水はガス入りとガスなし、どちらになさいますか？
+A	Actually, tap water is fine, if that's okay.	水道水で大丈夫です、もし可能なら。
+B	Of course. A jug for the table?	もちろんです。テーブルにピッチャーでお持ちしましょうか？
+A	That would be perfect. Thank you.	それで完璧です。ありがとう。
+B	No problem. I'll bring it right over.	承知しました。すぐお持ちします。
+S	
+A	Is the tap water safe to drink here?	ここの水道水は飲んでも大丈夫ですか？
+B	Absolutely. It's very good quality.	もちろんです。とても品質がいいですよ。
+A	Great. I never know when I'm travelling.	よかった。旅行中はいつもわからなくて。
+B	Sensible to ask. Some places, you shouldn't.	聞くのは賢明です。場所によっては飲まないほうがいいですから。
+A	Exactly why I asked.	まさにそれで聞いたんです。
+S	
+B	Here's your water. Ice?	お水です。氷は？
+A	No ice, thanks. Just as it is.	氷なしで。そのままで大丈夫です。
+B	Perfect. Let me know if you'd like more.	かしこまりました。おかわりが必要でしたらお声がけください。
+A	Will do.	そうします。
+T	👗	試着したいと店員に伝える	買い物	try this on, fitting room, how many items, does it fit, let me know
+S	
+A	Hi, could I try this on?	すみません、これ試着できますか？
+B	Of course. How many items have you got?	もちろんです。何点お持ちですか？
+A	Just the two — the dress and this top.	2点だけです。ワンピースとこのトップス。
+B	Perfect. The fitting rooms are just at the back.	承知しました。試着室は奥にあります。
+A	Thank you.	ありがとう。
+S	
+B	How's it going in there?	いかがですか？
+A	The dress fits, but the top's a bit tight.	ワンピースは合うんですが、トップスがちょっときつくて。
+B	Would you like me to grab the next size up?	ワンサイズ上をお持ちしましょうか？
+A	Yes, please. A medium.	お願いします。Mサイズを。
+B	One moment.	少々お待ちください。
+S	
+A	That's much better. I'll take both.	こっちのほうがずっといい。両方買います。
+B	Great choice. Shall I take them to the till for you?	いいお選びですね。レジまでお持ちしましょうか？
+A	That'd be lovely, thanks.	お願いします、ありがとう。
+B	And there's ten percent off if you join our mailing list.	メールリストに登録すると10%オフになりますよ。
+A	Sure, why not.	じゃあ、お願いします。
+T	📐	サイズが合わないので交換したい	買い物	exchange, one size up, still have the tags, in stock, same price
+S	
+A	Hi, I bought this yesterday, but it's too small.	昨日これを買ったんですが、小さすぎて。
+B	No problem. Would you like to exchange it?	大丈夫ですよ。交換なさいますか？
+A	Yes, one size up, if you have it.	はい、ワンサイズ上があれば。
+B	Let me check. Do you have the receipt?	確認します。レシートはお持ちですか？
+A	Here. And the tags are still on.	どうぞ。タグもまだ付いています。
+S	
+B	Good news, we have a large in stock.	よかったです、Lサイズの在庫があります。
+A	Great. Could I try it on quickly, just to be safe?	よかった。念のためちょっと試着してもいいですか？
+B	Of course. The fitting room's right there.	もちろんです。試着室はすぐそこです。
+A	That fits perfectly. Thank you.	ぴったりです。ありがとう。
+B	Same price, so nothing to pay.	同じ価格なので、お支払いはありません。
+S	
+A	Do I need a new receipt?	新しいレシートは必要ですか？
+B	I'll print you an exchange slip. Keep it with the original.	交換伝票をお出しします。元のレシートと一緒に保管してください。
+A	Perfect. Thanks for making it easy.	完璧です。手続きが簡単で助かりました。
+B	That's what we're here for.	それが私たちの仕事ですから。
+T	💳	返品・返金をお願いする	買い物	I'd like a refund, unused, within fourteen days, back on your card, store credit
+S	
+A	Hi, I'd like to return this, please.	すみません、これを返品したいのですが。
+B	Certainly. Is there anything wrong with it?	承知しました。何か問題がありましたか？
+A	No, I just changed my mind. It's unused.	いえ、気が変わっただけです。未使用です。
+B	That's fine. Do you have the receipt?	大丈夫ですよ。レシートはお持ちですか？
+A	Yes, here. It was last Thursday.	はい、こちらです。先週の木曜でした。
+S	
+B	That's within fourteen days, so a full refund is fine.	14日以内なので、全額返金できます。
+A	Great. Can it go back on my card?	よかった。カードに戻せますか？
+B	Yes, the same card you paid with.	はい、お支払いに使ったカードに。
+A	That's this one.	これです。
+B	Thank you. It'll take three to five working days to show.	ありがとうございます。反映まで3〜5営業日かかります。
+S	
+A	Would store credit be faster?	ストアクレジットのほうが早いですか？
+B	It would be instant, but it's only valid here.	即時ですが、当店でしか使えません。
+A	I'll stick with the card refund, then.	じゃあカードへの返金でお願いします。
+B	No problem. All done. Sorry it didn't work out.	承知しました。完了です。ご期待に沿えず残念です。
+A	Not at all. Thanks for your help.	とんでもない。ありがとうございました。
+T	🏷	値段交渉をする（市場や露店で）	買い物	how much for, best price, a bit steep, meet me halfway, throw in
+S	
+A	How much for this scarf?	このスカーフ、いくらですか？
+B	Thirty for you, my friend.	お客さんには30で。
+A	Thirty? That's a bit steep.	30？ ちょっと高いですね。
+B	It's handmade. Very good quality.	手作りなんだ。とてもいい品質だよ。
+A	I can see that. But I've seen similar for twenty.	それはわかります。でも似たようなのを20で見ましたよ。
+S	
+B	Twenty-eight. That's my best price.	28。これが精一杯。
+A	Hmm. What if I take two?	うーん。2枚買ったら？
+B	Two? Then fifty for both.	2枚？ なら2枚で50。
+A	Meet me halfway — forty-five?	間を取って、45は？
+B	You drive a hard bargain. Forty-five, fine.	手強いね。45でいいよ。
+S	
+A	Deal. Could you throw in a small bag?	決まりです。小さい袋も付けてもらえます？
+B	Ha! You're a natural. Here you go.	はは！ 慣れてるね。はい、どうぞ。
+A	Thank you. Pleasure doing business.	ありがとう。良い取引でした。
+B	Come back tomorrow, I'll have new ones.	明日また来て。新しいのが入るから。
+T	🧾	レシートをもらい忘れた	買い物	forgot to grab, still have it, reprint, transaction, for my records
+S	
+A	Sorry, I was just here — I forgot to grab my receipt.	すみません、さっき来たんですが、レシートを受け取り忘れて。
+B	No problem. What did you buy?	大丈夫ですよ。何をお買い上げでしたか？
+A	A coffee and a sandwich, about ten minutes ago.	コーヒーとサンドイッチを、10分くらい前に。
+B	Ah yes, I remember. Let me see if I can reprint it.	ああ、覚えています。再印刷できるか見てみますね。
+A	Thank you, I need it for my records.	ありがとう。経費の記録に必要で。
+S	
+B	Here's the transaction. Did you pay by card?	この取引ですね。カードでのお支払いでしたか？
+A	Yes, the last four digits are 4-4-1-9.	はい、下4桁は4-4-1-9です。
+B	That's the one. Printing now.	それですね。今印刷します。
+A	Brilliant. Sorry for the hassle.	助かります。お手数おかけしました。
+B	Not at all, it happens all the time.	とんでもない、よくあることです。
+S	
+B	There you go. I've stapled it to a copy just in case.	どうぞ。念のためコピーもホチキスで留めてあります。
+A	That's really thoughtful. Thank you.	気が利きますね。ありがとう。
+B	Have a good afternoon.	良い午後を。
+A	You too.	そちらも。
+T	🛍	袋はいらないと伝える	買い物	no bag, I've got my own, save the plastic, just the receipt, carry it
+S	
+B	Would you like a bag for that?	袋にお入れしますか？
+A	No, thanks. I've got my own.	いえ、結構です。自分の袋があるので。
+B	Lovely. Saves the plastic.	いいですね。プラスチックの節約になります。
+A	Exactly. I try to remember to bring one.	そうなんです。持ってくるのを忘れないようにしていて。
+B	More people should. Here's your receipt.	そういう人がもっと増えるといいですね。レシートです。
+S	
+B	Are you sure? It's quite a few items.	本当によろしいですか？ 結構な量ですが。
+A	It'll fit. My bag's bigger than it looks.	入りますよ。見た目より大きいので。
+B	All right. Do you want me to help pack it?	わかりました。詰めるのを手伝いましょうか？
+A	I'm fine, thanks. Heavy stuff at the bottom.	大丈夫です、ありがとう。重いものを下にして。
+B	You're a pro.	プロですね。
+S	
+A	Actually, could I get a small one just for the eggs?	あの、卵だけ小さい袋をもらえますか？
+B	Of course. Don't want those getting crushed.	もちろんです。潰れたら大変ですから。
+A	Thank you.	ありがとう。
+B	Have a good one.	良い一日を。
+T	📦	在庫があるか確認してもらう	買い物	do you have this in, check the stock, out of stock, in the back, order it in
+S	
+A	Excuse me, do you have this in blue?	すみません、これの青はありますか？
+B	Let me check the stock for you.	在庫を確認しますね。
+A	Thanks. I couldn't find one on the shelf.	ありがとう。棚には見当たらなくて。
+B	Hmm, it says we should have two in the back.	うーん、奥に2点あることになっていますね。
+A	Oh, great.	それはよかった。
+S	
+B	Sorry, I've had a look and I can only find the grey.	申し訳ありません、探しましたがグレーしか見つかりませんでした。
+A	Oh no. Is the blue coming back?	そうですか。青はまた入りますか？
+B	I can order it in. It'd be here by Friday.	取り寄せできます。金曜には届きますよ。
+A	That works. Do I need to pay now?	それなら大丈夫です。今払う必要はありますか？
+B	No, just leave your name and number.	いいえ、お名前と電話番号だけいただければ。
+S	
+B	I'll give you a call when it arrives.	届いたらお電話します。
+A	Perfect. And if I don't want it by then?	助かります。もしその時に要らなくなったら？
+B	No obligation. Just let us know.	お約束は不要です。教えていただければ。
+A	Thanks for going the extra mile.	わざわざありがとうございます。
+B	My pleasure.	どういたしまして。
+T	🏨	ホテルでチェックイン・チェックアウトする	旅行	checking in, key card, check-out time, settle the bill, minibar
+S	
+A	Hi, I'm checking in. The name's Fujinuma.	こんにちは、チェックインをお願いします。藤沼です。
+B	Welcome. Could I see your passport, please?	ようこそ。パスポートを拝見できますか？
+A	Here you go.	どうぞ。
+B	Thank you. You're in room 512, that's the fifth floor.	ありがとうございます。512号室、5階です。
+A	What time is breakfast?	朝食は何時ですか？
+B	Seven to ten, in the restaurant on the ground floor.	7時から10時まで、1階のレストランです。
+S	
+A	And what's the check-out time?	チェックアウトは何時ですか？
+B	Eleven. Would you like a wake-up call?	11時です。モーニングコールは必要ですか？
+A	No thanks, I'll set an alarm.	いえ、目覚ましをかけるので。
+B	Here are your key cards. The lifts are on your left.	カードキーです。エレベーターは左手です。
+A	Great, thank you.	ありがとうございます。
+S	
+A	Morning. I'd like to check out, please. Room 512.	おはようございます。チェックアウトをお願いします。512号室です。
+B	Of course. Did you use the minibar?	かしこまりました。ミニバーはご利用になりましたか？
+A	Just one water.	水を1本だけ。
+B	That's fine. Would you like to settle it on the same card?	承知しました。同じカードでお支払いになりますか？
+A	Yes, please.	はい、お願いします。
+B	All done. Thank you for staying with us.	完了です。ご宿泊ありがとうございました。
+T	🔑	部屋の鍵をなくした	旅行	lost my key, locked out, spare key, replacement, ID
+S	
+A	Hi, I've got a bit of a problem. I've lost my room key.	すみません、少し困っていて。部屋の鍵をなくしてしまいました。
+B	Oh no. Which room are you in?	それは大変。お部屋は何号室ですか？
+A	312. I think I left it in the restaurant.	312です。レストランに置いてきたかもしれません。
+B	Let me call them and check.	電話して確認しますね。
+A	Thank you. Sorry about this.	ありがとう。お手数おかけします。
+S	
+B	Unfortunately, they haven't found anything.	残念ながら、見つかっていないそうです。
+A	Ah. So what happens now?	そうですか。じゃあどうすれば？
+B	I can issue a replacement. Could I see some ID?	再発行できます。身分証を拝見できますか？
+A	Here's my passport.	パスポートです。
+B	Perfect. I'll deactivate the old one for safety.	ありがとうございます。安全のため、古いカードは無効にします。
+S	
+B	Here's your new key. Try it and let me know it works.	新しい鍵です。試してみて、使えるか教えてください。
+A	Will do. Is there a charge for this?	そうします。料金はかかりますか？
+B	Not this time. Just try not to lose this one.	今回は結構です。今度はなくさないように。
+A	I'll guard it with my life.	命がけで守ります。
+B	Ha, that's the spirit.	はは、その意気です。
+T	❄️	部屋のエアコンが効かない	旅行	not working, blowing warm air, send someone up, change rooms, sort it out
+S	
+A	Hi, the air conditioning in my room doesn't seem to be working.	すみません、部屋のエアコンが効いていないようなんです。
+B	I'm sorry to hear that. What's it doing?	申し訳ありません。どのような状態ですか？
+A	It's on, but it's just blowing warm air.	ついてはいるんですが、温かい風しか出なくて。
+B	Have you tried turning it off and on again?	一度消してから、つけ直してみましたか？
+A	Yes, twice. No difference.	はい、2回。変わりません。
+S	
+B	I'll send someone up to take a look right away.	すぐに係の者を向かわせます。
+A	Thank you. It's really hot in there.	ありがとう。部屋が本当に暑くて。
+B	Room 415, is that right?	415号室でよろしいですか？
+A	Yes. How long will it take?	はい。どのくらいかかりますか？
+B	Ten minutes or so.	10分ほどです。
+S	
+B	I'm afraid the unit needs a part. Would you mind changing rooms?	部品が必要なようです。お部屋を替えていただけますか？
+A	No, that's fine. As long as it's cool.	大丈夫です。涼しければ。
+B	We'll move you to 520. It's a bit bigger, no extra charge.	520号室にご案内します。少し広めで、追加料金はありません。
+A	Oh, that's very kind. Thank you.	それはご親切に。ありがとうございます。
+B	The porter will help with your bags.	荷物はポーターがお運びします。
+T	📶	Wi-Fiのパスワードを聞く	旅行	what's the Wi-Fi password, network name, connect, case-sensitive, not working
+S	
+A	Excuse me, what's the Wi-Fi password?	すみません、Wi-Fiのパスワードは何ですか？
+B	It's on the card by the phone in your room.	お部屋の電話のそばにあるカードに書いてあります。
+A	Oh, I didn't see it. Could you tell me?	見落としていました。教えてもらえますか？
+B	Of course. The network is "Hotel-Guest".	もちろんです。ネットワーク名は「Hotel-Guest」です。
+A	And the password?	パスワードは？
+B	"Welcome2024", capital W.	「Welcome2024」、Wは大文字です。
+S	
+A	Is it case-sensitive?	大文字と小文字は区別されますか？
+B	Yes. Capital W, the rest lowercase, then the numbers.	はい。Wだけ大文字、あとは小文字で、その後に数字です。
+A	Let me try... hmm, it's not connecting.	試してみます… うーん、繋がりません。
+B	Sometimes it takes a moment. Try once more.	少し時間がかかることがあります。もう一度試してみてください。
+A	There it goes. Thanks.	繋がりました。ありがとう。
+S	
+A	Is it the same password everywhere in the hotel?	ホテル内はどこでも同じパスワードですか？
+B	Yes, including the lobby and the restaurant.	はい、ロビーもレストランも同じです。
+A	Perfect. Thanks for your help.	完璧です。ありがとうございました。
+B	You're welcome. Enjoy your stay.	どういたしまして。ごゆっくりどうぞ。
+T	🧳	荷物をフロントに預けたい	旅行	leave my bags, hold onto, luggage tag, pick them up, until
+S	
+A	Hi, I've just checked out. Could I leave my bags here for a few hours?	チェックアウトしたんですが、数時間荷物を預かってもらえますか？
+B	Of course. How many pieces?	もちろんです。何点ですか？
+A	Two — a suitcase and a backpack.	2つです。スーツケースとリュック。
+B	No problem. What time will you be collecting them?	承知しました。何時頃お引き取りですか？
+A	Around four. My flight's this evening.	4時頃です。今夜のフライトなので。
+S	
+B	Here's your luggage tag. Keep this half.	お荷物の預かり札です。こちらの半券をお持ちください。
+A	Got it. Is there anything valuable I should take with me?	わかりました。貴重品は持っていったほうがいいですか？
+B	We'd recommend it. Passports, electronics, that sort of thing.	そのほうが安心です。パスポートや電子機器など。
+A	Right, let me grab my laptop.	そうですね、ノートパソコンを出しておきます。
+B	Take your time.	ごゆっくりどうぞ。
+S	
+A	Hi, I'm back for my bags. Here's the tag.	荷物を受け取りに来ました。札です。
+B	Thank you. One suitcase, one backpack.	ありがとうございます。スーツケース1つ、リュック1つ。
+A	That's them. Thanks for holding onto them.	それです。預かってくれてありがとう。
+B	Safe travels!	お気をつけて！
+T	🥐	朝食の時間と場所を聞く	旅行	what time is breakfast, buffet, included, until, ground floor
+S	
+A	Hi, what time is breakfast served?	すみません、朝食は何時からですか？
+B	From six thirty until ten.	6時半から10時までです。
+A	And where is it?	場所はどこですか？
+B	The restaurant on the ground floor, just past the lifts.	1階のレストラン、エレベーターを過ぎたところです。
+A	Is it included in the room rate?	宿泊料金に含まれていますか？
+B	Yes, for both guests.	はい、お二人とも含まれています。
+S	
+A	Is it a buffet or do we order?	ビュッフェですか、それとも注文式ですか？
+B	Buffet. Hot and cold options.	ビュッフェです。温かいものも冷たいものもあります。
+A	Great. Do we need to book a time?	いいですね。時間の予約は必要ですか？
+B	No, just turn up with your room number.	いいえ、部屋番号をお伝えいただくだけです。
+A	Perfect.	わかりました。
+S	
+A	Is it very busy around eight?	8時頃はかなり混みますか？
+B	It can be. Before seven thirty is quieter.	混むことがあります。7時半前なら空いていますよ。
+A	Good to know. We'll come early.	なるほど。早めに行きます。
+B	Enjoy your breakfast.	朝食をお楽しみください。
+T	🚖	タクシーを呼んでもらう	旅行	call a taxi, how long, meet you outside, to the airport, roughly
+S	
+A	Hi, could you call a taxi for me?	すみません、タクシーを呼んでもらえますか？
+B	Of course. Where are you going?	もちろんです。どちらまで？
+A	The airport, please.	空港までお願いします。
+B	And when do you need it?	いつ必要ですか？
+A	As soon as possible. My flight's at two.	できるだけ早く。2時のフライトなんです。
+S	
+B	I've booked one. It'll be here in about ten minutes.	手配しました。10分ほどで来ます。
+A	Thank you. How much will it cost, roughly?	ありがとう。だいたいいくらくらいですか？
+B	Around forty, depending on traffic.	渋滞次第ですが、40前後です。
+A	And how long to the airport?	空港までどのくらいかかりますか？
+B	Forty-five minutes at this time of day.	この時間帯なら45分です。
+S	
+B	The taxi's here. It's the white car out front.	タクシーが来ました。玄関前の白い車です。
+A	Great. Thanks so much for your help.	よかった。本当にありがとうございました。
+B	Safe flight. We hope to see you again.	良いフライトを。またのお越しをお待ちしています。
+A	I'd love to come back.	ぜひまた来たいです。
+T	🛫	飛行機が遅延・欠航した	旅行	delayed, cancelled, rebook, next available, compensation
+S	
+A	Excuse me, my flight's just been cancelled. What do I do?	すみません、私のフライトが欠航になりました。どうすればいいですか？
+B	I'm sorry about that. Which flight?	申し訳ありません。どの便ですか？
+A	The three fifteen to Manchester.	3時15分発のマンチェスター行きです。
+B	Right. Let me see what we can do.	わかりました。対応できることを確認します。
+A	I really need to be there tonight.	今夜中にどうしても着きたいんです。
+S	
+B	The next available flight is at seven twenty.	次に空いている便は7時20分です。
+A	Tonight? That's fine. Can I get on that?	今夜ですか？ それなら。乗れますか？
+B	Yes, I'll rebook you now. Same seat class.	はい、今お取り直しします。同じ座席クラスで。
+A	Thank you. Is there any compensation?	ありがとう。補償はありますか？
+B	You're entitled to a meal voucher. Here you go.	お食事券をお渡しできます。どうぞ。
+S	
+A	And if that one's delayed too?	もしその便も遅れたら？
+B	Then come back to this desk and we'll sort it out.	その時はこのカウンターにお戻りください。対応します。
+A	Okay. Thanks for being so quick about it.	わかりました。迅速な対応ありがとう。
+B	Not at all. Sorry again for the trouble.	とんでもない。ご迷惑をおかけして申し訳ありません。
+T	⚖️	手荷物の重量オーバーを指摘された	旅行	over the limit, excess baggage, move some things, repack, fee
+S	
+B	I'm afraid your bag is three kilos over the limit.	申し訳ありません、お荷物が3キロ超過しています。
+A	Oh no. What are my options?	そんな。どうすればいいですか？
+B	You can pay the excess fee, or move some things to your hand luggage.	超過料金をお支払いいただくか、手荷物に移していただくか。
+A	How much is the fee?	料金はいくらですか？
+B	Fifteen per kilo, so forty-five.	1キロ15ですので、45です。
+S	
+A	I'd rather repack. Can I do that here?	詰め直したいです。ここでできますか？
+B	Of course. Just step to the side so I can help the next person.	もちろんです。次の方の対応をするので、少し横にずれてください。
+A	Sure. Give me two minutes.	わかりました。2分ください。
+B	Take your time.	ごゆっくり。
+S	
+A	Okay, I've moved my shoes and a jacket. Try now?	靴とジャケットを移しました。もう一度どうですか？
+B	Let's see... twenty-two point eight. You're under.	見てみましょう… 22.8キロ。範囲内です。
+A	Phew. Thank you.	ふう。ありがとう。
+B	Well done. Here's your boarding pass.	お疲れ様でした。搭乗券です。
+A	Thanks for being patient with me.	お待たせしてすみませんでした。
+T	🧣	機内で毛布や水をもらいたい	旅行	could I get, a blanket, some water, when you have a moment, headphones
+S	
+A	Excuse me, could I get a blanket, please?	すみません、毛布をいただけますか？
+B	Of course. Are you cold?	もちろんです。お寒いですか？
+A	A little. The air con's quite strong.	少し。空調がかなり強くて。
+B	I'll bring one right away.	すぐお持ちします。
+A	Thank you.	ありがとうございます。
+S	
+A	And could I have some water when you have a moment?	それと、お手すきの時にお水をいただけますか？
+B	Sure. Still or sparkling?	はい。ガスなしとガス入り、どちらに？
+A	Still, please. No ice.	ガスなしで。氷は要りません。
+B	Anything else? We have juice and tea too.	他には？ ジュースやお茶もありますよ。
+A	Just the water for now, thanks.	今は水だけで大丈夫です、ありがとう。
+S	
+A	Sorry, one more thing. Do you have headphones?	すみません、もう1つ。ヘッドホンはありますか？
+B	We do. Here you go.	ございます。どうぞ。
+A	Perfect. That's everything, I promise.	完璧です。これで本当に全部です。
+B	No trouble at all. Enjoy the flight.	全く問題ありませんよ。良いフライトを。
 """#
 }
