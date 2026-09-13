@@ -2182,21 +2182,33 @@ struct TopicTalkView: View {
 
     @State private var selected: TopicConversation? = nil
     @State private var query: String = ""
+    /// Category chip currently chosen; nil = すべて.
+    @AppStorage("topicTalk.category") private var chosenCategory: String = ""
 
     private var topics: [TopicConversation] { TopicSeed.topics }
 
+    /// All categories in the order they first appear in the seed, so the
+    /// chips read in the order the topics were authored, not alphabetically.
+    private var allCategories: [String] {
+        var seen: [String] = []
+        for t in topics where !seen.contains(t.category) {
+            seen.append(t.category)
+        }
+        return seen
+    }
+
     private var filtered: [TopicConversation] {
         let q = query.trimmingCharacters(in: .whitespaces).lowercased()
-        guard !q.isEmpty else { return topics }
-        return topics.filter {
-            $0.title.lowercased().contains(q)
-                || $0.category.lowercased().contains(q)
-                || $0.keys.contains { $0.lowercased().contains(q) }
+        return topics.filter { t in
+            if !chosenCategory.isEmpty, t.category != chosenCategory { return false }
+            guard !q.isEmpty else { return true }
+            return t.title.lowercased().contains(q)
+                || t.category.lowercased().contains(q)
+                || t.keys.contains { $0.lowercased().contains(q) }
         }
     }
 
-    /// Categories in the order they first appear in the seed, so the list
-    /// reads in the order the topics were authored rather than alphabetically.
+    /// Categories present in the filtered list, in seed order.
     private var categories: [String] {
         var seen: [String] = []
         for t in filtered where !seen.contains(t.category) {
@@ -2208,6 +2220,7 @@ struct TopicTalkView: View {
     var body: some View {
         VStack(spacing: 0) {
             searchField
+            categoryBar
             if filtered.isEmpty {
                 Spacer()
                 Text("該当するトピックがありません")
@@ -2266,6 +2279,45 @@ struct TopicTalkView: View {
         .background(Capsule().fill(Color(.secondarySystemGroupedBackground)))
         .padding(.horizontal, 16)
         .padding(.bottom, 10)
+    }
+
+    /// Horizontal chips: すべて plus one per category. With hundreds of
+    /// topics this is the main way in; the grouped list underneath is for
+    /// browsing within a category.
+    private var categoryBar: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 6) {
+                categoryChip("すべて", count: topics.count, selected: chosenCategory.isEmpty) {
+                    chosenCategory = ""
+                }
+                ForEach(allCategories, id: \.self) { cat in
+                    let n = topics.filter { $0.category == cat }.count
+                    categoryChip(cat, count: n, selected: chosenCategory == cat) {
+                        chosenCategory = (chosenCategory == cat) ? "" : cat
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+        .padding(.bottom, 10)
+    }
+
+    private func categoryChip(_ title: String, count: Int, selected: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 4) {
+                Text(title)
+                    .font(.system(size: 13, weight: .semibold))
+                Text("\(count)")
+                    .font(.system(size: 11, weight: .medium))
+                    .opacity(0.7)
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 7)
+            .background(Capsule().fill(selected ? Color.indigo : Color(.secondarySystemGroupedBackground)))
+            .foregroundStyle(selected ? Color.white : Color.primary)
+            .contentShape(Capsule())
+        }
+        .buttonStyle(.plain)
     }
 
     private func categoryHeader(_ cat: String) -> some View {
