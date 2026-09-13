@@ -44379,5 +44379,438 @@ S
 A	Thanks. I'd have turned up in yellow and trainers.	ありがとう。黄色とスニーカーで行くところだった。
 B	And his mother would never have forgiven you.	それで彼のお母さんに一生許してもらえなくなる。
 A	Dark shirt, boots, no tie. Got it.	濃いシャツ、ブーツ、ネクタイなし。了解。
+T	👕	服のサイズ感や着心地について話す	雑談	how does it fit, a bit tight, runs small, comfortable, I'd size up
+S	
+A	How does the jacket fit?	そのジャケット、サイズはどう？
+B	A bit tight across the shoulders. Otherwise good.	肩がちょっときつい。それ以外はいい。
+A	That brand runs small. I'd size up.	そのブランドは小さめなんだ。ワンサイズ上にしたほうがいい。
+B	Really? I got my usual.	本当？ いつものサイズを買ったんだけど。
+A	Their usual is everyone else's small. I learnt the hard way.	そこの「いつも」は他のブランドのSサイズ。痛い思いをして学んだ。
+B	Should I exchange it?	交換したほうがいい？
+A	If you can't lift your arms, yes.	腕が上がらないなら、うん。
+B	...I can't lift my arms.	…腕が上がらない。
+S	
+B	What about these jeans? Comfortable?	このジーンズは？ 履き心地は？
+A	Very. They stretch. I forget I'm wearing them.	すごく。伸びるから。履いてることを忘れる。
+B	That's the dream.	それが理想だね。
+A	It took me years to find them. Now I've got three pairs.	見つけるのに何年もかかった。今は3本持ってる。
+B	Same ones?	同じやつ？
+A	Same ones. Different colours. Why fix what works?	同じやつ。色違い。うまくいってるものを変える理由がない。
+S	
+B	Okay. Exchange the jacket, buy your jeans.	わかった。ジャケットを交換して、あなたのジーンズを買う。
+A	That's the whole plan. Comfort wins.	それが計画の全部。快適さの勝ち。
+T	👃	部屋やトイレの臭いが気になると伝える	住まい	there's a bit of a smell, can you smell that, where's it coming from, open a window, the bins
+S	
+A	Can you smell that?	あの匂い、わかる？
+B	Smell what?	何の匂い？
+A	There's a bit of a smell. Sort of... damp. Or old.	ちょっとした匂いがする。なんか… 湿っぽい。それか古い感じ。
+B	Hmm. Now you say it, yes. Where's it coming from?	うーん。言われてみれば、そうだね。どこから？
+A	Bathroom, I think. Or the bins.	お風呂場だと思う。それかゴミ箱。
+B	The bins went out yesterday.	ゴミは昨日出したよ。
+A	Bathroom, then. Let me look.	じゃあお風呂場。見てみる。
+S	
+A	Found it. There's water under the sink. The pipe's leaking.	見つけた。シンクの下に水がある。パイプから漏れてる。
+B	How long has that been there?	いつからそうなってた？
+A	Long enough to smell. A week, maybe.	匂いがするくらい長く。1週間くらいかな。
+B	That explains the towels never drying.	タオルが乾かなかったのはそれか。
+A	I'll call the landlord. And open every window.	大家に電話する。あと全部の窓を開ける。
+B	I'll get the bleach.	漂白剤を持ってくる。
+S	
+A	Glad I said something. I nearly just lit a candle.	言ってよかった。キャンドルをつけて済ませるところだった。
+B	A candle on top of a leak. Very effective.	水漏れの上にキャンドル。すごく効果的だね。
+A	I know. That's why I didn't.	わかってる。だからやらなかった。
+T	🍛	食べ物の匂いが強いと話す	日常	it's a strong smell, the whole office, I can smell it from here, no offence, it smells amazing though
+S	
+A	Whoa. What's that? The whole office smells of it.	うわ。何それ？ オフィス全体がその匂い。
+B	Sorry. Fish curry. Leftovers from last night.	ごめん。魚のカレー。昨夜の残り。
+A	I can smell it from the lift.	エレベーターからでも匂ったよ。
+B	Is it that bad?	そんなにひどい？
+A	No offence, but yes. It's a strong smell.	悪気はないけど、うん。強い匂い。
+B	It smells amazing, though.	でもいい匂いでしょ。
+A	It does. That's the problem. Everyone's hungry and annoyed.	そう。それが問題。みんなお腹が空いて、イラついてる。
+S	
+B	Should I eat it outside?	外で食べたほうがいい？
+A	Might be kinder. Or the kitchen, with the door shut.	そのほうが優しいかも。またはキッチンで、ドアを閉めて。
+B	I didn't think about it. I just microwaved it.	考えてなかった。ただレンジで温めただけ。
+A	The microwave made it worse. It's in the curtains now.	レンジが悪化させたんだ。もうカーテンに染み込んでる。
+B	I'll go and sit on the terrace.	テラスに行って座るよ。
+A	And bring me some. Seriously. It smells too good.	それと私にも少しちょうだい。本気で。良すぎる匂いだから。
+S	
+B	Deal. Terrace, two forks.	決まり。テラスで、フォーク2本。
+A	Don't tell the others.	他の人には言わないでね。
+T	🌸	香水や柔軟剤の香りについて話す	雑談	what's that scent, you smell nice, I can't wear perfume, too strong, subtle
+S	
+A	You smell nice. What is that?	いい匂いだね。それ何？
+B	Oh, thanks. It's just my fabric softener. Nothing fancy.	ありがとう。ただの柔軟剤だよ。特別なものじゃない。
+A	Really? It smells like a proper perfume.	本当？ ちゃんとした香水みたいな匂いなのに。
+B	It's the lavender one. I've used it for years.	ラベンダーのやつ。何年も使ってる。
+A	I've stopped wearing perfume. I always pick something too strong.	香水はやめたんだ。いつも強すぎるのを選んじゃって。
+B	Everyone does at first. You want subtle.	最初はみんなそうだよ。控えめなのがいいんだ。
+A	How do you find subtle?	控えめなのって、どうやって見つけるの？
+B	Spray it, walk away, come back in an hour. If you can still smell it, too strong.	吹きかけて、離れて、1時間後に戻る。まだ匂うなら、強すぎ。
+S	
+B	What about you? Any scent?	そっちは？ 何かつけてる？
+A	Just soap. My colleague wears something that fills the whole room. I can't compete.	石鹸だけ。同僚が部屋中に広がる何かをつけてる。太刀打ちできない。
+B	Ha. The one who arrives before she does?	はは。本人より先に到着する匂いの人？
+A	That's her. You know the type.	それ。そういうタイプ、知ってるでしょ。
+B	Every office has one.	どのオフィスにも1人はいるよね。
+S	
+A	Maybe I'll try the lavender softener. Low risk.	ラベンダーの柔軟剤を試してみようかな。リスクは低い。
+B	Very low risk. And your towels will smell like a garden.	すごく低い。それにタオルが庭みたいな匂いになる。
+T	💼	就職活動の進み具合を話す	仕事	how's the job hunt, I've applied for, no reply, an interview next week, keep going
+S	
+A	How's the job hunt going?	就職活動はどう？
+B	Slowly. I've applied for twenty-two jobs.	ゆっくり。22社に応募した。
+A	And?	それで？
+B	Three interviews. Two rejections. One I'm still waiting on.	面接3回。不採用2回。1つはまだ返事待ち。
+A	Twenty-two applications, three interviews. That's actually not bad.	22社応募して、面接3回。それ、実は悪くないよ。
+B	It doesn't feel good.	良いとは感じないけど。
+A	It never does. But most people get one interview per twenty.	そう感じないよね。でもほとんどの人は20社に1回の面接だよ。
+B	Really?	本当？
+A	Really. You're above average.	本当。平均以上だよ。
+S	
+B	I've got another one next week. A small company. I actually like the sound of it.	来週もう1つある。小さい会社。実は、いい感じに聞こえるんだ。
+A	What do they do?	何をしてる会社？
+B	Sustainable packaging. It's the first one I've been excited about.	環境に優しい包装。初めてワクワクした会社。
+A	Then that's the one. Prepare for that one properly.	じゃあそれだね。ちゃんと準備して。
+B	I'm nervous.	緊張してる。
+A	Good. Nervous means you care.	いいことだよ。緊張は、本気だってこと。
+S	
+B	What if I don't get it?	受からなかったら？
+A	Then you apply for twenty-three. Keep going. It only takes one yes.	じゃあ23社目に応募する。続けるんだ。イエスは1つあればいい。
+B	One yes.	イエス1つ。
+A	One yes. And you're closer than you think.	イエス1つ。それに、思ってるより近づいてる。
+T	📝	履歴書や職務経歴書の書き方を相談する	仕事	could you look at my CV, too long, what should I leave out, lead with, tailor it
+S	
+A	Could you look at my CV? I'm not sure it's right.	履歴書を見てもらえる？ これでいいのか自信がなくて。
+B	Sure. Send it over... okay. First thing: it's too long.	いいよ。送って… なるほど。まず、長すぎる。
+A	It's three pages.	3ページなんだ。
+B	Two, maximum. Nobody reads page three.	最大2ページ。3ページ目は誰も読まない。
+A	What should I leave out?	何を削ればいい？
+B	The job from ten years ago. The summer job. The hobbies section.	10年前の仕事。夏のバイト。趣味の欄。
+A	I like the hobbies section.	趣味の欄は気に入ってるんだけど。
+B	Nobody cares that you like hiking. Unless the job is hiking.	ハイキングが好きなんて誰も気にしないよ。仕事がハイキングでない限り。
+S	
+B	Second thing: lead with results, not duties.	2つ目、業務内容じゃなくて成果から書いて。
+A	What's the difference?	何が違うの？
+B	"Managed a team" is a duty. "Cut costs by twenty percent" is a result.	「チームを管理した」は業務。「コストを20%削減した」は成果。
+A	I did cut costs. I just didn't write it that way.	コストは削減した。ただそう書かなかっただけ。
+B	Then write it that way. Numbers, wherever you can.	じゃあそう書いて。できる限り数字で。
+A	And should I change it for each job?	それと、応募先ごとに変えるべき？
+B	Tailor it. Every time. Same bones, different emphasis.	合わせて。毎回。骨組みは同じで、強調するところを変える。
+S	
+A	This is a lot of work.	大変な作業だね。
+B	It's an afternoon. And it's the difference between a reply and silence.	午後1回分。それが返事と沈黙の違いになる。
+A	Okay. Two pages, results, tailored. I'll send you the new one.	わかった。2ページ、成果、応募先に合わせて。新しいのを送るよ。
+T	⏳	面接の結果を待っていると話す	仕事	still waiting to hear, they said by Friday, I keep checking my email, trying not to think about it, either way
+S	
+A	Any news from the interview?	面接から連絡はあった？
+B	Nothing yet. They said by Friday.	まだ。金曜までにって言われた。
+A	It's Wednesday.	今日は水曜だよ。
+B	I know. I keep checking my email. Every ten minutes.	わかってる。メールをチェックし続けてる。10分おきに。
+A	That's not helping.	それは役に立たないよ。
+B	I know it's not. I can't stop.	わかってる。止められないんだ。
+A	How did it go, honestly?	正直、面接はどうだった？
+B	Good, I think. They laughed at my jokes. That's a sign, right?	良かったと思う。ジョークで笑ってくれた。それって兆候だよね？
+A	It's a sign they're polite. But good.	礼儀正しい人たちだっていう兆候だね。でも良いことだよ。
+S	
+A	What are you doing to distract yourself?	気を紛らわすために何してる？
+B	Nothing. That's the problem. I'm just... waiting.	何も。それが問題。ただ… 待ってる。
+A	Come to the gym with me tonight. You can't check email on a treadmill.	今夜、一緒にジムに来なよ。ランニングマシンではメールをチェックできないから。
+B	I could, actually.	実はできるよ。
+A	You could. But you'd fall off.	できる。でも転げ落ちる。
+B	Fair. Okay. Gym.	たしかに。わかった。ジム。
+S	
+A	Either way, you'll know by Friday. Then you can stop.	どっちにしても金曜にはわかる。それで終わり。
+B	Either way. Yes. Two more days.	どっちにしても。うん。あと2日。
+A	And if it's a no, we go for a drink and apply for the next one.	ノーだったら、飲みに行って次に応募する。
+B	And if it's a yes?	イエスだったら？
+A	We go for a drink anyway.	どっちにしても飲みに行く。
+T	🎉	内定をもらったと報告する	仕事	I got the job, they offered me, I start on, I can't believe it, we're celebrating
+S	
+A	I got it. I got the job!	決まった。仕事が決まった！
+B	No way! The packaging one?	嘘でしょ！ 包装の会社？
+A	The packaging one. They called an hour ago. I've been shaking since.	包装の会社。1時間前に電話が来た。それからずっと震えてる。
+B	Kohei! That's amazing! Tell me everything.	航平！ すごい！ 全部聞かせて。
+A	They offered me the role, the salary I asked for, and I start on the first.	オファーをもらって、希望した給料で、1日から始まる。
+B	The salary you asked for?	希望した給料で？
+A	The full amount. I nearly dropped the phone.	満額。スマホを落としそうになった。
+S	
+B	What did they say?	何て言われたの？
+A	That I was the only one who asked good questions. Not just answered them.	質問に答えるだけじゃなくて、いい質問をしたのは私だけだったって。
+B	See? I told you. The questions matter.	ほらね。言ったでしょ。質問が大事だって。
+A	You told me. I didn't believe you.	言ってたね。信じてなかったけど。
+B	And now?	今は？
+A	Now I'll believe everything you say. For a week.	今はあなたの言うことを全部信じる。1週間だけ。
+B	I'll take it.	それでいいよ。
+S	
+B	We're celebrating. Tonight. Proper dinner.	お祝いしよう。今夜。ちゃんとしたディナー。
+A	I can't afford proper dinner till the first paycheck.	初任給までちゃんとしたディナーは無理。
+B	My treat. You can get the next one. With your new salary.	私のおごり。次はあなたが出して。新しい給料で。
+A	Deal. I still can't believe it.	決まり。まだ信じられない。
+B	Believe it. You earned it.	信じて。あなたが勝ち取ったんだから。
+T	🎯	希望の業界や職種について話す	仕事	what field do you want to work in, I'd love to get into, it's competitive, transferable skills, a foot in the door
+S	
+A	What field do you actually want to work in?	本当はどの業界で働きたい？
+B	Publishing. I've wanted it since I was a kid.	出版。子どもの頃からずっと。
+A	That's competitive.	競争が激しいね。
+B	Very. Everyone with an English degree wants it.	かなり。英文学の学位を持ってる人はみんなそこを目指す。
+A	What have you done so far?	これまで何をしてきた？
+B	Two internships. Unpaid. And a lot of rejections.	インターン2回。無給で。あと大量の不採用。
+A	Unpaid internships. That's rough.	無給インターン。それはきついね。
+B	It's how the industry works. It shouldn't be. But it is.	業界がそういう仕組みなんだ。そうあるべきじゃないけど、現実はそう。
+S	
+A	Have you thought about coming in sideways? Marketing for a publisher, then move across?	横から入るのは考えた？ 出版社のマーケティングから、それで移る。
+B	I've thought about it. It feels like giving up.	考えたことはある。諦めてるみたいな気がして。
+A	It's not giving up. It's a foot in the door.	諦めじゃないよ。足がかりだ。
+B	My skills are transferable, I suppose. Writing, editing.	スキルは応用できるとは思う。文章を書くこと、編集すること。
+A	Exactly. Get inside. Then everyone knows your name when the editing job opens.	そう。中に入る。そうすれば、編集の仕事が空いた時、みんなが名前を知ってる。
+B	That's actually smart.	それは実は賢いね。
+A	People do it all the time. Front door's locked, try the side.	みんなやってるよ。正面のドアが閉まってるなら、横から。
+S	
+B	Okay. I'll look at marketing roles. At publishers only.	わかった。マーケティングの求人を見てみる。出版社限定で。
+A	And keep the editing dream. Just take the long way.	それと編集の夢は持ち続けて。遠回りするだけ。
+B	The long way. Fine. As long as it gets there.	遠回り。わかった。辿り着けるなら。
+T	🔬	研究テーマや専攻について話す	学び	what's your research on, I'm studying, in simple terms, why does it matter, that's fascinating
+S	
+A	What's your research on? In simple terms.	研究テーマは何？ わかりやすく言うと。
+B	Sleep in shift workers. Nurses, mostly.	交代勤務者の睡眠。主に看護師の。
+A	What about it?	どういう研究？
+B	How it affects their decisions. Whether tired nurses make more mistakes.	それが判断にどう影響するか。疲れた看護師はミスが増えるのか。
+A	And do they?	それで、増えるの？
+B	Yes. Predictably. But nobody's measured exactly how much until now.	うん。予想通り。でも正確にどのくらいかは、これまで誰も測ってなかった。
+A	Why does it matter?	なぜそれが重要？
+B	Because if we know the number, hospitals can change the rotas. Fewer mistakes, fewer harmed patients.	数字がわかれば、病院はシフトを変えられる。ミスが減って、被害を受ける患者が減る。
+S	
+A	That's fascinating. How do you measure it?	興味深いね。どうやって測るの？
+B	Sleep trackers, then tests at the end of each shift. Reaction time, memory.	睡眠トラッカーと、各シフト終わりのテスト。反応時間、記憶力。
+A	How long have you been on it?	どのくらい続けてる？
+B	Two years. One more to go.	2年。あと1年。
+A	And then?	その後は？
+B	Then I write it up and hope someone reads it.	それをまとめて、誰かが読んでくれることを祈る。
+A	I'd read it.	私なら読むよ。
+B	You'd be the first person outside my department.	うちの学部以外で最初の人になるね。
+S	
+A	Does it change how you sleep?	自分の睡眠には影響してる？
+B	Completely. I go to bed at ten now. Every night. I've seen the data.	完全に。今は毎晩10時に寝てる。データを見たから。
+A	Research with a personal benefit.	自分にも役立つ研究だね。
+T	📄	論文や発表の準備について話す	学び	I've got a deadline, still writing, the presentation's on, practising, nearly there
+S	
+A	How's the paper coming along?	論文の進み具合は？
+B	Slowly. I've got a deadline on Friday and I'm still writing the conclusion.	ゆっくり。金曜が締め切りで、まだ結論を書いてる。
+A	How long is it?	長さは？
+B	Eight thousand words. Seven and a half done.	8000語。7500まで書けた。
+A	So you're nearly there.	じゃあもうすぐだね。
+B	The last five hundred are the hardest. They have to say something.	最後の500語が一番難しい。何かを言わないといけないから。
+A	What does the conclusion need to say?	結論には何を書く必要があるの？
+B	Why anyone should care. In plain language. After eight thousand words of jargon.	なぜ誰かが気にすべきか。平易な言葉で。8000語の専門用語の後に。
+S	
+A	And the presentation?	発表は？
+B	Next Wednesday. I'm practising in the mirror. Badly.	来週の水曜。鏡の前で練習してる。下手だけど。
+A	Want to practise on me?	私で練習する？
+B	Would you? I need someone who'll tell me when it's boring.	いいの？ 退屈な時にそう言ってくれる人が必要なんだ。
+A	I'll tell you. Loudly.	言うよ。大声で。
+B	Perfect. Tomorrow evening?	完璧。明日の夜？
+A	Tomorrow. Bring the slides. I'll bring snacks and honesty.	明日。スライドを持ってきて。私はお菓子と正直さを持ってくる。
+S	
+B	Thank you. I've been so deep in this I can't tell what's clear anymore.	ありがとう。深く入り込みすぎて、何がわかりやすいのかわからなくなってた。
+A	That's what outsiders are for. Fresh eyes, no mercy.	そのために部外者がいるんだよ。新鮮な目で、容赦なく。
+T	🎓	大学や大学院への進学を相談する	学び	I'm thinking about going back, is it worth it, the cost, what would you study, at my age
+S	
+A	I'm thinking about going back to university. A master's.	大学に戻ろうかと考えてるんだ。修士課程。
+B	Really? In what?	本当？ 何を？
+A	Environmental policy. It's what I care about. It's not what I do.	環境政策。大事だと思ってること。今の仕事とは違うけど。
+B	Is it worth it? The cost, the time?	価値はある？ 費用と時間に見合う？
+A	That's what I can't work out. It's a year, and it's fifteen thousand.	それがわからないんだ。1年で、15000かかる。
+B	That's a lot.	それは大きいね。
+A	It is. But I've been in the same job for six years, and it's going nowhere.	そう。でも同じ仕事を6年やって、どこにも進んでない。
+S	
+B	What would it get you? Realistically.	それで何が得られる？ 現実的に。
+A	A door into a different field. Not a guarantee. A door.	別の分野への扉。保証じゃない。扉。
+B	And you'd walk through it?	それで、その扉を通る？
+A	I think so. I'm thirty-two. If not now, when?	そう思う。32歳。今じゃなければ、いつ？
+B	At my age, I'd think the same. It gets harder every year.	私の年齢なら、同じことを考えるよ。毎年難しくなる。
+A	So you'd do it?	じゃあ、やる？
+B	I'd do it. But part-time, if they offer it. Keep some income.	やる。でもパートタイムで、もしあれば。収入を少し残して。
+S	
+A	Part-time's two years, though.	パートタイムだと2年だけど。
+B	Two years with a salary beats one year with none.	給料のある2年は、給料のない1年より上だよ。
+A	That's true. Okay. I'll look at the part-time option.	たしかに。わかった。パートタイムの選択肢を調べてみる。
+B	And apply. Worst case, you don't get in, and you've lost an afternoon.	それと応募して。最悪、受からなくて、午後1回分を失うだけ。
+T	👩‍🏫	教授やゼミの話をする	学び	my supervisor, the seminar, she's tough but, office hours, I learnt more from
+S	
+A	How's your supervisor? You mentioned she's tough.	指導教授はどう？ 厳しいって言ってたよね。
+B	She is. She tore my first draft apart. Every page had red on it.	厳しいよ。最初の原稿はズタズタにされた。全ページに赤が入ってた。
+A	That sounds awful.	それはひどいね。
+B	It was, for a day. Then I realised she was right about everything.	1日はね。それから、彼女が全部正しかったって気づいた。
+A	So tough but fair.	厳しいけど公平なんだね。
+B	Tough but fair. I've learnt more from her in six months than in three years of lectures.	厳しいけど公平。6か月で、3年間の講義以上のことを学んだ。
+A	That's the kind you want.	そういう先生がいいよね。
+B	It is. I just didn't know it at the time.	そう。その時はわからなかったけど。
+S	
+A	And the seminar group?	ゼミのグループは？
+B	Eight of us. Tuesday afternoons. It's the best part of the week.	8人。火曜の午後。1週間で一番いい時間。
+A	Why?	どうして？
+B	Everyone's working on something different, and we argue about all of it. Properly argue.	みんな違うテーマに取り組んでて、全部について議論する。本気で。
+A	Does she join in?	先生も参加する？
+B	She sits at the back and says nothing for an hour. Then one question that changes everything.	後ろに座って1時間何も言わない。それから、すべてを変える質問を1つ。
+A	That's a skill.	それは技術だね。
+S	
+B	I'm going to office hours tomorrow. To ask about chapter three.	明日、オフィスアワーに行く。第3章について聞きに。
+A	Good luck. Bring a thick skin.	頑張って。打たれ強さを持っていって。
+B	I've grown one. Six months of red pen.	もう身についたよ。6か月の赤ペンで。
+T	💰	奨学金や学費について話す	学び	how are you paying for it, student loan, a scholarship, part-time job, worth the debt
+S	
+A	How are you paying for the master's? If you don't mind me asking.	修士の学費はどうしてる？ 聞いてもよければ。
+B	Half scholarship, half loan. And a weekend job.	半分は奨学金、半分はローン。それと週末のバイト。
+A	A scholarship? That's impressive.	奨学金？ すごいね。
+B	It's small. But it's something. I applied for eleven and got one.	少額だけど。何もないよりはいい。11個応募して、1つ取れた。
+A	Eleven!	11個！
+B	Most people don't apply for any. That's the secret. Just apply.	ほとんどの人は1つも応募しない。それが秘訣。とにかく応募する。
+A	And the loan?	ローンは？
+B	Ten thousand. I try not to think about it.	10000。考えないようにしてる。
+S	
+A	Is it worth the debt?	借金する価値はある？
+B	Ask me in five years. Right now, I think so.	5年後に聞いて。今のところは、そう思ってる。
+A	What's the weekend job?	週末のバイトは？
+B	A bookshop. It's perfect, actually. Quiet, and I read on breaks.	本屋。実は完璧なんだ。静かで、休憩中に本が読める。
+A	That sounds better than most jobs.	ほとんどの仕事より良さそうだね。
+B	It pays badly. But I'd do it for free, honestly.	給料は安い。でも正直、無給でもやるよ。
+S	
+A	So scholarship, loan, bookshop. You've made it work.	奨学金、ローン、本屋。何とかやってるんだね。
+B	Barely. But yes. If you want it enough, you find a way.	ぎりぎり。でもうん。本当に欲しければ、方法は見つかる。
+A	That's a good line for a scholarship essay.	奨学金の作文にいい一文だね。
+B	I used it. Got the scholarship.	使ったよ。それで奨学金を取った。
+T	🔋	内向的か外向的かを話す	雑談	introvert or extrovert, I recharge by, drains me, people assume, a bit of both
+S	
+A	Would you say you're an introvert or an extrovert?	自分は内向的だと思う？ 外向的？
+B	Introvert. Definitely. People assume I'm not because I talk a lot.	内向的。間違いなく。よく話すから、みんな違うと思ってるけど。
+A	You do talk a lot.	たしかによく話すね。
+B	At work, with friends, yes. Then I go home and don't speak for two days.	職場や友達とはね。それから家に帰って、2日間誰とも話さない。
+A	So being around people drains you.	じゃあ人といると消耗するんだね。
+B	Drains me completely. I recharge alone. Books, silence, a locked door.	完全に。一人で充電する。本、静寂、鍵をかけたドア。
+A	I'm the opposite. Alone too long and I go strange.	私は逆。一人が長すぎると変になる。
+B	Strange how?	どう変に？
+A	I start talking to the plants. Then I need a party.	植物に話しかけ始める。それでパーティーが必要になる。
+S	
+B	So you recharge by being around people.	じゃあ人といることで充電するんだね。
+A	Exactly. A busy room fills me up. It empties you.	そう。混んだ部屋が私を満たす。あなたは空になる。
+B	That's why you're always the last to leave.	だからいつも最後まで残ってるのか。
+A	And you're always the first.	そしてあなたはいつも最初に帰る。
+B	We're a good pair, though. You get me out, I get you to shut up.	でもいいコンビだよ。あなたは私を外に出して、私はあなたを黙らせる。
+A	A bit of both is probably healthiest.	両方少しずつが、たぶん一番健康的だね。
+S	
+B	Maybe. But right now, I need a locked door.	かもね。でも今は、鍵をかけたドアが必要。
+A	And I need a party.	私はパーティーが必要。
+B	Text me tomorrow. When I've recharged.	明日メッセージして。充電できたら。
+T	🐢	せっかちかのんびりかを話す	雑談	patient or impatient, I hate waiting, take your time, drives me mad, slow down
+S	
+A	Are you a patient person?	辛抱強いほう？
+B	Not at all. I hate waiting. For anything.	全然。待つのが嫌い。何でも。
+A	Like what?	例えば？
+B	Queues. Slow walkers. People who take ages to order.	列。歩くのが遅い人。注文に時間がかかる人。
+A	I'm the slow orderer.	私は注文が遅い人だよ。
+B	I know. It drives me mad. Lovingly.	知ってる。イライラする。愛情を込めて。
+A	I like to consider my options.	選択肢を検討したいんだ。
+B	There are four options. It's a coffee shop.	選択肢は4つ。コーヒーショップだよ。
+S	
+A	I think slow is better, honestly. You notice things.	正直、ゆっくりのほうがいいと思う。いろいろ気づけるから。
+B	What things?	何に気づくの？
+A	The weather. The person next to you. What you actually want.	天気。隣の人。本当に自分が何を望んでるか。
+B	I want coffee. Quickly.	コーヒーが欲しい。すぐに。
+A	And then you drink it in thirty seconds and don't taste it.	それで30秒で飲んで、味もわからない。
+B	...That's true. I don't taste it.	…たしかに。味わってない。
+A	Slow down. Once a day. Just for the coffee.	ゆっくりして。1日1回。コーヒーの時だけでも。
+S	
+B	Fine. One slow coffee a day. But you order faster.	わかった。1日1回のゆっくりコーヒー。でもあなたは早く注文して。
+A	Deal. I'll decide before I get to the counter.	決まり。カウンターに着く前に決めておく。
+B	Revolutionary.	革命的だね。
+T	😤	自分の短気なところを反省する	深い話	I lost my temper, I snapped, I'm working on it, count to ten, it's not who I want to be
+S	
+A	I lost my temper at work today. Properly.	今日、職場で本気でキレてしまった。
+B	What happened?	何があったの？
+A	Someone changed my file without asking. I found out in the meeting. I snapped.	誰かが断りなく私のファイルを変えたんだ。会議中に気づいて。爆発した。
+B	Snapped how?	どんなふうに？
+A	Raised my voice. In front of everyone. Said something I regret.	声を荒げた。みんなの前で。後悔することを言った。
+B	Were you right to be annoyed?	イラつくのは当然だった？
+A	Yes. But not like that. It's not who I want to be.	うん。でもあんなふうにじゃない。あんな自分になりたくない。
+S	
+B	Does it happen a lot?	よくあるの？
+A	More than I'd like. I've always had a short fuse.	思ってる以上に。昔から短気なんだ。
+B	What do you do about it?	それに対して何かしてる？
+A	I'm working on it. Count to ten. Walk away. Sometimes it works.	取り組んでる。10まで数える。その場を離れる。効く時もある。
+B	And today?	今日は？
+A	Today I got to three.	今日は3まで数えた。
+B	Three's better than zero.	3はゼロよりましだよ。
+A	I apologised after. To everyone. It felt awful.	後で謝った。全員に。最悪の気分だった。
+S	
+B	Apologising's the important bit. Most people don't.	謝るのが大事なんだよ。ほとんどの人はしないから。
+A	I know. I just wish I didn't have to.	わかってる。ただ、謝る必要がなければいいのにって思う。
+B	You'll get there. Ten's a long way from three. But it's a road.	そのうちできるよ。3から10は遠い。でも道はある。
+T	💛	相手の性格の良いところを伝える	人間関係	what I really like about you, you're the kind of person who, I've always admired, don't underestimate, it's rare
+S	
+A	Can I tell you something about yourself? Something good.	あなた自身のこと、話してもいい？ いいことだよ。
+B	Go on. I'm nervous.	どうぞ。緊張する。
+A	You're the kind of person who notices when someone's struggling. Before they say anything.	誰かが苦しんでる時、何も言う前に気づく人だよね。
+B	Am I?	そう？
+A	Last month. Priya. You just showed up with soup. Nobody asked you to.	先月。プリヤの時。ただスープを持って現れた。誰も頼んでないのに。
+B	She looked tired.	疲れてるように見えたから。
+A	Everyone looked tired. You were the one who did something.	みんな疲れて見えた。行動したのはあなただけ。
+S	
+B	I don't think about it. It's just what you do.	意識してないよ。当たり前のことだから。
+A	It's not what everyone does. It's rare. Don't underestimate it.	みんながやることじゃない。珍しいことだよ。過小評価しないで。
+B	You're making me embarrassed.	恥ずかしくなってきた。
+A	Good. You should know. I've always admired it.	それでいい。知っておくべきだよ。ずっと尊敬してた。
+B	Thank you. That means a lot, coming from you.	ありがとう。あなたに言われるとうれしい。
+S	
+B	Now I feel like I should say something about you.	今度は私があなたについて何か言わないと。
+A	You don't have to.	しなくていいよ。
+B	You're the one who says the thing everyone's thinking. Out loud. That's rare too.	あなたは、みんなが思ってることを声に出して言う人。それも珍しい。
+A	Sometimes I shouldn't.	時々、言うべきじゃない時もあるけど。
+B	Mostly you should. Someone has to.	だいたいは言うべきだよ。誰かが言わないと。
+T	👀	第一印象と実際の性格のギャップを話す	雑談	I thought you'd be, turned out, people always think, the opposite, gets me every time
+S	
+A	Honestly, when I first met you, I thought you'd be intimidating.	正直、初めて会った時、あなたは怖い人だと思った。
+B	Intimidating? Me?	怖い？ 私が？
+A	You were in a suit. You didn't smile. You asked one question and it was very sharp.	スーツを着てて。笑わなくて。質問を1つしたんだけど、すごく鋭かった。
+B	That was my interview face. I was terrified.	あれは面接用の顔。怖くてたまらなかったんだ。
+A	Terrified? You looked like you owned the building.	怖かった？ ビルのオーナーみたいに見えたよ。
+B	Inside, I was planning my escape route.	心の中では、逃げ道を計画してた。
+A	Turned out you're the softest person I know.	結局、私が知ってる中で一番柔らかい人だった。
+B	People always think that. Then they see me cry at dog videos.	みんなそう思うんだ。それで犬の動画で泣いてるのを見る。
+S	
+B	What about you? I thought you'd be loud.	そっちは？ うるさい人だと思った。
+A	Loud?	うるさい？
+B	You walked in laughing. Big laugh. I thought, "here's the office clown".	笑いながら入ってきた。大きな笑い声で。「オフィスのピエロが来た」と思った。
+A	And?	それで？
+B	You're the opposite. You listen more than you talk. The laugh's just the doorbell.	正反対だった。話すより聞くほうが多い。笑い声はただの呼び鈴。
+A	The doorbell. I like that.	呼び鈴。それ気に入った。
+S	
+A	First impressions get me every time. I'm always wrong.	第一印象にはいつもやられる。いつも間違える。
+B	Everyone is. That's why you need a second one.	みんなそう。だから第二印象が必要なんだよ。
+A	And a third. Just to be sure.	それと第三も。念のため。
+T	👨‍👩‍👧	親と意見が合わないと話す	深い話	my parents don't understand, we see things differently, a different generation, I love them but, agree to disagree
+S	
+A	Do you ever argue with your parents? About big stuff?	両親と喧嘩することある？ 大きなことで。
+B	All the time. Mostly about my job.	しょっちゅう。主に仕事のことで。
+A	What don't they like?	何が気に入らないの？
+B	That it's not a "real" job. Design, to my dad, is drawing pictures.	「ちゃんとした」仕事じゃないって。父にとって、デザインは絵を描くこと。
+A	Even though you're doing well?	うまくいってるのに？
+B	Even though. He wanted a doctor or an engineer. He got a person who draws pictures.	それでも。医者かエンジニアを望んでた。手に入ったのは絵を描く人。
+A	That must be hard.	それはつらいね。
+B	It is. I love them. But we see things differently. Different generation, different world.	つらい。愛してるよ。でも見方が違う。世代が違えば、世界も違う。
+S	
+A	Have you tried explaining it?	説明しようとしたことは？
+B	Many times. He nods, then asks when I'll get a proper job.	何度も。頷いて、それからいつちゃんとした仕事に就くのかって聞いてくる。
+A	Ha. Mine's the same about moving abroad.	はは。うちは海外に引っ越したことで同じ。
+B	What does yours say?	そっちの親は何て？
+A	"When are you coming home?" Every phone call. For five years.	「いつ帰ってくるの？」電話のたびに。5年間。
+B	And what do you say?	それで何て答える？
+A	"I am home." Then we change the subject.	「ここが家だよ」。それから話題を変える。
+S	
+B	Agree to disagree, I suppose.	意見の違いを認め合う、ってことかな。
+A	With people you love, that's the only option.	愛する人とは、それが唯一の選択肢だよ。
+B	And keep calling anyway.	それでも電話し続ける。
+A	And keep calling anyway.	それでも電話し続ける。
 """#
 }
