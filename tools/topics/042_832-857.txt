@@ -1,0 +1,580 @@
+T|🔑|部屋に忘れ物をしたので取りに戻りたいと伝える|旅行|I've left something in the room, I've already checked out, could someone let me in, it's on the bedside table, found it
+S|
+A|Hi, I've just checked out, but I think I've left my charger in the room.|チェックアウトしたばかりなんですが、部屋に充電器を忘れたようで。
+B|Which room were you in?|何号室でしたか？
+A|412. It's probably on the bedside table.|412です。たぶんベッドサイドのテーブルの上です。
+B|Housekeeping might be in there already. Let me call them.|清掃がもう入っているかもしれません。電話してみます。
+A|Thank you. I'd rather not buy another one.|ありがとうございます。また買いたくないので。
+B|They say the room's not been touched yet. I can let you in.|まだ手をつけていないそうです。お部屋に入れます。
+A|Could someone come with me?|誰か一緒に来てもらえますか？
+B|I'll walk you up myself. Two minutes.|私がお連れします。2分です。
+S|
+A|Found it. Right where I said. Thank goodness.|ありました。言った通りの場所に。よかった。
+B|Anything else? Check the bathroom, the drawers.|他には？ 浴室と引き出しも確認してください。
+A|Good idea... no, nothing. That's everything.|そうですね… いえ、何もありません。以上です。
+B|You'd be surprised what people leave. We had a violin once.|忘れ物には驚かされますよ。以前バイオリンがありました。
+A|A violin!|バイオリン！
+B|They came back for it. Eventually. From another country.|取りに来ました。最終的に。別の国から。
+S|
+A|A charger's less dramatic.|充電器のほうがドラマチックじゃないですね。
+B|Much less. Safe travels. Check your pockets at the airport.|ずっとね。お気をつけて。空港でポケットを確認してください。
+
+T|☕|カフェでテイクアウトかイートインか聞かれた|食事|eat in or take away, sitting in, to go, is there a table free, I'll sit by the window
+S|
+B|Eat in or take away?|店内で？ お持ち帰り？
+A|Eat in, please. Is there a table free?|店内で。空いてる席はありますか？
+B|By the window, just there. I'll bring it over.|窓際に、あそこです。お持ちしますね。
+A|Perfect. A flat white and the almond croissant.|完璧です。フラットホワイトとアーモンドクロワッサン。
+B|Any name for the order?|お名前は？
+A|Kohei. K-O-H-E-I.|航平。K-O-H-E-Iです。
+B|Got it. Take a seat, it'll be five minutes.|わかりました。お座りください、5分ほどで。
+S|
+A|Actually, sorry — could I change that to take away? My friend just messaged.|あの、すみません、お持ち帰りに変えられますか？ 友達からメッセージが来て。
+B|No problem. I'll put it in a cup.|大丈夫です。カップに入れますね。
+A|And the croissant in a bag?|クロワッサンは袋に？
+B|In a bag. Anything else while you're here?|袋に。他にご注文は？
+A|Another flat white for my friend. Same size.|友達にもフラットホワイトを。同じサイズで。
+B|Two flat whites, one croissant, to go.|フラットホワイト2つ、クロワッサン1つ、お持ち帰りで。
+S|
+A|Thanks. Sorry for the change.|ありがとう。変更してすみません。
+B|Happens every day. Enjoy.|毎日あることですよ。どうぞ。
+
+T|🥤|ドリンクのサイズやホット・アイスを選ぶ|食事|what size, hot or iced, medium, extra shot, no ice
+S|
+B|What size would you like?|サイズはどうされますか？
+A|Medium, please. What's the difference between medium and large?|Mサイズで。MとLの違いは？
+B|Large is basically two mediums. It's a lot.|Lは基本的にMの2倍です。かなりの量ですよ。
+A|Medium's fine, then.|じゃあMで。
+B|Hot or iced?|ホット？ アイス？
+A|Iced. It's boiling out there.|アイスで。外は猛暑なので。
+B|Regular ice, or less?|氷は普通？ 少なめ？
+A|Less ice. More coffee.|氷少なめ。コーヒー多め。
+B|Smart.|賢いですね。
+S|
+B|Any extras? Syrup, extra shot?|追加は？ シロップ、エスプレッソ追加？
+A|Extra shot, please. Long day.|エスプレッソ追加で。長い一日なので。
+B|Milk?|ミルクは？
+A|Oat, if you have it.|オーツがあれば。
+B|We do. Medium iced latte, oat, extra shot, less ice.|あります。Mアイスラテ、オーツ、エスプレッソ追加、氷少なめ。
+A|That's exactly it. You're good.|まさにそれです。お上手ですね。
+B|Practice. That'll be four eighty.|練習の賜物です。4ドル80セントです。
+S|
+A|Here. Keep the change.|はい。お釣りは取っておいてください。
+B|Thank you. It'll be ready at the end of the counter.|ありがとうございます。カウンターの端でお渡しします。
+
+T|🍸|バーでカクテルの好み（甘め・強め）を伝える|食事|something not too sweet, on the stronger side, what would you suggest, surprise me, that's exactly right
+S|
+A|Hi. I'd like a cocktail, but nothing too sweet.|こんにちは。カクテルをお願いしたいんですが、甘すぎないもので。
+B|Okay. Do you like gin, whisky, rum?|わかりました。ジン、ウイスキー、ラムはお好きですか？
+A|Gin, mostly. And on the stronger side, if that's okay.|主にジン。それと、できれば強めで。
+B|A classic martini? Or something with a bit more going on?|クラシックなマティーニ？ それとももう少し複雑なもの？
+A|What would you suggest?|何がおすすめですか？
+B|Gin, lime, a little bitters. Sharp, dry, strong. Nothing sugary.|ジン、ライム、ビターズ少々。シャープで、ドライで、強い。甘さなし。
+A|That sounds perfect. Surprise me.|完璧です。お任せします。
+B|Give me two minutes.|2分ください。
+S|
+B|Here you go. Try it and tell me.|どうぞ。飲んで感想を聞かせてください。
+A|Oh. That's exactly right. Dry, but not harsh.|お。まさにそれです。ドライだけど、きつくない。
+B|The bitters round it off.|ビターズが角を取るんです。
+A|I'd never have ordered this myself.|自分では絶対に注文しなかったと思います。
+B|That's why you ask. Same again after?|だから聞くんですよ。次も同じで？
+A|Same again. And my friend wants something sweet. Very sweet.|同じで。それと友達は甘いのを。すごく甘いの。
+B|I've got something for that too.|それにも用意がありますよ。
+S|
+A|Thanks. You've made my night.|ありがとう。おかげでいい夜になりました。
+B|That's the job. Enjoy.|それが仕事ですから。楽しんでください。
+
+T|📮|郵便局で荷物を送る・切手を買う|手続き|I'd like to send this to, how much is postage, tracked or standard, how long will it take, a book of stamps
+S|
+A|Hi, I'd like to send this to Japan.|こんにちは、これを日本に送りたいのですが。
+B|Certainly. What's inside?|承知しました。中身は？
+A|A book and some chocolate. A gift.|本とチョコレート。プレゼントです。
+B|Any value over fifty?|50以上の価値がありますか？
+A|No, about thirty.|いえ、30くらいです。
+B|Tracked or standard?|追跡付き？ それとも通常？
+A|What's the difference in price?|料金の違いは？
+B|Standard is twelve. Tracked is eighteen. Tracked is safer.|通常は12。追跡付きは18。追跡付きのほうが安全です。
+A|Tracked, then. How long will it take?|じゃあ追跡付きで。どのくらいかかりますか？
+B|Seven to ten days.|7日から10日です。
+S|
+B|Fill in this customs form. Contents, value, your address.|この税関申告書に記入してください。中身、価値、あなたの住所。
+A|Done. Is that right?|できました。これで合ってますか？
+B|Perfect. And could I have a book of stamps as well?|完璧です。それと切手を1シートもらえますか？
+A|Sorry — that's my line. Could I have a book of stamps?|すみません、それは私のセリフです。切手を1シートいただけますか？
+B|Ha, yes. First class or second?|はは、はい。速達用？ 普通用？
+A|First. Twelve of them.|速達用で。12枚。
+B|Twelve first class. That's fourteen forty for the stamps, eighteen for the parcel.|速達用12枚。切手が14.4、小包が18です。
+S|
+A|Card, please. And thanks for your help.|カードで。ありがとうございました。
+B|Here's your tracking number. Keep it safe.|追跡番号です。なくさないように。
+
+T|📚|図書館で本を借りる・返却期限を聞く|日常|I'd like to borrow, when is it due back, can I renew it, how many can I take, library card
+S|
+A|Hi, I'd like to borrow these three.|こんにちは、この3冊を借りたいのですが。
+B|Do you have a library card?|図書館カードはお持ちですか？
+A|Yes, here.|はい、こちらです。
+B|Thank you. Three books, that's fine. You can take up to eight.|ありがとうございます。3冊、大丈夫です。8冊まで借りられますよ。
+A|When are they due back?|返却期限はいつですか？
+B|Three weeks. The twentieth.|3週間。20日です。
+A|Can I renew them if I'm not done?|読み終わらなかったら延長できますか？
+B|Twice, online or here. Unless someone else has reserved it.|2回まで、オンラインかここで。他の人が予約していなければ。
+S|
+A|And if I'm late?|遅れたら？
+B|Ten pence a day per book. Not a fortune, but it adds up.|1冊1日10ペンス。大金ではないですが、積み重なります。
+A|I'll set a reminder.|リマインダーをセットします。
+B|Good idea. Most fines are from people who forgot.|いい考えです。ほとんどの罰金は忘れた人のものですから。
+A|Is there a limit on how long I can keep renewing?|延長し続けられる期限はありますか？
+B|After two renewals, bring it back and borrow it again. Fresh start.|2回延長したら、一度返してまた借りてください。仕切り直しです。
+S|
+A|Thank you. This is a lovely library.|ありがとうございます。素敵な図書館ですね。
+B|It is. Quiet, warm, free. What more do you want?|そうですね。静かで、暖かくて、無料。他に何が要ります？
+A|Nothing. See you in three weeks.|何も。3週間後に。
+
+T|🎬|映画館でチケットと席を選ぶ|日常|two tickets for, which screening, where would you like to sit, middle rows, not too close to the front
+S|
+A|Two tickets for the seven thirty, please.|7時半の回を2枚お願いします。
+B|Which film?|どの映画ですか？
+A|The new one. The space one.|新作です。宇宙のやつ。
+B|Standard or premium seats?|通常席？ プレミアム席？
+A|Standard. Where would you like to sit? Sorry — that's you asking me.|通常で。どこに座りたい？ すみません、それはあなたが私に聞くセリフですね。
+B|Ha. Where would you like to sit?|はは。どちらにお座りになりますか？
+A|Middle rows. Not too close to the front. My neck can't take it.|真ん中の列。前すぎないところ。首がもたないので。
+B|Row H, middle. Those two?|H列、真ん中。この2席は？
+A|Perfect.|完璧です。
+S|
+B|Any snacks? Popcorn, drinks?|お菓子は？ ポップコーン、飲み物？
+A|A large popcorn to share, and two waters.|シェア用の大きいポップコーンと、水を2つ。
+B|Sweet or salty?|甘い？ しょっぱい？
+A|Half and half, if you can.|できれば半々で。
+B|We can. That's twenty-four altogether.|できます。合計で24です。
+A|Card.|カードで。
+B|Screen four. Doors open at seven fifteen.|4番スクリーン。7時15分に開場です。
+S|
+A|Thanks. Is it any good, the film?|ありがとう。この映画、面白いですか？
+B|I haven't seen it. But people come out quiet. That's usually a good sign.|まだ観てません。でも出てくる人が静かなんです。だいたいいい兆候です。
+A|Quiet's good. See you after.|静かはいいですね。終わったらまた。
+
+T|🎤|コンサートやライブに一緒に行こうと誘う|人間関係|they're playing, do you want to come, I've got a spare ticket, front row, it'll sell out
+S|
+A|Hey — that band I keep going on about? They're playing here in June.|ねえ、私がずっと話してるバンド、6月にここでライブがあるんだ。
+B|The one with the drummer?|ドラマーのやつ？
+A|The one with the drummer. Do you want to come?|ドラマーのやつ。一緒に来ない？
+B|I've never seen them live.|ライブは見たことないな。
+A|That's exactly why. I've got a spare ticket. My brother bailed.|だからこそ。チケットが1枚余ってるんだ。弟がドタキャンして。
+B|How much?|いくら？
+A|Don't worry about it. Just come. It'll sell out anyway.|気にしないで。ただ来て。どうせ売り切れるから。
+S|
+B|Where is it?|どこで？
+A|The old theatre. Small venue. You can see everything.|古い劇場。小さい会場。全部見える。
+B|Standing or seated?|立ち見？ 座席？
+A|Standing. Front, if we get there early.|立ち見。早く行けば前のほうに。
+B|How early?|どのくらい早く？
+A|Doors at seven. We queue at six.|開場7時。6時から並ぶ。
+B|An hour of queuing.|1時間並ぶのか。
+A|An hour of queuing for the best night of the year.|1年で最高の夜のための1時間。
+S|
+B|Okay. I'm in. Send me the songs so I'm not the one person not singing.|わかった。行く。歌えない1人にならないように、曲を送って。
+A|Playlist's already made. Check your phone.|プレイリストはもう作ってある。スマホを見て。
+B|You were confident.|自信あったんだね。
+A|I know you.|あなたを知ってるから。
+
+T|🖼|美術館や博物館で感想を話し合う|雑談|what did you think, that one stayed with me, I didn't get it, the way they used, worth the ticket
+S|
+A|What did you think of the exhibition?|展示、どうだった？
+B|Better than I expected. That one room with the blue paintings stayed with me.|予想以上。あの青い絵の部屋が心に残った。
+A|The big ones? I could have sat there for an hour.|大きいやつ？ 1時間座っていられたよ。
+B|I nearly did. The way they used the light — it changed depending on where you stood.|ほぼそうした。光の使い方が、立つ場所によって変わるんだ。
+A|I didn't notice that. I was looking at the frames.|気づかなかった。額縁を見てた。
+B|The frames?|額縁？
+A|They were beautiful. Hand-carved. Nobody looks at the frames.|綺麗だったよ。手彫りで。誰も額縁を見ないから。
+B|You're a strange person to go to a gallery with.|美術館に一緒に行くには変な人だね。
+A|You noticed the light. I noticed the wood. Between us, we saw everything.|あなたは光に気づいた。私は木に気づいた。2人合わせて、全部見た。
+S|
+B|What about the last room? The video thing?|最後の部屋は？ 映像のやつ。
+A|Honestly? I didn't get it.|正直？ わからなかった。
+B|Me neither. Twenty minutes of a man staring at a wall.|私も。壁を見つめる男の20分間。
+A|Maybe that's the point.|それが狙いなのかも。
+B|Maybe. Or maybe it's just a man and a wall.|かもね。それか、ただの男と壁。
+S|
+A|Still. Worth the ticket. For the blue room alone.|それでも。チケット代の価値はあった。青い部屋だけでも。
+B|And the frames.|それと額縁。
+A|And the frames. Coffee?|それと額縁。コーヒー？
+
+T|🧺|公園やビーチでピクニックの持ち物を相談する|日常|what should we bring, I'll do the food, a blanket, don't forget, someone has to carry it
+S|
+A|Right, picnic on Sunday. What should we bring?|よし、日曜のピクニック。何を持っていく？
+B|I'll do the food. Sandwiches, fruit, that sort of thing.|食べ物は私がやる。サンドイッチ、果物、そんな感じ。
+A|And I'll bring drinks. And the blanket.|私は飲み物。あとブランケット。
+B|A big blanket. Last time it was a towel.|大きいブランケットね。前回はタオルだった。
+A|That was an emergency.|あれは緊急事態だった。
+B|It was a beach towel with a dolphin on it.|イルカの絵のビーチタオルだったよ。
+A|A very comfortable dolphin.|すごく快適なイルカだった。
+S|
+A|What else? Plates, cups?|他には？ お皿、コップ？
+B|Paper ones. And a bag for the rubbish. Don't forget the bag.|紙のやつ。あとゴミ袋。袋を忘れないで。
+A|Sunscreen. Bug spray. A ball, maybe.|日焼け止め。虫よけ。ボールもあれば。
+B|A ball? We haven't kicked a ball in ten years.|ボール？ 10年間ボールを蹴ってないよ。
+A|Then it's time.|じゃあその時が来た。
+B|Fine. A ball. And someone has to carry all of this.|わかった。ボール。それで誰かが全部運ばないと。
+A|We'll take the car to the edge of the park.|公園の端まで車で行こう。
+S|
+B|Okay. Food, drinks, big blanket, ball, bag. Anything else?|よし。食べ物、飲み物、大きいブランケット、ボール、袋。他には？
+A|Good weather.|いい天気。
+B|I'll put in a request.|お願いしておくよ。
+
+T|⛺|キャンプや登山の準備について話す|日常|have you got a tent, layers, check the forecast, pack light, the essentials
+S|
+A|Camping this weekend. Have you got a tent?|今週末キャンプ。テントはある？
+B|A two-person one. It's small, but it doesn't leak.|2人用のやつ。小さいけど、雨漏りはしない。
+A|That's the important bit. What else do I need?|それが大事。他に何が必要？
+B|Sleeping bag, mat, torch, layers. It gets cold at night.|寝袋、マット、懐中電灯、重ね着。夜は冷えるから。
+A|How cold?|どのくらい？
+B|Colder than you think. Bring a hat. Even in summer.|思ってるより寒い。帽子を持ってきて。夏でも。
+A|A hat in summer.|夏に帽子。
+B|Trust me. Two in the morning, you'll thank me.|信じて。夜中の2時に、感謝するから。
+S|
+A|What about food?|食べ物は？
+B|Simple. Things you can cook in one pot. Pasta, beans.|シンプルに。鍋1つで作れるもの。パスタ、豆。
+A|And coffee?|コーヒーは？
+B|Obviously coffee. I've got a little stove.|当然コーヒー。小さいコンロがある。
+A|Should I pack light?|荷物は軽くしたほうがいい？
+B|Pack light, but pack the essentials. Everyone brings too many clothes and not enough socks.|軽く、でも必需品は持って。みんな服を持ちすぎて、靴下が足りなくなる。
+A|More socks, fewer shirts.|靴下を多めに、シャツは少なめに。
+B|Exactly. And check the forecast the night before. If it's storms, we move it.|そう。それと前日に天気予報を確認して。嵐なら延期する。
+S|
+A|This is a lot for one weekend.|1回の週末にしては多いね。
+B|First time's the hardest. After that, you just grab the bag.|最初が一番大変。その後はカバンを掴むだけ。
+
+T|🚲|自転車やバイクの貸し出しを頼む|旅行|I'd like to rent a bike, for the day, do I need a helmet, a lock, bring it back by
+S|
+A|Hi, I'd like to rent a bike for the day.|こんにちは、1日自転車を借りたいのですが。
+B|Sure. Regular or electric?|はい。普通のか電動か？
+A|Regular's fine. I'm just going along the coast.|普通で大丈夫です。海岸沿いを走るだけなので。
+B|That's twenty for the day. Do you need a helmet?|1日20です。ヘルメットは必要ですか？
+A|Yes, please. And a lock.|お願いします。あと鍵も。
+B|Both included. Here. Try it for size.|両方込みです。どうぞ。サイズを試してください。
+A|The seat's a bit low.|サドルが少し低いです。
+B|I'll raise it. There. Better?|上げますね。はい。どうですか？
+A|Perfect.|完璧です。
+S|
+A|When do I need to bring it back by?|いつまでに返せばいいですか？
+B|Six. We close at six thirty.|6時。6時半に閉めるので。
+A|And if I'm late?|遅れたら？
+B|Ten extra per hour. So don't be.|1時間ごとに10追加。だから遅れないで。
+A|Noted. And if it gets a puncture?|了解。パンクしたら？
+B|There's a repair kit under the seat. Or call us, we'll come and get you.|サドルの下に修理キットがあります。または電話してくれれば、迎えに行きます。
+A|That's reassuring.|安心しました。
+S|
+B|Coast road's beautiful today. Go left out of here, then follow the water.|今日の海岸道路は綺麗ですよ。ここを出て左、それから水辺に沿って。
+A|Left, then water. Thank you.|左、それから水辺。ありがとう。
+B|Enjoy it. Back by six!|楽しんで。6時までに！
+
+T|🚔|交通違反で警察に止められた|トラブル|do you know why I stopped you, licence and registration, I didn't realise, I'm sorry officer, a warning this time
+S|
+B|Good afternoon. Do you know why I stopped you?|こんにちは。なぜ止めたかわかりますか？
+A|No, officer. I'm not sure.|いえ。わかりません。
+B|You went through a red light back there.|そこの赤信号を通過しました。
+A|Did I? I honestly didn't realise. I thought it was amber.|そうでしたか？ 本当に気づきませんでした。黄色だと思って。
+B|It was red. Licence and registration, please.|赤でした。免許証と車検証をお願いします。
+A|Here. I'm sorry, officer. I'm not from here. I'm still getting used to the roads.|どうぞ。すみません。ここの者ではなくて。まだ道に慣れていません。
+B|Where are you from?|どちらから？
+A|Japan. I'm here for work. Just got the car last week.|日本です。仕事で来ています。先週車を手に入れたばかりで。
+S|
+B|Everything's in order. But red means stop. Everywhere.|書類は問題ありません。でも赤は止まれです。どこの国でも。
+A|I know. I'm sorry. It won't happen again.|わかっています。すみません。二度としません。
+B|I'll give you a warning this time. Not a fine.|今回は警告にします。罰金ではなく。
+A|Thank you. I really appreciate that.|ありがとうございます。本当に助かります。
+B|Next time it's a fine and points. Understood?|次は罰金と減点です。わかりましたか？
+A|Understood. Completely.|わかりました。完全に。
+S|
+B|Drive safely. And watch the lights. They change fast round here.|安全運転で。信号に気をつけて。この辺りは変わるのが速いので。
+A|I will. Thank you again.|そうします。改めてありがとうございます。
+
+T|💸|スピード違反や駐車違反の罰金について話す|雑談|I got a ticket, how much was it, points on my licence, contest it, lesson learnt
+S|
+A|I got a parking ticket yesterday. Sixty pounds.|昨日、駐車違反の切符を切られた。60ポンド。
+B|Sixty! Where?|60！ どこで？
+A|Outside the bakery. I was inside for four minutes.|パン屋の前。4分しか中にいなかったのに。
+B|Four minutes is enough for them.|4分あれば十分なんだよ、彼らには。
+A|The warden was already writing it when I came out.|出てきた時には、もう監視員が書いてた。
+B|Did you argue?|抗議した？
+A|A bit. He said the sign was clear. It was. I just didn't look.|少し。標識ははっきりしてたって。そうだった。見なかっただけ。
+B|Then it's on you. Sadly.|じゃああなたの責任だね。残念ながら。
+S|
+B|I got a speeding fine last year. Three points and a hundred pounds.|去年、スピード違反で罰金を取られた。減点3と100ポンド。
+A|How fast?|何キロ出してた？
+B|Thirty-six in a thirty. Six over. I didn't even feel fast.|30キロ制限で36。6キロオーバー。速いとも感じなかった。
+A|That's a camera, isn't it? Not a person.|それはカメラでしょ？ 人じゃなくて。
+B|A camera. No mercy. The letter came two weeks later.|カメラ。容赦なし。2週間後に手紙が来た。
+A|Did you contest it?|異議を申し立てた？
+B|No point. The photo was very clear. My face and everything.|意味がない。写真がすごく鮮明だった。顔まで全部。
+S|
+A|Lesson learnt, I suppose. For both of us.|教訓になったね。2人とも。
+B|Read the signs, watch the speed. Adult life is expensive.|標識を読んで、速度に注意。大人の人生はお金がかかる。
+A|Sixty pounds for a croissant. Most expensive breakfast ever.|クロワッサンに60ポンド。史上最も高い朝食だ。
+
+T|📱|スマホの画面が割れて修理に出す|テクノロジー|the screen's cracked, how much to fix it, how long will it take, is it worth fixing, still works
+S|
+A|Hi, I dropped my phone and the screen's cracked. How much to fix it?|スマホを落として、画面が割れました。修理はいくらですか？
+B|Let me see. Which model?|見せてください。どの機種ですか？
+A|This one. Two years old.|これです。2年前の。
+B|That's a hundred and twenty for the screen. Does everything else work?|画面で120です。他は全部動きますか？
+A|Yes. It still works. It's just ugly and I'm scared of glass.|はい。動きます。ただ見た目が悪くて、ガラスが怖いんです。
+B|Fair. A hundred and twenty, then. About an hour.|なるほど。じゃあ120です。1時間ほどで。
+A|An hour? That's quick.|1時間？ 早いですね。
+B|We do a lot of these. People drop phones all day.|数をこなしてますから。みんな一日中スマホを落とすので。
+S|
+A|Is it worth fixing, or should I just get a new one?|直す価値はありますか、それとも新しいのを買うべき？
+B|Two years old, everything working? Fix it. A new one's eight hundred.|2年物で、全部動く？ 直しましょう。新品は800です。
+A|That's a big difference.|大きな差ですね。
+B|And get a case this time. A proper one.|それと今度はケースを買ってください。ちゃんとしたやつ。
+A|I had a case. It was thin.|ケースはありました。薄いやつ。
+B|Thin cases are decoration. Get a thick one.|薄いケースは飾りです。厚いのを買って。
+S|
+A|Okay. Fix it, thick case. I'll come back in an hour.|わかりました。修理と、厚いケース。1時間後に戻ります。
+B|Leave it with me. It'll look new.|お預かりします。新品みたいになりますよ。
+
+T|📦|ネットショッピングで届いた商品が違った|トラブル|this isn't what I ordered, the wrong item, I ordered a, send the right one, return the wrong one
+S|
+A|Hi, I received my order today, but it's the wrong item.|今日注文品が届いたんですが、違う商品でした。
+B|I'm sorry about that. What did you order, and what arrived?|申し訳ありません。何を注文して、何が届きましたか？
+A|I ordered a blue jacket, medium. I got a green jumper, large.|青いジャケットのMを注文しました。届いたのは緑のセーターのL。
+B|That's quite a mix-up. Can I have the order number?|それはかなりの行き違いですね。注文番号をいただけますか？
+A|9-9-1-2-0-4.|9-9-1-2-0-4です。
+B|Thank you. Yes, I can see the mistake. Wrong label at the warehouse.|ありがとうございます。はい、間違いを確認しました。倉庫でのラベル違いです。
+A|So what happens now?|それで、どうなりますか？
+B|We'll send the right one today. Express, no charge.|正しい商品を今日発送します。速達で、無料で。
+S|
+A|And the jumper?|セーターは？
+B|I'll email you a return label. Just drop it at any post office.|返送用ラベルをメールします。どこの郵便局でも出せます。
+A|Do I need to pay for the return?|返送料はかかりますか？
+B|No. Our mistake, our cost.|いいえ。こちらのミスなので、こちらの負担です。
+A|Okay. And when will the jacket arrive?|わかりました。ジャケットはいつ届きますか？
+B|Tomorrow, before one.|明日、1時前に。
+A|That's actually faster than the first delivery.|最初の配送より速いですね。
+B|We try to make up for it. Sorry again.|埋め合わせをしようと。重ねてお詫びします。
+S|
+A|Thanks. You've made it painless.|ありがとう。面倒なく済みました。
+B|That's the goal. Have a good day.|それが目標です。良い一日を。
+
+T|👓|眼鏡やコンタクトを作りに行く|健康|I need an eye test, my prescription, can't see the board, how much are frames, ready in
+S|
+A|Hi, I think I need an eye test. Things are getting blurry.|視力検査が必要だと思います。ぼやけてきていて。
+B|When was your last one?|前回はいつですか？
+A|About three years ago. I've got glasses, but I can't see the board at work anymore.|3年ほど前です。眼鏡はありますが、職場のボードが見えなくなって。
+B|Three years is too long. Let's book you in. Tomorrow at ten?|3年は長すぎますね。予約を入れましょう。明日の10時は？
+A|Tomorrow's fine. How long does it take?|明日で大丈夫です。どのくらいかかりますか？
+B|Thirty minutes. Then we'll talk about lenses.|30分。それからレンズについて相談します。
+S|
+A|And how much are frames, roughly?|フレームはだいたいいくらですか？
+B|From fifty to about four hundred. Depends what you want.|50から400くらい。お好み次第です。
+A|Something simple. I'm not fussy.|シンプルなもので。こだわりはありません。
+B|Then a hundred with lenses. Easy.|ならレンズ込みで100。簡単です。
+A|And contacts? Could I try those?|コンタクトは？ 試せますか？
+B|Yes, after the test. We'll fit you and give you a trial pair.|はい、検査の後に。装着して、お試し用を差し上げます。
+A|I've never worn them. I'm nervous about touching my eye.|一度もつけたことがなくて。目に触るのが怖いです。
+B|Everyone is. Takes about ten minutes to learn. Then it's nothing.|みんなそうです。覚えるのに10分ほど。その後は何でもなくなります。
+S|
+A|Okay. Test tomorrow, then glasses and maybe contacts.|わかりました。明日検査、それから眼鏡と、たぶんコンタクト。
+B|Glasses ready in a week. Contacts you take home the same day.|眼鏡は1週間で。コンタクトは当日お持ち帰りできます。
+A|Perfect. See you tomorrow. Blurrily.|完璧です。明日。ぼやけた目で。
+
+T|🐾|ペットを動物病院に連れて行く|健康|she's not eating, off her food, since when, we'll run some tests, keep an eye on her
+S|
+A|Hi, I've brought my cat in. She's not eating.|猫を連れてきました。食べないんです。
+B|Since when?|いつからですか？
+A|Two days. She's usually greedy. Now she just looks at the bowl.|2日前から。普段は食いしん坊なのに。今はボウルを見つめるだけで。
+B|Any vomiting? Drinking more or less than usual?|嘔吐は？ 水は普段より多い？ 少ない？
+A|No vomiting. Drinking about the same. She's just quiet.|嘔吐はなし。水は同じくらい。ただ静かで。
+B|Let me have a look at her. How old is she?|診せてください。何歳ですか？
+A|Eight.|8歳です。
+B|Okay. Her gums look fine, temperature's normal. We'll run some blood tests to be sure.|わかりました。歯茎は問題なし、体温も正常。念のため血液検査をしましょう。
+S|
+A|Is it serious?|深刻ですか？
+B|Probably not. Cats go off their food for all sorts of reasons. But at eight, we check.|たぶん違います。猫はいろんな理由で食べなくなります。でも8歳なので、確認します。
+A|How long for the results?|結果はどのくらいで？
+B|Tomorrow morning. I'll call you.|明日の朝。お電話します。
+A|And tonight? What do I do?|今夜は？ どうすれば？
+B|Offer her something she loves. Warm it slightly. And keep an eye on her.|大好きなものを出してみて。少し温めて。それと、様子を見ていてください。
+A|Tuna. She'd walk through fire for tuna.|ツナ。ツナのためなら火の中も歩きます。
+B|Then tuna. Warm. Just a little.|ならツナ。温めて。少しだけ。
+S|
+A|Thank you. I've been so worried.|ありがとうございます。すごく心配で。
+B|That's normal. She's lucky to have someone who notices in two days. Some people wait weeks.|当然です。2日で気づく飼い主がいて幸運ですよ。何週間も待つ人もいます。
+A|I'll call if anything changes tonight.|今夜何か変化があれば電話します。
+B|Please do. Any time.|ぜひ。いつでも。
+
+T|👶|子育ての大変さや楽しさを話す|雑談|how's parenthood, no sleep, the hardest thing I've done, but then she smiles, worth it
+S|
+A|How's parenthood treating you?|親になってみてどう？
+B|Honestly? It's the hardest thing I've ever done.|正直？ 今までで一番大変なこと。
+A|Sleep?|睡眠は？
+B|What sleep? I haven't slept more than three hours straight in four months.|睡眠って何？ 4か月間、3時間以上続けて寝てない。
+A|That's brutal.|それは過酷だね。
+B|It is. I've cried in the shower. Twice. This week.|そう。シャワーで泣いた。2回。今週。
+A|And you still look happy.|それでも幸せそうに見えるよ。
+B|That's the strange part. I'm exhausted and I've never been happier.|そこが不思議なところ。疲れ果ててて、こんなに幸せなことはない。
+S|
+A|What's the best bit?|一番いい部分は？
+B|When she smiles at me. First thing in the morning. She doesn't know anything yet, but she knows my face.|朝一番に、私に笑いかけてくれる時。まだ何も知らないのに、私の顔は知ってる。
+A|That's beautiful.|素敵だね。
+B|And the worst bit is everything else. The nappies, the crying, the not knowing what's wrong.|最悪なのは、それ以外全部。おむつ、泣き声、何が悪いのかわからないこと。
+A|Does it get easier?|楽になる？
+B|Everyone says so. I'm choosing to believe them.|みんなそう言う。信じることにしてる。
+S|
+A|Is it worth it?|それだけの価値はある？
+B|Ask me at three a.m. and I'll say no. Ask me now and I'll say it's the only thing that's ever been worth it.|夜中の3時に聞けば、ないって言う。今聞けば、これだけが価値のあるものだって言う。
+A|That's a real answer.|本当の答えだね。
+B|It's the only honest one. Now, can you hold her while I eat something?|唯一の正直な答え。それで、何か食べる間、抱っこしてくれる？
+
+T|💒|親戚の集まりや結婚式のマナーを聞く|文化|what's expected, should I bring a gift, how much is normal, what do I wear, is it rude to
+S|
+A|I've been invited to my colleague's wedding. What's expected? I don't know the customs here.|同僚の結婚式に招待されたんだ。何が期待されてる？ ここの習慣を知らなくて。
+B|A gift, usually. Or money. Depends on the couple.|普通はプレゼント。またはお金。カップルによる。
+A|How much is normal?|どのくらいが普通？
+B|Fifty to a hundred, for a colleague. More for close family.|同僚なら50から100。近い家族ならもっと。
+A|Money in a card?|カードにお金を入れて？
+B|Money in a card, or something from their gift list. They'll have sent a link.|カードにお金か、ギフトリストから何か。リンクが送られてきてるはず。
+A|They did. I didn't know what it was.|来てた。何なのかわからなかった。
+B|That's the list. Pick something on it. Easy.|それがリスト。そこから選べばいい。簡単。
+S|
+A|And what do I wear?|服装は？
+B|Suit. Not black — that's for funerals. Navy or grey.|スーツ。黒はだめ、葬式用だから。ネイビーかグレー。
+A|Is it rude to leave early?|早く帰るのは失礼？
+B|Before the first dance, yes. After that, nobody notices.|最初のダンスの前は失礼。その後は誰も気づかない。
+A|The first dance?|最初のダンス？
+B|The couple dances. Everyone watches. Then the party starts. That's your exit window.|カップルが踊る。みんな見てる。それからパーティーが始まる。そこが帰るタイミング。
+A|Okay. Gift from the list, navy suit, stay till the dance.|わかった。リストからプレゼント、ネイビーのスーツ、ダンスまでいる。
+B|And say "congratulations" to both. Not just the one you know.|それと2人に「おめでとう」を。知ってるほうだけじゃなく。
+S|
+A|Thank you. I'd have turned up in black with cash in my pocket.|ありがとう。黒スーツにポケットの現金で行くところだった。
+B|That's a funeral with a tip. Glad you asked.|それはチップ付きの葬式だよ。聞いてよかったね。
+
+T|🕊|お葬式に参列するときの服装や作法を聞く|文化|what should I wear, do I bring flowers, what do I say to the family, is it okay to, pay my respects
+S|
+A|I've been asked to a funeral. My colleague's father. I don't know what's expected here.|葬式に呼ばれたんだ。同僚のお父さんの。ここでの作法がわからなくて。
+B|Dark clothes. Black or navy. Nothing bright.|暗い色の服。黒かネイビー。明るい色はだめ。
+A|Do I bring flowers?|花は持っていく？
+B|Check the notice. Sometimes they ask for donations instead. To a charity.|案内を確認して。花の代わりに寄付を求めることもある。慈善団体に。
+A|It says donations. To a hospice.|寄付って書いてある。ホスピスに。
+B|Then donate. Don't bring flowers. They'll have said it for a reason.|じゃあ寄付して。花は持っていかない。理由があってそう言ってるから。
+A|And what do I say to the family? I never know.|それで家族には何て言えばいい？ いつもわからなくて。
+B|"I'm so sorry for your loss." That's enough. Don't try to say more.|「お悔やみ申し上げます」。それで十分。それ以上言おうとしないで。
+S|
+A|Is it okay to leave after the service? Or do I stay for the food?|式の後に帰ってもいい？ それとも食事まで残る？
+B|Stay for a bit if you can. Even twenty minutes. It matters to the family.|できれば少し残って。20分でも。家族にとって意味があるから。
+A|And do I talk to my colleague, or leave him alone?|同僚には話しかける？ それとも一人にしておく？
+B|Go to him. Briefly. Say you're there. Then let him be.|行って。短く。来たよって伝えて。それからそっとしておく。
+A|That's what I'd want.|私もそうしてほしいと思う。
+B|Everyone does. The just being there is the whole thing.|みんなそう。ただそこにいることが、すべてなんだ。
+S|
+A|Thank you. I was terrified of doing something wrong.|ありがとう。何か間違えるんじゃないかと怖くて。
+B|You won't. You care enough to ask. That's what counts.|間違えないよ。聞くほど気にかけてる。それが大事なんだ。
+
+T|🚬|喫煙所や禁煙エリアを確認する|日常|is there somewhere I can smoke, is this a no-smoking area, outside only, designated area, sorry, I didn't see the sign
+S|
+A|Excuse me, is there somewhere I can smoke?|すみません、喫煙できる場所はありますか？
+B|Not inside. There's a designated area outside, round the back.|中はだめです。外の裏手に指定エリアがあります。
+A|Round the back. Okay. Is it far?|裏手。わかりました。遠いですか？
+B|Thirty seconds. Through that door, turn left. There's a bench and a bin.|30秒です。あのドアを通って左。ベンチとゴミ箱があります。
+A|Thank you.|ありがとうございます。
+S|
+B|Sorry — is this a no-smoking area?|すみません、ここは禁煙エリアですか？
+A|The whole terrace is, I'm afraid. Since last year.|テラス全体がそうです、残念ながら。去年から。
+B|Oh! Sorry, I didn't see the sign.|あ！ すみません、看板を見ませんでした。
+A|It's small. Everyone misses it. The smoking area's just down the steps.|小さいんです。みんな見逃します。喫煙所は階段を下りたところです。
+B|Down the steps. Thanks. I'll move.|階段を下りて。ありがとう。移動します。
+A|No worries. It's a silly place for a sign.|大丈夫ですよ。看板の場所がおかしいんです。
+S|
+B|Is it okay to leave my drink here? I'll be two minutes.|飲み物をここに置いていってもいいですか？ 2分で戻ります。
+A|Of course. I'll keep an eye on it.|もちろん。見ておきますよ。
+B|Thanks. Back in a moment.|ありがとう。すぐ戻ります。
+
+T|🎲|カジノや賭け事の話をする|雑談|do you ever gamble, just for fun, set a limit, the house always wins, walked away
+S|
+A|Do you ever gamble? Casinos, betting?|賭け事はする？ カジノとか、賭けとか。
+B|Once a year. Vegas, with friends. Just for fun.|年に1回。友達とベガスで。ただの遊びで。
+A|Do you win?|勝つ？
+B|Never. The house always wins. I know that going in.|絶対に。胴元が必ず勝つ。それは行く前からわかってる。
+A|So why go?|じゃあなんで行くの？
+B|The lights, the noise, the drinks. I set a limit — two hundred — and when it's gone, I stop.|光、音、お酒。上限を決めて、200。なくなったらやめる。
+A|And you actually stop?|本当にやめられる？
+B|Every time. That's the only rule that matters.|毎回。それだけが大事なルール。
+S|
+A|I've never been. I'd probably get carried away.|行ったことがない。たぶん夢中になっちゃう。
+B|Some people do. That's why I go with friends. They drag me out.|そういう人もいる。だから友達と行くんだ。引きずり出してくれる。
+A|Have you ever won big?|大きく勝ったことは？
+B|Three hundred once. I walked away immediately. Bought dinner for everyone.|一度300。すぐにやめた。みんなに夕飯をおごった。
+A|That's the way to do it.|それが正しいやり方だね。
+B|Win, walk, eat. If you stay, you give it back.|勝って、去って、食べる。残れば、返すことになる。
+S|
+A|Maybe I'll come next year. With a limit.|来年一緒に行こうかな。上限を決めて。
+B|A small limit. And I'll be the one dragging you out.|小さな上限で。それで私が引きずり出す役。
+
+T|🎹|楽器を演奏できるか・習っていたかを話す|雑談|do you play anything, I used to, I gave up, I wish I'd kept it up, still have it
+S|
+A|Do you play any instruments?|何か楽器は弾ける？
+B|Piano. Badly. I had lessons as a kid and gave up at fourteen.|ピアノ。下手だけど。子どもの頃に習って、14歳でやめた。
+A|Why did you stop?|なんでやめたの？
+B|Football. Friends. The usual reasons. I wish I'd kept it up.|サッカー。友達。よくある理由。続けてればよかった。
+A|Can you still play?|今でも弾ける？
+B|A few things. Muscle memory. My hands know more than my head.|いくつかは。筋肉が覚えてる。頭より手のほうが知ってる。
+A|That's how it goes. Do you still have the piano?|そういうものだよね。ピアノはまだある？
+B|My parents do. Every Christmas I sit down and play the same two songs.|両親の家に。毎年クリスマスに座って、同じ2曲を弾く。
+S|
+B|What about you?|そっちは？
+A|Guitar. Self-taught, from videos. I'm at the "four chords" stage.|ギター。動画で独学。「4コード」の段階。
+B|Four chords is most songs.|4コードでほとんどの曲が弾けるよ。
+A|That's what the videos say. My neighbours might disagree.|動画もそう言ってる。隣人は同意しないかもしれないけど。
+B|How long have you been learning?|どのくらい習ってる？
+A|Six months. I practise every night. Twenty minutes.|6か月。毎晩練習してる。20分。
+B|Twenty minutes a day beats an hour once a week.|週1回1時間より、毎日20分のほうがいい。
+A|That's what I'm hoping.|そう期待してる。
+S|
+B|We should play together. Your four chords, my two songs.|一緒に演奏しようよ。あなたの4コードと、私の2曲。
+A|We'd be terrible.|ひどいことになるね。
+B|Terrible together. That's a band.|一緒にひどくなる。それがバンドだよ。
+
+T|🍳|料理教室や習い事に一緒に通おうと誘う|人間関係|there's a class, do you want to sign up, I don't want to go alone, once a week, we'd be terrible together
+S|
+A|There's a cooking class starting next month. Thai food. Do you want to sign up with me?|来月、料理教室が始まるんだ。タイ料理。一緒に申し込まない？
+B|Thai food? I burn toast.|タイ料理？ トーストも焦がすのに。
+A|That's the point. I don't want to go alone. And you need to learn.|それが狙い。一人で行きたくないんだ。それにあなたも学ぶ必要がある。
+B|How often?|どのくらいの頻度？
+A|Once a week. Six weeks. Tuesday evenings.|週1回。6週間。火曜の夜。
+B|Tuesday's fine. How much?|火曜なら大丈夫。いくら？
+A|A hundred and twenty. Includes the ingredients. And you eat what you make.|120。材料込み。作ったものは食べられる。
+B|So it's six dinners. That's not bad.|じゃあ6回の夕食。悪くないね。
+S|
+B|What if we're the worst in the class?|クラスで一番下手だったら？
+A|Then we're the worst together. That's better than being the worst alone.|じゃあ一緒に一番下手。一人で一番下手よりまし。
+B|That's surprisingly good logic.|意外といい論理だね。
+A|And we'd learn something. Even if it's just how to make one curry.|それに何か学べる。カレー1つの作り方だけでも。
+B|I'd settle for one curry.|カレー1つで満足だよ。
+S|
+B|Okay. Sign me up. But if I set fire to something, you take the blame.|わかった。申し込んで。でも何かに火をつけたら、あなたが責任を取って。
+A|Deal. I'll bring the fire extinguisher.|決まり。消火器を持っていく。
+
+T|🏃|ランニングやマラソン大会の話をする|健康|are you still running, I've signed up for, my time was, training plan, the last mile
+S|
+A|Are you still running?|まだ走ってる？
+B|Three times a week. I've signed up for the half marathon in October.|週3回。10月のハーフマラソンに申し込んだ。
+A|A half! That's serious.|ハーフ！ 本格的だね。
+B|I've got a training plan. Twelve weeks. I'm on week four.|トレーニング計画がある。12週間。今は4週目。
+A|How's it going?|調子は？
+B|Slowly. Ten kilometres last Sunday. My legs hated me for two days.|ゆっくり。先週の日曜に10キロ。2日間、脚に恨まれた。
+A|What was your time?|タイムは？
+B|Fifty-eight minutes. Not fast. But I didn't stop.|58分。速くはない。でも止まらなかった。
+A|Not stopping is the whole thing.|止まらないことがすべてだよ。
+S|
+B|Have you ever done one?|やったことある？
+A|One marathon. Five years ago. Never again.|フルマラソンを1回。5年前。もう二度と。
+B|That bad?|そんなにひどかった？
+A|The last mile was the worst hour of my life. It felt like an hour.|最後の1マイルは人生最悪の1時間だった。1時間に感じた。
+B|But you finished.|でも完走したんだね。
+A|I finished. Then I sat on the pavement and cried. Happy crying. Mostly.|完走した。それから歩道に座って泣いた。うれし泣き。だいたいは。
+B|That's what I'm training for. The pavement cry.|それを目指してトレーニングしてるんだ。歩道での涙。
+S|
+A|I'll come and cheer. With a sign.|応援に行くよ。看板を持って。
+B|Make it a good sign. Something rude. I'll need a laugh at kilometre eighteen.|いい看板にしてね。失礼なやつ。18キロ地点で笑いが必要だから。
+A|I've got ideas already.|もうアイデアがある。
