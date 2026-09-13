@@ -2319,8 +2319,8 @@ struct TopicTalkView: View {
 }
 
 /// One topic's conversation: Japanese and English alternating, each line with
-/// its IPA and a play button. A tick in the toolbar hides the Japanese so the
-/// same page doubles as listening practice.
+/// a play button. The toolbar toggle hides the Japanese so the same page
+/// doubles as listening practice.
 struct TopicConversationView: View {
     let topic: TopicConversation
 
@@ -2328,7 +2328,6 @@ struct TopicConversationView: View {
     @Environment(\.dismiss) private var dismiss
 
     @AppStorage("topicTalk.showJapanese") private var showJapanese: Bool = true
-    @AppStorage("topicTalk.showIPA") private var showIPA: Bool = true
     @State private var detailWord: Word? = nil
 
     var body: some View {
@@ -2373,12 +2372,10 @@ struct TopicConversationView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Menu {
-                        Toggle("日本語を表示", isOn: $showJapanese)
-                        Toggle("発音記号を表示", isOn: $showIPA)
-                    } label: {
-                        Image(systemName: "textformat")
+                    Toggle(isOn: $showJapanese) {
+                        Image(systemName: "character.bubble")
                     }
+                    .toggleStyle(.button)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("閉じる") { dismiss() }
@@ -2426,12 +2423,6 @@ struct TopicConversationView: View {
                             .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
-                }
-                if showIPA, !line.ipa.isEmpty {
-                    Text("/\(line.ipa)/")
-                        .font(.system(size: 11))
-                        .foregroundStyle(.tertiary)
-                        .fixedSize(horizontal: false, vertical: true)
                 }
             }
         }

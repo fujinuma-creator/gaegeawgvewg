@@ -28925,8 +28925,6 @@ struct TopicLine: Identifiable, Hashable {
     let speaker: String
     let english: String
     let japanese: String
-    /// British-RP IPA for the whole line.
-    let ipa: String
 }
 
 struct TopicScene: Identifiable, Hashable {
@@ -28949,8 +28947,8 @@ struct TopicConversation: Identifiable, Hashable {
 }
 
 /// Everyday conversations grouped by topic, each line carrying its Japanese
-/// translation and a British-RP IPA transcription. Stored as tab-separated
-/// rows so the file stays compact, and parsed once on first access.
+/// translation. Stored as tab-separated rows so the file stays compact, and
+/// parsed once on first access.
 enum TopicSeed {
     static let topics: [TopicConversation] = parse(raw)
 
@@ -28999,10 +28997,10 @@ enum TopicSeed {
                 closeScene()
                 sceneLabel = f.count >= 2 ? f[1] : ""
             case "A", "B":
-                guard f.count >= 4 else { continue }
+                guard f.count >= 3 else { continue }
                 lineId += 1
                 lines.append(
-                    TopicLine(id: lineId, speaker: f[0], english: f[1], japanese: f[2], ipa: f[3])
+                    TopicLine(id: lineId, speaker: f[0], english: f[1], japanese: f[2])
                 )
             default:
                 continue
@@ -29015,32 +29013,32 @@ enum TopicSeed {
     private static let raw = #"""
 T	🚑	怪我をして救急に行く	健康	ER, get checked out, put weight on, swelling, fracture, elevated, that's a relief
 S	
-A	I think I need to go to the ER. I hurt my leg pretty badly.	救急に行ったほうがいいと思う。足をかなりひどく怪我しちゃった。	aɪ θˈɪŋk aɪ nˈiːd tə ɡˌəʊ tə ðɪ ˌiːˈɑː aɪ hˈɜːt maɪ lˈɛɡ pɹˈɪtɪ bˈædlɪ
-B	Oh, wow. What happened?	え、大丈夫？ どうしたの？	ˈəʊ wˈaʊ wˌɒt hˈæpənd
-A	I slipped on the stairs and landed pretty hard on my knee.	階段で滑って、膝をかなり強く打ったんだ。	aɪ slˈɪpt ɒnðə stˈeəz ænd lˈændɪd pɹˈɪtɪ hˈɑːd ˌɒn maɪ nˈiː
-B	Can you walk?	歩ける？	kæn juː wˈɔːk
-A	Barely. It hurts a lot when I put weight on it.	なんとか。でも体重をかけるとかなり痛い。	bˈeəlɪ ɪt hˈɜːts ɐ lˈɒt wɛn aɪ pˌʊt wˈeɪt ˈɒn ɪt
-B	Okay, let's get you checked out. Better to be safe.	じゃあ診てもらおう。念のため、そのほうがいいよ。	əʊkˈeɪ lˈɛts ɡɛt juː tʃˈɛkt ˈaʊt bˈɛtɐ təbɪ sˈeɪf
+A	I think I need to go to the ER. I hurt my leg pretty badly.	救急に行ったほうがいいと思う。足をかなりひどく怪我しちゃった。
+B	Oh, wow. What happened?	え、大丈夫？ どうしたの？
+A	I slipped on the stairs and landed pretty hard on my knee.	階段で滑って、膝をかなり強く打ったんだ。
+B	Can you walk?	歩ける？
+A	Barely. It hurts a lot when I put weight on it.	なんとか。でも体重をかけるとかなり痛い。
+B	Okay, let's get you checked out. Better to be safe.	じゃあ診てもらおう。念のため、そのほうがいいよ。
 S	
-A	Hi, I injured my knee, and I'm having a lot of pain.	すみません、膝を怪我して、かなり痛みがあります。	hˈaɪ aɪ ˈɪndʒəd maɪ nˈiː ænd aɪm hˌævɪŋ ɐ lˈɒt ɒv pˈeɪn
-B	When did the injury happen?	いつ怪我をしましたか？	wˌɛn dˈɪd ðɪ ˈɪndʒəɹɪ hˈæpən
-A	About an hour ago. I slipped and hit my knee on the stairs.	1時間くらい前です。滑って、階段に膝をぶつけました。	ɐbˌaʊt ɐn ˈaʊɐɹ ɐɡˈəʊ aɪ slˈɪpt ænd hˈɪt maɪ nˈiː ɒnðə stˈeəz
-B	Are you able to walk?	歩くことはできますか？	ɑː juː ˈeɪbəl tə wˈɔːk
-A	Yes, but it's really painful.	はい、でもかなり痛いです。	jˈɛs bˌʌt ɪts ɹˈiəlɪ pˈeɪnfəl
-B	Have you noticed any swelling or bleeding?	腫れや出血はありますか？	hæv juː nˈəʊtɪst ˌɛnɪ swˈɛlɪŋ ɔː blˈiːdɪŋ
-A	It's starting to swell, but there's no bleeding.	腫れてきていますが、出血はありません。	ɪts stˈɑːtɪŋ tə swˈɛl bˌʌt ðeəz nˈəʊ blˈiːdɪŋ
+A	Hi, I injured my knee, and I'm having a lot of pain.	すみません、膝を怪我して、かなり痛みがあります。
+B	When did the injury happen?	いつ怪我をしましたか？
+A	About an hour ago. I slipped and hit my knee on the stairs.	1時間くらい前です。滑って、階段に膝をぶつけました。
+B	Are you able to walk?	歩くことはできますか？
+A	Yes, but it's really painful.	はい、でもかなり痛いです。
+B	Have you noticed any swelling or bleeding?	腫れや出血はありますか？
+A	It's starting to swell, but there's no bleeding.	腫れてきていますが、出血はありません。
 S	
-A	The pain is getting worse. Is there anything I can take for it?	痛みがだんだんひどくなっています。何か痛み止めを飲んでもいいですか？	ðə pˈeɪn ɪz ɡˌɛtɪŋ wˈɜːs ɪz ðeəɹ ˈɛnɪθˌɪŋ aɪ kæn tˈeɪk fɔːɹ ɪt
-B	The doctor will see you shortly. We'll check what's going on first.	もうすぐ先生が診ます。まず状態を確認しましょう。	ðə dˈɒktɐ wɪl sˈiː juː ʃˈɔːtlɪ wiːl tʃˈɛk wɒts ɡˌəʊɪŋ ˌɒn fˈɜːst
-A	Do you think I might have fractured it?	骨折している可能性はありますか？	dˈuː juː θˈɪŋk aɪ mˌaɪthɐv fɹˈæktʃəd ɪt
-B	It's hard to say without an X-ray.	レントゲンを撮らないと何とも言えません。	ɪts hˈɑːd tə sˈeɪ wɪðˌaʊt ɐn ˈɛksɹˈeɪ
-A	Okay. I understand.	分かりました。	əʊkˈeɪ aɪ ˌʌndəstˈænd
+A	The pain is getting worse. Is there anything I can take for it?	痛みがだんだんひどくなっています。何か痛み止めを飲んでもいいですか？
+B	The doctor will see you shortly. We'll check what's going on first.	もうすぐ先生が診ます。まず状態を確認しましょう。
+A	Do you think I might have fractured it?	骨折している可能性はありますか？
+B	It's hard to say without an X-ray.	レントゲンを撮らないと何とも言えません。
+A	Okay. I understand.	分かりました。
 S	
-B	The X-ray doesn't show a fracture, but you've got quite a bit of swelling.	レントゲンでは骨折は見られませんが、かなり腫れています。	ðɪ ˈɛksɹˈeɪ dˈʌzənt ʃˈəʊ ɐ fɹˈæktʃɐ bˌʌt juːv ɡɒt kwˈaɪt ɐ bˈɪt ɒv swˈɛlɪŋ
-A	That's a relief. So what should I do now?	それなら安心しました。では、これからどうすればいいですか？	ðæts ɐ ɹɪlˈiːf sˌəʊ wɒt ʃˌʊd aɪ dˈuː nˈaʊ
-B	Rest it, keep it elevated, and use ice to help with the swelling.	安静にして、足を高くして、腫れを抑えるために冷やしてください。	ɹˈɛst ɪt kˈiːp ɪt ˈɛlɪvˌeɪtɪd ænd jˈuːs ˈaɪs tə hˈɛlp wɪððə swˈɛlɪŋ
-A	How long should I avoid putting weight on it?	どのくらい体重をかけないほうがいいですか？	hˌaʊ lˈɒŋ ʃˌʊd aɪ ɐvˈɔɪd pˈʊtɪŋ wˈeɪt ˈɒn ɪt
-B	For the next few days, at least. If the pain gets worse, come back and see us.	少なくとも数日間はそうしてください。痛みがひどくなったら、また来てください。	fəðə nˈɛkst fjˈuː dˈeɪz æt lˈiːst ɪf ðə pˈeɪn ɡˈɛts wˈɜːs kˈʌm bˈæk ænd sˈiː ˌʌs
-A	Got it. Thanks for your help.	分かりました。ありがとうございます。	ɡˈɒt ɪt θˈæŋks fɔː jɔː hˈɛlp
+B	The X-ray doesn't show a fracture, but you've got quite a bit of swelling.	レントゲンでは骨折は見られませんが、かなり腫れています。
+A	That's a relief. So what should I do now?	それなら安心しました。では、これからどうすればいいですか？
+B	Rest it, keep it elevated, and use ice to help with the swelling.	安静にして、足を高くして、腫れを抑えるために冷やしてください。
+A	How long should I avoid putting weight on it?	どのくらい体重をかけないほうがいいですか？
+B	For the next few days, at least. If the pain gets worse, come back and see us.	少なくとも数日間はそうしてください。痛みがひどくなったら、また来てください。
+A	Got it. Thanks for your help.	分かりました。ありがとうございます。
 """#
 }
