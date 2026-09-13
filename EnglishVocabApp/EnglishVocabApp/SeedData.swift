@@ -40670,5 +40670,415 @@ A	I've come a long way since then.	あれからずいぶん成長したよ。
 B	Have you hit anything since?	それ以来、何かにぶつけた？
 A	A bin. Once. Doesn't count.	ゴミ箱に。一度。数に入らない。
 B	It counts.	数に入るよ。
+T	🏠	初めての一人暮らしの失敗談を話す	雑談	when I first moved out, I had no idea, nobody told me, lived on, learnt the hard way
+S	
+A	What was your biggest mistake when you first lived alone?	初めて一人暮らしをした時の一番の失敗は？
+B	I didn't know you had to defrost the freezer.	冷凍庫の霜取りをしないといけないなんて知らなかった。
+A	What happened?	どうなったの？
+B	After a year, it was a solid block of ice. I couldn't open the drawer.	1年後、氷の塊になってた。引き出しが開かなかった。
+A	How did you fix it?	どうやって直したの？
+B	A hairdryer and three hours. Nobody told me about freezers.	ドライヤーと3時間。冷凍庫のことは誰も教えてくれなかった。
+S	
+B	What about you?	そっちは？
+A	I lived on toast for two months. I had no idea how to cook anything.	2か月間トーストだけで生きてた。何の料理もできなかったから。
+B	Two months?	2か月？
+A	Toast, cereal, and one pot of instant noodles. Then I got sick.	トースト、シリアル、それとインスタントラーメン1つ。それで体調を崩した。
+B	Scurvy?	壊血病？
+A	Nearly. My mum came to visit and cried at my fridge.	ほぼ。母が訪ねてきて、冷蔵庫を見て泣いた。
+S	
+A	I learnt the hard way. Now I meal-prep on Sundays.	痛い思いをして学んだ。今は日曜に作り置きしてる。
+B	And I defrost the freezer every six months. Like a responsible adult.	私は半年ごとに霜取りしてる。責任ある大人として。
+A	Look how far we've come.	ずいぶん成長したね。
+B	From toast and ice.	トーストと氷から。
+T	💴	初任給で買ったものを話す	雑談	my first paycheck, I bought, for my parents, felt rich, spent it all
+S	
+A	What did you buy with your first paycheck?	初任給で何を買った？
+B	A watch. A proper one. I'd wanted it for years.	時計。ちゃんとしたやつ。何年もほしかったんだ。
+A	Do you still have it?	まだ持ってる？
+B	Wearing it now. Fifteen years. It's never been off my wrist.	今つけてる。15年。手首から外したことがない。
+A	That's a good buy.	いい買い物だね。
+B	Best thing I ever bought. Every time I look at it, I remember that day.	人生で一番いい買い物。見るたびに、あの日を思い出す。
+S	
+B	What about you?	そっちは？
+A	Dinner for my parents. A fancy place. They'd never been.	両親にディナー。高級店で。2人は一度も行ったことがなかった。
+B	That's lovely.	素敵だね。
+A	My dad kept looking at the prices. I told him to stop.	父はずっと値段を見てた。やめてって言った。
+B	Did they enjoy it?	楽しんでくれた？
+A	My mum still talks about it. Twelve years later.	母は今でもその話をする。12年経っても。
+S	
+A	I felt rich for about a day. Then rent was due.	1日だけお金持ちの気分だった。それから家賃の期日が来た。
+B	The first paycheck lasts about a day.	初任給って1日しか持たないよね。
+A	But what a day.	でも、なんて素晴らしい1日だったか。
+T	🤦	新人時代のやらかしを話す	仕事	when I was new, replied all, I didn't know, my boss just laughed, still cringe
+S	
+A	What was your worst mistake as a new starter?	新人の頃の一番の失敗は？
+B	I replied all. To the whole company. With a joke meant for one person.	全員に返信した。会社全体に。1人に向けたジョークで。
+A	How bad was the joke?	どのくらいひどいジョーク？
+B	Not bad. Just stupid. About the boss's tie.	ひどくはない。ただばかばかしいだけ。上司のネクタイについて。
+A	And the boss saw it?	上司も見た？
+B	The boss replied. Also to everyone. "Good tie, though."	上司も返信した。全員に。「でもいいネクタイでしょ」って。
+A	Ha! That's a good boss.	はは！ いい上司だね。
+B	Best possible outcome. I still cringe, though.	最高の結果。それでも今でも身悶えするけど。
+S	
+B	What about you?	そっちは？
+A	I didn't know you had to book meeting rooms. I just walked into one.	会議室を予約しないといけないって知らなかった。ただ入っていった。
+B	Was someone in it?	誰かいた？
+A	The CEO. Mid-meeting. With clients.	CEO。会議の真っ最中。クライアントと。
+B	Oh no.	うわ。
+A	I said "sorry, wrong room" and backed out. Like a cartoon.	「すみません、部屋を間違えました」って後ずさりした。漫画みたいに。
+B	Did he say anything?	何か言われた？
+A	He just laughed. Later, he said "you must be the new one".	笑っただけ。後で「新人だね」って。
+S	
+A	Everyone has one of these.	誰にでも1つはあるよね。
+B	At least one. Mine's just better known.	少なくとも1つ。私のはより有名なだけ。
+A	Tie guy.	ネクタイの人。
+B	Don't.	やめて。
+T	😄	社内の面白い人の話をする	仕事	there's this guy, everyone knows him, he once, office legend, never a dull day
+S	
+A	Have you met Derek yet? From accounts?	デレクにはもう会った？ 経理の。
+B	Not properly. Why?	ちゃんとは。どうして？
+A	He's an office legend. Everyone has a Derek story.	オフィスの伝説だよ。みんなデレクの話を持ってる。
+B	Like what?	例えば？
+A	He once brought a full roast dinner in a lunchbox. Gravy and all. Every Tuesday.	一度、お弁当箱にローストディナーを丸ごと持ってきた。グレイビーソースまで。毎週火曜に。
+B	Every Tuesday?	毎週火曜？
+A	For a year. The whole floor smelled like Sunday.	1年間。フロア全体が日曜の匂いだった。
+S	
+B	What else?	他には？
+A	He names the printers. Properly. There's a "Susan" and a "Gerald".	プリンターに名前をつけてる。ちゃんと。「スーザン」と「ジェラルド」がいる。
+B	And people use the names?	みんなその名前を使うの？
+A	Everyone. "Susan's jammed again." It's official now.	全員。「スーザンがまた詰まった」。もう公式になってる。
+B	That's brilliant.	それは素晴らしい。
+A	And he knows everyone's birthday. All two hundred of us.	それに、全員の誕生日を覚えてる。200人全員。
+S	
+B	I need to meet Derek.	デレクに会わないと。
+A	Tuesday. Bring a fork.	火曜に。フォークを持って。
+B	Never a dull day, then.	退屈な日はなさそうだね。
+A	Not with Derek around.	デレクがいる限りはね。
+T	🌅	自分の「モーニングルーティン」を話す	雑談	first thing, I always, before I do anything, sets me up, non-negotiable
+S	
+A	What's your morning routine?	朝のルーティンは？
+B	Coffee before anything. Before talking, before thinking.	何よりもまずコーヒー。話す前、考える前に。
+A	And then?	それから？
+B	Ten minutes stretching. Then a shower. Then I'm a person.	10分ストレッチ。それからシャワー。それでやっと人間になる。
+A	How long does the whole thing take?	全部でどのくらい？
+B	Forty minutes. Non-negotiable. It sets me up for the day.	40分。譲れない。一日の準備になる。
+S	
+B	What about you?	そっちは？
+A	I'm the opposite. Out of bed, out of the door, twelve minutes.	私は逆。ベッドから出て、玄関を出るまで12分。
+B	Twelve minutes?	12分？
+A	Shower, clothes, go. I eat at my desk.	シャワー、服、出発。朝食はデスクで。
+B	That sounds stressful.	ストレスが溜まりそうだね。
+A	It's efficient. The stress comes later.	効率的なんだよ。ストレスは後から来る。
+B	That's not a selling point.	それは売りにならないよ。
+S	
+A	Maybe I should try your way.	あなたのやり方を試すべきかも。
+B	Forty minutes. You'd have to get up earlier.	40分。早起きしないとね。
+A	That's the problem.	それが問題なんだ。
+B	Start with the coffee. Just sit with it. Five minutes.	コーヒーから始めて。ただ座って飲む。5分だけ。
+A	Five minutes. I can do five minutes.	5分。5分ならできる。
+T	🌙	自分の「ナイトルーティン」を話す	雑談	before bed, wind down, no screens, I read, lights out by
+S	
+A	How do you wind down before bed?	寝る前はどうやってリラックスする？
+B	No screens after nine. I read. Actual paper.	9時以降は画面なし。本を読む。紙の本。
+A	That's disciplined.	規律正しいね。
+B	It took years. But I sleep so much better now.	何年もかかった。でも今はずっとよく眠れる。
+A	What time's lights out?	消灯は何時？
+B	Ten thirty. Eleven at the latest.	10時半。遅くても11時。
+A	Even on weekends?	週末も？
+B	Even on weekends. My body doesn't know what a weekend is.	週末も。体は週末が何かを知らないから。
+S	
+B	What's yours?	そっちは？
+A	Chaotic. Phone in bed, one more episode, then it's one a.m.	カオス。ベッドでスマホ、もう1話、気づいたら夜中の1時。
+B	And then you're tired all day.	それで一日中疲れてる。
+A	Every day. I know exactly what the problem is.	毎日。問題が何かは正確にわかってる。
+B	But you don't fix it.	でも直さない。
+A	The episodes are very good.	エピソードがすごく面白いんだよ。
+S	
+B	Try one night. Book, no phone, ten thirty.	1晩試してみて。本、スマホなし、10時半。
+A	One night.	1晩ね。
+B	Then tell me how you feel in the morning.	それから朝の気分を教えて。
+A	If I feel amazing, I'll be furious.	最高の気分だったら、腹が立つだろうな。
+T	⏰	一日の中で一番好きな時間帯を話す	雑談	my favourite time of day, the light, everything's quiet, before the world wakes up, golden hour
+S	
+A	What's your favourite time of day?	一日で一番好きな時間帯は？
+B	Early morning. Before the world wakes up.	早朝。世界が目覚める前。
+A	How early?	どのくらい早く？
+B	Six. The streets are empty. Everything's quiet.	6時。通りは空っぽ。何もかも静か。
+A	And you're awake then?	その時間に起きてるの？
+B	Every day. It's the only hour that's mine.	毎日。自分だけの唯一の時間なんだ。
+S	
+B	What about you?	そっちは？
+A	Late afternoon. That golden hour, when the light goes soft.	午後遅く。光が柔らかくなる、あの黄金の時間。
+B	The photographer's answer.	写真家の答えだね。
+A	Everything looks better. Even the office.	何もかもが良く見える。オフィスでさえ。
+B	Even the office?	オフィスでさえ？
+A	Even the office. For about twenty minutes.	オフィスでさえ。20分くらいは。
+S	
+A	We'd never see each other. You're asleep by my favourite hour.	お互い会えないね。私の好きな時間には、あなたはもう寝てる。
+B	And you're asleep during mine.	私の好きな時間には、あなたが寝てる。
+A	Sunset and sunrise. We'd have to meet at noon.	夕暮れと夜明け。正午に会うしかない。
+B	Nobody likes noon.	正午が好きな人はいないよ。
+T	🏡	理想の家や部屋を語る	雑談	dream house, big kitchen, a reading nook, floor-to-ceiling, one day
+S	
+A	Describe your dream house.	理想の家を教えて。
+B	Small. That surprises people.	小さい家。みんな驚くけど。
+A	Small?	小さい？
+B	A cottage. One floor. A garden that's bigger than the house.	コテージ。平屋。家より大きな庭。
+A	And inside?	中は？
+B	A reading nook by a window. That's the only thing I really want.	窓辺の読書スペース。本当にほしいのはそれだけ。
+A	That's very specific.	すごく具体的だね。
+B	I've been picturing it for twenty years.	20年間、思い描いてきたから。
+S	
+B	What about you?	そっちは？
+A	A big kitchen. Enormous. With a table that seats twelve.	大きなキッチン。巨大な。12人座れるテーブルつきで。
+B	Twelve?	12人？
+A	I want everyone round the table. Every Sunday.	みんなにテーブルを囲んでほしい。毎週日曜に。
+B	And the rest of the house?	家の他の部分は？
+A	Honestly, I don't care. Bedrooms can be cupboards. The kitchen's the house.	正直、どうでもいい。寝室は物置でもいい。キッチンが家なんだ。
+S	
+B	A cottage with a big kitchen. We'd need to combine.	大きなキッチンのあるコテージ。合体させないとね。
+A	One day.	いつかね。
+B	One day. Small house, huge table.	いつか。小さな家、巨大なテーブル。
+T	💎	宝物や大切にしているものを見せ合う	雑談	my most treasured possession, it's not worth anything but, I'd save it in a fire, it belonged to, means everything
+S	
+A	What's your most treasured possession? Not the most expensive.	一番大切にしてるものは？ 一番高いものじゃなくて。
+B	A letter from my grandfather. He wrote it before I was born.	祖父からの手紙。私が生まれる前に書いたもの。
+A	Before you were born?	生まれる前に？
+B	He knew he was dying. He wrote one for each grandchild. To be opened at eighteen.	自分が死ぬとわかってた。孫一人ひとりに書いたんだ。18歳で開けるように。
+A	What did it say?	何て書いてあった？
+B	I'm not going to tell you all of it. But it ends with "be kind, and be brave".	全部は言わない。でも最後は「優しく、そして勇敢に」で終わってる。
+A	I'd save that in a fire.	火事になったら、それを守るね。
+B	It's the first thing I'd grab.	真っ先に掴むものだよ。
+S	
+B	Yours?	そっちは？
+A	A chipped mug. From my first flat.	欠けたマグカップ。最初のアパートの。
+B	A mug?	マグカップ？
+A	It's not worth anything. But it's been with me through everything. Every move, every job.	価値はない。でも全部を一緒に乗り越えてきた。全部の引っ越し、全部の仕事。
+B	That's a loyal mug.	忠実なマグカップだね。
+A	The most loyal thing I own.	持ってる中で一番忠実なもの。
+S	
+B	A letter and a mug. Not what people expect.	手紙とマグカップ。みんなが想像するものとは違うね。
+A	The important things never are.	大切なものって、そういうものだよ。
+T	🤔	「最近気になっていること」を自由に話す	雑談	something that's been on my mind, I keep thinking about, does that make sense, I can't stop noticing, weird thing to think about
+S	
+A	Can I tell you something weird that's been on my mind?	最近ずっと気になってる変なこと、話してもいい？
+B	Always.	いつでも。
+A	How many people I pass every day that I'll never see again.	毎日すれ違う人のうち、二度と会わない人がどれだけいるか。
+B	That's a lot of people.	かなりの数だね。
+A	Hundreds. Each one has a whole life. And they're gone in a second.	何百人。それぞれに人生があって。1秒で消えていく。
+B	Does that make you sad?	それで悲しくなる？
+A	Not sad. Just... aware. I can't stop noticing it now.	悲しくはない。ただ… 意識するようになった。気づかずにいられなくなった。
+S	
+B	I've got one. I keep thinking about how nobody knows what their last conversation with someone will be.	私にも1つ。誰かとの最後の会話がいつになるか、誰も知らないってことをずっと考えてる。
+A	Oh, that's heavier than mine.	それは私のより重いね。
+B	Sorry. It's been sitting with me since my aunt passed.	ごめん。叔母が亡くなってから、ずっと頭にあって。
+A	What was your last conversation with her?	叔母さんとの最後の会話は？
+B	About a recipe. Nothing important. But now it's everything.	レシピの話。大したことじゃなかった。でも今はそれがすべて。
+A	Maybe that's the point. The small ones count too.	それが大事なのかもね。小さな会話も意味がある。
+S	
+B	Weird things to think about on a Tuesday.	火曜に考えることじゃないね。
+A	The best thoughts come on Tuesdays.	一番いい考えは火曜に浮かぶんだよ。
+B	Thanks for listening to mine.	聞いてくれてありがとう。
+A	Thanks for listening to mine.	こちらこそ。
+T	☀️	今日の天気を聞く・伝える	日常	what's it like out, chilly, warmer than I expected, take a jacket, clear up later
+S	
+A	What's it like outside?	外はどんな感じ？
+B	Colder than it looks. Take a jacket.	見た目より寒い。ジャケットを持っていって。
+A	Really? The sun's out.	本当？ 晴れてるのに。
+B	The sun's out, but there's a wind. It cuts right through you.	晴れてるけど、風がある。骨まで染みるよ。
+A	Okay, jacket it is.	わかった、ジャケットね。
+S	
+B	What was it like this morning where you were?	そっちは今朝どうだった？
+A	Foggy. Couldn't see the end of the street.	霧。通りの端が見えなかった。
+B	It's supposed to clear up later.	午後には晴れるらしいよ。
+A	Hopefully. I've got a walk planned.	だといいな。散歩の予定があるから。
+B	Warmer than I expected by the afternoon, they said.	午後は予想より暖かくなるって。
+A	Then maybe no jacket after all.	じゃあ、やっぱりジャケットは要らないかも。
+B	Take it anyway. Tie it round your waist.	とにかく持っていって。腰に巻けばいい。
+S	
+A	You sound like my mum.	母みたいなこと言うね。
+B	Your mum's right about jackets.	お母さんはジャケットについては正しいよ。
+A	Fine. Jacket. Round the waist. Happy?	わかった。ジャケット。腰に巻く。満足？
+B	Very.	とても。
+T	☔	明日の天気予報を確認して傘を持つか話す	日常	what's the forecast, chance of rain, should I bring an umbrella, just in case, better safe than sorry
+S	
+A	Have you checked the forecast for tomorrow?	明日の予報、見た？
+B	Sixty percent chance of rain in the afternoon.	午後は降水確率60%。
+A	Sixty? That's a coin flip.	60%？ コインの裏表みたいだね。
+B	Basically. Should I bring an umbrella?	ほぼね。傘を持っていったほうがいい？
+A	I would. Just in case.	私なら持っていく。念のため。
+B	It's such a pain to carry.	持ち歩くのが本当に面倒なんだよね。
+A	Less of a pain than getting soaked.	びしょ濡れになるよりはましだよ。
+S	
+B	What about the morning?	朝は？
+A	Dry. It's only the afternoon.	降らない。午後だけ。
+B	Then I'll be at work when it rains. I could leave it at the office.	じゃあ雨の時は職場にいる。オフィスに置いておけばいい。
+A	You've got one at the office?	オフィスに傘がある？
+B	Three. I keep buying them when it rains and forgetting to bring them home.	3本。雨が降るたびに買って、家に持って帰るのを忘れる。
+A	Then you're covered.	じゃあ大丈夫だね。
+B	I'm very well covered. At the office.	しっかり備えてる。オフィスでは。
+S	
+A	Better safe than sorry.	用心するに越したことはないよ。
+B	I'll take the small one. Fits in my bag.	小さいのを持っていく。カバンに入るから。
+A	Sensible. And bring one home.	賢明だね。あと1本、家に持って帰って。
+T	🌧	急に雨が降ってきて雨宿りする	日常	it's come out of nowhere, duck in here, wait it out, it'll pass, soaked
+S	
+A	Where did that come from? It was sunny a minute ago!	どこから来たの？ 1分前まで晴れてたのに！
+B	Quick, in here! Under the awning.	早く、こっち！ ひさしの下に。
+A	I'm already soaked.	もうびしょ濡れだよ。
+B	It came out of nowhere. Look at it.	突然だったね。見て、あの雨。
+A	That's not rain. That's a wall of water.	あれは雨じゃない。水の壁だ。
+S	
+B	Should we wait it out?	止むまで待つ？
+A	How long do these usually last?	こういうのはだいたいどのくらい続く？
+B	Ten minutes. Maybe fifteen. It'll pass.	10分。長くて15分。止むよ。
+A	There's a café right there. Coffee while we wait?	すぐそこにカフェがある。待つ間にコーヒーでも？
+B	Now you're thinking.	それは名案だね。
+A	Silver lining. Rain makes coffee taste better.	雨にも良い面がある。コーヒーが美味しくなる。
+S	
+B	Look, it's easing already.	ほら、もう弱まってきた。
+A	Told you. Ten minutes.	でしょ。10分。
+B	And we got coffee out of it.	それにコーヒーも飲めた。
+A	Best unexpected rain ever.	史上最高の突然の雨だね。
+T	🌦	雨季・乾季の話をする	文化	rainy season, it rains every day, dry season, you get used to it, the humidity
+S	
+A	What's the rainy season like where you're from?	あなたの国の雨季ってどんな感じ？
+B	Three months of rain. Every single afternoon, like clockwork.	3か月間の雨。毎日午後に、時計のように正確に。
+A	Every afternoon?	毎日午後に？
+B	Two o'clock, the sky opens. Four o'clock, it's done. You plan around it.	2時に空が開く。4時に終わる。それに合わせて予定を立てる。
+A	How do you cope?	どうやって耐えるの？
+B	You get used to it. Everyone just stops for two hours.	慣れるんだよ。みんな2時間、ただ止まる。
+A	That's actually a nice rhythm.	それはいいリズムだね。
+B	It is. And then the dry season is six months of perfect weather.	そう。それから乾季は6か月間の完璧な天気。
+S	
+A	Japan's rainy season is a month of grey. No rhythm. Just damp.	日本の梅雨は1か月の灰色。リズムなし。ただじめじめ。
+B	That sounds worse.	それはもっとつらそう。
+A	The humidity is the worst part. Everything's slightly wet.	湿気が一番きつい。何もかもが少し湿ってる。
+B	Even indoors?	室内でも？
+A	Even indoors. Your bread goes mouldy in two days.	室内でも。パンが2日でカビる。
+B	Give me the two o'clock downpour any day.	私は2時の土砂降りのほうがずっといいな。
+S	
+A	Every place has its weather to complain about.	どこにでも、文句を言う天気があるんだね。
+B	That's how you know you live somewhere.	それでどこかに住んでるって実感するんだよ。
+T	💦	湿気がすごくてベタベタすると話す	日常	it's so humid, sticky, can't stop sweating, hair's a mess, air con
+S	
+A	It's so humid today. I feel like I'm walking through soup.	今日はすごく湿気がある。スープの中を歩いてるみたい。
+B	My hair's given up completely.	髪が完全に諦めた。
+A	Everything's sticky. My shirt's stuck to my back.	何もかもがベタベタ。シャツが背中に張り付いてる。
+B	I've changed twice already.	もう2回着替えた。
+A	Twice? It's eleven in the morning.	2回？ まだ午前11時だよ。
+B	And I'll change again by lunch.	昼までにもう1回着替える。
+S	
+A	Is the air con on in the office?	オフィスのエアコンはついてる？
+B	Barely. It's set to "polite breeze".	ほとんど効いてない。「そよ風」設定。
+A	I need "arctic".	「北極」設定が必要。
+B	Someone always complains it's too cold.	誰かが必ず寒すぎるって文句を言うんだよね。
+A	Those people can wear a jumper. I can't take my skin off.	そういう人はセーターを着ればいい。私は皮膚を脱げないんだから。
+B	That's a fair point.	それはもっともだね。
+S	
+A	How long is this supposed to last?	これ、いつまで続くの？
+B	All week. Then a storm, then it breaks.	今週ずっと。それから嵐が来て、それで収まる。
+A	A storm sounds wonderful right now.	嵐が今は素晴らしく聞こえる。
+B	I never thought I'd say it, but same.	こんなこと言うとは思わなかったけど、同じ。
+T	🧥	朝晩の寒暖差で服装に迷う	日常	what do I wear, freezing in the morning, boiling by lunch, layers, take it off later
+S	
+A	What do I even wear today? It's freezing now and it'll be twenty-five by lunch.	今日は何を着ればいいの？ 今は凍えるけど、昼には25度になる。
+B	Layers. That's the only answer.	重ね着。それが唯一の答え。
+A	I hate carrying stuff around all day.	一日中荷物を持ち歩くのが嫌なんだ。
+B	Then be cold now or hot later. Pick one.	じゃあ、今寒いか、後で暑いか。どっちか選んで。
+A	Neither is good.	どっちも嫌だ。
+B	Then layers.	じゃあ重ね着。
+S	
+A	Okay. T-shirt, shirt, light jacket?	わかった。Tシャツ、シャツ、薄いジャケット？
+B	Perfect. Jacket off by ten, shirt off by one.	完璧。10時にジャケットを脱いで、1時にシャツを脱ぐ。
+A	And then I'm carrying two things.	それで2つ持ち歩くことになる。
+B	Tie them round your waist. Everyone does.	腰に巻けばいい。みんなそうしてる。
+A	That looks ridiculous.	それはかっこ悪いよ。
+B	Less ridiculous than sweating through a jumper.	セーターで汗だくになるよりはましだよ。
+S	
+A	Spring is exhausting.	春は疲れる。
+B	Spring is a negotiation. Every single morning.	春は交渉なんだ。毎朝。
+A	I'd rather have winter. At least it's consistent.	冬のほうがいい。少なくとも一貫してる。
+B	Consistently miserable.	一貫して惨めだけどね。
+T	🌀	台風や嵐が来るので予定を変える	日常	there's a storm coming, they're saying, cancel, stay in, batten down
+S	
+A	Have you seen the news? There's a storm coming tomorrow.	ニュース見た？ 明日、嵐が来るって。
+B	How bad?	どのくらいひどい？
+A	Bad. They're saying stay indoors after noon.	かなり。正午以降は屋内にいろって。
+B	So the beach is off.	じゃあビーチは中止だね。
+A	Definitely off. I'm not being blown into the sea.	絶対中止。海に飛ばされたくないから。
+B	Fair. What do we do instead?	なるほど。代わりに何する？
+S	
+A	Come to mine. We'll cook, watch the rain, wait it out.	うちに来て。料理して、雨を眺めて、やり過ごそう。
+B	Storm party.	嵐パーティーだね。
+A	Storm party. Bring snacks and a torch, just in case the power goes.	嵐パーティー。お菓子と懐中電灯を持ってきて、停電に備えて。
+B	Good thinking.	いい考えだね。
+A	And come early. Before the trains stop.	あと早めに来て。電車が止まる前に。
+B	I'll be there by eleven.	11時までには行くよ。
+S	
+B	Have you done the boring stuff? Windows, bins, plants?	面倒なことは済ませた？ 窓、ゴミ箱、植物？
+A	Doing it tonight. Everything inside, everything shut.	今夜やる。全部中に入れて、全部閉める。
+B	Batten down the hatches.	しっかり備えてね。
+A	See you tomorrow. Stay safe getting here.	明日ね。気をつけて来て。
+T	🌫	霧やもやで視界が悪い	日常	can't see a thing, foggy, take it slow, it should lift, eerie
+S	
+A	I can barely see the road. This fog is unreal.	道がほとんど見えない。この霧、すごいね。
+B	Take it slow. There's no rush.	ゆっくり行って。急がなくていいから。
+A	I've got the fog lights on and it still doesn't help.	フォグランプをつけてるのに、まだ役に立たない。
+B	It should lift once the sun's up properly.	太陽がちゃんと出れば晴れるはずだよ。
+A	When's that?	それはいつ？
+B	An hour, maybe. Just keep to the left and follow the lines.	1時間くらいかな。左側をキープして、線に沿って。
+S	
+B	It's kind of eerie, though, isn't it?	でも、ちょっと不気味だよね。
+A	Beautiful and terrifying at the same time.	美しくて、同時に恐ろしい。
+B	Like the whole world's been erased.	世界全体が消されたみたい。
+A	That's poetic for seven in the morning.	朝7時にしては詩的だね。
+B	The fog brings it out in me.	霧が詩心を引き出すんだ。
+S	
+A	Oh, look. It's thinning. I can see the trees now.	あ、見て。薄くなってきた。木が見えるようになった。
+B	Told you. Give it another twenty minutes.	でしょ。あと20分待って。
+A	Thank goodness. My eyes hurt from squinting.	よかった。目を細めすぎて痛い。
+B	Nearly there. And then, coffee.	もうすぐ。それから、コーヒー。
+T	🌞	天気がいいので外に出ようと誘う	日常	it's gorgeous out, we can't waste it, let's get outside, make the most of, first nice day
+S	
+A	Have you looked outside? It's gorgeous.	外を見た？ 最高の天気だよ。
+B	Really? I've been staring at a screen all morning.	本当？ 午前中ずっと画面を見てた。
+A	Blue sky. Not a cloud. First proper nice day of the year.	青空。雲ひとつない。今年初めてのちゃんとした晴れの日。
+B	Then we can't waste it.	じゃあ無駄にできないね。
+A	That's what I'm saying. Let's get outside.	そう言ってるんだよ。外に出よう。
+B	Where?	どこに？
+S	
+A	The park. Or the river. Anywhere that isn't indoors.	公園。それか川。屋内じゃなければどこでも。
+B	I've got work to finish.	終わらせないといけない仕事があるんだ。
+A	It'll still be there tomorrow. The sun won't.	仕事は明日もある。太陽はそうじゃない。
+B	That's a dangerous philosophy.	危険な哲学だね。
+A	It's the correct one. Come on.	正しい哲学だよ。ほら。
+B	...Fine. Give me ten minutes.	…わかった。10分待って。
+S	
+A	Bring sunglasses. And a bottle of water.	サングラスを持ってきて。あと水も。
+B	And ice cream on the way back?	帰りにアイスクリームは？
+A	Obviously. It's the law on days like this.	当然。こういう日はそれが法律。
+B	Okay, now I'm excited.	よし、ワクワクしてきた。
+T	🍁	日本の四季と現地の気候を比べて話す	文化	four distinct seasons, back home, here it's, you really notice, I miss
+S	
+A	What's the biggest difference in weather between here and Japan?	ここと日本で、天気の一番大きな違いは？
+B	The seasons. In Japan, you really notice all four.	季節だね。日本では4つの季節を本当に感じる。
+A	And here?	ここは？
+B	Here it's grey, less grey, grey, and cold grey.	ここは灰色、少し薄い灰色、灰色、寒い灰色。
+A	Ha. That's fair.	はは。的確だね。
+B	Back home, spring means cherry blossoms. Everyone goes outside.	日本では、春といえば桜。みんな外に出る。
+A	And here we get three days of sun and lose our minds.	ここでは3日晴れると、みんな正気を失う。
+S	
+A	What do you miss most?	一番恋しいのは？
+B	Autumn. The leaves go red and gold. Whole mountains of it.	秋。葉が赤と金色になる。山全体が。
+A	We get some of that.	ここでも少しはあるよ。
+B	A bit. But in Japan, people travel to see it. It's an event.	少しね。でも日本では、それを見るために旅行する。イベントなんだ。
+A	And summer?	夏は？
+B	Don't miss summer. Too humid. You'd hate it.	夏は恋しくない。湿気がひどすぎる。あなたは嫌いになると思う。
+S	
+A	So three seasons out of four.	じゃあ4つのうち3つを恋しく思ってるんだね。
+B	Three out of four. Not bad.	4つのうち3つ。悪くない。
+A	I'd like to see the autumn one day.	いつか秋を見てみたいな。
+B	Come in November. I'll take you to the mountains.	11月に来て。山に連れて行くよ。
 """#
 }
