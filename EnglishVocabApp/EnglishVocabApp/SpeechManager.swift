@@ -58,8 +58,12 @@ final class SpeechManager {
 
         let utterance = AVSpeechUtterance(string: trimmed)
         utterance.voice = bestVoice(for: language)
-        utterance.rate = effectiveRate
-        utterance.pitchMultiplier = 0.96
+        // "Posh" RP: sentences are read a touch more slowly and evenly than
+        // the system default, which is what gives Received Pronunciation its
+        // measured, clipped feel. Single words keep the normal rate (they are
+        // already slowed by the 0.25× / 0.1× factors above).
+        utterance.rate = slowed ? effectiveRate : min(effectiveRate, rate * poshSentenceFactor)
+        utterance.pitchMultiplier = poshPitch
         utterance.preUtteranceDelay = 0
         utterance.postUtteranceDelay = 0
         synthesizer.speak(utterance)
@@ -72,15 +76,27 @@ final class SpeechManager {
         lastSpokenText = nil
     }
 
+    /// Pitch for the RP voice. 1.0 is the voice's natural pitch; the earlier
+    /// 0.96 was a gravelly tweak that works against the clear, slightly
+    /// bright RP delivery.
+    private let poshPitch: Float = 1.0
+
+    /// Sentence rate as a fraction of the base rate. 0.92 of the default is
+    /// noticeably more deliberate without sounding slowed down.
+    private let poshSentenceFactor: Float = 0.92
+
     /// Picks the most natural-sounding installed voice for the given
     /// language. Premium (neural) > Enhanced > Default. Within the same
-    /// quality tier, prefer the British male voices (Daniel, Oliver,
-    /// Arthur) so the output sounds like a fluent UK native.
+    /// quality tier, prefer Apple's Received Pronunciation ("posh") British
+    /// voices — Daniel and Serena are the classic RP pair, Kate and Arthur
+    /// next — so the output sounds like a well-spoken UK native. The best
+    /// results need the Enhanced/Premium versions downloaded in iOS Settings
+    /// (Accessibility → Spoken Content → Voices → English (UK)).
     private func bestVoice(for language: String) -> AVSpeechSynthesisVoice? {
         if let cached = cachedVoice, cached.language == language {
             return cached
         }
-        let preferredNames = ["Daniel", "Oliver", "Arthur"]
+        let preferredNames = ["Daniel", "Serena", "Kate", "Arthur", "Martha", "Jamie", "Oliver"]
         let voices = AVSpeechSynthesisVoice.speechVoices()
             .filter { $0.language == language }
 

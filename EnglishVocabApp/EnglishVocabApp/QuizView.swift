@@ -953,6 +953,8 @@ struct QuizView: View {
                     }
                     .buttonStyle(.plain)
                 }
+                IPALabel(ipa: ex.ipa, size: 12)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 Button {
                     openDetail(for: word)
                 } label: {
@@ -1185,6 +1187,7 @@ struct WordDetailSheet: View {
                                     smallSpeakerButton(text: ex.english)
                                     VStack(alignment: .leading, spacing: 2) {
                                         Text(ex.english)
+                                        IPALabel(ipa: ex.ipa)
                                         Text(ex.japanese)
                                             .foregroundStyle(.secondary)
                                             .font(.subheadline)
@@ -1316,6 +1319,7 @@ struct WordDetailSheet: View {
                         smallSpeakerButton(text: ex.english)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(ex.english).font(.subheadline)
+                            IPALabel(ipa: ex.ipa, size: 10)
                             Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
                         }
                     }
@@ -1965,6 +1969,8 @@ struct WordReviewSessionView: View {
                         VStack(alignment: .leading, spacing: 1) {
                             Text(ex.english)
                                 .font(.footnote)
+                                .lineLimit(2)
+                            IPALabel(ipa: ex.ipa, size: 10)
                                 .lineLimit(2)
                             Text(ex.japanese)
                                 .font(.caption2)

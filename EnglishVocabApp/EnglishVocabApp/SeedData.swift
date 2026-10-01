@@ -46169,3 +46169,6679 @@ B	Make it a good sign. Something rude. I'll need a laugh at kilometre eighteen.	
 A	I've got ideas already.	もうアイデアがある。
 """#
 }
+
+// MARK: - Example-sentence IPA
+
+/// British-RP IPA for every example sentence in the seed, keyed by the exact
+/// English text. Generated offline (espeak-ng, en-gb-x-rp) and stored as
+/// tab-separated rows so the file stays compact; parsed once on first use.
+/// Examples the user adds or regenerates won't be here, and simply show no
+/// transcription.
+enum ExampleIPA {
+    static func lookup(_ english: String) -> String? {
+        let key = english.trimmingCharacters(in: .whitespacesAndNewlines)
+        return table[key]
+    }
+
+    private static let table: [String: String] = {
+        var dict: [String: String] = [:]
+        dict.reserveCapacity(7000)
+        for line in raw.split(separator: "\n", omittingEmptySubsequences: true) {
+            guard let tab = line.firstIndex(of: "\t") else { continue }
+            let en = String(line[line.startIndex..<tab])
+            let ipa = String(line[line.index(after: tab)...])
+            dict[en] = ipa
+        }
+        return dict
+    }()
+
+    private static let raw = #"""
+'Karoshi' literally means death from overwork.	kæɹˈəʊʃɪ lˈɪtəɹəlɪ mˈiːnz dˈɛθ fɹɒm ˌəʊvəwˈɜːk
+5pm, to be precise.	fˈaɪv pˌiːˈɛm təbɪ pɹɪsˈaɪs
+A 10-minute break.	ɐ tˈɛnmˈɪnɪt bɹˈeɪk
+A baby calf.	ɐ bˈeɪbɪ kˈɑːf
+A backup power supply.	ɐ bˈækʌp pˈaʊɐ səplˈaɪ
+A bad habit.	ɐ bˈæd hˈæbɪt
+A beautiful garden.	ɐ bjˈuːtɪfəl ɡˈɑːdən
+A beautiful sunset.	ɐ bjˈuːtɪfəl sˈʌnsɛt
+A bit cold.	ɐ bˈɪt kˈəʊld
+A bit of an overreaction.	ɐ bˈɪt əvən ˌəʊvəɹɪˈækʃən
+A bit tipsy.	ɐ bˈɪt tˈɪpsɪ
+A bit under the weather today.	ɐ bˈɪt ˌʌndɐ ðə wˈɛðɐ tədˈeɪ
+A black belt.	ɐ blˈæk bˈɛlt
+A blood clot.	ɐ blˈʌd klˈɒt
+A blunt knife.	ɐ blˈʌnt nˈaɪf
+A bold hypothesis.	ɐ bˈəʊld haɪpˈɒθəsˌɪs
+A bold statement.	ɐ bˈəʊld stˈeɪtmənt
+A book I'll never part with.	ɐ bˈʊk aɪl nˈɛvɐ pˈɑːt wɪð
+A bottle washed up on the beach.	ɐ bˈɒtəl wˈɒʃt ˌʌp ɒnðə bˈiːtʃ
+A box of chocolates.	ɐ bˈɒks ɒv tʃˈɒkləts
+A box of tissues.	ɐ bˈɒks ɒv tˈɪʃuːz
+A breathtaking view.	ɐ bɹˈɛθteɪkɪŋ vjˈuː
+A bright personality.	ɐ bɹˈaɪt pˌɜːsənˈælɪtɪ
+A broad spectrum.	ɐ bɹˈɔːd spˈɛktɹəm
+A business license.	ɐ bˈɪznəs lˈaɪsəns
+A busy highway.	ɐ bˈɪzɪ hˈaɪweɪ
+A buyout offer.	ɐ bˈaɪaʊt ˈɒfɐ
+A candid conversation.	ɐ kˈændɪd kɒnvəsˈeɪʃən
+A car factory.	ɐ kˈɑː fˈæktəɹɪ
+A car garage.	ɐ kˈɑː ɡˈæɹɪdʒ
+A cardboard box.	ɐ kˈɑːdbɔːd bˈɒks
+A case study of success.	ɐ kˈeɪs stˈʌdɪ ɒv səksˈɛs
+A catalyst for change.	ɐ kˈætɐlˌɪst fɔː tʃˈeɪndʒ
+A ceasefire was agreed.	ɐ sˈiːsfaɪə wɒz ɐɡɹˈiːd
+A celebrity wannabe.	ɐ səlˈɛbɹɪtɪ wˈɒnɐbˌiː
+A charming village.	ɐ tʃˈɑːmɪŋ vˈɪlɪdʒ
+A cheeky pint.	ɐ tʃˈiːkɪ pˈaɪnt
+A cheerful smile.	ɐ tʃˈiəfəl smˈaɪl
+A child with autism.	ɐ tʃˈaɪld wɪð ˈɔːtɪzəm
+A chilly morning.	ɐ tʃˈɪlɪ mˈɔːnɪŋ
+A chocolate brown coat.	ɐ tʃˈɒklət bɹˈaʊn kˈəʊt
+A choice which can be risky.	ɐ tʃˈɔɪs wˌɪtʃ kæn biː ɹˈɪskɪ
+A classic film.	ɐ klˈæsɪk fˈɪlm
+A classic of Japanese literature.	ɐ klˈæsɪk ɒv dʒˌæpənˈiːz lˈɪtɹɪtʃɐ
+A classic trade-off.	ɐ klˈæsɪk tɹˈeɪdˈɒf
+A clear timeline.	ɐ klˈiə tˈaɪmlaɪn
+A clever tactic.	ɐ klˈɛvɐ tˈæktɪk
+A clogged nose.	ɐ klˈɒɡd nˈəʊz
+A cluster of stars.	ɐ klˈʌstɐɹ ɒv stˈɑːz
+A coffee maniac.	ɐ kˈɒfɪ mˈeɪnɪˌæk
+A coherent argument.	ɐ kəʊhˈiəɹənt ˈɑːɡjuːmənt
+A college degree.	ɐ kˈɒlɪdʒ dɪɡɹˈiː
+A college freshman.	ɐ kˈɒlɪdʒ fɹˈɛʃmən
+A common interest in music.	ɐ kˈɒmən ˈɪntɹɛst ɪn mjˈuːzɪk
+A compelling argument.	ɐ kəmpˈɛlɪŋ ˈɑːɡjuːmənt
+A complete meltdown.	ɐ kəmplˈiːt mˈɛltdaʊn
+A complete rookie.	ɐ kəmplˈiːt ɹˈʊkɪ
+A complete stranger.	ɐ kəmplˈiːt stɹˈeɪndʒɐ
+A concrete wall.	ɐ kˈɒŋkɹiːt wˈɔːl
+A conference delegate.	ɐ kˈɒnfɹəns dˈɛlɪɡˌeɪt
+A convicted pedophile.	ɐ kənvˈɪktɪd pˈɛdəfˌaɪl
+A cop car.	ɐ kˈɒp kˈɑː
+A corrupt system.	ɐ kəɹˈʌpt sˈɪstəm
+A coworking space.	ɐ kˈaʊɜːkɪŋ spˈeɪs
+A cozy cafe.	ɐ kˈəʊzɪ kˈæfeɪ
+A crocodile in the river.	ɐ kɹˈɒkədˌaɪl ɪnðə ɹˈɪvɐ
+A culinary delight.	ɐ kjˈʊlɪnəɹɪ dɪlˈaɪt
+A culinary school.	ɐ kjˈʊlɪnəɹɪ skˈuːl
+A cute bunny.	ɐ kjˈuːt bˈʌnɪ
+A daily dose.	ɐ dˈeɪlɪ dˈəʊs
+A dark secret.	ɐ dˈɑːk sˈiːkɹɪt
+A deep dive into the data.	ɐ dˈiːp dˈaɪv ˌɪntʊ ðə dˈeɪtɐ
+A deep snow drift.	ɐ dˈiːp snˈəʊ dɹˈɪft
+A definite plus.	ɐ dˈɛfɪnət plˈʌs
+A delicate situation.	ɐ dˈɛlɪkət sˌɪtʃuːˈeɪʃən
+A delicious meal.	ɐ dɪlˈɪʃəs mˈiːl
+A demanding job.	ɐ dɪmˈɑːndɪŋ dʒˈɒb
+A different discipline.	ɐ dˈɪfɹənt dˈɪsɪplˌɪn
+A different path in life.	ɐ dˈɪfɹənt pˈɑːθ ɪn lˈaɪf
+A different viewpoint.	ɐ dˈɪfɹənt vjˈuːpɔɪnt
+A digital thermometer.	ɐ dˈɪdʒɪtəl θɜːmˈɒmɪtɐ
+A dim memory.	ɐ dˈɪm mˈɛməɹɪ
+A discrepancy in the data.	ɐ dɪskɹˈɛpənsɪ ɪnðə dˈeɪtɐ
+A diverse team.	ɐ daɪvˈɜːs tˈiːm
+A dramatic change.	ɐ dɹəmˈætɪk tʃˈeɪndʒ
+A dynamic speaker.	ɐ daɪnˈæmɪk spˈiːkɐ
+A fabulous time.	ɐ fˈæbjʊləs tˈaɪm
+A family quarrel.	ɐ fˈæmɪlɪ kwˈɒɹəl
+A fast paced job.	ɐ fˈɑːst pˈeɪst dʒˈɒb
+A fast paced movie.	ɐ fˈɑːst pˈeɪst mˈuːvɪ
+A favorable exchange rate.	ɐ fˈeɪvəɹəbəl ɪkstʃˈeɪndʒ ɹˈeɪt
+A few words about me: I'm a teacher.	ɐ fjˈuː wˈɜːdz ɐbˈaʊt mˌiː aɪm ɐ tˈiːtʃɐ
+A field of tulips.	ɐ fˈiːld ɒv tjˈuːlɪps
+A field of wheat.	ɐ fˈiːld ɒv wˈiːt
+A financial safety net.	ɐ faɪnˈænʃəl sˈeɪftɪ nˈɛt
+A fire broke out.	ɐ fˈaɪə bɹˈəʊk ˈaʊt
+A firework display.	ɐ fˈaɪəwɜːk dɪsplˈeɪ
+A firm believer.	ɐ fˈɜːm bɪlˈiːvɐ
+A fishing net.	ɐ fˈɪʃɪŋ nˈɛt
+A flawed protagonist.	ɐ flˈɔːd pɹˈəʊtɐɡənˌɪst
+A flower pot.	ɐ flˈaʊɐ pˈɒt
+A foreign owned firm.	ɐ fˈɒɹən ˈəʊnd fˈɜːm
+A formal function.	ɐ fˈɔːməl fˈʌŋkʃən
+A former colony.	ɐ fˈɔːmɐ kˈɒlənɪ
+A formidable opponent.	ɐ fɔːmˈɪdəbəl əpˈəʊnənt
+A fractured relationship.	ɐ fɹˈæktʃəd ɹɪlˈeɪʃənʃˌɪp
+A fragile ecosystem.	ɐ fɹˈædʒaɪl ˈiːkəʊsˌɪstəm
+A free pass.	ɐ fɹˈiː pˈɑːs
+A free trial.	ɐ fɹˈiː tɹˈaɪəl
+A gift? How nice!	ɐ ɡˈɪft hˌaʊ nˈaɪs
+A goal in the dying minutes.	ɐ ɡˈəʊl ɪnðə dˈaɪɪŋ mˈɪnɪts
+A goal to equalize.	ɐ ɡˈəʊl tʊ ˈiːkwəlˌaɪz
+A golden opportunity.	ɐ ɡˈəʊldən ɒpətjˈuːnɪtɪ
+A good icebreaker question.	ɐ ɡˈʊd ˈaɪsbɹeɪkɐ kwˈɛstʃən
+A good looking guy.	ɐ ɡˈʊd lˈʊkɪŋ ɡˈaɪ
+A good trait.	ɐ ɡˈʊd tɹˈeɪt
+A grand a month.	ɐ ɡɹˈænd ɐ mˈʌnθ
+A grand affair.	ɐ ɡɹˈænd ɐfˈeə
+A grasshopper jumped.	ɐ ɡɹˈɑːshɒpɐ dʒˈʌmpt
+A grave situation.	ɐ ɡɹˈeɪv sˌɪtʃuːˈeɪʃən
+A great location.	ɐ ɡɹˈeɪt ləʊkˈeɪʃən
+A great shot.	ɐ ɡɹˈeɪt ʃˈɒt
+A green hill.	ɐ ɡɹˈiːn hˈɪl
+A green valley.	ɐ ɡɹˈiːn vˈælɪ
+A growing tendency.	ɐ ɡɹˈəʊɪŋ tˈɛndənsɪ
+A growth mindset helps you learn.	ɐ ɡɹˈəʊθ mˈaɪndsɛt hˈɛlps juː lˈɜːn
+A harmful toxin.	ɐ hˈɑːmfəl tˈɒksɪn
+A hazy memory.	ɐ hˈeɪzɪ mˈɛməɹɪ
+A healthy diet.	ɐ hˈɛlθɪ dˈaɪət
+A heavy burden.	ɐ hˈɛvɪ bˈɜːdən
+A hidden gem of a movie.	ɐ hˈɪdən dʒˈɛm əvɐ mˈuːvɪ
+A hidden gem.	ɐ hˈɪdən dʒˈɛm
+A high defensive line.	ɐ hˈaɪ dɪfˈɛnsɪv lˈaɪn
+A high rise apartment.	ɐ hˈaɪ ɹˈaɪz ɐpˈɑːtmənt
+A high school senior.	ɐ hˈaɪ skˈuːl sˈiːnjɐ
+A hilarious joke.	ɐ hɪlˈeəɹiəs dʒˈəʊk
+A homeless person on the street.	ɐ hˈəʊmləs pˈɜːsən ɒnðə stɹˈiːt
+A hopeful sign.	ɐ hˈəʊpfəl sˈaɪn
+A huge fan.	ɐ hjˈuːdʒ fˈæn
+A human skull.	ɐ hjˈuːmən skˈʌl
+A jailbreak exploit.	ɐ dʒˈeɪlbɹeɪk ˈɪksplɔɪt
+A joyful occasion.	ɐ dʒˈɔɪfəl əkˈeɪʒən
+A jump rope.	ɐ dʒˈʌmp ɹˈəʊp
+A kind man.	ɐ kˈaɪnd mˈæn
+A laid back vibe.	ɐ lˈeɪd bˈæk vˈaɪb
+A lame excuse.	ɐ lˈeɪm ɪkskjˈuːs
+A large carbon footprint.	ɐ lˈɑːdʒ kˈɑːbən fˈʊtpɹɪnt
+A last minute deal.	ɐ lˈɑːst mˈɪnɪt dˈiːl
+A leading company.	ɐ lˈiːdɪŋ kˈʌmpənɪ
+A legal gray area.	ɐ lˈiːɡəl ɡɹˈeɪ ˈeəɹiə
+A legal obligation.	ɐ lˈiːɡəl ˌɒblɪɡˈeɪʃən
+A legal requirement.	ɐ lˈiːɡəl ɹɪkwˈaɪəmənt
+A legitimate concern.	ɐ lədʒˈɪtɪmət kənsˈɜːn
+A leisurely walk.	ɐ lˈɛʒəlɪ wˈɔːk
+A lesser known fact.	ɐ lˈɛsɐ nˈəʊn fˈækt
+A light sprinkle of rain.	ɐ lˈaɪt spɹˈɪŋkəl ɒv ɹˈeɪn
+A literary masterpiece.	ɐ lˈɪtəɹəɹɪ mˈɑːstəpˌiːs
+A little late, sorry.	ɐ lˈɪtəl lˈeɪt sˈɒɹɪ
+A little nervous.	ɐ lˈɪtəl nˈɜːvəs
+A local farmer.	ɐ lˈəʊkəl fˈɑːmɐ
+A logistical nightmare.	ɐ lədʒˈɪstɪkəl nˈaɪtmeə
+A long journey.	ɐ lˈɒŋ dʒˈɜːnɪ
+A long regional conflict.	ɐ lˈɒŋ ɹˈiːdʒənəl kˈɒnflɪkt
+A long shot, but worth trying.	ɐ lˈɒŋ ʃˈɒt bˌʌt wˈɜːθ tɹˈaɪɪŋ
+A loose button.	ɐ lˈuːs bˈʌtən
+A lot happens behind the scenes.	ɐ lˈɒt hˈæpənz bɪhˌaɪnd ðə sˈiːnz
+A lot on my plate.	ɐ lˈɒt ˌɒn maɪ plˈeɪt
+A loud blast.	ɐ lˈaʊd blˈɑːst
+A lucrative business.	ɐ lˈuːkɹətˌɪv bˈɪznəs
+A magical moment.	ɐ mˈædʒɪkəl mˈəʊmənt
+A magnificent view.	ɐ mæɡnˈɪfɪsənt vjˈuː
+A major milestone.	ɐ mˈeɪdʒɐ mˈaɪlstəʊn
+A malicious rumor.	ɐ mɐlˈɪʃəs ɹˈuːmɐ
+A marching band.	ɐ mˈɑːtʃɪŋ bˈænd
+A massive match for the title.	ɐ mˈæsɪv mˈætʃ fəðə tˈaɪtəl
+A massive quake.	ɐ mˈæsɪv kwˈeɪk
+A melancholic mood.	ɐ mˌɛləŋkˈɒlɪk mˈuːd
+A mere coincidence.	ɐ mˈiə kəʊˈɪnsɪdəns
+A messed up sleep schedule.	ɐ mˈɛst ˌʌp slˈiːp ʃˈɛdjuːl
+A mighty warrior.	ɐ mˈaɪtɪ wˈɒɹɪɐ
+A mind blowing view.	ɐ mˈaɪnd blˈəʊɪŋ vjˈuː
+A minimum of two.	ɐ mˈɪnɪməm ɒv tˈuː
+A minor mishap.	ɐ mˈaɪnɐ mˈɪshæp
+A minor setback.	ɐ mˈaɪnɐ sˈɛtbæk
+A mixed-race family.	ɐ mˈɪkstɹˈeɪs fˈæmɪlɪ
+A muscular build.	ɐ mˈʌskjʊlɐ bˈɪld
+A music festival.	ɐ mjˈuːzɪk fˈɛstɪvəl
+A nearby café.	ɐ nˈiəbaɪ kæfˈeɪ
+A new chapter in my life.	ɐ njˈuː tʃˈæptɐɹ ɪn maɪ lˈaɪf
+A new framework.	ɐ njˈuː fɹˈeɪmwɜːk
+A new notebook.	ɐ njˈuː nˈəʊtbʊk
+A nice shade of blue.	ɐ nˈaɪs ʃˈeɪd ɒv blˈuː
+A nuclear reactor.	ɐ njˈuːkliə ɹɪˈæktɐ
+A pair of glasses.	ɐ pˈeəɹ ɒv ɡlˈɑːsɪz
+A pair of shoes.	ɐ pˈeəɹ ɒv ʃˈuːz
+A pair of socks.	ɐ pˈeəɹ ɒv sˈɒks
+A pane of glass.	ɐ pˈeɪn ɒv ɡlˈɑːs
+A peaceful morning.	ɐ pˈiːsfəl mˈɔːnɪŋ
+A peculiar smell.	ɐ pɪkjˈuːliə smˈɛl
+A pension scheme.	ɐ pˈɛnʃən skˈiːm
+A perfect storm of problems.	ɐ pˈɜːfɛkt stˈɔːm ɒv pɹˈɒbləmz
+A pessimistic view.	ɐ pˌɛsɪmˈɪstɪk vjˈuː
+A phantom pain.	ɐ fˈɑːntəm pˈeɪn
+A phobia of spiders.	ɐ fˈəʊbɪɐɹ ɒv spˈaɪdəz
+A plausible explanation.	ɐ plˈɔːzɪbəl ɪksplɐnˈeɪʃən
+A pointless argument.	ɐ pˈɔɪntləs ˈɑːɡjuːmənt
+A populous city.	ɐ pˈɒpjʊləs sˈɪtɪ
+A pot of tea.	ɐ pˈɒt ɒv tˈiː
+A privileged few.	ɐ pɹˈɪvɪlɪdʒd fjˈuː
+A prize from the king, no less.	ɐ pɹˈaɪz fɹʌmðə kˈɪŋ nˈəʊ lˈɛs
+A proper meal.	ɐ pɹˈɒpɐ mˈiːl
+A protective covering.	ɐ pɹətˈɛktɪv kˈʌvəɹɪŋ
+A proxy server.	ɐ pɹˈɒksɪ sˈɜːvɐ
+A psychological thriller.	ɐ saɪkəlˈɒdʒɪkəl θɹˈɪlɐ
+A purple dress.	ɐ pˈɜːpəl dɹˈɛs
+A quantum leap.	ɐ kwˈɒntəm lˈiːp
+A quick response.	ɐ kwˈɪk ɹɪspˈɒns
+A quiet area.	ɐ kwˈaɪət ˈeəɹiə
+A quiet graveyard.	ɐ kwˈaɪət ɡɹˈeɪvjɑːd
+A real estate agent.	ɐ ɹˈiəl ɪstˈeɪt ˈeɪdʒənt
+A real headache.	ɐ ɹˈiəl hˈɛdeɪk
+A real page turner.	ɐ ɹˈiəl pˈeɪdʒ tˈɜːnɐ
+A reflective strip on the jacket.	ɐ ɹɪflˈɛktɪv stɹˈɪp ɒnðə dʒˈækɪt
+A reflective surface.	ɐ ɹɪflˈɛktɪv sˈɜːfɪs
+A regional dialect.	ɐ ɹˈiːdʒənəl dˈaɪəlɛkt
+A reliable friend.	ɐ ɹɪlˈaɪəbəl fɹˈɛnd
+A reluctant agreement.	ɐ ɹɪlˈʌktənt ɐɡɹˈiːmənt
+A remote village.	ɐ ɹɪmˈəʊt vˈɪlɪdʒ
+A resilient economy.	ɐ ɹɪsˈɪliənt ɪkˈɒnəmɪ
+A rich flavor profile.	ɐ ɹˈɪtʃ flˈeɪvɐ pɹˈəʊfaɪl
+A ripple effect on the market.	ɐ ɹˈɪpəl ɪfˈɛkt ɒnðə mˈɑːkɪt
+A sacred place.	ɐ sˈeɪkɹɪd plˈeɪs
+A sacred promise.	ɐ sˈeɪkɹɪd pɹˈɒmɪs
+A savior of the team.	ɐ sˈeɪvjɐɹ ɒvðə tˈiːm
+A savory snack.	ɐ sˈeɪvəɹɪ snˈæk
+A scandal that went public.	ɐ skˈændəl ðæt wɛnt pˈʌblɪk
+A scenic footpath.	ɐ sˈiːnɪk fˈʊtpɑːθ
+A scheme to cheat.	ɐ skˈiːm tə tʃˈiːt
+A secure job.	ɐ sɪkjˈɔː dʒˈɒb
+A self report survey.	ɐ sˈɛlf ɹɪpˈɔːt sˈɜːveɪ
+A senior manager.	ɐ sˈiːnjɐ mˈænɪdʒɐ
+A sense of belonging.	ɐ sˈɛns ɒv bɪlˈɒŋɪŋ
+A sense of humor.	ɐ sˈɛns ɒv hjˈuːmɐ
+A sense of relief.	ɐ sˈɛns ɒv ɹɪlˈiːf
+A sensitive topic.	ɐ sˈɛnsɪtˌɪv tˈɒpɪk
+A separate legal entity.	ɐ sˈɛpɹət lˈiːɡəl ˈɛntɪtɪ
+A serious injury.	ɐ sˈiəɹɪəs ˈɪndʒəɹɪ
+A shaky start.	ɐ ʃˈeɪkɪ stˈɑːt
+A shopping trolley.	ɐ ʃˈɒpɪŋ tɹˈɒlɪ
+A silly mistake.	ɐ sˈɪlɪ mɪstˈeɪk
+A single piece.	ɐ sˈɪŋɡəl pˈiːs
+A sit-in protest.	ɐ sˈɪtɪn pɹˈəʊtɛst
+A skeleton crew.	ɐ skˈɛlɪtən kɹˈuː
+A slave to money.	ɐ slˈeɪv tə mˈʌnɪ
+A slim waist.	ɐ slˈɪm wˈeɪst
+A small glitch.	ɐ smˈɔːl ɡlˈɪtʃ
+A small modular design.	ɐ smˈɔːl mˈɒdjʊlɐ dɪzˈaɪn
+A smear campaign.	ɐ smˈiə kæmpˈeɪn
+A soft chuckle.	ɐ sˈɒft tʃˈʌkəl
+A solid betting strategy.	ɐ sˈɒlɪd bˈɛtɪŋ stɹˈætədʒɪ
+A solid game overall.	ɐ sˈɒlɪd ɡˈeɪm ˌəʊvəɹˈɔːl
+A solid plan.	ɐ sˈɒlɪd plˈæn
+A sophisticated design.	ɐ səfˈɪstɪkˌeɪtɪd dɪzˈaɪn
+A sophomore in college.	ɐ sˈɒfəmˌɔːɹ ɪn kˈɒlɪdʒ
+A sore loser.	ɐ sˈɔː lˈuːzɐ
+A spark of hope.	ɐ spˈɑːk ɒv hˈəʊp
+A spontaneous trip.	ɐ spɒntˈeɪniəs tɹˈɪp
+A spoonful of sugar.	ɐ spˈuːnfəl ɒv ʃˈʊɡɐ
+A sporty look.	ɐ spˈɔːtɪ lˈʊk
+A sporty type.	ɐ spˈɔːtɪ tˈaɪp
+A standalone app.	ɐ stˈændɐlˌəʊn ˈæp
+A standalone unit.	ɐ stˈændɐlˌəʊn jˈuːnɪt
+A standard by which we judge.	ɐ stˈændəd baɪ wˌɪtʃ wiː dʒˈʌdʒ
+A statutory body regulates it.	ɐ stˈætʃuːtəɹɪ bˈɒdɪ ɹˈɛɡjʊlˌeɪts ɪt
+A step in the right direction.	ɐ stˈɛp ɪnðə ɹˈaɪt daɪɹˈɛkʃən
+A strand of hair.	ɐ stɹˈænd ɒv hˈeə
+A strange encounter.	ɐ stɹˈeɪndʒ ɪŋkˈaʊntɐ
+A stray cat.	ɐ stɹˈeɪ kˈæt
+A streak of bad luck.	ɐ stɹˈiːk ɒv bˈæd lˈʌk
+A string of wins.	ɐ stɹˈɪŋ ɒv wˈɪnz
+A strong adhesive.	ɐ stɹˈɒŋ ɐdhˈiːsɪv
+A strong advocate.	ɐ stɹˈɒŋ ˈædvəkˌeɪt
+A strong candidate.	ɐ stɹˈɒŋ kˈændɪdˌeɪt
+A strong comeback.	ɐ stɹˈɒŋ kˈʌmbæk
+A strong correlation.	ɐ stɹˈɒŋ kˌɒɹɪlˈeɪʃən
+A strong dislike.	ɐ stɹˈɒŋ dɪslˈaɪk
+A strong personality.	ɐ stɹˈɒŋ pˌɜːsənˈælɪtɪ
+A stuffy atmosphere.	ɐ stˈʌfɪ ˈætməsfˌiə
+A stuffy room.	ɐ stˈʌfɪ ɹˈuːm
+A subordinate role.	ɐ sʌbˈɔːdɪnət ɹˈəʊl
+A subsidiary company.	ɐ sʌbsˈɪdjəɹɪ kˈʌmpənɪ
+A subtle hint.	ɐ sˈʌtəl hˈɪnt
+A suitable candidate.	ɐ sˈuːtəbəl kˈændɪdˌeɪt
+A supportive boss.	ɐ səpˈɔːtɪv bˈɒs
+A surge of emotion.	ɐ sˈɜːdʒ ɒv ɪmˈəʊʃən
+A surge of energy.	ɐ sˈɜːdʒ ɒv ˈɛnədʒɪ
+A sweet scent.	ɐ swˈiːt sˈɛnt
+A swindle of millions.	ɐ swˈɪndəl ɒv mˈɪliənz
+A symbol of excellence.	ɐ sˈɪmbəl ɒv ˈɛksələns
+A tactical decision.	ɐ tˈæktɪkəl dɪsˈɪʒən
+A tad expensive.	ɐ tˈæd ɪkspˈɛnsɪv
+A tad too sweet.	ɐ tˈæd tˈuː swˈiːt
+A talent agent.	ɐ tˈælənt ˈeɪdʒənt
+A team anthem.	ɐ tˈiːm ˈænθəm
+A tear ran down her face.	ɐ tˈiə ɹˈæn dˌaʊn hɜː fˈeɪs
+A tedious meeting.	ɐ tˈiːdiəs mˈiːtɪŋ
+A tentative plan.	ɐ tˈɛntətˌɪv plˈæn
+A tentative smile.	ɐ tˈɛntətˌɪv smˈaɪl
+A terrible massacre.	ɐ tˈɛɹɪbəl mˈæsəkɐ
+A terrifying reminder of war.	ɐ tˈɛɹɪfˌaɪɪŋ ɹɪmˈaɪndɐɹ ɒv wˈɔː
+A textbook example.	ɐ tˈɛkstbʊk ɪɡzˈɑːmpəl
+A thermography scan.	ɐ θɜːmˈɒɡɹəfɪ skˈæn
+A thick book.	ɐ θˈɪk bˈʊk
+A thrift shop.	ɐ θɹˈɪft ʃˈɒp
+A timber frame.	ɐ tˈɪmbɐ fɹˈeɪm
+A tool which can be useful.	ɐ tˈuːl wˌɪtʃ kæn biː jˈuːsfəl
+A top notch team.	ɐ tˈɒp nˈɒtʃ tˈiːm
+A tough opponent.	ɐ tˈʌf əpˈəʊnənt
+A tricky situation.	ɐ tɹˈɪkɪ sˌɪtʃuːˈeɪʃən
+A true patriot.	ɐ tɹˈuː pˈætɹɪət
+A truly noble person.	ɐ tɹˈuːlɪ nˈəʊbəl pˈɜːsən
+A turning point in my life.	ɐ tˈɜːnɪŋ pˈɔɪnt ɪn maɪ lˈaɪf
+A unit of measurement.	ɐ jˈuːnɪt ɒv mˈɛʒəmənt
+A vacant position.	ɐ vˈeɪkənt pəzˈɪʃən
+A vacant seat.	ɐ vˈeɪkənt sˈiːt
+A vague answer.	ɐ vˈeɪɡ ˈɑːnsɐ
+A valuable asset.	ɐ vˈæljuːəbəl ˈæsɛt
+A vegan alternative.	ɐ vˈiːɡən ɔːltˈɜːnətˌɪv
+A versatile player.	ɐ vˈɜːsətˌaɪl plˈeɪɐ
+A versatile tool.	ɐ vˈɜːsətˌaɪl tˈuːl
+A vibrant city.	ɐ vˈaɪbɹənt sˈɪtɪ
+A volatile market.	ɐ vˈɒlɐtˌaɪl mˈɑːkɪt
+A warm-hearted person.	ɐ wˈɔːmhˈɑːtɪd pˈɜːsən
+A wash basin.	ɐ wˈɒʃ bˈeɪsən
+A washed up actor.	ɐ wˈɒʃt ˌʌp ˈæktɐ
+A wave of nostalgia.	ɐ wˈeɪv ɒv nəstˈældʒɐ
+A wave of sadness.	ɐ wˈeɪv ɒv sˈædnəs
+A weather advisory.	ɐ wˈɛðɐɹ ɐdvˈaɪzəɹɪ
+A wee bit.	ɐ wˈiː bˈɪt
+A week or so.	ɐ wˈiːk ɔː sˈəʊ
+A weekly roundup.	ɐ wˈiːklɪ ɹˈaʊndʌp
+A welcome distraction.	ɐ wˈɛlkʌm dɪstɹˈækʃən
+A well educated person.	ɐ wˈɛl ˈɛdʒuːkˌeɪtɪd pˈɜːsən
+A well-deserved break.	ɐ wˈɛldɪzˈɜːvd bɹˈeɪk
+A whole pizza all to myself.	ɐ hˈəʊl pˈiːtsɐɹ ˈɔːl tə maɪsˈɛlf
+A wide range.	ɐ wˈaɪd ɹˈeɪndʒ
+A win-win situation.	ɐ wˈɪnwˈɪn sˌɪtʃuːˈeɪʃən
+A wooden chair.	ɐ wˈʊdən tʃˈeə
+A work placement.	ɐ wˈɜːk plˈeɪsmənt
+A world class player.	ɐ wˈɜːld klˈɑːs plˈeɪɐ
+A year-end bonus.	ɐ jˈiəɹˈɛnd bˈəʊnəs
+A: I'm tired. B: Same here.	ˈeɪ aɪm tˈaɪəd bˈiː sˈeɪm hˈiə
+AI is a game changer.	ˌeɪˈaɪ ɪz ɐ ɡˈeɪm tʃˈeɪndʒɐ
+AI is improving exponentially.	ˌeɪˈaɪ ɪz ɪmpɹˈuːvɪŋ ˌɛkspənˈɛnʃəlɪ
+AI takes place of manual work.	ˌeɪˈaɪ tˈeɪks plˈeɪs ɒv mˈænjuːəl wˈɜːk
+Abandon ship!	ɐbˈændən ʃˈɪp
+Abdominal muscles.	æbdˈɒmɪnəl mˈʌsəlz
+Abdominal pain.	æbdˈɒmɪnəl pˈeɪn
+Abide by the law.	ɐbˈaɪd baɪ ðə lˈɔː
+Above the asking price.	əbˌʌv ðɪ ˈɑːskɪŋ pɹˈaɪs
+Absolutely gutted!	ˌæbsəlˈuːtlɪ ɡˈʌtɪd
+Absolutely shattered.	ˌæbsəlˈuːtlɪ ʃˈætəd
+Accept my apology.	ɐksˈɛpt maɪ ɐpˈɒlədʒɪ
+Acceptance of the offer.	ɐksˈɛptəns ɒvðɪ ˈɒfɐ
+Accidentally on purpose.	ˌæksɪdˈɛntəlɪ ˌɒn pˈɜːpəs
+Acetaminophen relieves pain.	ˈæsɪtˌæmɪnˌɒfən ɹɪlˈiːvz pˈeɪn
+Achieve great things.	ɐtʃˈiːv ɡɹˈeɪt θˈɪŋz
+Act of kindness.	ˈækt ɒv kˈaɪndnəs
+Act on your instincts.	ˈækt ˌɒn jɔːɹ ˈɪnstɪŋkts
+Actions speak louder than words.	ˈækʃənz spˈiːk lˈaʊdɐ ðɐn wˈɜːdz
+Acts of malice.	ˈækts ɒv mˈælɪs
+Actually, I would argue otherwise.	ˈæktʃuːəlɪ aɪ wʊd ˈɑːɡjuː ˈʌðəwˌaɪz
+Actually, there's something to that.	ˈæktʃuːəlɪ ðeəz sˈʌmθɪŋ tə ðˈæt
+Adapt quickly.	ɐdˈæpt kwˈɪklɪ
+Adapt to change.	ɐdˈæpt tə tʃˈeɪndʒ
+Adapt to the climate.	ɐdˈæpt tə ðə klˈaɪmət
+Add shading to the drawing.	ˈæd ʃˈeɪdɪŋ tə ðə dɹˈɔːɹɪŋ
+Added as an afterthought.	ˈædɪd æz ɐn ˈɑːftəθˌɔːt
+Adequate for the job.	ˈædɪkwət fəðə dʒˈɒb
+Adhere to the rules.	ɐdhˈiə tə ðə ɹˈuːlz
+Adhere to the schedule.	ɐdhˈiə tə ðə ʃˈɛdjuːl
+Adhesive tape.	ɐdhˈiːsɪv tˈeɪp
+Adjust the volume.	ɐdʒˈʌst ðə vˈɒljuːm
+Admit your shortcomings.	ɐdmˈɪt jɔː ʃˈɔːtkʌmɪŋz
+Adolescence is tough.	ˌædəlˈɛsəns ɪz tˈʌf
+Adopt a child.	ɐdˈɒpt ɐ tʃˈaɪld
+Adopt a growth mindset.	ɐdˈɒpt ɐ ɡɹˈəʊθ mˈaɪndsɛt
+Adopt a new policy.	ɐdˈɒpt ɐ njˈuː pˈɒlɪsɪ
+Adoption of new technology.	ɐdˈɒpʃən ɒv njˈuː tɛknˈɒlədʒɪ
+Adored by fans.	ɐdˈɔːd baɪ fˈænz
+Adrenaline kicked in.	ɐdɹˈɛnəlˌɪn kˈɪkt ˈɪn
+Advancing age.	ɐdvˈænsɪŋ ˈeɪdʒ
+Advancing technology.	ɐdvˈænsɪŋ tɛknˈɒlədʒɪ
+Advocate for change.	ˈædvəkˌeɪt fɔː tʃˈeɪndʒ
+After all this, you quit?	ˈɑːftɐɹ ˈɔːl ðˈɪs juː kwˈɪt
+After effects of the flu.	ˈɑːftɐɹ ɪfˈɛkts ɒvðə flˈuː
+Against this backdrop.	ɐɡˈɛnst ðɪs bˈækdɹɒp
+Agree, to a certain extent.	ɐɡɹˈiː tʊ ɐ sˈɜːtən ɪkstˈɛnt
+Agreed to help.	ɐɡɹˈiːd tə hˈɛlp
+Aid the victims.	ˈeɪd ðə vˈɪktɪmz
+Aim for excellence.	ˈeɪm fɔːɹ ˈɛksələns
+Aim for the top.	ˈeɪm fəðə tˈɒp
+Air the program.	ˈeə ðə pɹˈəʊɡɹæm
+Air your grievances.	ˈeə jɔː ɡɹˈiːvənsɪz
+Alien concept.	ˈeɪliən kˈɒnsɛpt
+All I got was silence back.	ˈɔːl aɪ ɡɒt wɒz sˈaɪləns bˈæk
+All I need is one chance.	ˈɔːl aɪ nˈiːd ɪz wˈɒn tʃˈɑːns
+All I want is peace.	ˈɔːl aɪ wˈɒnt ɪz pˈiːs
+All dolled up tonight!	ˈɔːl dˈɒld ˌʌp tənˈaɪt
+All facing in one direction.	ˈɔːl fˈeɪsɪŋ ɪn wˈɒn daɪɹˈɛkʃən
+All gone.	ˈɔːl ɡˈɒn
+All good, no worries.	ˈɔːl ɡˈʊd nˈəʊ wˈʌɹɪz
+All in one solution.	ˈɔːl ɪn wˈɒn səlˈuːʃən
+All men are equal.	ˈɔːl mˈɛn ɑːɹ ˈiːkwəl
+All my fault, I'm sorry.	ˈɔːl maɪ fˈɒlt aɪm sˈɒɹɪ
+All of humanity.	ˈɔːl ɒv hjuːmˈænɪtɪ
+All sorted, no worries.	ˈɔːl sˈɔːtɪd nˈəʊ wˈʌɹɪz
+All that work for nothing.	ˈɔːl ðæt wˈɜːk fɔː nˈʌθɪŋ
+All the best.	ˈɔːl ðə bˈɛst
+All the more reason.	ˈɔːl ðə mˈɔː ɹˈiːzən
+All the way to Tokyo.	ˈɔːl ðə wˈeɪ tə tˈəʊkɪˌəʊ
+All things come to an end.	ˈɔːl θˈɪŋz kˈʌm tʊ ɐn ˈɛnd
+All things considered, it went well.	ˈɔːl θˈɪŋz kənsˈɪdəd ɪt wɛnt wˈɛl
+All things considered, we did our best.	ˈɔːl θˈɪŋz kənsˈɪdəd wiː dˈɪd ˌaʊɐ bˈɛst
+All this is for you.	ˈɔːl ðɪs ɪz fɔː juː
+All-consuming passion.	ˈɔːlkənsjˈuːmɪŋ pˈæʃən
+Allow me to explain.	ɐlˈaʊ mˌiː tʊ ɪksplˈeɪn
+Allow me to introduce myself.	ɐlˈaʊ mˌiː tʊ ˌɪntɹədjˈuːs maɪsˈɛlf
+Almost infinite.	ˈɔːlməʊst ˈɪnfɪnət
+Alright! Long time no see.	ɔːlɹˈaɪt lˈɒŋ tˈaɪm nˈəʊ sˈiː
+Alright, mate?	ɔːlɹˈaɪt mˈeɪt
+Alright?	ɔːlɹˈaɪt
+Alter the dress.	ˈɒltɐ ðə dɹˈɛs
+Alter the plan.	ˈɒltɐ ðə plˈæn
+Altogether different.	ˌɔːltəɡˈɛðɐ dˈɪfɹənt
+Altogether, it costs $50.	ˌɔːltəɡˈɛðɐ ɪt kˈɒsts dˈɒlɐ fˈɪftɪ
+Always be prepared.	ˈɔːlweɪz biː pɹɪpˈeəd
+Always keeping us in the loop.	ˈɔːlweɪz kˈiːpɪŋ ˌʌs ɪnðə lˈuːp
+Ambiguous wording.	æmbˈɪɡjuːəs wˈɜːdɪŋ
+Amplify the message.	ˈæmplɪfˌaɪ ðə mˈɛsɪdʒ
+Amplify the sound.	ˈæmplɪfˌaɪ ðə sˈaʊnd
+Amusement park.	ɐmjˈuːzmənt pˈɑːk
+An advisory role.	ɐn ɐdvˈaɪzəɹɪ ɹˈəʊl
+An aggressive playstyle.	ɐn ɐɡɹˈɛsɪv plˈeɪstaɪl
+An all in one printer.	ɐn ˈɔːl ɪn wˈɒn pɹˈɪntɐ
+An all star team.	ɐn ˈɔːl stˈɑː tˈiːm
+An amazing performance.	ɐn ɐmˈeɪzɪŋ pəfˈɔːməns
+An angled surface reflects light.	ɐn ˈæŋɡəld sˈɜːfɪs ɹɪflˈɛkts lˈaɪt
+An anonymous donor gave a large gift.	ɐn ɐnˈɒnəməs dˈəʊnɐ ɡˈeɪv ɐ lˈɑːdʒ ɡˈɪft
+An ant colony.	ɐn ˈænt kˈɒlənɪ
+An ant nest in the garden.	ɐn ˈænt nˈɛst ɪnðə ɡˈɑːdən
+An appealing offer.	ɐn ɐpˈiːlɪŋ ˈɒfɐ
+An artsy museum downtown.	ɐn ˈɑːtsɪ mjuːzˈiəm dˈaʊntaʊn
+An eccentric artist.	ɐn ɪksˈɛntɹɪk ˈɑːtɪst
+An educated guess.	ɐn ˈɛdʒuːkˌeɪtɪd ɡˈɛs
+An elegant solution.	ɐn ˈɛlɪɡənt səlˈuːʃən
+An emotional attachment.	ɐn ɪmˈəʊʃənəl ɐtˈætʃmənt
+An epic journey across Asia.	ɐn ˈɛpɪk dʒˈɜːnɪ əkɹˌɒs ˈeɪʃɐ
+An epidemic of obesity.	ɐn ˌɛpɪdˈɛmɪk ɒv əʊbˈiːsətɪ
+An expert in law.	ɐn ˈɛkspɜːt ɪn lˈɔː
+An immense ocean.	ɐn ɪmˈɛns ˈəʊʃən
+An independent contractor.	ɐn ˌɪndɪpˈɛndənt kəntɹˈæktɐ
+An indigenous trait of the region.	ɐn ɪndˈɪdʒənəs tɹˈeɪt ɒvðə ɹˈiːdʒən
+An inferior product.	ɐn ɪnfˈiəɹɪɐ pɹˈɒdʌkt
+An irrigation system.	ɐn ˌɪɹɪɡˈeɪʃən sˈɪstəm
+An obvious mistake.	ɐn ˈɒbviəs mɪstˈeɪk
+An off color joke.	ɐn ˈɒf kˈʌlɐ dʒˈəʊk
+An offensive joke.	ɐn əfˈɛnsɪv dʒˈəʊk
+An old acquaintance.	ɐn ˈəʊld ɐkwˈeɪntəns
+An underrated movie.	ɐn ˌʌndəɹˈeɪtɪd mˈuːvɪ
+An unfortunate event.	ɐn ʌnfˈɔːtʃənət ɪvˈɛnt
+An unpleasant smell.	ɐn ʌnplˈɛzənt smˈɛl
+An unprecedented event.	ɐn ʌnpɹˈɛsɪdəntɪd ɪvˈɛnt
+An unstable connection.	ɐn ʌnstˈeɪbəl kənˈɛkʃən
+An unwelcome guest.	ɐn ʌnwˈɛlkʌm ɡˈɛst
+An uphill battle.	ɐn ʌphˈɪl bˈætəl
+An upper class family.	ɐn ˌʌpɐ klˈɑːs fˈæmɪlɪ
+An upscale restaurant.	ɐn ˈʌpskeɪl ɹˈɛstɹɒnt
+Analysis paralysis.	ɐnˈæləsˌɪs pəɹˈæləsˌɪs
+Ancient civilization.	ˈeɪnʃənt sˌɪvɪlaɪzˈeɪʃən
+And by extension, his family.	ænd baɪ ɪkstˈɛnʃən hɪz fˈæmɪlɪ
+And last but not least, the budget.	ænd lˈɑːst bˌʌt nˌɒt lˈiːst ðə bˈʌdʒɪt
+And the kicker is...	ænd ðə kˈɪkɐɹ ɪz
+And what's it to you?	ænd wˈɒts ɪt tə juː
+Animal shelter.	ˈænɪməl ʃˈɛltɐ
+Announce it tomorrow.	ɐnˈaʊns ɪt təmˈɒɹəʊ
+Annual checkup.	ˈænjuːəl tʃˈɛkʌp
+Another problem could be the cost.	ɐnˈʌðɐ pɹˈɒbləm kʊd biː ðə kˈɒst
+Another problem could be timing.	ɐnˈʌðɐ pɹˈɒbləm kʊd biː tˈaɪmɪŋ
+Any advice?	ˌɛnɪ ɐdvˈaɪs
+Any alternative?	ˌɛnɪ ɔːltˈɜːnətˌɪv
+Any discount?	ˌɛnɪ dˈɪskaʊnt
+Any one of these will do.	ˌɛnɪ wˈɒn ɒv ðiːz wɪl dˈuː
+Any one of us could go.	ˌɛnɪ wˈɒn ɒv ˌʌs kʊd ɡˈəʊ
+Any thoughts on it?	ˌɛnɪ θˈɔːts ˈɒn ɪt
+Anyone else who doesn't have a ticket?	ˈɛnɪwˌɒn ˈɛls hˌuː dˈʌzənt hæv ɐ tˈɪkɪt
+Anyone else who doesn't have access?	ˈɛnɪwˌɒn ˈɛls hˌuː dˈʌzənt hæv ˈæksɛs
+Anything that disrupts order.	ˈɛnɪθˌɪŋ ðæt dɪsɹˈʌpts ˈɔːdɐ
+Anyway, where was I?	ˈɛnɪwˌeɪ wˌeə wɒz ˈaɪ
+Apartment hunting.	ɐpˈɑːtmənt hˈʌntɪŋ
+Apparently not.	ɐpˈæɹəntlɪ nˈɒt
+Apparently, he's coming.	ɐpˈæɹəntlɪ hiːz kˈʌmɪŋ
+Applaud the effort.	ɐplˈɔːd ðɪ ˈɛfət
+Apply a photo filter.	ɐplˈaɪ ɐ fˈəʊtəʊ fˈɪltɐ
+Appointed last week.	ɐpˈɔɪntɪd lˈɑːst wˈiːk
+Apprenticeship program.	ɐpɹˈɛntɪsʃˌɪp pɹˈəʊɡɹæm
+Approach the problem.	ɐpɹˈəʊtʃ ðə pɹˈɒbləm
+Approach with care.	ɐpɹˈəʊtʃ wɪð kˈeə
+Approval is pending.	ɐpɹˈuːvəl ɪz pˈɛndɪŋ
+Approx 30 minutes.	ɐpɹˈɒks θˈɜːtɪ mˈɪnɪts
+Are you all set?	ɑː juː ˈɔːl sˈɛt
+Are you cool with this plan?	ɑː juː kˈuːl wɪð ðɪs plˈæn
+Are you down for pizza?	ɑː juː dˌaʊn fɔː pˈiːtsɐ
+Are you for real?	ɑː juː fɔː ɹˈiəl
+Are you hitting on me?	ɑː juː hˈɪtɪŋ ˈɒn mˌiː
+Are you hungover?	ɑː juː hʌŋɡˈəʊvɐ
+Are you kidding me?	ɑː juː kˈɪdɪŋ mˌiː
+Are you outgoing?	ɑː juː aʊtɡˈəʊɪŋ
+Are you saying I'm wrong?	ɑː juː sˈeɪɪŋ aɪm ɹˈɒŋ
+Are you saying it's over?	ɑː juː sˈeɪɪŋ ɪts ˈəʊvɐ
+Are you sure?	ɑː juː ʃˈɔː
+Are you used to the cold?	ɑː juː jˈuːzd tə ðə kˈəʊld
+Arguably the best.	ˈɑːɡjuːəblɪ ðə bˈɛst
+Arguably true.	ˈɑːɡjuːəblɪ tɹˈuː
+Arrange the chairs.	ɐɹˈeɪndʒ ðə tʃˈeəz
+Arrival's around 5.	ɐɹˈaɪvəlz ɐɹˈaʊnd fˈaɪv
+Arrive before it starts.	ɐɹˈaɪv bɪfˌɔːɹ ɪt stˈɑːts
+Art exhibitions.	ˈɑːt ɛksɪbˈɪʃənz
+Artificial flavors.	ˌɑːtɪfˈɪʃəl flˈeɪvəz
+Artificial intelligence.	ˌɑːtɪfˈɪʃəl ɪntˈɛlɪdʒəns
+As I mentioned earlier in the report.	æz aɪ mˈɛnʃənd ˈɜːlɪɐɹ ɪnðə ɹɪpˈɔːt
+As I mentioned earlier, ~	æz aɪ mˈɛnʃənd ˈɜːlɪɐ tˈɪldɐ
+As I was saying, no.	æz aɪ wɒz sˈeɪɪŋ nˈəʊ
+As I was saying, we should leave.	æz aɪ wɒz sˈeɪɪŋ wiː ʃˌʊd lˈiːv
+As a bonus.	æz ɐ bˈəʊnəs
+As a last resort.	æz ɐ lˈɑːst ɹɪzˈɔːt
+As a matter of fact, I do know him.	æz ɐ mˈætɐɹ ɒv fˈækt aɪ dˈuː nˈəʊ hˌɪm
+As a matter of fact, you're right.	æz ɐ mˈætɐɹ ɒv fˈækt jɔː ɹˈaɪt
+As a result, he was promoted.	æz ɐ ɹɪzˈʌlt hiː wɒz pɹəmˈəʊtɪd
+As a result, sales rose.	æz ɐ ɹɪzˈʌlt sˈeɪlz ɹˈəʊz
+As a single person.	æz ɐ sˈɪŋɡəl pˈɜːsən
+As busy as can be.	æz bˈɪzɪ æz kæn bˈiː
+As early as age five.	æz ˈɜːlɪ æz ˈeɪdʒ fˈaɪv
+As early as next week.	æz ˈɜːlɪ æz nˈɛkst wˈiːk
+As far as I can tell, fine.	æz fˈɑːɹ æz aɪ kæn tˈɛl fˈaɪn
+As far as I can tell, no issues.	æz fˈɑːɹ æz aɪ kæn tˈɛl nˈəʊ ˈɪʃuːz
+As far as I know, it's open.	æz fˈɑːɹ æz aɪ nˈəʊ ɪts ˈəʊpən
+As far as I know, it's true.	æz fˈɑːɹ æz aɪ nˈəʊ ɪts tɹˈuː
+As far as I know, yes.	æz fˈɑːɹ æz aɪ nˈəʊ jˈɛs
+As far as I'm concerned, it's fine.	æz fˈɑːɹ æz aɪm kənsˈɜːnd ɪts fˈaɪn
+As good as done.	æz ɡˈʊd æz dˈʌn
+As good as new.	æz ɡˈʊd æz njˈuː
+As happy as can be.	æz hˈæpɪ æz kæn bˈiː
+As it stands now, no.	æz ɪt stˈændz nˈaʊ nˈəʊ
+As it stands, we can't move.	æz ɪt stˈændz wiː kˈɑːnt mˈuːv
+As it's supposed to be.	æz ɪts səpˈəʊzd tɐ bˈiː
+As light as a feather.	æz lˈaɪt æz ɐ fˈɛðɐ
+As light as air.	æz lˈaɪt æz ˈeə
+As long as it works.	æz lˈɒŋ æz ɪt wˈɜːks
+As long as you're happy.	æz lˈɒŋ æz jɔː hˈæpɪ
+As of today, it's free.	æz ɒv tədˈeɪ ɪts fɹˈiː
+As of today, sales doubled.	æz ɒv tədˈeɪ sˈeɪlz dˈʌbəld
+As opposed to last year.	æz əpˈəʊzd tə lˈɑːst jˈiə
+As prices compare to last year.	æz pɹˈaɪsɪz kəmpˈeə tə lˈɑːst jˈiə
+As quietly as possible.	æz kwˈaɪətlɪ æz pˈɒsɪbəl
+As soon as possible.	æz sˈuːn æz pˈɒsɪbəl
+As such, the meeting was postponed.	æz sˈʌtʃ ðə mˈiːtɪŋ wɒz pəʊstpˈəʊnd
+As such, we declined.	æz sˈʌtʃ wiː dɪklˈaɪnd
+As things stand, no changes.	æz θˈɪŋz stˈænd nˈəʊ tʃˈeɪndʒɪz
+As things stand, we'll lose.	æz θˈɪŋz stˈænd wiːl lˈuːz
+As this compares to that.	æz ðɪs kəmpˈeəz tə ðˈæt
+As you can see in the chart, ~	æz juː kæn sˈiː ɪnðə tʃˈɑːt tˈɪldɐ
+As you can see, sales are up.	æz juː kæn sˈiː sˈeɪlz ɑːɹ ˈʌp
+Ascend the throne.	ɐsˈɛnd ðə θɹˈəʊn
+Aside from him, no one came.	ɐsˈaɪd fɹɒm hˌɪm nˈəʊwˈɒn kˈeɪm
+Aside from that, it's fine.	ɐsˈaɪd fɹɒm ðˈæt ɪts fˈaɪn
+Ask an expert.	ˈɑːsk ɐn ˈɛkspɜːt
+Ask the locals.	ˈɑːsk ðə lˈəʊkəlz
+Asking for a raise.	ˈɑːskɪŋ fəɹɐ ɹˈeɪz
+Assemble the desk.	ɐsˈɛmbəl ðə dˈɛsk
+Assets and liabilities.	ˈæsɛts ænd lˌaɪəbˈɪlɪtɪz
+Assign each person a role.	ɐsˈaɪn ˈiːtʃ pˈɜːsən ɐ ɹˈəʊl
+Assist the team.	ɐsˈɪst ðə tˈiːm
+Associate with success.	ɐsˈəʊsɪˌeɪt wɪð səksˈɛs
+Assuming that we leave now.	ɐsjˈuːmɪŋ ðæt wiː lˈiːv nˈaʊ
+Assuming that's true...	ɐsjˈuːmɪŋ ðæts tɹˈuː
+At any rate, decided.	æt ˌɛnɪ ɹˈeɪt dɪsˈaɪdɪd
+At any rate, it's done.	æt ˌɛnɪ ɹˈeɪt ɪts dˈʌn
+At any rate, let's go.	æt ˌɛnɪ ɹˈeɪt lˈɛts ɡˈəʊ
+At any rate, let's start.	æt ˌɛnɪ ɹˈeɪt lˈɛts stˈɑːt
+At night fall.	æt nˈaɪt fˈɔːl
+At odds with the rules.	æt ˈɒdz wɪððə ɹˈuːlz
+At risk of failure.	æt ɹˈɪsk ɒv fˈeɪliə
+At that time, no one knew.	æt ðæt tˈaɪm nˈəʊwˈɒn njˈuː
+At that time, we were young.	æt ðæt tˈaɪm wiː wɜː jˈʌŋ
+At the age of 18.	æt ðɪ ˈeɪdʒ ɒv ˈeɪtiːn
+At the counter.	æt ðə kˈaʊntɐ
+At the end of the day, it's up to you.	æt ðɪ ˈɛnd ɒvðə dˈeɪ ɪts ˈʌp tə juː
+At the end of the day, we tried.	æt ðɪ ˈɛnd ɒvðə dˈeɪ wiː tɹˈaɪd
+At the end of the day.	æt ðɪ ˈɛnd ɒvðə dˈeɪ
+At the end of the street.	æt ðɪ ˈɛnd ɒvðə stɹˈiːt
+At the expense of others.	æt ðɪ ɪkspˈɛns ɒv ˈʌðəz
+At the stage where decisions matter.	æt ðə stˈeɪdʒ wˌeə dɪsˈɪʒənz mˈætɐ
+At the time of the accident.	æt ðə tˈaɪm ɒvðɪ ˈæksɪdənt
+At the time of writing.	æt ðə tˈaɪm ɒv ɹˈaɪtɪŋ
+Attempt the question.	ɐtˈɛmpt ðə kwˈɛstʃən
+Attribute success to luck.	ˈætɹɪbjˌuːt səksˈɛs tə lˈʌk
+Attributed to Shakespeare.	ɐtɹˈɪbjuːtɪd tə ʃˈeɪkspiə
+Authenticate the painting.	ɔːθˈɛntɪkˌeɪt ðə pˈeɪntɪŋ
+Authenticate the user.	ɔːθˈɛntɪkˌeɪt ðə jˈuːzɐ
+Autism awareness.	ˈɔːtɪzəm ɐwˈeənəs
+Available on demand.	ɐvˈeɪləbəl ˌɒn dɪmˈɑːnd
+Avoid conflict.	ɐvˈɔɪd kˈɒnflɪkt
+Avoid distractions.	ɐvˈɔɪd dɪstɹˈækʃənz
+Avoid eating sweets.	ɐvˈɔɪd ˈiːtɪŋ swˈiːts
+Avoid going late.	ɐvˈɔɪd ɡˌəʊɪŋ lˈeɪt
+Avoid him at all costs.	ɐvˈɔɪd hˌɪm æt ˈɔːl kˈɒsts
+Avoid rush hour.	ɐvˈɔɪd ɹˈʌʃ ˈaʊɐ
+Avoid single use items.	ɐvˈɔɪd sˈɪŋɡəl jˈuːs ˈaɪtəmz
+Avoid stock outs.	ɐvˈɔɪd stˈɒk ˈaʊts
+Avoid the rush hour.	ɐvˈɔɪd ðə ɹˈʌʃ ˈaʊɐ
+Aw, bummer.	ˈɔː bˈʌmɐ
+Awesome!	ˈɔːsʌm
+Awkward silence.	ˈɔːkwəd sˈaɪləns
+Aww, good for you.	ˈɔːwɐ ɡˈʊd fɔː juː
+BYOB tonight.	bˈaɪɒb tənˈaɪt
+Back and forth between two ideas.	bˈæk ænd fˈɔːθ bɪtwˌiːn tˈuː aɪdˈiəz
+Back in the day, I was thin.	bˈæk ɪnðə dˈeɪ aɪ wɒz θˈɪn
+Back in the day, we walked.	bˈæk ɪnðə dˈeɪ wiː wˈɔːkt
+Back off!	bˈæk ˈɒf
+Bad attitude.	bˈæd ˈætɪtjˌuːd
+Bad brain fog today.	bˈæd bɹˈeɪn fˈɒɡ tədˈeɪ
+Bad case of insomnia.	bˈæd kˈeɪs ɒv ɪnsˈɒmnɪɐ
+Bad for your diet.	bˈæd fɔː jɔː dˈaɪət
+Bad hangover today.	bˈæd hˈæŋɡəʊvɐ tədˈeɪ
+Bad mood swing.	bˈæd mˈuːd swˈɪŋ
+Badge of honor.	bˈædʒ ɒv ˈɒnɐ
+Bake in the oven.	bˈeɪk ɪnðɪ ˈʌvən
+Balance the books.	bˈæləns ðə bˈʊks
+Balance work and life.	bˈæləns wˈɜːk ænd lˈaɪf
+Ban smoking.	bˈæn smˈəʊkɪŋ
+Bank transfer.	bˈæŋk tɹˈænsfɜː
+Banned for a racist gesture.	bˈænd fəɹɐ ɹˈeɪsɪst dʒˈɛstʃɐ
+Banned from the site.	bˈænd fɹʌmðə sˈaɪt
+Based on the assumption...	bˈeɪst ɒnðɪ ɐsˈʌmpʃən
+Battle for survival.	bˈætəl fɔː səvˈaɪvəl
+Be aware of the risks.	biː ɐwˈeəɹ ɒvðə ɹˈɪsks
+Be bold.	biː bˈəʊld
+Be brave.	biː bɹˈeɪv
+Be candid with me.	biː kˈændɪd wɪð mˌiː
+Be cautious.	biː kˈɔːʃəs
+Be consistent in your work.	biː kənsˈɪstənt ɪn jɔː wˈɜːk
+Be faster than light.	biː fˈɑːstɐ ðɐn lˈaɪt
+Be gentle with him.	biː dʒˈɛntəl wɪð hˌɪm
+Be mindful of others.	biː mˈaɪndfəl ɒv ˈʌðəz
+Be more coherent.	biː mˈɔː kəʊhˈiəɹənt
+Be more exact.	biː mˈɔːɹ ɪɡzˈækt
+Be my guest, take one.	biː maɪ ɡˈɛst tˈeɪk wˌɒn
+Be overwhelmed with joy.	biː ˌəʊvəwˈɛlmd wɪð dʒˈɔɪ
+Be positive about the future.	biː pˈɒzɪtˌɪv ɐbˌaʊt ðə fjˈuːtʃɐ
+Be prepared for anything.	biː pɹɪpˈeəd fɔːɹ ˈɛnɪθˌɪŋ
+Be prepared for rain.	biː pɹɪpˈeəd fɔː ɹˈeɪn
+Be quiet for once.	biː kwˈaɪət fɔː wˈʌns
+Be sure to call.	biː ʃˈɔː tə kˈɔːl
+Be thankful.	biː θˈæŋkfəl
+Be that as it may, I disagree.	biː ðæt æz ɪt mˈeɪ aɪ dˌɪsɐɡɹˈiː
+Be that as it may, we have to go.	biː ðæt æz ɪt mˈeɪ wiː hæv tə ɡˈəʊ
+Be there at 7 sharp.	biː ðeəɹ æt sˈɛvən ʃˈɑːp
+Bear in mind it's expensive.	bˈeəɹ ɪn mˈaɪnd ɪts ɪkspˈɛnsɪv
+Bear that in mind.	bˈeə ðæt ɪn mˈaɪnd
+Beat the price down.	bˈiːt ðə pɹˈaɪs dˈaʊn
+Beat the record.	bˈiːt ðə ɹˈɛkɔːd
+Beautiful landscape.	bjˈuːtɪfəl lˈændskeɪp
+Become a distributor.	bɪkˌʌm ɐ dɪstɹˈɪbjuːtɐ
+Become a farmer.	bɪkˌʌm ɐ fˈɑːmɐ
+Beef stir fry.	bˈiːf stˈɜː fɹˈaɪ
+Been glued to my desk.	bˌiːn ɡlˈuːd tə maɪ dˈɛsk
+Before I forget, you owe me $10.	bɪfˌɔːɹ aɪ fəɡˈɛt juː ˈəʊ mˌiː dˈɒlɐ tˈɛn
+Before night fall.	bɪfˌɔː nˈaɪt fˈɔːl
+Before we end, any questions?	bɪfˌɔː wiː ˈɛnd ˌɛnɪ kwˈɛstʃənz
+Begin shortly.	bɪɡˈɪn ʃˈɔːtlɪ
+Behave yourself!	bɪhˈeɪv jɔːsˈɛlf
+Behind the wheel.	bɪhˌaɪnd ðə wˈiːl
+Behind-the-scenes footage.	bɪhˌaɪndðəsˈiːnz fˈʊtɪdʒ
+Believe it or not, I won.	bɪlˈiːv ɪt ɔː nˈɒt aɪ wˈʌn
+Believe it or not, he's 50.	bɪlˈiːv ɪt ɔː nˈɒt hiːz fˈɪftɪ
+Bend over to pick it up.	bˈɛnd ˌəʊvɐ tə pˈɪk ɪt ˈʌp
+Bend your knees.	bˈɛnd jɔː nˈiːz
+Besides money, what matters?	bɪsˌaɪdz mˈʌnɪ wˌɒt mˈætəz
+Besides that, it's fine.	bɪsˌaɪdz ðˈæt ɪts fˈaɪn
+Best advice I've ever told.	bˈɛst ɐdvˈaɪs aɪv ˈɛvɐ tˈəʊld
+Best by far.	bˈɛst baɪ fˈɑː
+Best in the history of the team.	bˈɛst ɪnðə hˈɪstəɹɪ ɒvðə tˈiːm
+Best method.	bˈɛst mˈɛθəd
+Bet on poly market.	bˈɛt ˌɒn pˈɒlɪ mˈɑːkɪt
+Bet!	bˈɛt
+Better off staying.	bˈɛtɐɹ ˈɒf stˈeɪɪŋ
+Big advantage.	bˈɪɡ ɐdvˈɑːntɪdʒ
+Big ambition.	bˈɪɡ æmbˈɪʃən
+Big argument last night.	bˈɪɡ ˈɑːɡjuːmənt lˈɑːst nˈaɪt
+Big audience tonight.	bˈɪɡ ˈɔːdiəns tənˈaɪt
+Big backlog of emails.	bˈɪɡ bˈæklɒɡ ɒv ˈiːmeɪlz
+Big challenge ahead.	bˈɪɡ tʃˈælɪndʒ ɐhˈɛd
+Big client meeting today.	bˈɪɡ klˈaɪənt mˈiːtɪŋ tədˈeɪ
+Big crowds gathered.	bˈɪɡ kɹˈaʊdz ɡˈæðəd
+Big deal!	bˈɪɡ dˈiːl
+Big ego.	bˈɪɡ ˈiːɡəʊ
+Big fan of yours.	bˈɪɡ fˈæn ɒv jˈɔːz
+Big green flag!	bˈɪɡ ɡɹˈiːn flˈæɡ
+Big props for that.	bˈɪɡ pɹˈɒps fɔː ðˈæt
+Big shoutout to the team.	bˈɪɡ ʃˈaʊtaʊt tə ðə tˈiːm
+Bills are piling up.	bˈɪlz ɑː pˈaɪlɪŋ ˈʌp
+Binge watch a series.	bˈɪndʒ wˈɒtʃ ɐ sˈiəɹɪz
+Birds fly.	bˈɜːdz flˈaɪ
+Birds migrate south.	bˈɜːdz maɪɡɹˈeɪt sˈaʊθ
+Bit by bit, it improved.	bˈɪt baɪ bˈɪt ɪt ɪmpɹˈuːvd
+Bit of a stretch.	bˈɪt əvɐ stɹˈɛtʃ
+Bite the apple.	bˈaɪt ðɪ ˈæpəl
+Bite your tongue!	bˈaɪt jɔː tˈʌŋ
+Bitter rivals.	bˈɪtɐ ɹˈaɪvəlz
+Black beans.	blˈæk bˈiːnz
+Blanket statement.	blˈæŋkɪt stˈeɪtmənt
+Blast the music.	blˈɑːst ðə mjˈuːzɪk
+Blend in with the crowd.	blˈɛnd ɪn wɪððə kɹˈaʊd
+Bless my ears!	blˈɛs maɪ ˈiəz
+Blind to the truth.	blˈaɪnd tə ðə tɹˈuːθ
+Block the road.	blˈɒk ðə ɹˈəʊd
+Blood is thicker than water.	blˈʌd ɪz θˈɪkɐ ðɐn wˈɔːtɐ
+Blood was boiling.	blˈʌd wɒz bˈɔɪlɪŋ
+Bloody brilliant!	blˈʌdɪ bɹˈɪliənt
+Bloody hell!	blˈʌdɪ hˈɛl
+Bloody hell, that's expensive.	blˈʌdɪ hˈɛl ðæts ɪkspˈɛnsɪv
+Blue sky.	blˈuː skˈaɪ
+Blur the background.	blˈɜː ðə bˈækɡɹaʊnd
+Blurry background.	blˈɜːɹɪ bˈækɡɹaʊnd
+Body odor can be embarrassing.	bˈɒdɪ ˈəʊdɐ kæn biː ɪmbˈæɹəsɪŋ
+Boil down the data.	bˈɔɪl dˌaʊn ðə dˈeɪtɐ
+Boil the water.	bˈɔɪl ðə wˈɔːtɐ
+Boiled eggs.	bˈɔɪld ˈɛɡz
+Boiled potatoes.	bˈɔɪld pətˈeɪtəʊz
+Boils down to trust.	bˈɔɪlz dˌaʊn tə tɹˈʌst
+Bollocks!	bˈɒləks
+Boob job.	bˈuːb dʒˈɒb
+Book an appointment.	bˈʊk ɐn ɐpˈɔɪntmənt
+Book an isle seat.	bˈʊk ɐn ˈaɪəl sˈiːt
+Books and stuff.	bˈʊks ænd stˈʌf
+Border between countries.	bˈɔːdɐ bɪtwˌiːn kˈʌntɹɪz
+Borderline acceptable.	bˈɔːdəlˌaɪn ɐksˈɛptəbəl
+Borderline case.	bˈɔːdəlˌaɪn kˈeɪs
+Bored out of my mind in class.	bˈɔːd ˌaʊtəv maɪ mˈaɪnd ɪn klˈɑːs
+Bored to death.	bˈɔːd tə dˈɛθ
+Both parties agreed.	bˈəʊθ pˈɑːtɪz ɐɡɹˈiːd
+Box office flop.	bˈɒks ˈɒfɪs flˈɒp
+Box office hit.	bˈɒks ˈɒfɪs hˈɪt
+Boxing gloves.	bˈɒksɪŋ ɡlˈʌvz
+Brace for impact.	bɹˈeɪs fɔːɹ ˈɪmpækt
+Brace yourself.	bɹˈeɪs jɔːsˈɛlf
+Brain fog from lack of sleep.	bɹˈeɪn fˈɒɡ fɹɒm lˈæk ɒv slˈiːp
+Branch out into design.	bɹˈɑːntʃ ˈaʊt ˌɪntʊ dɪzˈaɪn
+Brand new car.	bɹˈænd njˈuː kˈɑː
+Brand new feature.	bɹˈænd njˈuː fˈiːtʃɐ
+Break a leg.	bɹˈeɪk ɐ lˈɛɡ
+Break the ceasefire.	bɹˈeɪk ðə sˈiːsfaɪə
+Break the chains.	bɹˈeɪk ðə tʃˈeɪnz
+Break the defensive line.	bɹˈeɪk ðə dɪfˈɛnsɪv lˈaɪn
+Break the habit.	bɹˈeɪk ðə hˈæbɪt
+Break the ice with a joke.	bɹˈeɪk ðɪ ˈaɪs wɪð ɐ dʒˈəʊk
+Break the record.	bɹˈeɪk ðə ɹˈɛkɔːd
+Break the rules.	bɹˈeɪk ðə ɹˈuːlz
+Break the vicious cycle.	bɹˈeɪk ðə vˈɪʃəs sˈaɪkəl
+Breakfast is included in the room.	bɹˈɛkfəst ɪz ɪŋklˈuːdɪd ɪnðə ɹˈuːm
+Breaking news just in.	bɹˈeɪkɪŋ njˈuːz dʒˈʌst ˈɪn
+Breathe deeply.	bɹˈiːð dˈiːplɪ
+Breathtaking beauty.	bɹˈɛθteɪkɪŋ bjˈuːtɪ
+Brief encounter.	bɹˈiːf ɪŋkˈaʊntɐ
+Brilliant idea!	bɹˈɪliənt aɪdˈiə
+Bring a jacket in case it's cold.	bɹˈɪŋ ɐ dʒˈækɪt ɪn kˈeɪs ɪts kˈəʊld
+Bring an adapter for the plugs.	bɹˈɪŋ ɐn ɐdˈæptɐ fəðə plˈʌɡz
+Brings me peace of mind.	bɹˈɪŋz mˌiː pˈiːs ɒv mˈaɪnd
+Broadcast the message.	bɹˈɔːdkɑːst ðə mˈɛsɪdʒ
+Broken promises.	bɹˈəʊkən pɹˈɒmɪsɪz
+Browse the shelves.	bɹˈaʊz ðə ʃˈɛlvz
+Browse the web.	bɹˈaʊz ðə wˈɛb
+Browser history.	bɹˈaʊzɐ hˈɪstəɹɪ
+Bruise the ego.	bɹˈuːz ðɪ ˈiːɡəʊ
+Brush up on the basics.	bɹˈʌʃ ˌʌp ɒnðə bˈeɪsɪks
+Brutal honesty.	bɹˈuːtəl ˈɒnɪstɪ
+Brutal workout.	bɹˈuːtəl wˈɜːkaʊt
+Buckle up!	bˈʌkəl ˈʌp
+Budget deficit.	bˈʌdʒɪt dˈɛfɪsˌɪt
+Buff the floor.	bˈʌf ðə flˈɔː
+Build a nest egg.	bˈɪld ɐ nˈɛst ˈɛɡ
+Build infrastructure.	bˈɪld ˈɪnfɹəstɹˌʌktʃɐ
+Build self awareness.	bˈɪld sˈɛlf ɐwˈeənəs
+Build stamina.	bˈɪld stˈæmɪnɐ
+Build trust.	bˈɪld tɹˈʌst
+Build with timber.	bˈɪld wɪð tˈɪmbɐ
+Bull market rally.	bˈʊl mˈɑːkɪt ɹˈælɪ
+Bummed about the trip.	bˈʌmd ɐbˌaʊt ðə tɹˈɪp
+Bumped into John.	bˈʌmpt ˌɪntʊ dʒˈɒn
+Buried in a snow drift.	bˈɛɹɪd ɪn ɐ snˈəʊ dɹˈɪft
+Buried under building debris.	bˈɛɹɪd ˌʌndɐ bˈɪldɪŋ dˈɛbɹiː
+Burnout is real.	bˈɜːnaʊt ɪz ɹˈiəl
+Burst into sobs.	bˈɜːst ˌɪntʊ sˈɒbz
+Business associate.	bˈɪznəs ɐsˈəʊsɪˌeɪt
+Business etiquette.	bˈɪznəs ˈɛtɪkˌɛt
+Business is thriving.	bˈɪznəs ɪz θɹˈaɪvɪŋ
+Business operations.	bˈɪznəs ˌɒpəɹˈeɪʃənz
+Busted!	bˈʌstɪd
+Busy with exam preparation.	bˈɪzɪ wɪð ɪɡzˈæm pɹˌɛpəɹˈeɪʃən
+Busy working.	bˈɪzɪ wˈɜːkɪŋ
+But for that, perfect.	bˌʌt fɔː ðˈæt pˈɜːfɛkt
+But for your help, I'd be lost.	bˌʌt fɔː jɔː hˈɛlp aɪd biː lˈɒst
+Buy into the company.	bˈaɪ ˌɪntʊ ðə kˈʌmpənɪ
+Buy the dip.	bˈaɪ ðə dˈɪp
+Buy wholesale.	bˈaɪ hˈəʊlseɪl
+By coincidence.	baɪ kəʊˈɪnsɪdəns
+By extension, we benefit.	baɪ ɪkstˈɛnʃən wiː bˈɛnɪfˌɪt
+By far the easiest.	baɪ fˈɑː ðɪ ˈiːzɪɪst
+By the way, I love it.	baɪ ðə wˈeɪ aɪ lˈʌv ɪt
+By the way, did you eat?	baɪ ðə wˈeɪ dˈɪd juː ˈiːt
+By way of London.	baɪ wˈeɪ ɒv lˈʌndən
+By way of apology.	baɪ wˈeɪ ɒv ɐpˈɒlədʒɪ
+By whom was it written?	baɪ hˈuːm wɒz ɪt ɹˈɪtən
+Cabin fever is setting in.	kˈæbɪn fˈiːvɐɹ ɪz sˈɛtɪŋ ˈɪn
+Calculate the expected value.	kˈælkjʊlˌeɪt ðɪ ɪkspˈɛktɪd vˈæljuː
+Calculate the total.	kˈælkjʊlˌeɪt ðə tˈəʊtəl
+Call me as soon as you arrive.	kˈɔːl mˌiː æz sˈuːn æz juː ɐɹˈaɪv
+Call me if need be.	kˈɔːl mˌiː ɪf nˈiːd bˈiː
+Call out the hypocrisy.	kˈɔːl ˈaʊt ðə hɪpˈɒkɹəsɪ
+Call the cops.	kˈɔːl ðə kˈɒps
+Calling a country a shithole is insulting.	kˈɔːlɪŋ ɐ kˈʌntɹɪ ɐ ʃˈɪthəʊl ɪz ɪnsˈʌltɪŋ
+Calm down, it's fine.	kˈɑːm dˈaʊn ɪts fˈaɪn
+Calm her down.	kˈɑːm hɜː dˈaʊn
+Calorie deficit.	kˈæləɹɪ dˈɛfɪsˌɪt
+Came out of nowhere.	kˈeɪm ˌaʊtəv nˈəʊweə
+Can I ask a favor?	kæn aɪ ˈɑːsk ɐ fˈeɪvɐ
+Can I assist you?	kæn aɪ ɐsˈɪst juː
+Can I borrow your pen?	kæn aɪ bˈɒɹəʊ jɔː pˈɛn
+Can I bother you for a sec?	kæn aɪ bˈɒðɐ juː fəɹɐ sˈɛk
+Can I get a refund?	kæn aɪ ɡɛt ɐ ɹˈiːfʌnd
+Can I get your feedback?	kæn aɪ ɡɛt jɔː fˈiːdbæk
+Can I have the receipt?	kæn aɪ hæv ðə ɹɪsˈiːt
+Can I help in any way?	kæn aɪ hˈɛlp ɪn ˌɛnɪ wˈeɪ
+Can I make my order now?	kæn aɪ mˌeɪk maɪ ˈɔːdɐ nˈaʊ
+Can I pick your brain?	kæn aɪ pˈɪk jɔː bɹˈeɪn
+Can I take a rain check?	kæn aɪ tˈeɪk ɐ ɹˈeɪn tʃˈɛk
+Can it process data fast enough?	kæn ɪt pɹˈəʊsɛs dˈeɪtɐ fˈɑːst ɪnˈʌf
+Can it!	kˈæn ɪt
+Can literally feel the cold.	kæn lˈɪtəɹəlɪ fˈiːl ðə kˈəʊld
+Can totally relate.	kæn tˈəʊtəlɪ ɹɪlˈeɪt
+Can we leave now?	kæn wiː lˈiːv nˈaʊ
+Can we talk?	kæn wiː tˈɔːk
+Can you account for this?	kæn juː ɐkˈaʊnt fɔː ðˈɪs
+Can you afford that?	kæn juː ɐfˈɔːd ðˈæt
+Can you assist me with this?	kæn juː ɐsˈɪst mˌiː wɪð ðˈɪs
+Can you come up with a better plan?	kæn juː kˈʌm ˌʌp wɪð ɐ bˈɛtɐ plˈæn
+Can you explain it?	kæn juː ɪksplˈeɪn ɪt
+Can you give me a hand?	kæn juː ɡˈɪv mˌiː ɐ hˈænd
+Can you handle this?	kæn juː hˈændəl ðˈɪs
+Can you lend me $5?	kæn juː lˈɛnd mˌiː dˈɒlɐ fˈaɪv
+Can you look after my dog?	kæn juː lˈʊk ˈɑːftɐ maɪ dˈɒɡ
+Can you make out the sign?	kæn juː mˌeɪk ˈaʊt ðə sˈaɪn
+Can you speed it up?	kæn juː spˈiːd ɪt ˈʌp
+Can't be late today.	kˈɑːnt biː lˈeɪt tədˈeɪ
+Can't function without my phone.	kˈɑːnt fˈʌŋkʃən wɪðˌaʊt maɪ fˈəʊn
+Can't help laughing.	kˈɑːnt hˈɛlp lˈɑːfɪŋ
+Can't help worrying.	kˈɑːnt hˈɛlp wˈʌɹɪɪŋ
+Can't keep up.	kˈɑːnt kˈiːp ˈʌp
+Can't log on.	kˈɑːnt lˈɒɡ ˈɒn
+Can't remember for the life of me.	kˈɑːnt ɹɪmˈɛmbɐ fəðə lˈaɪf ɒv mˌiː
+Can't stand his attitude.	kˈɑːnt stˈænd hɪz ˈætɪtjˌuːd
+Can't stand waiting.	kˈɑːnt stˈænd wˈeɪtɪŋ
+Can't wait to see how it turns out.	kˈɑːnt wˈeɪt tə sˈiː hˌaʊ ɪt tˈɜːnz ˈaʊt
+Capped with a great ending.	kˈæpt wɪð ɐ ɡɹˈeɪt ˈɛndɪŋ
+Capture the moment.	kˈæptʃɐ ðə mˈəʊmənt
+Cardiovascular disease.	kˌɑːdɪəʊvˈæskjʊlɐ dɪzˈiːz
+Cardiovascular exercise.	kˌɑːdɪəʊvˈæskjʊlɐɹ ˈɛksəsˌaɪz
+Care for the elderly.	kˈeə fəðɪ ˈɛldəlɪ
+Care for your wellbeing.	kˈeə fɔː jɔː wˈɛlbiːɪŋ
+Care to explain?	kˈeə tʊ ɪksplˈeɪn
+Care to join us?	kˈeə tə dʒˈɔɪn ˌʌs
+Career change.	kəɹˈiə tʃˈeɪndʒ
+Career path.	kəɹˈiə pˈɑːθ
+Carry on with what you were doing.	kˈæɹɪ ˌɒn wɪð wɒt juː wɜː dˈuːɪŋ
+Carry over to next year.	kˈæɹɪ ˌəʊvɐ tə nˈɛkst jˈiə
+Carry the groceries.	kˈæɹɪ ðə ɡɹˈəʊsəɹɪz
+Carry the plan through.	kˈæɹɪ ðə plˈæn θɹˈuː
+Case in point, look at this.	kˈeɪs ɪn pˈɔɪnt lˈʊk æt ðˈɪs
+Case in point: yesterday.	kˈeɪs ɪn pˈɔɪnt jˈɛstədˌeɪ
+Cash flow.	kˈæʃ flˈəʊ
+Cast a shadow.	kˈɑːst ɐ ʃˈædəʊ
+Catch crayfish.	kˈætʃ kɹˈeɪfɪʃ
+Catch happy hour.	kˈætʃ hˈæpɪ ˈaʊɐ
+Catch you later!	kˈætʃ juː lˈeɪtɐ
+Catchy tune!	kˈætʃɪ tjˈuːn
+Caught me at a bad time.	kˈɔːt mˌiː ætɐ bˈæd tˈaɪm
+Caught red-handed!	kˈɔːt ɹˈɛdhˈændɪd
+Caught them sneaking out.	kˈɔːt ðˌɛm snˈiːkɪŋ ˈaʊt
+Cause controversy.	kˈɔːz kˈɒntɹəvˌɜːsɪ
+Cause for concern.	kˈɔːz fɔː kənsˈɜːn
+Causing a public nuisance.	kˈɔːzɪŋ ɐ pˈʌblɪk njˈuːsəns
+Cell membrane.	sˈɛl mˈɛmbɹeɪn
+Chains of habit.	tʃˈeɪnz ɒv hˈæbɪt
+Chances are he's late.	tʃˈɑːnsɪz ɑː hiːz lˈeɪt
+Chances are she'll say yes.	tʃˈɑːnsɪz ɑː ʃiːl sˈeɪ jˈɛs
+Change is inevitable.	tʃˈeɪndʒ ɪz ɪnˈɛvɪtəbəl
+Change tactics.	tʃˈeɪndʒ tˈæktɪks
+Change the layout.	tʃˈeɪndʒ ðə lˈeɪaʊt
+Change the subject.	tʃˈeɪndʒ ðə sˈʌbdʒɛkt
+Change up the routine.	tʃˈeɪndʒ ˌʌp ðə ɹuːtˈiːn
+Change your mindset.	tʃˈeɪndʒ jɔː mˈaɪndsɛt
+Chat with friends.	tʃˈæt wɪð fɹˈɛndz
+Cheaper elsewhere.	tʃˈiːpɐɹ ˈɛlsweə
+Check my availability.	tʃˈɛk maɪ ɐvˌeɪləbˈɪlɪtɪ
+Check my bio.	tʃˈɛk maɪ bˈaɪəʊ
+Check out this song.	tʃˈɛk ˈaʊt ðɪs sˈɒŋ
+Check the arrival board.	tʃˈɛk ðɪ ɐɹˈaɪvəl bˈɔːd
+Check the exchange rate.	tʃˈɛk ðɪ ɪkstʃˈeɪndʒ ɹˈeɪt
+Check the feasibility.	tʃˈɛk ðə fˌiːzɪbˈɪlɪtɪ
+Check the inventory.	tʃˈɛk ðɪ ˈɪnvəntɹɪ
+Check the letterbox.	tʃˈɛk ðə lˈɛtəbˌɒks
+Check the pronunciation symbol.	tʃˈɛk ðə pɹənˌʌnsɪˈeɪʃən sˈɪmbəl
+Check the schedule.	tʃˈɛk ðə ʃˈɛdjuːl
+Check the starting lineup.	tʃˈɛk ðə stˈɑːtɪŋ lˈaɪnʌp
+Check the syllabus.	tʃˈɛk ðə sˈɪlæbəs
+Check the thermometer.	tʃˈɛk ðə θɜːmˈɒmɪtɐ
+Check the total amount.	tʃˈɛk ðə tˈəʊtəl ɐmˈaʊnt
+Check the voltage.	tʃˈɛk ðə vˈəʊltɪdʒ
+Check your blind spot.	tʃˈɛk jɔː blˈaɪnd spˈɒt
+Check your inbox.	tʃˈɛk jɔːɹ ˈɪnbɒks
+Check your privilege.	tʃˈɛk jɔː pɹˈɪvɪlɪdʒ
+Check your settings.	tʃˈɛk jɔː sˈɛtɪŋz
+Cheeky little thing.	tʃˈiːkɪ lˈɪtəl θˈɪŋ
+Cheered enthusiastically.	tʃˈiəd ɪnθjˌuːzɪˈæstɪklɪ
+Cheers!	tʃˈiəz
+Cheers, mate!	tʃˈiəz mˈeɪt
+Cheesy pickup line.	tʃˈiːsɪ pˈɪkʌp lˈaɪn
+Chef's apron.	ʃˈɛfs ˈeɪpɹən
+Cherish memories.	tʃˈɛɹɪʃ mˈɛməɹɪz
+Cherish your family.	tʃˈɛɹɪʃ jɔː fˈæmɪlɪ
+Childhood idol.	tʃˈaɪldhʊd ˈaɪdəl
+Children aren't admitted.	tʃˈɪldɹən ˌɑːnt ɐdmˈɪtɪd
+Children thrive on love.	tʃˈɪldɹən θɹˈaɪv ˌɒn lˈʌv
+Chill at home with snacks.	tʃˈɪl æt hˈəʊm wɪð snˈæks
+Chill at home.	tʃˈɪl æt hˈəʊm
+Chillax, dude.	tʃˈɪlæks djˈuːd
+Chime in anytime.	tʃˈaɪm ɪn ˈɛnɪtˌaɪm
+Chin up, it'll be okay.	tʃˈɪn ˈʌp ˌɪtəl biː əʊkˈeɪ
+Chin up, mate!	tʃˈɪn ˈʌp mˈeɪt
+Chinese takeout tonight.	tʃaɪnˈiːz tˈeɪkaʊt tənˈaɪt
+Chocolate brown eyes.	tʃˈɒklət bɹˈaʊn ˈaɪz
+Choke on food.	tʃˈəʊk ˌɒn fˈuːd
+Choke up.	tʃˈəʊk ˈʌp
+Choking, struggling to breathe.	tʃˈəʊkɪŋ stɹˈʌɡlɪŋ tə bɹˈiːð
+Chop up the onions.	tʃˈɒp ˌʌp ðɪ ˈʌniənz
+Chosen randomly.	tʃˈəʊzən ɹˈændəmlɪ
+Chronic inflammation.	kɹˈɒnɪk ɪnflæmˈeɪʃən
+Chuffed to bits.	tʃˈʌft tə bˈɪts
+Citizens' rights.	sˈɪtɪzənz ɹˈaɪts
+Civil engineering.	sˈɪvəl ˌɛndʒɪnˈiəɹɪŋ
+Clarify the point.	klˈæɹɪfˌaɪ ðə pˈɔɪnt
+Classic frenemy behavior.	klˈæsɪk fɹˈɛnəmɪ bɪhˈeɪvjɐ
+Classic guilt trip.	klˈæsɪk ɡˈɪlt tɹˈɪp
+Classic mistake.	klˈæsɪk mɪstˈeɪk
+Clean the toilet seat.	klˈiːn ðə tˈɔɪlɪt sˈiːt
+Clean up after yourself.	klˈiːn ˌʌp ˈɑːftɐ jɔːsˈɛlf
+Clean up the mess.	klˈiːn ˌʌp ðə mˈɛs
+Clean up your room.	klˈiːn ˌʌp jɔː ɹˈuːm
+Clean your plate.	klˈiːn jɔː plˈeɪt
+Cleaning up massive amounts of mud.	klˈiːnɪŋ ˌʌp mˈæsɪv ɐmˈaʊnts ɒv mˈʌd
+Clear the backlog.	klˈiə ðə bˈæklɒɡ
+Clear the building debris.	klˈiə ðə bˈɪldɪŋ dˈɛbɹiː
+Clear up the misunderstanding.	klˈiəɹ ˌʌp ðə mɪsˌʌndəstˈændɪŋ
+Climb the hill.	klˈaɪm ðə hˈɪl
+Climb the mountain.	klˈaɪm ðə mˈaʊntɪn
+Climb the ranks.	klˈaɪm ðə ɹˈæŋks
+Clinically depressed.	klˈɪnɪklɪ dɪpɹˈɛst
+Clock out at five.	klˈɒk ˈaʊt æt fˈaɪv
+Close the latch.	klˈəʊs ðə lˈætʃ
+Close your eye lids.	klˈəʊs jɔːɹ ˈaɪ lˈɪdz
+Clumsy me!	klˈʌmzɪ mˌiː
+Cluster of houses.	klˈʌstɐɹ ɒv hˈaʊzɪz
+Clutch the bag tightly.	klˈʌtʃ ðə bˈæɡ tˈaɪtlɪ
+Coffee bean.	kˈɒfɪ bˈiːn
+Coffee is my legal addiction.	kˈɒfɪ ɪz maɪ lˈiːɡəl ɐdˈɪkʃən
+Coffee or something?	kˈɒfɪ ɔː sˈʌmθɪŋ
+Coffee stain.	kˈɒfɪ stˈeɪn
+Cold-like symptoms.	kˈəʊldlˈaɪk sˈɪmptəmz
+Collaborate on a project.	kəlˈæbəɹˌeɪt ˌɒn ɐ pɹˈɒdʒɛkt
+Color blind.	kˈʌlɐ blˈaɪnd
+Come check it out.	kˈʌm tʃˈɛk ɪt ˈaʊt
+Come check out my place.	kˈʌm tʃˈɛk ˈaʊt maɪ plˈeɪs
+Come closer to the screen.	kˈʌm klˈəʊsɐ tə ðə skɹˈiːn
+Come closer, please.	kˈʌm klˈəʊsɐ plˈiːz
+Come down from there.	kˈʌm dˌaʊn fɹɒm ðˈeə
+Come hell or high water, we finish.	kˈʌm hˈɛl ɔː hˈaɪ wˈɔːtɐ wiː fˈɪnɪʃ
+Come help me.	kˈʌm hˈɛlp mˌiː
+Come help us out.	kˈʌm hˈɛlp ˌʌs ˈaʊt
+Come here, I'll show you.	kˈʌm hˈiə aɪl ʃˈəʊ juː
+Come here, please.	kˈʌm hˈiə plˈiːz
+Come in, make yourself at home.	kˈʌm ˈɪn mˌeɪk jɔːsˈɛlf æt hˈəʊm
+Come on, let's go!	kˈʌm ˈɒn lˈɛts ɡˈəʊ
+Come out clean.	kˈʌm ˈaʊt klˈiːn
+Come out of your shell.	kˈʌm ˌaʊtəv jɔː ʃˈɛl
+Come say hello.	kˈʌm sˈeɪ həlˈəʊ
+Come see me.	kˈʌm sˈiː mˌiː
+Come see this!	kˈʌm sˈiː ðˈɪs
+Come to a halt.	kˈʌm tʊ ɐ hˈɒlt
+Come to find out, he was lying.	kˈʌm tə fˈaɪnd ˈaʊt hiː wɒz lˈaɪɪŋ
+Come to find out, it's free.	kˈʌm tə fˈaɪnd ˈaʊt ɪts fɹˈiː
+Come to think of it, I forgot.	kˈʌm tə θˈɪŋk ɒv ɪt aɪ fəɡˈɒt
+Come to think of it, he called.	kˈʌm tə θˈɪŋk ɒv ɪt hiː kˈɔːld
+Come to think of it, he was right.	kˈʌm tə θˈɪŋk ɒv ɪt hiː wɒz ɹˈaɪt
+Come to think of it, that's strange.	kˈʌm tə θˈɪŋk ɒv ɪt ðæts stɹˈeɪndʒ
+Comes down to your choice.	kˈʌmz dˌaʊn tə jɔː tʃˈɔɪs
+Coming or not?	kˈʌmɪŋ ɔː nˈɒt
+Commodity prices.	kəmˈɒdɪtɪ pɹˈaɪsɪz
+Commonplace issue.	kˈɒmənplˌeɪs ˈɪʃuː
+Communal kitchen.	kəmjˈuːnəl kˈɪtʃən
+Communal living.	kəmjˈuːnəl lˈɪvɪŋ
+Compact the files.	kəmpˈækt ðə fˈaɪlz
+Compact the soil.	kəmpˈækt ðə sˈɔɪl
+Compatible personalities.	kəmpˈætɪbəl pˌɜːsənˈælɪtɪz
+Compatible with iPhone.	kəmpˈætɪbəl wɪð ˈaɪ fˈəʊn
+Compelling evidence.	kəmpˈɛlɪŋ ˈɛvɪdəns
+Compensation package.	kˌɒmpənsˈeɪʃən pˈækɪdʒ
+Complete an apprenticeship.	kəmplˈiːt ɐn ɐpɹˈɛntɪsʃˌɪp
+Compliance training.	kəmplˈaɪəns tɹˈeɪnɪŋ
+Compose a song.	kəmpˈəʊz ɐ sˈɒŋ
+Compose an email.	kəmpˈəʊz ɐn ˈiːmeɪl
+Computer hardware.	kəmpjˈuːtɐ hˈɑːdweə
+Conclude the meeting.	kəŋklˈuːd ðə mˈiːtɪŋ
+Concrete evidence.	kˈɒŋkɹiːt ˈɛvɪdəns
+Confess your sins.	kənfˈɛs jɔː sˈɪnz
+Confidential information.	kˌɒnfɪdˈɛnʃəl ˌɪnfəmˈeɪʃən
+Confirm availability.	kənfˈɜːm ɐvˌeɪləbˈɪlɪtɪ
+Confirm the delivery address.	kənfˈɜːm ðə dɪlˈɪvəɹɪ ɐdɹˈɛs
+Confirmed!	kənfˈɜːmd
+Confront him about it.	kənfɹˈʌnt hˌɪm ɐbˈaʊt ɪt
+Confused look.	kənfjˈuːzd lˈʊk
+Congratulations on the new job.	kəŋɡɹˈætʃʊlˈeɪʃənz ɒnðə njˈuː dʒˈɒb
+Congratulations on your wedding.	kəŋɡɹˈætʃʊlˈeɪʃənz ˌɒn jɔː wˈɛdɪŋ
+Conservative estimate.	kənsˈɜːvətˌɪv ˈɛstɪmət
+Conservative views.	kənsˈɜːvətˌɪv vjˈuːz
+Considering that, fair.	kənsˈɪdəɹɪŋ ðˈæt fˈeə
+Considering that, well done.	kənsˈɪdəɹɪŋ ðˈæt wˈɛl dˈʌn
+Consist of three parts.	kənsˈɪst ɒv θɹˈiː pˈɑːts
+Consistency is key.	kənsˈɪstənsɪ ɪz kˈiː
+Consistent results.	kənsˈɪstənt ɹɪzˈʌlts
+Constant interruptions.	kˈɒnstənt ˌɪntəɹˈʌpʃənz
+Contain the spread.	kəntˈeɪn ðə spɹˈɛd
+Control your destiny.	kəntɹˈəʊl jɔː dˈɛstɪnɪ
+Convert dollars to yen.	kənvˈɜːt dˈɒləz tə jˈɛn
+Convert the file.	kənvˈɜːt ðə fˈaɪl
+Convey a message.	kənvˈeɪ ɐ mˈɛsɪdʒ
+Convey my thanks.	kənvˈeɪ maɪ θˈæŋks
+Convince me.	kənvˈɪns mˌiː
+Cook dinner.	kˈʊk dˈɪnɐ
+Cook some rice.	kˈʊk sˌʌm ɹˈaɪs
+Cooked rice.	kˈʊkt ɹˈaɪs
+Cool or what?	kˈuːl ɔː wˈɒt
+Cooped up inside all weekend.	kˈuːpt ˌʌp ɪnsˈaɪd ˈɔːl wiːkˈɛnd
+Cope with stress.	kˈəʊp wɪð stɹˈɛs
+Cops are cracking down.	kˈɒps ɑː kɹˈækɪŋ dˈaʊn
+Corny but cute.	kˈɔːnɪ bˌʌt kjˈuːt
+Correct me if I'm wrong.	kəɹˈɛkt mˌiː ɪf aɪm ɹˈɒŋ
+Correct your mistake.	kəɹˈɛkt jɔː mɪstˈeɪk
+Correlation isn't causation.	kˌɒɹɪlˈeɪʃən ˌɪzənt kɔːsˈeɪʃən
+Corrupt politicians.	kəɹˈʌpt pˌɒlɪtˈɪʃənz
+Cosmetic surgery.	kɒzmˈɛtɪk sˈɜːdʒəɹɪ
+Cost: approx $50.	kˈɒst ɐpɹˈɒks dˈɒlɐ fˈɪftɪ
+Cough syrup.	kˈɒf sˈɪɹʌp
+Could use some help.	kʊd jˈuːz sˌʌm hˈɛlp
+Could you advise if I'm eligible?	kʊd juː ɐdvˈaɪz ɪf aɪm ˈɛlɪdʒəbəl
+Could you advise if this is available?	kʊd juː ɐdvˈaɪz ɪf ðɪs ɪz ɐvˈeɪləbəl
+Could you clarify?	kʊd juː klˈæɹɪfˌaɪ
+Could you elaborate?	kʊd juː ɪlˈæbəɹˌeɪt
+Couldn't agree more on that.	kˌʊdənt ɐɡɹˈiː mˈɔːɹ ˌɒn ðˈæt
+Couldn't bring myself to say it.	kˌʊdənt bɹˈɪŋ maɪsˈɛlf tə sˈeɪ ɪt
+Count down from 10!	kˈaʊnt dˌaʊn fɹɒm tˈɛn
+Count on the team.	kˈaʊnt ɒnðə tˈiːm
+Count too much on him.	kˈaʊnt tˈuː mʌtʃ ˈɒn hˌɪm
+Counter the argument.	kˈaʊntɐ ðɪ ˈɑːɡjuːmənt
+Counting down to launch.	kˈaʊntɪŋ dˌaʊn tə lˈɔːntʃ
+Country folk.	kˈʌntɹɪ fˈəʊk
+Cover in mud.	kˈʌvɐɹ ɪn mˈʌd
+Cover up a mistake.	kˈʌvɐɹ ˌʌp ɐ mɪstˈeɪk
+Cover up the truth.	kˈʌvɐɹ ˌʌp ðə tɹˈuːθ
+Covered in dust.	kˈʌvəd ɪn dˈʌst
+Covered in slime.	kˈʌvəd ɪn slˈaɪm
+Crack the shell.	kɹˈæk ðə ʃˈɛl
+Cracks in the sidewalk.	kɹˈæks ɪnðə sˈaɪdwɔːk
+Crap, I forgot my keys.	kɹˈæp aɪ fəɡˈɒt maɪ kˈiːz
+Crashed into a wall.	kɹˈæʃt ˌɪntʊ ɐ wˈɔːl
+Crawl out of a hole.	kɹˈɔːl ˌaʊtəv ɐ hˈəʊl
+Crawl out of bed.	kɹˈɔːl ˌaʊtəv bˈɛd
+Crayfish boil.	kɹˈeɪfɪʃ bˈɔɪl
+Crazy or what?	kɹˈeɪzɪ ɔː wˈɒt
+Created a ripple effect.	kɹiːˈeɪtɪd ɐ ɹˈɪpəl ɪfˈɛkt
+Creative outlet.	kɹiːˈeɪtɪv ˈaʊtlɛt
+Credit card.	kɹˈɛdɪt kˈɑːd
+Creepy vibes.	kɹˈiːpɪ vˈaɪbz
+Critical situation.	kɹˈɪtɪkəl sˌɪtʃuːˈeɪʃən
+Critical thinking.	kɹˈɪtɪkəl θˈɪŋkɪŋ
+Critics blasted the film.	kɹˈɪtɪks blˈɑːstɪd ðə fˈɪlm
+Critics trashed the movie.	kɹˈɪtɪks tɹˈæʃt ðə mˈuːvɪ
+Crocodile tears.	kɹˈɒkədˌaɪl tˈiəz
+Cross it off the list.	kɹˈɒs ɪt ˈɒf ðə lˈɪst
+Cross the border.	kɹˈɒs ðə bˈɔːdɐ
+Cross the boundary.	kɹˈɒs ðə bˈaʊndəɹɪ
+Cross the road.	kɹˈɒs ðə ɹˈəʊd
+Cross your fingers.	kɹˈɒs jɔː fˈɪŋɡəz
+Cry more, noob.	kɹˈaɪ mˈɔː nˈuːb
+Crystal clear water.	kɹˈɪstəl klˈiə wˈɔːtɐ
+Culinary skills.	kjˈʊlɪnəɹɪ skˈɪlz
+Cult classic.	kˈʌlt klˈæsɪk
+Cultural background.	kˈʌltʃəɹəl bˈækɡɹaʊnd
+Cultural diversity.	kˈʌltʃəɹəl daɪvˈɜːsɪtɪ
+Cultural icon.	kˈʌltʃəɹəl ˈaɪkɒn
+Cultural reference.	kˈʌltʃəɹəl ɹˈɛfɹəns
+Cup of brew?	kˈʌp ɒv bɹˈuː
+Currently unemployed.	kˈʌɹəntlɪ ʌnɪmplˈɔɪd
+Cushion the blow.	kˈʊʃən ðə blˈəʊ
+Customize the settings.	kˈʌstəmˌaɪz ðə sˈɛtɪŋz
+Customize your profile.	kˈʌstəmˌaɪz jɔː pɹˈəʊfaɪl
+Cut it out!	kˈʌt ɪt ˈaʊt
+Cut my bangs.	kˈʌt maɪ bˈæŋz
+Cut my hair.	kˈʌt maɪ hˈeə
+Cut the grass.	kˈʌt ðə ɡɹˈɑːs
+Cut through the red tape.	kˈʌt θɹuː ðə ɹˈɛd tˈeɪp
+Cycling to work is healthy.	sˈaɪklɪŋ tə wˈɜːk ɪz hˈɛlθɪ
+Cyclothymic disorder is a mood disorder.	sˌaɪklɒθˈɪmɪk dɪsˈɔːdɐɹ ɪz ɐ mˈuːd dɪsˈɔːdɐ
+Daily chores.	dˈeɪlɪ tʃˈɔːz
+Damaged beyond repair.	dˈæmɪdʒd bɪjˌɒnd ɹɪpˈeə
+Damn it all!	dˈæm ɪt ˈɔːl
+Damn it all, let's just go.	dˈæm ɪt ˈɔːl lˈɛts dʒˈʌst ɡˈəʊ
+Damn, I forgot.	dˈæm aɪ fəɡˈɒt
+Damn, that's good.	dˈæm ðæts ɡˈʊd
+Dang it.	dˈæŋ ɪt
+Dang, that's expensive.	dˈæŋ ðæts ɪkspˈɛnsɪv
+Darkness of the soul.	dˈɑːknəs ɒvðə sˈəʊl
+Darn it!	dˈɑːn ɪt
+Darn, I missed it.	dˈɑːn aɪ mˈɪst ɪt
+Dash to the store.	dˈæʃ tə ðə stˈɔː
+Data crunch all night.	dˈeɪtɐ kɹˈʌntʃ ˈɔːl nˈaɪt
+Deactivate the alarm.	diːˈæktɪvˌeɪt ðɪ ɐlˈɑːm
+Deactivate your account.	diːˈæktɪvˌeɪt jɔːɹ ɐkˈaʊnt
+Dead easy.	dˈɛd ˈiːzɪ
+Dead tired.	dˈɛd tˈaɪəd
+Dead-end job.	dˈɛdˈɛnd dʒˈɒb
+Dead-end street.	dˈɛdˈɛnd stɹˈiːt
+Deal with the problem.	dˈiːl wɪððə pɹˈɒbləm
+Decided by whom?	dɪsˈaɪdɪd baɪ hˈuːm
+Decided to leave.	dɪsˈaɪdɪd tə lˈiːv
+Deck out the hall.	dˈɛk ˈaʊt ðə hˈɔːl
+Decked out in gold.	dˈɛkt ˈaʊt ɪn ɡˈəʊld
+Deep affection for her.	dˈiːp ɐfˈɛkʃən fɔː hɜː
+Deep gratitude.	dˈiːp ɡɹˈætɪtjˌuːd
+Deeply concerning data.	dˈiːplɪ kənsˈɜːnɪŋ dˈeɪtɐ
+Defend free speech.	dɪfˈɛnd fɹˈiː spˈiːtʃ
+Defend the title.	dɪfˈɛnd ðə tˈaɪtəl
+Defend yourself.	dɪfˈɛnd jɔːsˈɛlf
+Define the term.	dɪfˈaɪn ðə tˈɜːm
+Define your goals.	dɪfˈaɪn jɔː ɡˈəʊlz
+Deflect the blow.	dɪflˈɛkt ðə blˈəʊ
+Deflect the question.	dɪflˈɛkt ðə kwˈɛstʃən
+Delayed due to traffic.	dɪlˈeɪd djˈuː tə tɹˈæfɪk
+Delegate tasks.	dˈɛlɪɡˌeɪt tˈɑːsks
+Demand an apology.	dɪmˈɑːnd ɐn ɐpˈɒlədʒɪ
+Demand compensation.	dɪmˈɑːnd kˌɒmpənsˈeɪʃən
+Demonstrate your skill.	dˈɛmənstɹˌeɪt jɔː skˈɪl
+Departure is at 9.	dɪpˈɑːtʃɐɹ ɪz æt nˈaɪn
+Deport illegal immigrants.	dɪpˈɔːt ɪlˈiːɡəl ˈɪmɪɡɹənts
+Deserve a break.	dɪzˈɜːv ɐ bɹˈeɪk
+Deserved recognition.	dɪzˈɜːvd ɹˌɛkəɡnˈɪʃən
+Design a logo.	dɪzˈaɪn ɐ lˈəʊɡəʊ
+Designed by ~	dɪzˈaɪnd baɪ tˈɪldɐ
+Desperate times.	dˈɛspəɹət tˈaɪmz
+Despite a few mishaps.	dɪspˈaɪt ɐ fjˈuː mˈɪshæps
+Despite his shortcomings.	dɪspˈaɪt hɪz ʃˈɔːtkʌmɪŋz
+Destined for greatness.	dˈɛstɪnd fɔː ɡɹˈeɪtnəs
+Destined to fail.	dˈɛstɪnd tə fˈeɪl
+Destined to win.	dˈɛstɪnd tə wˈɪn
+Destroy the evidence.	dɪstɹˈɔɪ ðɪ ˈɛvɪdəns
+Destroyed by fire.	dɪstɹˈɔɪd baɪ fˈaɪə
+Detach emotionally.	dɪtˈætʃ ɪmˈəʊʃənəlɪ
+Detach the cable.	dɪtˈætʃ ðə kˈeɪbəl
+Detailed analysis is needed.	dˈiːteɪld ɐnˈæləsˌɪs ɪz nˈiːdɪd
+Develop a counter strategy.	dɪvˈɛləp ɐ kˈaʊntɐ stɹˈætədʒɪ
+Diagnosed with cyclothymic disorder.	dˌaɪəɡnˈəʊzd wɪð sˌaɪklɒθˈɪmɪk dɪsˈɔːdɐ
+Dialogue between cultures.	dˈaɪəlɒɡ bɪtwˌiːn kˈʌltʃəz
+Diarrhea from bad food.	dˌaɪəɹˈiə fɹɒm bˈæd fˈuːd
+Did she mention it?	dˈɪd ʃiː mˈɛnʃən ɪt
+Did you back up your phone?	dˈɪd juː bˈæk ˌʌp jɔː fˈəʊn
+Did you book the hotel?	dˈɪd juː bˈʊk ðə həʊtˈɛl
+Did you do that on purpose?	dˈɪd juː dˈuː ðæt ˌɒn pˈɜːpəs
+Did you download the app?	dˈɪd juː dˈaʊnləʊd ðɪ ˈæp
+Did you enjoy the movie?	dˈɪd juː ɪndʒˈɔɪ ðə mˈuːvɪ
+Did you get enough?	dˈɪd juː ɡɛt ɪnˈʌf
+Did you make up with her?	dˈɪd juː mˌeɪk ˈʌp wɪð hɜː
+Did you sign up?	dˈɪd juː sˈaɪn ˈʌp
+Didn't mean to offend.	dˈɪdnt mˈiːn tʊ əfˈɛnd
+Different approach.	dˈɪfɹənt ɐpɹˈəʊtʃ
+Different from yesterday.	dˈɪfɹənt fɹɒm jˈɛstədˌeɪ
+Different plugs in the UK.	dˈɪfɹənt plˈʌɡz ɪnðə jˌuːkˈeɪ
+Different point of view.	dˈɪfɹənt pˈɔɪnt ɒv vjˈuː
+Different standpoint.	dˈɪfɹənt stˈændpɔɪnt
+Differentiate the two.	dˌɪfəɹˈɛnʃɪˌeɪt ðə tˈuː
+Differentiate your brand.	dˌɪfəɹˈɛnʃɪˌeɪt jɔː bɹˈænd
+Diffusion of innovation.	dɪfjˈuːʒən ɒv ˌɪnəvˈeɪʃən
+Dilute the juice.	daɪlˈuːt ðə dʒˈuːs
+Diluted message.	daɪlˈuːtɪd mˈɛsɪdʒ
+Dim lights.	dˈɪm lˈaɪts
+Dinner with the in-laws.	dˈɪnɐ wɪððɪ ɪnlˈɔːz
+Dinosaurs went extinct.	dˈaɪnəsˌɔːz wɛnt ɪkstˈɪŋkt
+Dip it in sauce.	dˈɪp ɪt ɪn sˈɔːs
+Direct a film.	daɪɹˈɛkt ɐ fˈɪlm
+Direct sunlight.	daɪɹˈɛkt sˈʌnlaɪt
+Direct your attention here.	daɪɹˈɛkt jɔːɹ ɐtˈɛnʃən hˈiə
+Dirty clothes.	dˈɜːtɪ klˈəʊðz
+Dirty trick.	dˈɜːtɪ tɹˈɪk
+Disaster waiting to happen.	dɪzˈɑːstɐ wˈeɪtɪŋ tə hˈæpən
+Disclose the details.	dɪsklˈəʊz ðə dˈiːteɪlz
+Discontinue the product.	dɪskəntˈɪnjuː ðə pɹˈɒdʌkt
+Dismantle the machine.	dɪsmˈɑːntəl ðə məʃˈiːn
+Dismantle the system.	dɪsmˈɑːntəl ðə sˈɪstəm
+Disposable cups.	dɪspˈəʊzəbəl kˈʌps
+Disposable income.	dɪspˈəʊzəbəl ˈɪŋkʌm
+Dispose of old papers.	dɪspˈəʊz ɒv ˈəʊld pˈeɪpəz
+Dispose of the trash.	dɪspˈəʊz ɒvðə tɹˈæʃ
+Distort the truth.	dɪstˈɔːt ðə tɹˈuːθ
+Distorted image.	dɪstˈɔːtɪd ˈɪmɪdʒ
+Ditto on that.	dˈɪtəʊ ˌɒn ðˈæt
+Ditto!	dˈɪtəʊ
+Diversity matters.	daɪvˈɜːsɪtɪ mˈætəz
+Divert attention.	daɪvˈɜːt ɐtˈɛnʃən
+Divert traffic.	daɪvˈɜːt tɹˈæfɪk
+Divided into teams.	dɪvˈaɪdɪd ˌɪntʊ tˈiːmz
+Division of labor.	dɪvˈɪʒən ɒv lˈeɪbɐ
+Do I have to go?	dˈuː aɪ hæv tə ɡˈəʊ
+Do I have to pay now?	dˈuː aɪ hæv tə pˈeɪ nˈaʊ
+Do I qualify for this?	dˈuː aɪ kwˈɒlɪfˌaɪ fɔː ðˈɪs
+Do an analysis.	dˈuː ɐn ɐnˈæləsˌɪs
+Do him a favor.	dˈuː hˌɪm ɐ fˈeɪvɐ
+Do it alone.	dˈuː ɪt ɐlˈəʊn
+Do it; no one else will care.	dˈuː ɪt nˈəʊwˈɒn ˈɛls wɪl kˈeə
+Do me a favor.	dˈuː mˌiː ɐ fˈeɪvɐ
+Do you have a minute?	dˈuː juː hæv ɐ mˈɪnɪt
+Do you have a problem with me?	dˈuː juː hæv ɐ pɹˈɒbləm wɪð mˌiː
+Do you have siblings?	dˈuː juː hæv sˈɪblɪŋz
+Do you have some time?	dˈuː juː hæv sˌʌm tˈaɪm
+Do you recall the meeting?	dˈuː juː ɹɪkˈɔːl ðə mˈiːtɪŋ
+Do you think you could check this?	dˈuː juː θˈɪŋk juː kʊd tʃˈɛk ðˈɪs
+Do you think you could help me?	dˈuː juː θˈɪŋk juː kʊd hˈɛlp mˌiː
+Doctor examined me.	dˈɒktɐɹ ɪɡzˈæmɪnd mˌiː
+Dodge the ball!	dˈɒdʒ ðə bˈɔːl
+Dodgy neighborhood.	dˈɒdʒɪ nˈeɪbəhˌʊd
+Does anyone give a damn?	dˈʌz ˈɛnɪwˌɒn ɡˈɪv ɐ dˈæm
+Does this time suit you?	dˈʌz ðɪs tˈaɪm sˈuːt juː
+Dog poop.	dˈɒɡ pˈuːp
+Doing the chores.	dˌuːɪŋ ðə tʃˈɔːz
+Don't abandon hope.	dˈəʊnt ɐbˈændən hˈəʊp
+Don't add fuel to the fire.	dˈəʊnt ˈæd fjˈuːəl tə ðə fˈaɪə
+Don't air your dirty laundry.	dˈəʊnt ˈeə jɔː dˈɜːtɪ lˈɔːndɹɪ
+Don't argue with me.	dˈəʊnt ˈɑːɡjuː wɪð mˌiː
+Don't bail on us!	dˈəʊnt bˈeɪl ˈɒn ˌʌs
+Don't be a backseat driver.	dˈəʊnt biː ɐ bˈæksiːt dɹˈaɪvɐ
+Don't be a blockhead.	dˈəʊnt biː ɐ blˈɒkhɛd
+Don't be a chicken.	dˈəʊnt biː ɐ tʃˈɪkɪn
+Don't be a clown.	dˈəʊnt biː ɐ klˈaʊn
+Don't be a couch potato.	dˈəʊnt biː ɐ kˈaʊtʃ pətˈeɪtəʊ
+Don't be a coward.	dˈəʊnt biː ɐ kˈaʊəd
+Don't be a flake.	dˈəʊnt biː ɐ flˈeɪk
+Don't be a fool.	dˈəʊnt biː ɐ fˈuːl
+Don't be a jerk.	dˈəʊnt biː ɐ dʒˈɜːk
+Don't be a loser.	dˈəʊnt biː ɐ lˈuːzɐ
+Don't be a slave driver.	dˈəʊnt biː ɐ slˈeɪv dɹˈaɪvɐ
+Don't be afraid to experiment with different styles.	dˈəʊnt biː ɐfɹˈeɪd tʊ ɛkspˈɛɹɪmənt wɪð dˈɪfɹənt stˈaɪlz
+Don't be arrogant.	dˈəʊnt biː ˈæɹəɡənt
+Don't be clingy.	dˈəʊnt biː klˈɪŋɪ
+Don't be down about it.	dˈəʊnt biː dˌaʊn ɐbˈaʊt ɪt
+Don't be flaky.	dˈəʊnt biː flˈeɪkɪ
+Don't be fussy.	dˈəʊnt biː fˈʌsɪ
+Don't be hard on yourself.	dˈəʊnt biː hˈɑːd ˌɒn jɔːsˈɛlf
+Don't be hesitant.	dˈəʊnt biː hˈɛzɪtənt
+Don't be hypocritical.	dˈəʊnt biː hˌɪpəkɹˈɪtɪkəl
+Don't be nasty.	dˈəʊnt biː nˈɑːstɪ
+Don't be needy.	dˈəʊnt biː nˈiːdɪ
+Don't be nosy.	dˈəʊnt biː nˈəʊzɪ
+Don't be petty.	dˈəʊnt biː pˈɛtɪ
+Don't be selfish.	dˈəʊnt biː sˈɛlfɪʃ
+Don't be shy — come and join us.	dˈəʊnt biː ʃˈaɪ kˈʌm ænd dʒˈɔɪn ˌʌs
+Don't be shy.	dˈəʊnt biː ʃˈaɪ
+Don't be silly.	dˈəʊnt biː sˈɪlɪ
+Don't be so bossy.	dˈəʊnt biː sˌəʊ bˈɒsɪ
+Don't be so dramatic.	dˈəʊnt biː sˌəʊ dɹəmˈætɪk
+Don't be so pessimistic.	dˈəʊnt biː sˌəʊ pˌɛsɪmˈɪstɪk
+Don't be so picky.	dˈəʊnt biː sˌəʊ pˈɪkɪ
+Don't be so uptight.	dˈəʊnt biː sˌəʊ ʌptˈaɪt
+Don't be stubborn.	dˈəʊnt biː stˈʌbən
+Don't be stuck up.	dˈəʊnt biː stˈʌk ˈʌp
+Don't be such a drama queen.	dˈəʊnt biː sˈʌtʃ ɐ dɹˈɑːmɐ kwˈiːn
+Don't be too hard on yourself.	dˈəʊnt biː tˈuː hˈɑːd ˌɒn jɔːsˈɛlf
+Don't be worried.	dˈəʊnt biː wˈʌɹɪd
+Don't believe the hype.	dˈəʊnt bɪlˈiːv ðə hˈaɪp
+Don't bend it.	dˈəʊnt bˈɛnd ɪt
+Don't bend over too far.	dˈəʊnt bˈɛnd ˌəʊvɐ tˈuː fˈɑː
+Don't black out!	dˈəʊnt blˈæk ˈaʊt
+Don't blame me for it.	dˈəʊnt blˈeɪm mˌiː fɔːɹ ɪt
+Don't blame me.	dˈəʊnt blˈeɪm mˌiː
+Don't blink.	dˈəʊnt blˈɪŋk
+Don't blow it now.	dˈəʊnt blˈəʊ ɪt nˈaʊ
+Don't blow it off.	dˈəʊnt blˈəʊ ɪt ˈɒf
+Don't bluff me.	dˈəʊnt blˈʌf mˌiː
+Don't bother calling.	dˈəʊnt bˈɒðɐ kˈɔːlɪŋ
+Don't bother explaining.	dˈəʊnt bˈɒðɐɹ ɪksplˈeɪnɪŋ
+Don't bother her.	dˈəʊnt bˈɒðɐ hɜː
+Don't bother him.	dˈəʊnt bˈɒðɐ hˌɪm
+Don't bother trying.	dˈəʊnt bˈɒðɐ tɹˈaɪɪŋ
+Don't bottle it up.	dˈəʊnt bˈɒtəl ɪt ˈʌp
+Don't break it.	dˈəʊnt bɹˈeɪk ɪt
+Don't bring up that topic.	dˈəʊnt bɹˈɪŋ ˌʌp ðæt tˈɒpɪk
+Don't brush it aside.	dˈəʊnt bɹˈʌʃ ɪt ɐsˈaɪd
+Don't brush it off.	dˈəʊnt bɹˈʌʃ ɪt ˈɒf
+Don't burden yourself.	dˈəʊnt bˈɜːdən jɔːsˈɛlf
+Don't bury your feelings.	dˈəʊnt bˈɛɹɪ jɔː fˈiːlɪŋz
+Don't butt in!	dˈəʊnt bˈʌt ˈɪn
+Don't change your mind now.	dˈəʊnt tʃˈeɪndʒ jɔː mˈaɪnd nˈaʊ
+Don't cheat.	dˈəʊnt tʃˈiːt
+Don't chicken out!	dˈəʊnt tʃˈɪkɪn ˈaʊt
+Don't chicken out.	dˈəʊnt tʃˈɪkɪn ˈaʊt
+Don't compromise on quality.	dˈəʊnt kˈɒmpɹəmˌaɪz ˌɒn kwˈɒlɪtɪ
+Don't cop out.	dˈəʊnt kˈɒp ˈaʊt
+Don't count too much on luck.	dˈəʊnt kˈaʊnt tˈuː mʌtʃ ˌɒn lˈʌk
+Don't cry over spilt milk.	dˈəʊnt kɹˈaɪ ˌəʊvɐ spˈɪlt mˈɪlk
+Don't cut corners.	dˈəʊnt kˈʌt kˈɔːnəz
+Don't cut me off.	dˈəʊnt kˈʌt mˌiː ˈɒf
+Don't dehumanize others.	dˈəʊnt dˌiːhjˈuːmənˌaɪz ˈʌðəz
+Don't disturb the ant nest.	dˈəʊnt dɪstˈɜːb ðɪ ˈænt nˈɛst
+Don't ditch me!	dˈəʊnt dˈɪtʃ mˌiː
+Don't doze off!	dˈəʊnt dˈəʊz ˈɒf
+Don't drag this out.	dˈəʊnt dɹˈæɡ ðɪs ˈaʊt
+Don't drink this stuff.	dˈəʊnt dɹˈɪŋk ðɪs stˈʌf
+Don't drive drunk.	dˈəʊnt dɹˈaɪv dɹˈʌŋk
+Don't dwell on it.	dˈəʊnt dwˈɛl ˈɒn ɪt
+Don't fall asleep!	dˈəʊnt fˈɔːl ɐslˈiːp
+Don't fall for a fake account.	dˈəʊnt fˈɔːl fəɹɐ fˈeɪk ɐkˈaʊnt
+Don't fall for clickbait.	dˈəʊnt fˈɔːl fɔː klˈɪkbeɪt
+Don't fall for it.	dˈəʊnt fˈɔːl fɔːɹ ɪt
+Don't feed the trolls.	dˈəʊnt fˈiːd ðə tɹˈəʊlz
+Don't feel like working.	dˈəʊnt fˈiːl lˈaɪk wˈɜːkɪŋ
+Don't flake out on me.	dˈəʊnt flˈeɪk ˈaʊt ˈɒn mˌiː
+Don't flunk the test.	dˈəʊnt flˈʌŋk ðə tˈɛst
+Don't force yourself to eat.	dˈəʊnt fˈɔːs jɔːsˈɛlf tʊ ˈiːt
+Don't forget to clock out.	dˈəʊnt fəɡˈɛt tə klˈɒk ˈaʊt
+Don't forget your luggage.	dˈəʊnt fəɡˈɛt jɔː lˈʌɡɪdʒ
+Don't freak out.	dˈəʊnt fɹˈiːk ˈaʊt
+Don't fuss over me.	dˈəʊnt fˈʌs ˈəʊvɐ mˌiː
+Don't generalize.	dˈəʊnt dʒˈɛnəɹəlˌaɪz
+Don't get cocky.	dˈəʊnt ɡɛt kˈɒkɪ
+Don't get cold feet now.	dˈəʊnt ɡɛt kˈəʊld fˈiːt nˈaʊ
+Don't get heated over it.	dˈəʊnt ɡɛt hˈiːtɪd ˈəʊvɐɹ ɪt
+Don't get me wrong, I like him.	dˈəʊnt ɡɛt mˌiː ɹˈɒŋ aɪ lˈaɪk hˌɪm
+Don't get me wrong, but ~	dˈəʊnt ɡɛt mˌiː ɹˈɒŋ bˌʌt tˈɪldɐ
+Don't get offended.	dˈəʊnt ɡɛt əfˈɛndɪd
+Don't get stumped.	dˈəʊnt ɡɛt stˈʌmpt
+Don't get this wrong.	dˈəʊnt ɡɛt ðɪs ɹˈɒŋ
+Don't get upset.	dˈəʊnt ɡɛt ʌpsˈɛt
+Don't ghost me!	dˈəʊnt ɡˈəʊst mˌiː
+Don't give in to despair.	dˈəʊnt ɡˈɪv ɪn tə dɪspˈeə
+Don't give it a second thought.	dˈəʊnt ɡˈɪv ɪt ɐ sˈɛkənd θˈɔːt
+Don't give up!	dˈəʊnt ɡˈɪv ˈʌp
+Don't gloss over it.	dˈəʊnt ɡlˈɒs ˈəʊvɐɹ ɪt
+Don't go off the deep end.	dˈəʊnt ɡˌəʊ ˈɒf ðə dˈiːp ˈɛnd
+Don't go out of your way.	dˈəʊnt ɡˌəʊ ˌaʊtəv jɔː wˈeɪ
+Don't gobble!	dˈəʊnt ɡˈɒbəl
+Don't goof off in class.	dˈəʊnt ɡˈuːf ˈɒf ɪn klˈɑːs
+Don't gossip about her.	dˈəʊnt ɡˈɒsɪp ɐbˈaʊt hɜː
+Don't have an attitude with me.	dˈəʊnt hæv ɐn ˈætɪtjˌuːd wɪð mˌiː
+Don't hide your feelings.	dˈəʊnt hˈaɪd jɔː fˈiːlɪŋz
+Don't hold back.	dˈəʊnt hˈəʊld bˈæk
+Don't hold grudges.	dˈəʊnt hˈəʊld ɡɹˈʌdʒɪz
+Don't impose on others.	dˈəʊnt ɪmpˈəʊz ˌɒn ˈʌðəz
+Don't injure yourself.	dˈəʊnt ˈɪndʒɐ jɔːsˈɛlf
+Don't insult me.	dˈəʊnt ˈɪnsʌlt mˌiː
+Don't interrupt me.	dˈəʊnt ˌɪntəɹˈʌpt mˌiː
+Don't judge a book by its cover.	dˈəʊnt dʒˈʌdʒ ɐ bˈʊk baɪ ɪts kˈʌvɐ
+Don't lag behind.	dˈəʊnt lˈæɡ bɪhˈaɪnd
+Don't lash out.	dˈəʊnt lˈæʃ ˈaʊt
+Don't leave kids unsupervised.	dˈəʊnt lˈiːv kˈɪdz ʌnsˈuːpəvˌaɪzd
+Don't leave your mind drift.	dˈəʊnt lˈiːv jɔː mˈaɪnd dɹˈɪft
+Don't lecture me.	dˈəʊnt lˈɛktʃɐ mˌiː
+Don't let it preoccupy you.	dˈəʊnt lˈɛt ɪt pɹɪˈɒkjʊpˌaɪ juː
+Don't let it ruin your day.	dˈəʊnt lˈɛt ɪt ɹˈuːɪn jɔː dˈeɪ
+Don't let me down.	dˈəʊnt lˈɛt mˌiː dˈaʊn
+Don't let me feel bad about it.	dˈəʊnt lˈɛt mˌiː fˈiːl bˈæd ɐbˈaʊt ɪt
+Don't lie about it.	dˈəʊnt lˈaɪ ɐbˈaʊt ɪt
+Don't linger.	dˈəʊnt lˈɪŋɡɐ
+Don't look down on him.	dˈəʊnt lˈʊk dˌaʊn ˈɒn hˌɪm
+Don't make a fuss.	dˈəʊnt mˌeɪk ɐ fˈʌs
+Don't make me wait.	dˈəʊnt mˌeɪk mˌiː wˈeɪt
+Don't mess this up.	dˈəʊnt mˈɛs ðɪs ˈʌp
+Don't misplace it.	dˈəʊnt mɪsplˈeɪs ɪt
+Don't miss out on this deal.	dˈəʊnt mˈɪs ˈaʊt ˌɒn ðɪs dˈiːl
+Don't miss this golden opportunity.	dˈəʊnt mˈɪs ðɪs ɡˈəʊldən ɒpətjˈuːnɪtɪ
+Don't muck this up.	dˈəʊnt mˈʌk ðɪs ˈʌp
+Don't muscle in.	dˈəʊnt mˈʌsəl ˈɪn
+Don't obsess over it.	dˈəʊnt ɒbsˈɛs ˈəʊvɐɹ ɪt
+Don't overthink it.	dˈəʊnt ˌəʊvəθˈɪŋk ɪt
+Don't panic!	dˈəʊnt pˈænɪk
+Don't parrot me.	dˈəʊnt pˈæɹət mˌiː
+Don't peak early.	dˈəʊnt pˈiːk ˈɜːlɪ
+Don't peek!	dˈəʊnt pˈiːk
+Don't pin it on me.	dˈəʊnt pˈɪn ɪt ˈɒn mˌiː
+Don't predict sth bad.	dˈəʊnt pɹɪdˈɪkt ˌɛstˌiːˈeɪtʃ bˈæd
+Don't provoke him.	dˈəʊnt pɹəvˈəʊk hˌɪm
+Don't put off your homework.	dˈəʊnt pˌʊt ˈɒf jɔː hˈəʊmwɜːk
+Don't rain on my parade.	dˈəʊnt ɹˈeɪn ˌɒn maɪ pəɹˈeɪd
+Don't rant at me.	dˈəʊnt ɹˈɑːnt æt mˌiː
+Don't reveal the ending.	dˈəʊnt ɹɪvˈiːl ðɪ ˈɛndɪŋ
+Don't ridicule him.	dˈəʊnt ɹˈɪdɪkjˌuːl hˌɪm
+Don't rip it up!	dˈəʊnt ɹˈɪp ɪt ˈʌp
+Don't rope me into this.	dˈəʊnt ɹˈəʊp mˌiː ˌɪntʊ ðˈɪs
+Don't ruin it.	dˈəʊnt ɹˈuːɪn ɪt
+Don't rush.	dˈəʊnt ɹˈʌʃ
+Don't screw it up.	dˈəʊnt skɹˈuː ɪt ˈʌp
+Don't second-guess yourself.	dˈəʊnt sˈɛkəndɡˈɛs jɔːsˈɛlf
+Don't shift the issue.	dˈəʊnt ʃˈɪft ðɪ ˈɪʃuː
+Don't shove me!	dˈəʊnt ʃˈʌv mˌiː
+Don't show off.	dˈəʊnt ʃˈəʊ ˈɒf
+Don't side with him.	dˈəʊnt sˈaɪd wɪð hˌɪm
+Don't spill the coffee.	dˈəʊnt spˈɪl ðə kˈɒfɪ
+Don't spoil the beans.	dˈəʊnt spˈɔɪl ðə bˈiːnz
+Don't spoil the ending.	dˈəʊnt spˈɔɪl ðɪ ˈɛndɪŋ
+Don't stare at me.	dˈəʊnt stˈeəɹ æt mˌiː
+Don't startle the cat.	dˈəʊnt stˈɑːtəl ðə kˈæt
+Don't steal!	dˈəʊnt stˈiːl
+Don't stress out.	dˈəʊnt stɹˈɛs ˈaʊt
+Don't sulk.	dˈəʊnt sˈʌlk
+Don't swear.	dˈəʊnt swˈeə
+Don't take it for granted.	dˈəʊnt tˈeɪk ɪt fɔː ɡɹˈɑːntɪd
+Don't take it personal.	dˈəʊnt tˈeɪk ɪt pˈɜːsənəl
+Don't take kindness for granted.	dˈəʊnt tˈeɪk kˈaɪndnəs fɔː ɡɹˈɑːntɪd
+Don't talk to strangers.	dˈəʊnt tˈɔːk tə stɹˈeɪndʒəz
+Don't tease him.	dˈəʊnt tˈiːz hˌɪm
+Don't toy with my feelings.	dˈəʊnt tˈɔɪ wɪð maɪ fˈiːlɪŋz
+Don't trash talk.	dˈəʊnt tɹˈæʃ tˈɔːk
+Don't trip!	dˈəʊnt tɹˈɪp
+Don't trust legacy media.	dˈəʊnt tɹˈʌst lˈɛɡəsɪ mˈiːdiːɐ
+Don't turn a blind eye.	dˈəʊnt tˈɜːn ɐ blˈaɪnd ˈaɪ
+Don't turn against me.	dˈəʊnt tˈɜːn ɐɡˈɛnst mˌiː
+Don't underrate her skills.	dˈəʊnt ˌʌndəɹˈeɪt hɜː skˈɪlz
+Don't use that word.	dˈəʊnt jˈuːz ðæt wˈɜːd
+Don't use the n-word.	dˈəʊnt jˈuːz ðɪ ˈɛnwˈɜːd
+Don't victimize the weak.	dˈəʊnt vˈɪktɪmˌaɪz ðə wˈiːk
+Don't worry unnecessarily.	dˈəʊnt wˈʌɹɪ ʌnnˌɛsɪsˈɛɹɪlɪ
+Don't worry, he's a tough cookie.	dˈəʊnt wˈʌɹɪ hiːz ɐ tˈʌf kˈʊkɪ
+Don't worry, it should be fine.	dˈəʊnt wˈʌɹɪ ɪt ʃˌʊd biː fˈaɪn
+Don't yell at me.	dˈəʊnt jˈɛl æt mˌiː
+Donate clothes.	dəʊnˈeɪt klˈəʊðz
+Donate to charity.	dəʊnˈeɪt tə tʃˈæɹɪtɪ
+Done at the last minute.	dˈʌn æt ðə lˈɑːst mˈɪnɪt
+Done with this drama.	dˈʌn wɪð ðɪs dɹˈɑːmɐ
+Double down.	dˈʌbəl dˈaʊn
+Double the recipe.	dˈʌbəl ðə ɹˈɛsɪpˌiː
+Doubt his story.	dˈaʊt hɪz stˈɔːɹɪ
+Down in the valley.	dˌaʊn ɪnðə vˈælɪ
+Down to earth.	dˌaʊn tʊ ˈɜːθ
+Downward spiral.	dˈaʊnwəd spˈaɪəɹəl
+Drastically reduced.	dɹˈɑːstɪklɪ ɹɪdjˈuːst
+Draw a map.	dɹˈɔːɹ ɐ mˈæp
+Draw a picture.	dɹˈɔːɹ ɐ pˈɪktʃɐ
+Draw a square.	dɹˈɔːɹ ɐ skwˈeə
+Draw a triangle.	dɹˈɔːɹ ɐ tɹˈaɪæŋɡəl
+Draw the curtains.	dɹˈɔː ðə kˈɜːtənz
+Drink in moderation.	dɹˈɪŋk ɪn mˌɒdəɹˈeɪʃən
+Drive a car.	dɹˈaɪv ɐ kˈɑː
+Drive on the highway.	dɹˈaɪv ɒnðə hˈaɪweɪ
+Drive sales.	dɹˈaɪv sˈeɪlz
+Driven by supply and demand.	dɹˈɪvən baɪ səplˈaɪ ænd dɪmˈɑːnd
+Driver's license.	dɹˈaɪvəz lˈaɪsəns
+Drop a hint about it.	dɹˈɒp ɐ hˈɪnt ɐbˈaʊt ɪt
+Drop by anytime.	dɹˈɒp baɪ ˈɛnɪtˌaɪm
+Drop in if you're nearby.	dɹˈɒp ɪn ɪf jɔː niəbˈaɪ
+Drop it in the letterbox.	dɹˈɒp ɪt ɪnðə lˈɛtəbˌɒks
+Drug rehabilitation.	dɹˈʌɡ ɹɪhˌæbɪlɪtˈeɪʃən
+Drug-induced hallucination.	dɹˈʌɡɪndjˈuːst hɐlˌuːsɪnˈeɪʃən
+Drum up some support.	dɹˈʌm ˌʌp sˌʌm səpˈɔːt
+Due in May.	djˈuː ɪn mˈeɪ
+Due to weather, we cancelled.	djˈuː tə wˈɛðɐ wiː kˈænsəld
+Duel pricing for tourists.	djˈuːəl pɹˈaɪsɪŋ fɔː tˈɔːɹɪsts
+Duel pricing is unfair.	djˈuːəl pɹˈaɪsɪŋ ɪz ʌnfˈeə
+Dumbfounded.	dˈʌmfaʊndɪd
+During summer break.	djˈɔːɹɪŋ sˈʌmɐ bɹˈeɪk
+Dynamic environment.	daɪnˈæmɪk ɛnvˈaɪɹənmənt
+Eager to learn.	ˈiːɡɐ tə lˈɜːn
+Eager to please.	ˈiːɡɐ tə plˈiːz
+Early bird catches the worm.	ˈɜːlɪ bˈɜːd kˈætʃɪz ðə wˈɜːm
+Early signs of dementia.	ˈɜːlɪ sˈaɪnz ɒv dɪmˈɛnʃɐ
+Easier said than done.	ˈiːzɪɐ sˈɛd ðɐn dˈʌn
+Easily offended.	ˈiːzɪlɪ əfˈɛndɪd
+Easygoing personality.	ˈiːzɪɡˌəʊɪŋ pˌɜːsənˈælɪtɪ
+Eat at a leisurely pace.	ˈiːt ætɐ lˈɛʒəlɪ pˈeɪs
+Eat before it starts.	ˈiːt bɪfˌɔːɹ ɪt stˈɑːts
+Eat the leftovers.	ˈiːt ðə lˈɛftəʊvəz
+Eating bugs grosses me out.	ˈiːtɪŋ bˈʌɡz ɡɹˈəʊsɪz mˌiː ˈaʊt
+Either of these works.	ˈaɪðɐɹ ɒv ðiːz wˈɜːks
+Either way, it's up to you.	ˈaɪðɐ wˈeɪ ɪts ˈʌp tə juː
+Electric can opener.	ɪlˈɛktɹɪk kæn ˈəʊpənɐ
+Electric kettle.	ɪlˈɛktɹɪk kˈɛtəl
+Elementary level.	ˌɛlɪmˈɛntəɹɪ lˈɛvəl
+Elementary school.	ˌɛlɪmˈɛntəɹɪ skˈuːl
+Elite athletes.	ɪlˈiːt ˈæθliːts
+Emails back and forth.	ˈiːmeɪlz bˈæk ænd fˈɔːθ
+Embrace change.	ɪmbɹˈeɪs tʃˈeɪndʒ
+Embrace the challenge.	ɪmbɹˈeɪs ðə tʃˈælɪndʒ
+Emergency exit.	ɪmˈɜːdʒənsɪ ˈɛɡzɪt
+Emotional baggage.	ɪmˈəʊʃənəl bˈæɡɪdʒ
+Emotionally unstable.	ɪmˈəʊʃənəlɪ ʌnstˈeɪbəl
+Employment was terminated.	ɪmplˈɔɪmənt wɒz tˈɜːmɪnˌeɪtɪd
+Empty room.	ˈɛmptɪ ɹˈuːm
+Enable notifications.	ɪnˈeɪbəl nˌəʊtɪfɪkˈeɪʃənz
+Enclose a photo.	ɪŋklˈəʊz ɐ fˈəʊtəʊ
+Encourage creativity.	ɪŋkˈʌɹɪdʒ kɹiːˌeɪtˈɪvɪtɪ
+Encourage your team.	ɪŋkˈʌɹɪdʒ jɔː tˈiːm
+End up staying home.	ˈɛnd ˌʌp stˈeɪɪŋ hˈəʊm
+Ended up walking.	ˈɛndɪd ˌʌp wˈɔːkɪŋ
+Endure the pain.	ɛndjˈɔː ðə pˈeɪn
+Engage the audience.	ɪŋɡˈeɪdʒ ðɪ ˈɔːdiəns
+Engaging speaker.	ɪŋɡˈeɪdʒɪŋ spˈiːkɐ
+Engaging story.	ɪŋɡˈeɪdʒɪŋ stˈɔːɹɪ
+Enjoy cooking.	ɪndʒˈɔɪ kˈʊkɪŋ
+Enjoy the meal.	ɪndʒˈɔɪ ðə mˈiːl
+Enjoy the scenery.	ɪndʒˈɔɪ ðə sˈiːnəɹɪ
+Enjoy yourself!	ɪndʒˈɔɪ jɔːsˈɛlf
+Enormous building.	ɪnˈɔːməs bˈɪldɪŋ
+Enormous impact.	ɪnˈɔːməs ˈɪmpækt
+Enter into a contract.	ˈɛntɐɹ ˌɪntʊ ɐ kˈɒntɹækt
+Enter into negotiations.	ˈɛntɐɹ ˌɪntʊ nɪɡˌəʊʃɪˈeɪʃənz
+Enter the secret area.	ˈɛntɐ ðə sˈiːkɹɪt ˈeəɹiə
+Enter your delivery address.	ˈɛntɐ jɔː dɪlˈɪvəɹɪ ɐdɹˈɛs
+Enterprise software.	ˈɛntəpɹˌaɪz sˈɒftweə
+Entertain the guests.	ˌɛntətˈeɪn ðə ɡˈɛsts
+Entertain the idea.	ˌɛntətˈeɪn ðɪ aɪdˈiə
+Epic fail.	ˈɛpɪk fˈeɪl
+Equal rights.	ˈiːkwəl ɹˈaɪts
+Erase the board.	ɪɹˈeɪz ðə bˈɔːd
+Erase the data.	ɪɹˈeɪz ðə dˈeɪtɐ
+Errors cascade through the system.	ˈɛɹəz kɐskˈeɪd θɹuː ðə sˈɪstəm
+Establish a company.	ɪstˈæblɪʃ ɐ kˈʌmpənɪ
+Establish trust.	ɪstˈæblɪʃ tɹˈʌst
+Evaluate the risks.	ɪvˈæljuːˌeɪt ðə ɹˈɪsks
+Evaluation criteria.	ɪvˌæljuːˈeɪʃən kɹaɪtˈiəɹɪɐ
+Even against the champions, they held on.	ˈiːvən ɐɡˈɛnst ðə tʃˈæmpiənz ðeɪ hˈɛld ˈɒn
+Even the most daily habits matter.	ˈiːvən ðə mˈəʊst dˈeɪlɪ hˈæbɪts mˈætɐ
+Eventually, things worked out.	ɪvˈɛntʃuːəlɪ θˈɪŋz wˈɜːkt ˈaʊt
+Every cloud has a silver lining.	ˈɛvɹɪ klˈaʊd hɐz ɐ sˈɪlvɐ lˈaɪnɪŋ
+Every job has downsides.	ˈɛvɹɪ dʒˈɒb hɐz dˈaʊnsaɪdz
+Every now and then I cook.	ˈɛvɹɪ nˈaʊ ænd ðˈɛn aɪ kˈʊk
+Every single day.	ˈɛvɹɪ sˈɪŋɡəl dˈeɪ
+Every single one.	ˈɛvɹɪ sˈɪŋɡəl wˌɒn
+Every single person agreed.	ˈɛvɹɪ sˈɪŋɡəl pˈɜːsən ɐɡɹˈiːd
+Every small step counts against climate change.	ˈɛvɹɪ smˈɔːl stˈɛp kˈaʊnts ɐɡˈɛnst klˈaɪmət tʃˈeɪndʒ
+Every small step counts against waste.	ˈɛvɹɪ smˈɔːl stˈɛp kˈaʊnts ɐɡˈɛnst wˈeɪst
+Everyone assembled outside.	ˈɛvɹɪwˌɒn ɐsˈɛmbəld aʊtsˈaɪd
+Everyone buckled up?	ˈɛvɹɪwˌɒn bˈʌkəld ˈʌp
+Everyone has a dark side.	ˈɛvɹɪwˌɒn hɐz ɐ dˈɑːk sˈaɪd
+Everything depends on the weather.	ˈɛvɹɪθˌɪŋ dɪpˈɛndz ɒnðə wˈɛðɐ
+Everything depends on you.	ˈɛvɹɪθˌɪŋ dɪpˈɛndz ˈɒn juː
+Everything hinges on this.	ˈɛvɹɪθˌɪŋ hˈɪndʒɪz ˌɒn ðˈɪs
+Everything in moderation.	ˈɛvɹɪθˌɪŋ ɪn mˌɒdəɹˈeɪʃən
+Everything is clear, thanks.	ˈɛvɹɪθˌɪŋ ɪz klˈiə θˈæŋks
+Everything went wrong.	ˈɛvɹɪθˌɪŋ wɛnt ɹˈɒŋ
+Everything's fine on my end.	ˈɛvɹɪθˌɪŋz fˈaɪn ˌɒn maɪ ˈɛnd
+Everything's on track.	ˈɛvɹɪθˌɪŋz ˌɒn tɹˈæk
+Everything's under control.	ˈɛvɹɪθˌɪŋz ˌʌndɐ kəntɹˈəʊl
+Evidence points to him.	ˈɛvɪdəns pˈɔɪnts tə hˌɪm
+Exact measurement.	ɪɡzˈækt mˈɛʒəmənt
+Exam preparation takes time.	ɪɡzˈæm pɹˌɛpəɹˈeɪʃən tˈeɪks tˈaɪm
+Examine the evidence.	ɪɡzˈæmɪn ðɪ ˈɛvɪdəns
+Excellent craftsmanship.	ˈɛksələnt kɹˈɑːftsmənʃˌɪp
+Excellent job!	ˈɛksələnt dʒˈɒb
+Excellent service.	ˈɛksələnt sˈɜːvɪs
+Excess baggage.	ɪksˈɛs bˈæɡɪdʒ
+Exhausted from work.	ɛɡzˈɔːstɪd fɹɒm wˈɜːk
+Exit the room.	ˈɛɡzɪt ðə ɹˈuːm
+Expatriate workers.	ɪkspˈætɹɪˌeɪt wˈɜːkəz
+Expectations are high for the sequel.	ɪkspɪktˈeɪʃənz ɑː hˈaɪ fəðə sˈiːkwəl
+Expectations are high this year.	ɪkspɪktˈeɪʃənz ɑː hˈaɪ ðɪs jˈiə
+Experts predict sth bad next year.	ˈɛkspɜːts pɹɪdˈɪkt ˌɛstˌiːˈeɪtʃ bˈæd nˈɛkst jˈiə
+Explain the discrepancy.	ɪksplˈeɪn ðə dɪskɹˈɛpənsɪ
+Explore options.	ɪksplˈɔːɹ ˈɒpʃənz
+Explore the city.	ɪksplˈɔː ðə sˈɪtɪ
+Explosion of growth.	ɪksplˈəʊʒən ɒv ɡɹˈəʊθ
+Exponential growth.	ˌɛkspənˈɛnʃəl ɡɹˈəʊθ
+Express gratitude.	ɪkspɹˈɛs ɡɹˈætɪtjˌuːd
+Express train.	ɪkspɹˈɛs tɹˈeɪn
+Express your feelings.	ɪkspɹˈɛs jɔː fˈiːlɪŋz
+Extra help with homework.	ˈɛkstɹɐ hˈɛlp wɪð hˈəʊmwɜːk
+Extract the data.	ˈɛkstɹækt ðə dˈeɪtɐ
+Extreme weather.	ɪkstɹˈiːm wˈɛðɐ
+FYI, the meeting moved.	ˌɛfwˌaɪˈaɪ ðə mˈiːtɪŋ mˈuːvd
+Fabricate a story.	fˈæbɹɪkˌeɪt ɐ stˈɔːɹɪ
+Fabricate the parts.	fˈæbɹɪkˌeɪt ðə pˈɑːts
+Face imprisonment.	fˈeɪs ɪmpɹˈɪzənmənt
+Face the consequences.	fˈeɪs ðə kˈɒnsɪkwənsɪz
+Face your opponent.	fˈeɪs jɔːɹ əpˈəʊnənt
+Facilitate the discussion.	fəsˈɪlɪtˌeɪt ðə dɪskˈʌʃən
+Factor in fatigue.	fˈæktɐɹ ɪn fɐtˈiːɡ
+Factor in shipping.	fˈæktɐɹ ɪn ʃˈɪpɪŋ
+Factual error.	fˈæktʃuːəl ˈɛɹɐ
+Factual report.	fˈæktʃuːəl ɹɪpˈɔːt
+Faded road markings.	fˈeɪdɪd ɹˈəʊd mˈɑːkɪŋz
+Failed the vibe check.	fˈeɪld ðə vˈaɪb tʃˈɛk
+Failed to call.	fˈeɪld tə kˈɔːl
+Failure to disclose.	fˈeɪliə tə dɪsklˈəʊz
+Fair enough, I get it.	fˈeəɹ ɪnˈʌf aɪ ɡˈɛt ɪt
+Fair enough.	fˈeəɹ ɪnˈʌf
+Fair point.	fˈeə pˈɔɪnt
+Family estate.	fˈæmɪlɪ ɪstˈeɪt
+Family is my priority.	fˈæmɪlɪ ɪz maɪ pɹaɪˈɒɹɪtɪ
+Family photograph.	fˈæmɪlɪ fˈəʊtəɡɹˌɑːf
+Family recipe.	fˈæmɪlɪ ɹˈɛsɪpˌiː
+Famous overnight.	fˈeɪməs ˌəʊvənˈaɪt
+Famous quotation.	fˈeɪməs kwəʊtˈeɪʃən
+Fancy a cuppa?	fˈænsɪ ɐ kˈʌpɐ
+Fancy a pint?	fˈænsɪ ɐ pˈaɪnt
+Fancy restaurant.	fˈænsɪ ɹˈɛstɹɒnt
+Fancy that!	fˈænsɪ ðˈæt
+Fans from all over the world.	fˈænz fɹɒm ˈɔːl ˌəʊvɐ ðə wˈɜːld
+Fans from every corner of the country.	fˈænz fɹɒm ˈɛvɹɪ kˈɔːnɐɹ ɒvðə kˈʌntɹɪ
+Far more important.	fˈɑːmˌɔːɹ ɪmpˈɔːtənt
+Far more than expected.	fˈɑːmˌɔː ðɐn ɪkspˈɛktɪd
+Farm to table.	fˈɑːm tə tˈeɪbəl
+Faulty premise.	fˈɒltɪ pɹˈɛmɪs
+Favorite subject.	fˈeɪvəɹɪt sˈʌbdʒɛkt
+Feasibility study.	fˌiːzɪbˈɪlɪtɪ stˈʌdɪ
+Featuring a special guest.	fˈiːtʃəɹɪŋ ɐ spˈɛʃəl ɡˈɛst
+Feedback can be submitted anonymously.	fˈiːdbæk kæn biː səbmˈɪtɪd ɐnˈɒnəməslɪ
+Feel a bit off after lunch.	fˈiːl ɐ bˈɪt ˈɒf ˈɑːftɐ lˈʌntʃ
+Feel cooped up inside.	fˈiːl kˈuːpt ˌʌp ɪnsˈaɪd
+Feel free to ask me anything.	fˈiːl fɹˈiː tʊ ˈɑːsk mˌiː ˈɛnɪθˌɪŋ
+Feel free to grab a snack.	fˈiːl fɹˈiː tə ɡɹˈæb ɐ snˈæk
+Feel guilt.	fˈiːl ɡˈɪlt
+Feel inferior.	fˈiːl ɪnfˈiəɹɪɐ
+Feel like eating pizza.	fˈiːl lˈaɪk ˈiːtɪŋ pˈiːtsɐ
+Feel like pizza tonight.	fˈiːl lˈaɪk pˈiːtsɐ tənˈaɪt
+Feel the warmth.	fˈiːl ðə wˈɔːmθ
+Feeling depressed.	fˈiːlɪŋ dɪpɹˈɛst
+Feeling groggy this morning.	fˈiːlɪŋ ɡɹˈɒɡɪ ðɪs mˈɔːnɪŋ
+Feeling overwhelmed.	fˈiːlɪŋ ˌəʊvəwˈɛlmd
+Feeling tipsy.	fˈiːlɪŋ tˈɪpsɪ
+Feels like Monday.	fˈiːlz lˈaɪk mˈʌndeɪ
+Fight discrimination.	fˈaɪt dɪskɹˌɪmɪnˈeɪʃən
+Fight for your rights.	fˈaɪt fɔː jɔː ɹˈaɪts
+Fight oppression.	fˈaɪt əpɹˈɛʃən
+Figure it'll work.	fˈɪɡɐɹ ˌɪtəl wˈɜːk
+File a complaint.	fˈaɪl ɐ kəmplˈeɪnt
+File your taxes.	fˈaɪl jɔː tˈæksɪz
+Files are saved.	fˈaɪlz ɑː sˈeɪvd
+Fill in the form.	fˈɪl ɪnðə fˈɔːm
+Fill it up, please.	fˈɪl ɪt ˈʌp plˈiːz
+Fill up the tank.	fˈɪl ˌʌp ðə tˈæŋk
+Filled with laughter.	fˈɪld wɪð lˈɑːftɐ
+Filter the water.	fˈɪltɐ ðə wˈɔːtɐ
+Finally someone said it!	fˈaɪnəlɪ sˈʌmwɒn sˈɛd ɪt
+Finally, I've done it!	fˈaɪnəlɪ aɪv dˈʌn ɪt
+Finally, TGIF.	fˈaɪnəlɪ tˈiːdʒˈɪf
+Financial incentive.	faɪnˈænʃəl ɪnsˈɛntɪv
+Find a secret area.	fˈaɪnd ɐ sˈiːkɹɪt ˈeəɹiə
+Find a way out.	fˈaɪnd ɐ wˈeɪ ˈaʊt
+Find an electrical outlet.	fˈaɪnd ɐn ɪlˈɛktɹɪkəl ˈaʊtlɛt
+Find my way out of debt.	fˈaɪnd maɪ wˈeɪ ˌaʊtəv dˈɛt
+Find the silver lining.	fˈaɪnd ðə sˈɪlvɐ lˈaɪnɪŋ
+Fine, suit yourself.	fˈaɪn sˈuːt jɔːsˈɛlf
+Fine, whatever you say.	fˈaɪn wɒtˈɛvɐ juː sˈeɪ
+Fingers crossed!	fˈɪŋɡəz kɹˈɒst
+Finish eating first.	fˈɪnɪʃ ˈiːtɪŋ fˈɜːst
+Finish reading.	fˈɪnɪʃ ɹˈiːdɪŋ
+Finish work at six.	fˈɪnɪʃ wˈɜːk æt sˈɪks
+Fire drill.	fˈaɪə dɹˈɪl
+First attempt failed.	fˈɜːst ɐtˈɛmpt fˈeɪld
+First time in the history of Japan.	fˈɜːst tˈaɪm ɪnðə hˈɪstəɹɪ ɒv dʒəpˈæn
+Fish farming.	fˈɪʃ fˈɑːmɪŋ
+Fishing for compliments.	fˈɪʃɪŋ fɔː kˈɒmplɪmənts
+Fix on a goal.	fˈɪks ˌɒn ɐ ɡˈəʊl
+Fix the bug.	fˈɪks ðə bˈʌɡ
+Fix the problem.	fˈɪks ðə pɹˈɒbləm
+Fix your sleep schedule.	fˈɪks jɔː slˈiːp ʃˈɛdjuːl
+Flash a smile.	flˈæʃ ɐ smˈaɪl
+Flash flood.	flˈæʃ flˈʌd
+Flash floods.	flˈæʃ flˈʌdz
+Flash your badge.	flˈæʃ jɔː bˈædʒ
+Flat surface.	flˈæt sˈɜːfɪs
+Flawless performance.	flˈɔːləs pəfˈɔːməns
+Flawless skin.	flˈɔːləs skˈɪn
+Flick the switch.	flˈɪk ðə swˈɪtʃ
+Flip the pancake.	flˈɪp ðə pˈæŋkeɪk
+Flip the switch.	flˈɪp ðə swˈɪtʃ
+Flood of messages.	flˈʌd ɒv mˈɛsɪdʒɪz
+Flu epidemic.	flˈuː ˌɛpɪdˈɛmɪk
+Fluorescent light.	flɔːɹˈɛsənt lˈaɪt
+Fluorescent yellow.	flɔːɹˈɛsənt jˈɛləʊ
+Flush the toilet.	flˈʌʃ ðə tˈɔɪlɪt
+Flush with embarrassment.	flˈʌʃ wɪð ɪmbˈæɹəsmənt
+Fly to London.	flˈaɪ tə lˈʌndən
+Focus on the goal.	fˈəʊkəs ɒnðə ɡˈəʊl
+Folk music.	fˈəʊk mjˈuːzɪk
+Follow the directions.	fˈɒləʊ ðə daɪɹˈɛkʃənz
+Follow the path.	fˈɒləʊ ðə pˈɑːθ
+Follow the road markings.	fˈɒləʊ ðə ɹˈəʊd mˈɑːkɪŋz
+Food spoilage.	fˈuːd spˈɔɪlɪdʒ
+Food surplus.	fˈuːd sˈɜːpləs
+For another thing, it's far.	fɔːɹ ɐnˈʌðɐ θˈɪŋ ɪts fˈɑː
+For another thing, it's late.	fɔːɹ ɐnˈʌðɐ θˈɪŋ ɪts lˈeɪt
+For free!	fɔː fɹˈiː
+For him it's child's play.	fɔː hˌɪm ɪts tʃˈaɪldz plˈeɪ
+For instance, take Japan.	fɔːɹ ˈɪnstəns tˈeɪk dʒəpˈæn
+For one thing, I'm tired.	fɔː wˈɒn θˈɪŋ aɪm tˈaɪəd
+For one thing, it's expensive.	fɔː wˈɒn θˈɪŋ ɪts ɪkspˈɛnsɪv
+For peace of mind.	fɔː pˈiːs ɒv mˈaɪnd
+For real, it was awesome.	fɔː ɹˈiəl ɪt wɒz ˈɔːsʌm
+For reference.	fɔː ɹˈɛfɹəns
+For starters, hello.	fɔː stˈɑːtəz həlˈəʊ
+For starters, it's expensive.	fɔː stˈɑːtəz ɪts ɪkspˈɛnsɪv
+For sure!	fɔː ʃˈɔː
+For the life of me, I can't find it.	fəðə lˈaɪf ɒv mˌiː aɪ kˈɑːnt fˈaɪnd ɪt
+For the most part, it works.	fəðə mˈəʊst pˈɑːt ɪt wˈɜːks
+For the sake of clarity.	fəðə sˈeɪk ɒv klˈæɹɪtɪ
+For the sake of peace.	fəðə sˈeɪk ɒv pˈiːs
+For the very first time.	fəðə vˈɛɹɪ fˈɜːst tˈaɪm
+For what it's worth, I think you're right.	fɔː wɒt ɪts wˈɜːθ aɪ θˈɪŋk jɔː ɹˈaɪt
+For what it's worth, sorry.	fɔː wɒt ɪts wˈɜːθ sˈɒɹɪ
+For your information, I was busy.	fɔː jɔːɹ ˌɪnfəmˈeɪʃən aɪ wɒz bˈɪzɪ
+Force him out of the company.	fˈɔːs hˌɪm ˌaʊtəv ðə kˈʌmpənɪ
+Force yourself to exercise.	fˈɔːs jɔːsˈɛlf tʊ ˈɛksəsˌaɪz
+Forced out of their homes.	fˈɔːst ˌaʊtəv ðeə hˈəʊmz
+Foreign aid.	fˈɒɹən ˈeɪd
+Foreign owned land.	fˈɒɹən ˈəʊnd lˈænd
+Formidable challenge.	fɔːmˈɪdəbəl tʃˈælɪndʒ
+Foster a child.	fˈɒstɐɹ ɐ tʃˈaɪld
+Foster creativity.	fˈɒstɐ kɹiːˌeɪtˈɪvɪtɪ
+Found a loophole.	fˈaʊnd ɐ lˈuːphəʊl
+Found guilty.	fˈaʊnd ɡˈɪltɪ
+Found him asleep.	fˈaʊnd hˌɪm ɐslˈiːp
+Fracture a bone.	fɹˈæktʃɐɹ ɐ bˈəʊn
+Fragile feelings.	fɹˈædʒaɪl fˈiːlɪŋz
+Frame it as an opportunity.	fɹˈeɪm ɪt æz ɐn ɒpətjˈuːnɪtɪ
+Frank discussion.	fɹˈæŋk dɪskˈʌʃən
+Frankly speaking, I'm worried.	fɹˈæŋklɪ spˈiːkɪŋ aɪm wˈʌɹɪd
+Frankly speaking, no.	fɹˈæŋklɪ spˈiːkɪŋ nˈəʊ
+Free admission fee.	fɹˈiː ɐdmˈɪʃən fˈiː
+Free coffee is one of the perks.	fɹˈiː kˈɒfɪ ɪz wˈɒn ɒvðə pˈɜːks
+Free enterprise.	fɹˈiː ˈɛntəpɹˌaɪz
+Free speech matters.	fɹˈiː spˈiːtʃ mˈætəz
+Freeze!	fɹˈiːz
+Freezing temperatures.	fɹˈiːzɪŋ tˈɛmpɹɪtʃəz
+Fresh air.	fɹˈɛʃ ˈeə
+Fresh bread.	fɹˈɛʃ bɹˈɛd
+Fresh herbs.	fɹˈɛʃ hˈɜːbz
+Freshman orientation.	fɹˈɛʃmən ˌɔːɹiəntˈeɪʃən
+Friday at 3 — how does that sound?	fɹˈaɪdeɪ æt θɹˈiː hˌaʊ dˈʌz ðæt sˈaʊnd
+Friday at 3, if that works for you.	fɹˈaɪdeɪ æt θɹˈiː ɪf ðæt wˈɜːks fɔː juː
+Friday or whatever works.	fɹˈaɪdeɪ ɔː wɒtˈɛvɐ wˈɜːks
+Friday works perfectly.	fɹˈaɪdeɪ wˈɜːks pˈɜːfɛktlɪ
+Friendly reminder.	fɹˈɛndlɪ ɹɪmˈaɪndɐ
+Friends through thick and thin.	fɹˈɛndz θɹuː θˈɪk ænd θˈɪn
+From Ivory Coast.	fɹɒm ˈaɪvəɹɪ kˈəʊst
+From heaven to hell in a minute.	fɹɒm hˈɛvən tə hˈɛl ɪn ɐ mˈɪnɪt
+From my perspective, it works.	fɹɒm maɪ pəspˈɛktɪv ɪt wˈɜːks
+From my perspective, it's worth it.	fɹɒm maɪ pəspˈɛktɪv ɪts wˈɜːθ ɪt
+From my perspective...	fɹɒm maɪ pəspˈɛktɪv
+From my point of view, ~	fɹɒm maɪ pˈɔɪnt ɒv vjˈuː tˈɪldɐ
+From my standpoint, ~	fɹɒm maɪ stˈændpɔɪnt tˈɪldɐ
+From my viewpoint.	fɹɒm maɪ vjˈuːpɔɪnt
+From now on, I'll be early.	fɹɒm nˈaʊ ˈɒn aɪl biː ˈɜːlɪ
+From now on, no junk food.	fɹɒm nˈaʊ ˈɒn nˈəʊ dʒˈʌŋk fˈuːd
+Frustrated with traffic.	fɹʌstɹˈeɪtɪd wɪð tɹˈæfɪk
+Fuel up before the trip.	fjˈuːəl ˌʌp bɪfˌɔː ðə tɹˈɪp
+Fuel up with breakfast.	fjˈuːəl ˌʌp wɪð bɹˈɛkfəst
+Full capacity.	fˈʊl kəpˈæsɪtɪ
+Full of excitement.	fˈʊl ɒv ɪksˈaɪtmənt
+Full of fighting spirit.	fˈʊl ɒv fˈaɪtɪŋ spˈɪɹɪt
+Full of junk.	fˈʊl ɒv dʒˈʌŋk
+Fully implemented.	fˈʊlɪ ˈɪmplɪməntɪd
+Fumbled the ball.	fˈʌmbəld ðə bˈɔːl
+Fun fact: ~	fˈʌn fˈækt tˈɪldɐ
+Furious about the delay.	fjˈɔːɹiəs ɐbˌaʊt ðə dɪlˈeɪ
+Gain insight.	ɡˈeɪn ˈɪnsaɪt
+Gained exposure.	ɡˈeɪnd ɪkspˈəʊʒɐ
+Game highlights.	ɡˈeɪm hˈaɪlaɪts
+Game over, man.	ɡˈeɪm ˈəʊvɐ mˈæn
+Gas diffusion.	ɡˈæs dɪfjˈuːʒən
+Geek out over gadgets.	ɡˈiːk ˈaʊt ˌəʊvɐ ɡˈædʒɪts
+Generate electricity.	dʒˈɛnəɹˌeɪt ɪlɛktɹˈɪsɪtɪ
+Generate ideas.	dʒˈɛnəɹˌeɪt aɪdˈiəz
+Genetically modified.	dʒɪnˈɛtɪklɪ mˈɒdɪfˌaɪd
+Genetically similar.	dʒɪnˈɛtɪklɪ sˈɪmɪlɐ
+Gentle breeze.	dʒˈɛntəl bɹˈiːz
+Genuinely impressed.	dʒˈɛnjuːɪnlɪ ɪmpɹˈɛst
+Genuinely surprised.	dʒˈɛnjuːɪnlɪ səpɹˈaɪzd
+Get a change of scenery this weekend.	ɡɛt ɐ tʃˈeɪndʒ ɒv sˈiːnəɹɪ ðɪs wiːkˈɛnd
+Get a good education.	ɡɛt ɐ ɡˈʊd ˌɛdʒuːkˈeɪʃən
+Get a good grade.	ɡɛt ɐ ɡˈʊd ɡɹˈeɪd
+Get a life!	ɡɛt ɐ lˈaɪf
+Get a second opinion.	ɡɛt ɐ sˈɛkənd əpˈɪniən
+Get cold feet.	ɡɛt kˈəʊld fˈiːt
+Get cozy.	ɡɛt kˈəʊzɪ
+Get dressed quickly.	ɡɛt dɹˈɛst kwˈɪklɪ
+Get enough sleep.	ɡɛt ɪnˈʌf slˈiːp
+Get her to call back.	ɡɛt hɜː tə kˈɔːl bˈæk
+Get him a present.	ɡɛt hˌɪm ɐ pɹˈɛzənt
+Get into the right shape.	ɡɛt ˌɪntʊ ðə ɹˈaɪt ʃˈeɪp
+Get involved.	ɡɛt ɪnvˈɒlvd
+Get me some water.	ɡɛt mˌiː sˌʌm wˈɔːtɐ
+Get out of here.	ɡɛt ˌaʊtəv hˈiə
+Get out! No way!	ɡɛt ˈaʊt nˈəʊ wˈeɪ
+Get over it!	ɡɛt ˈəʊvɐɹ ɪt
+Get real about it.	ɡɛt ɹˈiəl ɐbˈaʊt ɪt
+Get rid of bad habits.	ɡɛt ɹˈɪd ɒv bˈæd hˈæbɪts
+Get rid of the clutter.	ɡɛt ɹˈɪd ɒvðə klˈʌtɐ
+Get some perspective.	ɡɛt sˌʌm pəspˈɛktɪv
+Get the anger out of your system.	ɡɛt ðɪ ˈæŋɡɐɹ ˌaʊtəv jɔː sˈɪstəm
+Get the gist?	ɡɛt ðə dʒˈɪst
+Get the project rolling.	ɡɛt ðə pɹˈɒdʒɛkt ɹˈəʊlɪŋ
+Get things squared away.	ɡɛt θˈɪŋz skwˈeəd ɐwˈeɪ
+Get to the point.	ɡɛt tə ðə pˈɔɪnt
+Get vaccinated.	ɡɛt vˈæksɪnˌeɪtɪd
+Getting cabin fever.	ɡˌɛtɪŋ kˈæbɪn fˈiːvɐ
+Getting late, I should go.	ɡˌɛtɪŋ lˈeɪt aɪ ʃˌʊd ɡˈəʊ
+Getting there is half the fun.	ɡˌɛtɪŋ ðeəɹ ɪz hˈɑːf ðə fˈʌn
+Getting tired.	ɡˌɛtɪŋ tˈaɪəd
+Give absolutely everything you have.	ɡˈɪv ˌæbsəlˈuːtlɪ ˈɛvɹɪθˌɪŋ juː hˈæv
+Give attention to details.	ɡˈɪv ɐtˈɛnʃən tə dˈiːteɪlz
+Give him credit.	ɡˈɪv hˌɪm kɹˈɛdɪt
+Give it a shot.	ɡˈɪv ɪt ɐ ʃˈɒt
+Give me a ballpark figure.	ɡˈɪv mˌiː ɐ bˈɔːlpɑːk fˈɪɡɐ
+Give me a break, will you?	ɡˈɪv mˌiː ɐ bɹˈeɪk wˈɪl juː
+Give me a hand here.	ɡˈɪv mˌiː ɐ hˈænd hˈiə
+Give me a hint.	ɡˈɪv mˌiː ɐ hˈɪnt
+Give me a ring.	ɡˈɪv mˌiː ɐ ɹˈɪŋ
+Give more attention to safety.	ɡˈɪv mˈɔːɹ ɐtˈɛnʃən tə sˈeɪftɪ
+Give the cold shoulder.	ɡˈɪv ðə kˈəʊld ʃˈəʊldɐ
+Given that it's raining...	ɡˈɪvən ðæt ɪts ɹˈeɪnɪŋ
+Given that you're new.	ɡˈɪvən ðæt jɔː njˈuː
+Glorified version.	ɡlˈɔːɹɪfˌaɪd vˈɜːʃən
+Glorify violence.	ɡlˈɔːɹɪfˌaɪ vˈaɪələns
+Glue holds it together.	ɡlˈuː hˈəʊldz ɪt təɡˈɛðɐ
+Glued to my desk all day.	ɡlˈuːd tə maɪ dˈɛsk ˈɔːl dˈeɪ
+Go all in for the win.	ɡˌəʊ ˈɔːl ɪn fəðə wˈɪn
+Go all the way to the final.	ɡˌəʊ ˈɔːl ðə wˈeɪ tə ðə fˈaɪnəl
+Go all the way to the top.	ɡˌəʊ ˈɔːl ðə wˈeɪ tə ðə tˈɒp
+Go back and forth between home and work.	ɡˌəʊ bˈæk ænd fˈɔːθ bɪtwˌiːn hˈəʊm ænd wˈɜːk
+Go back in time and ~	ɡˌəʊ bˈæk ɪn tˈaɪm ænd tˈɪldɐ
+Go fishing.	ɡˌəʊ fˈɪʃɪŋ
+Go further than expected.	ɡˌəʊ fˈɜːðɐ ðɐn ɪkspˈɛktɪd
+Go get it.	ɡˌəʊ ɡˈɛt ɪt
+Go get the keys.	ɡˌəʊ ɡɛt ðə kˈiːz
+Go grab a coffee.	ɡˌəʊ ɡɹˈæb ɐ kˈɒfɪ
+Go grab your jacket.	ɡˌəʊ ɡɹˈæb jɔː dʒˈækɪt
+Go home instead.	ɡˌəʊ hˈəʊm ɪnstˈɛd
+Go in ahead of me.	ɡˌəʊ ɪn ɐhˈɛd ɒv mˌiː
+Go on a hike.	ɡˌəʊ ˌɒn ɐ hˈaɪk
+Go on a trip to Italy.	ɡˌəʊ ˌɒn ɐ tɹˈɪp tʊ ˈɪtəlɪ
+Go out of business.	ɡˌəʊ ˌaʊtəv bˈɪznəs
+Go out of style.	ɡˌəʊ ˌaʊtəv stˈaɪl
+Go public with the news.	ɡˌəʊ pˈʌblɪk wɪððə njˈuːz
+Go straight ahead.	ɡˌəʊ stɹˈeɪt ɐhˈɛd
+Go the extra mile for clients.	ɡˌəʊ ðɪ ˈɛkstɹɐ mˈaɪl fɔː klˈaɪənts
+Go through the report.	ɡˌəʊ θɹuː ðə ɹɪpˈɔːt
+Go through tough times.	ɡˌəʊ θɹuː tˈʌf tˈaɪmz
+Go with the flow.	ɡˌəʊ wɪððə flˈəʊ
+God bless this family.	ɡˈɒd blˈɛs ðɪs fˈæmɪlɪ
+God bless you.	ɡˈɒd blˈɛs juː
+Going into liquidation.	ɡˌəʊɪŋ ˌɪntʊ lˌɪkwɪdˈeɪʃən
+Going through heroin withdrawal.	ɡˌəʊɪŋ θɹuː hˈɛɹəʊˌɪn wɪθdɹˈɔːl
+Going to buy groceries.	ɡˌəʊɪŋ tə bˈaɪ ɡɹˈəʊsəɹɪz
+Gone for good.	ɡɒn fɔː ɡˈʊd
+Gonna catch some Z's.	ɡˌənɐ kˈætʃ sˌʌm zˈɛdz
+Good advice.	ɡˈʊd ɐdvˈaɪs
+Good at networking.	ɡˈʊd æt nˈɛtwɜːkɪŋ
+Good day to you all.	ɡˈʊd dˈeɪ tə juː ˈɔːl
+Good day to you, sir.	ɡˈʊd dˈeɪ tə juː sˈɜː
+Good enough for me.	ɡˈʊd ɪnˈʌf fɔː mˌiː
+Good for you!	ɡˈʊd fɔː juː
+Good hygiene.	ɡˈʊd hˈaɪdʒiːn
+Good intentions.	ɡˈʊd ɪntˈɛnʃənz
+Good looking food.	ɡˈʊd lˈʊkɪŋ fˈuːd
+Good on you for trying.	ɡˈʊd ˌɒn juː fɔː tɹˈaɪɪŋ
+Good on you!	ɡˈʊd ˈɒn juː
+Good point.	ɡˈʊd pˈɔɪnt
+Good to know!	ɡˈʊd tə nˈəʊ
+Good to know, thanks!	ɡˈʊd tə nˈəʊ θˈæŋks
+Good vibes only.	ɡˈʊd vˈaɪbz ˈəʊnlɪ
+Good workout today.	ɡˈʊd wˈɜːkaʊt tədˈeɪ
+Gorgeous view.	ɡˈɔːdʒəs vjˈuː
+Got a few bucks?	ɡɒt ɐ fjˈuː bˈʌks
+Got a minute?	ɡɒt ɐ mˈɪnɪt
+Got a prescription from the doctor.	ɡɒt ɐ pɹɪskɹˈɪpʃən fɹʌmðə dˈɒktɐ
+Got a promotion.	ɡɒt ɐ pɹəmˈəʊʃən
+Got an update?	ɡɒt ɐn ˈʌpdeɪt
+Got any spare time?	ɡɒt ˌɛnɪ spˈeə tˈaɪm
+Got it for free.	ɡɒt ɪt fɔː fɹˈiː
+Got it right the first time.	ɡɒt ɪt ɹˈaɪt ðə fˈɜːst tˈaɪm
+Got it, thanks.	ɡˈɒt ɪt θˈæŋks
+Got it.	ɡˈɒt ɪt
+Got my paycheck today.	ɡɒt maɪ pˈeɪtʃɛk tədˈeɪ
+Got my phone fixed.	ɡɒt maɪ fˈəʊn fˈɪkst
+Got nicked!	ɡɒt nˈɪkt
+Got stuff to do.	ɡɒt stˈʌf tə dˈuː
+Got the cold shoulder.	ɡɒt ðə kˈəʊld ʃˈəʊldɐ
+Got the knack.	ɡɒt ðə nˈæk
+Got the scoop on her.	ɡɒt ðə skˈuːp ˈɒn hɜː
+Got to try sushi for the first time.	ɡɒt tə tɹˈaɪ sˈuːʃɪ fəðə fˈɜːst tˈaɪm
+Got your text message.	ɡɒt jɔː tˈɛkst mˈɛsɪdʒ
+Gotcha, makes sense.	ɡˈɒtʃɐ mˌeɪks sˈɛns
+Gotcha.	ɡˈɒtʃɐ
+Gotta run, see you!	ɡˈɒtɐ ɹˈʌn sˈiː juː
+Government agency.	ɡˈʌvənmənt ˈeɪdʒənsɪ
+Government funding.	ɡˈʌvənmənt fˈʌndɪŋ
+Grab a bite to eat before work.	ɡɹˈæb ɐ bˈaɪt tʊ ˈiːt bɪfˌɔː wˈɜːk
+Grab a coffee.	ɡɹˈæb ɐ kˈɒfɪ
+Grab a quick bite.	ɡɹˈæb ɐ kwˈɪk bˈaɪt
+Grab my hand!	ɡɹˈæb maɪ hˈænd
+Graceful dancer.	ɡɹˈeɪsfəl dˈɑːnsɐ
+Graceful movement.	ɡɹˈeɪsfəl mˈuːvmənt
+Graduated with distinction.	ɡɹˈædjuːˌeɪtɪd wɪð dɪstˈɪŋkʃən
+Grant permission.	ɡɹˈɑːnt pəmˈɪʃən
+Grateful for your help.	ɡɹˈeɪtfəl fɔː jɔː hˈɛlp
+Great achievement.	ɡɹˈeɪt ɐtʃˈiːvmənt
+Great brainwave.	ɡɹˈeɪt bɹˈeɪnweɪv
+Great experience.	ɡɹˈeɪt ɪkspˈiəɹɪəns
+Great perks at this job.	ɡɹˈeɪt pˈɜːks æt ðɪs dʒˈɒb
+Great presentation!	ɡɹˈeɪt pɹˌɛzəntˈeɪʃən
+Great soundtrack.	ɡɹˈeɪt sˈaʊndtɹæk
+Great view.	ɡɹˈeɪt vjˈuː
+Grilled eel.	ɡɹˈɪld ˈiːl
+Grip the steering wheel.	ɡɹˈɪp ðə stˈiəɹɪŋ wˈiːl
+Group selfie.	ɡɹˈuːp sˈɛlfɪ
+Grow into the role.	ɡɹˈəʊ ˌɪntʊ ðə ɹˈəʊl
+Grow the business.	ɡɹˈəʊ ðə bˈɪznəs
+Grow up!	ɡɹˈəʊ ˈʌp
+Grow vegetables.	ɡɹˈəʊ vˈɛdʒɪtəbəlz
+Growth mindset.	ɡɹˈəʊθ mˈaɪndsɛt
+Guess what happened.	ɡˈɛs wɒt hˈæpənd
+Guess what!	ɡˈɛs wˈɒt
+Guess what! I got the job.	ɡˈɛs wˈɒt aɪ ɡɒt ðə dʒˈɒb
+Gut check moment.	ɡˈʌt tʃˈɛk mˈəʊmənt
+HR department.	ˌeɪtʃˈɑː dɪpˈɑːtmənt
+Had a great weekend.	hæd ɐ ɡɹˈeɪt wiːkˈɛnd
+Had the photos printed.	hæd ðə fˈəʊtəʊz pɹˈɪntɪd
+Had to bite my tongue.	hædtə bˈaɪt maɪ tˈʌŋ
+Had to resort to begging.	hædtə ɹɪzˈɔːt tə bˈɛɡɪŋ
+Haha fine, I'll do it.	hɑːhˈɑː fˈaɪn aɪl dˈuː ɪt
+Haha fine, you win.	hɑːhˈɑː fˈaɪn juː wˈɪn
+Hair highlights.	hˈeə hˈaɪlaɪts
+Half of the cake.	hˈɑːf ɒvðə kˈeɪk
+Half of them agree.	hˈɑːf ɒv ðˌɛm ɐɡɹˈiː
+Halt the production.	hˈɒlt ðə pɹədˈʌkʃən
+Halve the apple.	hˈɑːv ðɪ ˈæpəl
+Halve the cost.	hˈɑːv ðə kˈɒst
+Hand gesture.	hˈænd dʒˈɛstʃɐ
+Handcraft a chair.	hˈændkɹɑːft ɐ tʃˈeə
+Handle with care—it's fragile.	hˈændəl wɪð kˈeə ɪts fɹˈædʒaɪl
+Handled with dignity and respect.	hˈændəld wɪð dˈɪɡnɪtɪ ænd ɹɪspˈɛkt
+Hands on hips.	hˈændz ˌɒn hˈɪps
+Hands on the steering wheel.	hˈændz ɒnðə stˈiəɹɪŋ wˈiːl
+Hang in there!	hˈæŋ ɪn ðˈeə
+Hang on a sec.	hˈæŋ ˌɒn ɐ sˈɛk
+Hang on, let me check.	hˈæŋ ˈɒn lˈɛt mˌiː tʃˈɛk
+Happen simultaneously.	hˈæpən sˌɪməltˈeɪniəslɪ
+Happen to know?	hˈæpən tə nˈəʊ
+Happy Thanksgiving!	hˈæpɪ θˈæŋksɡɪvɪŋ
+Happy ending.	hˈæpɪ ˈɛndɪŋ
+Happy hour starts at five.	hˈæpɪ ˈaʊɐ stˈɑːts æt fˈaɪv
+Happy to assist you with anything.	hˈæpɪ tʊ ɐsˈɪst juː wɪð ˈɛnɪθˌɪŋ
+Hard time understanding.	hˈɑːd tˈaɪm ˌʌndəstˈændɪŋ
+Hard to balance both.	hˈɑːd tə bˈæləns bˈəʊθ
+Hard to endure.	hˈɑːd tʊ ɛndjˈɔː
+Hard to let it go.	hˈɑːd tə lˈɛt ɪt ɡˈəʊ
+Hard to monetize.	hˈɑːd tə mˈɒnɪtˌaɪz
+Hard to persuade.	hˈɑːd tə pəswˈeɪd
+Hard to process info quickly.	hˈɑːd tə pɹˈəʊsɛs ˈɪnfəʊ kwˈɪklɪ
+Hard to resist.	hˈɑːd tə ɹɪzˈɪst
+Hard to survive.	hˈɑːd tə səvˈaɪv
+Hard to take in all at once.	hˈɑːd tə tˈeɪk ɪn ˈɔːl ɐtwˈɒns
+Hard to tell apart.	hˈɑːd tə tˈɛl ɐpˈɑːt
+Hard work has its rewards.	hˈɑːd wˈɜːk hɐz ɪts ɹɪwˈɔːdz
+Hardcore fan.	hˈɑːdkɔː fˈæn
+Hardware store.	hˈɑːdweə stˈɔː
+Hardworking taxpayers.	hˈɑːdwɜːkɪŋ tˈækspeɪəz
+Has a cult following.	hɐz ɐ kˈʌlt fˈɒləʊɪŋ
+Has it been a year already?	hɐz ɪt bˌiːn ɐ jˈiəɹ ɔːlɹˈɛdɪ
+Has it been approved yet?	hɐz ɪt bˌiːn ɐpɹˈuːvd jˈɛt
+Has it been hard?	hɐz ɪt bˌiːn hˈɑːd
+Has the meeting ended?	hɐz ðə mˈiːtɪŋ ˈɛndɪd
+Has the war ended?	hɐz ðə wˈɔːɹ ˈɛndɪd
+Hat off to the team.	hˈæt ˈɒf tə ðə tˈiːm
+Hatch a plan.	hˈætʃ ɐ plˈæn
+Hate micromanagement.	hˈeɪt mˌaɪkɹəʊmˈænɪdʒmənt
+Hats off to you.	hˈæts ˈɒf tə juː
+Have I ever told you ~?	hæv aɪ ˈɛvɐ tˈəʊld juː tˈɪldɐ
+Have a backup plan.	hæv ɐ bˈækʌp plˈæn
+Have a ball at the party.	hæv ɐ bˈɔːl æt ðə pˈɑːtɪ
+Have a go at it.	hæv ɐ ɡˌəʊ ˈætɪt
+Have a go.	hæv ɐ ɡˈəʊ
+Have a good rest tonight.	hæv ɐ ɡˈʊd ɹˈɛst tənˈaɪt
+Have a good rest.	hæv ɐ ɡˈʊd ɹˈɛst
+Have a good weekend!	hæv ɐ ɡˈʊd wiːkˈɛnd
+Have a hard time sleeping.	hæv ɐ hˈɑːd tˈaɪm slˈiːpɪŋ
+Have a look at this.	hæv ɐ lˈʊk æt ðˈɪs
+Have a pet dog.	hæv ɐ pˈɛt dˈɒɡ
+Have a quarrel.	hæv ɐ kwˈɒɹəl
+Have a row.	hæv ɐ ɹˈəʊ
+Have access to the data.	hæv ˈæksɛs tə ðə dˈeɪtɐ
+Have an affair.	hæv ɐn ɐfˈeə
+Have an equal dialogue, not a lecture.	hæv ɐn ˈiːkwəl dˈaɪəlɒɡ nˌɒtɐ lˈɛktʃɐ
+Have an operation.	hæv ɐn ˌɒpəɹˈeɪʃən
+Have empathy for others.	hæv ˈɛmpəθɪ fɔːɹ ˈʌðəz
+Have hallucinations.	hæv hɐlˌuːsɪnˈeɪʃənz
+Have her come over.	hæv hɜː kˈʌm ˈəʊvɐ
+Have some downtime today.	hæv sˌʌm dˈaʊntaɪm tədˈeɪ
+Have trouble focusing.	hæv tɹˈʌbəl fˈəʊkəsɪŋ
+Have trouble with English.	hæv tɹˈʌbəl wɪð ˈɪŋɡlɪʃ
+Have you by any chance been to Japan?	hæv juː baɪ ˌɛnɪ tʃˈɑːns bˌiːn tə dʒəpˈæn
+Have you by any chance seen my keys?	hæv juː baɪ ˌɛnɪ tʃˈɑːns sˈiːn maɪ kˈiːz
+Have you eaten?	hæv juː ˈiːtən
+Have you ever gone to Paris?	hæv juː ˈɛvɐ ɡɒn tə pˈæɹɪs
+Have you ever gone to a concert?	hæv juː ˈɛvɐ ɡɒn tʊ ɐ kˈɒnsət
+Have you finished?	hæv juː fˈɪnɪʃt
+Have you gotten better at it?	hæv juː ɡˈɒtən bˈɛtɐɹ ˈætɪt
+Have you gotten better?	hæv juː ɡˈɒtən bˈɛtɐ
+Haven't thought about that yet.	hˈævənt θˈɔːt ɐbˌaʊt ðæt jˈɛt
+Having said that, it's risky.	hˌævɪŋ sˈɛd ðˈæt ɪts ɹˈɪskɪ
+Having said that, let's try.	hˌævɪŋ sˈɛd ðˈæt lˈɛts tɹˈaɪ
+Hazy weather.	hˈeɪzɪ wˈɛðɐ
+He acknowledged her work.	hiː ɐknˈɒlɪdʒd hɜː wˈɜːk
+He always plays the victim.	hiː ˈɔːlweɪz plˈeɪz ðə vˈɪktɪm
+He always sucks up to the boss.	hiː ˈɔːlweɪz sˈʌks ˌʌp tə ðə bˈɒs
+He apologized to me.	hiː ɐpˈɒlədʒˌaɪzd tə mˌiː
+He appeared out of nowhere.	hiː ɐpˈiəd ˌaʊtəv nˈəʊweə
+He blew off the meeting.	hiː blˈuː ˈɒf ðə mˈiːtɪŋ
+He brags about everything.	hiː bɹˈæɡz ɐbˌaʊt ˈɛvɹɪθˌɪŋ
+He brushed aside my concerns.	hiː bɹˈʌʃt ɐsˈaɪd maɪ kənsˈɜːnz
+He butted in.	hiː bˈʌtɪd ˈɪn
+He came across an old letter.	hiː kˈeɪm əkɹˌɒs ɐn ˈəʊld lˈɛtɐ
+He canceled at the last minute.	hiː kˈænsəld æt ðə lˈɑːst mˈɪnɪt
+He caused an accident.	hiː kˈɔːzd ɐn ˈæksɪdənt
+He cheated on her.	hiː tʃˈiːtɪd ˈɒn hɜː
+He chickened out.	hiː tʃˈɪkɪnd ˈaʊt
+He chuckled to himself.	hiː tʃˈʌkəld tə hɪmsˈɛlf
+He comes across as arrogant.	hiː kˈʌmz əkɹˌɒs æz ˈæɹəɡənt
+He confessed his love.	hiː kənfˈɛst hɪz lˈʌv
+He cracks me up.	hiː kɹˈæks mˌiː ˈʌp
+He demonstrated the tool.	hiː dˈɛmənstɹˌeɪtɪd ðə tˈuːl
+He didn't flinch.	hiː dˈɪdnt flˈɪntʃ
+He didn't respond.	hiː dˈɪdnt ɹɪspˈɒnd
+He didn't show up.	hiː dˈɪdnt ʃˈəʊ ˈʌp
+He drives like a maniac.	hiː dɹˈaɪvz lˈaɪk ɐ mˈeɪnɪˌæk
+He dropped out of college.	hiː dɹˈɒpt ˌaʊtəv kˈɒlɪdʒ
+He eyed me suspiciously.	hiː ˈaɪd mˌiː səspˈɪʃəslɪ
+He failed pathetically.	hiː fˈeɪld pɐθˈɛtɪklɪ
+He finally opened up.	hiː fˈaɪnəlɪ ˈəʊpənd ˈʌp
+He finally owned up.	hiː fˈaɪnəlɪ ˈəʊnd ˈʌp
+He flaked out again.	hiː flˈeɪkt ˈaʊt ɐɡˈɛn
+He fumbled with the keys.	hiː fˈʌmbəld wɪððə kˈiːz
+He gave me silence back.	hiː ɡˈeɪv mˌiː sˈaɪləns bˈæk
+He gave up smoking.	hiː ɡˈeɪv ˌʌp smˈəʊkɪŋ
+He ghosted me.	hiː ɡˈəʊstɪd mˌiː
+He glossed over the details.	hiː ɡlˈɒst ˌəʊvɐ ðə dˈiːteɪlz
+He gobbled up the pizza.	hiː ɡˈɒbəld ˌʌp ðə pˈiːtsɐ
+He got fame overnight.	hiː ɡɒt fˈeɪm ˌəʊvənˈaɪt
+He got fired for saying the n-word.	hiː ɡɒt fˈaɪəd fɔː sˈeɪɪŋ ðɪ ˈɛnwˈɜːd
+He got wasted last night.	hiː ɡɒt wˈeɪstɪd lˈɑːst nˈaɪt
+He has a hidden agenda.	hiː hɐz ɐ hˈɪdən ɐdʒˈɛndɐ
+He has a lot of baggage.	hiː hɐz ɐ lˈɒt ɒv bˈæɡɪdʒ
+He has a tendency to be late.	hiː hɐz ɐ tˈɛndənsɪ təbɪ lˈeɪt
+He has a wild level of confidence.	hiː hɐz ɐ wˈaɪld lˈɛvəl ɒv kˈɒnfɪdəns
+He has strong commitment.	hiː hɐz stɹˈɒŋ kəmˈɪtmənt
+He hit on her at the bar.	hiː hˈɪt ˌɒn hɜːɹ æt ðə bˈɑː
+He hovered behind me.	hiː hˈɒvəd bɪhˈaɪnd mˌiː
+He insisted on paying.	hiː ɪnsˈɪstɪd ˌɒn pˈeɪɪŋ
+He is one of them.	hiː ɪz wˈɒn ɒv ðˌɛm
+He is to blame.	hiː ɪz tə blˈeɪm
+He just shrugged.	hiː dʒˈʌst ʃɹˈʌɡd
+He justified his actions.	hiː dʒˈʌstɪfˌaɪd hɪz ˈækʃənz
+He lacks self awareness.	hiː lˈæks sˈɛlf ɐwˈeənəs
+He lashed out at me.	hiː lˈæʃt ˈaʊt æt mˌiː
+He let me down again.	hiː lˈɛt mˌiː dˌaʊn ɐɡˈɛn
+He lives in my head rent free.	hiː lˈɪvz ɪn maɪ hˈɛd ɹˈɛnt fɹˈiː
+He made a racist gesture.	hiː mˌeɪd ɐ ɹˈeɪsɪst dʒˈɛstʃɐ
+He made me cry.	hiː mˌeɪd mˌiː kɹˈaɪ
+He makes no contributions whatsoever.	hiː mˌeɪks nˈəʊ kˌɒntɹɪbjˈuːʃənz wɒtsˌəʊˈɛvɐ
+He messed up big time.	hiː mˈɛst ˌʌp bˈɪɡ tˈaɪm
+He mumbled an apology.	hiː mˈʌmbəld ɐn ɐpˈɒlədʒɪ
+He muscled in on the deal.	hiː mˈʌsəld ɪn ɒnðə dˈiːl
+He negotiated a deal.	hiː nɪɡˈəʊʃɪˌeɪtɪd ɐ dˈiːl
+He paced back and forth.	hiː pˈeɪst bˈæk ænd fˈɔːθ
+He passed away last year.	hiː pˈɑːst ɐwˈeɪ lˈɑːst jˈiə
+He peaked early.	hiː pˈiːkt ˈɜːlɪ
+He perceived the danger.	hiː pəsˈiːvd ðə dˈeɪndʒɐ
+He played a solid game.	hiː plˈeɪd ɐ sˈɒlɪd ɡˈeɪm
+He pointed out the error.	hiː pˈɔɪntɪd ˈaʊt ðɪ ˈɛɹɐ
+He pondered the question.	hiː pˈɒndəd ðə kwˈɛstʃən
+He proposed last night.	hiː pɹəpˈəʊzd lˈɑːst nˈaɪt
+He pulled out of the deal.	hiː pˈʊld ˌaʊtəv ðə dˈiːl
+He pulled some strings.	hiː pˈʊld sˌʌm stɹˈɪŋz
+He pulled through the surgery.	hiː pˈʊld θɹuː ðə sˈɜːdʒəɹɪ
+He qualified for the finals.	hiː kwˈɒlɪfˌaɪd fəðə fˈaɪnəlz
+He revealed the truth.	hiː ɹɪvˈiːld ðə tɹˈuːθ
+He ripped up the letter.	hiː ɹˈɪpt ˌʌp ðə lˈɛtɐ
+He scored against his old team.	hiː skˈɔːd ɐɡˈɛnst hɪz ˈəʊld tˈiːm
+He sent us on a wild goose chase.	hiː sˈɛnt ˌʌs ˌɒn ɐ wˈaɪld ɡˈuːs tʃˈeɪs
+He shifted the issue.	hiː ʃˈɪftɪd ðɪ ˈɪʃuː
+He should be here any minute now.	hiː ʃˌʊd biː hˈiəɹ ˌɛnɪ mˈɪnɪt nˈaʊ
+He shoved past me.	hiː ʃˈʌvd pˈɑːst mˌiː
+He sighed in relief.	hiː sˈaɪd ɪn ɹɪlˈiːf
+He sized me up.	hiː sˈaɪzd mˌiː ˈʌp
+He smashed it in.	hiː smˈæʃt ɪt ˈɪn
+He smirked at me.	hiː smˈɜːkt æt mˌiː
+He spat out the food.	hiː spˈæt ˈaʊt ðə fˈuːd
+He turned out to be right.	hiː tˈɜːnd ˈaʊt təbɪ ɹˈaɪt
+He turned over the keys.	hiː tˈɜːnd ˌəʊvɐ ðə kˈiːz
+He was a bit drunk.	hiː wʌzɐ bˈɪt dɹˈʌŋk
+He was a no-show.	hiː wʌzɐ nˈəʊʃˈəʊ
+He was in despair.	hiː wɒz ɪn dɪspˈeə
+He was man of the match.	hiː wɒz mˈæn ɒvðə mˈætʃ
+He was reluctant to go.	hiː wɒz ɹɪlˈʌktənt tə ɡˈəʊ
+He was stationed in Germany.	hiː wɒz stˈeɪʃənd ɪn dʒˈɜːmənɪ
+He went off the deep end.	hiː wɛnt ˈɒf ðə dˈiːp ˈɛnd
+He went out of his way to help.	hiː wɛnt ˌaʊtəv hɪz wˈeɪ tə hˈɛlp
+He whipped out his phone.	hiː wˈɪpt ˈaʊt hɪz fˈəʊn
+He won't make it to the finish.	hiː wəʊnt mˌeɪk ɪt tə ðə fˈɪnɪʃ
+He'll apologize when pigs fly.	hiːl ɐpˈɒlədʒˌaɪz wɛn pˈɪɡz flˈaɪ
+He'll come around eventually.	hiːl kˈʌm ɐɹˈaʊnd ɪvˈɛntʃuːəlɪ
+He's a bit cocky.	hiːz ɐ bˈɪt kˈɒkɪ
+He's a coward.	hiːz ɐ kˈaʊəd
+He's a dark horse.	hiːz ɐ dˈɑːk hˈɔːs
+He's a decent guy.	hiːz ɐ dˈiːsənt ɡˈaɪ
+He's a generous guy.	hiːz ɐ dʒˈɛnəɹəs ɡˈaɪ
+He's a liability.	hiːz ɐ lˌaɪəbˈɪlɪtɪ
+He's a moody guy.	hiːz ɐ mˈuːdɪ ɡˈaɪ
+He's a pain.	hiːz ɐ pˈeɪn
+He's a picky eater.	hiːz ɐ pˈɪkɪ ˈiːtɐ
+He's a piece of work, if you know what I mean.	hiːz ɐ pˈiːs ɒv wˈɜːk ɪf juː nˈəʊ wɒt aɪ mˈiːn
+He's a sellout.	hiːz ɐ sˈɛlaʊt
+He's acting sus.	hiːz ˈæktɪŋ sˈʌs
+He's always moaning.	hiːz ˈɔːlweɪz mˈəʊnɪŋ
+He's an outlier.	hiːz ɐn ˈaʊtlˌaɪə
+He's at odds with his boss.	hiːz æt ˈɒdz wɪð hɪz bˈɒs
+He's between jobs right now.	hiːz bɪtwˌiːn dʒˈɒbz ɹˈaɪt nˈaʊ
+He's bluffing.	hiːz blˈʌfɪŋ
+He's buttering up the boss.	hiːz bˈʌtəɹɪŋ ˌʌp ðə bˈɒs
+He's dependent on coffee.	hiːz dɪpˈɛndənt ˌɒn kˈɒfɪ
+He's doing unreal stuff.	hiːz dˌuːɪŋ ʌnɹˈiəl stˈʌf
+He's doing well.	hiːz dˌuːɪŋ wˈɛl
+He's down about the loss.	hiːz dˌaʊn ɐbˌaʊt ðə lˈɒs
+He's grumbling about work.	hiːz ɡɹˈʌmblɪŋ ɐbˌaʊt wˈɜːk
+He's in a bad way.	hiːz ɪn ɐ bˈæd wˈeɪ
+He's in the starting lineup.	hiːz ɪnðə stˈɑːtɪŋ lˈaɪnʌp
+He's just a wannabe.	hiːz dʒˈʌst ɐ wˈɒnɐbˌiː
+He's just showing off.	hiːz dʒˈʌst ʃˈəʊɪŋ ˈɒf
+He's just trolling.	hiːz dʒˈʌst tɹˈəʊlɪŋ
+He's nice in real life.	hiːz nˈaɪs ɪn ɹˈiəl lˈaɪf
+He's our boss, so to speak.	hiːz ˌaʊɐ bˈɒs sˌəʊ tə spˈiːk
+He's out of the woods.	hiːz ˌaʊtəv ðə wˈʊdz
+He's out to win.	hiːz ˈaʊt tə wˈɪn
+He's pretty needy.	hiːz pɹˈɪtɪ nˈiːdɪ
+He's pretty uptight.	hiːz pɹˈɪtɪ ʌptˈaɪt
+He's ranting again.	hiːz ɹˈɑːntɪŋ ɐɡˈɛn
+He's sitting on the fence.	hiːz sˈɪtɪŋ ɒnðə fˈɛns
+He's so arrogant.	hiːz sˌəʊ ˈæɹəɡənt
+He's so charming.	hiːz sˌəʊ tʃˈɑːmɪŋ
+He's so clingy.	hiːz sˌəʊ klˈɪŋɪ
+He's so flaky.	hiːz sˌəʊ flˈeɪkɪ
+He's so stubborn.	hiːz sˌəʊ stˈʌbən
+He's sulking in his room.	hiːz sˈʌlkɪŋ ɪn hɪz ɹˈuːm
+He's super competitive.	hiːz sˈuːpɐ kəmpˈɛtɪtˌɪv
+He's super laid back.	hiːz sˈuːpɐ lˈeɪd bˈæk
+He's super reliable.	hiːz sˈuːpɐ ɹɪlˈaɪəbəl
+He's supposedly rich.	hiːz səpˈəʊzɪdlɪ ɹˈɪtʃ
+He's the GOAT.	hiːz ðə ɡˈəʊt
+He's the apple of his mom's eye.	hiːz ðɪ ˈæpəl ɒv hɪz mˈɒmz ˈaɪ
+He's the last person I'd ever trust.	hiːz ðə lˈɑːst pˈɜːsən aɪd ˈɛvɐ tɹˈʌst
+He's the wild card.	hiːz ðə wˈaɪld kˈɑːd
+He's too much of a perfectionist.	hiːz tˈuː mʌtʃ əvɐ pəfˈɛkʃənˌɪst
+He's very considerate.	hiːz vˈɛɹɪ kənsˈɪdəɹət
+He's washed up.	hiːz wˈɒʃt ˈʌp
+He's way back there.	hiːz wˈeɪ bˈæk ðˈeə
+Head out for a walk.	hˈɛd ˈaʊt fəɹɐ wˈɔːk
+Head out for lunch.	hˈɛd ˈaʊt fɔː lˈʌntʃ
+Heading in the right direction.	hˈɛdɪŋ ɪnðə ɹˈaɪt daɪɹˈɛkʃən
+Health benefits.	hˈɛlθ bˈɛnɪfˌɪts
+Health care.	hˈɛlθ kˈeə
+Healthy lifestyle.	hˈɛlθɪ lˈaɪfstaɪl
+Hear thunder.	hˈiə θˈʌndɐ
+Heart beat.	hˈɑːt bˈiːt
+Heartfelt apology.	hˈɑːtfɛlt ɐpˈɒlədʒɪ
+Heartfelt thanks.	hˈɑːtfɛlt θˈæŋks
+Heavy coursework.	hˈɛvɪ kˈɔːsjuːˌɜːk
+Heavy data crunch.	hˈɛvɪ dˈeɪtɐ kɹˈʌntʃ
+Heavy eye lids.	hˈɛvɪ ˈaɪ lˈɪdz
+Heavy load.	hˈɛvɪ lˈəʊd
+Heavy responsibility.	hˈɛvɪ ɹɪspˌɒnsəbˈɪlɪtɪ
+Heavy traffic.	hˈɛvɪ tɹˈæfɪk
+Heavy with guilt.	hˈɛvɪ wɪð ɡˈɪlt
+Heavy workload again.	hˈɛvɪ wˈɜːkləʊd ɐɡˈɛn
+Hectic week.	hˈɛktɪk wˈiːk
+Height of the building.	hˈaɪt ɒvðə bˈɪldɪŋ
+Help a homeless person.	hˈɛlp ɐ hˈəʊmləs pˈɜːsən
+Help me carry this.	hˈɛlp mˌiː kˈæɹɪ ðˈɪs
+Help me put this together.	hˈɛlp mˌiː pˌʊt ðɪs təɡˈɛðɐ
+Helpful tip.	hˈɛlpfəl tˈɪp
+Hence the delay.	hˈɛns ðə dɪlˈeɪ
+Hence, we decided to wait.	hˈɛns wiː dɪsˈaɪdɪd tə wˈeɪt
+Her appearance changed.	hɜːɹ ɐpˈiəɹəns tʃˈeɪndʒd
+Her eyes were fixed on him.	hɜːɹ ˈaɪz wɜː fˈɪkst ˈɒn hˌɪm
+Her skill is unmatched.	hɜː skˈɪl ɪz ʌnmˈætʃt
+Her smile lights me up.	hɜː smˈaɪl lˈaɪts mˌiː ˈʌp
+Herb tea.	hˈɜːb tˈiː
+Here it works fine.	hˈiəɹ ɪt wˈɜːks fˈaɪn
+Here we go!	hˈiə wiː ɡˈəʊ
+Here you go, love.	hˈiə juː ɡˈəʊ lˈʌv
+Here's a fun fact.	hˈiəz ɐ fˈʌn fˈækt
+Here's a thought for you.	hˈiəz ɐ θˈɔːt fɔː juː
+Here's a thought: let's ask them.	hˈiəz ɐ θˈɔːt lˈɛts ˈɑːsk ðˌɛm
+Here's another reason.	hˈiəz ɐnˈʌðɐ ɹˈiːzən
+Here's something that shocked me.	hˈiəz sˈʌmθɪŋ ðæt ʃˈɒkt mˌiː
+Here's the kicker.	hˈiəz ðə kˈɪkɐ
+Heroin withdrawal is painful.	hˈɛɹəʊˌɪn wɪθdɹˈɔːl ɪz pˈeɪnfəl
+Hey guys!	hˈeɪ ɡˈaɪz
+Hey! How have you been?	hˈeɪ hˌaʊ hˈæv juː bˌiːn
+Hey! What brings you here?	hˈeɪ wˌɒt bɹˈɪŋz juː hˈiə
+Hey, better than nothing!	hˈeɪ bˈɛtɐ ðɐn nˈʌθɪŋ
+Hey, cut it out.	hˈeɪ kˈʌt ɪt ˈaʊt
+Hey, don't judge a book by its cover.	hˈeɪ dˈəʊnt dʒˈʌdʒ ɐ bˈʊk baɪ ɪts kˈʌvɐ
+Hey, how's it going?	hˈeɪ hˌaʊz ɪt ɡˈəʊɪŋ
+Hey, way to go!	hˈeɪ wˈeɪ tə ɡˈəʊ
+Hey, what's that supposed to mean?	hˈeɪ wˌɒts ðæt səpˈəʊzd tə mˈiːn
+Hey, what's up?	hˈeɪ wˌɒts ˈʌp
+Hidden gem.	hˈɪdən dʒˈɛm
+Hidden meaning.	hˈɪdən mˈiːnɪŋ
+Hidden talent.	hˈɪdən tˈælənt
+Hide and seek.	hˈaɪd ænd sˈiːk
+High ROI.	hˈaɪ ɹˈɔɪ
+High demand.	hˈaɪ dɪmˈɑːnd
+High density area.	hˈaɪ dˈɛnsɪtɪ ˈeəɹiə
+High occupancy.	hˈaɪ ˈɒkjʊpənsɪ
+High probability.	hˈaɪ pɹˌɒbəbˈɪlɪtɪ
+High rise buildings.	hˈaɪ ɹˈaɪz bˈɪldɪŋz
+High sensitivity.	hˈaɪ sˌɛnsɪtˈɪvɪtɪ
+High voltage.	hˈaɪ vˈəʊltɪdʒ
+High-key obsessed.	hˈaɪkˈiː ɒbsˈɛst
+High-quality output.	hˈaɪkwˈɒlɪtɪ ˈaʊtpʊt
+Highlight of the trip.	hˈaɪlaɪt ɒvðə tɹˈɪp
+Highlight the key points.	hˈaɪlaɪt ðə kˈiː pˈɔɪnts
+Highly infectious disease.	hˈaɪlɪ ɪnfˈɛkʃəs dɪzˈiːz
+Highly proficient.	hˈaɪlɪ pɹəfˈɪʃənt
+Highly susceptible.	hˈaɪlɪ səsˈɛptɪbəl
+Hip pain.	hˈɪp pˈeɪn
+Hire a contractor.	hˈaɪəɹ ɐ kəntɹˈæktɐ
+Hire an intern.	hˈaɪəɹ ɐn ˈɪntɜːn
+His behavior was peculiar.	hɪz bɪhˈeɪvjɐ wɒz pɪkjˈuːliə
+His expertise in law.	hɪz ˌɛkspətˈiːz ɪn lˈɔː
+His health worsened.	hɪz hˈɛlθ wˈɜːsənd
+His height is 6 ft.	hɪz hˈaɪt ɪz sˈɪks ˌɛftˈiː
+His main virtue.	hɪz mˈeɪn vˈɜːtʃuː
+His most well known work.	hɪz mˈəʊst wˈɛl nˈəʊn wˈɜːk
+His trust in them turned out to be misplaced.	hɪz tɹˈʌst ɪn ðˌɛm tˈɜːnd ˈaʊt təbɪ mɪsplˈeɪst
+History buff.	hˈɪstəɹɪ bˈʌf
+Hit a mental block.	hˈɪt ɐ mˈɛntəl blˈɒk
+Hit a snag.	hˈɪt ɐ snˈæɡ
+Hit her up.	hˈɪt hɜːɹ ˈʌp
+Hit me right in the feels.	hˈɪt mˌiː ɹˈaɪt ɪnðə fˈiːlz
+Hit me up later.	hˈɪt mˌiː ˌʌp lˈeɪtɐ
+Hit the target.	hˈɪt ðə tˈɑːɡɪt
+Hmm, not that I know of.	hˈəm nˌɒt ðæt aɪ nˈəʊ ɒv
+Hmm, that's a fair point.	hˈəm ðæts ɐ fˈeə pˈɔɪnt
+Hmm, that's debatable.	hˈəm ðæts dɪbˈeɪtəbəl
+Hold a grudge.	hˈəʊld ɐ ɡɹˈʌdʒ
+Hold back tears.	hˈəʊld bˈæk tˈiəz
+Hold on a second.	hˈəʊld ˌɒn ɐ sˈɛkənd
+Hold on tight.	hˈəʊld ˌɒn tˈaɪt
+Hold up, wait a sec.	hˈəʊld ˈʌp wˈeɪt ɐ sˈɛk
+Honestly, overrated.	ˈɒnɪstlɪ ˌəʊvəɹˈeɪtɪd
+Honestly, this is just not it.	ˈɒnɪstlɪ ðɪs ɪz dʒˈʌst nˌɒt ɪt
+Hook up the TV.	hˈʊk ˌʌp ðə tˌiːvˈiː
+Hope the consequences hit them hard.	hˈəʊp ðə kˈɒnsɪkwənsɪz hˈɪt ðˌɛm hˈɑːd
+Hope you do well!	hˈəʊp juː dˈuː wˈɛl
+Hope you recover soon.	hˈəʊp juː ɹɪkˈʌvɐ sˈuːn
+Hoping to see you soon.	hˈəʊpɪŋ tə sˈiː juː sˈuːn
+Hoping to travel this year.	hˈəʊpɪŋ tə tɹˈævəl ðɪs jˈiə
+Hormonal mood swings.	hɔːmˈəʊnəl mˈuːd swˈɪŋz
+Horrible weather.	hˈɒɹɪbəl wˈɛðɐ
+Hospitality industry.	hˌɒspɪtˈælɪtɪ ˈɪndʌstɹɪ
+Host a party.	hˈəʊst ɐ pˈɑːtɪ
+Host the conference.	hˈəʊst ðə kˈɒnfɹəns
+How about a cuppa and a chat?	hˌaʊ ɐbˌaʊt ɐ kˈʌpɐ ænd ɐ tʃˈæt
+How about a cuppa?	hˌaʊ ɐbˌaʊt ɐ kˈʌpɐ
+How about going?	hˌaʊ ɐbˌaʊt ɡˈəʊɪŋ
+How about pizza?	hˌaʊ ɐbˌaʊt pˈiːtsɐ
+How are you progressing with the report?	hˌaʊ ɑː juː pɹəɡɹˈɛsɪŋ wɪððə ɹɪpˈɔːt
+How bad does it get in winter?	hˌaʊ bˈæd dˈʌz ɪt ɡɛt ɪn wˈɪntɐ
+How bad does the pain get?	hˌaʊ bˈæd dˈʌz ðə pˈeɪn ɡˈɛt
+How brave do you have to be to do that?	hˌaʊ bɹˈeɪv dˈuː juː hæv təbɪ tə dˈuː ðˈæt
+How come you're late?	hˌaʊ kˈʌm jɔː lˈeɪt
+How come?	hˌaʊ kˈʌm
+How dare you say that!	hˌaʊ dˈeə juː sˈeɪ ðˈæt
+How dare you!	hˌaʊ dˈeə juː
+How did he react?	hˌaʊ dˈɪd hiː ɹɪˈækt
+How did you react to it?	hˌaʊ dˈɪd juː ɹɪˈækt tʊ ɪt
+How disappointing the result was.	hˌaʊ dˌɪsɐpˈɔɪntɪŋ ðə ɹɪzˈʌlt wɒz
+How disappointing.	hˌaʊ dˌɪsɐpˈɔɪntɪŋ
+How do I get to the station?	hˌaʊ dˈuː aɪ ɡɛt tə ðə stˈeɪʃən
+How do you cope?	hˌaʊ dˈuː juː kˈəʊp
+How do you figure?	hˌaʊ dˈuː juː fˈɪɡɐ
+How do you interpret this?	hˌaʊ dˈuː juː ɪntˈɜːpɹɪt ðˈɪs
+How do you like it here?	hˌaʊ dˈuː juː lˈaɪk ɪt hˈiə
+How do you like the new job?	hˌaʊ dˈuː juː lˈaɪk ðə njˈuː dʒˈɒb
+How do you mean?	hˌaʊ dˈuː juː mˈiːn
+How do you perceive it?	hˌaʊ dˈuː juː pəsˈiːv ɪt
+How do you rate it?	hˌaʊ dˈuː juː ɹˈeɪt ɪt
+How do you say 'thank you' in Japanese?	hˌaʊ dˈuː juː sˈeɪ θˈæŋk juː ɪn dʒˌæpənˈiːz
+How do you say it in English?	hˌaʊ dˈuː juː sˈeɪ ɪt ɪn ˈɪŋɡlɪʃ
+How does that sound to you?	hˌaʊ dˈʌz ðæt sˈaʊnd tə juː
+How does this relate to our main goal?	hˌaʊ dˈʌz ðɪs ɹɪlˈeɪt tʊ ˌaʊɐ mˈeɪn ɡˈəʊl
+How embarrassing for him.	hˌaʊ ɪmbˈæɹəsɪŋ fɔː hˌɪm
+How embarrassing!	hˌaʊ ɪmbˈæɹəsɪŋ
+How have you been?	hˌaʊ hˈæv juː bˌiːn
+How nice of you!	hˌaʊ nˈaɪs ɒv juː
+How nice!	hˌaʊ nˈaɪs
+How on earth did you find this?	hˌaʊ ˌɒn ˈɜːθ dˈɪd juː fˈaɪnd ðˈɪs
+How on earth did you?	hˌaʊ ˌɒn ˈɜːθ dˈɪd juː
+How rude do you have to be?	hˌaʊ ɹˈuːd dˈuː juː hæv tɐ bˈiː
+How sweet of you to remember.	hˌaʊ swˈiːt ɒv juː tə ɹɪmˈɛmbɐ
+How sweet of you!	hˌaʊ swˈiːt ɒv juː
+How sweet!	hˌaʊ swˈiːt
+How the system functions.	hˌaʊ ðə sˈɪstəm fˈʌŋkʃənz
+How thoughtful of him.	hˌaʊ θˈɔːtfəl ɒv hˌɪm
+How thoughtful!	hˌaʊ θˈɔːtfəl
+How time flies — already a year.	hˌaʊ tˈaɪm flˈaɪz ɔːlɹˌɛdɪ ɐ jˈiə
+How time flies!	hˌaʊ tˈaɪm flˈaɪz
+How unfortunate.	hˌaʊ ʌnfˈɔːtʃənət
+How would you feel about leaving early?	hˌaʊ wʊd juː fˈiːl ɐbˌaʊt lˈiːvɪŋ ˈɜːlɪ
+How would you feel about pizza?	hˌaʊ wʊd juː fˈiːl ɐbˌaʊt pˈiːtsɐ
+How would you rate this product?	hˌaʊ wʊd juː ɹˈeɪt ðɪs pɹˈɒdʌkt
+How's it going?	hˌaʊz ɪt ɡˈəʊɪŋ
+However what I can't understand is that no one asked.	haʊˈɛvɐ wɒt aɪ kˈɑːnt ˌʌndəstˈænd ɪz ðæt nˈəʊwˈɒn ˈɑːskt
+However what I can't understand is that they stayed silent.	haʊˈɛvɐ wɒt aɪ kˈɑːnt ˌʌndəstˈænd ɪz ðæt ðeɪ stˈeɪd sˈaɪlənt
+Huge difference.	hjˈuːdʒ dˈɪfɹəns
+Huge fan.	hjˈuːdʒ fˈæn
+Humanoid alien.	hjˈuːmɐnˌɔɪd ˈeɪliən
+Humanoid robot.	hjˈuːmɐnˌɔɪd ɹˈəʊbɒt
+Hunt for clues.	hˈʌnt fɔː klˈuːz
+Hurl a rock.	hˈɜːl ɐ ɹˈɒk
+Hurl insults.	hˈɜːl ˈɪnsʌlts
+Hurry up!	hˈʌɹɪ ˈʌp
+Hurry up, otherwise we'll be late.	hˈʌɹɪ ˈʌp ˈʌðəwˌaɪz wiːl biː lˈeɪt
+Hurry up, we're late.	hˈʌɹɪ ˈʌp wiə lˈeɪt
+I accidentally deleted it.	aɪ ˌæksɪdˈɛntəlɪ dɪlˈiːtɪd ɪt
+I aced the test.	aɪ ˈeɪst ðə tˈɛst
+I acknowledge my mistake.	aɪ ɐknˈɒlɪdʒ maɪ mɪstˈeɪk
+I admit I was wrong.	aɪ ɐdmˈɪt aɪ wɒz ɹˈɒŋ
+I adore her.	aɪ ɐdˈɔː hɜː
+I advise you to wait.	aɪ ɐdvˈaɪz juː tə wˈeɪt
+I agree with you.	aɪ ɐɡɹˈiː wɪð juː
+I always carry a reusable water bottle.	aɪ ˈɔːlweɪz kˈæɹɪ ɐ ɹiːjˈuːzəbəl wˈɔːtɐ bˈɒtəl
+I anticipated his answer.	aɪ æntˈɪsɪpˌeɪtɪd hɪz ˈɑːnsɐ
+I apologize for that.	aɪ ɐpˈɒlədʒˌaɪz fɔː ðˈæt
+I appreciate good music.	aɪ ɐpɹˈiːʃɪˌeɪt ɡˈʊd mjˈuːzɪk
+I appreciate your help.	aɪ ɐpɹˈiːʃɪˌeɪt jɔː hˈɛlp
+I arrived a bit early.	aɪ ɐɹˈaɪvd ɐ bˈɪt ˈɜːlɪ
+I assumed you knew.	aɪ ɐsjˈuːmd juː njˈuː
+I attended the conference.	aɪ ɐtˈɛndɪd ðə kˈɒnfɹəns
+I avoided him all day.	aɪ ɐvˈɔɪdɪd hˌɪm ˈɔːl dˈeɪ
+I beg to differ on that.	aɪ bˈɛɡ tə dˈɪfɐɹ ˌɒn ðˈæt
+I beg to differ.	aɪ bˈɛɡ tə dˈɪfɐ
+I bet he's late.	aɪ bˈɛt hiːz lˈeɪt
+I bet you're tired.	aɪ bˈɛt jɔː tˈaɪəd
+I binge-watched the whole season.	aɪ bˈɪndʒwˈɒtʃt ðə hˈəʊl sˈiːzən
+I blacked out last night.	aɪ blˈækt ˈaʊt lˈɑːst nˈaɪt
+I blew it.	aɪ blˈuː ɪt
+I bombed the test.	aɪ bˈɒmd ðə tˈɛst
+I booked a flight.	aɪ bˈʊkt ɐ flˈaɪt
+I borrowed his book.	aɪ bˈɒɹəʊd hɪz bˈʊk
+I broke it on purpose.	aɪ bɹˈəʊk ɪt ˌɒn pˈɜːpəs
+I calculated the cost.	aɪ kˈælkjʊlˌeɪtɪd ðə kˈɒst
+I came across this article.	aɪ kˈeɪm əkɹˌɒs ðɪs ˈɑːtɪkəl
+I came to realize the truth.	aɪ kˈeɪm tə ɹˈiəlaɪz ðə tɹˈuːθ
+I can barely hold it together.	aɪ kæn bˈeəlɪ hˈəʊld ɪt təɡˈɛðɐ
+I can hardly believe it.	aɪ kæn hˈɑːdlɪ bɪlˈiːv ɪt
+I can hardly hear you.	aɪ kæn hˈɑːdlɪ hˈiə juː
+I can literally feel my heart racing.	aɪ kæn lˈɪtəɹəlɪ fˈiːl maɪ hˈɑːt ɹˈeɪsɪŋ
+I can live with that.	aɪ kæn lˈɪv wɪð ðˈæt
+I can relate to that.	aɪ kæn ɹɪlˈeɪt tə ðˈæt
+I can totally relate to what you're going through.	aɪ kæn tˈəʊtəlɪ ɹɪlˈeɪt tə wɒt jɔː ɡˌəʊɪŋ θɹˈuː
+I can't afford it.	aɪ kˈɑːnt ɐfˈɔːd ɪt
+I can't be late.	aɪ kˈɑːnt biː lˈeɪt
+I can't bring myself to do it.	aɪ kˈɑːnt bɹˈɪŋ maɪsˈɛlf tə dˈuː ɪt
+I can't even.	aɪ kˈɑːnt ˈiːvən
+I can't figure it out.	aɪ kˈɑːnt fˈɪɡɐɹ ɪt ˈaʊt
+I can't function without coffee.	aɪ kˈɑːnt fˈʌŋkʃən wɪðˌaʊt kˈɒfɪ
+I can't get over it.	aɪ kˈɑːnt ɡɛt ˈəʊvɐɹ ɪt
+I can't log in.	aɪ kˈɑːnt lˈɒɡ ˈɪn
+I can't make out what he's saying.	aɪ kˈɑːnt mˌeɪk ˈaʊt wɒt hiːz sˈeɪɪŋ
+I can't process it fast enough.	aɪ kˈɑːnt pɹˈəʊsɛs ɪt fˈɑːst ɪnˈʌf
+I can't put up with the noise.	aɪ kˈɑːnt pˌʊt ˌʌp wɪððə nˈɔɪz
+I can't recall.	aɪ kˈɑːnt ɹɪkˈɔːl
+I can't see even a single mistake.	aɪ kˈɑːnt sˈiː ˈiːvən ɐ sˈɪŋɡəl mɪstˈeɪk
+I can't see even a single star.	aɪ kˈɑːnt sˈiː ˈiːvən ɐ sˈɪŋɡəl stˈɑː
+I can't tell them apart.	aɪ kˈɑːnt tˈɛl ðˌɛm ɐpˈɑːt
+I can't think of his name right now.	aɪ kˈɑːnt θˈɪŋk ɒv hɪz nˈeɪm ɹˈaɪt nˈaʊ
+I can't tolerate noise.	aɪ kˈɑːnt tˈɒləɹˌeɪt nˈɔɪz
+I can't wait to see how it turns out.	aɪ kˈɑːnt wˈeɪt tə sˈiː hˌaʊ ɪt tˈɜːnz ˈaʊt
+I caught a glimpse.	aɪ kˈɔːt ɐ ɡlˈɪmps
+I caught him lying.	aɪ kˈɔːt hˌɪm lˈaɪɪŋ
+I changed my mind.	aɪ tʃˈeɪndʒd maɪ mˈaɪnd
+I chatted with her online.	aɪ tʃˈætɪd wɪð hɜːɹ ˈɒnlaɪn
+I chickened out.	aɪ tʃˈɪkɪnd ˈaʊt
+I chopped them up small.	aɪ tʃˈɒpt ðˌɛm ˌʌp smˈɔːl
+I conclude that ~	aɪ kəŋklˈuːd ðæt tˈɪldɐ
+I convinced her to come.	aɪ kənvˈɪnst hɜː tə kˈʌm
+I cooked. Meanwhile, she set the table.	aɪ kˈʊkt mˈiːnwaɪl ʃiː sˈɛt ðə tˈeɪbəl
+I could use a coffee.	aɪ kʊd jˈuːz ɐ kˈɒfɪ
+I couldn't agree more.	aɪ kˌʊdənt ɐɡɹˈiː mˈɔː
+I couldn't reach her.	aɪ kˌʊdənt ɹˈiːtʃ hɜː
+I cringed so hard.	aɪ kɹˈɪndʒd sˌəʊ hˈɑːd
+I cycle to work.	aɪ sˈaɪkəl tə wˈɜːk
+I defriended him.	aɪ dɪfɹˈɛndɪd hˌɪm
+I deleted it by mistake.	aɪ dɪlˈiːtɪd ɪt baɪ mɪstˈeɪk
+I did it on my own.	aɪ dˈɪd ɪt ˌɒn maɪ ˈəʊn
+I did my part.	aɪ dˈɪd maɪ pˈɑːt
+I disagree, honestly.	aɪ dˌɪsɐɡɹˈiː ˈɒnɪstlɪ
+I dislike loud noises.	aɪ dɪslˈaɪk lˈaʊd nˈɔɪzɪz
+I don't buy into that.	aɪ dˈəʊnt bˈaɪ ˌɪntʊ ðˈæt
+I don't give a damn about it.	aɪ dˈəʊnt ɡˈɪv ɐ dˈæm ɐbˈaʊt ɪt
+I don't socialize much.	aɪ dˈəʊnt sˈəʊʃəlˌaɪz mˈʌtʃ
+I don't vibe with this song.	aɪ dˈəʊnt vˈaɪb wɪð ðɪs sˈɒŋ
+I doubt it'll work.	aɪ dˈaʊt ˌɪtəl wˈɜːk
+I doubt it.	aɪ dˈaʊt ɪt
+I doubt that.	aɪ dˈaʊt ðˈæt
+I dozed off in class.	aɪ dˈəʊzd ˈɒf ɪn klˈɑːs
+I dream about traveling.	aɪ dɹˈiːm ɐbˌaʊt tɹˈævəlɪŋ
+I dreamed about you.	aɪ dɹˈiːmd ɐbˈaʊt juː
+I enjoy reading.	aɪ ɪndʒˈɔɪ ɹˈiːdɪŋ
+I feel 100% better.	aɪ fˈiːl wˈɒnhˈʌndɹɪd pəsˈɛnt bˈɛtɐ
+I feel a bit off color.	aɪ fˈiːl ɐ bˈɪt ˈɒf kˈʌlɐ
+I feel a bit off today.	aɪ fˈiːl ɐ bˈɪt ˈɒf tədˈeɪ
+I feel guilty.	aɪ fˈiːl ɡˈɪltɪ
+I feel like the walking dead.	aɪ fˈiːl lˈaɪk ðə wˈɔːkɪŋ dˈɛd
+I feel terrible.	aɪ fˈiːl tˈɛɹɪbəl
+I feel unwell today.	aɪ fˈiːl ʌnwˈɛl tədˈeɪ
+I fell asleep on the couch.	aɪ fˈɛl ɐslˈiːp ɒnðə kˈaʊtʃ
+I fell in love with this city.	aɪ fˈɛl ɪn lˈʌv wɪð ðɪs sˈɪtɪ
+I fell out with him.	aɪ fˈɛl ˈaʊt wɪð hˌɪm
+I felt like an idiot.	aɪ fˈɛlt lˈaɪk ɐn ˈɪdɪət
+I figure he forgot.	aɪ fˈɪɡɐ hiː fəɡˈɒt
+I figure he's late.	aɪ fˈɪɡɐ hiːz lˈeɪt
+I figure it's around 9.	aɪ fˈɪɡɐɹ ɪts ɐɹˈaʊnd nˈaɪn
+I flinched.	aɪ flˈɪntʃt
+I flunked math.	aɪ flˈʌŋkt mˈæθ
+I found her crying.	aɪ fˈaʊnd hɜː kɹˈaɪɪŋ
+I froze in shock.	aɪ fɹˈəʊz ɪn ʃˈɒk
+I gave it a second thought.	aɪ ɡˈeɪv ɪt ɐ sˈɛkənd θˈɔːt
+I get weird vibes from him.	aɪ ɡɛt wˈiəd vˈaɪbz fɹɒm hˌɪm
+I got a raise!	aɪ ɡɒt ɐ ɹˈeɪz
+I got dumped.	aɪ ɡɒt dˈʌmpt
+I got goosebumps.	aɪ ɡɒt ɡˈuːsbʌmps
+I got him to help.	aɪ ɡɒt hˌɪm tə hˈɛlp
+I got it for nothing.	aɪ ɡɒt ɪt fɔː nˈʌθɪŋ
+I got my hair cut.	aɪ ɡɒt maɪ hˈeə kˈʌt
+I got stuck in traffic.	aɪ ɡɒt stˈʌk ɪn tɹˈæfɪk
+I got the date wrong.	aɪ ɡɒt ðə dˈeɪt ɹˈɒŋ
+I got to meet him.	aɪ ɡɒt tə mˈiːt hˌɪm
+I gotta dash.	aɪ ɡˈɒtɐ dˈæʃ
+I gotta head out.	aɪ ɡˈɒtɐ hˈɛd ˈaʊt
+I grayed out for a moment.	aɪ ɡɹˈeɪd ˈaʊt fəɹɐ mˈəʊmənt
+I guess he forgot.	aɪ ɡˈɛs hiː fəɡˈɒt
+I guess it depends on the price.	aɪ ɡˈɛs ɪt dɪpˈɛndz ɒnðə pɹˈaɪs
+I guess so.	aɪ ɡˈɛs sˈəʊ
+I had a brainwave!	aɪ hæd ɐ bɹˈeɪnweɪv
+I had a sleepless night.	aɪ hæd ɐ slˈiːpləs nˈaɪt
+I had him wait.	aɪ hæd hˌɪm wˈeɪt
+I had lunch with a colleague.	aɪ hæd lˈʌntʃ wɪð ɐ kˈɒliːɡ
+I had my car fixed.	aɪ hæd maɪ kˈɑː fˈɪkst
+I had to break the news.	aɪ hædtə bɹˈeɪk ðə njˈuːz
+I had to cancel the trip.	aɪ hædtə kˈænsəl ðə tɹˈɪp
+I had to decline the offer.	aɪ hædtə dɪklˈaɪn ðɪ ˈɒfɐ
+I had to get it out of my system.	aɪ hædtə ɡɛt ɪt ˌaʊtəv maɪ sˈɪstəm
+I had to pull out.	aɪ hædtə pˈʊl ˈaʊt
+I happen to like it.	aɪ hˈæpən tə lˈaɪk ɪt
+I hate big crowds.	aɪ hˈeɪt bˈɪɡ kɹˈaʊdz
+I hate drama.	aɪ hˈeɪt dɹˈɑːmɐ
+I hate small talk.	aɪ hˈeɪt smˈɔːl tˈɔːk
+I have a body too — let me rest.	aɪ hæv ɐ bˈɒdɪ tˈuː lˈɛt mˌiː ɹˈɛst
+I have a brain — let me think.	aɪ hæv ɐ bɹˈeɪn lˈɛt mˌiː θˈɪŋk
+I have a bunch of socks.	aɪ hæv ɐ bˈʌntʃ ɒv sˈɒks
+I have a conflict that day.	aɪ hæv ɐ kˈɒnflɪkt ðæt dˈeɪ
+I have a craving for ramen.	aɪ hæv ɐ kɹˈeɪvɪŋ fɔː ɹˈɑːmən
+I have a crush on her.	aɪ hæv ɐ kɹˈʌʃ ˈɒn hɜː
+I have a hangover.	aɪ hæv ɐ hˈæŋɡəʊvɐ
+I have a hunch.	aɪ hæv ɐ hˈʌntʃ
+I have a meeting at 2.	aɪ hæv ɐ mˈiːtɪŋ æt tˈuː
+I have a meeting coming up later.	aɪ hæv ɐ mˈiːtɪŋ kˈʌmɪŋ ˌʌp lˈeɪtɐ
+I have a mental block.	aɪ hæv ɐ mˈɛntəl blˈɒk
+I have a problem with that.	aɪ hæv ɐ pɹˈɒbləm wɪð ðˈæt
+I have a soft spot for cats.	aɪ hæv ɐ sˈɒft spˈɒt fɔː kˈæts
+I have a son and a daughter.	aɪ hæv ɐ sˈʌn ænd ɐ dˈɔːtɐ
+I have a tendency to overthink.	aɪ hæv ɐ tˈɛndənsɪ tʊ ˌəʊvəθˈɪŋk
+I have a vague memory.	aɪ hæv ɐ vˈeɪɡ mˈɛməɹɪ
+I have an appointment at 2.	aɪ hæv ɐn ɐpˈɔɪntmənt æt tˈuː
+I have an upset stomach.	aɪ hæv ɐn ˈʌpsɛt stˈʌmək
+I have errands to do.	aɪ hæv ˈɛɹəndz tə dˈuː
+I have no intention of leaving.	aɪ hæv nˈəʊ ɪntˈɛnʃən ɒv lˈiːvɪŋ
+I have no life.	aɪ hæv nˈəʊ lˈaɪf
+I have no objections.	aɪ hæv nˈəʊ ɒbdʒˈɛkʃənz
+I have not decided yet.	aɪ hɐvnˌɒt dɪsˈaɪdɪd jˈɛt
+I have nothing but thanks.	aɪ hæv nˈʌθɪŋ bˌʌt θˈæŋks
+I have nothing to say.	aɪ hæv nˈʌθɪŋ tə sˈeɪ
+I have some downtime now.	aɪ hæv sˌʌm dˈaʊntaɪm nˈaʊ
+I have some time now.	aɪ hæv sˌʌm tˈaɪm nˈaʊ
+I have something coming up later.	aɪ hæv sˈʌmθɪŋ kˈʌmɪŋ ˌʌp lˈeɪtɐ
+I have something to do later.	aɪ hæv sˈʌmθɪŋ tə dˈuː lˈeɪtɐ
+I have trouble sleeping.	aɪ hæv tɹˈʌbəl slˈiːpɪŋ
+I have zero respect left as a fan.	aɪ hæv zˈiəɹəʊ ɹɪspˈɛkt lˈɛft æz ɐ fˈæn
+I haven't experienced such kindness.	aɪ hˈævənt ɪkspˈiəɹɪənst sˈʌtʃ kˈaɪndnəs
+I haven't experienced that.	aɪ hˈævənt ɪkspˈiəɹɪənst ðˈæt
+I haven't thought about it.	aɪ hˈævənt θˈɔːt ɐbˈaʊt ɪt
+I heard her singing.	aɪ hˈɜːd hɜː sˈɪŋɪŋ
+I high-key want this.	aɪ hˈaɪkˈiː wˈɒnt ðˈɪs
+I hope the consequences hit hard.	aɪ hˈəʊp ðə kˈɒnsɪkwənsɪz hˈɪt hˈɑːd
+I insist on quality.	aɪ ɪnsˈɪst ˌɒn kwˈɒlɪtɪ
+I intend to apply.	aɪ ɪntˈɛnd tʊ ɐplˈaɪ
+I journal every night.	aɪ dʒˈɜːnəl ˈɛvɹɪ nˈaɪt
+I keep second-guessing my choices.	aɪ kˈiːp sˈɛkəndɡˈɛsɪŋ maɪ tʃˈɔɪsɪz
+I know a shortcut.	aɪ nˈəʊ ɐ ʃˈɔːtkʌt
+I know it by memory.	aɪ nˈəʊ ɪt baɪ mˈɛməɹɪ
+I know it's a big ask, but could you finish it by tomorrow?	aɪ nˈəʊ ɪts ɐ bˈɪɡ ˈɑːsk bˌʌt kʊd juː fˈɪnɪʃ ɪt baɪ təmˈɒɹəʊ
+I know what failure feels like.	aɪ nˈəʊ wɒt fˈeɪliə fˈiːlz lˈaɪk
+I know what you mean.	aɪ nˈəʊ wɒt juː mˈiːn
+I know who I'm speaking to.	aɪ nˈəʊ hˌuː aɪm spˈiːkɪŋ tuː
+I know, right?	aɪ nˈəʊ ɹˈaɪt
+I let my mind drift.	aɪ lˈɛt maɪ mˈaɪnd dɹˈɪft
+I let slip the secret.	aɪ lˈɛt slˈɪp ðə sˈiːkɹɪt
+I literally cried.	aɪ lˈɪtəɹəlɪ kɹˈaɪd
+I look forward to seeing you.	aɪ lˈʊk fˈɔːwəd tə sˈiːɪŋ juː
+I look up to my mother.	aɪ lˈʊk ˌʌp tə maɪ mˈʌðɐ
+I lost the backup.	aɪ lˈɒst ðə bˈækʌp
+I love a challenge.	aɪ lˈʌv ɐ tʃˈælɪndʒ
+I love the way she smiles.	aɪ lˈʌv ðə wˈeɪ ʃiː smˈaɪlz
+I love to see them panic.	aɪ lˈʌv tə sˈiː ðˌɛm pˈænɪk
+I love your bangs.	aɪ lˈʌv jɔː bˈæŋz
+I low-key love it.	aɪ lˈəʊkˈiː lˈʌv ɪt
+I made up with him.	aɪ mˌeɪd ˈʌp wɪð hˌɪm
+I might be biased, but I think so.	aɪ mˌaɪt biː bˈaɪəst bˌʌt aɪ θˈɪŋk sˈəʊ
+I might be wrong, but ~	aɪ mˌaɪt biː ɹˈɒŋ bˌʌt tˈɪldɐ
+I misplaced my keys.	aɪ mɪsplˈeɪst maɪ kˈiːz
+I misread the sign.	aɪ mɪsɹˈiːd ðə sˈaɪn
+I missed out on the party.	aɪ mˈɪst ˈaʊt ɒnðə pˈɑːtɪ
+I missed the deadline.	aɪ mˈɪst ðə dˈɛdlaɪn
+I missed your notification.	aɪ mˈɪst jɔː nˌəʊtɪfɪkˈeɪʃən
+I mucked it up.	aɪ mˈʌkt ɪt ˈʌp
+I need a change of scenery.	aɪ nˈiːd ɐ tʃˈeɪndʒ ɒv sˈiːnəɹɪ
+I need a favor from you.	aɪ nˈiːd ɐ fˈeɪvɐ fɹɒm juː
+I need a favor.	aɪ nˈiːd ɐ fˈeɪvɐ
+I need a lint roller.	aɪ nˈiːd ɐ lˈɪnt ɹˈəʊlɐ
+I need closure.	aɪ nˈiːd klˈəʊʒɐ
+I need it ASAP.	aɪ nˈiːd ɪt ˌeɪˌɛsˌeɪpˈiː
+I need it right now.	aɪ nˈiːd ɪt ɹˈaɪt nˈaʊ
+I need sleep.	aɪ nˈiːd slˈiːp
+I need to brush up on my Spanish.	aɪ nˈiːd tə bɹˈʌʃ ˌʌp ˌɒn maɪ spˈænɪʃ
+I need to catch up on my work.	aɪ nˈiːd tə kˈætʃ ˌʌp ˌɒn maɪ wˈɜːk
+I need to fill my prescription.	aɪ nˈiːd tə fˈɪl maɪ pɹɪskɹˈɪpʃən
+I need to lie down.	aɪ nˈiːd tə lˈaɪ dˈaʊn
+I need to pull myself together.	aɪ nˈiːd tə pˈʊl maɪsˈɛlf təɡˈɛðɐ
+I need to recharge.	aɪ nˈiːd tə ɹɪtʃˈɑːdʒ
+I need to slow down.	aɪ nˈiːd tə slˈəʊ dˈaʊn
+I need to step out for a sec.	aɪ nˈiːd tə stˈɛp ˈaʊt fəɹɐ sˈɛk
+I opted for tea.	aɪ ˈɒptɪd fɔː tˈiː
+I opted out of the trip.	aɪ ˈɒptɪd ˌaʊtəv ðə tɹˈɪp
+I owe you an apology.	aɪ ˈəʊ juː ɐn ɐpˈɒlədʒɪ
+I owe you big time.	aɪ ˈəʊ juː bˈɪɡ tˈaɪm
+I owe you one.	aɪ ˈəʊ juː wˌɒn
+I prefer the isle seat.	aɪ pɹɪfˈɜː ðɪ ˈaɪəl sˈiːt
+I propose a toast.	aɪ pɹəpˈəʊz ɐ tˈəʊst
+I purchased a new laptop.	aɪ pˈɜːtʃɪst ɐ njˈuː lˈæptɒp
+I put together a slideshow.	aɪ pˌʊt təɡˌɛðɐɹ ɐ slˈaɪdʃəʊ
+I ran into Tom yesterday.	aɪ ɹˈæn ˌɪntʊ tˈɒm jˈɛstədˌeɪ
+I read up on it last night.	aɪ ɹˈiːd ˌʌp ˌɒn ɪt lˈɑːst nˈaɪt
+I realized too late.	aɪ ɹˈiəlaɪzd tˈuː lˈeɪt
+I really enjoy reading before bed.	aɪ ɹˈiəlɪ ɪndʒˈɔɪ ɹˈiːdɪŋ bɪfˌɔː bˈɛd
+I really messed up.	aɪ ɹˈiəlɪ mˈɛst ˈʌp
+I really screwed up.	aɪ ɹˈiəlɪ skɹˈuːd ˈʌp
+I reckon so.	aɪ ɹˈɛkən sˈəʊ
+I regret saying that.	aɪ ɹɪɡɹˈɛt sˈeɪɪŋ ðˈæt
+I remember when this was empty.	aɪ ɹɪmˈɛmbɐ wɛn ðɪs wɒz ˈɛmptɪ
+I remember when we met.	aɪ ɹɪmˈɛmbɐ wɛn wiː mˈɛt
+I said no, and that's that.	aɪ sˈɛd nˈəʊ ænd ðæts ðˈæt
+I saw him leaving.	aɪ sˈɔː hˌɪm lˈiːvɪŋ
+I saw him the other day.	aɪ sˈɔː hˌɪm ðɪ ˈʌðɐ dˈeɪ
+I saw snow for the very first time.	aɪ sˈɔː snˈəʊ fəðə vˈɛɹɪ fˈɜːst tˈaɪm
+I scanned the article.	aɪ skˈænd ðɪ ˈɑːtɪkəl
+I scraped together some money.	aɪ skɹˈeɪpt təɡˌɛðɐ sˌʌm mˈʌnɪ
+I scribbled a note.	aɪ skɹˈɪbəld ɐ nˈəʊt
+I see her every now and then.	aɪ sˈiː hɜːɹ ˈɛvɹɪ nˈaʊ ænd ðˈɛn
+I see him once in a blue moon.	aɪ sˈiː hˌɪm wˈʌns ɪn ɐ blˈuː mˈuːn
+I see him once in a while.	aɪ sˈiː hˌɪm wˈʌns ɪn ɐ wˈaɪl
+I see where you're coming from, but…	aɪ sˈiː wˌeə jɔː kˈʌmɪŋ fɹɒm bˈʌt
+I see where you're coming from.	aɪ sˈiː wˌeə jɔː kˈʌmɪŋ fɹɒm
+I see your point, but ~	aɪ sˈiː jɔː pˈɔɪnt bˌʌt tˈɪldɐ
+I see your point.	aɪ sˈiː jɔː pˈɔɪnt
+I seem to be improving.	aɪ sˈiːm təbɪ ɪmpɹˈuːvɪŋ
+I seem to be lost.	aɪ sˈiːm təbɪ lˈɒst
+I set aside money for travel.	aɪ sˈɛt ɐsˈaɪd mˈʌnɪ fɔː tɹˈævəl
+I show nothing but respect.	aɪ ʃˈəʊ nˈʌθɪŋ bˌʌt ɹɪspˈɛkt
+I slept like a log.	aɪ slˈɛpt lˈaɪk ɐ lˈɒɡ
+I slipped on ice.	aɪ slˈɪpt ˌɒn ˈaɪs
+I stammered through it.	aɪ stˈæməd θɹˈuː ɪt
+I stand by him.	aɪ stˈænd baɪ hˌɪm
+I still can't get over it.	aɪ stˈɪl kˈɑːnt ɡɛt ˈəʊvɐɹ ɪt
+I strongly believe in this.	aɪ stɹˈɒŋlɪ bɪlˈiːv ɪn ðˈɪs
+I stumbled upon a great book.	aɪ stˈʌmbəld əpˌɒn ɐ ɡɹˈeɪt bˈʊk
+I support you all the way.	aɪ səpˈɔːt juː ˈɔːl ðə wˈeɪ
+I support you.	aɪ səpˈɔːt juː
+I suspect he lied.	aɪ səspˈɛkt hiː lˈaɪd
+I swear I didn't do it.	aɪ swˈeəɹ aɪ dˈɪdnt dˈuː ɪt
+I swear to god it's true.	aɪ swˈeə tə ɡˈɒd ɪts tɹˈuː
+I take it you agree.	aɪ tˈeɪk ɪt juː ɐɡɹˈiː
+I take it you've heard.	aɪ tˈeɪk ɪt juːv hˈɜːd
+I take your point on cost.	aɪ tˈeɪk jɔː pˈɔɪnt ˌɒn kˈɒst
+I take your point, but…	aɪ tˈeɪk jɔː pˈɔɪnt bˈʌt
+I talked my way out of it.	aɪ tˈɔːkt maɪ wˈeɪ ˌaʊtəv ɪt
+I tend to forget.	aɪ tˈɛnd tə fəɡˈɛt
+I tend to overthink.	aɪ tˈɛnd tʊ ˌəʊvəθˈɪŋk
+I texted her by mistake.	aɪ tˈɛkstɪd hɜː baɪ mɪstˈeɪk
+I texted you a while ago.	aɪ tˈɛkstɪd juː ɐ wˈaɪl ɐɡˈəʊ
+I think I'm gonna head out.	aɪ θˈɪŋk aɪm ɡˌənɐ hˈɛd ˈaʊt
+I think I'm gonna nap.	aɪ θˈɪŋk aɪm ɡˌənɐ nˈæp
+I think he's right.	aɪ θˈɪŋk hiːz ɹˈaɪt
+I think we should go.	aɪ θˈɪŋk wiː ʃˌʊd ɡˈəʊ
+I thought the same at first too.	aɪ θˈɔːt ðə sˈeɪm æt fˈɜːst tˈuː
+I thought the same at first, but I changed my mind.	aɪ θˈɔːt ðə sˈeɪm æt fˈɜːst bˌʌt aɪ tʃˈeɪndʒd maɪ mˈaɪnd
+I took a walk in the park.	aɪ tˈʊk ɐ wˈɔːk ɪnðə pˈɑːk
+I took up yoga.	aɪ tˈʊk ˌʌp jˈəʊɡɐ
+I tossed and turned all night.	aɪ tˈɒst ænd tˈɜːnd ˈɔːl nˈaɪt
+I totally agree.	aɪ tˈəʊtəlɪ ɐɡɹˈiː
+I tripped on the rug.	aɪ tɹˈɪpt ɒnðə ɹˈʌɡ
+I urge you to act now.	aɪ ˈɜːdʒ juː tʊ ˈækt nˈaʊ
+I used to smoke.	aɪ jˈuːzd tə smˈəʊk
+I vibe with her.	aɪ vˈaɪb wɪð hɜː
+I wake up at 6.	aɪ wˈeɪk ˌʌp æt sˈɪks
+I walk my dog every morning.	aɪ wˈɔːk maɪ dˈɒɡ ˈɛvɹɪ mˈɔːnɪŋ
+I wanna try.	aɪ wˈɒnɐ tɹˈaɪ
+I want a refund.	aɪ wˈɒnt ɐ ɹˈiːfʌnd
+I want this so bad.	aɪ wˈɒnt ðɪs sˌəʊ bˈæd
+I want to meet in person.	aɪ wˈɒnt tə mˈiːt ɪn pˈɜːsən
+I want to upskill.	aɪ wˈɒnt tʊ ˈʌpskɪl
+I warned you.	aɪ wˈɔːnd juː
+I was about to leave.	aɪ wɒz ɐbˌaʊt tə lˈiːv
+I was desperate.	aɪ wɒz dˈɛspəɹət
+I was just wondering if you're free.	aɪ wɒz dʒˈʌst wˈʌndəɹɪŋ ɪf jɔː fɹˈiː
+I was like, no way!	aɪ wɒz lˈaɪk nˈəʊ wˈeɪ
+I was named after my grandfather.	aɪ wɒz nˈeɪmd ˈɑːftɐ maɪ ɡɹˈændfɑːðɐ
+I was so freaked out.	aɪ wɒz sˌəʊ fɹˈiːkt ˈaʊt
+I was supposed to call.	aɪ wɒz səpˈəʊzd tə kˈɔːl
+I was wondering if we could meet.	aɪ wɒz wˈʌndəɹɪŋ ɪf wiː kʊd mˈiːt
+I was wondering if you could help.	aɪ wɒz wˈʌndəɹɪŋ ɪf juː kʊd hˈɛlp
+I wish I could go back in time.	aɪ wˈɪʃ aɪ kʊd ɡˌəʊ bˈæk ɪn tˈaɪm
+I wish I knew.	aɪ wˈɪʃ aɪ njˈuː
+I wish it were Friday.	aɪ wˈɪʃ ɪt wɜː fɹˈaɪdeɪ
+I wish you a wonderful day.	aɪ wˈɪʃ juː ɐ wˈʌndəfəl dˈeɪ
+I woke up a little earlier than usual.	aɪ wˈəʊk ˌʌp ɐ lˈɪtəl ˈɜːlɪɐ ðɐn jˈuːʒuːəl
+I won 5 in a row.	aɪ wˈʌn fˈaɪv ˌɪnɐ ɹˈəʊ
+I won't be nice anymore after this.	aɪ wəʊnt biː nˈaɪs ˌɛnɪmˈɔːɹ ˈɑːftɐ ðˈɪs
+I won't make it to the meeting.	aɪ wəʊnt mˌeɪk ɪt tə ðə mˈiːtɪŋ
+I wonder if it'll rain.	aɪ wˈʌndɐ ɪf ˌɪtəl ɹˈeɪn
+I wonder if she's home.	aɪ wˈʌndɐ ɪf ʃiːz hˈəʊm
+I wonder when it will end.	aɪ wˈʌndɐ wɛn ɪt wɪl ˈɛnd
+I wonder when they will arrive.	aɪ wˈʌndɐ wɛn ðeɪ wɪl ɐɹˈaɪv
+I wonder why.	aɪ wˈʌndɐ wˈaɪ
+I work at a coworking spot.	aɪ wˈɜːk ætɐ kˈaʊɜːkɪŋ spˈɒt
+I would argue otherwise.	aɪ wʊd ˈɑːɡjuː ˈʌðəwˌaɪz
+I would argue that quality matters more.	aɪ wʊd ˈɑːɡjuː ðæt kwˈɒlɪtɪ mˈætəz mˈɔː
+I would argue that timing is everything.	aɪ wʊd ˈɑːɡjuː ðæt tˈaɪmɪŋ ɪz ˈɛvɹɪθˌɪŋ
+I would like to either refund or exchange.	aɪ wʊd lˈaɪk tʊ ˈaɪðɐ ɹɪfˈʌnd ɔːɹ ɪkstʃˈeɪndʒ
+I would like to either stay or leave.	aɪ wʊd lˈaɪk tʊ ˈaɪðɐ stˈeɪ ɔː lˈiːv
+I wouldn't rule it out.	aɪ wˈʊdənt ɹˈuːl ɪt ˈaʊt
+I'd appreciate it if you could reply soon.	aɪd ɐpɹˈiːʃɪˌeɪt ɪt ɪf juː kʊd ɹɪplˈaɪ sˈuːn
+I'd appreciate it if you could share.	aɪd ɐpɹˈiːʃɪˌeɪt ɪt ɪf juː kʊd ʃˈeə
+I'd appreciate it if you helped.	aɪd ɐpɹˈiːʃɪˌeɪt ɪt ɪf juː hˈɛlpt
+I'd appreciate it if you'd call.	aɪd ɐpɹˈiːʃɪˌeɪt ɪt ɪf juːd kˈɔːl
+I'd be lying to you if I said I wasn't upset.	aɪd biː lˈaɪɪŋ tə juː ɪf aɪ sˈɛd aɪ wˌɒzn̩t ʌpsˈɛt
+I'd be lying to you if I said it was easy.	aɪd biː lˈaɪɪŋ tə juː ɪf aɪ sˈɛd ɪt wɒz ˈiːzɪ
+I'd better get started.	aɪd bˈɛtɐ ɡɛt stˈɑːtɪd
+I'd better go.	aɪd bˈɛtɐ ɡˈəʊ
+I'd go in a heartbeat.	aɪd ɡˌəʊ ɪn ɐ hˈɑːtbiːt
+I'd hate to bother you.	aɪd hˈeɪt tə bˈɒðɐ juː
+I'd hate to miss it.	aɪd hˈeɪt tə mˈɪs ɪt
+I'd hate to see it go to waste.	aɪd hˈeɪt tə sˈiː ɪt ɡˌəʊ tə wˈeɪst
+I'd hate to see you fail.	aɪd hˈeɪt tə sˈiː juː fˈeɪl
+I'd like a second opinion.	aɪd lˈaɪk ɐ sˈɛkənd əpˈɪniən
+I'd like to make my order.	aɪd lˈaɪk tə mˌeɪk maɪ ˈɔːdɐ
+I'd like to place an order.	aɪd lˈaɪk tə plˈeɪs ɐn ˈɔːdɐ
+I'd like to request a meeting.	aɪd lˈaɪk tə ɹɪkwˈɛst ɐ mˈiːtɪŋ
+I'd love to come.	aɪd lˈʌv tə kˈʌm
+I'd love to do that.	aɪd lˈʌv tə dˈuː ðˈæt
+I'd love to help.	aɪd lˈʌv tə hˈɛlp
+I'd rather not go.	aɪd ɹˈɑːðɐ nˌɒt ɡˈəʊ
+I'd rather not say.	aɪd ɹˈɑːðɐ nˌɒt sˈeɪ
+I'd rather stay home.	aɪd ɹˈɑːðɐ stˈeɪ hˈəʊm
+I'd rather walk.	aɪd ɹˈɑːðɐ wˈɔːk
+I'd really rather you didn't smoke here.	aɪd ɹˈiəlɪ ɹˈɑːðɐ juː dˈɪdnt smˈəʊk hˈiə
+I'd really rather you didn't tell him.	aɪd ɹˈiəlɪ ɹˈɑːðɐ juː dˈɪdnt tˈɛl hˌɪm
+I'd say about 5 minutes.	aɪd sˈeɪ ɐbˌaʊt fˈaɪv mˈɪnɪts
+I'd say it's fine.	aɪd sˈeɪ ɪts fˈaɪn
+I'll arrange the meeting.	aɪl ɐɹˈeɪndʒ ðə mˈiːtɪŋ
+I'll be out of pocket today.	aɪl biː ˌaʊtəv pˈɒkɪt tədˈeɪ
+I'll be right back.	aɪl biː ɹˈaɪt bˈæk
+I'll be there in a bit.	aɪl biː ðeəɹ ɪn ɐ bˈɪt
+I'll be there shortly.	aɪl biː ðeə ʃˈɔːtlɪ
+I'll be there soon.	aɪl biː ðeə sˈuːn
+I'll be there, come hell or high water.	aɪl biː ðˈeə kˈʌm hˈɛl ɔː hˈaɪ wˈɔːtɐ
+I'll be there, no matter what.	aɪl biː ðˈeə nˈəʊ mˈætɐ wˈɒt
+I'll be up front.	aɪl biː ˌʌp fɹˈʌnt
+I'll carry on with the plan.	aɪl kˈæɹɪ ˌɒn wɪððə plˈæn
+I'll carry on with the work.	aɪl kˈæɹɪ ˌɒn wɪððə wˈɜːk
+I'll check in online.	aɪl tʃˈɛk ɪn ˈɒnlaɪn
+I'll check out at 11.	aɪl tʃˈɛk ˈaʊt æt ɪlˈɛvən
+I'll claim it as an expense.	aɪl klˈeɪm ɪt æz ɐn ɪkspˈɛns
+I'll deal with him.	aɪl dˈiːl wɪð hˌɪm
+I'll do it as soon as I can.	aɪl dˈuː ɪt æz sˈuːn æz aɪ kˈæn
+I'll do it right away.	aɪl dˈuː ɪt ɹˈaɪt ɐwˈeɪ
+I'll do whatever it takes.	aɪl dˈuː wɒtˈɛvɐɹ ɪt tˈeɪks
+I'll drop by later.	aɪl dɹˈɒp baɪ lˈeɪtɐ
+I'll fight until my last breath.	aɪl fˈaɪt ʌntˈɪl maɪ lˈɑːst bɹˈɛθ
+I'll fill in for her.	aɪl fˈɪl ɪn fɔː hɜː
+I'll finish it at all costs.	aɪl fˈɪnɪʃ ɪt æt ˈɔːl kˈɒsts
+I'll get through this somehow.	aɪl ɡɛt θɹuː ðɪs sˈʌmhaʊ
+I'll go insane if this continues.	aɪl ɡˌəʊ ɪnsˈeɪn ɪf ðɪs kəntˈɪnjuːz
+I'll handle it.	aɪl hˈændəl ɪt
+I'll handle my end.	aɪl hˈændəl maɪ ˈɛnd
+I'll have a go at fixing it.	aɪl hæv ɐ ɡˌəʊ æt fˈɪksɪŋ ɪt
+I'll have a go at it.	aɪl hæv ɐ ɡˌəʊ ˈætɪt
+I'll have a look.	aɪl hæv ɐ lˈʊk
+I'll just nip out.	aɪl dʒˈʌst nˈɪp ˈaʊt
+I'll just rest at home.	aɪl dʒˈʌst ɹˈɛst æt hˈəʊm
+I'll just use my phone.	aɪl dʒˈʌst jˈuːz maɪ fˈəʊn
+I'll just use the free one.	aɪl dʒˈʌst jˈuːz ðə fɹˈiː wˌɒn
+I'll keep my mouth shut.	aɪl kˈiːp maɪ mˈaʊθ ʃˈʌt
+I'll lend it to you.	aɪl lˈɛnd ɪt tə juː
+I'll loop you in.	aɪl lˈuːp juː ˈɪn
+I'll manage.	aɪl mˈænɪdʒ
+I'll pop in to say hi.	aɪl pˈɒp ɪn tə sˈeɪ hˈaɪ
+I'll pop over later.	aɪl pˈɒp ˌəʊvɐ lˈeɪtɐ
+I'll post it tomorrow.	aɪl pˈəʊst ɪt təmˈɒɹəʊ
+I'll proofread it for you.	aɪl pɹˈuːfɹiːd ɪt fɔː juː
+I'll put the cuppa on.	aɪl pˌʊt ðə kˈʌpɐɹ ˈɒn
+I'll reply later.	aɪl ɹɪplˈaɪ lˈeɪtɐ
+I'll return it tomorrow.	aɪl ɹɪtˈɜːn ɪt təmˈɒɹəʊ
+I'll ring you.	aɪl ɹˈɪŋ juː
+I'll sit back and watch the show.	aɪl sˈɪt bˈæk ænd wˈɒtʃ ðə ʃˈəʊ
+I'll stick with coffee.	aɪl stˈɪk wɪð kˈɒfɪ
+I'll stop by later.	aɪl stˈɒp baɪ lˈeɪtɐ
+I'll swing by later.	aɪl swˈɪŋ baɪ lˈeɪtɐ
+I'll take a pass.	aɪl tˈeɪk ɐ pˈɑːs
+I'll take a rain check.	aɪl tˈeɪk ɐ ɹˈeɪn tʃˈɛk
+I'll take care of it.	aɪl tˈeɪk kˈeəɹ ɒv ɪt
+I'll take over from here.	aɪl tˈeɪk ˌəʊvɐ fɹɒm hˈiə
+I'll treat myself to a massage.	aɪl tɹˈiːt maɪsˈɛlf tʊ ɐ mˈæsɑːʒ
+I'll upload it later.	aɪl ˈʌpləʊd ɪt lˈeɪtɐ
+I'll volunteer.	aɪl vˌɒləntˈiə
+I'll wash up after dinner.	aɪl wˈɒʃ ˌʌp ˈɑːftɐ dˈɪnɐ
+I'll wrap up by 5.	aɪl ɹˈæp ˌʌp baɪ fˈaɪv
+I'm a believer.	aɪm ɐ bɪlˈiːvɐ
+I'm a big fan of jazz.	aɪm ɐ bˈɪɡ fˈæn ɒv dʒˈæz
+I'm a bit busy.	aɪm ɐ bˈɪt bˈɪzɪ
+I'm a bit shy.	aɪm ɐ bˈɪt ʃˈaɪ
+I'm a newbie here.	aɪm ɐ njˈuːbɪ hˈiə
+I'm a night owl.	aɪm ɐ nˈaɪt ˈaʊl
+I'm a total homebody.	aɪm ɐ tˈəʊtəl hˈəʊmbɒdɪ
+I'm a work in progress.	aɪm ɐ wˈɜːk ɪn pɹˈəʊɡɹɛs
+I'm a wreck today.	aɪm ɐ ɹˈɛk tədˈeɪ
+I'm actually about to call you.	aɪm ˈæktʃuːəlɪ ɐbˌaʊt tə kˈɔːl juː
+I'm actually about to leave.	aɪm ˈæktʃuːəlɪ ɐbˌaʊt tə lˈiːv
+I'm all at sea with this.	aɪm ˈɔːl æt sˈiː wɪð ðˈɪs
+I'm an early bird.	aɪm ɐn ˈɜːlɪ bˈɜːd
+I'm an only child.	aɪm ɐn ˈəʊnlɪ tʃˈaɪld
+I'm at a stand mill.	aɪm ætɐ stˈænd mˈɪl
+I'm at fault.	aɪm æt fˈɒlt
+I'm beat.	aɪm bˈiːt
+I'm behind you.	aɪm bɪhˈaɪnd juː
+I'm between jobs.	aɪm bɪtwˌiːn dʒˈɒbz
+I'm bored out of my mind.	aɪm bˈɔːd ˌaʊtəv maɪ mˈaɪnd
+I'm bored.	aɪm bˈɔːd
+I'm broke.	aɪm bɹˈəʊk
+I'm buzzing!	aɪm bˈʌzɪŋ
+I'm calling it a day.	aɪm kˈɔːlɪŋ ɪt ɐ dˈeɪ
+I'm calling it a night.	aɪm kˈɔːlɪŋ ɪt ɐ nˈaɪt
+I'm close to burnout.	aɪm klˈəʊs tə bˈɜːnaʊt
+I'm coming now!	aɪm kˈʌmɪŋ nˈaʊ
+I'm confident about it.	aɪm kˈɒnfɪdənt ɐbˈaʊt ɪt
+I'm confused.	aɪm kənfjˈuːzd
+I'm cooked!	aɪm kˈʊkt
+I'm cool with that.	aɪm kˈuːl wɪð ðˈæt
+I'm curious about it.	aɪm kjˈɔːɹiəs ɐbˈaʊt ɪt
+I'm done for if she finds out.	aɪm dˈʌn fɔː ɪf ʃiː fˈaɪndz ˈaʊt
+I'm done with homework.	aɪm dˈʌn wɪð hˈəʊmwɜːk
+I'm done with my workout.	aɪm dˈʌn wɪð maɪ wˈɜːkaʊt
+I'm down for it.	aɪm dˈaʊn fɔːɹ ɪt
+I'm down for pizza.	aɪm dˌaʊn fɔː pˈiːtsɐ
+I'm down!	aɪm dˈaʊn
+I'm eager to start.	aɪm ˈiːɡɐ tə stˈɑːt
+I'm exhausted.	aɪm ɛɡzˈɔːstɪd
+I'm falling for him.	aɪm fˈɔːlɪŋ fɔː hˌɪm
+I'm fed up with this.	aɪm fˈɛd ˌʌp wɪð ðˈɪs
+I'm feeling under the weather.	aɪm fˈiːlɪŋ ˌʌndɐ ðə wˈɛðɐ
+I'm finally done with work.	aɪm fˈaɪnəlɪ dˈʌn wɪð wˈɜːk
+I'm finally done writing.	aɪm fˈaɪnəlɪ dˈʌn ɹˈaɪtɪŋ
+I'm finally getting over the flu.	aɪm fˈaɪnəlɪ ɡˌɛtɪŋ ˌəʊvɐ ðə flˈuː
+I'm full.	aɪm fˈʊl
+I'm getting used to the new job.	aɪm ɡˌɛtɪŋ jˈuːzd tə ðə njˈuː dʒˈɒb
+I'm going all in for this.	aɪm ɡˌəʊɪŋ ˈɔːl ɪn fɔː ðˈɪs
+I'm gutted.	aɪm ɡˈʌtɪd
+I'm having second thoughts.	aɪm hˌævɪŋ sˈɛkənd θˈɔːts
+I'm heading to the airport.	aɪm hˈɛdɪŋ tə ðɪ ˈeəpɔːt
+I'm hesitant to say yes.	aɪm hˈɛzɪtənt tə sˈeɪ jˈɛs
+I'm hopeful.	aɪm hˈəʊpfəl
+I'm hoping to finish today.	aɪm hˈəʊpɪŋ tə fˈɪnɪʃ tədˈeɪ
+I'm in a good mood.	aɪm ɪn ɐ ɡˈʊd mˈuːd
+I'm in a hurry.	aɪm ɪn ɐ hˈʌɹɪ
+I'm in a rush.	aɪm ɪn ɐ ɹˈʌʃ
+I'm in charge of marketing.	aɪm ɪn tʃˈɑːdʒ ɒv mˈɑːkɪtɪŋ
+I'm in the loop.	aɪm ɪnðə lˈuːp
+I'm in the middle of something.	aɪm ɪnðə mˈɪdəl ɒv sˈʌmθɪŋ
+I'm into running these days.	aɪm ˌɪntʊ ɹˈʌnɪŋ ðiːz dˈeɪz
+I'm just about ready.	aɪm dʒˈʌst ɐbˌaʊt ɹˈɛdɪ
+I'm just getting by.	aɪm dʒˈʌst ɡˌɛtɪŋ bˈaɪ
+I'm just looking.	aɪm dʒˈʌst lˈʊkɪŋ
+I'm just saying, ~	aɪm dʒˈʌst sˈeɪɪŋ tˈɪldɐ
+I'm knackered.	aɪm nˈækəd
+I'm looking to buy a car.	aɪm lˈʊkɪŋ tə bˈaɪ ɐ kˈɑː
+I'm nervous about the presentation.	aɪm nˈɜːvəs ɐbˌaʊt ðə pɹˌɛzəntˈeɪʃən
+I'm not as brave to try skydiving.	aɪm nˌɒt æz bɹˈeɪv tə tɹˈaɪ skˈaɪdaɪvɪŋ
+I'm not as brave to try that.	aɪm nˌɒt æz bɹˈeɪv tə tɹˈaɪ ðˈæt
+I'm not entirely convinced of the plan.	aɪm nˌɒt ɛntˈaɪəlɪ kənvˈɪnst ɒvðə plˈæn
+I'm not entirely convinced.	aɪm nˌɒt ɛntˈaɪəlɪ kənvˈɪnst
+I'm not sure yet.	aɪm nˌɒt ʃˈɔː jˈɛt
+I'm obsessed!	aɪm ɒbsˈɛst
+I'm off today, sleeping in.	aɪm ˈɒf tədˈeɪ slˈiːpɪŋ ˈɪn
+I'm off today, want to hang?	aɪm ˈɒf tədˈeɪ wˈɒnt tə hˈæŋ
+I'm on a diet.	aɪm ˌɒn ɐ dˈaɪət
+I'm on the fence about it.	aɪm ɒnðə fˈɛns ɐbˈaʊt ɪt
+I'm on the way.	aɪm ɒnðə wˈeɪ
+I'm on thin ice with my boss.	aɪm ˌɒn θˈɪn ˈaɪs wɪð maɪ bˈɒs
+I'm opposed to the plan.	aɪm əpˈəʊzd tə ðə plˈæn
+I'm out of mobile data.	aɪm ˌaʊtəv mˈəʊbaɪl dˈeɪtɐ
+I'm overwhelmed with work.	aɪm ˌəʊvəwˈɛlmd wɪð wˈɜːk
+I'm planning to go.	aɪm plˈænɪŋ tə ɡˈəʊ
+I'm praying for you.	aɪm pɹˈeɪɪŋ fɔː juː
+I'm privileged to be here.	aɪm pɹˈɪvɪlɪdʒd təbɪ hˈiə
+I'm psyched!	aɪm sˈaɪkd
+I'm pumped for this!	aɪm pˈʌmpt fɔː ðˈɪs
+I'm recovering well.	aɪm ɹɪkˈʌvəɹɪŋ wˈɛl
+I'm rooting for you.	aɪm ɹˈuːtɪŋ fɔː juː
+I'm saving up for a car.	aɪm sˈeɪvɪŋ ˌʌp fəɹɐ kˈɑː
+I'm shattered, going to bed.	aɪm ʃˈætəd ɡˌəʊɪŋ tə bˈɛd
+I'm sick of this.	aɪm sˈɪk ɒv ðˈɪs
+I'm so bummed.	aɪm sˌəʊ bˈʌmd
+I'm so frustrated.	aɪm sˌəʊ fɹʌstɹˈeɪtɪd
+I'm so grateful.	aɪm sˌəʊ ɡɹˈeɪtfəl
+I'm so hungover.	aɪm sˌəʊ hʌŋɡˈəʊvɐ
+I'm so jet-lagged.	aɪm sˌəʊ dʒˈɛtlˈæɡd
+I'm so pissed off.	aɪm sˌəʊ pˈɪst ˈɒf
+I'm so screwed.	aɪm sˌəʊ skɹˈuːd
+I'm sorry on their behalf.	aɪm sˈɒɹɪ ˌɒn ðeə bɪhˈɑːf
+I'm starting to like it.	aɪm stˈɑːtɪŋ tə lˈaɪk ɪt
+I'm starting to understand.	aɪm stˈɑːtɪŋ tʊ ˌʌndəstˈænd
+I'm starving!	aɪm stˈɑːvɪŋ
+I'm still adjusting.	aɪm stˈɪl ɐdʒˈʌstɪŋ
+I'm still groggy.	aɪm stˈɪl ɡɹˈɒɡɪ
+I'm stoked!	aɪm stˈəʊkt
+I'm stressed out.	aɪm stɹˈɛst ˈaʊt
+I'm strong at math.	aɪm stɹˈɒŋ æt mˈæθ
+I'm super stressed out.	aɪm sˈuːpɐ stɹˈɛst ˈaʊt
+I'm supposed to call her.	aɪm səpˈəʊzd tə kˈɔːl hɜː
+I'm swamped right now.	aɪm swˈɒmpt ɹˈaɪt nˈaʊ
+I'm telling you the truth.	aɪm tˈɛlɪŋ juː ðə tɹˈuːθ
+I'm telling you, it works.	aɪm tˈɛlɪŋ juː ɪt wˈɜːks
+I'm thankful for you.	aɪm θˈæŋkfəl fɔː juː
+I'm thinking of moving.	aɪm θˈɪŋkɪŋ ɒv mˈuːvɪŋ
+I'm tied up at the moment.	aɪm tˈaɪd ˌʌp æt ðə mˈəʊmənt
+I'm tired of this type of shit.	aɪm tˈaɪəd ɒv ðɪs tˈaɪp ɒv ʃˈɪt
+I'm totally in the dark.	aɪm tˈəʊtəlɪ ɪnðə dˈɑːk
+I'm toying with the idea.	aɪm tˈɔɪɪŋ wɪððɪ aɪdˈiə
+I'm trying to focus.	aɪm tɹˈaɪɪŋ tə fˈəʊkəs
+I'm used to it.	aɪm jˈuːzd tʊ ɪt
+I'm waiting around for nothing.	aɪm wˈeɪtɪŋ ɐɹˈaʊnd fɔː nˈʌθɪŋ
+I'm walking on eggshells around her.	aɪm wˈɔːkɪŋ ˌɒn ˈɛɡʃɛlz ɐɹˈaʊnd hɜː
+I'm wasted from work.	aɪm wˈeɪstɪd fɹɒm wˈɜːk
+I'm well aware.	aɪm wˈɛl ɐwˈeə
+I'm well prepared.	aɪm wˈɛl pɹɪpˈeəd
+I'm wiped out.	aɪm wˈaɪpt ˈaʊt
+I'm with you on that.	aɪm wɪð juː ˌɒn ðˈæt
+I'm working overtime tonight.	aɪm wˈɜːkɪŋ ˈəʊvətˌaɪm tənˈaɪt
+I'm worn out.	aɪm wˈɔːn ˈaʊt
+I'm worried about you.	aɪm wˈʌɹɪd ɐbˈaʊt juː
+I've been busy these days.	aɪv bˌiːn bˈɪzɪ ðiːz dˈeɪz
+I've been inside all day.	aɪv bˌiːn ɪnsˈaɪd ˈɔːl dˈeɪ
+I've been inside since morning.	aɪv bˌiːn ɪnsˈaɪd sˈɪns mˈɔːnɪŋ
+I've been obsessed with cooking.	aɪv bˌiːn ɒbsˈɛst wɪð kˈʊkɪŋ
+I've been obsessed with this song.	aɪv bˌiːn ɒbsˈɛst wɪð ðɪs sˈɒŋ
+I've done it!	aɪv dˈʌn ɪt
+I've felt off these past days.	aɪv fˈɛlt ˈɒf ðiːz pˈɑːst dˈeɪz
+I've got a sore throat.	aɪv ɡɒt ɐ sˈɔː θɹˈəʊt
+I've known him for quite a long time.	aɪv nˈəʊn hˌɪm fɔː kwˈaɪt ɐ lˈɒŋ tˈaɪm
+I've misplaced my keys again.	aɪv mɪsplˈeɪst maɪ kˈiːz ɐɡˈɛn
+I've never seen anything like this before.	aɪv nˈɛvɐ sˈiːn ˈɛnɪθˌɪŋ lˈaɪk ðɪs bɪfˈɔː
+ID is required.	aɪdˈiː ɪz ɹɪkwˈaɪəd
+IMO, it's overrated.	ˌaɪˌɛmˈəʊ ɪts ˌəʊvəɹˈeɪtɪd
+IMO, you should go.	ˌaɪˌɛmˈəʊ juː ʃˌʊd ɡˈəʊ
+Ice cube.	ˈaɪs kjˈuːb
+Iconic movie.	aɪkˈɒnɪk mˈuːvɪ
+Ideal weather for a picnic.	aɪdˈiəl wˈɛðɐ fəɹɐ pˈɪknɪk
+Identify the bottleneck.	aɪdˈɛntɪfˌaɪ ðə bˈɒtəlnˌɛk
+If I ask nicely.	ɪf aɪ ˈɑːsk nˈaɪslɪ
+If I fail this, I'm done for.	ɪf aɪ fˈeɪl ðˈɪs aɪm dˈʌn fɔː
+If I may, I'd suggest…	ɪf aɪ mˈeɪ aɪd sədʒˈɛst
+If I may, one more thing.	ɪf aɪ mˈeɪ wˈɒn mˈɔː θˈɪŋ
+If I were in your shoes, I'd quit.	ɪf aɪ wɜːɹ ɪn jɔː ʃˈuːz aɪd kwˈɪt
+If I were in your shoes, I'd wait.	ɪf aɪ wɜːɹ ɪn jɔː ʃˈuːz aɪd wˈeɪt
+If I were to choose, ~	ɪf aɪ wɜː tə tʃˈuːz tˈɪldɐ
+If I were to quit, ~	ɪf aɪ wɜː tə kwˈɪt tˈɪldɐ
+If I were you, I'd go.	ɪf aɪ wɜː jˈuː aɪd ɡˈəʊ
+If I were you, I'd quit.	ɪf aɪ wɜː jˈuː aɪd kwˈɪt
+If I'm wrong, let me know.	ɪf aɪm ɹˈɒŋ lˈɛt mˌiː nˈəʊ
+If anything, he's nicer.	ɪf ˈɛnɪθˌɪŋ hiːz nˈaɪsɐ
+If anything, it's better.	ɪf ˈɛnɪθˌɪŋ ɪts bˈɛtɐ
+If in doubt, ask.	ɪf ɪn dˈaʊt ˈɑːsk
+If in doubt, leave it out.	ɪf ɪn dˈaʊt lˈiːv ɪt ˈaʊt
+If it weren't for the rain.	ɪf ɪt wˌɜːnt fəðə ɹˈeɪn
+If it weren't for you, I'd fail.	ɪf ɪt wˈɜːnt fɔː juː aɪd fˈeɪl
+If need be, I'll go.	ɪf nˈiːd bˈiː aɪl ɡˈəʊ
+If only I knew.	ɪf ˈəʊnlɪ aɪ njˈuː
+If only it were true.	ɪf ˈəʊnlɪ ɪt wɜː tɹˈuː
+If push comes to shove, fight.	ɪf pˈʊʃ kˈʌmz tə ʃˈʌv fˈaɪt
+If push comes to shove, we'll cancel.	ɪf pˈʊʃ kˈʌmz tə ʃˈʌv wiːl kˈænsəl
+If that makes sense at all.	ɪf ðæt mˌeɪks sˈɛns æt ˈɔːl
+If that works for you, let me know.	ɪf ðæt wˈɜːks fɔː juː lˈɛt mˌiː nˈəʊ
+If they find out, I'm done for.	ɪf ðeɪ fˈaɪnd ˈaʊt aɪm dˈʌn fɔː
+If they find out, game over.	ɪf ðeɪ fˈaɪnd ˈaʊt ɡˈeɪm ˈəʊvɐ
+If you ask me, he's right.	ɪf juː ˈɑːsk mˌiː hiːz ɹˈaɪt
+If you ask me, it's silly.	ɪf juː ˈɑːsk mˌiː ɪts sˈɪlɪ
+If you ever need anything ~	ɪf juː ˈɛvɐ nˈiːd ˈɛnɪθˌɪŋ tˈɪldɐ
+If you ever need help, call me.	ɪf juː ˈɛvɐ nˈiːd hˈɛlp kˈɔːl mˌiː
+If you must know, I left.	ɪf juː mˈʌst nˈəʊ aɪ lˈɛft
+If you must know, I said no.	ɪf juː mˈʌst nˈəʊ aɪ sˈɛd nˈəʊ
+If you read between the lines, ~	ɪf juː ɹˈiːd bɪtwˌiːn ðə lˈaɪnz tˈɪldɐ
+Imitate the accent.	ˈɪmɪtˌeɪt ðɪ ˈæksənt
+Immense pressure.	ɪmˈɛns pɹˈɛʃɐ
+Implement the new policy.	ˈɪmplɪmənt ðə njˈuː pˈɒlɪsɪ
+Import wine.	ɪmpˈɔːt wˈaɪn
+Imported from Japan.	ɪmpˈɔːtɪd fɹɒm dʒəpˈæn
+Impose a tax.	ɪmpˈəʊz ɐ tˈæks
+Improve blood flow.	ɪmpɹˈuːv blˈʌd flˈəʊ
+In a cycle of bad habits.	ɪn ɐ sˈaɪkəl ɒv bˈæd hˈæbɪts
+In a cycle of debt.	ɪn ɐ sˈaɪkəl ɒv dˈɛt
+In a fortnight.	ɪn ɐ fˈɔːtnaɪt
+In a reflective mood.	ɪn ɐ ɹɪflˈɛktɪv mˈuːd
+In addition to coffee, tea.	ɪn ɐdˈɪʃən tə kˈɒfɪ tˈiː
+In addition to that, yes.	ɪn ɐdˈɪʃən tə ðˈæt jˈɛs
+In any case, thanks.	ɪn ˌɛnɪ kˈeɪs θˈæŋks
+In any case, we'll go.	ɪn ˌɛnɪ kˈeɪs wiːl ɡˈəʊ
+In any event, thank you.	ɪn ˌɛnɪ ɪvˈɛnt θˈæŋk juː
+In any event, we move on.	ɪn ˌɛnɪ ɪvˈɛnt wiː mˈuːv ˈɒn
+In big trouble.	ɪn bˈɪɡ tɹˈʌbəl
+In case of emergency.	ɪn kˈeɪs ɒv ɪmˈɜːdʒənsɪ
+In compliance with the law.	ɪn kəmplˈaɪəns wɪððə lˈɔː
+In conclusion, yes.	ɪn kəŋklˈuːʒən jˈɛs
+In conjunction with the team.	ɪn kəndʒˈʌŋkʃən wɪððə tˈiːm
+In darkness.	ɪn dˈɑːknəs
+In ecstasy over the news.	ɪn ˈɛkstəsɪ ˌəʊvɐ ðə njˈuːz
+In excess of the limit.	ɪn ɪksˈɛs ɒvðə lˈɪmɪt
+In general, this is true.	ɪn dʒˈɛnəɹəl ðɪs ɪz tɹˈuː
+In inverse order.	ɪn ɪnvˈɜːs ˈɔːdɐ
+In light of recent events.	ɪn lˈaɪt ɒv ɹˈiːsənt ɪvˈɛnts
+In light of the data.	ɪn lˈaɪt ɒvðə dˈeɪtɐ
+In line for promotion.	ɪn lˈaɪn fɔː pɹəmˈəʊʃən
+In my dream, I could fly.	ɪn maɪ dɹˈiːm aɪ kʊd flˈaɪ
+In my spare time, I read.	ɪn maɪ spˈeə tˈaɪm aɪ ɹˈiːd
+In my view, ~	ɪn maɪ vjˈuː tˈɪldɐ
+In my youth.	ɪn maɪ jˈuːθ
+In response to your email.	ɪn ɹɪspˈɒns tə jɔːɹ ˈiːmeɪl
+In simple terms, ~	ɪn sˈɪmpəl tˈɜːmz tˈɪldɐ
+In spite of everything.	ɪn spˈaɪt ɒv ˈɛvɹɪθˌɪŋ
+In spite of the rain, we went.	ɪn spˈaɪt ɒvðə ɹˈeɪn wiː wˈɛnt
+In that sense, we agree.	ɪn ðæt sˈɛns wiː ɐɡɹˈiː
+In that sense, yes.	ɪn ðæt sˈɛns jˈɛs
+In the back yard.	ɪnðə bˈæk jˈɑːd
+In the blink of an eye.	ɪnðə blˈɪŋk əvən ˈaɪ
+In the dying minute of the game.	ɪnðə dˈaɪɪŋ mˈɪnɪt ɒvðə ɡˈeɪm
+In the middle of dinner.	ɪnðə mˈɪdəl ɒv dˈɪnɐ
+In the middle.	ɪnðə mˈɪdəl
+In the name of justice.	ɪnðə nˈeɪm ɒv dʒˈʌstɪs
+In the name of love.	ɪnðə nˈeɪm ɒv lˈʌv
+In the right ballpark.	ɪnðə ɹˈaɪt bˈɔːlpɑːk
+In the right direction.	ɪnðə ɹˈaɪt daɪɹˈɛkʃən
+In the right shape.	ɪnðə ɹˈaɪt ʃˈeɪp
+In the spotlight.	ɪnðə spˈɒtlaɪt
+In the wake of the crisis.	ɪnðə wˈeɪk ɒvðə kɹˈaɪsɪs
+In the wake of the storm.	ɪnðə wˈeɪk ɒvðə stˈɔːm
+In this context...	ɪn ðɪs kˈɒntɛkst
+In transit.	ɪn tɹˈænsɪt
+In transition.	ɪn tɹænsˈɪʃən
+In what capacity?	ɪn wɒt kəpˈæsɪtɪ
+In which case, let me check.	ɪnwˌɪtʃ kˈeɪs lˈɛt mˌiː tʃˈɛk
+In which case, we'll go.	ɪnwˌɪtʃ kˈeɪs wiːl ɡˈəʊ
+In your dream!	ɪn jɔː dɹˈiːm
+In your heart, what do you want?	ɪn jɔː hˈɑːt wˌɒt dˈuː juː wˈɒnt
+Inbox is full.	ˈɪnbɒks ɪz fˈʊl
+Income gap.	ˈɪŋkʌm ɡˈæp
+Incorporate exercise into your day.	ɪŋkˈɔːpəɹˌeɪt ˈɛksəsˌaɪz ˌɪntʊ jɔː dˈeɪ
+Incorporate feedback.	ɪŋkˈɔːpəɹˌeɪt fˈiːdbæk
+Increase output.	ˈɪŋkɹiːs ˈaʊtpʊt
+Increase your income.	ˈɪŋkɹiːs jɔːɹ ˈɪŋkʌm
+Incur debt.	ɪŋkˈɜː dˈɛt
+Incur extra costs.	ɪŋkˈɜːɹ ˈɛkstɹɐ kˈɒsts
+Indian takeaway tonight?	ˈɪndiən tˈeɪkəwˌeɪ tənˈaɪt
+Indigenous people.	ɪndˈɪdʒənəs pˈiːpəl
+Indigenous to Japan.	ɪndˈɪdʒənəs tə dʒəpˈæn
+Indigenous traits of the species.	ɪndˈɪdʒənəs tɹˈeɪts ɒvðə spˈiːsiːz
+Industry benchmark.	ˈɪndʌstɹɪ bˈɛntʃmɑːk
+Infamous criminal.	ˈɪnfəməs kɹˈɪmɪnəl
+Infamous for ~	ˈɪnfəməs fɔː tˈɪldɐ
+Infectious laughter.	ɪnfˈɛkʃəs lˈɑːftɐ
+Infinite possibilities.	ˈɪnfɪnət pˌɒsəbˈɪlɪtɪz
+Inflate the price.	ɪnflˈeɪt ðə pɹˈaɪs
+Inflate the tire.	ɪnflˈeɪt ðə tˈaɪə
+Influence the outcome.	ˈɪnfluːəns ðɪ ˈaʊtkʌm
+Inform me of any changes.	ɪnfˈɔːm mˌiː ɒv ˌɛnɪ tʃˈeɪndʒɪz
+Inform the team.	ɪnfˈɔːm ðə tˈiːm
+Information was obtained.	ˌɪnfəmˈeɪʃən wɒz ɒbtˈeɪnd
+Inhale deeply.	ɪnhˈeɪl dˈiːplɪ
+Inhale the smoke.	ɪnhˈeɪl ðə smˈəʊk
+Inherited traits.	ɪnhˈɛɹɪtɪd tɹˈeɪts
+Inject energy.	ɪndʒˈɛkt ˈɛnədʒɪ
+Inject the medicine.	ɪndʒˈɛkt ðə mˈɛdsən
+Injured in the accident.	ˈɪndʒəd ɪnðɪ ˈæksɪdənt
+Inside preparing for the trip.	ɪnsˈaɪd pɹɪpˈeəɹɪŋ fəðə tɹˈɪp
+Inside preparing for tonight.	ɪnsˈaɪd pɹɪpˈeəɹɪŋ fɔː tənˈaɪt
+Inspect the goods.	ɪnspˈɛkt ðə ɡˈʊdz
+Inspect the site.	ɪnspˈɛkt ðə sˈaɪt
+Install a new lock.	ɪnstˈɔːl ɐ njˈuː lˈɒk
+Install the app.	ɪnstˈɔːl ðɪ ˈæp
+Instantly fell asleep.	ˈɪnstəntlɪ fˈɛl ɐslˈiːp
+Instead of leaving, stay.	ɪnstˈɛd ɒv lˈiːvɪŋ stˈeɪ
+Instead of pizza, sushi.	ɪnstˈɛd ɒv pˈiːtsɐ sˈuːʃɪ
+Institute a new policy.	ˈɪnstɪtjˌuːt ɐ njˈuː pˈɒlɪsɪ
+Insulate the house.	ˈɪnsjuːlˌeɪt ðə hˈaʊs
+Insulated from criticism.	ˈɪnsjuːlˌeɪtɪd fɹɒm kɹˈɪtɪsˌɪzəm
+Intelligent decision.	ɪntˈɛlɪdʒənt dɪsˈɪʒən
+Intelligent person.	ɪntˈɛlɪdʒənt pˈɜːsən
+Intentional design.	ɪntˈɛnʃənəl dɪzˈaɪn
+Interchangeable parts.	ˌɪntətʃˈeɪndʒəbəl pˈɑːts
+Internet slang.	ˈɪntənˌɛt slˈæŋ
+Invest in social media marketing.	ɪnvˈɛst ɪn sˈəʊʃəl mˈiːdiːɐ mˈɑːkɪtɪŋ
+Investors expect higher returns from this fund.	ɪnvˈɛstəz ɪkspˈɛkt hˈaɪɐ ɹɪtˈɜːnz fɹɒm ðɪs fˈʌnd
+Invite friends over.	ɪnvˈaɪt fɹˈɛndz ˈəʊvɐ
+Irrespective of age.	ɪɹɪspˈɛktɪv ɒv ˈeɪdʒ
+Irrespective of the result.	ɪɹɪspˈɛktɪv ɒvðə ɹɪzˈʌlt
+Irrigation for the fields.	ˌɪɹɪɡˈeɪʃən fəðə fˈiːldz
+Irritate the skin.	ˈɪɹɪtˌeɪt ðə skˈɪn
+Is it cold where you live?	ɪz ɪt kˈəʊld wˌeə juː lˈɪv
+Is it legal?	ɪz ɪt lˈiːɡəl
+Is there a station nearby?	ɪz ðeəɹ ɐ stˈeɪʃən niəbˈaɪ
+Is there a warranty?	ɪz ðeəɹ ɐ wˈɒɹəntɪ
+Is this a real person?	ɪz ðɪs ɐ ɹˈiəl pˈɜːsən
+It affects my mood.	ɪt ɐfˈɛkts maɪ mˈuːd
+It all adds up.	ɪt ˈɔːl ˈædz ˈʌp
+It became uncontrollable.	ɪt bɪkˌeɪm ʌŋkəntɹˈəʊləbəl
+It blew my mind!	ɪt blˈuː maɪ mˈaɪnd
+It blows my mind every time.	ɪt blˈəʊz maɪ mˈaɪnd ˈɛvɹɪ tˈaɪm
+It boils down to money.	ɪt bˈɔɪlz dˌaʊn tə mˈʌnɪ
+It breaks my heart to say no.	ɪt bɹˈeɪks maɪ hˈɑːt tə sˈeɪ nˈəʊ
+It breaks my heart to see this.	ɪt bɹˈeɪks maɪ hˈɑːt tə sˈiː ðˈɪs
+It breaks my heart to see.	ɪt bɹˈeɪks maɪ hˈɑːt tə sˈiː
+It broke into pieces.	ɪt bɹˈəʊk ˌɪntʊ pˈiːsɪz
+It brought about a new era.	ɪt bɹˈɔːt ɐbˌaʊt ɐ njˈuː ˈiəɹɐ
+It came out fine.	ɪt kˈeɪm ˈaʊt fˈaɪn
+It changes from day to day.	ɪt tʃˈeɪndʒɪz fɹɒm dˈeɪ tə dˈeɪ
+It cleared up by noon.	ɪt klˈiəd ˌʌp baɪ nˈuːn
+It comes down to money.	ɪt kˈʌmz dˌaʊn tə mˈʌnɪ
+It cost two grand.	ɪt kˈɒst tˈuː ɡɹˈænd
+It costs not more than $5.	ɪt kˈɒsts nˌɒt mˈɔː ðɐn dˈɒlɐ fˈaɪv
+It damaged the wall.	ɪt dˈæmɪdʒd ðə wˈɔːl
+It dates back to 1900.	ɪt dˈeɪts bˈæk tə nˈaɪntiːnhˈʌndɹɪd
+It depends on the weather.	ɪt dɪpˈɛndz ɒnðə wˈɛðɐ
+It disappeared!	ɪt dˌɪsɐpˈiəd
+It doesn't make sense to me.	ɪt dˈʌzənt mˌeɪk sˈɛns tə mˌiː
+It drives me up the wall.	ɪt dɹˈaɪvz mˌiː ˌʌp ðə wˈɔːl
+It feels awkward.	ɪt fˈiːlz ˈɔːkwəd
+It feels like forever.	ɪt fˈiːlz lˈaɪk fəɹˈɛvɐ
+It feels like winter.	ɪt fˈiːlz lˈaɪk wˈɪntɐ
+It felt magical.	ɪt fˈɛlt mˈædʒɪkəl
+It goes without saying that safety matters.	ɪt ɡəʊz wɪðˌaʊt sˈeɪɪŋ ðæt sˈeɪftɪ mˈætəz
+It goes without saying.	ɪt ɡəʊz wɪðˌaʊt sˈeɪɪŋ
+It got so much worse.	ɪt ɡɒt sˈəʊ mˌʌtʃ wˈɜːs
+It grosses me out.	ɪt ɡɹˈəʊsɪz mˌiː ˈaʊt
+It happened out of the blue.	ɪt hˈæpənd ˌaʊtəv ðə blˈuː
+It happened right here.	ɪt hˈæpənd ɹˈaɪt hˈiə
+It has been a long day.	ɪt hˈæzbiːn ɐ lˈɒŋ dˈeɪ
+It has been a while since I cooked.	ɪt hˈæzbiːn ɐ wˈaɪl sˈɪns aɪ kˈʊkt
+It has been a while since we met.	ɪt hˈæzbiːn ɐ wˈaɪl sˈɪns wiː mˈɛt
+It has been used to teach kids.	ɪt hˈæzbiːn jˈuːzd tə tˈiːtʃ kˈɪdz
+It has been used to treat pain.	ɪt hˈæzbiːn jˈuːzd tə tɹˈiːt pˈeɪn
+It has never been easier.	ɪt hɐz nˈɛvɐ bˌiːn ˈiːzɪɐ
+It has never been more important.	ɪt hɐz nˈɛvɐ bˌiːn mˈɔːɹ ɪmpˈɔːtənt
+It has nothing to do with you.	ɪt hɐz nˈʌθɪŋ tə dˈuː wɪð juː
+It irritates me.	ɪt ˈɪɹɪtˌeɪts mˌiː
+It is already seemingly failing.	ɪt ɪz ɔːlɹˌɛdɪ sˈiːmɪŋlɪ fˈeɪlɪŋ
+It is here that we met.	ɪt ɪz hˈiə ðæt wiː mˈɛt
+It is what it is.	ɪt ɪz wɒt ɪt ˈɪz
+It is you that I love.	ɪt ɪz juː ðæt aɪ lˈʌv
+It just dawned on me.	ɪt dʒˈʌst dˈɔːnd ˈɒn mˌiː
+It just occurred to me, why don't we go?	ɪt dʒˈʌst əkˈɜːd tə mˌiː wˌaɪ dˈəʊnt wiː ɡˈəʊ
+It just occurred to me.	ɪt dʒˈʌst əkˈɜːd tə mˌiː
+It let me feel bad all day.	ɪt lˈɛt mˌiː fˈiːl bˈæd ˈɔːl dˈeɪ
+It literally means 'cherry blossom'.	ɪt lˈɪtəɹəlɪ mˈiːnz tʃˈɛɹɪ blˈɒsəm
+It looks easy, yet in reality it's hard.	ɪt lˈʊks ˈiːzɪ jˈɛt ɪn ɹɪˈælɪtɪ ɪts hˈɑːd
+It matters to ordinary folks.	ɪt mˈætəz tʊ ˈɔːdɪnəɹɪ fˈəʊks
+It means a lot to me.	ɪt mˈiːnz ɐ lˈɒt tə mˌiː
+It might be a good idea to ask.	ɪt mˌaɪt biː ɐ ɡˈʊd aɪdˈiə tʊ ˈɑːsk
+It might be a good idea to rest.	ɪt mˌaɪt biː ɐ ɡˈʊd aɪdˈiə tə ɹˈɛst
+It needs much more time.	ɪt nˈiːdz mˈʌtʃ mˈɔː tˈaɪm
+It occurred to me.	ɪt əkˈɜːd tə mˌiː
+It pays off in the long run.	ɪt pˈeɪz ˈɒf ɪnðə lˈɒŋ ɹˈʌn
+It rained, so much so that we cancelled.	ɪt ɹˈeɪnd sˈəʊ mˌʌtʃ sˌəʊ ðæt wiː kˈænsəld
+It really made a difference.	ɪt ɹˈiəlɪ mˌeɪd ɐ dˈɪfɹəns
+It reflects your effort.	ɪt ɹɪflˈɛkts jɔːɹ ˈɛfət
+It reminds me of home.	ɪt ɹɪmˈaɪndz mˌiː ɒv hˈəʊm
+It rendered him speechless.	ɪt ɹˈɛndəd hˌɪm spˈiːtʃləs
+It resembles a cat.	ɪt ɹɪzˈɛmbəlz ɐ kˈæt
+It resulted in success.	ɪt ɹɪzˈʌltɪd ɪn səksˈɛs
+It reverted back to normal.	ɪt ɹɪvˈɜːtɪd bˈæk tə nˈɔːməl
+It seems he left.	ɪt sˈiːmz hiː lˈɛft
+It seems like a case that needs review.	ɪt sˈiːmz lˈaɪk ɐ kˈeɪs ðæt nˈiːdz ɹɪvjˈuː
+It seems like a case that nobody knew.	ɪt sˈiːmz lˈaɪk ɐ kˈeɪs ðæt nˈəʊbɒdɪ njˈuː
+It seems to me that this works.	ɪt sˈiːmz tə mˌiː ðæt ðɪs wˈɜːks
+It seems to me that we agree.	ɪt sˈiːmz tə mˌiː ðæt wiː ɐɡɹˈiː
+It serves its purpose.	ɪt sˈɜːvz ɪts pˈɜːpəs
+It should be fine by tomorrow.	ɪt ʃˌʊd biː fˈaɪn baɪ təmˈɒɹəʊ
+It should sound like a native.	ɪt ʃˌʊd sˈaʊnd lˈaɪk ɐ nˈeɪtɪv
+It should sound like this.	ɪt ʃˌʊd sˈaʊnd lˈaɪk ðˈɪs
+It slipped my mind.	ɪt slˈɪpt maɪ mˈaɪnd
+It sparked outrage.	ɪt spˈɑːkt ˈaʊtɹeɪdʒ
+It stands for love.	ɪt stˈændz fɔː lˈʌv
+It stinks in here.	ɪt stˈɪŋks ɪn hˈiə
+It strikes me as a bit risky.	ɪt stɹˈaɪks mˌiː æz ɐ bˈɪt ɹˈɪskɪ
+It strikes me as odd.	ɪt stɹˈaɪks mˌiː æz ˈɒd
+It struck me as odd.	ɪt stɹˈʌk mˌiː æz ˈɒd
+It struck me suddenly.	ɪt stɹˈʌk mˌiː sˈʌdənlɪ
+It stuck out a lot.	ɪt stˈʌk ˈaʊt ɐ lˈɒt
+It sucks, but oh well.	ɪt sˈʌks bˌʌt ˈəʊ wˈɛl
+It takes courage to speak.	ɪt tˈeɪks kˈʌɹɪdʒ tə spˈiːk
+It takes time to learn.	ɪt tˈeɪks tˈaɪm tə lˈɜːn
+It that's how it will end up, I'll prepare.	ɪt ðæts hˌaʊ ɪt wɪl ˈɛnd ˈʌp aɪl pɹɪpˈeə
+It that's how it will end up, so be it.	ɪt ðæts hˌaʊ ɪt wɪl ˈɛnd ˈʌp sˈəʊ biː ɪt
+It tickled me pink.	ɪt tˈɪkəld mˌiː pˈɪŋk
+It turned into a mess.	ɪt tˈɜːnd ˌɪntʊ ɐ mˈɛs
+It turned out fine.	ɪt tˈɜːnd ˈaʊt fˈaɪn
+It upset her.	ɪt ʌpsˈɛt hɜː
+It warms my heart to hear that.	ɪt wˈɔːmz maɪ hˈɑːt tə hˈiə ðˈæt
+It warms my heart.	ɪt wˈɔːmz maɪ hˈɑːt
+It was a blessing in disguise.	ɪt wʌzɐ blˈɛsɪŋ ɪn dɪsɡˈaɪz
+It was a fluke.	ɪt wʌzɐ flˈuːk
+It was a misunderstanding.	ɪt wʌzɐ mɪsˌʌndəstˈændɪŋ
+It was a nice surprise.	ɪt wʌzɐ nˈaɪs səpɹˈaɪz
+It was a nightmare.	ɪt wʌzɐ nˈaɪtmeə
+It was a perfect storm.	ɪt wʌzɐ pˈɜːfɛkt stˈɔːm
+It was a total disaster.	ɪt wʌzɐ tˈəʊtəl dɪzˈɑːstɐ
+It was a wake-up call.	ɪt wʌzɐ wˈeɪkˌʌp kˈɔːl
+It was a wild goose chase.	ɪt wʌzɐ wˈaɪld ɡˈuːs tʃˈeɪs
+It was absolutely mental.	ɪt wɒz ˌæbsəlˈuːtlɪ mˈɛntəl
+It was bad, to put it mildly.	ɪt wɒz bˈæd tə pˌʊt ɪt mˈaɪldlɪ
+It was broadcast live.	ɪt wɒz bɹˈɔːdkɑːst lˈaɪv
+It was dead silent.	ɪt wɒz dˈɛd sˈaɪlənt
+It was great, mind you.	ɪt wɒz ɡɹˈeɪt mˈaɪnd juː
+It was horrible.	ɪt wɒz hˈɒɹɪbəl
+It was inevitable.	ɪt wɒz ɪnˈɛvɪtəbəl
+It was intentional.	ɪt wɒz ɪntˈɛnʃənəl
+It was most enjoyable.	ɪt wɒz mˈəʊst ɪndʒˈɔɪəbəl
+It went from heaven to hell.	ɪt wɛnt fɹɒm hˈɛvən tə hˈɛl
+It will surely work.	ɪt wɪl ʃˈɔːlɪ wˈɜːk
+It won't wash off.	ɪt wəʊnt wˈɒʃ ˈɒf
+It would be lovely if we met soon.	ɪt wʊd biː lˈʌvlɪ ɪf wiː mˈɛt sˈuːn
+It would be lovely if you could come.	ɪt wʊd biː lˈʌvlɪ ɪf juː kʊd kˈʌm
+It'll start any minute now.	ˌɪtəl stˈɑːt ˌɛnɪ mˈɪnɪt nˈaʊ
+It'll work out.	ˌɪtəl wˈɜːk ˈaʊt
+It's 5 bucks.	ɪts fˈaɪv bˈʌks
+It's NBD.	ɪts ˌɛnbˌiːdˈiː
+It's a BYOB party.	ɪts ɐ bˈaɪɒb pˈɑːtɪ
+It's a big deal.	ɪts ɐ bˈɪɡ dˈiːl
+It's a bit iffy.	ɪts ɐ bˈɪt ˈɪfɪ
+It's a competitive market.	ɪts ɐ kəmpˈɛtɪtˌɪv mˈɑːkɪt
+It's a complex issue.	ɪts ɐ kˈɒmplɛks ˈɪʃuː
+It's a deal.	ɪts ɐ dˈiːl
+It's a five minute walk away.	ɪts ɐ fˈaɪv mˈɪnɪt wˈɔːk ɐwˈeɪ
+It's a long shot.	ɪts ɐ lˈɒŋ ʃˈɒt
+It's a long story.	ɪts ɐ lˈɒŋ stˈɔːɹɪ
+It's a massive match tonight.	ɪts ɐ mˈæsɪv mˈætʃ tənˈaɪt
+It's a matter of principle.	ɪts ɐ mˈætɐɹ ɒv pɹˈɪnsɪpəl
+It's a no-brainer.	ɪts ɐ nˈəʊbɹˈeɪnɐ
+It's a privilege.	ɪts ɐ pɹˈɪvɪlɪdʒ
+It's a terrifying reminder.	ɪts ɐ tˈɛɹɪfˌaɪɪŋ ɹɪmˈaɪndɐ
+It's a wake-up call.	ɪts ɐ wˈeɪkˌʌp kˈɔːl
+It's a work in progress.	ɪts ɐ wˈɜːk ɪn pɹˈəʊɡɹɛs
+It's about time you called.	ɪts ɐbˌaʊt tˈaɪm juː kˈɔːld
+It's about time!	ɪts ɐbˌaʊt tˈaɪm
+It's about to be an absolute mess.	ɪts ɐbˌaʊt təbɪ ɐn ˈæbsəlˌuːt mˈɛs
+It's about to rain.	ɪts ɐbˌaʊt tə ɹˈeɪn
+It's all a mind game.	ɪts ˈɔːl ɐ mˈaɪnd ɡˈeɪm
+It's all about timing.	ɪts ˈɔːl ɐbˌaʊt tˈaɪmɪŋ
+It's all good.	ɪts ˈɔːl ɡˈʊd
+It's all my fault.	ɪts ˈɔːl maɪ fˈɒlt
+It's all squared away.	ɪts ˈɔːl skwˈeəd ɐwˈeɪ
+It's all water under the bridge.	ɪts ˈɔːl wˈɔːtɐɹ ˌʌndɐ ðə bɹˈɪdʒ
+It's an emergency.	ɪts ɐn ɪmˈɜːdʒənsɪ
+It's an inside joke.	ɪts ɐn ɪnsˈaɪd dʒˈəʊk
+It's apparent he's lying.	ɪts ɐpˈæɹənt hiːz lˈaɪɪŋ
+It's been chaotic at work.	ɪts bˌiːn keɪˈɒtɪk æt wˈɜːk
+It's been hectic.	ɪts bˌiːn hˈɛktɪk
+It's been proven by science.	ɪts bˌiːn pɹˈuːvən baɪ sˈaɪəns
+It's been proven to work.	ɪts bˌiːn pɹˈuːvən tə wˈɜːk
+It's better in the long run.	ɪts bˈɛtɐɹ ɪnðə lˈɒŋ ɹˈʌn
+It's better than nothing.	ɪts bˈɛtɐ ðɐn nˈʌθɪŋ
+It's beyond me.	ɪts bɪjˈɒnd mˌiː
+It's chilly outside.	ɪts tʃˈɪlɪ aʊtsˈaɪd
+It's cold, that's for sure.	ɪts kˈəʊld ðæts fɔː ʃˈɔː
+It's complicated and involved.	ɪts kˈɒmplɪkˌeɪtɪd ænd ɪnvˈɒlvd
+It's complicated, if that makes sense.	ɪts kˈɒmplɪkˌeɪtɪd ɪf ðæt mˌeɪks sˈɛns
+It's complicated, if you know what I mean.	ɪts kˈɒmplɪkˌeɪtɪd ɪf juː nˈəʊ wɒt aɪ mˈiːn
+It's delicate.	ɪts dˈɛlɪkət
+It's different from what I expected.	ɪts dˈɪfɹənt fɹɒm wɒt aɪ ɪkspˈɛktɪd
+It's downloading now.	ɪts dˈaʊnləʊdɪŋ nˈaʊ
+It's either now or never.	ɪts ˈaɪðɐ nˈaʊ ɔː nˈɛvɐ
+It's either yes or no.	ɪts ˈaɪðɐ jˈɛs ɔː nˈəʊ
+It's expected to be around 30 degrees.	ɪts ɪkspˈɛktɪd təbɪ ɐɹˈaʊnd θˈɜːtɪ dɪɡɹˈiːz
+It's expected to be around noon.	ɪts ɪkspˈɛktɪd təbɪ ɐɹˈaʊnd nˈuːn
+It's freaking cold.	ɪts fɹˈiːkɪŋ kˈəʊld
+It's freezing!	ɪts fɹˈiːzɪŋ
+It's full of irony.	ɪts fˈʊl ɒv ˈaɪɹənɪ
+It's getting cold.	ɪts ɡˌɛtɪŋ kˈəʊld
+It's getting dark.	ɪts ɡˌɛtɪŋ dˈɑːk
+It's getting late.	ɪts ɡˌɛtɪŋ lˈeɪt
+It's great no matter how many times I watch it.	ɪts ɡɹˈeɪt nˈəʊ mˈætɐ hˌaʊ mˈɛnɪ tˈaɪmz aɪ wˈɒtʃ ɪt
+It's happening, whether you like it or not.	ɪts hˈæpənɪŋ wˈɛðɐ juː lˈaɪk ɪt ɔː nˈɒt
+It's hella fun.	ɪts hˈɛlɐ fˈʌn
+It's hot these days.	ɪts hˈɒt ðiːz dˈeɪz
+It's hot, don't you think?	ɪts hˈɒt dˈəʊnt juː θˈɪŋk
+It's hot, innit?	ɪts hˈɒt ɪnnˈɪt
+It's hot, right?	ɪts hˈɒt ɹˈaɪt
+It's in my blood.	ɪts ɪn maɪ blˈʌd
+It's in the settings.	ɪts ɪnðə sˈɛtɪŋz
+It's in your court now.	ɪts ɪn jɔː kˈɔːt nˈaʊ
+It's just a crush.	ɪts dʒˈʌst ɐ kɹˈʌʃ
+It's just a drop in the bucket.	ɪts dʒˈʌst ɐ dɹˈɒp ɪnðə bˈʌkɪt
+It's just a fun.	ɪts dʒˈʌst ɐ fˈʌn
+It's just common sense.	ɪts dʒˈʌst kˈɒmən sˈɛns
+It's just like cheating.	ɪts dʒˈʌst lˈaɪk tʃˈiːtɪŋ
+It's kind of like Twitter.	ɪts kˈaɪnd ɒv lˈaɪk twˈɪtɐ
+It's kind of weird.	ɪts kˈaɪnd ɒv wˈiəd
+It's more like blue than green.	ɪts mˈɔː lˈaɪk blˈuː ðɐn ɡɹˈiːn
+It's my destiny.	ɪts maɪ dˈɛstɪnɪ
+It's my treat tonight.	ɪts maɪ tɹˈiːt tənˈaɪt
+It's no biggie.	ɪts nˈəʊ bˈɪɡɪ
+It's no use crying.	ɪts nˈəʊ jˈuːs kɹˈaɪɪŋ
+It's no use trying.	ɪts nˈəʊ jˈuːs tɹˈaɪɪŋ
+It's not as easy as it looks.	ɪts nˌɒt æz ˈiːzɪ æz ɪt lˈʊks
+It's not him, and not her either.	ɪts nˌɒt hˈɪm ænd nˌɒt hɜːɹ ˈaɪðɐ
+It's not the best, but not the worst either.	ɪts nˌɒt ðə bˈɛst bˌʌt nˌɒt ðə wˈɜːst ˈaɪðɐ
+It's obvious.	ɪts ˈɒbviəs
+It's offensive as fuck.	ɪts əfˈɛnsɪv æz fˈʌk
+It's on sale!	ɪts ˌɒn sˈeɪl
+It's our home, so to speak.	ɪts ˌaʊɐ hˈəʊm sˌəʊ tə spˈiːk
+It's out of stock.	ɪts ˌaʊtəv stˈɒk
+It's plugged in.	ɪts plˈʌɡd ˈɪn
+It's pointless.	ɪts pˈɔɪntləs
+It's raining cats and dogs.	ɪts ɹˈeɪnɪŋ kˈæts ænd dˈɒɡz
+It's risky, which is why I stopped.	ɪts ɹˈɪskɪ wˌɪtʃ ɪz wˌaɪ aɪ stˈɒpt
+It's said that he's rich.	ɪts sˈɛd ðæt hiːz ɹˈɪtʃ
+It's said that ~	ɪts sˈɛd ðæt tˈɪldɐ
+It's showtime!	ɪts ʃˈəʊtaɪm
+It's sort of like a hat.	ɪts sˈɔːt ɒv lˈaɪk ɐ hˈæt
+It's sorted.	ɪts sˈɔːtɪd
+It's still under warranty.	ɪts stˈɪl ˌʌndɐ wˈɒɹəntɪ
+It's straight ahead.	ɪts stɹˈeɪt ɐhˈɛd
+It's ten minutes from here.	ɪts tˈɛn mˈɪnɪts fɹɒm hˈiə
+It's the calm before the storm.	ɪts ðə kˈɑːm bɪfˌɔː ðə stˈɔːm
+It's the elephant in the room.	ɪts ðɪ ˈɛlɪfənt ɪnðə ɹˈuːm
+It's the same thing.	ɪts ðə sˈeɪm θˈɪŋ
+It's time to go.	ɪts tˈaɪm tə ɡˈəʊ
+It's time to make a change.	ɪts tˈaɪm tə mˌeɪk ɐ tʃˈeɪndʒ
+It's touch and go.	ɪts tˈʌtʃ ænd ɡˈəʊ
+It's true, or so they say.	ɪts tɹˈuː ɔː sˌəʊ ðeɪ sˈeɪ
+It's understandable to feel nervous.	ɪts ˌʌndəstˈændəbəl tə fˈiːl nˈɜːvəs
+It's understandable to feel that way.	ɪts ˌʌndəstˈændəbəl tə fˈiːl ðæt wˈeɪ
+It's up to you.	ɪts ˈʌp tə juː
+It's way too cold.	ɪts wˈeɪ tˈuː kˈəʊld
+It's what is called a classic.	ɪts wɒt ɪz kˈɔːld ɐ klˈæsɪk
+It's worth it.	ɪts wˈɜːθ ɪt
+It's wrong to generalize.	ɪts ɹˈɒŋ tə dʒˈɛnəɹəlˌaɪz
+It's your choice whether or not to agree.	ɪts jɔː tʃˈɔɪs wˈɛðɐ ɔː nˌɒt tʊ ɐɡɹˈiː
+It's your choice whether or not to come.	ɪts jɔː tʃˈɔɪs wˈɛðɐ ɔː nˌɒt tə kˈʌm
+Jailbreak the phone.	dʒˈeɪlbɹeɪk ðə fˈəʊn
+Japanese citizen.	dʒˌæpənˈiːz sˈɪtɪzən
+Japanese counterpart.	dʒˌæpənˈiːz kˈaʊntəpˌɑːt
+Japanese craftsmanship.	dʒˌæpənˈiːz kɹˈɑːftsmənʃˌɪp
+Japanese hospitality.	dʒˌæpənˈiːz hˌɒspɪtˈælɪtɪ
+Jet lag is killing me.	dʒˈɛt lˈæɡ ɪz kˈɪlɪŋ mˌiː
+Job application.	dʒˈɒb ˌæplɪkˈeɪʃən
+Job candidate.	dʒˈɒb kˈændɪdˌeɪt
+Job hunt.	dʒˈɒb hˈʌnt
+Job interview tomorrow.	dʒˈɒb ˈɪntəvjˌuː təmˈɒɹəʊ
+Job perks are great.	dʒˈɒb pˈɜːks ɑː ɡɹˈeɪt
+Join the pieces together.	dʒˈɔɪn ðə pˈiːsɪz təɡˈɛðɐ
+Join together as one.	dʒˈɔɪn təɡˈɛðɐɹ æz wˌɒn
+Joint effort.	dʒˈɔɪnt ˈɛfət
+Joking apart, I'm worried.	dʒˈəʊkɪŋ ɐpˈɑːt aɪm wˈʌɹɪd
+Joking apart, we need to act.	dʒˈəʊkɪŋ ɐpˈɑːt wiː nˈiːd tʊ ˈækt
+Joking aside, ~	dʒˈəʊkɪŋ ɐsˈaɪd tˈɪldɐ
+Journal your thoughts.	dʒˈɜːnəl jɔː θˈɔːts
+Joyful tears.	dʒˈɔɪfəl tˈiəz
+Judging by the way he looks, tired.	dʒˈʌdʒɪŋ baɪ ðə wˈeɪ hiː lˈʊks tˈaɪəd
+Judging by the way she walks, hurt.	dʒˈʌdʒɪŋ baɪ ðə wˈeɪ ʃiː wˈɔːks hˈɜːt
+Judging from his face.	dʒˈʌdʒɪŋ fɹɒm hɪz fˈeɪs
+Judging from the smell, burnt.	dʒˈʌdʒɪŋ fɹʌmðə smˈɛl bˈɜːnt
+Juggle three balls.	dʒˈʌɡəl θɹˈiː bˈɔːlz
+Juggle work and family.	dʒˈʌɡəl wˈɜːk ænd fˈæmɪlɪ
+Jumped to a conclusion.	dʒˈʌmpt tʊ ɐ kəŋklˈuːʒən
+Just HMU when you're free.	dʒˈʌst ˌeɪtʃˌɛmjˈuː wɛn jɔː fɹˈiː
+Just a fun activity.	dʒˈʌst ɐ fˈʌn æktˈɪvɪtɪ
+Just a glimpse.	dʒˈʌst ɐ ɡlˈɪmps
+Just a heads-up.	dʒˈʌst ɐ hˈɛdzˈʌp
+Just a hunch.	dʒˈʌst ɐ hˈʌntʃ
+Just a minute walk away.	dʒˈʌst ɐ mˈɪnɪt wˈɔːk ɐwˈeɪ
+Just a quick bite before work.	dʒˈʌst ɐ kwˈɪk bˈaɪt bɪfˌɔː wˈɜːk
+Just a wee minute.	dʒˈʌst ɐ wˈiː mˈɪnɪt
+Just about done.	dʒˈʌst ɐbˌaʊt dˈʌn
+Just an acquaintance.	dʒˈʌst ɐn ɐkwˈeɪntəns
+Just an afterthought.	dʒˈʌst ɐn ˈɑːftəθˌɔːt
+Just back off a bit.	dʒˈʌst bˈæk ˈɒf ɐ bˈɪt
+Just barely made it.	dʒˈʌst bˈeəlɪ mˈeɪd ɪt
+Just barely passed.	dʒˈʌst bˈeəlɪ pˈɑːst
+Just breathe.	dʒˈʌst bɹˈiːð
+Just calm down for a sec.	dʒˈʌst kˈɑːm dˌaʊn fəɹɐ sˈɛk
+Just can it, please.	dʒˈʌst kˈæn ɪt plˈiːz
+Just carry on, I'll catch up.	dʒˈʌst kˈæɹɪ ˈɒn aɪl kˈætʃ ˈʌp
+Just chill at home today.	dʒˈʌst tʃˈɪl æt hˈəʊm tədˈeɪ
+Just chill out.	dʒˈʌst tʃˈɪl ˈaʊt
+Just chill.	dʒˈʌst tʃˈɪl
+Just chillax!	dʒˈʌst tʃˈɪlæks
+Just cosmetic changes.	dʒˈʌst kɒzmˈɛtɪk tʃˈeɪndʒɪz
+Just go and move on.	dʒˈʌst ɡˌəʊ ænd mˈuːv ˈɒn
+Just hang in there a bit longer.	dʒˈʌst hˈæŋ ɪn ðeəɹ ɐ bˈɪt lˈɒŋɡɐ
+Just in case.	dʒˈʌst ɪn kˈeɪs
+Just keep that in mind.	dʒˈʌst kˈiːp ðæt ɪn mˈaɪnd
+Just kick back and relax.	dʒˈʌst kˈɪk bˈæk ænd ɹɪlˈæks
+Just kidding!	dʒˈʌst kˈɪdɪŋ
+Just let bygones be bygones.	dʒˈʌst lˈɛt bˈaɪɡɒnz biː bˈaɪɡɒnz
+Just lighten up.	dʒˈʌst lˈaɪtən ˈʌp
+Just like flying.	dʒˈʌst lˈaɪk flˈaɪɪŋ
+Just log in here.	dʒˈʌst lˈɒɡ ɪn hˈiə
+Just looking, thanks.	dʒˈʌst lˈʊkɪŋ θˈæŋks
+Just making small talk.	dʒˈʌst mˌeɪkɪŋ smˈɔːl tˈɔːk
+Just mentioned it briefly.	dʒˈʌst mˈɛnʃənd ɪt bɹˈiːflɪ
+Just out of curiosity, ~	dʒˈʌst ˌaʊtəv kjˌɔːɹɪˈɒsɪtɪ tˈɪldɐ
+Just passing through.	dʒˈʌst pˈɑːsɪŋ θɹˈuː
+Just remembering you.	dʒˈʌst ɹɪmˈɛmbəɹɪŋ juː
+Just saying.	dʒˈʌst sˈeɪɪŋ
+Just scribble it down.	dʒˈʌst skɹˈɪbəl ɪt dˈaʊn
+Just shrug it off.	dʒˈʌst ʃɹˈʌɡ ɪt ˈɒf
+Just shut up already.	dʒˈʌst ʃˈʌt ˌʌp ɔːlɹˈɛdɪ
+Just sit back and watch.	dʒˈʌst sˈɪt bˈæk ænd wˈɒtʃ
+Just sit tight.	dʒˈʌst sˈɪt tˈaɪt
+Just so you know, I disagree.	dʒˈʌst sˌəʊ juː nˈəʊ aɪ dˌɪsɐɡɹˈiː
+Just so you know, it's closed.	dʒˈʌst sˌəʊ juː nˈəʊ ɪts klˈəʊzd
+Just stick with it.	dʒˈʌst stˈɪk wɪð ɪt
+Just swipe up.	dʒˈʌst swˈaɪp ˈʌp
+Just teasing.	dʒˈʌst tˈiːzɪŋ
+Just the gist of it.	dʒˈʌst ðə dʒˈɪst ɒv ɪt
+Just to confirm the schedule.	dʒˈʌst tə kənfˈɜːm ðə ʃˈɛdjuːl
+Just to confirm, 3 PM?	dʒˈʌst tə kənfˈɜːm θɹˈiː pˌiːˈɛm
+Just to let you know, I'll be late.	dʒˈʌst tə lˈɛt juː nˈəʊ aɪl biː lˈeɪt
+Just to let you know, it's done.	dʒˈʌst tə lˈɛt juː nˈəʊ ɪts dˈʌn
+Just touching base.	dʒˈʌst tˈʌtʃɪŋ bˈeɪs
+Just try it and see what happens.	dʒˈʌst tɹˈaɪ ɪt ænd sˈiː wɒt hˈæpənz
+Just trying to get ahead.	dʒˈʌst tɹˈaɪɪŋ tə ɡɛt ɐhˈɛd
+Just wait, you'll see.	dʒˈʌst wˈeɪt juːl sˈiː
+Just wondering, ~	dʒˈʌst wˈʌndəɹɪŋ tˈɪldɐ
+Just wondering.	dʒˈʌst wˈʌndəɹɪŋ
+Justify your decision.	dʒˈʌstɪfˌaɪ jɔː dɪsˈɪʒən
+Karma will get him.	kˈɑːmɐ wɪl ɡˈɛt hˌɪm
+Keep a low profile.	kˈiːp ɐ lˈəʊ pɹˈəʊfaɪl
+Keep cash flowing.	kˈiːp kˈæʃ flˈəʊɪŋ
+Keep costs down.	kˈiːp kˈɒsts dˈaʊn
+Keep in mind we have a meeting at 3.	kˈiːp ɪn mˈaɪnd wiː hæv ɐ mˈiːtɪŋ æt θɹˈiː
+Keep in touch, OK?	kˈiːp ɪn tˈʌtʃ ˌəʊkˈeɪ
+Keep it confidential.	kˈiːp ɪt kˌɒnfɪdˈɛnʃəl
+Keep it going!	kˈiːp ɪt ɡˈəʊɪŋ
+Keep it in working condition.	kˈiːp ɪt ɪn wˈɜːkɪŋ kəndˈɪʃən
+Keep it simple.	kˈiːp ɪt sˈɪmpəl
+Keep it under control.	kˈiːp ɪt ˌʌndɐ kəntɹˈəʊl
+Keep me in the loop.	kˈiːp mˌiː ɪnðə lˈuːp
+Keep me informed.	kˈiːp mˌiː ɪnfˈɔːmd
+Keep me posted.	kˈiːp mˌiː pˈəʊstɪd
+Keep tabs on the budget.	kˈiːp tˈæbz ɒnðə bˈʌdʒɪt
+Keep the audio silent.	kˈiːp ðɪ ˈɔːdɪˌəʊ sˈaɪlənt
+Keep the conversation flowing.	kˈiːp ðə kɒnvəsˈeɪʃən flˈəʊɪŋ
+Keep the conversation going.	kˈiːp ðə kɒnvəsˈeɪʃən ɡˈəʊɪŋ
+Keep trying.	kˈiːp tɹˈaɪɪŋ
+Keep up the good work!	kˈiːp ˌʌp ðə ɡˈʊd wˈɜːk
+Keep walking.	kˈiːp wˈɔːkɪŋ
+Keep your fingers crossed for me.	kˈiːp jɔː fˈɪŋɡəz kɹˈɒst fɔː mˌiː
+Keep your mouth shut about this.	kˈiːp jɔː mˈaʊθ ʃˈʌt ɐbˌaʊt ðˈɪs
+Keep your voice down.	kˈiːp jɔː vˈɔɪs dˈaʊn
+Key feature.	kˈiː fˈiːtʃɐ
+Key findings.	kˈiː fˈaɪndɪŋz
+Key metrics.	kˈiː mˈɛtɹɪks
+Kick back with a beer.	kˈɪk bˈæk wɪð ɐ bˈiə
+Kick off the meeting.	kˈɪk ˈɒf ðə mˈiːtɪŋ
+Kick the ball.	kˈɪk ðə bˈɔːl
+Kids imitate adults.	kˈɪdz ˈɪmɪtˌeɪt ˈædʌlts
+Kids look up to their teachers.	kˈɪdz lˈʊk ˌʌp tə ðeə tˈiːtʃəz
+Kids play outside.	kˈɪdz plˈeɪ aʊtsˈaɪd
+Kill two birds with one stone.	kˈɪl tˈuː bˈɜːdz wɪð wˈɒn stˈəʊn
+Kind of like a hat, but bigger.	kˈaɪnd ɒv lˈaɪk ɐ hˈæt bˌʌt bˈɪɡɐ
+Kind of tired.	kˈaɪnd ɒv tˈaɪəd
+Kindly reply by Friday.	kˈaɪndlɪ ɹɪplˈaɪ baɪ fɹˈaɪdeɪ
+Kindness goes a long way.	kˈaɪndnəs ɡəʊz ɐ lˈɒŋ wˈeɪ
+Knackered after work.	nˈækəd ˈɑːftɐ wˈɜːk
+Knee joint.	nˈiː dʒˈɔɪnt
+Knew it from the beginning.	njˈuː ɪt fɹʌmðə bɪɡˈɪnɪŋ
+Knock before entering.	nˈɒk bɪfˌɔːɹ ˈɛntəɹɪŋ
+Knock it off, that's not funny.	nˈɒk ɪt ˈɒf ðæts nˌɒt fˈʌnɪ
+Knock it off, you two!	nˈɒk ɪt ˈɒf juː tˈuː
+Knuckle down and study.	nˈʌkəl dˌaʊn ænd stˈʌdɪ
+Kudos for finishing.	kjˈuːdəʊz fɔː fˈɪnɪʃɪŋ
+Kudos to you!	kjˈuːdəʊz tə juː
+LOL, I'm dead!	lˈɒl aɪm dˈɛd
+Lack confidence.	lˈæk kˈɒnfɪdəns
+Lack of awareness.	lˈæk ɒv ɐwˈeənəs
+Lack of consistency.	lˈæk ɒv kənsˈɪstənsɪ
+Lack of sleep results in fatigue.	lˈæk ɒv slˈiːp ɹɪzˈʌlts ɪn fɐtˈiːɡ
+Lack of sleep.	lˈæk ɒv slˈiːp
+Lagging behind competitors.	lˈæɡɪŋ bɪhˌaɪnd kəmpˈɛtɪtəz
+Language immersion.	lˈæŋɡwɪdʒ ɪmˈɜːʃən
+Large scale project.	lˈɑːdʒ skˈeɪl pɹˈɒdʒɛkt
+Last but not least, thank you.	lˈɑːst bˌʌt nˌɒt lˈiːst θˈæŋk juː
+Last minute changes.	lˈɑːst mˈɪnɪt tʃˈeɪndʒɪz
+Last time I checked.	lˈɑːst tˈaɪm aɪ tʃˈɛkt
+Last time was fun.	lˈɑːst tˈaɪm wɒz fˈʌn
+Lasting friendship.	lˈɑːstɪŋ fɹˈɛndʃɪp
+Lasting impression.	lˈɑːstɪŋ ɪmpɹˈɛʃən
+Latch onto an idea.	lˈætʃ ˌɒntʊ ɐn aɪdˈiə
+Late adolescence.	lˈeɪt ˌædəlˈɛsəns
+Late again? That figures.	lˈeɪt ɐɡˈɛn ðæt fˈɪɡəz
+Late again? That's so you.	lˈeɪt ɐɡˈɛn ðæts sˈəʊ juː
+Lateness is a dealbreaker.	lˈeɪtnəs ɪz ɐ dˈiːlbɹeɪkɐ
+Laughter is the best medicine.	lˈɑːftɐɹ ɪz ðə bˈɛst mˈɛdsən
+Launch an initiative.	lˈɔːntʃ ɐn ɪnˈɪʃiətˌɪv
+Lead me to the exit.	lˈiːd mˌiː tə ðɪ ˈɛɡzɪt
+Lead the team.	lˈiːd ðə tˈiːm
+Leading the way.	lˈiːdɪŋ ðə wˈeɪ
+Leak the news.	lˈiːk ðə njˈuːz
+Lean on me.	lˈiːn ˈɒn mˌiː
+Lean on the wall.	lˈiːn ɒnðə wˈɔːl
+Learn bit by bit.	lˈɜːn bˈɪt baɪ bˈɪt
+Learn the pronunciation symbols.	lˈɜːn ðə pɹənˌʌnsɪˈeɪʃən sˈɪmbəlz
+Learn the trick.	lˈɜːn ðə tɹˈɪk
+Lease a car.	lˈiːs ɐ kˈɑː
+Lease an apartment.	lˈiːs ɐn ɐpˈɑːtmənt
+Leave a lasting impression.	lˈiːv ɐ lˈɑːstɪŋ ɪmpɹˈɛʃən
+Leave a tip.	lˈiːv ɐ tˈɪp
+Leave it to her.	lˈiːv ɪt tə hɜː
+Leave it to me.	lˈiːv ɪt tə mˌiː
+Leave it unsupervised at your own risk.	lˈiːv ɪt ʌnsˈuːpəvˌaɪzd æt jɔːɹ ˈəʊn ɹˈɪsk
+Leave off the salt.	lˈiːv ˈɒf ðə sˈɒlt
+Left hemisphere of the brain.	lˈɛft hˈɛmɪsfˌiəɹ ɒvðə bɹˈeɪn
+Left them in tears.	lˈɛft ðˌɛm ɪn tˈiəz
+Leftover pizza.	lˈɛftəʊvɐ pˈiːtsɐ
+Leftovers for lunch.	lˈɛftəʊvəz fɔː lˈʌntʃ
+Legacy media is dying.	lˈɛɡəsɪ mˈiːdiːɐɹ ɪz dˈaɪɪŋ
+Legal advice.	lˈiːɡəl ɐdvˈaɪs
+Legit good!	lədʒˈɪt ɡˈʊd
+Legitimate business.	lədʒˈɪtɪmət bˈɪznəs
+Less than 10 minutes.	lˈɛs ðɐn tˈɛn mˈɪnɪts
+Less than I thought.	lˈɛs ðɐn aɪ θˈɔːt
+Lesser known spots.	lˈɛsɐ nˈəʊn spˈɒts
+Let him try.	lˈɛt hˌɪm tɹˈaɪ
+Let it go.	lˈɛt ɪt ɡˈəʊ
+Let me apologize on their behalf.	lˈɛt mˌiː ɐpˈɒlədʒˌaɪz ˌɒn ðeə bɪhˈɑːf
+Let me clarify my point.	lˈɛt mˌiː klˈæɹɪfˌaɪ maɪ pˈɔɪnt
+Let me clarify.	lˈɛt mˌiː klˈæɹɪfˌaɪ
+Let me elaborate.	lˈɛt mˌiː ɪlˈæbəɹˌeɪt
+Let me emphasize this.	lˈɛt mˌiː ˈɛmfɐsˌaɪz ðˈɪs
+Let me explain.	lˈɛt mˌiː ɪksplˈeɪn
+Let me figure out the password.	lˈɛt mˌiː fˈɪɡɐɹ ˈaʊt ðə pˈɑːswɜːd
+Let me get this right.	lˈɛt mˌiː ɡɛt ðɪs ɹˈaɪt
+Let me get this straight.	lˈɛt mˌiː ɡɛt ðɪs stɹˈeɪt
+Let me guess what happened.	lˈɛt mˌiː ɡˈɛs wɒt hˈæpənd
+Let me guess — you're tired?	lˈɛt mˌiː ɡˈɛs jɔː tˈaɪəd
+Let me illustrate with an example.	lˈɛt mˌiː ˈɪləstɹˌeɪt wɪð ɐn ɪɡzˈɑːmpəl
+Let me know in advance.	lˈɛt mˌiː nˈəʊ ɪn ɐdvˈæns
+Let me know.	lˈɛt mˌiː nˈəʊ
+Let me pick your brain about ~	lˈɛt mˌiː pˈɪk jɔː bɹˈeɪn ɐbˌaʊt tˈɪldɐ
+Let me point out one thing.	lˈɛt mˌiː pˈɔɪnt ˈaʊt wˈɒn θˈɪŋ
+Let me ponder it.	lˈɛt mˌiː pˈɒndɐɹ ɪt
+Let me put it this way.	lˈɛt mˌiː pˌʊt ɪt ðɪs wˈeɪ
+Let me put it this way: it's tough.	lˈɛt mˌiː pˌʊt ɪt ðɪs wˈeɪ ɪts tˈʌf
+Let me recap.	lˈɛt mˌiː ɹɪkˈæp
+Let me say a few words about me.	lˈɛt mˌiː sˈeɪ ɐ fjˈuː wˈɜːdz ɐbˈaʊt mˌiː
+Let me see your phone.	lˈɛt mˌiː sˈiː jɔː fˈəʊn
+Let me see.	lˈɛt mˌiː sˈiː
+Let me think about it.	lˈɛt mˌiː θˈɪŋk ɐbˈaʊt ɪt
+Let me think.	lˈɛt mˌiː θˈɪŋk
+Let me vent for a sec.	lˈɛt mˌiː vˈɛnt fəɹɐ sˈɛk
+Let my brain check out.	lˈɛt maɪ bɹˈeɪn tʃˈɛk ˈaʊt
+Let supply meet demand.	lˈɛt səplˈaɪ mˈiːt dɪmˈɑːnd
+Let the ends meet.	lˈɛt ðɪ ˈɛndz mˈiːt
+Let's address the elephant in the room.	lˈɛts ɐdɹˈɛs ðɪ ˈɛlɪfənt ɪnðə ɹˈuːm
+Let's agree on a date.	lˈɛts ɐɡɹˈiː ˌɒn ɐ dˈeɪt
+Let's agree to disagree.	lˈɛts ɐɡɹˈiː tə dˌɪsɐɡɹˈiː
+Let's assume it's true.	lˈɛts ɐsjˈuːm ɪts tɹˈuː
+Let's brainstorm some ideas.	lˈɛts bɹˈeɪnstɔːm sˌʌm aɪdˈiəz
+Let's break down the data.	lˈɛts bɹˈeɪk dˌaʊn ðə dˈeɪtɐ
+Let's bring in an expert to help us out.	lˈɛts bɹˈɪŋ ɪn ɐn ˈɛkspɜːt tə hˈɛlp ˌʌs ˈaʊt
+Let's call it a day.	lˈɛts kˈɔːl ɪt ɐ dˈeɪ
+Let's call it a night.	lˈɛts kˈɔːl ɪt ɐ nˈaɪt
+Let's catch up over coffee.	lˈɛts kˈætʃ ˌʌp ˌəʊvɐ kˈɒfɪ
+Let's celebrate!	lˈɛts sˈɛləbɹˌeɪt
+Let's change it up.	lˈɛts tʃˈeɪndʒ ɪt ˈʌp
+Let's check in at the hotel.	lˈɛts tʃˈɛk ɪn æt ðə həʊtˈɛl
+Let's chill out tonight.	lˈɛts tʃˈɪl ˈaʊt tənˈaɪt
+Let's clear up the misunderstanding.	lˈɛts klˈiəɹ ˌʌp ðə mɪsˌʌndəstˈændɪŋ
+Let's collaborate.	lˈɛts kəlˈæbəɹˌeɪt
+Let's ditch class.	lˈɛts dˈɪtʃ klˈɑːs
+Let's dive into the work.	lˈɛts dˈaɪv ˌɪntʊ ðə wˈɜːk
+Let's do a deep dive.	lˈɛts dˈuː ɐ dˈiːp dˈaɪv
+Let's eat out for a change.	lˈɛts ˈiːt ˈaʊt fəɹɐ tʃˈeɪndʒ
+Let's get going.	lˈɛts ɡɛt ɡˈəʊɪŋ
+Let's get it rolling.	lˈɛts ɡɛt ɪt ɹˈəʊlɪŋ
+Let's go Dutch.	lˈɛts ɡˌəʊ dˈʌtʃ
+Let's go further.	lˈɛts ɡˌəʊ fˈɜːðɐ
+Let's go on a trip.	lˈɛts ɡˌəʊ ˌɒn ɐ tɹˈɪp
+Let's go somewhere else.	lˈɛts ɡˌəʊ sˈʌmweəɹ ˈɛls
+Let's go the whole nine yards.	lˈɛts ɡˌəʊ ðə hˈəʊl nˈaɪn jˈɑːdz
+Let's grab a bite to eat.	lˈɛts ɡɹˈæb ɐ bˈaɪt tʊ ˈiːt
+Let's grab a bite.	lˈɛts ɡɹˈæb ɐ bˈaɪt
+Let's grab a coffee.	lˈɛts ɡɹˈæb ɐ kˈɒfɪ
+Let's grab coffee tomorrow.	lˈɛts ɡɹˈæb kˈɒfɪ təmˈɒɹəʊ
+Let's hang out this weekend.	lˈɛts hˈæŋ ˈaʊt ðɪs wiːkˈɛnd
+Let's hash it out.	lˈɛts hˈæʃ ɪt ˈaʊt
+Let's head to the cafe.	lˈɛts hˈɛd tə ðə kˈæfeɪ
+Let's hit the gym.	lˈɛts hˈɪt ðə dʒˈɪm
+Let's hit the road.	lˈɛts hˈɪt ðə ɹˈəʊd
+Let's hook up later.	lˈɛts hˈʊk ˌʌp lˈeɪtɐ
+Let's iron out the details.	lˈɛts ˈaɪən ˈaʊt ðə dˈiːteɪlz
+Let's just say I know.	lˈɛts dʒˈʌst sˈeɪ aɪ nˈəʊ
+Let's just say it didn't go well.	lˈɛts dʒˈʌst sˈeɪ ɪt dˈɪdnt ɡˌəʊ wˈɛl
+Let's keep going a bit more.	lˈɛts kˈiːp ɡˌəʊɪŋ ɐ bˈɪt mˈɔː
+Let's keep in touch!	lˈɛts kˈiːp ɪn tˈʌtʃ
+Let's kill two birds with one stone.	lˈɛts kˈɪl tˈuː bˈɜːdz wɪð wˈɒn stˈəʊn
+Let's let bygones be bygones.	lˈɛts lˈɛt bˈaɪɡɒnz biː bˈaɪɡɒnz
+Let's make it win win.	lˈɛts mˌeɪk ɪt wˈɪn wˈɪn
+Let's make it win-win.	lˈɛts mˌeɪk ɪt wˈɪnwˈɪn
+Let's meet up tomorrow.	lˈɛts mˈiːt ˌʌp təmˈɒɹəʊ
+Let's move forward.	lˈɛts mˈuːv fˈɔːwəd
+Let's move on to the next topic.	lˈɛts mˈuːv ˌɒn tə ðə nˈɛkst tˈɒpɪk
+Let's nail down the date.	lˈɛts nˈeɪl dˌaʊn ðə dˈeɪt
+Let's negotiate the price.	lˈɛts nɪɡˈəʊʃɪˌeɪt ðə pɹˈaɪs
+Let's not be late.	lˈɛts nˌɒt biː lˈeɪt
+Let's not fight.	lˈɛts nˌɒt fˈaɪt
+Let's order takeout.	lˈɛts ˈɔːdɐ tˈeɪkaʊt
+Let's play it by ear.	lˈɛts plˈeɪ ɪt baɪ ˈiə
+Let's pop out for lunch.	lˈɛts pˈɒp ˈaʊt fɔː lˈʌntʃ
+Let's pop out to the shop.	lˈɛts pˈɒp ˈaʊt tə ðə ʃˈɒp
+Let's prioritize this task.	lˈɛts pɹaɪˈɒɹɪtˌaɪz ðɪs tˈɑːsk
+Let's pull together.	lˈɛts pˈʊl təɡˈɛðɐ
+Let's put off the meeting.	lˈɛts pˌʊt ˈɒf ðə mˈiːtɪŋ
+Let's put that aside for now.	lˈɛts pˌʊt ðæt ɐsˈaɪd fɔː nˈaʊ
+Let's remake it.	lˈɛts ɹɪmˈeɪk ɪt
+Let's rule out food poisoning first.	lˈɛts ɹˈuːl ˈaʊt fˈuːd pˈɔɪzənɪŋ fˈɜːst
+Let's say it costs $100.	lˈɛts sˈeɪ ɪt kˈɒsts dˈɒlɐ wˈɒnhˈʌndɹɪd
+Let's say you're right.	lˈɛts sˈeɪ jɔː ɹˈaɪt
+Let's schedule a call.	lˈɛts ʃˈɛdjuːl ɐ kˈɔːl
+Let's settle this once and for all.	lˈɛts sˈɛtəl ðɪs wˈʌns ænd fɔːɹ ˈɔːl
+Let's shake hands on it.	lˈɛts ʃˈeɪk hˈændz ˈɒn ɪt
+Let's share the pizza.	lˈɛts ʃˈeə ðə pˈiːtsɐ
+Let's ship it!	lˈɛts ʃˈɪp ɪt
+Let's sort this out.	lˈɛts sˈɔːt ðɪs ˈaʊt
+Let's split the bill.	lˈɛts splˈɪt ðə bˈɪl
+Let's start a little earlier than usual.	lˈɛts stˈɑːt ɐ lˈɪtəl ˈɜːlɪɐ ðɐn jˈuːʒuːəl
+Let's start all over.	lˈɛts stˈɑːt ˈɔːl ˈəʊvɐ
+Let's swap seats.	lˈɛts swˈɒp sˈiːts
+Let's take a moment.	lˈɛts tˈeɪk ɐ mˈəʊmənt
+Let's take a walk.	lˈɛts tˈeɪk ɐ wˈɔːk
+Let's talk in person.	lˈɛts tˈɔːk ɪn pˈɜːsən
+Let's team up!	lˈɛts tˈiːm ˈʌp
+Let's think about what might cause this.	lˈɛts θˈɪŋk ɐbˌaʊt wɒt mˌaɪt kˈɔːz ðˈɪs
+Let's toss a coin.	lˈɛts tˈɒs ɐ kˈɔɪn
+Let's touch base next week.	lˈɛts tˈʌtʃ bˈeɪs nˈɛkst wˈiːk
+Let's work together.	lˈɛts wˈɜːk təɡˈɛðɐ
+Let's wrap this up.	lˈɛts ɹˈæp ðɪs ˈʌp
+Letter of acceptance.	lˈɛtɐɹ ɒv ɐksˈɛptəns
+Leverage social media.	lˈiːvəɹɪdʒ sˈəʊʃəl mˈiːdiːɐ
+Leverage your skills.	lˈiːvəɹɪdʒ jɔː skˈɪlz
+Lie about all day.	lˈaɪ ɐbˌaʊt ˈɔːl dˈeɪ
+Lie down for a nap.	lˈaɪ dˌaʊn fəɹɐ nˈæp
+Lie on the grass.	lˈaɪ ɒnðə ɡɹˈɑːs
+Life as an expatriate.	lˈaɪf æz ɐn ɪkspˈætɹɪˌeɪt
+Life imprisonment.	lˈaɪf ɪmpɹˈɪzənmənt
+Life is a journey.	lˈaɪf ɪz ɐ dʒˈɜːnɪ
+Life is all about choices.	lˈaɪf ɪz ˈɔːl ɐbˌaʊt tʃˈɔɪsɪz
+Life was simpler then.	lˈaɪf wɒz sˈɪmplɐ ðˈɛn
+Lifestyle changes.	lˈaɪfstaɪl tʃˈeɪndʒɪz
+Lift the ban.	lˈɪft ðə bˈæn
+Lift the box.	lˈɪft ðə bˈɒks
+Light as a feather.	lˈaɪt æz ɐ fˈɛðɐ
+Light at the end of the tunnel.	lˈaɪt æt ðɪ ˈɛnd ɒvðə tˈʌnəl
+Lighten up, it's a joke.	lˈaɪtən ˈʌp ɪts ɐ dʒˈəʊk
+Like a grasshopper.	lˈaɪk ɐ ɡɹˈɑːshɒpɐ
+Like an apocalypse.	lˈaɪk ɐn ɐpˈɒkɐlˌɪps
+Like magic.	lˈaɪk mˈædʒɪk
+Limit screen time.	lˈɪmɪt skɹˈiːn tˈaɪm
+Limit your intake.	lˈɪmɪt jɔːɹ ˈɪnteɪk
+Lined up horizontally.	lˈaɪnd ˌʌp hˌɒɹɪzˈɒntəlɪ
+Liquidation sale.	lˌɪkwɪdˈeɪʃən sˈeɪl
+List the pros and cons.	lˈɪst ðə pɹˈəʊz ænd kˈɒnz
+Listen for once.	lˈɪsən fɔː wˈʌns
+Listen to music.	lˈɪsən tə mjˈuːzɪk
+Listen to your heart.	lˈɪsən tə jɔː hˈɑːt
+Literally everyone.	lˈɪtəɹəlɪ ˈɛvɹɪwˌɒn
+Live as the main character.	lˈaɪv æz ðə mˈeɪn kˈæɹɪktɐ
+Live from day to day.	lˈaɪv fɹɒm dˈeɪ tə dˈeɪ
+Live on the beach.	lˈaɪv ɒnðə bˈiːtʃ
+Live paycheck to paycheck.	lˈaɪv pˈeɪtʃɛk tə pˈeɪtʃɛk
+Live stream.	lˈaɪv stɹˈiːm
+Live up to expectations.	lˈaɪv ˌʌp tʊ ɪkspɪktˈeɪʃənz
+Live up to the hype.	lˈaɪv ˌʌp tə ðə hˈaɪp
+Lived here for quite a long time.	lˈɪvd hˈiə fɔː kwˈaɪt ɐ lˈɒŋ tˈaɪm
+Lives are at risk.	lˈaɪvz ɑːɹ æt ɹˈɪsk
+Living on my own.	lˈɪvɪŋ ˌɒn maɪ ˈəʊn
+Living with dementia.	lˈɪvɪŋ wɪð dɪmˈɛnʃɐ
+Load the page.	lˈəʊd ðə pˈeɪdʒ
+Local chippy is great.	lˈəʊkəl tʃˈɪpɪ ɪz ɡɹˈeɪt
+Local handcraft.	lˈəʊkəl hˈændkɹɑːft
+Locate the file.	ləʊkˈeɪt ðə fˈaɪl
+Locate the new office.	ləʊkˈeɪt ðə njˈuː ˈɒfɪs
+Lock down the building.	lˈɒk dˌaʊn ðə bˈɪldɪŋ
+Lodge a complaint.	lˈɒdʒ ɐ kəmplˈeɪnt
+Lodge for the night.	lˈɒdʒ fəðə nˈaɪt
+Log on to the server.	lˈɒɡ ˌɒn tə ðə sˈɜːvɐ
+Lol, cry more.	lˈɒl kɹˈaɪ mˈɔː
+Long commute.	lˈɒŋ kəmjˈuːt
+Long hair.	lˈɒŋ hˈeə
+Long process.	lˈɒŋ pɹˈəʊsɛs
+Long story short, it failed.	lˈɒŋ stˈɔːɹɪ ʃˈɔːt ɪt fˈeɪld
+Long story short, no.	lˈɒŋ stˈɔːɹɪ ʃˈɔːt nˈəʊ
+Long story short, we won.	lˈɒŋ stˈɔːɹɪ ʃˈɔːt wiː wˈʌn
+Long-time rival.	lˈɒŋtˈaɪm ɹˈaɪvəl
+Look after your mental health.	lˈʊk ˈɑːftɐ jɔː mˈɛntəl hˈɛlθ
+Look ahead to next year.	lˈʊk ɐhˈɛd tə nˈɛkst jˈiə
+Look around the shop.	lˈʊk ɐɹˈaʊnd ðə ʃˈɒp
+Look at how fast it is.	lˈʊk æt hˌaʊ fˈɑːst ɪt ˈɪz
+Look at how they do it.	lˈʊk æt hˌaʊ ðeɪ dˈuː ɪt
+Look at this photo.	lˈʊk æt ðɪs fˈəʊtəʊ
+Look at this!	lˈʊk æt ðˈɪs
+Look elsewhere.	lˈʊk ˈɛlsweə
+Look here, I told you no.	lˈʊk hˈiə aɪ tˈəʊld juː nˈəʊ
+Look here, listen up.	lˈʊk hˈiə lˈɪsən ˈʌp
+Look how you treat them.	lˈʊk hˌaʊ juː tɹˈiːt ðˌɛm
+Look how you've grown.	lˈʊk hˌaʊ juːv ɡɹˈəʊn
+Look in the mirror.	lˈʊk ɪnðə mˈɪɹɐ
+Look it up online.	lˈʊk ɪt ˌʌp ˈɒnlaɪn
+Look on the upside.	lˈʊk ɒnðɪ ˈʌpsaɪd
+Look up at the stars.	lˈʊk ˌʌp æt ðə stˈɑːz
+Looking ahead to the future.	lˈʊkɪŋ ɐhˈɛd tə ðə fjˈuːtʃɐ
+Looking at it as a whole.	lˈʊkɪŋ æt ɪt æz ɐ hˈəʊl
+Looking for a roommate.	lˈʊkɪŋ fəɹɐ ɹˈuːmeɪt
+Looking for a soulmate.	lˈʊkɪŋ fəɹɐ sˈəʊlmeɪt
+Looking to move out soon.	lˈʊkɪŋ tə mˈuːv ˈaʊt sˈuːn
+Looks like I'm off the hook.	lˈʊks lˈaɪk aɪm ˈɒf ðə hˈʊk
+Looks like rain.	lˈʊks lˈaɪk ɹˈeɪn
+Loop me in.	lˈuːp mˌiː ˈɪn
+Lose consciousness.	lˈuːz kˈɒnʃəsnəs
+Losing brain cells.	lˈuːzɪŋ bɹˈeɪn sˈɛlz
+Lost at sea.	lˈɒst æt sˈiː
+Lost in the music.	lˈɒst ɪnðə mjˈuːzɪk
+Lost in thought.	lˈɒst ɪn θˈɔːt
+Lost in translation — nuances.	lˈɒst ɪn tɹænslˈeɪʃən njˈuːənsɪz
+Lost my keys, then my wallet — when it rains, it pours.	lˈɒst maɪ kˈiːz ðˈɛn maɪ wˈɒlɪt wˌɛn ɪt ɹˈeɪnz ɪt pˈɔːz
+Lots of sunshine today.	lˈɒts ɒv sˈʌnʃaɪn tədˈeɪ
+Loud explosion.	lˈaʊd ɪksplˈəʊʒən
+Loud music is a public nuisance.	lˈaʊd mjˈuːzɪk ɪz ɐ pˈʌblɪk njˈuːsəns
+Love pixel art.	lˈʌv pˈɪksəl ˈɑːt
+Love to help.	lˈʌv tə hˈɛlp
+Love triangle.	lˈʌv tɹˈaɪæŋɡəl
+Love you until my last breath.	lˈʌv juː ʌntˈɪl maɪ lˈɑːst bɹˈɛθ
+Lovely day!	lˈʌvlɪ dˈeɪ
+Low inventory.	lˈəʊ ˈɪnvəntɹɪ
+Low-key tired.	lˈəʊkˈiː tˈaɪəd
+Lower the price.	lˈəʊɐ ðə pɹˈaɪs
+Lower the toilet seat.	lˈəʊɐ ðə tˈɔɪlɪt sˈiːt
+Lower your voice.	lˈəʊɐ jɔː vˈɔɪs
+Lucky bastard.	lˈʌkɪ bˈɑːstəd
+Lucky you got the day off.	lˈʌkɪ juː ɡɒt ðə dˈeɪ ˈɒf
+Lucky you!	lˈʌkɪ juː
+Lucrative deal.	lˈuːkɹətˌɪv dˈiːl
+Made in Italy.	mˌeɪd ɪn ˈɪtəlɪ
+Made in Japan.	mˌeɪd ɪn dʒəpˈæn
+Made redundant.	mˌeɪd ɹɪdˈʌndənt
+Made specially for you.	mˌeɪd spˈɛʃəlɪ fɔː juː
+Magic trick.	mˈædʒɪk tɹˈɪk
+Magnificent architecture.	mæɡnˈɪfɪsənt ˈɑːkɪtˌɛktʃɐ
+Maintain a low profile.	meɪntˈeɪn ɐ lˈəʊ pɹˈəʊfaɪl
+Major bottleneck.	mˈeɪdʒɐ bˈɒtəlnˌɛk
+Major controversy.	mˈeɪdʒɐ kˈɒntɹəvˌɜːsɪ
+Major ick.	mˈeɪdʒɐɹ ˈaɪk
+Major obstacle.	mˈeɪdʒɐɹ ˈɒbstəkəl
+Make a big move.	mˌeɪk ɐ bˈɪɡ mˈuːv
+Make a brief appearance.	mˌeɪk ɐ bɹˈiːf ɐpˈiəɹəns
+Make a change in your life.	mˌeɪk ɐ tʃˈeɪndʒ ɪn jɔː lˈaɪf
+Make a comeback.	mˌeɪk ɐ kˈʌmbæk
+Make a commitment.	mˌeɪk ɐ kəmˈɪtmənt
+Make a distinction.	mˌeɪk ɐ dɪstˈɪŋkʃən
+Make a prediction.	mˌeɪk ɐ pɹɪdˈɪkʃən
+Make a statement.	mˌeɪk ɐ stˈeɪtmənt
+Make an enemy.	mˌeɪk ɐn ˈɛnəmɪ
+Make an entrance.	mˌeɪk ɐn ˈɛntɹəns
+Make do with this.	mˌeɪk dˈuː wɪð ðˈɪs
+Make do with what you've got.	mˌeɪk dˈuː wɪð wɒt juːv ɡˈɒt
+Make history.	mˌeɪk hˈɪstəɹɪ
+Make it a win win deal.	mˌeɪk ɪt ɐ wˈɪn wˈɪn dˈiːl
+Make it simpler.	mˌeɪk ɪt sˈɪmplɐ
+Make slime.	mˌeɪk slˈaɪm
+Make sure the door is locked.	mˌeɪk ʃˈɔː ðə dˈɔːɹ ɪz lˈɒkt
+Make sure to call.	mˌeɪk ʃˈɔː tə kˈɔːl
+Make things done at home.	mˌeɪk θˈɪŋz dˈʌn æt hˈəʊm
+Make things repaired at home.	mˌeɪk θˈɪŋz ɹɪpˈeəd æt hˈəʊm
+Make us a brew.	mˌeɪk ˌʌs ɐ bɹˈuː
+Make use of the tools.	mˌeɪk jˈuːs ɒvðə tˈuːlz
+Make use of your time.	mˌeɪk jˈuːs ɒv jɔː tˈaɪm
+Makes sense it's expensive.	mˌeɪks sˈɛns ɪts ɪkspˈɛnsɪv
+Makes sense that he left.	mˌeɪks sˈɛns ðæt hiː lˈɛft
+Making progress.	mˌeɪkɪŋ pɹˈəʊɡɹɛs
+Malicious intent.	mɐlˈɪʃəs ɪntˈɛnt
+Malicious software.	mɐlˈɪʃəs sˈɒftweə
+Man, that's tough.	mˈæn ðæts tˈʌf
+Man-made disaster.	mˈænmˌeɪd dɪzˈɑːstɐ
+Man-made lake.	mˈænmˌeɪd lˈeɪk
+Manage the team.	mˈænɪdʒ ðə tˈiːm
+Managed to catch the train.	mˈænɪdʒd tə kˈætʃ ðə tɹˈeɪn
+Managed to finish.	mˈænɪdʒd tə fˈɪnɪʃ
+Management buyout.	mˈænɪdʒmənt bˈaɪaʊt
+Manipulate people.	mənˈɪpjʊlˌeɪt pˈiːpəl
+Manipulate the data.	mənˈɪpjʊlˌeɪt ðə dˈeɪtɐ
+Many cities, for instance Tokyo.	mˈɛnɪ sˈɪtɪz fɔːɹ ˈɪnstəns tˈəʊkɪˌəʊ
+Map out a plan.	mˈæp ˈaʊt ɐ plˈæn
+Map out your week.	mˈæp ˈaʊt jɔː wˈiːk
+Maple syrup.	mˈeɪpəl sˈɪɹʌp
+Marital status: single.	mˈæɹɪtəl stˈeɪtəs sˈɪŋɡəl
+Marriage vows.	mˈæɹɪdʒ vˈaʊz
+Mass layoffs.	mˈæs lˈeɪɒfs
+Massive amounts of mud covered the road.	mˈæsɪv ɐmˈaʊnts ɒv mˈʌd kˈʌvəd ðə ɹˈəʊd
+Massive building.	mˈæsɪv bˈɪldɪŋ
+Massive impact.	mˈæsɪv ˈɪmpækt
+Master a new language.	mˈɑːstɐɹ ɐ njˈuː lˈæŋɡwɪdʒ
+Master the basics first.	mˈɑːstɐ ðə bˈeɪsɪks fˈɜːst
+Match the playstyle.	mˈætʃ ðə plˈeɪstaɪl
+Math is a prerequisite.	mˈæθ ɪz ɐ pɹˌiːɹˈɛkwɪsˌɪt
+Math nerd.	mˈæθ nˈɜːd
+Maximize profits.	mˈæksɪmˌaɪz pɹˈɒfɪts
+Maximize the window.	mˈæksɪmˌaɪz ðə wˈɪndəʊ
+Maximum occupancy.	mˈæksɪməm ˈɒkjʊpənsɪ
+May I ask who I'm speaking to?	mˈeɪ aɪ ˈɑːsk hˌuː aɪm spˈiːkɪŋ tuː
+May as well start now.	mˈeɪ æz wˈɛl stˈɑːt nˈaʊ
+May as well try.	mˈeɪ æz wˈɛl tɹˈaɪ
+May everything go well for you.	mˈeɪ ˈɛvɹɪθˌɪŋ ɡˌəʊ wˈɛl fɔː juː
+May everything go well tomorrow.	mˈeɪ ˈɛvɹɪθˌɪŋ ɡˌəʊ wˈɛl təmˈɒɹəʊ
+May he die at peace.	mˈeɪ hiː dˈaɪ æt pˈiːs
+Maybe it's somewhere else.	mˈeɪbiː ɪts sˈʌmweəɹ ˈɛls
+Maybe not there, but here it works.	mˈeɪbiː nˌɒt ðˈeə bˌʌt hˈiəɹ ɪt wˈɜːks
+Meanwhile, let's wait.	mˈiːnwaɪl lˈɛts wˈeɪt
+Measure the ROI.	mˈɛʒɐ ðɪ ˌɑːɹˌəʊˈaɪ
+Meet his counterpart.	mˈiːt hɪz kˈaʊntəpˌɑːt
+Meet in real life.	mˈiːt ɪn ɹˈiəl lˈaɪf
+Meet my in-laws.	mˈiːt maɪ ɪnlˈɔːz
+Meet the criteria.	mˈiːt ðə kɹaɪtˈiəɹɪɐ
+Meet the prerequisites.	mˈiːt ðə pɹˌiːɹˈɛkwɪsˌɪts
+Meet the requirements.	mˈiːt ðə ɹɪkwˈaɪəmənts
+Meet up at 5.	mˈiːt ˌʌp æt fˈaɪv
+Meeting at 9 sharp.	mˈiːtɪŋ æt nˈaɪn ʃˈɑːp
+Meeting minutes.	mˈiːtɪŋ mˈɪnɪts
+Melancholic music.	mˌɛləŋkˈɒlɪk mjˈuːzɪk
+Memories fade away.	mˈɛməɹɪz fˈeɪd ɐwˈeɪ
+Mental health issues.	mˈɛntəl hˈɛlθ ˈɪʃuːz
+Mental wellbeing.	mˈɛntəl wˈɛlbiːɪŋ
+Mentally exhausted.	mˈɛntəlɪ ɛɡzˈɔːstɪd
+Mentally prepared.	mˈɛntəlɪ pɹɪpˈeəd
+Mere seconds away.	mˈiə sˈɛkəndz ɐwˈeɪ
+Messi is the GOAT.	mˈɛsɪ ɪz ðə ɡˈəʊt
+Met a classmate.	mˈɛt ɐ klˈɑːsmeɪt
+Middle of the night.	mˈɪdəl ɒvðə nˈaɪt
+Might I suggest a coffee?	mˌaɪt aɪ sədʒˈɛst ɐ kˈɒfɪ
+Might I suggest a different approach?	mˌaɪt aɪ sədʒˈɛst ɐ dˈɪfɹənt ɐpɹˈəʊtʃ
+Might as well give it a shot.	mˌaɪt æz wˈɛl ɡˈɪv ɪt ɐ ʃˈɒt
+Might as well stay.	mˌaɪt æz wˈɛl stˈeɪ
+Mighty fine!	mˈaɪtɪ fˈaɪn
+Migrate to a new system.	maɪɡɹˈeɪt tʊ ɐ njˈuː sˈɪstəm
+Military occupation.	mˈɪlɪtəɹɪ ˌɒkjʊpˈeɪʃən
+Mind helping me?	mˈaɪnd hˈɛlpɪŋ mˌiː
+Mind if I borrow this?	mˈaɪnd ɪf aɪ bˈɒɹəʊ ðˈɪs
+Mind if I sit here?	mˈaɪnd ɪf aɪ sˈɪt hˈiə
+Mind opening the door?	mˈaɪnd ˈəʊpənɪŋ ðə dˈɔː
+Mind the gap.	mˈaɪnd ðə ɡˈæp
+Mind you, it wasn't easy.	mˈaɪnd juː ɪt wˌɒzn̩t ˈiːzɪ
+Mindful eating.	mˈaɪndfəl ˈiːtɪŋ
+Minimize the risk.	mˈɪnɪmˌaɪz ðə ɹˈɪsk
+Minimize the window.	mˈɪnɪmˌaɪz ðə wˈɪndəʊ
+Minimum wage.	mˈɪnɪməm wˈeɪdʒ
+Mirror the trend.	mˈɪɹɐ ðə tɹˈɛnd
+Misread the situation.	mɪsɹˈiːd ðə sˌɪtʃuːˈeɪʃən
+Miss the good old days.	mˈɪs ðə ɡˈʊd ˈəʊld dˈeɪz
+Miss the point of it.	mˈɪs ðə pˈɔɪnt ɒv ɪt
+Mission accomplished — let's celebrate.	mˈɪʃən ɐkˈɒmplɪʃt lˈɛts sˈɛləbɹˌeɪt
+Mission accomplished!	mˈɪʃən ɐkˈɒmplɪʃt
+Mixed martial arts.	mˈɪkst mˈɑːʃəl ˈɑːts
+Mocking victims is killing twice.	mˈɒkɪŋ vˈɪktɪmz ɪz kˈɪlɪŋ twˈaɪs
+Mocking with slant eyes is racist.	mˈɒkɪŋ wɪð slˈɑːnt ˈaɪz ɪz ɹˈeɪsɪst
+Modern architecture.	mˈɒdən ˈɑːkɪtˌɛktʃɐ
+Modern civilization.	mˈɒdən sˌɪvɪlaɪzˈeɪʃən
+Modernize the kitchen.	mˈɒdənˌaɪz ðə kˈɪtʃən
+Modernize the system.	mˈɒdənˌaɪz ðə sˈɪstəm
+Modify the design.	mˈɒdɪfˌaɪ ðə dɪzˈaɪn
+Monetize the app.	mˈɒnɪtˌaɪz ðɪ ˈæp
+Money buys happiness, or so they say.	mˈʌnɪ bˈaɪz hˈæpɪnəs ɔː sˌəʊ ðeɪ sˈeɪ
+Money can't buy happiness.	mˈʌnɪ kˈɑːnt bˈaɪ hˈæpɪnəs
+Monthly income.	mˈʌnθlɪ ˈɪŋkʌm
+More about that later.	mˈɔːɹ ɐbˌaʊt ðæt lˈeɪtɐ
+More or less the same.	mˈɔːɹ ɔː lˈɛs ðə sˈeɪm
+More or less, yeah.	mˈɔːɹ ɔː lˈɛs jˈɛh
+More to come — stay tuned!	mˈɔː tə kˈʌm stˈeɪ tjˈuːnd
+Morning routine.	mˈɔːnɪŋ ɹuːtˈiːn
+Morning rush hour.	mˈɔːnɪŋ ɹˈʌʃ ˈaʊɐ
+Most enjoyable evening.	mˈəʊst ɪndʒˈɔɪəbəl ˈiːvnɪŋ
+Most of our revenue comes from subscriptions.	mˈəʊst əv ˌaʊɐ ɹˈɛvənjˌuː kˈʌmz fɹɒm sʌbskɹˈɪpʃənz
+Mostly sunny.	mˈəʊstlɪ sˈʌnɪ
+Mostly true.	mˈəʊstlɪ tɹˈuː
+Motion sensor.	mˈəʊʃən sˈɛnsɐ
+Mountain backdrop.	mˈaʊntɪn bˈækdɹɒp
+Mountain scenery.	mˈaʊntɪn sˈiːnəɹɪ
+Mountains capped with snow.	mˈaʊntɪnz kˈæpt wɪð snˈəʊ
+Move forward with the plan.	mˈuːv fˈɔːwəd wɪððə plˈæn
+Move out next month.	mˈuːv ˈaʊt nˈɛkst mˈʌnθ
+Move out of my parents' house.	mˈuːv ˌaʊtəv maɪ pˈeəɹənts hˈaʊs
+Movie premise.	mˈuːvɪ pɹˈɛmɪs
+Movie soundtrack.	mˈuːvɪ sˈaʊndtɹæk
+Moving forward with the plan.	mˈuːvɪŋ fˈɔːwəd wɪððə plˈæn
+Moving forward, we'll be more careful.	mˈuːvɪŋ fˈɔːwəd wiːl biː mˈɔː kˈeəfəl
+Moving on to step 2.	mˈuːvɪŋ ˌɒn tə stˈɛp tˈuː
+Much more effort.	mˈʌtʃ mˈɔːɹ ˈɛfət
+Mucous membrane.	mjˈuːkəs mˈɛmbɹeɪn
+Muscular pain.	mˈʌskjʊlɐ pˈeɪn
+Music never fails to make me cry.	mjˈuːzɪk nˈɛvɐ fˈeɪlz tə mˌeɪk mˌiː kɹˈaɪ
+Mutant virus.	mjˈuːtənt vˈaɪɹəs
+My BFF since high school.	maɪ bˌiːˌɛfˈɛf sˈɪns hˈaɪ skˈuːl
+My anxiety is high.	maɪ æŋzˈaɪətɪ ɪz hˈaɪ
+My apartment is small.	maɪ ɐpˈɑːtmənt ɪz smˈɔːl
+My app keeps crashing.	maɪ ˈæp kˈiːps kɹˈæʃɪŋ
+My bad.	maɪ bˈæd
+My betting strategy.	maɪ bˈɛtɪŋ stɹˈætədʒɪ
+My biggest pet peeve.	maɪ bˈɪɡɪst pˈɛt pˈiːv
+My boss approved it.	maɪ bˈɒs ɐpɹˈuːvd ɪt
+My boss is nice.	maɪ bˈɒs ɪz nˈaɪs
+My brain checked out an hour ago.	maɪ bɹˈeɪn tʃˈɛkt ˈaʊt ɐn ˈaʊɐɹ ɐɡˈəʊ
+My car broke down.	maɪ kˈɑː bɹˈəʊk dˈaʊn
+My college era.	maɪ kˈɒlɪdʒ ˈiəɹɐ
+My commute is 1 hour.	maɪ kəmjˈuːt ɪz wˈɒn ˈaʊɐ
+My field of study.	maɪ fˈiːld ɒv stˈʌdɪ
+My greatest love.	maɪ ɡɹˈeɪtɪst lˈʌv
+My gut feeling says no.	maɪ ɡˈʌt fˈiːlɪŋ sˈɛz nˈəʊ
+My heart broke into pieces.	maɪ hˈɑːt bɹˈəʊk ˌɪntʊ pˈiːsɪz
+My heart goes out to the family.	maɪ hˈɑːt ɡəʊz ˈaʊt tə ðə fˈæmɪlɪ
+My heart goes out to you.	maɪ hˈɑːt ɡəʊz ˈaʊt tə juː
+My homeland.	maɪ hˈəʊmlənd
+My joke fell flat.	maɪ dʒˈəʊk fˈɛl flˈæt
+My legs are sore.	maɪ lˈɛɡz ɑː sˈɔː
+My luggage didn't arrive.	maɪ lˈʌɡɪdʒ dˈɪdnt ɐɹˈaɪv
+My main focus is health.	maɪ mˈeɪn fˈəʊkəs ɪz hˈɛlθ
+My memory's sketchy.	maɪ mˈɛməɹɪz skˈɛtʃɪ
+My mind drifted.	maɪ mˈaɪnd dɹˈɪftɪd
+My mind is all over the place.	maɪ mˈaɪnd ɪz ˈɔːl ˌəʊvɐ ðə plˈeɪs
+My mind is still stuck on it.	maɪ mˈaɪnd ɪz stˈɪl stˈʌk ˈɒn ɪt
+My mind still stuck in the past.	maɪ mˈaɪnd stˈɪl stˈʌk ɪnðə pˈɑːst
+My mind wandered.	maɪ mˈaɪnd wˈɒndəd
+My notice period is two weeks.	maɪ nˈəʊtɪs pˈiəɹɪəd ɪz tˈuː wˈiːks
+My pleasure!	maɪ plˈɛʒɐ
+My point is that we need more time.	maɪ pˈɔɪnt ɪz ðæt wiː nˈiːd mˈɔː tˈaɪm
+My point is, it's complicated.	maɪ pˈɔɪnt ɪz ɪts kˈɒmplɪkˌeɪtɪd
+My retirement nest egg.	maɪ ɹɪtˈaɪəmənt nˈɛst ˈɛɡ
+My rightful place.	maɪ ɹˈaɪtfəl plˈeɪs
+My roommate snores.	maɪ ɹˈuːmeɪt snˈɔːz
+My shift starts at 9.	maɪ ʃˈɪft stˈɑːts æt nˈaɪn
+My shoes are worn out.	maɪ ʃˈuːz ɑː wˈɔːn ˈaʊt
+My side hustle is freelancing.	maɪ sˈaɪd hˈʌsəl ɪz fɹˈiːlɑːnsɪŋ
+My subordinate.	maɪ sʌbˈɔːdɪnət
+My treat!	maɪ tɹˈiːt
+My understanding is that it starts at 9.	maɪ ˌʌndəstˈændɪŋ ɪz ðˌɐtɪt stˈɑːts æt nˈaɪn
+My understanding is that we agreed.	maɪ ˌʌndəstˈændɪŋ ɪz ðæt wiː ɐɡɹˈiːd
+My workload is crazy this week.	maɪ wˈɜːkləʊd ɪz kɹˈeɪzɪ ðɪs wˈiːk
+My younger sibling.	maɪ jˈʌŋɡɐ sˈɪblɪŋ
+NBD, really.	ˌɛnbˌiːdˈiː ɹˈiəlɪ
+Nail down the details.	nˈeɪl dˌaʊn ðə dˈiːteɪlz
+Nail the interview.	nˈeɪl ðɪ ˈɪntəvjˌuː
+Named man of the match.	nˈeɪmd mˈæn ɒvðə mˈætʃ
+Narrow escape.	nˈæɹəʊ ɛskˈeɪp
+Narrow street.	nˈæɹəʊ stɹˈiːt
+Nasty weather.	nˈɑːstɪ wˈɛðɐ
+National unity.	nˈæʃənəl jˈuːnɪtɪ
+Native speaker.	nˈeɪtɪv spˈiːkɐ
+Native to Japan.	nˈeɪtɪv tə dʒəpˈæn
+Naughty boy!	nˈɔːtɪ bˈɔɪ
+Naughty kids.	nˈɔːtɪ kˈɪdz
+Need a counter strategy.	nˈiːd ɐ kˈaʊntɐ stɹˈætədʒɪ
+Need a dehumidifier.	nˈiːd ɐ dˌiːhjˈuːmɪdˌɪfaɪə
+Need a fresh start.	nˈiːd ɐ fɹˈɛʃ stˈɑːt
+Need a ride?	nˈiːd ɐ ɹˈaɪd
+Need an all-nighter.	nˈiːd ɐn ˈɔːlnˈaɪtɐ
+Need any assistance?	nˈiːd ˌɛnɪ ɐsˈɪstəns
+Need more sunlight.	nˈiːd mˈɔː sˈʌnlaɪt
+Need some comfort food.	nˈiːd sˌʌm kˈʌmfət fˈuːd
+Need some extra help.	nˈiːd sˌʌm ˈɛkstɹɐ hˈɛlp
+Need to catch some Z's.	nˈiːd tə kˈætʃ sˌʌm zˈɛdz
+Need to take the leak.	nˈiːd tə tˈeɪk ðə lˈiːk
+Need to talk to you about something.	nˈiːd tə tˈɔːk tə juː ɐbˌaʊt sˈʌmθɪŋ
+Needless to say, I was happy.	nˈiːdləs tə sˈeɪ aɪ wɒz hˈæpɪ
+Needless to say, it works.	nˈiːdləs tə sˈeɪ ɪt wˈɜːks
+Negotiation is real chess.	nɪɡˌəʊʃɪˈeɪʃən ɪz ɹˈiəl tʃˈɛs
+Net income.	nˈɛt ˈɪŋkʌm
+Net worth.	nˈɛt wˈɜːθ
+Networking events.	nˈɛtwɜːkɪŋ ɪvˈɛnts
+Never mind what I said.	nˈɛvɐ mˈaɪnd wɒt aɪ sˈɛd
+Never mind, it's fine.	nˈɛvɐ mˈaɪnd ɪts fˈaɪn
+Never skip leg day.	nˈɛvɐ skˈɪp lˈɛɡ dˈeɪ
+New stock just in.	njˈuː stˈɒk dʒˈʌst ˈɪn
+New store opening soon.	njˈuː stˈɔːɹ ˈəʊpənɪŋ sˈuːn
+New wheels?	njˈuː wˈiːlz
+News just in.	njˈuːz dʒˈʌst ˈɪn
+News roundup.	njˈuːz ɹˈaʊndʌp
+Next up on the list.	nˈɛkst ˌʌp ɒnðə lˈɪst
+Next up: dessert.	nˈɛkst ˈʌp dɪzˈɜːt
+Nice gaming setup.	nˈaɪs ɡˈeɪmɪŋ sˈɛtʌp
+Nice gesture.	nˈaɪs dʒˈɛstʃɐ
+Nice sentiment.	nˈaɪs sˈɛntɪmənt
+Nice to meet you bro!	nˈaɪs tə mˈiːt juː bɹˈəʊ
+Nice to meet you bro, I'm Ken.	nˈaɪs tə mˈiːt juː bɹˈəʊ aɪm kˈɛn
+Nice wheels!	nˈaɪs wˈiːlz
+Night owls work better at night.	nˈaɪt ˈaʊlz wˈɜːk bˈɛtɐɹ æt nˈaɪt
+Night shift.	nˈaɪt ʃˈɪft
+Nip out for milk.	nˈɪp ˈaʊt fɔː mˈɪlk
+No access to the building.	nˈəʊ ˈæksɛs tə ðə bˈɪldɪŋ
+No apparent reason.	nˈəʊ ɐpˈæɹənt ɹˈiːzən
+No basis for the claim.	nˈəʊ bˈeɪsɪs fəðə klˈeɪm
+No biggie, forget it.	nˈəʊ bˈɪɡɪ fəɡˈɛt ɪt
+No cap, it's the best.	nˈəʊ kˈæp ɪts ðə bˈɛst
+No doubt about it.	nˈəʊ dˈaʊt ɐbˈaʊt ɪt
+No evidence yet.	nˈəʊ ˈɛvɪdəns jˈɛt
+No exceptions.	nˈəʊ ɪksˈɛpʃənz
+No hard feelings, right?	nˈəʊ hˈɑːd fˈiːlɪŋz ɹˈaɪt
+No matter how many times I watch it, I cry.	nˈəʊ mˈætɐ hˌaʊ mˈɛnɪ tˈaɪmz aɪ wˈɒtʃ ɪt aɪ kɹˈaɪ
+No matter how you think about it, it's risky.	nˈəʊ mˈætɐ hˌaʊ juː θˈɪŋk ɐbˈaʊt ɪt ɪts ɹˈɪskɪ
+No matter how you think about it, it's wrong.	nˈəʊ mˈætɐ hˌaʊ juː θˈɪŋk ɐbˈaʊt ɪt ɪts ɹˈɒŋ
+No matter what, I love you.	nˈəʊ mˈætɐ wˈɒt aɪ lˈʌv juː
+No milk in the fridge.	nˈəʊ mˈɪlk ɪnðə fɹˈɪdʒ
+No money in my wallet.	nˈəʊ mˈʌnɪ ɪn maɪ wˈɒlɪt
+No more excuses.	nˈəʊmˌɔːɹ ɛkskjˈuːsɪz
+No more than $10.	nˈəʊmˌɔː ðɐn dˈɒlɐ tˈɛn
+No more than 5 people.	nˈəʊmˌɔː ðɐn fˈaɪv pˈiːpəl
+No need to apologize.	nˈəʊ nˈiːd tʊ ɐpˈɒlədʒˌaɪz
+No need to rush.	nˈəʊ nˈiːd tə ɹˈʌʃ
+No obligation to buy.	nˈəʊ ˌɒblɪɡˈeɪʃən tə bˈaɪ
+No offense, but ~	nˈəʊ əfˈɛns bˌʌt tˈɪldɐ
+No one else will care about it.	nˈəʊwˈɒn ˈɛls wɪl kˈeəɹ ɐbˈaʊt ɪt
+No one is to blame.	nˈəʊwˈɒn ɪz tə blˈeɪm
+No problem!	nˈəʊ pɹˈɒbləm
+No problem, anytime.	nˈəʊ pɹˈɒbləm ˈɛnɪtˌaɪm
+No regrets.	nˈəʊ ɹɪɡɹˈɛts
+No strings attached.	nˈəʊ stɹˈɪŋz ɐtˈætʃt
+No sweat.	nˈəʊ swˈɛt
+No way I can do that.	nˈəʊ wˈeɪ aɪ kæn dˈuː ðˈæt
+No way!	nˈəʊ wˈeɪ
+No way, really?	nˈəʊ wˈeɪ ɹˈiəlɪ
+No wonder he's tired.	nˈəʊ wˈʌndɐ hiːz tˈaɪəd
+No wonder it broke.	nˈəʊ wˈʌndɐɹ ɪt bɹˈəʊk
+No word can truly describe it.	nˈəʊ wˈɜːd kæn tɹˈuːlɪ dɪskɹˈaɪb ɪt
+No word can truly describe my gratitude.	nˈəʊ wˈɜːd kæn tɹˈuːlɪ dɪskɹˈaɪb maɪ ɡɹˈætɪtjˌuːd
+No worries!	nˈəʊ wˈʌɹɪz
+No worries, it's fine.	nˈəʊ wˈʌɹɪz ɪts fˈaɪn
+No, I have not.	nˈəʊ aɪ hɐvnˈɒt
+No, and that's that.	nˈəʊ ænd ðæts ðˈæt
+None taken.	nˈɒn tˈeɪkən
+None the worse for the journey.	nˈɒn ðə wˈɜːs fəðə dʒˈɜːnɪ
+None the worse for waiting.	nˈɒn ðə wˈɜːs fɔː wˈeɪtɪŋ
+Nonstop flight.	nˌɒnstˈɒp flˈaɪt
+Nope, never been there.	nˈəʊp nˈɛvɐ bˌiːn ðˈeə
+Nope, not me.	nˈəʊp nˌɒt mˈiː
+Northern hemisphere.	nˈɔːðən hˈɛmɪsfˌiə
+Nostalgia is the best kind of pain.	nəstˈældʒɐɹ ɪz ðə bˈɛst kˈaɪnd ɒv pˈeɪn
+Nosy neighbors.	nˈəʊzɪ nˈeɪbəz
+Not a big fan of horror.	nˌɒtɐ bˈɪɡ fˈæn ɒv hˈɒɹɐ
+Not an option.	nˌɒt ɐn ˈɒpʃən
+Not at all what I wanted.	nˌɒt æt ˈɔːl wɒt aɪ wˈɒntɪd
+Not at all!	nˌɒt æt ˈɔːl
+Not entirely adequate.	nˌɒt ɛntˈaɪəlɪ ˈædɪkwət
+Not everyone is on the same timeline.	nˌɒt ˈɛvɹɪwˌɒn ɪz ɒnðə sˈeɪm tˈaɪmlaɪn
+Not everyone lives in a third world.	nˌɒt ˈɛvɹɪwˌɒn lˈaɪvz ɪn ɐ θˈɜːd wˈɜːld
+Not exactly cheap.	nˌɒt ɪɡzˈæktlɪ tʃˈiːp
+Not exactly fun.	nˌɒt ɪɡzˈæktlɪ fˈʌn
+Not ideal, but okay.	nˌɒt aɪdˈiəl bˌʌt əʊkˈeɪ
+Not in the mood today.	nˌɒt ɪnðə mˈuːd tədˈeɪ
+Not into that type of shit.	nˌɒt ˌɪntʊ ðæt tˈaɪp ɒv ʃˈɪt
+Not more than ten people.	nˌɒt mˈɔː ðɐn tˈɛn pˈiːpəl
+Not much, just chilling.	nˌɒt mˈʌtʃ dʒˈʌst tʃˈɪlɪŋ
+Not much, you?	nˌɒt mˈʌtʃ jˈuː
+Not necessarily true.	nˌɒt nˌɛsɪsˈɛɹɪlɪ tɹˈuː
+Not necessarily, no.	nˌɒt nˌɛsɪsˈɛɹɪlɪ nˈəʊ
+Not really my thing.	nˌɒt ɹˈiəlɪ maɪ θˈɪŋ
+Not really, no.	nˌɒt ɹˈiəlɪ nˈəʊ
+Not related in any way.	nˌɒt ɹɪlˈeɪtɪd ɪn ˌɛnɪ wˈeɪ
+Not so much angry as confused.	nˌɒt sˈəʊ mˌʌtʃ ˈæŋɡɹɪ æz kənfjˈuːzd
+Not so much tired as bored.	nˌɒt sˈəʊ mˌʌtʃ tˈaɪəd æz bˈɔːd
+Not supposed to talk.	nˌɒt səpˈəʊzd tə tˈɔːk
+Not sure yet, I'll let you know.	nˌɒt ʃˈɔː jˈɛt aɪl lˈɛt juː nˈəʊ
+Not sustainable.	nˌɒt səstˈeɪnəbəl
+Not that I know of.	nˌɒt ðæt aɪ nˈəʊ ɒv
+Not the worst either, honestly.	nˌɒt ðə wˈɜːst ˈaɪðɐ ˈɒnɪstlɪ
+Not this, not that either.	nˌɒt ðˈɪs nˌɒt ðæt ˈaɪðɐ
+Not very enthusiastic.	nˌɒt vˈɛɹɪ ɪnθjˌuːzɪˈæstɪk
+Note to self: buy milk.	nˈəʊt tə sˈɛlf bˈaɪ mˈɪlk
+Note to self: don't be late.	nˈəʊt tə sˈɛlf dˈəʊnt biː lˈeɪt
+Nothing but thanks from me.	nˈʌθɪŋ bˌʌt θˈæŋks fɹɒm mˌiː
+Nothing can be done without money.	nˈʌθɪŋ kæn biː dˈʌn wɪðˌaʊt mˈʌnɪ
+Nothing can be done without trust.	nˈʌθɪŋ kæn biː dˈʌn wɪðˌaʊt tɹˈʌst
+Nothing can replace her.	nˈʌθɪŋ kæn ɹɪplˈeɪs hɜː
+Nothing can take place of family.	nˈʌθɪŋ kæn tˈeɪk plˈeɪs ɒv fˈæmɪlɪ
+Nothing fancy.	nˈʌθɪŋ fˈænsɪ
+Nothing feels better than this.	nˈʌθɪŋ fˈiːlz bˈɛtɐ ðɐn ðˈɪs
+Nothing feels right today.	nˈʌθɪŋ fˈiːlz ɹˈaɪt tədˈeɪ
+Nothing to do with money.	nˈʌθɪŋ tə dˈuː wɪð mˈʌnɪ
+Nothing to say in my defense.	nˈʌθɪŋ tə sˈeɪ ɪn maɪ dɪfˈɛns
+Now commonplace.	nˈaʊ kˈɒmənplˌeɪs
+Now everything is clear.	nˈaʊ ˈɛvɹɪθˌɪŋ ɪz klˈiə
+Now that I think about it, ~	nˈaʊ ðæt aɪ θˈɪŋk ɐbˈaʊt ɪt tˈɪldɐ
+Now that you mention it, I forgot.	nˈaʊ ðæt juː mˈɛnʃən ɪt aɪ fəɡˈɒt
+Now that you mention it, true.	nˈaʊ ðæt juː mˈɛnʃən ɪt tɹˈuː
+Now that you're here, let's start.	nˈaʊ ðæt jɔː hˈiə lˈɛts stˈɑːt
+OK, no hard feelings.	ˌəʊkˈeɪ nˈəʊ hˈɑːd fˈiːlɪŋz
+Obtain a permit.	ɒbtˈeɪn ɐ pˈɜːmɪt
+Obviously upset.	ˈɒbviəslɪ ʌpsˈɛt
+Obviously, yes.	ˈɒbviəslɪ jˈɛs
+Occupy the room.	ˈɒkjʊpˌaɪ ðə ɹˈuːm
+Occupy your mind.	ˈɒkjʊpˌaɪ jɔː mˈaɪnd
+Oddly enough, ~	ˈɒdlɪ ɪnˈʌf tˈɪldɐ
+Oddly satisfying.	ˈɒdlɪ sˈætɪsfˌaɪɪŋ
+Odds are he forgot.	ˈɒdz ɑː hiː fəɡˈɒt
+Odds are it'll rain.	ˈɒdz ɑːɹ ˌɪtəl ɹˈeɪn
+Of African descent.	ɒv ˈæfɹɪkən dɪsˈɛnt
+Of Japanese descent.	ɒv dʒˌæpənˈiːz dɪsˈɛnt
+Off the top of my head, no idea.	ˈɒf ðə tˈɒp ɒv maɪ hˈɛd nˈəʊ aɪdˈiə
+Off the top of my head, three.	ˈɒf ðə tˈɒp ɒv maɪ hˈɛd θɹˈiː
+Off to the chippy.	ˈɒf tə ðə tʃˈɪpɪ
+Offered to drive.	ˈɒfəd tə dɹˈaɪv
+Office cubicle.	ˈɒfɪs kjˈuːbɪkəl
+Office setup.	ˈɒfɪs sˈɛtʌp
+Often viewed as ~	ˈɒfən vjˈuːd æz tˈɪldɐ
+Oh come on, really?	ˈəʊ kˈʌm ˈɒn ɹˈiəlɪ
+Oh crap.	ˈəʊ kɹˈæp
+Oh give me a break!	ˈəʊ ɡˈɪv mˌiː ɐ bɹˈeɪk
+Oh, before I forget, ~	ˈəʊ bɪfˌɔːɹ aɪ fəɡˈɛt tˈɪldɐ
+Oh, get real!	ˈəʊ ɡɛt ɹˈiəl
+Oh, my bad — didn't see you.	ˈəʊ maɪ bˈæd dˈɪdnt sˈiː juː
+Oh, one more thing.	ˈəʊ wˈɒn mˈɔː θˈɪŋ
+Oh, that's a real shame.	ˈəʊ ðæts ɐ ɹˈiəl ʃˈeɪm
+Oil is a commodity.	ˈɔɪl ɪz ɐ kəmˈɒdɪtɪ
+Okay, here we go.	əʊkˈeɪ hˈiə wiː ɡˈəʊ
+Old classmate.	ˈəʊld klˈɑːsmeɪt
+Old enough to vote.	ˈəʊld ɪnˈʌf tə vˈəʊt
+Old friends sometimes drift apart.	ˈəʊld fɹˈɛndz sˈʌmtaɪmz dɹˈɪft ɐpˈɑːt
+On a daily basis.	ˌɒn ɐ dˈeɪlɪ bˈeɪsɪs
+On a first come first served basis.	ˌɒn ɐ fˈɜːst kˈʌm fˈɜːst sˈɜːvd bˈeɪsɪs
+On a tight budget.	ˌɒn ɐ tˈaɪt bˈʌdʒɪt
+On behalf of all of us.	ˌɒn bɪhˈɑːf ɒv ˈɔːl ɒv ˌʌs
+On behalf of the team.	ˌɒn bɪhˈɑːf ɒvðə tˈiːm
+On holiday.	ˌɒn hˈɒlɪdˌeɪ
+On patrol.	ˌɒn pɐtɹˈəʊl
+On principle.	ˌɒn pɹˈɪnsɪpəl
+On second thought, I'll skip dessert.	ˌɒn sˈɛkənd θˈɔːt aɪl skˈɪp dɪzˈɜːt
+On second thought, let's stay home.	ˌɒn sˈɛkənd θˈɔːt lˈɛts stˈeɪ hˈəʊm
+On the battlefield.	ɒnðə bˈætəlfˌiːld
+On the farm.	ɒnðə fˈɑːm
+On the one hand, fast. On the other, costly.	ɒnðə wˈɒn hˈænd fˈɑːst ɒnðɪ ˈʌðɐ kˈɒstlɪ
+On the one hand, it's cheap.	ɒnðə wˈɒn hˈænd ɪts tʃˈiːp
+On the other hand, it works fast.	ɒnðɪ ˈʌðɐ hˈænd ɪt wˈɜːks fˈɑːst
+On the other hand, it's expensive.	ɒnðɪ ˈʌðɐ hˈænd ɪts ɪkspˈɛnsɪv
+On the record.	ɒnðə ɹˈɛkɔːd
+On the syllabus.	ɒnðə sˈɪlæbəs
+On the way home now.	ɒnðə wˈeɪ hˈəʊm nˈaʊ
+On top of everything else.	ˌɒn tˈɒp ɒv ˈɛvɹɪθˌɪŋ ˈɛls
+On top of everything, I lost my keys.	ˌɒn tˈɒp ɒv ˈɛvɹɪθˌɪŋ aɪ lˈɒst maɪ kˈiːz
+On trial.	ˌɒn tɹˈaɪəl
+On your toes.	ˌɒn jɔː tˈəʊz
+Once I finish work.	wˈʌns aɪ fˈɪnɪʃ wˈɜːk
+Once a fortnight.	wˈʌns ɐ fˈɔːtnaɪt
+Once and for all, no.	wˈʌns ænd fɔːɹ ˈɔːl nˈəʊ
+Once in a blue moon, ~	wˈʌns ɪn ɐ blˈuː mˈuːn tˈɪldɐ
+Once in a while, I cook.	wˈʌns ɪn ɐ wˈaɪl aɪ kˈʊk
+Once it went public, it spread.	wˈʌns ɪt wɛnt pˈʌblɪk ɪt spɹˈɛd
+One coffee to go please.	wˈɒn kˈɒfɪ tə ɡˌəʊ plˈiːz
+One last thing before we end.	wˈɒn lˈɑːst θˈɪŋ bɪfˌɔː wiː ˈɛnd
+One month notice period.	wˈɒn mˈʌnθ nˈəʊtɪs pˈiəɹɪəd
+One more thing before you go.	wˈɒn mˈɔː θˈɪŋ bɪfˌɔː juː ɡˈəʊ
+One of the saddest moments I've seen.	wˈɒn ɒvðə sˈædɪst mˈəʊmənts aɪv sˈiːn
+One of the saddest moments of my life.	wˈɒn ɒvðə sˈædɪst mˈəʊmənts ɒv maɪ lˈaɪf
+One thing for sure, he's honest.	wˈɒn θˈɪŋ fɔː ʃˈɔː hiːz ˈɒnɪst
+Ongoing issue.	ˈɒŋɡəʊɪŋ ˈɪʃuː
+Ongoing project.	ˈɒŋɡəʊɪŋ pɹˈɒdʒɛkt
+Only a small change though.	ˈəʊnlɪ ɐ smˈɔːl tʃˈeɪndʒ ðˌəʊ
+Only a small fee though.	ˈəʊnlɪ ɐ smˈɔːl fˈiː ðˌəʊ
+Only child syndrome.	ˈəʊnlɪ tʃˈaɪld sˈɪndɹəʊm
+Only in my dream.	ˈəʊnlɪ ɪn maɪ dɹˈiːm
+Oops!	ˈuːps
+Oops, I dropped it.	ˈuːps aɪ dɹˈɒpt ɪt
+Open all year round.	ˈəʊpən ˈɔːl jˈiə ɹˈaʊnd
+Open all year.	ˈəʊpən ˈɔːl jˈiə
+Open daily, with the exception of Monday.	ˈəʊpən dˈeɪlɪ wɪððɪ ɪksˈɛpʃən ɒv mˈʌndeɪ
+Open dialogue.	ˈəʊpən dˈaɪəlɒɡ
+Open the attachment.	ˈəʊpən ðɪ ɐtˈætʃmənt
+Open to ridicule.	ˈəʊpən tə ɹˈɪdɪkjˌuːl
+Open up the market.	ˈəʊpən ˌʌp ðə mˈɑːkɪt
+Open your textbook.	ˈəʊpən jɔː tˈɛkstbʊk
+Opening remarks.	ˈəʊpənɪŋ ɹɪmˈɑːks
+Opening soon!	ˈəʊpənɪŋ sˈuːn
+Operating profit rose.	ˈɒpəɹˌeɪtɪŋ pɹˈɒfɪt ɹˈəʊz
+Opposing views.	əpˈəʊzɪŋ vjˈuːz
+Optimistic outlook.	ˌɒptɪmˈɪstɪk ˈaʊtlʊk
+Optimize for speed.	ˈɒptɪmˌaɪz fɔː spˈiːd
+Optimize the process.	ˈɒptɪmˌaɪz ðə pɹˈəʊsɛs
+Oral exam.	ˈɔːɹəl ɪɡzˈæm
+Oral health.	ˈɔːɹəl hˈɛlθ
+Order a takeaway.	ˈɔːdɐɹ ɐ tˈeɪkəwˌeɪ
+Ordinary folks like us.	ˈɔːdɪnəɹɪ fˈəʊks lˈaɪk ˌʌs
+Organic farming.	ɔːɡˈænɪk fˈɑːmɪŋ
+Organic food.	ɔːɡˈænɪk fˈuːd
+Organic growth.	ɔːɡˈænɪk ɡɹˈəʊθ
+Originate in Japan.	əɹˈɪdʒɪnˌeɪt ɪn dʒəpˈæn
+Otherwise fine.	ˈʌðəwˌaɪz fˈaɪn
+Our boss is a slave driver.	ˌaʊɐ bˈɒs ɪz ɐ slˈeɪv dɹˈaɪvɐ
+Our distributor in Japan.	ˌaʊɐ dɪstɹˈɪbjuːtɐɹ ɪn dʒəpˈæn
+Out of boredom.	ˌaʊtəv bˈɔːdəm
+Out of context.	ˌaʊtəv kˈɒntɛkst
+Out of curiosity, how old are you?	ˌaʊtəv kjˌɔːɹɪˈɒsɪtɪ hˌaʊ ˈəʊld ɑː juː
+Out of the loop.	ˌaʊtəv ðə lˈuːp
+Outline the plan.	ˈaʊtlaɪn ðə plˈæn
+Over average height.	ˌəʊvɐɹ ˈævɹɪdʒ hˈaɪt
+Overall winner.	ˌəʊvəɹˈɔːl wˈɪnɐ
+Overall, it's good.	ˌəʊvəɹˈɔːl ɪts ɡˈʊd
+Overcome obstacles.	ˌəʊvəkˈʌm ˈɒbstəkəlz
+Overrated movie.	ˌəʊvəɹˈeɪtɪd mˈuːvɪ
+Overwhelming support.	ˌəʊvəwˈɛlmɪŋ səpˈɔːt
+Own up to it.	ˈəʊn ˈʌp tʊ ɪt
+Pack a bunch of socks.	pˈæk ɐ bˈʌntʃ ɒv sˈɒks
+Pack your stuff.	pˈæk jɔː stˈʌf
+Paid out of pocket.	pˈeɪd ˌaʊtəv pˈɒkɪt
+Park in the garage.	pˈɑːk ɪnðə ɡˈæɹɪdʒ
+Parking on site.	pˈɑːkɪŋ ˌɒn sˈaɪt
+Party whip.	pˈɑːtɪ wˈɪp
+Pass me a rubber.	pˈɑːs mˌiː ɐ ɹˈʌbɐ
+Pass the ball to me.	pˈɑːs ðə bˈɔːl tə mˌiː
+Pass the ball!	pˈɑːs ðə bˈɔːl
+Pass the exam.	pˈɑːs ðɪ ɪɡzˈæm
+Pass the salt.	pˈɑːs ðə sˈɒlt
+Pass through customs.	pˈɑːs θɹuː kˈʌstəmz
+Patch up the hole.	pˈætʃ ˌʌp ðə hˈəʊl
+Pathetically weak.	pɐθˈɛtɪklɪ wˈiːk
+Patience is a virtue.	pˈeɪʃəns ɪz ɐ vˈɜːtʃuː
+Patients wait for some care.	pˈeɪʃənts wˈeɪt fɔː sˌʌm kˈeə
+Patriots defend the nation.	pˈætɹɪəts dɪfˈɛnd ðə nˈeɪʃən
+Pave the way for change.	pˈeɪv ðə wˈeɪ fɔː tʃˈeɪndʒ
+Pave the way for reform.	pˈeɪv ðə wˈeɪ fɔː ɹɪfˈɔːm
+Pay the rent.	pˈeɪ ðə ɹˈɛnt
+Pay up front.	pˈeɪ ˌʌp fɹˈʌnt
+Payment shall be made in full.	pˈeɪmənt ʃˌæl biː mˌeɪd ɪn fˈʊl
+Peaceful protest.	pˈiːsfəl pɹˈəʊtɛst
+Peak performance.	pˈiːk pəfˈɔːməns
+Pedophiles face harsh punishment.	pˈɛdəfˌaɪlz fˈeɪs hˈɑːʃ pˈʌnɪʃmənt
+Pending review.	pˈɛndɪŋ ɹɪvjˈuː
+People are waking up to climate change.	pˈiːpəl ɑː wˈeɪkɪŋ ˌʌp tə klˈaɪmət tʃˈeɪndʒ
+People from all over the world.	pˈiːpəl fɹɒm ˈɔːl ˌəʊvɐ ðə wˈɜːld
+People from every corner of the world.	pˈiːpəl fɹɒm ˈɛvɹɪ kˈɔːnɐɹ ɒvðə wˈɜːld
+People in general.	pˈiːpəl ɪn dʒˈɛnəɹəl
+Perfect binge-watching weather.	pˈɜːfɛkt bˈɪndʒwˈɒtʃɪŋ wˈɛðɐ
+Perfect match.	pˈɜːfɛkt mˈætʃ
+Perfect safety doesn't exist.	pˈɜːfɛkt sˈeɪftɪ dˈʌzənt ɪɡzˈɪst
+Performance is over average.	pəfˈɔːməns ɪz ˌəʊvɐɹ ˈævɹɪdʒ
+Perhaps later.	pəhˈæps lˈeɪtɐ
+Perhaps we could meet later.	pəhˈæps wiː kʊd mˈiːt lˈeɪtɐ
+Perhaps we could try this.	pəhˈæps wiː kʊd tɹˈaɪ ðˈɪs
+Perhaps you're right.	pəhˈæps jɔː ɹˈaɪt
+Perishable goods.	pˈɛɹɪʃəbəl ɡˈʊdz
+Permanent change.	pˈɜːmənənt tʃˈeɪndʒ
+Permanent job.	pˈɜːmənənt dʒˈɒb
+Personal achievement.	pˈɜːsənəl ɐtʃˈiːvmənt
+Personal experience.	pˈɜːsənəl ɪkspˈiəɹɪəns
+Personal hygiene.	pˈɜːsənəl hˈaɪdʒiːn
+Persuade him to come.	pəswˈeɪd hˌɪm tə kˈʌm
+Pesticide-free.	pˈɛstɪsˌaɪdfɹˈiː
+Pet adoption.	pˈɛt ɐdˈɒpʃən
+Pet shop.	pˈɛt ʃˈɒp
+Pets are a deal-breaker.	pˈɛts ɑːɹ ɐ dˈiːlbɹˈeɪkɐ
+Phase in the changes.	fˈeɪz ɪnðə tʃˈeɪndʒɪz
+Phase in the new system.	fˈeɪz ɪnðə njˈuː sˈɪstəm
+Phew, that's a relief.	fjˈuː ðæts ɐ ɹɪlˈiːf
+Photograph the scenery.	fˈəʊtəɡɹˌɑːf ðə sˈiːnəɹɪ
+Photosynthesis requires sunlight.	fˌəʊtəʊsˈɪnθəsˌɪs ɹɪkwˈaɪəz sˈʌnlaɪt
+Pick a fight.	pˈɪk ɐ fˈaɪt
+Pick either of these.	pˈɪk ˈaɪðɐɹ ɒv ðˈiːz
+Pick up after yourself.	pˈɪk ˌʌp ˈɑːftɐ jɔːsˈɛlf
+Pick up trash at the park.	pˈɪk ˌʌp tɹˈæʃ æt ðə pˈɑːk
+Pick up where we left off.	pˈɪk ˌʌp wˌeə wiː lˈɛft ˈɒf
+Picnic weather at last.	pˈɪknɪk wˈɛðɐɹ æt lˈɑːst
+Picture a beach.	pˈɪktʃɐɹ ɐ bˈiːtʃ
+Picture this.	pˈɪktʃɐ ðˈɪs
+Pixel art game.	pˈɪksəl ˈɑːt ɡˈeɪm
+Pizza craving!	pˈiːtsɐ kɹˈeɪvɪŋ
+Pizza or whatever.	pˈiːtsɐɹ ɔː wɒtˈɛvɐ
+Pizza, sushi, you name it.	pˈiːtsɐ sˈuːʃɪ juː nˈeɪm ɪt
+Place an order online.	plˈeɪs ɐn ˈɔːdɐɹ ˈɒnlaɪn
+Place an order.	plˈeɪs ɐn ˈɔːdɐ
+Place it on the table.	plˈeɪs ɪt ɒnðə tˈeɪbəl
+Place the ball on the penalty spot.	plˈeɪs ðə bˈɔːl ɒnðə pˈɛnəltɪ spˈɒt
+Planning to leave at 8.	plˈænɪŋ tə lˈiːv æt ˈeɪt
+Plans are underway.	plˈænz ɑːɹ ˌʌndəwˈeɪ
+Plans for summer break.	plˈænz fɔː sˈʌmɐ bɹˈeɪk
+Plant the seedlings.	plˈɑːnt ðə sˈiːdlɪŋz
+Plants perish in frost.	plˈɑːnts pˈɛɹɪʃ ɪn fɹˈɒst
+Play an instrument.	plˈeɪ ɐn ˈɪnstɹəmənt
+Play mind games.	plˈeɪ mˈaɪnd ɡˈeɪmz
+Play the piano.	plˈeɪ ðə pɪˈænəʊ
+Play up the drama.	plˈeɪ ˌʌp ðə dɹˈɑːmɐ
+Play up your strengths.	plˈeɪ ˌʌp jɔː stɹˈɛŋθs
+Please confirm your reservation.	plˈiːz kənfˈɜːm jɔː ɹˌɛzəvˈeɪʃən
+Please cooperate with us.	plˈiːz kəʊˈɒpəɹˌeɪt wɪð ˌʌs
+Please correct me.	plˈiːz kəɹˈɛkt mˌiː
+Please correct this sentence.	plˈiːz kəɹˈɛkt ðɪs sˈɛntəns
+Please find enclosed the invoice.	plˈiːz fˈaɪnd ɪŋklˈəʊzd ðɪ ˈɪnvɔɪs
+Please help me.	plˈiːz hˈɛlp mˌiː
+Please make yourself at home.	plˈiːz mˌeɪk jɔːsˈɛlf æt hˈəʊm
+Please recycle.	plˈiːz ɹɪsˈaɪkəl
+Please wait for update.	plˈiːz wˈeɪt fɔːɹ ˈʌpdeɪt
+Plug in the charger.	plˈʌɡ ɪnðə tʃˈɑːdʒɐ
+Plug into the electrical outlet.	plˈʌɡ ˌɪntʊ ðɪ ɪlˈɛktɹɪkəl ˈaʊtlɛt
+Plug into the outlet.	plˈʌɡ ˌɪntʊ ðɪ ˈaʊtlɛt
+Plus, it's free!	plˈʌs ɪts fɹˈiː
+Point to the door.	pˈɔɪnt tə ðə dˈɔː
+Point your finger.	pˈɔɪnt jɔː fˈɪŋɡɐ
+Pointy ears.	pˈɔɪntɪ ˈiəz
+Pointy shoes.	pˈɔɪntɪ ʃˈuːz
+Police patrol.	pəlˈiːs pɐtɹˈəʊl
+Polish the shoes.	pˈəʊlɪʃ ðə ʃˈuːz
+Polish your speech.	pˈəʊlɪʃ jɔː spˈiːtʃ
+Political landscape.	pəlˈɪtɪkəl lˈændskeɪp
+Poly market odds.	pˈɒlɪ mˈɑːkɪt ˈɒdz
+Poor blood flow.	pˈɔː blˈʌd flˈəʊ
+Poor etiquette.	pˈɔːɹ ˈɛtɪkˌɛt
+Poor ventilation makes it stuffy.	pˈɔː vˌɛntɪlˈeɪʃən mˌeɪks ɪt stˈʌfɪ
+Pop idol.	pˈɒp ˈaɪdəl
+Pop in later.	pˈɒp ɪn lˈeɪtɐ
+Pop over for a tea.	pˈɒp ˌəʊvɐ fəɹɐ tˈiː
+Pop round for tea?	pˈɒp ɹˈaʊnd fɔː tˈiː
+Pop round tomorrow.	pˈɒp ɹˈaʊnd təmˈɒɹəʊ
+Population density.	pˌɒpjʊlˈeɪʃən dˈɛnsɪtɪ
+Population management policy.	pˌɒpjʊlˈeɪʃən mˈænɪdʒmənt pˈɒlɪsɪ
+Positive attitude!	pˈɒzɪtˌɪv ˈætɪtjˌuːd
+Positive expected value.	pˈɒzɪtˌɪv ɪkspˈɛktɪd vˈæljuː
+Post the letter.	pˈəʊst ðə lˈɛtɐ
+Pour some water.	pˈɔː sˌʌm wˈɔːtɐ
+Pour the coffee.	pˈɔː ðə kˈɒfɪ
+Practical advice.	pɹˈæktɪkəl ɐdvˈaɪs
+Practical application.	pɹˈæktɪkəl ˌæplɪkˈeɪʃən
+Practical approach.	pɹˈæktɪkəl ɐpɹˈəʊtʃ
+Practice a martial art.	pɹˈæktɪs ɐ mˈɑːʃəl ˈɑːt
+Practice thrift.	pɹˈæktɪs θɹˈɪft
+Pray for peace.	pɹˈeɪ fɔː pˈiːs
+Preheat the oven.	pɹɪhˈiːt ðɪ ˈʌvən
+Preoccupied with work.	pɹɪˈɒkjʊpˌaɪd wɪð wˈɜːk
+Present a case study.	pɹˈɛzənt ɐ kˈeɪs stˈʌdɪ
+Present the findings.	pɹˈɛzənt ðə fˈaɪndɪŋz
+Preserve nature.	pɹɪzˈɜːv nˈeɪtʃɐ
+Preserve the tradition.	pɹɪzˈɜːv ðə tɹɐdˈɪʃən
+Presidential election.	pɹˌɛzɪdˈɛnʃəl ɪlˈɛkʃən
+Press the button.	pɹˈɛs ðə bˈʌtən
+Press the clutch.	pɹˈɛs ðə klˈʌtʃ
+Pretty complex.	pɹˈɪtɪ kˈɒmplɛks
+Pretty much done.	pɹˈɪtɪ mˈʌtʃ dˈʌn
+Prevent the spread.	pɹɪvˈɛnt ðə spɹˈɛd
+Price hike.	pɹˈaɪs hˈaɪk
+Price range.	pɹˈaɪs ɹˈeɪndʒ
+Price tag.	pɹˈaɪs tˈæɡ
+Prices are coming down.	pɹˈaɪsɪz ɑː kˈʌmɪŋ dˈaʊn
+Prices rise.	pɹˈaɪsɪz ɹˈaɪz
+Pride was his downfall.	pɹˈaɪd wɒz hɪz dˈaʊnfɔːl
+Print it out for me.	pɹˈɪnt ɪt ˈaʊt fɔː mˌiː
+Print out the file.	pɹˈɪnt ˈaʊt ðə fˈaɪl
+Prior to that, I lived in Tokyo.	pɹˈaɪɐ tə ðˈæt aɪ lˈɪvd ɪn tˈəʊkɪˌəʊ
+Prior to the meeting.	pɹˈaɪɐ tə ðə mˈiːtɪŋ
+Prioritize your health.	pɹaɪˈɒɹɪtˌaɪz jɔː hˈɛlθ
+Probability of rain.	pɹˌɒbəbˈɪlɪtɪ ɒv ɹˈeɪn
+Problems occur.	pɹˈɒbləmz əkˈɜː
+Process the data.	pɹˈəʊsɛs ðə dˈeɪtɐ
+Product placement.	pɹˈɒdʌkt plˈeɪsmənt
+Proficient in English.	pɹəfˈɪʃənt ɪn ˈɪŋɡlɪʃ
+Profit margin.	pɹˈɒfɪt mˈɑːdʒɪn
+Profound impact.	pɹəfˈaʊnd ˈɪmpækt
+Profound silence.	pɹəfˈaʊnd sˈaɪləns
+Progress with the plan.	pɹˈəʊɡɹɛs wɪððə plˈæn
+Project timeline.	pɹˈɒdʒɛkt tˈaɪmlaɪn
+Promise to be on time.	pɹˈɒmɪs təbɪ ˌɒn tˈaɪm
+Promise to call.	pɹˈɒmɪs tə kˈɔːl
+Proofread the article.	pɹˈuːfɹiːd ðɪ ˈɑːtɪkəl
+Propel his career.	pɹəpˈɛl hɪz kəɹˈiə
+Propel the boat.	pɹəpˈɛl ðə bˈəʊt
+Proper job!	pɹˈɒpɐ dʒˈɒb
+Props to you!	pɹˈɒps tə juː
+Protect the environment.	pɹətˈɛkt ðɪ ɛnvˈaɪɹənmənt
+Protect your eyes.	pɹətˈɛkt jɔːɹ ˈaɪz
+Protesters disrupted order.	pɹətˈɛstəz dɪsɹˈʌptɪd ˈɔːdɐ
+Proven track record.	pɹˈuːvən tɹˈæk ɹˈɛkɔːd
+Provide an incentive.	pɹəvˈaɪd ɐn ɪnsˈɛntɪv
+Provided that it rains.	pɹəvˈaɪdɪd ðˌɐtɪt ɹˈeɪnz
+Provided that you agree.	pɹəvˈaɪdɪd ðæt juː ɐɡɹˈiː
+Provoke a response.	pɹəvˈəʊk ɐ ɹɪspˈɒns
+Public enemy.	pˈʌblɪk ˈɛnəmɪ
+Public holiday.	pˈʌblɪk hˈɒlɪdˌeɪ
+Public infrastructure.	pˈʌblɪk ˈɪnfɹəstɹˌʌktʃɐ
+Public outrage.	pˈʌblɪk ˈaʊtɹeɪdʒ
+Public sentiment.	pˈʌblɪk sˈɛntɪmənt
+Public transit.	pˈʌblɪk tɹˈænsɪt
+Pull a rabbit out of a hat.	pˈʊl ɐ ɹˈæbɪt ˌaʊtəv ɐ hˈæt
+Pull over up here.	pˈʊl ˌəʊvɐɹ ˌʌp hˈiə
+Pull strings to get in.	pˈʊl stɹˈɪŋz tə ɡɛt ˈɪn
+Pull the lever.	pˈʊl ðə lˈiːvɐ
+Pull the trigger.	pˈʊl ðə tɹˈɪɡɐ
+Pull up a chair.	pˈʊl ˌʌp ɐ tʃˈeə
+Pull up over there.	pˈʊl ˌʌp ˌəʊvɐ ðˈeə
+Pull yourself out of bed.	pˈʊl jɔːsˈɛlf ˌaʊtəv bˈɛd
+Pull yourself together!	pˈʊl jɔːsˈɛlf təɡˈɛðɐ
+Pulled an all-nighter.	pˈʊld ɐn ˈɔːlnˈaɪtɐ
+Punctuality is expected.	pˌʌŋktʃuːˈælɪtɪ ɪz ɪkspˈɛktɪd
+Pure boredom.	pjˈɔː bˈɔːdəm
+Pure brainrot.	pjˈɔː bɹˈeɪnɹɒt
+Pure coziness.	pjˈɔː kˈəʊzɪnəs
+Pure ecstasy.	pjˈɔːɹ ˈɛkstəsɪ
+Pure fluke.	pjˈɔː flˈuːk
+Pure goosebumps moment.	pjˈɔː ɡˈuːsbʌmps mˈəʊmənt
+Pure nostalgia.	pjˈɔː nəstˈældʒɐ
+Pure pleasure.	pjˈɔː plˈɛʒɐ
+Pure propaganda.	pjˈɔː pɹˌɒpɐɡˈændɐ
+Pure sadness.	pjˈɔː sˈædnəs
+Pure shitposting.	pjˈɔː ʃˈɪtpəʊstɪŋ
+Purple flowers.	pˈɜːpəl flˈaʊəz
+Pursue excellence.	pəsjˈuː ˈɛksələns
+Pursue what you love.	pəsjˈuː wɒt juː lˈʌv
+Push me again and I won't be nice anymore.	pˈʊʃ mˌiː ɐɡˈɛn ænd aɪ wəʊnt biː nˈaɪs ˌɛnɪmˈɔː
+Push the trolley.	pˈʊʃ ðə tɹˈɒlɪ
+Put aside some money each month.	pˌʊt ɐsˈaɪd sˌʌm mˈʌnɪ ˈiːtʃ mˈʌnθ
+Put in the effort.	pˌʊt ɪnðɪ ˈɛfət
+Put it down here.	pˌʊt ɪt dˌaʊn hˈiə
+Put on deodorant.	pˌʊt ˌɒn diːˈəʊdəɹənt
+Put on your socks.	pˌʊt ˌɒn jɔː sˈɒks
+Put the kettle on.	pˌʊt ðə kˈɛtəl ˈɒn
+Putting differences aside.	pˈʊtɪŋ dˈɪfɹənsɪz ɐsˈaɪd
+Putting that aside, ~	pˈʊtɪŋ ðæt ɐsˈaɪd tˈɪldɐ
+Quantum physics.	kwˈɒntəm fˈɪzɪks
+Queue here.	kjˈuː hˈiə
+Queue's long.	kjˈuːz lˈɒŋ
+Quick coffee break.	kwˈɪk kˈɒfɪ bɹˈeɪk
+Quick getaway.	kwˈɪk ɡˈɛtəwˌeɪ
+Quick recap.	kwˈɪk ɹɪkˈæp
+Quit for good.	kwˈɪt fɔː ɡˈʊd
+Quite a bit of effort.	kwˈaɪt ɐ bˈɪt ɒv ˈɛfət
+Quite a bit of money.	kwˈaɪt ɐ bˈɪt ɒv mˈʌnɪ
+Quite a lot.	kwˈaɪt ɐ lˈɒt
+Quite eccentric.	kwˈaɪt ɪksˈɛntɹɪk
+Quite good.	kwˈaɪt ɡˈʊd
+Quite remarkable indeed.	kwˈaɪt ɹɪmˈɑːkəbəl ˌɪndˈiːd
+Quite remarkable, isn't it?	kwˈaɪt ɹɪmˈɑːkəbəl ˈɪzənt ɪt
+Quitting your job to start over is a big ask.	kwˈɪtɪŋ jɔː dʒˈɒb tə stˈɑːt ˌəʊvɐɹ ɪz ɐ bˈɪɡ ˈɑːsk
+RIP my phone battery.	ˌɑːɹˌaɪpˈiː maɪ fˈəʊn bˈætəɹɪ
+Racial discrimination.	ɹˈeɪʃəl dɪskɹˌɪmɪnˈeɪʃən
+Rack up points.	ɹˈæk ˌʌp pˈɔɪnts
+Rack up wins.	ɹˈæk ˌʌp wˈɪnz
+Rain is expected for the next days.	ɹˈeɪn ɪz ɪkspˈɛktɪd fəðə nˈɛkst dˈeɪz
+Rain is expected.	ɹˈeɪn ɪz ɪkspˈɛktɪd
+Rain on and off all day.	ɹˈeɪn ˌɒn ænd ˈɒf ˈɔːl dˈeɪ
+Rain turned into snow.	ɹˈeɪn tˈɜːnd ˌɪntʊ snˈəʊ
+Rain turned to sleet.	ɹˈeɪn tˈɜːnd tə slˈiːt
+Raise awareness.	ɹˈeɪz ɐwˈeənəs
+Raise capital.	ɹˈeɪz kˈæpɪtəl
+Ramen is my comfort food.	ɹˈɑːmən ɪz maɪ kˈʌmfət fˈuːd
+Random people who don't know you judge you.	ɹˈændəm pˈiːpəl hˌuː dˈəʊnt nˈəʊ juː dʒˈʌdʒ juː
+Random spot checks happen daily.	ɹˈændəm spˈɒt tʃˈɛks hˈæpən dˈeɪlɪ
+Randomly bumped into him.	ɹˈændəmlɪ bˈʌmpt ˌɪntʊ hˌɪm
+Rapid growth.	ɹˈæpɪd ɡɹˈəʊθ
+Rapid response.	ɹˈæpɪd ɹɪspˈɒns
+Rate the service.	ɹˈeɪt ðə sˈɜːvɪs
+Rather expensive.	ɹˈɑːðɐɹ ɪkspˈɛnsɪv
+Rather impressive work.	ɹˈɑːðɐɹ ɪmpɹˈɛsɪv wˈɜːk
+Rather impressive, I must say.	ɹˈɑːðɐɹ ɪmpɹˈɛsɪv aɪ mˈʌst sˈeɪ
+Rather nice, actually.	ɹˈɑːðɐ nˈaɪs ˈæktʃuːəlɪ
+Raw material.	ɹˈɔː mətˈiəɹɪəl
+Reach a compromise.	ɹˈiːtʃ ɐ kˈɒmpɹəmˌaɪz
+Reach a milestone.	ɹˈiːtʃ ɐ mˈaɪlstəʊn
+Reach the peak.	ɹˈiːtʃ ðə pˈiːk
+Reached the tipping point.	ɹˈiːtʃt ðə tˈɪpɪŋ pˈɔɪnt
+React to the news.	ɹɪˈækt tə ðə njˈuːz
+Reaction time.	ɹɪˈækʃən tˈaɪm
+Read between the lines.	ɹˈiːd bɪtwˌiːn ðə lˈaɪnz
+Read up on the topic.	ɹˈiːd ˌʌp ɒnðə tˈɒpɪk
+Reading material.	ɹˈiːdɪŋ mətˈiəɹɪəl
+Real estate.	ɹˈiəl ɪstˈeɪt
+Realize the truth.	ɹˈiəlaɪz ðə tɹˈuːθ
+Rebuild your confidence.	ɹɪbˈɪld jɔː kˈɒnfɪdəns
+Recharge my phone.	ɹɪtʃˈɑːdʒ maɪ fˈəʊn
+Recipe for disaster.	ɹˈɛsɪpˌiː fɔː dɪzˈɑːstɐ
+Recite by memory.	ɹɪsˈaɪt baɪ mˈɛməɹɪ
+Reckon he'll come?	ɹˈɛkən hiːl kˈʌm
+Recover from a setback.	ɹɪkˈʌvɐ fɹɒm ɐ sˈɛtbæk
+Recovering from an injury.	ɹɪkˈʌvəɹɪŋ fɹɒm ɐn ˈɪndʒəɹɪ
+Recycle plastic.	ɹɪsˈaɪkəl plˈɑːstɪk
+Recycled cardboard.	ɹɪsˈaɪkəld kˈɑːdbɔːd
+Red carpet.	ɹˈɛd kˈɑːpɪt
+Red flags everywhere.	ɹˈɛd flˈæɡz ˈɛvɹɪwˌeə
+Red tulips.	ɹˈɛd tjˈuːlɪps
+Reduce inflammation.	ɹɪdjˈuːs ɪnflæmˈeɪʃən
+Reduce spoilage.	ɹɪdjˈuːs spˈɔɪlɪdʒ
+Reduce your carbon footprint.	ɹɪdjˈuːs jɔː kˈɑːbən fˈʊtpɹɪnt
+Redundant information.	ɹɪdˈʌndənt ˌɪnfəmˈeɪʃən
+Refer to the manual.	ɹɪfˈɜː tə ðə mˈænjuːəl
+Reflect on your choices.	ɹɪflˈɛkt ˌɒn jɔː tʃˈɔɪsɪz
+Reflective strips improve visibility.	ɹɪflˈɛktɪv stɹˈɪps ɪmpɹˈuːv vˌɪzɪbˈɪlɪtɪ
+Refresh the page.	ɹɪfɹˈɛʃ ðə pˈeɪdʒ
+Refresh your memory.	ɹɪfɹˈɛʃ jɔː mˈɛməɹɪ
+Refused to come.	ɹɪfjˈuːzd tə kˈʌm
+Regardless of race.	ɹɪɡˈɑːdləs ɒv ɹˈeɪs
+Regional differences.	ɹˈiːdʒənəl dˈɪfɹənsɪz
+Rehabilitation center.	ɹɪhˌæbɪlɪtˈeɪʃən sˈɛntɐ
+Reinvent the wheel.	ɹˌiːɪnvˈɛnt ðə wˈiːl
+Relax on the beach.	ɹɪlˈæks ɒnðə bˈiːtʃ
+Relieve stress.	ɹɪlˈiːv stɹˈɛs
+Relieve the pressure.	ɹɪlˈiːv ðə pɹˈɛʃɐ
+Remaining time.	ɹɪmˈeɪnɪŋ tˈaɪm
+Remake of the classic.	ɹɪmˈeɪk ɒvðə klˈæsɪk
+Remarkably similar.	ɹɪmˈɑːkəblɪ sˈɪmɪlɐ
+Remarkably well.	ɹɪmˈɑːkəblɪ wˈɛl
+Remember, actions speak louder than words.	ɹɪmˈɛmbɐ ˈækʃənz spˈiːk lˈaʊdɐ ðɐn wˈɜːdz
+Remembering the past.	ɹɪmˈɛmbəɹɪŋ ðə pˈɑːst
+Remind me later.	ɹɪmˈaɪnd mˌiː lˈeɪtɐ
+Remote work.	ɹɪmˈəʊt wˈɜːk
+Removal of the tree.	ɹɪmˈuːvəl ɒvðə tɹˈiː
+Remove the outlier.	ɹɪmˈuːv ðɪ ˈaʊtlˌaɪə
+Remove the stain.	ɹɪmˈuːv ðə stˈeɪn
+Remove toxins.	ɹɪmˈuːv tˈɒksɪnz
+Render assistance.	ɹˈɛndɐɹ ɐsˈɪstəns
+Rent a flat.	ɹˈɛnt ɐ flˈæt
+Rent includes utilities.	ɹˈɛnt ɪŋklˈuːdz juːtˈɪlɪtɪz
+Rent is going up.	ɹˈɛnt ɪz ɡˌəʊɪŋ ˈʌp
+Replace a pane of glass.	ɹɪplˈeɪs ɐ pˈeɪn ɒv ɡlˈɑːs
+Replace the battery.	ɹɪplˈeɪs ðə bˈætəɹɪ
+Reply instantly.	ɹɪplˈaɪ ˈɪnstəntlɪ
+Reply speedily.	ɹɪplˈaɪ spˈiːdɪlɪ
+Report due Friday.	ɹɪpˈɔːt djˈuː fɹˈaɪdeɪ
+Report to the statutory body.	ɹɪpˈɔːt tə ðə stˈætʃuːtəɹɪ bˈɒdɪ
+Reputation intact.	ɹˌɛpjuːtˈeɪʃən ɪntˈækt
+Request a quotation.	ɹɪkwˈɛst ɐ kwəʊtˈeɪʃən
+Request approved.	ɹɪkwˈɛst ɐpɹˈuːvd
+Research grant.	ɹɪsˈɜːtʃ ɡɹˈɑːnt
+Research institute.	ɹɪsˈɜːtʃ ˈɪnstɪtjˌuːt
+Resident alien.	ɹˈɛzɪdənt ˈeɪliən
+Resist the urge.	ɹɪzˈɪst ðɪ ˈɜːdʒ
+Resort to violence.	ɹɪzˈɔːt tə vˈaɪələns
+Respond quickly.	ɹɪspˈɒnd kwˈɪklɪ
+Rest assured that it's safe.	ɹˈɛst əʃˈɔːd ðæt ɪts sˈeɪf
+Rest assured that we'll help.	ɹˈɛst əʃˈɔːd ðæt wiːl hˈɛlp
+Rest assured, it's safe.	ɹˈɛst əʃˈɔːd ɪts sˈeɪf
+Rest assured, we'll handle it.	ɹˈɛst əʃˈɔːd wiːl hˈændəl ɪt
+Rest at home today.	ɹˈɛst æt hˈəʊm tədˈeɪ
+Rest for the next days.	ɹˈɛst fəðə nˈɛkst dˈeɪz
+Rest in peace to all victims.	ɹˈɛst ɪn pˈiːs tʊ ˈɔːl vˈɪktɪmz
+Rest in peace to grandma.	ɹˈɛst ɪn pˈiːs tə ɡɹˈændmɑː
+Rest of the world.	ɹˈɛst ɒvðə wˈɜːld
+Restore the data.	ɹɪstˈɔː ðə dˈeɪtɐ
+Restore trust.	ɹɪstˈɔː tɹˈʌst
+Retail store.	ɹˈiːteɪl stˈɔː
+Retail therapy.	ɹˈiːteɪl θˈɛɹəpɪ
+Return to the homeland.	ɹɪtˈɜːn tə ðə hˈəʊmlənd
+Returned the book.	ɹɪtˈɜːnd ðə bˈʊk
+Returns are accepted within 30 days.	ɹɪtˈɜːnz ɑːɹ ɐksˈɛptɪd wɪðˌɪn θˈɜːtɪ dˈeɪz
+Reunite with family.	ɹˌiːjuːnˈaɪt wɪð fˈæmɪlɪ
+Reverse the brain drain.	ɹɪvˈɜːs ðə bɹˈeɪn dɹˈeɪn
+Revert back to the old version.	ɹɪvˈɜːt bˈæk tə ðɪ ˈəʊld vˈɜːʃən
+Review the document.	ɹɪvjˈuː ðə dˈɒkjuːmənt
+Review the lesson.	ɹɪvjˈuː ðə lˈɛsən
+Review your notes.	ɹɪvjˈuː jɔː nˈəʊts
+Reward myself with dessert.	ɹɪwˈɔːd maɪsˈɛlf wɪð dɪzˈɜːt
+Reward yourself.	ɹɪwˈɔːd jɔːsˈɛlf
+Ride a bike.	ɹˈaɪd ɐ bˈaɪk
+Ridiculously expensive.	ɹɪdˈɪkjʊləslɪ ɪkspˈɛnsɪv
+Right back at you!	ɹˈaɪt bˈæk æt juː
+Right now, please.	ɹˈaɪt nˈaʊ plˈiːz
+Right on point.	ɹˈaɪt ˌɒn pˈɔɪnt
+Right on!	ɹˈaɪt ˈɒn
+Right on, dude.	ɹˈaɪt ˈɒn djˈuːd
+Right, got it.	ɹˈaɪt ɡˈɒt ɪt
+Right, let's go.	ɹˈaɪt lˈɛts ɡˈəʊ
+Rinse the dishes.	ɹˈɪns ðə dˈɪʃɪz
+Rinse your mouth.	ɹˈɪns jɔː mˈaʊθ
+Rip, that's sad.	ɹˈɪp ðæts sˈæd
+Rise up against injustice.	ɹˈaɪz ˌʌp ɐɡˈɛnst ɪndʒˈʌstɪs
+Rise up to the challenge.	ɹˈaɪz ˌʌp tə ðə tʃˈælɪndʒ
+Risk it all.	ɹˈɪsk ɪt ˈɔːl
+Risk of being deported.	ɹˈɪsk ɒv bˌiːɪŋ dɪpˈɔːtɪd
+Risk your life.	ɹˈɪsk jɔː lˈaɪf
+River basin.	ɹˈɪvɐ bˈeɪsən
+Rock hard bread.	ɹˈɒk hˈɑːd bɹˈɛd
+Rock hard muscles.	ɹˈɒk hˈɑːd mˈʌsəlz
+Roll down the window.	ɹˈəʊl dˌaʊn ðə wˈɪndəʊ
+Roll-on deodorant.	ɹˈəʊlˌɒn diːˈəʊdəɹənt
+Rolling out next week.	ɹˈəʊlɪŋ ˈaʊt nˈɛkst wˈiːk
+Rookie mistake.	ɹˈʊkɪ mɪstˈeɪk
+Root for the team.	ɹˈuːt fəðə tˈiːm
+Rotate horizontally.	ɹəʊtˈeɪt hˌɒɹɪzˈɒntəlɪ
+Rubber tires.	ɹˈʌbɐ tˈaɪəz
+Rubik's cube.	ɹˈuːbɪks kjˈuːb
+Rude remarks.	ɹˈuːd ɹɪmˈɑːks
+Ruin the day.	ɹˈuːɪn ðə dˈeɪ
+Rule of thumb.	ɹˈuːl ɒv θˈʌm
+Run errands.	ɹˈʌn ˈɛɹəndz
+Run out of stamina.	ɹˈʌn ˌaʊtəv stˈæmɪnɐ
+Run the dehumidifier.	ɹˈʌn ðə dˌiːhjˈuːmɪdˌɪfaɪə
+Run two tasks in parallel.	ɹˈʌn tˈuː tˈɑːsks ɪn pˈæɹəlˌɛl
+Running behind today.	ɹˈʌnɪŋ bɪhˌaɪnd tədˈeɪ
+Rural area.	ɹˈɔːɹəl ˈeəɹiə
+Rural life.	ɹˈɔːɹəl lˈaɪf
+Sail across the sea.	sˈeɪl əkɹˌɒs ðə sˈiː
+Sales department.	sˈeɪlz dɪpˈɑːtmənt
+Sales tripled.	sˈeɪlz tɹˈɪpəld
+Same as before.	sˈeɪm æz bɪfˈɔː
+Same here.	sˈeɪm hˈiə
+Same place as usual?	sˈeɪm plˈeɪs æz jˈuːʒuːəl
+Saute in butter.	sˈɔːteɪ ɪn bˈʌtɐ
+Saute the onions.	sˈɔːteɪ ðɪ ˈʌniənz
+Save me a seat.	sˈeɪv mˌiː ɐ sˈiːt
+Save some for me.	sˈeɪv sˌʌm fɔː mˌiː
+Save the earth.	sˈeɪv ðɪ ˈɜːθ
+Save the file.	sˈeɪv ðə fˈaɪl
+Save the receipt.	sˈeɪv ðə ɹɪsˈiːt
+Save up for a rainy day.	sˈeɪv ˌʌp fəɹɐ ɹˈeɪnɪ dˈeɪ
+Save you the trouble.	sˈeɪv juː ðə tɹˈʌbəl
+Savor every bite.	sˈeɪvɐɹ ˈɛvɹɪ bˈaɪt
+Savor the moment.	sˈeɪvɐ ðə mˈəʊmənt
+Savory dishes.	sˈeɪvəɹɪ dˈɪʃɪz
+Say hello to your mom.	sˈeɪ həlˈəʊ tə jɔː mˈɒm
+Saying yes was a no-brainer.	sˈeɪɪŋ jˈɛs wʌzɐ nˈəʊbɹˈeɪnɐ
+Says who?	sˈɛz hˈuː
+Scale up the production.	skˈeɪl ˌʌp ðə pɹədˈʌkʃən
+Scan the document.	skˈæn ðə dˈɒkjuːmənt
+Scare the kids.	skˈeə ðə kˈɪdz
+Schedule a meeting.	ʃˈɛdjuːl ɐ mˈiːtɪŋ
+Scientific method.	saɪəntˈɪfɪk mˈɛθəd
+Score a goal.	skˈɔːɹ ɐ ɡˈəʊl
+Score a touchdown.	skˈɔːɹ ɐ tˈʌtʃdaʊn
+Score against the rivals.	skˈɔːɹ ɐɡˈɛnst ðə ɹˈaɪvəlz
+Scored in the first half.	skˈɔːd ɪnðə fˈɜːst hˈɑːf
+Scored tickets!	skˈɔːd tˈɪkɪts
+Scrap together a meal.	skɹˈæp təɡˌɛðɐɹ ɐ mˈiːl
+Scroll vertically.	skɹˈəʊl vˈɜːtɪklɪ
+Search for a job.	sˈɜːtʃ fəɹɐ dʒˈɒb
+Search for answers.	sˈɜːtʃ fɔːɹ ˈɑːnsəz
+Seats are first come first served basis.	sˈiːts ɑː fˈɜːst kˈʌm fˈɜːst sˈɜːvd bˈeɪsɪs
+Second to none in quality.	sˈɛkənd tə nˈɒn ɪn kwˈɒlɪtɪ
+Section 5.	sˈɛkʃən fˈaɪv
+Secure funding.	sɪkjˈɔː fˈʌndɪŋ
+Secure the lock.	sɪkjˈɔː ðə lˈɒk
+Security footage.	sɪkjˈɔːɹɪtɪ fˈʊtɪdʒ
+See you in a bit.	sˈiː juː ɪn ɐ bˈɪt
+See you later!	sˈiː juː lˈeɪtɐ
+See you later, alligator.	sˈiː juː lˈeɪtɐ ˈælɪɡˌeɪtɐ
+See you later.	sˈiː juː lˈeɪtɐ
+Seems he forgot.	sˈiːmz hiː fəɡˈɒt
+Select an option.	sɪlˈɛkt ɐn ˈɒpʃən
+Selected for the team.	sɪlˈɛktɪd fəðə tˈiːm
+Self report your symptoms.	sˈɛlf ɹɪpˈɔːt jɔː sˈɪmptəmz
+Self-discipline is key.	sˈɛlfdˈɪsɪplˌɪn ɪz kˈiː
+Send a text message.	sˈɛnd ɐ tˈɛkst mˈɛsɪdʒ
+Send him a gift.	sˈɛnd hˌɪm ɐ ɡˈɪft
+Send it ASAP.	sˈɛnd ɪt ˌeɪˌɛsˌeɪpˈiː
+Send it right away.	sˈɛnd ɪt ɹˈaɪt ɐwˈeɪ
+Send me the link.	sˈɛnd mˌiː ðə lˈɪŋk
+Send the form together with the fee.	sˈɛnd ðə fˈɔːm təɡˌɛðɐ wɪððə fˈiː
+Send your location.	sˈɛnd jɔː ləʊkˈeɪʃən
+Send your resume.	sˈɛnd jɔː ɹɪzjˈuːm
+Sensitive skin.	sˈɛnsɪtˌɪv skˈɪn
+Sensors the temperature.	sˈɛnsəz ðə tˈɛmpɹɪtʃɐ
+Serious consequences.	sˈiəɹɪəs kˈɒnsɪkwənsɪz
+Seriously, get a life.	sˈiəɹɪəslɪ ɡɛt ɐ lˈaɪf
+Serve at room temperature.	sˈɜːv æt ɹˈuːm tˈɛmpɹɪtʃɐ
+Serve dinner.	sˈɜːv dˈɪnɐ
+Service charge is 10%.	sˈɜːvɪs tʃˈɑːdʒ ɪz tˈɛn pəsˈɛnt
+Set a benchmark.	sˈɛt ɐ bˈɛntʃmɑːk
+Set a goal.	sˈɛt ɐ ɡˈəʊl
+Set a reminder.	sˈɛt ɐ ɹɪmˈaɪndɐ
+Set aside some time.	sˈɛt ɐsˈaɪd sˌʌm tˈaɪm
+Set boundaries.	sˈɛt bˈaʊndəɹɪz
+Set sail.	sˈɛt sˈeɪl
+Set the table.	sˈɛt ðə tˈeɪbəl
+Set up a firewall.	sˈɛt ˌʌp ɐ fˈaɪəwɔːl
+Set your priorities.	sˈɛt jɔː pɹaɪˈɒɹɪtɪz
+Shading from the sun.	ʃˈeɪdɪŋ fɹʌmðə sˈʌn
+Shadow of doubt.	ʃˈædəʊ ɒv dˈaʊt
+Shake hands.	ʃˈeɪk hˈændz
+Shake the bottle.	ʃˈeɪk ðə bˈɒtəl
+Shaky hands.	ʃˈeɪkɪ hˈændz
+Shall I bring more?	ʃˌæl aɪ bɹˈɪŋ mˈɔː
+Shall I open it?	ʃˌæl aɪ ˈəʊpən ɪt
+Shall we go?	ʃˌæl wiː ɡˈəʊ
+Shall we, then?	ʃˈæl wiː ðˈɛn
+Share the link.	ʃˈeə ðə lˈɪŋk
+She aced the interview.	ʃiː ˈeɪst ðɪ ˈɪntəvjˌuː
+She achieved her goal.	ʃiː ɐtʃˈiːvd hɜː ɡˈəʊl
+She advised me to apply.	ʃiː ɐdvˈaɪzd mˌiː tʊ ɐplˈaɪ
+She agreed enthusiastically.	ʃiː ɐɡɹˈiːd ɪnθjˌuːzɪˈæstɪklɪ
+She agrees with me.	ʃiː ɐɡɹˈiːz wɪð mˌiː
+She always goes the extra mile.	ʃiː ˈɔːlweɪz ɡəʊz ðɪ ˈɛkstɹɐ mˈaɪl
+She always harps on about money.	ʃiː ˈɔːlweɪz hˈɑːps ˌɒn ɐbˌaʊt mˈʌnɪ
+She bailed on me.	ʃiː bˈeɪld ˈɒn mˌiː
+She beat down the price.	ʃiː bˈiːt dˌaʊn ðə pɹˈaɪs
+She blamed her phone.	ʃiː blˈeɪmd hɜː fˈəʊn
+She bottles up her feelings.	ʃiː bˈɒtəlz ˌʌp hɜː fˈiːlɪŋz
+She brushed me off.	ʃiː bɹˈʌʃt mˌiː ˈɒf
+She called him out on it.	ʃiː kˈɔːld hˌɪm ˈaʊt ˈɒn ɪt
+She called me out of the blue.	ʃiː kˈɔːld mˌiː ˌaʊtəv ðə blˈuː
+She came across as friendly.	ʃiː kˈeɪm əkɹˌɒs æz fɹˈɛndlɪ
+She came around after fainting.	ʃiː kˈeɪm ɐɹˈaʊnd ˈɑːftɐ fˈeɪntɪŋ
+She came to realize her mistake.	ʃiː kˈeɪm tə ɹˈiəlaɪz hɜː mɪstˈeɪk
+She came up with a great idea.	ʃiː kˈeɪm ˌʌp wɪð ɐ ɡɹˈeɪt aɪdˈiə
+She carried it through.	ʃiː kˈæɹɪd ɪt θɹˈuː
+She caught on quickly.	ʃiː kˈɔːt ˌɒn kwˈɪklɪ
+She chimed in with a joke.	ʃiː tʃˈaɪmd ɪn wɪð ɐ dʒˈəʊk
+She complained about the food.	ʃiː kəmplˈeɪnd ɐbˌaʊt ðə fˈuːd
+She confronted her boss.	ʃiː kənfɹˈʌntɪd hɜː bˈɒs
+She coughed loudly.	ʃiː kˈɒft lˈaʊdlɪ
+She cried over the loss.	ʃiː kɹˈaɪd ˌəʊvɐ ðə lˈɒs
+She decided to stay.	ʃiː dɪsˈaɪdɪd tə stˈeɪ
+She declined politely.	ʃiː dɪklˈaɪnd pəlˈaɪtlɪ
+She defriended me.	ʃiː dɪfɹˈɛndɪd mˌiː
+She determined to leave.	ʃiː dɪtˈɜːmɪnd tə lˈiːv
+She didn't reply.	ʃiː dˈɪdnt ɹɪplˈaɪ
+She died at peace.	ʃiː dˈaɪd æt pˈiːs
+She dodged the question.	ʃiː dˈɒdʒd ðə kwˈɛstʃən
+She dolled up for the party.	ʃiː dˈɒld ˌʌp fəðə pˈɑːtɪ
+She dove into the book.	ʃiː dˈʌv ˌɪntʊ ðə bˈʊk
+She dropped a hint.	ʃiː dɹˈɒpt ɐ hˈɪnt
+She dropped out of the race.	ʃiː dɹˈɒpt ˌaʊtəv ðə ɹˈeɪs
+She dumped him.	ʃiː dˈʌmpt hˌɪm
+She emphasized the deadline.	ʃiː ˈɛmfɐsˌaɪzd ðə dˈɛdlaɪn
+She entertained the kids.	ʃiː ˌɛntətˈeɪnd ðə kˈɪdz
+She eyed the cake.	ʃiː ˈaɪd ðə kˈeɪk
+She failed to mention it.	ʃiː fˈeɪld tə mˈɛnʃən ɪt
+She fell back on her savings.	ʃiː fˈɛl bˈæk ˌɒn hɜː sˈeɪvɪŋz
+She fell for a fake account.	ʃiː fˈɛl fəɹɐ fˈeɪk ɐkˈaʊnt
+She felt stalked.	ʃiː fˈɛlt stˈɔːkt
+She fiddled with her ring.	ʃiː fˈɪdəld wɪð hɜː ɹˈɪŋ
+She found closure.	ʃiː fˈaʊnd klˈəʊʒɐ
+She freaked out when she saw it.	ʃiː fɹˈiːkt ˈaʊt wɛn ʃiː sˈɔːɹ ɪt
+She fussed over the kids.	ʃiː fˈʌst ˌəʊvɐ ðə kˈɪdz
+She giggled.	ʃiː ɡˈɪɡəld
+She got offended easily.	ʃiː ɡɒt əfˈɛndɪd ˈiːzɪlɪ
+She got promoted.	ʃiː ɡɒt pɹəmˈəʊtɪd
+She had a meltdown.	ʃiː hæd ɐ mˈɛltdaʊn
+She had second thoughts about it.	ʃiː hæd sˈɛkənd θˈɔːts ɐbˈaʊt ɪt
+She has a genuine smile.	ʃiː hɐz ɐ dʒˈɛnjuːɪn smˈaɪl
+She has a knack for it.	ʃiː hɐz ɐ nˈæk fɔːɹ ɪt
+She has a soft spot for him.	ʃiː hɐz ɐ sˈɒft spˈɒt fɔː hˌɪm
+She has a warm heart.	ʃiː hɐz ɐ wˈɔːm hˈɑːt
+She has ambition.	ʃiː hɐz æmbˈɪʃən
+She has an attitude today.	ʃiː hɐz ɐn ˈætɪtjˌuːd tədˈeɪ
+She has mood swings.	ʃiː hɐz mˈuːd swˈɪŋz
+She has the ability to lead.	ʃiː hɐz ðɪ ɐbˈɪlətɪ tə lˈiːd
+She helped me move.	ʃiː hˈɛlpt mˌiː mˈuːv
+She interprets Japanese.	ʃiː ɪntˈɜːpɹɪts dʒˌæpənˈiːz
+She is already seemingly winning.	ʃiː ɪz ɔːlɹˌɛdɪ sˈiːmɪŋlɪ wˈɪnɪŋ
+She is mixed-race.	ʃiː ɪz mˈɪkstɹˈeɪs
+She is undoubtedly talented.	ʃiː ɪz ʌndˈaʊtɪdlɪ tˈæləntɪd
+She just disappeared.	ʃiː dʒˈʌst dˌɪsɐpˈiəd
+She just dropped in.	ʃiː dʒˈʌst dɹˈɒpt ˈɪn
+She keeps tabs on the team.	ʃiː kˈiːps tˈæbz ɒnðə tˈiːm
+She lectured me for an hour.	ʃiː lˈɛktʃəd mˌiː fəɹən ˈaʊɐ
+She left a while ago.	ʃiː lˈɛft ɐ wˈaɪl ɐɡˈəʊ
+She left an impression on me.	ʃiː lˈɛft ɐn ɪmpɹˈɛʃən ˈɒn mˌiː
+She let it slip.	ʃiː lˈɛt ɪt slˈɪp
+She looked freaked out.	ʃiː lˈʊkt fɹˈiːkt ˈaʊt
+She looks after her mom.	ʃiː lˈʊks ˈɑːftɐ hɜː mˈɒm
+She looks beat.	ʃiː lˈʊks bˈiːt
+She looks down on us.	ʃiː lˈʊks dˌaʊn ˈɒn ˌʌs
+She loves it, so much so that she cries.	ʃiː lˈʌvz ɪt sˈəʊ mˌʌtʃ sˌəʊ ðæt ʃiː kɹˈaɪz
+She nags about everything.	ʃiː nˈæɡz ɐbˌaʊt ˈɛvɹɪθˌɪŋ
+She nailed the speech.	ʃiː nˈeɪld ðə spˈiːtʃ
+She offered to help.	ʃiː ˈɒfəd tə hˈɛlp
+She opted for the larger size.	ʃiː ˈɒptɪd fəðə lˈɑːdʒɐ sˈaɪz
+She panicked.	ʃiː pˈænɪkt
+She passed away peacefully.	ʃiː pˈɑːst ɐwˈeɪ pˈiːsfəlɪ
+She paved the way.	ʃiː pˈeɪvd ðə wˈeɪ
+She peeked at the gift.	ʃiː pˈiːkt æt ðə ɡˈɪft
+She pursued her dream.	ʃiː pəsjˈuːd hɜː dɹˈiːm
+She puts up with a lot.	ʃiː pˌʊts ˌʌp wɪð ɐ lˈɒt
+She reacted calmly.	ʃiː ɹɪˈæktɪd kˈɑːmlɪ
+She really stands out.	ʃiː ɹˈiəlɪ stˈændz ˈaʊt
+She referred to the article.	ʃiː ɹɪfˈɜːd tə ðɪ ˈɑːtɪkəl
+She refused to listen.	ʃiː ɹɪfjˈuːzd tə lˈɪsən
+She relies on her car.	ʃiː ɹɪlˈaɪz ˌɒn hɜː kˈɑː
+She represents our team.	ʃiː ɹˌɛpɹɪzˈɛnts ˌaʊɐ tˈiːm
+She resembles her mother.	ʃiː ɹɪzˈɛmbəlz hɜː mˈʌðɐ
+She roped me into helping.	ʃiː ɹˈəʊpt mˌiː ˌɪntʊ hˈɛlpɪŋ
+She seems happy.	ʃiː sˈiːmz hˈæpɪ
+She showed up late.	ʃiː ʃˈəʊd ˌʌp lˈeɪt
+She shrugged it off.	ʃiː ʃɹˈʌɡd ɪt ˈɒf
+She sided with me.	ʃiː sˈaɪdɪd wɪð mˌiː
+She sighed deeply.	ʃiː sˈaɪd dˈiːplɪ
+She sings as well as dances.	ʃiː sˈɪŋz æz wˈɛl æz dˈɑːnsɪz
+She slipped a note in.	ʃiː slˈɪpt ɐ nˈəʊt ˈɪn
+She smiled kindly.	ʃiː smˈaɪld kˈaɪndlɪ
+She sobbed quietly.	ʃiː sˈɒbd kwˈaɪətlɪ
+She spoiled the beans.	ʃiː spˈɔɪld ðə bˈiːnz
+She stammered an answer.	ʃiː stˈæməd ɐn ˈɑːnsɐ
+She stared at the screen.	ʃiː stˈeəd æt ðə skɹˈiːn
+She stepped out for lunch.	ʃiː stˈɛpt ˈaʊt fɔː lˈʌntʃ
+She takes after her mom.	ʃiː tˈeɪks ˈɑːftɐ hɜː mˈɒm
+She takes care of her brother.	ʃiː tˈeɪks kˈeəɹ ɒv hɜː bɹˈʌðɐ
+She takes kindness for granted.	ʃiː tˈeɪks kˈaɪndnəs fɔː ɡɹˈɑːntɪd
+She tends to overthink.	ʃiː tˈɛndz tʊ ˌəʊvəθˈɪŋk
+She took on the project.	ʃiː tˈʊk ɒnðə pɹˈɒdʒɛkt
+She took over the project.	ʃiː tˈʊk ˌəʊvɐ ðə pɹˈɒdʒɛkt
+She took the opportunity.	ʃiː tˈʊk ðɪ ɒpətjˈuːnɪtɪ
+She turned out to be a dark horse.	ʃiː tˈɜːnd ˈaʊt təbɪ ɐ dˈɑːk hˈɔːs
+She turned up late.	ʃiː tˈɜːnd ˌʌp lˈeɪt
+She urged me to apply.	ʃiː ˈɜːdʒd mˌiː tʊ ɐplˈaɪ
+She vented to me.	ʃiː vˈɛntɪd tə mˌiː
+She wandered off.	ʃiː wˈɒndəd ˈɒf
+She was brought up in Tokyo.	ʃiː wɒz bɹˈɔːt ˌʌp ɪn tˈəʊkɪˌəʊ
+She was furious.	ʃiː wɒz fjˈɔːɹiəs
+She was in tears.	ʃiː wɒz ɪn tˈiəz
+She was like, whatever.	ʃiː wɒz lˈaɪk wɒtˈɛvɐ
+She was swindled.	ʃiː wɒz swˈɪndəld
+She was victimized at work.	ʃiː wɒz vˈɪktɪmˌaɪzd æt wˈɜːk
+She waved at me.	ʃiː wˈeɪvd æt mˌiː
+She wears glasses.	ʃiː wˈeəz ɡlˈɑːsɪz
+She went the whole nine yards.	ʃiː wɛnt ðə hˈəʊl nˈaɪn jˈɑːdz
+She whispered something.	ʃiː wˈɪspəd sˈʌmθɪŋ
+She works as a marketing consultant.	ʃiː wˈɜːks æz ɐ mˈɑːkɪtɪŋ kənsˈʌltənt
+She works hard to get ahead.	ʃiː wˈɜːks hˈɑːd tə ɡɛt ɐhˈɛd
+She yelled across the room.	ʃiː jˈɛld əkɹˌɒs ðə ɹˈuːm
+She'd say yes in a heartbeat.	ʃiːd sˈeɪ jˈɛs ɪn ɐ hˈɑːtbiːt
+She'll grow into the dress.	ʃiːl ɡɹˈəʊ ˌɪntʊ ðə dɹˈɛs
+She'll win, no doubt.	ʃiːl wˈɪn nˈəʊ dˈaʊt
+She's a curious kid.	ʃiːz ɐ kjˈɔːɹiəs kˈɪd
+She's a doctor or something.	ʃiːz ɐ dˈɒktɐ ɔː sˈʌmθɪŋ
+She's a fussy eater.	ʃiːz ɐ fˈʌsɪ ˈiːtɐ
+She's a homebody.	ʃiːz ɐ hˈəʊmbɒdɪ
+She's a noble person.	ʃiːz ɐ nˈəʊbəl pˈɜːsən
+She's a real gem.	ʃiːz ɐ ɹˈiəl dʒˈɛm
+She's a total drama queen.	ʃiːz ɐ tˈəʊtəl dɹˈɑːmɐ kwˈiːn
+She's a tough cookie.	ʃiːz ɐ tˈʌf kˈʊkɪ
+She's always cheerful.	ʃiːz ˈɔːlweɪz tʃˈiəfəl
+She's an asset to the team.	ʃiːz ɐn ˈæsɛt tə ðə tˈiːm
+She's an authority on art.	ʃiːz ɐn ɐθˈɒɹɪtɪ ˌɒn ˈɑːt
+She's an honest person.	ʃiːz ɐn ˈɒnɪst pˈɜːsən
+She's an iconic figure.	ʃiːz ɐn aɪkˈɒnɪk fˈɪɡɐ
+She's brilliant.	ʃiːz bɹˈɪliənt
+She's busy cooking.	ʃiːz bˈɪzɪ kˈʊkɪŋ
+She's cautious by nature.	ʃiːz kˈɔːʃəs baɪ nˈeɪtʃɐ
+She's enthusiastic about it.	ʃiːz ɪnθjˌuːzɪˈæstɪk ɐbˈaʊt ɪt
+She's fed up with him.	ʃiːz fˈɛd ˈʌp wɪð hˌɪm
+She's flirting with him.	ʃiːz flˈɜːtɪŋ wɪð hˌɪm
+She's giving me the silent treatment.	ʃiːz ɡˈɪvɪŋ mˌiː ðə sˈaɪlənt tɹˈiːtmənt
+She's gone.	ʃiːz ɡˈɒn
+She's hard on her kids.	ʃiːz hˈɑːd ˌɒn hɜː kˈɪdz
+She's into baking.	ʃiːz ˌɪntʊ bˈeɪkɪŋ
+She's late, as usual.	ʃiːz lˈeɪt æz jˈuːʒuːəl
+She's looking forward to the trip.	ʃiːz lˈʊkɪŋ fˈɔːwəd tə ðə tɹˈɪp
+She's more than capable of handling this project.	ʃiːz mˈɔː ðɐn kˈeɪpəbəl ɒv hˈændlɪŋ ðɪs pɹˈɒdʒɛkt
+She's my BFF.	ʃiːz maɪ bˌiːˌɛfˈɛf
+She's my colleague.	ʃiːz maɪ kˈɒliːɡ
+She's my frenemy.	ʃiːz maɪ fɹˈɛnəmɪ
+She's my soulmate.	ʃiːz maɪ sˈəʊlmeɪt
+She's on medication.	ʃiːz ˌɒn mˌɛdɪkˈeɪʃən
+She's pumped up.	ʃiːz pˈʌmpt ˈʌp
+She's quite a piece of work.	ʃiːz kwˈaɪt ɐ pˈiːs ɒv wˈɜːk
+She's really humble.	ʃiːz ɹˈiəlɪ hˈʌmbəl
+She's really outgoing.	ʃiːz ɹˈiəlɪ aʊtɡˈəʊɪŋ
+She's single.	ʃiːz sˈɪŋɡəl
+She's so confident.	ʃiːz sˌəʊ kˈɒnfɪdənt
+She's so creative.	ʃiːz sˌəʊ kɹiːˈeɪtɪv
+She's so easygoing.	ʃiːz sˌəʊ ˈiːzɪɡˌəʊɪŋ
+She's so grounded.	ʃiːz sˌəʊ ɡɹˈaʊndɪd
+She's so mature for her age.	ʃiːz sˌəʊ mətʃˈɔː fɔː hɜːɹ ˈeɪdʒ
+She's so moody today.	ʃiːz sˌəʊ mˈuːdɪ tədˈeɪ
+She's so resilient.	ʃiːz sˌəʊ ɹɪsˈɪliənt
+She's so savage!	ʃiːz sˌəʊ sˈævɪdʒ
+She's so stuck up.	ʃiːz sˌəʊ stˈʌk ˈʌp
+She's strong at negotiation.	ʃiːz stɹˈɒŋ æt nɪɡˌəʊʃɪˈeɪʃən
+She's such a chatterbox.	ʃiːz sˈʌtʃ ɐ tʃˈætəbˌɒks
+She's such a flake.	ʃiːz sˈʌtʃ ɐ flˈeɪk
+She's super bossy.	ʃiːz sˈuːpɐ bˈɒsɪ
+She's super stressed out.	ʃiːz sˈuːpɐ stɹˈɛst ˈaʊt
+She's the apple of my eye.	ʃiːz ðɪ ˈæpəl ɒv maɪ ˈaɪ
+She's the best, period.	ʃiːz ðə bˈɛst pˈiəɹɪəd
+She's unwell.	ʃiːz ʌnwˈɛl
+She's very demanding.	ʃiːz vˈɛɹɪ dɪmˈɑːndɪŋ
+Shift focus.	ʃˈɪft fˈəʊkəs
+Shift gears.	ʃˈɪft ɡˈiəz
+Shift the boxes.	ʃˈɪft ðə bˈɒksɪz
+Shift the focus.	ʃˈɪft ðə fˈəʊkəs
+Shine a spotlight on the issue.	ʃˈaɪn ɐ spˈɒtlaɪt ɒnðɪ ˈɪʃuː
+Shiny hair.	ʃˈaɪnɪ hˈeə
+Shiny new car.	ʃˈaɪnɪ njˈuː kˈɑː
+Ship it Friday.	ʃˈɪp ɪt fɹˈaɪdeɪ
+Shoot!	ʃˈuːt
+Shoot, I forgot.	ʃˈuːt aɪ fəɡˈɒt
+Short bio.	ʃˈɔːt bˈaɪəʊ
+Should you have any queries, contact us.	ʃˌʊd juː hæv ˌɛnɪ kwˈiəɹɪz kˈɒntækt ˌʌs
+Should you have any queries, please ask.	ʃˌʊd juː hæv ˌɛnɪ kwˈiəɹɪz plˈiːz ˈɑːsk
+Shoulder pain.	ʃˈəʊldɐ pˈeɪn
+Shout out if you need help.	ʃˈaʊt ˈaʊt ɪf juː nˈiːd hˈɛlp
+Shout out to my team.	ʃˈaʊt ˈaʊt tə maɪ tˈiːm
+Shoutout to my mom!	ʃˈaʊtaʊt tə maɪ mˈɒm
+Show compassion.	ʃˈəʊ kəmpˈæʃən
+Show humanity.	ʃˈəʊ hjuːmˈænɪtɪ
+Show nothing but respect to elders.	ʃˈəʊ nˈʌθɪŋ bˌʌt ɹɪspˈɛkt tʊ ˈɛldəz
+Show some affection.	ʃˈəʊ sˌʌm ɐfˈɛkʃən
+Show your Japanese spirit.	ʃˈəʊ jɔː dʒˌæpənˈiːz spˈɪɹɪt
+Show your fighting spirit.	ʃˈəʊ jɔː fˈaɪtɪŋ spˈɪɹɪt
+Show your talent.	ʃˈəʊ jɔː tˈælənt
+Showtime is at 7.	ʃˈəʊtaɪm ɪz æt sˈɛvən
+Shrug your shoulders.	ʃɹˈʌɡ jɔː ʃˈəʊldəz
+Shrug. Whatever.	ʃɹˈʌɡ wɒtˈɛvɐ
+Shut it down.	ʃˈʌt ɪt dˈaʊn
+Shut up!	ʃˈʌt ˈʌp
+Sick moves.	sˈɪk mˈuːvz
+Sick of waiting.	sˈɪk ɒv wˈeɪtɪŋ
+Side effect.	sˈaɪd ɪfˈɛkt
+Sign right here.	sˈaɪn ɹˈaɪt hˈiə
+Sign the agreement.	sˈaɪn ðɪ ɐɡɹˈiːmənt
+Sign up for free.	sˈaɪn ˌʌp fɔː fɹˈiː
+Silence is golden.	sˈaɪləns ɪz ɡˈəʊldən
+Simply amazing.	sˈɪmplɪ ɐmˈeɪzɪŋ
+Simply put, ~	sˈɪmplɪ pˈʊt tˈɪldɐ
+Simulate a real situation.	sˈɪmjʊlˌeɪt ɐ ɹˈiəl sˌɪtʃuːˈeɪʃən
+Simultaneous launch.	sˌɪməltˈeɪniəs lˈɔːntʃ
+Simultaneous translation.	sˌɪməltˈeɪniəs tɹænslˈeɪʃən
+Since you've got the chance, ask him.	sˈɪns juːv ɡɒt ðə tʃˈɑːns ˈɑːsk hˌɪm
+Since you've got the chance, try it.	sˈɪns juːv ɡɒt ðə tʃˈɑːns tɹˈaɪ ɪt
+Single use plastics.	sˈɪŋɡəl jˈuːs plˈɑːstɪks
+Sit in on the class.	sˈɪt ɪn ɒnðə klˈɑːs
+Sit in the backseat.	sˈɪt ɪnðə bˈæksiːt
+Sit in the shade.	sˈɪt ɪnðə ʃˈeɪd
+Sit on the cushion.	sˈɪt ɒnðə kˈʊʃən
+Sit on the upper deck.	sˈɪt ɒnðɪ ˌʌpɐ dˈɛk
+Sit tight, help is coming.	sˈɪt tˈaɪt hˈɛlp ɪz kˈʌmɪŋ
+Sitting gave him a hunchback.	sˈɪtɪŋ ɡˈeɪv hˌɪm ɐ hˈʌntʃbæk
+Size up the competition.	sˈaɪz ˌʌp ðə kˌɒmpətˈɪʃən
+Skeleton in the closet.	skˈɛlɪtən ɪnðə klˈɒzɪt
+Sketchy and shady.	skˈɛtʃɪ ænd ʃˈeɪdɪ
+Skin sensitivity.	skˈɪn sˌɛnsɪtˈɪvɪtɪ
+Skip a step.	skˈɪp ɐ stˈɛp
+Skip class.	skˈɪp klˈɑːs
+Skull fracture.	skˈʌl fɹˈæktʃɐ
+Slaves were freed.	slˈeɪvz wɜː fɹˈiːd
+Slay, queen!	slˈeɪ kwˈiːn
+Sleep is crucial for health.	slˈiːp ɪz kɹˈuːʃəl fɔː hˈɛlθ
+Sleet fell all day.	slˈiːt fˈɛl ˈɔːl dˈeɪ
+Slept like a log after the hike.	slˈɛpt lˈaɪk ɐ lˈɒɡ ˈɑːftɐ ðə hˈaɪk
+Slightly disappointing.	slˈaɪtlɪ dˌɪsɐpˈɔɪntɪŋ
+Slightly off.	slˈaɪtlɪ ˈɒf
+Slippery as an eel.	slˈɪpəɹɪ æz ɐn ˈiːl
+Slot in a meeting.	slˈɒt ɪn ɐ mˈiːtɪŋ
+Slot it in here.	slˈɒt ɪt ɪn hˈiə
+Slow down, you're going too fast.	slˈəʊ dˈaʊn jɔː ɡˌəʊɪŋ tˈuː fˈɑːst
+Small modular reactors.	smˈɔːl mˈɒdjʊlɐ ɹɪˈæktəz
+Small snag in the plan.	smˈɔːl snˈæɡ ɪnðə plˈæn
+Smash the window in.	smˈæʃ ðə wˈɪndəʊ ˈɪn
+Smoke a pipe.	smˈəʊk ɐ pˈaɪp
+Smoking is prohibited here.	smˈəʊkɪŋ ɪz pɹəhˈɪbɪtɪd hˈiə
+Smooth transition.	smˈuːð tɹænsˈɪʃən
+Snacks, drinks, and stuff.	snˈæks dɹˈɪŋks ænd stˈʌf
+Snow covering the ground.	snˈəʊ kˈʌvəɹɪŋ ðə ɡɹˈaʊnd
+So I was at the cafe.	sˌəʊ aɪ wɒz æt ðə kˈæfeɪ
+So I was walking and...	sˌəʊ aɪ wɒz wˈɔːkɪŋ ænd
+So annoying! — I know, right.	sˌəʊ ɐnˈɔɪɪŋ aɪ nˈəʊ ɹˈaɪt
+So full I can't move.	sˌəʊ fˈʊl aɪ kˈɑːnt mˈuːv
+So happy for you.	sˌəʊ hˈæpɪ fɔː juː
+So hot that we melted.	sˌəʊ hˈɒt ðæt wiː mˈɛltɪd
+So much for being on time.	sˈəʊ mˌʌtʃ fɔː bˌiːɪŋ ˌɒn tˈaɪm
+So much for our plan.	sˈəʊ mˌʌtʃ fɔːɹ ˌaʊɐ plˈæn
+So much hype around it.	sˈəʊ mˌʌtʃ hˈaɪp ɐɹˈaʊnd ɪt
+So tired that I slept.	sˌəʊ tˈaɪəd ðæt aɪ slˈɛpt
+So tired.	sˌəʊ tˈaɪəd
+So what if I do?	sˌəʊ wɒt ɪf aɪ dˈuː
+So what?	sˌəʊ wˈɒt
+So, what have you found?	sˈəʊ wˌɒt hæv juː fˈaʊnd
+Social anxiety.	sˈəʊʃəl æŋzˈaɪətɪ
+Social consciousness.	sˈəʊʃəl kˈɒnʃəsnəs
+Social event.	sˈəʊʃəl ɪvˈɛnt
+Social media marketing works.	sˈəʊʃəl mˈiːdiːɐ mˈɑːkɪtɪŋ wˈɜːks
+Social media.	sˈəʊʃəl mˈiːdiːɐ
+Social phobia.	sˈəʊʃəl fˈəʊbɪɐ
+Social safety net.	sˈəʊʃəl sˈeɪftɪ nˈɛt
+Social status.	sˈəʊʃəl stˈeɪtəs
+Socialize with coworkers.	sˈəʊʃəlˌaɪz wɪð kˈəʊwɜːkəz
+Society as a whole.	səsˈaɪətɪ æz ɐ hˈəʊl
+Software engineering.	sˈɒftweəɹ ˌɛndʒɪnˈiəɹɪŋ
+Sold by the unit.	sˈəʊld baɪ ðə jˈuːnɪt
+Soldiers marching past.	sˈəʊldʒəz mˈɑːtʃɪŋ pˈɑːst
+Solid track record.	sˈɒlɪd tɹˈæk ɹˈɛkɔːd
+Solid work!	sˈɒlɪd wˈɜːk
+Some get fame for the wrong reasons.	sˌʌm ɡɛt fˈeɪm fəðə ɹˈɒŋ ɹˈiːzənz
+Some people see it as an honor.	sˌʌm pˈiːpəl sˈiː ɪt æz ɐn ˈɒnɐ
+Some people see it as rude.	sˌʌm pˈiːpəl sˈiː ɪt æz ɹˈuːd
+Some random guy.	sˌʌm ɹˈændəm ɡˈaɪ
+Someone nicked it.	sˈʌmwɒn nˈɪkt ɪt
+Someone's knocking.	sˈʌmwɒnz nˈɒkɪŋ
+Something I can live with.	sˈʌmθɪŋ aɪ kæn lˈɪv wɪð
+Something that shocked me happened.	sˈʌmθɪŋ ðæt ʃˈɒkt mˌiː hˈæpənd
+Something to fall back on.	sˈʌmθɪŋ tə fˈɔːl bˈæk ˈɒn
+Something went wrong.	sˈʌmθɪŋ wɛnt ɹˈɒŋ
+Something's fishy.	sˈʌmθɪŋz fˈɪʃɪ
+Sometimes setbacks are blessings in disguise.	sˈʌmtaɪmz sˈɛtbæks ɑː blˈɛsɪŋz ɪn dɪsɡˈaɪz
+Somewhat better.	sˈʌmwɒt bˈɛtɐ
+Somewhat surprised.	sˈʌmwɒt səpɹˈaɪzd
+Son of a bitch!	sˈʌn əvɐ bˈɪtʃ
+Song on repeat.	sˈɒŋ ˌɒn ɹɪpˈiːt
+Sooner or later, he'll quit.	sˈuːnɐɹ ɔː lˈeɪtɐ hiːl kwˈɪt
+Sophisticated taste.	səfˈɪstɪkˌeɪtɪd tˈeɪst
+Sophomore year.	sˈɒfəmˌɔː jˈiə
+Sorry to bother you for a sec.	sˈɒɹɪ tə bˈɒðɐ juː fəɹɐ sˈɛk
+Sorry to bother you.	sˈɒɹɪ tə bˈɒðɐ juː
+Sorry to hold you up.	sˈɒɹɪ tə hˈəʊld juː ˈʌp
+Sorry to interrupt.	sˈɒɹɪ tʊ ˌɪntəɹˈʌpt
+Sorry, I have something to do.	sˈɒɹɪ aɪ hæv sˈʌmθɪŋ tə dˈuː
+Sorry, I'm clumsy.	sˈɒɹɪ aɪm klˈʌmzɪ
+Sorry, bad joke.	sˈɒɹɪ bˈæd dʒˈəʊk
+Sorry, bumped into you.	sˈɒɹɪ bˈʌmpt ˌɪntʊ juː
+Sorry, gotta run.	sˈɒɹɪ ɡˈɒtɐ ɹˈʌn
+Sorry, have a conflict.	sˈɒɹɪ hæv ɐ kˈɒnflɪkt
+Sorry, it just slipped my mind.	sˈɒɹɪ ɪt dʒˈʌst slˈɪpt maɪ mˈaɪnd
+Sorry, it's out of stock.	sˈɒɹɪ ɪts ˌaʊtəv stˈɒk
+Sorry, where was I?	sˈɒɹɪ wˌeə wɒz ˈaɪ
+Sort of, yeah.	sˈɔːt ɒv jˈɛh
+Sort out the papers.	sˈɔːt ˈaʊt ðə pˈeɪpəz
+Sounds like a plan!	sˈaʊndz lˈaɪk ɐ plˈæn
+Sounds like a plan.	sˈaʊndz lˈaɪk ɐ plˈæn
+Sounds like fun.	sˈaʊndz lˈaɪk fˈʌn
+Sounds plausible.	sˈaʊndz plˈɔːzɪbəl
+Sounds too good to be true.	sˈaʊndz tˈuː ɡˈʊd təbɪ tɹˈuː
+Sparked my interest in art.	spˈɑːkt maɪ ˈɪntɹɛst ɪn ˈɑːt
+Speak of the devil!	spˈiːk ɒvðə dˈɛvəl
+Speak to the authority.	spˈiːk tə ðɪ ɐθˈɒɹɪtɪ
+Speak to the person in charge.	spˈiːk tə ðə pˈɜːsən ɪn tʃˈɑːdʒ
+Speaking of food, I'm hungry.	spˈiːkɪŋ ɒv fˈuːd aɪm hˈʌŋɡɹɪ
+Speaking of which, did you call?	spˈiːkɪŋ ɒvwˈɪtʃ dˈɪd juː kˈɔːl
+Speaking of which, did you eat?	spˈiːkɪŋ ɒvwˈɪtʃ dˈɪd juː ˈiːt
+Speaking of which, where's John?	spˈiːkɪŋ ɒvwˈɪtʃ wˌeəz dʒˈɒn
+Speaking of work, did you hear?	spˈiːkɪŋ ɒv wˈɜːk dˈɪd juː hˈiə
+Special circumstances apply.	spˈɛʃəl sˈɜːkəmstˌænsɪz ɐplˈaɪ
+Specially designed.	spˈɛʃəlɪ dɪzˈaɪnd
+Specifically designed for ~	spəsˈɪfɪklɪ dɪzˈaɪnd fɔː tˈɪldɐ
+Specifically, I mean ~	spəsˈɪfɪklɪ aɪ mˈiːn tˈɪldɐ
+Speed up, we're late.	spˈiːd ˈʌp wiə lˈeɪt
+Speedily resolved.	spˈiːdɪlɪ ɹɪzˈɒlvd
+Speeding causes accidents.	spˈiːdɪŋ kˈɔːzɪz ˈæksɪdənts
+Spend my day off relaxing.	spˈɛnd maɪ dˈeɪ ˈɒf ɹɪlˈæksɪŋ
+Spend time reading.	spˈɛnd tˈaɪm ɹˈiːdɪŋ
+Spent the afternoon studying.	spˈɛnt ðɪ ˌɑːftənˈuːn stˈʌdɪɪŋ
+Spill the tea.	spˈɪl ðə tˈiː
+Spiral out of control.	spˈaɪəɹəl ˌaʊtəv kəntɹˈəʊl
+Spit it out!	spˈɪt ɪt ˈaʊt
+Split the bill, OK?	splˈɪt ðə bˈɪl ˌəʊkˈeɪ
+Spoil the surprise.	spˈɔɪl ðə səpɹˈaɪz
+Spontaneous laughter.	spɒntˈeɪniəs lˈɑːftɐ
+Sports section.	spˈɔːts sˈɛkʃən
+Spot on!	spˈɒt ˈɒn
+Spray bottle.	spɹˈeɪ bˈɒtəl
+Spray pesticide.	spɹˈeɪ pˈɛstɪsˌaɪd
+Spray the plants.	spɹˈeɪ ðə plˈɑːnts
+Spreading propaganda.	spɹˈɛdɪŋ pɹˌɒpɐɡˈændɐ
+Spring cleaning the closet.	spɹˈɪŋ klˈiːnɪŋ ðə klˈɒzɪt
+Sprinkle salt into the dish.	spɹˈɪŋkəl sˈɒlt ˌɪntʊ ðə dˈɪʃ
+Sprinkle salt.	spɹˈɪŋkəl sˈɒlt
+Sprinkle sugar into coffee.	spɹˈɪŋkəl ʃˈʊɡɐɹ ˌɪntʊ kˈɒfɪ
+Squeeze into old jeans.	skwˈiːz ˌɪntʊ ˈəʊld dʒˈiːnz
+Squeeze into the lift.	skwˈiːz ˌɪntʊ ðə lˈɪft
+Squeeze the lemon.	skwˈiːz ðə lˈɛmən
+Squeeze through the crowd.	skwˈiːz θɹuː ðə kɹˈaʊd
+Squishy texture.	skwˈɪʃɪ tˈɛkstʃɐ
+Squishy toy.	skwˈɪʃɪ tˈɔɪ
+Stack of books.	stˈæk ɒv bˈʊks
+Stack up against ~	stˈæk ˌʌp ɐɡˈɛnst tˈɪldɐ
+Stacked vertically.	stˈækt vˈɜːtɪklɪ
+Staff are on site.	stˈɑːf ɑːɹ ˌɒn sˈaɪt
+Stagnant economy.	stˈæɡnənt ɪkˈɒnəmɪ
+Stagnant water.	stˈæɡnənt wˈɔːtɐ
+Stain removal.	stˈeɪn ɹɪmˈuːvəl
+Stamp out corruption.	stˈæmp ˈaʊt kəɹˈʌpʃən
+Stamp out the fire.	stˈæmp ˈaʊt ðə fˈaɪə
+Stamp the document.	stˈæmp ðə dˈɒkjuːmənt
+Stamp the letter.	stˈæmp ðə lˈɛtɐ
+Stand by for updates.	stˈænd baɪ fɔːɹ ˈʌpdeɪts
+Stand strong together.	stˈænd stɹˈɒŋ təɡˈɛðɐ
+Stars in the sky.	stˈɑːz ɪnðə skˈaɪ
+Start a new chapter.	stˈɑːt ɐ njˈuː tʃˈæptɐ
+Start a side hustle.	stˈɑːt ɐ sˈaɪd hˈʌsəl
+Start all over again.	stˈɑːt ˈɔːl ˌəʊvɐɹ ɐɡˈɛn
+Started college at the age of 20.	stˈɑːtɪd kˈɒlɪdʒ æt ðɪ ˈeɪdʒ ɒv twˈɛntɪ
+Starving — let's eat.	stˈɑːvɪŋ lˈɛts ˈiːt
+State your marital status.	stˈeɪt jɔː mˈæɹɪtəl stˈeɪtəs
+State your occupation.	stˈeɪt jɔːɹ ˌɒkjʊpˈeɪʃən
+Station guards at the door.	stˈeɪʃən ɡˈɑːdz æt ðə dˈɔː
+Status update.	stˈeɪtəs ˈʌpdeɪt
+Stave off boredom.	stˈeɪv ˈɒf bˈɔːdəm
+Stave off hunger.	stˈeɪv ˈɒf hˈʌŋɡɐ
+Stay fit.	stˈeɪ fˈɪt
+Stay healthy.	stˈeɪ hˈɛlθɪ
+Stay here for the time being.	stˈeɪ hˈiə fəðə tˈaɪm bˈiːɪŋ
+Stay humble.	stˈeɪ hˈʌmbəl
+Stay optimistic.	stˈeɪ ˌɒptɪmˈɪstɪk
+Stay overnight.	stˈeɪ ˌəʊvənˈaɪt
+Stay tuned for updates.	stˈeɪ tjˈuːnd fɔːɹ ˈʌpdeɪts
+Stay up late.	stˈeɪ ˌʌp lˈeɪt
+Stay within budget.	stˈeɪ wɪðˌɪn bˈʌdʒɪt
+Stayed up till 3am.	stˈeɪd ˌʌp tˈɪl θɹˈiː ˌeɪˈɛm
+Staying in my comfort zone.	stˈeɪɪŋ ɪn maɪ kˈʌmfət zˈəʊn
+Steak well done, please.	stˈeɪk wˈɛl dˈʌn plˈiːz
+Steal the show.	stˈiːl ðə ʃˈəʊ
+Step aside.	stˈɛp ɐsˈaɪd
+Step on the scale.	stˈɛp ɒnðə skˈeɪl
+Step out for a sec.	stˈɛp ˈaʊt fəɹɐ sˈɛk
+Step out of your comfort zone.	stˈɛp ˌaʊtəv jɔː kˈʌmfət zˈəʊn
+Step up to the penalty spot.	stˈɛp ˌʌp tə ðə pˈɛnəltɪ spˈɒt
+Stick out your tongue.	stˈɪk ˈaʊt jɔː tˈʌŋ
+Stick to the game plan.	stˈɪk tə ðə ɡˈeɪm plˈæn
+Stick to the plan.	stˈɪk tə ðə plˈæn
+Stick to the routine.	stˈɪk tə ðə ɹuːtˈiːn
+Stick to the rules.	stˈɪk tə ðə ɹˈuːlz
+Sticky tape.	stˈɪkɪ tˈeɪp
+Still have jet lag.	stˈɪl hæv dʒˈɛt lˈæɡ
+Still in working condition.	stˈɪl ɪn wˈɜːkɪŋ kəndˈɪʃən
+Still intact.	stˈɪl ɪntˈækt
+Still jet-lagged from Japan.	stˈɪl dʒˈɛtlˈæɡd fɹɒm dʒəpˈæn
+Still on the fence.	stˈɪl ɒnðə fˈɛns
+Still undefeated.	stˈɪl ˌʌndɪfˈiːtɪd
+Stir fry vegetables.	stˈɜː fɹˈaɪ vˈɛdʒɪtəbəlz
+Stocks plunge.	stˈɒks plˈʌndʒ
+Stoked to see you.	stˈəʊkt tə sˈiː juː
+Stood side by side.	stˈʊd sˈaɪd baɪ sˈaɪd
+Stop acting like trash.	stˈɒp ˈæktɪŋ lˈaɪk tɹˈæʃ
+Stop being a copycat.	stˈɒp bˌiːɪŋ ɐ kˈɒpɪkˌæt
+Stop believing things you cook up in your head.	stˈɒp bɪlˈiːvɪŋ θˈɪŋz juː kˈʊk ˌʌp ɪn jɔː hˈɛd
+Stop bickering!	stˈɒp bˈɪkəɹɪŋ
+Stop bragging.	stˈɒp bɹˈæɡɪŋ
+Stop buying cheap shit.	stˈɒp bˈaɪɪŋ tʃˈiːp ʃˈɪt
+Stop by anytime.	stˈɒp baɪ ˈɛnɪtˌaɪm
+Stop complaining.	stˈɒp kəmplˈeɪnɪŋ
+Stop coughing on me.	stˈɒp kˈɒfɪŋ ˈɒn mˌiː
+Stop dwelling on the past.	stˈɒp dwˈɛlɪŋ ɒnðə pˈɑːst
+Stop fiddling with that.	stˈɒp fˈɪdlɪŋ wɪð ðˈæt
+Stop flexing.	stˈɒp flˈɛksɪŋ
+Stop flirting!	stˈɒp flˈɜːtɪŋ
+Stop fooling around.	stˈɒp fˈuːlɪŋ ɐɹˈaʊnd
+Stop giggling.	stˈɒp ɡˈɪɡlɪŋ
+Stop goofing around.	stˈɒp ɡˈuːfɪŋ ɐɹˈaʊnd
+Stop grumbling.	stˈɒp ɡɹˈʌmblɪŋ
+Stop guilt-tripping me.	stˈɒp ɡˈɪlttɹˈɪpɪŋ mˌiː
+Stop harping on about it.	stˈɒp hˈɑːpɪŋ ˌɒn ɐbˈaʊt ɪt
+Stop hovering!	stˈɒp hˈɒvəɹɪŋ
+Stop messing around.	stˈɒp mˈɛsɪŋ ɐɹˈaʊnd
+Stop moaning.	stˈɒp mˈəʊnɪŋ
+Stop mumbling.	stˈɒp mˈʌmblɪŋ
+Stop nagging me.	stˈɒp nˈæɡɪŋ mˌiː
+Stop playing the victim.	stˈɒp plˈeɪɪŋ ðə vˈɪktɪm
+Stop putting him down.	stˈɒp pˈʊtɪŋ hˌɪm dˈaʊn
+Stop shitposting.	stˈɒp ʃˈɪtpəʊstɪŋ
+Stop sitting on the fence.	stˈɒp sˈɪtɪŋ ɒnðə fˈɛns
+Stop stalking me.	stˈɒp stˈɔːkɪŋ mˌiː
+Stop sucking up.	stˈɒp sˈʌkɪŋ ˈʌp
+Stop the double standard.	stˈɒp ðə dˈʌbəl stˈændəd
+Stop the micromanagement.	stˈɒp ðə mˌaɪkɹəʊmˈænɪdʒmənt
+Stop the silent treatment.	stˈɒp ðə sˈaɪlənt tɹˈiːtmənt
+Stop tossing and turning.	stˈɒp tˈɒsɪŋ ænd tˈɜːnɪŋ
+Stop trying to butter me up.	stˈɒp tɹˈaɪɪŋ tə bˈʌtɐ mˌiː ˈʌp
+Stop waiting around for nothing.	stˈɒp wˈeɪtɪŋ ɐɹˈaʊnd fɔː nˈʌθɪŋ
+Stop walking on eggshells.	stˈɒp wˈɔːkɪŋ ˌɒn ˈɛɡʃɛlz
+Stop watching brainrot.	stˈɒp wˈɒtʃɪŋ bɹˈeɪnɹɒt
+Store at room temperature.	stˈɔːɹ æt ɹˈuːm tˈɛmpɹɪtʃɐ
+Stranded at the airport.	stɹˈændɪd æt ðɪ ˈeəpɔːt
+Stray from the topic.	stɹˈeɪ fɹʌmðə tˈɒpɪk
+Stream a game.	stɹˈiːm ɐ ɡˈeɪm
+Streamline the workflow.	stɹˈiːmlaɪn ðə wˈɜːkfləʊ
+Strength in unity.	stɹˈɛŋθ ɪn jˈuːnɪtɪ
+Stress builds up.	stɹˈɛs bˈɪldz ˈʌp
+Stress causes hair loss.	stɹˈɛs kˈɔːzɪz hˈeə lˈɒs
+Stretch your calves.	stɹˈɛtʃ jɔː kˈɑːvz
+Stretch your legs.	stɹˈɛtʃ jɔː lˈɛɡz
+Striking beauty.	stɹˈaɪkɪŋ bjˈuːtɪ
+Striking similarity.	stɹˈaɪkɪŋ sˌɪmɪlˈæɹɪtɪ
+Stringent controls.	stɹˈɪndʒənt kəntɹˈəʊlz
+Stringent rules.	stɹˈɪndʒənt ɹˈuːlz
+Strong after effects.	stɹˈɒŋ ˈɑːftɐɹ ɪfˈɛkts
+Strong argument.	stɹˈɒŋ ˈɑːɡjuːmənt
+Strong body odor.	stɹˈɒŋ bˈɒdɪ ˈəʊdɐ
+Strong enough to lift it.	stɹˈɒŋ ɪnˈʌf tə lˈɪft ɪt
+Strong even against the best.	stɹˈɒŋ ˈiːvən ɐɡˈɛnst ðə bˈɛst
+Strong evidence.	stɹˈɒŋ ˈɛvɪdəns
+Strong operating profit.	stɹˈɒŋ ˈɒpəɹˌeɪtɪŋ pɹˈɒfɪt
+Strong reaction.	stɹˈɒŋ ɹɪˈækʃən
+Stub your toe.	stˈʌb jɔː tˈəʊ
+Stuck at home all day.	stˈʌk æt hˈəʊm ˈɔːl dˈeɪ
+Stuck at home with a cold.	stˈʌk æt hˈəʊm wɪð ɐ kˈəʊld
+Stuck in a cubicle.	stˈʌk ɪn ɐ kjˈuːbɪkəl
+Stuck in a loop.	stˈʌk ɪn ɐ lˈuːp
+Stuck in a vicious cycle.	stˈʌk ɪn ɐ vˈɪʃəs sˈaɪkəl
+Stuck in the mud.	stˈʌk ɪnðə mˈʌd
+Stuck in traffic.	stˈʌk ɪn tɹˈæfɪk
+Stuck on a problem.	stˈʌk ˌɒn ɐ pɹˈɒbləm
+Stuck with him through thick and thin.	stˈʌk wɪð hˌɪm θɹuː θˈɪk ænd θˈɪn
+Study Japanese literature.	stˈʌdɪ dʒˌæpənˈiːz lˈɪtɹɪtʃɐ
+Study architecture.	stˈʌdɪ ˈɑːkɪtˌɛktʃɐ
+Study medicine.	stˈʌdɪ mˈɛdsən
+Study photosynthesis.	stˈʌdɪ fˌəʊtəʊsˈɪnθəsˌɪs
+Stuff is all over the place.	stˈʌf ɪz ˈɔːl ˌəʊvɐ ðə plˈeɪs
+Stumbled upon the truth.	stˈʌmbəld əpˌɒn ðə tɹˈuːθ
+Stunning view!	stˈʌnɪŋ vjˈuː
+Stupid idea.	stjˈuːpɪd aɪdˈiə
+Style icon.	stˈaɪl ˈaɪkɒn
+Style the room.	stˈaɪl ðə ɹˈuːm
+Style your hair.	stˈaɪl jɔː hˈeə
+Submit your coursework.	səbmˈɪt jɔː kˈɔːsjuːˌɜːk
+Subsequent to that event.	sˈʌbsɪkwənt tə ðæt ɪvˈɛnt
+Subsequent to the launch.	sˈʌbsɪkwənt tə ðə lˈɔːntʃ
+Subsidiary role.	sʌbsˈɪdjəɹɪ ɹˈəʊl
+Subtle difference.	sˈʌtəl dˈɪfɹəns
+Subtle nuance.	sˈʌtəl njˈuːəns
+Such a kind person.	sˈʌtʃ ɐ kˈaɪnd pˈɜːsən
+Such a long day that I'm done.	sˈʌtʃ ɐ lˈɒŋ dˈeɪ ðæt aɪm dˈʌn
+Such a long day.	sˈʌtʃ ɐ lˈɒŋ dˈeɪ
+Such a mess that I gave up.	sˈʌtʃ ɐ mˈɛs ðæt aɪ ɡˈeɪv ˈʌp
+Such a pain.	sˈʌtʃ ɐ pˈeɪn
+Such uncivilized behavior.	sˈʌtʃ ʌnsˈɪvəlˌaɪzd bɪhˈeɪvjɐ
+Suffer from diarrhea.	sˈʌfɐ fɹɒm dˌaɪəɹˈiə
+Suffer from insomnia.	sˈʌfɐ fɹɒm ɪnsˈɒmnɪɐ
+Sugar is a legal addiction.	ʃˈʊɡɐɹ ɪz ɐ lˈiːɡəl ɐdˈɪkʃən
+Suit yourself, then.	sˈuːt jɔːsˈɛlf ðˈɛn
+Suitable for kids.	sˈuːtəbəl fɔː kˈɪdz
+Summer intern.	sˈʌmɐɹ ˈɪntɜːn
+Summer is still a while away.	sˈʌmɐɹ ɪz stˈɪl ɐ wˈaɪl ɐwˈeɪ
+Summer's right around the corner.	sˈʌməz ɹˈaɪt ɐɹˈaʊnd ðə kˈɔːnɐ
+Summon a witness.	sˈʌmən ɐ wˈɪtnəs
+Summon the courage.	sˈʌmən ðə kˈʌɹɪdʒ
+Sun exposure.	sˈʌn ɪkspˈəʊʒɐ
+Sunsets never get old.	sˈʌnsɛts nˈɛvɐ ɡɛt ˈəʊld
+Super convenient location.	sˈuːpɐ kənvˈiːnɪənt ləʊkˈeɪʃən
+Supervised play.	sˈuːpəvˌaɪzd plˈeɪ
+Supervised release.	sˈuːpəvˌaɪzd ɹɪlˈiːs
+Supply and demand balance.	səplˈaɪ ænd dɪmˈɑːnd bˈæləns
+Support each other.	səpˈɔːt ˈiːtʃ ˈʌðɐ
+Supportive friends.	səpˈɔːtɪv fɹˈɛndz
+Suppose he comes?	səpˈəʊz hiː kˈʌmz
+Suppose that he's late.	səpˈəʊz ðæt hiːz lˈeɪt
+Suppose that's true.	səpˈəʊz ðæts tɹˈuː
+Supposedly it's the best.	səpˈəʊzɪdlɪ ɪts ðə bˈɛst
+Supposing it rains, what then?	səpˈəʊzɪŋ ɪt ɹˈeɪnz wˌɒt ðˈɛn
+Sure enough, he was late.	ʃˈɔːɹ ɪnˈʌf hiː wɒz lˈeɪt
+Sure enough, it rained.	ʃˈɔːɹ ɪnˈʌf ɪt ɹˈeɪnd
+Sure thing!	ʃˈɔː θˈɪŋ
+Sure thing, I got it.	ʃˈɔː θˈɪŋ aɪ ɡˈɒt ɪt
+Surely you're joking.	ʃˈɔːlɪ jɔː dʒˈəʊkɪŋ
+Surgery is the last resort.	sˈɜːdʒəɹɪ ɪz ðə lˈɑːst ɹɪzˈɔːt
+Surgical instruments.	sˈɜːdʒɪkəl ˈɪnstɹəmənts
+Surpass expectations.	səpˈɑːs ɪkspɪktˈeɪʃənz
+Surpass the record.	səpˈɑːs ðə ɹˈɛkɔːd
+Surprises are half the fun.	səpɹˈaɪzɪz ɑː hˈɑːf ðə fˈʌn
+Surprisingly easy.	səpɹˈaɪzɪŋlɪ ˈiːzɪ
+Surprisingly, it worked.	səpɹˈaɪzɪŋlɪ ɪt wˈɜːkt
+Surveillance camera.	səvˈeɪləns kˈæmɹɐ
+Survive the storm.	səvˈaɪv ðə stˈɔːm
+Survived the layoff.	səvˈaɪvd ðə lˈeɪɒf
+Susceptible to colds.	səsˈɛptɪbəl tə kˈəʊldz
+Suspect foul play.	sˈʌspɛkt fˈaʊl plˈeɪ
+Suspend the meeting.	səspˈɛnd ðə mˈiːtɪŋ
+Suspended from school.	səspˈɛndɪd fɹɒm skˈuːl
+Sustainable energy.	səstˈeɪnəbəl ˈɛnədʒɪ
+Swallow your pride.	swˈɒləʊ jɔː pɹˈaɪd
+Swap stories.	swˈɒp stˈɔːɹɪz
+Swear to god, I didn't.	swˈeə tə ɡˈɒd aɪ dˈɪdnt
+Sweet!	swˈiːt
+Sweeten my coffee.	swˈiːtən maɪ kˈɒfɪ
+Sweeten the deal.	swˈiːtən ðə dˈiːl
+Swing by the store.	swˈɪŋ baɪ ðə stˈɔː
+Swing the bat.	swˈɪŋ ðə bˈæt
+Swipe right to like.	swˈaɪp ɹˈaɪt tə lˈaɪk
+Switch jobs.	swˈɪtʃ dʒˈɒbz
+Switch off.	swˈɪtʃ ˈɒf
+System glitch.	sˈɪstəm ɡlˈɪtʃ
+TGIF!	tˈiːdʒˈɪf
+TMI, dude.	tˌiːˌɛmˈaɪ djˈuːd
+Ta very much.	tˈɑː vˈɛɹɪ mˈʌtʃ
+Ta!	tˈɑː
+Table legs.	tˈeɪbəl lˈɛɡz
+Tackle it head-on.	tˈækəl ɪt hˈɛdˈɒn
+Tackle the issue.	tˈækəl ðɪ ˈɪʃuː
+Tactical fouls.	tˈæktɪkəl fˈaʊlz
+Tag me in the photo.	tˈæɡ mˌiː ɪnðə fˈəʊtəʊ
+Take a break.	tˈeɪk ɐ bɹˈeɪk
+Take a coffee break.	tˈeɪk ɐ kˈɒfɪ bɹˈeɪk
+Take a look around.	tˈeɪk ɐ lˈʊk ɐɹˈaʊnd
+Take a moment to relax.	tˈeɪk ɐ mˈəʊmənt tə ɹɪlˈæks
+Take a quick leak.	tˈeɪk ɐ kwˈɪk lˈiːk
+Take a selfie.	tˈeɪk ɐ sˈɛlfɪ
+Take acetaminophen for fever.	tˈeɪk ˈæsɪtˌæmɪnˌɒfən fɔː fˈiːvɐ
+Take action now.	tˈeɪk ˈækʃən nˈaʊ
+Take advantage of it.	tˈeɪk ɐdvˈɑːntɪdʒ ɒv ɪt
+Take care of yourself!	tˈeɪk kˈeəɹ ɒv jɔːsˈɛlf
+Take care of yourself, OK?	tˈeɪk kˈeəɹ ɒv jɔːsˈɛlf ˌəʊkˈeɪ
+Take care of yourself.	tˈeɪk kˈeəɹ ɒv jɔːsˈɛlf
+Take care.	tˈeɪk kˈeə
+Take effect.	tˈeɪk ɪfˈɛkt
+Take her into the room.	tˈeɪk hɜːɹ ˌɪntʊ ðə ɹˈuːm
+Take him into confidence.	tˈeɪk hˌɪm ˌɪntʊ kˈɒnfɪdəns
+Take it as a compliment.	tˈeɪk ɪt æz ɐ kˈɒmplɪmənt
+Take it to the next level.	tˈeɪk ɪt tə ðə nˈɛkst lˈɛvəl
+Take measurements.	tˈeɪk mˈɛʒəmənts
+Take notes.	tˈeɪk nˈəʊts
+Take off your hat.	tˈeɪk ˈɒf jɔː hˈæt
+Take off your shoes.	tˈeɪk ˈɒf jɔː ʃˈuːz
+Take on the challenge.	tˈeɪk ɒnðə tʃˈælɪndʒ
+Take out the garbage.	tˈeɪk ˈaʊt ðə ɡˈɑːbɪdʒ
+Take out the rubbish.	tˈeɪk ˈaʊt ðə ɹˈʌbɪʃ
+Take pride in your work.	tˈeɪk pɹˈaɪd ɪn jɔː wˈɜːk
+Take responsibility.	tˈeɪk ɹɪspˌɒnsəbˈɪlɪtɪ
+Take shelter.	tˈeɪk ʃˈɛltɐ
+Take that as a yes.	tˈeɪk ðæt æz ɐ jˈɛs
+Take the initiative.	tˈeɪk ðɪ ɪnˈɪʃiətˌɪv
+Take the minutes.	tˈeɪk ðə mˈɪnɪts
+Take the right dose.	tˈeɪk ðə ɹˈaɪt dˈəʊs
+Take the shortcut.	tˈeɪk ðə ʃˈɔːtkʌt
+Take this opportunity to ~	tˈeɪk ðɪs ɒpətjˈuːnɪtɪ tə tˈɪldɐ
+Take time to reflect.	tˈeɪk tˈaɪm tə ɹɪflˈɛkt
+Take your medicine.	tˈeɪk jɔː mˈɛdsən
+Take your time, there's no rush.	tˈeɪk jɔː tˈaɪm ðeəz nˈəʊ ɹˈʌʃ
+Takes guts.	tˈeɪks ɡˈʌts
+Talk later.	tˈɔːk lˈeɪtɐ
+Talk to a real person.	tˈɔːk tʊ ɐ ɹˈiəl pˈɜːsən
+Talk to him about it.	tˈɔːk tə hˌɪm ɐbˈaʊt ɪt
+Talking parrot.	tˈɔːkɪŋ pˈæɹət
+Tape the show.	tˈeɪp ðə ʃˈəʊ
+Target new customers.	tˈɑːɡɪt njˈuː kˈʌstəməz
+Tastes evolve.	tˈeɪsts ɪvˈɒlv
+Tax is included in the price.	tˈæks ɪz ɪŋklˈuːdɪd ɪnðə pɹˈaɪs
+Tax loophole.	tˈæks lˈuːphəʊl
+Taxpayer money.	tˈækspeɪɐ mˈʌnɪ
+Tea as well as coffee.	tˈiː æz wˈɛl æz kˈɒfɪ
+Tea instead of coffee.	tˈiː ɪnstˈɛd ɒv kˈɒfɪ
+Tea rather than coffee.	tˈiː ɹˈɑːðɐ ðɐn kˈɒfɪ
+Tea, as opposed to coffee.	tˈiː æz əpˈəʊzd tə kˈɒfɪ
+Teaching profession.	tˈiːtʃɪŋ pɹəfˈɛʃən
+Team up with him.	tˈiːm ˈʌp wɪð hˌɪm
+Tear down barriers.	tˈiə dˌaʊn bˈæɹiəz
+Tear down the wall.	tˈiə dˌaʊn ðə wˈɔːl
+Tear the paper.	tˈiə ðə pˈeɪpɐ
+Tears blurred my vision.	tˈiəz blˈɜːd maɪ vˈɪʒən
+Tears rolled down her face.	tˈiəz ɹˈəʊld dˌaʊn hɜː fˈeɪs
+Tech brought about huge change.	tˈɛk bɹˈɔːt ɐbˌaʊt hjˈuːdʒ tʃˈeɪndʒ
+Technical term.	tˈɛknɪkəl tˈɜːm
+Technically, that's true.	tˈɛknɪklɪ ðæts tɹˈuː
+Technically, you're right.	tˈɛknɪklɪ jɔː ɹˈaɪt
+Teen slang.	tˈiːn slˈæŋ
+Tell me from the beginning.	tˈɛl mˌiː fɹʌmðə bɪɡˈɪnɪŋ
+Tell me more about it.	tˈɛl mˌiː mˈɔːɹ ɐbˈaʊt ɪt
+Tell the boss.	tˈɛl ðə bˈɒs
+Temperatures plunge.	tˈɛmpɹɪtʃəz plˈʌndʒ
+Temporary paralysis.	tˈɛmpɹəɹɪ pəɹˈæləsˌɪs
+Ten or so.	tˈɛn ɔː sˈəʊ
+Ten years, no less.	tˈɛn jˈiəz nˈəʊ lˈɛs
+Tennis match.	tˈɛnɪs mˈætʃ
+Tension's building up.	tˈɛnʃənz bˈɪldɪŋ ˈʌp
+Terminate the contract.	tˈɜːmɪnˌeɪt ðə kˈɒntɹækt
+Terrible weather.	tˈɛɹɪbəl wˈɛðɐ
+Test the hypothesis.	tˈɛst ðə haɪpˈɒθəsˌɪs
+Thank you, finally someone said it.	θˈæŋk juː fˈaɪnəlɪ sˈʌmwɒn sˈɛd ɪt
+Thanks for the assistance.	θˈæŋks fəðɪ ɐsˈɪstəns
+Thanks for the compliment.	θˈæŋks fəðə kˈɒmplɪmənt
+Thanks for the feedback.	θˈæŋks fəðə fˈiːdbæk
+Thanks for the heads-up.	θˈæŋks fəðə hˈɛdzˈʌp
+Thanks in advance.	θˈæŋks ɪn ɐdvˈæns
+Thanks, and I wish you a wonderful day.	θˈæŋks ænd aɪ wˈɪʃ juː ɐ wˈʌndəfəl dˈeɪ
+Thanks, mate.	θˈæŋks mˈeɪt
+Thanksgiving dinner.	θˈæŋksɡɪvɪŋ dˈɪnɐ
+That accounts for 30%.	ðæt ɐkˈaʊnts fɔː θˈɜːtɪ pəsˈɛnt
+That article is AI slop.	ðæt ˈɑːtɪkəl ɪz ˌeɪˈaɪ slˈɒp
+That bastard!	ðæt bˈɑːstəd
+That being said, I agree.	ðæt bˌiːɪŋ sˈɛd aɪ ɐɡɹˈiː
+That being said, we should try.	ðæt bˌiːɪŋ sˈɛd wiː ʃˌʊd tɹˈaɪ
+That blew my mind.	ðæt blˈuː maɪ mˈaɪnd
+That color suits you.	ðæt kˈʌlɐ sˈuːts juː
+That comment was savage.	ðæt kˈɒmɛnt wɒz sˈævɪdʒ
+That cracks me up.	ðæt kɹˈæks mˌiː ˈʌp
+That doesn't add up.	ðæt dˈʌzənt ˈæd ˈʌp
+That dress is elegant.	ðæt dɹˈɛs ɪz ˈɛlɪɡənt
+That figures!	ðæt fˈɪɡəz
+That gave me the ick.	ðæt ɡˈeɪv mˌiː ðɪ ˈaɪk
+That guy is a piece of work.	ðæt ɡˈaɪ ɪz ɐ pˈiːs ɒv wˈɜːk
+That guy looks shady.	ðæt ɡˈaɪ lˈʊks ʃˈeɪdɪ
+That guy over there.	ðæt ɡˈaɪ ˌəʊvɐ ðˈeə
+That headline is clickbait.	ðæt hˈɛdlaɪn ɪz klˈɪkbeɪt
+That hit me hard.	ðæt hˈɪt mˌiː hˈɑːd
+That hits the nail on the head.	ðæt hˈɪts ðə nˈeɪl ɒnðə hˈɛd
+That joke is corny.	ðæt dʒˈəʊk ɪz kˈɔːnɪ
+That joke was offensive as fuck.	ðæt dʒˈəʊk wɒz əfˈɛnsɪv æz fˈʌk
+That just added fuel to the fire.	ðæt dʒˈʌst ˈædɪd fjˈuːəl tə ðə fˈaɪə
+That makes sense.	ðæt mˌeɪks sˈɛns
+That meeting was useless.	ðæt mˈiːtɪŋ wɒz jˈuːsləs
+That movie blew my mind.	ðæt mˈuːvɪ blˈuː maɪ mˈaɪnd
+That neighborhood is sketchy.	ðæt nˈeɪbəhˌʊd ɪz skˈɛtʃɪ
+That noise drives me up the wall.	ðæt nˈɔɪz dɹˈaɪvz mˌiː ˌʌp ðə wˈɔːl
+That pissed me off.	ðæt pˈɪst mˌiː ˈɒf
+That really hit home.	ðæt ɹˈiəlɪ hˈɪt hˈəʊm
+That reminds me of something.	ðæt ɹɪmˈaɪndz mˌiː ɒv sˈʌmθɪŋ
+That reminds me, I called.	ðæt ɹɪmˈaɪndz mˌiː aɪ kˈɔːld
+That rings a bell.	ðæt ɹˈɪŋz ɐ bˈɛl
+That ruined my day.	ðæt ɹˈuːɪnd maɪ dˈeɪ
+That set off the alarm.	ðæt sˈɛt ˈɒf ðɪ ɐlˈɑːm
+That show is pure brain rot.	ðæt ʃˈəʊ ɪz pjˈɔː bɹˈeɪn ɹˈɒt
+That son of a bitch lied.	ðæt sˈʌn əvɐ bˈɪtʃ lˈaɪd
+That song hit me in the feels.	ðæt sˈɒŋ hˈɪt mˌiː ɪnðə fˈiːlz
+That song lives in my head rent free.	ðæt sˈɒŋ lˈaɪvz ɪn maɪ hˈɛd ɹˈɛnt fɹˈiː
+That sounds fishy.	ðæt sˈaʊndz fˈɪʃɪ
+That sounds like a great idea.	ðæt sˈaʊndz lˈaɪk ɐ ɡɹˈeɪt aɪdˈiə
+That sounds like a lot of work.	ðæt sˈaʊndz lˈaɪk ɐ lˈɒt ɒv wˈɜːk
+That sparked my interest.	ðæt spˈɑːkt maɪ ˈɪntɹɛst
+That stumped me.	ðæt stˈʌmpt mˌiː
+That tickles me pink.	ðæt tˈɪkəlz mˌiː pˈɪŋk
+That time works perfectly.	ðæt tˈaɪm wˈɜːks pˈɜːfɛktlɪ
+That tip came in handy.	ðæt tˈɪp kˈeɪm ɪn hˈændɪ
+That voice blesses my ears.	ðæt vˈɔɪs blˈɛsɪz maɪ ˈiəz
+That was a bad joke.	ðæt wʌzɐ bˈæd dʒˈəʊk
+That was a boob.	ðæt wʌzɐ bˈuːb
+That was a close call!	ðæt wʌzɐ klˈəʊs kˈɔːl
+That was a real wake-up call.	ðæt wʌzɐ ɹˈiəl wˈeɪkˌʌp kˈɔːl
+That was brave of you.	ðæt wɒz bɹˈeɪv ɒv juː
+That was epic!	ðæt wɒz ˈɛpɪk
+That was hella fun.	ðæt wɒz hˈɛlɐ fˈʌn
+That was so awkward.	ðæt wɒz sˌəʊ ˈɔːkwəd
+That was the last straw.	ðæt wʌzðə lˈɑːst stɹˈɔː
+That was unreal stuff.	ðæt wɒz ʌnɹˈiəl stˈʌf
+That word doesn't exist.	ðæt wˈɜːd dˈʌzənt ɪɡzˈɪst
+That word is a cruel slur.	ðæt wˈɜːd ɪz ɐ kɹˈuːəl slˈɜː
+That word is a homophobic slur.	ðæt wˈɜːd ɪz ɐ hˌɒməfˈəʊbɪk slˈɜː
+That workout was the best kind of pain.	ðæt wˈɜːkaʊt wʌzðə bˈɛst kˈaɪnd ɒv pˈeɪn
+That would be a mistake.	ðæt wʊd biː ɐ mɪstˈeɪk
+That would be great!	ðæt wʊd biː ɡɹˈeɪt
+That wrecked my plan.	ðæt ɹˈɛkt maɪ plˈæn
+That'll be £5, love.	ðˌætəl biː pˈaʊnd fˈaɪv lˈʌv
+That'll save you time.	ðˌætəl sˈeɪv juː tˈaɪm
+That's a big expense.	ðæts ɐ bˈɪɡ ɪkspˈɛns
+That's a big issue.	ðæts ɐ bˈɪɡ ˈɪʃuː
+That's a big move.	ðæts ɐ bˈɪɡ mˈuːv
+That's a bit early.	ðæts ɐ bˈɪt ˈɜːlɪ
+That's a bit extreme.	ðæts ɐ bˈɪt ɪkstɹˈiːm
+That's a bold move.	ðæts ɐ bˈəʊld mˈuːv
+That's a bummer.	ðæts ɐ bˈʌmɐ
+That's a catchy slogan.	ðæts ɐ kˈætʃɪ slˈəʊɡən
+That's a cop-out answer.	ðæts ɐ kˈɒpˈaʊt ˈɑːnsɐ
+That's a copycat product.	ðæts ɐ kˈɒpɪkˌæt pɹˈɒdʌkt
+That's a deal-breaker for me.	ðæts ɐ dˈiːlbɹˈeɪkɐ fɔː mˌiː
+That's a dealbreaker.	ðæts ɐ dˈiːlbɹeɪkɐ
+That's a decent meal.	ðæts ɐ dˈiːsənt mˈiːl
+That's a double standard.	ðæts ɐ dˈʌbəl stˈændəd
+That's a drop in the bucket.	ðæts ɐ dɹˈɒp ɪnðə bˈʌkɪt
+That's a fair point.	ðæts ɐ fˈeə pˈɔɪnt
+That's a good point.	ðæts ɐ ɡˈʊd pˈɔɪnt
+That's a gray area.	ðæts ɐ ɡɹˈeɪ ˈeəɹiə
+That's a green flag.	ðæts ɐ ɡɹˈiːn flˈæɡ
+That's a headache.	ðæts ɐ hˈɛdeɪk
+That's a huge achievement.	ðæts ɐ hjˈuːdʒ ɐtʃˈiːvmənt
+That's a lame excuse.	ðæts ɐ lˈeɪm ɪkskjˈuːs
+That's a long shot at best.	ðæts ɐ lˈɒŋ ʃˈɒt æt bˈɛst
+That's a nice bonus.	ðæts ɐ nˈaɪs bˈəʊnəs
+That's a nice perk.	ðæts ɐ nˈaɪs pˈɜːk
+That's a no-brainer for sure.	ðæts ɐ nˈəʊbɹˈeɪnɐ fɔː ʃˈɔː
+That's a red flag.	ðæts ɐ ɹˈɛd flˈæɡ
+That's a relief!	ðæts ɐ ɹɪlˈiːf
+That's a rip-off.	ðæts ɐ ɹˈɪpˈɒf
+That's a shame.	ðæts ɐ ʃˈeɪm
+That's a simple question.	ðæts ɐ sˈɪmpəl kwˈɛstʃən
+That's a stretch.	ðæts ɐ stɹˈɛtʃ
+That's a sweet car.	ðæts ɐ swˈiːt kˈɑː
+That's a valid point.	ðæts ɐ vˈælɪd pˈɔɪnt
+That's a wild level of confidence.	ðæts ɐ wˈaɪld lˈɛvəl ɒv kˈɒnfɪdəns
+That's a wrong assumption.	ðæts ɐ ɹˈɒŋ ɐsˈʌmpʃən
+That's a yes for sure.	ðæts ɐ jˈɛs fɔː ʃˈɔː
+That's amazing!	ðæts ɐmˈeɪzɪŋ
+That's an insult.	ðæts ɐn ˈɪnsʌlt
+That's an overreaction.	ðæts ɐn ˌəʊvəɹɪˈækʃən
+That's another reason to go.	ðæts ɐnˈʌðɐ ɹˈiːzən tə ɡˈəʊ
+That's awesome.	ðæts ˈɔːsʌm
+That's awful.	ðæts ˈɔːfəl
+That's bollocks.	ðæts bˈɒləks
+That's cheap shit.	ðæts tʃˈiːp ʃˈɪt
+That's concerning.	ðæts kənsˈɜːnɪŋ
+That's considerate of you.	ðæts kənsˈɪdəɹət ɒv juː
+That's correct.	ðæts kəɹˈɛkt
+That's creepy.	ðæts kɹˈiːpɪ
+That's debatable.	ðæts dɪbˈeɪtəbəl
+That's dodgy.	ðæts dˈɒdʒɪ
+That's enough for today.	ðæts ɪnˈʌf fɔː tədˈeɪ
+That's enough!	ðæts ɪnˈʌf
+That's expensive.	ðæts ɪkspˈɛnsɪv
+That's for sure!	ðæts fɔː ʃˈɔː
+That's freaking cool!	ðæts fɹˈiːkɪŋ kˈuːl
+That's garbage.	ðæts ɡˈɑːbɪdʒ
+That's good enough.	ðæts ɡˈʊd ɪnˈʌf
+That's great!	ðæts ɡɹˈeɪt
+That's hardcore.	ðæts hˈɑːdkɔː
+That's hilarious!	ðæts hɪlˈeəɹiəs
+That's hypocritical.	ðæts hˌɪpəkɹˈɪtɪkəl
+That's it for today.	ðætsˈɪt fɔː tədˈeɪ
+That's it!	ðætsˈɪt
+That's just something you cooked up in your head.	ðæts dʒˈʌst sˈʌmθɪŋ juː kˈʊkt ˌʌp ɪn jɔː hˈɛd
+That's just the tip of the iceberg.	ðæts dʒˈʌst ðə tˈɪp ɒvðɪ ˈaɪsbɜːɡ
+That's just the way it is.	ðæts dʒˈʌst ðə wˈeɪ ɪt ˈɪz
+That's just the way she is.	ðæts dʒˈʌst ðə wˈeɪ ʃiː ɪz
+That's karma.	ðæts kˈɑːmɐ
+That's legit.	ðæts lədʒˈɪt
+That's like killing them twice.	ðæts lˈaɪk kˈɪlɪŋ ðˌɛm twˈaɪs
+That's lovely, thanks.	ðæts lˈʌvlɪ θˈæŋks
+That's mental!	ðæts mˈɛntəl
+That's mind blowing.	ðæts mˈaɪnd blˈəʊɪŋ
+That's my blind spot.	ðæts maɪ blˈaɪnd spˈɒt
+That's my concern.	ðæts maɪ kənsˈɜːn
+That's my part of the job.	ðæts maɪ pˈɑːt ɒvðə dʒˈɒb
+That's my pet peeve.	ðæts maɪ pˈɛt pˈiːv
+That's my thing.	ðæts maɪ θˈɪŋ
+That's next level.	ðæts nˈɛkst lˈɛvəl
+That's not very mature.	ðæts nˌɒt vˈɛɹɪ mətʃˈɔː
+That's not what was supposed to happen.	ðæts nˌɒt wɒt wɒz səpˈəʊzd tə hˈæpən
+That's one thing for sure.	ðæts wˈɒn θˈɪŋ fɔː ʃˈɔː
+That's pretty much it.	ðæts pɹˈɪtɪ mˈʌtʃ ɪt
+That's pure hypocrisy.	ðæts pjˈɔː hɪpˈɒkɹəsɪ
+That's really offensive.	ðæts ɹˈiəlɪ əfˈɛnsɪv
+That's ridiculous.	ðæts ɹɪdˈɪkjʊləs
+That's rubbish.	ðæts ɹˈʌbɪʃ
+That's selfish of him.	ðæts sˈɛlfɪʃ ɒv hˌɪm
+That's sick!	ðæts sˈɪk
+That's so cheesy.	ðæts sˌəʊ tʃˈiːsɪ
+That's so cringe.	ðæts sˌəʊ kɹˈɪndʒ
+That's so dumb.	ðæts sˌəʊ dˈʌm
+That's so funny, I'm dead.	ðæts sˌəʊ fˈʌnɪ aɪm dˈɛd
+That's so generous of you.	ðæts sˌəʊ dʒˈɛnəɹəs ɒv juː
+That's so lame.	ðæts sˌəʊ lˈeɪm
+That's so petty.	ðæts sˌəʊ pˈɛtɪ
+That's so random!	ðæts sˌəʊ ɹˈændəm
+That's so you!	ðæts sˈəʊ juː
+That's spot on.	ðæts spˈɒt ˈɒn
+That's strange, don't you think?	ðæts stɹˈeɪndʒ dˈəʊnt juː θˈɪŋk
+That's stupid.	ðæts stjˈuːpɪd
+That's sus.	ðæts sˈʌs
+That's the answer, period.	ðæts ðɪ ˈɑːnsɐ pˈiəɹɪəd
+That's the spirit!	ðæts ðə spˈɪɹɪt
+That's the way!	ðæts ðə wˈeɪ
+That's the way, keep it up.	ðæts ðə wˈeɪ kˈiːp ɪt ˈʌp
+That's true, no cap.	ðæts tɹˈuː nˈəʊ kˈæp
+That's truly out of your mind.	ðæts tɹˈuːlɪ ˌaʊtəv jɔː mˈaɪnd
+That's unreal!	ðæts ʌnɹˈiəl
+That's water under the bridge now.	ðæts wˈɔːtɐɹ ˌʌndɐ ðə bɹˈɪdʒ nˈaʊ
+That's what I'm trying to do.	ðæts wɒt aɪm tɹˈaɪɪŋ tə dˈuː
+The African continent.	ðɪ ˈæfɹɪkən kˈɒntɪnənt
+The Easter bunny.	ðɪ ˈiːstɐ bˈʌnɪ
+The Hunchback of Notre-Dame.	ðə hˈʌntʃbæk ɒv nˈɒtədˈeɪm
+The Japanese spirit of hospitality.	ðə dʒˌæpənˈiːz spˈɪɹɪt ɒv hˌɒspɪtˈælɪtɪ
+The Phantom of the Opera.	ðə fˈɑːntəm ɒvðɪ ˈɒpəɹɐ
+The admission fee is $10.	ðɪ ɐdmˈɪʃən fˈiː ɪz dˈɒlɐ tˈɛn
+The all star game.	ðɪ ˈɔːl stˈɑː ɡˈeɪm
+The answer was ambiguous.	ðɪ ˈɑːnsɐ wɒz æmbˈɪɡjuːəs
+The app ecosystem.	ðɪ ˈæp ˈiːkəʊsˌɪstəm
+The app has been updated.	ðɪ ˈæp hˈæzbiːn ʌpdˈeɪtɪd
+The armrest is broken.	ðɪ ˈɑːmɹɛst ɪz bɹˈəʊkən
+The autism spectrum.	ðɪ ˈɔːtɪzəm spˈɛktɹəm
+The baby pooped.	ðə bˈeɪbɪ pˈuːpt
+The ball's in your court.	ðə bˈɔːlz ɪn jɔː kˈɔːt
+The band reunited.	ðə bˈænd ɹˌiːjuːnˈaɪtɪd
+The beach was all to myself.	ðə bˈiːtʃ wɒz ˈɔːl tə maɪsˈɛlf
+The best app I've used so far.	ðə bˈɛst ˈæp aɪv jˈuːzd sˈəʊ fˌɑː
+The best tool I've used so far.	ðə bˈɛst tˈuːl aɪv jˈuːzd sˈəʊ fˌɑː
+The blood clotted.	ðə blˈʌd klˈɒtɪd
+The book is divided into five parts.	ðə bˈʊk ɪz dɪvˈaɪdɪd ˌɪntʊ fˈaɪv pˈɑːts
+The book is upside down.	ðə bˈʊk ɪz ˈʌpsaɪd dˈaʊn
+The bottom line is, we need more time.	ðə bˈɒtəm lˈaɪn ɪz wiː nˈiːd mˈɔː tˈaɪm
+The brain drain to Silicon Valley.	ðə bɹˈeɪn dɹˈeɪn tə sˈɪlɪkən vˈælɪ
+The brain processes info.	ðə bɹˈeɪn pɹˈəʊsɛsɪz ˈɪnfəʊ
+The button is grayed out.	ðə bˈʌtən ɪz ɡɹˈeɪd ˈaʊt
+The cafe is right around the corner.	ðə kˈæfeɪ ɪz ɹˈaɪt ɐɹˈaʊnd ðə kˈɔːnɐ
+The call got cut off.	ðə kˈɔːl ɡɒt kˈʌt ˈɒf
+The capital city.	ðə kˈæpɪtəl sˈɪtɪ
+The car crashed into a tree.	ðə kˈɑː kɹˈæʃt ˌɪntʊ ɐ tɹˈiː
+The car is done for.	ðə kˈɑːɹ ɪz dˈʌn fɔː
+The car is in a bad way.	ðə kˈɑːɹ ɪz ɪn ɐ bˈæd wˈeɪ
+The city is on lock down.	ðə sˈɪtɪ ɪz ˌɒn lˈɒk dˈaʊn
+The client wants changes.	ðə klˈaɪənt wˈɒnts tʃˈeɪndʒɪz
+The coach lit him up.	ðə kˈəʊtʃ lˈɪt hˌɪm ˈʌp
+The comment sparked debate.	ðə kˈɒmɛnt spˈɑːkt dɪbˈeɪt
+The company is in the red.	ðə kˈʌmpənɪ ɪz ɪnðə ɹˈɛd
+The company is one entity.	ðə kˈʌmpənɪ ɪz wˈɒn ˈɛntɪtɪ
+The company went public.	ðə kˈʌmpənɪ wɛnt pˈʌblɪk
+The company's revenue grew 30% year over year.	ðə kˈʌmpənɪz ɹˈɛvənjˌuː ɡɹˈuː θˈɜːtɪ pəsˈɛnt jˈiəɹ ˌəʊvɐ jˈiə
+The cop pulled me over.	ðə kˈɒp pˈʊld mˌiː ˈəʊvɐ
+The coziness of home.	ðə kˈəʊzɪnəs ɒv hˈəʊm
+The crowd applauded the goal.	ðə kɹˈaʊd ɐplˈɔːdɪd ðə ɡˈəʊl
+The crowd was buzzing.	ðə kɹˈaʊd wɒz bˈʌzɪŋ
+The crowd went insane.	ðə kɹˈaʊd wɛnt ɪnsˈeɪn
+The custom dates back centuries.	ðə kˈʌstəm dˈeɪts bˈæk sˈɛntʃəɹɪz
+The custom originated long ago.	ðə kˈʌstəm əɹˈɪdʒɪnˌeɪtɪd lˈɒŋ ɐɡˈəʊ
+The dark side of fame.	ðə dˈɑːk sˈaɪd ɒv fˈeɪm
+The deal is off.	ðə dˈiːl ɪz ˈɒf
+The defense stood strong.	ðə dɪfˈɛns stˈʊd stɹˈɒŋ
+The dog bit me.	ðə dˈɒɡ bˈɪt mˌiː
+The door hinges creaked.	ðə dˈɔː hˈɪndʒɪz kɹˈiːkt
+The door sensors movement.	ðə dˈɔː sˈɛnsəz mˈuːvmənt
+The door swung open.	ðə dˈɔː swˈʌŋ ˈəʊpən
+The downfall of an empire.	ðə dˈaʊnfɔːl əvən ˈɪmpaɪə
+The drain is clogged.	ðə dɹˈeɪn ɪz klˈɒɡd
+The earth shakes.	ðɪ ˈɜːθ ʃˈeɪks
+The eggs hatched.	ðɪ ˈɛɡz hˈætʃt
+The elite few.	ðɪ ɪlˈiːt fjˈuː
+The end of an era.	ðɪ ˈɛnd əvən ˈiəɹɐ
+The ending was sad.	ðɪ ˈɛndɪŋ wɒz sˈæd
+The era came to an end.	ðɪ ˈiəɹɐ kˈeɪm tʊ ɐn ˈɛnd
+The event takes place tomorrow.	ðɪ ɪvˈɛnt tˈeɪks plˈeɪs təmˈɒɹəʊ
+The event was the catalyst.	ðɪ ɪvˈɛnt wʌzðə kˈætɐlˌɪst
+The exact time.	ðɪ ɪɡzˈækt tˈaɪm
+The excitement wore off.	ðɪ ɪksˈaɪtmənt wˈɔːɹ ˈɒf
+The fact is, he lied.	ðə fˈækt ɪz hiː lˈaɪd
+The fact is, we lost.	ðə fˈækt ɪz wiː lˈɒst
+The fact that he lied hurts.	ðə fˈækt ðæt hiː lˈaɪd hˈɜːts
+The fact that it works is enough.	ðə fˈækt ðˌɐtɪt wˈɜːks ɪz ɪnˈʌf
+The firewall blocked it.	ðə fˈaɪəwɔːl blˈɒkt ɪt
+The first half was slow.	ðə fˈɜːst hˈɑːf wɒz slˈəʊ
+The flavor profile is complex.	ðə flˈeɪvɐ pɹˈəʊfaɪl ɪz kˈɒmplɛks
+The flight just took off.	ðə flˈaɪt dʒˈʌst tˈʊk ˈɒf
+The floods destroyed homes.	ðə flˈʌdz dɪstɹˈɔɪd hˈəʊmz
+The food was awful.	ðə fˈuːd wɒz ˈɔːfəl
+The footpath leads to the lake.	ðə fˈʊtpɑːθ lˈiːdz tə ðə lˈeɪk
+The fridge is empty.	ðə fɹˈɪdʒ ɪz ˈɛmptɪ
+The front row.	ðə fɹˈʌnt ɹˈəʊ
+The function of the heart.	ðə fˈʌŋkʃən ɒvðə hˈɑːt
+The funding is secured.	ðə fˈʌndɪŋ ɪz sɪkjˈɔːd
+The future is now; tomorrow's here.	ðə fjˈuːtʃɐɹ ɪz nˈaʊ təmˈɒɹəʊz hˈiə
+The good news is it's fixed.	ðə ɡˈʊd njˈuːz ɪz ɪts fˈɪkst
+The good news is we're on time.	ðə ɡˈʊd njˈuːz ɪz wiəɹ ˌɒn tˈaɪm
+The good old days.	ðə ɡˈʊd ˈəʊld dˈeɪz
+The graph illustrates the trend.	ðə ɡɹˈɑːf ˈɪləstɹˌeɪts ðə tɹˈɛnd
+The greatest of all time.	ðə ɡɹˈeɪtɪst ɒv ˈɔːl tˈaɪm
+The ground quaked.	ðə ɡɹˈaʊnd kwˈeɪkt
+The house burned down.	ðə hˈaʊs bˈɜːnd dˈaʊn
+The interest rate has gone up again.	ðɪ ˈɪntɹɛst ɹˈeɪt hɐz ɡɒn ˌʌp ɐɡˈɛn
+The internet is full of AI slop.	ðɪ ˈɪntənˌɛt ɪz fˈʊl ɒv ˌeɪˈaɪ slˈɒp
+The inverse relationship.	ðɪ ɪnvˈɜːs ɹɪlˈeɪʃənʃˌɪp
+The irony of it.	ðɪ ˈaɪɹənɪ ɒv ɪt
+The issue is that it's too slow.	ðɪ ˈɪʃuː ɪz ðæt ɪts tˈuː slˈəʊ
+The issue is that nobody knows.	ðɪ ˈɪʃuː ɪz ðæt nˈəʊbɒdɪ nˈəʊz
+The item is stocked out.	ðɪ ˈaɪtəm ɪz stˈɒkt ˈaʊt
+The kids wore me out.	ðə kˈɪdz wˈɔː mˌiː ˈaʊt
+The last straw for me.	ðə lˈɑːst stɹˈɔː fɔː mˌiː
+The launch was a flop.	ðə lˈɔːntʃ wʌzɐ flˈɒp
+The letter A.	ðə lˈɛtɐɹ ˈeɪ
+The main character of the novel.	ðə mˈeɪn kˈæɹɪktɐɹ ɒvðə nˈɒvəl
+The main entrance.	ðə mˈeɪn ˈɛntɹəns
+The market is a battlefield.	ðə mˈɑːkɪt ɪz ɐ bˈætəlfˌiːld
+The massacre shocked the world.	ðə mˈæsəkɐ ʃˈɒkt ðə wˈɜːld
+The match ended in a draw.	ðə mˈætʃ ˈɛndɪd ɪn ɐ dɹˈɔː
+The medicine kicked in.	ðə mˈɛdsən kˈɪkt ˈɪn
+The method by which it works.	ðə mˈɛθəd baɪ wˌɪtʃ ɪt wˈɜːks
+The milk smells off.	ðə mˈɪlk smˈɛlz ˈɒf
+The more you practice, the better you get.	ðə mˈɔː juː pɹˈæktɪs ðə bˈɛtɐ juː ɡˈɛt
+The more, the better.	ðə mˈɔː ðə bˈɛtɐ
+The most daily of tasks.	ðə mˈəʊst dˈeɪlɪ ɒv tˈɑːsks
+The most populous country.	ðə mˈəʊst pˈɒpjʊləs kˈʌntɹɪ
+The most well known brand.	ðə mˈəʊst wˈɛl nˈəʊn bɹˈænd
+The movie is a thriller.	ðə mˈuːvɪ ɪz ɐ θɹˈɪlɐ
+The name rings a bell.	ðə nˈeɪm ɹˈɪŋz ɐ bˈɛl
+The national anthem.	ðə nˈæʃənəl ˈænθəm
+The news hit me hard.	ðə njˈuːz hˈɪt mˌiː hˈɑːd
+The numbers correspond.	ðə nˈʌmbəz kˌɒɹɪspˈɒnd
+The odds are high.	ðɪ ˈɒdz ɑː hˈaɪ
+The only downside is the price.	ðɪ ˈəʊnlɪ dˈaʊnsaɪd ɪz ðə pɹˈaɪs
+The opposing team.	ðɪ əpˈəʊzɪŋ tˈiːm
+The other day, I went hiking.	ðɪ ˈʌðɐ dˈeɪ aɪ wɛnt hˈaɪkɪŋ
+The outline of a face.	ðɪ ˈaʊtlaɪn əvɐ fˈeɪs
+The page layout.	ðə pˈeɪdʒ lˈeɪaʊt
+The pain comes and goes.	ðə pˈeɪn kˈʌmz ænd ɡˈəʊz
+The pain faded away.	ðə pˈeɪn fˈeɪdɪd ɐwˈeɪ
+The painkiller's wearing off.	ðə pˈeɪŋkɪləz wˈeəɹɪŋ ˈɒf
+The phone is broken.	ðə fˈəʊn ɪz bɹˈəʊkən
+The phrase can sound offensive.	ðə fɹˈeɪz kæn sˈaʊnd əfˈɛnsɪv
+The plan evolved.	ðə plˈæn ɪvˈɒlvd
+The plan fell flat.	ðə plˈæn fˈɛl flˈæt
+The plane ascended.	ðə plˈeɪn ɐsˈɛndɪd
+The plane touched down.	ðə plˈeɪn tˈʌtʃt dˈaʊn
+The plants wait for some care.	ðə plˈɑːnts wˈeɪt fɔː sˌʌm kˈeə
+The point is to try.	ðə pˈɔɪnt ɪz tə tɹˈaɪ
+The point is, we lost.	ðə pˈɔɪnt ɪz wiː lˈɒst
+The possibility of failure.	ðə pˌɒsəbˈɪlɪtɪ ɒv fˈeɪliə
+The possibility of rain.	ðə pˌɒsəbˈɪlɪtɪ ɒv ɹˈeɪn
+The power supply failed.	ðə pˈaʊɐ səplˈaɪ fˈeɪld
+The price alone is huge.	ðə pɹˈaɪs ɐlˈəʊn ɪz hjˈuːdʒ
+The private sector hires more.	ðə pɹˈaɪvət sˈɛktɐ hˈaɪəz mˈɔː
+The problem lies in the design.	ðə pɹˈɒbləm lˈaɪz ɪnðə dɪzˈaɪn
+The project is behind schedule.	ðə pɹˈɒdʒɛkt ɪz bɪhˌaɪnd ʃˈɛdjuːl
+The protagonist of the film.	ðə pɹˈəʊtɐɡənˌɪst ɒvðə fˈɪlm
+The question is why.	ðə kwˈɛstʃən ɪz wˈaɪ
+The question is, can we afford it?	ðə kwˈɛstʃən ɪz kæn wiː ɐfˈɔːd ɪt
+The radius of the circle.	ðə ɹˈeɪdɪəs ɒvðə sˈɜːkəl
+The rain, this never stops.	ðə ɹˈeɪn ðɪs nˈɛvɐ stˈɒps
+The reactor overheated.	ðə ɹɪˈæktɐɹ ˌəʊvəhˈiːtɪd
+The reason for asking.	ðə ɹˈiːzən fɔːɹ ˈɑːskɪŋ
+The reason for crying.	ðə ɹˈiːzən fɔː kɹˈaɪɪŋ
+The regional conflict spread.	ðə ɹˈiːdʒənəl kˈɒnflɪkt spɹˈɛd
+The rest of the day.	ðə ɹˈɛst ɒvðə dˈeɪ
+The reward is greater than the risk.	ðə ɹɪwˈɔːd ɪz ɡɹˈeɪtɐ ðɐn ðə ɹˈɪsk
+The rightful owner.	ðə ɹˈaɪtfəl ˈəʊnɐ
+The rim of the cup.	ðə ɹˈɪm ɒvðə kˈʌp
+The rise and fall of a star.	ðə ɹˈaɪz ænd fˈɔːl əvɐ stˈɑː
+The rise and fall of empires.	ðə ɹˈaɪz ænd fˈɔːl ɒv ˈɪmpaɪəz
+The roof leaks.	ðə ɹˈuːf lˈiːks
+The room has poor ventilation.	ðə ɹˈuːm hɐz pˈɔː vˌɛntɪlˈeɪʃən
+The room is air conditioned.	ðə ɹˈuːm ɪz ˈeə kəndˈɪʃənd
+The room was chaotic.	ðə ɹˈuːm wɒz keɪˈɒtɪk
+The room went dead silent.	ðə ɹˈuːm wɛnt dˈɛd sˈaɪlənt
+The rules are crystal clear.	ðə ɹˈuːlz ɑː kɹˈɪstəl klˈiə
+The sales division.	ðə sˈeɪlz dɪvˈɪʒən
+The same as yours.	ðə sˈeɪm æz jˈɔːz
+The scent of roses.	ðə sˈɛnt ɒv ɹˈəʊzɪz
+The seating area.	ðə sˈiːtɪŋ ˈeəɹiə
+The sensor detects heat.	ðə sˈɛnsɐ dɪtˈɛkts hˈiːt
+The service was discontinued.	ðə sˈɜːvɪs wɒz dɪskəntˈɪnjuːd
+The show bombed.	ðə ʃˈəʊ bˈɒmd
+The show was a sellout.	ðə ʃˈəʊ wʌzɐ sˈɛlaʊt
+The skypath connects two buildings.	ðə skˈaɪpɑːθ kənˈɛkts tˈuː bˈɪldɪŋz
+The slant eyes gesture is offensive.	ðə slˈɑːnt ˈaɪz dʒˈɛstʃɐɹ ɪz əfˈɛnsɪv
+The smell lingered.	ðə smˈɛl lˈɪŋɡəd
+The smoke choked my breathing.	ðə smˈəʊk tʃˈəʊkt maɪ bɹˈiːðɪŋ
+The station is a while away.	ðə stˈeɪʃən ɪz ɐ wˈaɪl ɐwˈeɪ
+The store brings in millions each year.	ðə stˈɔː bɹˈɪŋz ɪn mˈɪliənz ˈiːtʃ jˈiə
+The store's closing day is Friday.	ðə stˈɔːz klˈəʊzɪŋ dˈeɪ ɪz fɹˈaɪdeɪ
+The storm brought chaos.	ðə stˈɔːm bɹˈɔːt kˈeɪɒs
+The street is named after a hero.	ðə stɹˈiːt ɪz nˈeɪmd ˈɑːftɐɹ ɐ hˈiəɹəʊ
+The sum is greater than ten.	ðə sˈʌm ɪz ɡɹˈeɪtɐ ðɐn tˈɛn
+The summer festival.	ðə sˈʌmɐ fˈɛstɪvəl
+The sun rises.	ðə sˈʌn ɹˈaɪzɪz
+The system crashed.	ðə sˈɪstəm kɹˈæʃt
+The talks are at a stand mill.	ðə tˈɔːks ɑːɹ ætɐ stˈænd mˈɪl
+The team consists of five.	ðə tˈiːm kənsˈɪsts ɒv fˈaɪv
+The team held together.	ðə tˈiːm hˈɛld təɡˈɛðɐ
+The team made a major breakthrough in AI research.	ðə tˈiːm mˌeɪd ɐ mˈeɪdʒɐ bɹˈeɪkθɹuː ɪn ˌeɪˈaɪ ɹɪsˈɜːtʃ
+The team operates as an autonomous unit.	ðə tˈiːm ˈɒpəɹˌeɪts æz ɐn ɔːtˈɒnəməs jˈuːnɪt
+The tech sector is growing.	ðə tˈɛk sˈɛktɐɹ ɪz ɡɹˈəʊɪŋ
+The tenant shall be responsible.	ðə tˈɛnənt ʃˌæl biː ɹɪspˈɒnsɪbəl
+The thing is, I forgot.	ðə θˈɪŋ ɪz aɪ fəɡˈɒt
+The thing is, it's expensive.	ðə θˈɪŋ ɪz ɪts ɪkspˈɛnsɪv
+The time has come at last.	ðə tˈaɪm hɐz kˈʌm æt lˈɑːst
+The time has come to decide.	ðə tˈaɪm hɐz kˈʌm tə dɪsˈaɪd
+The total amount is $100.	ðə tˈəʊtəl ɐmˈaʊnt ɪz dˈɒlɐ wˈɒnhˈʌndɹɪd
+The trick is to relax.	ðə tɹˈɪk ɪz tə ɹɪlˈæks
+The trouble is, it costs too much.	ðə tɹˈʌbəl ɪz ɪt kˈɒsts tˈuː mʌtʃ
+The trouble is, no time.	ðə tɹˈʌbəl ɪz nˈəʊ tˈaɪm
+The truth is, I don't know.	ðə tɹˈuːθ ɪz aɪ dˈəʊnt nˈəʊ
+The truth is, I'm scared.	ðə tɹˈuːθ ɪz aɪm skˈeəd
+The truth lies in the details.	ðə tɹˈuːθ lˈaɪz ɪnðə dˈiːteɪlz
+The upper class.	ðɪ ˌʌpɐ klˈɑːs
+The upper deck has a view.	ðɪ ˌʌpɐ dˈɛk hɐz ɐ vjˈuː
+The upside is the flexibility.	ðɪ ˈʌpsaɪd ɪz ðə flˌɛksəbˈɪlɪtɪ
+The very next day, everything changed.	ðə vˈɛɹɪ nˈɛkst dˈeɪ ˈɛvɹɪθˌɪŋ tʃˈeɪndʒd
+The very next day, he called.	ðə vˈɛɹɪ nˈɛkst dˈeɪ hiː kˈɔːld
+The walking dead.	ðə wˈɔːkɪŋ dˈɛd
+The way I see it, no.	ðə wˈeɪ aɪ sˈiː ɪt nˈəʊ
+The way I see it, we lost.	ðə wˈeɪ aɪ sˈiː ɪt wiː lˈɒst
+The way he talks.	ðə wˈeɪ hiː tˈɔːks
+The way things are going, fail.	ðə wˈeɪ θˈɪŋz ɑː ɡˈəʊɪŋ fˈeɪl
+The way things are going, no chance.	ðə wˈeɪ θˈɪŋz ɑː ɡˈəʊɪŋ nˈəʊ tʃˈɑːns
+The weather affects sales.	ðə wˈɛðɐɹ ɐfˈɛkts sˈeɪlz
+The weather is lovely outside.	ðə wˈɛðɐɹ ɪz lˈʌvlɪ aʊtsˈaɪd
+The weather is lovely today.	ðə wˈɛðɐɹ ɪz lˈʌvlɪ tədˈeɪ
+The weather's iffy.	ðə wˈɛðəz ˈɪfɪ
+The wind died down.	ðə wˈɪnd dˈaɪd dˈaʊn
+The work is tedious.	ðə wˈɜːk ɪz tˈiːdiəs
+The youth of today.	ðə jˈuːθ ɒv tədˈeɪ
+Their service is second to none.	ðeə sˈɜːvɪs ɪz sˈɛkənd tə nˈɒn
+Then it dawned on her.	ðˈɛn ɪt dˈɔːnd ˈɒn hɜː
+There is no way I'd do that.	ðeəɹ ɪz nˈəʊ wˈeɪ aɪd dˈuː ðˈæt
+There used to be more shops.	ðeə jˈuːzd təbɪ mˈɔː ʃˈɒps
+There used to be more snow.	ðeə jˈuːzd təbɪ mˈɔː snˈəʊ
+There was this time I...	ðeəwˌɒz ðɪs tˈaɪm ˈaɪ
+There was this time we got lost.	ðeəwˌɒz ðɪs tˈaɪm wiː ɡɒt lˈɒst
+There you go!	ðeə juː ɡˈəʊ
+There you go, you did it.	ðeə juː ɡˈəʊ juː dˈɪd ɪt
+There's a chance it'll rain.	ðeəz ɐ tʃˈɑːns ˌɪtəl ɹˈeɪn
+There's a chance, sure.	ðeəz ɐ tʃˈɑːns ʃˈɔː
+There's a conflict.	ðeəz ɐ kˈɒnflɪkt
+There's a detour ahead.	ðeəz ɐ dˈiːtɔːɹ ɐhˈɛd
+There's a gap between theory and practice.	ðeəz ɐ ɡˈæp bɪtwˌiːn θˈiəɹɪ ænd pɹˈæktɪs
+There's a gap between us.	ðeəz ɐ ɡˈæp bɪtwˈiːn ˌʌs
+There's a service charge.	ðeəz ɐ sˈɜːvɪs tʃˈɑːdʒ
+There's always a catch.	ðeəz ˈɔːlweɪz ɐ kˈætʃ
+There's an attraction between them.	ðeəz ɐn ɐtɹˈækʃən bɪtwˈiːn ðˌɛm
+There's an issue with the app.	ðeəz ɐn ˈɪʃuː wɪððɪ ˈæp
+There's no need to worry.	ðeəz nˈəʊ nˈiːd tə wˈʌɹɪ
+There's no point arguing.	ðeəz nˈəʊ pˈɔɪnt ˈɑːɡjuːɪŋ
+There's no point waiting.	ðeəz nˈəʊ pˈɔɪnt wˈeɪtɪŋ
+There's no rush.	ðeəz nˈəʊ ɹˈʌʃ
+There's no telling what'll happen.	ðeəz nˈəʊ tˈɛlɪŋ wˌɒtəl hˈæpən
+There's no telling when he'll come.	ðeəz nˈəʊ tˈɛlɪŋ wɛn hiːl kˈʌm
+There's no way he did it.	ðeəz nˈəʊ wˈeɪ hiː dˈɪd ɪt
+There's no way he'll come.	ðeəz nˈəʊ wˈeɪ hiːl kˈʌm
+There's no way out.	ðeəz nˈəʊ wˈeɪ ˈaʊt
+There's no way!	ðeəz nˈəʊ wˈeɪ
+There's nothing like fresh bread.	ðeəz nˈʌθɪŋ lˈaɪk fɹˈɛʃ bɹˈɛd
+There's nothing like home.	ðeəz nˈʌθɪŋ lˈaɪk hˈəʊm
+There's something about him.	ðeəz sˈʌmθɪŋ ɐbˈaʊt hˌɪm
+There's something about this place.	ðeəz sˈʌmθɪŋ ɐbˌaʊt ðɪs plˈeɪs
+There's something to that.	ðeəz sˈʌmθɪŋ tə ðˈæt
+Thermography reveals heat loss.	θɜːmˈɒɡɹəfɪ ɹɪvˈiːlz hˈiːt lˈɒs
+These components are designed to be reusable.	ðiːz kəmpˈəʊnənts ɑː dɪzˈaɪnd təbɪ ɹiːjˈuːzəbəl
+These past days have been hard.	ðiːz pˈɑːst dˈeɪz hɐvbɪn hˈɑːd
+These shoes are on sale.	ðiːz ʃˈuːz ɑːɹ ˌɒn sˈeɪl
+These shoes fit.	ðiːz ʃˈuːz fˈɪt
+These words are interchangeable.	ðiːz wˈɜːdz ɑːɹ ˌɪntətʃˈeɪndʒəbəl
+They acted on the tip.	ðeɪ ˈæktɪd ɒnðə tˈɪp
+They agreed to meet.	ðeɪ ɐɡɹˈiːd tə mˈiːt
+They aired their dirty laundry online.	ðeɪ ˈeəd ðeə dˈɜːtɪ lˈɔːndɹɪ ˈɒnlaɪn
+They announced the winner.	ðeɪ ɐnˈaʊnst ðə wˈɪnɐ
+They appointed her CEO.	ðeɪ ɐpˈɔɪntɪd hɜː sˌiːˌiːˈəʊ
+They are opposed to change.	ðeɪ ɑːɹ əpˈəʊzd tə tʃˈeɪndʒ
+They assigned me the task.	ðeɪ ɐsˈaɪnd mˌiː ðə tˈɑːsk
+They blamed him for the loss.	ðeɪ blˈeɪmd hˌɪm fəðə lˈɒs
+They boycotted the brand.	ðeɪ bˈɔɪkɒtɪd ðə bɹˈænd
+They broke out of jail.	ðeɪ bɹˈəʊk ˌaʊtəv dʒˈeɪl
+They broke up last week.	ðeɪ bɹˈəʊk ˌʌp lˈɑːst wˈiːk
+They buried the time capsule.	ðeɪ bˈɛɹɪd ðə tˈaɪm kˈæpsjuːl
+They burned it down.	ðeɪ bˈɜːnd ɪt dˈaʊn
+They cancelled the flight.	ðeɪ kˈænsəld ðə flˈaɪt
+They captured him.	ðeɪ kˈæptʃəd hˌɪm
+They carried out an experiment.	ðeɪ kˈæɹɪd ˈaʊt ɐn ɛkspˈɛɹɪmənt
+They caught him red-handed.	ðeɪ kˈɔːt hˌɪm ɹˈɛdhˈændɪd
+They cracked down on speeders.	ðeɪ kɹˈækt dˌaʊn ˌɒn spˈiːdəz
+They cut corners on safety.	ðeɪ kˈʌt kˈɔːnəz ˌɒn sˈeɪftɪ
+They deserve the win.	ðeɪ dɪzˈɜːv ðə wˈɪn
+They did a spot check.	ðeɪ dˈɪd ɐ spˈɒt tʃˈɛk
+They disagreed on everything.	ðeɪ dˌɪsɐɡɹˈiːd ˌɒn ˈɛvɹɪθˌɪŋ
+They don't get along.	ðeɪ dˈəʊnt ɡɛt ɐlˈɒŋ
+They dragged out the meeting.	ðeɪ dɹˈæɡd ˈaʊt ðə mˈiːtɪŋ
+They equalized late.	ðeɪ ˈiːkwəlˌaɪzd lˈeɪt
+They face legal action.	ðeɪ fˈeɪs lˈiːɡəl ˈækʃən
+They fell in love at first sight.	ðeɪ fˈɛl ɪn lˈʌv æt fˈɜːst sˈaɪt
+They fell out over money.	ðeɪ fˈɛl ˈaʊt ˌəʊvɐ mˈʌnɪ
+They framed him as the villain.	ðeɪ fɹˈeɪmd hˌɪm æz ðə vˈɪlən
+They gave absolutely everything.	ðeɪ ɡˈeɪv ˌæbsəlˈuːtlɪ ˈɛvɹɪθˌɪŋ
+They gave me a discount.	ðeɪ ɡˈeɪv mˌiː ɐ dˈɪskaʊnt
+They gossip about everyone.	ðeɪ ɡˈɒsɪp ɐbˌaʊt ˈɛvɹɪwˌɒn
+They got back together.	ðeɪ ɡɒt bˈæk təɡˈɛðɐ
+They got heated over politics.	ðeɪ ɡɒt hˈiːtɪd ˌəʊvɐ pˈɒlətˌɪks
+They had no objections.	ðeɪ hæd nˈəʊ ɒbdʒˈɛkʃənz
+They have a son.	ðeɪ hæv ɐ sˈʌn
+They have nothing in common.	ðeɪ hæv nˈʌθɪŋ ɪn kˈɒmən
+They kept us in the dark.	ðeɪ kˈɛpt ˌʌs ɪnðə dˈɑːk
+They made no contributions whatsoever.	ðeɪ mˌeɪd nˈəʊ kˌɒntɹɪbjˈuːʃənz wɒtsˌəʊˈɛvɐ
+They only bring chaos.	ðeɪ ˈəʊnlɪ bɹˈɪŋ kˈeɪɒs
+They patched things up.	ðeɪ pˈætʃt θˈɪŋz ˈʌp
+They paved the road.	ðeɪ pˈeɪvd ðə ɹˈəʊd
+They pinned the crime on him.	ðeɪ pˈɪnd ðə kɹˈaɪm ˈɒn hˌɪm
+They prohibit pets.	ðeɪ pɹəhˈɪbɪt pˈɛts
+They promote teamwork.	ðeɪ pɹəmˈəʊt tˈiːmwɜːk
+They provided meals.	ðeɪ pɹəvˈaɪdɪd mˈiːlz
+They pulled together to win.	ðeɪ pˈʊld təɡˌɛðɐ tə wˈɪn
+They really hit it off.	ðeɪ ɹˈiəlɪ hˈɪt ɪt ˈɒf
+They rebuilt the house.	ðeɪ ɹɪbˈɪlt ðə hˈaʊs
+They refused to cooperate.	ðeɪ ɹɪfjˈuːzd tə kəʊˈɒpəɹˌeɪt
+They ripped me off.	ðeɪ ɹˈɪpt mˌiː ˈɒf
+They rolled out the new feature.	ðeɪ ɹˈəʊld ˈaʊt ðə njˈuː fˈiːtʃɐ
+They set out early.	ðeɪ sˈɛt ˈaʊt ˈɜːlɪ
+They shook hands.	ðeɪ ʃˈʊk hˈændz
+They shut down the store.	ðeɪ ʃˈʌt dˌaʊn ðə stˈɔː
+They took in a stray cat.	ðeɪ tˈʊk ɪn ɐ stɹˈeɪ kˈæt
+They trialed the feature for two weeks.	ðeɪ tɹˈaɪəld ðə fˈiːtʃɐ fɔː tˈuː wˈiːks
+They tried to smear him.	ðeɪ tɹˈaɪd tə smˈiə hˌɪm
+They turned against him.	ðeɪ tˈɜːnd ɐɡˈɛnst hˌɪm
+They turned things around.	ðeɪ tˈɜːnd θˈɪŋz ɐɹˈaʊnd
+They walked side by side.	ðeɪ wˈɔːkt sˈaɪd baɪ sˈaɪd
+They were acting like trash.	ðeɪ wɜːɹ ˈæktɪŋ lˈaɪk tɹˈæʃ
+They were arguing again.	ðeɪ wɜːɹ ˈɑːɡjuːɪŋ ɐɡˈɛn
+They were goofing off all day.	ðeɪ wɜː ɡˈuːfɪŋ ˈɒf ˈɔːl dˈeɪ
+They're always bickering.	ðeɪɐɹ ˈɔːlweɪz bˈɪkəɹɪŋ
+They're building an autonomous driving system.	ðeɪɐ bˈɪldɪŋ ɐn ɔːtˈɒnəməs dɹˈaɪvɪŋ sˈɪstəm
+They're out to get me.	ðeɪɐɹ ˈaʊt tə ɡˈɛt mˌiː
+They've got a point.	ðeɪv ɡɒt ɐ pˈɔɪnt
+They've got talent.	ðeɪv ɡɒt tˈælənt
+Thick fog.	θˈɪk fˈɒɡ
+Things changed drastically.	θˈɪŋz tʃˈeɪndʒd dɹˈɑːstɪklɪ
+Things died down.	θˈɪŋz dˈaɪd dˈaʊn
+Things were touch and go.	θˈɪŋz wɜː tˈʌtʃ ænd ɡˈəʊ
+Thinking of trying yoga.	θˈɪŋkɪŋ ɒv tɹˈaɪɪŋ jˈəʊɡɐ
+Third party.	θˈɜːd pˈɑːtɪ
+This app is a lifesaver.	ðɪs ˈæp ɪz ɐ lˈaɪfseɪvɐ
+This belongs to me.	ðɪs bɪlˈɒŋz tə mˌiː
+This book is worth reading.	ðɪs bˈʊk ɪz wˈɜːθ ɹˈiːdɪŋ
+This café is a hidden gem.	ðɪs kæfˈeɪ ɪz ɐ hˈɪdən dʒˈɛm
+This class is so Zzz.	ðɪs klˈɑːs ɪz sˌəʊ zˌɛdzˌɛdzˈɛd
+This contains nuts.	ðɪs kəntˈeɪnz nˈʌts
+This deal is too good to be true.	ðɪs dˈiːl ɪz tˈuː ɡˈʊd təbɪ tɹˈuː
+This enables faster work.	ðɪs ɪnˈeɪbəlz fˈɑːstɐ wˈɜːk
+This film is a masterpiece.	ðɪs fˈɪlm ɪz ɐ mˈɑːstəpˌiːs
+This is 100% better.	ðɪs ɪz wˈɒnhˈʌndɹɪd pəsˈɛnt bˈɛtɐ
+This is a crucial step.	ðɪs ɪz ɐ kɹˈuːʃəl stˈɛp
+This is a game changer.	ðɪs ɪz ɐ ɡˈeɪm tʃˈeɪndʒɐ
+This is a local spot.	ðɪs ɪz ɐ lˈəʊkəl spˈɒt
+This is about to be an absolute disaster.	ðɪs ɪz ɐbˌaʊt təbɪ ɐn ˈæbsəlˌuːt dɪzˈɑːstɐ
+This is child's play.	ðɪs ɪz tʃˈaɪldz plˈeɪ
+This is delicious!	ðɪs ɪz dɪlˈɪʃəs
+This is genuine leather.	ðɪs ɪz dʒˈɛnjuːɪn lˈɛðɐ
+This is how you do it properly.	ðɪs ɪz hˌaʊ juː dˈuː ɪt pɹˈɒpəlɪ
+This is huge for my career.	ðɪs ɪz hjˈuːdʒ fɔː maɪ kəɹˈiə
+This is huge for the team.	ðɪs ɪz hjˈuːdʒ fəðə tˈiːm
+This is just like old times.	ðɪs ɪz dʒˈʌst lˈaɪk ˈəʊld tˈaɪmz
+This is just like the movie.	ðɪs ɪz dʒˈʌst lˈaɪk ðə mˈuːvɪ
+This is just not it, chief.	ðɪs ɪz dʒˈʌst nˌɒt ɪt tʃˈiːf
+This is one of them.	ðɪs ɪz wˈɒn ɒv ðˌɛm
+This is so cute, I can't even.	ðɪs ɪz sˌəʊ kjˈuːt aɪ kˈɑːnt ˈiːvən
+This is so much worse.	ðɪs ɪz sˈəʊ mˌʌtʃ wˈɜːs
+This is something that matters.	ðɪs ɪz sˈʌmθɪŋ ðæt mˈætəz
+This is something that needs attention.	ðɪs ɪz sˈʌmθɪŋ ðæt nˈiːdz ɐtˈɛnʃən
+This is the calm before the storm.	ðɪs ɪz ðə kˈɑːm bɪfˌɔː ðə stˈɔːm
+This is the endgame.	ðɪs ɪz ðɪ ɛndɡˈeɪm
+This is the last straw for me.	ðɪs ɪz ðə lˈɑːst stɹˈɔː fɔː mˌiː
+This is the only time I'll say it.	ðɪs ɪz ðɪ ˈəʊnlɪ tˈaɪm aɪl sˈeɪ ɪt
+This is the only time it's free.	ðɪs ɪz ðɪ ˈəʊnlɪ tˈaɪm ɪts fɹˈiː
+This is the tipping point.	ðɪs ɪz ðə tˈɪpɪŋ pˈɔɪnt
+This is the turning point.	ðɪs ɪz ðə tˈɜːnɪŋ pˈɔɪnt
+This is what freedom feels like.	ðɪs ɪz wɒt fɹˈiːdəm fˈiːlz lˈaɪk
+This is what is called a vibe.	ðɪs ɪz wɒt ɪz kˈɔːld ɐ vˈaɪb
+This joke never gets old.	ðɪs dʒˈəʊk nˈɛvɐ ɡˈɛts ˈəʊld
+This laptop is capable of running heavy software.	ðɪs lˈæptɒp ɪz kˈeɪpəbəl ɒv ɹˈʌnɪŋ hˈɛvɪ sˈɒftweə
+This logo represents us.	ðɪs lˈəʊɡəʊ ɹˌɛpɹɪzˈɛnts ˌʌs
+This match is real chess.	ðɪs mˈætʃ ɪz ɹˈiəl tʃˈɛs
+This model is faster than the old one.	ðɪs mˈɒdəl ɪz fˈɑːstɐ ðɐn ðɪ ˈəʊld wˌɒn
+This novel is a page turner.	ðɪs nˈɒvəl ɪz ɐ pˈeɪdʒ tˈɜːnɐ
+This one stands out.	ðˈɪswˌɒn stˈændz ˈaʊt
+This party is a drag.	ðɪs pˈɑːtɪ ɪz ɐ dɹˈæɡ
+This place is a shithole.	ðɪs plˈeɪs ɪz ɐ ʃˈɪthəʊl
+This place is worth visiting.	ðɪs plˈeɪs ɪz wˈɜːθ vˈɪzɪtɪŋ
+This product is a breakthrough in the industry.	ðɪs pɹˈɒdʌkt ɪz ɐ bɹˈeɪkθɹuː ɪnðɪ ˈɪndʌstɹɪ
+This project is a dumpster fire.	ðɪs pɹˈɒdʒɛkt ɪz ɐ dˈʌmpstɐ fˈaɪə
+This reminds me of you.	ðɪs ɹɪmˈaɪndz mˌiː ɒv juː
+This requires patience.	ðɪs ɹɪkwˈaɪəz pˈeɪʃəns
+This species may go extinct.	ðɪs spˈiːsiːz mˈeɪ ɡˌəʊ ɪkstˈɪŋkt
+This stuff is amazing!	ðɪs stˈʌf ɪz ɐmˈeɪzɪŋ
+This sucks.	ðɪs sˈʌks
+This suits the job best.	ðɪs sˈuːts ðə dʒˈɒb bˈɛst
+This takes up too much room.	ðɪs tˈeɪks ˌʌp tˈuː mʌtʃ ɹˈuːm
+This trend is catching on.	ðɪs tɹˈɛnd ɪz kˈætʃɪŋ ˈɒn
+This underlines the issue.	ðɪs ˌʌndəlˈaɪnz ðɪ ˈɪʃuː
+This used to be a farm.	ðɪs jˈuːzd təbɪ ɐ fˈɑːm
+This used to work.	ðɪs jˈuːzd tə wˈɜːk
+This watch is something I'll never part with.	ðɪs wˈɒtʃ ɪz sˈʌmθɪŋ aɪl nˈɛvɐ pˈɑːt wɪð
+This will come in handy.	ðɪs wɪl kˈʌm ɪn hˈændɪ
+This will do for the time being.	ðɪs wɪl dˈuː fəðə tˈaɪm bˈiːɪŋ
+This will prevent problems.	ðɪs wɪl pɹɪvˈɛnt pɹˈɒbləmz
+Those who are behind the attack.	ðəʊz hˌuː ɑː bɪhˌaɪnd ðɪ ɐtˈæk
+Those who are behind the project.	ðəʊz hˌuː ɑː bɪhˌaɪnd ðə pɹˈɒdʒɛkt
+Those words hit home.	ðəʊz wˈɜːdz hˈɪt hˈəʊm
+Thoughts on this plan?	θˈɔːts ˌɒn ðɪs plˈæn
+Three days in a row.	θɹˈiː dˈeɪz ˌɪnɐ ɹˈəʊ
+Three no-shows today.	θɹˈiː nˈəʊʃˈəʊz tədˈeɪ
+Three yards long.	θɹˈiː jˈɑːdz lˈɒŋ
+Three years, to be precise.	θɹˈiː jˈiəz təbɪ pɹɪsˈaɪs
+Three-tier system.	θɹˈiːtˈiə sˈɪstəm
+Through a microscope.	θɹuː ɐ mˈaɪkɹəskˌəʊp
+Through the tunnel.	θɹuː ðə tˈʌnəl
+Throw it away.	θɹˈəʊ ɪt ɐwˈeɪ
+Throw out the junk.	θɹˈəʊ ˈaʊt ðə dʒˈʌŋk
+Throw the ball.	θɹˈəʊ ðə bˈɔːl
+Throwback Thursday.	θɹˈəʊbæk θˈɜːzdeɪ
+Thrust into the spotlight.	θɹˈʌst ˌɪntʊ ðə spˈɒtlaɪt
+Thrust the door open.	θɹˈʌst ðə dˈɔːɹ ˈəʊpən
+Thumbs up!	θˈʌmz ˈʌp
+Thunder and lightning.	θˈʌndɐɹ ænd lˈaɪtnɪŋ
+Tie the rope tight.	tˈaɪ ðə ɹˈəʊp tˈaɪt
+Tie with a rope.	tˈaɪ wɪð ɐ ɹˈəʊp
+Tie your shoes tight.	tˈaɪ jɔː ʃˈuːz tˈaɪt
+Tied up all day.	tˈaɪd ˌʌp ˈɔːl dˈeɪ
+Tight schedule.	tˈaɪt ʃˈɛdjuːl
+Tighten your belt.	tˈaɪtən jɔː bˈɛlt
+Time for a checkup.	tˈaɪm fəɹɐ tʃˈɛkʌp
+Time for a fresh start.	tˈaɪm fəɹɐ fɹˈɛʃ stˈɑːt
+Time for a gut check.	tˈaɪm fəɹɐ ɡˈʌt tʃˈɛk
+Time for spring cleaning.	tˈaɪm fɔː spɹˈɪŋ klˈiːnɪŋ
+Time has flown by since then.	tˈaɪm hɐz flˈəʊn baɪ sˈɪns ðˈɛn
+Time is running out.	tˈaɪm ɪz ɹˈʌnɪŋ ˈaʊt
+Time to branch out.	tˈaɪm tə bɹˈɑːntʃ ˈaʊt
+Time to clean up.	tˈaɪm tə klˈiːn ˈʌp
+Time to get dressed.	tˈaɪm tə ɡɛt dɹˈɛst
+Time to get going.	tˈaɪm tə ɡɛt ɡˈəʊɪŋ
+Time to go and move on.	tˈaɪm tə ɡˌəʊ ænd mˈuːv ˈɒn
+Time to hit the gym.	tˈaɪm tə hˈɪt ðə dʒˈɪm
+Time to hit the road.	tˈaɪm tə hˈɪt ðə ɹˈəʊd
+Time to knuckle down.	tˈaɪm tə nˈʌkəl dˈaʊn
+Time to make a change.	tˈaɪm tə mˌeɪk ɐ tʃˈeɪndʒ
+Time to reflect on the year.	tˈaɪm tə ɹɪflˈɛkt ɒnðə jˈiə
+Time to reward myself.	tˈaɪm tə ɹɪwˈɔːd maɪsˈɛlf
+Time to scale up.	tˈaɪm tə skˈeɪl ˈʌp
+Time to stretch.	tˈaɪm tə stɹˈɛtʃ
+Time to take action.	tˈaɪm tə tˈeɪk ˈækʃən
+Time to walk my dog.	tˈaɪm tə wˈɔːk maɪ dˈɒɡ
+Time-consuming.	tˈaɪmkənsjˈuːmɪŋ
+Time-money trade-off.	tˈaɪmmˈʌnɪ tɹˈeɪdˈɒf
+Tingled with excitement.	tˈɪŋɡəld wɪð ɪksˈaɪtmənt
+Tingling sensation.	tˈɪŋɡəlɪŋ sɛnsˈeɪʃən
+Tiny detail.	tˈaɪnɪ dˈiːteɪl
+Tiny insect.	tˈaɪnɪ ˈɪnsɛkt
+Tip of the iceberg, honestly.	tˈɪp ɒvðɪ ˈaɪsbɜːɡ ˈɒnɪstlɪ
+Tired of waiting around.	tˈaɪəd ɒv wˈeɪtɪŋ ɐɹˈaʊnd
+Tired? More like exhausted.	tˈaɪəd mˈɔː lˈaɪk ɛɡzˈɔːstɪd
+Tired? Not really.	tˈaɪəd nˌɒt ɹˈiəlɪ
+To a certain extent, yes.	tʊ ɐ sˈɜːtən ɪkstˈɛnt jˈɛs
+To a degree.	tʊ ɐ dɪɡɹˈiː
+To be blunt, it's bad.	təbɪ blˈʌnt ɪts bˈæd
+To be fair, he tried.	təbɪ fˈeə hiː tɹˈaɪd
+To be fair, it's hard.	təbɪ fˈeə ɪts hˈɑːd
+To be frank, I disagree.	təbɪ fɹˈæŋk aɪ dˌɪsɐɡɹˈiː
+To be frank, no.	təbɪ fɹˈæŋk nˈəʊ
+To be frank, ~	təbɪ fɹˈæŋk tˈɪldɐ
+To be honest, I don't like it.	təbɪ ˈɒnɪst aɪ dˈəʊnt lˈaɪk ɪt
+To be honest, I'm tired.	təbɪ ˈɒnɪst aɪm tˈaɪəd
+To be honest, no.	təbɪ ˈɒnɪst nˈəʊ
+To be safe, double-check.	təbɪ sˈeɪf dˈʌbəltʃˈɛk
+To be safe, take an umbrella.	təbɪ sˈeɪf tˈeɪk ɐn ʌmbɹˈɛlɐ
+To begin with, hi.	tə bɪɡˈɪn wɪð hˈaɪ
+To begin with, let's plan.	tə bɪɡˈɪn wɪð lˈɛts plˈæn
+To go please.	tə ɡˌəʊ plˈiːz
+To make matters worse, he's sick.	tə mˌeɪk mˈætəz wˈɜːs hiːz sˈɪk
+To make matters worse, it rained.	tə mˌeɪk mˈætəz wˈɜːs ɪt ɹˈeɪnd
+To my amusement.	tə maɪ ɐmjˈuːzmənt
+To my delight.	tə maɪ dɪlˈaɪt
+To my surprise, he agreed.	tə maɪ səpɹˈaɪz hiː ɐɡɹˈiːd
+To my surprise, it worked.	tə maɪ səpɹˈaɪz ɪt wˈɜːkt
+To put it bluntly, no.	tə pˌʊt ɪt blˈʌntlɪ nˈəʊ
+To put it bluntly, you're wrong.	tə pˌʊt ɪt blˈʌntlɪ jɔː ɹˈɒŋ
+To put it mildly, awkward.	tə pˌʊt ɪt mˈaɪldlɪ ˈɔːkwəd
+To start off the day.	tə stˈɑːt ˈɒf ðə dˈeɪ
+To start off, let me say thanks.	tə stˈɑːt ˈɒf lˈɛt mˌiː sˈeɪ θˈæŋks
+Today is closing day.	tədˈeɪ ɪz klˈəʊzɪŋ dˈeɪ
+Today is leg day.	tədˈeɪ ɪz lˈɛɡ dˈeɪ
+Today is my day off.	tədˈeɪ ɪz maɪ dˈeɪ ˈɒf
+Today is picnic weather.	tədˈeɪ ɪz pˈɪknɪk wˈɛðɐ
+Together with him, we went.	təɡˈɛðɐ wɪð hˌɪm wiː wˈɛnt
+Toggle between modes.	tˈɒɡəl bɪtwˌiːn mˈəʊdz
+Toggle the switch.	tˈɒɡəl ðə swˈɪtʃ
+Tokyo is super diverse.	tˈəʊkɪˌəʊ ɪz sˈuːpɐ daɪvˈɜːs
+Tolerate other opinions.	tˈɒləɹˌeɪt ˈʌðɐɹ əpˈɪniənz
+Tomato seedlings.	təmˈɑːtəʊ sˈiːdlɪŋz
+Tons of fun.	tˈʌnz ɒv fˈʌn
+Tons of work.	tˈʌnz ɒv wˈɜːk
+Too close a call.	tˈuː klˈəʊs ɐ kˈɔːl
+Too dependent on her phone.	tˈuː dɪpˈɛndənt ˌɒn hɜː fˈəʊn
+Too expensive.	tˈuː ɪkspˈɛnsɪv
+Too late to call.	tˈuː lˈeɪt tə kˈɔːl
+Too much drama.	tˈuː mʌtʃ dɹˈɑːmɐ
+Too much hassle.	tˈuː mʌtʃ hˈæsəl
+Too much of a risk.	tˈuː mʌtʃ əvɐ ɹˈɪsk
+Too much overtime lately.	tˈuː mʌtʃ ˈəʊvətˌaɪm lˈeɪtlɪ
+Too much red tape.	tˈuː mʌtʃ ɹˈɛd tˈeɪp
+Too much scrolling is brain rot.	tˈuː mʌtʃ skɹˈəʊlɪŋ ɪz bɹˈeɪn ɹˈɒt
+Too tired to walk.	tˈuː tˈaɪəd tə wˈɔːk
+Took it as a wake-up call.	tˈʊk ɪt æz ɐ wˈeɪkˌʌp kˈɔːl
+Tools that facilitate learning.	tˈuːlz ðæt fəsˈɪlɪtˌeɪt lˈɜːnɪŋ
+Tooth extraction.	tˈuːθ ɛkstɹˈækʃən
+Top grade beef.	tˈɒp ɡɹˈeɪd bˈiːf
+Top notch service.	tˈɒp nˈɒtʃ sˈɜːvɪs
+Top tier.	tˈɒp tˈiə
+Toss a coin for it.	tˈɒs ɐ kˈɔɪn fɔːɹ ɪt
+Toss it in the bin.	tˈɒs ɪt ɪnðə bˈɪn
+Toss it over.	tˈɒs ɪt ˈəʊvɐ
+Total chatterbox!	tˈəʊtəl tʃˈætəbˌɒks
+Total clown.	tˈəʊtəl klˈaʊn
+Total couch potato.	tˈəʊtəl kˈaʊtʃ pətˈeɪtəʊ
+Total dumpster fire.	tˈəʊtəl dˈʌmpstɐ fˈaɪə
+Total immersion learning.	tˈəʊtəl ɪmˈɜːʃən lˈɜːnɪŋ
+Total nerd.	tˈəʊtəl nˈɜːd
+Total newbie at coding.	tˈəʊtəl njˈuːbɪ æt kˈəʊdɪŋ
+Total rip-off.	tˈəʊtəl ɹˈɪpˈɒf
+Totally broke this month.	tˈəʊtəlɪ bɹˈəʊk ðɪs mˈʌnθ
+Totally psyched for the trip.	tˈəʊtəlɪ sˈaɪkd fəðə tɹˈɪp
+Totally swamped this week.	tˈəʊtəlɪ swˈɒmpt ðɪs wˈiːk
+Totally with you on this.	tˈəʊtəlɪ wɪð juː ˌɒn ðˈɪs
+Totally!	tˈəʊtəlɪ
+Tough choice.	tˈʌf tʃˈɔɪs
+Tourist attraction.	tˈɔːɹɪst ɐtɹˈækʃən
+Town square.	tˈaʊn skwˈeə
+Track the metrics.	tɹˈæk ðə mˈɛtɹɪks
+Track the package.	tɹˈæk ðə pˈækɪdʒ
+Track your progress.	tɹˈæk jɔː pɹˈəʊɡɹɛs
+Track your spending.	tɹˈæk jɔː spˈɛndɪŋ
+Trade cards.	tɹˈeɪd kˈɑːdz
+Trade stocks.	tɹˈeɪd stˈɒks
+Trade surplus.	tɹˈeɪd sˈɜːpləs
+Traffic flows in one direction.	tɹˈæfɪk flˈəʊz ɪn wˈɒn daɪɹˈɛkʃən
+Transfer to another office.	tɹˈænsfɜː tʊ ɐnˈʌðɐɹ ˈɒfɪs
+Transform overnight.	tɹænsfˈɔːm ˌəʊvənˈaɪt
+Transformed by experience.	tɹænsfˈɔːmd baɪ ɪkspˈiəɹɪəns
+Transition into a new role.	tɹænsˈɪʃən ˌɪntʊ ɐ njˈuː ɹˈəʊl
+Transition into adulthood.	tɹænsˈɪʃən ˌɪntʊ ɐdˈʌlthʊd
+Trash talk between rivals.	tɹˈæʃ tˈɔːk bɪtwˌiːn ɹˈaɪvəlz
+Trash the old papers.	tɹˈæʃ ðɪ ˈəʊld pˈeɪpəz
+Travel across the continent.	tɹˈævəl əkɹˌɒs ðə kˈɒntɪnənt
+Travel agency.	tɹˈævəl ˈeɪdʒənsɪ
+Travel to Ivory Coast.	tɹˈævəl tʊ ˈaɪvəɹɪ kˈəʊst
+Treat hair loss.	tɹˈiːt hˈeə lˈɒs
+Treat myself to cake.	tɹˈiːt maɪsˈɛlf tə kˈeɪk
+Treat them with dignity and respect.	tɹˈiːt ðˌɛm wɪð dˈɪɡnɪtɪ ænd ɹɪspˈɛkt
+Treated with compassion.	tɹˈiːtɪd wɪð kəmpˈæʃən
+Trends come and go.	tɹˈɛndz kˈʌm ænd ɡˈəʊ
+Tricky question.	tɹˈɪkɪ kwˈɛstʃən
+Trigger memories.	tɹˈɪɡɐ mˈɛməɹɪz
+Triple the recipe.	tɹˈɪpəl ðə ɹˈɛsɪpˌiː
+Trouble logging in.	tɹˈʌbəl lˈɒɡɪŋ ˈɪn
+True for the most part.	tɹˈuː fəðə mˈəʊst pˈɑːt
+True happiness.	tɹˈuː hˈæpɪnəs
+True or not?	tɹˈuː ɔː nˈɒt
+Trust me, it's worth it.	tɹˈʌst mˌiː ɪts wˈɜːθ ɪt
+Trust me, not as easy as it looks.	tɹˈʌst mˌiː nˌɒt æz ˈiːzɪ æz ɪt lˈʊks
+Trust me.	tɹˈʌst mˌiː
+Trust your ability.	tɹˈʌst jɔːɹ ɐbˈɪlətɪ
+Trust your gut feeling.	tɹˈʌst jɔː ɡˈʌt fˈiːlɪŋ
+Trust your gut.	tɹˈʌst jɔː ɡˈʌt
+Trust your intuition.	tɹˈʌst jɔːɹ ɪntjuːˈɪʃən
+Truth be told, I forgot.	tɹˈuːθ biː tˈəʊld aɪ fəɡˈɒt
+Truth be told, I'm tired.	tɹˈuːθ biː tˈəʊld aɪm tˈaɪəd
+Try a new approach.	tɹˈaɪ ɐ njˈuː ɐpɹˈəʊtʃ
+Try it and see what happens.	tɹˈaɪ ɪt ænd sˈiː wɒt hˈæpənz
+Try out a new recipe.	tɹˈaɪ ˈaʊt ɐ njˈuː ɹˈɛsɪpˌiː
+Try out for the team.	tɹˈaɪ ˈaʊt fəðə tˈiːm
+Try something new for a change.	tɹˈaɪ sˈʌmθɪŋ njˈuː fəɹɐ tʃˈeɪndʒ
+Try to be positive about it.	tɹˈaɪ təbɪ pˈɒzɪtˌɪv ɐbˈaʊt ɪt
+Try to behave yourself.	tɹˈaɪ tə bɪhˈeɪv jɔːsˈɛlf
+Try to blend in.	tɹˈaɪ tə blˈɛnd ˈɪn
+Try to calm me.	tɹˈaɪ tə kˈɑːm mˌiː
+Try to have empathy.	tɹˈaɪ tə hæv ˈɛmpəθɪ
+Try to hold it together.	tɹˈaɪ tə hˈəʊld ɪt təɡˈɛðɐ
+Trying to drum up business.	tɹˈaɪɪŋ tə dɹˈʌm ˌʌp bˈɪznəs
+Trying to lose weight.	tɹˈaɪɪŋ tə lˈuːz wˈeɪt
+Turn a blind eye to it.	tˈɜːn ɐ blˈaɪnd ˈaɪ tʊ ɪt
+Turn it upside down.	tˈɜːn ɪt ˈʌpsaɪd dˈaʊn
+Turn off notifications.	tˈɜːn ˈɒf nˌəʊtɪfɪkˈeɪʃənz
+Turn on mobile data.	tˈɜːn ˌɒn mˈəʊbaɪl dˈeɪtɐ
+Turn on the air condition.	tˈɜːn ɒnðɪ ˈeə kəndˈɪʃən
+Turn on the light.	tˈɜːn ɒnðə lˈaɪt
+Turn the key.	tˈɜːn ðə kˈiː
+Turn the page over.	tˈɜːn ðə pˈeɪdʒ ˈəʊvɐ
+Turn the page.	tˈɜːn ðə pˈeɪdʒ
+Turn things around in the second half.	tˈɜːn θˈɪŋz ɐɹˈaʊnd ɪnðə sˈɛkənd hˈɑːf
+Turn up the music.	tˈɜːn ˌʌp ðə mjˈuːzɪk
+Turned out to be cheaper.	tˈɜːnd ˈaʊt təbɪ tʃˈiːpɐ
+Turned out to be wrong.	tˈɜːnd ˈaʊt təbɪ ɹˈɒŋ
+Twist my ankle.	twˈɪst maɪ ˈæŋkəl
+Twist the cap.	twˈɪst ðə kˈæp
+Two blocks away.	tˈuː blˈɒks ɐwˈeɪ
+Two pints, please.	tˈuː pˈaɪnts plˈiːz
+Two remaining seats.	tˈuː ɹɪmˈeɪnɪŋ sˈiːts
+Two spoonfuls.	tˈuː spˈuːnfəlz
+Ubiquitous in modern life.	juːbˈɪkwɪtəs ɪn mˈɒdən lˈaɪf
+Ubiquitous smartphones.	juːbˈɪkwɪtəs smˈɑːtfəʊnz
+Ugh, this never stops.	ˈʌɡ ðɪs nˈɛvɐ stˈɒps
+Ultimate experience.	ˈʌltɪmət ɪkspˈiəɹɪəns
+Ultimate goal.	ˈʌltɪmət ɡˈəʊl
+Unbox the new phone.	ʌnbˈɒks ðə njˈuː fˈəʊn
+Unbox the package.	ʌnbˈɒks ðə pˈækɪdʒ
+Uncivilized behavior isn't tolerated.	ʌnsˈɪvəlˌaɪzd bɪhˈeɪvjɐɹ ˌɪzənt tˈɒləɹˌeɪtɪd
+Uncontrollable laughter.	ʌŋkəntɹˈəʊləbəl lˈɑːftɐ
+Undefeated champion.	ˌʌndɪfˈiːtɪd tʃˈæmpiən
+Under a microscope.	ˌʌndɐɹ ɐ mˈaɪkɹəskˌəʊp
+Under oppression.	ˌʌndɐɹ əpɹˈɛʃən
+Under surveillance.	ˌʌndɐ səvˈeɪləns
+Under the circumstances...	ˌʌndɐ ðə sˈɜːkəmstˌænsɪz
+Under the influence.	ˌʌndɐ ðɪ ˈɪnfluːəns
+Undergoing change.	ˌʌndəɡˈəʊɪŋ tʃˈeɪndʒ
+Undergoing treatment.	ˌʌndəɡˈəʊɪŋ tɹˈiːtmənt
+Underline the key points.	ˌʌndəlˈaɪn ðə kˈiː pˈɔɪnts
+Understand how it functions.	ˌʌndəstˈænd hˌaʊ ɪt fˈʌŋkʃənz
+Undertake a project.	ˌʌndətˈeɪk ɐ pɹˈɒdʒɛkt
+Undoubtedly the best.	ʌndˈaʊtɪdlɪ ðə bˈɛst
+Unemployed for months.	ʌnɪmplˈɔɪd fɔː mˈʌnθs
+Universal remote.	jˌuːnɪvˈɜːsəl ɹɪmˈəʊt
+Universal truth.	jˌuːnɪvˈɜːsəl tɹˈuːθ
+Unknowingly broke the rule.	ʌnnˈəʊɪŋlɪ bɹˈəʊk ðə ɹˈuːl
+Unknowingly helped them.	ʌnnˈəʊɪŋlɪ hˈɛlpt ðˌɛm
+Unmatched quality.	ʌnmˈætʃt kwˈɒlɪtɪ
+Unnecessarily complicated.	ʌnnˌɛsɪsˈɛɹɪlɪ kˈɒmplɪkˌeɪtɪd
+Unpleasant person.	ʌnplˈɛzənt pˈɜːsən
+Unprecedented growth.	ʌnpɹˈɛsɪdəntɪd ɡɹˈəʊθ
+Unreal beauty.	ʌnɹˈiəl bjˈuːtɪ
+Unwelcome news.	ʌnwˈɛlkʌm njˈuːz
+Update my resume.	ˈʌpdeɪt maɪ ɹɪzjˈuːm
+Update your app.	ˈʌpdeɪt jɔːɹ ˈæp
+Uphill climb.	ʌphˈɪl klˈaɪm
+Upload finished.	ˈʌpləʊd fˈɪnɪʃt
+Upscale the brand.	ˈʌpskeɪl ðə bɹˈænd
+Upset stomach from spicy food.	ʌpsˈɛt stˈʌmək fɹɒm spˈaɪsɪ fˈuːd
+Upskill your team.	ˈʌpskɪl jɔː tˈiːm
+Use a drill.	jˈuːs ɐ dɹˈɪl
+Use a framework.	jˈuːs ɐ fɹˈeɪmwɜːk
+Use a joke as an icebreaker.	jˈuːs ɐ dʒˈəʊk æz ɐn ˈaɪsbɹeɪkɐ
+Use a lint roller.	jˈuːs ɐ lˈɪnt ɹˈəʊlɐ
+Use common sense.	jˈuːs kˈɒmən sˈɛns
+Use in conjunction with the app.	jˈuːs ɪn kəndʒˈʌŋkʃən wɪððɪ ˈæp
+Use it as a lever.	jˈuːs ɪt æz ɐ lˈiːvɐ
+Use the armrest.	jˈuːs ðɪ ˈɑːmɹɛst
+Use the can opener.	jˈuːs ðə kæn ˈəʊpənɐ
+Use the skypath to cross.	jˈuːs ðə skˈaɪpɑːθ tə kɹˈɒs
+Use your brain cells.	jˈuːs jɔː bɹˈeɪn sˈɛlz
+Use your imagination.	jˈuːs jɔːɹ ɪmˌædʒɪnˈeɪʃən
+Used to live in NY.	jˈuːzd tə lˈɪv ɪn ˌɛnwˈaɪ
+Using it is deeply offensive.	jˈuːzɪŋ ɪt ɪz dˈiːplɪ əfˈɛnsɪv
+Utilities are expensive.	juːtˈɪlɪtɪz ɑːɹ ɪkspˈɛnsɪv
+Vacation days carry over.	veɪkˈeɪʃən dˈeɪz kˈæɹɪ ˈəʊvɐ
+Vaccinate the kids.	vˈæksɪnˌeɪt ðə kˈɪdz
+Vacuum the carpet.	vˈækjuːm ðə kˈɑːpɪt
+Valuable insight.	vˈæljuːəbəl ˈɪnsaɪt
+Very creative idea!	vˈɛɹɪ kɹiːˈeɪtɪv aɪdˈiə
+Very well said.	vˈɛɹɪ wˈɛl sˈɛd
+Vibe check!	vˈaɪb tʃˈɛk
+Vibrant colors.	vˈaɪbɹənt kˈʌləz
+Video on demand.	vˈɪdɪəʊ ˌɒn dɪmˈɑːnd
+Viewed as a leader.	vjˈuːd æz ɐ lˈiːdɐ
+Visit exhibitions.	vˈɪzɪt ɛksɪbˈɪʃənz
+Visit the grave.	vˈɪzɪt ðə ɡɹˈeɪv
+Visit the graveyard.	vˈɪzɪt ðə ɡɹˈeɪvjɑːd
+Visually appealing.	vˈɪʒuːəlɪ ɐpˈiːlɪŋ
+Vocational school.	vəʊkˈeɪʃənəl skˈuːl
+Vocational training.	vəʊkˈeɪʃənəl tɹˈeɪnɪŋ
+Volatile temper.	vˈɒlɐtˌaɪl tˈɛmpɐ
+Volunteer at the shelter.	vˌɒləntˈiəɹ æt ðə ʃˈɛltɐ
+Volunteers pick up trash.	vˌɒləntˈiəz pˈɪk ˌʌp tɹˈæʃ
+Vote by proxy.	vˈəʊt baɪ pɹˈɒksɪ
+Vow to do better.	vˈaʊ tə dˈuː bˈɛtɐ
+Waist size.	wˈeɪst sˈaɪz
+Wait for a sec.	wˈeɪt fəɹɐ sˈɛk
+Wait, I'll be there soon.	wˈeɪt aɪl biː ðeə sˈuːn
+Wait, I'm coming now.	wˈeɪt aɪm kˈʌmɪŋ nˈaʊ
+Wait, how do you mean exactly?	wˈeɪt hˌaʊ dˈuː juː mˈiːn ɪɡzˈæktlɪ
+Wait, let me get this straight.	wˈeɪt lˈɛt mˌiː ɡɛt ðɪs stɹˈeɪt
+Wait, what for?	wˈeɪt wˈɒt fɔː
+Wait, what was I doing?	wˈeɪt wˌɒt wɒz aɪ dˈuːɪŋ
+Waiting around for nothing.	wˈeɪtɪŋ ɐɹˈaʊnd fɔː nˈʌθɪŋ
+Waive the fee.	wˈeɪv ðə fˈiː
+Waive your rights.	wˈeɪv jɔː ɹˈaɪts
+Wake up to reality.	wˈeɪk ˌʌp tə ɹɪˈælɪtɪ
+Wake up!	wˈeɪk ˈʌp
+Wake up, tomorrow's here.	wˈeɪk ˈʌp təmˈɒɹəʊz hˈiə
+Walk on the sidewalk.	wˈɔːk ɒnðə sˈaɪdwɔːk
+Walk rather than drive.	wˈɔːk ɹˈɑːðɐ ðɐn dɹˈaɪv
+Wanna go?	wˈɒnɐ ɡˈəʊ
+Wanna grab a bite?	wˈɒnɐ ɡɹˈæb ɐ bˈaɪt
+Wanna grab a coffee?	wˈɒnɐ ɡɹˈæb ɐ kˈɒfɪ
+Wanna grab coffee?	wˈɒnɐ ɡɹˈæb kˈɒfɪ
+Wanna hang out tonight?	wˈɒnɐ hˈæŋ ˈaʊt tənˈaɪt
+Want it so bad.	wˈɒnt ɪt sˌəʊ bˈæd
+Want me to drive?	wˈɒnt mˌiː tə dɹˈaɪv
+Want me to help?	wˈɒnt mˌiː tə hˈɛlp
+Want to try? Be my guest.	wˈɒnt tə tɹˈaɪ biː maɪ ɡˈɛst
+War dehumanizes people.	wˈɔː dˌiːhjˈuːmənˌaɪzɪz pˈiːpəl
+Warm all year round.	wˈɔːm ˈɔːl jˈiə ɹˈaʊnd
+Warm all year.	wˈɔːm ˈɔːl jˈiə
+Warm blanket.	wˈɔːm blˈæŋkɪt
+Warmth of family.	wˈɔːmθ ɒv fˈæmɪlɪ
+Warn the public.	wˈɔːn ðə pˈʌblɪk
+Was supposed to come.	wɒz səpˈəʊzd tə kˈʌm
+Wash off the mud.	wˈɒʃ ˈɒf ðə mˈʌd
+Watch a flick.	wˈɒtʃ ɐ flˈɪk
+Watch out for the car!	wˈɒtʃ ˈaʊt fəðə kˈɑː
+Watch out!	wˈɒtʃ ˈaʊt
+Watch over the kids.	wˈɒtʃ ˌəʊvɐ ðə kˈɪdz
+Watch over your things.	wˈɒtʃ ˌəʊvɐ jɔː θˈɪŋz
+Watch the breaking news.	wˈɒtʃ ðə bɹˈeɪkɪŋ njˈuːz
+Watch the fireworks.	wˈɒtʃ ðə fˈaɪəwɜːks
+Watch the parade.	wˈɒtʃ ðə pəɹˈeɪd
+Watch the sunset.	wˈɒtʃ ðə sˈʌnsɛt
+Watch with audio silent.	wˈɒtʃ wɪð ˈɔːdɪˌəʊ sˈaɪlənt
+Watch — this is how you do it.	wˈɒtʃ ðɪs ɪz hˌaʊ juː dˈuː ɪt
+Watching it on repeat.	wˈɒtʃɪŋ ɪt ˌɒn ɹɪpˈiːt
+Water cascades down the rocks.	wˈɔːtɐ kɐskˈeɪdz dˌaʊn ðə ɹˈɒks
+Water pipe.	wˈɔːtɐ pˈaɪp
+Water runs off an angled surface.	wˈɔːtɐ ɹˈʌnz ˈɒf ɐn ˈæŋɡəld sˈɜːfɪs
+Wave goodbye.	wˈeɪv ɡʊdbˈaɪ
+Way back in 2010.	wˈeɪ bˈæk ɪn tˈuː θˈaʊzənd ən tˈɛn
+Way better.	wˈeɪ bˈɛtɐ
+Way faster than expected.	wˈeɪ fˈɑːstɐ ðɐn ɪkspˈɛktɪd
+Way off the mark.	wˈeɪ ˈɒf ðə mˈɑːk
+Way to go!	wˈeɪ tə ɡˈəʊ
+Way too expensive.	wˈeɪ tˈuː ɪkspˈɛnsɪv
+We abide by the agreement.	wiː ɐbˈaɪd baɪ ðɪ ɐɡɹˈiːmənt
+We agreed on the plan.	wiː ɐɡɹˈiːd ɒnðə plˈæn
+We agreed to disagree.	wiː ɐɡɹˈiːd tə dˌɪsɐɡɹˈiː
+We always go Dutch.	wiː ˈɔːlweɪz ɡˌəʊ dˈʌtʃ
+We anticipate problems.	wiː æntˈɪsɪpˌeɪt pɹˈɒbləmz
+We binge watched all night.	wiː bˈɪndʒ wˈɒtʃt ˈɔːl nˈaɪt
+We brainstormed for an hour.	wiː bɹˈeɪnstɔːmd fəɹən ˈaʊɐ
+We broke up.	wiː bɹˈəʊk ˈʌp
+We carried out the plan.	wiː kˈæɹɪd ˈaʊt ðə plˈæn
+We celebrated her birthday.	wiː sˈɛləbɹˌeɪtɪd hɜː bˈɜːθdeɪ
+We corresponded for years.	wiː kˌɒɹɪspˈɒndɪd fɔː jˈiəz
+We don't see eye to eye.	wiː dˈəʊnt sˈiː ˈaɪ tʊ ˈaɪ
+We drifted apart.	wiː dɹˈɪftɪd ɐpˈɑːt
+We drifted off topic.	wiː dɹˈɪftɪd ˈɒf tˈɒpɪk
+We evaluate employees yearly.	wiː ɪvˈæljuːˌeɪt ɪmplˈɔɪiːz jˈiəlɪ
+We finally reached the top.	wiː fˈaɪnəlɪ ɹˈiːtʃt ðə tˈɒp
+We fooled around all day.	wiː fˈuːld ɐɹˈaʊnd ˈɔːl dˈeɪ
+We geeked out over the game.	wiː ɡˈiːkt ˈaʊt ˌəʊvɐ ðə ɡˈeɪm
+We get along well.	wiː ɡɛt ɐlˈɒŋ wˈɛl
+We get by on a small budget.	wiː ɡɛt baɪ ˌɒn ɐ smˈɔːl bˈʌdʒɪt
+We goofed around all day.	wiː ɡˈuːft ɐɹˈaʊnd ˈɔːl dˈeɪ
+We got busted.	wiː ɡɒt bˈʌstɪd
+We got through the week.	wiː ɡɒt θɹuː ðə wˈiːk
+We got to the hotel late.	wiː ɡɒt tə ðə həʊtˈɛl lˈeɪt
+We had a ball.	wiː hæd ɐ bˈɔːl
+We had a blast.	wiː hæd ɐ blˈɑːst
+We had to take a detour.	wiː hædtə tˈeɪk ɐ dˈiːtɔː
+We hashed out a plan.	wiː hˈæʃt ˈaʊt ɐ plˈæn
+We have a lot in common.	wiː hæv ɐ lˈɒt ɪn kˈɒmən
+We have an agreement.	wiː hæv ɐn ɐɡɹˈiːmənt
+We have it all — you name it.	wiː hæv ɪt ˈɔːl juː nˈeɪm ɪt
+We have lots of inside jokes.	wiː hæv lˈɒts ɒv ɪnsˈaɪd dʒˈəʊks
+We hired a consultant to improve our processes.	wiː hˈaɪəd ɐ kənsˈʌltənt tʊ ɪmpɹˈuːv ˌaʊɐ pɹˈəʊsɛsɪz
+We hit it off right away.	wiː hˈɪt ɪt ˈɒf ɹˈaɪt ɐwˈeɪ
+We intend to expand.	wiː ɪntˈɛnd tʊ ɪkspˈænd
+We modified the plan.	wiː mˈɒdɪfˌaɪd ðə plˈæn
+We need a backup plan.	wiː nˈiːd ɐ bˈækʌp plˈæn
+We need to determine the cause.	wiː nˈiːd tə dɪtˈɜːmɪn ðə kˈɔːz
+We need to iron out a few things.	wiː nˈiːd tʊ ˈaɪən ˈaʊt ɐ fjˈuː θˈɪŋz
+We need to streamline operations.	wiː nˈiːd tə stɹˈiːmlaɪn ˌɒpəɹˈeɪʃənz
+We need your expertise.	wiː nˈiːd jɔːɹ ˌɛkspətˈiːz
+We provide free Wi-Fi.	wiː pɹəvˈaɪd fɹˈiː wˈaɪfˌaɪ
+We ran into each other at the cafe.	wiː ɹˈæn ˌɪntʊ ˈiːtʃ ˈʌðɐɹ æt ðə kˈæfeɪ
+We ran out of milk.	wiː ɹˈæn ˌaʊtəv mˈɪlk
+We said the same thing.	wiː sˈɛd ðə sˈeɪm θˈɪŋ
+We see eye to eye on this.	wiː sˈiː ˈaɪ tʊ ˈaɪ ˌɒn ðˈɪs
+We set off at dawn.	wiː sˈɛt ˈɒf æt dˈɔːn
+We set out to find a solution.	wiː sˈɛt ˈaʊt tə fˈaɪnd ɐ səlˈuːʃən
+We share a common interest.	wiː ʃˈeəɹ ɐ kˈɒmən ˈɪntɹɛst
+We should have an equal dialogue.	wiː ʃˌʊdəv ɐn ˈiːkwəl dˈaɪəlɒɡ
+We simulated the test.	wiː sˈɪmjʊlˌeɪtɪd ðə tˈɛst
+We strongly believe it works.	wiː stɹˈɒŋlɪ bɪlˈiːv ɪt wˈɜːks
+We take freedom for granted.	wiː tˈeɪk fɹˈiːdəm fɔː ɡɹˈɑːntɪd
+We undertake to deliver on time.	wiː ˌʌndətˈeɪk tə dɪlˈɪvɐɹ ˌɒn tˈaɪm
+We went to an artsy museum.	wiː wɛnt tʊ ɐn ˈɑːtsɪ mjuːzˈiəm
+We were destined to meet.	wiː wɜː dˈɛstɪnd tə mˈiːt
+We were just messing around.	wiː wɜː dʒˈʌst mˈɛsɪŋ ɐɹˈaʊnd
+We wound up paying.	wiː wˌaʊnd ˈʌp pˈeɪɪŋ
+We'll decide when the time comes.	wiːl dɪsˈaɪd wɛn ðə tˈaɪm kˈʌmz
+We'll have to make do.	wiːl hæv tə mˌeɪk dˈuː
+We'll head out around 8.	wiːl hˈɛd ˈaʊt ɐɹˈaʊnd ˈeɪt
+We'll make do with what we have.	wiːl mˌeɪk dˈuː wɪð wɒt wiː hˈæv
+We'll play it by ear.	wiːl plˈeɪ ɪt baɪ ˈiə
+We'll pull through this.	wiːl pˈʊl θɹuː ðˈɪs
+We'll wait for an update.	wiːl wˈeɪt fəɹən ˈʌpdeɪt
+We're all set.	wiəɹ ˈɔːl sˈɛt
+We're at the stage where ~	wiəɹ æt ðə stˈeɪdʒ wˌeə tˈɪldɐ
+We're behind schedule.	wiə bɪhˌaɪnd ʃˈɛdjuːl
+We're boycotting the meeting.	wiə bˈɔɪkɒtɪŋ ðə mˈiːtɪŋ
+We're close, let's keep going.	wiə klˈəʊs lˈɛts kˈiːp ɡˈəʊɪŋ
+We're experimenting with a new pricing model.	wiəɹ ɛkspˈɛɹɪməntɪŋ wɪð ɐ njˈuː pɹˈaɪsɪŋ mˈɒdəl
+We're going to have to decide soon.	wiə ɡˌəʊɪŋ tə hæv tə dɪsˈaɪd sˈuːn
+We're in a bull market.	wiəɹ ɪn ɐ bˈʊl mˈɑːkɪt
+We're in the red.	wiəɹ ɪnðə ɹˈɛd
+We're not out of the woods yet.	wiə nˌɒt ˌaʊtəv ðə wˈʊdz jˈɛt
+We're on the same timeline.	wiəɹ ɒnðə sˈeɪm tˈaɪmlaɪn
+We're on track to finish.	wiəɹ ˌɒn tɹˈæk tə fˈɪnɪʃ
+We're pleased to announce it.	wiə plˈiːzd tʊ ɐnˈaʊns ɪt
+We're pleased to inform you.	wiə plˈiːzd tʊ ɪnfˈɔːm juː
+We're running behind schedule.	wiə ɹˈʌnɪŋ bɪhˌaɪnd ʃˈɛdjuːl
+We're screwed.	wiə skɹˈuːd
+We're trialing the new tool with a small team first.	wiə tɹˈaɪəlɪŋ ðə njˈuː tˈuːl wɪð ɐ smˈɔːl tˈiːm fˈɜːst
+We've dated on and off.	wiːv dˈeɪtɪd ˌɒn ænd ˈɒf
+Wear a hat.	wˈeəɹ ɐ hˈæt
+Wear a mask.	wˈeəɹ ɐ mˈɑːsk
+Wear an apron.	wˈeəɹ ɐn ˈeɪpɹən
+Wear gloves.	wˈeə ɡlˈʌvz
+Wear the badge.	wˈeə ðə bˈædʒ
+Weather is a wild card.	wˈɛðɐɹ ɪz ɐ wˈaɪld kˈɑːd
+Weather permitting.	wˈɛðɐ pəmˈɪtɪŋ
+Weather prediction.	wˈɛðɐ pɹɪdˈɪkʃən
+Weekend getaway.	wiːkˈɛnd ɡˈɛtəwˌeɪ
+Weigh the pros and cons.	wˈeɪ ðə pɹˈəʊz ænd kˈɒnz
+Weigh your options.	wˈeɪ jɔːɹ ˈɒpʃənz
+Weird flex but OK.	wˈiəd flˈɛks bˌʌt ˌəʊkˈeɪ
+Welcome back to the team.	wˈɛlkʌm bˈæk tə ðə tˈiːm
+Welcome back!	wˈɛlkʌm bˈæk
+Well chuffed!	wˈɛl tʃˈʌft
+Well done!	wˈɛl dˈʌn
+Well said!	wˈɛl sˈɛd
+Well, fancy that!	wˈɛl fˈænsɪ ðˈæt
+Well, it is what it is.	wˈɛl ɪt ɪz wɒt ɪt ˈɪz
+Well, speak of the devil — there he is.	wˈɛl spˈiːk ɒvðə dˈɛvəl ðˈeə hiː ɪz
+What I could do is call them.	wˌɒt aɪ kʊd dˈuː ɪz kˈɔːl ðˌɛm
+What I could offer is a discount.	wˌɒt aɪ kʊd ˈɒfɐɹ ɪz ɐ dˈɪskaʊnt
+What I like about him is his honesty.	wˌɒt aɪ lˈaɪk ɐbˌaʊt hˌɪm ɪz hɪz ˈɒnɪstɪ
+What I like about this place is the view.	wˌɒt aɪ lˈaɪk ɐbˌaʊt ðɪs plˈeɪs ɪz ðə vjˈuː
+What I mean is, it's complicated.	wˌɒt aɪ mˈiːn ɪz ɪts kˈɒmplɪkˌeɪtɪd
+What I mean is, no.	wˌɒt aɪ mˈiːn ɪz nˈəʊ
+What I need is time.	wˌɒt aɪ nˈiːd ɪz tˈaɪm
+What I want is rest.	wˌɒt aɪ wˈɒnt ɪz ɹˈɛst
+What I'm saying is, careful.	wˌɒt aɪm sˈeɪɪŋ ɪz kˈeəfəl
+What I'm saying is, we should wait.	wˌɒt aɪm sˈeɪɪŋ ɪz wiː ʃˌʊd wˈeɪt
+What I'm trying to do is help.	wˌɒt aɪm tɹˈaɪɪŋ tə dˈuː ɪz hˈɛlp
+What a coincidence!	wˌɒt ɐ kəʊˈɪnsɪdəns
+What a day!	wˌɒt ɐ dˈeɪ
+What a drag.	wˌɒt ɐ dɹˈæɡ
+What a fool.	wˌɒt ɐ fˈuːl
+What a great deal!	wˌɒt ɐ ɡɹˈeɪt dˈiːl
+What a hassle.	wˌɒt ɐ hˈæsəl
+What a jerk.	wˌɒt ɐ dʒˈɜːk
+What a mess!	wˌɒt ɐ mˈɛs
+What a relief!	wˌɒt ɐ ɹɪlˈiːf
+What a rip-off!	wˌɒt ɐ ɹˈɪpˈɒf
+What a surprise!	wˌɒt ɐ səpɹˈaɪz
+What a throwback!	wˌɒt ɐ θɹˈəʊbæk
+What an epic journey.	wˌɒt ɐn ˈɛpɪk dʒˈɜːnɪ
+What an idiot.	wˌɒt ɐn ˈɪdɪət
+What are the odds?	wˌɒt ɑː ðɪ ˈɒdz
+What are you up to?	wˌɒt ɑː juː ˈʌp tuː
+What are your symptoms?	wˌɒt ɑː jɔː sˈɪmptəmz
+What brings you here?	wˌɒt bɹˈɪŋz juː hˈiə
+What do you say we go now?	wˌɒt dˈuː juː sˈeɪ wiː ɡˌəʊ nˈaʊ
+What do you say we grab lunch?	wˌɒt dˈuː juː sˈeɪ wiː ɡɹˈæb lˈʌntʃ
+What do you say we leave?	wˌɒt dˈuː juː sˈeɪ wiː lˈiːv
+What do you say?	wˌɒt dˈuː juː sˈeɪ
+What do you think of the new design?	wˌɒt dˈuː juː θˈɪŋk ɒvðə njˈuː dɪzˈaɪn
+What does NASA stand for?	wˌɒt dˈʌz nˈæsɐ stˈænd fɔː
+What exactly would you have done differently?	wˌɒt ɪɡzˈæktlɪ wʊd juː hæv dˈʌn dˈɪfɹəntlɪ
+What exactly would you have done?	wˌɒt ɪɡzˈæktlɪ wʊd juː hæv dˈʌn
+What for?	wˈɒt fɔː
+What gets me is his attitude.	wˌɒt ɡˈɛts mˌiː ɪz hɪz ˈætɪtjˌuːd
+What gets me is the timing.	wˌɒt ɡˈɛts mˌiː ɪz ðə tˈaɪmɪŋ
+What have you found out?	wˌɒt hæv juː fˈaʊnd ˈaʊt
+What if he's late?	wˌɒt ɪf hiːz lˈeɪt
+What if it rains?	wˌɒt ɪf ɪt ɹˈeɪnz
+What impacts do you think AI have on jobs?	wˌɒt ˈɪmpækts dˈuː juː θˈɪŋk ˌeɪˈaɪ hæv ˌɒn dʒˈɒbz
+What impacts do you think SNS have on teens?	wˌɒt ˈɪmpækts dˈuː juː θˈɪŋk ˌɛsˌɛnˈɛs hæv ˌɒn tˈiːnz
+What kind of music?	wˌɒt kˈaɪnd ɒv mjˈuːzɪk
+What kind of person is he?	wˌɒt kˈaɪnd ɒv pˈɜːsən ɪz hiː
+What might cause this error?	wˌɒt mˌaɪt kˈɔːz ðɪs ˈɛɹɐ
+What never fails to make you laugh?	wˌɒt nˈɛvɐ fˈeɪlz tə mˌeɪk juː lˈɑːf
+What time works best?	wˌɒt tˈaɪm wˈɜːks bˈɛst
+What time works for you?	wˌɒt tˈaɪm wˈɜːks fɔː juː
+What type of music do you like?	wˌɒt tˈaɪp ɒv mjˈuːzɪk dˈuː juː lˈaɪk
+What type of person is he?	wˌɒt tˈaɪp ɒv pˈɜːsən ɪz hiː
+What was I doing again?	wˌɒt wɒz aɪ dˌuːɪŋ ɐɡˈɛn
+What was supposed to happen didn't.	wˌɒt wɒz səpˈəʊzd tə hˈæpən dˈɪdnt
+What's all the fuss?	wˌɒts ˈɔːl ðə fˈʌs
+What's it like in Japan?	wˌɒts ɪt lˈaɪk ɪn dʒəpˈæn
+What's it like working there?	wˌɒts ɪt lˈaɪk wˈɜːkɪŋ ðˈeə
+What's it to you?	wˈɒts ɪt tə juː
+What's on the agenda?	wˌɒts ɒnðɪ ɐdʒˈɛndɐ
+What's that supposed to mean?	wˌɒts ðæt səpˈəʊzd tə mˈiːn
+What's the asking price?	wˌɒts ðɪ ˈɑːskɪŋ pɹˈaɪs
+What's the benefit?	wˌɒts ðə bˈɛnɪfˌɪt
+What's the bottom line?	wˌɒts ðə bˈɒtəm lˈaɪn
+What's the catch?	wˌɒts ðə kˈætʃ
+What's the deadline?	wˌɒts ðə dˈɛdlaɪn
+What's the endgame?	wˌɒts ðɪ ɛndɡˈeɪm
+What's the game plan?	wˌɒts ðə ɡˈeɪm plˈæn
+What's the matter with you?	wˌɒts ðə mˈætɐ wɪð juː
+What's the matter?	wˌɒts ðə mˈætɐ
+What's the point of this?	wˌɒts ðə pˈɔɪnt ɒv ðˈɪs
+What's the point?	wˌɒts ðə pˈɔɪnt
+What's the scoop?	wˌɒts ðə skˈuːp
+What's up with him?	wˌɒts ˈʌp wɪð hˌɪm
+What's up with the noise?	wˌɒts ˌʌp wɪððə nˈɔɪz
+What's up, dude?	wˌɒts ˈʌp djˈuːd
+What's wrong with that?	wˌɒts ɹˈɒŋ wɪð ðˈæt
+What's wrong with this idea?	wˌɒts ɹˈɒŋ wɪð ðɪs aɪdˈiə
+What's wrong with trying?	wˌɒts ɹˈɒŋ wɪð tɹˈaɪɪŋ
+What's wrong with you?	wˌɒts ɹˈɒŋ wɪð juː
+What's your departure time?	wˌɒts jɔː dɪpˈɑːtʃɐ tˈaɪm
+What's your ft height?	wˌɒts jɔːɹ ˌɛftˈiː hˈaɪt
+What's your height?	wˌɒts jɔː hˈaɪt
+What's your profession?	wˌɒts jɔː pɹəfˈɛʃən
+Whatever it takes to win.	wɒtˈɛvɐɹ ɪt tˈeɪks tə wˈɪn
+Whatever you do, don't lie.	wɒtˈɛvɐ juː dˈuː dˈəʊnt lˈaɪ
+Whatever you do, stay calm.	wɒtˈɛvɐ juː dˈuː stˈeɪ kˈɑːm
+Whatever you say.	wɒtˈɛvɐ juː sˈeɪ
+Whatever you want.	wɒtˈɛvɐ juː wˈɒnt
+Whatever's convenient.	wɒtˈɛvəz kənvˈiːnɪənt
+Whatever, it doesn't matter.	wɒtˈɛvɐ ɪt dˈʌzənt mˈætɐ
+Wheel rim.	wˈiːl ɹˈɪm
+When did it take place?	wˌɛn dˈɪd ɪt tˈeɪk plˈeɪs
+When it comes to cooking, she's the best.	wˌɛn ɪt kˈʌmz tə kˈʊkɪŋ ʃiːz ðə bˈɛst
+When it comes to money, ~	wˌɛn ɪt kˈʌmz tə mˈʌnɪ tˈɪldɐ
+When it rains, it pours.	wˌɛn ɪt ɹˈeɪnz ɪt pˈɔːz
+When push comes to shove, decide quickly.	wˌɛn pˈʊʃ kˈʌmz tə ʃˈʌv dɪsˈaɪd kwˈɪklɪ
+When push comes to shove, he'll help.	wˌɛn pˈʊʃ kˈʌmz tə ʃˈʌv hiːl hˈɛlp
+Where am I supposed to park?	wˌeəɹ æm aɪ səpˈəʊzd tə pˈɑːk
+Where am I supposed to sit?	wˌeəɹ æm aɪ səpˈəʊzd tə sˈɪt
+Where did you grow up?	wˌeə dˈɪd juː ɡɹˈəʊ ˈʌp
+Where did you purchase it?	wˌeə dˈɪd juː pˈɜːtʃɪs ɪt
+Where do I belong?	wˌeə dˈuː aɪ bɪlˈɒŋ
+Where do we go from here?	wˌeə dˈuː wiː ɡˌəʊ fɹɒm hˈiə
+Where on earth are my keys?	wˌeəɹ ˌɒn ˈɜːθ ɑː maɪ kˈiːz
+Where on earth have you been?	wˌeəɹ ˌɒn ˈɜːθ hˈæv juː bˌiːn
+Where you live matters.	wˌeə juː lˈɪv mˈætəz
+Which is why we left early.	wˌɪtʃ ɪz wˌaɪ wiː lˈɛft ˈɜːlɪ
+Which plan suits you best?	wˌɪtʃ plˈæn sˈuːts juː bˈɛst
+Whichever works for you.	wɪtʃˈɛvɐ wˈɜːks fɔː juː
+Whichever you like.	wɪtʃˈɛvɐ juː lˈaɪk
+Whip out the camera.	wˈɪp ˈaʊt ðə kˈæmɹɐ
+Whip the cream.	wˈɪp ðə kɹˈiːm
+Who is the person in charge?	hˌuː ɪz ðə pˈɜːsən ɪn tʃˈɑːdʒ
+Who's at fault?	hˌuːz æt fˈɒlt
+Who's behind this?	hˌuːz bɪhˌaɪnd ðˈɪs
+Who's going to break the ice?	hˌuːz ɡˌəʊɪŋ tə bɹˈeɪk ðɪ ˈaɪs
+Who's gonna break the news?	hˌuːz ɡˌənɐ bɹˈeɪk ðə njˈuːz
+Who's in charge of this project?	hˌuːz ɪn tʃˈɑːdʒ ɒv ðɪs pɹˈɒdʒɛkt
+Whoa, TMI!	wˈəʊ tˌiːˌɛmˈaɪ
+Whoever called, hang up.	huːˈɛvɐ kˈɔːld hˈæŋ ˈʌp
+Whoever wins gets it.	huːˈɛvɐ wˈɪnz ɡˈɛts ɪt
+Wholesale price.	hˈəʊlseɪl pɹˈaɪs
+Whoops, my bad.	wˈuːps maɪ bˈæd
+Whoops, sorry!	wˈuːps sˈɒɹɪ
+Why are you whispering?	wˌaɪ ɑː juː wˈɪspəɹɪŋ
+Why care about random people who don't know you?	wˌaɪ kˈeəɹ ɐbˌaʊt ɹˈændəm pˈiːpəl hˌuː dˈəʊnt nˈəʊ juː
+Why don't we eat?	wˌaɪ dˈəʊnt wiː ˈiːt
+Why don't you call her?	wˌaɪ dˈəʊnt juː kˈɔːl hɜː
+Why he did it is beyond me.	wˌaɪ hiː dˈɪd ɪt ɪz bɪjˈɒnd mˌiː
+Why not go for it?	wˌaɪ nˌɒt ɡˈəʊ fɔːɹ ɪt
+Why not try?	wˌaɪ nˌɒt tɹˈaɪ
+Why the hurry?	wˌaɪ ðə hˈʌɹɪ
+Why? How do you figure that?	wˈaɪ hˌaʊ dˈuː juː fˈɪɡɐ ðˈæt
+Wicked, innit?	wˈɪkɪd ɪnnˈɪt
+Wild imagination.	wˈaɪld ɪmˌædʒɪnˈeɪʃən
+Wildlife population management.	wˈaɪldlaɪf pˌɒpjʊlˈeɪʃən mˈænɪdʒmənt
+Will you attend?	wɪl juː ɐtˈɛnd
+Will you help if I ask?	wɪl juː hˈɛlp ɪf aɪ ˈɑːsk
+Will you two get back together?	wɪl juː tˈuː ɡɛt bˈæk təɡˈɛðɐ
+Win the election.	wˈɪn ðɪ ɪlˈɛkʃən
+Win the lottery? In your dream.	wˈɪn ðə lˈɒtəɹɪ ɪn jɔː dɹˈiːm
+Win the race.	wˈɪn ðə ɹˈeɪs
+Winning streak.	wˈɪnɪŋ stɹˈiːk
+Wipe that smirk off your face.	wˈaɪp ðæt smˈɜːk ˈɒf jɔː fˈeɪs
+Wipe the dust.	wˈaɪp ðə dˈʌst
+Wiped out from work.	wˈaɪpt ˈaʊt fɹɒm wˈɜːk
+Wireless headphones.	wˈaɪələs hˈɛdfəʊnz
+Wireless internet.	wˈaɪələs ˈɪntənˌɛt
+With all due respect, I disagree.	wɪð ˈɔːl djˈuː ɹɪspˈɛkt aɪ dˌɪsɐɡɹˈiː
+With all due respect, that's wrong.	wɪð ˈɔːl djˈuː ɹɪspˈɛkt ðæts ɹˈɒŋ
+With dinner ready.	wɪð dˈɪnɐ ɹˈɛdɪ
+With excitement.	wɪð ɪksˈaɪtmənt
+With his eyes closed.	wɪð hɪz ˈaɪz klˈəʊzd
+With one exception.	wɪð wˈɒn ɪksˈɛpʃən
+With respect to safety.	wɪð ɹɪspˈɛkt tə sˈeɪftɪ
+With respect to your question...	wɪð ɹɪspˈɛkt tə jɔː kwˈɛstʃən
+With the exception of Sunday.	wɪððɪ ɪksˈɛpʃən ɒv sˈʌndeɪ
+With the intent to harm.	wɪððɪ ɪntˈɛnt tə hˈɑːm
+Within a 5km radius.	wɪðˌɪn ɐ fˈaɪv kˌeɪˈɛm ɹˈeɪdɪəs
+Without a doubt, he'll come.	wɪðˌaʊt ɐ dˈaʊt hiːl kˈʌm
+Without a doubt, the best.	wɪðˌaʊt ɐ dˈaʊt ðə bˈɛst
+Without asking.	wɪðˌaʊt ˈɑːskɪŋ
+Without malice.	wɪðˌaʊt mˈælɪs
+Without saying a word.	wɪðˌaʊt sˈeɪɪŋ ɐ wˈɜːd
+Woman's intuition.	wˈʊmənz ɪntjuːˈɪʃən
+Won by a small margin.	wˈʌn baɪ ɐ smˈɔːl mˈɑːdʒɪn
+Wooden floors.	wˈʊdən flˈɔːz
+Work hard to get an education.	wˈɜːk hˈɑːd tə ɡɛt ɐn ˌɛdʒuːkˈeɪʃən
+Work in a factory.	wˈɜːk ɪn ɐ fˈæktəɹɪ
+Work in the garden.	wˈɜːk ɪnðə ɡˈɑːdən
+Work is piling up.	wˈɜːk ɪz pˈaɪlɪŋ ˈʌp
+Work is underway.	wˈɜːk ɪz ˌʌndəwˈeɪ
+Work on two things simultaneously.	wˈɜːk ˌɒn tˈuː θˈɪŋz sˌɪməltˈeɪniəslɪ
+Work permit.	wˈɜːk pˈɜːmɪt
+Work together as a team.	wˈɜːk təɡˌɛðɐɹ æz ɐ tˈiːm
+Work without interruptions.	wˈɜːk wɪðˌaʊt ˌɪntəɹˈʌpʃənz
+Worked at the expense of sleep.	wˈɜːkt æt ðɪ ɪkspˈɛns ɒv slˈiːp
+Worked out great!	wˈɜːkt ˈaʊt ɡɹˈeɪt
+Working as it's supposed to.	wˈɜːkɪŋ æz ɪts səpˈəʊzd tuː
+Working in parallel.	wˈɜːkɪŋ ɪn pˈæɹəlˌɛl
+Working nonstop.	wˈɜːkɪŋ nˌɒnstˈɒp
+Working weekends? Get a life.	wˈɜːkɪŋ wiːkˈɛndz ɡɛt ɐ lˈaɪf
+World class service.	wˈɜːld klˈɑːs sˈɜːvɪs
+Worn out from work.	wˈɔːn ˈaʊt fɹɒm wˈɜːk
+Worry gave me a sleepless night.	wˈʌɹɪ ɡˈeɪv mˌiː ɐ slˈiːpləs nˈaɪt
+Worsen the problem.	wˈɜːsən ðə pɹˈɒbləm
+Worth a try.	wˈɜːθ ɐ tɹˈaɪ
+Worth the effort.	wˈɜːθ ðɪ ˈɛfət
+Worth trying.	wˈɜːθ tɹˈaɪɪŋ
+Would it be possible to extend the deadline?	wʊd ɪt biː pˈɒsɪbəl tʊ ɪkstˈɛnd ðə dˈɛdlaɪn
+Would it be possible to meet?	wʊd ɪt biː pˈɒsɪbəl tə mˈiːt
+Would you care for some tea?	wʊd juː kˈeə fɔː sˌʌm tˈiː
+Would you mind closing the door?	wʊd juː mˈaɪnd klˈəʊzɪŋ ðə dˈɔː
+Would you mind closing the window?	wʊd juː mˈaɪnd klˈəʊzɪŋ ðə wˈɪndəʊ
+Would you mind waiting?	wʊd juː mˈaɪnd wˈeɪtɪŋ
+Wouldn't surprise me if he quits.	wˈʊdənt səpɹˈaɪz mˌiː ɪf hiː kwˈɪts
+Wouldn't surprise me if it rains.	wˈʊdənt səpɹˈaɪz mˌiː ɪf ɪt ɹˈeɪnz
+Wound up missing the train.	wˌaʊnd ˈʌp mˈɪsɪŋ ðə tɹˈeɪn
+Wow, I've never seen something like this before.	wˈaʊ aɪv nˈɛvɐ sˈiːn sˈʌmθɪŋ lˈaɪk ðɪs bɪfˈɔː
+Wow, time has flown by!	wˈaʊ tˈaɪm hɐz flˈəʊn bˈaɪ
+Write a letter.	ɹˈaɪt ɐ lˈɛtɐ
+Write in a notebook.	ɹˈaɪt ɪn ɐ nˈəʊtbʊk
+X-Men are mutants.	ˈɛksmˈɛn ɑː mjˈuːtənts
+Yeah, I know what you mean.	jˈɛh aɪ nˈəʊ wɒt juː mˈiːn
+Yeah, easier said than done.	jˈɛh ˈiːzɪɐ sˈɛd ðɐn dˈʌn
+Yeah, no sweat.	jˈɛh nˈəʊ swˈɛt
+Yeah, says who?	jˈɛh sˈɛz hˈuː
+Yeah, sounds like a plan.	jˈɛh sˈaʊndz lˈaɪk ɐ plˈæn
+Yeah, when pigs fly.	jˈɛh wˌɛn pˈɪɡz flˈaɪ
+Year-end bonus.	jˈiəɹˈɛnd bˈəʊnəs
+Years of experience.	jˈiəz ɒv ɪkspˈiəɹɪəns
+Yes, that's the spirit.	jˈɛs ðæts ðə spˈɪɹɪt
+Yesterday rained cats and dogs.	jˈɛstədˌeɪ ɹˈeɪnd kˈæts ænd dˈɒɡz
+Yet in reality, nothing changed.	jˈɛt ɪn ɹɪˈælɪtɪ nˈʌθɪŋ tʃˈeɪndʒd
+Yield the right of way.	jˈiːld ðə ɹˈaɪt ɒv wˈeɪ
+Yield to pressure.	jˈiːld tə pɹˈɛʃɐ
+You agree, right?	juː ɐɡɹˈiː ɹˈaɪt
+You alright, mate?	juː ɔːlɹˈaɪt mˈeɪt
+You alright? You look tired.	juː ɔːlɹˈaɪt juː lˈʊk tˈaɪəd
+You bet I will.	juː bˈɛt aɪ wˈɪl
+You bet!	juː bˈɛt
+You blockhead!	juː blˈɒkhɛd
+You broke my heart.	juː bɹˈəʊk maɪ hˈɑːt
+You can count on me.	juː kæn kˈaʊnt ˈɒn mˌiː
+You can make a difference.	juː kæn mˌeɪk ɐ dˈɪfɹəns
+You can opt out anytime.	juː kæn ˈɒpt ˈaʊt ˈɛnɪtˌaɪm
+You can rely on me.	juː kæn ɹɪlˈaɪ ˈɒn mˌiː
+You can tell he's lying.	juː kæn tˈɛl hiːz lˈaɪɪŋ
+You can tell she's tired.	juː kæn tˈɛl ʃiːz tˈaɪəd
+You could face legal action.	juː kʊd fˈeɪs lˈiːɡəl ˈækʃən
+You could see him panic.	juː kʊd sˈiː hˌɪm pˈænɪk
+You deserve better.	juː dɪzˈɜːv bˈɛtɐ
+You deserve it.	juː dɪzˈɜːv ɪt
+You don't have to force yourself to eat.	juː dˈəʊnt hæv tə fˈɔːs jɔːsˈɛlf tʊ ˈiːt
+You don't have to force yourself to go.	juː dˈəʊnt hæv tə fˈɔːs jɔːsˈɛlf tə ɡˈəʊ
+You go in ahead.	juː ɡˌəʊ ɪn ɐhˈɛd
+You got it!	juː ɡˈɒt ɪt
+You got it, boss.	juː ɡˈɒt ɪt bˈɒs
+You gotta be kidding.	juː ɡˈɒtɐ biː kˈɪdɪŋ
+You gotta try this.	juː ɡˈɒtɐ tɹˈaɪ ðˈɪs
+You hit the nail on the head.	juː hˈɪt ðə nˈeɪl ɒnðə hˈɛd
+You know he's nice.	juː nˈəʊ hiːz nˈaɪs
+You know in your heart.	juː nˈəʊ ɪn jɔː hˈɑːt
+You know what I mean?	juː nˈəʊ wɒt aɪ mˈiːn
+You know what, forget it.	juː nˈəʊ wˈɒt fəɡˈɛt ɪt
+You know what? I'm done.	juː nˈəʊ wˈɒt aɪm dˈʌn
+You look fabulous.	juː lˈʊk fˈæbjʊləs
+You look gorgeous!	juː lˈʊk ɡˈɔːdʒəs
+You look like your mom.	juː lˈʊk lˈaɪk jɔː mˈɒm
+You look stunning.	juː lˈʊk stˈʌnɪŋ
+You mean me?	juː mˈiːn mˌiː
+You mean now?	juː mˈiːn nˈaʊ
+You might want to check.	juː mˌaɪt wˈɒnt tə tʃˈɛk
+You might want to leave.	juː mˌaɪt wˈɒnt tə lˈiːv
+You nailed it!	juː nˈeɪld ɪt
+You need sleep.	juː nˈiːd slˈiːp
+You never know what'll happen.	juː nˈɛvɐ nˈəʊ wˌɒtəl hˈæpən
+You never know.	juː nˈɛvɐ nˈəʊ
+You really take after your dad.	juː ɹˈiəlɪ tˈeɪk ˈɑːftɐ jɔː dˈæd
+You said it was free.	juː sˈɛd ɪt wɒz fɹˈiː
+You said you'd come.	juː sˈɛd juːd kˈʌm
+You saved me!	juː sˈeɪvd mˌiː
+You scared me!	juː skˈeəd mˌiː
+You seem tired.	juː sˈiːm tˈaɪəd
+You slayed!	juː slˈeɪd
+You startled me.	juː stˈɑːtəld mˌiː
+You wanna bet?	juː wˈɒnɐ bˈɛt
+You wouldn't believe the price.	juː wˈʊdənt bɪlˈiːv ðə pɹˈaɪs
+You wouldn't believe what happened.	juː wˈʊdənt bɪlˈiːv wɒt hˈæpənd
+You'd be surprised how easy.	juːd biː səpɹˈaɪzd hˌaʊ ˈiːzɪ
+You'd be surprised what he said.	juːd biː səpɹˈaɪzd wɒt hiː sˈɛd
+You'd better go.	juːd bˈɛtɐ ɡˈəʊ
+You'd better hurry.	juːd bˈɛtɐ hˈʌɹɪ
+You'd think he'd call.	juːd θˈɪŋk hiːd kˈɔːl
+You'd think they'd know.	juːd θˈɪŋk ðeɪd nˈəʊ
+You'll find out sooner or later.	juːl fˈaɪnd ˈaʊt sˈuːnɐ ɔː lˈeɪtɐ
+You'll get used to it.	juːl ɡɛt jˈuːzd tʊ ɪt
+You'll know when the time comes.	juːl nˈəʊ wɛn ðə tˈaɪm kˈʌmz
+You'll see why.	juːl sˈiː wˈaɪ
+You're a lifesaver!	jɔːɹ ɐ lˈaɪfseɪvɐ
+You're better off without him.	jɔː bˈɛtɐɹ ˈɒf wɪðˈaʊt hˌɪm
+You're free to choose.	jɔː fɹˈiː tə tʃˈuːz
+You're free to leave.	jɔː fɹˈiː tə lˈiːv
+You're going to have to leave.	jɔː ɡˌəʊɪŋ tə hæv tə lˈiːv
+You're going, whether you like it or not.	jɔː ɡˈəʊɪŋ wˈɛðɐ juː lˈaɪk ɪt ɔː nˈɒt
+You're grounded!	jɔː ɡɹˈaʊndɪd
+You're invited.	jɔːɹ ɪnvˈaɪtɪd
+You're my savior!	jɔː maɪ sˈeɪvjɐ
+You're my sunshine.	jɔː maɪ sˈʌnʃaɪn
+You're not supposed to be here.	jɔː nˌɒt səpˈəʊzd təbɪ hˈiə
+You're off the hook this time.	jɔːɹ ˈɒf ðə hˈʊk ðɪs tˈaɪm
+You're on thin ice.	jɔːɹ ˌɒn θˈɪn ˈaɪs
+You're such a chicken!	jɔː sˈʌtʃ ɐ tʃˈɪkɪn
+You're the last person I'd ever expect here.	jɔː ðə lˈɑːst pˈɜːsən aɪd ˈɛvɐɹ ɪkspˈɛkt hˈiə
+You're truly out of your mind.	jɔː tɹˈuːlɪ ˌaʊtəv jɔː mˈaɪnd
+You're welcome to stay.	jɔː wˈɛlkʌm tə stˈeɪ
+You're welcome to try it.	jɔː wˈɛlkʌm tə tɹˈaɪ ɪt
+Your choice.	jɔː tʃˈɔɪs
+Your feelings are valid.	jɔː fˈiːlɪŋz ɑː vˈælɪd
+Your guess is way off.	jɔː ɡˈɛs ɪz wˈeɪ ˈɒf
+Your help means a lot.	jɔː hˈɛlp mˈiːnz ɐ lˈɒt
+Your outfit is on point!	jɔːɹ ˈaʊtfɪt ɪz ˌɒn pˈɔɪnt
+Your socks stink.	jɔː sˈɒks stˈɪŋk
+Your spot is secured.	jɔː spˈɒt ɪz sɪkjˈɔːd
+Zero chance of winning.	zˈiəɹəʊ tʃˈɑːns ɒv wˈɪnɪŋ
+Zero chance, period.	zˈiəɹəʊ tʃˈɑːns pˈiəɹɪəd
+Zero respect left as a leader.	zˈiəɹəʊ ɹɪspˈɛkt lˈɛft æz ɐ lˈiːdɐ
+Zombie apocalypse.	zˈɒmbɪ ɐpˈɒkɐlˌɪps
+Zzz...	zˌɛdzˌɛdzˈɛd
+"""#
+}

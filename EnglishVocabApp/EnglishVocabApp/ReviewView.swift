@@ -211,6 +211,7 @@ struct ReviewView: View {
                                 smallSpeakerButton(text: ex.english)
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text(ex.english)
+                                    IPALabel(ipa: ex.ipa)
                                     Text(ex.japanese)
                                         .foregroundStyle(.secondary)
                                         .font(.subheadline)
@@ -290,6 +291,7 @@ struct ReviewView: View {
                         smallSpeakerButton(text: ex.english)
                         VStack(alignment: .leading, spacing: 2) {
                             Text(ex.english).font(.subheadline)
+                            IPALabel(ipa: ex.ipa, size: 10)
                             Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
                         }
                     }

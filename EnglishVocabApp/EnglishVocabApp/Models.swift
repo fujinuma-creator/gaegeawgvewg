@@ -13,6 +13,13 @@ struct ExampleSentence: Codable, Identifiable, Hashable {
     enum CodingKeys: String, CodingKey {
         case english, japanese, grammar
     }
+
+    /// British-RP IPA for the whole sentence, looked up by the English text
+    /// in `ExampleIPA` (generated for every seed example). Nil for examples
+    /// the user wrote or regenerated themselves.
+    var ipa: String? {
+        ExampleIPA.lookup(english)
+    }
 }
 
 struct SynonymGroup: Codable, Identifiable, Hashable {

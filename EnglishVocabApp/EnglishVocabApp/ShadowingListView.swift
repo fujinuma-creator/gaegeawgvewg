@@ -312,6 +312,7 @@ struct ExampleDayView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     .buttonStyle(.plain)
+                    IPALabel(ipa: example.ipa)
                 }
                 VStack(alignment: .leading, spacing: 6) {
                     Text("文法・語法の解説").font(.caption2).foregroundStyle(.tertiary)
@@ -363,6 +364,22 @@ struct ExampleDayView: View {
     ExampleListView()
         .environmentObject(WordStore())
 }
+/// Small grey line of IPA under an example sentence. Renders nothing when
+/// the sentence has no transcription, so call sites can use it unconditionally.
+struct IPALabel: View {
+    let ipa: String?
+    var size: CGFloat = 11
+
+    var body: some View {
+        if let ipa, !ipa.isEmpty {
+            Text("/\(ipa)/")
+                .font(.system(size: size))
+                .foregroundStyle(.tertiary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+    }
+}
+
 // MARK: - Conversational-frequency review list (日本語 / 英語 / 会話頻度)
 
 /// Second review list on the Home screen: 3,000 words laid out like a

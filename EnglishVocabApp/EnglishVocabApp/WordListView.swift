@@ -353,6 +353,7 @@ struct WordListContent<Trigger: Equatable>: View {
                             .buttonStyle(.plain)
                             VStack(alignment: .leading, spacing: 1) {
                                 Text(ex.english).font(.subheadline)
+                                IPALabel(ipa: ex.ipa, size: 10)
                                 Text(ex.japanese).font(.caption).foregroundStyle(.secondary)
                             }
                         }
