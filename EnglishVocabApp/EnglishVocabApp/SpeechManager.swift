@@ -9,6 +9,8 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
     case britishPosh = "ukPosh"
     case australian = "au"
     case indian = "in"
+    case irish = "ie"
+    case scottish = "scot"
 
     static let storageKey = "speech.accent"
     static let `default`: EnglishAccent = .britishPosh
@@ -22,6 +24,8 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .britishPosh:  return "イギリス英語（Posh）"
         case .australian:   return "オーストラリア英語"
         case .indian:       return "インド英語"
+        case .irish:        return "アイルランド英語"
+        case .scottish:     return "スコットランド英語"
         }
     }
 
@@ -32,6 +36,8 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .britishPosh:  return "🎩"
         case .australian:   return "🇦🇺"
         case .indian:       return "🇮🇳"
+        case .irish:        return "🇮🇪"
+        case .scottish:     return "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
         }
     }
 
@@ -43,6 +49,9 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .britishPosh:  return ["en-GB"]
         case .australian:   return ["en-AU"]
         case .indian:       return ["en-IN"]
+        case .irish:        return ["en-IE"]
+        // Apple tags the Scottish voice as "en-scotland", not an ISO code.
+        case .scottish:     return ["en-scotland", "en-GB-scotland", "en-GB"]
         }
     }
 
@@ -56,6 +65,8 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .britishPosh:  return ["Daniel", "Serena", "Kate", "Arthur", "Martha", "Jamie"]
         case .australian:   return ["Karen", "Lee", "Catherine", "Matilda"]
         case .indian:       return ["Rishi", "Isha", "Veena", "Neel"]
+        case .irish:        return ["Moira"]
+        case .scottish:     return ["Fiona"]
         }
     }
 
