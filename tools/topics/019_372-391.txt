@@ -1,0 +1,431 @@
+T|💵|借りたお金を返す・返してもらう|人間関係|pay you back, the money I owe you, no rush, awkward to ask, square
+S|
+A|Here. This is the fifty I owe you from last month.|はい。先月借りた50。
+B|Oh, I'd forgotten about that.|あ、忘れてたよ。
+A|I hadn't. It's been bugging me.|私は忘れてない。ずっと気になってた。
+B|You didn't have to rush.|急がなくてもよかったのに。
+A|I know, but I hate owing people. Even friends.|わかってる、でも人に借りがあるのが嫌なんだ。友達でも。
+B|Well, thanks. We're square.|じゃあ、ありがとう。これでチャラだね。
+S|
+A|Also, this is awkward, but... the twenty from the concert?|それと、言いにくいんだけど… コンサートの20は？
+B|Oh! Did I not pay you back for that?|あっ！ あれ返してなかった？
+A|No, but it's fine, honestly.|うん、でも本当に大丈夫だよ。
+B|It's not fine. I completely forgot. I'm so sorry.|大丈夫じゃないよ。完全に忘れてた。本当にごめん。
+A|Don't be. That's why I mentioned it, so we could both stop thinking about it.|気にしないで。お互い気にしなくて済むように言っただけだから。
+B|Let me send it now. Done.|今送るね。送った。
+S|
+A|Thanks. See, that wasn't so bad.|ありがとう。ほらね、そんなに気まずくなかった。
+B|A bit bad. But better than pretending.|ちょっとはね。でも知らないふりをするよりいい。
+A|Next time, just remind me straight away. I won't mind.|次はすぐに言って。気にしないから。
+B|Deal. Same for you.|了解。そっちもね。
+
+T|🧊|「最近冷たくない？」と距離を感じた|人間関係|have I done something, you seem distant, is everything okay between us, I've noticed, clear the air
+S|
+A|Can I ask you something? Have I done something to upset you?|聞いてもいい？ 私、何か気に障ることした？
+B|What? No. Why would you think that?|え？ してないよ。なんでそう思うの？
+A|You've seemed a bit distant lately. Shorter replies, cancelled plans.|最近ちょっと距離を感じて。返事が短かったり、予定をキャンセルしたり。
+B|Oh. I didn't realise it came across that way.|あ。そういうふうに見えてたとは思わなかった。
+A|Maybe I'm overthinking it.|考えすぎかもしれないけど。
+B|You're not, actually. I have been a bit off.|いや、考えすぎじゃない。実際、ちょっと調子が悪かったんだ。
+S|
+A|Is everything okay?|何かあった？
+B|Family stuff. My dad's not well. I've been dealing with it on my own.|家族のこと。父の具合が良くなくて。一人で抱えてた。
+A|Why didn't you say?|なんで言ってくれなかったの？
+B|I didn't want to bring it into every conversation.|どの会話にも持ち込みたくなかったんだ。
+A|It's not "bringing it in". It's telling a friend.|「持ち込む」んじゃないよ。友達に話すってだけ。
+B|I know. I'm sorry it looked like I was pulling away.|わかってる。離れていくように見えてごめん。
+S|
+A|I'm just glad it's not something I did.|私のせいじゃなくて、ほっとしたよ。
+B|Never. You're the last person I'd push away.|絶対にない。あなたは一番遠ざけたくない人だから。
+A|Then let me help. Even if it's just dinner once a week.|じゃあ手伝わせて。週1回の夕飯だけでも。
+B|That would actually be really nice.|それは本当にありがたい。
+
+T|🤝|昔の約束を覚えているか確認する|人間関係|do you remember when we said, we promised, still on, I haven't forgotten, hold you to it
+S|
+A|Do you remember what we said on New Year's Eve?|大晦日に言ったこと、覚えてる？
+B|We said a lot of things. It was a long night.|いろいろ言ったよね。長い夜だったから。
+A|We promised we'd run a half marathon this year.|今年、ハーフマラソンを走るって約束した。
+B|...Did we?|…そうだっけ？
+A|You were very enthusiastic about it.|すごく乗り気だったよ。
+B|I was very enthusiastic about a lot of things that night.|あの夜はいろんなことに乗り気だったからな。
+S|
+A|Is it still on?|まだ有効？
+B|Honestly, I'd forgotten. But I'm not backing out.|正直、忘れてた。でも逃げないよ。
+A|Good. Because I've already signed us up.|よかった。もう2人分申し込んだから。
+B|You what?|何だって？
+A|October. Fourteen weeks away. Plenty of time.|10月。14週間先。時間は十分ある。
+B|Plenty of time to regret this.|後悔する時間は十分あるね。
+S|
+B|Fine. But we train together. I'm not doing it alone.|わかった。でも一緒に練習だよ。一人じゃやらない。
+A|Deal. Sunday mornings, from next week.|了解。来週から日曜の朝。
+B|You're really holding me to this.|本気で約束を守らせるんだね。
+A|You made a promise. I'm just helping you keep it.|約束したのはあなた。守るのを手伝ってるだけ。
+
+T|🗺|一緒に旅行の計画を立てる|人間関係|where should we go, budget, book flights, itinerary, split the planning
+S|
+A|Okay, let's actually plan this trip. Where do we want to go?|よし、ちゃんと旅行の計画を立てよう。どこに行きたい？
+B|Somewhere warm. With good food.|暖かいところ。美味しいものがあるところ。
+A|That's half the world.|それ、世界の半分だよ。
+B|Fine. Portugal or Greece.|わかった。ポルトガルかギリシャ。
+A|Greece is cheaper this time of year.|ギリシャのほうが、この時期は安いよ。
+B|Greece, then. Islands or mainland?|じゃあギリシャ。島？ それとも本土？
+A|One of each? Few days in Athens, then an island.|両方は？ アテネで数日、それから島。
+S|
+B|What's our budget?|予算はどのくらい？
+A|Say a thousand each, including flights?|飛行機込みで、1人1000くらい？
+B|That's doable if we're not fancy about hotels.|ホテルにこだわらなければ、いけそう。
+A|We're never fancy about hotels.|ホテルにこだわったことなんてないよ。
+B|True. Should we split the planning?|たしかに。計画を分担する？
+A|I'll do flights and Athens. You do the island.|私は飛行機とアテネ。あなたは島。
+B|Deal. I already know which island.|了解。もう島は決めてある。
+S|
+A|When do we book?|いつ予約する？
+B|Flights this week, before prices go up.|飛行機は今週中に、値上がりする前に。
+A|Tonight, then. I'll send you options.|じゃあ今夜。候補を送るね。
+B|This is actually happening.|本当に実現するんだね。
+A|It's actually happening.|本当に実現する。
+
+T|🏠|ルームシェアや同居の相談をする|住まい|move in together, split the rent, house rules, personal space, give it a go
+S|
+A|So, I've been thinking. What if we got a place together?|考えてたんだけど。一緒に住むのはどう？
+B|Like, flatmates?|ルームメイトとして？
+A|Yeah. We're both paying too much for tiny flats.|うん。2人とも狭い部屋に高い家賃を払いすぎてる。
+B|That's true. I've thought about it too.|たしかに。私も考えたことある。
+A|A two-bed would be cheaper than what we're each paying now.|2部屋の物件でも、今それぞれ払ってる額より安いよ。
+B|And bigger.|しかも広い。
+S|
+B|But what about the stuff that goes wrong? Dishes, noise, guests.|でも、うまくいかないことは？ 食器とか、騒音とか、来客とか。
+A|We'd need house rules. Written down.|ハウスルールが必要だね。書いたもので。
+B|I need my own space, though. I'm not great at constant company.|ただ、自分の空間は必要なんだ。ずっと誰かといるのは得意じゃなくて。
+A|Same. Separate rooms, and no pressure to hang out.|同じ。部屋は別で、無理に一緒に過ごさなくていい。
+B|That's important to say out loud.|それは口に出して言っておくのが大事だね。
+S|
+A|How about a trial? Six-month lease, see how it goes.|お試しはどう？ 6か月契約で、様子を見る。
+B|If it doesn't work, no hard feelings?|うまくいかなくても、恨みっこなし？
+A|None. We go back to being friends who don't share a kitchen.|なし。キッチンを共有しない友達に戻るだけ。
+B|Okay. Let's give it a go.|わかった。やってみよう。
+
+T|👨‍👩‍👧|家族の問題を相談する|深い話|things at home, my parents are, caught in the middle, it's complicated, don't know what to do
+S|
+A|Things have been difficult at home lately.|最近、家のことが大変で。
+B|What's going on?|何があったの？
+A|My parents are fighting all the time. Really fighting.|両親がずっと喧嘩してる。本気の喧嘩。
+B|Oh no. How long has that been going on?|そんな。いつから？
+A|Months, honestly. It's got worse since Christmas.|正直、何か月も。クリスマス以降ひどくなった。
+B|And you're caught in the middle.|それで板挟みになってるんだね。
+A|Exactly. They both call me to complain about the other.|そう。2人ともお互いの文句を私に電話してくる。
+S|
+B|That's a lot to carry.|それは重いね。
+A|I don't know what to do. I can't fix their marriage.|どうすればいいかわからない。2人の結婚を直すことはできないし。
+B|No, you can't. And it's not your job to.|そうだね。それはあなたの役目じゃない。
+A|But I feel like I should be doing something.|でも何かすべきだって感じるんだ。
+B|You could tell them you love them both, but you won't be the messenger.|2人とも大事だけど、伝言役にはならないって言えばいい。
+A|That feels harsh.|それはきつく感じる。
+B|It's not harsh. It's a boundary.|きつくないよ。線引きってだけ。
+S|
+A|I've never set one with them before.|両親に線引きをしたことがなくて。
+B|Then it'll be uncomfortable. But it'll help all three of you.|じゃあ居心地は悪いだろうね。でも3人全員のためになるよ。
+A|Thank you. I needed someone outside of it.|ありがとう。外から見てくれる人が必要だった。
+B|Anytime. And I mean that.|いつでも。本気で言ってるよ。
+
+T|🏡|親の介護や実家のことを話す|深い話|getting older, looking after, can't manage on their own, care home, guilt
+S|
+A|My mum's getting to the point where she can't manage on her own.|母が、もう一人では生活できない状態になってきてて。
+B|How old is she now?|今おいくつ？
+A|Eighty-two. She fell last month. Nothing broken, but it scared us.|82歳。先月転んだんだ。骨は折れなかったけど、怖かった。
+B|That's a big wake-up call.|それは大きな警鐘だね。
+A|We're trying to decide what to do. Carers, or moving her in with me.|どうするか決めようとしてる。介護士を頼むか、私と一緒に住むか。
+S|
+B|What does she want?|お母さんはどうしたいの？
+A|To stay in her own house. Obviously.|自分の家にいたい。当然だけど。
+B|And what do you want?|あなたはどうしたい？
+A|I want her to be safe. And I feel guilty even thinking about a care home.|安全でいてほしい。介護施設を考えるだけで罪悪感がある。
+B|That guilt is normal. It doesn't mean you're doing anything wrong.|その罪悪感は普通だよ。間違ったことをしてるわけじゃない。
+A|It feels like giving up on her.|見捨てるみたいに感じるんだ。
+B|Getting her proper care isn't giving up. It's the opposite.|ちゃんとした介護を受けさせるのは見捨てることじゃない。むしろ逆だよ。
+S|
+A|Have you been through this?|経験ある？
+B|With my dad, three years ago. It was the hardest year of my life.|父と、3年前に。人生で一番つらい1年だった。
+A|How did you get through it?|どうやって乗り越えたの？
+B|Talking to people who'd done it. Like this.|経験した人と話すこと。今みたいに。
+A|Then can we do this again?|じゃあ、またこうして話せる？
+B|Whenever you need. I mean it.|必要な時はいつでも。本気だよ。
+
+T|📢|転職・退職を決めたと報告する|仕事|I've decided, handed in my notice, new chapter, scared but excited, proud of you
+S|
+A|I've got some news. I've decided to leave my job.|報告があるんだ。仕事を辞めることにした。
+B|Wait, really? You've been there for years.|え、本当に？ 何年もいたのに。
+A|Seven. Too many. I handed in my notice this morning.|7年。長すぎた。今朝、退職届を出した。
+B|How do you feel?|気持ちはどう？
+A|Scared. But excited. Mostly excited.|怖い。でもワクワクしてる。ほとんどワクワク。
+B|That's the right combination.|それがいい組み合わせだよ。
+S|
+B|Have you got something lined up?|次は決まってるの？
+A|A smaller company. Less money, better work.|小さな会社。給料は下がるけど、仕事は良くなる。
+B|That's a brave trade.|勇気ある選択だね。
+A|My dad thinks I'm mad.|父は私がおかしくなったと思ってる。
+B|Dads always do. What does your gut say?|父親はみんなそう言うよ。直感はどう言ってる？
+A|That it's right. I've felt stuck for years.|正しいって。何年もずっと行き詰まってたから。
+S|
+B|Then I'm proud of you. It's a new chapter.|じゃあ誇りに思うよ。新しい章の始まりだね。
+A|Thanks. That means more than you know.|ありがとう。想像以上にうれしい。
+B|We're celebrating this weekend. No arguments.|今週末はお祝い。異論は認めない。
+A|I wouldn't dream of arguing.|異論なんて考えもしないよ。
+
+T|✈️|海外に移住すると打ち明ける|深い話|I'm moving abroad, for good, it's not forever, I'll visit, I'll miss you
+S|
+A|I need to tell you something big.|大事なことを伝えないといけない。
+B|Okay. I'm sitting down.|うん。座ったよ。
+A|I'm moving to Canada. In March.|カナダに引っ越す。3月に。
+B|Canada? For how long?|カナダ？ どのくらい？
+A|I don't know. A few years at least. Maybe for good.|わからない。少なくとも数年。もしかしたらずっと。
+B|Wow. I... wow.|わあ。私… わあ。
+A|I've been thinking about it for a long time. I just didn't know how to say it.|ずっと考えてたんだ。ただ、どう言えばいいかわからなくて。
+S|
+B|I'm happy for you. I'm also devastated, but I'm happy for you.|うれしいよ。同時にすごく寂しいけど、うれしい。
+A|That's exactly how I feel.|私も全く同じ気持ち。
+B|What made you decide?|何がきっかけ？
+A|I've always wanted to live somewhere completely different. And I'm not getting younger.|全く違う場所で暮らしてみたいって、ずっと思ってた。それに、若くなるわけじゃないし。
+B|That's a good reason.|いい理由だね。
+A|It's not forever. And I'll visit. And you'll visit.|永遠じゃないよ。会いに来るし、あなたも来て。
+S|
+B|I'm going to miss you so much.|本当に寂しくなるよ。
+A|I'll miss you too. More than anyone.|私もだよ。誰よりも。
+B|Okay. We have four months. Let's make them count.|わかった。あと4か月ある。大事に使おう。
+A|Every weekend. I promise.|毎週末。約束する。
+
+T|💍|結婚を考えていると相談する|恋愛|thinking about proposing, the one, too soon, how do you know, nervous
+S|
+A|Can I talk to you about something? It's a big one.|相談してもいい？ 大きな話なんだ。
+B|Of course. What's up?|もちろん。どうしたの？
+A|I've been thinking about asking Emma to marry me.|エマに結婚を申し込もうかと考えてるんだ。
+B|Kohei! That's huge.|航平！ それは大ニュースだ。
+A|I know. That's why I'm nervous.|うん。だから緊張してる。
+B|How long have you two been together now?|2人はもうどのくらい付き合ってる？
+A|Three years in June.|6月で3年。
+S|
+B|And how do you know she's the one?|どうして彼女が運命の人だってわかるの？
+A|I don't know if I "know". But I can't imagine not being with her.|「わかる」かどうかはわからない。でも、彼女と一緒じゃない未来が想像できない。
+B|That's about as close as anyone gets.|それが一番確かな答えだよ。
+A|Is it too soon?|早すぎるかな？
+B|Three years isn't soon. You've lived together, you've argued, you've travelled.|3年は早くないよ。一緒に住んで、喧嘩して、旅行もした。
+A|We have. And she's still here.|そうだね。それでも彼女はまだいてくれてる。
+S|
+B|Have you thought about how you'd do it?|どうやって申し込むか考えた？
+A|A bit. Nothing public. She'd hate that.|少し。人前ではやらない。彼女は嫌がるから。
+B|Good call. Simple and private.|いい判断。シンプルで、2人だけで。
+A|Thanks for not laughing at me.|笑わないでくれてありがとう。
+B|Why would I laugh? I'm thrilled. Go get the ring.|なんで笑うの？ すごくうれしいよ。指輪を買いに行きなよ。
+
+T|💐|プロポーズの計画を相談する|恋愛|how should I do it, keep it simple, her favourite place, ring size, don't overthink it
+S|
+A|Okay, I need your help. How should I propose?|助けが必要なんだ。どうやってプロポーズすればいい？
+B|First rule: keep it simple.|第一のルール：シンプルに。
+A|I was thinking of a restaurant. Candles, the whole thing.|レストランを考えてた。キャンドルとか、そういうの。
+B|Does she like that kind of thing?|彼女はそういうのが好き？
+A|...Not really. She'd feel watched.|…あまり。見られてる感じが嫌だと思う。
+B|Then don't do it there. What's her favourite place?|じゃあそこじゃない。彼女のお気に入りの場所は？
+S|
+A|The bench on the hill where we had our first proper date.|初めてちゃんとしたデートをした、丘のベンチ。
+B|That's it. That's the spot.|それだ。そこがいい。
+A|Just the two of us, on a bench?|ベンチで、2人だけで？
+B|Just the two of you. That's what she'll remember.|2人だけで。それが彼女の記憶に残るんだよ。
+A|What if it rains?|雨が降ったら？
+B|Then you propose in the rain. Even better story.|雨の中でプロポーズ。さらにいい話になる。
+S|
+A|Do you know her ring size?|指輪のサイズは知ってる？
+B|No, but her sister will. I'll ask her quietly.|知らないけど、お姉さんなら。こっそり聞いておくよ。
+A|You'd do that?|やってくれるの？
+B|Of course. Now stop overthinking it. You've got this.|当然。考えすぎないで。大丈夫だから。
+
+T|👶|子どもができたと報告する|人間関係|we're expecting, due in, over the moon, congratulations, keep it quiet for now
+S|
+A|So, we have some news.|実は、報告があるんだ。
+B|Good news?|いい知らせ？
+A|Very good. We're expecting.|すごくいい。子どもができた。
+B|No way! Congratulations!|嘘でしょ！ おめでとう！
+A|Thank you. We're over the moon.|ありがとう。2人とも天にも昇る気持ち。
+B|When's the baby due?|予定日はいつ？
+A|October. So about seven months to go.|10月。あと7か月くらい。
+S|
+B|How's she feeling?|彼女の体調は？
+A|Tired, and sick in the mornings. But happy.|疲れやすくて、朝は気持ち悪いみたい。でも幸せそう。
+B|Do you know if it's a boy or a girl?|男の子か女の子かはわかった？
+A|Not yet. We might not find out.|まだ。知らないままにするかも。
+B|A surprise. I like that.|サプライズだね。それもいいね。
+S|
+A|We're keeping it quiet for now. Just close friends and family.|今のところは内緒にしてる。親しい友達と家族だけ。
+B|My lips are sealed.|口は堅いよ。
+A|I know. That's why you're one of the first to know.|わかってる。だから最初に伝えた一人なんだ。
+B|I'm honoured. And I'm going to spoil this kid rotten.|光栄だよ。この子、めちゃくちゃ甘やかすからね。
+
+T|💔|離婚や別居を打ち明ける|深い話|we're separating, it's over, been coming for a while, I'm okay, one day at a time
+S|
+A|I need to tell you something. Tom and I are separating.|伝えないといけないことがある。トムと別居することになった。
+B|Oh, Kohei. I'm so sorry.|そんな、航平。本当につらいね。
+A|It's been coming for a while. We've been unhappy for a long time.|前から兆候はあったんだ。長い間、2人とも幸せじゃなかった。
+B|I had no idea.|全然知らなかった。
+A|We're good at pretending. Or we were.|取り繕うのがうまかったんだ。少なくとも、以前はね。
+B|How are you doing? Really.|気持ちはどう？ 本当のところ。
+S|
+A|Some days I'm fine. Some days I can't get out of bed.|大丈夫な日もある。ベッドから出られない日もある。
+B|That sounds about right for something like this.|こういう時はそうなるものだよ。
+A|The strange part is, it's a relief. And I feel guilty about that.|不思議なのは、ほっとしてるってこと。それに罪悪感がある。
+B|Relief doesn't mean you didn't love him. It means you were carrying a lot.|ほっとするのは、愛してなかったってことじゃない。それだけ抱えてたってこと。
+A|I hadn't thought of it like that.|そういうふうには考えてなかった。
+S|
+B|What do you need right now?|今、何が必要？
+A|Honestly? Normal things. Dinner, bad films, not talking about it sometimes.|正直？ 普通のこと。ご飯とか、くだらない映画とか、時にはその話をしないこと。
+B|I can do all of that. Starting tonight.|全部できるよ。今夜から。
+A|One day at a time.|一日ずつ。
+B|One day at a time. And I'm here for every one of them.|一日ずつ。その全部の日に、私がいるから。
+
+T|🏥|病気が見つかったと打ち明ける|深い話|I got some results, it's serious, treatment, I'm scared, we'll get through this
+S|
+A|I got my test results back.|検査の結果が出たんだ。
+B|And?|それで？
+A|It's not good. They found something.|良くなかった。何か見つかった。
+B|What did they find?|何が見つかったの？
+A|A tumour. They think it's treatable, but it's serious.|腫瘍。治療できると思われてるけど、深刻なんだ。
+B|Kohei. I don't know what to say.|航平。何て言えばいいかわからない。
+A|You don't have to say anything. I just needed to tell someone.|何も言わなくていい。誰かに話したかっただけ。
+S|
+B|What happens next?|次はどうなるの？
+A|More tests. Then treatment starts in a few weeks.|さらに検査。それから数週間後に治療が始まる。
+B|Are you scared?|怖い？
+A|Terrified. I haven't slept properly since Tuesday.|すごく怖い。火曜からまともに寝てない。
+B|I'd be the same.|私でも同じだよ。
+A|I don't want everyone to start treating me differently.|みんなに違う扱いをされるのが嫌なんだ。
+B|I won't. I'll still make fun of your terrible taste in music.|しないよ。相変わらず、あなたのひどい音楽の趣味をからかうから。
+A|Ha. Thank you. That's exactly what I need.|はは。ありがとう。まさにそれが必要なんだ。
+S|
+B|I'm coming to the appointments. Don't argue.|通院には付き添うよ。異論は認めない。
+A|You don't have to.|そこまでしなくても。
+B|I know I don't have to. I want to. We'll get through this.|しなくていいのはわかってる。したいんだ。一緒に乗り越えよう。
+A|We. I like the sound of that.|「一緒に」。その響きがいいね。
+
+T|🌧|落ち込んで何もしたくないと弱音を吐く|深い話|I don't want to do anything, can't be bothered, everything feels heavy, no energy, that's okay
+S|
+A|I don't want to do anything today. Or tomorrow.|今日は何もしたくない。明日も。
+B|Bad day?|つらい日？
+A|Bad week. Everything feels heavy. Even getting dressed.|つらい週。何もかもが重い。着替えることさえ。
+B|Have you been like this for a while?|しばらくそんな感じ？
+A|On and off. This week's been worse.|波があるけど。今週は特にひどい。
+B|Thank you for telling me.|話してくれてありがとう。
+S|
+A|I feel pathetic. I've got no reason to feel like this.|情けない。こんなふうに感じる理由なんてないのに。
+B|You don't need a reason. Feelings don't work like that.|理由なんて要らないよ。感情ってそういうものじゃない。
+A|I keep thinking I should just snap out of it.|気持ちを切り替えるべきだって、ずっと思ってる。
+B|If it worked like that, nobody would ever be sad.|それができるなら、誰も悲しくならないよ。
+A|True.|たしかに。
+B|What if we just do one small thing? Together.|小さなことを1つだけやってみない？ 一緒に。
+S|
+A|Like what?|例えば？
+B|A walk round the block. Ten minutes. Then you can go back to bed.|近所を一周する散歩。10分。それからまたベッドに戻っていい。
+A|Ten minutes. I think I can do ten minutes.|10分。10分ならできると思う。
+B|That's all. And it's okay if that's all you do today.|それだけ。今日はそれだけでいいんだよ。
+A|Okay. Let me find my shoes.|わかった。靴を探す。
+
+T|🙏|「お前がいてよかった」と感謝を伝える|深い話|I don't say this enough, I'm grateful, you've been there, wouldn't have made it, mean the world
+S|
+A|I don't say this enough, but I'm really grateful for you.|あまり言わないけど、本当にあなたに感謝してる。
+B|Where's this coming from?|急にどうしたの？
+A|Just thinking about this year. You've been there for all of it.|この1年のことを考えてて。あなたはずっとそばにいてくれた。
+B|That's what friends do.|友達ってそういうものでしょ。
+A|Not all of them. You showed up. Every time.|全員がそうじゃないよ。あなたは来てくれた。毎回。
+B|You'd have done the same.|あなたも同じことをしてくれたよ。
+S|
+A|When my dad was in hospital, you drove me there at two in the morning.|父が入院した時、夜中の2時に車で送ってくれた。
+B|You'd have got there somehow.|なんとかして行けたでしょ。
+A|Maybe. But I didn't have to. Because of you.|かもね。でもその必要はなかった。あなたがいたから。
+B|Okay, now you're making me emotional.|もう、泣きそうになるじゃない。
+A|Good. You should know what you mean to me.|いいんだよ。私にとってどれだけ大事か、知っておいてほしいから。
+S|
+B|I'm glad you're in my life too. Truly.|私もあなたがいてくれてうれしいよ。心から。
+A|Right. Enough feelings. Let's get food.|さて。感情の話はもう十分。ご飯食べよう。
+B|Agreed. But thank you. I'll remember this.|賛成。でもありがとう。この言葉、覚えておくよ。
+
+T|🌟|夢や目標を応援すると伝える|人間関係|I believe in you, go for it, whatever you need, in your corner, don't let anyone
+S|
+A|So I'm thinking of going back to school. For nursing.|実は、学校に戻ろうかと思ってるんだ。看護を学びに。
+B|Really? That's amazing.|本当に？ すごいじゃない。
+A|You don't think it's too late? I'm thirty-four.|遅すぎると思わない？ 34歳だよ。
+B|Too late for what? You'd be forty either way. Might as well be a nurse at forty.|何に遅すぎるの？ どうせ40歳にはなるんだから。看護師として40歳になればいい。
+A|Ha. That's a good way to look at it.|はは。いい考え方だね。
+B|I mean it. I think you'd be brilliant.|本気だよ。きっと素晴らしい看護師になる。
+S|
+A|My family thinks I should stay where I am. Safe job, steady pay.|家族は今のままがいいって。安定した仕事、安定した給料。
+B|Safe isn't the same as happy.|安定は幸せと同じじゃないよ。
+A|That's what I keep telling myself.|自分にもそう言い聞かせてる。
+B|Then listen to yourself. And don't let anyone talk you out of it.|じゃあ自分の声を聞いて。誰にも思いとどまらせないで。
+A|Even you?|あなたにも？
+B|I'm the last person who'd try. I'm in your corner.|私が一番そんなことしないよ。あなたの味方だから。
+S|
+A|Thank you. I needed someone to say that.|ありがとう。誰かにそう言ってほしかった。
+B|Whatever you need. Study buddy, coffee runs, someone to complain to.|何でも言って。勉強仲間、コーヒー係、愚痴を聞く人。
+A|All three, probably.|たぶん、全部。
+B|Done. Now go and apply.|決まり。じゃあ申し込んできて。
+
+T|🚀|一緒に新しいことを始めようと誘う|人間関係|let's try something new, sign up together, out of our comfort zone, why not, accountability
+S|
+A|I've had an idea. Let's take a pottery class together.|思いついたんだけど。一緒に陶芸教室に通わない？
+B|Pottery? Where did that come from?|陶芸？ どこからそんな発想が？
+A|I walked past a studio yesterday. They do beginners on Tuesdays.|昨日、工房の前を通ったんだ。火曜に初心者向けをやってる。
+B|I've never made anything in my life.|人生で何も作ったことないよ。
+A|Neither have I. That's the point.|私もない。それが狙い。
+B|Out of our comfort zone.|コンフォートゾーンから出るってことね。
+A|Way out. We'll be terrible together.|大きく出る。一緒に下手くそになろう。
+S|
+B|What if I'm the worst in the class?|クラスで一番下手だったら？
+A|Then I'll be second worst. I'll make sure of it.|じゃあ私が2番目に下手になる。保証する。
+B|That's oddly comforting.|それ、変に安心する。
+A|And it's six weeks. If we hate it, we stop.|それに6週間だけ。嫌になったらやめればいい。
+B|Why not, I suppose.|まあ、いいか。
+S|
+B|Okay, I'm in. Sign us up.|わかった、乗った。申し込んで。
+A|Already did.|もうした。
+B|Of course you did.|やっぱりね。
+A|Tuesday, seven. Wear clothes you don't mind ruining.|火曜の7時。汚れてもいい服で来てね。
+B|This is going to be a disaster. I can't wait.|絶対めちゃくちゃになる。楽しみだよ。
+
+T|🤫|何も言わずに一緒にいてほしいと頼む|深い話|just stay, don't say anything, sit with me, I don't need advice, that's enough
+S|
+A|Can you just stay for a bit?|少しいてくれる？
+B|Of course. Do you want to talk?|もちろん。話したい？
+A|No. I don't need advice. I just don't want to be alone.|ううん。アドバイスは要らない。ただ一人になりたくないだけ。
+B|Okay. I'll just be here.|わかった。ここにいるよ。
+A|Thank you.|ありがとう。
+S|
+B|Do you want the TV on, or quiet?|テレビをつける？ それとも静かに？
+A|Quiet. If that's okay.|静かに。よければ。
+B|That's fine.|いいよ。
+A|You don't have to sit there in silence. You can read or something.|黙って座ってなくていいよ。本でも読んでて。
+B|I'm fine. This is fine.|大丈夫。これでいい。
+S|
+A|I know this is weird. Asking you to just sit here.|変だよね。ただ座っててって頼むなんて。
+B|It's not weird. It's the least weird thing you've ever asked me.|変じゃないよ。今まで頼まれたことの中で、一番普通だ。
+A|Ha. Fair.|はは。たしかに。
+B|Just sit. That's enough. That's plenty.|座ってて。それで十分。それだけで十分だから。
+
+T|🙇|自分の間違いを認めて頭を下げる|人間関係|I was wrong, I owe you an apology, no excuses, I take full responsibility, how can I make it right
+S|
+A|I need to say something, and I need you to let me finish.|言わなきゃいけないことがある。最後まで聞いてほしい。
+B|Okay.|うん。
+A|I was wrong. About the whole thing. Completely wrong.|私が間違ってた。全部。完全に間違ってた。
+B|Go on.|続けて。
+A|I said you'd messed up the booking. It was me. I never sent the confirmation.|予約をミスしたのはあなただって言った。私だった。確認を送ってなかったんだ。
+B|I told you that at the time.|その時、私はそう言ったよね。
+A|I know. And I didn't listen. I was embarrassed and I took it out on you.|わかってる。聞かなかった。恥ずかしくて、あなたに当たった。
+S|
+B|That really hurt, you know. In front of everyone.|あれは本当に傷ついたよ。みんなの前で。
+A|I know. No excuses. I take full responsibility.|わかってる。言い訳はしない。全責任は私にある。
+B|I appreciate you saying that.|そう言ってくれてありがとう。
+A|I've already told the others it was my mistake.|他のみんなにはもう、私のミスだったって伝えた。
+B|You did?|そうなの？
+A|This morning. Before I came to you. You deserved that.|今朝。あなたのところに来る前に。当然のことだから。
+S|
+B|Okay. That means a lot.|わかった。それはすごくうれしい。
+A|How can I make it right?|どうすれば償える？
+B|You just did. Mostly. Maybe buy the coffees for a week.|今、もうほとんど償えたよ。あとは、1週間コーヒーをおごるくらいかな。
+A|A month. It's the least I can do.|1か月。それくらいはさせて。
+B|Deal. And thank you for being big enough to say it.|決まり。それと、ちゃんと言える器の大きさに感謝するよ。

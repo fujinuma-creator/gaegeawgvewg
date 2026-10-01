@@ -1,0 +1,402 @@
+T|📚|おすすめの本や漫画を紹介する|雑談|have you read, couldn't put it down, what's it about, lend it to you, page-turner
+S|
+A|Have you read anything good lately?|最近、何かいい本読んだ？
+B|Actually, yes. I just finished this novel and I couldn't put it down.|うん。ちょうど小説を読み終えたんだけど、止まらなかった。
+A|What's it about?|どんな話？
+B|A woman who inherits a lighthouse. Sounds boring, but trust me.|灯台を相続する女性の話。退屈そうに聞こえるけど、信じて。
+A|A lighthouse. Okay, you've got my attention.|灯台。なるほど、興味が湧いてきた。
+S|
+B|It's got this slow-burn mystery underneath the whole thing.|全体の下にじわじわ効いてくるミステリーが流れてるんだ。
+A|Is it long?|長い？
+B|Three hundred pages, but it reads fast. Proper page-turner.|300ページだけど、すぐ読める。ページをめくる手が止まらないやつ。
+A|Do you have it on you?|今持ってる？
+B|At home. I'll lend it to you, if you promise to give it back.|家にある。返すって約束するなら貸すよ。
+A|I always give books back.|本はいつも返してるよ。
+B|You still have my cookbook.|私の料理本、まだ持ってるでしょ。
+S|
+A|Oh. Right. I'll bring that too.|あ。そうだった。それも持っていく。
+B|And what about you? Any manga recommendations?|そっちは？ おすすめの漫画は？
+A|There's this one about a chef in space. It's ridiculous and brilliant.|宇宙のシェフの話があってね。ばかばかしくて最高。
+B|Sold. Let's swap on Friday.|決まり。金曜に交換しよう。
+
+T|☕|最近行ったカフェやお店の話をする|雑談|found this place, hidden gem, hole in the wall, worth checking out, go together
+S|
+A|I found this amazing café last weekend.|先週末、すごくいいカフェを見つけたんだ。
+B|Oh yeah? Where?|へえ？ どこ？
+A|Down one of the side streets near the market. Total hidden gem.|市場の近くの路地裏。完全に隠れた名店。
+B|What's it like?|どんな感じ？
+A|Tiny. Six tables. But the coffee's the best I've had in the city.|小さいよ。テーブル6つ。でもコーヒーはこの街で一番。
+S|
+B|What did you have?|何を頼んだの？
+A|A flat white and this cardamom bun. I'm still thinking about it.|フラットホワイトとカルダモンのパン。まだ頭から離れない。
+B|Now I want one.|今すぐ食べたくなった。
+A|The owner makes them every morning. They sell out by eleven.|オーナーが毎朝作ってるんだ。11時には売り切れる。
+B|Then we'd have to go early.|じゃあ早く行かないとね。
+S|
+A|Saturday morning? I'll show you where it is.|土曜の朝はどう？ 場所を案内するよ。
+B|Deal. Nine?|決まり。9時？
+A|Nine. Don't be late, or no bun.|9時。遅れたらパンなしだよ。
+B|I'll be there at eight fifty-five.|8時55分には着いてるよ。
+
+T|🛋|休日は何をして過ごすか聞かれた|雑談|what do you usually do, lazy day, catch up on, get out of the house, recharge
+S|
+B|What do you usually do at the weekend?|週末はいつも何してるの？
+A|Depends on the week. Sometimes nothing at all.|週によるかな。何もしないこともある。
+B|A proper lazy day?|完全にだらだらする日？
+A|Sometimes. Pyjamas until noon, a film, maybe a nap.|時々ね。昼までパジャマで、映画観て、昼寝したり。
+B|That sounds perfect, honestly.|正直、それ最高だね。
+S|
+A|Other times I need to get out of the house.|逆に、外に出たくなる時もある。
+B|Like where?|例えばどこに？
+A|A walk by the river, or a market. Nothing ambitious.|川沿いの散歩とか、市場とか。大したことじゃないよ。
+B|I'm the same. I need one day out and one day in.|私も同じ。外に出る日と家にいる日が1日ずつ必要。
+A|That's the perfect balance.|それが理想のバランスだよね。
+S|
+B|Do you ever get bored?|退屈になることはない？
+A|Not really. I'm good at doing nothing.|あんまり。何もしないのが得意なんだ。
+B|That's a skill.|それはひとつの才能だね。
+A|It really is. It's how I recharge.|本当にそう。そうやって充電してるんだ。
+
+T|🍳|得意料理や自炊の話をする|雑談|do you cook, signature dish, from scratch, follow a recipe, wing it
+S|
+A|Do you cook much?|料理はよくする？
+B|Most nights. It's cheaper, and I actually enjoy it.|ほぼ毎晩。安いし、実際楽しいんだ。
+A|What's your signature dish?|得意料理は？
+B|Probably my curry. I make the paste from scratch.|たぶんカレーかな。ペーストから手作りするんだ。
+A|From scratch? That's impressive.|一から？ すごいね。
+B|It's not hard once you've done it a few times.|何回かやれば難しくないよ。
+S|
+A|Do you follow recipes or just wing it?|レシピ通りに作る？ それとも感覚で？
+B|I used to follow them religiously. Now I mostly wing it.|昔はきっちり守ってた。今はだいたい感覚。
+A|Any disasters?|失敗は？
+B|Plenty. Last month I put salt instead of sugar in a cake.|たくさん。先月、ケーキに砂糖じゃなくて塩を入れた。
+A|Oh no. Did anyone eat it?|うわ。誰か食べた？
+B|My flatmate. He was very polite about it.|ルームメイト。すごく礼儀正しい反応だったよ。
+S|
+A|I'm hopeless in the kitchen. I live on pasta.|私は料理がダメで。パスタばかり食べてる。
+B|Pasta's a start. I'll teach you the curry sometime.|パスタも立派な一歩だよ。今度カレーを教えてあげる。
+A|Would you really?|本当に？
+B|Sure. Sunday, my place. Bring an apron.|もちろん。日曜、うちで。エプロン持ってきて。
+
+T|🍷|お酒が飲めるか・好きかを話す|雑談|do you drink, lightweight, go red, a glass or two, not a big drinker
+S|
+A|Do you drink?|お酒は飲む？
+B|A bit. I'm not a big drinker, though.|少しね。でもそんなに飲むほうじゃない。
+A|What do you usually go for?|いつもは何を飲むの？
+B|Wine, mostly. A glass or two with dinner.|主にワイン。夕食と一緒に1〜2杯。
+A|Same. Beer just fills me up.|同じ。ビールはお腹がいっぱいになっちゃう。
+S|
+B|Are you a lightweight?|お酒は弱い？
+A|Very. Two drinks and I go bright red.|かなり。2杯で真っ赤になる。
+B|Ha, the Asian flush?|はは、アジア人特有の？
+A|Exactly. My whole face. It's embarrassing.|そう。顔全体。恥ずかしいよ。
+B|I think it's kind of charming.|むしろ可愛らしいと思うけど。
+A|You wouldn't say that if you saw it.|見たらそうは言わないよ。
+S|
+A|What about spirits?|強いお酒は？
+B|Not really. Whisky tastes like medicine to me.|あんまり。ウイスキーは薬みたいな味がする。
+A|Ha, my dad would be horrified.|はは、うちの父が聞いたら卒倒するね。
+B|Everyone's got their thing. Mine's a nice red.|人それぞれだよ。私は美味しい赤ワインがあれば十分。
+A|Then let's find you a nice red.|じゃあ美味しい赤ワインを探そう。
+
+T|🏃|運動や筋トレの習慣について話す|健康|work out, how often, stick to it, rest day, feel the difference
+S|
+A|Do you work out?|運動してる？
+B|Three or four times a week, if I'm being good.|ちゃんとやってれば週に3〜4回。
+A|What do you do?|何をしてるの？
+B|Weights mostly, and a run at the weekend.|主にウェイトと、週末にランニング。
+A|How do you stick to it?|どうやって続けてるの？
+B|Same time every day. If I think about it, I won't go.|毎日同じ時間に。考えたら行かなくなるから。
+S|
+A|I keep starting and stopping.|始めてはやめての繰り返しなんだ。
+B|Everyone does. The trick is to start small.|みんなそうだよ。コツは小さく始めること。
+A|How small?|どのくらい小さく？
+B|Ten minutes. Something you can't say no to.|10分。断れないくらいの量。
+A|That does sound doable.|それならできそうだね。
+B|And take rest days. You'll burn out otherwise.|あと休養日も取って。そうしないと燃え尽きる。
+S|
+A|Do you actually feel the difference?|実際に違いを感じる？
+B|Massively. More energy, better sleep, better mood.|かなり。元気になるし、よく眠れるし、気分もいい。
+A|Okay, you've convinced me. Ten minutes tomorrow.|わかった、説得された。明日10分やる。
+B|Text me when you've done it. I'll hold you to it.|やったらメッセージして。ちゃんと見張ってるから。
+
+T|🌅|朝型か夜型かの話をする|雑談|morning person, night owl, my best work, crash, up at
+S|
+A|Are you a morning person or a night owl?|朝型？ それとも夜型？
+B|Night owl, definitely. I do my best work after ten.|完全に夜型。10時過ぎが一番はかどる。
+A|Really? I'm useless after nine.|本当？ 私は9時を過ぎると使い物にならない。
+B|So you're a morning person.|じゃあ朝型なんだね。
+A|Up at six, no alarm. My brain just switches on.|6時に目覚ましなしで起きる。頭が勝手に動き出すんだ。
+B|That sounds like a superpower.|それは超能力みたいだね。
+S|
+B|What do you do that early?|そんな早くに何をするの？
+A|Coffee, a walk, then I get through emails before anyone's awake.|コーヒー、散歩、それから誰も起きてないうちにメールを片付ける。
+B|And by the afternoon?|午後になると？
+A|I crash. Two o'clock is my low point.|ガクッと落ちる。2時が一番だめな時間。
+B|That's when I'm just getting going.|私はその頃にやっとエンジンがかかる。
+S|
+A|We'd make a terrible team.|チームを組んだら最悪だね。
+B|Or the perfect one. Twenty-four hour coverage.|いや、完璧かも。24時間カバーできる。
+A|Ha, that's one way to look at it.|はは、そういう見方もあるね。
+B|Just don't text me at six.|ただ、6時にメッセージは送らないで。
+
+T|🥦|苦手な食べ物の話をする|雑談|can't stand, the texture, pick it out, acquired taste, give it another go
+S|
+A|Is there anything you don't eat?|食べられないものってある？
+B|Mushrooms. I can't stand them.|きのこ。本当に無理。
+A|Really? Is it the taste?|そうなの？ 味が？
+B|It's the texture. Something about it just wrongs me.|食感なんだ。何かがどうしても受け付けない。
+A|Fair enough. I'm the same with olives.|なるほど。私はオリーブがそうだよ。
+B|Olives! But they're so good.|オリーブ！ あんなに美味しいのに。
+S|
+A|I've tried. I keep giving them another go.|試してはいるんだ。何度も挑戦してる。
+B|They're an acquired taste. It took me years.|あれは慣れが必要な味だよ。私も何年もかかった。
+A|How did you get there?|どうやって克服したの？
+B|Started with the mild green ones. Worked up from there.|マイルドな緑のから始めて。そこから段階的に。
+A|Maybe I'll try that.|それ試してみようかな。
+S|
+B|Do you pick things out, or just avoid the dish?|苦手なものは取り除く？ それとも料理ごと避ける？
+A|Pick them out, quietly. I don't want to be difficult.|こっそり取り除くよ。面倒な人だと思われたくないから。
+B|Same with mushrooms. Little pile on the side of the plate.|きのこも同じ。お皿の端に小さな山ができる。
+A|The shame pile.|恥の山だね。
+B|Exactly.|まさに。
+
+T|👔|相手の服や持ち物を褒める|人間関係|I love your, where did you get it, it suits you, that colour, good eye
+S|
+A|I love your jacket. Where did you get it?|そのジャケット素敵。どこで買ったの？
+B|Oh, thanks! A little vintage shop near the station.|ありがとう！ 駅の近くの小さな古着屋で。
+A|It really suits you. That colour's great on you.|本当に似合ってる。その色、すごくいいね。
+B|You think? I wasn't sure about the green.|そう？ 緑はどうかなって迷ったんだけど。
+A|No, it works. Trust me.|いや、合ってるよ。信じて。
+S|
+B|And your bag's lovely, by the way.|そういえば、そのバッグも素敵だね。
+A|This old thing? I've had it for years.|これ？ もう何年も使ってるよ。
+B|It's aged really well. Is it leather?|いい感じに味が出てる。革？
+A|It is. It was a gift from my sister.|うん。姉からのプレゼントなんだ。
+B|She's got a good eye.|お姉さん、センスいいね。
+S|
+A|We should go to that vintage shop together sometime.|今度一緒にその古着屋に行こうよ。
+B|Yes! They get new stuff every Thursday.|うん！ 毎週木曜に新しいものが入るんだ。
+A|Thursday it is.|じゃあ木曜に。
+B|Don't blame me when you spend too much.|使いすぎても私のせいにしないでね。
+
+T|✂️|髪を切ったことに気づいて話す|人間関係|you've had your hair cut, looks great, big change, where do you go, growing it out
+S|
+A|Wait, you've had your hair cut!|あれ、髪切った！
+B|I have! You noticed.|うん！ 気づいてくれた。
+A|Of course. It looks great. Much shorter.|もちろん。すごくいいね。だいぶ短くなった。
+B|It was a bit of a shock at first. But I'm getting used to it.|最初はちょっとショックだったけど、慣れてきた。
+A|It really suits you. It frames your face.|本当に似合ってる。顔が引き立つよ。
+S|
+B|I was so nervous about it. I almost cancelled.|すごく緊張して。キャンセルしそうになった。
+A|Big change?|大きな変化？
+B|Six inches. I'd been growing it out for two years.|15センチ。2年間伸ばしてたんだ。
+A|Wow. What made you go for it?|わあ。何がきっかけで踏み切ったの？
+B|Just wanted something new. Fresh start.|新しい気分になりたくて。心機一転。
+S|
+A|Where do you go?|どこで切ってるの？
+B|A place on the high street. My stylist's amazing.|大通りのお店。スタイリストが素晴らしいんだ。
+A|I might need the name. I've been putting mine off.|お店の名前教えて。ずっと先延ばしにしてて。
+B|I'll send you her details. Tell her I sent you.|連絡先を送るね。私の紹介って伝えて。
+A|Perfect.|ありがとう。
+
+T|🫶|疲れてそうな相手を気遣う|人間関係|you look tired, everything okay, take it easy, get some rest, here if you need
+S|
+A|Hey, you look exhausted. Everything okay?|ねえ、すごく疲れてるみたい。大丈夫？
+B|Just a long week. I haven't been sleeping well.|長い一週間だったんだ。よく眠れてなくて。
+A|Anything on your mind?|何か気になることでも？
+B|Work stuff, mostly. Nothing dramatic.|主に仕事のこと。大したことじゃないよ。
+A|That doesn't mean it's nothing.|大したことじゃなくても、無視していいわけじゃないよ。
+S|
+A|When did you last have a proper day off?|最後にちゃんと休んだのはいつ？
+B|I honestly can't remember.|正直、思い出せない。
+A|That's your answer, then.|それが答えだね。
+B|I know. I keep saying I'll take one.|わかってる。休むって言い続けてるんだけど。
+A|Take one this weekend. No laptop, no emails.|今週末に取りなよ。パソコンもメールもなし。
+S|
+B|Thanks for noticing. I didn't realise it showed.|気づいてくれてありがとう。顔に出てるとは思わなかった。
+A|It shows. But that's okay.|出てるよ。でも大丈夫。
+B|I'll try to take it easy.|無理しないようにする。
+A|Do. And I'm here if you need to talk.|そうして。話したくなったら、いつでもいるから。
+B|I appreciate that. Really.|ありがとう。本当に。
+
+T|🙂|相手の話に共感して相槌を打つ|人間関係|I know what you mean, that must have been, no way, I can imagine, totally
+S|
+B|So then my landlord says the rent's going up again.|それで大家がまた家賃を上げるって言うんだ。
+A|No way. Again?|嘘でしょ。また？
+B|Third time in two years.|2年で3回目。
+A|That must be so frustrating.|それはすごくイライラするね。
+B|It is. I don't know how long I can stay.|そうなんだ。いつまでいられるかわからない。
+A|I can imagine. Rent's crazy everywhere.|わかるよ。どこも家賃がおかしいから。
+S|
+B|And the worst part is, nothing's been fixed. The heating still doesn't work.|一番ひどいのは、何も直ってないこと。暖房もまだ壊れてる。
+A|You're kidding.|冗談でしょ。
+B|I've asked three times.|3回頼んだのに。
+A|Totally unacceptable. Have you put it in writing?|完全にありえない。書面で出した？
+B|Not yet. I should, shouldn't I?|まだ。出すべきだよね？
+A|Definitely. It makes a difference.|絶対。それで変わるから。
+S|
+B|Sorry, I've been going on a bit.|ごめん、ちょっと話しすぎた。
+A|Not at all. It sounds really stressful.|全然。本当に大変そうだよ。
+B|It helps to say it out loud.|口に出すと楽になるね。
+A|That's what I'm here for. Want another coffee?|そのために私がいるんだから。コーヒーもう一杯どう？
+B|Yes, please.|うん、お願い。
+
+T|😄|冗談を言われて返す|人間関係|very funny, you're hilarious, I walked into that one, good one, I'll get you back
+S|
+B|Nice haircut. Did you lose a bet?|いい髪型だね。賭けにでも負けた？
+A|Very funny. It cost me forty quid.|面白いね。40ポンドかかったんだけど。
+B|They charged you? I'd have done it for free.|お金取られたの？ 私なら無料でやったのに。
+A|That's exactly why I didn't ask you.|だからあなたには頼まなかったんだよ。
+B|Fair.|なるほどね。
+S|
+B|So, how was your date? Did she run away?|それで、デートはどうだった？ 逃げられた？
+A|Ha ha. She did not run away, thank you very much.|はいはい。逃げられてないよ、ご心配どうも。
+B|Walk away, then? Fast walk?|じゃあ歩いて去った？ 早歩きで？
+A|I walked right into that one, didn't I?|完全に自分から餌をまいたね。
+B|You did. It was too easy.|うん。簡単すぎた。
+S|
+A|Okay, you've had your fun. My turn.|さて、もう十分楽しんだでしょ。私の番。
+B|Uh oh.|やばい。
+A|How's that "one-week" project going? Month three now?|あの「1週間」のプロジェクトはどう？ もう3か月目？
+B|Okay, okay. Good one. We're even.|わかった、わかった。うまいね。これでおあいこ。
+A|For now.|今のところはね。
+
+T|🤐|話題が途切れて沈黙になった|人間関係|so, anyway, awkward silence, change the subject, what were you saying, random question
+S|
+A|So... anyway.|えっと… まあ。
+B|Yeah.|うん。
+A|This is a bit of an awkward silence, isn't it?|ちょっと気まずい沈黙だね。
+B|Ha, a bit. I was trying to think of something to say.|はは、ちょっとね。何か言おうと考えてた。
+A|Same. My brain just went blank.|同じ。頭が真っ白になった。
+S|
+A|Okay, random question. If you could live anywhere, where?|じゃあ唐突な質問。どこでも住めるなら、どこ？
+B|Ooh. Somewhere by the sea, definitely.|おお。絶対に海のそば。
+A|Warm sea or cold sea?|温かい海？ 冷たい海？
+B|Warm. I'm not brave enough for cold.|温かいほう。冷たい海に入る勇気はない。
+A|See, now we're talking again.|ほら、また会話が動き出した。
+B|Nice save.|うまく切り抜けたね。
+S|
+B|What were you saying earlier, about your trip?|さっき旅行の話をしかけてなかった？
+A|Oh, right! I completely forgot.|あ、そうだった！ すっかり忘れてた。
+B|You got as far as the airport and then we got distracted.|空港まで話して、それで話が逸れたんだよ。
+A|Okay, so at the airport...|そうそう、それで空港で…
+
+T|🏷|名前を聞き逃して聞き直す|人間関係|sorry, I didn't catch your name, say it again, how do you spell that, terrible with names, got it
+S|
+A|Sorry, I didn't catch your name.|すみません、お名前を聞き逃してしまって。
+B|No problem. It's Siobhan.|大丈夫ですよ。シヴォーンです。
+A|Sorry, could you say it once more?|すみません、もう一度お願いできますか？
+B|Shi-VAWN. It's Irish. Everyone struggles with it.|シ・ヴォーン。アイルランドの名前です。みんな苦労しますよ。
+A|Siobhan. Got it. How do you spell that?|シヴォーン。わかりました。スペルは？
+B|S-I-O-B-H-A-N. Nothing like how it sounds.|S-I-O-B-H-A-N。発音とは全然違います。
+S|
+A|That's a beautiful name, though.|でも綺麗な名前ですね。
+B|Thanks. And you're Kohei, right?|ありがとう。あなたは航平さんでしたよね？
+A|That's right. You got it first time.|そうです。一発で覚えてくれた。
+B|I'm good with names. It's faces I forget.|名前は得意なんです。忘れるのは顔のほう。
+A|I'm the opposite. Terrible with names.|私は逆で。名前がどうしても覚えられなくて。
+S|
+B|Don't worry, you'll remember mine now.|大丈夫、私の名前はもう覚えたでしょう。
+A|After that, I'll never forget it.|あれだけやったら、もう忘れません。
+B|Mission accomplished.|任務完了ですね。
+
+T|🎂|年齢を聞かれて答えたくない|人間関係|how old are you, old enough, a lady never tells, guess, none of your business
+S|
+B|So how old are you, if you don't mind me asking?|失礼でなければ、おいくつですか？
+A|Ha. Old enough.|はは。それなりに。
+B|That's not an answer.|答えになってないですよ。
+A|It's the only one you're getting.|それしか答えないですよ。
+B|Fine, let me guess. Twenty-eight?|わかった、当ててみます。28？
+A|I'll take that. Let's go with twenty-eight.|それでいいです。28ってことにしておきましょう。
+S|
+B|Why so secretive?|なぜそんなに秘密にするの？
+A|I just don't think it matters much.|あまり関係ないと思うだけです。
+B|Fair point. I was only curious.|たしかに。ただ気になっただけで。
+A|I know. No offence taken.|わかってます。気にしてませんよ。
+B|How about a decade? Twenties? Thirties?|じゃあ年代は？ 20代？ 30代？
+A|Nice try.|惜しいですね。
+S|
+B|Okay, I give up. You win.|わかった、降参です。あなたの勝ち。
+A|Thank you. Now, how about you tell me yours?|ありがとう。じゃあ、そちらは教えてくれます？
+B|Ha! None of your business.|はは！ それは秘密です。
+A|See? It's not so easy, is it?|ほらね。簡単じゃないでしょう？
+
+T|📆|次にまた会おうと約束する|人間関係|let's do this again, when are you free, pencil in, I'll text you, looking forward to it
+S|
+A|This was really nice. Let's do it again soon.|今日は本当に楽しかった。近いうちにまたやろう。
+B|Definitely. When are you free?|ぜひ。いつ空いてる？
+A|Next week's a bit busy, but the week after's open.|来週は少し忙しいけど、再来週なら空いてるよ。
+B|What about the Friday? The nineteenth?|金曜はどう？ 19日。
+A|Let me check... yes, that works.|確認するね… うん、大丈夫。
+S|
+B|Same place, or somewhere new?|同じ場所？ それとも新しいところ？
+A|Somewhere new. I'll do some research.|新しいところ。調べておくよ。
+B|You're the expert. I trust you.|あなたは詳しいから。任せる。
+A|No pressure, then.|プレッシャーだね。
+B|I'll pencil it in. Seven o'clock?|仮で入れておくね。7時？
+A|Seven's perfect.|7時で完璧。
+S|
+A|I'll text you the place a few days before.|数日前に場所をメッセージするね。
+B|Great. Looking forward to it already.|ありがとう。もう楽しみだよ。
+A|Me too. Get home safe.|私も。気をつけて帰ってね。
+B|You too. See you on the nineteenth.|そっちも。19日に。
+
+T|🍽|一緒にご飯に行こうと誘う|人間関係|do you fancy, grab dinner, I know a place, my treat, how does Thursday sound
+S|
+A|Hey, do you fancy grabbing dinner sometime this week?|ねえ、今週どこかで夕飯に行かない？
+B|I'd love to. What were you thinking?|ぜひ。何を考えてる？
+A|There's a Thai place I've been wanting to try.|ずっと行ってみたかったタイ料理の店があるんだ。
+B|Ooh, I love Thai. Where is it?|いいね、タイ料理大好き。どこ？
+A|Near the park. It's got great reviews.|公園の近く。レビューがすごくいいんだ。
+S|
+A|How does Thursday sound?|木曜はどう？
+B|Thursday works. What time?|木曜いいよ。何時？
+A|Seven? That gives us time to get there after work.|7時？ 仕事の後に向かえる時間だし。
+B|Perfect. Should I book?|完璧。予約する？
+A|I'll do it. I'm the one who suggested it.|私がやるよ。言い出したのは私だから。
+S|
+B|Let me get this one, then. You paid last time.|じゃあ今回は私が出すよ。前回はそっちが払ったし。
+A|Are you sure?|本当に？
+B|Positive. Just pick somewhere good.|もちろん。いい店を選んでくれればそれでいい。
+A|Now the pressure's on.|プレッシャーがかかったね。
+
+T|🙏|誘いをやんわり断る|人間関係|I'd love to, but, another time, rain check, don't take it personally, thanks for asking
+S|
+B|We're going to the beach on Saturday. You should come!|土曜にビーチに行くんだ。一緒に来なよ！
+A|Oh, that sounds lovely. But I've already got plans, unfortunately.|わあ、いいね。でも残念ながら、もう予定が入ってて。
+B|Can you move them?|ずらせない？
+A|Not really. It's my parents' anniversary.|ちょっと無理かな。両親の結婚記念日なんだ。
+B|Ah, that's a good reason.|ああ、それはいい理由だね。
+S|
+A|Another time, though? I'd really like to.|でもまた今度誘って。本当に行きたいから。
+B|Of course. We go most weekends when it's warm.|もちろん。暖かい間はほぼ毎週末行ってるよ。
+A|Then count me in for the next one.|じゃあ次は絶対に参加する。
+B|I'll hold you to it.|覚えておくからね。
+A|Please do.|ぜひ。
+S|
+B|No worries at all. Thanks for being upfront.|全然気にしないで。正直に言ってくれてありがとう。
+A|Thanks for asking. It means a lot.|誘ってくれてありがとう。うれしいよ。
+B|Have a great time with your parents.|ご両親と楽しんできてね。
+A|I will. Take photos for me!|そうする。写真撮っておいてね！
+
+T|🗺|遊びに行く場所を一緒に決める|人間関係|any ideas, I'm easy, how about, sounds like a plan, split the difference
+S|
+A|So, what do you want to do today?|それで、今日は何する？
+B|I'm easy. Any ideas?|なんでもいいよ。何かある？
+A|Museum, or the botanical gardens?|美術館か、植物園か。
+B|Hmm. What's the weather doing?|うーん。天気はどう？
+A|Cloudy now, but it should clear up by lunch.|今は曇ってるけど、昼までには晴れるはず。
+B|Then gardens after lunch, and something indoors first?|じゃあ昼のあとに植物園で、その前に屋内で何か？
+S|
+A|That's smart. Museum first, then.|賢いね。じゃあ先に美術館。
+B|How about the little gallery instead? It's quicker.|代わりに小さいギャラリーはどう？ すぐ見終わるし。
+A|Good shout. And it's near a good lunch place.|いいね。しかも美味しいランチの店が近くにある。
+B|Now you're speaking my language.|そう来なくちゃ。
+A|Gallery, lunch, gardens. Sounds like a plan.|ギャラリー、ランチ、植物園。決まりだね。
+S|
+B|What time does the gallery open?|ギャラリーは何時に開くの？
+A|Ten. We can be there when it opens.|10時。開くと同時に着けるよ。
+B|Perfect. I'll meet you at the entrance.|完璧。入口で待ち合わせね。
+A|Bring an umbrella, just in case.|念のため傘持ってきて。
+B|Always do.|いつも持ってるよ。

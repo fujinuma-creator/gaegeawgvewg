@@ -1,0 +1,392 @@
+T|🤝|手を繋ぐ|恋愛|is this okay, hold hands, took you long enough, cold hands, don't let go
+S|
+A|It's getting cold, isn't it?|寒くなってきたね。
+B|A bit. I should have brought gloves.|少しね。手袋持ってくればよかった。
+A|Your hands look freezing.|手、すごく冷たそう。
+B|They are. I can barely feel them.|うん。感覚がほとんどない。
+A|Here. Is this okay?|はい。これ、大丈夫？
+S|
+B|Yeah. More than okay.|うん。大丈夫どころか。
+A|Took me long enough, huh?|ずいぶん時間かかっちゃったね。
+B|I was starting to wonder.|そろそろどうなのかなって思ってた。
+A|I didn't want to rush anything.|急ぎたくなかったんだ。
+B|I know. That's one of the things I like about you.|わかってる。そういうところが好きなんだよ。
+S|
+A|Your hand's warming up already.|もう手が温まってきてる。
+B|Yours is really warm. Are you always like this?|そっちの手、すごく温かい。いつもこう？
+A|Pretty much. Human radiator.|だいたいね。人間ストーブ。
+B|Then I'm keeping it. Don't let go.|じゃあこのまま。離さないで。
+A|Wasn't planning to.|離すつもりないよ。
+
+T|🏃|急いでどこかに行く|日常|I've got to run, in a rush, cut it fine, make it, catch you later
+S|
+A|Sorry, I've got to run.|ごめん、もう行かないと。
+B|Already? You just got here.|もう？ 来たばかりじゃん。
+A|I know, but I've got to be across town by four.|うん、でも4時までに街の反対側にいないといけなくて。
+B|That's in twenty minutes.|あと20分だよ。
+A|Exactly. I'm cutting it fine.|そう。ギリギリなんだ。
+S|
+B|Are you taking the train?|電車で行くの？
+A|Taxi. There's no time for the train.|タクシー。電車だと間に合わない。
+B|Do you want me to call one?|呼ぼうか？
+A|Already done. It's two minutes away.|もう呼んだ。あと2分で来る。
+B|Okay, go go go.|よし、行って行って。
+S|
+A|Can we catch up properly this weekend?|週末にちゃんと会える？
+B|Definitely. Text me when you're free.|もちろん。空いたらメッセージして。
+A|Will do. Sorry again!|そうする。ほんとごめん！
+B|Stop apologising and go!|謝ってないで行きなよ！
+A|Catch you later!|じゃあまた！
+
+T|⏱|時間に間に合わない|日常|not going to make it, running behind, push it back, heads up, hold on for me
+S|
+A|Hey, I'm not going to make it on time.|ねえ、時間に間に合いそうにない。
+B|How late are we talking?|どのくらい遅れそう？
+A|Maybe fifteen minutes. The traffic's awful.|15分くらいかな。渋滞がひどくて。
+B|Okay. Thanks for the heads up.|わかった。教えてくれてありがとう。
+A|I'm really sorry. I left early too.|本当にごめん。早めに出たんだけど。
+S|
+B|Don't worry. I'll grab a table and order a drink.|気にしないで。席を取って飲み物を頼んでおくよ。
+A|Could you order me a coffee as well?|私のコーヒーも頼んでおいてくれる？
+B|Sure. The usual?|いいよ。いつものやつ？
+A|Yes, please. You're a star.|うん、お願い。ほんと助かる。
+B|Just get here safe.|安全に来てね。
+S|
+A|Okay, I'm two minutes away now.|あと2分で着く。
+B|Great, I'm at the table by the window.|よかった、窓際の席にいるよ。
+A|Perfect. Coffee's there?|完璧。コーヒーは？
+B|Waiting for you, still hot.|待ってるよ、まだ熱いまま。
+A|Best friend ever.|最高の友達だね。
+
+T|😞|仕事で怒られた|仕事|got told off, took it personally, learn from it, shake it off, tomorrow's a new day
+S|
+B|You look down. What happened?|落ち込んでるね。何かあった？
+A|My manager had a go at me in front of everyone.|上司にみんなの前で怒られた。
+B|Ouch. What about?|うわ。何について？
+A|I missed a detail in the report. It wasn't even that big.|レポートで細かい点を見落としたんだ。そんな大きなことでもないのに。
+B|Still, in front of everyone? That's harsh.|それでもみんなの前で？ それはきついね。
+S|
+A|I know I made a mistake. But the way he said it...|ミスしたのはわかってる。でもあの言い方は…
+B|That's the part that stings, right?|そこが一番刺さるんだよね。
+A|Yeah. I couldn't stop thinking about it all afternoon.|うん。午後ずっとそのことばかり考えてた。
+B|Try not to take it personally. He was probably stressed too.|個人攻撃だと受け取らないほうがいいよ。あっちもストレスがあったんだと思う。
+A|Maybe. It still felt awful.|そうかも。でもやっぱり嫌だった。
+S|
+B|What matters is you fix it and move on.|大事なのは、直して前に進むことだよ。
+A|I already sent the corrected version.|修正版はもう送った。
+B|See? Done. Now shake it off.|ほらね。もう終わり。気持ちを切り替えて。
+A|Easier said than done.|言うのは簡単だけどね。
+B|Tomorrow's a new day. Come on, let's get a drink.|明日は新しい一日だよ。ほら、飲みに行こう。
+
+T|😷|咳が止まらない|健康|can't stop coughing, tickle in my throat, cough syrup, keep you up, see someone
+S|
+A|Sorry, excuse me. I can't stop coughing.|ごめん、失礼。咳が止まらなくて。
+B|That sounds nasty. How long has it been going on?|ひどそうだね。いつから？
+A|About four days now.|もう4日くらい。
+B|Is it a dry cough, or is there stuff coming up?|乾いた咳？ それとも痰が出る？
+A|Mostly dry. There's this constant tickle in my throat.|ほとんど乾いた咳。喉がずっとムズムズしてる。
+S|
+B|Have you tried cough syrup?|咳止めシロップは試した？
+A|Yeah, it helps for an hour and then it's back.|うん、1時間は効くんだけど、また戻ってくる。
+B|Is it keeping you up at night?|夜、眠れないほど？
+A|Yes. That's the worst part.|うん。それが一番つらい。
+B|Honey and warm water helped me last time.|前に私は、はちみつをお湯に溶かしたのが効いたよ。
+S|
+B|If it's not better by the weekend, go and see someone.|週末までに良くならなかったら、病院に行ってね。
+A|I probably should. It's been dragging on.|そうすべきかも。長引いてるし。
+B|Do you want me to book it for you?|予約しておこうか？
+A|No, I'll do it. Thanks for looking out for me, though.|ううん、自分でやるよ。でも気にかけてくれてありがとう。
+B|Of course. Go home and rest.|当然だよ。帰って休んで。
+
+T|🚻|トイレはどこか聞く|日常|where's the toilet, down the hall, for customers only, out of order, on the left
+S|
+A|Excuse me, where's the toilet?|すみません、トイレはどこですか？
+B|Down the hall, second door on the left.|廊下を進んで、左側の2つ目のドアです。
+A|Do I need a key or anything?|鍵とか必要ですか？
+B|No, it's open. Just push the door.|いいえ、開いてます。ドアを押すだけです。
+A|Thank you.|ありがとうございます。
+S|
+A|Sorry, it says out of order.|すみません、故障中って書いてあります。
+B|Oh, sorry about that. There's another one upstairs.|あ、すみません。上の階にもう1つあります。
+A|Upstairs where?|上のどこですか？
+B|Right at the top of the stairs, you'll see the sign.|階段を上がってすぐです。表示があります。
+A|Got it. Thanks again.|わかりました。何度もありがとう。
+S|
+A|Is it for customers only?|お客さん専用ですか？
+B|Technically, but don't worry about it.|建前はそうですが、気にしないでください。
+A|I'll buy a coffee on my way back, then.|じゃあ、戻る時にコーヒーを買いますね。
+B|Ha, that's not necessary. But we won't say no.|はは、それは要りませんよ。でも断りはしません。
+
+T|🎂|誕生日の話をする|雑談|when's your birthday, turning, celebrate, make a fuss, big one
+S|
+A|When's your birthday, by the way?|ところで、誕生日はいつ？
+B|March the fourteenth. Yours?|3月14日。そっちは？
+A|October. I'm a lot older than you.|10月。私はあなたよりだいぶ年上だよ。
+B|How much older?|どのくらい？
+A|I'm turning thirty-five this year.|今年で35になる。
+S|
+B|Are you doing anything to celebrate?|何かお祝いする予定は？
+A|Not really. I don't like making a fuss.|特には。騒ぐのは好きじゃなくて。
+B|Not even dinner?|ディナーも？
+A|Maybe a quiet dinner with a few friends.|数人の友達と静かに食事するくらいかな。
+B|That sounds lovely, actually.|それはそれでいいね。
+S|
+B|Mine's usually just cake and a phone call from my mum.|私のはだいたいケーキと、母からの電話だけ。
+A|That's sweet, though.|それはそれで素敵じゃない。
+B|Yeah. Though next year's a big one, so maybe I'll do something.|うん。でも来年は節目だから、何かするかも。
+A|The big three-oh?|30歳？
+B|Don't remind me.|言わないで。
+
+T|🥵|気温が暑すぎると会話する|雑談|it's boiling, heatwave, can't cope, stay indoors, ice cream weather
+S|
+A|It's absolutely boiling today.|今日は本当に猛暑だね。
+B|I know. It's like walking into an oven.|ほんと。オーブンの中を歩いてるみたい。
+A|What's the temperature supposed to hit?|最高気温、どのくらいになるって？
+B|Thirty-six, I think. Maybe higher.|36度だったかな。もっと上がるかも。
+A|I can't cope with this.|もう耐えられない。
+S|
+B|Have you got air conditioning at home?|家にエアコンある？
+A|Just a fan. It basically blows hot air around.|扇風機だけ。熱風をかき回してるだけだよ。
+B|You should come round to mine. My place is like a fridge.|うちに来なよ。冷蔵庫みたいに涼しいから。
+A|Don't tempt me.|誘惑しないで。
+B|I'm serious. Bring snacks.|本気だよ。お菓子持ってきて。
+S|
+A|How long is the heatwave supposed to last?|この猛暑、いつまで続くって？
+B|Until Thursday, then it should break.|木曜まで。そのあと落ち着くはず。
+A|Thursday? That's three more days.|木曜？ あと3日もあるよ。
+B|Ice cream weather, at least.|少なくとも、アイス日和ではあるね。
+A|Fine. Ice cream, then your fridge apartment.|わかった。アイス、それから冷蔵庫アパートね。
+
+T|🍴|近くの美味しいレストランを聞く|食事|any recommendations, a good place to eat, local favourite, within walking distance, worth the wait
+S|
+A|Excuse me, do you know any good places to eat around here?|すみません、この辺りで美味しいお店を知っていますか？
+B|Sure. What kind of food are you after?|ええ。どんな料理がいいですか？
+A|Something local. Nothing too fancy.|地元の料理で。あまり高級じゃないところ。
+B|Then you want the little place on Baker Street.|それならベイカー通りの小さなお店ですね。
+A|Is it within walking distance?|歩いて行けますか？
+S|
+B|Five minutes, tops. Turn left at the lights.|長くても5分です。信号を左です。
+A|What's it called?|お店の名前は？
+B|Marco's. It's a family place, been there forever.|マルコズ。家族経営で、ずっと昔からある店です。
+A|Do I need to book?|予約は必要ですか？
+B|It gets busy around seven, but it's worth the wait.|7時頃は混みますが、待つ価値はありますよ。
+S|
+A|What should I order?|何を頼めばいいですか？
+B|The seafood pasta. Everyone gets it.|シーフードパスタ。みんなそれを頼みます。
+A|Perfect. Thanks so much.|完璧です。本当にありがとう。
+B|Tell them Sam sent you. They'll look after you.|サムの紹介だと言ってください。よくしてくれますよ。
+A|I will!|そうします！
+
+T|🎨|初対面の人と趣味の話をする|人間関係|what do you do for fun, into, get into, how did you start, we should
+S|
+B|So what do you do for fun?|趣味は何ですか？
+A|I'm really into climbing at the moment.|今はクライミングにハマっています。
+B|Oh, cool. Indoor or outdoor?|いいですね。屋内ですか、屋外ですか？
+A|Mostly indoor. I'm still a beginner.|主に屋内です。まだ初心者で。
+B|How did you get into it?|どんなきっかけで始めたんですか？
+S|
+A|A friend dragged me along once and I was hooked.|友達に一度連れて行かれて、そのままハマりました。
+B|That's always how it goes.|いつもそういうパターンですよね。
+A|What about you?|あなたは？
+B|I do a lot of photography. Mostly street stuff.|写真をよく撮ります。主にストリート系。
+A|Nice. I've always wanted to learn that properly.|いいですね。ちゃんと学んでみたいとずっと思ってました。
+S|
+B|You should come on a walk with me sometime.|今度一緒に撮影散歩に来てくださいよ。
+A|I'd love that. And you should try climbing.|ぜひ。そちらもクライミング試してみてください。
+B|Deal. Let's swap numbers.|決まりですね。連絡先を交換しましょう。
+A|Sounds good.|いいですね。
+
+T|🏫|授業中の会話|学び|did you get that, page, work in pairs, hand in, what did she say
+S|
+A|Psst. Did you get what she just said?|ねえ。今、先生が言ったこと聞き取れた？
+B|Something about page forty-two.|42ページがどうとか。
+A|Are we supposed to read it now?|今読むってこと？
+B|I think so. Then answer the questions.|たぶん。それから問題に答えるって。
+A|Okay, thanks.|わかった、ありがとう。
+S|
+B|Wait, she's saying we work in pairs.|待って、ペアでやれって言ってる。
+A|Want to be partners?|ペア組む？
+B|Obviously. Who else would I go with?|当然。他に誰と組むのさ。
+A|Good. You do the first half, I'll do the second?|よし。前半をやってくれる？ 私は後半。
+B|Deal.|了解。
+S|
+A|When do we hand this in?|これ、いつ提出？
+B|End of class, I think. Let me check.|授業の終わりだったと思う。確認する。
+A|We'd better hurry, then.|じゃあ急がないと。
+B|Relax, we've got ten minutes.|落ち着いて、あと10分あるよ。
+A|Ten minutes is not a lot!|10分って多くないよ！
+
+T|👉|あの人に聞いてみてと伝える|人間関係|ask him, he'd know, point you to, go and grab, the right person
+S|
+A|Do you know how the printer works?|プリンターの使い方わかる？
+B|Honestly, no idea. I always ask Dan.|正直、全然。いつもダンに聞いてる。
+A|Which one is Dan?|ダンってどの人？
+B|The guy by the window, with the glasses.|窓際の、メガネの人。
+A|Oh, him. Is he okay with people asking?|ああ、あの人。聞いても大丈夫な人？
+S|
+B|Totally. He's the office tech guy, unofficially.|全然大丈夫。非公式のオフィス技術担当みたいなものだから。
+A|Great. I'll go and grab him.|よかった。ちょっと呼んでくる。
+B|Tell him I sent you. He'll roll his eyes but he'll help.|私の紹介って言って。呆れた顔するけど助けてくれるよ。
+A|Ha, noted.|はは、了解。
+S|
+A|Excuse me, Dan? Sorry to bother you.|すみません、ダンさん？ お邪魔してすみません。
+B|No worries. Let me guess — the printer?|大丈夫。当ててみようか、プリンター？
+A|How did you know?|なんでわかったんですか？
+B|It's always the printer. Come on, I'll show you.|いつもプリンターなんだよ。おいで、見せてあげる。
+A|You're a lifesaver.|ほんと助かります。
+
+T|👨‍👩‍👧‍👦|家族との仲の良さについて話す|人間関係|close to, get on with, family dinner, drive me mad, wouldn't change it
+S|
+A|Are you close to your family?|家族とは仲がいい？
+B|Really close. We do dinner every Sunday.|すごく仲がいいよ。毎週日曜は一緒に夕飯。
+A|Every Sunday? That's nice.|毎週日曜？ いいね。
+B|My mum insists. She'd be upset if we missed it.|母が譲らなくて。行かないと悲しむんだ。
+A|What about your siblings?|兄弟は？
+S|
+B|I've got two brothers. We get on well, mostly.|兄が2人。だいたい仲はいいよ。
+A|Mostly?|だいたい？
+B|They drive me mad sometimes. But that's brothers.|時々イラっとさせられる。でも兄弟ってそういうものでしょ。
+A|Ha, I can imagine.|はは、想像つく。
+B|Still, I wouldn't change it. What about you?|それでも、この関係は変えたくないな。そっちは？
+S|
+A|We're a bit more spread out. I only see them a few times a year.|うちはもっと離れてて。年に数回しか会わないよ。
+B|Do you miss them?|寂しくない？
+A|Sometimes. But we talk on the phone a lot.|時々ね。でも電話はよくするんだ。
+B|That counts. Being close isn't just about distance.|それも大事だよ。仲の良さって距離だけじゃないから。
+A|That's a nice way to put it.|いい言い方だね。
+
+T|💼|出張時の会話|仕事|business trip, fly out, squeeze in, expenses, back on
+S|
+B|How long are you here for?|滞在はどのくらい？
+A|Just three days. I fly back Thursday.|3日だけ。木曜に帰ります。
+B|That's a quick trip.|短い出張だね。
+A|It's mostly meetings. Not much time for anything else.|ほぼ会議なんです。他のことをする時間はあまりなくて。
+B|Shame. There's a lot to see here.|もったいない。ここは見どころが多いのに。
+S|
+A|Is there anything I can squeeze in? Even an evening?|夜だけでも、どこか行けそうな場所ありますか？
+B|The old town's ten minutes from your hotel. Go tonight.|旧市街がホテルから10分。今夜行くといいよ。
+A|Perfect. Any good places to eat there?|いいですね。そこで美味しいお店は？
+B|Loads. I'll send you a couple.|たくさん。いくつか送っておくよ。
+A|Thanks, that's really kind.|ありがとう、助かります。
+S|
+B|Did you get all your expenses sorted?|経費の処理は全部済んだ？
+A|Mostly. I need to find the receipt for the taxi.|ほぼ。タクシーの領収書を探さないと。
+B|Ask them for a copy. They usually don't mind.|コピーをもらえば大丈夫。だいたい嫌がらないから。
+A|Good idea. Right, I'm back on at two.|いいですね。さて、2時にまた会議です。
+B|Good luck. Let's grab a drink before you leave.|頑張って。帰る前に一杯やろう。
+
+T|🚗|車に荷物を乗せる|日常|pop the boot, fit, squeeze it in, careful with, in the back
+S|
+A|Can you pop the boot?|トランク開けてくれる？
+B|Sure, hang on. There you go.|うん、ちょっと待って。はい。
+A|Wow, there's not a lot of room in here.|うわ、あんまりスペースないね。
+B|I know, sorry. The golf clubs are still in there.|ごめん。ゴルフクラブがまだ入ってて。
+A|Can we move them to the back seat?|後部座席に移せる？
+S|
+B|Yeah, go for it. Careful with the big box, though.|うん、やって。でも大きい箱は気をつけて。
+A|What's in it?|何が入ってるの？
+B|Glasses. They're a gift.|グラス。プレゼントなんだ。
+A|Okay, I'll put it on top, nothing on it.|わかった、一番上に置いて、上には何も乗せない。
+B|Perfect.|完璧。
+S|
+A|Right, I think that's everything.|よし、これで全部だと思う。
+B|Does the boot close?|トランク、閉まる？
+A|Just about. Let me squeeze this bag in the side.|ギリギリ。このカバンを横に押し込むね。
+B|And... done. Let's go.|よし… 閉まった。出発しよう。
+A|Wait, my phone. It's in one of the bags.|待って、スマホ。カバンのどれかに入ってる。
+
+T|📋|レストランで予約しているか聞かれた|食事|do you have a reservation, under the name, walk-in, how long is the wait, put you on the list
+S|
+B|Good evening. Do you have a reservation?|こんばんは。ご予約はございますか？
+A|Yes, under the name Fujinuma. For two.|はい、藤沼で。2名です。
+B|Let me check... Fujinuma, seven thirty?|確認します… 藤沼様、7時半ですね？
+A|That's right.|そうです。
+B|Wonderful. Your table's ready, follow me.|ありがとうございます。お席のご用意ができています、こちらへどうぞ。
+S|
+B|And you? Do you have a booking?|そちら様はご予約は？
+A|No, we're just walking in. Is that okay?|いえ、予約なしです。大丈夫ですか？
+B|We're quite full tonight. It'd be about a forty-minute wait.|今夜はかなり混んでおりまして、40分ほどお待ちいただくことになります。
+A|Forty minutes? Hmm.|40分ですか。うーん。
+B|I can put you on the list and text you when it's ready.|リストに入れて、ご用意ができたらメッセージでお知らせします。
+S|
+A|Okay, let's do that. Is there a bar nearby?|じゃあそれでお願いします。近くにバーはありますか？
+B|Right next door. Show them this and they'll do you a discount.|すぐ隣に。これを見せれば割引してくれますよ。
+A|Oh, that's brilliant. Thank you.|それは助かります。ありがとう。
+B|See you in a bit.|ではのちほど。
+
+T|🍽|注文と違う料理が来た|食事|this isn't what I ordered, mix-up, I'll swap it, no harm done, keep it
+S|
+B|Here's your beef curry.|ビーフカレーです。
+A|Oh, sorry, I think there's been a mix-up. I ordered the chicken.|あ、すみません、何か行き違いがあったみたいで。チキンを頼んだんですが。
+B|Did you? Let me check the ticket.|そうでしたか？ 伝票を確認します。
+A|It's fine, it happens.|大丈夫です、よくあることなので。
+B|You're right, it says chicken. I'm so sorry.|おっしゃる通り、チキンとなっています。申し訳ありません。
+S|
+B|I'll swap it right away.|すぐお取り替えします。
+A|How long will it take?|どのくらいかかりますか？
+B|About ten minutes. Would you like to keep this one in the meantime?|10分ほどです。その間、こちらは置いておきましょうか？
+A|Actually, is that allowed?|それって大丈夫なんですか？
+B|Of course. It'd only go to waste otherwise.|もちろんです。そうでないと捨てるだけですから。
+S|
+B|Here's your chicken. Again, apologies for the mix-up.|チキンです。重ねてお詫び申し上げます。
+A|No harm done. And the beef was good, by the way.|全然大丈夫です。ちなみにビーフも美味しかったです。
+B|Ha, glad to hear it. Enjoy.|はは、それはよかった。ごゆっくりどうぞ。
+A|Thanks for sorting it out so quickly.|すぐ対応してくれてありがとう。
+
+T|🌶|料理の辛さを控えめにしてほしいと頼む|食事|how spicy is it, go easy on, mild, can't handle, on the side
+S|
+A|How spicy is the green curry?|グリーンカレーはどのくらい辛いですか？
+B|Quite spicy. It's one of our hotter dishes.|かなり辛いです。うちでも辛いほうの料理ですね。
+A|Ah. I can't really handle a lot of heat.|そうですか。辛いのはあまり得意じゃなくて。
+B|We can make it mild if you like.|よろしければマイルドにできますよ。
+A|That would be great. As mild as possible.|それは助かります。できるだけ控えめで。
+S|
+B|Would you like the chilli on the side?|唐辛子は別添えにしましょうか？
+A|Yes, please. Then I can add a bit myself.|お願いします。自分で少しずつ足せるので。
+B|Smart. A lot of people do that.|賢いですね。そうされる方は多いですよ。
+A|I learnt the hard way last time.|前回、痛い目に遭って学んだので。
+B|Ha, I've been there.|はは、私も経験あります。
+S|
+B|Here's your curry, mild, chilli on the side.|カレーです。マイルドで、唐辛子は別添えです。
+A|Perfect. Let me try... oh, that's just right.|完璧です。ひと口… あ、ちょうどいい。
+B|Glad it works for you.|お口に合ってよかったです。
+A|I might even add a tiny bit of chilli.|ほんの少しだけ唐辛子を足してみようかな。
+B|Live dangerously.|冒険しますね。
+
+T|🥡|持ち帰り用に包んでほしい|食事|take this to go, box it up, leftovers, wrap up, doggy bag
+S|
+A|Could I take the rest of this to go?|残りを持ち帰ってもいいですか？
+B|Of course. I'll box it up for you.|もちろんです。容器に詰めますね。
+A|Thank you. I couldn't finish it, but it was delicious.|ありがとう。食べきれなかったけど、すごく美味しかったです。
+B|Our portions are big. Lots of people take some home.|うちは量が多いので、持ち帰る方は多いですよ。
+A|Good to know I'm not the only one.|私だけじゃなくてよかった。
+S|
+B|Would you like the bread wrapped up too?|パンも包みましょうか？
+A|Oh, yes please. It'd be a shame to waste it.|あ、お願いします。捨てるのはもったいないので。
+B|And the sauce? I can put it in a separate pot.|ソースは？ 別の容器に入れられますよ。
+A|That'd be perfect.|それは助かります。
+S|
+B|Here you go. Keep it in the fridge and it'll be fine tomorrow.|どうぞ。冷蔵庫に入れておけば明日でも大丈夫ですよ。
+A|Great. That's lunch sorted.|よかった。明日のお昼が決まりました。
+B|Enjoy it twice!|2回楽しんでくださいね！
+A|Thanks, I will.|ありがとう、そうします。
+
+T|🧾|割り勘にしたいと伝える|食事|split the bill, go halves, even split, my share, chip in
+S|
+A|Shall we just split the bill?|お会計、割り勘にする？
+B|Sure. Even split, or by what we had?|いいよ。均等？ それとも食べた分ごと？
+A|Even's fine. It's roughly the same anyway.|均等でいいよ。どうせだいたい同じだし。
+B|Cool. Let me see... it's sixty-four, so thirty-two each.|了解。えっと… 64だから、1人32だね。
+A|Perfect.|完璧。
+S|
+A|Excuse me, could we pay separately?|すみません、別々に支払ってもいいですか？
+B|Of course. How would you like to split it?|もちろんです。どのように分けますか？
+A|Just half and half, please.|半分ずつでお願いします。
+B|No problem. Card or cash for each?|承知しました。それぞれカードですか、現金ですか？
+A|Both card.|両方ともカードで。
+S|
+B|Hang on, you paid for the drinks earlier.|待って、さっき飲み物を出してくれたよね。
+A|Oh, don't worry about that.|ああ、それは気にしないで。
+B|No, let me chip in a bit more then.|いや、じゃあ私がもう少し多めに出すよ。
+A|Honestly, it's fine. Get the next one.|本当にいいから。次におごって。
+B|Deal.|わかった。

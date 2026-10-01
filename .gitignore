@@ -1,13 +1,30 @@
-node_modules/
-.expo/
-.expo-shared/
-dist/
-npm-debug.*
+# Xcode / Swift
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.hmap
+*.swp
+.DS_Store
+
+# CocoaPods (unused but ignored just in case)
+Pods/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# Apple credential / signing files
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
-web-build/
 *.pem
+*.orig.*

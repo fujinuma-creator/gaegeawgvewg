@@ -1,0 +1,416 @@
+T|🧳|荷物を持ってあげると申し出る|日常|can I give you a hand, let me take that, I've got it, which way, no trouble at all
+S|
+A|Can I give you a hand with that? It looks heavy.|お手伝いしましょうか？ 重そうですね。
+B|Oh! That's kind. It is, actually. Are you sure?|あ！ ご親切に。実際重くて。いいんですか？
+A|Of course. Let me take the big one. Which way are you going?|もちろん。大きいほうを持ちます。どちらへ？
+B|Just to the taxi rank. It's round the corner.|タクシー乗り場まで。角を曲がったところです。
+A|Easy. I've got it.|簡単です。持ちました。
+B|You're a lifesaver. I've been dragging this since the platform.|本当に助かります。ホームからずっと引きずってきて。
+S|
+A|What's in it? It weighs a ton.|何が入ってるんですか？ ものすごく重い。
+B|Books. My whole flat, basically. I'm moving.|本です。私の部屋の全部、みたいなものです。引っ越しで。
+A|Moving with books is the worst.|本と一緒の引っ越しは最悪ですよね。
+B|I know. Everyone says get rid of them. I can't.|そうなんです。みんな処分しろって言うけど。できなくて。
+A|Neither could I. Here we are. Taxi rank.|私もできないです。着きました。タクシー乗り場。
+B|Thank you so much. Really. Can I give you something?|本当にありがとうございます。何かお礼を。
+A|No, no. No trouble at all. Good luck with the move.|いえいえ。全然構いません。引っ越し、頑張ってください。
+S|
+B|You've restored my faith in strangers.|見知らぬ人への信頼を取り戻しました。
+A|Ha. There's a few of us left. Safe travels.|はは。まだ何人かはいますよ。お気をつけて。
+
+T|🗺|道に迷っている人に声をかける|日常|are you looking for something, can I help you find, you're not far, I'm heading that way, I'll walk you
+S|
+A|Excuse me, are you looking for something? You've been staring at that map for a while.|すみません、何かお探しですか？ しばらく地図を見つめていたので。
+B|Oh, yes. The art gallery. The map says it's here, but it's not.|はい。美術館です。地図ではここなんですが、ないんです。
+A|Ah, the map's out of date. It moved last year. It's two streets over now.|ああ、その地図は古いです。去年移転したんです。今は2本先の通りに。
+B|Moved? No wonder.|移転？ どうりで。
+A|You're not far. I'm heading that way, actually. I'll walk you.|遠くないですよ。実は私もそっちに向かっています。一緒に行きましょう。
+B|Would you? That would be brilliant.|いいんですか？ それは助かります。
+S|
+B|Are you from here?|ここの方ですか？
+A|Ten years. Long enough to know where things have moved to.|10年住んでいます。何がどこに移ったか知るには十分な長さです。
+B|It's my first day. I've been lost three times already.|今日が初日で。もう3回も迷いました。
+A|Everyone does. The streets curve. Your sense of direction gives up.|みんなそうですよ。道が曲がっていて。方向感覚が諦めるんです。
+B|That's exactly what happened.|まさにそれです。
+A|Here. See the red door? That's the gallery.|ここです。赤いドアが見えますか？ それが美術館です。
+S|
+B|Thank you. Honestly, you've saved my afternoon.|ありがとうございます。本当に、午後が救われました。
+A|Enjoy it. The top floor's the best. Start there.|楽しんでください。最上階が一番いいですよ。そこから始めて。
+B|Top floor. Got it. Thanks again!|最上階。わかりました。改めてありがとう！
+
+T|🚪|建物の入口がどこかわからない|日常|where's the entrance, this says staff only, round the side, I've walked round twice, buzz
+S|
+A|Excuse me, where's the entrance? I've walked round twice.|すみません、入口はどこですか？ 2周してしまって。
+B|Ah. It's round the side. Not the front.|ああ。横です。正面じゃなくて。
+A|The side? There's a door here that says "staff only".|横？ ここに「関係者専用」のドアがあります。
+B|Not that one. Keep going. Past the bins, there's a glass door.|それじゃないです。進んでください。ゴミ箱を過ぎると、ガラスのドアがあります。
+A|Past the bins. Very glamorous.|ゴミ箱を過ぎて。ずいぶんおしゃれですね。
+B|It's a strange building. Nobody finds it first time.|変な建物なんです。誰も一発では見つけられません。
+S|
+A|Okay, I see it. Do I need to buzz?|見えました。インターホンを押すんですか？
+B|Yes. Press the button for reception. They'll let you in.|はい。受付のボタンを押してください。開けてくれます。
+A|And once I'm in?|入ったら？
+B|Reception's straight ahead. Tell them who you're seeing.|受付はまっすぐです。誰に会うか伝えてください。
+A|Thank you. I was five minutes from giving up.|ありがとうございます。あと5分で諦めるところでした。
+B|Most people are. Someone should put up a sign.|ほとんどの人がそうですよ。誰か看板を立てるべきですね。
+S|
+A|I'll suggest it at the meeting.|会議で提案します。
+B|Please do. You'd be a hero.|ぜひ。ヒーローになれますよ。
+
+T|📍|待ち合わせの場所が見つからない|日常|where exactly are you, which exit, I'm by the, I can't see it, describe what's around you
+S|
+A|I'm here, but I can't see you. Where exactly are you?|着いたけど、見えない。正確にどこにいる？
+B|By the coffee stand. Near the exit.|コーヒースタンドのそば。出口の近く。
+A|Which exit? There are six.|どの出口？ 6つあるよ。
+B|The one by the flower shop.|花屋のそばのやつ。
+A|I don't see a flower shop. Describe what's around you.|花屋が見えない。周りに何があるか説明して。
+B|A big clock. Escalators going down. A man playing violin.|大きな時計。下りのエスカレーター。バイオリンを弾いてる男の人。
+A|Violin? I can hear a violin. I'm walking towards it.|バイオリン？ バイオリンが聞こえる。そっちに向かって歩いてる。
+B|Follow the music.|音楽についてきて。
+S|
+A|Okay, I see the violin. I see the clock. Where are you?|バイオリンが見えた。時計も見えた。どこにいる？
+B|Wave.|手を振って。
+A|Waving.|振ってる。
+B|I see you! Behind you!|見えた！ 後ろ！
+A|Oh! There you are. That was ridiculous.|あ！ いた。ばかみたいだったね。
+B|This station's a maze. Next time, the clock. Just the clock.|この駅は迷路だよ。次は時計。時計だけ。
+S|
+A|The clock. And a violin, if we're lucky.|時計。それと運が良ければバイオリンも。
+B|Let's go. We're already late.|行こう。もう遅れてる。
+
+T|🏬|目的の店がどのフロアにあるか聞く|買い物|which floor is, is there a directory, take the escalator, next to, the map by the entrance
+S|
+A|Excuse me, which floor is the bookshop on?|すみません、本屋は何階ですか？
+B|Third floor. Take the escalator, it's on your left when you get up.|3階です。エスカレーターで上がって、着いたら左手です。
+A|Third floor, left. Thanks. Is there a directory somewhere?|3階、左。ありがとう。案内板はどこかにありますか？
+B|By the entrance. The big map. And on every floor by the lifts.|入口のそばに。大きな地図が。それと各階のエレベーター横にも。
+A|Perfect. And the food court?|わかりました。フードコートは？
+B|Top floor. Fifth. Good views.|最上階。5階。眺めがいいですよ。
+S|
+A|One more. Is there a pharmacy in here?|もう1つ。薬局はここにありますか？
+B|Ground floor, next to the supermarket. Right at the back.|1階、スーパーの隣です。一番奥。
+A|Ground floor, back. Got it. You know this place well.|1階、奥。わかりました。この場所に詳しいですね。
+B|I work here. Eight years. I could draw it blindfolded.|ここで働いているので。8年。目隠しでも描けますよ。
+A|That's impressive.|すごいですね。
+B|It's mostly sad. Enjoy the bookshop.|だいたい悲しいことですけど。本屋を楽しんでください。
+S|
+A|Thanks. And the food court after. For the view.|ありがとう。その後フードコートも。眺めのために。
+B|Best seats are by the window. Get there before twelve.|一番いい席は窓際です。12時前に行ってください。
+
+T|📱|地図アプリで場所を確認しながら聞く|交通|my map says, is this the right way, it's showing, the blue dot, doesn't match
+S|
+A|Sorry, my map says the station's this way, but it doesn't look right. Is this the right way?|すみません、地図では駅はこっちなんですが、合ってる気がしなくて。この道で正しいですか？
+B|Let me see. Ah, no. Your map's got you on the wrong side of the river.|見せてください。ああ、違います。地図があなたを川の反対側に置いてます。
+A|The blue dot's here. Is that wrong?|青い点はここです。それが間違ってる？
+B|The signal's bad round here. The dot jumps. You're actually here.|この辺りは電波が悪いんです。点が飛ぶんですよ。実際はここです。
+A|Oh. That's completely different.|え。全然違う。
+B|Cross the bridge, then it's straight ahead. Ten minutes.|橋を渡って、まっすぐです。10分。
+S|
+A|My map's showing fifteen minutes.|地図では15分って出てます。
+B|Because it thinks you're somewhere else. Trust the bridge.|別の場所にいると思ってるからです。橋を信じて。
+A|Trust the bridge. Okay.|橋を信じる。わかりました。
+B|And put the phone away for a bit. Just follow the road.|それとスマホを少ししまって。ただ道に沿って。
+A|That feels wrong.|それは落ち着かないです。
+B|I know. But the road doesn't lose signal.|わかります。でも道は電波を失いませんから。
+S|
+A|Bridge, straight, ten minutes. I'll try the old way.|橋、まっすぐ、10分。昔ながらの方法を試してみます。
+B|Good luck. It works surprisingly well.|頑張って。意外とうまくいきますよ。
+
+T|📅|病院や美容院を予約する|手続き|I'd like to make an appointment, what days are you open, is there anything sooner, my usual, that's booked
+S|
+A|Hi, I'd like to make an appointment with Dr Patel.|パテル先生の予約を取りたいのですが。
+B|Certainly. What's it regarding?|承知しました。ご用件は？
+A|A check-up. Nothing urgent.|健診です。急ぎではありません。
+B|The next available is two weeks from Thursday.|次の空きは、木曜の2週間後です。
+A|Is there anything sooner?|もっと早いのはありますか？
+B|There's a cancellation on Monday at nine, if you can make it.|月曜9時にキャンセルが出ています、来られれば。
+A|Monday at nine. Yes, I'll take it.|月曜の9時。はい、それでお願いします。
+B|That's booked. Come ten minutes early for the forms.|予約しました。書類のために10分早く来てください。
+S|
+A|Also, I need to book a haircut. Is Marco free this week?|それと、ヘアカットの予約も。今週マルコさんは空いていますか？
+B|Marco's fully booked till Saturday. I can do you Saturday at two.|マルコは土曜まで埋まっています。土曜の2時なら。
+A|Saturday's fine. My usual, just a trim.|土曜で大丈夫です。いつもの、毛先を整えるだけで。
+B|Same as last time?|前回と同じですか？
+A|Same as last time. He knows.|前回と同じ。彼はわかってます。
+B|He always does. Saturday at two.|いつもそうですね。土曜の2時に。
+S|
+A|Thanks. Doctor Monday, haircut Saturday.|ありがとう。月曜に医者、土曜に髪。
+B|A productive week. See you Monday.|充実した週ですね。月曜にお待ちしています。
+
+T|📧|予約の確認メールが届かない|手続き|I haven't received the confirmation, could you resend it, check your spam, the email address, still nothing
+S|
+A|Hi, I booked a table for Saturday, but I haven't received the confirmation email.|土曜に席を予約したんですが、確認メールが届いていません。
+B|Let me check. What name was it under?|確認します。お名前は？
+A|Fujinuma.|藤沼です。
+B|Yes, I have it here. Saturday at seven, table for four. It says the email was sent.|はい、ありますね。土曜の7時、4名様。メールは送信済みとなっています。
+A|Could you check the address? Maybe I typed it wrong.|アドレスを確認してもらえますか？ 打ち間違えたかもしれません。
+B|It's k-dot-fujinuma at... ah. There's a typo. "Fujinum".|k.fujinuma@… ああ。誤字があります。「Fujinum」。
+A|That's it. Could you fix it and resend?|それです。直して再送してもらえますか？
+B|Doing it now. Check your spam folder too, just in case.|今やります。念のため、迷惑メールフォルダも確認してください。
+S|
+A|Still nothing.|まだ来ません。
+B|Give it a minute. Sometimes it's slow.|少しお待ちください。時々遅いんです。
+A|Oh, there it is. Saturday, seven, four people. Perfect.|あ、来ました。土曜、7時、4人。完璧です。
+B|Great. The booking was always there, by the way. The email's just the receipt.|よかったです。ちなみに予約自体はずっとありましたよ。メールはただの控えです。
+A|I know. I just like having it in writing.|わかってます。ただ書面で持っておきたくて。
+B|Sensible. See you Saturday.|賢明ですね。土曜にお待ちしています。
+S|
+A|Thanks for sorting it so quickly.|すぐ対応してくれてありがとう。
+B|Not at all. Easy fix.|とんでもない。簡単な修正でした。
+
+T|🐢|話すスピードをゆっくりにしてほしいと頼む|学び|could you speak a bit slower, I'm still learning, you lost me at, one more time, that's much better
+S|
+A|Sorry, could you speak a bit slower? I'm still learning.|すみません、もう少しゆっくり話してもらえますか？ まだ勉強中で。
+B|Oh, of course. Sorry. I talk fast when I'm excited.|もちろんです。すみません。興奮すると早口になるんです。
+A|You lost me at the part about the deadline.|締め切りの部分で置いていかれました。
+B|Okay. The deadline is Friday. Not Thursday. Friday.|わかりました。締め切りは金曜。木曜じゃなく。金曜。
+A|Friday. Got it. And what needs to be finished?|金曜。わかりました。何を仕上げればいいですか？
+B|The report. The whole report. With the numbers.|レポート。レポート全体。数字を入れて。
+A|The whole report, with numbers, by Friday.|レポート全体、数字入り、金曜まで。
+B|Exactly. Is that clearer?|その通り。わかりやすくなりました？
+A|Much better. Thank you.|ずっと良くなりました。ありがとう。
+S|
+B|Tell me any time I speed up. I won't be offended.|早口になったらいつでも言ってください。気にしませんから。
+A|I will. It's not that I don't understand English. It's the speed.|そうします。英語がわからないわけじゃないんです。速さの問題で。
+B|I know. My Spanish is the same. Slow, I'm fine. Fast, I'm lost.|わかります。私のスペイン語も同じです。ゆっくりなら大丈夫。速いと迷子。
+A|Then we understand each other.|じゃあお互い理解できますね。
+B|One more time, slowly: Friday, whole report, numbers.|もう一度、ゆっくり：金曜、レポート全体、数字。
+A|Perfect.|完璧です。
+S|
+B|You know, you're better at this than you think.|あなた、自分で思ってるより上手ですよ。
+A|Only when people slow down.|みんながゆっくり話してくれる時だけです。
+B|Then I'll slow down.|じゃあゆっくり話します。
+
+T|🔁|理解できたか自分の言葉で確認し直す|学び|so what you're saying is, let me make sure I've got this, in other words, did I understand correctly, that's right
+S|
+A|So, let me make sure I've got this. You want the design changed, but not the colours?|確認させてください。デザインは変えるけど、色は変えない？
+B|That's right.|その通り。
+A|And by "changed", you mean the layout. Where things are.|「変える」というのはレイアウトのこと。物の配置。
+B|Yes. The buttons are in the wrong place. The colours are fine.|そう。ボタンの位置が間違ってる。色は大丈夫。
+A|So in other words: same look, different structure.|つまり、見た目は同じで、構造が違う。
+B|Exactly. You've got it.|その通り。理解してますね。
+S|
+A|One more thing. You said "by next week". Did I understand correctly — the start of next week, or the end?|もう1つ。「来週まで」と言いましたよね。正しく理解できているか確認ですが、来週の初め？ それとも終わり？
+B|Good question. End of next week. Friday.|いい質問。来週の終わり。金曜。
+A|Friday. Not Monday.|金曜。月曜じゃなく。
+B|Not Monday. I'd have panicked if you'd delivered Monday.|月曜じゃない。月曜に納品されたら、慌ててたよ。
+A|So would I. Okay. Layout changes, same colours, Friday.|私もです。じゃあ。レイアウト変更、色はそのまま、金曜。
+B|That's the whole brief. You summarised it better than I said it.|それが依頼の全部。私が言ったより上手くまとめてる。
+S|
+A|I've learnt to check. It's saved me a lot of wrong work.|確認する癖がついたんです。間違った作業をせずに済んでます。
+B|Everyone should do it. Half the mistakes at work are just people not checking.|みんなやるべきですよ。職場のミスの半分は、確認しないせいですから。
+
+T|😊|相手の笑顔や雰囲気を褒める|人間関係|you've got a great smile, you light up the room, calming presence, easy to be around, don't lose that
+S|
+A|Can I say something? You've got a great smile.|ひとつ言ってもいい？ 笑顔が素敵だね。
+B|Oh! Thank you. That's... unexpected.|あ！ ありがとう。それは… 予想外だった。
+A|I mean it. When you came in, the whole room changed.|本気だよ。入ってきた時、部屋全体が変わった。
+B|I just said hello.|挨拶しただけなのに。
+A|That's the point. You light up a room without trying.|それが肝心なんだよ。何もしなくても部屋が明るくなる。
+B|Now I'm embarrassed.|恥ずかしくなってきた。
+A|Don't be. It's a rare thing.|そんな必要ないよ。珍しいことなんだから。
+S|
+B|Well, since we're being nice — you've got a calming presence.|じゃあ、お返しに。あなたは落ち着いた雰囲気があるね。
+A|Calming? People usually say quiet.|落ち着いた？ 普通は「静か」って言われるけど。
+B|It's not quiet. It's calm. You're easy to be around. People relax near you.|静かじゃない。落ち着いてるんだ。一緒にいて楽。みんなあなたのそばでくつろぐ。
+A|I never thought of it as a thing.|そういうものだと思ったことなかった。
+B|It's a big thing. Some people make a room tense. You do the opposite.|大きなことだよ。部屋を緊張させる人もいる。あなたは逆。
+S|
+A|Okay, we should stop before we run out of compliments.|褒め言葉が尽きる前にやめよう。
+B|We've got plenty. But fine. Don't lose that calm.|まだたくさんあるよ。でもいいよ。その落ち着きをなくさないでね。
+A|And don't lose that smile.|そっちも、その笑顔をなくさないで。
+
+T|📸|相手の写真やSNSの投稿を褒める|人間関係|I loved your post, that photo was, you've got an eye, where was that, keep posting
+S|
+A|I loved your post from the weekend. The one with the mountains.|週末の投稿、すごく良かった。山の写真のやつ。
+B|Oh, thank you! I nearly didn't post it.|ありがとう！ 投稿しないところだった。
+A|Why not? The light in that photo was incredible.|なんで？ あの写真の光、素晴らしかったのに。
+B|I thought it was too dark. I almost deleted it.|暗すぎると思って。消そうとしたんだ。
+A|The dark's what makes it. You've got an eye for this.|暗さがいいんだよ。こういうの、センスあるね。
+B|I just point and hope.|ただ向けて祈ってるだけだよ。
+A|That's what everyone with an eye says.|センスがある人はみんなそう言う。
+S|
+A|Where was that taken?|どこで撮ったの？
+B|About an hour north. A trail nobody knows about.|北に1時間くらい。誰も知らないトレイル。
+A|Would you take me sometime?|今度連れて行ってくれる？
+B|Sure. Early morning, though. That's when the light's like that.|いいよ。でも早朝。あの光はその時間だけだから。
+A|How early?|どのくらい早く？
+B|Five. Don't make that face.|5時。そんな顔しないで。
+A|That's a face of commitment.|これは決意の顔だよ。
+S|
+B|You've made my day, by the way. Nobody says anything usually.|ちなみに、今日一日が最高になったよ。普段は誰も何も言ってくれないから。
+A|Then keep posting. Some of us are watching.|じゃあ投稿を続けて。見てる人はいるから。
+
+T|🐟|釣れた魚や釣りの成果を話す|雑談|did you catch anything, the one that got away, this big, threw it back, for dinner
+S|
+A|How was the fishing? Did you catch anything?|釣りはどうだった？ 何か釣れた？
+B|Three. Two small, one decent.|3匹。小さいのが2匹、まともなのが1匹。
+A|How decent?|どのくらいまとも？
+B|This big. Honestly.|このくらい。本当に。
+A|That's what everyone says. Show me a photo.|みんなそう言うんだよね。写真を見せて。
+B|Here. See? I'm not lying.|はい。ほら。嘘じゃないでしょ。
+A|Okay, that's actually a good fish. What did you do with it?|たしかに、いい魚だね。どうしたの？
+B|Dinner. Grilled, with lemon. Best meal of the week.|夕飯。レモンでグリルして。今週一番の食事。
+S|
+A|And the small ones?|小さいのは？
+B|Threw them back. They need to grow up and get caught again.|放した。大きくなって、また釣られてもらわないと。
+A|That's very fair of you.|ずいぶん公平だね。
+B|There was a fourth, though. The one that got away.|でも4匹目がいたんだ。逃した大物。
+A|Here we go.|始まった。
+B|Huge. Bent the rod right over. Then the line snapped.|巨大だった。竿がぐにゃりと曲がって。それで糸が切れた。
+A|How huge?|どのくらい巨大？
+B|Twice the size of the one I kept. At least.|持ち帰ったやつの2倍。少なくとも。
+A|Of course it was.|そうでしょうね。
+S|
+B|I'm going back next Saturday. For revenge.|来週の土曜にまた行く。リベンジで。
+A|Take me. I want to see this monster.|連れて行って。その怪物を見たい。
+B|Bring patience. And a bigger net.|忍耐を持ってきて。あともっと大きな網。
+
+T|🚕|運転手に「観光ですか？」と話しかけられて答える|交通|here on holiday, first time, how are you finding it, business, a bit of both
+S|
+B|So, here on holiday?|それで、観光ですか？
+A|A bit of both. Work for three days, then a few days off.|両方です。3日は仕事で、それから数日休み。
+B|Nice. First time in the city?|いいですね。この街は初めて？
+A|First time. I've wanted to come for years.|初めてです。何年も来たかったんです。
+B|And how are you finding it so far?|今のところどうですか？
+A|I've seen the airport and this taxi. So, good.|空港とこのタクシーしか見てません。だから、いい感じです。
+B|Ha. Wait till you see the old town. That's the real city.|はは。旧市街を見るまで待ってください。あれが本当の街です。
+S|
+B|Where are you from?|どちらから？
+A|Japan. Osaka.|日本です。大阪。
+B|Osaka! I had a customer from Osaka last week. Very friendly.|大阪！ 先週、大阪のお客さんを乗せましたよ。とても親しみやすかった。
+A|That's us. We talk to everyone.|それが大阪人です。誰にでも話しかけます。
+B|Like me. My wife says I talk too much.|私と同じですね。妻には話しすぎだと言われます。
+A|Every taxi driver's wife says that.|タクシー運転手の奥さんはみんなそう言いますよね。
+B|You're right. It's a job requirement.|その通り。仕事上の必須条件です。
+S|
+A|So what should I see? Besides the old town.|何を見るべきですか？ 旧市街以外で。
+B|I've got a list. Twenty minutes to the hotel. I'll tell you everything.|リストがあります。ホテルまで20分。全部教えますよ。
+A|Perfect. I'm listening.|完璧です。聞いてます。
+
+T|🗺|運転手におすすめの店やスポットを聞く|交通|where do locals eat, not the tourist places, off the main road, my cousin's place, tell them I sent you
+S|
+A|Where do locals actually eat? Not the tourist places.|地元の人は実際どこで食べるんですか？ 観光客向けじゃなくて。
+B|Ah, you want the real answer. Okay. There's a place off the main road. No sign.|ああ、本当の答えが知りたいんですね。わかりました。大通りから外れたところに店があります。看板なし。
+A|No sign?|看板なし？
+B|Doesn't need one. Everyone knows. Blue door, next to the barber.|必要ないんです。みんな知ってますから。青いドア、床屋の隣。
+A|What do they do?|何の店ですか？
+B|Grilled meat. Bread. That's it. Best in the city.|グリルした肉。パン。それだけ。街で一番。
+A|How do I order?|どう注文すれば？
+B|You don't. They bring what's good today. Trust them.|注文しないんです。その日いいものを持ってきてくれる。任せてください。
+S|
+A|Any places to avoid?|避けるべき場所は？
+B|Anywhere with a menu in five languages. That's for tourists.|5か国語のメニューがある店は全部。観光客向けです。
+A|Good rule.|いいルールですね。
+B|And the square at night. Expensive, bad, and loud.|それと夜の広場。高くて、まずくて、うるさい。
+A|Noted. Blue door, no sign, trust them.|了解。青いドア、看板なし、任せる。
+B|Tell them Marco sent you. They'll give you the good table.|マルコの紹介だと言ってください。いい席をくれますよ。
+S|
+A|You're Marco?|あなたがマルコ？
+B|I'm Marco. My cousin runs it. That's the secret.|私がマルコです。いとこがやってる店なんです。それが秘密。
+A|Ha! Now I understand.|はは！ なるほど。
+B|It's still the best. I'm just honest about why I know.|それでも一番ですよ。なぜ知ってるかについて正直なだけです。
+
+T|🚗|運転手と渋滞や天気の話で雑談する|交通|traffic's bad today, always like this, roadworks, nice weather for it, should clear up
+S|
+A|Traffic's bad today.|今日は渋滞がひどいですね。
+B|Always like this on a Friday. And there's roadworks on the bridge.|金曜はいつもこうです。それに橋で工事をしてて。
+A|Roadworks? How long has that been going on?|工事？ いつからですか？
+B|Three months. They said six weeks. Ha.|3か月。6週間って言ってたのに。はは。
+A|Every city's the same.|どの街も同じですね。
+B|Every city. Roadworks are the one thing everyone has in common.|どの街も。道路工事は全人類の共通点です。
+S|
+B|At least the weather's nice.|少なくとも天気はいいですね。
+A|It is. Nice weather for sitting in traffic.|そうですね。渋滞の中で座るには最高の天気。
+B|Ha. That's the spirit. Yesterday it rained all day. Traffic was worse.|はは。その調子。昨日は一日中雨で。渋滞はもっとひどかった。
+A|Rain makes people forget how to drive.|雨が降ると、みんな運転の仕方を忘れますよね。
+B|Every time. Like they've never seen water.|毎回。水を見たことがないみたいに。
+A|Is it supposed to stay dry this weekend?|週末は晴れが続きますか？
+B|Should do. Clear till Monday. Good for the beach.|そのはずです。月曜まで晴れ。ビーチにはいいですよ。
+S|
+A|Look, it's moving.|ほら、動き出しました。
+B|Finally. Ten minutes now. Sorry about the wait.|やっと。あと10分です。お待たせしてすみません。
+A|Not your fault. Blame the bridge.|あなたのせいじゃないです。橋のせいです。
+B|I do. Every day.|そうしてます。毎日。
+
+T|🌡|車内が暑い・寒いので温度を変えてもらう|交通|could you turn the heating up, it's a bit warm in here, the air con, crack a window, that's better
+S|
+A|Sorry, could you turn the air con down a bit? It's a bit cold back here.|すみません、エアコンを少し弱めてもらえますか？ 後ろが少し寒くて。
+B|Of course. Is that better?|もちろんです。これでどうですか？
+A|Much better. Thank you.|ずっといいです。ありがとう。
+B|Some people like it freezing. I never know.|凍えるほど冷やしたい人もいるので。いつもわからなくて。
+A|I'd rather be warm. I'm from somewhere hot.|温かいほうがいいです。暑い場所の出身なので。
+B|Then you'll hate our winters.|じゃあうちの冬は嫌いになりますよ。
+A|I already do, and I've only been here a week.|もう嫌いです。まだ1週間しかいないのに。
+S|
+A|Actually, now it's a bit warm. Could you crack a window?|あの、今度は少し暑いです。窓を少し開けてもらえますか？
+B|Ha, okay. A little air.|はは、わかりました。少し風を。
+A|Perfect. That's the spot. Sorry to be difficult.|完璧です。ちょうどいい。面倒を言ってすみません。
+B|Not at all. Better you're comfortable than quiet and miserable.|全然。黙って我慢されるより、快適でいてもらうほうがいいです。
+A|That's a good philosophy.|いい哲学ですね。
+B|Twenty years of driving. You learn.|運転歴20年。学ぶんです。
+S|
+A|How much longer?|あとどのくらいですか？
+B|Five minutes. Enjoy the perfect temperature while it lasts.|5分。完璧な温度を今のうちに楽しんでください。
+
+T|🚽|トイレが詰まったので直してほしいとフロントや大家に伝える|住まい|the toilet's blocked, I've tried, could you send someone, as soon as possible, sorry to bother you
+S|
+A|Hi, I'm in flat six. The toilet's blocked. I've tried the plunger, but nothing.|6号室です。トイレが詰まりました。ラバーカップは試しましたが、だめでした。
+B|Sorry to hear that. Is it overflowing?|それは大変ですね。溢れていますか？
+A|No, thankfully. It just won't flush properly.|いえ、幸い。ただちゃんと流れません。
+B|Okay. I'll send someone round. When are you in?|わかりました。人を向かわせます。いつ在宅ですか？
+A|All day today. And I'd rather it was sorted today, honestly.|今日は一日中。正直、今日中に直してほしいです。
+B|Understood. I'll try for this afternoon. Two o'clock?|承知しました。今日の午後を目指します。2時は？
+A|Two is perfect. Thank you.|2時で完璧です。ありがとう。
+S|
+B|Just so I know — anything unusual go down there?|念のため、何か変わったものを流しましたか？
+A|No! Just the normal. It's an old pipe, I think.|いいえ！ 普通のものだけです。古いパイプだと思います。
+B|Probably. That building's had a few. Not your fault.|たぶんそうですね。あの建物は何度かありました。あなたのせいじゃないです。
+A|That's a relief. I was worried you'd blame me.|安心しました。責められるかと思って。
+B|No. Blame the pipes. They're from the seventies.|いえ。パイプのせいです。70年代のものなので。
+S|
+A|Sorry to bother you with this.|こんなことでお手数おかけして。
+B|That's what I'm here for. Someone will be there at two.|そのために私がいるんです。2時に誰か行きます。
+A|Thank you. I'll be waiting. Not using the bathroom.|ありがとうございます。待ってます。トイレは使わずに。
+
+T|🕐|早めにチェックインして部屋に入れるか聞く|旅行|is early check-in possible, my flight got in early, is the room ready, I can wait, leave my bags
+S|
+A|Hi, I've got a reservation, but my flight got in early. Is early check-in possible?|予約している者ですが、飛行機が早く着いて。早めのチェックインはできますか？
+B|Let me see. Check-in's normally three. What's the name?|確認します。チェックインは通常3時です。お名前は？
+A|Fujinuma.|藤沼です。
+B|Fujinuma... the room's being cleaned right now. Maybe an hour?|藤沼様… お部屋は今清掃中です。1時間ほどでしょうか。
+A|An hour's fine. I can wait. Can I leave my bags?|1時間なら大丈夫です。待ちます。荷物を預けられますか？
+B|Of course. We'll hold them, and I'll message you when it's ready.|もちろんです。お預かりして、準備ができたらメッセージします。
+A|Perfect. Is there somewhere I can get a coffee?|完璧です。コーヒーが飲める場所はありますか？
+B|The lounge, just there. Complimentary for guests.|ラウンジが、そこに。宿泊客は無料です。
+S|
+B|Actually, good news. They've just finished. The room's ready.|実は、いい知らせです。ちょうど終わったそうです。お部屋の準備ができました。
+A|Already? That was quick.|もう？ 早いですね。
+B|You got lucky. Here's your key. Fourth floor.|運が良かったですね。鍵です。4階。
+A|Thank you. No charge for the early check-in?|ありがとう。早めのチェックイン料金は？
+B|None. The room was free, so it's yours.|ありません。部屋が空いていたので、どうぞ。
+S|
+A|I'll still get that coffee first.|それでもコーヒーは先に飲みます。
+B|Take it up with you. The view's better from the room.|お部屋に持っていってください。眺めは部屋からのほうがいいですよ。
+
+T|🧾|チェックアウト時に追加料金の内訳を確認する|旅行|what's this charge for, I didn't use, could you break it down, that's been added by mistake, take it off
+S|
+A|Hi, checking out. Could I see the bill before I pay?|チェックアウトです。支払う前に明細を見せてもらえますか？
+B|Of course. Here you are.|もちろんです。どうぞ。
+A|What's this charge for? Forty pounds, "extras".|この料金は何ですか？ 40ポンド、「追加」。
+B|Let me check. That's the minibar.|確認します。ミニバーですね。
+A|I didn't use the minibar. I didn't even open it.|ミニバーは使っていません。開けてもいません。
+B|Hmm. It's been logged on Tuesday.|うーん。火曜に記録されています。
+A|I was out all day Tuesday. Could you break it down?|火曜は一日中外出していました。内訳を教えてもらえますか？
+B|Two beers, a bottle of wine, nuts. Are you sure?|ビール2本、ワイン1本、ナッツ。本当に違いますか？
+A|Completely sure. I don't drink.|完全に。お酒は飲まないので。
+S|
+B|Then that's been added by mistake. Possibly the wrong room.|では間違って追加されたようです。別の部屋の分かもしれません。
+A|That's what I thought.|そう思いました。
+B|I'll take it off. Sorry about that. So it's just the room and the breakfast.|外します。申し訳ありません。では部屋代と朝食だけです。
+A|That looks right now.|それなら合っています。
+B|And I'll add a note so it doesn't happen next time.|次回起きないように、メモを残しておきます。
+A|Thank you. I'm glad I checked.|ありがとう。確認してよかったです。
+S|
+B|Always check. Even we make mistakes.|いつも確認してください。私たちも間違えますから。
+A|Everyone does. Thanks for fixing it quickly.|誰でもそうです。すぐ直してくれてありがとう。

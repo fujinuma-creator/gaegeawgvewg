@@ -1,0 +1,407 @@
+T|💻|社用車やPCを借りたい|仕事|could I borrow, sign it out, bring it back by, book the car, in good condition
+S|
+A|Hi, could I borrow one of the spare laptops for the conference?|カンファレンス用に予備のノートパソコンを借りられますか？
+B|Sure. When do you need it?|いいですよ。いつ必要ですか？
+A|Thursday and Friday. I'd bring it back Monday morning.|木曜と金曜。月曜の朝に返します。
+B|No problem. You'll need to sign it out.|大丈夫です。持ち出し記録にサインしてください。
+A|Of course. Where's the sheet?|もちろん。用紙はどこですか？
+B|Here. Name, dates, and your manager's initials.|ここです。名前、日付、上司のイニシャル。
+S|
+A|Also, is the company car free on Thursday? The venue's a bit remote.|それと、木曜に社用車は空いていますか？ 会場が少し遠いんです。
+B|Let me check the booking system... yes, it's free.|予約システムを確認します… はい、空いています。
+A|Great. Can I book it from eight?|よかった。8時から予約できますか？
+B|Done. Keys are in the drawer by reception.|完了です。鍵は受付横の引き出しにあります。
+A|And I need to fill it up before returning?|返す前に給油が必要ですか？
+B|Yes, and keep the receipt for expenses.|はい、経費用にレシートを取っておいてください。
+S|
+A|Anything else I should know?|他に知っておくべきことは？
+B|Just bring it all back in good condition. And no smoking in the car.|全部良い状態で返してください。あと車内は禁煙です。
+A|Wouldn't dream of it. Thanks.|もちろんです。ありがとう。
+
+T|🏠|在宅勤務に切り替えたいと伝える|仕事|work from home, a couple of days a week, more productive, reachable, trial it
+S|
+A|I wanted to ask about working from home a couple of days a week.|週に2日ほど在宅勤務にできないか、相談したくて。
+B|Okay. What's prompting that?|なるほど。きっかけは？
+A|The commute's nearly two hours a day. And honestly, I'm more productive at home for focused work.|通勤が1日2時間近くかかっていて。それに正直、集中作業は家のほうが捗るんです。
+B|Which days were you thinking?|どの曜日を考えてる？
+A|Tuesday and Thursday. No team meetings on those days.|火曜と木曜。その日はチーム会議がないので。
+B|That's true.|たしかにそうだね。
+S|
+B|My concern is availability. If someone needs you.|心配なのは、対応できるかどうか。誰かが君を必要とした時に。
+A|I'd be fully reachable. Same hours, same chat, same phone.|完全に連絡が取れる状態にします。同じ時間、同じチャット、同じ電話で。
+B|And you'd come in if something urgent came up?|緊急のことがあれば出社する？
+A|Absolutely. It's not a hard rule, just a default.|もちろんです。厳格なルールではなく、基本設定というだけで。
+B|Okay. Let's trial it for a month.|わかった。1か月試してみよう。
+A|That's fair.|それで十分です。
+S|
+B|If output stays the same or better, we keep it.|成果が同じか上がれば、続ける。
+A|And if it doesn't, I'll be the first to say so.|そうでなければ、私から先に言います。
+B|Good. Start next week.|よし。来週から始めて。
+A|Thank you. I really appreciate the flexibility.|ありがとうございます。柔軟に対応していただいて助かります。
+
+T|🤒|体調不良で当日休むと連絡する|仕事|I won't be in today, feeling rough, sick day, cover, keep you posted
+S|
+A|Hi, sorry to call so early. I won't be in today.|朝早くにすみません。今日は出社できません。
+B|Oh no. What's wrong?|大丈夫？ どうしたの？
+A|I've been up half the night with a stomach bug. I feel rough.|夜中ずっと胃腸炎で起きていて。かなりつらいです。
+B|That sounds awful. Don't come in.|それはひどいね。来ないで。
+A|I'm sorry. I know the timing's bad.|すみません。タイミングが悪いのはわかっています。
+B|It's never good timing. Just get better.|いいタイミングなんてないよ。とにかく良くなって。
+S|
+A|Is there anything urgent I need to hand over?|急ぎで引き継ぐべきことはありますか？
+B|The Baker call at eleven. Can someone else take it?|11時のベイカーとの電話。誰か代われる？
+A|Sam knows the account. I'll message him the notes now.|サムがその案件を知っています。今、彼にメモを送ります。
+B|Perfect. Anything else can wait.|完璧。他は待てる。
+A|Thanks. I'll check messages if I can, but I might just sleep.|ありがとうございます。可能ならメッセージを確認しますが、寝ているかもしれません。
+B|Sleep. Don't check anything.|寝て。何も確認しなくていい。
+S|
+A|I'll let you know tonight how I'm feeling for tomorrow.|明日出られるか、今夜連絡します。
+B|Only if you're up to it. Feel better.|無理のない範囲で。お大事に。
+A|Thanks. Sorry again.|ありがとう。改めてすみません。
+
+T|🔀|異動や転勤を打診された|仕事|relocate, transfer, think it over, what would it involve, my family
+S|
+B|I wanted to talk to you about an opportunity. In the Manchester office.|ある話について相談したくて。マンチェスター支社のことで。
+A|Manchester? A transfer?|マンチェスター？ 転勤ですか？
+B|Yes. They need someone with your experience to lead the new team.|そう。新チームを率いるのに、君の経験が必要なんだ。
+A|That's... unexpected.|それは… 予想外でした。
+B|I know. Nothing's decided. I wanted to gauge your interest first.|わかってる。何も決まっていない。まず君の意向を知りたくて。
+A|What would it involve?|具体的にはどういう内容ですか？
+S|
+B|A step up in title and pay. And a move, obviously.|肩書きと給与が上がる。あと当然、引っ越し。
+A|Permanent?|恒久的に？
+B|Two years minimum. After that, it's up to you.|最低2年。その後は君次第。
+A|I'd need to talk to my partner. She's got her own job here.|パートナーと話す必要があります。彼女もここで仕事をしているので。
+B|Of course. Take your time. I'd want you to be sure.|もちろん。ゆっくり考えて。確信を持ってほしいから。
+A|How long do I have?|期限はどのくらいですか？
+B|Two weeks. Then they'll need to look elsewhere.|2週間。それ以降は他を探すことになる。
+S|
+A|Can I ask — do you think I should take it?|伺ってもいいですか。私は受けるべきだと思いますか？
+B|Honestly? Yes. But I'd also hate to lose you here.|正直？ うん。でもここで君を失うのも嫌だ。
+A|That's a fair answer. Thank you for being straight with me.|正直な答えですね。率直に言ってくれてありがとうございます。
+B|Think it over. Come back with questions.|よく考えて。質問があれば聞きに来て。
+
+T|📈|評価面談で自分の成果を説明する|仕事|this year I, delivered, took the lead on, measurable, going forward
+S|
+B|So, let's start with what you're most proud of this year.|では、今年一番誇りに思うことから始めましょう。
+A|The Henderson project. I took the lead on it from March, and we delivered two weeks early.|ヘンダーソンの案件です。3月から主導して、予定より2週間早く納品しました。
+B|That was a big one.|あれは大きな案件だったね。
+A|It was. And the client's already signed for phase two.|はい。クライアントはもう第2フェーズの契約もしています。
+B|Which is measurable revenue. Good.|それは数字に表れる成果だね。良い。
+A|Exactly. I've put the figures in the summary I sent you.|その通りです。お送りした要約に数字を入れてあります。
+S|
+B|What about the areas you found harder?|苦労した部分は？
+A|Delegation. I still take on too much myself.|人に任せること。まだ自分で抱え込みすぎています。
+B|I've noticed that.|それは気づいていたよ。
+A|I've started handing more to Lena. It's getting better, but it's a work in progress.|レナにもっと任せるようにしました。良くなってきていますが、まだ途中です。
+B|Self-awareness counts for a lot here.|自己認識があるのは大きいね。
+S|
+B|And going forward? What do you want next year to look like?|それで、今後は？ 来年はどうしたい？
+A|I'd like to manage a small team formally. I'm doing it informally already.|正式に小さなチームを管理したいです。すでに非公式にはやっているので。
+B|That's a reasonable ask. Let's talk about how to get there.|それは妥当な要望だ。どう実現するか話そう。
+A|I'd appreciate that.|ありがとうございます。
+
+T|🤨|評価に納得できないと伝える|仕事|I don't think that's fair, I'd like to understand, the reasoning, evidence, reconsider
+S|
+A|I've read the review, and I have to be honest — I don't think it's fair.|評価を読みましたが、正直に言うと、公平ではないと思います。
+B|Okay. Which part?|わかった。どの部分？
+A|The "meets expectations" rating. I think the year was stronger than that.|「期待通り」の評価です。今年はそれ以上だったと思います。
+B|Tell me why.|理由を聞かせて。
+A|I delivered the Henderson project early, took on Sam's accounts when he left, and trained two new starters.|ヘンダーソンの案件を早期納品し、サムの退職後は彼の案件を引き継ぎ、新人2人を教育しました。
+B|All true.|全部その通りだ。
+A|I'd like to understand the reasoning. What would "exceeds" have looked like?|評価の根拠を理解したいんです。「期待以上」とは何を指すのでしょう。
+S|
+B|Fair question. The feedback from the design team was mixed.|もっともな質問だ。デザインチームからのフィードバックが賛否両論だった。
+A|Mixed how?|どのように？
+B|They felt communication could have been clearer on deadlines.|締め切りに関する伝達がもっと明確であるべきだったと。
+A|I wasn't told that at the time. If I had been, I'd have fixed it.|その時は言われませんでした。言われていれば直していました。
+B|That's a reasonable point.|それはもっともな指摘だね。
+A|I'm not saying the feedback's wrong. I'm saying one issue shouldn't outweigh everything else.|フィードバックが間違っているとは言いません。ただ、1つの問題が他のすべてを上回るべきではないと思います。
+S|
+B|Let me take this back and reconsider. I'll look at the evidence again.|持ち帰って再検討するよ。根拠をもう一度見直す。
+A|Thank you. That's all I'm asking.|ありがとうございます。それだけで十分です。
+B|I'll come back to you by Friday.|金曜までに返事する。
+A|I appreciate you hearing me out.|聞いていただいてありがとうございました。
+
+T|🎓|研修やセミナーへの参加を希望する|仕事|I'd like to attend, relevant to, cover the cost, share what I learn, worth the investment
+S|
+A|There's a two-day data course next month. I'd like to attend, if possible.|来月2日間のデータ研修があって。できれば参加したいのですが。
+B|Which one?|どの研修？
+A|The one from the industry association. It covers exactly what we need for the new reporting.|業界団体のものです。新しいレポート業務に必要なことをちょうど扱っています。
+B|How much is it?|費用は？
+A|Four hundred. Plus a day's travel.|400です。それに移動で1日。
+B|And what does the team get out of it?|チームにとってのメリットは？
+S|
+A|I'd write up the key points and run a short session for everyone.|要点をまとめて、全員向けに短い勉強会をやります。
+B|So one person goes, the whole team learns.|1人が行って、チーム全体が学ぶわけだね。
+A|Exactly. Better value than sending three people.|その通りです。3人送るより費用対効果が高いです。
+B|That's a good argument.|説得力があるね。
+A|And honestly, it's the gap in my skills. I want to close it.|それに正直、それが私のスキルの弱点なんです。埋めたくて。
+S|
+B|Okay. Put in the request and I'll approve it.|わかった。申請を出して。承認するよ。
+A|Thank you. I'll book it today.|ありがとうございます。今日予約します。
+B|And I'm holding you to that team session.|チーム勉強会は必ずやってもらうからね。
+A|Two weeks after. I'll put it in the calendar now.|研修の2週間後に。今カレンダーに入れます。
+
+T|📚|資格取得の補助を相談する|仕事|professional qualification, would the company cover, study leave, benefit the team, commit to staying
+S|
+A|I'm thinking of doing the project management certification. Does the company help with that?|プロジェクトマネジメントの資格を取ろうと思っていて。会社からの補助はありますか？
+B|We do, in some cases. What's the cost?|場合によってはある。費用は？
+A|About twelve hundred for the course and exam.|コースと試験で1200ほどです。
+B|That's a fair amount. What's the case for it?|それなりの額だね。理由は？
+A|Half my job is project management now. A formal qualification would make me better at it.|今の仕事の半分はプロジェクト管理です。正式な資格があれば、もっと上手くできます。
+B|And clients like to see it.|クライアントも資格を見て安心するしね。
+A|Exactly.|その通りです。
+S|
+B|There's usually a condition. You'd commit to staying for two years after.|通常、条件がある。取得後2年は在籍するという約束。
+A|That's fine. I'm not planning to go anywhere.|問題ありません。どこかに移る予定はないので。
+B|And you'd need some study leave?|勉強のための休暇も必要？
+A|A few days before the exam. I'd use holiday if I had to.|試験前に数日。必要なら有給を使います。
+B|We can probably give you two days as study leave.|2日は勉強休暇として出せると思う。
+A|That would be a big help.|それは大いに助かります。
+S|
+B|Write it up formally and I'll take it to HR.|正式に書面にして。人事に持っていくよ。
+A|I'll have it to you by tomorrow.|明日までにお渡しします。
+B|Good. It's a sensible investment, for you and for us.|よし。君にとっても会社にとっても、賢い投資だ。
+
+T|🗺|新人にオフィスの案内をする|仕事|let me show you around, this is where, the kitchen, fire exits, any questions so far
+S|
+A|Right, let me show you around. This is the main office.|では案内しますね。ここがメインオフィスです。
+B|It's bigger than I expected.|思ったより広いですね。
+A|It spreads out. Your desk is over there, by the window.|広がっていますからね。あなたのデスクはあちら、窓際です。
+B|Oh, nice spot.|いい場所ですね。
+A|We saved it for you. Don't tell the others.|あなたのために取っておきました。他の人には内緒ですよ。
+S|
+A|This is the kitchen. Coffee machine, fridge, and the important bit — the biscuit tin.|ここがキッチンです。コーヒーマシン、冷蔵庫、そして一番大事な、ビスケットの缶。
+B|Ha, noted.|はは、覚えておきます。
+A|Label your food or it'll disappear. Not a threat, just experience.|食べ物には名前を書いてください。じゃないと消えます。脅しじゃなく、経験談です。
+B|Understood.|わかりました。
+A|Toilets are down that corridor. Fire exits are there and there.|トイレはあの廊下の先。非常口はあそことあそこです。
+S|
+A|Any questions so far?|ここまでで質問はありますか？
+B|Just one. Who do I ask if I get stuck?|1つだけ。詰まったら誰に聞けばいいですか？
+A|Me, for the first week. After that, anyone. Everyone's friendly.|最初の1週間は私に。その後は誰でも。みんな親切ですから。
+B|That's reassuring.|安心しました。
+A|Come on, I'll introduce you to the team.|さあ、チームに紹介しますね。
+
+T|🥂|新入社員の歓迎会で乾杯の挨拶をする|仕事|welcome to the team, raise your glasses, glad to have you, here's to, cheers
+S|
+A|Can I have everyone's attention for a second?|少しだけ、皆さん注目してもらえますか？
+B|Go on, Kohei.|どうぞ、航平。
+A|I'll keep this short, because the food's getting cold.|短くします。料理が冷めるので。
+B|Ha! Good man.|はは！ いいね。
+A|We're here to welcome Lena, who joined us on Monday.|月曜に入社したレナを歓迎するために集まりました。
+S|
+A|She's already fixed two things I'd been ignoring for months.|彼女はもう、私が何か月も放置していたことを2つ直してくれました。
+B|That's true, actually.|それ、本当なんだよね。
+A|So clearly we're lucky to have her. Lena, welcome. We're glad you're here.|というわけで、彼女が来てくれたのは幸運です。レナ、ようこそ。来てくれてうれしいです。
+B|Thank you. That's very kind.|ありがとうございます。とてもうれしいです。
+A|Everyone, raise your glasses. To Lena!|皆さん、グラスを上げて。レナに！
+B|To Lena!|レナに！
+S|
+A|Right, that's the speech. Eat.|以上、挨拶終わり。食べましょう。
+B|Shortest speech ever. Well done.|史上最短のスピーチだね。お見事。
+A|I've sat through the long ones. I know the pain.|長いのを聞かされたことがあるから。あの苦痛を知ってるんだ。
+
+T|🎤|送別会でスピーチをする|仕事|it's been a pleasure, we'll miss you, all the best, leave a gap, don't be a stranger
+S|
+A|Okay, a few words before Tom disappears on us.|トムが去ってしまう前に、少しだけ。
+B|Oh no, here we go.|うわ、始まった。
+A|Tom joined us five years ago. He said he'd stay for six months.|トムは5年前に入りました。「半年だけ」と言っていました。
+B|I did say that.|たしかに言った。
+A|Five years later, he's the person we all go to when something breaks.|5年後の今、何かが壊れた時にみんなが頼る人になりました。
+S|
+A|He's patient, he's funny, and he makes terrible coffee.|忍耐強くて、面白くて、コーヒーを淹れるのはひどく下手です。
+B|The coffee is fine!|コーヒーは普通だよ！
+A|The coffee is not fine. But everything else is.|コーヒーは普通じゃない。でもそれ以外は最高です。
+B|I'll take that.|それは受け取っておく。
+A|You're going to leave a real gap here. We'll miss you.|本当に大きな穴が空きます。寂しくなりますよ。
+B|I'll miss you all too. Even the bad coffee jokes.|私もみんなが恋しくなる。コーヒーの悪口も含めて。
+S|
+A|All the best in the new job. And don't be a stranger.|新しい仕事、頑張って。それと、たまには顔を見せてね。
+B|I'll be back for the Christmas party. Count on it.|クリスマスパーティーには戻ってくるよ。約束する。
+A|To Tom!|トムに！
+B|To Tom!|トムに！
+
+T|🚪|お客様を社内に案内する|仕事|welcome, right this way, can I get you anything, meeting room, they'll be with you shortly
+S|
+A|Good morning. You must be Ms Reyes. Welcome.|おはようございます。レイエス様ですね。ようこそ。
+B|That's right. Thank you.|そうです。ありがとうございます。
+A|I'm Kohei. I'll take you up to the meeting room. Right this way.|航平と申します。会議室までご案内します。こちらへどうぞ。
+B|Lovely. Is it far?|ありがとう。遠いですか？
+A|Just the second floor. We'll take the lift.|2階です。エレベーターで参ります。
+S|
+A|Can I get you anything? Tea, coffee, water?|何かお持ちしましょうか？ お茶、コーヒー、お水など。
+B|A coffee would be wonderful. Just milk.|コーヒーをいただけると助かります。ミルクだけで。
+A|Of course. Here we are. Please, make yourself comfortable.|かしこまりました。こちらです。どうぞおくつろぎください。
+B|Thank you.|ありがとうございます。
+A|The Wi-Fi password's on the card there, if you need it.|Wi-Fiのパスワードは、必要でしたらそちらのカードにあります。
+S|
+A|Sarah and the team will be with you in about five minutes.|サラとチームは5分ほどで参ります。
+B|Perfect. That gives me time to set up.|ちょうどいいです。準備の時間ができます。
+A|I'll bring your coffee right back. Anything else, just ask.|コーヒーをすぐお持ちします。他に何かあればお申し付けください。
+B|You've been very kind.|ご親切にありがとう。
+
+T|☎️|電話で担当者が不在だと伝える|仕事|I'm afraid she's not available, out of the office, take a message, expected back, pass it on
+S|
+B|Hello, could I speak to Sarah Miller, please?|もしもし、サラ・ミラーさんをお願いできますか？
+A|I'm afraid Sarah's not available at the moment. She's in a meeting.|申し訳ありません、サラはただいま席を外しております。会議中でして。
+B|Oh. Do you know when she'll be free?|そうですか。いつ手が空くかわかりますか？
+A|She's expected back around three. Can I take a message?|3時頃に戻る予定です。ご伝言を承りましょうか？
+B|Yes, please. It's about the contract renewal.|お願いします。契約更新の件です。
+A|Of course. Could I take your name and number?|承知しました。お名前とお電話番号をいただけますか？
+S|
+B|It's James Cole, from Northwind. She has my number.|ノースウィンドのジェームズ・コールです。彼女は番号を知っています。
+A|James Cole, Northwind, about the contract renewal. Is it urgent?|ジェームズ・コール様、ノースウィンド、契約更新の件ですね。お急ぎですか？
+B|Fairly. We need an answer by end of week.|やや急ぎです。週末までに返答が必要でして。
+A|I'll flag that. I'll make sure she gets it as soon as she's out.|その旨を伝えます。会議が終わり次第、必ず伝えます。
+B|Thank you.|ありがとうございます。
+S|
+A|Is there anyone else who could help in the meantime?|それまでの間、他にお役に立てる者はおりますか？
+B|No, it needs to be Sarah. But thanks for asking.|いえ、サラでないと。でも気遣いありがとう。
+A|Understood. I'll pass it on right away.|承知しました。すぐに伝えます。
+B|Much appreciated. Goodbye.|助かります。失礼します。
+
+T|📞|折り返し電話をお願いする|仕事|could you ask her to call me back, the best number, any time after, it's regarding, I'll be around
+S|
+A|Hi, I'm trying to reach Priya. Is she in?|もしもし、プリヤさんと話したいのですが。いらっしゃいますか？
+B|She's on another call right now. Can I help?|ただいま別の電話に出ております。私でよろしければ。
+A|It's regarding the invoice query. Probably best to speak to her directly.|請求書の問い合わせの件で。彼女と直接話したほうがよさそうです。
+B|Understood. Would you like her to call you back?|承知しました。折り返しお電話させましょうか？
+A|Yes, please. Any time after two would be great.|お願いします。2時以降ならいつでも。
+B|And the best number to reach you on?|ご連絡先は？
+S|
+A|My mobile. It's 0-7-7-0-0, 9-0-0-1-2-3.|携帯で。0-7-7-0-0、9-0-0-1-2-3です。
+B|0-7-7-0-0, 9-0-0-1-2-3. And your name?|0-7-7-0-0、9-0-0-1-2-3。お名前は？
+A|Kohei Fujinuma. She'll know what it's about.|藤沼航平です。用件は彼女にわかると思います。
+B|Kohei Fujinuma, after two, about the invoice. I'll let her know.|藤沼航平様、2時以降、請求書の件。お伝えします。
+A|Thank you. I'll be around all afternoon.|ありがとうございます。午後はずっと出られます。
+S|
+B|If she can't reach you, is email okay?|もし繋がらなければ、メールでもよろしいですか？
+A|Email's fine too. She has it.|メールでも大丈夫です。彼女は知っています。
+B|Perfect. She'll be in touch.|承知しました。ご連絡いたします。
+
+T|💬|社内チャットで急ぎか確認する|仕事|is this urgent, no rush, whenever you get a chance, drop everything, by when
+S|
+B|Hey, do you have a minute to look at something?|ねえ、ちょっと見てほしいものがあるんだけど、時間ある？
+A|Is it urgent? I'm in the middle of the report.|急ぎ？ 今レポートの途中で。
+B|Not urgent. Whenever you get a chance.|急ぎじゃない。手が空いた時でいいよ。
+A|Okay. Give me half an hour.|わかった。30分待って。
+B|Perfect. No rush at all.|完璧。全然急がなくていい。
+S|
+B|Actually, sorry, one thing IS urgent. The client's asking for the file now.|ごめん、やっぱり1つだけ急ぎ。クライアントが今ファイルを求めてる。
+A|Which file?|どのファイル？
+B|The revised proposal. The one you sent me yesterday.|修正版の提案書。昨日送ってくれたやつ。
+A|That's in the shared folder. "Proposal_v3".|共有フォルダにあるよ。「Proposal_v3」。
+B|Found it. Thanks. You can go back to your report.|見つけた。ありがとう。レポートに戻っていいよ。
+A|Ha, thanks for the permission.|はは、許可ありがとう。
+S|
+A|And the non-urgent thing? Still want me to look?|それで、急ぎじゃないほうは？ まだ見てほしい？
+B|Yes, but tomorrow's fine. It's just a design question.|うん、でも明日でいい。デザインの質問だから。
+A|Tomorrow morning, then. Put it in my calendar.|じゃあ明日の朝。カレンダーに入れておいて。
+B|Done. Thanks for checking rather than dropping everything.|入れた。全部放り出さずに、確認してくれてありがとう。
+
+T|⏳|プロジェクトの遅れを報告する|仕事|we're behind schedule, slipped, the reason is, revised timeline, mitigate
+S|
+A|I need to give you an honest update on the project. We're behind.|プロジェクトについて正直にご報告します。遅れています。
+B|How far behind?|どのくらい？
+A|About ten days. The integration took longer than we planned.|10日ほどです。統合作業に予定以上に時間がかかりました。
+B|What happened?|何があった？
+A|The client's system wasn't documented properly. We spent a week just working out how it fits together.|クライアントのシステムの文書が不十分で。仕組みを理解するだけで1週間かかりました。
+B|That's not something you could have known in advance.|それは事前にわかりようがなかったね。
+S|
+A|No. But I should have flagged it sooner. I hoped we'd catch up.|はい。ただ、もっと早く報告すべきでした。追いつけると思ってしまって。
+B|And you didn't.|それで、追いつけなかった。
+A|We didn't. So here's the revised timeline. Launch moves to the twentieth.|追いつけませんでした。修正スケジュールがこちらです。リリースは20日に。
+B|Can we mitigate any of that?|少しでも短縮できる？
+A|If we add one more developer for two weeks, we could pull it back to the fifteenth.|開発者を1人、2週間追加できれば、15日まで戻せます。
+B|Do that. I'd rather spend the money than lose the client's trust.|そうして。お金を使うほうが、クライアントの信頼を失うよりましだ。
+S|
+A|I'll tell the client today. Honestly, with the new date.|今日クライアントに伝えます。正直に、新しい日付で。
+B|Good. And next time, tell me the moment it slips.|よし。次は、遅れた瞬間に私に言って。
+A|I will. Lesson learned.|そうします。教訓にします。
+
+T|💰|予算オーバーを説明する|仕事|over budget, by how much, where did it go, unexpected costs, back on track
+S|
+A|I need to talk about the budget. We're over.|予算についてお話しする必要があります。超過しています。
+B|By how much?|どのくらい？
+A|Twelve percent. About six thousand.|12%。約6000です。
+B|That's significant. Where did it go?|かなりの額だね。何に使った？
+A|Mostly the venue. They increased the price after we'd agreed, citing extra security.|主に会場です。合意後に、追加の警備を理由に値上げされました。
+B|Did we have that in writing?|書面で合意していた？
+A|Only an email. Not a signed contract. That was my mistake.|メールだけです。署名済みの契約書ではなく。それが私のミスでした。
+S|
+B|Okay. What else?|わかった。他には？
+A|Catering came in higher because the headcount went up. That's the good kind of overspend.|参加人数が増えてケータリング費が上がりました。それは良い意味での超過です。
+B|True. More people is a good problem.|たしかに。人が増えるのはいい問題だ。
+A|And the rest is small stuff. Printing, transport.|残りは細かいものです。印刷、交通費。
+B|So the venue's the real issue.|つまり、会場が本当の問題だね。
+A|Yes. And I've already pushed back. They've agreed to knock off two thousand.|はい。すでに交渉して、2000引くことで合意しました。
+S|
+B|That brings it to eight percent. Manageable.|それで8%か。対応可能な範囲だ。
+A|And I'll get signed contracts for everything from now on.|今後は全部、署名済みの契約書を取ります。
+B|Good. Write it up for the finance review.|よし。財務レビュー用にまとめて。
+A|Already started.|もう始めています。
+
+T|🙋|会議で反対意見を丁寧に述べる|仕事|I see it slightly differently, can I offer another view, with respect, my concern is, what if we
+S|
+B|So we're all agreed — we launch on the first?|では全員賛成ということで、1日にリリースですね？
+A|Can I offer a slightly different view?|少し違う見方を出してもいいですか？
+B|Of course. Go ahead.|もちろん。どうぞ。
+A|My concern is that the first is a Monday, right after the holiday weekend.|気になっているのは、1日が連休明けの月曜だということです。
+B|What's the problem with that?|それの何が問題？
+A|Half the team will have been off. If anything breaks, we're thin on support.|チームの半分が休み明けです。何か壊れたら、サポートが手薄になります。
+S|
+B|Hmm. That's a fair point.|うーん。もっともな指摘だね。
+A|What if we launched on the Wednesday instead? Two days later, but with everyone back.|代わりに水曜にするのはどうでしょう？ 2日遅れますが、全員が戻っています。
+B|The client's expecting the first.|クライアントは1日を期待している。
+A|I understand. But I think they'd rather have a smooth Wednesday than a rough Monday.|わかります。ただ、荒れた月曜より、スムーズな水曜のほうが喜ばれると思います。
+B|Would you be comfortable explaining that to them?|それを君からクライアントに説明できる？
+A|Yes. I'd frame it as protecting their launch.|はい。彼らのリリースを守るため、という形で。
+S|
+B|Okay. Let's put it to a vote. Wednesday?|わかった。多数決を取ろう。水曜？
+A|Thank you for hearing me out.|聞いていただいてありがとうございます。
+B|That's what meetings are for. Wednesday it is.|会議はそのためにある。水曜で決まりだ。
+
+T|✅|会議をまとめて次のアクションを決める|仕事|to sum up, action points, who's taking, by when, let's wrap up
+S|
+A|Okay, we're nearly at time. Let me sum up.|そろそろ時間です。まとめさせてください。
+B|Go for it.|お願いします。
+A|We've agreed to move the launch to Wednesday the third.|リリースを3日の水曜に変更することで合意しました。
+B|Correct.|その通り。
+A|And we're adding one developer for the next two weeks.|それと、今後2週間、開発者を1人追加します。
+B|Yes, Sam's going to find someone.|はい、サムが人を探します。
+S|
+A|So, action points. Sam — find a developer by Friday.|では、アクション項目。サム、金曜までに開発者を見つける。
+B|Friday. Got it.|金曜。了解。
+A|Priya — tell the client about the new date, today if possible.|プリヤ、クライアントに新しい日付を伝える。できれば今日中に。
+B|I'll call them after this.|この後すぐ電話します。
+A|And I'll update the project plan and share it by tomorrow morning.|私はプロジェクト計画を更新して、明朝までに共有します。
+B|Perfect.|完璧。
+S|
+A|Anything we've missed?|抜けているものは？
+B|Just the budget note. Someone needs to update finance.|予算の件だけ。誰か財務に伝えないと。
+A|Good catch. I'll add that to mine.|いい指摘。私の担当に加えます。
+B|Then that's everything.|じゃあ以上ですね。
+A|Great. Let's wrap up. Thanks, everyone.|よし。終わりにしましょう。皆さん、ありがとう。
+
+T|👋|イベントや勉強会で隣の人に声をかける|人間関係|is this your first time, what brought you here, what did you think of, I'm here for, swap details
+S|
+A|Hi, is this your first time at one of these?|こんにちは、こういうイベントは初めてですか？
+B|It is. I'm a bit out of my depth, honestly.|はい。正直、ちょっと場違いな感じがして。
+A|Don't worry, everyone feels that at first. I'm Kohei.|大丈夫、最初はみんなそう感じますよ。航平です。
+B|Maya. Nice to meet you.|マヤです。よろしく。
+A|What brought you here?|どうして参加を？
+B|I'm trying to learn more about product design. My job's shifting that way.|プロダクトデザインについてもっと学びたくて。仕事がそっちの方向に変わってきて。
+S|
+A|What did you think of the first talk?|最初の講演はどうでしたか？
+B|Interesting, but a lot of jargon.|面白かったけど、専門用語が多かったですね。
+A|Ha, yes. The second one's usually more practical.|はは、そうですね。2つ目はもっと実践的なことが多いですよ。
+B|Good to know. Have you been to many of these?|それはよかった。よく来るんですか？
+A|A few. I mainly come for the people, honestly.|何回か。正直、主に人に会うために来ています。
+B|That makes sense.|なるほど。
+S|
+A|Should we swap details? I can send you some resources.|連絡先を交換しませんか？ 参考になる資料を送れますよ。
+B|That would be brilliant.|それは助かります。
+A|And there's a group of us going for a drink after. You're welcome to join.|それと、終わったら何人かで飲みに行くんです。よければ一緒に。
+B|I'd like that. Thank you.|ぜひ。ありがとう。
