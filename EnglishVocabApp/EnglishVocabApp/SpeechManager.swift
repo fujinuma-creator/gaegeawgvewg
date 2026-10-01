@@ -8,7 +8,6 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
     case british = "uk"
     case britishPosh = "ukPosh"
     case australian = "au"
-    case singaporean = "sg"
     case indian = "in"
 
     static let storageKey = "speech.accent"
@@ -22,7 +21,6 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .british:      return "イギリス英語"
         case .britishPosh:  return "イギリス英語（Posh）"
         case .australian:   return "オーストラリア英語"
-        case .singaporean:  return "シンガポール英語"
         case .indian:       return "インド英語"
         }
     }
@@ -33,21 +31,17 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .british:      return "🇬🇧"
         case .britishPosh:  return "🎩"
         case .australian:   return "🇦🇺"
-        case .singaporean:  return "🇸🇬"
         case .indian:       return "🇮🇳"
         }
     }
 
-    /// Language codes to try, in order. iOS ships no Singapore English voice,
-    /// so that accent falls back to British, which is the closest in vowels
-    /// and rhythm.
+    /// Language codes to try, in order.
     var languageCodes: [String] {
         switch self {
         case .american:     return ["en-US"]
         case .british:      return ["en-GB"]
         case .britishPosh:  return ["en-GB"]
         case .australian:   return ["en-AU"]
-        case .singaporean:  return ["en-SG", "en-GB"]
         case .indian:       return ["en-IN"]
         }
     }
@@ -61,7 +55,6 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .british:      return ["Kate", "Oliver", "Arthur", "Martha", "Daniel", "Serena"]
         case .britishPosh:  return ["Daniel", "Serena", "Kate", "Arthur", "Martha", "Jamie"]
         case .australian:   return ["Karen", "Lee", "Catherine", "Matilda"]
-        case .singaporean:  return ["Kate", "Daniel", "Oliver"]
         case .indian:       return ["Rishi", "Isha", "Veena", "Neel"]
         }
     }
