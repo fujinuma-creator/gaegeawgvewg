@@ -52845,3 +52845,355 @@ Zombie apocalypse.	zˈɒmbɪ ɐpˈɒkɐlˌɪps
 Zzz...	zˌɛdzˌɛdzˈɛd
 """#
 }
+
+// MARK: - 発音学習 seed
+
+/// One sound of British English (RP). `token` is the symbol as it appears in
+/// the app's espeak-generated IPA after tokenising (see `IPATokenizer`), so
+/// example words can be pulled from the vocabulary automatically.
+struct Phoneme: Identifiable, Hashable {
+    enum Group: String, CaseIterable {
+        case vowel = "母音"
+        case diphthong = "二重母音"
+        case consonant = "子音"
+    }
+
+    let token: String
+    /// Dictionary-style symbol shown to the user (e.g. /e/ for espeak's ɛ).
+    let symbol: String
+    let group: Group
+    /// Short Japanese name, e.g. 「長いイー」.
+    let name: String
+    /// One headline example word.
+    let keyword: String
+    /// 口の形・舌の位置.
+    let mouth: String
+    /// 発音のコツ.
+    let tip: String
+    /// 日本人が間違えやすい点.
+    let caution: String
+    /// Fallback examples when the vocabulary has too few matches.
+    let keywords: [String]
+
+    var id: String { token }
+}
+
+/// Two words that differ by exactly one sound. Used for the listening quiz.
+struct MinimalPair: Identifiable, Hashable {
+    let a: String
+    let b: String
+    /// Phoneme tokens for the sound in `a` and in `b`.
+    let tokenA: String
+    let tokenB: String
+    /// What the pair is testing, in Japanese.
+    let label: String
+
+    var id: String { a + "/" + b }
+}
+
+/// Splits an IPA string from the seed into phoneme tokens, so "ˈrɛvənjuː"
+/// becomes ["r","ɛ","v","ə","n","j","uː"]. Stress marks are dropped and the
+/// espeak-specific ɐ / ɹ are folded into ə / r.
+enum IPATokenizer {
+    private static let multi = ["aɪ", "eɪ", "ɔɪ", "əʊ", "aʊ", "ɪə", "eə", "ʊə",
+                                "iː", "uː", "ɑː", "ɔː", "ɜː", "tʃ", "dʒ"]
+
+    static func tokens(_ ipa: String) -> [String] {
+        let cleaned = ipa
+            .replacingOccurrences(of: "/", with: "")
+            .replacingOccurrences(of: "ˈ", with: "")
+            .replacingOccurrences(of: "ˌ", with: "")
+            .replacingOccurrences(of: "ɐ", with: "ə")
+            .replacingOccurrences(of: "ɹ", with: "r")
+        var out: [String] = []
+        var rest = Substring(cleaned)
+        while let first = rest.first {
+            if let m = multi.first(where: { rest.hasPrefix($0) }) {
+                out.append(m)
+                rest = rest.dropFirst(m.count)
+            } else {
+                if first != " " { out.append(String(first)) }
+                rest = rest.dropFirst()
+            }
+        }
+        return out
+    }
+}
+
+enum PhonemeSeed {
+    static let all: [Phoneme] = [
+        // ── 母音（12）──────────────────────────────────────────────
+        Phoneme(token: "iː", symbol: "iː", group: .vowel, name: "長いイー", keyword: "sheep",
+                mouth: "口を横に引いて、唇をにっこり。舌は前の上のほうに。",
+                tip: "日本語の「イー」より口を横に強く引き、しっかり伸ばす。短く切らない。",
+                caution: "「イ」と短く言うと /ɪ/（ship）に聞こえて別の単語になる。sheep と ship の違いは長さだけでなく口の緊張。",
+                keywords: ["sheep", "see", "eat", "team", "key"]),
+        Phoneme(token: "ɪ", symbol: "ɪ", group: .vowel, name: "ゆるいイ", keyword: "ship",
+                mouth: "口の力を抜いて、「イ」と「エ」の間くらい。舌はやや下がる。",
+                tip: "日本語の「イ」よりだらしなく、短く。「エ」に寄せる意識で。",
+                caution: "日本人は /iː/ と同じ「イ」で言いがち。ship が sheep に聞こえる。口を横に引かないのがコツ。",
+                keywords: ["ship", "sit", "big", "fish", "give"]),
+        Phoneme(token: "ɛ", symbol: "e", group: .vowel, name: "エ", keyword: "bed",
+                mouth: "口を軽く開いて、日本語の「エ」とほぼ同じ。",
+                tip: "日本語の「エ」でほぼ通じる。短くはっきり。",
+                caution: "伸ばさないこと。bed を「ベッド」と伸ばすと不自然。語尾の d は小さく。",
+                keywords: ["bed", "red", "get", "head", "ten"]),
+        Phoneme(token: "æ", symbol: "æ", group: .vowel, name: "口を開けたア（エの口）", keyword: "cat",
+                mouth: "「エ」の口の形のまま、あごを大きく下に開ける。舌は前に。",
+                tip: "「エ」と言いながら口を縦に開くと出る。「エァ」に近い。",
+                caution: "日本語の「ア」で言うと /ʌ/（cut）や /ɑː/ と混ざる。cat が cut に聞こえないよう、口を横にも開く。",
+                keywords: ["cat", "bad", "hand", "man", "happy"]),
+        Phoneme(token: "ɑː", symbol: "ɑː", group: .vowel, name: "奥の長いアー", keyword: "car",
+                mouth: "口を大きく縦に開けて、舌を奥に引く。医者に喉を見せる口。",
+                tip: "喉の奥から「アー」。日本語の「ア」より低く、長く。",
+                caution: "イギリス英語では car の r は発音しない。「カー」と伸ばすだけ。bath, can't, half もこの音。",
+                keywords: ["car", "father", "bath", "start", "heart"]),
+        Phoneme(token: "ɒ", symbol: "ɒ", group: .vowel, name: "短いオ", keyword: "hot",
+                mouth: "口を丸く開けて、舌は奥の下。日本語の「オ」より口が開く。",
+                tip: "「ア」と「オ」の間を短く。唇を少し丸める。",
+                caution: "アメリカ英語では「ハット」に近いが、イギリス英語は「ホット」に近い。日本語の「オ」で十分通じる。",
+                keywords: ["hot", "stop", "job", "not", "box"]),
+        Phoneme(token: "ɔː", symbol: "ɔː", group: .vowel, name: "長いオー", keyword: "door",
+                mouth: "唇をしっかり丸めて前に突き出し、「オー」。",
+                tip: "日本語の「オー」より唇を丸く、しっかり伸ばす。",
+                caution: "/ɒ/（hot）と混同しやすい。door, walk, thought はすべてこの長い音。語尾の r は読まない。",
+                keywords: ["door", "walk", "thought", "law", "more"]),
+        Phoneme(token: "ʊ", symbol: "ʊ", group: .vowel, name: "ゆるいウ", keyword: "book",
+                mouth: "唇の力を抜いて、軽く丸める。舌は奥の高いところ。",
+                tip: "日本語の「ウ」より短く、だらしなく。唇を突き出さない。",
+                caution: "/uː/（food）と同じにしない。book は短く、口の力を抜く。good, put, could も同じ。",
+                keywords: ["book", "good", "put", "look", "could"]),
+        Phoneme(token: "uː", symbol: "uː", group: .vowel, name: "長いウー", keyword: "food",
+                mouth: "唇をしっかり丸めて前に突き出し、「ウー」と伸ばす。",
+                tip: "口笛を吹く口の形で「ウー」。日本語の「ウ」より唇を前に出す。",
+                caution: "日本語の「ウ」は唇が平らなので弱く聞こえる。唇を突き出すと一気に英語らしくなる。",
+                keywords: ["food", "blue", "too", "school", "move"]),
+        Phoneme(token: "ʌ", symbol: "ʌ", group: .vowel, name: "短いア", keyword: "cut",
+                mouth: "口を少し開けて、力を抜いて「ア」。舌は中央。",
+                tip: "日本語の「ア」を短く、軽く。一番日本語に近い「ア」。",
+                caution: "cut（ʌ）と cat（æ）は別の音。cat は口を横に開く、cut は普通に開く。bus, love, money はこの音。",
+                keywords: ["cut", "bus", "love", "money", "come"]),
+        Phoneme(token: "ɜː", symbol: "ɜː", group: .vowel, name: "こもったアー", keyword: "bird",
+                mouth: "口をほとんど開けず、舌を中央で平らに。唇は力を抜く。",
+                tip: "「ウー」と「アー」の間を、口を開けずに伸ばす。こもった音。",
+                caution: "日本人が一番苦手な母音。「バード」と言うと通じにくい。口を開けずに喉で唸る感じ。イギリス英語では r を発音しない。",
+                keywords: ["bird", "work", "learn", "first", "word"]),
+        Phoneme(token: "ə", symbol: "ə", group: .vowel, name: "あいまい母音（シュワー）", keyword: "about",
+                mouth: "口も舌も完全に力を抜いた状態で、一瞬だけ声を出す。",
+                tip: "「ア」とも「ウ」ともつかない、とても弱い音。アクセントのない部分に出る。",
+                caution: "英語で一番多い母音。これをはっきり「ア」や「オ」と言うとカタカナ英語になる。about の a、teacher の er は全部この弱い音。",
+                keywords: ["about", "teacher", "banana", "problem", "today"]),
+
+        // ── 二重母音（8）──────────────────────────────────────────
+        Phoneme(token: "eɪ", symbol: "eɪ", group: .diphthong, name: "エイ", keyword: "day",
+                mouth: "「エ」から始めて、なめらかに「イ」へ動かす。",
+                tip: "「エー」ではなく「エイ」。最後に必ず「イ」まで行く。",
+                caution: "日本語の「エー」で言うと別の音に聞こえる。make, name, say は「メイク、ネイム、セイ」。",
+                keywords: ["day", "make", "name", "say", "wait"]),
+        Phoneme(token: "aɪ", symbol: "aɪ", group: .diphthong, name: "アイ", keyword: "time",
+                mouth: "口を大きく開けた「ア」から、「イ」へ。",
+                tip: "日本語の「アイ」でほぼ通じる。最初の「ア」を大きく開ける。",
+                caution: "「ア」を小さく言うと弱い。my, like, night の「ア」はしっかり開ける。",
+                keywords: ["time", "my", "like", "night", "fine"]),
+        Phoneme(token: "ɔɪ", symbol: "ɔɪ", group: .diphthong, name: "オイ", keyword: "boy",
+                mouth: "唇を丸めた「オ」から、「イ」へ。",
+                tip: "日本語の「オイ」でほぼ通じる。最初の「オ」の唇を丸める。",
+                caution: "特に難しくはない。boy, enjoy, point で練習。",
+                keywords: ["boy", "enjoy", "point", "voice", "choice"]),
+        Phoneme(token: "əʊ", symbol: "əʊ", group: .diphthong, name: "オウ（イギリス式）", keyword: "go",
+                mouth: "力を抜いた「ア」に近い音から始めて、唇を丸めて「ウ」へ。",
+                tip: "イギリス英語では「オウ」というより「アウ」に近い。最後に唇を丸める。",
+                caution: "日本語の「オー」で言うと不自然。go は「ゴー」ではなく「ガゥ」に近い。no, home, know も同じ。",
+                keywords: ["go", "no", "home", "know", "phone"]),
+        Phoneme(token: "aʊ", symbol: "aʊ", group: .diphthong, name: "アウ", keyword: "now",
+                mouth: "口を大きく開けた「ア」から、唇を丸めて「ウ」へ。",
+                tip: "日本語の「アウ」でほぼ通じる。最後の「ウ」で唇を丸める。",
+                caution: "「ア」を大きく開けること。how, house, down は「ハウ、ハウス、ダウン」。",
+                keywords: ["now", "how", "house", "down", "out"]),
+        Phoneme(token: "ɪə", symbol: "ɪə", group: .diphthong, name: "イア", keyword: "here",
+                mouth: "「イ」から、力を抜いた「ア」へ。",
+                tip: "「イア」と言って、最後の「ア」を弱く。r は発音しない。",
+                caution: "here を「ヒアー」と伸ばさない。「ヒア」と短く、最後は弱く消える。near, year, idea も同じ。",
+                keywords: ["here", "near", "year", "idea", "clear"]),
+        Phoneme(token: "eə", symbol: "eə", group: .diphthong, name: "エア", keyword: "hair",
+                mouth: "「エ」から、力を抜いた「ア」へ。",
+                tip: "「エア」と言って、最後の「ア」を弱く。r は発音しない。",
+                caution: "hair を「ヘアー」と伸ばさない。「ヘア」と短く。there, where, care も同じ。",
+                keywords: ["hair", "there", "where", "care", "share"]),
+        Phoneme(token: "ʊə", symbol: "ʊə", group: .diphthong, name: "ウア", keyword: "tour",
+                mouth: "唇を軽く丸めた「ウ」から、力を抜いた「ア」へ。",
+                tip: "「ウア」と言って、最後を弱く。最近は「オー」と言う人も多い。",
+                caution: "sure は「シュア」か「ショー」、どちらでも通じる。あまり気にしなくてよい音。",
+                keywords: ["tour", "sure", "pure", "cure", "poor"]),
+
+        // ── 子音（24）──────────────────────────────────────────────
+        Phoneme(token: "p", symbol: "p", group: .consonant, name: "パ行の息", keyword: "pen",
+                mouth: "唇を閉じて息をためて、一気に破裂させる。声は出さない。",
+                tip: "日本語の「パ」より強く息を出す。手を口の前に置いて、風が当たるくらい。",
+                caution: "息が弱いと b に聞こえる。pen が ben に。語頭の p は特に強く。",
+                keywords: ["pen", "pay", "stop", "people", "happy"]),
+        Phoneme(token: "b", symbol: "b", group: .consonant, name: "バ行", keyword: "bed",
+                mouth: "唇を閉じて、声を出しながら開く。",
+                tip: "日本語の「バ」とほぼ同じ。唇をしっかり閉じる。",
+                caution: "v と混同しないこと。b は唇を閉じる、v は上の歯を下唇に当てる。berry と very は別の単語。",
+                keywords: ["bed", "big", "job", "about", "table"]),
+        Phoneme(token: "t", symbol: "t", group: .consonant, name: "タ行の息", keyword: "ten",
+                mouth: "舌先を上の歯茎に当てて、息を破裂させる。声は出さない。",
+                tip: "日本語の「タ」より息を強く。舌は歯ではなく歯茎（歯の少し上）に。",
+                caution: "語尾の t は小さく止めるだけでよい。cat を「キャット」と「ト」まで言わない。",
+                keywords: ["ten", "time", "cat", "water", "better"]),
+        Phoneme(token: "d", symbol: "d", group: .consonant, name: "ダ行", keyword: "dog",
+                mouth: "舌先を上の歯茎に当てて、声を出しながら離す。",
+                tip: "日本語の「ダ」とほぼ同じ。語尾では軽く止める。",
+                caution: "語尾の d に「ウ」や「オ」を付けない。good を「グッド」ではなく「グッ(d)」で止める。",
+                keywords: ["dog", "day", "good", "read", "idea"]),
+        Phoneme(token: "k", symbol: "k", group: .consonant, name: "カ行の息", keyword: "cat",
+                mouth: "舌の奥を上あごに当てて、息を破裂させる。",
+                tip: "日本語の「カ」より息を強く。語頭では特に。",
+                caution: "語尾の k に「ウ」を付けない。book は「ブック」ではなく「ブッ(k)」。",
+                keywords: ["cat", "key", "book", "like", "school"]),
+        Phoneme(token: "ɡ", symbol: "g", group: .consonant, name: "ガ行", keyword: "go",
+                mouth: "舌の奥を上あごに当てて、声を出しながら離す。",
+                tip: "日本語の「ガ」とほぼ同じ。鼻にかけない（鼻濁音にしない）。",
+                caution: "語尾の g に「ウ」を付けない。big は「ビッグ」ではなく「ビッ(g)」。",
+                keywords: ["go", "big", "give", "get", "bag"]),
+        Phoneme(token: "tʃ", symbol: "tʃ", group: .consonant, name: "チ", keyword: "chair",
+                mouth: "舌先を歯茎の後ろに当てて、「チ」と息を出す。唇を少し突き出す。",
+                tip: "日本語の「チ」でほぼ通じる。唇を丸めると英語らしくなる。",
+                caution: "ch は「シ」ではなく「チ」。chair, cheese, much。sh（ʃ）と混同しない。",
+                keywords: ["chair", "cheese", "much", "teach", "lunch"]),
+        Phoneme(token: "dʒ", symbol: "dʒ", group: .consonant, name: "ヂ", keyword: "job",
+                mouth: "舌先を歯茎の後ろに当てて、声を出しながら「ヂ」。唇を少し突き出す。",
+                tip: "日本語の「ジ」より、舌をしっかり当てて「ヂ」。",
+                caution: "j と z は違う。job は「ヂョブ」、zoo は「ズー」。",
+                keywords: ["job", "just", "page", "change", "enjoy"]),
+        Phoneme(token: "f", symbol: "f", group: .consonant, name: "フ（歯を当てる）", keyword: "fish",
+                mouth: "上の前歯を下唇に軽く当てて、そのすき間から息を出す。",
+                tip: "唇を丸めない。歯と唇で息をこすり出す。",
+                caution: "日本語の「フ」は唇だけで出すので、英語の f にならない。必ず歯を下唇に当てる。fish, coffee, life。",
+                keywords: ["fish", "coffee", "life", "five", "phone"]),
+        Phoneme(token: "v", symbol: "v", group: .consonant, name: "ヴ（歯を当てる）", keyword: "very",
+                mouth: "f と同じ形（上の歯を下唇に）で、声を出す。",
+                tip: "f の形のまま喉を震わせる。唇がビリビリする感じ。",
+                caution: "日本語に無い音。「ベリー」と b で言うと berry（ベリー＝果物）になる。very は歯を当てて。",
+                keywords: ["very", "have", "love", "give", "never"]),
+        Phoneme(token: "θ", symbol: "θ", group: .consonant, name: "ス（舌を出す）", keyword: "think",
+                mouth: "舌先を上下の歯の間に軽くはさんで、息を出す。声は出さない。",
+                tip: "舌を少しだけ歯の外に出す。鏡で舌先が見えるくらい。",
+                caution: "「シンク」と s で言うと sink（沈む）になる。think は必ず舌を出す。日本人が一番指摘される音。",
+                keywords: ["think", "thank", "three", "month", "both"]),
+        Phoneme(token: "ð", symbol: "ð", group: .consonant, name: "ズ（舌を出す）", keyword: "this",
+                mouth: "θ と同じ形（舌先を歯の間に）で、声を出す。",
+                tip: "舌を出したまま喉を震わせる。「ズ」に近いが舌の位置が違う。",
+                caution: "this, that, the, mother は全部この音。「ジス、ザット」ではなく舌を出す。頻出なので最優先で練習。",
+                keywords: ["this", "that", "the", "mother", "other"]),
+        Phoneme(token: "s", symbol: "s", group: .consonant, name: "ス", keyword: "see",
+                mouth: "舌先を歯茎に近づけて、すき間から鋭く息を出す。",
+                tip: "日本語の「ス」より鋭く、息を長く。",
+                caution: "語尾の s に「ウ」を付けない。bus は「バス」ではなく「バs」。si は「シ」ではなく「スィ」（see, sit）。",
+                keywords: ["see", "sit", "bus", "yes", "city"]),
+        Phoneme(token: "z", symbol: "z", group: .consonant, name: "ズ", keyword: "zoo",
+                mouth: "s と同じ形で、声を出す。",
+                tip: "s の形のまま喉を震わせる。「ズ」より鋭く。",
+                caution: "語尾の s が z になることが多い（is, has, dogs）。「イズ」と「ズ」をはっきり震わせる。",
+                keywords: ["zoo", "is", "has", "easy", "busy"]),
+        Phoneme(token: "ʃ", symbol: "ʃ", group: .consonant, name: "シュ", keyword: "shop",
+                mouth: "舌を歯茎より奥に引いて、唇を丸めて「シュー」。",
+                tip: "静かにするときの「シー」。唇を前に突き出す。",
+                caution: "日本語の「シ」より唇を丸める。she, shop, fish, station。tʃ（チ）と混同しない。",
+                keywords: ["shop", "she", "fish", "station", "wish"]),
+        Phoneme(token: "ʒ", symbol: "ʒ", group: .consonant, name: "ジュ", keyword: "pleasure",
+                mouth: "ʃ と同じ形（唇を丸める）で、声を出す。",
+                tip: "「シュー」の形で喉を震わせる。「ジュー」に近い。",
+                caution: "出てくる単語は少ない。pleasure, usually, vision, measure。dʒ（ヂ）より柔らかい音。",
+                keywords: ["pleasure", "usually", "vision", "measure", "conclusion"]),
+        Phoneme(token: "h", symbol: "h", group: .consonant, name: "ハ（息だけ）", keyword: "hat",
+                mouth: "口を次の母音の形にして、息だけを出す。",
+                tip: "日本語の「ハ」でほぼ通じる。息を強めに。",
+                caution: "「フ」のときに唇を使わない。who, hood は f にならないように。hour, honest は h を読まない。",
+                keywords: ["hat", "he", "home", "happy", "who"]),
+        Phoneme(token: "m", symbol: "m", group: .consonant, name: "マ行", keyword: "man",
+                mouth: "唇を閉じて、鼻から声を出す。",
+                tip: "日本語の「マ」とほぼ同じ。語尾では唇を閉じたまま終わる。",
+                caution: "語尾の m は「ム」ではなく、唇を閉じて「ン」。time は「タイム」ではなく「タイm」。",
+                keywords: ["man", "time", "come", "some", "name"]),
+        Phoneme(token: "n", symbol: "n", group: .consonant, name: "ナ行", keyword: "no",
+                mouth: "舌先を上の歯茎に当てて、鼻から声を出す。",
+                tip: "日本語の「ナ」とほぼ同じ。語尾では舌を歯茎に当てたまま。",
+                caution: "語尾の n は舌を歯茎に付ける。日本語の「ン」は付けないことが多いので、pen が peng に聞こえることがある。",
+                keywords: ["no", "pen", "ten", "sun", "name"]),
+        Phoneme(token: "ŋ", symbol: "ŋ", group: .consonant, name: "ング（鼻）", keyword: "sing",
+                mouth: "舌の奥を上あごに当てて、鼻から声を出す。舌先は下。",
+                tip: "日本語の「ンガ」の「ン」の部分。最後に「グ」を言わない。",
+                caution: "sing は「シング」ではなく「シン(ŋ)」。語尾の g を発音しない。thing, long, morning も同じ。",
+                keywords: ["sing", "thing", "long", "morning", "going"]),
+        Phoneme(token: "l", symbol: "l", group: .consonant, name: "ル（舌を当てる）", keyword: "light",
+                mouth: "舌先を上の歯茎にしっかり当てて、舌の横から声を出す。",
+                tip: "舌先を歯茎に「押し当てる」。日本語の「ラ」より舌をしっかり当てる。",
+                caution: "日本語の「ラ」は l と r の中間で、どちらにも聞こえない。l は必ず舌先を歯茎に当てる。語尾の l（feel, all）は「ウ」に近い暗い音。",
+                keywords: ["light", "like", "feel", "all", "hello"]),
+        Phoneme(token: "r", symbol: "r", group: .consonant, name: "ル（舌を当てない）", keyword: "right",
+                mouth: "舌先をどこにも当てず、少し後ろに反らせる。唇を丸める。",
+                tip: "舌を口の中で浮かせたまま「ウ」から始める感じ。「ウライト」の「ウ」が r。",
+                caution: "舌が歯茎に当たると l になる。right が light に。唇を丸めて舌を浮かせる。イギリス英語では語尾の r（car, here）は読まない。",
+                keywords: ["right", "red", "really", "sorry", "room"]),
+        Phoneme(token: "w", symbol: "w", group: .consonant, name: "ワ（唇を丸める）", keyword: "we",
+                mouth: "唇を小さく丸めて突き出し、素早く次の母音へ。",
+                tip: "口笛の形から始める。唇をすぼめてから開く。",
+                caution: "日本語の「ワ」は唇が丸まらないので弱い。we, water, would は唇をしっかり突き出す。",
+                keywords: ["we", "water", "would", "work", "why"]),
+        Phoneme(token: "j", symbol: "j", group: .consonant, name: "ヤ行", keyword: "yes",
+                mouth: "舌の前を上あごに近づけて、素早く次の母音へ。",
+                tip: "日本語の「ヤ、ユ、ヨ」の出だし。yes は「イェス」。",
+                caution: "year と ear は別の音。year は「イヤー」、ear は「イア」。最初に y があるかどうか。",
+                keywords: ["yes", "year", "you", "young", "use"]),
+    ]
+
+    static func phoneme(_ token: String) -> Phoneme? {
+        all.first { $0.token == token }
+    }
+
+    /// Pairs that trip up Japanese speakers most, first.
+    static let pairs: [MinimalPair] = [
+        MinimalPair(a: "light", b: "right", tokenA: "l", tokenB: "r", label: "l と r"),
+        MinimalPair(a: "lead", b: "read", tokenA: "l", tokenB: "r", label: "l と r"),
+        MinimalPair(a: "glass", b: "grass", tokenA: "l", tokenB: "r", label: "l と r"),
+        MinimalPair(a: "collect", b: "correct", tokenA: "l", tokenB: "r", label: "l と r"),
+        MinimalPair(a: "ship", b: "sheep", tokenA: "ɪ", tokenB: "iː", label: "短いイ と 長いイー"),
+        MinimalPair(a: "sit", b: "seat", tokenA: "ɪ", tokenB: "iː", label: "短いイ と 長いイー"),
+        MinimalPair(a: "live", b: "leave", tokenA: "ɪ", tokenB: "iː", label: "短いイ と 長いイー"),
+        MinimalPair(a: "fill", b: "feel", tokenA: "ɪ", tokenB: "iː", label: "短いイ と 長いイー"),
+        MinimalPair(a: "think", b: "sink", tokenA: "θ", tokenB: "s", label: "舌を出す th と s"),
+        MinimalPair(a: "thank", b: "sank", tokenA: "θ", tokenB: "s", label: "舌を出す th と s"),
+        MinimalPair(a: "mouth", b: "mouse", tokenA: "θ", tokenB: "s", label: "舌を出す th と s"),
+        MinimalPair(a: "berry", b: "very", tokenA: "b", tokenB: "v", label: "b と v"),
+        MinimalPair(a: "boat", b: "vote", tokenA: "b", tokenB: "v", label: "b と v"),
+        MinimalPair(a: "best", b: "vest", tokenA: "b", tokenB: "v", label: "b と v"),
+        MinimalPair(a: "cat", b: "cut", tokenA: "æ", tokenB: "ʌ", label: "口を開けたア と 短いア"),
+        MinimalPair(a: "bag", b: "bug", tokenA: "æ", tokenB: "ʌ", label: "口を開けたア と 短いア"),
+        MinimalPair(a: "hat", b: "hut", tokenA: "æ", tokenB: "ʌ", label: "口を開けたア と 短いア"),
+        MinimalPair(a: "fan", b: "fun", tokenA: "æ", tokenB: "ʌ", label: "口を開けたア と 短いア"),
+        MinimalPair(a: "cart", b: "cut", tokenA: "ɑː", tokenB: "ʌ", label: "奥の長いアー と 短いア"),
+        MinimalPair(a: "heart", b: "hut", tokenA: "ɑː", tokenB: "ʌ", label: "奥の長いアー と 短いア"),
+        MinimalPair(a: "bird", b: "bard", tokenA: "ɜː", tokenB: "ɑː", label: "こもったアー と 奥のアー"),
+        MinimalPair(a: "work", b: "walk", tokenA: "ɜː", tokenB: "ɔː", label: "こもったアー と 長いオー"),
+        MinimalPair(a: "first", b: "fast", tokenA: "ɜː", tokenB: "ɑː", label: "こもったアー と 奥のアー"),
+        MinimalPair(a: "full", b: "fool", tokenA: "ʊ", tokenB: "uː", label: "ゆるいウ と 長いウー"),
+        MinimalPair(a: "pull", b: "pool", tokenA: "ʊ", tokenB: "uː", label: "ゆるいウ と 長いウー"),
+        MinimalPair(a: "ship", b: "chip", tokenA: "ʃ", tokenB: "tʃ", label: "シュ と チ"),
+        MinimalPair(a: "share", b: "chair", tokenA: "ʃ", tokenB: "tʃ", label: "シュ と チ"),
+        MinimalPair(a: "wash", b: "watch", tokenA: "ʃ", tokenB: "tʃ", label: "シュ と チ"),
+        MinimalPair(a: "sin", b: "sing", tokenA: "n", tokenB: "ŋ", label: "n と ng"),
+        MinimalPair(a: "thin", b: "thing", tokenA: "n", tokenB: "ŋ", label: "n と ng"),
+        MinimalPair(a: "fan", b: "van", tokenA: "f", tokenB: "v", label: "f と v"),
+        MinimalPair(a: "fine", b: "vine", tokenA: "f", tokenB: "v", label: "f と v"),
+        MinimalPair(a: "hood", b: "food", tokenA: "h", tokenB: "f", label: "h と f"),
+        MinimalPair(a: "year", b: "ear", tokenA: "j", tokenB: "ɪə", label: "y があるか無いか"),
+        MinimalPair(a: "day", b: "they", tokenA: "d", tokenB: "ð", label: "d と 舌を出す th"),
+        MinimalPair(a: "breeze", b: "breathe", tokenA: "z", tokenB: "ð", label: "z と 舌を出す th"),
+        MinimalPair(a: "pen", b: "pan", tokenA: "ɛ", tokenB: "æ", label: "エ と 口を開けたア"),
+        MinimalPair(a: "men", b: "man", tokenA: "ɛ", tokenB: "æ", label: "エ と 口を開けたア"),
+        MinimalPair(a: "coat", b: "caught", tokenA: "əʊ", tokenB: "ɔː", label: "オウ と 長いオー"),
+        MinimalPair(a: "low", b: "law", tokenA: "əʊ", tokenB: "ɔː", label: "オウ と 長いオー"),
+    ]
+}

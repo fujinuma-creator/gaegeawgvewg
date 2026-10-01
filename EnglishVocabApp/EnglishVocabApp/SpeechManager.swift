@@ -99,11 +99,20 @@ final class SpeechManager {
     private let repeatFactor: Float = 0.25
 
     private init() {
-        try? AVAudioSession.sharedInstance().setCategory(
+        configurePlaybackSession()
+    }
+
+    /// Puts the audio session back into playback mode. Called at launch and
+    /// again after the pronunciation recorder has had the microphone, so the
+    /// speaker buttons keep playing through the loudspeaker.
+    func configurePlaybackSession() {
+        let session = AVAudioSession.sharedInstance()
+        try? session.setCategory(
             .playback,
             mode: .spokenAudio,
             options: [.mixWithOthers, .duckOthers]
         )
+        try? session.setActive(true, options: .notifyOthersOnDeactivation)
     }
 
     /// Speaks `text`. The first tap plays at normal speed; a second
