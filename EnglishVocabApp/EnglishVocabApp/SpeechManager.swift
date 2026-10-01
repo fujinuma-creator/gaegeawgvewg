@@ -94,9 +94,9 @@ final class SpeechManager {
     /// consecutive tap on the same button so it can be played back slowly.
     private var lastSpokenText: String?
 
-    /// A second consecutive tap on the same text plays it at half speed;
+    /// A second consecutive tap on the same text plays it at quarter speed;
     /// the tap after that is back to full speed, and so on.
-    private let repeatFactor: Float = 0.5
+    private let repeatFactor: Float = 0.25
 
     private init() {
         try? AVAudioSession.sharedInstance().setCategory(
@@ -107,7 +107,7 @@ final class SpeechManager {
     }
 
     /// Speaks `text`. The first tap plays at normal speed; a second
-    /// consecutive tap on the same button plays at 0.5×; a third is back to
+    /// consecutive tap on the same button plays at 0.25×; a third is back to
     /// normal, and so on. Tapping a different text resets to normal speed.
     /// Words and sentences behave the same way.
     ///
@@ -124,7 +124,7 @@ final class SpeechManager {
 
         let accent = EnglishAccent.current
 
-        // First tap → 1×; second consecutive tap on the same text → 0.5×;
+        // First tap → 1×; second consecutive tap on the same text → 0.25×;
         // then reset so the next tap on it is 1× again.
         let isRepeat = (trimmed == lastSpokenText)
         let factor: Float = isRepeat ? repeatFactor : 1.0
