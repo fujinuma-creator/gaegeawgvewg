@@ -11,6 +11,7 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
     case indian = "in"
     case irish = "ie"
     case scottish = "scot"
+    case southAfrican = "za"
 
     static let storageKey = "speech.accent"
     static let `default`: EnglishAccent = .britishPosh
@@ -26,6 +27,7 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .indian:       return "インド英語"
         case .irish:        return "アイルランド英語"
         case .scottish:     return "スコットランド英語"
+        case .southAfrican: return "南アフリカ英語"
         }
     }
 
@@ -38,6 +40,7 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .indian:       return "🇮🇳"
         case .irish:        return "🇮🇪"
         case .scottish:     return "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+        case .southAfrican: return "🇿🇦"
         }
     }
 
@@ -52,6 +55,7 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .irish:        return ["en-IE"]
         // Apple tags the Scottish voice as "en-scotland", not an ISO code.
         case .scottish:     return ["en-scotland", "en-GB-scotland", "en-GB"]
+        case .southAfrican: return ["en-ZA"]
         }
     }
 
@@ -67,16 +71,11 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         case .indian:       return ["Rishi", "Isha", "Veena", "Neel"]
         case .irish:        return ["Moira"]
         case .scottish:     return ["Fiona"]
+        case .southAfrican: return ["Tessa"]
         }
     }
 
     var pitch: Float { 1.0 }
-
-    /// Sentence rate as a fraction of the base rate. Posh is read a touch
-    /// more slowly and evenly, which is what gives RP its measured feel.
-    var sentenceFactor: Float {
-        self == .britishPosh ? 0.92 : 1.0
-    }
 
     /// The accent currently chosen by the user.
     static var current: EnglishAccent {
@@ -95,14 +94,9 @@ final class SpeechManager {
     /// consecutive tap on the same button so it can be played back slowly.
     private var lastSpokenText: String?
 
-    /// Playback speed factors: the first tap plays at 0.25×, a second
-    /// consecutive tap on the same button plays even slower at 0.1×.
-    private let firstFactor: Float = 0.25
-    private let secondFactor: Float = 0.1
-
-    /// Sentences play at full speed on the first tap; a second consecutive
-    /// tap on the same sentence halves it.
-    private let sentenceRepeatFactor: Float = 0.5
+    /// A second consecutive tap on the same text plays it at half speed;
+    /// the tap after that is back to full speed, and so on.
+    private let repeatFactor: Float = 0.5
 
     private init() {
         try? AVAudioSession.sharedInstance().setCategory(
@@ -112,18 +106,14 @@ final class SpeechManager {
         )
     }
 
-    /// Speaks `text` slowly. The first tap plays at 0.25× speed; a second
-    /// consecutive tap on the same button plays at an even slower 0.1×. A
-    /// third tap returns to 0.25×, and so on. Tapping a different text resets
-    /// the cycle back to 0.25×.
-    ///
-    /// Pass `slowed: false` for whole sentences — a conversation line read at
-    /// 0.25× is unlistenable. Those play once at a natural speaking pace, and
-    /// a second consecutive tap drops to 0.5× so a tricky line can still be
-    /// picked apart.
+    /// Speaks `text`. The first tap plays at normal speed; a second
+    /// consecutive tap on the same button plays at 0.5×; a third is back to
+    /// normal, and so on. Tapping a different text resets to normal speed.
+    /// Words and sentences behave the same way.
     ///
     /// The accent comes from the Home-screen setting; `language` is kept only
-    /// for callers that pass something other than English.
+    /// for callers that pass something other than English. `slowed` is
+    /// accepted for source compatibility and no longer changes the speed.
     func speak(_ text: String, language: String? = nil, rate: Float = 0.50, slowed: Bool = true) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
@@ -134,15 +124,10 @@ final class SpeechManager {
 
         let accent = EnglishAccent.current
 
-        // First tap → 0.25×; second consecutive tap on the same text → 0.1×;
-        // then reset so the next tap on it is 0.25× again.
+        // First tap → 1×; second consecutive tap on the same text → 0.5×;
+        // then reset so the next tap on it is 1× again.
         let isRepeat = (trimmed == lastSpokenText)
-        let factor: Float
-        if slowed {
-            factor = isRepeat ? secondFactor : firstFactor
-        } else {
-            factor = (isRepeat ? sentenceRepeatFactor : 1.0) * accent.sentenceFactor
-        }
+        let factor: Float = isRepeat ? repeatFactor : 1.0
         let effectiveRate = max(rate * factor, AVSpeechUtteranceMinimumSpeechRate)
         lastSpokenText = isRepeat ? nil : trimmed
 

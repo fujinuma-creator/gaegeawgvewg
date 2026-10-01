@@ -5,7 +5,6 @@ struct HomeView: View {
 
     @State private var showAllWords = false
     @State private var showReviewList = false
-    @State private var showRankedList = false
     @AppStorage(EnglishAccent.storageKey) private var accentRaw: String = EnglishAccent.default.rawValue
 
     private var accent: EnglishAccent {
@@ -32,14 +31,6 @@ struct HomeView: View {
                     statTile(label: "復習リスト", number: store.reviewListWords.count, suffix: "語", tappable: true)
                 }
                 .buttonStyle(.plain)
-                Button {
-                    showRankedList = true
-                } label: {
-                    statTile(label: "復習リスト（会話頻度順）", number: store.rankedWords.count, suffix: "語", tappable: true)
-                }
-                .buttonStyle(.plain)
-                progressTile(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
-                progressTile(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
                 accentTile
                 Spacer(minLength: 0)
             }
@@ -54,19 +45,6 @@ struct HomeView: View {
         .sheet(isPresented: $showReviewList) {
             WordListSheet(filter: .reviewList)
                 .environmentObject(store)
-        }
-        .sheet(isPresented: $showRankedList) {
-            NavigationStack {
-                RankedReviewListView()
-                    .environmentObject(store)
-                    .navigationTitle("復習リスト（会話頻度順）")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Button("閉じる") { showRankedList = false }
-                        }
-                    }
-            }
         }
     }
 
@@ -169,37 +147,6 @@ struct HomeView: View {
         .padding(.horizontal, 12)
         .background(tileBackground)
         .contentShape(Rectangle())
-    }
-
-    private func progressTile(label: String, done: Int, total: Int) -> some View {
-        let safeTotal = max(total, 1)
-        let progress = min(Double(done) / Double(safeTotal), 1.0)
-        return VStack(spacing: 3) {
-            Text(label)
-                .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(.black.opacity(0.7))
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
-            HStack(alignment: .lastTextBaseline, spacing: 4) {
-                Text("\(done)")
-                    .font(.system(size: 26, weight: .black, design: .rounded))
-                    .foregroundStyle(.black)
-                Text("/ \(total)")
-                    .font(.system(size: 13, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.black.opacity(0.55))
-            }
-            .lineLimit(1)
-            .minimumScaleFactor(0.7)
-            ProgressView(value: progress)
-                .progressViewStyle(.linear)
-                .tint(.black)
-                .scaleEffect(x: 1, y: 0.6, anchor: .center)
-                .frame(maxWidth: 180)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 8)
-        .padding(.horizontal, 12)
-        .background(tileBackground)
     }
 
     /// Truly translucent card: a thin white wash so the math-paper and
