@@ -6,6 +6,11 @@ struct HomeView: View {
     @State private var showAllWords = false
     @State private var showReviewList = false
     @State private var showRankedList = false
+    @AppStorage(EnglishAccent.storageKey) private var accentRaw: String = EnglishAccent.default.rawValue
+
+    private var accent: EnglishAccent {
+        EnglishAccent(rawValue: accentRaw) ?? .default
+    }
 
     var body: some View {
         ZStack {
@@ -35,6 +40,7 @@ struct HomeView: View {
                 .buttonStyle(.plain)
                 progressTile(label: "本日の復習", done: store.reviewedTodayCount, total: store.dueTodayCount)
                 progressTile(label: "今週の復習", done: store.reviewedThisWeekCount, total: store.dueThisWeekCount)
+                accentTile
                 Spacer(minLength: 0)
             }
             .padding(.horizontal, 16)
@@ -62,6 +68,52 @@ struct HomeView: View {
                     }
             }
         }
+    }
+
+    // MARK: - Accent picker
+
+    /// Which English the speaker buttons use, app-wide. The second line shows
+    /// the voice iOS will actually pick, so it's obvious when the
+    /// Enhanced/Premium voice still needs downloading.
+    private var accentTile: some View {
+        Menu {
+            ForEach(EnglishAccent.allCases) { a in
+                Button {
+                    accentRaw = a.rawValue
+                } label: {
+                    if a == accent {
+                        Label("\(a.flag) \(a.label)", systemImage: "checkmark")
+                    } else {
+                        Text("\(a.flag) \(a.label)")
+                    }
+                }
+            }
+        } label: {
+            VStack(spacing: 3) {
+                HStack(spacing: 4) {
+                    Text("音声の英語")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundStyle(.black.opacity(0.7))
+                    Image(systemName: "chevron.up.chevron.down")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundStyle(.black.opacity(0.45))
+                }
+                Text("\(accent.flag) \(accent.label)")
+                    .font(.system(size: 17, weight: .black, design: .rounded))
+                    .foregroundStyle(.black)
+                Text(SpeechManager.shared.voiceDescription(for: accent))
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundStyle(.black.opacity(0.5))
+            }
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
+            .background(tileBackground)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: - Title

@@ -1,10 +1,91 @@
 import Foundation
 import AVFoundation
 
+/// The English accent used for all playback. Picked on the Home screen and
+/// stored in UserDefaults under `EnglishAccent.storageKey`.
+enum EnglishAccent: String, CaseIterable, Identifiable {
+    case american = "us"
+    case british = "uk"
+    case britishPosh = "ukPosh"
+    case australian = "au"
+    case singaporean = "sg"
+    case indian = "in"
+
+    static let storageKey = "speech.accent"
+    static let `default`: EnglishAccent = .britishPosh
+
+    var id: String { rawValue }
+
+    var label: String {
+        switch self {
+        case .american:     return "アメリカ英語"
+        case .british:      return "イギリス英語"
+        case .britishPosh:  return "イギリス英語（Posh）"
+        case .australian:   return "オーストラリア英語"
+        case .singaporean:  return "シンガポール英語"
+        case .indian:       return "インド英語"
+        }
+    }
+
+    var flag: String {
+        switch self {
+        case .american:     return "🇺🇸"
+        case .british:      return "🇬🇧"
+        case .britishPosh:  return "🎩"
+        case .australian:   return "🇦🇺"
+        case .singaporean:  return "🇸🇬"
+        case .indian:       return "🇮🇳"
+        }
+    }
+
+    /// Language codes to try, in order. iOS ships no Singapore English voice,
+    /// so that accent falls back to British, which is the closest in vowels
+    /// and rhythm.
+    var languageCodes: [String] {
+        switch self {
+        case .american:     return ["en-US"]
+        case .british:      return ["en-GB"]
+        case .britishPosh:  return ["en-GB"]
+        case .australian:   return ["en-AU"]
+        case .singaporean:  return ["en-SG", "en-GB"]
+        case .indian:       return ["en-IN"]
+        }
+    }
+
+    /// Voice names to prefer within the best installed quality tier. Posh
+    /// leads with Daniel and Serena, Apple's Received Pronunciation pair;
+    /// standard British leads with the more everyday Kate and Oliver.
+    var preferredNames: [String] {
+        switch self {
+        case .american:     return ["Ava", "Samantha", "Evan", "Zoe", "Allison", "Tom", "Alex"]
+        case .british:      return ["Kate", "Oliver", "Arthur", "Martha", "Daniel", "Serena"]
+        case .britishPosh:  return ["Daniel", "Serena", "Kate", "Arthur", "Martha", "Jamie"]
+        case .australian:   return ["Karen", "Lee", "Catherine", "Matilda"]
+        case .singaporean:  return ["Kate", "Daniel", "Oliver"]
+        case .indian:       return ["Rishi", "Isha", "Veena", "Neel"]
+        }
+    }
+
+    var pitch: Float { 1.0 }
+
+    /// Sentence rate as a fraction of the base rate. Posh is read a touch
+    /// more slowly and evenly, which is what gives RP its measured feel.
+    var sentenceFactor: Float {
+        self == .britishPosh ? 0.92 : 1.0
+    }
+
+    /// The accent currently chosen by the user.
+    static var current: EnglishAccent {
+        let raw = UserDefaults.standard.string(forKey: storageKey) ?? ""
+        return EnglishAccent(rawValue: raw) ?? .default
+    }
+}
+
 final class SpeechManager {
     static let shared = SpeechManager()
     private let synthesizer = AVSpeechSynthesizer()
     private var cachedVoice: AVSpeechSynthesisVoice?
+    private var cachedAccent: EnglishAccent?
 
     /// The text spoken by the previous `speak` call. Used to detect a second
     /// consecutive tap on the same button so it can be played back slowly.
@@ -36,13 +117,18 @@ final class SpeechManager {
     /// 0.25× is unlistenable. Those play once at a natural speaking pace, and
     /// a second consecutive tap drops to 0.5× so a tricky line can still be
     /// picked apart.
-    func speak(_ text: String, language: String = "en-GB", rate: Float = 0.50, slowed: Bool = true) {
+    ///
+    /// The accent comes from the Home-screen setting; `language` is kept only
+    /// for callers that pass something other than English.
+    func speak(_ text: String, language: String? = nil, rate: Float = 0.50, slowed: Bool = true) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
 
         if synthesizer.isSpeaking {
             synthesizer.stopSpeaking(at: .immediate)
         }
+
+        let accent = EnglishAccent.current
 
         // First tap → 0.25×; second consecutive tap on the same text → 0.1×;
         // then reset so the next tap on it is 0.25× again.
@@ -51,19 +137,19 @@ final class SpeechManager {
         if slowed {
             factor = isRepeat ? secondFactor : firstFactor
         } else {
-            factor = isRepeat ? sentenceRepeatFactor : 1.0
+            factor = (isRepeat ? sentenceRepeatFactor : 1.0) * accent.sentenceFactor
         }
         let effectiveRate = max(rate * factor, AVSpeechUtteranceMinimumSpeechRate)
         lastSpokenText = isRepeat ? nil : trimmed
 
         let utterance = AVSpeechUtterance(string: trimmed)
-        utterance.voice = bestVoice(for: language)
-        // "Posh" RP: sentences are read a touch more slowly and evenly than
-        // the system default, which is what gives Received Pronunciation its
-        // measured, clipped feel. Single words keep the normal rate (they are
-        // already slowed by the 0.25× / 0.1× factors above).
-        utterance.rate = slowed ? effectiveRate : min(effectiveRate, rate * poshSentenceFactor)
-        utterance.pitchMultiplier = poshPitch
+        if let language, !language.hasPrefix("en") {
+            utterance.voice = AVSpeechSynthesisVoice(language: language)
+        } else {
+            utterance.voice = bestVoice(for: accent)
+        }
+        utterance.rate = effectiveRate
+        utterance.pitchMultiplier = accent.pitch
         utterance.preUtteranceDelay = 0
         utterance.postUtteranceDelay = 0
         synthesizer.speak(utterance)
@@ -76,29 +162,37 @@ final class SpeechManager {
         lastSpokenText = nil
     }
 
-    /// Pitch for the RP voice. 1.0 is the voice's natural pitch; the earlier
-    /// 0.96 was a gravelly tweak that works against the clear, slightly
-    /// bright RP delivery.
-    private let poshPitch: Float = 1.0
+    /// Name of the voice that will actually be used for the given accent,
+    /// e.g. "Daniel (Enhanced)". Shown next to the picker so the user can see
+    /// whether the high-quality voice is installed.
+    func voiceDescription(for accent: EnglishAccent) -> String {
+        guard let v = pickVoice(for: accent) else { return "音声なし" }
+        let quality: String
+        switch v.quality {
+        case .premium:  quality = "プレミアム"
+        case .enhanced: quality = "拡張"
+        default:        quality = "標準"
+        }
+        return "\(v.name)（\(quality)）"
+    }
 
-    /// Sentence rate as a fraction of the base rate. 0.92 of the default is
-    /// noticeably more deliberate without sounding slowed down.
-    private let poshSentenceFactor: Float = 0.92
-
-    /// Picks the most natural-sounding installed voice for the given
-    /// language. Premium (neural) > Enhanced > Default. Within the same
-    /// quality tier, prefer Apple's Received Pronunciation ("posh") British
-    /// voices — Daniel and Serena are the classic RP pair, Kate and Arthur
-    /// next — so the output sounds like a well-spoken UK native. The best
-    /// results need the Enhanced/Premium versions downloaded in iOS Settings
-    /// (Accessibility → Spoken Content → Voices → English (UK)).
-    private func bestVoice(for language: String) -> AVSpeechSynthesisVoice? {
-        if let cached = cachedVoice, cached.language == language {
+    /// Picks the most natural-sounding installed voice for the accent.
+    /// Premium (neural) > Enhanced > Default; within the same quality tier,
+    /// the accent's preferred names win. The best results need the
+    /// Enhanced/Premium voices downloaded in iOS Settings (Accessibility →
+    /// Spoken Content → Voices).
+    private func bestVoice(for accent: EnglishAccent) -> AVSpeechSynthesisVoice? {
+        if let cached = cachedVoice, cachedAccent == accent {
             return cached
         }
-        let preferredNames = ["Daniel", "Serena", "Kate", "Arthur", "Martha", "Jamie", "Oliver"]
-        let voices = AVSpeechSynthesisVoice.speechVoices()
-            .filter { $0.language == language }
+        let chosen = pickVoice(for: accent)
+        cachedVoice = chosen
+        cachedAccent = accent
+        return chosen
+    }
+
+    private func pickVoice(for accent: EnglishAccent) -> AVSpeechSynthesisVoice? {
+        let all = AVSpeechSynthesisVoice.speechVoices()
 
         func qualityRank(_ q: AVSpeechSynthesisVoiceQuality) -> Int {
             switch q {
@@ -108,17 +202,20 @@ final class SpeechManager {
             }
         }
 
-        let sorted = voices.sorted { a, b in
-            let qa = qualityRank(a.quality)
-            let qb = qualityRank(b.quality)
-            if qa != qb { return qa > qb }
-            let na = preferredNames.firstIndex(where: { a.name.contains($0) }) ?? Int.max
-            let nb = preferredNames.firstIndex(where: { b.name.contains($0) }) ?? Int.max
-            return na < nb
+        for code in accent.languageCodes {
+            let voices = all.filter { $0.language.caseInsensitiveCompare(code) == .orderedSame }
+            guard !voices.isEmpty else { continue }
+            let names = accent.preferredNames
+            let sorted = voices.sorted { a, b in
+                let qa = qualityRank(a.quality)
+                let qb = qualityRank(b.quality)
+                if qa != qb { return qa > qb }
+                let na = names.firstIndex(where: { a.name.contains($0) }) ?? Int.max
+                let nb = names.firstIndex(where: { b.name.contains($0) }) ?? Int.max
+                return na < nb
+            }
+            if let v = sorted.first { return v }
         }
-
-        let chosen = sorted.first ?? AVSpeechSynthesisVoice(language: language)
-        cachedVoice = chosen
-        return chosen
+        return AVSpeechSynthesisVoice(language: accent.languageCodes.last)
     }
 }
