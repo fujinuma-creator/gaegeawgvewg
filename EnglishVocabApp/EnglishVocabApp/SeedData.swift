@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27086,6 +27086,116 @@ enum SeedData {
                     ("Where are you from, if you don't mind me asking?", "差し支えなければ、どちらのご出身ですか？"),
                     ("If you don't mind me asking, how much did it cost?", "もしよければ聞きたいんだけど、それいくらだった？")
                  ], ipa: "/ɪf juː dˈəʊnt mˈaɪnd miː ˈɑːskɪŋ/")
+        ]
+    }
+
+    private static var britishColloquial81: [Word] {
+        [
+            make("let me get back to you", "I'll reply to you later, once I've checked or thought about it",
+                 "また折り返し連絡するね・確認してから返事するね",
+                 useCases: ["その場で即答できず、後で返事をするとき"],
+                 examples: [
+                    ("I'm not sure if I'm free on Friday — let me get back to you.", "金曜空いてるかわからないから、また連絡するね。"),
+                    ("Good question. Let me check and get back to you tomorrow.", "いい質問だね。確認して明日返事するよ。")
+                 ], ipa: "/lˈɛt miː ɡˈɛt bˈæk tə juː/"),
+            make("at short notice", "with very little warning or time to prepare",
+                 "急に・直前の知らせで",
+                 useCases: ["急な予定変更や依頼について話すとき"],
+                 examples: [
+                    ("Sorry to ask at such short notice, but could you cover my shift?", "急なお願いでごめんね、シフト代わってもらえる？"),
+                    ("I can't come at short notice — I need a few days.", "急には行けないよ。何日か前に言ってほしいな。")
+                 ], ipa: "/ət ʃˈɔːt nˈəʊtɪs/"),
+            make("it's high time", "it's definitely the moment something should happen (often overdue)",
+                 "そろそろ〜すべき時だ・とっくに〜していい頃だ",
+                 useCases: ["遅すぎるくらいだと感じることを促すとき"],
+                 examples: [
+                    ("It's high time we had a proper holiday.", "そろそろちゃんとした休暇を取ってもいい頃だよね。"),
+                    ("It's high time you told him how you feel.", "もういい加減、彼に気持ちを伝えるべきだよ。")
+                 ], ipa: "/ɪts hˈaɪ tˈaɪm/"),
+            make("make the most of", "to enjoy or use something as fully as possible",
+                 "〜を最大限に楽しむ・活かす",
+                 useCases: ["限られた時間や機会を存分に使おうと言うとき"],
+                 examples: [
+                    ("The sun's out — let's make the most of it!", "晴れてるし、思いっきり楽しもう！"),
+                    ("We've only got two days in Rome, so we'd better make the most of it.", "ローマには2日しかいないから、目一杯楽しまなきゃ。")
+                 ], ipa: "/mˈeɪk ðə mˈəʊst ɒv/"),
+            make("lose track of time", "to not notice how much time has passed",
+                 "時間を忘れる・時間が経つのに気づかない",
+                 useCases: ["夢中になって遅れた・長居したと言うとき"],
+                 examples: [
+                    ("Sorry I'm late — I completely lost track of time.", "遅れてごめん、すっかり時間を忘れてた。"),
+                    ("We were chatting so much we lost track of time.", "話に夢中で時間が経つのを忘れてたね。")
+                 ], ipa: "/lˈuːz trˈæk ɒv tˈaɪm/"),
+            make("it's up in the air", "it hasn't been decided yet",
+                 "まだ決まってない・未定",
+                 useCases: ["予定や計画がまだ確定していないとき"],
+                 examples: [
+                    ("Are you going to Spain this summer? — It's still up in the air.", "今年の夏スペイン行くの？—まだ未定なんだ。"),
+                    ("Everything's a bit up in the air at work right now.", "今、職場はいろいろ決まってなくて落ち着かないんだ。")
+                 ], ipa: "/ɪts ˈʌp ɪn ði ˈɛə/"),
+            make("go with the flow", "to relax and accept what happens instead of planning everything",
+                 "流れに身を任せる・成り行きに任せる",
+                 useCases: ["予定を決めずに気楽にいこうと言うとき"],
+                 examples: [
+                    ("We don't need a plan — let's just go with the flow.", "計画なんていらないよ、流れに任せよう。"),
+                    ("She's very easy-going; she just goes with the flow.", "彼女はすごくおおらかで、いつも成り行きに任せてる。")
+                 ], ipa: "/ɡˈəʊ wɪð ðə flˈəʊ/"),
+            make("I wouldn't bother", "it's not worth the effort, so I'd advise not doing it",
+                 "やめといたほうがいいよ・わざわざしなくていいよ",
+                 useCases: ["やる価値がないと相手に助言するとき"],
+                 examples: [
+                    ("Should I see that film? — I wouldn't bother, it's dull.", "あの映画観るべき？—やめときなよ、退屈だよ。"),
+                    ("I wouldn't bother calling now; the shop's already closed.", "今電話してもムダだよ、お店もう閉まってるから。")
+                 ], ipa: "/aɪ wˈʊdənt bˈɒðə/"),
+            make("to be on the safe side", "as a precaution, just in case",
+                 "念のため",
+                 useCases: ["用心のために何かをするとき"],
+                 examples: [
+                    ("Take an umbrella, just to be on the safe side.", "念のため傘持っていきなよ。"),
+                    ("I'll leave early to be on the safe side — the traffic can be awful.", "念のため早めに出るよ。渋滞がひどいことあるから。")
+                 ], ipa: "/tə bi ɒn ðə sˈeɪf sˈaɪd/"),
+            make("so far so good", "everything has gone well up to now",
+                 "今のところ順調",
+                 useCases: ["進み具合を聞かれて、今のところ問題ないと答えるとき"],
+                 examples: [
+                    ("How's the new job? — So far so good.", "新しい仕事どう？—今のところ順調だよ。"),
+                    ("We've done half the walk. So far so good!", "半分歩いたね。ここまでは順調！")
+                 ], ipa: "/sˈəʊ fˈɑː sˈəʊ ɡˈʊd/"),
+            make("get round to", "to finally find time to do something you've been meaning to do",
+                 "（やっと）〜する時間ができる・手をつける",
+                 useCases: ["やろうと思っていて先延ばしにしていることについて話すとき"],
+                 examples: [
+                    ("I still haven't got round to reading that book you lent me.", "貸してくれた本、まだ読めてないんだ。"),
+                    ("I'll get round to fixing the shelf this weekend.", "今週末こそ棚を直すよ。")
+                 ], ipa: "/ɡˈɛt rˈaʊnd tuː/"),
+            make("make a fuss", "to complain or get upset about something more than necessary",
+                 "大騒ぎする・ごちゃごちゃ言う",
+                 useCases: ["大げさに騒がないでと言う／気を遣わないでと言うとき"],
+                 examples: [
+                    ("It's only a scratch — don't make a fuss.", "ただのかすり傷だよ、大騒ぎしないで。"),
+                    ("Please don't make a fuss for my birthday.", "誕生日だからって気を遣わなくていいからね。")
+                 ], ipa: "/mˈeɪk ə fˈʌs/"),
+            make("give someone a lift", "to drive someone somewhere in your car",
+                 "（人を）車で送る・乗せていく",
+                 useCases: ["車で送る・送ってもらうことを頼むとき"],
+                 examples: [
+                    ("Could you give me a lift to the station?", "駅まで乗せてもらえる？"),
+                    ("I'm going that way — I can give you a lift if you like.", "そっち方面に行くから、よかったら送るよ。")
+                 ], ipa: "/ɡˈɪv sˈʌmwʌn ə lˈɪft/"),
+            make("it's not really my thing", "I don't particularly enjoy or like it (a soft way to say no)",
+                 "あまり得意じゃない・あんまり好みじゃない",
+                 useCases: ["誘いや趣味をやんわり断る・好みでないと言うとき"],
+                 examples: [
+                    ("Karaoke? Thanks, but it's not really my thing.", "カラオケ？ありがとう、でもあまり得意じゃないんだ。"),
+                    ("Horror films aren't really my thing.", "ホラー映画はあんまり好きじゃないんだよね。")
+                 ], ipa: "/ɪts nˈɒt rˈɪəli maɪ θˈɪŋ/"),
+            make("head off", "to leave, to set off somewhere",
+                 "出発する・もう行く",
+                 useCases: ["その場を離れる・出かけると言うとき"],
+                 examples: [
+                    ("I'm going to head off now — see you tomorrow.", "そろそろ帰るね。また明日。"),
+                    ("What time are you heading off to the airport?", "空港には何時に出るの？")
+                 ], ipa: "/hˈɛd ˈɒf/")
         ]
     }
 }
