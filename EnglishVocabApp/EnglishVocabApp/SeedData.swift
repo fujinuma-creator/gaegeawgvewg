@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27196,6 +27196,116 @@ enum SeedData {
                     ("I'm going to head off now — see you tomorrow.", "そろそろ帰るね。また明日。"),
                     ("What time are you heading off to the airport?", "空港には何時に出るの？")
                  ], ipa: "/hˈɛd ˈɒf/")
+        ]
+    }
+
+    private static var britishColloquial82: [Word] {
+        [
+            make("it serves you right", "you deserve the bad thing that happened to you (often said half-jokingly)",
+                 "自業自得だよ・いい気味だ",
+                 useCases: ["相手の失敗が本人のせいだと（冗談半分で）言うとき"],
+                 examples: [
+                    ("You ate the whole cake and now you feel sick? Serves you right!", "ケーキ丸ごと食べて気持ち悪いって？自業自得だよ！"),
+                    ("He never revises, so it serves him right that he failed.", "全然勉強しないんだから、落ちたのは自業自得だね。")
+                 ], ipa: "/ɪt sˈɜːvz juː rˈaɪt/"),
+            make("not in the slightest", "not at all (a polite, emphatic 'no')",
+                 "全然・少しも（〜ない）",
+                 useCases: ["「迷惑じゃない？」などに全く問題ないと答えるとき"],
+                 examples: [
+                    ("Do you mind if I open the window? — Not in the slightest.", "窓開けてもいい？—全然構わないよ。"),
+                    ("I'm not in the slightest bit worried about it.", "そのことは少しも心配してないよ。")
+                 ], ipa: "/nˈɒt ɪn ðə slˈaɪtɪst/"),
+            make("it's a good job", "it's lucky that (something happened)",
+                 "〜でよかった・〜してて助かった",
+                 useCases: ["運よく助かったことについて言うとき（イギリス英語でよく使う）"],
+                 examples: [
+                    ("It's a good job you brought a coat — it's freezing!", "コート持ってきてよかったね、めちゃくちゃ寒いよ！"),
+                    ("Good job I checked the time, or I'd have missed the train.", "時間確認してよかった、じゃなきゃ電車逃してたよ。")
+                 ], ipa: "/ɪts ə ɡˈʊd dʒˈɒb/"),
+            make("it'll do you good", "it will be good for your health or mood",
+                 "体（気分）にいいよ・いい気分転換になるよ",
+                 useCases: ["休息や外出などを勧めるとき"],
+                 examples: [
+                    ("Get some fresh air — it'll do you good.", "外の空気吸ってきなよ、気分よくなるよ。"),
+                    ("A week off will do you a world of good.", "1週間休んだらすごくリフレッシュできるよ。")
+                 ], ipa: "/ɪtl dˈuː juː ɡˈʊd/"),
+            make("I've got a lot on", "I'm very busy at the moment",
+                 "今いろいろ立て込んでて・やることが多くて",
+                 useCases: ["忙しいことを伝える・誘いをやんわり断るとき"],
+                 examples: [
+                    ("I'd love to help, but I've got a lot on this week.", "手伝いたいんだけど、今週は立て込んでて。"),
+                    ("Sorry I haven't replied — I've had a lot on.", "返信してなくてごめん、バタバタしてたんだ。")
+                 ], ipa: "/aɪv ɡˈɒt ə lˈɒt ˈɒn/"),
+            make("you're telling me", "I completely agree — I know that from my own experience",
+                 "ほんとそれ・まったくだよ",
+                 useCases: ["相手の発言に強く共感するとき"],
+                 examples: [
+                    ("This queue is ridiculous. — You're telling me! I've been here an hour.", "この行列ひどいね。—ほんとだよ！1時間も待ってる。"),
+                    ("He's hard work, isn't he? — You're telling me.", "彼って手がかかるよね。—まったくだよ。")
+                 ], ipa: "/jɔː tˈɛlɪŋ miː/"),
+            make("in no time", "very quickly, almost immediately",
+                 "あっという間に・すぐに",
+                 useCases: ["すぐに終わる・すぐに慣れると言うとき"],
+                 examples: [
+                    ("Don't worry, you'll pick it up in no time.", "心配ないよ、すぐ覚えられるから。"),
+                    ("We'll be there in no time.", "すぐ着くよ。")
+                 ], ipa: "/ɪn nˈəʊ tˈaɪm/"),
+            make("get your act together", "to start behaving in a more organised, responsible way",
+                 "しっかりする・ちゃんとする",
+                 useCases: ["だらしない相手（自分）に気合いを入れるとき"],
+                 examples: [
+                    ("You need to get your act together before the exams.", "試験の前にしっかりしないとダメだよ。"),
+                    ("I really must get my act together and sort out my finances.", "いい加減ちゃんとして、お金のことを整理しないと。")
+                 ], ipa: "/ɡˈɛt jɔːr ˈækt təɡˈɛðə/"),
+            make("pull your weight", "to do your fair share of the work",
+                 "自分の役割をきちんと果たす",
+                 useCases: ["チームや家事で誰かがサボっていると言うとき"],
+                 examples: [
+                    ("Everyone has to pull their weight in this flat.", "このシェアハウスではみんなちゃんと分担しなきゃ。"),
+                    ("He's not really pulling his weight on the project.", "彼、プロジェクトであまり役割果たしてないよね。")
+                 ], ipa: "/pˈʊl jɔː wˈeɪt/"),
+            make("make up your mind", "to decide",
+                 "決める・決心する",
+                 useCases: ["迷っている相手に決断を促すとき"],
+                 examples: [
+                    ("Pizza or pasta? Make up your mind!", "ピザかパスタか、早く決めて！"),
+                    ("I can't make up my mind which one to buy.", "どっちを買うか決められないんだ。")
+                 ], ipa: "/mˈeɪk ˈʌp jɔː mˈaɪnd/"),
+            make("by heart", "from memory, without needing to read it",
+                 "暗記して・そらで",
+                 useCases: ["何かを完全に覚えていると言うとき"],
+                 examples: [
+                    ("I know the song by heart.", "その歌、全部そらで歌えるよ。"),
+                    ("Do you know your passport number by heart?", "パスポート番号、暗記してる？")
+                 ], ipa: "/baɪ hˈɑːt/"),
+            make("down to earth", "practical, sensible and unpretentious",
+                 "気取らない・地に足のついた",
+                 useCases: ["人柄を褒めるとき"],
+                 examples: [
+                    ("She's famous, but she's really down to earth.", "彼女は有名なのに、すごく気さくなんだ。"),
+                    ("I like his parents — they're very down to earth.", "彼のご両親好きだな、全然気取ってなくて。")
+                 ], ipa: "/dˈaʊn tʊ ˈɜːθ/"),
+            make("what's the catch?", "what's the hidden problem or disadvantage?",
+                 "何か裏があるの？・うまい話には何か条件があるんでしょ？",
+                 useCases: ["話がうますぎて怪しいと思うとき"],
+                 examples: [
+                    ("A free holiday? What's the catch?", "タダで旅行？何か裏があるんでしょ？"),
+                    ("It sounds too good to be true. There must be a catch.", "話がうますぎるよ。何か落とし穴があるはず。")
+                 ], ipa: "/wˌɒts ðə kˈætʃ/"),
+            make("not to mention", "and also (used to add an even stronger point)",
+                 "〜は言うまでもなく・それに〜もあるし",
+                 useCases: ["理由やポイントを付け加えるとき"],
+                 examples: [
+                    ("It's too far, not to mention too expensive.", "遠すぎるし、高すぎるのは言うまでもないよ。"),
+                    ("The hotel was lovely, not to mention the view!", "ホテルは素敵だったし、景色なんてもう最高！")
+                 ], ipa: "/nˈɒt tə mˈɛnʃən/"),
+            make("nothing to write home about", "just average, not especially good",
+                 "大したことない・特筆するほどでもない",
+                 useCases: ["期待ほどではなかった、普通だったと言うとき"],
+                 examples: [
+                    ("How was the restaurant? — It was OK, nothing to write home about.", "レストランどうだった？—まあまあ、大したことなかったよ。"),
+                    ("The weather was nothing to write home about.", "天気はパッとしなかったね。")
+                 ], ipa: "/nˈʌθɪŋ tə rˈaɪt hˈəʊm əbˈaʊt/")
         ]
     }
 }
