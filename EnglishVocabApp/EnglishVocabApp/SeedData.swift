@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26316,6 +26316,116 @@ enum SeedData {
                     ("Our kids got on like a house on fire.", "うちの子たちはすぐに意気投合したよ。"),
                     ("I knew you two would get on like a house on fire.", "君たち二人は絶対気が合うと思ってた。")
                  ], ipa: "/ɡɛt ɒn lˈaɪk ə hˈaʊs ɒn fˈaɪə/")
+        ]
+    }
+
+    private static var britishColloquial74: [Word] {
+        [
+            make("keep an eye on", "watch or look after someone or something",
+                 "〜を見ておく・気にかけておく",
+                 useCases: ["荷物や子どもを見ていてほしいと頼むとき"],
+                 examples: [
+                    ("Could you keep an eye on my bag for a sec?", "ちょっとカバン見ててもらえる？"),
+                    ("I'll keep an eye on the kids while you cook.", "料理してる間、子どもたちを見てるよ。")
+                 ], ipa: "/kˈiːp ən ˈaɪ ɒn/"),
+            make("be up for", "be willing or keen to do something (informal)",
+                 "〜する気がある・乗り気である",
+                 useCases: ["誘いに乗るか聞く・答えるとき"],
+                 examples: [
+                    ("Are you up for a drink after work?", "仕事のあと一杯どう？"),
+                    ("I'm up for anything this weekend.", "今週末は何でもいいよ、乗るよ。")
+                 ], ipa: "/bi ˈʌp fɔː/"),
+            make("a bit much", "excessive or unreasonable (British, informal)",
+                 "ちょっとやりすぎ・ちょっとひどい",
+                 useCases: ["相手の言動が度を越していると柔らかく言うとき"],
+                 examples: [
+                    ("Calling him at midnight was a bit much.", "夜中に彼に電話するのはちょっとやりすぎだったね。"),
+                    ("Fifteen pounds for a sandwich? That's a bit much.", "サンドイッチに15ポンド？ちょっと高すぎるよ。")
+                 ], ipa: "/ə bˈɪt mˈʌtʃ/"),
+            make("give me a shout", "contact me or let me know (British, informal)",
+                 "声かけてね・連絡してね",
+                 useCases: ["困ったら連絡してと伝えるとき"],
+                 examples: [
+                    ("If you need a hand, just give me a shout.", "手伝いが必要なら声かけてね。"),
+                    ("Give me a shout when you're ready to go.", "出る準備ができたら声かけて。")
+                 ], ipa: "/ɡˈɪv miː ə ʃˈaʊt/"),
+            make("that'll do", "that is enough or good enough",
+                 "それで十分・それでいいよ",
+                 useCases: ["量や出来が十分だと伝えるとき"],
+                 examples: [
+                    ("Just a little milk — that'll do, thanks.", "ミルクは少しで — それで十分、ありがとう。"),
+                    ("It's not perfect, but that'll do for now.", "完璧じゃないけど、今はそれでいいよ。")
+                 ], ipa: "/ðˈætəl dˈuː/"),
+            make("as it happens", "actually; by chance (used to add surprising information)",
+                 "実は・たまたま",
+                 useCases: ["偶然の事実や意外な情報を付け加えるとき"],
+                 examples: [
+                    ("As it happens, I'm free on Friday.", "実はたまたま金曜日は空いてるんだ。"),
+                    ("As it happens, she's my cousin.", "実は彼女、私のいとこなんだ。")
+                 ], ipa: "/æz ɪt hˈæpənz/"),
+            make("be in two minds", "be unable to decide about something (British)",
+                 "迷っている・決めかねている",
+                 useCases: ["どうするか決めかねていると話すとき"],
+                 examples: [
+                    ("I'm in two minds about going to the party.", "パーティーに行くかどうか迷ってるんだ。"),
+                    ("She was in two minds whether to take the job.", "彼女はその仕事を受けるか決めかねていた。")
+                 ], ipa: "/bi ɪn tˈuː mˈaɪndz/"),
+            make("a stone's throw", "a very short distance",
+                 "目と鼻の先・すぐ近く",
+                 useCases: ["場所がとても近いことを伝えるとき"],
+                 examples: [
+                    ("Our hotel is a stone's throw from the beach.", "ホテルはビーチから目と鼻の先だよ。"),
+                    ("I live a stone's throw away from here.", "ここからすぐ近くに住んでるんだ。")
+                 ], ipa: "/ə stˈəʊnz θɹˈəʊ/"),
+            make("let's face it", "let's be honest and accept the truth",
+                 "正直に言うと・現実を見ようよ",
+                 useCases: ["認めたくない事実を率直に言うとき"],
+                 examples: [
+                    ("Let's face it, we're not going to finish today.", "正直、今日中には終わらないよね。"),
+                    ("Let's face it — nobody likes Monday mornings.", "現実を見よう、月曜の朝が好きな人なんていないよ。")
+                 ], ipa: "/lɛts fˈeɪs ɪt/"),
+            make("long time no see", "a friendly greeting when you haven't seen someone for a while",
+                 "久しぶり！",
+                 useCases: ["しばらく会っていない人に会ったとき"],
+                 examples: [
+                    ("Hey, Anna! Long time no see!", "アンナ！久しぶり！"),
+                    ("Long time no see — how have you been?", "久しぶりだね、元気だった？")
+                 ], ipa: "/lˈɒŋ tˈaɪm nˈəʊ sˈiː/"),
+            make("get a move on", "hurry up (informal)",
+                 "急いで・早くして",
+                 useCases: ["相手を急かすとき"],
+                 examples: [
+                    ("Get a move on, or we'll miss the train!", "急いで、電車に乗り遅れるよ！"),
+                    ("We'd better get a move on — it's nearly six.", "急いだほうがいいね、もうすぐ6時だよ。")
+                 ], ipa: "/ɡɛt ə mˈuːv ɒn/"),
+            make("go on then", "OK, yes (agreeing after being persuaded) (British, informal)",
+                 "じゃあ、お言葉に甘えて・まあいいか",
+                 useCases: ["勧められて少し迷ってから受け入れるとき"],
+                 examples: [
+                    ("Another slice of cake? — Oh, go on then.", "ケーキもう一切れどう？ — じゃあ、いただこうかな。"),
+                    ("Go on then, I'll have one more drink.", "まあいいか、もう一杯だけ飲むよ。")
+                 ], ipa: "/ɡˈəʊ ˈɒn ðɛn/"),
+            make("tuck in", "start eating, especially with enthusiasm (British, informal)",
+                 "どうぞ召し上がれ・がっつり食べる",
+                 useCases: ["料理を出して食べ始めるよう促すとき"],
+                 examples: [
+                    ("Dinner's ready — tuck in!", "夕食できたよ、さあ食べて！"),
+                    ("The kids tucked in as soon as the pizza arrived.", "ピザが届くと子どもたちはすぐにかぶりついた。")
+                 ], ipa: "/tˈʌk ˈɪn/"),
+            make("catch you later", "see you later; goodbye (informal)",
+                 "またね・じゃあまた",
+                 useCases: ["友達とカジュアルに別れるとき"],
+                 examples: [
+                    ("I've got to run — catch you later!", "もう行かなきゃ、またね！"),
+                    ("Catch you later at the pub.", "じゃあ後でパブでね。")
+                 ], ipa: "/kˈætʃ juː lˈeɪtə/"),
+            make("on the dot", "exactly at the stated time",
+                 "きっかり・時間ちょうどに",
+                 useCases: ["時間ぴったりであることを強調するとき"],
+                 examples: [
+                    ("The meeting starts at nine on the dot.", "会議は9時きっかりに始まるよ。"),
+                    ("She arrived at seven on the dot, as always.", "彼女はいつも通り7時ちょうどに来た。")
+                 ], ipa: "/ɒn ðə dˈɒt/")
         ]
     }
 }
