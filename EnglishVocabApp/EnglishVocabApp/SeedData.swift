@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26976,6 +26976,116 @@ enum SeedData {
                     ("I tried to fix it myself, but in the end I threw in the towel and called a plumber.", "自分で直そうとしたけど、結局諦めて配管工を呼んだよ。"),
                     ("Don't throw in the towel yet — you're nearly there!", "まだ諦めないで、もう少しだよ！")
                  ], ipa: "/θrˈəʊ ɪn ðə tˈaʊəl/")
+        ]
+    }
+
+    private static var britishColloquial80: [Word] {
+        [
+            make("take the mickey", "to tease or make fun of someone, often playfully",
+                 "からかう・茶化す",
+                 useCases: ["友達を軽くからかう、またはからかわれていると感じたとき"],
+                 examples: [
+                    ("Are you taking the mickey? I've been practising for weeks!", "からかってるの？何週間も練習したんだよ！"),
+                    ("They always take the mickey out of my accent, but it's all in good fun.", "みんないつも私の訛りをからかうけど、悪気はないんだ。")
+                 ], ipa: "/tˈeɪk ðə mˈɪki/"),
+            make("I'd better be off", "I should leave now",
+                 "そろそろ失礼します・もう行かなきゃ",
+                 useCases: ["会話や集まりを切り上げて帰るとき"],
+                 examples: [
+                    ("Right, I'd better be off — I've got an early start tomorrow.", "さて、そろそろ行かなきゃ。明日朝早いんだ。"),
+                    ("Is that the time? I'd better be off.", "もうこんな時間？そろそろ失礼するね。")
+                 ], ipa: "/aɪd bˈɛtə bi ˈɒf/"),
+            make("while you're at it", "since you're already doing that, could you also…",
+                 "ついでに",
+                 useCases: ["相手が何かしているついでに別のことも頼むとき"],
+                 examples: [
+                    ("Are you making tea? Could you make me one while you're at it?", "お茶いれてるの？ついでに私の分もお願いできる？"),
+                    ("You're going to the shop? Grab some milk while you're at it.", "お店行くの？ついでに牛乳買ってきて。")
+                 ], ipa: "/wˈaɪl jʊər ˈæt ɪt/"),
+            make("I wouldn't say no", "yes, I'd like that (a polite, modest way of accepting)",
+                 "いただこうかな・断る理由はないね",
+                 useCases: ["飲み物や誘いを控えめに受け入れるとき"],
+                 examples: [
+                    ("Another slice of cake? — Well, I wouldn't say no.", "ケーキもう一切れどう？—じゃあ、いただこうかな。"),
+                    ("I wouldn't say no to a week in Spain right now.", "今スペインで1週間過ごせるなら大歓迎だね。")
+                 ], ipa: "/aɪ wˈʊdənt sˈeɪ nˈəʊ/"),
+            make("better safe than sorry", "it's wiser to be careful than to risk a problem",
+                 "念には念を・用心するに越したことはない",
+                 useCases: ["念のために準備や確認をするとき"],
+                 examples: [
+                    ("I'll take an umbrella — better safe than sorry.", "傘持っていくよ。念のためにね。"),
+                    ("Let's leave an hour early. Better safe than sorry.", "1時間早く出よう。用心するに越したことはないから。")
+                 ], ipa: "/bˈɛtə sˈeɪf ðən sˈɒri/"),
+            make("give or take", "approximately; plus or minus a little",
+                 "だいたい・前後",
+                 useCases: ["時間や数量をおおよそで伝えるとき"],
+                 examples: [
+                    ("It's about two hours by train, give or take.", "電車でだいたい2時間くらいかな。"),
+                    ("There were fifty people there, give or take a few.", "50人前後来てたよ。")
+                 ], ipa: "/ɡˈɪv ɔː tˈeɪk/"),
+            make("you've lost me", "I don't follow what you're saying",
+                 "ちょっとわからなくなった",
+                 useCases: ["相手の説明についていけなくなったとき"],
+                 examples: [
+                    ("Sorry, you've lost me. Can you start again?", "ごめん、話についていけなくなった。最初からもう一回いい？"),
+                    ("You had me up to the second step, then you lost me.", "2つ目のステップまではわかったけど、そこからわからなくなった。")
+                 ], ipa: "/juːv lˈɒst miː/"),
+            make("I'll take your word for it", "I'll believe you without checking",
+                 "君の言うことを信じるよ",
+                 useCases: ["自分で確かめずに相手の言葉を信じるとき"],
+                 examples: [
+                    ("The film's brilliant, honestly. — OK, I'll take your word for it.", "その映画ほんとに最高だよ。—わかった、信じるよ。"),
+                    ("I haven't tried it myself, so I'll take your word for it.", "自分では試してないから、君の言うことを信じるね。")
+                 ], ipa: "/aɪl tˈeɪk jɔː wˈɜːd fɔːr ɪt/"),
+            make("it's a bit nippy", "it's rather cold",
+                 "ちょっと肌寒いね",
+                 useCases: ["外の空気が冷たいと感じたとき"],
+                 examples: [
+                    ("It's a bit nippy this morning — you'll want a coat.", "今朝はちょっと肌寒いね。コートがあった方がいいよ。"),
+                    ("Close the window, would you? It's a bit nippy in here.", "窓閉めてくれる？ここ少し寒いんだ。")
+                 ], ipa: "/ɪts ə bɪt nˈɪpi/"),
+            make("each to their own", "everyone has different tastes, and that's fine",
+                 "人それぞれだね・好みは自由",
+                 useCases: ["自分とは違う相手の好みを否定せずに受け流すとき"],
+                 examples: [
+                    ("He puts ketchup on everything. Each to their own, I suppose.", "彼は何にでもケチャップかけるんだ。まあ人それぞれだね。"),
+                    ("I'd never go camping in winter, but each to their own.", "冬にキャンプなんて私は絶対しないけど、好みは人それぞれだよね。")
+                 ], ipa: "/ˈiːtʃ tə ðeər ˈəʊn/"),
+            make("now we're talking", "that's a much better idea",
+                 "そうこなくっちゃ・いいね！",
+                 useCases: ["提案がより魅力的になって乗り気になったとき"],
+                 examples: [
+                    ("How about pizza instead? — Now we're talking!", "代わりにピザはどう？—そうこなくっちゃ！"),
+                    ("They've offered you a pay rise? Now we're talking.", "昇給を提示されたの？それはいいね。")
+                 ], ipa: "/nˈaʊ wɪə tˈɔːkɪŋ/"),
+            make("you can say that again", "I completely agree",
+                 "まったくその通り",
+                 useCases: ["相手の言葉に強く同意するとき"],
+                 examples: [
+                    ("This queue is ridiculous. — You can say that again.", "この行列ありえないね。—ほんとそれ。"),
+                    ("It's been a long week. — You can say that again!", "長い1週間だったね。—まったくだよ！")
+                 ], ipa: "/juː kən sˈeɪ ðæt əɡˈɛn/"),
+            make("fancy meeting you here", "what a surprise to see you here",
+                 "こんなところで会うなんて奇遇だね",
+                 useCases: ["思いがけない場所で知り合いに会ったとき"],
+                 examples: [
+                    ("Well, fancy meeting you here! Do you come to this café often?", "おや、こんなところで会うなんて！このカフェよく来るの？"),
+                    ("Fancy meeting you here — I thought you were in London.", "奇遇だね。ロンドンにいると思ってたよ。")
+                 ], ipa: "/fˈænsi mˈiːtɪŋ juː hˈɪə/"),
+            make("you know the drill", "you already know the usual procedure",
+                 "いつもの流れでね・わかってるよね",
+                 useCases: ["相手がすでに手順や決まりを知っているとき"],
+                 examples: [
+                    ("Shoes off at the door — you know the drill.", "玄関で靴脱いでね。いつも通りだよ。"),
+                    ("Same as last time, you know the drill.", "前回と同じ。やり方はわかってるよね。")
+                 ], ipa: "/juː nˈəʊ ðə drˈɪl/"),
+            make("if you don't mind me asking", "a polite way to ask a personal question",
+                 "差し支えなければ聞いてもいい？",
+                 useCases: ["少し踏み込んだ質問を丁寧にするとき"],
+                 examples: [
+                    ("Where are you from, if you don't mind me asking?", "差し支えなければ、どちらのご出身ですか？"),
+                    ("If you don't mind me asking, how much did it cost?", "もしよければ聞きたいんだけど、それいくらだった？")
+                 ], ipa: "/ɪf juː dˈəʊnt mˈaɪnd miː ˈɑːskɪŋ/")
         ]
     }
 }
