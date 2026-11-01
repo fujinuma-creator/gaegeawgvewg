@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26536,6 +26536,116 @@ enum SeedData {
                     ("I'm dying for a cup of tea.", "紅茶が飲みたくてたまらない。"),
                     ("We're all dying for a holiday.", "みんな休暇が欲しくてしょうがないよ。")
                  ], ipa: "/bi dˈaɪɪŋ fɔː/")
+        ]
+    }
+
+    private static var britishColloquial76: [Word] {
+        [
+            make("tell me about it", "I know exactly what you mean; I've experienced it too",
+                 "ほんとそれ・まったくだよ",
+                 useCases: ["相手の愚痴や不満に強く共感するとき"],
+                 examples: [
+                    ("These trains are always late. — Tell me about it.", "この電車いつも遅れるよね。—ほんとそれ。"),
+                    ("Mondays are exhausting. — Tell me about it!", "月曜って疲れるよね。—まったくだよ！")
+                 ], ipa: "/tˈɛl miː əbˈaʊt ɪt/"),
+            make("I'm stuffed", "I'm so full I can't eat any more",
+                 "お腹いっぱい・もう食べられない",
+                 useCases: ["食事の後で満腹だと伝えるとき"],
+                 examples: [
+                    ("No pudding for me, thanks — I'm stuffed.", "デザートはいいや、ありがとう。もうお腹いっぱい。"),
+                    ("That was lovely, but I'm absolutely stuffed.", "すごく美味しかったけど、もう本当にお腹いっぱい。")
+                 ], ipa: "/aɪm stˈʌft/"),
+            make("you shouldn't have", "a polite thank-you when given a gift or favour",
+                 "そんな、気を遣わなくてよかったのに",
+                 useCases: ["プレゼントや親切を受けてお礼を言うとき"],
+                 examples: [
+                    ("Flowers? Oh, you shouldn't have!", "お花？まあ、気を遣わなくていいのに！"),
+                    ("You shouldn't have — but thank you, it's lovely.", "気を遣わせちゃって…でもありがとう、素敵だね。")
+                 ], ipa: "/juː ʃˈʊdənt hæv/"),
+            make("it's on me", "I'll pay for this",
+                 "ここは私のおごり",
+                 useCases: ["食事や飲み物の代金を払うと申し出るとき"],
+                 examples: [
+                    ("Put your wallet away — it's on me.", "財布はしまって、ここは僕が出すよ。"),
+                    ("The first round's on me.", "最初の一杯は私のおごりね。")
+                 ], ipa: "/ɪts ˈɒn miː/"),
+            make("take it easy", "relax; don't work too hard; also used as a goodbye",
+                 "無理しないでね・のんびりね・じゃあね",
+                 useCases: ["相手に休むよう勧めるときや、別れ際の挨拶"],
+                 examples: [
+                    ("You've had a long week — take it easy this weekend.", "長い一週間だったね、週末はゆっくりしてね。"),
+                    ("Right, I'm off. Take it easy!", "じゃあ、行くね。またね！")
+                 ], ipa: "/tˈeɪk ɪt ˈiːzi/"),
+            make("could be worse", "the situation isn't great, but it's not terrible",
+                 "まあまあかな・もっと悪いこともあるし",
+                 useCases: ["調子を聞かれてそこそこだと答えるとき"],
+                 examples: [
+                    ("How's work? — Could be worse.", "仕事どう？—まあ、悪くはないかな。"),
+                    ("It's raining, but it could be worse — at least it's warm.", "雨だけど、まだマシだよ。少なくとも暖かいし。")
+                 ], ipa: "/kʊd biː wˈɜːs/"),
+            make("no harm done", "it's fine; nothing was damaged or hurt",
+                 "大丈夫、気にしないで・実害はないよ",
+                 useCases: ["謝られたときに問題ないと伝えるとき"],
+                 examples: [
+                    ("Sorry I bumped into you! — No harm done.", "ぶつかってごめんなさい！—大丈夫ですよ。"),
+                    ("You spilt a bit, but no harm done.", "ちょっとこぼれたけど、問題ないよ。")
+                 ], ipa: "/nəʊ hˈɑːm dˈʌn/"),
+            make("kill time", "do something to make the waiting time pass",
+                 "時間をつぶす",
+                 useCases: ["待ち時間に何かして過ごすことを言うとき"],
+                 examples: [
+                    ("We killed time in a café before the film.", "映画の前にカフェで時間をつぶした。"),
+                    ("I'm just scrolling my phone to kill time.", "時間つぶしにスマホ見てるだけ。")
+                 ], ipa: "/kˈɪl tˈaɪm/"),
+            make("by all means", "of course; please go ahead",
+                 "もちろん、どうぞ",
+                 useCases: ["相手の頼みや提案を快く許可するとき"],
+                 examples: [
+                    ("Can I borrow your pen? — By all means.", "ペン借りてもいい？—もちろん、どうぞ。"),
+                    ("By all means bring a friend along.", "ぜひお友達も連れてきてね。")
+                 ], ipa: "/baɪ ˈɔːl mˈiːnz/"),
+            make("don't mention it", "you're welcome; it was no trouble",
+                 "どういたしまして・気にしないで",
+                 useCases: ["お礼を言われて軽く返すとき"],
+                 examples: [
+                    ("Thanks for the lift. — Don't mention it.", "送ってくれてありがとう。—いいって、気にしないで。"),
+                    ("Don't mention it — happy to help.", "どういたしまして、お役に立てて嬉しいよ。")
+                 ], ipa: "/dˈəʊnt mˈɛnʃən ɪt/"),
+            make("fill me in", "tell me what has happened or what I've missed",
+                 "（状況を）教えて・詳しく聞かせて",
+                 useCases: ["自分がいなかった間の出来事を聞くとき"],
+                 examples: [
+                    ("I missed the meeting — can you fill me in?", "会議に出られなかったんだ、どうだったか教えてくれる？"),
+                    ("Fill me in on the gossip later!", "あとで噂話、詳しく聞かせてね！")
+                 ], ipa: "/fˈɪl miː ˈɪn/"),
+            make("I'll pass", "no, thank you; I'll decline",
+                 "やめとくよ・遠慮しとく",
+                 useCases: ["誘いや勧めを軽く断るとき"],
+                 examples: [
+                    ("Fancy another drink? — I'll pass, thanks.", "もう一杯どう？—やめとくよ、ありがとう。"),
+                    ("Karaoke? I think I'll pass tonight.", "カラオケ？今夜は遠慮しとくよ。")
+                 ], ipa: "/aɪl pˈɑːs/"),
+            make("have an early night", "go to bed earlier than usual",
+                 "早めに寝る",
+                 useCases: ["疲れているので早く寝ると言うとき"],
+                 examples: [
+                    ("I'm shattered — I'm going to have an early night.", "くたくただから、今日は早めに寝るね。"),
+                    ("Let's have an early night before the flight.", "フライトの前だし、早く寝よう。")
+                 ], ipa: "/hæv ən ˈɜːli nˈaɪt/"),
+            make("a fair bit", "quite a lot (British, informal)",
+                 "結構たくさん・かなり",
+                 useCases: ["量や程度がそこそこ多いと言うとき"],
+                 examples: [
+                    ("It cost a fair bit, but it was worth it.", "結構お金かかったけど、その価値はあったよ。"),
+                    ("She travels a fair bit for work.", "彼女は仕事でかなり出張してるよ。")
+                 ], ipa: "/ə fˈeə bˈɪt/"),
+            make("get the wrong end of the stick", "misunderstand something (British, informal)",
+                 "勘違いする・誤解する",
+                 useCases: ["相手の話を取り違えたことを言うとき"],
+                 examples: [
+                    ("Sorry, I think I got the wrong end of the stick.", "ごめん、勘違いしてたみたい。"),
+                    ("Don't get the wrong end of the stick — we're just friends.", "誤解しないでね、ただの友達だから。")
+                 ], ipa: "/ɡɛt ðə rˈɒŋ ˈɛnd əv ðə stˈɪk/")
         ]
     }
 }
