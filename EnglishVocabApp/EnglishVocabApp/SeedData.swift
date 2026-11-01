@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26866,6 +26866,116 @@ enum SeedData {
                     ("Right, I'd better go. Speak soon!", "じゃあ、そろそろ行くね。またね！"),
                     ("Thanks for the chat — speak soon.", "話せてよかった。また連絡するね。")
                  ], ipa: "/spˈiːk sˈuːn/")
+        ]
+    }
+
+    private static var britishColloquial79: [Word] {
+        [
+            make("in the same boat", "in the same difficult situation as someone else",
+                 "同じ境遇だ・お互い様",
+                 useCases: ["相手と同じ困った状況にいると共感するとき"],
+                 examples: [
+                    ("I've got no idea what I'm doing either — we're all in the same boat.", "私も何やってるか全然わからない。みんな同じだよ。"),
+                    ("Don't worry about the deadline; we're in the same boat.", "締め切りのことは気にしないで。こっちも同じ状況だから。")
+                 ], ipa: "/ɪn ðə sˈeɪm bˈəʊt/"),
+            make("the penny dropped", "I finally understood something",
+                 "やっとわかった・ピンときた",
+                 useCases: ["しばらくして意味や状況にようやく気づいたとき"],
+                 examples: [
+                    ("It took me ages, but then the penny dropped — it was a surprise party!", "だいぶかかったけど、やっと気づいた。サプライズパーティーだったんだ！"),
+                    ("I explained it three times before the penny finally dropped.", "3回説明して、やっとピンときてくれた。")
+                 ], ipa: "/ðə pˈɛni drˈɒpt/"),
+            make("not to worry", "it's fine, don't worry about it",
+                 "大丈夫、気にしないで",
+                 useCases: ["相手の謝罪やちょっとしたミスを軽く受け流すとき"],
+                 examples: [
+                    ("Sorry, I forgot your pen. — Not to worry, I've got another.", "ごめん、ペン忘れた。—大丈夫、もう1本あるから。"),
+                    ("The train's cancelled? Not to worry, we'll get a taxi.", "電車運休？まあいいよ、タクシーで行こう。")
+                 ], ipa: "/nˈɒt tə wˈʌri/"),
+            make("the last thing I need", "something that would make my situation even worse",
+                 "それだけは勘弁してほしい",
+                 useCases: ["すでに大変なときに、さらに嫌なことが起きそうなとき"],
+                 examples: [
+                    ("A cold is the last thing I need before my holiday.", "休暇の前に風邪なんて、ほんと勘弁してほしい。"),
+                    ("Rain? That's the last thing we need today.", "雨？今日だけは降ってほしくないのに。")
+                 ], ipa: "/ðə lˈɑːst θˈɪŋ aɪ nˈiːd/"),
+            make("how did you get on?", "how did it go? (asking about a result)",
+                 "どうだった？（結果を尋ねる）",
+                 useCases: ["面接・試験・病院などの結果を相手に尋ねるとき"],
+                 examples: [
+                    ("How did you get on at the interview?", "面接どうだった？"),
+                    ("You had your driving test today, right? How did you get on?", "今日運転免許の試験だったよね？どうだった？")
+                 ], ipa: "/haʊ dɪd juː ɡɛt ˈɒn/"),
+            make("after you", "please go first",
+                 "お先にどうぞ",
+                 useCases: ["ドアやエレベーターなどで相手に先を譲るとき"],
+                 examples: [
+                    ("After you. — Oh, thanks very much.", "お先にどうぞ。—あ、どうもありがとう。"),
+                    ("He held the door and said, \"After you.\"", "彼はドアを押さえて「お先にどうぞ」と言った。")
+                 ], ipa: "/ˈɑːftə juː/"),
+            make("cutting it fine", "leaving very little time to spare",
+                 "ギリギリだね・時間に余裕がない",
+                 useCases: ["時間ぎりぎりで間に合うかどうかの状況のとき"],
+                 examples: [
+                    ("The flight's at nine and we're leaving at seven? That's cutting it fine.", "飛行機9時なのに7時出発？ギリギリだよ。"),
+                    ("You made it! You were cutting it a bit fine, though.", "間に合ったね！ちょっとギリギリだったけど。")
+                 ], ipa: "/kˈʌtɪŋ ɪt fˈaɪn/"),
+            make("on the house", "free, paid for by the restaurant or bar",
+                 "店のおごり・サービスです",
+                 useCases: ["お店が無料で何かを提供してくれるとき"],
+                 examples: [
+                    ("The desserts are on the house tonight.", "今夜のデザートはお店からのサービスです。"),
+                    ("Sorry for the wait — this round's on the house.", "お待たせしてすみません。この一杯は店のおごりです。")
+                 ], ipa: "/ɒn ðə hˈaʊs/"),
+            make("skive off", "avoid work or school when you should be there",
+                 "サボる",
+                 useCases: ["仕事や学校、やるべきことを怠けてサボるとき"],
+                 examples: [
+                    ("We used to skive off school and go to the park.", "昔は学校サボって公園に行ってたよ。"),
+                    ("He's skiving off again — he said he had a dentist appointment.", "彼またサボってるよ。歯医者だって言ってたけど。")
+                 ], ipa: "/skˈaɪv ˈɒf/"),
+            make("blimey", "expression of surprise",
+                 "うわっ・まじか・へぇ〜",
+                 useCases: ["驚いたときやびっくりしたときの軽い感嘆"],
+                 examples: [
+                    ("Blimey, it's freezing out here!", "うわっ、外めちゃくちゃ寒い！"),
+                    ("Two hundred quid for a ticket? Blimey!", "チケット1枚200ポンド？まじか！")
+                 ], ipa: "/blˈaɪmi/"),
+            make("you must be joking", "I can't believe that; that's ridiculous",
+                 "冗談でしょ・ありえない",
+                 useCases: ["信じられないことや受け入れがたい提案を聞いたとき"],
+                 examples: [
+                    ("Walk all the way there? You must be joking!", "そこまで歩くの？冗談でしょ！"),
+                    ("They want it finished by tomorrow? You must be joking.", "明日までに終わらせろって？ありえないよ。")
+                 ], ipa: "/jʊ mʌst bi dʒˈəʊkɪŋ/"),
+            make("no offence, but", "I don't mean to upset you, but (before honest criticism)",
+                 "悪気はないんだけど",
+                 useCases: ["正直な意見や批判を言う前にクッションとして"],
+                 examples: [
+                    ("No offence, but I think the blue one suits you better.", "悪く思わないでほしいんだけど、青い方が似合うと思う。"),
+                    ("No offence, but your cooking needs a bit more salt.", "悪気はないけど、料理もうちょっと塩があってもいいかも。")
+                 ], ipa: "/nəʊ əfˈɛns bʌt/"),
+            make("it's been ages", "it's been a long time (since we met or did something)",
+                 "久しぶり・ずいぶん経つね",
+                 useCases: ["久しぶりに会った人に挨拶するとき、長い間何かをしていないとき"],
+                 examples: [
+                    ("Hi! It's been ages! How are you?", "やあ！久しぶり！元気？"),
+                    ("It's been ages since I went to the cinema.", "映画館に行くの、ずいぶん久しぶりだな。")
+                 ], ipa: "/ɪts bˈiːn ˈeɪdʒɪz/"),
+            make("at a push", "if absolutely necessary, but with difficulty",
+                 "頑張れば・どうしてもと言うなら",
+                 useCases: ["無理をすれば可能だと伝えるとき"],
+                 examples: [
+                    ("The car seats five, or six at a push.", "車は5人乗り、詰めれば6人いけるよ。"),
+                    ("I could do Friday at a push, but Monday's better.", "金曜も無理すればいけるけど、月曜の方がいいな。")
+                 ], ipa: "/ət ə pˈʊʃ/"),
+            make("throw in the towel", "give up; stop trying",
+                 "諦める・降参する",
+                 useCases: ["努力していたことをやめる、諦めるとき"],
+                 examples: [
+                    ("I tried to fix it myself, but in the end I threw in the towel and called a plumber.", "自分で直そうとしたけど、結局諦めて配管工を呼んだよ。"),
+                    ("Don't throw in the towel yet — you're nearly there!", "まだ諦めないで、もう少しだよ！")
+                 ], ipa: "/θrˈəʊ ɪn ðə tˈaʊəl/")
         ]
     }
 }
