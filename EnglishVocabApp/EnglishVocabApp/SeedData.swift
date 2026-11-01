@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26756,6 +26756,116 @@ enum SeedData {
                     ("How was the test? — Piece of cake.", "テストどうだった？—楽勝だったよ。"),
                     ("Don't worry, setting it up is a piece of cake.", "心配しないで、設定なんて簡単だから。")
                  ], ipa: "/pˈiːs əv kˈeɪk/")
+        ]
+    }
+
+    private static var britishColloquial78: [Word] {
+        [
+            make("pull the other one", "I don't believe you; you're joking",
+                 "冗談でしょ・そんなの信じないよ",
+                 useCases: ["相手の話が信じられず、からかわれていると思ったとき"],
+                 examples: [
+                    ("You met the King at the supermarket? Pull the other one!", "スーパーで国王に会った？冗談でしょ！"),
+                    ("He says he's never late. Pull the other one.", "彼、一度も遅刻したことないって。よく言うよ。")
+                 ], ipa: "/pˈʊl ði ˈʌðə wˈʌn/"),
+            make("it slipped my mind", "I forgot about it",
+                 "うっかり忘れてた",
+                 useCases: ["約束や頼まれごとを忘れていたと謝るとき"],
+                 examples: [
+                    ("Sorry I didn't call — it completely slipped my mind.", "電話しなくてごめん、すっかり忘れてた。"),
+                    ("I meant to bring your book, but it slipped my mind.", "本を持ってくるつもりだったのに、うっかりしてた。")
+                 ], ipa: "/ɪt slˈɪpt maɪ mˈaɪnd/"),
+            make("on the tip of my tongue", "I almost remember it but can't quite say it",
+                 "喉まで出かかってる",
+                 useCases: ["名前や言葉が思い出せそうで思い出せないとき"],
+                 examples: [
+                    ("What's that actor called? It's on the tip of my tongue.", "あの俳優の名前なんだっけ？喉まで出かかってるのに。"),
+                    ("Her name's on the tip of my tongue — give me a second.", "彼女の名前、ここまで出てるんだけど、ちょっと待って。")
+                 ], ipa: "/ɒn ðə tˈɪp əv maɪ tˈʌŋ/"),
+            make("you're on", "I accept your bet or challenge",
+                 "乗った・受けて立つよ",
+                 useCases: ["賭けや勝負、誘いを受けるとき"],
+                 examples: [
+                    ("Loser buys the coffee? — You're on!", "負けた方がコーヒーおごりね？—乗った！"),
+                    ("Bet you can't finish that pizza. — You're on.", "そのピザ食べきれないでしょ。—受けて立つよ。")
+                 ], ipa: "/jɔːr ˈɒn/"),
+            make("what's the damage?", "how much do I have to pay?",
+                 "おいくら？・いくらになった？",
+                 useCases: ["お店や友人との会計で、金額を軽い調子で尋ねるとき"],
+                 examples: [
+                    ("Right, what's the damage? — Twenty quid each.", "で、いくら？—一人20ポンドだよ。"),
+                    ("That was a lovely meal. What's the damage?", "美味しかった。お会計いくらかな？")
+                 ], ipa: "/wɒts ðə dˈæmɪdʒ/"),
+            make("the more the merrier", "everyone is welcome; more people makes it more fun",
+                 "人が多いほど楽しい・大歓迎だよ",
+                 useCases: ["誰かを誘ったり、参加者が増えることを歓迎するとき"],
+                 examples: [
+                    ("Can I bring my sister? — Of course, the more the merrier!", "妹連れてっていい？—もちろん、大歓迎！"),
+                    ("Invite your flatmates too — the more the merrier.", "ルームメイトも誘いなよ、多い方が楽しいし。")
+                 ], ipa: "/ðə mˈɔː ðə mˈɛriə/"),
+            make("mind how you go", "take care (said when saying goodbye)",
+                 "気をつけてね（別れ際）",
+                 useCases: ["別れ際に相手の道中を気遣うとき"],
+                 examples: [
+                    ("Thanks for coming. Mind how you go!", "来てくれてありがとう。気をつけて帰ってね！"),
+                    ("It's icy out there, so mind how you go.", "外は凍ってるから、気をつけてね。")
+                 ], ipa: "/mˈaɪnd haʊ juː ɡˈəʊ/"),
+            make("hold your horses", "wait a moment; don't rush",
+                 "ちょっと待って・焦らないで",
+                 useCases: ["相手が先走ったり急ぎすぎたりしているのを止めるとき"],
+                 examples: [
+                    ("Hold your horses — we haven't even seen the flat yet!", "ちょっと待って、まだ部屋も見てないじゃん！"),
+                    ("Hold your horses, I'm nearly ready.", "焦らないで、もうすぐ準備できるから。")
+                 ], ipa: "/hˈəʊld jɔː hˈɔːsɪz/"),
+            make("better late than never", "it's good that it happened, even if late",
+                 "遅れてもやらないよりはまし",
+                 useCases: ["遅れてきた人や、遅くなったけど実現したことを前向きに言うとき"],
+                 examples: [
+                    ("Sorry I'm late! — Better late than never.", "遅れてごめん！—来ないよりずっといいよ。"),
+                    ("I finally started learning to drive. Better late than never!", "やっと運転の練習始めたよ。遅くてもやらないよりマシ！")
+                 ], ipa: "/bˈɛtə lˈeɪt ðən nˈɛvə/"),
+            make("look on the bright side", "focus on the good parts of a bad situation",
+                 "前向きに考えよう・いい面を見よう",
+                 useCases: ["落ち込んでいる人を励ますとき"],
+                 examples: [
+                    ("Look on the bright side — at least nobody got hurt.", "前向きに考えようよ、少なくとも誰も怪我してないし。"),
+                    ("The trip was cancelled, but look on the bright side: we saved money.", "旅行は中止になったけど、いい面を見ればお金が浮いたね。")
+                 ], ipa: "/lˈʊk ɒn ðə brˈaɪt sˈaɪd/"),
+            make("funnily enough", "surprisingly; strangely (introducing a coincidence)",
+                 "面白いことに・偶然にも",
+                 useCases: ["意外な事実や偶然を話すとき"],
+                 examples: [
+                    ("Funnily enough, I was just thinking about you.", "面白いことに、ちょうど君のこと考えてたんだ。"),
+                    ("Funnily enough, I've never been to London.", "意外かもしれないけど、ロンドンには行ったことないんだ。")
+                 ], ipa: "/fˈʌnɪli ɪnˈʌf/"),
+            make("steady on", "calm down; don't go too far",
+                 "落ち着いて・ちょっと言い過ぎだよ",
+                 useCases: ["相手が興奮したり大げさなことを言ったりしたときにたしなめる"],
+                 examples: [
+                    ("Steady on — it's only a game!", "落ち着いて、ただのゲームだよ！"),
+                    ("He's a total idiot. — Steady on, he's my friend.", "あいつ完全にバカだよ。—ちょっと、僕の友達なんだけど。")
+                 ], ipa: "/stˈɛdi ˈɒn/"),
+            make("talk shop", "talk about work in a social situation",
+                 "（プライベートで）仕事の話をする",
+                 useCases: ["飲み会などで仕事の話ばかりすることを言うとき"],
+                 examples: [
+                    ("Let's not talk shop tonight — we're here to relax.", "今夜は仕事の話はやめよう、くつろぎに来たんだから。"),
+                    ("Sorry, I'm talking shop again, aren't I?", "ごめん、また仕事の話しちゃってるね。")
+                 ], ipa: "/tˈɔːk ʃˈɒp/"),
+            make("a night in", "an evening spent relaxing at home",
+                 "家でのんびり過ごす夜",
+                 useCases: ["出かけずに家で過ごすことを言うとき（反対は a night out）"],
+                 examples: [
+                    ("I'm knackered, so I fancy a night in.", "クタクタだから、今夜は家でのんびりしたいな。"),
+                    ("A night in with a film and a takeaway — perfect.", "映画とテイクアウトで家で過ごす夜、最高。")
+                 ], ipa: "/ə nˈaɪt ˈɪn/"),
+            make("speak soon", "goodbye; we'll talk again soon",
+                 "またね・また連絡するね",
+                 useCases: ["電話やメッセージの終わりに軽く挨拶するとき"],
+                 examples: [
+                    ("Right, I'd better go. Speak soon!", "じゃあ、そろそろ行くね。またね！"),
+                    ("Thanks for the chat — speak soon.", "話せてよかった。また連絡するね。")
+                 ], ipa: "/spˈiːk sˈuːn/")
         ]
     }
 }
