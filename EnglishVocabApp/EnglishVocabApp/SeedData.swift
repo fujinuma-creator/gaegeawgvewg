@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26646,6 +26646,116 @@ enum SeedData {
                     ("Sorry, I think I got the wrong end of the stick.", "ごめん、勘違いしてたみたい。"),
                     ("Don't get the wrong end of the stick — we're just friends.", "誤解しないでね、ただの友達だから。")
                  ], ipa: "/ɡɛt ðə rˈɒŋ ˈɛnd əv ðə stˈɪk/")
+        ]
+    }
+
+    private static var britishColloquial77: [Word] {
+        [
+            make("full of beans", "lively and full of energy",
+                 "元気いっぱい・エネルギッシュ",
+                 useCases: ["人（特に子ども）がとても元気なことを言うとき"],
+                 examples: [
+                    ("The kids are full of beans this morning.", "子どもたち、今朝は元気いっぱいだね。"),
+                    ("You're full of beans today — what's got into you?", "今日はやけに元気だね、何かあったの？")
+                 ], ipa: "/fˈʊl əv bˈiːnz/"),
+            make("not too shabby", "pretty good (said modestly or with mild surprise)",
+                 "なかなかいいじゃん・悪くないね",
+                 useCases: ["控えめに「結構いいね」と褒めるとき"],
+                 examples: [
+                    ("Second place out of fifty? Not too shabby!", "50人中2位？なかなかやるじゃん！"),
+                    ("Nice flat — not too shabby at all.", "いい部屋だね、全然悪くないよ。")
+                 ], ipa: "/nˈɒt tuː ʃˈæbi/"),
+            make("count me out", "I don't want to take part",
+                 "私はパスで・私は抜けておくよ",
+                 useCases: ["誘いや計画に参加しないと伝えるとき"],
+                 examples: [
+                    ("A 6 a.m. run? Count me out.", "朝6時にランニング？私はパスで。"),
+                    ("If it's karaoke again, count me out.", "またカラオケなら、僕は遠慮しとく。")
+                 ], ipa: "/kˈaʊnt miː ˈaʊt/"),
+            make("cutting it fine", "leaving only just enough time",
+                 "時間ギリギリ・余裕がない",
+                 useCases: ["予定や締め切りに時間の余裕がないことを言うとき"],
+                 examples: [
+                    ("The train leaves at ten past — we're cutting it fine.", "電車は10分発だよ、ギリギリだね。"),
+                    ("Leaving at eight is cutting it a bit fine, isn't it?", "8時に出るのはちょっとギリギリじゃない？")
+                 ], ipa: "/kˈʌtɪŋ ɪt fˈaɪn/"),
+            make("between you and me", "this is a secret; don't tell anyone",
+                 "ここだけの話だけど",
+                 useCases: ["内緒の話を打ち明けるとき"],
+                 examples: [
+                    ("Between you and me, I'm thinking of leaving.", "ここだけの話、辞めようと思ってるんだ。"),
+                    ("Just between you and me, the food wasn't great.", "ここだけの話、料理はいまいちだったよ。")
+                 ], ipa: "/bɪtwˈiːn juː ənd mˈiː/"),
+            make("rather you than me", "I wouldn't want to do that",
+                 "私だったら無理だな・よくやるね",
+                 useCases: ["相手が大変なことをすると聞いて、自分はやりたくないと冗談まじりに言うとき"],
+                 examples: [
+                    ("I'm running a marathon on Sunday. — Rather you than me!", "日曜にマラソン走るんだ。—私には無理だわ！"),
+                    ("You're camping in November? Rather you than me.", "11月にキャンプ？よくやるね。")
+                 ], ipa: "/rˈɑːðə juː ðən mˈiː/"),
+            make("leave it with me", "I'll take care of it",
+                 "任せて・こっちで何とかするよ",
+                 useCases: ["頼まれごとを引き受けるとき"],
+                 examples: [
+                    ("Can you find us a table for Friday? — Leave it with me.", "金曜の席取れる？—任せて。"),
+                    ("Leave it with me and I'll get back to you tomorrow.", "こっちで預かって、明日連絡するね。")
+                 ], ipa: "/lˈiːv ɪt wɪð mˈiː/"),
+            make("these things happen", "it's normal; don't blame yourself",
+                 "よくあることだよ・仕方ないよ",
+                 useCases: ["失敗した相手を慰めるとき"],
+                 examples: [
+                    ("I'm so sorry I forgot. — Don't worry, these things happen.", "忘れてて本当にごめん。—気にしないで、よくあることだよ。"),
+                    ("The flight was cancelled, but these things happen.", "便が欠航になったけど、まあ仕方ないね。")
+                 ], ipa: "/ðˈiːz θˈɪŋz hˈæpən/"),
+            make("fancy seeing you here", "what a surprise to meet you here",
+                 "こんなところで会うなんて奇遇だね",
+                 useCases: ["思いがけない場所で知り合いに会ったとき"],
+                 examples: [
+                    ("Well, fancy seeing you here!", "おや、こんなところで会うなんて！"),
+                    ("Fancy seeing you here — do you live nearby?", "奇遇だね、この辺に住んでるの？")
+                 ], ipa: "/fˈænsi sˈiːɪŋ juː hˈɪə/"),
+            make("it can't be helped", "there's nothing we can do about it",
+                 "仕方ない・どうしようもない",
+                 useCases: ["避けられない状況を受け入れるとき"],
+                 examples: [
+                    ("We'll miss the start, but it can't be helped.", "最初には間に合わないけど、仕方ないね。"),
+                    ("It's a shame about the rain, but it can't be helped.", "雨は残念だけど、どうしようもないね。")
+                 ], ipa: "/ɪt kˈɑːnt biː hˈɛlpt/"),
+            make("small world", "said when you discover an unexpected connection",
+                 "世間は狭いね",
+                 useCases: ["共通の知り合いや意外なつながりが分かったとき"],
+                 examples: [
+                    ("You know Sarah too? Small world!", "サラのこと知ってるの？世間は狭いね！"),
+                    ("We went to the same school? It's a small world.", "同じ学校だったの？世間って狭いね。")
+                 ], ipa: "/smˈɔːl wˈɜːld/"),
+            make("in the nick of time", "just in time; at the last possible moment",
+                 "ギリギリ間に合って・間一髪で",
+                 useCases: ["寸前で間に合ったことを言うとき"],
+                 examples: [
+                    ("We got to the station in the nick of time.", "ギリギリで駅に間に合ったよ。"),
+                    ("You've arrived in the nick of time — we're about to eat.", "ちょうどいいところに来たね、今から食べるところだよ。")
+                 ], ipa: "/ɪn ðə nˈɪk əv tˈaɪm/"),
+            make("potter about", "spend time doing small, relaxing tasks (British)",
+                 "のんびりぶらぶら過ごす・あれこれ雑用をする",
+                 useCases: ["家や庭でのんびり過ごしたことを話すとき"],
+                 examples: [
+                    ("I just pottered about the house all Sunday.", "日曜はずっと家でのんびりしてたよ。"),
+                    ("He loves pottering about in the garden.", "彼は庭いじりをしながらのんびり過ごすのが好きなんだ。")
+                 ], ipa: "/pˈɒtər əbˈaʊt/"),
+            make("go for it", "do it; you should try it",
+                 "やっちゃいなよ・頑張って",
+                 useCases: ["相手の挑戦や決断を後押しするとき"],
+                 examples: [
+                    ("Should I apply for the job? — Go for it!", "その仕事に応募しようかな？—やっちゃいなよ！"),
+                    ("If you want the last slice, go for it.", "最後の一切れ欲しいなら、どうぞ食べて。")
+                 ], ipa: "/ɡˈəʊ fɔːr ɪt/"),
+            make("piece of cake", "very easy",
+                 "楽勝・朝飯前",
+                 useCases: ["何かがとても簡単だったと言うとき"],
+                 examples: [
+                    ("How was the test? — Piece of cake.", "テストどうだった？—楽勝だったよ。"),
+                    ("Don't worry, setting it up is a piece of cake.", "心配しないで、設定なんて簡単だから。")
+                 ], ipa: "/pˈiːs əv kˈeɪk/")
         ]
     }
 }
