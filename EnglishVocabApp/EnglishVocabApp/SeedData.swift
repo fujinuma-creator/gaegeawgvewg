@@ -135,6 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
+            + britishColloquial70
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -25875,6 +25876,116 @@ enum SeedData {
                     ("Don't be silly.", "ばかなこと言わないで。"),
                     ("A silly mistake.", "うっかりミス。")
                  ], ipa: "/sˈɪlɪ/")
+        ]
+    }
+
+    private static var britishColloquial70: [Word] {
+        [
+            make("I'm skint", "having no money at the moment (British, informal)",
+                 "金欠だ・お金がない",
+                 useCases: ["誘いを断るとき", "月末などお金がないことを気軽に言うとき"],
+                 examples: [
+                    ("I can't come out tonight, I'm skint till payday.", "給料日まで金欠だから今夜は出かけられない。"),
+                    ("I'm always skint at the end of the month.", "月末はいつも金欠なんだ。")
+                 ], ipa: "/aɪm skˈɪnt/"),
+            make("Bob's your uncle", "and that's it; it's as simple as that",
+                 "はい、それで完成・簡単でしょ",
+                 useCases: ["手順の説明を締めくくるとき"],
+                 examples: [
+                    ("Add hot water, stir, and Bob's your uncle!", "お湯を入れて混ぜれば、はい完成！"),
+                    ("Turn left at the pub and Bob's your uncle, you're there.", "パブで左に曲がれば、もう着いてるよ。")
+                 ], ipa: "/bˈɒbz jɔːɹ ˈʌŋkəl/"),
+            make("I'm over the moon", "extremely happy and delighted",
+                 "大喜びしている・最高に嬉しい",
+                 useCases: ["嬉しい報告をするとき"],
+                 examples: [
+                    ("I'm over the moon about the new job.", "新しい仕事が決まって大喜びだよ。"),
+                    ("She'll be over the moon when she hears.", "聞いたら彼女すごく喜ぶよ。")
+                 ], ipa: "/aɪm ˈəʊvə ðə mˈuːn/"),
+            make("not my cup of tea", "not something I like or enjoy",
+                 "好みじゃない・性に合わない",
+                 useCases: ["好みを柔らかく伝えるとき"],
+                 examples: [
+                    ("Opera isn't really my cup of tea.", "オペラはあまり好みじゃないんだ。"),
+                    ("It's a great film, just not my cup of tea.", "いい映画だけど、私の好みじゃない。")
+                 ], ipa: "/nɒt maɪ kˈʌp əv tˈiː/"),
+            make("I can't be bothered", "I don't have the energy or motivation to do it",
+                 "面倒くさい・やる気が出ない",
+                 useCases: ["気が乗らないことを正直に言うとき"],
+                 examples: [
+                    ("I can't be bothered to cook tonight. Shall we get a takeaway?", "今夜は料理する気になれない。テイクアウトにしない？"),
+                    ("He couldn't be bothered to reply.", "彼は返信すらしなかった。")
+                 ], ipa: "/aɪ kˈɑːnt biː bˈɒðəd/"),
+            make("I'm keen on", "I like or am very interested in",
+                 "〜が好き・〜に乗り気だ",
+                 useCases: ["好みや興味を伝えるとき", "誘いに乗り気かどうか聞くとき"],
+                 examples: [
+                    ("I'm not that keen on spicy food.", "辛い料理はそんなに好きじゃない。"),
+                    ("Are you keen to join us tonight?", "今夜一緒に来る気ある？")
+                 ], ipa: "/aɪm kˈiːn ɒn/"),
+            make("faff about", "waste time doing unimportant things (British, informal)",
+                 "ダラダラ手間取る・もたもたする",
+                 useCases: ["要領悪く時間を無駄にしている様子を言うとき"],
+                 examples: [
+                    ("Stop faffing about and get ready, we're late!", "もたもたしてないで準備して、遅れてるよ！"),
+                    ("It was a bit of a faff getting the visa.", "ビザを取るのはちょっと面倒だった。")
+                 ], ipa: "/fˈæf əbˈaʊt/"),
+            make("I'm a bit peckish", "slightly hungry",
+                 "ちょっと小腹が空いた",
+                 useCases: ["軽く何か食べたいとき"],
+                 examples: [
+                    ("I'm a bit peckish. Fancy grabbing a snack?", "ちょっと小腹が空いた。何かつままない？"),
+                    ("Feeling peckish? There's cake in the kitchen.", "お腹空いてる？台所にケーキあるよ。")
+                 ], ipa: "/aɪm ə bˈɪt pˈɛkɪʃ/"),
+            make("gobsmacked", "utterly astonished, speechless with surprise",
+                 "唖然とした・度肝を抜かれた",
+                 useCases: ["驚きで言葉が出ないとき"],
+                 examples: [
+                    ("I was absolutely gobsmacked when she said yes.", "彼女がOKしてくれて本当に唖然としたよ。"),
+                    ("We were gobsmacked by the view.", "その景色に言葉を失った。")
+                 ], ipa: "/ɡˈɒbsmækt/"),
+            make("you're having a laugh", "you must be joking (British, informal)",
+                 "冗談でしょ・ふざけてるの？",
+                 useCases: ["信じられない値段や話を聞いたとき"],
+                 examples: [
+                    ("Twelve quid for a sandwich? You're having a laugh!", "サンドイッチ1つで12ポンド？冗談でしょ！"),
+                    ("He wants me to work Sunday? He's having a laugh.", "日曜に働けって？ふざけてるよ。")
+                 ], ipa: "/jɔːɹ hˈævɪŋ ə lˈɑːf/"),
+            make("it's chucking it down", "it's raining very heavily (British, informal)",
+                 "土砂降りだ",
+                 useCases: ["天気の話をするとき"],
+                 examples: [
+                    ("Take a brolly, it's chucking it down out there.", "傘持っていきな、外は土砂降りだよ。"),
+                    ("It chucked it down all weekend.", "週末ずっと土砂降りだった。")
+                 ], ipa: "/ɪts tʃˈʌkɪŋ ɪt dˈaʊn/"),
+            make("at a loose end", "having nothing in particular to do",
+                 "暇を持て余している",
+                 useCases: ["予定がなくて暇なことを伝えるとき", "人を誘うとき"],
+                 examples: [
+                    ("If you're at a loose end on Saturday, come round.", "土曜に暇なら、うちにおいでよ。"),
+                    ("I was at a bit of a loose end, so I went for a walk.", "ちょっと暇だったから散歩に行った。")
+                 ], ipa: "/æt ə lˈuːs ˈɛnd/"),
+            make("suits me", "that arrangement works well for me",
+                 "それでいいよ・都合いい",
+                 useCases: ["提案や予定に同意するとき"],
+                 examples: [
+                    ("Seven o'clock at the pub? Suits me.", "7時にパブ？それでいいよ。"),
+                    ("Does Thursday suit you?", "木曜は都合いい？")
+                 ], ipa: "/sˈuːts mˌiː/"),
+            make("touch wood", "said to avoid bad luck after saying something positive",
+                 "このまま運が続きますように",
+                 useCases: ["良い状況を話した後に縁起担ぎとして"],
+                 examples: [
+                    ("I haven't had a cold all winter, touch wood.", "この冬は一度も風邪ひいてない、このまま続くといいけど。"),
+                    ("Touch wood, the car's been fine so far.", "今のところ車は調子いいよ、このままでありますように。")
+                 ], ipa: "/tˈʌtʃ wˈʊd/"),
+            make("it does my head in", "it really annoys or confuses me (British, informal)",
+                 "イライラする・頭がおかしくなりそう",
+                 useCases: ["うんざりしていることを言うとき"],
+                 examples: [
+                    ("That ringtone really does my head in.", "あの着信音、本当にイライラする。"),
+                    ("All this paperwork is doing my head in.", "この書類仕事で頭がおかしくなりそう。")
+                 ], ipa: "/ɪt dˈʌz maɪ hˈɛd ˈɪn/")
         ]
     }
 }
