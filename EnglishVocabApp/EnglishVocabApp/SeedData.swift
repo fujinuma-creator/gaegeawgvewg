@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71
+            + britishColloquial70 + britishColloquial71 + britishColloquial72
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26096,6 +26096,116 @@ enum SeedData {
                     ("The motorway was chock-a-block this morning.", "今朝は高速がびっしり渋滞してた。"),
                     ("The pub was chock-a-block, so we went somewhere else.", "パブが満員だったから別の店に行った。")
                  ], ipa: "/tʃˌɒk ə blˈɒk/")
+        ]
+    }
+
+    private static var britishColloquial72: [Word] {
+        [
+            make("crack on", "get on with something; continue working (British, informal)",
+                 "（作業などを）さっさと始める・続ける",
+                 useCases: ["話を切り上げて作業に戻るとき"],
+                 examples: [
+                    ("Right, let's crack on — we've got loads to do.", "よし、さっさと始めよう。やることが山ほどあるから。"),
+                    ("I'll leave you to crack on with it.", "じゃあ、あとは任せるから進めてね。")
+                 ], ipa: "/kɹˈæk ɒn/"),
+            make("bang on about", "talk about something repeatedly and boringly (British, informal)",
+                 "（同じ話を）くどくど言う・延々と話す",
+                 useCases: ["誰かが同じ話ばかりするのを言うとき"],
+                 examples: [
+                    ("He keeps banging on about his new car.", "彼は新しい車の話ばっかりしてる。"),
+                    ("Sorry, I'm banging on about work again.", "ごめん、また仕事の話ばかりしちゃって。")
+                 ], ipa: "/bˈæŋ ɒn əbˈaʊt/"),
+            make("have a lie-in", "stay in bed later than usual in the morning (British, informal)",
+                 "朝寝坊する・ゆっくり寝る",
+                 useCases: ["休日にゆっくり寝ることを言うとき"],
+                 examples: [
+                    ("I'm going to have a lie-in on Saturday.", "土曜日はゆっくり寝るつもり。"),
+                    ("Did you manage to have a lie-in this morning?", "今朝はゆっくり寝られた？")
+                 ], ipa: "/hæv ə lˈaɪ ɪn/"),
+            make("on the cards", "likely to happen (British, informal)",
+                 "ありそうな・起こりそうな",
+                 useCases: ["今後の可能性について話すとき"],
+                 examples: [
+                    ("A move to Berlin might be on the cards for us.", "ベルリンへの引っ越しもあり得るかも。"),
+                    ("Rain is on the cards for the weekend.", "週末は雨になりそうだ。")
+                 ], ipa: "/ɒn ðə kˈɑːdz/"),
+            make("it's not rocket science", "it's not difficult to understand or do",
+                 "そんなに難しいことじゃない",
+                 useCases: ["簡単だと相手を励ます・あきれるとき"],
+                 examples: [
+                    ("Just follow the instructions — it's not rocket science.", "説明書どおりにやればいいだけ。難しくないよ。"),
+                    ("Cooking pasta isn't exactly rocket science.", "パスタを茹でるのは別に難しいことじゃない。")
+                 ], ipa: "/ɪts nɒt ɹˈɒkɪt sˈaɪəns/"),
+            make("good shout", "a good idea or suggestion (British, informal)",
+                 "いい考え・ナイス提案",
+                 useCases: ["相手の提案に賛成するとき"],
+                 examples: [
+                    ("\"Shall we book a table first?\" \"Good shout.\"", "「先に席を予約しとく？」「それいいね。」"),
+                    ("Bringing an umbrella was a good shout.", "傘を持ってきたのは正解だったね。")
+                 ], ipa: "/ɡʊd ʃˈaʊt/"),
+            make("bear with me", "please be patient with me for a moment",
+                 "少々お待ちください・ちょっと待ってね",
+                 useCases: ["探し物や準備で少し待ってほしいとき"],
+                 examples: [
+                    ("Bear with me, I'm just finding the file.", "ちょっと待ってね、今ファイルを探してるから。"),
+                    ("If you bear with me a second, I'll check.", "少々お待ちいただければ確認します。")
+                 ], ipa: "/bˈeə wɪð miː/"),
+            make("fair play", "well done; credit to someone (British, informal)",
+                 "やるじゃん・それは認めるよ",
+                 useCases: ["相手の努力や行動を認めて褒めるとき"],
+                 examples: [
+                    ("You ran the whole marathon? Fair play to you!", "マラソン完走したの？すごいじゃん！"),
+                    ("Fair play, he did apologise in the end.", "まあ、最終的に彼が謝ったのは認めるよ。")
+                 ], ipa: "/fˈeə plˈeɪ/"),
+            make("I'm not fussed", "I don't mind; it doesn't matter to me (British, informal)",
+                 "どっちでもいいよ・こだわらない",
+                 useCases: ["選択肢にこだわりがないと伝えるとき"],
+                 examples: [
+                    ("Pizza or curry? I'm not fussed.", "ピザかカレー？どっちでもいいよ。"),
+                    ("I'm not really fussed about going out tonight.", "今夜は出かけなくても別にいいかな。")
+                 ], ipa: "/aɪm nɒt fˈʌst/"),
+            make("on the mend", "recovering from an illness or injury",
+                 "快方に向かっている・回復中",
+                 useCases: ["体調が良くなってきたことを伝えるとき"],
+                 examples: [
+                    ("I had a bad cold, but I'm on the mend now.", "ひどい風邪だったけど、今は良くなってきてる。"),
+                    ("Glad to hear your mum's on the mend.", "お母さんが回復に向かってるって聞いて安心したよ。")
+                 ], ipa: "/ɒn ðə mˈɛnd/"),
+            make("sleep on it", "wait until the next day before deciding",
+                 "一晩考える・即決しない",
+                 useCases: ["すぐ決めずに考える時間がほしいとき"],
+                 examples: [
+                    ("It's a big decision — let me sleep on it.", "大きな決断だから、一晩考えさせて。"),
+                    ("Why don't you sleep on it and tell me tomorrow?", "一晩考えて明日教えてくれる？")
+                 ], ipa: "/slˈiːp ɒn ɪt/"),
+            make("give it a miss", "decide not to do or attend something (British, informal)",
+                 "やめておく・パスする",
+                 useCases: ["誘いや予定を断るとき"],
+                 examples: [
+                    ("I think I'll give the party a miss tonight.", "今夜のパーティーはパスしようかな。"),
+                    ("The film got bad reviews, so we gave it a miss.", "映画の評判が悪かったので見るのはやめた。")
+                 ], ipa: "/ɡˈɪv ɪt ə mˈɪs/"),
+            make("get the hang of", "learn how to do something through practice",
+                 "コツをつかむ・慣れる",
+                 useCases: ["新しいことに慣れてきたとき"],
+                 examples: [
+                    ("You'll get the hang of it after a few tries.", "何回かやればコツがつかめるよ。"),
+                    ("I'm finally getting the hang of driving on the left.", "やっと左側通行に慣れてきた。")
+                 ], ipa: "/ɡɛt ðə hˈæŋ əv/"),
+            make("pull someone's leg", "joke with someone by telling them something untrue",
+                 "からかう・冗談を言う",
+                 useCases: ["相手の話が本当か疑うとき"],
+                 examples: [
+                    ("Are you pulling my leg? You've really met him?", "からかってるの？本当に彼に会ったの？"),
+                    ("Relax, I'm only pulling your leg.", "落ち着いて、冗談だよ。")
+                 ], ipa: "/pˈʊl sˈʌmwʌnz lˈɛɡ/"),
+            make("count me in", "include me; I want to take part",
+                 "私も参加する・乗った",
+                 useCases: ["誘いに乗るとき"],
+                 examples: [
+                    ("Drinks after work? Count me in!", "仕事の後に飲み？私も行く！"),
+                    ("If you're doing a quiz team, count me in.", "クイズのチームを作るなら、私も入れて。")
+                 ], ipa: "/kˈaʊnt miː ˈɪn/")
         ]
     }
 }
