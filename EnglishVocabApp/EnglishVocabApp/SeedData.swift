@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26426,6 +26426,116 @@ enum SeedData {
                     ("The meeting starts at nine on the dot.", "会議は9時きっかりに始まるよ。"),
                     ("She arrived at seven on the dot, as always.", "彼女はいつも通り7時ちょうどに来た。")
                  ], ipa: "/ɒn ðə dˈɒt/")
+        ]
+    }
+
+    private static var britishColloquial75: [Word] {
+        [
+            make("take your time", "there's no need to hurry",
+                 "ゆっくりでいいよ・急がなくていいよ",
+                 useCases: ["相手に急がなくていいと伝えるとき"],
+                 examples: [
+                    ("No rush — take your time with the menu.", "急がないから、メニューはゆっくり見てね。"),
+                    ("Take your time, I'll wait in the car.", "ゆっくりでいいよ、車で待ってるから。")
+                 ], ipa: "/tˈeɪk jɔː tˈaɪm/"),
+            make("help yourself", "take as much as you like without asking",
+                 "ご自由にどうぞ・遠慮なく取って",
+                 useCases: ["食べ物や飲み物を自由に取ってと勧めるとき"],
+                 examples: [
+                    ("There's tea in the kitchen — help yourself.", "キッチンに紅茶があるから、自由に飲んでね。"),
+                    ("Help yourself to more cake.", "ケーキ、遠慮なくもっと取ってね。")
+                 ], ipa: "/hˈɛlp jɔːsˈɛlf/"),
+            make("go halves", "share the cost of something equally (British, informal)",
+                 "割り勘にする・半分ずつ払う",
+                 useCases: ["費用を二人で半分ずつ払おうと提案するとき"],
+                 examples: [
+                    ("Shall we go halves on the taxi?", "タクシー代、半分ずつにしない？"),
+                    ("We went halves on a present for Mum.", "母へのプレゼントは割り勘にしたんだ。")
+                 ], ipa: "/ɡˈəʊ hˈɑːvz/"),
+            make("on the off chance", "just in case; hoping something might be possible",
+                 "もしかしたらと思って・ダメ元で",
+                 useCases: ["可能性は低いけど一応試してみたと言うとき"],
+                 examples: [
+                    ("I popped by on the off chance you'd be in.", "もしかしたら家にいるかなと思って寄ってみたんだ。"),
+                    ("I called on the off chance they had a table free.", "ダメ元で席が空いてるか電話してみた。")
+                 ], ipa: "/ɒn ðə ˈɒf tʃˈɑːns/"),
+            make("have a word with", "speak to someone briefly, often about a problem",
+                 "〜とちょっと話す・〜に一言言う",
+                 useCases: ["問題について誰かと少し話をするとき"],
+                 examples: [
+                    ("Can I have a word with you after the meeting?", "会議のあと、ちょっと話せる？"),
+                    ("I'll have a word with the neighbours about the noise.", "騒音のこと、お隣さんに一言言っておくよ。")
+                 ], ipa: "/hæv ə wˈɜːd wɪð/"),
+            make("worth a shot", "worth trying even if it might not work",
+                 "やってみる価値はある",
+                 useCases: ["うまくいくかわからないけど試そうと言うとき"],
+                 examples: [
+                    ("I doubt they'll say yes, but it's worth a shot.", "OKしてくれるか怪しいけど、やってみる価値はあるよ。"),
+                    ("Ask for a discount — it's worth a shot.", "値引き頼んでみなよ、ダメ元でさ。")
+                 ], ipa: "/wˈɜːθ ə ʃˈɒt/"),
+            make("I'm all ears", "I'm listening carefully and eager to hear",
+                 "ぜひ聞かせて・聞く気満々だよ",
+                 useCases: ["相手の話や提案を聞きたいと伝えるとき"],
+                 examples: [
+                    ("You've got a better idea? I'm all ears.", "もっといい案があるの？ぜひ聞かせて。"),
+                    ("Go on, tell me what happened — I'm all ears.", "ほら、何があったか話して、ちゃんと聞くから。")
+                 ], ipa: "/aɪm ˈɔːl ˈɪəz/"),
+            make("get on my nerves", "annoy or irritate me",
+                 "イライラさせる・神経に障る",
+                 useCases: ["人や物事にイライラしていると話すとき"],
+                 examples: [
+                    ("That ringtone is really getting on my nerves.", "あの着信音、ほんとイライラする。"),
+                    ("He's nice, but he gets on my nerves sometimes.", "彼はいい人だけど、時々イラッとする。")
+                 ], ipa: "/ɡɛt ɒn maɪ nˈɜːvz/"),
+            make("drop me a line", "write or message me (informal)",
+                 "連絡してね・一言メッセージちょうだい",
+                 useCases: ["気軽に連絡してほしいと伝えるとき"],
+                 examples: [
+                    ("Drop me a line when you get to Paris.", "パリに着いたら一言連絡してね。"),
+                    ("If you have any questions, just drop me a line.", "何か質問があれば気軽に連絡して。")
+                 ], ipa: "/drˈɒp miː ə lˈaɪn/"),
+            make("feel rough", "feel ill or unwell, often tired or hungover (British, informal)",
+                 "体調が悪い・しんどい",
+                 useCases: ["風邪や二日酔いで調子が悪いと言うとき"],
+                 examples: [
+                    ("I feel a bit rough today — I think I'm coming down with something.", "今日ちょっと体調悪いんだ、何かひきかけてるかも。"),
+                    ("You look rough. Late night?", "しんどそうだね。夜更かしした？")
+                 ], ipa: "/fˈiːl rˈʌf/"),
+            make("it's not the end of the world", "it's not as bad as it seems",
+                 "この世の終わりじゃない・大したことないよ",
+                 useCases: ["失敗した人を励ますとき"],
+                 examples: [
+                    ("You missed the train — it's not the end of the world.", "電車に乗り遅れたって、この世の終わりじゃないよ。"),
+                    ("If we lose, it's not the end of the world.", "負けても大したことじゃないさ。")
+                 ], ipa: "/ɪts nˈɒt ði ˈɛnd əv ðə wˈɜːld/"),
+            make("running late", "behind schedule; going to arrive late",
+                 "遅れている・遅れそう",
+                 useCases: ["待ち合わせに遅れると連絡するとき"],
+                 examples: [
+                    ("Sorry, I'm running about ten minutes late.", "ごめん、10分くらい遅れそう。"),
+                    ("The doctor's running late this morning.", "今朝は先生の診察が押してるんだ。")
+                 ], ipa: "/rˈʌnɪŋ lˈeɪt/"),
+            make("be spoilt for choice", "have so many good options it's hard to choose (British)",
+                 "選択肢が多すぎて迷う",
+                 useCases: ["良い選択肢がたくさんあって選べないとき"],
+                 examples: [
+                    ("There are so many restaurants here — you're spoilt for choice.", "ここはレストランがたくさんあって、選び放題だね。"),
+                    ("I was spoilt for choice at the bakery.", "パン屋で目移りして選べなかったよ。")
+                 ], ipa: "/bi spˈɔɪlt fə tʃˈɔɪs/"),
+            make("have a think", "think about something for a while (British, informal)",
+                 "ちょっと考えてみる",
+                 useCases: ["すぐ答えずに少し考えると伝えるとき"],
+                 examples: [
+                    ("Let me have a think and get back to you.", "ちょっと考えてから折り返すね。"),
+                    ("Have a think about it over the weekend.", "週末にでも考えてみて。")
+                 ], ipa: "/hæv ə θˈɪŋk/"),
+            make("be dying for", "want something very much (informal)",
+                 "〜が欲しくてたまらない",
+                 useCases: ["何かがすごく欲しいと大げさに言うとき"],
+                 examples: [
+                    ("I'm dying for a cup of tea.", "紅茶が飲みたくてたまらない。"),
+                    ("We're all dying for a holiday.", "みんな休暇が欲しくてしょうがないよ。")
+                 ], ipa: "/bi dˈaɪɪŋ fɔː/")
         ]
     }
 }
