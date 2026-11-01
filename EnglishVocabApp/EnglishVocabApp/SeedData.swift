@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70
+            + britishColloquial70 + britishColloquial71
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -25986,6 +25986,116 @@ enum SeedData {
                     ("That ringtone really does my head in.", "あの着信音、本当にイライラする。"),
                     ("All this paperwork is doing my head in.", "この書類仕事で頭がおかしくなりそう。")
                  ], ipa: "/ɪt dˈʌz maɪ hˈɛd ˈɪn/")
+        ]
+    }
+
+    private static var britishColloquial71: [Word] {
+        [
+            make("bits and bobs", "various small items or things (British, informal)",
+                 "こまごましたもの・あれこれ",
+                 useCases: ["細かい物や用事をまとめて言うとき"],
+                 examples: [
+                    ("I just need to grab a few bits and bobs from the shop.", "お店でちょっとしたものをいくつか買ってくるね。"),
+                    ("I've got some bits and bobs to sort out this afternoon.", "午後はこまごました用事を片付けないと。")
+                 ], ipa: "/bˈɪts ən bˈɒbz/"),
+            make("go pear-shaped", "go wrong; fail badly (British, informal)",
+                 "（計画などが）おかしくなる・失敗する",
+                 useCases: ["予定や計画がうまくいかなかったとき"],
+                 examples: [
+                    ("Everything went pear-shaped when the car broke down.", "車が故障して全部ダメになった。"),
+                    ("The party went a bit pear-shaped after midnight.", "真夜中を過ぎてパーティーはちょっと荒れた。")
+                 ], ipa: "/ɡəʊ pˈeə ʃeɪpt/"),
+            make("a doddle", "something very easy to do (British, informal)",
+                 "朝飯前・楽勝",
+                 useCases: ["簡単だと安心させるとき"],
+                 examples: [
+                    ("Don't worry, the exam was a doddle.", "心配いらないよ、試験は楽勝だった。"),
+                    ("Setting it up is a doddle, honestly.", "設定は本当に簡単だよ。")
+                 ], ipa: "/ə dˈɒdəl/"),
+            make("have a natter", "have a long, casual chat (British, informal)",
+                 "おしゃべりする・世間話をする",
+                 useCases: ["友人と気軽に話す約束をするとき"],
+                 examples: [
+                    ("Pop round for a cuppa and we'll have a natter.", "お茶しに寄ってよ、おしゃべりしよう。"),
+                    ("We had a good natter on the phone last night.", "昨夜は電話でたっぷりおしゃべりした。")
+                 ], ipa: "/hæv ə nˈætə/"),
+            make("keep your hair on", "calm down; don't get angry (British, informal)",
+                 "落ち着いて・カッカしないで",
+                 useCases: ["相手が怒りかけているのをなだめるとき"],
+                 examples: [
+                    ("Keep your hair on, I'm only five minutes late!", "落ち着いてよ、たった5分遅れただけでしょ！"),
+                    ("All right, keep your hair on, I'll do it now.", "わかった、そんなに怒らないで、今やるから。")
+                 ], ipa: "/kiːp jɔː hˈeə ɒn/"),
+            make("throw a wobbly", "suddenly become very upset or angry (British, informal)",
+                 "かんしゃくを起こす・キレる",
+                 useCases: ["誰かが急に怒り出した様子を言うとき"],
+                 examples: [
+                    ("He threw a wobbly when they lost his luggage.", "荷物をなくされて彼はキレた。"),
+                    ("The kids threw a wobbly at bedtime again.", "子どもたちがまた寝る時間にぐずった。")
+                 ], ipa: "/θɹəʊ ə wˈɒbli/"),
+            make("lose the plot", "become confused or irrational; go a bit crazy (British, informal)",
+                 "わけがわからなくなる・頭がおかしくなる",
+                 useCases: ["混乱や疲れでまともでなくなった様子を言うとき"],
+                 examples: [
+                    ("I think I'm losing the plot — I've put my keys in the fridge.", "頭がおかしくなってきたかも、鍵を冷蔵庫に入れちゃった。"),
+                    ("He completely lost the plot when he heard the news.", "その知らせを聞いて彼は完全に取り乱した。")
+                 ], ipa: "/luːz ðə plˈɒt/"),
+            make("on the blink", "not working properly (British, informal)",
+                 "（機械が）調子が悪い・壊れかけている",
+                 useCases: ["家電や機械の不調を言うとき"],
+                 examples: [
+                    ("The telly's on the blink again.", "テレビがまた調子悪いんだ。"),
+                    ("Sorry, my phone's been on the blink all week.", "ごめん、今週ずっと携帯の調子が悪くて。")
+                 ], ipa: "/ɒn ðə blˈɪŋk/"),
+            make("budge up", "move along to make space for someone (British, informal)",
+                 "（座席などを）詰めて",
+                 useCases: ["ソファやベンチで場所を空けてもらうとき"],
+                 examples: [
+                    ("Budge up a bit so I can sit down.", "座れるようにちょっと詰めて。"),
+                    ("If everyone budges up, we'll all fit.", "みんなで詰めれば全員座れるよ。")
+                 ], ipa: "/bˈʌdʒ ˈʌp/"),
+            make("jammy", "very lucky, often undeservedly (British, informal)",
+                 "ついてる・運がいい",
+                 useCases: ["相手の幸運を軽くからかうとき"],
+                 examples: [
+                    ("You jammy thing, you won again!", "ついてるなあ、また勝ったの！"),
+                    ("That was a jammy goal, to be fair.", "正直、あれはラッキーなゴールだったね。")
+                 ], ipa: "/dʒˈæmi/"),
+            make("hunky-dory", "fine; going well with no problems",
+                 "順調・万事OK",
+                 useCases: ["問題がないと伝えるとき"],
+                 examples: [
+                    ("Everything's hunky-dory at work at the moment.", "今のところ仕事は万事順調だよ。"),
+                    ("Once the tickets are booked, it'll all be hunky-dory.", "チケットさえ取れば、あとは全部OK。")
+                 ], ipa: "/hˌʌŋki dˈɔːɹi/"),
+            make("a bit of a kerfuffle", "a fuss or commotion, usually over something minor",
+                 "ちょっとした騒ぎ・ひと悶着",
+                 useCases: ["小さなトラブルや混乱を説明するとき"],
+                 examples: [
+                    ("There was a bit of a kerfuffle at the check-in desk.", "チェックインカウンターでちょっとした騒ぎがあった。"),
+                    ("Sorry about the kerfuffle earlier.", "さっきはバタバタしてごめんね。")
+                 ], ipa: "/ə bˈɪt əv ə kəfˈʌfəl/"),
+            make("sod's law", "the idea that if something can go wrong, it will (British, informal)",
+                 "マーフィーの法則・お決まりの不運",
+                 useCases: ["タイミング悪く不運が起きたとき"],
+                 examples: [
+                    ("It's sod's law — the bus came as soon as I started walking.", "お決まりだよ、歩き出した途端にバスが来た。"),
+                    ("Sod's law it rained on the one day I forgot my brolly.", "傘を忘れた日に限って雨が降るんだよね。")
+                 ], ipa: "/sˈɒdz lˈɔː/"),
+            make("pull a sickie", "pretend to be ill to take a day off work (British, informal)",
+                 "仮病で休む・ずる休みする",
+                 useCases: ["仕事や学校をずる休みする話をするとき"],
+                 examples: [
+                    ("He pulled a sickie to watch the match.", "彼は試合を観るために仮病で休んだ。"),
+                    ("I'm tempted to pull a sickie on Friday.", "金曜はずる休みしたい気分だよ。")
+                 ], ipa: "/pʊl ə sˈɪki/"),
+            make("chock-a-block", "completely full; very crowded (British, informal)",
+                 "ぎゅうぎゅう詰め・すごく混んでいる",
+                 useCases: ["店や道路の混雑を言うとき"],
+                 examples: [
+                    ("The motorway was chock-a-block this morning.", "今朝は高速がびっしり渋滞してた。"),
+                    ("The pub was chock-a-block, so we went somewhere else.", "パブが満員だったから別の店に行った。")
+                 ], ipa: "/tʃˌɒk ə blˈɒk/")
         ]
     }
 }
