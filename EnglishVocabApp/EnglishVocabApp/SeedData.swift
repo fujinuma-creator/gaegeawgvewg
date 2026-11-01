@@ -26913,13 +26913,13 @@ enum SeedData {
                     ("After you. — Oh, thanks very much.", "お先にどうぞ。—あ、どうもありがとう。"),
                     ("He held the door and said, \"After you.\"", "彼はドアを押さえて「お先にどうぞ」と言った。")
                  ], ipa: "/ˈɑːftə juː/"),
-            make("cutting it fine", "leaving very little time to spare",
-                 "ギリギリだね・時間に余裕がない",
-                 useCases: ["時間ぎりぎりで間に合うかどうかの状況のとき"],
+            make("think nothing of it", "it was no trouble at all (reply to thanks)",
+                 "どういたしまして・お安い御用です",
+                 useCases: ["お礼を言われて、大したことではないと返すとき"],
                  examples: [
-                    ("The flight's at nine and we're leaving at seven? That's cutting it fine.", "飛行機9時なのに7時出発？ギリギリだよ。"),
-                    ("You made it! You were cutting it a bit fine, though.", "間に合ったね！ちょっとギリギリだったけど。")
-                 ], ipa: "/kˈʌtɪŋ ɪt fˈaɪn/"),
+                    ("Thanks so much for the lift. — Think nothing of it.", "送ってくれて本当にありがとう。—全然いいよ。"),
+                    ("I really appreciate your help. — Oh, think nothing of it!", "助けてくれて本当に感謝してる。—いやいや、お安い御用だよ！")
+                 ], ipa: "/θˈɪŋk nˈʌθɪŋ əv ɪt/"),
             make("on the house", "free, paid for by the restaurant or bar",
                  "店のおごり・サービスです",
                  useCases: ["お店が無料で何かを提供してくれるとき"],
