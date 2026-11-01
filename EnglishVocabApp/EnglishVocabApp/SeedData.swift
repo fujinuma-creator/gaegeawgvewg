@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27306,6 +27306,116 @@ enum SeedData {
                     ("How was the restaurant? — It was OK, nothing to write home about.", "レストランどうだった？—まあまあ、大したことなかったよ。"),
                     ("The weather was nothing to write home about.", "天気はパッとしなかったね。")
                  ], ipa: "/nˈʌθɪŋ tə rˈaɪt hˈəʊm əbˈaʊt/")
+        ]
+    }
+
+    private static var britishColloquial83: [Word] {
+        [
+            make("be fond of", "to like someone or something a lot, often with affection",
+                 "〜が好きだ・〜に愛着がある",
+                 useCases: ["人や物への温かい好意を伝えるとき（likeより柔らかく情がこもる）"],
+                 examples: [
+                    ("I've always been fond of my gran's cooking.", "おばあちゃんの料理がずっと大好きなんだ。"),
+                    ("She's very fond of you, you know.", "彼女、あなたのことすごく気に入ってるんだよ。")
+                 ], ipa: "/biː fˈɒnd ɒv/"),
+            make("what are you on about?", "what are you talking about? (said when something sounds silly or confusing)",
+                 "何言ってんの？・何の話？",
+                 useCases: ["相手の発言が意味不明・おかしいと感じたとき（親しい間柄で）"],
+                 examples: [
+                    ("What are you on about? I never said that!", "何言ってんの？そんなこと言ってないよ！"),
+                    ("Sorry, what's he on about?", "ごめん、彼何の話してるの？")
+                 ], ipa: "/wˈɒt ɑː juː ˈɒn əbˈaʊt/"),
+            make("I don't blame you", "I understand why you did or feel that; it's reasonable",
+                 "無理もないよ・そりゃそうだよね",
+                 useCases: ["相手の気持ちや行動に理解・共感を示すとき"],
+                 examples: [
+                    ("I left the party early. — I don't blame you, it was dead boring.", "パーティー早めに抜けたんだ。—無理もないよ、すごく退屈だったし。"),
+                    ("If you want to quit, I wouldn't blame you.", "辞めたいって言っても責めないよ。")
+                 ], ipa: "/aɪ dˈəʊnt blˈeɪm juː/"),
+            make("mull it over", "to think carefully about something before deciding",
+                 "じっくり考える・検討する",
+                 useCases: ["すぐに決めず考える時間がほしいとき"],
+                 examples: [
+                    ("Let me mull it over and get back to you.", "ちょっと考えさせて、また連絡するね。"),
+                    ("I've been mulling over your offer.", "あなたの提案についてずっと考えてたんだ。")
+                 ], ipa: "/mˈʌl ɪt ˈəʊvə/"),
+            make("cut it fine", "to leave very little time to do something",
+                 "ギリギリになる・時間に余裕がない",
+                 useCases: ["時間ギリギリの行動について言うとき"],
+                 examples: [
+                    ("Leaving at eight is cutting it a bit fine, isn't it?", "8時に出るのはちょっとギリギリじゃない？"),
+                    ("We made the flight, but we cut it fine.", "飛行機には間に合ったけど、ギリギリだったよ。")
+                 ], ipa: "/kˈʌt ɪt fˈaɪn/"),
+            make("loads of", "a lot of, lots of (informal)",
+                 "たくさんの・山ほどの",
+                 useCases: ["a lot of のくだけた言い方として日常会話で"],
+                 examples: [
+                    ("There were loads of people at the market.", "市場にはすごい人がいたよ。"),
+                    ("Don't worry, we've got loads of time.", "大丈夫、時間はたっぷりあるから。")
+                 ], ipa: "/lˈəʊdz ɒv/"),
+            make("spill the beans", "to tell a secret or reveal information",
+                 "秘密をばらす・白状する",
+                 useCases: ["秘密や内緒の話を聞き出す・漏らすとき"],
+                 examples: [
+                    ("Come on, spill the beans — who's the new boyfriend?", "ほら白状しなよ、新しい彼氏って誰？"),
+                    ("Don't spill the beans about the surprise party!", "サプライズパーティーのことバラさないでね！")
+                 ], ipa: "/spˈɪl ðə bˈiːnz/"),
+            make("get on well with", "to have a friendly relationship with someone",
+                 "〜と仲がいい・うまくやっている",
+                 useCases: ["人間関係が良好だと言うとき（イギリス英語で特によく使う）"],
+                 examples: [
+                    ("I get on really well with my flatmates.", "シェアメイトとはすごく仲いいんだ。"),
+                    ("Do you get on well with your boss?", "上司とはうまくいってる？")
+                 ], ipa: "/ɡɛt ˈɒn wˈɛl wɪð/"),
+            make("that's a bit rich", "said when someone criticises others for something they do themselves",
+                 "よく言うよ・あなたが言う？",
+                 useCases: ["自分を棚に上げた発言に軽くツッコむとき"],
+                 examples: [
+                    ("He called me lazy? That's a bit rich coming from him!", "僕を怠け者だって？あいつがよく言うよ！"),
+                    ("That's a bit rich — you're always late too.", "よく言うね、君だっていつも遅刻してるじゃん。")
+                 ], ipa: "/ðæts ə bˈɪt rˈɪtʃ/"),
+            make("I could murder a", "I really want (food or drink) right now (humorous British)",
+                 "〜がめちゃくちゃ欲しい・〜が飲みたくて（食べたくて）たまらない",
+                 useCases: ["強烈に食べたい・飲みたいものがあるとき（冗談っぽく）"],
+                 examples: [
+                    ("I could murder a cup of tea right now.", "今めちゃくちゃ紅茶飲みたい。"),
+                    ("After that walk, I could murder a burger.", "あれだけ歩いたら、ハンバーガーが食べたくてたまらない。")
+                 ], ipa: "/aɪ kʊd mˈɜːdər ə/"),
+            make("dead easy", "very easy (informal British)",
+                 "めっちゃ簡単・楽勝",
+                 useCases: ["とても簡単だと強調するとき（dead＝very のくだけた言い方）"],
+                 examples: [
+                    ("The recipe's dead easy — you'll love it.", "そのレシピめっちゃ簡単だよ、きっと気に入る。"),
+                    ("Don't worry, the test was dead easy.", "心配ないよ、テスト楽勝だったから。")
+                 ], ipa: "/dˈɛd ˈiːzi/"),
+            make("I've had enough", "I can't tolerate this any more; I want to stop",
+                 "もううんざり・もう限界",
+                 useCases: ["我慢の限界・もうやめたい気持ちを伝えるとき"],
+                 examples: [
+                    ("I've had enough of this rain — I need some sun!", "この雨もううんざり、太陽が恋しい！"),
+                    ("That's it, I've had enough. I'm going home.", "もういい、限界。帰るね。")
+                 ], ipa: "/aɪv hˈæd ɪnˈʌf/"),
+            make("we'll see", "we'll decide or find out later (often a polite non-committal answer)",
+                 "様子を見よう・どうなるかな",
+                 useCases: ["はっきり約束せずに返事を保留するとき"],
+                 examples: [
+                    ("Can we go to the beach tomorrow? — We'll see.", "明日ビーチ行ける？—様子見てだね。"),
+                    ("He says he'll be on time. We'll see!", "時間通りに来るって言ってるけど、どうだかね！")
+                 ], ipa: "/wiːl sˈiː/"),
+            make("beats me", "I have no idea; I don't know",
+                 "さっぱりわからない・知らないよ",
+                 useCases: ["質問の答えが全くわからないとき（くだけた返事）"],
+                 examples: [
+                    ("Why did he leave so early? — Beats me.", "なんで彼あんなに早く帰ったの？—さあね。"),
+                    ("It beats me how she does it all.", "彼女がどうやって全部こなしてるのか、さっぱりわからない。")
+                 ], ipa: "/bˈiːts miː/"),
+            make("I haven't got a clue", "I have absolutely no idea",
+                 "全然わからない・見当もつかない",
+                 useCases: ["全く知らない・わからないと強調するとき"],
+                 examples: [
+                    ("Where are my keys? — I haven't got a clue, sorry.", "鍵どこ？—全然わからない、ごめん。"),
+                    ("I haven't got a clue what this word means.", "この単語の意味、見当もつかないよ。")
+                 ], ipa: "/aɪ hˈævənt ɡɒt ə klˈuː/")
         ]
     }
 }
