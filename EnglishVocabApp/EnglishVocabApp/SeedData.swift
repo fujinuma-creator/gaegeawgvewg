@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -26206,6 +26206,116 @@ enum SeedData {
                     ("Drinks after work? Count me in!", "仕事の後に飲み？私も行く！"),
                     ("If you're doing a quiz team, count me in.", "クイズのチームを作るなら、私も入れて。")
                  ], ipa: "/kˈaʊnt miː ˈɪn/")
+        ]
+    }
+
+    private static var britishColloquial73: [Word] {
+        [
+            make("could do with", "would like or need something (British, informal)",
+                 "〜が欲しい・〜があると助かる",
+                 useCases: ["今欲しいもの・必要なものをやわらかく言うとき"],
+                 examples: [
+                    ("I could do with a coffee right now.", "今コーヒーが飲みたいな。"),
+                    ("This room could do with a bit of tidying.", "この部屋、ちょっと片付けたほうがいいね。")
+                 ], ipa: "/kʊd dˈuː wɪð/"),
+            make("take the mick", "tease someone or make fun of them (British, informal)",
+                 "からかう・バカにする",
+                 useCases: ["冗談でからかわれたとき・相手が図々しいとき"],
+                 examples: [
+                    ("Are you taking the mick? That's my old jumper!", "からかってるの？それ私の古いセーターだよ！"),
+                    ("Stop taking the mick out of my accent.", "私の訛りをからかうのはやめて。")
+                 ], ipa: "/tˈeɪk ðə mˈɪk/"),
+            make("out of order", "(of behaviour) unfair or unacceptable (British, informal)",
+                 "（言動が）ひどい・ありえない",
+                 useCases: ["相手の言動が失礼・不公平だと指摘するとき"],
+                 examples: [
+                    ("What he said to you was totally out of order.", "彼があなたに言ったことは本当にひどいよ。"),
+                    ("Sorry, that was out of order of me.", "ごめん、今のは私が悪かった。")
+                 ], ipa: "/ˈaʊt əv ˈɔːdə/"),
+            make("wind someone up", "tease someone, often by pretending something is true (British, informal)",
+                 "（冗談で）からかう・かつぐ",
+                 useCases: ["冗談で嘘をつかれたか確かめるとき"],
+                 examples: [
+                    ("You're winding me up! Did you really quit?", "からかってるでしょ！本当に辞めたの？"),
+                    ("Don't worry, I'm only winding you up.", "心配しないで、ただの冗談だよ。")
+                 ], ipa: "/wˈaɪnd sˈʌmwʌn ˈʌp/"),
+            make("ring a bell", "sound familiar",
+                 "聞き覚えがある・ピンとくる",
+                 useCases: ["名前や話に聞き覚えがあるか話すとき"],
+                 examples: [
+                    ("Her name rings a bell, but I can't place her.", "彼女の名前は聞き覚えがあるけど、誰だか思い出せない。"),
+                    ("Does the name Tom Baker ring a bell?", "トム・ベイカーって名前、ピンとくる？")
+                 ], ipa: "/ɹˈɪŋ ə bˈɛl/"),
+            make("have a kip", "have a short sleep; take a nap (British, informal)",
+                 "ひと眠りする・仮眠する",
+                 useCases: ["疲れて少し寝たいとき"],
+                 examples: [
+                    ("I'm going to have a kip before dinner.", "夕食の前にちょっと寝てくる。"),
+                    ("He had a quick kip on the train.", "彼は電車でちょっと仮眠した。")
+                 ], ipa: "/hæv ə kˈɪp/"),
+            make("make a move", "leave; start going (informal)",
+                 "そろそろ帰る・おいとまする",
+                 useCases: ["その場を去ることを切り出すとき"],
+                 examples: [
+                    ("It's getting late — I'd better make a move.", "遅くなってきたから、そろそろ帰るね。"),
+                    ("Shall we make a move? The film starts at eight.", "そろそろ行こうか？映画は8時からだよ。")
+                 ], ipa: "/mˈeɪk ə mˈuːv/"),
+            make("no bother", "it's no trouble; you're welcome (British, informal)",
+                 "全然大丈夫・お安いご用",
+                 useCases: ["お礼やお願いに気軽に応えるとき"],
+                 examples: [
+                    ("\"Thanks for the lift.\" \"No bother.\"", "「送ってくれてありがとう。」「全然いいよ。」"),
+                    ("It's no bother at all — I was going that way anyway.", "全然手間じゃないよ。どうせそっちに行くところだったし。")
+                 ], ipa: "/nəʊ bˈɒðə/"),
+            make("put the kettle on", "boil water to make tea or coffee (British)",
+                 "お湯を沸かす（お茶にしよう）",
+                 useCases: ["お茶を勧める・一息つこうと言うとき"],
+                 examples: [
+                    ("Come in, I'll put the kettle on.", "入って、お茶入れるね。"),
+                    ("Can you put the kettle on while I unpack?", "荷物を出してる間にお湯を沸かしてくれる？")
+                 ], ipa: "/pʊt ðə kˈɛtəl ɒn/"),
+            make("a dab hand", "someone who is very good at something (British, informal)",
+                 "（〜の）名人・得意な人",
+                 useCases: ["誰かの得意なことをほめるとき"],
+                 examples: [
+                    ("My dad's a dab hand at fixing bikes.", "うちの父は自転車の修理がすごく得意なんだ。"),
+                    ("You're a dab hand in the kitchen!", "料理上手だね！")
+                 ], ipa: "/ə dˈæb hˈænd/"),
+            make("I'm easy", "I don't mind; either option is fine with me (informal)",
+                 "どっちでもいいよ・こだわらないよ",
+                 useCases: ["選択肢を相手に任せるとき"],
+                 examples: [
+                    ("\"Pizza or curry?\" \"I'm easy — you choose.\"", "「ピザとカレーどっちにする？」「どっちでもいいよ、決めて。」"),
+                    ("I'm easy about the time, whatever suits you.", "時間はこだわらないよ、都合のいい時で。")
+                 ], ipa: "/aɪm ˈiːzi/"),
+            make("can't complain", "things are fine; I'm doing okay (informal reply)",
+                 "まあまあだよ・悪くないよ",
+                 useCases: ["「元気？」と聞かれて控えめに答えるとき"],
+                 examples: [
+                    ("\"How's things?\" \"Can't complain, thanks.\"", "「調子どう？」「まあ悪くないよ、ありがとう。」"),
+                    ("Work's busy, but I can't complain.", "仕事は忙しいけど、文句は言えないね。")
+                 ], ipa: "/kˈɑːnt kəmplˈeɪn/"),
+            make("sorry to bother you", "a polite way to interrupt or ask someone for something",
+                 "お手数ですが・お邪魔してすみません",
+                 useCases: ["人に話しかけたり頼みごとをするとき"],
+                 examples: [
+                    ("Sorry to bother you, but do you know where the station is?", "すみません、駅がどこかご存じですか？"),
+                    ("Sorry to bother you again — just one more question.", "何度もすみません、もう一つだけ質問が。")
+                 ], ipa: "/sˈɒɹi tə bˈɒðə juː/"),
+            make("keep me posted", "keep me informed about any news or developments",
+                 "（進展があったら）知らせてね",
+                 useCases: ["今後の状況を教えてほしいとき"],
+                 examples: [
+                    ("Good luck with the interview — keep me posted!", "面接頑張って、結果教えてね！"),
+                    ("I'll keep you posted on the flat search.", "部屋探しの状況はまた知らせるね。")
+                 ], ipa: "/kˈiːp miː pˈəʊstɪd/"),
+            make("get on like a house on fire", "get along with someone extremely well, very quickly",
+                 "すぐに意気投合する・とても仲良くなる",
+                 useCases: ["初対面ですぐ仲良くなったことを話すとき"],
+                 examples: [
+                    ("Our kids got on like a house on fire.", "うちの子たちはすぐに意気投合したよ。"),
+                    ("I knew you two would get on like a house on fire.", "君たち二人は絶対気が合うと思ってた。")
+                 ], ipa: "/ɡɛt ɒn lˈaɪk ə hˈaʊs ɒn fˈaɪə/")
         ]
     }
 }
