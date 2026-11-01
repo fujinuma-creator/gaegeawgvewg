@@ -126,5 +126,252 @@
       "I declined the offer. (その申し出を断った)",
       "She rejected the idea. (彼女はその案を却下した)"
     ]
+  },
+  {
+    "id": "9",
+    "word": "I'm knackered",
+    "definition": "extremely tired",
+    "japanese": "めちゃくちゃ疲れた",
+    "useCase": "疲れ切ったとき（イギリス口語）",
+    "examples": [
+      "I'm absolutely knackered after that run. (あのランニングの後で本当にクタクタだよ)",
+      "You look knackered — early night? (疲れた顔してるね、今日は早く寝たら？)",
+      "I was knackered by the end of the week. (週末にはもうヘトヘトだった)"
+    ],
+    "synonyms": [
+      "I'm shattered. (クタクタだ)",
+      "I'm worn out. (疲れ果てた)",
+      "I'm exhausted. (疲れ切っている)"
+    ]
+  },
+  {
+    "id": "10",
+    "word": "Fancy a cuppa?",
+    "definition": "would you like a cup of tea?",
+    "japanese": "お茶でもどう？",
+    "useCase": "人を誘う・もてなすとき",
+    "examples": [
+      "Fancy a cuppa before we start? (始める前にお茶でもどう？)",
+      "I'm putting the kettle on — fancy a cuppa? (お湯沸かすけど、お茶いる？)",
+      "Come in, fancy a cuppa? (どうぞ入って、お茶飲む？)"
+    ],
+    "synonyms": [
+      "Do you fancy a coffee? (コーヒーどう？)",
+      "Shall I make us a brew? (お茶淹れようか？)"
+    ]
+  },
+  {
+    "id": "11",
+    "word": "I can't be bothered",
+    "definition": "I don't have the energy or motivation to do it",
+    "japanese": "面倒くさい／やる気が出ない",
+    "useCase": "気が乗らないとき",
+    "examples": [
+      "I can't be bothered to cook tonight. (今夜は料理するのが面倒だ)",
+      "He couldn't be bothered to reply. (彼は返信すらしなかった)",
+      "Honestly, I can't be bothered going out. (正直、出かける気になれない)"
+    ],
+    "synonyms": [
+      "I don't feel like it. (気が乗らない)",
+      "I'm not in the mood. (そんな気分じゃない)"
+    ]
+  },
+  {
+    "id": "12",
+    "word": "It's not my cup of tea",
+    "definition": "it's not something I like",
+    "japanese": "好みじゃない",
+    "useCase": "好みを柔らかく伝えるとき",
+    "examples": [
+      "Opera isn't really my cup of tea. (オペラはあまり好みじゃないんだ)",
+      "Camping's not my cup of tea, to be honest. (正直キャンプは好きじゃない)",
+      "It's a great film, just not my cup of tea. (いい映画だけど、私の好みではない)"
+    ],
+    "synonyms": [
+      "It's not really my thing. (あまり得意じゃない／好きじゃない)",
+      "I'm not really into it. (あまりハマらない)"
+    ]
+  },
+  {
+    "id": "13",
+    "word": "Cheers, mate",
+    "definition": "thanks (friendly, informal)",
+    "japanese": "ありがとう、助かるよ",
+    "useCase": "気軽なお礼",
+    "examples": [
+      "Cheers, mate, I owe you one. (ありがとう、借りができたね)",
+      "Cheers for holding the door. (ドア押さえてくれてありがとう)",
+      "Cheers for that, really helpful. (それ助かったよ、ありがとう)"
+    ],
+    "synonyms": [
+      "Ta. (どうも)",
+      "Thanks a lot. (どうもありがとう)",
+      "Much appreciated. (感謝します)"
+    ]
+  },
+  {
+    "id": "14",
+    "word": "I'm gutted",
+    "definition": "very disappointed and sad",
+    "japanese": "すごくがっかりした／ショック",
+    "useCase": "残念な出来事のとき",
+    "examples": [
+      "I'm gutted we lost in the final. (決勝で負けて本当に悔しい)",
+      "She was gutted she missed the concert. (コンサートを逃して彼女はひどく落ち込んでた)",
+      "Gutted for you — you deserved that job. (残念だったね、あの仕事に相応しかったのに)"
+    ],
+    "synonyms": [
+      "I'm devastated. (打ちのめされた)",
+      "What a shame. (残念だね)",
+      "That's a real letdown. (本当にがっかりだ)"
+    ]
+  },
+  {
+    "id": "15",
+    "word": "Sorted",
+    "definition": "arranged or solved; everything is fine",
+    "japanese": "解決した／手配済み",
+    "useCase": "問題が片付いたとき",
+    "examples": [
+      "Don't worry, it's all sorted. (心配しないで、全部片付いたよ)",
+      "I'll get it sorted by Friday. (金曜までに何とかしておくよ)",
+      "Tickets? Sorted. (チケット？もう手配済み)"
+    ],
+    "synonyms": [
+      "It's all taken care of. (全部対応済み)",
+      "Done and dusted. (完全に終わった)"
+    ]
+  },
+  {
+    "id": "16",
+    "word": "I'm keen on",
+    "definition": "very interested in or enthusiastic about",
+    "japanese": "〜に熱心だ／〜が好き",
+    "useCase": "興味・好みを伝えるとき",
+    "examples": [
+      "I'm not that keen on spicy food. (辛い食べ物はそんなに好きじゃない)",
+      "She's really keen on hiking. (彼女はハイキングに夢中だ)",
+      "Are you keen to join us tonight? (今夜一緒に来たい？)"
+    ],
+    "synonyms": [
+      "I'm into it. (ハマってる)",
+      "I'm fond of it. (好きだ)",
+      "I'm eager to... (〜したくてたまらない)"
+    ]
+  },
+  {
+    "id": "17",
+    "word": "Let's call it a day",
+    "definition": "let's stop working for now",
+    "japanese": "今日はここまでにしよう",
+    "useCase": "作業を切り上げるとき",
+    "examples": [
+      "It's getting late — let's call it a day. (遅くなってきたし、今日はここまでにしよう)",
+      "We called it a day around six. (6時頃に切り上げた)",
+      "I think I'll call it a day. (今日はもう終わりにするよ)"
+    ],
+    "synonyms": [
+      "Let's wrap it up. (終わりにしよう)",
+      "That's enough for today. (今日はこのくらいで)"
+    ]
+  },
+  {
+    "id": "18",
+    "word": "I'm over the moon",
+    "definition": "extremely happy",
+    "japanese": "大喜びしている",
+    "useCase": "嬉しい報告のとき",
+    "examples": [
+      "I'm over the moon about the new job. (新しい仕事に大喜びだよ)",
+      "They were over the moon when the baby arrived. (赤ちゃんが生まれて彼らは大喜びだった)",
+      "She'll be over the moon when she hears. (聞いたら彼女すごく喜ぶよ)"
+    ],
+    "synonyms": [
+      "I'm chuffed to bits. (めちゃくちゃ嬉しい)",
+      "I'm thrilled. (ワクワクするほど嬉しい)",
+      "I'm on cloud nine. (天にも昇る気分)"
+    ]
+  },
+  {
+    "id": "19",
+    "word": "Bob's your uncle",
+    "definition": "and that's it; it's that simple",
+    "japanese": "はい、それで完成／簡単でしょ",
+    "useCase": "手順説明の締めくくり",
+    "examples": [
+      "Add water, stir, and Bob's your uncle! (水を入れて混ぜれば、はい完成！)",
+      "Click here, enter your code, and Bob's your uncle. (ここをクリックしてコードを入れたら、それで終わり)",
+      "Turn left at the pub and Bob's your uncle, you're there. (パブで左に曲がれば、もう着いてるよ)"
+    ],
+    "synonyms": [
+      "Job done. (完了)",
+      "Easy as that. (それだけ簡単)",
+      "There you go. (はい、どうぞ／これでOK)"
+    ]
+  },
+  {
+    "id": "20",
+    "word": "I'm skint",
+    "definition": "having no money",
+    "japanese": "金欠だ",
+    "useCase": "お金がないとき",
+    "examples": [
+      "I can't come out, I'm skint till payday. (給料日まで金欠だから出かけられない)",
+      "I'm always skint at the end of the month. (月末はいつも金欠だ)",
+      "Lend me a fiver? I'm totally skint. (5ポンド貸してくれない？完全に金欠なんだ)"
+    ],
+    "synonyms": [
+      "I'm broke. (一文無しだ)",
+      "I'm a bit strapped for cash. (ちょっと手持ちがない)"
+    ]
+  },
+  {
+    "id": "21",
+    "word": "Don't get me wrong",
+    "definition": "don't misunderstand what I'm about to say",
+    "japanese": "誤解しないでほしいんだけど",
+    "useCase": "前置きとして使う",
+    "examples": [
+      "Don't get me wrong, I like him, but he's always late. (誤解しないでね、彼は好きだけどいつも遅刻するんだ)",
+      "Don't get me wrong, it's a nice flat. (誤解しないで、いい部屋だよ)",
+      "Don't get me wrong — I'm grateful. (勘違いしないで、感謝してるんだ)"
+    ],
+    "synonyms": [
+      "Don't take this the wrong way. (悪く取らないでね)",
+      "No offence, but... (悪気はないんだけど…)"
+    ]
+  },
+  {
+    "id": "22",
+    "word": "I'll pop in",
+    "definition": "I'll visit briefly",
+    "japanese": "ちょっと寄るね",
+    "useCase": "短い訪問を伝えるとき",
+    "examples": [
+      "I'll pop in on my way home. (帰りにちょっと寄るね)",
+      "Pop round for a drink later. (後で飲みにおいでよ)",
+      "I'm just popping out to the shops. (ちょっとお店まで出てくるね)"
+    ],
+    "synonyms": [
+      "I'll drop by. (立ち寄るね)",
+      "I'll swing by. (ちょっと寄るよ)"
+    ]
+  },
+  {
+    "id": "23",
+    "word": "Fair enough",
+    "definition": "that's reasonable; I accept that",
+    "japanese": "なるほど、それなら仕方ないね",
+    "useCase": "相手の説明に納得したとき",
+    "examples": [
+      "\"I'd rather stay in tonight.\" \"Fair enough.\" (「今夜は家にいたいな」「まあ、それもそうだね」)",
+      "Fair enough, we'll do it your way. (分かった、君のやり方でやろう)",
+      "That's fair enough, I hadn't thought of that. (それはもっともだね、考えてなかった)"
+    ],
+    "synonyms": [
+      "That makes sense. (筋が通ってる)",
+      "Point taken. (おっしゃる通り)",
+      "Fair point. (いい指摘だね)"
+    ]
   }
 ]
