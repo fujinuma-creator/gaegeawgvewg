@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27636,6 +27636,116 @@ enum SeedData {
                     ("My laptop's on its last legs, I need a new one.", "ノートパソコンがもう寿命で、新しいのが要るんだ。"),
                     ("That old car is on its last legs.", "あの古い車はもう限界だね。")
                  ], ipa: "/ɒn ɪts lˈɑːst lˈɛɡz/")
+        ]
+    }
+
+    private static var britishColloquial86: [Word] {
+        [
+            make("fiddly", "awkward to do because it involves small or complicated parts",
+                 "細かくて面倒な・手間がかかる",
+                 useCases: ["小さい部品や細かい作業が面倒だと言うとき"],
+                 examples: [
+                    ("These buttons are really fiddly to do up.", "このボタン、留めるのがすごく面倒なんだよね。"),
+                    ("Setting up the printer was a bit fiddly.", "プリンターの設定がちょっと手間だった。")
+                 ], ipa: "/fˈɪdli/"),
+            make("mustn't grumble", "a modest way of saying things are fine (reply to 'How are you?')",
+                 "まあまあだよ・文句は言えないね",
+                 useCases: ["「調子どう？」に控えめに答えるとき"],
+                 examples: [
+                    ("How's things? — Oh, mustn't grumble.", "調子どう？ — まあ、文句は言えないね。"),
+                    ("Work's busy, but mustn't grumble.", "仕事は忙しいけど、まあ悪くないよ。")
+                 ], ipa: "/mˈʌsənt ɡrˈʌmbəl/"),
+            make("give it a rest", "stop talking about or doing something annoying",
+                 "もうやめてよ・いい加減にして",
+                 useCases: ["同じ話や文句をしつこく続ける相手に軽く言うとき"],
+                 examples: [
+                    ("Oh, give it a rest — you've been moaning all day.", "もうやめてよ、一日中文句言ってるじゃん。"),
+                    ("Give it a rest, he said sorry.", "いい加減にしなよ、彼謝ったんだし。")
+                 ], ipa: "/ɡˈɪv ɪt ə rˈɛst/"),
+            make("knock yourself out", "go ahead and do it as much as you like",
+                 "どうぞご自由に・好きなだけどうぞ",
+                 useCases: ["相手に「遠慮なくどうぞ」と許可するとき（少し皮肉にも使う）"],
+                 examples: [
+                    ("Can I have the last slice? — Knock yourself out.", "最後の一切れもらっていい？ — どうぞどうぞ。"),
+                    ("You want to redo the whole report? Knock yourself out.", "レポート全部やり直したいの？ご自由にどうぞ。")
+                 ], ipa: "/nˈɒk jɔːsˈɛlf ˈaʊt/"),
+            make("talk me through", "explain something to me step by step",
+                 "順を追って説明して",
+                 useCases: ["手順や計画を一つずつ説明してもらいたいとき"],
+                 examples: [
+                    ("Can you talk me through how this works?", "これがどう動くのか順番に説明してくれる？"),
+                    ("Talk me through what happened.", "何があったのか順を追って話して。")
+                 ], ipa: "/tˈɔːk miː θrˈuː/"),
+            make("get stuck in", "start doing something enthusiastically; start eating",
+                 "どんどんやって・遠慮なく食べて",
+                 useCases: ["作業に本腰を入れる／料理を勧めるとき"],
+                 examples: [
+                    ("Food's ready — get stuck in!", "ご飯できたよ、遠慮なく食べて！"),
+                    ("She got stuck in straight away on her first day.", "彼女は初日からすぐにバリバリ取りかかった。")
+                 ], ipa: "/ɡɛt stˈʌk ˈɪn/"),
+            make("point taken", "I understand and accept what you're saying",
+                 "ごもっとも・言いたいことはわかった",
+                 useCases: ["相手の指摘を素直に受け入れるとき"],
+                 examples: [
+                    ("Point taken — I'll be more careful next time.", "ごもっともです、次はもっと気をつけるよ。"),
+                    ("Okay, point taken. Let's do it your way.", "わかった、言いたいことは伝わったよ。君のやり方でいこう。")
+                 ], ipa: "/pˈɔɪnt tˈeɪkən/"),
+            make("it's my round", "it's my turn to buy drinks for the group",
+                 "今度は僕がおごる番だ",
+                 useCases: ["パブなどで順番に飲み物をおごる習慣の中で使うとき"],
+                 examples: [
+                    ("Put your wallet away, it's my round.", "財布しまって、今回は僕がおごる番だから。"),
+                    ("Whose round is it? — I think it's mine.", "次誰がおごる番？ — 僕だと思う。")
+                 ], ipa: "/ɪts mˈaɪ rˈaʊnd/"),
+            make("posh", "elegant, expensive, or upper-class",
+                 "高級な・上品な・お高くとまった",
+                 useCases: ["お店・ホテル・話し方などが高級っぽいと言うとき"],
+                 examples: [
+                    ("We went to a really posh restaurant for her birthday.", "彼女の誕生日にすごく高級なレストランに行ったよ。"),
+                    ("He's got quite a posh accent.", "彼はかなり上品なアクセントで話すね。")
+                 ], ipa: "/pˈɒʃ/"),
+            make("can't be doing with", "can't tolerate or be bothered with something",
+                 "〜は勘弁・〜には付き合ってられない",
+                 useCases: ["面倒なこと・苦手なことが我慢できないと言うとき"],
+                 examples: [
+                    ("I can't be doing with all this drama.", "こういうゴタゴタには付き合ってられないよ。"),
+                    ("She can't be doing with early mornings.", "彼女は早起きが本当にダメなんだ。")
+                 ], ipa: "/kˈɑːnt biː dˈuːɪŋ wɪð/"),
+            make("get your head round", "manage to understand something difficult",
+                 "〜を理解する・のみ込む",
+                 useCases: ["複雑なことや信じがたいことを理解しようとするとき"],
+                 examples: [
+                    ("I still can't get my head round the new system.", "新しいシステムがまだよくのみ込めないんだ。"),
+                    ("It took me a while to get my head round it.", "理解するのにちょっと時間がかかったよ。")
+                 ], ipa: "/ɡɛt jɔː hˈɛd rˈaʊnd/"),
+            make("by the sound of it", "judging from what I've heard",
+                 "話を聞く限りでは・どうやら",
+                 useCases: ["聞いた話から推測して感想を言うとき"],
+                 examples: [
+                    ("By the sound of it, you had a great time.", "話を聞く限り、すごく楽しかったみたいだね。"),
+                    ("He's not coming, by the sound of it.", "どうやら彼は来ないみたいだね。")
+                 ], ipa: "/baɪ ðə sˈaʊnd əv ɪt/"),
+            make("a bit rusty", "not as good as before because of lack of practice",
+                 "ちょっと腕が鈍っている",
+                 useCases: ["久しぶりで言語やスキルが鈍っていると謙遜するとき"],
+                 examples: [
+                    ("My French is a bit rusty these days.", "最近フランス語がちょっと鈍ってるんだ。"),
+                    ("I haven't played in years, so I'm a bit rusty.", "何年もやってないから、ちょっと腕が落ちてるよ。")
+                 ], ipa: "/ə bˈɪt rˈʌsti/"),
+            make("in a mo", "in a moment; very soon",
+                 "すぐに・ちょっと待ってね",
+                 useCases: ["「すぐ行く・すぐやる」と軽く言うとき"],
+                 examples: [
+                    ("I'll be with you in a mo.", "すぐそっち行くね。"),
+                    ("Hang on, I'll call you back in a mo.", "ちょっと待って、すぐかけ直すね。")
+                 ], ipa: "/ɪn ə mˈəʊ/"),
+            make("take it with a pinch of salt", "don't completely believe it; be a bit sceptical",
+                 "話半分に聞く・鵜呑みにしない",
+                 useCases: ["噂や大げさな話を信じすぎないよう注意するとき"],
+                 examples: [
+                    ("He exaggerates, so take it with a pinch of salt.", "彼は話を盛るから、話半分に聞いといて。"),
+                    ("I'd take those reviews with a pinch of salt.", "あのレビューは鵜呑みにしない方がいいと思う。")
+                 ], ipa: "/tˈeɪk ɪt wɪð ə pˈɪntʃ əv sˈɔːlt/")
         ]
     }
 }
