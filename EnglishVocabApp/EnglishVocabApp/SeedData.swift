@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28296,6 +28296,116 @@ enum SeedData {
                     ("I need to hand in my essay by Friday.", "金曜までにレポートを提出しなきゃ。"),
                     ("He handed in his notice last week.", "彼は先週、退職届を出した。")
                  ], ipa: "/hˈænd ˈɪn/")
+        ]
+    }
+
+    private static var britishColloquial92: [Word] {
+        [
+            make("on the spot", "immediately, at the exact moment and place something happens; or put under pressure to answer",
+                 "その場で・即座に",
+                 useCases: ["その場ですぐ決めた・対応したと言うとき", "put someone on the spot（答えにくいことを急に聞いて困らせる）"],
+                 examples: [
+                    ("They offered me the job on the spot.", "その場で採用が決まったんだ。"),
+                    ("Sorry to put you on the spot, but what do you think?", "急に振ってごめんね、でもどう思う？")
+                 ], ipa: "/ɒn ðə spˈɒt/"),
+            make("in a nutshell", "used to summarise something very briefly",
+                 "要するに・簡単に言うと",
+                 useCases: ["長い話を一言でまとめるとき"],
+                 examples: [
+                    ("In a nutshell, the trip was a disaster.", "要するに、旅行は散々だったってこと。"),
+                    ("That's the plan in a nutshell.", "ざっくり言うと、そういう計画だよ。")
+                 ], ipa: "/ɪn ə nˈʌtʃɛl/"),
+            make("as far as I'm concerned", "in my opinion; from my point of view",
+                 "私に言わせれば・私としては",
+                 useCases: ["自分の意見や立場をはっきり示すとき"],
+                 examples: [
+                    ("As far as I'm concerned, the matter is closed.", "私としては、この件はもう終わったことだよ。"),
+                    ("You can stay as long as you like, as far as I'm concerned.", "僕は好きなだけいてくれて構わないよ。")
+                 ], ipa: "/əz fˈɑːr əz aɪm kənsˈɜːnd/"),
+            make("call in sick", "to phone your workplace to say you are too ill to come in",
+                 "病欠の連絡をする",
+                 useCases: ["体調不良で仕事や学校を休むと連絡するとき"],
+                 examples: [
+                    ("I had to call in sick this morning — I've got a fever.", "今朝は病欠の連絡をしたよ。熱があってさ。"),
+                    ("Half the team called in sick with the flu.", "チームの半分がインフルで休みの連絡をしてきた。")
+                 ], ipa: "/kˈɔːl ɪn sˈɪk/"),
+            make("come round", "to visit someone's home; also to change your opinion or to wake up after fainting",
+                 "（家に）遊びに来る・考えを変える・意識が戻る",
+                 useCases: ["友達を家に誘うとき", "最初は反対していた人が納得したと言うとき"],
+                 examples: [
+                    ("Why don't you come round for dinner on Saturday?", "土曜、うちに夕飯食べに来ない？"),
+                    ("He hated the idea at first, but he's come round to it.", "最初は嫌がってたけど、彼も納得してくれたよ。")
+                 ], ipa: "/kˌʌm ɹˈaʊnd/"),
+            make("lose touch", "to stop being in contact with someone",
+                 "連絡が途絶える・疎遠になる",
+                 useCases: ["昔の友人と連絡を取らなくなったと話すとき"],
+                 examples: [
+                    ("We lost touch after university.", "大学を出てから連絡が途絶えちゃった。"),
+                    ("Let's not lose touch this time, okay?", "今度は連絡途切れないようにしようね。")
+                 ], ipa: "/lˈuːz tˈʌtʃ/"),
+            make("go off", "(of food) to go bad; (of an alarm) to ring; also to stop liking something",
+                 "（食べ物が）腐る・（アラームが）鳴る・嫌いになる",
+                 useCases: ["牛乳などが傷んだと言うとき", "目覚ましや警報が鳴ったとき"],
+                 examples: [
+                    ("I think this milk has gone off — smell it.", "この牛乳、傷んでると思う。嗅いでみて。"),
+                    ("My alarm didn't go off, so I was late.", "目覚ましが鳴らなくて遅刻した。")
+                 ], ipa: "/ɡˌəʊ ˈɒf/"),
+            make("think twice", "to consider something carefully before doing it",
+                 "よく考える・考え直す",
+                 useCases: ["軽はずみに行動しないよう忠告するとき"],
+                 examples: [
+                    ("I'd think twice before lending him money.", "彼にお金を貸す前に、よく考えたほうがいいよ。"),
+                    ("She didn't think twice about helping us.", "彼女は迷わず私たちを助けてくれた。")
+                 ], ipa: "/θˈɪŋk twˈaɪs/"),
+            make("weigh up", "to think carefully about the advantages and disadvantages of something",
+                 "（良し悪しを）比較検討する",
+                 useCases: ["選択肢のメリット・デメリットを考えるとき"],
+                 examples: [
+                    ("I'm still weighing up whether to take the job.", "その仕事を受けるか、まだ検討中なんだ。"),
+                    ("You need to weigh up the pros and cons.", "メリットとデメリットを比べてみないと。")
+                 ], ipa: "/wˈeɪ ˈʌp/"),
+            make("it doesn't matter", "used to say that something is not important or not a problem",
+                 "大丈夫・気にしないで・どっちでもいい",
+                 useCases: ["相手の失敗や謝罪を気にしないでと伝えるとき", "どちらでも構わないと言うとき"],
+                 examples: [
+                    ("Oh, you forgot? It doesn't matter — we'll do it tomorrow.", "あ、忘れた？大丈夫、明日やろう。"),
+                    ("It doesn't matter what you wear, it's very casual.", "何着てきてもいいよ、すごくカジュアルだから。")
+                 ], ipa: "/ɪt dˈʌzənt mˈætə/"),
+            make("cut back on", "to reduce the amount of something you use, eat or spend",
+                 "〜を減らす・控える",
+                 useCases: ["お酒や甘い物、出費を控えていると話すとき"],
+                 examples: [
+                    ("I'm trying to cut back on sugar.", "砂糖を控えるようにしてるんだ。"),
+                    ("We need to cut back on eating out this month.", "今月は外食を減らさないと。")
+                 ], ipa: "/kˌʌt bˈæk ɒn/"),
+            make("drop off", "to take someone or something to a place and leave them there; also to fall asleep",
+                 "（人・物を）送り届ける・降ろす／うとうとする",
+                 useCases: ["車で人を送ったり荷物を届けたりするとき", "つい寝てしまったと言うとき"],
+                 examples: [
+                    ("I can drop you off at the station on my way.", "途中で駅まで送っていけるよ。"),
+                    ("I must have dropped off on the sofa.", "ソファでうとうとしちゃったみたい。")
+                 ], ipa: "/dɹˌɒp ˈɒf/"),
+            make("chip in", "to give some money towards something shared; also to add a comment to a conversation",
+                 "（お金を）出し合う・（会話に）口を挟む",
+                 useCases: ["プレゼント代などをみんなで出し合うとき", "会話に一言加えるとき"],
+                 examples: [
+                    ("We're all chipping in for Sarah's leaving present.", "みんなでサラの送別プレゼント代を出し合ってるんだ。"),
+                    ("Feel free to chip in if you've got any ideas.", "何かアイデアがあったら遠慮なく言ってね。")
+                 ], ipa: "/tʃˌɪp ˈɪn/"),
+            make("let me know", "please tell me (when you know something or decide)",
+                 "教えてね・知らせてね",
+                 useCases: ["決まったら・分かったら連絡してほしいと頼むとき"],
+                 examples: [
+                    ("Let me know if you need anything.", "何か必要だったら言ってね。"),
+                    ("Let me know when you get home safely.", "無事に家に着いたら知らせてね。")
+                 ], ipa: "/lˈɛt mi nˈəʊ/"),
+            make("take ages", "to take a very long time",
+                 "すごく時間がかかる",
+                 useCases: ["何かに時間がかかりすぎると不満を言うとき"],
+                 examples: [
+                    ("Sorry, it took ages to find a parking space.", "ごめん、駐車場所を見つけるのにすごく時間がかかって。"),
+                    ("The bus is taking ages — shall we walk?", "バス、全然来ないね。歩こうか？")
+                 ], ipa: "/tˈeɪk ˈeɪdʒɪz/")
         ]
     }
 }
