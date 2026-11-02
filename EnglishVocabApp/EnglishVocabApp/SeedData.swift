@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28186,6 +28186,116 @@ enum SeedData {
                     ("Hiya! How's it going?", "やあ！調子どう？"),
                     ("She popped her head in and said hiya.", "彼女は顔をのぞかせて「はーい」と言った。")
                  ], ipa: "/hˈaɪjə/")
+        ]
+    }
+
+    private static var britishColloquial91: [Word] {
+        [
+            make("snowed under", "having far too much work to deal with",
+                 "仕事に追われている・手一杯の",
+                 useCases: ["仕事や課題が山積みで余裕がないと伝えるとき"],
+                 examples: [
+                    ("Sorry, I can't make lunch — I'm snowed under this week.", "ごめん、ランチは無理。今週は仕事で手一杯なんだ。"),
+                    ("We've been snowed under since the holidays.", "休み明けからずっと仕事に追われてるよ。")
+                 ], ipa: "/snˈəʊd ˈʌndə/"),
+            make("rushed off my feet", "extremely busy, with no time to rest",
+                 "てんてこ舞いで・休む暇もないほど忙しい",
+                 useCases: ["接客や仕事で座る暇もないほど忙しいと言うとき"],
+                 examples: [
+                    ("I've been rushed off my feet all day at the shop.", "今日はお店で一日中てんてこ舞いだったよ。"),
+                    ("The staff were rushed off their feet over Christmas.", "クリスマスの間、スタッフは休む暇もなかった。")
+                 ], ipa: "/rˈʌʃt ɒf maɪ fˈiːt/"),
+            make("come again?", "said when you didn't hear or can't quite believe what someone said",
+                 "え、何て？・もう一回言って？",
+                 useCases: ["聞き取れなかったときや、耳を疑うようなことを言われたとき"],
+                 examples: [
+                    ("Come again? I didn't catch that.", "え、何て？聞き取れなかった。"),
+                    ("Come again? You're moving to Spain?", "え、何だって？スペインに引っ越すの？")
+                 ], ipa: "/kˌʌm əɡˈɛn/"),
+            make("keep an eye out for", "to watch carefully so that you notice something or someone",
+                 "〜を気にかけて探しておく・見張っておく",
+                 useCases: ["何かを見つけたら教えてほしいと頼むとき"],
+                 examples: [
+                    ("Can you keep an eye out for my keys? I've lost them somewhere.", "鍵、見かけたら教えてくれる？どこかでなくしちゃって。"),
+                    ("Keep an eye out for a taxi while I grab the bags.", "荷物を取ってくる間、タクシーが来ないか見ててね。")
+                 ], ipa: "/kˈiːp ən ˈaɪ ˈaʊt fɔː/"),
+            make("make ends meet", "to have just enough money to pay for the things you need",
+                 "なんとかやりくりする・収支を合わせる",
+                 useCases: ["生活費のやりくりが大変だと話すとき"],
+                 examples: [
+                    ("With rent going up, it's hard to make ends meet.", "家賃が上がって、やりくりが大変だよ。"),
+                    ("She works two jobs just to make ends meet.", "彼女は生活をやりくりするために仕事を2つ掛け持ちしてる。")
+                 ], ipa: "/mˈeɪk ˈɛndz mˈiːt/"),
+            make("sleep in", "to sleep later than usual in the morning, often on purpose",
+                 "朝寝坊する・ゆっくり寝る",
+                 useCases: ["休日などに遅くまで寝ることを話すとき"],
+                 examples: [
+                    ("I'm going to sleep in tomorrow — no alarm!", "明日はゆっくり寝るんだ。目覚ましなし！"),
+                    ("Sorry I'm late, I slept in.", "遅れてごめん、寝坊しちゃった。")
+                 ], ipa: "/slˈiːp ˈɪn/"),
+            make("oversleep", "to sleep longer than you intended and wake up too late",
+                 "寝過ごす",
+                 useCases: ["予定より遅く起きてしまったことを言い訳・説明するとき"],
+                 examples: [
+                    ("I overslept and missed my train.", "寝過ごして電車に乗り遅れた。"),
+                    ("Set two alarms so you don't oversleep.", "寝過ごさないように目覚ましを2つかけなよ。")
+                 ], ipa: "/ˌəʊvəslˈiːp/"),
+            make("bless you", "what you say to someone when they sneeze; also a warm way to thank someone",
+                 "お大事に（くしゃみの後）・ありがとう、優しいね",
+                 useCases: ["誰かがくしゃみをしたとき", "親切にしてもらって感謝を表すとき"],
+                 examples: [
+                    ("— Achoo! — Bless you!", "— ハクション！— お大事に！"),
+                    ("You brought me soup? Oh, bless you!", "スープ持ってきてくれたの？ああ、優しいね！")
+                 ], ipa: "/blˈɛs juː/"),
+            make("pardon?", "a polite way to ask someone to repeat what they said",
+                 "すみません、もう一度お願いします",
+                 useCases: ["聞き取れなかったときに丁寧に聞き返すとき"],
+                 examples: [
+                    ("Pardon? Could you say that a bit louder?", "すみません、もう少し大きな声でお願いできますか？"),
+                    ("— It's on the left. — Pardon? — On the left!", "— 左側です。— すみません、何て？ — 左です！")
+                 ], ipa: "/pˈɑːdn/"),
+            make("the loo", "the toilet (informal, very common in Britain)",
+                 "トイレ",
+                 useCases: ["気軽にトイレの場所を聞いたり、行くと言うとき"],
+                 examples: [
+                    ("Where's the loo, please?", "トイレはどこですか？"),
+                    ("Hang on, I just need to nip to the loo.", "ちょっと待って、トイレに行ってくる。")
+                 ], ipa: "/ðə lˈuː/"),
+            make("keep it up", "to continue doing something well; used to encourage someone",
+                 "その調子で頑張って",
+                 useCases: ["頑張っている人を励ますとき"],
+                 examples: [
+                    ("Your English is really improving — keep it up!", "英語、本当に上達してるね。その調子！"),
+                    ("Great work today, everyone. Keep it up.", "みんな今日はよくやった。この調子でいこう。")
+                 ], ipa: "/kˈiːp ɪt ˈʌp/"),
+            make("go ahead", "used to give permission or to tell someone to start",
+                 "どうぞ・先にやって",
+                 useCases: ["相手に許可を出すとき", "先に始めてと促すとき"],
+                 examples: [
+                    ("— Can I use your charger? — Yeah, go ahead.", "— 充電器借りてもいい？ — うん、どうぞ。"),
+                    ("Go ahead and start eating — don't wait for me.", "先に食べ始めてて。待たなくていいよ。")
+                 ], ipa: "/ɡˌəʊ əhˈɛd/"),
+            make("lend a hand", "to help someone, especially with a practical task",
+                 "手を貸す・手伝う",
+                 useCases: ["力仕事や作業を手伝う・手伝いを申し出るとき"],
+                 examples: [
+                    ("Do you need me to lend a hand with the boxes?", "箱運ぶの手伝おうか？"),
+                    ("Everyone lent a hand to get the place ready.", "みんなで手伝って会場の準備をした。")
+                 ], ipa: "/lˈɛnd ə hˈænd/"),
+            make("can't wait", "to be very excited about something that's going to happen",
+                 "待ちきれない・楽しみで仕方ない",
+                 useCases: ["これからの予定や出来事が楽しみだと伝えるとき"],
+                 examples: [
+                    ("I can't wait for the weekend!", "週末が待ちきれない！"),
+                    ("We can't wait to see you next month.", "来月会えるのが楽しみで仕方ないよ。")
+                 ], ipa: "/kˈɑːnt wˈeɪt/"),
+            make("hand in", "to give a piece of work or a document to someone in authority",
+                 "提出する",
+                 useCases: ["課題や書類、退職届などを提出するとき"],
+                 examples: [
+                    ("I need to hand in my essay by Friday.", "金曜までにレポートを提出しなきゃ。"),
+                    ("He handed in his notice last week.", "彼は先週、退職届を出した。")
+                 ], ipa: "/hˈænd ˈɪn/")
         ]
     }
 }
