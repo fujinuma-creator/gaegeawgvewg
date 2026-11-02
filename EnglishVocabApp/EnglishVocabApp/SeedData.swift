@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29726,6 +29726,116 @@ enum SeedData {
                     ("The bus left just as I got there — just my luck.", "着いた瞬間にバスが出ちゃった。ついてないな。"),
                     ("Just my luck — it starts raining the day I forget my umbrella.", "傘忘れた日に限って雨。いつもこうなんだよ。")
                  ], ipa: "/dʒˈʌst maɪ lˈʌk/")
+        ]
+    }
+
+    private static var britishColloquial105: [Word] {
+        [
+            make("have a nap", "to sleep for a short time, usually during the day",
+                 "昼寝する・仮眠をとる",
+                 useCases: ["昼間に少し寝るとき", "疲れて仮眠したいと伝えるとき"],
+                 examples: [
+                    ("I'm going to have a quick nap before we go out.", "出かける前にちょっと昼寝するね。"),
+                    ("The baby usually has a nap after lunch.", "赤ちゃんはたいていお昼の後に昼寝するの。")
+                 ], ipa: "/hˈæv ə nˈæp/"),
+            make("nod off", "to fall asleep without meaning to, especially while sitting",
+                 "うとうとする・居眠りする",
+                 useCases: ["映画や電車でつい寝てしまったとき", "眠気を我慢できないとき"],
+                 examples: [
+                    ("I nodded off halfway through the film.", "映画の途中でうとうとしちゃった。"),
+                    ("Sorry, I must have nodded off for a minute.", "ごめん、ちょっと居眠りしてたみたい。")
+                 ], ipa: "/nˈɒd ˈɒf/"),
+            make("come down with", "to start to suffer from an illness, usually not a serious one",
+                 "（風邪など）にかかる・ひきかける",
+                 useCases: ["体調を崩しかけていると伝えるとき", "病欠の理由を話すとき"],
+                 examples: [
+                    ("I think I'm coming down with a cold.", "風邪ひきかけてるかも。"),
+                    ("Half the office has come down with the flu.", "職場の半分がインフルにかかってるよ。")
+                 ], ipa: "/kˈʌm dˈaʊn wɪð/"),
+            make("a sore throat", "a painful feeling in your throat, often when you have a cold",
+                 "喉の痛み",
+                 useCases: ["体調不良を説明するとき", "薬局や病院で症状を伝えるとき"],
+                 examples: [
+                    ("I've got a bit of a sore throat this morning.", "今朝ちょっと喉が痛いんだ。"),
+                    ("Honey and lemon is great for a sore throat.", "喉が痛いときはハチミツレモンがいいよ。")
+                 ], ipa: "/ə sˈɔː θɹˈəʊt/"),
+            make("feel dizzy", "to feel as if everything is spinning and you might fall",
+                 "めまいがする・くらくらする",
+                 useCases: ["急に立ち上がってくらっとしたとき", "体調の異変を伝えるとき"],
+                 examples: [
+                    ("I stood up too quickly and felt a bit dizzy.", "急に立ち上がったら少しくらっとした。"),
+                    ("If you feel dizzy, sit down for a minute.", "めまいがしたら少し座ってて。")
+                 ], ipa: "/fˈiːl dˈɪzi/"),
+            make("a steal", "something that is surprisingly cheap for its quality",
+                 "格安品・掘り出し物",
+                 useCases: ["安く買えたものを自慢するとき", "お得な値段を勧めるとき"],
+                 examples: [
+                    ("Twenty quid for that jacket? That's a steal!", "そのジャケットが20ポンド？めちゃくちゃお得じゃん！"),
+                    ("At that price, the flat is an absolute steal.", "その値段ならあのフラットは本当に掘り出し物だよ。")
+                 ], ipa: "/ə stˈiːl/"),
+            make("a slight hiccup", "a small problem or delay that is not very serious",
+                 "ちょっとした問題・小さなトラブル",
+                 useCases: ["予定に軽い支障が出たと伝えるとき", "問題を大げさにせず説明するとき"],
+                 examples: [
+                    ("There's been a slight hiccup with the booking, but it's sorted now.", "予約でちょっとしたトラブルがあったけど、もう解決したよ。"),
+                    ("Apart from a few hiccups, the move went really well.", "いくつか小さな問題はあったけど、引っ越しはすごく順調だった。")
+                 ], ipa: "/ə slˈaɪt hˈɪkʌp/"),
+            make("bloke", "an informal word for a man",
+                 "男・やつ",
+                 useCases: ["知らない男性について話すとき", "人柄を褒めるとき（nice bloke）"],
+                 examples: [
+                    ("Some bloke at the bus stop asked me for directions.", "バス停でどこかの男の人に道を聞かれたよ。"),
+                    ("Tom's a really nice bloke — you'll like him.", "トムは本当にいいやつだよ。きっと気に入るよ。")
+                 ], ipa: "/blˈəʊk/"),
+            make("I'm parched.", "used to say that you are very thirsty",
+                 "喉がカラカラだ",
+                 useCases: ["運動や外出の後に飲み物が欲しいとき", "何か飲もうと誘うとき"],
+                 examples: [
+                    ("I'm parched — can I get a glass of water?", "喉カラカラ。お水一杯もらえる？"),
+                    ("After that walk, I'm absolutely parched.", "あの散歩の後で、もう喉がカラカラだよ。")
+                 ], ipa: "/aɪm pˈɑːtʃt/"),
+            make("in a state", "very upset or nervous; also very untidy or in bad condition",
+                 "動揺して・取り乱して／ひどく散らかって",
+                 useCases: ["誰かが取り乱している様子を話すとき", "部屋や物がひどい状態のとき"],
+                 examples: [
+                    ("She was in a right state after losing her passport.", "パスポートをなくして、彼女すごく取り乱してたよ。"),
+                    ("Sorry, the kitchen's in a bit of a state.", "ごめん、キッチンがちょっと散らかってて。")
+                 ], ipa: "/ɪn ə stˈeɪt/"),
+            make("hoover", "to clean a floor with a vacuum cleaner",
+                 "掃除機をかける",
+                 useCases: ["家事の分担を話すとき", "部屋の掃除をするとき"],
+                 examples: [
+                    ("I'll hoover the living room if you do the bathroom.", "お風呂やってくれるならリビングに掃除機かけるよ。"),
+                    ("Can you hoover up those crumbs?", "そのパンくず、掃除機で吸っておいてくれる？")
+                 ], ipa: "/hˈuːvə/"),
+            make("I get it.", "used to say that you understand something or someone's situation",
+                 "わかるよ・なるほどね",
+                 useCases: ["相手の気持ちに共感するとき", "説明を理解したとき"],
+                 examples: [
+                    ("I get it — you're tired and you don't want to go out.", "わかるよ、疲れてて出かけたくないんだよね。"),
+                    ("Oh, I get it now. Thanks for explaining.", "ああ、やっとわかった。説明ありがとう。")
+                 ], ipa: "/aɪ ɡˈɛt ɪt/"),
+            make("do the shopping", "to buy food and other things you need for the house, usually every week",
+                 "（日用品・食料の）買い物をする",
+                 useCases: ["週末の予定を話すとき", "家事の分担を決めるとき"],
+                 examples: [
+                    ("I usually do the shopping on Saturday mornings.", "いつも土曜の朝に買い物するんだ。"),
+                    ("Can you do the shopping on your way home?", "帰りに買い物してきてくれる？")
+                 ], ipa: "/dˈuː ðə ʃˈɒpɪŋ/"),
+            make("Keep the change.", "used to tell someone, such as a taxi driver, that they can keep the extra money",
+                 "おつりは取っておいてください",
+                 useCases: ["タクシーやカフェで支払うとき", "チップ代わりにおつりを渡すとき"],
+                 examples: [
+                    ("Here's a tenner — keep the change.", "はい10ポンド。おつりはいいよ。"),
+                    ("Thanks for the lift. Keep the change, mate.", "乗せてくれてありがとう。おつりは取っといて。")
+                 ], ipa: "/kˈiːp ðə tʃˈeɪndʒ/"),
+            make("one for the road", "a last drink before you leave a pub or a party",
+                 "帰る前の最後の一杯",
+                 useCases: ["パブや飲み会でもう一杯誘うとき", "帰り際に乾杯するとき"],
+                 examples: [
+                    ("Come on, just one for the road!", "ほら、帰る前にもう一杯だけ！"),
+                    ("We had one for the road and then got a taxi home.", "最後に一杯飲んでからタクシーで帰ったよ。")
+                 ], ipa: "/wˈʌn fə ðə ɹˈəʊd/")
         ]
     }
 }
