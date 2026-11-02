@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28076,6 +28076,116 @@ enum SeedData {
                     ("The deal fell through, so it's back to square one.", "契約が流れて、振り出しに戻っちゃった。"),
                     ("If this doesn't work, we're back to square one.", "これがだめなら、また振り出しだね。")
                  ], ipa: "/bˈæk tə skwˈɛər wˈʌn/")
+        ]
+    }
+
+    private static var britishColloquial90: [Word] {
+        [
+            make("ever so", "very; extremely (a soft, friendly way to add emphasis)",
+                 "とても・すごく（柔らかい強調）",
+                 useCases: ["お礼や感想を丁寧かつ親しみを込めて強調するとき"],
+                 examples: [
+                    ("Thanks ever so much for your help.", "手伝ってくれて本当にありがとう。"),
+                    ("She's ever so nice once you get to know her.", "知り合いになると彼女はすごくいい人だよ。")
+                 ], ipa: "/ˈɛvə səʊ/"),
+            make("run-down", "tired and slightly unwell, usually from working too hard",
+                 "疲れがたまって体調がいまいちな",
+                 useCases: ["働きすぎなどで体が弱っている状態を言うとき"],
+                 examples: [
+                    ("I've been feeling a bit run-down lately.", "最近ちょっと疲れがたまって体調がいまいちなんだ。"),
+                    ("You look run-down — take a day off.", "疲れてるみたいだね。一日休みなよ。")
+                 ], ipa: "/rˌʌn dˈaʊn/"),
+            make("cheerio", "goodbye (friendly and informal)",
+                 "じゃあね・バイバイ",
+                 useCases: ["友人や知り合いと気軽に別れるとき"],
+                 examples: [
+                    ("Right, cheerio then — see you next week!", "よし、じゃあね。また来週！"),
+                    ("He said cheerio and headed off home.", "彼は「じゃあね」と言って家に帰っていった。")
+                 ], ipa: "/tʃˌɪəriˈəʊ/"),
+            make("tinker with", "to make small changes to something to try to fix or improve it",
+                 "（あれこれ）いじる・手を加える",
+                 useCases: ["機械や計画を少しずつ調整・修理するとき"],
+                 examples: [
+                    ("He spent all Sunday tinkering with his bike.", "彼は日曜日ずっと自転車をいじってた。"),
+                    ("Stop tinkering with the settings — it was fine.", "設定をいじるのはやめて。問題なかったんだから。")
+                 ], ipa: "/tˈɪŋkə wɪð/"),
+            make("a fiver", "a five-pound (or five-euro) note; five pounds",
+                 "5ポンド（札）",
+                 useCases: ["少額のお金を気軽に話すとき"],
+                 examples: [
+                    ("Have you got a fiver I could borrow?", "5ポンド貸してもらえる？"),
+                    ("It only cost a fiver at the market.", "市場でたった5ポンドだったよ。")
+                 ], ipa: "/ə fˈaɪvə/"),
+            make("tidy up", "to make a place neat by putting things where they belong",
+                 "片付ける・整頓する",
+                 useCases: ["部屋や机などを片付けるとき"],
+                 examples: [
+                    ("Can you tidy up your room before dinner?", "夕飯の前に部屋を片付けてくれる？"),
+                    ("I'll just tidy up a bit before they arrive.", "みんなが来る前にちょっと片付けておくね。")
+                 ], ipa: "/tˈaɪdi ˈʌp/"),
+            make("chat up", "to talk to someone in a flirty way because you're attracted to them",
+                 "ナンパする・口説く",
+                 useCases: ["気になる相手に話しかけて口説くとき"],
+                 examples: [
+                    ("Was that guy at the bar chatting you up?", "バーにいたあの人、あなたを口説いてたの？"),
+                    ("He tried to chat her up, but she wasn't interested.", "彼は彼女を口説こうとしたけど、相手にされなかった。")
+                 ], ipa: "/tʃˈæt ˈʌp/"),
+            make("pack it in", "to stop doing something (a job, habit, or annoying behaviour)",
+                 "やめる・よせ",
+                 useCases: ["仕事や習慣をやめるとき、うるさい行動をやめさせるとき"],
+                 examples: [
+                    ("Pack it in, you two — I'm trying to work!", "二人ともやめて、仕事してるんだから！"),
+                    ("She's thinking of packing in her job.", "彼女は仕事を辞めようかと考えてる。")
+                 ], ipa: "/pˈæk ɪt ˈɪn/"),
+            make("chop and change", "to keep changing your plans or opinions",
+                 "コロコロ変える",
+                 useCases: ["予定や意見がしょっちゅう変わることを言うとき"],
+                 examples: [
+                    ("They keep chopping and changing the schedule.", "彼らはスケジュールをコロコロ変えるんだ。"),
+                    ("Make up your mind — stop chopping and changing!", "決めてよ。コロコロ変えないで！")
+                 ], ipa: "/tʃˈɒp ən tʃˈeɪndʒ/"),
+            make("bog-standard", "completely ordinary, with nothing special about it",
+                 "ごく普通の・ありきたりの",
+                 useCases: ["特別なところのない普通のものを言うとき"],
+                 examples: [
+                    ("It's just a bog-standard hotel room, nothing fancy.", "ごく普通のホテルの部屋で、豪華じゃないよ。"),
+                    ("I've got a bog-standard phone — it does the job.", "ありきたりの携帯だけど、用は足りるよ。")
+                 ], ipa: "/bˌɒɡ stˈændəd/"),
+            make("get on with it", "to start or continue doing something without delay",
+                 "さっさとやる・とっとと始める",
+                 useCases: ["ぐずぐずせずに取りかかるよう促すとき"],
+                 examples: [
+                    ("Stop complaining and just get on with it.", "文句言ってないで、さっさとやりなよ。"),
+                    ("I'd better get on with it — it's due tomorrow.", "そろそろ取りかからなきゃ、明日が締め切りだから。")
+                 ], ipa: "/ɡɛt ˈɒn wɪð ɪt/"),
+            make("chuck", "to throw something, or to throw it away",
+                 "放る・投げる・捨てる",
+                 useCases: ["物を軽く投げるときや、いらない物を捨てるとき"],
+                 examples: [
+                    ("Can you chuck me the remote?", "リモコン投げてくれる？"),
+                    ("Just chuck it in the bin — it's broken anyway.", "ゴミ箱に捨てちゃって。どうせ壊れてるし。")
+                 ], ipa: "/tʃˈʌk/"),
+            make("the washing-up", "washing the dishes, pans and cutlery after a meal",
+                 "皿洗い・洗い物",
+                 useCases: ["食後の洗い物の分担などを話すとき"],
+                 examples: [
+                    ("I'll do the washing-up if you cook.", "あなたが料理するなら、私が洗い物するよ。"),
+                    ("Leave the washing-up — I'll do it later.", "洗い物は置いといて、後でやるから。")
+                 ], ipa: "/ðə wˌɒʃɪŋ ˈʌp/"),
+            make("bits and pieces", "various small things or tasks",
+                 "こまごました物・雑用",
+                 useCases: ["細かい物や用事をまとめて言うとき"],
+                 examples: [
+                    ("I've just got a few bits and pieces to do in town.", "町でちょっとした用事がいくつかあるだけだよ。"),
+                    ("Put all your bits and pieces in this box.", "こまごました物は全部この箱に入れて。")
+                 ], ipa: "/bˈɪts ən pˈiːsɪz/"),
+            make("hiya", "hi; hello (very casual and friendly)",
+                 "やあ・はーい",
+                 useCases: ["友人や知り合いに気軽に挨拶するとき"],
+                 examples: [
+                    ("Hiya! How's it going?", "やあ！調子どう？"),
+                    ("She popped her head in and said hiya.", "彼女は顔をのぞかせて「はーい」と言った。")
+                 ], ipa: "/hˈaɪjə/")
         ]
     }
 }
