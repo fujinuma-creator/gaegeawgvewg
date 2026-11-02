@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28956,6 +28956,116 @@ enum SeedData {
                     ("Hopefully the rain will stop by the afternoon.", "午後までに雨がやむといいな。"),
                     ("I'll be home by seven, hopefully.", "うまくいけば7時までには帰れるよ。")
                  ], ipa: "/hˈəʊpfəli/")
+        ]
+    }
+
+    private static var britishColloquial98: [Word] {
+        [
+            make("get ready", "to prepare yourself or something for an activity or event",
+                 "準備する・支度する",
+                 useCases: ["出かける支度をするとき", "相手に準備を促すとき"],
+                 examples: [
+                    ("Give me ten minutes to get ready.", "支度するのに10分ちょうだい。"),
+                    ("We're getting ready for the party tonight.", "今夜のパーティーの準備をしてるところなんだ。")
+                 ], ipa: "/ɡɛt ɹˈɛdi/"),
+            make("dress up", "to put on smarter clothes than usual, or to wear a costume",
+                 "おしゃれする・正装する・仮装する",
+                 useCases: ["服装のドレスコードを話すとき", "パーティーや仮装の話をするとき"],
+                 examples: [
+                    ("Do we need to dress up for the restaurant?", "そのレストラン、きちんとした格好で行くべき？"),
+                    ("The kids love dressing up for Halloween.", "子どもたちはハロウィンの仮装が大好きなんだ。")
+                 ], ipa: "/dɹˈɛs ˈʌp/"),
+            make("have a good one", "a friendly, casual way of saying goodbye and wishing someone a good day",
+                 "良い一日を・じゃあね（気軽な別れの挨拶）",
+                 useCases: ["店員や知人と別れるとき", "週末前などの別れ際"],
+                 examples: [
+                    ("Thanks for your help — have a good one!", "助かったよ、良い一日を！"),
+                    ("See you Monday. Have a good one!", "じゃあ月曜に。良い週末を！")
+                 ], ipa: "/hæv ə ɡˈʊd wʌn/"),
+            make("talk to you soon", "a friendly way to end a conversation, call or message",
+                 "またね・また連絡するね",
+                 useCases: ["電話やメッセージを締めくくるとき"],
+                 examples: [
+                    ("Right, I'd better go. Talk to you soon!", "じゃあそろそろ切るね。またね！"),
+                    ("Lovely chatting with you — talk to you soon.", "話せてよかった、また連絡するね。")
+                 ], ipa: "/tˈɔːk tə jʊ sˈuːn/"),
+            make("sounds good", "used to agree to a suggestion or plan",
+                 "いいね・それでいこう",
+                 useCases: ["提案に賛成するとき", "予定を確定させるとき"],
+                 examples: [
+                    ("\"Shall we meet at six?\" \"Sounds good.\"", "「6時に会おうか？」「いいね。」"),
+                    ("Pizza tonight? Sounds good to me.", "今夜はピザ？いいね。")
+                 ], ipa: "/sˈaʊndz ɡˈʊd/"),
+            make("that works for me", "used to say that a time, plan or arrangement is convenient for you",
+                 "それで大丈夫・都合いいよ",
+                 useCases: ["日時や段取りに同意するとき"],
+                 examples: [
+                    ("\"How about Thursday afternoon?\" \"That works for me.\"", "「木曜の午後はどう？」「それで大丈夫。」"),
+                    ("If you can pick up the keys, that works for me.", "鍵を取ってきてくれるなら、こっちはそれで助かる。")
+                 ], ipa: "/ðæt wˈɜːks fə mˈiː/"),
+            make("stay in", "to remain at home rather than going out, especially in the evening",
+                 "家で過ごす・出かけない",
+                 useCases: ["夜の予定を話すとき", "誘いを断るとき"],
+                 examples: [
+                    ("I think I'll just stay in tonight and watch a film.", "今夜は家で映画でも観て過ごそうかな。"),
+                    ("We stayed in all weekend because of the rain.", "雨だったから週末はずっと家にいたよ。")
+                 ], ipa: "/stˈeɪ ˈɪn/"),
+            make("eat out", "to have a meal in a restaurant rather than at home",
+                 "外食する",
+                 useCases: ["夕食の予定を決めるとき", "生活習慣を話すとき"],
+                 examples: [
+                    ("Shall we eat out tonight? I can't be bothered to cook.", "今夜は外食しない？料理する気になれなくて。"),
+                    ("We don't eat out as much as we used to.", "前ほど外食しなくなったね。")
+                 ], ipa: "/ˈiːt ˈaʊt/"),
+            make("I see what you mean", "used to show that you understand someone's point, even if you don't fully agree",
+                 "言いたいことはわかるよ・なるほどね",
+                 useCases: ["相手の意見に理解を示すとき", "やんわり反論する前置き"],
+                 examples: [
+                    ("I see what you mean, but it's a bit expensive.", "言いたいことはわかるけど、ちょっと高いよね。"),
+                    ("Oh, now I see what you mean!", "ああ、やっと言ってる意味がわかった！")
+                 ], ipa: "/aɪ sˈiː wɒt jʊ mˈiːn/"),
+            make("do the washing-up", "(British) to wash the plates, cups and pans after a meal",
+                 "皿洗いをする",
+                 useCases: ["家事の分担を話すとき", "食後に手伝いを申し出るとき"],
+                 examples: [
+                    ("You cooked, so I'll do the washing-up.", "作ってくれたから、皿洗いは私がやるよ。"),
+                    ("Whose turn is it to do the washing-up?", "皿洗い、誰の番だっけ？")
+                 ], ipa: "/dˈuː ðə wˌɒʃɪŋ ˈʌp/"),
+            make("go on holiday", "(British) to travel somewhere for a break from work or school",
+                 "休暇で旅行に行く",
+                 useCases: ["旅行の予定を話すとき", "休み明けの雑談"],
+                 examples: [
+                    ("We're going on holiday to Spain next month.", "来月スペインに旅行に行くんだ。"),
+                    ("When did you last go on holiday?", "最後に旅行に行ったのはいつ？")
+                 ], ipa: "/ɡˈəʊ ɒn hˈɒlɪdeɪ/"),
+            make("book a table", "to reserve a table at a restaurant in advance",
+                 "（レストランの）席を予約する",
+                 useCases: ["外食の段取りをするとき", "店に電話で予約するとき"],
+                 examples: [
+                    ("I've booked a table for four at eight o'clock.", "8時に4人で席を予約しといたよ。"),
+                    ("It gets busy on Fridays, so we'd better book a table.", "金曜は混むから予約しといた方がいいね。")
+                 ], ipa: "/bˈʊk ə tˈeɪbəl/"),
+            make("call someone back", "to phone someone who called you earlier, or to phone them again",
+                 "折り返し電話する",
+                 useCases: ["電話に出られなかったとき", "後でかけ直すと伝えるとき"],
+                 examples: [
+                    ("Sorry, I'm driving — can I call you back?", "ごめん運転中なんだ、かけ直していい？"),
+                    ("She said she'd call me back after lunch.", "彼女、お昼の後に折り返すって言ってた。")
+                 ], ipa: "/kˈɔːl sʌmwʌn bˈæk/"),
+            make("quite a few", "a fairly large number of people or things",
+                 "かなりの数の・結構たくさん",
+                 useCases: ["数が多いことを控えめに言うとき"],
+                 examples: [
+                    ("Quite a few people turned up in the end.", "結局けっこうな人数が来たよ。"),
+                    ("I've been there quite a few times.", "そこには何度も行ったことがあるよ。")
+                 ], ipa: "/kwˈaɪt ə fjˈuː/"),
+            make("from time to time", "sometimes, but not regularly or often",
+                 "時々・たまに",
+                 useCases: ["頻度をぼかして言うとき", "習慣を話すとき"],
+                 examples: [
+                    ("We still see each other from time to time.", "今でもたまに会ってるよ。"),
+                    ("I treat myself to a takeaway from time to time.", "時々ご褒美にテイクアウトするんだ。")
+                 ], ipa: "/fɹəm tˈaɪm tə tˈaɪm/")
         ]
     }
 }
