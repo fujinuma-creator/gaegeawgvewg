@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30935,6 +30935,115 @@ enum SeedData {
                     ("Do you want to go out for a drink after work?", "仕事終わりに飲みに行かない？"),
                     ("We went out for a drink to celebrate.", "お祝いに飲みに行ったんだ。")
                  ], ipa: "/ɡəʊ aʊt fər ə drɪŋk/"),
+        ]
+    }
+    private static var britishColloquial116: [Word] {
+        [
+            make("nothing special", "said when something is ordinary, or when you did nothing particularly interesting",
+                 "特に何も・大したことない",
+                 useCases: ["週末の予定や近況を聞かれたとき", "物の感想を言うとき"],
+                 examples: [
+                    ("What did you get up to at the weekend? — Oh, nothing special.", "週末何してたの？— ああ、特に何も。"),
+                    ("The food was nice, but nothing special.", "料理は美味しかったけど、特別ってほどでもなかった。")
+                 ], ipa: "/ˈnʌθɪŋ ˈspɛʃl/"),
+            make("it's nothing", "said when someone thanks you or apologises, to show it was no trouble or is not a problem",
+                 "大したことないよ・気にしないで",
+                 useCases: ["お礼を言われたとき", "心配されたとき"],
+                 examples: [
+                    ("Thanks so much for helping me move. — Honestly, it's nothing.", "引っ越し手伝ってくれて本当にありがとう。— いやいや、大したことないよ。"),
+                    ("Are you hurt? — No, it's nothing, just a scratch.", "怪我した？— ううん、なんでもない、ただのかすり傷。")
+                 ], ipa: "/ɪts ˈnʌθɪŋ/"),
+            make("let it go", "to stop thinking or worrying about something, or to stop being angry about it",
+                 "気にしないで・もう忘れなよ",
+                 useCases: ["過去のことを引きずっている相手に", "口論を終わらせたいとき"],
+                 examples: [
+                    ("He was rude, but just let it go — it's not worth it.", "彼は失礼だったけど、もう気にするな。そんな価値ないよ。"),
+                    ("I know you're annoyed, but let it go.", "イライラしてるのは分かるけど、もう水に流そう。")
+                 ], ipa: "/lɛt ɪt ɡəʊ/"),
+            make("see how it goes", "to wait and decide later, depending on what happens",
+                 "様子を見る・成り行きに任せる",
+                 useCases: ["予定をはっきり決めたくないとき", "新しいことを試すとき"],
+                 examples: [
+                    ("Are you staying late tonight? — I'll see how it goes.", "今夜は遅くまでいるの？— 様子を見てみるよ。"),
+                    ("Let's try it for a month and see how it goes.", "1ヶ月やってみて、どうなるか様子を見よう。")
+                 ], ipa: "/siː haʊ ɪt ɡəʊz/"),
+            make("pull yourself together", "to control your emotions and start behaving calmly again after being upset",
+                 "しっかりして・気を取り直して",
+                 useCases: ["動揺している人を励ますとき", "自分を奮い立たせるとき"],
+                 examples: [
+                    ("Come on, pull yourself together — you can do this.", "ほら、しっかりして。あなたならできるよ。"),
+                    ("I had a little cry, then pulled myself together.", "少し泣いて、それから気を取り直した。")
+                 ], ipa: "/pʊl jɔːˈsɛlf təˈɡɛðə/"),
+            make("what a mess", "said when a place is very untidy or when a situation has gone badly wrong",
+                 "なんて散らかってるんだ・ひどい有様だ",
+                 useCases: ["部屋が散らかっているとき", "状況がめちゃくちゃなとき"],
+                 examples: [
+                    ("What a mess! Did you have a party in here?", "うわ、散らかってる！ここでパーティーでもしたの？"),
+                    ("The trains are cancelled and the hotel's full — what a mess.", "電車は運休、ホテルは満室。最悪の状況だよ。")
+                 ], ipa: "/wɒt ə mɛs/"),
+            make("it's not my day", "said when several bad or annoying things have happened to you on the same day",
+                 "今日はついてない",
+                 useCases: ["小さな不運が重なったとき", "冗談めかして嘆くとき"],
+                 examples: [
+                    ("I spilt coffee on my shirt and missed the bus. It's just not my day.", "シャツにコーヒーこぼすし、バスには乗り遅れるし。今日はついてないな。"),
+                    ("Lost my keys again? Clearly it's not my day.", "また鍵なくした？今日は完全にツイてない日だ。")
+                 ], ipa: "/ɪts nɒt maɪ deɪ/"),
+            make("that makes two of us", "said to show that you feel the same way or are in the same situation as the other person",
+                 "私も同じだよ",
+                 useCases: ["相手と同じ気持ちのとき", "共感を示すとき"],
+                 examples: [
+                    ("I'm absolutely exhausted. — That makes two of us.", "もうくたくた。— 私も同じだよ。"),
+                    ("I've got no idea what he's on about. — Well, that makes two of us.", "彼が何言ってるか全然分からない。— まあ、私もだよ。")
+                 ], ipa: "/ðæt meɪks tuː əv ʌs/"),
+            make("you made my day", "said to tell someone that they have made you very happy",
+                 "おかげで最高の一日になったよ",
+                 useCases: ["嬉しいことをしてもらったとき", "褒められたとき"],
+                 examples: [
+                    ("Thanks for the flowers — you've made my day!", "お花ありがとう、すごく嬉しい！"),
+                    ("Her message really made my day.", "彼女のメッセージで一日中ハッピーだった。")
+                 ], ipa: "/juː meɪd maɪ deɪ/"),
+            make("it's not your fault", "said to tell someone that they are not to blame for something bad",
+                 "あなたのせいじゃないよ",
+                 useCases: ["自分を責めている人を慰めるとき"],
+                 examples: [
+                    ("Don't apologise — it's not your fault the train was late.", "謝らないで。電車が遅れたのはあなたのせいじゃないよ。"),
+                    ("Honestly, it's not your fault. These things happen.", "本当に、あなたのせいじゃない。よくあることだよ。")
+                 ], ipa: "/ɪts nɒt jɔː fɔːlt/"),
+            make("I've got this", "said to show that you can deal with something yourself and do not need help",
+                 "任せて・自分でできるよ",
+                 useCases: ["手伝いを断るとき", "自信を示すとき"],
+                 examples: [
+                    ("Do you need a hand with that? — No, it's fine, I've got this.", "手伝おうか？— 大丈夫、自分でできるよ。"),
+                    ("Don't worry about the bill — I've got this.", "お会計は気にしないで、私が払うから。")
+                 ], ipa: "/aɪv ɡɒt ðɪs/"),
+            make("I'm lost", "said when you do not understand what someone is explaining, or do not know where you are",
+                 "話についていけない・道に迷った",
+                 useCases: ["説明が分からないとき", "道に迷ったとき"],
+                 examples: [
+                    ("Sorry, you've lost me — I'm lost. Can you start again?", "ごめん、話についていけてない。もう一回最初から言って？"),
+                    ("Excuse me, I'm a bit lost. Is the station near here?", "すみません、ちょっと道に迷って。駅はこの近くですか？")
+                 ], ipa: "/aɪm lɒst/"),
+            make("you name it", "used after a list to mean 'and anything else you can think of'",
+                 "何でも・何から何まで",
+                 useCases: ["種類の多さを強調するとき"],
+                 examples: [
+                    ("They sell everything — clothes, books, furniture, you name it.", "あそこは何でも売ってるよ。服、本、家具、何でもあり。"),
+                    ("He's played football, tennis, golf, you name it.", "彼はサッカー、テニス、ゴルフ、何でもやってきた。")
+                 ], ipa: "/juː neɪm ɪt/"),
+            make("out of practice", "not as good at something as you used to be because you have not done it recently",
+                 "腕がなまっている・久しぶりで",
+                 useCases: ["久しぶりに何かをするとき", "謙遜するとき"],
+                 examples: [
+                    ("I haven't played the piano for years, so I'm a bit out of practice.", "何年もピアノを弾いてないから、ちょっと腕がなまってる。"),
+                    ("Sorry, my French is out of practice.", "ごめん、フランス語はしばらく使ってなくて。")
+                 ], ipa: "/aʊt əv ˈpræktɪs/"),
+            make("it's a pity", "said when you are disappointed or sorry about something",
+                 "残念だね・惜しいね",
+                 useCases: ["残念な気持ちを伝えるとき", "相手が来られないとき"],
+                 examples: [
+                    ("It's a pity you can't come to the party.", "パーティーに来られないなんて残念だな。"),
+                    ("It's a pity the weather was so bad.", "天気があんなに悪かったのは残念だったね。")
+                 ], ipa: "/ɪts ə ˈpɪti/"),
         ]
     }
 
