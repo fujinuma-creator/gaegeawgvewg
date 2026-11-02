@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28626,6 +28626,116 @@ enum SeedData {
                     ("Do you feel up to a walk, or shall we stay in?", "散歩する元気ある？それとも家にいる？"),
                     ("I don't really feel up to going out tonight.", "今夜はあまり出かける気力がないな。")
                  ], ipa: "/fˈiːl ˈʌp tuː/")
+        ]
+    }
+
+    private static var britishColloquial95: [Word] {
+        [
+            make("not in the mood", "not feeling like doing something at the moment; often followed by \"for\" or \"to\"",
+                 "〜する気分じゃない",
+                 useCases: ["誘いをやんわり断るとき", "今の気分を伝えるとき"],
+                 examples: [
+                    ("I'm not really in the mood for a night out.", "今日は飲みに出かける気分じゃないんだ。"),
+                    ("Sorry, I'm just not in the mood to talk right now.", "ごめん、今はちょっと話す気分じゃなくて。")
+                 ], ipa: "/nˌɒt ɪn ðə mˈuːd/"),
+            make("do you mind", "a polite way of asking someone to do something, or asking if something is OK; followed by -ing or \"if\"",
+                 "〜してもらえますか？・〜してもいい？",
+                 useCases: ["丁寧にお願いするとき", "許可を求めるとき"],
+                 examples: [
+                    ("Do you mind closing the window? It's a bit chilly.", "窓を閉めてもらってもいい？ちょっと寒くて。"),
+                    ("Do you mind if I sit here?", "ここに座ってもいいですか？")
+                 ], ipa: "/dʊ juː mˈaɪnd/"),
+            make("I'm afraid", "a polite way of saying something that may disappoint or annoy someone; also \"I'm afraid so / not\"",
+                 "あいにく・残念ながら",
+                 useCases: ["悪い知らせや断りを柔らかく伝えるとき"],
+                 examples: [
+                    ("I'm afraid we're fully booked tonight.", "あいにく今夜は満席なんです。"),
+                    ("\"Is the shop closed?\" \"I'm afraid so.\"", "「お店閉まってる？」「残念ながらそうなんだ」")
+                 ], ipa: "/aɪm əfɹˈeɪd/"),
+            make("what a pain", "said when something is annoying or inconvenient",
+                 "面倒くさいなあ・厄介だね",
+                 useCases: ["ちょっとしたトラブルや手間に不満を言うとき"],
+                 examples: [
+                    ("The train's cancelled again? What a pain.", "また電車運休？面倒だなあ。"),
+                    ("Filling in all these forms is such a pain.", "この書類全部書くの、本当に面倒くさい。")
+                 ], ipa: "/wˌɒt ə pˈeɪn/"),
+            make("you look well", "a friendly compliment meaning someone looks healthy and happy, often said when you haven't seen them for a while",
+                 "元気そうだね",
+                 useCases: ["久しぶりに会った人に声をかけるとき"],
+                 examples: [
+                    ("Hi! You look well — have you been away?", "やあ！元気そうだね、旅行でも行ってた？"),
+                    ("You're looking well. Retirement suits you!", "元気そうだね。引退生活が合ってるみたい！")
+                 ], ipa: "/juː lˈʊk wˈɛl/"),
+            make("off sick", "away from work or school because you are ill",
+                 "病気で休んでいる",
+                 useCases: ["同僚や自分が病欠していると伝えるとき"],
+                 examples: [
+                    ("Tom's off sick today, so I'm covering for him.", "トムが今日は病欠だから、私が代わりにやってるよ。"),
+                    ("I was off sick most of last week.", "先週はほとんど体調不良で休んでたんだ。")
+                 ], ipa: "/ˌɒf sˈɪk/"),
+            make("have a seat", "a polite and friendly way of inviting someone to sit down",
+                 "どうぞお掛けください・座って",
+                 useCases: ["来客や面接相手に座るよう勧めるとき"],
+                 examples: [
+                    ("Come in and have a seat — I'll be with you in a minute.", "どうぞ入って座ってて。すぐ行くから。"),
+                    ("Please, have a seat. Can I get you a drink?", "どうぞお掛けください。何かお飲みになりますか？")
+                 ], ipa: "/hˌæv ə sˈiːt/"),
+            make("odds and ends", "various small things of different kinds, or small jobs that need doing",
+                 "細々とした物・雑用",
+                 useCases: ["こまごました物や用事をまとめて言うとき"],
+                 examples: [
+                    ("The drawer's full of odds and ends — batteries, keys, that sort of thing.", "引き出しは電池とか鍵とか、細々した物でいっぱいだよ。"),
+                    ("I've just got a few odds and ends to finish before I leave.", "帰る前にちょっとした雑用を片付けなきゃ。")
+                 ], ipa: "/ˌɒdz ənd ˈɛndz/"),
+            make("what about", "used to make a suggestion, or to ask about someone or something that hasn't been mentioned",
+                 "〜はどう？・〜はどうなの？",
+                 useCases: ["提案するとき", "話に出ていない人・物について尋ねるとき"],
+                 examples: [
+                    ("What about meeting on Friday instead?", "代わりに金曜日に会うのはどう？"),
+                    ("I'm having pasta. What about you?", "私はパスタにする。あなたは？")
+                 ], ipa: "/wˌɒt əbˈaʊt/"),
+            make("anyway", "used to change the subject, return to the main point, or end a conversation",
+                 "とにかく・それはそうと・じゃあ（話の区切り）",
+                 useCases: ["話題を戻す・変えるとき", "会話を締めくくるとき"],
+                 examples: [
+                    ("Anyway, enough about me — how's your new job?", "まあ、私の話はいいとして、新しい仕事はどう？"),
+                    ("Anyway, I'd better get going. Speak soon!", "じゃあ、そろそろ行かなきゃ。またね！")
+                 ], ipa: "/ˈɛniweɪ/"),
+            make("you see", "used when explaining something, to make the listener pay attention to the reason",
+                 "ほら・実はね（説明の前置き）",
+                 useCases: ["理由や事情を説明するとき"],
+                 examples: [
+                    ("You see, the thing is, I've already promised Sarah.", "実はね、もうサラと約束しちゃってるんだ。"),
+                    ("I couldn't call — my phone died, you see.", "電話できなかったんだ。ほら、携帯の電池が切れちゃって。")
+                 ], ipa: "/juː sˈiː/"),
+            make("I mean", "used to explain, add to, or correct what you have just said",
+                 "つまり・いや、というか",
+                 useCases: ["言い直すとき", "言ったことを補足するとき"],
+                 examples: [
+                    ("It's nice, I mean, it's not amazing, but it's nice.", "いいよ、というか、すごくはないけど、いい感じ。"),
+                    ("See you Tuesday — I mean Wednesday!", "火曜日にね、いや水曜日だ！")
+                 ], ipa: "/aɪ mˈiːn/"),
+            make("sorry to keep you waiting", "a polite apology to someone who has had to wait for you",
+                 "お待たせしてすみません",
+                 useCases: ["待ち合わせや電話・接客で相手を待たせたとき"],
+                 examples: [
+                    ("Sorry to keep you waiting — the traffic was awful.", "お待たせしてごめん、道がすごく混んでて。"),
+                    ("Thanks for holding, sorry to keep you waiting.", "お待ちいただきありがとうございます。お待たせしました。")
+                 ], ipa: "/sˈɒɹi tə kˈiːp juː wˈeɪtɪŋ/"),
+            make("ages ago", "a very long time ago (informal; often an exaggeration)",
+                 "ずっと前に・とっくに",
+                 useCases: ["かなり前のことだと言うとき"],
+                 examples: [
+                    ("I sent you that email ages ago!", "そのメール、ずいぶん前に送ったよ！"),
+                    ("We met ages ago at a friend's party.", "ずっと前に友達のパーティーで会ったよね。")
+                 ], ipa: "/ˈeɪdʒɪz əɡˈəʊ/"),
+            make("no idea", "used to say that you do not know something at all; also \"I've no idea\"",
+                 "全然わからない・見当もつかない",
+                 useCases: ["質問に全く答えられないとき"],
+                 examples: [
+                    ("\"Where's the remote?\" \"No idea, sorry.\"", "「リモコンどこ？」「さあ、わからない」"),
+                    ("I've no idea what time the film starts.", "映画が何時に始まるか全然わからないんだ。")
+                 ], ipa: "/nˌəʊ aɪdˈɪə/")
         ]
     }
 }
