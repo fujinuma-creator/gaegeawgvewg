@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29506,6 +29506,116 @@ enum SeedData {
                     ("Quick question — are you free on Thursday?", "ちょっと聞きたいんだけど、木曜空いてる？"),
                     ("Sorry to bother you, just a quick question.", "邪魔してごめん、ひとつだけ質問。")
                  ], ipa: "/kwˈɪk kwˈɛstʃən/")
+        ]
+    }
+
+    private static var britishColloquial103: [Word] {
+        [
+            make("cut down on", "to reduce the amount of something you eat, use or do",
+                 "〜を減らす・控える",
+                 useCases: ["食べ物や飲み物を控えるとき", "出費や習慣を減らすとき"],
+                 examples: [
+                    ("I'm trying to cut down on sugar.", "砂糖を控えるようにしてるんだ。"),
+                    ("We need to cut down on takeaways this month.", "今月はテイクアウトを減らさないとね。")
+                 ], ipa: "/kˈʌt dˈaʊn ɒn/"),
+            make("top up", "to add more money to a card or phone, or to refill a drink",
+                 "チャージする・注ぎ足す",
+                 useCases: ["交通カードや携帯にチャージするとき", "飲み物をつぎ足すとき"],
+                 examples: [
+                    ("I need to top up my travel card before we go.", "出かける前に交通カードにチャージしなきゃ。"),
+                    ("Can I top up your glass?", "グラス、つぎ足そうか？")
+                 ], ipa: "/tˈɒp ˈʌp/"),
+            make("on time", "at the planned or expected time; not late",
+                 "時間通りに",
+                 useCases: ["遅刻せずに着くとき", "電車や予定が予定通りか話すとき"],
+                 examples: [
+                    ("Is the train on time today?", "今日は電車、時間通り？"),
+                    ("For once, he actually turned up on time.", "珍しく、彼ちゃんと時間通りに来たよ。")
+                 ], ipa: "/ɒn tˈaɪm/"),
+            make("How are you getting on?", "used to ask how someone is doing or how something is progressing",
+                 "調子はどう？・進み具合はどう？",
+                 useCases: ["新生活や新しい仕事の様子を聞くとき", "作業の進捗を気軽に聞くとき"],
+                 examples: [
+                    ("How are you getting on in the new flat?", "新しい部屋はどう？慣れた？"),
+                    ("How are you getting on with that report?", "あのレポート、進み具合どう？")
+                 ], ipa: "/hˈaʊ ɑː juː ɡˈɛtɪŋ ˈɒn/"),
+            make("Are you serious?", "used to show surprise or disbelief at what someone said",
+                 "マジで？・本気で言ってる？",
+                 useCases: ["驚きのニュースを聞いたとき", "信じられない話に反応するとき"],
+                 examples: [
+                    ("\"I've just quit my job.\" \"Are you serious?\"", "「仕事辞めてきた。」「マジで？」"),
+                    ("Are you serious? It's only nine o'clock and you're tired?", "本気？まだ9時なのにもう眠いの？")
+                 ], ipa: "/ɑː juː sˈɪəɹiəs/"),
+            make("help out", "to help someone, especially by doing part of their work",
+                 "手伝う・手を貸す",
+                 useCases: ["困っている人を手伝うとき", "手伝いを申し出るとき"],
+                 examples: [
+                    ("Thanks for helping out at the party.", "パーティーで手伝ってくれてありがとう。"),
+                    ("If you're busy, I can help out on Saturday.", "忙しいなら、土曜日手伝えるよ。")
+                 ], ipa: "/hˈɛlp ˈaʊt/"),
+            make("free up", "to make time, space or money available for something",
+                 "（時間・場所を）空ける",
+                 useCases: ["予定を調整して時間を作るとき", "スペースを空けるとき"],
+                 examples: [
+                    ("I'll try to free up some time on Friday.", "金曜に時間を空けられるようにしてみるね。"),
+                    ("Delete some photos to free up space on your phone.", "写真を消して携帯の容量を空けなよ。")
+                 ], ipa: "/fɹˈiː ˈʌp/"),
+            make("catch a cold", "to become ill with a cold",
+                 "風邪をひく",
+                 useCases: ["体調不良を伝えるとき", "相手を気遣うとき"],
+                 examples: [
+                    ("I think I've caught a cold — my throat's killing me.", "風邪ひいたかも、喉がすごく痛い。"),
+                    ("Take a coat or you'll catch a cold.", "コート持っていきなよ、風邪ひくよ。")
+                 ], ipa: "/kˈætʃ ə kˈəʊld/"),
+            make("even so", "despite what has just been said",
+                 "それでも・とはいえ",
+                 useCases: ["前の話を受けて反対の意見を言うとき", "譲歩しつつ主張するとき"],
+                 examples: [
+                    ("It was expensive. Even so, it was worth it.", "高かったよ。それでも、その価値はあった。"),
+                    ("I know you're busy, but even so, you should call your mum.", "忙しいのはわかるけど、それでもお母さんに電話しなよ。")
+                 ], ipa: "/ˈiːvən sˈəʊ/"),
+            make("up and running", "working or operating properly",
+                 "稼働して・使える状態で",
+                 useCases: ["機械やシステムが動き出したとき", "新しいお店や事業が始まったとき"],
+                 examples: [
+                    ("The Wi-Fi's back up and running.", "Wi-Fi、また使えるようになったよ。"),
+                    ("It took a while, but the new café is finally up and running.", "時間かかったけど、新しいカフェがやっとオープンしたよ。")
+                 ], ipa: "/ˈʌp ənd ɹˈʌnɪŋ/"),
+            make("What's on?", "used to ask what films, shows or events are happening",
+                 "何やってる？（映画・イベントなど）",
+                 useCases: ["映画やテレビの番組を聞くとき", "週末のイベントを探すとき"],
+                 examples: [
+                    ("What's on at the cinema tonight?", "今夜、映画館で何やってる？"),
+                    ("Let's see what's on in town this weekend.", "今週末、街で何やってるか見てみよう。")
+                 ], ipa: "/wɒts ˈɒn/"),
+            make("a bargain", "something bought for much less than its usual price",
+                 "お買い得品・掘り出し物",
+                 useCases: ["安く買えたものを自慢するとき", "値段が安いと伝えるとき"],
+                 examples: [
+                    ("Only ten pounds? That's a bargain!", "たった10ポンド？お買い得だね！"),
+                    ("I got this jacket for a bargain in the sale.", "このジャケット、セールで安く買えたんだ。")
+                 ], ipa: "/ə bˈɑːɡɪn/"),
+            make("pick up", "to learn a skill or language without much effort, or to collect something",
+                 "（自然に）身につける・受け取る",
+                 useCases: ["言葉やスキルを自然に覚えたとき", "物を取りに行くとき"],
+                 examples: [
+                    ("I picked up a bit of Spanish while I was travelling.", "旅行中にスペイン語をちょっと覚えたよ。"),
+                    ("I'll pick up the keys on my way home.", "帰りに鍵を受け取ってくるね。")
+                 ], ipa: "/pˈɪk ˈʌp/"),
+            make("go with", "to choose something from several options",
+                 "〜にする（選ぶ）",
+                 useCases: ["注文や選択を決めるとき", "相手の案に乗るとき"],
+                 examples: [
+                    ("I think I'll go with the blue one.", "青いのにしようかな。"),
+                    ("Let's go with your idea — it's simpler.", "君の案でいこう、そっちのほうがシンプルだし。")
+                 ], ipa: "/ɡˈəʊ wɪð/"),
+            make("I'll have", "used when ordering food or drink",
+                 "〜をください・〜にします（注文）",
+                 useCases: ["レストランやカフェで注文するとき", "パブで飲み物を頼むとき"],
+                 examples: [
+                    ("I'll have the fish and chips, please.", "フィッシュ・アンド・チップスをお願いします。"),
+                    ("\"What are you drinking?\" \"I'll have a lemonade, thanks.\"", "「何飲む？」「レモネードにするよ、ありがとう。」")
+                 ], ipa: "/aɪl hˈæv/")
         ]
     }
 }
