@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29176,6 +29176,116 @@ enum SeedData {
                     ("I'll give you a ring later this week.", "今週中にまた電話するね。"),
                     ("Give me a ring when you get home.", "家に着いたら電話ちょうだい。")
                  ], ipa: "/ɡˈɪv sˈʌmwʌn ə ɹˈɪŋ/")
+        ]
+    }
+
+    private static var britishColloquial100: [Word] {
+        [
+            make("whatever works", "used to say you are happy with any option that suits the other person",
+                 "都合のいい方でいいよ",
+                 useCases: ["相手の都合に合わせるとき", "予定や方法の選択を任せるとき"],
+                 examples: [
+                    ("\"Shall we meet at six or seven?\" \"Whatever works for you.\"", "「6時と7時どっちにする？」「そっちの都合のいい方でいいよ。」"),
+                    ("Call or text — whatever works.", "電話でもメッセージでも、やりやすい方でいいよ。")
+                 ], ipa: "/wɒtˈɛvə wˈɜːks/"),
+            make("I'm on it", "used to say you will deal with something straight away",
+                 "すぐやるよ・任せて",
+                 useCases: ["頼まれたことにすぐ取りかかるとき", "仕事で対応を引き受けるとき"],
+                 examples: [
+                    ("\"Can someone book a table?\" \"I'm on it.\"", "「誰か席を予約してくれる？」「任せて、今やる。」"),
+                    ("Don't worry about the report — I'm on it.", "報告書は心配しないで、もう取りかかってるから。")
+                 ], ipa: "/aɪm ˈɒn ɪt/"),
+            make("I'm game", "used to say you are willing to try something or join in",
+                 "やるよ・乗った",
+                 useCases: ["新しいことへの誘いに乗るとき", "ちょっと大胆な提案に賛成するとき"],
+                 examples: [
+                    ("Karaoke after dinner? I'm game if you are.", "夕食の後カラオケ？君が行くなら僕も行くよ。"),
+                    ("\"Fancy trying the spicy one?\" \"Sure, I'm game.\"", "「激辛のやつ試してみる？」「いいね、やってみる。」")
+                 ], ipa: "/aɪm ɡˈeɪm/"),
+            make("a pain in the neck", "a person or thing that is very annoying",
+                 "厄介なもの・面倒な人",
+                 useCases: ["面倒な作業や手続きに文句を言うとき", "うっとうしい人について話すとき"],
+                 examples: [
+                    ("Parking in the city centre is a real pain in the neck.", "街の中心部で駐車するのは本当に面倒だよ。"),
+                    ("Sorry to be a pain in the neck, but could you check it again?", "面倒をかけて悪いんだけど、もう一度確認してもらえる？")
+                 ], ipa: "/ə pˈeɪn ɪn ðə nˈɛk/"),
+            make("it's been a long day", "used to say you are tired after a busy or difficult day",
+                 "長い一日だった・今日は疲れた",
+                 useCases: ["一日の終わりに疲れを伝えるとき", "早く休みたいと伝えるとき"],
+                 examples: [
+                    ("I'm going to bed early — it's been a long day.", "今日は早く寝るよ。長い一日だったから。"),
+                    ("Sit down and relax, it's been a long day for all of us.", "座ってゆっくりして。みんなにとって長い一日だったね。")
+                 ], ipa: "/ɪts bɪn ə lˈɒŋ dˈeɪ/"),
+            make("banter", "friendly, playful teasing and joking between people",
+                 "軽口・冗談の言い合い",
+                 useCases: ["友人や同僚との楽しいやりとりを表すとき", "冗談だと伝えるとき"],
+                 examples: [
+                    ("Don't take it seriously — it's just banter.", "真に受けないで、ただの冗談だから。"),
+                    ("There's always good banter in our office.", "うちの職場はいつも冗談が飛び交ってて楽しいよ。")
+                 ], ipa: "/bˈæntə/"),
+            make("bank holiday", "a public holiday in the UK when most businesses are closed",
+                 "（イギリスの）祝日・公休日",
+                 useCases: ["連休の予定を話すとき", "店や役所が休みかどうか話すとき"],
+                 examples: [
+                    ("Are you doing anything over the bank holiday weekend?", "連休の週末は何か予定ある？"),
+                    ("The shops close early on a bank holiday.", "祝日はお店が早く閉まるよ。")
+                 ], ipa: "/bˈæŋk hˈɒlɪdeɪ/"),
+            make("city break", "a short holiday spent in a city, usually for a few days",
+                 "（数日の）都市旅行",
+                 useCases: ["週末旅行の計画を話すとき", "ヨーロッパの近場旅行について話すとき"],
+                 examples: [
+                    ("We're thinking of a city break in Lisbon this spring.", "この春、リスボンに数日旅行しようかと思ってる。"),
+                    ("Prague is perfect for a city break.", "プラハは短い都市旅行にぴったりだよ。")
+                 ], ipa: "/sˈɪti bɹˈeɪk/"),
+            make("house-warming", "a party you have to celebrate moving into a new home",
+                 "引っ越し祝い（のパーティー）",
+                 useCases: ["新居のお披露目に人を招くとき", "引っ越した友人の家を訪ねるとき"],
+                 examples: [
+                    ("We're having a house-warming on Saturday — you should come!", "土曜に引っ越し祝いをするから来てよ！"),
+                    ("I bought them a plant as a house-warming present.", "引っ越し祝いに観葉植物をあげたよ。")
+                 ], ipa: "/hˈaʊs wɔːmɪŋ/"),
+            make("get-together", "an informal meeting or small party with friends or family",
+                 "集まり・ちょっとした会",
+                 useCases: ["友人や家族の気軽な集まりを提案するとき", "予定を説明するとき"],
+                 examples: [
+                    ("We should have a get-together before everyone leaves for summer.", "みんなが夏休みに出かける前に集まろうよ。"),
+                    ("It's just a small family get-together, nothing fancy.", "ただの小さな家族の集まりで、堅苦しいものじゃないよ。")
+                 ], ipa: "/ɡˈɛt təɡɛðə/"),
+            make("night out", "an evening spent going out to restaurants, bars, or clubs",
+                 "夜の外出・飲みに出かけること",
+                 useCases: ["飲みや夜遊びの予定を話すとき", "前夜の出来事を話すとき"],
+                 examples: [
+                    ("We haven't had a proper night out in ages.", "ちゃんと夜に遊びに出かけるの、久しぶりだね。"),
+                    ("How was your night out on Friday?", "金曜の夜の飲み会どうだった？")
+                 ], ipa: "/nˈaɪt ˈaʊt/"),
+            make("on a budget", "trying to spend as little money as possible",
+                 "予算を抑えて・節約中で",
+                 useCases: ["お金をあまり使えないと伝えるとき", "安い選択肢を探すとき"],
+                 examples: [
+                    ("I'm on a budget this month, so let's eat in.", "今月は節約中だから、家で食べよう。"),
+                    ("You can still see a lot of Paris on a budget.", "予算を抑えてもパリはたくさん見て回れるよ。")
+                 ], ipa: "/ɒn ə bˈʌdʒɪt/"),
+            make("treat yourself", "to buy or do something nice for yourself as a reward",
+                 "自分にご褒美をあげる",
+                 useCases: ["頑張った人に贅沢を勧めるとき", "ちょっとした買い物を正当化するとき"],
+                 examples: [
+                    ("You worked so hard this week — treat yourself!", "今週すごく頑張ったんだから、自分にご褒美あげなよ！"),
+                    ("Go on, treat yourself to the nice wine.", "ほら、いいワインでも買って自分を甘やかしなよ。")
+                 ], ipa: "/tɹˈiːt jɔːsˈɛlf/"),
+            make("day trip", "a journey to a place and back on the same day for pleasure",
+                 "日帰り旅行",
+                 useCases: ["週末のお出かけを計画するとき", "近場の観光地を勧めるとき"],
+                 examples: [
+                    ("We did a day trip to the seaside on Sunday.", "日曜に海辺へ日帰りで行ってきたよ。"),
+                    ("Oxford is an easy day trip from London.", "オックスフォードはロンドンから気軽に日帰りで行けるよ。")
+                 ], ipa: "/dˈeɪ tɹɪp/"),
+            make("fully booked", "having no places, rooms, or tables left because all have been reserved",
+                 "予約でいっぱい・満席",
+                 useCases: ["レストランやホテルの予約が取れないとき", "スケジュールが埋まっていると伝えるとき"],
+                 examples: [
+                    ("Sorry, we're fully booked tonight.", "申し訳ありません、今夜は予約でいっぱいです。"),
+                    ("All the hotels near the beach were fully booked.", "ビーチ近くのホテルは全部満室だった。")
+                 ], ipa: "/fˈʊli bˈʊkt/")
         ]
     }
 }
