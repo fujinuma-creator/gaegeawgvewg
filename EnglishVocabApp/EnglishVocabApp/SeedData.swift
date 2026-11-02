@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28736,6 +28736,116 @@ enum SeedData {
                     ("\"Where's the remote?\" \"No idea, sorry.\"", "「リモコンどこ？」「さあ、わからない」"),
                     ("I've no idea what time the film starts.", "映画が何時に始まるか全然わからないんだ。")
                  ], ipa: "/nˌəʊ aɪdˈɪə/")
+        ]
+    }
+
+    private static var britishColloquial96: [Word] {
+        [
+            make("pick sb up", "to go and collect someone in a car, usually from a station, airport or school",
+                 "（車で）〜を迎えに行く",
+                 useCases: ["送迎の約束をするとき", "迎えを頼むとき"],
+                 examples: [
+                    ("Can you pick me up from the station at six?", "6時に駅まで迎えに来てくれる？"),
+                    ("I'll pick the kids up after work.", "仕事の後で子どもたちを迎えに行くよ。")
+                 ], ipa: "/pˈɪk ˌʌp/"),
+            make("that's very kind of you", "a warm, polite way of thanking someone for an offer or for helping you",
+                 "ご親切にありがとうございます",
+                 useCases: ["申し出や手助けにお礼を言うとき"],
+                 examples: [
+                    ("You brought me flowers? That's very kind of you.", "お花を持ってきてくれたの？本当にありがとう。"),
+                    ("\"I can give you a lift home.\" \"Oh, that's very kind of you.\"", "「家まで送るよ」「わあ、ご親切にありがとう」")
+                 ], ipa: "/ðæts vˈɛɹi kˈaɪnd əv juː/"),
+            make("nice one", "said to praise someone who has done something well, or to say thanks casually",
+                 "いいね！・やったね・ありがとう",
+                 useCases: ["相手の行動を軽く褒めるとき", "カジュアルにお礼を言うとき"],
+                 examples: [
+                    ("\"I got us tickets for Saturday.\" \"Nice one!\"", "「土曜のチケット取れたよ」「やったね！」"),
+                    ("You fixed the printer? Nice one, thanks.", "プリンター直してくれたの？ありがとう、助かる。")
+                 ], ipa: "/nˈaɪs wˈʌn/"),
+            make("just in case", "as a precaution, because something might happen",
+                 "念のため・万一に備えて",
+                 useCases: ["念のための行動を説明するとき"],
+                 examples: [
+                    ("Take an umbrella, just in case.", "念のため傘を持って行って。"),
+                    ("I'll give you my number just in case you get lost.", "迷ったときのために番号を渡しておくね。")
+                 ], ipa: "/dʒˈʌst ɪn kˈeɪs/"),
+            make("in a minute", "very soon; used to say you will do something shortly",
+                 "すぐに・ちょっと待って",
+                 useCases: ["すぐ対応すると伝えるとき", "少し待ってもらうとき"],
+                 examples: [
+                    ("I'll be with you in a minute.", "すぐ行きますね。"),
+                    ("\"Dinner's ready!\" \"Coming in a minute!\"", "「ご飯できたよ！」「すぐ行く！」")
+                 ], ipa: "/ɪn ə mˈɪnɪt/"),
+            make("here you are", "said when you give something to someone; also \"here you go\"",
+                 "はい、どうぞ",
+                 useCases: ["物を手渡すとき", "お店で商品やお釣りを渡すとき"],
+                 examples: [
+                    ("\"Could I borrow a pen?\" \"Sure, here you are.\"", "「ペン借りてもいい？」「いいよ、はいどうぞ」"),
+                    ("Here you are — one flat white and a croissant.", "はい、フラットホワイトとクロワッサンです。")
+                 ], ipa: "/hˈɪə juː ˈɑː/"),
+            make("all of a sudden", "suddenly and unexpectedly",
+                 "突然・いきなり",
+                 useCases: ["予想外の出来事を話すとき"],
+                 examples: [
+                    ("All of a sudden, the lights went out.", "いきなり電気が消えたんだ。"),
+                    ("We were chatting and all of a sudden she started crying.", "話していたら突然彼女が泣き出したの。")
+                 ], ipa: "/ˈɔːl əv ə sˈʌdən/"),
+            make("see you around", "a casual way of saying goodbye when you don't have a fixed plan to meet again",
+                 "またどこかで・じゃあまたね",
+                 useCases: ["次に会う予定がない相手との別れ際"],
+                 examples: [
+                    ("Nice chatting to you. See you around!", "話せて楽しかった。またね！"),
+                    ("Right, I'm heading off. See you around.", "じゃあ、そろそろ行くね。またどこかで。")
+                 ], ipa: "/sˈiː juː əɹˈaʊnd/"),
+            make("fall through", "if a plan or arrangement falls through, it fails to happen",
+                 "（計画などが）だめになる・流れる",
+                 useCases: ["予定や取引が実現しなかったと伝えるとき"],
+                 examples: [
+                    ("Our holiday plans fell through at the last minute.", "旅行の計画が直前でだめになっちゃった。"),
+                    ("The deal on the flat fell through, so we're still looking.", "部屋の契約が流れて、まだ探してるんだ。")
+                 ], ipa: "/fˈɔːl θɹˈuː/"),
+            make("first thing", "very early in the day, before doing anything else; often \"first thing in the morning\"",
+                 "朝一番に・真っ先に",
+                 useCases: ["朝一で何かをすると約束するとき"],
+                 examples: [
+                    ("I'll call them first thing tomorrow.", "明日の朝一で電話するよ。"),
+                    ("Can you send it first thing in the morning?", "朝一番で送ってもらえる？")
+                 ], ipa: "/fˈɜːst θˈɪŋ/"),
+            make("it's getting late", "a polite way of saying it's time to leave or finish something",
+                 "もう遅くなってきたね",
+                 useCases: ["そろそろ帰ろうと切り出すとき", "集まりをお開きにするとき"],
+                 examples: [
+                    ("Well, it's getting late — I should head home.", "さて、もう遅いし、そろそろ帰らなきゃ。"),
+                    ("It's getting late. Shall we finish this tomorrow?", "遅くなってきたね。続きは明日にしようか？")
+                 ], ipa: "/ɪts ɡˈɛtɪŋ lˈeɪt/"),
+            make("be dying to", "to want to do or have something very much",
+                 "〜したくてたまらない",
+                 useCases: ["強い願望や期待を伝えるとき"],
+                 examples: [
+                    ("I'm dying to see the new photos!", "新しい写真、見たくてたまらない！"),
+                    ("I'm dying for a cup of tea.", "紅茶が飲みたくて仕方ないよ。")
+                 ], ipa: "/bi dˈaɪɪŋ tuː/"),
+            make("say hi to", "to pass on a friendly greeting to someone; also \"say hello to\"",
+                 "〜によろしく伝えて",
+                 useCases: ["共通の知人によろしくと伝えるとき"],
+                 examples: [
+                    ("Say hi to your mum for me.", "お母さんによろしく伝えてね。"),
+                    ("Anna says hi, by the way.", "そういえば、アンナがよろしくって。")
+                 ], ipa: "/sˈeɪ hˈaɪ tuː/"),
+            make("get together", "to meet socially, usually in an informal way; also a noun \"a get-together\"",
+                 "集まる・会う（集まり）",
+                 useCases: ["友人と会う約束をするとき", "気軽な集まりについて話すとき"],
+                 examples: [
+                    ("We should get together for a drink soon.", "近いうちに飲みに集まろうよ。"),
+                    ("We're having a little get-together on Friday.", "金曜にちょっとした集まりをするんだ。")
+                 ], ipa: "/ɡˈɛt təɡˈɛðə/"),
+            make("be running low on", "to have only a small amount of something left",
+                 "〜が残り少なくなっている",
+                 useCases: ["在庫や残量が少ないと伝えるとき"],
+                 examples: [
+                    ("We're running low on milk — can you grab some?", "牛乳が残り少ないんだ、買ってきてくれる？"),
+                    ("My phone's running low on battery.", "携帯の充電が少なくなってきた。")
+                 ], ipa: "/bi ɹˈʌnɪŋ lˈəʊ ɒn/")
         ]
     }
 }
