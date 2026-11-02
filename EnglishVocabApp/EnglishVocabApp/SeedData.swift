@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28406,6 +28406,116 @@ enum SeedData {
                     ("Sorry, it took ages to find a parking space.", "ごめん、駐車場所を見つけるのにすごく時間がかかって。"),
                     ("The bus is taking ages — shall we walk?", "バス、全然来ないね。歩こうか？")
                  ], ipa: "/tˈeɪk ˈeɪdʒɪz/")
+        ]
+    }
+
+    private static var britishColloquial93: [Word] {
+        [
+            make("call off", "to cancel an event or plan that was going to happen",
+                 "中止する・取りやめる",
+                 useCases: ["予定やイベントがなくなったと伝えるとき"],
+                 examples: [
+                    ("They called off the match because of the rain.", "雨で試合が中止になったよ。"),
+                    ("We've called off the party — half of us are ill.", "パーティーはやめにしたよ。半分が体調崩してて。")
+                 ], ipa: "/kˌɔːl ˈɒf/"),
+            make("look into", "to investigate or find out more about something",
+                 "調べる・検討する",
+                 useCases: ["問題や質問を確認すると約束するとき"],
+                 examples: [
+                    ("Leave it with me — I'll look into it.", "任せて、調べてみるよ。"),
+                    ("We're looking into moving somewhere cheaper.", "もっと安いところへの引っ越しを検討中なんだ。")
+                 ], ipa: "/lˌʊk ˈɪntuː/"),
+            make("turn down", "to refuse an offer or invitation; also to lower the volume or heat",
+                 "断る・（音量などを）下げる",
+                 useCases: ["誘いや申し出を断ったと話すとき", "音量を下げてと頼むとき"],
+                 examples: [
+                    ("She turned down the job because of the long commute.", "通勤が長いから、彼女はその仕事を断ったんだ。"),
+                    ("Could you turn the music down a bit?", "音楽、ちょっと小さくしてくれる？")
+                 ], ipa: "/tˌɜːn dˈaʊn/"),
+            make("stick around", "to stay somewhere for a while longer",
+                 "（帰らずに）残る・もう少しいる",
+                 useCases: ["もう少しいてと引き止めるとき", "しばらく残ると言うとき"],
+                 examples: [
+                    ("Stick around — the band's on in ten minutes.", "まだいなよ。あと10分でバンドが始まるから。"),
+                    ("I'll stick around in case you need a hand.", "手伝いがいるかもしれないから、残っておくよ。")
+                 ], ipa: "/stˌɪk əɹˈaʊnd/"),
+            make("go along with", "to agree with or accept an idea or plan, often without arguing",
+                 "（意見・計画に）従う・同調する",
+                 useCases: ["反対せずに人の案に乗るとき"],
+                 examples: [
+                    ("I wasn't sure, but I went along with it.", "迷ったけど、とりあえず合わせたよ。"),
+                    ("Just go along with whatever he says for now.", "今は彼の言うことに合わせておいて。")
+                 ], ipa: "/ɡˌəʊ əlˈɒŋ wɪð/"),
+            make("after all", "despite what was expected; or used to give a reason that supports what you said",
+                 "結局・なんだかんだ言っても",
+                 useCases: ["予想に反してそうなったと言うとき", "理由を補足するとき"],
+                 examples: [
+                    ("It didn't rain after all.", "結局雨は降らなかったね。"),
+                    ("Let him rest — he is only five, after all.", "休ませてあげて。だってまだ5歳なんだから。")
+                 ], ipa: "/ˌɑːftər ˈɔːl/"),
+            make("all in all", "considering everything; overall",
+                 "全体的に見て・総じて",
+                 useCases: ["出来事を振り返ってまとめるとき"],
+                 examples: [
+                    ("All in all, it was a great weekend.", "全体的に見て、最高の週末だったよ。"),
+                    ("There were a few problems, but all in all it went well.", "いくつか問題はあったけど、総じてうまくいった。")
+                 ], ipa: "/ˌɔːl ɪn ˈɔːl/"),
+            make("that said", "used to add something that contrasts with what you have just said",
+                 "とはいえ・そうは言っても",
+                 useCases: ["前の発言に反対の要素を付け加えるとき"],
+                 examples: [
+                    ("It's expensive. That said, the food is amazing.", "高いよ。とはいえ、料理は最高なんだ。"),
+                    ("I love my job. That said, I could do with a holiday.", "仕事は好きだよ。そうは言っても休みは欲しいけどね。")
+                 ], ipa: "/ðˈæt sˈɛd/"),
+            make("rule of thumb", "a practical, general guideline based on experience rather than exact rules",
+                 "目安・経験則",
+                 useCases: ["大まかな基準やコツを伝えるとき"],
+                 examples: [
+                    ("As a rule of thumb, leave an hour for the airport.", "目安として、空港には1時間は見ておいて。"),
+                    ("My rule of thumb is: if in doubt, don't buy it.", "迷ったら買わない、が僕のルールだよ。")
+                 ], ipa: "/ɹˈuːl əv θˈʌm/"),
+            make("word of mouth", "information passed on by people talking to each other, not by advertising",
+                 "口コミ",
+                 useCases: ["評判や情報が人づてに広まったと言うとき"],
+                 examples: [
+                    ("We found this restaurant by word of mouth.", "このレストランは口コミで知ったんだ。"),
+                    ("Most of their customers come through word of mouth.", "客のほとんどは口コミで来るんだって。")
+                 ], ipa: "/wˈɜːd əv mˈaʊθ/"),
+            make("a matter of time", "something that will certainly happen eventually",
+                 "時間の問題",
+                 useCases: ["いずれ必ず起こると言うとき"],
+                 examples: [
+                    ("It's only a matter of time before they find out.", "彼らにバレるのは時間の問題だよ。"),
+                    ("Don't worry, it's just a matter of time.", "心配しないで、時間の問題だから。")
+                 ], ipa: "/ə mˈætər əv tˈaɪm/"),
+            make("in the meantime", "in the period of time between now and a future event",
+                 "その間に・それまでの間",
+                 useCases: ["何かを待つ間にすることを言うとき"],
+                 examples: [
+                    ("Dinner's in an hour. In the meantime, have a snack.", "夕飯は1時間後。それまで何かつまんでて。"),
+                    ("The engineer comes on Monday — in the meantime, use the other printer.", "業者は月曜に来るから、それまでは別のプリンターを使って。")
+                 ], ipa: "/ɪn ðə mˈiːntaɪm/"),
+            make("back out", "to decide not to do something you had agreed or promised to do",
+                 "（約束などから）手を引く・やめる",
+                 useCases: ["約束や計画を直前で降りるとき"],
+                 examples: [
+                    ("He backed out at the last minute.", "彼、ギリギリで降りちゃったんだ。"),
+                    ("You can't back out now — we've booked the tickets!", "今さらやめるとか無しだよ、チケット取ったんだから！")
+                 ], ipa: "/bˌæk ˈaʊt/"),
+            make("kick off", "to start (an event, meeting, or match); also, informally, to start an argument",
+                 "始まる・始める・（口論が）勃発する",
+                 useCases: ["会議やイベントを始めるとき", "試合開始時刻を言うとき"],
+                 examples: [
+                    ("Shall we kick off with a quick update?", "まず簡単な近況報告から始めましょうか？"),
+                    ("What time does the match kick off?", "試合って何時に始まるの？")
+                 ], ipa: "/kˌɪk ˈɒf/"),
+            make("get away with", "to do something wrong without being punished or criticised",
+                 "（悪いことを）とがめられずに済む",
+                 useCases: ["ズルや失敗が見逃されたと言うとき"],
+                 examples: [
+                    ("He's always late and somehow gets away with it.", "あいつ毎回遅刻するのに、なぜか怒られないんだよね。"),
+                    ("You won't get away with this!", "このままじゃ済まないからね！")
+                 ], ipa: "/ɡɛt əwˈeɪ wɪð/")
         ]
     }
 }
