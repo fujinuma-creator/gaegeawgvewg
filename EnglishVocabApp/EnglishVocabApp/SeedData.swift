@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31153,6 +31153,115 @@ enum SeedData {
                     ("Go easy on him — it's his first day.", "彼にはお手柔らかにね。初日なんだから。"),
                     ("Go easy on the salt, please.", "塩は控えめにしてね。")
                  ], ipa: "/ɡəʊ ˈiːzi ɒn/"),
+        ]
+    }
+    private static var britishColloquial118: [Word] {
+        [
+            make("likewise", "said in reply to show that you feel the same or wish the same thing back",
+                 "こちらこそ・同じく",
+                 useCases: ["初対面の挨拶に返すとき", "相手と同じ気持ちを伝えるとき"],
+                 examples: [
+                    ("Nice to meet you. — Likewise.", "はじめまして。— こちらこそ。"),
+                    ("I really enjoyed tonight. — Likewise, we should do it again.", "今夜は本当に楽しかった。— 同じく、またやろうよ。")
+                 ], ipa: "/ˈlaɪkwaɪz/"),
+            make("I'll get this", "said when you offer to pay the bill for everyone",
+                 "ここは私が払うよ",
+                 useCases: ["食事やお茶の会計時", "相手にごちそうするとき"],
+                 examples: [
+                    ("Put your wallet away — I'll get this.", "財布はしまって。ここは僕が払うよ。"),
+                    ("I'll get this one, you can get the next round.", "今回は私が払うから、次はお願いね。")
+                 ], ipa: "/aɪl ɡet ðɪs/"),
+            make("it's safe to say", "used to say that something is almost certainly true",
+                 "〜と言って間違いない・〜なのは確かだ",
+                 useCases: ["自信を持って結論を述べるとき", "控えめに断言するとき"],
+                 examples: [
+                    ("It's safe to say she won't be coming back.", "彼女が戻ってこないのは間違いないね。"),
+                    ("I think it's safe to say the party was a success.", "パーティーは大成功だったと言っていいね。")
+                 ], ipa: "/ɪts seɪf tə seɪ/"),
+            make("do your fair share", "to do the amount of work or effort that is reasonable and expected of you",
+                 "自分の分担をきちんとこなす",
+                 useCases: ["家事や仕事の分担の話", "協力を求めるとき"],
+                 examples: [
+                    ("Everyone needs to do their fair share of the cleaning.", "みんな自分の分の掃除はちゃんとやらないと。"),
+                    ("I feel like I'm not doing my fair share at home.", "家で自分の役割を果たせてない気がする。")
+                 ], ipa: "/duː jɔː feə ʃeə/"),
+            make("have my hands full", "to be very busy, with no time or energy for anything else",
+                 "手一杯だ・手が離せない",
+                 useCases: ["忙しくて頼みを断るとき", "子育てや仕事で余裕がないとき"],
+                 examples: [
+                    ("I'd love to help, but I've got my hands full this week.", "手伝いたいけど、今週は手一杯なんだ。"),
+                    ("With two toddlers, she really has her hands full.", "幼い子が二人いて、彼女は本当に手一杯だよ。")
+                 ], ipa: "/hæv maɪ hændz fʊl/"),
+            make("still going strong", "still working well, healthy or successful after a long time",
+                 "今でも元気・まだまだ現役",
+                 useCases: ["長く続いているものを話すとき", "高齢の人の元気さを褒めるとき"],
+                 examples: [
+                    ("My grandad is 90 and still going strong.", "祖父は90歳だけど、まだまだ元気だよ。"),
+                    ("That old car of mine is still going strong.", "僕の古い車、まだ現役で走ってるよ。")
+                 ], ipa: "/stɪl ˈɡəʊɪŋ strɒŋ/"),
+            make("in good time", "early enough, with time to spare before something starts",
+                 "余裕を持って・早めに",
+                 useCases: ["空港や駅に行く話", "締め切りの話"],
+                 examples: [
+                    ("Let's leave now so we get to the airport in good time.", "余裕を持って空港に着けるよう、もう出よう。"),
+                    ("I'll send it over in good time before the meeting.", "会議の前に早めに送っておくね。")
+                 ], ipa: "/ɪn ɡʊd taɪm/"),
+            make("I've had a rough day", "said to explain that your day has been difficult, tiring or stressful",
+                 "今日はさんざんな一日だった",
+                 useCases: ["帰宅して疲れを伝えるとき", "機嫌が悪い理由を説明するとき"],
+                 examples: [
+                    ("Sorry I'm quiet — I've had a rough day at work.", "口数少なくてごめん、今日は仕事でさんざんだったんだ。"),
+                    ("You look like you've had a rough day. Fancy a cup of tea?", "大変な一日だったみたいだね。紅茶でも飲む？")
+                 ], ipa: "/aɪv hæd ə rʌf deɪ/"),
+            make("I'll leave you to it", "said when you leave someone so they can continue what they are doing",
+                 "じゃあ邪魔しないでおくね・あとはよろしく",
+                 useCases: ["忙しそうな人のそばを離れるとき", "会話を切り上げるとき"],
+                 examples: [
+                    ("You look busy, so I'll leave you to it.", "忙しそうだから、邪魔しないでおくね。"),
+                    ("Right, I'll leave you to it — shout if you need anything.", "じゃあ任せるね。何かあったら声かけて。")
+                 ], ipa: "/aɪl liːv juː tʊ ɪt/"),
+            make("no strings attached", "without any special conditions or obligations",
+                 "見返りなしで・条件なしで",
+                 useCases: ["無償の申し出をするとき", "条件の有無を確認するとき"],
+                 examples: [
+                    ("You can borrow the flat for a week — no strings attached.", "1週間部屋を使っていいよ。見返りはいらないから。"),
+                    ("Is it really free, with no strings attached?", "本当に無料で、何の条件もないの？")
+                 ], ipa: "/nəʊ strɪŋz əˈtætʃt/"),
+            make("the odd one out", "a person or thing that is different from the others in a group",
+                 "一人だけ浮いている人・仲間外れ",
+                 useCases: ["グループの中で違う存在の話", "クイズで違うものを選ぶとき"],
+                 examples: [
+                    ("Everyone else wore suits, so I felt like the odd one out.", "みんなスーツで、自分だけ浮いてる気がした。"),
+                    ("Which of these is the odd one out?", "この中で仲間外れはどれ？")
+                 ], ipa: "/ði ɒd wʌn aʊt/"),
+            make("you can't go wrong with", "used to say that something is always a good or safe choice",
+                 "〜なら間違いない・〜を選べば失敗しない",
+                 useCases: ["おすすめをするとき", "プレゼントや料理選びの話"],
+                 examples: [
+                    ("If you're not sure what to order, you can't go wrong with the fish.", "迷ったら、魚料理なら間違いないよ。"),
+                    ("You can't go wrong with flowers for a birthday.", "誕生日に花を贈れば失敗しないよ。")
+                 ], ipa: "/juː kɑːnt ɡəʊ rɒŋ wɪð/"),
+            make("if all else fails", "if every other plan or method does not work",
+                 "他が全部ダメなら・最悪の場合は",
+                 useCases: ["最終手段を提案するとき", "代替案を話すとき"],
+                 examples: [
+                    ("Try restarting it — if all else fails, call IT.", "再起動してみて。それでもダメならITに電話して。"),
+                    ("If all else fails, we can always get a taxi.", "最悪の場合は、タクシーに乗ればいいよ。")
+                 ], ipa: "/ɪf ɔːl els feɪlz/"),
+            make("let's call it even", "said to agree that neither person owes the other anything now",
+                 "これで貸し借りなしにしよう",
+                 useCases: ["お金や借りを清算するとき", "お互い様だと伝えるとき"],
+                 examples: [
+                    ("You paid for lunch, I paid for the taxi — let's call it even.", "ランチは君、タクシーは僕が払ったから、これで貸し借りなしね。"),
+                    ("Just give me a fiver and we'll call it even.", "5ポンドくれたら、それでチャラにしよう。")
+                 ], ipa: "/lets kɔːl ɪt ˈiːvn/"),
+            make("it's a date", "said to confirm that you have agreed to meet or do something at a particular time",
+                 "じゃあ決まりね・約束だよ",
+                 useCases: ["予定を確定させるとき", "友達との約束をするとき"],
+                 examples: [
+                    ("Dinner on Friday at eight? — It's a date.", "金曜8時に夕食でいい？— じゃあ決まりね。"),
+                    ("Coffee next week, then? It's a date!", "じゃあ来週コーヒーね。約束だよ！")
+                 ], ipa: "/ɪts ə deɪt/"),
         ]
     }
 
