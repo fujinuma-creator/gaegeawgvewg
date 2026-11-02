@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27856,6 +27856,116 @@ enum SeedData {
                     ("That picture looks a bit wonky.", "あの絵、ちょっと傾いてない？"),
                     ("This table's got a wonky leg.", "このテーブル、脚がガタガタしてる。")
                  ], ipa: "/wˈɒŋki/")
+        ]
+    }
+
+    private static var britishColloquial88: [Word] {
+        [
+            make("suss out", "to work out or figure out the truth about someone or something",
+                 "見抜く・把握する・様子を探る",
+                 useCases: ["状況や人の本性・やり方を見極めるとき"],
+                 examples: [
+                    ("Give me a day to suss out how the system works.", "システムの仕組みを把握するのに1日ちょうだい。"),
+                    ("She sussed him out straight away.", "彼女はすぐに彼の本性を見抜いたよ。")
+                 ], ipa: "/sˈʌs ˈaʊt/"),
+            make("a good laugh", "someone or something that is a lot of fun",
+                 "すごく楽しい人・こと",
+                 useCases: ["一緒にいて楽しい人や楽しかった出来事を言うとき"],
+                 examples: [
+                    ("You'll like Tom — he's a good laugh.", "トムのこと気に入ると思うよ、すごく面白いやつだから。"),
+                    ("The party was a good laugh.", "パーティー、めっちゃ楽しかったよ。")
+                 ], ipa: "/ə ɡˈʊd lˈɑːf/"),
+            make("out of sorts", "feeling slightly unwell or not in a good mood",
+                 "なんとなく調子が悪い・気分がすぐれない",
+                 useCases: ["体調や気分がいまいちなことを言うとき"],
+                 examples: [
+                    ("I've been feeling a bit out of sorts all week.", "今週ずっとなんか調子が出ないんだ。"),
+                    ("He seems out of sorts today — is he okay?", "彼、今日元気なさそうだけど大丈夫？")
+                 ], ipa: "/ˈaʊt əv sˈɔːts/"),
+            make("it's my shout", "it's my turn to pay, especially for drinks",
+                 "ここは私のおごり・今回は僕が払う番",
+                 useCases: ["パブや食事で自分が払う番だと言うとき"],
+                 examples: [
+                    ("Put your wallet away — it's my shout.", "財布しまって、今回は俺のおごりだから。"),
+                    ("Whose shout is it? — I think it's mine.", "誰が払う番だっけ？ ―たぶん私だね。")
+                 ], ipa: "/ɪts mˈaɪ ʃˈaʊt/"),
+            make("a sight for sore eyes", "a person or thing you are very pleased to see",
+                 "会えて本当にうれしい人・見てほっとするもの",
+                 useCases: ["久しぶりに会えた人や待ち望んだものを見たとき"],
+                 examples: [
+                    ("Well, you're a sight for sore eyes!", "いやあ、会えて本当にうれしいよ！"),
+                    ("After that hike, the pub was a sight for sore eyes.", "あのハイキングの後だと、パブが見えた時はほっとしたよ。")
+                 ], ipa: "/ə sˈaɪt fə sˈɔː ˈaɪz/"),
+            make("steer clear of", "to avoid someone or something",
+                 "〜を避ける・〜に近づかない",
+                 useCases: ["人や場所、物事を避けるよう助言するとき"],
+                 examples: [
+                    ("I'd steer clear of that restaurant — the food's awful.", "あのレストランはやめといた方がいいよ、料理がひどいから。"),
+                    ("I try to steer clear of politics at dinner.", "夕食の席では政治の話は避けるようにしてる。")
+                 ], ipa: "/stˈɪə klˈɪər əv/"),
+            make("are you up to much?", "do you have any plans? (casual)",
+                 "何か予定ある？・最近どう？",
+                 useCases: ["週末などの予定を気軽に聞くとき"],
+                 examples: [
+                    ("Are you up to much this weekend?", "今週末、何か予定ある？"),
+                    ("Not up to much, just relaxing at home.", "特に何も、家でのんびりしてるよ。")
+                 ], ipa: "/ɑː jə ˈʌp tə mˈʌtʃ/"),
+            make("cheap and cheerful", "inexpensive but pleasant and good enough",
+                 "安くて気軽でいい感じ",
+                 useCases: ["安いけど十分楽しめる店や物を勧めるとき"],
+                 examples: [
+                    ("There's a cheap and cheerful Italian place round the corner.", "角を曲がったところに安くていいイタリアンがあるよ。"),
+                    ("The hotel was cheap and cheerful — perfect for us.", "ホテルは安くて気楽で、私たちにはぴったりだった。")
+                 ], ipa: "/tʃˈiːp ən tʃˈɪəfəl/"),
+            make("a bit worse for wear", "looking tired, damaged or hungover",
+                 "ちょっとくたびれた・二日酔い気味の",
+                 useCases: ["飲みすぎや疲れで人がよれよれな様子、物が傷んでいる様子を言うとき"],
+                 examples: [
+                    ("You look a bit worse for wear this morning!", "今朝ちょっとよれよれだね！（飲みすぎ？）"),
+                    ("My old trainers are a bit worse for wear.", "古いスニーカー、だいぶくたびれてきた。")
+                 ], ipa: "/ə bˈɪt wˈɜːs fə wˈeə/"),
+            make("cosy", "warm, comfortable and relaxing",
+                 "居心地のいい・ぬくぬくした",
+                 useCases: ["部屋やカフェ、雰囲気が心地よいことを言うとき"],
+                 examples: [
+                    ("This café is so cosy.", "このカフェ、すごく居心地いいね。"),
+                    ("Let's have a cosy night in with a film.", "映画でも観て家でぬくぬく過ごそうよ。")
+                 ], ipa: "/kˈəʊzi/"),
+            make("same old, same old", "nothing new; things are the same as usual",
+                 "相変わらずだよ・いつも通り",
+                 useCases: ["「最近どう？」に変わりないと答えるとき"],
+                 examples: [
+                    ("How's work? — Oh, same old, same old.", "仕事どう？ ―まあ、相変わらずだよ。"),
+                    ("Nothing exciting — same old, same old.", "特に面白いことはないよ、いつも通り。")
+                 ], ipa: "/sˈeɪm ˈəʊld sˈeɪm ˈəʊld/"),
+            make("pricey", "expensive",
+                 "（値段が）高い・お高め",
+                 useCases: ["店や商品が少し高いと軽く言うとき"],
+                 examples: [
+                    ("It's a lovely place, but a bit pricey.", "いい店だけど、ちょっとお高めなんだよね。"),
+                    ("Taxis are pricey here — let's get the bus.", "ここはタクシー高いから、バスにしよう。")
+                 ], ipa: "/prˈaɪsi/"),
+            make("whinge", "to complain in an annoying way",
+                 "ぐちぐち文句を言う",
+                 useCases: ["しつこく不満を言う様子や、愚痴をこぼすとき"],
+                 examples: [
+                    ("Stop whingeing and just get on with it.", "ぐちぐち言ってないで、さっさとやりなよ。"),
+                    ("Sorry, I don't mean to whinge.", "ごめん、愚痴るつもりはないんだけど。")
+                 ], ipa: "/wˈɪndʒ/"),
+            make("cheesed off", "annoyed or fed up",
+                 "うんざりした・イライラした",
+                 useCases: ["何かに不満でうんざりしている気持ちを言うとき"],
+                 examples: [
+                    ("I'm a bit cheesed off with the weather.", "この天気にはちょっとうんざりだよ。"),
+                    ("He was cheesed off that the trip got cancelled.", "旅行が中止になって彼はイライラしてた。")
+                 ], ipa: "/tʃˈiːzd ˈɒf/"),
+            make("knock off early", "to finish work earlier than usual",
+                 "早めに仕事を切り上げる",
+                 useCases: ["仕事を早く終えて帰ることを言うとき"],
+                 examples: [
+                    ("It's Friday — fancy knocking off early?", "金曜だし、早めに切り上げない？"),
+                    ("The boss let us knock off early today.", "今日は上司が早く帰らせてくれたよ。")
+                 ], ipa: "/nˈɒk ˈɒf ˈɜːli/")
         ]
     }
 }
