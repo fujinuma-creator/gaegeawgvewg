@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27416,6 +27416,116 @@ enum SeedData {
                     ("Where are my keys? — I haven't got a clue, sorry.", "鍵どこ？—全然わからない、ごめん。"),
                     ("I haven't got a clue what this word means.", "この単語の意味、見当もつかないよ。")
                  ], ipa: "/aɪ hˈævənt ɡɒt ə klˈuː/")
+        ]
+    }
+
+    private static var britishColloquial84: [Word] {
+        [
+            make("let off steam", "to release pent-up energy or frustration by doing something active or talking",
+                 "うっぷんを晴らす・ストレスを発散する",
+                 useCases: ["運動や会話などでストレス・エネルギーを発散するとき"],
+                 examples: [
+                    ("I go for a run after work to let off steam.", "仕事のあとはストレス発散に走りに行くんだ。"),
+                    ("Let the kids run around the park and let off some steam.", "子どもたちを公園で走り回らせて発散させよう。")
+                 ], ipa: "/lˈɛt ɒf stˈiːm/"),
+            make("hit the sack", "to go to bed (informal)",
+                 "寝る・床につく",
+                 useCases: ["疲れて寝ると言うときのくだけた表現"],
+                 examples: [
+                    ("I'm shattered, I'm going to hit the sack.", "もうクタクタだから寝るね。"),
+                    ("We hit the sack early because of the flight.", "フライトがあるから早めに寝たよ。")
+                 ], ipa: "/hˈɪt ðə sˈæk/"),
+            make("you're having me on", "you're joking; you're trying to trick me",
+                 "冗談でしょ・からかってるんでしょ",
+                 useCases: ["信じられない話を聞いて冗談かと疑うとき"],
+                 examples: [
+                    ("He's moving to Australia? You're having me on!", "彼オーストラリアに引っ越すの？冗談でしょ！"),
+                    ("Are you having me on? That can't be true.", "からかってる？そんなわけないよ。")
+                 ], ipa: "/jʊə hˈævɪŋ miː ˈɒn/"),
+            make("what a pity", "that's unfortunate; I'm sorry to hear that",
+                 "残念だね・惜しいね",
+                 useCases: ["ちょっとした残念な知らせに共感するとき"],
+                 examples: [
+                    ("You can't come to the party? What a pity!", "パーティー来られないの？残念！"),
+                    ("What a pity it rained on your day off.", "せっかくの休みに雨なんて残念だったね。")
+                 ], ipa: "/wˈɒt ə pˈɪti/"),
+            make("not too bad", "fairly good; okay (a typical modest answer to 'How are you?')",
+                 "まあまあだよ・悪くないよ",
+                 useCases: ["How are you? などに控えめに答えるとき"],
+                 examples: [
+                    ("How are you doing? — Not too bad, thanks. You?", "調子どう？—まあまあだよ、ありがとう。そっちは？"),
+                    ("The food there was not too bad, actually.", "あそこの料理、実は悪くなかったよ。")
+                 ], ipa: "/nˈɒt tuː bˈæd/"),
+            make("we'll cross that bridge when we come to it", "we'll deal with that problem only if and when it happens",
+                 "その時になったら考えよう",
+                 useCases: ["まだ起きていない問題を今心配しなくていいと言うとき"],
+                 examples: [
+                    ("What if it rains on the day? — We'll cross that bridge when we come to it.", "当日雨だったら？—その時考えよう。"),
+                    ("Let's not panic yet; we'll cross that bridge when we come to it.", "まだ慌てないで、その時になったら考えればいいよ。")
+                 ], ipa: "/wiːl krˈɒs ðæt brˈɪdʒ wˈɛn wiː kˈʌm tə ɪt/"),
+            make("I'm on my way", "I've left and I'm coming now",
+                 "今向かってるよ・すぐ行くね",
+                 useCases: ["待ち合わせ相手に今向かっていると伝えるとき"],
+                 examples: [
+                    ("Where are you? — Sorry, I'm on my way!", "どこにいるの？—ごめん、今向かってる！"),
+                    ("I'm on my way, be there in ten minutes.", "今向かってるよ、10分で着く。")
+                 ], ipa: "/aɪm ˈɒn maɪ wˈeɪ/"),
+            make("settle in", "to get used to a new home, job or situation",
+                 "（新しい環境に）慣れる・落ち着く",
+                 useCases: ["引っ越しや新しい職場に馴染んだか尋ねる・伝えるとき"],
+                 examples: [
+                    ("Have you settled in to the new flat yet?", "新しい部屋にはもう慣れた？"),
+                    ("It took me a few weeks to settle in at work.", "職場に慣れるまで数週間かかったよ。")
+                 ], ipa: "/sˈɛtəl ˈɪn/"),
+            make("wind down", "to relax after a period of work or stress",
+                 "くつろぐ・リラックスする",
+                 useCases: ["仕事の後などに気持ちを落ち着かせるとき"],
+                 examples: [
+                    ("I usually read a book to wind down before bed.", "寝る前はたいてい本を読んでリラックスするんだ。"),
+                    ("Let's grab a drink and wind down after this week.", "今週の疲れを取りに一杯飲みに行こう。")
+                 ], ipa: "/wˈaɪnd dˈaʊn/"),
+            make("on the go", "busy and active all the time",
+                 "ずっと忙しく動き回って",
+                 useCases: ["休む暇もなく忙しいことを伝えるとき"],
+                 examples: [
+                    ("I've been on the go all day — I haven't even had lunch.", "一日中バタバタで、昼ごはんも食べてないんだ。"),
+                    ("With three kids, she's always on the go.", "子どもが3人いて、彼女はいつも忙しく動き回ってる。")
+                 ], ipa: "/ˈɒn ðə ɡˈəʊ/"),
+            make("talk someone into", "to persuade someone to do something",
+                 "〜を説得して…させる・口説き落とす",
+                 useCases: ["誰かに説得されて（して）何かをすることになったとき"],
+                 examples: [
+                    ("My friend talked me into joining the gym.", "友達に説得されてジムに入っちゃった。"),
+                    ("Don't let him talk you into lending him money.", "彼に言いくるめられてお金貸したりしないでね。")
+                 ], ipa: "/tˈɔːk sˈʌmwʌn ˈɪntuː/"),
+            make("every so often", "occasionally; from time to time",
+                 "時々・たまに",
+                 useCases: ["頻度がそれほど高くないことを自然に言うとき"],
+                 examples: [
+                    ("We still meet up for a coffee every so often.", "今でもたまにコーヒーしに会ってるよ。"),
+                    ("Every so often I treat myself to a nice dinner.", "時々自分へのご褒美にいいディナーを食べるんだ。")
+                 ], ipa: "/ˈɛvri səʊ ˈɒfən/"),
+            make("in the end", "finally, after a lot of thought or events",
+                 "結局・最終的に",
+                 useCases: ["いろいろあった末の結果を話すとき"],
+                 examples: [
+                    ("We thought about Spain, but in the end we went to Italy.", "スペインも考えたけど、結局イタリアに行ったよ。"),
+                    ("It all worked out in the end.", "最終的には全部うまくいったよ。")
+                 ], ipa: "/ɪn ði ˈɛnd/"),
+            make("all the best", "a friendly way to wish someone well, often when saying goodbye or ending a message",
+                 "元気でね・うまくいくといいね",
+                 useCases: ["別れ際やメッセージの結びで相手の幸運を願うとき"],
+                 examples: [
+                    ("Good luck with the new job — all the best!", "新しい仕事頑張ってね、うまくいきますように！"),
+                    ("All the best, and let's keep in touch.", "元気でね、連絡取り合おうね。")
+                 ], ipa: "/ˈɔːl ðə bˈɛst/"),
+            make("not a chance", "absolutely not; there's no way",
+                 "絶対ありえない・まさか",
+                 useCases: ["強くきっぱりと否定・拒否するとき（くだけた言い方）"],
+                 examples: [
+                    ("Will you lend me your car? — Not a chance!", "車貸してくれる？—絶対ムリ！"),
+                    ("Is he going to say sorry? Not a chance.", "彼が謝るって？ありえないね。")
+                 ], ipa: "/nˈɒt ə tʃˈɑːns/")
         ]
     }
 }
