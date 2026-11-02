@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29396,6 +29396,116 @@ enum SeedData {
                     ("I'm completely drained after that meeting.", "あの会議の後で完全にぐったりだよ。"),
                     ("Looking after the kids all week left me drained.", "一週間子どもの面倒を見て、へとへとになった。")
                  ], ipa: "/dɹˈeɪnd/")
+        ]
+    }
+
+    private static var britishColloquial102: [Word] {
+        [
+            make("sold out", "with no more items or tickets left to buy",
+                 "売り切れ・完売",
+                 useCases: ["チケットや商品がないと伝えるとき", "人気の高さを話すとき"],
+                 examples: [
+                    ("Sorry, we're sold out of the chocolate cake.", "すみません、チョコケーキは売り切れなんです。"),
+                    ("The gig sold out in ten minutes.", "そのライブ、10分で完売したよ。")
+                 ], ipa: "/sˈəʊld ˈaʊt/"),
+            make("be short of", "to not have enough of something",
+                 "〜が足りない・不足している",
+                 useCases: ["時間やお金が足りないとき", "人手不足を伝えるとき"],
+                 examples: [
+                    ("I'm a bit short of time today — can we talk tomorrow?", "今日はちょっと時間がなくて、明日話せる？"),
+                    ("We're short of milk, so I'll pop to the shop.", "牛乳が足りないから、ちょっとお店行ってくるね。")
+                 ], ipa: "/bi ʃˈɔːt ɒv/"),
+            make("So do I", "used to say that the same is true for you",
+                 "私もそう・僕もだよ",
+                 useCases: ["相手の発言に同意・共感するとき", "好みが同じだと伝えるとき"],
+                 examples: [
+                    ("\"I love this song.\" \"So do I!\"", "「この曲大好き。」「私も！」"),
+                    ("\"I need a holiday.\" \"So do I, honestly.\"", "「休みが欲しいよ。」「正直、僕もだよ。」")
+                 ], ipa: "/sˈəʊ dˈuː aɪ/"),
+            make("give it a try", "to attempt something to see if it works or if you like it",
+                 "試しにやってみる",
+                 useCases: ["新しいことに挑戦するとき", "相手に勧めるとき"],
+                 examples: [
+                    ("I've never done yoga, but I'll give it a try.", "ヨガやったことないけど、試しにやってみるよ。"),
+                    ("Just give it a try — you might like it.", "とりあえずやってみなよ、気に入るかもよ。")
+                 ], ipa: "/ɡˈɪv ɪt ə trˈaɪ/"),
+            make("in a rush", "in a hurry; having very little time",
+                 "急いでいて・バタバタしていて",
+                 useCases: ["急いでいる理由を伝えるとき", "相手を急かさないとき"],
+                 examples: [
+                    ("Sorry, I'm in a bit of a rush — can I call you later?", "ごめん、ちょっと急いでて、後で電話していい？"),
+                    ("No need to do it in a rush.", "急いでやらなくていいよ。")
+                 ], ipa: "/ɪn ə rˈʌʃ/"),
+            make("it's hard to say", "used when you cannot easily judge or predict something",
+                 "なんとも言えない",
+                 useCases: ["予想や判断がつかないとき", "はっきり答えを避けたいとき"],
+                 examples: [
+                    ("\"Will it be finished by Friday?\" \"It's hard to say.\"", "「金曜までに終わる？」「なんとも言えないな。」"),
+                    ("It's hard to say which one is better.", "どっちがいいかは何とも言えないね。")
+                 ], ipa: "/ɪts hˈɑːd tə sˈeɪ/"),
+            make("I'm not bothered", "used to say you do not mind or have no strong preference",
+                 "どっちでもいいよ・気にしないよ",
+                 useCases: ["こだわりがないと伝えるとき", "気にしていないと伝えるとき"],
+                 examples: [
+                    ("\"Indian or Thai?\" \"I'm not bothered — you choose.\"", "「インド料理かタイ料理か？」「どっちでもいいよ、決めて。」"),
+                    ("I'm not bothered about winning; I just want to have fun.", "勝つことは気にしてないよ、楽しみたいだけ。")
+                 ], ipa: "/aɪm nɒt bˈɒðəd/"),
+            make("fit in", "to feel accepted and comfortable as part of a group",
+                 "なじむ・溶け込む",
+                 useCases: ["新しい環境への適応を話すとき", "人の雰囲気について話すとき"],
+                 examples: [
+                    ("She fitted in really quickly at her new job.", "彼女は新しい職場にすぐなじんだよ。"),
+                    ("I didn't really fit in at school.", "学校ではあまり溶け込めなかったな。")
+                 ], ipa: "/fˈɪt ˈɪn/"),
+            make("plenty of", "a large amount or number of something; more than enough",
+                 "たくさんの・十分な",
+                 useCases: ["十分にあると安心させるとき", "量や時間に余裕があるとき"],
+                 examples: [
+                    ("Don't worry, we've got plenty of time.", "大丈夫、時間はたっぷりあるよ。"),
+                    ("There's plenty of food, so help yourself.", "食べ物はたくさんあるから、ご自由にどうぞ。")
+                 ], ipa: "/plˈɛnti ɒv/"),
+            make("it won't take long", "used to say that something will be quick",
+                 "すぐ終わるよ・時間はかからないよ",
+                 useCases: ["相手を待たせるとき", "頼みごとのハードルを下げるとき"],
+                 examples: [
+                    ("Can you wait a sec? It won't take long.", "ちょっと待ってて、すぐ終わるから。"),
+                    ("Fill in this form — it won't take long.", "この用紙に記入してね、すぐ済むよ。")
+                 ], ipa: "/ɪt wˈəʊnt teɪk lˈɒŋ/"),
+            make("How about you?", "used to ask someone the same question you were just asked",
+                 "あなたは？・君はどう？",
+                 useCases: ["質問を相手に返すとき", "会話を続けたいとき"],
+                 examples: [
+                    ("\"I'm from Leeds. How about you?\"", "「リーズ出身なんだ。あなたは？」"),
+                    ("\"I'm good, thanks. How about you?\"", "「元気だよ、ありがとう。君は？」")
+                 ], ipa: "/hˈaʊ əbˈaʊt juː/"),
+            make("I didn't catch that", "used to say you did not hear or understand what someone said",
+                 "聞き取れなかった",
+                 useCases: ["もう一度言ってほしいとき", "名前などを聞き逃したとき"],
+                 examples: [
+                    ("Sorry, I didn't catch that. Could you say it again?", "ごめん、聞き取れなかった。もう一回言ってくれる？"),
+                    ("I didn't catch your name.", "お名前、聞き取れませんでした。")
+                 ], ipa: "/aɪ dˈɪdnt kˈætʃ ðˈæt/"),
+            make("keep someone company", "to stay with someone so they are not alone",
+                 "〜に付き合う・一緒にいてあげる",
+                 useCases: ["一人にさせないとき", "待ち時間に付き添うとき"],
+                 examples: [
+                    ("I'll wait with you and keep you company.", "一緒に待っててあげるよ。"),
+                    ("My dog keeps me company when I work from home.", "在宅勤務のとき、犬がそばにいてくれるんだ。")
+                 ], ipa: "/kˈiːp sˈʌmwʌn kˈʌmpəni/"),
+            make("whatever you like", "used to say someone can choose anything they want",
+                 "好きなようにしていいよ・何でもいいよ",
+                 useCases: ["相手に選択を任せるとき", "おもてなしで遠慮させないとき"],
+                 examples: [
+                    ("Order whatever you like — it's my treat.", "好きなもの頼んでいいよ、おごるから。"),
+                    ("\"What should I wear?\" \"Whatever you like, it's casual.\"", "「何着ていけばいい？」「何でもいいよ、カジュアルだから。」")
+                 ], ipa: "/wɒtˈɛvə juː lˈaɪk/"),
+            make("quick question", "used to introduce a short question, often in a friendly way",
+                 "ちょっと聞きたいんだけど",
+                 useCases: ["気軽に質問を切り出すとき", "同僚に話しかけるとき"],
+                 examples: [
+                    ("Quick question — are you free on Thursday?", "ちょっと聞きたいんだけど、木曜空いてる？"),
+                    ("Sorry to bother you, just a quick question.", "邪魔してごめん、ひとつだけ質問。")
+                 ], ipa: "/kwˈɪk kwˈɛstʃən/")
         ]
     }
 }
