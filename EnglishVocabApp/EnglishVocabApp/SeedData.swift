@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27526,6 +27526,116 @@ enum SeedData {
                     ("Will you lend me your car? — Not a chance!", "車貸してくれる？—絶対ムリ！"),
                     ("Is he going to say sorry? Not a chance.", "彼が謝るって？ありえないね。")
                  ], ipa: "/nˈɒt ə tʃˈɑːns/")
+        ]
+    }
+
+    private static var britishColloquial85: [Word] {
+        [
+            make("come off it", "used to say you don't believe someone or think they're being unreasonable",
+                 "よく言うよ・冗談はやめてよ",
+                 useCases: ["相手の発言が大げさ・信じられないと軽く突っ込むとき"],
+                 examples: [
+                    ("You've never been late in your life? Come off it!", "一度も遅刻したことないって？よく言うよ！"),
+                    ("Oh, come off it — it wasn't that bad.", "ちょっとやめてよ、そこまでひどくなかったでしょ。")
+                 ], ipa: "/kˈʌm ˈɒf ɪt/"),
+            make("hit and miss", "sometimes good and sometimes bad; unreliable",
+                 "当たり外れがある・ムラがある",
+                 useCases: ["お店・サービス・天気などの質が安定しないと言うとき"],
+                 examples: [
+                    ("The Wi-Fi here is a bit hit and miss.", "ここのWi-Fiはちょっと当たり外れがあるんだよね。"),
+                    ("Their food is hit and miss, to be honest.", "正直、あそこの料理はムラがあるよ。")
+                 ], ipa: "/hˈɪt ən mˈɪs/"),
+            make("hand on heart", "honestly; I promise this is true",
+                 "正直に言って・誓って",
+                 useCases: ["本当のことを言っていると強調するとき"],
+                 examples: [
+                    ("Hand on heart, I didn't tell anyone.", "誓って誰にも言ってないよ。"),
+                    ("Can you say, hand on heart, that you enjoyed it?", "正直に、楽しかったって言える？")
+                 ], ipa: "/hˈænd ɒn hˈɑːt/"),
+            make("off you go", "go ahead and leave / start now (friendly encouragement)",
+                 "さあ行っておいで・どうぞ始めて",
+                 useCases: ["相手を送り出す・何かを始めるよう促すとき"],
+                 examples: [
+                    ("Right, you've got your coat — off you go!", "よし、コート持ったね、行っておいで！"),
+                    ("The floor's yours. Off you go.", "どうぞ、始めてください。")
+                 ], ipa: "/ˈɒf juː ɡˈəʊ/"),
+            make("flat out", "extremely busy; working as hard or fast as possible",
+                 "めちゃくちゃ忙しい・全力で",
+                 useCases: ["ずっと休みなく忙しかったと伝えるとき"],
+                 examples: [
+                    ("Sorry I didn't reply, I've been flat out all week.", "返信できなくてごめん、今週ずっとバタバタだったんだ。"),
+                    ("We're working flat out to finish it by Friday.", "金曜までに終わらせようと全力でやってるよ。")
+                 ], ipa: "/flˈæt ˈaʊt/"),
+            make("tell you what", "used to introduce a suggestion or offer",
+                 "そうだ、こうしよう・じゃあこうしない？",
+                 useCases: ["その場で提案や申し出を切り出すとき"],
+                 examples: [
+                    ("Tell you what, I'll pay this time and you get the next one.", "じゃあこうしよう、今回は僕が払うから次は君ね。"),
+                    ("I tell you what, let's just order pizza.", "そうだ、もうピザ頼んじゃおうよ。")
+                 ], ipa: "/tˈɛl juː wˈɒt/"),
+            make("the odd", "occasional; a few now and then (e.g. the odd drink)",
+                 "たまの・時々の",
+                 useCases: ["「たまに〜する程度」と頻度の少なさを言うとき"],
+                 examples: [
+                    ("I don't really drink, just the odd glass of wine.", "あんまり飲まないよ、たまにワインを一杯くらい。"),
+                    ("It's mostly sunny, with the odd shower.", "ほぼ晴れで、時々にわか雨かな。")
+                 ], ipa: "/ði ˈɒd/"),
+            make("think it over", "to consider something carefully before deciding",
+                 "よく考えてみる",
+                 useCases: ["その場で決めず、少し考える時間が欲しいとき"],
+                 examples: [
+                    ("Can I think it over and get back to you?", "少し考えてから返事してもいい？"),
+                    ("No rush — think it over and let me know.", "急がないから、よく考えて教えて。")
+                 ], ipa: "/θˈɪŋk ɪt ˈəʊvə/"),
+            make("it's a deal", "I agree to that; we have an agreement",
+                 "決まりだね・それで手を打とう",
+                 useCases: ["相手の提案に同意して約束が成立したとき"],
+                 examples: [
+                    ("You cook, I'll wash up. — It's a deal!", "君が料理して、僕が洗い物ね。—決まり！"),
+                    ("Dinner's on me if you help me move. Deal?", "引っ越し手伝ってくれたら夕飯おごるよ。どう？")
+                 ], ipa: "/ɪts ə dˈiːl/"),
+            make("keep it down", "be quieter; don't make so much noise",
+                 "静かにして・声を落として",
+                 useCases: ["周りがうるさいとき、声や音を小さくしてと頼むとき"],
+                 examples: [
+                    ("Could you keep it down? The baby's asleep.", "静かにしてくれる？赤ちゃんが寝てるの。"),
+                    ("Keep it down, the neighbours will complain.", "声落として、ご近所から苦情来ちゃうよ。")
+                 ], ipa: "/kˈiːp ɪt dˈaʊn/"),
+            make("my mistake", "that was my fault; I was wrong (a quick apology)",
+                 "私の間違いです・失礼しました",
+                 useCases: ["ちょっとした勘違いや間違いを素直に認めるとき"],
+                 examples: [
+                    ("Oh, it's on Thursday, not Wednesday? My mistake.", "あ、水曜じゃなくて木曜？僕の勘違いだ。"),
+                    ("Sorry, my mistake — I sent you the wrong file.", "ごめん、私のミス。違うファイル送っちゃった。")
+                 ], ipa: "/maɪ mɪstˈeɪk/"),
+            make("out of interest", "just because I'm curious (used to soften a question)",
+                 "ちょっと気になったんだけど・参考までに",
+                 useCases: ["詮索っぽくならないよう軽く質問するとき"],
+                 examples: [
+                    ("Out of interest, where did you get that jacket?", "ちょっと気になったんだけど、そのジャケットどこで買ったの？"),
+                    ("Just out of interest, how much did it cost?", "参考までに、いくらだった？")
+                 ], ipa: "/ˈaʊt əv ˈɪntrəst/"),
+            make("in the middle of nowhere", "in a very remote place, far from towns",
+                 "人里離れた場所に・ど田舎に",
+                 useCases: ["周りに何もない辺鄙な場所を表すとき"],
+                 examples: [
+                    ("The hotel was lovely, but it was in the middle of nowhere.", "ホテルは素敵だったけど、何もない所にあったよ。"),
+                    ("We broke down in the middle of nowhere.", "人里離れた所で車が故障しちゃった。")
+                 ], ipa: "/ɪn ðə mˈɪdəl əv nˈəʊweə/"),
+            make("I'll let you go", "a polite way to end a phone call or conversation",
+                 "じゃあそろそろ切るね・お邪魔しました",
+                 useCases: ["電話や会話を相手に気遣いつつ終えるとき"],
+                 examples: [
+                    ("Anyway, I'll let you go — speak soon!", "じゃあそろそろ切るね、またね！"),
+                    ("You sound busy, so I'll let you go.", "忙しそうだから、このへんで。")
+                 ], ipa: "/aɪl lˈɛt juː ɡˈəʊ/"),
+            make("on its last legs", "old and about to stop working",
+                 "壊れかけている・寿命が近い",
+                 useCases: ["車・家電・靴などがもうすぐダメになりそうなとき"],
+                 examples: [
+                    ("My laptop's on its last legs, I need a new one.", "ノートパソコンがもう寿命で、新しいのが要るんだ。"),
+                    ("That old car is on its last legs.", "あの古い車はもう限界だね。")
+                 ], ipa: "/ɒn ɪts lˈɑːst lˈɛɡz/")
         ]
     }
 }
