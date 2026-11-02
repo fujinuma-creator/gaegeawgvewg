@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30606,6 +30606,116 @@ enum SeedData {
                     ("The shop's already closed. — Oh well, we'll go tomorrow.", "お店もう閉まってるよ。— まあいいか、明日行こう。"),
                     ("Oh well, it was worth a try.", "まあ仕方ない、やってみる価値はあったよ。")
                  ], ipa: "/ˈəʊ wˈɛl/"),
+        ]
+    }
+
+    private static var britishColloquial113: [Word] {
+        [
+            make("what's the plan?", "a casual way of asking what you are going to do, e.g. later today or at the weekend",
+                 "どうする？・予定は？",
+                 useCases: ["友人と今日・週末の予定を決めるとき", "段取りを確認するとき"],
+                 examples: [
+                    ("So, what's the plan for tonight?", "で、今夜はどうする？"),
+                    ("What's the plan — are we meeting at the station or at the pub?", "予定はどうなってる？駅で待ち合わせ？それともパブ？")
+                 ], ipa: "/wɒts ðə plˈæn/"),
+            make("seriously?", "used to show surprise or disbelief at what someone has just said",
+                 "マジで？・本当に？",
+                 useCases: ["驚いたとき", "信じられない話を聞いたとき", "呆れたとき"],
+                 examples: [
+                    ("I've just quit my job. — Seriously? Why?", "仕事辞めたんだ。— マジで？なんで？"),
+                    ("They cancelled the concert again? Seriously?", "またコンサート中止？本当に？")
+                 ], ipa: "/ˈsɪəriəsli/"),
+            make("basically", "used in speech to introduce a short, simple explanation or the main point of something",
+                 "要するに・簡単に言うと",
+                 useCases: ["話の要点をまとめるとき", "長い話を短く説明するとき"],
+                 examples: [
+                    ("Basically, we missed the last train and had to get a taxi.", "要するに、終電を逃してタクシーで帰ったんだ。"),
+                    ("It's basically the same phone, just a bit bigger.", "基本的には同じ携帯で、ちょっと大きいだけだよ。")
+                 ], ipa: "/ˈbeɪsɪkli/"),
+            make("it's packed", "used to say that a place is very crowded",
+                 "めちゃくちゃ混んでる",
+                 useCases: ["店・電車・パブが混んでいるとき", "人混みを避けたいとき"],
+                 examples: [
+                    ("Let's go somewhere else — it's packed in here.", "どこか別のところに行こう、ここ混みすぎだよ。"),
+                    ("The train was absolutely packed this morning.", "今朝の電車はぎゅうぎゅうだった。")
+                 ], ipa: "/ɪts pˈækt/"),
+            make("trainers", "(British) sports shoes worn for running or as casual everyday shoes; called 'sneakers' in American English",
+                 "スニーカー・運動靴（イギリス英語）",
+                 useCases: ["靴の話をするとき", "服装を伝えるとき"],
+                 examples: [
+                    ("I need a new pair of trainers — these are falling apart.", "新しいスニーカーが要るな、これもうボロボロ。"),
+                    ("Can I wear trainers, or is it a bit posh?", "スニーカーで行っても大丈夫？それともちょっとお洒落な場所？")
+                 ], ipa: "/ˈtreɪnəz/"),
+            make("jumper", "(British) a warm knitted piece of clothing for the top half of the body; called a 'sweater' in American English",
+                 "セーター（イギリス英語）",
+                 useCases: ["寒い日の服装の話", "服を貸し借りするとき"],
+                 examples: [
+                    ("Take a jumper — it gets cold in the evening.", "セーター持っていきなよ、夜は冷えるから。"),
+                    ("I love your jumper! Where's it from?", "そのセーター素敵！どこの？")
+                 ], ipa: "/ˈdʒʌmpə/"),
+            make("crisps", "(British) thin slices of fried potato sold in packets; called 'chips' in American English",
+                 "ポテトチップス（イギリス英語）",
+                 useCases: ["お菓子・軽食の話", "パブやパーティーでのおつまみ"],
+                 examples: [
+                    ("Do you want a packet of crisps with your drink?", "飲み物と一緒にポテチもいる？"),
+                    ("I'll grab some crisps and dips for the party.", "パーティー用にポテチとディップを買ってくるよ。")
+                 ], ipa: "/krɪsps/"),
+            make("car park", "(British) an area or building where you can leave your car; called a 'parking lot' in American English",
+                 "駐車場（イギリス英語）",
+                 useCases: ["待ち合わせ場所を伝えるとき", "車で出かけるとき"],
+                 examples: [
+                    ("I'll meet you in the car park behind the supermarket.", "スーパーの裏の駐車場で会おう。"),
+                    ("The car park was full, so we had to park on the street.", "駐車場が満車で、路上に停めるしかなかった。")
+                 ], ipa: "/ˈkɑː pɑːk/"),
+            make("move in", "to start living in a new house or flat, or to start living with someone",
+                 "引っ越してくる・同棲を始める",
+                 useCases: ["引っ越しの話", "恋人と一緒に住み始める話"],
+                 examples: [
+                    ("When are you moving in to the new flat?", "新しいフラットにはいつ引っ越すの？"),
+                    ("My boyfriend and I are moving in together next month.", "来月から彼氏と一緒に住むんだ。")
+                 ], ipa: "/muːv ˈɪn/"),
+            make("oh dear", "used to express mild sympathy, disappointment, or worry when something has gone wrong",
+                 "あらら・あらまあ・それは困ったね",
+                 useCases: ["ちょっとした失敗や不運を聞いたとき", "自分のミスに気づいたとき"],
+                 examples: [
+                    ("I've left my keys at work. — Oh dear! What are you going to do?", "鍵を職場に忘れてきた。— あらら！どうするの？"),
+                    ("Oh dear, I think I've spilled coffee on your sofa.", "あらまあ、ソファにコーヒーこぼしちゃったかも。")
+                 ], ipa: "/əʊ ˈdɪə/"),
+            make("poor thing", "used to show sympathy for a person or animal that is ill, hurt, or having a hard time",
+                 "かわいそうに",
+                 useCases: ["相手の大変な話に同情するとき", "体調の悪い人や動物について"],
+                 examples: [
+                    ("She's been up all night with the baby, poor thing.", "彼女、赤ちゃんの世話で一晩中起きてたんだって、かわいそうに。"),
+                    ("Oh, you poor thing! Are you feeling any better?", "まあ、かわいそうに！少しは良くなった？")
+                 ], ipa: "/pɔː ˈθɪŋ/"),
+            make("anytime", "a friendly reply to 'thank you', meaning you are happy to help again whenever needed",
+                 "いつでもどうぞ・お安いご用",
+                 useCases: ["お礼に気さくに返すとき", "また頼っていいと伝えるとき"],
+                 examples: [
+                    ("Thanks for helping me move. — Anytime!", "引っ越し手伝ってくれてありがとう。— いつでも言って！"),
+                    ("Cheers for the lift. — Anytime, mate.", "送ってくれてありがとう。— いつでもどうぞ。")
+                 ], ipa: "/ˈɛnitaɪm/"),
+            make("you're welcome", "a polite reply used when someone thanks you",
+                 "どういたしまして",
+                 useCases: ["お礼を言われたとき", "丁寧に返したいとき"],
+                 examples: [
+                    ("Thank you so much for dinner. — You're welcome, it was a pleasure.", "夕食ありがとう。— どういたしまして、楽しかったよ。"),
+                    ("You're welcome — let me know if you need anything else.", "どういたしまして。他にも何かあれば言ってね。")
+                 ], ipa: "/jɔː ˈwɛlkəm/"),
+            make("high street", "(British) the main street of a town where most of the shops, banks, and cafés are",
+                 "目抜き通り・商店街（イギリス英語）",
+                 useCases: ["買い物の場所を話すとき", "町の中心部を説明するとき"],
+                 examples: [
+                    ("There's a nice little café on the high street.", "大通りに素敵な小さいカフェがあるよ。"),
+                    ("I'm just popping down the high street — need anything?", "ちょっと商店街まで行ってくるけど、何かいる？")
+                 ], ipa: "/ˈhaɪ striːt/"),
+            make("definitely", "used to say strongly 'yes' or that something is certain",
+                 "絶対に・もちろん・間違いなく",
+                 useCases: ["強く同意するとき", "確実だと伝えるとき"],
+                 examples: [
+                    ("Are you coming on Saturday? — Definitely!", "土曜日来る？— もちろん！"),
+                    ("That was definitely the best curry I've ever had.", "あれは間違いなく今まで食べた中で最高のカレーだった。")
+                 ], ipa: "/ˈdɛfɪnətli/"),
         ]
     }
 
