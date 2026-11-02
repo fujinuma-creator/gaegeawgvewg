@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29836,6 +29836,116 @@ enum SeedData {
                     ("Come on, just one for the road!", "ほら、帰る前にもう一杯だけ！"),
                     ("We had one for the road and then got a taxi home.", "最後に一杯飲んでからタクシーで帰ったよ。")
                  ], ipa: "/wˈʌn fə ðə ɹˈəʊd/")
+        ]
+    }
+
+    private static var britishColloquial106: [Word] {
+        [
+            make("try on", "to put on clothes or shoes in a shop to see if they fit or look good",
+                 "試着する",
+                 useCases: ["お店で服や靴を試着するとき", "店員に試着室を尋ねるとき"],
+                 examples: [
+                    ("Can I try this jacket on?", "このジャケット、試着してもいいですか？"),
+                    ("Try them on before you buy them.", "買う前に履いてみなよ。")
+                 ], ipa: "/tɹˈaɪ ˈɒn/"),
+            make("hardly ever", "almost never",
+                 "めったに〜ない・ほとんど〜ない",
+                 useCases: ["頻度がとても低いことを言うとき", "習慣について話すとき"],
+                 examples: [
+                    ("I hardly ever watch telly these days.", "最近はテレビをほとんど見ないよ。"),
+                    ("We hardly ever go out on weeknights.", "平日の夜はめったに出かけないんだ。")
+                 ], ipa: "/hˈɑːdli ˈɛvə/"),
+            make("make friends", "to start a friendship with someone",
+                 "友達を作る・仲良くなる",
+                 useCases: ["新しい環境での人間関係を話すとき", "子どもや留学生活について話すとき"],
+                 examples: [
+                    ("Did you make any friends at your new school?", "新しい学校で友達できた？"),
+                    ("She makes friends really easily.", "彼女はすぐに友達ができるタイプなんだ。")
+                 ], ipa: "/mˈeɪk fɹˈɛndz/"),
+            make("a waste of time", "something that is not useful or worth doing",
+                 "時間の無駄",
+                 useCases: ["つまらなかった映画や会議を評価するとき", "やっても意味がないと伝えるとき"],
+                 examples: [
+                    ("That meeting was a complete waste of time.", "あの会議、完全に時間の無駄だったね。"),
+                    ("Don't bother queuing — it's a waste of time.", "並ぶのはやめときな、時間の無駄だよ。")
+                 ], ipa: "/ə wˈeɪst əv tˈaɪm/"),
+            make("cost an arm and a leg", "to be very expensive",
+                 "目が飛び出るほど高い・すごくお金がかかる",
+                 useCases: ["値段が高すぎると驚くとき", "旅行や修理の費用を話すとき"],
+                 examples: [
+                    ("Fixing the car cost an arm and a leg.", "車の修理にとんでもないお金がかかったよ。"),
+                    ("Flights in August cost an arm and a leg.", "8月の航空券はめちゃくちゃ高いよ。")
+                 ], ipa: "/kˈɒst ən ˈɑːm ənd ə lˈɛɡ/"),
+            make("do without", "to manage without having something",
+                 "〜なしで済ませる・〜なしでやっていく",
+                 useCases: ["何かがなくても大丈夫と言うとき", "必需品について話すとき"],
+                 examples: [
+                    ("I couldn't do without my morning coffee.", "朝のコーヒーなしではやっていけないよ。"),
+                    ("We've run out of milk, so we'll have to do without.", "牛乳切れてるから、なしで我慢しよう。")
+                 ], ipa: "/dˈuː wɪðˈaʊt/"),
+            make("back someone up", "to support someone or say that what they are saying is true",
+                 "（人を）支持する・味方する・裏付ける",
+                 useCases: ["話し合いで味方してほしいとき", "誰かの言い分を証言するとき"],
+                 examples: [
+                    ("Thanks for backing me up in the meeting.", "会議で味方してくれてありがとう。"),
+                    ("Ask Tom — he'll back me up on this.", "トムに聞いてみて、私の言う通りだって言ってくれるから。")
+                 ], ipa: "/bˈæk sˈʌmwʌn ˈʌp/"),
+            make("out of the question", "impossible or not allowed, so not worth discussing",
+                 "論外・ありえない・無理",
+                 useCases: ["きっぱり断るとき", "選択肢として不可能だと言うとき"],
+                 examples: [
+                    ("Driving there tonight is out of the question.", "今夜車で行くのは無理だよ。"),
+                    ("A pay rise this year is out of the question, I'm afraid.", "残念ながら今年の昇給はありえないんだ。")
+                 ], ipa: "/ˈaʊt əv ðə kwˈɛstʃən/"),
+            make("get changed", "to take off your clothes and put on different ones",
+                 "着替える",
+                 useCases: ["出かける前や帰宅後に着替えるとき", "ジムや仕事の前後に"],
+                 examples: [
+                    ("Give me five minutes to get changed.", "着替えるから5分ちょうだい。"),
+                    ("I'll just get changed after work and meet you there.", "仕事終わりに着替えてから現地で合流するね。")
+                 ], ipa: "/ɡˈɛt tʃˈeɪndʒd/"),
+            make("pay someone back", "to return money that you borrowed from someone",
+                 "（人に）お金を返す",
+                 useCases: ["立て替えてもらったお金を返すとき", "お金を貸し借りするとき"],
+                 examples: [
+                    ("Can you lend me a tenner? I'll pay you back tomorrow.", "10ポンド貸してくれる？明日返すから。"),
+                    ("Don't worry about paying me back.", "返さなくて大丈夫だよ。")
+                 ], ipa: "/pˈeɪ sˈʌmwʌn bˈæk/"),
+            make("switch off", "to stop thinking about work or problems and relax",
+                 "（頭を）オフにする・リラックスする",
+                 useCases: ["休暇や週末にのんびりしたいとき", "仕事を忘れられないと話すとき"],
+                 examples: [
+                    ("I find it really hard to switch off after work.", "仕事の後に頭を切り替えるのが本当に難しいんだ。"),
+                    ("A week by the sea helped me completely switch off.", "海辺で1週間過ごして完全にリフレッシュできた。")
+                 ], ipa: "/swˈɪtʃ ˈɒf/"),
+            make("put on weight", "to become heavier",
+                 "太る・体重が増える",
+                 useCases: ["体型や健康について話すとき", "食べ過ぎを反省するとき"],
+                 examples: [
+                    ("I've put on a bit of weight over Christmas.", "クリスマスの間にちょっと太っちゃった。"),
+                    ("He's put on weight since he stopped cycling.", "彼、自転車をやめてから太ったね。")
+                 ], ipa: "/pˈʊt ɒn wˈeɪt/"),
+            make("go for a walk", "to walk somewhere for pleasure or exercise",
+                 "散歩に行く",
+                 useCases: ["気分転換に外を歩くとき", "人を散歩に誘うとき"],
+                 examples: [
+                    ("Fancy going for a walk after lunch?", "お昼の後、散歩でもどう？"),
+                    ("We went for a lovely walk along the river.", "川沿いを気持ちよく散歩したよ。")
+                 ], ipa: "/ɡˈəʊ fə ə wˈɔːk/"),
+            make("stretch your legs", "to go for a short walk, especially after sitting for a long time",
+                 "（座りっぱなしの後に）ちょっと歩く・体をほぐす",
+                 useCases: ["長時間のドライブや仕事の休憩に", "少し外に出たいと言うとき"],
+                 examples: [
+                    ("Let's stop at the next services and stretch our legs.", "次のサービスエリアで止まってちょっと歩こう。"),
+                    ("I'm just popping out to stretch my legs.", "ちょっと体ほぐしに外歩いてくるね。")
+                 ], ipa: "/stɹˈɛtʃ jɔː lˈɛɡz/"),
+            make("hang up", "to end a phone call",
+                 "電話を切る",
+                 useCases: ["電話を切るとき", "電話を突然切られたとき"],
+                 examples: [
+                    ("Don't hang up — I've got one more thing to tell you.", "まだ切らないで、もう一つ話があるの。"),
+                    ("She got annoyed and hung up on me.", "彼女怒って電話をガチャ切りしたんだ。")
+                 ], ipa: "/hˈæŋ ˈʌp/")
         ]
     }
 }
