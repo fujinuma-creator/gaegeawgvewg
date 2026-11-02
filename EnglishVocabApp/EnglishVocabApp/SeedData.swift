@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28846,6 +28846,116 @@ enum SeedData {
                     ("We're running low on milk — can you grab some?", "牛乳が残り少ないんだ、買ってきてくれる？"),
                     ("My phone's running low on battery.", "携帯の充電が少なくなってきた。")
                  ], ipa: "/bi ɹˈʌnɪŋ lˈəʊ ɒn/")
+        ]
+    }
+
+    private static var britishColloquial97: [Word] {
+        [
+            make("get to know", "to gradually learn more about someone or something and become familiar with them",
+                 "〜と知り合う・〜をよく知るようになる",
+                 useCases: ["人と親しくなる過程を話すとき", "新しい場所や仕事に慣れていくとき"],
+                 examples: [
+                    ("I'd love to get to know you better.", "あなたのことをもっと知りたいな。"),
+                    ("It took me a while to get to know the city.", "この街に慣れるまで少し時間がかかったよ。")
+                 ], ipa: "/ɡɛt tə nˈəʊ/"),
+            make("stay over", "to sleep at someone else's home for the night",
+                 "（人の家に）泊まる",
+                 useCases: ["友人宅に泊まるとき", "泊まっていくよう勧めるとき"],
+                 examples: [
+                    ("It's late — why don't you stay over?", "もう遅いし、泊まっていけば？"),
+                    ("My sister's staying over this weekend.", "今週末は妹が泊まりに来るの。")
+                 ], ipa: "/stˈeɪ ˈəʊvə/"),
+            make("come over", "to visit someone at their home, usually casually",
+                 "（家に）遊びに来る",
+                 useCases: ["友達を家に誘うとき", "訪問の予定を話すとき"],
+                 examples: [
+                    ("Do you want to come over for dinner on Friday?", "金曜に夕飯食べに来ない？"),
+                    ("A few friends are coming over tonight.", "今夜は友達が何人か遊びに来るんだ。")
+                 ], ipa: "/kʌm ˈəʊvə/"),
+            make("get some fresh air", "to go outside, especially after being indoors for a long time",
+                 "外の空気を吸う・外に出て気分転換する",
+                 useCases: ["気分転換に外へ出るとき", "散歩に誘うとき"],
+                 examples: [
+                    ("I've been inside all day — I need to get some fresh air.", "一日中家にいたから外の空気を吸いたい。"),
+                    ("Let's go for a walk and get some fresh air.", "散歩して外の空気でも吸おうよ。")
+                 ], ipa: "/ɡɛt səm fɹˈɛʃ ˈɛə/"),
+            make("not bad", "fairly good; often used in British English to mean something is actually quite good",
+                 "悪くない・なかなかいい",
+                 useCases: ["調子を聞かれて答えるとき", "控えめに褒めるとき"],
+                 examples: [
+                    ("\"How are you?\" \"Not bad, thanks. You?\"", "「元気？」「まあまあかな、ありがとう。君は？」"),
+                    ("This pasta's not bad at all!", "このパスタ、なかなかいけるね！")
+                 ], ipa: "/nˌɒt bˈæd/"),
+            make("ups and downs", "a mixture of good and bad experiences or periods",
+                 "浮き沈み・良い時も悪い時も",
+                 useCases: ["人生や仕事の波を話すとき", "人間関係を振り返るとき"],
+                 examples: [
+                    ("Every relationship has its ups and downs.", "どんな関係にも浮き沈みはあるよ。"),
+                    ("It's been a year of ups and downs.", "いろいろあった一年だったな。")
+                 ], ipa: "/ˈʌps ən dˈaʊnz/"),
+            make("a couple of", "two, or a small number of people or things",
+                 "2、3の・いくつかの",
+                 useCases: ["少しの数や時間を言うとき"],
+                 examples: [
+                    ("I'll be there in a couple of minutes.", "2、3分で着くよ。"),
+                    ("Can I ask you a couple of questions?", "いくつか質問してもいい？")
+                 ], ipa: "/ə kˈʌpəl əv/"),
+            make("let alone", "used to say that because one thing is not true or possible, a second thing is even less likely",
+                 "ましてや〜なんて・〜はおろか",
+                 useCases: ["「AすらできないのにBなんて」と言うとき"],
+                 examples: [
+                    ("I can barely cook pasta, let alone a three-course meal.", "パスタもろくに作れないのに、コース料理なんてとても無理。"),
+                    ("I don't have time to sleep, let alone go on holiday.", "寝る時間もないのに、休暇なんてとんでもない。")
+                 ], ipa: "/lɛt əlˈəʊn/"),
+            make("at last", "finally, after a long time of waiting",
+                 "やっと・ついに",
+                 useCases: ["待ち望んでいたことが起きたとき"],
+                 examples: [
+                    ("At last! I thought you'd never get here.", "やっと来た！もう来ないかと思ったよ。"),
+                    ("The sun's out at last.", "ようやく晴れたね。")
+                 ], ipa: "/ət lˈɑːst/"),
+            make("at the moment", "now, at the present time; very common in British English",
+                 "今のところ・今ちょうど",
+                 useCases: ["今の状況を説明するとき", "今は手が離せないと伝えるとき"],
+                 examples: [
+                    ("I'm quite busy at the moment — can I call you back?", "今ちょっと忙しくて、かけ直してもいい？"),
+                    ("She's living in Berlin at the moment.", "彼女は今ベルリンに住んでいるよ。")
+                 ], ipa: "/ət ðə mˈəʊmənt/"),
+            make("straight away", "immediately, without any delay",
+                 "すぐに・ただちに",
+                 useCases: ["すぐ対応すると約束するとき"],
+                 examples: [
+                    ("I'll send it to you straight away.", "すぐに送りますね。"),
+                    ("We got on straight away.", "僕たちはすぐに打ち解けたんだ。")
+                 ], ipa: "/stɹˈeɪt əwˈeɪ/"),
+            make("take a break", "to stop working or doing something for a short time to rest",
+                 "ひと休みする・休憩する",
+                 useCases: ["休憩を提案するとき", "働きすぎの人に声をかけるとき"],
+                 examples: [
+                    ("Let's take a break and grab a coffee.", "ひと休みしてコーヒーでも飲もう。"),
+                    ("You've been working for hours — take a break!", "何時間も働いてるよ、少し休んで！")
+                 ], ipa: "/tˈeɪk ə bɹˈeɪk/"),
+            make("either way", "whichever of two possibilities happens or is chosen; it doesn't matter which",
+                 "どちらにしても・いずれにせよ",
+                 useCases: ["どちらでも構わないと伝えるとき", "結論が変わらないと言うとき"],
+                 examples: [
+                    ("We can take the bus or walk — I'm fine either way.", "バスでも歩きでも、どっちでもいいよ。"),
+                    ("Either way, let me know by Friday.", "いずれにせよ、金曜までに教えてね。")
+                 ], ipa: "/ˈaɪðə wˈeɪ/"),
+            make("it's no trouble", "a friendly reply meaning that helping someone is not a problem for you",
+                 "全然手間じゃないよ・お安いご用です",
+                 useCases: ["お礼や遠慮に対して返すとき"],
+                 examples: [
+                    ("\"Sorry to make you wait.\" \"Don't worry, it's no trouble.\"", "「待たせてごめんね」「気にしないで、全然平気だよ」"),
+                    ("I can drop you off on my way — it's no trouble.", "途中で降ろしてあげるよ、全然手間じゃないから。")
+                 ], ipa: "/ɪts nˈəʊ tɹˈʌbəl/"),
+            make("hopefully", "used to say what you hope will happen",
+                 "うまくいけば・〜だといいな",
+                 useCases: ["期待や希望を軽く伝えるとき"],
+                 examples: [
+                    ("Hopefully the rain will stop by the afternoon.", "午後までに雨がやむといいな。"),
+                    ("I'll be home by seven, hopefully.", "うまくいけば7時までには帰れるよ。")
+                 ], ipa: "/hˈəʊpfəli/")
         ]
     }
 }
