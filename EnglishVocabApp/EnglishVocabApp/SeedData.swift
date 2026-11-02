@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29616,6 +29616,116 @@ enum SeedData {
                     ("I'll have the fish and chips, please.", "フィッシュ・アンド・チップスをお願いします。"),
                     ("\"What are you drinking?\" \"I'll have a lemonade, thanks.\"", "「何飲む？」「レモネードにするよ、ありがとう。」")
                  ], ipa: "/aɪl hˈæv/")
+        ]
+    }
+
+    private static var britishColloquial104: [Word] {
+        [
+            make("throw a party", "to organise and hold a party",
+                 "パーティーを開く",
+                 useCases: ["誕生日や送別会を企画するとき", "家で集まりを開くとき"],
+                 examples: [
+                    ("We're throwing a party for Sam's birthday on Saturday.", "土曜日にサムの誕生日パーティーを開くんだ。"),
+                    ("They threw a little leaving party for me at work.", "職場でちょっとした送別会を開いてくれたの。")
+                 ], ipa: "/θɹˈəʊ ə pˈɑːti/"),
+            make("do up", "to fasten clothes or shoes; also to repair and decorate a house or room",
+                 "（ボタン・ファスナーを）留める／（家を）改装する",
+                 useCases: ["上着のボタンやファスナーを閉めるとき", "家や部屋をリフォームするとき"],
+                 examples: [
+                    ("Do your coat up — it's cold out there.", "コートの前閉めなよ、外寒いから。"),
+                    ("They bought an old cottage and did it up themselves.", "古いコテージを買って、自分たちで改装したんだ。")
+                 ], ipa: "/dˈuː ˈʌp/"),
+            make("half past", "thirty minutes after the hour",
+                 "〜時半",
+                 useCases: ["待ち合わせの時間を言うとき", "今の時刻を伝えるとき"],
+                 examples: [
+                    ("Shall we meet at half past seven?", "7時半に待ち合わせしようか？"),
+                    ("It's already half past ten — we should go.", "もう10時半だ、そろそろ行かないと。")
+                 ], ipa: "/hˈɑːf pˈɑːst/"),
+            make("lock up", "to lock all the doors and windows of a building before leaving",
+                 "戸締まりをする",
+                 useCases: ["最後に家や店を出るとき", "誰が戸締まりするか決めるとき"],
+                 examples: [
+                    ("Can you lock up when you leave?", "出るとき戸締まりお願いできる？"),
+                    ("I'm always the last one here, so I lock up.", "いつも最後なのは私だから、戸締まりは私がするの。")
+                 ], ipa: "/lˈɒk ˈʌp/"),
+            make("stuck in traffic", "unable to move forward because the roads are very busy",
+                 "渋滞にはまって",
+                 useCases: ["遅れる理由を伝えるとき", "車移動の大変さを話すとき"],
+                 examples: [
+                    ("Sorry, I'm stuck in traffic — I'll be ten minutes late.", "ごめん、渋滞にはまってて。10分遅れる。"),
+                    ("We were stuck in traffic for nearly an hour.", "1時間近く渋滞にはまってたよ。")
+                 ], ipa: "/stˈʌk ɪn tɹˈæfɪk/"),
+            make("jump the queue", "to move in front of people who have been waiting longer than you",
+                 "列に割り込む",
+                 useCases: ["列への割り込みに文句を言うとき", "優先的に扱われることを話すとき"],
+                 examples: [
+                    ("Did that guy just jump the queue?", "今あの人、列に割り込んだ？"),
+                    ("You can't just jump the queue because you're in a hurry.", "急いでるからって割り込んじゃダメだよ。")
+                 ], ipa: "/dʒˈʌmp ðə kjˈuː/"),
+            make("Don't worry about it.", "used to tell someone that something is not a problem, often after an apology or thanks",
+                 "気にしないで・大丈夫だよ",
+                 useCases: ["謝られたときに軽く返すとき", "お礼を言われたときに返すとき"],
+                 examples: [
+                    ("\"Sorry I'm late.\" \"Don't worry about it — we've only just started.\"", "「遅れてごめん。」「気にしないで、今始めたところだから。」"),
+                    ("Don't worry about it, I'll pay for the coffees.", "大丈夫、コーヒー代は私が払うよ。")
+                 ], ipa: "/dˈəʊnt wˈʌɹi əbˈaʊt ɪt/"),
+            make("I'll see what I can do.", "used to say you will try to help, without promising",
+                 "なんとかしてみるね・できるだけやってみる",
+                 useCases: ["頼まれごとを引き受けるとき", "確約はできないが努力するとき"],
+                 examples: [
+                    ("I can't promise anything, but I'll see what I can do.", "約束はできないけど、なんとかしてみるよ。"),
+                    ("\"Could you get me a ticket?\" \"I'll see what I can do.\"", "「チケット取れたりする？」「できるだけやってみる。」")
+                 ], ipa: "/aɪl sˈiː wɒt aɪ kæn dˈuː/"),
+            make("long weekend", "a weekend with an extra day off, such as a Friday or Monday holiday",
+                 "三連休・連休",
+                 useCases: ["祝日を含む週末の予定を話すとき", "金曜や月曜に休みを取ったとき"],
+                 examples: [
+                    ("Have you got anything planned for the long weekend?", "連休は何か予定ある？"),
+                    ("We're going to Lisbon for a long weekend.", "三連休でリスボンに行くんだ。")
+                 ], ipa: "/lˈɒŋ wiːkˈɛnd/"),
+            make("get in touch", "to contact someone by phone, email or message",
+                 "連絡する・連絡を取る",
+                 useCases: ["後で連絡すると伝えるとき", "久しぶりに誰かに連絡するとき"],
+                 examples: [
+                    ("I'll get in touch once I know the dates.", "日程がわかったら連絡するね。"),
+                    ("Feel free to get in touch if you have any questions.", "質問があれば気軽に連絡してね。")
+                 ], ipa: "/ɡˈɛt ɪn tˈʌtʃ/"),
+            make("Anything nice planned?", "a friendly question about someone's plans, often for the weekend or holidays",
+                 "何か楽しい予定ある？",
+                 useCases: ["週末前の雑談で聞くとき", "休暇前の同僚に話しかけるとき"],
+                 examples: [
+                    ("Anything nice planned for the weekend?", "週末、何か楽しい予定ある？"),
+                    ("\"I've got next week off.\" \"Oh lovely, anything nice planned?\"", "「来週休みなんだ。」「いいね、何か予定あるの？」")
+                 ], ipa: "/ˈɛniθɪŋ nˈaɪs plˈænd/"),
+            make("I've been better.", "used to say, often with humour, that you are not feeling very well or things are not going well",
+                 "まあ、いまいちかな",
+                 useCases: ["調子を聞かれて正直に答えるとき", "体調や状況がよくないことを軽く伝えるとき"],
+                 examples: [
+                    ("\"How are you?\" \"Honestly? I've been better.\"", "「元気？」「正直、いまいちかな。」"),
+                    ("I've been better — this cold just won't go away.", "いまいちだね、この風邪がなかなか治らなくて。")
+                 ], ipa: "/aɪv bˈiːn bˈɛtə/"),
+            make("out of date", "past its use-by date; also old-fashioned or no longer correct",
+                 "期限切れの・古くなった",
+                 useCases: ["食品の消費期限が切れているとき", "情報やパスポートが古いとき"],
+                 examples: [
+                    ("Don't drink that milk — it's out of date.", "その牛乳飲まないで、期限切れてるよ。"),
+                    ("My passport's out of date, so I need to renew it.", "パスポートが切れてるから、更新しないと。")
+                 ], ipa: "/ˈaʊt əv dˈeɪt/"),
+            make("do the trick", "to solve a problem or achieve the result you need",
+                 "効く・うまくいく・それで十分",
+                 useCases: ["解決策がうまくいったとき", "これで足りると言うとき"],
+                 examples: [
+                    ("A cup of tea and a nap should do the trick.", "紅茶飲んで昼寝すれば治るでしょ。"),
+                    ("I turned it off and on again, and that did the trick.", "一回電源切って入れ直したら直ったよ。")
+                 ], ipa: "/dˈuː ðə tɹˈɪk/"),
+            make("just my luck", "used when something bad happens to you, as if you are always unlucky",
+                 "ついてないなあ・いつもこうだ",
+                 useCases: ["運の悪い出来事を嘆くとき", "自虐的に不運を笑うとき"],
+                 examples: [
+                    ("The bus left just as I got there — just my luck.", "着いた瞬間にバスが出ちゃった。ついてないな。"),
+                    ("Just my luck — it starts raining the day I forget my umbrella.", "傘忘れた日に限って雨。いつもこうなんだよ。")
+                 ], ipa: "/dʒˈʌst maɪ lˈʌk/")
         ]
     }
 }
