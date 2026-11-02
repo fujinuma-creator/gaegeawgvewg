@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30058,6 +30058,117 @@ enum SeedData {
                  ], ipa: "/kˈʌm əlˈɒŋ/")
         ]
     }
+
+    private static var britishColloquial108: [Word] {
+        [
+            make("talk soon", "a friendly way to end a call or message, meaning you will speak again soon",
+                 "またね・また連絡するね",
+                 useCases: ["電話やメッセージを締めくくるとき", "友人や同僚との気軽なやりとりの最後に"],
+                 examples: [
+                    ("Right, I'd better go. Talk soon!", "じゃあ、そろそろ行かなきゃ。またね！"),
+                    ("Lovely to catch up — talk soon, yeah?", "近況聞けてよかった、また話そうね。")
+                 ], ipa: "/tˈɔːk sˈuːn/"),
+            make("safe travels", "a phrase used to wish someone a safe journey",
+                 "気をつけて行ってらっしゃい・良い旅を",
+                 useCases: ["旅行や出張に出る人を見送るとき", "長距離移動する友人へのメッセージ"],
+                 examples: [
+                    ("Have a great time in Lisbon — safe travels!", "リスボン楽しんでね、気をつけて！"),
+                    ("Safe travels, and text me when you land.", "気をつけてね、着いたらメッセージちょうだい。")
+                 ], ipa: "/sˈeɪf tɹˈævəlz/"),
+            make("cost a fortune", "to be very expensive",
+                 "大金がかかる・すごく高くつく",
+                 useCases: ["値段の高さに驚いたとき", "出費を愚痴るとき"],
+                 examples: [
+                    ("Eating out in London costs a fortune these days.", "最近ロンドンで外食するとめちゃくちゃお金かかるよ。"),
+                    ("It looks lovely, but it must have cost a fortune.", "素敵だけど、相当高かったでしょ。")
+                 ], ipa: "/kˈɒst ə fˈɔːtʃuːn/"),
+            make("work from home", "to do your job at home instead of going to the office",
+                 "在宅勤務する・家で仕事する",
+                 useCases: ["働き方について話すとき", "今日の予定を伝えるとき"],
+                 examples: [
+                    ("I'm working from home on Fridays now.", "今は金曜日は在宅勤務なんだ。"),
+                    ("Can you work from home if the trains are on strike?", "電車がストのときは在宅できるの？")
+                 ], ipa: "/wˈɜːk fɹəm hˈəʊm/"),
+            make("honestly", "used to emphasise that you are telling the truth, or to show mild annoyance",
+                 "正直に言って・本当に・まったくもう",
+                 useCases: ["本音を強調するとき", "呆れや軽いイライラを表すとき"],
+                 examples: [
+                    ("Honestly, I don't mind either way.", "正直、どっちでもいいよ。"),
+                    ("Oh, honestly! He's late again.", "もう、まったく！彼また遅刻だよ。")
+                 ], ipa: "/ˈɒnɪstli/"),
+            make("nowadays", "at the present time, compared with the past",
+                 "最近は・今どきは",
+                 useCases: ["昔と今を比べるとき", "最近の傾向について話すとき"],
+                 examples: [
+                    ("Nowadays everyone pays by card.", "今どきはみんなカードで払うよね。"),
+                    ("I hardly ever watch TV nowadays.", "最近はほとんどテレビ見ないなあ。")
+                 ], ipa: "/nˈaʊədeɪz/"),
+            make("stay put", "to stay where you are and not move",
+                 "その場にとどまる・動かないでいる",
+                 useCases: ["待ち合わせで動かないでと伝えるとき", "引っ越さずに今の場所にいるとき"],
+                 examples: [
+                    ("Stay put — I'll come and find you.", "そこから動かないで、迎えに行くから。"),
+                    ("We thought about moving, but we've decided to stay put.", "引っ越しも考えたけど、今のところにいることにしたよ。")
+                 ], ipa: "/stˈeɪ pˈʊt/"),
+            make("take a photo", "to use a camera or phone to make a picture",
+                 "写真を撮る",
+                 useCases: ["観光地で撮影を頼むとき", "思い出を残したいとき"],
+                 examples: [
+                    ("Would you mind taking a photo of us?", "私たちの写真を撮ってもらえますか？"),
+                    ("Hang on, let me take a photo before we eat.", "ちょっと待って、食べる前に写真撮らせて。")
+                 ], ipa: "/tˈeɪk ə fˈəʊtəʊ/"),
+            make("excuse me", "a polite phrase to get someone's attention, get past them, or apologise",
+                 "すみません・失礼します",
+                 useCases: ["見知らぬ人に話しかけるとき", "人混みで通してもらうとき"],
+                 examples: [
+                    ("Excuse me, is this seat free?", "すみません、この席空いてますか？"),
+                    ("Excuse me, could I just squeeze past?", "すみません、ちょっと通してもらえますか？")
+                 ], ipa: "/ɪkskjˈuːz mi/"),
+            make("it's worth a try", "it is a good idea to attempt something even if it might not work",
+                 "やってみる価値はある・試してみる価値あり",
+                 useCases: ["ダメもとで挑戦を勧めるとき", "解決策を提案するとき"],
+                 examples: [
+                    ("Turn it off and on again — it's worth a try.", "一回電源切って入れ直してみて、試す価値はあるよ。"),
+                    ("They might have tickets left. It's worth a try.", "チケットまだ残ってるかも。行ってみる価値はあるよ。")
+                 ], ipa: "/ɪts wˈɜːθ ə tɹˈaɪ/"),
+            make("in a way", "partly, or to some extent",
+                 "ある意味では・ある程度は",
+                 useCases: ["部分的に同意するとき", "意見を和らげて言うとき"],
+                 examples: [
+                    ("In a way, I'm glad it happened.", "ある意味、そうなってよかったと思ってる。"),
+                    ("You're right in a way, but it's more complicated.", "ある意味その通りだけど、もっと複雑なんだよ。")
+                 ], ipa: "/ɪn ə wˈeɪ/"),
+            make("by the time", "at or before the moment when something happens",
+                 "〜する頃には・〜するまでに",
+                 useCases: ["時間の前後関係を説明するとき", "遅れて着いたことを話すとき"],
+                 examples: [
+                    ("By the time we got there, the shop had closed.", "着いた頃にはもう店が閉まってたよ。"),
+                    ("I'll be home by the time you finish work.", "君が仕事終わる頃には家にいるよ。")
+                 ], ipa: "/baɪ ðə tˈaɪm/"),
+            make("far too", "much more than is acceptable or wanted",
+                 "あまりにも〜すぎる・はるかに〜すぎる",
+                 useCases: ["程度が過ぎることを強調するとき", "断る理由を伝えるとき"],
+                 examples: [
+                    ("It's far too cold to go to the beach today.", "今日はビーチに行くには寒すぎるよ。"),
+                    ("I've eaten far too much.", "食べすぎちゃった。")
+                 ], ipa: "/fˈɑː tuː/"),
+            make("get lost", "to become unable to find your way",
+                 "道に迷う",
+                 useCases: ["道に迷ったことを話すとき", "遅刻の理由を説明するとき"],
+                 examples: [
+                    ("Sorry I'm late — I got lost on the way.", "遅れてごめん、途中で道に迷っちゃって。"),
+                    ("It's easy to get lost in the old town.", "旧市街は迷いやすいよ。")
+                 ], ipa: "/ɡɛt lˈɒst/"),
+            make("every other", "every second one; alternate (e.g. every other day)",
+                 "一つおきの・隔〜（every other day = 1日おき）",
+                 useCases: ["頻度を説明するとき", "習慣やスケジュールを話すとき"],
+                 examples: [
+                    ("I go to the gym every other day.", "ジムには1日おきに行ってるよ。"),
+                    ("We see my parents every other weekend.", "隔週末に両親に会ってるんだ。")
+                 ], ipa: "/ˈɛvɹi ˈʌðə/")
+        ]
+    }
+
 }
 
 
