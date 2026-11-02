@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30496,6 +30496,116 @@ enum SeedData {
                     ("Come on, it's your turn to roll the dice.", "ほら、サイコロ振るのあなたの番だよ。"),
                     ("Whose turn is it to take the bins out? — Yours!", "ゴミ出し誰の番？— 君だよ！")
                  ], ipa: "/ɪts jɔː tˈɜːn/"),
+        ]
+    }
+
+    private static var britishColloquial112: [Word] {
+        [
+            make("what have you been up to?", "a friendly question asking what someone has been doing recently, especially when you haven't seen them for a while",
+                 "最近どうしてたの？・何してた？",
+                 useCases: ["久しぶりに会った人との会話の切り出し", "近況を聞くとき"],
+                 examples: [
+                    ("Hey, long time! What have you been up to?", "久しぶり！最近どうしてたの？"),
+                    ("Not much, really — what have you been up to?", "特に何も。そっちは最近何してた？")
+                 ], ipa: "/wɒt həv juː bɪn ˈʌp tuː/"),
+            make("I've got it covered", "used to say that you are dealing with something, so the other person doesn't need to worry",
+                 "任せて・こっちでやっとくよ",
+                 useCases: ["相手の負担を引き受けるとき", "準備や支払いを済ませてあると伝えるとき"],
+                 examples: [
+                    ("Do you need me to bring anything? — No, I've got it covered.", "何か持っていこうか？— 大丈夫、こっちで用意してあるよ。"),
+                    ("Don't worry about the drinks — I've got it covered.", "飲み物のことは気にしないで、私が何とかするから。")
+                 ], ipa: "/aɪv ɡˈɒt ɪt kˈʌvəd/"),
+            make("that's not what I meant", "used to say that someone has misunderstood what you said",
+                 "そういう意味じゃないよ",
+                 useCases: ["誤解を解くとき", "言い方がきつく伝わってしまったとき"],
+                 examples: [
+                    ("So you think my cooking is bad? — No, that's not what I meant!", "私の料理がまずいってこと？— 違う、そういう意味じゃないよ！"),
+                    ("Sorry, that's not what I meant — let me put it another way.", "ごめん、そういう意味じゃなくて、言い方を変えるね。")
+                 ], ipa: "/ðæts nˈɒt wɒt aɪ mˈɛnt/"),
+            make("how did it go?", "used to ask about the result of an event such as an interview, exam, or meeting",
+                 "どうだった？・うまくいった？",
+                 useCases: ["面接・試験・デートなどの結果を聞くとき", "相手の出来事を気にかけるとき"],
+                 examples: [
+                    ("You had your interview today, right? How did it go?", "今日面接だったよね？どうだった？"),
+                    ("How did it go with the landlord? — Better than I expected.", "大家さんとの話、どうなった？— 思ったよりうまくいったよ。")
+                 ], ipa: "/hˈaʊ dɪd ɪt ɡˈəʊ/"),
+            make("I didn't mean to", "used to apologise and say that you did something by accident, not on purpose",
+                 "わざとじゃないんだ・そんなつもりじゃなかった",
+                 useCases: ["うっかり何かをして謝るとき", "相手を傷つけてしまったとき"],
+                 examples: [
+                    ("Sorry, I didn't mean to wake you up.", "ごめん、起こすつもりはなかったんだ。"),
+                    ("I didn't mean to upset you — I was only joking.", "傷つけるつもりはなかったんだ、ただの冗談だよ。")
+                 ], ipa: "/aɪ dˈɪdnt mˈiːn tuː/"),
+            make("it's not ideal", "a polite, understated way of saying that a situation is bad or inconvenient",
+                 "ちょっと困るね・理想的ではないね（婉曲に「良くない」）",
+                 useCases: ["不都合な状況を柔らかく言うとき", "妥協案を受け入れるとき"],
+                 examples: [
+                    ("The train's been cancelled, so we'll have to get the bus. It's not ideal.", "電車が運休だからバスで行くしかないね。ちょっと困るけど。"),
+                    ("It's not ideal, but we can make it work.", "理想的じゃないけど、何とかなるよ。")
+                 ], ipa: "/ɪts nˈɒt aɪdˈɪəl/"),
+            make("dig in", "an informal way of telling people to start eating",
+                 "さあ食べて・どうぞ召し上がれ",
+                 useCases: ["料理を出して食べ始めるよう促すとき", "食事の場で"],
+                 examples: [
+                    ("Dinner's ready — dig in!", "夕飯できたよ、さあ食べて！"),
+                    ("Don't wait for me, just dig in.", "私を待たなくていいから、先に食べてて。")
+                 ], ipa: "/dˈɪɡ ˈɪn/"),
+            make("take time off", "to not go to work or school for a period of time, e.g. for a holiday or because you are ill",
+                 "休みを取る・休暇を取る",
+                 useCases: ["休暇の予定を話すとき", "仕事を休む理由を言うとき"],
+                 examples: [
+                    ("I'm taking a few days off next week to visit my parents.", "来週、親に会いに数日休みを取るんだ。"),
+                    ("You look exhausted — you should take some time off.", "疲れてるみたいだね、少し休みを取ったほうがいいよ。")
+                 ], ipa: "/tˈeɪk tˈaɪm ˈɒf/"),
+            make("couldn't care less", "used to say that you are not at all interested in or worried about something",
+                 "全然どうでもいい・まったく気にしない",
+                 useCases: ["全く興味がないことを伝えるとき", "他人の評価を気にしないとき"],
+                 examples: [
+                    ("Honestly, I couldn't care less about football.", "正直、サッカーには全然興味ないんだ。"),
+                    ("She couldn't care less what people think of her.", "彼女は人にどう思われようと全く気にしない。")
+                 ], ipa: "/kˈʊdnt kˈeə lˈɛs/"),
+            make("much appreciated", "a short, friendly way of saying thank you for something someone has done",
+                 "本当に助かるよ・ありがとう",
+                 useCases: ["ちょっとした手助けにお礼を言うとき", "メッセージやメールの短い感謝"],
+                 examples: [
+                    ("I've sent you the file. — Thanks, much appreciated!", "ファイル送ったよ。— ありがとう、助かる！"),
+                    ("Any help with the move would be much appreciated.", "引っ越しを手伝ってもらえたら本当に助かるよ。")
+                 ], ipa: "/mˈʌtʃ əprˈiːʃieɪtɪd/"),
+            make("here and there", "in various places, or now and then; not regularly or in one place",
+                 "あちこちで・ちょこちょこ・ときどき",
+                 useCases: ["散らばっている様子を言うとき", "少しずつ・たまにやることを話すとき"],
+                 examples: [
+                    ("I've been picking up a bit of Spanish here and there.", "スペイン語をちょこちょこ覚えてるんだ。"),
+                    ("There are a few mistakes here and there, but it's mostly fine.", "あちこちに少しミスはあるけど、だいたい大丈夫だよ。")
+                 ], ipa: "/hˈɪər ənd ðˈeə/"),
+            make("make time for", "to make sure you have time to do something or see someone, even when you are busy",
+                 "（忙しくても）～のための時間を作る",
+                 useCases: ["大切な人や趣味の話をするとき", "忙しさについて話すとき"],
+                 examples: [
+                    ("No matter how busy I am, I always make time for my kids.", "どんなに忙しくても、子どもとの時間は必ず作ってるよ。"),
+                    ("You need to make time for yourself now and then.", "たまには自分のための時間も作らなきゃ。")
+                 ], ipa: "/mˈeɪk tˈaɪm fɔː/"),
+            make("traffic jam", "a long line of vehicles that are moving very slowly or not moving at all",
+                 "渋滞",
+                 useCases: ["遅刻の理由を説明するとき", "移動や通勤の話をするとき"],
+                 examples: [
+                    ("Sorry I'm late — I got stuck in a traffic jam.", "遅れてごめん、渋滞にはまっちゃって。"),
+                    ("Let's leave early to avoid the traffic jams.", "渋滞を避けるために早めに出よう。")
+                 ], ipa: "/trˈæfɪk dʒæm/"),
+            make("I'll let you know", "used to say that you will tell someone something later, when you have decided or found out",
+                 "また連絡するね・決まったら知らせるね",
+                 useCases: ["返事を保留するとき", "予定がまだ決まっていないとき"],
+                 examples: [
+                    ("I'm not sure if I'm free on Friday — I'll let you know.", "金曜空いてるかまだわからないから、また連絡するね。"),
+                    ("I'll let you know when I get there.", "着いたら知らせるね。")
+                 ], ipa: "/aɪl lˈɛt juː nˈəʊ/"),
+            make("oh well", "used to show that you accept a disappointing situation because you cannot change it",
+                 "まあいいか・仕方ないね",
+                 useCases: ["残念なことを受け流すとき", "気持ちを切り替えるとき"],
+                 examples: [
+                    ("The shop's already closed. — Oh well, we'll go tomorrow.", "お店もう閉まってるよ。— まあいいか、明日行こう。"),
+                    ("Oh well, it was worth a try.", "まあ仕方ない、やってみる価値はあったよ。")
+                 ], ipa: "/ˈəʊ wˈɛl/"),
         ]
     }
 
