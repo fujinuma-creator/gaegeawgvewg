@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -28516,6 +28516,116 @@ enum SeedData {
                     ("He's always late and somehow gets away with it.", "あいつ毎回遅刻するのに、なぜか怒られないんだよね。"),
                     ("You won't get away with this!", "このままじゃ済まないからね！")
                  ], ipa: "/ɡɛt əwˈeɪ wɪð/")
+        ]
+    }
+
+    private static var britishColloquial94: [Word] {
+        [
+            make("what do you make of", "used to ask someone for their opinion or impression of something or someone",
+                 "〜をどう思う？",
+                 useCases: ["人や出来事についての感想を聞くとき"],
+                 examples: [
+                    ("What do you make of the new manager?", "新しいマネージャー、どう思う？"),
+                    ("I don't know what to make of his message.", "彼のメッセージ、どう受け取ればいいのか分からないよ。")
+                 ], ipa: "/wˌɒt duː juː mˈeɪk ɒv/"),
+            make("take a while", "to need quite a long time to happen or be done",
+                 "しばらく時間がかかる",
+                 useCases: ["待ち時間や作業時間が長いと伝えるとき"],
+                 examples: [
+                    ("This might take a while, so grab a coffee.", "ちょっと時間かかるかもだから、コーヒーでもどうぞ。"),
+                    ("It took a while to get used to the new job.", "新しい仕事に慣れるのにしばらくかかったよ。")
+                 ], ipa: "/tˌeɪk ə wˈaɪl/"),
+            make("beat around the bush", "to avoid saying something directly; in British English also \"beat about the bush\"",
+                 "遠回しに言う・本題を避ける",
+                 useCases: ["はっきり言ってほしいとき", "単刀直入に話すと前置きするとき"],
+                 examples: [
+                    ("Stop beating around the bush — what happened?", "遠回しに言わないで、何があったの？"),
+                    ("I won't beat around the bush: we're over budget.", "単刀直入に言うね。予算オーバーなんだ。")
+                 ], ipa: "/bˌiːt əɹˈaʊnd ðə bˈʊʃ/"),
+            make("on the same page", "agreeing about something or having the same understanding of a situation",
+                 "認識が一致している・同じ考えで",
+                 useCases: ["話の前提や方針をそろえたいとき"],
+                 examples: [
+                    ("Let's have a quick chat so we're all on the same page.", "認識合わせのためにちょっと話そう。"),
+                    ("Good, it sounds like we're on the same page.", "よかった、考えは同じみたいだね。")
+                 ], ipa: "/ɒn ðə sˌeɪm pˈeɪdʒ/"),
+            make("get the ball rolling", "to start an activity or process, especially by being the first to act",
+                 "（物事を）始める・口火を切る",
+                 useCases: ["会議や計画をスタートさせるとき"],
+                 examples: [
+                    ("I'll get the ball rolling with a few ideas.", "まず私からいくつかアイデアを出して始めるね。"),
+                    ("We need to get the ball rolling on the wedding plans.", "結婚式の準備、そろそろ動き出さないと。")
+                 ], ipa: "/ɡɛt ðə bˈɔːl ɹˈəʊlɪŋ/"),
+            make("over the top", "too extreme, exaggerated or more than is suitable (often shortened to OTT in the UK)",
+                 "やりすぎ・大げさ",
+                 useCases: ["反応や飾り付けなどが行き過ぎだと言うとき"],
+                 examples: [
+                    ("A limo for a birthday dinner? Bit over the top, isn't it?", "誕生日ディナーにリムジン？ちょっとやりすぎじゃない？"),
+                    ("Sorry, I was a bit over the top yesterday.", "ごめん、昨日はちょっと大げさに騒ぎすぎた。")
+                 ], ipa: "/ˌəʊvə ðə tˈɒp/"),
+            make("bend over backwards", "to try extremely hard to help or please someone",
+                 "（人のために）精一杯努力する・無理をしてでも尽くす",
+                 useCases: ["誰かがとても頑張って助けてくれたと言うとき"],
+                 examples: [
+                    ("The hotel staff bent over backwards to help us.", "ホテルのスタッフがものすごく親身に助けてくれたよ。"),
+                    ("I'm not going to bend over backwards for him again.", "もうあの人のために無理するのはやめる。")
+                 ], ipa: "/bˌɛnd ˌəʊvə bˈækwədz/"),
+            make("pick someone up", "to collect someone in a car, usually from a particular place",
+                 "（車で）人を迎えに行く",
+                 useCases: ["送迎の約束をするとき"],
+                 examples: [
+                    ("I'll pick you up at the station at six.", "6時に駅まで迎えに行くね。"),
+                    ("Can you pick the kids up from school today?", "今日、子どもたちを学校に迎えに行ってくれる？")
+                 ], ipa: "/pˈɪk sʌmwʌn ˈʌp/"),
+            make("drop someone off", "to take someone somewhere in a car and leave them there",
+                 "（車で）人を送って降ろす",
+                 useCases: ["送ってあげると申し出るとき"],
+                 examples: [
+                    ("I can drop you off on my way home.", "帰り道に送っていくよ。"),
+                    ("Just drop me off at the corner, thanks.", "そこの角で降ろしてくれればいいよ、ありがとう。")
+                 ], ipa: "/dɹˈɒp sʌmwʌn ˈɒf/"),
+            make("make up for", "to do something good to compensate for something bad or missing",
+                 "埋め合わせをする・取り戻す",
+                 useCases: ["遅刻や迷惑のお詫びをするとき", "失った時間を取り戻すとき"],
+                 examples: [
+                    ("Let me buy you lunch to make up for being late.", "遅れたお詫びにランチおごらせて。"),
+                    ("We're making up for lost time.", "失った時間を取り戻してるところなんだ。")
+                 ], ipa: "/mˌeɪk ˈʌp fɔː/"),
+            make("at least", "used to point out something positive in a bad situation; or meaning not less than",
+                 "少なくとも・せめて",
+                 useCases: ["悪い状況の中の良い点を言うとき", "最低限の数量を言うとき"],
+                 examples: [
+                    ("Well, at least nobody got hurt.", "まあ、少なくとも誰もケガしなかったしね。"),
+                    ("It'll take at least an hour to get there.", "そこまで少なくとも1時間はかかるよ。")
+                 ], ipa: "/ət lˈiːst/"),
+            make("no big deal", "not important or not a problem",
+                 "大したことない・気にしないで",
+                 useCases: ["謝られたときに気にしないでと返すとき", "問題が小さいと伝えるとき"],
+                 examples: [
+                    ("Don't worry about the mug — it's no big deal.", "マグカップのことは気にしないで、大したことないから。"),
+                    ("Missing one class is no big deal.", "授業を1回休むくらい、大したことないよ。")
+                 ], ipa: "/nˈəʊ bˈɪɡ dˈiːl/"),
+            make("cheer up", "to become or make someone happier; often said to someone who looks sad",
+                 "元気を出す・元気づける",
+                 useCases: ["落ち込んでいる人を励ますとき"],
+                 examples: [
+                    ("Cheer up — it's nearly the weekend!", "元気出して、もうすぐ週末だよ！"),
+                    ("I bought her flowers to cheer her up.", "元気づけようと思って彼女に花を買ったんだ。")
+                 ], ipa: "/tʃˌɪəɹ ˈʌp/"),
+            make("me neither", "used to say that a negative statement is also true for you",
+                 "私も（〜ない）",
+                 useCases: ["否定文に「自分もそう」と同意するとき"],
+                 examples: [
+                    ("\"I don't like horror films.\" \"Me neither.\"", "「ホラー映画は好きじゃないんだ」「私も」"),
+                    ("\"I've never been to Ireland.\" \"Me neither — we should go!\"", "「アイルランド行ったことないんだ」「私も。行こうよ！」")
+                 ], ipa: "/mˌiː nˈaɪðə/"),
+            make("feel up to", "to feel well enough or confident enough to do something",
+                 "〜する元気・気力がある",
+                 useCases: ["体調や気分的にできるかを聞く・答えるとき"],
+                 examples: [
+                    ("Do you feel up to a walk, or shall we stay in?", "散歩する元気ある？それとも家にいる？"),
+                    ("I don't really feel up to going out tonight.", "今夜はあまり出かける気力がないな。")
+                 ], ipa: "/fˈiːl ˈʌp tuː/")
         ]
     }
 }
