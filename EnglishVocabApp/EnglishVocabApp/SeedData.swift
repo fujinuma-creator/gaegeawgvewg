@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27966,6 +27966,116 @@ enum SeedData {
                     ("It's Friday — fancy knocking off early?", "金曜だし、早めに切り上げない？"),
                     ("The boss let us knock off early today.", "今日は上司が早く帰らせてくれたよ。")
                  ], ipa: "/nˈɒk ˈɒf ˈɜːli/")
+        ]
+    }
+
+    private static var britishColloquial89: [Word] {
+        [
+            make("fob off", "to get rid of someone with an excuse or something of poor quality",
+                 "（言い訳などで）適当にあしらう・ごまかす",
+                 useCases: ["きちんと対応せずに言い訳ではぐらかされたとき"],
+                 examples: [
+                    ("Don't let them fob you off with excuses.", "言い訳で適当にあしらわれちゃだめだよ。"),
+                    ("I rang the bank, but they just fobbed me off.", "銀行に電話したけど、適当にあしらわれただけだった。")
+                 ], ipa: "/fˈɒb ˈɒf/"),
+            make("stroppy", "bad-tempered and easily annoyed, often in a rude way",
+                 "不機嫌な・つっけんどんな",
+                 useCases: ["人が機嫌悪く突っかかってくる様子を言うとき"],
+                 examples: [
+                    ("There's no need to get stroppy with me!", "私にそんな突っかかる必要ないでしょ！"),
+                    ("He's always a bit stroppy before his coffee.", "彼はコーヒー飲む前はいつもちょっと機嫌悪いんだ。")
+                 ], ipa: "/strˈɒpi/"),
+            make("clued up", "well informed and knowledgeable about something",
+                 "〜に詳しい・事情に通じている",
+                 useCases: ["ある分野や状況をよく知っている人を言うとき"],
+                 examples: [
+                    ("Ask Sarah — she's really clued up on tech.", "サラに聞いてみて、テクノロジーにすごく詳しいから。"),
+                    ("I need to get clued up before the meeting.", "会議の前にちゃんと情報を入れておかないと。")
+                 ], ipa: "/klˈuːd ˈʌp/"),
+            make("a tenner", "a ten-pound (or ten-euro) note; ten pounds",
+                 "10ポンド（札）",
+                 useCases: ["お金の額や貸し借りを気軽に話すとき"],
+                 examples: [
+                    ("Can you lend me a tenner till Friday?", "金曜まで10ポンド貸してくれない？"),
+                    ("The tickets were only a tenner each.", "チケットは1枚たった10ポンドだったよ。")
+                 ], ipa: "/ə tˈɛnə/"),
+            make("splash out", "to spend a lot of money on something, usually as a treat",
+                 "奮発する・大枚をはたく",
+                 useCases: ["ご褒美や特別な機会にお金をかけるとき"],
+                 examples: [
+                    ("We splashed out on a nice hotel for our anniversary.", "記念日にいいホテルを奮発したんだ。"),
+                    ("Go on, splash out — you deserve it.", "ほら、奮発しちゃいなよ。それだけ頑張ったんだから。")
+                 ], ipa: "/splˈæʃ ˈaʊt/"),
+            make("muck about", "to behave in a silly way or waste time",
+                 "ふざける・だらだらする",
+                 useCases: ["真面目にやらずにふざけている人を注意するとき"],
+                 examples: [
+                    ("Stop mucking about and help me with this.", "ふざけてないで、これ手伝ってよ。"),
+                    ("We just mucked about on the beach all afternoon.", "午後はずっとビーチでわいわい遊んでただけだよ。")
+                 ], ipa: "/mˈʌk əbˈaʊt/"),
+            make("teething problems", "small problems at the start of a new project, system or job",
+                 "（立ち上げ時の）初期トラブル",
+                 useCases: ["新しいシステムや仕事を始めたばかりの小さな問題を言うとき"],
+                 examples: [
+                    ("The new app has a few teething problems.", "新しいアプリには初期トラブルがいくつかあるね。"),
+                    ("Don't worry — it's just teething problems.", "心配いらないよ、ただの初期トラブルだから。")
+                 ], ipa: "/tˈiːðɪŋ prˈɒbləmz/"),
+            make("hacked off", "very annoyed or fed up",
+                 "頭にきた・うんざりした",
+                 useCases: ["何かにかなり腹を立てている気持ちを言うとき"],
+                 examples: [
+                    ("I'm really hacked off with the trains this week.", "今週の電車には本当に頭にきてるよ。"),
+                    ("She was hacked off that nobody called her back.", "誰も折り返し電話してくれなくて彼女はうんざりしてた。")
+                 ], ipa: "/hˈækt ˈɒf/"),
+            make("brolly", "an umbrella (informal)",
+                 "傘",
+                 useCases: ["天気の話や出かける前の会話で"],
+                 examples: [
+                    ("Take a brolly — it looks like rain.", "傘持っていきな、雨降りそうだよ。"),
+                    ("I've left my brolly on the bus again.", "また傘をバスに置き忘れちゃった。")
+                 ], ipa: "/brˈɒli/"),
+            make("have a whale of a time", "to enjoy yourself very much",
+                 "思いっきり楽しむ・最高に楽しい時間を過ごす",
+                 useCases: ["旅行やパーティーがすごく楽しかったと言うとき"],
+                 examples: [
+                    ("The kids had a whale of a time at the beach.", "子どもたち、ビーチで思いっきり楽しんでたよ。"),
+                    ("We had a whale of a time in Barcelona.", "バルセロナでは最高に楽しかった。")
+                 ], ipa: "/hˈæv ə wˈeɪl əv ə tˈaɪm/"),
+            make("pick up the tab", "to pay the bill for everyone",
+                 "勘定を持つ・おごる",
+                 useCases: ["食事や飲み会の支払いを誰かが引き受けるとき"],
+                 examples: [
+                    ("Don't worry, the company's picking up the tab.", "心配しないで、会社が払ってくれるから。"),
+                    ("He always offers to pick up the tab.", "彼はいつもおごるって言ってくれるんだ。")
+                 ], ipa: "/pˈɪk ˈʌp ðə tˈæb/"),
+            make("get a grip", "to control your emotions and behave more calmly or sensibly",
+                 "しっかりしろ・落ち着け",
+                 useCases: ["取り乱している人や大げさな人に言うとき"],
+                 examples: [
+                    ("Get a grip — it's only a small scratch!", "しっかりして、ただのかすり傷だよ！"),
+                    ("I need to get a grip and start revising.", "気を引き締めて勉強を始めなきゃ。")
+                 ], ipa: "/ɡˈɛt ə ɡrˈɪp/"),
+            make("a far cry from", "very different from something",
+                 "〜とは大違い・〜とはかけ離れている",
+                 useCases: ["以前や想像と大きく違うことを言うとき"],
+                 examples: [
+                    ("This flat is a far cry from my old place.", "このフラット、前の家とは大違いだよ。"),
+                    ("The weather here is a far cry from home.", "ここの天気は地元とは全然違うね。")
+                 ], ipa: "/ə fˈɑː krˈaɪ frəm/"),
+            make("full up", "having eaten so much that you cannot eat any more",
+                 "お腹いっぱい",
+                 useCases: ["食事の席でもう食べられないと言うとき"],
+                 examples: [
+                    ("No pudding for me, thanks — I'm full up.", "デザートはいいよ、ありがとう。もうお腹いっぱい。"),
+                    ("I'm completely full up after that roast.", "あのローストを食べてもうお腹パンパンだよ。")
+                 ], ipa: "/fˈʊl ˈʌp/"),
+            make("back to square one", "back to the beginning after a failed attempt",
+                 "振り出しに戻る",
+                 useCases: ["計画がうまくいかず最初からやり直すとき"],
+                 examples: [
+                    ("The deal fell through, so it's back to square one.", "契約が流れて、振り出しに戻っちゃった。"),
+                    ("If this doesn't work, we're back to square one.", "これがだめなら、また振り出しだね。")
+                 ], ipa: "/bˈæk tə skwˈɛər wˈʌn/")
         ]
     }
 }
