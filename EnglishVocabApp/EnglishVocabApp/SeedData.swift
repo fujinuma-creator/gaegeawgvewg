@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31262,6 +31262,115 @@ enum SeedData {
                     ("Dinner on Friday at eight? — It's a date.", "金曜8時に夕食でいい？— じゃあ決まりね。"),
                     ("Coffee next week, then? It's a date!", "じゃあ来週コーヒーね。約束だよ！")
                  ], ipa: "/ɪts ə deɪt/"),
+        ]
+    }
+    private static var britishColloquial119: [Word] {
+        [
+            make("there's something going around", "said when an illness such as a cold or a stomach bug is spreading among many people",
+                 "（風邪などが）流行っている",
+                 useCases: ["体調不良の話題", "職場や学校で病気が広がっているとき"],
+                 examples: [
+                    ("Half the office is off sick — there's something going around.", "オフィスの半分が病欠だよ。何か流行ってるね。"),
+                    ("I think I caught whatever's going around.", "流行ってるやつにかかったみたい。")
+                 ], ipa: "/ðeəz ˈsʌmθɪŋ ˈɡəʊɪŋ əˈraʊnd/"),
+            make("it's been one of those days", "said when your day has been full of small problems and annoyances",
+                 "今日はついてない一日だった",
+                 useCases: ["一日の愚痴を言うとき", "疲れている理由を説明するとき"],
+                 examples: [
+                    ("I missed the bus and spilt coffee on my shirt. It's been one of those days.", "バスに乗り遅れてシャツにコーヒーをこぼした。ついてない日だよ。"),
+                    ("Sorry I'm grumpy — it's been one of those days.", "機嫌悪くてごめん、今日はそういう日だったんだ。")
+                 ], ipa: "/ɪts biːn wʌn əv ðəʊz deɪz/"),
+            make("you're breaking up", "said on the phone or a video call when the other person's voice keeps cutting out",
+                 "（電話で）声が途切れてるよ",
+                 useCases: ["電話・ビデオ通話の電波が悪いとき", "聞き取れないことを伝えるとき"],
+                 examples: [
+                    ("Sorry, you're breaking up — can you say that again?", "ごめん、声が途切れてる。もう一回言ってくれる？"),
+                    ("You're breaking up a bit. I'll call you back.", "ちょっと音が途切れてるから、かけ直すね。")
+                 ], ipa: "/jɔː ˈbreɪkɪŋ ʌp/"),
+            make("my battery's dying", "said when your phone or device is about to run out of power",
+                 "スマホの充電が切れそう",
+                 useCases: ["電話を早めに切りたいとき", "充電器を借りたいとき"],
+                 examples: [
+                    ("I'll be quick, my battery's dying.", "手短に話すね、充電が切れそうなんだ。"),
+                    ("My battery's dying — have you got a charger?", "充電切れそう。充電器持ってる？")
+                 ], ipa: "/maɪ ˈbætəriz ˈdaɪɪŋ/"),
+            make("it's on its way", "said when something has been sent or someone is coming and will arrive soon",
+                 "もうすぐ届く・今向かっている",
+                 useCases: ["荷物や料理の配達の話", "相手を安心させるとき"],
+                 examples: [
+                    ("Don't worry, your parcel's on its way.", "心配しないで、荷物はもう発送されてるよ。"),
+                    ("The pizza's on its way — about twenty minutes.", "ピザはもう向かってるって。あと20分くらい。")
+                 ], ipa: "/ɪts ɒn ɪts weɪ/"),
+            make("a bit of a trek", "a journey or walk that is quite long and tiring",
+                 "ちょっと遠い・結構歩く",
+                 useCases: ["道のりが遠いことを伝えるとき", "場所の行き方を話すとき"],
+                 examples: [
+                    ("It's a bit of a trek from the station, so wear comfy shoes.", "駅から結構歩くから、楽な靴で来てね。"),
+                    ("The new office is a bit of a trek for me.", "新しいオフィスは僕にはちょっと遠いんだ。")
+                 ], ipa: "/ə bɪt əv ə trek/"),
+            make("just down the road", "very close by, only a short distance away",
+                 "すぐ近く・目と鼻の先",
+                 useCases: ["場所を案内するとき", "近所の話をするとき"],
+                 examples: [
+                    ("There's a nice café just down the road.", "すぐそこにいいカフェがあるよ。"),
+                    ("My sister lives just down the road from us.", "妹はうちのすぐ近くに住んでるの。")
+                 ], ipa: "/dʒʌst daʊn ðə rəʊd/"),
+            make("on foot", "by walking rather than using a car, bus or other transport",
+                 "歩いて・徒歩で",
+                 useCases: ["移動手段を話すとき", "所要時間を伝えるとき"],
+                 examples: [
+                    ("It's only ten minutes on foot.", "歩いてたった10分だよ。"),
+                    ("We explored the old town on foot.", "旧市街は歩いて回ったよ。")
+                 ], ipa: "/ɒn fʊt/"),
+            make("never again", "said after a bad experience to show you will not do that thing again",
+                 "もう二度とやらない・懲りた",
+                 useCases: ["失敗や嫌な経験の後", "二日酔いの翌朝などに冗談っぽく"],
+                 examples: [
+                    ("Three hours queuing for a ride? Never again.", "アトラクションに3時間並ぶ？もう二度とごめんだ。"),
+                    ("I had way too much wine last night. Never again!", "昨夜ワイン飲みすぎた。もう二度と飲まない！")
+                 ], ipa: "/ˈnevər əˈɡen/"),
+            make("I've learnt my lesson", "said when a bad experience has taught you not to do something again",
+                 "いい教訓になった・もう懲りた",
+                 useCases: ["失敗を反省するとき", "同じ過ちをしないと伝えるとき"],
+                 examples: [
+                    ("I left it all to the last minute and failed. I've learnt my lesson.", "ギリギリまで放置して落ちた。もう懲りたよ。"),
+                    ("I'm always taking an umbrella now — I've learnt my lesson.", "今は必ず傘を持ってる。いい教訓になったよ。")
+                 ], ipa: "/aɪv lɜːnt maɪ ˈlesn/"),
+            make("dream on", "used to tell someone, often jokingly, that what they hope for is not going to happen",
+                 "夢でも見てな・ありえないって",
+                 useCases: ["相手の非現実的な期待をからかうとき", "友達同士の冗談"],
+                 examples: [
+                    ("You think the boss will give us Friday off? Dream on!", "上司が金曜休みにしてくれると思ってるの？ありえないって！"),
+                    ("I'm going to retire at forty. — Dream on, mate.", "40歳で引退するんだ。— 夢でも見てな。")
+                 ], ipa: "/driːm ɒn/"),
+            make("get it out of the way", "to do an unpleasant or necessary task now so you don't have to think about it later",
+                 "先に片付けてしまう・済ませておく",
+                 useCases: ["面倒な用事を先に済ませるとき", "予定の順番を決めるとき"],
+                 examples: [
+                    ("Let's do the shopping first and get it out of the way.", "先に買い物を済ませちゃおう。"),
+                    ("I'd rather get the boring stuff out of the way this morning.", "つまらない作業は午前中に片付けたいな。")
+                 ], ipa: "/ɡet ɪt aʊt əv ðə weɪ/"),
+            make("a quick one", "a short drink, usually at a pub, or anything done briefly",
+                 "（軽く）一杯・ちょっとだけ",
+                 useCases: ["仕事帰りに軽く飲みに誘うとき", "短い質問・用事を切り出すとき"],
+                 examples: [
+                    ("Fancy a quick one after work?", "仕事の後、軽く一杯どう？"),
+                    ("Just a quick one — what time does the meeting start?", "ひとつだけ。会議って何時から？")
+                 ], ipa: "/ə kwɪk wʌn/"),
+            make("it's never too late", "used to encourage someone that they can still start or try something",
+                 "遅すぎることはない",
+                 useCases: ["新しい挑戦を励ますとき", "年齢を気にする人に"],
+                 examples: [
+                    ("You want to learn the piano at 50? It's never too late!", "50歳でピアノを習いたい？遅すぎることなんてないよ！"),
+                    ("It's never too late to say sorry.", "謝るのに遅すぎるってことはないよ。")
+                 ], ipa: "/ɪts ˈnevə tuː leɪt/"),
+            make("pencil in", "to arrange a date or time for something that may be changed later",
+                 "仮で予定を入れておく",
+                 useCases: ["予定を仮押さえするとき", "日程調整の会話"],
+                 examples: [
+                    ("Shall I pencil you in for Thursday at two?", "木曜の2時で仮に入れておこうか？"),
+                    ("Let's pencil in dinner for next Saturday.", "来週土曜にディナーの予定を仮で入れとこう。")
+                 ], ipa: "/ˈpensl ɪn/"),
         ]
     }
 
