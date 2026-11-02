@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30828,6 +30828,116 @@ enum SeedData {
                  ], ipa: "/aɪ wəʊnt bi lɒŋ/"),
         ]
     }
+    private static var britishColloquial115: [Word] {
+        [
+            make("unwind", "to relax and stop feeling worried or stressed, especially after work",
+                 "くつろぐ・リラックスする",
+                 useCases: ["仕事終わりに", "休日の過ごし方を話すとき"],
+                 examples: [
+                    ("I usually unwind with a hot bath after work.", "仕事の後はたいていお風呂でのんびりするんだ。"),
+                    ("You need a weekend away to unwind.", "週末どこかに出かけてリラックスしたほうがいいよ。")
+                 ], ipa: "/ʌnˈwaɪnd/"),
+            make("I'm only joking", "said to show that you did not mean what you just said seriously",
+                 "冗談だよ",
+                 useCases: ["からかった後に", "相手が本気にしたとき"],
+                 examples: [
+                    ("Your hair looks terrible! — I'm only joking, it looks great.", "その髪型ひどいね！— 冗談だよ、すごく似合ってる。"),
+                    ("Don't look so worried, I'm only joking.", "そんな心配そうな顔しないで、冗談だから。")
+                 ], ipa: "/aɪm ˈəʊnli ˈdʒəʊkɪŋ/"),
+            make("it's not for me", "a polite way of saying that you do not like something or that it does not suit you",
+                 "私には合わない・好みじゃない",
+                 useCases: ["趣味や食べ物の好みを話すとき", "やんわり断るとき"],
+                 examples: [
+                    ("I tried yoga once, but it's not for me.", "一度ヨガをやってみたけど、私には合わなかった。"),
+                    ("City life is great, but it's not for me.", "都会の生活もいいけど、私向きじゃないな。")
+                 ], ipa: "/ɪts nɒt fə miː/"),
+            make("I'll think about it", "said when you are not ready to decide yet; often a polite way of not saying yes",
+                 "考えておくね",
+                 useCases: ["誘いや提案に即答できないとき", "やんわり保留するとき"],
+                 examples: [
+                    ("Do you want to join the gym with me? — I'll think about it.", "一緒にジム入らない？— 考えておくね。"),
+                    ("It's a good offer, but I'll think about it.", "いい話だけど、ちょっと考えさせて。")
+                 ], ipa: "/aɪl θɪŋk əˈbaʊt ɪt/"),
+            make("that's life", "said to accept that bad or disappointing things sometimes happen and cannot be changed",
+                 "人生そんなもんだよ・仕方ないね",
+                 useCases: ["残念なことがあったとき", "相手を慰めるとき"],
+                 examples: [
+                    ("I missed the train by ten seconds. Oh well, that's life.", "10秒差で電車を逃した。まあ、そういうこともあるよね。"),
+                    ("You win some, you lose some — that's life.", "勝つときもあれば負けるときもある、人生そんなもんさ。")
+                 ], ipa: "/ðæts laɪf/"),
+            make("here we go again", "said when something annoying or unpleasant that has happened before starts to happen again",
+                 "またか・また始まった",
+                 useCases: ["同じトラブルが繰り返されたとき", "うんざりしたとき"],
+                 examples: [
+                    ("The printer's jammed. Here we go again.", "プリンターがまた詰まった。またかよ。"),
+                    ("Oh, here we go again — they're arguing about money.", "あーまた始まった、お金のことで揉めてる。")
+                 ], ipa: "/hɪə wiː ɡəʊ əˈɡɛn/"),
+            make("I'm happy for you", "said to show that you are pleased about someone else's good news",
+                 "よかったね・自分のことのように嬉しい",
+                 useCases: ["友人の朗報を聞いたとき", "お祝いを伝えるとき"],
+                 examples: [
+                    ("I got the job! — That's brilliant, I'm so happy for you!", "就職決まった！— すごい、本当によかったね！"),
+                    ("I'm really happy for you both.", "お二人のこと、心から嬉しく思うよ。")
+                 ], ipa: "/aɪm ˈhæpi fə juː/"),
+            make("living the dream", "(often humorous or ironic) used to say that your life is going very well, or jokingly that it is not",
+                 "最高の人生を送ってるよ（皮肉にも使う）",
+                 useCases: ["近況を聞かれたとき", "冗談めかして答えるとき"],
+                 examples: [
+                    ("How's it going? — Oh, you know, living the dream!", "調子どう？— まあね、夢のような毎日だよ（笑）"),
+                    ("Working from a beach in Spain? You're living the dream!", "スペインのビーチでリモートワーク？最高じゃん！")
+                 ], ipa: "/ˈlɪvɪŋ ðə driːm/"),
+            make("worth every penny", "so good that it was definitely worth the money you paid for it",
+                 "払った価値が十分ある",
+                 useCases: ["高い買い物を振り返るとき", "おすすめするとき"],
+                 examples: [
+                    ("The tickets were expensive, but the concert was worth every penny.", "チケットは高かったけど、コンサートは払った価値が十分あった。"),
+                    ("These boots cost a lot, but they're worth every penny.", "このブーツ高かったけど、値段以上の価値があるよ。")
+                 ], ipa: "/wɜːθ ˈɛvri ˈpɛni/"),
+            make("out and about", "going to different places and doing things, especially outside the house",
+                 "出歩いている・外出している",
+                 useCases: ["外出中であることを伝えるとき", "病気から回復したとき"],
+                 examples: [
+                    ("I'm out and about all day, so text me.", "今日は一日中出歩いてるから、メッセージ送って。"),
+                    ("It's good to see you out and about again.", "また元気に出歩けるようになってよかったね。")
+                 ], ipa: "/aʊt ənd əˈbaʊt/"),
+            make("keep fit", "to stay healthy and strong by doing regular exercise",
+                 "健康を保つ・体を鍛える",
+                 useCases: ["運動習慣について話すとき", "健康の話題で"],
+                 examples: [
+                    ("How do you keep fit? — I cycle to work every day.", "どうやって体型維持してるの？— 毎日自転車通勤してるんだ。"),
+                    ("I go swimming twice a week to keep fit.", "健康のために週2回泳ぎに行ってる。")
+                 ], ipa: "/kiːp fɪt/"),
+            make("you can't miss it", "said when giving directions to mean that a place is very easy to find or see",
+                 "すぐわかるよ・見逃しようがないよ",
+                 useCases: ["道案内をするとき", "目印を伝えるとき"],
+                 examples: [
+                    ("It's the big red building on the corner — you can't miss it.", "角にある大きな赤い建物だよ、すぐわかるから。"),
+                    ("Just follow the signs. You can't miss it.", "標識に従って行けば、絶対見つかるよ。")
+                 ], ipa: "/juː kɑːnt mɪs ɪt/"),
+            make("the best of both worlds", "a situation in which you can enjoy the advantages of two different things at the same time",
+                 "いいとこ取り・両方の利点",
+                 useCases: ["2つの良さを両立できるとき", "住む場所や働き方の話で"],
+                 examples: [
+                    ("Working from home two days a week gives me the best of both worlds.", "週2日の在宅勤務で、いいとこ取りができてるよ。"),
+                    ("We live near the city and the countryside — the best of both worlds.", "都会にも田舎にも近いところに住んでて、両方の良さを味わえる。")
+                 ], ipa: "/ðə bɛst əv bəʊθ wɜːldz/"),
+            make("flatmate", "(British) a person who shares a flat or house with you",
+                 "ルームメイト・同居人",
+                 useCases: ["住まいの話をするとき", "シェアハウスで"],
+                 examples: [
+                    ("My flatmate's cooking tonight, so come round.", "今夜はルームメイトが料理するから、うちにおいでよ。"),
+                    ("I'm looking for a new flatmate.", "新しいルームメイトを探してるんだ。")
+                 ], ipa: "/ˈflætmeɪt/"),
+            make("go out for a drink", "to go to a pub or bar with someone, usually to relax and chat",
+                 "飲みに行く",
+                 useCases: ["友人や同僚を誘うとき", "週末の予定を話すとき"],
+                 examples: [
+                    ("Do you want to go out for a drink after work?", "仕事終わりに飲みに行かない？"),
+                    ("We went out for a drink to celebrate.", "お祝いに飲みに行ったんだ。")
+                 ], ipa: "/ɡəʊ aʊt fər ə drɪŋk/"),
+        ]
+    }
+
 
 }
 
