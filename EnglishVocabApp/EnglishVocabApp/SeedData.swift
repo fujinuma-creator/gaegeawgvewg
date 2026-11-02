@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30166,6 +30166,116 @@ enum SeedData {
                     ("I go to the gym every other day.", "ジムには1日おきに行ってるよ。"),
                     ("We see my parents every other weekend.", "隔週末に両親に会ってるんだ。")
                  ], ipa: "/ˈɛvɹi ˈʌðə/")
+        ]
+    }
+
+    private static var britishColloquial109: [Word] {
+        [
+            make("I know the feeling", "used to say you understand how someone feels because you have experienced the same thing",
+                 "その気持ち、わかるよ",
+                 useCases: ["相手の愚痴や苦労に共感するとき", "同じ経験をしたことを伝えるとき"],
+                 examples: [
+                    ("Mondays are always a struggle. — I know the feeling.", "月曜はいつもしんどいよね。— わかるよ、その気持ち。"),
+                    ("I know the feeling — I was nervous before my first day too.", "その気持ちわかる、私も初日の前は緊張したもん。")
+                 ], ipa: "/aɪ nˈəʊ ðə fˈiːlɪŋ/"),
+            make("have a sweet tooth", "to really like eating sweet things",
+                 "甘いものに目がない・甘党である",
+                 useCases: ["食べ物の好みを話すとき", "デザートを勧められたとき"],
+                 examples: [
+                    ("I've got a real sweet tooth, so I always order dessert.", "私ほんと甘党だから、いつもデザート頼んじゃう。"),
+                    ("My dad has a sweet tooth — he can't resist chocolate.", "父は甘いものに目がなくて、チョコには勝てないんだ。")
+                 ], ipa: "/hæv ə swˈiːt tˈuːθ/"),
+            make("a while back", "some time ago, not very recently",
+                 "ちょっと前に・しばらく前に",
+                 useCases: ["過去の出来事をざっくり話すとき", "正確な時期を覚えていないとき"],
+                 examples: [
+                    ("I bumped into Tom a while back — he's doing well.", "ちょっと前にトムにばったり会ったよ、元気そうだった。"),
+                    ("We went there a while back, and it was lovely.", "しばらく前に行ったけど、すごく良かったよ。")
+                 ], ipa: "/ə wˈaɪl bˈæk/"),
+            make("give me a minute", "used to ask someone to wait for a short time",
+                 "ちょっと待って・少し時間ちょうだい",
+                 useCases: ["準備や考える時間が欲しいとき", "手が離せないとき"],
+                 examples: [
+                    ("Give me a minute, I'm just finishing this email.", "ちょっと待って、今このメール終わらせるから。"),
+                    ("Give me a minute to think about it.", "少し考える時間をちょうだい。")
+                 ], ipa: "/ɡˈɪv mi ə mˈɪnɪt/"),
+            make("here you go", "used when you give something to someone",
+                 "はい、どうぞ",
+                 useCases: ["物を手渡すとき", "お店で商品やお釣りを渡すとき"],
+                 examples: [
+                    ("Here you go — one flat white.", "はいどうぞ、フラットホワイトです。"),
+                    ("Can I borrow a pen? — Sure, here you go.", "ペン借りていい？— もちろん、はいどうぞ。")
+                 ], ipa: "/hˈɪə juː ɡˈəʊ/"),
+            make("the usual", "the thing you normally have or do, especially when ordering food or drink",
+                 "いつもの（注文・パターン）",
+                 useCases: ["行きつけの店で注文するとき", "いつも通りのことを話すとき"],
+                 examples: [
+                    ("What can I get you? — The usual, please.", "何にする？— いつもので。"),
+                    ("What did you do at the weekend? — Oh, the usual. Nothing special.", "週末何してた？— いつも通りだよ、特に何も。")
+                 ], ipa: "/ðə jˈuːʒuəl/"),
+            make("miss the bus", "to arrive too late to catch the bus (also: miss the train)",
+                 "バスに乗り遅れる（miss the train = 電車に乗り遅れる）",
+                 useCases: ["遅刻の理由を説明するとき", "急いでいるとき"],
+                 examples: [
+                    ("Sorry I'm late — I missed the bus.", "遅れてごめん、バスに乗り遅れちゃった。"),
+                    ("Hurry up or we'll miss the train!", "急いで、電車に乗り遅れるよ！")
+                 ], ipa: "/mˈɪs ðə bˈʌs/"),
+            make("take a seat", "a polite way of telling someone to sit down",
+                 "どうぞおかけください・座って",
+                 useCases: ["来客に座るよう勧めるとき", "面接や受付で"],
+                 examples: [
+                    ("Come in, take a seat.", "どうぞ入って、座って。"),
+                    ("Please take a seat — the doctor will be with you shortly.", "おかけになってお待ちください。まもなく先生が来ます。")
+                 ], ipa: "/tˈeɪk ə sˈiːt/"),
+            make("be on the phone", "to be talking to someone using a phone",
+                 "電話中である",
+                 useCases: ["今話せない理由を伝えるとき", "誰かが電話中だと説明するとき"],
+                 examples: [
+                    ("Sorry, can I call you back? I'm on the phone.", "ごめん、かけ直していい？今電話中なんだ。"),
+                    ("She's been on the phone to her mum for an hour.", "彼女、もう1時間もお母さんと電話してるよ。")
+                 ], ipa: "/bi ɒn ðə fˈəʊn/"),
+            make("have a shower", "to wash your body under a shower",
+                 "シャワーを浴びる",
+                 useCases: ["日常の行動を話すとき", "出かける前の準備を伝えるとき"],
+                 examples: [
+                    ("I'll just have a quick shower and then we can go.", "さっとシャワー浴びたら出かけよう。"),
+                    ("I always have a shower after the gym.", "ジムの後はいつもシャワーを浴びるよ。")
+                 ], ipa: "/hæv ə ʃˈaʊə/"),
+            make("the day after tomorrow", "the day that comes two days from today",
+                 "明後日（あさって）",
+                 useCases: ["予定を伝えるとき", "日程を調整するとき"],
+                 examples: [
+                    ("I'm flying to Madrid the day after tomorrow.", "明後日マドリードに飛ぶんだ。"),
+                    ("Tomorrow's no good, but the day after tomorrow works.", "明日は無理だけど、明後日なら大丈夫。")
+                 ], ipa: "/ðə dˈeɪ ˈɑːftə təmˈɒɹəʊ/"),
+            make("be good at", "to have the skill or ability to do something well",
+                 "〜が得意だ・〜が上手だ",
+                 useCases: ["得意なことを話すとき", "人の能力を褒めるとき"],
+                 examples: [
+                    ("She's really good at languages.", "彼女は語学がすごく得意なんだ。"),
+                    ("I'm not very good at remembering names.", "人の名前を覚えるのがあまり得意じゃなくて。")
+                 ], ipa: "/bi ɡˈʊd æt/"),
+            make("be hopeless at", "to be very bad at doing something (often used humorously about yourself)",
+                 "〜がまるでダメだ・〜が大の苦手だ",
+                 useCases: ["苦手なことを自虐的に話すとき", "謙遜するとき"],
+                 examples: [
+                    ("I'm hopeless at cooking — I burn everything.", "料理はからっきしダメで、何でも焦がしちゃう。"),
+                    ("Don't ask me for directions, I'm hopeless at that.", "道は聞かないで、ほんと苦手だから。")
+                 ], ipa: "/bi hˈəʊpləs æt/"),
+            make("be crazy about", "to like someone or something very much",
+                 "〜に夢中だ・〜が大好きだ",
+                 useCases: ["好きなものや趣味を熱く語るとき", "誰かに夢中なことを話すとき"],
+                 examples: [
+                    ("My kids are crazy about football.", "うちの子たちはサッカーに夢中なんだ。"),
+                    ("He's absolutely crazy about her.", "彼、彼女にすっかり夢中だよ。")
+                 ], ipa: "/bi kɹˈeɪzi əbˈaʊt/"),
+            make("lose my temper", "to suddenly become very angry (lose your/his/her temper)",
+                 "カッとなる・キレる",
+                 useCases: ["怒ってしまったことを話すとき", "感情のコントロールについて話すとき"],
+                 examples: [
+                    ("Sorry, I shouldn't have lost my temper.", "ごめん、カッとなるべきじゃなかった。"),
+                    ("He never loses his temper, even when things go wrong.", "彼はうまくいかないときでも絶対キレないんだ。")
+                 ], ipa: "/lˈuːz maɪ tˈɛmpə/")
         ]
     }
 
