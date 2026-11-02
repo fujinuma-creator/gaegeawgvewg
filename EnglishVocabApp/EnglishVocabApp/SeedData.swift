@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30716,6 +30716,116 @@ enum SeedData {
                     ("Are you coming on Saturday? — Definitely!", "土曜日来る？— もちろん！"),
                     ("That was definitely the best curry I've ever had.", "あれは間違いなく今まで食べた中で最高のカレーだった。")
                  ], ipa: "/ˈdɛfɪnətli/"),
+        ]
+    }
+
+    private static var britishColloquial114: [Word] {
+        [
+            make("thank goodness", "used to say that you are very glad or relieved that something has happened or not happened",
+                 "よかった・助かった",
+                 useCases: ["ほっとしたとき", "心配事が解決したとき"],
+                 examples: [
+                    ("Thank goodness you're here — I didn't know what to do.", "来てくれてよかった、どうしたらいいかわからなかったの。"),
+                    ("It didn't rain in the end, thank goodness.", "結局雨は降らなかった、助かったよ。")
+                 ], ipa: "/θæŋk ˈɡʊdnəs/"),
+            make("maybe another time", "a polite, friendly way of saying no to an invitation now while suggesting you might say yes in the future",
+                 "また今度ね",
+                 useCases: ["誘いをやんわり断るとき", "今回は都合が悪いとき"],
+                 examples: [
+                    ("I'm a bit tired tonight — maybe another time?", "今夜はちょっと疲れてて…また今度でいい？"),
+                    ("No worries, maybe another time then.", "大丈夫だよ、じゃあまた今度ね。")
+                 ], ipa: "/ˈmeɪbi əˈnʌðə taɪm/"),
+            make("accidents happen", "said to make someone feel better after they have broken, spilled or damaged something by mistake",
+                 "よくあることだよ・気にしないで",
+                 useCases: ["相手が物を壊したりこぼしたとき", "失敗を慰めるとき"],
+                 examples: [
+                    ("Sorry, I've spilled wine on your carpet! — Don't worry, accidents happen.", "ごめん、カーペットにワインこぼしちゃった！— 気にしないで、よくあることだよ。"),
+                    ("Accidents happen — let's just clean it up.", "誰にでもあることだよ、とりあえず片付けよう。")
+                 ], ipa: "/ˈæksɪdənts ˈhæpən/"),
+            make("head home", "to start going back to your house",
+                 "家に帰る・帰路につく",
+                 useCases: ["飲み会や集まりを抜けるとき", "仕事終わりに"],
+                 examples: [
+                    ("It's getting late — I think I'll head home.", "遅くなってきたし、そろそろ帰ろうかな。"),
+                    ("Are you heading home after work?", "仕事の後はまっすぐ帰るの？")
+                 ], ipa: "/hɛd həʊm/"),
+            make("it's boiling", "an informal way of saying that the weather or a place is extremely hot",
+                 "めちゃくちゃ暑い",
+                 useCases: ["暑い日に", "部屋や電車が暑すぎるとき"],
+                 examples: [
+                    ("It's boiling today — let's sit in the shade.", "今日は暑すぎる、日陰に座ろう。"),
+                    ("Can you open a window? It's boiling in here.", "窓開けてくれる？ここ暑くてたまらない。")
+                 ], ipa: "/ɪts ˈbɔɪlɪŋ/"),
+            make("on offer", "(British) available at a lower price than usual for a short time",
+                 "セール中・特売中",
+                 useCases: ["スーパーや店で", "安く買えたことを話すとき"],
+                 examples: [
+                    ("Coffee's on offer this week — two for one.", "今週コーヒーがセール中だよ、1つ買うともう1つ無料。"),
+                    ("I only bought it because it was on offer.", "セールだったから買っただけなんだ。")
+                 ], ipa: "/ɒn ˈɒfə/"),
+            make("pudding", "(British) the sweet course eaten at the end of a meal; often used to mean 'dessert' in general",
+                 "デザート（イギリス英語）",
+                 useCases: ["レストランで", "食事の後の甘いものの話"],
+                 examples: [
+                    ("Have you saved room for pudding?", "デザートの分のお腹、空けてある？"),
+                    ("What's for pudding tonight?", "今夜のデザートは何？")
+                 ], ipa: "/ˈpʊdɪŋ/"),
+            make("it drives me mad", "used to say that something annoys or irritates you very much",
+                 "イライラする・頭にくる",
+                 useCases: ["不満や愚痴を言うとき", "イライラすることを話すとき"],
+                 examples: [
+                    ("He's always late, and it drives me mad.", "彼はいつも遅刻してきて、本当にイライラする。"),
+                    ("That noise is driving me mad!", "あの音、気が狂いそう！")
+                 ], ipa: "/ɪt draɪvz mi mæd/"),
+            make("fancy a pint?", "(British) an informal way of inviting someone to go for a beer, usually at a pub",
+                 "一杯どう？",
+                 useCases: ["仕事終わりに友人や同僚を誘うとき", "パブに行こうと提案するとき"],
+                 examples: [
+                    ("Fancy a pint after work?", "仕事終わりに一杯どう？"),
+                    ("We're going to the pub later — fancy a pint?", "後でパブ行くんだけど、一杯どう？")
+                 ], ipa: "/ˈfænsi ə paɪnt/"),
+            make("lovely to see you", "a warm, friendly thing to say when you meet someone you know, or when you say goodbye to them",
+                 "会えて嬉しい",
+                 useCases: ["知り合いに会ったとき", "別れ際の挨拶"],
+                 examples: [
+                    ("Hi! Lovely to see you — come in!", "やあ！会えて嬉しいよ、入って！"),
+                    ("It was lovely to see you. Let's not leave it so long next time.", "会えてよかった。次はあまり間を空けないようにしようね。")
+                 ], ipa: "/ˈlʌvli tə siː juː/"),
+            make("I'm off to bed", "an informal way of saying you are going to go to sleep now",
+                 "もう寝るね",
+                 useCases: ["家族・同居人に寝る前に", "夜のチャットを終えるとき"],
+                 examples: [
+                    ("Right, I'm off to bed. Night!", "さて、もう寝るね。おやすみ！"),
+                    ("I'm exhausted — I'm off to bed.", "クタクタだから、もう寝るよ。")
+                 ], ipa: "/aɪm ɒf tə bɛd/"),
+            make("same as always", "used to say that nothing has changed, or that you want the usual thing",
+                 "いつも通り・いつものやつ",
+                 useCases: ["近況を聞かれたとき", "いつもの注文をするとき"],
+                 examples: [
+                    ("How's work? — Same as always, really busy.", "仕事どう？— いつも通り、すごく忙しいよ。"),
+                    ("What are you having? — Same as always, a flat white.", "何にする？— いつものやつ、フラットホワイトで。")
+                 ], ipa: "/seɪm əz ˈɔːlweɪz/"),
+            make("drop me a text", "an informal way of asking someone to send you a short text message",
+                 "メッセージちょうだい・連絡してね",
+                 useCases: ["連絡を頼むとき", "到着や予定を知らせてほしいとき"],
+                 examples: [
+                    ("Drop me a text when you get home.", "家に着いたらメッセージちょうだい。"),
+                    ("If you're running late, just drop me a text.", "遅れそうなら、メッセージ送ってね。")
+                 ], ipa: "/drɒp mi ə tɛkst/"),
+            make("it suits you", "used to say that clothes, a colour or a hairstyle makes someone look good",
+                 "似合ってるね",
+                 useCases: ["服装や髪型を褒めるとき", "買い物に付き合うとき"],
+                 examples: [
+                    ("I love your new haircut — it really suits you.", "新しい髪型いいね、本当に似合ってる。"),
+                    ("Get the blue one. It suits you.", "青い方にしなよ。似合ってるよ。")
+                 ], ipa: "/ɪt suːts juː/"),
+            make("I won't be long", "used to tell someone that you will come back or finish very soon",
+                 "すぐ戻るね・すぐ終わるよ",
+                 useCases: ["ちょっと席を外すとき", "待ってもらうとき"],
+                 examples: [
+                    ("I'm just popping to the shop — I won't be long.", "ちょっとお店行ってくる、すぐ戻るね。"),
+                    ("Wait in the car, I won't be long.", "車で待ってて、すぐ済むから。")
+                 ], ipa: "/aɪ wəʊnt bi lɒŋ/"),
         ]
     }
 
