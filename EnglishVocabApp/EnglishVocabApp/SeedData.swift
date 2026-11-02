@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -27746,6 +27746,116 @@ enum SeedData {
                     ("He exaggerates, so take it with a pinch of salt.", "彼は話を盛るから、話半分に聞いといて。"),
                     ("I'd take those reviews with a pinch of salt.", "あのレビューは鵜呑みにしない方がいいと思う。")
                  ], ipa: "/tˈeɪk ɪt wɪð ə pˈɪntʃ əv sˈɔːlt/")
+        ]
+    }
+
+    private static var britishColloquial87: [Word] {
+        [
+            make("miffed", "slightly annoyed or offended",
+                 "ちょっとムッとした・不機嫌な",
+                 useCases: ["軽くイラッとした・気分を害した気持ちを言うとき"],
+                 examples: [
+                    ("She was a bit miffed that nobody called her.", "誰も電話してこなくて、彼女ちょっとムッとしてたよ。"),
+                    ("I'm not angry, just a little miffed.", "怒ってはないよ、ちょっとムッとしただけ。")
+                 ], ipa: "/mˈɪft/"),
+            make("it's a shambles", "it's completely disorganised and badly run",
+                 "めちゃくちゃだ・ひどい有様だ",
+                 useCases: ["段取りや運営がひどく混乱している様子を言うとき"],
+                 examples: [
+                    ("The whole booking system is a shambles.", "予約システム全体がめちゃくちゃだよ。"),
+                    ("Honestly, the meeting was a shambles.", "正直、あの会議はひどい有様だった。")
+                 ], ipa: "/ɪts ə ʃˈæmbəlz/"),
+            make("naff", "uncool, tacky or in poor taste",
+                 "ダサい・安っぽい",
+                 useCases: ["服や飾り、アイデアなどがダサいと軽く言うとき"],
+                 examples: [
+                    ("That jumper's a bit naff, isn't it?", "そのセーター、ちょっとダサくない？"),
+                    ("The decorations were naff but fun.", "飾りは安っぽかったけど楽しかった。")
+                 ], ipa: "/nˈæf/"),
+            make("a few quid", "a small amount of money (pounds)",
+                 "数ポンド・ちょっとしたお金",
+                 useCases: ["少額のお金や節約・値段について話すとき"],
+                 examples: [
+                    ("Can you lend me a few quid till Friday?", "金曜まで数ポンド貸してくれない？"),
+                    ("It only costs a few quid more.", "数ポンド高いだけだよ。")
+                 ], ipa: "/ə fjˈuː kwˈɪd/"),
+            make("it's rammed", "it's extremely crowded",
+                 "すごく混んでる・ぎゅうぎゅうだ",
+                 useCases: ["店・電車・パブなどが人でいっぱいのとき"],
+                 examples: [
+                    ("Let's go somewhere else — this pub's rammed.", "別の店にしよう、このパブ混みすぎ。"),
+                    ("The train was absolutely rammed this morning.", "今朝の電車、本当にぎゅうぎゅうだった。")
+                 ], ipa: "/ɪts rˈæmd/"),
+            make("as you do", "said jokingly after describing something unusual as if it were normal",
+                 "まあよくあることだよね（冗談）",
+                 useCases: ["ちょっと変わったことを、当たり前みたいにおどけて言うとき"],
+                 examples: [
+                    ("Then we ended up having dinner with a celebrity, as you do.", "で、なぜか有名人と夕食することになってさ、よくあることだよね。"),
+                    ("I bought three pairs of shoes in one go — as you do.", "一度に靴を3足買っちゃった、まあよくあるよね。")
+                 ], ipa: "/æz jˈuː dˈuː/"),
+            make("it's all go", "it's very busy with lots happening",
+                 "大忙しだよ・バタバタしてる",
+                 useCases: ["仕事や生活が慌ただしいことを伝えるとき"],
+                 examples: [
+                    ("It's all go at work this week.", "今週は職場がバタバタだよ。"),
+                    ("New house, new job — it's all go!", "新居に新しい仕事、もう大忙しだよ！")
+                 ], ipa: "/ɪts ˈɔːl ɡˈəʊ/"),
+            make("I'm not being funny, but", "used before saying something that might sound rude or critical",
+                 "悪気はないんだけど・言わせてもらうと",
+                 useCases: ["少し言いにくい本音や指摘を前置きするとき"],
+                 examples: [
+                    ("I'm not being funny, but that's a lot of money for a sandwich.", "悪く言うつもりはないけど、サンドイッチにしては高すぎない？"),
+                    ("I'm not being funny, but we've been waiting an hour.", "言わせてもらうけど、もう1時間待ってるんだよ。")
+                 ], ipa: "/aɪm nˈɒt bˈiːɪŋ fˈʌni bʌt/"),
+            make("don't get me started", "I have strong feelings about this and could complain a lot",
+                 "その話はやめて（語りだすと止まらない）",
+                 useCases: ["不満がたくさんある話題を振られたとき"],
+                 examples: [
+                    ("How's your commute? — Oh, don't get me started.", "通勤どう？ — いや、その話はやめて。"),
+                    ("Don't get me started on the prices these days.", "最近の物価の話はやめてよ、止まらなくなるから。")
+                 ], ipa: "/dˈəʊnt ɡɛt miː stˈɑːtɪd/"),
+            make("I'm gasping for a cuppa", "I really want a cup of tea right now",
+                 "お茶が飲みたくてたまらない",
+                 useCases: ["喉が渇いた・一息つきたいときに"],
+                 examples: [
+                    ("Put the kettle on, I'm gasping for a cuppa.", "お湯沸かして、お茶が飲みたくて死にそう。"),
+                    ("After that walk I'm gasping for a cuppa.", "あんなに歩いたからお茶が飲みたくてたまらない。")
+                 ], ipa: "/aɪm ɡˈɑːspɪŋ fər ə kˈʌpə/"),
+            make("go through a rough patch", "have a difficult period in life or a relationship",
+                 "つらい時期を過ごす・うまくいかない時期がある",
+                 useCases: ["人間関係や仕事などが一時的に不調なとき"],
+                 examples: [
+                    ("They're going through a bit of a rough patch.", "あの二人、ちょっとうまくいってない時期なんだ。"),
+                    ("Every business goes through a rough patch.", "どんな商売にも苦しい時期はあるよ。")
+                 ], ipa: "/ɡˈəʊ θrˈuː ə rˈʌf pˈætʃ/"),
+            make("telly", "television",
+                 "テレビ",
+                 useCases: ["日常会話でテレビのことを話すとき"],
+                 examples: [
+                    ("Is there anything good on telly tonight?", "今夜テレビで何か面白いのやってる？"),
+                    ("We just stayed in and watched telly.", "家にいてテレビ見てただけだよ。")
+                 ], ipa: "/tˈɛli/"),
+            make("knock-on effect", "an indirect result of something that causes other things to happen",
+                 "波及効果・連鎖的な影響",
+                 useCases: ["ある出来事が他にも影響を及ぼすことを説明するとき"],
+                 examples: [
+                    ("The delay had a knock-on effect on the whole schedule.", "その遅れがスケジュール全体に影響したんだ。"),
+                    ("Higher fuel prices have a knock-on effect on food.", "燃料費の値上がりは食料品にも波及するよ。")
+                 ], ipa: "/nˈɒk ɒn ɪfˈɛkt/"),
+            make("can I have a quick word?", "can I talk to you briefly (often privately)?",
+                 "ちょっといい？・少し話せる？",
+                 useCases: ["相手を呼び止めて手短に話したいとき"],
+                 examples: [
+                    ("Sorry, can I have a quick word?", "すみません、ちょっといいですか？"),
+                    ("Can I have a quick word about tomorrow?", "明日のことで少し話せる？")
+                 ], ipa: "/kən aɪ hæv ə kwˈɪk wˈɜːd/"),
+            make("wonky", "crooked, not straight; unsteady or not working properly",
+                 "傾いてる・ガタガタの・調子が悪い",
+                 useCases: ["物が曲がっている、ぐらつく、調子が悪いとき"],
+                 examples: [
+                    ("That picture looks a bit wonky.", "あの絵、ちょっと傾いてない？"),
+                    ("This table's got a wonky leg.", "このテーブル、脚がガタガタしてる。")
+                 ], ipa: "/wˈɒŋki/")
         ]
     }
 }
