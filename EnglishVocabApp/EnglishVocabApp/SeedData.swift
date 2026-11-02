@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29286,6 +29286,116 @@ enum SeedData {
                     ("Sorry, we're fully booked tonight.", "申し訳ありません、今夜は予約でいっぱいです。"),
                     ("All the hotels near the beach were fully booked.", "ビーチ近くのホテルは全部満室だった。")
                  ], ipa: "/fˈʊli bˈʊkt/")
+        ]
+    }
+
+    private static var britishColloquial101: [Word] {
+        [
+            make("I hope so", "used to say you want something to be true or to happen",
+                 "そうだといいな",
+                 useCases: ["期待を込めて相づちを打つとき", "結果がまだわからないとき"],
+                 examples: [
+                    ("\"Will the weather be nice tomorrow?\" \"I hope so!\"", "「明日は天気いいかな？」「だといいね！」"),
+                    ("\"Do you think she'll come?\" \"I hope so.\"", "「彼女来ると思う？」「来るといいけど。」")
+                 ], ipa: "/aɪ hˈəʊp sˈəʊ/"),
+            make("I hope not", "used to say you do not want something to be true or to happen",
+                 "そうじゃないといいな",
+                 useCases: ["悪い予想を否定したいとき", "心配ごとに相づちを打つとき"],
+                 examples: [
+                    ("\"Is it going to rain?\" \"I hope not — I didn't bring a coat.\"", "「雨降るかな？」「降らないといいけど。コート持ってきてないんだ。」"),
+                    ("\"Are we late?\" \"I hope not.\"", "「遅刻かな？」「そうじゃないといいけど。」")
+                 ], ipa: "/aɪ hˈəʊp nˈɒt/"),
+            make("fine by me", "used to say you are happy to agree with a suggestion",
+                 "私はそれでいいよ",
+                 useCases: ["提案に気軽に同意するとき", "特にこだわりがないとき"],
+                 examples: [
+                    ("\"Shall we just get pizza?\" \"Fine by me.\"", "「ピザでいっか？」「いいよ。」"),
+                    ("If you want to leave early, that's fine by me.", "早めに出たいなら、僕は構わないよ。")
+                 ], ipa: "/fˈaɪn baɪ mˈiː/"),
+            make("by accident", "without planning or intending it",
+                 "うっかり・偶然に",
+                 useCases: ["わざとではないと説明するとき", "偶然見つけたことを話すとき"],
+                 examples: [
+                    ("Sorry, I deleted your message by accident.", "ごめん、うっかりメッセージ消しちゃった。"),
+                    ("We found this restaurant completely by accident.", "このレストラン、全くの偶然で見つけたんだ。")
+                 ], ipa: "/baɪ ˈæksɪdənt/"),
+            make("overdo it", "to work or exercise too hard, or to do too much of something",
+                 "無理しすぎる・やりすぎる",
+                 useCases: ["相手に無理しないよう気遣うとき", "食べすぎ・飲みすぎを反省するとき"],
+                 examples: [
+                    ("You've just been ill, so don't overdo it.", "病み上がりなんだから、無理しないでね。"),
+                    ("I think I overdid it at the gym yesterday.", "昨日ジムでやりすぎたみたい。")
+                 ], ipa: "/ˌəʊvədˈuː ɪt/"),
+            make("on edge", "nervous, anxious and easily upset",
+                 "ピリピリして・そわそわして",
+                 useCases: ["緊張や不安な気持ちを伝えるとき", "誰かがイライラしている様子を話すとき"],
+                 examples: [
+                    ("I've been on edge all day waiting for the results.", "結果を待ってて一日中そわそわしてる。"),
+                    ("Everyone's a bit on edge before the deadline.", "締め切り前でみんなちょっとピリピリしてる。")
+                 ], ipa: "/ɒn ˈɛdʒ/"),
+            make("for now", "for the present time, though it may change later",
+                 "とりあえず今は・今のところ",
+                 useCases: ["暫定的な決定を伝えるとき", "会話や作業をいったん区切るとき"],
+                 examples: [
+                    ("Let's leave it there for now.", "とりあえず今日はここまでにしよう。"),
+                    ("I'm staying with my sister for now.", "今のところ姉の家に泊まってるんだ。")
+                 ], ipa: "/fə nˈaʊ/"),
+            make("all the same", "despite what has just been said; nevertheless",
+                 "それでも・とはいえ",
+                 useCases: ["申し出を断りつつ感謝するとき", "前の話を受けて逆の気持ちを言うとき"],
+                 examples: [
+                    ("Thanks all the same.", "でも、ありがとうね。"),
+                    ("It's probably nothing, but I'd get it checked all the same.", "たぶん何でもないけど、それでも一応診てもらうな。")
+                 ], ipa: "/ˈɔːl ðə sˈeɪm/"),
+            make("have people over", "to invite people to your home",
+                 "人を家に招く",
+                 useCases: ["ホームパーティーの話をするとき", "週末の予定を話すとき"],
+                 examples: [
+                    ("We're having a few people over on Saturday — fancy coming?", "土曜に何人か家に呼ぶんだけど、来ない？"),
+                    ("We don't have people over much since the baby arrived.", "赤ちゃんが生まれてからはあまり人を呼んでないんだ。")
+                 ], ipa: "/hˈæv pˈiːpəl ˈəʊvə/"),
+            make("go out with", "to have a romantic relationship with someone",
+                 "（人と）付き合う",
+                 useCases: ["恋愛関係について話すとき", "誰と付き合っているか尋ねるとき"],
+                 examples: [
+                    ("How long have you been going out with him?", "彼とはどれくらい付き合ってるの？"),
+                    ("She used to go out with my cousin.", "彼女、昔僕のいとこと付き合ってたんだ。")
+                 ], ipa: "/ɡˈəʊ ˈaʊt wɪð/"),
+            make("is that right?", "used to show interest or mild surprise at what someone has told you",
+                 "へえ、そうなの？",
+                 useCases: ["相手の話に興味を示すとき", "軽く驚いて聞き返すとき"],
+                 examples: [
+                    ("\"I grew up in Lisbon.\" \"Oh, is that right?\"", "「リスボン育ちなんだ。」「へえ、そうなの？」"),
+                    ("\"They're closing the shop next month.\" \"Is that right?\"", "「あの店、来月閉まるんだって。」「え、そうなの？」")
+                 ], ipa: "/ɪz ðæt ɹˈaɪt/"),
+            make("grumpy", "in a bad mood and easily annoyed",
+                 "不機嫌な・機嫌が悪い",
+                 useCases: ["誰かの機嫌が悪いことを話すとき", "自分の寝不足や空腹を冗談まじりに言うとき"],
+                 examples: [
+                    ("Sorry, I'm a bit grumpy — I didn't sleep well.", "ごめん、ちょっと機嫌悪くて。よく眠れなかったんだ。"),
+                    ("He's always grumpy before his first coffee.", "彼は朝コーヒーを飲むまでいつも不機嫌なんだ。")
+                 ], ipa: "/ɡɹˈʌmpi/"),
+            make("what's more", "used to add another, often more important, point",
+                 "しかも・その上",
+                 useCases: ["話に追加の情報を加えるとき", "勧める理由を重ねるとき"],
+                 examples: [
+                    ("The flat's huge, and what's more, it's really cheap.", "あの部屋広いし、しかもすごく安いんだ。"),
+                    ("He was late, and what's more, he didn't even apologise.", "彼は遅刻したうえに、謝りもしなかった。")
+                 ], ipa: "/wɒts mˈɔː/"),
+            make("pay attention", "to watch, listen or think carefully about something",
+                 "注意を払う・ちゃんと聞く",
+                 useCases: ["話をよく聞いてと頼むとき", "うっかりしていたことを認めるとき"],
+                 examples: [
+                    ("Sorry, I wasn't paying attention — what did you say?", "ごめん、ちゃんと聞いてなかった。何て言った？"),
+                    ("Pay attention to the signs, the turning's easy to miss.", "標識に気をつけて。曲がり角を見落としやすいから。")
+                 ], ipa: "/pˈeɪ ətˈɛnʃən/"),
+            make("drained", "extremely tired, physically or emotionally",
+                 "ぐったりした・へとへとの",
+                 useCases: ["疲れ切った気持ちを伝えるとき", "精神的に消耗したことを話すとき"],
+                 examples: [
+                    ("I'm completely drained after that meeting.", "あの会議の後で完全にぐったりだよ。"),
+                    ("Looking after the kids all week left me drained.", "一週間子どもの面倒を見て、へとへとになった。")
+                 ], ipa: "/dɹˈeɪnd/")
         ]
     }
 }
