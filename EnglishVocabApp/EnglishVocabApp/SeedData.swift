@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30386,6 +30386,116 @@ enum SeedData {
                     ("Can I get a large latte, please?", "ラテのラージをください。"),
                     ("Can I get the burger without onions?", "玉ねぎ抜きでバーガーをもらえますか？")
                  ], ipa: "/kən aɪ ɡˈɛt/"),
+        ]
+    }
+
+    private static var britishColloquial111: [Word] {
+        [
+            make("grow on (someone)", "to gradually become liked by someone, even if they didn't like it at first",
+                 "だんだん好きになる・じわじわ良さがわかる",
+                 useCases: ["最初は微妙だった物を好きになったとき", "音楽・食べ物・場所などの感想を言うとき"],
+                 examples: [
+                    ("I wasn't sure about this song, but it's growing on me.", "この曲、最初は微妙だったけど、だんだん好きになってきた。"),
+                    ("Olives are a bit strange at first, but they grow on you.", "オリーブって最初は変な味だけど、だんだんハマるよ。")
+                 ], ipa: "/ɡrˈəʊ ɒn/"),
+            make("it's the least I can do", "used to say that you are happy to help, because it is a small thing compared to what the other person deserves",
+                 "これくらい当然だよ・せめてこれくらいはさせて",
+                 useCases: ["お礼を言われて謙遜するとき", "お世話になった人にお返しをするとき"],
+                 examples: [
+                    ("Thanks for driving me home. — It's the least I can do after you helped me move.", "送ってくれてありがとう。— 引っ越し手伝ってもらったんだから、これくらい当然だよ。"),
+                    ("Let me pay for lunch — it's the least I can do.", "ランチはおごらせて、せめてこれくらいはね。")
+                 ], ipa: "/ɪts ðə lˈiːst aɪ kən dˈuː/"),
+            make("who knows?", "used to say that nobody can be sure about something",
+                 "さあね・誰にもわからないよ",
+                 useCases: ["先のことがわからないとき", "可能性を軽く示すとき"],
+                 examples: [
+                    ("Will they get back together? — Who knows?", "あの二人、よりを戻すかな？— さあね、どうだろう。"),
+                    ("Who knows, maybe we'll end up living in Spain one day.", "わからないよ、いつかスペインに住んでるかもね。")
+                 ], ipa: "/hˈuː nˈəʊz/"),
+            make("I can't make it", "used to say you are unable to attend an event or arrive somewhere on time",
+                 "行けない・都合がつかない",
+                 useCases: ["誘いや予定を断るとき", "約束の時間に間に合わないとき"],
+                 examples: [
+                    ("Sorry, I can't make it on Saturday — I'm working.", "ごめん、土曜は仕事で行けないんだ。"),
+                    ("If you can't make it, just let me know.", "来られなかったら、連絡だけちょうだいね。")
+                 ], ipa: "/aɪ kˈɑːnt mˈeɪk ɪt/"),
+            make("I'll make it up to you", "used to promise that you will do something nice to compensate for disappointing someone",
+                 "埋め合わせするね・この借りは返すから",
+                 useCases: ["約束を破ったり迷惑をかけたとき", "ドタキャンを謝るとき"],
+                 examples: [
+                    ("I'm so sorry I missed your birthday — I'll make it up to you.", "誕生日に行けなくて本当にごめん、絶対埋め合わせするね。"),
+                    ("Let me make it up to you — dinner's on me this weekend.", "埋め合わせさせて、今週末の夕食は私のおごりで。")
+                 ], ipa: "/aɪl mˈeɪk ɪt ˈʌp tə juː/"),
+            make("be pressed for time", "to have very little time available",
+                 "時間に追われている・あまり時間がない",
+                 useCases: ["急いでいることを伝えるとき", "話を手短にしてほしいとき"],
+                 examples: [
+                    ("Sorry, I'm a bit pressed for time — can we talk tomorrow?", "ごめん、ちょっと時間がなくて。明日話せる？"),
+                    ("If you're pressed for time, just grab a sandwich.", "時間がないなら、サンドイッチでも買っていきなよ。")
+                 ], ipa: "/bi prˈɛst fə tˈaɪm/"),
+            make("do the washing", "to wash clothes; the washing = clothes that need washing or have just been washed",
+                 "洗濯をする（the washing = 洗濯物）",
+                 useCases: ["家事の話をするとき", "洗濯物を干す・取り込むとき"],
+                 examples: [
+                    ("I need to do the washing — I've got nothing clean to wear.", "洗濯しなきゃ、きれいな服が一枚もない。"),
+                    ("Can you bring the washing in? It's starting to rain.", "洗濯物取り込んでくれる？雨降ってきた。")
+                 ], ipa: "/dˈuː ðə wˈɒʃɪŋ/"),
+            make("catch the train", "to get on a train (or bus, plane) in time before it leaves",
+                 "電車に乗る・電車に間に合う（catch the bus/a flight も）",
+                 useCases: ["移動手段や予定を話すとき", "急いで帰る理由を言うとき"],
+                 examples: [
+                    ("I have to leave now or I won't catch the last train.", "もう出ないと終電に間に合わない。"),
+                    ("We can catch the bus from just outside the hotel.", "ホテルのすぐ前からバスに乗れるよ。")
+                 ], ipa: "/kˈætʃ ðə trˈeɪn/"),
+            make("I've lost my train of thought", "used when you forget what you were going to say",
+                 "何を言おうとしてたか忘れちゃった",
+                 useCases: ["話の途中で遮られたとき", "言いたいことを忘れたとき"],
+                 examples: [
+                    ("Sorry, where was I? I've lost my train of thought.", "ごめん、どこまで話したっけ？何言おうとしてたか忘れちゃった。"),
+                    ("The phone rang and I completely lost my train of thought.", "電話が鳴って、話してたこと完全に飛んじゃった。")
+                 ], ipa: "/aɪv lˈɒst maɪ trˈeɪn əv θˈɔːt/"),
+            make("that's not a bad idea", "used to say that a suggestion is quite good (often more positive than it sounds)",
+                 "それ、いいかもね・悪くない考えだね",
+                 useCases: ["相手の提案に賛成するとき", "控えめに褒めるとき"],
+                 examples: [
+                    ("Why don't we book a table in advance? — That's not a bad idea.", "前もって席予約しとかない？— それいいね。"),
+                    ("Actually, that's not a bad idea at all.", "実は、それ全然アリだね。")
+                 ], ipa: "/ðæts nɒt ə bˈæd aɪdˈɪə/"),
+            make("I'm afraid not", "a polite way of saying no or giving a negative answer",
+                 "残念ながら違います・あいにくだめなんです",
+                 useCases: ["丁寧に「いいえ」と答えるとき", "相手の期待に応えられないとき"],
+                 examples: [
+                    ("Is there any cake left? — I'm afraid not, we've just sold out.", "ケーキまだある？— あいにく、ちょうど売り切れちゃって。"),
+                    ("Can you come tonight? — I'm afraid not, I've got plans.", "今夜来られる？— ごめん、予定があって無理なんだ。")
+                 ], ipa: "/aɪm əfrˈeɪd nˈɒt/"),
+            make("I'm afraid so", "a polite way of saying yes when the answer is bad news",
+                 "残念ながらそうなんです",
+                 useCases: ["悪い知らせを肯定するとき", "相手が聞きたくない答えを言うとき"],
+                 examples: [
+                    ("Is the train cancelled? — I'm afraid so.", "電車、運休？— 残念ながらそうみたい。"),
+                    ("Do we really have to work this weekend? — I'm afraid so.", "本当に今週末も仕事？— 残念だけど、そうなんだ。")
+                 ], ipa: "/aɪm əfrˈeɪd sˈəʊ/"),
+            make("lock yourself out", "to accidentally shut a door that locks while your keys are still inside",
+                 "締め出される・鍵を中に置いたまま閉めてしまう",
+                 useCases: ["鍵のトラブルを話すとき", "家や車に入れなくなったとき"],
+                 examples: [
+                    ("I've locked myself out of the flat again!", "また鍵を中に置いたまま締め出されちゃった！"),
+                    ("Take your keys so you don't lock yourself out.", "締め出されないように鍵持って行きなよ。")
+                 ], ipa: "/lˈɒk jɔːsˈɛlf ˈaʊt/"),
+            make("how was your weekend?", "a very common friendly question, especially on Monday at work or school",
+                 "週末どうだった？",
+                 useCases: ["月曜日に同僚や友達に話しかけるとき", "雑談のきっかけに"],
+                 examples: [
+                    ("Morning! How was your weekend? — Lovely, thanks. Yours?", "おはよう！週末どうだった？— よかったよ、ありがとう。そっちは？"),
+                    ("How was your weekend? Did you do anything nice?", "週末どうだった？何か楽しいことした？")
+                 ], ipa: "/hˈaʊ wɒz jɔː wˌiːkˈɛnd/"),
+            make("it's your turn", "used to say that it is now someone's time to do something, e.g. in a game or a rota",
+                 "あなたの番だよ（whose turn is it? = 誰の番？）",
+                 useCases: ["ゲームや順番待ちで", "家事の当番を決めるとき"],
+                 examples: [
+                    ("Come on, it's your turn to roll the dice.", "ほら、サイコロ振るのあなたの番だよ。"),
+                    ("Whose turn is it to take the bins out? — Yours!", "ゴミ出し誰の番？— 君だよ！")
+                 ], ipa: "/ɪts jɔː tˈɜːn/"),
         ]
     }
 
