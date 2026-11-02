@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29066,6 +29066,116 @@ enum SeedData {
                     ("We still see each other from time to time.", "今でもたまに会ってるよ。"),
                     ("I treat myself to a takeaway from time to time.", "時々ご褒美にテイクアウトするんだ。")
                  ], ipa: "/fɹəm tˈaɪm tə tˈaɪm/")
+        ]
+    }
+
+    private static var britishColloquial99: [Word] {
+        [
+            make("will do", "a short, friendly way of saying you will do what someone has asked",
+                 "了解・そうするね",
+                 useCases: ["頼まれごとを気軽に引き受けるとき", "メッセージで短く返事するとき"],
+                 examples: [
+                    ("\"Can you lock up when you leave?\" \"Will do.\"", "「帰るとき鍵かけてくれる？」「了解。」"),
+                    ("\"Say hi to your mum for me.\" \"Will do!\"", "「お母さんによろしく伝えてね。」「伝えとくね！」")
+                 ], ipa: "/wˈɪl dˈuː/"),
+            make("I'm in", "used to say you want to join an activity or plan",
+                 "乗った・参加する",
+                 useCases: ["誘いや計画に乗るとき", "グループの予定に参加表明するとき"],
+                 examples: [
+                    ("\"We're going for drinks after work.\" \"I'm in!\"", "「仕事の後飲みに行くんだ。」「行く行く！」"),
+                    ("If you're doing a quiz team, I'm in.", "クイズのチームを作るなら、僕も入るよ。")
+                 ], ipa: "/aɪm ˈɪn/"),
+            make("good to go", "completely ready to start or leave",
+                 "準備完了・いつでもOK",
+                 useCases: ["準備ができたことを伝えるとき", "出発や開始の確認をするとき"],
+                 examples: [
+                    ("Bags are in the car — we're good to go.", "荷物は車に積んだから、いつでも出られるよ。"),
+                    ("Just sign here and you're good to go.", "ここにサインしてもらえれば、それで完了です。")
+                 ], ipa: "/ɡˈʊd tə ɡˈəʊ/"),
+            make("I've been meaning to", "used to say you have intended to do something for a while but haven't done it yet",
+                 "ずっと〜しようと思ってたんだ",
+                 useCases: ["先延ばしにしていたことを話すとき", "久しぶりの相手に連絡するとき"],
+                 examples: [
+                    ("I've been meaning to call you for ages!", "ずっと電話しようと思ってたんだよ！"),
+                    ("I've been meaning to try that new café.", "あの新しいカフェ、ずっと行ってみたかったんだ。")
+                 ], ipa: "/aɪv bɪn mˈiːnɪŋ tuː/"),
+            make("freshen up", "to have a quick wash and make yourself look tidy",
+                 "身支度を整える・さっぱりする",
+                 useCases: ["到着後や外出前に身なりを整えるとき", "トイレに行くのを婉曲に言うとき"],
+                 examples: [
+                    ("I'll just freshen up before dinner.", "夕食の前にちょっと身支度してくるね。"),
+                    ("Do you want to freshen up after the flight?", "フライトの後だし、ちょっとさっぱりしたい？")
+                 ], ipa: "/fɹˈɛʃən ˈʌp/"),
+            make("settle down", "to become calm, or to start a quieter life with a home and partner",
+                 "落ち着く・身を固める",
+                 useCases: ["騒がしい状況を落ち着かせるとき", "結婚や定住の話をするとき"],
+                 examples: [
+                    ("Things should settle down at work after Christmas.", "クリスマスが過ぎれば仕事も落ち着くはず。"),
+                    ("He's not ready to settle down yet.", "彼はまだ身を固める気はないみたい。")
+                 ], ipa: "/sˈɛtəl dˈaʊn/"),
+            make("you've got a point", "used to admit that what someone says is reasonable",
+                 "一理あるね・確かに",
+                 useCases: ["相手の意見を認めるとき", "議論で譲歩するとき"],
+                 examples: [
+                    ("Hmm, you've got a point — it is a bit expensive.", "うーん、確かに。ちょっと高いよね。"),
+                    ("OK, you've got a point there.", "わかった、そこは一理あるね。")
+                 ], ipa: "/juːv ɡɒt ə pˈɔɪnt/"),
+            make("I suppose so", "a slightly reluctant or uncertain way of saying yes",
+                 "まあ、そうだね・たぶんね",
+                 useCases: ["しぶしぶ同意するとき", "確信がないまま肯定するとき"],
+                 examples: [
+                    ("\"Can I borrow your car?\" \"I suppose so.\"", "「車借りてもいい？」「まあ、いいけど。」"),
+                    ("\"Is it worth going?\" \"I suppose so, if you've got time.\"", "「行く価値ある？」「時間があるならまあね。」")
+                 ], ipa: "/aɪ səpˈəʊz səʊ/"),
+            make("my pleasure", "a warm, polite reply when someone thanks you",
+                 "どういたしまして・喜んで",
+                 useCases: ["お礼に丁寧に応えるとき", "接客や手助けの後"],
+                 examples: [
+                    ("\"Thanks so much for dinner.\" \"My pleasure!\"", "「夕食ごちそうさま。」「どういたしまして！」"),
+                    ("\"Thank you for showing me around.\" \"It was my pleasure.\"", "「案内してくれてありがとう。」「こちらこそ楽しかったよ。」")
+                 ], ipa: "/maɪ plˈɛʒə/"),
+            make("none taken", "used to reply to 'no offence', meaning you are not upset",
+                 "気にしてないよ（no offence への返し）",
+                 useCases: ["「悪気はないけど」と言われたとき"],
+                 examples: [
+                    ("\"No offence, but your cooking is a bit salty.\" \"None taken!\"", "「悪いけど、料理ちょっとしょっぱいよ。」「気にしてないよ！」"),
+                    ("\"I didn't mean to be rude.\" \"Don't worry, none taken.\"", "「失礼なつもりじゃなかったんだ。」「大丈夫、気にしてないから。」")
+                 ], ipa: "/nˈʌn tˈeɪkən/"),
+            make("that's not the point", "used to say that someone has missed the main issue",
+                 "そういう問題じゃない",
+                 useCases: ["論点がずれたとき", "本当に言いたいことを強調するとき"],
+                 examples: [
+                    ("I know it was cheap, but that's not the point.", "安かったのはわかるけど、そういう問題じゃないんだよ。"),
+                    ("That's not the point — you should have told me.", "そこじゃなくて、言ってくれればよかったのに。")
+                 ], ipa: "/ðæts nˈɒt ðə pˈɔɪnt/"),
+            make("warm up", "to prepare for exercise, or to become warmer or more lively",
+                 "準備運動する・温まる・盛り上がる",
+                 useCases: ["運動前の話をするとき", "寒い日や場の雰囲気について話すとき"],
+                 examples: [
+                    ("Always warm up before you go for a run.", "走る前には必ず準備運動してね。"),
+                    ("Come in and warm up by the fire.", "中に入って暖炉で温まって。")
+                 ], ipa: "/wˈɔːm ˈʌp/"),
+            make("it's not my thing", "used to say casually that you don't enjoy or aren't interested in something",
+                 "あんまり好きじゃない・柄じゃない",
+                 useCases: ["誘いをやんわり断るとき", "好みを話すとき"],
+                 examples: [
+                    ("Karaoke's not really my thing, to be honest.", "正直、カラオケはあんまり得意じゃないんだ。"),
+                    ("I tried yoga, but it's not my thing.", "ヨガやってみたけど、自分には合わなかった。")
+                 ], ipa: "/ɪts nˈɒt maɪ θˈɪŋ/"),
+            make("I'm good", "a casual way of politely refusing an offer, or saying you're fine",
+                 "大丈夫です（いらない）・元気だよ",
+                 useCases: ["おかわりや勧めを断るとき", "調子を聞かれたとき"],
+                 examples: [
+                    ("\"Another coffee?\" \"I'm good, thanks.\"", "「コーヒーもう一杯どう？」「大丈夫、ありがとう。」"),
+                    ("\"Need a hand with that?\" \"No, I'm good.\"", "「手伝おうか？」「ううん、大丈夫。」")
+                 ], ipa: "/aɪm ɡˈʊd/"),
+            make("give someone a ring", "to phone someone",
+                 "（人に）電話する",
+                 useCases: ["電話する約束をするとき", "連絡を頼むとき"],
+                 examples: [
+                    ("I'll give you a ring later this week.", "今週中にまた電話するね。"),
+                    ("Give me a ring when you get home.", "家に着いたら電話ちょうだい。")
+                 ], ipa: "/ɡˈɪv sˈʌmwʌn ə ɹˈɪŋ/")
         ]
     }
 }
