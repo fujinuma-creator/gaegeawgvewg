@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -29946,6 +29946,116 @@ enum SeedData {
                     ("Don't hang up — I've got one more thing to tell you.", "まだ切らないで、もう一つ話があるの。"),
                     ("She got annoyed and hung up on me.", "彼女怒って電話をガチャ切りしたんだ。")
                  ], ipa: "/hˈæŋ ˈʌp/")
+        ]
+    }
+
+    private static var britishColloquial107: [Word] {
+        [
+            make("speak up", "to speak more loudly, or to say clearly what you think",
+                 "もっと大きな声で話す・はっきり意見を言う",
+                 useCases: ["相手の声が聞こえにくいとき", "遠慮せずに意見を言ってほしいとき"],
+                 examples: [
+                    ("Sorry, could you speak up a bit? It's quite noisy in here.", "ごめん、もう少し大きな声で話してくれる？ここ結構うるさくて。"),
+                    ("If you're not happy with it, you should speak up.", "納得いかないなら、ちゃんと言ったほうがいいよ。")
+                 ], ipa: "/spˈiːk ˈʌp/"),
+            make("pass on", "to give a message or information to someone else",
+                 "（伝言・情報を）伝える・回す",
+                 useCases: ["伝言を頼むとき", "情報を他の人に共有するとき"],
+                 examples: [
+                    ("Could you pass on a message to Sarah for me?", "サラに伝言をお願いできる？"),
+                    ("I'll pass it on to the rest of the team.", "チームのみんなにも伝えておくね。")
+                 ], ipa: "/pˈɑːs ˈɒn/"),
+            make("out of breath", "breathing very hard because you have been running or exercising",
+                 "息が切れて・息を切らして",
+                 useCases: ["走ったり階段を上った後", "運動不足を話すとき"],
+                 examples: [
+                    ("I ran for the bus and now I'm completely out of breath.", "バスに走ったから、もう息切れしてるよ。"),
+                    ("I get out of breath just climbing the stairs.", "階段を上るだけで息が切れちゃうんだ。")
+                 ], ipa: "/ˈaʊt əv bɹˈɛθ/"),
+            make("take it in turns", "to do something one after another, rather than at the same time",
+                 "交代でやる・順番にやる",
+                 useCases: ["運転や家事を分担するとき", "子どもに順番を守らせるとき"],
+                 examples: [
+                    ("We took it in turns to drive.", "交代で運転したよ。"),
+                    ("Let's take it in turns to cook during the week.", "平日は交代でご飯を作ろうよ。")
+                 ], ipa: "/tˈeɪk ɪt ɪn tˈɜːnz/"),
+            make("get well soon", "a phrase used to wish someone who is ill a quick recovery",
+                 "早く良くなってね・お大事に",
+                 useCases: ["病気の友人にメッセージを送るとき", "体調不良で休む同僚に声をかけるとき"],
+                 examples: [
+                    ("Sorry to hear you're poorly — get well soon!", "体調悪いんだってね、早く良くなってね！"),
+                    ("We all signed a get well soon card for her.", "みんなで彼女にお見舞いカードを書いたよ。")
+                 ], ipa: "/ɡɛt wˈɛl sˈuːn/"),
+            make("good luck with", "a phrase used to wish someone success in something specific",
+                 "〜頑張ってね・〜うまくいくといいね",
+                 useCases: ["試験や面接の前に励ますとき", "新しい挑戦を応援するとき"],
+                 examples: [
+                    ("Good luck with your interview tomorrow!", "明日の面接、頑張ってね！"),
+                    ("Good luck with the move — let me know if you need a hand.", "引っ越し頑張って、手伝いが必要なら言ってね。")
+                 ], ipa: "/ɡˈʊd lˈʌk wɪð/"),
+            make("be careful", "to pay attention so that you avoid danger or mistakes",
+                 "気をつけて・注意して",
+                 useCases: ["危ないことに注意を促すとき", "出かける人を見送るとき"],
+                 examples: [
+                    ("Be careful — the floor's a bit slippery.", "気をつけて、床がちょっと滑るよ。"),
+                    ("Be careful what you say to him; he's a bit sensitive.", "彼には言葉に気をつけてね、ちょっと繊細だから。")
+                 ], ipa: "/bi kˈeəfəl/"),
+            make("could we get the bill?", "a polite way to ask for the bill in a restaurant or café",
+                 "お会計お願いできますか？",
+                 useCases: ["レストランやカフェで会計を頼むとき", "パブで支払いをするとき"],
+                 examples: [
+                    ("Excuse me, could we get the bill, please?", "すみません、お会計お願いできますか？"),
+                    ("Could we get the bill when you have a moment?", "お手すきの時にお会計をお願いします。")
+                 ], ipa: "/kˈʊd wi ɡɛt ðə bˈɪl/"),
+            make("in time", "early enough, before something happens or starts",
+                 "間に合って・遅れずに",
+                 useCases: ["電車や映画に間に合うか話すとき", "締め切りに間に合ったとき"],
+                 examples: [
+                    ("Will we get there in time for the start?", "始まりに間に合うかな？"),
+                    ("I finished the report just in time.", "レポート、ギリギリ間に合ったよ。")
+                 ], ipa: "/ɪn tˈaɪm/"),
+            make("by now", "before or at the present time (often used for expectations)",
+                 "今頃はもう・もうそろそろ",
+                 useCases: ["予定通りなら済んでいるはずのことを話すとき", "相手の状況を推測するとき"],
+                 examples: [
+                    ("She should be home by now.", "彼女、もう家に着いてる頃だよね。"),
+                    ("You must be used to the weather by now.", "もうこっちの天気には慣れたでしょ。")
+                 ], ipa: "/baɪ nˈaʊ/"),
+            make("I don't mind", "a phrase meaning you are happy with any option or it doesn't bother you",
+                 "どっちでもいいよ・構わないよ",
+                 useCases: ["選択肢を相手に任せるとき", "頼まれごとを快く引き受けるとき"],
+                 examples: [
+                    ("Tea or coffee? — I don't mind, whatever's easier.", "紅茶かコーヒー？―どっちでもいいよ、楽な方で。"),
+                    ("I don't mind waiting if you're running late.", "遅れるなら待つのは全然構わないよ。")
+                 ], ipa: "/aɪ dˈəʊnt mˈaɪnd/"),
+            make("jump in", "to join a conversation or activity quickly, or get into a car",
+                 "（会話に）割って入る・（車に）さっと乗る",
+                 useCases: ["話に口を挟むとき", "車に乗るよう促すとき"],
+                 examples: [
+                    ("Sorry to jump in, but I think that's wrong.", "割り込んでごめん、でもそれ違うと思う。"),
+                    ("Jump in — I'll give you a lift.", "乗って、送ってくよ。")
+                 ], ipa: "/dʒˈʌmp ˈɪn/"),
+            make("go wrong", "to stop working properly or to not happen in the way you planned",
+                 "うまくいかない・失敗する・故障する",
+                 useCases: ["計画が失敗したとき", "機械の不具合を話すとき"],
+                 examples: [
+                    ("Everything that could go wrong went wrong.", "うまくいかない事が全部起きたよ。"),
+                    ("Where did I go wrong with this recipe?", "このレシピ、どこで失敗したんだろう？")
+                 ], ipa: "/ɡˈəʊ ɹˈɒŋ/"),
+            make("have a safe trip", "a phrase used to wish someone a good and safe journey",
+                 "気をつけて行ってらっしゃい・道中気をつけて",
+                 useCases: ["旅行や出張に行く人を見送るとき", "帰省する友人に声をかけるとき"],
+                 examples: [
+                    ("Have a safe trip, and text me when you land!", "気をつけてね、着いたらメッセージちょうだい！"),
+                    ("Have a safe trip home — the roads are icy.", "帰り道気をつけて、道が凍ってるから。")
+                 ], ipa: "/hæv ə sˈeɪf tɹˈɪp/"),
+            make("come along", "to go somewhere with someone, or to make progress",
+                 "一緒に来る・（物事が）はかどる",
+                 useCases: ["誘いに乗るよう声をかけるとき", "進み具合を尋ねるとき"],
+                 examples: [
+                    ("We're going to the pub later — do you want to come along?", "後でパブ行くけど、一緒に来る？"),
+                    ("How's your Spanish coming along?", "スペイン語の調子はどう？")
+                 ], ipa: "/kˈʌm əlˈɒŋ/")
         ]
     }
 }
