@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31044,6 +31044,115 @@ enum SeedData {
                     ("It's a pity you can't come to the party.", "パーティーに来られないなんて残念だな。"),
                     ("It's a pity the weather was so bad.", "天気があんなに悪かったのは残念だったね。")
                  ], ipa: "/ɪts ə ˈpɪti/"),
+        ]
+    }
+    private static var britishColloquial117: [Word] {
+        [
+            make("I'm not a morning person", "said to explain that you find it hard to wake up or feel energetic early in the day",
+                 "朝が苦手なんだ",
+                 useCases: ["早朝の予定を断るとき", "朝の不機嫌さを説明するとき"],
+                 examples: [
+                    ("Sorry if I'm grumpy — I'm not a morning person.", "機嫌悪かったらごめん。朝が苦手なんだよ。"),
+                    ("A 6 a.m. flight? I'm really not a morning person.", "朝6時の便？本当に朝は弱いんだけど。")
+                 ], ipa: "/aɪm nɒt ə ˈmɔːnɪŋ ˈpɜːsn/"),
+            make("I'm all for it", "said to show that you strongly support an idea or plan",
+                 "大賛成だよ・いいね、ぜひ",
+                 useCases: ["提案に賛成するとき", "乗り気なことを伝えるとき"],
+                 examples: [
+                    ("Shall we get a takeaway tonight? — I'm all for it.", "今夜はテイクアウトにする？— 大賛成！"),
+                    ("If it saves time, I'm all for it.", "時間の節約になるなら、大賛成だよ。")
+                 ], ipa: "/aɪm ɔːl fɔːr ɪt/"),
+            make("on the whole", "used when giving a general opinion about something, considering everything",
+                 "全体的に見て・概して",
+                 useCases: ["感想をまとめるとき", "良い点・悪い点を総合して話すとき"],
+                 examples: [
+                    ("There were a few problems, but on the whole it was a great trip.", "いくつか問題はあったけど、全体的には最高の旅だった。"),
+                    ("On the whole, I'm pretty happy with my new job.", "概して、新しい仕事にはかなり満足してるよ。")
+                 ], ipa: "/ɒn ðə həʊl/"),
+            make("as good as new", "in excellent condition again, as if it were new, especially after being repaired or cleaned",
+                 "新品同様・すっかり元通り",
+                 useCases: ["修理や掃除の後", "体調が回復したとき"],
+                 examples: [
+                    ("They fixed my bike and now it's as good as new.", "自転車を直してもらって、新品同様になったよ。"),
+                    ("After a good night's sleep I felt as good as new.", "ぐっすり寝たら、すっかり元気になった。")
+                 ], ipa: "/əz ɡʊd əz njuː/"),
+            make("running behind", "later than planned or expected; not on schedule",
+                 "予定より遅れている・押している",
+                 useCases: ["待ち合わせに遅れそうなとき", "スケジュールが押しているとき"],
+                 examples: [
+                    ("Sorry, I'm running a bit behind — I'll be there in ten minutes.", "ごめん、ちょっと遅れてる。あと10分で着くよ。"),
+                    ("The doctor's running behind today, so there's a wait.", "今日は先生の診察が押してるので、待ち時間があります。")
+                 ], ipa: "/ˈrʌnɪŋ bɪˈhaɪnd/"),
+            make("it's not that bad", "said to show that something is less unpleasant or difficult than people think",
+                 "そんなに悪くないよ・思ったほどじゃない",
+                 useCases: ["相手を安心させるとき", "大げさな反応を和らげるとき"],
+                 examples: [
+                    ("Is the commute awful? — Honestly, it's not that bad.", "通勤ひどいの？— 正直、そんなに悪くないよ。"),
+                    ("Try it — it's not that bad once you get used to it.", "やってみなよ。慣れればそんなに大変じゃないから。")
+                 ], ipa: "/ɪts nɒt ðæt bæd/"),
+            make("fall behind", "to fail to keep up with others or with a schedule, payments or work",
+                 "遅れをとる・ついていけなくなる",
+                 useCases: ["仕事や勉強が遅れたとき", "支払いが滞ったとき"],
+                 examples: [
+                    ("I was off sick for a week and fell behind with my work.", "1週間病欠して、仕事が遅れてしまった。"),
+                    ("Don't fall behind on your rent.", "家賃の支払いを滞らせないようにね。")
+                 ], ipa: "/fɔːl bɪˈhaɪnd/"),
+            make("keep up with", "to move or progress at the same speed as someone or something; to stay informed about",
+                 "〜についていく・〜に遅れずについていく",
+                 useCases: ["ペースについていくとき", "ニュースや流行を追うとき"],
+                 examples: [
+                    ("Slow down, I can't keep up with you!", "ペース落として、ついていけないよ！"),
+                    ("It's hard to keep up with all the news these days.", "最近はニュースを全部追いかけるのが大変だ。")
+                 ], ipa: "/kiːp ʌp wɪð/"),
+            make("catch your breath", "to rest for a moment after physical effort until you can breathe normally again; to take a short break",
+                 "息を整える・一息つく",
+                 useCases: ["走った・階段を上った後", "忙しい中で少し休むとき"],
+                 examples: [
+                    ("Hang on, let me catch my breath — those stairs are steep!", "ちょっと待って、息を整えさせて。あの階段きついよ！"),
+                    ("It's been non-stop all day; I've barely had time to catch my breath.", "一日中ノンストップで、一息つく暇もほとんどなかった。")
+                 ], ipa: "/kætʃ jɔː brɛθ/"),
+            make("lost for words", "so surprised, moved or shocked that you cannot think what to say",
+                 "言葉が出ない・言葉を失う",
+                 useCases: ["感動したとき", "驚き・ショックを受けたとき"],
+                 examples: [
+                    ("When they gave me the surprise gift, I was lost for words.", "サプライズのプレゼントをもらって、言葉が出なかった。"),
+                    ("I'm honestly lost for words — thank you so much.", "本当に言葉にならないよ。ありがとう。")
+                 ], ipa: "/lɒst fə wɜːdz/"),
+            make("that was close", "said when something bad almost happened but did not",
+                 "危なかった・ギリギリだったね",
+                 useCases: ["事故を回避したとき", "ギリギリ間に合ったとき"],
+                 examples: [
+                    ("Phew, that was close — that car nearly hit us!", "ふう、危なかった。あの車にぶつかるところだった！"),
+                    ("We caught the train with seconds to spare. That was close!", "電車に数秒差で間に合った。ギリギリだったね！")
+                 ], ipa: "/ðæt wəz kləʊs/"),
+            make("get it over with", "to do something unpleasant now so that you do not have to worry about it any more",
+                 "さっさと済ませる・片付けてしまう",
+                 useCases: ["嫌なことを先に済ませるとき", "先延ばしをやめるとき"],
+                 examples: [
+                    ("I hate the dentist, but let's just get it over with.", "歯医者は嫌いだけど、さっさと済ませちゃおう。"),
+                    ("Just call him and get it over with.", "とにかく彼に電話して、片付けちゃいなよ。")
+                 ], ipa: "/ɡɛt ɪt ˈəʊvə wɪð/"),
+            make("keep it to yourself", "to not tell anyone else about something; to keep a secret",
+                 "誰にも言わないで・内緒にしておいて",
+                 useCases: ["秘密を打ち明けるとき", "噂を広めないよう頼むとき"],
+                 examples: [
+                    ("I'm pregnant, but keep it to yourself for now.", "妊娠したの。でも今はまだ内緒にしておいてね。"),
+                    ("If you don't like it, just keep it to yourself.", "気に入らないなら、口に出さないでおいて。")
+                 ], ipa: "/kiːp ɪt tə jɔːˈsɛlf/"),
+            make("it's anyone's guess", "said when nobody can know or predict what will happen",
+                 "誰にも分からない・予想がつかない",
+                 useCases: ["結果が読めないとき", "天気や時間の見通しが立たないとき"],
+                 examples: [
+                    ("Will the train be on time? It's anyone's guess.", "電車は時間通りに来るかな？誰にも分からないよ。"),
+                    ("Who'll win the match is anyone's guess.", "試合でどっちが勝つかは予想がつかない。")
+                 ], ipa: "/ɪts ˈɛniwʌnz ɡɛs/"),
+            make("go easy on", "to treat someone gently and not be too strict or critical; to not use too much of something",
+                 "〜に手加減する・〜を控えめにする",
+                 useCases: ["厳しくしないよう頼むとき", "量を控えるよう言うとき"],
+                 examples: [
+                    ("Go easy on him — it's his first day.", "彼にはお手柔らかにね。初日なんだから。"),
+                    ("Go easy on the salt, please.", "塩は控えめにしてね。")
+                 ], ipa: "/ɡəʊ ˈiːzi ɒn/"),
         ]
     }
 
