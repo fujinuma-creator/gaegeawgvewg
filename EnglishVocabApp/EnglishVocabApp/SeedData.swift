@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -30276,6 +30276,116 @@ enum SeedData {
                     ("Sorry, I shouldn't have lost my temper.", "ごめん、カッとなるべきじゃなかった。"),
                     ("He never loses his temper, even when things go wrong.", "彼はうまくいかないときでも絶対キレないんだ。")
                  ], ipa: "/lˈuːz maɪ tˈɛmpə/")
+        ]
+    }
+
+    private static var britishColloquial110: [Word] {
+        [
+            make("I'm sorry to hear that", "used to show sympathy when someone tells you bad news",
+                 "それは残念だね・大変だったね",
+                 useCases: ["相手の悪い知らせに同情を示すとき", "体調不良や失敗の話を聞いたとき"],
+                 examples: [
+                    ("I didn't get the job. — Oh, I'm sorry to hear that.", "仕事、ダメだった。— そっか、それは残念だったね。"),
+                    ("I'm sorry to hear that your mum's not well.", "お母さんの具合が悪いなんて、心配だね。")
+                 ], ipa: "/aɪm sˈɒri tə hˈɪə ðæt/"),
+            make("thanks a million", "an informal and enthusiastic way of saying thank you very much",
+                 "本当にありがとう・めっちゃ助かる",
+                 useCases: ["大きな助けに心から感謝するとき", "友達にカジュアルにお礼を言うとき"],
+                 examples: [
+                    ("You fixed my laptop? Thanks a million!", "パソコン直してくれたの？本当にありがとう！"),
+                    ("Thanks a million for picking me up from the airport.", "空港まで迎えに来てくれて本当に助かったよ。")
+                 ], ipa: "/θˈæŋks ə mˈɪljən/"),
+            make("I'll get it", "used to say you will answer the door or the phone, or pick something up",
+                 "私が出るよ・私が取るよ",
+                 useCases: ["玄関のチャイムや電話が鳴ったとき", "落ちた物を拾うとき"],
+                 examples: [
+                    ("Someone's at the door. — Don't worry, I'll get it.", "誰か来たよ。— 大丈夫、私が出る。"),
+                    ("The phone's ringing! — I'll get it!", "電話鳴ってる！— 私が出るよ！")
+                 ], ipa: "/aɪl ɡˈɛt ɪt/"),
+            make("I'll be in touch", "used to say you will contact someone again later",
+                 "また連絡するね・追って連絡します",
+                 useCases: ["別れ際や話の締めくくりに", "決まったら連絡すると伝えるとき"],
+                 examples: [
+                    ("Thanks for the chat — I'll be in touch next week.", "話せてよかった、来週また連絡するね。"),
+                    ("I'll be in touch once I've checked my diary.", "予定を確認したら連絡するよ。")
+                 ], ipa: "/aɪl bi ɪn tˈʌtʃ/"),
+            make("is it alright if ...?", "a polite, friendly way of asking for permission",
+                 "〜してもいい？・〜しても大丈夫？",
+                 useCases: ["許可をやんわり求めるとき", "家や職場でちょっとしたお願いをするとき"],
+                 examples: [
+                    ("Is it alright if I open the window?", "窓開けてもいいかな？"),
+                    ("Is it alright if I bring a friend tonight?", "今夜、友達連れて行っても大丈夫？")
+                 ], ipa: "/ɪz ɪt ɔːlrˈaɪt ɪf/"),
+            make("it's pouring (down)", "it is raining very heavily",
+                 "土砂降りだ・雨がすごい",
+                 useCases: ["天気の話をするとき", "外出をためらう理由を言うとき"],
+                 examples: [
+                    ("Take a brolly — it's pouring down out there.", "傘持って行きな、外は土砂降りだよ。"),
+                    ("It was pouring all afternoon, so we stayed in.", "午後ずっと土砂降りだったから家にいたよ。")
+                 ], ipa: "/ɪts pˈɔːrɪŋ dˈaʊn/"),
+            make("drizzle", "light rain falling in very small drops; (verb) it's drizzling = it's raining lightly",
+                 "霧雨・小雨（it's drizzling = 小雨が降っている）",
+                 useCases: ["軽い雨の天気を話すとき", "傘がいるかどうか話すとき"],
+                 examples: [
+                    ("It's only drizzling — you won't need an umbrella.", "小雨程度だから、傘はいらないよ。"),
+                    ("There was a bit of drizzle this morning, but it's cleared up now.", "朝は少し霧雨だったけど、今は晴れたよ。")
+                 ], ipa: "/drˈɪzəl/"),
+            make("miserable", "very unhappy; also used for weather that is grey, cold and wet",
+                 "惨めな・憂うつな／（天気が）どんよりした",
+                 useCases: ["気分が落ち込んでいるとき", "どんよりした天気を表すとき"],
+                 examples: [
+                    ("What a miserable day — it's cold and grey again.", "なんて陰気な日だ、また寒くてどんより。"),
+                    ("He's been miserable since he broke up with his girlfriend.", "彼女と別れてから、彼ずっと落ち込んでるよ。")
+                 ], ipa: "/mˈɪzərəbəl/"),
+            make("that's a good question", "used when you need a moment to think, or when you don't know the answer",
+                 "いい質問だね・うーん、どうだろう",
+                 useCases: ["すぐに答えられない質問をされたとき", "考える時間を稼ぐとき"],
+                 examples: [
+                    ("When does the shop close? — That's a good question. Let me check.", "お店何時に閉まる？— いい質問だね、調べてみる。"),
+                    ("Why did they change it? — That's a good question, I've no idea.", "なんで変えたの？— どうなんだろうね、全然わからない。")
+                 ], ipa: "/ðæts ə ɡˈʊd kwˈɛstʃən/"),
+            make("I'm getting there", "used to say you are making progress but have not finished yet",
+                 "だんだん良くなってる・あと少し",
+                 useCases: ["作業や勉強の進み具合を聞かれたとき", "病気や怪我からの回復を話すとき"],
+                 examples: [
+                    ("How's the essay going? — I'm getting there.", "レポートどう？— だいぶ進んできたよ。"),
+                    ("My English isn't perfect, but I'm getting there.", "英語はまだ完璧じゃないけど、少しずつ上達してるよ。")
+                 ], ipa: "/aɪm ɡˈɛtɪŋ ðˈeə/"),
+            make("what a day!", "used to say a day has been very busy, tiring or eventful",
+                 "なんて一日だ・今日は大変だった",
+                 useCases: ["忙しい一日の終わりに", "色々あった日を振り返るとき"],
+                 examples: [
+                    ("What a day! I haven't stopped since eight this morning.", "今日は大変だった！朝8時からずっと動きっぱなし。"),
+                    ("Phew, what a day. I just want a cup of tea and my sofa.", "ふう、なんて日だ。紅茶飲んでソファでくつろぎたい。")
+                 ], ipa: "/wˈɒt ə dˈeɪ/"),
+            make("I'm not sure about that", "a soft, polite way of disagreeing or expressing doubt",
+                 "それはどうかな・ちょっと賛成しかねる",
+                 useCases: ["やんわり反対意見を言うとき", "提案に疑問を感じたとき"],
+                 examples: [
+                    ("We should leave at six. — Hmm, I'm not sure about that. The traffic will be awful.", "6時に出よう。— うーん、どうかな。渋滞ひどいよ。"),
+                    ("I'm not sure about that colour — maybe try the blue one?", "その色はどうかなぁ、青いのはどう？")
+                 ], ipa: "/aɪm nˈɒt ʃˈʊə əbˈaʊt ðæt/"),
+            make("it's not like ...", "used to say that something is not the case, often to explain or defend a situation",
+                 "別に〜ってわけじゃない",
+                 useCases: ["誤解を解くとき", "大したことではないと言うとき"],
+                 examples: [
+                    ("Just ask him — it's not like he'll say no.", "聞いてみなよ、別に断られるわけじゃないし。"),
+                    ("It's not like I don't want to come — I'm just really busy.", "行きたくないわけじゃないんだ、本当に忙しいだけ。")
+                 ], ipa: "/ɪts nˈɒt lˈaɪk/"),
+            make("there you are", "used when you find someone you were looking for, or when giving something to someone",
+                 "あ、いた！・はい、どうぞ",
+                 useCases: ["探していた人を見つけたとき", "物を手渡すとき"],
+                 examples: [
+                    ("There you are! I've been looking everywhere for you.", "あ、いた！ずっと探してたんだよ。"),
+                    ("There you are — two coffees and a croissant.", "はいどうぞ、コーヒー2つとクロワッサンです。")
+                 ], ipa: "/ðˈeə juː ˈɑː/"),
+            make("can I get ...?", "an informal way of ordering food or drink",
+                 "〜をください（カジュアルな注文）",
+                 useCases: ["カフェやパブで注文するとき", "ファストフード店で"],
+                 examples: [
+                    ("Can I get a large latte, please?", "ラテのラージをください。"),
+                    ("Can I get the burger without onions?", "玉ねぎ抜きでバーガーをもらえますか？")
+                 ], ipa: "/kən aɪ ɡˈɛt/"),
         ]
     }
 
