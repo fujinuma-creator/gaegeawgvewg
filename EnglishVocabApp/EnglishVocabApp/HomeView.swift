@@ -125,7 +125,7 @@ struct HomeView: View {
         HStack {
             HStack(spacing: 8) {
                 Image("logo_book").resizable().scaledToFit().frame(height: 30).floating(amplitude: 2, duration: 2.6, rotate: 3)
-                Text("Lingro 英語")
+                Text("Lingro英語")
                     .font(.system(size: 30, weight: .black, design: .rounded))
                     .foregroundStyle(Palette.text)
                     .lineLimit(1)
@@ -146,28 +146,24 @@ struct HomeView: View {
 
 
     private var heroCard: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HStack(alignment: .top) {
-            VStack(alignment: .leading, spacing: 8) {
+        ZStack(alignment: .topTrailing) {
+            Image("hero_london")
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: .infinity)
+            VStack(alignment: .trailing, spacing: 6) {
                 Text(Date().longJa)
-                    .font(LFont.heading(14))
+                    .font(LFont.heading(13))
                     .foregroundStyle(Palette.text)
                     .padding(.horizontal, 8).padding(.vertical, 3)
-                    .background(Palette.paper.opacity(0.9))
+                    .background(Palette.paper.opacity(0.92))
+                mottoTag
             }
             .padding(.top, 14)
-            .padding(.leading, 14)
-            Spacer(minLength: 8)
-            mottoTag
-                .padding(.top, 14)
-                .padding(.trailing, 14)
-            }
-            HeroHands()
-                .frame(height: 200)
-                .padding(.top, 10)
+            .padding(.trailing, 14)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Palette.hatchPale.opacity(0.5))
+        .frame(maxWidth: .infinity)
+        .background(Palette.hatchPale)
         .overlay(Rectangle().strokeBorder(Palette.ink, lineWidth: 1.6))
         .clipped()
     }
@@ -179,23 +175,18 @@ struct HomeView: View {
             editingMotto = true
         } label: {
             Text(settings.motto.isEmpty ? "ひとこと" : settings.motto)
-                .font(LFont.heading(14))
+                .font(LFont.heading(20))
                 .foregroundStyle(Palette.text)
-                .lineLimit(2)
-                .multilineTextAlignment(.center)
-                .padding(.vertical, 6).padding(.horizontal, 10)
-                .background(
-                    ZStack {
-                        Rectangle().fill(Palette.ink).offset(x: 2, y: 2)
-                        Rectangle().fill(Palette.tagYellow)
-                        Rectangle().strokeBorder(Palette.ink, lineWidth: 1.2)
-                    }
-                )
-                .rotationEffect(.degrees(3))
+                .lineLimit(3)
+                .multilineTextAlignment(.trailing)
+                .lineSpacing(6)
+                .frame(maxWidth: 230, alignment: .trailing)
+                .padding(.vertical, 4).padding(.horizontal, 8)
+                .background(Palette.paper.opacity(0.92))
         }
         .buttonStyle(.plain)
         .alert("ひとことを変更", isPresented: $editingMotto) {
-            TextField("毎日、語学", text: $mottoDraft)
+            TextField("今日も少しずつ頑張りましょう", text: $mottoDraft)
             Button("保存") { settings.motto = mottoDraft.trimmingCharacters(in: .whitespacesAndNewlines) }
             Button("キャンセル", role: .cancel) {}
         } message: { Text("ホーム右上に表示することばです。") }
@@ -219,16 +210,18 @@ struct HomeView: View {
                 }
                 Spacer()
                 VStack(alignment: .leading, spacing: 6) {
-                    Label("本日の学習時間", systemImage: "clock")
+                    Label("累計学習時間", systemImage: "clock")
                         .font(LFont.body(13))
                         .foregroundStyle(Palette.subText)
                         .labelStyle(StatLabelStyle(color: Palette.text))
+                    let total = Int(store.totalStudySeconds())
+                    let hours = total / 3600, minutes = (total % 3600) / 60
                     HStack(alignment: .lastTextBaseline, spacing: 3) {
-                        if store.stats.hours > 0 {
-                            Text("\(store.stats.hours)").font(LFont.number(38))
+                        if hours > 0 {
+                            Text("\(hours)").font(LFont.number(38))
                             Text("時間").font(LFont.heading(14))
                         }
-                        Text("\(store.stats.minutes)").font(LFont.number(38)).padding(.leading, store.stats.hours > 0 ? 4 : 0)
+                        Text("\(minutes)").font(LFont.number(38)).padding(.leading, hours > 0 ? 4 : 0)
                         Text("分").font(LFont.heading(14))
                     }
                     .foregroundStyle(Palette.text)
@@ -278,14 +271,14 @@ struct HomeView: View {
                 Rectangle().fill(Palette.ink).frame(height: 1.4)
             }
             HStack(alignment: .top, spacing: 12) {
-                menuTile(image: "menu_book", title: "全単語リスト", marker: Palette.markerGreen,
-                         subtitle: "\(store.totalCount)語・習得 \(store.learnedCount)語", route: .allWords)
+                menuTile(image: "menu_words", title: "全単語リスト", marker: Palette.markerGreen,
+                         subtitle: "\(Self.comma(store.totalCount))語・習得 \(Self.comma(store.learnedCount))語", route: .allWords)
                 reviewTile
             }
             HStack(alignment: .top, spacing: 12) {
-                menuTile(image: "menu_mic", title: "発音", marker: Palette.markerBlue,
-                         subtitle: "44の音を口の形から", route: .pronunciation, delay: 0.8)
-                menuTile(image: "menu_grammar", title: "文法", marker: Palette.markerRed,
+                menuTile(image: "menu_phone", title: "発音", marker: Palette.markerBlue,
+                         subtitle: "聞いて、まねして話す", route: .pronunciation, delay: 0.8)
+                menuTile(image: "menu_envelope", title: "文法", marker: Palette.markerRed,
                          subtitle: "基本から順番に", route: .grammar, delay: 1.3)
             }
         }
@@ -313,7 +306,7 @@ struct HomeView: View {
         Button { go(Route.reviewList) } label: {
             VStack(alignment: .leading, spacing: 6) {
                 HStack(alignment: .top) {
-                    Image("menu_review").resizable().scaledToFit().frame(height: 64).floating(amplitude: 3, duration: 3.8, delay: 0.4, rotate: 2)
+                    Image("menu_cup").resizable().scaledToFit().frame(height: 70).floating(amplitude: 3, duration: 3.8, delay: 0.4, rotate: 2)
                     Spacer()
                     Text("今日 \(todayCount)語")
                         .font(LFont.heading(12))
@@ -325,6 +318,16 @@ struct HomeView: View {
                 .padding(.bottom, 10)
                 Text("復習リスト").font(LFont.heading(19)).foregroundStyle(Palette.text).marker(Palette.markerOrange)
                 Text("忘れる前にもう一度").font(LFont.body(12)).foregroundStyle(Palette.subText)
+                Button {
+                    let words = store.todayReviewWords(limit: settings.dailyLimit)
+                    if words.isEmpty {
+                        go(Route.reviewList)
+                    } else {
+                        go(Route.flashcards(FlashcardDeck(title: "復習リスト", wordIds: words.map { $0.id })))
+                    }
+                } label: { Text("はじめる →") }
+                .buttonStyle(GreenButtonStyle(fullWidth: false))
+                .padding(.top, 6)
             }
             .frame(maxWidth: .infinity, minHeight: 176, alignment: .topLeading)
             .sketchCard(padding: 14, emphasized: true)
@@ -338,11 +341,11 @@ struct HomeView: View {
     private var topicBar: some View {
         Button { go(Route.topics) } label: {
             HStack(spacing: 12) {
-                Image("menu_chat").resizable().scaledToFit().frame(height: 54).floating(amplitude: 2.5, duration: 3, delay: 0.6, rotate: 2)
+                Image("menu_bubbles").resizable().scaledToFit().frame(height: 62).floating(amplitude: 2.5, duration: 3, delay: 0.6, rotate: 2)
                 VStack(alignment: .leading, spacing: 8) {
                     Text("日常のトピック会話").font(LFont.heading(18)).foregroundStyle(Palette.text).marker(Palette.markerOrange)
                     HStack(spacing: 6) {
-                        SketchTag(text: "雑談"); SketchTag(text: "仕事"); SketchTag(text: "旅行")
+                        SketchTag(text: "カフェ"); SketchTag(text: "旅行"); SketchTag(text: "仕事")
                     }
                 }
                 Spacer()
@@ -352,6 +355,14 @@ struct HomeView: View {
             .sketchCard(padding: 14)
         }
         .buttonStyle(.plain)
+    }
+}
+
+extension HomeView {
+    /// 2480 → "2,480"
+    static func comma(_ n: Int) -> String {
+        let f = NumberFormatter(); f.numberStyle = .decimal; f.locale = Locale(identifier: "en_US")
+        return f.string(from: NSNumber(value: n)) ?? "\(n)"
     }
 }
 
@@ -369,54 +380,4 @@ struct StatLabelStyle: LabelStyle {
 struct FlashcardDeck: Hashable {
     let title: String
     let wordIds: [String]
-}
-
-
-/// The hero illustration split in parts so it can move: the two hands with
-/// their book stacks rise and fall alternately (like weighing), the "grow"
-/// tag swings, and a small cloud drifts across.
-struct HeroHands: View {
-    @State private var phase = false
-    /// How far the hands extend beyond the card edges (points).
-    private let bleed: CGFloat = 18
-
-    var body: some View {
-        GeometryReader { geo in
-            let w = geo.size.width
-            ZStack(alignment: .bottom) {
-                Image("cloud_small")
-                    .resizable().scaledToFit()
-                    .frame(height: 28)
-                    .position(x: phase ? w * 0.78 : w * 0.70, y: 26)
-                Image("grow_tag")
-                    .resizable().scaledToFit()
-                    .frame(width: 62)
-                    .rotationEffect(.degrees(phase ? 4 : -3), anchor: .top)
-                    .position(x: w * 0.5, y: 40)
-                // The arms are cut off at the outer edges of the images. Let each
-                // hand bleed past the card (and below it) so those straight cut
-                // edges stay outside the clipped area even while the hands move.
-                HStack(alignment: .bottom, spacing: 0) {
-                    Image("hero_left")
-                        .resizable().scaledToFit()
-                        .frame(width: w * 0.5 + bleed)
-                        .offset(y: phase ? -6 : 4)
-                        .rotationEffect(.degrees(phase ? -1 : 1), anchor: .bottom)
-                    Spacer(minLength: 0)
-                    Image("hero_right")
-                        .resizable().scaledToFit()
-                        .frame(width: w * 0.5 + bleed)
-                        .offset(y: phase ? 4 : -6)
-                        .rotationEffect(.degrees(phase ? 1 : -1), anchor: .bottom)
-                }
-                .frame(width: w + bleed * 2, alignment: .bottom)
-                .offset(y: bleed)
-            }
-            .frame(width: w, height: geo.size.height, alignment: .bottom)
-        }
-        .clipped()
-        .onAppear {
-            withAnimation(.easeInOut(duration: 2.8).repeatForever(autoreverses: true)) { phase = true }
-        }
-    }
 }

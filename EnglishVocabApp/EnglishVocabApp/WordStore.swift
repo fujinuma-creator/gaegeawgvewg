@@ -386,6 +386,13 @@ final class WordStore: ObservableObject {
         return s
     }
 
+    /// 累計学習時間: every banked day plus the session running right now.
+    func totalStudySeconds() -> TimeInterval {
+        var s = stats.totalSeconds + stats.dailySeconds.values.reduce(0, +)
+        if let start = studyStart { s += max(0, Date().timeIntervalSince(start)) }
+        return s
+    }
+
     /// 学習記録をリセット: progress and statistics only, words stay.
     func resetProgress() {
         for i in words.indices {
