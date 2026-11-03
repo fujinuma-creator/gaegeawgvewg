@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32357,6 +32357,115 @@ enum SeedData {
                     ("I've done a fair amount of travelling.", "旅行はけっこうしてきた方だよ。"),
                     ("It'll take a fair amount of work, but it's doable.", "結構な手間はかかるけど、できなくはないよ。")
                  ], ipa: "/ə feər əˈmaʊnt/"),
+        ]
+    }
+    private static var britishColloquial133: [Word] {
+        [
+            make("short and sweet", "brief and to the point, often in a good way",
+                 "手短に・簡潔に",
+                 useCases: ["話やスピーチを短くまとめたいとき", "短くて良かったと言うとき"],
+                 examples: [
+                    ("I'll keep it short and sweet — thanks for coming.", "手短に言うね、来てくれてありがとう。"),
+                    ("The meeting was short and sweet for once.", "珍しく会議が短くてよかったよ。")
+                 ], ipa: "/ʃɔːt ən swiːt/"),
+            make("over and done with", "completely finished, especially something unpleasant",
+                 "すっかり終わって・片付いて",
+                 useCases: ["嫌なことを早く済ませたいとき", "やっと終わったとほっとするとき"],
+                 examples: [
+                    ("Let's just get it over and done with.", "さっさと終わらせちゃおう。"),
+                    ("I'm glad the exams are over and done with.", "試験がやっと全部終わってほっとしたよ。")
+                 ], ipa: "/ˈəʊvə ən dʌn wɪð/"),
+            make("tried and tested", "used many times before and known to work well",
+                 "実績のある・定番の",
+                 useCases: ["確実な方法をすすめるとき", "失敗しないやり方を話すとき"],
+                 examples: [
+                    ("It's a tried and tested recipe — you can't go wrong.", "定番のレシピだから失敗しないよ。"),
+                    ("Let's stick to the tried and tested method.", "実績のあるやり方でいこう。")
+                 ], ipa: "/traɪd ən ˈtestɪd/"),
+            make("rise and shine", "a cheerful way of telling someone to wake up and get out of bed",
+                 "起きて！・朝だよ！",
+                 useCases: ["家族や友達を朝起こすとき", "明るく一日を始めるとき"],
+                 examples: [
+                    ("Rise and shine! Breakfast is on the table.", "起きて！朝ご飯できてるよ。"),
+                    ("Come on, rise and shine — we've got a train to catch.", "ほら起きて、電車に乗らなきゃ。")
+                 ], ipa: "/raɪz ən ʃaɪn/"),
+            make("live and learn", "used when you have made a mistake and learned something from it",
+                 "失敗から学ぶものだね・いい勉強になった",
+                 useCases: ["自分の失敗を軽く振り返るとき", "経験から学んだと言うとき"],
+                 examples: [
+                    ("I'll never book a cheap flight like that again. Live and learn.", "もうあんな安い便は取らないよ。いい勉強になった。"),
+                    ("Oh well, live and learn.", "まあ、これも経験だね。")
+                 ], ipa: "/lɪv ən lɜːn/"),
+            make("sink or swim", "to succeed or fail by your own efforts, without help",
+                 "自力で何とかするしかない・一か八か",
+                 useCases: ["助けなしで頑張るしかない状況を話すとき", "新しい職場や環境に放り込まれたとき"],
+                 examples: [
+                    ("On my first day they just left me to sink or swim.", "初日からほったらかしで、自力で何とかするしかなかったよ。"),
+                    ("It's sink or swim in this job.", "この仕事は自分でやれなきゃ終わりなんだ。")
+                 ], ipa: "/sɪŋk ɔː swɪm/"),
+            make("make or break", "something that will cause either complete success or complete failure",
+                 "成否を分ける・命運を左右する",
+                 useCases: ["大事な分かれ目について話すとき", "勝負どころを強調するとき"],
+                 examples: [
+                    ("This interview is make or break for me.", "この面接で全部決まるんだ。"),
+                    ("The first year is make or break for a new business.", "新しい商売は最初の1年が勝負だよ。")
+                 ], ipa: "/meɪk ɔː breɪk/"),
+            make("all or nothing", "either completely or not at all, with no middle option",
+                 "全か無か・やるなら全力",
+                 useCases: ["中途半端を嫌う性格を話すとき", "妥協のない選択について言うとき"],
+                 examples: [
+                    ("He's very all or nothing — he either loves it or hates it.", "彼は極端でさ、大好きか大嫌いかのどっちかなんだ。"),
+                    ("It's all or nothing now.", "もう全部賭けるしかないね。")
+                 ], ipa: "/ɔːl ɔː ˈnʌθɪŋ/"),
+            make("little by little", "slowly and gradually, in small amounts",
+                 "少しずつ・徐々に",
+                 useCases: ["ゆっくり進歩していることを話すとき", "焦らず続けるよう励ますとき"],
+                 examples: [
+                    ("My English is getting better little by little.", "英語が少しずつ上達してきてるんだ。"),
+                    ("Just do it little by little — no rush.", "少しずつやればいいよ、急がなくていいから。")
+                 ], ipa: "/ˈlɪtl baɪ ˈlɪtl/"),
+            make("face to face", "in person, with both people present in the same place",
+                 "直接・面と向かって",
+                 useCases: ["オンラインではなく会って話したいとき", "直接伝えるべきことを話すとき"],
+                 examples: [
+                    ("I'd rather talk about this face to face.", "この話は直接会ってしたいな。"),
+                    ("It's nice to finally meet you face to face.", "やっと直接会えて嬉しいよ。")
+                 ], ipa: "/feɪs tə feɪs/"),
+            make("back to back", "one after another without a break",
+                 "立て続けに・連続で",
+                 useCases: ["予定や会議が詰まっていると言うとき", "連続で何かが起きたことを話すとき"],
+                 examples: [
+                    ("I've got meetings back to back all afternoon.", "午後はずっと会議が立て続けなんだ。"),
+                    ("We watched three films back to back.", "映画を3本ぶっ続けで観たよ。")
+                 ], ipa: "/bæk tə bæk/"),
+            make("hand in hand", "holding each other's hand; also, closely connected and happening together",
+                 "手をつないで／密接に関連して",
+                 useCases: ["手をつないで歩く様子を話すとき", "2つのことが切り離せないと言うとき（go hand in hand）"],
+                 examples: [
+                    ("They walked along the beach hand in hand.", "二人は手をつないでビーチを歩いてたよ。"),
+                    ("Stress and poor sleep often go hand in hand.", "ストレスと睡眠不足はたいてい一緒にやってくるよね。")
+                 ], ipa: "/hænd ɪn hænd/"),
+            make("step by step", "doing one thing at a time, in a careful order",
+                 "一歩ずつ・段階を追って",
+                 useCases: ["やり方を順番に説明するとき", "焦らず進めようと言うとき"],
+                 examples: [
+                    ("Don't worry, I'll talk you through it step by step.", "大丈夫、一つずつ説明するから。"),
+                    ("Let's take it step by step.", "一歩ずつ進めていこう。")
+                 ], ipa: "/step baɪ step/"),
+            make("day by day", "gradually, as each day passes; also, dealing with one day at a time",
+                 "日に日に／一日一日",
+                 useCases: ["日ごとに変化していると言うとき", "先のことを考えず一日ずつ過ごすと言うとき"],
+                 examples: [
+                    ("She's getting stronger day by day.", "彼女は日に日に元気になってるよ。"),
+                    ("I'm just taking it day by day at the moment.", "今は一日一日をなんとかこなしてる感じだよ。")
+                 ], ipa: "/deɪ baɪ deɪ/"),
+            make("one by one", "separately, one after another",
+                 "一つずつ・一人ずつ",
+                 useCases: ["順番に一つずつ何かをするとき", "人が次々に去っていく様子を話すとき"],
+                 examples: [
+                    ("Let's go through the problems one by one.", "問題を一つずつ見ていこう。"),
+                    ("One by one, everyone went home.", "一人また一人と、みんな帰っていったよ。")
+                 ], ipa: "/wʌn baɪ wʌn/"),
         ]
     }
     private static var britishColloquial132: [Word] {
