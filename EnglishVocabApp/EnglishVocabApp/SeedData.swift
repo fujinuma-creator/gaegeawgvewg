@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31812,6 +31812,115 @@ enum SeedData {
                     ("I know her by sight, but we've never actually spoken.", "顔は知ってるけど、実際話したことはないんだ。"),
                     ("He lives on our street — I only know him by sight.", "うちの通りに住んでる人だけど、顔を知ってるだけだよ。")
                  ], ipa: "/nəʊ ˈsʌmwʌn baɪ saɪt/"),
+        ]
+    }
+    private static var britishColloquial126: [Word] {
+        [
+            make("on the ball", "quick to understand and react; alert and competent",
+                 "抜け目がない・しっかりしている",
+                 useCases: ["仕事が早い人を褒めるとき", "頭が回っていないと自虐するとき"],
+                 examples: [
+                    ("Our new manager is really on the ball.", "新しいマネージャー、本当にしっかりしてるよ。"),
+                    ("Sorry, I'm not on the ball today — didn't sleep much.", "ごめん、今日頭が回ってなくて。あまり寝てないんだ。")
+                 ], ipa: "/ɒn ðə bɔːl/"),
+            make("stock up on", "to buy a lot of something so you have enough for later",
+                 "〜を買いだめする・まとめ買いする",
+                 useCases: ["買い物の話", "連休や悪天候の前の準備"],
+                 examples: [
+                    ("Let's stock up on snacks before the weekend.", "週末の前にお菓子を買いだめしとこう。"),
+                    ("Everyone's stocking up on bread because of the snow.", "雪のせいでみんなパンを買い込んでるよ。")
+                 ], ipa: "/stɒk ʌp ɒn/"),
+            make("get cracking", "to start doing something quickly and with energy",
+                 "さっさと始める・取りかかる",
+                 useCases: ["作業を始めようと促すとき", "時間がないとき"],
+                 examples: [
+                    ("Right, we'd better get cracking if we want to finish today.", "よし、今日中に終わらせたいならさっさと始めないと。"),
+                    ("Come on, let's get cracking — the guests arrive at six.", "ほら、取りかかろう。お客さん6時に来るよ。")
+                 ], ipa: "/ɡet ˈkrækɪŋ/"),
+            make("get to grips with", "to start to understand and deal with something difficult",
+                 "〜を理解し始める・〜に取り組んで慣れる",
+                 useCases: ["新しいソフトや仕事に慣れる話", "難しい問題に取り組むとき"],
+                 examples: [
+                    ("I'm still getting to grips with the new software.", "新しいソフトにまだ慣れようとしてるところなんだ。"),
+                    ("It took me a while to get to grips with driving on the left.", "左側通行に慣れるまでしばらくかかったよ。")
+                 ], ipa: "/ɡet tə ɡrɪps wɪð/"),
+            make("give someone the benefit of the doubt", "to believe someone is telling the truth or acting well, even though you are not sure",
+                 "（疑わしくても）相手を信じてあげる・大目に見る",
+                 useCases: ["言い訳を一応信じるとき", "相手を悪く取らないようにするとき"],
+                 examples: [
+                    ("He said the train was late — I'll give him the benefit of the doubt.", "電車が遅れたって言ってるし、今回は信じてあげるよ。"),
+                    ("Maybe she didn't see your message. Give her the benefit of the doubt.", "メッセージ見てないだけかもよ。悪く取らないであげて。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ðə ˈbenɪfɪt əv ðə daʊt/"),
+            make("let someone off", "to not punish someone, or to punish them less than expected",
+                 "（人を）見逃す・大目に見る",
+                 useCases: ["罰や注意を見逃してもらうとき", "今回だけ許すとき"],
+                 examples: [
+                    ("I'll let you off this time, but don't do it again.", "今回は見逃すけど、もう二度とやらないでね。"),
+                    ("The officer let him off with a warning.", "警官は注意だけで彼を見逃してくれた。")
+                 ], ipa: "/let ˈsʌmwʌn ɒf/"),
+            make("be at a loss", "to not know what to do or say",
+                 "途方に暮れる・（言葉に）詰まる",
+                 useCases: ["どうしていいかわからないとき", "驚いて言葉が出ないとき（at a loss for words）"],
+                 examples: [
+                    ("I'm at a loss — I've tried everything and it still won't work.", "もうお手上げだよ。全部試したのにまだ動かないんだ。"),
+                    ("Honestly, I was at a loss for words.", "正直、言葉が出なかったよ。")
+                 ], ipa: "/biː ət ə lɒs/"),
+            make("at this rate", "if things continue in the same way as now",
+                 "この調子だと・このままだと",
+                 useCases: ["遅れや進み具合を心配するとき", "このままの結果を予想するとき"],
+                 examples: [
+                    ("At this rate, we'll never get there on time.", "この調子じゃ、絶対に時間通りに着かないよ。"),
+                    ("At this rate I'll have finished the book by Friday.", "このペースなら金曜までに本を読み終わりそう。")
+                 ], ipa: "/ət ðɪs reɪt/"),
+            make("make tracks", "to leave a place, especially to go home",
+                 "そろそろ帰る・おいとまする",
+                 useCases: ["集まりから帰るとき", "出発を切り出すとき"],
+                 examples: [
+                    ("It's getting late — I'd better make tracks.", "遅くなってきたし、そろそろ帰らなきゃ。"),
+                    ("Shall we make tracks? The traffic will be awful later.", "そろそろ出る？後になると道が混むよ。")
+                 ], ipa: "/meɪk træks/"),
+            make("it's all the same to me", "used to say you do not mind which option is chosen",
+                 "どっちでも構わないよ・私はどれでもいい",
+                 useCases: ["選択を相手に任せるとき", "こだわりがないと伝えるとき"],
+                 examples: [
+                    ("Pizza or curry? — It's all the same to me.", "ピザとカレーどっちがいい？—どっちでもいいよ。"),
+                    ("We can go today or tomorrow — it's all the same to me.", "今日でも明日でも、私はどっちでも構わないよ。")
+                 ], ipa: "/ɪts ɔːl ðə seɪm tə miː/"),
+            make("like I said", "used when repeating something you have already said",
+                 "さっきも言ったけど・言った通り",
+                 useCases: ["話を繰り返すとき", "自分の言った通りになったとき"],
+                 examples: [
+                    ("Like I said, I can't make it on Thursday.", "さっきも言ったけど、木曜は行けないんだ。"),
+                    ("Like I said, it's not a big deal.", "言った通り、大したことじゃないよ。")
+                 ], ipa: "/laɪk aɪ sed/"),
+            make("if you insist", "used to agree to something, often after first saying no",
+                 "そこまで言うなら・じゃあお言葉に甘えて",
+                 useCases: ["勧められて受け入れるとき", "しぶしぶ同意するとき"],
+                 examples: [
+                    ("Have another slice of cake! — Well, if you insist.", "ケーキもう一切れどうぞ！—じゃあ、そこまで言うなら。"),
+                    ("Fine, I'll come along, if you insist.", "わかったよ、そこまで言うなら一緒に行くよ。")
+                 ], ipa: "/ɪf juː ɪnˈsɪst/"),
+            make("easy does it", "used to tell someone to do something slowly and carefully",
+                 "ゆっくりね・慎重にね",
+                 useCases: ["重い物を運ぶとき", "慎重な動作を促すとき"],
+                 examples: [
+                    ("Easy does it — that box is full of glasses.", "ゆっくりね。その箱、グラスがいっぱい入ってるから。"),
+                    ("Easy does it, mind the step.", "慎重にね、段差に気をつけて。")
+                 ], ipa: "/ˈiːzi dʌz ɪt/"),
+            make("look who it is", "used when you are surprised and pleased to see someone",
+                 "おや、誰かと思ったら・あら、久しぶり",
+                 useCases: ["知り合いに偶然会ったとき", "久しぶりの人が来たとき"],
+                 examples: [
+                    ("Well, look who it is! I haven't seen you in ages.", "おや、誰かと思ったら！めちゃくちゃ久しぶりだね。"),
+                    ("Look who it is — finally out of bed!", "あら、やっと起きてきたのね！")
+                 ], ipa: "/lʊk huː ɪt ɪz/"),
+            make("run short of", "to start to have too little of something",
+                 "〜が足りなくなってくる・不足してくる",
+                 useCases: ["時間やお金が足りないとき", "在庫が減ってきたとき"],
+                 examples: [
+                    ("We're running short of milk — can you grab some?", "牛乳が少なくなってきたから、買ってきてくれる？"),
+                    ("Sorry, I'm running short of time today.", "ごめん、今日はあまり時間がないんだ。")
+                 ], ipa: "/rʌn ʃɔːt əv/"),
         ]
     }
     private static var britishColloquial123: [Word] {
