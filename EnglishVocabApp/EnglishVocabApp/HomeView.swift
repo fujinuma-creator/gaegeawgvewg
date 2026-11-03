@@ -147,9 +147,7 @@ struct HomeView: View {
 
     private var heroCard: some View {
         ZStack(alignment: .topTrailing) {
-            Image("hero_london")
-                .resizable()
-                .scaledToFit()
+            HeroLondon()
                 .frame(maxWidth: .infinity)
             VStack(alignment: .trailing, spacing: 6) {
                 Text(Date().longJa)
@@ -380,4 +378,57 @@ struct StatLabelStyle: LabelStyle {
 struct FlashcardDeck: Hashable {
     let title: String
     let wordIds: [String]
+}
+
+/// The London street, gently alive: the three shop signs swing on their
+/// brackets, the bus rocks as if idling at the stop, a small cloud drifts
+/// across the sky and the whole scene breathes very slowly. The moving parts
+/// are cut from the same picture, so at rest they sit exactly on top of
+/// their originals.
+struct HeroLondon: View {
+    @State private var swing = false
+    @State private var bump = false
+    @State private var breathe = false
+
+    /// Pixel size of hero_london.png; overlay positions below are in it.
+    private let base = CGSize(width: 605, height: 565)
+
+    var body: some View {
+        GeometryReader { geo in
+            let k = geo.size.width / base.width
+            ZStack(alignment: .topLeading) {
+                Image("hero_london")
+                    .resizable()
+                    .frame(width: base.width * k, height: base.height * k)
+                DriftingCloud(image: "cloud_small", height: 24 * k, y: 34 * k, duration: 52, startFraction: 0.3, opacity: 0.85)
+                    .frame(width: base.width * k, height: 90 * k)
+                part("sign_tea", w: 168, h: 106, k: k)
+                    .rotationEffect(.degrees(swing ? 1.8 : -1.8), anchor: .top)
+                    .offset(x: 16 * k, y: 222 * k)
+                part("sign_books", w: 142, h: 86, k: k)
+                    .rotationEffect(.degrees(swing ? -1.3 : 1.3), anchor: .top)
+                    .offset(x: 188 * k, y: 242 * k)
+                part("sign_bakery", w: 136, h: 94, k: k)
+                    .rotationEffect(.degrees(swing ? 1.4 : -1.4), anchor: .top)
+                    .offset(x: 348 * k, y: 234 * k)
+                part("hero_bus", w: 250, h: 125, k: k)
+                    .rotationEffect(.degrees(bump ? 0.7 : -0.7), anchor: .bottom)
+                    .offset(x: 58 * k + (bump ? 3 : -3), y: 440 * k + (bump ? -1.5 : 1.5))
+            }
+            .scaleEffect(breathe ? 1.012 : 1.0, anchor: .bottom)
+            .frame(width: base.width * k, height: base.height * k)
+        }
+        .aspectRatio(base.width / base.height, contentMode: .fit)
+        .onAppear {
+            withAnimation(.easeInOut(duration: 2.8).repeatForever(autoreverses: true)) { swing = true }
+            withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true).delay(0.4)) { bump = true }
+            withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) { breathe = true }
+        }
+    }
+
+    private func part(_ name: String, w: CGFloat, h: CGFloat, k: CGFloat) -> some View {
+        Image(name)
+            .resizable()
+            .frame(width: w * k, height: h * k)
+    }
 }
