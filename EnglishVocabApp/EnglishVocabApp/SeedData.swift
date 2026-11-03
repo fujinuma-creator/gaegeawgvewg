@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32357,6 +32357,115 @@ enum SeedData {
                     ("I've done a fair amount of travelling.", "旅行はけっこうしてきた方だよ。"),
                     ("It'll take a fair amount of work, but it's doable.", "結構な手間はかかるけど、できなくはないよ。")
                  ], ipa: "/ə feər əˈmaʊnt/"),
+        ]
+    }
+    private static var britishColloquial136: [Word] {
+        [
+            make("a fresh pair of eyes", "someone new who can look at something and notice things others have missed",
+                 "新しい視点・別の人の目",
+                 useCases: ["他の人にチェックを頼むとき", "行き詰まって第三者の意見が欲しいとき"],
+                 examples: [
+                    ("Could you have a look at this? I need a fresh pair of eyes.", "これ見てもらえる？別の人の目で見てほしいんだ。"),
+                    ("A fresh pair of eyes spotted the mistake straight away.", "新しく入った人がすぐにミスに気づいてくれたよ。")
+                 ], ipa: "/ə freʃ peər əv aɪz/"),
+            make("get something off your chest", "to tell someone about something that has been worrying or upsetting you, so you feel better",
+                 "胸のつかえを下ろす・打ち明けてすっきりする",
+                 useCases: ["悩みを打ち明けるとき", "話を聞いてあげると申し出るとき"],
+                 examples: [
+                    ("I just need to get this off my chest.", "ちょっとこれだけは言わせて、すっきりしたいんだ。"),
+                    ("Go on, get it off your chest — you'll feel better.", "ほら、全部話しちゃいなよ。楽になるから。")
+                 ], ipa: "/ɡet ˈsʌmθɪŋ ɒf jɔː tʃest/"),
+            make("take sides", "to support one person or group against another in an argument",
+                 "どちらかの肩を持つ・味方する",
+                 useCases: ["喧嘩や口論に巻き込まれたとき", "中立でいたいと伝えるとき"],
+                 examples: [
+                    ("I'm not taking sides — you're both my mates.", "どっちの味方もしないよ、二人とも友達だから。"),
+                    ("Mum always refused to take sides when we argued.", "僕らが喧嘩すると、母はいつもどちらの肩も持たなかった。")
+                 ], ipa: "/teɪk saɪdz/"),
+            make("behind the times", "old-fashioned; not aware of or using modern ideas or technology",
+                 "時代遅れの・流行に疎い",
+                 useCases: ["流行や技術に疎いことを話すとき", "古いやり方を冗談めかして言うとき"],
+                 examples: [
+                    ("I know I'm a bit behind the times, but what's a podcast?", "ちょっと時代遅れなのはわかってるけど、ポッドキャストって何？"),
+                    ("Their website is really behind the times.", "あそこのサイト、本当に古臭いよね。")
+                 ], ipa: "/bɪˈhaɪnd ðə taɪmz/"),
+            make("the big picture", "the situation as a whole, rather than the small details",
+                 "全体像・大局",
+                 useCases: ["細かいことにこだわりすぎている人に言うとき", "物事を大きな視点で考えるとき"],
+                 examples: [
+                    ("Don't get bogged down in the details — look at the big picture.", "細かいことにとらわれないで、全体を見なよ。"),
+                    ("In the big picture, it's only a small setback.", "大きな目で見れば、ちょっとしたつまずきにすぎないよ。")
+                 ], ipa: "/ðə bɪɡ ˈpɪktʃə/"),
+            make("plain sailing", "easy and without any problems",
+                 "順調・すんなりいくこと",
+                 useCases: ["物事が問題なく進んだとき", "最初だけ大変だと言うとき"],
+                 examples: [
+                    ("Once you've passed the first bit, it's plain sailing.", "最初のところさえ越えれば、あとは楽勝だよ。"),
+                    ("The move wasn't exactly plain sailing.", "引っ越しはすんなりとはいかなかったよ。")
+                 ], ipa: "/pleɪn ˈseɪlɪŋ/"),
+            make("running on empty", "continuing to work or function although you have very little energy left",
+                 "ヘトヘトの状態で動いている・気力が尽きかけている",
+                 useCases: ["疲れ切っていると言うとき", "休みが必要だと伝えるとき"],
+                 examples: [
+                    ("I've been running on empty all week.", "今週はずっとヘトヘトの状態でやってるよ。"),
+                    ("You can't keep running on empty — take a day off.", "そんなギリギリの状態で続けられないよ、一日休みなよ。")
+                 ], ipa: "/ˈrʌnɪŋ ɒn ˈempti/"),
+            make("be up to your eyes in", "to be extremely busy with something",
+                 "（〜で）手一杯だ・忙殺されている",
+                 useCases: ["忙しくて手が回らないと言うとき", "誘いを断るとき"],
+                 examples: [
+                    ("Sorry, I'm up to my eyes in work at the moment.", "ごめん、今仕事で手一杯なんだ。"),
+                    ("She's up to her eyes in wedding plans.", "彼女は結婚式の準備で大忙しなんだ。")
+                 ], ipa: "/bi ʌp tə jɔːr aɪz ɪn/"),
+            make("a rough night", "a night when you slept badly or something unpleasant happened",
+                 "眠れなかった夜・散々な夜",
+                 useCases: ["よく眠れなかったと言うとき", "疲れた様子の人を気遣うとき"],
+                 examples: [
+                    ("You look tired — rough night?", "疲れてるね、昨夜眠れなかったの？"),
+                    ("The baby was teething, so we had a rough night.", "赤ちゃんの歯が生えかけで、昨夜は散々だったよ。")
+                 ], ipa: "/ə rʌf naɪt/"),
+            make("make sense of", "to understand something that is confusing or complicated",
+                 "〜を理解する・〜の意味をつかむ",
+                 useCases: ["分かりにくいものを理解しようとするとき", "状況が飲み込めないとき"],
+                 examples: [
+                    ("I can't make sense of these instructions.", "この説明書、さっぱり意味がわからない。"),
+                    ("I'm still trying to make sense of what happened.", "何が起きたのか、まだ頭の整理がついてないんだ。")
+                 ], ipa: "/meɪk sens əv/"),
+            make("go round in circles", "to keep discussing or doing the same thing without making any progress",
+                 "堂々巡りする・同じことを繰り返して進まない",
+                 useCases: ["話し合いが進まないとき", "議論を切り上げたいとき"],
+                 examples: [
+                    ("We're just going round in circles here.", "これじゃ堂々巡りだよ。"),
+                    ("Let's stop going round in circles and make a decision.", "同じ話を繰り返すのはやめて、決めちゃおう。")
+                 ], ipa: "/ɡəʊ raʊnd ɪn ˈsɜːklz/"),
+            make("a mixed bag", "a group of things or people of very different types or quality",
+                 "良いものも悪いものも混ざっている・玉石混交",
+                 useCases: ["評価がまちまちなとき", "感想を聞かれて当たり外れがあったと言うとき"],
+                 examples: [
+                    ("The weather's been a bit of a mixed bag this week.", "今週の天気は良かったり悪かったりだったね。"),
+                    ("The reviews were a mixed bag, to be honest.", "正直、レビューは賛否両論だったよ。")
+                 ], ipa: "/ə mɪkst bæɡ/"),
+            make("in one piece", "safely, without being hurt or damaged",
+                 "無事に・壊れずに",
+                 useCases: ["無事に到着したと伝えるとき", "物が壊れずに届いたとき"],
+                 examples: [
+                    ("Text me when you get home in one piece.", "無事に家に着いたらメッセージしてね。"),
+                    ("Amazingly, the vase arrived in one piece.", "驚いたことに、花瓶は割れずに届いたよ。")
+                 ], ipa: "/ɪn wʌn piːs/"),
+            make("a quick fix", "a fast and easy solution that may only work for a short time",
+                 "応急処置・その場しのぎの解決策",
+                 useCases: ["とりあえずの対処を提案するとき", "根本的な解決ではないと注意するとき"],
+                 examples: [
+                    ("Tape will do as a quick fix for now.", "とりあえずテープで応急処置しておこう。"),
+                    ("There's no quick fix for this, I'm afraid.", "残念ながら、これにはすぐ効く解決策はないね。")
+                 ], ipa: "/ə kwɪk fɪks/"),
+            make("the small print", "the details of a contract or agreement, often written in small letters, that can contain important conditions",
+                 "（契約書などの）細則・小さな文字の注意書き",
+                 useCases: ["契約前に条件を確認するよう勧めるとき", "隠れた条件に気づいたとき"],
+                 examples: [
+                    ("Always read the small print before you sign.", "サインする前に必ず細かい条件を読んでね。"),
+                    ("It was hidden in the small print.", "それ、細則にこっそり書いてあったんだよ。")
+                 ], ipa: "/ðə smɔːl prɪnt/"),
         ]
     }
     private static var britishColloquial135: [Word] {
