@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33011,6 +33011,115 @@ enum SeedData {
                     ("I got loads of freebies at the conference.", "カンファレンスでタダのものをたくさんもらったよ。"),
                     ("The dessert was a freebie from the chef.", "デザートはシェフからのサービスだったんだ。")
                  ], ipa: "/ˈfriːbi/"),
+        ]
+    }
+    private static var britishColloquial143: [Word] {
+        [
+            make("chatty", "liking to talk a lot in a friendly, informal way",
+                 "おしゃべりな・話好きな",
+                 useCases: ["人懐っこくよく話す人を表すとき", "今日は口数が多い・少ないと言うとき"],
+                 examples: [
+                    ("Your neighbour's really chatty, isn't she?", "お隣さん、すごくおしゃべりだよね？"),
+                    ("Sorry, I'm not very chatty this morning — I'm tired.", "ごめん、今朝はあまり喋る気分じゃなくて。疲れてるんだ。")
+                 ], ipa: "/ˈtʃæti/"),
+            make("lightweight", "someone who gets drunk after only a little alcohol; also someone not taken seriously",
+                 "酒に弱い人・すぐ酔う人",
+                 useCases: ["お酒に弱いことを冗談っぽく言うとき", "すぐ酔った友達をからかうとき"],
+                 examples: [
+                    ("Two glasses of wine and I'm done — I'm such a lightweight.", "ワイン2杯でもう限界。ほんとお酒弱いんだよね。"),
+                    ("You're drunk already? What a lightweight!", "もう酔ったの？弱すぎでしょ！")
+                 ], ipa: "/ˈlaɪtweɪt/"),
+            make("sneak peek", "a quick look at something before it is officially shown or finished",
+                 "チラ見せ・先行公開",
+                 useCases: ["完成前のものを少し見せるとき", "新作や予告を見るとき"],
+                 examples: [
+                    ("Do you want a sneak peek at the wedding photos?", "結婚式の写真、ちょっとだけ先に見る？"),
+                    ("They gave us a sneak peek of the new menu.", "新メニューをちょっとだけ先に見せてもらったよ。")
+                 ], ipa: "/ˌsniːk ˈpiːk/"),
+            make("say when", "used when pouring a drink or serving food, asking someone to tell you when to stop",
+                 "いいところで言ってね（注ぐとき）",
+                 useCases: ["飲み物を注ぐとき", "料理を取り分けるとき"],
+                 examples: [
+                    ("Milk? Say when.", "ミルク入れる？いいところで言ってね。"),
+                    ("\"Say when.\" \"That's perfect, thanks!\"", "「ストップって言ってね」「そこでちょうどいい、ありがとう！」")
+                 ], ipa: "/seɪ wen/"),
+            make("foodie", "a person who is very interested in food and enjoys eating good food",
+                 "グルメな人・食通",
+                 useCases: ["食べ物好きな人を紹介するとき", "美味しい店を知っている人について話すとき"],
+                 examples: [
+                    ("Ask Tom where to eat — he's a real foodie.", "どこで食べるかはトムに聞きなよ、彼すごいグルメだから。"),
+                    ("Lisbon is a great city for foodies.", "リスボンはグルメな人にはたまらない街だよ。")
+                 ], ipa: "/ˈfuːdi/"),
+            make("know-it-all", "a person who behaves as if they know everything, in an annoying way",
+                 "知ったかぶり・物知り顔の人",
+                 useCases: ["何でも知っているふりをする人に呆れるとき", "自分が口を出しすぎたと謝るとき"],
+                 examples: [
+                    ("Don't be such a know-it-all.", "そんなに知ったかぶりしないでよ。"),
+                    ("I don't want to sound like a know-it-all, but I think that's wrong.", "知ったかぶりするつもりはないけど、それ違うと思うよ。")
+                 ], ipa: "/ˈnəʊ ɪt ɔːl/"),
+            make("party animal", "someone who loves going to parties and going out a lot",
+                 "パーティー好き・遊び好きな人",
+                 useCases: ["夜遊び好きな人について話すとき", "昔はよく遊んでいたと言うとき"],
+                 examples: [
+                    ("She was a real party animal at uni.", "彼女、大学時代はかなりの遊び好きだったよ。"),
+                    ("I'm not much of a party animal these days.", "最近はあまりパーティーとか行かなくなったな。")
+                 ], ipa: "/ˈpɑːti ˌænɪməl/"),
+            make("workaholic", "a person who works too much and finds it hard to stop",
+                 "仕事中毒の人・ワーカホリック",
+                 useCases: ["働きすぎの人について話すとき", "休むように勧めるとき"],
+                 examples: [
+                    ("My dad's a total workaholic — he even works on holiday.", "うちの父は完全な仕事人間で、休暇中も働いてるんだ。"),
+                    ("Take a break! Don't turn into a workaholic.", "休みなよ！仕事中毒にならないでね。")
+                 ], ipa: "/ˌwɜːkəˈhɒlɪk/"),
+            make("early riser", "a person who usually gets up early in the morning",
+                 "早起きの人",
+                 useCases: ["自分の生活リズムを話すとき", "朝早い予定を相談するとき"],
+                 examples: [
+                    ("I'm an early riser, so a 7 a.m. start is fine.", "私は早起きだから、朝7時スタートで大丈夫だよ。"),
+                    ("He's never been an early riser.", "彼は昔から早起きが苦手なんだ。")
+                 ], ipa: "/ˈɜːli ˈraɪzə/"),
+            make("fancy dress", "special clothes you wear to a party to look like a famous person or character",
+                 "仮装・コスプレ",
+                 useCases: ["仮装パーティーについて話すとき", "衣装を用意するとき"],
+                 examples: [
+                    ("It's a fancy dress party, so come as a superhero.", "仮装パーティーだから、スーパーヒーローの格好で来てね。"),
+                    ("I've got no idea what to wear for fancy dress.", "仮装、何着ればいいか全然わからない。")
+                 ], ipa: "/ˌfænsi ˈdres/"),
+            make("absolutely", "used to strongly agree or say yes; also means completely",
+                 "もちろん！・全くその通り／完全に",
+                 useCases: ["強く同意・快諾するとき", "「本当に〜」と強調するとき"],
+                 examples: [
+                    ("\"Can I bring a friend?\" \"Absolutely!\"", "「友達連れて行ってもいい？」「もちろん！」"),
+                    ("I'm absolutely starving.", "もう本当にお腹ペコペコ。")
+                 ], ipa: "/ˈæbsəluːtli/"),
+            make("exactly", "used to say that something is completely correct or that you fully agree",
+                 "まさにそれ！・その通り",
+                 useCases: ["相手の意見に強く同意するとき", "言いたかったことを相手が言ってくれたとき"],
+                 examples: [
+                    ("\"So we just leave earlier?\" \"Exactly.\"", "「じゃあ早めに出ればいいってこと？」「その通り」"),
+                    ("Exactly! That's what I've been saying all along.", "まさにそれ！ずっとそう言ってたんだよ。")
+                 ], ipa: "/ɪɡˈzæktli/"),
+            make("homesick", "feeling sad because you are away from your home, family or country",
+                 "ホームシックの",
+                 useCases: ["海外生活や一人暮らしの寂しさを話すとき", "家族や故郷が恋しいと言うとき"],
+                 examples: [
+                    ("I get a bit homesick around Christmas.", "クリスマスの頃はちょっとホームシックになるんだ。"),
+                    ("Were you homesick when you first moved abroad?", "海外に引っ越したばかりの頃、ホームシックになった？")
+                 ], ipa: "/ˈhəʊmsɪk/"),
+            make("people person", "someone who enjoys being with and talking to other people and is good at it",
+                 "人付き合いが得意な人・社交的な人",
+                 useCases: ["自分や他人の性格を説明するとき", "接客や人と関わる仕事について話すとき"],
+                 examples: [
+                    ("She's a real people person — everyone loves her.", "彼女はほんと人付き合いが上手で、みんなに好かれてるよ。"),
+                    ("I'm not really a people person, to be honest.", "正直、あまり人付き合いが得意なタイプじゃないんだ。")
+                 ], ipa: "/ˈpiːpl ˌpɜːsn/"),
+            make("cheapskate", "a person who does not like spending money, in an annoying way",
+                 "ケチな人・しみったれ",
+                 useCases: ["お金を出し渋る人をからかうとき", "自分の節約ぶりを冗談で言うとき"],
+                 examples: [
+                    ("Don't be such a cheapskate — it's only a fiver!", "そんなケチケチしないでよ、たった5ポンドじゃん！"),
+                    ("He's a bit of a cheapskate when it comes to tipping.", "チップのことになると、彼ちょっとケチなんだよね。")
+                 ], ipa: "/ˈtʃiːpskeɪt/"),
         ]
     }
     private static var britishColloquial142: [Word] {
