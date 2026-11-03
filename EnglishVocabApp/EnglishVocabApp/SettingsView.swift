@@ -6,6 +6,7 @@ struct SettingsView: View {
     @EnvironmentObject var store: WordStore
     @EnvironmentObject var settings: AppSettings
     @EnvironmentObject var purchases: PurchaseManager
+    @ObservedObject private var bgm = BGMManager.shared
     @State private var showPaywall = false
     @Binding var path: NavigationPath
 
@@ -150,6 +151,26 @@ struct SettingsView: View {
                 Toggle("", isOn: $settings.autoSpeak).labelsHidden().tint(Palette.green)
             }
             .padding(.vertical, 10)
+            SketchDivider(dashed: true)
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("BGM").font(LFont.heading(14)).foregroundStyle(Palette.text)
+                    Text("雨の日のカフェで流れる静かなジャズ。読み上げ中は小さくなります").font(LFont.caption(11)).foregroundStyle(Palette.subText)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                Spacer()
+                Toggle("", isOn: $bgm.isOn).labelsHidden().tint(Palette.green)
+            }
+            .padding(.vertical, 10)
+            if bgm.isOn {
+                settingRow("BGMの音量") {
+                    HStack(spacing: 10) {
+                        Image(systemName: "speaker.wave.1").font(.system(size: 11)).foregroundStyle(Palette.subText)
+                        Slider(value: $bgm.volume, in: 0.1...1.0, step: 0.05).tint(Palette.green).frame(width: 130)
+                        Image(systemName: "speaker.wave.3").font(.system(size: 11)).foregroundStyle(Palette.subText)
+                    }
+                }
+            }
         }
         .sketchCard(padding: 14)
     }

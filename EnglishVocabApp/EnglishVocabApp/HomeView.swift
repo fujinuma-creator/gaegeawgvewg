@@ -5,6 +5,7 @@ struct HomeView: View {
     @EnvironmentObject var store: WordStore
     @EnvironmentObject var settings: AppSettings
     @EnvironmentObject var purchases: PurchaseManager
+    @ObservedObject private var bgm = BGMManager.shared
     @State private var path = NavigationPath()
     @State private var showPaywall = false
     @AppStorage("paywall.firstShown") private var firstPaywallShown = false
@@ -133,7 +134,18 @@ struct HomeView: View {
             }
             Spacer()
             Image("cloud_small").resizable().scaledToFit().frame(height: 34).floating(amplitude: 3, duration: 4, delay: 0.5)
-            Spacer().frame(width: 36)
+            Spacer().frame(width: 14)
+            Button { bgm.toggle() } label: {
+                Image(systemName: bgm.isOn ? "music.note" : "speaker.slash")
+                    .font(.system(size: 15, weight: .bold))
+                    .foregroundStyle(bgm.isOn ? .white : Palette.subText)
+                    .frame(width: 36, height: 36)
+                    .background(Circle().fill(bgm.isOn ? Palette.green : Palette.paper))
+                    .overlay(Circle().stroke(Palette.ink, lineWidth: 1.4))
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(bgm.isOn ? "BGMを止める" : "BGMを流す")
+            Spacer().frame(width: 10)
             Button { path.append(Route.settings) } label: {
                 Image("gear_button").resizable().scaledToFit().frame(height: 42).floating(amplitude: 1.5, duration: 3, rotate: 6)
             }

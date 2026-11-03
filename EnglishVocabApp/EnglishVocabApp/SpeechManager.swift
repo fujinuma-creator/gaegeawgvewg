@@ -85,7 +85,7 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
 /// English text-to-speech. The accent and base speed come from `AppSettings`;
 /// a second consecutive tap on the same text plays it at quarter speed, the
 /// tap after that is back to normal.
-final class SpeechManager {
+final class SpeechManager: NSObject, AVSpeechSynthesizerDelegate {
     static let shared = SpeechManager()
     private let synthesizer = AVSpeechSynthesizer()
     private var lastSpokenText: String?
@@ -95,7 +95,9 @@ final class SpeechManager {
     /// Second consecutive tap on the same text → 0.25×.
     private let repeatFactor: Float = 0.25
 
-    private init() {
+    private override init() {
+        super.init()
+        synthesizer.delegate = self
         let session = AVAudioSession.sharedInstance()
         try? session.setCategory(.playback, mode: .spokenAudio, options: [.mixWithOthers, .duckOthers])
         try? session.setActive(true, options: .notifyOthersOnDeactivation)
@@ -119,12 +121,24 @@ final class SpeechManager {
         u.rate = rate
         u.preUtteranceDelay = 0
         u.postUtteranceDelay = 0
+        BGMManager.shared.duck(true)
         synthesizer.speak(u)
     }
 
     func stop() {
         if synthesizer.isSpeaking { synthesizer.stopSpeaking(at: .immediate) }
         lastSpokenText = nil
+        BGMManager.shared.duck(false)
+    }
+
+    // MARK: AVSpeechSynthesizerDelegate — bring the music back up
+
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        BGMManager.shared.duck(false)
+    }
+
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        BGMManager.shared.duck(false)
     }
 
     /// e.g. "Daniel（拡張）" for the settings screen, so it is obvious when the

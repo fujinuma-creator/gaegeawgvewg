@@ -19,8 +19,12 @@ struct EnglishVocabAppApp: App {
         .onChange(of: scenePhase) { _, phase in
             // 本日の学習時間: pause the clock while the app is in the background.
             switch phase {
-            case .active: store.resumeStudy()
-            case .inactive, .background: store.pauseStudy()
+            case .active:
+                store.resumeStudy()
+                BGMManager.shared.resume()
+            case .inactive, .background:
+                store.pauseStudy()
+                BGMManager.shared.pause()
             @unknown default: break
             }
         }

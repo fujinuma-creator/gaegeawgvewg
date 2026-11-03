@@ -31,6 +31,8 @@
 		210000000000000000000015 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000015 /* ConversationView.swift */; };
 		210000000000000000000016 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000016 /* SettingsView.swift */; };
 		210000000000000000000017 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000017 /* PaywallView.swift */; };
+		210000000000000000000018 /* BGMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110000000000000000000018 /* BGMManager.swift */; };
+		2000000000000000000000AB /* bgm_rainy_cafe.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000AB /* bgm_rainy_cafe.m4a */; };
 		2000000000000000000000A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000A8 /* Assets.xcassets */; };
 		2000000000000000000000A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1000000000000000000000A9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		110000000000000000000015 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
 		110000000000000000000016 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		110000000000000000000017 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		110000000000000000000018 /* BGMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGMManager.swift; sourceTree = "<group>"; };
+		1000000000000000000000AB /* bgm_rainy_cafe.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bgm_rainy_cafe.m4a; sourceTree = "<group>"; };
 		1000000000000000000000A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1000000000000000000000A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1000000000000000000000C9 /* EnglishVocab.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = EnglishVocab.storekit; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				110000000000000000000015 /* ConversationView.swift */,
 				110000000000000000000016 /* SettingsView.swift */,
 				110000000000000000000017 /* PaywallView.swift */,
+				110000000000000000000018 /* BGMManager.swift */,
+				1000000000000000000000AB /* bgm_rainy_cafe.m4a */,
 				1000000000000000000000A8 /* Assets.xcassets */,
 				0000000000000000000000C3 /* Preview Content */,
 			);
@@ -196,6 +202,7 @@
 			files = (
 				2000000000000000000000A9 /* Preview Assets.xcassets in Resources */,
 				2000000000000000000000A8 /* Assets.xcassets in Resources */,
+				2000000000000000000000AB /* bgm_rainy_cafe.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +237,7 @@
 				210000000000000000000015 /* ConversationView.swift in Sources */,
 				210000000000000000000016 /* SettingsView.swift in Sources */,
 				210000000000000000000017 /* PaywallView.swift in Sources */,
+				210000000000000000000018 /* BGMManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
