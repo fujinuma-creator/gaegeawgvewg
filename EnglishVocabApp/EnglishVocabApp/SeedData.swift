@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32030,6 +32030,115 @@ enum SeedData {
                     ("I've been feeling a bit run down lately — I need a holiday.", "最近ちょっと疲れがたまってて。休みが必要だ。"),
                     ("They live in a rather run-down part of town.", "彼らは町のちょっと荒れた地域に住んでるんだ。")
                  ], ipa: "/rʌn daʊn/"),
+        ]
+    }
+    private static var britishColloquial129: [Word] {
+        [
+            make("hold the fort", "to look after a place or deal with things while someone is away",
+                 "（留守中に）代わりを務める・留守を預かる",
+                 useCases: ["少し席を外す間に代わりを頼むとき", "同僚の不在中に仕事を引き受けるとき"],
+                 examples: [
+                    ("Can you hold the fort while I pop out for lunch?", "ランチに出てる間、ちょっと代わりに見ててくれる？"),
+                    ("Don't worry, I'll hold the fort until you're back.", "心配しないで。戻るまで私が留守を預かるから。")
+                 ], ipa: "/həʊld ðə fɔːt/"),
+            make("wing it", "to do something without preparing or planning it first",
+                 "ぶっつけ本番でやる・その場でなんとかする",
+                 useCases: ["準備なしでスピーチや発表をするとき", "計画を立てずに行動するとき"],
+                 examples: [
+                    ("I didn't have time to prepare, so I'll just have to wing it.", "準備する時間がなかったから、ぶっつけ本番でいくしかないな。"),
+                    ("We didn't book anything — we just winged it.", "何も予約しないで、行き当たりばったりで行ったんだ。")
+                 ], ipa: "/wɪŋ ɪt/"),
+            make("in hindsight", "thinking about something after it has happened, with knowledge you did not have at the time",
+                 "今思えば・後から考えると",
+                 useCases: ["過去の判断を振り返るとき", "反省や後悔を話すとき"],
+                 examples: [
+                    ("In hindsight, I should've taken the job.", "今思えば、あの仕事を受けるべきだったな。"),
+                    ("It seems obvious in hindsight, doesn't it?", "後から考えると当たり前に思えるよね。")
+                 ], ipa: "/ɪn ˈhaɪndsaɪt/"),
+            make("spread the word", "to tell lots of people about something",
+                 "（みんなに）広める・周りに伝える",
+                 useCases: ["イベントや情報を周りに知らせてほしいとき", "お店やサービスを宣伝してもらうとき"],
+                 examples: [
+                    ("We're having a party on Saturday — spread the word!", "土曜日にパーティーやるから、みんなに伝えといて！"),
+                    ("If you liked the café, please spread the word.", "このカフェが気に入ったら、ぜひ周りに広めてね。")
+                 ], ipa: "/spred ðə wɜːd/"),
+            make("up for grabs", "available for anyone who wants to have or win it",
+                 "誰でも手に入れられる・早い者勝ちで",
+                 useCases: ["余った物や席を誰かにあげるとき", "賞品やポジションが空いているとき"],
+                 examples: [
+                    ("There's some cake left — it's up for grabs.", "ケーキ少し余ってるよ。早い者勝ちね。"),
+                    ("The manager's job is up for grabs now that she's leaving.", "彼女が辞めるから、マネージャーの席が空くんだ。")
+                 ], ipa: "/ʌp fə ɡræbz/"),
+            make("pitch in", "to join in and help with a job or activity, or contribute money",
+                 "（みんなで）手伝う・協力する・お金を出し合う",
+                 useCases: ["片付けや作業をみんなで手伝うとき", "プレゼント代を出し合うとき"],
+                 examples: [
+                    ("If everyone pitches in, we'll be done in an hour.", "みんなで手伝えば、1時間で終わるよ。"),
+                    ("We all pitched in for her leaving present.", "彼女の送別プレゼントにみんなでお金を出し合ったんだ。")
+                 ], ipa: "/pɪtʃ ɪn/"),
+            make("cut someone some slack", "to be less critical of someone or treat them less strictly",
+                 "（人に）大目に見る・甘く見てあげる",
+                 useCases: ["相手のミスをかばうとき", "大変な状況の人に寛容になってほしいとき"],
+                 examples: [
+                    ("Cut him some slack — it's only his first week.", "大目に見てあげなよ。まだ入って1週目なんだから。"),
+                    ("I'm exhausted, so cut me some slack today.", "疲れ切ってるから、今日は勘弁してよ。")
+                 ], ipa: "/kʌt ˈsʌmwʌn səm slæk/"),
+            make("be in good hands", "to be looked after or dealt with by someone who is capable and can be trusted",
+                 "安心して任せられる・信頼できる人に任されている",
+                 useCases: ["相手を安心させるとき", "誰かに仕事や人を任せるとき"],
+                 examples: [
+                    ("Don't worry — your dog's in good hands.", "心配しないで。ワンちゃんはちゃんと面倒見るから。"),
+                    ("The project's in good hands with Sarah.", "そのプロジェクトはサラに任せておけば安心だよ。")
+                 ], ipa: "/biː ɪn ɡʊd hændz/"),
+            make("let it slide", "to allow something wrong or annoying to happen without doing anything about it",
+                 "見逃す・大目に見る・放っておく",
+                 useCases: ["小さなミスを許すとき", "注意すべきことを放置してしまったとき"],
+                 examples: [
+                    ("I'll let it slide this time, but don't be late again.", "今回は見逃すけど、もう遅刻しないでね。"),
+                    ("I've been letting my emails slide this week.", "今週はメールをほったらかしにしちゃってる。")
+                 ], ipa: "/let ɪt slaɪd/"),
+            make("be on a roll", "to be having a period of success where good things keep happening",
+                 "絶好調だ・波に乗っている",
+                 useCases: ["連続でうまくいっているとき", "相手の好調ぶりを褒めるとき"],
+                 examples: [
+                    ("We've won five games in a row — we're on a roll!", "5連勝だ。波に乗ってるね！"),
+                    ("You're on a roll today — three sales already!", "今日は絶好調だね。もう3件も売れてる！")
+                 ], ipa: "/biː ɒn ə rəʊl/"),
+            make("get off on the wrong foot", "to start a relationship or activity badly",
+                 "出だしでつまずく・第一印象が悪いスタートを切る",
+                 useCases: ["初対面で印象が悪くなったとき", "関係を仕切り直したいとき"],
+                 examples: [
+                    ("I think we got off on the wrong foot — can we start again?", "最初の印象が良くなかったと思うんだ。やり直してもいい？"),
+                    ("We got off on the wrong foot, but we're good friends now.", "出だしはぎくしゃくしたけど、今は仲良しだよ。")
+                 ], ipa: "/ɡet ɒf ɒn ðə rɒŋ fʊt/"),
+            make("learn the hard way", "to learn something through unpleasant experience rather than being told",
+                 "痛い目にあって学ぶ・身をもって知る",
+                 useCases: ["失敗から教訓を得た話をするとき", "相手に同じ失敗をしないよう忠告するとき"],
+                 examples: [
+                    ("Always back up your files — I learnt that the hard way.", "ファイルは必ずバックアップして。痛い目にあって学んだんだ。"),
+                    ("Some people have to learn the hard way.", "身をもって知らないとわからない人もいるよね。")
+                 ], ipa: "/lɜːn ðə hɑːd weɪ/"),
+            make("run out of steam", "to lose energy or enthusiasm and stop or slow down",
+                 "息切れする・勢いがなくなる・ガス欠になる",
+                 useCases: ["疲れてやる気がなくなったとき", "計画や議論が途中で失速したとき"],
+                 examples: [
+                    ("I ran out of steam by about four o'clock.", "4時ごろにはもうガス欠だったよ。"),
+                    ("The project seems to have run out of steam.", "そのプロジェクト、勢いがなくなっちゃったみたいだね。")
+                 ], ipa: "/rʌn aʊt əv stiːm/"),
+            make("a head start", "an advantage that helps you be more successful than others, especially by starting earlier",
+                 "（早めのスタートによる）有利なスタート・先手",
+                 useCases: ["早めに始めて有利になるとき", "準備しておくことを勧めるとき"],
+                 examples: [
+                    ("Let's leave early to get a head start on the traffic.", "渋滞を避けるために早めに出発しよう。"),
+                    ("Reading the notes tonight will give you a head start.", "今夜メモを読んでおけば、一歩リードできるよ。")
+                 ], ipa: "/ə hed stɑːt/"),
+            make("think on your feet", "to think and react quickly and effectively without preparation",
+                 "臨機応変に考える・とっさに対応する",
+                 useCases: ["予想外の質問や状況に対応するとき", "仕事で求められる能力を話すとき"],
+                 examples: [
+                    ("In this job, you really have to think on your feet.", "この仕事では、本当に臨機応変に対応しなきゃいけないんだ。"),
+                    ("She's great at thinking on her feet in interviews.", "彼女は面接でとっさに答えるのがすごく上手なんだ。")
+                 ], ipa: "/θɪŋk ɒn jɔː fiːt/"),
         ]
     }
     private static var britishColloquial127: [Word] {
