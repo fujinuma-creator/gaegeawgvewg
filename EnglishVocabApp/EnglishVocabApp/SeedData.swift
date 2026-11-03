@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32793,6 +32793,115 @@ enum SeedData {
                     ("The food was great, and the view was the icing on the cake.", "料理も最高だったし、景色がさらに花を添えてくれた。"),
                     ("Getting a bonus as well was the icing on the cake.", "ボーナスまでもらえたのは嬉しいおまけだったよ。")
                  ], ipa: "/ði ˈaɪsɪŋ ɒn ðə keɪk/"),
+        ]
+    }
+    private static var britishColloquial140: [Word] {
+        [
+            make("to say the least", "used to say that something is even more true or extreme than you are stating",
+                 "控えめに言っても・少なくとも",
+                 useCases: ["状況を控えめに表現しつつ強調するとき", "驚きや不満をやんわり伝えるとき"],
+                 examples: [
+                    ("The service was slow, to say the least.", "サービスは控えめに言っても遅かったね。"),
+                    ("I was surprised, to say the least.", "控えめに言っても、かなり驚いたよ。")
+                 ], ipa: "/tə seɪ ðə liːst/"),
+            make("chit-chat", "light, informal conversation about unimportant things",
+                 "おしゃべり・雑談",
+                 useCases: ["軽い雑談について話すとき", "本題に入る前の会話を表すとき"],
+                 examples: [
+                    ("Enough chit-chat — let's get started.", "おしゃべりはこのくらいにして、始めようか。"),
+                    ("We had a bit of chit-chat over coffee.", "コーヒーを飲みながらちょっと雑談したよ。")
+                 ], ipa: "/ˈtʃɪt tʃæt/"),
+            make("I'll give you that", "used to admit that what someone has said is true, even if you disagree with the rest",
+                 "それは認めるよ・確かにそうだね",
+                 useCases: ["議論で相手の一部の主張を認めるとき", "相手の良い点を渋々認めるとき"],
+                 examples: [
+                    ("It's expensive, but it's well made — I'll give you that.", "高いけど、作りはいいね。それは認めるよ。"),
+                    ("You were right about the weather, I'll give you that.", "天気のことは君が正しかったね、それは認める。")
+                 ], ipa: "/aɪl ɡɪv juː ðæt/"),
+            make("I wouldn't mind", "used to say politely that you would like something",
+                 "〜してもいいな・〜があると嬉しい",
+                 useCases: ["控えめに希望を伝えるとき", "誘いや申し出に軽く乗るとき"],
+                 examples: [
+                    ("I wouldn't mind a cup of tea, actually.", "実は、紅茶を一杯もらえると嬉しいな。"),
+                    ("I wouldn't mind seeing that film.", "その映画、観てみたいかも。")
+                 ], ipa: "/aɪ ˈwʊdnt maɪnd/"),
+            make("no pressure", "used to tell someone they do not have to do something or hurry",
+                 "無理しないで・プレッシャーに感じないで",
+                 useCases: ["相手に気を使わせたくないとき", "誘いを断ってもいいと伝えるとき"],
+                 examples: [
+                    ("Come if you can — no pressure.", "来られたら来てね、無理しなくていいから。"),
+                    ("No pressure, but we'd love to hear your idea.", "プレッシャーに思わなくていいけど、君のアイデアをぜひ聞きたいな。")
+                 ], ipa: "/nəʊ ˈpreʃə/"),
+            make("drag on", "to continue for longer than necessary or wanted",
+                 "だらだら長引く",
+                 useCases: ["会議や手続きが長引くとき", "退屈な状況に不満を言うとき"],
+                 examples: [
+                    ("The meeting dragged on for over three hours.", "会議が3時間以上もだらだら続いたよ。"),
+                    ("Let's not let this drag on any longer.", "これ以上長引かせないようにしよう。")
+                 ], ipa: "/dræɡ ɒn/"),
+            make("pull off", "to succeed in doing something difficult or unexpected",
+                 "（難しいことを）やってのける・成功させる",
+                 useCases: ["困難なことを成功させたとき", "服や髪型が似合うと言うとき"],
+                 examples: [
+                    ("I can't believe we pulled it off!", "まさか本当にやり遂げるなんて！"),
+                    ("Not everyone can pull off that hat, but you can.", "あの帽子は誰でも似合うわけじゃないけど、君は似合ってるよ。")
+                 ], ipa: "/pʊl ɒf/"),
+            make("on paper", "in theory, or according to how things seem, though not necessarily in reality",
+                 "理論上は・書類上は・表向きは",
+                 useCases: ["計画と現実の違いを言うとき", "条件だけ見れば良いと言うとき"],
+                 examples: [
+                    ("On paper, it looks like a great deal.", "書類上は、すごくお得な話に見えるね。"),
+                    ("The plan works on paper, but will it work in real life?", "理論上はうまくいくけど、実際はどうかな？")
+                 ], ipa: "/ɒn ˈpeɪpə/"),
+            make("in the bag", "certain to be won or achieved",
+                 "確実だ・もらったも同然",
+                 useCases: ["成功がほぼ確実なとき", "油断しないよう注意するとき"],
+                 examples: [
+                    ("Relax, the job's in the bag.", "落ち着いて、その仕事はもう決まったも同然だよ。"),
+                    ("Don't think it's in the bag yet.", "まだ確実だと思わないほうがいいよ。")
+                 ], ipa: "/ɪn ðə bæɡ/"),
+            make("take a step back", "to stop for a moment to think about a situation calmly and more objectively",
+                 "一歩引いて考える・冷静になる",
+                 useCases: ["議論が白熱したとき", "状況を客観的に見直すとき"],
+                 examples: [
+                    ("Let's take a step back and look at the bigger picture.", "一歩引いて、全体像を見てみよう。"),
+                    ("I needed to take a step back and calm down.", "少し距離を置いて落ち着く必要があったんだ。")
+                 ], ipa: "/teɪk ə step bæk/"),
+            make("jot down", "to write something quickly, usually as a short note",
+                 "さっと書き留める・メモする",
+                 useCases: ["電話番号や要点をメモするとき", "忘れないように書き留めるとき"],
+                 examples: [
+                    ("Let me jot down your number.", "電話番号をメモさせて。"),
+                    ("I jotted down a few ideas on the train.", "電車でいくつかアイデアを書き留めたんだ。")
+                 ], ipa: "/dʒɒt daʊn/"),
+            make("narrow down", "to reduce the number of possibilities or choices",
+                 "（選択肢を）絞り込む",
+                 useCases: ["候補を絞るとき", "買い物や店選びで迷っているとき"],
+                 examples: [
+                    ("I've narrowed it down to two hotels.", "ホテルを2つまで絞り込んだよ。"),
+                    ("Can you narrow down when it happened?", "それがいつ起きたか、もう少し絞れる？")
+                 ], ipa: "/ˈnærəʊ daʊn/"),
+            make("go-to", "the person, place or thing you always choose or rely on first",
+                 "定番の・頼りになる・行きつけの",
+                 useCases: ["お気に入りの店や料理を紹介するとき", "頼れる人について話すとき"],
+                 examples: [
+                    ("This is my go-to café for breakfast.", "ここは朝ごはんの行きつけのカフェなんだ。"),
+                    ("She's our go-to person for tech problems.", "彼女はIT関係で困ったときの頼れる人だよ。")
+                 ], ipa: "/ˈɡəʊ tuː/"),
+            make("eye-opener", "an experience or fact that surprises you and teaches you something new",
+                 "目から鱗の経験・新たな気づき",
+                 useCases: ["新しい発見があったとき", "旅行や経験の感想を言うとき"],
+                 examples: [
+                    ("Living abroad was a real eye-opener.", "海外で暮らしたのは本当に目から鱗の経験だった。"),
+                    ("That documentary was a bit of an eye-opener.", "あのドキュメンタリーはちょっとした気づきになったよ。")
+                 ], ipa: "/ˈaɪ ˌəʊpənə/"),
+            make("taken aback", "very surprised or shocked, so that you do not know how to react",
+                 "面食らう・不意を突かれて驚く",
+                 useCases: ["予想外の言動に驚いたとき", "返答に困ったときの気持ちを言うとき"],
+                 examples: [
+                    ("I was a bit taken aback by his reply.", "彼の返事にはちょっと面食らったよ。"),
+                    ("She seemed taken aback when I asked her.", "聞いたら彼女、驚いたみたいだった。")
+                 ], ipa: "/ˈteɪkən əˈbæk/"),
         ]
     }
     private static var britishColloquial135: [Word] {
