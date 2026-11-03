@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31698,6 +31698,115 @@ enum SeedData {
                     ("There's no milk, so we'll have to go without.", "牛乳ないから、なしで我慢するしかないね。"),
                     ("I can't go without my morning coffee.", "朝のコーヒーなしじゃやっていけない。")
                  ], ipa: "/ɡəʊ wɪˈðaʊt/"),
+        ]
+    }
+    private static var britishColloquial125: [Word] {
+        [
+            make("by and large", "generally; when everything is considered",
+                 "概して・全体的に見て",
+                 useCases: ["全体の感想を言うとき", "細かい不満はあるが総じて良いとき"],
+                 examples: [
+                    ("By and large, the holiday was brilliant.", "全体的に見れば、旅行は最高だったよ。"),
+                    ("The staff are friendly, by and large.", "スタッフは概して感じがいいよ。")
+                 ], ipa: "/baɪ ən lɑːdʒ/"),
+            make("whereabouts", "used informally to ask roughly where something or someone is",
+                 "どのあたり・だいたいどこ",
+                 useCases: ["住んでいる場所を聞くとき", "おおよその場所を尋ねるとき"],
+                 examples: [
+                    ("Whereabouts do you live in London?", "ロンドンのどのあたりに住んでるの？"),
+                    ("Whereabouts did you leave your keys?", "鍵、だいたいどこに置いたの？")
+                 ], ipa: "/ˌweərəˈbaʊts/"),
+            make("rub someone up the wrong way", "to annoy someone, often without meaning to",
+                 "（人の）神経を逆なでする・カンに障る",
+                 useCases: ["相性が合わない人の話", "言い方が気に障ったとき"],
+                 examples: [
+                    ("He's nice enough, but he rubs me up the wrong way.", "悪い人じゃないんだけど、なんかカンに障るんだよね。"),
+                    ("Try not to rub her up the wrong way before the meeting.", "会議の前に彼女の機嫌を損ねないようにね。")
+                 ], ipa: "/rʌb ˈsʌmwʌn ʌp ðə rɒŋ weɪ/"),
+            make("not a patch on", "much less good than someone or something else",
+                 "〜とは比べものにならない・足元にも及ばない",
+                 useCases: ["前作や本物と比べるとき", "お店や料理の比較"],
+                 examples: [
+                    ("The sequel's not a patch on the original.", "続編は一作目の足元にも及ばないね。"),
+                    ("This pizza's alright, but it's not a patch on my mum's.", "このピザも悪くないけど、母さんのには敵わないな。")
+                 ], ipa: "/nɒt ə pætʃ ɒn/"),
+            make("jog someone's memory", "to help someone remember something",
+                 "（人の）記憶を呼び起こす・思い出させる",
+                 useCases: ["思い出せないとき", "ヒントを出すとき"],
+                 examples: [
+                    ("Remind me of his name — just to jog my memory.", "彼の名前、ヒントちょうだい。思い出したいから。"),
+                    ("Maybe this photo will jog your memory.", "この写真を見たら思い出すかもよ。")
+                 ], ipa: "/dʒɒɡ ˈsʌmwʌnz ˈmeməri/"),
+            make("learn the ropes", "to learn how to do a job or activity, especially when you are new",
+                 "コツを覚える・仕事の要領をつかむ",
+                 useCases: ["新しい職場で", "新人の話をするとき"],
+                 examples: [
+                    ("I'm still learning the ropes at the new job.", "新しい職場で、まだ仕事を覚えてる最中なんだ。"),
+                    ("Tom will show you the ropes on your first day.", "初日はトムが色々教えてくれるよ。")
+                 ], ipa: "/lɜːn ðə rəʊps/"),
+            make("bite the bullet", "to make yourself do something unpleasant that you have been avoiding",
+                 "覚悟を決めて（嫌なことを）やる",
+                 useCases: ["先延ばしにしていたことをやるとき", "大きな決断をするとき"],
+                 examples: [
+                    ("I finally bit the bullet and booked the dentist.", "ついに腹をくくって歯医者を予約したよ。"),
+                    ("Just bite the bullet and tell him the truth.", "覚悟を決めて、彼に本当のことを言いなよ。")
+                 ], ipa: "/baɪt ðə ˈbʊlɪt/"),
+            make("out of sight, out of mind", "used to say that people forget about things they cannot see",
+                 "去る者は日々に疎し・見えないと忘れる",
+                 useCases: ["物をしまうと忘れるとき", "離れた人との関係の話"],
+                 examples: [
+                    ("I put the bills in a drawer — out of sight, out of mind.", "請求書を引き出しにしまったら、すっかり忘れてた。"),
+                    ("Since he moved abroad, it's been out of sight, out of mind.", "彼が海外に行ってから、すっかり疎遠になっちゃった。")
+                 ], ipa: "/aʊt əv saɪt aʊt əv maɪnd/"),
+            make("can't get a word in edgeways", "to be unable to say anything because someone else is talking so much",
+                 "（相手が喋りすぎて）口を挟む隙もない",
+                 useCases: ["おしゃべりな人の話", "会話に入れなかったとき"],
+                 examples: [
+                    ("My aunt talks so much I can't get a word in edgeways.", "叔母さんがずっと喋ってて、口を挟む隙もないんだ。"),
+                    ("Let me speak — I can't get a word in edgeways!", "ちょっと話させてよ。全然口を挟めないじゃん！")
+                 ], ipa: "/kɑːnt ɡet ə wɜːd ɪn ˈedʒweɪz/"),
+            make("pick someone's brains", "to ask someone who knows a lot about a subject for advice or information",
+                 "（詳しい人に）知恵を借りる・意見を聞く",
+                 useCases: ["詳しい人に相談するとき", "アドバイスを求めるとき"],
+                 examples: [
+                    ("Can I pick your brains about buying a laptop?", "ノートパソコン買うことで、ちょっと知恵を貸してくれない？"),
+                    ("I picked his brains over coffee — really helpful.", "コーヒー飲みながら彼に色々聞いたんだ。すごく参考になった。")
+                 ], ipa: "/pɪk ˈsʌmwʌnz breɪnz/"),
+            make("talk someone out of", "to persuade someone not to do something",
+                 "（人を）説得して〜をやめさせる",
+                 useCases: ["無謀な計画を止めるとき", "考え直させるとき"],
+                 examples: [
+                    ("I managed to talk him out of quitting his job.", "なんとか彼に仕事を辞めるのを思いとどまらせたよ。"),
+                    ("Don't try to talk me out of it — I've decided.", "止めようとしないで。もう決めたんだから。")
+                 ], ipa: "/tɔːk ˈsʌmwʌn aʊt əv/"),
+            make("that's not on", "used to say that something is unfair or unacceptable",
+                 "それはないよ・それはダメでしょ",
+                 useCases: ["不公平な扱いに抗議するとき", "マナー違反を指摘するとき"],
+                 examples: [
+                    ("He just took your seat? That's not on.", "あいつ君の席取ったの？それはないよ。"),
+                    ("Cancelling at the last minute again — that's really not on.", "またドタキャン？それは本当にダメでしょ。")
+                 ], ipa: "/ðæts nɒt ɒn/"),
+            make("fair and square", "honestly and according to the rules",
+                 "正々堂々と・文句なしに",
+                 useCases: ["勝負の結果について", "ズルなしだと強調するとき"],
+                 examples: [
+                    ("You won fair and square — well done.", "文句なしで君の勝ちだよ。おめでとう。"),
+                    ("We beat them fair and square, no excuses.", "正々堂々勝ったんだから、言い訳なしだよ。")
+                 ], ipa: "/feər ən skweə/"),
+            make("put your feet up", "to sit down and relax, especially after working",
+                 "くつろぐ・ひと休みする",
+                 useCases: ["疲れた人をねぎらうとき", "休日の過ごし方の話"],
+                 examples: [
+                    ("You've been on your feet all day — put your feet up.", "一日中立ちっぱなしだったでしょ。ゆっくりしてて。"),
+                    ("I'm going to put my feet up with a cuppa tonight.", "今夜は紅茶でも飲んでのんびりするよ。")
+                 ], ipa: "/pʊt jə fiːt ʌp/"),
+            make("know someone by sight", "to recognise someone without knowing them personally",
+                 "顔だけは知っている",
+                 useCases: ["近所の人や同僚の話", "名前は知らないけど見たことがあるとき"],
+                 examples: [
+                    ("I know her by sight, but we've never actually spoken.", "顔は知ってるけど、実際話したことはないんだ。"),
+                    ("He lives on our street — I only know him by sight.", "うちの通りに住んでる人だけど、顔を知ってるだけだよ。")
+                 ], ipa: "/nəʊ ˈsʌmwʌn baɪ saɪt/"),
         ]
     }
     private static var britishColloquial123: [Word] {
