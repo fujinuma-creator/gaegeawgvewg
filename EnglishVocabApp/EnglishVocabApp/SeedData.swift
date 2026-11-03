@@ -31656,13 +31656,13 @@ enum SeedData {
                     ("I spent the morning running errands.", "午前中は用事を済ませて回ってた。"),
                     ("I've got a few errands to run, but I'm free after two.", "ちょっと用事があるけど、2時以降は空いてるよ。")
                  ], ipa: "/rʌn ˈerəndz/"),
-            make("do the washing-up", "to wash the plates, pans, cups, etc. after a meal",
-                 "皿洗いをする",
-                 useCases: ["家事の分担", "食後に手伝いを申し出るとき"],
+            make("free time", "time when you are not working or busy and can do what you like",
+                 "自由な時間・暇な時間",
+                 useCases: ["趣味について話すとき", "相手の予定を聞くとき"],
                  examples: [
-                    ("You cooked, so I'll do the washing-up.", "作ってくれたから、皿洗いは私がやるよ。"),
-                    ("Can you leave the washing-up? I'll do it in the morning.", "洗い物はそのままでいいよ。朝やるから。")
-                 ], ipa: "/duː ðə ˌwɒʃɪŋ ˈʌp/"),
+                    ("What do you like doing in your free time?", "暇な時は何をするのが好き？"),
+                    ("I don't get much free time since the baby arrived.", "赤ちゃんが生まれてから、自由な時間があまりないんだ。")
+                 ], ipa: "/friː taɪm/"),
             make("a day out", "a trip somewhere for a day, for enjoyment",
                  "日帰りのお出かけ",
                  useCases: ["週末や休日の計画", "家族や友人との外出"],
