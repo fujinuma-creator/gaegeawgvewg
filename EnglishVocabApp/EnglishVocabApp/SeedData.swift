@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33011,6 +33011,115 @@ enum SeedData {
                     ("I got loads of freebies at the conference.", "カンファレンスでタダのものをたくさんもらったよ。"),
                     ("The dessert was a freebie from the chef.", "デザートはシェフからのサービスだったんだ。")
                  ], ipa: "/ˈfriːbi/"),
+        ]
+    }
+    private static var britishColloquial142: [Word] {
+        [
+            make("forget it", "used to tell someone that something is not important, or that you no longer want to discuss it",
+                 "もういいよ・気にしないで",
+                 useCases: ["説明をあきらめて話を打ち切るとき", "お礼やお詫びに「気にしないで」と返すとき"],
+                 examples: [
+                    ("Oh, forget it — it doesn't matter now.", "あ、もういいよ。今さらどうでもいいし。"),
+                    ("\"Sorry about the mess.\" \"Forget it, it's fine.\"", "「散らかしてごめん」「気にしないで、大丈夫だよ」")
+                 ], ipa: "/fəˈɡet ɪt/"),
+            make("same to you", "used to wish someone the same thing they have just wished you",
+                 "あなたもね・そちらこそ",
+                 useCases: ["「良い週末を」などに返すとき", "挨拶やお祝いの言葉を返すとき"],
+                 examples: [
+                    ("\"Have a lovely weekend!\" \"Thanks, same to you!\"", "「良い週末を！」「ありがとう、あなたもね！」"),
+                    ("\"Happy New Year!\" \"Same to you!\"", "「明けましておめでとう！」「おめでとう！」")
+                 ], ipa: "/seɪm tə juː/"),
+            make("let me check", "used to say you will look at something to find out or confirm information",
+                 "ちょっと確認するね・調べてみるね",
+                 useCases: ["予定や情報をすぐ答えられないとき", "返事の前に確認したいとき"],
+                 examples: [
+                    ("Let me check my diary and get back to you.", "予定を確認してから連絡するね。"),
+                    ("Hang on, let me check if it's still open.", "ちょっと待って、まだ開いてるか確認するね。")
+                 ], ipa: "/let miː tʃek/"),
+            make("snack", "a small amount of food eaten between meals; to eat a small amount between meals",
+                 "おやつ・軽食／間食する",
+                 useCases: ["小腹が空いたときに話すとき", "間食の習慣について話すとき"],
+                 examples: [
+                    ("I'll just grab a quick snack before we go.", "出かける前にちょっと軽く何か食べるね。"),
+                    ("I try not to snack after dinner.", "夕食後は間食しないようにしてるんだ。")
+                 ], ipa: "/snæk/"),
+            make("messy", "untidy or dirty; also used about a situation that is complicated and unpleasant",
+                 "散らかった・汚い／（状況が）ややこしい",
+                 useCases: ["部屋や机が散らかっていると言うとき", "人間関係や状況がこじれていると言うとき"],
+                 examples: [
+                    ("Sorry, my flat's a bit messy at the moment.", "ごめん、今ちょっと部屋が散らかってて。"),
+                    ("Their break-up was really messy.", "あの二人の別れ方、かなりこじれてたよ。")
+                 ], ipa: "/ˈmesi/"),
+            make("scruffy", "looking untidy, dirty or old and worn",
+                 "だらしない・みすぼらしい・ヨレヨレの",
+                 useCases: ["服装や見た目がだらしないと言うとき", "古びた場所や物について話すとき"],
+                 examples: [
+                    ("I look a bit scruffy — I'd better change.", "ちょっとだらしない格好だから、着替えたほうがいいな。"),
+                    ("It's a scruffy little café, but the food's great.", "ボロい小さなカフェだけど、料理はすごく美味しいよ。")
+                 ], ipa: "/ˈskrʌfi/"),
+            make("spotless", "completely clean",
+                 "ピカピカの・汚れひとつない",
+                 useCases: ["部屋や場所がとてもきれいだと言うとき", "掃除の後の状態を褒めるとき"],
+                 examples: [
+                    ("The hotel room was spotless.", "ホテルの部屋、ピカピカだったよ。"),
+                    ("Wow, you've got the kitchen spotless!", "すごい、キッチンがピカピカになってる！")
+                 ], ipa: "/ˈspɒtləs/"),
+            make("sweaty", "covered in sweat, or making you sweat",
+                 "汗だくの・汗ばむ",
+                 useCases: ["運動や暑さで汗をかいたと言うとき", "蒸し暑い場所について話すとき"],
+                 examples: [
+                    ("I'm all sweaty — I need a shower.", "汗だくだから、シャワー浴びたい。"),
+                    ("The Tube gets really hot and sweaty in summer.", "夏の地下鉄はすごく暑くて汗ばむんだよね。")
+                 ], ipa: "/ˈsweti/"),
+            make("brighten up", "(of the weather) to become sunnier; (of a person or place) to become more cheerful",
+                 "（天気が）晴れてくる／明るくなる・元気になる",
+                 useCases: ["天気が回復しそうだと言うとき", "人や部屋の雰囲気が明るくなったと言うとき"],
+                 examples: [
+                    ("It's supposed to brighten up this afternoon.", "午後には晴れてくるらしいよ。"),
+                    ("Some flowers would really brighten up the room.", "花があったら部屋がぐっと明るくなるね。")
+                 ], ipa: "/ˈbraɪtn ʌp/"),
+            make("overpriced", "costing more than it is worth",
+                 "高すぎる・値段に見合わない",
+                 useCases: ["値段が割高だと文句を言うとき", "観光地の店について話すとき"],
+                 examples: [
+                    ("The drinks there are seriously overpriced.", "あそこの飲み物、本当に高すぎるよ。"),
+                    ("It's nice, but a bit overpriced for what it is.", "いいんだけど、中身の割にはちょっと高いかな。")
+                 ], ipa: "/ˌəʊvəˈpraɪst/"),
+            make("stale", "(of bread, cake, etc.) no longer fresh; (of air) not fresh; (of ideas) boring and no longer new",
+                 "（パンなどが）古くなった・（空気が）よどんだ・マンネリの",
+                 useCases: ["パンやお菓子が古くなったと言うとき", "仕事や関係がマンネリだと言うとき"],
+                 examples: [
+                    ("This bread's gone a bit stale.", "このパン、ちょっと固くなっちゃってる。"),
+                    ("I've been feeling a bit stale at work lately.", "最近仕事がちょっとマンネリ気味なんだ。")
+                 ], ipa: "/steɪl/"),
+            make("greasy", "covered in or containing a lot of oil or fat",
+                 "脂っこい・油っぽい・べたべたした",
+                 useCases: ["料理が脂っこいと言うとき", "髪や手がべたついていると言うとき"],
+                 examples: [
+                    ("I fancy something greasy after a night out.", "飲んだ後って脂っこいものが食べたくなるよね。"),
+                    ("My hair gets greasy so quickly.", "髪がすぐベタついちゃうんだ。")
+                 ], ipa: "/ˈɡriːsi/"),
+            make("bland", "having very little flavour; also boring and not interesting",
+                 "味が薄い・味気ない／退屈な",
+                 useCases: ["料理の味が物足りないと言うとき", "デザインや話がつまらないと言うとき"],
+                 examples: [
+                    ("The soup's a bit bland — pass the salt?", "スープがちょっと味薄いね。塩取ってくれる？"),
+                    ("The new office is nice but a bit bland.", "新しいオフィスはきれいだけど、ちょっと味気ないね。")
+                 ], ipa: "/blænd/"),
+            make("spicy", "having a strong, hot flavour from spices",
+                 "辛い・スパイシーな",
+                 useCases: ["料理の辛さについて話すとき", "辛いものが得意かどうか聞くとき"],
+                 examples: [
+                    ("Is it very spicy? I can't handle much heat.", "すごく辛い？辛いのはあまり得意じゃなくて。"),
+                    ("I love spicy food — the hotter the better.", "辛い料理大好き。辛ければ辛いほどいいよ。")
+                 ], ipa: "/ˈspaɪsi/"),
+            make("chores", "regular jobs that need to be done at home, such as cleaning or washing",
+                 "家事・雑用",
+                 useCases: ["週末の予定を話すとき", "家事の分担について話すとき"],
+                 examples: [
+                    ("I spent all Saturday doing chores.", "土曜日はずっと家事をしてたよ。"),
+                    ("We split the chores between us.", "うちは家事を分担してるんだ。")
+                 ], ipa: "/tʃɔːz/"),
         ]
     }
     private static var britishColloquial135: [Word] {
