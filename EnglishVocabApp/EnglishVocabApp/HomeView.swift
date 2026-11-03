@@ -125,7 +125,7 @@ struct HomeView: View {
         HStack {
             HStack(spacing: 8) {
                 Image("logo_book").resizable().scaledToFit().frame(height: 30).floating(amplitude: 2, duration: 2.6, rotate: 3)
-                Text("Lingro英語")
+                Text("KOTOBA英語")
                     .font(.system(size: 30, weight: .black, design: .rounded))
                     .foregroundStyle(Palette.text)
                     .lineLimit(1)

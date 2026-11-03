@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""English grammar topics for the 文法 screen (Lingro format).
+"""English grammar topics for the 文法 screen (KOTOBA format).
 
 Each topic: id, level, title, summary, sample, detailTitle, detailSubtitle,
 sections [heading, keyword, chunks [(text, label, tint)], examples [(en, ja)]],

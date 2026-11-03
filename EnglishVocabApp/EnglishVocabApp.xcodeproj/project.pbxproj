@@ -365,7 +365,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EnglishVocabApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Lingro 英語";
+				INFOPLIST_KEY_CFBundleDisplayName = "KOTOBA英語";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -395,7 +395,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"EnglishVocabApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Lingro 英語";
+				INFOPLIST_KEY_CFBundleDisplayName = "KOTOBA英語";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

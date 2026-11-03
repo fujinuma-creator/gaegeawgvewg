@@ -58,7 +58,7 @@ final class WordStore: ObservableObject {
     }
 
     private struct BackupFile: Codable {
-        var app = "Lingro 英語"
+        var app = "KOTOBA英語"
         var version = 3
         var exportedAt = Date()
         var progress: [WordProgress]
@@ -124,7 +124,7 @@ final class WordStore: ObservableObject {
         let enc = JSONEncoder(); enc.dateEncodingStrategy = .iso8601
         guard let data = try? enc.encode(file) else { return nil }
         let f = DateFormatter(); f.dateFormat = "yyyyMMdd"
-        let url = FileManager.default.temporaryDirectory.appendingPathComponent("Lingro英語_バックアップ_\(f.string(from: Date())).json")
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("KOTOBA英語_バックアップ_\(f.string(from: Date())).json")
         try? data.write(to: url, options: .atomic)
         return url
     }
@@ -426,7 +426,7 @@ final class WordStore: ObservableObject {
             rows.append([q(w.word), q(w.ipaDisplay), q(w.japanese), q(kind)].joined(separator: ","))
         }
         let f = DateFormatter(); f.dateFormat = "yyyyMMdd"
-        let url = FileManager.default.temporaryDirectory.appendingPathComponent("Lingro英語_単語_\(f.string(from: Date())).csv")
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("KOTOBA英語_単語_\(f.string(from: Date())).csv")
         guard let data = ("\u{FEFF}" + rows.joined(separator: "\n")).data(using: .utf8) else { return nil }
         try? data.write(to: url, options: .atomic)
         return url
@@ -442,7 +442,7 @@ final class WordStore: ObservableObject {
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
             guard granted else { return }
             let content = UNMutableNotificationContent()
-            content.title = "Lingro 英語"
+            content.title = "KOTOBA英語"
             content.body = "今日の復習の時間です。忘れる前にもう一度。"
             content.sound = .default
             var comps = DateComponents()

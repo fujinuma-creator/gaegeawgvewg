@@ -31,7 +31,7 @@ struct PaywallView: View {
                     }
 
                     VStack(spacing: 8) {
-                        Text("Lingro 英語 フル版").font(LFont.title(26)).foregroundStyle(Palette.text)
+                        Text("KOTOBA英語 フル版").font(LFont.title(26)).foregroundStyle(Palette.text)
                             .marker(Palette.markerGreen, height: 11, yOffset: 4)
                         Text(purchases.statusText).font(LFont.heading(14)).foregroundStyle(statusColor)
                     }

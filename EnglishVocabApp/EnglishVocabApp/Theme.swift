@@ -1,6 +1,6 @@
 import SwiftUI
 
-// MARK: - Palette (sampled from the Lingro screen design)
+// MARK: - Palette (sampled from the hand-drawn screen design)
 
 enum Palette {
     static let ink        = Color(red: 0.26, green: 0.20, blue: 0.17)   // 線・濃い文字

@@ -39,7 +39,7 @@ struct SettingsView: View {
                     studyCard
                     SectionLabel(text: "データ").padding(.top, 10)
                     dataCard
-                    Text("Lingro 英語 1.0.0")
+                    Text("KOTOBA英語 1.0.0")
                         .font(LFont.caption(11)).foregroundStyle(Palette.subText)
                         .frame(maxWidth: .infinity).padding(.top, 10)
                 }
