@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32902,6 +32902,115 @@ enum SeedData {
                     ("I was a bit taken aback by his reply.", "彼の返事にはちょっと面食らったよ。"),
                     ("She seemed taken aback when I asked her.", "聞いたら彼女、驚いたみたいだった。")
                  ], ipa: "/ˈteɪkən əˈbæk/"),
+        ]
+    }
+    private static var britishColloquial141: [Word] {
+        [
+            make("as a rule", "usually; in most cases",
+                 "普段は・原則として・たいてい",
+                 useCases: ["自分の習慣を話すとき", "一般的な傾向を言うとき"],
+                 examples: [
+                    ("As a rule, I don't drink coffee after lunch.", "普段は昼食後にコーヒーは飲まないんだ。"),
+                    ("As a rule, the trains here are pretty reliable.", "ここの電車はたいてい時間通りだよ。")
+                 ], ipa: "/æz ə ruːl/"),
+            make("go on about", "to talk about something for too long in a boring or annoying way",
+                 "〜についてくどくど話す・しつこく言う",
+                 useCases: ["同じ話を何度もする人について話すとき", "相手のしつこさに軽く文句を言うとき"],
+                 examples: [
+                    ("He keeps going on about his new car.", "彼、新しい車の話ばっかりしてるんだよ。"),
+                    ("Sorry, I'm going on about work again.", "ごめん、また仕事の話ばっかりしてるね。")
+                 ], ipa: "/ɡəʊ ɒn əˈbaʊt/"),
+            make("grim", "unpleasant, depressing or of very poor quality",
+                 "ひどい・気が滅入る・どんよりした",
+                 useCases: ["天気や状況がひどいと言うとき", "見通しが暗いと言うとき"],
+                 examples: [
+                    ("The weather's been pretty grim all week.", "今週はずっと天気がどんよりしてるね。"),
+                    ("Things are looking a bit grim at work.", "仕事のほうはちょっと雲行きが怪しいんだ。")
+                 ], ipa: "/ɡrɪm/"),
+            make("as if!", "used to say that something is very unlikely or impossible",
+                 "まさか！・ありえない！",
+                 useCases: ["相手の言うことがありえないと返すとき", "冗談っぽく否定するとき"],
+                 examples: [
+                    ("\"Maybe he'll say sorry.\" \"As if!\"", "「彼、謝るかもよ」「まさか！」"),
+                    ("As if I'd get up at five on a Sunday!", "日曜に5時に起きるなんてありえないよ！")
+                 ], ipa: "/æz ɪf/"),
+            make("dirt cheap", "extremely cheap",
+                 "激安の・タダ同然の",
+                 useCases: ["驚くほど安いものについて話すとき", "お得な買い物を自慢するとき"],
+                 examples: [
+                    ("I got these shoes dirt cheap in the sale.", "この靴、セールで激安で買ったんだ。"),
+                    ("Flights were dirt cheap, so we just went.", "航空券がめちゃくちゃ安かったから、行っちゃった。")
+                 ], ipa: "/dɜːt tʃiːp/"),
+            make("stingy", "not willing to spend or give money",
+                 "ケチな",
+                 useCases: ["お金を出したがらない人について話すとき", "量が少ないと冗談っぽく言うとき"],
+                 examples: [
+                    ("Don't be stingy — get a proper birthday present.", "ケチらないで、ちゃんとした誕生日プレゼントを買いなよ。"),
+                    ("The portions here are a bit stingy.", "ここの料理、量がちょっと少なめだね。")
+                 ], ipa: "/ˈstɪndʒi/"),
+            make("a regular", "a customer who often goes to the same shop, café or pub",
+                 "常連（客）",
+                 useCases: ["行きつけの店について話すとき", "店員に顔を覚えられていると言うとき"],
+                 examples: [
+                    ("I'm a regular at the café round the corner.", "角のカフェの常連なんだ。"),
+                    ("The staff know all the regulars by name.", "店員さんは常連の名前をみんな覚えてるよ。")
+                 ], ipa: "/ə ˈreɡjʊlə/"),
+            make("keep busy", "to stay active and occupied, often to avoid boredom or worry",
+                 "忙しくしている・何かと動いている",
+                 useCases: ["近況を聞かれて答えるとき", "気を紛らわせていると言うとき"],
+                 examples: [
+                    ("\"How've you been?\" \"Oh, keeping busy, you know.\"", "「元気だった？」「まあ、何かと忙しくしてるよ」"),
+                    ("I try to keep busy so I don't worry too much.", "考えすぎないように、何かしら動くようにしてるんだ。")
+                 ], ipa: "/kiːp ˈbɪzi/"),
+            make("click", "to get on well with someone immediately; to suddenly understand something",
+                 "（人と）すぐ意気投合する・（ふと）ピンとくる",
+                 useCases: ["初対面ですぐ仲良くなったとき", "急に理解できたとき"],
+                 examples: [
+                    ("We just clicked the moment we met.", "会った瞬間から意気投合したんだ。"),
+                    ("Then it suddenly clicked what she meant.", "そのとき、彼女の言いたいことがふとわかったんだ。")
+                 ], ipa: "/klɪk/"),
+            make("no harm in asking", "used to say that it is worth asking even if the answer might be no",
+                 "聞くだけならタダ・聞いてみて損はない",
+                 useCases: ["ダメ元でお願いするとき", "相手に聞いてみるよう勧めるとき"],
+                 examples: [
+                    ("They might give you a discount — no harm in asking.", "割引してくれるかもよ。聞くだけならタダだし。"),
+                    ("There's no harm in asking if they have a table.", "席が空いてるか聞いてみても損はないよ。")
+                 ], ipa: "/nəʊ hɑːm ɪn ˈɑːskɪŋ/"),
+            make("get home safe", "used when saying goodbye to tell someone you hope their journey home goes well",
+                 "気をつけて帰ってね",
+                 useCases: ["夜に友達と別れるとき", "相手の帰り道を気遣うとき"],
+                 examples: [
+                    ("Thanks for tonight — get home safe!", "今夜はありがとう、気をつけて帰ってね！"),
+                    ("Text me when you get home safe.", "無事に着いたらメッセージしてね。")
+                 ], ipa: "/ɡet həʊm seɪf/"),
+            make("sleep it off", "to sleep until you feel better, especially after drinking too much or feeling ill",
+                 "寝て治す・寝て酔いを覚ます",
+                 useCases: ["飲みすぎた翌日について話すとき", "体調不良を休んで治すと言うとき"],
+                 examples: [
+                    ("I had a headache, so I went to bed to sleep it off.", "頭が痛かったから、寝て治そうと思って早く寝たよ。"),
+                    ("He's still sleeping it off after last night.", "彼、昨夜の酔いをまだ寝て覚ましてるところ。")
+                 ], ipa: "/sliːp ɪt ɒf/"),
+            make("second-hand", "not new; previously owned by someone else",
+                 "中古の・お下がりの・人づての",
+                 useCases: ["中古品について話すとき", "人から聞いた話だと言うとき"],
+                 examples: [
+                    ("I bought a second-hand bike for fifty quid.", "中古の自転車を50ポンドで買ったよ。"),
+                    ("That's only second-hand information, though.", "でもそれ、人づてに聞いた話だけどね。")
+                 ], ipa: "/ˌsekənd ˈhænd/"),
+            make("get into", "to become interested in an activity or subject",
+                 "〜にハマる・〜に興味を持ち始める",
+                 useCases: ["新しい趣味について話すとき", "相手に何にハマっているか聞くとき"],
+                 examples: [
+                    ("I've really got into cooking lately.", "最近、料理にすっかりハマってるんだ。"),
+                    ("How did you get into running?", "どうやってランニングを始めたの？")
+                 ], ipa: "/ɡet ˈɪntuː/"),
+            make("freebie", "something that is given to you without having to pay for it",
+                 "タダでもらえるもの・おまけ・無料サービス",
+                 useCases: ["無料でもらった物について話すとき", "イベントの配布品について話すとき"],
+                 examples: [
+                    ("I got loads of freebies at the conference.", "カンファレンスでタダのものをたくさんもらったよ。"),
+                    ("The dessert was a freebie from the chef.", "デザートはシェフからのサービスだったんだ。")
+                 ], ipa: "/ˈfriːbi/"),
         ]
     }
     private static var britishColloquial135: [Word] {
