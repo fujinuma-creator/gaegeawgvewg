@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31589,6 +31589,115 @@ enum SeedData {
                     ("The film starts at quarter past eight.", "映画は8時15分に始まるよ。"),
                     ("It's a quarter to six — we'd better go.", "6時15分前だ。そろそろ出なきゃ。")
                  ], ipa: "/ə ˈkwɔːtə pɑːst/"),
+        ]
+    }
+    private static var britishColloquial123: [Word] {
+        [
+            make("speak your mind", "to say honestly what you think, even if others may not like it",
+                 "思っていることを率直に言う",
+                 useCases: ["会議や話し合いで意見を求めるとき", "遠慮しないでと伝えるとき"],
+                 examples: [
+                    ("Go on, speak your mind — I won't be offended.", "ほら、思ってること言ってよ。気にしないから。"),
+                    ("She's never afraid to speak her mind.", "彼女はいつも臆せず本音を言うね。")
+                 ], ipa: "/spiːk jə maɪnd/"),
+            make("dress down", "to wear more casual clothes than you usually would",
+                 "（普段より）ラフな服装をする",
+                 useCases: ["服装のルールを話すとき", "カジュアルな集まりの前に"],
+                 examples: [
+                    ("We can dress down on Fridays at work.", "うちの職場は金曜はカジュアルな服でいいんだ。"),
+                    ("It's just a barbecue, so feel free to dress down.", "ただのバーベキューだから、ラフな格好で来てね。")
+                 ], ipa: "/dres daʊn/"),
+            make("run out of", "to use all of something so that none is left",
+                 "〜を切らす・〜がなくなる",
+                 useCases: ["物が足りなくなったとき", "時間がないとき"],
+                 examples: [
+                    ("We've run out of milk — I'll nip to the shop.", "牛乳切れてる。ちょっとお店行ってくるね。"),
+                    ("Sorry, we're running out of time, so let's wrap up.", "すみません、時間がなくなってきたので、まとめましょう。")
+                 ], ipa: "/rʌn aʊt əv/"),
+            make("give it a go", "to try doing something, especially for the first time",
+                 "試しにやってみる",
+                 useCases: ["新しいことに挑戦するとき", "人を励ますとき"],
+                 examples: [
+                    ("I've never tried paddleboarding, but I'll give it a go.", "パドルボードはやったことないけど、やってみるよ。"),
+                    ("Why don't you give it a go? You might enjoy it.", "試しにやってみたら？楽しいかもよ。")
+                 ], ipa: "/ɡɪv ɪt ə ɡəʊ/"),
+            make("for ages", "for a very long time",
+                 "長いこと・ずっと",
+                 useCases: ["久しぶりの再会", "待たされたとき"],
+                 examples: [
+                    ("I haven't seen you for ages! How are you?", "ずいぶん久しぶり！元気？"),
+                    ("We waited for ages, but the bus never came.", "ずっと待ってたのに、バスが全然来なかった。")
+                 ], ipa: "/fər ˈeɪdʒɪz/"),
+            make("put someone up", "to let someone stay at your home for a short time",
+                 "（人を）家に泊める",
+                 useCases: ["旅行先で泊めてもらうとき", "友人に宿を提供するとき"],
+                 examples: [
+                    ("Could you put me up for a couple of nights?", "2、3日泊めてもらえない？"),
+                    ("My sister's putting us up while we're in Edinburgh.", "エディンバラにいる間は姉が泊めてくれるんだ。")
+                 ], ipa: "/pʊt ˈsʌmwʌn ʌp/"),
+            make("break the bank", "to cost too much money (usually used in the negative)",
+                 "大金がかかる・懐が痛む（主に否定で）",
+                 useCases: ["値段について話すとき", "手頃なものを勧めるとき"],
+                 examples: [
+                    ("It's a nice place and it won't break the bank.", "いいお店だし、そんなに高くないよ。"),
+                    ("A weekend away doesn't have to break the bank.", "週末旅行だって大金をかける必要はないよ。")
+                 ], ipa: "/breɪk ðə bæŋk/"),
+            make("ahead of time", "before the time something happens or is expected",
+                 "前もって・事前に",
+                 useCases: ["予約や準備の話", "予定より早く着いたとき"],
+                 examples: [
+                    ("Let me know ahead of time if you can't come.", "来られないなら前もって教えてね。"),
+                    ("It's best to book tickets ahead of time in summer.", "夏はチケットを事前に予約しておくのがいいよ。")
+                 ], ipa: "/əˈhed əv taɪm/"),
+            make("run errands", "to go out and do small jobs such as shopping, going to the post office, etc.",
+                 "用事を済ませる・雑用で出かける",
+                 useCases: ["休日の予定を話すとき", "忙しい理由を伝えるとき"],
+                 examples: [
+                    ("I spent the morning running errands.", "午前中は用事を済ませて回ってた。"),
+                    ("I've got a few errands to run, but I'm free after two.", "ちょっと用事があるけど、2時以降は空いてるよ。")
+                 ], ipa: "/rʌn ˈerəndz/"),
+            make("do the washing-up", "to wash the plates, pans, cups, etc. after a meal",
+                 "皿洗いをする",
+                 useCases: ["家事の分担", "食後に手伝いを申し出るとき"],
+                 examples: [
+                    ("You cooked, so I'll do the washing-up.", "作ってくれたから、皿洗いは私がやるよ。"),
+                    ("Can you leave the washing-up? I'll do it in the morning.", "洗い物はそのままでいいよ。朝やるから。")
+                 ], ipa: "/duː ðə ˌwɒʃɪŋ ˈʌp/"),
+            make("a day out", "a trip somewhere for a day, for enjoyment",
+                 "日帰りのお出かけ",
+                 useCases: ["週末や休日の計画", "家族や友人との外出"],
+                 examples: [
+                    ("We had a lovely day out at the seaside.", "海辺で楽しい一日を過ごしたよ。"),
+                    ("Fancy a day out in Brighton this weekend?", "今週末、ブライトンに日帰りで行かない？")
+                 ], ipa: "/ə deɪ aʊt/"),
+            make("make a mess", "to make a place dirty or untidy",
+                 "散らかす・汚す",
+                 useCases: ["子どもやペットについて", "料理や作業の後で"],
+                 examples: [
+                    ("Sorry, I've made a bit of a mess in the kitchen.", "ごめん、キッチンちょっと散らかしちゃった。"),
+                    ("Try not to make a mess — I've just cleaned.", "散らかさないでね。掃除したばっかりだから。")
+                 ], ipa: "/meɪk ə mes/"),
+            make("tag along", "to go somewhere with someone, especially when you were not specially invited",
+                 "（人に）ついて行く・一緒に行く",
+                 useCases: ["予定に便乗したいとき", "友人を連れて行くとき"],
+                 examples: [
+                    ("Mind if I tag along? I've got nothing on tonight.", "一緒に行ってもいい？今夜は予定ないんだ。"),
+                    ("My brother's going to tag along, if that's alright.", "弟もついて来るけど、いいかな？")
+                 ], ipa: "/tæɡ əˈlɒŋ/"),
+            make("better luck next time", "said to someone to encourage them after they have failed at something",
+                 "次はうまくいくよ・ドンマイ",
+                 useCases: ["失敗した人を励ますとき", "試合やくじに外れたとき"],
+                 examples: [
+                    ("You didn't get it? Oh well, better luck next time.", "ダメだった？まあ、次はうまくいくよ。"),
+                    ("We lost again — better luck next time, eh?", "また負けたね。次こそだね。")
+                 ], ipa: "/ˈbetə lʌk nekst taɪm/"),
+            make("homemade", "made at home rather than bought from a shop",
+                 "手作りの・自家製の",
+                 useCases: ["料理やお菓子を褒めるとき", "レストランのメニューで"],
+                 examples: [
+                    ("Is this cake homemade? It's delicious!", "このケーキ手作り？すごく美味しい！"),
+                    ("Nothing beats homemade soup on a cold day.", "寒い日は手作りのスープが一番だね。")
+                 ], ipa: "/ˌhəʊmˈmeɪd/"),
         ]
     }
     private static var britishColloquial122: [Word] {
