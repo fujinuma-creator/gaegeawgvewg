@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 import Combine
-import UserNotifications
+@preconcurrency import UserNotifications
 
 @MainActor
 final class WordStore: ObservableObject {
@@ -431,6 +431,7 @@ final class WordStore: ObservableObject {
         let center = UNUserNotificationCenter.current()
         center.removePendingNotificationRequests(withIdentifiers: ["englishvocab.daily"])
         guard settings.notifyEnabled else { return }
+        let hour = settings.notifyHour, minute = settings.notifyMinute
         center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
             guard granted else { return }
             let content = UNMutableNotificationContent()
@@ -438,10 +439,10 @@ final class WordStore: ObservableObject {
             content.body = "今日の復習の時間です。忘れる前にもう一度。"
             content.sound = .default
             var comps = DateComponents()
-            comps.hour = settings.notifyHour
-            comps.minute = settings.notifyMinute
+            comps.hour = hour
+            comps.minute = minute
             let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: true)
-            center.add(UNNotificationRequest(identifier: "englishvocab.daily", content: content, trigger: trigger))
+            UNUserNotificationCenter.current().add(UNNotificationRequest(identifier: "englishvocab.daily", content: content, trigger: trigger))
         }
     }
 }
