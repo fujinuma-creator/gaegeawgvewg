@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32139,6 +32139,115 @@ enum SeedData {
                     ("In this job, you really have to think on your feet.", "この仕事では、本当に臨機応変に対応しなきゃいけないんだ。"),
                     ("She's great at thinking on her feet in interviews.", "彼女は面接でとっさに答えるのがすごく上手なんだ。")
                  ], ipa: "/θɪŋk ɒn jɔː fiːt/"),
+        ]
+    }
+    private static var britishColloquial130: [Word] {
+        [
+            make("mixed feelings", "a mixture of positive and negative reactions to something",
+                 "複雑な気持ち・うれしいような寂しいような気持ち",
+                 useCases: ["引っ越しや転職など、喜びと不安が混ざるとき", "賛成とも反対とも言い切れないとき"],
+                 examples: [
+                    ("I've got mixed feelings about moving abroad.", "海外に引っ越すのは、ちょっと複雑な気持ちなんだ。"),
+                    ("Honestly, I left the film with mixed feelings.", "正直、あの映画は観終わって複雑な気分だったよ。")
+                 ], ipa: "/mɪkst ˈfiːlɪŋz/"),
+            make("second nature", "something you do so often that you do it easily without thinking",
+                 "（慣れて）自然にできること・身についた習慣",
+                 useCases: ["練習して無意識にできるようになったとき", "習慣になったことを説明するとき"],
+                 examples: [
+                    ("Driving on the left is second nature to me now.", "左側通行の運転も、今じゃすっかり体に染みついてるよ。"),
+                    ("Give it a few weeks and it'll become second nature.", "数週間もすれば自然にできるようになるよ。")
+                 ], ipa: "/ˈsekənd ˈneɪtʃə/"),
+            make("a change of heart", "a change in your opinion or feelings about something",
+                 "心変わり・気が変わること",
+                 useCases: ["相手が意見や決定を変えたとき", "自分の考えが変わったことを伝えるとき"],
+                 examples: [
+                    ("She was going to quit, but she had a change of heart.", "彼女、辞めるつもりだったけど気が変わったんだって。"),
+                    ("What made you have a change of heart?", "どうして心変わりしたの？")
+                 ], ipa: "/ə tʃeɪndʒ əv hɑːt/"),
+            make("good call", "said to tell someone they made a sensible decision",
+                 "いい判断だね・正解だったね",
+                 useCases: ["相手の決断や提案をほめるとき", "結果的に正しかった選択を認めるとき"],
+                 examples: [
+                    ("Bringing an umbrella was a good call.", "傘を持ってきたのは正解だったね。"),
+                    ("\"Shall we book a table?\" \"Good call — it gets busy.\"", "「席を予約しとく？」「いいね、混むからね。」")
+                 ], ipa: "/ɡʊd kɔːl/"),
+            make("up to speed", "having the latest information about something",
+                 "最新の状況を把握している・話についていける",
+                 useCases: ["休み明けに状況を教えてもらうとき", "新しいメンバーに情報を共有するとき"],
+                 examples: [
+                    ("Can you bring me up to speed on the project?", "プロジェクトの最新状況を教えてもらえる？"),
+                    ("I'm not quite up to speed yet — I've just got back.", "戻ったばかりで、まだ状況をよく把握してないんだ。")
+                 ], ipa: "/ʌp tə spiːd/"),
+            make("out of my depth", "in a situation that is too difficult for you to understand or deal with",
+                 "手に負えない・自分の力量を超えている",
+                 useCases: ["難しい話や仕事についていけないとき", "経験不足で不安なとき"],
+                 examples: [
+                    ("When they started talking about tax law, I was totally out of my depth.", "税法の話になったら、もう完全についていけなかったよ。"),
+                    ("I felt a bit out of my depth in my first week.", "最初の週はちょっと自分には荷が重いと感じたな。")
+                 ], ipa: "/aʊt əv maɪ depθ/"),
+            make("get the picture", "to understand a situation, especially without needing every detail",
+                 "（状況が）わかる・だいたい察する",
+                 useCases: ["詳しく説明しなくても伝わったか確かめるとき", "状況を理解したと伝えるとき"],
+                 examples: [
+                    ("He kept checking his watch — I got the picture and left.", "彼がずっと時計を見てたから、察して帰ったよ。"),
+                    ("No need to explain any more. I get the picture.", "もう説明しなくていいよ。だいたいわかったから。")
+                 ], ipa: "/ɡet ðə ˈpɪktʃə/"),
+            make("worst-case scenario", "the worst thing that could possibly happen in a situation",
+                 "最悪の場合・最悪のケース",
+                 useCases: ["不安な相手を落ち着かせるとき", "リスクを考えて計画するとき"],
+                 examples: [
+                    ("Worst-case scenario, we just get a taxi home.", "最悪の場合でも、タクシーで帰ればいいだけだよ。"),
+                    ("What's the worst-case scenario here?", "これ、最悪どうなるの？")
+                 ], ipa: "/wɜːst keɪs səˈnɑːriəʊ/"),
+            make("take it from me", "used to say that you know something from your own experience, so the listener should believe you",
+                 "私が言うんだから間違いない・経験者として言うけど",
+                 useCases: ["自分の経験からアドバイスするとき", "相手に信じてほしいとき"],
+                 examples: [
+                    ("Take it from me, you don't want to drive through London at rush hour.", "経験者として言うけど、ラッシュ時のロンドンを運転するのはやめた方がいいよ。"),
+                    ("Take it from me — the second year is much easier.", "本当だって、2年目はずっと楽になるから。")
+                 ], ipa: "/teɪk ɪt frəm miː/"),
+            make("go downhill", "to become gradually worse in quality or condition",
+                 "（質や状態が）落ちていく・悪くなる",
+                 useCases: ["お店の質が落ちたとき", "状況や体調が悪化していくとき"],
+                 examples: [
+                    ("That restaurant has really gone downhill lately.", "あのレストラン、最近ほんと質が落ちたよね。"),
+                    ("Things went downhill after the new manager arrived.", "新しい店長が来てから状況がどんどん悪くなったんだ。")
+                 ], ipa: "/ɡəʊ ˌdaʊnˈhɪl/"),
+            make("off the record", "said privately and not meant to be repeated publicly or officially",
+                 "ここだけの話・オフレコで",
+                 useCases: ["内緒の本音を話すとき", "公式には言えない情報を伝えるとき"],
+                 examples: [
+                    ("Off the record, I don't think the plan will work.", "ここだけの話、その計画はうまくいかないと思う。"),
+                    ("She told me off the record that she's leaving.", "彼女、オフレコで辞めるって教えてくれたんだ。")
+                 ], ipa: "/ɒf ðə ˈrekɔːd/"),
+            make("hands down", "easily and without any doubt",
+                 "文句なしに・断トツで",
+                 useCases: ["一番のおすすめをはっきり言うとき", "圧勝したことを伝えるとき"],
+                 examples: [
+                    ("This is hands down the best pizza in town.", "ここは文句なしに街で一番おいしいピザだよ。"),
+                    ("They won hands down.", "彼らの圧勝だったね。")
+                 ], ipa: "/hændz daʊn/"),
+            make("take a hint", "to understand what someone means even though they have not said it directly",
+                 "察する・空気を読む",
+                 useCases: ["遠回しに伝えても気づかない人について話すとき", "相手の意図を汲み取ったとき"],
+                 examples: [
+                    ("I yawned three times, but he just couldn't take a hint.", "3回もあくびしたのに、彼は全然察してくれなかった。"),
+                    ("Okay, I can take a hint — I'll leave you to it.", "わかった、察したよ。邪魔しないでおくね。")
+                 ], ipa: "/teɪk ə hɪnt/"),
+            make("make a scene", "to behave in a loud or emotional way in public that embarrasses people",
+                 "（人前で）騒ぎを起こす・大騒ぎする",
+                 useCases: ["人前で怒ったり騒いだりするのを止めたいとき", "お店などで揉めた話をするとき"],
+                 examples: [
+                    ("Please don't make a scene — everyone's looking.", "お願いだから騒がないで。みんな見てるよ。"),
+                    ("He made a scene at the restaurant over a cold soup.", "彼、スープが冷めてたってレストランで大騒ぎしたんだ。")
+                 ], ipa: "/meɪk ə siːn/"),
+            make("run in the family", "to be a quality or ability that many people in the same family have",
+                 "家系だ・血筋だ",
+                 useCases: ["家族共通の特徴や才能を話すとき", "遺伝的な体質について話すとき"],
+                 examples: [
+                    ("My dad's a chef too — cooking runs in the family.", "父もシェフなんだ。料理は家系なんだよね。"),
+                    ("Being late seems to run in the family!", "遅刻癖は血筋みたいだね！")
+                 ], ipa: "/rʌn ɪn ðə ˈfæməli/"),
         ]
     }
     private static var britishColloquial127: [Word] {
