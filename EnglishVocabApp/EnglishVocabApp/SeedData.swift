@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31589,6 +31589,115 @@ enum SeedData {
                     ("The film starts at quarter past eight.", "映画は8時15分に始まるよ。"),
                     ("It's a quarter to six — we'd better go.", "6時15分前だ。そろそろ出なきゃ。")
                  ], ipa: "/ə ˈkwɔːtə pɑːst/"),
+        ]
+    }
+    private static var britishColloquial124: [Word] {
+        [
+            make("give up on", "to stop hoping that someone or something will succeed or improve",
+                 "（人・物事に）見切りをつける・諦める",
+                 useCases: ["期待するのをやめたとき", "人を励ますとき"],
+                 examples: [
+                    ("Don't give up on me — I'll get there in the end.", "見捨てないで。最後にはちゃんとやるから。"),
+                    ("I'd almost given up on the bus when it finally turned up.", "もうバスは諦めかけてたら、やっと来たんだ。")
+                 ], ipa: "/ɡɪv ʌp ɒn/"),
+            make("settle up", "to pay the money that you owe someone, often after sharing costs",
+                 "（立て替え分などを）精算する",
+                 useCases: ["割り勘の精算", "お店で会計を済ませるとき"],
+                 examples: [
+                    ("You paid for the taxi, so let's settle up later.", "タクシー代出してくれたから、あとで精算しよう。"),
+                    ("Shall we settle up and head home?", "お会計済ませて帰ろうか。")
+                 ], ipa: "/ˈsetl ʌp/"),
+            make("go down well", "to be liked or received positively by people",
+                 "好評だ・ウケがいい",
+                 useCases: ["料理やプレゼントの反応", "発表やジョークの評判"],
+                 examples: [
+                    ("Your cake went down really well at the party.", "君のケーキ、パーティーで大好評だったよ。"),
+                    ("I don't think that joke will go down well with your boss.", "そのジョーク、上司にはウケないと思うよ。")
+                 ], ipa: "/ɡəʊ daʊn wel/"),
+            make("push your luck", "to risk spoiling a good situation by asking for or trying too much",
+                 "調子に乗る・図に乗る",
+                 useCases: ["欲張りすぎを注意するとき", "冗談っぽくたしなめるとき"],
+                 examples: [
+                    ("You got a day off — don't push your luck by asking for two.", "1日休みもらえたんだから、2日なんて調子に乗らないの。"),
+                    ("I'd love another slice, but I won't push my luck.", "もう一切れ欲しいけど、図々しいからやめとく。")
+                 ], ipa: "/pʊʃ jə lʌk/"),
+            make("take it or leave it", "used to say that an offer will not change, so the person must accept it or refuse it",
+                 "嫌ならやめていい・これ以上は譲れない",
+                 useCases: ["値段交渉の最後に", "条件を変えないと伝えるとき"],
+                 examples: [
+                    ("Fifty quid for the bike — take it or leave it.", "自転車は50ポンド。これ以上はまけないよ。"),
+                    ("It's pasta again tonight, take it or leave it!", "今夜もパスタだよ。嫌なら食べなくていい！")
+                 ], ipa: "/teɪk ɪt ɔː liːv ɪt/"),
+            make("put something on hold", "to delay or stop something for a while",
+                 "〜を保留にする・一時中断する",
+                 useCases: ["計画を延期するとき", "電話で待たせるとき"],
+                 examples: [
+                    ("We've put our holiday plans on hold for now.", "旅行の計画はひとまず保留にしたよ。"),
+                    ("Sorry, they put me on hold for twenty minutes.", "ごめん、電話で20分も待たされちゃって。")
+                 ], ipa: "/pʊt ˈsʌmθɪŋ ɒn həʊld/"),
+            make("do me a favour", "used to ask someone to help you with something",
+                 "ちょっとお願いがあるんだけど",
+                 useCases: ["気軽に頼みごとをするとき", "手伝ってほしいとき"],
+                 examples: [
+                    ("Could you do me a favour and feed the cat this weekend?", "お願いなんだけど、今週末猫にご飯あげてくれない？"),
+                    ("Do me a favour — grab some bread on your way home.", "悪いけど、帰りにパン買ってきて。")
+                 ], ipa: "/duː mi ə ˈfeɪvə/"),
+            make("it's fair to say", "used to say that something is true or reasonable",
+                 "〜と言ってもいいだろう・正直〜だね",
+                 useCases: ["控えめに意見を言うとき", "状況をまとめるとき"],
+                 examples: [
+                    ("It's fair to say the trip didn't go to plan.", "旅行は予定通りにいかなかったと言っていいね。"),
+                    ("I think it's fair to say she's the best cook in the family.", "彼女が家族で一番料理上手だと言っていいと思う。")
+                 ], ipa: "/ɪts feə tə seɪ/"),
+            make("keep at it", "to continue working hard at something even when it is difficult",
+                 "（諦めずに）続ける・頑張り続ける",
+                 useCases: ["練習中の人を励ますとき", "上達のコツを話すとき"],
+                 examples: [
+                    ("Your Spanish is getting better — keep at it!", "スペイン語上達してるよ。その調子で続けて！"),
+                    ("If you keep at it, you'll be running 5K in no time.", "続けてれば、すぐに5キロ走れるようになるよ。")
+                 ], ipa: "/kiːp æt ɪt/"),
+            make("cut short", "to end something earlier than planned",
+                 "（予定より）早めに切り上げる",
+                 useCases: ["旅行や会議を早く終えるとき", "話を途中で止めるとき"],
+                 examples: [
+                    ("We had to cut our holiday short because of the weather.", "天気のせいで休暇を早めに切り上げなきゃいけなかった。"),
+                    ("Sorry to cut you short, but I've got to run.", "話の途中でごめん、もう行かなきゃ。")
+                 ], ipa: "/kʌt ʃɔːt/"),
+            make("put it down to", "to think that something is caused by a particular thing",
+                 "〜のせいだと考える・〜が原因だと思う",
+                 useCases: ["原因を推測するとき", "失敗を大目に見るとき"],
+                 examples: [
+                    ("I was really tired, but I put it down to the jet lag.", "すごく疲れてたけど、時差ボケのせいだと思ってた。"),
+                    ("Let's just put it down to experience.", "いい経験だったってことにしよう。")
+                 ], ipa: "/pʊt ɪt daʊn tə/"),
+            make("make a start", "to begin doing something, especially a task",
+                 "取りかかる・始める",
+                 useCases: ["作業を始めるとき", "先延ばしをやめるとき"],
+                 examples: [
+                    ("We'd better make a start on the cleaning.", "そろそろ掃除に取りかかろうか。"),
+                    ("I haven't finished the report, but I've made a start.", "レポートは終わってないけど、手はつけたよ。")
+                 ], ipa: "/meɪk ə stɑːt/"),
+            make("take your mind off", "to stop you thinking about something worrying or unpleasant",
+                 "（嫌なことから）気を紛らわす",
+                 useCases: ["落ち込んでいる人を誘うとき", "気分転換の話"],
+                 examples: [
+                    ("Come out with us — it'll take your mind off things.", "一緒に出かけようよ。気が紛れるよ。"),
+                    ("I went for a run to take my mind off the exam.", "試験のことを忘れたくて走りに行った。")
+                 ], ipa: "/teɪk jə maɪnd ɒf/"),
+            make("look out for", "to watch carefully so that you notice someone or something; to take care of someone",
+                 "〜に気をつけて見る・〜を気にかける",
+                 useCases: ["待ち合わせで人を探すとき", "仲間を守るとき"],
+                 examples: [
+                    ("Look out for a red door — that's our house.", "赤いドアを目印にしてね。それがうちだよ。"),
+                    ("Good friends always look out for each other.", "いい友達はいつもお互いを気にかけてるものだよ。")
+                 ], ipa: "/lʊk aʊt fɔː/"),
+            make("go without", "to manage without something that you need or usually have",
+                 "〜なしで済ませる・我慢する",
+                 useCases: ["節約や我慢の話", "物がないときの対処"],
+                 examples: [
+                    ("There's no milk, so we'll have to go without.", "牛乳ないから、なしで我慢するしかないね。"),
+                    ("I can't go without my morning coffee.", "朝のコーヒーなしじゃやっていけない。")
+                 ], ipa: "/ɡəʊ wɪˈðaʊt/"),
         ]
     }
     private static var britishColloquial123: [Word] {
