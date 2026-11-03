@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32357,6 +32357,115 @@ enum SeedData {
                     ("I've done a fair amount of travelling.", "旅行はけっこうしてきた方だよ。"),
                     ("It'll take a fair amount of work, but it's doable.", "結構な手間はかかるけど、できなくはないよ。")
                  ], ipa: "/ə feər əˈmaʊnt/"),
+        ]
+    }
+    private static var britishColloquial134: [Word] {
+        [
+            make("pick and choose", "to choose only the things you like best from a range of options",
+                 "えり好みする・好きなものだけ選ぶ",
+                 useCases: ["選択肢が多くて選び放題なとき", "えり好みできる立場ではないと言うとき"],
+                 examples: [
+                    ("With so many flats available, you can pick and choose.", "空き部屋がこれだけあれば、選び放題だよ。"),
+                    ("I'm not really in a position to pick and choose.", "正直、えり好みできる立場じゃないんだ。")
+                 ], ipa: "/pɪk ən tʃuːz/"),
+            make("leave someone high and dry", "to leave someone in a difficult situation without help",
+                 "（人を）見捨てる・置き去りにして困らせる",
+                 useCases: ["急に人に見捨てられたとき", "ドタキャンで困ったことを話すとき"],
+                 examples: [
+                    ("He quit without notice and left us high and dry.", "彼が急に辞めて、僕らは完全に困ったよ。"),
+                    ("Don't worry, I won't leave you high and dry.", "心配しないで、見捨てたりしないから。")
+                 ], ipa: "/liːv ˈsʌmwʌn haɪ ən draɪ/"),
+            make("fight tooth and nail", "to try very hard to get or keep something",
+                 "全力で戦う・必死に抵抗する",
+                 useCases: ["何かを必死に守ろうとするとき", "強く反対する様子を話すとき"],
+                 examples: [
+                    ("The locals fought tooth and nail to save the old library.", "地元の人たちは古い図書館を守ろうと必死に戦ったんだ。"),
+                    ("She'll fight tooth and nail for that promotion.", "彼女はあの昇進のためなら全力で戦うよ。")
+                 ], ipa: "/faɪt tuːθ ən neɪl/"),
+            make("head over heels", "completely and madly in love with someone",
+                 "（恋に）夢中で・ぞっこんで",
+                 useCases: ["誰かに夢中になっていると話すとき", "恋に落ちた友達について話すとき"],
+                 examples: [
+                    ("He's head over heels in love with her.", "彼、彼女にぞっこんなんだよ。"),
+                    ("They fell head over heels for each other on holiday.", "二人は旅行先でお互いに一目惚れしたんだ。")
+                 ], ipa: "/hed ˈəʊvə hiːlz/"),
+            make("one way or another", "somehow, by some means, even if you don't know how yet",
+                 "何とかして・どうにかして",
+                 useCases: ["方法は未定でも必ずやると言うとき", "結果的にそうなったと言うとき"],
+                 examples: [
+                    ("We'll get it finished one way or another.", "何とかして終わらせるよ。"),
+                    ("One way or another, everyone ended up at the pub.", "なんだかんだで、結局みんなパブに集まったよ。")
+                 ], ipa: "/wʌn weɪ ɔːr əˈnʌðə/"),
+            make("bright and early", "very early in the morning",
+                 "朝早くに",
+                 useCases: ["朝早く出発する予定を話すとき", "早起きした人をからかうとき"],
+                 examples: [
+                    ("We need to be up bright and early tomorrow.", "明日は朝早く起きなきゃ。"),
+                    ("You're in bright and early today!", "今日はずいぶん早いね！")
+                 ], ipa: "/braɪt ən ˈɜːli/"),
+            make("time and again", "repeatedly; many times",
+                 "何度も何度も・繰り返し",
+                 useCases: ["同じことを何度も言ったとき", "繰り返し起きることを話すとき"],
+                 examples: [
+                    ("I've told him time and again to lock the door.", "鍵をかけてって何度も言ってるのに。"),
+                    ("That café proves time and again that simple is best.", "あのカフェはシンプルが一番だって毎回思わせてくれる。")
+                 ], ipa: "/taɪm ən əˈɡen/"),
+            make("cut and dried", "already decided or completely clear, with no room for doubt",
+                 "はっきり決まった・白黒明確な",
+                 useCases: ["物事が単純明快だと言うとき", "そう簡単には割り切れないと言うとき"],
+                 examples: [
+                    ("It's not as cut and dried as it looks.", "見た目ほど単純な話じゃないんだよ。"),
+                    ("The rules are pretty cut and dried.", "ルールはかなりはっきりしてるよ。")
+                 ], ipa: "/kʌt ən draɪd/"),
+            make("alive and kicking", "still active, healthy or popular",
+                 "元気でぴんぴんして・健在で",
+                 useCases: ["人や物がまだ元気だと言うとき", "伝統や店が健在だと話すとき"],
+                 examples: [
+                    ("My grandad is ninety and still alive and kicking.", "うちのおじいちゃんは90歳でまだぴんぴんしてるよ。"),
+                    ("The local music scene is alive and kicking.", "地元の音楽シーンは今も元気だよ。")
+                 ], ipa: "/əˈlaɪv ən ˈkɪkɪŋ/"),
+            make("part and parcel", "an essential, unavoidable part of something",
+                 "付きもの・避けられない一部",
+                 useCases: ["仕事や生活に付きものの苦労を話すとき", "仕方ないことだと受け入れるとき"],
+                 examples: [
+                    ("Late nights are part and parcel of being a nurse.", "夜遅いのは看護師には付きものだよ。"),
+                    ("Rain is part and parcel of living in Manchester.", "雨はマンチェスターに住むなら付きものさ。")
+                 ], ipa: "/pɑːt ən ˈpɑːsl/"),
+            make("lo and behold", "used to introduce something surprising that happened",
+                 "なんと・驚いたことに",
+                 useCases: ["話の中で意外な展開を紹介するとき", "予想通り・予想外の結果を面白く言うとき"],
+                 examples: [
+                    ("I looked everywhere for my keys and, lo and behold, they were in my pocket.", "鍵を探し回ったら、なんとポケットに入ってたんだ。"),
+                    ("Lo and behold, the train was actually on time.", "驚いたことに、電車が時間通りに来たんだよ。")
+                 ], ipa: "/ləʊ ən bɪˈhəʊld/"),
+            make("tit for tat", "doing something unpleasant to someone because they did the same to you",
+                 "仕返し・やられたらやり返す",
+                 useCases: ["子どもっぽい仕返しの応酬を話すとき", "報復はやめようと言うとき"],
+                 examples: [
+                    ("It's just tit for tat with those two.", "あの二人はやられたらやり返すの繰り返しなんだ。"),
+                    ("Let's not get into a tit-for-tat argument.", "仕返し合戦みたいな言い合いはやめよう。")
+                 ], ipa: "/ˌtɪt fə ˈtæt/"),
+            make("neither here nor there", "not important or relevant to the matter being discussed",
+                 "どうでもいい・本題とは関係ない",
+                 useCases: ["大事なポイントではないと言うとき", "話を本筋に戻すとき"],
+                 examples: [
+                    ("Whether it was Tuesday or Wednesday is neither here nor there.", "火曜だったか水曜だったかはどうでもいいよ。"),
+                    ("A few quid either way is neither here nor there.", "数ポンドの差なんて大したことないよ。")
+                 ], ipa: "/ˈnaɪðə hɪə nɔː ðeə/"),
+            make("home and dry", "certain to succeed or safely finished with something",
+                 "もう安心・成功確実",
+                 useCases: ["もう大丈夫だと安心するとき", "あと一歩で成功だと言うとき"],
+                 examples: [
+                    ("Once we pass this last check, we're home and dry.", "この最後のチェックを通れば、もう安心だ。"),
+                    ("Don't celebrate yet — we're not home and dry.", "まだ喜ぶのは早いよ、終わったわけじゃない。")
+                 ], ipa: "/həʊm ən draɪ/"),
+            make("hard and fast", "fixed and not able to be changed (usually about rules)",
+                 "厳格な・絶対の（ルールなど）",
+                 useCases: ["決まったルールはないと言うとき", "柔軟に対応できると伝えるとき"],
+                 examples: [
+                    ("There are no hard and fast rules — just do what feels right.", "厳密な決まりはないよ、いいと思うようにやって。"),
+                    ("It's more of a guideline than a hard and fast rule.", "絶対のルールというより目安だね。")
+                 ], ipa: "/hɑːd ən fɑːst/"),
         ]
     }
     private static var britishColloquial133: [Word] {
