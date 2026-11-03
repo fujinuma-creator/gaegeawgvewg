@@ -261,7 +261,7 @@ struct SettingsView: View {
             HStack {
                 Text("ホームのひとこと").font(LFont.heading(14)).foregroundStyle(Palette.text)
                 Spacer()
-                TextField("毎日、語学", text: $settings.motto)
+                TextField("頑張ろう", text: $settings.motto)
                     .font(LFont.body(14)).foregroundStyle(Palette.text)
                     .multilineTextAlignment(.trailing)
                     .frame(maxWidth: 170)

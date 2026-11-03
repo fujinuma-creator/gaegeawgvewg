@@ -70,7 +70,7 @@ final class AppSettings: ObservableObject {
         notifyMinute = d.object(forKey: "notifyMinute") as? Int ?? 0
         lastConversationId = d.string(forKey: "lastConversationId")
         keyVerifiedAt = d.object(forKey: "keyVerifiedAt.\(savedProvider.rawValue)") as? Date
-        motto = d.string(forKey: "motto") ?? "今日も少しずつ頑張りましょう"
+        motto = d.string(forKey: "motto") ?? "頑張ろう"
     }
 
     var dailyLimitLabel: String { dailyLimit == 0 ? "制限なし" : "\(dailyLimit)語" }

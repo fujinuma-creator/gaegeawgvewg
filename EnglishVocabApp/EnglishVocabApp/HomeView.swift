@@ -153,8 +153,7 @@ struct HomeView: View {
                 Text(Date().longJa)
                     .font(LFont.heading(13))
                     .foregroundStyle(Palette.text)
-                    .padding(.horizontal, 8).padding(.vertical, 3)
-                    .background(Palette.paper.opacity(0.92))
+                    .shadow(color: .white.opacity(0.9), radius: 2)
                 mottoTag
             }
             .padding(.top, 14)
@@ -179,12 +178,12 @@ struct HomeView: View {
                 .multilineTextAlignment(.trailing)
                 .lineSpacing(6)
                 .frame(maxWidth: 230, alignment: .trailing)
-                .padding(.vertical, 4).padding(.horizontal, 8)
-                .background(Palette.paper.opacity(0.92))
+                .shadow(color: .white.opacity(0.95), radius: 2)
+                .shadow(color: .white.opacity(0.7), radius: 6)
         }
         .buttonStyle(.plain)
         .alert("ひとことを変更", isPresented: $editingMotto) {
-            TextField("今日も少しずつ頑張りましょう", text: $mottoDraft)
+            TextField("頑張ろう", text: $mottoDraft)
             Button("保存") { settings.motto = mottoDraft.trimmingCharacters(in: .whitespacesAndNewlines) }
             Button("キャンセル", role: .cancel) {}
         } message: { Text("ホーム右上に表示することばです。") }
@@ -387,7 +386,6 @@ struct FlashcardDeck: Hashable {
 /// their originals.
 struct HeroLondon: View {
     @State private var swing = false
-    @State private var bump = false
     @State private var breathe = false
 
     /// Pixel size of hero_london.png; overlay positions below are in it.
@@ -411,9 +409,17 @@ struct HeroLondon: View {
                 part("sign_bakery", w: 136, h: 94, k: k)
                     .rotationEffect(.degrees(swing ? 1.4 : -1.4), anchor: .top)
                     .offset(x: 348 * k, y: 234 * k)
-                part("hero_bus", w: 250, h: 125, k: k)
-                    .rotationEffect(.degrees(bump ? 0.7 : -0.7), anchor: .bottom)
-                    .offset(x: 58 * k + (bump ? 3 : -3), y: 440 * k + (bump ? -1.5 : 1.5))
+                // The bus drives from the left edge to the right edge and comes
+                // round again, rocking a little as it goes.
+                TimelineView(.animation(minimumInterval: 1.0 / 30)) { context in
+                    let busW = 250 * k
+                    let t = context.date.timeIntervalSinceReferenceDate / 14
+                    let f = t - floor(t)
+                    let x = -busW + CGFloat(f) * (base.width * k + busW)
+                    part("hero_bus", w: 250, h: 125, k: k)
+                        .rotationEffect(.degrees(sin(t * 2 * .pi * 9) * 0.6), anchor: .bottom)
+                        .offset(x: x, y: 440 * k + CGFloat(sin(t * 2 * .pi * 9)) * 1.2)
+                }
             }
             .scaleEffect(breathe ? 1.012 : 1.0, anchor: .bottom)
             .frame(width: base.width * k, height: base.height * k)
@@ -421,7 +427,6 @@ struct HeroLondon: View {
         .aspectRatio(base.width / base.height, contentMode: .fit)
         .onAppear {
             withAnimation(.easeInOut(duration: 2.8).repeatForever(autoreverses: true)) { swing = true }
-            withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true).delay(0.4)) { bump = true }
             withAnimation(.easeInOut(duration: 7).repeatForever(autoreverses: true)) { breathe = true }
         }
     }
