@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31921,6 +31921,115 @@ enum SeedData {
                     ("We're running short of milk — can you grab some?", "牛乳が少なくなってきたから、買ってきてくれる？"),
                     ("Sorry, I'm running short of time today.", "ごめん、今日はあまり時間がないんだ。")
                  ], ipa: "/rʌn ʃɔːt əv/"),
+        ]
+    }
+    private static var britishColloquial128: [Word] {
+        [
+            make("get carried away", "to become so excited or involved that you lose control of what you are doing",
+                 "調子に乗る・夢中になってやりすぎる",
+                 useCases: ["買い物や食べすぎでやりすぎたとき", "話や作業に夢中になりすぎたとき"],
+                 examples: [
+                    ("Sorry, I got a bit carried away — I've bought far too much.", "ごめん、ちょっと調子に乗って買いすぎちゃった。"),
+                    ("Don't get carried away — it's only a small party.", "張り切りすぎないでね。ただの小さなパーティーだから。")
+                 ], ipa: "/ɡet ˈkærid əˈweɪ/"),
+            make("stand someone up", "to fail to meet someone you had arranged to meet, especially on a date",
+                 "（人との約束を）すっぽかす・待ちぼうけさせる",
+                 useCases: ["デートや待ち合わせに相手が来なかったとき", "約束をすっぽかされた話をするとき（be stood up）"],
+                 examples: [
+                    ("I waited an hour — I think I've been stood up.", "1時間待ったよ。すっぽかされたみたい。"),
+                    ("He stood me up again, so that's it.", "また約束すっぽかされたから、もう終わり。")
+                 ], ipa: "/stænd ˈsʌmwʌn ʌp/"),
+            make("get out of hand", "to become difficult or impossible to control",
+                 "手に負えなくなる・収拾がつかなくなる",
+                 useCases: ["パーティーや議論が荒れたとき", "出費や問題がどんどん大きくなるとき"],
+                 examples: [
+                    ("The party got a bit out of hand, so the neighbours complained.", "パーティーがちょっと騒がしくなりすぎて、近所から苦情が来た。"),
+                    ("Let's sort it out now before it gets out of hand.", "手に負えなくなる前に今のうちに片づけよう。")
+                 ], ipa: "/ɡet aʊt əv hænd/"),
+            make("catch someone off guard", "to surprise someone by doing or saying something they are not prepared for",
+                 "（人の）不意をつく・虚をつく",
+                 useCases: ["予想外の質問をされたとき", "突然のことで戸惑ったとき"],
+                 examples: [
+                    ("Sorry, you caught me off guard — can I think about it?", "ごめん、不意をつかれちゃった。ちょっと考えてもいい？"),
+                    ("Her question really caught me off guard.", "彼女の質問には完全に虚をつかれたよ。")
+                 ], ipa: "/kætʃ ˈsʌmwʌn ɒf ɡɑːd/"),
+            make("the other way round", "in the opposite order or position",
+                 "逆に・反対に・あべこべで",
+                 useCases: ["順序や立場が逆だと指摘するとき", "誤解を訂正するとき（It's the other way round.）"],
+                 examples: [
+                    ("No, it's the other way round — she's older than him.", "いや、逆だよ。彼女のほうが年上なんだ。"),
+                    ("You've put the picture up the other way round.", "その絵、逆さまに掛けてるよ。")
+                 ], ipa: "/ðə ˈʌðə weɪ raʊnd/"),
+            make("be dead set on", "to be completely determined to do or have something",
+                 "〜すると固く決めている・絶対に〜したい",
+                 useCases: ["誰かの強い決意を話すとき", "考えを変えないとき（dead set against = 断固反対）"],
+                 examples: [
+                    ("She's dead set on moving to Spain next year.", "彼女は来年スペインに引っ越すって固く決めてるよ。"),
+                    ("My dad's dead set against the idea.", "父はその考えに断固反対なんだ。")
+                 ], ipa: "/biː ded set ɒn/"),
+            make("zone out", "to stop paying attention and start thinking about nothing in particular",
+                 "ぼーっとする・上の空になる",
+                 useCases: ["話を聞き逃したとき", "疲れて集中できないとき"],
+                 examples: [
+                    ("Sorry, I zoned out for a second — what did you say?", "ごめん、一瞬ぼーっとしてた。何て言った？"),
+                    ("I always zone out in long meetings.", "長い会議だといつも上の空になっちゃう。")
+                 ], ipa: "/zəʊn aʊt/"),
+            make("off-putting", "unpleasant or making you not want to do or have something",
+                 "感じの悪い・やる気をなくさせる・引いてしまう",
+                 useCases: ["店や人の印象が悪かったとき", "興味がなくなる理由を話すとき"],
+                 examples: [
+                    ("The food was fine, but the smell in there was a bit off-putting.", "料理は悪くなかったけど、店の匂いがちょっと嫌だった。"),
+                    ("His attitude was really off-putting.", "彼の態度にはかなり引いたよ。")
+                 ], ipa: "/ˌɒf ˈpʊtɪŋ/"),
+            make("slip up", "to make a small mistake (noun: a slip-up)",
+                 "うっかりミスをする・ヘマをする",
+                 useCases: ["小さなミスを認めるとき", "失敗を軽く言うとき（a slip-up）"],
+                 examples: [
+                    ("Sorry, I slipped up and sent it to the wrong person.", "ごめん、うっかり違う人に送っちゃった。"),
+                    ("It was just a slip-up — don't worry about it.", "ただのうっかりミスだから、気にしないで。")
+                 ], ipa: "/slɪp ʌp/"),
+            make("word for word", "using exactly the same words",
+                 "一字一句そのまま・逐語的に",
+                 useCases: ["人の言葉をそのまま伝えるとき", "直訳・丸暗記の話をするとき"],
+                 examples: [
+                    ("That's what he said, word for word.", "それが彼の言ったこと、一字一句そのままだよ。"),
+                    ("Don't translate it word for word — it won't sound natural.", "直訳しないで。自然に聞こえないから。")
+                 ], ipa: "/wɜːd fə wɜːd/"),
+            make("have a lot on your plate", "to have a lot of work, problems or responsibilities to deal with",
+                 "やることや抱えていることが山ほどある",
+                 useCases: ["忙しくて余裕がないとき", "相手を気遣うとき"],
+                 examples: [
+                    ("I've got a lot on my plate at the moment, so can we do it next week?", "今ちょっと抱えてることが多いから、来週でもいい？"),
+                    ("You've got enough on your plate — let me handle it.", "君はもう十分手一杯でしょ。僕がやるよ。")
+                 ], ipa: "/hæv ə lɒt ɒn jɔː pleɪt/"),
+            make("beside the point", "not important or not connected to the main subject",
+                 "（それは）本題とは関係ない・問題はそこじゃない",
+                 useCases: ["話の論点をずらされたとき", "本当に大事なことを言いたいとき"],
+                 examples: [
+                    ("Whether it was expensive is beside the point — we didn't need it.", "高かったかどうかは問題じゃない。必要なかったんだよ。"),
+                    ("That's beside the point. The point is you didn't tell me.", "それは関係ないよ。問題は君が言ってくれなかったことだ。")
+                 ], ipa: "/bɪˈsaɪd ðə pɔɪnt/"),
+            make("keep a straight face", "to manage not to laugh or smile even though something is funny",
+                 "笑いをこらえる・真顔を保つ",
+                 useCases: ["笑ってはいけない場面", "冗談を真顔で言うとき"],
+                 examples: [
+                    ("I could barely keep a straight face when he walked in.", "彼が入ってきたとき、笑いをこらえるのがやっとだった。"),
+                    ("How do you say that with a straight face?", "よく真顔でそんなこと言えるね。")
+                 ], ipa: "/kiːp ə streɪt feɪs/"),
+            make("be in for", "to be going to experience something soon, especially something bad or surprising",
+                 "（これから）〜を味わうことになる・〜が待っている",
+                 useCases: ["これから起こることを予告するとき", "You're in for a treat.（お楽しみに）"],
+                 examples: [
+                    ("If you've never tried her cooking, you're in for a treat.", "彼女の料理を食べたことないなら、お楽しみだよ。"),
+                    ("Look at those clouds — I think we're in for some rain.", "あの雲見て。ひと雨来そうだね。")
+                 ], ipa: "/biː ɪn fɔː/"),
+            make("run down", "tired and slightly ill, especially because you have been working too hard",
+                 "（疲れて）体調がすぐれない・疲れがたまっている",
+                 useCases: ["働きすぎて体調を崩しかけているとき", "古くて荒れた建物（a run-down area）"],
+                 examples: [
+                    ("I've been feeling a bit run down lately — I need a holiday.", "最近ちょっと疲れがたまってて。休みが必要だ。"),
+                    ("They live in a rather run-down part of town.", "彼らは町のちょっと荒れた地域に住んでるんだ。")
+                 ], ipa: "/rʌn daʊn/"),
         ]
     }
     private static var britishColloquial127: [Word] {
