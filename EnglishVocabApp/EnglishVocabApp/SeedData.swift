@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32357,6 +32357,115 @@ enum SeedData {
                     ("I've done a fair amount of travelling.", "旅行はけっこうしてきた方だよ。"),
                     ("It'll take a fair amount of work, but it's doable.", "結構な手間はかかるけど、できなくはないよ。")
                  ], ipa: "/ə feər əˈmaʊnt/"),
+        ]
+    }
+    private static var britishColloquial132: [Word] {
+        [
+            make("neck and neck", "level with each other in a race or competition, so it's hard to say who will win",
+                 "互角で・接戦で",
+                 useCases: ["試合や競争が接戦のとき", "どちらが勝つかわからない状況を話すとき"],
+                 examples: [
+                    ("The two teams were neck and neck right until the end.", "両チームは最後の最後まで接戦だったよ。"),
+                    ("The polls show they're neck and neck.", "世論調査では両者互角みたいだね。")
+                 ], ipa: "/nek ən nek/"),
+            make("few and far between", "rare; not happening or found very often",
+                 "めったにない・ごくまれな",
+                 useCases: ["チャンスや良いものが少ないと話すとき", "滅多に起きないことを伝えるとき"],
+                 examples: [
+                    ("Good jobs round here are few and far between.", "この辺でいい仕事はなかなかないんだよ。"),
+                    ("Sunny days have been few and far between this month.", "今月は晴れの日がほとんどなかったね。")
+                 ], ipa: "/fjuː ən fɑː bɪˈtwiːn/"),
+            make("first and foremost", "more than anything else; most importantly",
+                 "何よりもまず・第一に",
+                 useCases: ["一番大事なことを最初に伝えるとき", "自分の立場や優先順位をはっきり言うとき"],
+                 examples: [
+                    ("First and foremost, I want to thank everyone for coming.", "何よりもまず、皆さん来てくれてありがとう。"),
+                    ("She's a mum first and foremost.", "彼女は何よりもまず母親なんだ。")
+                 ], ipa: "/fɜːst ən ˈfɔːməʊst/"),
+            make("loud and clear", "very clearly and easily understood",
+                 "はっきりと・よくわかった",
+                 useCases: ["相手の言いたいことを理解したと伝えるとき", "電話や無線で声がよく聞こえると言うとき"],
+                 examples: [
+                    ("Okay, I get it — message received loud and clear.", "わかった、言いたいことははっきり伝わったよ。"),
+                    ("Can you hear me? — Yep, loud and clear.", "聞こえる？ — うん、はっきり聞こえるよ。")
+                 ], ipa: "/laʊd ən klɪə/"),
+            make("black and white", "very clear and simple, with a clear difference between right and wrong; also in writing",
+                 "白黒はっきりした・明確な／書面で",
+                 useCases: ["物事は単純ではないと言うとき（it's not black and white）", "書面に残っていると伝えるとき（in black and white）"],
+                 examples: [
+                    ("It's not as black and white as you think.", "君が思うほど白黒はっきりした話じゃないよ。"),
+                    ("It's there in black and white in the contract.", "契約書にちゃんと書いてあるよ。")
+                 ], ipa: "/blæk ən waɪt/"),
+            make("save the day", "to do something that solves a problem and stops a situation from going badly",
+                 "窮地を救う・ピンチを救う",
+                 useCases: ["誰かのおかげで助かったとき", "ピンチを乗り切った話をするとき"],
+                 examples: [
+                    ("You saved the day — I'd have been lost without you.", "助かったよ、君がいなかったらどうにもならなかった。"),
+                    ("The spare charger really saved the day.", "予備の充電器のおかげで本当に助かったよ。")
+                 ], ipa: "/seɪv ðə deɪ/"),
+            make("break even", "to make neither a profit nor a loss",
+                 "収支がとんとんになる・損益なしになる",
+                 useCases: ["商売やイベントの収支を話すとき", "損も得もしなかったと伝えるとき"],
+                 examples: [
+                    ("We only just broke even on the event.", "イベントはなんとか収支とんとんだったよ。"),
+                    ("It'll take a year or so for the café to break even.", "カフェが赤字を脱するには1年くらいかかるだろうね。")
+                 ], ipa: "/breɪk ˈiːvən/"),
+            make("inside out", "with the inner side facing outwards; also used to mean knowing something extremely well",
+                 "裏返しに／隅々まで（知っている）",
+                 useCases: ["服が裏返しだと指摘するとき", "何かを熟知していると言うとき（know ... inside out）"],
+                 examples: [
+                    ("Your jumper's on inside out.", "セーター、裏返しに着てるよ。"),
+                    ("She knows this city inside out.", "彼女はこの街を隅々まで知ってるんだ。")
+                 ], ipa: "/ˌɪnsaɪd ˈaʊt/"),
+            make("in good shape", "in good physical condition, or in a good state generally",
+                 "体調が良い・良い状態で",
+                 useCases: ["健康や体力について話すとき", "物や状況が順調だと伝えるとき"],
+                 examples: [
+                    ("He's in really good shape for his age.", "彼は年の割に本当に体が締まってるね。"),
+                    ("The car's still in good shape.", "車はまだまだ良い状態だよ。")
+                 ], ipa: "/ɪn ɡʊd ʃeɪp/"),
+            make("take a toll", "to have a bad effect on someone or something over time",
+                 "（徐々に）悪影響を及ぼす・こたえる",
+                 useCases: ["ストレスや疲れが体に出てきたとき", "長期間の負担について話すとき"],
+                 examples: [
+                    ("All these late nights are starting to take a toll on me.", "夜更かし続きで体にこたえてきたよ。"),
+                    ("The stress has really taken its toll.", "ストレスがかなり響いてるね。")
+                 ], ipa: "/teɪk ə təʊl/"),
+            make("at the drop of a hat", "immediately, without needing time to think or prepare",
+                 "すぐさま・二つ返事で",
+                 useCases: ["ためらわずすぐ行動する人を話すとき", "すぐに応じられると伝えるとき"],
+                 examples: [
+                    ("He'd help you at the drop of a hat.", "彼なら頼めばすぐに助けてくれるよ。"),
+                    ("I can't just leave at the drop of a hat.", "そんなに急に出かけるなんて無理だよ。")
+                 ], ipa: "/æt ðə drɒp əv ə hæt/"),
+            make("the real deal", "a person or thing that is genuine and as good as people say",
+                 "本物・正真正銘のもの",
+                 useCases: ["評判通りだとほめるとき", "偽物ではなく本物だと伝えるとき"],
+                 examples: [
+                    ("This pizza place is the real deal.", "このピザ屋は本物だよ。"),
+                    ("She's not just talk — she's the real deal.", "彼女は口だけじゃなくて、本物の実力者だよ。")
+                 ], ipa: "/ðə rɪəl diːl/"),
+            make("on a whim", "suddenly, because you feel like it, without planning",
+                 "思いつきで・気まぐれで",
+                 useCases: ["衝動的に何かをした話をするとき", "計画せずに決めたことを伝えるとき"],
+                 examples: [
+                    ("I booked the trip on a whim.", "思いつきで旅行を予約しちゃった。"),
+                    ("We just popped in on a whim.", "なんとなく気が向いて立ち寄ってみたんだ。")
+                 ], ipa: "/ɒn ə wɪm/"),
+            make("against the clock", "trying to finish something before a time limit",
+                 "時間との勝負で・大急ぎで",
+                 useCases: ["締め切りに追われているとき", "時間内に終わらせようと急いでいるとき"],
+                 examples: [
+                    ("We're working against the clock to finish it by Friday.", "金曜までに終わらせようと時間と戦ってるんだ。"),
+                    ("It was a race against the clock to catch the train.", "電車に間に合うかどうか、まさに時間との勝負だったよ。")
+                 ], ipa: "/əˈɡenst ðə klɒk/"),
+            make("the talk of the town", "someone or something that everyone is talking about",
+                 "町中の噂・話題の的",
+                 useCases: ["みんなが話題にしている人や物を話すとき", "新しくできた人気の店などを紹介するとき"],
+                 examples: [
+                    ("That new restaurant is the talk of the town.", "あの新しいレストラン、今すごく話題になってるよ。"),
+                    ("Their wedding was the talk of the town for weeks.", "二人の結婚式は何週間も噂の的だったよ。")
+                 ], ipa: "/ðə tɔːk əv ðə taʊn/"),
         ]
     }
     private static var britishColloquial127: [Word] {
