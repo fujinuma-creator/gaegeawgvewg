@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31480,6 +31480,115 @@ enum SeedData {
                     ("I'm not much of a cook, but I make a decent omelette.", "料理は得意な方じゃないけど、オムレツはまあまあ作れるよ。"),
                     ("I'm not much of a drinker, so I'll just have a lemonade.", "あまりお酒を飲む方じゃないから、レモネードにしておくね。")
                  ], ipa: "/aɪm nɒt mʌtʃ əv ə/"),
+        ]
+    }
+    private static var britishColloquial121: [Word] {
+        [
+            make("save me a seat", "asking someone to keep a seat free for you until you arrive",
+                 "席を取っておいて",
+                 useCases: ["遅れて合流するとき", "カフェや会議・授業で"],
+                 examples: [
+                    ("I'm just grabbing a coffee — can you save me a seat?", "ちょっとコーヒー買ってくるね。席取っておいてくれる？"),
+                    ("I saved you a seat by the window.", "窓際に席を取っておいたよ。")
+                 ], ipa: "/seɪv mi ə siːt/"),
+            make("from scratch", "from the very beginning, without using anything that already exists",
+                 "一から・ゼロから",
+                 useCases: ["料理を手作りするとき", "やり直しや新しく始めるとき"],
+                 examples: [
+                    ("Did you make this cake from scratch?", "このケーキ、一から手作りしたの？"),
+                    ("The file got deleted, so I had to start from scratch.", "ファイルが消えちゃって、一からやり直すはめになったよ。")
+                 ], ipa: "/frəm skrætʃ/"),
+            make("in that case", "used to say what you will do or think because of what has just been said",
+                 "それなら・その場合は",
+                 useCases: ["相手の情報を受けて予定を変えるとき", "提案に応じるとき"],
+                 examples: [
+                    ("\"It's going to rain.\" \"In that case, let's stay in.\"", "「雨が降るらしいよ」「それなら家にいようか」"),
+                    ("Oh, you're vegetarian? In that case, I'll make pasta.", "あ、ベジタリアンなんだ？それならパスタを作るね。")
+                 ], ipa: "/ɪn ðæt keɪs/"),
+            make("within walking distance", "close enough to walk to easily",
+                 "歩いて行ける距離に",
+                 useCases: ["場所や住まいの説明", "道案内や移動手段の相談"],
+                 examples: [
+                    ("The station is within walking distance of the hotel.", "駅はホテルから歩いて行ける距離だよ。"),
+                    ("Is it within walking distance, or should we get a taxi?", "歩いて行ける距離？それともタクシーにする？")
+                 ], ipa: "/wɪˈðɪn ˈwɔːkɪŋ ˈdɪstəns/"),
+            make("in season", "(of fruit or vegetables) available and at their best at this time of year",
+                 "旬の・今が旬で",
+                 useCases: ["買い物や市場で", "料理や食べ物の雑談"],
+                 examples: [
+                    ("Strawberries are in season, so they're really cheap now.", "イチゴが旬だから、今すごく安いよ。"),
+                    ("I try to buy vegetables that are in season.", "なるべく旬の野菜を買うようにしてるんだ。")
+                 ], ipa: "/ɪn ˈsiːzn/"),
+            make("take the bins out", "to carry the rubbish bins outside to be collected",
+                 "ゴミを出す",
+                 useCases: ["家事の分担", "同居人や家族への頼みごと"],
+                 examples: [
+                    ("Can you take the bins out? It's collection day tomorrow.", "ゴミ出してくれる？明日が収集日なんだ。"),
+                    ("I always forget to take the bins out on Mondays.", "月曜日はいつもゴミ出しを忘れちゃう。")
+                 ], ipa: "/teɪk ðə bɪnz aʊt/"),
+            make("hard luck", "said to show sympathy when something has gone wrong for someone, especially when it was not their fault",
+                 "残念だったね・ついてなかったね",
+                 useCases: ["試合や試験で惜しかった人に", "不運を慰めるとき"],
+                 examples: [
+                    ("You didn't get the job? Hard luck — you'll get the next one.", "仕事ダメだったの？残念だったね。次はきっと大丈夫だよ。"),
+                    ("Hard luck on losing the final, mate.", "決勝で負けたのは残念だったな。")
+                 ], ipa: "/hɑːd lʌk/"),
+            make("a table for two", "what you say in a restaurant to ask for a table for a certain number of people",
+                 "2名です（席をお願いします）",
+                 useCases: ["レストランに入るとき", "予約の電話で"],
+                 examples: [
+                    ("Hi, could we have a table for two, please?", "こんにちは、2名なんですが席ありますか？"),
+                    ("I'd like to book a table for four at eight o'clock.", "8時に4名で予約したいのですが。")
+                 ], ipa: "/ə ˈteɪbl fə tuː/"),
+            make("-ish", "added to a time, number or adjective to mean 'about' or 'fairly'",
+                 "〜くらい・〜頃・ちょっと〜",
+                 useCases: ["待ち合わせ時間をざっくり伝えるとき", "曖昧に言うとき"],
+                 examples: [
+                    ("Shall we meet at sevenish?", "7時頃に会おうか？"),
+                    ("\"Are you hungry?\" \"Ish. I could eat.\"", "「お腹すいた？」「まあちょっとね。食べられるよ」")
+                 ], ipa: "/ɪʃ/"),
+            make("a missed call", "a phone call that you did not answer, shown on your phone",
+                 "不在着信",
+                 useCases: ["電話に出られなかったとき", "かけ直すとき"],
+                 examples: [
+                    ("Sorry, I just saw your missed call — what's up?", "ごめん、今着信に気づいた。どうしたの？"),
+                    ("I've got three missed calls from my mum.", "母から不在着信が3件もある。")
+                 ], ipa: "/ə mɪst kɔːl/"),
+            make("..., tops", "added after a number to mean 'at the most'",
+                 "せいぜい〜・長くても〜",
+                 useCases: ["所要時間や金額の上限を言うとき", "相手を安心させるとき"],
+                 examples: [
+                    ("It'll take ten minutes, tops.", "せいぜい10分で終わるよ。"),
+                    ("There were twenty people there, tops.", "多くても20人くらいしかいなかったよ。")
+                 ], ipa: "/tɒps/"),
+            make("I'm off", "said when you are leaving a place",
+                 "そろそろ行くね・もう帰るね",
+                 useCases: ["その場を去るとき", "職場や友人宅から帰るとき"],
+                 examples: [
+                    ("Right, I'm off — see you tomorrow!", "じゃあ、帰るね。また明日！"),
+                    ("I'm off to the shops. Need anything?", "お店に行ってくるけど、何かいる？")
+                 ], ipa: "/aɪm ɒf/"),
+            make("mind the step", "a warning to be careful not to trip over a step",
+                 "段差に気をつけて",
+                 useCases: ["人を案内するとき", "足元の注意を促すとき"],
+                 examples: [
+                    ("Come in — oh, mind the step!", "どうぞ入って。あ、段差に気をつけてね！"),
+                    ("Mind your head, the ceiling's quite low.", "頭に気をつけて、天井が低いから。")
+                 ], ipa: "/maɪnd ðə step/"),
+            make("help me out", "to help someone, especially with a small task or when they are in difficulty",
+                 "ちょっと手伝って・助けて",
+                 useCases: ["気軽に手助けを頼むとき", "困ったときにお願いするとき"],
+                 examples: [
+                    ("Could you help me out with this box? It's really heavy.", "この箱運ぶの手伝ってくれる？すごく重くて。"),
+                    ("Thanks for helping me out yesterday.", "昨日は助けてくれてありがとう。")
+                 ], ipa: "/help mi aʊt/"),
+            make("(a) quarter past", "fifteen minutes after the hour",
+                 "〜時15分",
+                 useCases: ["時間を伝えるとき", "待ち合わせの約束"],
+                 examples: [
+                    ("The film starts at quarter past eight.", "映画は8時15分に始まるよ。"),
+                    ("It's a quarter to six — we'd better go.", "6時15分前だ。そろそろ出なきゃ。")
+                 ], ipa: "/ə ˈkwɔːtə pɑːst/"),
         ]
     }
 
