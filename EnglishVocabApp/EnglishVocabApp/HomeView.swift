@@ -219,11 +219,11 @@ struct HomeView: View {
                 }
                 Spacer()
                 VStack(alignment: .leading, spacing: 6) {
-                    Label("累計学習時間", systemImage: "clock")
+                    Label("本日の学習時間", systemImage: "clock")
                         .font(LFont.body(13))
                         .foregroundStyle(Palette.subText)
                         .labelStyle(StatLabelStyle(color: Palette.text))
-                    let total = Int(store.totalStudySeconds())
+                    let total = Int(store.liveSeconds(on: Date()))
                     let hours = total / 3600, minutes = (total % 3600) / 60
                     HStack(alignment: .lastTextBaseline, spacing: 3) {
                         if hours > 0 {
