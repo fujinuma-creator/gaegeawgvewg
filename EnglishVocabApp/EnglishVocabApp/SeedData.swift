@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31921,6 +31921,115 @@ enum SeedData {
                     ("We're running short of milk — can you grab some?", "牛乳が少なくなってきたから、買ってきてくれる？"),
                     ("Sorry, I'm running short of time today.", "ごめん、今日はあまり時間がないんだ。")
                  ], ipa: "/rʌn ʃɔːt əv/"),
+        ]
+    }
+    private static var britishColloquial127: [Word] {
+        [
+            make("run something by someone", "to tell someone about an idea or plan to get their opinion before deciding",
+                 "（人に）〜を相談する・意見を聞いてみる",
+                 useCases: ["決める前に上司や友人の意見を聞くとき", "アイデアを軽く確認してもらうとき"],
+                 examples: [
+                    ("Can I run something by you before the meeting?", "会議の前にちょっと相談してもいい？"),
+                    ("I'll run it by my partner and let you know.", "パートナーに聞いてみてから連絡するね。")
+                 ], ipa: "/rʌn ˈsʌmθɪŋ baɪ ˈsʌmwʌn/"),
+            make("hold off", "to delay doing something until later",
+                 "（〜するのを）控える・先延ばしにする",
+                 useCases: ["決断や購入を少し待つとき", "様子を見るとき（hold off on / hold off doing）"],
+                 examples: [
+                    ("I'd hold off on booking until the prices come down.", "値段が下がるまで予約は控えたほうがいいと思うよ。"),
+                    ("Let's hold off telling everyone until it's confirmed.", "確定するまでみんなに言うのは待とう。")
+                 ], ipa: "/həʊld ɒf/"),
+            make("follow up on", "to find out more about something or take further action after a first step",
+                 "〜のその後を確認する・〜をフォローする",
+                 useCases: ["メールや依頼の進み具合を確認するとき", "話の続きを追うとき"],
+                 examples: [
+                    ("I'm just following up on the email I sent last week.", "先週送ったメールの件で確認なんですが。"),
+                    ("Thanks for following up on that — I'd completely forgotten.", "その件確認してくれてありがとう。すっかり忘れてたよ。")
+                 ], ipa: "/ˈfɒləʊ ʌp ɒn/"),
+            make("make a point of", "to make sure you always do something because you think it is important",
+                 "必ず〜するようにしている・意識して〜する",
+                 useCases: ["自分の習慣やこだわりを話すとき", "大事にしていることを伝えるとき"],
+                 examples: [
+                    ("I make a point of calling my mum every Sunday.", "毎週日曜は必ず母に電話するようにしてるんだ。"),
+                    ("She made a point of thanking everyone personally.", "彼女はわざわざ一人ひとりにお礼を言ってたよ。")
+                 ], ipa: "/meɪk ə pɔɪnt əv/"),
+            make("be up to something", "to be secretly doing or planning something, often something naughty",
+                 "何かたくらんでいる・こそこそ何かしている",
+                 useCases: ["子どもや友人が怪しいとき", "冗談っぽく疑うとき（be up to no good）"],
+                 examples: [
+                    ("The kids are too quiet — they must be up to something.", "子どもたちが静かすぎる。何かやってるに違いないよ。"),
+                    ("You've got that look on your face. What are you up to?", "その顔、何かたくらんでるでしょ？")
+                 ], ipa: "/biː ʌp tə ˈsʌmθɪŋ/"),
+            make("check in on", "to visit or contact someone to make sure they are all right",
+                 "（人の）様子を見る・元気か確かめる",
+                 useCases: ["体調の悪い人や一人暮らしの家族を気にかけるとき", "友人に連絡するとき"],
+                 examples: [
+                    ("I'll check in on Gran after work.", "仕事帰りにおばあちゃんの様子を見てくるよ。"),
+                    ("Just checking in on you — how are you feeling?", "ちょっと様子聞こうと思って。具合どう？")
+                 ], ipa: "/tʃek ɪn ɒn/"),
+            make("go to waste", "to not be used and therefore be wasted",
+                 "無駄になる・もったいないことになる",
+                 useCases: ["食べ物が余ったとき", "才能やチャンスが活かされないとき"],
+                 examples: [
+                    ("Have the last slice — I don't want it to go to waste.", "最後の一切れ食べて。もったいないから。"),
+                    ("It'd be a shame to let all that talent go to waste.", "あの才能を無駄にするのはもったいないよ。")
+                 ], ipa: "/ɡəʊ tə weɪst/"),
+            make("for the record", "used to say that you want people to know something clearly",
+                 "念のため言っておくと・はっきり言っておくけど",
+                 useCases: ["誤解を避けたいとき", "自分の立場をはっきりさせるとき"],
+                 examples: [
+                    ("For the record, it wasn't my idea.", "念のため言っておくけど、僕のアイデアじゃないからね。"),
+                    ("Just for the record, I did warn you.", "一応言っとくけど、ちゃんと警告はしたからね。")
+                 ], ipa: "/fə ðə ˈrekɔːd/"),
+            make("mix up", "to confuse two people or things, thinking one is the other",
+                 "（2つを）取り違える・混同する",
+                 useCases: ["名前や日付を間違えたとき", "書類や荷物の取り違え（a mix-up）"],
+                 examples: [
+                    ("Sorry, I always mix up the twins.", "ごめん、双子をいつも間違えちゃうんだ。"),
+                    ("There's been a bit of a mix-up with the booking.", "予約でちょっと手違いがあったみたい。")
+                 ], ipa: "/mɪks ʌp/"),
+            make("double-check", "to check something again to make sure it is correct",
+                 "再確認する・念のためもう一度確かめる",
+                 useCases: ["時間や住所を確認するとき", "ミスを防ぎたいとき"],
+                 examples: [
+                    ("Can you double-check the time? I think it's half seven, not seven.", "時間もう一回確認してくれる？7時じゃなくて7時半だと思う。"),
+                    ("I'll double-check and get back to you.", "念のため確認してまた連絡するね。")
+                 ], ipa: "/ˌdʌbl ˈtʃek/"),
+            make("take it out on", "to treat someone badly because you are upset or angry about something else",
+                 "（関係ない人に）八つ当たりする",
+                 useCases: ["イライラを人にぶつけたとき", "八つ当たりをやめてと言うとき"],
+                 examples: [
+                    ("I know you've had a bad day, but don't take it out on me.", "嫌な日だったのはわかるけど、私に八つ当たりしないで。"),
+                    ("Sorry, I shouldn't have taken it out on you.", "ごめん、君に八つ当たりするべきじゃなかった。")
+                 ], ipa: "/teɪk ɪt aʊt ɒn/"),
+            make("get the wrong idea", "to misunderstand a situation or someone's intentions",
+                 "誤解する・勘違いする",
+                 useCases: ["誤解されそうな状況を説明するとき", "変な意味じゃないと伝えるとき"],
+                 examples: [
+                    ("Don't get the wrong idea — we're just friends.", "勘違いしないでね。ただの友達だから。"),
+                    ("I didn't want him to get the wrong idea, so I explained.", "彼に誤解されたくなかったから説明したんだ。")
+                 ], ipa: "/ɡet ðə rɒŋ aɪˈdɪə/"),
+            make("get hold of", "to manage to contact someone, or to find or obtain something",
+                 "（人に）連絡がつく・（物を）手に入れる",
+                 useCases: ["電話がつながらないとき", "チケットや品物を入手するとき"],
+                 examples: [
+                    ("I've been trying to get hold of you all day!", "一日中ずっと連絡しようとしてたんだよ！"),
+                    ("Do you know where I can get hold of a phone charger?", "スマホの充電器、どこで手に入るか知ってる？")
+                 ], ipa: "/ɡet həʊld əv/"),
+            make("hand over", "to give something or someone to another person, often responsibility or control",
+                 "引き渡す・手渡す・（仕事を）引き継ぐ",
+                 useCases: ["物を渡すとき", "仕事や担当を引き継ぐとき（a handover）"],
+                 examples: [
+                    ("Could you hand over the remote? I want to watch the news.", "リモコン渡してくれる？ニュース見たいんだ。"),
+                    ("I'll hand over to Sarah while I'm on holiday.", "休暇中はサラに引き継ぐね。")
+                 ], ipa: "/hænd ˈəʊvə/"),
+            make("be meant to", "to be expected or supposed to do or be something",
+                 "〜することになっている・〜のはずだ",
+                 useCases: ["ルールや予定を話すとき", "評判を伝えるとき（It's meant to be good.）"],
+                 examples: [
+                    ("We're meant to be there by eight, so let's go.", "8時までに着くことになってるから、行こう。"),
+                    ("That new place is meant to be really good.", "あの新しい店、すごくいいらしいよ。")
+                 ], ipa: "/biː ment tə/"),
         ]
     }
     private static var britishColloquial123: [Word] {
