@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32466,6 +32466,115 @@ enum SeedData {
                     ("Always read the small print before you sign.", "サインする前に必ず細かい条件を読んでね。"),
                     ("It was hidden in the small print.", "それ、細則にこっそり書いてあったんだよ。")
                  ], ipa: "/ðə smɔːl prɪnt/"),
+        ]
+    }
+    private static var britishColloquial137: [Word] {
+        [
+            make("stuck in a rut", "in a boring situation where nothing changes and you feel you are not making progress",
+                 "マンネリ化している・同じことの繰り返しで行き詰まっている",
+                 useCases: ["仕事や生活がマンネリだと話すとき", "変化が欲しいと言うとき"],
+                 examples: [
+                    ("I feel a bit stuck in a rut at work.", "仕事がちょっとマンネリ化してる気がするんだ。"),
+                    ("A holiday might help you get out of that rut.", "旅行に行けばそのマンネリから抜け出せるかもよ。")
+                 ], ipa: "/stʌk ɪn ə rʌt/"),
+            make("put a brave face on it", "to pretend to be happy or confident when you are actually upset or worried",
+                 "平気なふりをする・気丈に振る舞う",
+                 useCases: ["つらいのに明るく振る舞っている人について話すとき", "落ち込みを隠すとき"],
+                 examples: [
+                    ("She's putting a brave face on it, but she's really upset.", "彼女は平気なふりしてるけど、本当はすごく落ち込んでるよ。"),
+                    ("I just had to put a brave face on it and carry on.", "とにかく気丈に振る舞って続けるしかなかったんだ。")
+                 ], ipa: "/pʊt ə breɪv feɪs ɒn ɪt/"),
+            make("save face", "to avoid being embarrassed or losing other people's respect",
+                 "面目を保つ・恥をかかずに済ませる",
+                 useCases: ["気まずい場面を取り繕うとき", "相手のメンツを立てるとき"],
+                 examples: [
+                    ("He only apologised to save face.", "彼はメンツを保つために謝っただけだよ。"),
+                    ("Let her change her mind quietly so she can save face.", "彼女の面目が立つように、こっそり考えを変えさせてあげよう。")
+                 ], ipa: "/seɪv feɪs/"),
+            make("tide someone over", "to help someone through a short difficult period, usually with money or food, until they get more",
+                 "（一時的に）しのがせる・つなぎになる",
+                 useCases: ["少しお金を貸すとき", "食事までの軽食について話すとき"],
+                 examples: [
+                    ("Can you lend me twenty quid to tide me over till payday?", "給料日までのつなぎに20ポンド貸してくれない？"),
+                    ("Have a biscuit to tide you over until dinner.", "夕飯までのつなぎにビスケットでも食べなよ。")
+                 ], ipa: "/taɪd ˈsʌmwʌn ˈəʊvə/"),
+            make("elbow grease", "hard physical effort, especially when cleaning or polishing something",
+                 "（掃除などの）力仕事・骨折り",
+                 useCases: ["掃除で頑張って磨くとき", "道具より努力が必要だと言うとき"],
+                 examples: [
+                    ("It'll come off — it just needs a bit of elbow grease.", "取れるよ、ちょっと力を入れてこすればね。"),
+                    ("No fancy products, just good old elbow grease.", "特別な洗剤はいらない、昔ながらの根気でゴシゴシやるだけ。")
+                 ], ipa: "/ˈelbəʊ ɡriːs/"),
+            make("go down a storm", "to be received very enthusiastically; to be very popular with people",
+                 "大好評だ・大ウケする",
+                 useCases: ["料理や出し物が大好評だったとき", "スピーチがウケたとき"],
+                 examples: [
+                    ("Your cake went down a storm at the party.", "君のケーキ、パーティーで大好評だったよ。"),
+                    ("His speech went down a storm.", "彼のスピーチは大ウケだった。")
+                 ], ipa: "/ɡəʊ daʊn ə stɔːm/"),
+            make("fend for yourself", "to take care of yourself without help from other people",
+                 "自分で何とかする・自活する",
+                 useCases: ["一人暮らしや自立について話すとき", "家族が留守で自分でご飯を用意するとき"],
+                 examples: [
+                    ("Mum's away, so we'll have to fend for ourselves this week.", "母が留守だから、今週は自分たちで何とかしないと。"),
+                    ("Living abroad taught me to fend for myself.", "海外生活で自分のことは自分でできるようになった。")
+                 ], ipa: "/fend fə jɔːˈself/"),
+            make("strapped for cash", "having very little money available at the moment",
+                 "金欠だ・お金に困っている",
+                 useCases: ["誘いを断るとき", "今月お金がないと言うとき"],
+                 examples: [
+                    ("I'd love to come, but I'm a bit strapped for cash this month.", "行きたいけど、今月ちょっと金欠なんだ。"),
+                    ("Lots of students are strapped for cash.", "金欠の学生はたくさんいるよ。")
+                 ], ipa: "/stræpt fə kæʃ/"),
+            make("dither", "to be unable to make a decision about what to do",
+                 "迷ってぐずぐずする・決めかねる",
+                 useCases: ["なかなか決められない人に言うとき", "自分が優柔不断だと話すとき"],
+                 examples: [
+                    ("Stop dithering and just pick one!", "ぐずぐず迷ってないで、どれか選びなよ！"),
+                    ("I dithered for ages before booking the flight.", "飛行機を予約するまでずいぶん迷っちゃった。")
+                 ], ipa: "/ˈdɪðə/"),
+            make("a done deal", "something that has been finally agreed or decided and cannot be changed",
+                 "決定事項・もう決まったこと",
+                 useCases: ["話がまとまったと伝えるとき", "まだ確定ではないと言うとき"],
+                 examples: [
+                    ("It's not a done deal yet, so don't tell anyone.", "まだ決定じゃないから、誰にも言わないでね。"),
+                    ("They've signed the contract — it's a done deal.", "契約書にサインしたから、もう決まりだよ。")
+                 ], ipa: "/ə dʌn diːl/"),
+            make("step on it", "to hurry up, especially when driving",
+                 "急いで・（車で）飛ばして",
+                 useCases: ["遅れそうで急がせるとき", "運転手に急いでもらうとき"],
+                 examples: [
+                    ("Step on it, or we'll miss the train!", "急いで、電車に乗り遅れちゃう！"),
+                    ("You'd better step on it if you want to get there by six.", "6時までに着きたいなら急いだほうがいいよ。")
+                 ], ipa: "/step ɒn ɪt/"),
+            make("out of line", "behaving in a way that is rude or not acceptable",
+                 "度が過ぎている・失礼だ",
+                 useCases: ["人の言動が失礼だと指摘するとき", "自分の言い過ぎを謝るとき"],
+                 examples: [
+                    ("Sorry, that comment was out of line.", "ごめん、今の発言は言い過ぎだった。"),
+                    ("He was completely out of line shouting at her like that.", "あんなふうに彼女に怒鳴るなんて、彼は完全にやり過ぎだよ。")
+                 ], ipa: "/aʊt əv laɪn/"),
+            make("clear the air", "to talk openly about a problem or disagreement in order to end bad feelings",
+                 "わだかまりを解く・腹を割って話す",
+                 useCases: ["気まずい関係を修復したいとき", "誤解を解きたいとき"],
+                 examples: [
+                    ("I think we should sit down and clear the air.", "一度座って、ちゃんと話してわだかまりを解こうよ。"),
+                    ("We had a chat and it really cleared the air.", "話し合ったら本当にすっきりしたよ。")
+                 ], ipa: "/klɪər ði eə/"),
+            make("bury the hatchet", "to stop arguing and become friends again",
+                 "仲直りする・和解する",
+                 useCases: ["喧嘩していた人たちが仲直りしたとき", "仲直りを促すとき"],
+                 examples: [
+                    ("Isn't it time you two buried the hatchet?", "そろそろ二人とも仲直りしたら？"),
+                    ("They finally buried the hatchet after years of not speaking.", "何年も口をきかなかった二人がついに和解したんだ。")
+                 ], ipa: "/ˈberi ðə ˈhætʃɪt/"),
+            make("now and again", "sometimes, but not regularly or very often",
+                 "時々・たまに",
+                 useCases: ["頻度を話すとき", "習慣についてゆるく話すとき"],
+                 examples: [
+                    ("I still see him now and again.", "彼とは今でもたまに会うよ。"),
+                    ("It's nice to treat yourself now and again.", "たまには自分にご褒美をあげるのもいいよね。")
+                 ], ipa: "/naʊ ənd əˈɡen/"),
         ]
     }
     private static var britishColloquial135: [Word] {
