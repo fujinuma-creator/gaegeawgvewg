@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32357,6 +32357,115 @@ enum SeedData {
                     ("I've done a fair amount of travelling.", "旅行はけっこうしてきた方だよ。"),
                     ("It'll take a fair amount of work, but it's doable.", "結構な手間はかかるけど、できなくはないよ。")
                  ], ipa: "/ə feər əˈmaʊnt/"),
+        ]
+    }
+    private static var britishColloquial135: [Word] {
+        [
+            make("first things first", "used to say that the most important thing should be dealt with before anything else",
+                 "まず最初に・何はともあれ",
+                 useCases: ["優先すべきことから始めるとき", "話や作業を仕切り直すとき"],
+                 examples: [
+                    ("First things first, let's get the kettle on.", "何はともあれ、まずはお湯を沸かそう。"),
+                    ("First things first — have you eaten yet?", "まず最初に、もうご飯食べた？")
+                 ], ipa: "/fɜːst θɪŋz fɜːst/"),
+            make("know-how", "practical knowledge or skill about how to do something",
+                 "ノウハウ・実践的な知識やコツ",
+                 useCases: ["技術や経験があると言うとき", "やり方がわからないと言うとき"],
+                 examples: [
+                    ("I'd love to fix it myself, but I haven't got the know-how.", "自分で直したいけど、そのノウハウがないんだ。"),
+                    ("She's got loads of know-how when it comes to gardening.", "彼女はガーデニングのことなら本当に詳しいよ。")
+                 ], ipa: "/ˈnəʊ haʊ/"),
+            make("the ball's in your court", "it is now your turn to make a decision or take action",
+                 "次はあなた次第・ボールはそっちにある",
+                 useCases: ["相手に判断を委ねるとき", "自分はやることをやったと伝えるとき"],
+                 examples: [
+                    ("I've apologised, so the ball's in her court now.", "僕はもう謝ったから、あとは彼女次第だよ。"),
+                    ("We've made our offer — the ball's in your court.", "こちらの提案は出したので、あとはそちら次第です。")
+                 ], ipa: "/ðə bɔːlz ɪn jɔː kɔːt/"),
+            make("piping hot", "(of food or drink) very hot",
+                 "アツアツの・できたての",
+                 useCases: ["料理や飲み物がとても熱いとき", "できたてを勧めるとき"],
+                 examples: [
+                    ("Careful, the soup's piping hot.", "気をつけて、スープがアツアツだよ。"),
+                    ("They serve the pies piping hot straight from the oven.", "あそこはパイをオーブンから出したてのアツアツで出してくれるんだ。")
+                 ], ipa: "/ˈpaɪpɪŋ hɒt/"),
+            make("get soaked", "to become completely wet, usually because of rain",
+                 "ずぶ濡れになる",
+                 useCases: ["雨に降られたことを話すとき", "傘を持っていくよう勧めるとき"],
+                 examples: [
+                    ("I got absolutely soaked walking home.", "歩いて帰る途中でびしょ濡れになっちゃった。"),
+                    ("Take a brolly or you'll get soaked.", "傘持っていきな、じゃないとずぶ濡れになるよ。")
+                 ], ipa: "/ɡet səʊkt/"),
+            make("behind someone's back", "without someone knowing, often in an unfair or unkind way",
+                 "（人の）陰で・こっそり",
+                 useCases: ["陰口や隠し事について話すとき", "裏でこそこそされて怒るとき"],
+                 examples: [
+                    ("I can't believe they were talking about me behind my back.", "陰で私のこと話してたなんて信じられない。"),
+                    ("He went behind his boss's back and emailed the client.", "彼は上司に黙ってクライアントにメールしたんだ。")
+                 ], ipa: "/bɪˈhaɪnd ˈsʌmwʌnz bæk/"),
+            make("a white lie", "a small, harmless lie told to avoid hurting someone's feelings",
+                 "罪のない嘘・優しい嘘",
+                 useCases: ["相手を傷つけないための嘘について話すとき", "ちょっとした言い訳を認めるとき"],
+                 examples: [
+                    ("I told her I loved the jumper — just a white lie.", "そのセーター気に入ったって言ったけど、ちょっとした優しい嘘だよ。"),
+                    ("Everyone tells the odd white lie now and then.", "誰だってたまには罪のない嘘をつくものだよ。")
+                 ], ipa: "/ə waɪt laɪ/"),
+            make("take a breather", "to stop for a short rest",
+                 "ひと息つく・小休憩する",
+                 useCases: ["作業の途中で休憩を提案するとき", "疲れて少し休みたいとき"],
+                 examples: [
+                    ("Let's take a breather before we tackle the next bit.", "次に取りかかる前にひと息つこう。"),
+                    ("I just need to take a breather for five minutes.", "5分だけちょっと休憩させて。")
+                 ], ipa: "/teɪk ə ˈbriːðə/"),
+            make("pace yourself", "to do something at a steady speed so you don't get too tired too early",
+                 "ペース配分する・無理しすぎない",
+                 useCases: ["飲み会や運動で飛ばしすぎな人に言うとき", "長丁場の仕事に取り組むとき"],
+                 examples: [
+                    ("It's a long night, so pace yourself.", "長い夜になるから、ペース配分してね。"),
+                    ("I'm trying to pace myself with all this revision.", "この試験勉強、無理しすぎないようにペース配分してるんだ。")
+                 ], ipa: "/peɪs jɔːˈself/"),
+            make("change of plan", "a situation where what you intended to do has been changed",
+                 "予定変更",
+                 useCases: ["予定が変わったことを伝えるとき", "急に別の案に切り替えるとき"],
+                 examples: [
+                    ("Change of plan — we're meeting at the station instead.", "予定変更！代わりに駅で集合ね。"),
+                    ("Sorry, there's been a change of plan.", "ごめん、予定が変わっちゃったんだ。")
+                 ], ipa: "/tʃeɪndʒ əv plæn/"),
+            make("get the message", "to understand what someone is trying to tell you, often indirectly",
+                 "（言いたいことを）察する・理解する",
+                 useCases: ["遠回しな意図を理解したとき", "相手に察してほしいとき"],
+                 examples: [
+                    ("Alright, I get the message — you want me to leave.", "わかったよ、察したよ。帰ってほしいんでしょ。"),
+                    ("I didn't reply for a week and he finally got the message.", "一週間返信しなかったら、彼もやっと察したみたい。")
+                 ], ipa: "/ɡet ðə ˈmesɪdʒ/"),
+            make("the sooner the better", "it would be best if something happened as soon as possible",
+                 "早ければ早いほどいい",
+                 useCases: ["急ぎであることを伝えるとき", "いつがいいか聞かれたとき"],
+                 examples: [
+                    ("When do you need it by?\" \"The sooner the better.", "「いつまでに必要？」「早ければ早いほどいいな。」"),
+                    ("If you're going to book, the sooner the better.", "予約するなら早いに越したことはないよ。")
+                 ], ipa: "/ðə ˈsuːnə ðə ˈbetə/"),
+            make("ask around", "to ask several people for information or help",
+                 "あちこち聞いて回る・周りに聞いてみる",
+                 useCases: ["情報を集めると言うとき", "知り合いに当たってみると言うとき"],
+                 examples: [
+                    ("I'll ask around and see if anyone's got a spare charger.", "誰か予備の充電器持ってないか聞いてみるね。"),
+                    ("If you're looking for a good dentist, ask around.", "いい歯医者を探してるなら、周りに聞いてみなよ。")
+                 ], ipa: "/ɑːsk əˈraʊnd/"),
+            make("go overboard", "to do something too much or with too much enthusiasm",
+                 "やりすぎる・張り切りすぎる",
+                 useCases: ["準備や買い物をやりすぎたとき", "相手にほどほどにと言うとき"],
+                 examples: [
+                    ("Don't go overboard — it's only a small party.", "やりすぎないでね、ちょっとしたパーティーなんだから。"),
+                    ("I went a bit overboard with the Christmas presents.", "クリスマスプレゼント、ちょっと張り切りすぎちゃった。")
+                 ], ipa: "/ɡəʊ ˈəʊvəbɔːd/"),
+            make("been there, done that", "used to say you have already experienced something and are not excited by it",
+                 "それはもう経験済み・わかるよ、通った道だ",
+                 useCases: ["もう経験したことだと言うとき", "相手の苦労に共感するとき"],
+                 examples: [
+                    ("Sleepless nights with a newborn? Been there, done that.", "新生児で眠れない夜？それ、通った道だよ。"),
+                    ("Backpacking round Europe? Been there, done that.", "ヨーロッパをバックパック旅行？もう経験済みだよ。")
+                 ], ipa: "/biːn ðeə dʌn ðæt/"),
         ]
     }
     private static var britishColloquial134: [Word] {
