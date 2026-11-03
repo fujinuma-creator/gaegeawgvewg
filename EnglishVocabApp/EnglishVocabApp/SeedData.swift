@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32684,6 +32684,115 @@ enum SeedData {
                     ("You're spreading yourself too thin — just focus on one thing.", "手を広げすぎだよ。一つに集中しなよ。"),
                     ("I said no because I didn't want to spread myself too thin.", "抱えすぎたくなかったから断ったんだ。")
                  ], ipa: "/spred jɔːˈself tuː θɪn/"),
+        ]
+    }
+    private static var britishColloquial139: [Word] {
+        [
+            make("food for thought", "an idea or piece of information that makes you think carefully",
+                 "考えさせられること・考える材料",
+                 useCases: ["話や記事が印象に残ったとき", "相手の意見を前向きに受け止めるとき"],
+                 examples: [
+                    ("That talk really gave me food for thought.", "あの話には本当に考えさせられたよ。"),
+                    ("Thanks, that's food for thought — I'll think it over.", "ありがとう、参考になるよ。よく考えてみる。")
+                 ], ipa: "/fuːd fə θɔːt/"),
+            make("bite off more than you can chew", "to try to do more than you are able to manage",
+                 "手に負えないことを引き受ける・無理をする",
+                 useCases: ["仕事や予定を詰め込みすぎたとき", "無理な挑戦に注意するとき"],
+                 examples: [
+                    ("I think I've bitten off more than I can chew with this project.", "このプロジェクト、ちょっと手に負えないことを引き受けちゃったかも。"),
+                    ("Don't bite off more than you can chew — start small.", "無理しないで、まずは小さく始めなよ。")
+                 ], ipa: "/baɪt ɒf mɔː ðən juː kən tʃuː/"),
+            make("think outside the box", "to think in a new, creative or unusual way",
+                 "型にはまらない発想をする・柔軟に考える",
+                 useCases: ["新しいアイデアが必要なとき", "創造的な人を褒めるとき"],
+                 examples: [
+                    ("We need to think outside the box to solve this.", "これを解決するには発想を変えないとね。"),
+                    ("She's great at thinking outside the box.", "彼女は型にはまらない発想が得意なんだ。")
+                 ], ipa: "/θɪŋk ˌaʊtˈsaɪd ðə bɒks/"),
+            make("cut to the chase", "to get to the most important point without wasting time",
+                 "本題に入る・要点を言う",
+                 useCases: ["前置きを省いて話したいとき", "相手に要点を促すとき"],
+                 examples: [
+                    ("Let me cut to the chase — we're over budget.", "単刀直入に言うと、予算オーバーなんだ。"),
+                    ("Can you just cut to the chase? What happened?", "要点だけ言ってくれる？何があったの？")
+                 ], ipa: "/kʌt tə ðə tʃeɪs/"),
+            make("bounce back", "to recover quickly after a difficult time, illness or failure",
+                 "立ち直る・回復する",
+                 useCases: ["失敗や病気から回復したとき", "落ち込んでいる人を励ますとき"],
+                 examples: [
+                    ("Don't worry, you'll bounce back in no time.", "大丈夫、すぐに立ち直れるよ。"),
+                    ("The team bounced back after losing the first match.", "チームは初戦で負けたあと、見事に巻き返した。")
+                 ], ipa: "/baʊns bæk/"),
+            make("by the skin of your teeth", "only just; by a very small margin",
+                 "間一髪で・ぎりぎりで",
+                 useCases: ["ぎりぎり間に合ったとき", "かろうじて成功したとき"],
+                 examples: [
+                    ("We caught the train by the skin of our teeth.", "ぎりぎりで電車に間に合ったよ。"),
+                    ("I passed the exam by the skin of my teeth.", "試験はなんとかギリギリで受かった。")
+                 ], ipa: "/baɪ ðə skɪn əv jə tiːθ/"),
+            make("wishful thinking", "believing something is true or will happen because you want it to, not because it is likely",
+                 "希望的観測・甘い考え",
+                 useCases: ["期待が現実的でないと言うとき", "自分の願望を自嘲するとき"],
+                 examples: [
+                    ("Finishing by Friday? That's just wishful thinking.", "金曜までに終わらせる？それは希望的観測だよ。"),
+                    ("Maybe it'll be sunny tomorrow — or is that wishful thinking?", "明日は晴れるかも…って、甘い考えかな？")
+                 ], ipa: "/ˈwɪʃfəl ˈθɪŋkɪŋ/"),
+            make("pass with flying colours", "to succeed very easily and with a high score",
+                 "楽々合格する・好成績でパスする",
+                 useCases: ["試験やテストに見事合格したとき", "人の成功を褒めるとき"],
+                 examples: [
+                    ("She passed her driving test with flying colours.", "彼女は運転免許の試験に楽々合格したよ。"),
+                    ("Don't stress — you'll pass with flying colours.", "心配しないで、余裕で受かるよ。")
+                 ], ipa: "/pɑːs wɪð ˈflaɪɪŋ ˈkʌləz/"),
+            make("step up", "to take on more responsibility or make more effort when it is needed",
+                 "名乗り出る・一段と頑張る・責任を引き受ける",
+                 useCases: ["誰かが率先して動いたとき", "もっと頑張ってほしいと言うとき"],
+                 examples: [
+                    ("When our manager left, Tom really stepped up.", "マネージャーが辞めたとき、トムが本当に頑張ってくれた。"),
+                    ("We need someone to step up and take charge.", "誰かが名乗り出て仕切ってくれないと。")
+                 ], ipa: "/step ʌp/"),
+            make("tie up loose ends", "to finish the small remaining tasks or details of something",
+                 "残りの細かいことを片付ける",
+                 useCases: ["休暇や退職前の作業について話すとき", "仕事の締めくくりをするとき"],
+                 examples: [
+                    ("I just need to tie up a few loose ends before my holiday.", "休みの前に細かい仕事をいくつか片付けないと。"),
+                    ("Let's tie up the loose ends tomorrow morning.", "残りの細かいことは明日の朝片付けよう。")
+                 ], ipa: "/taɪ ʌp luːs endz/"),
+            make("set in stone", "fixed and impossible to change",
+                 "確定している・変更できない",
+                 useCases: ["予定や計画がまだ変更可能だと言うとき", "決定事項を確認するとき"],
+                 examples: [
+                    ("The dates aren't set in stone yet, so we can move them.", "日程はまだ確定じゃないから、ずらせるよ。"),
+                    ("Nothing's set in stone — it's just a rough plan.", "何も決まってないよ、ただの大まかな計画だから。")
+                 ], ipa: "/set ɪn stəʊn/"),
+            make("draw a blank", "to fail to remember something or to get any result or answer",
+                 "思い出せない・空振りに終わる",
+                 useCases: ["名前などがどうしても思い出せないとき", "探しても何も見つからなかったとき"],
+                 examples: [
+                    ("I know his face, but I'm drawing a blank on his name.", "顔はわかるけど、名前がどうしても出てこない。"),
+                    ("I asked around, but I drew a blank.", "色々聞いて回ったけど、何もわからなかった。")
+                 ], ipa: "/drɔː ə blæŋk/"),
+            make("drop the ball", "to make a mistake, especially by forgetting to do something you were responsible for",
+                 "へまをする・やるべきことを忘れる",
+                 useCases: ["自分のミスを認めるとき", "担当者がやり損ねたとき"],
+                 examples: [
+                    ("Sorry, I dropped the ball on that email.", "ごめん、あのメールすっかり忘れてた。"),
+                    ("Someone dropped the ball and nobody booked the room.", "誰かがへまして、部屋を予約してなかったんだ。")
+                 ], ipa: "/drɒp ðə bɔːl/"),
+            make("play it safe", "to avoid risks by being careful",
+                 "安全策をとる・無難にいく",
+                 useCases: ["慎重な選択をするとき", "リスクを避けるよう勧めるとき"],
+                 examples: [
+                    ("I'll play it safe and take an umbrella.", "念のため傘を持っていくよ。"),
+                    ("Let's play it safe and leave a bit earlier.", "無難に少し早めに出よう。")
+                 ], ipa: "/pleɪ ɪt seɪf/"),
+            make("the icing on the cake", "something extra that makes a good situation even better",
+                 "さらに嬉しいおまけ・駄目押しの良いこと",
+                 useCases: ["良いことに更に良いことが重なったとき", "最高の締めくくりを表すとき"],
+                 examples: [
+                    ("The food was great, and the view was the icing on the cake.", "料理も最高だったし、景色がさらに花を添えてくれた。"),
+                    ("Getting a bonus as well was the icing on the cake.", "ボーナスまでもらえたのは嬉しいおまけだったよ。")
+                 ], ipa: "/ði ˈaɪsɪŋ ɒn ðə keɪk/"),
         ]
     }
     private static var britishColloquial135: [Word] {
