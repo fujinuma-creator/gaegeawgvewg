@@ -8,7 +8,7 @@ struct ConversationView: View {
     @Binding var path: NavigationPath
 
     @AppStorage("lingro.doneConversations") private var doneRaw: String = ""
-    @State private var playingLine: UUID? = nil
+    @State private var playingLine: Int? = nil
 
     private var conversation: TopicConversation? { TopicSeed.all.first { $0.id == conversationId } }
 
