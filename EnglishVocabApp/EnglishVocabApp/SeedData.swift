@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -32575,6 +32575,115 @@ enum SeedData {
                     ("I still see him now and again.", "彼とは今でもたまに会うよ。"),
                     ("It's nice to treat yourself now and again.", "たまには自分にご褒美をあげるのもいいよね。")
                  ], ipa: "/naʊ ənd əˈɡen/"),
+        ]
+    }
+    private static var britishColloquial138: [Word] {
+        [
+            make("draw the line", "to set a limit on what you are willing to accept or do",
+                 "線引きをする・そこまではしない",
+                 useCases: ["許せることと許せないことの境界を言うとき", "頼みごとを断るとき"],
+                 examples: [
+                    ("I don't mind helping, but I draw the line at lying for him.", "手伝うのは構わないけど、彼のために嘘をつくのはごめんだよ。"),
+                    ("You have to draw the line somewhere.", "どこかで線引きしないとね。")
+                 ], ipa: "/drɔː ðə laɪn/"),
+            make("jump to conclusions", "to decide something is true too quickly, before you know all the facts",
+                 "早合点する・結論を急ぐ",
+                 useCases: ["相手の思い込みをなだめるとき", "事実を確かめたいとき"],
+                 examples: [
+                    ("Let's not jump to conclusions — he might just be stuck in traffic.", "早合点はやめよう。単に渋滞にはまってるだけかもしれないし。"),
+                    ("Sorry, I jumped to conclusions.", "ごめん、早とちりしちゃった。")
+                 ], ipa: "/dʒʌmp tə kənˈkluːʒənz/"),
+            make("jump the gun", "to do something too soon, before the right time",
+                 "フライングする・先走る",
+                 useCases: ["発表や行動が早すぎたとき", "焦りすぎを指摘するとき"],
+                 examples: [
+                    ("I think we jumped the gun by booking the hotel before the dates were confirmed.", "日程が決まる前にホテルを予約したのは先走りすぎたね。"),
+                    ("Don't jump the gun — wait until they make an offer.", "先走らないで、向こうがオファーを出すまで待ちなよ。")
+                 ], ipa: "/dʒʌmp ðə ɡʌn/"),
+            make("a slip of the tongue", "a small mistake when speaking, saying something you did not intend",
+                 "言い間違い・口が滑ること",
+                 useCases: ["言い間違いを訂正するとき", "うっかり言ってしまったとき"],
+                 examples: [
+                    ("Sorry, I meant Tuesday — slip of the tongue.", "ごめん、火曜日のことね。言い間違えた。"),
+                    ("Calling her by his ex's name was just a slip of the tongue.", "元カノの名前で呼んじゃったのは、ただの言い間違いだよ。")
+                 ], ipa: "/ə slɪp əv ðə tʌŋ/"),
+            make("a recipe for disaster", "something that is very likely to cause problems or go badly wrong",
+                 "失敗のもと・大惨事を招くもの",
+                 useCases: ["無謀な計画に注意するとき", "悪い組み合わせを指摘するとき"],
+                 examples: [
+                    ("No sleep and a long drive? That's a recipe for disaster.", "寝不足で長距離運転？それは事故のもとだよ。"),
+                    ("Working with your ex sounds like a recipe for disaster.", "元恋人と一緒に働くなんて、トラブルのもとにしか聞こえない。")
+                 ], ipa: "/ə ˈresəpi fə dɪˈzɑːstə/"),
+            make("what goes around comes around", "the way you treat others, good or bad, will eventually happen to you too",
+                 "因果応報・自分のしたことは返ってくる",
+                 useCases: ["意地悪な人が痛い目にあったとき", "親切は報われると言うとき"],
+                 examples: [
+                    ("He cheated everyone and now he's lost his job — what goes around comes around.", "みんなを騙してたけど、結局クビになった。因果応報だね。"),
+                    ("Be kind to people. What goes around comes around.", "人には優しくね。自分に返ってくるから。")
+                 ], ipa: "/wɒt ɡəʊz əˈraʊnd kʌmz əˈraʊnd/"),
+            make("mind your own business", "used to tell someone, often rudely, not to ask about or interfere in your private matters",
+                 "余計なお世話だ・人のことに口を出さないで",
+                 useCases: ["詮索されたとき", "他人のことに首を突っ込まないよう言うとき"],
+                 examples: [
+                    ("It's none of your business — mind your own business!", "あなたには関係ないでしょ、余計なお世話！"),
+                    ("I try to mind my own business at work.", "職場では人のことに口出ししないようにしてる。")
+                 ], ipa: "/maɪnd jər əʊn ˈbɪznəs/"),
+            make("keep your cool", "to stay calm in a difficult or annoying situation",
+                 "冷静さを保つ・キレない",
+                 useCases: ["トラブル時に落ち着いていた人を褒めるとき", "怒りをこらえるとき"],
+                 examples: [
+                    ("I was furious, but I managed to keep my cool.", "めちゃくちゃ腹が立ったけど、なんとか冷静でいられた。"),
+                    ("You kept your cool really well in that meeting.", "あの会議でよく冷静でいられたね。")
+                 ], ipa: "/kiːp jə kuːl/"),
+            make("tell someone off", "to speak angrily to someone because they have done something wrong",
+                 "（人を）叱る・注意する",
+                 useCases: ["怒られた話をするとき", "子どもや部下を注意するとき"],
+                 examples: [
+                    ("I got told off for being late again.", "また遅刻して怒られちゃった。"),
+                    ("She told the kids off for making a mess.", "彼女は散らかした子どもたちを叱った。")
+                 ], ipa: "/tel ˈsʌmwʌn ɒf/"),
+            make("come clean", "to finally tell the truth about something you have been hiding",
+                 "白状する・正直に打ち明ける",
+                 useCases: ["隠し事を打ち明けるとき", "正直に言うよう促すとき"],
+                 examples: [
+                    ("I think you should come clean and tell her what happened.", "正直に何があったか彼女に話した方がいいと思う。"),
+                    ("He finally came clean about breaking the vase.", "彼はついに花瓶を割ったことを白状した。")
+                 ], ipa: "/kʌm kliːn/"),
+            make("in hot water", "in trouble, usually because you have done something wrong",
+                 "困ったことになって・まずい立場で",
+                 useCases: ["誰かが叱られそうな状況を言うとき", "トラブルに巻き込まれたとき"],
+                 examples: [
+                    ("He's in hot water with his boss for missing the deadline.", "締め切りに遅れて、彼は上司ににらまれてる。"),
+                    ("If Mum finds out, we'll be in hot water.", "お母さんにバレたら、まずいことになるよ。")
+                 ], ipa: "/ɪn hɒt ˈwɔːtə/"),
+            make("a steep learning curve", "a situation where you have to learn a lot of new things very quickly",
+                 "覚えることが一気に多い状況・習得が大変",
+                 useCases: ["新しい仕事や環境に慣れる大変さを言うとき", "成長の機会を話すとき"],
+                 examples: [
+                    ("The new job's been a steep learning curve, but I'm enjoying it.", "新しい仕事は覚えることだらけだけど、楽しんでるよ。"),
+                    ("Moving abroad was a steep learning curve for the whole family.", "海外移住は家族全員にとって学ぶことの多い経験だった。")
+                 ], ipa: "/ə stiːp ˈlɜːnɪŋ kɜːv/"),
+            make("to die for", "extremely good or attractive; something you really want",
+                 "最高の・たまらなくいい",
+                 useCases: ["料理やケーキを絶賛するとき", "素敵な景色や物を褒めるとき"],
+                 examples: [
+                    ("Their chocolate cake is to die for.", "あそこのチョコレートケーキは最高だよ。"),
+                    ("The flat has a view to die for.", "そのフラットの眺めはたまらなくいいんだ。")
+                 ], ipa: "/tə daɪ fɔː/"),
+            make("sneaky", "doing things secretly or in a slightly dishonest way; also used playfully",
+                 "ずるい・こっそりした",
+                 useCases: ["こっそり何かした人をからかうとき", "ずるい手を使った人を責めるとき"],
+                 examples: [
+                    ("You sneaky thing — you finished the biscuits!", "ずるいなあ、ビスケット全部食べちゃったでしょ！"),
+                    ("Fancy a sneaky drink after work?", "仕事のあと、ちょっとだけ一杯どう？")
+                 ], ipa: "/ˈsniːki/"),
+            make("spread yourself too thin", "to try to do too many things at the same time so you cannot do any of them well",
+                 "手を広げすぎる・色々抱えすぎる",
+                 useCases: ["予定や仕事を詰め込みすぎている人に言うとき", "断る理由を説明するとき"],
+                 examples: [
+                    ("You're spreading yourself too thin — just focus on one thing.", "手を広げすぎだよ。一つに集中しなよ。"),
+                    ("I said no because I didn't want to spread myself too thin.", "抱えすぎたくなかったから断ったんだ。")
+                 ], ipa: "/spred jɔːˈself tuː θɪn/"),
         ]
     }
     private static var britishColloquial135: [Word] {
