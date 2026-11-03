@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-/// The English accent used for all playback. Picked on the Home screen and
+/// The English accent used for all playback. Picked in 設定 → 音声 and
 /// stored in UserDefaults under `EnglishAccent.storageKey`.
 enum EnglishAccent: String, CaseIterable, Identifiable {
     case american = "us"
@@ -75,8 +75,6 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
         }
     }
 
-    var pitch: Float { 1.0 }
-
     /// The accent currently chosen by the user.
     static var current: EnglishAccent {
         let raw = UserDefaults.standard.string(forKey: storageKey) ?? ""
@@ -84,111 +82,76 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
     }
 }
 
+/// English text-to-speech. The accent and base speed come from `AppSettings`;
+/// a second consecutive tap on the same text plays it at quarter speed, the
+/// tap after that is back to normal.
 final class SpeechManager {
     static let shared = SpeechManager()
     private let synthesizer = AVSpeechSynthesizer()
+    private var lastSpokenText: String?
     private var cachedVoice: AVSpeechSynthesisVoice?
     private var cachedAccent: EnglishAccent?
 
-    /// The text spoken by the previous `speak` call. Used to detect a second
-    /// consecutive tap on the same button so it can be played back slowly.
-    private var lastSpokenText: String?
-
-    /// A second consecutive tap on the same text plays it at quarter speed;
-    /// the tap after that is back to full speed, and so on.
+    /// Second consecutive tap on the same text → 0.25×.
     private let repeatFactor: Float = 0.25
 
     private init() {
-        configurePlaybackSession()
-    }
-
-    /// Puts the audio session back into playback mode. Called at launch and
-    /// again after the pronunciation recorder has had the microphone, so the
-    /// speaker buttons keep playing through the loudspeaker.
-    func configurePlaybackSession() {
         let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(
-            .playback,
-            mode: .spokenAudio,
-            options: [.mixWithOthers, .duckOthers]
-        )
+        try? session.setCategory(.playback, mode: .spokenAudio, options: [.mixWithOthers, .duckOthers])
         try? session.setActive(true, options: .notifyOthersOnDeactivation)
     }
 
-    /// Speaks `text`. The first tap plays at normal speed; a second
-    /// consecutive tap on the same button plays at 0.25×; a third is back to
-    /// normal, and so on. Tapping a different text resets to normal speed.
-    /// Words and sentences behave the same way.
-    ///
-    /// The accent comes from the Home-screen setting; `language` is kept only
-    /// for callers that pass something other than English. `slowed` is
-    /// accepted for source compatibility and no longer changes the speed.
-    func speak(_ text: String, language: String? = nil, rate: Float = 0.50, slowed: Bool = true) {
+    func speak(_ text: String, slow: Bool = false) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
+        if synthesizer.isSpeaking { synthesizer.stopSpeaking(at: .immediate) }
 
-        if synthesizer.isSpeaking {
-            synthesizer.stopSpeaking(at: .immediate)
-        }
-
-        let accent = EnglishAccent.current
-
-        // First tap → 1×; second consecutive tap on the same text → 0.25×;
-        // then reset so the next tap on it is 1× again.
-        let isRepeat = (trimmed == lastSpokenText)
-        let factor: Float = isRepeat ? repeatFactor : 1.0
-        let effectiveRate = max(rate * factor, AVSpeechUtteranceMinimumSpeechRate)
+        let settings = AppSettings.shared
+        let isRepeat = trimmed == lastSpokenText
         lastSpokenText = isRepeat ? nil : trimmed
 
-        let utterance = AVSpeechUtterance(string: trimmed)
-        if let language, !language.hasPrefix("en") {
-            utterance.voice = AVSpeechSynthesisVoice(language: language)
-        } else {
-            utterance.voice = bestVoice(for: accent)
-        }
-        utterance.rate = effectiveRate
-        utterance.pitchMultiplier = accent.pitch
-        utterance.preUtteranceDelay = 0
-        utterance.postUtteranceDelay = 0
-        synthesizer.speak(utterance)
+        var rate = Float(settings.speechRate) * AVSpeechUtteranceDefaultSpeechRate
+        if slow || isRepeat { rate *= repeatFactor }
+        rate = max(AVSpeechUtteranceMinimumSpeechRate, min(rate, AVSpeechUtteranceMaximumSpeechRate))
+
+        let u = AVSpeechUtterance(string: trimmed)
+        u.voice = bestVoice(for: settings.accent)
+        u.rate = rate
+        u.preUtteranceDelay = 0
+        u.postUtteranceDelay = 0
+        synthesizer.speak(u)
     }
 
     func stop() {
-        if synthesizer.isSpeaking {
-            synthesizer.stopSpeaking(at: .immediate)
-        }
+        if synthesizer.isSpeaking { synthesizer.stopSpeaking(at: .immediate) }
         lastSpokenText = nil
     }
 
-    /// Name of the voice that will actually be used for the given accent,
-    /// e.g. "Daniel (Enhanced)". Shown next to the picker so the user can see
-    /// whether the high-quality voice is installed.
+    /// e.g. "Daniel（拡張）" for the settings screen, so it is obvious when the
+    /// Enhanced / Premium voice still needs downloading.
     func voiceDescription(for accent: EnglishAccent) -> String {
         guard let v = pickVoice(for: accent) else { return "音声なし" }
-        let quality: String
+        let q: String
         switch v.quality {
-        case .premium:  quality = "プレミアム"
-        case .enhanced: quality = "拡張"
-        default:        quality = "標準"
+        case .premium: q = "プレミアム"
+        case .enhanced: q = "拡張"
+        default: q = "標準"
         }
-        return "\(v.name)（\(quality)）"
+        return "\(v.name)（\(q)）"
     }
 
-    /// Picks the most natural-sounding installed voice for the accent.
-    /// Premium (neural) > Enhanced > Default; within the same quality tier,
-    /// the accent's preferred names win. The best results need the
-    /// Enhanced/Premium voices downloaded in iOS Settings (Accessibility →
-    /// Spoken Content → Voices).
     private func bestVoice(for accent: EnglishAccent) -> AVSpeechSynthesisVoice? {
-        if let cached = cachedVoice, cachedAccent == accent {
-            return cached
-        }
+        if let cached = cachedVoice, cachedAccent == accent { return cached }
         let chosen = pickVoice(for: accent)
         cachedVoice = chosen
         cachedAccent = accent
         return chosen
     }
 
+    /// Premium (neural) > Enhanced > Default; within the same quality tier
+    /// the accent's preferred names win. The best results need the
+    /// Enhanced / Premium voices downloaded in iOS Settings (Accessibility →
+    /// Spoken Content → Voices → English).
     private func pickVoice(for accent: EnglishAccent) -> AVSpeechSynthesisVoice? {
         let all = AVSpeechSynthesisVoice.speechVoices()
 

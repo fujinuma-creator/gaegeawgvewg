@@ -1,232 +1,135 @@
 import Foundation
+import SwiftUI
 
-struct ExampleSentence: Codable, Identifiable, Hashable {
+// MARK: - Review stage (1日後 → 1週間後 → 2週間後 → 1ヶ月後)
+
+enum ReviewStage: Int, Codable, CaseIterable {
+    case day1 = 0, week1, week2, month1
+
+    var label: String {
+        switch self {
+        case .day1:   return "1日後"
+        case .week1:  return "1週間後"
+        case .week2:  return "2週間後"
+        case .month1: return "1ヶ月後"
+        }
+    }
+
+    var intervalDays: Int {
+        switch self {
+        case .day1:   return 1
+        case .week1:  return 7
+        case .week2:  return 14
+        case .month1: return 30
+        }
+    }
+
+    var color: Color {
+        switch self {
+        case .day1:   return Palette.stageRed
+        case .week1:  return Palette.stageYellow
+        case .week2:  return Palette.stageBlue
+        case .month1: return Palette.stageTeal
+        }
+    }
+
+    var next: ReviewStage { ReviewStage(rawValue: min(rawValue + 1, 3))! }
+}
+
+// MARK: - Word
+
+/// 例文・関連表現: 英語 / 発音記号 / 日本語.
+struct Example: Codable, Identifiable, Hashable {
     var id = UUID()
     var english: String
+    var ipa: String        // British-RP IPA, may be empty
     var japanese: String
-    /// Pre-generated Japanese explanation of the grammar / usage of this
-    /// example sentence (e.g. why "I've decided" rather than "I decided").
-    /// Optional for backward compatibility with examples saved before this
-    /// field existed and for the seed data that ships without explanations.
-    var grammar: String? = nil
 
-    enum CodingKeys: String, CodingKey {
-        case english, japanese, grammar
+    enum CodingKeys: String, CodingKey { case english, ipa, japanese }
+
+    init(english: String, ipa: String, japanese: String) {
+        self.english = english; self.ipa = ipa; self.japanese = japanese
+    }
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        english = try c.decode(String.self, forKey: .english)
+        ipa = try c.decodeIfPresent(String.self, forKey: .ipa) ?? ""
+        japanese = try c.decodeIfPresent(String.self, forKey: .japanese) ?? ""
     }
 
-    /// British-RP IPA for the whole sentence, looked up by the English text
-    /// in `ExampleIPA` (generated for every seed example). Nil for examples
-    /// the user wrote or regenerated themselves.
-    var ipa: String? {
-        ExampleIPA.lookup(english)
-    }
-}
-
-struct SynonymGroup: Codable, Identifiable, Hashable {
-    var id = UUID()
-    var word: String
-    var meaning: String
-    var definitionEnglish: String
-    var useCases: [String]
-    var examples: [ExampleSentence]
-
-    enum CodingKeys: String, CodingKey {
-        case word, meaning, definitionEnglish, useCases, examples
-    }
-}
-
-enum WordStatus: String, Codable, CaseIterable {
-    case unlearned   // 未習得
-    case fuzzy       // あいまい
-    case perfect     // 完璧
-
-    var label: String {
-        switch self {
-        case .unlearned: return "未習得"
-        case .fuzzy:     return "あいまい"
-        case .perfect:   return "完璧"
-        }
-    }
-
-    var symbol: String {
-        switch self {
-        case .unlearned: return ""
-        case .fuzzy:     return "△"
-        case .perfect:   return "◎"
-        }
-    }
-}
-
-enum ReviewMark: String, Codable {
-    case perfect      // ◎ 完璧
-    case fuzzy        // △ あいまい
-    case forgot       // × わからない
-
-    var symbol: String {
-        switch self {
-        case .perfect: return "◎"
-        case .fuzzy:   return "△"
-        case .forgot:  return "×"
-        }
-    }
-
-    var label: String {
-        switch self {
-        case .perfect: return "完璧"
-        case .fuzzy:   return "あいまい"
-        case .forgot:  return "わからない"
-        }
-    }
+    /// IPA wrapped in exactly one pair of slashes (empty stays empty).
+    var ipaDisplay: String { Word.slashed(ipa) }
 }
 
 struct Word: Codable, Identifiable, Hashable {
-    var id: UUID = UUID()
-    var word: String
-    /// British English IPA transcription, e.g. /ˈrɛvənjuː/. Optional —
-    /// older saved words and entries that haven't been transcribed yet
-    /// won't have one.
-    var ipa: String? = nil
-    var definitionEnglish: String
-    var definitionJapanese: String
+    var id: String                 // stable seed id ("s:come up with") or "u-…" for user words
+    var word: String               // 英語
+    var ipa: String                // 発音記号（イギリス英語）
+    var japanese: String           // 日本語の意味
+    var definition: String         // 英語の定義（English explanation）
     var useCases: [String]
-    var examples: [ExampleSentence]
-    var synonyms: [SynonymGroup]
+    var examples: [Example]
+    var related: [Example]         // 関連表現 (english / ipa / japanese)
 
-    // Review state
+    // 学習状態
+    var stage: Int = 0             // ReviewStage.rawValue
     var reviewCount: Int = 0
-    var status: WordStatus = .unlearned
-    var nextReviewDate: Date = Date()
+    var nextReviewDate: Date = Date().startOfDay
     var lastReviewedDate: Date? = nil
     var createdAt: Date = Date()
+    var checked: Bool = false
+    var learned: Bool = false      // 1ヶ月後の段階で思い出せた
 
-    /// When the user manually pinned this word to the focused review list.
-    /// Entries automatically expire 7 days after they are added.
-    var addedToReviewListAt: Date? = nil
+    var reviewStage: ReviewStage { ReviewStage(rawValue: stage) ?? .day1 }
 
-    /// When this word was auto-selected into the weekly review set. The set
-    /// is refreshed once a week (500 random words), and words picked one
-    /// week are excluded from the immediately following week's pick.
-    var weeklyReviewAt: Date? = nil
+    /// 会話頻度 ★1〜5（頻度リストにある語のみ）。
+    var frequency: Int? { RankedSeed.frequency(of: word) }
 
-    /// Per-quiz-mode "正解した回数". Keys are QuizMode.modeKey strings:
-    /// "definition", "translation". A word is considered
-    /// 復習完了 in a mode once its count reaches 4. Independent of the
-    /// overall reviewCount used by the card view.
-    var modeCounts: [String: Int] = [:]
+    var ipaDisplay: String { Self.slashed(ipa) }
 
-    /// Per-quiz-mode next review date (Ebbinghaus). Mirrors modeCounts:
-    /// each (word, mode) pair gets its own due date.
-    var modeNextReviewDates: [String: Date] = [:]
+    static func slashed(_ s: String) -> String {
+        let bare = s.trimmingCharacters(in: CharacterSet(charactersIn: "/ "))
+        return bare.isEmpty ? "" : "/\(bare)/"
+    }
 
     enum CodingKeys: String, CodingKey {
-        case id, word, ipa, definitionEnglish, definitionJapanese, useCases,
-             examples, synonyms,
-             reviewCount, status, nextReviewDate, lastReviewedDate, createdAt,
-             addedToReviewListAt, weeklyReviewAt,
-             modeCounts, modeNextReviewDates
+        case id, word, ipa, japanese, definition, useCases, examples, related,
+             stage, reviewCount, nextReviewDate, lastReviewedDate, createdAt, checked, learned
     }
 
-    init(
-        id: UUID = UUID(),
-        word: String,
-        ipa: String? = nil,
-        definitionEnglish: String,
-        definitionJapanese: String,
-        useCases: [String],
-        examples: [ExampleSentence],
-        synonyms: [SynonymGroup] = [],
-        reviewCount: Int = 0,
-        status: WordStatus = .unlearned,
-        nextReviewDate: Date = Date(),
-        lastReviewedDate: Date? = nil,
-        createdAt: Date = Date(),
-        addedToReviewListAt: Date? = nil,
-        weeklyReviewAt: Date? = nil,
-        modeCounts: [String: Int] = [:],
-        modeNextReviewDates: [String: Date] = [:]
-    ) {
-        self.id = id
-        self.word = word
-        self.ipa = ipa
-        self.definitionEnglish = definitionEnglish
-        self.definitionJapanese = definitionJapanese
-        self.useCases = useCases
-        self.examples = examples
-        self.synonyms = synonyms
-        self.reviewCount = reviewCount
-        self.status = status
-        self.nextReviewDate = nextReviewDate
-        self.lastReviewedDate = lastReviewedDate
-        self.createdAt = createdAt
-        self.addedToReviewListAt = addedToReviewListAt
-        self.weeklyReviewAt = weeklyReviewAt
-        self.modeCounts = modeCounts
-        self.modeNextReviewDates = modeNextReviewDates
+    init(id: String, word: String, ipa: String, japanese: String, definition: String,
+         useCases: [String], examples: [Example], related: [Example] = []) {
+        self.id = id; self.word = word; self.ipa = ipa; self.japanese = japanese
+        self.definition = definition; self.useCases = useCases; self.examples = examples; self.related = related
     }
 
-    /// Decoder that fills in defaults for fields added in later schema versions
-    /// so previously-saved data still loads cleanly.
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try c.decodeIfPresent(UUID.self, forKey: .id) ?? UUID()
-        self.word = try c.decode(String.self, forKey: .word)
-        self.ipa = try c.decodeIfPresent(String.self, forKey: .ipa)
-        self.definitionEnglish = try c.decodeIfPresent(String.self, forKey: .definitionEnglish) ?? ""
-        self.definitionJapanese = try c.decodeIfPresent(String.self, forKey: .definitionJapanese) ?? ""
-        self.useCases = try c.decodeIfPresent([String].self, forKey: .useCases) ?? []
-        self.examples = try c.decodeIfPresent([ExampleSentence].self, forKey: .examples) ?? []
-        self.synonyms = try c.decodeIfPresent([SynonymGroup].self, forKey: .synonyms) ?? []
-        self.reviewCount = try c.decodeIfPresent(Int.self, forKey: .reviewCount) ?? 0
-        self.status = try c.decodeIfPresent(WordStatus.self, forKey: .status) ?? .unlearned
-        self.nextReviewDate = try c.decodeIfPresent(Date.self, forKey: .nextReviewDate) ?? Date()
-        self.lastReviewedDate = try c.decodeIfPresent(Date.self, forKey: .lastReviewedDate)
-        self.createdAt = try c.decodeIfPresent(Date.self, forKey: .createdAt) ?? Date()
-        self.addedToReviewListAt = try c.decodeIfPresent(Date.self, forKey: .addedToReviewListAt)
-        self.weeklyReviewAt = try c.decodeIfPresent(Date.self, forKey: .weeklyReviewAt)
-        self.modeCounts = try c.decodeIfPresent([String: Int].self, forKey: .modeCounts) ?? [:]
-        self.modeNextReviewDates = try c.decodeIfPresent([String: Date].self, forKey: .modeNextReviewDates) ?? [:]
-    }
-
-    /// True when every scored quiz mode has been answered correctly at least
-    /// 4 times (= 復習完了 across the board). Used to push the word to the
-    /// bottom of the 一覧 list and remove it from quiz pools. 使う場面 used to
-    /// count here too; words already carrying its progress are unaffected.
-    var isFullyCompleted: Bool {
-        ["definition", "translation"].allSatisfy {
-            (modeCounts[$0] ?? 0) >= 4
-        }
-    }
-
-    /// True if the word is currently pinned to the focused review list
-    /// (added within the last 7 days).
-    var isInReviewList: Bool {
-        guard let added = addedToReviewListAt else { return false }
-        return Date().timeIntervalSince(added) < 7 * 24 * 60 * 60
-    }
-
-    /// True if the word is part of this week's auto-selected review set.
-    var isInWeeklyReview: Bool {
-        weeklyReviewAt != nil
-    }
-
-    /// True if the word should appear in the focused review list, whether it
-    /// was pinned manually or picked by the weekly auto-selection.
-    var isInAnyReviewList: Bool {
-        isInReviewList || isInWeeklyReview
+        id = try c.decode(String.self, forKey: .id)
+        word = try c.decode(String.self, forKey: .word)
+        ipa = try c.decodeIfPresent(String.self, forKey: .ipa) ?? ""
+        japanese = try c.decodeIfPresent(String.self, forKey: .japanese) ?? ""
+        definition = try c.decodeIfPresent(String.self, forKey: .definition) ?? ""
+        useCases = try c.decodeIfPresent([String].self, forKey: .useCases) ?? []
+        examples = try c.decodeIfPresent([Example].self, forKey: .examples) ?? []
+        related = try c.decodeIfPresent([Example].self, forKey: .related) ?? []
+        stage = try c.decodeIfPresent(Int.self, forKey: .stage) ?? 0
+        reviewCount = try c.decodeIfPresent(Int.self, forKey: .reviewCount) ?? 0
+        nextReviewDate = try c.decodeIfPresent(Date.self, forKey: .nextReviewDate) ?? Date().startOfDay
+        lastReviewedDate = try c.decodeIfPresent(Date.self, forKey: .lastReviewedDate)
+        createdAt = try c.decodeIfPresent(Date.self, forKey: .createdAt) ?? Date()
+        checked = try c.decodeIfPresent(Bool.self, forKey: .checked) ?? false
+        learned = try c.decodeIfPresent(Bool.self, forKey: .learned) ?? false
     }
 }
 
-/// One entry in the conversational-frequency review list shown on the Home
-/// screen (日本語 / 英語 / 会話頻度).
-/// `id` is the 1-based row number in `RankedSeed`, which stays stable across
-/// launches, so it can be used as the key for the "don't know" marks.
+/// One entry in the conversational-frequency list (日本語 / 英語 / 会話頻度 ★1〜5).
+/// `id` is the 1-based row number in `RankedSeed`.
 struct RankedWord: Identifiable, Hashable {
     let id: Int
     let japanese: String
     let english: String
-    /// Conversational frequency, 1 (rare) … 5 (very common).
     let frequency: Int
-    /// Short English explanation of the word.
     let gloss: String
 
     var stars: String {
@@ -235,28 +138,148 @@ struct RankedWord: Identifiable, Hashable {
     }
 }
 
-/// One user attempt at translating an example sentence, paired with the
-/// AI feedback returned for it. Stored per-example so the user can scroll
-/// back through their progress.
-struct CompositionAttempt: Codable, Identifiable, Hashable {
-    var id: UUID = UUID()
-    var date: Date = Date()
-    var userText: String
-    var feedback: String
+// MARK: - Study statistics
+
+struct StudyStats: Codable {
+    enum CodingKeys: String, CodingKey { case studiedDays, totalSeconds, dailySeconds, dailyReviews }
+    init() {}
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        studiedDays = try c.decodeIfPresent(Set<TimeInterval>.self, forKey: .studiedDays) ?? []
+        totalSeconds = try c.decodeIfPresent(TimeInterval.self, forKey: .totalSeconds) ?? 0
+        dailySeconds = try c.decodeIfPresent([String: TimeInterval].self, forKey: .dailySeconds) ?? [:]
+        dailyReviews = try c.decodeIfPresent([String: Int].self, forKey: .dailyReviews) ?? [:]
+    }
+    /// startOfDay timestamps of every day with study activity.
+    var studiedDays: Set<TimeInterval> = []
+    /// Accumulated foreground time in seconds (legacy, no longer shown).
+    var totalSeconds: TimeInterval = 0
+    /// Study time per day, in seconds, keyed by startOfDay timestamp.
+    var dailySeconds: [String: TimeInterval] = [:]
+    /// Number of flashcard answers per day (startOfDay key), for the calendar.
+    var dailyReviews: [String: Int] = [:]
+
+    mutating func addReview(on date: Date) { dailyReviews[Self.key(date), default: 0] += 1 }
+    func reviews(on date: Date) -> Int { dailyReviews[Self.key(date)] ?? 0 }
+
+    private static func key(_ date: Date) -> String { String(Int(date.startOfDay.timeIntervalSince1970)) }
+
+    mutating func addSeconds(_ s: TimeInterval, on date: Date) {
+        dailySeconds[Self.key(date), default: 0] += s
+    }
+
+    func seconds(on date: Date) -> TimeInterval { dailySeconds[Self.key(date)] ?? 0 }
+    var todaySeconds: TimeInterval { seconds(on: Date()) }
+
+    /// "48時間 20分" / "20分" style text.
+    static func timeText(_ s: TimeInterval) -> String {
+        let h = Int(s) / 3600, m = (Int(s) % 3600) / 60
+        return h > 0 ? "\(h)時間 \(m)分" : "\(m)分"
+    }
+
+    mutating func markToday() {
+        studiedDays.insert(Date().startOfDay.timeIntervalSince1970)
+    }
+
+    func studied(on date: Date) -> Bool {
+        studiedDays.contains(date.startOfDay.timeIntervalSince1970)
+    }
+
+    /// Consecutive days ending today (or yesterday if today has no activity yet).
+    var streak: Int {
+        var day = Date().startOfDay
+        if !studied(on: day) { day = day.adding(days: -1) }
+        var n = 0
+        while studied(on: day) { n += 1; day = day.adding(days: -1) }
+        return n
+    }
+
+    var hours: Int { Int(todaySeconds) / 3600 }
+    var minutes: Int { (Int(todaySeconds) % 3600) / 60 }
 }
 
-/// All AI-assisted study artifacts attached to a single example sentence:
-/// the on-demand grammar explanation Gemini wrote, plus the user's past
-/// composition attempts with their AI corrections.
-struct ExampleStudyLog: Codable, Hashable {
-    var aiGrammar: String? = nil
-    var attempts: [CompositionAttempt] = []
+// MARK: - Topic conversations
+
+enum TopicLevel: String, Codable, CaseIterable, Identifiable {
+    case beginner = "入門", basic = "初級", intermediate = "中級", advanced = "上級"
+    var id: String { rawValue }
 }
 
-/// One curated 4-choice grammar question. Bundled with the app and
-/// extended over time. `correctIndex` is 0-based; `translation` is a
-/// short Japanese rendering of the sentence; `explanation` is the
-/// bullet-style Japanese commentary shown after the user answers.
+struct TopicCategory: Identifiable, Hashable {
+    let id: String      // name
+    let color: Color
+    var name: String { id }
+}
+
+struct DialogueLine: Identifiable, Hashable {
+    let id: Int
+    let speaker: String   // "A" / "B"
+    let english: String
+    let ipa: String       // empty for topic lines (発音記号は会話では表示しない)
+    let japanese: String
+    /// True when a dashed divider should be drawn above this line (the --- in
+    /// the source: a jump in time or place inside the same conversation).
+    var sectionBreak: Bool = false
+}
+
+struct KeyExpression: Identifiable, Hashable {
+    let id: Int
+    let english: String
+    let japanese: String
+}
+
+struct TopicConversation: Identifiable, Hashable {
+    let id: String
+    let emoji: String
+    let title: String
+    let category: String
+    let level: TopicLevel
+    let lines: [DialogueLine]
+    let keys: [KeyExpression]
+}
+
+// MARK: - Grammar
+
+/// One coloured word block inside a grammar explanation (主語 / 動詞 / 目的語).
+struct GrammarChunk: Identifiable, Hashable {
+    let id = UUID()
+    let text: String
+    let label: String
+    let tint: Int   // 0 blue, 1 red, 2 yellow, 3 green
+}
+
+struct GrammarExample: Identifiable, Hashable {
+    let id = UUID()
+    let english: String
+    let ipa: String
+    let japanese: String
+}
+
+/// A sub-section inside a grammar topic (e.g. 「don't = 一般動詞を打ち消す」).
+struct GrammarSection: Identifiable, Hashable {
+    let id = UUID()
+    let heading: String
+    let keyword: String
+    let chunks: [GrammarChunk]
+    let examples: [GrammarExample]
+}
+
+struct GrammarTopic: Identifiable, Hashable {
+    let id: String
+    let level: TopicLevel
+    let title: String          // 否定 don't ／ isn't
+    let summary: String
+    let sample: String         // I don't know.
+    let detailTitle: String
+    let detailSubtitle: String
+    let sections: [GrammarSection]
+    let tipTitle: String       // 見分け方
+    let tip: String
+    let wrong: String          // × I not know.
+    let right: String          // ○ I don't know.
+}
+
+/// One curated 4-choice grammar question (練習問題).
 struct GrammarQuestion: Identifiable, Hashable, Codable {
     var id: String
     var question: String
@@ -266,19 +289,36 @@ struct GrammarQuestion: Identifiable, Hashable, Codable {
     var explanation: String
 }
 
-/// Returns the number of days until the next review based on completed review count.
-/// User-specified Ebbinghaus curve:
-/// - 1st review done → 1 day later
-/// - 2nd review done → 3 days later
-/// - 3rd review done → 14 days later (2 weeks)
-/// - 4th review done → 30 days later (1 month)
-/// - 5+ reviews done → 60 days later (2 months)
-func intervalDays(forCompletedReviewCount count: Int) -> Int {
-    switch max(count, 0) {
-    case 0, 1: return 1
-    case 2:    return 3
-    case 3:    return 14
-    case 4:    return 30
-    default:   return 60
-    }
+// MARK: - Pronunciation
+
+enum SoundGroup: String, CaseIterable, Identifiable {
+    case vowels = "母音", diphthongs = "二重母音", consonants = "子音"
+    var id: String { rawValue }
+}
+
+/// 発音画面で見せる単語（英語・発音記号・意味）。AIで増やした分も同じ形で保存する。
+struct SoundWord: Codable, Hashable, Identifiable {
+    var id: String { word.lowercased() }
+    let word: String
+    let ipa: String
+    let japanese: String
+
+    var ipaDisplay: String { Word.slashed(ipa) }
+}
+
+struct SoundItem: Identifiable, Hashable {
+    let id: String             // phoneme token as it appears in the IPA, e.g. "iː"
+    let group: SoundGroup
+    let symbol: String         // shown big: /iː/
+    let name: String           // 長いイー
+    let exampleWord: String    // sheep
+    let exampleIPA: String     // /ʃiːp/
+    let exampleJapanese: String
+    let title: String          // 長いイー /iː/
+    let subtitle: String
+    let steps: [String]        // 口の形 / コツ / 注意点
+    let moreExamples: [SoundWord]
+
+    static func == (a: SoundItem, b: SoundItem) -> Bool { a.id == b.id && a.group == b.group }
+    func hash(into h: inout Hasher) { h.combine(id); h.combine(group) }
 }

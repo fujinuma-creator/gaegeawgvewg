@@ -1,51 +1,42 @@
 import Foundation
 import Security
 
-/// Tiny wrapper around the Keychain for storing a single secret string per key.
-/// Used to keep the user's Gemini API key off-disk in plaintext.
+/// Minimal Keychain wrapper for API keys. Keys never leave the device.
 enum KeychainHelper {
-    private static let service = "com.englishvocabapp.secrets"
-
-    static func set(_ value: String?, for key: String) {
-        // Always remove any existing entry first so updates work cleanly.
-        let deleteQuery: [String: Any] = [
+    static func set(_ value: String, for key: String) {
+        // Pasted keys often carry spaces/newlines, which make every request fail.
+        let trimmed = value.trimmingCharacters(in: .whitespacesAndNewlines)
+        let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
             kSecAttrAccount as String: key
         ]
-        SecItemDelete(deleteQuery as CFDictionary)
-
-        guard let value, !value.isEmpty,
-              let data = value.data(using: .utf8) else { return }
-
-        let addQuery: [String: Any] = [
-            kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
-            kSecAttrAccount as String: key,
-            kSecValueData as String: data,
-            kSecAttrAccessible as String: kSecAttrAccessibleAfterFirstUnlock
-        ]
-        SecItemAdd(addQuery as CFDictionary, nil)
+        SecItemDelete(query as CFDictionary)
+        guard !trimmed.isEmpty else { return }   // empty = remove the key
+        let data = Data(trimmed.utf8)
+        var add = query
+        add[kSecValueData as String] = data
+        add[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+        SecItemAdd(add as CFDictionary, nil)
     }
 
     static func get(_ key: String) -> String? {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
-            kSecAttrService as String: service,
             kSecAttrAccount as String: key,
-            kSecMatchLimit as String: kSecMatchLimitOne,
-            kSecReturnData as String: true
+            kSecReturnData as String: true,
+            kSecMatchLimit as String: kSecMatchLimitOne
         ]
         var item: CFTypeRef?
         guard SecItemCopyMatching(query as CFDictionary, &item) == errSecSuccess,
-              let data = item as? Data,
-              let value = String(data: data, encoding: .utf8) else {
-            return nil
-        }
-        return value
+              let data = item as? Data else { return nil }
+        return String(data: data, encoding: .utf8)
     }
-}
 
-enum SecretKey {
-    static let geminiAPIKey = "geminiAPIKey"
+    static func delete(_ key: String) {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: key
+        ]
+        SecItemDelete(query as CFDictionary)
+    }
 }

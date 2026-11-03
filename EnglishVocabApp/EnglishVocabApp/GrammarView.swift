@@ -1,464 +1,296 @@
 import SwiftUI
 
-/// 4-choice grammar quiz, one question at a time. Each day:
-/// - The question order is shuffled deterministically (so it's stable
-///   within a day but rotates at midnight).
-/// - User answers from the previous day are wiped automatically the
-///   first time the view appears that day, so each day starts fresh.
-///
-/// Inside a day, the user can:
-/// - Tap a choice to lock in their answer (reveals correctness + Japanese
-///   translation + a detailed explanation).
-/// - Swipe the card left/right to flip between problems (or tap the
-///   nav buttons). Right swipe = next, left swipe = previous.
+/// 6. 文法
 struct GrammarView: View {
     @EnvironmentObject var store: WordStore
-    @AppStorage("grammar.currentIndex") private var currentIndex: Int = 0
-    /// startOfDay timestamp (TimeInterval) of the last automatic reset.
-    /// Used to detect day rollover and wipe answers once per day.
-    @AppStorage("grammar.lastResetDay") private var lastResetDay: Double = 0
-    @State private var showResetAlert: Bool = false
-    @State private var dragOffset: CGSize = .zero
+    @Binding var path: NavigationPath
+    @State private var level: TopicLevel = .beginner
+    @State private var openId: String? = nil
 
-    private var allQuestions: [GrammarQuestion] { GrammarMCQSeed.questions }
-
-    /// Today's deterministically-shuffled question list. The seed is
-    /// derived from today's startOfDay so the order stays stable for
-    /// the whole day and rotates at midnight.
-    private var questions: [GrammarQuestion] {
-        allQuestions.dailyShuffled()
-    }
-
-    private var safeIndex: Int {
-        guard !questions.isEmpty else { return 0 }
-        return min(max(currentIndex, 0), questions.count - 1)
-    }
-
-    private var currentQuestion: GrammarQuestion? {
-        guard !questions.isEmpty else { return nil }
-        return questions[safeIndex]
-    }
-
-    private var answeredCount: Int {
-        questions.reduce(0) { $0 + (store.grammarAnswers[$1.id] == nil ? 0 : 1) }
-    }
-
-    private var correctCount: Int {
-        questions.reduce(0) { acc, q in
-            guard let chosen = store.grammarAnswers[q.id] else { return acc }
-            return acc + (chosen == q.correctIndex ? 1 : 0)
-        }
-    }
+    private var topics: [GrammarTopic] { GrammarSeed.topics(for: level) }
 
     var body: some View {
-        VStack(spacing: 16) {
-            statsHeader
-            if questions.isEmpty {
-                Spacer()
-                emptyView
-                Spacer()
-            } else if let q = currentQuestion {
-                ScrollView {
-                    quizCard(q)
-                        .padding(.horizontal, 16)
-                        .padding(.bottom, 24)
-                        .offset(x: dragOffset.width, y: dragOffset.height * 0.3)
-                        .rotationEffect(.degrees(Double(dragOffset.width) / 22))
-                        .overlay(swipeHint.allowsHitTesting(false))
-                        .contentShape(Rectangle())
-                        .gesture(swipeGesture)
-                }
-            }
-        }
-        .padding(.top, 8)
-        .onAppear { performDailyResetIfNeeded() }
-        .alert("解答をリセットしますか？", isPresented: $showResetAlert) {
-            Button("キャンセル", role: .cancel) {}
-            Button("リセット", role: .destructive) {
-                store.resetAllGrammarAnswers()
-                currentIndex = 0
-            }
-        } message: {
-            Text("\(answeredCount) 問の解答記録をすべて削除し、最初の問題に戻ります。")
-        }
-    }
-
-    // MARK: - Daily auto-reset
-
-    /// Wipes all grammar answers and rewinds to question 1 if the calendar
-    /// day has changed since the last automatic reset. Runs once each time
-    /// the view appears.
-    private func performDailyResetIfNeeded() {
-        let todayStart = Calendar.current.startOfDay(for: Date()).timeIntervalSince1970
-        if lastResetDay == 0 {
-            // First-ever appearance: just record today's start without wiping.
-            lastResetDay = todayStart
-            return
-        }
-        if todayStart > lastResetDay {
-            store.resetAllGrammarAnswers()
-            currentIndex = 0
-            lastResetDay = todayStart
-        }
-    }
-
-    // MARK: - Swipe gesture
-
-    private var swipeGesture: some Gesture {
-        DragGesture(minimumDistance: 2)
-            .onChanged { value in
-                dragOffset = value.translation
-            }
-            .onEnded { value in
-                let threshold: CGFloat = 50
-                if value.translation.width > threshold {
-                    flyOff(direction: 1) { goPrev() }
-                } else if value.translation.width < -threshold {
-                    flyOff(direction: -1) { goNext() }
-                } else {
-                    withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
-                        dragOffset = .zero
+        ZStack {
+            HatchBackground()
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 14) {
+                    ScreenTopBar { path.removeLast() }
+                    ScreenHeaderCard(title: "文法", tagline: "かたちを知れば、\nことばはつながる。", image: "hdr_grammar", markerColor: Palette.markerRed)
+                    HStack(spacing: 8) {
+                        ForEach(TopicLevel.allCases) { l in
+                            SketchChip(title: l.rawValue, selected: level == l) { level = l; openId = nil }
+                        }
+                        Spacer()
                     }
+                    ForEach(Array(topics.enumerated()), id: \.element.id) { i, t in
+                        row(number: i + 1, topic: t)
+                        if openId == t.id { detail(t) }
+                    }
+                    practiceCard
                 }
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
+                .padding(.bottom, 40)
             }
+        }
+        .toolbar(.hidden, for: .navigationBar)
+        .studyScreen()
     }
 
-    /// Visual hint that appears as the card is dragged to one side, so the
-    /// user can see which way the swipe is going (left = next, right = prev).
-    @ViewBuilder
-    private var swipeHint: some View {
-        let progress = min(abs(dragOffset.width) / 50, 1.0)
-        if progress > 0.05 {
-            let isLeft = dragOffset.width < 0
-            HStack {
-                if !isLeft {
-                    Image(systemName: "chevron.left.circle.fill")
-                        .font(.system(size: 60))
-                        .foregroundStyle(.indigo.opacity(0.55 * progress))
-                        .padding(.leading, 20)
-                    Spacer()
-                } else {
-                    Spacer()
-                    Image(systemName: "chevron.right.circle.fill")
-                        .font(.system(size: 60))
-                        .foregroundStyle(.indigo.opacity(0.55 * progress))
-                        .padding(.trailing, 20)
+    /// 4択の練習問題（379問）へ。
+    private var practiceCard: some View {
+        Button { path.append(HomeView.Route.grammarQuiz) } label: {
+            HStack(spacing: 12) {
+                Text("?")
+                    .font(LFont.title(26)).foregroundStyle(.white)
+                    .frame(width: 44, height: 44)
+                    .background(Palette.stageRed)
+                    .overlay(Rectangle().strokeBorder(Palette.ink, lineWidth: 1.2))
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("4択で練習する").font(LFont.heading(16)).foregroundStyle(Palette.text).marker(Palette.markerRed, height: 8, yOffset: 3)
+                    Text("\(GrammarMCQSeed.questions.count)問から毎日ちがう10問。解説つき").font(LFont.caption(12)).foregroundStyle(Palette.subText)
                 }
-            }
-            .frame(maxWidth: .infinity)
-            .animation(.easeOut(duration: 0.1), value: dragOffset)
-        }
-    }
-
-    private func flyOff(direction: CGFloat, completion: @escaping () -> Void) {
-        withAnimation(.easeOut(duration: 0.25)) {
-            dragOffset = CGSize(width: direction * 700, height: dragOffset.height)
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            var t = Transaction()
-            t.disablesAnimations = true
-            withTransaction(t) {
-                dragOffset = .zero
-                completion()
-            }
-        }
-    }
-
-    // MARK: - Header
-
-    private var statsHeader: some View {
-        VStack(spacing: 6) {
-            HStack {
-                Text("英文法 4択")
-                    .font(.title3.bold())
                 Spacer()
-                Button {
-                    showResetAlert = true
-                } label: {
-                    HStack(spacing: 4) {
-                        Image(systemName: "arrow.counterclockwise")
-                        Text("リセット")
-                    }
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                }
-                .disabled(answeredCount == 0)
-                .opacity(answeredCount == 0 ? 0.4 : 1)
+                Image(systemName: "chevron.right").font(.system(size: 13, weight: .bold)).foregroundStyle(Palette.subText)
             }
-            if !questions.isEmpty {
-                HStack(spacing: 6) {
-                    Text("Q.\(safeIndex + 1) / \(questions.count)")
-                        .foregroundStyle(.primary)
-                    Spacer()
-                    Text("正解 \(correctCount) / \(answeredCount)")
-                        .foregroundStyle(.indigo)
-                    if answeredCount > 0 {
-                        Text("(\(Int(Double(correctCount) / Double(max(answeredCount, 1)) * 100))%)")
-                            .foregroundStyle(.tertiary)
-                    }
-                }
-                .font(.subheadline)
-                HStack(spacing: 8) {
-                    ProgressView(
-                        value: Double(safeIndex + 1),
-                        total: Double(max(questions.count, 1))
-                    )
-                    .tint(.indigo)
-                    Image(systemName: "sparkles")
-                        .font(.caption2)
-                        .foregroundStyle(.indigo.opacity(0.6))
-                    Text("日替わり")
-                        .font(.caption2)
-                        .foregroundStyle(.tertiary)
-                }
-            }
+            .sketchCard(padding: 14, emphasized: true)
         }
-        .padding(.horizontal, 16)
+        .buttonStyle(.plain)
+        .padding(.top, 6)
     }
 
-    // MARK: - Empty
-
-    private var emptyView: some View {
-        VStack(spacing: 10) {
-            Image(systemName: "doc.text.magnifyingglass")
-                .font(.system(size: 48))
-                .foregroundStyle(.indigo.opacity(0.5))
-            Text("問題が用意されていません")
-                .font(.subheadline.bold())
-            Text("新しい4択文法問題が追加されると、ここに表示されます。")
-                .font(.caption)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 32)
-        }
-    }
-
-    // MARK: - Quiz card
-
-    @ViewBuilder
-    private func quizCard(_ q: GrammarQuestion) -> some View {
-        let selectedIndex = store.grammarAnswers[q.id]
-        let answered = selectedIndex != nil
-        VStack(alignment: .leading, spacing: 14) {
-            // Question number badge
-            HStack {
-                Text("Q.\(safeIndex + 1)")
-                    .font(.caption.bold())
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 4)
-                    .background(Capsule().fill(Color.indigo.opacity(0.15)))
-                    .foregroundStyle(.indigo)
-                Spacer()
-                Image(systemName: "hand.draw")
-                    .font(.caption2)
-                    .foregroundStyle(.tertiary)
-                Text("スワイプで次へ")
-                    .font(.caption2)
-                    .foregroundStyle(.tertiary)
-                if answered {
-                    if selectedIndex == q.correctIndex {
-                        Label("正解", systemImage: "checkmark.circle.fill")
-                            .font(.caption.bold())
-                            .foregroundStyle(.green)
-                    } else {
-                        Label("不正解", systemImage: "xmark.circle.fill")
-                            .font(.caption.bold())
-                            .foregroundStyle(.red)
-                    }
-                }
-            }
-
-            // Question text
-            Text(q.question)
-                .font(.system(size: 17, weight: .medium))
-                .frame(maxWidth: .infinity, alignment: .leading)
-
-            // Choices
-            VStack(spacing: 8) {
-                ForEach(Array(q.choices.enumerated()), id: \.offset) { i, choice in
-                    choiceButton(
-                        index: i,
-                        text: choice,
-                        question: q,
-                        selectedIndex: selectedIndex
-                    )
-                }
-            }
-
-            // Explanation panel (after answering)
-            if answered {
-                explanationView(q)
-            }
-
-            // Nav buttons
-            navRow(answered: answered)
-        }
-        .padding(16)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 14).fill(Color.white.opacity(0.88)))
-    }
-
-    private func choiceButton(
-        index i: Int,
-        text: String,
-        question q: GrammarQuestion,
-        selectedIndex: Int?
-    ) -> some View {
-        let answered = selectedIndex != nil
-        let isCorrect = i == q.correctIndex
-        let isSelected = selectedIndex == i
-        let bg: Color = {
-            guard answered else { return Color.white.opacity(0.7) }
-            if isCorrect { return Color.green.opacity(0.18) }
-            if isSelected && !isCorrect { return Color.red.opacity(0.18) }
-            return Color.white.opacity(0.7)
-        }()
-        let stroke: Color = {
-            guard answered else { return Color(.separator) }
-            if isCorrect { return Color.green }
-            if isSelected && !isCorrect { return Color.red }
-            return Color(.separator)
-        }()
-        let label: String = ["a", "b", "c", "d"][safe: i] ?? "\(i)"
-
+    private func row(number: Int, topic t: GrammarTopic) -> some View {
+        let open = openId == t.id
         return Button {
-            guard !answered else { return }
-            store.recordGrammarAnswer(questionId: q.id, selectedIndex: i)
+            withAnimation(.easeInOut(duration: 0.2)) { openId = open ? nil : t.id }
+            if !open { store.markStudied() }
         } label: {
-            HStack(alignment: .top, spacing: 10) {
-                Text(label + ")")
-                    .font(.system(size: 14, weight: .semibold, design: .monospaced))
-                    .foregroundStyle(.indigo)
-                    .frame(width: 22, alignment: .leading)
-                Text(text)
-                    .font(.subheadline)
-                    .multilineTextAlignment(.leading)
-                Spacer()
-                if answered && isCorrect {
-                    Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
-                } else if answered && isSelected && !isCorrect {
-                    Image(systemName: "xmark.circle.fill").foregroundStyle(.red)
+            HStack(spacing: 14) {
+                Text(String(format: "%02d", number))
+                    .font(LFont.title(20)).foregroundStyle(Palette.stageRed)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(t.title).font(LFont.heading(16)).foregroundStyle(Palette.text)
+                    Text(t.summary).font(LFont.caption(12)).foregroundStyle(Palette.subText)
+                    Text(t.sample).font(LFont.heading(13)).foregroundStyle(Palette.green)
                 }
+                Spacer()
+                Image(systemName: open ? "chevron.down" : "chevron.right")
+                    .font(.system(size: 13, weight: .bold)).foregroundStyle(Palette.subText)
+            }
+            .sketchCard(padding: 14, emphasized: open)
+        }
+        .buttonStyle(.plain)
+    }
+
+    private func detail(_ t: GrammarTopic) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(t.detailTitle).font(LFont.title(26)).foregroundStyle(Palette.text)
+            Text(t.detailSubtitle).font(LFont.body(13)).foregroundStyle(Palette.subText)
+            ForEach(t.sections) { sec in
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(sec.heading).font(LFont.heading(15)).foregroundStyle(Palette.text)
+                        .marker(Palette.markerBlue, height: 8, yOffset: 3)
+                    HStack(alignment: .top, spacing: 8) {
+                        ForEach(sec.chunks) { ch in
+                            VStack(spacing: 4) {
+                                Text(ch.text).font(LFont.heading(16)).foregroundStyle(Palette.text)
+                                    .padding(.vertical, 6).padding(.horizontal, 10)
+                                    .background(tint(ch.tint))
+                                    .overlay(Rectangle().strokeBorder(Palette.ink, lineWidth: 1))
+                                Text(ch.label).font(LFont.caption(10)).foregroundStyle(Palette.subText)
+                            }
+                        }
+                    }
+                    ForEach(sec.examples) { ex in
+                        Button { SpeechManager.shared.speak(ex.english) } label: {
+                            VStack(alignment: .leading, spacing: 2) {
+                                HStack(spacing: 6) {
+                                    Text(ex.english).font(LFont.heading(15)).foregroundStyle(Palette.text)
+                                        .fixedSize(horizontal: false, vertical: true)
+                                    Image(systemName: "speaker.wave.2").font(.system(size: 11)).foregroundStyle(Palette.green)
+                                }
+                                if !ex.ipa.isEmpty { Text(ex.ipa).font(LFont.caption(11)).foregroundStyle(Palette.green) }
+                                Text(ex.japanese).font(LFont.caption(12)).foregroundStyle(Palette.subText)
+                            }
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
+            VStack(alignment: .leading, spacing: 6) {
+                Text(t.tipTitle).font(LFont.heading(14)).foregroundStyle(Palette.text)
+                Text(t.tip).font(LFont.body(13)).foregroundStyle(Palette.text).fixedSize(horizontal: false, vertical: true)
             }
             .padding(12)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(bg)
-            .overlay(RoundedRectangle(cornerRadius: 10).stroke(stroke, lineWidth: 1))
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .foregroundStyle(.primary)
+            .background(Palette.tagYellow.opacity(0.8))
+            .overlay(Rectangle().strokeBorder(Palette.coinOrange.opacity(0.7), lineWidth: 1))
+            HStack(spacing: 14) {
+                HStack(spacing: 4) {
+                    Text("×").foregroundStyle(Palette.stageRed)
+                    Text(t.wrong).foregroundStyle(Palette.text)
+                }
+                HStack(spacing: 4) {
+                    Text("○").foregroundStyle(Palette.stageTeal)
+                    Text(t.right).foregroundStyle(Palette.text)
+                }
+            }
+            .font(LFont.heading(13))
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .sketchCard(padding: 18, emphasized: true)
+    }
+
+    private func tint(_ n: Int) -> Color {
+        switch n {
+        case 0: return Palette.markerBlue.opacity(0.5)
+        case 1: return Palette.markerRed.opacity(0.6)
+        case 2: return Palette.markerYellow.opacity(0.6)
+        default: return Palette.markerGreen.opacity(0.6)
+        }
+    }
+}
+
+
+/// 文法の4択練習。1回10問、順番は日替わり。
+struct GrammarQuizView: View {
+    @EnvironmentObject var store: WordStore
+    @Binding var path: NavigationPath
+
+    @State private var questions: [GrammarQuestion] = []
+    @State private var index = 0
+    @State private var chosen: Int? = nil
+    @State private var correct = 0
+    @State private var finished = false
+    private let roundSize = 10
+
+    var body: some View {
+        ZStack {
+            HatchBackground()
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 14) {
+                    ScreenTopBar(backTitle: "文法") { path.removeLast() }
+                    if finished {
+                        summary
+                    } else if index < questions.count {
+                        progress
+                        card(questions[index])
+                    }
+                }
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
+                .padding(.bottom, 40)
+            }
+        }
+        .toolbar(.hidden, for: .navigationBar)
+        .studyScreen()
+        .onAppear { if questions.isEmpty { start() } }
+    }
+
+    private func start() {
+        let day = Int(Date().startOfDay.timeIntervalSince1970 / 86_400)
+        var rng = SplitMix64(seed: UInt64(bitPattern: Int64(day &* 104_729 &+ 3)))
+        var all = GrammarMCQSeed.questions
+        all.shuffle(using: &rng)
+        questions = Array(all.prefix(roundSize))
+        index = 0; chosen = nil; correct = 0; finished = false
+    }
+
+    private var progress: some View {
+        HStack {
+            Text("第 \(index + 1) / \(questions.count) 問").font(LFont.heading(14)).foregroundStyle(Palette.text)
+            Spacer()
+            Text("正解 \(correct)").font(LFont.heading(14)).foregroundStyle(Palette.green)
+        }
+        .padding(.horizontal, 10).padding(.vertical, 4)
+        .background(Palette.paper.opacity(0.9))
+    }
+
+    private func card(_ q: GrammarQuestion) -> some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text(q.question)
+                .font(LFont.heading(18)).foregroundStyle(Palette.text)
+                .fixedSize(horizontal: false, vertical: true)
+            VStack(spacing: 10) {
+                ForEach(Array(q.choices.enumerated()), id: \.offset) { i, choice in
+                    choiceButton(i, choice, q)
+                }
+            }
+            if let c = chosen {
+                SketchDivider(dashed: true)
+                HStack(spacing: 6) {
+                    Text(c == q.correctIndex ? "○ 正解！" : "× 不正解")
+                        .font(LFont.heading(16))
+                        .foregroundStyle(c == q.correctIndex ? Palette.stageTeal : Palette.stageRed)
+                    Spacer()
+                    SpeakerButton(text: q.question.replacingOccurrences(of: "___", with: q.choices[q.correctIndex]), size: 16)
+                }
+                Text(q.translation).font(LFont.body(14)).foregroundStyle(Palette.text)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(q.explanation.trimmingCharacters(in: .whitespacesAndNewlines))
+                    .font(LFont.body(13)).foregroundStyle(Palette.text)
+                    .lineSpacing(3)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(12)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .background(Palette.tagYellow.opacity(0.8))
+                    .overlay(Rectangle().strokeBorder(Palette.coinOrange.opacity(0.7), lineWidth: 1))
+                Button { next() } label: { Text(index + 1 >= questions.count ? "結果を見る →" : "次の問題 →") }
+                    .buttonStyle(GreenButtonStyle())
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .sketchCard(padding: 18, emphasized: true)
+    }
+
+    private func choiceButton(_ i: Int, _ text: String, _ q: GrammarQuestion) -> some View {
+        let answered = chosen != nil
+        let isRight = i == q.correctIndex
+        let isMine = chosen == i
+        let fill: Color = !answered ? Palette.paper : (isRight ? Palette.markerGreen : (isMine ? Palette.markerRed : Palette.paper))
+        return Button {
+            guard chosen == nil else { return }
+            chosen = i
+            if isRight { correct += 1 }
+            store.markStudied()
+        } label: {
+            HStack(spacing: 10) {
+                Text(["A", "B", "C", "D"][min(i, 3)]).font(LFont.heading(13)).foregroundStyle(Palette.subText).frame(width: 18)
+                Text(text).font(LFont.heading(15)).foregroundStyle(Palette.text)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                Spacer()
+                if answered && isRight { Text("○").foregroundStyle(Palette.stageTeal).font(LFont.heading(15)) }
+                if answered && isMine && !isRight { Text("×").foregroundStyle(Palette.stageRed).font(LFont.heading(15)) }
+            }
+            .padding(.vertical, 10).padding(.horizontal, 12)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(ZStack {
+                Rectangle().fill(Palette.ink).offset(x: 2, y: 2)
+                Rectangle().fill(fill)
+                Rectangle().strokeBorder(Palette.ink, lineWidth: answered && (isRight || isMine) ? 2 : 1.2)
+            })
         }
         .buttonStyle(.plain)
         .disabled(answered)
     }
 
-    private func explanationView(_ q: GrammarQuestion) -> some View {
-        let letter = ["a", "b", "c", "d"][safe: q.correctIndex] ?? ""
-        let choiceText = q.choices[safe: q.correctIndex] ?? ""
-        return VStack(alignment: .leading, spacing: 8) {
-            HStack(alignment: .top, spacing: 6) {
-                Text("正解")
-                    .font(.caption.bold())
-                    .foregroundStyle(.green)
-                Text("\(letter)) \(choiceText)")
-                    .font(.subheadline.bold())
+    private func next() {
+        if index + 1 >= questions.count { finished = true } else { index += 1; chosen = nil }
+    }
+
+    private var summary: some View {
+        VStack(spacing: 14) {
+            Text("🎉").font(.system(size: 50))
+            Text("\(correct) / \(questions.count) 問 正解").font(LFont.title(24)).foregroundStyle(Palette.text)
+            Text("明日はまた別の10問が出ます").font(LFont.body(14)).foregroundStyle(Palette.subText)
+            HStack(spacing: 10) {
+                Button { start() } label: { Text("同じ10問をもう一度") }.buttonStyle(OutlineButtonStyle(fullWidth: false))
+                Button { path.removeLast() } label: { Text("文法に戻る →") }.buttonStyle(GreenButtonStyle(fullWidth: false))
             }
-            Text(q.translation)
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-            Divider()
-            Text(q.explanation)
-                .font(.subheadline)
-                .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(12)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.indigo.opacity(0.08)))
-        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.indigo.opacity(0.35), lineWidth: 1))
+        .frame(maxWidth: .infinity)
+        .sketchCard(padding: 28)
+        .padding(.top, 30)
     }
-
-    @ViewBuilder
-    private func navRow(answered: Bool) -> some View {
-        HStack(spacing: 10) {
-            Button {
-                goPrev()
-            } label: {
-                HStack(spacing: 6) {
-                    Image(systemName: "chevron.left")
-                    Text("前の問題")
-                }
-                .font(.subheadline.bold())
-                .padding(.horizontal, 14).padding(.vertical, 10)
-                .foregroundStyle(.indigo)
-                .background(Capsule().fill(Color.indigo.opacity(0.12)))
-            }
-            .buttonStyle(.plain)
-            .disabled(safeIndex == 0)
-            .opacity(safeIndex == 0 ? 0.4 : 1)
-
-            Spacer()
-
-            if answered, let q = currentQuestion {
-                Button {
-                    store.resetGrammarAnswer(questionId: q.id)
-                } label: {
-                    HStack(spacing: 4) {
-                        Image(systemName: "arrow.counterclockwise")
-                        Text("やり直し")
-                    }
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                    .padding(.horizontal, 10).padding(.vertical, 8)
-                    .background(Capsule().fill(Color.gray.opacity(0.12)))
-                }
-                .buttonStyle(.plain)
-            }
-
-            Button {
-                goNext()
-            } label: {
-                HStack(spacing: 6) {
-                    Text(isLastQuestion ? "最初に戻る" : "次の問題")
-                    Image(systemName: isLastQuestion ? "arrow.uturn.left" : "chevron.right")
-                }
-                .font(.subheadline.bold())
-                .padding(.horizontal, 14).padding(.vertical, 10)
-                .foregroundStyle(.white)
-                .background(Capsule().fill(Color.indigo))
-            }
-            .buttonStyle(.plain)
-        }
-        .padding(.top, 4)
-    }
-
-    private var isLastQuestion: Bool {
-        guard !questions.isEmpty else { return false }
-        return safeIndex >= questions.count - 1
-    }
-
-    private func goNext() {
-        guard !questions.isEmpty else { return }
-        if safeIndex >= questions.count - 1 {
-            currentIndex = 0
-        } else {
-            currentIndex = safeIndex + 1
-        }
-    }
-
-    private func goPrev() {
-        guard !questions.isEmpty else { return }
-        if safeIndex > 0 {
-            currentIndex = safeIndex - 1
-        }
-    }
-}
-
-private extension Array {
-    subscript(safe i: Int) -> Element? {
-        indices.contains(i) ? self[i] : nil
-    }
-}
-
-#Preview {
-    GrammarView()
-        .environmentObject(WordStore())
 }

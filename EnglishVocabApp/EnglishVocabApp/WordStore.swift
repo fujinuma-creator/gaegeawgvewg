@@ -1,757 +1,447 @@
 import Foundation
 import SwiftUI
+import Combine
+import UserNotifications
 
 @MainActor
 final class WordStore: ObservableObject {
     @Published private(set) var words: [Word] = []
+    @Published private(set) var stats = StudyStats()
 
-    /// AI-assisted study logs keyed by example sentence id (UUID string).
-    /// Stores the on-demand grammar explanation Gemini wrote and the user's
-    /// past composition attempts with AI corrections. Persisted to a
-    /// separate JSON file so it survives example regeneration if the user
-    /// hasn't replaced the example yet.
-    @Published private(set) var studyLogs: [String: ExampleStudyLog] = [:]
-
-    /// User's selected choice (0-based index) for each grammar MCQ.
-    /// Keyed by `GrammarQuestion.id`. nil entry means unanswered.
-    @Published private(set) var grammarAnswers: [String: Int] = [:]
-
-    private let fileURL: URL = {
-        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("words.json")
-    }()
-
-    private let studyLogsURL: URL = {
-        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("study_logs.json")
-    }()
-
-    private let grammarAnswersURL: URL = {
-        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("grammar_answers.json")
-    }()
-
-    // MARK: - Conversational-frequency review list
-
-    /// Rows of the frequency-ranked review list (日本語 / 英語 / 会話頻度).
-    /// Loaded lazily the first time the list is opened so app launch isn't
-    /// slowed by parsing several thousand rows.
-    private(set) lazy var rankedWords: [RankedWord] = RankedSeed.words
-
-    /// Ids of the words the user tapped as "don't know" (shown in yellow).
-    @Published private(set) var rankedMarks: Set<Int> = []
-
-    private let rankedMarksURL: URL = {
-        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("ranked_marks.json")
-    }()
-
-    func toggleRankedMark(_ id: Int) {
-        if rankedMarks.contains(id) {
-            rankedMarks.remove(id)
-        } else {
-            rankedMarks.insert(id)
-        }
-        saveRankedMarks()
-    }
-
-    func clearRankedMarks() {
-        rankedMarks = []
-        saveRankedMarks()
-    }
-
-    private func loadRankedMarks() {
-        guard FileManager.default.fileExists(atPath: rankedMarksURL.path) else { return }
-        if let data = try? Data(contentsOf: rankedMarksURL),
-           let ids = try? JSONDecoder().decode([Int].self, from: data) {
-            rankedMarks = Set(ids)
-        }
-    }
-
-    private func saveRankedMarks() {
-        if let data = try? JSONEncoder().encode(Array(rankedMarks).sorted()) {
-            try? data.write(to: rankedMarksURL, options: .atomic)
-        }
-    }
-
-    /// The app card registered for a row in the frequency list, matched by
-    /// lowercased headword. Nil when the row has no card of its own.
-    func registeredWord(for ranked: RankedWord) -> Word? {
-        let key = ranked.english.trimmingCharacters(in: .whitespaces).lowercased()
-        return words.first { $0.word.trimmingCharacters(in: .whitespaces).lowercased() == key }
-    }
-
-    // MARK: - 単語復習 (swipe flashcards over the frequency list)
-
-    /// How many words 今日の単語 serves each day.
-    static let wordReviewDailyCount = 100
-    /// Page size of 全部の単語 (3,000 at once would freeze the screen).
-    static let wordReviewPageSize = 500
-    /// 復習単語 entries drop out automatically this many days after being added.
-    private static let wordReviewLifetimeDays = 3
-
-    private struct WordReviewEntry: Codable {
-        let id: Int
-        let addedAt: Date
-    }
-
-    /// RankedWord ids the user swiped ❌ (or ticked) in 単語復習, with the
-    /// time each was added. Entries older than 3 days are purged on launch
-    /// and ignored when read.
-    @Published private(set) var wordReviewAdded: [Int: Date] = [:]
-
-    private let wordReviewURL: URL = {
-        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        return docs.appendingPathComponent("word_review.json")
-    }()
-
-    private var wordReviewCutoff: Date {
-        Calendar.current.date(byAdding: .day, value: -WordStore.wordReviewLifetimeDays, to: Date()) ?? .distantPast
-    }
-
-    func isInWordReview(_ id: Int) -> Bool {
-        guard let added = wordReviewAdded[id] else { return false }
-        return added >= wordReviewCutoff
-    }
-
-    func addToWordReview(_ id: Int) {
-        guard !isInWordReview(id) else { return }
-        wordReviewAdded[id] = Date()
-        saveWordReview()
-    }
-
-    func removeFromWordReview(_ id: Int) {
-        guard wordReviewAdded.removeValue(forKey: id) != nil else { return }
-        saveWordReview()
-    }
-
-    func toggleWordReview(_ id: Int) {
-        if isInWordReview(id) {
-            removeFromWordReview(id)
-        } else {
-            addToWordReview(id)
-        }
-    }
-
-    /// 今日の単語: 100 words picked at random from the frequency list, fixed
-    /// for the day and re-drawn at midnight.
-    var todaysWordReview: [RankedWord] {
-        Array(rankedWords.dailyShuffled().prefix(WordStore.wordReviewDailyCount))
-    }
-
-    /// 復習単語: the words swiped ❌ / ticked within the last 3 days, in the
-    /// order they sit in the frequency list.
-    var wordReviewWords: [RankedWord] {
-        rankedWords.filter { isInWordReview($0.id) }
-    }
-
-    /// Whole days left before a 復習単語 entry expires (1 = drops out
-    /// tomorrow). Nil when the word isn't in the list.
-    func wordReviewDaysLeft(_ id: Int) -> Int? {
-        guard let added = wordReviewAdded[id], added >= wordReviewCutoff else { return nil }
-        let expiry = Calendar.current.date(
-            byAdding: .day, value: WordStore.wordReviewLifetimeDays, to: added
-        ) ?? added
-        let days = Calendar.current.dateComponents([.day], from: Date(), to: expiry).day ?? 0
-        return max(days + 1, 1)
-    }
-
-    /// 全部の単語, reshuffled once a day, sliced 500 at a time.
-    var allWordReviewShuffled: [RankedWord] {
-        rankedWords.dailyShuffled()
-    }
-
-    private func loadWordReview() {
-        guard FileManager.default.fileExists(atPath: wordReviewURL.path) else { return }
-        if let data = try? Data(contentsOf: wordReviewURL),
-           let entries = try? JSONDecoder().decode([WordReviewEntry].self, from: data) {
-            let cutoff = wordReviewCutoff
-            var dict: [Int: Date] = [:]
-            for e in entries where e.addedAt >= cutoff {
-                dict[e.id] = e.addedAt
-            }
-            wordReviewAdded = dict
-            if dict.count != entries.count { saveWordReview() }   // drop expired
-        }
-    }
-
-    private func saveWordReview() {
-        let entries = wordReviewAdded
-            .map { WordReviewEntry(id: $0.key, addedAt: $0.value) }
-            .sorted { $0.addedAt < $1.addedAt }
-        if let data = try? JSONEncoder().encode(entries) {
-            try? data.write(to: wordReviewURL, options: .atomic)
-        }
-    }
+    private let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    private var libraryURL: URL { docs.appendingPathComponent("englishvocab_library.json") }
+    private var statsURL: URL { docs.appendingPathComponent("englishvocab_stats.json") }
+    private var backupURL: URL { docs.appendingPathComponent("englishvocab_library.backup.json") }
 
     init() {
         load()
-        loadStudyLogs()
-        loadGrammarAnswers()
-        loadRankedMarks()
-        loadWordReview()
-        // Drop any words that were retired from the seed list (e.g. the
-        // Singlish set the user asked to remove). Runs every launch so
-        // newly-retired words are scrubbed without manual user action.
-        purgeRetiredWords()
-        // Merge in any seed words that don't already exist (matched by lowercased word).
-        // This way, app updates that add new vocabulary are reflected for existing users
-        // without overwriting their review progress on previously-saved words.
-        let existingWords = Set(words.map { $0.word.lowercased() })
-        let newSeeds = WordStore.seedWords().filter {
-            !existingWords.contains($0.word.lowercased())
+        loadSoundWords()
+        // Keep a second copy from the last successful start-up.
+        if let data = try? Data(contentsOf: libraryURL) {
+            try? data.write(to: backupURL, options: .atomic)
         }
-        if !newSeeds.isEmpty {
-            words.append(contentsOf: newSeeds)
-            save()
-        }
-        // Backfill IPA on previously-saved words that pre-date the
-        // pronunciation feature. Looks each word up in the current seed
-        // by lowercased text and copies its IPA across, preserving all
-        // other user data (review counts, dates, etc.).
-        backfillIPAFromSeed()
-        // Drop any review-list pins that have aged past their 7-day window.
-        cleanupExpiredReviewListEntries()
-        // Auto-select 500 random words into the weekly review set (once a
-        // week), excluding whatever was picked the previous week.
-        refreshWeeklyReviewIfNeeded()
-        // Pin "today" as Day 1 of the example study plan on first launch so
-        // the Day counter can advance from a fixed anchor.
-        ExamplePlan.ensureAnchor()
-    }
-
-    // MARK: - Weekly auto review set (500 random words, rotates weekly)
-
-    /// Number of words auto-added to the review list each week.
-    private let weeklyReviewCount = 500
-
-    /// startOfDay timestamp of the last weekly auto-refresh, persisted in
-    /// UserDefaults (WordStore is not a View, so @AppStorage is unavailable).
-    private var weeklyReviewRefreshDay: Double {
-        get { UserDefaults.standard.double(forKey: "reviewList.weeklyRefreshDay") }
-        set { UserDefaults.standard.set(newValue, forKey: "reviewList.weeklyRefreshDay") }
-    }
-
-    /// Runs the weekly pick if it has never run, or if at least 7 days have
-    /// passed since the last pick.
-    private func refreshWeeklyReviewIfNeeded() {
-        let todayStart = Calendar.current.startOfDay(for: Date()).timeIntervalSince1970
-        let last = weeklyReviewRefreshDay
-        if last == 0 || todayStart - last >= 7 * 24 * 60 * 60 {
-            performWeeklyReviewRefresh()
-            weeklyReviewRefreshDay = todayStart
-        }
-    }
-
-    /// Clears last week's auto picks and selects a fresh set of up to 500
-    /// random words. Words picked the previous week are excluded so the same
-    /// word is never chosen two weeks in a row. Manual pins are untouched.
-    private func performWeeklyReviewRefresh() {
-        // The currently-flagged words are last week's picks.
-        let previousIDs = Set(words.filter { $0.weeklyReviewAt != nil }.map { $0.id })
-        // Clear all existing weekly flags.
-        for i in words.indices where words[i].weeklyReviewAt != nil {
-            words[i].weeklyReviewAt = nil
-        }
-        // Candidate pool excludes last week's picks. If there aren't enough
-        // words left after the exclusion, fall back to the full list so we
-        // can still fill the set.
-        let candidates = words.filter { !previousIDs.contains($0.id) }
-        let pool = candidates.count >= weeklyReviewCount ? candidates : words
-        let pickedIDs = Set(pool.shuffled().prefix(weeklyReviewCount).map { $0.id })
-        let now = Date()
-        for i in words.indices where pickedIDs.contains(words[i].id) {
-            words[i].weeklyReviewAt = now
-        }
-        save()
-    }
-
-    private func backfillIPAFromSeed() {
-        let seedPairs: [(String, String)] = WordStore.seedWords().compactMap { w in
-            guard let ipa = w.ipa, !ipa.isEmpty else { return nil }
-            return (w.word.lowercased(), ipa)
-        }
-        let seedIPA = Dictionary(seedPairs, uniquingKeysWith: { first, _ in first })
-        var changed = false
-        for i in words.indices {
-            if (words[i].ipa == nil || words[i].ipa?.isEmpty == true),
-               let ipa = seedIPA[words[i].word.lowercased()] {
-                words[i].ipa = ipa
-                changed = true
-            }
-        }
-        if changed { save() }
-    }
-
-    /// Remove any words whose lowercased text matches an entry in
-    /// `SeedData.retiredWords`. Saves once if anything changed.
-    private func purgeRetiredWords() {
-        let retired = Set(SeedData.retiredWords.map { $0.lowercased() })
-        let before = words.count
-        words.removeAll { retired.contains($0.word.lowercased()) }
-        if words.count != before {
-            save()
-        }
-    }
-
-    // MARK: - Review list (manually pinned words, auto-expire after 7 days)
-
-    func toggleReviewList(for word: Word) {
-        guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
-        if words[idx].isInReviewList {
-            words[idx].addedToReviewListAt = nil
-        } else {
-            words[idx].addedToReviewListAt = Date()
-        }
-        save()
-    }
-
-    func cleanupExpiredReviewListEntries() {
-        var changed = false
-        for i in words.indices {
-            if let added = words[i].addedToReviewListAt,
-               Date().timeIntervalSince(added) >= 7 * 24 * 60 * 60 {
-                words[i].addedToReviewListAt = nil
-                changed = true
-            }
-        }
-        if changed { save() }
-    }
-
-    /// Words shown in the focused review list: manual pins plus this week's
-    /// auto-selected set. The order is re-shuffled once per day (stable
-    /// within a day, rotates at midnight).
-    var reviewListWords: [Word] {
-        words.filter { $0.isInAnyReviewList }
-            .dailyShuffled()
     }
 
     // MARK: - Persistence
+    //
+    // The built-in vocabulary (4,000+ words with examples) lives in the app
+    // binary, so the library file only stores each built-in word's *progress*
+    // (id + review state) plus the full entries of words the user added. That
+    // keeps every save small and lets updates ship new words without
+    // touching anyone's progress.
 
-    func load() {
-        guard FileManager.default.fileExists(atPath: fileURL.path) else { return }
-        do {
-            let data = try Data(contentsOf: fileURL)
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .iso8601
-            words = try decoder.decode([Word].self, from: data)
-        } catch {
-            print("Failed to load words: \(error)")
+    private struct WordProgress: Codable {
+        let id: String
+        var stage: Int
+        var reviewCount: Int
+        var nextReviewDate: Date
+        var lastReviewedDate: Date?
+        var createdAt: Date
+        var checked: Bool
+        var learned: Bool
+
+        init(_ w: Word) {
+            id = w.id; stage = w.stage; reviewCount = w.reviewCount; nextReviewDate = w.nextReviewDate
+            lastReviewedDate = w.lastReviewedDate; createdAt = w.createdAt; checked = w.checked; learned = w.learned
         }
+
+        func apply(to w: inout Word) {
+            w.stage = stage; w.reviewCount = reviewCount; w.nextReviewDate = nextReviewDate
+            w.lastReviewedDate = lastReviewedDate; w.createdAt = createdAt; w.checked = checked; w.learned = learned
+        }
+    }
+
+    private struct LibraryFile: Codable {
+        var version = 3
+        var progress: [WordProgress]
+        var userWords: [Word]
+    }
+
+    private struct BackupFile: Codable {
+        var app = "Lingro 英語"
+        var version = 3
+        var exportedAt = Date()
+        var progress: [WordProgress]
+        var userWords: [Word]
+        var stats: StudyStats
+    }
+
+    private static func isUserWord(_ w: Word) -> Bool { w.id.hasPrefix("u-") }
+
+    private func load() {
+        let dec = JSONDecoder(); dec.dateDecodingStrategy = .iso8601
+        var source = try? Data(contentsOf: libraryURL)
+        if source == nil { source = try? Data(contentsOf: backupURL) }
+        var file: LibraryFile? = nil
+        if let data = source {
+            file = try? dec.decode(LibraryFile.self, from: data)
+            if file == nil, let backup = try? Data(contentsOf: backupURL) {
+                file = try? dec.decode(LibraryFile.self, from: backup)
+            }
+            if file == nil {
+                let stamp = Int(Date().timeIntervalSince1970)
+                try? data.write(to: docs.appendingPathComponent("englishvocab_library.unreadable-\(stamp).json"))
+            }
+        }
+        words = Self.build(progress: file?.progress ?? [], userWords: file?.userWords ?? [])
+        if let data = try? Data(contentsOf: statsURL),
+           let s = try? dec.decode(StudyStats.self, from: data) {
+            stats = s
+        }
+    }
+
+    /// Built-in words with saved progress applied, followed by the user's own words.
+    private static func build(progress: [WordProgress], userWords: [Word]) -> [Word] {
+        var byId: [String: WordProgress] = [:]
+        for p in progress { byId[p.id] = p }
+        var out = SeedWords.all
+        for i in out.indices {
+            if let p = byId[out[i].id] { p.apply(to: &out[i]) }
+        }
+        let seedIds = Set(out.map { $0.id })
+        out.append(contentsOf: userWords.filter { isUserWord($0) && !seedIds.contains($0.id) })
+        return out
     }
 
     func save() {
-        do {
-            let encoder = JSONEncoder()
-            encoder.dateEncodingStrategy = .iso8601
-            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-            let data = try encoder.encode(words)
-            try data.write(to: fileURL, options: .atomic)
-        } catch {
-            print("Failed to save words: \(error)")
+        let enc = JSONEncoder(); enc.dateEncodingStrategy = .iso8601
+        let file = LibraryFile(progress: words.filter { !Self.isUserWord($0) }.map(WordProgress.init),
+                               userWords: words.filter { Self.isUserWord($0) })
+        if let data = try? enc.encode(file) { try? data.write(to: libraryURL, options: .atomic) }
+        if let data = try? enc.encode(stats) { try? data.write(to: statsURL, options: .atomic) }
+    }
+
+    // MARK: - バックアップ（書き出し・読み込み）
+    //
+    // The backup carries progress for built-in words (ids and review state
+    // only — no meanings or examples) plus the full entries of words the user
+    // added themselves, so it restores everything on a new phone but can't
+    // be used to extract the word list.
+
+    func exportBackup() -> URL? {
+        let file = BackupFile(progress: words.filter { !Self.isUserWord($0) }.map(WordProgress.init),
+                              userWords: words.filter { Self.isUserWord($0) }, stats: stats)
+        let enc = JSONEncoder(); enc.dateEncodingStrategy = .iso8601
+        guard let data = try? enc.encode(file) else { return nil }
+        let f = DateFormatter(); f.dateFormat = "yyyyMMdd"
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("Lingro英語_バックアップ_\(f.string(from: Date())).json")
+        try? data.write(to: url, options: .atomic)
+        return url
+    }
+
+    /// Restores from a backup: progress is applied to built-in words, the
+    /// user's own words are added/updated. Returns (restored, added).
+    func importBackup(from url: URL) throws -> (Int, Int) {
+        let scoped = url.startAccessingSecurityScopedResource()
+        defer { if scoped { url.stopAccessingSecurityScopedResource() } }
+        let data = try Data(contentsOf: url)
+        let dec = JSONDecoder(); dec.dateDecodingStrategy = .iso8601
+        let file = try dec.decode(BackupFile.self, from: data)
+        var restored = 0, added = 0
+        for p in file.progress {
+            guard let i = words.firstIndex(where: { $0.id == p.id }) else { continue }
+            p.apply(to: &words[i])
+            restored += 1
         }
-    }
-
-    // MARK: - Study logs (AI grammar explanations + composition attempts)
-
-    private func loadStudyLogs() {
-        guard FileManager.default.fileExists(atPath: studyLogsURL.path) else { return }
-        do {
-            let data = try Data(contentsOf: studyLogsURL)
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .iso8601
-            studyLogs = try decoder.decode([String: ExampleStudyLog].self, from: data)
-        } catch {
-            print("Failed to load study logs: \(error)")
+        for w in file.userWords where Self.isUserWord(w) {
+            if let i = words.firstIndex(where: { $0.id == w.id }) { words[i] = w } else { words.append(w); added += 1 }
+            restored += 1
         }
-    }
-
-    private func saveStudyLogs() {
-        do {
-            let encoder = JSONEncoder()
-            encoder.dateEncodingStrategy = .iso8601
-            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-            let data = try encoder.encode(studyLogs)
-            try data.write(to: studyLogsURL, options: .atomic)
-        } catch {
-            print("Failed to save study logs: \(error)")
-        }
-    }
-
-    func studyLog(forKey key: String) -> ExampleStudyLog {
-        studyLogs[key] ?? ExampleStudyLog()
-    }
-
-    func setAIGrammar(_ text: String, forKey key: String) {
-        var log = studyLogs[key] ?? ExampleStudyLog()
-        log.aiGrammar = text
-        studyLogs[key] = log
-        saveStudyLogs()
-    }
-
-    func appendCompositionAttempt(userText: String, feedback: String, forKey key: String) {
-        var log = studyLogs[key] ?? ExampleStudyLog()
-        log.attempts.insert(
-            CompositionAttempt(date: Date(), userText: userText, feedback: feedback),
-            at: 0
-        )
-        studyLogs[key] = log
-        saveStudyLogs()
-    }
-
-    func deleteCompositionAttempt(id: UUID, forKey key: String) {
-        guard var log = studyLogs[key] else { return }
-        log.attempts.removeAll { $0.id == id }
-        studyLogs[key] = log
-        saveStudyLogs()
-    }
-
-    // MARK: - Grammar MCQ answers
-
-    private func loadGrammarAnswers() {
-        guard FileManager.default.fileExists(atPath: grammarAnswersURL.path) else { return }
-        do {
-            let data = try Data(contentsOf: grammarAnswersURL)
-            grammarAnswers = try JSONDecoder().decode([String: Int].self, from: data)
-        } catch {
-            print("Failed to load grammar answers: \(error)")
-        }
-    }
-
-    private func saveGrammarAnswers() {
-        do {
-            let encoder = JSONEncoder()
-            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-            let data = try encoder.encode(grammarAnswers)
-            try data.write(to: grammarAnswersURL, options: .atomic)
-        } catch {
-            print("Failed to save grammar answers: \(error)")
-        }
-    }
-
-    func recordGrammarAnswer(questionId: String, selectedIndex: Int) {
-        grammarAnswers[questionId] = selectedIndex
-        saveGrammarAnswers()
-    }
-
-    func resetGrammarAnswer(questionId: String) {
-        grammarAnswers.removeValue(forKey: questionId)
-        saveGrammarAnswers()
-    }
-
-    func resetAllGrammarAnswers() {
-        grammarAnswers.removeAll()
-        saveGrammarAnswers()
-    }
-
-    // MARK: - CRUD
-
-    func add(_ word: Word) {
-        words.append(word)
+        stats.studiedDays.formUnion(file.stats.studiedDays)
+        for (k, v) in file.stats.dailySeconds { stats.dailySeconds[k] = max(stats.dailySeconds[k] ?? 0, v) }
+        for (k, v) in file.stats.dailyReviews { stats.dailyReviews[k] = max(stats.dailyReviews[k] ?? 0, v) }
         save()
+        return (restored, added)
     }
 
-    func update(_ word: Word) {
-        guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
-        words[idx] = word
-        save()
-    }
+    /// Words the user added (not part of the built-in list).
+    var userWordCount: Int { words.filter { Self.isUserWord($0) }.count }
 
-    func updateExamples(for wordId: UUID, with examples: [ExampleSentence]) {
-        guard let idx = words.firstIndex(where: { $0.id == wordId }) else { return }
-        words[idx].examples = examples
-        save()
-    }
-
-    func delete(at offsets: IndexSet) {
-        words.remove(atOffsets: offsets)
-        save()
-    }
-
-    func delete(id: UUID) {
-        words.removeAll { $0.id == id }
-        save()
-    }
-
-    /// Reset all words back to "未習得" with reviewCount=0 and due today.
-    func resetAllProgress() {
-        let now = Date()
-        for i in words.indices {
-            words[i].reviewCount = 0
-            words[i].status = .unlearned
-            words[i].nextReviewDate = now
-            words[i].lastReviewedDate = nil
-        }
-        save()
-    }
-
-    // MARK: - Stats
+    // MARK: - Derived collections
 
     var totalCount: Int { words.count }
-    var perfectCount: Int { words.filter { $0.status == .perfect }.count }
-    var fuzzyCount: Int { words.filter { $0.status == .fuzzy }.count }
-    var unlearnedCount: Int { words.filter { $0.status == .unlearned }.count }
+    var learnedCount: Int { words.filter { $0.learned }.count }
+    var checkedWords: [Word] { words.filter { $0.checked } }
 
-    var progressFraction: Double {
-        guard totalCount > 0 else { return 0 }
-        return Double(perfectCount) / Double(totalCount)
+    /// 今日の100語: a different random hundred every day (same all day).
+    func dailyWords(count: Int = 100) -> [Word] {
+        let day = Int(Date().startOfDay.timeIntervalSince1970 / 86_400)
+        var rng = SplitMix64(seed: UInt64(bitPattern: Int64(day &* 7_919 &+ 17)))
+        var list = words.filter { !$0.learned }.sorted { $0.id < $1.id }
+        list.shuffle(using: &rng)
+        return Array(list.prefix(count))
     }
 
-    /// Words due for review today (or earlier).
-    var dueWords: [Word] {
-        let now = Date()
-        return words
-            .filter { $0.nextReviewDate <= now }
-            .sorted { $0.nextReviewDate < $1.nextReviewDate }
-    }
-
-    // MARK: - Home dashboard stats
-
-    /// Words that need review today (nextReviewDate ≤ end of today).
-    var dueTodayCount: Int {
-        let cal = Calendar.current
-        guard let endOfToday = cal.date(byAdding: .day, value: 1, to: cal.startOfDay(for: Date())) else {
-            return dueWords.count
+    /// Words due on or before the end of `date` (today also includes overdue).
+    func dueWords(on date: Date = Date()) -> [Word] {
+        let day = date.startOfDay
+        let end = day.adding(days: 1)
+        if day <= Date().startOfDay {
+            return words.filter { !$0.learned && $0.nextReviewDate < end }
         }
-        return words.filter { $0.nextReviewDate < endOfToday }.count
+        return words.filter { !$0.learned && $0.nextReviewDate >= day && $0.nextReviewDate < end }
     }
 
-    /// Words reviewed at least once today.
-    var reviewedTodayCount: Int {
-        let cal = Calendar.current
-        let today = cal.startOfDay(for: Date())
-        return words.filter {
-            guard let d = $0.lastReviewedDate else { return false }
-            return cal.isDate(d, inSameDayAs: today)
-        }.count
-    }
-
-    /// Words that will be due within the next 7 days (including those
-    /// already overdue).
-    var dueThisWeekCount: Int {
-        let cal = Calendar.current
-        guard let endOfWeek = cal.date(
-            byAdding: .day,
-            value: 7,
-            to: cal.startOfDay(for: Date())
-        ) else {
-            return dueWords.count
+    /// Today's review set, sorted by stage then word, capped by the daily limit.
+    func todayReviewWords(limit: Int) -> [Word] {
+        let due = dueWords().sorted {
+            if $0.stage != $1.stage { return $0.stage < $1.stage }
+            return $0.nextReviewDate < $1.nextReviewDate
         }
-        return words.filter { $0.nextReviewDate < endOfWeek }.count
+        return limit > 0 ? Array(due.prefix(limit)) : due
     }
 
-    /// Words reviewed at least once in the past 7 days (rolling window).
-    var reviewedThisWeekCount: Int {
-        let weekAgo = Date().addingTimeInterval(-7 * 24 * 60 * 60)
-        return words.filter {
-            guard let d = $0.lastReviewedDate else { return false }
-            return d >= weekAgo
-        }.count
+    /// Per-stage breakdown of today's review set. Uses the same capped list
+    /// as the 今日の復習 total so the numbers always add up.
+    func stageCounts(limit: Int) -> [ReviewStage: Int] {
+        var r: [ReviewStage: Int] = [:]
+        for w in todayReviewWords(limit: limit) { r[w.reviewStage, default: 0] += 1 }
+        return r
     }
 
-    // MARK: - Review logic
+    /// Words scheduled for a future day (not today, not past).
+    func scheduledWords(on date: Date) -> [Word] {
+        let day = date.startOfDay, end = day.adding(days: 1)
+        return words.filter { !$0.learned && $0.nextReviewDate >= day && $0.nextReviewDate < end }
+    }
 
-    /// Records a review and schedules the next review date.
-    /// - ◎ 完璧: increment reviewCount, schedule by Ebbinghaus curve
-    /// - △ あいまい: keep reviewCount, schedule 1 week later
-    /// - × わからない: reset reviewCount=0, schedule next day
-    /// Records a per-quiz-mode answer. Each (word, mode) pair has its own
-    /// count and Ebbinghaus next-review date, so a word can be 復習完了 in
-    /// 使う場面 mode while still being practiced in 例文翻訳 mode.
-    func recordModeAnswer(_ mark: ReviewMark, for word: Word, modeKey: String) {
-        guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
-        var w = words[idx]
-        let now = Date()
-        w.lastReviewedDate = now
+    /// Words whose most recent review happened on that (past) day.
+    func reviewedWords(on date: Date) -> [Word] {
+        let day = date.startOfDay, end = day.adding(days: 1)
+        return words.filter { ($0.lastReviewedDate.map { $0 >= day && $0 < end }) ?? false }
+    }
 
-        let currentCount = w.modeCounts[modeKey] ?? 0
-        let newCount: Int
-        let daysUntilNext: Int
-        switch mark {
-        case .perfect:
-            newCount = currentCount + 1
-            daysUntilNext = intervalDays(forCompletedReviewCount: newCount)
-        case .fuzzy:
-            newCount = currentCount
-            daysUntilNext = 7
-        case .forgot:
-            newCount = 0
-            daysUntilNext = 1
+    /// Calendar numbers for each day of the month:
+    /// - past days: how many cards were answered that day
+    /// - today: today's review set (capped by the daily limit)
+    /// - future days: words scheduled for that day
+    func calendarCounts(month: Date, limit: Int) -> [Int: Int] {
+        let cal = Calendar.current
+        guard let range = cal.range(of: .day, in: .month, for: month),
+              let first = cal.date(from: cal.dateComponents([.year, .month], from: month)) else { return [:] }
+        let today = Date().startOfDay
+        var r: [Int: Int] = [:]
+        for d in range {
+            let day = first.adding(days: d - 1)
+            let n: Int
+            if day < today { n = stats.reviews(on: day) }
+            else if day == today { n = todayReviewWords(limit: limit).count }
+            else { n = scheduledWords(on: day).count }
+            if n > 0 { r[d] = n }
         }
+        return r
+    }
 
-        w.modeCounts[modeKey] = newCount
-        w.modeNextReviewDates[modeKey] = Calendar.current.date(
-            byAdding: .day, value: daysUntilNext, to: now
-        ) ?? now
+    // MARK: - Mutations
 
-        // Keep the legacy reviewCount in sync (use the highest mode count) so
-        // existing card-view UIs and the 一覧 sort continue to behave.
-        w.reviewCount = max(w.reviewCount, w.modeCounts.values.max() ?? 0)
-        if mark == .perfect { w.status = .perfect }
-        if mark == .fuzzy { w.status = .fuzzy }
-        if mark == .forgot { w.status = .unlearned }
-
-        words[idx] = w
+    func toggleChecked(_ word: Word) {
+        guard let i = words.firstIndex(where: { $0.id == word.id }) else { return }
+        words[i].checked.toggle()
         save()
     }
 
-    func record(mark: ReviewMark, for word: Word) {
-        guard let idx = words.firstIndex(where: { $0.id == word.id }) else { return }
-        var w = words[idx]
-        let now = Date()
-        w.lastReviewedDate = now
-
-        let daysUntilNext: Int
-        switch mark {
-        case .perfect:
-            w.reviewCount += 1
-            w.status = .perfect
-            daysUntilNext = intervalDays(forCompletedReviewCount: w.reviewCount)
-        case .fuzzy:
-            w.status = .fuzzy
-            daysUntilNext = 7
-        case .forgot:
-            w.reviewCount = 0
-            w.status = .unlearned
-            daysUntilNext = 1
-        }
-
-        w.nextReviewDate = Calendar.current.date(
-            byAdding: .day,
-            value: daysUntilNext,
-            to: now
-        ) ?? now
-
-        words[idx] = w
+    func clearChecked() {
+        for i in words.indices { words[i].checked = false }
         save()
     }
 
-    // MARK: - Seed
-
-    static func seedWords() -> [Word] {
-        return originalSeedWords() + SeedData.additionalWords
+    /// 思い出せた → next stage; 思い出せなかった → back to 1日後.
+    func record(remembered: Bool, for word: Word) {
+        guard let i = words.firstIndex(where: { $0.id == word.id }) else { return }
+        var w = words[i]
+        let now = Date()
+        w.reviewCount += 1
+        w.lastReviewedDate = now
+        if remembered {
+            if w.reviewStage == .month1 {
+                w.learned = true
+                w.nextReviewDate = now.startOfDay.adding(days: 60)
+            } else {
+                let interval = w.reviewStage.intervalDays
+                w.stage = w.reviewStage.next.rawValue
+                w.nextReviewDate = now.startOfDay.adding(days: interval)
+            }
+        } else {
+            w.stage = ReviewStage.day1.rawValue
+            w.learned = false
+            w.nextReviewDate = now.startOfDay.adding(days: 1)
+        }
+        words[i] = w
+        stats.markToday()
+        stats.addReview(on: now)
+        save()
     }
 
-    private static func originalSeedWords() -> [Word] {
-        return [
-            Word(
-                word: "thread",
-                definitionEnglish: "a thin strand used for sewing; a series of connected messages or ideas",
-                definitionJapanese: "糸／（SNSなどの）スレ・一連の話題",
-                useCases: ["裁縫の糸", "Xや掲示板の投稿の流れ", "話の流れ"],
-                examples: [
-                    ExampleSentence(english: "Use this thread to sew.", japanese: "この糸で縫って。"),
-                    ExampleSentence(english: "I followed the thread online.", japanese: "そのスレを追った。"),
-                    ExampleSentence(english: "The thread of the story is clear.", japanese: "話の流れが明確だ。")
-                ],
-                synonyms: [
-                    SynonymGroup(
-                        word: "string",
-                        meaning: "ひも",
-                        definitionEnglish: "a thin, twisted material used for tying or binding things",
-                        useCases: ["物を縛る・結ぶとき", "工作・梱包の場面"],
-                        examples: [
-                            ExampleSentence(english: "Tie it with a string.", japanese: "ひもで結ぶ。"),
-                            ExampleSentence(english: "A piece of string.", japanese: "一本のひも。")
-                        ]
-                    )
-                ]
-            ),
-            Word(
-                word: "spokesman",
-                definitionEnglish: "a person who speaks officially for an organization or group",
-                definitionJapanese: "広報担当・公式発言者",
-                useCases: ["会社・政府の代表コメント", "公式見解を伝える人"],
-                examples: [
-                    ExampleSentence(english: "The spokesman gave a statement.", japanese: "広報が声明を出した。"),
-                    ExampleSentence(english: "He is the company spokesman.", japanese: "彼は会社の広報だ。"),
-                    ExampleSentence(english: "The spokesman answered questions.", japanese: "広報が質問に答えた。")
-                ],
-                synonyms: [
-                    SynonymGroup(
-                        word: "representative",
-                        meaning: "代表",
-                        definitionEnglish: "a person chosen to act or speak for a group",
-                        useCases: ["会社・団体の代表として動く人"],
-                        examples: [
-                            ExampleSentence(english: "Company representative.", japanese: "会社の代表。"),
-                            ExampleSentence(english: "Official representative.", japanese: "公式代表。")
-                        ]
-                    )
-                ]
-            ),
-            Word(
-                word: "speaker",
-                definitionEnglish: "a person who is speaking; a device that produces sound",
-                definitionJapanese: "話し手／スピーカー（音響機器）",
-                useCases: [
-                    "プレゼン・講演で話している人を指すとき",
-                    "音楽用の音響機器について話すとき"
-                ],
-                examples: [
-                    ExampleSentence(english: "He is a great speaker.", japanese: "彼は話が上手だ。"),
-                    ExampleSentence(english: "Turn up the speaker volume.", japanese: "スピーカーの音量を上げて。"),
-                    ExampleSentence(english: "The keynote speaker arrived.", japanese: "基調講演者が到着した。")
-                ],
-                synonyms: []
-            ),
-            Word(
-                word: "box",
-                definitionEnglish: "a container with flat sides; to put into a box; to fight as a sport",
-                definitionJapanese: "箱／箱に入れる／ボクシングする",
-                useCases: [
-                    "物を入れる容器について話すとき",
-                    "梱包する動作を表すとき",
-                    "スポーツのボクシングをするとき"
-                ],
-                examples: [
-                    ExampleSentence(english: "Put it in the box.", japanese: "それを箱に入れて。"),
-                    ExampleSentence(english: "I'll box these up.", japanese: "これを箱詰めしておくね。"),
-                    ExampleSentence(english: "He boxes on weekends.", japanese: "彼は週末にボクシングをする。")
-                ],
-                synonyms: []
-            ),
-            Word(
-                word: "a bunch of",
-                definitionEnglish: "a large number or amount of something (informal)",
-                definitionJapanese: "たくさんの（カジュアル）",
-                useCases: [
-                    "カジュアルに「たくさん」と言いたいとき",
-                    "友達や同僚との日常会話"
-                ],
-                examples: [
-                    ExampleSentence(english: "I have a bunch of work to do.", japanese: "やることがたくさんある。"),
-                    ExampleSentence(english: "We bought a bunch of snacks.", japanese: "お菓子をいっぱい買った。"),
-                    ExampleSentence(english: "There were a bunch of people.", japanese: "人がたくさんいた。")
-                ],
-                synonyms: [
-                    SynonymGroup(
-                        word: "lots of",
-                        meaning: "たくさんの",
-                        definitionEnglish: "a large amount of something",
-                        useCases: ["カジュアルに量の多さを表す"],
-                        examples: [
-                            ExampleSentence(english: "Lots of fun.", japanese: "とても楽しい。"),
-                            ExampleSentence(english: "Lots of people came.", japanese: "たくさんの人が来た。")
-                        ]
-                    )
-                ]
-            ),
-            Word(
-                word: "playful",
-                definitionEnglish: "full of fun and energy; light-hearted and joking",
-                definitionJapanese: "遊び心のある・ふざけた（ポジティブ）",
-                useCases: [
-                    "人や雰囲気が陽気でユーモラスな様子",
-                    "デザインや言い回しに「遊び心」があるとき"
-                ],
-                examples: [
-                    ExampleSentence(english: "She has a playful personality.", japanese: "彼女は遊び心のある性格だ。"),
-                    ExampleSentence(english: "His tone was playful.", japanese: "彼の口調はおどけていた。"),
-                    ExampleSentence(english: "A playful design.", japanese: "遊び心のあるデザイン。")
-                ],
-                synonyms: []
-            )
-        ]
+    /// True if a word with the same English text (ignoring case, spaces and punctuation) exists.
+    func contains(word text: String) -> Bool {
+        let key = Self.normalize(text)
+        return words.contains { Self.normalize($0.word) == key }
+    }
+
+    private static func normalize(_ s: String) -> String {
+        s.lowercased().filter { $0.isLetter || $0.isNumber }
+    }
+
+    /// Adds a user / AI-made word at the start of the review schedule.
+    @discardableResult
+    func addUserWord(_ w: Word) -> Bool {
+        guard !contains(word: w.word) else { return false }
+        words.append(w)
+        save()
+        return true
+    }
+
+    func replaceExamples(for wordId: String, with examples: [Example], append: Bool) {
+        guard let i = words.firstIndex(where: { $0.id == wordId }) else { return }
+        if append { words[i].examples.append(contentsOf: examples) } else { words[i].examples = examples }
+        save()
+    }
+
+    func markStudied() {
+        stats.markToday()
+        save()
+    }
+
+    // MARK: - 発音の単語（AIで増やした分）
+
+    @Published private(set) var generatedSoundWords: [String: [SoundWord]] = [:]
+    private var soundWordsURL: URL { docs.appendingPathComponent("englishvocab_sound_words.json") }
+
+    /// Built-in + generated words for a sound, without duplicates.
+    func soundWords(for item: SoundItem) -> [SoundWord] {
+        var seen = Set<String>()
+        var out: [SoundWord] = []
+        for w in item.moreExamples + (PronunciationSeed.pools[item.id] ?? []) + (generatedSoundWords[item.id] ?? []) {
+            if seen.insert(w.id).inserted { out.append(w) }
+        }
+        return out
+    }
+
+    func addGeneratedSoundWords(_ words: [SoundWord], for item: SoundItem) {
+        var list = generatedSoundWords[item.id] ?? []
+        let have = Set(soundWords(for: item).map { $0.id })
+        list.append(contentsOf: words.filter { !have.contains($0.id) })
+        generatedSoundWords[item.id] = list
+        if let data = try? JSONEncoder().encode(generatedSoundWords) {
+            try? data.write(to: soundWordsURL, options: .atomic)
+        }
+    }
+
+    private func loadSoundWords() {
+        if let data = try? Data(contentsOf: soundWordsURL),
+           let d = try? JSONDecoder().decode([String: [SoundWord]].self, from: data) {
+            generatedSoundWords = d
+        }
+    }
+
+    // MARK: - 学習時間（学習画面にいる間だけ数える）
+
+    private var studyStart: Date? = nil
+    private var studyScreenCount = 0
+
+    func studyScreenAppeared() {
+        studyScreenCount += 1
+        if studyStart == nil { studyStart = Date() }
+    }
+
+    func studyScreenDisappeared() {
+        studyScreenCount = max(0, studyScreenCount - 1)
+        if studyScreenCount == 0 { flushStudyTime() }
+    }
+
+    /// App went to the background: bank the time so far, keep the screen count.
+    func pauseStudy() { flushStudyTime() }
+
+    /// App came back: restart the clock if a study screen is still showing.
+    func resumeStudy() {
+        if studyScreenCount > 0 && studyStart == nil { studyStart = Date() }
+    }
+
+    private func flushStudyTime() {
+        guard let start = studyStart else { return }
+        studyStart = nil
+        let now = Date()
+        guard now > start, now.timeIntervalSince(start) < 6 * 3600 else { return }
+        // Split a session that crosses midnight so each day gets its own time.
+        var from = start
+        while from < now {
+            let dayEnd = from.startOfDay.adding(days: 1)
+            let to = min(dayEnd, now)
+            stats.addSeconds(to.timeIntervalSince(from), on: from)
+            if stats.seconds(on: from) >= 60 { stats.studiedDays.insert(from.startOfDay.timeIntervalSince1970) }
+            from = to
+        }
+        save()
+    }
+
+    /// Study time for a day including the session that is running right now
+    /// (the clock only banks time when a study screen closes).
+    func liveSeconds(on date: Date) -> TimeInterval {
+        var s = stats.seconds(on: date)
+        if let start = studyStart {
+            let day = date.startOfDay, end = day.adding(days: 1)
+            let from = max(start, day), to = min(Date(), end)
+            if to > from { s += to.timeIntervalSince(from) }
+        }
+        return s
+    }
+
+    /// 学習記録をリセット: progress and statistics only, words stay.
+    func resetProgress() {
+        for i in words.indices {
+            words[i].stage = 0
+            words[i].reviewCount = 0
+            words[i].nextReviewDate = Date().startOfDay
+            words[i].lastReviewedDate = nil
+            words[i].checked = false
+            words[i].learned = false
+        }
+        stats = StudyStats()
+        save()
+    }
+
+    // MARK: - CSV export（チェックした単語・自分で追加した単語のみ）
+
+    /// Rows allowed in the CSV: words the user checked + words the user added.
+    /// The built-in content (examples, 定義, 関連表現 …) is never exported.
+    var csvExportableWords: [Word] {
+        words.filter { $0.checked || Self.isUserWord($0) }
+            .sorted { $0.createdAt < $1.createdAt }
+    }
+
+    func exportCSV() -> URL? {
+        let list = csvExportableWords
+        guard !list.isEmpty else { return nil }
+        func q(_ s: String) -> String { "\"" + s.replacingOccurrences(of: "\"", with: "\"\"") + "\"" }
+        var rows = ["英語,発音記号,日本語,区分"]
+        for w in list {
+            let kind = Self.isUserWord(w) ? "自分で追加" : "チェック"
+            rows.append([q(w.word), q(w.ipaDisplay), q(w.japanese), q(kind)].joined(separator: ","))
+        }
+        let f = DateFormatter(); f.dateFormat = "yyyyMMdd"
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("Lingro英語_単語_\(f.string(from: Date())).csv")
+        guard let data = ("\u{FEFF}" + rows.joined(separator: "\n")).data(using: .utf8) else { return nil }
+        try? data.write(to: url, options: .atomic)
+        return url
+    }
+
+    // MARK: - Notifications (復習の通知)
+
+    func scheduleNotification(settings: AppSettings) {
+        let center = UNUserNotificationCenter.current()
+        center.removePendingNotificationRequests(withIdentifiers: ["englishvocab.daily"])
+        guard settings.notifyEnabled else { return }
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+            guard granted else { return }
+            let content = UNMutableNotificationContent()
+            content.title = "Lingro 英語"
+            content.body = "今日の復習の時間です。忘れる前にもう一度。"
+            content.sound = .default
+            var comps = DateComponents()
+            comps.hour = settings.notifyHour
+            comps.minute = settings.notifyMinute
+            let trigger = UNCalendarNotificationTrigger(dateMatching: comps, repeats: true)
+            center.add(UNNotificationRequest(identifier: "englishvocab.daily", content: content, trigger: trigger))
+        }
     }
 }

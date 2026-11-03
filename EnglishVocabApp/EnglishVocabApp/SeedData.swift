@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 /// Additional vocabulary added in batch updates. Returned by `WordStore.seedWords()`
 /// alongside the original mockup-derived seeds. New seeds are merged into existing
@@ -150,6 +151,9 @@ enum SeedData {
         "where got", "got or not", "already"
     ]
 
+    /// Builds one built-in word. The stable `id` is filled in by `SeedWords`
+    /// (it is derived from the word's position-independent spelling), and the
+    /// example IPA comes from the pre-generated `ExampleIPA` table.
     private static func make(
         _ word: String,
         _ defEN: String,
@@ -159,13 +163,14 @@ enum SeedData {
         ipa: String? = nil
     ) -> Word {
         Word(
+            id: "",
             word: word,
-            ipa: ipa,
-            definitionEnglish: defEN,
-            definitionJapanese: defJA,
+            ipa: ipa ?? "",
+            japanese: defJA,
+            definition: defEN,
             useCases: useCases,
-            examples: examples.map { ExampleSentence(english: $0.0, japanese: $0.1) },
-            synonyms: []
+            examples: examples.map { Example(english: $0.0, ipa: ExampleIPA.lookup($0.0) ?? "", japanese: $0.1) },
+            related: []
         )
     }
 
@@ -32042,6 +32047,18 @@ enum SeedData {
 enum RankedSeed {
     static let words: [RankedWord] = parse(raw)
 
+    /// 会話頻度 (1〜5) by lower-cased English spelling.
+    static func frequency(of english: String) -> Int? {
+        byEnglish[english.lowercased().trimmingCharacters(in: .whitespaces)]
+    }
+
+    private static let byEnglish: [String: Int] = {
+        var d: [String: Int] = [:]
+        d.reserveCapacity(3200)
+        for w in words { d[w.english.lowercased()] = w.frequency }
+        return d
+    }()
+
     private static func parse(_ text: String) -> [RankedWord] {
         var result: [RankedWord] = []
         result.reserveCapacity(3200)
@@ -35070,68 +35087,63 @@ AIが量産した粗悪コンテンツ	ai slop	1	low-quality mass-produced AI co
 
 // MARK: - トピック会話 seed
 
-/// Model-side row of a topic conversation. Built once from `TopicSeed`.
-struct TopicLine: Identifiable, Hashable {
-    let id: Int
-    /// "A" or "B" — who is speaking.
-    let speaker: String
-    let english: String
-    let japanese: String
-}
-
-struct TopicScene: Identifiable, Hashable {
-    let id: Int
-    /// Optional heading, e.g. 受付で. Empty for single-scene topics.
-    let label: String
-    let lines: [TopicLine]
-}
-
-struct TopicConversation: Identifiable, Hashable {
-    let id: Int
-    let emoji: String
-    let title: String
-    let category: String
-    /// Handy expressions from the conversation, shown as chips.
-    let keys: [String]
-    let scenes: [TopicScene]
-
-    var lineCount: Int { scenes.reduce(0) { $0 + $1.lines.count } }
-}
-
-/// Everyday conversations grouped by topic, each line carrying its Japanese
-/// translation. Stored as tab-separated rows so the file stays compact, and
-/// parsed once on first access.
+/// 日常のトピック会話。857 conversations, one per topic, parsed lazily from
+/// the tab-separated block below (rows: T emoji title category keys / S / A|B english japanese).
 enum TopicSeed {
-    static let topics: [TopicConversation] = parse(raw)
+    static let all: [TopicConversation] = parse(raw)
+
+    /// Categories in order of first appearance, each with a fixed colour.
+    static let categories: [TopicCategory] = {
+        var seen: [String] = []
+        for c in all where !seen.contains(c.category) { seen.append(c.category) }
+        let palette: [Color] = [Palette.stageYellow, Palette.stageBlue, Palette.stageTeal, Palette.stageRed,
+                                Palette.coinOrange, Palette.bubbleGreen]
+        return seen.enumerated().map { TopicCategory(id: $0.element, color: palette[$0.offset % palette.count]) }
+    }()
+
+    static func color(of category: String) -> Color {
+        categories.first { $0.id == category }?.color ?? Palette.stageBlue
+    }
+
+    static func conversations(in category: String) -> [TopicConversation] {
+        all.filter { $0.category == category }
+    }
+
+    /// Rough level from how long the English lines are.
+    private static func level(for lines: [DialogueLine]) -> TopicLevel {
+        guard !lines.isEmpty else { return .basic }
+        let words = lines.reduce(0) { $0 + $1.english.split(separator: " ").count }
+        let avg = Double(words) / Double(lines.count)
+        if avg < 6 { return .beginner }
+        if avg < 8 { return .basic }
+        if avg < 10.5 { return .intermediate }
+        return .advanced
+    }
 
     private static func parse(_ text: String) -> [TopicConversation] {
         var result: [TopicConversation] = []
-        var emoji = "", title = "", category = "", keys: [String] = []
-        var scenes: [TopicScene] = []
-        var sceneLabel = ""
-        var lines: [TopicLine] = []
-        var lineId = 0, sceneId = 0
+        result.reserveCapacity(900)
+        var emoji = "", title = "", category = ""
+        var keys: [KeyExpression] = []
+        var lines: [DialogueLine] = []
+        var pendingBreak = false
+        var lineId = 0, keyId = 0
 
-        func closeScene() {
-            guard !lines.isEmpty else { return }
-            sceneId += 1
-            scenes.append(TopicScene(id: sceneId, label: sceneLabel, lines: lines))
-            lines = []
-        }
         func closeTopic() {
-            closeScene()
-            guard !title.isEmpty, !scenes.isEmpty else { return }
+            guard !title.isEmpty, !lines.isEmpty else { return }
             result.append(
                 TopicConversation(
-                    id: result.count + 1,
+                    id: "t\(result.count + 1)",
                     emoji: emoji,
                     title: title,
                     category: category,
-                    keys: keys,
-                    scenes: scenes
+                    level: level(for: lines),
+                    lines: lines,
+                    keys: keys
                 )
             )
-            scenes = []
+            lines = []
+            keys = []
         }
 
         for line in text.split(separator: "\n", omittingEmptySubsequences: true) {
@@ -35144,16 +35156,18 @@ enum TopicSeed {
                 keys = f[4].split(separator: ",")
                     .map { $0.trimmingCharacters(in: .whitespaces) }
                     .filter { !$0.isEmpty }
-                sceneLabel = ""
+                    .map { keyId += 1; return KeyExpression(id: keyId, english: $0, japanese: "") }
+                pendingBreak = false
             case "S":
-                closeScene()
-                sceneLabel = f.count >= 2 ? f[1] : ""
+                pendingBreak = !lines.isEmpty
             case "A", "B":
                 guard f.count >= 3 else { continue }
                 lineId += 1
                 lines.append(
-                    TopicLine(id: lineId, speaker: f[0], english: f[1], japanese: f[2])
+                    DialogueLine(id: lineId, speaker: f[0], english: f[1], ipa: "", japanese: f[2],
+                                 sectionBreak: pendingBreak)
                 )
+                pendingBreak = false
             default:
                 continue
             }
@@ -59057,6 +59071,9 @@ enum IPATokenizer {
             .replacingOccurrences(of: "ˌ", with: "")
             .replacingOccurrences(of: "ɐ", with: "ə")
             .replacingOccurrences(of: "ɹ", with: "r")
+            .replacingOccurrences(of: "g", with: "ɡ")
+            .replacingOccurrences(of: ":", with: "ː")
+            .replacingOccurrences(of: "ˑ", with: "ː")
         var out: [String] = []
         var rest = Substring(cleaned)
         while let first = rest.first {
@@ -59064,7 +59081,9 @@ enum IPATokenizer {
                 out.append(m)
                 rest = rest.dropFirst(m.count)
             } else {
-                if first != " " { out.append(String(first)) }
+                // A lone "e" (dictionary style) is espeak's ɛ.
+                if first == "e" { out.append("ɛ") }
+                else if first != " " && first != "." && first != "," { out.append(String(first)) }
                 rest = rest.dropFirst()
             }
         }
