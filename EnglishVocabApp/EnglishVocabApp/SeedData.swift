@@ -135,7 +135,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -31589,6 +31589,115 @@ enum SeedData {
                     ("The film starts at quarter past eight.", "映画は8時15分に始まるよ。"),
                     ("It's a quarter to six — we'd better go.", "6時15分前だ。そろそろ出なきゃ。")
                  ], ipa: "/ə ˈkwɔːtə pɑːst/"),
+        ]
+    }
+    private static var britishColloquial122: [Word] {
+        [
+            make("pins and needles", "a prickling feeling in part of your body, usually after sitting or lying on it for too long",
+                 "（手足の）しびれ・ジンジンする感じ",
+                 useCases: ["正座や長時間座った後", "体の不調を伝えるとき"],
+                 examples: [
+                    ("I've got pins and needles in my leg — give me a sec.", "足がしびれちゃった。ちょっと待って。"),
+                    ("I slept on my arm and woke up with pins and needles.", "腕を下にして寝てたら、起きたらしびれてた。")
+                 ], ipa: "/pɪnz ən ˈniːdlz/"),
+            make("a runny nose", "a nose that keeps producing liquid, usually because of a cold or allergy",
+                 "鼻水が出ること",
+                 useCases: ["風邪の症状を伝えるとき", "薬局や病院で"],
+                 examples: [
+                    ("I've got a runny nose and a bit of a cough.", "鼻水が出て、ちょっと咳もあるんだ。"),
+                    ("Have you got a tissue? My nose is so runny today.", "ティッシュある？今日は鼻水がひどくて。")
+                 ], ipa: "/ə ˈrʌni nəʊz/"),
+            make("value for money", "worth the price you pay for it",
+                 "お値段以上の価値・コスパが良い",
+                 useCases: ["買い物や外食の感想", "商品やサービスの比較"],
+                 examples: [
+                    ("That restaurant is really good value for money.", "あのレストラン、本当にコスパがいいよ。"),
+                    ("It's not cheap, but it's great value for money.", "安くはないけど、値段以上の価値はあるよ。")
+                 ], ipa: "/ˈvæljuː fə ˈmʌni/"),
+            make("go window shopping", "to look at things in shop windows or stores without intending to buy anything",
+                 "ウィンドウショッピングをする",
+                 useCases: ["週末の予定を話すとき", "街歩きの誘い"],
+                 examples: [
+                    ("We're just going window shopping — I'm skint till payday.", "見て回るだけだよ。給料日までお金ないし。"),
+                    ("Fancy going window shopping in town on Saturday?", "土曜に街でウィンドウショッピングしない？")
+                 ], ipa: "/ɡəʊ ˈwɪndəʊ ˌʃɒpɪŋ/"),
+            make("see someone off", "to go to an airport, station, etc. to say goodbye to someone who is leaving",
+                 "（人を）見送る",
+                 useCases: ["空港や駅での別れ", "旅立つ友人や家族に"],
+                 examples: [
+                    ("My parents came to the airport to see me off.", "両親が空港まで見送りに来てくれた。"),
+                    ("I'll come to the station and see you off.", "駅まで見送りに行くよ。")
+                 ], ipa: "/siː ˈsʌmwʌn ɒf/"),
+            make("safe and sound", "safe and not harmed, especially after a journey or a worrying situation",
+                 "無事に",
+                 useCases: ["無事に到着したと伝えるとき", "心配していた相手に"],
+                 examples: [
+                    ("Just landed — we're safe and sound.", "今着いたよ。みんな無事だよ。"),
+                    ("Text me when you get home safe and sound.", "無事に家に着いたらメッセージしてね。")
+                 ], ipa: "/seɪf ən saʊnd/"),
+            make("sick and tired of", "annoyed and bored with something because it has happened too often",
+                 "〜にうんざりしている",
+                 useCases: ["不満や愚痴を言うとき", "繰り返される問題に"],
+                 examples: [
+                    ("I'm sick and tired of this rain.", "この雨にはもううんざりだよ。"),
+                    ("She's sick and tired of being asked the same question.", "彼女は同じ質問をされるのにうんざりしてる。")
+                 ], ipa: "/sɪk ən ˈtaɪəd əv/"),
+            make("peace and quiet", "a calm situation without noise or interruptions",
+                 "静けさ・ゆっくりできる時間",
+                 useCases: ["一人の時間が欲しいとき", "休暇や田舎の話"],
+                 examples: [
+                    ("I just want a bit of peace and quiet tonight.", "今夜はちょっと静かにゆっくりしたいんだ。"),
+                    ("We moved to the countryside for some peace and quiet.", "静かな暮らしを求めて田舎に引っ越したんだ。")
+                 ], ipa: "/piːs ən ˈkwaɪət/"),
+            make("the ins and outs", "all the details of how something works or happened",
+                 "詳細・細かい事情",
+                 useCases: ["仕事や手続きの説明", "事情を詳しく聞くとき"],
+                 examples: [
+                    ("She knows all the ins and outs of the system.", "彼女はそのシステムの細かいところまで全部知ってるよ。"),
+                    ("I don't know the ins and outs of it, but they've split up.", "詳しい事情は知らないけど、あの二人別れたらしい。")
+                 ], ipa: "/ðiː ˌɪnz ən ˈaʊts/"),
+            make("a one-off", "something that happens or is done only once",
+                 "一回限りのこと",
+                 useCases: ["例外的な出来事だと説明するとき", "特別なイベントや支払い"],
+                 examples: [
+                    ("Don't worry, it was just a one-off.", "心配しないで、今回だけのことだから。"),
+                    ("It's a one-off payment, not a monthly fee.", "一回払いで、月額料金じゃないよ。")
+                 ], ipa: "/ə ˌwʌn ˈɒf/"),
+            make("a rough idea", "a general idea that is not exact or detailed",
+                 "大まかな見当・だいたいのイメージ",
+                 useCases: ["見積もりや予定を聞くとき", "ざっくり説明するとき"],
+                 examples: [
+                    ("Can you give me a rough idea of how much it'll cost?", "だいたいいくらかかるか教えてもらえる？"),
+                    ("I've got a rough idea of where it is.", "どの辺にあるかはだいたいわかるよ。")
+                 ], ipa: "/ə rʌf aɪˈdɪə/"),
+            make("mind your head", "a warning to be careful not to hit your head on something low",
+                 "頭上に気をつけて",
+                 useCases: ["低い天井や入口で", "車に乗り込む人に"],
+                 examples: [
+                    ("Mind your head — the ceiling's really low here.", "頭気をつけて。ここ天井すごく低いから。"),
+                    ("Mind your head as you get in the car.", "車に乗るとき頭ぶつけないようにね。")
+                 ], ipa: "/maɪnd jə hed/"),
+            make("change trains", "to get off one train and get on another to continue your journey",
+                 "電車を乗り換える",
+                 useCases: ["道案内や移動の説明", "駅で行き方を聞くとき"],
+                 examples: [
+                    ("You'll need to change trains at Reading.", "レディングで乗り換えが必要だよ。"),
+                    ("Is it direct, or do I have to change trains?", "直通？それとも乗り換えがある？")
+                 ], ipa: "/tʃeɪndʒ treɪnz/"),
+            make("a late night", "an evening when you go to bed much later than usual",
+                 "夜更かし・遅くまで起きていた夜",
+                 useCases: ["寝不足の理由を話すとき", "翌日の予定を気にするとき"],
+                 examples: [
+                    ("Sorry, I'm a bit tired — I had a late night.", "ごめん、ちょっと眠くて。昨日遅かったんだ。"),
+                    ("Let's not make it a late night; I've got work tomorrow.", "あまり遅くならないようにしよう。明日仕事なんだ。")
+                 ], ipa: "/ə leɪt naɪt/"),
+            make("a light sleeper", "someone who wakes up easily because of noise or movement",
+                 "眠りが浅い人・すぐ目が覚める人",
+                 useCases: ["ホテルや同室者との会話", "睡眠について話すとき"],
+                 examples: [
+                    ("I'm a light sleeper, so can I have a quiet room?", "眠りが浅いので、静かな部屋をお願いできますか？"),
+                    ("Be quiet when you come in — she's a light sleeper.", "入るとき静かにね。彼女すぐ起きちゃうから。")
+                 ], ipa: "/ə laɪt ˈsliːpə/"),
         ]
     }
 
