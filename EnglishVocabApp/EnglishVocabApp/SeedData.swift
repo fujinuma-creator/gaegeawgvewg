@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33120,6 +33120,115 @@ enum SeedData {
                     ("Excuse me, where are the changing rooms?", "すみません、試着室はどこですか？"),
                     ("I left my towel in the changing room.", "更衣室にタオル忘れてきちゃった。")
                  ], ipa: "/ˈtʃeɪndʒɪŋ ruːm/"),
+        ]
+    }
+    private static var britishColloquial147: [Word] {
+        [
+            make("pushed for time", "having very little time to do something",
+                 "時間に追われている・時間があまりない",
+                 useCases: ["忙しくて余裕がないと伝えるとき", "手短に済ませたいとき"],
+                 examples: [
+                    ("Sorry, I'm a bit pushed for time today.", "ごめん、今日はちょっと時間がなくて。"),
+                    ("If you're pushed for time, we can talk tomorrow.", "時間がないなら、明日話してもいいよ。")
+                 ], ipa: "/ˌpʊʃt fə ˈtaɪm/"),
+            make("power nap", "a short sleep during the day to give you more energy",
+                 "（元気回復のための）短い仮眠",
+                 useCases: ["昼休みに少し寝たいとき", "疲れを取る方法を話すとき"],
+                 examples: [
+                    ("I'm going to have a quick power nap before dinner.", "夕飯の前にちょっと仮眠するね。"),
+                    ("A twenty-minute power nap makes a huge difference.", "20分の仮眠でも全然違うよ。")
+                 ], ipa: "/ˈpaʊə ˌnæp/"),
+            make("contactless", "a way of paying by touching your card or phone on a card reader",
+                 "タッチ決済・非接触決済",
+                 useCases: ["お店で支払い方法を聞かれたとき", "カードをかざして払うとき"],
+                 examples: [
+                    ("Can I pay contactless?", "タッチ決済で払えますか？"),
+                    ("I just tapped my phone — it's all contactless now.", "スマホをかざしただけ。今は全部タッチ決済だよ。")
+                 ], ipa: "/ˈkɒntæktləs/"),
+            make("annual leave", "the paid holiday days you get from work each year",
+                 "年次有給休暇・有休",
+                 useCases: ["休暇の予定を話すとき", "職場で休みを申請するとき"],
+                 examples: [
+                    ("I've still got five days of annual leave left.", "有休がまだ5日残ってるんだ。"),
+                    ("She's on annual leave until Monday.", "彼女は月曜まで有休を取っています。")
+                 ], ipa: "/ˌænjuəl ˈliːv/"),
+            make("nice chatting to you", "a friendly way to end a conversation with someone",
+                 "話せてよかったです（会話の締めの一言）",
+                 useCases: ["立ち話や雑談を終えるとき", "初対面の人と別れるとき"],
+                 examples: [
+                    ("Anyway, I'd better go — nice chatting to you!", "じゃあそろそろ行くね、話せてよかった！"),
+                    ("It was really nice chatting to you last night.", "昨夜は話せて本当に楽しかったです。")
+                 ], ipa: "/ˌnaɪs ˈtʃætɪŋ tə juː/"),
+            make("get the bus", "to travel somewhere by bus (also: get the train)",
+                 "バスで行く・バスに乗る",
+                 useCases: ["移動手段を話すとき", "どうやって帰るか伝えるとき"],
+                 examples: [
+                    ("I usually get the bus to work.", "普段はバスで通勤してるよ。"),
+                    ("Don't worry, I'll just get the train home.", "気にしないで、電車で帰るから。")
+                 ], ipa: "/ˌɡet ðə ˈbʌs/"),
+            make("doable", "possible to do, although it may take some effort",
+                 "なんとかできる・実現可能な",
+                 useCases: ["頼まれたことができそうか答えるとき", "計画が現実的か話すとき"],
+                 examples: [
+                    ("Friday's a bit tight, but it's doable.", "金曜はちょっとキツいけど、なんとかなるよ。"),
+                    ("Is that doable by the end of the week?", "それ、週末までにできそう？")
+                 ], ipa: "/ˈduːəbl/"),
+            make("self-checkout", "a machine in a shop where you scan and pay for things yourself",
+                 "セルフレジ",
+                 useCases: ["スーパーで会計するとき", "レジの混み具合を話すとき"],
+                 examples: [
+                    ("I'll just use the self-checkout, it's quicker.", "セルフレジ使うね、そっちの方が早いし。"),
+                    ("The self-checkout keeps saying \"unexpected item in the bagging area\".", "セルフレジがずっと「袋詰め台に予期しない商品があります」って言うんだけど。")
+                 ], ipa: "/ˌself ˈtʃekaʊt/"),
+            make("voucher", "a piece of paper or code that you can use instead of money or to get a discount",
+                 "クーポン・商品券・割引券",
+                 useCases: ["プレゼントに商品券を渡すとき", "割引コードを使うとき"],
+                 examples: [
+                    ("I got her a voucher for a spa day.", "彼女にスパの利用券をあげたんだ。"),
+                    ("Have you got a discount voucher for this place?", "この店の割引クーポン持ってる？")
+                 ], ipa: "/ˈvaʊtʃə/"),
+            make("no signal", "used when your phone cannot connect to the mobile network",
+                 "電波がない・圏外",
+                 useCases: ["電話がつながらない理由を話すとき", "メッセージが遅れた言い訳をするとき"],
+                 examples: [
+                    ("Sorry, I had no signal on the train.", "ごめん、電車の中で圏外だったんだ。"),
+                    ("There's hardly any signal out here.", "ここ全然電波入らないね。")
+                 ], ipa: "/ˌnəʊ ˈsɪɡnəl/"),
+            make("screenshot", "a picture of what is on your phone or computer screen; to take one",
+                 "スクショ（を撮る）",
+                 useCases: ["画面の情報を共有するとき", "チケットや地図を保存するとき"],
+                 examples: [
+                    ("Can you send me a screenshot of the map?", "地図のスクショ送ってくれる？"),
+                    ("I screenshotted the booking just in case.", "念のため予約画面をスクショしておいた。")
+                 ], ipa: "/ˈskriːnʃɒt/"),
+            make("money's tight", "used to say you don't have much money at the moment",
+                 "お金に余裕がない・金欠気味",
+                 useCases: ["出費を控えたい理由を話すとき", "誘いをやんわり断るとき"],
+                 examples: [
+                    ("Money's a bit tight this month, so I'll skip dinner out.", "今月ちょっと金欠だから、外食はやめとくね。"),
+                    ("We're saving for a house, so money's tight.", "家のために貯金中だから、お金に余裕がないんだ。")
+                 ], ipa: "/ˌmʌniz ˈtaɪt/"),
+            make("charger", "a device or cable used to charge a phone or laptop",
+                 "充電器・充電ケーブル",
+                 useCases: ["スマホの充電が切れそうなとき", "誰かに充電器を借りたいとき"],
+                 examples: [
+                    ("Have you got an iPhone charger I could borrow?", "iPhoneの充電器、貸してもらえる？"),
+                    ("I left my charger at home, typical.", "充電器を家に忘れちゃった、いつものことだけど。")
+                 ], ipa: "/ˈtʃɑːdʒə/"),
+            make("loyalty card", "a card from a shop or café that gives you points or rewards when you buy things",
+                 "ポイントカード・スタンプカード",
+                 useCases: ["レジでポイントカードの有無を聞かれたとき", "カフェのスタンプを集めているとき"],
+                 examples: [
+                    ("Do you have a loyalty card with us?", "当店のポイントカードはお持ちですか？"),
+                    ("One more stamp on my loyalty card and the next coffee's free.", "スタンプあと1個で次のコーヒーが無料なんだ。")
+                 ], ipa: "/ˈlɔɪəlti ˌkɑːd/"),
+            make("pay by card", "to pay using a bank card instead of cash",
+                 "カードで払う",
+                 useCases: ["お店で支払い方法を伝えるとき", "カードが使えるか確認するとき"],
+                 examples: [
+                    ("Is it OK if I pay by card?", "カードで払っても大丈夫ですか？"),
+                    ("Sorry, I've got no cash on me — can I pay by card?", "すみません、現金持ってなくて。カードで払えますか？")
+                 ], ipa: "/ˌpeɪ baɪ ˈkɑːd/"),
         ]
     }
     private static var britishColloquial145: [Word] {
