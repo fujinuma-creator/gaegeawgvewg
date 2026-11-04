@@ -34017,13 +34017,13 @@ enum SeedData {
                     ("Traffic is likely to be bad on Friday evening.", "金曜の夜は道が混みそうだね。"),
                     ("He's not likely to say no if you ask nicely.", "丁寧に頼めば彼は断らないと思うよ。")
                  ], ipa: "/biː ˈlaɪkli tə/"),
-            make("back someone up", "to support someone or say that what they are saying is true",
-                 "（人を）支持する・味方する・裏付ける",
-                 useCases: ["話し合いで味方してほしいとき", "相手の発言を裏付けるとき"],
+            make("put something back", "to return something to the place where it was before",
+                 "（元の場所に）戻す・しまう",
+                 useCases: ["使った物を片付けるとき", "元に戻してと頼むとき"],
                  examples: [
-                    ("Thanks for backing me up in the meeting.", "会議で味方してくれてありがとう。"),
-                    ("Ask Tom — he'll back me up on this.", "トムに聞いてみて、彼も同じこと言うから。")
-                 ], ipa: "/ˈbæk ˈsʌmwʌn ˈʌp/"),
+                    ("Can you put the milk back in the fridge?", "牛乳、冷蔵庫に戻しておいてくれる？"),
+                    ("I'll put everything back where I found it.", "全部元あった場所に戻しておくね。")
+                 ], ipa: "/ˈpʊt ˈsʌmθɪŋ ˈbæk/"),
             make("give something back", "to return something to the person who owns it or gave it to you",
                  "（物を）返す",
                  useCases: ["借りた物を返すとき", "返してほしいと頼むとき"],
