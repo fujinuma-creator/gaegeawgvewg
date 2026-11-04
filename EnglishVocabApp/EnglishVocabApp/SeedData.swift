@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33883,6 +33883,115 @@ enum SeedData {
                     ("So, to sum up, we need more time and more money.", "つまりまとめると、もっと時間とお金が必要ってこと。"),
                     ("That pretty much sums it up.", "まさにそういうこと。／一言で言えばそんな感じ。")
                  ], ipa: "/ˈsʌm ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial156: [Word] {
+        [
+            make("talk someone into", "to persuade someone to do something",
+                 "（人を）説得して〜させる・言いくるめる",
+                 useCases: ["乗り気でない人を誘い込んだとき", "自分が説得されてやることになったとき"],
+                 examples: [
+                    ("She talked me into going to the gym with her.", "彼女に説得されて一緒にジムに行くことになった。"),
+                    ("Don't let him talk you into buying a new phone.", "彼に言いくるめられて新しいスマホ買わないようにね。")
+                 ], ipa: "/ˈtɔːk ˈsʌmwʌn ˈɪntuː/"),
+            make("talk someone out of", "to persuade someone not to do something",
+                 "（人を）説得して〜をやめさせる",
+                 useCases: ["無謀な計画を思いとどまらせるとき", "やめるよう説得されたとき"],
+                 examples: [
+                    ("I tried to talk him out of quitting his job.", "仕事を辞めないよう彼を説得しようとしたんだ。"),
+                    ("You won't talk me out of it — I've decided.", "説得しても無駄だよ、もう決めたから。")
+                 ], ipa: "/ˈtɔːk ˈsʌmwʌn ˈaʊt əv/"),
+            make("join in", "to take part in an activity that other people are already doing",
+                 "（輪に）加わる・参加する",
+                 useCases: ["みんなでしていることに誘うとき", "途中から参加させてもらうとき"],
+                 examples: [
+                    ("We're playing cards — do you want to join in?", "トランプしてるんだけど、一緒にやる？"),
+                    ("Everyone joined in with the singing.", "みんな一緒になって歌い出した。")
+                 ], ipa: "/ˈdʒɔɪn ˈɪn/"),
+            make("drift off", "to gradually fall asleep",
+                 "うとうとする・いつの間にか眠りに落ちる",
+                 useCases: ["映画や移動中に寝てしまったとき", "眠りにつく様子を話すとき"],
+                 examples: [
+                    ("I drifted off halfway through the film.", "映画の途中でうとうとしちゃった。"),
+                    ("Sorry, I must have drifted off for a minute.", "ごめん、ちょっと寝ちゃってたみたい。")
+                 ], ipa: "/ˈdrɪft ˈɒf/"),
+            make("head back", "to start going back to the place you came from",
+                 "戻る・引き返す・帰る",
+                 useCases: ["そろそろ帰ろうと言うとき", "ホテルや職場に戻るとき"],
+                 examples: [
+                    ("It's getting dark — shall we head back?", "暗くなってきたし、そろそろ戻ろうか？"),
+                    ("I need to head back to the office after lunch.", "ランチの後はオフィスに戻らないと。")
+                 ], ipa: "/ˈhed ˈbæk/"),
+            make("get it wrong", "to make a mistake or misunderstand something",
+                 "間違える・誤解する",
+                 useCases: ["自分の勘違いを認めるとき", "誤解しないでほしいと伝えるとき"],
+                 examples: [
+                    ("Sorry, I got it wrong — the meeting's on Thursday.", "ごめん、勘違いしてた。会議は木曜だった。"),
+                    ("Don't get me wrong, I like him, but he's always late.", "誤解しないでね、彼のことは好きだけど、いつも遅刻するんだよ。")
+                 ], ipa: "/ˈɡet ɪt ˈrɒŋ/"),
+            make("walk someone through", "to explain something to someone slowly, step by step",
+                 "（人に）一つずつ順を追って説明する",
+                 useCases: ["操作や手順を丁寧に教えるとき", "やり方を教えてほしいとき"],
+                 examples: [
+                    ("Could you walk me through how this app works?", "このアプリの使い方、順を追って教えてもらえる？"),
+                    ("Don't worry, I'll walk you through it.", "大丈夫、一つずつ説明するよ。")
+                 ], ipa: "/ˈwɔːk ˈsʌmwʌn ˈθruː/"),
+            make("go through with", "to do something you planned or promised, especially something difficult",
+                 "（迷った末に）やり遂げる・実行する",
+                 useCases: ["迷っていたことを最後まで実行したとき", "本当にやるのか確認するとき"],
+                 examples: [
+                    ("Are you really going to go through with it?", "本当にそれやるつもり？"),
+                    ("In the end, she didn't go through with the move.", "結局、彼女は引っ越しをやめたんだ。")
+                 ], ipa: "/ˈɡəʊ ˈθruː wɪð/"),
+            make("tell someone off", "to speak angrily to someone because they have done something wrong",
+                 "（人を）叱る・注意する",
+                 useCases: ["怒られたことを話すとき", "子どもや部下を叱るとき"],
+                 examples: [
+                    ("I got told off for being late again.", "また遅刻して怒られちゃった。"),
+                    ("She told the kids off for making a mess.", "散らかしたことで彼女は子どもたちを叱った。")
+                 ], ipa: "/ˈtel ˈsʌmwʌn ˈɒf/"),
+            make("pay someone back", "to return money that you borrowed from someone",
+                 "（人に）お金を返す",
+                 useCases: ["立て替えてもらったお金を返すとき", "借りたお金の返済を約束するとき"],
+                 examples: [
+                    ("Can you lend me a tenner? I'll pay you back tomorrow.", "10ポンド貸してくれる？明日返すから。"),
+                    ("Don't worry about paying me back.", "返さなくて大丈夫だよ。")
+                 ], ipa: "/ˈpeɪ ˈsʌmwʌn ˈbæk/"),
+            make("pay off", "(of hard work or a plan) to be successful or worth it",
+                 "（努力・計画が）報われる・うまくいく",
+                 useCases: ["努力の成果が出たとき", "相手の頑張りをたたえるとき"],
+                 examples: [
+                    ("All that practice really paid off!", "あれだけ練習したかいがあったね！"),
+                    ("It was a risk, but it paid off.", "賭けだったけど、うまくいったよ。")
+                 ], ipa: "/ˈpeɪ ˈɒf/"),
+            make("pass out", "to suddenly become unconscious; to fall asleep from tiredness",
+                 "気を失う・（疲れて）バタンと寝る",
+                 useCases: ["暑さや体調不良で倒れたとき", "疲れ果てて寝てしまったとき"],
+                 examples: [
+                    ("It was so hot I nearly passed out.", "暑すぎて気を失いそうだったよ。"),
+                    ("I got home and just passed out on the sofa.", "家に帰ってそのままソファで寝落ちした。")
+                 ], ipa: "/ˈpɑːs ˈaʊt/"),
+            make("give in", "to finally agree to something after refusing; to stop resisting",
+                 "折れる・根負けする・屈する",
+                 useCases: ["しつこく頼まれて結局OKしたとき", "誘惑に負けたとき"],
+                 examples: [
+                    ("The kids kept asking for a dog, so we finally gave in.", "子どもたちがずっと犬を欲しがるから、ついに折れたよ。"),
+                    ("I tried not to have dessert, but I gave in.", "デザートは我慢しようとしたけど、負けちゃった。")
+                 ], ipa: "/ˈɡɪv ˈɪn/"),
+            make("back down", "to stop insisting on something or admit that you were wrong in an argument",
+                 "引き下がる・主張を取り下げる",
+                 useCases: ["議論で譲らない人について話すとき", "対立で一歩引いたとき"],
+                 examples: [
+                    ("He never backs down in an argument.", "彼は口論で絶対に引き下がらないんだ。"),
+                    ("In the end, the landlord backed down.", "結局、大家さんのほうが引き下がったよ。")
+                 ], ipa: "/ˈbæk ˈdaʊn/"),
+            make("see someone off", "to go to an airport, station, etc. to say goodbye to someone",
+                 "（人を）見送る",
+                 useCases: ["空港や駅まで見送りに行くとき", "見送りに来てくれたことに感謝するとき"],
+                 examples: [
+                    ("We went to the airport to see her off.", "空港まで彼女を見送りに行ったんだ。"),
+                    ("Thanks for coming to see me off!", "見送りに来てくれてありがとう！")
+                 ], ipa: "/ˈsiː ˈsʌmwʌn ˈɒf/"),
         ]
     }
     private static var britishColloquial150: [Word] {
