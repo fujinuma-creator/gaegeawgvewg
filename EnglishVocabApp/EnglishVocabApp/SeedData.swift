@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33011,6 +33011,115 @@ enum SeedData {
                     ("I got loads of freebies at the conference.", "カンファレンスでタダのものをたくさんもらったよ。"),
                     ("The dessert was a freebie from the chef.", "デザートはシェフからのサービスだったんだ。")
                  ], ipa: "/ˈfriːbi/"),
+        ]
+    }
+    private static var britishColloquial144: [Word] {
+        [
+            make("staycation", "a holiday spent at home or in your own country instead of travelling abroad",
+                 "近場（国内・自宅）で過ごす休暇",
+                 useCases: ["今年は海外に行かないと言うとき", "近場でのんびり過ごす休暇について話すとき"],
+                 examples: [
+                    ("We're just doing a staycation this year to save money.", "今年は節約のために近場で休暇を過ごすだけにするよ。"),
+                    ("A staycation by the sea sounds perfect to me.", "海辺で近場の休暇なんて、最高だと思うな。")
+                 ], ipa: "/steɪˈkeɪʃən/"),
+            make("bookworm", "a person who loves reading and reads a lot",
+                 "本の虫・読書好き",
+                 useCases: ["読書好きな人を紹介するとき", "子どもの頃よく本を読んでいたと言うとき"],
+                 examples: [
+                    ("I was a total bookworm as a kid.", "子どもの頃は完全に本の虫だったよ。"),
+                    ("Get her a book voucher — she's a real bookworm.", "彼女には図書カードをあげなよ、すごい読書好きだから。")
+                 ], ipa: "/ˈbʊkwɜːm/"),
+            make("self-conscious", "nervous or uncomfortable because you are worried about what people think of you",
+                 "人目が気になる・自意識過剰な",
+                 useCases: ["見た目や振る舞いを気にしていると言うとき", "人前で緊張することを話すとき"],
+                 examples: [
+                    ("I feel a bit self-conscious about my accent.", "自分の訛りがちょっと気になっちゃうんだよね。"),
+                    ("Don't be self-conscious — you look great!", "気にしすぎだよ、すごく似合ってる！")
+                 ], ipa: "/ˌself ˈkɒnʃəs/"),
+            make("sore loser", "someone who gets angry or upset when they lose a game or competition",
+                 "負けず嫌いで負けると不機嫌になる人",
+                 useCases: ["ゲームで負けて拗ねる人をからかうとき", "負けを素直に認めるとき"],
+                 examples: [
+                    ("Come on, don't be a sore loser — it's just a game.", "ほら、拗ねないでよ。ただのゲームじゃん。"),
+                    ("He's such a sore loser at cards.", "彼、トランプで負けるとほんと機嫌悪くなるんだよ。")
+                 ], ipa: "/ˌsɔː ˈluːzə/"),
+            make("veg out", "to relax and do nothing much, especially watching TV or lying on the sofa",
+                 "だらだらする・ぼーっとくつろぐ",
+                 useCases: ["週末は何もせず過ごしたいと言うとき", "疲れてソファでくつろぐとき"],
+                 examples: [
+                    ("I'm just going to veg out in front of the telly tonight.", "今夜はテレビの前でだらだらするつもり。"),
+                    ("We spent Sunday vegging out on the sofa.", "日曜はソファでずっとゴロゴロしてたよ。")
+                 ], ipa: "/ˌvedʒ ˈaʊt/"),
+            make("plus-one", "a person you are allowed to bring with you to a party, wedding or event",
+                 "（招待客の）同伴者・連れ",
+                 useCases: ["結婚式やパーティーに誰か連れて行けるか聞くとき", "同伴者として誘うとき"],
+                 examples: [
+                    ("Can I bring a plus-one to the wedding?", "結婚式に誰か一人連れて行ってもいい？"),
+                    ("Do you want to be my plus-one on Saturday?", "土曜日、私の連れとして一緒に来ない？")
+                 ], ipa: "/ˌplʌs ˈwʌn/"),
+            make("heart-to-heart", "an honest, serious and private conversation about personal feelings",
+                 "腹を割った話・本音の話し合い",
+                 useCases: ["大事なことを真剣に話し合うとき", "友達とじっくり本音で話したとき"],
+                 examples: [
+                    ("We had a proper heart-to-heart last night.", "昨夜、ちゃんと腹を割って話したんだ。"),
+                    ("I think you two need a heart-to-heart.", "二人は一度本音で話し合ったほうがいいと思うよ。")
+                 ], ipa: "/ˌhɑːt tə ˈhɑːt/"),
+            make("pay rise", "an increase in the money you are paid for your job (US: raise)",
+                 "昇給",
+                 useCases: ["給料が上がったと話すとき", "昇給を頼むことについて話すとき"],
+                 examples: [
+                    ("I finally got a pay rise!", "やっと昇給したんだ！"),
+                    ("I'm going to ask my boss for a pay rise.", "上司に昇給をお願いしてみるつもり。")
+                 ], ipa: "/ˈpeɪ raɪz/"),
+            make("comfy", "comfortable (informal)",
+                 "快適な・着心地（座り心地）がいい",
+                 useCases: ["服や椅子・ベッドが快適だと言うとき", "相手がくつろげているか聞くとき"],
+                 examples: [
+                    ("These shoes are so comfy.", "この靴、めちゃくちゃ履き心地いいよ。"),
+                    ("Make yourself comfy — I'll put the kettle on.", "楽にしててね、お湯沸かすから。")
+                 ], ipa: "/ˈkʌmfi/"),
+            make("heatwave", "a period of unusually hot weather",
+                 "猛暑・熱波",
+                 useCases: ["異常に暑い天気について話すとき", "暑さで参っていると言うとき"],
+                 examples: [
+                    ("Apparently there's another heatwave coming next week.", "どうやら来週また猛暑が来るらしいよ。"),
+                    ("Nobody has air conditioning here, so the heatwave was awful.", "ここはエアコンがない家ばかりだから、猛暑は本当にきつかった。")
+                 ], ipa: "/ˈhiːtweɪv/"),
+            make("sweet spot", "the ideal point or amount where something works best",
+                 "ちょうどいいところ・最適なポイント",
+                 useCases: ["値段や量・タイミングがちょうどいいと言うとき", "バランスの良さを表すとき"],
+                 examples: [
+                    ("Around twenty quid is the sweet spot for a gift.", "プレゼントなら20ポンドくらいがちょうどいいよ。"),
+                    ("Ten in the morning is the sweet spot — not too early, not too late.", "朝10時がベスト。早すぎず遅すぎず。")
+                 ], ipa: "/ˈswiːt spɒt/"),
+            make("spare room", "an extra bedroom in a house that is kept for guests",
+                 "客間・空き部屋",
+                 useCases: ["泊まりに来る人に部屋があると言うとき", "家の間取りを説明するとき"],
+                 examples: [
+                    ("You can stay in our spare room if you like.", "よかったらうちの客間に泊まっていいよ。"),
+                    ("The spare room's basically turned into my office.", "空き部屋はほぼ私の仕事部屋になっちゃった。")
+                 ], ipa: "/ˌspeə ˈruːm/"),
+            make("payday", "the day when you receive your wages",
+                 "給料日",
+                 useCases: ["給料日まで節約していると言うとき", "給料日に何かしようと誘うとき"],
+                 examples: [
+                    ("I'm skint until payday.", "給料日までお金がないんだ。"),
+                    ("Let's go out for dinner on Friday — it's payday.", "金曜は外で夕飯食べようよ、給料日だし。")
+                 ], ipa: "/ˈpeɪdeɪ/"),
+            make("tap water", "water that comes from a tap in a building, often asked for free in restaurants",
+                 "水道水（お冷や）",
+                 useCases: ["レストランで無料の水を頼むとき", "水道水が飲めるか聞くとき"],
+                 examples: [
+                    ("Could we get some tap water, please?", "お水（水道水）をいただけますか？"),
+                    ("Is the tap water safe to drink here?", "ここの水道水って飲んでも大丈夫？")
+                 ], ipa: "/ˈtæp ˌwɔːtə/"),
+            make("gap year", "a year taken off, usually between school and university, to travel or work",
+                 "ギャップイヤー（進学前などの休学年）",
+                 useCases: ["学業の合間に旅行や仕事をした経験を話すとき", "進路について話すとき"],
+                 examples: [
+                    ("I travelled around South America on my gap year.", "ギャップイヤーに南米を旅して回ったよ。"),
+                    ("She's taking a gap year before uni.", "彼女は大学に行く前に1年休むんだって。")
+                 ], ipa: "/ˈɡæp jɪə/"),
         ]
     }
     private static var britishColloquial143: [Word] {
