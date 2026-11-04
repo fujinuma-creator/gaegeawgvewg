@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -34319,6 +34319,115 @@ enum SeedData {
                     ("Sorry I'm a bit late. — It's fine, I've only just got here.", "ちょっと遅れてごめん。 — 大丈夫、私も今来たところ。"),
                     ("Is it OK if we eat a bit later? — Yeah, it's fine.", "ご飯少し遅めでもいい？ — うん、大丈夫だよ。")
                  ], ipa: "/ɪts ˈfaɪn/"),
+        ]
+    }
+    private static var britishColloquial160: [Word] {
+        [
+            make("take turns", "to do something one after the other, so that each person has a go",
+                 "交代でやる・順番にやる",
+                 useCases: ["運転や家事を交代でやるとき", "順番を決めるとき"],
+                 examples: [
+                    ("We took turns driving so nobody got too tired.", "疲れすぎないように交代で運転したよ。"),
+                    ("Let's take turns choosing the film.", "観る映画は順番に選ぼうよ。")
+                 ], ipa: "/ˈteɪk ˈtɜːnz/"),
+            make("go sightseeing", "to visit famous or interesting places as a tourist",
+                 "観光する・観光に行く",
+                 useCases: ["旅行の予定を話すとき", "旅先で何をしたか話すとき"],
+                 examples: [
+                    ("We spent the morning sightseeing and the afternoon at the beach.", "午前中は観光して、午後はビーチで過ごしたよ。"),
+                    ("Shall we go sightseeing tomorrow if the weather's nice?", "明日天気が良かったら観光に行かない？")
+                 ], ipa: "/ˈɡəʊ ˈsaɪtsiːɪŋ/"),
+            make("do you happen to know", "a polite, casual way to ask someone if they know something",
+                 "もしかして〜をご存知ですか・〜って知ってる？",
+                 useCases: ["道や情報を丁寧に尋ねるとき", "知っていたら教えてほしいとき"],
+                 examples: [
+                    ("Do you happen to know where the nearest cash machine is?", "もしかして一番近いATMの場所ってわかりますか？"),
+                    ("Do you happen to know what time the shop closes?", "お店が何時に閉まるか知ってたりする？")
+                 ], ipa: "/duː juː ˈhæpən tə ˈnəʊ/"),
+            make("call back", "to phone someone again, or to return a phone call you missed",
+                 "折り返し電話する・かけ直す",
+                 useCases: ["電話に出られなかったとき", "後でかけ直すと伝えるとき"],
+                 examples: [
+                    ("I'm driving at the moment — can I call you back?", "今運転中なんだ、かけ直してもいい？"),
+                    ("She called while you were out. Could you call her back?", "出かけてる間に彼女から電話があったよ。折り返してくれる？")
+                 ], ipa: "/ˈkɔːl ˈbæk/"),
+            make("pick up the phone", "to answer a phone call",
+                 "電話に出る",
+                 useCases: ["電話がつながらないと話すとき", "電話に出るよう促すとき"],
+                 examples: [
+                    ("I rang three times but he didn't pick up the phone.", "3回かけたけど、彼は電話に出なかったよ。"),
+                    ("Can you pick up the phone? My hands are full.", "電話に出てくれる？手がふさがってるの。")
+                 ], ipa: "/ˈpɪk ˈʌp ðə ˈfəʊn/"),
+            make("leave a message", "to record a message for someone when they do not answer, or ask someone to pass it on",
+                 "伝言を残す・留守電を入れる",
+                 useCases: ["留守番電話について話すとき", "不在の人への伝言を頼むとき"],
+                 examples: [
+                    ("She wasn't in, so I left a message.", "彼女がいなかったから伝言を残しておいたよ。"),
+                    ("Would you like to leave a message?", "伝言を残されますか？")
+                 ], ipa: "/ˈliːv ə ˈmesɪdʒ/"),
+            make("good value", "worth the money you pay for it",
+                 "お得・コスパがいい",
+                 useCases: ["値段に見合うと褒めるとき", "店や商品をすすめるとき"],
+                 examples: [
+                    ("The lunch menu there is really good value.", "あそこのランチメニューは本当にお得だよ。"),
+                    ("It's not cheap, but it's good value for money.", "安くはないけど、値段に見合う価値はあるよ。")
+                 ], ipa: "/ˈɡʊd ˈvæljuː/"),
+            make("make the bed", "to tidy the sheets and covers on a bed after sleeping in it",
+                 "ベッドを整える",
+                 useCases: ["朝の家事について話すとき", "子どもに片付けを頼むとき"],
+                 examples: [
+                    ("I always make the bed as soon as I get up.", "起きたらすぐにベッドを整えるようにしてるんだ。"),
+                    ("Can you make your bed before school, please?", "学校に行く前にベッドを整えてね。")
+                 ], ipa: "/ˈmeɪk ðə ˈbed/"),
+            make("move house", "to leave your home and go to live in a different one",
+                 "引っ越す",
+                 useCases: ["引っ越しの話をするとき", "忙しい理由を説明するとき"],
+                 examples: [
+                    ("We're moving house next month, so everything's a bit chaotic.", "来月引っ越すから、ちょっとバタバタしてるんだ。"),
+                    ("Moving house is so stressful.", "引っ越しってほんと疲れるよね。")
+                 ], ipa: "/ˈmuːv ˈhaʊs/"),
+            make("go abroad", "to travel to or live in another country",
+                 "海外に行く",
+                 useCases: ["旅行の予定を話すとき", "留学や海外生活の話をするとき"],
+                 examples: [
+                    ("Are you going abroad this summer?", "この夏は海外に行くの？"),
+                    ("I'd love to go abroad to study for a year.", "1年くらい海外に留学してみたいな。")
+                 ], ipa: "/ˈɡəʊ əˈbrɔːd/"),
+            make("get sunburnt", "to have red, painful skin from being in the sun too long",
+                 "日焼けする（ヒリヒリする）",
+                 useCases: ["海や旅行の話をするとき", "日焼け止めをすすめるとき"],
+                 examples: [
+                    ("Put some suncream on or you'll get sunburnt.", "日焼け止め塗りなよ、じゃないと焼けちゃうよ。"),
+                    ("I fell asleep on the beach and got really sunburnt.", "ビーチで寝ちゃって、ひどく日焼けしたんだ。")
+                 ], ipa: "/ˈɡet ˈsʌnbɜːnt/"),
+            make("ask for directions", "to ask someone how to get to a place",
+                 "道を尋ねる",
+                 useCases: ["旅行先で迷ったとき", "道がわからないと話すとき"],
+                 examples: [
+                    ("We got lost, so we stopped to ask for directions.", "道に迷ったから、止まって道を聞いたんだ。"),
+                    ("He'd rather drive round for an hour than ask for directions.", "彼は道を聞くくらいなら1時間でもぐるぐる運転するタイプなんだ。")
+                 ], ipa: "/ˈɑːsk fə dəˈrekʃənz/"),
+            make("what a shame", "used to say you feel sorry or disappointed about something",
+                 "それは残念・もったいないね",
+                 useCases: ["残念な知らせに反応するとき", "相手に同情するとき"],
+                 examples: [
+                    ("The concert's been cancelled. — Oh, what a shame!", "コンサート中止になったって。 — えー、残念！"),
+                    ("What a shame you can't come — we'll miss you.", "来られないなんて残念、寂しくなるよ。")
+                 ], ipa: "/ˈwɒt ə ˈʃeɪm/"),
+            make("haven't got a clue", "to have no idea at all about something",
+                 "さっぱりわからない・見当もつかない",
+                 useCases: ["全くわからないと言うとき", "知らないことを気軽に認めるとき"],
+                 examples: [
+                    ("Where's the remote? — I haven't got a clue.", "リモコンどこ？ — 全然わかんない。"),
+                    ("I haven't got a clue how this machine works.", "この機械の使い方がさっぱりわからないよ。")
+                 ], ipa: "/aɪ ˈhævənt ɡɒt ə ˈkluː/"),
+            make("enjoy your meal", "a friendly thing to say to someone who is about to eat",
+                 "どうぞ召し上がれ・食事を楽しんで",
+                 useCases: ["料理を出すとき", "食事を始める人に声をかけるとき"],
+                 examples: [
+                    ("Here's your pasta — enjoy your meal!", "パスタお待たせしました、ごゆっくりどうぞ！"),
+                    ("Enjoy your meal! — Thanks, you too.", "召し上がれ！ — ありがとう、あなたもね。")
+                 ], ipa: "/ɪnˈdʒɔɪ jə ˈmiːl/"),
         ]
     }
     private static var britishColloquial150: [Word] {
