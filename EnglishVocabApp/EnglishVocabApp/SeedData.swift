@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33556,6 +33556,115 @@ enum SeedData {
                     ("How about pizza instead? — Now you're talking!", "代わりにピザは？ーそうこなくちゃ！"),
                     ("Let's leave early and go to the beach. — Now you're talking.", "早めに出て海に行こう。ーいいね、それ！")
                  ], ipa: "/naʊ jɔː ˈtɔːkɪŋ/"),
+        ]
+    }
+    private static var britishColloquial153: [Word] {
+        [
+            make("I hear you", "I understand what you're saying and how you feel (even if I don't fully agree)",
+                 "言いたいことはわかるよ・気持ちはわかる",
+                 useCases: ["相手の不満や意見に共感を示すとき", "理解を示しつつ別の意見を言う前置きに"],
+                 examples: [
+                    ("This commute is killing me. — I hear you, it's awful.", "この通勤ほんとしんどい。ーわかるよ、ひどいよね。"),
+                    ("I hear you, but we still need to finish it today.", "言いたいことはわかるけど、やっぱり今日中に終わらせないと。")
+                 ], ipa: "/aɪ ˈhɪə juː/"),
+            make("by the looks of it", "judging from how things appear",
+                 "見たところ・この様子だと",
+                 useCases: ["見た目から状況を判断するとき", "天気や混雑具合を予想するとき"],
+                 examples: [
+                    ("By the looks of it, it's going to rain.", "この様子だと雨が降りそうだね。"),
+                    ("They've already left, by the looks of it.", "見たところ、もう帰っちゃったみたい。")
+                 ], ipa: "/baɪ ðə ˈlʊks əv ɪt/"),
+            make("all along", "the whole time, from the very beginning",
+                 "最初からずっと",
+                 useCases: ["後になって真実がわかったとき", "最初から知っていたと言うとき"],
+                 examples: [
+                    ("The keys were in my pocket all along!", "鍵、最初からずっとポケットに入ってた！"),
+                    ("I knew all along that you'd get the job.", "君が採用されるって最初からわかってたよ。")
+                 ], ipa: "/ˌɔːl əˈlɒŋ/"),
+            make("it's your call", "it's your decision to make",
+                 "君が決めていいよ・あなた次第",
+                 useCases: ["相手に判断を任せるとき", "選択肢を示して決めてもらうとき"],
+                 examples: [
+                    ("Pizza or curry? It's your call.", "ピザかカレーか、君が決めて。"),
+                    ("I'd wait a bit, but it's your call.", "私なら少し待つけど、あなた次第だよ。")
+                 ], ipa: "/ɪts jɔː ˈkɔːl/"),
+            make("warm to", "to start to like someone or something gradually",
+                 "（だんだん）好きになる・打ち解ける",
+                 useCases: ["第一印象から好感に変わったとき", "アイデアに乗り気になってきたとき"],
+                 examples: [
+                    ("I didn't like him at first, but I've warmed to him.", "最初は苦手だったけど、だんだん好きになってきた。"),
+                    ("She's slowly warming to the idea of moving abroad.", "彼女、海外移住の案に少しずつ乗り気になってる。")
+                 ], ipa: "/ˈwɔːm tuː/"),
+            make("rub off on", "(a habit, quality or mood) to be passed on to someone through spending time with them",
+                 "（性格・習慣が）うつる・影響する",
+                 useCases: ["一緒にいる人の影響を受けたとき", "良い習慣が広がるのを話すとき"],
+                 examples: [
+                    ("Your good mood is rubbing off on me.", "君の上機嫌がこっちにもうつってきたよ。"),
+                    ("Hopefully some of her confidence will rub off on him.", "彼女の自信が少しでも彼にうつるといいな。")
+                 ], ipa: "/ˈrʌb ˈɒf ɒn/"),
+            make("that's more like it", "that's much better; that's what I wanted",
+                 "そうこなくちゃ・それでこそ",
+                 useCases: ["状況や結果が良くなったとき", "相手の提案や態度が改善したとき"],
+                 examples: [
+                    ("The sun's out at last — that's more like it!", "やっと晴れた、こうでなくちゃ！"),
+                    ("OK, I'll come. — That's more like it!", "わかった、行くよ。ーそうこなくちゃ！")
+                 ], ipa: "/ðæts ˈmɔː laɪk ɪt/"),
+            make("that's the one", "that's exactly the thing I was thinking of or looking for",
+                 "それそれ！・まさにそれ",
+                 useCases: ["探していた物が見つかったとき", "思い出せなかったものを言い当てられたとき"],
+                 examples: [
+                    ("Is this the song you meant? — Yes, that's the one!", "言ってた曲ってこれ？ーそう、それそれ！"),
+                    ("The blue jacket? — That's the one.", "青いジャケット？ーまさにそれ。")
+                 ], ipa: "/ðæts ðə ˈwʌn/"),
+            make("hang around", "to wait or spend time somewhere without doing much",
+                 "ぶらぶらする・（その辺で）待つ",
+                 useCases: ["特に目的なく時間を過ごすとき", "誰かを待っているとき"],
+                 examples: [
+                    ("We hung around the station for an hour.", "駅で1時間ぶらぶらしてた。"),
+                    ("I can't hang around — I've got a train to catch.", "のんびりしてられないんだ、電車に乗らなきゃ。")
+                 ], ipa: "/ˌhæŋ əˈraʊnd/"),
+            make("I guess so", "a slightly reluctant or uncertain way of saying yes",
+                 "まあ、そうだね・たぶんね",
+                 useCases: ["しぶしぶ同意するとき", "確信がないまま肯定するとき"],
+                 examples: [
+                    ("Shall we just get a taxi? — I guess so.", "もうタクシーにする？ーまあ、そうだね。"),
+                    ("Was it worth it? — I guess so.", "それだけの価値あった？ーたぶんね。")
+                 ], ipa: "/aɪ ˈɡes səʊ/"),
+            make("put in a good word for", "to recommend someone to a person who could help them",
+                 "（人を）推薦する・口添えする",
+                 useCases: ["仕事の紹介を頼むとき", "知人を誰かに推薦するとき"],
+                 examples: [
+                    ("Could you put in a good word for me with your manager?", "上司に私のこと口添えしてもらえない？"),
+                    ("I'll put in a good word for you.", "君のこと推しておくよ。")
+                 ], ipa: "/ˌpʊt ɪn ə ɡʊd ˈwɜːd fɔː/"),
+            make("it's early days", "it's too soon to know how something will turn out",
+                 "まだ始まったばかり・判断するには早い",
+                 useCases: ["新しい仕事や関係の様子を聞かれたとき", "結果を急がないよう伝えるとき"],
+                 examples: [
+                    ("How's the new job? — It's early days, but so far so good.", "新しい仕事どう？ーまだ始まったばかりだけど、今のところ順調。"),
+                    ("Don't worry, it's early days yet.", "心配しないで、まだ判断するには早いよ。")
+                 ], ipa: "/ɪts ˈɜːli ˈdeɪz/"),
+            make("a bit of both", "partly one thing and partly the other",
+                 "どっちもちょっとずつ・両方かな",
+                 useCases: ["二択の質問にどちらとも言えないとき", "理由が複数あるとき"],
+                 examples: [
+                    ("Are you tired or just bored? — A bit of both.", "疲れてるの？それとも退屈？ー両方かな。"),
+                    ("Was it for work or fun? — A bit of both, really.", "仕事？遊び？ーまあ、どっちもちょっとずつ。")
+                 ], ipa: "/ə ˌbɪt əv ˈbəʊθ/"),
+            make("on balance", "after considering all the facts",
+                 "全体的に考えると・総合的に見て",
+                 useCases: ["良い点と悪い点を比べて結論を出すとき", "意見をまとめるとき"],
+                 examples: [
+                    ("On balance, I think we made the right choice.", "総合的に見て、正しい選択だったと思う。"),
+                    ("It's a bit far, but on balance it's a nice flat.", "ちょっと遠いけど、全体的にはいい部屋だよ。")
+                 ], ipa: "/ɒn ˈbæləns/"),
+            make("for a laugh", "just for fun, not seriously",
+                 "冗談半分で・遊びで",
+                 useCases: ["軽い気持ちで何かをしたと言うとき", "本気ではないと伝えるとき"],
+                 examples: [
+                    ("We entered the quiz just for a laugh — and won!", "遊びでクイズに参加したら優勝しちゃった！"),
+                    ("He only said it for a laugh. Don't take it seriously.", "彼は冗談半分で言っただけだよ。本気にしないで。")
+                 ], ipa: "/fər ə ˈlɑːf/"),
         ]
     }
     private static var britishColloquial150: [Word] {
