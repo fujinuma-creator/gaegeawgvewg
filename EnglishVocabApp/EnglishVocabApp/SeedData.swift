@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33120,6 +33120,115 @@ enum SeedData {
                     ("Excuse me, where are the changing rooms?", "すみません、試着室はどこですか？"),
                     ("I left my towel in the changing room.", "更衣室にタオル忘れてきちゃった。")
                  ], ipa: "/ˈtʃeɪndʒɪŋ ruːm/"),
+        ]
+    }
+    private static var britishColloquial148: [Word] {
+        [
+            make("nothing much", "a casual reply meaning you are not doing anything special",
+                 "特に何も・別に大したことはしてない",
+                 useCases: ["「何してる？」と聞かれたとき", "近況を軽く答えるとき"],
+                 examples: [
+                    ("\"What are you up to?\" \"Oh, nothing much.\"", "「何してるの？」「あぁ、特に何も。」"),
+                    ("Nothing much has changed since you left.", "君がいなくなってから、特に何も変わってないよ。")
+                 ], ipa: "/ˌnʌθɪŋ ˈmʌtʃ/"),
+            make("what do you do for a living?", "a common way to ask someone what their job is",
+                 "お仕事は何をされているんですか？",
+                 useCases: ["初対面の人に仕事を聞くとき", "自己紹介の会話を広げるとき"],
+                 examples: [
+                    ("So, what do you do for a living?", "それで、お仕事は何をされてるんですか？"),
+                    ("I teach maths — what do you do for a living?", "数学を教えてます。あなたは何のお仕事を？")
+                 ], ipa: "/ˌwɒt də juː ˈduː fər ə ˈlɪvɪŋ/"),
+            make("nearly there", "almost at the place you are going, or almost finished with something",
+                 "もうすぐ着く・もう少しで終わる",
+                 useCases: ["到着間近だと伝えるとき", "作業がほぼ終わったと伝えるとき"],
+                 examples: [
+                    ("Hang on, we're nearly there.", "待ってて、もうすぐ着くから。"),
+                    ("Keep going — you're nearly there!", "その調子、あと少しだよ！")
+                 ], ipa: "/ˌnɪəli ˈðeə/"),
+            make("be right back", "to say you are leaving for a very short time and will return soon",
+                 "すぐ戻るね",
+                 useCases: ["ちょっと席を外すとき", "電話やチャットで少し離れるとき"],
+                 examples: [
+                    ("I'll be right back — just grabbing my charger.", "すぐ戻るね、充電器取ってくるだけ。"),
+                    ("Don't start without me, I'll be right back.", "僕抜きで始めないでね、すぐ戻るから。")
+                 ], ipa: "/ˌbiː raɪt ˈbæk/"),
+            make("could be better", "a polite, honest reply meaning things are not going very well",
+                 "まあまあかな・あんまり良くない",
+                 useCases: ["調子を聞かれて正直に答えるとき", "状況がいまいちだと伝えるとき"],
+                 examples: [
+                    ("\"How's work?\" \"Could be better, to be honest.\"", "「仕事どう？」「正直、あんまり良くないかな。」"),
+                    ("The weather could be better, but we still had fun.", "天気はいまいちだったけど、それでも楽しかったよ。")
+                 ], ipa: "/ˌkʊd biː ˈbetə/"),
+            make("it's complicated", "used when a situation is difficult to explain simply",
+                 "話せば長くなる・ちょっと複雑なんだ",
+                 useCases: ["説明しにくい事情を濁すとき", "人間関係などを聞かれたとき"],
+                 examples: [
+                    ("\"Are you two still together?\" \"It's complicated.\"", "「二人はまだ付き合ってるの？」「ちょっと複雑でさ。」"),
+                    ("I'd love to explain, but it's complicated.", "説明したいんだけど、ちょっと複雑なんだよね。")
+                 ], ipa: "/ɪts ˈkɒmplɪkeɪtɪd/"),
+            make("dunno", "an informal way of saying \"I don't know\"",
+                 "知らない・わかんない（I don't know のくだけた形）",
+                 useCases: ["友達との会話で軽く答えるとき", "迷っているとき"],
+                 examples: [
+                    ("\"Where's Tom?\" \"Dunno, haven't seen him.\"", "「トムどこ？」「わかんない、見てないよ。」"),
+                    ("I dunno, maybe we should just stay in tonight.", "どうかな、今夜は家にいた方がいいかも。")
+                 ], ipa: "/dəˈnəʊ/"),
+            make("go over", "to check or explain something carefully, often again",
+                 "見直す・確認する・おさらいする",
+                 useCases: ["資料や計画を確認するとき", "説明をもう一度してほしいとき"],
+                 examples: [
+                    ("Let's go over the plan one more time.", "もう一回計画をおさらいしよう。"),
+                    ("Could you go over that last bit again?", "最後のところ、もう一度説明してもらえる？")
+                 ], ipa: "/ˌɡəʊ ˈəʊvə/"),
+            make("sit around", "to spend time sitting and doing nothing useful",
+                 "ダラダラする・何もせずに過ごす",
+                 useCases: ["暇を持て余している様子を話すとき", "誰かに動くよう促すとき"],
+                 examples: [
+                    ("We just sat around all afternoon chatting.", "午後はずっと座っておしゃべりしてただけ。"),
+                    ("Don't just sit around — give me a hand!", "ボーっとしてないで、手伝ってよ！")
+                 ], ipa: "/ˌsɪt əˈraʊnd/"),
+            make("this and that", "various small things that are not important enough to describe",
+                 "あれこれ・いろいろ",
+                 useCases: ["何をしていたか軽く答えるとき", "細かいことをまとめて言うとき"],
+                 examples: [
+                    ("\"What did you do at the weekend?\" \"Oh, this and that.\"", "「週末何してた？」「まあ、あれこれね。」"),
+                    ("We chatted about this and that over coffee.", "コーヒーを飲みながらあれこれ話したよ。")
+                 ], ipa: "/ˌðɪs ən ˈðæt/"),
+            make("feel better", "to recover from an illness or feel happier after being upset",
+                 "（体調・気分が）良くなる",
+                 useCases: ["体調が悪い人を気遣うとき", "気分が回復したと伝えるとき"],
+                 examples: [
+                    ("Hope you feel better soon!", "早く良くなるといいね！"),
+                    ("I feel much better after a good night's sleep.", "ぐっすり寝たらだいぶ良くなったよ。")
+                 ], ipa: "/ˌfiːl ˈbetə/"),
+            make("where does the time go?", "used to say you are surprised how quickly time has passed",
+                 "時間ってあっという間だね",
+                 useCases: ["思ったより時間が経っていたとき", "久しぶりに会って年月を感じるとき"],
+                 examples: [
+                    ("It's already December — where does the time go?", "もう12月だよ。時間ってほんとあっという間だね。"),
+                    ("Your kids are so grown up! Where does the time go?", "お子さんたち大きくなったね！時の流れは早いね。")
+                 ], ipa: "/ˌweə dʌz ðə ˈtaɪm ɡəʊ/"),
+            make("not a fan of", "to not like something very much (a soft way of saying you dislike it)",
+                 "〜はあまり好きじゃない",
+                 useCases: ["やんわり苦手だと伝えるとき", "好みを話すとき"],
+                 examples: [
+                    ("I'm not a fan of horror films, to be honest.", "正直、ホラー映画はあんまり好きじゃないんだ。"),
+                    ("She's not a big fan of early mornings.", "彼女は早起きがあまり得意じゃない。")
+                 ], ipa: "/ˌnɒt ə ˈfæn əv/"),
+            make("come to mind", "if something comes to mind, you think of it",
+                 "思い浮かぶ・頭に浮かぶ",
+                 useCases: ["例やアイデアを挙げるとき", "すぐに思いつかないと伝えるとき"],
+                 examples: [
+                    ("Nothing really comes to mind right now.", "今はちょっと何も思い浮かばないな。"),
+                    ("When I think of Italy, pizza is the first thing that comes to mind.", "イタリアといえば、まずピザが思い浮かぶ。")
+                 ], ipa: "/ˌkʌm tə ˈmaɪnd/"),
+            make("what's new?", "a friendly way to ask someone about recent news in their life",
+                 "最近どう？・何か変わったことある？",
+                 useCases: ["久しぶりに会った人に挨拶するとき", "近況を聞くとき"],
+                 examples: [
+                    ("Hey, long time! So what's new?", "やあ、久しぶり！最近どう？"),
+                    ("\"What's new with you?\" \"Not much, same old.\"", "「何か変わったことある？」「別に、相変わらずだよ。」")
+                 ], ipa: "/ˌwɒts ˈnjuː/"),
         ]
     }
     private static var britishColloquial147: [Word] {
