@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33665,6 +33665,115 @@ enum SeedData {
                     ("We entered the quiz just for a laugh — and won!", "遊びでクイズに参加したら優勝しちゃった！"),
                     ("He only said it for a laugh. Don't take it seriously.", "彼は冗談半分で言っただけだよ。本気にしないで。")
                  ], ipa: "/fər ə ˈlɑːf/"),
+        ]
+    }
+    private static var britishColloquial154: [Word] {
+        [
+            make("pick up on", "to notice something that isn't obvious, or to return to a point someone mentioned",
+                 "（さりげないことに）気づく・（話題を）取り上げる",
+                 useCases: ["相手の態度や雰囲気の変化に気づいたとき", "会話で前に出た話題に戻るとき"],
+                 examples: [
+                    ("Kids pick up on everything, so be careful what you say.", "子どもは何でも気づくから、言うことには気をつけて。"),
+                    ("Can I just pick up on what you said earlier?", "さっき言ってたことにちょっと触れてもいい？")
+                 ], ipa: "/ˈpɪk ˈʌp ɒn/"),
+            make("any day now", "very soon; at any moment",
+                 "もうすぐ・今にも",
+                 useCases: ["もうすぐ起こりそうなことを話すとき", "出産・結果・到着などを待っているとき"],
+                 examples: [
+                    ("The baby's due any day now.", "赤ちゃん、もういつ生まれてもおかしくないんだ。"),
+                    ("The results should come out any day now.", "結果はもうすぐ出るはずだよ。")
+                 ], ipa: "/ˈeni deɪ ˈnaʊ/"),
+            make("shake off", "to get rid of an illness, a feeling or someone following you",
+                 "（風邪・気分などを）振り払う・治す",
+                 useCases: ["しつこい風邪がなかなか治らないとき", "嫌な気分を引きずっているとき"],
+                 examples: [
+                    ("I can't seem to shake off this cold.", "この風邪、なかなか治らないんだよね。"),
+                    ("Try to shake it off and enjoy the evening.", "気持ちを切り替えて今夜は楽しもうよ。")
+                 ], ipa: "/ˈʃeɪk ˈɒf/"),
+            make("settle for", "to accept something that is less than what you wanted",
+                 "（妥協して）〜で手を打つ・〜で我慢する",
+                 useCases: ["理想ではないが受け入れるとき", "妥協しないよう励ますとき"],
+                 examples: [
+                    ("They didn't have any tea, so I settled for coffee.", "紅茶がなかったから、コーヒーで我慢した。"),
+                    ("Don't settle for less than you deserve.", "自分にふさわしいもの以下で妥協しちゃだめだよ。")
+                 ], ipa: "/ˈsetl fɔː/"),
+            make("stand up for", "to defend or support someone or something, especially when they are criticised",
+                 "（人や考えを）かばう・擁護する",
+                 useCases: ["批判された人をかばうとき", "自分の意見や権利を主張するとき"],
+                 examples: [
+                    ("Thanks for standing up for me in the meeting.", "会議でかばってくれてありがとう。"),
+                    ("You need to stand up for yourself more.", "もっと自分のことを主張したほうがいいよ。")
+                 ], ipa: "/ˈstænd ˈʌp fɔː/"),
+            make("get across", "to make an idea or message clearly understood",
+                 "（考え・意図を）伝える・わかってもらう",
+                 useCases: ["言いたいことがうまく伝わらないとき", "プレゼンや説明の要点を話すとき"],
+                 examples: [
+                    ("I'm not sure I got my point across.", "言いたいことがちゃんと伝わったか自信がないな。"),
+                    ("The video gets the message across really well.", "あの動画はメッセージがすごくよく伝わるね。")
+                 ], ipa: "/ˈɡet əˈkrɒs/"),
+            make("what are you getting at?", "what are you trying to say or suggest?",
+                 "何が言いたいの？・つまりどういうこと？",
+                 useCases: ["相手の遠回しな言い方の意図を聞くとき", "ほのめかされて少しムッとしたとき"],
+                 examples: [
+                    ("Sorry, I don't follow — what are you getting at?", "ごめん、話が見えないんだけど、何が言いたいの？"),
+                    ("What are you getting at? You think I took it?", "どういう意味？私が取ったと思ってるの？")
+                 ], ipa: "/ˈwɒt ə juː ˈɡetɪŋ æt/"),
+            make("get to someone", "to annoy, upset or affect someone emotionally",
+                 "（人を）イライラさせる・こたえる",
+                 useCases: ["ストレスや悪口が気になってしまうとき", "気にしないよう励ますとき"],
+                 examples: [
+                    ("Don't let him get to you — he's like that with everyone.", "あいつのこと気にしないで。誰にでもああなんだから。"),
+                    ("The noise is really starting to get to me.", "その騒音、本当にイライラしてきた。")
+                 ], ipa: "/ˈɡet tə ˈsʌmwʌn/"),
+            make("have seen better days", "to be old and in poor condition",
+                 "くたびれている・ガタがきている",
+                 useCases: ["古くなった物について話すとき", "ユーモアを込めて自分の体調を言うとき"],
+                 examples: [
+                    ("These trainers have seen better days.", "このスニーカー、だいぶくたびれてきたな。"),
+                    ("The sofa's seen better days, but it's comfy.", "ソファはガタがきてるけど、座り心地はいいよ。")
+                 ], ipa: "/hæv ˈsiːn ˈbetə ˈdeɪz/"),
+            make("sink in", "(news or a fact) to be fully understood or realised",
+                 "（事実が）実感として湧く・身にしみる",
+                 useCases: ["大きなニュースをまだ実感できないとき", "言われたことが後からわかってきたとき"],
+                 examples: [
+                    ("I got the job, but it hasn't sunk in yet.", "採用されたけど、まだ実感が湧かないんだ。"),
+                    ("Give it a minute to sink in.", "ちょっと時間をかけて受け止めてみて。")
+                 ], ipa: "/ˈsɪŋk ˈɪn/"),
+            make("cross one's mind", "(a thought or idea) to occur to someone briefly",
+                 "（考えが）頭をよぎる・ふと思いつく",
+                 useCases: ["思いつきもしなかったと言うとき", "一瞬考えたことを話すとき"],
+                 examples: [
+                    ("It never crossed my mind that she might be upset.", "彼女が怒ってるかもなんて考えもしなかった。"),
+                    ("Did it ever cross your mind to just ask?", "単純に聞いてみようって思わなかったの？")
+                 ], ipa: "/ˈkrɒs wʌnz ˈmaɪnd/"),
+            make("ask someone out", "to invite someone to go on a date",
+                 "（人を）デートに誘う",
+                 useCases: ["好きな人を誘うかどうか話すとき", "誘われたことを報告するとき"],
+                 examples: [
+                    ("Just ask her out — what's the worst that could happen?", "思い切って誘っちゃいなよ。最悪どうなるっていうの？"),
+                    ("Guess what? Tom asked me out!", "聞いて！トムにデートに誘われたの！")
+                 ], ipa: "/ˈɑːsk ˈsʌmwʌn ˈaʊt/"),
+            make("split up", "to end a romantic relationship; or to divide into smaller groups",
+                 "別れる・（グループが）分かれる",
+                 useCases: ["カップルが別れたことを話すとき", "手分けして作業するとき"],
+                 examples: [
+                    ("Did you hear Anna and Mark have split up?", "アンナとマーク、別れたって聞いた？"),
+                    ("Let's split up and meet back here in an hour.", "手分けして、1時間後にここに集合しよう。")
+                 ], ipa: "/ˈsplɪt ˈʌp/"),
+            make("make the best of", "to accept a bad situation and do as well as you can with it",
+                 "（悪い状況でも）なんとか最善を尽くす・楽しむ",
+                 useCases: ["予定が狂ったときに前向きに言うとき", "限られた条件で頑張るとき"],
+                 examples: [
+                    ("It's raining, but let's make the best of it.", "雨だけど、まあそれなりに楽しもうよ。"),
+                    ("The flat's tiny, but we're making the best of it.", "部屋は狭いけど、なんとか工夫してやってるよ。")
+                 ], ipa: "/ˈmeɪk ðə ˈbest əv/"),
+            make("for all I know", "as far as I know (used to show you really have no idea)",
+                 "（よくわからないけど）ひょっとしたら・知る限りでは",
+                 useCases: ["全く見当がつかないと言うとき", "可能性を半ば冗談で挙げるとき"],
+                 examples: [
+                    ("For all I know, he's still asleep.", "ひょっとしたら、あいつまだ寝てるかもよ。"),
+                    ("She could be in Paris by now, for all I know.", "よく知らないけど、彼女もうパリにいるかもね。")
+                 ], ipa: "/fər ˈɔːl aɪ ˈnəʊ/"),
         ]
     }
     private static var britishColloquial150: [Word] {
