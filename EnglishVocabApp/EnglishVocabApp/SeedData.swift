@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33229,6 +33229,115 @@ enum SeedData {
                     ("Hey, long time! So what's new?", "やあ、久しぶり！最近どう？"),
                     ("\"What's new with you?\" \"Not much, same old.\"", "「何か変わったことある？」「別に、相変わらずだよ。」")
                  ], ipa: "/ˌwɒts ˈnjuː/"),
+        ]
+    }
+    private static var britishColloquial149: [Word] {
+        [
+            make("I'm glad to hear that", "a warm reply when someone shares good news or says they are okay",
+                 "それは良かった・それを聞いて安心した",
+                 useCases: ["相手の良い知らせに反応するとき", "相手の体調や状況が良くなったと聞いたとき"],
+                 examples: [
+                    ("\"I'm feeling much better now.\" \"Oh, I'm glad to hear that.\"", "「もうだいぶ良くなったよ。」「あぁ、それは良かった。」"),
+                    ("You got the flat? I'm so glad to hear that!", "あの部屋決まったの？本当に良かったね！")
+                 ], ipa: "/aɪm ˌɡlæd tə ˈhɪə ðæt/"),
+            make("that's news to me", "used when you are surprised because you had not heard about something",
+                 "それは初耳だ",
+                 useCases: ["知らなかった情報を聞いたとき", "聞いていないと軽く伝えるとき"],
+                 examples: [
+                    ("\"The meeting's been moved to Friday.\" \"Really? That's news to me.\"", "「会議、金曜に変更になったよ。」「本当？初耳だよ。」"),
+                    ("They're getting married? That's news to me!", "あの二人結婚するの？それは初耳だ！")
+                 ], ipa: "/ðæts ˈnjuːz tə miː/"),
+            make("reach out", "to contact someone, especially to offer or ask for help",
+                 "連絡する・声をかける",
+                 useCases: ["気軽に連絡してと伝えるとき", "人に助けを求める・差し伸べるとき"],
+                 examples: [
+                    ("If you need anything, just reach out.", "何か必要なら、気軽に連絡してね。"),
+                    ("I reached out to an old friend last week.", "先週、昔の友達に連絡してみたんだ。")
+                 ], ipa: "/ˌriːtʃ ˈaʊt/"),
+            make("keep someone up to date", "to regularly give someone the latest information about something",
+                 "（人に）最新情報を伝え続ける",
+                 useCases: ["進捗を随時知らせてほしいとき", "状況を共有すると約束するとき"],
+                 examples: [
+                    ("Can you keep me up to date on how it goes?", "どうなったか随時教えてくれる？"),
+                    ("I'll keep you up to date if anything changes.", "何か変わったらすぐ知らせるね。")
+                 ], ipa: "/ˌkiːp ˈsʌmwʌn ʌp tə ˈdeɪt/"),
+            make("before long", "soon; after a short time",
+                 "まもなく・すぐに",
+                 useCases: ["もうすぐ何かが起こると言うとき", "時間が経つのが早いと言うとき"],
+                 examples: [
+                    ("Don't worry, you'll get used to it before long.", "心配しないで、すぐに慣れるよ。"),
+                    ("Before long, we were chatting like old friends.", "あっという間に、昔からの友達みたいに話してたよ。")
+                 ], ipa: "/bɪˌfɔː ˈlɒŋ/"),
+            make("most of the time", "usually; on most occasions",
+                 "たいてい・ほとんどの場合",
+                 useCases: ["習慣や傾向を話すとき", "例外もあると含ませるとき"],
+                 examples: [
+                    ("I cycle to work most of the time.", "たいてい自転車で通勤してるよ。"),
+                    ("He's nice most of the time, just a bit moody sometimes.", "彼はたいてい優しいけど、時々ちょっと機嫌が悪いんだ。")
+                 ], ipa: "/ˌməʊst əv ðə ˈtaɪm/"),
+            make("all the time", "very often, or continuously",
+                 "しょっちゅう・いつも",
+                 useCases: ["頻繁に起こることを言うとき", "よくあることだと安心させるとき"],
+                 examples: [
+                    ("Don't worry, that happens all the time.", "気にしないで、そんなのしょっちゅうあるから。"),
+                    ("We used to go there all the time as kids.", "子供の頃、そこにしょっちゅう行ってたんだ。")
+                 ], ipa: "/ˌɔːl ðə ˈtaɪm/"),
+            make("let's get started", "a common way to begin a meeting, lesson or task",
+                 "さあ始めよう",
+                 useCases: ["会議や授業を始めるとき", "作業に取りかかるとき"],
+                 examples: [
+                    ("Right, everyone's here, so let's get started.", "よし、全員揃ったし、始めようか。"),
+                    ("We've got a lot to do — let's get started.", "やることが多いから、さっそく始めよう。")
+                 ], ipa: "/ˌlets ɡet ˈstɑːtɪd/"),
+            make("what do you mean?", "used to ask someone to explain what they said, or to show surprise",
+                 "どういう意味？・どういうこと？",
+                 useCases: ["相手の言葉の意図を確認するとき", "意外なことを言われたとき"],
+                 examples: [
+                    ("What do you mean, it's cancelled?", "中止ってどういうこと？"),
+                    ("Sorry, what do you mean by \"later\"?", "ごめん、「後で」ってどういう意味？")
+                 ], ipa: "/ˌwɒt də juː ˈmiːn/"),
+            make("just now", "a very short time ago, or (in British English) at this moment",
+                 "ついさっき・今ちょうど",
+                 useCases: ["ほんの少し前の出来事を言うとき", "今は手が離せないと言うとき"],
+                 examples: [
+                    ("She called just now — did you miss it?", "ついさっき彼女から電話あったよ、気づかなかった？"),
+                    ("I'm a bit busy just now, can I call you back?", "今ちょっと手が離せなくて、折り返していい？")
+                 ], ipa: "/ˌdʒʌst ˈnaʊ/"),
+            make("get in the way", "to stop something from happening or make it more difficult",
+                 "邪魔になる・妨げになる",
+                 useCases: ["何かが障害になると言うとき", "優先順位について話すとき"],
+                 examples: [
+                    ("Don't let one bad day get in the way of your plans.", "一日うまくいかなかったくらいで、計画を邪魔させないで。"),
+                    ("Work keeps getting in the way of my social life.", "仕事のせいで、なかなか人と会えないんだ。")
+                 ], ipa: "/ˌɡet ɪn ðə ˈweɪ/"),
+            make("it's not the same", "used to say that something is not as good as, or different from, what it was or what it is compared with",
+                 "やっぱり違う・同じじゃない",
+                 useCases: ["以前と比べて物足りないとき", "代わりのもので満足できないとき"],
+                 examples: [
+                    ("Video calls are nice, but it's not the same as meeting in person.", "ビデオ通話もいいけど、直接会うのとはやっぱり違うね。"),
+                    ("The café's still there, but it's not the same anymore.", "あのカフェはまだあるけど、もう昔とは違うんだ。")
+                 ], ipa: "/ɪts ˌnɒt ðə ˈseɪm/"),
+            make("what happened?", "used to ask about an event, especially something bad or surprising",
+                 "何があったの？・どうしたの？",
+                 useCases: ["相手の様子がおかしいとき", "状況の説明を求めるとき"],
+                 examples: [
+                    ("You look upset — what happened?", "なんか落ち込んでるね、何があったの？"),
+                    ("What happened to your phone? The screen's cracked!", "スマホどうしたの？画面割れてるよ！")
+                 ], ipa: "/ˌwɒt ˈhæpənd/"),
+            make("the same goes for", "used to say that what you said is also true for another person or thing",
+                 "〜も同じことだ・〜にも言える",
+                 useCases: ["同じことが他にも当てはまると言うとき", "注意を全員に向けるとき"],
+                 examples: [
+                    ("No phones at the table — and the same goes for you, Dad!", "食事中はスマホ禁止。お父さんもだよ！"),
+                    ("I love Italian food, and the same goes for my wife.", "僕はイタリア料理が大好きで、妻も同じなんだ。")
+                 ], ipa: "/ðə ˌseɪm ˈɡəʊz fɔː/"),
+            make("I'm not surprised", "used to say that something was expected or is easy to understand",
+                 "やっぱりね・驚かないよ",
+                 useCases: ["予想通りの結果を聞いたとき", "相手の気持ちに共感するとき"],
+                 examples: [
+                    ("\"They lost again.\" \"I'm not surprised, to be honest.\"", "「また負けたよ。」「正直、やっぱりねって感じ。」"),
+                    ("You're tired? I'm not surprised — you've been working non-stop.", "疲れた？そりゃそうだよ、ずっと働きっぱなしだもん。")
+                 ], ipa: "/aɪm ˌnɒt səˈpraɪzd/"),
         ]
     }
     private static var britishColloquial147: [Word] {
