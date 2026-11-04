@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -34428,6 +34428,115 @@ enum SeedData {
                     ("Here's your pasta — enjoy your meal!", "パスタお待たせしました、ごゆっくりどうぞ！"),
                     ("Enjoy your meal! — Thanks, you too.", "召し上がれ！ — ありがとう、あなたもね。")
                  ], ipa: "/ɪnˈdʒɔɪ jə ˈmiːl/"),
+        ]
+    }
+    private static var britishColloquial161: [Word] {
+        [
+            make("crop up", "to appear or happen suddenly and unexpectedly, usually a problem or task",
+                 "（急に）起こる・持ち上がる",
+                 useCases: ["予定外の用事ができたとき", "問題が急に出てきたとき"],
+                 examples: [
+                    ("Sorry, something's cropped up at work — can we do Friday instead?", "ごめん、仕事で急用ができちゃって。金曜日にしてもいい？"),
+                    ("Let me know if any problems crop up.", "何か問題が出てきたら教えてね。")
+                 ], ipa: "/ˈkrɒp ˈʌp/"),
+            make("go to plan", "to happen in the way that was intended",
+                 "計画通りにいく・予定通りに進む",
+                 useCases: ["予定通りにいかなかったと話すとき", "うまくいったか尋ねるとき"],
+                 examples: [
+                    ("Our trip didn't quite go to plan — the flight was cancelled.", "旅行は予定通りにはいかなかったよ。フライトが欠航になってさ。"),
+                    ("If everything goes to plan, we'll move in next month.", "全部予定通りにいけば、来月引っ越すよ。")
+                 ], ipa: "/ˈɡəʊ tə ˈplæn/"),
+            make("and so on", "used at the end of a list to show there are more similar things",
+                 "〜など・〜とか",
+                 useCases: ["例を挙げて話すとき", "全部言わずに省略するとき"],
+                 examples: [
+                    ("You'll need towels, sun cream, a hat and so on.", "タオルや日焼け止め、帽子なんかが必要だよ。"),
+                    ("We talked about work, family, holidays and so on.", "仕事とか家族とか休暇のこととか話したよ。")
+                 ], ipa: "/ənd ˈsəʊ ˈɒn/"),
+            make("that kind of thing", "things similar to the ones just mentioned",
+                 "そういう類のこと・そういうの",
+                 useCases: ["例を挙げてぼかすとき", "好みをざっくり伝えるとき"],
+                 examples: [
+                    ("I like hiking, camping, that kind of thing.", "ハイキングとかキャンプとか、そういうのが好きなんだ。"),
+                    ("He's not really into that kind of thing.", "彼はそういうのにはあまり興味ないんだよ。")
+                 ], ipa: "/ˈðæt ˈkaɪnd əv ˈθɪŋ/"),
+            make("cool down", "to become less hot, or to become calmer after being angry or excited",
+                 "冷める・冷ます・頭を冷やす",
+                 useCases: ["料理や飲み物が熱いとき", "怒っている人を落ち着かせるとき"],
+                 examples: [
+                    ("Let the soup cool down a bit before you eat it.", "スープは食べる前に少し冷ましてね。"),
+                    ("Give him a few minutes to cool down.", "彼が落ち着くまで少し時間をあげて。")
+                 ], ipa: "/ˈkuːl ˈdaʊn/"),
+            make("go well with", "to look, taste or work well together with something else",
+                 "〜に合う・〜と相性がいい",
+                 useCases: ["服の組み合わせを話すとき", "料理と飲み物の相性を話すとき"],
+                 examples: [
+                    ("That jacket goes really well with your jeans.", "そのジャケット、ジーンズにすごく合ってるね。"),
+                    ("Red wine goes well with this kind of pasta.", "この手のパスタには赤ワインが合うよ。")
+                 ], ipa: "/ˈɡəʊ ˈwel wɪð/"),
+            make("enjoy yourself", "to have a good time",
+                 "楽しんでね・楽しむ",
+                 useCases: ["出かける人を見送るとき", "楽しかったか話すとき"],
+                 examples: [
+                    ("Have a great time at the party — enjoy yourself!", "パーティー楽しんできてね！"),
+                    ("Did you enjoy yourselves in Spain?", "スペインは楽しかった？")
+                 ], ipa: "/ɪnˈdʒɔɪ jɔːˈself/"),
+            make("lunch break", "the time in the middle of the working or school day when you stop to eat",
+                 "昼休み・お昼休憩",
+                 useCases: ["仕事中の予定を話すとき", "昼に会う約束をするとき"],
+                 examples: [
+                    ("I'll pop to the bank on my lunch break.", "昼休みにちょっと銀行に行ってくるよ。"),
+                    ("I only get half an hour for my lunch break.", "昼休みは30分しかないんだ。")
+                 ], ipa: "/ˈlʌntʃ ˌbreɪk/"),
+            make("go away for the weekend", "to leave home for a short trip over Saturday and Sunday",
+                 "週末にどこかへ出かける・週末旅行に行く",
+                 useCases: ["週末の予定を話すとき", "小旅行の話をするとき"],
+                 examples: [
+                    ("We're going away for the weekend, so I won't be around.", "週末は出かけるから、いないよ。"),
+                    ("Fancy going away for the weekend somewhere by the sea?", "週末、どこか海の方に出かけない？")
+                 ], ipa: "/ˈɡəʊ əˈweɪ fə ðə ˌwiːkˈend/"),
+            make("settle on", "to finally decide on or choose something after thinking about it",
+                 "（あれこれ考えて）〜に決める",
+                 useCases: ["迷った末に決めたとき", "名前や店選びを話すとき"],
+                 examples: [
+                    ("We looked at loads of flats and finally settled on this one.", "たくさん部屋を見て、最終的にここに決めたんだ。"),
+                    ("Have you settled on a name for the dog yet?", "犬の名前もう決まった？")
+                 ], ipa: "/ˈsetl ɒn/"),
+            make("weekly shop", "the main food shopping that you do once a week",
+                 "週に一度のまとめ買い・買い出し",
+                 useCases: ["週末の家事を話すとき", "スーパーに行く予定を話すとき"],
+                 examples: [
+                    ("I usually do the weekly shop on Saturday morning.", "いつも土曜の朝に一週間分の買い出しをするんだ。"),
+                    ("I forgot milk on the weekly shop again.", "またまとめ買いで牛乳を買い忘れたよ。")
+                 ], ipa: "/ˈwiːkli ˈʃɒp/"),
+            make("rush around", "to move quickly from place to place trying to do lots of things",
+                 "バタバタ走り回る・慌ただしく動き回る",
+                 useCases: ["忙しかった一日を話すとき", "相手を落ち着かせるとき"],
+                 examples: [
+                    ("I've been rushing around all morning getting ready.", "準備で朝からずっとバタバタしてたよ。"),
+                    ("Sit down and relax — stop rushing around!", "座ってゆっくりしなよ、そんなにバタバタしないで！")
+                 ], ipa: "/ˈrʌʃ əˈraʊnd/"),
+            make("run low", "to have only a small amount of something left",
+                 "（残りが）少なくなる・切れかけている",
+                 useCases: ["日用品や燃料が少ないとき", "スマホの電池が切れそうなとき"],
+                 examples: [
+                    ("We're running low on coffee — can you grab some?", "コーヒーが切れかけてるよ、買ってきてくれる？"),
+                    ("My battery's running low, so I might get cut off.", "電池が少ないから、途中で切れるかも。")
+                 ], ipa: "/ˈrʌn ˈləʊ/"),
+            make("find your way", "to discover how to get to a place",
+                 "道がわかる・たどり着く",
+                 useCases: ["道に迷わなかったか尋ねるとき", "初めての場所へ行くとき"],
+                 examples: [
+                    ("Did you find your way here all right?", "ここまで迷わずに来られた？"),
+                    ("Don't worry, I'll find my way back to the hotel.", "大丈夫、ホテルまでは自分で戻れるよ。")
+                 ], ipa: "/ˈfaɪnd jɔː ˈweɪ/"),
+            make("work late", "to stay at work after the usual time you finish",
+                 "残業する・遅くまで働く",
+                 useCases: ["帰りが遅くなると伝えるとき", "忙しい時期の話をするとき"],
+                 examples: [
+                    ("I've got to work late tonight, so don't wait for me for dinner.", "今夜は残業だから、夕飯は待たないでね。"),
+                    ("She's been working late all week.", "彼女は今週ずっと遅くまで働いてるんだ。")
+                 ], ipa: "/ˈwɜːk ˈleɪt/"),
         ]
     }
     private static var britishColloquial150: [Word] {
