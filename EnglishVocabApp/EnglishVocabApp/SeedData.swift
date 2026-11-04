@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -34537,6 +34537,115 @@ enum SeedData {
                     ("I've got to work late tonight, so don't wait for me for dinner.", "今夜は残業だから、夕飯は待たないでね。"),
                     ("She's been working late all week.", "彼女は今週ずっと遅くまで働いてるんだ。")
                  ], ipa: "/ˈwɜːk ˈleɪt/"),
+        ]
+    }
+    private static var britishColloquial162: [Word] {
+        [
+            make("heat up", "to make food or drink hot again, or to become hot",
+                 "温める・温め直す",
+                 useCases: ["残り物を温めるとき", "電子レンジを使うとき"],
+                 examples: [
+                    ("I'll just heat up some leftovers for dinner.", "夕飯は残り物を温めるだけにするよ。"),
+                    ("Can you heat this up for me? It's gone cold.", "これ温めてくれる？冷めちゃった。")
+                 ], ipa: "/ˈhiːt ˈʌp/"),
+            make("push back", "to move a meeting or event to a later time",
+                 "（予定を）後ろにずらす・延期する",
+                 useCases: ["会議の時間を遅らせたいとき", "予定が押しているとき"],
+                 examples: [
+                    ("Can we push the meeting back to three?", "会議を3時にずらしてもいい？"),
+                    ("The launch has been pushed back a week.", "リリースが1週間延びたよ。")
+                 ], ipa: "/ˈpʊʃ ˈbæk/"),
+            make("bring forward", "to move an event to an earlier time than planned",
+                 "（予定を）前倒しにする・早める",
+                 useCases: ["予定を早めたいとき", "締め切りが早まったとき"],
+                 examples: [
+                    ("Could we bring the meeting forward to ten?", "会議を10時に早められる？"),
+                    ("They've brought the deadline forward to Friday.", "締め切りが金曜に前倒しになったよ。")
+                 ], ipa: "/ˈbrɪŋ ˈfɔːwəd/"),
+            make("reschedule", "to change the time or date of something that was planned",
+                 "日程を変更する・リスケする",
+                 useCases: ["予定が合わなくなったとき", "予約を変更するとき"],
+                 examples: [
+                    ("Sorry, can we reschedule? Something's come up.", "ごめん、日程変えられる？用事ができちゃって。"),
+                    ("I need to reschedule my dentist appointment.", "歯医者の予約を変更しなきゃ。")
+                 ], ipa: "/ˌriːˈʃedjuːl/"),
+            make("be available", "to be free to meet, talk or do something at a particular time",
+                 "（時間が）空いている・都合がつく",
+                 useCases: ["相手の都合を聞くとき", "自分の空き時間を伝えるとき"],
+                 examples: [
+                    ("Are you available on Thursday afternoon?", "木曜の午後って空いてる？"),
+                    ("I'm not available until after six, I'm afraid.", "悪いけど、6時以降じゃないと空いてないんだ。")
+                 ], ipa: "/bi əˈveɪləbl/"),
+            make("unless", "except if; used to say something will happen if something else does not",
+                 "〜でない限り・〜しなければ",
+                 useCases: ["条件をつけて話すとき", "予定を確認するとき"],
+                 examples: [
+                    ("I'll see you at eight, unless the train's late.", "電車が遅れなければ8時に会おう。"),
+                    ("Don't call me unless it's urgent.", "急ぎじゃなければ電話しないでね。")
+                 ], ipa: "/ənˈles/"),
+            make("chemist's", "a shop where you can buy medicine and toiletries (British English for pharmacy)",
+                 "薬局・ドラッグストア（イギリス英語）",
+                 useCases: ["薬を買いに行くとき", "道を尋ねるとき"],
+                 examples: [
+                    ("I'm just popping to the chemist's to get some paracetamol.", "ちょっと薬局で頭痛薬買ってくるね。"),
+                    ("Is there a chemist's near here?", "この近くに薬局ってある？")
+                 ], ipa: "/ˈkemɪsts/"),
+            make("petrol station", "a place where you buy fuel for your car (British English for gas station)",
+                 "ガソリンスタンド",
+                 useCases: ["車で出かけるとき", "給油が必要なとき"],
+                 examples: [
+                    ("We need to stop at a petrol station — we're nearly empty.", "ガソリンスタンドに寄らなきゃ。もうほとんど空だよ。"),
+                    ("There's a petrol station just after the bridge.", "橋を渡ってすぐにガソリンスタンドがあるよ。")
+                 ], ipa: "/ˈpetrəl ˌsteɪʃn/"),
+            make("roundabout", "a circular junction where traffic goes around in one direction",
+                 "ロータリー・環状交差点",
+                 useCases: ["道案内をするとき", "運転中の会話"],
+                 examples: [
+                    ("Take the second exit at the roundabout.", "ロータリーで2番目の出口を出て。"),
+                    ("Go straight on at the next roundabout.", "次のロータリーはまっすぐ進んで。")
+                 ], ipa: "/ˈraʊndəbaʊt/"),
+            make("lorry", "a large vehicle for carrying goods (British English for truck)",
+                 "トラック（イギリス英語）",
+                 useCases: ["道路の状況を話すとき", "渋滞の理由を話すとき"],
+                 examples: [
+                    ("We got stuck behind a lorry for ages.", "トラックの後ろでずっと足止めされたよ。"),
+                    ("A lorry had broken down on the main road.", "大通りでトラックが故障してたんだ。")
+                 ], ipa: "/ˈlɒri/"),
+            make("platform", "the area in a station where you get on and off trains",
+                 "（駅の）ホーム・〜番線",
+                 useCases: ["駅で乗り場を確認するとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("Which platform does the train to Brighton leave from?", "ブライトン行きの電車は何番線から出る？"),
+                    ("I'll meet you on platform four.", "4番線で待ち合わせしよう。")
+                 ], ipa: "/ˈplætfɔːm/"),
+            make("return ticket", "a ticket for a journey to a place and back again (British English for round-trip ticket)",
+                 "往復切符",
+                 useCases: ["駅で切符を買うとき", "旅行の計画を話すとき"],
+                 examples: [
+                    ("A return ticket to Oxford, please.", "オックスフォードまで往復切符を1枚ください。"),
+                    ("It's cheaper to get a return ticket.", "往復で買った方が安いよ。")
+                 ], ipa: "/rɪˈtɜːn ˌtɪkɪt/"),
+            make("be delayed", "to happen or arrive later than planned",
+                 "遅れる・遅延する",
+                 useCases: ["電車や飛行機が遅れたとき", "到着が遅れると伝えるとき"],
+                 examples: [
+                    ("My flight's been delayed by two hours.", "フライトが2時間遅れてるんだ。"),
+                    ("Sorry, the train was delayed — I'm on my way now.", "ごめん、電車が遅れてて。今向かってるところ。")
+                 ], ipa: "/bi dɪˈleɪd/"),
+            make("Sunday roast", "a traditional British meal of roast meat, potatoes and vegetables eaten on Sunday",
+                 "サンデーロースト（日曜日の伝統的なロースト料理）",
+                 useCases: ["週末の予定を話すとき", "パブで食事をするとき"],
+                 examples: [
+                    ("Fancy going to the pub for a Sunday roast?", "パブにサンデーローストを食べに行かない？"),
+                    ("My mum does a brilliant Sunday roast.", "うちの母のサンデーローストは最高なんだ。")
+                 ], ipa: "/ˌsʌndeɪ ˈrəʊst/"),
+            make("fridge", "a machine for keeping food and drink cold",
+                 "冷蔵庫",
+                 useCases: ["食べ物を保存するとき", "家で飲み物を勧めるとき"],
+                 examples: [
+                    ("There's some milk in the fridge if you want it.", "よかったら冷蔵庫に牛乳あるよ。"),
+                    ("Put the leftovers in the fridge, will you?", "残り物、冷蔵庫に入れといてくれる？")
+                 ], ipa: "/frɪdʒ/"),
         ]
     }
     private static var britishColloquial150: [Word] {
