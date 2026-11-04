@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33774,6 +33774,115 @@ enum SeedData {
                     ("For all I know, he's still asleep.", "ひょっとしたら、あいつまだ寝てるかもよ。"),
                     ("She could be in Paris by now, for all I know.", "よく知らないけど、彼女もうパリにいるかもね。")
                  ], ipa: "/fər ˈɔːl aɪ ˈnəʊ/"),
+        ]
+    }
+    private static var britishColloquial155: [Word] {
+        [
+            make("step in", "to get involved in a situation to help or to stop something",
+                 "（助けに・仲裁に）入る・代わりを務める",
+                 useCases: ["誰かが代役を引き受けたとき", "揉め事を止めに入ったとき"],
+                 examples: [
+                    ("Sarah was ill, so Tom stepped in at the last minute.", "サラが体調を崩したから、トムが直前に代わりを務めてくれた。"),
+                    ("If they start arguing again, I'll step in.", "また二人が言い争い始めたら、私が止めに入るよ。")
+                 ], ipa: "/ˈstep ˈɪn/"),
+            make("think through", "to consider something carefully, including its possible effects",
+                 "（じっくり）よく考える・考え抜く",
+                 useCases: ["大事な決断の前に慎重になるとき", "計画が甘いと指摘するとき"],
+                 examples: [
+                    ("Let me think it through and get back to you.", "よく考えてから返事するね。"),
+                    ("I don't think he really thought this through.", "彼、ちゃんと考えずにやったんだと思うよ。")
+                 ], ipa: "/ˈθɪŋk ˈθruː/"),
+            make("talk over", "to discuss something, especially before making a decision",
+                 "（〜について）話し合う・相談する",
+                 useCases: ["家族やパートナーと相談してから決めたいとき", "問題を一緒に話し合おうと提案するとき"],
+                 examples: [
+                    ("I need to talk it over with my wife first.", "まず妻と相談しないと。"),
+                    ("Let's talk things over over a coffee.", "コーヒーでも飲みながら話し合おうよ。")
+                 ], ipa: "/ˈtɔːk ˈəʊvə/"),
+            make("head for", "to go towards a place",
+                 "〜に向かう・〜へ行く",
+                 useCases: ["これからどこへ行くか話すとき", "移動中に行き先を伝えるとき"],
+                 examples: [
+                    ("We're heading for the beach — want to come?", "これからビーチに向かうんだけど、一緒に来る？"),
+                    ("Shall we head for home? It's getting late.", "そろそろ帰ろうか？遅くなってきたし。")
+                 ], ipa: "/ˈhed fɔː/"),
+            make("show someone around", "to give someone a tour of a place",
+                 "（人を）案内する・見て回らせる",
+                 useCases: ["家や職場を初めて来た人に案内するとき", "旅行先で地元の人に案内してもらうとき"],
+                 examples: [
+                    ("Come in! Let me show you around.", "どうぞ入って！中を案内するね。"),
+                    ("If you visit Lisbon, I'll show you around.", "リスボンに来たら案内してあげるよ。")
+                 ], ipa: "/ˈʃəʊ ˈsʌmwʌn əˈraʊnd/"),
+            make("fill someone in", "to give someone the information they missed",
+                 "（人に）事情を説明する・最新情報を教える",
+                 useCases: ["会議や出来事に参加できなかった人に説明するとき", "自分が知らない状況を教えてほしいとき"],
+                 examples: [
+                    ("I missed the meeting — can you fill me in?", "会議に出られなかったんだけど、内容を教えてくれる？"),
+                    ("I'll fill you in on the details later.", "詳しいことは後で説明するね。")
+                 ], ipa: "/ˈfɪl ˈsʌmwʌn ˈɪn/"),
+            make("catch someone's eye", "to attract someone's attention; or to make eye contact with someone",
+                 "（人の）目を引く・目が合う",
+                 useCases: ["お店で気になった物について話すとき", "店員やウェイターの注意を引きたいとき"],
+                 examples: [
+                    ("This jacket caught my eye in the window.", "ショーウィンドウでこのジャケットが目に留まったんだ。"),
+                    ("I'm trying to catch the waiter's eye.", "ウェイターと目を合わせようとしてるんだけど。")
+                 ], ipa: "/ˈkætʃ ˈsʌmwʌnz ˈaɪ/"),
+            make("check on", "to go and see if someone or something is all right",
+                 "（〜の）様子を見る・確認する",
+                 useCases: ["子どもや病人の様子を見に行くとき", "料理や作業の進み具合を確かめるとき"],
+                 examples: [
+                    ("I'll just check on the kids.", "ちょっと子どもたちの様子を見てくるね。"),
+                    ("Can you check on the oven? I think something's burning.", "オーブン見てくれる？何か焦げてる気がする。")
+                 ], ipa: "/ˈtʃek ɒn/"),
+            make("put away", "to put something back in the place where it is kept",
+                 "片付ける・しまう",
+                 useCases: ["散らかった物を片付けるよう言うとき", "買ってきた物をしまうとき"],
+                 examples: [
+                    ("Can you put your toys away, please?", "おもちゃを片付けてくれる？"),
+                    ("I haven't put the shopping away yet.", "買ってきた物、まだしまってないんだ。")
+                 ], ipa: "/ˈpʊt əˈweɪ/"),
+            make("take back", "to return something to a shop; or to admit that something you said was wrong",
+                 "（店に）返品する・（発言を）撤回する",
+                 useCases: ["買った物を返品するとき", "言い過ぎたことを取り消すとき"],
+                 examples: [
+                    ("These shoes are too small — I'll have to take them back.", "この靴小さすぎるから、返品しないと。"),
+                    ("Okay, I take it back. You were right.", "わかった、さっきの撤回するよ。君が正しかった。")
+                 ], ipa: "/ˈteɪk ˈbæk/"),
+            make("work on", "to spend time improving or practising something",
+                 "（〜に）取り組む・（苦手なことを）改善する",
+                 useCases: ["今取り組んでいることを話すとき", "自分の弱点を直そうとしているとき"],
+                 examples: [
+                    ("I'm working on my pronunciation at the moment.", "今、発音を練習してるところなんだ。"),
+                    ("We're still working on it — give us a few more days.", "まだ取り組み中なんだ。あと数日ちょうだい。")
+                 ], ipa: "/ˈwɜːk ɒn/"),
+            make("hand it to someone", "to admit that someone deserves praise (usually 'you've got to hand it to...')",
+                 "（人の）実力を認める・さすがだと言わざるを得ない",
+                 useCases: ["あまり好きではない人でも功績は認めるとき", "相手の頑張りを素直に褒めるとき"],
+                 examples: [
+                    ("You've got to hand it to her — she never gives up.", "彼女はさすがだよ。絶対に諦めないんだから。"),
+                    ("I'll hand it to you, that was a brilliant idea.", "認めるよ、あれは素晴らしいアイデアだった。")
+                 ], ipa: "/ˈhænd ɪt tə ˈsʌmwʌn/"),
+            make("hear back", "to receive a reply from someone you contacted",
+                 "（〜から）返事・連絡が来る",
+                 useCases: ["面接や応募の結果を待っているとき", "メールの返事が来ないと話すとき"],
+                 examples: [
+                    ("Have you heard back from the job interview yet?", "面接の結果、もう連絡来た？"),
+                    ("I emailed them last week but haven't heard back.", "先週メールしたけど、まだ返事がないんだ。")
+                 ], ipa: "/ˈhɪə ˈbæk/"),
+            make("look back", "to think about something that happened in the past",
+                 "振り返る・思い返す",
+                 useCases: ["昔の出来事を懐かしむとき", "過去の判断を振り返るとき"],
+                 examples: [
+                    ("Looking back, I should have taken that job.", "今思えば、あの仕事を受けるべきだったな。"),
+                    ("We'll look back on this and laugh one day.", "いつかこのことを振り返って笑える日が来るよ。")
+                 ], ipa: "/ˈlʊk ˈbæk/"),
+            make("sum up", "to describe the main points of something briefly",
+                 "要約する・一言で言うと",
+                 useCases: ["話や会議の要点をまとめるとき", "状況を一言で表すとき"],
+                 examples: [
+                    ("So, to sum up, we need more time and more money.", "つまりまとめると、もっと時間とお金が必要ってこと。"),
+                    ("That pretty much sums it up.", "まさにそういうこと。／一言で言えばそんな感じ。")
+                 ], ipa: "/ˈsʌm ˈʌp/"),
         ]
     }
     private static var britishColloquial150: [Word] {
