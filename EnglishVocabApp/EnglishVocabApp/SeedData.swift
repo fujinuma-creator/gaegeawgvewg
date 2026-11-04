@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -34101,6 +34101,115 @@ enum SeedData {
                     ("Can you take the bins out tonight?", "今夜ゴミ出してくれる？"),
                     ("I'm taking my mum out for lunch on Sunday.", "日曜はお母さんをランチに連れていくんだ。")
                  ], ipa: "/ˈteɪk ˈaʊt/"),
+        ]
+    }
+    private static var britishColloquial158: [Word] {
+        [
+            make("throw away", "to get rid of something because you no longer want or need it",
+                 "捨てる・処分する",
+                 useCases: ["不要な物を捨てるとき", "捨てていいか確認するとき"],
+                 examples: [
+                    ("Can I throw away these old magazines?", "この古い雑誌、捨ててもいい？"),
+                    ("Don't throw that box away — I might need it.", "その箱捨てないで、使うかもしれないから。")
+                 ], ipa: "/ˈθrəʊ əˈweɪ/"),
+            make("luckily", "used to say that something good happened by chance",
+                 "運よく・幸いにも",
+                 useCases: ["ラッキーだったことを話すとき", "最悪の事態を免れたと言うとき"],
+                 examples: [
+                    ("Luckily, I'd saved my work before the laptop crashed.", "幸い、パソコンが落ちる前に保存してたんだ。"),
+                    ("We missed the train, but luckily there was another one ten minutes later.", "電車に乗り遅れたけど、運よく10分後に次のがあったよ。")
+                 ], ipa: "/ˈlʌkɪli/"),
+            make("get up", "to get out of bed after sleeping",
+                 "起きる・起床する",
+                 useCases: ["起きる時間を話すとき", "朝の習慣を話すとき"],
+                 examples: [
+                    ("What time do you usually get up on weekdays?", "平日はだいたい何時に起きるの？"),
+                    ("I got up really early to catch the flight.", "飛行機に間に合うようにすごく早起きしたよ。")
+                 ], ipa: "/ˈɡet ˈʌp/"),
+            make("of course", "used to say yes politely or to show that something is obvious",
+                 "もちろん・当然",
+                 useCases: ["快く引き受けるとき", "当たり前のことを言うとき"],
+                 examples: [
+                    ("Can I borrow your pen? — Of course, here you go.", "ペン借りてもいい？ — もちろん、どうぞ。"),
+                    ("Of course I'll come to your party!", "もちろん君のパーティー行くよ！")
+                 ], ipa: "/əv ˈkɔːs/"),
+            make("sorry about that", "a quick, friendly way to apologise for a small mistake or problem",
+                 "ごめんね・失礼しました",
+                 useCases: ["ちょっとしたミスを謝るとき", "待たせたことを軽く謝るとき"],
+                 examples: [
+                    ("I sent you the wrong file — sorry about that.", "違うファイル送っちゃった、ごめんね。"),
+                    ("Sorry about that, I had to take a call.", "ごめんね、電話に出なきゃいけなくて。")
+                 ], ipa: "/ˈsɒri əˈbaʊt ðæt/"),
+            make("by myself", "alone, or without help from anyone else",
+                 "一人で・自分だけで",
+                 useCases: ["一人で何かをしたと話すとき", "手伝いは不要だと伝えるとき"],
+                 examples: [
+                    ("I went to the cinema by myself last night.", "昨日の夜、一人で映画に行ったんだ。"),
+                    ("It's fine, I can carry it by myself.", "大丈夫、自分で運べるよ。")
+                 ], ipa: "/baɪ maɪˈself/"),
+            make("get better", "to improve, or to become healthy again after being ill",
+                 "良くなる・上達する・（病気が）治る",
+                 useCases: ["体調の回復を願うとき", "上達や改善を話すとき"],
+                 examples: [
+                    ("I hope you get better soon.", "早く良くなるといいね。"),
+                    ("Your English is getting better and better!", "英語どんどん上手くなってるね！")
+                 ], ipa: "/ˈɡet ˈbetə/"),
+            make("switch on", "to start a machine, light, etc. by pressing a button or switch",
+                 "（電源・電気を）つける",
+                 useCases: ["電気や家電をつけてもらうとき", "電源を入れたか確認するとき"],
+                 examples: [
+                    ("Could you switch the light on? It's a bit dark in here.", "電気つけてくれる？ちょっと暗いから。"),
+                    ("Have you switched the oven on yet?", "もうオーブンの電源入れた？")
+                 ], ipa: "/ˈswɪtʃ ˈɒn/"),
+            make("it's freezing", "used to say that the weather or a place is very cold",
+                 "めちゃくちゃ寒い・凍えそう",
+                 useCases: ["寒さを大げさに言うとき", "暖房や上着について話すとき"],
+                 examples: [
+                    ("It's freezing out there — take a coat.", "外めちゃくちゃ寒いよ、コート持っていきな。"),
+                    ("Can we close the window? It's freezing in here.", "窓閉めていい？ここ寒すぎる。")
+                 ], ipa: "/ɪts ˈfriːzɪŋ/"),
+            make("get nervous", "to start feeling worried or anxious about something",
+                 "緊張する・不安になる",
+                 useCases: ["面接や発表の前の気持ちを話すとき", "相手を励ますとき"],
+                 examples: [
+                    ("I always get nervous before job interviews.", "面接の前はいつも緊張しちゃうんだ。"),
+                    ("Don't get nervous — you'll be fine.", "緊張しないで、きっと大丈夫だよ。")
+                 ], ipa: "/ˈɡet ˈnɜːvəs/"),
+            make("be excited about", "to feel happy and enthusiastic about something that is going to happen",
+                 "〜が楽しみでワクワクしている",
+                 useCases: ["楽しみな予定を話すとき", "相手の予定に興味を示すとき"],
+                 examples: [
+                    ("I'm so excited about our trip to Lisbon!", "リスボン旅行、すごく楽しみ！"),
+                    ("Are you excited about starting your new job?", "新しい仕事始まるの楽しみ？")
+                 ], ipa: "/biː ɪkˈsaɪtɪd əˈbaʊt/"),
+            make("annoying", "making you feel slightly angry or irritated",
+                 "イライラする・うっとうしい",
+                 useCases: ["ちょっとした不満を言うとき", "迷惑な状況に共感するとき"],
+                 examples: [
+                    ("It's so annoying when the Wi-Fi keeps dropping.", "Wi-Fiが何度も切れるの、ほんとイライラする。"),
+                    ("That noise is really annoying — what is it?", "あの音すごく気になるんだけど、何？")
+                 ], ipa: "/əˈnɔɪɪŋ/"),
+            make("embarrassed", "feeling shy, silly or uncomfortable because of something you did or that happened",
+                 "恥ずかしい・気まずい",
+                 useCases: ["失敗して恥ずかしかったと話すとき", "相手を気遣うとき"],
+                 examples: [
+                    ("I was so embarrassed when I called my teacher 'Mum'.", "先生を「お母さん」って呼んじゃって、すごく恥ずかしかった。"),
+                    ("Don't be embarrassed — everyone makes mistakes.", "恥ずかしがらないで、誰でも間違えるよ。")
+                 ], ipa: "/ɪmˈbærəst/"),
+            make("relieved", "feeling happy because something unpleasant has stopped or did not happen",
+                 "ほっとした・安心した",
+                 useCases: ["心配が解消したときの気持ちを言うとき", "結果を聞いて安心したとき"],
+                 examples: [
+                    ("I'm so relieved the exam's over.", "試験が終わって本当にほっとしたよ。"),
+                    ("She was relieved to hear everyone got home safely.", "みんな無事に帰ったと聞いて彼女は安心してた。")
+                 ], ipa: "/rɪˈliːvd/"),
+            make("crowded", "full of people",
+                 "混んでいる・人でいっぱいの",
+                 useCases: ["店や電車の混雑を話すとき", "空いている時間を相談するとき"],
+                 examples: [
+                    ("The tube was really crowded this morning.", "今朝の地下鉄すごく混んでたよ。"),
+                    ("Let's go early before it gets too crowded.", "混みすぎる前に早めに行こう。")
+                 ], ipa: "/ˈkraʊdɪd/"),
         ]
     }
     private static var britishColloquial150: [Word] {
