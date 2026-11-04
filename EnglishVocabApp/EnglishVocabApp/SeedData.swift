@@ -33887,20 +33887,20 @@ enum SeedData {
     }
     private static var britishColloquial156: [Word] {
         [
-            make("talk someone into", "to persuade someone to do something",
-                 "（人を）説得して〜させる・言いくるめる",
-                 useCases: ["乗り気でない人を誘い込んだとき", "自分が説得されてやることになったとき"],
+            make("get mixed up", "to become confused; to confuse two things or people",
+                 "混乱する・（二つを）取り違える",
+                 useCases: ["似たものを間違えたとき", "頭がこんがらがったとき"],
                  examples: [
-                    ("She talked me into going to the gym with her.", "彼女に説得されて一緒にジムに行くことになった。"),
-                    ("Don't let him talk you into buying a new phone.", "彼に言いくるめられて新しいスマホ買わないようにね。")
-                 ], ipa: "/ˈtɔːk ˈsʌmwʌn ˈɪntuː/"),
-            make("talk someone out of", "to persuade someone not to do something",
-                 "（人を）説得して〜をやめさせる",
-                 useCases: ["無謀な計画を思いとどまらせるとき", "やめるよう説得されたとき"],
+                    ("Sorry, I got mixed up — I thought it was today.", "ごめん、混乱してた。今日だと思ってたよ。"),
+                    ("I always get the twins mixed up.", "あの双子、いつも見分けがつかないんだよね。")
+                 ], ipa: "/ˈɡet ˈmɪkst ˈʌp/"),
+            make("hear from", "to receive news, a message or a call from someone",
+                 "（人から）連絡をもらう・便りがある",
+                 useCases: ["返事や連絡を待っているとき", "久しぶりに連絡が来たとき"],
                  examples: [
-                    ("I tried to talk him out of quitting his job.", "仕事を辞めないよう彼を説得しようとしたんだ。"),
-                    ("You won't talk me out of it — I've decided.", "説得しても無駄だよ、もう決めたから。")
-                 ], ipa: "/ˈtɔːk ˈsʌmwʌn ˈaʊt əv/"),
+                    ("Have you heard from Anna lately?", "最近アンナから連絡あった？"),
+                    ("It's so nice to hear from you!", "連絡もらえて本当に嬉しいよ！")
+                 ], ipa: "/ˈhɪə frɒm/"),
             make("join in", "to take part in an activity that other people are already doing",
                  "（輪に）加わる・参加する",
                  useCases: ["みんなでしていることに誘うとき", "途中から参加させてもらうとき"],
@@ -33943,20 +33943,20 @@ enum SeedData {
                     ("Are you really going to go through with it?", "本当にそれやるつもり？"),
                     ("In the end, she didn't go through with the move.", "結局、彼女は引っ越しをやめたんだ。")
                  ], ipa: "/ˈɡəʊ ˈθruː wɪð/"),
-            make("tell someone off", "to speak angrily to someone because they have done something wrong",
-                 "（人を）叱る・注意する",
-                 useCases: ["怒られたことを話すとき", "子どもや部下を叱るとき"],
+            make("look over", "to read or examine something quickly",
+                 "ざっと目を通す・チェックする",
+                 useCases: ["書類やメールの確認を頼むとき", "提出前にざっと見直すとき"],
                  examples: [
-                    ("I got told off for being late again.", "また遅刻して怒られちゃった。"),
-                    ("She told the kids off for making a mess.", "散らかしたことで彼女は子どもたちを叱った。")
-                 ], ipa: "/ˈtel ˈsʌmwʌn ˈɒf/"),
-            make("pay someone back", "to return money that you borrowed from someone",
-                 "（人に）お金を返す",
-                 useCases: ["立て替えてもらったお金を返すとき", "借りたお金の返済を約束するとき"],
+                    ("Could you look over my CV before I send it?", "送る前に履歴書にざっと目を通してもらえる？"),
+                    ("I'll look it over tonight and let you know.", "今夜ざっと見て連絡するね。")
+                 ], ipa: "/ˈlʊk ˈəʊvə/"),
+            make("cheer someone on", "to shout encouragement to someone, especially in a race or competition",
+                 "（人を）応援する・声援を送る",
+                 useCases: ["試合やレースで応援するとき", "友人の挑戦を後押しするとき"],
                  examples: [
-                    ("Can you lend me a tenner? I'll pay you back tomorrow.", "10ポンド貸してくれる？明日返すから。"),
-                    ("Don't worry about paying me back.", "返さなくて大丈夫だよ。")
-                 ], ipa: "/ˈpeɪ ˈsʌmwʌn ˈbæk/"),
+                    ("We all went to cheer him on at the marathon.", "みんなでマラソンの彼を応援しに行ったんだ。"),
+                    ("Thanks for cheering me on — it really helped.", "応援してくれてありがとう、本当に力になったよ。")
+                 ], ipa: "/ˈtʃɪə ˈsʌmwʌn ˈɒn/"),
             make("pay off", "(of hard work or a plan) to be successful or worth it",
                  "（努力・計画が）報われる・うまくいく",
                  useCases: ["努力の成果が出たとき", "相手の頑張りをたたえるとき"],
@@ -33985,13 +33985,13 @@ enum SeedData {
                     ("He never backs down in an argument.", "彼は口論で絶対に引き下がらないんだ。"),
                     ("In the end, the landlord backed down.", "結局、大家さんのほうが引き下がったよ。")
                  ], ipa: "/ˈbæk ˈdaʊn/"),
-            make("see someone off", "to go to an airport, station, etc. to say goodbye to someone",
-                 "（人を）見送る",
-                 useCases: ["空港や駅まで見送りに行くとき", "見送りに来てくれたことに感謝するとき"],
+            make("eat in", "to eat at home or in a café/restaurant rather than taking food away",
+                 "（店内で・家で）食べる",
+                 useCases: ["カフェで「店内か持ち帰りか」聞かれたとき", "外食せず家で食べると言うとき"],
                  examples: [
-                    ("We went to the airport to see her off.", "空港まで彼女を見送りに行ったんだ。"),
-                    ("Thanks for coming to see me off!", "見送りに来てくれてありがとう！")
-                 ], ipa: "/ˈsiː ˈsʌmwʌn ˈɒf/"),
+                    ("Is that to eat in or take away?", "店内でお召し上がりですか、お持ち帰りですか？"),
+                    ("Let's just eat in tonight — I'm shattered.", "今夜は家で食べよう。もうクタクタだよ。")
+                 ], ipa: "/ˈiːt ˈɪn/"),
         ]
     }
     private static var britishColloquial150: [Word] {
