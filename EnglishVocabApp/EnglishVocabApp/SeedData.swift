@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33011,6 +33011,115 @@ enum SeedData {
                     ("I got loads of freebies at the conference.", "カンファレンスでタダのものをたくさんもらったよ。"),
                     ("The dessert was a freebie from the chef.", "デザートはシェフからのサービスだったんだ。")
                  ], ipa: "/ˈfriːbi/"),
+        ]
+    }
+    private static var britishColloquial145: [Word] {
+        [
+            make("pet hate", "something that particularly annoys you (US: pet peeve)",
+                 "特に嫌いなこと・どうしても許せないこと",
+                 useCases: ["個人的にイラッとすることを話すとき", "自分のこだわりや苦手なことを紹介するとき"],
+                 examples: [
+                    ("One of my pet hates is people talking in the cinema.", "映画館でしゃべる人が本当に苦手なんだ。"),
+                    ("Loud chewing is my biggest pet hate.", "音を立てて食べられるのが一番イヤ。")
+                 ], ipa: "/ˌpet ˈheɪt/"),
+            make("hand-me-down", "a piece of clothing or other item that was used by someone else before you, often an older brother or sister",
+                 "お下がり",
+                 useCases: ["兄弟や知人からもらった服について話すとき", "子どもの服の話をするとき"],
+                 examples: [
+                    ("Most of my clothes were hand-me-downs from my sister.", "服はほとんど姉のお下がりだったよ。"),
+                    ("This bike's a hand-me-down, but it still works fine.", "この自転車はお下がりだけど、まだちゃんと走るよ。")
+                 ], ipa: "/ˈhænd mi daʊn/"),
+            make("neat freak", "a person who wants everything to be extremely clean and tidy",
+                 "きれい好きすぎる人・潔癖気味な人",
+                 useCases: ["掃除や片付けにこだわる人を表すとき", "自分の性格を冗談っぽく話すとき"],
+                 examples: [
+                    ("My flatmate's a bit of a neat freak.", "ルームメイトはちょっときれい好きすぎるんだよね。"),
+                    ("I'm not a neat freak, but I can't stand dirty dishes.", "潔癖ってわけじゃないけど、汚れた皿は耐えられない。")
+                 ], ipa: "/ˈniːt friːk/"),
+            make("to-do list", "a list of things that you need to do",
+                 "やることリスト",
+                 useCases: ["今日やるべきことを話すとき", "忙しくてやることが多いと言うとき"],
+                 examples: [
+                    ("My to-do list is getting longer and longer.", "やることリストがどんどん長くなっていくよ。"),
+                    ("Let me add that to my to-do list.", "それ、やることリストに入れておくね。")
+                 ], ipa: "/təˈduː lɪst/"),
+            make("pub quiz", "a quiz competition held in a pub, usually in teams",
+                 "パブクイズ（パブで行うチーム対抗クイズ）",
+                 useCases: ["友達と夜の予定を立てるとき", "仲間内のイベントについて話すとき"],
+                 examples: [
+                    ("Do you fancy joining our team for the pub quiz on Thursday?", "木曜のパブクイズ、うちのチームで一緒に出ない？"),
+                    ("We came second in the pub quiz last night!", "昨夜のパブクイズで2位だったんだ！")
+                 ], ipa: "/ˌpʌb ˈkwɪz/"),
+            make("packed lunch", "food such as sandwiches that you prepare at home and take to school or work",
+                 "お弁当（持参する昼食）",
+                 useCases: ["学校や職場に弁当を持って行くと言うとき", "節約のために昼食を持参するとき"],
+                 examples: [
+                    ("I've started bringing a packed lunch to save money.", "節約のためにお弁当を持って行き始めたんだ。"),
+                    ("Don't forget your packed lunch!", "お弁当忘れないでね！")
+                 ], ipa: "/ˌpækt ˈlʌntʃ/"),
+            make("catch-up", "an informal meeting or chat to find out what has happened since you last spoke",
+                 "近況報告（の集まり）・ちょっとした打ち合わせ",
+                 useCases: ["久しぶりの友達と会う約束をするとき", "同僚と短く状況共有するとき"],
+                 examples: [
+                    ("We should grab a coffee and have a proper catch-up.", "コーヒーでも飲んでゆっくり近況話そうよ。"),
+                    ("Can we have a quick catch-up after lunch?", "お昼のあとにちょっと話せる？")
+                 ], ipa: "/ˈkætʃ ʌp/"),
+            make("plaster", "a small piece of sticky material used to cover a small cut on the skin (US: Band-Aid)",
+                 "絆創膏",
+                 useCases: ["ちょっとした怪我をしたとき", "絆創膏を持っているか聞くとき"],
+                 examples: [
+                    ("Have you got a plaster? I've cut my finger.", "絆創膏持ってる？指切っちゃった。"),
+                    ("It's only a scratch — just stick a plaster on it.", "ただのかすり傷だよ、絆創膏貼っとけば大丈夫。")
+                 ], ipa: "/ˈplɑːstə/"),
+            make("dressing gown", "a long loose piece of clothing you wear over pyjamas at home (US: bathrobe)",
+                 "ガウン・部屋着のローブ",
+                 useCases: ["家でくつろいでいる格好を話すとき", "朝の身支度について話すとき"],
+                 examples: [
+                    ("I spent the whole morning in my dressing gown.", "午前中ずっとガウンのまま過ごしちゃった。"),
+                    ("Sorry, I'm still in my dressing gown — come in!", "ごめん、まだ部屋着のままなんだ。入って！")
+                 ], ipa: "/ˈdresɪŋ ɡaʊn/"),
+            make("brain freeze", "a sudden pain in your head caused by eating or drinking something very cold too quickly",
+                 "（冷たい物で）頭がキーンとなること",
+                 useCases: ["アイスや冷たい飲み物を急いで食べたとき", "暑い日の会話で"],
+                 examples: [
+                    ("Ow, brain freeze! I drank that way too fast.", "うわ、頭キーンってなった！一気に飲みすぎた。"),
+                    ("Slow down or you'll get brain freeze.", "ゆっくり食べないと頭キーンってなるよ。")
+                 ], ipa: "/ˈbreɪn friːz/"),
+            make("doggy bag", "a bag or box for taking home the food you didn't finish at a restaurant",
+                 "（レストランの）持ち帰り用の容器",
+                 useCases: ["食べきれなかった料理を持ち帰りたいとき", "食べ残しについて話すとき"],
+                 examples: [
+                    ("Could we get a doggy bag for this, please?", "これ、持ち帰り用にしてもらえますか？"),
+                    ("The portions were huge, so I asked for a doggy bag.", "量がすごく多かったから、持ち帰りにしてもらったよ。")
+                 ], ipa: "/ˈdɒɡi bæɡ/"),
+            make("picky eater", "someone who only likes a few kinds of food and refuses to eat many things",
+                 "好き嫌いが多い人・偏食な人",
+                 useCases: ["食べ物の好き嫌いについて話すとき", "子どもの食事の悩みを話すとき"],
+                 examples: [
+                    ("I was such a picky eater as a child.", "子どもの頃はすごく好き嫌いが多かったんだ。"),
+                    ("He's a picky eater, so let's choose somewhere with lots of options.", "彼は好き嫌いが多いから、メニューが多い店にしよう。")
+                 ], ipa: "/ˌpɪki ˈiːtə/"),
+            make("group chat", "a conversation in a messaging app that includes several people",
+                 "グループチャット・グループLINE",
+                 useCases: ["友達同士の連絡方法について話すとき", "グループに情報を流すとき"],
+                 examples: [
+                    ("I'll put it in the group chat so everyone knows.", "みんなにわかるようにグループチャットに流しとくね。"),
+                    ("The family group chat has been going off all morning.", "家族のグループチャット、朝からずっと通知が鳴りっぱなしだよ。")
+                 ], ipa: "/ˈɡruːp tʃæt/"),
+            make("voice note", "a short recorded audio message sent through a messaging app",
+                 "ボイスメッセージ・音声メッセージ",
+                 useCases: ["文字を打つ代わりに声で送るとき", "長い話をメッセージで伝えるとき"],
+                 examples: [
+                    ("I'll just send you a voice note — it's easier than typing.", "ボイスメッセージ送るね、打つより楽だから。"),
+                    ("She sent me a five-minute voice note!", "彼女から5分もあるボイスメッセージが来たよ！")
+                 ], ipa: "/ˈvɔɪs nəʊt/"),
+            make("bucket list", "a list of things you want to do or experience before you die",
+                 "死ぬまでにやりたいことリスト",
+                 useCases: ["いつか叶えたい夢を話すとき", "旅行先や体験について話すとき"],
+                 examples: [
+                    ("Seeing the Northern Lights is on my bucket list.", "オーロラを見るのは死ぬまでにやりたいことの一つなんだ。"),
+                    ("Skydiving? That's definitely not on my bucket list!", "スカイダイビング？それは絶対リストに入ってないよ！")
+                 ], ipa: "/ˈbʌkɪt lɪst/"),
         ]
     }
     private static var britishColloquial144: [Word] {
