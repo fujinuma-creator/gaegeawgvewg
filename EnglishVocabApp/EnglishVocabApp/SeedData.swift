@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33011,6 +33011,115 @@ enum SeedData {
                     ("I got loads of freebies at the conference.", "カンファレンスでタダのものをたくさんもらったよ。"),
                     ("The dessert was a freebie from the chef.", "デザートはシェフからのサービスだったんだ。")
                  ], ipa: "/ˈfriːbi/"),
+        ]
+    }
+    private static var britishColloquial146: [Word] {
+        [
+            make("on the spur of the moment", "suddenly, without planning it in advance",
+                 "その場の思いつきで・衝動的に",
+                 useCases: ["急に決めたことを話すとき", "計画なしで行動したと説明するとき"],
+                 examples: [
+                    ("We booked the trip on the spur of the moment.", "旅行はその場の思いつきで予約したんだ。"),
+                    ("I said yes on the spur of the moment.", "ついその場のノリでOKしちゃった。")
+                 ], ipa: "/ɒn ðə ˌspɜːr əv ðə ˈməʊmənt/"),
+            make("no spoilers", "used to ask someone not to tell you what happens in a film, series or book",
+                 "ネタバレしないで",
+                 useCases: ["まだ観ていないドラマや映画の話になったとき", "相手に結末を言わないよう頼むとき"],
+                 examples: [
+                    ("I haven't finished it yet, so no spoilers!", "まだ見終わってないから、ネタバレなしでね！"),
+                    ("No spoilers, but the ending is brilliant.", "ネタバレはしないけど、ラストが最高だよ。")
+                 ], ipa: "/nəʊ ˈspɔɪləz/"),
+            make("cram", "to study a lot in a short time just before an exam",
+                 "一夜漬けで勉強する・詰め込み勉強する",
+                 useCases: ["試験直前に慌てて勉強していると言うとき", "学生時代の勉強法を話すとき"],
+                 examples: [
+                    ("I was up all night cramming for my exam.", "試験のために徹夜で詰め込み勉強してた。"),
+                    ("Cramming never really works for me.", "一夜漬けって私には全然効かないんだよね。")
+                 ], ipa: "/kræm/"),
+            make("corner shop", "a small local shop that sells food, drinks and everyday items (US: convenience store)",
+                 "近所の小さな商店・コンビニ的な店",
+                 useCases: ["ちょっとした買い物に行くとき", "近所の店について話すとき"],
+                 examples: [
+                    ("I'm just popping to the corner shop for some milk.", "ちょっと近くの店に牛乳買いに行ってくるね。"),
+                    ("The corner shop is open till late.", "角の店は夜遅くまで開いてるよ。")
+                 ], ipa: "/ˌkɔːnə ˈʃɒp/"),
+            make("declutter", "to get rid of things you don't need so that a place is tidier",
+                 "（不要な物を処分して）片付ける・断捨離する",
+                 useCases: ["部屋や家を整理するとき", "引っ越しや大掃除の話をするとき"],
+                 examples: [
+                    ("I spent the weekend decluttering my wardrobe.", "週末はクローゼットの断捨離をしてたよ。"),
+                    ("We really need to declutter before we move.", "引っ越し前にちゃんと物を減らさないと。")
+                 ], ipa: "/ˌdiːˈklʌtə/"),
+            make("clear out", "to empty a room, cupboard, etc. by removing things you don't want",
+                 "（部屋・物置などを）片付けて空にする",
+                 useCases: ["物置や引き出しを整理するとき", "不要品を処分するとき"],
+                 examples: [
+                    ("I need to clear out the garage this weekend.", "今週末はガレージを片付けなきゃ。"),
+                    ("We finally cleared out the spare room.", "やっと空き部屋を片付けたよ。")
+                 ], ipa: "/ˌklɪər ˈaʊt/"),
+            make("hand luggage", "small bags that you can take with you onto a plane (US: carry-on)",
+                 "機内持ち込み手荷物",
+                 useCases: ["飛行機の荷物について話すとき", "空港で荷物の確認をするとき"],
+                 examples: [
+                    ("I'm only taking hand luggage this time.", "今回は機内持ち込みの荷物だけにするよ。"),
+                    ("Is this small enough for hand luggage?", "これって機内持ち込みできるサイズかな？")
+                 ], ipa: "/ˈhænd ˌlʌɡɪdʒ/"),
+            make("travel light", "to travel with very little luggage",
+                 "身軽に旅行する・荷物を少なくして旅する",
+                 useCases: ["旅行の荷造りについて話すとき", "荷物が少ない理由を説明するとき"],
+                 examples: [
+                    ("I always try to travel light.", "旅行はいつもなるべく身軽にしてるんだ。"),
+                    ("Travel light — the hotel has everything you need.", "荷物は少なくていいよ、ホテルに全部あるから。")
+                 ], ipa: "/ˌtrævl ˈlaɪt/"),
+            make("unpack", "to take things out of a suitcase or bag after a trip or move",
+                 "荷ほどきする・荷物を出す",
+                 useCases: ["旅行や引っ越しから帰ってきたとき", "まだ荷物を片付けていないと言うとき"],
+                 examples: [
+                    ("I still haven't unpacked from my holiday.", "休暇から戻ってまだ荷ほどきしてないんだ。"),
+                    ("Let's unpack and then go out for dinner.", "荷物を出したら夕飯食べに行こう。")
+                 ], ipa: "/ʌnˈpæk/"),
+            make("road trip", "a long journey by car, usually for fun with friends or family",
+                 "車での長距離旅行・ドライブ旅行",
+                 useCases: ["友達や家族との旅行計画を話すとき", "車で旅した思い出を話すとき"],
+                 examples: [
+                    ("We're going on a road trip along the coast this summer.", "この夏は海岸沿いをドライブ旅行するんだ。"),
+                    ("Road trips are much more fun with good music.", "ドライブ旅行はいい音楽があるとずっと楽しいよね。")
+                 ], ipa: "/ˈrəʊd trɪp/"),
+            make("dress code", "rules about what clothes people should wear at a place or event",
+                 "服装規定・ドレスコード",
+                 useCases: ["パーティーやレストランの服装を確認するとき", "職場の服装ルールを話すとき"],
+                 examples: [
+                    ("What's the dress code for the wedding?", "結婚式のドレスコードってどんな感じ？"),
+                    ("There's no dress code at our office.", "うちの職場は服装自由だよ。")
+                 ], ipa: "/ˈdres kəʊd/"),
+            make("landlord", "a person who owns a house or flat and rents it to you",
+                 "大家さん・家主",
+                 useCases: ["賃貸の家のトラブルを話すとき", "家賃や修理について話すとき"],
+                 examples: [
+                    ("I've asked my landlord to fix the boiler.", "大家さんにボイラーの修理を頼んだよ。"),
+                    ("Our landlord is really nice, actually.", "うちの大家さん、実はすごくいい人なんだ。")
+                 ], ipa: "/ˈlændlɔːd/"),
+            make("what are you up to?", "a friendly way to ask what someone is doing now or what their plans are",
+                 "何してるの？・何か予定ある？",
+                 useCases: ["友達にメッセージや電話で声をかけるとき", "週末の予定を聞くとき"],
+                 examples: [
+                    ("Hey, what are you up to this weekend?", "ねえ、今週末は何するの？"),
+                    ("What are you up to? Fancy a coffee?", "今何してる？コーヒーでもどう？")
+                 ], ipa: "/ˌwɒt ə juː ˈʌp tuː/"),
+            make("box set", "a complete series of a TV show, often watched one episode after another",
+                 "（ドラマの）シリーズ全話・一気見用のシリーズ",
+                 useCases: ["家で過ごす予定を話すとき", "ハマっているドラマについて話すとき"],
+                 examples: [
+                    ("We spent the whole weekend watching a box set.", "週末ずっとドラマを一気見してたよ。"),
+                    ("Got any good box sets to recommend?", "おすすめのドラマシリーズある？")
+                 ], ipa: "/ˈbɒks set/"),
+            make("changing room", "a room in a shop where you try on clothes, or where you change for sport (US: fitting room / locker room)",
+                 "試着室・更衣室",
+                 useCases: ["服屋で試着するとき", "ジムやプールで着替える場所を聞くとき"],
+                 examples: [
+                    ("Excuse me, where are the changing rooms?", "すみません、試着室はどこですか？"),
+                    ("I left my towel in the changing room.", "更衣室にタオル忘れてきちゃった。")
+                 ], ipa: "/ˈtʃeɪndʒɪŋ ruːm/"),
         ]
     }
     private static var britishColloquial145: [Word] {
