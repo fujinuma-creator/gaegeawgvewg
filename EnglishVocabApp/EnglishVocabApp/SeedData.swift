@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -33992,6 +33992,115 @@ enum SeedData {
                     ("Is that to eat in or take away?", "店内でお召し上がりですか、お持ち帰りですか？"),
                     ("Let's just eat in tonight — I'm shattered.", "今夜は家で食べよう。もうクタクタだよ。")
                  ], ipa: "/ˈiːt ˈɪn/"),
+        ]
+    }
+    private static var britishColloquial157: [Word] {
+        [
+            make("take part in", "to be involved in an activity or event together with other people",
+                 "〜に参加する",
+                 useCases: ["イベントや大会への参加を話すとき", "活動に加わるよう誘うとき"],
+                 examples: [
+                    ("Are you taking part in the charity run this year?", "今年のチャリティーランに参加する？"),
+                    ("Everyone took part in the quiz — it was a laugh.", "みんなクイズに参加して、すごく楽しかったよ。")
+                 ], ipa: "/ˈteɪk ˈpɑːt ɪn/"),
+            make("be bound to", "to be very likely or certain to happen",
+                 "きっと〜する・〜するに決まっている",
+                 useCases: ["ほぼ確実に起こることを言うとき", "相手を安心させるとき"],
+                 examples: [
+                    ("Don't worry, you're bound to find something soon.", "大丈夫、きっとすぐ何か見つかるよ。"),
+                    ("It's bound to rain if we don't take umbrellas.", "傘を持っていかなかったら絶対雨が降るよ。")
+                 ], ipa: "/biː ˈbaʊnd tə/"),
+            make("be likely to", "to be probably going to happen or do something",
+                 "〜しそうだ・〜する可能性が高い",
+                 useCases: ["見込みや予想を話すとき", "起こりそうなことを伝えるとき"],
+                 examples: [
+                    ("Traffic is likely to be bad on Friday evening.", "金曜の夜は道が混みそうだね。"),
+                    ("He's not likely to say no if you ask nicely.", "丁寧に頼めば彼は断らないと思うよ。")
+                 ], ipa: "/biː ˈlaɪkli tə/"),
+            make("back someone up", "to support someone or say that what they are saying is true",
+                 "（人を）支持する・味方する・裏付ける",
+                 useCases: ["話し合いで味方してほしいとき", "相手の発言を裏付けるとき"],
+                 examples: [
+                    ("Thanks for backing me up in the meeting.", "会議で味方してくれてありがとう。"),
+                    ("Ask Tom — he'll back me up on this.", "トムに聞いてみて、彼も同じこと言うから。")
+                 ], ipa: "/ˈbæk ˈsʌmwʌn ˈʌp/"),
+            make("give something back", "to return something to the person who owns it or gave it to you",
+                 "（物を）返す",
+                 useCases: ["借りた物を返すとき", "返してほしいと頼むとき"],
+                 examples: [
+                    ("I'll give you your charger back tomorrow.", "充電器、明日返すね。"),
+                    ("Can you give me my pen back when you're done?", "使い終わったらペン返してくれる？")
+                 ], ipa: "/ˈɡɪv ˈsʌmθɪŋ ˈbæk/"),
+            make("give away", "to give something to someone for free, usually because you no longer want it",
+                 "（無料で）あげる・譲る",
+                 useCases: ["不要な物を人に譲るとき", "無料配布について話すとき"],
+                 examples: [
+                    ("I'm giving away my old sofa if you want it.", "古いソファ手放すんだけど、欲しかったらあげるよ。"),
+                    ("They were giving away free samples at the station.", "駅で無料サンプルを配ってたよ。")
+                 ], ipa: "/ˈɡɪv əˈweɪ/"),
+            make("keep track of", "to make sure you know what is happening or where something is",
+                 "〜を把握しておく・記録しておく",
+                 useCases: ["お金や予定を管理するとき", "把握しきれないと言うとき"],
+                 examples: [
+                    ("I use an app to keep track of my spending.", "支出を把握するのにアプリを使ってるんだ。"),
+                    ("It's hard to keep track of everyone's birthdays.", "みんなの誕生日を覚えておくのって大変だよね。")
+                 ], ipa: "/ˈkiːp ˈtræk əv/"),
+            make("come back", "to return to a place",
+                 "戻ってくる・帰ってくる",
+                 useCases: ["戻る時間を伝えるとき", "また来てねと言うとき"],
+                 examples: [
+                    ("I'll come back in ten minutes.", "10分で戻ってくるね。"),
+                    ("You must come back and visit us again!", "また遊びに来てね！")
+                 ], ipa: "/ˈkʌm ˈbæk/"),
+            make("go back", "to return to a place you were at before",
+                 "（元の場所に）戻る・帰る",
+                 useCases: ["故郷や以前いた場所に帰るとき", "取りに戻るとき"],
+                 examples: [
+                    ("I'm going back to Spain for Christmas.", "クリスマスはスペインに帰るんだ。"),
+                    ("Hang on, I need to go back — I forgot my keys.", "ちょっと待って、鍵忘れたから戻らなきゃ。")
+                 ], ipa: "/ˈɡəʊ ˈbæk/"),
+            make("roughly", "approximately; not exactly",
+                 "だいたい・おおよそ",
+                 useCases: ["おおよその数や時間を伝えるとき", "ざっくり説明するとき"],
+                 examples: [
+                    ("It takes roughly an hour by train.", "電車でだいたい1時間かかるよ。"),
+                    ("Roughly how many people are coming?", "だいたい何人くらい来るの？")
+                 ], ipa: "/ˈrʌfli/"),
+            make("put on", "to dress yourself in clothes; to start a machine, music or the kettle",
+                 "（服を）着る・（音楽や電気を）つける",
+                 useCases: ["服や靴を身につけるとき", "音楽や家電をつけるとき"],
+                 examples: [
+                    ("Put a jumper on — it's freezing outside.", "セーター着て、外めちゃくちゃ寒いよ。"),
+                    ("Shall I put some music on?", "何か音楽かけようか？")
+                 ], ipa: "/ˈpʊt ˈɒn/"),
+            make("turn on", "to make a machine, light or device start working",
+                 "（電気・機械を）つける",
+                 useCases: ["家電や電気をつけるとき", "つけてと頼むとき"],
+                 examples: [
+                    ("Can you turn the heating on? I'm cold.", "暖房つけてくれる？寒いんだ。"),
+                    ("I turned my phone on and had ten missed calls.", "スマホの電源入れたら不在着信が10件あったよ。")
+                 ], ipa: "/ˈtɜːn ˈɒn/"),
+            make("turn off", "to make a machine, light or device stop working",
+                 "（電気・機械を）消す・切る",
+                 useCases: ["家電や電気を消すとき", "消し忘れを指摘するとき"],
+                 examples: [
+                    ("Don't forget to turn the lights off.", "電気消すの忘れないでね。"),
+                    ("Could you turn the TV off? I'm trying to work.", "テレビ消してくれる？仕事してるんだ。")
+                 ], ipa: "/ˈtɜːn ˈɒf/"),
+            make("get off", "to leave a bus, train or plane; to finish work",
+                 "（乗り物を）降りる・（仕事が）終わる",
+                 useCases: ["降りる駅や停留所を話すとき", "仕事が終わる時間を言うとき"],
+                 examples: [
+                    ("Get off at the next stop and I'll meet you there.", "次の停留所で降りて、そこで会おう。"),
+                    ("What time do you get off work today?", "今日は何時に仕事終わるの？")
+                 ], ipa: "/ˈɡet ˈɒf/"),
+            make("take out", "to remove something from a place; to take someone to a restaurant, etc. and pay",
+                 "取り出す・（ゴミを）出す・（人を）連れ出す",
+                 useCases: ["ゴミ出しや物を取り出すとき", "食事などに連れて行ってごちそうするとき"],
+                 examples: [
+                    ("Can you take the bins out tonight?", "今夜ゴミ出してくれる？"),
+                    ("I'm taking my mum out for lunch on Sunday.", "日曜はお母さんをランチに連れていくんだ。")
+                 ], ipa: "/ˈteɪk ˈaʊt/"),
         ]
     }
     private static var britishColloquial150: [Word] {
