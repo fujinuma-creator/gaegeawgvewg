@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -36281,6 +36281,115 @@ enum SeedData {
                     ("We're having a barbecue on Saturday — want to come? — Sounds fun!", "土曜にバーベキューするんだけど、来る？ — 楽しそう！"),
                     ("I'm learning to surf this summer. — Ooh, sounds fun!", "この夏サーフィン習うんだ。 — わあ、楽しそう！")
                  ], ipa: "/saʊndz fʌn/"),
+        ]
+    }
+    private static var britishColloquial179: [Word] {
+        [
+            make("i'm useless at", "used to say, often modestly or jokingly, that you are very bad at doing something",
+                 "〜が全然ダメなんだ・〜は苦手で",
+                 useCases: ["自分の苦手なことを軽く打ち明けるとき", "謙遜しながら手伝いを頼むとき"],
+                 examples: [
+                    ("I'm useless at remembering names, sorry — what was it again?", "名前を覚えるのが本当に苦手で、ごめん。何だったっけ？"),
+                    ("Can you help me with this form? I'm useless at paperwork.", "この書類手伝ってくれる？事務作業が全然ダメなんだ。")
+                 ], ipa: "/aɪm ˈjuːsləs æt/"),
+            make("i'll walk you through it", "used to offer to explain something to someone step by step",
+                 "順を追って説明するね",
+                 useCases: ["操作や手順を丁寧に教えるとき", "初めての人を安心させながら案内するとき"],
+                 examples: [
+                    ("Don't worry about the new system — I'll walk you through it tomorrow.", "新しいシステムは心配しないで。明日一緒に順を追って説明するよ。"),
+                    ("It looks complicated, but I'll walk you through it.", "複雑そうに見えるけど、一つずつ説明するね。")
+                 ], ipa: "/aɪl wɔːk juː θruː ɪt/"),
+            make("excuse the mess", "used when someone visits your home or office to apologise for it being untidy",
+                 "散らかっててごめんね",
+                 useCases: ["家に人を招き入れるとき", "片付いていない部屋や机を見られたとき"],
+                 examples: [
+                    ("Come in, come in — excuse the mess, we've only just moved in.", "どうぞ入って。散らかっててごめんね、引っ越してきたばかりなんだ。"),
+                    ("Excuse the mess, I wasn't expecting anyone today.", "散らかっててごめん、今日は誰も来ないと思ってて。")
+                 ], ipa: "/ɪkˈskjuːz ðə mes/"),
+            make("coming down with something", "starting to become ill, usually with a cold or flu",
+                 "何か（風邪など）ひきかけてる",
+                 useCases: ["体調が悪くなり始めたと伝えるとき", "予定を断る・早退する理由を言うとき"],
+                 examples: [
+                    ("I think I'm coming down with something — my throat's really sore.", "何かひきかけてるかも。喉がすごく痛いんだ。"),
+                    ("You look pale. Are you coming down with something?", "顔色悪いよ。風邪ひきかけてるんじゃない？")
+                 ], ipa: "/ˈkʌmɪŋ daʊn wɪð ˈsʌmθɪŋ/"),
+            make("since when?", "used to show surprise or doubt that something is true or has been happening",
+                 "いつから？・そんなのいつ決まったの？",
+                 useCases: ["意外な事実を聞いて驚いたとき", "相手の主張に軽く疑問を投げかけるとき"],
+                 examples: [
+                    ("Tom's vegetarian now. — Since when?", "トム、今ベジタリアンなんだって。 — いつから？"),
+                    ("Since when do you get up at six?", "いつから6時に起きるようになったの？")
+                 ], ipa: "/sɪns wen/"),
+            make("that's not fair", "used to complain that something is unjust or that someone has been treated badly",
+                 "それはずるい・不公平だよ",
+                 useCases: ["扱いが不公平だと感じたとき", "冗談っぽく相手をずるいと言うとき"],
+                 examples: [
+                    ("He got a bonus and we didn't? That's not fair.", "彼だけボーナスもらって私たちはなし？それは不公平だよ。"),
+                    ("You looked at my cards! That's not fair!", "私のカード見たでしょ！ずるい！")
+                 ], ipa: "/ðæts nɒt feə/"),
+            make("what's wrong?", "used to ask someone why they seem upset, worried or unwell",
+                 "どうしたの？・何かあった？",
+                 useCases: ["元気がない人を気遣うとき", "様子がおかしい理由を尋ねるとき"],
+                 examples: [
+                    ("You're very quiet today. What's wrong?", "今日はやけに静かだね。どうしたの？"),
+                    ("What's wrong? — Nothing, I'm just a bit tired.", "何かあった？ — 何でもないよ、ちょっと疲れてるだけ。")
+                 ], ipa: "/wɒts rɒŋ/"),
+            make("i'm full", "used to say you have eaten enough and cannot eat any more",
+                 "お腹いっぱい",
+                 useCases: ["おかわりや追加の料理を断るとき", "食事を終えたことを伝えるとき"],
+                 examples: [
+                    ("More pasta? — No thanks, I'm full.", "パスタもっとどう？ — ありがとう、もうお腹いっぱい。"),
+                    ("That was lovely, but I'm absolutely full.", "すごく美味しかったけど、もう本当にお腹いっぱい。")
+                 ], ipa: "/aɪm fʊl/"),
+            make("make yourself comfortable", "used to tell a guest to relax and feel at ease",
+                 "楽にしててね・くつろいでね",
+                 useCases: ["来客を部屋に通したとき", "相手を待たせる間に気遣うとき"],
+                 examples: [
+                    ("Have a seat and make yourself comfortable — I'll put the kettle on.", "座って楽にしてて。お湯沸かすね。"),
+                    ("Make yourself comfortable, the meeting will start in a few minutes.", "どうぞおくつろぎください。会議は数分後に始まります。")
+                 ], ipa: "/meɪk jɔːˈself ˈkʌmftəbl/"),
+            make("i'm not feeling well", "used to say politely that you feel ill",
+                 "体調がよくないんだ",
+                 useCases: ["休みや早退を伝えるとき", "誘いを断る理由を言うとき"],
+                 examples: [
+                    ("I'm not feeling well, so I'm going to work from home today.", "体調がよくないから、今日は在宅で仕事するね。"),
+                    ("Sorry, I'll skip the drinks tonight — I'm not feeling well.", "ごめん、今夜の飲みはパスするね。ちょっと体調悪くて。")
+                 ], ipa: "/aɪm nɒt ˈfiːlɪŋ wel/"),
+            make("you look great", "used to compliment someone on their appearance or how healthy they seem",
+                 "素敵だね・元気そうだね",
+                 useCases: ["久しぶりに会った人を褒めるとき", "服装や髪型を褒めるとき"],
+                 examples: [
+                    ("Wow, you look great! Have you been on holiday?", "わあ、素敵だね！休暇に行ってたの？"),
+                    ("You look great in that jacket.", "そのジャケット、すごく似合ってるよ。")
+                 ], ipa: "/juː lʊk ɡreɪt/"),
+            make("can i get you anything?", "used to offer a guest or customer something such as a drink or food",
+                 "何か持ってこようか？・何かお飲みになりますか？",
+                 useCases: ["来客に飲み物などを勧めるとき", "体調の悪い人を気遣うとき"],
+                 examples: [
+                    ("Can I get you anything? Tea, coffee, a glass of water?", "何か飲む？紅茶、コーヒー、お水とか？"),
+                    ("You poor thing. Can I get you anything from the shop?", "かわいそうに。お店で何か買ってこようか？")
+                 ], ipa: "/kən aɪ ɡet juː ˈeniθɪŋ/"),
+            make("trust me", "used to emphasise that what you are saying is true or that someone should follow your advice",
+                 "信じて・本当だって",
+                 useCases: ["自分の経験に基づいてアドバイスするとき", "言っていることが本当だと強調するとき"],
+                 examples: [
+                    ("Trust me, you don't want to drive into the city centre at rush hour.", "本当だって、ラッシュアワーに市内中心部に車で行くのはやめた方がいいよ。"),
+                    ("Try the fish here — trust me, it's amazing.", "ここの魚料理食べてみて。信じて、最高だから。")
+                 ], ipa: "/trʌst miː/"),
+            make("i doubt it", "used to say you think something is unlikely to be true or to happen",
+                 "どうかな・それはないと思う",
+                 useCases: ["可能性が低いと思うとき", "相手の期待に控えめに否定的な意見を言うとき"],
+                 examples: [
+                    ("Do you think the shop's still open? — I doubt it, it's nearly ten.", "お店まだ開いてるかな？ — どうかな、もう10時近いよ。"),
+                    ("Will he remember? — I doubt it.", "彼覚えてるかな？ — たぶん無理だと思う。")
+                 ], ipa: "/aɪ daʊt ɪt/"),
+            make("that's the whole point", "used to say that something is the main reason or purpose of what is being done",
+                 "それが肝心なところ・そこが狙いなんだよ",
+                 useCases: ["目的や意図を強調して説明するとき", "相手が要点を取り違えているとき"],
+                 examples: [
+                    ("It's supposed to be relaxing — that's the whole point of a holiday.", "リラックスするためでしょ。それが休暇の肝心なところだよ。"),
+                    ("But then nobody would know! — Exactly, that's the whole point.", "でもそれじゃ誰にも分からないよ！ — そう、そこが狙いなんだ。")
+                 ], ipa: "/ðæts ðə həʊl pɔɪnt/"),
         ]
     }
     private static var britishColloquial163: [Word] {
