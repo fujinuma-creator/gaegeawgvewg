@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -34973,6 +34973,115 @@ enum SeedData {
                     ("Just microwave it for two minutes.", "2分チンすればいいよ。"),
                     ("Is it OK if I microwave my lunch?", "お昼ご飯、レンジで温めてもいい？")
                  ], ipa: "/ˈmaɪkrəweɪv/"),
+        ]
+    }
+    private static var britishColloquial167: [Word] {
+        [
+            make("get to the point", "to stop talking around a subject and say the important thing directly",
+                 "要点を言う・本題に入る",
+                 useCases: ["前置きが長い人に本題を促すとき", "自分が手短に話すと伝えるとき"],
+                 examples: [
+                    ("I'll get straight to the point — we need more time.", "単刀直入に言うと、もっと時間が必要なんだ。"),
+                    ("Sorry, can you get to the point? I've got a meeting in five.", "ごめん、要点を言ってくれる？5分後に会議なんだ。")
+                 ], ipa: "/ɡet tə ðə pɔɪnt/"),
+            make("it's growing on me", "I am starting to like something more than I did at first",
+                 "だんだん好きになってきた",
+                 useCases: ["最初は微妙だった物・音楽・街などについて", "新しい髪型や服の感想"],
+                 examples: [
+                    ("I wasn't sure about the new flat at first, but it's growing on me.", "新しい部屋、最初は微妙だったけどだんだん好きになってきた。"),
+                    ("This song is really growing on me.", "この曲、だんだんハマってきた。")
+                 ], ipa: "/ɪts ˈɡrəʊɪŋ ɒn miː/"),
+            make("almost there", "very close to arriving or to finishing something",
+                 "もうすぐ着く・あと少し",
+                 useCases: ["待ち合わせで到着間近を伝えるとき", "作業がほぼ終わりのとき・励ますとき"],
+                 examples: [
+                    ("Almost there — two minutes away!", "もうすぐ着く、あと2分！"),
+                    ("Keep going, you're almost there!", "頑張って、あと少しだよ！")
+                 ], ipa: "/ˈɔːlməʊst ðeə/"),
+            make("back to normal", "returned to the usual state after a problem, change or busy period",
+                 "元通り・いつも通り",
+                 useCases: ["病気や忙しい時期の後", "トラブル後に状況が戻ったとき"],
+                 examples: [
+                    ("Things are finally back to normal after the move.", "引っ越しの後、やっといつも通りに戻ったよ。"),
+                    ("The trains should be back to normal by tomorrow.", "電車は明日には平常運転に戻るはず。")
+                 ], ipa: "/bæk tə ˈnɔːml/"),
+            make("if it helps", "used when offering something that might be useful or make a situation easier",
+                 "もし役に立つなら・よかったら",
+                 useCases: ["控えめに手助けや情報を申し出るとき", "相手を少し安心させたいとき"],
+                 examples: [
+                    ("I can drive you to the station, if it helps.", "よかったら駅まで車で送るよ。"),
+                    ("If it helps, I felt exactly the same in my first week.", "慰めになるか分からないけど、私も最初の週は全く同じ気持ちだったよ。")
+                 ], ipa: "/ɪf ɪt helps/"),
+            make("it's just that", "used to explain the real reason for something, often politely or hesitantly",
+                 "ただ〜ってだけで・実は〜なんだ",
+                 useCases: ["断る理由をやんわり説明するとき", "本音を遠慮がちに言うとき"],
+                 examples: [
+                    ("I'd love to come. It's just that I've got work early tomorrow.", "行きたいんだけど、ただ明日朝早くから仕事なんだ。"),
+                    ("It's not that I don't like it — it's just that it's a bit expensive.", "嫌いってわけじゃなくて、ただちょっと高いんだよね。")
+                 ], ipa: "/ɪts dʒʌst ðæt/"),
+            make("give my love to", "please pass on my warm wishes to someone (friendly, to family or close friends)",
+                 "〜によろしく伝えてね",
+                 useCases: ["別れ際に相手の家族へのよろしくを頼むとき", "電話やメッセージの締めくくり"],
+                 examples: [
+                    ("Give my love to your mum!", "お母さんによろしくね！"),
+                    ("Have a great trip, and give my love to everyone.", "いい旅を。みんなによろしく伝えてね。")
+                 ], ipa: "/ɡɪv maɪ lʌv tuː/"),
+            make("word gets around", "news or gossip spreads quickly from person to person",
+                 "噂（話）はすぐ広まる",
+                 useCases: ["小さな職場や町での噂話", "口コミで評判が広がるとき"],
+                 examples: [
+                    ("Word gets around fast in this office.", "この職場は噂が広まるのが早いよ。"),
+                    ("Once word got around, the café was packed every day.", "口コミで広まってから、そのカフェは毎日満席になった。")
+                 ], ipa: "/wɜːd ɡets əˈraʊnd/"),
+            make("you'll never guess", "used before telling someone surprising news",
+                 "聞いて、びっくりするよ・信じられないと思うけど",
+                 useCases: ["驚くニュースを話し始めるとき", "偶然の出来事を伝えるとき"],
+                 examples: [
+                    ("You'll never guess who I bumped into today!", "今日誰にばったり会ったと思う？絶対当たらないよ！"),
+                    ("You'll never guess what happened at work.", "職場で何があったか聞いてよ、びっくりするから。")
+                 ], ipa: "/juːl ˈnevə ɡes/"),
+            make("the feeling's mutual", "I feel the same way about you (can be warm or jokingly negative)",
+                 "こちらこそ・お互い様",
+                 useCases: ["好意や感謝を返すとき", "冗談で「こっちもだよ」と返すとき"],
+                 examples: [
+                    ("\"I've really enjoyed working with you.\" \"The feeling's mutual!\"", "「一緒に働けて本当に楽しかった」「こちらこそ！」"),
+                    ("He doesn't like me much, but the feeling's mutual.", "彼は私のことあまり好きじゃないけど、それはお互い様。")
+                 ], ipa: "/ðə ˈfiːlɪŋz ˈmjuːtʃuəl/"),
+            make("happy to help", "a friendly reply when someone thanks you for helping",
+                 "どういたしまして・お役に立ててうれしい",
+                 useCases: ["お礼を言われたときの返事", "仕事でも日常でも使える丁寧な返し"],
+                 examples: [
+                    ("\"Thanks so much for your help.\" \"Happy to help!\"", "「手伝ってくれて本当にありがとう」「どういたしまして！」"),
+                    ("Just let me know if you need anything else — happy to help.", "他に何かあったら言ってね、喜んで手伝うよ。")
+                 ], ipa: "/ˈhæpi tə help/"),
+            make("I'll have the same", "I would like to order the same thing as the other person",
+                 "同じものをください",
+                 useCases: ["レストランやカフェで注文するとき", "パブで飲み物を頼むとき"],
+                 examples: [
+                    ("The fish sounds good. I'll have the same, please.", "魚料理いいね。私も同じものをお願いします。"),
+                    ("\"A flat white for me.\" \"I'll have the same.\"", "「私はフラットホワイトで」「同じのを」")
+                 ], ipa: "/aɪl hæv ðə seɪm/"),
+            make("order in", "to order food to be delivered to your home instead of cooking or going out",
+                 "出前（デリバリー）を頼む",
+                 useCases: ["料理する気力がない夜", "家で友達と過ごすとき"],
+                 examples: [
+                    ("I can't be bothered to cook. Shall we just order in?", "料理する気にならないや。デリバリーにしない？"),
+                    ("We ordered in pizza and watched a film.", "ピザを頼んで映画を観たよ。")
+                 ], ipa: "/ˈɔːdər ɪn/"),
+            make("still or sparkling?", "a question in restaurants asking whether you want plain water or fizzy water",
+                 "お水はガスなし、ガス入り？",
+                 useCases: ["ヨーロッパのレストランでよく聞かれる", "水を注文するとき"],
+                 examples: [
+                    ("\"Still or sparkling?\" \"Just tap water is fine, thanks.\"", "「お水はガスなしと炭酸入り、どちらに？」「水道水で大丈夫です」"),
+                    ("Could we get a bottle of sparkling water, please?", "炭酸水を1本いただけますか？")
+                 ], ipa: "/stɪl ɔː ˈspɑːklɪŋ/"),
+            make("another round", "another set of drinks bought for everyone in the group",
+                 "（全員分の）おかわり・もう一杯ずつ",
+                 useCases: ["パブや飲み会でもう一杯頼むとき", "まだ帰らずに飲み続けるか聞くとき"],
+                 examples: [
+                    ("Anyone fancy another round?", "みんな、もう一杯いく？"),
+                    ("One more round and then I'm heading home.", "あと一杯ずつ飲んだら帰るね。")
+                 ], ipa: "/əˈnʌðə raʊnd/"),
         ]
     }
     private static var britishColloquial163: [Word] {
