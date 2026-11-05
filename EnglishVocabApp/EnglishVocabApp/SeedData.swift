@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -35300,6 +35300,115 @@ enum SeedData {
                     ("There's a little market on Sundays — it's worth a look.", "日曜に小さなマーケットがあるんだ、一度行ってみる価値あるよ。"),
                     ("I haven't read the whole report, but it's worth a look.", "全部は読んでないけど、目を通す価値はあるよ。")
                  ], ipa: "/ɪts wɜːθ ə lʊk/"),
+        ]
+    }
+    private static var britishColloquial170: [Word] {
+        [
+            make("I was miles away", "used to say you were not paying attention because you were thinking about something else",
+                 "ぼーっとしてた・上の空だった",
+                 useCases: ["話しかけられて気づかなかったとき", "考え事をしていて聞き逃したとき"],
+                 examples: [
+                    ("Sorry, what did you say? I was miles away.", "ごめん、何て言った？ぼーっとしてた。"),
+                    ("You look like you were miles away just now.", "今、上の空って顔してたよ。")
+                 ], ipa: "/aɪ wɒz maɪlz əˈweɪ/"),
+            make("I wouldn't worry about it", "a friendly way of telling someone that something is not a problem",
+                 "気にしなくていいよ",
+                 useCases: ["相手が小さなミスを謝ってきたとき", "心配している人を安心させるとき"],
+                 examples: [
+                    ("A bit of coffee on the rug? I wouldn't worry about it, it's an old one.", "ラグにちょっとコーヒー？気にしなくていいよ、古いやつだから。"),
+                    ("Everyone makes mistakes in their first week. I wouldn't worry about it.", "最初の週は誰でもミスするよ。気にしなくていい。")
+                 ], ipa: "/aɪ ˈwʊdnt ˈwʌri əˈbaʊt ɪt/"),
+            make("I wouldn't bet on it", "used to say that you think something is unlikely to happen",
+                 "それはどうかな・あまり期待しないほうがいい",
+                 useCases: ["予定や約束が実現しそうにないとき", "楽観的な見方に疑問を示すとき"],
+                 examples: [
+                    ("The bus might be on time today, but I wouldn't bet on it.", "今日はバスが時間通りかもしれないけど、あまり期待はできないね。"),
+                    ("He says he'll pay me back next week, but I wouldn't bet on it.", "来週返すって言ってるけど、期待はしてないよ。")
+                 ], ipa: "/aɪ ˈwʊdnt bet ɒn ɪt/"),
+            make("whenever you're ready", "a polite way of telling someone they can start or come when they are prepared",
+                 "準備ができたらいつでもどうぞ",
+                 useCases: ["相手を急かさずに待つとき", "注文や発表を促すとき"],
+                 examples: [
+                    ("Take your time — order whenever you're ready.", "ごゆっくり、準備ができたらご注文どうぞ。"),
+                    ("The car's outside, so come down whenever you're ready.", "車は外にあるから、準備できたら降りてきて。")
+                 ], ipa: "/wenˈevə jɔː ˈredi/"),
+            make("you go first", "used to let someone else speak or do something before you",
+                 "お先にどうぞ・先に言って",
+                 useCases: ["二人同時に話し始めたとき", "順番を譲るとき"],
+                 examples: [
+                    ("Oh, sorry — you go first.", "あ、ごめん、先にどうぞ。"),
+                    ("I'm still deciding what to order, so you go first.", "まだ何にするか迷ってるから、先に頼んで。")
+                 ], ipa: "/juː ɡəʊ fɜːst/"),
+            make("I didn't sleep a wink", "used to say that you did not sleep at all",
+                 "一睡もできなかった",
+                 useCases: ["寝不足を説明するとき", "騒音や心配事で眠れなかったとき"],
+                 examples: [
+                    ("The neighbours were having a party — I didn't sleep a wink.", "隣がパーティーしてて、一睡もできなかったよ。"),
+                    ("I was so nervous about the interview I didn't sleep a wink.", "面接が緊張しすぎて一睡もできなかった。")
+                 ], ipa: "/aɪ ˈdɪdnt sliːp ə wɪŋk/"),
+            make("enough is enough", "used to say that something bad or annoying must stop now",
+                 "もういい加減にして・もう我慢の限界",
+                 useCases: ["我慢の限界を伝えるとき", "悪い習慣をやめる決意を示すとき"],
+                 examples: [
+                    ("He's been late every day this week. Enough is enough.", "今週毎日遅刻だよ。もう我慢の限界。"),
+                    ("Enough is enough — I'm cancelling that gym membership.", "もういいや、あのジムは解約する。")
+                 ], ipa: "/ɪˈnʌf ɪz ɪˈnʌf/"),
+            make("I'd go for", "used to say which option you would choose or recommend",
+                 "私なら〜にするかな",
+                 useCases: ["メニューを選ぶとき", "選択肢についてアドバイスするとき"],
+                 examples: [
+                    ("Everything looks good, but I think I'd go for the fish.", "全部おいしそうだけど、私は魚にするかな。"),
+                    ("If I were you, I'd go for the cheaper one.", "私だったら安い方にするね。")
+                 ], ipa: "/aɪd ɡəʊ fɔː/"),
+            make("I've locked myself out", "used to say you cannot get into your home or car because the keys are inside",
+                 "締め出されちゃった（鍵を中に置いてきた）",
+                 useCases: ["鍵を忘れて家に入れないとき", "家族や大家に助けを求めるとき"],
+                 examples: [
+                    ("Can you come home early? I've locked myself out.", "早く帰ってこれる？締め出されちゃった。"),
+                    ("I've locked myself out of the car — the keys are on the seat.", "車に鍵を閉じ込めちゃった。座席の上にあるのに。")
+                 ], ipa: "/aɪv lɒkt maɪˈself aʊt/"),
+            make("I've been up since", "used to say what time you got up, often to explain why you are tired",
+                 "〜時から起きてるんだ",
+                 useCases: ["疲れている理由を説明するとき", "早起きしたことを話すとき"],
+                 examples: [
+                    ("No wonder I'm tired — I've been up since five.", "疲れるわけだよ、5時から起きてるんだもん。"),
+                    ("The baby's been up since six, so we're all exhausted.", "赤ちゃんが6時から起きてて、みんなへとへと。")
+                 ], ipa: "/aɪv biːn ʌp sɪns/"),
+            make("it's a toss-up", "used to say that two choices are equally good and it is hard to decide",
+                 "どっちもどっちで決めがたい",
+                 useCases: ["二択で迷っているとき", "結果が予想できないとき"],
+                 examples: [
+                    ("Pizza or curry? It's a toss-up.", "ピザかカレーか、迷うなあ。"),
+                    ("It's a toss-up between the red one and the blue one.", "赤と青、どっちもいいから決められない。")
+                 ], ipa: "/ɪts ə ˈtɒs ʌp/"),
+            make("it's not like that", "used to say that someone has misunderstood a situation",
+                 "そういうのじゃないんだ・誤解だよ",
+                 useCases: ["関係や状況を誤解されたとき", "言い訳ではなく事情を説明するとき"],
+                 examples: [
+                    ("No, we're not dating — it's not like that. We're just friends.", "いや、付き合ってないよ、そういうのじゃない。ただの友達。"),
+                    ("I'm not ignoring you — it's not like that. I've just been really busy.", "無視してるわけじゃないんだ。本当に忙しかっただけ。")
+                 ], ipa: "/ɪts nɒt laɪk ðæt/"),
+            make("I'm not gonna lie", "used before saying something honestly, often something surprising or slightly embarrassing",
+                 "正直に言うと・ぶっちゃけ",
+                 useCases: ["本音を打ち明けるとき", "ちょっと意外な感想を言うとき"],
+                 examples: [
+                    ("I'm not gonna lie, I was a bit nervous before the meeting.", "正直、会議の前はちょっと緊張してた。"),
+                    ("Not gonna lie, that film was better than I expected.", "ぶっちゃけ、あの映画思ってたより良かった。")
+                 ], ipa: "/aɪm nɒt ˈɡɒnə laɪ/"),
+            make("I'm happy to", "used to say that you are willing to do something",
+                 "喜んで〜するよ・〜しても全然いいよ",
+                 useCases: ["手伝いを申し出るとき", "相手の提案に快く応じるとき"],
+                 examples: [
+                    ("I'm happy to drive if you're tired.", "疲れてるなら運転するよ。"),
+                    ("If nobody else wants to do it, I'm happy to.", "誰もやりたくないなら、私がやってもいいよ。")
+                 ], ipa: "/aɪm ˈhæpi tuː/"),
+            make("it's not worth the hassle", "used to say that something would cause more trouble than it is worth",
+                 "わざわざやるほどじゃない・面倒なだけ",
+                 useCases: ["手間に見合わないと判断したとき", "返品や手続きを諦めるとき"],
+                 examples: [
+                    ("I could return it, but honestly it's not worth the hassle.", "返品もできるけど、正直面倒なだけだよ。"),
+                    ("Driving into town on a Saturday? It's not worth the hassle.", "土曜に車で街中？わざわざ行くほどじゃないよ。")
+                 ], ipa: "/ɪts nɒt wɜːθ ðə ˈhæsl/"),
         ]
     }
     private static var britishColloquial163: [Word] {
