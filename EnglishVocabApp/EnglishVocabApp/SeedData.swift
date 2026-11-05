@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -35191,6 +35191,115 @@ enum SeedData {
                     ("Sorry, I had to take that call. Where were we?", "ごめん、電話に出なきゃいけなくて。どこまで話したっけ？"),
                     ("Okay, where were we? Oh yes, the holiday plans.", "えっと、どこまで話したっけ？あ、そう、休暇の計画だ。")
                  ], ipa: "/weə wɜː wiː/"),
+        ]
+    }
+    private static var britishColloquial169: [Word] {
+        [
+            make("it's not like you", "used to say that someone is behaving in a way that is unusual for them",
+                 "君らしくないね",
+                 useCases: ["友人の様子がいつもと違うとき", "相手の珍しい失敗を気遣うとき"],
+                 examples: [
+                    ("You forgot her birthday? That's not like you.", "彼女の誕生日を忘れたの？君らしくないね。"),
+                    ("It's not like you to be this quiet. Everything okay?", "こんなに静かなんて君らしくないね。大丈夫？")
+                 ], ipa: "/ɪts nɒt laɪk juː/"),
+            make("I'll believe it when I see it", "used to say you doubt that something will really happen",
+                 "実際に見るまでは信じないよ",
+                 useCases: ["約束や噂を疑うとき", "何度も裏切られた期待について話すとき"],
+                 examples: [
+                    ("He says he's going to start running every morning. I'll believe it when I see it.", "毎朝走るって彼は言ってるけど、見るまでは信じないね。"),
+                    ("They promised the trains would be on time from now on — I'll believe it when I see it.", "これからは電車が時間通りって言ってたけど、実際に見るまで信じないよ。")
+                 ], ipa: "/aɪl bɪˈliːv ɪt wen aɪ siː ɪt/"),
+            make("there's nothing to it", "used to say that something is very easy to do",
+                 "簡単だよ・大したことないよ",
+                 useCases: ["やり方を教えるとき", "初めての人を安心させるとき"],
+                 examples: [
+                    ("Making bread? There's nothing to it, honestly.", "パン作り？本当に簡単だよ。"),
+                    ("Let me show you how to set it up — there's nothing to it.", "設定の仕方を見せるよ、大したことないから。")
+                 ], ipa: "/ðeəz ˈnʌθɪŋ tuː ɪt/"),
+            make("it makes no difference", "used to say that something does not change the situation or your opinion",
+                 "どっちでも変わらない・関係ない",
+                 useCases: ["選択肢にこだわりがないとき", "状況が変わらないことを伝えるとき"],
+                 examples: [
+                    ("Friday or Saturday — it makes no difference to me.", "金曜でも土曜でも、私はどっちでもいいよ。"),
+                    ("Even if we leave now, it makes no difference. We'll still miss it.", "今出ても変わらないよ。どうせ間に合わない。")
+                 ], ipa: "/ɪt meɪks nəʊ ˈdɪfrəns/"),
+            make("go a long way", "to be very helpful or effective; to last a long time",
+                 "大いに役立つ・長持ちする",
+                 useCases: ["小さな気遣いの効果を語るとき", "お金や物が長持ちすることを言うとき"],
+                 examples: [
+                    ("A simple thank-you goes a long way.", "ちょっとした「ありがとう」が大きな効果を持つんだよ。"),
+                    ("A little of this sauce goes a long way.", "このソースは少しで十分だよ。")
+                 ], ipa: "/ɡəʊ ə lɒŋ weɪ/"),
+            make("is that too much to ask?", "used, often with mild frustration, to say that a request is reasonable",
+                 "それってそんなに無理なお願い？",
+                 useCases: ["ささやかな要求が通らずイラっとしたとき", "冗談まじりに不満を言うとき"],
+                 examples: [
+                    ("I just want one quiet evening. Is that too much to ask?", "静かな夜が一晩欲しいだけなの。そんなに無理なこと？"),
+                    ("Could people just put their cups in the dishwasher? Is that too much to ask?", "カップを食洗機に入れるくらいしてほしいよ。そんなに難しい？")
+                 ], ipa: "/ɪz ðæt tuː mʌtʃ tuː ɑːsk/"),
+            make("mind if I join you?", "a polite way of asking to sit with someone or take part in what they are doing",
+                 "ご一緒してもいい？",
+                 useCases: ["カフェや食堂で相席をお願いするとき", "会話や活動に加わりたいとき"],
+                 examples: [
+                    ("Mind if I join you? All the other tables are full.", "ご一緒してもいい？他の席が全部埋まってて。"),
+                    ("You're going for a walk? Mind if I join you?", "散歩行くの？一緒に行ってもいい？")
+                 ], ipa: "/maɪnd ɪf aɪ dʒɔɪn juː/"),
+            make("it's not for everyone", "used to say that some people will like something but others won't",
+                 "好みが分かれるよ・万人向けではない",
+                 useCases: ["癖のある食べ物や趣味を勧めるとき", "仕事や生活スタイルについて話すとき"],
+                 examples: [
+                    ("Blue cheese is great, but it's not for everyone.", "ブルーチーズは美味しいけど、好みが分かれるね。"),
+                    ("Working from home suits me, but it's not for everyone.", "在宅勤務は私には合ってるけど、誰にでも向いてるわけじゃない。")
+                 ], ipa: "/ɪts nɒt fər ˈevriwʌn/"),
+            make("don't hold your breath", "used to tell someone not to expect something to happen soon, or at all",
+                 "期待しないほうがいいよ",
+                 useCases: ["実現しそうにないことについて話すとき", "遅い対応を皮肉るとき"],
+                 examples: [
+                    ("He said he'd call back today, but don't hold your breath.", "今日折り返すって言ってたけど、期待しないほうがいいよ。"),
+                    ("A pay rise this year? Don't hold your breath.", "今年昇給？あまり期待しないほうがいいね。")
+                 ], ipa: "/dəʊnt həʊld jə breθ/"),
+            make("last-minute", "done or happening at the latest possible time",
+                 "直前の・ギリギリの",
+                 useCases: ["急な予定変更について話すとき", "旅行や買い物の駆け込みについて"],
+                 examples: [
+                    ("We booked a last-minute trip to Lisbon.", "直前にリスボン旅行を予約したんだ。"),
+                    ("Sorry for the last-minute change of plan.", "ギリギリで予定を変えてごめんね。")
+                 ], ipa: "/ˌlɑːst ˈmɪnɪt/"),
+            make("you'll get there", "used to encourage someone who is learning or struggling with something",
+                 "そのうちできるようになるよ",
+                 useCases: ["練習中の人を励ますとき", "なかなか進まない人を応援するとき"],
+                 examples: [
+                    ("Your English is improving loads — you'll get there.", "英語すごく上達してるよ、そのうちできるようになるって。"),
+                    ("Don't worry about failing the test. You'll get there.", "試験に落ちたこと気にしないで。きっとできるようになるよ。")
+                 ], ipa: "/juːl ɡet ðeə/"),
+            make("in fairness", "used to add something that makes a criticism seem less strong or more balanced",
+                 "公平に言えば・まあ正直なところ",
+                 useCases: ["誰かを少しかばうとき", "批判にバランスを持たせるとき"],
+                 examples: [
+                    ("The food was slow, but in fairness, they were really busy.", "料理は遅かったけど、公平に言えばすごく混んでたからね。"),
+                    ("In fairness, he did warn us it might rain.", "まあ正直、雨かもって彼は言ってたしね。")
+                 ], ipa: "/ɪn ˈfeənəs/"),
+            make("it's too early to say", "used to say you cannot judge something yet because not enough time has passed",
+                 "まだ何とも言えない",
+                 useCases: ["結果がまだ分からないとき", "新しい仕事や関係の感想を聞かれたとき"],
+                 examples: [
+                    ("How's the new job? — It's too early to say, really.", "新しい仕事どう？—まだ何とも言えないかな。"),
+                    ("It's too early to say whether the treatment is working.", "治療が効いているかはまだ分からないね。")
+                 ], ipa: "/ɪts tuː ˈɜːli tə seɪ/"),
+            make("sounds about right", "used to say that something seems correct or is what you expected",
+                 "そんなもんだね・だいたい合ってる",
+                 useCases: ["金額や時間を確認するとき", "予想通りの話に相槌を打つとき"],
+                 examples: [
+                    ("Forty quid for the taxi? Yeah, sounds about right.", "タクシー40ポンド？うん、そんなもんだね。"),
+                    ("He was late again? Sounds about right.", "彼また遅刻したの？まあ、そうだろうね。")
+                 ], ipa: "/saʊndz əˈbaʊt raɪt/"),
+            make("it's worth a look", "used to recommend that someone sees or checks something",
+                 "一度見てみる価値はあるよ",
+                 useCases: ["店や場所、映画を勧めるとき", "情報や資料を参考に勧めるとき"],
+                 examples: [
+                    ("There's a little market on Sundays — it's worth a look.", "日曜に小さなマーケットがあるんだ、一度行ってみる価値あるよ。"),
+                    ("I haven't read the whole report, but it's worth a look.", "全部は読んでないけど、目を通す価値はあるよ。")
+                 ], ipa: "/ɪts wɜːθ ə lʊk/"),
         ]
     }
     private static var britishColloquial163: [Word] {
