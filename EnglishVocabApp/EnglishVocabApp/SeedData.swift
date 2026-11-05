@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -34864,6 +34864,115 @@ enum SeedData {
                     ("Can you send it over when you get a chance?", "時間あるときに送ってくれる？"),
                     ("I've got the photos — I'll send them over tonight.", "写真あるから今夜送るね。")
                  ], ipa: "/send ɪt ˈəʊvə/"),
+        ]
+    }
+    private static var britishColloquial166: [Word] {
+        [
+            make("hold the door", "to keep a door open so that someone else can go through",
+                 "ドアを押さえておく",
+                 useCases: ["後ろの人のためにドアを開けておくとき", "荷物で手がふさがっていて頼むとき"],
+                 examples: [
+                    ("Could you hold the door for me? My hands are full.", "ドア押さえててくれる？手がふさがってて。"),
+                    ("Thanks for holding the door!", "ドア押さえてくれてありがとう！")
+                 ], ipa: "/həʊld ðə dɔː/"),
+            make("pay the bills", "to pay for regular costs such as rent, electricity and gas; to earn enough to live",
+                 "生活費（光熱費など）を払う・食べていく",
+                 useCases: ["光熱費や家賃の支払いの話", "仕事が生活のためだと言うとき"],
+                 examples: [
+                    ("It's not my dream job, but it pays the bills.", "夢の仕事じゃないけど、生活はしていけるよ。"),
+                    ("I need to pay the bills before the end of the month.", "月末までに光熱費とか払わないと。")
+                 ], ipa: "/peɪ ðə bɪlz/"),
+            make("charge my phone", "to put electricity into your phone's battery",
+                 "スマホを充電する",
+                 useCases: ["カフェや友人宅で充電させてもらうとき", "バッテリー残量の話"],
+                 examples: [
+                    ("Is there anywhere I can charge my phone?", "どこかでスマホ充電できるところある？"),
+                    ("I forgot to charge my phone last night.", "昨日の夜スマホ充電し忘れた。")
+                 ], ipa: "/tʃɑːdʒ maɪ fəʊn/"),
+            make("my phone's about to die", "my phone battery is almost empty",
+                 "スマホの充電が切れそう",
+                 useCases: ["電話やメッセージを急いで切り上げるとき", "充電器を借りたいとき"],
+                 examples: [
+                    ("I'll be quick — my phone's about to die.", "手短に言うね、充電切れそうなんだ。"),
+                    ("Sorry I didn't reply, my phone died.", "返信できなくてごめん、充電が切れちゃって。")
+                 ], ipa: "/maɪ fəʊnz əˈbaʊt tə daɪ/"),
+            make("have a temperature", "to have a body temperature higher than normal; to have a fever (British)",
+                 "熱がある",
+                 useCases: ["体調不良を伝えるとき", "子どもや家族の具合を話すとき"],
+                 examples: [
+                    ("I think I've got a bit of a temperature.", "ちょっと熱がある気がする。"),
+                    ("She had a temperature, so she stayed off school.", "熱があったから、あの子は学校を休んだよ。")
+                 ], ipa: "/hæv ə ˈtemprətʃə/"),
+            make("a blocked nose", "a nose that is full so you can't breathe through it easily (British)",
+                 "鼻づまり",
+                 useCases: ["風邪や花粉症の症状を言うとき", "薬局で症状を説明するとき"],
+                 examples: [
+                    ("I've had a blocked nose all week.", "一週間ずっと鼻がつまってるんだ。"),
+                    ("Have you got anything for a blocked nose?", "鼻づまりに効く薬ありますか？")
+                 ], ipa: "/ə blɒkt nəʊz/"),
+            make("off-peak", "at a quieter time when it is cheaper, especially for trains and travel",
+                 "オフピーク（混雑時以外・割安な時間帯）",
+                 useCases: ["電車の切符を買うとき", "安く移動する時間帯を話すとき"],
+                 examples: [
+                    ("If we wait till after half nine, we can get off-peak tickets.", "9時半過ぎまで待てばオフピーク切符が買えるよ。"),
+                    ("It's much cheaper to travel off-peak.", "混雑時間を避けたほうがずっと安いよ。")
+                 ], ipa: "/ˌɒf ˈpiːk/"),
+            make("on leave", "officially away from work for a period, e.g. on holiday or for family reasons",
+                 "休暇中で・休職中で",
+                 useCases: ["同僚の不在を伝えるとき", "育休や長期休暇の話"],
+                 examples: [
+                    ("Sarah's on leave until Monday.", "サラは月曜まで休暇中です。"),
+                    ("He's on paternity leave at the moment.", "彼は今、育休中なんだ。")
+                 ], ipa: "/ɒn liːv/"),
+            make("roadworks", "repairs being done to a road, which often cause delays (British)",
+                 "道路工事",
+                 useCases: ["遅刻の理由を説明するとき", "渋滞や迂回の話"],
+                 examples: [
+                    ("Sorry I'm late — there were roadworks everywhere.", "遅れてごめん、あちこちで道路工事してて。"),
+                    ("Avoid the high street, there are roadworks.", "大通りは避けて、工事中だから。")
+                 ], ipa: "/ˈrəʊdwɜːks/"),
+            make("spare key", "an extra key kept in case the main one is lost",
+                 "合鍵・スペアキー",
+                 useCases: ["鍵をなくしたとき", "家族や隣人に鍵を預けるとき"],
+                 examples: [
+                    ("My neighbour's got a spare key, luckily.", "運よく隣の人が合鍵を持ってるんだ。"),
+                    ("Can I leave a spare key with you while I'm away?", "留守の間、合鍵を預かってもらえる？")
+                 ], ipa: "/speə kiː/"),
+            make("load the dishwasher", "to put dirty plates and cups into the dishwasher",
+                 "食洗機に食器を入れる",
+                 useCases: ["家事の分担を話すとき", "食後の片付けを手伝うとき"],
+                 examples: [
+                    ("I'll load the dishwasher if you clear the table.", "テーブル片付けてくれたら、食洗機に入れるよ。"),
+                    ("Can you empty the dishwasher before you load it?", "入れる前に食洗機の中を出してくれる？")
+                 ], ipa: "/ləʊd ðə ˈdɪʃwɒʃə/"),
+            make("what's for dinner?", "a common question asking what meal is being cooked or planned",
+                 "晩ご飯なに？",
+                 useCases: ["家族やルームメイトに夕食を聞くとき", "帰宅したときの会話"],
+                 examples: [
+                    ("I'm starving — what's for dinner?", "お腹ペコペコ、晩ご飯なに？"),
+                    ("What's for dinner tonight? Shall we just get a takeaway?", "今夜の晩ご飯どうする？テイクアウトにしちゃう？")
+                 ], ipa: "/wɒts fə ˈdɪnə/"),
+            make("wrap up warm", "to put on warm clothes because it is cold outside (British)",
+                 "暖かくして出かける・厚着する",
+                 useCases: ["寒い日に相手を気遣うとき", "外出前の一言"],
+                 examples: [
+                    ("It's freezing out there, so wrap up warm.", "外すごく寒いから、暖かくしていってね。"),
+                    ("Make sure the kids wrap up warm.", "子どもたちにちゃんと厚着させてね。")
+                 ], ipa: "/ræp ʌp wɔːm/"),
+            make("do the laundry", "to wash clothes, sheets and towels",
+                 "洗濯をする",
+                 useCases: ["週末の家事の話", "予定を断る軽い理由として"],
+                 examples: [
+                    ("I spent Sunday doing the laundry and cleaning.", "日曜は洗濯と掃除で終わったよ。"),
+                    ("Whose turn is it to do the laundry?", "洗濯するの誰の番？")
+                 ], ipa: "/duː ðə ˈlɔːndri/"),
+            make("microwave", "to heat or cook food in a microwave oven",
+                 "電子レンジで温める・チンする",
+                 useCases: ["残り物を温めるとき", "職場や家で食事を準備するとき"],
+                 examples: [
+                    ("Just microwave it for two minutes.", "2分チンすればいいよ。"),
+                    ("Is it OK if I microwave my lunch?", "お昼ご飯、レンジで温めてもいい？")
+                 ], ipa: "/ˈmaɪkrəweɪv/"),
         ]
     }
     private static var britishColloquial163: [Word] {
