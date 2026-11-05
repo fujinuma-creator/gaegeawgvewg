@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -36390,6 +36390,115 @@ enum SeedData {
                     ("It's supposed to be relaxing — that's the whole point of a holiday.", "リラックスするためでしょ。それが休暇の肝心なところだよ。"),
                     ("But then nobody would know! — Exactly, that's the whole point.", "でもそれじゃ誰にも分からないよ！ — そう、そこが狙いなんだ。")
                  ], ipa: "/ðæts ðə həʊl pɔɪnt/"),
+        ]
+    }
+    private static var britishColloquial185: [Word] {
+        [
+            make("easy-going", "relaxed and calm, not easily upset or worried",
+                 "おおらかな・のんびりした・気さくな",
+                 useCases: ["人の性格を褒めるとき", "職場や旅行の雰囲気を説明するとき"],
+                 examples: [
+                    ("My flatmate's really easy-going — nothing bothers her.", "ルームメイトは本当におおらかで、何も気にしないんだ。"),
+                    ("I'm pretty easy-going about where we eat.", "どこで食べるかは特にこだわらないよ。")
+                 ], ipa: "/ˌiːzi ˈɡəʊɪŋ/"),
+            make("rain or shine", "whatever the weather or situation; no matter what",
+                 "雨でも晴れでも・何があっても",
+                 useCases: ["予定を必ず実行すると伝えるとき", "習慣を説明するとき"],
+                 examples: [
+                    ("The market's on every Saturday, rain or shine.", "その市場は雨でも晴れでも毎週土曜日に開いてるよ。"),
+                    ("I walk the dog every morning, rain or shine.", "天気に関係なく毎朝犬の散歩をしてる。")
+                 ], ipa: "/reɪn ɔː ʃaɪn/"),
+            make("i'm just browsing", "a polite way to tell a shop assistant you are only looking, not ready to buy",
+                 "見ているだけです",
+                 useCases: ["お店で店員に声をかけられたとき", "買うか決めていないとき"],
+                 examples: [
+                    ("Can I help you with anything? — I'm just browsing, thanks.", "何かお探しですか？ — 見ているだけです、ありがとう。"),
+                    ("I'm just browsing for now, but I might come back later.", "今は見ているだけですが、また来るかもしれません。")
+                 ], ipa: "/aɪm dʒʌst ˈbraʊzɪŋ/"),
+            make("i'll make a note of it", "used to say you will write something down or remember it for later",
+                 "メモしておくね・覚えておくよ",
+                 useCases: ["予定や依頼を受けたとき", "相手の好みや情報を覚えておくと伝えるとき"],
+                 examples: [
+                    ("The meeting's moved to Thursday. — Thanks, I'll make a note of it.", "会議は木曜日に変更になったよ。 — ありがとう、メモしておく。"),
+                    ("You don't eat mushrooms? I'll make a note of it.", "キノコ食べないの？覚えておくね。")
+                 ], ipa: "/aɪl meɪk ə nəʊt ɒv ɪt/"),
+            make("you've outdone yourself", "used to praise someone for doing something even better than usual",
+                 "今回は一段とすごいね・腕を上げたね",
+                 useCases: ["料理や手作りのものを褒めるとき", "仕事の出来がいつも以上に良いとき"],
+                 examples: [
+                    ("This dinner is amazing — you've outdone yourself!", "この夕食すごいよ。今回は一段と腕を上げたね！"),
+                    ("The presentation was brilliant. You've really outdone yourself.", "プレゼン素晴らしかった。本当にいつも以上だったね。")
+                 ], ipa: "/juːv aʊtˈdʌn jɔːˈself/"),
+            make("funny you should say that", "used when someone mentions something you were just thinking about or that just happened",
+                 "ちょうどその話をしようと思ってた・偶然だね",
+                 useCases: ["相手の話題が自分の考えとちょうど重なったとき", "タイミングの偶然に驚いたとき"],
+                 examples: [
+                    ("We should go to Spain sometime. — Funny you should say that, I've just booked flights!", "いつかスペイン行きたいね。 — ちょうど今航空券取ったところなんだよ！"),
+                    ("Have you heard from Sam? — Funny you should say that, he texted this morning.", "サムから連絡あった？ — 偶然だね、今朝メッセージ来たよ。")
+                 ], ipa: "/ˈfʌni juː ʃʊd seɪ ðæt/"),
+            make("you don't say", "used to show surprise, or jokingly to show something is obvious",
+                 "へえ、そうなんだ・まさか（皮肉で「知ってたよ」の意味にも）",
+                 useCases: ["驚きを表すとき", "当たり前のことを言われて冗談っぽく返すとき"],
+                 examples: [
+                    ("She's moving to Paris next month. — You don't say!", "彼女、来月パリに引っ越すんだって。 — へえ、そうなんだ！"),
+                    ("It's raining again. — You don't say! It's been raining all week.", "また雨だよ。 — でしょうね！一週間ずっと降ってるもん。")
+                 ], ipa: "/juː dəʊnt seɪ/"),
+            make("i'm rubbish at", "an informal way to say you are very bad at something",
+                 "〜が全然ダメ・〜が苦手",
+                 useCases: ["自分の苦手なことを謙遜して言うとき", "誘いを軽く断るとき"],
+                 examples: [
+                    ("I'm rubbish at remembering birthdays.", "誕生日を覚えるのが本当に苦手なんだ。"),
+                    ("Don't ask me to sing — I'm rubbish at it!", "歌わせないで、全然ダメなんだから！")
+                 ], ipa: "/aɪm ˈrʌbɪʃ æt/"),
+            make("bang on time", "exactly on time",
+                 "時間ぴったりに",
+                 useCases: ["人や電車が時間通りに来たとき", "時間厳守を褒めるとき"],
+                 examples: [
+                    ("The train arrived bang on time for once.", "珍しく電車が時間ぴったりに着いた。"),
+                    ("You're bang on time — come in!", "時間ぴったりだね、入って！")
+                 ], ipa: "/bæŋ ɒn taɪm/"),
+            make("i can't make up my mind", "used to say you cannot decide between options",
+                 "決められない・迷ってる",
+                 useCases: ["メニューや買い物で迷っているとき", "大きな決断に悩んでいるとき"],
+                 examples: [
+                    ("I can't make up my mind — the pasta or the risotto?", "決められないな。パスタにするかリゾットにするか。"),
+                    ("I still can't make up my mind about the job offer.", "その仕事のオファー、まだ決めかねてるんだ。")
+                 ], ipa: "/aɪ kɑːnt meɪk ʌp maɪ maɪnd/"),
+            make("it's dead quiet", "an informal way to say a place is very quiet or not busy at all",
+                 "すごく静か・ガラガラだ",
+                 useCases: ["お店や街に人がいないとき", "職場が暇なとき"],
+                 examples: [
+                    ("It's dead quiet in the office today — everyone's on holiday.", "今日はオフィスがすごく静か。みんな休暇中なんだ。"),
+                    ("The pub's usually packed, but it's dead quiet tonight.", "そのパブはいつも満員なのに、今夜はガラガラだね。")
+                 ], ipa: "/ɪts ded ˈkwaɪət/"),
+            make("what a coincidence!", "used when two things happen at the same time by chance in a surprising way",
+                 "なんて偶然！",
+                 useCases: ["偶然知り合いに会ったとき", "共通点が見つかったとき"],
+                 examples: [
+                    ("You're from Manchester too? What a coincidence!", "君もマンチェスター出身？なんて偶然！"),
+                    ("What a coincidence — I was just about to call you!", "すごい偶然、ちょうど電話しようと思ってたんだ！")
+                 ], ipa: "/wɒt ə kəʊˈɪnsɪdəns/"),
+            make("not half bad", "an understated way to say something is actually quite good",
+                 "なかなかいい・悪くないね",
+                 useCases: ["期待以上だったものを控えめに褒めるとき", "料理や作品の感想で"],
+                 examples: [
+                    ("This homemade wine is not half bad!", "この自家製ワイン、なかなかいけるね！"),
+                    ("For a first attempt, your drawing's not half bad.", "初めてにしては、君の絵なかなかいいよ。")
+                 ], ipa: "/nɒt hɑːf bæd/"),
+            make("too right", "an informal way to strongly agree with someone",
+                 "まったくその通り・ほんとそれ",
+                 useCases: ["相手の意見に強く同意するとき", "相づちとして"],
+                 examples: [
+                    ("We deserve a holiday after this week. — Too right!", "今週頑張ったし休暇に値するよね。 — ほんとそれ！"),
+                    ("You should ask for a refund. — Too right, I will.", "返金してもらうべきだよ。 — まったくだ、そうする。")
+                 ], ipa: "/tuː raɪt/"),
+            make("i'll be back in five", "used to say you will return in about five minutes",
+                 "5分で戻るね・すぐ戻る",
+                 useCases: ["席を少し外すとき", "ちょっと買い物や電話に出るとき"],
+                 examples: [
+                    ("Just popping to the shop — I'll be back in five.", "ちょっとお店行ってくる。5分で戻るね。"),
+                    ("Start without me, I'll be back in five.", "先に始めてて、すぐ戻るから。")
+                 ], ipa: "/aɪl biː bæk ɪn faɪv/"),
         ]
     }
     private static var britishColloquial184: [Word] {
