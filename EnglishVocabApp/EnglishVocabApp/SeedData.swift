@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -35518,6 +35518,115 @@ enum SeedData {
                     ("I've got a feeling it's going to rain later.", "後で雨が降る気がするな。"),
                     ("I've got a feeling she already knows about the party.", "彼女、もうパーティーのこと知ってる気がする。")
                  ], ipa: "/aɪv ɡɒt ə ˈfiːlɪŋ/"),
+        ]
+    }
+    private static var britishColloquial172: [Word] {
+        [
+            make("consider it done", "used to say that you will do what someone has asked, quickly and without problems",
+                 "任せて・了解、すぐやるよ",
+                 useCases: ["頼まれごとを快く引き受けるとき", "上司や友人に頼もしく返事するとき"],
+                 examples: [
+                    ("Can you send me the file by tonight? — Consider it done.", "今夜までにファイル送ってくれる？ — 任せて。"),
+                    ("You need a lift to the airport? Consider it done.", "空港まで送ってほしいの？了解、任せといて。")
+                 ], ipa: "/kənˈsɪdər ɪt dʌn/"),
+            make("do your bit", "to do your share of the work or effort that a group needs",
+                 "自分の役割を果たす・できることをする",
+                 useCases: ["チームや家族で分担するとき", "環境やボランティア活動について話すとき"],
+                 examples: [
+                    ("Everyone needs to do their bit to keep the kitchen clean.", "キッチンをきれいに保つため、みんな自分の分担はやってね。"),
+                    ("I recycle and cycle to work — I'm just doing my bit.", "リサイクルして自転車通勤してるんだ。できることをしてるだけ。")
+                 ], ipa: "/duː jɔː bɪt/"),
+            make("you've got this", "used to encourage someone and tell them you believe they can succeed",
+                 "あなたならできる・大丈夫、いける",
+                 useCases: ["本番前の人を励ますとき", "自信をなくしている友人を応援するとき"],
+                 examples: [
+                    ("Big presentation today? You've got this!", "今日大事なプレゼン？あなたならできるよ！"),
+                    ("Just breathe. You've got this.", "深呼吸して。大丈夫、いけるよ。")
+                 ], ipa: "/juːv ɡɒt ðɪs/"),
+            make("you've got nothing to lose", "used to say that it is worth trying because there is no risk",
+                 "ダメ元だよ・失うものは何もない",
+                 useCases: ["挑戦をためらう人の背中を押すとき", "応募や告白を勧めるとき"],
+                 examples: [
+                    ("Just apply for the job — you've got nothing to lose.", "とりあえずその仕事に応募してみなよ。ダメ元でしょ。"),
+                    ("Ask her out! What have you got to lose?", "デートに誘いなよ！失うものなんてないじゃん。")
+                 ], ipa: "/juːv ɡɒt ˈnʌθɪŋ tə luːz/"),
+            make("a safe bet", "something that is very likely to be good, successful, or correct",
+                 "無難な選択・まず間違いないもの",
+                 useCases: ["プレゼントやお店選びで迷ったとき", "予想が当たりそうだと言うとき"],
+                 examples: [
+                    ("Flowers are always a safe bet for a birthday.", "誕生日には花ならまず間違いないよ。"),
+                    ("It's a safe bet that he'll be late again.", "彼はまた遅れてくるとみてまず間違いないね。")
+                 ], ipa: "/ə seɪf bet/"),
+            make("good luck with that", "used, often sarcastically, to say that you think someone's plan will not work",
+                 "まあ頑張って（無理だと思うけど）",
+                 useCases: ["無謀な計画を聞いたとき", "皮肉っぽく軽く返すとき"],
+                 examples: [
+                    ("He wants to get a refund without a receipt. Good luck with that.", "彼、レシートなしで返金してもらいたいんだって。まあ頑張って。"),
+                    ("You're going to finish it all tonight? Good luck with that!", "今夜で全部終わらせるの？まあ頑張ってね！")
+                 ], ipa: "/ɡʊd lʌk wɪð ðæt/"),
+            make("join the club", "used to say that you are in the same bad situation as the other person",
+                 "私も同じだよ・仲間だね",
+                 useCases: ["相手の愚痴に共感するとき", "同じ困った状況にいると伝えるとき"],
+                 examples: [
+                    ("I've hardly slept this week. — Join the club!", "今週ほとんど寝てないんだ。 — 私も同じだよ！"),
+                    ("My train was cancelled too. Join the club.", "私の電車も運休だったよ。仲間だね。")
+                 ], ipa: "/dʒɔɪn ðə klʌb/"),
+            make("you and me both", "used to say that you feel the same way as the person who just spoke",
+                 "私もまったく同じ・それな",
+                 useCases: ["相手の気持ちに強く同意するとき", "同じ願望や不満を共有するとき"],
+                 examples: [
+                    ("I could really use a holiday. — You and me both.", "本当に休暇が欲しいよ。 — 私もまったく同じ。"),
+                    ("I'm so ready for the weekend. — You and me both!", "早く週末になってほしい。 — それな！")
+                 ], ipa: "/juː ənd miː bəʊθ/"),
+            make("not quite", "almost, but not completely; used to gently correct someone",
+                 "ちょっと違う・もう少し",
+                 useCases: ["相手の推測をやんわり訂正するとき", "まだ完了していないと伝えるとき"],
+                 examples: [
+                    ("So you're from London? — Not quite, I'm from just outside.", "じゃあロンドン出身？ — ちょっと違って、すぐ郊外なんだ。"),
+                    ("Are you ready? — Not quite. Give me two minutes.", "準備できた？ — もう少し。2分ちょうだい。")
+                 ], ipa: "/nɒt kwaɪt/"),
+            make("out of touch", "not having recent knowledge or understanding of something, or no longer in contact",
+                 "時代遅れの・疎い・連絡が途絶えた",
+                 useCases: ["流行や最新事情に疎いとき", "昔の友人と疎遠になったとき"],
+                 examples: [
+                    ("I'm so out of touch with music these days.", "最近の音楽には本当に疎くなっちゃった。"),
+                    ("We've been out of touch since university.", "大学以来、連絡が途絶えてるんだ。")
+                 ], ipa: "/aʊt əv tʌtʃ/"),
+            make("in my book", "in my opinion; according to my standards",
+                 "私に言わせれば・私の考えでは",
+                 useCases: ["自分の価値観をはっきり言うとき", "人や物を評価するとき"],
+                 examples: [
+                    ("In my book, being kind matters more than being clever.", "私に言わせれば、賢さより優しさの方が大事だよ。"),
+                    ("He's a good bloke in my book.", "私から見れば、彼はいいやつだよ。")
+                 ], ipa: "/ɪn maɪ bʊk/"),
+            make("speak for yourself", "used to say that you do not share the opinion the other person has just expressed",
+                 "あなたはそうかもね（私は違う）",
+                 useCases: ["「みんな」とまとめられて反論するとき", "相手の意見に冗談っぽく異を唱えるとき"],
+                 examples: [
+                    ("We're all too old for clubbing. — Speak for yourself!", "みんなもうクラブって年じゃないよね。 — あなたはそうかもね！"),
+                    ("Nobody likes Mondays. — Speak for yourself, I love them.", "月曜が好きな人なんていないよ。 — 私は違うよ、大好き。")
+                 ], ipa: "/spiːk fə jɔːˈself/"),
+            make("don't ask me", "used to say that you do not know the answer to something",
+                 "さあね・私に聞かないで",
+                 useCases: ["全く分からないことを聞かれたとき", "理由が不明なことに戸惑うとき"],
+                 examples: [
+                    ("Why is the train stopped? — Don't ask me.", "なんで電車止まってるの？ — さあね、分からない。"),
+                    ("Don't ask me how it works — I just press the button.", "仕組みは聞かないで。ボタン押してるだけだから。")
+                 ], ipa: "/dəʊnt ɑːsk miː/"),
+            make("get back on your feet", "to recover after an illness, a financial problem, or a difficult period",
+                 "立ち直る・元気になる",
+                 useCases: ["病気や失業から回復するとき", "困難から立ち直った人について話すとき"],
+                 examples: [
+                    ("It took him a few months to get back on his feet after the divorce.", "離婚の後、彼が立ち直るのに数か月かかった。"),
+                    ("Rest up and you'll be back on your feet in no time.", "ゆっくり休めばすぐ元気になるよ。")
+                 ], ipa: "/ɡet bæk ɒn jɔː fiːt/"),
+            make("look who's talking", "used to say that someone is criticising another person for something they do themselves",
+                 "人のこと言えないでしょ・どの口が言うの",
+                 useCases: ["自分を棚に上げた発言に返すとき", "冗談っぽくツッコむとき"],
+                 examples: [
+                    ("You're always on your phone! — Look who's talking.", "いつもスマホばっかり見て！ — 人のこと言えないでしょ。"),
+                    ("He said I'm messy. Look who's talking!", "彼が私のこと散らかし屋だって。どの口が言うの！")
+                 ], ipa: "/lʊk huːz ˈtɔːkɪŋ/"),
         ]
     }
     private static var britishColloquial163: [Word] {
