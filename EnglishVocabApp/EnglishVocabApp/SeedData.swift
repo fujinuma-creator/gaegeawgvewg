@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -35409,6 +35409,115 @@ enum SeedData {
                     ("I could return it, but honestly it's not worth the hassle.", "返品もできるけど、正直面倒なだけだよ。"),
                     ("Driving into town on a Saturday? It's not worth the hassle.", "土曜に車で街中？わざわざ行くほどじゃないよ。")
                  ], ipa: "/ɪts nɒt wɜːθ ðə ˈhæsl/"),
+        ]
+    }
+    private static var britishColloquial171: [Word] {
+        [
+            make("I wasn't born yesterday", "used to say that you are not stupid enough to believe something",
+                 "そんな手には乗らないよ・バカにしないで",
+                 useCases: ["見え透いた言い訳を聞いたとき", "うまい話を疑うとき"],
+                 examples: [
+                    ("A free holiday? Come on, I wasn't born yesterday.", "無料の旅行？ちょっと、そんな手には乗らないよ。"),
+                    ("You 'forgot' your wallet again? I wasn't born yesterday.", "また財布を「忘れた」の？そんなの通用しないよ。")
+                 ], ipa: "/aɪ ˈwɒznt bɔːn ˈjestədeɪ/"),
+            make("you'll be fine", "used to reassure someone who is nervous or worried",
+                 "大丈夫だよ・うまくいくよ",
+                 useCases: ["緊張している人を励ますとき", "試験や面接の前に声をかけるとき"],
+                 examples: [
+                    ("Don't worry about the interview — you'll be fine.", "面接のことは心配しないで、大丈夫だよ。"),
+                    ("It's only a small cut. You'll be fine.", "ちょっとした切り傷だよ。大丈夫。")
+                 ], ipa: "/juːl bi faɪn/"),
+            make("you read my mind", "used when someone says or does exactly what you were thinking or wanted",
+                 "ちょうどそれを考えてた・以心伝心だね",
+                 useCases: ["相手が欲しかったものを持ってきたとき", "同じことを考えていたとき"],
+                 examples: [
+                    ("A cup of tea? You read my mind!", "紅茶？ちょうど飲みたかったんだ！"),
+                    ("Pizza tonight? You must have read my mind.", "今夜ピザ？私の心を読んだでしょ。")
+                 ], ipa: "/juː red maɪ maɪnd/"),
+            make("I'm not complaining", "used to say that you are happy with a situation, even if it is unusual",
+                 "文句はないよ・むしろありがたい",
+                 useCases: ["予想外に良いことがあったとき", "状況に満足していると伝えるとき"],
+                 examples: [
+                    ("The meeting got cancelled, so I'm not complaining.", "会議が中止になったから、文句はないよ。"),
+                    ("It's twenty degrees in November? I'm not complaining!", "11月に20度？ありがたいね！")
+                 ], ipa: "/aɪm nɒt kəmˈpleɪnɪŋ/"),
+            make("keep your options open", "to avoid making a final decision so that you can still choose later",
+                 "選択肢を残しておく・決めつけずにおく",
+                 useCases: ["進路や転職を考えるとき", "すぐに決断したくないとき"],
+                 examples: [
+                    ("I haven't accepted the job yet — I'm keeping my options open.", "まだその仕事は受けてないんだ。選択肢を残しておきたくて。"),
+                    ("Don't book anything yet. Let's keep our options open.", "まだ何も予約しないで。選択肢は残しておこう。")
+                 ], ipa: "/kiːp jɔːr ˈɒpʃənz ˈəʊpən/"),
+            make("it's grown on me", "used to say that you have started to like something you did not like at first",
+                 "だんだん好きになってきた",
+                 useCases: ["最初は苦手だった物が好きになったとき", "音楽や食べ物の好みの変化を話すとき"],
+                 examples: [
+                    ("I hated this song at first, but it's grown on me.", "最初はこの曲が嫌いだったけど、だんだん好きになってきた。"),
+                    ("The new haircut has really grown on me.", "新しい髪型、だんだん気に入ってきたよ。")
+                 ], ipa: "/ɪts ɡrəʊn ɒn miː/"),
+            make("let's not get ahead of ourselves", "used to say that people should not plan or celebrate too early",
+                 "先走らないでおこう・気が早いよ",
+                 useCases: ["話が先に進みすぎたとき", "結果が出る前に喜びすぎているとき"],
+                 examples: [
+                    ("We've only had one date — let's not get ahead of ourselves.", "まだ1回デートしただけだよ、気が早いって。"),
+                    ("Let's not get ahead of ourselves. We haven't won yet.", "先走らないでおこう。まだ勝ったわけじゃない。")
+                 ], ipa: "/lets nɒt ɡet əˈhed əv aʊəˈselvz/"),
+            make("a small price to pay", "a minor disadvantage that is worth accepting for a bigger benefit",
+                 "安いもんだ・それくらい仕方ない",
+                 useCases: ["多少の不便を受け入れるとき", "メリットの大きさを強調するとき"],
+                 examples: [
+                    ("An early start is a small price to pay for a day at the beach.", "早起きなんて、ビーチで一日過ごせるなら安いもんだよ。"),
+                    ("A longer commute is a small price to pay for a bigger flat.", "通勤が長くなるのは、広い部屋に住めるなら仕方ないね。")
+                 ], ipa: "/ə smɔːl praɪs tə peɪ/"),
+            make("I'm sold", "used to say that you are completely convinced and want to do or buy something",
+                 "乗った・決まりだね・買った",
+                 useCases: ["説明を聞いて納得したとき", "提案に賛成するとき"],
+                 examples: [
+                    ("Free breakfast and a sea view? I'm sold.", "朝食無料でオーシャンビュー？決まりだね。"),
+                    ("You had me at 'chocolate'. I'm sold.", "「チョコ」って聞いた時点で乗ったよ。")
+                 ], ipa: "/aɪm səʊld/"),
+            make("you're not wrong", "used to agree with someone, often strongly",
+                 "まったくその通り・確かにね",
+                 useCases: ["相手の意見に強く同意するとき", "愚痴や感想に共感するとき"],
+                 examples: [
+                    ("'This queue is ridiculous.' 'You're not wrong.'", "「この行列、ひどすぎる」「まったくだよ」"),
+                    ("You're not wrong — the prices here have gone up a lot.", "確かにね、ここの値段かなり上がったよ。")
+                 ], ipa: "/jɔː nɒt rɒŋ/"),
+            make("all being well", "used to say that something will happen if there are no problems",
+                 "何事もなければ・順調にいけば",
+                 useCases: ["予定を伝えるとき", "到着時間などの見込みを話すとき"],
+                 examples: [
+                    ("All being well, we'll be there by six.", "何事もなければ6時までには着くよ。"),
+                    ("The flat should be ready next week, all being well.", "順調にいけば、部屋は来週には準備できるはず。")
+                 ], ipa: "/ɔːl ˈbiːɪŋ wel/"),
+            make("that looks good on you", "used to say that clothes, a colour, or a hairstyle suits someone",
+                 "それ似合ってるね",
+                 useCases: ["服や髪型を褒めるとき", "買い物で試着した人に感想を言うとき"],
+                 examples: [
+                    ("Is that a new jacket? It looks really good on you.", "それ新しいジャケット？すごく似合ってるね。"),
+                    ("Green looks good on you — you should wear it more.", "緑似合うね、もっと着たらいいのに。")
+                 ], ipa: "/ðæt lʊks ɡʊd ɒn juː/"),
+            make("I wasn't expecting that", "used to express surprise at something that has just happened or been said",
+                 "それは予想外だった・びっくり",
+                 useCases: ["意外な展開に驚いたとき", "思いがけないプレゼントをもらったとき"],
+                 examples: [
+                    ("Wow, a promotion? I wasn't expecting that!", "えっ、昇進？それは予想外だった！"),
+                    ("The ending of that film — I really wasn't expecting that.", "あの映画のラスト、本当に予想外だったよ。")
+                 ], ipa: "/aɪ ˈwɒznt ɪkˈspektɪŋ ðæt/"),
+            make("keep an open mind", "to be willing to consider new ideas or opinions before deciding",
+                 "偏見を持たずにいる・先入観なしで考える",
+                 useCases: ["新しい物事を試すとき", "相手の意見を聞くよう促すとき"],
+                 examples: [
+                    ("I've never tried Ethiopian food, but I'll keep an open mind.", "エチオピア料理は食べたことないけど、先入観なしで試してみるよ。"),
+                    ("Just keep an open mind until you've met him.", "会うまでは先入観を持たないでね。")
+                 ], ipa: "/kiːp ən ˈəʊpən maɪnd/"),
+            make("I've got a feeling", "used to say that you think something is true or will happen, without being sure",
+                 "なんとなく〜な気がする",
+                 useCases: ["予感を伝えるとき", "確信はないが推測を話すとき"],
+                 examples: [
+                    ("I've got a feeling it's going to rain later.", "後で雨が降る気がするな。"),
+                    ("I've got a feeling she already knows about the party.", "彼女、もうパーティーのこと知ってる気がする。")
+                 ], ipa: "/aɪv ɡɒt ə ˈfiːlɪŋ/"),
         ]
     }
     private static var britishColloquial163: [Word] {
