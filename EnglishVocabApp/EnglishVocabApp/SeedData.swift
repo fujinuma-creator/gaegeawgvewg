@@ -37139,13 +37139,13 @@ enum SeedData {
                     ("The garden looks amazing — you've done a great job.", "庭すごく素敵！いい仕事したね。"),
                     ("You've done a great job with the presentation.", "プレゼン、よくできてたよ。")
                  ], ipa: "/juːv dʌn ə ɡreɪt dʒɒb/"),
-            make("i'm feeling much better", "used to say that you have recovered from an illness or feel happier",
-                 "だいぶ良くなったよ",
-                 useCases: ["体調を聞かれて回復を伝えるとき", "落ち込みから立ち直ったとき"],
+            make("where shall we meet?", "used to ask someone to decide on a place to meet",
+                 "どこで待ち合わせる？",
+                 useCases: ["友人と会う約束をするとき", "待ち合わせ場所を決めるとき"],
                  examples: [
-                    ("How's your cold? — I'm feeling much better, thanks.", "風邪どう？ — だいぶ良くなったよ、ありがとう。"),
-                    ("I had a good cry and now I'm feeling much better.", "思いっきり泣いたら、だいぶ楽になったよ。")
-                 ], ipa: "/aɪm ˈfiːlɪŋ mʌtʃ ˈbetə/"),
+                    ("Where shall we meet? Outside the station?", "どこで待ち合わせる？駅の前？"),
+                    ("Sounds good. Where shall we meet, and what time?", "いいね。どこで何時に待ち合わせる？")
+                 ], ipa: "/weə ʃæl wiː miːt/"),
             make("i'm popping out", "used to say that you are going out for a short time",
                  "ちょっと出てくるね",
                  useCases: ["家族や同僚に一時外出を伝えるとき", "買い物や用事で少し出かけるとき"],
