@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -37262,6 +37262,115 @@ enum SeedData {
                     ("I can't remember his name — it's on the tip of my tongue.", "彼の名前が思い出せない。喉まで出かかってるんだけど。"),
                     ("I can't remember where I parked the car.", "どこに車を停めたか覚えてないよ。")
                  ], ipa: "/aɪ kɑːnt rɪˈmembə/"),
+        ]
+    }
+    private static var britishColloquial194: [Word] {
+        [
+            make("i overslept", "used to say that you slept longer than you intended and woke up late",
+                 "寝坊しちゃった",
+                 useCases: ["遅刻の理由を説明するとき", "朝の失敗を話すとき"],
+                 examples: [
+                    ("Sorry I'm late — I overslept.", "遅れてごめん、寝坊しちゃった。"),
+                    ("I overslept and missed my first lecture.", "寝坊して1限の講義に出られなかった。")
+                 ], ipa: "/aɪ ˌəʊvəˈslept/"),
+            make("is there anything i can do?", "used to offer help to someone who has a problem",
+                 "何か私にできることはある？・手伝えることある？",
+                 useCases: ["困っている人に手を差し伸べるとき", "悪い知らせを聞いたとき"],
+                 examples: [
+                    ("I'm so sorry to hear that. Is there anything I can do?", "それは大変だったね。何か私にできることある？"),
+                    ("You look stressed. Is there anything I can do to help?", "大変そうだね。何か手伝えることある？")
+                 ], ipa: "/ɪz ðər ˈeniθɪŋ aɪ kən duː/"),
+            make("i'm looking forward to it", "used to say that you are excited about something that is going to happen",
+                 "楽しみにしてるよ",
+                 useCases: ["誘いや予定に対して返事をするとき", "メールの結びにも"],
+                 examples: [
+                    ("Dinner on Friday? Lovely, I'm looking forward to it.", "金曜にディナー？いいね、楽しみにしてる。"),
+                    ("I've never been to Lisbon, so I'm really looking forward to it.", "リスボンは初めてだから、すごく楽しみなんだ。")
+                 ], ipa: "/aɪm ˈlʊkɪŋ ˈfɔːwəd tʊ ɪt/"),
+            make("i've got a cold", "used to say that you have a common cold",
+                 "風邪をひいてる",
+                 useCases: ["体調不良を伝えるとき", "予定を断る理由として"],
+                 examples: [
+                    ("I've got a bit of a cold, so I'll stay in tonight.", "ちょっと風邪気味だから、今夜は家にいるね。"),
+                    ("Don't come too close — I've got a cold.", "あまり近づかないで、風邪ひいてるから。")
+                 ], ipa: "/aɪv ɡɒt ə kəʊld/"),
+            make("i'm still working on it", "used to say that you have not finished something yet",
+                 "まだやってる途中・まだ取り組んでるところ",
+                 useCases: ["進み具合を聞かれたとき", "仕事や課題がまだ終わっていないとき"],
+                 examples: [
+                    ("Have you finished the report? — Not yet, I'm still working on it.", "レポート終わった？ーまだ、今やってるところ。"),
+                    ("My French isn't great, but I'm still working on it.", "フランス語はまだまだだけど、頑張ってるところ。")
+                 ], ipa: "/aɪm stɪl ˈwɜːkɪŋ ɒn ɪt/"),
+            make("i knew it!", "used to say that you were right about something you suspected",
+                 "やっぱりね！・思った通り！",
+                 useCases: ["予想が当たったとき", "怪しいと思っていたことが本当だったとき"],
+                 examples: [
+                    ("They're getting married? I knew it!", "あの二人結婚するの？やっぱりね！"),
+                    ("I knew it — I left the oven on.", "やっぱり、オーブンつけっぱなしだった。")
+                 ], ipa: "/aɪ njuː ɪt/"),
+            make("i thought so", "used to say that something is what you expected or believed",
+                 "そうだと思った",
+                 useCases: ["相手の答えが予想通りだったとき", "確認して自分の考えが正しかったとき"],
+                 examples: [
+                    ("Is this your jacket? — Yes, it is. — I thought so.", "これあなたのジャケット？ーうん。ーだと思った。"),
+                    ("You're from Ireland? I thought so from your accent.", "アイルランド出身？アクセントでそうかなと思った。")
+                 ], ipa: "/aɪ θɔːt səʊ/"),
+            make("how long have you lived here?", "used to ask someone how long they have been living in a place",
+                 "ここに住んでどのくらい？",
+                 useCases: ["初対面の雑談で", "近所の人や現地の人と話すとき"],
+                 examples: [
+                    ("So how long have you lived here?", "ここに住んでどれくらいになるの？"),
+                    ("How long have you lived in Berlin? — About three years now.", "ベルリンに住んでどのくらい？ーもう3年くらいかな。")
+                 ], ipa: "/haʊ lɒŋ həv juː lɪvd hɪə/"),
+            make("do you have this in a different size?", "used in a shop to ask whether an item is available in another size",
+                 "これの別のサイズはありますか？",
+                 useCases: ["服屋や靴屋で", "colour に変えて色違いを聞くのにも応用"],
+                 examples: [
+                    ("Excuse me, do you have this in a different size?", "すみません、これの別のサイズはありますか？"),
+                    ("Do you have these in a size seven?", "これの7サイズはありますか？")
+                 ], ipa: "/duː juː hæv ðɪs ɪn ə ˈdɪfrənt saɪz/"),
+            make("i'm almost done", "used to say that you have nearly finished something",
+                 "もうすぐ終わるよ・あと少し",
+                 useCases: ["待たせている人に", "作業の進み具合を伝えるとき"],
+                 examples: [
+                    ("Give me two minutes — I'm almost done.", "あと2分待って、もうすぐ終わるから。"),
+                    ("Are you still in the shower? — I'm almost done!", "まだシャワー中？ーもうすぐ出る！")
+                 ], ipa: "/aɪm ˈɔːlməʊst dʌn/"),
+            make("i haven't decided yet", "used to say that you have not made a choice yet",
+                 "まだ決めてない",
+                 useCases: ["予定や注文を聞かれたとき", "迷っていることを伝えるとき"],
+                 examples: [
+                    ("Are you going to the party? — I haven't decided yet.", "パーティー行くの？ーまだ決めてない。"),
+                    ("I haven't decided yet what I'm having.", "何を頼むかまだ決めてないんだ。")
+                 ], ipa: "/aɪ ˈhævnt dɪˈsaɪdɪd jet/"),
+            make("i'm not used to it", "used to say that something still feels new, strange or difficult for you",
+                 "まだ慣れてない",
+                 useCases: ["新しい環境や習慣について話すとき", "天気・食べ物・仕事などに"],
+                 examples: [
+                    ("Driving on the left is hard — I'm not used to it yet.", "左側通行は難しいね、まだ慣れてないんだ。"),
+                    ("I'm not used to getting up this early.", "こんなに早起きするのは慣れてないよ。")
+                 ], ipa: "/aɪm nɒt juːst tʊ ɪt/"),
+            make("what do you think?", "used to ask someone for their opinion",
+                 "どう思う？",
+                 useCases: ["意見を求めるとき", "服や料理などの感想を聞くとき"],
+                 examples: [
+                    ("I'm thinking of painting the kitchen blue. What do you think?", "キッチンを青く塗ろうと思うんだけど、どう思う？"),
+                    ("What do you think of the new place?", "新しい家どう思う？")
+                 ], ipa: "/wɒt duː juː θɪŋk/"),
+            make("i've heard a lot about you", "used when meeting someone for the first time whom others have often talked about",
+                 "お噂はかねがね・話はよく聞いてるよ",
+                 useCases: ["友人の家族や恋人に初めて会うとき", "同僚から紹介されたとき"],
+                 examples: [
+                    ("Nice to finally meet you — I've heard a lot about you.", "やっと会えたね、話はよく聞いてるよ。"),
+                    ("I've heard so much about you from Anna!", "アンナからあなたのことたくさん聞いてるよ！")
+                 ], ipa: "/aɪv hɜːd ə lɒt əˈbaʊt juː/"),
+            make("how was your day?", "used to ask someone, often at the end of the day, how their day went",
+                 "今日はどうだった？",
+                 useCases: ["家族やパートナーとの夕方の会話", "友達と会ったときの挨拶代わりに"],
+                 examples: [
+                    ("Hi, love. How was your day?", "おかえり。今日はどうだった？"),
+                    ("How was your day? — Long, but not bad.", "今日どうだった？ー長かったけど悪くなかったよ。")
+                 ], ipa: "/haʊ wɒz jɔː deɪ/"),
         ]
     }
     private static var britishColloquial185: [Word] {
