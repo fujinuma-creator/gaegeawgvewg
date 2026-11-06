@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -37589,6 +37589,115 @@ enum SeedData {
                     ("It's not much, but it's home.", "大したところじゃないけど、我が家だよ。"),
                     ("Here, I got you something. It's not much, but I hope you like it.", "はい、ちょっとしたもの。大したものじゃないけど気に入ってくれるといいな。")
                  ], ipa: "/ɪts nɒt mʌtʃ bʌt/"),
+        ]
+    }
+    private static var britishColloquial198: [Word] {
+        [
+            make("daylight robbery", "used to say that something costs far more than it should",
+                 "ぼったくり・高すぎる",
+                 useCases: ["値段が高すぎると文句を言うとき", "観光地や空港の物価に驚いたとき"],
+                 examples: [
+                    ("Eight pounds for a sandwich? That's daylight robbery!", "サンドイッチ1つで8ポンド？ぼったくりだよ！"),
+                    ("The parking here is daylight robbery.", "ここの駐車料金、高すぎでしょ。")
+                 ], ipa: "/ˈdeɪlaɪt ˈrɒbəri/"),
+            make("i'm not one for", "used to say that you do not usually like or do a particular thing",
+                 "〜はあまり好きじゃない・〜するタイプじゃない",
+                 useCases: ["自分の好みや性格を控えめに伝えるとき", "誘いをやんわり断るとき"],
+                 examples: [
+                    ("I'm not one for big parties, to be honest.", "正直、大きなパーティーは得意じゃないんだ。"),
+                    ("I'm not one for complaining, but this is too much.", "文句を言うタイプじゃないけど、これはひどすぎる。")
+                 ], ipa: "/aɪm nɒt wʌn fɔː/"),
+            make("a grey area", "a situation where the rules are unclear or where it is difficult to say what is right",
+                 "グレーゾーン・はっきりしない部分",
+                 useCases: ["ルールや法律があいまいなとき", "白黒つけにくい問題を話すとき"],
+                 examples: [
+                    ("Working from abroad is a bit of a grey area in my contract.", "海外からのリモート勤務は、私の契約ではグレーゾーンなんだ。"),
+                    ("It's not illegal exactly — it's more of a grey area.", "違法ってわけじゃないけど、グレーな感じだね。")
+                 ], ipa: "/ə ɡreɪ ˈeəriə/"),
+            make("not all it's cracked up to be", "not as good as people say it is",
+                 "評判ほどじゃない・言われてるほど良くない",
+                 useCases: ["期待外れだった体験を話すとき", "人気のものを冷静に評価するとき"],
+                 examples: [
+                    ("The new restaurant isn't all it's cracked up to be.", "あの新しいレストラン、評判ほどじゃないよ。"),
+                    ("Living in the city centre is not all it's cracked up to be.", "都心に住むのって、言われてるほど良くないよ。")
+                 ], ipa: "/nɒt ɔːl ɪts krækt ʌp tə biː/"),
+            make("give someone a heads-up", "to warn someone or tell them in advance that something is going to happen",
+                 "（人に）前もって知らせる・一声かける",
+                 useCases: ["予定変更を事前に伝えるとき", "注意喚起をお願いするとき"],
+                 examples: [
+                    ("Just giving you a heads-up — the boss is in a bad mood.", "一応言っとくけど、上司の機嫌悪いよ。"),
+                    ("Can you give me a heads-up if you're running late?", "遅れそうなら前もって教えてくれる？")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ə ˈhedz ʌp/"),
+            make("in this neck of the woods", "in this area or part of the country (informal)",
+                 "このあたりで・この辺では",
+                 useCases: ["自分の住む地域について話すとき", "思いがけない場所で知人に会ったとき"],
+                 examples: [
+                    ("What are you doing in this neck of the woods?", "こんなところで何してるの？"),
+                    ("Good coffee is hard to find in this neck of the woods.", "この辺じゃ美味しいコーヒーはなかなか見つからないよ。")
+                 ], ipa: "/ɪn ðɪs nek əv ðə wʊdz/"),
+            make("get a second wind", "to suddenly have new energy after feeling tired",
+                 "元気を取り戻す・息を吹き返す",
+                 useCases: ["疲れていたのに急に元気が出たとき", "運動や仕事で持ち直したとき"],
+                 examples: [
+                    ("I was exhausted at ten, but then I got a second wind.", "10時にはヘトヘトだったけど、そこから元気が復活した。"),
+                    ("After a coffee, she got her second wind and finished the report.", "コーヒーを飲んで、彼女は持ち直してレポートを仕上げた。")
+                 ], ipa: "/ɡet ə ˈsekənd wɪnd/"),
+            make("nightcap", "a drink, usually alcoholic, that you have just before going to bed",
+                 "寝酒・寝る前の一杯",
+                 useCases: ["夜遅く最後の一杯に誘うとき", "寝る前の習慣を話すとき"],
+                 examples: [
+                    ("Fancy a nightcap before we head home?", "帰る前に最後に一杯どう？"),
+                    ("I usually have a small whisky as a nightcap.", "寝る前にはたいてい少しウイスキーを飲むんだ。")
+                 ], ipa: "/ˈnaɪtkæp/"),
+            make("stopover", "a short stay in a place in the middle of a long journey, especially between flights",
+                 "途中降機・乗り継ぎでの立ち寄り",
+                 useCases: ["旅行の行程を話すとき", "乗り継ぎ地で観光するとき"],
+                 examples: [
+                    ("We've got a two-day stopover in Dubai on the way to Sydney.", "シドニーに行く途中、ドバイで2日間立ち寄るんだ。"),
+                    ("Is it a direct flight or is there a stopover?", "直行便？それとも乗り継ぎある？")
+                 ], ipa: "/ˈstɒpəʊvə/"),
+            make("i'm a bit stretched", "used to say that you do not have enough time or money at the moment",
+                 "ちょっと手一杯で・今ちょっと余裕がなくて",
+                 useCases: ["忙しくて頼みを引き受けられないとき", "金銭的に厳しいと伝えるとき"],
+                 examples: [
+                    ("I'd love to help, but I'm a bit stretched this week.", "手伝いたいんだけど、今週はちょっと手一杯で。"),
+                    ("I'm a bit stretched financially until payday.", "給料日まではちょっとお金に余裕がなくて。")
+                 ], ipa: "/aɪm ə bɪt stretʃt/"),
+            make("i've got your back", "used to tell someone that you will support and protect them",
+                 "私がついてるよ・味方だよ",
+                 useCases: ["不安な友人を励ますとき", "チームの仲間を支えると伝えるとき"],
+                 examples: [
+                    ("Don't worry about the meeting — I've got your back.", "会議のことは心配しないで。私がついてるから。"),
+                    ("Whatever happens, I've got your back.", "何があっても、味方だからね。")
+                 ], ipa: "/aɪv ɡɒt jɔː bæk/"),
+            make("it's not my place to say", "used to say that it is not appropriate for you to give an opinion or comment",
+                 "私が口を出すことじゃないけど・私の立場で言うことじゃない",
+                 useCases: ["他人の問題に意見を求められたとき", "遠慮しつつ意見を言うとき"],
+                 examples: [
+                    ("It's not my place to say, but I think he's making a mistake.", "私が言うことじゃないけど、彼は間違ってると思う。"),
+                    ("Should they get married? It's not my place to say.", "あの二人、結婚すべきかって？私が口出しすることじゃないよ。")
+                 ], ipa: "/ɪts nɒt maɪ pleɪs tə seɪ/"),
+            make("it's catching up with me", "used to say that the effects of something, such as tiredness or lack of sleep, are starting to affect you",
+                 "ツケが回ってきた・疲れが出てきた",
+                 useCases: ["睡眠不足や無理がたたってきたとき", "過去の行動の影響が出てきたとき"],
+                 examples: [
+                    ("All those late nights are catching up with me.", "夜更かしのツケが回ってきたよ。"),
+                    ("I felt fine this morning, but the jet lag is catching up with me now.", "朝は平気だったけど、今になって時差ボケが出てきた。")
+                 ], ipa: "/ɪts ˈkætʃɪŋ ʌp wɪð miː/"),
+            make("not my scene", "used to say that something is not the kind of thing you enjoy or feel comfortable with",
+                 "私の柄じゃない・性に合わない",
+                 useCases: ["クラブやイベントが好みでないと言うとき", "雰囲気が合わない場所について話すとき"],
+                 examples: [
+                    ("Nightclubs aren't really my scene.", "ナイトクラブはあんまり性に合わないんだ。"),
+                    ("I went once, but it's not my scene.", "一回行ったけど、私の柄じゃないね。")
+                 ], ipa: "/nɒt maɪ siːn/"),
+            make("game-changer", "something that completely changes the way something is done or thought about",
+                 "ゲームチェンジャー・状況を一変させるもの",
+                 useCases: ["便利な道具やアイデアを褒めるとき", "生活や仕事が大きく変わったとき"],
+                 examples: [
+                    ("Honestly, this air fryer is a game-changer.", "正直、このエアフライヤーは革命的だよ。"),
+                    ("Working from home two days a week has been a game-changer for me.", "週2日の在宅勤務で、私の生活はガラッと変わった。")
+                 ], ipa: "/ˈɡeɪm ˌtʃeɪndʒə/"),
         ]
     }
     private static var britishColloquial194: [Word] {
