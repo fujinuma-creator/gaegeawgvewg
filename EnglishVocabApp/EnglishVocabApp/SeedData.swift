@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -36717,6 +36717,115 @@ enum SeedData {
                     ("Just to check — are we meeting at seven or half seven?", "念のため確認だけど、7時？それとも7時半？"),
                     ("Just to check, you're okay with dogs, right?", "一応確認だけど、犬は大丈夫だよね？")
                  ], ipa: "/dʒʌst tə tʃek/"),
+        ]
+    }
+    private static var britishColloquial189: [Word] {
+        [
+            make("anyone for seconds?", "used to offer people a second helping of food",
+                 "おかわりする人いる？",
+                 useCases: ["食事中におかわりを勧めるとき", "ホームパーティーで料理が余ったとき"],
+                 examples: [
+                    ("There's loads of pasta left. Anyone for seconds?", "パスタまだたくさんあるよ。おかわりする人いる？"),
+                    ("Anyone for seconds before I put it away?", "片付ける前におかわりする人いる？")
+                 ], ipa: "/ˈeniwʌn fə ˈsekəndz/"),
+            make("i'm having a bad day", "used to say that things are going wrong for you today",
+                 "今日はついてない・調子が悪い日なんだ",
+                 useCases: ["機嫌が悪い理由を説明するとき", "失敗続きの日に愚痴るとき"],
+                 examples: [
+                    ("Sorry I snapped at you — I'm having a bad day.", "きつく当たってごめん。今日はついてない日なんだ。"),
+                    ("I missed the bus and spilt my coffee. I'm having a bad day.", "バスに乗り遅れてコーヒーもこぼした。今日はついてないよ。")
+                 ], ipa: "/aɪm ˈhævɪŋ ə bæd deɪ/"),
+            make("i got caught up", "used to say you were delayed because something kept you busy",
+                 "ちょっと手が離せなくて・用事で遅くなって",
+                 useCases: ["遅刻や返信の遅れを謝るとき", "急な用事で引き止められたとき"],
+                 examples: [
+                    ("Sorry I'm late, I got caught up at work.", "遅れてごめん、仕事で手が離せなくて。"),
+                    ("I meant to call you back, but I got caught up with the kids.", "折り返すつもりだったんだけど、子どものことでバタバタしてて。")
+                 ], ipa: "/aɪ ɡɒt kɔːt ʌp/"),
+            make("how much do i owe you?", "used to ask how much money you need to pay someone back",
+                 "いくら払えばいい？・いくら借りてたっけ？",
+                 useCases: ["立て替えてもらった分を払うとき", "割り勘で自分の分を聞くとき"],
+                 examples: [
+                    ("Thanks for getting the tickets. How much do I owe you?", "チケット取ってくれてありがとう。いくら払えばいい？"),
+                    ("How much do I owe you for lunch?", "ランチ代いくらだった？")
+                 ], ipa: "/haʊ mʌtʃ duː aɪ əʊ juː/"),
+            make("are you doing anything later?", "used to ask if someone is free, often before inviting them",
+                 "このあと何か予定ある？",
+                 useCases: ["友達を遊びや食事に誘う前に", "手伝いを頼みたいとき"],
+                 examples: [
+                    ("Are you doing anything later? Fancy grabbing a bite?", "このあと何か予定ある？軽く何か食べに行かない？"),
+                    ("Are you doing anything later? I could use a hand moving this sofa.", "あとで何か予定ある？このソファ運ぶの手伝ってほしいんだけど。")
+                 ], ipa: "/ɑː juː ˈduːɪŋ ˈeniθɪŋ ˈleɪtə/"),
+            make("pull up a chair", "used to invite someone to sit down and join you",
+                 "どうぞ座って・一緒にどう？",
+                 useCases: ["テーブルに友人を招き入れるとき", "会話や食事に誘うとき"],
+                 examples: [
+                    ("Oh, hi! Pull up a chair and join us.", "あ、やあ！椅子持ってきて一緒にどう？"),
+                    ("Pull up a chair — we've only just ordered.", "座って座って。今注文したばかりだから。")
+                 ], ipa: "/pʊl ʌp ə tʃeə/"),
+            make("what's on your mind?", "used to ask someone what they are thinking or worried about",
+                 "何か気になってることある？・どうしたの？",
+                 useCases: ["元気がない相手を気遣うとき", "相手が何か言いたそうなとき"],
+                 examples: [
+                    ("You've been quiet all evening. What's on your mind?", "一晩中静かだったね。何か気になることある？"),
+                    ("Come on, what's on your mind? You can tell me.", "ねえ、どうしたの？話していいよ。")
+                 ], ipa: "/wɒts ɒn jɔː maɪnd/"),
+            make("home time", "the time when work or school finishes and you go home",
+                 "帰る時間・終業時間",
+                 useCases: ["仕事や学校が終わる時間を言うとき", "帰宅を楽しみにしているとき"],
+                 examples: [
+                    ("Only ten minutes till home time!", "帰る時間まであと10分！"),
+                    ("Right, it's home time. See you all tomorrow.", "よし、帰る時間だ。みんなまた明日。")
+                 ], ipa: "/həʊm taɪm/"),
+            make("last orders", "the last chance to buy drinks or food before a pub or restaurant closes",
+                 "ラストオーダー",
+                 useCases: ["パブやレストランの閉店前", "最後の一杯を頼むかどうか話すとき"],
+                 examples: [
+                    ("It's last orders — do you want one more?", "ラストオーダーだって。もう一杯いる？"),
+                    ("The kitchen takes last orders at half nine.", "厨房のラストオーダーは9時半です。")
+                 ], ipa: "/lɑːst ˈɔːdəz/"),
+            make("what are you having?", "used to ask someone what they will order or drink",
+                 "何にする？",
+                 useCases: ["レストランで注文を決めるとき", "飲み物をおごるときに聞く"],
+                 examples: [
+                    ("I'm getting the drinks. What are you having?", "飲み物買ってくるよ。何にする？"),
+                    ("What are you having? The fish looks good.", "何にする？魚がおいしそうだね。")
+                 ], ipa: "/wɒt ə juː ˈhævɪŋ/"),
+            make("on the side", "served separately next to the main dish; also done in addition to your main job",
+                 "別添えで・副業で",
+                 useCases: ["ソースやドレッシングを別にしてもらうとき", "本業以外の仕事について話すとき"],
+                 examples: [
+                    ("Could I have the dressing on the side, please?", "ドレッシングは別でもらえますか？"),
+                    ("She works in a bank but does photography on the side.", "彼女は銀行勤めだけど、副業で写真もやってる。")
+                 ], ipa: "/ɒn ðə saɪd/"),
+            make("is anyone sitting here?", "used to ask politely if a seat is free",
+                 "ここ、どなたか座ってますか？",
+                 useCases: ["カフェや電車で空席を確認するとき", "相席をお願いするとき"],
+                 examples: [
+                    ("Excuse me, is anyone sitting here?", "すみません、ここどなたか座ってますか？"),
+                    ("Is anyone sitting here, or can I grab this chair?", "ここ誰か座ってる？この椅子借りてもいい？")
+                 ], ipa: "/ɪz ˈeniwʌn ˈsɪtɪŋ hɪə/"),
+            make("a lazy day", "a relaxing day when you do very little",
+                 "のんびりした日・ダラダラする日",
+                 useCases: ["週末の過ごし方を話すとき", "何もしない休日を楽しむとき"],
+                 examples: [
+                    ("I just fancy a lazy day on the sofa with a film.", "今日はソファで映画見てのんびりしたい気分。"),
+                    ("We had a lazy day — breakfast in bed and a walk in the park.", "のんびりした一日だったよ。ベッドで朝ごはん食べて公園を散歩して。")
+                 ], ipa: "/ə ˈleɪzi deɪ/"),
+            make("what can i get you?", "used by staff or a host to ask what someone would like",
+                 "何になさいますか？・何飲む？",
+                 useCases: ["店員が注文を取るとき", "家に来た客に飲み物を勧めるとき"],
+                 examples: [
+                    ("Hi there, what can I get you?", "いらっしゃいませ、何になさいますか？"),
+                    ("Come in, sit down. What can I get you — tea, coffee?", "どうぞ入って座って。何飲む？紅茶？コーヒー？")
+                 ], ipa: "/wɒt kən aɪ ɡet juː/"),
+            make("a heavy night", "an evening when you drank a lot of alcohol",
+                 "飲みすぎた夜",
+                 useCases: ["二日酔いの理由を話すとき", "昨晩の飲み会を振り返るとき"],
+                 examples: [
+                    ("I can't do anything today — it was a heavy night.", "今日は何もできない。昨日は飲みすぎたよ。"),
+                    ("Looks like you had a heavy night last night!", "昨日の夜はだいぶ飲んだみたいだね！")
+                 ], ipa: "/ə ˈhevi naɪt/"),
         ]
     }
     private static var britishColloquial185: [Word] {
