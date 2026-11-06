@@ -85,7 +85,7 @@ enum EnglishAccent: String, CaseIterable, Identifiable {
 /// English text-to-speech. The accent and base speed come from `AppSettings`;
 /// a second consecutive tap on the same text plays it at quarter speed, the
 /// tap after that is back to normal.
-final class SpeechManager: NSObject, AVSpeechSynthesizerDelegate {
+final class SpeechManager: NSObject, AVSpeechSynthesizerDelegate, @unchecked Sendable {
     static let shared = SpeechManager()
     private let synthesizer = AVSpeechSynthesizer()
     private var lastSpokenText: String?
