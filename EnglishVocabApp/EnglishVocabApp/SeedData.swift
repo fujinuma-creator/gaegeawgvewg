@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -37044,6 +37044,115 @@ enum SeedData {
                     ("It's late. I'll walk you home.", "遅いから家まで送るよ。"),
                     ("Don't worry, I'll walk you home — it's on my way.", "大丈夫、送るよ。帰り道だから。")
                  ], ipa: "/aɪl wɔːk juː həʊm/"),
+        ]
+    }
+    private static var britishColloquial192: [Word] {
+        [
+            make("what do you fancy?", "used to ask someone what they would like to eat, drink, or do",
+                 "何にする？・何がいい？",
+                 useCases: ["メニューを見ながら相手に聞くとき", "週末の予定ややりたいことを尋ねるとき"],
+                 examples: [
+                    ("What do you fancy? Pizza or curry?", "何にする？ピザかカレー？"),
+                    ("It's your birthday — what do you fancy doing?", "誕生日だし、何したい？")
+                 ], ipa: "/wɒt duː juː ˈfænsi/"),
+            make("i'll be right there", "used to say that you are coming very soon",
+                 "すぐ行くね・今行く",
+                 useCases: ["呼ばれてすぐ向かうとき", "待ち合わせ相手に到着間近を伝えるとき"],
+                 examples: [
+                    ("Dinner's ready! — I'll be right there.", "ご飯できたよ！ — 今行く。"),
+                    ("Hang tight, I'll be right there.", "ちょっと待ってて、すぐ行くから。")
+                 ], ipa: "/aɪl bi raɪt ðeə/"),
+            make("it's nothing serious", "used to say that a problem, especially a health problem, is not bad or worrying",
+                 "大したことないよ・深刻じゃないよ",
+                 useCases: ["体調を心配されたとき", "トラブルを大げさにしたくないとき"],
+                 examples: [
+                    ("Don't worry, it's nothing serious — just a cold.", "心配しないで、大したことないよ。ただの風邪。"),
+                    ("The car's making a noise, but the mechanic says it's nothing serious.", "車から変な音がするけど、整備士は深刻じゃないって。")
+                 ], ipa: "/ɪts ˈnʌθɪŋ ˈsɪəriəs/"),
+            make("it's a bit of a walk", "used to say that a place is quite far to go on foot",
+                 "ちょっと歩くよ・歩くと少し遠い",
+                 useCases: ["道案内で距離を伝えるとき", "タクシーやバスを勧めるとき"],
+                 examples: [
+                    ("The beach? It's a bit of a walk, about twenty minutes.", "ビーチ？ちょっと歩くよ、20分くらい。"),
+                    ("It's a bit of a walk, so maybe grab a taxi.", "歩くと少し遠いから、タクシー使ったら？")
+                 ], ipa: "/ɪts ə bɪt əv ə wɔːk/"),
+            make("the weather's turned", "used to say that the weather has suddenly become worse or colder",
+                 "天気が崩れてきた・急に寒くなった",
+                 useCases: ["天気の変化について雑談するとき", "季節の変わり目に話すとき"],
+                 examples: [
+                    ("The weather's turned — I'd bring a jacket.", "天気崩れてきたね。上着持って行ったほうがいいよ。"),
+                    ("It was sunny this morning, but the weather's really turned.", "朝は晴れてたのに、すっかり天気が崩れちゃった。")
+                 ], ipa: "/ðə ˈweðəz tɜːnd/"),
+            make("i'm fine with that", "used to say that you agree to a suggestion or plan",
+                 "それでいいよ・それで大丈夫",
+                 useCases: ["提案に同意するとき", "予定や条件に問題がないと伝えるとき"],
+                 examples: [
+                    ("Shall we meet at seven? — Yeah, I'm fine with that.", "7時に会う？ — うん、それでいいよ。"),
+                    ("If you'd rather drive, I'm fine with that.", "運転したいなら、それで大丈夫だよ。")
+                 ], ipa: "/aɪm faɪn wɪð ðæt/"),
+            make("i've just got here", "used to say that you have arrived a very short time ago",
+                 "今着いたところ",
+                 useCases: ["待ち合わせで遅れを気にする相手に", "電話で到着を伝えるとき"],
+                 examples: [
+                    ("Sorry I'm late! — No worries, I've just got here myself.", "遅れてごめん！ — 大丈夫、僕も今着いたところ。"),
+                    ("I've just got here. Where are you sitting?", "今着いたよ。どこに座ってる？")
+                 ], ipa: "/aɪv dʒʌst ɡɒt hɪə/"),
+            make("sorry, could you repeat that?", "a polite way to ask someone to say something again",
+                 "すみません、もう一度言ってもらえますか？",
+                 useCases: ["聞き取れなかったとき", "電話や騒がしい場所で"],
+                 examples: [
+                    ("Sorry, could you repeat that? It's a bit noisy in here.", "すみません、もう一度いいですか？ちょっとうるさくて。"),
+                    ("Sorry, could you repeat that last part?", "すみません、最後のところもう一回言ってもらえますか？")
+                 ], ipa: "/ˈsɒri kʊd juː rɪˈpiːt ðæt/"),
+            make("it'll be fine", "used to reassure someone that things will turn out well",
+                 "大丈夫だよ・なんとかなるよ",
+                 useCases: ["不安がっている相手を励ますとき", "自分に言い聞かせるとき"],
+                 examples: [
+                    ("I'm so nervous about the interview. — It'll be fine, you're well prepared.", "面接すごく緊張する。 — 大丈夫だよ、準備ばっちりじゃん。"),
+                    ("Don't stress, it'll be fine.", "気にしないで、なんとかなるよ。")
+                 ], ipa: "/ɪtl bi faɪn/"),
+            make("i'm on my way out", "used to say that you are just about to leave a place",
+                 "ちょうど出るところ",
+                 useCases: ["出かける直前に電話が来たとき", "話を短く切り上げたいとき"],
+                 examples: [
+                    ("Can I call you back? I'm on my way out.", "かけ直してもいい？ちょうど出るところなんだ。"),
+                    ("I'm on my way out — do you need anything from the shop?", "今出るとこだけど、お店で何かいる？")
+                 ], ipa: "/aɪm ɒn maɪ weɪ aʊt/"),
+            make("have you got a minute?", "used to ask if someone has a short time to talk",
+                 "ちょっといい？・今時間ある？",
+                 useCases: ["同僚や友人に話しかけるとき", "相談を切り出すとき"],
+                 examples: [
+                    ("Have you got a minute? I need to ask you something.", "ちょっといい？聞きたいことがあって。"),
+                    ("Have you got a minute after the meeting?", "会議の後、少し時間ある？")
+                 ], ipa: "/həv juː ɡɒt ə ˈmɪnɪt/"),
+            make("let me know if you need anything", "used to offer help to someone",
+                 "何かあったら言ってね",
+                 useCases: ["ゲストや新しい同僚に声をかけるとき", "困っている人を気遣うとき"],
+                 examples: [
+                    ("Make yourself comfortable, and let me know if you need anything.", "くつろいでね、何かあったら言って。"),
+                    ("I'm just next door, so let me know if you need anything.", "隣にいるから、何かあったら言ってね。")
+                 ], ipa: "/let miː nəʊ ɪf juː niːd ˈeniθɪŋ/"),
+            make("you've done a great job", "used to praise someone for doing something well",
+                 "よくやったね・いい仕事したね",
+                 useCases: ["人の仕事や作品を褒めるとき", "頑張りをねぎらうとき"],
+                 examples: [
+                    ("The garden looks amazing — you've done a great job.", "庭すごく素敵！いい仕事したね。"),
+                    ("You've done a great job with the presentation.", "プレゼン、よくできてたよ。")
+                 ], ipa: "/juːv dʌn ə ɡreɪt dʒɒb/"),
+            make("i'm feeling much better", "used to say that you have recovered from an illness or feel happier",
+                 "だいぶ良くなったよ",
+                 useCases: ["体調を聞かれて回復を伝えるとき", "落ち込みから立ち直ったとき"],
+                 examples: [
+                    ("How's your cold? — I'm feeling much better, thanks.", "風邪どう？ — だいぶ良くなったよ、ありがとう。"),
+                    ("I had a good cry and now I'm feeling much better.", "思いっきり泣いたら、だいぶ楽になったよ。")
+                 ], ipa: "/aɪm ˈfiːlɪŋ mʌtʃ ˈbetə/"),
+            make("i'm popping out", "used to say that you are going out for a short time",
+                 "ちょっと出てくるね",
+                 useCases: ["家族や同僚に一時外出を伝えるとき", "買い物や用事で少し出かけるとき"],
+                 examples: [
+                    ("I'm popping out for some milk. Back in ten.", "ちょっと牛乳買ってくるね。10分で戻る。"),
+                    ("I'm popping out for lunch — want anything?", "ちょっとお昼に出てくるけど、何かいる？")
+                 ], ipa: "/aɪm ˈpɒpɪŋ aʊt/"),
         ]
     }
     private static var britishColloquial185: [Word] {
