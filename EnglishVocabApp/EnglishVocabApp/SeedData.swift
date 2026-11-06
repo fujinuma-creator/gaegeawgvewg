@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -37371,6 +37371,115 @@ enum SeedData {
                     ("Sorry, I can't hear you — it's really loud in here.", "ごめん、聞こえない。ここすごくうるさくて。"),
                     ("I can't hear you very well. Can you speak up?", "あまりよく聞こえないんだ。もう少し大きな声で話せる？")
                  ], ipa: "/aɪ kɑːnt hɪə juː/"),
+        ]
+    }
+    private static var britishColloquial196: [Word] {
+        [
+            make("i can imagine", "used to show sympathy or understanding when someone describes a situation, especially a difficult one",
+                 "でしょうね・想像つくよ",
+                 useCases: ["相手の大変な話に共感するとき", "相づちとして気持ちに寄り添うとき"],
+                 examples: [
+                    ("I had to redo the whole report. — Oh, I can imagine.", "レポートを全部やり直す羽目になったよ。— うわ、想像つくよ。"),
+                    ("You must be exhausted. I can imagine how stressful it's been.", "疲れてるでしょう。どれだけ大変だったか想像つくよ。")
+                 ], ipa: "/aɪ kən ɪˈmædʒɪn/"),
+            make("you tell me", "used to say that you do not know the answer, often because the other person should know better than you",
+                 "こっちが聞きたいよ・さあね、そっちが教えてよ",
+                 useCases: ["答えが分からないと冗談っぽく返すとき", "相手の方が詳しいはずのとき"],
+                 examples: [
+                    ("Why is the printer not working? — You tell me!", "なんでプリンター動かないの？— こっちが聞きたいよ！"),
+                    ("Which one's better? — You tell me, you're the expert.", "どっちがいい？— 君が専門家なんだから教えてよ。")
+                 ], ipa: "/juː tel miː/"),
+            make("fair question", "used to say that a question someone has asked is reasonable and deserves an answer",
+                 "もっともな質問だね・いい質問だ",
+                 useCases: ["鋭い・当然の質問をされたとき", "答える前のワンクッションとして"],
+                 examples: [
+                    ("So why didn't you just ask him? — Fair question.", "じゃあなんで彼に直接聞かなかったの？— もっともな質問だね。"),
+                    ("Fair question — I honestly hadn't thought about that.", "いい質問だね。正直それは考えてなかった。")
+                 ], ipa: "/feə ˈkwestʃən/"),
+            make("it's all yours", "used when giving something to someone or telling them they can now use something you were using",
+                 "どうぞ使って・もう空いたよ",
+                 useCases: ["席・パソコン・お風呂などを譲るとき", "使い終わって相手に渡すとき"],
+                 examples: [
+                    ("I'm done with the bathroom — it's all yours.", "お風呂終わったよ、どうぞ。"),
+                    ("You can have my seat. It's all yours.", "私の席使って。どうぞ。")
+                 ], ipa: "/ɪts ɔːl jɔːz/"),
+            make("i'm doing okay", "used to say that you are fairly well, though not especially good, often after a difficult time",
+                 "まあまあやってるよ・なんとか元気だよ",
+                 useCases: ["「調子どう？」への正直な返事", "大変な時期のあとの近況報告"],
+                 examples: [
+                    ("How are you holding up? — I'm doing okay, thanks.", "大丈夫？— なんとかやってるよ、ありがとう。"),
+                    ("It's been a tough year, but I'm doing okay now.", "大変な一年だったけど、今はまあまあ元気だよ。")
+                 ], ipa: "/aɪm ˈduːɪŋ əʊˈkeɪ/"),
+            make("i'll get the next one", "used to say that you will pay for the next round of drinks or the next meal",
+                 "次は私がおごるね・次は僕が出すよ",
+                 useCases: ["おごってもらったお礼として", "割り勘の代わりに交互に払うとき"],
+                 examples: [
+                    ("Thanks for the coffee — I'll get the next one.", "コーヒーありがとう、次は私がおごるね。"),
+                    ("Put your wallet away. You can get the next one.", "財布しまって。次はそっちが出してよ。")
+                 ], ipa: "/aɪl ɡet ðə nekst wʌn/"),
+            make("don't get your hopes up", "used to warn someone not to expect too much because they may be disappointed",
+                 "あまり期待しすぎないで",
+                 useCases: ["結果が不確かなことを伝えるとき", "自分自身に言い聞かせるとき（I'm not getting my hopes up）"],
+                 examples: [
+                    ("I'll ask, but don't get your hopes up.", "聞いてみるけど、あまり期待しないでね。"),
+                    ("I've applied, but I'm not getting my hopes up.", "応募はしたけど、期待しすぎないようにしてる。")
+                 ], ipa: "/dəʊnt ɡet jɔː həʊps ʌp/"),
+            make("that's a bit steep", "used to say that a price is higher than you think is reasonable",
+                 "ちょっと高いね・高すぎない？",
+                 useCases: ["値段が高いと感じたとき", "家賃・料金について話すとき"],
+                 examples: [
+                    ("Twenty quid for a sandwich? That's a bit steep.", "サンドイッチに20ポンド？ちょっと高すぎない？"),
+                    ("The rent's a bit steep, but the location is great.", "家賃はちょっと高いけど、立地は最高だよ。")
+                 ], ipa: "/ðæts ə bɪt stiːp/"),
+            make("you made me jump", "used to tell someone that they surprised or startled you",
+                 "びっくりした！・驚かさないでよ",
+                 useCases: ["急に話しかけられて驚いたとき", "後ろから来られたとき"],
+                 examples: [
+                    ("Oh! You made me jump — I didn't hear you come in.", "わっ！びっくりした、入ってきたの気づかなかった。"),
+                    ("Sorry, I didn't mean to make you jump.", "ごめん、驚かせるつもりはなかったんだ。")
+                 ], ipa: "/juː meɪd miː dʒʌmp/"),
+            make("what are the odds?", "used to express surprise at an unlikely coincidence",
+                 "すごい偶然！・そんなことある？",
+                 useCases: ["偶然知り合いに会ったとき", "あり得ない偶然が起きたとき"],
+                 examples: [
+                    ("We booked the same hotel? What are the odds?", "同じホテル予約したの？すごい偶然！"),
+                    ("Bumping into you here of all places — what are the odds?", "よりによってここで会うなんて、そんなことある？")
+                 ], ipa: "/wɒt ɑː ði ɒdz/"),
+            make("that's a good sign", "used to say that something suggests things will go well",
+                 "それはいい兆候だね・幸先いいね",
+                 useCases: ["良い結果につながりそうなとき", "相手を励ますとき"],
+                 examples: [
+                    ("They asked when I could start. — That's a good sign!", "いつから働けるか聞かれたよ。— それはいい兆候だね！"),
+                    ("He's eating again, which is a good sign.", "彼また食べるようになったよ、いい兆しだね。")
+                 ], ipa: "/ðæts ə ɡʊd saɪn/"),
+            make("it's worth asking", "used to say that you should ask about something because there is a chance it will help",
+                 "聞いてみる価値はあるよ・聞くだけ聞いてみたら",
+                 useCases: ["ダメ元で頼むよう勧めるとき", "割引や例外をお願いするとき"],
+                 examples: [
+                    ("They might give you a discount — it's worth asking.", "割引してくれるかもよ、聞くだけ聞いてみたら。"),
+                    ("I doubt there are any seats left, but it's worth asking.", "席が残ってるとは思えないけど、聞いてみる価値はあるね。")
+                 ], ipa: "/ɪts wɜːθ ˈɑːskɪŋ/"),
+            make("i'm not saying", "used before an opinion to make it sound less strong or to avoid being misunderstood",
+                 "〜って言ってるわけじゃないけど",
+                 useCases: ["意見を柔らかく伝えるとき", "誤解を避けたいとき（I'm not saying..., but...）"],
+                 examples: [
+                    ("I'm not saying it's a bad idea, but it's risky.", "悪いアイデアって言ってるわけじゃないけど、リスクはあるよ。"),
+                    ("I'm not saying you're wrong — I just see it differently.", "君が間違ってるって言ってるんじゃなくて、見方が違うだけ。")
+                 ], ipa: "/aɪm nɒt ˈseɪɪŋ/"),
+            make("wish me luck", "used to ask someone to hope that you will succeed, usually just before something important",
+                 "うまくいくように祈ってて",
+                 useCases: ["面接・試験・発表の直前に", "緊張していることを伝えるとき"],
+                 examples: [
+                    ("My interview's in ten minutes. Wish me luck!", "面接あと10分なんだ。祈ってて！"),
+                    ("Wish me luck — I'm finally asking for a pay rise.", "うまくいくよう祈ってて、ついに昇給をお願いするんだ。")
+                 ], ipa: "/wɪʃ miː lʌk/"),
+            make("it's not a good time", "used to say that you cannot talk or do something right now because you are busy or it is inconvenient",
+                 "今ちょっとタイミングが悪くて",
+                 useCases: ["電話や話しかけを断るとき", "提案の時期が合わないとき"],
+                 examples: [
+                    ("Sorry, it's not a good time — can I call you later?", "ごめん、今ちょっと都合悪くて。後でかけ直していい？"),
+                    ("Is now a good time? — Honestly, it's not a good time.", "今いい？— 正直、今はタイミング悪いかな。")
+                 ], ipa: "/ɪts nɒt ə ɡʊd taɪm/"),
         ]
     }
     private static var britishColloquial194: [Word] {
