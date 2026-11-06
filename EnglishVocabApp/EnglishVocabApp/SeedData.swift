@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203 + britishColloquial204
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -38243,6 +38243,115 @@ enum SeedData {
                     ("People were queuing up outside the bakery before it even opened.", "開店前からパン屋の前にみんな並んでたよ。"),
                     ("We had to queue up for an hour to get in.", "入るのに1時間並ばなきゃいけなかった。")
                  ], ipa: "/ˌkjuː ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial204: [Word] {
+        [
+            make("a GP", "a general practitioner; the family doctor you normally see first at your local surgery",
+                 "かかりつけ医・一般開業医",
+                 useCases: ["体調が悪くて医者に行く話をするとき", "病院の予約について話すとき"],
+                 examples: [
+                    ("If it's still hurting next week, go and see your GP.", "来週もまだ痛むなら、かかりつけ医に診てもらいなよ。"),
+                    ("I've got a GP appointment at half nine.", "9時半にお医者さんの予約があるんだ。")
+                 ], ipa: "/ə ˌdʒiː ˈpiː/"),
+            make("A&E", "Accident and Emergency; the hospital department for urgent injuries and illnesses (US: the ER)",
+                 "救急外来・救急病棟",
+                 useCases: ["怪我や急病で病院に行くとき", "病院の待ち時間の話をするとき"],
+                 examples: [
+                    ("He fell off his bike, so we ended up in A&E.", "彼が自転車から落ちて、結局救急に行くことになったよ。"),
+                    ("We waited four hours in A&E last night.", "昨夜は救急で4時間も待ったよ。")
+                 ], ipa: "/ˌeɪ ən ˈiː/"),
+            make("fizzy", "(of a drink) containing lots of small bubbles of gas (US: carbonated, soda)",
+                 "炭酸の・シュワシュワした",
+                 useCases: ["飲み物を注文するとき", "ジュースや水の好みを話すとき"],
+                 examples: [
+                    ("Do you want fizzy water or still?", "炭酸水にする？それとも普通の水？"),
+                    ("I'm trying to cut down on fizzy drinks.", "炭酸飲料を控えようとしてるんだ。")
+                 ], ipa: "/ˈfɪzi/"),
+            make("a tea towel", "a cloth used for drying plates, cups, etc. after they have been washed (US: dish towel)",
+                 "布巾（食器拭き）",
+                 useCases: ["皿洗いや片付けを手伝うとき", "キッチンで物の場所を聞くとき"],
+                 examples: [
+                    ("Grab a tea towel and help me dry up, would you?", "布巾取って、拭くの手伝ってくれる？"),
+                    ("The clean tea towels are in the top drawer.", "きれいな布巾は一番上の引き出しにあるよ。")
+                 ], ipa: "/ə ˈtiː taʊəl/"),
+            make("a sat nav", "a device or app in a car that tells you which way to go using satellite signals (US: GPS)",
+                 "カーナビ",
+                 useCases: ["車で道案内の話をするとき", "道に迷ったとき"],
+                 examples: [
+                    ("Just put the postcode into the sat nav.", "郵便番号をカーナビに入れればいいよ。"),
+                    ("The sat nav sent us down a tiny farm track!", "カーナビのせいで狭い農道に入っちゃったよ！")
+                 ], ipa: "/ə ˈsæt næv/"),
+            make("a current account", "a bank account that you use for everyday payments and receiving your salary (US: checking account)",
+                 "普通預金口座",
+                 useCases: ["銀行口座を開くとき", "給料やお金の管理の話をするとき"],
+                 examples: [
+                    ("My salary goes straight into my current account.", "給料はそのまま普通口座に振り込まれるよ。"),
+                    ("I'd like to open a current account, please.", "普通口座を開設したいのですが。")
+                 ], ipa: "/ə ˈkʌrənt əˌkaʊnt/"),
+            make("a jacket potato", "a potato baked in the oven with its skin on, often served with a filling (US: baked potato)",
+                 "皮ごと焼いたじゃがいも（ベイクドポテト）",
+                 useCases: ["カフェやパブで軽食を頼むとき", "簡単な夕食の話をするとき"],
+                 examples: [
+                    ("I'll have a jacket potato with cheese and beans, please.", "チーズとビーンズのベイクドポテトをお願いします。"),
+                    ("I can't be bothered to cook — let's just do jacket potatoes.", "料理するの面倒だし、ベイクドポテトにしよう。")
+                 ], ipa: "/ə ˌdʒækɪt pəˈteɪtəʊ/"),
+            make("a hob", "the flat top part of a cooker where you heat pans (US: stovetop)",
+                 "コンロ（調理台の加熱部分）",
+                 useCases: ["料理をしているとき", "キッチンの設備について話すとき"],
+                 examples: [
+                    ("Can you keep an eye on the pan on the hob?", "コンロの鍋、ちょっと見ててくれる？"),
+                    ("Did you remember to turn the hob off?", "コンロ消すの忘れなかった？")
+                 ], ipa: "/ə ˈhɒb/"),
+            make("a toastie", "a toasted sandwich, usually with melted cheese inside (US: grilled cheese)",
+                 "ホットサンド",
+                 useCases: ["カフェで軽食を頼むとき", "手早いランチの話をするとき"],
+                 examples: [
+                    ("I'll just make a cheese toastie for lunch.", "お昼はチーズのホットサンドでも作るよ。"),
+                    ("They do a brilliant ham and cheese toastie here.", "ここのハムチーズのホットサンド、最高なんだ。")
+                 ], ipa: "/ə ˈtəʊsti/"),
+            make("a voicemail", "a spoken message left on someone's phone when they don't answer",
+                 "留守電（のメッセージ）",
+                 useCases: ["電話に出られなかったとき", "連絡の取り方を話すとき"],
+                 examples: [
+                    ("I left you a voicemail — did you get it?", "留守電残したんだけど、聞いた？"),
+                    ("Sorry, I never listen to my voicemails. Just text me.", "ごめん、留守電って全然聞かないんだ。メッセージ送って。")
+                 ], ipa: "/ə ˈvɔɪsmeɪl/"),
+            make("a coach", "a comfortable bus for long journeys between cities or for trips (US: bus)",
+                 "長距離バス・観光バス",
+                 useCases: ["都市間の移動手段を話すとき", "旅行やツアーの話をするとき"],
+                 examples: [
+                    ("The coach is much cheaper than the train.", "長距離バスの方が電車よりずっと安いよ。"),
+                    ("We're getting the coach down to London on Friday.", "金曜に長距離バスでロンドンまで行くんだ。")
+                 ], ipa: "/ə ˈkəʊtʃ/"),
+            make("a nappy", "a piece of cloth or paper worn by a baby to absorb its waste (US: diaper)",
+                 "おむつ",
+                 useCases: ["赤ちゃんの世話をするとき", "子育ての話をするとき"],
+                 examples: [
+                    ("Hang on, I just need to change his nappy.", "ちょっと待って、おむつ替えなきゃ。"),
+                    ("We go through so many nappies, it's unreal.", "おむつの消費量がありえないくらい多いんだ。")
+                 ], ipa: "/ə ˈnæpi/"),
+            make("a radiator", "a metal panel on the wall, filled with hot water, used to heat a room (US: heater)",
+                 "暖房器具（壁付けのラジエーター）",
+                 useCases: ["部屋が寒いときや暑いとき", "暖房や光熱費の話をするとき"],
+                 examples: [
+                    ("Put your wet gloves on the radiator to dry.", "濡れた手袋はラジエーターに置いて乾かしなよ。"),
+                    ("Can you turn the radiator down? It's boiling in here.", "暖房弱めてくれる？ここ暑すぎるよ。")
+                 ], ipa: "/ə ˈreɪdieɪtə/"),
+            make("past its sell-by date", "(of food) too old to be sold; (humorous) no longer useful, fashionable or effective",
+                 "賞味期限切れ／時代遅れ・もう古い",
+                 useCases: ["食品の期限を確認するとき", "古くなった物や考えを冗談っぽく言うとき"],
+                 examples: [
+                    ("This milk's past its sell-by date — I'd chuck it.", "この牛乳、期限切れてるよ。捨てた方がいいと思う。"),
+                    ("Honestly, that joke's a bit past its sell-by date.", "正直、そのジョークもう古いよ。")
+                 ], ipa: "/ˌpɑːst ɪts ˈsel baɪ ˌdeɪt/"),
+            make("a fringe", "hair cut short and hanging down over your forehead (US: bangs)",
+                 "前髪",
+                 useCases: ["美容院で髪型を伝えるとき", "髪型の話をするとき"],
+                 examples: [
+                    ("Could you just trim my fringe a bit, please?", "前髪を少しだけ切ってもらえますか？"),
+                    ("Oh, you've had a fringe cut — it really suits you!", "あ、前髪作ったんだ！すごく似合ってるよ！")
+                 ], ipa: "/ə ˈfrɪndʒ/"),
         ]
     }
     private static var britishColloquial194: [Word] {
