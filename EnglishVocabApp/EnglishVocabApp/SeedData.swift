@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203 + britishColloquial204 + britishColloquial205 + britishColloquial206 + britishColloquial207 + britishColloquial208 + britishColloquial209 + britishColloquial210 + britishColloquial211 + britishColloquial212 + britishColloquial213 + britishColloquial214 + britishColloquial215
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203 + britishColloquial204 + britishColloquial205 + britishColloquial206 + britishColloquial207 + britishColloquial208 + britishColloquial209 + britishColloquial210 + britishColloquial211 + britishColloquial212 + britishColloquial213 + britishColloquial214 + britishColloquial215 + britishColloquial216
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -39442,6 +39442,115 @@ enum SeedData {
                     ("To put it simply, we can't afford it this year.", "簡単に言うと、今年はその余裕がないってこと。"),
                     ("It's complicated, but to put it simply, the train's cancelled.", "ややこしいんだけど、簡単に言うと電車が運休になったの。")
                  ], ipa: "/tə ˌpʊt ɪt ˈsɪmpli/"),
+        ]
+    }
+    private static var britishColloquial216: [Word] {
+        [
+            make("grab a seat", "a casual, friendly way of telling someone to sit down",
+                 "（気軽に）座って・席に着いて",
+                 useCases: ["来客に座るよう勧めるとき", "会議や集まりで席を勧めるとき"],
+                 examples: [
+                    ("Come in, grab a seat — I'll be with you in a minute.", "入って、座ってて。すぐ行くから。"),
+                    ("Grab a seat anywhere, the food's nearly ready.", "どこでも好きなとこ座って、もうすぐご飯できるよ。")
+                 ], ipa: "/ˌɡræb ə ˈsiːt/"),
+            make("make room", "to move things or yourself so there is space for someone or something",
+                 "場所を空ける・スペースを作る",
+                 useCases: ["人が座れるように詰めるとき", "物を置くスペースを作るとき"],
+                 examples: [
+                    ("Can you make room for one more on the sofa?", "ソファにもう一人座れるように詰めてくれる？"),
+                    ("I need to clear out the fridge to make room for the shopping.", "買ってきた物を入れるのに冷蔵庫を片付けなきゃ。")
+                 ], ipa: "/ˌmeɪk ˈruːm/"),
+            make("ahead of schedule", "earlier than was planned or expected",
+                 "予定より早く・前倒しで",
+                 useCases: ["作業が予定より早く進んだとき", "到着が予定より早いとき"],
+                 examples: [
+                    ("Good news — we're actually ahead of schedule.", "いい知らせだよ、実は予定より早く進んでるんだ。"),
+                    ("The train got in ten minutes ahead of schedule.", "電車が予定より10分早く着いたよ。")
+                 ], ipa: "/əˌhed əv ˈʃedjuːl/"),
+            make("tighten your belt", "to spend less money because you have less than before",
+                 "財布のひもを締める・節約する",
+                 useCases: ["出費を抑えなければならないとき", "家計が苦しいことを話すとき"],
+                 examples: [
+                    ("Prices have gone up, so we've all had to tighten our belts.", "物価が上がったから、みんな節約しなきゃいけなくなったよ。"),
+                    ("I'll need to tighten my belt if I want to go travelling next year.", "来年旅行に行きたいなら節約しないとな。")
+                 ], ipa: "/ˌtaɪtən jɔː ˈbelt/"),
+            make("take a deep breath", "to breathe in deeply, especially to calm yourself down",
+                 "深呼吸する・落ち着く",
+                 useCases: ["緊張している人を落ち着かせるとき", "焦っている自分を落ち着かせるとき"],
+                 examples: [
+                    ("Take a deep breath and tell me what happened.", "深呼吸して、何があったか話して。"),
+                    ("I took a deep breath and walked into the interview.", "深呼吸してから面接の部屋に入ったんだ。")
+                 ], ipa: "/ˌteɪk ə ˌdiːp ˈbreθ/"),
+            make("burst out laughing", "to suddenly start laughing loudly",
+                 "思わず吹き出す・急に笑い出す",
+                 useCases: ["予想外のことに笑ってしまったとき", "おかしかった場面を話すとき"],
+                 examples: [
+                    ("When he walked in wearing that hat, we all burst out laughing.", "彼があの帽子で入ってきた瞬間、みんな吹き出しちゃった。"),
+                    ("I tried to keep a straight face, but I just burst out laughing.", "真顔でいようとしたけど、思わず笑っちゃったよ。")
+                 ], ipa: "/ˌbɜːst aʊt ˈlɑːfɪŋ/"),
+            make("in stitches", "laughing a lot and unable to stop",
+                 "腹を抱えて笑って・大爆笑で",
+                 useCases: ["すごく笑ったことを話すとき", "面白い人や映画をほめるとき"],
+                 examples: [
+                    ("Her stories had us in stitches all night.", "彼女の話で一晩中みんな大爆笑だったよ。"),
+                    ("I was in stitches watching that film.", "あの映画見てて腹がよじれるほど笑ったよ。")
+                 ], ipa: "/ɪn ˈstɪtʃɪz/"),
+            make("can't fault it", "said when you think something is so good that there is nothing to criticise",
+                 "文句のつけようがない・非の打ちどころがない",
+                 useCases: ["料理やサービスを絶賛するとき", "レビューや感想を伝えるとき"],
+                 examples: [
+                    ("The hotel was spotless and the staff were lovely — can't fault it.", "ホテルはピカピカでスタッフも感じが良くて、文句なしだったよ。"),
+                    ("Honestly, I can't fault the food here.", "正直、ここの料理は非の打ちどころがないね。")
+                 ], ipa: "/ˌkɑːnt ˈfɔːlt ɪt/"),
+            make("wide awake", "completely awake and not sleepy at all",
+                 "すっかり目が覚めて・目がさえて",
+                 useCases: ["眠れないとき", "朝すっきり目が覚めたとき"],
+                 examples: [
+                    ("It's 2 a.m. and I'm still wide awake.", "夜中の2時なのにまだ目がさえてるよ。"),
+                    ("That coffee's got me wide awake now.", "あのコーヒーで完全に目が覚めたよ。")
+                 ], ipa: "/ˌwaɪd əˈweɪk/"),
+            make("be up all night", "to stay awake for the whole night",
+                 "一晩中起きている・徹夜する",
+                 useCases: ["寝不足の理由を話すとき", "子どもの世話や仕事で眠れなかったとき"],
+                 examples: [
+                    ("The baby was up all night, so I'm shattered.", "赤ちゃんが一晩中起きてたから、もうクタクタだよ。"),
+                    ("I was up all night finishing this report.", "このレポートを仕上げるのに徹夜しちゃった。")
+                 ], ipa: "/bi ˌʌp ɔːl ˈnaɪt/"),
+            make("have a bath", "to wash yourself by sitting in a bath full of water",
+                 "お風呂に入る・湯船につかる",
+                 useCases: ["夜のリラックスの過ごし方を話すとき", "家での予定を伝えるとき"],
+                 examples: [
+                    ("I'm going to have a bath and get an early night.", "お風呂に入って今日は早く寝るね。"),
+                    ("Nothing beats having a hot bath after a long day.", "長い一日の後の熱いお風呂は最高だね。")
+                 ], ipa: "/ˌhæv ə ˈbɑːθ/"),
+            make("do one's hair", "to brush, style or arrange your hair",
+                 "髪をセットする・髪を整える",
+                 useCases: ["出かける準備をしているとき", "支度に時間がかかる理由を話すとき"],
+                 examples: [
+                    ("Give me five minutes, I just need to do my hair.", "5分待って、髪だけセットしたいの。"),
+                    ("Who did your hair? It looks great.", "その髪、誰にやってもらったの？すごく素敵。")
+                 ], ipa: "/ˌduː wʌnz ˈheə/"),
+            make("filling", "(of food) making you feel full quickly",
+                 "お腹にたまる・腹持ちがいい",
+                 useCases: ["料理の量や満腹感について話すとき", "食事を選ぶとき"],
+                 examples: [
+                    ("Porridge is really filling — I won't need a snack till lunch.", "オートミールは腹持ちがいいから、お昼まで間食いらないよ。"),
+                    ("That pasta was so filling, I couldn't finish it.", "あのパスタ、すごくお腹にたまって食べきれなかった。")
+                 ], ipa: "/ˈfɪlɪŋ/"),
+            make("mouth-watering", "(of food) looking or smelling so good that you want to eat it",
+                 "よだれが出そうな・とてもおいしそうな",
+                 useCases: ["料理の見た目や匂いをほめるとき", "おすすめのお店を紹介するとき"],
+                 examples: [
+                    ("The smell from that bakery is mouth-watering.", "あのパン屋の匂い、よだれが出そう。"),
+                    ("They've got a mouth-watering selection of cakes.", "あそこはおいしそうなケーキがずらりと揃ってるよ。")
+                 ], ipa: "/ˈmaʊθ ˌwɔːtərɪŋ/"),
+            make("how annoying", "said when something small goes wrong and irritates you",
+                 "うっとうしいな・イライラするね・面倒だね",
+                 useCases: ["ちょっとした不運に反応するとき", "相手の愚痴に共感するとき"],
+                 examples: [
+                    ("The shop closed five minutes before we got there — how annoying!", "着く5分前に店が閉まっちゃった、ほんとイラっとする！"),
+                    ("Your train got cancelled again? How annoying.", "また電車運休になったの？それは面倒だね。")
+                 ], ipa: "/ˌhaʊ əˈnɔɪɪŋ/"),
         ]
     }
     private static var britishColloquial205: [Word] {
