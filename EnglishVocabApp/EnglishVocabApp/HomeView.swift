@@ -31,7 +31,6 @@ struct HomeView: View {
                     VStack(spacing: 18) {
                         topBar
                         heroCard
-                        trialBanner
                         statsCard
                         menuSection
                         topicBar
@@ -327,16 +326,6 @@ struct HomeView: View {
                 .padding(.bottom, 10)
                 Text("復習リスト").font(LFont.heading(19)).foregroundStyle(Palette.text).marker(Palette.markerOrange)
                 Text("忘れる前にもう一度").font(LFont.body(12)).foregroundStyle(Palette.subText)
-                Button {
-                    let words = store.todayReviewWords(limit: settings.dailyLimit)
-                    if words.isEmpty {
-                        go(Route.reviewList)
-                    } else {
-                        go(Route.flashcards(FlashcardDeck(title: "復習リスト", wordIds: words.map { $0.id })))
-                    }
-                } label: { Text("はじめる →") }
-                .buttonStyle(GreenButtonStyle(fullWidth: false))
-                .padding(.top, 6)
             }
             .frame(maxWidth: .infinity, minHeight: 176, alignment: .topLeading)
             .sketchCard(padding: 14, emphasized: true)
