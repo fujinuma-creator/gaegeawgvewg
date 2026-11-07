@@ -26,6 +26,8 @@ struct AllWordsView: View {
     @State private var generating: Set<String> = []
     @State private var errorMessage: String?
     @State private var showAdd = false
+    /// Shown once the list has been scrolled well past the header.
+    @State private var showTopButton = false
 
     private var filtered: [Word] {
         var list = store.words
@@ -59,11 +61,14 @@ struct AllWordsView: View {
     }
 
     var body: some View {
-        ZStack {
+        ScrollViewReader { proxy in
+        ZStack(alignment: .bottomTrailing) {
             HatchBackground()
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 16) {
+                    ScrollOffsetMarker(space: "allWords")
                     ScreenTopBar { path.removeLast() }
+                        .id("allWords.top")
                     ScreenHeaderCard(title: "全単語", tagline: "ひとつずつ、\n自分のことばに。", image: "hdr_book")
                     SketchSearchField(placeholder: "単語・意味・英語の定義で検索", text: $query)
                     HStack(spacing: 8) {
@@ -164,6 +169,25 @@ struct AllWordsView: View {
                 .padding(.top, 8)
                 .padding(.bottom, 40)
             }
+            .coordinateSpace(name: "allWords")
+            .onPreferenceChange(ScrollOffsetKey.self) { y in
+                let show = y < -700
+                Task { @MainActor in
+                    if show != showTopButton {
+                        withAnimation(.easeInOut(duration: 0.2)) { showTopButton = show }
+                    }
+                }
+            }
+
+            if showTopButton {
+                ScrollToTopButton {
+                    withAnimation(.easeInOut(duration: 0.35)) { proxy.scrollTo("allWords.top", anchor: .top) }
+                }
+                .padding(.trailing, 18)
+                .padding(.bottom, 26)
+                .transition(.opacity.combined(with: .scale(scale: 0.8)))
+            }
+        }
         }
         .toolbar(.hidden, for: .navigationBar)
         .studyScreen()

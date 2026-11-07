@@ -540,3 +540,47 @@ extension View {
     /// Marks a screen whose time counts toward 本日の学習時間.
     func studyScreen() -> some View { modifier(StudyScreenModifier()) }
 }
+
+// MARK: - 一番上へ戻るボタン
+
+/// Reports how far the top of a scroll view's content has moved (negative
+/// = scrolled down) in the named coordinate space.
+struct ScrollOffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
+}
+
+/// Put this as the first view inside a scroll view's content.
+struct ScrollOffsetMarker: View {
+    let space: String
+    var body: some View {
+        GeometryReader { g in
+            Color.clear.preference(key: ScrollOffsetKey.self, value: g.frame(in: .named(space)).minY)
+        }
+        .frame(height: 0)
+    }
+}
+
+/// Semi-transparent round "↑" button in the sketch style.
+struct ScrollToTopButton: View {
+    let action: () -> Void
+    var body: some View {
+        Button(action: action) {
+            VStack(spacing: 0) {
+                Image(systemName: "arrow.up")
+                    .font(.system(size: 16, weight: .heavy))
+                Text("TOP")
+                    .font(.system(size: 9, weight: .heavy, design: .rounded))
+            }
+            .foregroundStyle(Palette.text)
+            .frame(width: 50, height: 50)
+            .background(Circle().fill(Palette.paper.opacity(0.6)))
+            .background(Circle().fill(.ultraThinMaterial))
+            .overlay(Circle().stroke(Palette.ink.opacity(0.55), lineWidth: 1.4))
+            .shadow(color: .black.opacity(0.12), radius: 4, y: 2)
+            .opacity(0.85)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("一番上に戻る")
+    }
+}
