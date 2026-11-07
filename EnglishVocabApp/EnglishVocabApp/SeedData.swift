@@ -91,7 +91,8 @@ enum SeedData {
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
-            britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227
+            britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
+            britishColloquial228
         ]
         return groups.flatMap { $0 }
     }
@@ -40271,6 +40272,115 @@ enum SeedData {
                     ("I'm a bit hard up this month, so I'll skip dinner.", "今月ちょっと金欠だから、夕食はパスするね。"),
                     ("We were pretty hard up when we were students.", "学生の頃はけっこうお金に困ってたよ。")
                  ], ipa: "/ˌhɑːd ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial228: [Word] {
+        [
+            make("throw out", "to get rid of something you no longer want",
+                 "捨てる・処分する",
+                 useCases: ["片付けや断捨離をするとき", "古くなった物を処分するとき"],
+                 examples: [
+                    ("I finally threw out all my old magazines.", "やっと古い雑誌を全部捨てたよ。"),
+                    ("Don't throw that out — I still need it!", "それ捨てないで、まだ使うんだから！")
+                 ], ipa: "/ˌθrəʊ ˈaʊt/"),
+            make("the best bit", "the most enjoyable or impressive part of something",
+                 "一番良かったところ・一番の見どころ",
+                 useCases: ["映画や旅行の感想を話すとき", "出来事のハイライトを伝えるとき"],
+                 examples: [
+                    ("The best bit of the trip was the food.", "旅行で一番良かったのは食べ物だね。"),
+                    ("Wait for it — this is the best bit!", "待って、ここからが一番いいところなんだ！")
+                 ], ipa: "/ðə ˌbest ˈbɪt/"),
+            make("well deserved", "fully earned because of hard work or good qualities",
+                 "当然の・頑張った甲斐のある",
+                 useCases: ["昇進や合格を祝うとき", "休暇を取る人に声をかけるとき"],
+                 examples: [
+                    ("Congrats on the promotion — it's well deserved!", "昇進おめでとう、当然の結果だよ！"),
+                    ("Enjoy your holiday, it's well deserved.", "休暇楽しんでね、それだけ頑張ったんだから。")
+                 ], ipa: "/ˌwel dɪˈzɜːvd/"),
+            make("be itching to", "to be very eager to do something",
+                 "〜したくてうずうずしている",
+                 useCases: ["何かを早くやりたいとき", "待ちきれない気持ちを伝えるとき"],
+                 examples: [
+                    ("I'm itching to get back on the slopes this winter.", "この冬、早くまたスキーに行きたくてうずうずしてる。"),
+                    ("She's been itching to tell you the news.", "彼女、ずっとあなたにその話をしたくてうずうずしてたよ。")
+                 ], ipa: "/biː ˈɪtʃɪŋ tuː/"),
+            make("forget about it", "don't worry about it; it's not important",
+                 "気にしないで・もういいよ",
+                 useCases: ["謝られたときに返すとき", "お礼を言われて遠慮するとき"],
+                 examples: [
+                    ("\"Sorry I'm late.\" \"Forget about it, we've only just sat down.\"", "「遅れてごめん」「気にしないで、今座ったところだから」"),
+                    ("Forget about it — you can pay me back whenever.", "いいって、いつでも返してくれればいいから。")
+                 ], ipa: "/fəˈɡet əˌbaʊt ɪt/"),
+            make("bless him", "(informal) used to show affection or sympathy for someone, often after describing something sweet or unlucky they did",
+                 "（あら）かわいいね・かわいそうに",
+                 useCases: ["子どもや友人の健気な行動を話すとき", "誰かに同情するとき"],
+                 examples: [
+                    ("He made me breakfast in bed, bless him.", "ベッドに朝ごはん持ってきてくれたの、かわいいよね。"),
+                    ("Aw, bless her — she's been working all weekend.", "あらら、かわいそうに。彼女、週末ずっと働いてたんだよ。")
+                 ], ipa: "/ˈbles ɪm/"),
+            make("clear my head", "to stop feeling stressed or confused so you can think properly",
+                 "頭をすっきりさせる・気分転換する",
+                 useCases: ["散歩や休憩に出るとき", "考えがまとまらないとき"],
+                 examples: [
+                    ("I'm going for a walk to clear my head.", "頭をすっきりさせるのにちょっと散歩してくるね。"),
+                    ("A swim always helps me clear my head.", "泳ぐといつも頭がすっきりするんだ。")
+                 ], ipa: "/ˌklɪə maɪ ˈhed/"),
+            make("hang tight", "(informal) to wait patiently for a short time",
+                 "ちょっと待ってて・そのまま待機して",
+                 useCases: ["相手に少し待ってもらうとき", "結果を待っている人を励ますとき"],
+                 examples: [
+                    ("Hang tight, I'll be there in ten minutes.", "ちょっと待ってて、10分で着くから。"),
+                    ("We haven't heard back yet, so just hang tight.", "まだ返事が来てないから、もう少し待ってて。")
+                 ], ipa: "/ˌhæŋ ˈtaɪt/"),
+            make("in a tick", "(British, informal) very soon; in a moment",
+                 "すぐに・ちょっと待ってね",
+                 useCases: ["すぐ戻ると伝えるとき", "少しだけ待ってもらうとき"],
+                 examples: [
+                    ("I'll be with you in a tick.", "すぐ行くからちょっと待ってね。"),
+                    ("Back in a tick — just grabbing my coat.", "すぐ戻るね、コート取ってくるだけ。")
+                 ], ipa: "/ɪn ə ˈtɪk/"),
+            make("dead right", "(British, informal) completely correct",
+                 "全くその通り・大正解",
+                 useCases: ["相手の意見に強く同意するとき", "予想が当たったとき"],
+                 examples: [
+                    ("You were dead right about that restaurant — it was amazing.", "あのレストランについては君の言う通りだった、最高だったよ。"),
+                    ("\"We should leave early to beat the traffic.\" \"Dead right.\"", "「渋滞を避けるために早めに出よう」「その通りだね」")
+                 ], ipa: "/ˌded ˈraɪt/"),
+            make("a spot of", "(British, informal) a small amount of something",
+                 "ちょっとした〜・少しの〜",
+                 useCases: ["軽い食事や活動に誘うとき", "ちょっとしたトラブルを控えめに言うとき"],
+                 examples: [
+                    ("Fancy a spot of lunch?", "ちょっとランチでもどう？"),
+                    ("We had a spot of bother with the car on the way.", "途中で車にちょっとしたトラブルがあってね。")
+                 ], ipa: "/ə ˈspɒt əv/"),
+            make("rock up", "(British, informal) to arrive somewhere, often casually or late",
+                 "（ふらっと）現れる・やって来る",
+                 useCases: ["遅れて来た人について話すとき", "気軽に到着することを伝えるとき"],
+                 examples: [
+                    ("He rocked up an hour late without even apologising.", "彼、1時間遅れてふらっと来て、謝りもしなかったよ。"),
+                    ("Just rock up whenever — we'll be there all afternoon.", "いつでも気軽に来てよ、午後はずっといるから。")
+                 ], ipa: "/ˌrɒk ˈʌp/"),
+            make("get your bearings", "to find out where you are or become familiar with a new place or situation",
+                 "方向感覚をつかむ・状況に慣れる",
+                 useCases: ["知らない街に着いたとき", "新しい職場に慣れるとき"],
+                 examples: [
+                    ("Give me a minute to get my bearings — which way is the station?", "ちょっと方向を確認させて、駅はどっち？"),
+                    ("It took me a few weeks to get my bearings at the new job.", "新しい仕事に慣れるのに数週間かかったよ。")
+                 ], ipa: "/ˌɡet jɔː ˈbeərɪŋz/"),
+            make("I'll go with", "(informal) used when choosing something, especially when ordering food or drink",
+                 "〜にします",
+                 useCases: ["レストランで注文するとき", "選択肢から選ぶとき"],
+                 examples: [
+                    ("I think I'll go with the fish, please.", "魚料理にしようかな、お願いします。"),
+                    ("Hmm, tough choice — I'll go with the blue one.", "うーん、迷うけど青い方にするよ。")
+                 ], ipa: "/aɪl ˈɡəʊ wɪð/"),
+            make("fill up on", "to eat a lot of one food so that you have no room for anything else",
+                 "〜でお腹いっぱいになる",
+                 useCases: ["食事の前におやつを食べ過ぎたとき", "メインのために控えるよう注意するとき"],
+                 examples: [
+                    ("Don't fill up on bread — the mains are huge.", "パンでお腹いっぱいにしないでね、メインがすごい量だから。"),
+                    ("I filled up on snacks and couldn't eat my dinner.", "おやつでお腹いっぱいになって夕食が食べられなかった。")
+                 ], ipa: "/ˌfɪl ˈʌp ɒn/"),
         ]
     }
     private static var britishColloquial220: [Word] {
