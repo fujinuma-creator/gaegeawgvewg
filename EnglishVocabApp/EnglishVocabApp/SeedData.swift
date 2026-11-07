@@ -91,7 +91,7 @@ enum SeedData {
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
-            britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226
+            britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227
         ]
         return groups.flatMap { $0 }
     }
@@ -40162,6 +40162,115 @@ enum SeedData {
                     ("Thanks for tonight — you're such a good listener.", "今夜はありがとう。本当に聞き上手だね。"),
                     ("I'm not much of a talker, but I'm a good listener.", "話すのは得意じゃないけど、聞き上手なんだ。")
                  ], ipa: "/ə ˌɡʊd ˈlɪsnə/"),
+        ]
+    }
+    private static var britishColloquial227: [Word] {
+        [
+            make("in a pickle", "in a difficult or awkward situation",
+                 "困った状況で・窮地に陥って",
+                 useCases: ["トラブルで困っているとき", "助けを求めるとき"],
+                 examples: [
+                    ("I've locked myself out — I'm in a bit of a pickle.", "鍵を中に置いたまま締め出されちゃって、ちょっと困ってるんだ。"),
+                    ("Can you help me? I'm in a real pickle with this report.", "手伝ってくれる？このレポートで本当に困ってて。")
+                 ], ipa: "/ɪn ə ˈpɪkəl/"),
+            make("party pooper", "someone who spoils other people's fun",
+                 "場をしらけさせる人・ノリの悪い人",
+                 useCases: ["早く帰ろうとする友達をからかうとき", "楽しい場に水を差されたとき"],
+                 examples: [
+                    ("Don't be a party pooper — stay for one more!", "ノリ悪いこと言わないで、もう一杯いこうよ！"),
+                    ("Sorry to be a party pooper, but I've got work tomorrow.", "しらけさせてごめん、でも明日仕事なんだ。")
+                 ], ipa: "/ˈpɑːti ˌpuːpə/"),
+            make("rummage through", "to search for something by moving things around carelessly",
+                 "ガサゴソ探す・引っかき回して探す",
+                 useCases: ["カバンや引き出しの中を探すとき", "物が見つからないとき"],
+                 examples: [
+                    ("I rummaged through my bag but couldn't find my keys.", "カバンの中をガサゴソ探したけど、鍵が見つからなかった。"),
+                    ("Stop rummaging through my drawers!", "私の引き出しを勝手に漁らないで！")
+                 ], ipa: "/ˈrʌmɪdʒ θruː/"),
+            make("dawdle", "to move or do something very slowly, wasting time",
+                 "ぐずぐずする・だらだら歩く",
+                 useCases: ["急いでいるのに相手が遅いとき", "子どもを急かすとき"],
+                 examples: [
+                    ("Stop dawdling — we'll miss the train!", "ぐずぐずしないで、電車に乗り遅れるよ！"),
+                    ("Sorry I'm late, I was dawdling in the shops.", "遅れてごめん、お店でだらだらしちゃってた。")
+                 ], ipa: "/ˈdɔːdəl/"),
+            make("slack off", "to work less hard or with less effort than usual",
+                 "サボる・手を抜く",
+                 useCases: ["仕事や勉強で気が緩んだとき", "同僚の働きぶりを話すとき"],
+                 examples: [
+                    ("I've been slacking off at the gym lately.", "最近ジムをサボりがちなんだ。"),
+                    ("We can't slack off now — the deadline's on Friday.", "今は手を抜けないよ。締め切りは金曜なんだから。")
+                 ], ipa: "/ˌslæk ˈɒf/"),
+            make("tight-fisted", "unwilling to spend or give money",
+                 "けちな・財布のひもが固い",
+                 useCases: ["お金を出したがらない人について話すとき", "冗談で友達をからかうとき"],
+                 examples: [
+                    ("He's so tight-fisted he won't even buy a round.", "あいつケチすぎて、一杯もおごらないんだよ。"),
+                    ("Don't be tight-fisted — it's her birthday!", "ケチケチしないで、彼女の誕生日なんだから！")
+                 ], ipa: "/ˌtaɪt ˈfɪstɪd/"),
+            make("up for it", "willing and keen to do something",
+                 "乗り気で・やる気がある",
+                 useCases: ["誘いに乗るか聞くとき", "挑戦する気があるか確かめるとき"],
+                 examples: [
+                    ("We're going for a hike on Sunday — are you up for it?", "日曜にハイキング行くんだけど、乗る？"),
+                    ("I'm tired, but I'm still up for it.", "疲れてるけど、まだ行く気はあるよ。")
+                 ], ipa: "/ˌʌp fər ɪt/"),
+            make("lost cause", "someone or something that has no chance of success or improvement",
+                 "見込みのないもの・お手上げ",
+                 useCases: ["何をしても改善しないとき", "冗談で自分を卑下するとき"],
+                 examples: [
+                    ("I've tried to teach him to cook, but he's a lost cause.", "彼に料理を教えようとしたけど、もうお手上げだよ。"),
+                    ("Don't give up — it's not a lost cause yet.", "諦めないで。まだ見込みがないわけじゃないよ。")
+                 ], ipa: "/ˌlɒst ˈkɔːz/"),
+            make("half-hearted", "done without much enthusiasm or effort",
+                 "気乗りしない・中途半端な",
+                 useCases: ["やる気のない態度を指摘するとき", "形だけの謝罪や努力について話すとき"],
+                 examples: [
+                    ("That was a pretty half-hearted apology.", "ずいぶん気持ちのこもってない謝罪だったね。"),
+                    ("I made a half-hearted attempt to tidy up.", "一応片付けようとはしたんだけど、中途半端で。")
+                 ], ipa: "/ˌhɑːf ˈhɑːtɪd/"),
+            make("don't jinx it", "don't say something that might cause bad luck by talking about good things too early",
+                 "縁起でもないこと言わないで・フラグ立てないで",
+                 useCases: ["物事が順調なときに楽観的な発言をされたとき", "結果が出る前に喜ばれたとき"],
+                 examples: [
+                    ("\"We're definitely going to win.\" \"Don't jinx it!\"", "「絶対勝てるよ」「フラグ立てないで！」"),
+                    ("The flight's on time so far — don't jinx it.", "今のところ飛行機は定刻だよ。余計なこと言わないでね。")
+                 ], ipa: "/ˌdəʊnt ˈdʒɪŋks ɪt/"),
+            make("tacky", "cheap-looking and in bad taste",
+                 "安っぽい・ダサい・悪趣味な",
+                 useCases: ["お土産や装飾の感想を言うとき", "センスについて話すとき"],
+                 examples: [
+                    ("The souvenirs were a bit tacky, to be honest.", "正直、お土産はちょっと安っぽかったな。"),
+                    ("Is it tacky to wear white to a wedding?", "結婚式に白を着るのって悪趣味かな？")
+                 ], ipa: "/ˈtæki/"),
+            make("fuming", "extremely angry",
+                 "カンカンに怒っている",
+                 useCases: ["誰かが激怒しているとき", "自分が腹を立てたことを話すとき"],
+                 examples: [
+                    ("She was fuming when she found out.", "それを知ったとき、彼女はカンカンだったよ。"),
+                    ("I'm absolutely fuming — they cancelled my flight again.", "もう本当に頭にきてる。また便が欠航になったんだ。")
+                 ], ipa: "/ˈfjuːmɪŋ/"),
+            make("sloppy", "careless and not done properly",
+                 "雑な・いい加減な",
+                 useCases: ["仕事の質を指摘するとき", "自分のミスを反省するとき"],
+                 examples: [
+                    ("Sorry, that was a bit sloppy of me.", "ごめん、ちょっと雑だったね。"),
+                    ("The service was really sloppy tonight.", "今夜のサービスは本当にいい加減だった。")
+                 ], ipa: "/ˈslɒpi/"),
+            make("nibbles", "small snacks served with drinks, e.g. at a party",
+                 "おつまみ・軽食",
+                 useCases: ["家に人を招くとき", "パーティーの準備をするとき"],
+                 examples: [
+                    ("Come round at seven — there'll be drinks and nibbles.", "7時においでよ。飲み物とおつまみ用意しとくから。"),
+                    ("I'll bring some nibbles for later.", "あとで食べるおつまみ持っていくね。")
+                 ], ipa: "/ˈnɪbəlz/"),
+            make("hard up", "not having much money",
+                 "金欠で・お金に困って",
+                 useCases: ["お金がなくて誘いを断るとき", "生活が苦しい時期を話すとき"],
+                 examples: [
+                    ("I'm a bit hard up this month, so I'll skip dinner.", "今月ちょっと金欠だから、夕食はパスするね。"),
+                    ("We were pretty hard up when we were students.", "学生の頃はけっこうお金に困ってたよ。")
+                 ], ipa: "/ˌhɑːd ˈʌp/"),
         ]
     }
     private static var britishColloquial220: [Word] {
