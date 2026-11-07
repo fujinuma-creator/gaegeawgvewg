@@ -6,137 +6,93 @@ import SwiftUI
 /// users' libraries on launch (preserving review progress on words they already had).
 enum SeedData {
 
+    /// All built-in vocabulary groups, in order. Kept as an array literal
+    /// (not a long `a + b + c …` chain): a chain of hundreds of `+` makes
+    /// the Swift type checker take so long that Xcode appears to hang.
+    /// To add a group, define `private static var xxx: [Word]` and add
+    /// `xxx` to this list (`, xxx` or ` + xxx` after the last name both work).
     static var additionalWords: [Word] {
-        return phrasalVerbs + idioms + adjectives + verbs + nouns
-            + dailyAndEmotion + workAndBusiness + travel
-            + moneyAndShopping + healthAndBody + tech
-            + timeAndFrequency + communication + dailyCore
-            + extraPhrasalVerbs + extraIdioms + extraAdjectives
-            + conversationFillers + connectives
-            + extraPhrasalVerbs2 + extraVerbs + extraAdjectives2
-            + extraNouns + extraIdioms2
-            + extraPhrasalVerbs3 + extraVerbs3 + extraAdjectives3
-            + extraNouns3 + extraConnectives3
-            + casualPhrasals + casualFillers + reactionWords
-            + casualIdioms + emotionStates
-            + casualPhrasals4 + casualVerbs4 + casualAdjectives4
-            + casualNouns4 + casualIdioms4 + casualConnectives4
-            + grammarPhrases4
-            + directionPhrases5 + howQuestions5 + whatQuestions5
-            + causatives5 + comeGetUsed5 + emphasis5 + comparatives5
-            + conditionals5 + thereIts5 + requestPatterns5
-            + tooEnoughSo5 + gerundPatterns5 + seemAppear5
-            + casualConstructions5
-            + plansAndIntentions6 + pastNarratives6 + iVerbThat6
-            + youCheckPatterns6 + theWayPatterns6 + proposalSuggest6
-            + ingPatterns6 + letMeVariations6 + idVerbPatterns6
-            + tendToHappenTo6 + emphasisExclaim6 + hedgingPatterns6
-            + endUpVariations6 + supposedToForms6 + predictions6
-            + wheneverPatterns6 + negativePatterns6 + theXIs6
-            + comeGoVerb6 + sentenceEnders6
-            + britishGreetings7 + britishReactions7 + britishDegree7
-            + britishFood7 + britishSuggestions7 + britishVerbs7
-            + britishComplaints7 + britishAgreement7
-            + elegantOpeners8 + elegantAgreement8 + elegantDisagreement8
-            + elegantHedging8 + elegantStructure8 + elegantSuggestions8
-            + elegantEvaluations8 + elegantConnectives8
-            + miscBatch9
-            + actionVerbs10 + thinkingVerbs10 + communicationVerbs10
-            + stateChangeVerbs10 + handlingVerbs10
-            + iVerbSimple10 + youVerbCheck10 + thatsReactions10
-            + howVerbQuestions10 + verbGerund10 + verbInfinitive10
-            + toBeAdj10 + sentenceEnders10
-            + howReactions11 + ifPatterns11 + theresPatterns11
-            + itsPatterns11 + causativePatterns11 + whatPatterns11
-            + adverbPatterns11 + endingPatterns11
-            + failureSuccessVerbs11 + relationshipVerbs11
-            + mindChangeVerbs11 + observationVerbs11
-            + prepositionalConnectors11
-            + dailyNouns12 + personNouns12 + emotionNouns12
-            + situationNouns12 + reactionVerbs12 + changeVerbs12
-            + enjoyVerbs12 + destructionVerbs12 + supportVerbs12
-            + feelingPhrases12 + sayingPhrases12 + conversationFlow12
-            + emotionWords13 + communicationWords13 + workWords13
-            + dailyWords13 + troubleWords13 + evaluationWords13
-            + casualWords13
-            + pathAndOthers14
-            + peopleWords15 + emotionWords15 + relationshipWords15
-            + workWords15 + dailyWords15 + troubleWords15
-            + evaluationWords15 + situationWords15
-            + slangActions16 + slangFeelings16 + slangPraise16
-            + slangReactions16 + slangAbbreviations16
-            + slangPeopleAndMoney16 + slangStateAndOthers16
-            + workComms17 + critiqueWords17 + outcomeWords17
-            + adjectiveWords17 + verbWords17 + idiomWords17
-            + thinkingPhrases18 + businessVerbs18 + learningWords18
-            + discussionPhrases19 + actionAdjectives19 + conceptPhrases19
-            + reactionWords20 + mediaAndOthers20
-            + opinionPhrases21 + learningPhrases21 + actionPhrases21
-            + economySocial22 + businessTerms22 + actionVerbs22
-            + characterStates22 + evaluationMedia22
-            + personalityTypes23 + planningThoughts23
-            + actionObjects23 + conceptsStates23
-            + legalSocial24 + qualityVerbs24
-            + emotionMood25 + actionMotion25 + adjectiveObjects25
-            + emotionStates26 + qualityAdjectives26 + verbNouns26
-            + impressionEmotion27 + stateLocation27 + verbFlow27
-            + emotionMemory28 + actionVerbs28 + nounAdjective28
-            + actionStates29 + qualityConcepts29
-            + actionVerbs30 + qualityExpression30
-            + actionVerbs31 + qualityAdjectives31
-            + conversationalPhrases32
-            + actionVerbs33 + emotionStates33
-            + expressionFillers33 + nounConcepts33
-            + businessCommerce34 + actionVerbs34
-            + idiomsProverbs35 + nounExpressions35
-            + actionVerbs36 + qualityAdjectives36
-            + objectsItems36 + foodAndAnimals36
-            + conceptStates36
-            + assumptionPhrases37 + sentencePatterns37 + responsePhrases37
-            + businessComms38 + actionResponses38
-            + casualReactions39
-            + verbsActions40 + adjectiveNouns40
-            + conversationOpeners41
-            + idiomsObjects42
-            + sizeQualities43
-            + casualExpressions44
-            + greetingsReactions45 + verbStates45
-            + conceptsNouns46
-            + techConcepts47
-            + politicsActions48
-            + landscapeConcepts49 + verbStates49 + abstractTraits49
-            + actionVerbs50 + nounAdjectives50
-            + skillsAndStyle51
-            + businessAnalysis52 + verbsAndRelations52
-            + miscNouns53
-            + statesAndJudgments54
-            + actionVerbs55 + nounConcepts55 + statesExpressions55
-            + businessNouns56 + verbsActions56 + adjectivesTraits56
-            + phrasesAndExpressions57
-            + businessLegal58 + healthBody58 + verbsActions58
-            + nounsObjects58 + adjectives58 + expressions58 + eduMisc58
-            + dayOffLife59 + workStudy59 + gamingSports59
-            + dataConcepts59 + sensoryMisc59
-            + expressionsQA60 + thingsObjects60 + verbsMix60 + adjectivesMix60
-            + healthBody61 + businessConcepts61 + verbsActions61
-            + nounsObjects61 + expressionsPhrases61
-            + dailyLife62 + verbsActions62 + nounsObjects62
-            + adjectivesStates62 + expressionsPhrases62 + education62
-            + politeRequests63 + casualPhrases63 + schedulingMisc63
-            + verbsAndPhrases63 + nounsAndMisc63 + statesAndFaults63
-            + weatherHealth64 + travelLife64 + verbsActions64
-            + nounsConcepts64 + expressions64
-            + workCareer65 + idiomsCasual65 + verbsAndActions65
-            + nounsAndObjects65 + adjectivesAndStates65
-            + socialDiscourse66 + opinionPhrases66 + reactionsFeelings66
-            + businessTech66 + verbsActions66 + nounsObjects66
-            + adjectivesStates66 + phrasesExpressions66
-            + gardenWork67 + verbsActions67 + nounsConcepts67 + expressions67
-            + sportsGame68 + socialDiscourse68 + objectsTech68 + verbsActions68
-            + expressionsA68 + expressionsB68 + adjectivesStates68
-            + businessFormal69 + politeEmail69 + healthMind69
-            + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203 + britishColloquial204 + britishColloquial205 + britishColloquial206 + britishColloquial207 + britishColloquial208 + britishColloquial209 + britishColloquial210 + britishColloquial211 + britishColloquial212 + britishColloquial213 + britishColloquial214 + britishColloquial215 + britishColloquial216 + britishColloquial217 + britishColloquial218 + britishColloquial219 + britishColloquial220
+        let groups: [[Word]] = [
+            phrasalVerbs, idioms, adjectives, verbs, nouns, dailyAndEmotion,
+            workAndBusiness, travel, moneyAndShopping, healthAndBody, tech, timeAndFrequency,
+            communication, dailyCore, extraPhrasalVerbs, extraIdioms, extraAdjectives, conversationFillers,
+            connectives, extraPhrasalVerbs2, extraVerbs, extraAdjectives2, extraNouns, extraIdioms2,
+            extraPhrasalVerbs3, extraVerbs3, extraAdjectives3, extraNouns3, extraConnectives3, casualPhrasals,
+            casualFillers, reactionWords, casualIdioms, emotionStates, casualPhrasals4, casualVerbs4,
+            casualAdjectives4, casualNouns4, casualIdioms4, casualConnectives4, grammarPhrases4, directionPhrases5,
+            howQuestions5, whatQuestions5, causatives5, comeGetUsed5, emphasis5, comparatives5,
+            conditionals5, thereIts5, requestPatterns5, tooEnoughSo5, gerundPatterns5, seemAppear5,
+            casualConstructions5, plansAndIntentions6, pastNarratives6, iVerbThat6, youCheckPatterns6, theWayPatterns6,
+            proposalSuggest6, ingPatterns6, letMeVariations6, idVerbPatterns6, tendToHappenTo6, emphasisExclaim6,
+            hedgingPatterns6, endUpVariations6, supposedToForms6, predictions6, wheneverPatterns6, negativePatterns6,
+            theXIs6, comeGoVerb6, sentenceEnders6, britishGreetings7, britishReactions7, britishDegree7,
+            britishFood7, britishSuggestions7, britishVerbs7, britishComplaints7, britishAgreement7, elegantOpeners8,
+            elegantAgreement8, elegantDisagreement8, elegantHedging8, elegantStructure8, elegantSuggestions8, elegantEvaluations8,
+            elegantConnectives8, miscBatch9, actionVerbs10, thinkingVerbs10, communicationVerbs10, stateChangeVerbs10,
+            handlingVerbs10, iVerbSimple10, youVerbCheck10, thatsReactions10, howVerbQuestions10, verbGerund10,
+            verbInfinitive10, toBeAdj10, sentenceEnders10, howReactions11, ifPatterns11, theresPatterns11,
+            itsPatterns11, causativePatterns11, whatPatterns11, adverbPatterns11, endingPatterns11, failureSuccessVerbs11,
+            relationshipVerbs11, mindChangeVerbs11, observationVerbs11, prepositionalConnectors11, dailyNouns12, personNouns12,
+            emotionNouns12, situationNouns12, reactionVerbs12, changeVerbs12, enjoyVerbs12, destructionVerbs12,
+            supportVerbs12, feelingPhrases12, sayingPhrases12, conversationFlow12, emotionWords13, communicationWords13,
+            workWords13, dailyWords13, troubleWords13, evaluationWords13, casualWords13, pathAndOthers14,
+            peopleWords15, emotionWords15, relationshipWords15, workWords15, dailyWords15, troubleWords15,
+            evaluationWords15, situationWords15, slangActions16, slangFeelings16, slangPraise16, slangReactions16,
+            slangAbbreviations16, slangPeopleAndMoney16, slangStateAndOthers16, workComms17, critiqueWords17, outcomeWords17,
+            adjectiveWords17, verbWords17, idiomWords17, thinkingPhrases18, businessVerbs18, learningWords18,
+            discussionPhrases19, actionAdjectives19, conceptPhrases19, reactionWords20, mediaAndOthers20, opinionPhrases21,
+            learningPhrases21, actionPhrases21, economySocial22, businessTerms22, actionVerbs22, characterStates22,
+            evaluationMedia22, personalityTypes23, planningThoughts23, actionObjects23, conceptsStates23, legalSocial24,
+            qualityVerbs24, emotionMood25, actionMotion25, adjectiveObjects25, emotionStates26, qualityAdjectives26,
+            verbNouns26, impressionEmotion27, stateLocation27, verbFlow27, emotionMemory28, actionVerbs28,
+            nounAdjective28, actionStates29, qualityConcepts29, actionVerbs30, qualityExpression30, actionVerbs31,
+            qualityAdjectives31, conversationalPhrases32, actionVerbs33, emotionStates33, expressionFillers33, nounConcepts33,
+            businessCommerce34, actionVerbs34, idiomsProverbs35, nounExpressions35, actionVerbs36, qualityAdjectives36,
+            objectsItems36, foodAndAnimals36, conceptStates36, assumptionPhrases37, sentencePatterns37, responsePhrases37,
+            businessComms38, actionResponses38, casualReactions39, verbsActions40, adjectiveNouns40, conversationOpeners41,
+            idiomsObjects42, sizeQualities43, casualExpressions44, greetingsReactions45, verbStates45, conceptsNouns46,
+            techConcepts47, politicsActions48, landscapeConcepts49, verbStates49, abstractTraits49, actionVerbs50,
+            nounAdjectives50, skillsAndStyle51, businessAnalysis52, verbsAndRelations52, miscNouns53, statesAndJudgments54,
+            actionVerbs55, nounConcepts55, statesExpressions55, businessNouns56, verbsActions56, adjectivesTraits56,
+            phrasesAndExpressions57, businessLegal58, healthBody58, verbsActions58, nounsObjects58, adjectives58,
+            expressions58, eduMisc58, dayOffLife59, workStudy59, gamingSports59, dataConcepts59,
+            sensoryMisc59, expressionsQA60, thingsObjects60, verbsMix60, adjectivesMix60, healthBody61,
+            businessConcepts61, verbsActions61, nounsObjects61, expressionsPhrases61, dailyLife62, verbsActions62,
+            nounsObjects62, adjectivesStates62, expressionsPhrases62, education62, politeRequests63, casualPhrases63,
+            schedulingMisc63, verbsAndPhrases63, nounsAndMisc63, statesAndFaults63, weatherHealth64, travelLife64,
+            verbsActions64, nounsConcepts64, expressions64, workCareer65, idiomsCasual65, verbsAndActions65,
+            nounsAndObjects65, adjectivesAndStates65, socialDiscourse66, opinionPhrases66, reactionsFeelings66, businessTech66,
+            verbsActions66, nounsObjects66, adjectivesStates66, phrasesExpressions66, gardenWork67, verbsActions67,
+            nounsConcepts67, expressions67, sportsGame68, socialDiscourse68, objectsTech68, verbsActions68,
+            expressionsA68, expressionsB68, adjectivesStates68, businessFormal69, politeEmail69, healthMind69,
+            lifeCulture69, phrasesA69, phrasesB69, britishColloquial70, britishColloquial71, britishColloquial72,
+            britishColloquial73, britishColloquial74, britishColloquial75, britishColloquial76, britishColloquial77, britishColloquial78,
+            britishColloquial79, britishColloquial80, britishColloquial81, britishColloquial82, britishColloquial83, britishColloquial84,
+            britishColloquial85, britishColloquial86, britishColloquial87, britishColloquial88, britishColloquial89, britishColloquial90,
+            britishColloquial91, britishColloquial92, britishColloquial93, britishColloquial94, britishColloquial95, britishColloquial96,
+            britishColloquial97, britishColloquial98, britishColloquial99, britishColloquial100, britishColloquial101, britishColloquial102,
+            britishColloquial103, britishColloquial104, britishColloquial105, britishColloquial106, britishColloquial107, britishColloquial108,
+            britishColloquial109, britishColloquial110, britishColloquial111, britishColloquial112, britishColloquial113, britishColloquial114,
+            britishColloquial115, britishColloquial116, britishColloquial117, britishColloquial118, britishColloquial119, britishColloquial120,
+            britishColloquial121, britishColloquial122, britishColloquial123, britishColloquial124, britishColloquial125, britishColloquial126,
+            britishColloquial127, britishColloquial128, britishColloquial129, britishColloquial130, britishColloquial131, britishColloquial132,
+            britishColloquial133, britishColloquial134, britishColloquial135, britishColloquial136, britishColloquial137, britishColloquial138,
+            britishColloquial139, britishColloquial140, britishColloquial141, britishColloquial142, britishColloquial143, britishColloquial144,
+            britishColloquial145, britishColloquial146, britishColloquial147, britishColloquial148, britishColloquial149, britishColloquial150,
+            britishColloquial151, britishColloquial152, britishColloquial153, britishColloquial154, britishColloquial155, britishColloquial156,
+            britishColloquial157, britishColloquial158, britishColloquial159, britishColloquial160, britishColloquial161, britishColloquial162,
+            britishColloquial163, britishColloquial164, britishColloquial165, britishColloquial166, britishColloquial167, britishColloquial168,
+            britishColloquial169, britishColloquial170, britishColloquial171, britishColloquial172, britishColloquial173, britishColloquial174,
+            britishColloquial175, britishColloquial176, britishColloquial177, britishColloquial178, britishColloquial179, britishColloquial180,
+            britishColloquial181, britishColloquial182, britishColloquial183, britishColloquial184, britishColloquial185, britishColloquial186,
+            britishColloquial187, britishColloquial188, britishColloquial189, britishColloquial190, britishColloquial191, britishColloquial192,
+            britishColloquial193, britishColloquial194, britishColloquial195, britishColloquial196, britishColloquial197, britishColloquial198,
+            britishColloquial199, britishColloquial200, britishColloquial201, britishColloquial202, britishColloquial203, britishColloquial204,
+            britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
+            britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
+            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220
+        ]
+        return groups.flatMap { $0 }
     }
 
     /// Words that have been removed from the seed list and should also be
