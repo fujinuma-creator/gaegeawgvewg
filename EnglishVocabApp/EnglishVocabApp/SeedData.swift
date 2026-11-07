@@ -90,7 +90,8 @@ enum SeedData {
             britishColloquial199, britishColloquial200, britishColloquial201, britishColloquial202, britishColloquial203, britishColloquial204,
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
-            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222
+            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
+            britishColloquial223
         ]
         return groups.flatMap { $0 }
     }
@@ -39725,6 +39726,115 @@ enum SeedData {
                     ("Have you got your boarding pass on your phone?", "搭乗券、スマホに入ってる？"),
                     ("I printed my boarding pass at home to save time.", "時間節約のために搭乗券は家で印刷してきた。")
                  ], ipa: "/ˈbɔːdɪŋ pɑːs/"),
+        ]
+    }
+    private static var britishColloquial223: [Word] {
+        [
+            make("make a decision", "to decide something after thinking about it",
+                 "決める・決断する",
+                 useCases: ["迷っている人を促すとき", "自分の決断を伝えるとき"],
+                 examples: [
+                    ("We need to make a decision about the holiday by Friday.", "金曜までに休暇の行き先を決めないと。"),
+                    ("I've made a decision — I'm going to take the job.", "決めたよ、その仕事を受けることにする。")
+                 ], ipa: "/ˌmeɪk ə dɪˈsɪʒn/"),
+            make("make a mistake", "to do something wrong, often without meaning to",
+                 "間違える・ミスをする",
+                 useCases: ["自分のミスを認めるとき", "失敗した人を励ますとき"],
+                 examples: [
+                    ("Don't worry, everyone makes mistakes.", "気にしないで、誰だって間違えるよ。"),
+                    ("I think I made a mistake with the booking — it's for the wrong day.", "予約ミスったかも、日にちが違ってる。")
+                 ], ipa: "/ˌmeɪk ə mɪˈsteɪk/"),
+            make("get engaged", "to formally agree to marry someone",
+                 "婚約する",
+                 useCases: ["友人の婚約を話題にするとき", "おめでたい報告をするとき"],
+                 examples: [
+                    ("Guess what? Anna and Luke just got engaged!", "聞いて！アナとルーク、婚約したんだって！"),
+                    ("They got engaged in Paris last spring.", "二人は去年の春にパリで婚約したんだ。")
+                 ], ipa: "/ˌɡet ɪnˈɡeɪdʒd/"),
+            make("use up", "to use all of something so that none is left",
+                 "使い切る",
+                 useCases: ["食材や日用品が切れたとき", "残り物を片付けたいとき"],
+                 examples: [
+                    ("Who used up all the milk?", "牛乳全部使い切ったの誰？"),
+                    ("Let's make soup to use up the vegetables.", "野菜を使い切るためにスープ作ろう。")
+                 ], ipa: "/ˌjuːz ˈʌp/"),
+            make("I can't believe it", "used to show surprise or shock about something",
+                 "信じられない・嘘でしょ",
+                 useCases: ["驚くニュースを聞いたとき", "嬉しい・ショックな出来事に反応するとき"],
+                 examples: [
+                    ("We won? I can't believe it!", "勝ったの？信じられない！"),
+                    ("I can't believe it's already November.", "もう11月だなんて信じられない。")
+                 ], ipa: "/aɪ ˌkɑːnt bɪˈliːv ɪt/"),
+            make("feel at home", "to feel relaxed and comfortable somewhere, as if it were your own home",
+                 "くつろぐ・居心地がいい",
+                 useCases: ["新しい環境に馴染んだことを話すとき", "お客さんをもてなすとき"],
+                 examples: [
+                    ("Everyone was so friendly — I felt at home straight away.", "みんなすごく親切で、すぐに居心地よく感じたよ。"),
+                    ("It took me a few months to feel at home in Berlin.", "ベルリンに馴染むまで数ヶ月かかったよ。")
+                 ], ipa: "/ˌfiːl ət ˈhəʊm/"),
+            make("do the cooking", "to prepare the meals, usually as a regular household job",
+                 "料理を担当する・ご飯を作る",
+                 useCases: ["家事の分担を話すとき", "誰が料理するか決めるとき"],
+                 examples: [
+                    ("I'll do the cooking if you do the washing-up.", "皿洗いしてくれるなら料理は私がやるよ。"),
+                    ("My dad usually does the cooking at weekends.", "週末はたいてい父がご飯を作るんだ。")
+                 ], ipa: "/ˌduː ðə ˈkʊkɪŋ/"),
+            make("water the plants", "to give plants water so they stay healthy",
+                 "植物に水をやる",
+                 useCases: ["留守中のお願いをするとき", "家事を話すとき"],
+                 examples: [
+                    ("Could you water the plants while I'm away?", "留守の間、植物に水やってくれる？"),
+                    ("I forgot to water the plants and now they look sad.", "水やり忘れて、植物がしおれちゃった。")
+                 ], ipa: "/ˌwɔːtə ðə ˈplɑːnts/"),
+            make("the weather forecast", "a report saying what the weather is expected to be like",
+                 "天気予報",
+                 useCases: ["予定を立てる前に", "天気の話をするとき"],
+                 examples: [
+                    ("Have you checked the weather forecast for Saturday?", "土曜の天気予報見た？"),
+                    ("The weather forecast said sunshine, but it's raining again.", "天気予報は晴れだったのに、また雨だよ。")
+                 ], ipa: "/ðə ˈweðə ˌfɔːkɑːst/"),
+            make("it's windy", "used to say there is a lot of wind",
+                 "風が強い",
+                 useCases: ["天気の話をするとき", "服装や外出を相談するとき"],
+                 examples: [
+                    ("It's really windy today — hold on to your hat!", "今日は風が強いね、帽子飛ばされないように！"),
+                    ("It's too windy to sit outside.", "風が強すぎて外の席は無理だね。")
+                 ], ipa: "/ɪts ˈwɪndi/"),
+            make("turn it off and on again", "to switch a device off and then on, often to fix a problem",
+                 "一回電源を切って入れ直す・再起動する",
+                 useCases: ["機器の不調に対処するとき", "人にアドバイスするとき"],
+                 examples: [
+                    ("The Wi-Fi's not working. — Have you tried turning it off and on again?", "Wi-Fiが繋がらない。—一回電源切って入れ直してみた？"),
+                    ("I turned it off and on again and now it works fine.", "再起動したら普通に動いたよ。")
+                 ], ipa: "/ˌtɜːn ɪt ˈɒf ən ˈɒn əˌɡen/"),
+            make("take an umbrella", "to bring an umbrella with you in case it rains",
+                 "傘を持っていく",
+                 useCases: ["出かける人に声をかけるとき", "天気を気にするとき"],
+                 examples: [
+                    ("Take an umbrella — it's supposed to rain later.", "傘持っていきなよ、後で雨らしいよ。"),
+                    ("I didn't take an umbrella and got completely soaked.", "傘持っていかなくてずぶ濡れになったよ。")
+                 ], ipa: "/ˌteɪk ən ʌmˈbrelə/"),
+            make("order online", "to buy something on the internet",
+                 "ネットで注文する",
+                 useCases: ["買い物の方法を話すとき", "店に在庫がないとき"],
+                 examples: [
+                    ("They didn't have my size, so I ordered it online.", "サイズがなかったからネットで注文したよ。"),
+                    ("It's cheaper if you order online.", "ネットで注文した方が安いよ。")
+                 ], ipa: "/ˌɔːdər ɒnˈlaɪn/"),
+            make("get it delivered", "to have something brought to your home instead of collecting it yourself",
+                 "配達してもらう・届けてもらう",
+                 useCases: ["買い物や食事の受け取り方を話すとき", "重い物を買うとき"],
+                 examples: [
+                    ("The sofa's too big for the car, so we'll get it delivered.", "ソファは車に入らないから配達してもらおう。"),
+                    ("Shall we go out or just get pizza delivered?", "外に出る？それともピザ届けてもらう？")
+                 ], ipa: "/ˌɡet ɪt dɪˈlɪvəd/"),
+            make("in a good mood", "feeling happy and cheerful",
+                 "機嫌がいい",
+                 useCases: ["人の様子を話すとき", "頼み事のタイミングを計るとき"],
+                 examples: [
+                    ("You're in a good mood today! What happened?", "今日はご機嫌だね！何かあった？"),
+                    ("Ask the boss now — she's in a good mood.", "今上司に聞いてみなよ、機嫌いいから。")
+                 ], ipa: "/ɪn ə ˌɡʊd ˈmuːd/"),
         ]
     }
     private static var britishColloquial220: [Word] {
