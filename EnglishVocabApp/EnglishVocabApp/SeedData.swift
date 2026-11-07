@@ -91,7 +91,7 @@ enum SeedData {
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
-            britishColloquial223, britishColloquial224, britishColloquial225
+            britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226
         ]
         return groups.flatMap { $0 }
     }
@@ -40053,6 +40053,115 @@ enum SeedData {
                     ("You remembered my birthday? I'm touched!", "誕生日覚えててくれたの？うれしいな！"),
                     ("I'm really touched that you all came.", "みんな来てくれて、本当に感動してる。")
                  ], ipa: "/aɪm ˈtʌtʃt/"),
+        ]
+    }
+    private static var britishColloquial226: [Word] {
+        [
+            make("laid-back", "relaxed and calm, not easily worried or stressed",
+                 "のんびりした・おおらかな",
+                 useCases: ["人の性格を紹介するとき", "職場や街の雰囲気を説明するとき"],
+                 examples: [
+                    ("My new boss is really laid-back, which is a nice change.", "新しい上司はすごくおおらかで、前と違ってありがたい。"),
+                    ("Lisbon has such a laid-back vibe.", "リスボンってすごくのんびりした雰囲気だよね。")
+                 ], ipa: "/ˌleɪd ˈbæk/"),
+            make("down-to-earth", "practical, honest and friendly, without acting important",
+                 "気取らない・地に足がついた",
+                 useCases: ["有名人や上司の人柄を褒めるとき", "親しみやすい人を紹介するとき"],
+                 examples: [
+                    ("For someone so successful, she's really down-to-earth.", "あんなに成功してるのに、彼女は全然気取らないんだ。"),
+                    ("His parents are lovely — really down-to-earth people.", "彼の両親は素敵だよ。すごく気さくな人たち。")
+                 ], ipa: "/ˌdaʊn tʊ ˈɜːθ/"),
+            make("good fun", "enjoyable, or (of a person) entertaining to be with",
+                 "楽しい・一緒にいて楽しい",
+                 useCases: ["イベントの感想を言うとき", "人柄を紹介するとき"],
+                 examples: [
+                    ("The party was good fun — you should've come.", "パーティー楽しかったよ。来ればよかったのに。"),
+                    ("You'll like Anna, she's good fun.", "アンナのこと気に入ると思うよ。一緒にいて楽しい子だから。")
+                 ], ipa: "/ˌɡʊd ˈfʌn/"),
+            make("blurt out", "to say something suddenly without thinking, often by accident",
+                 "うっかり口走る・思わず言ってしまう",
+                 useCases: ["秘密をつい言ってしまったとき", "緊張して変なことを言ったとき"],
+                 examples: [
+                    ("I blurted out the surprise before I could stop myself.", "止める間もなくサプライズのことを口走っちゃった。"),
+                    ("He just blurted out the answer in the middle of the meeting.", "彼、会議の途中でいきなり答えを言っちゃったんだ。")
+                 ], ipa: "/ˌblɜːt ˈaʊt/"),
+            make("put your foot in it", "to say something by accident that embarrasses or upsets someone",
+                 "失言する・地雷を踏む",
+                 useCases: ["気まずいことを言ってしまったとき", "失言を振り返るとき"],
+                 examples: [
+                    ("I really put my foot in it when I asked about her ex.", "元カレのこと聞いちゃって、完全に地雷踏んだ。"),
+                    ("Don't mention the job — you'll put your foot in it.", "仕事の話はしないで。失言になるから。")
+                 ], ipa: "/ˌpʊt jə ˈfʊt ɪn ɪt/"),
+            make("I could kick myself", "used to say you are annoyed with yourself for a silly mistake",
+                 "自分が情けない・やっちゃった",
+                 useCases: ["うっかりミスを悔やむとき", "チャンスを逃したとき"],
+                 examples: [
+                    ("I left my passport at home — I could kick myself.", "パスポート家に忘れた。ほんと自分が情けない。"),
+                    ("I could kick myself for not buying the tickets earlier.", "もっと早くチケット買っとけばよかった、やっちゃったよ。")
+                 ], ipa: "/aɪ kʊd ˈkɪk maɪˌself/"),
+            make("sounds familiar", "used to say that you think you have heard or experienced something before",
+                 "聞き覚えがある・よくある話だね",
+                 useCases: ["名前や話に聞き覚えがあるとき", "相手の体験に共感するとき"],
+                 examples: [
+                    ("Mark Jensen? Hmm, the name sounds familiar.", "マーク・ジェンセン？うーん、聞き覚えがあるな。"),
+                    ("Late trains and no announcements? Sounds familiar.", "電車が遅れてアナウンスもなし？よくある話だね。")
+                 ], ipa: "/ˌsaʊndz fəˈmɪliə/"),
+            make("you've got me there", "used to admit that you don't know the answer or that someone has made a good point",
+                 "それは分からないな・一本取られた",
+                 useCases: ["答えが分からない質問をされたとき", "相手の指摘に反論できないとき"],
+                 examples: [
+                    ("\"What's the capital of Australia?\" \"Ooh, you've got me there.\"", "「オーストラリアの首都は？」「うーん、それは分からないな。」"),
+                    ("Okay, you've got me there — I did say I'd cook tonight.", "分かった、一本取られたよ。確かに今夜は僕が作るって言った。")
+                 ], ipa: "/juːv ˌɡɒt ˈmiː ðeə/"),
+            make("lots of love", "a warm, friendly way to end a message to family or close friends",
+                 "愛を込めて（手紙・メッセージの結び）",
+                 useCases: ["家族や親友へのメッセージを締めるとき", "カードに一言書くとき"],
+                 examples: [
+                    ("Have a lovely birthday! Lots of love, Emma x", "素敵な誕生日を！愛を込めて、エマより"),
+                    ("Can't wait to see you all at Christmas. Lots of love.", "クリスマスにみんなに会えるのが楽しみ。愛を込めて。")
+                 ], ipa: "/ˌlɒts əv ˈlʌv/"),
+            make("big-headed", "thinking that you are more important or clever than you are",
+                 "うぬぼれた・天狗になった",
+                 useCases: ["自慢ばかりする人について話すとき", "成功して態度が変わった人を話すとき"],
+                 examples: [
+                    ("Since his promotion he's got a bit big-headed.", "昇進してから、あいつちょっと天狗になってる。"),
+                    ("I don't want to sound big-headed, but I nailed that interview.", "うぬぼれてるように聞こえたら嫌だけど、あの面接は完璧だった。")
+                 ], ipa: "/ˌbɪɡ ˈhedɪd/"),
+            make("full of yourself", "too proud of yourself and thinking you are very important",
+                 "自信過剰な・自分大好きな",
+                 useCases: ["偉そうな人に呆れたとき", "人の態度を批判するとき"],
+                 examples: [
+                    ("He's nice enough, but a bit full of himself.", "悪い人じゃないけど、ちょっと自信過剰なんだよね。"),
+                    ("Don't get too full of yourself — it was only one goal!", "調子に乗るなよ、1点決めただけだろ！")
+                 ], ipa: "/ˌfʊl əv jɔːˈself/"),
+            make("control freak", "a person who always wants to be in charge of everything",
+                 "何でも仕切りたがる人・管理魔",
+                 useCases: ["何でも自分で決めたがる人について話すとき", "自分の性格を冗談めかして言うとき"],
+                 examples: [
+                    ("I'll plan the trip — I'm a bit of a control freak.", "旅行の計画は私が立てるよ。ちょっと仕切りたがりだから。"),
+                    ("My old manager was a total control freak.", "前の上司は完全に何でも仕切りたがる人だった。")
+                 ], ipa: "/kənˈtrəʊl friːk/"),
+            make("pushover", "a person who is easy to persuade or who never says no",
+                 "押しに弱い人・言いなりになる人",
+                 useCases: ["断れない性格について話すとき", "甘い親や上司について話すとき"],
+                 examples: [
+                    ("Ask Dad, he's a total pushover.", "パパに頼みなよ、押しに弱いから。"),
+                    ("I need to stop being such a pushover at work.", "職場で言いなりになるのはもうやめないと。")
+                 ], ipa: "/ˈpʊʃˌəʊvə/"),
+            make("easy to talk to", "friendly and relaxed, so people feel comfortable talking to you",
+                 "話しやすい",
+                 useCases: ["人柄を褒めるとき", "相談相手について話すとき"],
+                 examples: [
+                    ("I liked the doctor — she was really easy to talk to.", "あの先生よかったよ。すごく話しやすかった。"),
+                    ("He's easy to talk to, so everyone goes to him with problems.", "彼は話しやすいから、みんな悩みを相談しに行くんだ。")
+                 ], ipa: "/ˌiːzi tə ˈtɔːk tuː/"),
+            make("a good listener", "someone who listens carefully and with interest when others talk",
+                 "聞き上手",
+                 useCases: ["人柄を褒めるとき", "友達の良さを話すとき"],
+                 examples: [
+                    ("Thanks for tonight — you're such a good listener.", "今夜はありがとう。本当に聞き上手だね。"),
+                    ("I'm not much of a talker, but I'm a good listener.", "話すのは得意じゃないけど、聞き上手なんだ。")
+                 ], ipa: "/ə ˌɡʊd ˈlɪsnə/"),
         ]
     }
     private static var britishColloquial220: [Word] {
