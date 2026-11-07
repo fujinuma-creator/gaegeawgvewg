@@ -90,7 +90,7 @@ enum SeedData {
             britishColloquial199, britishColloquial200, britishColloquial201, britishColloquial202, britishColloquial203, britishColloquial204,
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
-            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220
+            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221
         ]
         return groups.flatMap { $0 }
     }
@@ -39507,6 +39507,115 @@ enum SeedData {
                     ("The shop closed five minutes before we got there — how annoying!", "着く5分前に店が閉まっちゃった、ほんとイラっとする！"),
                     ("Your train got cancelled again? How annoying.", "また電車運休になったの？それは面倒だね。")
                  ], ipa: "/ˌhaʊ əˈnɔɪɪŋ/"),
+        ]
+    }
+    private static var britishColloquial221: [Word] {
+        [
+            make("pig out", "(informal) to eat a very large amount of food, often greedily",
+                 "ドカ食いする・たらふく食べる",
+                 useCases: ["食べすぎたことを話すとき", "思いきり食べる予定を話すとき"],
+                 examples: [
+                    ("We pigged out on pizza last night and now I feel awful.", "昨日の夜ピザをドカ食いして、今めっちゃ気持ち悪い。"),
+                    ("It's my birthday — I'm allowed to pig out!", "誕生日なんだから、たらふく食べてもいいでしょ！")
+                 ], ipa: "/ˌpɪɡ ˈaʊt/"),
+            make("brunch", "a late-morning meal that combines breakfast and lunch",
+                 "ブランチ（朝昼兼用の食事）",
+                 useCases: ["週末の予定を立てるとき", "友人を食事に誘うとき"],
+                 examples: [
+                    ("Fancy meeting up for brunch on Sunday?", "日曜にブランチでもどう？"),
+                    ("We had a lazy brunch and then went for a walk.", "のんびりブランチしてから散歩に行ったよ。")
+                 ], ipa: "/brʌntʃ/"),
+            make("housemate", "(British) a person you share a house with, usually not a family member",
+                 "ハウスメイト・同居人",
+                 useCases: ["住まいの状況を説明するとき", "同居人の話をするとき"],
+                 examples: [
+                    ("I live with three housemates near the university.", "大学の近くでハウスメイト3人と住んでるよ。"),
+                    ("My housemate never does the washing-up.", "うちの同居人、全然洗い物しないんだよね。")
+                 ], ipa: "/ˈhaʊsmeɪt/"),
+            make("a weekend away", "a short trip somewhere for the weekend, usually to relax",
+                 "週末旅行・週末の小旅行",
+                 useCases: ["週末の旅行計画を話すとき", "休暇の思い出を話すとき"],
+                 examples: [
+                    ("We're having a weekend away in the Cotswolds.", "週末にコッツウォルズへ小旅行に行くんだ。"),
+                    ("You look so relaxed — a weekend away clearly did you good.", "すごくリラックスしてるね。週末旅行が効いたみたい。")
+                 ], ipa: "/ə ˌwiːkˈend əˈweɪ/"),
+            make("stretch my legs", "to go for a short walk, especially after sitting for a long time",
+                 "ちょっと歩いてくる・体をほぐす",
+                 useCases: ["長時間座った後に席を立つとき", "休憩を取るとき"],
+                 examples: [
+                    ("I've been at my desk all morning — I need to stretch my legs.", "朝からずっとデスクにいたから、ちょっと歩いてくる。"),
+                    ("Let's stop at the next services and stretch our legs.", "次のサービスエリアで止まって、ちょっと体をほぐそう。")
+                 ], ipa: "/ˌstretʃ maɪ ˈleɡz/"),
+            make("soaking wet", "completely wet, especially from rain",
+                 "びしょ濡れ・ずぶ濡れ",
+                 useCases: ["雨に降られたことを話すとき", "濡れた服について話すとき"],
+                 examples: [
+                    ("I forgot my umbrella and got soaking wet.", "傘を忘れてびしょ濡れになっちゃった。"),
+                    ("Take your coat off — it's soaking wet!", "コート脱いで、ずぶ濡れじゃん！")
+                 ], ipa: "/ˌsəʊkɪŋ ˈwet/"),
+            make("bad luck", "used to sympathise when something unfortunate happens to someone; misfortune",
+                 "運が悪かったね・ついてないね",
+                 useCases: ["相手の不運に同情するとき", "うまくいかなかった理由を言うとき"],
+                 examples: [
+                    ("You missed the train by one minute? Bad luck!", "1分差で電車逃したの？ついてないね！"),
+                    ("It wasn't your fault — it was just bad luck.", "君のせいじゃないよ、ただ運が悪かっただけ。")
+                 ], ipa: "/ˌbæd ˈlʌk/"),
+            make("oddly enough", "used to say that something is surprising or strange",
+                 "妙なことに・不思議なことに",
+                 useCases: ["意外な事実を話すとき", "話に驚きを添えるとき"],
+                 examples: [
+                    ("Oddly enough, I actually enjoyed the exam.", "不思議なことに、試験がけっこう楽しかったんだ。"),
+                    ("It was raining everywhere except, oddly enough, our village.", "妙なことに、うちの村以外はどこも雨だった。")
+                 ], ipa: "/ˈɒdli ɪˌnʌf/"),
+            make("sort yourself out", "(informal) to organise your life, deal with your problems, or get ready",
+                 "しっかりする・身の回りを整える・準備する",
+                 useCases: ["相手に態度を改めるよう言うとき", "準備を促すとき"],
+                 examples: [
+                    ("He really needs to sort himself out and find a job.", "彼、本当にしっかりして仕事を見つけないと。"),
+                    ("Sort yourself out — we're leaving in ten minutes.", "支度して、あと10分で出るよ。")
+                 ], ipa: "/ˌsɔːt jɔːˈself ˌaʊt/"),
+            make("at most", "not more than; used to give the highest possible number or amount",
+                 "せいぜい・多くても",
+                 useCases: ["時間や数の上限を伝えるとき", "大したことないと言うとき"],
+                 examples: [
+                    ("It'll take twenty minutes at most.", "せいぜい20分くらいで終わるよ。"),
+                    ("There were ten people there at most.", "多くても10人くらいしかいなかった。")
+                 ], ipa: "/ət ˈməʊst/"),
+            make("back then", "at that time in the past",
+                 "当時は・あの頃は",
+                 useCases: ["昔の話をするとき", "今と昔を比べるとき"],
+                 examples: [
+                    ("Back then, nobody had a mobile phone.", "当時は誰も携帯なんて持ってなかったよ。"),
+                    ("I was a lot shyer back then.", "あの頃はもっと人見知りだったな。")
+                 ], ipa: "/ˌbæk ˈðen/"),
+            make("burnt out", "extremely tired and stressed, usually because of working too hard for too long",
+                 "燃え尽きた・疲れ果てた",
+                 useCases: ["働きすぎの状態を話すとき", "休みが必要なことを伝えるとき"],
+                 examples: [
+                    ("I was completely burnt out after that project.", "あのプロジェクトの後、完全に燃え尽きてた。"),
+                    ("Take a holiday before you get burnt out.", "燃え尽きる前に休暇を取りなよ。")
+                 ], ipa: "/ˌbɜːnt ˈaʊt/"),
+            make("back on my feet", "healthy again after an illness, or stable again after a difficult time",
+                 "元気になって・立ち直って",
+                 useCases: ["病気からの回復を伝えるとき", "困難から立ち直ったことを話すとき"],
+                 examples: [
+                    ("I had the flu last week, but I'm back on my feet now.", "先週インフルだったけど、もう元気になったよ。"),
+                    ("It took a while to get back on my feet after the move.", "引っ越しの後、立ち直るまでしばらくかかった。")
+                 ], ipa: "/ˌbæk ɒn maɪ ˈfiːt/"),
+            make("if I get the chance", "if there is an opportunity; used when you're not sure you'll be able to do something",
+                 "機会があれば・できたら",
+                 useCases: ["確約せずに予定を話すとき", "やりたいことを控えめに言うとき"],
+                 examples: [
+                    ("I'll give you a ring later if I get the chance.", "できたらあとで電話するね。"),
+                    ("If I get the chance, I'd love to visit Lisbon.", "機会があれば、リスボンに行ってみたいな。")
+                 ], ipa: "/ɪf aɪ ˌɡet ðə ˈtʃɑːns/"),
+            make("I take it back", "used to say that you no longer mean something you said earlier",
+                 "今のは撤回するよ・前言撤回",
+                 useCases: ["失言を取り消すとき", "考えが変わったと伝えるとき"],
+                 examples: [
+                    ("Sorry, that was rude. I take it back.", "ごめん、失礼だったね。今のは撤回する。"),
+                    ("I said the film would be boring — I take it back, it was brilliant!", "退屈だって言ったけど前言撤回、最高だった！")
+                 ], ipa: "/aɪ ˌteɪk ɪt ˈbæk/"),
         ]
     }
     private static var britishColloquial220: [Word] {
