@@ -91,7 +91,7 @@ enum SeedData {
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
-            britishColloquial223
+            britishColloquial223, britishColloquial224
         ]
         return groups.flatMap { $0 }
     }
@@ -39835,6 +39835,115 @@ enum SeedData {
                     ("You're in a good mood today! What happened?", "今日はご機嫌だね！何かあった？"),
                     ("Ask the boss now — she's in a good mood.", "今上司に聞いてみなよ、機嫌いいから。")
                  ], ipa: "/ɪn ə ˌɡʊd ˈmuːd/"),
+        ]
+    }
+    private static var britishColloquial224: [Word] {
+        [
+            make("lose weight", "to become thinner and lighter",
+                 "痩せる・体重を落とす",
+                 useCases: ["ダイエットの話をするとき", "誰かの見た目の変化に触れるとき"],
+                 examples: [
+                    ("I'm trying to lose weight before the summer.", "夏までに痩せようと頑張ってるんだ。"),
+                    ("Have you lost weight? You look great!", "痩せた？すごくいい感じだね！")
+                 ], ipa: "/ˌluːz ˈweɪt/"),
+            make("get married", "to become husband and wife; to have a wedding",
+                 "結婚する",
+                 useCases: ["結婚の予定を話すとき", "友人の近況を伝えるとき"],
+                 examples: [
+                    ("My sister's getting married in June.", "姉が6月に結婚するんだ。"),
+                    ("When did you two get married?", "お二人はいつ結婚したの？")
+                 ], ipa: "/ˌɡet ˈmærid/"),
+            make("see a doctor", "to visit a doctor to get medical advice or treatment",
+                 "医者に診てもらう",
+                 useCases: ["体調が悪い人に勧めるとき", "病院に行くことを伝えるとき"],
+                 examples: [
+                    ("That cough sounds bad — you should see a doctor.", "その咳ひどそうだよ、医者に診てもらった方がいい。"),
+                    ("I'm seeing a doctor about my back tomorrow.", "明日、腰のことで医者に診てもらうんだ。")
+                 ], ipa: "/ˌsiː ə ˈdɒktə/"),
+            make("apply for", "to formally ask for something such as a job, visa or place on a course",
+                 "〜に応募する・〜を申請する",
+                 useCases: ["仕事探しの話をするとき", "ビザや手続きの話をするとき"],
+                 examples: [
+                    ("I've applied for a job at a bank in Dublin.", "ダブリンの銀行の仕事に応募したんだ。"),
+                    ("You need to apply for a visa at least a month before.", "ビザは少なくとも1ヶ月前に申請しないとだめだよ。")
+                 ], ipa: "/əˈplaɪ fə/"),
+            make("set the table", "to put plates, knives, forks, glasses etc. on the table before a meal",
+                 "食卓の準備をする",
+                 useCases: ["家族に手伝いを頼むとき", "食事の準備中に"],
+                 examples: [
+                    ("Can you set the table? Dinner's almost ready.", "テーブルの準備してくれる？もうすぐご飯できるから。"),
+                    ("The kids always fight over who sets the table.", "子どもたちはいつも誰が食卓の準備をするかで揉めるんだ。")
+                 ], ipa: "/ˌset ðə ˈteɪbl/"),
+            make("pass an exam", "to succeed in a test by getting a high enough mark",
+                 "試験に合格する",
+                 useCases: ["試験結果を報告するとき", "受験する人を励ますとき"],
+                 examples: [
+                    ("Guess what — I passed my driving test!", "聞いて、運転免許の試験受かったよ！"),
+                    ("Don't worry, I'm sure you'll pass the exam.", "大丈夫、絶対合格するよ。")
+                 ], ipa: "/ˌpɑːs ən ɪɡˈzæm/"),
+            make("go on a diet", "to start eating less or eating only certain foods in order to lose weight",
+                 "ダイエットを始める",
+                 useCases: ["食事制限を始めると宣言するとき", "食べ過ぎた後の冗談で"],
+                 examples: [
+                    ("After all that Christmas food, I need to go on a diet.", "クリスマスにあれだけ食べたから、ダイエットしないと。"),
+                    ("No cake for me, thanks — I'm on a diet.", "ケーキはいいや、ありがとう。ダイエット中なんだ。")
+                 ], ipa: "/ˌɡəʊ ɒn ə ˈdaɪət/"),
+            make("miss the train", "to arrive too late to get on a train",
+                 "電車に乗り遅れる",
+                 useCases: ["遅刻の理由を説明するとき", "急がせるとき"],
+                 examples: [
+                    ("Sorry I'm late — I missed the train.", "遅れてごめん、電車に乗り遅れちゃった。"),
+                    ("Hurry up or we'll miss the train!", "急いで、電車に乗り遅れるよ！")
+                 ], ipa: "/ˌmɪs ðə ˈtreɪn/"),
+            make("take the stairs", "to walk up or down the stairs instead of using the lift",
+                 "階段を使う",
+                 useCases: ["エレベーターが混んでいるとき", "運動の話をするとき"],
+                 examples: [
+                    ("The lift's out of order, so we'll have to take the stairs.", "エレベーター故障中だから、階段で行くしかないね。"),
+                    ("I always take the stairs — it's my only exercise!", "いつも階段使ってるんだ、唯一の運動だよ！")
+                 ], ipa: "/ˌteɪk ðə ˈsteəz/"),
+            make("have a good time", "to enjoy yourself",
+                 "楽しむ・楽しく過ごす",
+                 useCases: ["出かける人を見送るとき", "イベントの感想を聞くとき"],
+                 examples: [
+                    ("Have a good time at the party tonight!", "今夜のパーティー楽しんでね！"),
+                    ("Did you have a good time in Lisbon?", "リスボン楽しかった？")
+                 ], ipa: "/ˌhæv ə ɡʊd ˈtaɪm/"),
+            make("pop out", "(informal) to go out for a short time",
+                 "ちょっと出かける・ちょっと外す",
+                 useCases: ["少しだけ外出することを伝えるとき", "電話で不在を伝えるとき"],
+                 examples: [
+                    ("I'm just popping out to get some bread.", "ちょっとパン買いに出てくるね。"),
+                    ("Sorry, she's just popped out — can I take a message?", "すみません、彼女ちょっと席を外していて。伝言を承りましょうか？")
+                 ], ipa: "/ˌpɒp ˈaʊt/"),
+            make("make a phone call", "to use the phone to speak to someone",
+                 "電話をかける",
+                 useCases: ["電話のために席を外すとき", "電話を借りたいとき"],
+                 examples: [
+                    ("Excuse me, I just need to make a quick phone call.", "すみません、ちょっと電話をかけてきます。"),
+                    ("Can I use your phone to make a call? Mine's dead.", "電話借りてもいい？自分のは電池切れで。")
+                 ], ipa: "/ˌmeɪk ə ˈfəʊn kɔːl/"),
+            make("get a job", "to find work and be employed",
+                 "仕事に就く・就職する",
+                 useCases: ["就職の報告をするとき", "仕事探しについて話すとき"],
+                 examples: [
+                    ("She got a job at a hotel in Vienna.", "彼女、ウィーンのホテルに就職したんだ。"),
+                    ("I need to get a job — I'm running out of money.", "仕事見つけないと、お金がなくなってきた。")
+                 ], ipa: "/ˌɡet ə ˈdʒɒb/"),
+            make("rent a car", "to pay to use a car for a short time, e.g. on holiday",
+                 "レンタカーを借りる",
+                 useCases: ["旅行の計画を立てるとき", "移動手段を相談するとき"],
+                 examples: [
+                    ("Let's rent a car and drive along the coast.", "レンタカー借りて海沿いをドライブしようよ。"),
+                    ("It's cheaper to rent a car at the airport.", "空港でレンタカー借りる方が安いよ。")
+                 ], ipa: "/ˌrent ə ˈkɑː/"),
+            make("do your best", "to try as hard as you can",
+                 "全力を尽くす・頑張る",
+                 useCases: ["誰かを励ますとき", "自分の決意を伝えるとき"],
+                 examples: [
+                    ("Just do your best — that's all anyone can ask.", "とにかくベストを尽くせばいいよ、それ以上誰も求めないから。"),
+                    ("I can't promise anything, but I'll do my best.", "約束はできないけど、できる限り頑張るよ。")
+                 ], ipa: "/ˌduː jə ˈbest/"),
         ]
     }
     private static var britishColloquial220: [Word] {
