@@ -136,7 +136,7 @@ enum SeedData {
             + expressionsA68 + expressionsB68 + adjectivesStates68
             + businessFormal69 + politeEmail69 + healthMind69
             + lifeCulture69 + phrasesA69 + phrasesB69
-            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203 + britishColloquial204 + britishColloquial205 + britishColloquial206 + britishColloquial207 + britishColloquial208 + britishColloquial209 + britishColloquial210 + britishColloquial211 + britishColloquial212 + britishColloquial213 + britishColloquial214 + britishColloquial215 + britishColloquial216 + britishColloquial217 + britishColloquial218 + britishColloquial219
+            + britishColloquial70 + britishColloquial71 + britishColloquial72 + britishColloquial73 + britishColloquial74 + britishColloquial75 + britishColloquial76 + britishColloquial77 + britishColloquial78 + britishColloquial79 + britishColloquial80 + britishColloquial81 + britishColloquial82 + britishColloquial83 + britishColloquial84 + britishColloquial85 + britishColloquial86 + britishColloquial87 + britishColloquial88 + britishColloquial89 + britishColloquial90 + britishColloquial91 + britishColloquial92 + britishColloquial93 + britishColloquial94 + britishColloquial95 + britishColloquial96 + britishColloquial97 + britishColloquial98 + britishColloquial99 + britishColloquial100 + britishColloquial101 + britishColloquial102 + britishColloquial103 + britishColloquial104 + britishColloquial105 + britishColloquial106 + britishColloquial107 + britishColloquial108 + britishColloquial109 + britishColloquial110 + britishColloquial111 + britishColloquial112 + britishColloquial113 + britishColloquial114 + britishColloquial115 + britishColloquial116 + britishColloquial117 + britishColloquial118 + britishColloquial119 + britishColloquial120 + britishColloquial121 + britishColloquial122 + britishColloquial123 + britishColloquial124 + britishColloquial125 + britishColloquial126 + britishColloquial127 + britishColloquial128 + britishColloquial129 + britishColloquial130 + britishColloquial131 + britishColloquial132 + britishColloquial133 + britishColloquial134 + britishColloquial135 + britishColloquial136 + britishColloquial137 + britishColloquial138 + britishColloquial139 + britishColloquial140 + britishColloquial141 + britishColloquial142 + britishColloquial143 + britishColloquial144 + britishColloquial145 + britishColloquial146 + britishColloquial147 + britishColloquial148 + britishColloquial149 + britishColloquial150 + britishColloquial151 + britishColloquial152 + britishColloquial153 + britishColloquial154 + britishColloquial155 + britishColloquial156 + britishColloquial157 + britishColloquial158 + britishColloquial159 + britishColloquial160 + britishColloquial161 + britishColloquial162 + britishColloquial163 + britishColloquial164 + britishColloquial165 + britishColloquial166 + britishColloquial167 + britishColloquial168 + britishColloquial169 + britishColloquial170 + britishColloquial171 + britishColloquial172 + britishColloquial173 + britishColloquial174 + britishColloquial175 + britishColloquial176 + britishColloquial177 + britishColloquial178 + britishColloquial179 + britishColloquial180 + britishColloquial181 + britishColloquial182 + britishColloquial183 + britishColloquial184 + britishColloquial185 + britishColloquial186 + britishColloquial187 + britishColloquial188 + britishColloquial189 + britishColloquial190 + britishColloquial191 + britishColloquial192 + britishColloquial193 + britishColloquial194 + britishColloquial195 + britishColloquial196 + britishColloquial197 + britishColloquial198 + britishColloquial199 + britishColloquial200 + britishColloquial201 + britishColloquial202 + britishColloquial203 + britishColloquial204 + britishColloquial205 + britishColloquial206 + britishColloquial207 + britishColloquial208 + britishColloquial209 + britishColloquial210 + britishColloquial211 + britishColloquial212 + britishColloquial213 + britishColloquial214 + britishColloquial215 + britishColloquial216 + britishColloquial217 + britishColloquial218 + britishColloquial219 + britishColloquial220
     }
 
     /// Words that have been removed from the seed list and should also be
@@ -39551,6 +39551,115 @@ enum SeedData {
                     ("The shop closed five minutes before we got there — how annoying!", "着く5分前に店が閉まっちゃった、ほんとイラっとする！"),
                     ("Your train got cancelled again? How annoying.", "また電車運休になったの？それは面倒だね。")
                  ], ipa: "/ˌhaʊ əˈnɔɪɪŋ/"),
+        ]
+    }
+    private static var britishColloquial220: [Word] {
+        [
+            make("tie the knot", "(informal) to get married",
+                 "結婚する",
+                 useCases: ["友人の結婚を話題にするとき", "結婚の予定を伝えるとき"],
+                 examples: [
+                    ("Did you hear? Tom and Sarah are finally tying the knot.", "聞いた？トムとサラ、ついに結婚するんだって。"),
+                    ("We're tying the knot next summer.", "私たち、来年の夏に結婚するの。")
+                 ], ipa: "/ˌtaɪ ðə ˈnɒt/"),
+            make("the other week", "a few weeks ago; recently (not exactly sure when)",
+                 "数週間前・この前",
+                 useCases: ["少し前の出来事を話すとき", "日付があいまいな過去を言うとき"],
+                 examples: [
+                    ("I bumped into your brother the other week.", "この前、君のお兄さんにばったり会ったよ。"),
+                    ("We tried that new Thai place the other week — it was lovely.", "数週間前にあの新しいタイ料理屋に行ったよ。美味しかった。")
+                 ], ipa: "/ði ˈʌðə ˌwiːk/"),
+            make("not likely", "(informal) certainly not; used to strongly refuse or doubt something",
+                 "まさか・絶対いやだ",
+                 useCases: ["誘いをきっぱり断るとき", "ありえないと思うとき"],
+                 examples: [
+                    ("Swim in the sea in November? Not likely!", "11月に海で泳ぐ？絶対いやだよ！"),
+                    ("Will he apologise? Not likely.", "彼が謝るかって？まずないね。")
+                 ], ipa: "/ˌnɒt ˈlaɪkli/"),
+            make("I get that", "used to show you understand someone's feelings or point, often before adding 'but'",
+                 "それはわかるよ・気持ちはわかる",
+                 useCases: ["相手の気持ちに理解を示すとき", "理解したうえで反論するとき"],
+                 examples: [
+                    ("I get that you're tired, but we need to finish this today.", "疲れてるのはわかるけど、今日中に終わらせないと。"),
+                    ("You didn't want to go? Yeah, I get that.", "行きたくなかったの？うん、わかるよ。")
+                 ], ipa: "/aɪ ˈɡet ðæt/"),
+            make("and all that", "(informal) and other similar things; and so on",
+                 "〜とかいろいろ・〜など",
+                 useCases: ["細かく列挙せずにまとめるとき", "話をざっくり伝えるとき"],
+                 examples: [
+                    ("I had to sort out the bills, the insurance and all that.", "請求書とか保険とか、いろいろ片付けなきゃいけなかった。"),
+                    ("She's into yoga, meditation and all that.", "彼女はヨガとか瞑想とか、そういうのにハマってる。")
+                 ], ipa: "/ənd ˈɔːl ðæt/"),
+            make("go into town", "to go to the centre of the town or city, usually for shopping or going out",
+                 "街に出る・繁華街へ行く",
+                 useCases: ["買い物や外出の予定を話すとき", "友人を誘うとき"],
+                 examples: [
+                    ("I'm going into town later — do you need anything?", "あとで街に出るけど、何かいる？"),
+                    ("Shall we go into town for dinner tonight?", "今夜は街で夕飯にしない？")
+                 ], ipa: "/ˌɡəʊ ˈɪntə ˌtaʊn/"),
+            make("city centre", "(British) the main central area of a city with shops, offices and restaurants",
+                 "市の中心部・都心",
+                 useCases: ["住んでいる場所を説明するとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("My flat's a ten-minute walk from the city centre.", "うちのフラットは市の中心部から歩いて10分だよ。"),
+                    ("Parking in the city centre is a nightmare.", "都心の駐車は最悪だよ。")
+                 ], ipa: "/ˌsɪti ˈsentə/"),
+            make("on the outskirts", "in the areas at the edge of a town or city",
+                 "郊外に・町はずれに",
+                 useCases: ["住んでいる場所を説明するとき", "店や施設の場所を伝えるとき"],
+                 examples: [
+                    ("We live on the outskirts of Manchester.", "うちはマンチェスターの郊外に住んでるよ。"),
+                    ("The new IKEA is on the outskirts of town.", "新しいイケアは町はずれにあるよ。")
+                 ], ipa: "/ɒn ði ˈaʊtskɜːts/"),
+            make("let the cat out of the bag", "to accidentally reveal a secret",
+                 "うっかり秘密をばらす",
+                 useCases: ["サプライズが台無しになったとき", "口を滑らせたとき"],
+                 examples: [
+                    ("Who let the cat out of the bag about the party?", "パーティーのこと、誰がばらしたの？"),
+                    ("Sorry, I didn't mean to let the cat out of the bag.", "ごめん、うっかり言うつもりじゃなかったんだ。")
+                 ], ipa: "/ˌlet ðə ˈkæt aʊt əv ðə ˈbæɡ/"),
+            make("sort through", "to look at a group of things and organise them or decide what to keep",
+                 "（中身を）整理する・より分ける",
+                 useCases: ["片付けや引っ越し準備のとき", "書類やメールを整理するとき"],
+                 examples: [
+                    ("I spent all Sunday sorting through old clothes.", "日曜はずっと古い服の整理をしてたよ。"),
+                    ("I need to sort through my emails before the meeting.", "会議の前にメールを整理しなきゃ。")
+                 ], ipa: "/ˌsɔːt ˈθruː/"),
+            make("up to now", "until the present time",
+                 "今までは・これまで",
+                 useCases: ["これまでの状況を説明するとき", "今後変わることを示すとき"],
+                 examples: [
+                    ("Up to now, everything's gone to plan.", "今のところ、全部予定通りに進んでるよ。"),
+                    ("I've never had any problems with it up to now.", "これまでは一度も問題なかったんだけどね。")
+                 ], ipa: "/ˌʌp tə ˈnaʊ/"),
+            make("cancel on someone", "(informal) to cancel plans you had made with someone, often at short notice",
+                 "（人との）約束をドタキャンする",
+                 useCases: ["約束を断られたとき", "予定をキャンセルして謝るとき"],
+                 examples: [
+                    ("She cancelled on me again at the last minute.", "彼女、またギリギリで約束キャンセルしてきたよ。"),
+                    ("Sorry to cancel on you — something's come up at work.", "キャンセルしてごめん、仕事で急用ができて。")
+                 ], ipa: "/ˈkænsl ɒn ˌsʌmwʌn/"),
+            make("atmosphere", "the feeling or mood of a place or situation",
+                 "雰囲気",
+                 useCases: ["店やイベントの感想を言うとき", "職場や場の空気を説明するとき"],
+                 examples: [
+                    ("The food was okay, but the atmosphere was brilliant.", "料理はまあまあだったけど、雰囲気は最高だったよ。"),
+                    ("There's a really friendly atmosphere in the office.", "職場はすごくフレンドリーな雰囲気だよ。")
+                 ], ipa: "/ˈætməsfɪə/"),
+            make("come to that", "(British, informal) used to add that what you have just said is also true of something else",
+                 "そう言えば〜もだ・ついでに言うと",
+                 useCases: ["話に付け足すとき", "自分にも当てはまると気づいたとき"],
+                 examples: [
+                    ("I haven't seen Jack for ages — or his sister, come to that.", "ジャックにずっと会ってないな。そう言えば妹さんにもだ。"),
+                    ("He never cooks. Come to that, neither do I.", "彼は全然料理しない。まあ、言ってみれば僕もだけど。")
+                 ], ipa: "/ˈkʌm tə ˌðæt/"),
+            make("have sth in stock", "to have goods available in a shop to sell",
+                 "在庫がある",
+                 useCases: ["店で商品の在庫を尋ねるとき", "入荷状況を確認するとき"],
+                 examples: [
+                    ("Do you have these trainers in stock in a size nine?", "このスニーカー、サイズ9の在庫はありますか？"),
+                    ("Sorry, we don't have it in stock at the moment.", "申し訳ありません、今は在庫を切らしております。")
+                 ], ipa: "/hæv ɪn ˈstɒk/"),
         ]
     }
     private static var britishColloquial219: [Word] {
