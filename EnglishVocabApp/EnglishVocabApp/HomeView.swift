@@ -396,6 +396,10 @@ struct HeroLondon: View {
         GeometryReader { geo in
             let k = geo.size.width / base.width
             ZStack(alignment: .topLeading) {
+                // The sky is the same live pencil hatching as the rest of the
+                // app; the street picture has a transparent sky on top of it.
+                HatchBackground()
+                    .frame(width: base.width * k, height: base.height * k)
                 Image("hero_london")
                     .resizable()
                     .frame(width: base.width * k, height: base.height * k)
