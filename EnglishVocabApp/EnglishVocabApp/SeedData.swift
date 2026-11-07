@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229
+            britishColloquial228, britishColloquial229, britishColloquial230
         ]
         return groups.flatMap { $0 }
     }
@@ -40490,6 +40490,115 @@ enum SeedData {
                     ("I'd better head home — I've got an early start tomorrow.", "そろそろ帰らなきゃ、明日朝早いんだ。"),
                     ("We made an early start to beat the traffic.", "渋滞を避けるために朝早く出発したよ。")
                  ], ipa: "/ən ˌɜːli ˈstɑːt/"),
+        ]
+    }
+    private static var britishColloquial230: [Word] {
+        [
+            make("take a look", "to look at something, often quickly, to check or examine it",
+                 "ちょっと見てみる・目を通す",
+                 useCases: ["相手に何かを確認してほしいとき", "問題をチェックするとき"],
+                 examples: [
+                    ("Can you take a look at this email before I send it?", "送る前にこのメール、ちょっと見てくれる？"),
+                    ("I'll take a look at your laptop later.", "後で君のノートパソコン、見てみるよ。")
+                 ], ipa: "/ˌteɪk ə ˈlʊk/"),
+            make("back up", "to support someone by agreeing with them; also to make a copy of computer files",
+                 "（人を）援護する・味方する／バックアップを取る",
+                 useCases: ["会議で誰かの意見を支持するとき", "データを保存しておくとき"],
+                 examples: [
+                    ("Thanks for backing me up in the meeting.", "会議で味方してくれてありがとう。"),
+                    ("Make sure you back up your photos first.", "まず写真のバックアップを取っておいてね。")
+                 ], ipa: "/ˌbæk ˈʌp/"),
+            make("fill out", "to write the necessary information in the spaces on a form",
+                 "（書類・用紙に）記入する",
+                 useCases: ["申込書やアンケートを書くとき", "病院や役所の手続きのとき"],
+                 examples: [
+                    ("You'll need to fill out this form at reception.", "受付でこの用紙に記入してください。"),
+                    ("It only takes two minutes to fill out the survey.", "アンケートの記入は2分しかかからないよ。")
+                 ], ipa: "/ˌfɪl ˈaʊt/"),
+            make("favourite", "the person or thing that you like more than all the others",
+                 "お気に入り（の）・一番好きな",
+                 useCases: ["好きな食べ物や場所を話すとき", "おすすめを紹介するとき"],
+                 examples: [
+                    ("This is my favourite café in town.", "ここは街で一番お気に入りのカフェなんだ。"),
+                    ("Oh, I love this song — it's one of my favourites!", "この曲大好き、お気に入りの一つなんだ！")
+                 ], ipa: "/ˈfeɪvərɪt/"),
+            make("well spotted", "used to praise someone for noticing something, especially a mistake",
+                 "よく気づいたね・鋭いね",
+                 useCases: ["相手がミスや違いに気づいてくれたとき", "細かい点を見つけてくれたとき"],
+                 examples: [
+                    ("\"There's a typo in the title.\" \"Oh, well spotted!\"", "「タイトルに誤字があるよ」「あ、よく気づいたね！」"),
+                    ("Well spotted — I completely missed that.", "鋭いね、全然気づかなかったよ。")
+                 ], ipa: "/ˌwel ˈspɒtɪd/"),
+            make("glance at", "to look at something or someone very quickly",
+                 "〜をちらっと見る",
+                 useCases: ["時計やスマホをちらっと見るとき", "書類にざっと目をやるとき"],
+                 examples: [
+                    ("She kept glancing at her watch during dinner.", "彼女、夕食中ずっと時計をちらちら見てたよ。"),
+                    ("I only glanced at the menu, but it looked great.", "メニューはちらっと見ただけだけど、良さそうだったよ。")
+                 ], ipa: "/ˈɡlɑːns æt/"),
+            make("barbecue", "a meal or party where food is cooked outside over a fire or grill",
+                 "バーベキュー",
+                 useCases: ["週末の予定を話すとき", "友人を誘うとき"],
+                 examples: [
+                    ("We're having a barbecue on Saturday if you fancy coming.", "土曜にバーベキューするんだけど、よかったら来ない？"),
+                    ("Let's do a barbecue while the weather's still nice.", "天気がいいうちにバーベキューしようよ。")
+                 ], ipa: "/ˈbɑːbɪkjuː/"),
+            make("dinner party", "a social event where people are invited to someone's home for an evening meal",
+                 "（自宅での）夕食会・ホームパーティー",
+                 useCases: ["友人を家に招くとき", "週末の出来事を話すとき"],
+                 examples: [
+                    ("We're having a few friends round for a dinner party on Friday.", "金曜に友達を何人か呼んで夕食会をするんだ。"),
+                    ("I went to a lovely dinner party last night.", "昨夜、素敵なホームパーティーに行ってきたよ。")
+                 ], ipa: "/ˈdɪnə ˌpɑːti/"),
+            make("reunion", "a meeting of people who have not seen each other for a long time",
+                 "同窓会・再会（の集まり）",
+                 useCases: ["同窓会や家族の集まりの話をするとき", "久しぶりに集まる計画を立てるとき"],
+                 examples: [
+                    ("Are you going to the school reunion next month?", "来月の同窓会、行く？"),
+                    ("We have a big family reunion every summer.", "毎年夏に親戚が大集合するんだ。")
+                 ], ipa: "/riːˈjuːniən/"),
+            make("overdue", "happening or done later than expected or needed",
+                 "期限切れの・とっくに〜すべき",
+                 useCases: ["支払いや返却が遅れているとき", "やるべきことを先延ばしにしていたとき"],
+                 examples: [
+                    ("This holiday is long overdue — I really need a break.", "この休み、本当に待ちに待ってたんだ。休みが必要だったよ。"),
+                    ("My library books are a week overdue.", "図書館の本、返却期限を1週間過ぎてる。")
+                 ], ipa: "/ˌəʊvəˈdjuː/"),
+            make("scroll through", "to move through content on a phone or computer screen",
+                 "（スマホなどで）スクロールして見る・ざっと眺める",
+                 useCases: ["SNSや写真を見ているとき", "スマホを見すぎていることを話すとき"],
+                 examples: [
+                    ("I spent an hour scrolling through my phone in bed.", "ベッドで1時間もスマホをだらだら見ちゃった。"),
+                    ("Scroll through and find the photo from Saturday.", "スクロールして土曜日の写真を探してみて。")
+                 ], ipa: "/ˌskrəʊl ˈθruː/"),
+            make("episode", "one part of a TV series or podcast; also a single event or period of time",
+                 "（ドラマなどの）1話・回",
+                 useCases: ["ドラマやポッドキャストの話をするとき", "どこまで見たか話すとき"],
+                 examples: [
+                    ("Don't tell me what happens — I'm only on episode three.", "ネタバレしないで、まだ3話なんだから。"),
+                    ("Let's watch one more episode before bed.", "寝る前にもう1話だけ見よう。")
+                 ], ipa: "/ˈepɪsəʊd/"),
+            make("subtitles", "words shown at the bottom of a screen that translate or transcribe what is being said",
+                 "字幕",
+                 useCases: ["映画やドラマを見るとき", "外国語の作品を話題にするとき"],
+                 examples: [
+                    ("Do you mind if I put the subtitles on?", "字幕つけてもいい？"),
+                    ("I watched a Spanish film with English subtitles.", "英語字幕でスペイン映画を見たよ。")
+                 ], ipa: "/ˈsʌbˌtaɪtlz/"),
+            make("skip the queue", "to avoid waiting in line, often by booking or paying in advance",
+                 "列に並ばずに済む・行列をスキップする",
+                 useCases: ["観光地のチケットの話をするとき", "混雑を避ける方法を話すとき"],
+                 examples: [
+                    ("If you book online, you can skip the queue.", "ネットで予約すれば並ばずに入れるよ。"),
+                    ("We paid a bit extra to skip the queue at the museum.", "博物館で並ばずに済むように少し多めに払ったんだ。")
+                 ], ipa: "/ˌskɪp ðə ˈkjuː/"),
+            make("google it", "to search for information about something on the internet",
+                 "ググる・ネットで調べる",
+                 useCases: ["わからないことを調べるよう勧めるとき", "答えがわからないとき"],
+                 examples: [
+                    ("I've no idea what that means — let me google it.", "それどういう意味か全然わからないな、ググってみる。"),
+                    ("Just google it, it'll tell you the opening times.", "ググってみなよ、営業時間出てくるから。")
+                 ], ipa: "/ˈɡuːɡl ɪt/"),
         ]
     }
     private static var britishColloquial220: [Word] {
