@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228
+            britishColloquial228, britishColloquial229
         ]
         return groups.flatMap { $0 }
     }
@@ -40381,6 +40381,115 @@ enum SeedData {
                     ("Don't fill up on bread — the mains are huge.", "パンでお腹いっぱいにしないでね、メインがすごい量だから。"),
                     ("I filled up on snacks and couldn't eat my dinner.", "おやつでお腹いっぱいになって夕食が食べられなかった。")
                  ], ipa: "/ˌfɪl ˈʌp ɒn/"),
+        ]
+    }
+    private static var britishColloquial229: [Word] {
+        [
+            make("set up", "to prepare or arrange something so that it is ready to use or happen",
+                 "準備する・設定する・立ち上げる",
+                 useCases: ["機器やアカウントの設定をするとき", "会議やイベントの準備をするとき"],
+                 examples: [
+                    ("Can you help me set up my new phone?", "新しいスマホの設定、手伝ってくれる？"),
+                    ("I'll set up a quick call for tomorrow morning.", "明日の朝、ちょっと電話会議をセッティングしておくね。")
+                 ], ipa: "/ˌset ˈʌp/"),
+            make("stay on top of", "to keep control of something by dealing with it regularly so it doesn't build up",
+                 "〜をきちんと把握しておく・溜めないようにする",
+                 useCases: ["仕事や家事を溜めないようにするとき", "メールや予定を管理するとき"],
+                 examples: [
+                    ("I'm trying to stay on top of my emails this week.", "今週はメールを溜めないように頑張ってるんだ。"),
+                    ("It's hard to stay on top of the housework with two kids.", "子ども二人いると家事を回すのが大変だよ。")
+                 ], ipa: "/ˌsteɪ ɒn ˈtɒp ɒv/"),
+            make("pass by", "to go past a person or place, often on the way somewhere else",
+                 "（〜のそばを）通りかかる・通り過ぎる",
+                 useCases: ["ついでに立ち寄ることを伝えるとき", "道中で見かけたものを話すとき"],
+                 examples: [
+                    ("I passed by your old flat on the way here.", "ここに来る途中、君の前のアパートの前を通ったよ。"),
+                    ("If you pass by the bakery, could you grab some bread?", "パン屋の前を通るならパン買ってきてくれる？")
+                 ], ipa: "/ˌpɑːs ˈbaɪ/"),
+            make("check with", "to ask someone for permission or information before you decide something",
+                 "〜に確認する・〜に聞いてみる",
+                 useCases: ["予定を即答できないとき", "上司や家族の了承が必要なとき"],
+                 examples: [
+                    ("Let me check with my partner and get back to you.", "パートナーに確認してから連絡するね。"),
+                    ("I'll need to check with my boss first.", "まず上司に確認しないと。")
+                 ], ipa: "/ˈtʃek wɪð/"),
+            make("out of shape", "not physically fit because you haven't been exercising",
+                 "体がなまっている・運動不足",
+                 useCases: ["久しぶりに運動して疲れたとき", "体力の衰えを話すとき"],
+                 examples: [
+                    ("I'm so out of shape — I got tired walking up the stairs.", "体なまりすぎて、階段上るだけで疲れたよ。"),
+                    ("I got a bit out of shape over the winter.", "冬の間にちょっと体がなまっちゃった。")
+                 ], ipa: "/ˌaʊt əv ˈʃeɪp/"),
+            make("not yet", "used to say that something has not happened so far but probably will",
+                 "まだ（だよ）",
+                 useCases: ["「もう〜した？」と聞かれたとき", "進捗を聞かれたとき"],
+                 examples: [
+                    ("\"Have you seen the new series?\" \"Not yet, but I really want to.\"", "「新シリーズ見た？」「まだだけど、すごく見たい」"),
+                    ("\"Are we there yet?\" \"Not yet — about ten more minutes.\"", "「もう着く？」「まだだよ、あと10分くらい」")
+                 ], ipa: "/ˌnɒt ˈjet/"),
+            make("thankfully", "used to say that you are glad something happened or didn't happen",
+                 "ありがたいことに・幸い",
+                 useCases: ["トラブルが大事に至らなかったとき", "ほっとした出来事を話すとき"],
+                 examples: [
+                    ("Thankfully, nobody was hurt.", "幸い、誰もけがをしなかった。"),
+                    ("The train was late, but thankfully I still made the meeting.", "電車が遅れたけど、ありがたいことに会議には間に合ったよ。")
+                 ], ipa: "/ˈθæŋkfəli/"),
+            make("in a little while", "soon; after a short period of time",
+                 "もう少ししたら・ちょっと後で",
+                 useCases: ["すぐではないが近いうちにやるとき", "相手に少し待ってもらうとき"],
+                 examples: [
+                    ("I'll call you back in a little while.", "ちょっとしたら折り返すね。"),
+                    ("Dinner will be ready in a little while.", "夕飯、もう少しでできるよ。")
+                 ], ipa: "/ɪn ə ˌlɪtl ˈwaɪl/"),
+            make("way better", "(informal) much better",
+                 "ずっといい・断然いい",
+                 useCases: ["比べてはっきり良いと言うとき", "改善したことを伝えるとき"],
+                 examples: [
+                    ("The new place is way better than the old one.", "新しい店の方が前のより断然いいよ。"),
+                    ("I feel way better after a good night's sleep.", "ぐっすり寝たらずっと調子いいよ。")
+                 ], ipa: "/ˌweɪ ˈbetə/"),
+            make("at the earliest", "not before the time mentioned",
+                 "早くても",
+                 useCases: ["納期や到着時間を伝えるとき", "期待しすぎないよう伝えるとき"],
+                 examples: [
+                    ("I'll be home by eight at the earliest.", "帰りは早くても8時になるよ。"),
+                    ("It won't be ready until Friday at the earliest.", "早くても金曜まではできないね。")
+                 ], ipa: "/ət ði ˈɜːliəst/"),
+            make("sleep through", "to continue sleeping without being woken by something, or to sleep all night without waking",
+                 "（〜に気づかず）寝続ける・朝までぐっすり眠る",
+                 useCases: ["目覚ましに気づかなかったとき", "よく眠れたことを話すとき"],
+                 examples: [
+                    ("I slept through my alarm and missed the train.", "目覚ましに気づかず寝てて、電車に乗り遅れた。"),
+                    ("The baby finally slept through the night!", "赤ちゃんがやっと朝まで寝てくれた！")
+                 ], ipa: "/ˌsliːp ˈθruː/"),
+            make("run over", "to continue past the planned finishing time",
+                 "（予定の時間を）押す・延びる",
+                 useCases: ["会議が長引いたとき", "遅れる理由を伝えるとき"],
+                 examples: [
+                    ("Sorry, the meeting ran over a bit.", "ごめん、会議がちょっと押しちゃって。"),
+                    ("Let's not run over — we've all got places to be.", "時間オーバーしないようにしよう、みんな予定があるし。")
+                 ], ipa: "/ˌrʌn ˈəʊvə/"),
+            make("is it all right if", "a polite way of asking for permission to do something",
+                 "〜してもいいですか？",
+                 useCases: ["軽く許可を取りたいとき", "相手の家や職場で気を遣うとき"],
+                 examples: [
+                    ("Is it all right if I open the window?", "窓開けてもいい？"),
+                    ("Is it all right if I bring a friend along tonight?", "今夜、友達連れて行ってもいいかな？")
+                 ], ipa: "/ɪz ɪt ɔːl ˈraɪt ɪf/"),
+            make("in the mood for", "wanting to do or have something at a particular time",
+                 "〜の気分だ・〜したい気分",
+                 useCases: ["食べたいものを決めるとき", "やる気がないことを伝えるとき"],
+                 examples: [
+                    ("I'm in the mood for something spicy tonight.", "今夜は辛いものの気分だな。"),
+                    ("I'm not really in the mood for going out.", "あんまり出かける気分じゃないんだ。")
+                 ], ipa: "/ɪn ðə ˈmuːd fɔː/"),
+            make("an early start", "a situation in which you have to get up or begin something very early",
+                 "朝が早いこと・早起きの予定",
+                 useCases: ["早めに帰る・寝る理由を伝えるとき", "翌日の予定を話すとき"],
+                 examples: [
+                    ("I'd better head home — I've got an early start tomorrow.", "そろそろ帰らなきゃ、明日朝早いんだ。"),
+                    ("We made an early start to beat the traffic.", "渋滞を避けるために朝早く出発したよ。")
+                 ], ipa: "/ən ˌɜːli ˈstɑːt/"),
         ]
     }
     private static var britishColloquial220: [Word] {
