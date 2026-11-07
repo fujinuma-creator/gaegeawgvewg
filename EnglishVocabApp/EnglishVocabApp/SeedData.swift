@@ -90,7 +90,7 @@ enum SeedData {
             britishColloquial199, britishColloquial200, britishColloquial201, britishColloquial202, britishColloquial203, britishColloquial204,
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
-            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221
+            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222
         ]
         return groups.flatMap { $0 }
     }
@@ -39616,6 +39616,115 @@ enum SeedData {
                     ("Sorry, that was rude. I take it back.", "ごめん、失礼だったね。今のは撤回する。"),
                     ("I said the film would be boring — I take it back, it was brilliant!", "退屈だって言ったけど前言撤回、最高だった！")
                  ], ipa: "/aɪ ˌteɪk ɪt ˈbæk/"),
+        ]
+    }
+    private static var britishColloquial222: [Word] {
+        [
+            make("get a taxi", "to take or hire a taxi to go somewhere",
+                 "タクシーを拾う・タクシーで行く",
+                 useCases: ["移動手段を相談するとき", "帰りの方法を話すとき"],
+                 examples: [
+                    ("It's pouring — shall we just get a taxi?", "土砂降りだし、もうタクシーで行かない？"),
+                    ("I missed the last train, so I had to get a taxi home.", "終電を逃したから、タクシーで帰るしかなかったよ。")
+                 ], ipa: "/ˌɡet ə ˈtæksi/"),
+            make("take the tube", "(British) to travel on the London Underground",
+                 "地下鉄で行く（ロンドン）",
+                 useCases: ["ロンドンでの移動を話すとき", "道順を説明するとき"],
+                 examples: [
+                    ("It's quicker to take the tube than the bus.", "バスより地下鉄の方が早いよ。"),
+                    ("I usually take the tube to work, but today I walked.", "普段は地下鉄で通勤するけど、今日は歩いたんだ。")
+                 ], ipa: "/ˌteɪk ðə ˈtjuːb/"),
+            make("take the afternoon off", "to not work during the afternoon, usually as a short break",
+                 "午後休を取る・午後から休む",
+                 useCases: ["休みの予定を伝えるとき", "職場で予定を調整するとき"],
+                 examples: [
+                    ("I'm taking the afternoon off to see the dentist.", "歯医者に行くから午後休を取るね。"),
+                    ("You look exhausted — why don't you take the afternoon off?", "疲れ切ってるね、午後から休んだら？")
+                 ], ipa: "/ˌteɪk ði ˌɑːftəˈnuːn ˈɒf/"),
+            make("do the dishes", "to wash the plates, cups, pans, etc. after a meal",
+                 "皿洗いをする",
+                 useCases: ["家事の分担を話すとき", "食後に手伝いを申し出るとき"],
+                 examples: [
+                    ("You cooked, so I'll do the dishes.", "君が作ってくれたから、皿洗いは僕がやるよ。"),
+                    ("Can you do the dishes before you go out?", "出かける前に皿洗いしてくれる？")
+                 ], ipa: "/ˌduː ðə ˈdɪʃɪz/"),
+            make("affordable", "not too expensive; at a price people can pay",
+                 "手頃な値段の・お手頃な",
+                 useCases: ["お店や商品の値段を話すとき", "住まいや旅行の費用を比べるとき"],
+                 examples: [
+                    ("That little Italian place is really good and quite affordable.", "あの小さなイタリアン、すごく美味しいし結構お手頃だよ。"),
+                    ("It's hard to find affordable flats in the city centre.", "街の中心で手頃な家賃のフラットを見つけるのは大変。")
+                 ], ipa: "/əˈfɔːdəbl/"),
+            make("get cancelled", "(of an event, flight, train, etc.) to be called off and not happen",
+                 "中止になる・欠航になる",
+                 useCases: ["予定がなくなったことを伝えるとき", "交通の乱れを話すとき"],
+                 examples: [
+                    ("My flight got cancelled because of the fog.", "霧で私の便が欠航になっちゃった。"),
+                    ("Football practice got cancelled, so I'm free tonight.", "サッカーの練習が中止になったから、今夜空いてるよ。")
+                 ], ipa: "/ˌɡet ˈkænsld/"),
+            make("tea break", "(British) a short break from work to have a cup of tea or coffee",
+                 "お茶休憩・ちょっと一息",
+                 useCases: ["仕事の合間に休憩を提案するとき", "職場での習慣を話すとき"],
+                 examples: [
+                    ("Let's have a quick tea break before the next meeting.", "次の会議の前にちょっとお茶休憩しよう。"),
+                    ("We always chat about the weekend during our tea break.", "お茶休憩のときはいつも週末の話をしてるよ。")
+                 ], ipa: "/ˈtiː breɪk/"),
+            make("just in time", "with very little time to spare before it was too late",
+                 "ギリギリ間に合って・ちょうどいいときに",
+                 useCases: ["ギリギリ間に合ったことを話すとき", "タイミングよく来た人に言うとき"],
+                 examples: [
+                    ("We got to the station just in time for the train.", "駅にギリギリ間に合って電車に乗れたよ。"),
+                    ("Ah, you're just in time — dinner's on the table.", "ああ、ちょうどいいところに来たね。夕飯できてるよ。")
+                 ], ipa: "/ˌdʒʌst ɪn ˈtaɪm/"),
+            make("home-cooked", "(of food) made at home rather than bought or eaten in a restaurant",
+                 "手料理の・家庭料理の",
+                 useCases: ["家で作った料理を褒めるとき", "外食続きの後に話すとき"],
+                 examples: [
+                    ("I've missed a proper home-cooked meal.", "ちゃんとした手料理が恋しかったんだ。"),
+                    ("Nothing beats home-cooked food after a long trip.", "長旅の後は家庭料理に勝るものはないね。")
+                 ], ipa: "/ˌhəʊm ˈkʊkt/"),
+            make("dinner's ready", "used to tell people that the evening meal is ready to eat",
+                 "ご飯できたよ",
+                 useCases: ["家族や同居人を食事に呼ぶとき", "友人を招いた席で"],
+                 examples: [
+                    ("Dinner's ready! Come and sit down.", "ご飯できたよ！座って座って。"),
+                    ("Can you turn the telly off? Dinner's ready.", "テレビ消してくれる？ご飯できたよ。")
+                 ], ipa: "/ˌdɪnəz ˈredi/"),
+            make("pack your bags", "to put your things into bags or a suitcase before travelling or leaving",
+                 "荷造りをする・荷物をまとめる",
+                 useCases: ["旅行の準備を話すとき", "引っ越しや出発を話すとき"],
+                 examples: [
+                    ("Have you packed your bags yet? We leave at six.", "もう荷造りした？6時に出るよ。"),
+                    ("I always pack my bags the night before.", "いつも前の晩に荷物をまとめるんだ。")
+                 ], ipa: "/ˌpæk jɔː ˈbæɡz/"),
+            make("catch a flight", "to get on a plane, especially one you need to hurry for",
+                 "飛行機に乗る・便に間に合わせる",
+                 useCases: ["出発の予定を伝えるとき", "急いでいる理由を言うとき"],
+                 examples: [
+                    ("Sorry, I can't stay — I've got a flight to catch.", "ごめん、ゆっくりできないんだ。飛行機に乗らないといけなくて。"),
+                    ("We need to catch an early flight to Madrid tomorrow.", "明日はマドリード行きの早い便に乗らないと。")
+                 ], ipa: "/ˌkætʃ ə ˈflaɪt/"),
+            make("could we see the menu?", "a polite way to ask for the menu in a restaurant or café",
+                 "メニューを見せてもらえますか？",
+                 useCases: ["レストランで注文前に", "カフェで店員に声をかけるとき"],
+                 examples: [
+                    ("Hi, could we see the menu, please?", "すみません、メニューを見せてもらえますか？"),
+                    ("Could we see the menu again? We'd like some dessert.", "もう一度メニューいいですか？デザートも頼みたくて。")
+                 ], ipa: "/kʊd wi ˌsiː ðə ˈmenjuː/"),
+            make("make a booking", "(British) to reserve a table, room, ticket, etc. in advance",
+                 "予約する",
+                 useCases: ["レストランやホテルを予約するとき", "予約の有無を確認するとき"],
+                 examples: [
+                    ("I've made a booking for eight o'clock at that new place.", "あの新しいお店、8時に予約しておいたよ。"),
+                    ("Hi, I'd like to make a booking for four people on Friday.", "こんにちは、金曜日に4名で予約したいのですが。")
+                 ], ipa: "/ˌmeɪk ə ˈbʊkɪŋ/"),
+            make("boarding pass", "a card or digital pass that lets you get on a plane",
+                 "搭乗券",
+                 useCases: ["空港で手続きするとき", "旅行の準備を確認するとき"],
+                 examples: [
+                    ("Have you got your boarding pass on your phone?", "搭乗券、スマホに入ってる？"),
+                    ("I printed my boarding pass at home to save time.", "時間節約のために搭乗券は家で印刷してきた。")
+                 ], ipa: "/ˈbɔːdɪŋ pɑːs/"),
         ]
     }
     private static var britishColloquial220: [Word] {
