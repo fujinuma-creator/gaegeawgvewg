@@ -103,7 +103,22 @@ final class WordStore: ObservableObject {
         return out
     }
 
+    private var pendingSave: DispatchWorkItem?
+
+    /// Saves a moment later instead of right now, coalescing a burst of
+    /// changes (one per flashcard swipe) into a single write.
+    func saveSoon() {
+        pendingSave?.cancel()
+        let work = DispatchWorkItem { [weak self] in
+            Task { @MainActor in self?.save() }
+        }
+        pendingSave = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: work)
+    }
+
     func save() {
+        pendingSave?.cancel()
+        pendingSave = nil
         let enc = JSONEncoder(); enc.dateEncodingStrategy = .iso8601
         let file = LibraryFile(progress: words.filter { !Self.isUserWord($0) }.map(WordProgress.init),
                                userWords: words.filter { Self.isUserWord($0) })
@@ -269,7 +284,7 @@ final class WordStore: ObservableObject {
         words[i] = w
         stats.markToday()
         stats.addReview(on: now)
-        save()
+        saveSoon()
     }
 
     /// True if a word with the same English text (ignoring case, spaces and punctuation) exists.
@@ -350,7 +365,10 @@ final class WordStore: ObservableObject {
     }
 
     /// App went to the background: bank the time so far, keep the screen count.
-    func pauseStudy() { flushStudyTime() }
+    func pauseStudy() {
+        flushStudyTime()
+        if pendingSave != nil { save() }
+    }
 
     /// App came back: restart the clock if a study screen is still showing.
     func resumeStudy() {

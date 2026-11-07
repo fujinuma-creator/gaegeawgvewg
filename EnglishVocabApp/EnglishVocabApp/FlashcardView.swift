@@ -17,11 +17,24 @@ struct FlashcardView: View {
     @State private var finished = false
     @State private var dragOffset: CGSize = .zero
     @State private var flyingOut = false
+    /// nil until the finger has moved far enough to tell; then true for a
+    /// sideways swipe (moves the card) and false for an up/down scroll.
+    @State private var dragIsHorizontal: Bool? = nil
+    /// The deck's words, looked up once. Looking them up on every frame of a
+    /// drag (deck × 4,000 words) is what made the swipe stutter.
+    @State private var words: [Word] = []
+    @State private var loaded = false
 
-    private var words: [Word] {
-        deck.wordIds.compactMap { id in store.words.first { $0.id == id } }
-    }
     private var current: Word? { index < words.count ? words[index] : nil }
+
+    private func loadDeck() {
+        guard !loaded else { return }
+        var byId: [String: Word] = [:]
+        byId.reserveCapacity(store.words.count)
+        for w in store.words where byId[w.id] == nil { byId[w.id] = w }
+        words = deck.wordIds.compactMap { byId[$0] }
+        loaded = true
+    }
 
     var body: some View {
         ZStack {
@@ -30,12 +43,17 @@ struct FlashcardView: View {
                 header
                 progressBar
                 directionToggle
-                if finished || current == nil {
+                if !loaded {
+                    Spacer()
+                } else if finished || current == nil {
                     doneCard
                 } else if let w = current {
                     card(w)
-                        .offset(x: dragOffset.width)
-                        .gesture(swipeGesture(w))
+                        .offset(x: dragOffset.width, y: dragOffset.height * 0.15)
+                        .rotationEffect(.degrees(Double(dragOffset.width) / 24), anchor: .bottom)
+                        // simultaneous, so the swipe also works on the detail
+                        // face, whose examples sit in a vertical ScrollView
+                        .simultaneousGesture(swipeGesture(w))
                     Spacer(minLength: 0)
                     swipeHint
                 }
@@ -49,7 +67,10 @@ struct FlashcardView: View {
         }
         .toolbar(.hidden, for: .navigationBar)
         .studyScreen()
-        .onAppear { if settings.autoSpeak, direction == .enToJa, let w = current { SpeechManager.shared.speak(w.word) } }
+        .onAppear {
+            loadDeck()
+            if settings.autoSpeak, direction == .enToJa, let w = current { SpeechManager.shared.speak(w.word) }
+        }
     }
 
     // MARK: header / progress / toggle
@@ -251,7 +272,6 @@ struct FlashcardView: View {
         }
         .opacity(strength)
         .allowsHitTesting(false)
-        .animation(.easeOut(duration: 0.12), value: strength)
     }
 
     private var swipeHint: some View {
@@ -272,33 +292,48 @@ struct FlashcardView: View {
     }
 
     private func swipeGesture(_ w: Word) -> some Gesture {
-        DragGesture(minimumDistance: 12)
+        DragGesture(minimumDistance: 8)
             .onChanged { v in
                 guard !flyingOut else { return }
+                if dragIsHorizontal == nil {
+                    let dx = abs(v.translation.width), dy = abs(v.translation.height)
+                    guard max(dx, dy) > 8 else { return }
+                    dragIsHorizontal = dx > dy
+                }
+                guard dragIsHorizontal == true else { return }
                 dragOffset = v.translation
             }
             .onEnded { v in
-                guard !flyingOut else { return }
+                defer { dragIsHorizontal = nil }
+                guard !flyingOut, dragIsHorizontal == true else { return }
                 let dx = v.translation.width
-                let threshold: CGFloat = 90
-                if dx > threshold {
-                    flyOff(direction: 1) { answer(remembered: true, w) }
-                } else if dx < -threshold {
-                    flyOff(direction: -1) { answer(remembered: false, w) }
+                // A quick flick counts even if the finger travelled only a little.
+                let flick = v.predictedEndTranslation.width
+                if dx > 70 || (dx > 20 && flick > 220) {
+                    flyOff(direction: 1, from: v) { answer(remembered: true, w) }
+                } else if dx < -70 || (dx < -20 && flick < -220) {
+                    flyOff(direction: -1, from: v) { answer(remembered: false, w) }
                 } else {
-                    withAnimation(.spring(response: 0.35, dampingFraction: 0.7)) { dragOffset = .zero }
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) { dragOffset = .zero }
                 }
             }
     }
 
-    private func flyOff(direction: CGFloat, then completion: @escaping () -> Void) {
+    private func flyOff(direction: CGFloat, from v: DragGesture.Value, then completion: @escaping () -> Void) {
         flyingOut = true
-        withAnimation(.easeIn(duration: 0.22)) {
-            dragOffset = CGSize(width: direction * 600, height: 0)
+        // Keep the finger's speed: a fast flick leaves faster.
+        let speed = abs(v.predictedEndTranslation.width - v.translation.width)
+        let duration = speed > 300 ? 0.14 : 0.2
+        withAnimation(.easeOut(duration: duration)) {
+            dragOffset = CGSize(width: direction * 520, height: dragOffset.height)
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.24) {
-            completion()
-            dragOffset = .zero
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+            var t = Transaction()
+            t.disablesAnimations = true
+            withTransaction(t) {
+                completion()
+                dragOffset = .zero
+            }
             flyingOut = false
         }
     }
