@@ -91,7 +91,7 @@ enum SeedData {
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
-            britishColloquial223, britishColloquial224
+            britishColloquial223, britishColloquial224, britishColloquial225
         ]
         return groups.flatMap { $0 }
     }
@@ -39944,6 +39944,115 @@ enum SeedData {
                     ("Just do your best — that's all anyone can ask.", "とにかくベストを尽くせばいいよ、それ以上誰も求めないから。"),
                     ("I can't promise anything, but I'll do my best.", "約束はできないけど、できる限り頑張るよ。")
                  ], ipa: "/ˌduː jə ˈbest/"),
+        ]
+    }
+    private static var britishColloquial225: [Word] {
+        [
+            make("keep a secret", "to not tell anyone something that you have been told privately",
+                 "秘密を守る",
+                 useCases: ["内緒話を打ち明けるとき", "誰かが口が軽いと話すとき"],
+                 examples: [
+                    ("Can you keep a secret? I'm handing in my notice next week.", "秘密守れる？来週退職届を出すんだ。"),
+                    ("Don't tell Tom — he can't keep a secret to save his life.", "トムには言わないで。あいつ本当に秘密を守れないから。")
+                 ], ipa: "/ˌkiːp ə ˈsiːkrət/"),
+            make("lose it", "to suddenly become very angry, upset or unable to stop laughing",
+                 "キレる・取り乱す・笑いが止まらなくなる",
+                 useCases: ["我慢の限界を超えたとき", "大笑いした場面を話すとき"],
+                 examples: [
+                    ("When he kept interrupting, I just lost it.", "あいつがずっと話を遮るから、ついキレちゃった。"),
+                    ("He pulled such a funny face that we all lost it.", "あいつがあまりに変な顔をするから、みんな爆笑しちゃった。")
+                 ], ipa: "/ˈluːz ɪt/"),
+            make("snap at", "to speak to someone suddenly in an angry or unfriendly way",
+                 "〜にきつく当たる・〜に八つ当たりする",
+                 useCases: ["イライラして言い過ぎたことを謝るとき", "疲れている人の態度を話すとき"],
+                 examples: [
+                    ("Sorry I snapped at you earlier — I'm just really tired.", "さっきはきつく当たってごめん。すごく疲れてて。"),
+                    ("There's no need to snap at me, I was only asking.", "そんなに怒らなくてもいいじゃん、聞いただけだよ。")
+                 ], ipa: "/ˈsnæp æt/"),
+            make("splurge", "to spend more money than usual on something nice, as a treat",
+                 "奮発する・パーッとお金を使う",
+                 useCases: ["ご褒美に高い買い物をしたとき", "旅行や食事で贅沢する話をするとき"],
+                 examples: [
+                    ("I splurged on a really nice coat in the sales.", "セールでいいコートを奮発して買っちゃった。"),
+                    ("It's our anniversary, so let's splurge on a fancy dinner.", "記念日だし、豪華なディナーで奮発しようよ。")
+                 ], ipa: "/splɜːdʒ/"),
+            make("Plan B", "a second plan to use if the first one doesn't work",
+                 "代わりの案・次の手",
+                 useCases: ["予定が崩れたときに", "念のための代案を考えるとき"],
+                 examples: [
+                    ("If it rains, what's Plan B?", "雨が降ったら、代わりの案はどうする？"),
+                    ("The restaurant's fully booked, so we need a Plan B.", "レストランが満席だから、別の手を考えないと。")
+                 ], ipa: "/ˌplæn ˈbiː/"),
+            make("disgusting", "extremely unpleasant to taste, smell, look at or think about",
+                 "気持ち悪い・ひどくまずい・最低な",
+                 useCases: ["食べ物や匂いがひどいとき", "人の行動に呆れたとき"],
+                 examples: [
+                    ("This coffee's been sitting here all day — it's disgusting.", "このコーヒー一日中置きっぱなしだったから、まずすぎる。"),
+                    ("The way he spoke to the waiter was disgusting.", "あの人のウェイターへの話し方は最低だった。")
+                 ], ipa: "/dɪsˈɡʌstɪŋ/"),
+            make("yuck", "used to show that you think something is very unpleasant",
+                 "うえっ・げっ（嫌悪感）",
+                 useCases: ["嫌いな食べ物を見たとき", "汚いものに触れたとき"],
+                 examples: [
+                    ("Yuck, there's a hair in my soup!", "うえっ、スープに髪の毛入ってる！"),
+                    ("Olives? Yuck, I can't stand them.", "オリーブ？げっ、無理なんだよね。")
+                 ], ipa: "/jʌk/"),
+            make("unfortunately", "used to say that something is sad, disappointing or not what you hoped",
+                 "残念ながら・あいにく",
+                 useCases: ["誘いや依頼を丁寧に断るとき", "悪い知らせを伝えるとき"],
+                 examples: [
+                    ("Unfortunately, I can't make it on Saturday.", "残念ながら、土曜日は行けないんだ。"),
+                    ("We wanted to go to the beach, but unfortunately it poured down.", "ビーチに行きたかったけど、あいにく土砂降りだった。")
+                 ], ipa: "/ʌnˈfɔːtʃənətli/"),
+            make("have butterflies", "to feel nervous and excited, especially before something important",
+                 "（緊張で）そわそわする・ドキドキする",
+                 useCases: ["面接や発表の前に", "初デートの前の気持ちを話すとき"],
+                 examples: [
+                    ("I've got butterflies — my interview's in ten minutes.", "緊張してきた。面接まであと10分なんだ。"),
+                    ("I always have butterflies before I go on stage.", "舞台に上がる前はいつもドキドキするんだ。")
+                 ], ipa: "/ˌhæv ˈbʌtəflaɪz/"),
+            make("terrified", "extremely frightened",
+                 "すごく怖い・怖くてたまらない",
+                 useCases: ["苦手なものを話すとき", "怖かった体験を話すとき"],
+                 examples: [
+                    ("I'm terrified of spiders.", "クモが本当に怖いんだ。"),
+                    ("I was terrified the first time I drove on the motorway.", "初めて高速道路を運転したときは怖くてたまらなかった。")
+                 ], ipa: "/ˈterɪfaɪd/"),
+            make("devastated", "extremely upset and shocked by bad news or a loss",
+                 "打ちのめされた・ひどくショックを受けた",
+                 useCases: ["悲しい知らせを受けたとき", "大きな失望を表すとき"],
+                 examples: [
+                    ("She was devastated when her dog died.", "犬が死んだとき、彼女は打ちのめされてた。"),
+                    ("I was devastated when I didn't get the job.", "その仕事に受からなくて、本当にショックだった。")
+                 ], ipa: "/ˈdevəsteɪtɪd/"),
+            make("heartbroken", "extremely sad, especially because of a relationship ending or a loss",
+                 "悲しみに暮れた・失恋して傷ついた",
+                 useCases: ["失恋した友人の話をするとき", "大切なものを失ったとき"],
+                 examples: [
+                    ("He's heartbroken since she left him.", "彼女に振られてから、あいつはすっかり落ち込んでる。"),
+                    ("The kids were heartbroken when we had to give the cat away.", "猫を手放すことになって、子どもたちはひどく悲しんだ。")
+                 ], ipa: "/ˈhɑːtbrəʊkən/"),
+            make("boring", "not interesting; making you feel bored",
+                 "つまらない・退屈な",
+                 useCases: ["映画や授業の感想を言うとき", "bored（退屈している）との違いに注意して"],
+                 examples: [
+                    ("The film was so boring I fell asleep.", "その映画、つまらなすぎて寝ちゃった。"),
+                    ("Sorry, am I being boring? I'll stop going on about work.", "ごめん、退屈だった？仕事の話はもうやめるね。")
+                 ], ipa: "/ˈbɔːrɪŋ/"),
+            make("lonely", "unhappy because you are alone or have no one to talk to",
+                 "寂しい・孤独な",
+                 useCases: ["一人暮らしや海外生活の気持ちを話すとき", "誰かを気遣うとき"],
+                 examples: [
+                    ("It got a bit lonely when I first moved to Berlin.", "ベルリンに引っ越したばかりの頃は、ちょっと寂しかった。"),
+                    ("Give your gran a call — she gets lonely.", "おばあちゃんに電話してあげて。寂しがってるから。")
+                 ], ipa: "/ˈləʊnli/"),
+            make("I'm touched", "used to say that someone's kindness has made you feel emotional and grateful",
+                 "感動した・心にしみる",
+                 useCases: ["思いがけないプレゼントをもらったとき", "優しい言葉をかけられたとき"],
+                 examples: [
+                    ("You remembered my birthday? I'm touched!", "誕生日覚えててくれたの？うれしいな！"),
+                    ("I'm really touched that you all came.", "みんな来てくれて、本当に感動してる。")
+                 ], ipa: "/aɪm ˈtʌtʃt/"),
         ]
     }
     private static var britishColloquial220: [Word] {
