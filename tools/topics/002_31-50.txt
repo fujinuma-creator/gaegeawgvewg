@@ -1,0 +1,399 @@
+T|👀|店員に話しかけられて見ているだけと伝える|買い物|just browsing, let you know, no pressure, have a look around, catch my eye
+S|
+B|Hi there! Can I help you find anything?|いらっしゃいませ！ 何かお探しですか？
+A|I'm just browsing, thanks.|見ているだけです、ありがとう。
+B|No problem at all. Take your time.|承知しました。ごゆっくりどうぞ。
+A|I'll let you know if I need anything.|何かあったら声をかけますね。
+B|Perfect. I'll be just over there.|わかりました。あちらにいますので。
+S|
+B|Just so you know, everything on that rail is thirty percent off.|ちなみに、そちらのラックは全部30%オフです。
+A|Oh, good to know. Thanks.|あ、それはいいですね。ありがとう。
+B|And we've got more sizes in the back if you need them.|サイズも奥に揃っていますので、必要でしたら。
+A|Great. I might come back to that jacket.|助かります。あのジャケット、あとで戻ってくるかも。
+B|It's a popular one. Good choice.|人気の商品ですよ。お目が高い。
+S|
+A|Actually, sorry — could I get this in a medium?|あの、すみません。これのMサイズってありますか？
+B|Of course. Give me one moment.|もちろんです。少々お待ちください。
+A|Thanks. I wasn't planning to buy anything today.|ありがとう。今日は何も買うつもりなかったのに。
+B|That's how it always goes, isn't it?|いつもそうなりますよね。
+A|Every single time.|毎回ですよ、本当に。
+
+T|🚕|タクシー運転手に今待っている場所を伝える|交通|I'm outside, right in front of, can you see me, waving, on my way
+S|
+B|Hi, this is your driver. Where are you exactly?|もしもし、ドライバーです。今どちらですか？
+A|I'm outside the main entrance of the hotel.|ホテルの正面入口の外にいます。
+B|The one on the main road, or the side street?|大通り側の入口ですか、それとも横道側ですか？
+A|The main road. Right by the big sign.|大通りです。大きな看板のすぐそばです。
+B|Got it. I'm about two minutes away.|わかりました。あと2分ほどで着きます。
+S|
+B|I'm here, but I don't see you.|着きましたが、姿が見えません。
+A|I'm wearing a blue jacket and waving. Can you see me?|青いジャケットで手を振ってます。見えますか？
+B|Ah, yes! I'm the silver car across the road.|あ、はい！ 道の向かいの銀色の車です。
+A|Oh, I see you now. Should I cross?|あ、見えました。渡りましょうか？
+B|Stay there, I'll turn around and come to you.|そのままで。Uターンしてそちらに行きます。
+S|
+A|Sorry, I should have been more specific.|すみません、もっとはっきり言うべきでした。
+B|Not at all. This hotel has three entrances, it's confusing.|とんでもない。このホテルは入口が3つあって、わかりにくいんです。
+A|Good to know for next time.|次回のために覚えておきます。
+B|Where are we heading?|どちらまで？
+A|The central station, please.|中央駅までお願いします。
+
+T|🐟|魚が新鮮ではなく臭いがある|食事|smells off, doesn't seem fresh, send it back, no offence, replace it
+S|
+A|Hmm, does this smell off to you?|うーん、これ、匂いおかしくない？
+B|Let me see. Yeah, that's not right.|見せて。うん、これは変だね。
+A|It's really fishy. More than it should be.|すごく生臭い。普通以上に。
+B|Fresh fish shouldn't smell like that at all.|新鮮な魚なら、そんな匂いはしないはずだよ。
+A|I don't want to make a fuss, but I'm not eating that.|騒ぎたくはないけど、これは食べられない。
+S|
+A|Excuse me, sorry — I think this fish might be off.|すみません、この魚、傷んでいるかもしれません。
+B|Oh, I'm so sorry. Let me have a look.|申し訳ありません。確認させてください。
+A|It's got quite a strong smell.|かなり強い匂いがします。
+B|You're right. I'll take that straight back to the kitchen.|おっしゃる通りです。すぐ厨房に下げます。
+A|Thank you. No offence meant.|ありがとうございます。気を悪くしないでくださいね。
+B|None taken. You were right to say something.|とんでもない。言っていただいて正解です。
+S|
+B|Can I get you something else instead?|代わりに何かお持ちしましょうか？
+A|What would you recommend?|何がおすすめですか？
+B|The chicken is very good today, and it's on us.|今日はチキンがおすすめです。お代は結構です。
+A|That's very kind. I'll have that, please.|ご親切に。ではそれをお願いします。
+B|Coming right up, and again, my apologies.|すぐお持ちします。重ねてお詫び申し上げます。
+
+T|🛒|商品を選んでいる|買い物|torn between, go for, worth the money, in the long run, sleep on it
+S|
+A|I can't decide between these two.|この2つで迷ってるんだ。
+B|What's the difference?|何が違うの？
+A|This one's cheaper, but the other one has better reviews.|こっちは安いけど、あっちのほうがレビューがいい。
+B|How much cheaper?|どのくらい安いの？
+A|About forty dollars.|40ドルくらい。
+S|
+B|Is it something you'll use every day?|毎日使うもの？
+A|Pretty much, yeah.|まあ、ほぼ毎日。
+B|Then go for the better one. It'll pay off in the long run.|じゃあ良いほうにしなよ。長い目で見れば元が取れる。
+A|That's what I keep telling myself.|自分にもずっとそう言い聞かせてるんだよね。
+B|Forty dollars over a few years is nothing.|数年で40ドルの差なんて、ないようなものだよ。
+S|
+A|Okay, but should I sleep on it?|わかった。でも一晩考えたほうがいいかな？
+B|You've been standing here for twenty minutes.|もう20分もここに立ってるよ。
+A|Fair point.|たしかに。
+B|Just get it. You'll regret it if you don't.|買っちゃいなよ。買わなかったら後悔するから。
+A|Fine, you've convinced me.|わかった、説得された。
+
+T|🤢|お腹が痛い|健康|stomach ache, cramps, something I ate, lie down, ease off
+S|
+A|Ugh, my stomach's killing me.|うう、お腹がすごく痛い。
+B|Since when?|いつから？
+A|About an hour ago. It just started cramping.|1時間くらい前から。急に差し込むように痛くなった。
+B|Did you eat something unusual?|何か変わったもの食べた？
+A|Maybe the leftovers from yesterday.|昨日の残り物かもしれない。
+S|
+B|Do you want to lie down for a bit?|ちょっと横になる？
+A|Yeah, I think I need to.|うん、そうしたほうがよさそう。
+B|I'll get you some water. Do you feel sick?|水持ってくるね。吐き気はある？
+A|A little. Mostly just the pain.|少し。でも主に痛みだけ。
+B|Okay. Let me know if it gets worse.|わかった。ひどくなったら言って。
+S|
+B|How are you feeling now?|今はどう？
+A|A bit better. It's starting to ease off.|少しマシ。だんだん和らいできた。
+B|Good. Maybe skip dinner tonight.|よかった。今夜は夕飯抜いたほうがいいかも。
+A|Yeah, I'm not hungry anyway.|うん、どうせ食欲もないし。
+B|If it comes back tomorrow, go and see someone.|明日また痛くなったら、病院に行ってね。
+
+T|📚|勉強しないといけない|学び|cram, behind on, hit the books, focus, get it out of the way
+S|
+B|Are you coming out tonight?|今夜、出かける？
+A|I really can't. I've got an exam on Thursday.|ほんと無理。木曜に試験があるんだ。
+B|Oh no, that's soon. How's it going?|えー、もうすぐじゃん。準備はどう？
+A|Badly. I'm way behind.|ひどい。かなり遅れてる。
+B|How behind?|どのくらい？
+A|Three chapters behind.|3章分。
+S|
+B|Okay, that's doable if you start now.|なるほど、今から始めれば何とかなるよ。
+A|That's the plan. I'm going to hit the books all evening.|そのつもり。今夜はずっと勉強する。
+B|Want me to quiz you later?|あとで問題出そうか？
+A|Actually, yes. That would help a lot.|うん、お願い。それはすごく助かる。
+B|Text me when you're ready.|準備できたらメッセージして。
+S|
+A|Right, phone on silent. No distractions.|よし、スマホはサイレント。気が散るものは無し。
+B|Good. Get it out of the way and then we'll celebrate.|いいね。終わらせて、それから祝おう。
+A|If I pass.|受かったらね。
+B|When you pass. Go on, get to it.|受かるから。ほら、始めなよ。
+A|Thanks for the pep talk.|励ましてくれてありがとう。
+
+T|🗣|英語を話せないことを伝える|学び|my English isn't great, speak slowly, I'm still learning, follow, bear with me
+S|
+B|Hi, are you here for the meeting?|こんにちは、会議に来られたんですか？
+A|Yes, but sorry, my English isn't very good.|はい、でもすみません、英語があまり得意じゃなくて。
+B|That's okay. I'll speak slowly.|大丈夫ですよ。ゆっくり話しますね。
+A|Thank you. I understand more than I can say.|ありがとうございます。話すより聞くほうはできるので。
+B|That's how it always starts. No problem.|みんな最初はそうですよ。気にしないで。
+S|
+B|Are you following so far?|ここまでついてこられていますか？
+A|Mostly. Could you repeat the last part?|だいたい。最後の部分をもう一度いいですか？
+B|Of course. We're moving the deadline to Friday.|もちろん。締め切りを金曜に変更します。
+A|Friday. Got it. Thank you.|金曜。わかりました。ありがとうございます。
+B|Feel free to stop me anytime.|いつでも止めてくださいね。
+S|
+A|Sorry, I need a moment to find the word.|すみません、言葉が出てこなくて少し待ってください。
+B|Take your time. Or say it in Japanese and I'll try to guess.|ゆっくりで。日本語で言ってくれれば推測してみますよ。
+A|Ha, okay. You're very patient.|はは、わかりました。すごく辛抱強いですね。
+B|I'm still learning Japanese, so I know how it feels.|私も日本語を勉強中なので、気持ちはわかります。
+A|Then we can help each other.|じゃあ、お互い助け合えますね。
+
+T|🍴|スプーンとフォーク、皿が欲しいと伝える|食事|could we get, an extra plate, cutlery, to share, sorry to bother you
+S|
+A|Excuse me, could we get a couple more plates?|すみません、お皿をあと2枚いただけますか？
+B|Of course. Are you sharing?|かしこまりました。シェアされるんですね？
+A|Yes, we want to try a bit of everything.|はい、いろいろ少しずつ食べたくて。
+B|Good idea. Two plates coming up.|いいですね。お皿2枚お持ちします。
+A|Thank you.|ありがとうございます。
+S|
+A|Sorry to bother you again — could I get a spoon as well?|何度もすみません、スプーンもいただけますか？
+B|Sure. Just the one?|もちろんです。1本でよろしいですか？
+A|Actually, two. And maybe a fork for my friend.|あ、2本で。あと友人にフォークもお願いします。
+B|No problem. Anything else while I'm here?|承知しました。ついでに他にございますか？
+A|That's everything, thanks.|それで全部です、ありがとう。
+S|
+B|Here you go — plates, spoons, and a fork.|どうぞ。お皿とスプーン、フォークです。
+A|Perfect. Thanks for being so quick.|完璧です。早くて助かります。
+B|My pleasure. Enjoy your meal.|どういたしまして。ごゆっくりどうぞ。
+A|Right, now we can actually eat.|よし、これでやっと食べられる。
+
+T|💻|オンライン決済ができないと伝える|テクノロジー|won't go through, error message, keep getting, try a different browser, sort it out
+S|
+A|Hi, I'm trying to pay online but it won't go through.|すみません、オンラインで支払おうとしているんですが通りません。
+B|I'm sorry about that. What happens when you try?|申し訳ありません。試すとどうなりますか？
+A|I get an error message right after I enter my card details.|カード情報を入れた直後にエラーメッセージが出ます。
+B|What does the message say?|メッセージには何と？
+A|Something like "transaction could not be completed".|「取引を完了できませんでした」みたいな内容です。
+S|
+B|Have you tried a different browser?|別のブラウザで試しましたか？
+A|Yes, and the app too. Same thing.|はい、アプリでも。同じです。
+B|Could it be the card? Sometimes banks block online payments.|カードの問題かもしれません。銀行がオンライン決済をブロックすることがあるので。
+A|It worked fine yesterday on another site.|昨日は別のサイトで問題なく使えました。
+B|Okay, then it's likely on our end. Let me check.|では、こちら側の問題の可能性が高いですね。確認します。
+S|
+B|Right, there was a glitch with our payment system this morning.|今朝、決済システムに不具合があったようです。
+A|Ah, that explains it.|なるほど、それでか。
+B|It's fixed now. Could you try once more?|今は直っています。もう一度試していただけますか？
+A|Hang on... yes, it's gone through.|ちょっと待って… はい、通りました。
+B|Wonderful. Sorry for the hassle.|よかったです。お手数をおかけしました。
+
+T|😴|眠すぎて二度寝した|日常|hit snooze, dozed off, overslept, dead to the world, drag myself
+S|
+B|You're late. What happened?|遅刻だよ。どうしたの？
+A|I hit snooze and went straight back to sleep.|スヌーズ押して、そのまま寝ちゃった。
+B|How many times?|何回？
+A|I stopped counting after three.|3回目以降は数えるのやめた。
+B|Classic.|お決まりのパターンだね。
+S|
+A|The worst part is I actually woke up on time.|一番ひどいのは、ちゃんと時間通りに一度起きたこと。
+B|And then?|それで？
+A|I thought, five more minutes. Next thing I know it's nine.|あと5分って思って。気づいたら9時。
+B|Those five minutes are never five minutes.|その5分は絶対に5分じゃないんだよね。
+A|Never. I was dead to the world.|絶対にね。完全に爆睡してた。
+S|
+B|You need to put your alarm across the room.|目覚ましを部屋の反対側に置きなよ。
+A|I know. I keep saying I'll do it.|わかってる。やるって言い続けてるんだけど。
+B|Do it tonight.|今夜やって。
+A|Fine. I'll drag myself up tomorrow, I promise.|わかったよ。明日はちゃんと起きる、約束する。
+B|We'll see.|どうだかね。
+
+T|🪳|ゴキブリが部屋に出てきた|住まい|there's a cockroach, don't move, get rid of it, freak out, where did it go
+S|
+A|Don't move. There's a cockroach behind you.|動かないで。後ろにゴキブリがいる。
+B|What? Where?|え？ どこ？
+A|By the bin. It's huge.|ゴミ箱のそば。でかい。
+B|Oh no, I hate those things.|うわ、あれ本当に苦手。
+A|Don't freak out. Just move slowly.|慌てないで。ゆっくり動いて。
+S|
+B|Have you got something to squash it with?|叩けるもの、何かある？
+A|There's a slipper by the door. Grab it.|ドアのところにスリッパがある。取って。
+B|Okay, okay. Where did it go?|わかった、わかった。どこ行った？
+A|It went under the fridge.|冷蔵庫の下に入った。
+B|Great. Now it's going to live there forever.|最高。もう一生そこに住み着くね。
+S|
+A|We need to get some traps.|トラップを買わないと。
+B|And check where it came in from.|どこから入ってきたかも確認しないと。
+A|Probably that gap under the door.|たぶんドアの下の隙間だよ。
+B|I'll tape it up tonight.|今夜テープで塞ぐ。
+A|And I'm sleeping with the light on.|私は電気つけたまま寝る。
+
+T|🧳|忘れ物はないか聞く|日常|got everything, double-check, left behind, patted down, better safe than sorry
+S|
+A|Right, have you got everything?|よし、忘れ物ない？
+B|I think so. Phone, wallet, keys.|たぶん。スマホ、財布、鍵。
+A|Charger?|充電器は？
+B|Oh, good call. It's still by the bed.|あ、助かった。まだベッドのそばにある。
+A|See, that's why I ask.|ほら、だから聞くんだよ。
+S|
+B|What about you? Passport?|そっちは？ パスポートは？
+A|Front pocket of my bag. I've checked three times.|カバンの前ポケット。3回確認した。
+B|Glasses?|メガネは？
+A|On my face.|顔にかけてる。
+B|Just checking.|念のためね。
+S|
+A|Let me do one last look around the room.|最後にもう一度、部屋を見回すね。
+B|Under the bed too. Socks always end up there.|ベッドの下もね。靴下はいつもそこに行く。
+A|Nothing. We're clear.|何もない。大丈夫。
+B|Great. Let's go before we miss the train.|よし。電車に乗り遅れる前に行こう。
+A|Better safe than sorry, though.|でも用心するに越したことはないからね。
+
+T|✏️|添削してほしい|学び|go over, proofread, sounds natural, tweak, the gist
+S|
+A|Do you have a minute? I wrote an email in English and I'm not sure about it.|少し時間ある？ 英語でメール書いたんだけど、自信がなくて。
+B|Sure, send it over.|いいよ、送って。
+A|It's for a client, so I want it to sound professional.|クライアント宛だから、ちゃんとした印象にしたくて。
+B|Got it. Let me read it through.|わかった。読んでみるね。
+A|Be honest. I'd rather know now.|遠慮しないで。今知っておきたいから。
+S|
+B|Okay, the gist is clear. Just a few small things.|うん、言いたいことは伝わるよ。細かい点がいくつかあるだけ。
+A|Like what?|例えば？
+B|This sentence is a bit too direct. Try "Would it be possible to..." instead.|この文はちょっと直接的すぎるかな。「Would it be possible to...」にしてみて。
+A|Ah, softer. Makes sense.|なるほど、柔らかくなる。納得。
+B|And "I want" sounds a bit demanding here. "I'd like" is better.|あと「I want」はここだと要求っぽい。「I'd like」のほうがいいよ。
+S|
+A|Anything else?|他には？
+B|Nope. Tweak those two and it's good to go.|ううん。その2か所を直せば送れるよ。
+A|Thank you, that's really helpful.|ありがとう、すごく助かる。
+B|Anytime. Your English is better than you think, you know.|いつでも。あなたの英語、自分で思ってるよりずっといいよ。
+A|I'll take that.|それは素直に受け取っておく。
+
+T|📮|郵便が届かない|手続き|hasn't arrived, tracking number, in transit, chase it up, redelivery
+S|
+A|Hi, I'm calling about a parcel that hasn't arrived.|もしもし、届いていない荷物について電話しました。
+B|I can help with that. Do you have a tracking number?|承ります。追跡番号はお持ちですか？
+A|Yes, it's 4-4-2-9-8-1.|はい、4-4-2-9-8-1です。
+B|Thank you. Let me look that up.|ありがとうございます。お調べします。
+A|It was supposed to come last Wednesday.|先週の水曜に届くはずだったんです。
+S|
+B|It says it's been in transit since Tuesday.|火曜から輸送中となっていますね。
+A|For a week? Where is it?|1週間も？ どこにあるんですか？
+B|It looks like it's stuck at the regional depot.|地域の配送センターで止まっているようです。
+A|Can you chase it up?|確認して急かしてもらえますか？
+B|Yes, I'll raise a query with them now.|はい、今すぐ問い合わせを出します。
+S|
+B|You should hear back within two working days.|2営業日以内にご連絡があるはずです。
+A|And if it's lost?|もし紛失していたら？
+B|Then we'll arrange a replacement or a refund.|その場合は再送か返金の手配をします。
+A|Okay, thank you. I'll wait to hear.|わかりました、ありがとうございます。連絡を待ちます。
+B|Sorry for the delay. You'll get a reference number by email.|遅れて申し訳ありません。メールで受付番号をお送りします。
+
+T|🍜|食べ物に髪の毛が入っている|食事|there's a hair in, I hate to say this, take it off the bill, remake it, apologise
+S|
+A|Um, sorry, I hate to say this, but there's a hair in my soup.|あの、すみません、言いにくいんですが、スープに髪の毛が入っています。
+B|Oh, I'm so sorry. Let me see.|申し訳ありません。確認させてください。
+A|Right there, near the edge.|そこです、縁の近く。
+B|You're right. I'm really sorry about that.|おっしゃる通りです。本当に申し訳ありません。
+A|It's okay, these things happen.|大丈夫です、こういうことはありますから。
+S|
+B|I'll have the kitchen make you a fresh one right away.|すぐ厨房で作り直させます。
+A|Thank you. I'd appreciate that.|ありがとうございます。助かります。
+B|And of course, it's on the house.|もちろん、お代はいただきません。
+A|You don't have to do that.|そこまでしなくても。
+B|I insist. It's the least we can do.|ぜひ。せめてものお詫びです。
+S|
+B|Here's your new bowl. I checked it myself.|新しいものです。私自身で確認しました。
+A|Perfect. Thanks for handling it so well.|ありがとうございます。丁寧に対応していただいて。
+B|Thank you for being so understanding.|ご理解いただき、ありがとうございます。
+A|No problem. Honestly, the soup is delicious.|いえいえ。正直、スープは本当においしいです。
+B|That's lovely to hear.|そう言っていただけてうれしいです。
+
+T|🤮|変なものを食べて気分が悪い|健康|feel queasy, dodgy, throw up, sit it out, stay hydrated
+S|
+A|I don't feel so good.|ちょっと気分が悪い。
+B|What's wrong?|どうした？
+A|I feel really queasy. I think it was that street food.|すごく吐き気がする。あの屋台の食べ物のせいだと思う。
+B|The one from the stall by the station?|駅のそばの屋台の？
+A|Yeah. It tasted a bit dodgy, to be honest.|うん。正直、ちょっと味が怪しかった。
+S|
+B|Do you think you're going to throw up?|吐きそう？
+A|Maybe. Let's find a bathroom just in case.|かも。念のためトイレを探そう。
+B|There's one in the café over there.|向かいのカフェにあるよ。
+A|Okay. Can you hold my bag?|わかった。カバン持ってて。
+B|Got it. Take your time.|了解。ゆっくりでいいよ。
+S|
+B|Any better?|少しは良くなった？
+A|A bit. I think I'll sit it out for a while.|少し。しばらく座ってようかな。
+B|Good idea. Sip some water, stay hydrated.|そうしなよ。水を少しずつ飲んで、脱水にならないように。
+A|Sorry for ruining the afternoon.|午後を台無しにしてごめん。
+B|Don't be silly. We'll do the market another day.|何言ってるの。市場はまた別の日に行こう。
+
+T|📏|ルールを守ってと伝える|人間関係|house rules, we agreed, it's not fair on, stick to, going forward
+S|
+A|Hey, can we talk about the kitchen for a sec?|ねえ、ちょっとキッチンのことで話せる？
+B|Sure. What's up?|いいよ。どうしたの？
+A|The dishes have been piling up again.|また食器が溜まってきてるんだ。
+B|Ah. Yeah, I've been meaning to get to them.|ああ、うん。やろうとは思ってたんだけど。
+A|I know. But we agreed to wash up the same day.|わかってる。でもその日のうちに洗うって決めたよね。
+S|
+B|You're right. I've been slack this week.|そうだね。今週はサボってた。
+A|It's not a big deal, it's just not fair on everyone else.|大したことじゃないんだけど、他のみんなに不公平だから。
+B|No, I get it. I'd be annoyed too.|うん、わかるよ。私でもイラつく。
+A|I'm not trying to nag.|口うるさく言いたいわけじゃないんだ。
+B|You're not. It's a fair point.|そんなことないよ。もっともな話だし。
+S|
+B|I'll do them right now.|今すぐ洗うよ。
+A|Thanks. And going forward, same day?|ありがとう。これからは、その日のうちにね？
+B|Same day. I'll stick to it.|その日のうちに。ちゃんと守る。
+A|Appreciate it. Want a hand?|助かる。手伝おうか？
+B|No, this one's on me.|ううん、これは私がやる。
+
+T|👂|聞き取れなかったのでもう一度教えてと伝える|学び|didn't catch that, say that again, a bit slower, did you say, just to confirm
+S|
+B|So we'll meet at the Thornbury branch at half two.|じゃあ、2時半にソーンベリー支店で集合ね。
+A|Sorry, I didn't catch that. Could you say it again?|すみません、聞き取れませんでした。もう一度お願いできますか？
+B|The Thornbury branch, at half past two.|ソーンベリー支店で、2時半に。
+A|Thornbury... could you spell that for me?|ソーンベリー… スペルを教えてもらえますか？
+B|T-H-O-R-N-B-U-R-Y.|T-H-O-R-N-B-U-R-Yです。
+S|
+A|And did you say half past two, or half past three?|2時半でしたか、それとも3時半でしたか？
+B|Half past two. Two thirty.|2時半。2時30分です。
+A|Got it. Sorry, the line's a bit bad.|わかりました。すみません、電話の調子が悪くて。
+B|No worries. Do you want me to text you the details?|大丈夫ですよ。詳細をメッセージで送りましょうか？
+A|That would be great, actually.|それは助かります。
+S|
+A|Just to confirm: Thornbury branch, two thirty, tomorrow.|確認させてください。ソーンベリー支店、2時半、明日。
+B|That's right.|その通りです。
+A|Perfect. Thanks for your patience.|完璧です。丁寧に対応してくれてありがとうございます。
+B|Not at all. See you tomorrow.|とんでもない。では明日。
+
+T|🧹|部屋の掃除をお願いする|住まい|housekeeping, make up the room, fresh towels, while I'm out, do not disturb
+S|
+A|Hi, could I ask for the room to be cleaned today?|すみません、今日部屋の掃除をお願いできますか？
+B|Of course. What time would suit you?|もちろんです。何時頃がよろしいですか？
+A|I'll be out from ten until about two.|10時から2時頃まで外出しています。
+B|Perfect, we'll do it while you're out.|承知しました。お留守の間に済ませます。
+A|Thank you.|ありがとうございます。
+S|
+A|Could I also get some fresh towels?|新しいタオルもいただけますか？
+B|Certainly. How many would you like?|かしこまりました。何枚必要ですか？
+A|Two bath towels and a couple of hand towels.|バスタオル2枚と、ハンドタオル2枚ほど。
+B|No problem. Anything else? More water, coffee?|承知しました。他には？ お水やコーヒーの追加は？
+A|A couple more bottles of water would be lovely.|お水をあと2本いただけると助かります。
+S|
+B|Is there anything we should be careful with in the room?|お部屋で気をつけるべきものはありますか？
+A|Just the laptop on the desk. Please don't move it.|机の上のノートパソコンだけ。動かさないでください。
+B|Understood. We won't touch it.|承知しました。触りません。
+A|Great. I'll take the do-not-disturb sign off when I leave.|助かります。出る時に「起こさないで」の札を外しておきます。
+B|Wonderful. Enjoy your day out.|ありがとうございます。良いお出かけを。
+
+T|💕|愛の言葉を伝える|恋愛|I've been meaning to say, mean the world to me, fall for, the way you, I love you
+S|
+A|Can I tell you something?|ちょっと言いたいことがあるんだけど。
+B|Of course. What is it?|もちろん。何？
+A|I've been meaning to say this for a while.|ずっと前から言おうと思ってたんだ。
+B|Okay... now I'm nervous.|え… なんか緊張してきた。
+A|Don't be. It's a good thing.|大丈夫。いいことだから。
+S|
+A|I love the way you laugh at your own jokes.|自分のジョークで笑っちゃうところが好きなんだ。
+B|Oh, stop.|やめてよ。
+A|And the way you always know when I've had a bad day.|それに、私が嫌な一日だった時にいつも気づいてくれるところも。
+B|That's because you go quiet.|それは、あなたが静かになるからだよ。
+A|See? You just know.|ほらね。ちゃんとわかってる。
+S|
+A|What I'm trying to say is, I love you.|つまり言いたいのは、愛してるってこと。
+B|You've never said that before.|それ、初めて言ったね。
+A|I know. I wanted to be sure.|うん。確信を持ってから言いたかった。
+B|I love you too. I have for ages.|私も愛してる。ずっと前から。
+A|Well, that's a relief.|よかった、ほっとした。

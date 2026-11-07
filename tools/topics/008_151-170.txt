@@ -1,0 +1,409 @@
+T|🔥|火事や火災報知器が鳴った|トラブル|fire alarm, evacuate, assembly point, false alarm, don't use the lift
+S|
+A|Is that the fire alarm?|あれ、火災報知器？
+B|Sounds like it. Is it a drill?|そうみたい。避難訓練かな？
+A|Nobody said anything about a drill.|訓練の話は聞いてないよ。
+B|Then we should get out. Grab your coat.|じゃあ出たほうがいい。コート持って。
+A|Leave the laptop?|パソコンは置いていく？
+B|Leave everything. Go.|全部置いて。行こう。
+S|
+A|Which way's the exit?|出口はどっち？
+B|Stairs, not the lift. This way.|階段だよ、エレベーターじゃなくて。こっち。
+A|Can you smell smoke?|煙の匂いする？
+B|A little, actually. Keep moving.|少しね。止まらないで。
+A|Where's the assembly point?|集合場所はどこ？
+B|The car park, by the sign.|駐車場、看板のところ。
+S|
+B|Okay, everyone's out. Do we know what happened?|よし、全員出た。何があったかわかる？
+A|Someone said it was the toaster in the kitchen.|キッチンのトースターだって誰かが言ってた。
+B|Of course it was.|やっぱりね。
+A|Better a false alarm than the real thing.|本物より、誤報のほうがいいよ。
+B|True. Now we wait for the all-clear.|たしかに。安全確認が出るまで待とう。
+
+T|🧒|迷子の子どもを見つけた|トラブル|are you lost, where's your mum, stay with me, security, find your parents
+S|
+A|Hey, are you okay? Are you lost?|ねえ、大丈夫？ 迷子になっちゃった？
+B|I can't find my mum.|ママが見つからないの。
+A|Okay, don't worry. We'll find her. What's your name?|大丈夫、心配しないで。一緒に探そう。お名前は？
+B|Lily.|リリー。
+A|Hi Lily. I'm Kohei. Where did you last see your mum?|リリーちゃん、こんにちは。航平だよ。最後にママを見たのはどこ？
+B|By the toys.|おもちゃのところ。
+S|
+A|Right. Let's go and find someone who works here.|わかった。ここで働いている人を探そう。
+B|Okay.|うん。
+A|Excuse me, this little girl's lost her mum.|すみません、この子がお母さんとはぐれてしまって。
+B|Oh, hello. Let's get security to make an announcement.|あら、こんにちは。警備員に頼んでアナウンスしてもらいましょう。
+A|Thank you. She was last by the toy section.|お願いします。最後におもちゃ売り場にいたそうです。
+S|
+B|Lily! Oh, thank goodness.|リリー！ ああ、よかった。
+A|Mummy!|ママ！
+B|Thank you so much for staying with her.|一緒にいてくれて本当にありがとうございます。
+A|Of course. She was very brave.|当然です。とても勇敢でしたよ。
+B|I turned around for one second.|ほんの一瞬、目を離しただけで。
+A|It happens. I'm just glad she's back with you.|よくあることです。無事に戻れてよかったです。
+
+T|🪑|お年寄りに席を譲る|日常|would you like to sit down, please, take my seat, I'm getting off soon, very kind
+S|
+A|Excuse me, would you like to sit down?|すみません、お座りになりますか？
+B|Oh, are you sure? I don't want to take your seat.|あら、いいんですか？ 席を取ってしまうのは悪いわ。
+A|Please. I'm getting off in a couple of stops anyway.|どうぞ。私はあと2駅で降りるので。
+B|That's very kind of you. Thank you.|ご親切に。ありがとうございます。
+A|Not at all. Here, let me move my bag.|とんでもない。カバンをどかしますね。
+S|
+B|It's such a crowded train today.|今日は本当に混んでいますね。
+A|It always is at this time.|この時間はいつもそうなんです。
+B|I don't usually travel in the rush hour.|普段はラッシュアワーには乗らないんですよ。
+A|Very sensible.|賢明ですね。
+B|Doctor's appointment. Couldn't be helped.|病院の予約で。仕方なくて。
+S|
+A|This is me. Have a good day.|ここで降ります。良い一日を。
+B|You too, dear. Thank you again.|あなたもね。本当にありがとう。
+A|You're welcome. Take care.|どういたしまして。お気をつけて。
+
+T|🚶|行列に割り込まれた|トラブル|excuse me, the queue, back of the line, I've been waiting, no need to be rude
+S|
+A|Excuse me, the queue starts back there.|すみません、列はあちらの後ろからですよ。
+B|Oh, I'm just asking a quick question.|あ、ちょっと聞きたいことがあるだけで。
+A|That's what we're all waiting for.|みんなそのために並んでいるんです。
+B|It'll only take a second.|ほんの一瞬で済むから。
+A|Sorry, but we've all been here twenty minutes.|申し訳ないですが、私たちは20分並んでいます。
+S|
+B|Fine. No need to be rude about it.|わかったよ。そんな言い方しなくても。
+A|I'm not being rude. I'm just asking you to wait like everyone else.|失礼な言い方はしていません。みんなと同じように待ってくださいとお願いしているだけです。
+B|Whatever.|はいはい。
+A|The back of the line's just there.|列の最後尾はすぐそこです。
+S|
+B|Sorry about that. Some people, eh?|さっきのは、ちょっと。ああいう人いますよね。
+A|Ha, it's fine. It happens.|はは、大丈夫です。よくあることですから。
+B|You handled it well, though.|でも上手く対応してましたね。
+A|I just didn't want a scene. Anyway, you're next.|騒ぎにしたくなかっただけです。とにかく、次はあなたの番ですよ。
+B|Finally.|やっとだ。
+
+T|📷|写真を撮ってもらうよう頼む|日常|would you mind taking a photo, just press here, get the building in, one more, thank you so much
+S|
+A|Excuse me, would you mind taking a photo of us?|すみません、写真を撮っていただけませんか？
+B|Sure, no problem.|もちろん、いいですよ。
+A|Thanks. Just press this button here.|ありがとうございます。ここのボタンを押すだけです。
+B|Got it. Do you want the building in the background?|わかりました。後ろの建物も入れますか？
+A|Yes, please, if you can.|はい、できれば。
+S|
+B|Okay, move a bit to the left. Perfect. Smile!|じゃあ、少し左に寄って。完璧。笑って！
+A|Did it come out okay?|うまく撮れました？
+B|Let me take one more, just in case.|念のため、もう1枚撮りますね。
+A|Great, thank you.|ありがとうございます。
+B|There. Have a look.|はい。確認してみてください。
+S|
+A|These are lovely. Thank you so much.|素敵です。本当にありがとうございます。
+B|My pleasure. Would you like me to take one of you on your own?|どういたしまして。お一人の写真も撮りましょうか？
+A|Oh, why not!|じゃあ、お願いします！
+B|Say cheese.|はい、チーズ。
+
+T|📱|SNSのアカウントを交換する|人間関係|are you on, what's your handle, follow you, add you, send you a request
+S|
+A|Are you on Instagram?|インスタやってる？
+B|Yeah, I am. What's your handle?|うん。アカウント名は？
+A|It's kohei underscore travels. All lowercase.|kohei、アンダースコア、travels。全部小文字。
+B|Let me find you... is this you? The one with the mountain?|探してみる… これ？ 山の写真の。
+A|That's me. I'll follow you back.|それ。フォロー返すね。
+S|
+B|Mine's just my name, with a dot in the middle.|私のは名前そのまま、真ん中にドットが入ってる。
+A|Found you. Wow, you post a lot.|見つけた。わあ、投稿多いね。
+B|Too much, probably.|多すぎるかも。
+A|No, it's nice. I can see what you're up to.|いや、いいと思うよ。何してるかわかるし。
+B|Sent you a request.|リクエスト送ったよ。
+S|
+A|Accepted. Are you on anything else?|承認した。他に何かやってる？
+B|Not really. I gave up on the rest.|あんまり。他はやめちゃった。
+A|Same, honestly. One is enough.|正直、私も。1つで十分だよね。
+B|Right. Anyway, I'll message you the photos from tonight.|そうそう。じゃあ、今夜の写真はメッセージで送るね。
+A|Perfect.|お願い。
+
+T|🔌|携帯の充電器を貸してほしい|日常|my phone's about to die, could I borrow, charger, what type, plug it in
+S|
+A|Sorry, my phone's about to die. Do you have a charger?|ごめん、スマホの電池が切れそう。充電器持ってる？
+B|Yeah, what type do you need?|うん、どのタイプ？
+A|USB-C.|USB-Cです。
+B|I've got one in my bag. Hang on.|カバンに入ってる。ちょっと待って。
+A|You're a lifesaver.|ほんと助かる。
+S|
+B|Here. There's a socket under the table.|はい。テーブルの下にコンセントがあるよ。
+A|Perfect. I'll give it back in twenty minutes.|完璧。20分で返すね。
+B|No rush. I'm not going anywhere.|急がなくていいよ。どこにも行かないから。
+A|I really need to start carrying a power bank.|本当にモバイルバッテリーを持ち歩かないと。
+B|Everyone says that.|みんなそう言うんだよね。
+S|
+A|Okay, I'm at forty percent. That's enough to get home.|40%まで来た。家に帰るには十分。
+B|Are you sure? Keep it a bit longer.|本当に？ もう少し使いなよ。
+A|No, I'm good. Thanks so much.|ううん、大丈夫。本当にありがとう。
+B|Anytime.|いつでも。
+
+T|🗣|語学のレベルや学習方法を話す|学び|how long have you been learning, intermediate, pick up, immersion, plateau
+S|
+A|Your English is really good. How long have you been learning?|英語、本当に上手だね。どのくらい勉強してるの？
+B|About five years, on and off.|5年くらい、途中で休みながら。
+A|What level would you say you're at?|レベルで言うとどのくらい？
+B|Upper intermediate, maybe. I still make loads of mistakes.|中上級くらいかな。まだ間違いだらけだけど。
+A|I can barely tell.|ほとんどわからないよ。
+S|
+A|How do you study?|どうやって勉強してるの？
+B|Mostly listening. Podcasts, series, that kind of thing.|主にリスニング。ポッドキャストとかドラマとか。
+A|No textbooks?|教科書は使わない？
+B|I did at first. Now I just try to use it as much as I can.|最初はね。今はできるだけ使うようにしてる。
+A|Immersion. That makes sense.|没入型ね。納得。
+S|
+B|I've hit a plateau, though. I'm not improving like I used to.|でも伸び悩んでる。以前ほど上達しなくなった。
+A|That happens to everyone at your level.|そのレベルだと、みんなそうなるよ。
+B|Any tips?|何かコツある？
+A|Talk to people who correct you. Like me. I'll be honest with you.|直してくれる人と話すこと。私みたいに。遠慮なく言うから。
+B|Deal. Be brutal.|決まり。容赦なくお願い。
+
+T|🔊|発音を直してもらう|学び|how do you say, say it again, stress, sounds like, almost there
+S|
+A|How do you pronounce this word? "Thorough".|この単語、どう発音するの？「Thorough」。
+B|"Thuh-ruh". The "th" is soft.|「サーラ」。thは柔らかく。
+A|"Thorough".|「ソーロー」。
+B|Close. The stress is on the first part. THO-rough.|惜しい。強勢は最初。THO-rough。
+A|THO-rough.|THO-rough。
+B|Better. Again?|良くなった。もう一回？
+S|
+A|What about "comfortable"? I always say it wrong.|「comfortable」は？ いつも間違えるんだ。
+B|Most people do. It's "COMF-tuh-bul". Three syllables, not four.|みんなそうだよ。「カンフタブル」。4音節じゃなくて3音節。
+A|COMF-tuh-bul. You skip the "or"?|カンフタブル。「or」は飛ばすの？
+B|Yes, it basically disappears.|うん、ほぼ消える。
+A|That's so strange.|変なの。
+B|English is strange. Welcome.|英語は変なんだよ。ようこそ。
+S|
+A|Can you correct me if I mess up in conversation?|会話中に間違えたら、直してくれる？
+B|Sure. Do you want me to stop you, or tell you after?|いいよ。その場で止める？ それとも後で言う？
+A|After, I think. Otherwise I'll lose my nerve.|後でかな。そうしないと気後れしちゃう。
+B|Makes sense. I'll keep a list.|なるほど。リストにしておくね。
+A|Please don't make it too long.|あんまり長くしないでね。
+
+T|🕌|宗教や食習慣（ハラル・ベジタリアン）を確認する|文化|dietary requirements, halal, vegetarian, contain pork, just to check
+S|
+A|I'm organising dinner for Friday. Do you have any dietary requirements?|金曜のディナーを手配してるんだけど、食事で気をつけることはある？
+B|Thanks for asking. I'm Muslim, so I eat halal.|聞いてくれてありがとう。私はムスリムで、ハラルを食べてるんだ。
+A|Got it. Does that mean no pork at all?|わかった。豚肉は完全にダメってこと？
+B|No pork, and the meat needs to be halal-certified.|豚肉はダメで、お肉はハラル認証のものじゃないと。
+A|Okay. What about seafood?|なるほど。魚介類は？
+B|Seafood's fine.|魚介類は大丈夫。
+S|
+A|And Sam, you're vegetarian, right?|それとサム、あなたはベジタリアンだよね？
+B|Yes. No meat or fish, but eggs and dairy are fine.|うん。肉と魚はダメだけど、卵と乳製品は大丈夫。
+A|Just to check, does that include chicken stock in soups?|念のため、スープの鶏だしも含む？
+B|Good question. Yes, I'd avoid that too.|いい質問。うん、それも避けてる。
+A|Right, I'll make sure the restaurant knows.|わかった。お店にちゃんと伝えておく。
+S|
+B|Honestly, we're used to it. Don't stress.|正直、慣れてるから。気にしすぎないで。
+A|I just want everyone to be able to eat properly.|みんなにちゃんと食べてほしいだけだよ。
+B|That's really thoughtful. Most people don't ask.|気遣いがうれしいよ。ほとんどの人は聞かないから。
+A|Then I'm glad I did.|じゃあ、聞いてよかった。
+
+T|🌏|文化の違いに驚いたと話す|文化|culture shock, took me by surprise, back home, get used to, the other way round
+S|
+A|What surprised you most when you moved here?|ここに来て一番驚いたことは？
+B|How early everything closes. Shops shut at six!|何でも早く閉まること。お店が6時に閉まるんだよ！
+A|Ha, that's normal for us.|はは、こっちではそれが普通だよ。
+B|Back home, you can shop at ten at night.|うちの国では夜10時でも買い物できる。
+A|I'd find that strange, honestly.|正直、それは変な感じがするな。
+S|
+B|Also, people here say sorry all the time.|あと、ここの人はいつも謝ってる。
+A|Do we?|そう？
+B|Constantly. Someone bumped into me and I said sorry.|ずっと。誰かがぶつかってきたのに、私が謝ったよ。
+A|Ha, you're already one of us.|はは、もう完全にこっちの人だね。
+B|It took me by surprise, but now I do it too.|びっくりしたけど、今は私もやってる。
+S|
+A|What about the food?|食べ物は？
+B|That was the biggest shock. Everything's so mild.|それが一番のショックだった。何でも味が薄い。
+A|You should try my mum's cooking.|うちの母の料理を食べてみてよ。
+B|Is it spicy?|辛い？
+A|The other way round. She thinks black pepper is spicy.|逆だよ。黒こしょうを辛いと思ってるから。
+
+T|🙇|遅刻を謝る|人間関係|I'm so sorry I'm late, held up, no excuse, make it up to you, won't happen again
+S|
+A|I'm so sorry I'm late.|遅れて本当にごめん。
+B|It's okay. What happened?|大丈夫。何かあった？
+A|I got held up at work, and then the bus didn't come.|仕事で足止めされて、そのあとバスが来なくて。
+B|That's a rough combination.|それはひどい組み合わせだね。
+A|I should have messaged you sooner. That's on me.|もっと早く連絡すべきだった。私の責任。
+S|
+B|Honestly, I only just sat down myself.|正直、私も座ったばかりだよ。
+A|Really?|本当？
+B|No. But I'm being nice.|嘘。でも優しくしてあげてる。
+A|Ha. I deserve that.|はは。当然の報いだね。
+B|You do. Twenty-five minutes.|そうだよ。25分だからね。
+S|
+A|Let me make it up to you. Dinner's on me.|埋め合わせさせて。夕飯はおごる。
+B|I won't say no to that.|それは断らないよ。
+A|And it won't happen again. I'll leave earlier next time.|もう二度としない。次はもっと早く出る。
+B|We both know that's a lie, but I appreciate it.|嘘だってお互いわかってるけど、気持ちはうれしいよ。
+
+T|🚪|帰る前にお礼を言って別れる|人間関係|thanks for having me, lovely evening, I should get going, let's do it again, get home safe
+S|
+A|Right, I should probably get going.|さて、そろそろ帰らないと。
+B|Already? It's still early.|もう？ まだ早いよ。
+A|I know, but I've got an early start tomorrow.|うん、でも明日は朝が早くて。
+B|Fair enough. Let me get your coat.|なるほどね。コートを取ってくるよ。
+A|Thanks.|ありがとう。
+S|
+A|Thank you so much for having me. Dinner was incredible.|招いてくれて本当にありがとう。ディナー、最高だった。
+B|I'm so glad you enjoyed it.|楽しんでもらえてうれしいよ。
+A|And thank your partner for me. That dessert!|パートナーにもお礼を伝えて。あのデザート！
+B|I'll tell him. He'll be thrilled.|伝えておくよ。喜ぶと思う。
+A|We should do this again soon.|近いうちにまたやろうね。
+B|Definitely. Your place next time?|ぜひ。次はそっちの家で？
+S|
+A|Deal. I'll cook something. Probably badly.|決まり。何か作るよ。たぶん下手だけど。
+B|We'll bring wine to make up for it.|それを補うためにワインを持っていくよ。
+A|Perfect. Night, then.|完璧。じゃあ、おやすみ。
+B|Night. Get home safe. Text me when you're in.|おやすみ。気をつけて。着いたら連絡して。
+A|Will do.|そうする。
+
+T|🏡|出身地や地元の話をする|雑談|where are you from originally, grew up, small town, miss it, go back
+S|
+A|Where are you from originally?|もともとの出身はどこ？
+B|A small town in the north. You won't have heard of it.|北のほうの小さな町。知らないと思うよ。
+A|Try me.|言ってみて。
+B|Whitby.|ウィットビー。
+A|Oh, by the sea? I've actually been there.|海のそばの？ 実は行ったことあるよ。
+B|No way! Nobody's been there.|嘘でしょ！ 誰も行ったことないのに。
+S|
+A|What was it like growing up there?|そこで育つのはどんな感じだった？
+B|Quiet. Everyone knew everyone.|静かだったよ。みんな顔見知りで。
+A|Did you like that?|それは好きだった？
+B|As a kid, yes. As a teenager, I couldn't wait to leave.|子どもの頃はね。十代の時は早く出たくてたまらなかった。
+A|And now?|今は？
+B|Now I miss it. Funny how that works.|今は懐かしい。不思議なものだよね。
+S|
+A|Do you go back often?|よく帰る？
+B|A couple of times a year. My parents are still there.|年に2回くらい。両親がまだいるから。
+A|You should take me sometime. I'd love to see it properly.|いつか連れて行ってよ。ちゃんと見てみたい。
+B|Deal. But I'm warning you, there's nothing to do.|いいよ。でも言っておくけど、何もないからね。
+A|That's exactly what I want.|それこそ望むところだよ。
+
+T|💼|今の仕事や学校のことを聞かれた|雑談|what do you do, what's that like, in my final year, enjoy it, keeps me busy
+S|
+B|So what do you do?|お仕事は何をされているんですか？
+A|I'm a software developer. Mostly mobile apps.|ソフトウェア開発者です。主にモバイルアプリを。
+B|Oh, interesting. What's that like day to day?|面白そうですね。日々の仕事はどんな感じですか？
+A|A lot of sitting and staring at a screen, honestly.|正直、座って画面を見つめている時間が長いです。
+B|Do you enjoy it?|楽しいですか？
+A|Most days. When things work, it's the best feeling.|だいたいは。うまく動いた時は最高の気分です。
+S|
+A|What about you? Work or study?|あなたは？ 仕事？ それとも学生？
+B|Still studying. I'm in my final year of nursing.|まだ学生です。看護学部の最終学年で。
+A|Wow, that must be intense.|わあ、大変そうですね。
+B|It is. Placements, exams, the lot. But I love it.|そうですね。実習に試験に、全部。でも大好きなんです。
+A|What made you choose nursing?|なぜ看護を選んだんですか？
+B|My grandmother was a nurse. I grew up hearing her stories.|祖母が看護師で。その話を聞いて育ったんです。
+S|
+A|That's a lovely reason.|素敵な理由ですね。
+B|It keeps me busy, that's for sure.|とにかく忙しいのは確かです。
+A|When do you graduate?|卒業はいつですか？
+B|Next summer. Then the real work begins.|来年の夏。それから本当の仕事が始まります。
+
+T|✈️|なぜこの国に来たのか聞かれた|雑談|what brought you here, for work, fell in love with, ended up staying, no regrets
+S|
+B|So what brought you here?|どうしてこの国に来たんですか？
+A|Work, originally. A two-year contract.|最初は仕事で。2年契約でした。
+B|And how long ago was that?|それはどのくらい前？
+A|Five years now.|もう5年になります。
+B|So you stayed.|残ったんですね。
+A|I did. I kind of fell in love with the place.|はい。この場所に惚れ込んでしまって。
+S|
+B|What was it that made you stay?|何が残る決め手に？
+A|The pace of life, mostly. And the people.|主に生活のペースですね。それに人。
+B|Not the weather, then.|天気ではなさそうですね。
+A|Definitely not the weather.|絶対に天気ではないです。
+B|Ha. Nobody stays for the weather.|はは。天気で残る人はいませんよ。
+S|
+B|Do you ever think about going back?|帰ろうと思うことはありますか？
+A|Sometimes. I miss my family.|時々。家族が恋しくて。
+B|That's natural.|自然なことですね。
+A|But no regrets. This is home now.|でも後悔はないです。今はここが家なので。
+B|That's a nice thing to be able to say.|そう言えるのは素敵なことですね。
+
+T|🏠|どのくらいここに住んでいるか話す|雑談|how long have you lived here, since, feel like a local, still discovering, settled
+S|
+A|How long have you lived here?|ここに住んでどのくらい？
+B|About three years. Since twenty twenty-one.|3年くらい。2021年から。
+A|Do you feel like a local yet?|もう地元の人って感じ？
+B|Almost. I still get lost in the old town.|ほぼね。旧市街ではまだ迷うけど。
+A|Everyone does. It's a maze.|みんな迷うよ。あそこは迷路だから。
+S|
+A|What's changed since you arrived?|来た時から何か変わった？
+B|A lot of new cafés. And rent, unfortunately.|カフェがたくさん増えた。あと家賃も、残念ながら。
+A|Tell me about it.|ほんとそれ。
+B|But I'm still discovering places. Found a great bakery last week.|でもまだ新しい場所を見つけてる。先週、すごくいいパン屋を見つけたんだ。
+A|Where?|どこ？
+B|I'll show you. It's tucked away.|案内するよ。隠れた場所にあるんだ。
+S|
+A|Are you planning to stay?|ずっと住むつもり？
+B|I think so. I feel settled now.|そう思う。もう落ち着いた感じがする。
+A|That's a good feeling.|それはいい感覚だね。
+B|It is. Took a while, but it's home.|うん。時間はかかったけど、ここが家だよ。
+
+T|👫|兄弟姉妹の話をする|雑談|do you have any siblings, older, younger, the middle child, fight like cats and dogs
+S|
+A|Do you have any brothers or sisters?|兄弟姉妹はいる？
+B|Two sisters. One older, one younger.|姉と妹が1人ずつ。
+A|So you're the middle child.|じゃあ真ん中っ子だね。
+B|Yep. Classic middle child, apparently.|うん。典型的な真ん中っ子らしいよ。
+A|What does that mean?|それってどういう意味？
+B|Peacemaker. And slightly ignored.|調停役。それとちょっと放っておかれる。
+S|
+A|Are you close?|仲はいい？
+B|Now, yes. Growing up we fought like cats and dogs.|今はね。子どもの頃は犬猿の仲だった。
+A|Over what?|何で喧嘩してたの？
+B|Everything. The bathroom, the TV, clothes.|全部。お風呂、テレビ、服。
+A|Sounds about right.|よくある話だね。
+B|What about you? Any siblings?|そっちは？ 兄弟は？
+S|
+A|Just one brother. He's five years older.|兄が1人。5歳上。
+B|Big gap.|かなり離れてるね。
+A|Yeah, so he was more like a second dad growing up.|うん、だから子どもの頃は第二の父親みたいだった。
+B|Is he still bossy?|今も偉そう？
+A|Ha, less so. Now he asks me for advice.|はは、前ほどはね。今は私に相談してくるよ。
+
+T|🎯|最近ハマっていることを話す|雑談|what are you into at the moment, got into, obsessed, can't stop, you should try it
+S|
+A|What are you into at the moment?|最近ハマってることは？
+B|Honestly? Bread. I've started baking.|正直？ パン。焼き始めたんだ。
+A|Bread? Where did that come from?|パン？ どういうきっかけ？
+B|I watched one video and now I'm obsessed.|動画を1本見て、今は夢中。
+A|Are you any good?|うまくできてるの？
+B|The first three were bricks. The fourth was edible.|最初の3つはレンガだった。4つ目は食べられた。
+S|
+A|That's progress.|進歩してるね。
+B|I can't stop now. I've got a starter living in my fridge.|もう止められない。冷蔵庫に酵母を育ててる。
+A|A what?|何を？
+B|A sourdough starter. It's basically a pet.|サワードウの種。ほぼペットだよ。
+A|You've named it, haven't you?|名前つけたでしょ。
+B|...Gerald.|…ジェラルド。
+S|
+A|I need to try this bread.|そのパン、食べてみたい。
+B|Come round Sunday. I'll bake a loaf.|日曜に来なよ。1斤焼くから。
+A|And what are you into? Anything new?|そっちは？ 何か新しいことある？
+B|Running, actually. But that's a less exciting story.|ランニング。でもそれはあまり面白い話じゃないな。
+A|Bread and running. Balance.|パンとランニング。バランスいいね。
+
+T|🎵|好きな音楽やアーティストの話をする|雑談|what kind of music, on repeat, live, seen them, playlist
+S|
+A|What kind of music do you listen to?|どんな音楽を聴くの？
+B|A bit of everything, but mostly indie rock.|いろいろだけど、主にインディーロック。
+A|Who's your favourite at the moment?|今のお気に入りは？
+B|I've had this one band on repeat for weeks.|あるバンドを何週間もリピートしてる。
+A|Which one?|どのバンド？
+B|You probably haven't heard of them. Let me play you something.|たぶん知らないと思う。ちょっとかけてみるね。
+S|
+A|Oh, I like this. It's kind of dreamy.|あ、これ好き。夢見心地な感じ。
+B|Right? Wait for the chorus.|でしょ？ サビまで待って。
+A|Have you seen them live?|ライブは見た？
+B|Twice. They're even better live.|2回。ライブだとさらにいい。
+A|I'm jealous. I haven't been to a gig in ages.|羨ましい。ずっとライブに行ってないな。
+S|
+B|They're playing here in June. You should come.|6月にここでやるよ。来なよ。
+A|Seriously? Count me in.|本当に？ 行く。
+B|I'll send you the playlist so you know the songs.|曲を覚えられるようにプレイリストを送るね。
+A|Perfect. I'll do my homework.|完璧。予習しておく。
+B|Good. No standing still at the back.|よし。後ろで突っ立ってちゃだめだよ。

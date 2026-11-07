@@ -1,0 +1,402 @@
+T|🌍|行きたい旅行先の話をする|雑談|bucket list, top of my list, always wanted to, save up, one day
+S|
+A|If you could go anywhere next year, where would it be?|来年どこにでも行けるとしたら、どこに行く？
+B|Easy. Iceland. It's been top of my list for years.|簡単。アイスランド。何年もずっとリストの一番上。
+A|The northern lights?|オーロラ？
+B|That, and the hot springs. And the emptiness.|それと温泉。あと、何もない感じ。
+A|The emptiness?|何もない感じ？
+B|Yeah. Just roads and mountains and nobody around.|うん。道と山だけで、周りに誰もいない。
+S|
+A|I've always wanted to do a road trip like that.|そういうロードトリップ、ずっとやってみたかった。
+B|Then come with me. I'm saving up.|じゃあ一緒に来なよ。貯金してるんだ。
+A|How much do you need?|どのくらい必要？
+B|More than I've got. Iceland's expensive.|今ある以上。アイスランドは物価が高いから。
+A|One day, then.|じゃあ、いつかね。
+B|One day soon, I hope.|近いうちのいつか、だといいな。
+S|
+B|And you? Where's top of your list?|そっちは？ リストの一番上はどこ？
+A|Portugal. Somewhere warm, slow, and full of food.|ポルトガル。暖かくて、のんびりしてて、美味しいものだらけの場所。
+B|That's the opposite of Iceland.|アイスランドとは正反対だね。
+A|Exactly why we should do both.|だからこそ両方行くべきだよ。
+
+T|🧸|子どもの頃の思い出話をする|雑談|when I was little, growing up, my favourite thing, I remember, simpler times
+S|
+A|What were you like as a kid?|子どもの頃はどんな子だった？
+B|Loud. Always climbing things.|うるさかった。いつも何かによじ登ってた。
+A|Ha, I can picture that.|はは、目に浮かぶよ。
+B|My mum says I broke my arm twice before I was seven.|母によると、7歳になる前に2回腕を折ったらしい。
+A|Twice!|2回も！
+B|Same tree, both times. I didn't learn.|2回とも同じ木。学ばなかったんだ。
+S|
+A|What was your favourite thing to do?|一番好きだったことは？
+B|Building dens in the garden. We'd spend whole days out there.|庭で秘密基地を作ること。一日中外にいた。
+A|That sounds idyllic.|のどかでいいね。
+B|It was. No phones, no screens. Just mud.|そうだった。スマホも画面もなし。泥だけ。
+A|Simpler times.|シンプルな時代だね。
+B|What about you? What do you remember?|そっちは？ 何を覚えてる？
+S|
+A|Summers at my grandparents' house. Watermelon on the porch.|祖父母の家で過ごした夏。縁側でスイカ。
+B|That sounds like a painting.|絵になりそうだね。
+A|My grandad taught me to fish there. I still think about it.|おじいちゃんがそこで釣りを教えてくれた。今でも思い出すよ。
+B|Those are the memories that stick.|そういう記憶が残るんだよね。
+A|They really are.|本当にそう。
+
+T|🌟|将来の夢や目標について話す|深い話|where do you see yourself, my dream is, work towards, step by step, scary but exciting
+S|
+A|Can I ask you something a bit serious?|ちょっと真面目なこと聞いてもいい？
+B|Go on.|どうぞ。
+A|Where do you see yourself in ten years?|10年後、自分はどうなっていると思う？
+B|Honestly? Running my own café. Small, by the sea.|正直に言うと、自分のカフェをやってる。小さくて、海のそばで。
+A|You've never mentioned that.|それ、初めて聞いた。
+B|I don't say it out loud much. It sounds unrealistic.|あまり口には出さないんだ。非現実的に聞こえるから。
+S|
+A|It doesn't sound unrealistic. What's stopping you?|非現実的じゃないよ。何が邪魔してるの？
+B|Money, mostly. And fear.|主にお金。あと、怖さ。
+A|What are you doing about it?|それに対して何かしてる？
+B|Saving a bit each month. And I've started working weekends at a bakery.|毎月少しずつ貯金してる。あと週末にパン屋で働き始めた。
+A|So you're working towards it.|じゃあ、ちゃんと向かってるんだね。
+B|Step by step. It's scary but exciting.|一歩ずつ。怖いけどワクワクする。
+S|
+B|What about you? What's your dream?|そっちは？ 夢は？
+A|I want to write a book. I've got half a draft in a drawer.|本を書きたい。引き出しに半分書いた原稿がある。
+B|Then finish it. I want to read it.|じゃあ書き上げて。読みたいから。
+A|Deal. You open the café, I'll write in the corner.|決まり。カフェを開いて。私は隅で書くから。
+B|That's the plan, then.|じゃあ、それが計画だね。
+
+T|🍙|コンビニで温めてほしいと頼む|日常|could you heat this up, warm it up, how long, careful, it's hot
+S|
+A|Hi, could you heat this up for me, please?|すみません、これ温めてもらえますか？
+B|Of course. Just the one?|もちろんです。1つだけですか？
+A|Yes, just the rice bowl.|はい、お弁当だけで。
+B|It'll take about a minute and a half.|1分半ほどかかります。
+A|That's fine, I'll wait.|大丈夫です、待ちます。
+S|
+B|Would you like chopsticks or a fork?|お箸とフォーク、どちらにしますか？
+A|Chopsticks, please. And a napkin if you have one.|お箸で。あと、あればナプキンも。
+B|Here you go. Anything else?|どうぞ。他には？
+A|That's all, thanks.|それで全部です、ありがとう。
+S|
+B|Here's your food. Careful, it's hot.|お待たせしました。熱いので気をつけてください。
+A|Thanks. I'll let it cool for a second.|ありがとう。少し冷まします。
+B|The lid will steam up. Just peel it back.|蓋に蒸気がこもるので、めくってください。
+A|Got it. Have a good one.|わかりました。良い一日を。
+
+T|🛗|エレベーターで階を押してもらう|日常|could you press, which floor, going up, hold the door, thanks
+S|
+A|Could you press seven for me, please?|7階を押してもらえますか？
+B|Sure. Seven.|はい。7階ですね。
+A|Thanks. My hands are full.|ありがとう。両手がふさがってて。
+B|I can see that. Shopping day?|そのようですね。買い物の日ですか？
+A|Something like that. More than I planned.|そんなところです。予定より買いすぎました。
+S|
+B|Which floor are you going to?|何階に行くんですか？
+A|Seven. You?|7階。あなたは？
+B|Nine. Going up, so we're fine.|9階。上に行くので大丈夫ですね。
+A|Oh, hold the door! Someone's coming.|あ、ドア押さえて！ 誰か来ます。
+B|Got it.|了解。
+S|
+A|This is me. Thanks again.|ここで降ります。改めてありがとう。
+B|No problem. Don't drop anything.|どういたしまして。落とさないように。
+A|I'll try. Have a good day.|頑張ります。良い一日を。
+
+T|😴|電車で寝過ごして乗り過ごした|交通|missed my stop, fell asleep, get off at the next one, go back, wake me up
+S|
+A|Wait, where are we?|え、ここどこ？
+B|Elmwood. Why?|エルムウッド。どうしたの？
+A|Elmwood? I was supposed to get off two stops ago!|エルムウッド？ 2駅前で降りるはずだったのに！
+B|Did you fall asleep?|寝てた？
+A|Completely. I don't even remember closing my eyes.|完全に。目を閉じた記憶すらない。
+B|Ha, it happens. Long day?|はは、あるあるだね。長い一日だった？
+S|
+A|Very. Okay, so what do I do now?|とても。それで、どうすればいい？
+B|Get off at the next one and go back the other way.|次で降りて、逆方向に戻ればいいよ。
+A|How often do they run?|どのくらいの間隔で来る？
+B|Every ten minutes or so. You won't wait long.|10分おきくらい。長くは待たないよ。
+A|Ugh. That's twenty minutes I'll never get back.|うう。20分を無駄にした。
+S|
+B|Could be worse. You could've ended up at the terminus.|まだマシだよ。終点まで行ってた可能性もあるし。
+A|Don't. I've done that before.|やめて。前にやったことある。
+B|Well, this is my stop. Good luck.|じゃあ、ここで降りるね。頑張って。
+A|Thanks. And next time, someone wake me up!|ありがとう。次は誰か起こして！
+
+T|🔋|スマホの電池が切れそう|日常|running low, about to die, before it goes, in case, low power mode
+S|
+A|My phone's on three percent.|スマホが3%になった。
+B|Three? That's basically dead.|3%？ もう死んだも同然だね。
+A|I know. Quick, before it goes — where are we meeting?|わかってる。切れる前に急いで。どこで待ち合わせ？
+B|The fountain in the square. Seven o'clock.|広場の噴水。7時。
+A|Fountain, seven. Got it.|噴水、7時。了解。
+S|
+B|Have you put it on low power mode?|低電力モードにした？
+A|Just now. It's dimmed everything.|今したところ。画面が暗くなった。
+B|Turn off the Wi-Fi too. It drains it.|Wi-Fiも切って。消耗するから。
+A|Done. Still three percent, somehow.|切った。なぜかまだ3%。
+B|It'll last if you don't touch it.|触らなければ持つよ。
+S|
+A|Okay, in case it dies, I'll just be at the fountain at seven.|万が一切れたら、とにかく7時に噴水にいるから。
+B|And if you're late, I'll wait. Don't panic.|遅れても待ってるよ。慌てないで。
+A|You're the best. Okay, putting it away now.|ほんと助かる。じゃあ、もうしまうね。
+B|See you at seven!|7時にね！
+
+T|📍|道に迷って現在地がわからない|交通|I'm lost, no idea where I am, landmark, send you my location, which direction
+S|
+A|I think I'm lost.|迷ったみたい。
+B|Where are you?|どこにいるの？
+A|That's the problem. I have no idea.|それが問題なんだ。全然わからない。
+B|What can you see around you?|周りに何が見える？
+A|A church, a bakery, and a lot of narrow streets.|教会と、パン屋と、狭い道がたくさん。
+B|That could be half the city.|それだと街の半分が当てはまるね。
+S|
+B|Can you send me your location?|位置情報を送れる？
+A|Hang on... does that work?|ちょっと待って… これで届いた？
+B|Got it. Oh, you're way over on the east side.|届いた。あ、かなり東側にいるね。
+A|How did I end up here?|どうやってここまで来たんだろう。
+B|No idea, but you're only ten minutes from me.|わからないけど、私からは10分しか離れてないよ。
+S|
+A|Which direction do I go?|どっちに行けばいい？
+B|Face the church, then go left. Keep going until you hit the main road.|教会に向かって立って、左に。大通りに出るまで進んで。
+A|Church, left, main road.|教会、左、大通り。
+B|I'll walk towards you. We'll meet in the middle.|私もそっちに向かうよ。途中で会おう。
+A|Thank you. I owe you a coffee.|ありがとう。コーヒーおごるね。
+
+T|🐌|ネットの接続が遅いと文句を言う|テクノロジー|so slow, buffering, keeps dropping, restart the router, unplug it
+S|
+A|Is the internet slow for you too?|そっちもネット遅い？
+B|Yeah, it's crawling. The video keeps buffering.|うん、亀みたい。動画がずっと読み込み中。
+A|It's been like this all evening.|今夜はずっとこう。
+B|Have you tried restarting the router?|ルーターを再起動してみた？
+A|Not yet. Does that actually work?|まだ。それ本当に効くの？
+B|Nine times out of ten.|10回中9回はね。
+S|
+A|Okay, unplugging it... How long do I wait?|よし、コンセント抜いた… どのくらい待つ？
+B|Thirty seconds. Count it properly.|30秒。ちゃんと数えて。
+A|That's the longest thirty seconds of my life.|人生で一番長い30秒だ。
+B|Plug it back in. The lights should come on.|差し直して。ランプがつくはず。
+A|Lights are on. Now we wait again.|ランプついた。また待ちだね。
+S|
+B|Try it now.|今試してみて。
+A|Oh, that's much better. It loaded straight away.|あ、ずっと速くなった。すぐ読み込めた。
+B|Told you. The magic fix.|でしょ。魔法の解決法。
+A|Why does that even work?|なんでこれで直るの？
+B|Nobody knows. Just be grateful.|誰も知らない。ありがたく思っておいて。
+
+T|🖥|パソコンがフリーズした|テクノロジー|frozen, not responding, force quit, lose my work, autosave
+S|
+A|No, no, no. It's frozen.|うそ、うそ、うそ。フリーズした。
+B|What were you doing?|何してたの？
+A|Just typing. Then the cursor stopped moving.|入力してただけ。そしたらカーソルが止まった。
+B|Give it a minute. Sometimes it catches up.|ちょっと待ってみて。時々追いついてくるから。
+A|It's been two minutes. Nothing.|もう2分経った。何も反応しない。
+S|
+B|Try force quitting the app.|アプリを強制終了してみて。
+A|But I'll lose my work!|でも作業が消えちゃう！
+B|When did you last save?|最後に保存したのはいつ？
+A|I don't know. An hour ago?|わからない。1時間前？
+B|Does it have autosave?|自動保存はある？
+A|I think so. I hope so.|あると思う。あってほしい。
+S|
+A|Okay, I did it. It's closed.|やった。閉じた。
+B|Now open it again and see what it recovers.|もう一度開いて、何が復元されるか見てみて。
+A|It's asking if I want to restore. Yes! Yes!|復元しますかって聞いてる。はい！ はい！
+B|And?|それで？
+A|It's all there. Oh, thank goodness.|全部残ってた。ああ、よかった。
+B|Now save. Every five minutes. Forever.|じゃあ保存して。5分ごとに。永遠に。
+
+T|🔐|パスワードを忘れてログインできない|テクノロジー|forgot my password, reset link, locked out, security question, password manager
+S|
+A|I can't log in. It says my password's wrong.|ログインできない。パスワードが違うって。
+B|Did you change it recently?|最近変えた？
+A|I don't think so. Maybe? I have too many passwords.|変えてないと思う。たぶん？ パスワードが多すぎて。
+B|Try the "forgot password" link.|「パスワードを忘れた」のリンクを試してみて。
+A|Okay, it wants my email. Sending the reset link.|わかった。メールアドレスを求めてる。リセットリンクを送信。
+S|
+A|Nothing's arrived.|何も届かない。
+B|Check your spam folder.|迷惑メールフォルダを確認して。
+A|Oh. There it is.|あ。あった。
+B|Classic. Click the link and set a new one.|お決まりだね。リンクをクリックして新しいのを設定して。
+A|It wants a security question too. My first pet?|セキュリティの質問もある。最初のペット？
+B|You'd better remember that one.|それは覚えておいたほうがいいよ。
+S|
+A|Right, I'm in. New password set.|よし、入れた。新しいパスワード設定完了。
+B|Write it down somewhere safe this time.|今回は安全な場所に書いておいてね。
+A|I should just get a password manager.|パスワード管理アプリを使うべきだね。
+B|You should. I've been saying that for a year.|そうだよ。1年前から言ってるのに。
+A|Fine, fine. Tomorrow.|わかった、わかった。明日ね。
+
+T|🖨|プリンターが動かない|テクノロジー|won't print, paper jam, out of ink, offline, try again
+S|
+A|The printer's not working again.|プリンターがまた動かない。
+B|What's it saying?|何て表示されてる？
+A|Nothing. It's just sitting there. The job's stuck in the queue.|何も。ただ止まってる。印刷ジョブが待機中のまま。
+B|Is it showing as offline?|オフラインになってない？
+A|Let me check... yes, offline.|確認する… うん、オフライン。
+B|Turn it off and on. That usually wakes it up.|電源を切って入れ直して。だいたいそれで復活するから。
+S|
+A|Okay, it's back online. Trying again.|よし、オンラインに戻った。もう一度試す。
+B|Any luck?|どう？
+A|It's making a noise... and stopped. Paper jam.|音がして… 止まった。紙詰まり。
+B|Open the back panel. It's usually in there.|後ろのパネルを開けて。だいたいそこに詰まってる。
+A|Got it. It was crumpled right up.|取れた。くしゃくしゃになってた。
+S|
+A|Third time lucky?|三度目の正直？
+B|Fingers crossed.|祈ってる。
+A|It's printing! Finally.|印刷してる！ やっと。
+B|You should check the ink too. It looked low last week.|インクも確認したほうがいいよ。先週少なそうだった。
+A|One problem at a time, please.|問題は一度に一つずつでお願い。
+
+T|🎧|オンライン会議で音声が聞こえない|テクノロジー|can you hear me, you're on mute, breaking up, check your mic, dial in
+S|
+A|Hi everyone. Can you hear me?|皆さん、こんにちは。聞こえますか？
+B|We can see you, but there's no sound.|映像は見えていますが、音が出ていません。
+A|Really? Hang on.|本当ですか？ ちょっと待ってください。
+B|You might be on mute.|ミュートになっているのかも。
+A|I'm not, it says the mic's on. Now?|なっていません、マイクはオンです。今は？
+B|Still nothing.|まだ聞こえません。
+S|
+A|Let me check the settings. Which mic is it using?|設定を確認します。どのマイクを使っているか。
+B|Try switching to the headset.|ヘッドセットに切り替えてみてください。
+A|Okay, switched. Testing, testing.|切り替えました。テスト、テスト。
+B|There you are! We can hear you now.|聞こえました！ 今は大丈夫です。
+A|Sorry about that. Technology.|すみません。テクノロジーですね。
+S|
+B|You're breaking up a bit, though.|でも、少し途切れていますね。
+A|My Wi-Fi's not great. Let me turn my camera off.|Wi-Fiがあまり良くなくて。カメラを切ります。
+B|That's better. Much clearer.|良くなりました。ずっとクリアです。
+A|If it gets worse, I'll dial in by phone.|悪化したら電話で参加します。
+B|Sounds good. Shall we start?|わかりました。では始めましょうか？
+
+T|📹|Zoomの背景やカメラをオフにすると伝える|テクノロジー|camera off, virtual background, messy, bad hair day, join by audio
+S|
+A|I'm going to keep my camera off today, if that's okay.|今日はカメラをオフにしておきたいのですが、大丈夫ですか？
+B|Sure. Everything all right?|もちろん。何かありましたか？
+A|Just a bad hair day, honestly.|正直、髪型がひどい日なんです。
+B|Ha, understood. We've all been there.|はは、わかります。誰にでもありますよ。
+A|And my flat's a mess behind me.|それに後ろの部屋も散らかっていて。
+S|
+B|You could use a virtual background.|バーチャル背景を使えばいいですよ。
+A|I tried. It keeps cutting off half my head.|試したんですが、頭が半分消えるんです。
+B|That's the lighting. Sit facing the window.|照明のせいですね。窓に向かって座ってみてください。
+A|Good tip. I'll try that next time.|いいアドバイス。次回試してみます。
+B|Honestly, audio only is fine for this one.|正直、今回は音声だけで十分です。
+S|
+A|Thanks. I'll turn it on if we need to share screens.|ありがとう。画面共有が必要なら、オンにします。
+B|No need. Just be ready to talk about the numbers.|不要です。数字について話せるように準備だけしておいてください。
+A|Ready. Let's go.|準備できています。始めましょう。
+
+T|☎️|お店の営業時間を電話で確認する|日常|what time do you close, open on Sundays, last orders, until, bank holiday
+S|
+B|Good afternoon, Rosie's Bakery.|こんにちは、ロージーズ・ベーカリーです。
+A|Hi, I just wanted to check what time you close today.|こんにちは、今日は何時に閉まるか確認したくて。
+B|We're open until six on weekdays.|平日は6時までです。
+A|And on Sundays?|日曜日は？
+B|Sundays we close at four.|日曜は4時に閉まります。
+A|Great, thank you.|わかりました、ありがとう。
+S|
+A|Are you open on the bank holiday next Monday?|来週月曜の祝日は営業していますか？
+B|Yes, but shorter hours. Ten to three.|はい、ただ短縮営業で。10時から3時までです。
+A|Perfect. And do you take orders for cakes?|わかりました。ケーキの注文は受けていますか？
+B|We do. Two days' notice, ideally.|受けています。できれば2日前までにお願いします。
+A|I'll call back with an order, then.|では注文の電話をかけ直します。
+S|
+B|Or you can order online. It's quicker.|オンラインでも注文できますよ。そのほうが早いです。
+A|Oh, even better. What's the website?|それはいいですね。サイトのアドレスは？
+B|Rosiesbakery dot com. All one word.|rosiesbakery.comです。全部つなげて。
+A|Got it. Thanks for your help.|わかりました。ありがとうございました。
+
+T|📞|予約をキャンセル・変更する|手続き|I need to cancel, reschedule, cancellation fee, move it to, apologies for the short notice
+S|
+A|Hi, I have a booking for tonight under Fujinuma. I need to change it.|今夜、藤沼で予約しているのですが、変更したくて。
+B|Of course. What would you like to change?|承知しました。どのように変更しますか？
+A|Could I move it to tomorrow, same time?|明日の同じ時間にずらせますか？
+B|Let me check... yes, we have space at seven thirty tomorrow.|確認します… はい、明日の7時半に空きがあります。
+A|That's perfect. Same table for four?|それで完璧です。同じ4人席で？
+B|Same table. I've updated it.|同じお席です。変更しました。
+S|
+A|Actually, sorry — one of us can't make it. Could it be three instead?|あ、すみません、1人来られなくなりました。3人にできますか？
+B|No problem. Three people, tomorrow at seven thirty.|大丈夫です。3名様、明日の7時半で。
+A|Is there a cancellation fee for the change?|変更に手数料はかかりますか？
+B|Not for rescheduling. Only for a full cancellation on the day.|変更にはかかりません。当日の完全キャンセルのみです。
+A|Good to know. Apologies for the short notice.|わかりました。直前の連絡で申し訳ありません。
+S|
+B|It's fine, you gave us plenty of warning.|大丈夫ですよ、十分早めにご連絡いただきました。
+A|Thank you. See you tomorrow.|ありがとう。では明日。
+B|We'll see you then. Have a good evening.|お待ちしています。良い夜を。
+
+T|🚫|定休日で店が閉まっていた|日常|closed today, should have checked, opening hours, what a shame, plan B
+S|
+A|Oh no. It's closed.|うそ。閉まってる。
+B|What? It's Tuesday afternoon.|え？ 火曜の午後だよ。
+A|There's a sign. "Closed Tuesdays."|看板がある。「火曜定休」。
+B|Who closes on a Tuesday?|火曜に休む店なんてある？
+A|Apparently they do. I should have checked.|どうやらここみたい。確認しておくべきだった。
+S|
+B|Don't worry, it's not your fault.|気にしないで、あなたのせいじゃないよ。
+A|I was really looking forward to it, though.|でも本当に楽しみにしてたんだ。
+B|Me too. What a shame.|私も。残念だね。
+A|Their opening hours are on the door. Wednesday to Sunday.|ドアに営業時間が書いてある。水曜から日曜。
+B|Okay, we'll come back Thursday.|じゃあ木曜に来直そう。
+S|
+A|So, plan B?|じゃあ、プランBは？
+B|There's a ramen place two streets over.|2本向こうの通りにラーメン屋がある。
+A|Is it open on Tuesdays?|火曜は開いてる？
+B|Let me check this time. Yes, until ten.|今回はちゃんと確認する。うん、10時まで。
+A|Lesson learnt. Let's go.|教訓を得たね。行こう。
+
+T|📋|メニューにおすすめを聞く|食事|what do you recommend, house special, popular, can't go wrong, chef's favourite
+S|
+A|Everything looks good. What do you recommend?|どれも美味しそうですね。おすすめは何ですか？
+B|The lamb is our house special. It's what we're known for.|ラムが当店の看板料理です。それで知られています。
+A|How is it cooked?|どんな調理法ですか？
+B|Slow-roasted for six hours, with rosemary and garlic.|ローズマリーとニンニクで6時間じっくりローストします。
+A|That sounds incredible.|それはすごそうですね。
+S|
+A|And for something lighter?|もっと軽いものだと？
+B|The sea bass. It's simple, but the fish is very fresh.|スズキですね。シンプルですが、魚がとても新鮮です。
+A|What's the most popular dish with regulars?|常連さんに一番人気なのは？
+B|Honestly, the lamb. But the chef's favourite is the risotto.|正直、ラムです。でもシェフのお気に入りはリゾットです。
+A|Now I'm torn.|迷ってきました。
+B|You can't go wrong with either.|どちらを選んでも間違いありませんよ。
+S|
+A|Okay, I'll go with the lamb. When in Rome.|じゃあラムにします。郷に入っては郷に従え。
+B|Excellent choice. And to drink?|素晴らしい選択です。お飲み物は？
+A|Whatever you'd pair with it.|それに合うものをお任せします。
+B|A glass of the house red. Trust me.|ハウスの赤を1杯。お任せください。
+
+T|🍝|料理の量が多すぎて食べきれない|食事|huge portion, I'm stuffed, can't finish, box it up, eyes bigger than my stomach
+S|
+A|Wow. That's a huge portion.|うわ。すごい量。
+B|Told you. Nobody finishes it.|言ったでしょ。誰も食べきれないんだよ。
+A|I'm going to try.|挑戦してみる。
+B|Brave. I'll watch.|勇敢だね。見てるよ。
+A|Okay, halfway. I might have been overconfident.|よし、半分。自信過剰だったかも。
+S|
+B|You've gone quiet.|静かになったね。
+A|I'm stuffed. I physically can't eat any more.|お腹いっぱい。物理的にもう無理。
+B|Eyes bigger than your stomach.|目で食べちゃったね。
+A|Every single time.|毎回そう。
+B|Just ask them to box it up.|持ち帰りにしてもらいなよ。
+S|
+A|Excuse me, could I take the rest of this to go?|すみません、残りを持ち帰ってもいいですか？
+B|Of course. Everyone does with that dish.|もちろんです。その料理はみなさんそうされますよ。
+A|Ha, I'm not alone, then.|はは、私だけじゃないんですね。
+B|Not at all. Lunch sorted for tomorrow.|全然。明日のランチが決まりましたね。
+A|Perfect. Thank you.|完璧です。ありがとう。
+
+T|🥤|飲み物のおかわりを頼む|食事|another one, same again, top up, refill, when you get a chance
+S|
+A|Excuse me, could I get another one of these?|すみません、これをもう1杯もらえますか？
+B|Of course. Same again?|もちろんです。同じもので？
+A|Yes, please. The lemonade.|はい。レモネードを。
+B|Coming right up.|すぐお持ちします。
+A|Thanks.|ありがとう。
+S|
+A|And is the coffee free refill?|それと、コーヒーはおかわり自由ですか？
+B|It is, for filter coffee. Would you like a top up?|フィルターコーヒーはそうです。おつぎしましょうか？
+A|Yes, please, when you get a chance.|お願いします、手が空いた時で。
+B|No problem. I'll bring the pot over.|承知しました。ポットをお持ちします。
+A|You're very kind.|ご親切に。
+S|
+B|Here's your lemonade, and I've topped up the coffee.|レモネードです。コーヒーもつぎ足しました。
+A|Perfect. That's everything for now.|完璧です。今はこれで大丈夫です。
+B|Just wave if you need anything else.|他に何かあれば手を振ってください。
+A|Will do. Thank you.|そうします。ありがとう。

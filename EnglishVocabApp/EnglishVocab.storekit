@@ -1,0 +1,45 @@
+{
+  "identifier": "8F1C2A57",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "2000",
+      "familyShareable": true,
+      "internalID": "6A31D0B2",
+      "localizations": [
+        {
+          "description": "全単語の詳細・復習リスト・文法・トピック会話・AI単語追加・CSV書き出しを解放（買い切り）",
+          "displayName": "KOTOBA英語 フル版",
+          "locale": "ja"
+        }
+      ],
+      "productID": "com.fujinuma.englishvocab.full",
+      "referenceName": "Full Unlock",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "0",
+      "familyShareable": false,
+      "internalID": "6A31D0B3",
+      "localizations": [
+        {
+          "description": "30日間、すべての機能を無料でお試しできます。期間後に自動で課金されることはありません。",
+          "displayName": "30日間無料トライアル",
+          "locale": "ja"
+        }
+      ],
+      "productID": "com.fujinuma.englishvocab.trial30",
+      "referenceName": "30-day Trial",
+      "type": "NonConsumable"
+    }
+  ],
+  "settings": {
+    "_locale": "ja",
+    "_storefront": "JPN"
+  },
+  "subscriptionGroups": [],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}
