@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245
         ]
         return groups.flatMap { $0 }
     }
@@ -41907,6 +41907,115 @@ enum SeedData {
                     ("Have you got a tissue? My nose won't stop running.", "ティッシュある？鼻水が止まらなくて。"),
                     ("There's a box of tissues on the table.", "テーブルの上にティッシュの箱があるよ。")
                  ], ipa: "/ˈtɪʃuː/"),
+        ]
+    }
+    private static var britishColloquial245: [Word] {
+        [
+            make("take forever", "to take a very long time, often annoyingly long",
+                 "めちゃくちゃ時間がかかる",
+                 useCases: ["待たされてイライラするとき", "作業がなかなか終わらないとき"],
+                 examples: [
+                    ("This download is taking forever.", "このダウンロード、全然終わらないんだけど。"),
+                    ("Sorry I took forever — the queue was massive.", "遅くなってごめん、列がすごく長くて。")
+                 ], ipa: "/teɪk fəˈrevə/"),
+            make("pass the buck", "to make someone else responsible for a problem instead of dealing with it yourself",
+                 "責任を押し付ける・たらい回しにする",
+                 useCases: ["職場で責任逃れをする人について", "窓口でたらい回しにされたとき"],
+                 examples: [
+                    ("Stop passing the buck and just sort it out.", "人のせいにしてないで、さっさと何とかしてよ。"),
+                    ("Every department I called just passed the buck.", "電話した部署はどこもたらい回しだった。")
+                 ], ipa: "/pɑːs ðə bʌk/"),
+            make("it's a tough one", "used when a question or decision is difficult to answer or make",
+                 "それは難しいね・悩むところだね",
+                 useCases: ["答えにくい質問をされたとき", "どちらか選べないとき"],
+                 examples: [
+                    ("Pizza or curry? Ooh, it's a tough one.", "ピザかカレー？うーん、悩むなあ。"),
+                    ("Should I take the job? It's a tough one, to be honest.", "その仕事受けるべき？正直、難しいところだね。")
+                 ], ipa: "/ɪts ə tʌf wʌn/"),
+            make("soggy", "unpleasantly wet and soft",
+                 "（水分で）ふやけた・べちゃっとした",
+                 useCases: ["揚げ物やパンがしなしなになったとき", "雨で靴や服がびしょびしょのとき"],
+                 examples: [
+                    ("The chips have gone all soggy.", "ポテトがすっかりしなしなになっちゃった。"),
+                    ("My shoes are soggy from the rain.", "雨で靴がぐしょぐしょだよ。")
+                 ], ipa: "/ˈsɒɡi/"),
+            make("crispy", "pleasantly hard and dry on the outside, so it breaks easily when you bite it",
+                 "カリカリの・パリッとした",
+                 useCases: ["料理の食感を褒めるとき", "焼き加減を注文するとき"],
+                 examples: [
+                    ("I love it when the bacon's really crispy.", "ベーコンがカリカリなのが大好き。"),
+                    ("The skin on this chicken is so crispy!", "このチキン、皮がすごくパリパリ！")
+                 ], ipa: "/ˈkrɪspi/"),
+            make("crunchy", "firm and making a loud noise when you bite it, in a pleasant way",
+                 "ザクザクした・シャキシャキした",
+                 useCases: ["野菜やナッツの食感を言うとき", "シリアルやお菓子を食べるとき"],
+                 examples: [
+                    ("These apples are lovely and crunchy.", "このリンゴ、シャキシャキで美味しい。"),
+                    ("Do you prefer smooth or crunchy peanut butter?", "ピーナッツバターはなめらか派？粒入り派？")
+                 ], ipa: "/ˈkrʌntʃi/"),
+            make("chewy", "needing to be chewed a lot before you can swallow it",
+                 "噛みごたえのある・（肉などが）硬い",
+                 useCases: ["お菓子のもちもち感を言うとき", "肉が硬いとき"],
+                 examples: [
+                    ("The steak was a bit chewy, to be honest.", "正直、ステーキがちょっと硬かった。"),
+                    ("I like cookies that are chewy in the middle.", "真ん中がしっとりもちっとしたクッキーが好き。")
+                 ], ipa: "/ˈtʃuːi/"),
+            make("yawn", "to open your mouth wide and breathe in deeply because you are tired or bored",
+                 "あくび（をする）",
+                 useCases: ["眠いとき", "退屈なとき"],
+                 examples: [
+                    ("Sorry, I can't stop yawning — I barely slept.", "ごめん、あくびが止まらない。ほとんど寝てなくて。"),
+                    ("Stop yawning, you're making me do it too!", "あくびやめて、こっちまでうつるじゃん！")
+                 ], ipa: "/jɔːn/"),
+            make("grin", "a wide smile; to smile widely",
+                 "にっこり笑う・にやにやする",
+                 useCases: ["嬉しそうな人を見たとき", "何か企んでいそうな人に"],
+                 examples: [
+                    ("What are you grinning about?", "何ニヤニヤしてるの？"),
+                    ("He came in with a massive grin on his face.", "彼、満面の笑みで入ってきたよ。")
+                 ], ipa: "/ɡrɪn/"),
+            make("frown", "to move your eyebrows together because you are annoyed, worried or thinking hard",
+                 "顔をしかめる・眉をひそめる",
+                 useCases: ["不機嫌そうな人について", "考え込んでいる人に"],
+                 examples: [
+                    ("Why are you frowning? Is something wrong?", "なんで眉間にしわ寄せてるの？何かあった？"),
+                    ("She frowned when she saw the bill.", "彼女、請求書を見て顔をしかめた。")
+                 ], ipa: "/fraʊn/"),
+            make("gulp", "to swallow something quickly or in large amounts, or to swallow because you are nervous",
+                 "ごくっと飲む・（緊張で）ごくりと唾をのむ",
+                 useCases: ["急いで飲むとき", "緊張する場面で"],
+                 examples: [
+                    ("He gulped down his coffee and ran out the door.", "彼はコーヒーを一気に飲んで飛び出していった。"),
+                    ("I gulped when I saw how much it cost.", "値段を見てごくりと唾をのんだよ。")
+                 ], ipa: "/ɡʌlp/"),
+            make("fidget", "to keep moving your hands or body because you are nervous, bored or restless",
+                 "そわそわする・もぞもぞ動く",
+                 useCases: ["落ち着きのない子どもに", "緊張して手をいじるとき"],
+                 examples: [
+                    ("Stop fidgeting and sit still for a minute.", "もぞもぞしないで、ちょっとじっとしてて。"),
+                    ("I always fidget when I'm nervous.", "緊張するといつもそわそわしちゃう。")
+                 ], ipa: "/ˈfɪdʒɪt/"),
+            make("spooky", "strange and slightly frightening",
+                 "不気味な・ちょっと怖い",
+                 useCases: ["暗い場所や古い建物について", "偶然の一致に驚いたとき"],
+                 examples: [
+                    ("This house is a bit spooky at night.", "この家、夜はちょっと不気味だね。"),
+                    ("That's spooky — I was just thinking about you!", "怖っ、ちょうど君のこと考えてたところ！")
+                 ], ipa: "/ˈspuːki/"),
+            make("yummy", "tasting very good (informal)",
+                 "おいしい・うまっ",
+                 useCases: ["食べ物を褒めるとき", "子どもや友達との会話で"],
+                 examples: [
+                    ("Mmm, this cake is so yummy!", "んー、このケーキすごくおいしい！"),
+                    ("That looks yummy — where did you get it?", "それおいしそう。どこで買ったの？")
+                 ], ipa: "/ˈjʌmi/"),
+            make("nitpick", "to criticise small, unimportant details",
+                 "細かいことにケチをつける・揚げ足を取る",
+                 useCases: ["細かい指摘ばかりする人に", "自分が細かいことを言う前置きに"],
+                 examples: [
+                    ("I don't want to nitpick, but there's a typo here.", "細かいこと言いたくないんだけど、ここ誤字あるよ。"),
+                    ("Stop nitpicking — it's fine as it is.", "揚げ足取らないで。このままで大丈夫だよ。")
+                 ], ipa: "/ˈnɪtpɪk/"),
         ]
     }
     private static var britishColloquial241: [Word] {
