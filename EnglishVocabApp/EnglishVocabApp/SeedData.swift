@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239
         ]
         return groups.flatMap { $0 }
     }
@@ -41471,6 +41471,115 @@ enum SeedData {
                     ("Milk? / Just a splash, thanks.", "ミルク入れる？／ほんの少しだけお願い。"),
                     ("Can I have just a splash of wine? I'm driving.", "ワインはほんの少しだけでいい？運転するから。")
                  ], ipa: "/ˌdʒʌst ə ˈsplæʃ/"),
+        ]
+    }
+    private static var britishColloquial239: [Word] {
+        [
+            make("hop in", "(informal) to get into a car quickly",
+                 "（車に）乗って・さあ乗って",
+                 useCases: ["車で迎えに来たとき", "誰かを車に乗せるとき"],
+                 examples: [
+                    ("Hop in — I'll drop you at the station.", "乗って。駅まで送るよ。"),
+                    ("Hop in the back, there's loads of room.", "後ろに乗って、スペースたっぷりあるから。")
+                 ], ipa: "/ˌhɒp ˈɪn/"),
+            make("pan out", "(informal) to develop or end in a particular way",
+                 "（結果的に）うまくいく・〜という展開になる",
+                 useCases: ["計画がどうなるか話すとき", "結果がまだ分からないとき"],
+                 examples: [
+                    ("Let's see how things pan out before we book anything.", "何か予約する前に、どうなるか様子を見よう。"),
+                    ("The new job didn't really pan out, so I'm looking again.", "新しい仕事はあまりうまくいかなくて、また探してるんだ。")
+                 ], ipa: "/ˌpæn ˈaʊt/"),
+            make("backfire", "(of a plan) to have the opposite result to the one you wanted",
+                 "裏目に出る",
+                 useCases: ["計画や作戦が逆効果だったとき", "良かれと思ったことが失敗したとき"],
+                 examples: [
+                    ("I tried to surprise her, but it totally backfired.", "サプライズしようとしたけど、完全に裏目に出ちゃった。"),
+                    ("Be careful — that joke could backfire on you.", "気をつけて。その冗談、自分に返ってくるかもよ。")
+                 ], ipa: "/ˌbækˈfaɪə/"),
+            make("here's to ...", "used when raising your glass to wish success or happiness to someone or something",
+                 "〜に乾杯",
+                 useCases: ["乾杯の音頭をとるとき", "お祝いの席で"],
+                 examples: [
+                    ("Here's to you, Tom — congratulations on the new job!", "トムに乾杯！転職おめでとう！"),
+                    ("Here's to a brilliant year ahead!", "最高の一年になりますように、乾杯！")
+                 ], ipa: "/ˈhɪəz tə/"),
+            make("a good night's sleep", "a night when you sleep well and for long enough",
+                 "ぐっすり眠ること・一晩よく寝ること",
+                 useCases: ["疲れているとき", "大事な日の前に"],
+                 examples: [
+                    ("What you need is a good night's sleep.", "君に必要なのは、ぐっすり眠ることだよ。"),
+                    ("I finally got a good night's sleep last night.", "昨日の夜、やっとぐっすり眠れた。")
+                 ], ipa: "/ə ˌɡʊd ˌnaɪts ˈsliːp/"),
+            make("on schedule", "happening at the planned time; not early or late",
+                 "予定通りに",
+                 useCases: ["電車や仕事の進み具合を話すとき", "計画が順調なとき"],
+                 examples: [
+                    ("Is the train running on schedule today?", "今日、電車は予定通り動いてる？"),
+                    ("Don't worry, the project's still on schedule.", "心配しないで、プロジェクトはまだ予定通りだよ。")
+                 ], ipa: "/ɒn ˈʃedjuːl/"),
+            make("where have you been?", "1) asking where someone was 2) saying you haven't seen someone for a long time",
+                 "どこに行ってたの？・久しぶり！",
+                 useCases: ["久しぶりに会った友達に", "帰りが遅かった人に"],
+                 examples: [
+                    ("Where have you been? I haven't seen you for ages!", "どこ行ってたの？すごく久しぶりじゃない！"),
+                    ("Where have you been? Dinner's gone cold.", "どこ行ってたの？夕飯冷めちゃったよ。")
+                 ], ipa: "/weər əv ju ˈbiːn/"),
+            make("best wishes", "a friendly way to end a message or send good wishes to someone",
+                 "よろしく・幸運を祈って（手紙やメッセージの結び）",
+                 useCases: ["メールやカードの結びに", "誰かの成功を祈るとき"],
+                 examples: [
+                    ("Give my best wishes to your parents.", "ご両親によろしく伝えてね。"),
+                    ("Best wishes for the new year, and see you soon!", "良い新年を、またすぐ会おうね！")
+                 ], ipa: "/ˌbest ˈwɪʃɪz/"),
+            make("for goodness' sake", "used to show you are annoyed or impatient",
+                 "まったくもう・いい加減にして",
+                 useCases: ["イライラしたとき", "相手を急かすとき"],
+                 examples: [
+                    ("For goodness' sake, just tell me what happened!", "もう、何があったのか早く教えてよ！"),
+                    ("Oh, for goodness' sake — I've locked myself out again.", "あーもう、また鍵を閉めたまま外に出ちゃった。")
+                 ], ipa: "/fə ˈɡʊdnɪs ˌseɪk/"),
+            make("what was I thinking?", "used when you realise you did something silly",
+                 "何考えてたんだろう・どうかしてた",
+                 useCases: ["自分の失敗を振り返るとき", "後悔している買い物や決断について"],
+                 examples: [
+                    ("I bought shoes two sizes too small. What was I thinking?", "2サイズも小さい靴を買っちゃった。何考えてたんだろう。"),
+                    ("Running a marathon with no training — what was I thinking?", "練習なしでマラソンなんて、どうかしてたよ。")
+                 ], ipa: "/ˌwɒt wəz aɪ ˈθɪŋkɪŋ/"),
+            make("come on in", "a warm, friendly way to invite someone inside",
+                 "どうぞ入って",
+                 useCases: ["家に客を迎えるとき", "部屋に人を招き入れるとき"],
+                 examples: [
+                    ("Come on in — make yourself comfortable.", "どうぞ入って、くつろいでね。"),
+                    ("The door's open, come on in!", "ドア開いてるから、入っておいで！")
+                 ], ipa: "/ˌkʌm ɒn ˈɪn/"),
+            make("stay the night", "to sleep at someone's home until the next morning",
+                 "泊まっていく・一晩泊まる",
+                 useCases: ["遅くなった友達に泊まるよう勧めるとき", "誰かの家に泊まる話をするとき"],
+                 examples: [
+                    ("It's really late — why don't you stay the night?", "もう遅いし、泊まっていきなよ。"),
+                    ("I stayed the night at Anna's after the party.", "パーティーのあと、アンナの家に泊まった。")
+                 ], ipa: "/ˌsteɪ ðə ˈnaɪt/"),
+            make("how long will you be?", "asking how much time someone needs before they are ready or arrive",
+                 "あとどれくらいかかる？",
+                 useCases: ["待ち合わせで", "相手の準備を待っているとき"],
+                 examples: [
+                    ("How long will you be? The taxi's outside.", "あとどれくらい？タクシーもう外に来てるよ。"),
+                    ("I'm just at the shop — how long will you be?", "今お店にいるんだけど、そっちはあとどのくらい？")
+                 ], ipa: "/ˌhaʊ ˈlɒŋ wɪl ju ˌbiː/"),
+            make("a second helping", "another portion of food after you have finished the first",
+                 "おかわり",
+                 useCases: ["食事をおかわりするとき", "料理を褒めるとき"],
+                 examples: [
+                    ("This is delicious — can I have a second helping?", "これすごく美味しい、おかわりしてもいい？"),
+                    ("There's plenty left if anyone wants a second helping.", "おかわりしたい人がいたら、まだたくさんあるよ。")
+                 ], ipa: "/ə ˌsekənd ˈhelpɪŋ/"),
+            make("bizarre", "very strange or unusual",
+                 "すごく変な・奇妙な",
+                 useCases: ["変わった出来事を話すとき", "理解できないことに驚いたとき"],
+                 examples: [
+                    ("I had the most bizarre dream last night.", "昨日の夜、めちゃくちゃ変な夢を見た。"),
+                    ("It's a bit bizarre that nobody told us.", "誰も教えてくれなかったなんて、ちょっと変だよね。")
+                 ], ipa: "/bɪˈzɑː/"),
         ]
     }
     private static var britishColloquial220: [Word] {
