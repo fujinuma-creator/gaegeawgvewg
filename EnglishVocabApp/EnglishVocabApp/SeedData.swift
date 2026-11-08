@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240
         ]
         return groups.flatMap { $0 }
     }
@@ -41580,6 +41580,115 @@ enum SeedData {
                     ("I had the most bizarre dream last night.", "昨日の夜、めちゃくちゃ変な夢を見た。"),
                     ("It's a bit bizarre that nobody told us.", "誰も教えてくれなかったなんて、ちょっと変だよね。")
                  ], ipa: "/bɪˈzɑː/"),
+        ]
+    }
+    private static var britishColloquial240: [Word] {
+        [
+            make("public transport", "buses, trains, and other shared ways of travelling that anyone can use",
+                 "公共交通機関",
+                 useCases: ["通勤・移動手段を話すとき", "街の便利さを話すとき"],
+                 examples: [
+                    ("I don't drive — I just use public transport.", "運転しないんだ。公共交通機関を使ってるよ。"),
+                    ("The public transport here is brilliant.", "ここの公共交通機関はすごく便利だよ。")
+                 ], ipa: "/ˌpʌblɪk ˈtrænspɔːt/"),
+            make("window seat", "a seat next to the window on a plane, train, or bus",
+                 "窓側の席",
+                 useCases: ["飛行機や電車の席を選ぶとき", "チェックインのとき"],
+                 examples: [
+                    ("Could I have a window seat, please?", "窓側の席をお願いできますか？"),
+                    ("I always go for the window seat so I can sleep.", "寝られるから、いつも窓側の席にするんだ。")
+                 ], ipa: "/ˈwɪndəʊ ˌsiːt/"),
+            make("booked up", "having no free time or places left because everything has been reserved",
+                 "予約でいっぱい・予定が埋まっている",
+                 useCases: ["レストランやホテルが満席のとき", "自分の予定が詰まっているとき"],
+                 examples: [
+                    ("Sorry, we're booked up for tonight.", "申し訳ありません、今夜は予約でいっぱいです。"),
+                    ("I'm booked up all week, but Saturday's free.", "今週はずっと予定が埋まってるけど、土曜なら空いてるよ。")
+                 ], ipa: "/ˌbʊkt ˈʌp/"),
+            make("leave a tip", "to give extra money to a waiter, driver, etc. for good service",
+                 "チップを置く・チップを渡す",
+                 useCases: ["レストランで会計するとき", "チップの習慣を話すとき"],
+                 examples: [
+                    ("Should we leave a tip? The service was lovely.", "チップ置いていく？サービスすごく良かったし。"),
+                    ("In the UK, people usually leave a tip of about ten percent.", "イギリスでは、だいたい10％くらいチップを置くのが普通だよ。")
+                 ], ipa: "/ˌliːv ə ˈtɪp/"),
+            make("the locals", "the people who live in a particular place",
+                 "地元の人たち",
+                 useCases: ["旅行先でおすすめを聞くとき", "その土地の雰囲気を話すとき"],
+                 examples: [
+                    ("Let's eat where the locals eat.", "地元の人が食べてるところで食べようよ。"),
+                    ("The locals were really friendly.", "地元の人たちは本当に親切だったよ。")
+                 ], ipa: "/ðə ˈləʊklz/"),
+            make("a short walk", "a distance that is quick and easy to walk",
+                 "歩いてすぐ（の距離）・ちょっとした散歩",
+                 useCases: ["道案内や場所の説明をするとき", "散歩に誘うとき"],
+                 examples: [
+                    ("The station's only a short walk from here.", "駅はここから歩いてすぐだよ。"),
+                    ("Fancy a short walk after lunch?", "お昼のあと、ちょっと散歩しない？")
+                 ], ipa: "/ə ˌʃɔːt ˈwɔːk/"),
+            make("multitask", "to do several things at the same time",
+                 "同時に複数のことをする・ながら作業する",
+                 useCases: ["忙しさを話すとき", "自分の得意・不得意を話すとき"],
+                 examples: [
+                    ("I'm rubbish at multitasking — one thing at a time.", "同時に色々やるの苦手なんだ。一つずつやるよ。"),
+                    ("She's cooking and on the phone — she can really multitask.", "料理しながら電話してる。彼女、本当に器用だね。")
+                 ], ipa: "/ˌmʌltiˈtɑːsk/"),
+            make("connecting flight", "a second flight that you take to continue a journey",
+                 "乗り継ぎ便",
+                 useCases: ["旅行の行程を話すとき", "空港で乗り継ぐとき"],
+                 examples: [
+                    ("I've got a connecting flight in Amsterdam.", "アムステルダムで乗り継ぎ便があるんだ。"),
+                    ("We nearly missed our connecting flight.", "危うく乗り継ぎ便に乗り遅れるところだった。")
+                 ], ipa: "/kəˌnektɪŋ ˈflaɪt/"),
+            make("catch up on", "to do something you haven't had time to do, such as work or sleep",
+                 "（たまった〜を）取り戻す・片付ける",
+                 useCases: ["週末の予定を話すとき", "寝不足や仕事の遅れを取り戻すとき"],
+                 examples: [
+                    ("I'm just going to catch up on some sleep this weekend.", "今週末は寝不足を取り戻すつもり。"),
+                    ("I need to catch up on my emails.", "たまったメールを片付けなきゃ。")
+                 ], ipa: "/ˌkætʃ ˈʌp ɒn/"),
+            make("as I said", "used to repeat or refer back to something you mentioned before",
+                 "さっきも言ったけど・前にも言ったように",
+                 useCases: ["話を繰り返すとき", "自分の意見を念押しするとき"],
+                 examples: [
+                    ("As I said, I'm happy either way.", "さっきも言ったけど、どっちでもいいよ。"),
+                    ("As I said on the phone, I'll be a bit late.", "電話でも言ったけど、ちょっと遅れるね。")
+                 ], ipa: "/əz aɪ ˈsed/"),
+            make("have a nice day", "a friendly way to say goodbye to someone",
+                 "良い一日を",
+                 useCases: ["お店で別れ際に", "朝、誰かを見送るとき"],
+                 examples: [
+                    ("Thanks for your help — have a nice day!", "助かりました。良い一日を！"),
+                    ("Have a nice day at work, see you tonight.", "仕事頑張ってね、また夜に。")
+                 ], ipa: "/ˌhæv ə ˌnaɪs ˈdeɪ/"),
+            make("I'm driving", "used to say you won't drink alcohol because you have to drive",
+                 "車だから（お酒はやめとく）",
+                 useCases: ["お酒を勧められて断るとき", "飲み会で"],
+                 examples: [
+                    ("Not for me, thanks — I'm driving.", "僕はいいや、ありがとう。車だから。"),
+                    ("I'll just have a lemonade, I'm driving tonight.", "レモネードにしとく。今夜は車なんだ。")
+                 ], ipa: "/aɪm ˈdraɪvɪŋ/"),
+            make("medium rare", "(of meat, especially steak) cooked so that the inside is still pink",
+                 "ミディアムレア",
+                 useCases: ["ステーキを注文するとき", "焼き加減を聞かれたとき"],
+                 examples: [
+                    ("How would you like your steak? — Medium rare, please.", "ステーキの焼き加減は？ーミディアムレアでお願いします。"),
+                    ("I prefer my burger medium rare.", "ハンバーガーはミディアムレアが好きなんだ。")
+                 ], ipa: "/ˌmiːdiəm ˈreə/"),
+            make("make it two", "used when ordering to say you want the same thing as someone else",
+                 "それを2つで・私も同じので",
+                 useCases: ["カフェやバーで注文するとき", "友達と同じものを頼むとき"],
+                 examples: [
+                    ("A flat white, please. — Actually, make it two.", "フラットホワイトを一つ。ーやっぱり二つで。"),
+                    ("I'll have the fish. — Make it two!", "魚にします。ー私も同じので！")
+                 ], ipa: "/ˌmeɪk ɪt ˈtuː/"),
+            make("do a food shop", "(British) to go and buy food and groceries for the house",
+                 "食料品の買い出しをする",
+                 useCases: ["週末の予定を話すとき", "冷蔵庫が空のとき"],
+                 examples: [
+                    ("I need to do a food shop — the fridge is empty.", "買い出し行かなきゃ。冷蔵庫空っぽなんだ。"),
+                    ("We usually do a big food shop on Sundays.", "うちはいつも日曜にまとめて買い出しするんだ。")
+                 ], ipa: "/ˌduː ə ˈfuːd ʃɒp/"),
         ]
     }
     private static var britishColloquial220: [Word] {
