@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247
         ]
         return groups.flatMap { $0 }
     }
@@ -42016,6 +42016,115 @@ enum SeedData {
                     ("Sorry, I spilt my drink. — Don't worry, it happens.", "ごめん、飲み物こぼしちゃった。—大丈夫、よくあることだよ。"),
                     ("I missed my stop again. Oh well, it happens.", "また乗り過ごしちゃった。まあ、よくあるよね。")
                  ], ipa: "/ɪt ˈhæpənz/"),
+        ]
+    }
+    private static var britishColloquial247: [Word] {
+        [
+            make("the lion's share", "the largest part of something",
+                 "大部分・いちばん大きな取り分",
+                 useCases: ["仕事や費用の大半を誰かが担ったとき", "時間やお金の大部分を占めるものを言うとき"],
+                 examples: [
+                    ("She did the lion's share of the work.", "仕事の大部分は彼女がやってくれたよ。"),
+                    ("Rent takes the lion's share of my salary.", "給料のほとんどは家賃に消えるんだ。")
+                 ], ipa: "/ðə ˈlaɪənz ʃeə/"),
+            make("not in a million years", "used to say that something will definitely never happen",
+                 "絶対にありえない・死んでもしない",
+                 useCases: ["強く否定するとき", "まったく予想していなかったことを言うとき"],
+                 examples: [
+                    ("Would I go bungee jumping? Not in a million years!", "バンジージャンプ？絶対やらないよ！"),
+                    ("I'd never have guessed it in a million years.", "そんなの、どう考えても予想できなかったよ。")
+                 ], ipa: "/nɒt ɪn ə ˈmɪljən jɪəz/"),
+            make("the bare minimum", "the smallest amount that is necessary",
+                 "必要最低限",
+                 useCases: ["やる気がなく最低限しかしないとき", "荷物や出費を最小限にするとき"],
+                 examples: [
+                    ("He only ever does the bare minimum at work.", "あいつは仕事でいつも最低限のことしかしない。"),
+                    ("I'm just packing the bare minimum for the weekend.", "週末用に必要最低限だけ詰めてるよ。")
+                 ], ipa: "/ðə beə ˈmɪnɪməm/"),
+            make("on the cheap", "for very little money, often by spending less than usual",
+                 "安く・格安で・お金をかけずに",
+                 useCases: ["節約して旅行や買い物をするとき", "安上がりな方法を話すとき"],
+                 examples: [
+                    ("We did Italy on the cheap — hostels and pizza every night.", "イタリアは格安で回ったよ。毎晩ホステルとピザ。"),
+                    ("You can furnish a flat on the cheap if you buy second-hand.", "中古で買えば、部屋の家具も安くそろえられるよ。")
+                 ], ipa: "/ɒn ðə tʃiːp/"),
+            make("be keen to", "to really want to do something",
+                 "ぜひ～したい・～したがっている",
+                 useCases: ["やる気や希望を伝えるとき", "相手が乗り気かどうか話すとき"],
+                 examples: [
+                    ("I'm keen to try that new Thai place.", "あの新しいタイ料理の店、ぜひ行ってみたいんだ。"),
+                    ("He wasn't very keen to come, to be honest.", "正直、彼はあんまり来たがってなかったよ。")
+                 ], ipa: "/biː kiːn tuː/"),
+            make("fat chance", "used to say that something is very unlikely to happen",
+                 "まずありえない・望み薄だね",
+                 useCases: ["期待できないことを皮肉っぽく言うとき", "ありえない話を一蹴するとき"],
+                 examples: [
+                    ("He'll pay me back tomorrow? Fat chance!", "明日返してくれるって？まずないね！"),
+                    ("Fat chance of getting a table on a Saturday night.", "土曜の夜に席が取れるなんて望み薄だよ。")
+                 ], ipa: "/fæt tʃɑːns/"),
+            make("hard going", "difficult, tiring or boring to do or deal with",
+                 "骨が折れる・しんどい・退屈で進まない",
+                 useCases: ["読みにくい本や退屈な会議について", "大変な作業や道のりについて"],
+                 examples: [
+                    ("The book's good, but the first half is hard going.", "その本、いいんだけど前半は読み進めるのがしんどいんだ。"),
+                    ("The meeting was really hard going today.", "今日の会議、ほんとにきつかった。")
+                 ], ipa: "/hɑːd ˈɡəʊɪŋ/"),
+            make("that rings true", "used to say that something seems accurate or believable",
+                 "確かにそうだね・本当っぽいね",
+                 useCases: ["相手の話に納得したとき", "話の信憑性について言うとき"],
+                 examples: [
+                    ("What you said about stress really rings true for me.", "ストレスについての話、すごく思い当たるよ。"),
+                    ("His excuse didn't quite ring true.", "彼の言い訳、なんだか嘘っぽかった。")
+                 ], ipa: "/ðæt rɪŋz truː/"),
+            make("lose your touch", "to lose a skill or ability you used to have",
+                 "腕が鈍る・勘が鈍る",
+                 useCases: ["久しぶりで上手くできなかったとき", "冗談っぽく自分の失敗を言うとき"],
+                 examples: [
+                    ("I burnt the pancakes — I must be losing my touch.", "パンケーキ焦がしちゃった。腕が鈍ったかな。"),
+                    ("Don't worry, you haven't lost your touch.", "大丈夫、腕は全然落ちてないよ。")
+                 ], ipa: "/luːz jɔː tʌtʃ/"),
+            make("elbow room", "enough space to move around comfortably; freedom to do things your way",
+                 "ゆとりのあるスペース・自由にやれる余地",
+                 useCases: ["狭い場所について話すとき", "仕事で裁量がほしいとき"],
+                 examples: [
+                    ("Can we move to a bigger table? There's no elbow room here.", "もっと大きいテーブルに移らない？ここ窮屈すぎる。"),
+                    ("My boss gives me plenty of elbow room.", "上司はかなり自由にやらせてくれるんだ。")
+                 ], ipa: "/ˈelbəʊ ruːm/"),
+            make("be tight on", "to not have much of something, especially time or money",
+                 "（時間やお金が）カツカツ・余裕がない",
+                 useCases: ["時間がないと伝えるとき", "金欠で断るとき"],
+                 examples: [
+                    ("Sorry, I'm a bit tight on time today.", "ごめん、今日はちょっと時間に余裕がないんだ。"),
+                    ("We're tight on money this month, so let's eat in.", "今月はお金がカツカツだから、家で食べよう。")
+                 ], ipa: "/biː taɪt ɒn/"),
+            make("be over it", "to no longer be upset about something; or to be fed up with something",
+                 "もう気にしてない・もううんざり",
+                 useCases: ["過去の失恋やトラブルを吹っ切れたとき", "同じことにうんざりしているとき"],
+                 examples: [
+                    ("That was ages ago — I'm totally over it now.", "それ、だいぶ前の話だよ。もう完全に吹っ切れてる。"),
+                    ("Another rainy day? I'm so over it.", "また雨？もううんざり。")
+                 ], ipa: "/biː ˈəʊvər ɪt/"),
+            make("the lads", "a group of male friends",
+                 "（男の）仲間たち・いつものメンバー",
+                 useCases: ["男友達グループについて話すとき", "飲みや遊びの予定を言うとき"],
+                 examples: [
+                    ("I'm going out with the lads on Friday.", "金曜はいつもの仲間と飲みに行くんだ。"),
+                    ("Alright, lads? Who wants a drink?", "よう、みんな。何か飲む人？")
+                 ], ipa: "/ðə lædz/"),
+            make("make it up as you go along", "to decide what to do or say as things happen, without a plan",
+                 "その場その場でなんとかする・行き当たりばったりでやる",
+                 useCases: ["計画なしで進めているとき", "初めてのことを手探りでやっているとき"],
+                 examples: [
+                    ("Honestly, I've got no plan — I'm making it up as I go along.", "正直ノープランだよ。その場でなんとかしてる。"),
+                    ("Nobody knows how to be a parent. We all make it up as we go along.", "親のやり方なんて誰も知らないよ。みんな手探りなんだ。")
+                 ], ipa: "/meɪk ɪt ʌp əz juː ɡəʊ əˈlɒŋ/"),
+            make("the whole thing", "all of a situation, event or object",
+                 "全部・一部始終・そのこと全体",
+                 useCases: ["出来事全体について感想を言うとき", "まるごと全部を指すとき"],
+                 examples: [
+                    ("The whole thing was a bit of a disaster.", "全体的にちょっと散々だったよ。"),
+                    ("Just forget the whole thing, it doesn't matter.", "もう全部忘れて。大したことじゃないから。")
+                 ], ipa: "/ðə həʊl θɪŋ/"),
         ]
     }
     private static var britishColloquial245: [Word] {
