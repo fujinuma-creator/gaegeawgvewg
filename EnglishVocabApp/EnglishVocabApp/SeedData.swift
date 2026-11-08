@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242
         ]
         return groups.flatMap { $0 }
     }
@@ -41580,6 +41580,115 @@ enum SeedData {
                     ("I had the most bizarre dream last night.", "昨日の夜、めちゃくちゃ変な夢を見た。"),
                     ("It's a bit bizarre that nobody told us.", "誰も教えてくれなかったなんて、ちょっと変だよね。")
                  ], ipa: "/bɪˈzɑː/"),
+        ]
+    }
+    private static var britishColloquial242: [Word] {
+        [
+            make("plus one", "a person you bring with you to a party or event as your guest",
+                 "（招待客の）同伴者・連れ",
+                 useCases: ["結婚式やパーティーの招待について話すとき", "誰かを連れて行っていいか聞くとき"],
+                 examples: [
+                    ("Am I allowed to bring a plus one to the wedding?", "結婚式って、誰か一人連れて行ってもいいの？"),
+                    ("She's coming as my plus one.", "彼女は僕の同伴者として来るんだ。")
+                 ], ipa: "/ˌplʌs ˈwʌn/"),
+            make("lukewarm", "only slightly warm, when it should be hot; also not very enthusiastic",
+                 "ぬるい・（反応が）いまいち乗り気でない",
+                 useCases: ["飲み物や料理がぬるいとき", "反応が微妙だったとき"],
+                 examples: [
+                    ("My coffee's gone lukewarm — I forgot about it.", "コーヒー、忘れてたらぬるくなっちゃった。"),
+                    ("The reaction to my idea was a bit lukewarm.", "僕のアイデアへの反応はちょっといまいちだったね。")
+                 ], ipa: "/ˌluːkˈwɔːm/"),
+            make("neighbourhood", "the area around where you live, or a particular part of a town",
+                 "近所・界隈・地域",
+                 useCases: ["住んでいる場所について話すとき", "おすすめのエリアを聞くとき"],
+                 examples: [
+                    ("It's a really friendly neighbourhood.", "ほんとに感じのいい地域だよ。"),
+                    ("Are there any good cafés in your neighbourhood?", "君の家の近所に、いいカフェある？")
+                 ], ipa: "/ˈneɪbəhʊd/"),
+            make("upgrade", "to get something better, newer, or more expensive than you had before",
+                 "アップグレード（する）・格上げ（される）",
+                 useCases: ["スマホや部屋を新しくするとき", "飛行機やホテルで格上げされたとき"],
+                 examples: [
+                    ("We got upgraded to a suite for free!", "タダでスイートに格上げしてもらえたんだ！"),
+                    ("I really need to upgrade my phone.", "そろそろスマホを買い替えないとな。")
+                 ], ipa: "/ʌpˈɡreɪd/"),
+            make("queasy", "feeling slightly sick, as if you might vomit",
+                 "（ちょっと）吐き気がする・気持ち悪い",
+                 useCases: ["乗り物酔いしたとき", "食べ過ぎや体調不良を伝えるとき"],
+                 examples: [
+                    ("I always feel a bit queasy on boats.", "船に乗るといつもちょっと気持ち悪くなるんだ。"),
+                    ("Just thinking about it makes me queasy.", "考えただけで気分が悪くなるよ。")
+                 ], ipa: "/ˈkwiːzi/"),
+            make("downstairs", "on or to a lower floor of a building",
+                 "下の階（で・へ）・階下",
+                 useCases: ["家の中で居場所を伝えるとき", "店や建物の場所を案内するとき"],
+                 examples: [
+                    ("I'll be downstairs if you need me.", "何かあったら下にいるからね。"),
+                    ("The toilets are downstairs on the left.", "トイレは下の階の左側です。")
+                 ], ipa: "/ˌdaʊnˈsteəz/"),
+            make("hassle-free", "easy and without any problems or annoying complications",
+                 "面倒のない・手間いらずの",
+                 useCases: ["サービスや手続きの楽さを話すとき", "おすすめを伝えるとき"],
+                 examples: [
+                    ("Booking online was completely hassle-free.", "ネット予約はまったく面倒がなかったよ。"),
+                    ("I just want a hassle-free holiday this year.", "今年はとにかく面倒のない休暇にしたいんだ。")
+                 ], ipa: "/ˌhæsl ˈfriː/"),
+            make("fast asleep", "sleeping very deeply",
+                 "ぐっすり眠っている",
+                 useCases: ["子どもや家族が寝ている様子を話すとき", "すぐ寝てしまったことを話すとき"],
+                 examples: [
+                    ("The kids are fast asleep, finally.", "子どもたち、やっとぐっすり寝たよ。"),
+                    ("I was fast asleep by ten last night.", "昨日の夜は10時にはもうぐっすり寝てたよ。")
+                 ], ipa: "/ˌfɑːst əˈsliːp/"),
+            make("downpour", "a sudden, very heavy fall of rain",
+                 "どしゃ降り・豪雨",
+                 useCases: ["急な大雨について話すとき", "天気の話題で"],
+                 examples: [
+                    ("We got caught in a downpour on the way home.", "帰り道でどしゃ降りにあっちゃった。"),
+                    ("Let's wait in here until the downpour stops.", "どしゃ降りがやむまで、ここで待とうよ。")
+                 ], ipa: "/ˈdaʊnpɔː/"),
+            make("drenched", "completely wet",
+                 "びしょ濡れの・ずぶ濡れの",
+                 useCases: ["雨に濡れたとき", "汗だくのとき"],
+                 examples: [
+                    ("I forgot my umbrella and got absolutely drenched.", "傘を忘れて、完全にびしょ濡れになったよ。"),
+                    ("You're drenched! Come in and dry off.", "ずぶ濡れじゃない！入って乾かしなよ。")
+                 ], ipa: "/drentʃt/"),
+            make("part-time", "working or studying for only some of the day or week",
+                 "パートタイムの・非常勤の",
+                 useCases: ["仕事の働き方を話すとき", "学生のバイトについて話すとき"],
+                 examples: [
+                    ("I work part-time in a bookshop at weekends.", "週末は本屋でパートで働いてるんだ。"),
+                    ("She went part-time after having the baby.", "彼女は出産後、パートタイムに切り替えたんだ。")
+                 ], ipa: "/ˌpɑːt ˈtaɪm/"),
+            make("self-employed", "working for yourself instead of for a company",
+                 "自営業の・フリーで働いている",
+                 useCases: ["仕事について聞かれたとき", "働き方の話をするとき"],
+                 examples: [
+                    ("I've been self-employed for about three years now.", "自営でやって、もう3年くらいになるよ。"),
+                    ("Being self-employed means no paid holidays, though.", "でも自営業だと有給休暇はないんだよね。")
+                 ], ipa: "/ˌself ɪmˈplɔɪd/"),
+            make("freezer", "the very cold part of a fridge, or a separate machine, for keeping food frozen",
+                 "冷凍庫",
+                 useCases: ["食べ物の保存について話すとき", "家で料理をするとき"],
+                 examples: [
+                    ("There's some ice cream in the freezer.", "冷凍庫にアイスがあるよ。"),
+                    ("I always cook extra and stick it in the freezer.", "いつも多めに作って冷凍庫に入れておくんだ。")
+                 ], ipa: "/ˈfriːzə/"),
+            make("sunscreen", "cream you put on your skin to protect it from the sun",
+                 "日焼け止め",
+                 useCases: ["ビーチや外出の準備をするとき", "日焼けした話をするとき"],
+                 examples: [
+                    ("Don't forget to put sunscreen on.", "日焼け止め塗るの忘れないでね。"),
+                    ("I didn't wear any sunscreen and now I'm bright red.", "日焼け止め塗らなかったから、真っ赤になっちゃった。")
+                 ], ipa: "/ˈsʌnskriːn/"),
+            make("refreshing", "pleasantly new, different, or making you feel cooler and less tired",
+                 "爽やかな・すっきりする・新鮮な",
+                 useCases: ["冷たい飲み物や水泳の感想を言うとき", "意外に良かったことを褒めるとき"],
+                 examples: [
+                    ("A cold drink is so refreshing on a day like this.", "こんな日の冷たい飲み物って、ほんとに生き返るね。"),
+                    ("It's refreshing to meet someone so honest.", "こんなに正直な人に会えるのって新鮮だよ。")
+                 ], ipa: "/rɪˈfreʃɪŋ/"),
         ]
     }
     private static var britishColloquial241: [Word] {
