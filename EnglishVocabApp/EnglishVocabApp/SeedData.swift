@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236
         ]
         return groups.flatMap { $0 }
     }
@@ -41144,6 +41144,115 @@ enum SeedData {
                     ("The kids wanted to stay up till midnight, but I put my foot down.", "子どもたちは夜中まで起きてたがったけど、ビシッとダメって言ったよ。"),
                     ("We're late — put your foot down!", "遅れてるよ、アクセル踏んで！")
                  ], ipa: "/ˌpʊt jə ˈfʊt ˌdaʊn/"),
+        ]
+    }
+    private static var britishColloquial236: [Word] {
+        [
+            make("make it quick", "used to tell someone to do something fast or keep it short because there is not much time",
+                 "手短にね・急いでね",
+                 useCases: ["時間がないときに話を短くしてほしいとき", "ちょっとした用事を急いで済ませてほしいとき"],
+                 examples: [
+                    ("Sure, I've got two minutes — just make it quick.", "いいよ、2分だけあるから手短にね。"),
+                    ("You can pop into the shop, but make it quick — we're parked on double yellows.", "お店寄ってもいいけど急いでね。駐車禁止のとこに停めてるから。")
+                 ], ipa: "/ˌmeɪk ɪt ˈkwɪk/"),
+            make("mind out", "(British) used to warn someone to be careful or to move out of the way",
+                 "気をつけて！・どいて！",
+                 useCases: ["危ないものが近くにあるとき", "人に道を空けてほしいとき"],
+                 examples: [
+                    ("Mind out — the floor's wet!", "気をつけて、床が濡れてるよ！"),
+                    ("Mind out, I'm coming through with hot drinks.", "ちょっとどいて、熱い飲み物持って通るよ。")
+                 ], ipa: "/ˌmaɪnd ˈaʊt/"),
+            make("a tight squeeze", "a situation where there is only just enough space or time",
+                 "ぎゅうぎゅう・ギリギリ",
+                 useCases: ["車や部屋に人が多いとき", "時間に余裕がないとき"],
+                 examples: [
+                    ("Five of us in the back seat was a tight squeeze.", "後部座席に5人はぎゅうぎゅうだったよ。"),
+                    ("We can fit it in before lunch, but it'll be a tight squeeze.", "昼前に入れられるけど、かなりギリギリだね。")
+                 ], ipa: "/ə ˌtaɪt ˈskwiːz/"),
+            make("pick at your food", "to eat only small amounts of food slowly, because you are not hungry or not well",
+                 "食べ物をつつく・少しずつしか食べない",
+                 useCases: ["食欲がない人を気遣うとき", "子どもの食事について話すとき"],
+                 examples: [
+                    ("You're just picking at your food — are you feeling okay?", "さっきから料理つついてるだけだけど、大丈夫？"),
+                    ("She picked at her dinner and went straight to bed.", "彼女は夕食を少し口にしただけで、すぐ寝ちゃった。")
+                 ], ipa: "/ˌpɪk ət jɔː ˈfuːd/"),
+            make("a quick drink", "a short visit to a pub or bar for one drink",
+                 "軽く一杯",
+                 useCases: ["仕事帰りに誘うとき", "長居しないと伝えるとき"],
+                 examples: [
+                    ("Fancy a quick drink after work?", "仕事のあと軽く一杯どう？"),
+                    ("I'll come for a quick drink, but I can't stay late.", "軽く一杯なら行くけど、遅くまではいられないんだ。")
+                 ], ipa: "/ə ˌkwɪk ˈdrɪŋk/"),
+            make("I gather", "used to say that you believe something is true because of what you have heard",
+                 "〜らしいね・〜と聞いてるけど",
+                 useCases: ["人から聞いた情報を確認するとき", "話題を切り出すとき"],
+                 examples: [
+                    ("I gather you're moving to Berlin?", "ベルリンに引っ越すんだってね？"),
+                    ("From what I gather, the meeting didn't go well.", "聞いた感じだと、会議はうまくいかなかったみたいだね。")
+                 ], ipa: "/aɪ ˈɡæðə/"),
+            make("I clean forgot", "(informal) I completely forgot",
+                 "すっかり忘れてた",
+                 useCases: ["約束や頼まれごとを忘れたとき", "うっかりを謝るとき"],
+                 examples: [
+                    ("Oh no, your birthday! I clean forgot — I'm so sorry.", "しまった、誕生日だ！すっかり忘れてた、本当にごめん。"),
+                    ("I meant to call you back, but I clean forgot.", "折り返すつもりだったのに、完全に忘れてた。")
+                 ], ipa: "/aɪ ˌkliːn fəˈɡɒt/"),
+            make("something's come up", "something unexpected has happened that needs my attention",
+                 "急用ができた",
+                 useCases: ["予定をキャンセルするとき", "急に席を外すとき"],
+                 examples: [
+                    ("Sorry, something's come up — can we do Friday instead?", "ごめん、急用ができちゃって。金曜に変えてもいい？"),
+                    ("I have to go, something's come up at home.", "もう行かなきゃ。家でちょっと急用ができたんだ。")
+                 ], ipa: "/ˌsʌmθɪŋz kʌm ˈʌp/"),
+            make("be brought up", "to be raised and cared for as a child in a particular place or way",
+                 "育つ・育てられる",
+                 useCases: ["出身や育ちを話すとき", "価値観の背景を説明するとき"],
+                 examples: [
+                    ("I was born in London but brought up in Manchester.", "ロンドン生まれだけど、マンチェスター育ちなんだ。"),
+                    ("We were brought up to always say thank you.", "うちはいつもありがとうを言うように育てられたんだ。")
+                 ], ipa: "/biː ˌbrɔːt ˈʌp/"),
+            make("out of character", "not typical of the way someone usually behaves",
+                 "らしくない・普段の〜とは違う",
+                 useCases: ["友人の様子がいつもと違うとき", "意外な行動について話すとき"],
+                 examples: [
+                    ("It's really out of character for him to be late.", "彼が遅刻するなんて本当にらしくないね。"),
+                    ("She snapped at me, which is totally out of character.", "彼女に怒鳴られたんだけど、普段の彼女らしくないんだよね。")
+                 ], ipa: "/ˌaʊt əv ˈkærəktə/"),
+            make("have a sit-down", "(British, informal) to sit and rest for a short time",
+                 "ちょっと座って休む",
+                 useCases: ["歩き疲れたとき", "人に休憩を勧めるとき"],
+                 examples: [
+                    ("My feet are killing me — let's have a sit-down.", "足が痛くて。ちょっと座って休もうよ。"),
+                    ("You look shattered. Have a sit-down and I'll make tea.", "くたくたって顔してるよ。座ってて、お茶入れるから。")
+                 ], ipa: "/ˌhæv ə ˈsɪt daʊn/"),
+            make("perk up", "to become or make someone more cheerful or energetic",
+                 "元気になる・元気づける",
+                 useCases: ["人が元気を取り戻したとき", "コーヒーなどで目が覚めたとき"],
+                 examples: [
+                    ("She perked up as soon as she heard the good news.", "いい知らせを聞いた途端、彼女は元気になった。"),
+                    ("A strong coffee will perk you up.", "濃いコーヒー飲めばシャキッとするよ。")
+                 ], ipa: "/ˌpɜːk ˈʌp/"),
+            make("it's a breeze", "(informal) it is very easy to do",
+                 "楽勝だよ・すごく簡単",
+                 useCases: ["簡単だと安心させるとき", "慣れたことについて話すとき"],
+                 examples: [
+                    ("Don't worry about the form — it's a breeze.", "その書類は心配いらないよ、楽勝だから。"),
+                    ("Once you get used to it, driving here is a breeze.", "慣れれば、ここでの運転なんて簡単だよ。")
+                 ], ipa: "/ɪts ə ˈbriːz/"),
+            make("get the door", "to open the door for someone who has knocked or rung, or to hold it open",
+                 "ドアに出る・ドアを開けてあげる",
+                 useCases: ["来客があったとき", "荷物で手がふさがっている人を手伝うとき"],
+                 examples: [
+                    ("Can you get the door? My hands are full.", "ドア開けてくれる？手がふさがってて。"),
+                    ("That'll be the pizza — I'll get the door.", "ピザが来たんだね、僕が出るよ。")
+                 ], ipa: "/ˌɡet ðə ˈdɔː/"),
+            make("point me in the right direction", "to give someone basic help or advice so they know where to go or how to start",
+                 "（行き方や取っかかりを）教えてもらう",
+                 useCases: ["道に迷ったとき", "何から始めればいいか分からないとき"],
+                 examples: [
+                    ("Excuse me, could you point me in the right direction for the station?", "すみません、駅の方向を教えてもらえますか？"),
+                    ("I don't need the full answer — just point me in the right direction.", "答えは全部じゃなくていいから、取っかかりだけ教えて。")
+                 ], ipa: "/ˌpɔɪnt mi ɪn ðə ˌraɪt dəˈrekʃn/"),
         ]
     }
     private static var britishColloquial220: [Word] {
