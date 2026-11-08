@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248
         ]
         return groups.flatMap { $0 }
     }
@@ -42125,6 +42125,115 @@ enum SeedData {
                     ("The whole thing was a bit of a disaster.", "全体的にちょっと散々だったよ。"),
                     ("Just forget the whole thing, it doesn't matter.", "もう全部忘れて。大したことじゃないから。")
                  ], ipa: "/ðə həʊl θɪŋ/"),
+        ]
+    }
+    private static var britishColloquial248: [Word] {
+        [
+            make("hit the ground running", "to start something new quickly and successfully, without needing time to prepare",
+                 "初日からすぐに全力で取りかかる・好スタートを切る",
+                 useCases: ["新しい仕事やプロジェクトの始まりについて", "準備万端ですぐ動けることを言うとき"],
+                 examples: [
+                    ("She really hit the ground running in her new job.", "彼女、新しい仕事で初日からバリバリやってるよ。"),
+                    ("We need someone who can hit the ground running.", "すぐに即戦力になれる人が必要なんだ。")
+                 ], ipa: "/hɪt ðə ɡraʊnd ˈrʌnɪŋ/"),
+            make("get into the habit of", "to start doing something regularly so that it becomes normal for you",
+                 "～する習慣がつく・～するのが癖になる",
+                 useCases: ["新しい習慣を始めたとき", "良い習慣・悪い癖について話すとき"],
+                 examples: [
+                    ("I've got into the habit of going for a walk after lunch.", "昼ごはんの後に散歩するのが習慣になったんだ。"),
+                    ("Try not to get into the habit of checking your phone in bed.", "ベッドでスマホを見るのは癖にしないほうがいいよ。")
+                 ], ipa: "/ɡet ˈɪntə ðə ˈhæbɪt əv/"),
+            make("last thing at night", "just before you go to bed",
+                 "寝る直前に・夜寝る前に",
+                 useCases: ["寝る前の習慣を話すとき", "一日の最後にすることを言うとき"],
+                 examples: [
+                    ("I always have a cup of tea last thing at night.", "寝る前にいつも紅茶を一杯飲むんだ。"),
+                    ("Don't check your work emails last thing at night.", "寝る直前に仕事のメールを見ちゃだめだよ。")
+                 ], ipa: "/lɑːst θɪŋ ət naɪt/"),
+            make("go back on your word", "to not do something that you promised to do",
+                 "約束を破る・前言を撤回する",
+                 useCases: ["約束を守らなかった人を責めるとき", "約束は守ると伝えるとき"],
+                 examples: [
+                    ("He said he'd help, then went back on his word.", "手伝うって言ってたのに、あいつ約束を破ったんだ。"),
+                    ("I promised I'd come, and I won't go back on my word.", "行くって約束したから、絶対に破らないよ。")
+                 ], ipa: "/ɡəʊ bæk ɒn jɔː wɜːd/"),
+            make("it takes two to tango", "used to say that both people involved in a situation are responsible for it",
+                 "片方だけのせいじゃない・お互いさま",
+                 useCases: ["ケンカやトラブルの責任が両方にあるとき", "一方だけが責められているとき"],
+                 examples: [
+                    ("Don't just blame him — it takes two to tango.", "彼だけを責めないで。どっちにも原因はあるんだから。"),
+                    ("Well, it takes two to tango, doesn't it?", "まあ、お互いさまってことでしょ？")
+                 ], ipa: "/ɪt teɪks tuː tə ˈtæŋɡəʊ/"),
+            make("an acquired taste", "something that people do not usually like at first, but start to like over time",
+                 "慣れるとハマる味・好みが分かれるもの",
+                 useCases: ["独特な食べ物や飲み物について", "クセのある音楽や映画について"],
+                 examples: [
+                    ("Blue cheese is a bit of an acquired taste.", "ブルーチーズはちょっと慣れが必要な味だよね。"),
+                    ("His sense of humour is an acquired taste.", "彼のユーモアは好みが分かれるんだよね。")
+                 ], ipa: "/ən əˈkwaɪəd teɪst/"),
+            make("seal the deal", "to do something that finally makes an agreement or success certain",
+                 "決め手になる・話をまとめる",
+                 useCases: ["購入や契約の決め手を話すとき", "何かを決定づけた理由を言うとき"],
+                 examples: [
+                    ("The garden really sealed the deal for us.", "庭があったのが私たちにとって決め手だったの。"),
+                    ("Offer them a discount and that should seal the deal.", "割引を提示すれば話はまとまるはずだよ。")
+                 ], ipa: "/siːl ðə diːl/"),
+            make("get your money's worth", "to get enough value or use from something to justify what you paid",
+                 "払った分の元を取る",
+                 useCases: ["チケットや会員費の元を取りたいとき", "コスパについて話すとき"],
+                 examples: [
+                    ("We stayed till the very end to get our money's worth.", "元を取るために最後の最後までいたよ。"),
+                    ("I go to the gym every day so I get my money's worth.", "元を取るためにジムに毎日通ってるんだ。")
+                 ], ipa: "/ɡet jɔː ˈmʌniz wɜːθ/"),
+            make("in the first place", "used to talk about the beginning or original reason for something",
+                 "そもそも・最初から",
+                 useCases: ["そもそもの理由を問うとき", "最初からやるべきではなかったと言うとき"],
+                 examples: [
+                    ("Why did you agree to it in the first place?", "そもそも、なんで引き受けたの？"),
+                    ("I should never have said yes in the first place.", "最初からOKするべきじゃなかったよ。")
+                 ], ipa: "/ɪn ðə fɜːst pleɪs/"),
+            make("as luck would have it", "used to say that something happened by chance, either good or bad",
+                 "運よく・たまたま・あいにく",
+                 useCases: ["偶然うまくいったことを話すとき", "運悪くそうなったことを話すとき"],
+                 examples: [
+                    ("As luck would have it, there was one room left.", "運よく、一部屋だけ空いてたんだ。"),
+                    ("As luck would have it, it rained all weekend.", "あいにく、週末はずっと雨だったよ。")
+                 ], ipa: "/əz lʌk wʊd hæv ɪt/"),
+            make("look before you leap", "used to say that you should think carefully before you do something",
+                 "よく考えてから行動しよう・転ばぬ先の杖",
+                 useCases: ["大きな決断をする人に助言するとき", "衝動的な行動をいさめるとき"],
+                 examples: [
+                    ("Quitting your job is a big step — look before you leap.", "仕事を辞めるのは大きな決断だよ。よく考えてからね。"),
+                    ("I'm all for it, but look before you leap.", "大賛成だけど、行動する前によく考えてね。")
+                 ], ipa: "/lʊk bɪˈfɔː juː liːp/"),
+            make("work wonders", "to be very effective in making something better",
+                 "驚くほど効く・すごく効果がある",
+                 useCases: ["薬や方法がよく効いたとき", "おすすめを伝えるとき"],
+                 examples: [
+                    ("A good night's sleep will work wonders.", "ぐっすり寝れば、驚くほど良くなるよ。"),
+                    ("This cream works wonders for dry skin.", "このクリーム、乾燥肌にすごく効くんだ。")
+                 ], ipa: "/wɜːk ˈwʌndəz/"),
+            make("the norm", "what is usual, normal or expected",
+                 "普通のこと・当たり前",
+                 useCases: ["一般的になったことを話すとき", "珍しいことと比べるとき"],
+                 examples: [
+                    ("Working from home is pretty much the norm now.", "今じゃ在宅勤務はほぼ当たり前だよね。"),
+                    ("Late trains are the exception, not the norm.", "電車が遅れるのは例外で、普通じゃないよ。")
+                 ], ipa: "/ðə nɔːm/"),
+            make("in theory", "used to say what should be true or happen, when the reality may be different",
+                 "理論上は・建前では",
+                 useCases: ["計画と現実のズレを言うとき", "本来はそうなるはずだと話すとき"],
+                 examples: [
+                    ("In theory, the train takes an hour.", "理論上は電車で1時間なんだけどね。"),
+                    ("It sounds great in theory, but will it work?", "理屈ではいいけど、うまくいくかな？")
+                 ], ipa: "/ɪn ˈθɪəri/"),
+            make("deep down", "used to talk about someone's real feelings or character, which may be hidden",
+                 "心の底では・本当は",
+                 useCases: ["本心を打ち明けるとき", "見た目と違う本当の性格を言うとき"],
+                 examples: [
+                    ("Deep down, I knew he was right.", "心の底では、彼が正しいって分かってたんだ。"),
+                    ("He seems grumpy, but deep down he's really kind.", "無愛想に見えるけど、本当はすごく優しいんだよ。")
+                 ], ipa: "/diːp daʊn/"),
         ]
     }
     private static var britishColloquial245: [Word] {
