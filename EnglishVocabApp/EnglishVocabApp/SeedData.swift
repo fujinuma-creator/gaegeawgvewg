@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243
         ]
         return groups.flatMap { $0 }
     }
@@ -41689,6 +41689,115 @@ enum SeedData {
                     ("A cold drink is so refreshing on a day like this.", "こんな日の冷たい飲み物って、ほんとに生き返るね。"),
                     ("It's refreshing to meet someone so honest.", "こんなに正直な人に会えるのって新鮮だよ。")
                  ], ipa: "/rɪˈfreʃɪŋ/"),
+        ]
+    }
+    private static var britishColloquial243: [Word] {
+        [
+            make("cutlery", "knives, forks and spoons used for eating",
+                 "ナイフ・フォーク・スプーン類（食器）",
+                 useCases: ["食事の準備をするとき", "レストランで食器が足りないとき"],
+                 examples: [
+                    ("Could you grab the cutlery and lay the table?", "ナイフとフォーク出して、テーブルの準備してくれる？"),
+                    ("Sorry, we haven't got any cutlery here.", "すみません、こっちにフォーク類がないんですけど。")
+                 ], ipa: "/ˈkʌtləri/"),
+            make("pillow", "a soft cushion you rest your head on in bed",
+                 "枕",
+                 useCases: ["寝心地について話すとき", "ホテルで追加をお願いするとき"],
+                 examples: [
+                    ("Could I get an extra pillow, please?", "枕をもう一つもらえますか？"),
+                    ("As soon as my head hit the pillow, I was out.", "枕に頭をつけた瞬間、寝ちゃったよ。")
+                 ], ipa: "/ˈpɪləʊ/"),
+            make("munch on", "to eat something steadily, often a snack, especially with noisy chewing",
+                 "（おやつなどを）むしゃむしゃ食べる・つまむ",
+                 useCases: ["お菓子をつまんでいるとき", "映画を見ながら食べるとき"],
+                 examples: [
+                    ("I was munching on crisps all through the film.", "映画の間ずっとポテチをむしゃむしゃ食べてたよ。"),
+                    ("Have something to munch on while you wait.", "待ってる間、何かつまんでて。")
+                 ], ipa: "/mʌntʃ ɒn/"),
+            make("come in useful", "to be helpful or practical at some point, often later than expected",
+                 "役に立つ・重宝する",
+                 useCases: ["物を取っておく理由を話すとき", "スキルが役立ったとき"],
+                 examples: [
+                    ("Keep that box — it might come in useful.", "その箱取っておいて。何かに使えるかもよ。"),
+                    ("My bit of French really came in useful in Paris.", "ちょっとだけのフランス語がパリでほんとに役立ったよ。")
+                 ], ipa: "/kʌm ɪn ˈjuːsfl/"),
+            make("painkillers", "medicine that reduces pain, such as paracetamol or ibuprofen",
+                 "痛み止め・鎮痛剤",
+                 useCases: ["頭痛や体の痛みがあるとき", "薬を持っているか聞くとき"],
+                 examples: [
+                    ("Have you got any painkillers? My head's killing me.", "痛み止め持ってる？頭がめちゃくちゃ痛くて。"),
+                    ("I took a couple of painkillers and went to bed.", "痛み止めを2錠飲んで寝たんだ。")
+                 ], ipa: "/ˈpeɪnˌkɪləz/"),
+            make("suitcase", "a large case with a handle for carrying clothes when you travel",
+                 "スーツケース",
+                 useCases: ["旅行の準備をするとき", "荷物の話をするとき"],
+                 examples: [
+                    ("I still haven't packed my suitcase.", "まだスーツケースに荷物詰めてないんだ。"),
+                    ("My suitcase didn't turn up at the airport.", "空港でスーツケースが出てこなかったんだ。")
+                 ], ipa: "/ˈsuːtkeɪs/"),
+            make("sun cream", "cream you put on your skin to protect it from the sun",
+                 "日焼け止め",
+                 useCases: ["ビーチや外出の準備をするとき", "日焼けを気にするとき"],
+                 examples: [
+                    ("Don't forget to put sun cream on!", "日焼け止め塗るの忘れないでね！"),
+                    ("Can I borrow some sun cream?", "日焼け止めちょっと借りていい？")
+                 ], ipa: "/ˈsʌn kriːm/"),
+            make("humid", "hot and wet in a way that feels uncomfortable",
+                 "蒸し暑い・じめじめした",
+                 useCases: ["天気について話すとき", "旅行先の気候を話すとき"],
+                 examples: [
+                    ("It's so humid today — I'm sweating already.", "今日すごく蒸し暑いね。もう汗かいてるよ。"),
+                    ("Tokyo gets really humid in summer.", "東京は夏になるとほんとにじめじめするんだ。")
+                 ], ipa: "/ˈhjuːmɪd/"),
+            make("overcast", "covered with grey clouds, so there is no sun",
+                 "曇った・どんよりした",
+                 useCases: ["天気について話すとき", "出かけるか迷うとき"],
+                 examples: [
+                    ("It's a bit overcast, but it should stay dry.", "ちょっと曇ってるけど、雨は降らないと思うよ。"),
+                    ("It's been overcast all week.", "今週ずっとどんよりした天気だね。")
+                 ], ipa: "/ˌəʊvəˈkɑːst/"),
+            make("curtains", "pieces of cloth that hang over a window to cover it",
+                 "カーテン",
+                 useCases: ["部屋を明るく・暗くするとき", "インテリアの話をするとき"],
+                 examples: [
+                    ("Can you open the curtains? It's so dark in here.", "カーテン開けてくれる？ここ暗すぎるよ。"),
+                    ("I need new curtains for the bedroom.", "寝室用に新しいカーテンが要るんだ。")
+                 ], ipa: "/ˈkɜːtnz/"),
+            make("pyjamas", "loose, comfortable clothes that you wear in bed",
+                 "パジャマ",
+                 useCases: ["家でくつろいでいるとき", "朝の様子を話すとき"],
+                 examples: [
+                    ("I spent the whole Sunday in my pyjamas.", "日曜日は一日中パジャマで過ごしたよ。"),
+                    ("Go and get your pyjamas on — it's bedtime.", "パジャマに着替えておいで。もう寝る時間だよ。")
+                 ], ipa: "/pəˈdʒɑːməz/"),
+            make("slippers", "soft, comfortable shoes that you wear indoors",
+                 "スリッパ・室内履き",
+                 useCases: ["家の中で履くものを話すとき", "寒い日の過ごし方を話すとき"],
+                 examples: [
+                    ("Have you seen my slippers anywhere?", "僕のスリッパどこかで見なかった？"),
+                    ("Feel free to borrow some slippers — the floor's cold.", "床が冷たいから、スリッパ遠慮なく使ってね。")
+                 ], ipa: "/ˈslɪpəz/"),
+            make("doorbell", "a bell or button by a front door that visitors press",
+                 "玄関のチャイム・呼び鈴",
+                 useCases: ["来客や配達の話をするとき", "家への行き方を伝えるとき"],
+                 examples: [
+                    ("Was that the doorbell?", "今チャイム鳴った？"),
+                    ("Just ring the doorbell when you get here.", "着いたらチャイム鳴らしてね。")
+                 ], ipa: "/ˈdɔːbel/"),
+            make("shopping list", "a list of things you need to buy",
+                 "買い物リスト",
+                 useCases: ["買い物に行く前", "家族に買う物を頼むとき"],
+                 examples: [
+                    ("Add milk to the shopping list, will you?", "買い物リストに牛乳足しといてくれる？"),
+                    ("I left the shopping list at home!", "買い物リスト家に忘れてきちゃった！")
+                 ], ipa: "/ˈʃɒpɪŋ lɪst/"),
+            make("toothbrush", "a small brush for cleaning your teeth",
+                 "歯ブラシ",
+                 useCases: ["旅行の持ち物を話すとき", "泊まりに行くとき"],
+                 examples: [
+                    ("I forgot my toothbrush — is there a shop nearby?", "歯ブラシ忘れちゃった。近くにお店ある？"),
+                    ("I keep a spare toothbrush for guests.", "お客さん用に予備の歯ブラシ置いてるんだ。")
+                 ], ipa: "/ˈtuːθbrʌʃ/"),
         ]
     }
     private static var britishColloquial241: [Word] {
