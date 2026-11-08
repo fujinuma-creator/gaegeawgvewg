@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238
         ]
         return groups.flatMap { $0 }
     }
@@ -41362,6 +41362,115 @@ enum SeedData {
                     ("Can we walk there? / It's a long way — let's get a taxi.", "歩いて行ける？／けっこう遠いよ、タクシーにしよう。"),
                     ("It's a long way to come just for one meeting.", "会議ひとつのためにわざわざ来るには遠いよね。")
                  ], ipa: "/ɪts ə ˌlɒŋ ˈweɪ/"),
+        ]
+    }
+    private static var britishColloquial238: [Word] {
+        [
+            make("you beat me to it", "used when someone does or says something just before you were going to",
+                 "先を越された・ちょうど言おうと思ってた",
+                 useCases: ["自分がやろうとしたことを先にされたとき", "同じことを言おうとしていたとき"],
+                 examples: [
+                    ("I was just about to text you — you beat me to it!", "ちょうど連絡しようと思ってたの、先を越されちゃった！"),
+                    ("Oh, you've already booked the table? You beat me to it.", "もうお店予約してくれたの？先にやられちゃったな。")
+                 ], ipa: "/ju ˌbiːt mi ˈtuː ɪt/"),
+            make("a food coma", "(informal) the sleepy, heavy feeling after eating a very big meal",
+                 "食べすぎて動けない・眠い状態",
+                 useCases: ["食後に眠くなったとき", "ごちそうを食べすぎたとき"],
+                 examples: [
+                    ("After that Sunday roast, I'm in a total food coma.", "あのサンデーローストのあとで、完全にお腹いっぱいで動けない。"),
+                    ("Let's go for a walk before we slip into a food coma.", "食べすぎて眠くなる前に、ちょっと散歩しよう。")
+                 ], ipa: "/ə ˈfuːd ˌkəʊmə/"),
+            make("a round of applause", "a period of clapping to show thanks or praise",
+                 "（みんなで）拍手",
+                 useCases: ["誰かを称えるとき", "スピーチや発表のあとで"],
+                 examples: [
+                    ("Let's give Sarah a round of applause for organising tonight.", "今夜を企画してくれたサラに拍手を送りましょう。"),
+                    ("He got a huge round of applause at the end.", "最後に彼は大きな拍手をもらった。")
+                 ], ipa: "/ə ˌraʊnd əv əˈplɔːz/"),
+            make("back in fashion", "popular or stylish again after a period of not being popular",
+                 "また流行っている・リバイバルしている",
+                 useCases: ["昔の服や物がまた流行っているとき", "トレンドの話をするとき"],
+                 examples: [
+                    ("Flared jeans are back in fashion, apparently.", "どうやらフレアジーンズがまた流行ってるらしいよ。"),
+                    ("Keep your old jacket — it'll be back in fashion in a few years.", "その古いジャケット取っておきなよ。数年したらまた流行るから。")
+                 ], ipa: "/ˌbæk ɪn ˈfæʃn/"),
+            make("have a sip", "to drink a very small amount of something, often to taste it",
+                 "一口飲む・ちょっと味見する",
+                 useCases: ["飲み物を少しもらうとき", "熱い飲み物を少しずつ飲むとき"],
+                 examples: [
+                    ("Can I have a sip of yours? I want to see what it's like.", "ちょっと一口もらっていい？どんな味か知りたくて。"),
+                    ("I only had a sip of wine, so I'm fine to drive.", "ワインは一口しか飲んでないから、運転して大丈夫。")
+                 ], ipa: "/ˌhæv ə ˈsɪp/"),
+            make("a mouthful", "1) an amount of food or drink you put in your mouth at once 2) a long word or name that is hard to say",
+                 "一口分・（長くて）言いにくい言葉",
+                 useCases: ["食べ物を一口と言うとき", "長い名前や言葉に対して"],
+                 examples: [
+                    ("Sorry, I can't talk — I've got a mouthful of cake.", "ごめん、今ケーキを口いっぱいに入れてて話せない。"),
+                    ("Her surname's a bit of a mouthful, so everyone calls her Kat.", "彼女の名字はちょっと言いにくいから、みんなキャットって呼んでる。")
+                 ], ipa: "/ə ˈmaʊθfʊl/"),
+            make("get a tan", "to make your skin darker by spending time in the sun",
+                 "日焼けする（こんがり焼く）",
+                 useCases: ["旅行帰りの人に声をかけるとき", "夏の予定を話すとき"],
+                 examples: [
+                    ("You've got a lovely tan — have you been away?", "いい感じに焼けてるね、どこか行ってたの？"),
+                    ("I just want to lie on the beach and get a tan.", "ビーチで寝転がって日焼けしたいだけなんだ。")
+                 ], ipa: "/ˌɡet ə ˈtæn/"),
+            make("a bit foggy", "(of memory or the mind) not clear; hard to remember or think clearly",
+                 "（記憶や頭が）ぼんやりしている",
+                 useCases: ["はっきり覚えていないとき", "寝起きや疲れで頭が働かないとき"],
+                 examples: [
+                    ("It was years ago, so my memory's a bit foggy.", "何年も前のことだから、記憶がちょっとあいまいなんだ。"),
+                    ("Sorry, my head's a bit foggy this morning.", "ごめん、今朝はちょっと頭がぼーっとしてて。")
+                 ], ipa: "/ə ˌbɪt ˈfɒɡi/"),
+            make("a house party", "a party held at someone's home",
+                 "ホームパーティー・家飲み",
+                 useCases: ["週末の予定を話すとき", "友達を誘うとき"],
+                 examples: [
+                    ("Tom's having a house party on Saturday — are you coming?", "トムが土曜に家でパーティーするんだけど、来る？"),
+                    ("The neighbours had a house party until 3 a.m.", "お隣さんが夜中の3時まで家でパーティーしてた。")
+                 ], ipa: "/ə ˈhaʊs ˌpɑːti/"),
+            make("run the show", "to be the person in charge and make the decisions",
+                 "仕切る・取り仕切る",
+                 useCases: ["誰が責任者か話すとき", "仕切りたがる人について"],
+                 examples: [
+                    ("Ask Emma — she's running the show today.", "エマに聞いて。今日は彼女が仕切ってるから。"),
+                    ("My mum always runs the show at Christmas.", "クリスマスはいつも母が全部取り仕切ってる。")
+                 ], ipa: "/ˌrʌn ðə ˈʃəʊ/"),
+            make("in the office", "working at your workplace rather than from home",
+                 "出社している・オフィスにいる",
+                 useCases: ["在宅か出社かを伝えるとき", "会う予定を合わせるとき"],
+                 examples: [
+                    ("I'm in the office on Tuesdays and Thursdays, and at home the rest of the week.", "火曜と木曜は出社で、それ以外は在宅だよ。"),
+                    ("Are you in the office tomorrow? We could grab lunch.", "明日出社する？ランチ行けるかも。")
+                 ], ipa: "/ɪn ði ˈɒfɪs/"),
+            make("take a sick day", "to have a day off work because you are ill",
+                 "病欠する・体調不良で休む",
+                 useCases: ["体調不良で休むと伝えるとき", "無理しないよう勧めるとき"],
+                 examples: [
+                    ("You sound awful — just take a sick day and rest.", "ひどい声だね。今日は休んでゆっくりしなよ。"),
+                    ("I had to take a sick day yesterday, so I'm a bit behind.", "昨日病欠したから、ちょっと仕事が遅れてる。")
+                 ], ipa: "/ˌteɪk ə ˈsɪk ˌdeɪ/"),
+            make("me time", "(informal) time you spend relaxing on your own, doing what you enjoy",
+                 "自分だけの時間・ひとりの時間",
+                 useCases: ["ひとりでのんびりしたいとき", "週末の過ごし方を話すとき"],
+                 examples: [
+                    ("The kids are at their gran's, so I'm having some me time.", "子どもたちはおばあちゃんの家だから、自分の時間を楽しんでるの。"),
+                    ("Everyone needs a bit of me time now and then.", "誰だってたまには自分だけの時間が必要だよ。")
+                 ], ipa: "/ˈmiː ˌtaɪm/"),
+            make("you've caught the sun", "(British) your skin has gone a bit red or brown from being in the sun",
+                 "日に焼けたね（ちょっと赤くなってる）",
+                 useCases: ["外出帰りの人に声をかけるとき", "うっかり日焼けしたとき"],
+                 examples: [
+                    ("Ooh, you've caught the sun! Were you in the garden all day?", "あら、日に焼けたね！一日中庭にいたの？"),
+                    ("I only sat outside for an hour, but I've really caught the sun.", "外に1時間座ってただけなのに、すっかり焼けちゃった。")
+                 ], ipa: "/juːv ˌkɔːt ðə ˈsʌn/"),
+            make("just a splash", "only a very small amount of a liquid, such as milk in tea",
+                 "ほんの少しだけ（注いで）",
+                 useCases: ["紅茶やコーヒーのミルクの量を聞かれたとき", "飲み物を少しだけ注いでもらうとき"],
+                 examples: [
+                    ("Milk? / Just a splash, thanks.", "ミルク入れる？／ほんの少しだけお願い。"),
+                    ("Can I have just a splash of wine? I'm driving.", "ワインはほんの少しだけでいい？運転するから。")
+                 ], ipa: "/ˌdʒʌst ə ˈsplæʃ/"),
         ]
     }
     private static var britishColloquial220: [Word] {
