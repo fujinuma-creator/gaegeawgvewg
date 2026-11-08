@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241
         ]
         return groups.flatMap { $0 }
     }
@@ -41580,6 +41580,115 @@ enum SeedData {
                     ("I had the most bizarre dream last night.", "昨日の夜、めちゃくちゃ変な夢を見た。"),
                     ("It's a bit bizarre that nobody told us.", "誰も教えてくれなかったなんて、ちょっと変だよね。")
                  ], ipa: "/bɪˈzɑː/"),
+        ]
+    }
+    private static var britishColloquial241: [Word] {
+        [
+            make("drag your feet", "to be slow to do something because you don't really want to do it",
+                 "（やりたくなくて）ぐずぐずする・先延ばしにする",
+                 useCases: ["誰かがなかなか動かないとき", "自分が先延ばしにしていることを認めるとき"],
+                 examples: [
+                    ("Stop dragging your feet and just book the tickets!", "ぐずぐずしてないで、さっさとチケット取っちゃいなよ！"),
+                    ("I've been dragging my feet on this essay all week.", "このレポート、一週間ずっと先延ばしにしてるんだ。")
+                 ], ipa: "/ˌdræɡ jɔː ˈfiːt/"),
+            make("find your feet", "to become comfortable and confident in a new place or situation",
+                 "新しい環境に慣れる・勝手がわかってくる",
+                 useCases: ["引っ越しや転職の後の様子を話すとき", "新人を励ますとき"],
+                 examples: [
+                    ("Don't worry, you'll find your feet in a couple of weeks.", "心配しないで、2、3週間もすれば慣れるよ。"),
+                    ("It took me a while to find my feet in London.", "ロンドンに慣れるまで、しばらくかかったよ。")
+                 ], ipa: "/ˌfaɪnd jɔː ˈfiːt/"),
+            make("weekday", "any day from Monday to Friday",
+                 "平日",
+                 useCases: ["予定や営業時間を話すとき", "混雑具合を話すとき"],
+                 examples: [
+                    ("It's much quieter here on weekdays.", "ここは平日のほうがずっと空いてるよ。"),
+                    ("I can only meet up in the evenings on weekdays.", "平日は夜しか会えないんだ。")
+                 ], ipa: "/ˈwiːkdeɪ/"),
+            make("paperwork", "the forms, documents, and admin that you have to deal with",
+                 "書類仕事・事務手続き",
+                 useCases: ["仕事の面倒な作業を話すとき", "役所や引っ越しの手続きを話すとき"],
+                 examples: [
+                    ("I spent the whole morning doing paperwork.", "午前中ずっと書類仕事してたよ。"),
+                    ("Moving abroad involves so much paperwork.", "海外への引っ越しって、手続きがほんとに多いんだよね。")
+                 ], ipa: "/ˈpeɪpəwɜːk/"),
+            make("portion", "the amount of food served to one person",
+                 "（料理の）一人前・量",
+                 useCases: ["レストランの量について話すとき", "食べきれないとき"],
+                 examples: [
+                    ("The portions here are massive — let's share a starter.", "ここ量がすごいから、前菜はシェアしようよ。"),
+                    ("Could I get a smaller portion, please?", "少なめにしてもらえますか？")
+                 ], ipa: "/ˈpɔːʃn/"),
+            make("work-life balance", "the balance between time spent working and time for your personal life",
+                 "仕事と私生活のバランス・ワークライフバランス",
+                 useCases: ["働き方について話すとき", "転職の理由を話すとき"],
+                 examples: [
+                    ("The pay's lower, but the work-life balance is so much better.", "給料は下がったけど、ワークライフバランスはずっと良くなったよ。"),
+                    ("I'm trying to get a better work-life balance this year.", "今年は仕事と私生活のバランスをもっと良くしようとしてるんだ。")
+                 ], ipa: "/ˌwɜːk ˈlaɪf ˌbæləns/"),
+            make("team player", "someone who works well with other people in a group",
+                 "チームワークを大切にする人・協調性のある人",
+                 useCases: ["同僚を褒めるとき", "面接で自分をアピールするとき"],
+                 examples: [
+                    ("She's a real team player — always happy to help.", "彼女は本当に協調性があるよ。いつも喜んで手伝ってくれる。"),
+                    ("Come on, be a team player and stay a bit later.", "ほら、チームのためにもう少し残ってよ。")
+                 ], ipa: "/ˈtiːm ˌpleɪə/"),
+            make("boss someone around", "to keep telling someone what to do in an annoying way",
+                 "（人に）偉そうに指図する・こき使う",
+                 useCases: ["兄弟や同僚に文句を言うとき", "偉そうな人について話すとき"],
+                 examples: [
+                    ("Stop bossing me around — I know what I'm doing!", "偉そうに指図しないでよ。自分でわかってるから！"),
+                    ("My older sister used to boss me around all the time.", "姉にはいつもこき使われてたよ。")
+                 ], ipa: "/ˌbɒs ˈsʌmwʌn əˌraʊnd/"),
+            make("open-plan", "(of a room or office) having few or no walls, so it is one big space",
+                 "（部屋・オフィスが）仕切りのない・オープンな",
+                 useCases: ["家の間取りを話すとき", "職場の環境を話すとき"],
+                 examples: [
+                    ("Our new flat has an open-plan kitchen and living room.", "新しい部屋はキッチンとリビングがつながってるんだ。"),
+                    ("I find it hard to concentrate in an open-plan office.", "仕切りのないオフィスだと集中しにくいんだよね。")
+                 ], ipa: "/ˌəʊpən ˈplæn/"),
+            make("house-proud", "(British) caring a lot about keeping your home clean, tidy, and nice-looking",
+                 "家をきれいに保つことにこだわる・家自慢の",
+                 useCases: ["きれい好きな人について話すとき", "人の家を訪ねたとき"],
+                 examples: [
+                    ("Take your shoes off — my mum's very house-proud.", "靴脱いでね。うちの母、家をきれいにすることにうるさいから。"),
+                    ("I've become a bit house-proud since buying my own place.", "自分の家を買ってから、ちょっと家の手入れにこだわるようになったよ。")
+                 ], ipa: "/ˈhaʊs ˌpraʊd/"),
+            make("hybrid working", "a way of working where you spend some days in the office and some days at home",
+                 "ハイブリッド勤務（出社と在宅の組み合わせ）",
+                 useCases: ["働き方について話すとき", "会社の制度を説明するとき"],
+                 examples: [
+                    ("We do hybrid working — two days in the office, three at home.", "うちはハイブリッド勤務で、出社2日、在宅3日なんだ。"),
+                    ("Hybrid working has made my commute so much easier.", "ハイブリッド勤務になって、通勤がすごく楽になったよ。")
+                 ], ipa: "/ˌhaɪbrɪd ˈwɜːkɪŋ/"),
+            make("own goal", "(informal) something you do that accidentally harms yourself instead of helping",
+                 "自滅・墓穴を掘る行為（元はサッカーのオウンゴール）",
+                 useCases: ["誰かの失敗が裏目に出たとき", "自分のミスを笑うとき"],
+                 examples: [
+                    ("Raising prices just before Christmas was a real own goal.", "クリスマス直前の値上げは完全に自滅だったね。"),
+                    ("I forgot my own password — total own goal.", "自分のパスワード忘れちゃった。完全に自爆だよ。")
+                 ], ipa: "/ˌəʊn ˈɡəʊl/"),
+            make("step outside", "to go out of a building or room for a short time",
+                 "（ちょっと）外に出る",
+                 useCases: ["電話のために席を外すとき", "外の空気を吸いに行くとき"],
+                 examples: [
+                    ("Sorry, I need to step outside to take this call.", "ごめん、この電話に出るのにちょっと外に出るね。"),
+                    ("It's freezing — don't even step outside without a coat.", "めちゃくちゃ寒いよ。コートなしで外に出ちゃダメだよ。")
+                 ], ipa: "/ˌstep ˌaʊtˈsaɪd/"),
+            make("flat-pack", "furniture sold in pieces in a flat box that you put together yourself",
+                 "組み立て式（の家具）",
+                 useCases: ["家具を買うとき", "引っ越し後の作業を話すとき"],
+                 examples: [
+                    ("I spent all Sunday putting together a flat-pack wardrobe.", "日曜は丸一日、組み立て式のクローゼットを組み立ててたよ。"),
+                    ("Flat-pack furniture is cheap, but the instructions are a nightmare.", "組み立て家具は安いけど、説明書がほんと大変なんだよね。")
+                 ], ipa: "/ˈflæt ˌpæk/"),
+            make("parking space", "a place where you can leave a car",
+                 "駐車スペース",
+                 useCases: ["車で出かけるとき", "家や職場の駐車事情を話すとき"],
+                 examples: [
+                    ("It took me twenty minutes to find a parking space.", "駐車スペースを見つけるのに20分もかかったよ。"),
+                    ("Does the flat come with a parking space?", "その部屋、駐車場付き？")
+                 ], ipa: "/ˈpɑːkɪŋ ˌspeɪs/"),
         ]
     }
     private static var britishColloquial240: [Word] {
