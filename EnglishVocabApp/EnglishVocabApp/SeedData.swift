@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244
         ]
         return groups.flatMap { $0 }
     }
@@ -41798,6 +41798,115 @@ enum SeedData {
                     ("I forgot my toothbrush — is there a shop nearby?", "歯ブラシ忘れちゃった。近くにお店ある？"),
                     ("I keep a spare toothbrush for guests.", "お客さん用に予備の歯ブラシ置いてるんだ。")
                  ], ipa: "/ˈtuːθbrʌʃ/"),
+        ]
+    }
+    private static var britishColloquial244: [Word] {
+        [
+            make("wallet", "a small flat case for keeping money and cards in",
+                 "財布",
+                 useCases: ["支払いのとき", "財布をなくしたとき"],
+                 examples: [
+                    ("Oh no, I've left my wallet at home.", "やばい、財布家に忘れてきた。"),
+                    ("Have you seen my wallet anywhere?", "私の財布どこかで見なかった？")
+                 ], ipa: "/ˈwɒlɪt/"),
+            make("napkin", "a piece of cloth or paper used to wipe your mouth and hands while eating",
+                 "ナプキン・紙ナプキン",
+                 useCases: ["レストランで頼むとき", "食事中に手や口を拭くとき"],
+                 examples: [
+                    ("Could we have a few more napkins, please?", "ナプキンをもう少しもらえますか？"),
+                    ("Grab a napkin — these wings are messy.", "ナプキン取って。この手羽先、手が汚れるから。")
+                 ], ipa: "/ˈnæpkɪn/"),
+            make("mug", "a large cup with straight sides and a handle, used for hot drinks",
+                 "マグカップ",
+                 useCases: ["お茶やコーヒーを入れるとき", "プレゼントの話をするとき"],
+                 examples: [
+                    ("Do you want it in a mug or a cup?", "マグカップがいい？それとも普通のカップ？"),
+                    ("I need a big mug of tea right now.", "今、大きいマグで紅茶が飲みたい。")
+                 ], ipa: "/mʌɡ/"),
+            make("headphones", "a pair of speakers you wear over or in your ears to listen privately",
+                 "ヘッドホン・イヤホン",
+                 useCases: ["音楽を聴くとき", "電車や職場で集中したいとき"],
+                 examples: [
+                    ("Sorry, I had my headphones in and didn't hear you.", "ごめん、イヤホンしてて聞こえなかった。"),
+                    ("I can't work without my headphones on.", "ヘッドホンしてないと仕事できないんだ。")
+                 ], ipa: "/ˈhedfəʊnz/"),
+            make("sunglasses", "dark glasses that protect your eyes from bright sunlight",
+                 "サングラス",
+                 useCases: ["晴れた日に出かけるとき", "旅行の持ち物を話すとき"],
+                 examples: [
+                    ("It's so bright — I should've brought my sunglasses.", "眩しすぎる。サングラス持ってくればよかった。"),
+                    ("Are those new sunglasses? They suit you.", "それ新しいサングラス？似合ってるね。")
+                 ], ipa: "/ˈsʌnˌɡlɑːsɪz/"),
+            make("sticky", "covered in something like glue, sugar or jam that makes things stick",
+                 "べたべたする・ねばねばした",
+                 useCases: ["手や机がべたつくとき", "子どもがお菓子を食べた後"],
+                 examples: [
+                    ("My hands are all sticky — where's the sink?", "手がべたべた。洗面台どこ？"),
+                    ("Careful, the table's a bit sticky.", "気をつけて、テーブルちょっとべたついてるから。")
+                 ], ipa: "/ˈstɪki/"),
+            make("slippery", "wet, icy or smooth so that it is difficult to walk on or hold",
+                 "滑りやすい・つるつるした",
+                 useCases: ["雨や雪の日に注意するとき", "床が濡れているとき"],
+                 examples: [
+                    ("Watch out, the floor's really slippery.", "気をつけて、床がすごく滑るよ。"),
+                    ("The roads are slippery this morning, so drive carefully.", "今朝は道が滑りやすいから、運転気をつけてね。")
+                 ], ipa: "/ˈslɪpəri/"),
+            make("crumbs", "very small pieces of bread, cake or biscuit",
+                 "（パンやお菓子の）くず・食べかす",
+                 useCases: ["食べた後の掃除のとき", "ソファやベッドで食べたとき"],
+                 examples: [
+                    ("Who left crumbs all over the sofa?", "ソファ中に食べかす散らかしたの誰？"),
+                    ("You've got crumbs on your jumper.", "セーターにパンくず付いてるよ。")
+                 ], ipa: "/krʌmz/"),
+            make("blister", "a small painful bubble on the skin, often caused by rubbing shoes",
+                 "（靴ずれなどの）水ぶくれ・まめ",
+                 useCases: ["たくさん歩いた後", "新しい靴を履いたとき"],
+                 examples: [
+                    ("These new shoes have given me blisters.", "この新しい靴で靴ずれができちゃった。"),
+                    ("I've got a massive blister on my heel.", "かかとにでっかい水ぶくれができた。")
+                 ], ipa: "/ˈblɪstə/"),
+            make("sprain your ankle", "to injure your ankle by twisting it suddenly",
+                 "足首をひねる・捻挫する",
+                 useCases: ["怪我の話をするとき", "運動中に足をひねったとき"],
+                 examples: [
+                    ("I sprained my ankle playing football.", "サッカーしてて足首ひねっちゃった。"),
+                    ("Be careful on those steps or you'll sprain your ankle.", "その階段気をつけて、足くじくよ。")
+                 ], ipa: "/spreɪn jɔːr ˈæŋkl/"),
+            make("frying pan", "a flat metal pan with a long handle, used for frying food",
+                 "フライパン",
+                 useCases: ["料理をするとき", "キッチン用品の話をするとき"],
+                 examples: [
+                    ("Heat a bit of oil in the frying pan first.", "まずフライパンで油を少し温めて。"),
+                    ("Where do you keep your frying pans?", "フライパンってどこにしまってる？")
+                 ], ipa: "/ˈfraɪɪŋ pæn/"),
+            make("chopping board", "a board made of wood or plastic that you cut food on",
+                 "まな板",
+                 useCases: ["料理の準備をするとき", "キッチンで手伝うとき"],
+                 examples: [
+                    ("Pass me the chopping board, would you?", "まな板取ってくれる？"),
+                    ("Use a separate chopping board for the raw chicken.", "生の鶏肉には別のまな板を使ってね。")
+                 ], ipa: "/ˈtʃɒpɪŋ bɔːd/"),
+            make("crossroads", "a place where two roads meet and cross each other",
+                 "交差点・十字路",
+                 useCases: ["道案内をするとき", "待ち合わせ場所を説明するとき"],
+                 examples: [
+                    ("Turn left at the crossroads and it's on your right.", "交差点を左に曲がると右側にあるよ。"),
+                    ("I'll meet you by the crossroads near the station.", "駅の近くの交差点のところで会おう。")
+                 ], ipa: "/ˈkrɒsrəʊdz/"),
+            make("dry off", "to become dry, or to make yourself or something dry, after getting wet",
+                 "（濡れた体や物を）乾かす・拭く",
+                 useCases: ["雨に濡れたとき", "泳いだ後やシャワーの後"],
+                 examples: [
+                    ("Come in and dry off — you're soaked!", "入って体拭きな。びしょ濡れじゃん！"),
+                    ("Leave your coat by the heater to dry off.", "コートはヒーターのそばに置いて乾かしておいて。")
+                 ], ipa: "/draɪ ɒf/"),
+            make("tissue", "a piece of soft thin paper used for blowing your nose",
+                 "ティッシュ",
+                 useCases: ["鼻をかみたいとき", "風邪をひいているとき"],
+                 examples: [
+                    ("Have you got a tissue? My nose won't stop running.", "ティッシュある？鼻水が止まらなくて。"),
+                    ("There's a box of tissues on the table.", "テーブルの上にティッシュの箱があるよ。")
+                 ], ipa: "/ˈtɪʃuː/"),
         ]
     }
     private static var britishColloquial241: [Word] {
