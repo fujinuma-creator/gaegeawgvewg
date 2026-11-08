@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251
         ]
         return groups.flatMap { $0 }
     }
@@ -42452,6 +42452,115 @@ enum SeedData {
                     ("How many people came? — At a guess, about fifty.", "何人来た？—たぶん50人くらいかな。"),
                     ("At a guess, I'd say it'll take two hours.", "ざっと見て、2時間くらいかかると思うよ。")
                  ], ipa: "/æt ə ɡes/"),
+        ]
+    }
+    private static var britishColloquial251: [Word] {
+        [
+            make("foot the bill", "to pay for something, often something expensive",
+                 "（費用を）負担する・支払いを持つ",
+                 useCases: ["誰が費用を払うかを話すとき", "高い支払いを引き受けるとき"],
+                 examples: [
+                    ("Who's going to foot the bill for the party?", "パーティーの費用は誰が持つの？"),
+                    ("My company footed the bill for the hotel.", "ホテル代は会社が負担してくれたよ。")
+                 ], ipa: "/fʊt ðə bɪl/"),
+            make("my hands are tied", "I am not able to help or change things because of rules or other people",
+                 "どうすることもできない・私の一存では無理",
+                 useCases: ["ルールや上司の決定で動けないとき", "頼まれたが断るしかないとき"],
+                 examples: [
+                    ("I'd love to help, but my hands are tied.", "助けたいんだけど、私にはどうにもできないんだ。"),
+                    ("Sorry, my hands are tied – it's company policy.", "ごめん、会社の方針だからどうしようもないの。")
+                 ], ipa: "/maɪ hændz ə taɪd/"),
+            make("breathe down someone's neck", "to watch someone too closely, making them feel pressured",
+                 "〜をすぐそばで監視する・プレッシャーをかける",
+                 useCases: ["上司などに細かく見張られているとき", "急かされて落ち着かないとき"],
+                 examples: [
+                    ("My boss is always breathing down my neck.", "上司がいつも後ろから見張ってくるんだよ。"),
+                    ("I can't work with you breathing down my neck!", "そんなに見張られてたら仕事できないよ！")
+                 ], ipa: "/briːð daʊn ˈsʌmwʌnz nek/"),
+            make("talk to you later", "a friendly way of saying goodbye when you'll speak again soon",
+                 "またあとでね・また話そう",
+                 useCases: ["電話やチャットを終えるとき", "友達と別れるとき"],
+                 examples: [
+                    ("I've got to go – talk to you later!", "もう行かなきゃ、またあとでね！"),
+                    ("Okay, talk to you later. Bye!", "じゃあ、またあとで話そう。バイバイ！")
+                 ], ipa: "/tɔːk tə juː ˈleɪtə/"),
+            make("be set in one's ways", "to be unwilling to change habits or opinions",
+                 "考えや習慣が凝り固まっている・頑固である",
+                 useCases: ["年配の家族などの頑固さを話すとき", "なかなか習慣を変えない人について"],
+                 examples: [
+                    ("My dad's quite set in his ways.", "うちの父はけっこう頑固で変わらないんだ。"),
+                    ("I'm getting a bit set in my ways, to be honest.", "正直、最近ちょっと考えが凝り固まってきたかも。")
+                 ], ipa: "/set ɪn wʌnz weɪz/"),
+            make("get away from it all", "to go somewhere to escape from everyday life and stress",
+                 "日常から離れる・気分転換に遠くへ行く",
+                 useCases: ["休暇や旅行の目的を話すとき", "ストレスから逃れたいとき"],
+                 examples: [
+                    ("We went to the coast to get away from it all.", "日常を離れたくて海辺に行ったんだ。"),
+                    ("I just need to get away from it all for a few days.", "何日か全部から離れてのんびりしたいよ。")
+                 ], ipa: "/ɡet əˈweɪ frəm ɪt ɔːl/"),
+            make("have itchy feet", "to feel a strong desire to travel or move somewhere new",
+                 "旅に出たくてうずうずする・どこかへ移りたくなる",
+                 useCases: ["旅行したい気持ちを話すとき", "引っ越しや転職を考え始めたとき"],
+                 examples: [
+                    ("I've got itchy feet again – let's book a trip.", "また旅に出たくてうずうずしてる、旅行予約しよう。"),
+                    ("After two years in the job, she had itchy feet.", "その仕事を2年やって、彼女は新しい場所に移りたくなったんだ。")
+                 ], ipa: "/hæv ˈɪtʃi fiːt/"),
+            make("live out of a suitcase", "to travel so much that you don't fully unpack or settle anywhere",
+                 "スーツケース生活をする・出張や移動続きで落ち着けない",
+                 useCases: ["出張や旅行続きの生活を話すとき", "引っ越し直後で荷解きできていないとき"],
+                 examples: [
+                    ("I've been living out of a suitcase all month.", "今月はずっとスーツケース生活だよ。"),
+                    ("I'm tired of living out of a suitcase.", "移動ばかりの生活にはもう疲れたよ。")
+                 ], ipa: "/lɪv aʊt əv ə ˈsuːtkeɪs/"),
+            make("get paid", "to receive money for work you have done",
+                 "給料をもらう・支払いを受ける",
+                 useCases: ["給料日について話すとき", "仕事の報酬について話すとき"],
+                 examples: [
+                    ("I get paid on Friday, so drinks are on me.", "金曜に給料が入るから、飲みは私のおごりね。"),
+                    ("Do you get paid for overtime?", "残業代って出るの？")
+                 ], ipa: "/ɡet peɪd/"),
+            make("fly off the handle", "to suddenly become very angry",
+                 "急にカッとなる・キレる",
+                 useCases: ["誰かが突然怒ったとき", "怒りっぽい人について話すとき"],
+                 examples: [
+                    ("He flew off the handle over nothing.", "彼、何でもないことで急にキレたんだよ。"),
+                    ("Don't fly off the handle – just listen for a sec.", "カッとならないで、ちょっと聞いて。")
+                 ], ipa: "/flaɪ ɒf ðə ˈhændl/"),
+            make("keep the peace", "to stop people from arguing or fighting",
+                 "場を丸く収める・争いを避ける",
+                 useCases: ["家族や友人の喧嘩を止めるとき", "波風を立てたくないとき"],
+                 examples: [
+                    ("I didn't say anything, just to keep the peace.", "波風立てないように、何も言わなかったんだ。"),
+                    ("Mum's always the one keeping the peace at Christmas.", "クリスマスに場を丸く収めるのはいつもママなんだ。")
+                 ], ipa: "/kiːp ðə piːs/"),
+            make("trust your gut", "to follow your instinct or feeling rather than thinking too much",
+                 "直感を信じる",
+                 useCases: ["迷っている人にアドバイスするとき", "直感で決めたことを話すとき"],
+                 examples: [
+                    ("If it feels wrong, trust your gut.", "何か違うと感じるなら、直感を信じなよ。"),
+                    ("I trusted my gut and turned the job down.", "直感を信じてその仕事は断ったんだ。")
+                 ], ipa: "/trʌst jə ɡʌt/"),
+            make("wait and see", "to wait to find out what happens before deciding or acting",
+                 "様子を見る・成り行きを見守る",
+                 useCases: ["結果がまだ分からないとき", "すぐに決めずに待つとき"],
+                 examples: [
+                    ("We'll just have to wait and see.", "様子を見るしかないね。"),
+                    ("Let's wait and see what the weather's like tomorrow.", "明日の天気がどうなるか様子を見よう。")
+                 ], ipa: "/weɪt ən siː/"),
+            make("on speaking terms", "friendly enough with someone to talk to them, especially after an argument",
+                 "口をきく仲である（喧嘩の後などで）",
+                 useCases: ["喧嘩した相手との関係を話すとき", "仲直りしたかどうかを話すとき"],
+                 examples: [
+                    ("Are you two back on speaking terms yet?", "二人はもう口きくようになったの？"),
+                    ("They're not on speaking terms after the argument.", "あの喧嘩以来、彼らは口をきいてないんだ。")
+                 ], ipa: "/ɒn ˈspiːkɪŋ tɜːmz/"),
+            make("find your way around", "to learn how to get to places in a new area, or how a new system works",
+                 "（新しい場所や仕組みに）慣れる・勝手が分かる",
+                 useCases: ["引っ越しや旅行先で道を覚えるとき", "新しい職場やアプリに慣れるとき"],
+                 examples: [
+                    ("It took me a week to find my way around the city.", "その街の道が分かるまで1週間かかったよ。"),
+                    ("Don't worry, you'll soon find your way around the office.", "大丈夫、すぐに職場の勝手が分かるようになるよ。")
+                 ], ipa: "/faɪnd jə weɪ əˈraʊnd/"),
         ]
     }
     private static var britishColloquial245: [Word] {
