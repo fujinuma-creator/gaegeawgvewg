@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231
         ]
         return groups.flatMap { $0 }
     }
@@ -40599,6 +40599,115 @@ enum SeedData {
                     ("I've no idea what that means — let me google it.", "それどういう意味か全然わからないな、ググってみる。"),
                     ("Just google it, it'll tell you the opening times.", "ググってみなよ、営業時間出てくるから。")
                  ], ipa: "/ˈɡuːɡl ɪt/"),
+        ]
+    }
+    private static var britishColloquial231: [Word] {
+        [
+            make("be a good sport", "to be cheerful and easy-going, especially about losing, being teased or joining in",
+                 "ノリがいい・潔い・付き合いがいい",
+                 useCases: ["からかわれても笑って流してくれた人に", "ゲームで負けても気にしない人を褒めるとき"],
+                 examples: [
+                    ("Thanks for being such a good sport about the joke.", "あのジョーク、笑って流してくれてありがとう。"),
+                    ("Come on, be a good sport and join in!", "ほら、ノリよく一緒にやろうよ！")
+                 ], ipa: "/bi ə ˌɡʊd ˈspɔːt/"),
+            make("good company", "a person who is enjoyable to spend time with",
+                 "一緒にいて楽しい人",
+                 useCases: ["友人や同僚の人柄を褒めるとき", "楽しい時間を過ごした後に"],
+                 examples: [
+                    ("Your brother's really good company.", "君のお兄さん、一緒にいて本当に楽しいね。"),
+                    ("Thanks for tonight — you're always good company.", "今夜はありがとう、君といるといつも楽しいよ。")
+                 ], ipa: "/ˌɡʊd ˈkʌmpəni/"),
+            make("sofa", "a long, comfortable seat for two or more people",
+                 "ソファ",
+                 useCases: ["家でくつろぐ話をするとき", "泊まる場所を提案するとき"],
+                 examples: [
+                    ("I just want to curl up on the sofa tonight.", "今夜はソファで丸くなってのんびりしたいだけ。"),
+                    ("You're welcome to sleep on the sofa if you miss the last train.", "終電逃したら、うちのソファで寝ていいよ。")
+                 ], ipa: "/ˈsəʊfə/"),
+            make("upstairs", "on or to a higher floor of a building; the opposite is downstairs",
+                 "上の階（へ）・2階（へ）",
+                 useCases: ["家や店の中で場所を伝えるとき", "近所の人の話をするとき"],
+                 examples: [
+                    ("The toilets are upstairs on the left.", "トイレは上の階の左側です。"),
+                    ("The people upstairs are having a party again.", "上の階の人たち、またパーティーしてるよ。")
+                 ], ipa: "/ˌʌpˈsteəz/"),
+            make("the long way round", "a route that is longer than necessary, sometimes chosen on purpose",
+                 "遠回り（の道）",
+                 useCases: ["道を間違えたとき", "景色を楽しむためにわざと遠回りするとき"],
+                 examples: [
+                    ("Sorry, I think I took the long way round.", "ごめん、遠回りしちゃったみたい。"),
+                    ("Let's go the long way round — it's a nicer walk.", "遠回りして行こうよ、そっちの方が気持ちいい散歩道だから。")
+                 ], ipa: "/ðə ˌlɒŋ weɪ ˈraʊnd/"),
+            make("on strike", "refusing to work as a protest, usually about pay or conditions",
+                 "ストライキ中で",
+                 useCases: ["電車やバスが止まっているとき", "ニュースの話をするとき"],
+                 examples: [
+                    ("The train drivers are on strike tomorrow, so I'm working from home.", "明日は運転士がストだから在宅勤務にするよ。"),
+                    ("Are the nurses still on strike?", "看護師さんたち、まだストライキ中なの？")
+                 ], ipa: "/ɒn ˈstraɪk/"),
+            make("souvenir", "something you buy or keep to remember a place or holiday",
+                 "お土産・記念品",
+                 useCases: ["旅行先で買い物をするとき", "旅の思い出を話すとき"],
+                 examples: [
+                    ("I brought you a little souvenir from Lisbon.", "リスボンからちょっとしたお土産を買ってきたよ。"),
+                    ("Let's pick up some souvenirs at the airport.", "空港でお土産を買っていこう。")
+                 ], ipa: "/ˌsuːvəˈnɪə/"),
+            make("reply all", "to send an email reply to everyone who received the original message",
+                 "全員に返信する",
+                 useCases: ["仕事のメールのやり取りで", "うっかり全員に送ってしまったとき"],
+                 examples: [
+                    ("Please don't reply all — just send it to me.", "全員に返信しないで、僕にだけ送って。"),
+                    ("Oops, I accidentally hit reply all.", "しまった、間違えて全員に返信しちゃった。")
+                 ], ipa: "/rɪˌplaɪ ˈɔːl/"),
+            make("frozen", "(of a computer, phone or video call) stopped working and not responding",
+                 "（画面・パソコンが）フリーズした・固まった",
+                 useCases: ["ビデオ通話で映像が止まったとき", "パソコンが動かなくなったとき"],
+                 examples: [
+                    ("Sorry, you've frozen — can you say that again?", "ごめん、画面が固まってる。もう一回言ってくれる？"),
+                    ("My laptop's frozen again, I'll have to restart it.", "パソコンがまたフリーズした、再起動しなきゃ。")
+                 ], ipa: "/ˈfrəʊzn/"),
+            make("fare", "the money you pay to travel on a bus, train, plane or taxi",
+                 "運賃・乗車料金",
+                 useCases: ["交通費の話をするとき", "タクシー代を割り勘するとき"],
+                 examples: [
+                    ("The taxi fare was only about fifteen euros.", "タクシー代は15ユーロくらいだったよ。"),
+                    ("Train fares have gone up again this year.", "今年も電車の運賃が上がったね。")
+                 ], ipa: "/feə/"),
+            make("drawer", "a box-shaped part of a piece of furniture that slides in and out, used for storing things",
+                 "引き出し",
+                 useCases: ["物の置き場所を教えるとき", "探し物をしているとき"],
+                 examples: [
+                    ("The scissors are in the top drawer.", "ハサミは一番上の引き出しに入ってるよ。"),
+                    ("I've checked every drawer and I still can't find my charger.", "引き出しを全部見たけど、まだ充電器が見つからない。")
+                 ], ipa: "/drɔː/"),
+            make("traffic lights", "a set of red, amber and green lights that control traffic at a junction",
+                 "信号（機）",
+                 useCases: ["道案内をするとき", "運転中の会話で"],
+                 examples: [
+                    ("Turn left at the traffic lights and it's on your right.", "信号を左に曲がると右側にあるよ。"),
+                    ("We got stuck at every single traffic light.", "全部の信号に引っかかっちゃった。")
+                 ], ipa: "/ˈtræfɪk laɪts/"),
+            make("unplug", "to disconnect something from the electricity; informally, to switch off from technology and relax",
+                 "コンセントを抜く・（スマホ等から離れて）デジタルデトックスする",
+                 useCases: ["家電を止めるとき", "休暇でネットから離れたいとき"],
+                 examples: [
+                    ("Did you unplug the iron before we left?", "出かける前にアイロンのコンセント抜いた？"),
+                    ("I really need a weekend to just unplug.", "スマホから離れてのんびりする週末が本当に必要だよ。")
+                 ], ipa: "/ʌnˈplʌɡ/"),
+            make("suncream", "a cream you put on your skin to protect it from the sun",
+                 "日焼け止め",
+                 useCases: ["ビーチや外出の準備のとき", "日差しが強い日に"],
+                 examples: [
+                    ("Don't forget to put some suncream on — it's really strong today.", "日焼け止め塗るの忘れないでね、今日は日差しが強いから。"),
+                    ("Has anyone got any suncream I could borrow?", "誰か日焼け止め貸してくれない？")
+                 ], ipa: "/ˈsʌnkriːm/"),
+            make("passport", "an official document you need to travel to other countries",
+                 "パスポート",
+                 useCases: ["旅行の準備をするとき", "空港で"],
+                 examples: [
+                    ("Have you got your passport? Check before we leave!", "パスポート持った？出る前に確認して！"),
+                    ("My passport runs out next year, so I need to renew it.", "パスポートが来年切れるから更新しないと。")
+                 ], ipa: "/ˈpɑːspɔːt/"),
         ]
     }
     private static var britishColloquial220: [Word] {
