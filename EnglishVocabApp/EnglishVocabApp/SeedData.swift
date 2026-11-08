@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235
         ]
         return groups.flatMap { $0 }
     }
@@ -41035,6 +41035,115 @@ enum SeedData {
                     ("You want to get a motorbike? Over my dead body!", "バイクが欲しい？絶対ダメ！"),
                     ("He wants to paint the kitchen pink? Over my dead body.", "キッチンをピンクに塗りたいって？死んでもイヤだよ。")
                  ], ipa: "/ˌəʊvə maɪ ˌded ˈbɒdi/"),
+        ]
+    }
+    private static var britishColloquial235: [Word] {
+        [
+            make("no laughing matter", "something serious that should not be joked about",
+                 "笑い事じゃない・深刻なこと",
+                 useCases: ["相手が軽く考えすぎているとき", "深刻な問題を強調するとき"],
+                 examples: [
+                    ("Losing your passport abroad is no laughing matter.", "海外でパスポートをなくすのは笑い事じゃないよ。"),
+                    ("I know it sounds funny, but it's no laughing matter for her.", "おかしく聞こえるだろうけど、彼女にとっては笑い事じゃないんだ。")
+                 ], ipa: "/nəʊ ˈlɑːfɪŋ ˌmætə/"),
+            make("fit like a glove", "to fit someone perfectly",
+                 "ぴったり合う・サイズが完璧",
+                 useCases: ["服や靴を試着したとき", "条件や役割がぴったりなとき"],
+                 examples: [
+                    ("Try this jacket on — I think it'll fit like a glove.", "このジャケット着てみて。ぴったりだと思うよ。"),
+                    ("These new shoes fit like a glove.", "この新しい靴、驚くほどぴったりなんだ。")
+                 ], ipa: "/ˌfɪt laɪk ə ˈɡlʌv/"),
+            make("fall apart", "to break into pieces because it is old or badly made; to stop working or become very upset",
+                 "ボロボロになる・崩れる・（精神的に）参る",
+                 useCases: ["古い物が壊れかけているとき", "計画や人が崩れてしまうとき"],
+                 examples: [
+                    ("My trainers are falling apart — I need a new pair.", "スニーカーがボロボロだから、新しいのが要るな。"),
+                    ("When his dad died, he completely fell apart.", "お父さんが亡くなったとき、彼はすっかり参ってしまった。")
+                 ], ipa: "/ˌfɔːl əˈpɑːt/"),
+            make("act up", "(of a machine) to not work properly; (of a child) to behave badly",
+                 "調子が悪い・（子どもが）言うことを聞かない",
+                 useCases: ["パソコンや車の不調を話すとき", "子どもがぐずっているとき"],
+                 examples: [
+                    ("My laptop's been acting up all morning.", "朝からずっとパソコンの調子が悪いんだ。"),
+                    ("The kids always act up when they're tired.", "子どもたちは疲れるといつも言うことを聞かなくなるんだよね。")
+                 ], ipa: "/ˌækt ˈʌp/"),
+            make("clear the table", "to take the plates and dishes away after a meal",
+                 "食卓を片付ける・食器を下げる",
+                 useCases: ["食後の家事を頼むとき", "手伝いを申し出るとき"],
+                 examples: [
+                    ("You cooked, so I'll clear the table.", "君が料理したから、片付けは僕がやるよ。"),
+                    ("Can someone help me clear the table, please?", "誰か食卓の片付け手伝ってくれる？")
+                 ], ipa: "/ˌklɪə ðə ˈteɪbl/"),
+            make("do a U-turn", "to turn a car round to go back; to completely change your opinion or plan",
+                 "Uターンする・（意見や方針を）180度変える",
+                 useCases: ["道を間違えたとき", "急に考えを変えた人について話すとき"],
+                 examples: [
+                    ("We missed the turning, so we had to do a U-turn.", "曲がるところを見逃したから、Uターンしなきゃいけなかった。"),
+                    ("He said he'd never move abroad, then did a complete U-turn.", "海外には絶対住まないって言ってたのに、完全に方針転換したんだよ。")
+                 ], ipa: "/ˌduː ə ˈjuː tɜːn/"),
+            make("a home from home", "a place where you feel as comfortable and relaxed as in your own home",
+                 "我が家のようにくつろげる場所",
+                 useCases: ["居心地の良い宿やカフェを褒めるとき", "友人の家でくつろいだとき"],
+                 examples: [
+                    ("This little hotel is a real home from home.", "この小さなホテル、本当に我が家みたいにくつろげるよ。"),
+                    ("My gran's house has always been a home from home for me.", "おばあちゃんの家は、いつも第二の我が家みたいな場所なんだ。")
+                 ], ipa: "/ə ˌhəʊm frəm ˈhəʊm/"),
+            make("search me", "(informal) I don't know; I have no idea",
+                 "さあね・知らないよ",
+                 useCases: ["答えがわからない質問をされたとき", "軽く肩をすくめて返すとき"],
+                 examples: [
+                    ("Where's Tom gone? — Search me.", "トムどこ行ったの？—さあね。"),
+                    ("Why is the train late again? — Search me!", "なんでまた電車遅れてるの？—知らないよ！")
+                 ], ipa: "/ˈsɜːtʃ ˌmiː/"),
+            make("take it as it comes", "to deal with things as they happen without planning or worrying too much",
+                 "成り行きに任せる・その都度対応する",
+                 useCases: ["先のことを心配しすぎないとき", "予定を決めずに過ごすとき"],
+                 examples: [
+                    ("I haven't planned the trip much — I'll just take it as it comes.", "旅行はあまり計画してないんだ。成り行きに任せるよ。"),
+                    ("New job, new city... I'm trying to take it as it comes.", "新しい仕事に新しい街…その都度対応していくつもりだよ。")
+                 ], ipa: "/ˌteɪk ɪt əz ɪt ˈkʌmz/"),
+            make("get in shape", "to become fit and healthy through exercise",
+                 "体を鍛える・体型を整える",
+                 useCases: ["運動を始める目標を話すとき", "夏や結婚式に向けて準備するとき"],
+                 examples: [
+                    ("I've joined a gym to get in shape before the summer.", "夏までに体を鍛えようとジムに入ったんだ。"),
+                    ("Running is a great way to get in shape.", "ランニングは体を絞るのにすごくいい方法だよ。")
+                 ], ipa: "/ˌɡet ɪn ˈʃeɪp/"),
+            make("pull a muscle", "to injure a muscle by stretching it too much",
+                 "筋を痛める・肉離れを起こす",
+                 useCases: ["運動中のケガを話すとき", "体が痛い理由を説明するとき"],
+                 examples: [
+                    ("I think I pulled a muscle playing football.", "サッカーしてて筋を痛めたみたい。"),
+                    ("Warm up first, or you'll pull a muscle.", "先にウォーミングアップしないと、筋を痛めるよ。")
+                 ], ipa: "/ˌpʊl ə ˈmʌsl/"),
+            make("talk it out", "to discuss a problem or disagreement openly until it is solved",
+                 "とことん話し合う・話し合って解決する",
+                 useCases: ["喧嘩や誤解を解消したいとき", "パートナーや同僚と問題を話し合うとき"],
+                 examples: [
+                    ("Instead of arguing by text, let's meet and talk it out.", "メッセージで言い合うより、会って話し合おうよ。"),
+                    ("We sat down and talked it out, and now we're fine.", "座ってじっくり話し合って、今はもう大丈夫だよ。")
+                 ], ipa: "/ˌtɔːk ɪt ˈaʊt/"),
+            make("have it out with", "to argue with someone openly in order to settle a problem",
+                 "（〜と）白黒つける・はっきり言い合う",
+                 useCases: ["不満を溜め込んでいる相手と対決するとき", "問題をはっきりさせたいとき"],
+                 examples: [
+                    ("I'm going to have it out with my flatmate about the mess.", "散らかしっぱなしの件、ルームメイトとはっきり話をつけるつもり。"),
+                    ("She finally had it out with her boss.", "彼女はついに上司と真っ向から言い合ったんだ。")
+                 ], ipa: "/ˌhæv ɪt ˈaʊt wɪð/"),
+            make("kiss and make up", "(informal) to become friends again after an argument",
+                 "仲直りする",
+                 useCases: ["喧嘩した友達やカップルについて話すとき", "仲直りを促すとき"],
+                 examples: [
+                    ("They had a big row, but they've already kissed and made up.", "大喧嘩したけど、もう仲直りしたよ。"),
+                    ("Come on, you two — kiss and make up!", "ほら二人とも、仲直りしなよ！")
+                 ], ipa: "/ˌkɪs ən ˌmeɪk ˈʌp/"),
+            make("put your foot down", "to be firm and refuse to allow something; (in a car) to accelerate",
+                 "断固として反対する・ビシッと言う・（車で）アクセルを踏む",
+                 useCases: ["子どもや相手のわがままをはっきり止めるとき", "急いで運転するとき"],
+                 examples: [
+                    ("The kids wanted to stay up till midnight, but I put my foot down.", "子どもたちは夜中まで起きてたがったけど、ビシッとダメって言ったよ。"),
+                    ("We're late — put your foot down!", "遅れてるよ、アクセル踏んで！")
+                 ], ipa: "/ˌpʊt jə ˈfʊt ˌdaʊn/"),
         ]
     }
     private static var britishColloquial220: [Word] {
