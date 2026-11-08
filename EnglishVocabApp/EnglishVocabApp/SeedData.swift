@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249
         ]
         return groups.flatMap { $0 }
     }
@@ -42234,6 +42234,115 @@ enum SeedData {
                     ("Deep down, I knew he was right.", "心の底では、彼が正しいって分かってたんだ。"),
                     ("He seems grumpy, but deep down he's really kind.", "無愛想に見えるけど、本当はすごく優しいんだよ。")
                  ], ipa: "/diːp daʊn/"),
+        ]
+    }
+    private static var britishColloquial249: [Word] {
+        [
+            make("take the plunge", "to finally decide to do something important or risky after thinking about it",
+                 "思い切ってやってみる・決心して踏み切る",
+                 useCases: ["転職・引っ越し・結婚など大きな決断について", "迷っていたことをついに始めたとき"],
+                 examples: [
+                    ("We finally took the plunge and bought a house.", "ついに思い切って家を買ったんだ。"),
+                    ("If you want to learn to surf, just take the plunge!", "サーフィンやりたいなら、思い切って始めちゃいなよ！")
+                 ], ipa: "/teɪk ðə plʌndʒ/"),
+            make("it remains to be seen", "used to say that something is not yet known or certain",
+                 "それはまだ分からない・今後次第だ",
+                 useCases: ["結果がまだ出ていないことについて", "楽観も悲観もせずに様子を見るとき"],
+                 examples: [
+                    ("It remains to be seen whether the plan will work.", "その計画がうまくいくかはまだ分からないね。"),
+                    ("He says he'll change, but that remains to be seen.", "変わるって言ってるけど、それはこれから次第だね。")
+                 ], ipa: "/ɪt rɪˈmeɪnz tə bi siːn/"),
+            make("in a word", "used before giving a very short answer or summary",
+                 "一言で言うと・要するに",
+                 useCases: ["感想や結論を一言でまとめるとき", "長く説明せずに答えるとき"],
+                 examples: [
+                    ("How was the holiday? In a word, amazing.", "休暇どうだった？一言で言うと、最高！"),
+                    ("In a word, no. I'm not doing it again.", "要するに、ノー。もう二度とやらないよ。")
+                 ], ipa: "/ɪn ə wɜːd/"),
+            make("not in so many words", "used to say that someone suggested something without saying it directly",
+                 "はっきりとは言わなかったけど（遠回しに）",
+                 useCases: ["相手が遠回しに伝えてきたことを説明するとき", "「本当にそう言ったの？」と聞かれたとき"],
+                 examples: [
+                    ("Did she say no? — Not in so many words, but yes.", "彼女、断ったの？—はっきりとは言わなかったけど、そういうこと。"),
+                    ("He told me, not in so many words, that I'd got the job.", "遠回しにだけど、採用だって彼が教えてくれたんだ。")
+                 ], ipa: "/nɒt ɪn səʊ ˈmeni wɜːdz/"),
+            make("hear it on the grapevine", "to hear news informally from other people, often as gossip",
+                 "噂で聞く・人づてに耳にする",
+                 useCases: ["噂話の出どころを言うとき", "正式発表前のニュースを聞いたとき"],
+                 examples: [
+                    ("I heard it on the grapevine that you're moving.", "引っ越すって噂で聞いたんだけど。"),
+                    ("Where did you hear that? — Oh, just on the grapevine.", "それどこで聞いたの？—いや、人づてにね。")
+                 ], ipa: "/hɪər ɪt ɒn ðə ˈɡreɪpvaɪn/"),
+            make("to the letter", "exactly, paying attention to every detail",
+                 "きっちりその通りに・一字一句守って",
+                 useCases: ["指示やレシピを正確に守るとき", "ルールを厳密に守ることを言うとき"],
+                 examples: [
+                    ("I followed the recipe to the letter, and it still went wrong.", "レシピ通りきっちり作ったのに、失敗しちゃった。"),
+                    ("You don't have to follow the rules to the letter.", "ルールをそこまで厳密に守らなくても大丈夫だよ。")
+                 ], ipa: "/tə ðə ˈletə/"),
+            make("fess up", "to admit that you have done something wrong (informal)",
+                 "白状する・正直に認める",
+                 useCases: ["いたずらや失敗を認めさせるとき", "自分のミスを打ち明けるとき"],
+                 examples: [
+                    ("Come on, fess up — who ate the last biscuit?", "ほら、白状して。最後のビスケット食べたの誰？"),
+                    ("I had to fess up that I'd forgotten her birthday.", "彼女の誕生日を忘れてたって正直に言うしかなかったよ。")
+                 ], ipa: "/fes ʌp/"),
+            make("get sidetracked", "to start doing or talking about something else and forget your main task",
+                 "脇道にそれる・気が散って本題から離れる",
+                 useCases: ["やるべきことが進まなかった理由を言うとき", "話が本題からそれたとき"],
+                 examples: [
+                    ("Sorry, I got sidetracked — what were we talking about?", "ごめん、話がそれちゃった。何の話してたっけ？"),
+                    ("I meant to tidy up, but I got sidetracked by my phone.", "片付けるつもりだったのに、スマホに気を取られちゃって。")
+                 ], ipa: "/ɡet ˈsaɪdtrækt/"),
+            make("go off on a tangent", "to suddenly start talking about something different from the main subject",
+                 "急に話が脱線する",
+                 useCases: ["話が関係ない方向に行ったとき", "自分の話の脱線を謝るとき"],
+                 examples: [
+                    ("Sorry, I've gone off on a tangent again.", "ごめん、また話が脱線しちゃった。"),
+                    ("He always goes off on a tangent in meetings.", "彼って会議でいつも話が脱線するんだよね。")
+                 ], ipa: "/ɡəʊ ɒf ɒn ə ˈtændʒənt/"),
+            make("you can't have it both ways", "used to say that someone cannot have two things that are not possible together",
+                 "両方いいとこ取りはできないよ",
+                 useCases: ["矛盾した要求をする人に言うとき", "どちらか選ぶ必要があるとき"],
+                 examples: [
+                    ("You want more free time but a bigger salary? You can't have it both ways.", "自由な時間も高い給料も欲しいって？両方は無理だよ。"),
+                    ("You can't have it both ways — either come or don't.", "いいとこ取りはできないよ。来るか来ないか決めて。")
+                 ], ipa: "/juː kɑːnt hæv ɪt bəʊθ weɪz/"),
+            make("try your hand at", "to try doing something for the first time to see if you can do it",
+                 "～に挑戦してみる・～をやってみる",
+                 useCases: ["新しい趣味やスキルを始めるとき", "初めてのことに挑戦した話をするとき"],
+                 examples: [
+                    ("I've decided to try my hand at baking bread.", "パン作りに挑戦してみることにしたんだ。"),
+                    ("Have you ever tried your hand at painting?", "絵を描いてみたことってある？")
+                 ], ipa: "/traɪ jɔː hænd æt/"),
+            make("dip your toe in the water", "to try something new carefully, in a small way, before fully committing",
+                 "まずは軽く試してみる・様子見で少しやってみる",
+                 useCases: ["新しいことを少しずつ始めるとき", "本格的に始める前に試すとき"],
+                 examples: [
+                    ("I'm just dipping my toe in the water with a part-time course.", "とりあえずパートタイムの講座で様子見してるところ。"),
+                    ("Why not dip your toe in the water before you quit your job?", "仕事を辞める前に、まずは少し試してみたら？")
+                 ], ipa: "/dɪp jɔː təʊ ɪn ðə ˈwɔːtə/"),
+            make("a step in the right direction", "an action that is a small but good improvement",
+                 "正しい方向への一歩・一歩前進",
+                 useCases: ["小さな改善を評価するとき", "まだ十分ではないが良い変化について"],
+                 examples: [
+                    ("It's not perfect, but it's a step in the right direction.", "完璧じゃないけど、一歩前進だよ。"),
+                    ("Going to bed earlier is a step in the right direction.", "早く寝るようにしたのは良い一歩だね。")
+                 ], ipa: "/ə step ɪn ðə raɪt dəˈrekʃn/"),
+            make("the done thing", "the socially accepted or polite way to behave in a situation",
+                 "当たり前のマナー・普通そうするもの",
+                 useCases: ["その場の常識やマナーを説明するとき", "習慣の違いについて話すとき"],
+                 examples: [
+                    ("Is tipping the done thing here?", "ここではチップを払うのが普通なの？"),
+                    ("Talking loudly on the train just isn't the done thing.", "電車で大声で話すのはマナー違反だよ。")
+                 ], ipa: "/ðə dʌn θɪŋ/"),
+            make("out of the picture", "no longer involved in a situation",
+                 "もう関わっていない・蚊帳の外",
+                 useCases: ["元恋人や関係者がもう関係ないと言うとき", "誰かが計画から外れたとき"],
+                 examples: [
+                    ("Her ex is completely out of the picture now.", "彼女の元カレはもう完全に関係ないよ。"),
+                    ("With Tom out of the picture, we need a new plan.", "トムが抜けたから、新しい計画が必要だね。")
+                 ], ipa: "/aʊt əv ðə ˈpɪktʃə/"),
         ]
     }
     private static var britishColloquial245: [Word] {
