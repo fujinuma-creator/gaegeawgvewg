@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234
         ]
         return groups.flatMap { $0 }
     }
@@ -40926,6 +40926,115 @@ enum SeedData {
                     ("Do you mind if I pay in cash?", "現金で払ってもいいですか？"),
                     ("It's a small café, so you'll need to pay in cash.", "小さなカフェだから、現金払いじゃないとダメだよ。")
                  ], ipa: "/ˌpeɪ ɪn ˈkæʃ/"),
+        ]
+    }
+    private static var britishColloquial234: [Word] {
+        [
+            make("take it the wrong way", "to be offended by something that was not meant to upset you",
+                 "悪く取る・誤解して気を悪くする",
+                 useCases: ["言いにくいことを言う前に", "誤解されたときに弁解するとき"],
+                 examples: [
+                    ("Don't take this the wrong way, but you look really tired.", "悪く取らないでほしいんだけど、すごく疲れて見えるよ。"),
+                    ("I think she took it the wrong way — I was only joking.", "彼女、悪く取ったみたい。冗談のつもりだったのに。")
+                 ], ipa: "/ˌteɪk ɪt ðə ˈrɒŋ ˌweɪ/"),
+            make("back on track", "making progress again as planned after a problem or delay",
+                 "軌道に戻って・順調に戻って",
+                 useCases: ["遅れていた計画が持ち直したとき", "生活リズムを立て直すとき"],
+                 examples: [
+                    ("After a messy start, the project is finally back on track.", "出だしはバタバタしたけど、プロジェクトはやっと軌道に戻ったよ。"),
+                    ("I ate rubbish all weekend, but I'm back on track now.", "週末はジャンクばかり食べたけど、もう元の生活に戻ったよ。")
+                 ], ipa: "/ˌbæk ɒn ˈtræk/"),
+            make("hands-on", "involving doing something yourself rather than just watching or talking",
+                 "実践的な・自分で手を動かす",
+                 useCases: ["仕事や授業のスタイルを話すとき", "上司や親の関わり方を説明するとき"],
+                 examples: [
+                    ("I learn best with a hands-on approach.", "私は実際に手を動かす方が身につくタイプなんだ。"),
+                    ("Our manager is very hands-on — she helps with everything.", "うちのマネージャーはすごく現場主義で、何でも手伝ってくれるんだ。")
+                 ], ipa: "/ˌhændz ˈɒn/"),
+            make("pack light", "to take only a small amount of luggage",
+                 "荷物を少なくする・身軽に旅する",
+                 useCases: ["旅行の準備を話すとき", "格安航空で旅するとき"],
+                 examples: [
+                    ("We're only going for two days, so pack light.", "2日だけだから、荷物は少なめにね。"),
+                    ("I always try to pack light, but I end up taking too much.", "いつも身軽にしようとするんだけど、結局持って行きすぎちゃう。")
+                 ], ipa: "/ˌpæk ˈlaɪt/"),
+            make("my lips are sealed", "I promise I will not tell anyone your secret",
+                 "絶対に誰にも言わないよ・口外しない",
+                 useCases: ["秘密を打ち明けられたとき", "サプライズの計画を聞いたとき"],
+                 examples: [
+                    ("Don't worry, my lips are sealed.", "心配しないで、誰にも言わないから。"),
+                    ("It's a surprise party, so not a word to Tom! — My lips are sealed.", "サプライズパーティーだからトムには内緒ね！—絶対言わないよ。")
+                 ], ipa: "/maɪ ˈlɪps ə ˌsiːld/"),
+            make("forgive and forget", "to stop being angry about something and act as if it never happened",
+                 "水に流す・許して忘れる",
+                 useCases: ["喧嘩の後に仲直りするとき", "過去のトラブルを引きずらないとき"],
+                 examples: [
+                    ("Life's too short — let's just forgive and forget.", "人生は短いんだから、もう水に流そうよ。"),
+                    ("I'm trying to forgive and forget, but it's not easy.", "水に流そうとしてるけど、簡単じゃないよ。")
+                 ], ipa: "/fəˌɡɪv ən fəˈɡet/"),
+            make("on good terms", "having a friendly relationship with someone",
+                 "良好な関係で・仲が良い",
+                 useCases: ["元恋人や元同僚との関係を話すとき", "家族や近所との関係を説明するとき"],
+                 examples: [
+                    ("We broke up, but we're still on good terms.", "別れたけど、今でも仲はいいよ。"),
+                    ("I left the company on good terms with my boss.", "上司とは円満に会社を辞めたよ。")
+                 ], ipa: "/ɒn ˌɡʊd ˈtɜːmz/"),
+            make("look in on", "to visit someone briefly to check they are all right",
+                 "（様子を見に）ちょっと立ち寄る",
+                 useCases: ["高齢の家族や病気の人を気遣うとき", "留守中のペットや家を頼むとき"],
+                 examples: [
+                    ("Could you look in on my cat while I'm away?", "留守の間、猫の様子を見に寄ってもらえる？"),
+                    ("I'll look in on Gran on my way home.", "帰りにおばあちゃんの様子を見てくるよ。")
+                 ], ipa: "/ˌlʊk ˈɪn ɒn/"),
+            make("a getaway", "a short holiday somewhere away from home",
+                 "（短い）休暇旅行・小旅行",
+                 useCases: ["週末旅行の計画を話すとき", "日常から離れたいとき"],
+                 examples: [
+                    ("We're planning a little getaway to the coast this weekend.", "今週末、海の方にちょっと小旅行する予定なんだ。"),
+                    ("I really need a getaway — work has been crazy.", "本当にどこか行きたい。仕事がめちゃくちゃ忙しくてさ。")
+                 ], ipa: "/ə ˈɡetəweɪ/"),
+            make("so I heard", "I already know that because someone told me",
+                 "そうらしいね・そう聞いたよ",
+                 useCases: ["相手の話をすでに知っていたとき", "噂を確認するとき"],
+                 examples: [
+                    ("Mark's moving to Berlin. — So I heard!", "マークがベルリンに引っ越すんだって。—そうらしいね！"),
+                    ("You got the job? So I heard — congratulations!", "仕事決まったんだって？聞いたよ、おめでとう！")
+                 ], ipa: "/ˌsəʊ aɪ ˈhɜːd/"),
+            make("quite the opposite", "the complete reverse of what was just said or expected",
+                 "むしろその逆で・全く反対で",
+                 useCases: ["相手の思い込みを訂正するとき", "予想と違った結果を話すとき"],
+                 examples: [
+                    ("Was the film boring? — Quite the opposite, it was brilliant!", "映画つまらなかった？—むしろ逆、最高だったよ！"),
+                    ("I'm not annoyed at all. Quite the opposite, actually.", "全然怒ってないよ。むしろその逆なんだ。")
+                 ], ipa: "/ˌkwaɪt ði ˈɒpəzɪt/"),
+            make("crash at someone's place", "(informal) to sleep at someone's home for a night, usually unplanned",
+                 "（人の家に）泊めてもらう・転がり込む",
+                 useCases: ["終電を逃したとき", "友達の家に一晩泊まるとき"],
+                 examples: [
+                    ("You missed the last train? Just crash at my place.", "終電逃したの？うちに泊まっていきなよ。"),
+                    ("Can I crash at your place tonight?", "今夜、泊めてもらってもいい？")
+                 ], ipa: "/ˌkræʃ ət ˈsʌmwʌnz ˌpleɪs/"),
+            make("are you free tonight?", "a common way to ask if someone has plans this evening",
+                 "今夜空いてる？",
+                 useCases: ["友達を誘うとき", "急に予定を立てたいとき"],
+                 examples: [
+                    ("Are you free tonight? Fancy grabbing dinner?", "今夜空いてる？ご飯でもどう？"),
+                    ("I'm not free tonight, but how about tomorrow?", "今夜は空いてないけど、明日はどう？")
+                 ], ipa: "/ə juː ˌfriː təˈnaɪt/"),
+            make("yeah, right", "(sarcastic) I don't believe what you just said",
+                 "はいはい・まさか（皮肉で）",
+                 useCases: ["相手の話を信じていないとき", "ありえない言い訳を聞いたとき"],
+                 examples: [
+                    ("He says he'll be on time tomorrow. — Yeah, right.", "彼、明日は時間通りに来るって。—はいはい、どうだか。"),
+                    ("\"I'll start my diet on Monday.\" Yeah, right!", "「月曜からダイエットする」だって。まさか！")
+                 ], ipa: "/ˌjeə ˈraɪt/"),
+            make("over my dead body", "(humorous) used to say you will never allow something",
+                 "絶対にさせない・死んでもイヤ",
+                 useCases: ["強く反対するとき", "冗談っぽく断固拒否するとき"],
+                 examples: [
+                    ("You want to get a motorbike? Over my dead body!", "バイクが欲しい？絶対ダメ！"),
+                    ("He wants to paint the kitchen pink? Over my dead body.", "キッチンをピンクに塗りたいって？死んでもイヤだよ。")
+                 ], ipa: "/ˌəʊvə maɪ ˌded ˈbɒdi/"),
         ]
     }
     private static var britishColloquial220: [Word] {
