@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252
         ]
         return groups.flatMap { $0 }
     }
@@ -42561,6 +42561,115 @@ enum SeedData {
                     ("It took me a week to find my way around the city.", "その街の道が分かるまで1週間かかったよ。"),
                     ("Don't worry, you'll soon find your way around the office.", "大丈夫、すぐに職場の勝手が分かるようになるよ。")
                  ], ipa: "/faɪnd jə weɪ əˈraʊnd/"),
+        ]
+    }
+    private static var britishColloquial252: [Word] {
+        [
+            make("it's roasting", "it's very hot (weather or a room)",
+                 "めちゃくちゃ暑い・蒸し風呂みたい",
+                 useCases: ["夏の暑さについて話すとき", "暖房が効きすぎた部屋で"],
+                 examples: [
+                    ("It's roasting outside today!", "今日は外がめちゃくちゃ暑いよ！"),
+                    ("Can we open a window? It's roasting in here.", "窓開けてもいい？ここ暑すぎるよ。")
+                 ], ipa: "/ɪts ˈrəʊstɪŋ/"),
+            make("pre-drinks", "drinks at someone's home before going out to a bar or party",
+                 "（出かける前の）宅飲み・0次会",
+                 useCases: ["夜遊びの前に家で軽く飲むとき", "パーティー前の集まりを誘うとき"],
+                 examples: [
+                    ("Pre-drinks at mine at eight?", "8時にうちで0次会どう？"),
+                    ("We had pre-drinks before heading into town.", "街に出る前に家で軽く飲んだんだ。")
+                 ], ipa: "/ˈpriː drɪŋks/"),
+            make("running on fumes", "continuing although you have almost no energy (or fuel) left",
+                 "気力だけで動いている・ほぼ限界",
+                 useCases: ["疲れ切っている状態を伝えるとき", "車のガソリンが空に近いとき"],
+                 examples: [
+                    ("I've barely slept – I'm running on fumes.", "ほとんど寝てなくて、気力だけで動いてるよ。"),
+                    ("By Friday, the whole team was running on fumes.", "金曜にはチーム全員がもう限界だったよ。")
+                 ], ipa: "/ˈrʌnɪŋ ɒn fjuːmz/"),
+            make("be stuck with", "to have something or someone you don't want and can't get rid of",
+                 "〜を押し付けられる・〜から逃れられない",
+                 useCases: ["嫌な役目や物を押し付けられたとき", "選択肢がなく我慢するしかないとき"],
+                 examples: [
+                    ("I got stuck with the washing-up again.", "また皿洗いを押し付けられたよ。"),
+                    ("We're stuck with this old car for now.", "当分はこの古い車で我慢するしかないね。")
+                 ], ipa: "/biː stʌk wɪð/"),
+            make("pull out of", "to decide not to take part in something you had agreed to",
+                 "〜から手を引く・〜を辞退する",
+                 useCases: ["予定やイベントへの参加を取りやめるとき", "契約や計画から撤退するとき"],
+                 examples: [
+                    ("She pulled out of the race with a knee injury.", "彼女は膝のケガでレースを棄権したんだ。"),
+                    ("I had to pull out of the trip – work's crazy.", "仕事が忙しすぎて旅行は辞退したよ。")
+                 ], ipa: "/pʊl aʊt əv/"),
+            make("guilty pleasure", "something you enjoy even though you feel it's a bit silly or bad for you",
+                 "ひそかな楽しみ・ちょっと恥ずかしい好きなもの",
+                 useCases: ["人に言いづらい趣味や好物を話すとき", "ダメだと分かっていてやめられないもの"],
+                 examples: [
+                    ("Reality TV is my guilty pleasure.", "リアリティ番組は私のひそかな楽しみなんだ。"),
+                    ("Crisps in bed – my ultimate guilty pleasure.", "ベッドでポテチ、最高に背徳的な楽しみだよ。")
+                 ], ipa: "/ˈɡɪlti ˈpleʒə/"),
+            make("a gig", "a live music performance; also an informal word for a job",
+                 "ライブ・コンサート／（単発の）仕事",
+                 useCases: ["ライブに行く話をするとき", "単発の仕事やバイトについて話すとき"],
+                 examples: [
+                    ("Do you want to go to a gig on Saturday?", "土曜にライブ行かない？"),
+                    ("I've got a new gig at a design agency.", "デザイン会社で新しい仕事が決まったんだ。")
+                 ], ipa: "/ə ɡɪɡ/"),
+            make("the daily grind", "the boring, tiring routine of everyday work",
+                 "毎日の決まりきった仕事・単調な日常",
+                 useCases: ["仕事の単調さを愚痴るとき", "休暇明けに日常へ戻るとき"],
+                 examples: [
+                    ("Back to the daily grind on Monday.", "月曜からまたいつもの仕事の日々だよ。"),
+                    ("I need a holiday from the daily grind.", "単調な毎日から離れて休みが欲しいよ。")
+                 ], ipa: "/ðə ˈdeɪli ɡraɪnd/"),
+            make("plough through", "to work hard and slowly to finish something long or boring",
+                 "（大量の仕事などを）こつこつ片付ける・やっとのことで読み進める",
+                 useCases: ["大量のメールや書類を片付けるとき", "長くて退屈な本を読み進めるとき"],
+                 examples: [
+                    ("I ploughed through 200 emails this morning.", "今朝は200通のメールを必死に片付けたよ。"),
+                    ("I'm still ploughing through that book.", "あの本、まだ頑張って読み進めてるところ。")
+                 ], ipa: "/plaʊ θruː/"),
+            make("daydream", "to think about pleasant things instead of what you should be doing",
+                 "空想にふける・ぼーっと考え事をする",
+                 useCases: ["授業や会議中にぼーっとしていたとき", "休暇や夢について想像するとき"],
+                 examples: [
+                    ("Sorry, I was daydreaming – what did you say?", "ごめん、ぼーっとしてた。何て言った？"),
+                    ("I keep daydreaming about my holiday.", "ずっと休暇のことばかり考えちゃうよ。")
+                 ], ipa: "/ˈdeɪdriːm/"),
+            make("go freelance", "to leave a company job and work for yourself for different clients",
+                 "フリーランスになる・独立する",
+                 useCases: ["独立や働き方の変化を話すとき", "会社を辞めて自分で仕事を始めるとき"],
+                 examples: [
+                    ("I'm thinking of going freelance next year.", "来年フリーランスになろうかと考えてるんだ。"),
+                    ("Since she went freelance, she's much happier.", "独立してから、彼女ずっと楽しそうだよ。")
+                 ], ipa: "/ɡəʊ ˈfriːlɑːns/"),
+            make("text someone back", "to reply to someone's text message",
+                 "（メッセージに）返信する",
+                 useCases: ["返信が遅れたことを謝るとき", "返事をくれない人について話すとき"],
+                 examples: [
+                    ("Sorry I didn't text you back – I fell asleep.", "返信しなくてごめん、寝落ちしてた。"),
+                    ("He still hasn't texted me back.", "彼、まだ返信くれないんだよね。")
+                 ], ipa: "/tekst ˈsʌmwʌn bæk/"),
+            make("talk rubbish", "to say things that are silly or not true",
+                 "でたらめを言う・くだらないことを言う",
+                 useCases: ["相手の発言を否定するとき（親しい間柄で）", "冗談まじりにツッコむとき"],
+                 examples: [
+                    ("Don't talk rubbish – you look great!", "何言ってるの、すごく素敵だよ！"),
+                    ("He was talking rubbish after a few drinks.", "彼、何杯か飲んだらくだらないことばっかり言ってたよ。")
+                 ], ipa: "/tɔːk ˈrʌbɪʃ/"),
+            make("space out", "to stop paying attention and stare without thinking, often when tired",
+                 "ぼーっとする・上の空になる",
+                 useCases: ["疲れて集中できないとき", "話を聞き逃したことを謝るとき"],
+                 examples: [
+                    ("Sorry, I totally spaced out for a second.", "ごめん、一瞬完全にぼーっとしてた。"),
+                    ("I always space out in long meetings.", "長い会議だといつも上の空になっちゃう。")
+                 ], ipa: "/speɪs aʊt/"),
+            make("lose sleep over", "to worry about something so much that you can't sleep (often used in the negative)",
+                 "〜のことで眠れないほど悩む",
+                 useCases: ["気にしなくていいと励ますとき", "大したことではないと伝えるとき"],
+                 examples: [
+                    ("Don't lose sleep over it – it's not a big deal.", "そんなことで悩まないで、大したことじゃないよ。"),
+                    ("I'm not going to lose sleep over one bad review.", "悪いレビュー1件くらいで眠れなくなったりしないよ。")
+                 ], ipa: "/luːz sliːp ˈəʊvə/"),
         ]
     }
     private static var britishColloquial245: [Word] {
