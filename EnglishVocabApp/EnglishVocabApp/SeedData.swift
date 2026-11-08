@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253
         ]
         return groups.flatMap { $0 }
     }
@@ -42670,6 +42670,115 @@ enum SeedData {
                     ("Don't lose sleep over it – it's not a big deal.", "そんなことで悩まないで、大したことじゃないよ。"),
                     ("I'm not going to lose sleep over one bad review.", "悪いレビュー1件くらいで眠れなくなったりしないよ。")
                  ], ipa: "/luːz sliːp ˈəʊvə/"),
+        ]
+    }
+    private static var britishColloquial253: [Word] {
+        [
+            make("buckle down", "to start working hard and seriously on something",
+                 "本腰を入れる・真剣に取りかかる",
+                 useCases: ["試験や締め切りに向けて集中するとき", "だらけていた状態から気持ちを切り替えるとき"],
+                 examples: [
+                    ("Exams are next week – time to buckle down.", "試験は来週だ、そろそろ本腰入れないと。"),
+                    ("Once he buckled down, he finished it in a day.", "本気を出したら、彼は1日で終わらせたよ。")
+                 ], ipa: "/ˈbʌkl daʊn/"),
+            make("pull your socks up", "to make more effort because your work or behaviour isn't good enough",
+                 "気合を入れ直す・しっかりやる",
+                 useCases: ["怠けている人に喝を入れるとき", "自分の反省を込めて言うとき"],
+                 examples: [
+                    ("You'll need to pull your socks up if you want that promotion.", "昇進したいなら気合入れ直さないとね。"),
+                    ("I really need to pull my socks up at the gym.", "ジムでもっと真剣にやらなきゃな。")
+                 ], ipa: "/pʊl jə sɒks ʌp/"),
+            make("muck in", "to join in and help with work, sharing the effort with others",
+                 "みんなで手伝う・協力して作業する",
+                 useCases: ["引っ越しや片付けを皆でやるとき", "チームで仕事を分担するとき"],
+                 examples: [
+                    ("Everyone mucked in and we cleared the garden in an hour.", "みんなで手伝って、庭は1時間で片付いたよ。"),
+                    ("If we all muck in, we'll be done by lunch.", "全員で協力すれば、お昼までに終わるよ。")
+                 ], ipa: "/mʌk ɪn/"),
+            make("jam-packed", "extremely full of people or things",
+                 "ぎゅうぎゅう詰め・予定がびっしり",
+                 useCases: ["電車や店が混んでいるとき", "スケジュールが詰まっているとき"],
+                 examples: [
+                    ("The train was jam-packed this morning.", "今朝の電車、ぎゅうぎゅう詰めだったよ。"),
+                    ("My week is jam-packed – can we do next Monday?", "今週は予定がびっしりなんだ、来週の月曜でもいい？")
+                 ], ipa: "/ˌdʒæm ˈpækt/"),
+            make("keep it under wraps", "to keep something secret for now",
+                 "（しばらく）内緒にしておく",
+                 useCases: ["発表前のニュースを口止めするとき", "サプライズの計画を秘密にするとき"],
+                 examples: [
+                    ("We're engaged, but keep it under wraps for now.", "婚約したんだけど、今は内緒にしておいてね。"),
+                    ("They kept the new design under wraps until the launch.", "新デザインは発売まで秘密にされていたんだ。")
+                 ], ipa: "/kiːp ɪt ˈʌndə ræps/"),
+            make("wolf down", "to eat something very quickly and hungrily",
+                 "がつがつ食べる・かきこむ",
+                 useCases: ["急いで食事を済ませるとき", "お腹ペコペコで勢いよく食べる様子"],
+                 examples: [
+                    ("I wolfed down a sandwich between meetings.", "会議の合間にサンドイッチをかきこんだよ。"),
+                    ("Slow down – you don't have to wolf it down!", "ゆっくり食べなよ、そんなにがっつかなくても！")
+                 ], ipa: "/wʊlf daʊn/"),
+            make("knock back", "to drink something quickly, especially alcohol; also to reject someone",
+                 "（酒を）ぐいっと飲む／断る・却下する",
+                 useCases: ["お酒を一気に飲む様子を話すとき", "申し出や応募を断られたとき"],
+                 examples: [
+                    ("He knocked back his pint and headed home.", "彼はビールをぐいっと飲み干して帰っていった。"),
+                    ("I got knocked back for the job, but I'll try again.", "その仕事は落ちたけど、また挑戦するよ。")
+                 ], ipa: "/nɒk bæk/"),
+            make("dig out", "to find something that has been put away or hidden for a long time",
+                 "（しまってある物を）引っ張り出す・探し出す",
+                 useCases: ["古い写真や服を探し出すとき", "書類やデータを見つけ出すとき"],
+                 examples: [
+                    ("I dug out my old winter coat this morning.", "今朝、古い冬用コートを引っ張り出したよ。"),
+                    ("Let me dig out that email and forward it to you.", "そのメール探して転送するね。")
+                 ], ipa: "/dɪɡ aʊt/"),
+            make("give someone a hug", "to put your arms around someone to show affection or comfort",
+                 "（人を）ハグする・抱きしめる",
+                 useCases: ["再会や別れのあいさつで", "落ち込んでいる人を慰めるとき"],
+                 examples: [
+                    ("Come here and give me a hug!", "こっちおいで、ハグしよう！"),
+                    ("She looked upset, so I gave her a hug.", "彼女が落ち込んでいたから、ハグしてあげたんだ。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ə hʌɡ/"),
+            make("a leaving do", "a party for someone who is leaving a job or place",
+                 "送別会",
+                 useCases: ["同僚の退職・異動のとき", "引っ越す友人を送り出すとき"],
+                 examples: [
+                    ("Are you coming to Sarah's leaving do on Friday?", "金曜のサラの送別会、来る？"),
+                    ("We're having a leaving do for Tom at the pub.", "パブでトムの送別会をやるんだ。")
+                 ], ipa: "/ə ˈliːvɪŋ duː/"),
+            make("a whip-round", "when a group of people each give some money to buy something together",
+                 "（皆でお金を出し合う）カンパ・集金",
+                 useCases: ["同僚へのプレゼント代を集めるとき", "お祝いや寄付のお金を集めるとき"],
+                 examples: [
+                    ("We had a whip-round for her birthday present.", "彼女の誕生日プレゼントのためにみんなでカンパしたよ。"),
+                    ("Let's do a whip-round for the taxi.", "タクシー代、みんなで出し合おう。")
+                 ], ipa: "/ə ˈwɪp raʊnd/"),
+            make("fancy someone", "to find someone attractive and be romantically interested in them",
+                 "（異性として）〜が気になる・〜に気がある",
+                 useCases: ["恋愛の話をするとき", "友人の好きな人を冷やかすとき"],
+                 examples: [
+                    ("I think Jake fancies you!", "ジェイク、君に気があると思うよ！"),
+                    ("Do you fancy anyone at work?", "職場に気になる人いる？")
+                 ], ipa: "/ˈfænsi ˈsʌmwʌn/"),
+            make("lounge about", "to relax and do very little, usually sitting or lying around",
+                 "だらだら過ごす・ごろごろする",
+                 useCases: ["休日の過ごし方を話すとき", "何もしない一日を表すとき"],
+                 examples: [
+                    ("I just lounged about in my pyjamas all Sunday.", "日曜はずっとパジャマでごろごろしてたよ。"),
+                    ("Stop lounging about and help me with dinner!", "だらだらしてないで夕飯手伝ってよ！")
+                 ], ipa: "/laʊndʒ əˈbaʊt/"),
+            make("dunk", "to quickly dip food, like a biscuit, into a drink",
+                 "（ビスケットなどを飲み物に）浸す",
+                 useCases: ["紅茶やコーヒーにお菓子を浸すとき", "食べ方の好みを話すとき"],
+                 examples: [
+                    ("Do you dunk your biscuits in your tea?", "ビスケットを紅茶に浸して食べる派？"),
+                    ("Dunk the bread in the soup – it's lovely.", "パンをスープに浸してみて、美味しいよ。")
+                 ], ipa: "/dʌŋk/"),
+            make("a peck on the cheek", "a quick, light kiss on the cheek",
+                 "ほっぺへの軽いキス",
+                 useCases: ["あいさつのキスについて話すとき", "家族や友人への軽い愛情表現"],
+                 examples: [
+                    ("She gave her gran a peck on the cheek.", "彼女はおばあちゃんのほっぺに軽くキスをした。"),
+                    ("In France, friends greet each other with a peck on the cheek.", "フランスでは友達同士ほっぺに軽くキスしてあいさつするんだ。")
+                 ], ipa: "/ə pek ɒn ðə tʃiːk/"),
         ]
     }
     private static var britishColloquial245: [Word] {
