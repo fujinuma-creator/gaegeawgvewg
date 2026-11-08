@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250
         ]
         return groups.flatMap { $0 }
     }
@@ -42343,6 +42343,115 @@ enum SeedData {
                     ("Her ex is completely out of the picture now.", "彼女の元カレはもう完全に関係ないよ。"),
                     ("With Tom out of the picture, we need a new plan.", "トムが抜けたから、新しい計画が必要だね。")
                  ], ipa: "/aʊt əv ðə ˈpɪktʃə/"),
+        ]
+    }
+    private static var britishColloquial250: [Word] {
+        [
+            make("run something by someone", "to tell someone about an idea or plan to get their opinion or approval",
+                 "（意見をもらうために）〜に話してみる・確認してもらう",
+                 useCases: ["上司や友人に案を確認してもらうとき", "決める前に相手の意見を聞きたいとき"],
+                 examples: [
+                    ("Let me run it by my boss first.", "まず上司に確認してみるね。"),
+                    ("Can I run something by you? I'd like your opinion.", "ちょっと聞いてもらっていい？意見が欲しいんだ。")
+                 ], ipa: "/rʌn ˈsʌmθɪŋ baɪ ˈsʌmwʌn/"),
+            make("pop the question", "to ask someone to marry you",
+                 "プロポーズする",
+                 useCases: ["プロポーズの話をするとき", "カップルの近況を話すとき"],
+                 examples: [
+                    ("He finally popped the question on holiday in Italy.", "彼、イタリア旅行でついにプロポーズしたんだって。"),
+                    ("When are you going to pop the question?", "いつプロポーズするつもりなの？")
+                 ], ipa: "/pɒp ðə ˈkwestʃən/"),
+            make("for good measure", "in addition to what is needed, as an extra",
+                 "おまけに・念のためにもう一つ",
+                 useCases: ["必要以上に少し足すとき", "念のために追加でやったことを言うとき"],
+                 examples: [
+                    ("I added a bit more chilli for good measure.", "おまけにチリをもう少し足しておいたよ。"),
+                    ("I locked the door and checked it twice for good measure.", "鍵をかけて、念のため2回確認したよ。")
+                 ], ipa: "/fə ɡʊd ˈmeʒə/"),
+            make("touch on", "to mention a subject briefly",
+                 "（話題に）軽く触れる",
+                 useCases: ["会議や会話で少しだけ話題に出すとき", "詳しく話さなかったことを説明するとき"],
+                 examples: [
+                    ("We only touched on the budget in the meeting.", "会議では予算について軽く触れただけだったよ。"),
+                    ("She touched on it, but didn't go into detail.", "彼女はそれに触れたけど、詳しくは話さなかったね。")
+                 ], ipa: "/tʌtʃ ɒn/"),
+            make("go through the motions", "to do something without real effort or interest, just because you have to",
+                 "形だけやる・気持ちが入らずにこなす",
+                 useCases: ["やる気がないまま仕事や練習をするとき", "惰性で続けている状態を言うとき"],
+                 examples: [
+                    ("I'm just going through the motions at work these days.", "最近、仕事は形だけこなしてる感じなんだ。"),
+                    ("If you're just going through the motions, take a break.", "気持ちが入ってないなら、少し休みなよ。")
+                 ], ipa: "/ɡəʊ θruː ðə ˈməʊʃənz/"),
+            make("get the go-ahead", "to receive permission to start doing something",
+                 "許可が出る・ゴーサインをもらう",
+                 useCases: ["計画やプロジェクトが承認されたとき", "何かを始める許可をもらったとき"],
+                 examples: [
+                    ("We got the go-ahead to start the project next month.", "来月プロジェクトを始めるゴーサインが出たよ。"),
+                    ("Have you got the go-ahead from your landlord?", "大家さんから許可はもらったの？")
+                 ], ipa: "/ɡet ðə ˈɡəʊ əhed/"),
+            make("give someone the green light", "to give permission for something to happen",
+                 "〜に許可を出す・ゴーサインを出す",
+                 useCases: ["上司や親などが許可したとき", "計画を進めてよいと伝えるとき"],
+                 examples: [
+                    ("My parents gave me the green light to go travelling.", "親が旅行に行っていいって許可してくれたんだ。"),
+                    ("The council has given the green light to the new park.", "市が新しい公園の計画を承認したよ。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ðə ɡriːn laɪt/"),
+            make("a bit of a gamble", "something risky that might or might not succeed",
+                 "ちょっとした賭け・リスクのあること",
+                 useCases: ["結果が読めない決断について", "思い切った選択をするとき"],
+                 examples: [
+                    ("Moving abroad is a bit of a gamble, but I'm excited.", "海外に引っ越すのはちょっとした賭けだけど、ワクワクしてる。"),
+                    ("Booking without reviews was a bit of a gamble.", "レビューなしで予約したのはちょっと賭けだったね。")
+                 ], ipa: "/ə bɪt əv ə ˈɡæmbəl/"),
+            make("the works", "everything that is usually included; all the extras",
+                 "全部入り・フルセット",
+                 useCases: ["料理のトッピングを全部のせにするとき", "サービスや準備を一通り全部揃えるとき"],
+                 examples: [
+                    ("I'll have a burger with the works, please.", "ハンバーガー、全部のせでお願いします。"),
+                    ("They had the works at their wedding — band, fireworks, the lot.", "彼らの結婚式はバンドに花火に、全部揃ってたよ。")
+                 ], ipa: "/ðə wɜːks/"),
+            make("have a crack at", "to try to do something, especially for the first time (informal)",
+                 "〜に挑戦してみる・やってみる",
+                 useCases: ["初めてのことに挑戦するとき", "難しそうなことを試してみるとき"],
+                 examples: [
+                    ("I've never made sushi, but I'll have a crack at it.", "お寿司は作ったことないけど、やってみるよ。"),
+                    ("Do you want to have a crack at fixing it?", "それ、直すの挑戦してみる？")
+                 ], ipa: "/hæv ə kræk æt/"),
+            make("get a kick out of", "to really enjoy something",
+                 "〜がすごく楽しい・〜にワクワクする",
+                 useCases: ["好きなことや楽しいことを話すとき", "意外なことが楽しいと言うとき"],
+                 examples: [
+                    ("I get a real kick out of cooking for friends.", "友達に料理を作るのが本当に楽しいんだ。"),
+                    ("Kids get a kick out of seeing the animals up close.", "子どもたちは動物を間近で見るのが大好きなんだよ。")
+                 ], ipa: "/ɡet ə kɪk aʊt əv/"),
+            make("a tall order", "something that is very difficult to do or achieve",
+                 "無理な注文・難しい要求",
+                 useCases: ["無理のある頼みごとやスケジュールについて", "達成が難しいことを言うとき"],
+                 examples: [
+                    ("Finishing it by Friday is a bit of a tall order.", "金曜までに終わらせるのはちょっと厳しいね。"),
+                    ("Finding a cheap flat in the centre is a tall order.", "中心部で安い部屋を見つけるのは難しいよ。")
+                 ], ipa: "/ə tɔːl ˈɔːdə/"),
+            make("par for the course", "what you would normally expect to happen, often something negative",
+                 "よくあること・いつものこと",
+                 useCases: ["遅延やトラブルが想定内だと言うとき", "ある状況では普通のことだと言うとき"],
+                 examples: [
+                    ("Delays are par for the course on this train line.", "この路線では遅延なんていつものことだよ。"),
+                    ("Long hours are par for the course in this job.", "この仕事だと長時間労働はよくあることなんだ。")
+                 ], ipa: "/pɑː fə ðə kɔːs/"),
+            make("in the thick of it", "very busy with or deeply involved in an activity or situation",
+                 "真っ只中で・まさに忙しい最中で",
+                 useCases: ["忙しさのピークにいるとき", "トラブルや出来事の中心にいるとき"],
+                 examples: [
+                    ("Sorry I haven't called — I'm in the thick of exams.", "連絡できなくてごめん、試験の真っ只中なんだ。"),
+                    ("She's always right in the thick of it when there's drama.", "揉め事があると、彼女はいつもど真ん中にいるよね。")
+                 ], ipa: "/ɪn ðə θɪk əv ɪt/"),
+            make("at a guess", "used when giving an answer you are not sure about",
+                 "たぶん・ざっと見当をつけると",
+                 useCases: ["正確には分からない数字や時間を答えるとき", "推測で答えるとき"],
+                 examples: [
+                    ("How many people came? — At a guess, about fifty.", "何人来た？—たぶん50人くらいかな。"),
+                    ("At a guess, I'd say it'll take two hours.", "ざっと見て、2時間くらいかかると思うよ。")
+                 ], ipa: "/æt ə ɡes/"),
         ]
     }
     private static var britishColloquial245: [Word] {
