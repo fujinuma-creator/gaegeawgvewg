@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233
         ]
         return groups.flatMap { $0 }
     }
@@ -40817,6 +40817,115 @@ enum SeedData {
                     ("Tom will show you the ropes on your first day.", "初日はトムが仕事のやり方を教えてくれるよ。"),
                     ("Can you show the new guy the ropes?", "新しく入った人に仕事を教えてあげてくれる？")
                  ], ipa: "/ˌʃəʊ ˌsʌmwʌn ðə ˈrəʊps/"),
+        ]
+    }
+    private static var britishColloquial233: [Word] {
+        [
+            make("far-fetched", "difficult to believe because it is very unlikely",
+                 "こじつけの・ありえない・信じがたい",
+                 useCases: ["話や言い訳が信じられないとき", "映画の展開に無理があるとき"],
+                 examples: [
+                    ("That story sounds a bit far-fetched to me.", "その話、ちょっと信じがたいな。"),
+                    ("The plot was good, but the ending was a bit far-fetched.", "話は良かったけど、結末はちょっと無理があったね。")
+                 ], ipa: "/ˌfɑː ˈfetʃt/"),
+            make("have the time of my life", "to enjoy yourself very much",
+                 "最高に楽しい時間を過ごす",
+                 useCases: ["旅行やパーティーの感想を言うとき", "最高の思い出を話すとき"],
+                 examples: [
+                    ("We had the time of our lives in Barcelona.", "バルセロナで最高の時間を過ごしたよ。"),
+                    ("The kids are having the time of their lives at the beach.", "子どもたちはビーチで大はしゃぎしてるよ。")
+                 ], ipa: "/hæv ðə ˌtaɪm əv maɪ ˈlaɪf/"),
+            make("under pressure", "feeling stressed because you have to do a lot or meet expectations",
+                 "プレッシャーを感じて・追い詰められて",
+                 useCases: ["仕事や試験のストレスを話すとき", "相手を気遣うとき"],
+                 examples: [
+                    ("I'm under a lot of pressure at work at the moment.", "今、仕事でかなりプレッシャーがかかってるんだ。"),
+                    ("Don't feel under pressure — take as long as you need.", "プレッシャーに感じないで、必要なだけ時間をかけていいよ。")
+                 ], ipa: "/ˌʌndə ˈpreʃə/"),
+            make("out of the loop", "not informed about what is happening",
+                 "蚊帳の外で・事情を知らされていない",
+                 useCases: ["話についていけないとき", "休み明けに状況が分からないとき"],
+                 examples: [
+                    ("Sorry, I've been away — I'm a bit out of the loop.", "ごめん、休んでたからちょっと事情が分かってないんだ。"),
+                    ("Why does nobody tell me anything? I'm always out of the loop!", "なんで誰も教えてくれないの？いつも蚊帳の外だよ！")
+                 ], ipa: "/ˌaʊt əv ðə ˈluːp/"),
+            make("you're pulling my leg", "you are joking or teasing me",
+                 "からかってるでしょ・冗談でしょ",
+                 useCases: ["信じられない話を聞いたとき", "冗談か本気か確かめるとき"],
+                 examples: [
+                    ("You won the lottery? You're pulling my leg!", "宝くじ当たった？冗談でしょ！"),
+                    ("Relax, I'm only pulling your leg.", "落ち着いて、からかってるだけだよ。")
+                 ], ipa: "/jɔː ˌpʊlɪŋ maɪ ˈleɡ/"),
+            make("out of season", "outside the busy holiday period, or (of food) not naturally available now",
+                 "オフシーズンで・旬じゃない",
+                 useCases: ["旅行の時期を話すとき", "食材の旬について話すとき"],
+                 examples: [
+                    ("It's much cheaper to go out of season.", "オフシーズンに行く方がずっと安いよ。"),
+                    ("Strawberries are out of season, so they're really expensive.", "イチゴは今旬じゃないから、すごく高いね。")
+                 ], ipa: "/ˌaʊt əv ˈsiːzn/"),
+            make("one day at a time", "dealing with things gradually without worrying about the future",
+                 "一日一日を大切に・焦らず少しずつ",
+                 useCases: ["大変な状況の人を励ますとき", "回復中の人と話すとき"],
+                 examples: [
+                    ("Don't stress about next month — just take it one day at a time.", "来月のことは気にしないで、一日ずつやっていこう。"),
+                    ("I'm getting better, one day at a time.", "少しずつ良くなってるよ。")
+                 ], ipa: "/ˌwʌn ˈdeɪ ət ə ˈtaɪm/"),
+            make("dead end", "a road with no way out, or a situation with no chance of progress",
+                 "行き止まり・先がない状況",
+                 useCases: ["道案内のとき", "将来性のない仕事や状況を話すとき"],
+                 examples: [
+                    ("Don't go down there — it's a dead end.", "そっちに行かないで、行き止まりだから。"),
+                    ("I feel like I'm stuck in a dead-end job.", "先の見えない仕事にはまってる気がする。")
+                 ], ipa: "/ˌded ˈend/"),
+            make("long-winded", "too long and boring, using more words than necessary",
+                 "話が長ったらしい・回りくどい",
+                 useCases: ["長いスピーチや説明について", "自分の話が長くなったと謝るとき"],
+                 examples: [
+                    ("Sorry, that was a bit long-winded.", "ごめん、ちょっと話が長くなっちゃった。"),
+                    ("His explanations are always so long-winded.", "彼の説明はいつも回りくどいんだよね。")
+                 ], ipa: "/ˌlɒŋ ˈwɪndɪd/"),
+            make("in the small hours", "very early in the morning, just after midnight",
+                 "真夜中に・明け方近くに",
+                 useCases: ["夜更かしした話をするとき", "夜中の出来事を話すとき"],
+                 examples: [
+                    ("We were chatting until the small hours.", "明け方近くまでおしゃべりしてたよ。"),
+                    ("The baby woke up in the small hours again.", "赤ちゃんがまた夜中に起きちゃって。")
+                 ], ipa: "/ɪn ðə ˌsmɔːl ˈaʊəz/"),
+            make("on the way back", "while returning from somewhere",
+                 "帰り道に・帰りがけに",
+                 useCases: ["ついでの用事を頼むとき", "帰り道の出来事を話すとき"],
+                 examples: [
+                    ("Could you grab some milk on the way back?", "帰りに牛乳買ってきてくれる？"),
+                    ("We stopped for lunch on the way back.", "帰り道にお昼を食べたよ。")
+                 ], ipa: "/ɒn ðə ˌweɪ ˈbæk/"),
+            make("take a turn for the better", "to start to improve",
+                 "好転する・良い方向に向かう",
+                 useCases: ["病状や状況が良くなったとき", "天気が回復したとき"],
+                 examples: [
+                    ("Things have taken a turn for the better since I changed jobs.", "転職してから状況が好転したよ。"),
+                    ("Grandad's health has taken a turn for the better.", "おじいちゃんの体調が良くなってきたよ。")
+                 ], ipa: "/ˌteɪk ə ˈtɜːn fə ðə ˈbetə/"),
+            make("round trip", "a journey to a place and back again",
+                 "往復（の旅）",
+                 useCases: ["移動時間や距離を話すとき", "チケットを買うとき"],
+                 examples: [
+                    ("It's about a two-hour round trip.", "往復で2時間くらいだよ。"),
+                    ("Is it cheaper to book a round trip?", "往復で予約した方が安いですか？")
+                 ], ipa: "/ˌraʊnd ˈtrɪp/"),
+            make("ramble on", "to talk for a long time in a confused or boring way",
+                 "だらだらしゃべり続ける",
+                 useCases: ["話が脱線したと謝るとき", "長話について話すとき"],
+                 examples: [
+                    ("Sorry, I'm rambling on — what were you saying?", "ごめん、だらだら話しちゃって。何て言ってたっけ？"),
+                    ("He rambled on about his holiday for an hour.", "彼は休暇の話を1時間もだらだら話してたよ。")
+                 ], ipa: "/ˌræmbl ˈɒn/"),
+            make("pay in cash", "to pay with notes and coins instead of a card",
+                 "現金で払う",
+                 useCases: ["お店で支払うとき", "カードが使えるか確認するとき"],
+                 examples: [
+                    ("Do you mind if I pay in cash?", "現金で払ってもいいですか？"),
+                    ("It's a small café, so you'll need to pay in cash.", "小さなカフェだから、現金払いじゃないとダメだよ。")
+                 ], ipa: "/ˌpeɪ ɪn ˈkæʃ/"),
         ]
     }
     private static var britishColloquial220: [Word] {
