@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232
         ]
         return groups.flatMap { $0 }
     }
@@ -40708,6 +40708,115 @@ enum SeedData {
                     ("Have you got your passport? Check before we leave!", "パスポート持った？出る前に確認して！"),
                     ("My passport runs out next year, so I need to renew it.", "パスポートが来年切れるから更新しないと。")
                  ], ipa: "/ˈpɑːspɔːt/"),
+        ]
+    }
+    private static var britishColloquial232: [Word] {
+        [
+            make("I spoke too soon", "said when something goes wrong right after you said it was going well",
+                 "言うのが早すぎた・言った途端にこれだ",
+                 useCases: ["「順調」と言った直後に問題が起きたとき", "天気が急に崩れたとき"],
+                 examples: [
+                    ("I said the train was on time — I spoke too soon.", "電車が時間通りって言ったのに、言った途端にこれだよ。"),
+                    ("Don't speak too soon, it might still rain.", "まだ言わない方がいいよ、雨が降るかもしれないし。")
+                 ], ipa: "/aɪ ˌspəʊk tuː ˈsuːn/"),
+            make("beginner's luck", "unexpected success when you try something for the first time",
+                 "ビギナーズラック",
+                 useCases: ["初めてのゲームやスポーツで勝ったとき", "謙遜するとき"],
+                 examples: [
+                    ("I won my first game of darts — must be beginner's luck.", "初めてのダーツで勝っちゃった、ビギナーズラックだね。"),
+                    ("Don't get too excited, it's just beginner's luck!", "あんまり喜ばないで、ただのビギナーズラックだから！")
+                 ], ipa: "/bɪˈɡɪnəz lʌk/"),
+            make("practice makes perfect", "doing something regularly is the way to become very good at it",
+                 "習うより慣れろ・練習あるのみ",
+                 useCases: ["上手くいかなくて落ち込む人を励ますとき", "上達のコツを話すとき"],
+                 examples: [
+                    ("Don't worry about your mistakes — practice makes perfect.", "ミスは気にしないで、練習あるのみだよ。"),
+                    ("My English is getting better. Practice makes perfect, I suppose.", "英語が上達してきた。やっぱり慣れだね。")
+                 ], ipa: "/ˌpræktɪs meɪks ˈpɜːfɪkt/"),
+            make("time will tell", "we will only know the answer or result in the future",
+                 "時間が経てば分かる・様子を見よう",
+                 useCases: ["結果がまだ分からないとき", "新しい決断について話すとき"],
+                 examples: [
+                    ("Was it the right decision? Only time will tell.", "正しい決断だった？それは時間が経たないと分からないね。"),
+                    ("They seem happy together, but time will tell.", "二人は仲良さそうだけど、どうなるかは様子見だね。")
+                 ], ipa: "/ˌtaɪm wɪl ˈtel/"),
+            make("on the edge of my seat", "very excited and nervous because you want to know what happens next",
+                 "ハラハラドキドキして・手に汗握って",
+                 useCases: ["映画や試合の感想を言うとき", "結果を待っているとき"],
+                 examples: [
+                    ("The ending had me on the edge of my seat.", "ラストは手に汗握ったよ。"),
+                    ("I was on the edge of my seat for the whole penalty shootout.", "PK戦の間ずっとハラハラしっぱなしだった。")
+                 ], ipa: "/ɒn ði ˌedʒ əv maɪ ˈsiːt/"),
+            make("cliffhanger", "an exciting ending to an episode that leaves you wanting to know what happens next",
+                 "（ドラマなどの）続きが気になる終わり方",
+                 useCases: ["ドラマの話をするとき", "続きが待ちきれないとき"],
+                 examples: [
+                    ("It ended on a massive cliffhanger!", "めちゃくちゃ続きが気になる終わり方だったよ！"),
+                    ("I hate cliffhangers — now I have to wait a whole week.", "引きのある終わり方は嫌い、1週間も待たなきゃいけないじゃん。")
+                 ], ipa: "/ˈklɪfˌhæŋə/"),
+            make("work up an appetite", "to become hungry, usually after physical activity",
+                 "（運動して）お腹を空かせる",
+                 useCases: ["散歩や運動の後の食事の話で", "食事前に体を動かそうと誘うとき"],
+                 examples: [
+                    ("That hike really worked up an appetite.", "あのハイキングでしっかりお腹が空いたよ。"),
+                    ("Let's go for a swim and work up an appetite before lunch.", "ランチの前に泳いでお腹を空かせようよ。")
+                 ], ipa: "/ˌwɜːk ʌp ən ˈæpɪtaɪt/"),
+            make("on the rocks", "(of a drink) served with ice; (of a relationship) having serious problems",
+                 "ロックで・（関係が）危機的で",
+                 useCases: ["バーで飲み物を注文するとき", "カップルの関係について話すとき"],
+                 examples: [
+                    ("A whisky on the rocks, please.", "ウイスキーをロックでお願いします。"),
+                    ("I heard their marriage is on the rocks.", "あの二人の結婚、危ないらしいよ。")
+                 ], ipa: "/ɒn ðə ˈrɒks/"),
+            make("waiting list", "a list of people who are waiting for something that is not yet available",
+                 "順番待ちリスト・キャンセル待ち",
+                 useCases: ["予約がいっぱいのとき", "人気の店やサービスの話で"],
+                 examples: [
+                    ("The restaurant's fully booked, but they put us on the waiting list.", "レストランは満席だけど、キャンセル待ちに入れてもらえた。"),
+                    ("There's a six-month waiting list for that course.", "あの講座は半年待ちなんだって。")
+                 ], ipa: "/ˈweɪtɪŋ lɪst/"),
+            make("a lucky escape", "a situation in which you just avoid something bad or dangerous",
+                 "危ないところで助かったこと・九死に一生",
+                 useCases: ["事故や失敗を間一髪で避けたとき", "別れた相手の話で冗談っぽく"],
+                 examples: [
+                    ("Nobody was hurt — it was a lucky escape.", "誰も怪我しなかった、本当に危ないところだったよ。"),
+                    ("You didn't get that job? Honestly, sounds like a lucky escape.", "あの仕事落ちたの？正直、逃れられてラッキーだったと思うよ。")
+                 ], ipa: "/ə ˌlʌki ɪˈskeɪp/"),
+            make("walk-in", "a customer who comes without an appointment or booking",
+                 "予約なしの客・飛び込み",
+                 useCases: ["美容院やレストランで予約なしで入りたいとき", "クリニックの受付で"],
+                 examples: [
+                    ("Do you take walk-ins, or do I need to book?", "予約なしでも大丈夫ですか、それとも予約が必要ですか？"),
+                    ("Sorry, we're not taking walk-ins today.", "申し訳ありません、本日は予約なしのお客様はお断りしています。")
+                 ], ipa: "/ˈwɔːk ɪn/"),
+            make("propose a toast", "to ask everyone to raise their glasses and drink to someone or something",
+                 "乾杯の音頭をとる",
+                 useCases: ["パーティーや結婚式で", "お祝いの食事の席で"],
+                 examples: [
+                    ("I'd like to propose a toast to the happy couple.", "新郎新婦に乾杯の音頭をとらせていただきます。"),
+                    ("Let's propose a toast to Sarah's new job!", "サラの新しい仕事に乾杯しよう！")
+                 ], ipa: "/prəˌpəʊz ə ˈtəʊst/"),
+            make("it's coming back to me", "said when you start to remember something you had forgotten",
+                 "思い出してきた",
+                 useCases: ["忘れていたことを思い出しかけたとき", "久しぶりに何かをやるとき"],
+                 examples: [
+                    ("Oh yes, it's all coming back to me now!", "ああそうだ、全部思い出してきたよ！"),
+                    ("I haven't skied for years, but it's slowly coming back to me.", "何年もスキーしてなかったけど、だんだん感覚が戻ってきた。")
+                 ], ipa: "/ɪts ˌkʌmɪŋ ˈbæk tə miː/"),
+            make("in your own time", "whenever you are ready, without hurrying",
+                 "自分のペースで・準備ができたらで",
+                 useCases: ["相手を急かしたくないとき", "写真撮影や説明の場面で"],
+                 examples: [
+                    ("No rush — just start in your own time.", "急がなくていいよ、準備ができたら始めて。"),
+                    ("Have a look through the menu in your own time.", "ごゆっくりメニューをご覧ください。")
+                 ], ipa: "/ɪn jɔːr ˌəʊn ˈtaɪm/"),
+            make("show someone the ropes", "to teach a new person how to do a job or activity",
+                 "（新人に）やり方を教える",
+                 useCases: ["新しい同僚を案内するとき", "初めての人に手順を教えるとき"],
+                 examples: [
+                    ("Tom will show you the ropes on your first day.", "初日はトムが仕事のやり方を教えてくれるよ。"),
+                    ("Can you show the new guy the ropes?", "新しく入った人に仕事を教えてあげてくれる？")
+                 ], ipa: "/ˌʃəʊ ˌsʌmwʌn ðə ˈrəʊps/"),
         ]
     }
     private static var britishColloquial220: [Word] {
