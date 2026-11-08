@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246
         ]
         return groups.flatMap { $0 }
     }
@@ -41907,6 +41907,115 @@ enum SeedData {
                     ("Have you got a tissue? My nose won't stop running.", "ティッシュある？鼻水が止まらなくて。"),
                     ("There's a box of tissues on the table.", "テーブルの上にティッシュの箱があるよ。")
                  ], ipa: "/ˈtɪʃuː/"),
+        ]
+    }
+    private static var britishColloquial246: [Word] {
+        [
+            make("a close shave", "a situation where you only just avoid an accident or something bad",
+                 "危機一髪・間一髪",
+                 useCases: ["事故やトラブルをギリギリで避けたとき", "電車や締め切りにギリギリ間に合ったとき"],
+                 examples: [
+                    ("That car nearly hit us — what a close shave!", "あの車、もう少しでぶつかるところだった。危なかった！"),
+                    ("I made the flight, but it was a close shave.", "飛行機には間に合ったけど、ほんとギリギリだった。")
+                 ], ipa: "/ə kləʊs ʃeɪv/"),
+            make("when all's said and done", "used when giving your final opinion after considering everything",
+                 "結局のところ・なんだかんだ言っても",
+                 useCases: ["話をまとめて本音を言うとき", "いろいろあったけど結論を言うとき"],
+                 examples: [
+                    ("When all's said and done, he's still my brother.", "なんだかんだ言っても、あいつは僕の兄弟だからね。"),
+                    ("It was stressful, but when all's said and done, it was worth it.", "大変だったけど、結局やってよかったよ。")
+                 ], ipa: "/wen ɔːlz sed ən dʌn/"),
+            make("there and then", "immediately, at that exact time and place",
+                 "その場ですぐに",
+                 useCases: ["即決したことを話すとき", "その場で何かが起きたとき"],
+                 examples: [
+                    ("I loved the flat, so I signed the contract there and then.", "部屋が気に入ったから、その場で契約しちゃった。"),
+                    ("He asked me out and I said yes there and then.", "デートに誘われて、その場でOKしたの。")
+                 ], ipa: "/ðeər ən ðen/"),
+            make("the whole lot", "everything; all of something",
+                 "全部・まるごと",
+                 useCases: ["残さず全部食べた・使ったとき", "まとめて全部を指すとき"],
+                 examples: [
+                    ("Did you eat the whole lot? There's nothing left!", "全部食べちゃったの？何も残ってないじゃん！"),
+                    ("Just chuck the whole lot in the washing machine.", "全部まとめて洗濯機に放り込んじゃって。")
+                 ], ipa: "/ðə həʊl lɒt/"),
+            make("gear", "the equipment, clothes or things you need for a particular activity",
+                 "道具・用具・装備（一式）",
+                 useCases: ["スポーツやキャンプの道具について", "自分の荷物・持ち物をまとめて言うとき"],
+                 examples: [
+                    ("Don't forget your gym gear.", "ジムの用具一式、忘れないでね。"),
+                    ("Where can I leave all my gear?", "荷物はどこに置いておけばいい？")
+                 ], ipa: "/ɡɪə/"),
+            make("you're pushing it", "used to tell someone they are taking a risk or asking for too much",
+                 "それはちょっと無理があるよ・調子に乗りすぎ",
+                 useCases: ["時間的にギリギリなとき", "相手の要求が図々しいとき"],
+                 examples: [
+                    ("Leaving at half eight? You're pushing it a bit.", "8時半に出るの？ちょっとギリギリすぎない？"),
+                    ("One more biscuit is fine, but three? Now you're pushing it.", "クッキーもう1枚はいいけど、3枚？それは調子に乗りすぎ。")
+                 ], ipa: "/jɔː ˈpʊʃɪŋ ɪt/"),
+            make("give someone a piece of your mind", "to tell someone angrily what you think of them or what they have done",
+                 "（怒って）ガツンと言ってやる・文句を言う",
+                 useCases: ["腹が立つ相手に一言言いたいとき", "クレームを入れるとき"],
+                 examples: [
+                    ("If he's late again, I'll give him a piece of my mind.", "またあいつが遅れたら、ガツンと言ってやる。"),
+                    ("She gave the manager a piece of her mind.", "彼女は店長にはっきり文句を言った。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ə piːs əv jɔː maɪnd/"),
+            make("none of your business", "used to tell someone rudely or jokingly that something is private",
+                 "君には関係ないでしょ・余計なお世話",
+                 useCases: ["プライベートなことを聞かれたとき", "冗談っぽくはぐらかすとき"],
+                 examples: [
+                    ("Who was that on the phone? — None of your business!", "電話誰だったの？—関係ないでしょ！"),
+                    ("How much I earn is none of your business.", "私の稼ぎがいくらかなんて、あなたには関係ない。")
+                 ], ipa: "/nʌn əv jɔː ˈbɪznəs/"),
+            make("one thing at a time", "used to tell someone to deal with things separately, not all at once",
+                 "一つずつ・焦らず順番に",
+                 useCases: ["やることが多くて慌てている人に", "質問攻めにされたとき"],
+                 examples: [
+                    ("Calm down — one thing at a time.", "落ち着いて。一つずつやろう。"),
+                    ("One thing at a time! Let me finish this first.", "一個ずつね！まずこれ終わらせてから。")
+                 ], ipa: "/wʌn θɪŋ ət ə taɪm/"),
+            make("have a lot going on", "to be very busy or dealing with many things, often stressful ones",
+                 "いろいろ立て込んでいる・いろいろ抱えている",
+                 useCases: ["忙しくて余裕がないと伝えるとき", "相手の事情を気遣うとき"],
+                 examples: [
+                    ("Sorry I haven't replied — I've got a lot going on at the moment.", "返事できなくてごめん、今いろいろ立て込んでて。"),
+                    ("Go easy on her, she's had a lot going on lately.", "彼女には優しくしてあげて。最近いろいろあったから。")
+                 ], ipa: "/hæv ə lɒt ˈɡəʊɪŋ ɒn/"),
+            make("it's a start", "used to say that something is not much, but it is a good first step",
+                 "まずは第一歩だね・とりあえず前進だね",
+                 useCases: ["小さな進歩を励ますとき", "まだ足りないけど前向きに捉えるとき"],
+                 examples: [
+                    ("I only ran two kilometres. — Well, it's a start!", "2キロしか走れなかった。—まあ、第一歩だよ！"),
+                    ("It's not perfect, but it's a start.", "完璧じゃないけど、とりあえず前進だね。")
+                 ], ipa: "/ɪts ə stɑːt/"),
+            make("you win", "used to agree to what someone wants after arguing or discussing",
+                 "わかった、君の勝ち・はいはい、そうするよ",
+                 useCases: ["言い合いで折れるとき", "相手の提案に渋々同意するとき"],
+                 examples: [
+                    ("Fine, you win — we'll get pizza.", "わかったよ、君の勝ち。ピザにしよう。"),
+                    ("OK, OK, you win. I'll come to the party.", "はいはい、わかった。パーティー行くよ。")
+                 ], ipa: "/juː wɪn/"),
+            make("go out of your way", "to make a special effort to do something, especially to help someone",
+                 "わざわざ〜する・特別に手間をかける",
+                 useCases: ["親切にしてくれた人に感謝するとき", "わざわざしなくていいと伝えるとき"],
+                 examples: [
+                    ("Thanks for going out of your way to pick me up.", "わざわざ迎えに来てくれてありがとう。"),
+                    ("Please don't go out of your way for me.", "私のためにわざわざ手間かけないでね。")
+                 ], ipa: "/ɡəʊ aʊt əv jɔː weɪ/"),
+            make("get some sleep", "to rest by sleeping, especially when you are tired",
+                 "ちょっと寝る・ひと眠りする",
+                 useCases: ["疲れている人を気遣うとき", "会話を切り上げて寝るとき"],
+                 examples: [
+                    ("You look shattered — go and get some sleep.", "すごく疲れてるね。少し寝てきなよ。"),
+                    ("I need to get some sleep before my shift.", "シフトの前に少し寝ておかないと。")
+                 ], ipa: "/ɡet sʌm sliːp/"),
+            make("it happens", "used to tell someone not to worry because a mistake or problem is normal",
+                 "よくあることだよ・気にしないで",
+                 useCases: ["相手のミスを慰めるとき", "自分の失敗を軽く流すとき"],
+                 examples: [
+                    ("Sorry, I spilt my drink. — Don't worry, it happens.", "ごめん、飲み物こぼしちゃった。—大丈夫、よくあることだよ。"),
+                    ("I missed my stop again. Oh well, it happens.", "また乗り過ごしちゃった。まあ、よくあるよね。")
+                 ], ipa: "/ɪt ˈhæpənz/"),
         ]
     }
     private static var britishColloquial245: [Word] {
