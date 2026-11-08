@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254
         ]
         return groups.flatMap { $0 }
     }
@@ -42779,6 +42779,115 @@ enum SeedData {
                     ("She gave her gran a peck on the cheek.", "彼女はおばあちゃんのほっぺに軽くキスをした。"),
                     ("In France, friends greet each other with a peck on the cheek.", "フランスでは友達同士ほっぺに軽くキスしてあいさつするんだ。")
                  ], ipa: "/ə pek ɒn ðə tʃiːk/"),
+        ]
+    }
+    private static var britishColloquial254: [Word] {
+        [
+            make("take stock", "to stop and think carefully about a situation before deciding what to do next",
+                 "現状を見つめ直す・状況を整理する",
+                 useCases: ["忙しさの中で一度立ち止まるとき", "失敗や変化のあとに今後を考えるとき"],
+                 examples: [
+                    ("Let's take stock before we make any big decisions.", "大きな決断をする前に、一度状況を整理しよう。"),
+                    ("After the move, I took a week off to take stock.", "引っ越しのあと、1週間休んで色々見つめ直したよ。")
+                 ], ipa: "/teɪk stɒk/"),
+            make("fall into place", "when things start to make sense or work out well together",
+                 "うまく収まる・すべてがつながる",
+                 useCases: ["計画が順調に進み始めたとき", "謎や疑問が急に理解できたとき"],
+                 examples: [
+                    ("Once I got the job, everything else fell into place.", "仕事が決まったら、他のことも全部うまくいったんだ。"),
+                    ("Don't worry – it'll all fall into place.", "心配しないで、きっと全部うまく収まるよ。")
+                 ], ipa: "/fɔːl ˈɪntə pleɪs/"),
+            make("fizzle out", "to gradually end in a weak or disappointing way",
+                 "尻すぼみになる・自然消滅する",
+                 useCases: ["盛り上がっていた話や関係が消えていくとき", "計画が途中で立ち消えになるとき"],
+                 examples: [
+                    ("The party kind of fizzled out after midnight.", "パーティーは夜中を過ぎたらなんとなくお開きになった。"),
+                    ("We chatted for a while, but it just fizzled out.", "しばらく連絡取ってたけど、自然消滅しちゃった。")
+                 ], ipa: "/ˈfɪzl aʊt/"),
+            make("bounce ideas off", "to share your ideas with someone to get their opinion or reaction",
+                 "（人に）アイデアをぶつけて意見をもらう",
+                 useCases: ["企画を同僚に相談するとき", "考えを整理するために誰かと話すとき"],
+                 examples: [
+                    ("Can I bounce a few ideas off you?", "いくつかアイデアがあるんだけど、意見聞いてもいい？"),
+                    ("It helps to have someone to bounce ideas off.", "アイデアをぶつけられる相手がいると助かるよ。")
+                 ], ipa: "/baʊns aɪˈdɪəz ɒf/"),
+            make("level-headed", "calm and sensible, especially in difficult situations",
+                 "冷静な・分別のある",
+                 useCases: ["トラブルでも落ち着いている人を褒めるとき", "頼れる人柄を説明するとき"],
+                 examples: [
+                    ("She's really level-headed in a crisis.", "彼女は緊急時でもすごく冷静なんだ。"),
+                    ("We need someone level-headed to lead the team.", "チームを率いるには冷静な人が必要だね。")
+                 ], ipa: "/ˌlevl ˈhedɪd/"),
+            make("play down", "to make something seem less important or serious than it really is",
+                 "（重要性などを）控えめに言う・軽く扱う",
+                 useCases: ["怪我や問題を大したことないと言うとき", "自分の功績を謙遜するとき"],
+                 examples: [
+                    ("He played down the injury, but it looked painful.", "彼は大した怪我じゃないって言ってたけど、痛そうだったよ。"),
+                    ("Stop playing it down – you did an amazing job!", "謙遜しないで、本当にすごい仕事だったよ！")
+                 ], ipa: "/pleɪ daʊn/"),
+            make("common ground", "shared interests, opinions or experiences between people",
+                 "共通点・共通の理解",
+                 useCases: ["初対面の人との共通の話題を探すとき", "意見の違う相手と妥協点を探るとき"],
+                 examples: [
+                    ("We found some common ground – we both love hiking.", "共通点が見つかったよ、二人ともハイキングが大好きなんだ。"),
+                    ("Let's try to find some common ground here.", "ここはお互いの共通点を探してみよう。")
+                 ], ipa: "/ˈkɒmən ɡraʊnd/"),
+            make("whip up", "to make something quickly, especially food",
+                 "（料理などを）さっと作る",
+                 useCases: ["手早く料理を作るとき", "急いで資料などを用意するとき"],
+                 examples: [
+                    ("I can whip up some pasta if you're hungry.", "お腹空いてるならパスタでもさっと作るよ。"),
+                    ("She whipped up a quick presentation in an hour.", "彼女は1時間でプレゼン資料をさっと作り上げた。")
+                 ], ipa: "/wɪp ʌp/"),
+            make("hard to come by", "difficult to find or get",
+                 "手に入りにくい・なかなか見つからない",
+                 useCases: ["チケットや物が品薄なとき", "良い人材や機会が少ないとき"],
+                 examples: [
+                    ("Tickets for that show are hard to come by.", "あのショーのチケットはなかなか手に入らないよ。"),
+                    ("Good flats in the centre are hard to come by.", "中心部のいい部屋はなかなか見つからないんだ。")
+                 ], ipa: "/hɑːd tə kʌm baɪ/"),
+            make("take on board", "to listen to and accept an idea, suggestion or criticism",
+                 "（意見・助言を）受け入れる・参考にする",
+                 useCases: ["フィードバックを素直に受け止めるとき", "相手の提案を検討すると伝えるとき"],
+                 examples: [
+                    ("Thanks for the feedback – I'll take it on board.", "フィードバックありがとう、参考にするね。"),
+                    ("They didn't take any of our suggestions on board.", "彼らは私たちの提案を何ひとつ聞き入れなかった。")
+                 ], ipa: "/teɪk ɒn bɔːd/"),
+            make("throw together", "to make or arrange something quickly without much planning",
+                 "ありあわせで作る・急ごしらえする",
+                 useCases: ["冷蔵庫の残り物で料理するとき", "急いで計画やイベントを用意するとき"],
+                 examples: [
+                    ("I just threw together a salad with what was in the fridge.", "冷蔵庫にあるものでサラダをささっと作っただけだよ。"),
+                    ("The plan was thrown together at the last minute.", "その計画は直前に急ごしらえされたものだった。")
+                 ], ipa: "/θrəʊ təˈɡeðə/"),
+            make("scrape by", "to manage to live or succeed with only just enough money or effort",
+                 "なんとかやりくりする・ぎりぎりで乗り切る",
+                 useCases: ["お金がギリギリの生活を話すとき", "試験などをぎりぎりで通過したとき"],
+                 examples: [
+                    ("We're scraping by on one salary at the moment.", "今は一人の給料でなんとかやりくりしてるんだ。"),
+                    ("I didn't study much, but I scraped by.", "あまり勉強しなかったけど、ぎりぎり合格したよ。")
+                 ], ipa: "/skreɪp baɪ/"),
+            make("hit a wall", "to reach a point where you cannot make any more progress",
+                 "壁にぶつかる・行き詰まる",
+                 useCases: ["仕事や勉強が進まなくなったとき", "疲れて限界に達したとき"],
+                 examples: [
+                    ("I hit a wall with my essay last night.", "昨夜、レポートで行き詰まっちゃった。"),
+                    ("Around mile twenty, I completely hit a wall.", "20マイルあたりで完全に限界がきたよ。")
+                 ], ipa: "/hɪt ə wɔːl/"),
+            make("leave it at that", "to stop discussing or doing something and not take it any further",
+                 "それくらいにしておく・それで終わりにする",
+                 useCases: ["議論を打ち切りたいとき", "これ以上深追いしないと決めたとき"],
+                 examples: [
+                    ("We disagree, so let's just leave it at that.", "意見が合わないし、この話はここまでにしよう。"),
+                    ("He said sorry, and I decided to leave it at that.", "彼が謝ったから、それで終わりにすることにしたよ。")
+                 ], ipa: "/liːv ɪt ət ðæt/"),
+            make("tone down", "to make something less strong, extreme or likely to offend",
+                 "（表現・色などを）控えめにする・和らげる",
+                 useCases: ["メールや発言の言い方を柔らかくするとき", "派手すぎるデザインや服を抑えるとき"],
+                 examples: [
+                    ("You might want to tone down that email a bit.", "そのメール、もう少し言い方を和らげたほうがいいかも。"),
+                    ("Can you tone down the colours on this slide?", "このスライドの色、もうちょっと控えめにできる？")
+                 ], ipa: "/təʊn daʊn/"),
         ]
     }
     private static var britishColloquial245: [Word] {
