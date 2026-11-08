@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237
         ]
         return groups.flatMap { $0 }
     }
@@ -41253,6 +41253,115 @@ enum SeedData {
                     ("Excuse me, could you point me in the right direction for the station?", "すみません、駅の方向を教えてもらえますか？"),
                     ("I don't need the full answer — just point me in the right direction.", "答えは全部じゃなくていいから、取っかかりだけ教えて。")
                  ], ipa: "/ˌpɔɪnt mi ɪn ðə ˌraɪt dəˈrekʃn/"),
+        ]
+    }
+    private static var britishColloquial237: [Word] {
+        [
+            make("big night", "an important or exciting evening, such as a party, a first date or a special event",
+                 "大事な夜・特別な夜",
+                 useCases: ["デートやイベント前の人を応援するとき", "前の晩の出来事を話すとき"],
+                 examples: [
+                    ("Good luck tonight — it's your big night!", "今夜がんばってね、大事な夜だもんね！"),
+                    ("You look tired. Big night last night?", "疲れてるね。昨日の夜は盛り上がったの？")
+                 ], ipa: "/ˌbɪɡ ˈnaɪt/"),
+            make("off the cuff", "said or done without any preparation",
+                 "即興で・ぶっつけ本番で",
+                 useCases: ["準備なしで話すとき", "思いつきの発言だと断るとき"],
+                 examples: [
+                    ("I didn't prepare a speech — I just said a few words off the cuff.", "スピーチは用意してなくて、即興でちょっと話しただけだよ。"),
+                    ("That was an off-the-cuff remark, so don't take it too seriously.", "あれは思いつきで言っただけだから、あまり真に受けないで。")
+                 ], ipa: "/ˌɒf ðə ˈkʌf/"),
+            make("light-headed", "feeling slightly dizzy, as if you might faint",
+                 "頭がくらくらする・ふらっとする",
+                 useCases: ["体調が悪いと伝えるとき", "空腹や暑さでふらつくとき"],
+                 examples: [
+                    ("I stood up too quickly and felt a bit light-headed.", "急に立ち上がったら、ちょっとくらっとした。"),
+                    ("If you feel light-headed, sit down and have some water.", "ふらっとしたら、座って水を飲んでね。")
+                 ], ipa: "/ˌlaɪt ˈhedɪd/"),
+            make("bend the rules", "to allow something that is not usually allowed, just this once",
+                 "ルールを少し曲げる・大目に見る",
+                 useCases: ["例外を頼むとき", "特別に許してもらったと話すとき"],
+                 examples: [
+                    ("We're not supposed to, but I'll bend the rules just this once.", "本当はダメなんだけど、今回だけ特別に大目に見るよ。"),
+                    ("Could you bend the rules a little and let us in ten minutes early?", "少しだけ融通をきかせて、10分早く入れてもらえませんか？")
+                 ], ipa: "/ˌbend ðə ˈruːlz/"),
+            make("good as gold", "(British) very well-behaved, especially of a child",
+                 "とってもいい子（にしてた）",
+                 useCases: ["子どもや動物の様子を伝えるとき", "預かった子を褒めるとき"],
+                 examples: [
+                    ("Thanks for having the kids — were they all right? / They were good as gold.", "子どもたちを見てくれてありがとう、大丈夫だった？／すごくいい子にしてたよ。"),
+                    ("The dog was good as gold on the train.", "電車の中で犬はとてもおりこうにしてたよ。")
+                 ], ipa: "/ˌɡʊd əz ˈɡəʊld/"),
+            make("same as ever", "used to say that someone or something has not changed",
+                 "相変わらず・いつも通り",
+                 useCases: ["近況を聞かれたとき", "変わらない人や物について話すとき"],
+                 examples: [
+                    ("How's work? / Same as ever — busy but fine.", "仕事どう？／相変わらずだよ。忙しいけど元気。"),
+                    ("You look the same as ever!", "全然変わってないね！")
+                 ], ipa: "/ˌseɪm əz ˈevə/"),
+            make("moving on", "used to change to a new subject in a conversation",
+                 "話は変わって・さて次に",
+                 useCases: ["話題を切り替えるとき", "気まずい話を終わらせたいとき"],
+                 examples: [
+                    ("Anyway, moving on — has everyone seen the new schedule?", "さて、話は変わるけど、みんな新しいスケジュール見た？"),
+                    ("Okay, that was embarrassing. Moving on!", "うわ、恥ずかしかった。はい、次いこう！")
+                 ], ipa: "/ˌmuːvɪŋ ˈɒn/"),
+            make("a sugar rush", "a short burst of energy after eating or drinking a lot of sugar",
+                 "糖分でハイになること・シュガーハイ",
+                 useCases: ["甘いものを食べて元気になったとき", "子どもがはしゃいでいるとき"],
+                 examples: [
+                    ("The kids are on a sugar rush after all that birthday cake.", "誕生日ケーキをたくさん食べて、子どもたちがハイになってる。"),
+                    ("I get a sugar rush and then crash about an hour later.", "甘いもの食べると一瞬元気になるけど、1時間後にはぐったりするんだ。")
+                 ], ipa: "/ə ˈʃʊɡə ˌrʌʃ/"),
+            make("keep your voice down", "used to ask someone to speak more quietly",
+                 "声を小さくして・静かに",
+                 useCases: ["周りに迷惑がかかりそうなとき", "内緒話をするとき"],
+                 examples: [
+                    ("Keep your voice down — the baby's asleep.", "声を落として、赤ちゃん寝てるから。"),
+                    ("Keep your voice down, everyone can hear you!", "声が大きいよ、みんなに聞こえてる！")
+                 ], ipa: "/ˌkiːp jə ˈvɔɪs ˌdaʊn/"),
+            make("out loud", "in a voice that other people can hear, rather than silently",
+                 "声に出して",
+                 useCases: ["音読するとき", "思わず口に出したとき"],
+                 examples: [
+                    ("Sorry, I was just thinking out loud.", "ごめん、ただ考えを口に出してただけ。"),
+                    ("Can you read it out loud for everyone?", "みんなのために声に出して読んでくれる？")
+                 ], ipa: "/ˌaʊt ˈlaʊd/"),
+            make("what's good here?", "used in a restaurant or café to ask for a recommendation",
+                 "ここのおすすめは？",
+                 useCases: ["初めての店で注文するとき", "店員や友人におすすめを聞くとき"],
+                 examples: [
+                    ("It's my first time here — what's good here?", "ここ初めてなんですけど、おすすめは何ですか？"),
+                    ("You've been here before, haven't you? What's good here?", "前に来たことあるよね？ここ何が美味しい？")
+                 ], ipa: "/ˌwɒts ˈɡʊd hɪə/"),
+            make("make that two", "used when ordering to say you want the same as the person before you",
+                 "それを2つで・私も同じので",
+                 useCases: ["友人と同じものを注文するとき", "注文の数を変えるとき"],
+                 examples: [
+                    ("I'll have a flat white. / Make that two, please.", "フラットホワイトをください。／それ2つでお願いします。"),
+                    ("A pint of lager, please — actually, make that two.", "ラガーを1パイント。あ、やっぱり2つで。")
+                 ], ipa: "/ˌmeɪk ðæt ˈtuː/"),
+            make("lighten the mood", "to make a tense or sad situation feel more relaxed or cheerful",
+                 "場をなごませる・雰囲気を明るくする",
+                 useCases: ["気まずい空気を変えたいとき", "冗談を言った理由を説明するとき"],
+                 examples: [
+                    ("He told a silly joke to lighten the mood.", "彼は場をなごませようとくだらない冗談を言った。"),
+                    ("Let's put some music on to lighten the mood.", "雰囲気を明るくするために音楽でもかけよう。")
+                 ], ipa: "/ˌlaɪtn ðə ˈmuːd/"),
+            make("push in", "(British) to unfairly join a queue in front of people who were already waiting",
+                 "（列に）割り込む",
+                 useCases: ["列に割り込まれたとき", "割り込みを注意するとき"],
+                 examples: [
+                    ("Excuse me, there's a queue — you can't just push in.", "すみません、列があるので割り込まないでください。"),
+                    ("Someone pushed in right in front of me at the bus stop.", "バス停で目の前に割り込まれたよ。")
+                 ], ipa: "/ˌpʊʃ ˈɪn/"),
+            make("it's a long way", "used to say that a place is far away",
+                 "けっこう遠いよ",
+                 useCases: ["道や距離を聞かれたとき", "歩くか乗り物にするか相談するとき"],
+                 examples: [
+                    ("Can we walk there? / It's a long way — let's get a taxi.", "歩いて行ける？／けっこう遠いよ、タクシーにしよう。"),
+                    ("It's a long way to come just for one meeting.", "会議ひとつのためにわざわざ来るには遠いよね。")
+                 ], ipa: "/ɪts ə ˌlɒŋ ˈweɪ/"),
         ]
     }
     private static var britishColloquial220: [Word] {
