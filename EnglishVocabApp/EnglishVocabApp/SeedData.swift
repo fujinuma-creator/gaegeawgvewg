@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258
         ]
         return groups.flatMap { $0 }
     }
@@ -43215,6 +43215,115 @@ enum SeedData {
                     ("Right, everyone pile in – there's room in the back.", "よし、みんな乗って。後ろにまだ空きがあるよ。"),
                     ("As soon as the food arrived, everyone piled in.", "料理が来た途端、みんな一斉に食べ始めたよ。")
                  ], ipa: "/paɪl ɪn/"),
+        ]
+    }
+    private static var britishColloquial258: [Word] {
+        [
+            make("muddle through", "to manage to do something even though you are not organised or skilled at it",
+                 "（準備不足でも）何とか切り抜ける・どうにかやり過ごす",
+                 useCases: ["段取りが悪くてもどうにか乗り切ったとき", "慣れない言語や仕事で何とかやっていくとき"],
+                 examples: [
+                    ("I don't speak much Spanish, but I muddled through.", "スペイン語はあまり話せないけど、何とか切り抜けたよ。"),
+                    ("We'll just have to muddle through until the new manager starts.", "新しいマネージャーが来るまで、何とかやっていくしかないね。")
+                 ], ipa: "/ˈmʌdl θruː/"),
+            make("dash off", "to leave somewhere quickly; or to write something very quickly",
+                 "急いで出かける・（メールなどを）さっと書く",
+                 useCases: ["急ぎの用事で慌ただしく席を立つとき", "短いメッセージを手早く送るとき"],
+                 examples: [
+                    ("Sorry, I have to dash off – my train's in ten minutes.", "ごめん、急いで行かなきゃ。電車があと10分なんだ。"),
+                    ("I dashed off a quick email to the landlord.", "大家さんにさっとメールを送っておいたよ。")
+                 ], ipa: "/dæʃ ɒf/"),
+            make("crash out", "to fall asleep very quickly because you are extremely tired",
+                 "（疲れて）バタンと寝る・寝落ちする",
+                 useCases: ["疲れ果ててすぐ寝てしまったとき", "ソファや友人宅でそのまま寝てしまったとき"],
+                 examples: [
+                    ("I got home and crashed out on the sofa.", "家に帰ったら、ソファでそのまま寝落ちしちゃった。"),
+                    ("You look shattered – go and crash out for an hour.", "疲れ切ってるね。1時間くらい寝てきなよ。")
+                 ], ipa: "/kræʃ aʊt/"),
+            make("have a nose around", "to look around a place out of curiosity",
+                 "（好奇心で）ちょっと見て回る・のぞいてみる",
+                 useCases: ["新しい家やお店を見て回るとき", "気になる場所を軽く探索するとき"],
+                 examples: [
+                    ("Come in and have a nose around – the kitchen's just been done.", "入って見てってよ。キッチン、リフォームしたばかりなんだ。"),
+                    ("We had a nose around the old town before dinner.", "夕食の前に旧市街をちょっと見て回ったんだ。")
+                 ], ipa: "/hæv ə nəʊz əˈraʊnd/"),
+            make("make a beeline for", "to go straight towards someone or something quickly and directly",
+                 "（～に）一直線に向かう",
+                 useCases: ["パーティーで食べ物や知り合いに真っ先に向かうとき", "店に入ってすぐ目当ての売り場へ行くとき"],
+                 examples: [
+                    ("He made a beeline for the buffet as soon as we arrived.", "着いた途端、彼はビュッフェに一直線だったよ。"),
+                    ("The kids always make a beeline for the sweets aisle.", "子どもたちはいつもお菓子売り場に直行するんだ。")
+                 ], ipa: "/meɪk ə ˈbiːlaɪn fɔː/"),
+            make("in a huff", "annoyed or offended, often showing it by being silent or leaving",
+                 "むっとして・すねて",
+                 useCases: ["誰かが機嫌を損ねて黙り込んだとき", "怒って部屋を出て行ったとき"],
+                 examples: [
+                    ("She walked out in a huff after the argument.", "口論のあと、彼女はむっとして出て行っちゃった。"),
+                    ("Don't go off in a huff – I was only joking!", "すねないでよ、冗談だってば！")
+                 ], ipa: "/ɪn ə hʌf/"),
+            make("hair of the dog", "an alcoholic drink taken to feel better after drinking too much the night before",
+                 "迎え酒",
+                 useCases: ["二日酔いの翌朝に冗談まじりで一杯勧めるとき", "飲み会の翌日の会話で"],
+                 examples: [
+                    ("Feeling rough? Have a bit of hair of the dog.", "調子悪い？迎え酒でもどう？"),
+                    ("He swears by hair of the dog, but I just want water.", "彼は迎え酒が効くって言うけど、私は水でいいよ。")
+                 ], ipa: "/heər əv ðə dɒɡ/"),
+            make("walk it off", "to walk around to make pain, anger or a heavy feeling go away",
+                 "歩いて（痛み・怒り・満腹感などを）紛らわす",
+                 useCases: ["軽いケガや足の痛みを歩いて和らげるとき", "食べすぎや怒りを散歩で落ち着かせるとき"],
+                 examples: [
+                    ("I ate way too much – let's go and walk it off.", "食べすぎちゃった。散歩して腹ごなししよう。"),
+                    ("It's just a bump on the knee – you'll walk it off.", "膝をちょっとぶつけただけだよ、歩いてれば治まるって。")
+                 ], ipa: "/wɔːk ɪt ɒf/"),
+            make("play along", "to pretend to agree with someone or to go along with a plan or joke",
+                 "（話・冗談・計画に）調子を合わせる",
+                 useCases: ["サプライズのために知らないふりをするとき", "相手の冗談に乗ってあげるとき"],
+                 examples: [
+                    ("Just play along – it's a surprise party for Jen.", "話合わせてね、ジェンのサプライズパーティーなんだから。"),
+                    ("I didn't get the joke, but I played along.", "冗談が分からなかったけど、調子を合わせておいたよ。")
+                 ], ipa: "/pleɪ əˈlɒŋ/"),
+            make("sneak out", "to leave a place quietly so that nobody notices",
+                 "こっそり抜け出す",
+                 useCases: ["会議やパーティーから目立たずに帰るとき", "子どもが夜こっそり家を出るとき"],
+                 examples: [
+                    ("I'll sneak out early – nobody will notice.", "早めにこっそり抜けるよ。誰も気づかないって。"),
+                    ("We used to sneak out to the park when we were kids.", "子どもの頃、よくこっそり家を抜け出して公園に行ったよ。")
+                 ], ipa: "/sniːk aʊt/"),
+            make("throw on", "to put on clothes quickly and without much care",
+                 "（服を）さっと羽織る・急いで着る",
+                 useCases: ["急いで出かける準備をするとき", "ラフな格好で近所に出るとき"],
+                 examples: [
+                    ("Give me a sec – I'll just throw on a jumper.", "ちょっと待って、セーター羽織ってくるね。"),
+                    ("I threw on some jeans and ran to the shop.", "ジーンズをさっと履いてお店まで走ったよ。")
+                 ], ipa: "/θrəʊ ɒn/"),
+            make("make a dent in", "to reduce the amount of something, especially work or money, a little",
+                 "（仕事・量などを）少し減らす・はかどらせる",
+                 useCases: ["山積みの仕事が少し進んだとき", "貯金や食べ物が減ったと話すとき"],
+                 examples: [
+                    ("I worked all weekend and barely made a dent in it.", "週末ずっと働いたのに、ほとんど片付かなかったよ。"),
+                    ("That holiday made a real dent in my savings.", "あの旅行で貯金がかなり減ったよ。")
+                 ], ipa: "/meɪk ə dent ɪn/"),
+            make("breeze through", "to do something or pass something very easily",
+                 "（試験・課題などを）楽々こなす・難なく通過する",
+                 useCases: ["試験や面接を簡単にクリアしたとき", "仕事をスイスイ片付けたとき"],
+                 examples: [
+                    ("She breezed through her driving test.", "彼女、運転免許の試験を楽々パスしたんだ。"),
+                    ("Don't worry, you'll breeze through the interview.", "心配ないよ、面接なんて楽勝だって。")
+                 ], ipa: "/briːz θruː/"),
+            make("scrape through", "to only just succeed in passing an exam or getting through a difficult situation",
+                 "ぎりぎりで合格する・何とか乗り切る",
+                 useCases: ["試験にぎりぎりで受かったとき", "厳しい状況をかろうじて乗り越えたとき"],
+                 examples: [
+                    ("I only just scraped through my maths exam.", "数学の試験、ぎりぎりで受かったよ。"),
+                    ("Money was tight, but we scraped through the winter.", "お金は厳しかったけど、何とか冬を乗り切ったよ。")
+                 ], ipa: "/skreɪp θruː/"),
+            make("round off", "to finish something such as a meal, day or event in a pleasant way",
+                 "（食事・一日などを）締めくくる",
+                 useCases: ["食事の最後にデザートやコーヒーを頼むとき", "楽しい一日を何かで締めるとき"],
+                 examples: [
+                    ("Let's round off the evening with a drink by the river.", "川沿いで一杯飲んで、今夜は締めくくろう。"),
+                    ("We rounded off the meal with coffee and cake.", "食事の最後はコーヒーとケーキで締めたよ。")
+                 ], ipa: "/raʊnd ɒf/"),
         ]
     }
     private static var britishColloquial245: [Word] {
