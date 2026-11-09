@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260
         ]
         return groups.flatMap { $0 }
     }
@@ -43433,6 +43433,115 @@ enum SeedData {
                     ("What time do you clock off on Fridays?", "金曜日は何時に仕事終わるの？"),
                     ("I'm clocking off early today – fancy a drink?", "今日は早めに上がるんだ。一杯どう？")
                  ], ipa: "/klɒk ɒf/"),
+        ]
+    }
+    private static var britishColloquial260: [Word] {
+        [
+            make("at long last", "finally, after a long time of waiting",
+                 "やっと・ようやく（待ちに待って）",
+                 useCases: ["長く待っていたことがついに実現したとき", "遅れてきた人や物が届いたときに冗談っぽく言うとき"],
+                 examples: [
+                    ("At long last, the sun's come out!", "やっと太陽が出てきたね！"),
+                    ("Ah, there you are at long last!", "おっ、ようやく来たね！")
+                 ], ipa: "/ət lɒŋ lɑːst/"),
+            make("make an effort", "to try hard to do something, especially to be friendly, look nice or take part",
+                 "努力する・頑張って〜する・気を遣う",
+                 useCases: ["人付き合いや身だしなみで頑張ったことを話すとき", "相手にもっと歩み寄ってほしいと伝えるとき"],
+                 examples: [
+                    ("You've really made an effort tonight – you look great!", "今夜はずいぶんおしゃれしてるね、素敵だよ！"),
+                    ("I know he's shy, but he could make a bit more of an effort.", "彼が人見知りなのはわかるけど、もう少し頑張ってもいいと思う。")
+                 ], ipa: "/meɪk ən ˈefət/"),
+            make("retail therapy", "shopping done to make yourself feel happier",
+                 "（気晴らしの）買い物セラピー・ストレス発散の買い物",
+                 useCases: ["嫌なことがあって買い物で気分転換するとき", "買い物しすぎた言い訳を冗談で言うとき"],
+                 examples: [
+                    ("Rough week? Sounds like you need some retail therapy.", "大変な一週間だった？こりゃ買い物で気晴らしが必要だね。"),
+                    ("I didn't need new shoes – it was pure retail therapy.", "新しい靴なんて要らなかったの。完全にストレス発散よ。")
+                 ], ipa: "/ˈriːteɪl ˈθerəpi/"),
+            make("pamper", "to look after someone or yourself very well, giving them comfort and treats",
+                 "甘やかす・（贅沢に）いたわる",
+                 useCases: ["スパや休日で自分を労わるとき", "ペットや子どもを甘やかしている人について話すとき"],
+                 examples: [
+                    ("I'm going to pamper myself this weekend – bath, face mask, the lot.", "今週末は自分を甘やかすの。お風呂にパックに、全部ね。"),
+                    ("That dog is so pampered – it eats better than I do!", "あの犬、甘やかされすぎ。私よりいいもの食べてるよ！")
+                 ], ipa: "/ˈpæmpə/"),
+            make("gloomy", "dark and grey (weather or place); or feeling sad and without hope",
+                 "どんよりした・薄暗い／憂うつな・悲観的な",
+                 useCases: ["曇って暗い天気について話すとき", "落ち込んでいる人や悲観的な見通しについて話すとき"],
+                 examples: [
+                    ("It's so gloomy today – I've had the lights on since lunch.", "今日はすごくどんよりしてるね。昼から電気つけっぱなしだよ。"),
+                    ("Don't look so gloomy – it might never happen!", "そんな暗い顔しないで、そうなるとは限らないよ！")
+                 ], ipa: "/ˈɡluːmi/"),
+            make("snug", "warm, comfortable and cosy; also fitting closely",
+                 "暖かくて居心地のいい・ぬくぬくした／（服が）ぴったりの",
+                 useCases: ["寒い日に毛布や部屋の中でぬくぬくしているとき", "服のサイズがぴったり、または少しきついとき"],
+                 examples: [
+                    ("We stayed in, all snug on the sofa with a film.", "家にいて、ソファでぬくぬく映画を観てたよ。"),
+                    ("These jeans are a bit snug after Christmas!", "クリスマスの後だから、このジーンズちょっときついわ！")
+                 ], ipa: "/snʌɡ/"),
+            make("ratty", "easily annoyed and bad-tempered",
+                 "イライラした・機嫌が悪い・怒りっぽい",
+                 useCases: ["寝不足や空腹で機嫌が悪いことを認めるとき", "不機嫌な人について話すとき"],
+                 examples: [
+                    ("Sorry I was ratty earlier – I'd barely slept.", "さっきはイライラしててごめん。ほとんど寝てなくて。"),
+                    ("He gets a bit ratty when he's hungry.", "彼、お腹が空くとちょっと機嫌悪くなるんだよね。")
+                 ], ipa: "/ˈræti/"),
+            make("grotty", "unpleasant, dirty or of poor quality; also feeling slightly ill",
+                 "汚い・ボロい・みすぼらしい／（体調が）なんだか悪い",
+                 useCases: ["汚い部屋やボロい店について話すとき", "風邪気味で気分がすぐれないとき"],
+                 examples: [
+                    ("We stayed in a grotty little hotel near the station.", "駅近くのボロい小さなホテルに泊まったんだ。"),
+                    ("I feel a bit grotty – I think I'm coming down with something.", "なんか体調悪いな。風邪ひきかけてるかも。")
+                 ], ipa: "/ˈɡrɒti/"),
+            make("miles better", "much, much better",
+                 "断然いい・はるかにいい",
+                 useCases: ["2つのものを比べて片方が圧倒的に良いとき", "体調や状況がかなり良くなったとき"],
+                 examples: [
+                    ("The new place is miles better than our old flat.", "新しい家、前のフラットより断然いいよ。"),
+                    ("I feel miles better after a good night's sleep.", "ぐっすり寝たら、ずっと気分が良くなった。")
+                 ], ipa: "/maɪlz ˈbetə/"),
+            make("streets ahead", "much better or more advanced than someone or something else",
+                 "（他より）ずっと優れている・はるかに先を行っている",
+                 useCases: ["実力や品質がライバルより大きく上回っているとき", "人や店を比べて褒めるとき"],
+                 examples: [
+                    ("Her cooking is streets ahead of mine.", "彼女の料理は私よりずっと上手だよ。"),
+                    ("This phone is streets ahead of the old model.", "このスマホ、旧モデルよりはるかに進んでる。")
+                 ], ipa: "/striːts əˈhed/"),
+            make("mooch around", "to walk or wander around slowly without any particular purpose",
+                 "ぶらぶらする・あてもなくうろつく",
+                 useCases: ["予定なく街や店をぶらつくとき", "家でだらだら過ごしたことを話すとき"],
+                 examples: [
+                    ("We just mooched around the shops all afternoon.", "午後はずっとお店をぶらぶらしてただけだよ。"),
+                    ("I spent Sunday mooching around the house in my pyjamas.", "日曜はパジャマのまま家でだらだらしてた。")
+                 ], ipa: "/muːtʃ əˈraʊnd/"),
+            make("dreary", "dull, boring and depressing",
+                 "退屈な・陰気な・うんざりする",
+                 useCases: ["雨の続く冬の天気について話すとき", "退屈な仕事や場所についてこぼすとき"],
+                 examples: [
+                    ("It's been such a dreary week – rain every single day.", "ほんと陰気な一週間だったね、毎日雨で。"),
+                    ("The meeting was long and dreary, as usual.", "会議はいつも通り長くて退屈だったよ。")
+                 ], ipa: "/ˈdrɪəri/"),
+            make("get glammed up", "to put on smart clothes and make-up to look glamorous",
+                 "おめかしする・ばっちりドレスアップする",
+                 useCases: ["パーティーや夜のお出かけのために着飾るとき", "いつもよりおしゃれしている友達に声をかけるとき"],
+                 examples: [
+                    ("We're getting glammed up for Sophie's birthday tonight.", "今夜はソフィーの誕生日だから、みんなでおめかしするの。"),
+                    ("Look at you, all glammed up! Where are you off to?", "ばっちりキメてるね！どこ行くの？")
+                 ], ipa: "/ɡet ɡlæmd ʌp/"),
+            make("next to nothing", "almost nothing; a very small amount (often of money)",
+                 "ほとんどゼロ・ただ同然",
+                 useCases: ["すごく安く買えたことを自慢するとき", "知識や量がほとんどないことを言うとき"],
+                 examples: [
+                    ("I got this jacket for next to nothing in the sale.", "このジャケット、セールでただ同然で買ったの。"),
+                    ("I know next to nothing about cars, to be honest.", "正直、車のことはほとんど何も知らないんだ。")
+                 ], ipa: "/nekst tə ˈnʌθɪŋ/"),
+            make("a people person", "someone who enjoys being with and talking to other people and is good at it",
+                 "人付き合いが得意な人・人と接するのが好きな人",
+                 useCases: ["自分や他人の性格を説明するとき", "接客や営業に向いている人について話すとき"],
+                 examples: [
+                    ("She's a real people person – she'd be great in sales.", "彼女は本当に人付き合いが上手だから、営業向きだよ。"),
+                    ("I'm not much of a people person before my morning coffee.", "朝のコーヒーを飲むまでは、人と話す気分じゃないんだ。")
+                 ], ipa: "/ə ˈpiːpl ˌpɜːsn/"),
         ]
     }
     private static var britishColloquial245: [Word] {
