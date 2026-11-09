@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261
         ]
         return groups.flatMap { $0 }
     }
@@ -43542,6 +43542,115 @@ enum SeedData {
                     ("She's a real people person – she'd be great in sales.", "彼女は本当に人付き合いが上手だから、営業向きだよ。"),
                     ("I'm not much of a people person before my morning coffee.", "朝のコーヒーを飲むまでは、人と話す気分じゃないんだ。")
                  ], ipa: "/ə ˈpiːpl ˌpɜːsn/"),
+        ]
+    }
+    private static var britishColloquial261: [Word] {
+        [
+            make("wet blanket", "someone who spoils other people's fun by being negative or unenthusiastic",
+                 "場をしらけさせる人・ノリの悪い人",
+                 useCases: ["盛り上がっているのに乗ってこない人について話すとき", "自分がノリ悪いと思われたくないときに冗談で言うとき"],
+                 examples: [
+                    ("Come on, don't be such a wet blanket – just one more drink!", "ほら、そんなにノリ悪くしないで、もう一杯だけ！"),
+                    ("I don't want to be a wet blanket, but it's nearly midnight.", "水を差したくはないけど、もうすぐ夜中の12時だよ。")
+                 ], ipa: "/wet ˈblæŋkɪt/"),
+            make("killjoy", "a person who stops others from enjoying themselves",
+                 "興ざめさせる人・楽しみを台無しにする人",
+                 useCases: ["ルールや注意で楽しみを止める人をからかうとき", "自分が止め役になるときに先に言っておくとき"],
+                 examples: [
+                    ("Sorry to be a killjoy, but we really need to leave now.", "興ざめさせてごめん、でも本当にもう出なきゃ。"),
+                    ("Who turned the music off? What a killjoy!", "誰が音楽止めたの？ 空気読めないなあ！")
+                 ], ipa: "/ˈkɪldʒɔɪ/"),
+            make("third wheel", "a person who is with a couple and feels unwanted or left out",
+                 "（カップルと一緒にいる）お邪魔虫・余計な一人",
+                 useCases: ["カップルと3人で出かけて居心地が悪いとき", "誘いを断るときの理由として冗談っぽく言うとき"],
+                 examples: [
+                    ("I'm not coming – I'll just feel like a third wheel.", "私は行かないよ。お邪魔虫になるだけだから。"),
+                    ("I spent the whole evening playing third wheel to them.", "一晩中あの二人のお邪魔虫をやってたよ。")
+                 ], ipa: "/θɜːd wiːl/"),
+            make("achy", "feeling slight, continuous pain in your body",
+                 "体が痛い・だるくて節々が痛む",
+                 useCases: ["風邪のひき始めで体がだるいとき", "運動した翌日に筋肉痛のとき"],
+                 examples: [
+                    ("I feel all achy – I think I'm coming down with something.", "体中がだるくて痛い。何かにかかりかけてるかも。"),
+                    ("My legs are a bit achy after that hike yesterday.", "昨日のハイキングで足がちょっと痛いんだ。")
+                 ], ipa: "/ˈeɪki/"),
+            make("breezy", "with a fairly strong but pleasant wind; also relaxed and cheerful",
+                 "風のある・そよ風が吹く／明るく気さくな",
+                 useCases: ["風が強めの天気について話すとき", "明るくさっぱりした人の態度を表すとき"],
+                 examples: [
+                    ("It's a bit breezy by the sea, so bring a jacket.", "海辺は少し風があるから、上着を持ってきてね。"),
+                    ("She was all bright and breezy this morning.", "彼女、今朝はすごく明るくて元気だったよ。")
+                 ], ipa: "/ˈbriːzi/"),
+            make("icy", "very cold, or covered with ice; also unfriendly",
+                 "凍った・凍えるほど冷たい／（態度が）冷ややかな",
+                 useCases: ["道路が凍っていて注意を促すとき", "冷たい態度や視線について話すとき"],
+                 examples: [
+                    ("Watch your step – the pavement's really icy this morning.", "足元に気をつけて、今朝は歩道がツルツルだよ。"),
+                    ("She gave me an icy look when I walked in late.", "遅れて入ったら、彼女に冷ややかな目で見られた。")
+                 ], ipa: "/ˈaɪsi/"),
+            make("empty-handed", "without bringing or getting anything",
+                 "手ぶらで・何も持たずに／収穫なしで",
+                 useCases: ["人の家に手土産なしで行きたくないとき", "探し物や買い物で何も得られなかったとき"],
+                 examples: [
+                    ("I can't turn up empty-handed – let's grab some wine.", "手ぶらで行くわけにいかないよ。ワインでも買っていこう。"),
+                    ("I went to three shops but came back empty-handed.", "3軒回ったけど、結局何も買えずに帰ってきた。")
+                 ], ipa: "/ˌempti ˈhændɪd/"),
+            make("learn by heart", "to learn something so well that you can remember it perfectly",
+                 "暗記する・そらで覚える",
+                 useCases: ["歌詞や台詞、番号を覚えているとき", "勉強法について話すとき"],
+                 examples: [
+                    ("I've watched it so often I know it by heart.", "何度も観たから、もう全部そらで言えるよ。"),
+                    ("You'll have to learn your lines by heart before Friday.", "金曜までに台詞を暗記しないとね。")
+                 ], ipa: "/lɜːn baɪ hɑːt/"),
+            make("a little bird told me", "said when you don't want to reveal who told you a piece of information",
+                 "風の噂で聞いたよ・ある筋から聞いたんだ",
+                 useCases: ["情報源を内緒にしたまま知っていることを伝えるとき", "誕生日やお祝い事を知っていたことを茶目っ気たっぷりに言うとき"],
+                 examples: [
+                    ("Happy birthday! A little bird told me it was today.", "誕生日おめでとう！ 今日だって風の噂で聞いてさ。"),
+                    ("A little bird told me you've got a new job – congrats!", "新しい仕事が決まったって小耳に挟んだよ、おめでとう！")
+                 ], ipa: "/ə ˈlɪtl bɜːd təʊld miː/"),
+            make("what's-his-name", "used when you can't remember or don't want to say someone's name",
+                 "なんとかって人・あの人（名前が出てこないとき）",
+                 useCases: ["話している相手の名前を思い出せないとき", "名前を出したくない人をぼかして話すとき"],
+                 examples: [
+                    ("I saw what's-his-name from your office at the gym.", "ジムで君の会社のなんとかって人を見かけたよ。"),
+                    ("Is she still going out with what's-his-name?", "彼女、まだあの何とかって人と付き合ってるの？")
+                 ], ipa: "/ˈwɒtsɪzneɪm/"),
+            make("so-and-so", "used instead of a name, when the exact name doesn't matter; also a polite word for an annoying person",
+                 "誰それ・某さん／（遠回しに）嫌なやつ",
+                 useCases: ["具体的な名前は重要でない例え話をするとき", "腹の立つ人をきつい言葉を避けて呼ぶとき"],
+                 examples: [
+                    ("It's always 'so-and-so said this, so-and-so did that' with him.", "彼っていつも『誰それがこう言った、誰それがああした』ばっかり。"),
+                    ("That cheeky so-and-so took my parking space!", "あの図々しいやつ、私の駐車スペースを取ったよ！")
+                 ], ipa: "/ˈsəʊ ən səʊ/"),
+            make("and whatnot", "and other similar things (used at the end of a list)",
+                 "〜とかいろいろ・〜なんかも",
+                 useCases: ["細かく全部挙げずに例をまとめるとき", "会話でざっくり説明するとき"],
+                 examples: [
+                    ("We need plates, cups, napkins and whatnot for the party.", "パーティー用に皿とかコップとかナプキンとか、いろいろ要るね。"),
+                    ("She's busy with emails and meetings and whatnot.", "彼女はメールやら会議やらで忙しいんだ。")
+                 ], ipa: "/ən ˈwɒtnɒt/"),
+            make("scaredy-cat", "a person who is easily frightened (used playfully)",
+                 "怖がり・弱虫（からかって言う）",
+                 useCases: ["ホラー映画や絶叫マシンを怖がる人をからかうとき", "自分が怖がりだと冗談で認めるとき"],
+                 examples: [
+                    ("Don't be such a scaredy-cat – it's only a spider!", "そんなに怖がらないで、ただのクモだよ！"),
+                    ("I'm a total scaredy-cat when it comes to horror films.", "ホラー映画に関しては私、完全に怖がりなの。")
+                 ], ipa: "/ˈskeədi kæt/"),
+            make("teacher's pet", "a student who is the teacher's favourite; also someone who tries too hard to please the boss",
+                 "先生のお気に入り・（上司に）えこひいきされる人",
+                 useCases: ["学生時代の思い出話をするとき", "上司に気に入られている同僚を冗談でからかうとき"],
+                 examples: [
+                    ("I was a bit of a teacher's pet at school, to be honest.", "正直、学生のころはちょっと先生のお気に入りだったんだ。"),
+                    ("He's always first to volunteer – such a teacher's pet!", "彼っていつも真っ先に手を挙げるよね、上司の点数稼ぎだなあ！")
+                 ], ipa: "/ˈtiːtʃəz pet/"),
+            make("big mouth", "a person who talks too much, especially one who can't keep a secret",
+                 "口が軽い人・おしゃべり",
+                 useCases: ["秘密をばらしてしまった人について話すとき", "うっかり言ってしまった自分を反省するとき"],
+                 examples: [
+                    ("Don't tell Tom – he's got a big mouth.", "トムには言わないで、口が軽いから。"),
+                    ("Me and my big mouth! I didn't mean to spoil the surprise.", "私ったら余計なことを！ サプライズを台無しにするつもりはなかったの。")
+                 ], ipa: "/bɪɡ maʊθ/"),
         ]
     }
     private static var britishColloquial245: [Word] {
