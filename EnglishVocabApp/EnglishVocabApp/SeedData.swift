@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256
         ]
         return groups.flatMap { $0 }
     }
@@ -42997,6 +42997,115 @@ enum SeedData {
                     ("Do you think we stand a chance of winning?", "私たち、勝てる見込みあると思う？"),
                     ("Without a car, you don't stand a chance of getting there on time.", "車がなかったら、時間通りに着くのは無理だよ。")
                  ], ipa: "/stænd ə tʃɑːns/"),
+        ]
+    }
+    private static var britishColloquial256: [Word] {
+        [
+            make("rustle up", "to make food or find something quickly, using whatever is available",
+                 "（あり合わせで）手早く作る・用意する",
+                 useCases: ["冷蔵庫の残り物で料理を作るとき", "急いで人や物を集めるとき"],
+                 examples: [
+                    ("I can rustle up some pasta if you're hungry.", "お腹空いてるなら、パスタくらいささっと作るよ。"),
+                    ("Can you rustle up a few people to help on Saturday?", "土曜に手伝ってくれる人を何人か集められる？")
+                 ], ipa: "/ˈrʌsl ʌp/"),
+            make("sound out", "to talk to someone to find out what they think about something",
+                 "（人の）意見をそれとなく探る・打診する",
+                 useCases: ["提案する前に相手の反応を確かめるとき", "上司や友人の考えを探るとき"],
+                 examples: [
+                    ("I'll sound her out before we make any plans.", "計画を立てる前に、彼女の考えを聞いてみるよ。"),
+                    ("Have you sounded out your boss about working from home?", "在宅勤務のこと、上司に打診してみた？")
+                 ], ipa: "/saʊnd aʊt/"),
+            make("spruce up", "to make someone or something look cleaner, tidier or more attractive",
+                 "（見た目を）小ぎれいにする・きれいに整える",
+                 useCases: ["部屋を手入れして見栄えを良くするとき", "出かける前に身だしなみを整えるとき"],
+                 examples: [
+                    ("We spruced up the flat before my parents came over.", "両親が来る前に部屋をきれいにしたんだ。"),
+                    ("Give me ten minutes to spruce myself up.", "身支度するのに10分ちょうだい。")
+                 ], ipa: "/spruːs ʌp/"),
+            make("ease off", "to become less strong or severe, or to do something with less effort or pressure",
+                 "（雨・痛みなどが）弱まる・（人に）手加減する",
+                 useCases: ["雨や痛みが和らいできたとき", "誰かに厳しくしすぎないよう言うとき"],
+                 examples: [
+                    ("Let's wait until the rain eases off.", "雨が弱まるまで待とうよ。"),
+                    ("Ease off a bit – he's only just started.", "少し手加減してあげて、彼は始めたばかりなんだから。")
+                 ], ipa: "/iːz ɒf/"),
+            make("track down", "to find someone or something after searching for a long time",
+                 "（探し回って）見つけ出す・突き止める",
+                 useCases: ["なかなか見つからない物をやっと見つけたとき", "連絡先や人を探し出すとき"],
+                 examples: [
+                    ("I finally tracked down that book you wanted.", "君が欲しがってた本、やっと見つけたよ。"),
+                    ("Can you track down his number for me?", "彼の電話番号、探してもらえる？")
+                 ], ipa: "/træk daʊn/"),
+            make("stick at", "to keep trying to do something even when it is difficult",
+                 "（諦めずに）根気よく続ける",
+                 useCases: ["習い事や勉強を続けるよう励ますとき", "続けた結果うまくいったと話すとき"],
+                 examples: [
+                    ("Learning the guitar is hard, but stick at it.", "ギターは難しいけど、諦めずに続けなよ。"),
+                    ("She stuck at it and passed her driving test.", "彼女は粘り強く続けて、運転免許の試験に受かったんだ。")
+                 ], ipa: "/stɪk æt/"),
+            make("catch my drift", "to understand the general meaning of what someone is saying, especially something implied",
+                 "言いたいこと（ニュアンス）が分かる",
+                 useCases: ["遠回しに言ったことが伝わったか確かめるとき", "相手の言いたいことを察したとき"],
+                 examples: [
+                    ("He's not exactly reliable, if you catch my drift.", "彼はあまり当てにならないってこと、分かるでしょ。"),
+                    ("I didn't quite catch your drift – what do you mean?", "言いたいことがよく分からなかったんだけど、どういう意味？")
+                 ], ipa: "/kætʃ maɪ drɪft/"),
+            make("the upshot", "the final result or outcome of a situation or discussion",
+                 "結局のところ・結果",
+                 useCases: ["長い話の結論を伝えるとき", "出来事の最終的な結果を説明するとき"],
+                 examples: [
+                    ("The upshot is we're moving to Manchester.", "結局のところ、マンチェスターに引っ越すことになったよ。"),
+                    ("We talked for hours, and the upshot was nothing changed.", "何時間も話したけど、結果的に何も変わらなかった。")
+                 ], ipa: "/ði ˈʌpʃɒt/"),
+            make("talk some sense into", "to persuade someone to stop behaving in a silly or unreasonable way",
+                 "（人を）説得して目を覚まさせる・正気に戻らせる",
+                 useCases: ["無茶なことをしようとしている友人を止めるとき", "誰かに説得を頼むとき"],
+                 examples: [
+                    ("Can you talk some sense into him? He wants to quit his job tomorrow.", "彼を説得してくれない？明日仕事辞めるって言ってるの。"),
+                    ("I tried to talk some sense into her, but she wouldn't listen.", "彼女の目を覚まさせようとしたけど、聞く耳を持たなかった。")
+                 ], ipa: "/tɔːk səm sens ˈɪntuː/"),
+            make("work around", "to find a way of dealing with a problem without solving it directly",
+                 "（問題を）うまく回避する・やりくりする",
+                 useCases: ["予定や制約に合わせて調整するとき", "問題を避けて別の方法で進めるとき"],
+                 examples: [
+                    ("Don't worry, we'll work around your schedule.", "心配しないで、君の予定に合わせるから。"),
+                    ("The app's a bit buggy, but you can work around it.", "そのアプリちょっとバグがあるけど、うまく回避できるよ。")
+                 ], ipa: "/wɜːk əˈraʊnd/"),
+            make("get through to", "to make someone understand something, or to reach someone by phone",
+                 "（人に）分かってもらう・（電話が）つながる",
+                 useCases: ["何度言っても伝わらないとき", "電話がなかなかつながらないとき"],
+                 examples: [
+                    ("I just can't get through to him – he never listens.", "彼にはどうしても伝わらないんだ、全然聞かないから。"),
+                    ("I've been trying to get through to the bank all morning.", "午前中ずっと銀行に電話してるけどつながらないんだ。")
+                 ], ipa: "/ɡet θruː tuː/"),
+            make("pick holes in", "to find small faults or weaknesses in something, often unfairly",
+                 "あら探しをする・ケチをつける",
+                 useCases: ["人の意見や計画に細かく文句を言うとき", "批判ばかりする人について話すとき"],
+                 examples: [
+                    ("He always picks holes in everything I suggest.", "彼は私が何を提案してもあら探しするんだ。"),
+                    ("It's easy to pick holes in it, but have you got a better idea?", "ケチをつけるのは簡単だけど、もっといい案ある？")
+                 ], ipa: "/pɪk həʊlz ɪn/"),
+            make("get wind of", "to hear about something secret or private, often by chance",
+                 "（秘密などを）嗅ぎつける・耳にする",
+                 useCases: ["内緒の話が漏れたとき", "噂を偶然聞きつけたとき"],
+                 examples: [
+                    ("Don't let Mum get wind of the party – it's a surprise.", "パーティーのことママに知られないでね、サプライズだから。"),
+                    ("The press got wind of the story before it was announced.", "発表前にマスコミがその話を嗅ぎつけた。")
+                 ], ipa: "/ɡet wɪnd ɒv/"),
+            make("chip away at", "to gradually reduce or weaken something, bit by bit",
+                 "少しずつ減らす・コツコツ取り組む",
+                 useCases: ["大量の仕事や借金を少しずつ片付けるとき", "自信などが徐々に削られるとき"],
+                 examples: [
+                    ("I'm slowly chipping away at my to-do list.", "やることリストを少しずつ片付けてるところ。"),
+                    ("All the criticism chipped away at her confidence.", "たくさんの批判で彼女の自信は少しずつ削られていった。")
+                 ], ipa: "/tʃɪp əˈweɪ æt/"),
+            make("the long and short of it", "used to give the basic facts of a situation without all the details",
+                 "要するに・かいつまんで言うと",
+                 useCases: ["長い話を手短にまとめるとき", "細かい経緯を省いて結論だけ言うとき"],
+                 examples: [
+                    ("The long and short of it is, we missed the flight.", "要するに、飛行機に乗り遅れたってこと。"),
+                    ("That's the long and short of it – I'll tell you the rest later.", "かいつまんで言うとそういうこと。残りは後で話すね。")
+                 ], ipa: "/ðə lɒŋ ən ʃɔːt əv ɪt/"),
         ]
     }
     private static var britishColloquial245: [Word] {
