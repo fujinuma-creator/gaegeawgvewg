@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255
         ]
         return groups.flatMap { $0 }
     }
@@ -42888,6 +42888,115 @@ enum SeedData {
                     ("You might want to tone down that email a bit.", "そのメール、もう少し言い方を和らげたほうがいいかも。"),
                     ("Can you tone down the colours on this slide?", "このスライドの色、もうちょっと控えめにできる？")
                  ], ipa: "/təʊn daʊn/"),
+        ]
+    }
+    private static var britishColloquial255: [Word] {
+        [
+            make("take the edge off", "to make something unpleasant less strong or intense",
+                 "（つらさ・空腹などを）和らげる",
+                 useCases: ["軽く食べて空腹をしのぐとき", "ストレスや痛みを少し和らげるとき"],
+                 examples: [
+                    ("Have a biscuit – it'll take the edge off until dinner.", "ビスケット食べなよ、夕飯まで少しはしのげるよ。"),
+                    ("A quick walk usually takes the edge off my stress.", "ちょっと散歩するとたいていストレスが和らぐんだ。")
+                 ], ipa: "/teɪk ði edʒ ɒf/"),
+            make("loosen up", "to relax and become less tense, serious or formal",
+                 "リラックスする・肩の力を抜く",
+                 useCases: ["緊張している人に声をかけるとき", "場の雰囲気が和んできたとき"],
+                 examples: [
+                    ("Loosen up a bit – it's only a party!", "ちょっと肩の力抜きなよ、ただのパーティーだよ！"),
+                    ("Everyone loosened up after the first hour.", "最初の1時間が過ぎたら、みんな打ち解けてきた。")
+                 ], ipa: "/ˈluːsn ʌp/"),
+            make("the way forward", "the best plan or action to take in the future",
+                 "今後の進め方・打開策",
+                 useCases: ["会議で今後の方針を話すとき", "問題の解決策を提案するとき"],
+                 examples: [
+                    ("I think working together is the way forward.", "協力し合うことがこれからの道だと思う。"),
+                    ("Let's agree on the way forward before we leave.", "帰る前に今後の進め方を決めておこう。")
+                 ], ipa: "/ðə weɪ ˈfɔːwəd/"),
+            make("follow through", "to finish something you have started or do what you promised",
+                 "最後までやり遂げる・約束を実行する",
+                 useCases: ["口だけでなく実行するかを話すとき", "計画を途中で投げ出さないとき"],
+                 examples: [
+                    ("He makes lots of plans but never follows through.", "彼は計画はたくさん立てるけど、全然やり遂げないんだ。"),
+                    ("If you say you'll do it, follow through.", "やるって言ったなら、最後までやってね。")
+                 ], ipa: "/ˈfɒləʊ θruː/"),
+            make("pin down", "to find out or decide something exactly, or get someone to give a clear answer",
+                 "はっきり特定する・（人に）確約させる",
+                 useCases: ["日程や原因をはっきりさせたいとき", "なかなか返事をくれない人について話すとき"],
+                 examples: [
+                    ("It's hard to pin him down to a date.", "彼に日にちを決めてもらうのは難しいんだよね。"),
+                    ("I can't quite pin down what's wrong with it.", "何がおかしいのか、はっきりとは分からないんだ。")
+                 ], ipa: "/pɪn daʊn/"),
+            make("flesh out", "to add more details to an idea or plan",
+                 "（考え・計画を）肉付けする・具体化する",
+                 useCases: ["ざっくりした案を詳しくするとき", "企画書や話の中身を膨らませるとき"],
+                 examples: [
+                    ("It's a good idea – we just need to flesh it out.", "いいアイデアだね、あとは肉付けするだけだ。"),
+                    ("Could you flesh out the plan a bit for Monday?", "月曜までに計画をもう少し具体的にしてくれる？")
+                 ], ipa: "/fleʃ aʊt/"),
+            make("fall short", "to fail to reach a standard, goal or expectation",
+                 "（期待・目標に）届かない・及ばない",
+                 useCases: ["期待外れだったと言うとき", "目標にあと少し届かなかったとき"],
+                 examples: [
+                    ("The film fell a bit short of my expectations.", "その映画、期待にはちょっと届かなかったな。"),
+                    ("We fell just short of our target this month.", "今月は目標にあと一歩届かなかった。")
+                 ], ipa: "/fɔːl ʃɔːt/"),
+            make("sticking point", "an issue that people cannot agree on and that stops progress",
+                 "（交渉・話し合いの）障害・折り合いがつかない点",
+                 useCases: ["話し合いが行き詰まった原因を説明するとき", "合意できない部分を指摘するとき"],
+                 examples: [
+                    ("Money was the main sticking point.", "お金が一番の折り合いのつかない点だった。"),
+                    ("The only sticking point is the start date.", "唯一引っかかっているのは開始日なんだ。")
+                 ], ipa: "/ˈstɪkɪŋ pɔɪnt/"),
+            make("laugh off", "to treat something as unimportant or funny, often to hide that it bothers you",
+                 "笑い飛ばす・笑ってごまかす",
+                 useCases: ["失敗や批判を気にしないふりをするとき", "気まずい場面を笑って流すとき"],
+                 examples: [
+                    ("She tripped on stage but just laughed it off.", "彼女、舞台でつまずいたけど笑い飛ばしてたよ。"),
+                    ("He tried to laugh it off, but I could tell he was upset.", "彼は笑ってごまかそうとしたけど、傷ついてるのが分かった。")
+                 ], ipa: "/lɑːf ɒf/"),
+            make("price range", "the amount of money you are willing or able to spend",
+                 "予算・価格帯",
+                 useCases: ["買い物で予算を伝えるとき", "店員におすすめを聞くとき"],
+                 examples: [
+                    ("That's a bit out of my price range.", "それはちょっと予算オーバーだな。"),
+                    ("What sort of price range are you looking at?", "どのくらいのご予算をお考えですか？")
+                 ], ipa: "/praɪs reɪndʒ/"),
+            make("pass up", "to choose not to accept a chance or offer",
+                 "（機会・誘いを）見送る・逃す",
+                 useCases: ["チャンスを断ったことを話すとき", "いい誘いを逃したくないとき"],
+                 examples: [
+                    ("I couldn't pass up a free trip to Rome!", "ローマへのタダ旅行なんて見送れるわけないよ！"),
+                    ("Don't pass up this chance – you'll regret it.", "このチャンスを逃しちゃだめだよ、後悔するよ。")
+                 ], ipa: "/pɑːs ʌp/"),
+            make("the next best thing", "something that is not exactly what you want but is the closest alternative",
+                 "次善の策・その次にいいもの",
+                 useCases: ["本命が無理なときの代わりを話すとき", "妥協案を前向きに言うとき"],
+                 examples: [
+                    ("I couldn't go to the match, so watching it at the pub was the next best thing.", "試合には行けなかったから、パブで観るのが次善の策だった。"),
+                    ("Video calls aren't the same, but they're the next best thing.", "ビデオ通話は同じじゃないけど、その次にいい方法だよね。")
+                 ], ipa: "/ðə nekst best θɪŋ/"),
+            make("drawback", "a disadvantage or problem that makes something less attractive",
+                 "欠点・難点",
+                 useCases: ["物件や商品のデメリットを話すとき", "計画のマイナス面を指摘するとき"],
+                 examples: [
+                    ("The only drawback is that it's a bit far from town.", "唯一の難点は、街からちょっと遠いことなんだ。"),
+                    ("Every job has its drawbacks.", "どんな仕事にも欠点はあるよ。")
+                 ], ipa: "/ˈdrɔːbæk/"),
+            make("slip-up", "a small, careless mistake",
+                 "ちょっとしたミス・うっかり",
+                 useCases: ["小さなミスを謝るとき", "大したことのない失敗をフォローするとき"],
+                 examples: [
+                    ("Sorry, that was a slip-up on my part.", "ごめん、それは私のうっかりミスだ。"),
+                    ("One little slip-up and the whole thing crashed.", "ちょっとしたミスひとつで全部ダメになった。")
+                 ], ipa: "/ˈslɪp ʌp/"),
+            make("stand a chance", "to have a possibility of succeeding",
+                 "見込みがある・勝ち目がある",
+                 useCases: ["成功の可能性を話すとき", "勝負や応募の見込みを聞くとき"],
+                 examples: [
+                    ("Do you think we stand a chance of winning?", "私たち、勝てる見込みあると思う？"),
+                    ("Without a car, you don't stand a chance of getting there on time.", "車がなかったら、時間通りに着くのは無理だよ。")
+                 ], ipa: "/stænd ə tʃɑːns/"),
         ]
     }
     private static var britishColloquial245: [Word] {
