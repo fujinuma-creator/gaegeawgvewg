@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259
         ]
         return groups.flatMap { $0 }
     }
@@ -43324,6 +43324,115 @@ enum SeedData {
                     ("Let's round off the evening with a drink by the river.", "川沿いで一杯飲んで、今夜は締めくくろう。"),
                     ("We rounded off the meal with coffee and cake.", "食事の最後はコーヒーとケーキで締めたよ。")
                  ], ipa: "/raʊnd ɒf/"),
+        ]
+    }
+    private static var britishColloquial259: [Word] {
+        [
+            make("give it a bash", "to try doing something, especially something you have not done before",
+                 "（試しに）やってみる・挑戦してみる",
+                 useCases: ["初めてのことに気軽に挑戦するとき", "相手に「やってみなよ」と勧めるとき"],
+                 examples: [
+                    ("I've never made bread before, but I'll give it a bash.", "パンは作ったことないけど、試しにやってみるよ。"),
+                    ("Go on, give it a bash – you might be good at it!", "ほら、やってみなよ。案外得意かもよ！")
+                 ], ipa: "/ɡɪv ɪt ə bæʃ/"),
+            make("do a runner", "to leave a place suddenly to avoid paying or facing a situation",
+                 "（支払いや面倒から）逃げ出す・トンズラする",
+                 useCases: ["客が代金を払わずに店から逃げたとき", "面倒な場面から急にいなくなった人について話すとき"],
+                 examples: [
+                    ("Two lads did a runner without paying for their meal.", "男2人が食事代を払わずに逃げたんだって。"),
+                    ("Where's Tom? Has he done a runner on the washing-up?", "トムどこ？皿洗いから逃げたな？")
+                 ], ipa: "/duː ə ˈrʌnə/"),
+            make("pull out all the stops", "to make the greatest possible effort to make something succeed",
+                 "あらゆる手を尽くす・全力を出す",
+                 useCases: ["パーティーやおもてなしに全力を注ぐとき", "締め切りに間に合わせるため総力を挙げるとき"],
+                 examples: [
+                    ("They really pulled out all the stops for her birthday.", "彼女の誕生日のために、みんな本当に全力を尽くしたんだ。"),
+                    ("We'll have to pull out all the stops to finish by Friday.", "金曜までに終わらせるには、総力を挙げないとね。")
+                 ], ipa: "/pʊl aʊt ɔːl ðə stɒps/"),
+            make("niggle", "a small worry, doubt or pain that continues to bother you; to bother someone slightly",
+                 "小さな気がかり・軽い痛み／（じわじわ）気になる",
+                 useCases: ["小さな不安や疑問が頭から離れないとき", "ちょっとした体の痛みについて話すとき"],
+                 examples: [
+                    ("I've got a niggle in my knee, so I'm skipping football.", "膝がちょっと痛むから、サッカーは休むよ。"),
+                    ("Something's been niggling me about that email.", "あのメール、何か引っかかってるんだよね。")
+                 ], ipa: "/ˈnɪɡl/"),
+            make("pester", "to keep annoying someone by asking for something again and again",
+                 "（しつこく頼んで）困らせる・せがむ",
+                 useCases: ["子どもが何度も物をねだるとき", "誰かに何度も催促してしまうとき"],
+                 examples: [
+                    ("The kids have been pestering me for a puppy all week.", "子どもたちが一週間ずっと子犬が欲しいってせがんでくるの。"),
+                    ("Sorry to pester you, but did you get a chance to look at it?", "しつこくてごめんね、あれ見てもらえた？")
+                 ], ipa: "/ˈpestə/"),
+            make("a big softie", "a kind, gentle person who is easily moved or not as tough as they seem",
+                 "（見かけによらず）心優しい人・涙もろい人",
+                 useCases: ["強面だけど実は優しい人を紹介するとき", "映画などですぐ泣く人をからかうとき"],
+                 examples: [
+                    ("He looks scary, but he's a big softie really.", "見た目は怖いけど、実はすごく優しいんだよ。"),
+                    ("You're crying at an advert? You big softie!", "CMで泣いてるの？涙もろいなあ！")
+                 ], ipa: "/ə bɪɡ ˈsɒfti/"),
+            make("chirpy", "cheerful and lively",
+                 "元気な・陽気な・ご機嫌な",
+                 useCases: ["朝から機嫌が良い人に声をかけるとき", "明るい店員や同僚について話すとき"],
+                 examples: [
+                    ("You're very chirpy this morning – good weekend?", "今朝はやけにご機嫌だね。いい週末だった？"),
+                    ("The woman at the café is always so chirpy.", "あのカフェの店員さん、いつも明るいよね。")
+                 ], ipa: "/ˈtʃɜːpi/"),
+            make("bubbly", "full of energy, friendly and cheerful (person); also informal for sparkling wine",
+                 "明るく快活な（人）／シャンパン・スパークリングワイン",
+                 useCases: ["明るく社交的な人の性格を説明するとき", "お祝いでシャンパンを開けるとき"],
+                 examples: [
+                    ("She's really bubbly – you'll get on with her straight away.", "彼女すごく明るいから、すぐ打ち解けられるよ。"),
+                    ("Let's open a bottle of bubbly to celebrate!", "お祝いにシャンパン開けよう！")
+                 ], ipa: "/ˈbʌbli/"),
+            make("absent-minded", "tending to forget things or not notice what is happening because you are thinking about something else",
+                 "うっかりした・忘れっぽい・ぼんやりした",
+                 useCases: ["物をよく置き忘れる人について話すとき", "自分のうっかりミスを説明するとき"],
+                 examples: [
+                    ("I'm so absent-minded – I put the milk in the cupboard again.", "ほんと忘れっぽくて、また牛乳を戸棚に入れちゃった。"),
+                    ("My grandad's a bit absent-minded these days.", "おじいちゃん、最近ちょっとぼんやりしてるんだ。")
+                 ], ipa: "/ˌæbsənt ˈmaɪndɪd/"),
+            make("butterfingers", "said jokingly to or about someone who drops things",
+                 "（物をよく落とす人に）不器用だな・ドジだな",
+                 useCases: ["誰かがボールや物を落としたときに冗談で", "自分が物を落としたときの照れ隠しに"],
+                 examples: [
+                    ("Butterfingers! That's the second glass today.", "ドジだなあ！今日2個目のグラスだよ。"),
+                    ("Sorry, butterfingers – I'll clean it up.", "ごめん、落としちゃった。片付けるね。")
+                 ], ipa: "/ˈbʌtəˌfɪŋɡəz/"),
+            make("sober up", "to become less drunk, or to make someone less drunk",
+                 "酔いを覚ます・酔いが覚める",
+                 useCases: ["飲みすぎた後にコーヒーや水で酔いを覚ますとき", "運転前にしっかり酔いが覚めるのを待つとき"],
+                 examples: [
+                    ("Have some water and sober up a bit before you go home.", "帰る前に水を飲んで、少し酔いを覚ましなよ。"),
+                    ("It took me ages to sober up after the wedding.", "結婚式のあと、酔いが覚めるまでめちゃくちゃ時間かかった。")
+                 ], ipa: "/ˈsəʊbər ʌp/"),
+            make("a wind-up", "a joke or trick intended to make someone believe something untrue or get annoyed",
+                 "からかい・冗談・担ぎ",
+                 useCases: ["信じられない話を聞いて「冗談でしょ？」と言うとき", "人をからかっていたと明かすとき"],
+                 examples: [
+                    ("Is this a wind-up? You're really moving to Australia?", "冗談でしょ？本当にオーストラリアに引っ越すの？"),
+                    ("Relax, it was just a wind-up!", "落ち着いて、ただのからかいだって！")
+                 ], ipa: "/ə ˈwaɪnd ʌp/"),
+            make("go down a treat", "to be very much enjoyed or appreciated",
+                 "大好評だ・とても喜ばれる",
+                 useCases: ["持っていった料理や手土産が好評だったとき", "提案やジョークがウケたとき"],
+                 examples: [
+                    ("Your brownies went down a treat at the party.", "君のブラウニー、パーティーで大好評だったよ。"),
+                    ("A cold beer would go down a treat right now.", "今、冷えたビールがあったら最高だろうなあ。")
+                 ], ipa: "/ɡəʊ daʊn ə triːt/"),
+            make("moreish", "so tasty that you want to keep eating more",
+                 "（おいしくて）あとを引く・止まらない",
+                 useCases: ["スナックやお菓子が止まらないとき", "料理を褒めるとき"],
+                 examples: [
+                    ("These crisps are dangerously moreish.", "このポテチ、止まらなくてやばい。"),
+                    ("Your cheese scones are so moreish – can I have another?", "チーズスコーン、あとを引くね。もう一個いい？")
+                 ], ipa: "/ˈmɔːrɪʃ/"),
+            make("clock off", "to finish work for the day",
+                 "仕事を終える・退勤する",
+                 useCases: ["仕事終わりの予定を話すとき", "今日は早めに上がると言うとき"],
+                 examples: [
+                    ("What time do you clock off on Fridays?", "金曜日は何時に仕事終わるの？"),
+                    ("I'm clocking off early today – fancy a drink?", "今日は早めに上がるんだ。一杯どう？")
+                 ], ipa: "/klɒk ɒf/"),
         ]
     }
     private static var britishColloquial245: [Word] {
