@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257
         ]
         return groups.flatMap { $0 }
     }
@@ -43106,6 +43106,115 @@ enum SeedData {
                     ("The long and short of it is, we missed the flight.", "要するに、飛行機に乗り遅れたってこと。"),
                     ("That's the long and short of it – I'll tell you the rest later.", "かいつまんで言うとそういうこと。残りは後で話すね。")
                  ], ipa: "/ðə lɒŋ ən ʃɔːt əv ɪt/"),
+        ]
+    }
+    private static var britishColloquial257: [Word] {
+        [
+            make("polish off", "to finish food, drink or a task quickly and completely",
+                 "（食べ物・仕事を）平らげる・さっさと片付ける",
+                 useCases: ["料理や飲み物を全部食べ切ったとき", "残りの仕事を一気に終わらせるとき"],
+                 examples: [
+                    ("The kids polished off the whole pizza in ten minutes.", "子どもたち、ピザを10分で丸ごと平らげちゃったよ。"),
+                    ("I just need to polish off this report, then I'm free.", "このレポートを片付けたら、手が空くよ。")
+                 ], ipa: "/ˈpɒlɪʃ ɒf/"),
+            make("win over", "to persuade someone to support you or like you",
+                 "（人を）味方につける・心をつかむ",
+                 useCases: ["最初は乗り気でなかった人を説得できたとき", "初対面の人に気に入られたとき"],
+                 examples: [
+                    ("She wasn't keen at first, but I won her over.", "最初は乗り気じゃなかったけど、彼女を説得できたよ。"),
+                    ("Your mum's cooking totally won me over.", "君のお母さんの料理にすっかり心をつかまれたよ。")
+                 ], ipa: "/wɪn ˈəʊvə/"),
+            make("tail off", "to gradually become smaller, weaker or quieter",
+                 "だんだん減る・（声などが）次第に小さくなる",
+                 useCases: ["客足や売上が徐々に減ってきたとき", "話している声が尻すぼみになるとき"],
+                 examples: [
+                    ("Business usually tails off after Christmas.", "クリスマスが過ぎると、たいてい客足が落ちるんだ。"),
+                    ("His voice tailed off when he saw her face.", "彼女の顔を見て、彼の声は小さくなっていった。")
+                 ], ipa: "/teɪl ɒf/"),
+            make("swot up on", "to study a subject quickly and hard, especially before a test or meeting",
+                 "（試験・面接前に）詰め込みで勉強する",
+                 useCases: ["試験の前に集中して勉強するとき", "面接前に会社のことを調べておくとき"],
+                 examples: [
+                    ("I need to swot up on my French before the trip.", "旅行の前にフランス語を詰め込まなきゃ。"),
+                    ("Swot up on the company before your interview.", "面接の前に、その会社のことを調べておきなよ。")
+                 ], ipa: "/swɒt ʌp ɒn/"),
+            make("cotton on", "to finally understand or realise something",
+                 "（やっと）気づく・ピンとくる",
+                 useCases: ["しばらくして状況がやっと分かったとき", "相手が真実に気づいたかを話すとき"],
+                 examples: [
+                    ("It took me ages to cotton on to what was happening.", "何が起きてるのか気づくのに、すごく時間がかかったよ。"),
+                    ("Don't worry, he won't cotton on.", "大丈夫、彼は気づかないよ。")
+                 ], ipa: "/ˈkɒtn ɒn/"),
+            make("waffle on", "to talk or write a lot without saying anything important",
+                 "だらだらとまとまりのない話をする",
+                 useCases: ["話が長くて要点がない人について話すとき", "自分が話しすぎたと謝るとき"],
+                 examples: [
+                    ("Sorry, I'm waffling on – what was your question?", "ごめん、だらだら話しちゃった。質問は何だっけ？"),
+                    ("He waffled on for an hour and said nothing new.", "彼は1時間もだらだら話して、目新しいことは何も言わなかった。")
+                 ], ipa: "/ˈwɒfl ɒn/"),
+            make("scrub up well", "to look smart and attractive when you make an effort with your appearance",
+                 "（おしゃれすると）見違えるほどきれいになる",
+                 useCases: ["きちんとした格好の友人を褒めるとき", "結婚式やパーティーで身だしなみを整えたとき"],
+                 examples: [
+                    ("Look at you in a suit – you scrub up well!", "スーツ姿いいね、ちゃんとすると見違えるね！"),
+                    ("He doesn't half scrub up well for a wedding.", "結婚式となると、彼は本当にビシッと決めてくるよね。")
+                 ], ipa: "/skrʌb ʌp wel/"),
+            make("liven up", "to become or make something more interesting, exciting or full of energy",
+                 "（場を）盛り上げる・活気づける",
+                 useCases: ["静かなパーティーを盛り上げたいとき", "地味な料理や部屋に変化をつけるとき"],
+                 examples: [
+                    ("Let's put some music on to liven things up.", "音楽をかけて盛り上げようよ。"),
+                    ("The party really livened up after midnight.", "パーティーは夜中を過ぎてから本当に盛り上がったよ。")
+                 ], ipa: "/ˈlaɪvn ʌp/"),
+            make("take to", "to start to like someone or something, especially quickly",
+                 "（人・物事を）すぐに気に入る・なじむ",
+                 useCases: ["新しい環境や趣味にすぐなじんだとき", "人とすぐに打ち解けたとき"],
+                 examples: [
+                    ("The kids took to their new teacher straight away.", "子どもたちは新しい先生にすぐなついたよ。"),
+                    ("I never really took to golf.", "ゴルフはどうしても好きになれなかったな。")
+                 ], ipa: "/teɪk tuː/"),
+            make("stand in for", "to do someone's job or take their place for a short time",
+                 "（一時的に）代わりを務める・代役をする",
+                 useCases: ["休んだ同僚の代わりに仕事をするとき", "会議やイベントで代役を頼むとき"],
+                 examples: [
+                    ("Can you stand in for me at the meeting tomorrow?", "明日の会議、私の代わりに出てくれる？"),
+                    ("Tom's standing in for the manager this week.", "今週はトムがマネージャーの代わりをしてるよ。")
+                 ], ipa: "/stænd ɪn fɔː/"),
+            make("talk someone round", "to persuade someone to agree with you or change their mind",
+                 "（人を）説得して考えを変えさせる",
+                 useCases: ["反対している家族を説得するとき", "渋っている友人を納得させるとき"],
+                 examples: [
+                    ("Dad said no at first, but I talked him round.", "父さんは最初ダメって言ったけど、説得したよ。"),
+                    ("Leave it with me – I'll talk her round.", "任せて、彼女を説得してみるから。")
+                 ], ipa: "/tɔːk ˈsʌmwʌn raʊnd/"),
+            make("knock together", "to make something quickly and without much care, using what is available",
+                 "（ありあわせで）手早く作る・こしらえる",
+                 useCases: ["急いで料理や資料を用意するとき", "簡単な物を手作りするとき"],
+                 examples: [
+                    ("I'll knock together a quick salad for lunch.", "お昼に簡単なサラダをささっと作るね。"),
+                    ("We knocked together a few slides the night before.", "前の晩に、スライドを何枚か急いでこしらえたんだ。")
+                 ], ipa: "/nɒk təˈɡeðə/"),
+            make("chance it", "to take a risk and do something, hoping it will be all right",
+                 "一か八かやってみる・運に任せる",
+                 useCases: ["傘を持たずに出かけるか迷うとき", "予約なしで店に行ってみるとき"],
+                 examples: [
+                    ("It might rain, but I'll chance it without a coat.", "雨が降るかもしれないけど、コートなしで行ってみるよ。"),
+                    ("We didn't book – shall we just chance it?", "予約してないけど、とりあえず行ってみる？")
+                 ], ipa: "/tʃɑːns ɪt/"),
+            make("pipe down", "to stop talking or be quieter (often used as a friendly or impatient command)",
+                 "静かにする・黙る",
+                 useCases: ["騒いでいる子どもや友人を静かにさせるとき", "テレビや映画を見ているときに注意するとき"],
+                 examples: [
+                    ("Pipe down, you two – I'm on the phone!", "二人とも静かにして、電話中なの！"),
+                    ("Can you pipe down a bit? The baby's asleep.", "ちょっと静かにしてくれる？赤ちゃんが寝てるんだ。")
+                 ], ipa: "/paɪp daʊn/"),
+            make("pile in", "to enter a place or vehicle together quickly in a group, or to join in eagerly",
+                 "（大勢で）どっと乗り込む・一斉に加わる",
+                 useCases: ["みんなで車に乗り込むとき", "大勢が一斉に何かに加わるとき"],
+                 examples: [
+                    ("Right, everyone pile in – there's room in the back.", "よし、みんな乗って。後ろにまだ空きがあるよ。"),
+                    ("As soon as the food arrived, everyone piled in.", "料理が来た途端、みんな一斉に食べ始めたよ。")
+                 ], ipa: "/paɪl ɪn/"),
         ]
     }
     private static var britishColloquial245: [Word] {
