@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262
         ]
         return groups.flatMap { $0 }
     }
@@ -43542,6 +43542,115 @@ enum SeedData {
                     ("She's a real people person – she'd be great in sales.", "彼女は本当に人付き合いが上手だから、営業向きだよ。"),
                     ("I'm not much of a people person before my morning coffee.", "朝のコーヒーを飲むまでは、人と話す気分じゃないんだ。")
                  ], ipa: "/ə ˈpiːpl ˌpɜːsn/"),
+        ]
+    }
+    private static var britishColloquial262: [Word] {
+        [
+            make("baffled", "completely unable to understand or explain something",
+                 "さっぱりわからない・困惑した",
+                 useCases: ["理由がまったく理解できないとき", "予想外の結果に首をかしげるとき"],
+                 examples: [
+                    ("I'm completely baffled – it worked fine yesterday.", "さっぱりわからないよ。昨日はちゃんと動いてたのに。"),
+                    ("Everyone was baffled by his decision to quit.", "彼が辞めると決めたことに、みんな首をかしげてた。")
+                 ], ipa: "/ˈbæfld/"),
+            make("puzzled", "confused because you cannot understand something",
+                 "けげんな・戸惑った",
+                 useCases: ["相手の言葉や態度がよくわからないとき", "不思議そうな表情を描写するとき"],
+                 examples: [
+                    ("You look puzzled – shall I explain it again?", "戸惑ってるみたいだね。もう一回説明しようか？"),
+                    ("She gave me a puzzled look when I mentioned it.", "その話をしたら、彼女はけげんな顔をした。")
+                 ], ipa: "/ˈpʌzld/"),
+            make("forgetful", "often forgetting things",
+                 "忘れっぽい",
+                 useCases: ["物忘れが多い自分を笑って話すとき", "年配の家族について話すとき"],
+                 examples: [
+                    ("Sorry, I'm so forgetful these days – what was your name again?", "ごめん、最近ほんと忘れっぽくて。お名前何でしたっけ？"),
+                    ("My gran's getting a bit forgetful, so I ring her every day.", "おばあちゃんが少し忘れっぽくなってきたから、毎日電話してるんだ。")
+                 ], ipa: "/fəˈɡetfl/"),
+            make("clueless", "knowing nothing about something; having no idea",
+                 "まったくわからない・疎い",
+                 useCases: ["ある分野に全然詳しくないと言うとき", "状況を全く把握していない人について話すとき"],
+                 examples: [
+                    ("I'm totally clueless when it comes to cars.", "車のことになると、私は全然わからないんだ。"),
+                    ("He was clueless about the surprise party.", "彼はサプライズパーティーのことを全く知らなかった。")
+                 ], ipa: "/ˈkluːləs/"),
+            make("tummy", "an informal word for stomach",
+                 "おなか（くだけた言い方）",
+                 useCases: ["おなかの調子が悪いと伝えるとき", "子どもや親しい人との会話で"],
+                 examples: [
+                    ("I've got a bit of a tummy ache – I'll skip dessert.", "ちょっとおなかが痛いから、デザートはやめとくね。"),
+                    ("My tummy's rumbling – is lunch nearly ready?", "おなかが鳴ってるよ。お昼もうすぐできる？")
+                 ], ipa: "/ˈtʌmi/"),
+            make("gadget", "a small, clever device or tool",
+                 "ガジェット・便利な小道具",
+                 useCases: ["新しい電子機器や便利グッズの話をするとき", "機械好きな人について話すとき"],
+                 examples: [
+                    ("He loves gadgets – he's always buying the latest phone.", "彼はガジェット好きで、いつも最新のスマホを買ってるよ。"),
+                    ("What's this little gadget for?", "この小さい道具、何に使うの？")
+                 ], ipa: "/ˈɡædʒɪt/"),
+            make("toddler", "a young child who has recently learnt to walk",
+                 "よちよち歩きの幼児（1〜3歳くらい）",
+                 useCases: ["小さい子どもがいる家庭の話をするとき", "子育ての大変さを話すとき"],
+                 examples: [
+                    ("Having a toddler in the house means nothing stays tidy.", "家によちよち歩きの子がいると、何も片付いたままにならないよ。"),
+                    ("She's got two toddlers, so she's knackered most days.", "彼女は小さい子が二人いて、たいてい疲れ切ってる。")
+                 ], ipa: "/ˈtɒdlə/"),
+            make("deserted", "empty, with no people around",
+                 "人けのない・がらんとした",
+                 useCases: ["街や店に誰もいないとき", "休日や早朝の静かな場所を描写するとき"],
+                 examples: [
+                    ("The town centre was completely deserted on Sunday morning.", "日曜の朝、街の中心部は全く人けがなかった。"),
+                    ("Where is everyone? The office is deserted!", "みんなどこ？ オフィスががらんとしてるよ！")
+                 ], ipa: "/dɪˈzɜːtɪd/"),
+            make("trip over", "to catch your foot on something and fall or nearly fall",
+                 "（〜に）つまずく",
+                 useCases: ["物につまずいて転びそうになったとき", "床に物を置かないよう注意するとき"],
+                 examples: [
+                    ("I tripped over the cable and nearly dropped my coffee.", "コードにつまずいて、コーヒーを落としそうになった。"),
+                    ("Move your bag, or someone's going to trip over it.", "かばんどけて、誰かつまずくよ。")
+                 ], ipa: "/trɪp ˈəʊvə/"),
+            make("hold the line", "to wait on the phone without hanging up",
+                 "（電話を切らずに）そのままお待ちください",
+                 useCases: ["電話で相手に少し待ってもらうとき", "問い合わせ窓口で待たされるとき"],
+                 examples: [
+                    ("Could you hold the line, please? I'll just check.", "そのままお待ちいただけますか？ 確認しますので。"),
+                    ("I've been holding the line for twenty minutes!", "もう20分も電話で待たされてるよ！")
+                 ], ipa: "/həʊld ðə laɪn/"),
+            make("blush", "to go red in the face because you are embarrassed or shy",
+                 "顔が赤くなる・赤面する",
+                 useCases: ["褒められて照れたとき", "恥ずかしがる人をからかうとき"],
+                 examples: [
+                    ("Stop it, you're making me blush!", "やめてよ、照れちゃうじゃん！"),
+                    ("He blushed when she said hello.", "彼女に挨拶されて、彼は顔を赤くした。")
+                 ], ipa: "/blʌʃ/"),
+            make("cuddle", "to hold someone or something close in your arms to show love; a hug",
+                 "抱きしめる・ぎゅっとする／ハグ",
+                 useCases: ["子どもやペットを抱きしめるとき", "落ち込んでいる人を慰めるとき"],
+                 examples: [
+                    ("Come here and give me a cuddle.", "こっちおいで、ぎゅってさせて。"),
+                    ("The kids love cuddling the dog on the sofa.", "子どもたちはソファで犬を抱っこするのが大好きなんだ。")
+                 ], ipa: "/ˈkʌdl/"),
+            make("out of breath", "breathing very quickly because of physical effort",
+                 "息切れして・息を切らして",
+                 useCases: ["走ったり階段を上ったりした後", "運動不足を嘆くとき"],
+                 examples: [
+                    ("Give me a sec, I'm out of breath from running for the bus.", "ちょっと待って、バスに走ったから息が切れてて。"),
+                    ("I get out of breath just climbing the stairs these days.", "最近は階段を上るだけで息切れするよ。")
+                 ], ipa: "/aʊt əv breθ/"),
+            make("scream", "to shout loudly in a high voice because of fear, excitement, or pain; also something very funny",
+                 "叫ぶ・悲鳴を上げる／（口語で）めちゃくちゃ面白いもの・人",
+                 useCases: ["驚いて叫んだことを話すとき", "とても面白い人や出来事を褒めるとき"],
+                 examples: [
+                    ("I nearly screamed when I saw the spider.", "クモを見て、思わず叫びそうになったよ。"),
+                    ("You should meet her – she's an absolute scream.", "彼女に会ってみなよ、めちゃくちゃ面白いから。")
+                 ], ipa: "/skriːm/"),
+            make("snuggle up", "to get into a warm, comfortable position, often close to someone",
+                 "（暖かく）寄り添う・くるまる",
+                 useCases: ["寒い日に毛布にくるまって過ごすとき", "家でのんびりする予定を話すとき"],
+                 examples: [
+                    ("I just want to snuggle up on the sofa with a film tonight.", "今夜はソファで毛布にくるまって映画を観たいな。"),
+                    ("The kids snuggled up together under the blanket.", "子どもたちは毛布の中で寄り添ってた。")
+                 ], ipa: "/ˈsnʌɡl ʌp/"),
         ]
     }
     private static var britishColloquial261: [Word] {
