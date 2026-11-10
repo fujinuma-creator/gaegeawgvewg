@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271
         ]
         return groups.flatMap { $0 }
     }
@@ -44196,6 +44196,115 @@ enum SeedData {
                     ("I can't have a drink tonight – I'm on call.", "今夜は飲めないんだ、待機当番だから。"),
                     ("She's on call this weekend, so she might have to leave.", "彼女は今週末待機当番だから、途中で抜けるかも。")
                  ], ipa: "/ɒn kɔːl/"),
+        ]
+    }
+    private static var britishColloquial271: [Word] {
+        [
+            make("take someone up on", "to accept an offer or invitation that someone has made",
+                 "（申し出・誘いに）乗る・甘える",
+                 useCases: ["相手の親切な申し出を受けるとき", "誘いに後で乗るかもと伝えるとき"],
+                 examples: [
+                    ("Thanks for the offer of a lift – I might take you up on that.", "送ってくれるって話、ありがとう。お言葉に甘えるかも。"),
+                    ("She said I could stay at hers, so I took her up on it.", "泊まっていいって言ってくれたから、甘えさせてもらった。")
+                 ], ipa: "/teɪk ˈsʌmwʌn ʌp ɒn/"),
+            make("I'll catch you up", "used to tell someone to go ahead and that you will join them soon",
+                 "先に行ってて、すぐ追いつくから",
+                 useCases: ["友達に先に行ってもらうとき", "用事を済ませてから合流するとき"],
+                 examples: [
+                    ("You go on ahead – I'll catch you up in a minute.", "先に行ってて、すぐ追いつくから。"),
+                    ("I just need to grab my coat. I'll catch you up!", "コート取ってくるだけ。すぐ追いつく！")
+                 ], ipa: "/aɪl kætʃ jə ʌp/"),
+            make("you're cutting out", "used on the phone or a video call when the other person's voice keeps stopping",
+                 "（電話・通話で）声が途切れてるよ",
+                 useCases: ["電話の電波が悪いとき", "オンライン通話で音声が途切れるとき"],
+                 examples: [
+                    ("Sorry, you're cutting out – can you say that again?", "ごめん、声が途切れてる。もう一回言って？"),
+                    ("The signal's terrible here, I keep cutting out.", "ここ電波最悪で、ずっと途切れちゃう。")
+                 ], ipa: "/jɔː ˈkʌtɪŋ aʊt/"),
+            make("be fluent in", "to be able to speak a language easily and well",
+                 "（言語が）ペラペラだ・流暢だ",
+                 useCases: ["話せる言語を紹介するとき", "語学力について話すとき"],
+                 examples: [
+                    ("She's fluent in French and gets by in Spanish.", "彼女はフランス語がペラペラで、スペイン語も少しなら話せる。"),
+                    ("I'm not fluent yet, but I'm getting there.", "まだ流暢じゃないけど、だいぶ近づいてきたよ。")
+                 ], ipa: "/bi ˈfluːənt ɪn/"),
+            make("lost in translation", "used when the meaning or humour of something disappears when put into another language",
+                 "訳すと（ニュアンスが）伝わらない",
+                 useCases: ["ジョークが通じなかったとき", "言葉のニュアンスの違いを話すとき"],
+                 examples: [
+                    ("It's a brilliant joke in Italian, but it gets lost in translation.", "イタリア語だと最高のジョークなんだけど、訳すと伝わらないんだ。"),
+                    ("I think something got lost in translation there.", "今の、何か意味がちゃんと伝わらなかった気がする。")
+                 ], ipa: "/lɒst ɪn trænzˈleɪʃn/"),
+            make("make yourself understood", "to manage to communicate what you mean, especially in a foreign language",
+                 "（何とか）言いたいことを伝える・通じさせる",
+                 useCases: ["旅行先で言葉が通じるか話すとき", "語学力が足りない中で頑張るとき"],
+                 examples: [
+                    ("My German's not great, but I can make myself understood.", "ドイツ語は上手じゃないけど、言いたいことは伝えられるよ。"),
+                    ("I used my hands a lot to make myself understood.", "通じるように身振り手振りを使いまくった。")
+                 ], ipa: "/meɪk jɔːˈself ˌʌndəˈstʊd/"),
+            make("a language barrier", "difficulty communicating because people speak different languages",
+                 "言葉の壁",
+                 useCases: ["海外での苦労を話すとき", "外国人とのコミュニケーションについて"],
+                 examples: [
+                    ("There was a bit of a language barrier, but we managed.", "ちょっと言葉の壁はあったけど、何とかなったよ。"),
+                    ("Moving abroad was hard at first because of the language barrier.", "最初は言葉の壁があって海外移住は大変だった。")
+                 ], ipa: "/ə ˈlæŋɡwɪdʒ ˈbæriə/"),
+            make("check up on", "to make sure someone is all right or something is being done properly",
+                 "（様子を）確かめる・見に行く",
+                 useCases: ["体調の悪い人の様子を見るとき", "子どもや作業の様子を確認するとき"],
+                 examples: [
+                    ("I'll pop round later to check up on Gran.", "後でおばあちゃんの様子を見に寄ってくるね。"),
+                    ("Stop checking up on me – I'm fine!", "いちいち様子見に来ないで、大丈夫だから！")
+                 ], ipa: "/tʃek ʌp ɒn/"),
+            make("what's the word?", "used when you are trying to remember a word you can't think of",
+                 "何て言うんだっけ？（言葉が出てこないとき）",
+                 useCases: ["会話中に単語を思い出せないとき", "相手に助けを求めるとき"],
+                 examples: [
+                    ("He's very… what's the word? Stubborn!", "彼ってすごく…何て言うんだっけ？頑固！"),
+                    ("It was a bit… oh, what's the word I'm looking for?", "ちょっと…あれ、何て言えばいいんだっけ？")
+                 ], ipa: "/wɒts ðə wɜːd/"),
+            make("mother tongue", "the first language you learned as a child",
+                 "母語",
+                 useCases: ["出身や話す言語を紹介するとき", "語学の話題で"],
+                 examples: [
+                    ("My mother tongue is Japanese, but I use English at work.", "母語は日本語だけど、仕事では英語を使ってる。"),
+                    ("It's hard to explain jokes in anything but your mother tongue.", "ジョークを母語以外で説明するのは難しい。")
+                 ], ipa: "/ˈmʌðə tʌŋ/"),
+            make("have an accent", "to speak in a way that shows where you come from",
+                 "なまりがある・（～の）アクセントで話す",
+                 useCases: ["出身地を推測するとき", "話し方の特徴について話すとき"],
+                 examples: [
+                    ("You've got a lovely accent – where are you from?", "素敵なアクセントだね、出身はどこ？"),
+                    ("He's got a really strong Scottish accent.", "彼はすごく強いスコットランドなまりがある。")
+                 ], ipa: "/hæv ən ˈæksent/"),
+            make("how shall I put it?", "used when you are trying to say something carefully or politely",
+                 "何て言えばいいかな…（言葉を選ぶとき）",
+                 useCases: ["言いにくいことを伝えるとき", "遠回しに表現したいとき"],
+                 examples: [
+                    ("The food was… how shall I put it? A bit of an acquired taste.", "料理は…何て言えばいいかな、ちょっとクセがあったね。"),
+                    ("He's not, how shall I put it, the most patient person.", "彼は、何て言うか、あまり気が長い方じゃない。")
+                 ], ipa: "/haʊ ʃəl aɪ pʊt ɪt/"),
+            make("spell it out", "to explain something very clearly and simply, often because someone hasn't understood",
+                 "はっきり・具体的に言う",
+                 useCases: ["察してくれない相手にはっきり言うとき", "わかりやすく説明してほしいとき"],
+                 examples: [
+                    ("Do I have to spell it out for you? I'm not coming!", "はっきり言わなきゃわからない？行かないってば！"),
+                    ("Can you spell it out for me? I'm a bit lost.", "具体的に説明してくれる？ちょっとついていけてなくて。")
+                 ], ipa: "/spel ɪt aʊt/"),
+            make("short for", "used to say that a name or word is a shorter form of a longer one",
+                 "～の略・～の愛称",
+                 useCases: ["名前のニックネームを説明するとき", "略語の意味を伝えるとき"],
+                 examples: [
+                    ("Call me Alex – it's short for Alexandra.", "アレックスって呼んで、アレクサンドラの略なの。"),
+                    ("'Uni' is short for university.", "「uni」はuniversityの略だよ。")
+                 ], ipa: "/ʃɔːt fɔː/"),
+            make("pronounce", "to say a word or sound in a particular way",
+                 "発音する",
+                 useCases: ["名前や単語の読み方を聞くとき", "発音の難しさを話すとき"],
+                 examples: [
+                    ("Sorry, how do you pronounce your surname?", "すみません、名字はどう発音するんですか？"),
+                    ("I can never pronounce that word properly.", "その単語、どうしてもちゃんと発音できないんだ。")
+                 ], ipa: "/prəˈnaʊns/"),
         ]
     }
     private static var britishColloquial270: [Word] {
