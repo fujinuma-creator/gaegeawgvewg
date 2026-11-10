@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269
         ]
         return groups.flatMap { $0 }
     }
@@ -44087,6 +44087,115 @@ enum SeedData {
                     ("Hurry up, slowcoach! We'll miss the bus.", "早く、のろのろしてないで！バス逃しちゃうよ。"),
                     ("Sorry, I'm a bit of a slowcoach in the mornings.", "ごめん、朝はどうしてもとろくて。")
                  ], ipa: "/ˈsləʊkəʊtʃ/"),
+        ]
+    }
+    private static var britishColloquial269: [Word] {
+        [
+            make("roll up your sleeves", "to get ready to work hard, especially on a difficult job",
+                 "腕まくりする・本腰を入れて取りかかる",
+                 useCases: ["大変な作業に取りかかるとき", "みんなで頑張ろうと声をかけるとき"],
+                 examples: [
+                    ("Right, let's roll up our sleeves and get this kitchen cleaned.", "よし、腕まくりしてこのキッチン片付けちゃおう。"),
+                    ("If we roll up our sleeves, we can finish by Friday.", "本腰入れれば金曜までに終わるよ。")
+                 ], ipa: "/rəʊl ʌp jɔː sliːvz/"),
+            make("halfway through", "in the middle of doing or watching something",
+                 "～の途中で・半分まで",
+                 useCases: ["映画や本、作業の途中だと伝えるとき", "途中で何かが起きた話をするとき"],
+                 examples: [
+                    ("I'm halfway through the book – no spoilers!", "その本まだ半分まで読んだところだから、ネタバレしないでね！"),
+                    ("We left halfway through the film. It was awful.", "映画の途中で出ちゃった。ひどかったよ。")
+                 ], ipa: "/ˌhɑːfweɪ ˈθruː/"),
+            make("zip up", "to close a coat, bag, etc. with a zip",
+                 "ファスナーを閉める",
+                 useCases: ["寒いときに子どもや友達に声をかけるとき", "カバンをしっかり閉めるよう注意するとき"],
+                 examples: [
+                    ("Zip up your coat – it's freezing out there.", "コートのファスナー閉めて、外すごく寒いよ。"),
+                    ("Can you zip me up? I can't reach.", "ファスナー上げてくれる？手が届かないの。")
+                 ], ipa: "/zɪp ʌp/"),
+            make("frosty", "very cold, with frost on the ground; also unfriendly",
+                 "霜の降りた・冷え込んだ／（態度が）冷たい",
+                 useCases: ["寒い朝の天気について", "そっけない態度を表すとき"],
+                 examples: [
+                    ("It was a lovely frosty morning – everything was white.", "霜が降りた気持ちいい朝で、あたり一面真っ白だった。"),
+                    ("She was a bit frosty with me after the meeting.", "会議のあと、彼女ちょっと私に冷たかった。")
+                 ], ipa: "/ˈfrɒsti/"),
+            make("tucked away", "in a quiet place that is hard to find or not easily seen",
+                 "ひっそりとある・奥まったところにある",
+                 useCases: ["隠れ家的なお店や場所を紹介するとき", "物をしまった場所を伝えるとき"],
+                 examples: [
+                    ("There's a great little café tucked away behind the station.", "駅の裏にひっそりといい感じのカフェがあるんだ。"),
+                    ("I found some cash tucked away in an old jacket.", "古いジャケットの中にお金がしまってあるのを見つけた。")
+                 ], ipa: "/tʌkt əˈweɪ/"),
+            make("draughty", "letting cold air come in, so that a room feels cold",
+                 "すきま風が入る",
+                 useCases: ["古い家や部屋の寒さについて", "窓やドアの修理を話すとき"],
+                 examples: [
+                    ("The old house is lovely but really draughty in winter.", "その古い家は素敵だけど、冬はすきま風がひどいんだ。"),
+                    ("Close the door, it's a bit draughty in here.", "ドア閉めて、ちょっとすきま風が入るから。")
+                 ], ipa: "/ˈdrɑːfti/"),
+            make("roomy", "having plenty of space inside",
+                 "広々とした・ゆったりした",
+                 useCases: ["車や部屋、カバンの広さを褒めるとき", "服のサイズがゆったりしているとき"],
+                 examples: [
+                    ("The new car's really roomy – loads of space in the back.", "新しい車すごく広いよ。後ろもゆったり。"),
+                    ("These trousers are nice and roomy.", "このズボン、ゆったりしてていいね。")
+                 ], ipa: "/ˈruːmi/"),
+            make("ripe", "ready to eat because it is fully grown (fruit)",
+                 "熟した・食べごろの",
+                 useCases: ["果物が食べごろか確かめるとき", "買い物で果物を選ぶとき"],
+                 examples: [
+                    ("These avocados aren't ripe yet – give them a couple of days.", "このアボカドまだ熟してないね。あと2、3日置いといて。"),
+                    ("Is this mango ripe? It feels a bit hard.", "このマンゴー食べごろ？ちょっと硬い気がする。")
+                 ], ipa: "/raɪp/"),
+            make("sour", "having a sharp taste like a lemon; (of milk) gone bad",
+                 "酸っぱい／（牛乳が）腐って酸っぱくなった",
+                 useCases: ["味の感想を伝えるとき", "牛乳が傷んでいるとき"],
+                 examples: [
+                    ("Ugh, the milk's gone sour.", "うわ、牛乳酸っぱくなってる。"),
+                    ("I love sour sweets, the sourer the better.", "酸っぱいお菓子大好き、酸っぱいほどいい。")
+                 ], ipa: "/ˈsaʊə/"),
+            make("creamy", "thick and smooth, containing or tasting like cream",
+                 "クリーミーな・なめらかな",
+                 useCases: ["料理やスープの味や食感を褒めるとき", "注文時に好みを伝えるとき"],
+                 examples: [
+                    ("This pasta sauce is lovely and creamy.", "このパスタソース、クリーミーでおいしいね。"),
+                    ("I'd prefer something less creamy, to be honest.", "正直、もうちょっとクリーミーじゃないのがいいかな。")
+                 ], ipa: "/ˈkriːmi/"),
+            make("salty", "containing or tasting of salt; too salty",
+                 "しょっぱい・塩辛い",
+                 useCases: ["料理の味つけについて感想を言うとき", "海やスナックについて話すとき"],
+                 examples: [
+                    ("The soup's a bit too salty for me.", "このスープ、私にはちょっとしょっぱいな。"),
+                    ("I fancy something salty – have we got any crisps?", "何かしょっぱいもの食べたい。ポテチある？")
+                 ], ipa: "/ˈsɔːlti/"),
+            make("bitter", "having a strong, sharp taste that is not sweet; (of weather) extremely cold",
+                 "苦い／（寒さが）身を切るような",
+                 useCases: ["コーヒーやチョコの味について", "厳しい寒さを表すとき"],
+                 examples: [
+                    ("This coffee's really bitter – can I have some milk?", "このコーヒーすごく苦いね。ミルクもらえる？"),
+                    ("There's a bitter wind today, wrap up warm.", "今日は身を切るような風だから、暖かくしてね。")
+                 ], ipa: "/ˈbɪtə/"),
+            make("squeaky", "making a short, high sound",
+                 "キーキー鳴る・きしむ",
+                 useCases: ["ドアや床のきしみについて", "自転車や靴の音が気になるとき"],
+                 examples: [
+                    ("The bedroom door's really squeaky – it needs some oil.", "寝室のドアがすごくキーキー鳴るの。油ささなきゃ。"),
+                    ("My new trainers are a bit squeaky on the floor.", "新しいスニーカー、床でちょっとキュッキュ鳴るんだ。")
+                 ], ipa: "/ˈskwiːki/"),
+            make("pothole", "a hole in the surface of a road",
+                 "（道路の）穴・くぼみ",
+                 useCases: ["道路状況の文句を言うとき", "運転や自転車で気をつけるとき"],
+                 examples: [
+                    ("Watch out for the pothole at the end of the road.", "道の突き当たりの穴に気をつけてね。"),
+                    ("I hit a pothole and got a flat tyre.", "道路の穴にはまってタイヤがパンクしちゃった。")
+                 ], ipa: "/ˈpɒthəʊl/"),
+            make("on call", "available to go to work at any time if needed",
+                 "待機中で・呼び出しに備えて",
+                 useCases: ["仕事の呼び出し待機を伝えるとき", "誘いを断る理由として"],
+                 examples: [
+                    ("I can't have a drink tonight – I'm on call.", "今夜は飲めないんだ、待機当番だから。"),
+                    ("She's on call this weekend, so she might have to leave.", "彼女は今週末待機当番だから、途中で抜けるかも。")
+                 ], ipa: "/ɒn kɔːl/"),
         ]
     }
     private static var britishColloquial268: [Word] {
