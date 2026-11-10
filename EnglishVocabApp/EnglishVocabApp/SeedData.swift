@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275
         ]
         return groups.flatMap { $0 }
     }
@@ -44414,6 +44414,115 @@ enum SeedData {
                     ("A hot bath and an early night – that's my idea of self-care.", "熱いお風呂と早寝。それが私なりのセルフケア。"),
                     ("You've been working non-stop. Make some time for self-care.", "ずっと働きっぱなしだよ。自分を労わる時間も作って。")
                  ], ipa: "/ˌself ˈkeə/"),
+        ]
+    }
+    private static var britishColloquial275: [Word] {
+        [
+            make("get wound up", "to become annoyed, stressed or agitated about something",
+                 "イライラする・カッカする",
+                 useCases: ["小さなことで怒っている人をなだめるとき", "ストレスでピリピリしているとき"],
+                 examples: [
+                    ("Don't get wound up about it – it's only a parking ticket.", "そんなことでカッカしないで。ただの駐車違反切符だよ。"),
+                    ("He gets really wound up when people are late.", "彼は人が遅れてくると本当にイライラするんだ。")
+                 ], ipa: "/ɡet waʊnd ʌp/"),
+            make("underwhelmed", "disappointed because something was less impressive than you expected",
+                 "期待外れでがっかりした・拍子抜けした",
+                 useCases: ["話題の映画や店が期待ほどでなかったとき", "感想を控えめに伝えるとき"],
+                 examples: [
+                    ("Everyone raved about that restaurant, but I was a bit underwhelmed.", "みんな絶賛してたけど、あの店はちょっと期待外れだった。"),
+                    ("Honestly, I came away feeling pretty underwhelmed.", "正直、見終わってかなり拍子抜けしたよ。")
+                 ], ipa: "/ˌʌndəˈwelmd/"),
+            make("an awkward silence", "a moment when nobody speaks and everyone feels uncomfortable",
+                 "気まずい沈黙",
+                 useCases: ["会話が途切れて気まずくなったとき", "失言のあとの空気を説明するとき"],
+                 examples: [
+                    ("After his joke there was a long, awkward silence.", "彼の冗談のあと、長くて気まずい沈黙が流れた。"),
+                    ("I just started talking to fill the awkward silence.", "気まずい沈黙を埋めようと、とりあえず話し始めたんだ。")
+                 ], ipa: "/ən ˈɔːkwəd ˈsaɪləns/"),
+            make("get stuck in your head", "(of a song or tune) to keep playing in your mind and not go away",
+                 "（曲が）頭から離れない",
+                 useCases: ["ある曲がずっと頭の中で流れているとき", "キャッチーな曲について話すとき"],
+                 examples: [
+                    ("That advert song has been stuck in my head all day.", "あのCMソングが一日中頭から離れないんだ。"),
+                    ("Don't sing it – it'll get stuck in my head!", "歌わないで、頭から離れなくなるから！")
+                 ], ipa: "/ɡet stʌk ɪn jɔː hed/"),
+            make("rewatch", "to watch a film or series again",
+                 "（映画・ドラマを）見返す・もう一度見る",
+                 useCases: ["好きなドラマを何度も見るとき", "見逃した部分を確認するとき"],
+                 examples: [
+                    ("I've rewatched that series about five times.", "あのドラマはもう5回くらい見返したよ。"),
+                    ("It's even better when you rewatch it and catch all the little details.", "見返して細かいところに気づくと、さらに面白いよ。")
+                 ], ipa: "/ˌriːˈwɒtʃ/"),
+            make("book in advance", "to reserve a table, ticket or room before the day you need it",
+                 "前もって予約する",
+                 useCases: ["人気店やチケットを予約するとき", "旅行の計画を立てるとき"],
+                 examples: [
+                    ("It's really popular, so you'll need to book in advance.", "すごく人気だから、前もって予約しないとダメだよ。"),
+                    ("Train tickets are much cheaper if you book in advance.", "電車の切符は早めに予約するとずっと安いよ。")
+                 ], ipa: "/bʊk ɪn ədˈvɑːns/"),
+            make("run out of petrol", "to have no fuel left in your car (US: run out of gas)",
+                 "ガス欠になる",
+                 useCases: ["車の燃料が切れたとき", "給油を忘れそうな人に注意するとき"],
+                 examples: [
+                    ("We ran out of petrol on the motorway – it was a nightmare.", "高速でガス欠になってさ、最悪だったよ。"),
+                    ("Fill up now or we'll run out of petrol before we get there.", "今給油しないと、着く前にガス欠になるよ。")
+                 ], ipa: "/rʌn aʊt əv ˈpetrəl/"),
+            make("maybe next time", "a friendly way of saying no to an invitation now but showing you'd like to another time",
+                 "また今度ね",
+                 useCases: ["誘いをやんわり断るとき", "次の機会に期待を残すとき"],
+                 examples: [
+                    ("I can't make it tonight, sorry – maybe next time?", "今夜は行けないんだ、ごめん。また今度ね？"),
+                    ("Shame you couldn't come. Maybe next time!", "来られなくて残念。また今度ね！")
+                 ], ipa: "/ˈmeɪbi nekst taɪm/"),
+            make("a pat on the back", "praise or approval for something someone has done well",
+                 "褒め言葉・よくやったという評価",
+                 useCases: ["頑張った人を褒めるとき", "自分を労うとき"],
+                 examples: [
+                    ("You deserve a pat on the back for sorting all that out.", "それを全部片付けたんだから、褒められて当然だよ。"),
+                    ("Give yourself a pat on the back – you smashed it!", "自分を褒めてあげなよ。完璧だったじゃん！")
+                 ], ipa: "/ə pæt ɒn ðə bæk/"),
+            make("credit where credit's due", "used to say that someone deserves praise, even if you don't usually praise them",
+                 "認めるべきところは認めないとね",
+                 useCases: ["ライバルや苦手な人を公平に褒めるとき", "成果を素直に評価するとき"],
+                 examples: [
+                    ("I'm not his biggest fan, but credit where credit's due – he did a great job.", "彼のファンじゃないけど、認めるべきところは認めないと。いい仕事したよ。"),
+                    ("Credit where credit's due, the new manager has really turned things around.", "認めるべきは認めるよ。新しい店長で本当に状況が良くなった。")
+                 ], ipa: "/ˈkredɪt weə ˈkredɪts djuː/"),
+            make("tune out", "to stop listening or paying attention",
+                 "聞き流す・上の空になる",
+                 useCases: ["話が長くて集中が切れたとき", "雑音を気にしないようにするとき"],
+                 examples: [
+                    ("Sorry, I completely tuned out for a minute there.", "ごめん、ちょっと完全に上の空になってた。"),
+                    ("I just put my headphones on and tune out the noise.", "ヘッドホンをつけて、周りの音をシャットアウトするんだ。")
+                 ], ipa: "/tjuːn aʊt/"),
+            make("FOMO", "fear of missing out: worry that others are having fun or doing something good without you",
+                 "取り残される不安・自分だけ逃している気がする感覚",
+                 useCases: ["SNSで友達の楽しそうな投稿を見たとき", "誘いを断るか迷っているとき"],
+                 examples: [
+                    ("I only went because of FOMO, to be honest.", "正直、行かないと損する気がして行っただけなんだ。"),
+                    ("Seeing everyone's holiday photos gives me serious FOMO.", "みんなの旅行写真を見ると、すごく取り残された気分になる。")
+                 ], ipa: "/ˈfəʊməʊ/"),
+            make("a page-turner", "a book that is so exciting you want to keep reading",
+                 "止まらなくなるほど面白い本",
+                 useCases: ["面白い本を人に勧めるとき", "一気読みした本の感想を言うとき"],
+                 examples: [
+                    ("It's a real page-turner – I finished it in two days.", "本当に止まらない本で、2日で読み終えたよ。"),
+                    ("Have you got any page-turners for the beach?", "ビーチで読める面白い本、何かある？")
+                 ], ipa: "/ə ˈpeɪdʒ ˌtɜːnə/"),
+            make("a must-see", "something so good or important that people should definitely see it",
+                 "必見のもの",
+                 useCases: ["映画や観光地を強く勧めるとき", "旅行のおすすめを聞くとき"],
+                 examples: [
+                    ("If you're in Lisbon, the old town is a must-see.", "リスボンに行くなら、旧市街は必見だよ。"),
+                    ("Everyone says the new exhibition is a must-see.", "みんな、新しい展示は絶対見るべきだって言ってる。")
+                 ], ipa: "/ə ˈmʌst siː/"),
+            make("flip-flops", "light, open rubber sandals held on by a strap between the toes",
+                 "ビーチサンダル",
+                 useCases: ["夏やビーチの持ち物を話すとき", "ラフな服装について話すとき"],
+                 examples: [
+                    ("Don't forget to pack your flip-flops.", "ビーサン持っていくの忘れないでね。"),
+                    ("You can't go for a hike in flip-flops!", "ビーサンでハイキングは無理だよ！")
+                 ], ipa: "/ˈflɪp flɒps/"),
         ]
     }
     private static var britishColloquial272: [Word] {
