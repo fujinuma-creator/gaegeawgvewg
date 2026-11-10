@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268
         ]
         return groups.flatMap { $0 }
     }
@@ -44087,6 +44087,115 @@ enum SeedData {
                     ("Hurry up, slowcoach! We'll miss the bus.", "早く、のろのろしてないで！バス逃しちゃうよ。"),
                     ("Sorry, I'm a bit of a slowcoach in the mornings.", "ごめん、朝はどうしてもとろくて。")
                  ], ipa: "/ˈsləʊkəʊtʃ/"),
+        ]
+    }
+    private static var britishColloquial268: [Word] {
+        [
+            make("shrink", "to become smaller, especially after being washed (past: shrank, shrunk)",
+                 "縮む（洗濯で服が縮むなど）",
+                 useCases: ["洗濯で服が縮んだとき", "予算や人数が減ったことを話すとき"],
+                 examples: [
+                    ("My favourite jumper shrank in the wash.", "お気に入りのセーターが洗濯で縮んじゃった。"),
+                    ("Wash it on cold or it'll shrink.", "冷水で洗ってね、じゃないと縮むよ。")
+                 ], ipa: "/ʃrɪŋk/"),
+            make("faded", "having lost its colour or brightness over time",
+                 "色あせた",
+                 useCases: ["服やジーンズの色落ちについて", "昔の写真や記憶について話すとき"],
+                 examples: [
+                    ("These jeans are a bit faded, but I love them.", "このジーンズちょっと色あせてるけど、気に入ってるんだ。"),
+                    ("The sofa's faded where the sun hits it.", "ソファの日が当たるところが色あせちゃった。")
+                 ], ipa: "/ˈfeɪdɪd/"),
+            make("mouldy", "covered with mould because it is old or has been kept somewhere damp",
+                 "カビの生えた",
+                 useCases: ["パンや食べ物にカビが生えたとき", "湿った部屋や浴室の話で"],
+                 examples: [
+                    ("Don't eat that bread – it's gone mouldy.", "そのパン食べないで、カビ生えてるよ。"),
+                    ("There's a mouldy smell in the bathroom.", "お風呂場がカビ臭いね。")
+                 ], ipa: "/ˈməʊldi/"),
+            make("undercooked", "not cooked enough",
+                 "生焼けの・火が通っていない",
+                 useCases: ["料理に火が通っていないとき", "レストランで料理を戻すとき"],
+                 examples: [
+                    ("The chicken's a bit undercooked – can you put it back in?", "チキンちょっと生焼けだね。もう一回入れてくれる？"),
+                    ("I'd rather it was overcooked than undercooked.", "生焼けより焼きすぎの方がまだいいな。")
+                 ], ipa: "/ˌʌndəˈkʊkt/"),
+            make("drowsy", "tired and almost asleep",
+                 "眠気がある・うとうとした",
+                 useCases: ["薬の副作用について話すとき", "食後や運転中の眠気について"],
+                 examples: [
+                    ("These tablets make me really drowsy.", "この薬飲むとすごく眠くなるんだよね。"),
+                    ("I always feel drowsy after lunch.", "昼ご飯の後はいつも眠くなる。")
+                 ], ipa: "/ˈdraʊzi/"),
+            make("bumpy", "not smooth; with a lot of sudden movements up and down",
+                 "でこぼこの・揺れる",
+                 useCases: ["飛行機や車の揺れについて", "うまくいかない時期を例えるときにも"],
+                 examples: [
+                    ("It was a really bumpy flight – I felt sick.", "すごく揺れるフライトで、気持ち悪くなった。"),
+                    ("We've had a bit of a bumpy start, but it's getting better.", "出だしはちょっとつまずいたけど、良くなってきてるよ。")
+                 ], ipa: "/ˈbʌmpi/"),
+            make("go smoothly", "to happen without any problems",
+                 "順調に進む・スムーズにいく",
+                 useCases: ["予定やイベントがうまくいったか聞くとき", "引っ越しや手続きの報告で"],
+                 examples: [
+                    ("Did everything go smoothly at the airport?", "空港では全部スムーズにいった？"),
+                    ("Fingers crossed it all goes smoothly tomorrow.", "明日、全部うまくいくといいな。")
+                 ], ipa: "/gəʊ ˈsmuːðli/"),
+            make("hallway", "the area inside the front door of a house, or a passage between rooms",
+                 "玄関ホール・廊下",
+                 useCases: ["靴や荷物の置き場所を伝えるとき", "家の間取りを説明するとき"],
+                 examples: [
+                    ("Just leave your shoes in the hallway.", "靴は玄関に置いといてね。"),
+                    ("The bathroom's at the end of the hallway on the left.", "トイレは廊下の突き当たり左だよ。")
+                 ], ipa: "/ˈhɔːlweɪ/"),
+            make("tumble dryer", "a machine that dries clothes by turning them in hot air",
+                 "（回転式）衣類乾燥機",
+                 useCases: ["洗濯物の乾かし方について話すとき", "服が縮んだ理由を説明するとき"],
+                 examples: [
+                    ("Don't put that in the tumble dryer – it'll shrink.", "それ乾燥機に入れないで、縮むから。"),
+                    ("Our flat hasn't got a tumble dryer, so I hang everything up.", "うちのアパートには乾燥機がないから、全部干してる。")
+                 ], ipa: "/ˈtʌmbl ˌdraɪə/"),
+            make("back in stock", "available to buy again after being sold out",
+                 "再入荷した",
+                 useCases: ["売り切れていた商品が戻ったとき", "店員に再入荷時期を尋ねるとき"],
+                 examples: [
+                    ("Do you know when these will be back in stock?", "これいつ再入荷するかわかりますか？"),
+                    ("Good news – those trainers are back in stock!", "朗報、あのスニーカー再入荷したよ！")
+                 ], ipa: "/bæk ɪn stɒk/"),
+            make("a bad hair day", "a day when your hair looks messy, or a day when everything seems to go wrong",
+                 "髪がまとまらない日・ついてない日",
+                 useCases: ["髪型が決まらないとき", "何もかもうまくいかない日を冗談っぽく言うとき"],
+                 examples: [
+                    ("Don't look at me – I'm having a bad hair day.", "見ないで、今日髪が全然まとまらないの。"),
+                    ("Sorry I snapped – it's just been a bad hair day.", "きつく当たってごめん、今日はついてない日でさ。")
+                 ], ipa: "/ə bæd heə deɪ/"),
+            make("reasonably priced", "not too expensive; costing a fair amount",
+                 "手頃な値段の",
+                 useCases: ["お店やレストランをおすすめするとき", "値段について感想を言うとき"],
+                 examples: [
+                    ("The food's good and it's reasonably priced.", "料理は美味しいし、値段も手頃だよ。"),
+                    ("Do you know anywhere reasonably priced near the station?", "駅の近くで手頃なお店知ってる？")
+                 ], ipa: "/ˈriːznəbli praɪst/"),
+            make("blurry", "not clear, so you cannot see the shape or details properly",
+                 "ぼやけた・ピンボケの",
+                 useCases: ["写真がピンボケのとき", "目が疲れて見えにくいとき"],
+                 examples: [
+                    ("This photo's all blurry – can you take another one?", "この写真ブレてるね。もう一枚撮ってくれる？"),
+                    ("My eyes go blurry if I look at a screen for too long.", "画面を長く見てると目がかすむんだよね。")
+                 ], ipa: "/ˈblɜːri/"),
+            make("fluffy", "soft and light, like fur, wool or whipped cream",
+                 "ふわふわの",
+                 useCases: ["タオルや動物、ブランケットについて", "パンケーキや卵料理の食感を言うとき"],
+                 examples: [
+                    ("These pancakes are so light and fluffy!", "このパンケーキ、すごく軽くてふわふわ！"),
+                    ("I love your dog – he's so fluffy.", "君の犬かわいいね、すごくもふもふ。")
+                 ], ipa: "/ˈflʌfi/"),
+            make("leaky", "having a hole or crack that lets water or air escape",
+                 "水漏れする・漏れる",
+                 useCases: ["蛇口や屋根の水漏れについて", "大家さんに修理を頼むとき"],
+                 examples: [
+                    ("The kitchen tap's leaky again – it drips all night.", "台所の蛇口また水漏れしてて、一晩中ポタポタいってる。"),
+                    ("I need new boots – these ones are leaky.", "新しいブーツが要る。これ水が染みてくるんだ。")
+                 ], ipa: "/ˈliːki/"),
         ]
     }
     private static var britishColloquial262: [Word] {
