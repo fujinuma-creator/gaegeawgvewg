@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267
         ]
         return groups.flatMap { $0 }
     }
@@ -43978,6 +43978,115 @@ enum SeedData {
                     ("Don't overtake on a bend – it's really dangerous.", "カーブで追い越しちゃダメ。本当に危ないから。"),
                     ("A lorry overtook us doing about ninety.", "トラックが時速90マイルくらいで追い越していった。")
                  ], ipa: "/ˌəʊvəˈteɪk/"),
+        ]
+    }
+    private static var britishColloquial267: [Word] {
+        [
+            make("snore", "to breathe noisily through your nose and mouth while you are asleep",
+                 "いびきをかく",
+                 useCases: ["家族やルームメイトのいびきについて話すとき", "眠れなかった理由を説明するとき"],
+                 examples: [
+                    ("I couldn't sleep a wink – he was snoring all night.", "一睡もできなかったよ。彼が一晩中いびきかいてて。"),
+                    ("Do I snore? Be honest.", "私っていびきかく？正直に言って。")
+                 ], ipa: "/snɔː/"),
+            make("wrinkled", "having small lines or folds in it, for example skin or clothes",
+                 "しわの寄った・しわしわの",
+                 useCases: ["服のしわについて話すとき", "お風呂上がりの指や年齢による肌の話で"],
+                 examples: [
+                    ("My fingers go all wrinkled if I stay in the bath too long.", "お風呂に長く入ってると指がしわしわになる。"),
+                    ("Your shirt's a bit wrinkled – did you sleep in it?", "シャツちょっとしわ寄ってるよ。それ着たまま寝たの？")
+                 ], ipa: "/ˈrɪŋkld/"),
+            make("creased", "having lines or folds in it because it has been crushed or folded",
+                 "（服・紙が）しわくちゃの・折り目がついた",
+                 useCases: ["スーツケースから出した服について", "紙や書類が折れてしまったとき"],
+                 examples: [
+                    ("My trousers got all creased in the suitcase.", "スーツケースに入れてたらズボンがしわくちゃになった。"),
+                    ("Sorry, the ticket's a bit creased, but it still works.", "ごめん、チケットちょっと折れてるけど使えるよ。")
+                 ], ipa: "/kriːst/"),
+            make("tangled", "twisted together in an untidy way that is difficult to separate",
+                 "絡まった・もつれた",
+                 useCases: ["イヤホンのコードや髪が絡まったとき", "状況がややこしくなったときにも"],
+                 examples: [
+                    ("My headphones are always tangled when I take them out of my pocket.", "ポケットから出すと、イヤホンがいつも絡まってるんだよね。"),
+                    ("Her hair gets really tangled in the wind.", "風が吹くと彼女の髪すごく絡まっちゃうんだ。")
+                 ], ipa: "/ˈtæŋgld/"),
+            make("smudge", "a dirty mark; to make a mark by rubbing something such as ink or make-up",
+                 "汚れ・にじみ／こすって汚す・にじませる",
+                 useCases: ["化粧やインクがにじんだとき", "画面や眼鏡の指紋汚れについて"],
+                 examples: [
+                    ("You've got a smudge of chocolate on your cheek.", "ほっぺにチョコついてるよ。"),
+                    ("Don't touch it – the paint's still wet and it'll smudge.", "触らないで。ペンキまだ乾いてないからにじんじゃう。")
+                 ], ipa: "/smʌdʒ/"),
+            make("wince", "to make a sudden face showing pain or embarrassment",
+                 "（痛み・気まずさで）顔をしかめる",
+                 useCases: ["痛そうな表情をしたとき", "聞いていて恥ずかしくなったとき"],
+                 examples: [
+                    ("He winced when the nurse put the needle in.", "看護師が針を刺したとき、彼は顔をしかめた。"),
+                    ("I still wince when I think about that speech.", "あのスピーチのこと思い出すと今でも顔が引きつるよ。")
+                 ], ipa: "/wɪns/"),
+            make("stub your toe", "to hurt your toe by accidentally hitting it against something",
+                 "足の指をぶつける",
+                 useCases: ["家具の角に足をぶつけたとき", "痛がっている理由を説明するとき"],
+                 examples: [
+                    ("Ow! I just stubbed my toe on the bed.", "痛っ！ベッドに足の指ぶつけた。"),
+                    ("I stubbed my toe in the dark and it's still throbbing.", "暗がりで足の指ぶつけて、まだズキズキしてる。")
+                 ], ipa: "/stʌb jɔː təʊ/"),
+            make("cranky", "easily annoyed or in a bad mood, often because you are tired or hungry",
+                 "不機嫌な・機嫌が悪い",
+                 useCases: ["寝不足や空腹で機嫌が悪い人について", "ぐずる子どもについて"],
+                 examples: [
+                    ("Sorry I'm so cranky – I barely slept last night.", "機嫌悪くてごめん。昨夜ほとんど寝てなくて。"),
+                    ("The kids get cranky if they miss their nap.", "子どもたちは昼寝しそびれると不機嫌になるんだ。")
+                 ], ipa: "/ˈkræŋki/"),
+            make("sleepyhead", "a friendly way of talking to someone who is tired or has just woken up",
+                 "お寝坊さん・眠たがり屋",
+                 useCases: ["寝起きの家族や恋人に声をかけるとき", "眠そうな人を親しみを込めてからかうとき"],
+                 examples: [
+                    ("Morning, sleepyhead! It's nearly eleven.", "おはよう、お寝坊さん！もうすぐ11時だよ。"),
+                    ("Come on, sleepyhead, time for bed.", "ほら、眠たがり屋さん、もう寝る時間だよ。")
+                 ], ipa: "/ˈsliːpihed/"),
+            make("brainy", "clever and good at studying (informal)",
+                 "頭のいい・秀才の",
+                 useCases: ["勉強ができる人を話題にするとき", "家族や友人を褒めるとき"],
+                 examples: [
+                    ("Ask Sarah – she's the brainy one in the family.", "サラに聞いてみて。家族で一番頭いいから。"),
+                    ("He was always a bit brainy at school.", "彼は学生時代からちょっと秀才タイプだったよ。")
+                 ], ipa: "/ˈbreɪni/"),
+            make("busybody", "a person who is too interested in other people's private lives",
+                 "おせっかい・詮索好きな人",
+                 useCases: ["近所の詮索好きな人について", "他人のことに首を突っ込む人を指して"],
+                 examples: [
+                    ("Our neighbour's a real busybody – she knows everyone's business.", "うちの隣の人、ほんと詮索好きでさ。みんなの事情を知ってるんだよ。"),
+                    ("I don't want to be a busybody, but is everything okay?", "おせっかいかもしれないけど、大丈夫？")
+                 ], ipa: "/ˈbɪzibɒdi/"),
+            make("thick-skinned", "not easily upset by criticism or rude comments",
+                 "打たれ強い・図太い",
+                 useCases: ["批判を気にしない人について", "厳しい仕事に向いている性格を話すとき"],
+                 examples: [
+                    ("You need to be pretty thick-skinned to work in sales.", "営業の仕事するなら、かなり打たれ強くないとね。"),
+                    ("Don't worry about him – he's quite thick-skinned.", "彼のことは心配いらないよ。けっこう図太いから。")
+                 ], ipa: "/ˌθɪkˈskɪnd/"),
+            make("scrounge", "to get something, especially small things, by asking other people for it rather than paying",
+                 "（ちょっとした物を）たかる・せびる・もらう",
+                 useCases: ["ペンやタバコなどをちょっと借りるとき", "人にたかってばかりの人について"],
+                 examples: [
+                    ("Can I scrounge a pen off you?", "ペン一本もらってもいい？"),
+                    ("He's always scrounging free food at the office.", "あいつ、いつも会社でタダ飯たかってるよね。")
+                 ], ipa: "/skraʊndʒ/"),
+            make("frizzy", "(of hair) having a lot of small, tight, dry curls, often because of damp weather",
+                 "（髪が）チリチリの・広がった",
+                 useCases: ["雨の日の髪の悩みを話すとき", "髪質について話すとき"],
+                 examples: [
+                    ("My hair goes really frizzy when it rains.", "雨の日は髪がすっごく広がるんだよね。"),
+                    ("Any tips for frizzy hair?", "髪のうねり・広がりに何かいい対策ある？")
+                 ], ipa: "/ˈfrɪzi/"),
+            make("slowcoach", "a person who moves or does things too slowly (friendly, British)",
+                 "のろま・ぐずぐずする人",
+                 useCases: ["遅れて歩いている人を急かすとき", "準備が遅い家族をからかうとき"],
+                 examples: [
+                    ("Hurry up, slowcoach! We'll miss the bus.", "早く、のろのろしてないで！バス逃しちゃうよ。"),
+                    ("Sorry, I'm a bit of a slowcoach in the mornings.", "ごめん、朝はどうしてもとろくて。")
+                 ], ipa: "/ˈsləʊkəʊtʃ/"),
         ]
     }
     private static var britishColloquial262: [Word] {
