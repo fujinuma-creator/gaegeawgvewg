@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277
         ]
         return groups.flatMap { $0 }
     }
@@ -44632,6 +44632,115 @@ enum SeedData {
                     ("You look exhausted – shall I run you a bath?", "疲れてるみたいだね。お風呂ためようか？"),
                     ("I'm going to run a bath and have an early night.", "お風呂ためて、今日は早く寝るよ。")
                  ], ipa: "/rʌn ə bɑːθ/"),
+        ]
+    }
+    private static var britishColloquial277: [Word] {
+        [
+            make("go viral", "to spread very quickly online and be seen by huge numbers of people",
+                 "（ネットで）バズる・一気に拡散される",
+                 useCases: ["SNSの投稿や動画が一気に広まったとき", "ネットで話題になったものを話すとき"],
+                 examples: [
+                    ("That video of his dog went viral overnight.", "彼の犬の動画、一晩でバズったんだよ。"),
+                    ("I never expected my post to go viral.", "自分の投稿がバズるなんて思ってもみなかった。")
+                 ], ipa: "/ɡəʊ ˈvaɪrəl/"),
+            make("a playlist", "a list of songs you have chosen to listen to",
+                 "プレイリスト・曲のリスト",
+                 useCases: ["好きな曲をまとめたものを話すとき", "運転中や作業中に流す音楽の話"],
+                 examples: [
+                    ("I've made a playlist for the road trip.", "ドライブ用にプレイリスト作ったよ。"),
+                    ("Can you send me that playlist? It's brilliant.", "そのプレイリスト送ってくれる？すごくいいね。")
+                 ], ipa: "/ə ˈpleɪlɪst/"),
+            make("a meme", "a funny picture, video or phrase that is copied and shared widely online",
+                 "ミーム・ネットでよく出回るネタ画像",
+                 useCases: ["友達とネタ画像を送り合うとき", "ネットで流行っているネタを話すとき"],
+                 examples: [
+                    ("He sent me a meme that had me in stitches.", "彼が送ってきたミームで大笑いしたよ。"),
+                    ("That phrase has basically become a meme now.", "その言い回し、もう完全にネタ化してるよね。")
+                 ], ipa: "/ə miːm/"),
+            make("a trailer", "a short advert for a film or TV series showing parts of it",
+                 "（映画などの）予告編",
+                 useCases: ["新作映画の話をするとき", "観るかどうか決めるとき"],
+                 examples: [
+                    ("Have you seen the trailer for the new Bond film?", "新しいボンド映画の予告編見た？"),
+                    ("The trailer looked great, but the film was a bit disappointing.", "予告編はすごく良かったけど、映画自体はちょっと期待外れだった。")
+                 ], ipa: "/ə ˈtreɪlə/"),
+            make("the front row", "the row of seats closest to the stage or screen",
+                 "最前列",
+                 useCases: ["ライブや劇場の席の話をするとき", "授業や会議で座る場所の話"],
+                 examples: [
+                    ("We managed to get tickets in the front row!", "最前列のチケットが取れたんだよ！"),
+                    ("I'd rather not sit in the front row – it's too close.", "最前列はやめとこうかな、近すぎるから。")
+                 ], ipa: "/ðə frʌnt rəʊ/"),
+            make("snack on", "to eat small amounts of food between meals",
+                 "〜をつまむ・間食する",
+                 useCases: ["お菓子や軽いものをつまむとき", "食習慣について話すとき"],
+                 examples: [
+                    ("I've been snacking on crisps all afternoon.", "午後ずっとポテチつまんでたよ。"),
+                    ("Try snacking on fruit instead of biscuits.", "ビスケットの代わりに果物をつまむようにしてみたら？")
+                 ], ipa: "/snæk ɒn/"),
+            make("text someone back", "to reply to someone's text message",
+                 "（メッセージに）返信する",
+                 useCases: ["メッセージの返事について話すとき", "返信が遅れたことを謝るとき"],
+                 examples: [
+                    ("Sorry I didn't text you back – I fell asleep.", "返信しなくてごめん、寝ちゃってたんだ。"),
+                    ("She still hasn't texted me back.", "彼女からまだ返信が来ないんだよね。")
+                 ], ipa: "/tekst ˈsʌmwʌn bæk/"),
+            make("be on a tight schedule", "to have very little free time because you have a lot planned",
+                 "スケジュールが詰まっている・時間に余裕がない",
+                 useCases: ["予定がぎっしりで余裕がないとき", "手短に済ませたいとき"],
+                 examples: [
+                    ("We're on a tight schedule, so let's keep this quick.", "時間に余裕がないから、手短にいこう。"),
+                    ("I'm on a really tight schedule this week.", "今週は本当に予定がぎっしりなんだ。")
+                 ], ipa: "/bi ɒn ə taɪt ˈʃedjuːl/"),
+            make("make excuses", "to give reasons, often untrue, to avoid doing something or being blamed",
+                 "言い訳をする",
+                 useCases: ["やらない理由ばかり言う人について話すとき", "言い訳せずに認めるとき"],
+                 examples: [
+                    ("Stop making excuses and just get it done.", "言い訳してないで、さっさとやっちゃいなよ。"),
+                    ("I'm not making excuses – the train really was late.", "言い訳じゃないって、本当に電車が遅れたんだよ。")
+                 ], ipa: "/meɪk ɪkˈskjuːsɪz/"),
+            make("keep buffering", "(of a video) to keep stopping while it loads because the connection is slow",
+                 "（動画が）何度も止まって読み込み中になる",
+                 useCases: ["動画やライブ配信が止まるとき", "ネット回線が遅いことを伝えるとき"],
+                 examples: [
+                    ("The film keeps buffering – the Wi-Fi's terrible here.", "映画が何度も止まるんだよ。ここのWi-Fi最悪。"),
+                    ("It kept buffering, so I gave up and went to bed.", "ずっと読み込み中で止まるから、諦めて寝たよ。")
+                 ], ipa: "/kiːp ˈbʌfərɪŋ/"),
+            make("put your phone on silent", "to set your phone so it does not make sounds",
+                 "スマホをマナーモード（消音）にする",
+                 useCases: ["映画館や会議の前", "着信音で邪魔したくないとき"],
+                 examples: [
+                    ("Could everyone put their phones on silent, please?", "皆さん、携帯をマナーモードにしていただけますか？"),
+                    ("Sorry I missed your call – my phone was on silent.", "電話出られなくてごめん、マナーモードにしてたんだ。")
+                 ], ipa: "/pʊt jɔː fəʊn ɒn ˈsaɪlənt/"),
+            make("sign for something", "to write your name to show you have received a parcel or delivery",
+                 "（荷物などの）受け取りにサインする",
+                 useCases: ["宅配便を受け取るとき", "代わりに荷物を受け取ってもらうとき"],
+                 examples: [
+                    ("Could you sign for my parcel if I'm not in?", "留守だったら、荷物のサイン代わりにしてもらえる？"),
+                    ("The courier needs someone to sign for it.", "配達員さん、誰かに受け取りサインしてほしいって。")
+                 ], ipa: "/saɪn fɔː ˈsʌmθɪŋ/"),
+            make("pop something in the post", "to send something by post, casually",
+                 "（気軽に）郵便で送る・ポストに入れる",
+                 useCases: ["手紙や書類を郵送するとき", "ついでに送っておくと伝えるとき"],
+                 examples: [
+                    ("I'll pop the forms in the post tomorrow.", "明日書類をポストに入れておくね。"),
+                    ("Just pop it in the post – there's no rush.", "郵便で送ってくれればいいよ、急がないから。")
+                 ], ipa: "/pɒp ˈsʌmθɪŋ ɪn ðə pəʊst/"),
+            make("a light bulb", "the glass part of an electric light that produces light",
+                 "電球",
+                 useCases: ["電球が切れたとき", "家の細かい修理の話"],
+                 examples: [
+                    ("The light bulb in the bathroom's gone again.", "お風呂場の電球、また切れちゃった。"),
+                    ("Can you help me change this light bulb? I can't reach it.", "この電球替えるの手伝ってくれる？手が届かなくて。")
+                 ], ipa: "/ə ˈlaɪt bʌlb/"),
+            make("turn the volume up", "to make the sound louder (or 'turn it down' to make it quieter)",
+                 "音量を上げる（down なら下げる）",
+                 useCases: ["テレビや音楽の音量を調整するとき", "うるさい・聞こえないと伝えるとき"],
+                 examples: [
+                    ("Can you turn the volume up a bit? I can't hear it.", "ちょっと音量上げてくれる？聞こえないんだ。"),
+                    ("Turn the volume down – the baby's asleep.", "音量下げて、赤ちゃんが寝てるから。")
+                 ], ipa: "/tɜːn ðə ˈvɒljuːm ʌp/"),
         ]
     }
     private static var britishColloquial272: [Word] {
