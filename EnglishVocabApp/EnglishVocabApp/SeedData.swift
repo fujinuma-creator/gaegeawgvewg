@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273
         ]
         return groups.flatMap { $0 }
     }
@@ -44196,6 +44196,115 @@ enum SeedData {
                     ("I can't have a drink tonight – I'm on call.", "今夜は飲めないんだ、待機当番だから。"),
                     ("She's on call this weekend, so she might have to leave.", "彼女は今週末待機当番だから、途中で抜けるかも。")
                  ], ipa: "/ɒn kɔːl/"),
+        ]
+    }
+    private static var britishColloquial273: [Word] {
+        [
+            make("cut in", "to interrupt someone who is speaking, or to push into a line of traffic or people",
+                 "（話に）割り込む・（車や列に）割り込む",
+                 useCases: ["会話に口をはさむとき", "割り込み運転に文句を言うとき"],
+                 examples: [
+                    ("Sorry to cut in, but we're running out of time.", "割り込んでごめん、でも時間がなくなってきてるんだ。"),
+                    ("Some idiot cut in right in front of me on the motorway.", "高速でどこかのバカが目の前に割り込んできた。")
+                 ], ipa: "/kʌt ɪn/"),
+            make("keep it short", "to say or write something briefly, without unnecessary detail",
+                 "手短にする・簡潔にまとめる",
+                 useCases: ["時間がないときに話を短くしてもらうとき", "スピーチや説明を簡潔にするとき"],
+                 examples: [
+                    ("I'll keep it short – I know everyone wants to get home.", "手短に話すね。みんな早く帰りたいだろうから。"),
+                    ("Can you keep it short? I've got a meeting in five minutes.", "手短にお願いできる？5分後に会議なんだ。")
+                 ], ipa: "/kiːp ɪt ʃɔːt/"),
+            make("pop back", "to return somewhere quickly or for a short time",
+                 "ちょっと戻る・また寄る",
+                 useCases: ["忘れ物を取りに戻るとき", "後でまた来ると伝えるとき"],
+                 examples: [
+                    ("I've left my keys – I'll just pop back and get them.", "鍵を忘れた。ちょっと戻って取ってくるね。"),
+                    ("He's not in right now. Can you pop back after lunch?", "彼は今いないんだ。お昼の後にまた寄ってもらえる？")
+                 ], ipa: "/pɒp bæk/"),
+            make("you're an angel", "said to thank someone warmly for being very kind or helpful",
+                 "本当に助かる・あなたって天使！",
+                 useCases: ["親切にしてもらったお礼を言うとき", "頼みごとを聞いてもらったとき"],
+                 examples: [
+                    ("You made me a coffee? You're an angel!", "コーヒー入れてくれたの？ほんと天使！"),
+                    ("Thanks for picking up the kids – you're an angel.", "子どもたちを迎えに行ってくれてありがとう。本当に助かったよ。")
+                 ], ipa: "/jɔːr ən ˈeɪndʒl/"),
+            make("a heavy sleeper", "someone who sleeps deeply and is not easily woken",
+                 "眠りが深い人・なかなか起きない人",
+                 useCases: ["騒音でも起きない人について話すとき", "目覚ましが必要な理由を言うとき"],
+                 examples: [
+                    ("I'm a heavy sleeper – I need three alarms to get up.", "眠りが深いから、起きるのに目覚ましが3つ必要なんだ。"),
+                    ("Don't worry about the noise, he's a heavy sleeper.", "音は気にしないで、彼は一度寝たら起きないから。")
+                 ], ipa: "/ə ˈhevi ˈsliːpə/"),
+            make("be seeing someone", "to be in a romantic relationship with someone, often a fairly new one",
+                 "（誰かと）付き合っている",
+                 useCases: ["恋人がいるか聞く・答えるとき", "新しい恋愛について話すとき"],
+                 examples: [
+                    ("Are you seeing anyone at the moment?", "今、付き合ってる人いるの？"),
+                    ("She's been seeing a guy from work for a few months.", "彼女、職場の人と数か月前から付き合ってるんだ。")
+                 ], ipa: "/bi ˈsiːɪŋ ˈsʌmwʌn/"),
+            make("be an item", "(of two people) to be in a romantic relationship",
+                 "（二人が）付き合っている・カップルだ",
+                 useCases: ["二人の関係を噂するとき", "カップルになったことを伝えるとき"],
+                 examples: [
+                    ("Wait, are Tom and Emma an item now?", "ちょっと待って、トムとエマって今付き合ってるの？"),
+                    ("They've been an item since uni.", "あの二人は大学の頃からカップルなんだ。")
+                 ], ipa: "/bi ən ˈaɪtəm/"),
+            make("go on a date", "to go out with someone you are romantically interested in",
+                 "デートに行く",
+                 useCases: ["デートの予定を話すとき", "デートの感想を話すとき"],
+                 examples: [
+                    ("I'm going on a date tonight – I'm so nervous!", "今夜デートなんだ。めっちゃ緊張する！"),
+                    ("We went on a few dates, but it didn't really work out.", "何回かデートしたけど、うまくいかなかった。")
+                 ], ipa: "/ɡəʊ ɒn ə deɪt/"),
+            make("gatecrash", "to go to a party or event without being invited",
+                 "（招待されずに）パーティーに押しかける",
+                 useCases: ["招かれていない人が来たとき", "冗談でパーティーに乱入すると言うとき"],
+                 examples: [
+                    ("A group of students gatecrashed our party last night.", "昨日の夜、学生たちがうちのパーティーに勝手に押しかけてきた。"),
+                    ("Mind if I gatecrash your lunch? I won't stay long.", "お昼にお邪魔してもいい？長居はしないから。")
+                 ], ipa: "/ˈɡeɪtkræʃ/"),
+            make("bring a bottle", "to bring a bottle of wine or another drink to a party or dinner as a guest",
+                 "（招かれた時に）お酒を一本持っていく",
+                 useCases: ["ホームパーティーに招かれたとき", "手土産について話すとき"],
+                 examples: [
+                    ("It's just a casual thing – bring a bottle if you like.", "気軽な集まりだから、よかったらお酒一本持ってきて。"),
+                    ("Should I bring a bottle or some food?", "お酒を持っていけばいい？それとも何か食べ物？")
+                 ], ipa: "/brɪŋ ə ˈbɒtl/"),
+            make("pick up a language", "to learn a language naturally, without formal study",
+                 "（自然に）言葉を覚える・身につける",
+                 useCases: ["外国語を覚えた経緯を話すとき", "海外生活について話すとき"],
+                 examples: [
+                    ("I picked up a bit of Spanish while I was living in Madrid.", "マドリードに住んでた時にスペイン語を少し覚えたんだ。"),
+                    ("Kids pick up languages so quickly.", "子どもって本当にすぐ言葉を覚えるよね。")
+                 ], ipa: "/pɪk ʌp ə ˈlæŋɡwɪdʒ/"),
+            make("leave someone on read", "to read someone's message but not reply to it",
+                 "既読スルーする",
+                 useCases: ["メッセージの返信がないとき", "わざと返事をしないとき"],
+                 examples: [
+                    ("She left me on read for two days!", "彼女に2日間も既読スルーされたんだけど！"),
+                    ("Sorry for leaving you on read – I was swamped.", "既読スルーしてごめん、めっちゃ忙しくて。")
+                 ], ipa: "/liːv ˈsʌmwʌn ɒn red/"),
+            make("best man", "the friend chosen by a groom to help him at his wedding",
+                 "ベストマン（新郎の付添人）",
+                 useCases: ["結婚式の話をするとき", "友人に大役を頼まれたとき"],
+                 examples: [
+                    ("Dan's asked me to be his best man!", "ダンにベストマンを頼まれたんだ！"),
+                    ("The best man's speech was hilarious.", "ベストマンのスピーチ、めちゃくちゃ面白かった。")
+                 ], ipa: "/best mæn/"),
+            make("a good fit", "someone or something that is suitable for a particular job, group or situation",
+                 "ぴったりな人（もの）・相性がいい",
+                 useCases: ["採用や人選について話すとき", "自分に合うかどうか判断するとき"],
+                 examples: [
+                    ("I think she'd be a really good fit for the team.", "彼女ならチームにすごく合うと思う。"),
+                    ("The job sounded great, but it just wasn't a good fit for me.", "仕事は良さそうだったけど、自分には合わなかった。")
+                 ], ipa: "/ə ɡʊd fɪt/"),
+            make("mispronounce", "to say a word or name wrongly",
+                 "発音を間違える",
+                 useCases: ["名前の読み方を確認するとき", "言い間違いを謝るとき"],
+                 examples: [
+                    ("Sorry if I'm mispronouncing your name – how do you say it?", "名前の発音が違ってたらごめんね。どう読むの？"),
+                    ("Everyone mispronounces the name of that town.", "みんなあの町の名前を間違えて発音するんだよね。")
+                 ], ipa: "/ˌmɪsprəˈnaʊns/"),
         ]
     }
     private static var britishColloquial272: [Word] {
