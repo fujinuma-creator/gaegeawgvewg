@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278
         ]
         return groups.flatMap { $0 }
     }
@@ -44632,6 +44632,115 @@ enum SeedData {
                     ("You look exhausted – shall I run you a bath?", "疲れてるみたいだね。お風呂ためようか？"),
                     ("I'm going to run a bath and have an early night.", "お風呂ためて、今日は早く寝るよ。")
                  ], ipa: "/rʌn ə bɑːθ/"),
+        ]
+    }
+    private static var britishColloquial278: [Word] {
+        [
+            make("go for a jog", "to go running at a slow, steady pace for exercise",
+                 "ジョギングしに行く",
+                 useCases: ["朝や仕事帰りの運動の話をするとき", "体を動かしたいと言うとき"],
+                 examples: [
+                    ("I usually go for a jog before work.", "仕事の前にだいたいジョギングしに行くんだ。"),
+                    ("Fancy going for a jog in the park later?", "あとで公園にジョギングしに行かない？")
+                 ], ipa: "/ɡəʊ fər ə dʒɒɡ/"),
+            make("a podcast", "an audio programme you can download or stream and listen to any time",
+                 "ポッドキャスト",
+                 useCases: ["通勤中に聞いているものを話すとき", "おすすめの番組を勧めるとき"],
+                 examples: [
+                    ("I listen to podcasts on my way to work.", "通勤中はポッドキャストを聞いてるよ。"),
+                    ("You should check out this podcast – it's really good.", "このポッドキャスト聞いてみなよ、すごくいいから。")
+                 ], ipa: "/ə ˈpɒdkɑːst/"),
+            make("subscribe to", "to pay regularly for a service, or to sign up to receive something",
+                 "〜を定期購読する・（サービスに）登録する",
+                 useCases: ["動画配信や雑誌の契約の話をするとき", "チャンネル登録やメルマガ登録の話"],
+                 examples: [
+                    ("We subscribe to far too many streaming services.", "うち、動画配信サービスに入りすぎなんだよね。"),
+                    ("I've just subscribed to her channel.", "さっき彼女のチャンネル登録したところ。")
+                 ], ipa: "/səbˈskraɪb tuː/"),
+            make("my ex", "the person you used to be in a relationship with or married to",
+                 "元カレ・元カノ・元パートナー",
+                 useCases: ["以前付き合っていた人の話をするとき", "別れた相手と会ったとき"],
+                 examples: [
+                    ("I bumped into my ex at the supermarket – so awkward.", "スーパーで元カノにばったり会っちゃって、気まずかった。"),
+                    ("Are you still friends with your ex?", "元カレとはまだ友達なの？")
+                 ], ipa: "/maɪ eks/"),
+            make("a partner", "the person you live with or are in a long-term relationship with, married or not",
+                 "パートナー（恋人・配偶者）",
+                 useCases: ["結婚しているかどうかに関わらず恋人や配偶者を指すとき", "相手の性別をぼかしたいとき"],
+                 examples: [
+                    ("Feel free to bring your partner to the party.", "パーティーにはパートナーも連れてきてね。"),
+                    ("My partner and I have been together for ten years.", "パートナーとは付き合って10年になるんだ。")
+                 ], ipa: "/ə ˈpɑːtnə/"),
+            make("a hoodie", "a casual top with a hood, usually made of soft cotton",
+                 "パーカー（フード付きトレーナー）",
+                 useCases: ["普段着の話をするとき", "寒いから羽織るものを勧めるとき"],
+                 examples: [
+                    ("I just threw on a hoodie and jeans.", "パーカーとジーンズをささっと着ただけだよ。"),
+                    ("Bring a hoodie – it gets chilly in the evening.", "パーカー持ってきなよ、夜は冷えるから。")
+                 ], ipa: "/ə ˈhʊdi/"),
+            make("go vegan", "to stop eating or using any animal products",
+                 "ヴィーガンになる・完全菜食にする",
+                 useCases: ["食生活を変えた話をするとき", "食事の好みや制限を伝えるとき"],
+                 examples: [
+                    ("She went vegan last year and feels much better.", "彼女は去年ヴィーガンになって、体調がずっといいんだって。"),
+                    ("I could never go vegan – I love cheese too much.", "私には絶対ヴィーガンは無理、チーズが好きすぎて。")
+                 ], ipa: "/ɡəʊ ˈviːɡən/"),
+            make("gluten-free", "not containing gluten, a protein found in wheat and some other grains",
+                 "グルテンフリーの",
+                 useCases: ["レストランで食事制限を伝えるとき", "食品やメニューを選ぶとき"],
+                 examples: [
+                    ("Do you have anything gluten-free on the menu?", "メニューにグルテンフリーのものはありますか？"),
+                    ("I've been trying to eat gluten-free for a while.", "しばらくグルテンフリーの食事を心がけてるんだ。")
+                 ], ipa: "/ˈɡluːtn friː/"),
+            make("an anniversary", "the date each year when you remember something special, like a wedding",
+                 "記念日（結婚記念日など）",
+                 useCases: ["結婚記念日や交際記念日の話をするとき", "会社や出来事の周年を話すとき"],
+                 examples: [
+                    ("It's our wedding anniversary next week.", "来週は結婚記念日なんだ。"),
+                    ("We're going away for the weekend for our anniversary.", "記念日だから週末に旅行に行くんだ。")
+                 ], ipa: "/ən ˌænɪˈvɜːsəri/"),
+            make("earphones", "small speakers you put in or on your ears to listen to music or calls",
+                 "イヤホン",
+                 useCases: ["電車や作業中に音楽を聴くとき", "イヤホンをなくした・忘れたとき"],
+                 examples: [
+                    ("I've left my earphones at home again.", "またイヤホン家に忘れちゃった。"),
+                    ("Sorry, I had my earphones in and didn't hear you.", "ごめん、イヤホンしてて聞こえなかった。")
+                 ], ipa: "/ˈɪəfəʊnz/"),
+            make("dip into your savings", "to use some of the money you have saved",
+                 "貯金に手をつける・貯金を切り崩す",
+                 useCases: ["急な出費があったとき", "大きな買い物の資金の話をするとき"],
+                 examples: [
+                    ("We had to dip into our savings to fix the car.", "車の修理で貯金を切り崩すしかなかったんだ。"),
+                    ("I'd rather not dip into my savings for a holiday.", "旅行のために貯金に手をつけるのはやめておきたいな。")
+                 ], ipa: "/dɪp ˈɪntə jɔː ˈseɪvɪŋz/"),
+            make("decaf", "coffee (or tea) with the caffeine removed",
+                 "デカフェ・カフェインレス",
+                 useCases: ["カフェで注文するとき", "夜にコーヒーを飲みたいとき"],
+                 examples: [
+                    ("Can I get a decaf latte, please?", "デカフェのラテをお願いします。"),
+                    ("I switch to decaf after lunch or I can't sleep.", "お昼以降はデカフェにしてるんだ、じゃないと眠れなくて。")
+                 ], ipa: "/ˈdiːkæf/"),
+            make("a speeding ticket", "a fine you get for driving faster than the speed limit",
+                 "スピード違反の切符",
+                 useCases: ["運転中にスピード違反で捕まったとき", "運転の注意を促すとき"],
+                 examples: [
+                    ("I got a speeding ticket on the way to the airport.", "空港に向かう途中でスピード違反の切符切られちゃった。"),
+                    ("Slow down or you'll get a speeding ticket.", "スピード落として、じゃないと切符切られるよ。")
+                 ], ipa: "/ə ˈspiːdɪŋ ˈtɪkɪt/"),
+            make("be out of the office", "to be away from work, for example on holiday or at a meeting elsewhere",
+                 "不在にしている・会社にいない",
+                 useCases: ["休暇や出張で不在だと伝えるとき", "同僚の所在を聞かれたとき"],
+                 examples: [
+                    ("I'm out of the office until Monday.", "月曜まで不在にしています。"),
+                    ("She's out of the office today – can I take a message?", "彼女は今日不在なんですが、伝言を承りましょうか？")
+                 ], ipa: "/biː aʊt əv ði ˈɒfɪs/"),
+            make("online shopping", "buying things over the internet",
+                 "ネットショッピング・通販",
+                 useCases: ["ネットで買い物した話をするとき", "つい買いすぎてしまう話"],
+                 examples: [
+                    ("I do most of my shopping online these days.", "最近は買い物のほとんどをネットで済ませてるよ。"),
+                    ("Online shopping is dangerous – it's far too easy.", "ネットショッピングは危険だよ、簡単すぎて。")
+                 ], ipa: "/ˌɒnlaɪn ˈʃɒpɪŋ/"),
         ]
     }
     private static var britishColloquial277: [Word] {
