@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270
         ]
         return groups.flatMap { $0 }
     }
@@ -44196,6 +44196,115 @@ enum SeedData {
                     ("I can't have a drink tonight – I'm on call.", "今夜は飲めないんだ、待機当番だから。"),
                     ("She's on call this weekend, so she might have to leave.", "彼女は今週末待機当番だから、途中で抜けるかも。")
                  ], ipa: "/ɒn kɔːl/"),
+        ]
+    }
+    private static var britishColloquial270: [Word] {
+        [
+            make("fill in for", "to do someone's job for them while they are away",
+                 "（一時的に）～の代わりを務める",
+                 useCases: ["同僚の代理を頼む・引き受けるとき", "休んでいる人の穴埋めを話すとき"],
+                 examples: [
+                    ("Could you fill in for me on Friday? I've got a dentist's appointment.", "金曜、代わりに入ってもらえる？歯医者の予約があって。"),
+                    ("I'm just filling in for Sarah while she's on holiday.", "サラが休暇中だから、代わりにやってるだけなんだ。")
+                 ], ipa: "/fɪl ɪn fɔː/"),
+            make("make up for lost time", "to do a lot of something because you could not do it earlier",
+                 "遅れを取り戻す・失った時間を埋め合わせる",
+                 useCases: ["久しぶりに会った人と過ごすとき", "出遅れた分を取り戻そうとするとき"],
+                 examples: [
+                    ("We hadn't seen each other for years, so we're making up for lost time.", "何年も会ってなかったから、今その分を取り戻してるところ。"),
+                    ("He started travelling late, but he's really making up for lost time.", "彼は旅を始めたのは遅かったけど、今まさに取り戻してるね。")
+                 ], ipa: "/meɪk ʌp fə lɒst taɪm/"),
+            make("what do you call ...?", "used to ask for the name of something you don't know the word for",
+                 "～って（英語で）何て言うの？",
+                 useCases: ["単語が出てこないとき", "物の名前を尋ねるとき"],
+                 examples: [
+                    ("What do you call that thing you use to open wine bottles?", "ワインのボトルを開けるあれ、何て言うんだっけ？"),
+                    ("What do you call this in English?", "これって英語で何て言うの？")
+                 ], ipa: "/wɒt də jə kɔːl/"),
+            make("how do you spell that?", "used to ask someone to say the letters of a word or name",
+                 "それはどう綴るんですか？",
+                 useCases: ["名前やメールアドレスを聞き取るとき", "予約や電話で確認するとき"],
+                 examples: [
+                    ("Sorry, how do you spell that? Is it with one 'n' or two?", "すみません、どう綴りますか？nは1つ、それとも2つ？"),
+                    ("It's Siobhan. – Lovely name! How do you spell that?", "シボーンです。―素敵な名前！どう綴るの？")
+                 ], ipa: "/haʊ də jə spel ðæt/"),
+            make("squeeze someone in", "to find time for someone or something in a busy schedule",
+                 "（忙しい中）予定に組み込む・時間を作る",
+                 useCases: ["予約を無理に入れてもらうとき", "忙しい日に何かを入れるとき"],
+                 examples: [
+                    ("The doctor's busy today, but she can squeeze you in at four.", "先生は今日忙しいけど、4時なら入れられるって。"),
+                    ("I'll try to squeeze in a quick run before work.", "仕事前にちょっとランニングを入れてみるよ。")
+                 ], ipa: "/skwiːz ˈsʌmwʌn ɪn/"),
+            make("power through", "to keep going and finish something even though you are tired or it is hard",
+                 "（疲れていても）頑張ってやり切る",
+                 useCases: ["眠い・疲れている中で作業を続けるとき", "大変なことを乗り切った話をするとき"],
+                 examples: [
+                    ("I was knackered, but I powered through and finished the report.", "クタクタだったけど、頑張ってレポートを仕上げたよ。"),
+                    ("Just power through – it's nearly the weekend!", "あとひと踏ん張り、もうすぐ週末だよ！")
+                 ], ipa: "/ˈpaʊə θruː/"),
+            make("take a stab at", "to try to do or guess something, even if you might be wrong",
+                 "試しにやってみる・当てずっぽうで言ってみる",
+                 useCases: ["自信がないけど挑戦するとき", "答えを推測してみるとき"],
+                 examples: [
+                    ("I've never made bread before, but I'll take a stab at it.", "パン作ったことないけど、試しにやってみる。"),
+                    ("Go on, take a stab at how old he is.", "ほら、彼が何歳か当ててみて。")
+                 ], ipa: "/teɪk ə stæb æt/"),
+            make("small change", "coins of low value",
+                 "小銭",
+                 useCases: ["小銭を持っているか聞くとき", "駐車場やバスの支払いのとき"],
+                 examples: [
+                    ("Have you got any small change for the parking meter?", "駐車メーター用の小銭ある？"),
+                    ("Sorry, I've only got a note – no small change.", "ごめん、お札しかなくて小銭がないんだ。")
+                 ], ipa: "/smɔːl tʃeɪndʒ/"),
+            make("have you got change for ...?", "used to ask someone to swap a note for smaller notes or coins",
+                 "～を両替してもらえますか？・～をくずせますか？",
+                 useCases: ["お札をくずしてほしいとき", "お店で小銭がないとき"],
+                 examples: [
+                    ("Have you got change for a twenty?", "20ポンド札くずせる？"),
+                    ("Sorry, I haven't got change for a fifty.", "ごめん、50ポンド札はくずせないや。")
+                 ], ipa: "/hæv jə ɡɒt tʃeɪndʒ fɔː/"),
+            make("put it on my card", "to pay for something using a bank or credit card",
+                 "カードで払う・カードにつけておく",
+                 useCases: ["お店やレストランで支払うとき", "誰が払うか話すとき"],
+                 examples: [
+                    ("Don't worry about cash – just put it on my card.", "現金は気にしないで、私のカードで払っておいて。"),
+                    ("Can I put it all on one card?", "全部1枚のカードで払えますか？")
+                 ], ipa: "/pʊt ɪt ɒn maɪ kɑːd/"),
+            make("a mix-up", "a mistake that causes confusion, especially about arrangements",
+                 "手違い・行き違い",
+                 useCases: ["予約や注文の間違いを説明するとき", "誤解があったと伝えるとき"],
+                 examples: [
+                    ("Sorry, there's been a mix-up with your booking.", "申し訳ありません、ご予約に手違いがありまして。"),
+                    ("There was a bit of a mix-up and we both went to different stations.", "ちょっと行き違いがあって、二人とも別の駅に行っちゃった。")
+                 ], ipa: "/ə ˈmɪks ʌp/"),
+            make("shall we say ...?", "used to suggest a time, place or amount when making plans",
+                 "～ってことでどう？（時間・場所などを提案）",
+                 useCases: ["待ち合わせ時間を決めるとき", "値段や数を提案するとき"],
+                 examples: [
+                    ("Shall we say seven o'clock outside the cinema?", "7時に映画館の前ってことでどう？"),
+                    ("Shall we say twenty quid each?", "一人20ポンドってことでどう？")
+                 ], ipa: "/ʃəl wi seɪ/"),
+            make("I'll put you through", "used on the phone to say you will connect the caller to someone",
+                 "（電話を）おつなぎします",
+                 useCases: ["電話を担当者に回すとき", "会社やお店への電話で"],
+                 examples: [
+                    ("Hold on a sec, I'll put you through to the manager.", "少々お待ちください、店長におつなぎします。"),
+                    ("Could you put me through to reception, please?", "受付につないでもらえますか？")
+                 ], ipa: "/aɪl pʊt jə θruː/"),
+            make("indulge in", "to let yourself enjoy something nice, especially food or a treat",
+                 "（好きなものを）思いきり楽しむ・ちょっと贅沢する",
+                 useCases: ["ご褒美に贅沢するとき", "甘いものなどを我慢しないとき"],
+                 examples: [
+                    ("It's my birthday, so I'm going to indulge in a big slice of cake.", "誕生日だから、大きなケーキを思いきり食べちゃう。"),
+                    ("We indulged in a long lunch by the sea.", "海辺でのんびりランチを楽しむ贅沢をしたよ。")
+                 ], ipa: "/ɪnˈdʌldʒ ɪn/"),
+            make("turn the heating up", "to make a heating system produce more heat",
+                 "暖房（の温度）を上げる",
+                 useCases: ["部屋が寒いとき", "家族や同居人に頼むとき"],
+                 examples: [
+                    ("It's freezing in here – can we turn the heating up a bit?", "ここ寒すぎる、暖房ちょっと上げてもいい？"),
+                    ("Don't turn the heating up, just put a jumper on!", "暖房上げないで、セーター着なさい！")
+                 ], ipa: "/tɜːn ðə ˈhiːtɪŋ ʌp/"),
         ]
     }
     private static var britishColloquial268: [Word] {
