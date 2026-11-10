@@ -43630,13 +43630,13 @@ enum SeedData {
                     ("Come here and give me a cuddle.", "こっちおいで、ぎゅってさせて。"),
                     ("The kids love cuddling the dog on the sofa.", "子どもたちはソファで犬を抱っこするのが大好きなんだ。")
                  ], ipa: "/ˈkʌdl/"),
-            make("out of breath", "breathing very quickly because of physical effort",
-                 "息切れして・息を切らして",
-                 useCases: ["走ったり階段を上ったりした後", "運動不足を嘆くとき"],
+            make("graze", "a small injury where the skin is scraped; to scrape the skin slightly",
+                 "すり傷・擦りむく",
+                 useCases: ["転んで膝やひじを擦りむいたとき", "大したけがではないと伝えるとき"],
                  examples: [
-                    ("Give me a sec, I'm out of breath from running for the bus.", "ちょっと待って、バスに走ったから息が切れてて。"),
-                    ("I get out of breath just climbing the stairs these days.", "最近は階段を上るだけで息切れするよ。")
-                 ], ipa: "/aʊt əv breθ/"),
+                    ("It's only a graze – I'll put a plaster on it.", "ただのすり傷だよ。絆創膏貼っとくね。"),
+                    ("He fell off his bike and grazed his knee.", "彼は自転車から落ちて膝を擦りむいた。")
+                 ], ipa: "/ɡreɪz/"),
             make("scream", "to shout loudly in a high voice because of fear, excitement, or pain; also something very funny",
                  "叫ぶ・悲鳴を上げる／（口語で）めちゃくちゃ面白いもの・人",
                  useCases: ["驚いて叫んだことを話すとき", "とても面白い人や出来事を褒めるとき"],
