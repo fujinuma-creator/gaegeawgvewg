@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276
         ]
         return groups.flatMap { $0 }
     }
@@ -44523,6 +44523,115 @@ enum SeedData {
                     ("Don't forget to pack your flip-flops.", "ビーサン持っていくの忘れないでね。"),
                     ("You can't go for a hike in flip-flops!", "ビーサンでハイキングは無理だよ！")
                  ], ipa: "/ˈflɪp flɒps/"),
+        ]
+    }
+    private static var britishColloquial276: [Word] {
+        [
+            make("sluggish", "feeling slow, tired and lacking energy",
+                 "だるい・体が重い",
+                 useCases: ["寝不足や食べ過ぎで体が重いとき", "パソコンや経済の動きが鈍いとき"],
+                 examples: [
+                    ("I always feel a bit sluggish after a big lunch.", "たくさんお昼を食べると、いつもちょっとだるくなるんだ。"),
+                    ("My laptop's been really sluggish lately.", "最近ノートパソコンの動きがすごく遅いんだよ。")
+                 ], ipa: "/ˈslʌɡɪʃ/"),
+            make("overdressed", "wearing clothes that are too formal or smart for the occasion",
+                 "（場に対して）服装がきちんとしすぎた",
+                 useCases: ["カジュアルな場にフォーマルな服で来てしまったとき", "服装選びに迷うとき"],
+                 examples: [
+                    ("I felt a bit overdressed – everyone else was in jeans.", "みんなジーンズで、私だけちょっと浮いた格好だった。"),
+                    ("You can't really be overdressed for a wedding.", "結婚式なら、きちんとしすぎってことはないよ。")
+                 ], ipa: "/ˌəʊvəˈdrest/"),
+            make("mishear", "to hear something wrongly",
+                 "聞き間違える",
+                 useCases: ["相手の言葉を聞き違えたとき", "勘違いを謝るとき"],
+                 examples: [
+                    ("Sorry, I must have misheard you – did you say Tuesday?", "ごめん、聞き間違えたかも。火曜日って言った？"),
+                    ("I misheard the name and called him Tom all evening.", "名前を聞き間違えて、一晩中彼をトムって呼んでたよ。")
+                 ], ipa: "/ˌmɪsˈhɪə/"),
+            make("fit someone in", "to find time to see someone or do something in a busy schedule",
+                 "（忙しい中で）予定に入れる・時間を作る",
+                 useCases: ["美容院や病院の予約を頼むとき", "忙しい中で会う時間を作るとき"],
+                 examples: [
+                    ("Could you fit me in on Thursday afternoon?", "木曜の午後に入れてもらえますか？"),
+                    ("I'm pretty busy, but I'll try to fit you in next week.", "かなり忙しいけど、来週どこかで時間作ってみるよ。")
+                 ], ipa: "/fɪt ˈsʌmwʌn ɪn/"),
+            make("a change of clothes", "an extra set of clothes you bring with you",
+                 "着替え（一式）",
+                 useCases: ["泊まりや旅行の持ち物を話すとき", "子どもや運動後の準備をするとき"],
+                 examples: [
+                    ("Bring a change of clothes in case it rains.", "雨に備えて着替えを持ってきてね。"),
+                    ("I always keep a change of clothes at work.", "職場にはいつも着替えを置いてるんだ。")
+                 ], ipa: "/ə tʃeɪndʒ əv kləʊðz/"),
+            make("I don't follow", "I don't understand what you mean or what you're explaining",
+                 "話がよく分からない・ついていけない",
+                 useCases: ["説明が理解できないとき", "もう一度説明してほしいとき"],
+                 examples: [
+                    ("Sorry, I don't follow – can you go back a bit?", "ごめん、よく分からない。ちょっと戻って説明してくれる？"),
+                    ("I don't quite follow. Why would he do that?", "いまいち話が見えないな。なんで彼はそんなことを？")
+                 ], ipa: "/aɪ dəʊnt ˈfɒləʊ/"),
+            make("lose your voice", "to become unable to speak normally, usually because of illness or shouting",
+                 "声が出なくなる・声がかれる",
+                 useCases: ["風邪で声が出ないとき", "ライブや応援で叫びすぎたとき"],
+                 examples: [
+                    ("I lost my voice after the concert last night.", "昨日のライブのあと、声が出なくなっちゃった。"),
+                    ("Sorry, I've almost lost my voice – it's this cold.", "ごめん、ほとんど声が出ないんだ。風邪のせいで。")
+                 ], ipa: "/luːz jɔː vɔɪs/"),
+            make("a typo", "a small mistake in typed or printed text",
+                 "誤字・タイプミス",
+                 useCases: ["メールや資料の打ち間違いを指摘するとき", "自分の誤字を謝るとき"],
+                 examples: [
+                    ("There's a typo in the second line of your email.", "メールの2行目に誤字があるよ。"),
+                    ("Sorry, typo – I meant Friday, not Monday.", "ごめん、打ち間違い。月曜じゃなくて金曜ね。")
+                 ], ipa: "/ə ˈtaɪpəʊ/"),
+            make("cut out", "(of a phone call, engine or sound) to suddenly stop working",
+                 "（電話・音・エンジンが）途切れる・止まる",
+                 useCases: ["電話やオンライン通話の音が途切れたとき", "車のエンジンが急に止まったとき"],
+                 examples: [
+                    ("You keep cutting out – I'll call you back.", "音が途切れ途切れだから、かけ直すね。"),
+                    ("The engine just cut out at the traffic lights.", "信号のところでエンジンが急に止まったんだ。")
+                 ], ipa: "/kʌt aʊt/"),
+            make("autocorrect", "the phone feature that automatically changes words you type, often wrongly",
+                 "自動修正・予測変換",
+                 useCases: ["変なメッセージを送ってしまった言い訳をするとき", "スマホの入力について話すとき"],
+                 examples: [
+                    ("Sorry, that was autocorrect – I definitely didn't mean that!", "ごめん、自動修正のせい。絶対そんなつもりじゃないよ！"),
+                    ("Autocorrect keeps changing my name to something weird.", "自動修正がいつも私の名前を変な言葉にしちゃうんだ。")
+                 ], ipa: "/ˈɔːtəʊkəˌrekt/"),
+            make("spam", "unwanted emails or messages, usually advertising",
+                 "迷惑メール・スパム",
+                 useCases: ["メールが届かないときに確認を促すとき", "迷惑メールに困っているとき"],
+                 examples: [
+                    ("Have a look in your spam folder – it might have ended up there.", "迷惑メールフォルダ見てみて。そっちに入ってるかも。"),
+                    ("I get so much spam these days.", "最近迷惑メールがすごく多いんだ。")
+                 ], ipa: "/spæm/"),
+            make("wrong number", "a phone number you have called or written by mistake",
+                 "番号違い・間違い電話",
+                 useCases: ["間違い電話がかかってきたとき", "番号を間違えてかけたとき"],
+                 examples: [
+                    ("Sorry, I think you've got the wrong number.", "すみません、番号をお間違えだと思いますよ。"),
+                    ("Oops, wrong number – sorry to bother you!", "あっ、番号間違えました。失礼しました！")
+                 ], ipa: "/rɒŋ ˈnʌmbə/"),
+            make("in the sale", "being sold at a reduced price during a shop's sale (US: on sale)",
+                 "セールで（安く）",
+                 useCases: ["安く買った物を自慢するとき", "セール品について話すとき"],
+                 examples: [
+                    ("I got this coat in the sale – it was half the price.", "このコート、セールで半額だったんだ。"),
+                    ("Wait until it's in the sale before you buy it.", "セールになるまで買うのは待ちなよ。")
+                 ], ipa: "/ɪn ðə seɪl/"),
+            make("unmute", "to turn the sound back on, especially your microphone in an online call",
+                 "ミュートを解除する",
+                 useCases: ["オンライン会議で発言するとき", "相手に音声オンを促すとき"],
+                 examples: [
+                    ("Can you unmute yourself? We can't hear you.", "ミュート解除してもらえる？聞こえないよ。"),
+                    ("Hang on, let me unmute – right, can you hear me now?", "ちょっと待って、ミュート解除するね。よし、聞こえる？")
+                 ], ipa: "/ʌnˈmjuːt/"),
+            make("run a bath", "to fill a bath with water so you can have one",
+                 "お風呂にお湯をためる",
+                 useCases: ["お風呂の準備をするとき", "疲れた人を気遣うとき"],
+                 examples: [
+                    ("You look exhausted – shall I run you a bath?", "疲れてるみたいだね。お風呂ためようか？"),
+                    ("I'm going to run a bath and have an early night.", "お風呂ためて、今日は早く寝るよ。")
+                 ], ipa: "/rʌn ə bɑːθ/"),
         ]
     }
     private static var britishColloquial272: [Word] {
