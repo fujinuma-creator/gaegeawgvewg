@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264
         ]
         return groups.flatMap { $0 }
     }
@@ -43651,6 +43651,115 @@ enum SeedData {
                     ("I'll give you a ring later on.", "あとで電話するね。"),
                     ("We had lunch, and later on we went for a walk by the river.", "お昼を食べて、そのあと川沿いを散歩したんだ。")
                  ], ipa: "/ˈleɪtər ɒn/"),
+        ]
+    }
+    private static var britishColloquial264: [Word] {
+        [
+            make("it's baking", "it is extremely hot (used about the weather or a room)",
+                 "めちゃくちゃ暑い・うだるような暑さだ",
+                 useCases: ["真夏の暑さについて話すとき", "部屋や車内が暑すぎるとき"],
+                 examples: [
+                    ("It's baking out there – take some water with you.", "外めちゃくちゃ暑いよ。水持って行きな。"),
+                    ("Can we open a window? It's baking in here.", "窓開けてもいい？ここ暑すぎるよ。")
+                 ], ipa: "/ɪts ˈbeɪkɪŋ/"),
+            make("I'm melting", "I feel extremely hot",
+                 "暑くて溶けそう",
+                 useCases: ["暑さに参っていると伝えるとき", "冷房のない場所で愚痴るとき"],
+                 examples: [
+                    ("I'm melting – is there any air conditioning in here?", "溶けそう…ここエアコンないの？"),
+                    ("Let's sit in the shade, I'm melting.", "日陰に座ろう、暑くて溶けそう。")
+                 ], ipa: "/aɪm ˈmeltɪŋ/"),
+            make("thaw out", "to become warm again after being very cold; (of frozen food) to stop being frozen",
+                 "（冷えた体が）温まる・（冷凍食品が）解ける",
+                 useCases: ["寒い外から帰ってきたとき", "冷凍食品を解凍するとき"],
+                 examples: [
+                    ("Come and sit by the fire and thaw out.", "暖炉のそばに座って温まりなよ。"),
+                    ("Leave the chicken out to thaw out for a few hours.", "鶏肉を数時間出しておいて解凍して。")
+                 ], ipa: "/θɔː aʊt/"),
+            make("wipe down", "to clean a surface by rubbing it with a damp cloth",
+                 "（布で）拭く・拭き掃除する",
+                 useCases: ["テーブルや台所を拭くとき", "掃除を頼むとき"],
+                 examples: [
+                    ("Could you wipe down the table after dinner?", "夕飯の後テーブル拭いてくれる？"),
+                    ("I'll just wipe down the worktops and then we can go.", "調理台をさっと拭いたら出かけられるよ。")
+                 ], ipa: "/waɪp daʊn/"),
+            make("sweep up", "to clean dirt or broken pieces from the floor using a brush",
+                 "掃き集める・掃き掃除する",
+                 useCases: ["割れた物や床のゴミを片付けるとき", "パーティーの後片付けで"],
+                 examples: [
+                    ("Don't move – I'll sweep up the broken glass.", "動かないで。割れたガラス掃いちゃうから。"),
+                    ("Can someone sweep up the crumbs under the table?", "誰かテーブルの下のパンくず掃いてくれる？")
+                 ], ipa: "/swiːp ʌp/"),
+            make("mop up", "to remove liquid from a surface using a cloth or mop",
+                 "（こぼれた液体を）拭き取る",
+                 useCases: ["飲み物をこぼしたとき", "床の水を拭き取るとき"],
+                 examples: [
+                    ("Sorry, I've spilt my tea – have you got something to mop it up with?", "ごめん、紅茶こぼしちゃった。拭くもの何かある？"),
+                    ("It took ages to mop up all the water in the bathroom.", "浴室の水を全部拭き取るのにすごく時間がかかった。")
+                 ], ipa: "/mɒp ʌp/"),
+            make("a slice of", "a thin flat piece cut from something like bread, cake or pizza",
+                 "〜の一切れ・一枚",
+                 useCases: ["ケーキやピザを勧める・頼むとき", "パンの枚数を言うとき"],
+                 examples: [
+                    ("Would you like a slice of cake with your coffee?", "コーヒーと一緒にケーキ一切れどう？"),
+                    ("I just had a slice of toast for breakfast.", "朝ごはんはトースト一枚だけだった。")
+                 ], ipa: "/ə slaɪs əv/"),
+            make("defrost", "to let frozen food become unfrozen; to remove ice from a freezer or windscreen",
+                 "解凍する・（窓や冷凍庫の）霜を取る",
+                 useCases: ["冷凍食品を解凍するとき", "冬の朝、車のフロントガラスの氷を溶かすとき"],
+                 examples: [
+                    ("Did you remember to defrost the mince?", "ひき肉解凍しておくの覚えてた？"),
+                    ("I need ten minutes to defrost the car this morning.", "今朝は車の霜取りに10分かかるな。")
+                 ], ipa: "/ˌdiːˈfrɒst/"),
+            make("reheat", "to heat food again after it has been cooked and cooled",
+                 "温め直す",
+                 useCases: ["残り物を温めるとき", "冷めた料理について話すとき"],
+                 examples: [
+                    ("There's some soup left – just reheat it in the microwave.", "スープ残ってるから、電子レンジで温め直して。"),
+                    ("Curry always tastes better reheated the next day.", "カレーは次の日に温め直した方がいつも美味しいよね。")
+                 ], ipa: "/ˌriːˈhiːt/"),
+            make("peel", "to remove the skin of fruit or vegetables; (of skin) to come off in small pieces",
+                 "皮をむく・（日焼けで皮が）むける",
+                 useCases: ["料理の手伝いで", "日焼けした後の肌について"],
+                 examples: [
+                    ("Can you peel the potatoes while I chop the onions?", "玉ねぎ切ってる間にジャガイモの皮むいてくれる？"),
+                    ("I got so burnt on holiday that my nose is peeling.", "休暇でひどく日焼けして鼻の皮がむけてる。")
+                 ], ipa: "/piːl/"),
+            make("drip", "(of liquid) to fall in small drops; to let liquid fall in drops",
+                 "ポタポタ垂れる・したたる",
+                 useCases: ["蛇口の水漏れを伝えるとき", "濡れたまま入ってきた人に"],
+                 examples: [
+                    ("The kitchen tap's been dripping all night.", "台所の蛇口が一晩中ポタポタしてるんだ。"),
+                    ("You're dripping all over the floor – here's a towel.", "床がびしょびしょになってるよ。はい、タオル。")
+                 ], ipa: "/drɪp/"),
+            make("loo roll", "toilet paper (informal British)",
+                 "トイレットペーパー",
+                 useCases: ["買い物リストの話で", "トイレの紙が切れたとき"],
+                 examples: [
+                    ("We're out of loo roll – can you grab some on the way home?", "トイレットペーパー切れてる。帰りに買ってきてくれる？"),
+                    ("There's spare loo roll in the cupboard under the sink.", "予備のトイレットペーパーは洗面台の下の棚にあるよ。")
+                 ], ipa: "/ˈluː rəʊl/"),
+            make("an aisle seat", "a seat next to the passage on a plane, train or in a theatre",
+                 "通路側の席",
+                 useCases: ["飛行機や電車の座席を選ぶとき", "チェックインで希望を伝えるとき"],
+                 examples: [
+                    ("Could I have an aisle seat, please?", "通路側の席にしてもらえますか？"),
+                    ("I always book an aisle seat so I can stretch my legs.", "足を伸ばせるようにいつも通路側を予約してるんだ。")
+                 ], ipa: "/ən ˈaɪl siːt/"),
+            make("fold", "to bend something such as paper or clothes so that one part lies on another",
+                 "たたむ・折る",
+                 useCases: ["洗濯物をたたむとき", "紙を折るとき"],
+                 examples: [
+                    ("Can you help me fold the washing?", "洗濯物たたむの手伝ってくれる？"),
+                    ("Just fold the letter in half and pop it in the envelope.", "手紙を半分に折って封筒に入れておいて。")
+                 ], ipa: "/fəʊld/"),
+            make("easy peasy", "very easy (informal, playful)",
+                 "超簡単・ちょろい",
+                 useCases: ["簡単にできたと軽く言うとき", "子どもや友達を励ますとき"],
+                 examples: [
+                    ("Just press this button and you're done – easy peasy!", "このボタン押すだけで完了。超簡単！"),
+                    ("Was the exam hard? – No, easy peasy.", "試験難しかった？―いや、ちょろかったよ。")
+                 ], ipa: "/ˌiːzi ˈpiːzi/"),
         ]
     }
     private static var britishColloquial262: [Word] {
