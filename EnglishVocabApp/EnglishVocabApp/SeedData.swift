@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263
         ]
         return groups.flatMap { $0 }
     }
@@ -43542,6 +43542,115 @@ enum SeedData {
                     ("She's a real people person – she'd be great in sales.", "彼女は本当に人付き合いが上手だから、営業向きだよ。"),
                     ("I'm not much of a people person before my morning coffee.", "朝のコーヒーを飲むまでは、人と話す気分じゃないんだ。")
                  ], ipa: "/ə ˈpiːpl ˌpɜːsn/"),
+        ]
+    }
+    private static var britishColloquial263: [Word] {
+        [
+            make("fetch", "to go somewhere and bring something or someone back",
+                 "取ってくる・連れてくる",
+                 useCases: ["物を取りに行ってもらうとき", "人を迎えに行くとき"],
+                 examples: [
+                    ("Could you fetch my glasses from the kitchen?", "台所からメガネ取ってきてくれる？"),
+                    ("I'll fetch the kids from school at three.", "3時に子どもたちを学校に迎えに行くよ。")
+                 ], ipa: "/fetʃ/"),
+            make("shiver", "to shake slightly because you are cold or frightened",
+                 "（寒さ・恐怖で）震える",
+                 useCases: ["寒さで体が震えるとき", "ぞっとする話をするとき"],
+                 examples: [
+                    ("You're shivering – do you want my jacket?", "震えてるじゃん。僕の上着着る？"),
+                    ("Just thinking about it sends a shiver down my spine.", "考えただけで背筋がぞっとする。")
+                 ], ipa: "/ˈʃɪvə/"),
+            make("sneeze", "to suddenly force air out through your nose and mouth",
+                 "くしゃみ（をする）",
+                 useCases: ["花粉症や風邪の話をするとき", "くしゃみした人に声をかけるとき"],
+                 examples: [
+                    ("I can't stop sneezing – it must be the pollen.", "くしゃみが止まらない。花粉のせいだな。"),
+                    ("\"Atchoo!\" – \"Bless you!\"", "「ハクション！」「お大事に！」")
+                 ], ipa: "/sniːz/"),
+            make("thirsty", "feeling that you need to drink something",
+                 "のどが渇いた",
+                 useCases: ["飲み物が欲しいと伝えるとき", "暑い日や運動の後に"],
+                 examples: [
+                    ("I'm really thirsty – shall we grab a drink?", "めっちゃのど渇いた。何か飲みに行かない？"),
+                    ("Walking in this heat makes you so thirsty.", "この暑さの中を歩くとすごくのどが渇くね。")
+                 ], ipa: "/ˈθɜːsti/"),
+            make("rude", "not polite; showing a lack of respect",
+                 "失礼な・無礼な",
+                 useCases: ["人の態度に不満を言うとき", "自分の言動を謝るとき"],
+                 examples: [
+                    ("Sorry, I didn't mean to be rude.", "ごめん、失礼なことをするつもりじゃなかったんだ。"),
+                    ("It's a bit rude to check your phone during dinner.", "食事中にスマホ見るのはちょっと失礼だよ。")
+                 ], ipa: "/ruːd/"),
+            make("polite", "behaving in a way that shows respect and good manners",
+                 "礼儀正しい・丁寧な",
+                 useCases: ["人の感じの良さを褒めるとき", "建前で言うことを説明するとき"],
+                 examples: [
+                    ("Her kids are so polite – they always say thank you.", "彼女の子どもたちはすごく礼儀正しい。いつもありがとうって言うんだ。"),
+                    ("I only said yes to be polite.", "礼儀として「はい」と言っただけだよ。")
+                 ], ipa: "/pəˈlaɪt/"),
+            make("sarcastic", "saying the opposite of what you mean in order to mock or joke",
+                 "皮肉な・嫌みな",
+                 useCases: ["冗談・皮肉だったと説明するとき", "皮肉っぽい人について話すとき"],
+                 examples: [
+                    ("Relax, I was being sarcastic!", "落ち着いて、皮肉で言っただけだよ！"),
+                    ("He's got a really sarcastic sense of humour.", "彼のユーモアはかなり皮肉が効いてる。")
+                 ], ipa: "/sɑːˈkæstɪk/"),
+            make("careless", "not paying enough attention, so that you make mistakes",
+                 "不注意な・うっかりした",
+                 useCases: ["うっかりミスを認めるとき", "注意散漫な行動を指摘するとき"],
+                 examples: [
+                    ("That was careless of me – I'll fix it now.", "うっかりしてた。今すぐ直すね。"),
+                    ("I lost marks for careless mistakes again.", "またケアレスミスで点を落とした。")
+                 ], ipa: "/ˈkeələs/"),
+            make("wary", "careful because you think something might be dangerous or a problem",
+                 "用心している・警戒した",
+                 useCases: ["うまい話や怪しいものを警戒するとき", "初対面の相手に慎重になるとき"],
+                 examples: [
+                    ("I'm a bit wary of deals that sound too good to be true.", "話がうますぎる取引はちょっと警戒しちゃう。"),
+                    ("The dog was wary of me at first, but now we're friends.", "犬は最初は僕を警戒してたけど、今では仲良しだよ。")
+                 ], ipa: "/ˈweəri/"),
+            make("straightforward", "easy to do or understand; not complicated",
+                 "簡単な・わかりやすい",
+                 useCases: ["手続きや作業が簡単だと伝えるとき", "シンプルな説明を求めるとき"],
+                 examples: [
+                    ("Don't worry, the form's pretty straightforward.", "心配しないで、その書類はわりと簡単だから。"),
+                    ("It's not as straightforward as it looks.", "見た目ほど単純じゃないんだよ。")
+                 ], ipa: "/ˌstreɪtˈfɔːwəd/"),
+            make("upfront", "honest and open about something from the beginning",
+                 "率直な・最初から正直に",
+                 useCases: ["隠さず正直に伝えたいとき", "前もって条件を言うとき"],
+                 examples: [
+                    ("I'll be upfront with you – we can't afford it.", "正直に言うね。うちにはその余裕はないんだ。"),
+                    ("I appreciate you being so upfront about it.", "そのことを率直に話してくれてありがたいよ。")
+                 ], ipa: "/ˌʌpˈfrʌnt/"),
+            make("punctual", "arriving or doing something at the expected time; not late",
+                 "時間を守る・時間厳守の",
+                 useCases: ["時間に正確な人を褒めるとき", "電車やバスの正確さについて話すとき"],
+                 examples: [
+                    ("She's always punctual – if she's late, something's wrong.", "彼女はいつも時間通り。遅れてたら何かあったんだよ。"),
+                    ("The trains here are surprisingly punctual.", "ここの電車は意外と時間に正確だね。")
+                 ], ipa: "/ˈpʌŋktʃuəl/"),
+            make("muddy", "covered in or full of mud",
+                 "泥だらけの・ぬかるんだ",
+                 useCases: ["雨の後の道や服装について話すとき", "子どもやペットが汚れて帰ってきたとき"],
+                 examples: [
+                    ("Take your muddy boots off before you come in!", "入る前に泥だらけのブーツを脱いで！"),
+                    ("The path gets really muddy after it rains.", "雨のあとはその道がすごくぬかるむんだ。")
+                 ], ipa: "/ˈmʌdi/"),
+            make("lay the table", "to put plates, knives, forks, etc. on a table before a meal",
+                 "食卓の準備をする（イギリス英語）",
+                 useCases: ["食事の前に手伝いを頼むとき", "家の手伝いについて話すとき"],
+                 examples: [
+                    ("Can you lay the table? Dinner's nearly ready.", "テーブルの準備してくれる？もうすぐご飯できるから。"),
+                    ("The kids take turns laying the table.", "子どもたちが交代で食卓の準備をしてるんだ。")
+                 ], ipa: "/leɪ ðə ˈteɪbl/"),
+            make("later on", "at a time after now or after the time mentioned",
+                 "あとで・後ほど",
+                 useCases: ["その日のうちに後でまた会う・話すとき", "話の後半の展開を説明するとき"],
+                 examples: [
+                    ("I'll give you a ring later on.", "あとで電話するね。"),
+                    ("We had lunch, and later on we went for a walk by the river.", "お昼を食べて、そのあと川沿いを散歩したんだ。")
+                 ], ipa: "/ˈleɪtər ɒn/"),
         ]
     }
     private static var britishColloquial262: [Word] {
