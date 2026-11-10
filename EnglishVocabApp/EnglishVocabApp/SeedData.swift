@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272
         ]
         return groups.flatMap { $0 }
     }
@@ -44196,6 +44196,115 @@ enum SeedData {
                     ("I can't have a drink tonight – I'm on call.", "今夜は飲めないんだ、待機当番だから。"),
                     ("She's on call this weekend, so she might have to leave.", "彼女は今週末待機当番だから、途中で抜けるかも。")
                  ], ipa: "/ɒn kɔːl/"),
+        ]
+    }
+    private static var britishColloquial272: [Word] {
+        [
+            make("cross the line", "to behave in a way that is unacceptable or goes too far",
+                 "一線を越える・やりすぎる",
+                 useCases: ["冗談がやりすぎだったとき", "許せない言動を指摘するとき"],
+                 examples: [
+                    ("That joke really crossed the line.", "あの冗談は完全に一線を越えてたよ。"),
+                    ("I don't mind a bit of teasing, but that's crossing the line.", "ちょっとからかうのは平気だけど、それはやりすぎ。")
+                 ], ipa: "/krɒs ðə laɪn/"),
+            make("be loaded", "to be very rich",
+                 "大金持ちだ・お金がたんまりある",
+                 useCases: ["お金持ちの人について話すとき", "相手におごってもらう冗談のとき"],
+                 examples: [
+                    ("His parents are loaded, so he's never had to worry about rent.", "彼の親は大金持ちだから、家賃の心配なんてしたことないんだ。"),
+                    ("You get the drinks – you're loaded!", "飲み物はおごってよ、お金持ちなんだから！")
+                 ], ipa: "/bi ˈləʊdɪd/"),
+            make("well off", "having enough money to live comfortably",
+                 "裕福な・暮らし向きがいい",
+                 useCases: ["家庭の経済状況を話すとき", "生活の余裕について話すとき"],
+                 examples: [
+                    ("They're quite well off, but they don't show it.", "あの人たちはかなり裕福だけど、それを見せびらかさない。"),
+                    ("We weren't well off when I was a kid.", "子どもの頃、うちは裕福じゃなかった。")
+                 ], ipa: "/wel ɒf/"),
+            make("a bit merry", "slightly drunk in a happy, cheerful way",
+                 "ほろ酔いで上機嫌",
+                 useCases: ["お酒が少し回ったとき", "飲み会で楽しくなってきたとき"],
+                 examples: [
+                    ("After two glasses of wine I was already a bit merry.", "ワイン2杯でもうほろ酔いだった。"),
+                    ("Everyone got a bit merry at the Christmas party.", "クリスマスパーティーでみんなほろ酔いになってた。")
+                 ], ipa: "/ə bɪt ˈmeri/"),
+            make("teetotal", "never drinking alcohol",
+                 "お酒を一切飲まない・禁酒している",
+                 useCases: ["お酒を断るとき", "飲まない理由を説明するとき"],
+                 examples: [
+                    ("No thanks, I'm teetotal – I'll have a lemonade.", "ありがとう、でもお酒は飲まないんだ。レモネードにするね。"),
+                    ("He's been teetotal for about five years now.", "彼はもう5年くらいお酒を一切飲んでない。")
+                 ], ipa: "/tiːˈtəʊtl/"),
+            make("kick the habit", "to stop doing something harmful that you have done for a long time",
+                 "（悪い）習慣をやめる",
+                 useCases: ["禁煙などについて話すとき", "やめたい癖について話すとき"],
+                 examples: [
+                    ("He finally kicked the habit after twenty years of smoking.", "彼は20年吸ってたタバコをついにやめた。"),
+                    ("I check my phone constantly – I really need to kick the habit.", "スマホをずっと見ちゃうんだ。本気でこの癖やめないと。")
+                 ], ipa: "/kɪk ðə ˈhæbɪt/"),
+            make("make conversation", "to talk to someone just to be polite or avoid silence",
+                 "（気まずくならないよう）話を合わせる・会話をつなぐ",
+                 useCases: ["初対面の人と話すとき", "気まずい沈黙を避けるとき"],
+                 examples: [
+                    ("I was just making conversation – I didn't mean to pry.", "話をつなごうとしただけで、詮索するつもりはなかったんだ。"),
+                    ("It's hard to make conversation with someone who only answers yes or no.", "「はい」か「いいえ」しか言わない人と会話を続けるのは難しい。")
+                 ], ipa: "/meɪk ˌkɒnvəˈseɪʃn/"),
+            make("strike up a conversation", "to start talking to someone you don't know",
+                 "（知らない人と）話し始める",
+                 useCases: ["旅先や電車で知らない人と話したとき", "出会いのきっかけを話すとき"],
+                 examples: [
+                    ("I struck up a conversation with the guy next to me on the train.", "電車で隣の人と話し始めたんだ。"),
+                    ("That's how we met – she struck up a conversation in the queue.", "それが出会いだよ。列で彼女が話しかけてきたんだ。")
+                 ], ipa: "/straɪk ʌp ə ˌkɒnvəˈseɪʃn/"),
+            make("change the subject", "to start talking about something different, often to avoid a topic",
+                 "話題を変える",
+                 useCases: ["気まずい話を避けるとき", "相手が話をそらしたと指摘するとき"],
+                 examples: [
+                    ("Don't change the subject – where were you last night?", "話をそらさないで。昨日の夜どこにいたの？"),
+                    ("Anyway, let's change the subject. How's work?", "まあ、話題を変えよう。仕事はどう？")
+                 ], ipa: "/tʃeɪndʒ ðə ˈsʌbdʒɪkt/"),
+            make("go quiet", "to suddenly stop talking or stop being in contact",
+                 "急に黙る・連絡がなくなる",
+                 useCases: ["相手が急に黙り込んだとき", "連絡が途絶えたとき"],
+                 examples: [
+                    ("He went really quiet when I mentioned his ex.", "元カノの話をしたら、彼急に黙り込んだんだ。"),
+                    ("She's gone a bit quiet lately – I hope she's OK.", "最近彼女からあまり連絡がないんだ。大丈夫だといいけど。")
+                 ], ipa: "/ɡəʊ ˈkwaɪət/"),
+            make("mean well", "to have good intentions, even if the result is not helpful",
+                 "悪気はない・良かれと思っている",
+                 useCases: ["お節介な人をかばうとき", "相手の意図を理解してあげるとき"],
+                 examples: [
+                    ("My mum can be a bit much, but she means well.", "母さんはちょっとうるさいけど、良かれと思ってるんだよ。"),
+                    ("I know you meant well, but I'd rather sort it out myself.", "善意なのはわかってるけど、自分で何とかしたいんだ。")
+                 ], ipa: "/miːn wel/"),
+            make("a splitting headache", "a very bad headache",
+                 "割れるような頭痛",
+                 useCases: ["ひどい頭痛を訴えるとき", "早退や欠席の理由を言うとき"],
+                 examples: [
+                    ("I've got a splitting headache – I think I'll go home.", "頭が割れるように痛い。帰ろうかな。"),
+                    ("I woke up with a splitting headache this morning.", "今朝ひどい頭痛で目が覚めた。")
+                 ], ipa: "/ə ˈsplɪtɪŋ ˈhedeɪk/"),
+            make("have a lie-down", "to lie on a bed or sofa for a short rest",
+                 "ちょっと横になる",
+                 useCases: ["疲れや体調不良で休むとき", "相手に休むよう勧めるとき"],
+                 examples: [
+                    ("I'm not feeling great – I'm going to have a lie-down.", "ちょっと調子が悪いから、少し横になるね。"),
+                    ("Why don't you have a lie-down before dinner?", "夕飯の前にちょっと横になったら？")
+                 ], ipa: "/hæv ə ˈlaɪ daʊn/"),
+            make("keep yourself to yourself", "to be private and not get very involved with other people",
+                 "人付き合いを控えめにする・あまり人と関わらない",
+                 useCases: ["物静かな隣人について話すとき", "自分の性格を説明するとき"],
+                 examples: [
+                    ("Our neighbours are nice, but they keep themselves to themselves.", "うちの隣人はいい人だけど、あまり人と関わらないんだ。"),
+                    ("At work I tend to keep myself to myself.", "職場では、あまり深く人と関わらないようにしてる。")
+                 ], ipa: "/kiːp jɔːˈself tə jɔːˈself/"),
+            make("get on someone's good side", "to make someone like you or be pleased with you",
+                 "～に気に入られる・機嫌を取る",
+                 useCases: ["上司や先生に好かれたいとき", "誰かの機嫌を取る作戦を話すとき"],
+                 examples: [
+                    ("Bring her coffee in the morning – that's how you get on her good side.", "朝コーヒーを持っていくといいよ。それで彼女に気に入られるから。"),
+                    ("I'm trying to get on the landlord's good side before I ask about the repairs.", "修理の話をする前に、大家さんに気に入られようとしてるんだ。")
+                 ], ipa: "/ɡet ɒn ˈsʌmwʌnz ɡʊd saɪd/"),
         ]
     }
     private static var britishColloquial271: [Word] {
