@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265
         ]
         return groups.flatMap { $0 }
     }
@@ -43760,6 +43760,115 @@ enum SeedData {
                     ("Just press this button and you're done – easy peasy!", "このボタン押すだけで完了。超簡単！"),
                     ("Was the exam hard? – No, easy peasy.", "試験難しかった？―いや、ちょろかったよ。")
                  ], ipa: "/ˌiːzi ˈpiːzi/"),
+        ]
+    }
+    private static var britishColloquial265: [Word] {
+        [
+            make("knock over", "to accidentally hit something so that it falls over",
+                 "（うっかり）倒す・ひっくり返す",
+                 useCases: ["飲み物やコップを倒してしまったとき", "子どもやペットが物を倒したとき"],
+                 examples: [
+                    ("Sorry, I've just knocked over your drink!", "ごめん、今あなたの飲み物倒しちゃった！"),
+                    ("The dog knocked over the bin again.", "犬がまたゴミ箱をひっくり返した。")
+                 ], ipa: "/nɒk ˈəʊvə/"),
+            make("whose turn is it?", "used to ask which person should do something next",
+                 "誰の番？",
+                 useCases: ["ゲームで次の順番を確認するとき", "家事や支払いの当番を決めるとき"],
+                 examples: [
+                    ("Whose turn is it to do the washing-up?", "皿洗い、誰の番だっけ？"),
+                    ("Hang on, whose turn is it? I've lost track.", "待って、誰の番？わからなくなっちゃった。")
+                 ], ipa: "/huːz tɜːn ɪz ɪt/"),
+            make("tiptoe around", "to avoid talking about something or upsetting someone because the subject is sensitive",
+                 "（気を遣って）〜を避ける・腫れ物に触るように扱う",
+                 useCases: ["話しにくい話題を避けているとき", "相手に気を遣いすぎているとき"],
+                 examples: [
+                    ("Stop tiptoeing around the issue and just tell me.", "遠回しにしないで、はっきり言ってよ。"),
+                    ("We've all been tiptoeing around him since the break-up.", "彼が別れてから、みんな腫れ物に触るように接してる。")
+                 ], ipa: "/ˈtɪptəʊ əˈraʊnd/"),
+            make("skimp on", "to spend less money or effort on something than you should",
+                 "〜をケチる・手を抜く",
+                 useCases: ["お金や手間を惜しむことについて話すとき", "大事なものにはお金をかけるべきと言うとき"],
+                 examples: [
+                    ("Don't skimp on a good mattress – you spend a third of your life in bed.", "いいマットレスはケチらないで。人生の3分の1はベッドの上なんだから。"),
+                    ("They skimped on the cheese – this pizza is mostly bread.", "チーズをケチってるね。このピザほぼパンだよ。")
+                 ], ipa: "/skɪmp ɒn/"),
+            make("it takes all sorts", "people are all different, and you should accept that some behave strangely",
+                 "いろんな人がいるもんだ・人それぞれだね",
+                 useCases: ["変わった人や行動について軽くコメントするとき", "理解できない好みを受け流すとき"],
+                 examples: [
+                    ("He eats pizza with jam on it? Well, it takes all sorts.", "ピザにジャムつけて食べるの？まあ、いろんな人がいるね。"),
+                    ("She swims in the sea in January – it takes all sorts!", "彼女1月に海で泳ぐんだって。人それぞれだね！")
+                 ], ipa: "/ɪt teɪks ɔːl sɔːts/"),
+            make("my leg's gone to sleep", "my leg feels numb because I have been sitting in one position too long",
+                 "足がしびれた",
+                 useCases: ["正座や長時間座った後", "立ち上がれないときの言い訳に"],
+                 examples: [
+                    ("Give me a sec – my leg's gone to sleep.", "ちょっと待って、足しびれちゃった。"),
+                    ("I sat on the floor for so long that my foot's gone to sleep.", "床に長く座りすぎて足がしびれた。")
+                 ], ipa: "/maɪ legz gɒn tə sliːp/"),
+            make("get a splinter", "to have a small sharp piece of wood or glass stuck in your skin",
+                 "トゲが刺さる",
+                 useCases: ["木の家具や柵に触ってトゲが刺さったとき", "子どもの怪我について話すとき"],
+                 examples: [
+                    ("Ouch, I've got a splinter from that old bench.", "痛っ、あの古いベンチでトゲが刺さった。"),
+                    ("Have you got any tweezers? I need to get this splinter out.", "ピンセットある？このトゲ抜きたいんだ。")
+                 ], ipa: "/get ə ˈsplɪntə/"),
+            make("swollen", "larger than usual, often because of an injury or illness",
+                 "腫れた・むくんだ",
+                 useCases: ["怪我や虫刺されで腫れたとき", "足のむくみについて話すとき"],
+                 examples: [
+                    ("My ankle's really swollen – I think I should get it looked at.", "足首がすごく腫れてる。診てもらったほうがいいかも。"),
+                    ("My feet always get swollen on long flights.", "長時間のフライトだといつも足がむくむ。")
+                 ], ipa: "/ˈswəʊlən/"),
+            make("have a cough", "to have an illness that makes you cough a lot",
+                 "咳が出る・咳をしている",
+                 useCases: ["体調不良を伝えるとき", "風邪の症状を説明するとき"],
+                 examples: [
+                    ("I've had a cough for about a week now.", "もう1週間くらい咳が出てるんだ。"),
+                    ("Sorry, I've got a bit of a cough – I'll sit over here.", "ごめん、ちょっと咳が出てるからこっちに座るね。")
+                 ], ipa: "/hæv ə kɒf/"),
+            make("feel faint", "to feel as if you might lose consciousness",
+                 "気が遠くなる・クラクラする",
+                 useCases: ["暑さや空腹で倒れそうなとき", "血を見て気分が悪くなったとき"],
+                 examples: [
+                    ("I need to sit down – I feel a bit faint.", "座らせて。ちょっとクラクラする。"),
+                    ("She felt faint in the queue because it was so hot.", "暑すぎて、彼女は列に並んでいる間に気が遠くなった。")
+                 ], ipa: "/fiːl feɪnt/"),
+            make("smelly", "having an unpleasant smell",
+                 "臭い",
+                 useCases: ["臭いものについて文句を言うとき", "洗濯物や靴の臭いについて話すとき"],
+                 examples: [
+                    ("Get your smelly trainers out of the living room!", "臭いスニーカー、リビングから出して！"),
+                    ("This cheese is really smelly, but it tastes amazing.", "このチーズすごく臭いけど、味は最高。")
+                 ], ipa: "/ˈsmeli/"),
+            make("greedy", "wanting more food, money, etc. than you need",
+                 "欲張りな・食い意地の張った",
+                 useCases: ["食べ過ぎを冗談で言うとき", "欲張りな人について話すとき"],
+                 examples: [
+                    ("Don't be greedy – leave some for everyone else.", "欲張らないで。みんなの分も残しておいてよ。"),
+                    ("I know it's greedy, but I'm having a third slice.", "欲張りなのはわかってるけど、3切れ目食べちゃう。")
+                 ], ipa: "/ˈgriːdi/"),
+            make("pushy", "trying too hard to get what you want, in an annoying way",
+                 "押しが強い・強引な",
+                 useCases: ["しつこい店員や営業について話すとき", "自分が強引すぎないか気にするとき"],
+                 examples: [
+                    ("The salesman was really pushy, so we just left.", "店員がすごく押しが強かったから、帰ってきた。"),
+                    ("I don't want to be pushy, but have you had a chance to look at it?", "急かすつもりはないんだけど、見てもらえた？")
+                 ], ipa: "/ˈpʊʃi/"),
+            make("come out in a rash", "to suddenly get red spots on your skin, often because of an allergy",
+                 "発疹が出る・かぶれる",
+                 useCases: ["アレルギー反応について話すとき", "肌のトラブルを説明するとき"],
+                 examples: [
+                    ("I came out in a rash after using that new soap.", "あの新しい石鹸を使ったら発疹が出た。"),
+                    ("If I eat strawberries, I come out in a rash.", "イチゴを食べるとじんましんが出るんだ。")
+                 ], ipa: "/kʌm aʊt ɪn ə ræʃ/"),
+            make("spoilsport", "someone who stops other people from having fun",
+                 "人の楽しみに水を差す人・ノリが悪い人",
+                 useCases: ["誘いを断る人を冗談でからかうとき", "楽しみを止められたとき"],
+                 examples: [
+                    ("Oh, don't be a spoilsport – stay for one more!", "もう、ノリ悪いなあ。もう一杯だけいようよ！"),
+                    ("I hate to be a spoilsport, but we really need to go.", "水を差したくないんだけど、本当にもう行かないと。")
+                 ], ipa: "/ˈspɔɪlspɔːt/"),
         ]
     }
     private static var britishColloquial262: [Word] {
