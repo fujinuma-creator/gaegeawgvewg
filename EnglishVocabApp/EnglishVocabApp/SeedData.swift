@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266
         ]
         return groups.flatMap { $0 }
     }
@@ -43869,6 +43869,115 @@ enum SeedData {
                     ("Oh, don't be a spoilsport – stay for one more!", "もう、ノリ悪いなあ。もう一杯だけいようよ！"),
                     ("I hate to be a spoilsport, but we really need to go.", "水を差したくないんだけど、本当にもう行かないと。")
                  ], ipa: "/ˈspɔɪlspɔːt/"),
+        ]
+    }
+    private static var britishColloquial266: [Word] {
+        [
+            make("throw a tantrum", "to suddenly behave in an angry, uncontrolled way, especially like a small child",
+                 "かんしゃくを起こす・駄々をこねる",
+                 useCases: ["子どもが泣きわめいて駄々をこねるとき", "大人が子どもっぽく怒ったときの冗談に"],
+                 examples: [
+                    ("He threw a tantrum in the middle of the supermarket.", "あの子、スーパーのど真ん中で駄々こねてたよ。"),
+                    ("My boss threw a bit of a tantrum when the printer broke.", "プリンターが壊れたとき、上司がちょっとキレてた。")
+                 ], ipa: "/θrəʊ ə ˈtæntrəm/"),
+            make("puddle", "a small pool of water on the ground, especially after rain",
+                 "水たまり",
+                 useCases: ["雨上がりの道について話すとき", "靴が濡れた理由を説明するとき"],
+                 examples: [
+                    ("I stepped right in a puddle and now my socks are soaked.", "水たまりにがっつり足突っ込んで、靴下びしょびしょ。"),
+                    ("Mind the puddle!", "水たまり気をつけて！")
+                 ], ipa: "/ˈpʌdl/"),
+            make("grubby", "slightly dirty, often from being used or handled a lot",
+                 "薄汚れた・汚い",
+                 useCases: ["手や服が少し汚れているとき", "使い古した物について話すとき"],
+                 examples: [
+                    ("Wash your hands – they're all grubby.", "手を洗ってきて。汚れてるよ。"),
+                    ("This sofa's looking a bit grubby; we should clean it.", "このソファ、ちょっと薄汚れてきたね。掃除しなきゃ。")
+                 ], ipa: "/ˈgrʌbi/"),
+            make("soft drink", "a cold drink that does not contain alcohol, such as cola or lemonade",
+                 "ソフトドリンク・清涼飲料",
+                 useCases: ["お酒を飲まない人の注文で", "パーティーの飲み物を準備するとき"],
+                 examples: [
+                    ("I'm driving, so just a soft drink for me, thanks.", "運転するから、ソフトドリンクでお願い。"),
+                    ("Can you grab some soft drinks for the kids?", "子ども用にソフトドリンク買ってきてくれる？")
+                 ], ipa: "/sɒft drɪŋk/"),
+            make("squint", "to look at something with your eyes partly closed, to see better or because of bright light",
+                 "目を細めて見る",
+                 useCases: ["まぶしいとき", "小さい文字が見えにくいとき"],
+                 examples: [
+                    ("I had to squint to read the menu – I need new glasses.", "メニュー読むのに目を細めなきゃいけなかった。新しい眼鏡が要るな。"),
+                    ("Stop squinting and put your sunglasses on!", "目を細めてないでサングラスかけなよ！")
+                 ], ipa: "/skwɪnt/"),
+            make("nudge", "to push someone gently, usually with your elbow; to gently encourage someone",
+                 "（肘で）軽くつつく・それとなく促す",
+                 useCases: ["注意を引くために軽くつつくとき", "相手をやんわり後押しするとき"],
+                 examples: [
+                    ("She nudged me when he walked in.", "彼が入ってきたとき、彼女が肘でつついてきた。"),
+                    ("If he forgets, just give him a nudge.", "彼が忘れてたら、ちょっと声かけてあげて。")
+                 ], ipa: "/nʌdʒ/"),
+            make("slouch", "to sit or stand with your shoulders and head bent forward in a lazy way",
+                 "猫背になる・だらっと座る",
+                 useCases: ["姿勢の悪さを注意するとき", "ソファでだらだらしているとき"],
+                 examples: [
+                    ("Sit up straight – stop slouching!", "背筋伸ばして。猫背になってるよ！"),
+                    ("I spent the whole evening slouched on the sofa.", "夜はずっとソファでだらっとしてた。")
+                 ], ipa: "/slaʊtʃ/"),
+            make("bedtime", "the time when you usually go to bed",
+                 "寝る時間",
+                 useCases: ["子どもを寝かしつけるとき", "夜遅くなったことを伝えるとき"],
+                 examples: [
+                    ("Right, it's way past your bedtime – off you go.", "さあ、もう寝る時間とっくに過ぎてるよ。行っておいで。"),
+                    ("It's nearly bedtime for me – I've got an early start.", "もうそろそろ寝る時間だ。明日早いんだ。")
+                 ], ipa: "/ˈbedtaɪm/"),
+            make("have the hiccups", "to make repeated sudden sounds in your throat that you cannot control",
+                 "しゃっくりが出る",
+                 useCases: ["しゃっくりが止まらないとき", "しゃっくりの止め方を話すとき"],
+                 examples: [
+                    ("I've had the hiccups for ten minutes now!", "もう10分もしゃっくりが止まらない！"),
+                    ("Hold your breath – that usually gets rid of the hiccups.", "息止めてみて。だいたいそれでしゃっくり止まるよ。")
+                 ], ipa: "/hæv ðə ˈhɪkʌps/"),
+            make("clear my diary", "to cancel or move other plans so that you are free",
+                 "予定を空ける",
+                 useCases: ["大事な用事のために予定を空けるとき", "相手のために時間を作ると伝えるとき"],
+                 examples: [
+                    ("I've cleared my diary for Friday, so I'm all yours.", "金曜は予定空けといたから、まるまる付き合えるよ。"),
+                    ("Can you clear your diary next week? We need you for the launch.", "来週予定空けられる？ローンチで君が必要なんだ。")
+                 ], ipa: "/klɪə maɪ ˈdaɪəri/"),
+            make("nursery", "a place where young children are looked after while their parents work",
+                 "保育園",
+                 useCases: ["子どもの送り迎えについて話すとき", "子育ての話題で"],
+                 examples: [
+                    ("I need to pick my daughter up from nursery at five.", "5時に娘を保育園に迎えに行かなきゃ。"),
+                    ("He's just started nursery and he loves it.", "あの子、保育園に通い始めたばかりだけど気に入ってるよ。")
+                 ], ipa: "/ˈnɜːsəri/"),
+            make("flick through", "to look quickly through the pages of a book or magazine, or through TV channels",
+                 "パラパラめくる・（チャンネルを）次々変える",
+                 useCases: ["雑誌や本を流し読みするとき", "テレビのチャンネルを適当に変えるとき"],
+                 examples: [
+                    ("I was just flicking through a magazine while I waited.", "待ってる間、雑誌をパラパラ見てただけ。"),
+                    ("Stop flicking through the channels and pick something!", "チャンネルころころ変えてないで、何か決めてよ！")
+                 ], ipa: "/flɪk θruː/"),
+            make("fight off", "to stop an illness from developing, or to resist something",
+                 "（病気などを）撃退する・食い止める",
+                 useCases: ["風邪のひき始めのとき", "眠気や誘惑に耐えるとき"],
+                 examples: [
+                    ("I think I'm fighting off a cold.", "風邪ひきかけてるのを今食い止めてるところ。"),
+                    ("I was fighting off sleep all through the meeting.", "会議中ずっと眠気と戦ってた。")
+                 ], ipa: "/faɪt ɒf/"),
+            make("hangry", "bad-tempered or irritable because you are hungry",
+                 "お腹が空いてイライラした",
+                 useCases: ["空腹で機嫌が悪いとき", "相手の不機嫌を冗談で指摘するとき"],
+                 examples: [
+                    ("Sorry for snapping – I'm just a bit hangry.", "きつく言ってごめん。お腹空いてイライラしてただけ。"),
+                    ("Let's get some food before he gets hangry.", "彼がお腹空いて不機嫌になる前に何か食べよう。")
+                 ], ipa: "/ˈhæŋgri/"),
+            make("overtake", "to go past a vehicle or person that is moving in the same direction",
+                 "追い越す・追い抜く",
+                 useCases: ["運転中の話で", "競争やランキングで抜いたとき"],
+                 examples: [
+                    ("Don't overtake on a bend – it's really dangerous.", "カーブで追い越しちゃダメ。本当に危ないから。"),
+                    ("A lorry overtook us doing about ninety.", "トラックが時速90マイルくらいで追い越していった。")
+                 ], ipa: "/ˌəʊvəˈteɪk/"),
         ]
     }
     private static var britishColloquial262: [Word] {
