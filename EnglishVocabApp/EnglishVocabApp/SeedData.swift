@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279
         ]
         return groups.flatMap { $0 }
     }
@@ -44741,6 +44741,115 @@ enum SeedData {
                     ("I do most of my shopping online these days.", "最近は買い物のほとんどをネットで済ませてるよ。"),
                     ("Online shopping is dangerous – it's far too easy.", "ネットショッピングは危険だよ、簡単すぎて。")
                  ], ipa: "/ˌɒnlaɪn ˈʃɒpɪŋ/"),
+        ]
+    }
+    private static var britishColloquial279: [Word] {
+        [
+            make("a sequel", "a film, book or game that continues the story of an earlier one",
+                 "続編",
+                 useCases: ["映画やドラマ、ゲームの続きの話をするとき", "続編の出来を比べるとき"],
+                 examples: [
+                    ("Have you heard they're making a sequel?", "続編が作られるって聞いた？"),
+                    ("The sequel wasn't as good as the first one.", "続編は1作目ほど良くなかったな。")
+                 ], ipa: "/ə ˈsiːkwəl/"),
+            make("chase up", "to contact someone again to remind them to do something or to check on progress",
+                 "（返事や対応を）催促する・確認の連絡をする",
+                 useCases: ["返事が来ないメールや依頼をせっつくとき", "注文や手続きの進み具合を確認するとき"],
+                 examples: [
+                    ("I'll chase them up if I don't hear back by Friday.", "金曜までに返事がなかったら催促しておくね。"),
+                    ("Can you chase up that invoice for me?", "あの請求書の件、確認の連絡してもらえる？")
+                 ], ipa: "/tʃeɪs ʌp/"),
+            make("correct me if I'm wrong", "a polite way of introducing something you think is true but aren't completely sure about",
+                 "間違ってたら言ってほしいんだけど",
+                 useCases: ["自信がないことを控えめに確認するとき", "相手の発言にやんわり異議を唱えるとき"],
+                 examples: [
+                    ("Correct me if I'm wrong, but didn't we agree on Tuesday?", "間違ってたらごめんだけど、火曜日って決めてなかったっけ？"),
+                    ("Correct me if I'm wrong, but you've been here before, right?", "違ったら言ってね、前にもここ来たことあるよね？")
+                 ], ipa: "/kəˈrekt mi ɪf aɪm rɒŋ/"),
+            make("don't quote me on that", "said when you are not completely sure that what you are saying is correct",
+                 "確かじゃないけどね・当てにしないでね",
+                 useCases: ["うろ覚えの情報を伝えるとき", "あとで責任を問われたくないとき"],
+                 examples: [
+                    ("I think it opens at nine, but don't quote me on that.", "9時開店だと思うけど、確かじゃないからね。"),
+                    ("It's about two hours away – don't quote me on that, though.", "2時間くらいかな、当てにしないでほしいけど。")
+                 ], ipa: "/dəʊnt kwəʊt mi ɒn ðæt/"),
+            make("if I remember rightly", "used when you think something is true but your memory might not be perfect",
+                 "私の記憶が正しければ・確か",
+                 useCases: ["昔の出来事を思い出しながら話すとき", "記憶があいまいなことを伝えるとき"],
+                 examples: [
+                    ("If I remember rightly, you two met at uni.", "確か、二人は大学で知り合ったんだよね。"),
+                    ("It was raining that day, if I remember rightly.", "記憶が正しければ、あの日は雨だったよ。")
+                 ], ipa: "/ɪf aɪ rɪˈmembə ˈraɪtli/"),
+            make("be in debt", "to owe money to someone, such as a bank or credit card company",
+                 "借金がある・お金を借りている",
+                 useCases: ["ローンやカードの支払いが残っている話", "お金の悩みを打ち明けるとき"],
+                 examples: [
+                    ("Loads of students are in debt by the time they graduate.", "卒業する頃には借金を抱えてる学生がたくさんいるよ。"),
+                    ("I hate being in debt, so I always pay my card off.", "借金があるのが嫌だから、カードはいつも全額払ってる。")
+                 ], ipa: "/biː ɪn det/"),
+            make("a gift card", "a card loaded with money that can be spent in a particular shop or online",
+                 "ギフトカード・商品券",
+                 useCases: ["プレゼントに迷ったとき", "もらった商品券の使い道を話すとき"],
+                 examples: [
+                    ("I didn't know what to get him, so I got him a gift card.", "何をあげればいいか分からなくて、ギフトカードにしたよ。"),
+                    ("Can I pay with a gift card?", "ギフトカードで払えますか？")
+                 ], ipa: "/ə ɡɪft kɑːd/"),
+            make("free delivery", "when a shop sends your order to you without charging for it",
+                 "送料無料・配送無料",
+                 useCases: ["ネットで買い物するとき", "お得な条件を伝えるとき"],
+                 examples: [
+                    ("You get free delivery if you spend over thirty pounds.", "30ポンド以上買うと送料無料になるよ。"),
+                    ("I only order from there because of the free delivery.", "送料無料だからあそこでしか頼まないんだ。")
+                 ], ipa: "/friː dɪˈlɪvəri/"),
+            make("a charity shop", "a shop that sells donated second-hand goods to raise money for a charity",
+                 "チャリティーショップ（寄付品を売るリサイクル店）",
+                 useCases: ["古着や中古品を安く買った話", "いらなくなった物を寄付するとき"],
+                 examples: [
+                    ("I found this jacket in a charity shop for a fiver.", "このジャケット、チャリティーショップで5ポンドで見つけたんだ。"),
+                    ("I'm taking a bag of old clothes to the charity shop.", "古着をひと袋チャリティーショップに持っていくところ。")
+                 ], ipa: "/ə ˈtʃærəti ʃɒp/"),
+            make("a board game", "a game played by moving pieces on a board, often with dice or cards",
+                 "ボードゲーム",
+                 useCases: ["家で過ごす休日の話", "友達や家族と遊ぶ計画を立てるとき"],
+                 examples: [
+                    ("We stayed in and played board games all evening.", "家にいて一晩中ボードゲームしてたよ。"),
+                    ("Our family gets really competitive over board games.", "うちの家族、ボードゲームになるとめちゃくちゃ本気になるんだ。")
+                 ], ipa: "/ə ˈbɔːd ɡeɪm/"),
+            make("get your nails done", "to have your nails painted or shaped by someone at a salon",
+                 "ネイルをしてもらう",
+                 useCases: ["ネイルサロンに行く予定を話すとき", "誰かのネイルを褒めるとき"],
+                 examples: [
+                    ("I'm getting my nails done before the wedding.", "結婚式の前にネイルしてもらうんだ。"),
+                    ("Oh, you've had your nails done – they look lovely!", "あ、ネイルしたんだ、すごく素敵！")
+                 ], ipa: "/ɡet jɔː neɪlz dʌn/"),
+            make("skincare", "the products and routine you use to look after the skin on your face and body",
+                 "スキンケア",
+                 useCases: ["美容や肌の手入れの話", "おすすめの化粧品を聞くとき"],
+                 examples: [
+                    ("What's your skincare routine? Your skin looks amazing.", "スキンケアどうしてるの？肌がすごくきれい。"),
+                    ("I've started taking skincare more seriously.", "スキンケアをもっとちゃんとするようにしたんだ。")
+                 ], ipa: "/ˈskɪnkeə/"),
+            make("trending", "being talked about or shared by lots of people online right now",
+                 "（SNSなどで）話題になっている・トレンド入りしている",
+                 useCases: ["SNSで話題のニュースや話題を話すとき", "流行っているものを紹介するとき"],
+                 examples: [
+                    ("Have you seen what's trending on Twitter today?", "今日ツイッターで何がトレンドか見た？"),
+                    ("That song's been trending all week.", "あの曲、今週ずっと話題になってるよ。")
+                 ], ipa: "/ˈtrendɪŋ/"),
+            make("say cheese!", "what you say to people just before you take their photo, to make them smile",
+                 "はい、チーズ！",
+                 useCases: ["写真を撮るとき", "集合写真で笑顔を促すとき"],
+                 examples: [
+                    ("Right, everyone squeeze in – say cheese!", "じゃあみんな詰めて、はい、チーズ！"),
+                    ("Say cheese! Oh, you blinked – one more.", "はい、チーズ！あ、目つぶった、もう1枚。")
+                 ], ipa: "/seɪ tʃiːz/"),
+            make("the season finale", "the last episode of a series of a TV show",
+                 "（ドラマの）シーズン最終話",
+                 useCases: ["ドラマの展開について話すとき", "見逃した回の話をするとき"],
+                 examples: [
+                    ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
+                    ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
+                 ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
         ]
     }
     private static var britishColloquial277: [Word] {
