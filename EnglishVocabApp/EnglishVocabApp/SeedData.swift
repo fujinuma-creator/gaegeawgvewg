@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274
         ]
         return groups.flatMap { $0 }
     }
@@ -44305,6 +44305,115 @@ enum SeedData {
                     ("Sorry if I'm mispronouncing your name – how do you say it?", "名前の発音が違ってたらごめんね。どう読むの？"),
                     ("Everyone mispronounces the name of that town.", "みんなあの町の名前を間違えて発音するんだよね。")
                  ], ipa: "/ˌmɪsprəˈnaʊns/"),
+        ]
+    }
+    private static var britishColloquial274: [Word] {
+        [
+            make("half asleep", "not fully awake; very tired and barely paying attention",
+                 "半分寝ている・寝ぼけている",
+                 useCases: ["朝起きたばかりのとき", "眠くて話をちゃんと聞けていないとき"],
+                 examples: [
+                    ("Sorry, I was half asleep when you called.", "ごめん、電話くれたとき半分寝てたんだ。"),
+                    ("I sat through the whole meeting half asleep.", "会議中ずっと寝ぼけたまま座ってたよ。")
+                 ], ipa: "/hɑːf əˈsliːp/"),
+            make("nice and early", "pleasantly or conveniently early (the pattern 'nice and + adjective' means 'pleasantly ~')",
+                 "早めに・余裕をもって（nice and＋形容詞で「ちょうどよく〜」）",
+                 useCases: ["余裕をもって到着したいとき", "nice and warm / quiet などと応用するとき"],
+                 examples: [
+                    ("Let's get there nice and early so we can grab a good seat.", "いい席を取れるように早めに行こう。"),
+                    ("The room's nice and warm now – come on in.", "部屋がちょうどいい暖かさになったよ。どうぞ入って。")
+                 ], ipa: "/naɪs ən ˈɜːli/"),
+            make("screen time", "the amount of time someone spends looking at a phone, computer or TV",
+                 "スクリーンタイム・画面を見ている時間",
+                 useCases: ["スマホの使いすぎについて話すとき", "子どものスマホ時間を制限するとき"],
+                 examples: [
+                    ("My screen time was nine hours yesterday – that's embarrassing.", "昨日のスクリーンタイム9時間だった。恥ずかしい。"),
+                    ("We try to limit the kids' screen time at weekends.", "週末は子どもの画面時間を制限するようにしてるんだ。")
+                 ], ipa: "/skriːn taɪm/"),
+            make("on the fly", "doing something quickly while other things are happening, without preparing in advance",
+                 "その場で・臨機応変に",
+                 useCases: ["準備なしで対応したとき", "予定を即興で変えるとき"],
+                 examples: [
+                    ("We didn't have a plan, so we just made it up on the fly.", "計画がなかったから、その場で考えたんだ。"),
+                    ("You'll have to make decisions on the fly in this job.", "この仕事ではその場で判断しなきゃいけないよ。")
+                 ], ipa: "/ɒn ðə flaɪ/"),
+            make("ease into", "to start something gradually and gently, instead of all at once",
+                 "（徐々に）慣らしていく・ゆっくり始める",
+                 useCases: ["新しい仕事や運動を少しずつ始めるとき", "休み明けに無理をしないとき"],
+                 examples: [
+                    ("Don't go mad at the gym – just ease into it.", "ジムで無理しないで、少しずつ慣らしていきなよ。"),
+                    ("I'm easing into the week with a few easy tasks.", "簡単な仕事から始めて、今週にゆっくり慣らしてるところ。")
+                 ], ipa: "/iːz ˈɪntuː/"),
+            make("write down", "to write something on paper so that you remember it",
+                 "書き留める・メモする",
+                 useCases: ["電話番号や住所をメモするとき", "忘れないように記録するとき"],
+                 examples: [
+                    ("Hang on, let me write that down.", "ちょっと待って、メモするから。"),
+                    ("Can you write down your address for me?", "住所を書いてもらえる？")
+                 ], ipa: "/raɪt daʊn/"),
+            make("livid", "extremely angry",
+                 "激怒している・カンカンに怒っている",
+                 useCases: ["誰かがひどく怒っていると伝えるとき", "自分の怒りを強調するとき"],
+                 examples: [
+                    ("Mum was livid when she saw the state of the kitchen.", "キッチンの惨状を見て母はカンカンだった。"),
+                    ("I was absolutely livid – they'd cancelled without telling me.", "本当に激怒したよ。何も言わずにキャンセルされたんだ。")
+                 ], ipa: "/ˈlɪvɪd/"),
+            make("jittery", "nervous and unable to relax, often shaky",
+                 "そわそわした・神経が高ぶった",
+                 useCases: ["緊張して落ち着かないとき", "コーヒーを飲みすぎたとき"],
+                 examples: [
+                    ("I always get jittery before a job interview.", "面接の前はいつもそわそわしちゃう。"),
+                    ("Three coffees and I'm all jittery now.", "コーヒー3杯飲んだら、手が震えて落ち着かない。")
+                 ], ipa: "/ˈdʒɪtəri/"),
+            make("be good with", "to be skilled at dealing with or handling people or things",
+                 "〜の扱いがうまい・〜と接するのが上手",
+                 useCases: ["子どもや人の扱いが上手な人をほめるとき", "数字や機械に強いと言うとき"],
+                 examples: [
+                    ("She's really good with kids – they love her.", "彼女は子どもの扱いが本当に上手。みんな彼女が大好きなんだ。"),
+                    ("I'm not very good with numbers, so you do the maths.", "数字は苦手だから、計算はお願い。")
+                 ], ipa: "/bi ɡʊd wɪð/"),
+            make("that's nonsense", "said when you strongly disagree with something and think it is untrue or silly",
+                 "そんなのばかげてる・そんなことないよ",
+                 useCases: ["相手の自虐を否定するとき", "根拠のない話を否定するとき"],
+                 examples: [
+                    ("You think you're boring? That's nonsense!", "自分がつまらない人間だって？そんなことないよ！"),
+                    ("That's nonsense – nobody said you had to pay.", "ばかげてるよ。誰も君が払えなんて言ってない。")
+                 ], ipa: "/ðæts ˈnɒnsəns/"),
+            make("scatterbrained", "often forgetting things and not organised or focused",
+                 "うっかりした・忘れっぽくて落ち着きがない",
+                 useCases: ["自分の忘れっぽさを笑うとき", "ドジな友達について話すとき"],
+                 examples: [
+                    ("I'm so scatterbrained today – I've lost my keys twice.", "今日はほんとうっかりしてる。鍵を2回もなくしたよ。"),
+                    ("He's a bit scatterbrained, but he means well.", "彼はちょっとそそっかしいけど、悪気はないんだ。")
+                 ], ipa: "/ˈskætəbreɪnd/"),
+            make("run around like a headless chicken", "to rush about in a panicked, disorganised way without achieving much",
+                 "（慌てて）バタバタ走り回る",
+                 useCases: ["忙しくて慌ただしい一日を話すとき", "パニック状態の様子を表すとき"],
+                 examples: [
+                    ("I've been running around like a headless chicken all morning.", "朝からずっとバタバタ走り回ってるよ。"),
+                    ("Stop running around like a headless chicken and make a list.", "慌ててバタバタしないで、リストを作りなよ。")
+                 ], ipa: "/rʌn əˈraʊnd laɪk ə ˈhedləs ˈtʃɪkɪn/"),
+            make("on autopilot", "doing something without thinking about it, out of habit or tiredness",
+                 "無意識に・惰性で",
+                 useCases: ["習慣で体が勝手に動いたとき", "疲れてぼーっと作業しているとき"],
+                 examples: [
+                    ("I drove home on autopilot – I don't remember the journey at all.", "無意識に運転して帰ってきた。道中の記憶がまったくないよ。"),
+                    ("By Friday I'm just working on autopilot.", "金曜になると、もう惰性で働いてるだけ。")
+                 ], ipa: "/ɒn ˈɔːtəʊpaɪlət/"),
+            make("lie awake", "to stay in bed unable to sleep, often because you are worried",
+                 "眠れずに横になっている・寝付けない",
+                 useCases: ["心配で眠れなかったとき", "不眠について話すとき"],
+                 examples: [
+                    ("I lay awake half the night worrying about the exam.", "試験が心配で夜中まで眠れなかった。"),
+                    ("Do you ever lie awake thinking about stupid things you said?", "自分が言ったバカなことを思い出して眠れなくなること、ない？")
+                 ], ipa: "/laɪ əˈweɪk/"),
+            make("self-care", "things you do to look after your own physical and mental health",
+                 "セルフケア・自分を労わること",
+                 useCases: ["自分のための休息について話すとき", "ストレス解消法を話すとき"],
+                 examples: [
+                    ("A hot bath and an early night – that's my idea of self-care.", "熱いお風呂と早寝。それが私なりのセルフケア。"),
+                    ("You've been working non-stop. Make some time for self-care.", "ずっと働きっぱなしだよ。自分を労わる時間も作って。")
+                 ], ipa: "/ˌself ˈkeə/"),
         ]
     }
     private static var britishColloquial272: [Word] {
