@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291
         ]
         return groups.flatMap { $0 }
     }
@@ -45613,6 +45613,115 @@ enum SeedData {
                     ("We've got the builders in, so the house is a total mess.", "今工事の業者が入ってて、家がめちゃくちゃなんだ。"),
                     ("Sorry about the noise – the neighbours have the builders in.", "うるさくてごめんね。お隣が工事中なんだ。")
                  ], ipa: "/hæv ðə ˈbɪldəz ˈɪn/"),
+        ]
+    }
+    private static var britishColloquial291: [Word] {
+        [
+            make("it's lovely out", "(British, informal) the weather outside is really nice",
+                 "外はすごくいい天気だ",
+                 useCases: ["天気がいい日に外出を誘うとき", "窓の外を見て天気の話をするとき"],
+                 examples: [
+                    ("It's lovely out – shall we eat in the garden?", "外すごくいい天気だね。庭で食べようか？"),
+                    ("Get outside while you can, it's lovely out today.", "今のうちに外に出なよ、今日はすごくいい天気だから。")
+                 ], ipa: "/ɪts ˈlʌvli ˈaʊt/"),
+            make("you'll love it", "said when you are sure someone will really enjoy something",
+                 "絶対気に入るよ",
+                 useCases: ["おすすめの店や映画を勧めるとき", "プレゼントを渡すとき"],
+                 examples: [
+                    ("You have to try that Italian place – you'll love it.", "あのイタリアンの店、行ってみなよ。絶対気に入るから。"),
+                    ("Open it! I think you'll love it.", "開けてみて！きっと気に入ると思うよ。")
+                 ], ipa: "/juːl ˈlʌv ɪt/"),
+            make("it grows on you", "you start to like it more over time, even if you didn't at first",
+                 "だんだん好きになる・クセになる",
+                 useCases: ["最初は微妙だったものを勧めるとき", "音楽や食べ物の好みを話すとき"],
+                 examples: [
+                    ("I didn't like the song at first, but it grows on you.", "最初はその曲好きじゃなかったけど、だんだん好きになるんだよね。"),
+                    ("The flat's a bit small, but it grows on you.", "そのアパートちょっと狭いけど、住んでるうちに好きになるよ。")
+                 ], ipa: "/ɪt ˈɡrəʊz ɒn juː/"),
+            make("I was just about to say", "used when someone says exactly what you were going to say",
+                 "今ちょうど言おうと思ってた",
+                 useCases: ["相手と同じことを考えていたとき", "相手の発言に強く同意するとき"],
+                 examples: [
+                    ("\"We should leave soon.\" \"I was just about to say that!\"", "「そろそろ出たほうがいいね」「今ちょうどそれ言おうと思ってた！」"),
+                    ("I was just about to say the same thing.", "ちょうど同じこと言おうとしてたよ。")
+                 ], ipa: "/aɪ wəz dʒʌst əˈbaʊt tə ˈseɪ/"),
+            make("a few doors down", "very close by on the same street, only a few houses away",
+                 "数軒先に・すぐ近所に",
+                 useCases: ["近所の人や店の場所を説明するとき", "引っ越し先の話をするとき"],
+                 examples: [
+                    ("My best friend lives just a few doors down.", "親友がほんの数軒先に住んでるんだ。"),
+                    ("There's a little bakery a few doors down from us.", "うちの数軒先に小さなパン屋があるよ。")
+                 ], ipa: "/ə ˈfjuː ˈdɔːz ˈdaʊn/"),
+            make("down the pub", "(British, informal) at or to the local pub",
+                 "パブで・パブに（飲みに）",
+                 useCases: ["仕事終わりの飲みに誘うとき", "誰かの居場所を話すとき"],
+                 examples: [
+                    ("A few of us are going down the pub later – coming?", "後で何人かでパブに行くんだけど、来る？"),
+                    ("He's probably down the pub watching the match.", "あいつたぶんパブで試合見てるよ。")
+                 ], ipa: "/ˈdaʊn ðə ˈpʌb/"),
+            make("could you pass me ...?", "a polite, everyday way to ask someone to hand you something nearby",
+                 "〜を取ってもらえる？",
+                 useCases: ["食事中に調味料を取ってほしいとき", "手の届かない物を頼むとき"],
+                 examples: [
+                    ("Could you pass me the salt, please?", "塩を取ってもらえる？"),
+                    ("Could you pass me that pen? Cheers.", "そのペン取ってくれる？ありがとう。")
+                 ], ipa: "/kʊd juː ˈpɑːs miː/"),
+            make("just the one", "(British, informal) only one, especially only one drink",
+                 "一杯だけ・一つだけ",
+                 useCases: ["飲みに誘われて軽く付き合うとき", "数を控えめにするとき"],
+                 examples: [
+                    ("Okay, I'll come – but just the one, I've got work tomorrow.", "わかった、行くよ。でも一杯だけね、明日仕事だから。"),
+                    ("\"How many kids have they got?\" \"Just the one.\"", "「あそこ子供何人いるの？」「一人だけだよ」")
+                 ], ipa: "/dʒʌst ðə ˈwʌn/"),
+            make("come and join us", "a friendly invitation for someone to sit with you or take part",
+                 "こっちおいでよ・一緒にどう？",
+                 useCases: ["知り合いを自分たちのテーブルに誘うとき", "活動に参加を促すとき"],
+                 examples: [
+                    ("We're in the corner – come and join us!", "私たち隅の席にいるよ。こっちおいで！"),
+                    ("If you're free on Saturday, come and join us for lunch.", "土曜空いてたら、一緒にランチしようよ。")
+                 ], ipa: "/ˈkʌm ənd ˈdʒɔɪn ʌs/"),
+            make("bring someone along", "to bring a friend or partner with you to an event",
+                 "（人を）連れてくる",
+                 useCases: ["パーティーに友達を連れてきていいか聞くとき", "相手に誰か誘っていいと伝えるとき"],
+                 examples: [
+                    ("Feel free to bring your partner along.", "パートナーも気軽に連れてきてね。"),
+                    ("Do you mind if I bring a friend along?", "友達連れて行ってもいい？")
+                 ], ipa: "/ˈbrɪŋ ˈsʌmwʌn əˈlɒŋ/"),
+            make("stick it in the fridge", "(informal) to put something in the fridge",
+                 "冷蔵庫に入れといて",
+                 useCases: ["料理や残り物の片付けを頼むとき", "飲み物を冷やすとき"],
+                 examples: [
+                    ("Just stick it in the fridge and we'll have it tomorrow.", "冷蔵庫に入れといて、明日食べよう。"),
+                    ("Stick the wine in the fridge for an hour.", "ワインを1時間冷蔵庫で冷やしといて。")
+                 ], ipa: "/ˈstɪk ɪt ɪn ðə ˈfrɪdʒ/"),
+            make("I'm not drinking tonight", "used to say you will not have any alcohol this evening",
+                 "今夜はお酒飲まないんだ",
+                 useCases: ["飲み会でお酒を断るとき", "車で来ていることを伝えるとき"],
+                 examples: [
+                    ("Just a lemonade for me – I'm not drinking tonight.", "私はレモネードで。今夜はお酒飲まないんだ。"),
+                    ("I'm not drinking tonight, I've got an early start.", "今夜は飲まないよ、明日朝早いから。")
+                 ], ipa: "/aɪm nɒt ˈdrɪŋkɪŋ təˈnaɪt/"),
+            make("the night is young", "it is still early in the evening, so there's plenty of time for more fun",
+                 "夜はまだこれからだ",
+                 useCases: ["早く帰ろうとする友達を引き止めるとき", "二次会に誘うとき"],
+                 examples: [
+                    ("Don't go yet – the night is young!", "まだ帰らないでよ、夜はこれからだよ！"),
+                    ("It's only ten, the night is young.", "まだ10時だよ、夜はまだこれからさ。")
+                 ], ipa: "/ðə ˈnaɪt ɪz ˈjʌŋ/"),
+            make("drink up", "to finish your drink, often because it's time to leave",
+                 "飲み干して・早く飲んじゃって",
+                 useCases: ["店を出る前に飲み物を飲み切るよう促すとき", "閉店時間に"],
+                 examples: [
+                    ("Drink up, the taxi's here.", "早く飲んじゃって、タクシー来たよ。"),
+                    ("They're closing soon, so drink up.", "もうすぐ閉店だから、飲み干しちゃって。")
+                 ], ipa: "/ˈdrɪŋk ˈʌp/"),
+            make("I'll sort you out", "(British, informal) I'll get you what you need or solve your problem",
+                 "なんとかしてあげるよ・用意しとくよ",
+                 useCases: ["友達の困りごとを引き受けるとき", "必要な物を用意してあげるとき"],
+                 examples: [
+                    ("Need a charger? Don't worry, I'll sort you out.", "充電器いる？心配しないで、用意してあげるよ。"),
+                    ("Leave it with me – I'll sort you out with a ticket.", "任せて、チケットなんとかしてあげるから。")
+                 ], ipa: "/aɪl ˈsɔːt juː ˈaʊt/"),
         ]
     }
     private static var britishColloquial283: [Word] {
