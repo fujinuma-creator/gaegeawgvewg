@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296
         ]
         return groups.flatMap { $0 }
     }
@@ -46158,6 +46158,115 @@ enum SeedData {
                     ("I won the bet – come on, pay up!", "賭けは私の勝ち、ほら払って！"),
                     ("The insurance company finally paid up after three months.", "3か月経って、ようやく保険会社が払ってくれたよ。")
                  ], ipa: "/ˈpeɪ ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial296: [Word] {
+        [
+            make("run through", "to explain, check or practise something quickly from start to finish",
+                 "ざっと説明する・一通り確認する・通しで練習する",
+                 useCases: ["手順や予定をざっと説明するとき", "本番前にリハーサルするとき"],
+                 examples: [
+                    ("Can you run through the plan for tomorrow one more time?", "明日の予定、もう一回ざっと説明してくれる？"),
+                    ("Let's run through the speech before everyone arrives.", "みんなが来る前にスピーチを通しで練習しよう。")
+                 ], ipa: "/ˈrʌn ˈθruː/"),
+            make("pick on", "to keep treating someone unfairly, criticising or teasing them",
+                 "〜をいじめる・〜ばかり責める・目の敵にする",
+                 useCases: ["誰かが標的にされているとき", "自分ばかり責められて不満なとき"],
+                 examples: [
+                    ("Stop picking on your little brother!", "弟をいじめるのはやめなさい！"),
+                    ("Why are you always picking on me? It wasn't my fault.", "なんでいつも私ばっかり責めるの？私のせいじゃないのに。")
+                 ], ipa: "/ˈpɪk ɒn/"),
+            make("shell out", "(informal) to pay money for something, especially more than you want to",
+                 "（大金を）払う・出す",
+                 useCases: ["高い出費をぼやくとき", "しぶしぶお金を出したと言うとき"],
+                 examples: [
+                    ("I had to shell out two hundred quid to fix the car.", "車の修理に200ポンドも払う羽目になったよ。"),
+                    ("I'm not shelling out that much for a concert ticket.", "コンサートのチケットにそんな大金は出さないよ。")
+                 ], ipa: "/ˈʃel ˈaʊt/"),
+            make("snap out of it", "(informal) to stop feeling sad, upset or confused and return to normal",
+                 "（落ち込みなどから）立ち直る・気持ちを切り替える",
+                 useCases: ["落ち込んでいる人を励ますとき", "ぼんやりから我に返るとき"],
+                 examples: [
+                    ("Come on, snap out of it – it's only one bad exam.", "ほら、元気出して。たった一回テストが悪かっただけだよ。"),
+                    ("I was in a bit of a mood, but I've snapped out of it now.", "ちょっと機嫌悪かったけど、もう切り替えたよ。")
+                 ], ipa: "/ˈsnæp ˈaʊt əv ɪt/"),
+            make("make way", "to move aside so that someone or something can pass; to be replaced by something new",
+                 "道を空ける・（新しいものに）場所を譲る",
+                 useCases: ["人に道を空けてもらうとき", "古いものが取り壊されて新しいものになるとき"],
+                 examples: [
+                    ("Could you make way, please? He's carrying something heavy.", "道を空けてもらえますか？重い物を運んでるので。"),
+                    ("The old cinema was knocked down to make way for flats.", "古い映画館はマンションを建てるために取り壊されたんだ。")
+                 ], ipa: "/ˈmeɪk ˈweɪ/"),
+            make("get out of", "to avoid doing something you should do or don't want to do",
+                 "〜をサボる・〜から逃れる・〜を免れる",
+                 useCases: ["嫌な用事を避けたいとき", "うまく逃れた・逃れられなかったと言うとき"],
+                 examples: [
+                    ("I tried to get out of the meeting, but my boss insisted.", "会議をサボろうとしたけど、上司に絶対出ろって言われた。"),
+                    ("You're not getting out of the washing-up that easily!", "そんな簡単に皿洗いから逃れられると思わないでよ！")
+                 ], ipa: "/ˈɡet ˈaʊt əv/"),
+            make("fall over", "to fall to the ground from a standing position",
+                 "転ぶ・倒れる",
+                 useCases: ["転んだことを話すとき", "物が倒れたとき"],
+                 examples: [
+                    ("I slipped on the ice and fell over in front of everyone.", "氷で滑って、みんなの前で転んじゃった。"),
+                    ("Careful, that vase is going to fall over.", "気をつけて、その花瓶倒れそうだよ。")
+                 ], ipa: "/ˈfɔːl ˈəʊvə/"),
+            make("get up to", "(informal) to do something, often something surprising or slightly naughty",
+                 "（何かを）する・やらかす",
+                 useCases: ["週末などに何をしたか聞くとき", "子どもがいたずらしていないか気にするとき"],
+                 examples: [
+                    ("What did you get up to at the weekend?", "週末は何してたの？"),
+                    ("The kids are very quiet – I wonder what they're getting up to.", "子どもたちがやけに静かだな。何やってるんだろう。")
+                 ], ipa: "/ˈɡet ˈʌp tuː/"),
+            make("blow up", "(informal) to suddenly become very angry; to explode",
+                 "急にキレる・爆発する",
+                 useCases: ["誰かが突然怒り出したとき", "小さなことで大騒ぎになったとき"],
+                 examples: [
+                    ("He just blew up at me for being five minutes late.", "5分遅れただけで彼にキレられたよ。"),
+                    ("Sorry I blew up earlier – I was really stressed.", "さっきはキレてごめん、すごくストレス溜まってて。")
+                 ], ipa: "/ˈbləʊ ˈʌp/"),
+            make("dish up", "to put food onto plates so it can be eaten",
+                 "（料理を）皿に盛る・よそう",
+                 useCases: ["料理ができて盛り付けるとき", "食事の準備ができたと伝えるとき"],
+                 examples: [
+                    ("Dinner's ready – I'm just dishing up now.", "夕飯できたよ、今よそってるところ。"),
+                    ("Can you grab the plates while I dish up?", "私がよそってる間にお皿出してくれる？")
+                 ], ipa: "/ˈdɪʃ ˈʌp/"),
+            make("press on", "to continue doing something in a determined way, despite difficulties",
+                 "（めげずに）先へ進む・続ける",
+                 useCases: ["疲れていても作業を続けるとき", "困難があっても予定通り進めるとき"],
+                 examples: [
+                    ("We're nearly there, so let's press on.", "もうすぐ着くから、このまま進もう。"),
+                    ("It started raining, but we pressed on with the walk.", "雨が降り出したけど、そのまま散歩を続けたんだ。")
+                 ], ipa: "/ˈpres ɒn/"),
+            make("in the run-up to", "in the period of time just before an important event",
+                 "〜の直前の時期に・〜に向けて",
+                 useCases: ["イベント前の忙しい時期を話すとき", "クリスマスや試験前の様子を言うとき"],
+                 examples: [
+                    ("The shops are always packed in the run-up to Christmas.", "クリスマス前はいつも店が混んでるよね。"),
+                    ("I barely slept in the run-up to my exams.", "試験前はほとんど寝てなかったよ。")
+                 ], ipa: "/ɪn ðə ˈrʌn ʌp tuː/"),
+            make("go back a long way", "(of people) to have known each other for a long time",
+                 "古い付き合いだ・昔からの仲だ",
+                 useCases: ["長年の友人を紹介するとき", "誰かとの関係の長さを話すとき"],
+                 examples: [
+                    ("Tom and I go back a long way – we were at school together.", "トムとは古い付き合いなんだ。学校が一緒だったから。"),
+                    ("We go back a long way, so I trust her completely.", "彼女とは昔からの仲だから、完全に信頼してるよ。")
+                 ], ipa: "/ˈɡəʊ ˈbæk ə ˈlɒŋ ˈweɪ/"),
+            make("soldier on", "to continue doing something even though it is difficult or you feel unwell",
+                 "（つらくても）頑張り続ける・踏ん張る",
+                 useCases: ["体調が悪くても働き続けるとき", "大変な状況でも諦めずに続けるとき"],
+                 examples: [
+                    ("I've got a cold, but I'm soldiering on.", "風邪ひいてるけど、何とか頑張ってるよ。"),
+                    ("You don't have to soldier on – go home and rest.", "無理して頑張らなくていいよ。帰って休んで。")
+                 ], ipa: "/ˈsəʊldʒər ɒn/"),
+            make("let yourself go", "to relax and enjoy yourself freely; also, to stop taking care of your appearance",
+                 "羽目を外す・思い切り楽しむ／身なりに構わなくなる",
+                 useCases: ["遠慮せず楽しむよう勧めるとき", "見た目に気を使わなくなったと言うとき"],
+                 examples: [
+                    ("It's a party – just let yourself go and dance!", "パーティーなんだから、羽目を外して踊りなよ！"),
+                    ("I've really let myself go since I started working from home.", "在宅勤務になってから、すっかり身なりに構わなくなっちゃった。")
+                 ], ipa: "/ˈlet jɔːˈself ˈɡəʊ/"),
         ]
     }
     private static var britishColloquial283: [Word] {
