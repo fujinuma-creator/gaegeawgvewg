@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281
         ]
         return groups.flatMap { $0 }
     }
@@ -44850,6 +44850,115 @@ enum SeedData {
                     ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
                     ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
                  ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
+        ]
+    }
+    private static var britishColloquial281: [Word] {
+        [
+            make("the big shop", "(British) the main weekly or monthly trip to the supermarket to buy most of your food",
+                 "まとめ買い・週一の大きな買い出し",
+                 useCases: ["週末の予定を話すとき", "スーパーでの買い出しについて話すとき"],
+                 examples: [
+                    ("We usually do the big shop on Saturday mornings.", "うちはだいたい土曜の朝にまとめ買いするんだ。"),
+                    ("I can't come – I'm in the middle of the big shop.", "今行けないや、ちょうどスーパーで買い出し中なんだ。")
+                 ], ipa: "/ðə bɪɡ ʃɒp/"),
+            make("on reflection", "after thinking about something again more carefully",
+                 "よく考えてみると・考え直してみると",
+                 useCases: ["考えが変わったことを伝えるとき", "一度言ったことを修正するとき"],
+                 examples: [
+                    ("On reflection, maybe I was a bit harsh with him.", "考えてみたら、彼にちょっときつく言いすぎたかも。"),
+                    ("On reflection, the earlier train might be better.", "よく考えると、早い電車のほうがいいかもね。")
+                 ], ipa: "/ɒn rɪˈflekʃn/"),
+            make("I have to say", "used to emphasise your honest opinion, often a compliment or a mild criticism",
+                 "正直言って・言わせてもらうと",
+                 useCases: ["素直な感想や褒め言葉を強調するとき", "やんわりと本音を言うとき"],
+                 examples: [
+                    ("I have to say, this is the best curry I've ever had.", "正直言って、今まで食べた中で一番美味しいカレーだよ。"),
+                    ("I have to say, I was a bit disappointed.", "言わせてもらうと、ちょっとがっかりしたな。")
+                 ], ipa: "/aɪ ˈhæv tə seɪ/"),
+            make("while I think of it", "used to mention something now before you forget it",
+                 "忘れないうちに言っておくと・ついでに",
+                 useCases: ["急に思い出した用件を伝えるとき", "話の途中で別件を挟むとき"],
+                 examples: [
+                    ("Oh, while I think of it – can you send me that photo?", "あ、忘れないうちに、あの写真送ってくれる？"),
+                    ("While I think of it, I still owe you a tenner.", "ついでに言うと、まだ10ポンド借りたままだったね。")
+                 ], ipa: "/waɪl aɪ ˈθɪŋk əv ɪt/"),
+            make("I'm partial to", "(British) I quite like something, especially a type of food or drink",
+                 "〜にはちょっと目がない・〜が結構好き",
+                 useCases: ["好きな食べ物や飲み物を控えめに言うとき", "好みを聞かれたとき"],
+                 examples: [
+                    ("I'm partial to a bit of chocolate after dinner.", "夕食後のチョコにはちょっと目がないんだ。"),
+                    ("She's quite partial to a glass of red.", "彼女、赤ワインが結構好きなんだよ。")
+                 ], ipa: "/aɪm ˈpɑːʃl tə/"),
+            make("I'm more of a ... person", "used to say which of two things you prefer or which type of person you are",
+                 "どちらかというと〜派",
+                 useCases: ["好みや性格を伝えるとき", "誘いをやんわり断るとき"],
+                 examples: [
+                    ("I'm more of a tea person, to be honest.", "正直、どちらかというと紅茶派なんだ。"),
+                    ("I'm more of a morning person than a night owl.", "夜型より朝型なんだよね。")
+                 ], ipa: "/aɪm ˈmɔːr əv ə ... ˈpɜːsn/"),
+            make("we've all been there", "used to show sympathy by saying everyone has had the same bad experience",
+                 "誰でも経験あるよ・みんな通る道だよ",
+                 useCases: ["失敗した人を励ますとき", "共感を示すとき"],
+                 examples: [
+                    ("Don't worry about it – we've all been there.", "気にしないで、誰でも経験あるって。"),
+                    ("Locked yourself out? We've all been there.", "締め出されちゃった？みんな一度はやるよね。")
+                 ], ipa: "/wiːv ɔːl biːn ðeə/"),
+            make("it happens to the best of us", "used to tell someone their mistake is normal and nothing to be embarrassed about",
+                 "誰にでもあることだよ",
+                 useCases: ["ミスした相手を慰めるとき", "自分の失敗を軽く流すとき"],
+                 examples: [
+                    ("You forgot her name? It happens to the best of us.", "名前忘れちゃった？誰にでもあることだよ。"),
+                    ("I missed my stop again – it happens to the best of us!", "また降りる駅を乗り過ごしたよ、誰にでもあるよね！")
+                 ], ipa: "/ɪt ˈhæpənz tə ðə best əv ʌs/"),
+            make("it'll all work out", "used to reassure someone that things will end well in the end",
+                 "なんとかなるよ・きっとうまくいくよ",
+                 useCases: ["不安がっている人を安心させるとき", "先行きが見えないとき"],
+                 examples: [
+                    ("Try not to stress – it'll all work out.", "あんまり気に病まないで、なんとかなるよ。"),
+                    ("I'm sure it'll all work out in the end.", "最終的にはきっとうまくいくって。")
+                 ], ipa: "/ɪtl ɔːl wɜːk aʊt/"),
+            make("let me know how it goes", "used to ask someone to tell you the result of something they are about to do",
+                 "どうだったか教えてね",
+                 useCases: ["面接や試験の前の人に声をかけるとき", "相手の予定に関心を示すとき"],
+                 examples: [
+                    ("Good luck tomorrow – let me know how it goes!", "明日頑張ってね、どうだったか教えて！"),
+                    ("Let me know how it goes with the new flat.", "新しい部屋の件、どうなったか教えてね。")
+                 ], ipa: "/let mi ˈnəʊ haʊ ɪt ɡəʊz/"),
+            make("I haven't stopped", "(British) used to say you have been extremely busy all day without a break",
+                 "ずっと動きっぱなしだよ・休む暇もない",
+                 useCases: ["忙しかった一日を話すとき", "疲れている理由を伝えるとき"],
+                 examples: [
+                    ("I haven't stopped since six this morning.", "朝6時からずっと動きっぱなしだよ。"),
+                    ("Sorry I didn't reply – I literally haven't stopped today.", "返信できなくてごめん、今日はほんとに休む暇もなかった。")
+                 ], ipa: "/aɪ ˈhævnt stɒpt/"),
+            make("I can't think straight", "used to say you are too tired, stressed or distracted to think clearly",
+                 "頭が回らない・まともに考えられない",
+                 useCases: ["疲れや眠気で判断できないとき", "決断を先延ばしにしたいとき"],
+                 examples: [
+                    ("I'm so tired I can't think straight.", "疲れすぎて頭が回らないよ。"),
+                    ("Can we talk tomorrow? I can't think straight right now.", "明日話せる？今はまともに考えられなくて。")
+                 ], ipa: "/aɪ kɑːnt θɪŋk streɪt/"),
+            make("tap your card", "to pay by touching your bank card or phone against the card machine",
+                 "カードをタッチして払う",
+                 useCases: ["お店やバスで支払うとき", "支払い方法を説明するとき"],
+                 examples: [
+                    ("You can just tap your card on the reader.", "読み取り機にカードをタッチするだけでいいですよ。"),
+                    ("I tapped my card but it didn't go through.", "カードをタッチしたのに決済が通らなかった。")
+                 ], ipa: "/tæp jə kɑːd/"),
+            make("cash back", "money you take out in cash when paying by card at a shop; also money returned to you after buying something",
+                 "キャッシュバック・（レジでの）現金引き出し",
+                 useCases: ["レジで現金を引き出したいとき", "購入特典について話すとき"],
+                 examples: [
+                    ("Would you like any cash back?", "現金の引き出しはご利用になりますか？"),
+                    ("This card gives you two percent cash back.", "このカード、2パーセントキャッシュバックがあるんだ。")
+                 ], ipa: "/ˈkæʃ bæk/"),
+            make("catch my breath", "to rest for a moment after running or being very busy so you can breathe normally again",
+                 "一息つく・呼吸を整える",
+                 useCases: ["走ったり急いだりした後", "忙しさの合間に少し休みたいとき"],
+                 examples: [
+                    ("Give me a minute to catch my breath.", "ちょっと一息つかせて。"),
+                    ("I haven't had a chance to catch my breath all week.", "今週はずっと一息つく暇もなかったよ。")
+                 ], ipa: "/kætʃ maɪ breθ/"),
         ]
     }
     private static var britishColloquial280: [Word] {
