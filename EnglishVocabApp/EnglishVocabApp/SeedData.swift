@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295
         ]
         return groups.flatMap { $0 }
     }
@@ -46049,6 +46049,115 @@ enum SeedData {
                     ("To start with, I hated living here, but now I love it.", "最初はここに住むのが嫌だったけど、今は大好き。"),
                     ("I'm not going. To start with, it's too expensive.", "行かないよ。まず第一に、高すぎるし。")
                  ], ipa: "/tə ˈstɑːt wɪð/"),
+        ]
+    }
+    private static var britishColloquial295: [Word] {
+        [
+            make("by chance", "without planning it; by luck or accident",
+                 "偶然・たまたま",
+                 useCases: ["予定外の出来事を話すとき", "たまたま会った・見つけたと言うとき"],
+                 examples: [
+                    ("I bumped into my old teacher by chance at the station.", "駅で偶然、昔の先生にばったり会ったよ。"),
+                    ("Are you free on Friday, by chance?", "ひょっとして金曜日って空いてたりする？")
+                 ], ipa: "/baɪ ˈtʃɑːns/"),
+            make("hand out", "to give something to each person in a group",
+                 "配る・配布する",
+                 useCases: ["資料や物をみんなに配るとき", "アドバイスなどを気前よく与えるとき"],
+                 examples: [
+                    ("Could you hand these out to everyone, please?", "これ、みんなに配ってもらえる？"),
+                    ("They were handing out free samples outside the shop.", "店の前で無料サンプルを配ってたよ。")
+                 ], ipa: "/ˈhænd ˈaʊt/"),
+            make("out of reach", "too far away or too difficult to get or achieve",
+                 "手の届かないところに・手が出ない",
+                 useCases: ["子どもの手の届かない場所に置くとき", "値段や目標が高すぎるとき"],
+                 examples: [
+                    ("Keep the medicine out of reach of the kids.", "薬は子どもの手の届かないところに置いてね。"),
+                    ("Buying a house in London feels completely out of reach.", "ロンドンで家を買うなんて全く手が届かない感じだよ。")
+                 ], ipa: "/ˈaʊt əv ˈriːtʃ/"),
+            make("turn to", "to go to someone for help, advice or comfort",
+                 "〜に頼る・〜を頼りにする",
+                 useCases: ["困ったときに相談する相手を話すとき", "支えになる人について話すとき"],
+                 examples: [
+                    ("I didn't know who else to turn to.", "他に頼れる人がいなかったんだ。"),
+                    ("You can always turn to me if you need anything.", "何かあったらいつでも私を頼ってね。")
+                 ], ipa: "/ˈtɜːn tuː/"),
+            make("stick up for", "to defend or support someone, especially when others criticise them",
+                 "〜をかばう・〜の味方をする",
+                 useCases: ["誰かを擁護するとき", "かばってくれた人に感謝するとき"],
+                 examples: [
+                    ("Thanks for sticking up for me in the meeting.", "会議でかばってくれてありがとう。"),
+                    ("You need to stick up for yourself a bit more.", "もう少し自分の意見を主張した方がいいよ。")
+                 ], ipa: "/ˈstɪk ˈʌp fɔː/"),
+            make("sit through", "to stay until the end of something long or boring",
+                 "（退屈なものを）最後まで我慢して見る・聞く",
+                 useCases: ["長い会議や映画を我慢したと言うとき", "退屈なものに付き合わされたとき"],
+                 examples: [
+                    ("I had to sit through a two-hour presentation.", "2時間のプレゼンを最後まで我慢して聞かなきゃいけなかったよ。"),
+                    ("I can't sit through another one of his films.", "あの人の映画をもう一本最後まで観るのは無理だな。")
+                 ], ipa: "/ˈsɪt ˈθruː/"),
+            make("think back", "to remember something that happened in the past",
+                 "振り返る・思い返す",
+                 useCases: ["昔のことを思い出すとき", "過去を振り返って気づいたことを話すとき"],
+                 examples: [
+                    ("When I think back, I was so naive at uni.", "思い返すと、大学の頃はほんと世間知らずだったな。"),
+                    ("Think back – when did you last have your keys?", "思い出してみて、最後に鍵を持ってたのはいつ？")
+                 ], ipa: "/ˈθɪŋk ˈbæk/"),
+            make("talk down to", "to speak to someone as if they were less intelligent than you",
+                 "〜を見下した話し方をする・子ども扱いする",
+                 useCases: ["上から目線の話し方に不満なとき", "相手を尊重して話すべきだと言うとき"],
+                 examples: [
+                    ("I hate it when he talks down to me.", "彼に上から目線で話されるのが本当に嫌なんだ。"),
+                    ("Don't talk down to the kids – they understand more than you think.", "子ども扱いしないで、思ってるより分かってるから。")
+                 ], ipa: "/ˈtɔːk ˈdaʊn tuː/"),
+            make("bring back", "to make you remember something from the past; to return something",
+                 "（記憶を）よみがえらせる・返す・持ち帰る",
+                 useCases: ["懐かしい気持ちになったとき", "借りた物を返すと言うとき"],
+                 examples: [
+                    ("This song brings back so many memories.", "この曲、いろんな思い出がよみがえるなあ。"),
+                    ("Can you bring back my charger tomorrow?", "明日、私の充電器返してくれる？")
+                 ], ipa: "/ˈbrɪŋ ˈbæk/"),
+            make("line up", "to stand in a line; to arrange or organise something in advance",
+                 "並ぶ・（予定などを）手配する",
+                 useCases: ["列に並ぶとき", "予定や人を前もって押さえてあるとき"],
+                 examples: [
+                    ("People were lining up outside the bakery at 7am.", "朝7時からパン屋の前に人が並んでたよ。"),
+                    ("We've got a few things lined up for the weekend.", "週末はいくつか予定を入れてあるんだ。")
+                 ], ipa: "/ˈlaɪn ˈʌp/"),
+            make("round up", "to increase a number to the nearest whole or convenient amount; to gather people or things",
+                 "（数字を）切り上げる・（人や物を）集める",
+                 useCases: ["支払いや計算をキリのいい数字にするとき", "人を呼び集めるとき"],
+                 examples: [
+                    ("It's £18.60 – let's just round it up to twenty.", "18ポンド60だから、20ポンドに切り上げちゃおう。"),
+                    ("Can you round up the kids? We're leaving.", "子どもたちを集めてくれる？もう出るよ。")
+                 ], ipa: "/ˈraʊnd ˈʌp/"),
+            make("fit in with", "to suit or match someone's plans, or to be similar to the people around you",
+                 "〜（の予定）に合わせる・〜になじむ",
+                 useCases: ["相手の都合に合わせると言うとき", "周りになじめるか話すとき"],
+                 examples: [
+                    ("I'm flexible – I'll fit in with whatever you're doing.", "私は融通がきくから、そっちの予定に合わせるよ。"),
+                    ("Does the new guy fit in with the rest of the team?", "新しい人、チームになじんでる？")
+                 ], ipa: "/ˈfɪt ˈɪn wɪð/"),
+            make("in short supply", "scarce; not enough available",
+                 "不足している・品薄で",
+                 useCases: ["物が足りないとき", "時間や忍耐が足りないと冗談っぽく言うとき"],
+                 examples: [
+                    ("Eggs are in short supply at the moment.", "今、卵が品薄なんだよね。"),
+                    ("Patience is in short supply in this house this morning!", "今朝のこの家では、みんな我慢が足りてないね！")
+                 ], ipa: "/ɪn ˈʃɔːt səˈplaɪ/"),
+            make("step down", "to leave an important job or position",
+                 "（役職を）辞める・退く",
+                 useCases: ["誰かが役職を降りたと話すとき", "責任ある立場を引くとき"],
+                 examples: [
+                    ("Our manager is stepping down at the end of the year.", "うちの部長、年末で退くんだって。"),
+                    ("She stepped down as captain to focus on her studies.", "彼女は勉強に集中するためにキャプテンを降りたんだ。")
+                 ], ipa: "/ˈstep ˈdaʊn/"),
+            make("pay up", "(informal) to pay money that you owe, often unwillingly",
+                 "（しぶしぶ）払う・ちゃんと払う",
+                 useCases: ["賭けや貸しの支払いを求めるとき", "しぶしぶお金を払ったと言うとき"],
+                 examples: [
+                    ("I won the bet – come on, pay up!", "賭けは私の勝ち、ほら払って！"),
+                    ("The insurance company finally paid up after three months.", "3か月経って、ようやく保険会社が払ってくれたよ。")
+                 ], ipa: "/ˈpeɪ ˈʌp/"),
         ]
     }
     private static var britishColloquial283: [Word] {
