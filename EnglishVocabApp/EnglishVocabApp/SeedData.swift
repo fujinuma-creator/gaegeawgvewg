@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286
         ]
         return groups.flatMap { $0 }
     }
@@ -45068,6 +45068,115 @@ enum SeedData {
                     ("I can't get enough of this series – I've watched three episodes tonight.", "このドラマにハマっちゃって、今夜もう3話見たよ。"),
                     ("The kids can't get enough of the beach.", "子どもたちはビーチが大好きで、いくらいても飽きないんだ。")
                  ], ipa: "/kɑːnt ɡet ɪˈnʌf əv/"),
+        ]
+    }
+    private static var britishColloquial286: [Word] {
+        [
+            make("do the honours", "(informal) to perform a small task or duty for the group, such as pouring drinks, cutting a cake or making a speech",
+                 "（みんなの代表で）役目を務める・お願いする",
+                 useCases: ["ケーキを切る・飲み物を注ぐ役を頼むとき", "乾杯や挨拶を任せるとき"],
+                 examples: [
+                    ("It's your birthday, so you can do the honours and cut the cake.", "君の誕生日だから、ケーキを切る役をお願いね。"),
+                    ("\"Shall I do the honours?\" he said, picking up the wine.", "「僕が注ごうか？」と彼はワインを手に取って言った。")
+                 ], ipa: "/duː ði ˈɒnəz/"),
+            make("it's all right for some", "(British, informal) used, often jokingly, to say that someone is lucky to have something you do not",
+                 "いいご身分だね・うらやましいなあ",
+                 useCases: ["人の幸運を冗談っぽくうらやむとき", "休みや贅沢を聞いたとき"],
+                 examples: [
+                    ("\"I'm off to Greece for two weeks.\" \"It's all right for some!\"", "「2週間ギリシャに行ってくるよ」「いいご身分だね！」"),
+                    ("Finishing at three on a Friday? It's all right for some.", "金曜は3時上がり？うらやましいなあ。")
+                 ], ipa: "/ɪts ˈɔːl ˈraɪt fə sʌm/"),
+            make("that settles it", "used to say that something has helped you make a final decision",
+                 "それで決まりだ・もう迷わない",
+                 useCases: ["決め手があって決断したとき", "迷いが吹っ切れたとき"],
+                 examples: [
+                    ("It's raining again? Right, that settles it – we're staying in.", "また雨？よし、これで決まり。今日は家にいよう。"),
+                    ("They've got a garden as well? That settles it, I'm taking the flat.", "庭もあるの？それで決まりだ、あの部屋にするよ。")
+                 ], ipa: "/ðæt ˈsetlz ɪt/"),
+            make("it's not up to me", "used to say that you do not have the power or right to decide something",
+                 "私が決めることじゃない・私には決められない",
+                 useCases: ["決定権がないことを伝えるとき", "判断を他の人に委ねるとき"],
+                 examples: [
+                    ("I'd love to give you the day off, but it's not up to me.", "休みをあげたいけど、私が決めることじゃないんだ。"),
+                    ("Ask your mum – it's not up to me.", "お母さんに聞いて。私には決められないよ。")
+                 ], ipa: "/ɪts ˈnɒt ʌp tə ˈmiː/"),
+            make("I could have sworn", "used to say that you were sure something was true, although it now seems you were wrong",
+                 "確かに〜だと思ったんだけど",
+                 useCases: ["記憶と違って驚いたとき", "物をなくして首をかしげるとき"],
+                 examples: [
+                    ("I could have sworn I left my keys on the table.", "鍵は絶対テーブルに置いたと思ったんだけど。"),
+                    ("Really? I could have sworn the shop was open on Sundays.", "本当？確か日曜も開いてると思ってたのに。")
+                 ], ipa: "/aɪ kəd əv ˈswɔːn/"),
+            make("it's not on", "(British, informal) used to say that someone's behaviour is not acceptable",
+                 "それはないよ・ありえない",
+                 useCases: ["マナー違反に不満を言うとき", "許せない行動を指摘するとき"],
+                 examples: [
+                    ("Playing music that loud at 2 a.m.? It's just not on.", "夜中の2時にあんな大音量で音楽？ありえないよ。"),
+                    ("Cancelling at the last minute again – that's not on.", "またドタキャン？それはないでしょ。")
+                 ], ipa: "/ɪts ˈnɒt ˈɒn/"),
+            make("it's not happening", "(informal) used to say firmly that something will not happen or that you will not allow it",
+                 "それは無理・ありえないから",
+                 useCases: ["きっぱり断るとき", "計画が実現しないと伝えるとき"],
+                 examples: [
+                    ("You want to borrow my car for a week? Sorry, it's not happening.", "1週間車を貸してほしい？ごめん、それは無理。"),
+                    ("We were hoping to go camping, but with this weather it's not happening.", "キャンプに行きたかったけど、この天気じゃ無理だね。")
+                 ], ipa: "/ɪts ˈnɒt ˈhæpənɪŋ/"),
+            make("I'll take it from here", "used to say that you will now take over and deal with something yourself",
+                 "ここからは私がやるよ・あとは任せて",
+                 useCases: ["作業を引き継ぐとき", "手伝ってくれた人に礼を言って交代するとき"],
+                 examples: [
+                    ("Thanks for setting everything up – I'll take it from here.", "準備してくれてありがとう。ここからは私がやるね。"),
+                    ("Leave the paperwork with me, I'll take it from here.", "書類は置いといて、あとは任せて。")
+                 ], ipa: "/aɪl ˈteɪk ɪt frəm ˈhɪə/"),
+            make("fair game", "someone or something that it is acceptable to criticise, joke about or use",
+                 "格好の的・対象にしても構わないもの",
+                 useCases: ["からかい・批判の対象になると言うとき", "自由に取っていいものを指すとき"],
+                 examples: [
+                    ("Once you're famous, your private life is fair game for the papers.", "有名になったら、私生活もマスコミの格好の的だよ。"),
+                    ("Anything left in the fridge after Friday is fair game.", "金曜を過ぎて冷蔵庫に残ってるものは、誰が食べてもいいよ。")
+                 ], ipa: "/ˌfeə ˈɡeɪm/"),
+            make("a stopgap", "something you use for a short time until you can get something better",
+                 "一時しのぎ・つなぎ",
+                 useCases: ["その場しのぎの対応を言うとき", "仮の手段を説明するとき"],
+                 examples: [
+                    ("This old laptop is just a stopgap until I can afford a new one.", "この古いノートパソコンは、新しいのが買えるまでのつなぎだよ。"),
+                    ("The bar job was only meant to be a stopgap.", "バーの仕事はただの一時しのぎのつもりだったんだ。")
+                 ], ipa: "/ə ˈstɒpɡæp/"),
+            make("it's a bit late for that", "used to say that it is too late to do or worry about something now",
+                 "今さら遅いよ・もう手遅れだよ",
+                 useCases: ["後悔や今さらの提案に返すとき", "手遅れであることを伝えるとき"],
+                 examples: [
+                    ("\"Maybe we should have booked a table.\" \"It's a bit late for that now!\"", "「予約しておけばよかったかな」「今さら遅いよ！」"),
+                    ("You want to revise the night before the exam? It's a bit late for that.", "試験前夜に復習？もう手遅れだよ。")
+                 ], ipa: "/ɪts ə bɪt ˈleɪt fə ðæt/"),
+            make("a cheap shot", "an unfair or unkind remark, especially one that attacks someone's weak point",
+                 "卑怯な一言・言っちゃいけないこと",
+                 useCases: ["不公平な批判をたしなめるとき", "相手の弱点を突く発言を指摘するとき"],
+                 examples: [
+                    ("Bringing up his divorce in the meeting was a cheap shot.", "会議で彼の離婚を持ち出すなんて卑怯だよ。"),
+                    ("Sorry, that was a cheap shot. I didn't mean it.", "ごめん、今のは言っちゃいけなかった。本気じゃないよ。")
+                 ], ipa: "/ə ˌtʃiːp ˈʃɒt/"),
+            make("I'm not having it", "(British, informal) used to say firmly that you will not accept or allow something",
+                 "そんなの許さない・認めないよ",
+                 useCases: ["理不尽なことを拒否するとき", "強く反対するとき"],
+                 examples: [
+                    ("They want us to work every Saturday? I'm not having it.", "毎週土曜も働けって？そんなの認めないよ。"),
+                    ("My mum tried to pay for dinner, but I wasn't having it.", "母が夕食代を払おうとしたけど、私が譲らなかった。")
+                 ], ipa: "/aɪm ˈnɒt ˈhævɪŋ ɪt/"),
+            make("there's a first time for everything", "used when something happens that has never happened before, often humorously",
+                 "何事にも初めてはある",
+                 useCases: ["初めての経験をするとき", "珍しいことが起きたのを冗談っぽく言うとき"],
+                 examples: [
+                    ("You've never been skiing? Well, there's a first time for everything.", "スキーしたことないの？まあ、何事にも初めてはあるよ。"),
+                    ("Tom arrived early? There's a first time for everything!", "トムが早く来た？何事にも初めてはあるもんだね！")
+                 ], ipa: "/ðeəz ə ˈfɜːst ˈtaɪm fər ˈevriθɪŋ/"),
+            make("it's been a long time coming", "used to say that something has finally happened after people expected or wanted it for a long time",
+                 "やっとだね・待ちに待った",
+                 useCases: ["待望のことが実現したとき", "当然の結果がようやく出たとき"],
+                 examples: [
+                    ("Congratulations on the promotion – it's been a long time coming!", "昇進おめでとう！やっとだね！"),
+                    ("The new station finally opened. It's been a long time coming.", "新しい駅がついに開業した。待ちに待ったよ。")
+                 ], ipa: "/ɪts bɪn ə ˈlɒŋ taɪm ˈkʌmɪŋ/"),
         ]
     }
     private static var britishColloquial283: [Word] {
