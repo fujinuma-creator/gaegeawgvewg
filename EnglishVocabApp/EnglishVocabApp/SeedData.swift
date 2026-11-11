@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283
         ]
         return groups.flatMap { $0 }
     }
@@ -44850,6 +44850,115 @@ enum SeedData {
                     ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
                     ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
                  ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
+        ]
+    }
+    private static var britishColloquial283: [Word] {
+        [
+            make("no chance", "(informal) used to say that something will definitely not happen or that you refuse to do it",
+                 "絶対無理・ありえない・お断り",
+                 useCases: ["可能性がゼロだと言うとき", "きっぱり断るとき"],
+                 examples: [
+                    ("\"Will we get tickets now?\" \"No chance – they sold out in minutes.\"", "「今からチケット取れるかな？」「無理だよ、数分で売り切れたんだから」"),
+                    ("Lend him my car? No chance!", "あいつに車を貸す？絶対いやだね！")
+                 ], ipa: "/nəʊ ˈtʃɑːns/"),
+            make("I should think so", "used to agree, saying that something is probably true or is only right and reasonable",
+                 "たぶんそうだと思う・当然だよ",
+                 useCases: ["控えめに肯定するとき", "当然だと言うとき"],
+                 examples: [
+                    ("\"Will the shop still be open?\" \"I should think so.\"", "「お店まだ開いてるかな？」「たぶん開いてると思うよ」"),
+                    ("\"He apologised.\" \"I should think so too!\"", "「彼、謝ったよ」「当然だよ！」")
+                 ], ipa: "/aɪ ʃʊd ˈθɪŋk səʊ/"),
+            make("at the minute", "(British, informal) at the present time; now",
+                 "今のところ・今は・最近は",
+                 useCases: ["近況を話すとき", "今の状況を説明するとき"],
+                 examples: [
+                    ("I'm really busy at the minute.", "今ほんとに忙しいんだ。"),
+                    ("She's living in Leeds at the minute.", "彼女は今リーズに住んでるよ。")
+                 ], ipa: "/æt ðə ˈmɪnɪt/"),
+            make("it'll come to me", "used when you can't remember something right now but expect to remember it soon",
+                 "そのうち思い出す・喉まで出てるんだけど",
+                 useCases: ["名前などが思い出せないとき", "会話中にど忘れしたとき"],
+                 examples: [
+                    ("What's that actor called? Hang on, it'll come to me.", "あの俳優なんて名前だっけ？待って、思い出すから。"),
+                    ("I can't remember her name right now, but it'll come to me.", "今は名前が出てこないけど、そのうち思い出すよ。")
+                 ], ipa: "/ˈɪtl kʌm tə miː/"),
+            make("what are the chances?", "used to express surprise at a coincidence or to say something is very unlikely",
+                 "すごい偶然！・そんなことある？",
+                 useCases: ["偶然に驚いたとき", "可能性が低いと言うとき"],
+                 examples: [
+                    ("We bumped into each other in Paris – what are the chances?", "パリでばったり会ったんだよ、すごい偶然でしょ？"),
+                    ("Same birthday as me? What are the chances!", "誕生日が私と同じ？そんなことある！")
+                 ], ipa: "/wɒt ə ðə ˈtʃɑːnsɪz/"),
+            make("if you say so", "used to accept what someone says even though you don't really believe or agree with it",
+                 "あなたがそう言うなら・まあ、そういうことにしておく",
+                 useCases: ["納得していないが反論しないとき", "軽く疑いを示すとき"],
+                 examples: [
+                    ("\"I'm not tired at all.\" \"If you say so.\"", "「全然疲れてないよ」「そう言うならいいけど」"),
+                    ("\"This is the quickest way.\" \"Well, if you say so...\"", "「これが一番の近道だよ」「まあ、あなたがそう言うなら…」")
+                 ], ipa: "/ɪf juː ˈseɪ səʊ/"),
+            make("I wouldn't know", "used to say that you don't know something, often because it's not something you have experience of",
+                 "さあ、わからない・私には知りようがない",
+                 useCases: ["知らないことを聞かれたとき", "自分には関係ないと伝えるとき"],
+                 examples: [
+                    ("\"Is the new gym any good?\" \"I wouldn't know – I never go.\"", "「新しいジム良い？」「さあ、行ったことないから」"),
+                    ("\"How much does a yacht cost?\" \"I wouldn't know!\"", "「ヨットっていくらするの？」「私に分かるわけないよ！」")
+                 ], ipa: "/aɪ ˈwʊdnt nəʊ/"),
+            make("I'd say so", "used to agree with something, giving your opinion in a slightly cautious way",
+                 "そうだと思うよ・まあそうだね",
+                 useCases: ["意見を聞かれて肯定するとき", "やや控えめに同意するとき"],
+                 examples: [
+                    ("\"Is it worth the money?\" \"I'd say so, yeah.\"", "「値段の価値ある？」「うん、あると思うよ」"),
+                    ("\"Was it a good match?\" \"I'd say so – best one this season.\"", "「いい試合だった？」「そうだね、今シーズン一番だった」")
+                 ], ipa: "/aɪd ˈseɪ səʊ/"),
+            make("it can't be helped", "used to say that a bad situation cannot be avoided or changed, so you have to accept it",
+                 "仕方ない・どうしようもない",
+                 useCases: ["避けられない事態を受け入れるとき", "相手を慰めるとき"],
+                 examples: [
+                    ("The flight's delayed, but it can't be helped.", "フライト遅れてるけど、仕方ないね。"),
+                    ("I'll miss the party, but it can't be helped – I've got work.", "パーティーに行けないけど、仕方ない、仕事なんだ。")
+                 ], ipa: "/ɪt ˈkɑːnt bi ˈhelpt/"),
+            make("no hurry", "used to tell someone they don't need to do something quickly",
+                 "急がなくていいよ・ゆっくりでいいよ",
+                 useCases: ["相手を急かさないとき", "返事や返却に期限がないとき"],
+                 examples: [
+                    ("Give the book back whenever – no hurry.", "本はいつ返してくれてもいいよ、急がないから。"),
+                    ("\"Sorry, I'm still deciding.\" \"No hurry!\"", "「ごめん、まだ迷ってる」「ゆっくりでいいよ！」")
+                 ], ipa: "/nəʊ ˈhʌri/"),
+            make("get going", "to leave or start doing something, especially because it's time to",
+                 "そろそろ出る・始める・取りかかる",
+                 useCases: ["帰る・出発すると切り出すとき", "作業を始めるとき"],
+                 examples: [
+                    ("It's getting late – I'd better get going.", "遅くなってきたし、そろそろ行かなきゃ。"),
+                    ("Let's get going or we'll miss the train.", "もう出よう、じゃないと電車に乗り遅れるよ。")
+                 ], ipa: "/ɡet ˈɡəʊɪŋ/"),
+            make("that's me done", "(British, informal) used to say that you have finished what you were doing",
+                 "これで終わり・私はもう終わった",
+                 useCases: ["仕事や作業を終えたとき", "食事や買い物を済ませたとき"],
+                 examples: [
+                    ("Right, that's me done for the day. See you tomorrow!", "よし、今日はこれで終わり。また明日！"),
+                    ("Last email sent – that's me done.", "最後のメール送った、これで終わり。")
+                 ], ipa: "/ðæts miː ˈdʌn/"),
+            make("when you get a chance", "used to politely ask someone to do something when they have time",
+                 "手が空いたときに・時間があるときに",
+                 useCases: ["丁寧にお願いするとき", "急ぎでない依頼をするとき"],
+                 examples: [
+                    ("Could you have a look at this when you get a chance?", "手が空いたときにこれ見てもらえる？"),
+                    ("Call me back when you get a chance.", "時間があるときに折り返して。")
+                 ], ipa: "/wen juː ɡet ə ˈtʃɑːns/"),
+            make("I can live with that", "used to say that you accept something, even if it isn't perfect",
+                 "それでいいよ・まあ許容範囲だね",
+                 useCases: ["妥協案を受け入れるとき", "条件に納得したとき"],
+                 examples: [
+                    ("\"We can meet at seven instead of six.\" \"I can live with that.\"", "「6時じゃなくて7時でもいい？」「それでいいよ」"),
+                    ("It's a bit small, but I can live with that.", "ちょっと狭いけど、まあ許容範囲だね。")
+                 ], ipa: "/aɪ kən ˈlɪv wɪð ðæt/"),
+            make("I'd have done the same", "used to tell someone that you understand or support what they did",
+                 "私でもそうしたよ・同じことをしたと思う",
+                 useCases: ["相手の行動に共感するとき", "相手を安心させるとき"],
+                 examples: [
+                    ("Don't feel bad – I'd have done the same.", "気にしないで、私でもそうしたよ。"),
+                    ("You walked out? Honestly, I'd have done the same.", "途中で出てきたの？正直、私も同じことしたと思う。")
+                 ], ipa: "/aɪd əv dʌn ðə ˈseɪm/"),
         ]
     }
     private static var britishColloquial282: [Word] {
