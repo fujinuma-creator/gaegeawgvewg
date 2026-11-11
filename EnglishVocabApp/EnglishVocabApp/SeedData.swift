@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294
         ]
         return groups.flatMap { $0 }
     }
@@ -45940,6 +45940,115 @@ enum SeedData {
                     ("I'm off to get some shut-eye – early start tomorrow.", "もう寝るね、明日早いから。"),
                     ("You should get some shut-eye before the long drive.", "長距離運転の前に少し寝ておいた方がいいよ。")
                  ], ipa: "/ˈɡet səm ˈʃʌt aɪ/"),
+        ]
+    }
+    private static var britishColloquial294: [Word] {
+        [
+            make("from day one", "right from the very beginning",
+                 "最初から・初日からずっと",
+                 useCases: ["始めからずっとそうだったと言うとき", "最初から分かっていたことを話すとき"],
+                 examples: [
+                    ("I've loved this job from day one.", "この仕事、初日からずっと好きなんだ。"),
+                    ("She's been honest with us from day one.", "彼女は最初からずっと私たちに正直だったよ。")
+                 ], ipa: "/frəm ˈdeɪ ˈwʌn/"),
+            make("day in, day out", "every day, continuously, often in a boring or tiring way",
+                 "来る日も来る日も・毎日毎日",
+                 useCases: ["同じことの繰り返しに疲れているとき", "毎日欠かさず続けていることを話すとき"],
+                 examples: [
+                    ("Same commute, day in, day out – I need a change.", "毎日毎日同じ通勤で、そろそろ変化が欲しいよ。"),
+                    ("He trains day in, day out, even in the rain.", "彼は雨の日でも来る日も来る日も練習してるんだ。")
+                 ], ipa: "/ˈdeɪ ˈɪn ˈdeɪ ˈaʊt/"),
+            make("take my word for it", "believe me – I know this is true from experience",
+                 "私の言うことを信じて・本当だってば",
+                 useCases: ["自分の経験から強く勧めるとき", "相手が疑っているとき"],
+                 examples: [
+                    ("Take my word for it – don't eat at that place.", "信じて、あの店では食べない方がいいよ。"),
+                    ("You don't have to take my word for it. Try it yourself.", "私の言うことを鵜呑みにしなくていいよ。自分で試してみて。")
+                 ], ipa: "/ˈteɪk maɪ ˈwɜːd fər ɪt/"),
+            make("hard to tell", "difficult to know, judge or see clearly",
+                 "何とも言えない・見分けにくい",
+                 useCases: ["判断がつかないとき", "見た目で区別しにくいとき"],
+                 examples: [
+                    ("Is he annoyed? – Hard to tell, he's always quiet.", "彼怒ってる？―何とも言えないな、いつも無口だし。"),
+                    ("It's hard to tell the twins apart.", "あの双子は見分けるのが難しいね。")
+                 ], ipa: "/ˈhɑːd tə ˈtel/"),
+            make("at your own pace", "at the speed that suits you, without being rushed",
+                 "自分のペースで",
+                 useCases: ["相手に急がなくていいと伝えるとき", "学習や運動の進め方を話すとき"],
+                 examples: [
+                    ("No rush – just go through it at your own pace.", "急がなくていいよ、自分のペースで進めてね。"),
+                    ("I like online courses because I can learn at my own pace.", "自分のペースで学べるからオンライン講座が好きなんだ。")
+                 ], ipa: "/ət jɔːr ˈəʊn ˈpeɪs/"),
+            make("first-hand", "from your own direct experience, not from someone else",
+                 "直接・身をもって・じかに",
+                 useCases: ["自分で体験したことを強調するとき", "現場を直接見たと言うとき"],
+                 examples: [
+                    ("I've seen first-hand how hard nurses work.", "看護師がどれだけ大変か、この目で見てきたよ。"),
+                    ("It's good to hear it first-hand rather than through gossip.", "噂じゃなくて本人から直接聞けて良かった。")
+                 ], ipa: "/ˌfɜːst ˈhænd/"),
+            make("on hand", "available and ready to help or be used",
+                 "手元に・待機して・すぐ使えるように",
+                 useCases: ["サポートがいると伝えるとき", "必要な物を用意しておくとき"],
+                 examples: [
+                    ("Staff will be on hand to answer any questions.", "質問があればスタッフが待機していますので。"),
+                    ("I always keep some plasters on hand with the kids.", "子どもがいるから絆創膏はいつも手元に置いてるの。")
+                 ], ipa: "/ɒn ˈhænd/"),
+            make("spare a thought for", "to think kindly about someone who is in a difficult situation",
+                 "〜のことを思いやる・〜の身にもなってみる",
+                 useCases: ["大変な状況の人を気遣うとき", "自分より大変な人がいると言うとき"],
+                 examples: [
+                    ("Spare a thought for the people working on Christmas Day.", "クリスマスに働いてる人たちのことも考えてあげて。"),
+                    ("We're cold, but spare a thought for those sleeping outside.", "私たちも寒いけど、外で寝てる人たちのことを思うとね。")
+                 ], ipa: "/ˈspeər ə ˈθɔːt fɔː/"),
+            make("allegedly", "(often humorous) said to be true, although not proven",
+                 "〜らしい・（一応）〜ということになっている",
+                 useCases: ["噂話を伝えるとき", "冗談っぽく疑いを込めて言うとき"],
+                 examples: [
+                    ("He's allegedly working from home today.", "彼、今日は一応在宅勤務してることになってるけどね。"),
+                    ("The train was allegedly on time – it wasn't.", "電車は定刻通りだったらしいけど、全然違ったよ。")
+                 ], ipa: "/əˈledʒɪdli/"),
+            make("tongue-tied", "unable to speak easily because you are nervous or shy",
+                 "（緊張で）言葉に詰まる・口ごもる",
+                 useCases: ["緊張してうまく話せなかったとき", "好きな人の前で固まったとき"],
+                 examples: [
+                    ("I always get tongue-tied when I meet someone famous.", "有名人に会うといつも緊張して言葉が出なくなるんだ。"),
+                    ("He was completely tongue-tied in the interview.", "彼、面接で完全に言葉に詰まってたよ。")
+                 ], ipa: "/ˈtʌŋ taɪd/"),
+            make("tongue-in-cheek", "said as a joke, not meant seriously",
+                 "冗談半分の・皮肉まじりの",
+                 useCases: ["本気ではない発言だと説明するとき", "皮肉っぽいユーモアについて話すとき"],
+                 examples: [
+                    ("Don't worry, the comment was tongue-in-cheek.", "心配しないで、あのコメントは冗談半分だから。"),
+                    ("The review was a bit tongue-in-cheek, but quite funny.", "そのレビュー、ちょっと皮肉まじりだったけど結構面白かったよ。")
+                 ], ipa: "/ˌtʌŋ ɪn ˈtʃiːk/"),
+            make("have the last word", "to make the final comment in an argument or discussion",
+                 "最後に一言言う・言い返して終わる",
+                 useCases: ["口論で負けず嫌いな人について話すとき", "最終決定権を持つ人について話すとき"],
+                 examples: [
+                    ("She always has to have the last word.", "彼女っていつも最後に一言言わないと気が済まないんだよね。"),
+                    ("The boss will have the last word on the budget.", "予算については上司が最終判断するよ。")
+                 ], ipa: "/hæv ðə ˈlɑːst ˈwɜːd/"),
+            make("state of mind", "the way you are feeling or thinking at a particular time",
+                 "心の状態・気持ち・精神状態",
+                 useCases: ["今の気分や精神状態を話すとき", "大事な決断のタイミングについて話すとき"],
+                 examples: [
+                    ("I'm not in the right state of mind to decide that now.", "今はそれを決められるような精神状態じゃないんだ。"),
+                    ("Exercise really helps my state of mind.", "運動すると本当に気持ちが前向きになるんだ。")
+                 ], ipa: "/ˈsteɪt əv ˈmaɪnd/"),
+            make("at first glance", "when you first look at something, before examining it closely",
+                 "ぱっと見は・一見すると",
+                 useCases: ["第一印象と実際が違ったとき", "ざっと見た感想を言うとき"],
+                 examples: [
+                    ("At first glance it looks easy, but it's actually quite tricky.", "ぱっと見は簡単そうだけど、実はかなり厄介なんだ。"),
+                    ("At first glance, I thought you were your sister!", "一瞬、あなたのお姉さんかと思ったよ！")
+                 ], ipa: "/ət ˈfɜːst ˈɡlɑːns/"),
+            make("to start with", "at the beginning; also used to give the first reason in a list",
+                 "最初は・まず第一に",
+                 useCases: ["最初の状況と今を比べるとき", "理由を順に挙げるとき"],
+                 examples: [
+                    ("To start with, I hated living here, but now I love it.", "最初はここに住むのが嫌だったけど、今は大好き。"),
+                    ("I'm not going. To start with, it's too expensive.", "行かないよ。まず第一に、高すぎるし。")
+                 ], ipa: "/tə ˈstɑːt wɪð/"),
         ]
     }
     private static var britishColloquial283: [Word] {
