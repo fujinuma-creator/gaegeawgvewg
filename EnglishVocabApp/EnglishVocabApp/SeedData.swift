@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280
         ]
         return groups.flatMap { $0 }
     }
@@ -44850,6 +44850,115 @@ enum SeedData {
                     ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
                     ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
                  ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
+        ]
+    }
+    private static var britishColloquial280: [Word] {
+        [
+            make("the underground", "the railway system that runs under the ground in a big city",
+                 "地下鉄",
+                 useCases: ["都市での移動手段を話すとき", "道順や待ち合わせ方法を決めるとき"],
+                 examples: [
+                    ("It's quicker to take the underground than a taxi.", "タクシーより地下鉄のほうが早いよ。"),
+                    ("The underground was packed this morning.", "今朝の地下鉄、ぎゅうぎゅうだったよ。")
+                 ], ipa: "/ði ˈʌndəɡraʊnd/"),
+            make("a bus stop", "a place at the side of a road where buses stop to let people on and off",
+                 "バス停",
+                 useCases: ["待ち合わせ場所を伝えるとき", "道を教えるとき"],
+                 examples: [
+                    ("I'll meet you at the bus stop outside the station.", "駅前のバス停で待ち合わせね。"),
+                    ("Is there a bus stop near here?", "この近くにバス停ってありますか？")
+                 ], ipa: "/ə ˈbʌs stɒp/"),
+            make("the house wine", "the cheapest standard wine a restaurant offers, usually sold by the glass or carafe",
+                 "ハウスワイン",
+                 useCases: ["レストランで飲み物を頼むとき", "手頃なワインを選ぶとき"],
+                 examples: [
+                    ("Shall we just get a bottle of the house red?", "ハウスワインの赤をボトルで頼もうか？"),
+                    ("The house wine here is actually really good.", "ここのハウスワイン、実はすごく美味しいんだよ。")
+                 ], ipa: "/ðə haʊs waɪn/"),
+            make("a gathering", "a small, informal meeting of friends or family, often at someone's home",
+                 "集まり・ちょっとした会",
+                 useCases: ["気軽なホームパーティーに誘うとき", "家族の集まりについて話すとき"],
+                 examples: [
+                    ("It's just a small gathering, nothing fancy.", "ちょっとした集まりだよ、大げさなものじゃないから。"),
+                    ("We've got a family gathering this weekend.", "今週末は親戚の集まりがあるんだ。")
+                 ], ipa: "/ə ˈɡæðərɪŋ/"),
+            make("the dentist", "a person whose job is to look after people's teeth; also used for their surgery",
+                 "歯医者",
+                 useCases: ["予定や用事を伝えるとき", "歯の痛みについて話すとき"],
+                 examples: [
+                    ("I can't make it – I've got the dentist at three.", "行けないや、3時に歯医者があるんだ。"),
+                    ("You should really go to the dentist about that tooth.", "その歯、ちゃんと歯医者に行ったほうがいいよ。")
+                 ], ipa: "/ðə ˈdentɪst/"),
+            make("out for delivery", "used to say that a parcel is on its way and will arrive that day",
+                 "配達中・本日お届け予定",
+                 useCases: ["ネットで頼んだ荷物の状況を話すとき", "荷物を待っていて外出できないとき"],
+                 examples: [
+                    ("My parcel's out for delivery, so I'm staying in.", "荷物が配達中だから、家にいるよ。"),
+                    ("It's been 'out for delivery' since eight this morning!", "朝8時からずっと『配達中』のままなんだけど！")
+                 ], ipa: "/aʊt fə dɪˈlɪvəri/"),
+            make("a tracking number", "a number that lets you check online where your parcel is",
+                 "追跡番号",
+                 useCases: ["荷物の行方を確認するとき", "配送トラブルを問い合わせるとき"],
+                 examples: [
+                    ("Did they send you a tracking number?", "追跡番号は送られてきた？"),
+                    ("I'll text you the tracking number.", "追跡番号、メッセージで送るね。")
+                 ], ipa: "/ə ˈtrækɪŋ ˌnʌmbə/"),
+            make("the card machine", "the small device in a shop or restaurant you use to pay by card",
+                 "カード決済端末",
+                 useCases: ["お店でカード払いをするとき", "端末の不調で支払えないとき"],
+                 examples: [
+                    ("Sorry, the card machine's down – cash only today.", "すみません、カード端末が使えなくて、今日は現金のみです。"),
+                    ("Could you bring the card machine over?", "カードの端末を持ってきてもらえますか？")
+                 ], ipa: "/ðə ˈkɑːd məˌʃiːn/"),
+            make("cool off", "to become calmer after being angry, or to become less hot",
+                 "頭を冷やす・涼む",
+                 useCases: ["ケンカのあと少し時間を置くとき", "暑い日に涼むとき"],
+                 examples: [
+                    ("Give him a minute to cool off before you talk to him.", "話しかける前に、少し頭を冷やす時間をあげなよ。"),
+                    ("Let's go for a swim and cool off.", "泳いで涼もうよ。")
+                 ], ipa: "/kuːl ɒf/"),
+            make("legroom", "the amount of space for your legs when you are sitting, especially on a plane or bus",
+                 "足元の広さ",
+                 useCases: ["飛行機やバスの座席について話すとき", "席を選ぶとき"],
+                 examples: [
+                    ("There's hardly any legroom on these budget flights.", "こういう格安便は足元がほとんど狭くて。"),
+                    ("I paid extra for more legroom.", "足元が広い席に追加料金払ったよ。")
+                 ], ipa: "/ˈleɡruːm/"),
+            make("the gate", "the area in an airport where you wait before getting on your plane",
+                 "搭乗ゲート",
+                 useCases: ["空港で搭乗口を確認するとき", "搭乗時間に急ぐとき"],
+                 examples: [
+                    ("We'd better head to the gate – it's boarding soon.", "そろそろゲートに行こう、もうすぐ搭乗だよ。"),
+                    ("They've changed the gate again!", "またゲートが変わったよ！")
+                 ], ipa: "/ðə ɡeɪt/"),
+            make("turbulence", "sudden rough movement of a plane caused by changes in the air",
+                 "（飛行機の）揺れ・乱気流",
+                 useCases: ["フライトの感想を話すとき", "飛行機が苦手な話をするとき"],
+                 examples: [
+                    ("There was loads of turbulence on the way over.", "行きの便、すごく揺れたんだよ。"),
+                    ("I hate turbulence – I always grip the armrest.", "揺れが大嫌いで、いつも肘掛けを握りしめちゃう。")
+                 ], ipa: "/ˈtɜːbjələns/"),
+            make("a discount code", "a short code you type in when shopping online to get money off",
+                 "割引コード・クーポンコード",
+                 useCases: ["ネットで買い物するとき", "友達にお得情報を教えるとき"],
+                 examples: [
+                    ("I've got a discount code for 20% off if you want it.", "20%オフの割引コードあるけど、使う？"),
+                    ("The discount code didn't work at checkout.", "決済のときに割引コードが使えなかったんだ。")
+                 ], ipa: "/ə ˈdɪskaʊnt kəʊd/"),
+            make("a corkscrew", "a tool for pulling corks out of wine bottles",
+                 "コルク抜き・ワインオープナー",
+                 useCases: ["ホームパーティーでワインを開けるとき", "キッチンの道具を探すとき"],
+                 examples: [
+                    ("Has anyone got a corkscrew?", "誰かコルク抜き持ってない？"),
+                    ("We brought wine but forgot the corkscrew!", "ワインは持ってきたのに、コルク抜き忘れた！")
+                 ], ipa: "/ə ˈkɔːkskruː/"),
+            make("the vet", "a doctor who treats animals; also used for their surgery",
+                 "獣医・動物病院",
+                 useCases: ["ペットの体調について話すとき", "ペットの予防接種などの予定を話すとき"],
+                 examples: [
+                    ("I've got to take the dog to the vet this afternoon.", "今日の午後、犬を動物病院に連れて行かなきゃ。"),
+                    ("The cat's not eating, so I'm calling the vet.", "猫がご飯食べないから、獣医さんに電話してみる。")
+                 ], ipa: "/ðə vet/"),
         ]
     }
     private static var britishColloquial277: [Word] {
