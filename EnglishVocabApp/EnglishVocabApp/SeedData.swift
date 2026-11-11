@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290
         ]
         return groups.flatMap { $0 }
     }
@@ -45504,6 +45504,115 @@ enum SeedData {
                     ("These jeans are a bit tight – I think I'll go up a size.", "このジーンズ少しきついから、ワンサイズ上げようかな。"),
                     ("They come up small, so you might want to go up a size.", "小さめの作りだから、ワンサイズ上げた方がいいかも。")
                  ], ipa: "/ɡəʊ ˈʌp ə ˈsaɪz/"),
+        ]
+    }
+    private static var britishColloquial290: [Word] {
+        [
+            make("it's a slow day", "(at work, in a shop, etc.) there is not much to do or not many customers today",
+                 "今日は暇だ・客が少ない日だ",
+                 useCases: ["仕事が暇な日に同僚と話すとき", "お店の人と雑談するとき"],
+                 examples: [
+                    ("It's a slow day today – I've only had three customers.", "今日は暇だね。お客さん3人しか来てないよ。"),
+                    ("Since it's a slow day, I might leave a bit early.", "今日は暇だから、ちょっと早めに上がろうかな。")
+                 ], ipa: "/ɪts ə ˈsləʊ ˈdeɪ/"),
+            make("earlier on", "at an earlier time today or in a conversation; a little while ago",
+                 "さっき・先ほど",
+                 useCases: ["少し前の出来事を話すとき", "会話の前半に触れたことを持ち出すとき"],
+                 examples: [
+                    ("I saw your sister earlier on in the supermarket.", "さっきスーパーで君のお姉さんを見かけたよ。"),
+                    ("Like I said earlier on, I can't stay late tonight.", "さっきも言ったけど、今夜は遅くまでいられないんだ。")
+                 ], ipa: "/ˈɜːliər ˈɒn/"),
+            make("the night before", "the evening or night before a particular day or event",
+                 "前の晩・前夜",
+                 useCases: ["旅行や試験の準備を話すとき", "前日の出来事を説明するとき"],
+                 examples: [
+                    ("I always pack the night before I travel.", "旅行の前の晩にいつも荷造りするんだ。"),
+                    ("I didn't sleep much the night before the interview.", "面接の前の晩はあまり眠れなかったよ。")
+                 ], ipa: "/ðə ˈnaɪt bɪˈfɔː/"),
+            make("across the road", "on the other side of the street",
+                 "道の向かい側・通りの向こう",
+                 useCases: ["店や建物の場所を説明するとき", "近所の話をするとき"],
+                 examples: [
+                    ("There's a nice café just across the road.", "道の向かいに素敵なカフェがあるよ。"),
+                    ("The people across the road have just had a baby.", "向かいの家の人たち、赤ちゃんが生まれたばかりなんだ。")
+                 ], ipa: "/əˈkrɒs ðə ˈrəʊd/"),
+            make("the next stop", "the next place where a bus or train stops",
+                 "次の停留所・次の駅",
+                 useCases: ["バスや電車で降りる場所を確認するとき", "乗り物で人に道を聞くとき"],
+                 examples: [
+                    ("Excuse me, is the next stop the train station?", "すみません、次の停留所は駅ですか？"),
+                    ("We get off at the next stop.", "次で降りるよ。")
+                 ], ipa: "/ðə ˈnekst ˈstɒp/"),
+            make("a taxi rank", "(British) a place where taxis wait for passengers",
+                 "タクシー乗り場",
+                 useCases: ["駅や空港でタクシーを探すとき", "帰り方を相談するとき"],
+                 examples: [
+                    ("There's a taxi rank just outside the station.", "駅を出てすぐのところにタクシー乗り場があるよ。"),
+                    ("The queue at the taxi rank was massive.", "タクシー乗り場の列がものすごかったよ。")
+                 ], ipa: "/ə ˈtæksi ˈræŋk/"),
+            make("the services", "(British, informal) a service station on a motorway, with petrol, toilets, food and shops",
+                 "（高速道路の）サービスエリア",
+                 useCases: ["車での長距離移動中に休憩を提案するとき", "ドライブの計画を話すとき"],
+                 examples: [
+                    ("Let's stop at the next services – I need a coffee.", "次のサービスエリアで止まろう。コーヒー飲みたい。"),
+                    ("We grabbed a sandwich at the services on the way.", "途中のサービスエリアでサンドイッチを買ったよ。")
+                 ], ipa: "/ðə ˈsɜːvɪsɪz/"),
+            make("duty-free", "goods bought at airports without paying tax; the shop that sells them",
+                 "免税品・免税店",
+                 useCases: ["空港での買い物を話すとき", "旅行のお土産の話をするとき"],
+                 examples: [
+                    ("I picked up some perfume in duty-free.", "免税店で香水を買ったよ。"),
+                    ("Do you want anything from duty-free?", "免税店で何か欲しいものある？")
+                 ], ipa: "/ˌdjuːti ˈfriː/"),
+            make("passport control", "the place at an airport or border where officials check your passport",
+                 "入国審査・出国審査",
+                 useCases: ["空港での手続きを話すとき", "到着の遅れを説明するとき"],
+                 examples: [
+                    ("It took ages to get through passport control.", "入国審査を通るのにすごく時間がかかったよ。"),
+                    ("I'll text you once I'm through passport control.", "入国審査を抜けたらメッセージするね。")
+                 ], ipa: "/ˈpɑːspɔːt kənˈtrəʊl/"),
+            make("all-inclusive", "(of a holiday or hotel) with meals, drinks and activities included in the price",
+                 "オールインクルーシブ（食事・飲み物込み）の",
+                 useCases: ["旅行やホテルの話をするとき", "休暇の計画を立てるとき"],
+                 examples: [
+                    ("We went all-inclusive, so we didn't spend a penny all week.", "オールインクルーシブにしたから、1週間ほとんどお金を使わなかったよ。"),
+                    ("Is the hotel all-inclusive or just breakfast?", "そのホテルはオールインクルーシブ？それとも朝食だけ？")
+                 ], ipa: "/ˌɔːl ɪnˈkluːsɪv/"),
+            make("self-catering", "(of accommodation) where you cook your own meals instead of having them provided",
+                 "自炊式の（キッチン付きの宿泊施設）",
+                 useCases: ["休暇の宿泊先を話すとき", "旅行の予算を相談するとき"],
+                 examples: [
+                    ("We rented a self-catering apartment in Spain – much cheaper than a hotel.", "スペインで自炊できるアパートを借りたんだ。ホテルよりずっと安かったよ。"),
+                    ("Is it self-catering, or are meals included?", "自炊式？それとも食事付き？")
+                 ], ipa: "/ˌself ˈkeɪtərɪŋ/"),
+            make("room service", "a hotel service that brings food and drinks to your room",
+                 "ルームサービス",
+                 useCases: ["ホテル滞在の話をするとき", "旅行で疲れた夜のことを話すとき"],
+                 examples: [
+                    ("We were so tired we just ordered room service.", "疲れすぎてルームサービスを頼んだだけだったよ。"),
+                    ("Room service was a bit pricey, but the food was lovely.", "ルームサービスはちょっと高かったけど、料理は美味しかったよ。")
+                 ], ipa: "/ˈruːm ˌsɜːvɪs/"),
+            make("today's specials", "dishes that a restaurant offers only for that day, often written on a board",
+                 "本日のおすすめ料理",
+                 useCases: ["レストランで注文するとき", "店員におすすめを聞くとき"],
+                 examples: [
+                    ("Could you tell us what today's specials are?", "本日のおすすめを教えてもらえますか？"),
+                    ("I'll go for one of today's specials – the fish sounds nice.", "本日のおすすめにするよ。魚が美味しそう。")
+                 ], ipa: "/təˈdeɪz ˈspeʃəlz/"),
+            make("the school holidays", "the periods when schools are closed, e.g. in summer",
+                 "学校の休み（夏休み・冬休みなど）",
+                 useCases: ["子どもの予定や旅行時期を話すとき", "混雑や値段の話をするとき"],
+                 examples: [
+                    ("Flights are so expensive during the school holidays.", "学校が休みの時期は飛行機代がすごく高いよね。"),
+                    ("What are the kids up to over the school holidays?", "学校の休みの間、子どもたちは何してるの？")
+                 ], ipa: "/ðə ˈskuːl ˈhɒlədeɪz/"),
+            make("have the builders in", "(British, informal) to have workers doing building work or repairs on your home",
+                 "家の工事中だ・業者が入っている",
+                 useCases: ["家のリフォームや修理の話をするとき", "家に人を呼べない理由を説明するとき"],
+                 examples: [
+                    ("We've got the builders in, so the house is a total mess.", "今工事の業者が入ってて、家がめちゃくちゃなんだ。"),
+                    ("Sorry about the noise – the neighbours have the builders in.", "うるさくてごめんね。お隣が工事中なんだ。")
+                 ], ipa: "/hæv ðə ˈbɪldəz ˈɪn/"),
         ]
     }
     private static var britishColloquial283: [Word] {
