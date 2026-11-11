@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299
         ]
         return groups.flatMap { $0 }
     }
@@ -46485,6 +46485,115 @@ enum SeedData {
                     ("Don't give him a hard time – it was an honest mistake.", "彼をあんまり責めないであげて。悪気のないミスなんだから。"),
                     ("My mates gave me a hard time about my new haircut.", "新しい髪型のことで友達にめっちゃいじられたよ。")
                  ], ipa: "/ˈɡɪv ˌsʌmwʌn ə ˈhɑːd ˈtaɪm/"),
+        ]
+    }
+    private static var britishColloquial299: [Word] {
+        [
+            make("follow suit", "to do the same thing that someone else has just done",
+                 "人に倣う・同じことをする",
+                 useCases: ["誰かの行動に他の人も続いたとき", "自分も同じようにすると言うとき"],
+                 examples: [
+                    ("One person left early, and everyone else followed suit.", "一人が早めに帰ったら、みんなそれに続いたんだ。"),
+                    ("If you order dessert, I'll follow suit.", "君がデザート頼むなら、僕もそうするよ。")
+                 ], ipa: "/ˈfɒləʊ ˈsuːt/"),
+            make("a clean slate", "a fresh start where past mistakes or problems are forgotten",
+                 "白紙の状態・一からの出直し",
+                 useCases: ["過去を水に流してやり直すとき", "新しい環境で心機一転するとき"],
+                 examples: [
+                    ("Let's forget about last week and start with a clean slate.", "先週のことは忘れて、一からやり直そう。"),
+                    ("Moving to a new city felt like a clean slate.", "新しい街に引っ越して、心機一転できた気がした。")
+                 ], ipa: "/ə ˈkliːn ˈsleɪt/"),
+            make("stick it out", "(informal) to continue doing something difficult or unpleasant until the end",
+                 "最後まで耐える・辛抱して続ける",
+                 useCases: ["辛い仕事や状況を我慢して続けるとき", "途中で諦めないよう励ますとき"],
+                 examples: [
+                    ("The job's tough, but I'm going to stick it out till summer.", "仕事はきついけど、夏までは辛抱して続けるつもり。"),
+                    ("Just stick it out – it gets easier after the first month.", "とにかく続けてみて。最初の1ヶ月を過ぎれば楽になるから。")
+                 ], ipa: "/ˈstɪk ɪt ˈaʊt/"),
+            make("grin and bear it", "to accept an unpleasant situation without complaining because you cannot change it",
+                 "笑って耐える・黙って我慢する",
+                 useCases: ["どうしようもない状況を受け入れるとき", "文句を言わず我慢するしかないとき"],
+                 examples: [
+                    ("I hate long meetings, but I just have to grin and bear it.", "長い会議は大嫌いだけど、我慢するしかないんだよね。"),
+                    ("There's nothing we can do about the weather – we'll just have to grin and bear it.", "天気はどうしようもないし、耐えるしかないね。")
+                 ], ipa: "/ˈɡrɪn ən ˈbeər ɪt/"),
+            make("face the music", "to accept criticism or punishment for something you have done",
+                 "（自分のしたことの）報いを受ける・責任を取る",
+                 useCases: ["ミスの責任を取りに行くとき", "怒られるのを覚悟するとき"],
+                 examples: [
+                    ("I broke Mum's vase – time to go home and face the music.", "母さんの花瓶割っちゃった。帰って怒られる覚悟をしなきゃ。"),
+                    ("Sooner or later, he'll have to face the music.", "遅かれ早かれ、彼は責任を取らなきゃいけなくなるよ。")
+                 ], ipa: "/ˈfeɪs ðə ˈmjuːzɪk/"),
+            make("suck it up", "(informal) to accept something unpleasant and deal with it without complaining",
+                 "（文句を言わず）我慢する・受け入れる",
+                 useCases: ["嫌なことでも割り切ってやるとき", "愚痴をやめて頑張れと言うとき"],
+                 examples: [
+                    ("It's not ideal, but we'll just have to suck it up.", "理想的じゃないけど、割り切ってやるしかないね。"),
+                    ("I didn't want to work the weekend, but I sucked it up.", "週末に働きたくなかったけど、我慢してやったよ。")
+                 ], ipa: "/ˈsʌk ɪt ˈʌp/"),
+            make("pipe up", "(informal) to suddenly start speaking, especially after being quiet",
+                 "（黙っていた人が）急に口を挟む・声を上げる",
+                 useCases: ["静かだった人が急に発言したとき", "遠慮せず意見を言ってと促すとき"],
+                 examples: [
+                    ("Then my little brother piped up, \"I want pizza!\"", "そしたら弟が急に「ピザがいい！」って言い出したんだ。"),
+                    ("If you've got a question, just pipe up.", "質問があったら遠慮なく言ってね。")
+                 ], ipa: "/ˈpaɪp ˈʌp/"),
+            make("say the word", "used to tell someone that you will do something as soon as they ask",
+                 "言ってくれればすぐやるよ・一言言ってくれれば",
+                 useCases: ["いつでも手伝うと申し出るとき", "準備ができたら合図してと言うとき"],
+                 examples: [
+                    ("If you need a lift, just say the word.", "車で送ってほしかったら、一言言ってね。"),
+                    ("Say the word and I'll book the table.", "言ってくれればすぐ席を予約するよ。")
+                 ], ipa: "/ˈseɪ ðə ˈwɜːd/"),
+            make("you have my word", "used to promise sincerely that you will do something",
+                 "約束する・誓うよ",
+                 useCases: ["真剣に約束するとき", "相手を安心させたいとき"],
+                 examples: [
+                    ("I won't tell anyone – you have my word.", "誰にも言わないよ。約束する。"),
+                    ("You have my word that it'll be finished by Friday.", "金曜までに必ず終わらせるって約束するよ。")
+                 ], ipa: "/ju ˈhæv maɪ ˈwɜːd/"),
+            make("keep your word", "to do what you promised you would do",
+                 "約束を守る",
+                 useCases: ["約束をきちんと守る人を褒めるとき", "約束を守ってと念を押すとき"],
+                 examples: [
+                    ("He said he'd help, and he kept his word.", "彼は手伝うって言って、ちゃんと約束を守ってくれた。"),
+                    ("I always try to keep my word.", "僕はいつも約束は守るようにしてるんだ。")
+                 ], ipa: "/ˈkiːp jɔː ˈwɜːd/"),
+            make("pep talk", "a short speech meant to encourage someone and make them feel more confident",
+                 "激励の言葉・はっぱをかけること",
+                 useCases: ["本番前に誰かを励ますとき", "落ち込んだ人に元気を出させるとき"],
+                 examples: [
+                    ("The coach gave us a pep talk before the match.", "試合前にコーチが激励の言葉をかけてくれた。"),
+                    ("I need a pep talk before my interview.", "面接の前に誰か励ましてほしいよ。")
+                 ], ipa: "/ˈpep ˌtɔːk/"),
+            make("you lot", "(informal, British) used to speak to or about a group of people",
+                 "君たち・あんたら（みんな）",
+                 useCases: ["友人グループや家族にまとめて話しかけるとき", "仲間内でくだけて呼びかけるとき"],
+                 examples: [
+                    ("Are you lot coming to the pub later?", "君たち、後でパブ来る？"),
+                    ("I'll see you lot tomorrow.", "じゃあみんな、また明日ね。")
+                 ], ipa: "/ˈjuː ˌlɒt/"),
+            make("get the giggles", "to start laughing and find it hard to stop, often at a bad moment",
+                 "笑いが止まらなくなる",
+                 useCases: ["笑ってはいけない場面で笑いが止まらないとき", "友達と笑い転げた話をするとき"],
+                 examples: [
+                    ("We got the giggles in the middle of the lesson.", "授業中に笑いが止まらなくなっちゃった。"),
+                    ("Don't look at me or I'll get the giggles!", "こっち見ないで、笑いが止まらなくなるから！")
+                 ], ipa: "/ˈɡet ðə ˈɡɪɡlz/"),
+            make("off topic", "not connected to the subject being discussed",
+                 "話がそれて・本題から外れて",
+                 useCases: ["余談を始めるとき", "話が脱線していると指摘するとき"],
+                 examples: [
+                    ("Slightly off topic, but has anyone seen my keys?", "ちょっと話それるけど、誰か僕の鍵見なかった？"),
+                    ("Sorry, we're getting a bit off topic.", "ごめん、ちょっと話が脱線してるね。")
+                 ], ipa: "/ˌɒf ˈtɒpɪk/"),
+            make("rack your brains", "to think very hard to try to remember or solve something",
+                 "知恵を絞る・必死に思い出そうとする",
+                 useCases: ["名前などを必死に思い出そうとするとき", "いいアイデアを懸命に考えるとき"],
+                 examples: [
+                    ("I've been racking my brains, but I can't remember her name.", "必死に考えてるんだけど、彼女の名前が思い出せない。"),
+                    ("We racked our brains for a present idea.", "プレゼントのアイデアをみんなで知恵を絞って考えた。")
+                 ], ipa: "/ˈræk jɔː ˈbreɪnz/"),
         ]
     }
     private static var britishColloquial283: [Word] {
