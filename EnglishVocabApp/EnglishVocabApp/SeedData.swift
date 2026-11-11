@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282
         ]
         return groups.flatMap { $0 }
     }
@@ -44850,6 +44850,115 @@ enum SeedData {
                     ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
                     ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
                  ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
+        ]
+    }
+    private static var britishColloquial282: [Word] {
+        [
+            make("how's things?", "(British, informal) a casual way of asking how someone's life is going",
+                 "調子どう？・最近どう？",
+                 useCases: ["知り合いに会ったときの挨拶", "久しぶりに連絡するとき"],
+                 examples: [
+                    ("Hiya! How's things?", "やあ！最近どう？"),
+                    ("How's things with you and Tom?", "トムとはうまくいってる？")
+                 ], ipa: "/haʊz θɪŋz/"),
+            make("I thought as much", "used to say that something you suspected has turned out to be true",
+                 "やっぱりね・そうだと思った",
+                 useCases: ["予想が当たったとき", "相手の言い訳を見抜いたとき"],
+                 examples: [
+                    ("\"The train's cancelled.\" \"I thought as much.\"", "「電車運休だって」「やっぱりね」"),
+                    ("He forgot again? I thought as much.", "彼また忘れたの？そうだと思った。")
+                 ], ipa: "/aɪ ˈθɔːt əz mʌtʃ/"),
+            make("just as well", "used to say that it is lucky or a good thing that something happened",
+                 "〜でよかった・かえって好都合",
+                 useCases: ["結果的に良かったと言うとき", "ついていた状況を話すとき"],
+                 examples: [
+                    ("It's just as well we left early – the traffic was awful.", "早めに出てよかったよ、渋滞がひどかった。"),
+                    ("Just as well I brought an umbrella!", "傘持ってきてよかった！")
+                 ], ipa: "/dʒʌst əz ˈwel/"),
+            make("I'd have thought", "used to politely say what you expected or what seems reasonable",
+                 "〜だと思うけどね・普通は〜でしょう",
+                 useCases: ["やんわり意見を言うとき", "意外だと伝えるとき"],
+                 examples: [
+                    ("I'd have thought they'd be here by now.", "もう着いてる頃だと思ったけど。"),
+                    ("I'd have thought a taxi would be quicker.", "タクシーのほうが早いと思うけどね。")
+                 ], ipa: "/aɪd əv ˈθɔːt/"),
+            make("make a day of it", "to turn a trip or activity into a whole day out, doing other enjoyable things too",
+                 "せっかくだから一日楽しむ・一日がかりで出かける",
+                 useCases: ["週末の外出を計画するとき", "ついでに観光や食事をするとき"],
+                 examples: [
+                    ("Let's go to the market and make a day of it.", "市場に行って、せっかくだから一日楽しもうよ。"),
+                    ("We drove to the coast and made a day of it.", "海まで車で行って一日満喫したよ。")
+                 ], ipa: "/meɪk ə ˈdeɪ əv ɪt/"),
+            make("neither do I", "used to agree with a negative statement someone has just made",
+                 "私も〜ない・僕もそう（否定への同意）",
+                 useCases: ["否定文に同意するとき", "好みや意見が同じだと伝えるとき"],
+                 examples: [
+                    ("\"I don't really like horror films.\" \"Neither do I.\"", "「ホラー映画あんまり好きじゃないんだ」「私も」"),
+                    ("\"I don't know where it is.\" \"Neither do I, to be honest.\"", "「どこにあるかわからない」「正直、僕も」")
+                 ], ipa: "/ˈnaɪðər duː aɪ/"),
+            make("believe me", "used to emphasise that what you are saying is true, often from experience",
+                 "本当だって・信じて・ほんとに",
+                 useCases: ["経験から強く言うとき", "相手を説得するとき"],
+                 examples: [
+                    ("Believe me, you don't want to drive in Rome.", "ほんとに、ローマで運転はやめたほうがいいよ。"),
+                    ("It's worth the wait, believe me.", "待つ価値あるって、本当だよ。")
+                 ], ipa: "/bɪˈliːv miː/"),
+            make("God knows", "(informal) used to say that nobody knows something; also used to emphasise something",
+                 "さあね・誰にもわからない・本当に",
+                 useCases: ["全く見当がつかないとき", "強調するとき"],
+                 examples: [
+                    ("God knows where I put my keys.", "鍵どこに置いたか全然わからない。"),
+                    ("God knows I've tried to help him.", "本当に、彼を助けようとしてきたんだよ。")
+                 ], ipa: "/ɡɒd nəʊz/"),
+            make("do you need a bag?", "a question commonly asked by shop staff at the till",
+                 "袋はご入用ですか？",
+                 useCases: ["レジで会計するとき", "買い物の場面"],
+                 examples: [
+                    ("\"Do you need a bag?\" \"No thanks, I've got one.\"", "「袋いりますか？」「いえ、持ってます」"),
+                    ("Do you need a bag? It's 10p.", "袋いりますか？10ペンスです。")
+                 ], ipa: "/duː jə niːd ə bæɡ/"),
+            make("the wifi's down", "the wireless internet connection is not working",
+                 "Wi-Fiが落ちてる・ネットがつながらない",
+                 useCases: ["自宅や職場でネットが使えないとき", "カフェやホテルで"],
+                 examples: [
+                    ("The wifi's down again – can you restart the router?", "またWi-Fi落ちてる、ルーター再起動してくれる？"),
+                    ("Sorry I didn't reply, the wifi was down.", "返信できなくてごめん、ネットが落ちてたんだ。")
+                 ], ipa: "/ðə ˈwaɪfaɪz daʊn/"),
+            make("what a week!", "used to say that the past week has been very busy, tiring or eventful",
+                 "なんて一週間だ・大変な一週間だった",
+                 useCases: ["週末に一週間を振り返るとき", "疲れを共有するとき"],
+                 examples: [
+                    ("Phew, what a week! I need a drink.", "ふう、大変な一週間だった！一杯飲みたい。"),
+                    ("What a week – three deadlines and a cold.", "なんて週だよ、締切3つに風邪まで。")
+                 ], ipa: "/wɒt ə ˈwiːk/"),
+            make("thank God it's Friday", "(informal) used to express relief that the working week is nearly over; often shortened to TGIF",
+                 "やっと金曜日だ・花金",
+                 useCases: ["金曜日に同僚と話すとき", "週末を楽しみにしているとき"],
+                 examples: [
+                    ("Thank God it's Friday – any plans tonight?", "やっと金曜だね、今夜何か予定ある？"),
+                    ("I'm so tired. Thank God it's Friday.", "もうクタクタ。金曜でよかった。")
+                 ], ipa: "/θæŋk ɡɒd ɪts ˈfraɪdeɪ/"),
+            make("is there anything good on?", "used to ask whether there is an interesting programme on TV or a good film showing",
+                 "何か面白いのやってる？",
+                 useCases: ["テレビを見る前に", "映画を観に行くか相談するとき"],
+                 examples: [
+                    ("Is there anything good on tonight?", "今夜何か面白いのやってる？"),
+                    ("Is there anything good on at the cinema this weekend?", "今週末、映画館で何か良いのやってる？")
+                 ], ipa: "/ɪz ðər ˈeniθɪŋ ɡʊd ɒn/"),
+            make("I've got a train to catch", "used to explain that you need to leave soon",
+                 "電車の時間があるから（そろそろ行かなきゃ）",
+                 useCases: ["会話を切り上げるとき", "急いでいる理由を伝えるとき"],
+                 examples: [
+                    ("Sorry, I can't stay – I've got a train to catch.", "ごめん、ゆっくりできないんだ、電車の時間があって。"),
+                    ("I'd love another drink, but I've got a train to catch.", "もう一杯飲みたいけど、電車に乗らなきゃ。")
+                 ], ipa: "/aɪv ɡɒt ə treɪn tə kætʃ/"),
+            make("I don't want to hold you up", "used politely when you think you may be delaying someone",
+                 "引き止めちゃ悪いから・お時間取らせたくないので",
+                 useCases: ["相手が忙しそうなとき", "会話を丁寧に終えるとき"],
+                 examples: [
+                    ("I don't want to hold you up, so I'll be quick.", "お引き止めしたくないので手短に話しますね。"),
+                    ("Go on, I don't want to hold you up.", "どうぞ行って、引き止めちゃ悪いし。")
+                 ], ipa: "/aɪ dəʊnt wɒnt tə həʊld juː ʌp/"),
         ]
     }
     private static var britishColloquial281: [Word] {
