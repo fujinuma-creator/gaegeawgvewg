@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287
         ]
         return groups.flatMap { $0 }
     }
@@ -45177,6 +45177,115 @@ enum SeedData {
                     ("Congratulations on the promotion – it's been a long time coming!", "昇進おめでとう！やっとだね！"),
                     ("The new station finally opened. It's been a long time coming.", "新しい駅がついに開業した。待ちに待ったよ。")
                  ], ipa: "/ɪts bɪn ə ˈlɒŋ taɪm ˈkʌmɪŋ/"),
+        ]
+    }
+    private static var britishColloquial287: [Word] {
+        [
+            make("to top it all off", "(informal) used to introduce the last and often worst thing in a series of bad events",
+                 "おまけに・挙げ句の果てに",
+                 useCases: ["悪いことが重なった話をするとき", "最後のとどめを強調するとき"],
+                 examples: [
+                    ("I missed the bus, spilt my coffee, and to top it all off, it started raining.", "バスに乗り遅れ、コーヒーをこぼし、おまけに雨まで降ってきた。"),
+                    ("The hotel was dirty, the food was cold, and to top it all off, they lost our booking.", "ホテルは汚いし料理は冷めてるし、挙げ句の果てに予約までなくされた。")
+                 ], ipa: "/tə ˈtɒp ɪt ˈɔːl ˈɒf/"),
+            make("knowing my luck", "(informal) used to say that you expect something bad to happen because you are often unlucky",
+                 "どうせ私のことだから・私の運じゃ",
+                 useCases: ["悪い予感を冗談っぽく言うとき", "自分の運の悪さを嘆くとき"],
+                 examples: [
+                    ("Knowing my luck, it'll rain the day of the barbecue.", "どうせ私のことだから、バーベキューの日は雨だよ。"),
+                    ("I'll enter the draw, but knowing my luck I won't win anything.", "抽選に応募するけど、私の運じゃ何も当たらないだろうね。")
+                 ], ipa: "/ˈnəʊɪŋ maɪ ˈlʌk/"),
+            make("this time next week", "at the same time one week from now; often used when looking forward to something",
+                 "来週の今ごろは",
+                 useCases: ["楽しみな予定を話すとき", "締め切りや変化を前にしたとき"],
+                 examples: [
+                    ("This time next week, we'll be lying on a beach in Spain.", "来週の今ごろはスペインのビーチで寝そべってるよ。"),
+                    ("This time next week it'll all be over, so don't worry.", "来週の今ごろには全部終わってるから、心配しないで。")
+                 ], ipa: "/ðɪs ˈtaɪm nekst ˈwiːk/"),
+            make("that's better", "used to say that something has improved, or to comfort someone who has stopped being upset",
+                 "そのほうがいい・よしよし、それでいい",
+                 useCases: ["状況が改善したとき", "相手が落ち着いたり笑顔になったとき"],
+                 examples: [
+                    ("I've turned the heating up. That's better, isn't it?", "暖房を強くしたよ。このほうがいいでしょ？"),
+                    ("Come on, give us a smile. That's better!", "ほら、笑って。そうそう、それでいい！")
+                 ], ipa: "/ðæts ˈbetə/"),
+            make("let's hope so", "used to say that you hope something will happen or is true",
+                 "そうだといいね・そう願おう",
+                 useCases: ["相手の楽観的な予想に応じるとき", "良い結果を願うとき"],
+                 examples: [
+                    ("\"The trains should be running again tomorrow.\" \"Let's hope so.\"", "「明日には電車が復旧するはずだよ」「そうだといいね」"),
+                    ("\"Do you think she'll say yes?\" \"Let's hope so!\"", "「彼女OKしてくれると思う？」「そう願おう！」")
+                 ], ipa: "/lets ˈhəʊp səʊ/"),
+            make("you could've fooled me", "(informal) used to say that you do not believe what someone has just said, because it does not seem true",
+                 "とてもそうは見えなかったけど・よく言うよ",
+                 useCases: ["相手の発言が実際と違うと感じたとき", "軽く皮肉を言うとき"],
+                 examples: [
+                    ("\"I'm not tired at all.\" \"You could've fooled me – you've been yawning all evening.\"", "「全然疲れてないよ」「とてもそうは見えないけど。一晩中あくびしてるじゃん」"),
+                    ("\"He's usually really organised.\" \"Could've fooled me!\"", "「彼、普段はすごくきっちりしてるんだよ」「よく言うよ！」")
+                 ], ipa: "/juː ˈkʊdəv ˈfuːld miː/"),
+            make("take the scenic route", "(humorous) to go a longer way than necessary, either to enjoy the view or because you got lost",
+                 "遠回りする・寄り道する（冗談で道に迷ったときにも）",
+                 useCases: ["景色のいい道を選ぶとき", "道に迷ったのをごまかすとき"],
+                 examples: [
+                    ("We're not lost – we're just taking the scenic route.", "迷ってないよ、ちょっと遠回りしてるだけ。"),
+                    ("Let's take the scenic route along the coast on the way home.", "帰りは海沿いの景色のいい道を通って帰ろう。")
+                 ], ipa: "/teɪk ðə ˈsiːnɪk ˈruːt/"),
+            make("don't mind me", "used to tell people to carry on with what they are doing and not to worry about you",
+                 "私のことは気にしないで・お構いなく",
+                 useCases: ["人の邪魔をしてしまったとき", "そっと通り抜けるとき"],
+                 examples: [
+                    ("Don't mind me – I'm just grabbing my charger.", "気にしないで、充電器を取りに来ただけだから。"),
+                    ("Carry on, don't mind me. I'll wait over here.", "続けて、お構いなく。こっちで待ってるね。")
+                 ], ipa: "/ˈdəʊnt ˈmaɪnd miː/"),
+            make("in what way?", "used to ask someone to explain more clearly what they mean",
+                 "どういう意味で？・どんなふうに？",
+                 useCases: ["相手の発言の具体的な内容を聞くとき", "曖昧な批判や意見を確認するとき"],
+                 examples: [
+                    ("\"The new place is different.\" \"In what way?\"", "「新しい店、なんか違うね」「どんなふうに？」"),
+                    ("\"I think he's changed.\" \"Really? In what way?\"", "「彼、変わったと思う」「本当？どういうところが？」")
+                 ], ipa: "/ɪn ˈwɒt ˈweɪ/"),
+            make("what are you after?", "(British, informal) used to ask someone what they want or are looking for, sometimes suspecting a favour",
+                 "何が欲しいの？・何が目的？・何をお探しですか",
+                 useCases: ["店で客の希望を聞くとき", "急に優しくされて下心を疑うとき"],
+                 examples: [
+                    ("You've made me breakfast? Okay, what are you after?", "朝ごはん作ってくれたの？で、何が目当て？"),
+                    ("\"Can I help you?\" \"Yes, I'm after a birthday present for my sister.\"", "「何かお探しですか？」「ええ、妹への誕生日プレゼントを探してて」")
+                 ], ipa: "/ˈwɒt ə juː ˈɑːftə/"),
+            make("I'll take that as a yes", "(informal) used to say that you understand someone's silence or reaction to mean they agree",
+                 "じゃあ「イエス」ってことね",
+                 useCases: ["相手が黙っていたり、うなずいたとき", "冗談っぽく同意を取り付けるとき"],
+                 examples: [
+                    ("\"Fancy another drink?\" … \"I'll take that smile as a yes.\"", "「もう一杯どう？」…「その笑顔はイエスってことね」"),
+                    ("No objections? Right, I'll take that as a yes.", "反対なし？よし、賛成ってことにするね。")
+                 ], ipa: "/aɪl ˈteɪk ðæt əz ə ˈjes/"),
+            make("you're not the only one", "used to tell someone that other people feel or experience the same thing",
+                 "あなただけじゃないよ・私もだよ",
+                 useCases: ["相手の悩みに共感するとき", "同じ気持ちだと伝えるとき"],
+                 examples: [
+                    ("\"I found that meeting so confusing.\" \"You're not the only one.\"", "「あの会議、すごく分かりにくかった」「あなただけじゃないよ」"),
+                    ("If you're nervous about the exam, you're not the only one.", "試験が不安なのは君だけじゃないよ。")
+                 ], ipa: "/jɔː ˈnɒt ði ˈəʊnli wʌn/"),
+            make("who'd have thought", "used to express surprise that something has happened or is true",
+                 "誰が想像しただろう・まさか〜とはね",
+                 useCases: ["意外な展開に驚いたとき", "昔と今を比べて感慨深いとき"],
+                 examples: [
+                    ("Who'd have thought we'd still be friends after twenty years?", "20年経ってもまだ友達だなんて、誰が想像した？"),
+                    ("Jack's running a marathon? Who'd have thought it!", "ジャックがマラソン？まさかね！")
+                 ], ipa: "/ˈhuːd əv ˈθɔːt/"),
+            make("life's too short", "used to say that you should not waste time worrying about unimportant things or doing things you do not enjoy",
+                 "人生は短いんだから・気にしてたらきりがない",
+                 useCases: ["小さなことを気にしないよう励ますとき", "やりたいことをやろうと背中を押すとき"],
+                 examples: [
+                    ("Just let it go – life's too short to stay angry.", "もう水に流しなよ。怒ってるには人生は短すぎるよ。"),
+                    ("Life's too short to drink bad coffee.", "まずいコーヒーを飲んでる暇はないよ、人生は短いんだから。")
+                 ], ipa: "/ˈlaɪfs tuː ˈʃɔːt/"),
+            make("no such luck", "(informal) used to say that something good you hoped for did not happen",
+                 "そううまくはいかなかった・残念ながら",
+                 useCases: ["期待が外れたことを伝えるとき", "「〜だった？」と聞かれて否定するとき"],
+                 examples: [
+                    ("I was hoping the meeting would be cancelled, but no such luck.", "会議が中止になればと思ってたけど、そううまくはいかなかった。"),
+                    ("\"Did you get the day off?\" \"No such luck.\"", "「休み取れた？」「残念ながら」")
+                 ], ipa: "/nəʊ ˈsʌtʃ ˈlʌk/"),
         ]
     }
     private static var britishColloquial283: [Word] {
