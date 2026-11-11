@@ -44910,13 +44910,13 @@ enum SeedData {
                     ("\"Is it worth the money?\" \"I'd say so, yeah.\"", "「値段の価値ある？」「うん、あると思うよ」"),
                     ("\"Was it a good match?\" \"I'd say so – best one this season.\"", "「いい試合だった？」「そうだね、今シーズン一番だった」")
                  ], ipa: "/aɪd ˈseɪ səʊ/"),
-            make("it can't be helped", "used to say that a bad situation cannot be avoided or changed, so you have to accept it",
-                 "仕方ない・どうしようもない",
-                 useCases: ["避けられない事態を受け入れるとき", "相手を慰めるとき"],
+            make("more often than not", "usually; in most cases",
+                 "たいてい・大抵の場合",
+                 useCases: ["習慣や傾向を話すとき", "よくあることを説明するとき"],
                  examples: [
-                    ("The flight's delayed, but it can't be helped.", "フライト遅れてるけど、仕方ないね。"),
-                    ("I'll miss the party, but it can't be helped – I've got work.", "パーティーに行けないけど、仕方ない、仕事なんだ。")
-                 ], ipa: "/ɪt ˈkɑːnt bi ˈhelpt/"),
+                    ("More often than not, I just have toast for breakfast.", "朝ごはんはたいていトーストだけだよ。"),
+                    ("The bus is late more often than not.", "バスはしょっちゅう遅れるんだ。")
+                 ], ipa: "/ˈmɔːr ˈɒfn ðən ˈnɒt/"),
             make("no hurry", "used to tell someone they don't need to do something quickly",
                  "急がなくていいよ・ゆっくりでいいよ",
                  useCases: ["相手を急かさないとき", "返事や返却に期限がないとき"],
@@ -44924,13 +44924,13 @@ enum SeedData {
                     ("Give the book back whenever – no hurry.", "本はいつ返してくれてもいいよ、急がないから。"),
                     ("\"Sorry, I'm still deciding.\" \"No hurry!\"", "「ごめん、まだ迷ってる」「ゆっくりでいいよ！」")
                  ], ipa: "/nəʊ ˈhʌri/"),
-            make("get going", "to leave or start doing something, especially because it's time to",
-                 "そろそろ出る・始める・取りかかる",
-                 useCases: ["帰る・出発すると切り出すとき", "作業を始めるとき"],
+            make("that's not like you", "used to say that someone is behaving differently from how they usually do",
+                 "あなたらしくないね・珍しいね",
+                 useCases: ["相手の様子がいつもと違うとき", "心配や驚きを伝えるとき"],
                  examples: [
-                    ("It's getting late – I'd better get going.", "遅くなってきたし、そろそろ行かなきゃ。"),
-                    ("Let's get going or we'll miss the train.", "もう出よう、じゃないと電車に乗り遅れるよ。")
-                 ], ipa: "/ɡet ˈɡəʊɪŋ/"),
+                    ("You're late? That's not like you.", "遅刻？あなたらしくないね。"),
+                    ("You've hardly said a word all night – that's not like you.", "一晩中ほとんど喋ってないね、珍しいじゃん。")
+                 ], ipa: "/ðæts nɒt ˈlaɪk juː/"),
             make("that's me done", "(British, informal) used to say that you have finished what you were doing",
                  "これで終わり・私はもう終わった",
                  useCases: ["仕事や作業を終えたとき", "食事や買い物を済ませたとき"],
