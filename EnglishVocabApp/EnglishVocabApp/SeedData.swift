@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288
         ]
         return groups.flatMap { $0 }
     }
@@ -45286,6 +45286,115 @@ enum SeedData {
                     ("I was hoping the meeting would be cancelled, but no such luck.", "会議が中止になればと思ってたけど、そううまくはいかなかった。"),
                     ("\"Did you get the day off?\" \"No such luck.\"", "「休み取れた？」「残念ながら」")
                  ], ipa: "/nəʊ ˈsʌtʃ ˈlʌk/"),
+        ]
+    }
+    private static var britishColloquial288: [Word] {
+        [
+            make("a quiet night in", "an evening spent relaxing at home rather than going out",
+                 "家でのんびり過ごす夜",
+                 useCases: ["週末の過ごし方を話すとき", "誘いを断って家にいたいとき"],
+                 examples: [
+                    ("I'm shattered, so I'm just having a quiet night in tonight.", "くたくただから、今夜は家でのんびりするよ。"),
+                    ("After a busy week, a quiet night in with a film sounds perfect.", "忙しい一週間の後は、家で映画を観てのんびりするのが最高だね。")
+                 ], ipa: "/ə ˈkwaɪət ˈnaɪt ˈɪn/"),
+            make("on second thoughts", "used to say that you have changed your mind about something you have just said or decided",
+                 "やっぱり・考え直したら",
+                 useCases: ["注文や予定をその場で変えるとき", "言ったことを撤回するとき"],
+                 examples: [
+                    ("I'll have the fish. Actually, on second thoughts, I'll go for the pasta.", "魚にします。あ、やっぱりパスタにします。"),
+                    ("On second thoughts, let's leave it until tomorrow.", "考え直したけど、明日にしよう。")
+                 ], ipa: "/ɒn ˈsekənd ˈθɔːts/"),
+            make("get a round in", "(informal) to buy drinks for everyone in your group at a pub or bar",
+                 "（パブで）みんなの分の飲み物をおごる",
+                 useCases: ["パブで飲み物を買うとき", "順番におごる文化の話をするとき"],
+                 examples: [
+                    ("Sit down, I'll get a round in.", "座ってて、みんなの分買ってくるよ。"),
+                    ("It's about time you got a round in – you've been drinking on us all night!", "そろそろ君がおごる番だよ。一晩中おごられっぱなしじゃないか！")
+                 ], ipa: "/ɡet ə ˈraʊnd ˈɪn/"),
+            make("ask for a refund", "to request that a shop or company gives you your money back",
+                 "返金を求める",
+                 useCases: ["買い物で不良品があったとき", "サービスに不満があるとき"],
+                 examples: [
+                    ("The headphones stopped working after a day, so I asked for a refund.", "ヘッドホンが一日で壊れたから、返金をお願いしたよ。"),
+                    ("If the flight's cancelled, you can ask for a full refund.", "フライトが欠航なら、全額返金を求められるよ。")
+                 ], ipa: "/ɑːsk fər ə ˈriːfʌnd/"),
+            make("keep the receipt", "to hold on to the paper showing you paid for something, in case you need to return it",
+                 "レシートを取っておく",
+                 useCases: ["プレゼントや服を買うとき", "返品の可能性があるとき"],
+                 examples: [
+                    ("Keep the receipt in case it doesn't fit.", "サイズが合わないといけないから、レシートは取っておいてね。"),
+                    ("I didn't keep the receipt, so they wouldn't take it back.", "レシートを取っておかなかったから、返品してもらえなかった。")
+                 ], ipa: "/kiːp ðə rɪˈsiːt/"),
+            make("best before", "the date printed on food showing when it is best to eat it by",
+                 "賞味期限（〜までにお召し上がりください）",
+                 useCases: ["食品の期限を確認するとき", "冷蔵庫の中身を整理するとき"],
+                 examples: [
+                    ("This yoghurt's best before yesterday – do you think it's still OK?", "このヨーグルト、賞味期限昨日だけど、まだ大丈夫かな？"),
+                    ("Check the best before date before you buy it.", "買う前に賞味期限を確認してね。")
+                 ], ipa: "/ˈbest bɪˈfɔː/"),
+            make("walk it", "(informal) to go somewhere on foot instead of taking transport",
+                 "歩いて行く",
+                 useCases: ["タクシーやバスを使うか決めるとき", "距離が近いと伝えるとき"],
+                 examples: [
+                    ("It's only ten minutes – we can walk it.", "10分くらいだから歩いて行けるよ。"),
+                    ("The buses weren't running, so we had to walk it.", "バスが動いてなかったから歩くしかなかった。")
+                 ], ipa: "/ˈwɔːk ɪt/"),
+            make("work a treat", "(informal) to work very well or have exactly the effect you wanted",
+                 "効果てきめんだ・ばっちりうまくいく",
+                 useCases: ["方法や道具がうまくいったとき", "おすすめを紹介するとき"],
+                 examples: [
+                    ("I tried that trick for the hiccups and it worked a treat.", "しゃっくりのあの裏技を試したら、効果てきめんだったよ。"),
+                    ("A bit of vinegar on the window works a treat.", "窓にちょっと酢をつけると、すごくきれいになるよ。")
+                 ], ipa: "/wɜːk ə ˈtriːt/"),
+            make("like a dream", "(informal) very well, smoothly or easily",
+                 "夢のように順調に・スムーズに",
+                 useCases: ["車や機械の調子がいいとき", "計画が順調に進んだとき"],
+                 examples: [
+                    ("The car's running like a dream since it was serviced.", "点検してから、車がすごく快調だよ。"),
+                    ("The whole wedding went like a dream.", "結婚式は最初から最後まで完璧にうまくいった。")
+                 ], ipa: "/laɪk ə ˈdriːm/"),
+            make("text me when you get home", "used when saying goodbye to ask someone to let you know they have arrived home safely",
+                 "家に着いたら連絡してね",
+                 useCases: ["夜に友達と別れるとき", "相手の帰り道が心配なとき"],
+                 examples: [
+                    ("Night, then! Text me when you get home.", "じゃあおやすみ！家に着いたら連絡してね。"),
+                    ("It's really late – text me when you get home, OK?", "もうだいぶ遅いから、着いたらメッセージしてね。")
+                 ], ipa: "/ˈtekst miː wen juː ɡet ˈhəʊm/"),
+            make("until then", "up to the time that has just been mentioned; often used when saying goodbye before a planned meeting",
+                 "それまで（は）・じゃあその時に",
+                 useCases: ["次に会う約束をして別れるとき", "ある時点までの予定を話すとき"],
+                 examples: [
+                    ("See you on Friday, then. Until then, take care!", "じゃあ金曜日に。それまで元気でね！"),
+                    ("The shop opens at ten, so we'll have a coffee until then.", "店は10時開店だから、それまでコーヒーでも飲もう。")
+                 ], ipa: "/ənˈtɪl ˈðen/"),
+            make("push something back", "to change a meeting or event to a later time or date",
+                 "（予定を）後ろにずらす・延期する",
+                 useCases: ["予定の時間を遅らせるとき", "締め切りを延ばしてもらうとき"],
+                 examples: [
+                    ("Can we push the meeting back to three?", "会議を3時にずらせる？"),
+                    ("The launch has been pushed back to next month.", "発売は来月に延期になった。")
+                 ], ipa: "/pʊʃ ˈsʌmθɪŋ ˈbæk/"),
+            make("bring something forward", "to change a meeting or event to an earlier time or date",
+                 "（予定を）前倒しにする・早める",
+                 useCases: ["予定を早めたいとき", "スケジュール調整をするとき"],
+                 examples: [
+                    ("Could we bring dinner forward to seven? I've got an early start.", "夕食を7時に早められる？明日朝早いんだ。"),
+                    ("They've brought the deadline forward by a week.", "締め切りが一週間前倒しになった。")
+                 ], ipa: "/brɪŋ ˈsʌmθɪŋ ˈfɔːwəd/"),
+            make("catch the sun", "(informal) to get slightly brown or red skin from being outside in the sun",
+                 "日に焼ける",
+                 useCases: ["外で過ごした後の肌について話すとき", "旅行帰りの人に声をかけるとき"],
+                 examples: [
+                    ("You've caught the sun! Have you been away?", "日焼けしたね！どこか行ってたの？"),
+                    ("I only sat in the garden for an hour, but I caught the sun on my neck.", "庭に1時間座ってただけなのに、首が日焼けしちゃった。")
+                 ], ipa: "/kætʃ ðə ˈsʌn/"),
+            make("a close call", "a situation in which something bad very nearly happened but was avoided",
+                 "危機一髪・ギリギリセーフ",
+                 useCases: ["事故や失敗をぎりぎり避けたとき", "間に合った・助かった話をするとき"],
+                 examples: [
+                    ("That cyclist nearly hit me – that was a close call!", "あの自転車にぶつかられるところだった、危機一髪！"),
+                    ("We made the train with a minute to spare. Close call!", "電車に1分前に間に合った。ギリギリセーフ！")
+                 ], ipa: "/ə ˈkləʊs ˈkɔːl/"),
         ]
     }
     private static var britishColloquial283: [Word] {
