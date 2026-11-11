@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292
         ]
         return groups.flatMap { $0 }
     }
@@ -45722,6 +45722,115 @@ enum SeedData {
                     ("Need a charger? Don't worry, I'll sort you out.", "充電器いる？心配しないで、用意してあげるよ。"),
                     ("Leave it with me – I'll sort you out with a ticket.", "任せて、チケットなんとかしてあげるから。")
                  ], ipa: "/aɪl ˈsɔːt juː ˈaʊt/"),
+        ]
+    }
+    private static var britishColloquial292: [Word] {
+        [
+            make("be run off your feet", "(British, informal) to be extremely busy, with no time to rest",
+                 "てんてこ舞いだ・忙しくて休む暇もない",
+                 useCases: ["仕事やバイトが忙しすぎたことを話すとき", "相手の忙しさを気遣うとき"],
+                 examples: [
+                    ("Sorry I didn't text back – I've been run off my feet all day.", "返信できなくてごめん、一日中てんてこ舞いだったんだ。"),
+                    ("The café was packed, so the staff were run off their feet.", "カフェが満員で、店員さんたち休む暇もなかったよ。")
+                 ], ipa: "/bi ˈrʌn ɒf jɔː ˈfiːt/"),
+            make("save for a rainy day", "to keep some money for a time in the future when you might need it",
+                 "まさかの時に備えて貯めておく",
+                 useCases: ["貯金の話をするとき", "臨時収入の使い道を話すとき"],
+                 examples: [
+                    ("I'm not spending my bonus – I'm saving it for a rainy day.", "ボーナスは使わないよ。何かあった時のために取っておくんだ。"),
+                    ("It's always good to have a bit put by for a rainy day.", "いざという時のために少し貯めておくのはいいことだよ。")
+                 ], ipa: "/ˈseɪv fər ə ˈreɪni ˈdeɪ/"),
+            make("whatever floats your boat", "(informal) do whatever makes you happy, even if it isn't my taste",
+                 "好きにすればいいよ・人それぞれだね",
+                 useCases: ["相手の変わった趣味を軽く受け流すとき", "自分は興味ないが否定はしないとき"],
+                 examples: [
+                    ("You want to go camping in November? Whatever floats your boat!", "11月にキャンプ？まあ、好きにすればいいよ！"),
+                    ("Pineapple on pizza isn't for me, but whatever floats your boat.", "ピザにパイナップルは私は無理だけど、人それぞれだね。")
+                 ], ipa: "/wɒtˈevə ˈfləʊts jɔː ˈbəʊt/"),
+            make("have a memory like a sieve", "(informal) to forget things very easily",
+                 "ものすごく忘れっぽい・ザル頭",
+                 useCases: ["自分の物忘れを笑い話にするとき", "リマインドを頼むとき"],
+                 examples: [
+                    ("Remind me tomorrow – I've got a memory like a sieve.", "明日リマインドしてね、すぐ忘れちゃうから。"),
+                    ("I forgot your birthday again? Sorry, I've got a memory like a sieve.", "また誕生日忘れてた？ごめん、ほんと忘れっぽくて。")
+                 ], ipa: "/hæv ə ˈmeməri laɪk ə ˈsɪv/"),
+            make("good effort", "(informal) said to praise someone for trying hard, even if the result wasn't perfect",
+                 "よく頑張ったね・ナイストライ",
+                 useCases: ["結果はいまいちでも努力を褒めるとき", "スポーツやゲームで相手を労うとき"],
+                 examples: [
+                    ("You didn't win, but that was a good effort.", "勝てなかったけど、よく頑張ったよ。"),
+                    ("Good effort on the cake – it tastes great, even if it looks a bit wonky!", "ケーキよく頑張ったね。ちょっと形は歪だけど、すごく美味しいよ！")
+                 ], ipa: "/ɡʊd ˈefət/"),
+            make("I can't believe my luck", "said when something unexpectedly good happens to you",
+                 "ついてるなんてもんじゃない・信じられないくらいラッキー",
+                 useCases: ["思わぬ幸運に恵まれたとき", "いい知らせを人に話すとき"],
+                 examples: [
+                    ("They upgraded me to business class – I can't believe my luck!", "ビジネスクラスにアップグレードしてもらえたの、信じられないくらいラッキー！"),
+                    ("Found a tenner in my old coat. I can't believe my luck.", "古いコートから10ポンド出てきた。ついてるなあ。")
+                 ], ipa: "/aɪ ˈkɑːnt bɪˈliːv maɪ ˈlʌk/"),
+            make("it takes me back", "it reminds me of an earlier time in my life, often in a pleasant way",
+                 "懐かしいなあ・昔を思い出す",
+                 useCases: ["昔の曲や写真に触れたとき", "思い出の場所を訪れたとき"],
+                 examples: [
+                    ("This song really takes me back to my uni days.", "この曲、大学時代を本当に思い出すなあ。"),
+                    ("Walking past my old school – it takes me back.", "母校の前を通ると、懐かしくなるよ。")
+                 ], ipa: "/ɪt ˈteɪks miː ˈbæk/"),
+            make("a blast from the past", "(informal) something or someone from the past that you suddenly see or hear again",
+                 "懐かしいもの・久しぶりの再会",
+                 useCases: ["昔の知人から連絡が来たとき", "懐かしい物を見つけたとき"],
+                 examples: [
+                    ("Wow, a message from my old flatmate – what a blast from the past!", "わあ、昔のルームメイトからメッセージ！懐かしい！"),
+                    ("They played some '90s hits – a real blast from the past.", "90年代のヒット曲がかかってて、すごく懐かしかったよ。")
+                 ], ipa: "/ə ˈblɑːst frəm ðə ˈpɑːst/"),
+            make("my brain's fried", "(informal) I'm so mentally tired that I can't think properly",
+                 "頭がもう回らない・脳みそが限界",
+                 useCases: ["長時間の勉強や仕事の後", "これ以上考えられないと伝えるとき"],
+                 examples: [
+                    ("Can we finish this tomorrow? My brain's fried.", "続きは明日にしない？もう頭が回らないよ。"),
+                    ("After eight hours of meetings, my brain's completely fried.", "8時間も会議して、もう脳みそが限界。")
+                 ], ipa: "/maɪ ˈbreɪnz ˈfraɪd/"),
+            make("a fair way", "(British, informal) quite a long distance",
+                 "結構な距離・かなり遠い",
+                 useCases: ["場所までの距離を説明するとき", "歩くか乗り物を使うか相談するとき"],
+                 examples: [
+                    ("It's a fair way to the station – shall we get a taxi?", "駅まで結構あるよ。タクシーにする？"),
+                    ("We walked a fair way before we found somewhere to eat.", "食べる所が見つかるまで、かなり歩いたよ。")
+                 ], ipa: "/ə ˈfeə ˈweɪ/"),
+            make("a big eater", "someone who usually eats a lot of food",
+                 "大食い・よく食べる人",
+                 useCases: ["食事の量について話すとき", "料理を多めに用意するか決めるとき"],
+                 examples: [
+                    ("My brother's a big eater, so make plenty.", "兄はよく食べるから、たくさん作っておいて。"),
+                    ("I'm not a big eater – just a small portion for me, please.", "私はあまり食べないので、少なめでお願いします。")
+                 ], ipa: "/ə ˈbɪɡ ˈiːtə/"),
+            make("the life and soul of the party", "a lively, fun person who makes a social event enjoyable for everyone",
+                 "パーティーの盛り上げ役・場のムードメーカー",
+                 useCases: ["社交的な友人を紹介するとき", "飲み会の様子を話すとき"],
+                 examples: [
+                    ("Invite Tom – he's always the life and soul of the party.", "トムを呼びなよ、いつも場を盛り上げてくれるから。"),
+                    ("She's quiet at work, but she's the life and soul of the party at weekends.", "彼女、職場では静かだけど、週末はムードメーカーなんだよ。")
+                 ], ipa: "/ðə ˈlaɪf ən ˈsəʊl əv ðə ˈpɑːti/"),
+            make("a social butterfly", "someone who loves meeting people and moves easily from one group to another",
+                 "社交的な人・誰とでも仲良くなれる人",
+                 useCases: ["社交的な人の性格を表すとき", "パーティーで色々な人と話す人について"],
+                 examples: [
+                    ("He knows everyone here – he's a real social butterfly.", "彼ここにいる全員と知り合いなんだよ。本当に社交的だよね。"),
+                    ("I'm not much of a social butterfly; I prefer small groups.", "私はあまり社交的なタイプじゃなくて、少人数の方が好き。")
+                 ], ipa: "/ə ˈsəʊʃl ˈbʌtəflaɪ/"),
+            make("hit the spot", "(informal) to be exactly what you wanted or needed, especially food or drink",
+                 "まさにこれが欲しかった・最高に満たされる",
+                 useCases: ["食べ物や飲み物に満足したとき", "疲れた時の一杯について話すとき"],
+                 examples: [
+                    ("That cup of tea really hit the spot.", "あの紅茶、まさに求めてた一杯だったよ。"),
+                    ("A hot bowl of soup on a cold day – that hits the spot.", "寒い日に熱々のスープ、最高だね。")
+                 ], ipa: "/ˈhɪt ðə ˈspɒt/"),
+            make("have a heart of gold", "to be a very kind and generous person",
+                 "とても優しい・心がきれいだ",
+                 useCases: ["人の優しさを褒めるとき", "見た目と違って優しい人を紹介するとき"],
+                 examples: [
+                    ("He seems a bit grumpy, but he's got a heart of gold.", "ちょっと無愛想に見えるけど、本当は心の優しい人なんだ。"),
+                    ("My gran has a heart of gold – she'd do anything for anyone.", "うちのおばあちゃんはすごく優しくて、誰のためにでも何でもするんだ。")
+                 ], ipa: "/hæv ə ˈhɑːt əv ˈɡəʊld/"),
         ]
     }
     private static var britishColloquial283: [Word] {
