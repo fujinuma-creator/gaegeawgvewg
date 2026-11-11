@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302
         ]
         return groups.flatMap { $0 }
     }
@@ -46812,6 +46812,115 @@ enum SeedData {
                     ("The client hated the design, so it's back to the drawing board.", "クライアントがデザインを全然気に入らなかったから、一からやり直しだよ。"),
                     ("Well, that didn't work. Back to the drawing board!", "うーん、ダメだったね。振り出しに戻ろう！")
                  ], ipa: "/ˈbæk tə ðə ˈdrɔːɪŋ ˌbɔːd/"),
+        ]
+    }
+    private static var britishColloquial302: [Word] {
+        [
+            make("any joy?", "(British, informal) used to ask whether someone has had any success with something",
+                 "うまくいった？・成果あった？",
+                 useCases: ["頼んでいたことの進み具合を聞くとき", "探し物や問い合わせの結果を尋ねるとき"],
+                 examples: [
+                    ("Any joy with the landlord about the boiler?", "ボイラーの件、大家さんとはうまくいった？"),
+                    ("I tried calling them again, but no joy.", "もう一回電話してみたけど、ダメだったよ。")
+                 ], ipa: "/ˈeni ˈdʒɔɪ/"),
+            make("make a night of it", "to decide to spend the whole evening enjoying yourself, rather than just going out for a short time",
+                 "（せっかくだから）夜通し楽しむ・とことん楽しむ",
+                 useCases: ["軽く出かけるつもりが長く遊ぶことにしたとき", "特別な夜を存分に楽しもうと提案するとき"],
+                 examples: [
+                    ("We only went for one drink, but ended up making a night of it.", "一杯だけのつもりが、結局夜通し楽しんじゃった。"),
+                    ("It's your birthday – let's make a night of it!", "誕生日なんだから、とことん楽しもうよ！")
+                 ], ipa: "/ˈmeɪk ə ˈnaɪt əv ɪt/"),
+            make("last I heard", "according to the most recent information I have",
+                 "最後に聞いた話では・私が知る限り最近は",
+                 useCases: ["知人の近況を伝えるとき", "情報が古いかもしれないと前置きするとき"],
+                 examples: [
+                    ("Last I heard, Tom was living in Berlin.", "最後に聞いた話だと、トムはベルリンに住んでたよ。"),
+                    ("Last I heard, the meeting was still on for Friday.", "私が聞いた限りでは、会議はまだ金曜の予定だったよ。")
+                 ], ipa: "/ˈlɑːst aɪ ˈhɜːd/"),
+            make("word has it", "people are saying (that); there is a rumour (that)",
+                 "噂では〜らしい・〜という話だ",
+                 useCases: ["噂話を伝えるとき", "確定していない情報を共有するとき"],
+                 examples: [
+                    ("Word has it they're opening a new café on the high street.", "噂だと、大通りに新しいカフェができるらしいよ。"),
+                    ("Word has it Sarah's leaving the company.", "サラが会社を辞めるって話だよ。")
+                 ], ipa: "/ˈwɜːd hæz ɪt/"),
+            make("try your luck", "to attempt to do something, hoping that you will be successful even though it might not work",
+                 "運試しをする・ダメ元でやってみる",
+                 useCases: ["ダメ元で挑戦するとき", "予約なしでお店に行ってみるとき"],
+                 examples: [
+                    ("We didn't book, but we thought we'd try our luck.", "予約はしてないけど、ダメ元で来てみたんだ。"),
+                    ("He's moving to London to try his luck as an actor.", "彼は俳優として運試しするためにロンドンに引っ越すんだ。")
+                 ], ipa: "/ˈtraɪ jɔː ˈlʌk/"),
+            make("a bit of a stretch", "(informal) a claim or idea that is difficult to believe or accept; something slightly beyond what is reasonable",
+                 "ちょっと無理がある・こじつけっぽい",
+                 useCases: ["相手の主張が強引だと感じたとき", "予算や目標が厳しいと言うとき"],
+                 examples: [
+                    ("Calling it a 'luxury hotel' is a bit of a stretch.", "あれを「高級ホテル」と呼ぶのはちょっと無理があるよ。"),
+                    ("Finishing it by Monday might be a bit of a stretch.", "月曜までに終わらせるのはちょっと厳しいかも。")
+                 ], ipa: "/ə ˈbɪt əv ə ˈstretʃ/"),
+            make("paint the town red", "(informal) to go out and enjoy yourself in a lively way, especially by going to bars, clubs or parties",
+                 "派手に遊びに繰り出す・飲み歩いて盛り上がる",
+                 useCases: ["お祝いで夜遊びに出かけるとき", "週末の予定を楽しそうに話すとき"],
+                 examples: [
+                    ("Exams are over – let's go and paint the town red!", "試験終わったし、パーッと遊びに行こう！"),
+                    ("They went out to paint the town red after the wedding.", "結婚式の後、みんなで派手に飲み歩いたんだ。")
+                 ], ipa: "/ˈpeɪnt ðə ˈtaʊn ˈred/"),
+            make("bank on", "to depend on something happening or on someone doing something",
+                 "〜を当てにする・〜を頼りにする",
+                 useCases: ["期待しすぎないよう忠告するとき", "確実に起こると見込むとき"],
+                 examples: [
+                    ("I wouldn't bank on the trains running on time.", "電車が時間通りに来るとは当てにしない方がいいよ。"),
+                    ("You can bank on Mike to bring the snacks.", "お菓子はマイクが絶対持ってくるから大丈夫。")
+                 ], ipa: "/ˈbæŋk ɒn/"),
+            make("set in your ways", "having habits and opinions that you have had for a long time and do not want to change",
+                 "考え方ややり方が凝り固まっている・頑固な",
+                 useCases: ["年配の家族について話すとき", "自分が変化を嫌うと認めるとき"],
+                 examples: [
+                    ("My dad's a bit set in his ways – he won't even try a smartphone.", "父はちょっと頑固でさ、スマホを試そうともしないんだ。"),
+                    ("I'm getting set in my ways in my old age.", "年を取ってだんだん自分のやり方を変えられなくなってきたよ。")
+                 ], ipa: "/ˈset ɪn jɔː ˈweɪz/"),
+            make("a stickler for", "a person who thinks a particular type of behaviour or rule is very important and expects others to follow it",
+                 "〜にうるさい人・〜にこだわる人",
+                 useCases: ["時間やルールに厳しい人を説明するとき", "細かいことにこだわる性格を話すとき"],
+                 examples: [
+                    ("My boss is a real stickler for punctuality.", "うちの上司は時間厳守にすごくうるさいんだ。"),
+                    ("She's a stickler for grammar, so check your email twice.", "彼女は文法に厳しいから、メールは二度確認してね。")
+                 ], ipa: "/ə ˈstɪklə fɔː/"),
+            make("stuck-up", "(informal) thinking you are better than other people and behaving in an unfriendly way",
+                 "お高くとまった・気取った",
+                 useCases: ["感じの悪い人について話すとき", "第一印象と実際が違ったと言うとき"],
+                 examples: [
+                    ("I thought she was stuck-up at first, but she's actually really nice.", "最初はお高くとまってると思ったけど、実はすごくいい人なんだ。"),
+                    ("The staff there are a bit stuck-up.", "あそこの店員はちょっと気取ってるんだよね。")
+                 ], ipa: "/ˌstʌk ˈʌp/"),
+            make("kind-hearted", "having a kind and caring nature",
+                 "心の優しい・思いやりのある",
+                 useCases: ["人の人柄を褒めるとき", "誰かを紹介するとき"],
+                 examples: [
+                    ("Our neighbour is such a kind-hearted woman – she always checks on us.", "お隣さんは本当に心の優しい人で、いつも様子を見に来てくれるんだ。"),
+                    ("He can seem gruff, but he's very kind-hearted.", "彼はぶっきらぼうに見えるけど、とても優しいんだよ。")
+                 ], ipa: "/ˌkaɪnd ˈhɑːtɪd/"),
+            make("light-hearted", "not serious; cheerful and intended to be fun",
+                 "気楽な・軽いノリの・陽気な",
+                 useCases: ["冗談や話題が深刻でないと伝えるとき", "映画や雰囲気を説明するとき"],
+                 examples: [
+                    ("It was just a light-hearted joke – don't take it the wrong way.", "ただの軽い冗談だよ、悪く取らないで。"),
+                    ("Let's watch something light-hearted tonight.", "今夜は何か気楽に見られるものにしよう。")
+                 ], ipa: "/ˌlaɪt ˈhɑːtɪd/"),
+            make("short-tempered", "becoming angry very easily",
+                 "短気な・怒りっぽい",
+                 useCases: ["疲れてイライラしていると謝るとき", "怒りっぽい人について話すとき"],
+                 examples: [
+                    ("Sorry I was short-tempered earlier – I'm just really tired.", "さっきはイライラしててごめん、すごく疲れてて。"),
+                    ("He gets a bit short-tempered when he's hungry.", "彼はお腹が空くとちょっと怒りっぽくなるんだ。")
+                 ], ipa: "/ˌʃɔːt ˈtempəd/"),
+            make("a bit of a character", "(British, informal) someone who is interesting, amusing and a little unusual",
+                 "ちょっと変わった面白い人・個性的な人",
+                 useCases: ["ユニークな知人を紹介するとき", "愛嬌のある変わり者を好意的に話すとき"],
+                 examples: [
+                    ("You'll like my grandad – he's a bit of a character.", "うちのおじいちゃん、きっと気に入るよ。ちょっと面白い人なんだ。"),
+                    ("The landlord of our local is a bit of a character.", "行きつけのパブの主人はなかなか個性的な人なんだ。")
+                 ], ipa: "/ə ˈbɪt əv ə ˈkærəktə/"),
         ]
     }
     private static var britishColloquial283: [Word] {
