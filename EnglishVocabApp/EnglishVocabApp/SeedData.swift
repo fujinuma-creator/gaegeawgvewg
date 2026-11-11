@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303
         ]
         return groups.flatMap { $0 }
     }
@@ -46812,6 +46812,115 @@ enum SeedData {
                     ("The client hated the design, so it's back to the drawing board.", "クライアントがデザインを全然気に入らなかったから、一からやり直しだよ。"),
                     ("Well, that didn't work. Back to the drawing board!", "うーん、ダメだったね。振り出しに戻ろう！")
                  ], ipa: "/ˈbæk tə ðə ˈdrɔːɪŋ ˌbɔːd/"),
+        ]
+    }
+    private static var britishColloquial303: [Word] {
+        [
+            make("on the plus side", "used to introduce the good or positive aspect of a situation that is otherwise not so good",
+                 "良い面を言えば・プラスに考えると",
+                 useCases: ["悪い状況の中の良い点を挙げるとき", "相手を前向きに励ますとき"],
+                 examples: [
+                    ("The flat's tiny, but on the plus side, it's really close to work.", "部屋は狭いけど、良い面を言えば職場にすごく近いんだ。"),
+                    ("We missed the train. On the plus side, we've got time for a coffee.", "電車に乗り遅れた。でもプラスに考えれば、コーヒー飲む時間ができたね。")
+                 ], ipa: "/ɒn ðə ˈplʌs ˌsaɪd/"),
+            make("let's be honest", "used before saying something that is true but that people may not want to admit",
+                 "正直に言おうよ・ぶっちゃけ",
+                 useCases: ["みんな薄々思っている本音を言うとき", "現実的な見方を示すとき"],
+                 examples: [
+                    ("Let's be honest, nobody actually reads the terms and conditions.", "ぶっちゃけ、利用規約なんて誰も読まないよね。"),
+                    ("Let's be honest – we're not going to finish this today.", "正直に言おうよ、今日中には終わらないって。")
+                 ], ipa: "/ˈlets bi ˈɒnɪst/"),
+            make("fair comment", "(British) used to say that a criticism or remark someone has made is reasonable",
+                 "ごもっとも・それはその通りだね",
+                 useCases: ["指摘や批判を素直に認めるとき", "相手の意見に一理あると認めるとき"],
+                 examples: [
+                    ("\"You could've told us earlier.\" \"Fair comment, sorry.\"", "「もっと早く言ってくれればよかったのに」「ごもっとも、ごめん」"),
+                    ("That's a fair comment – I'll change the wording.", "それはその通りだね。言い回しを変えておくよ。")
+                 ], ipa: "/ˌfeə ˈkɒment/"),
+            make("what was I saying?", "used when you have been interrupted or have forgotten what you were talking about",
+                 "何の話してたっけ？",
+                 useCases: ["話が脱線したり中断されたりした後", "話の続きを思い出したいとき"],
+                 examples: [
+                    ("Sorry, the phone rang – what was I saying?", "ごめん、電話が鳴っちゃって。何の話してたっけ？"),
+                    ("Anyway, where was I... what was I saying about the trip?", "で、どこまで話したっけ…旅行について何て言ってた？")
+                 ], ipa: "/ˈwɒt wəz aɪ ˈseɪɪŋ/"),
+            make("how's life?", "(informal) a friendly way of asking someone how they are and what is happening in their life",
+                 "最近どう？・元気にしてる？",
+                 useCases: ["久しぶりに会った友人への挨拶", "気軽に近況を尋ねるとき"],
+                 examples: [
+                    ("Hey Dan! How's life? Haven't seen you in ages.", "やあダン！最近どう？ずいぶん久しぶりだね。"),
+                    ("\"How's life treating you?\" \"Can't complain, really.\"", "「最近どう？」「まあ、悪くないよ」")
+                 ], ipa: "/ˌhaʊz ˈlaɪf/"),
+            make("be up to your neck in", "(informal) to have a very large amount of something, especially work or problems, to deal with",
+                 "（仕事・問題などに）首まで浸かっている・手一杯だ",
+                 useCases: ["仕事で手一杯なことを伝えるとき", "誘いを忙しさを理由に断るとき"],
+                 examples: [
+                    ("I'm up to my neck in work this week, so I can't come out.", "今週は仕事で手一杯だから、出かけられないんだ。"),
+                    ("They're up to their neck in debt after buying the house.", "家を買ってから、彼らは借金まみれなんだ。")
+                 ], ipa: "/bi ˈʌp tə jɔː ˈnek ɪn/"),
+            make("pay in instalments", "to pay for something in several smaller amounts over a period of time, rather than all at once",
+                 "分割で払う",
+                 useCases: ["高い買い物の支払い方法を話すとき", "お店で支払いオプションを尋ねるとき"],
+                 examples: [
+                    ("Can I pay in instalments, or does it have to be all at once?", "分割払いはできますか？それとも一括じゃないとダメですか？"),
+                    ("I'm paying for the new laptop in monthly instalments.", "新しいノートパソコンは毎月分割で払ってるんだ。")
+                 ], ipa: "/ˈpeɪ ɪn ɪnˈstɔːlmənts/"),
+            make("dated", "looking or seeming old-fashioned; no longer modern",
+                 "古臭い・時代遅れの",
+                 useCases: ["インテリアやデザインが古いと言うとき", "言葉遣いや考え方が古いと感じたとき"],
+                 examples: [
+                    ("The hotel was clean, but the rooms looked a bit dated.", "ホテルは清潔だったけど、部屋はちょっと古臭い感じだった。"),
+                    ("That phrase sounds a bit dated now.", "その言い回し、今だとちょっと古く聞こえるね。")
+                 ], ipa: "/ˈdeɪtɪd/"),
+            make("pre-order", "to order a product before it is officially available to buy",
+                 "予約注文する・予約購入",
+                 useCases: ["発売前の商品を買うとき", "新作のゲームや本の話をするとき"],
+                 examples: [
+                    ("I've already pre-ordered the new phone.", "新しいスマホ、もう予約注文しちゃった。"),
+                    ("If you pre-order now, you get a free case.", "今予約すると、ケースが無料でもらえるよ。")
+                 ], ipa: "/ˌpriː ˈɔːdə/"),
+            make("full price", "the normal price of something, without any discount",
+                 "定価・割引なしの値段",
+                 useCases: ["セール品と比べるとき", "割引を待つべきか話すとき"],
+                 examples: [
+                    ("I'm not paying full price – I'll wait for the sales.", "定価では買わないよ。セールまで待つ。"),
+                    ("Kids under five don't pay full price.", "5歳未満の子は正規料金じゃなくていいんだよ。")
+                 ], ipa: "/ˌfʊl ˈpraɪs/"),
+            make("beat the traffic", "to leave or travel early or late in order to avoid busy roads",
+                 "渋滞を避ける（ために早めに出る）",
+                 useCases: ["出発時間を相談するとき", "早めに帰る理由を説明するとき"],
+                 examples: [
+                    ("Let's leave at six to beat the traffic.", "渋滞を避けるために6時に出よう。"),
+                    ("I'm heading off a bit early to beat the traffic.", "渋滞にハマる前に、ちょっと早めに帰るね。")
+                 ], ipa: "/ˌbiːt ðə ˈtræfɪk/"),
+            make("split a taxi", "to share a taxi with someone and divide the cost",
+                 "タクシーを相乗りして割り勘にする",
+                 useCases: ["飲み会の帰りに方向が同じ人と", "空港までの移動を相談するとき"],
+                 examples: [
+                    ("We're going the same way – shall we split a taxi?", "同じ方向だし、タクシー割り勘にしない？"),
+                    ("If we split a taxi, it's cheaper than the train.", "タクシーを割り勘にしたら、電車より安いよ。")
+                 ], ipa: "/ˌsplɪt ə ˈtæksi/"),
+            make("hop on", "(informal) to get on a bus, train, bike, etc., quickly or casually",
+                 "（バス・電車などに）ひょいと乗る・さっと乗る",
+                 useCases: ["気軽な移動手段を説明するとき", "道案内で乗り物を勧めるとき"],
+                 examples: [
+                    ("Just hop on the number 12 – it goes straight there.", "12番のバスにさっと乗れば、そこまで直行だよ。"),
+                    ("I'll hop on a train after work and meet you there.", "仕事の後に電車に乗って、向こうで合流するね。")
+                 ], ipa: "/ˈhɒp ɒn/"),
+            make("line manager", "(British) the person at work who is directly in charge of you",
+                 "直属の上司",
+                 useCases: ["職場の休暇申請や相談の話", "自分の上司について話すとき"],
+                 examples: [
+                    ("You'll need to check with your line manager before booking time off.", "休みを取る前に直属の上司に確認してね。"),
+                    ("My line manager's really supportive, to be fair.", "正直、うちの上司はすごく協力的なんだ。")
+                 ], ipa: "/ˈlaɪn ˌmænɪdʒə/"),
+            make("sick leave", "time away from work because you are ill, often while still being paid",
+                 "病気休暇・病欠",
+                 useCases: ["同僚の不在理由を説明するとき", "職場の休暇制度について話すとき"],
+                 examples: [
+                    ("Mark's on sick leave until next Wednesday.", "マークは来週の水曜まで病欠だよ。"),
+                    ("How many days of sick leave do you get a year?", "病気休暇って年に何日もらえるの？")
+                 ], ipa: "/ˈsɪk ˌliːv/"),
         ]
     }
     private static var britishColloquial302: [Word] {
