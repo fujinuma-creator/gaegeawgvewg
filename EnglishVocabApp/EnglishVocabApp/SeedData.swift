@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285
         ]
         return groups.flatMap { $0 }
     }
@@ -44959,6 +44959,115 @@ enum SeedData {
                     ("I'm not lending him money again, full stop.", "もう彼にお金は貸さない、以上。"),
                     ("She's the best cook I know, full stop.", "彼女は私の知る中で一番料理が上手、それだけは確か。")
                  ], ipa: "/ˌfʊl ˈstɒp/"),
+        ]
+    }
+    private static var britishColloquial285: [Word] {
+        [
+            make("money well spent", "used to say that something was worth what you paid for it",
+                 "払った価値がある・いい買い物だった",
+                 useCases: ["買ってよかったと言うとき", "体験や投資に満足したとき"],
+                 examples: [
+                    ("The new mattress was money well spent – I sleep so much better now.", "新しいマットレスは本当にいい買い物だった。ずっとよく眠れるようになったよ。"),
+                    ("Those cooking lessons were money well spent.", "あの料理教室はお金を払った価値があった。")
+                 ], ipa: "/ˈmʌni wel ˈspent/"),
+            make("more trouble than it's worth", "used to say that doing something causes more problems or effort than the benefit you get",
+                 "かえって面倒・割に合わない",
+                 useCases: ["手間に見合わないことを言うとき", "やめておこうと判断するとき"],
+                 examples: [
+                    ("Fixing this old printer is more trouble than it's worth.", "この古いプリンターを直すのは割に合わないよ。"),
+                    ("I tried making my own bread, but it was more trouble than it's worth.", "パンを手作りしてみたけど、かえって面倒だった。")
+                 ], ipa: "/mɔː ˈtrʌbl ðən ɪts ˈwɜːθ/"),
+            make("that's the first I've heard of it", "used to say that you did not know about something until now, often with surprise",
+                 "初耳だよ・そんなの聞いてない",
+                 useCases: ["知らなかった情報に驚くとき", "事前に知らされていなかったとき"],
+                 examples: [
+                    ("\"The meeting's been moved to Monday.\" \"That's the first I've heard of it.\"", "「会議は月曜に変更になったよ」「初耳だよ」"),
+                    ("\"Tom's moving to Spain?\" \"Really? That's the first I've heard of it!\"", "「トムがスペインに引っ越すって？」「本当？そんなの聞いてないよ！」")
+                 ], ipa: "/ðæts ðə ˈfɜːst aɪv ˈhɜːd əv ɪt/"),
+            make("I hadn't thought of that", "used to say that someone has made a good point that you had not considered",
+                 "それは考えてなかった・なるほど",
+                 useCases: ["相手の指摘に気づかされたとき", "新しい視点に感心するとき"],
+                 examples: [
+                    ("\"What if it rains on the day?\" \"Oh, I hadn't thought of that.\"", "「当日雨だったらどうする？」「あ、それは考えてなかった」"),
+                    ("Good point – I hadn't thought of that.", "いい指摘だね、それは思いつかなかった。")
+                 ], ipa: "/aɪ ˈhædnt ˈθɔːt əv ðæt/"),
+            make("mark my words", "used to tell someone to pay attention because you are sure that what you are saying will happen",
+                 "いいかい、見ててごらん・断言するよ",
+                 useCases: ["将来の予想に自信があるとき", "忠告を強調するとき"],
+                 examples: [
+                    ("Mark my words, they'll be married within a year.", "見ててごらん、あの2人は1年以内に結婚するよ。"),
+                    ("He'll regret it, mark my words.", "断言するけど、彼は後悔するよ。")
+                 ], ipa: "/ˈmɑːk maɪ ˈwɜːdz/"),
+            make("go for a wander", "(British, informal) to walk around slowly without a particular plan or destination",
+                 "ぶらぶらする・ぶらっと散歩する",
+                 useCases: ["目的なく散歩するとき", "街を気ままに見て回るとき"],
+                 examples: [
+                    ("Let's go for a wander round the old town after lunch.", "ランチの後、旧市街をぶらぶらしようよ。"),
+                    ("I went for a wander to clear my head.", "頭をすっきりさせるために、ぶらっと散歩してきた。")
+                 ], ipa: "/ɡəʊ fər ə ˈwɒndə/"),
+            make("slowly but surely", "used to say that progress is slow but steady and will reach its goal",
+                 "ゆっくりだけど着実に",
+                 useCases: ["少しずつ進歩していることを言うとき", "焦らず続けていることを伝えるとき"],
+                 examples: [
+                    ("\"How's the new job?\" \"I'm getting the hang of it, slowly but surely.\"", "「新しい仕事どう？」「ゆっくりだけど着実に慣れてきてるよ」"),
+                    ("Slowly but surely, the house is starting to look like a home.", "少しずつだけど、家がちゃんと住まいらしくなってきた。")
+                 ], ipa: "/ˈsləʊli bət ˈʃʊəli/"),
+            make("all the rage", "very popular and fashionable at a particular time",
+                 "大流行している・今すごく人気",
+                 useCases: ["流行っているものを話すとき", "昔の流行を振り返るとき"],
+                 examples: [
+                    ("Padel is all the rage in Spain at the moment.", "スペインでは今パデルが大流行してるよ。"),
+                    ("Those trainers were all the rage when I was at school.", "あのスニーカーは私が学生の頃すごく流行ってた。")
+                 ], ipa: "/ɔːl ðə ˈreɪdʒ/"),
+            make("old-fashioned", "not modern; typical of the past, or holding traditional ideas",
+                 "古風な・時代遅れの・昔ながらの",
+                 useCases: ["物や考え方が古いと言うとき", "昔ながらの良さを言うとき"],
+                 examples: [
+                    ("Call me old-fashioned, but I still prefer writing letters.", "古いと思われるかもしれないけど、今でも手紙を書くほうが好きなんだ。"),
+                    ("It's a lovely old-fashioned pub with a real fire.", "本物の暖炉がある、昔ながらの素敵なパブだよ。")
+                 ], ipa: "/ˌəʊld ˈfæʃnd/"),
+            make("I couldn't resist", "used to say that you did something because you wanted it so much that you could not stop yourself",
+                 "つい我慢できなくて・誘惑に負けちゃった",
+                 useCases: ["つい買ったり食べたりしたとき", "誘惑に負けたことを言い訳するとき"],
+                 examples: [
+                    ("I wasn't going to buy anything, but it was half price – I couldn't resist.", "何も買うつもりなかったけど、半額だったからつい買っちゃった。"),
+                    ("Sorry, I ate the last slice of cake. I couldn't resist!", "ごめん、最後のケーキ食べちゃった。我慢できなくて！")
+                 ], ipa: "/aɪ ˈkʊdnt rɪˈzɪst/"),
+            make("have a weakness for", "to like something very much, so that you find it hard to say no to it",
+                 "〜に目がない・〜に弱い",
+                 useCases: ["大好物や弱点を話すとき", "つい手が出てしまうものを言うとき"],
+                 examples: [
+                    ("I have a real weakness for chocolate.", "チョコレートには本当に目がないんだ。"),
+                    ("She's got a weakness for old cars.", "彼女はクラシックカーに弱いんだよ。")
+                 ], ipa: "/hæv ə ˈwiːknəs fɔː/"),
+            make("it's had its day", "used to say that something is no longer useful, popular or successful",
+                 "もう役目を終えた・時代は終わった",
+                 useCases: ["古くなった物を処分するとき", "流行が過ぎたものを話すとき"],
+                 examples: [
+                    ("This sofa has had its day – let's get a new one.", "このソファはもう役目を終えたね。新しいのを買おう。"),
+                    ("A lot of people think the DVD has had its day.", "DVDの時代はもう終わったと思っている人が多い。")
+                 ], ipa: "/ɪts ˈhæd ɪts ˈdeɪ/"),
+            make("past its best", "(British) no longer as good, fresh or attractive as it was before",
+                 "盛りを過ぎた・ちょっと古くなった",
+                 useCases: ["食べ物の鮮度が落ちたとき", "物の状態が悪くなったとき"],
+                 examples: [
+                    ("This milk is a bit past its best – I'd throw it away.", "この牛乳ちょっと古くなってるね。捨てたほうがいいよ。"),
+                    ("The hotel was nice, but it's a bit past its best now.", "そのホテルは良かったけど、今はちょっと盛りを過ぎた感じ。")
+                 ], ipa: "/ˈpɑːst ɪts ˈbest/"),
+            make("not my strong suit", "used to say, often humorously, that you are not good at something",
+                 "得意じゃない・苦手分野",
+                 useCases: ["自分の苦手なことを認めるとき", "謙遜しながら断るとき"],
+                 examples: [
+                    ("Don't ask me to sing – it's not my strong suit.", "歌は頼まないで、得意じゃないんだ。"),
+                    ("Patience has never been my strong suit.", "我慢強さは昔から私の苦手分野なんだ。")
+                 ], ipa: "/nɒt maɪ ˈstrɒŋ ˈsuːt/"),
+            make("can't get enough of", "to like something so much that you want more and more of it",
+                 "〜にハマってる・いくらでも欲しい",
+                 useCases: ["夢中になっているものを話すとき", "大好きでやめられないものを言うとき"],
+                 examples: [
+                    ("I can't get enough of this series – I've watched three episodes tonight.", "このドラマにハマっちゃって、今夜もう3話見たよ。"),
+                    ("The kids can't get enough of the beach.", "子どもたちはビーチが大好きで、いくらいても飽きないんだ。")
+                 ], ipa: "/kɑːnt ɡet ɪˈnʌf əv/"),
         ]
     }
     private static var britishColloquial283: [Word] {
