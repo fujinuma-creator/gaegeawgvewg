@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293
         ]
         return groups.flatMap { $0 }
     }
@@ -45831,6 +45831,115 @@ enum SeedData {
                     ("He seems a bit grumpy, but he's got a heart of gold.", "ちょっと無愛想に見えるけど、本当は心の優しい人なんだ。"),
                     ("My gran has a heart of gold – she'd do anything for anyone.", "うちのおばあちゃんはすごく優しくて、誰のためにでも何でもするんだ。")
                  ], ipa: "/hæv ə ˈhɑːt əv ˈɡəʊld/"),
+        ]
+    }
+    private static var britishColloquial293: [Word] {
+        [
+            make("pull a face", "to twist your face to show you dislike something, or to be funny",
+                 "顔をしかめる・変な顔をする",
+                 useCases: ["嫌そうな反応をした人について話すとき", "子どもがふざけて変顔をするとき"],
+                 examples: [
+                    ("He pulled a face when he tasted the coffee.", "彼、コーヒーを飲んだ瞬間に顔をしかめたよ。"),
+                    ("Stop pulling faces – I'm trying to take a nice photo!", "変顔しないで、ちゃんとした写真撮りたいんだから！")
+                 ], ipa: "/ˈpʊl ə ˈfeɪs/"),
+            make("same difference", "(informal) said when two things are basically the same, so the difference doesn't matter",
+                 "似たようなもんだよ・どっちでも同じ",
+                 useCases: ["細かい違いを指摘されたとき", "どちらでも結果は変わらないと言うとき"],
+                 examples: [
+                    ("It's not a sofa, it's a settee. – Same difference!", "それソファじゃなくて長椅子だよ。―似たようなもんでしょ！"),
+                    ("Leave at six or quarter past – same difference, we'll still hit traffic.", "6時に出ても6時15分に出ても同じだよ、どうせ渋滞にはまるし。")
+                 ], ipa: "/ˈseɪm ˈdɪfrəns/"),
+            make("sorry to interrupt", "a polite way to start speaking when someone else is talking or busy",
+                 "お話し中すみません・割り込んでごめんなさい",
+                 useCases: ["会話中の人に話しかけるとき", "会議で発言をはさむとき"],
+                 examples: [
+                    ("Sorry to interrupt, but your taxi's here.", "お話し中ごめんなさい、タクシーが来ましたよ。"),
+                    ("Sorry to interrupt – can I just add something quickly?", "割り込んですみません、ちょっとだけ付け足してもいいですか？")
+                 ], ipa: "/ˈsɒri tu ˌɪntəˈrʌpt/"),
+            make("take a wrong turn", "to go the wrong way at a junction; also, for things to start going badly",
+                 "道を間違える・（物事が）おかしな方向に行く",
+                 useCases: ["道に迷って遅れた理由を話すとき", "計画や会話が変な方向に行ったとき"],
+                 examples: [
+                    ("Sorry we're late – we took a wrong turn after the roundabout.", "遅れてごめん、ロータリーの後で道を間違えちゃって。"),
+                    ("The conversation took a wrong turn when politics came up.", "政治の話が出たところで会話がおかしな方向に行っちゃった。")
+                 ], ipa: "/ˈteɪk ə ˈrɒŋ ˈtɜːn/"),
+            make("crunch time", "(informal) the critical moment when you have to perform or make a decision",
+                 "正念場・追い込みの時期",
+                 useCases: ["試験や締め切り直前の状況を話すとき", "スポーツの勝負どころで"],
+                 examples: [
+                    ("Exams start Monday, so it's crunch time now.", "試験が月曜からだから、今が追い込みの時期なんだ。"),
+                    ("It's crunch time – we need this goal.", "ここが正念場だ、このゴールは絶対欲しい。")
+                 ], ipa: "/ˈkrʌntʃ taɪm/"),
+            make("impulse buy", "something you buy suddenly without planning to",
+                 "衝動買い（した物）",
+                 useCases: ["買った物について言い訳するとき", "買い物の失敗談を話すとき"],
+                 examples: [
+                    ("This jacket was a total impulse buy, but I love it.", "このジャケット完全に衝動買いだったけど、気に入ってるんだ。"),
+                    ("I try not to make impulse buys when I'm tired.", "疲れてる時は衝動買いしないようにしてるの。")
+                 ], ipa: "/ˈɪmpʌls baɪ/"),
+            make("job hunting", "the activity of looking for a job",
+                 "職探し・就活",
+                 useCases: ["転職や就職活動の近況を話すとき", "相手の仕事探しを応援するとき"],
+                 examples: [
+                    ("How's the job hunting going?", "職探しの調子はどう？"),
+                    ("I've been job hunting for months – it's exhausting.", "何ヶ月も就活してて、もうクタクタだよ。")
+                 ], ipa: "/ˈdʒɒb ˌhʌntɪŋ/"),
+            make("date night", "an evening that a couple plan to spend together, just the two of them",
+                 "デートの夜・夫婦（恋人）水入らずの夜",
+                 useCases: ["パートナーとの予定を話すとき", "子どもを預けて出かける話をするとき"],
+                 examples: [
+                    ("Mum's babysitting tonight, so it's date night!", "今夜は母が子守してくれるから、2人でデートなの！"),
+                    ("We try to have a date night once a month.", "月に一度は2人だけで出かけるようにしてるんだ。")
+                 ], ipa: "/ˈdeɪt naɪt/"),
+            make("take a day off", "to have one day away from work or school",
+                 "1日休みを取る",
+                 useCases: ["休暇の予定を話すとき", "疲れている人に休むよう勧めるとき"],
+                 examples: [
+                    ("I'm taking a day off on Friday to make it a long weekend.", "金曜に休みを取って3連休にするんだ。"),
+                    ("You look shattered – why don't you take a day off?", "すごく疲れてるみたい。1日休んだら？")
+                 ], ipa: "/ˈteɪk ə ˈdeɪ ɒf/"),
+            make("get it right", "to do something correctly or in the best way",
+                 "うまくやる・正しくやる",
+                 useCases: ["何度も挑戦してできたとき", "大事なことを丁寧にやりたいとき"],
+                 examples: [
+                    ("It took me three tries, but I finally got it right.", "3回かかったけど、やっとうまくできたよ。"),
+                    ("It's an important speech, so I want to get it right.", "大事なスピーチだから、ちゃんと決めたいんだ。")
+                 ], ipa: "/ˈɡet ɪt ˈraɪt/"),
+            make("overworked", "having to work too hard or for too many hours",
+                 "働きすぎの・過労気味の",
+                 useCases: ["職場の忙しさや不満を話すとき", "誰かの体調を気遣うとき"],
+                 examples: [
+                    ("Nurses are overworked and underpaid.", "看護師は働きすぎなのに給料が安いんだよ。"),
+                    ("I'm feeling a bit overworked at the moment.", "最近ちょっと働きすぎな気がする。")
+                 ], ipa: "/ˌəʊvəˈwɜːkt/"),
+            make("I'm terribly sorry", "(polite, British) a strong, sincere way of apologising",
+                 "本当に申し訳ありません",
+                 useCases: ["丁寧にしっかり謝るとき", "人にぶつかったり迷惑をかけたとき"],
+                 examples: [
+                    ("I'm terribly sorry – I didn't see you there.", "本当にすみません、いらっしゃるのに気づきませんでした。"),
+                    ("I'm terribly sorry for the wait.", "大変お待たせして申し訳ありません。")
+                 ], ipa: "/aɪm ˈterəbli ˈsɒri/"),
+            make("grow apart", "to slowly become less close to someone over time",
+                 "だんだん疎遠になる・心が離れていく",
+                 useCases: ["昔の友人との関係を話すとき", "別れの理由を説明するとき"],
+                 examples: [
+                    ("We were best mates at school, but we grew apart.", "学生時代は親友だったけど、だんだん疎遠になったんだ。"),
+                    ("There was no big fight – we just grew apart.", "大喧嘩したわけじゃなくて、自然と気持ちが離れていっただけ。")
+                 ], ipa: "/ˈɡrəʊ əˈpɑːt/"),
+            make("pick up a few bits", "(British, informal) to buy a few small things, usually from a shop",
+                 "ちょっとした物をいくつか買う",
+                 useCases: ["買い物に寄ると伝えるとき", "スーパーに行く用事を話すとき"],
+                 examples: [
+                    ("I'll just pop into Tesco to pick up a few bits.", "ちょっとスーパーに寄って細々した物買ってくるね。"),
+                    ("Do you need anything? I'm picking up a few bits for dinner.", "何かいる？夕飯用にいくつか買ってくるけど。")
+                 ], ipa: "/ˈpɪk ʌp ə fjuː ˈbɪts/"),
+            make("get some shut-eye", "(informal) to get some sleep",
+                 "ひと眠りする・少し寝る",
+                 useCases: ["疲れて寝たいと伝えるとき", "相手に休むよう勧めるとき"],
+                 examples: [
+                    ("I'm off to get some shut-eye – early start tomorrow.", "もう寝るね、明日早いから。"),
+                    ("You should get some shut-eye before the long drive.", "長距離運転の前に少し寝ておいた方がいいよ。")
+                 ], ipa: "/ˈɡet səm ˈʃʌt aɪ/"),
         ]
     }
     private static var britishColloquial283: [Word] {
