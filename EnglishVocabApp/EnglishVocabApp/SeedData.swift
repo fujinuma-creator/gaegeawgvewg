@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289
         ]
         return groups.flatMap { $0 }
     }
@@ -45395,6 +45395,115 @@ enum SeedData {
                     ("That cyclist nearly hit me – that was a close call!", "あの自転車にぶつかられるところだった、危機一髪！"),
                     ("We made the train with a minute to spare. Close call!", "電車に1分前に間に合った。ギリギリセーフ！")
                  ], ipa: "/ə ˈkləʊs ˈkɔːl/"),
+        ]
+    }
+    private static var britishColloquial289: [Word] {
+        [
+            make("a scorcher", "(informal) a very hot, sunny day",
+                 "猛烈に暑い日・かんかん照りの日",
+                 useCases: ["暑い日の天気の話をするとき", "週末の天気予報を話すとき"],
+                 examples: [
+                    ("It's going to be a scorcher tomorrow – don't forget your sun cream.", "明日はめちゃくちゃ暑くなるって。日焼け止め忘れないでね。"),
+                    ("What a scorcher! Shall we eat outside?", "すごく暑い日だね！外で食べようか？")
+                 ], ipa: "/ə ˈskɔːtʃə/"),
+            make("a mad rush", "(informal) a situation where people have to hurry a lot to get something done in time",
+                 "大慌て・てんやわんや",
+                 useCases: ["朝の準備や締め切り前の慌ただしさを話すとき", "混雑した状況を説明するとき"],
+                 examples: [
+                    ("It was a mad rush to get the kids ready for school this morning.", "今朝は子どもたちを学校に送り出すのに大慌てだったよ。"),
+                    ("There's always a mad rush before Christmas.", "クリスマス前はいつもてんやわんやだよね。")
+                 ], ipa: "/ə ˈmæd ˈrʌʃ/"),
+            make("a bit out of the way", "slightly far from the main places or difficult to get to",
+                 "ちょっと不便な場所にある・少し外れたところにある",
+                 useCases: ["店や家の場所を説明するとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("The restaurant's a bit out of the way, but the food's worth it.", "そのレストランはちょっと不便な場所だけど、料理は行く価値あるよ。"),
+                    ("Sorry it's a bit out of the way – I'll send you the directions.", "ちょっと分かりにくい場所でごめんね。道順を送るよ。")
+                 ], ipa: "/ə ˈbɪt ˈaʊt əv ðə ˈweɪ/"),
+            make("it's clouding over", "the sky is becoming covered with clouds",
+                 "曇ってきた",
+                 useCases: ["天気が変わってきたとき", "外出や洗濯物の判断をするとき"],
+                 examples: [
+                    ("It's clouding over – we'd better bring the washing in.", "曇ってきたね。洗濯物を取り込んだ方がいいよ。"),
+                    ("It was sunny this morning, but it's clouding over now.", "朝は晴れてたけど、今は曇ってきたね。")
+                 ], ipa: "/ɪts ˈklaʊdɪŋ ˈəʊvə/"),
+            make("the clocks go back", "when the time is changed back by one hour at the end of summer time (the clocks go forward in spring)",
+                 "時計を1時間戻す（夏時間が終わる）",
+                 useCases: ["夏時間・冬時間の切り替えを話すとき", "日が短くなる話をするとき"],
+                 examples: [
+                    ("The clocks go back this weekend, so we get an extra hour in bed.", "今週末で時計が1時間戻るから、1時間多く寝られるね。"),
+                    ("It gets dark so early once the clocks go back.", "時計が戻ると、暗くなるのがすごく早いよね。")
+                 ], ipa: "/ðə ˈklɒks ɡəʊ ˈbæk/"),
+            make("the town centre", "the main area of a town where most shops, cafés and businesses are",
+                 "町の中心部・繁華街",
+                 useCases: ["買い物や待ち合わせの場所を話すとき", "道を聞かれたとき"],
+                 examples: [
+                    ("I'm heading into the town centre – do you need anything?", "町の中心部に行くけど、何か要るものある？"),
+                    ("Let's meet in the town centre, outside the station.", "中心街の駅前で待ち合わせしよう。")
+                 ], ipa: "/ðə ˈtaʊn ˈsentə/"),
+            make("fully charged", "(of a phone, battery, etc.) having as much power as possible",
+                 "フル充電されている",
+                 useCases: ["スマホやPCのバッテリーの話をするとき", "出かける前の準備を話すとき"],
+                 examples: [
+                    ("Make sure your phone's fully charged before you go.", "出かける前にスマホをフル充電しておいてね。"),
+                    ("My laptop was fully charged this morning and it's already dead.", "朝フル充電したのに、もうノートパソコンの電池が切れた。")
+                 ], ipa: "/ˈfʊli ˈtʃɑːdʒd/"),
+            make("on my feet all day", "standing or walking for the whole day without much rest",
+                 "一日中立ちっぱなし・動きっぱなし",
+                 useCases: ["仕事の疲れを話すとき", "観光で歩き回った後"],
+                 examples: [
+                    ("I've been on my feet all day – I just need to sit down.", "一日中立ちっぱなしだったから、とにかく座りたい。"),
+                    ("Working in a shop means you're on your feet all day.", "お店で働くと一日中立ちっぱなしだよ。")
+                 ], ipa: "/ɒn maɪ ˈfiːt ɔːl ˈdeɪ/"),
+            make("I won't keep you", "a polite way of saying you will only take a short amount of someone's time, or of ending a conversation",
+                 "お時間は取らせません・じゃあこの辺で",
+                 useCases: ["忙しそうな人に話しかけるとき", "会話や電話を切り上げるとき"],
+                 examples: [
+                    ("I won't keep you – I just wanted to say thanks for yesterday.", "お時間は取らせないよ。昨日のお礼を言いたかっただけ。"),
+                    ("Anyway, I won't keep you. Have a good evening!", "まあ、この辺にしておくね。良い夜を！")
+                 ], ipa: "/aɪ ˈwəʊnt ˈkiːp juː/"),
+            make("keep the noise down", "to make less noise, often asked politely or with annoyance",
+                 "静かにする・音を立てないようにする",
+                 useCases: ["夜遅くや子どもが騒いでいるとき", "近所や同居人に配慮をお願いするとき"],
+                 examples: [
+                    ("Could you keep the noise down? The baby's asleep.", "少し静かにしてもらえる？赤ちゃんが寝てるの。"),
+                    ("We'll keep the noise down after eleven, I promise.", "11時以降は静かにするって約束するよ。")
+                 ], ipa: "/kiːp ðə ˈnɔɪz ˈdaʊn/"),
+            make("be short with sb", "to speak to someone in a rude or impatient way, using very few words",
+                 "（人に）そっけない態度をとる・つっけんどんに話す",
+                 useCases: ["自分の態度を謝るとき", "誰かの機嫌が悪かった話をするとき"],
+                 examples: [
+                    ("Sorry I was short with you earlier – I was really stressed.", "さっきはそっけなくてごめん。すごくストレスがたまってて。"),
+                    ("The receptionist was a bit short with me on the phone.", "受付の人、電話でちょっとそっけなかったな。")
+                 ], ipa: "/bi ˈʃɔːt wɪð ˈsʌmbədi/"),
+            make("have people round", "(informal) to invite friends or guests to your home",
+                 "人を家に招く",
+                 useCases: ["週末の予定を話すとき", "家でのパーティーや食事の話をするとき"],
+                 examples: [
+                    ("We're having people round on Saturday – do you want to come?", "土曜に友達を家に呼ぶんだけど、来ない？"),
+                    ("I love having people round for dinner.", "人を家に呼んで夕食するのが大好きなんだ。")
+                 ], ipa: "/hæv ˈpiːpl ˈraʊnd/"),
+            make("open a window", "to let fresh air into a room by opening a window",
+                 "窓を開ける",
+                 useCases: ["部屋が暑い・空気がこもっているとき", "許可を求めるとき"],
+                 examples: [
+                    ("Do you mind if I open a window? It's a bit stuffy in here.", "窓を開けてもいい？ちょっと空気がこもってて。"),
+                    ("Open a window – it smells of burnt toast in here!", "窓開けて。焦げたトーストのにおいがする！")
+                 ], ipa: "/ˈəʊpən ə ˈwɪndəʊ/"),
+            make("a quick tidy", "(informal) a short session of putting things back in order in a room or house",
+                 "さっと片付けること",
+                 useCases: ["来客前に部屋を片付けるとき", "家事の話をするとき"],
+                 examples: [
+                    ("Give me ten minutes – I just need to have a quick tidy before they arrive.", "10分ちょうだい。みんなが来る前にさっと片付けたいの。"),
+                    ("The kitchen just needs a quick tidy.", "キッチンはさっと片付ければ大丈夫だよ。")
+                 ], ipa: "/ə ˈkwɪk ˈtaɪdi/"),
+            make("go up a size", "to choose clothes or shoes in the next larger size",
+                 "ワンサイズ上げる",
+                 useCases: ["服や靴を試着したとき", "サイズ選びの相談をするとき"],
+                 examples: [
+                    ("These jeans are a bit tight – I think I'll go up a size.", "このジーンズ少しきついから、ワンサイズ上げようかな。"),
+                    ("They come up small, so you might want to go up a size.", "小さめの作りだから、ワンサイズ上げた方がいいかも。")
+                 ], ipa: "/ɡəʊ ˈʌp ə ˈsaɪz/"),
         ]
     }
     private static var britishColloquial283: [Word] {
