@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297
         ]
         return groups.flatMap { $0 }
     }
@@ -46267,6 +46267,115 @@ enum SeedData {
                     ("It's a party – just let yourself go and dance!", "パーティーなんだから、羽目を外して踊りなよ！"),
                     ("I've really let myself go since I started working from home.", "在宅勤務になってから、すっかり身なりに構わなくなっちゃった。")
                  ], ipa: "/ˈlet jɔːˈself ˈɡəʊ/"),
+        ]
+    }
+    private static var britishColloquial297: [Word] {
+        [
+            make("put forward", "to suggest an idea, plan or person for others to consider",
+                 "（案や意見を）出す・提案する・推薦する",
+                 useCases: ["会議やグループでアイデアを提案するとき", "誰かを候補に推薦するとき"],
+                 examples: [
+                    ("She put forward a really good idea in the meeting.", "彼女、会議でめっちゃいいアイデアを出してたよ。"),
+                    ("I've put your name forward for the team leader role.", "チームリーダーの候補に君の名前を推薦しておいたよ。")
+                 ], ipa: "/ˈpʊt ˈfɔːwəd/"),
+            make("catch-22", "a frustrating situation where you cannot win because each option depends on the other",
+                 "どうにもならない板挟み・八方ふさがり",
+                 useCases: ["矛盾した条件で身動きが取れないとき", "就職や手続きの理不尽さを嘆くとき"],
+                 examples: [
+                    ("You need experience to get a job, but you need a job to get experience – it's a catch-22.", "仕事に就くには経験が要るけど、経験を積むには仕事が要る。完全に八方ふさがりだよ。"),
+                    ("It's a bit of a catch-22, really.", "正直、ちょっとした板挟みなんだよね。")
+                 ], ipa: "/ˌkætʃ ˌtwenti ˈtuː/"),
+            make("cross off", "to draw a line through something on a list because it is done or no longer needed",
+                 "（リストから）消す・線を引いて消す",
+                 useCases: ["やることリストを片付けたとき", "候補から外すとき"],
+                 examples: [
+                    ("That's the shopping done – I can cross it off the list.", "買い物終わった。リストから消せるね。"),
+                    ("We crossed that restaurant off because it was too expensive.", "あのレストランは高すぎたから候補から外したよ。")
+                 ], ipa: "/ˈkrɒs ˈɒf/"),
+            make("bump up", "(informal) to increase something, such as a price, number or level",
+                 "（値段・数などを）上げる・増やす",
+                 useCases: ["値上げについて話すとき", "量や評価を引き上げるとき"],
+                 examples: [
+                    ("They've bumped up the price of coffee again.", "またコーヒーの値段上げたよ。"),
+                    ("Can you bump me up to the earlier train?", "早い方の電車に変更してもらえますか？")
+                 ], ipa: "/ˈbʌmp ˈʌp/"),
+            make("doodle", "to draw little pictures or patterns without thinking, especially when bored; such a drawing",
+                 "落書き（する）・いたずら書き（する）",
+                 useCases: ["会議や電話中に手持ち無沙汰なとき", "ノートの余白の絵について話すとき"],
+                 examples: [
+                    ("I always doodle when I'm on the phone.", "電話してるといつも落書きしちゃうんだよね。"),
+                    ("His notebook is full of doodles.", "彼のノートは落書きだらけだよ。")
+                 ], ipa: "/ˈduːdl/"),
+            make("done in", "(informal, British) extremely tired; exhausted",
+                 "へとへと・くたくた",
+                 useCases: ["一日の終わりに疲れ切ったとき", "長い移動や運動の後"],
+                 examples: [
+                    ("I'm completely done in – I'm going straight to bed.", "もうくたくた。すぐ寝るわ。"),
+                    ("You look done in. Sit down and I'll make you a tea.", "疲れきった顔してるね。座ってて、紅茶淹れるから。")
+                 ], ipa: "/ˈdʌn ˈɪn/"),
+            make("dicey", "(informal) risky, uncertain or slightly dangerous",
+                 "危なっかしい・きわどい・怪しい",
+                 useCases: ["天気や状況が微妙なとき", "リスクがありそうな計画について話すとき"],
+                 examples: [
+                    ("The weather looks a bit dicey for the barbecue.", "バーベキューするには天気がちょっと怪しいね。"),
+                    ("It got a bit dicey on the motorway in the snow.", "雪の高速道路でちょっとヒヤッとしたよ。")
+                 ], ipa: "/ˈdaɪsi/"),
+            make("it can't hurt", "used to say that trying something is a good idea because there is nothing to lose",
+                 "やってみて損はない・ダメ元でいい",
+                 useCases: ["ダメ元で試すよう勧めるとき", "聞くだけ聞いてみようと言うとき"],
+                 examples: [
+                    ("Just ask for a discount – it can't hurt.", "値引き頼んでみなよ。損はないって。"),
+                    ("It can't hurt to apply, even if you don't get it.", "受からなくても、応募して損はないよ。")
+                 ], ipa: "/ɪt ˈkɑːnt ˈhɜːt/"),
+            make("what's the worst that could happen?", "used to encourage someone by suggesting the risk is not very serious",
+                 "最悪どうなるっていうの？・失敗しても大したことないよ",
+                 useCases: ["迷っている人の背中を押すとき", "自分を奮い立たせるとき"],
+                 examples: [
+                    ("Just ask her out – what's the worst that could happen?", "デートに誘っちゃいなよ。最悪どうなるっていうの？"),
+                    ("Go for the interview. What's the worst that could happen?", "面接受けてみなよ。失敗しても大したことないって。")
+                 ], ipa: "/ˈwɒts ðə ˈwɜːst ðət kəd ˈhæpən/"),
+            make("the nitty-gritty", "(informal) the basic, practical details of a subject or situation",
+                 "細かい具体的な部分・肝心な詳細",
+                 useCases: ["本題の具体的な話に入るとき", "細部の詰めについて話すとき"],
+                 examples: [
+                    ("Let's get down to the nitty-gritty – how much will it cost?", "具体的な話に入ろう。いくらかかるの？"),
+                    ("I'll leave the nitty-gritty to you.", "細かいところは君に任せるよ。")
+                 ], ipa: "/ðə ˌnɪti ˈɡrɪti/"),
+            make("the bottom line", "the most important fact or point in a situation",
+                 "要するに・結局大事なのは・肝心な点",
+                 useCases: ["話を要点にまとめるとき", "結論をはっきり伝えるとき"],
+                 examples: [
+                    ("The bottom line is, we can't afford it.", "要するに、そんなお金ないってこと。"),
+                    ("I don't care how you do it – the bottom line is it has to be done by Friday.", "やり方はどうでもいいよ。肝心なのは金曜までに終わらせることだから。")
+                 ], ipa: "/ðə ˈbɒtəm ˈlaɪn/"),
+            make("tick off", "to mark items on a list as done; (British) to tell someone off",
+                 "（リストに）チェックを入れる・（英）叱る",
+                 useCases: ["やることを一つずつ片付けるとき", "怒られたことを話すとき"],
+                 examples: [
+                    ("I've ticked off everything on my to-do list today.", "今日はやることリスト全部チェックしたよ。"),
+                    ("I got ticked off for being late again.", "また遅刻して叱られちゃった。")
+                 ], ipa: "/ˈtɪk ˈɒf/"),
+            make("does that make sense?", "used to check that someone has understood what you have explained",
+                 "わかるかな？・伝わってる？",
+                 useCases: ["説明の途中で理解を確認するとき", "自分の話が伝わっているか不安なとき"],
+                 examples: [
+                    ("You press this first, then that. Does that make sense?", "まずこれを押して、次にそれ。わかるかな？"),
+                    ("I'm not sure I explained it well – does that make sense?", "うまく説明できたかわからないけど、伝わってる？")
+                 ], ipa: "/dʌz ðæt ˈmeɪk ˈsens/"),
+            make("dead easy", "(informal, British) very easy",
+                 "めちゃくちゃ簡単",
+                 useCases: ["何かが簡単だと伝えるとき", "相手を安心させるとき"],
+                 examples: [
+                    ("Don't worry, the recipe is dead easy.", "心配しないで、そのレシピめっちゃ簡単だから。"),
+                    ("The test was dead easy – I finished in twenty minutes.", "テストめちゃ簡単だった。20分で終わったよ。")
+                 ], ipa: "/ˈded ˈiːzi/"),
+            make("that's fair", "used to accept that what someone has said is reasonable",
+                 "それはもっともだね・確かにそうだね",
+                 useCases: ["相手の指摘や意見を認めるとき", "反論せず受け入れるとき"],
+                 examples: [
+                    ("\"You did say you'd help.\" \"Yeah, that's fair.\"", "「手伝うって言ってたじゃん」「うん、それは確かに」"),
+                    ("That's fair – I should have called you first.", "それはもっともだね。先に電話すべきだった。")
+                 ], ipa: "/ˈðæts ˈfeə/"),
         ]
     }
     private static var britishColloquial283: [Word] {
