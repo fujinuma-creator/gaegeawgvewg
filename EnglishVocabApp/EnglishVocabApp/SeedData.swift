@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298
         ]
         return groups.flatMap { $0 }
     }
@@ -46376,6 +46376,115 @@ enum SeedData {
                     ("\"You did say you'd help.\" \"Yeah, that's fair.\"", "「手伝うって言ってたじゃん」「うん、それは確かに」"),
                     ("That's fair – I should have called you first.", "それはもっともだね。先に電話すべきだった。")
                  ], ipa: "/ˈðæts ˈfeə/"),
+        ]
+    }
+    private static var britishColloquial298: [Word] {
+        [
+            make("let someone down", "to disappoint someone by not doing what they hoped or expected you to do",
+                 "（人を）がっかりさせる・期待を裏切る",
+                 useCases: ["約束を守れず相手を失望させたとき", "頼りにしていた人に裏切られたと感じるとき"],
+                 examples: [
+                    ("I'm really sorry – I feel like I've let you down.", "本当にごめん。君の期待を裏切っちゃった気がする。"),
+                    ("Don't worry, she won't let us down.", "心配しないで、彼女なら僕らをがっかりさせたりしないよ。")
+                 ], ipa: "/ˈlet ˌsʌmwʌn ˈdaʊn/"),
+            make("hold it against someone", "to stay annoyed with someone or think less of them because of something they did",
+                 "（そのことで）人を恨む・根に持つ",
+                 useCases: ["相手のミスを気にしていないと伝えるとき", "過去のことを根に持たれていないか心配なとき"],
+                 examples: [
+                    ("You were stressed – I don't hold it against you.", "ストレス溜まってたんだし、根に持ったりしてないよ。"),
+                    ("I hope he doesn't hold it against me.", "彼がそのことで僕を恨んでないといいんだけど。")
+                 ], ipa: "/ˈhəʊld ɪt əˈɡenst ˌsʌmwʌn/"),
+            make("see to it that", "to make sure that something happens or is done",
+                 "〜するよう取り計らう・必ず〜するようにする",
+                 useCases: ["責任を持って何かを手配すると約束するとき", "確実に実行させると伝えるとき"],
+                 examples: [
+                    ("I'll see to it that everyone gets a copy.", "全員に1部ずつ行き渡るようにしておくよ。"),
+                    ("Can you see to it that the door's locked before you leave?", "出る前にドアの鍵が閉まってるか確認しておいてくれる？")
+                 ], ipa: "/ˈsiː tʊ ɪt ðæt/"),
+            make("sensible", "showing good judgement; practical and reasonable rather than silly",
+                 "分別のある・賢明な・実用的な",
+                 useCases: ["判断や考え方がしっかりしていると褒めるとき", "服や靴が実用的だと言うとき"],
+                 examples: [
+                    ("That's a very sensible idea.", "それはすごく賢明な考えだね。"),
+                    ("Wear sensible shoes – we'll be walking a lot.", "歩きやすい靴で来てね。たくさん歩くから。")
+                 ], ipa: "/ˈsensəbl/"),
+            make("two-faced", "saying nice things to someone's face but unkind things behind their back",
+                 "裏表のある・二枚舌の",
+                 useCases: ["陰口を言う人について話すとき", "人の態度が場面で変わることを批判するとき"],
+                 examples: [
+                    ("She's so two-faced – nice to you, then slags you off behind your back.", "あの子ほんと裏表あるよ。目の前では優しいのに陰で悪口言うんだから。"),
+                    ("I can't stand two-faced people.", "裏表のある人はどうしても無理。")
+                 ], ipa: "/ˌtuː ˈfeɪst/"),
+            make("reserved", "(of a person) quiet and not quick to show feelings or talk about yourself",
+                 "控えめな・遠慮がちな・打ち解けにくい",
+                 useCases: ["人の性格を説明するとき", "初対面で口数が少ない人について話すとき"],
+                 examples: [
+                    ("He's a bit reserved at first, but he's lovely once you get to know him.", "最初はちょっと控えめだけど、仲良くなるとすごくいい人だよ。"),
+                    ("I tend to be quite reserved around new people.", "初対面の人の前だと割と遠慮しがちなんだ。")
+                 ], ipa: "/rɪˈzɜːvd/"),
+            make("tactful", "careful not to upset or offend people when you say something difficult",
+                 "気配りのある・言い方に配慮のある",
+                 useCases: ["言いにくいことを上手に伝える人を褒めるとき", "言い方に気をつけるよう促すとき"],
+                 examples: [
+                    ("Try to be tactful when you tell her.", "彼女に伝えるときは言い方に気をつけてね。"),
+                    ("That wasn't very tactful of him.", "あれは彼、ちょっと配慮が足りなかったね。")
+                 ], ipa: "/ˈtæktfl/"),
+            make("outspoken", "saying exactly what you think, even if it shocks or offends people",
+                 "ずけずけ物を言う・遠慮なく意見を言う",
+                 useCases: ["はっきり意見を言う人について話すとき", "率直すぎる発言について話すとき"],
+                 examples: [
+                    ("My gran is very outspoken – she'll tell you exactly what she thinks.", "うちのおばあちゃんはズバズバ言うタイプで、思ったことそのまま言うよ。"),
+                    ("He's always been quite outspoken about it.", "彼はそのことについて昔から遠慮なく意見を言ってるよ。")
+                 ], ipa: "/aʊtˈspəʊkən/"),
+            make("put a wash on", "(informal, British) to start a load of washing in the washing machine",
+                 "洗濯機を回す",
+                 useCases: ["家事の予定を話すとき", "ついでに洗濯することを伝えるとき"],
+                 examples: [
+                    ("I'll put a wash on before we go out.", "出かける前に洗濯機回しとくね。"),
+                    ("Have you got anything that needs washing? I'm putting a wash on.", "洗うものある？今から洗濯機回すけど。")
+                 ], ipa: "/ˈpʊt ə ˈwɒʃ ɒn/"),
+            make("up the road", "(informal) a short distance away along the same street or nearby",
+                 "すぐそこ・この道の少し先",
+                 useCases: ["近所の場所を説明するとき", "近くに住んでいると言うとき"],
+                 examples: [
+                    ("There's a nice café just up the road.", "すぐそこにいいカフェがあるよ。"),
+                    ("My sister lives just up the road from me.", "妹はうちのすぐ近くに住んでるんだ。")
+                 ], ipa: "/ˈʌp ðə ˈrəʊd/"),
+            make("read too much into", "to believe that something has more meaning or importance than it really has",
+                 "深読みしすぎる・考えすぎる",
+                 useCases: ["相手の言動を気にしすぎている人を励ますとき", "自分の深読みを反省するとき"],
+                 examples: [
+                    ("I wouldn't read too much into it – he's just busy.", "あんまり深読みしない方がいいよ。彼はただ忙しいだけだって。"),
+                    ("Maybe I'm reading too much into her text.", "彼女のメッセージ、深読みしすぎてるのかも。")
+                 ], ipa: "/ˈriːd tuː ˈmʌtʃ ˈɪntuː/"),
+            make("it's for the best", "used to say that something which seems bad now will be better in the end",
+                 "結果的にはそれでよかった・それが一番いい",
+                 useCases: ["別れや失敗を前向きに受け止めるとき", "落ち込んでいる人を慰めるとき"],
+                 examples: [
+                    ("I know it hurts, but maybe it's for the best.", "つらいのはわかるけど、たぶんこれでよかったんだよ。"),
+                    ("We didn't get the flat, but it's probably for the best.", "あの部屋は借りられなかったけど、たぶん結果的にはよかったんだと思う。")
+                 ], ipa: "/ɪts fə ðə ˈbest/"),
+            make("on top of that", "used to add another point, usually something bad, to what you have just said",
+                 "その上・おまけに・それに加えて",
+                 useCases: ["悪いことが重なったと話すとき", "理由を付け加えるとき"],
+                 examples: [
+                    ("I missed the bus, and on top of that it started raining.", "バスに乗り遅れて、おまけに雨まで降ってきたんだよ。"),
+                    ("It's cheap, and on top of that the food is great.", "安いし、それに加えて料理も最高なんだ。")
+                 ], ipa: "/ɒn ˈtɒp əv ˈðæt/"),
+            make("take someone at their word", "to believe that someone means exactly what they say",
+                 "（人の）言葉をそのまま信じる・言葉通りに受け取る",
+                 useCases: ["相手の言うことを信用すると伝えるとき", "遠慮の言葉を真に受けたとき"],
+                 examples: [
+                    ("He said he'd pay me back, and I took him at his word.", "彼が返すって言ったから、その言葉を信じたんだ。"),
+                    ("She said not to bring anything, so I took her at her word.", "彼女が何も持ってこなくていいって言うから、言葉通りに受け取ったよ。")
+                 ], ipa: "/ˈteɪk ˌsʌmwʌn ət ðeə ˈwɜːd/"),
+            make("give someone a hard time", "(informal) to criticise, tease or make things difficult for someone",
+                 "（人を）責める・からかう・困らせる",
+                 useCases: ["相手を責めすぎないよう言うとき", "冗談でいじられていることを話すとき"],
+                 examples: [
+                    ("Don't give him a hard time – it was an honest mistake.", "彼をあんまり責めないであげて。悪気のないミスなんだから。"),
+                    ("My mates gave me a hard time about my new haircut.", "新しい髪型のことで友達にめっちゃいじられたよ。")
+                 ], ipa: "/ˈɡɪv ˌsʌmwʌn ə ˈhɑːd ˈtaɪm/"),
         ]
     }
     private static var britishColloquial283: [Word] {
