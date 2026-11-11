@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284
         ]
         return groups.flatMap { $0 }
     }
@@ -44850,6 +44850,115 @@ enum SeedData {
                     ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
                     ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
                  ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
+        ]
+    }
+    private static var britishColloquial284: [Word] {
+        [
+            make("I'll second that", "used to say that you completely agree with what someone has just said or suggested",
+                 "賛成・同感・私もそれに一票",
+                 useCases: ["相手の提案に賛成するとき", "意見に強く同意するとき"],
+                 examples: [
+                    ("\"Let's get pizza tonight.\" \"I'll second that!\"", "「今夜ピザにしよう」「賛成！」"),
+                    ("\"That was the best holiday ever.\" \"I'll second that.\"", "「今までで最高の休暇だったね」「同感」")
+                 ], ipa: "/aɪl ˈsekənd ðæt/"),
+            make("hear, hear!", "(British) used to show that you strongly agree with what someone has said, especially in a speech or toast",
+                 "そうだそうだ！・賛成！",
+                 useCases: ["スピーチや乾杯で賛同するとき", "相手の意見に大きく同意するとき"],
+                 examples: [
+                    ("\"To the happy couple!\" \"Hear, hear!\"", "「新郎新婦に乾杯！」「乾杯！そうだそうだ！」"),
+                    ("\"We should finish early on Fridays.\" \"Hear, hear!\"", "「金曜は早く上がるべきだよ」「賛成！」")
+                 ], ipa: "/ˌhɪə ˈhɪə/"),
+            make("now there's an idea", "used to say that someone's suggestion sounds good and is worth considering",
+                 "それいいね・いい考えだね",
+                 useCases: ["相手の提案に乗り気なとき", "思いがけない良案に反応するとき"],
+                 examples: [
+                    ("\"Why don't we just take the train?\" \"Now there's an idea.\"", "「電車で行けばいいんじゃない？」「それいいね」"),
+                    ("\"We could ask your sister to help.\" \"Now there's an idea!\"", "「お姉さんに手伝ってもらえば？」「いい考えだね！」")
+                 ], ipa: "/naʊ ðeəz ən aɪˈdɪə/"),
+            make("if memory serves", "used to say that you think something is true but you are relying on your memory",
+                 "確か・記憶が正しければ",
+                 useCases: ["うろ覚えの情報を伝えるとき", "昔のことを思い出しながら話すとき"],
+                 examples: [
+                    ("If memory serves, the restaurant was just round the corner.", "確か、レストランは角を曲がったところだったと思う。"),
+                    ("We met in 2015, if memory serves.", "記憶が正しければ、出会ったのは2015年だよ。")
+                 ], ipa: "/ɪf ˈmeməri ˈsɜːvz/"),
+            make("give the game away", "(British) to accidentally reveal a secret or a surprise",
+                 "うっかりバラす・ネタバレする",
+                 useCases: ["秘密やサプライズがバレたとき", "うっかり口を滑らせたとき"],
+                 examples: [
+                    ("Don't smile like that – you'll give the game away!", "そんなにニヤニヤしないで、バレちゃうよ！"),
+                    ("The cake in the fridge gave the game away.", "冷蔵庫のケーキでサプライズがバレちゃった。")
+                 ], ipa: "/ɡɪv ðə ˈɡeɪm əˈweɪ/"),
+            make("what's the harm?", "used to say that doing something probably won't cause any problems, so why not do it",
+                 "別にいいじゃん・何がまずいの？",
+                 useCases: ["気軽に試そうと促すとき", "相手の心配を和らげるとき"],
+                 examples: [
+                    ("Just ask him – what's the harm?", "とりあえず彼に聞いてみなよ、別に損はないでしょ？"),
+                    ("One more biscuit – what's the harm?", "もう1枚クッキー食べよう、別にいいじゃん。")
+                 ], ipa: "/wɒts ðə ˈhɑːm/"),
+            make("like what?", "used to ask someone to give an example of what they mean",
+                 "例えば？・たとえばどんな？",
+                 useCases: ["具体例を求めるとき", "相手の話を詳しく聞きたいとき"],
+                 examples: [
+                    ("\"We should do something fun this weekend.\" \"Like what?\"", "「週末なにか楽しいことしようよ」「例えば？」"),
+                    ("\"There are loads of things to see there.\" \"Like what?\"", "「そこは見どころがたくさんあるよ」「たとえばどんな？」")
+                 ], ipa: "/ˈlaɪk wɒt/"),
+            make("fair's fair", "(British, informal) used to say that something should be done because it is fair to everyone",
+                 "公平にいこう・それが筋だよ",
+                 useCases: ["順番や負担を公平にしたいとき", "相手にも分担を求めるとき"],
+                 examples: [
+                    ("I cooked last night, so fair's fair – you wash up.", "昨日は私が料理したんだから、公平にいこう、今日は洗い物お願い。"),
+                    ("Fair's fair, it's your turn to choose the film.", "公平にね、映画選ぶのは君の番だよ。")
+                 ], ipa: "/ˌfeəz ˈfeə/"),
+            make("no ifs or buts", "(British) used to say that something must happen and you will not accept any excuses",
+                 "言い訳なし・つべこべ言わずに",
+                 useCases: ["言い訳を許さないとき", "決定事項をはっきり伝えるとき"],
+                 examples: [
+                    ("You're going to bed at nine – no ifs or buts.", "9時には寝なさい、言い訳はなしよ。"),
+                    ("The report's due Friday, no ifs or buts.", "レポートは金曜締め切り、例外はなしだよ。")
+                 ], ipa: "/nəʊ ˈɪfs ɔː ˈbʌts/"),
+            make("I told you so", "used, often annoyingly, to remind someone that you warned them about something that has now happened",
+                 "だから言ったでしょ",
+                 useCases: ["忠告が当たったとき", "冗談っぽく相手をからかうとき"],
+                 examples: [
+                    ("It rained? I told you so – you should've brought a brolly.", "雨降った？だから言ったでしょ、傘持っていけばよかったのに。"),
+                    ("I hate to say I told you so, but...", "「だから言ったでしょ」とは言いたくないけど…")
+                 ], ipa: "/aɪ ˈtəʊld juː səʊ/"),
+            make("my goodness", "used to express surprise or shock",
+                 "あらまあ・なんてこと・すごい",
+                 useCases: ["驚いたとき", "感心したとき"],
+                 examples: [
+                    ("My goodness, you've grown so tall!", "あらまあ、ずいぶん背が伸びたね！"),
+                    ("My goodness, look at the queue!", "うわっ、あの行列見て！")
+                 ], ipa: "/maɪ ˈɡʊdnəs/"),
+            make("in your dreams", "(informal) used to say that something someone hopes for will definitely not happen",
+                 "夢でも見てな・ありえないね",
+                 useCases: ["相手の願望を冗談っぽく否定するとき", "ありえないと一蹴するとき"],
+                 examples: [
+                    ("\"I'm going to beat you at tennis.\" \"In your dreams!\"", "「テニスで君に勝つからね」「夢でも見てな！」"),
+                    ("Him, buy a round of drinks? In your dreams.", "あいつがみんなに一杯おごる？ありえないね。")
+                 ], ipa: "/ɪn jɔː ˈdriːmz/"),
+            make("who cares?", "used to say that something is not important and you are not worried about it",
+                 "どうでもいいじゃん・気にしない",
+                 useCases: ["些細なことを気にしないとき", "相手の心配を軽くするとき"],
+                 examples: [
+                    ("So we lost the quiz – who cares? It was fun.", "クイズで負けたけど、どうでもいいよ、楽しかったし。"),
+                    ("\"Your shirt's creased.\" \"Who cares?\"", "「シャツしわになってるよ」「気にしない」")
+                 ], ipa: "/huː ˈkeəz/"),
+            make("we're good", "(informal) used to say that there is no problem or bad feeling between you and someone",
+                 "もう大丈夫・わだかまりはないよ",
+                 useCases: ["謝られて許すとき", "関係に問題がないと伝えるとき"],
+                 examples: [
+                    ("\"Sorry about yesterday.\" \"Don't worry, we're good.\"", "「昨日はごめんね」「気にしないで、もう大丈夫だよ」"),
+                    ("I paid you back, so we're good, right?", "お金返したから、これでおあいこだよね？")
+                 ], ipa: "/wɪə ˈɡʊd/"),
+            make("full stop", "(British) used at the end of a statement to emphasise that it is final and there is nothing more to say",
+                 "以上・それだけ・絶対に",
+                 useCases: ["きっぱり言い切るとき", "議論を終わらせたいとき"],
+                 examples: [
+                    ("I'm not lending him money again, full stop.", "もう彼にお金は貸さない、以上。"),
+                    ("She's the best cook I know, full stop.", "彼女は私の知る中で一番料理が上手、それだけは確か。")
+                 ], ipa: "/ˌfʊl ˈstɒp/"),
         ]
     }
     private static var britishColloquial283: [Word] {
