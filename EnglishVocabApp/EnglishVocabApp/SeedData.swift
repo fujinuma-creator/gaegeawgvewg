@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311
         ]
         return groups.flatMap { $0 }
     }
@@ -47250,6 +47250,117 @@ enum SeedData {
                  ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
         ]
     }
+
+    private static var britishColloquial311: [Word] {
+        [
+            make("apart from", "except for; or in addition to",
+                 "〜を除いて・〜以外に／〜に加えて",
+                 useCases: ["例外を挙げるとき", "「それ以外にも」と付け足すとき"],
+                 examples: [
+                    ("Apart from the weather, the trip was brilliant.", "天気以外は、旅行は最高だったよ。"),
+                    ("Apart from work, what do you do for fun?", "仕事以外に、何して楽しんでるの？")
+                 ], ipa: "/əˈpɑːt frəm/"),
+            make("except for", "not including; but not",
+                 "〜を除いては・〜以外は",
+                 useCases: ["一つだけ例外があるとき", "全体の中で外れるものを言うとき"],
+                 examples: [
+                    ("Everyone came except for Tom.", "トム以外はみんな来たよ。"),
+                    ("The flat's lovely, except for the noise from the street.", "通りの騒音を除けば、いい部屋だよ。")
+                 ], ipa: "/ɪkˈsept fə/"),
+            make("regardless", "without being affected by something; anyway",
+                 "それでも・関係なく・とにかく",
+                 useCases: ["状況に関係なくやると言うとき", "反対があっても続けるとき"],
+                 examples: [
+                    ("It might rain, but we're going regardless.", "雨かもしれないけど、とにかく行くよ。"),
+                    ("Regardless of what he says, I think you did the right thing.", "彼が何て言おうと、君は正しいことをしたと思う。")
+                 ], ipa: "/rɪˈɡɑːdləs/"),
+            make("around the clock", "all day and all night, without stopping",
+                 "24時間ぶっ通しで・昼夜を問わず",
+                 useCases: ["休みなく働いている様子を言うとき", "24時間対応のサービスを説明するとき"],
+                 examples: [
+                    ("The nurses are working around the clock.", "看護師さんたちは昼も夜も働いてるよ。"),
+                    ("We've been working around the clock to finish this project.", "このプロジェクトを終わらせるために、ずっとぶっ通しで働いてるんだ。")
+                 ], ipa: "/əˌraʊnd ðə ˈklɒk/"),
+            make("go on and on", "to keep talking about something for too long",
+                 "延々としゃべり続ける・だらだら続く",
+                 useCases: ["話が長い人に困ったとき", "終わらない会議や話を愚痴るとき"],
+                 examples: [
+                    ("He went on and on about his new car.", "彼、新しい車の話を延々としてたよ。"),
+                    ("The meeting just went on and on.", "会議がだらだらと全然終わらなかったんだ。")
+                 ], ipa: "/ˌɡəʊ ˌɒn ənd ˈɒn/"),
+            make("over and over", "many times; repeatedly",
+                 "何度も何度も・繰り返し",
+                 useCases: ["同じことを繰り返すとき", "何度言っても伝わらないとき"],
+                 examples: [
+                    ("I've told him over and over, but he never listens.", "何度も何度も言ってるのに、彼は全然聞かないんだ。"),
+                    ("The kids watched the same film over and over again.", "子どもたちは同じ映画を繰り返し何回も観てたよ。")
+                 ], ipa: "/ˌəʊvər ənd ˈəʊvə/"),
+            make("all at once", "suddenly; or all at the same time",
+                 "突然・いきなり／一度に全部",
+                 useCases: ["急に何かが起きたとき", "一度にいろいろ重なったとき"],
+                 examples: [
+                    ("All at once, the lights went out.", "いきなり電気が消えたんだ。"),
+                    ("Don't try to do everything all at once.", "全部いっぺんにやろうとしないで。")
+                 ], ipa: "/ˌɔːl ət ˈwʌns/"),
+            make("half the time", "quite often; a lot of the time",
+                 "しょっちゅう・半分くらいは",
+                 useCases: ["よくあることを少し大げさに言うとき", "相手への不満を軽く言うとき"],
+                 examples: [
+                    ("Half the time he doesn't even answer his phone.", "彼、しょっちゅう電話にすら出ないんだよ。"),
+                    ("Half the time I've no idea what she's talking about.", "彼女が何の話をしてるのか、半分くらいはわからないよ。")
+                 ], ipa: "/ˌhɑːf ðə ˈtaɪm/"),
+            make("buy in bulk", "to buy a large amount of something at once, usually to save money",
+                 "まとめ買いする",
+                 useCases: ["節約のために大量に買うとき", "日用品の買い方を話すとき"],
+                 examples: [
+                    ("We buy toilet roll in bulk – it's much cheaper.", "トイレットペーパーはまとめ買いしてるよ。ずっと安いからね。"),
+                    ("Is it really worth buying in bulk if you live alone?", "一人暮らしでまとめ買いって本当に得なの？")
+                 ], ipa: "/ˌbaɪ ɪn ˈbʌlk/"),
+            make("the going rate", "the usual price that people pay for something at the moment",
+                 "相場・今の一般的な値段",
+                 useCases: ["値段が妥当か確かめるとき", "報酬や料金の相場を聞くとき"],
+                 examples: [
+                    ("What's the going rate for a babysitter these days?", "最近ベビーシッターの相場っていくらくらい？"),
+                    ("Fifty quid an hour is about the going rate.", "1時間50ポンドくらいが相場だね。")
+                 ], ipa: "/ðə ˌɡəʊɪŋ ˈreɪt/"),
+            make("have a clear-out", "to get rid of things you no longer need",
+                 "（いらない物を）片付ける・断捨離する",
+                 useCases: ["部屋や物を整理するとき", "引っ越し前に物を減らすとき"],
+                 examples: [
+                    ("I really need to have a clear-out of my wardrobe.", "クローゼットの中、本当に断捨離しなきゃ。"),
+                    ("We had a big clear-out before we moved.", "引っ越す前に大がかりな片付けをしたんだ。")
+                 ], ipa: "/ˌhæv ə ˈklɪər aʊt/"),
+            make("think ahead", "to plan for what might happen in the future",
+                 "先のことを考える・前もって計画する",
+                 useCases: ["準備の大切さを言うとき", "先を見越して行動した人を褒めるとき"],
+                 examples: [
+                    ("Good thinking ahead – I'd never have remembered the umbrella.", "先を読んでたね。傘なんて絶対忘れてたよ。"),
+                    ("You need to think ahead if you want a table on Saturday.", "土曜に席を取りたいなら、早めに考えておかないと。")
+                 ], ipa: "/ˌθɪŋk əˈhed/"),
+            make("see it through", "to continue doing something until it is finished, even if it is difficult",
+                 "最後までやり遂げる",
+                 useCases: ["途中で投げ出さないと言うとき", "大変でも続ける決意を伝えるとき"],
+                 examples: [
+                    ("It's tough, but I'm going to see it through.", "大変だけど、最後までやり遂げるつもりだよ。"),
+                    ("You've started the course, so you might as well see it through.", "コースを始めたんだから、最後までやったほうがいいよ。")
+                 ], ipa: "/ˌsiː ɪt ˈθruː/"),
+            make("stay out late", "to not come home until late at night",
+                 "夜遅くまで出歩く・帰りが遅くなる",
+                 useCases: ["夜遊びについて話すとき", "家族に帰りの時間を伝えるとき"],
+                 examples: [
+                    ("Don't stay out too late – you've got work tomorrow.", "あんまり遅くまで出歩かないでね。明日仕事でしょ。"),
+                    ("We stayed out late and missed the last train.", "遅くまで遊んでて、終電を逃しちゃった。")
+                 ], ipa: "/ˌsteɪ aʊt ˈleɪt/"),
+            make("get back at someone", "to do something bad to someone because they did something bad to you",
+                 "（人に）仕返しする",
+                 useCases: ["やり返したい気持ちを言うとき", "冗談で仕返しを宣言するとき"],
+                 examples: [
+                    ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
+                    ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
+                 ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
     private static var britishColloquial310: [Word] {
         [
             make("a slippery slope", "a situation where one small step is likely to lead to worse things",
