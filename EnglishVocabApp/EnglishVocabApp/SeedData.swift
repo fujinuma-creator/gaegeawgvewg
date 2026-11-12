@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306
         ]
         return groups.flatMap { $0 }
     }
@@ -47139,6 +47139,115 @@ enum SeedData {
                     ("\"Thanks so much for having us.\" \"The pleasure's all mine.\"", "「招いてくれて本当にありがとう」「こちらこそ来てくれて嬉しいよ」"),
                     ("\"Lovely to meet you.\" \"The pleasure's all mine.\"", "「お会いできて嬉しいです」「こちらこそ」")
                  ], ipa: "/ðə ˈpleʒəz ɔːl ˈmaɪn/"),
+        ]
+    }
+    private static var britishColloquial306: [Word] {
+        [
+            make("be a sucker for", "(informal) to like something so much that you cannot resist it",
+                 "〜に目がない・〜にめっぽう弱い",
+                 useCases: ["好きでたまらないものを言うとき", "つい買ってしまう・つい乗ってしまうと言うとき"],
+                 examples: [
+                    ("I'm a sucker for a good cheesecake.", "美味しいチーズケーキには目がないんだ。"),
+                    ("She's a sucker for romantic films.", "彼女は恋愛映画にめっぽう弱いの。")
+                 ], ipa: "/bi ə ˈsʌkə fɔː/"),
+            make("bugbear", "(mainly British) something that annoys or worries you, often repeatedly",
+                 "悩みの種・イライラの元",
+                 useCases: ["いつも気になる不満を話すとき", "苦手なことを挙げるとき"],
+                 examples: [
+                    ("My biggest bugbear is people who don't reply to messages.", "一番イラッとするのは、メッセージを返さない人だね。"),
+                    ("Parking is a real bugbear round here.", "この辺は駐車が本当に悩みの種なんだ。")
+                 ], ipa: "/ˈbʌɡbeə/"),
+            make("grate on someone", "to annoy someone, especially a sound, habit or way of speaking",
+                 "（声・癖などが）イラッとさせる・神経に障る",
+                 useCases: ["人の癖や声が気に障るとき", "繰り返されて嫌になったとき"],
+                 examples: [
+                    ("His laugh really grates on me.", "あの人の笑い方、本当に耳障りなんだよね。"),
+                    ("That song is starting to grate on me.", "あの曲、だんだん鬱陶しくなってきた。")
+                 ], ipa: "/ˈɡreɪt ɒn ˌsʌmwʌn/"),
+            make("make a meal of it", "(British, informal) to take more time or effort than necessary, or make something seem harder than it is",
+                 "大げさにする・必要以上に手間取る",
+                 useCases: ["簡単なことに時間をかけすぎている人に", "大騒ぎしすぎだと言うとき"],
+                 examples: [
+                    ("It's just one email – don't make a meal of it.", "メール1通だけだよ。そんなに大ごとにしないで。"),
+                    ("He really made a meal of putting up that shelf.", "彼、棚を付けるだけでやたら手こずってたよ。")
+                 ], ipa: "/ˌmeɪk ə ˈmiːl əv ɪt/"),
+            make("you know the type", "used when describing a kind of person you expect the listener to recognise",
+                 "ほら、ああいうタイプいるでしょ",
+                 useCases: ["人の性格をざっくり説明するとき", "相手も分かるはずの人物像を話すとき"],
+                 examples: [
+                    ("He's always talking about his car – you know the type.", "いつも車の話ばっかりでさ、ああいうタイプ分かるでしょ。"),
+                    ("She's one of those super-organised people. You know the type.", "彼女って超きっちりしてる人なの。ほら、いるじゃん、そういう人。")
+                 ], ipa: "/ju ˌnəʊ ðə ˈtaɪp/"),
+            make("chop chop", "(informal) used to tell someone to hurry up",
+                 "ほら急いで・さっさと",
+                 useCases: ["子どもや友達を急かすとき", "出発をせかすとき（軽い口調で）"],
+                 examples: [
+                    ("Chop chop, the taxi's waiting!", "ほら急いで、タクシー待ってるよ！"),
+                    ("Come on, chop chop – we'll miss the start.", "さあさあ、急がないと始まっちゃうよ。")
+                 ], ipa: "/ˌtʃɒp ˈtʃɒp/"),
+            make("push the boat out", "(British, informal) to spend a lot of money on something, especially to celebrate",
+                 "奮発する・パーッとお金を使う",
+                 useCases: ["お祝いで贅沢するとき", "いつもより高いものを選ぶとき"],
+                 examples: [
+                    ("It's your 30th, so let's push the boat out.", "30歳の誕生日なんだから、パーッといこうよ。"),
+                    ("We pushed the boat out and got the expensive wine.", "奮発して高いワインを頼んだんだ。")
+                 ], ipa: "/ˌpʊʃ ðə ˈbəʊt aʊt/"),
+            make("what have you got to lose?", "used to encourage someone to try something because there is no real risk",
+                 "ダメ元でしょ？・失うものなんてないじゃん",
+                 useCases: ["迷っている人の背中を押すとき", "リスクが少ないと励ますとき"],
+                 examples: [
+                    ("Just ask her out – what have you got to lose?", "とりあえず誘ってみなよ。ダメ元でしょ？"),
+                    ("Apply for the job anyway. What have you got to lose?", "一応応募してみれば？損することないじゃん。")
+                 ], ipa: "/ˌwɒt əv ju ɡɒt tə ˈluːz/"),
+            make("you wish!", "(informal) used to say that what someone hopes for is very unlikely to happen",
+                 "そうだったらいいけどね・ないない",
+                 useCases: ["相手の願望を軽くからかうとき", "あり得ないと冗談で返すとき"],
+                 examples: [
+                    ("\"I bet you'll let me drive.\" \"You wish!\"", "「運転させてくれるでしょ？」「残念でした！」"),
+                    ("\"Is the boss giving us Friday off?\" \"You wish!\"", "「社長、金曜休みにしてくれるの？」「そうだったらいいけどね！」")
+                 ], ipa: "/ju ˈwɪʃ/"),
+            make("by a mile", "(informal) by a very large amount; easily",
+                 "断トツで・圧倒的に",
+                 useCases: ["差が大きいことを強調するとき", "一番だと言い切るとき"],
+                 examples: [
+                    ("This is the best pizza in town by a mile.", "ここのピザ、街で断トツに美味しいよ。"),
+                    ("She won the race by a mile.", "彼女はレースで圧勝した。")
+                 ], ipa: "/baɪ ə ˈmaɪl/"),
+            make("not one bit", "not at all; used for emphasis",
+                 "全然〜ない・これっぽっちも〜ない",
+                 useCases: ["強く否定するとき", "まったく気にしていないと言うとき"],
+                 examples: [
+                    ("\"Did you miss me?\" \"Not one bit!\"", "「寂しかった？」「全然！」"),
+                    ("I didn't enjoy that film one bit.", "あの映画、これっぽっちも楽しめなかった。")
+                 ], ipa: "/ˌnɒt ˌwʌn ˈbɪt/"),
+            make("blow over", "(of an argument, problem or storm) to pass and be forgotten without serious effects",
+                 "（騒ぎ・ケンカが）収まる・落ち着く",
+                 useCases: ["揉め事がそのうち落ち着くと励ますとき", "時間が解決すると言うとき"],
+                 examples: [
+                    ("Don't worry, it'll all blow over in a few days.", "大丈夫、数日もすれば収まるよ。"),
+                    ("I'll wait until things blow over before I talk to him.", "落ち着くまで待ってから彼と話すよ。")
+                 ], ipa: "/ˌbləʊ ˈəʊvə/"),
+            make("third time lucky", "(British) used when you hope or find that you will succeed on your third attempt",
+                 "三度目の正直",
+                 useCases: ["2回失敗した後にもう一度挑戦するとき", "3回目でうまくいったとき"],
+                 examples: [
+                    ("I failed my driving test twice, but third time lucky!", "運転免許試験に2回落ちたけど、三度目の正直だ！"),
+                    ("Let's try calling again – third time lucky.", "もう一回電話してみよう。三度目の正直ってね。")
+                 ], ipa: "/ˌθɜːd taɪm ˈlʌki/"),
+            make("for old times' sake", "because of happy memories of the past, or a past relationship",
+                 "昔のよしみで・懐かしさから",
+                 useCases: ["昔の仲間と思い出の場所に行くとき", "昔の付き合いで頼みを聞くとき"],
+                 examples: [
+                    ("Let's go to our old pub for old times' sake.", "懐かしいし、昔よく行ったパブに行こうよ。"),
+                    ("He helped me out for old times' sake.", "彼は昔のよしみで助けてくれた。")
+                 ], ipa: "/fər ˌəʊld ˈtaɪmz seɪk/"),
+            make("draw a line under", "to decide that something is finished and stop thinking or talking about it",
+                 "〜に区切りをつける・〜を終わりにする",
+                 useCases: ["過去の揉め事を水に流すとき", "一つの区切りとして終わらせるとき"],
+                 examples: [
+                    ("Let's draw a line under it and move on.", "この件はもう終わりにして、前に進もう。"),
+                    ("I want to draw a line under that whole year.", "あの一年のことはもう区切りをつけたいんだ。")
+                 ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
         ]
     }
     private static var britishColloquial302: [Word] {
