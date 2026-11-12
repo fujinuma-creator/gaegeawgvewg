@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310
         ]
         return groups.flatMap { $0 }
     }
@@ -47250,6 +47250,116 @@ enum SeedData {
                  ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
         ]
     }
+    private static var britishColloquial310: [Word] {
+        [
+            make("a slippery slope", "a situation where one small step is likely to lead to worse things",
+                 "坂道を転がるように悪化しかねないこと・危険な前例",
+                 useCases: ["一度許すと歯止めがきかなくなりそうなとき", "小さな妥協が大問題につながると警告するとき"],
+                 examples: [
+                    ("Skipping the gym once is fine, but it's a slippery slope.", "ジムを1回サボるのはいいけど、そこからズルズルいくんだよね。"),
+                    ("If we let one person work from home every day, it's a slippery slope.", "一人に毎日在宅を認めたら、なし崩しになるよ。")
+                 ], ipa: "/ə ˌslɪpəri ˈsləʊp/"),
+            make("a hot topic", "a subject that a lot of people are talking about or arguing about",
+                 "話題のテーマ・ホットな話題",
+                 useCases: ["みんなが話題にしていることを言うとき", "議論になりやすいテーマを紹介するとき"],
+                 examples: [
+                    ("Rent prices are a hot topic at the moment.", "今は家賃の高さがホットな話題だね。"),
+                    ("Don't bring up politics – it's a bit of a hot topic in this family.", "政治の話はやめて。うちの家族ではちょっと荒れる話題なんだ。")
+                 ], ipa: "/ə ˌhɒt ˈtɒpɪk/"),
+            make("a figure of speech", "words used in a way that is not meant literally",
+                 "言葉のあや・比喩的な言い方",
+                 useCases: ["本気で言ったわけではないと説明するとき", "文字通りの意味ではないと弁解するとき"],
+                 examples: [
+                    ("I didn't mean I'd actually kill him – it's just a figure of speech.", "本気で殺すって意味じゃないよ、ただの言葉のあやだって。"),
+                    ("\"Dying of hunger\" is a figure of speech, don't worry.", "「お腹が空いて死にそう」は言葉のあやだから心配しないで。")
+                 ], ipa: "/ə ˌfɪɡər əv ˈspiːtʃ/"),
+            make("a mixed blessing", "something that has both good and bad effects",
+                 "良し悪しのあるもの・ありがた迷惑な面もあること",
+                 useCases: ["良い面と悪い面の両方があると言うとき", "手放しで喜べないとき"],
+                 examples: [
+                    ("Working from home is a mixed blessing – no commute, but I never switch off.", "在宅勤務は良し悪しだね。通勤はないけど、全然オフにならない。"),
+                    ("Having my parents nearby is a mixed blessing.", "親が近くに住んでるのは、ありがたいような困るような感じだよ。")
+                 ], ipa: "/ə ˌmɪkst ˈblesɪŋ/"),
+            make("a hard sell", "something that is difficult to persuade people to accept or like",
+                 "説得するのが難しいこと・受け入れてもらいにくい話",
+                 useCases: ["相手を納得させるのが難しそうなとき", "提案が受け入れられにくいと予想するとき"],
+                 examples: [
+                    ("Camping in November is going to be a hard sell to the kids.", "11月にキャンプなんて、子どもたちを説得するのは大変そうだ。"),
+                    ("A pay cut is always a hard sell.", "減給を納得してもらうのはいつだって難しいよ。")
+                 ], ipa: "/ə ˌhɑːd ˈsel/"),
+            make("have a quiet word", "to speak to someone privately, often to tell them about a problem politely",
+                 "こっそり話をする・それとなく注意する",
+                 useCases: ["人前ではなく個別に注意したいとき", "内々に相談したいとき"],
+                 examples: [
+                    ("I'll have a quiet word with him about the noise.", "騒音のこと、彼にそれとなく言っておくよ。"),
+                    ("Can I have a quiet word with you after the meeting?", "会議の後、ちょっと二人で話せる？")
+                 ], ipa: "/hæv ə ˌkwaɪət ˈwɜːd/"),
+            make("for the long haul", "for a long period of time, especially when something is difficult",
+                 "長期戦で・長い目で見て腰を据えて",
+                 useCases: ["長く続けるつもりだと言うとき", "すぐには終わらないと覚悟するとき"],
+                 examples: [
+                    ("We're in this for the long haul, so pace yourself.", "これは長期戦だから、ペース配分してね。"),
+                    ("Learning a language is something you do for the long haul.", "語学は腰を据えてやるものだよ。")
+                 ], ipa: "/fə ðə ˌlɒŋ ˈhɔːl/"),
+            make("a trial run", "a test of something to see if it works before doing it properly",
+                 "試運転・お試し・リハーサル",
+                 useCases: ["本番前に試してみるとき", "新しいやり方をお試しでやるとき"],
+                 examples: [
+                    ("Let's do a trial run before the guests arrive.", "お客さんが来る前に一度試しにやってみよう。"),
+                    ("Think of this week as a trial run for the new schedule.", "今週は新しいスケジュールのお試し期間だと思って。")
+                 ], ipa: "/ə ˈtraɪəl ˌrʌn/"),
+            make("a talking point", "a subject that people discuss or that gets people talking",
+                 "話のネタ・話題になるもの",
+                 useCases: ["話のきっかけになるものを言うとき", "みんなが話題にしていることを指すとき"],
+                 examples: [
+                    ("That giant painting is a real talking point when people visit.", "あの巨大な絵は、人が来ると必ず話のネタになるんだ。"),
+                    ("The referee's decision was the main talking point after the match.", "試合後はレフェリーの判定が一番の話題だったね。")
+                 ], ipa: "/ə ˈtɔːkɪŋ ˌpɔɪnt/"),
+            make("a judgement call", "a decision you have to make based on your own opinion because there's no clear rule",
+                 "自分の判断に委ねられること・判断の分かれ目",
+                 useCases: ["正解がなく自分で判断するしかないとき", "判断を相手に任せるとき"],
+                 examples: [
+                    ("Whether to cancel is a judgement call – it's up to you.", "中止するかどうかは判断次第だね。君に任せるよ。"),
+                    ("I made a judgement call and left early.", "自分の判断で早めに帰ったんだ。")
+                 ], ipa: "/ə ˈdʒʌdʒmənt ˌkɔːl/"),
+            make("growing pains", "problems that happen when something new or growing is developing",
+                 "成長に伴う問題・立ち上げ期の苦労",
+                 useCases: ["新しい会社や仕組みのトラブルを説明するとき", "変化の途中のゴタゴタを言うとき"],
+                 examples: [
+                    ("The new system has a few growing pains, but it'll settle down.", "新システムはまだいくつか問題があるけど、そのうち落ち着くよ。"),
+                    ("Every new team goes through growing pains.", "新しいチームは必ず最初は苦労するものだよ。")
+                 ], ipa: "/ˈɡrəʊɪŋ ˌpeɪnz/"),
+            make("a hot potato", "a difficult or controversial issue that nobody wants to deal with",
+                 "扱いにくい問題・厄介な案件",
+                 useCases: ["誰も触れたがらない問題を言うとき", "責任を押し付け合っている話題のとき"],
+                 examples: [
+                    ("Immigration is a bit of a hot potato right now.", "移民問題は今ちょっと扱いにくい話題だね。"),
+                    ("Nobody wants to deal with the budget – it's a real hot potato.", "誰も予算の件に触りたがらない。本当に厄介な案件だよ。")
+                 ], ipa: "/ə ˌhɒt pəˈteɪtəʊ/"),
+            make("a stroke of luck", "something lucky that happens unexpectedly",
+                 "思いがけない幸運・ラッキーな偶然",
+                 useCases: ["思わぬ幸運に恵まれたとき", "たまたまうまくいったとき"],
+                 examples: [
+                    ("By a stroke of luck, there was one table left.", "運よく、テーブルが一つだけ空いてたんだ。"),
+                    ("Finding this flat was a real stroke of luck.", "このフラットが見つかったのは本当にラッキーだった。")
+                 ], ipa: "/ə ˌstrəʊk əv ˈlʌk/"),
+            make("a knee-jerk reaction", "a quick reaction made without thinking carefully",
+                 "反射的な反応・脊髄反射的な対応",
+                 useCases: ["よく考えずに反応してしまったとき", "感情的な即断を戒めるとき"],
+                 examples: [
+                    ("Sorry, that was a knee-jerk reaction – let me think about it.", "ごめん、反射的に言っちゃった。ちょっと考えさせて。"),
+                    ("Banning phones completely feels like a knee-jerk reaction.", "スマホを全面禁止するのは、ちょっと短絡的な対応に思えるな。")
+                 ], ipa: "/ə ˌniː dʒɜːk riˈækʃən/"),
+            make("a new lease of life", "new energy or a chance to be successful or useful again",
+                 "新たな活力・第二の人生・息を吹き返すこと",
+                 useCases: ["元気を取り戻した人を言うとき", "古いものが再び使えるようになったとき"],
+                 examples: [
+                    ("Retirement has given my dad a new lease of life.", "引退してから父は生き生きしてるよ。"),
+                    ("A bit of paint gave the old chair a new lease of life.", "ペンキを少し塗ったら、古い椅子が生き返ったよ。")
+                 ], ipa: "/ə ˌnjuː ˌliːs əv ˈlaɪf/"),
+        ]
+    }
+
     private static var britishColloquial309: [Word] {
         [
             make("a running joke", "a joke that people keep repeating over a long time",
