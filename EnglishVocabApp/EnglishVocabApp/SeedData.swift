@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial313: [Word] {
+        [
+            make("it's out of my hands", "I no longer have any control over it",
+                 "もう自分ではどうにもできない",
+                 useCases: ["決定権が自分にないと伝えるとき", "手を尽くした後に結果を待つとき"],
+                 examples: [
+                    ("I'd love to help, but it's out of my hands now.", "助けたいけど、もう僕にはどうにもできないんだ。"),
+                    ("I've sent the application, so it's out of my hands.", "申請は出したから、あとは待つだけだよ。")
+                 ], ipa: "/ɪts ˌaʊt əv maɪ ˈhændz/"),
+            make("can't make head or tail of", "can't understand something at all",
+                 "さっぱり分からない・ちんぷんかんぷん",
+                 useCases: ["説明書や文章が全く理解できないとき", "状況が意味不明なとき"],
+                 examples: [
+                    ("I can't make head or tail of these instructions.", "この説明書、さっぱり分からないよ。"),
+                    ("She explained it twice, but I still couldn't make head or tail of it.", "彼女が二回説明してくれたけど、それでもちんぷんかんぷんだった。")
+                 ], ipa: "/ˌkɑːnt meɪk ˌhed ɔː ˈteɪl əv/"),
+            make("looking back", "when I think about it now, after it happened",
+                 "今振り返ってみると",
+                 useCases: ["過去を振り返って感想を言うとき", "後から気づいたことを話すとき"],
+                 examples: [
+                    ("Looking back, it was the best year of my life.", "今振り返ると、人生で最高の一年だったな。"),
+                    ("Looking back, I should have listened to my mum.", "今思えば、母の言うことを聞いておけばよかった。")
+                 ], ipa: "/ˌlʊkɪŋ ˈbæk/"),
+            make("just to be clear", "used to make sure there's no misunderstanding",
+                 "念のためはっきりさせておくと",
+                 useCases: ["誤解がないよう確認するとき", "自分の立場をはっきり伝えるとき"],
+                 examples: [
+                    ("Just to be clear, we're meeting at six, not seven?", "念のため確認だけど、7時じゃなくて6時集合だよね？"),
+                    ("Just to be clear, I'm not angry with you.", "はっきり言っておくけど、君に怒ってるわけじゃないよ。")
+                 ], ipa: "/ˌdʒʌst tə bi ˈklɪə/"),
+            make("run sth by sb", "to tell someone about an idea to get their opinion",
+                 "（人に）意見を聞く・確認してもらう",
+                 useCases: ["決める前に誰かの意見を聞くとき", "上司や家族に相談するとき"],
+                 examples: [
+                    ("Can I run something by you?", "ちょっと意見聞いてもいい？"),
+                    ("Let me run it by my wife first.", "まず妻に確認させて。")
+                 ], ipa: "/ˈrʌn ˌsʌmθɪŋ baɪ ˌsʌmwʌn/"),
+            make("talk it through", "to discuss something carefully and in detail",
+                 "じっくり話し合う",
+                 useCases: ["問題を一緒に整理したいとき", "悩んでいる人の話を聞くとき"],
+                 examples: [
+                    ("Let's sit down and talk it through.", "座ってじっくり話し合おう。"),
+                    ("It helped to talk it through with a friend.", "友達と話してみたら気持ちが整理できたよ。")
+                 ], ipa: "/ˌtɔːk ɪt ˈθruː/"),
+            make("think it through", "to consider all the possible results of a plan",
+                 "よく考える・じっくり考え抜く",
+                 useCases: ["焦って決めないよう促すとき", "決断の前に時間を取るとき"],
+                 examples: [
+                    ("Don't rush — think it through first.", "焦らないで、まずよく考えて。"),
+                    ("I didn't really think it through, did I?", "ちゃんと考えてなかったね、僕。")
+                 ], ipa: "/ˌθɪŋk ɪt ˈθruː/"),
+            make("on the subject of", "while we're talking about",
+                 "～の話といえば・～について言うと",
+                 useCases: ["関連する話題に移るとき", "話の流れで別の話を持ち出すとき"],
+                 examples: [
+                    ("On the subject of holidays, where are you going this summer?", "休みの話といえば、この夏はどこ行くの？"),
+                    ("While we're on the subject of money, you still owe me a tenner.", "お金の話が出たついでに、10ポンドまだ返してもらってないよ。")
+                 ], ipa: "/ˌɒn ðə ˈsʌbdʒɪkt əv/"),
+            make("whatever happens", "no matter what happens",
+                 "何があっても・どうなろうと",
+                 useCases: ["相手を励ますとき", "固い決意を伝えるとき"],
+                 examples: [
+                    ("Whatever happens, I'm proud of you.", "どうなろうと、君を誇りに思うよ。"),
+                    ("Whatever happens, don't miss the last train.", "何があっても終電は逃さないでね。")
+                 ], ipa: "/wɒtˌevə ˈhæpənz/"),
+            make("it's a long way off", "it won't happen for a long time",
+                 "まだずっと先の話だ",
+                 useCases: ["予定や目標がまだ遠いと言うとき", "今心配する必要はないと伝えるとき"],
+                 examples: [
+                    ("Retirement? That's a long way off for me.", "引退？僕にはまだずっと先の話だよ。"),
+                    ("The wedding's a long way off, so don't panic.", "結婚式はまだ先だから、焦らなくていいよ。")
+                 ], ipa: "/ɪts ə ˌlɒŋ weɪ ˈɒf/"),
+            make("while we're at it", "since we are already doing this, we can also…",
+                 "ついでに",
+                 useCases: ["ついでに別のこともしようと提案するとき", "作業中に追加をお願いするとき"],
+                 examples: [
+                    ("While we're at it, let's clean the windows too.", "ついでに窓も掃除しちゃおう。"),
+                    ("Can you grab some milk while you're at it?", "ついでに牛乳も買ってきてくれる？")
+                 ], ipa: "/ˌwaɪl wɪər ˈæt ɪt/"),
+            make("bogged down", "stuck and unable to make progress",
+                 "（仕事・細かいことに）はまって進まない",
+                 useCases: ["仕事に追われて身動きが取れないとき", "細部にこだわりすぎるのを注意するとき"],
+                 examples: [
+                    ("I've been bogged down with emails all morning.", "午前中ずっとメール処理で手一杯だったよ。"),
+                    ("Let's not get bogged down in the details.", "細かいことにこだわりすぎないようにしよう。")
+                 ], ipa: "/ˌbɒɡd ˈdaʊn/"),
+            make("in the grand scheme of things", "when you consider the whole situation",
+                 "大局的に見れば・長い目で見れば",
+                 useCases: ["小さな失敗を気にしないよう励ますとき", "物事を大きな視点で見るとき"],
+                 examples: [
+                    ("In the grand scheme of things, it's not a big problem.", "大きな目で見れば、大した問題じゃないよ。"),
+                    ("One bad exam doesn't matter in the grand scheme of things.", "長い目で見れば、テスト一回の失敗なんて関係ないよ。")
+                 ], ipa: "/ɪn ðə ˌɡrænd ˈskiːm əv ˌθɪŋz/"),
+            make("that's the plan", "that is what I intend to do",
+                 "そのつもりだよ・その予定",
+                 useCases: ["予定を聞かれて肯定するとき", "うまくいくか分からないが意図を伝えるとき"],
+                 examples: [
+                    ("So you're moving to Lisbon? — That's the plan.", "じゃあリスボンに引っ越すの？ — そのつもり。"),
+                    ("Finish by Friday — well, that's the plan anyway.", "金曜までに終わらせる…まあ、一応その予定。")
+                 ], ipa: "/ˌðæts ðə ˈplæn/"),
+            make("it's worth mentioning", "it's a good idea to say this",
+                 "言っておく価値がある・一応言っておくと",
+                 useCases: ["補足情報を付け加えるとき", "大事なことをさりげなく伝えるとき"],
+                 examples: [
+                    ("It's worth mentioning that the shop closes early on Sundays.", "一応言っておくと、そのお店は日曜は早く閉まるよ。"),
+                    ("I didn't think it was worth mentioning.", "わざわざ言うほどのことじゃないと思ってた。")
+                 ], ipa: "/ɪts ˌwɜːθ ˈmenʃənɪŋ/"),
         ]
     }
 
