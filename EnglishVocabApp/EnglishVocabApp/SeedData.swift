@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308
         ]
         return groups.flatMap { $0 }
     }
@@ -47248,6 +47248,115 @@ enum SeedData {
                     ("Let's draw a line under it and move on.", "この件はもう終わりにして、前に進もう。"),
                     ("I want to draw a line under that whole year.", "あの一年のことはもう区切りをつけたいんだ。")
                  ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
+        ]
+    }
+    private static var britishColloquial308: [Word] {
+        [
+            make("a dry run", "a practice or rehearsal before the real event",
+                 "予行演習・リハーサル",
+                 useCases: ["本番前に一度試してみるとき", "プレゼンや発表の練習を提案するとき"],
+                 examples: [
+                    ("Let's do a dry run of the presentation tomorrow morning.", "明日の朝、プレゼンの予行演習をしようよ。"),
+                    ("We did a dry run last week, so it should go smoothly.", "先週リハーサルしたから、うまくいくはずだよ。")
+                 ], ipa: "/ə ˌdraɪ ˈrʌn/"),
+            make("a happy medium", "a satisfactory balance between two extremes",
+                 "ちょうどいい落としどころ・ほどよい中間",
+                 useCases: ["極端を避けてバランスを取りたいとき", "妥協点を探すとき"],
+                 examples: [
+                    ("I'm trying to find a happy medium between work and family.", "仕事と家族のちょうどいいバランスを探してるんだ。"),
+                    ("Three days in the office seems like a happy medium.", "週3日出社くらいがちょうどいい落としどころじゃないかな。")
+                 ], ipa: "/ə ˌhæpi ˈmiːdiəm/"),
+            make("a lightbulb moment", "a moment when you suddenly understand or have a good idea",
+                 "ひらめいた瞬間・ピンときた瞬間",
+                 useCases: ["急に理解できたとき", "良いアイデアが浮かんだとき"],
+                 examples: [
+                    ("It was a real lightbulb moment when she explained it like that.", "彼女にそう説明されて、まさにピンときたよ。"),
+                    ("I had a lightbulb moment in the shower this morning.", "今朝シャワー中にひらめいたんだ。")
+                 ], ipa: "/ə ˈlaɪtbʌlb ˌməʊmənt/"),
+            make("put a pin in it", "(informal) to pause a topic and come back to it later",
+                 "いったん保留にする・後で話そう",
+                 useCases: ["会議で話題を後回しにするとき", "今は決めずに置いておくとき"],
+                 examples: [
+                    ("Good idea – let's put a pin in it and come back to it next week.", "いい案だね。いったん保留にして来週また話そう。"),
+                    ("Can we put a pin in that? We're running out of time.", "それ、後回しにしてもいい？時間がなくなってきたから。")
+                 ], ipa: "/ˌpʊt ə ˈpɪn ɪn ɪt/"),
+            make("a fine line", "a very small difference between two things",
+                 "紙一重・微妙な境目",
+                 useCases: ["二つのものの違いがわずかなとき", "やりすぎに注意を促すとき"],
+                 examples: [
+                    ("There's a fine line between confident and arrogant.", "自信があるのと傲慢なのは紙一重だよ。"),
+                    ("It's a fine line between being helpful and being nosy.", "親切とおせっかいの境目って微妙だよね。")
+                 ], ipa: "/ə ˌfaɪn ˈlaɪn/"),
+            make("be thrown in at the deep end", "to be made to do something difficult without preparation or help",
+                 "いきなり難しいことを任される・ぶっつけ本番",
+                 useCases: ["新しい仕事でいきなり大役を任されたとき", "準備なしで始めた経験を話すとき"],
+                 examples: [
+                    ("I was thrown in at the deep end on my first day.", "初日からいきなり大変な仕事を任されたよ。"),
+                    ("Being thrown in at the deep end is the best way to learn.", "いきなり実践でやらされるのが一番身につくよね。")
+                 ], ipa: "/bi ˌθrəʊn ɪn ət ðə ˌdiːp ˈend/"),
+            make("a wild guess", "a guess made with no real information",
+                 "当てずっぽう・あてずっぽうの推測",
+                 useCases: ["根拠なく推測するとき", "答えに自信がないと伝えるとき"],
+                 examples: [
+                    ("I'm just taking a wild guess, but is it about twenty quid?", "当てずっぽうだけど、20ポンドくらい？"),
+                    ("Can you give me a wild guess? Just roughly.", "当てずっぽうでいいから、ざっくりでいいよ。")
+                 ], ipa: "/ə ˌwaɪld ˈɡes/"),
+            make("a sounding board", "a person you discuss ideas with to get their opinion",
+                 "相談相手・意見を聞いてもらう人",
+                 useCases: ["アイデアを聞いてもらいたいとき", "頼れる相談相手を紹介するとき"],
+                 examples: [
+                    ("Can I use you as a sounding board for a minute?", "ちょっとだけ考えを聞いてもらってもいい？"),
+                    ("My sister's always been a great sounding board.", "姉はずっと最高の相談相手なんだ。")
+                 ], ipa: "/ə ˈsaʊndɪŋ ˌbɔːd/"),
+            make("a curveball", "(informal) something unexpected that is difficult to deal with",
+                 "予想外の出来事・想定外の展開",
+                 useCases: ["突然の問題や変化を話すとき", "予定が狂ったとき"],
+                 examples: [
+                    ("Life threw us a bit of a curveball this year.", "今年は人生で予想外のことが起きたんだ。"),
+                    ("That question was a real curveball.", "あの質問は完全に想定外だったよ。")
+                 ], ipa: "/ə ˈkɜːvbɔːl/"),
+            make("a tough call", "a difficult decision",
+                 "難しい判断・悩ましい決断",
+                 useCases: ["どちらを選ぶか迷っているとき", "相手の決断の難しさに共感するとき"],
+                 examples: [
+                    ("Pizza or curry? That's a tough call.", "ピザかカレーか？悩ましいな。"),
+                    ("It was a tough call, but I think we made the right decision.", "難しい判断だったけど、正しい選択だったと思う。")
+                 ], ipa: "/ə ˌtʌf ˈkɔːl/"),
+            make("a whole new ball game", "a completely different situation from before",
+                 "まったく別の話・状況がガラッと変わる",
+                 useCases: ["以前と全然違う状況を説明するとき", "新しい環境の大変さを話すとき"],
+                 examples: [
+                    ("Having kids is a whole new ball game.", "子どもがいると、もう全然違う世界だよ。"),
+                    ("Driving in London is a whole new ball game.", "ロンドンでの運転はまったく別物だよ。")
+                 ], ipa: "/ə ˌhəʊl njuː ˈbɔːl ɡeɪm/"),
+            make("a must-have", "something that you think is essential to own",
+                 "必需品・絶対に持っておきたいもの",
+                 useCases: ["おすすめのアイテムを紹介するとき", "欠かせない物を話すとき"],
+                 examples: [
+                    ("A good umbrella is a must-have in this country.", "この国ではいい傘は必需品だよ。"),
+                    ("These headphones are a must-have for long flights.", "このヘッドホンは長距離フライトには絶対必要だね。")
+                 ], ipa: "/ə ˈmʌst hæv/"),
+            make("a fallback", "something you can use or do if your first plan fails",
+                 "代わりの案・保険・予備の手段",
+                 useCases: ["プランBを用意しておくとき", "うまくいかない場合の備えを話すとき"],
+                 examples: [
+                    ("If it rains, the pub's our fallback.", "雨が降ったら、パブが代わりの案ね。"),
+                    ("It's always good to have a fallback.", "保険を用意しておくのはいつだって大事だよ。")
+                 ], ipa: "/ə ˈfɔːlbæk/"),
+            make("have a wobble", "(British, informal) to suddenly feel nervous, unsure or lose confidence",
+                 "急に不安になる・気持ちが揺らぐ",
+                 useCases: ["直前で自信がなくなったとき", "一時的に弱気になったことを話すとき"],
+                 examples: [
+                    ("I had a bit of a wobble before the interview, but I was fine.", "面接の前にちょっと弱気になったけど、大丈夫だったよ。"),
+                    ("Everyone has a wobble now and then – don't worry.", "誰だって時々気持ちが揺らぐものだよ。気にしないで。")
+                 ], ipa: "/ˌhæv ə ˈwɒbl/"),
+            make("throw a spanner in the works", "(British, informal) to cause a problem that stops a plan from going smoothly",
+                 "計画を台無しにする・邪魔が入る",
+                 useCases: ["予定外の問題で計画が狂ったとき", "誰かが邪魔をしたと話すとき"],
+                 examples: [
+                    ("The train strike has really thrown a spanner in the works.", "電車のストで計画が完全に狂っちゃったよ。"),
+                    ("I don't want to throw a spanner in the works, but I can't make Friday.", "水を差したくないんだけど、金曜は行けないんだ。")
+                 ], ipa: "/ˌθrəʊ ə ˈspænər ɪn ðə ˈwɜːks/"),
         ]
     }
     private static var britishColloquial307: [Word] {
