@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial312: [Word] {
+        [
+            make("far from it", "not at all; quite the opposite",
+                 "とんでもない・全然そんなことない",
+                 useCases: ["相手の思い込みを強く否定するとき", "「むしろ逆だよ」と言うとき"],
+                 examples: [
+                    ("Were you bored? — Far from it, I loved every minute.", "退屈だった？ — とんでもない、ずっと楽しかったよ。"),
+                    ("I'm not rich — far from it.", "お金持ちなんかじゃないよ、全然。")
+                 ], ipa: "/ˌfɑː frəm ˈɪt/"),
+            make("all over again", "once more from the beginning",
+                 "また一から・もう一度最初から",
+                 useCases: ["やり直しになったとき", "同じことがまた起きたとき"],
+                 examples: [
+                    ("My laptop crashed, so I had to write it all over again.", "パソコンが落ちて、また一から書き直しだったよ。"),
+                    ("Here we go all over again.", "また始まったよ。")
+                 ], ipa: "/ˌɔːl ˌəʊvər əˈɡen/"),
+            make("vice versa", "the other way round as well",
+                 "逆もまた同じ・その逆も",
+                 useCases: ["関係が双方向だと言うとき", "「逆も然り」と付け足すとき"],
+                 examples: [
+                    ("I help her with English and vice versa.", "僕が彼女の英語を手伝って、彼女も僕を手伝ってくれるんだ。"),
+                    ("If you need me, call me — and vice versa.", "困ったら電話して。逆もまたしかりね。")
+                 ], ipa: "/ˌvaɪsə ˈvɜːsə/"),
+            make("on the contrary", "used to say that the opposite is true",
+                 "それどころか・むしろ逆に",
+                 useCases: ["相手の予想と逆だと伝えるとき", "否定した後に本当のことを言うとき"],
+                 examples: [
+                    ("I don't mind at all. On the contrary, I'd love to help.", "全然かまわないよ。むしろ喜んで手伝うよ。"),
+                    ("It wasn't boring — on the contrary, it was fascinating.", "退屈じゃなかったよ。それどころか、すごく面白かった。")
+                 ], ipa: "/ˌɒn ðə ˈkɒntrəri/"),
+            make("before you know it", "very soon; much sooner than you expect",
+                 "あっという間に・気づいたら",
+                 useCases: ["時間がすぐ過ぎると言うとき", "相手を励ますとき"],
+                 examples: [
+                    ("It'll be Christmas before you know it.", "あっという間にクリスマスだよ。"),
+                    ("Don't worry, you'll be fluent before you know it.", "大丈夫、気づいたらペラペラになってるよ。")
+                 ], ipa: "/bɪˌfɔː ju ˈnəʊ ɪt/"),
+            make("the whole time", "during the entire period",
+                 "その間ずっと・最初から最後まで",
+                 useCases: ["ずっと続いていたことを言うとき", "気づかなかったことに驚くとき"],
+                 examples: [
+                    ("It rained the whole time we were in Scotland.", "スコットランドにいる間ずっと雨だったよ。"),
+                    ("You knew the whole time and didn't tell me?", "ずっと知ってたのに教えてくれなかったの？")
+                 ], ipa: "/ðə ˌhəʊl ˈtaɪm/"),
+            make("all day long", "for the whole day",
+                 "一日中・朝から晩まで",
+                 useCases: ["一日中何かしていたと言うとき", "ずっと続いて大変だったとき"],
+                 examples: [
+                    ("I've been on the phone all day long.", "一日中電話しっぱなしだったよ。"),
+                    ("The kids played outside all day long.", "子どもたちは一日中外で遊んでたよ。")
+                 ], ipa: "/ˌɔːl deɪ ˈlɒŋ/"),
+            make("thanks anyway", "thank you, even though you couldn't help",
+                 "とにかくありがとう・それでもありがとう",
+                 useCases: ["助けてもらえなかったけど感謝を伝えるとき", "断られた後に礼儀正しく終えるとき"],
+                 examples: [
+                    ("Sorry, I don't know where it is. — No worries, thanks anyway.", "ごめん、どこか分からないや。 — 大丈夫、ありがとね。"),
+                    ("They were fully booked, but thanks anyway.", "満席だったけど、とにかくありがとう。")
+                 ], ipa: "/ˌθæŋks ˈeniweɪ/"),
+            make("thanks for asking", "said when someone asks how you are or shows interest",
+                 "聞いてくれてありがとう・気にかけてくれてありがとう",
+                 useCases: ["体調や近況を聞かれたとき", "気遣ってもらったお礼を言うとき"],
+                 examples: [
+                    ("How's your mum doing? — Much better, thanks for asking.", "お母さんの具合どう？ — だいぶ良くなったよ、聞いてくれてありがとう。"),
+                    ("I'm fine, thanks for asking.", "元気だよ、気にかけてくれてありがとう。")
+                 ], ipa: "/ˌθæŋks fər ˈɑːskɪŋ/"),
+            make("at best", "even in the most positive case",
+                 "せいぜい・よくても",
+                 useCases: ["期待値を下げて言うとき", "最良の場合でも大したことないと言うとき"],
+                 examples: [
+                    ("We'll get there by six at best.", "よくても着くのは6時だね。"),
+                    ("The food was average at best.", "料理はせいぜい普通ってところだったね。")
+                 ], ipa: "/ət ˈbest/"),
+            make("in return", "as a way of giving something back",
+                 "お返しに・その代わりに",
+                 useCases: ["何かのお礼にお返しするとき", "交換条件を言うとき"],
+                 examples: [
+                    ("He fixed my bike, so I bought him lunch in return.", "自転車を直してくれたから、お返しにランチをおごったよ。"),
+                    ("What do you want in return?", "その代わりに何がほしいの？")
+                 ], ipa: "/ɪn rɪˈtɜːn/"),
+            make("on average", "usually; as a typical amount",
+                 "平均して・だいたい",
+                 useCases: ["普段の量や頻度を言うとき", "ざっくりした目安を伝えるとき"],
+                 examples: [
+                    ("On average, I go to the gym three times a week.", "平均して週3回ジムに行ってるよ。"),
+                    ("It takes about 40 minutes on average.", "だいたい平均40分くらいかかるよ。")
+                 ], ipa: "/ɒn ˈævərɪdʒ/"),
+            make("as it is", "already; in the present situation",
+                 "ただでさえ・現状でも",
+                 useCases: ["すでに十分大変だと言うとき", "今の状態のままでと言うとき"],
+                 examples: [
+                    ("We're late as it is — don't stop for coffee!", "ただでさえ遅れてるんだから、コーヒー買いに寄らないで！"),
+                    ("Leave it as it is, it looks fine.", "そのままでいいよ、いい感じだから。")
+                 ], ipa: "/əz ˈɪt ɪz/"),
+            make("not anymore", "used to say something was true before but isn't now",
+                 "もう〜ない・今はもう違う",
+                 useCases: ["以前と状況が変わったと言うとき", "もうやめた習慣を言うとき"],
+                 examples: [
+                    ("Do you still live in Manchester? — Not anymore, I moved to Leeds.", "まだマンチェスターに住んでるの？ — もう住んでないよ、リーズに引っ越した。"),
+                    ("I used to smoke, but not anymore.", "前はタバコ吸ってたけど、もうやめたよ。")
+                 ], ipa: "/ˌnɒt ˌeniˈmɔː/"),
+            make("that's about it", "that's all; there's nothing more",
+                 "まあそんなところかな・それくらいだよ",
+                 useCases: ["話や説明を締めくくるとき", "他に何もないと伝えるとき"],
+                 examples: [
+                    ("I went shopping, had a nap, and that's about it.", "買い物して、昼寝して、まあそんなとこかな。"),
+                    ("Anything else? — No, that's about it, thanks.", "他に何かある？ — いや、それくらいかな、ありがとう。")
+                 ], ipa: "/ˌðæts əˈbaʊt ɪt/"),
         ]
     }
 
