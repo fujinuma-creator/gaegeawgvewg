@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304
         ]
         return groups.flatMap { $0 }
     }
@@ -46921,6 +46921,115 @@ enum SeedData {
                     ("Mark's on sick leave until next Wednesday.", "マークは来週の水曜まで病欠だよ。"),
                     ("How many days of sick leave do you get a year?", "病気休暇って年に何日もらえるの？")
                  ], ipa: "/ˈsɪk ˌliːv/"),
+        ]
+    }
+    private static var britishColloquial304: [Word] {
+        [
+            make("up to a point", "partly but not completely; to some degree",
+                 "ある程度は・一部は",
+                 useCases: ["相手の意見に部分的に同意するとき", "完全には賛成できないと伝えるとき"],
+                 examples: [
+                    ("\"Money makes you happy.\" \"Up to a point, yes.\"", "「お金があれば幸せになれる」「まあ、ある程度はね」"),
+                    ("I agree with you up to a point, but it's not that simple.", "ある程度は賛成だけど、そんなに単純じゃないよ。")
+                 ], ipa: "/ˌʌp tu ə ˈpɔɪnt/"),
+            make("lie low", "to stay quiet and avoid attracting attention for a while",
+                 "目立たないようにしている・おとなしくしておく",
+                 useCases: ["騒ぎが収まるまで静かにしておくとき", "しばらく人前に出ないと言うとき"],
+                 examples: [
+                    ("I'd lie low for a bit until the boss calms down.", "上司が落ち着くまで、しばらくおとなしくしておいたほうがいいよ。"),
+                    ("After the party, I'm lying low this weekend.", "パーティー続きだったから、今週末は家でおとなしくしてるよ。")
+                 ], ipa: "/ˌlaɪ ˈləʊ/"),
+            make("I could be wrong, but", "used to say something politely while admitting you might not be right",
+                 "間違ってたら悪いんだけど・違うかもしれないけど",
+                 useCases: ["控えめに意見や指摘をするとき", "確信がないことを言うとき"],
+                 examples: [
+                    ("I could be wrong, but isn't the shop closed on Mondays?", "違うかもしれないけど、あの店って月曜休みじゃなかった？"),
+                    ("I could be wrong, but I think we've met before.", "間違ってたらごめんなさい、前にお会いしたことありますよね。")
+                 ], ipa: "/aɪ kʊd bi ˈrɒŋ bʌt/"),
+            make("bad call", "(informal) a wrong decision or judgement",
+                 "判断ミス・まずい選択",
+                 useCases: ["自分や他人の判断ミスを認めるとき", "選択を後悔しているとき"],
+                 examples: [
+                    ("Not bringing an umbrella was a bad call.", "傘を持ってこなかったのは判断ミスだったな。"),
+                    ("Yeah, booking the early flight was a bad call.", "うん、朝一の便を予約したのは失敗だったね。")
+                 ], ipa: "/ˌbæd ˈkɔːl/"),
+            make("nowhere near", "not at all; far from (a particular amount, quality or place)",
+                 "全然〜ない・〜には程遠い",
+                 useCases: ["期待や目標に全く届かないと言うとき", "距離や量がかけ離れていると言うとき"],
+                 examples: [
+                    ("I'm nowhere near finished – give me another hour.", "全然終わってないよ。あと1時間ちょうだい。"),
+                    ("The sequel is nowhere near as good as the first film.", "続編は1作目に比べたら全然だね。")
+                 ], ipa: "/ˈnəʊweə ˌnɪə/"),
+            make("not even close", "(informal) used to say that a guess or attempt is very far from being correct or successful",
+                 "全然違う・かすりもしない",
+                 useCases: ["相手の推測が大外れのとき", "比べ物にならないと言うとき"],
+                 examples: [
+                    ("\"Is he thirty?\" \"Not even close – he's forty-five!\"", "「彼30歳くらい？」「全然違う、45だよ！」"),
+                    ("Our team tried, but it wasn't even close.", "うちのチームも頑張ったけど、まるで歯が立たなかった。")
+                 ], ipa: "/ˌnɒt ˈiːvn ˈkləʊs/"),
+            make("there's not much in it", "(British) used to say that two things are almost equal and there is very little difference between them",
+                 "大差ない・ほとんど変わらない",
+                 useCases: ["2つの選択肢を比べるとき", "値段や品質の差が小さいと言うとき"],
+                 examples: [
+                    ("Bus or train? There's not much in it – both take about an hour.", "バスか電車？大差ないよ、どっちも1時間くらい。"),
+                    ("I prefer the blue one, but honestly there's not much in it.", "青いほうが好きだけど、正直ほとんど変わらないね。")
+                 ], ipa: "/ðeəz ˌnɒt ˈmʌtʃ ɪn ɪt/"),
+            make("too close to call", "used to say that it is impossible to predict who will win because the competitors are so equal",
+                 "接戦でどちらが勝つかわからない・甲乙つけがたい",
+                 useCases: ["試合や選挙の行方を話すとき", "どちらとも決めがたいとき"],
+                 examples: [
+                    ("The match is too close to call at the moment.", "今のところ試合は接戦でどっちが勝つかわからないね。"),
+                    ("Pizza or curry tonight? Too close to call!", "今夜はピザかカレーか？甲乙つけがたい！")
+                 ], ipa: "/ˌtuː ˈkləʊs tə ˈkɔːl/"),
+            make("lose-lose", "describing a situation in which every possible choice leads to a bad result for everyone",
+                 "どっちに転んでも損な・誰も得しない",
+                 useCases: ["どの選択肢も良くない状況を言うとき", "対立が誰の得にもならないと言うとき"],
+                 examples: [
+                    ("If we argue about it, it's a lose-lose situation.", "これで揉めたら、誰も得しないよ。"),
+                    ("Stay late or miss the deadline – it's lose-lose.", "残業するか締め切りを逃すか、どっちに転んでも損だね。")
+                 ], ipa: "/ˌluːz ˈluːz/"),
+            make("sign off on", "to give official approval to something",
+                 "〜を承認する・〜にゴーサインを出す",
+                 useCases: ["上司が計画や予算を承認するとき", "最終確認を待っているとき"],
+                 examples: [
+                    ("We can start once the manager signs off on the budget.", "マネージャーが予算を承認したら始められるよ。"),
+                    ("Has anyone signed off on the new design yet?", "新しいデザイン、もう誰か承認した？")
+                 ], ipa: "/ˌsaɪn ˈɒf ɒn/"),
+            make("a good while", "(informal) quite a long time",
+                 "けっこう長い間・かなりの時間",
+                 useCases: ["時間がそれなりにかかったと言うとき", "しばらく会っていないと言うとき"],
+                 examples: [
+                    ("It took a good while to find a parking space.", "駐車場を見つけるのにけっこう時間がかかった。"),
+                    ("I haven't seen her for a good while.", "彼女にはかなり長いこと会ってないな。")
+                 ], ipa: "/ə ˌɡʊd ˈwaɪl/"),
+            make("nine times out of ten", "almost always; in most cases",
+                 "十中八九・ほとんどの場合",
+                 useCases: ["経験上ほぼそうだと言うとき", "よくある傾向を話すとき"],
+                 examples: [
+                    ("Nine times out of ten, the bus is late.", "十中八九、バスは遅れてくるよ。"),
+                    ("If the laptop freezes, restarting it works nine times out of ten.", "パソコンが固まったら、たいていは再起動で直るよ。")
+                 ], ipa: "/ˌnaɪn ˌtaɪmz aʊt əv ˈten/"),
+            make("at the same time", "used to introduce a fact or opinion that should be considered along with what was just said; however",
+                 "とはいえ・でもその一方で",
+                 useCases: ["相手の意見を認めつつ別の視点を加えるとき", "両方の側面を伝えるとき"],
+                 examples: [
+                    ("I love living in London. At the same time, it's really expensive.", "ロンドン暮らしは大好き。でもその一方で、本当に物価が高いんだ。"),
+                    ("I see your point, but at the same time, we need to be realistic.", "言いたいことはわかる。とはいえ、現実的にならないと。")
+                 ], ipa: "/ət ðə ˌseɪm ˈtaɪm/"),
+            make("for the foreseeable future", "for as long as you can imagine or plan ahead; for a long time to come",
+                 "当分の間・しばらくは",
+                 useCases: ["当面の予定や状況を説明するとき", "しばらく変わらないと言うとき"],
+                 examples: [
+                    ("I'm working from home for the foreseeable future.", "当分の間は在宅勤務なんだ。"),
+                    ("The road will be closed for the foreseeable future.", "その道はしばらく通行止めになるらしい。")
+                 ], ipa: "/fə ðə fɔːˌsiːəbl ˈfjuːtʃə/"),
+            make("not any time soon", "(informal) not in the near future; probably not for a long time",
+                 "当分は〜ない・すぐには〜しない",
+                 useCases: ["しばらく実現しないと言うとき", "予定がないことを伝えるとき"],
+                 examples: [
+                    ("\"Are you moving out?\" \"Not any time soon!\"", "「引っ越すの？」「当分はないよ！」"),
+                    ("The rain won't stop any time soon, by the look of it.", "見た感じ、雨はすぐには止みそうにないね。")
+                 ], ipa: "/ˌnɒt ˌeni taɪm ˈsuːn/"),
         ]
     }
     private static var britishColloquial302: [Word] {
