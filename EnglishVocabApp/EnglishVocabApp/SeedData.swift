@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309
         ]
         return groups.flatMap { $0 }
     }
@@ -47248,6 +47248,115 @@ enum SeedData {
                     ("Let's draw a line under it and move on.", "この件はもう終わりにして、前に進もう。"),
                     ("I want to draw a line under that whole year.", "あの一年のことはもう区切りをつけたいんだ。")
                  ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
+        ]
+    }
+    private static var britishColloquial309: [Word] {
+        [
+            make("a running joke", "a joke that people keep repeating over a long time",
+                 "お決まりのネタ・内輪の定番ジョーク",
+                 useCases: ["仲間内でずっと続いているネタを話すとき", "毎回からかわれることを説明するとき"],
+                 examples: [
+                    ("It's become a running joke in the office that I'm always late.", "僕がいつも遅刻するのは、もう職場のお決まりのネタになってるよ。"),
+                    ("The broken coffee machine is a running joke at this point.", "壊れたコーヒーマシンはもはや定番のネタだね。")
+                 ], ipa: "/ə ˌrʌnɪŋ ˈdʒəʊk/"),
+            make("a fish out of water", "someone who feels uncomfortable in an unfamiliar situation",
+                 "場違いな人・水を得ない魚（居心地が悪い状態）",
+                 useCases: ["慣れない場所で居心地が悪いとき", "場違いだと感じたとき"],
+                 examples: [
+                    ("I felt like a fish out of water at that posh dinner.", "あの高級なディナーではすごく場違いな気がしたよ。"),
+                    ("He was a bit of a fish out of water on his first day.", "彼、初日はちょっと居心地悪そうだったね。")
+                 ], ipa: "/ə ˌfɪʃ aʊt əv ˈwɔːtə/"),
+            make("a drop in the ocean", "an amount that is too small to make a difference",
+                 "焼け石に水・ほんのわずか",
+                 useCases: ["量が少なすぎて効果がないとき", "全体に比べてごくわずかだと言うとき"],
+                 examples: [
+                    ("A hundred quid is a drop in the ocean compared to what we owe.", "借金に比べたら100ポンドなんて焼け石に水だよ。"),
+                    ("It's only a drop in the ocean, but every little helps.", "ほんのわずかだけど、少しでも助けになるからね。")
+                 ], ipa: "/ə ˌdrɒp ɪn ði ˈəʊʃən/"),
+            make("the bigger picture", "the situation as a whole, not just the small details",
+                 "全体像・大局",
+                 useCases: ["細かいことにとらわれている人に視野を広げてほしいとき", "長い目で考えるとき"],
+                 examples: [
+                    ("Don't worry about one bad day – look at the bigger picture.", "一日うまくいかなかったくらいで気にしないで。全体を見てよ。"),
+                    ("We need to keep the bigger picture in mind here.", "ここは大局を忘れないようにしないとね。")
+                 ], ipa: "/ðə ˌbɪɡə ˈpɪktʃə/"),
+            make("a false alarm", "a warning or worry about something that turns out not to happen",
+                 "誤報・取り越し苦労",
+                 useCases: ["心配したけど何でもなかったとき", "警報が誤作動だったとき"],
+                 examples: [
+                    ("Don't panic – it was just a false alarm.", "慌てないで、ただの誤報だったから。"),
+                    ("I thought I'd lost my passport, but it was a false alarm.", "パスポートなくしたと思ったけど、勘違いだったよ。")
+                 ], ipa: "/ə ˌfɔːls əˈlɑːm/"),
+            make("force of habit", "doing something automatically because you always do it",
+                 "いつもの癖・習慣でつい",
+                 useCases: ["無意識にいつもの行動をしてしまったとき", "癖を言い訳するとき"],
+                 examples: [
+                    ("Sorry, I locked the door out of force of habit.", "ごめん、いつもの癖でドアに鍵かけちゃった。"),
+                    ("I still wake up at six – force of habit, I suppose.", "まだ6時に目が覚めるんだ。習慣だろうね。")
+                 ], ipa: "/ˌfɔːs əv ˈhæbɪt/"),
+            make("a pipe dream", "a hope or plan that is very unlikely to happen",
+                 "叶わぬ夢・絵に描いた餅",
+                 useCases: ["実現しそうにない計画を話すとき", "夢物語だと自嘲するとき"],
+                 examples: [
+                    ("Retiring at forty is probably a pipe dream.", "40歳で引退なんて、たぶん夢のまた夢だよ。"),
+                    ("Owning a house in London feels like a pipe dream.", "ロンドンに家を持つなんて叶わぬ夢みたい。")
+                 ], ipa: "/ə ˈpaɪp ˌdriːm/"),
+            make("a means to an end", "something you do only to achieve something else, not because you enjoy it",
+                 "目的のための手段・ただの手段",
+                 useCases: ["好きではないけど目的のためにやっていることを話すとき", "仕事への割り切りを表すとき"],
+                 examples: [
+                    ("This job is just a means to an end until I finish my degree.", "この仕事は学位を取るまでのただの手段だよ。"),
+                    ("For me, running is a means to an end – I just want to get fit.", "僕にとってランニングは手段にすぎないよ。健康になりたいだけ。")
+                 ], ipa: "/ə ˌmiːnz tʊ ən ˈend/"),
+            make("a labour of love", "hard work that you do because you enjoy it, not for money",
+                 "好きでやっている仕事・愛情を注いだ作品",
+                 useCases: ["趣味や好きなことに手間をかけたとき", "採算度外視の作品を紹介するとき"],
+                 examples: [
+                    ("Restoring this old car has been a real labour of love.", "この古い車の修理は、まさに好きでやってることなんだ。"),
+                    ("The garden is her labour of love.", "あの庭は彼女が愛情を込めて手入れしてるんだよ。")
+                 ], ipa: "/ə ˌleɪbər əv ˈlʌv/"),
+            make("the flip side", "the opposite or less positive aspect of something",
+                 "裏を返せば・反面",
+                 useCases: ["良い面と悪い面の両方を話すとき", "物事の別の側面を指摘するとき"],
+                 examples: [
+                    ("Working from home is great, but the flip side is you never switch off.", "在宅勤務は最高だけど、反面ずっとオフにならないんだよね。"),
+                    ("On the flip side, it's a lot cheaper.", "逆に言えば、ずっと安いけどね。")
+                 ], ipa: "/ðə ˈflɪp ˌsaɪd/"),
+            make("a two-way street", "a situation where both people must make an effort",
+                 "お互い様・持ちつ持たれつ",
+                 useCases: ["一方だけが努力するのはおかしいと言うとき", "相互の協力を求めるとき"],
+                 examples: [
+                    ("Respect is a two-way street.", "敬意はお互い様だよ。"),
+                    ("Friendship's a two-way street – you have to make an effort too.", "友情は持ちつ持たれつ。君も努力しなきゃ。")
+                 ], ipa: "/ə ˌtuː weɪ ˈstriːt/"),
+            make("a vicious circle", "a bad situation that keeps making itself worse",
+                 "悪循環",
+                 useCases: ["悪いことが連鎖しているとき", "抜け出せない状況を説明するとき"],
+                 examples: [
+                    ("I'm tired so I drink coffee, then I can't sleep – it's a vicious circle.", "疲れてコーヒー飲んで、眠れなくなる。悪循環だよ。"),
+                    ("We need to break this vicious circle somehow.", "どうにかこの悪循環を断ち切らないと。")
+                 ], ipa: "/ə ˌvɪʃəs ˈsɜːkəl/"),
+            make("a selling point", "a feature that makes something attractive to people",
+                 "売り・セールスポイント",
+                 useCases: ["物件や商品の魅力を話すとき", "何が一番の長所かを伝えるとき"],
+                 examples: [
+                    ("The big garden is the main selling point of the flat.", "広い庭がそのフラットの一番の売りだね。"),
+                    ("Honestly, the price is its biggest selling point.", "正直、値段が一番のセールスポイントだよ。")
+                 ], ipa: "/ə ˈselɪŋ ˌpɔɪnt/"),
+            make("a late bloomer", "someone who becomes successful or skilled later than usual",
+                 "遅咲きの人・大器晩成",
+                 useCases: ["人より遅れて才能が開花した人を話すとき", "自分の成長が遅かったことを話すとき"],
+                 examples: [
+                    ("I was a bit of a late bloomer – I didn't find my career until thirty.", "僕はちょっと遅咲きでね、30歳までキャリアが見つからなかったんだ。"),
+                    ("Don't worry about him – some kids are just late bloomers.", "彼のことは心配いらないよ。大器晩成の子もいるから。")
+                 ], ipa: "/ə ˌleɪt ˈbluːmə/"),
+            make("a people-pleaser", "someone who always tries hard to make others happy, often too much",
+                 "人に合わせすぎる人・八方美人",
+                 useCases: ["断れない性格を話すとき", "人の顔色を気にしすぎる人を表すとき"],
+                 examples: [
+                    ("I'm such a people-pleaser – I can never say no.", "私って本当に人に合わせすぎるの。全然断れないんだ。"),
+                    ("Stop being a people-pleaser and do what you want for once.", "人の顔色ばかり見てないで、たまには自分のしたいことしなよ。")
+                 ], ipa: "/ə ˈpiːpəl ˌpliːzə/"),
         ]
     }
     private static var britishColloquial308: [Word] {
