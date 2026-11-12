@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307
         ]
         return groups.flatMap { $0 }
     }
@@ -47248,6 +47248,115 @@ enum SeedData {
                     ("Let's draw a line under it and move on.", "この件はもう終わりにして、前に進もう。"),
                     ("I want to draw a line under that whole year.", "あの一年のことはもう区切りをつけたいんだ。")
                  ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
+        ]
+    }
+    private static var britishColloquial307: [Word] {
+        [
+            make("a flying visit", "(British, informal) a very short visit",
+                 "ちょっと立ち寄るだけ・短い訪問",
+                 useCases: ["長居できないと伝えるとき", "短時間だけ会いに行ったと話すとき"],
+                 examples: [
+                    ("It's only a flying visit – I've got to be back by six.", "ちょっと寄っただけなんだ。6時までに戻らなきゃいけなくて。"),
+                    ("My parents paid us a flying visit at the weekend.", "週末に両親がちょっとだけ顔を出してくれたよ。")
+                 ], ipa: "/ə ˌflaɪɪŋ ˈvɪzɪt/"),
+            make("for donkey's years", "(British, informal) for a very long time",
+                 "ものすごく長い間・何年も前から",
+                 useCases: ["長い付き合い・長年の習慣を話すとき", "久しぶりだと強調するとき"],
+                 examples: [
+                    ("We've known each other for donkey's years.", "私たち、もう何年来の付き合いだよ。"),
+                    ("I haven't been to the cinema for donkey's years.", "映画館なんてもう何年も行ってないな。")
+                 ], ipa: "/fə ˈdɒŋkiz ˌjɪəz/"),
+            make("a slog", "(informal) a long, tiring piece of work, journey or period",
+                 "骨の折れる大変なこと・長くてしんどい作業",
+                 useCases: ["しんどい仕事や移動を話すとき", "根気がいる作業を表すとき"],
+                 examples: [
+                    ("The drive up was a bit of a slog.", "行きの運転はちょっとしんどかったよ。"),
+                    ("Revising for exams is such a slog.", "試験勉強って本当に骨が折れるよね。")
+                 ], ipa: "/ə ˈslɒɡ/"),
+            make("have your head in the clouds", "to be dreamy and not pay attention to practical things",
+                 "ぼんやりしている・上の空・夢見がち",
+                 useCases: ["ぼーっとしている人に", "現実離れした考えの人を言うとき"],
+                 examples: [
+                    ("Sorry, I've got my head in the clouds today.", "ごめん、今日は上の空でさ。"),
+                    ("He's lovely, but he's always got his head in the clouds.", "いい人なんだけど、いつもぼんやりしてるんだよね。")
+                 ], ipa: "/hæv jə ˌhed ɪn ðə ˈklaʊdz/"),
+            make("don't sweat it", "(informal) used to tell someone not to worry about something",
+                 "気にしないで・心配いらないよ",
+                 useCases: ["謝られたときに軽く返すとき", "相手の不安を和らげるとき"],
+                 examples: [
+                    ("You forgot to call? Don't sweat it.", "電話忘れた？気にしないでいいよ。"),
+                    ("Don't sweat it – we've got plenty of time.", "心配いらないよ、時間はたっぷりあるから。")
+                 ], ipa: "/ˌdəʊnt ˈswet ɪt/"),
+            make("brekkie", "(British/Australian, informal) breakfast",
+                 "朝ごはん（くだけた言い方）",
+                 useCases: ["友達や家族と朝食の話をするとき", "カジュアルに朝ごはんに誘うとき"],
+                 examples: [
+                    ("Fancy grabbing brekkie before work?", "仕事の前に朝ごはん食べに行かない？"),
+                    ("What did you have for brekkie?", "朝ごはん何食べた？")
+                 ], ipa: "/ˈbreki/"),
+            make("a staple", "something that is used or eaten regularly and is very important",
+                 "定番・欠かせないもの",
+                 useCases: ["いつも食べているもの・使うものを話すとき", "定番アイテムを紹介するとき"],
+                 examples: [
+                    ("Pasta is a staple in our house.", "うちではパスタは欠かせない定番なんだ。"),
+                    ("A good black coat is a wardrobe staple.", "いい黒のコートはクローゼットの定番だよ。")
+                 ], ipa: "/ə ˈsteɪpl/"),
+            make("muscle memory", "the ability to do something automatically because you have done it many times",
+                 "体が覚えている感覚",
+                 useCases: ["久しぶりでも自然にできたとき", "練習の大切さを話すとき"],
+                 examples: [
+                    ("I hadn't played for years, but muscle memory kicked in.", "何年も弾いてなかったけど、体が覚えてたよ。"),
+                    ("It's all muscle memory at this point.", "もうここまで来ると体が勝手に動くんだ。")
+                 ], ipa: "/ˈmʌsl ˌmeməri/"),
+            make("sharpish", "(British, informal) quickly; without delay",
+                 "さっさと・急いで・すぐに",
+                 useCases: ["急いでやる必要があるとき", "相手に早めの行動を促すとき"],
+                 examples: [
+                    ("We'd better leave sharpish or we'll miss the train.", "さっさと出ないと電車に乗り遅れるよ。"),
+                    ("I need that back sharpish, if that's OK.", "悪いけど、それすぐ返してほしいんだ。")
+                 ], ipa: "/ˈʃɑːpɪʃ/"),
+            make("nifty", "(informal) clever, useful and well designed",
+                 "気が利いた・便利な・よくできた",
+                 useCases: ["便利な道具やアイデアを褒めるとき", "ちょっとした工夫に感心したとき"],
+                 examples: [
+                    ("That's a nifty little gadget.", "それ、気の利いた便利グッズだね。"),
+                    ("She showed me a nifty trick for folding shirts.", "彼女がシャツをきれいに畳む便利な技を教えてくれた。")
+                 ], ipa: "/ˈnɪfti/"),
+            make("a snip", "(British, informal) something that is surprisingly cheap",
+                 "お買い得・格安",
+                 useCases: ["安く買えたと自慢するとき", "値段がお得だと言うとき"],
+                 examples: [
+                    ("It was a snip at twenty quid.", "20ポンドなんて激安だったよ。"),
+                    ("These flights are a snip if you book early.", "早めに予約すればこの便はかなりお得だよ。")
+                 ], ipa: "/ə ˈsnɪp/"),
+            make("be hard work", "(informal) to be tiring or difficult to deal with, often said about a person or situation",
+                 "（人・状況が）手がかかる・疲れる",
+                 useCases: ["付き合うのが疲れる人のことを言うとき", "しんどい状況を話すとき"],
+                 examples: [
+                    ("The kids were hard work today.", "今日は子どもたちが手に負えなくて疲れたよ。"),
+                    ("Honestly, he can be really hard work sometimes.", "正直、彼って時々すごく疲れるんだよね。")
+                 ], ipa: "/bi ˌhɑːd ˈwɜːk/"),
+            make("plonk yourself down", "(British, informal) to sit down heavily and casually",
+                 "ドカッと座る・どっかり腰を下ろす",
+                 useCases: ["疲れて座り込むとき", "気軽に座ってと勧めるとき"],
+                 examples: [
+                    ("Just plonk yourself down anywhere.", "どこでも適当に座ってね。"),
+                    ("I got home and plonked myself down on the sofa.", "家に帰ってソファにドカッと座り込んだよ。")
+                 ], ipa: "/ˈplɒŋk jɔːself ˈdaʊn/"),
+            make("what a palaver", "(British, informal) used to complain about a lot of fuss or complicated procedure",
+                 "なんて面倒くさい・大騒ぎだな",
+                 useCases: ["手続きが面倒なとき", "ちょっとしたことで大騒ぎになったとき"],
+                 examples: [
+                    ("Three forms just to change my address – what a palaver!", "住所変更だけで書類3枚って、なんて面倒なんだ！"),
+                    ("Getting everyone in the car was a right palaver.", "全員を車に乗せるのが一苦労だったよ。")
+                 ], ipa: "/ˌwɒt ə pəˈlɑːvə/"),
+            make("a smart cookie", "(informal) a clever, sensible person",
+                 "頭の切れる人・しっかり者",
+                 useCases: ["人の賢さを褒めるとき", "抜け目のない人を言うとき"],
+                 examples: [
+                    ("Your daughter's a smart cookie.", "娘さん、頭の回転が速いね。"),
+                    ("Don't try to fool her – she's a smart cookie.", "彼女をごまかそうとしても無駄だよ、賢いから。")
+                 ], ipa: "/ə ˌsmɑːt ˈkʊki/"),
         ]
     }
     private static var britishColloquial302: [Word] {
