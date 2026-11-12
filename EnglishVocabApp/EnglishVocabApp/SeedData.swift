@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial314: [Word] {
+        [
+            make("nothing springs to mind", "I can't think of anything right now",
+                 "パッと思い浮かばない",
+                 useCases: ["アイデアや例をすぐに出せないとき", "おすすめを聞かれて思いつかないとき"],
+                 examples: [
+                    ("Any good restaurants around here? — Hmm, nothing springs to mind.", "この辺にいいレストランある？ — うーん、パッと思い浮かばないな。"),
+                    ("If anything springs to mind, let me know.", "何か思いついたら教えてね。")
+                 ], ipa: "/ˌnʌθɪŋ ˌsprɪŋz tə ˈmaɪnd/"),
+            make("tough luck", "used to say that someone must accept a bad situation",
+                 "残念だったね・仕方ないね",
+                 useCases: ["どうにもならない不運に同情するとき", "（少し突き放して）諦めるしかないと言うとき"],
+                 examples: [
+                    ("Tough luck, mate — maybe next time.", "残念だったな、また次があるさ。"),
+                    ("If you're late, tough luck — the train won't wait.", "遅れたら仕方ないよ、電車は待ってくれないから。")
+                 ], ipa: "/ˌtʌf ˈlʌk/"),
+            make("that's on me", "that was my fault; I take responsibility",
+                 "それは私のせいだ・私の責任です",
+                 useCases: ["自分のミスを素直に認めるとき", "相手を責めずに責任を引き受けるとき"],
+                 examples: [
+                    ("Sorry, I forgot to book the table — that's on me.", "ごめん、予約し忘れた。僕のせいだ。"),
+                    ("We missed the deadline, but honestly, that's on me.", "締め切りに遅れたけど、正直それは私の責任です。")
+                 ], ipa: "/ˌðæts ˈɒn miː/"),
+            make("I dare say", "I think it's probably true",
+                 "たぶん～だろう・おそらく",
+                 useCases: ["控えめに推測を述べるとき", "相手の言葉にある程度同意するとき"],
+                 examples: [
+                    ("I dare say you're hungry after that long trip.", "長旅の後だから、たぶんお腹空いてるよね。"),
+                    ("I dare say it'll all work out in the end.", "まあ、最終的には何とかなるだろうね。")
+                 ], ipa: "/aɪ ˌdeə ˈseɪ/"),
+            make("be onto something", "to have found an idea that seems good or likely to succeed",
+                 "いいところに目をつけている・何かつかんでいる",
+                 useCases: ["相手のアイデアが良さそうだと思うとき", "真相に近づいていると感じるとき"],
+                 examples: [
+                    ("You might be onto something there.", "それ、いいところ突いてるかもね。"),
+                    ("I think we're onto something with this idea.", "このアイデア、何か手応えがある気がする。")
+                 ], ipa: "/bi ˈɒntə ˌsʌmθɪŋ/"),
+            make("get out of bed on the wrong side", "to be in a bad mood all day for no clear reason",
+                 "朝から機嫌が悪い・虫の居所が悪い",
+                 useCases: ["朝から不機嫌な人をからかうとき", "理由もなくイライラしている日に"],
+                 examples: [
+                    ("What's up with him? Did he get out of bed on the wrong side?", "あいつどうしたの？朝から機嫌悪いね。"),
+                    ("Sorry I'm grumpy — I got out of bed on the wrong side today.", "不機嫌でごめん、今日は朝からなんか調子悪くて。")
+                 ], ipa: "/ˌɡet aʊt əv ˈbed ɒn ðə ˌrɒŋ ˈsaɪd/"),
+            make("in a bad mood", "feeling annoyed or unhappy",
+                 "機嫌が悪い",
+                 useCases: ["誰かが不機嫌なことを伝えるとき", "自分がイライラしていると説明するとき"],
+                 examples: [
+                    ("Careful, the boss is in a bad mood today.", "気をつけて、今日は上司の機嫌が悪いよ。"),
+                    ("Sorry, I'm in a bit of a bad mood.", "ごめん、ちょっと機嫌が悪くて。")
+                 ], ipa: "/ɪn ə ˌbæd ˈmuːd/"),
+            make("a dream come true", "something you have wanted for a long time that finally happens",
+                 "夢が叶ったこと・夢みたい",
+                 useCases: ["長年の願いが実現したとき", "最高に嬉しい出来事を表すとき"],
+                 examples: [
+                    ("Visiting Rome was a dream come true.", "ローマに行けたのは夢が叶ったみたいだった。"),
+                    ("This job is a dream come true for me.", "この仕事は私にとって夢が叶ったようなものなんだ。")
+                 ], ipa: "/ə ˌdriːm kʌm ˈtruː/"),
+            make("give someone a second chance", "to let someone try again after they have failed or made a mistake",
+                 "（人に）もう一度チャンスを与える",
+                 useCases: ["失敗した人を許してやり直させるとき", "関係修復を考えるとき"],
+                 examples: [
+                    ("Everyone deserves a second chance.", "誰にだってもう一度チャンスはあるべきだよ。"),
+                    ("I decided to give him a second chance.", "彼にもう一回チャンスをあげることにした。")
+                 ], ipa: "/ˌɡɪv ˌsʌmwʌn ə ˌsekənd ˈtʃɑːns/"),
+            make("back to front", "with the back part where the front should be",
+                 "前後逆に",
+                 useCases: ["服を前後逆に着ているとき", "順番が逆になっていると指摘するとき"],
+                 examples: [
+                    ("Your jumper's on back to front.", "セーター、前後逆に着てるよ。"),
+                    ("I put the battery in back to front.", "電池を逆向きに入れちゃった。")
+                 ], ipa: "/ˌbæk tə ˈfrʌnt/"),
+            make("the wrong way round", "in the opposite position or order to the correct one",
+                 "逆向きに・あべこべに",
+                 useCases: ["向きや順番が逆だと伝えるとき", "物事を逆に理解しているとき"],
+                 examples: [
+                    ("You've got the picture the wrong way round.", "その絵、逆さまに掛けてるよ。"),
+                    ("No, it's the wrong way round — she called him, not the other way.", "いや、逆だよ。彼女が彼に電話したんだって。")
+                 ], ipa: "/ðə ˌrɒŋ weɪ ˈraʊnd/"),
+            make("at worst", "if the worst possible thing happens",
+                 "最悪の場合でも・悪くても",
+                 useCases: ["最悪のケースを想定して安心させるとき", "リスクが小さいことを伝えるとき"],
+                 examples: [
+                    ("At worst, we'll just have to take a taxi.", "最悪でも、タクシーに乗ればいいだけだよ。"),
+                    ("Just ask her — at worst, she'll say no.", "とりあえず聞いてみなよ。最悪でも断られるだけだし。")
+                 ], ipa: "/ət ˈwɜːst/"),
+            make("my two cents", "my opinion, offered casually",
+                 "私の意見としては・ちょっと言わせてもらうと",
+                 useCases: ["控えめに自分の意見を言うとき", "求められていないけど一言添えるとき"],
+                 examples: [
+                    ("Just my two cents, but I'd go for the blue one.", "あくまで私の意見だけど、青い方にするかな。"),
+                    ("Can I add my two cents here?", "ちょっと一言いいかな？")
+                 ], ipa: "/maɪ ˌtuː ˈsents/"),
+            make("you're in luck", "you are fortunate because what you want is available",
+                 "ついてるね・運がいいね",
+                 useCases: ["欲しいものがちょうどあると伝えるとき", "相手にとって嬉しい知らせを言うとき"],
+                 examples: [
+                    ("You're in luck — we've got one table left.", "運がいいですね、ちょうど一席空いてますよ。"),
+                    ("Looking for a charger? You're in luck, I've got a spare.", "充電器探してる？ついてるね、予備持ってるよ。")
+                 ], ipa: "/jɔːr ɪn ˈlʌk/"),
+            make("let's do it", "used to agree enthusiastically to a plan",
+                 "よし、やろう！・それでいこう",
+                 useCases: ["誘いや提案に乗り気で応じるとき", "何かを始める前に気合いを入れるとき"],
+                 examples: [
+                    ("Weekend in Paris? Let's do it!", "週末パリ？いいね、行こう！"),
+                    ("Right, everyone ready? Let's do it.", "よし、みんな準備いい？始めよう。")
+                 ], ipa: "/ˌlets ˈduː ɪt/"),
         ]
     }
 
