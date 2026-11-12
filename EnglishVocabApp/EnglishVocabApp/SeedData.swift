@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305
         ]
         return groups.flatMap { $0 }
     }
@@ -47030,6 +47030,115 @@ enum SeedData {
                     ("\"Are you moving out?\" \"Not any time soon!\"", "「引っ越すの？」「当分はないよ！」"),
                     ("The rain won't stop any time soon, by the look of it.", "見た感じ、雨はすぐには止みそうにないね。")
                  ], ipa: "/ˌnɒt ˌeni taɪm ˈsuːn/"),
+        ]
+    }
+    private static var britishColloquial305: [Word] {
+        [
+            make("hit a nerve", "to upset someone by mentioning something they are sensitive about",
+                 "痛いところを突く・気に障ることを言う",
+                 useCases: ["相手が気にしている話題に触れてしまったとき", "図星を指したとき"],
+                 examples: [
+                    ("I think I hit a nerve when I mentioned his ex.", "元カノの話をしたら、どうやら彼の痛いところを突いちゃったみたい。"),
+                    ("Sorry, did I hit a nerve?", "ごめん、気に障ること言っちゃった？")
+                 ], ipa: "/ˌhɪt ə ˈnɜːv/"),
+            make("strike a chord", "to make someone feel sympathy or recognise something because it matches their own experience",
+                 "共感を呼ぶ・心に響く",
+                 useCases: ["話や曲に共感したとき", "自分の経験と重なると言うとき"],
+                 examples: [
+                    ("What you said about missing home really struck a chord with me.", "地元が恋しいって話、すごく共感したよ。"),
+                    ("The film struck a chord with a lot of young people.", "その映画は多くの若者の心に響いた。")
+                 ], ipa: "/ˌstraɪk ə ˈkɔːd/"),
+            make("famous last words", "(humorous) said when someone confidently says something that will probably turn out to be wrong",
+                 "それ、フラグだよ・後で後悔するやつ",
+                 useCases: ["相手の楽観的な発言を茶化すとき", "自分の言葉が外れそうだと冗談で言うとき"],
+                 examples: [
+                    ("\"What could possibly go wrong?\" \"Famous last words!\"", "「何がまずいことになるっていうの？」「それ、フラグだよ！」"),
+                    ("I'll only have one drink tonight – famous last words.", "今夜は1杯だけにするよ…って、どうせ無理だけどね。")
+                 ], ipa: "/ˌfeɪməs ˌlɑːst ˈwɜːdz/"),
+            make("tempt fate", "to do or say something that might bring bad luck",
+                 "運を試すようなことをする・縁起でもないことを言う",
+                 useCases: ["悪いことが起こりそうな発言を止めるとき", "わざわざリスクを冒すとき"],
+                 examples: [
+                    ("Don't say we'll definitely win – you'll tempt fate.", "絶対勝つなんて言わないで、縁起でもない。"),
+                    ("I'm not going to tempt fate by leaving without an umbrella.", "傘なしで出かけて運試しなんてしないよ。")
+                 ], ipa: "/ˌtempt ˈfeɪt/"),
+            make("mum's the word", "(British, informal) used to promise that you will keep something secret",
+                 "内緒にしておくよ・誰にも言わない",
+                 useCases: ["秘密を守ると約束するとき", "サプライズの計画を黙っておくとき"],
+                 examples: [
+                    ("\"Don't tell anyone about the party.\" \"Don't worry, mum's the word.\"", "「パーティーのこと誰にも言わないでね」「大丈夫、内緒にしとくよ」"),
+                    ("It's a surprise, so mum's the word, OK?", "サプライズだから、黙っててね。")
+                 ], ipa: "/ˌmʌmz ðə ˈwɜːd/"),
+            make("start over", "to begin something again from the beginning",
+                 "最初からやり直す",
+                 useCases: ["うまくいかず一からやり直すとき", "新しい場所で人生を再出発するとき"],
+                 examples: [
+                    ("I messed up the recipe, so I had to start over.", "レシピを失敗したから、最初からやり直す羽目になった。"),
+                    ("She moved to Lisbon to start over.", "彼女は人生をやり直すためにリスボンに引っ越した。")
+                 ], ipa: "/ˌstɑːt ˈəʊvə/"),
+            make("it's just one of those things", "used to say that something unlucky happened and nobody can be blamed or could have prevented it",
+                 "仕方のないことだよ・よくあることさ",
+                 useCases: ["誰のせいでもない不運を慰めるとき", "どうしようもなかったと割り切るとき"],
+                 examples: [
+                    ("The train was cancelled – it's just one of those things.", "電車が運休になっちゃった。まあ仕方ないね。"),
+                    ("Don't blame yourself. It was just one of those things.", "自分を責めないで。どうしようもなかったんだよ。")
+                 ], ipa: "/ɪts ˌdʒʌst ˈwʌn əv ˌðəʊz ˈθɪŋz/"),
+            make("for my money", "(informal) in my opinion; used when giving your personal preference",
+                 "私に言わせれば・個人的には",
+                 useCases: ["自分のおすすめや好みを言うとき", "意見をはっきり述べるとき"],
+                 examples: [
+                    ("For my money, this is the best pizza in town.", "私に言わせれば、ここが街で一番のピザだよ。"),
+                    ("For my money, the first album was better.", "個人的には、ファーストアルバムのほうがよかったな。")
+                 ], ipa: "/fə ˈmaɪ ˌmʌni/"),
+            make("the beauty of it is", "used to introduce the best or most useful thing about a situation or plan",
+                 "何がいいって〜なところ・最大の利点は",
+                 useCases: ["アイデアや物の良さを説明するとき", "計画の利点を強調するとき"],
+                 examples: [
+                    ("The beauty of it is you can cook it all in one pan.", "何がいいって、全部フライパン1つで作れるところなんだ。"),
+                    ("The beauty of working from home is no commute.", "在宅勤務の最大の利点は通勤がないことだね。")
+                 ], ipa: "/ðə ˈbjuːti əv ɪt ɪz/"),
+            make("there are plenty more fish in the sea", "used to comfort someone after a relationship ends, meaning there are many other people they could meet",
+                 "相手は他にもたくさんいるよ",
+                 useCases: ["失恋した友達を慰めるとき", "一つの機会にこだわらなくていいと言うとき"],
+                 examples: [
+                    ("Forget him – there are plenty more fish in the sea.", "あんな人忘れなよ。相手なんて他にいくらでもいるって。"),
+                    ("I know it hurts, but there are plenty more fish in the sea.", "つらいのはわかるけど、出会いはまだまだあるよ。")
+                 ], ipa: "/ðeər ə ˌplenti ˌmɔː ˈfɪʃ ɪn ðə ˈsiː/"),
+            make("round about", "(British, informal) approximately; about",
+                 "だいたい・〜くらい",
+                 useCases: ["おおよその時間や数を言うとき", "はっきりしない数字を伝えるとき"],
+                 examples: [
+                    ("I'll be there round about seven.", "7時くらいに着くよ。"),
+                    ("It cost round about fifty quid.", "だいたい50ポンドくらいだったよ。")
+                 ], ipa: "/ˌraʊnd əˈbaʊt/"),
+            make("worth your while", "worth the time, money or effort you spend on it",
+                 "やる価値がある・損はない",
+                 useCases: ["何かを勧めるとき", "労力に見合うか話すとき"],
+                 examples: [
+                    ("It's worth your while booking in advance – it's much cheaper.", "前もって予約しておくと得だよ、ずっと安いから。"),
+                    ("I'll make it worth your while.", "損はさせないよ（お礼はするから）。")
+                 ], ipa: "/ˌwɜːθ jə ˈwaɪl/"),
+            make("closing time", "the time when a pub, bar or shop closes for the day",
+                 "閉店時間",
+                 useCases: ["パブや店の営業終了を話すとき", "急いで店に行こうと言うとき"],
+                 examples: [
+                    ("We stayed at the pub until closing time.", "閉店時間までパブにいたんだ。"),
+                    ("Hurry up, it's nearly closing time!", "急いで、もうすぐ閉店時間だよ！")
+                 ], ipa: "/ˈkləʊzɪŋ ˌtaɪm/"),
+            make("it's not the same without you", "used to tell someone that you miss them and that things are less enjoyable when they are not there",
+                 "あなたがいないと物足りない・寂しいよ",
+                 useCases: ["欠席した友人や離れた人に気持ちを伝えるとき", "職場を去る同僚に言うとき"],
+                 examples: [
+                    ("Come back soon – it's not the same without you.", "早く戻ってきてね、あなたがいないと寂しいよ。"),
+                    ("The office isn't the same without you.", "あなたがいないとオフィスも物足りないよ。")
+                 ], ipa: "/ɪts ˌnɒt ðə ˈseɪm wɪˌðaʊt ju/"),
+            make("the pleasure's all mine", "a polite and friendly reply when someone thanks you or says it was nice to meet you",
+                 "こちらこそ・とんでもない、こちらこそ嬉しいです",
+                 useCases: ["お礼に丁寧に返すとき", "「お会いできて嬉しい」に応えるとき"],
+                 examples: [
+                    ("\"Thanks so much for having us.\" \"The pleasure's all mine.\"", "「招いてくれて本当にありがとう」「こちらこそ来てくれて嬉しいよ」"),
+                    ("\"Lovely to meet you.\" \"The pleasure's all mine.\"", "「お会いできて嬉しいです」「こちらこそ」")
+                 ], ipa: "/ðə ˈpleʒəz ɔːl ˈmaɪn/"),
         ]
     }
     private static var britishColloquial302: [Word] {
