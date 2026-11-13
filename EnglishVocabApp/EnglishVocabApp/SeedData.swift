@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial315: [Word] {
+        [
+            make("a sense of humour", "the ability to find things funny and make others laugh",
+                 "ユーモアのセンス",
+                 useCases: ["人の性格を褒めるとき", "冗談が通じるかどうかを話すとき"],
+                 examples: [
+                    ("She's got a brilliant sense of humour.", "彼女、ユーモアのセンスが抜群なんだ。"),
+                    ("Relax, it was a joke — where's your sense of humour?", "落ち着いて、冗談だよ。ユーモアのセンスはどこ行ったの？")
+                 ], ipa: "/ə ˌsens əv ˈhjuːmə/"),
+            make("a helping hand", "help or assistance given to someone",
+                 "手助け・助けの手",
+                 useCases: ["手伝いを申し出るとき", "誰かに助けてもらったことを話すとき"],
+                 examples: [
+                    ("Need a helping hand with those boxes?", "その箱運ぶの、手伝おうか？"),
+                    ("My neighbour gave me a helping hand with the garden.", "近所の人が庭仕事を手伝ってくれたんだ。")
+                 ], ipa: "/ə ˌhelpɪŋ ˈhænd/"),
+            make("a reality check", "something that makes you see the real situation, often an unpleasant one",
+                 "現実を思い知ること・目を覚ますきっかけ",
+                 useCases: ["甘い考えを改めさせられたとき", "相手に現実を見るよう促すとき"],
+                 examples: [
+                    ("Seeing my bank balance was a real reality check.", "口座残高を見て、現実を思い知らされたよ。"),
+                    ("I think he needs a bit of a reality check.", "彼、ちょっと現実を見たほうがいいと思う。")
+                 ], ipa: "/ə riˈæləti ˌtʃek/"),
+            make("a shopping spree", "a short period when you buy a lot of things",
+                 "爆買い・買い物三昧",
+                 useCases: ["一度にたくさん買い物したとき", "セールやボーナスの後の話題に"],
+                 examples: [
+                    ("I went on a bit of a shopping spree in the sales.", "セールでちょっと爆買いしちゃった。"),
+                    ("Payday tomorrow — time for a shopping spree!", "明日は給料日、買い物三昧だ！")
+                 ], ipa: "/ə ˈʃɒpɪŋ ˌspriː/"),
+            make("a price tag", "the cost of something, especially when it is high",
+                 "値札・値段",
+                 useCases: ["値段の高さについて話すとき", "物の価格に驚いたとき"],
+                 examples: [
+                    ("Lovely coat, but have you seen the price tag?", "素敵なコートだけど、値段見た？"),
+                    ("The new stadium comes with a huge price tag.", "新しいスタジアムには莫大な費用がかかる。")
+                 ], ipa: "/ə ˈpraɪs ˌtæɡ/"),
+            make("a day job", "the main job that pays your bills, as opposed to a hobby or ambition",
+                 "本業・普段の仕事",
+                 useCases: ["趣味や副業と本業を区別するとき", "（冗談で）才能がないとからかうとき"],
+                 examples: [
+                    ("He plays in a band, but his day job is in accounting.", "彼はバンドをやってるけど、本業は経理なんだ。"),
+                    ("Nice singing — but don't quit your day job!", "いい歌だね…でも本業は辞めないほうがいいよ！")
+                 ], ipa: "/ə ˈdeɪ ˌdʒɒb/"),
+            make("a pen pal", "a friend you write to, often in another country, usually without meeting",
+                 "ペンフレンド・文通相手",
+                 useCases: ["海外の文通相手について話すとき", "オンラインでやり取りする友人を紹介するとき"],
+                 examples: [
+                    ("I had a pen pal in France when I was at school.", "学生のころフランスに文通相手がいたんだ。"),
+                    ("We started as pen pals and finally met last year.", "最初は文通相手で、去年ようやく会えたんだ。")
+                 ], ipa: "/ə ˈpen ˌpæl/"),
+            make("a guest list", "a list of people invited to an event",
+                 "招待客リスト・ゲストリスト",
+                 useCases: ["パーティーや結婚式の準備のとき", "イベントの入場について話すとき"],
+                 examples: [
+                    ("Is your sister on the guest list?", "妹さんは招待客リストに入ってる？"),
+                    ("We had to cut the guest list down to fifty.", "招待客を50人に絞らなきゃいけなかった。")
+                 ], ipa: "/ə ˈɡest ˌlɪst/"),
+            make("a falling-out", "an argument that ends a friendship or relationship for a while",
+                 "仲たがい・けんか別れ",
+                 useCases: ["友人や家族との不和を話すとき", "誰かと疎遠になった理由を説明するとき"],
+                 examples: [
+                    ("They had a falling-out over money years ago.", "彼らは何年も前にお金のことで仲たがいしたんだ。"),
+                    ("Have you two had a falling-out or something?", "二人、けんかでもしたの？")
+                 ], ipa: "/ə ˌfɔːlɪŋ ˈaʊt/"),
+            make("a lookalike", "a person who looks very similar to someone else, often someone famous",
+                 "そっくりさん",
+                 useCases: ["有名人に似ている人を話題にするとき", "人違いをしたとき"],
+                 examples: [
+                    ("Your brother is a total Ed Sheeran lookalike.", "君のお兄さん、エド・シーランのそっくりさんだね。"),
+                    ("I waved at a lookalike thinking it was you!", "君だと思ってそっくりな人に手を振っちゃった！")
+                 ], ipa: "/ə ˈlʊkəlaɪk/"),
+            make("the spitting image of", "looking exactly like someone, often a family member",
+                 "～に瓜二つ・そっくり",
+                 useCases: ["子どもが親に似ていると言うとき", "誰かと驚くほど似ている人を見たとき"],
+                 examples: [
+                    ("She's the spitting image of her mum.", "彼女はお母さんに瓜二つだね。"),
+                    ("He's the spitting image of his grandad at that age.", "彼はあの年の頃のおじいさんにそっくりだ。")
+                 ], ipa: "/ðə ˌspɪtɪŋ ˈɪmɪdʒ əv/"),
+            make("a first date", "the first time two people go out together romantically",
+                 "初デート",
+                 useCases: ["恋愛の話題で", "デートの場所や緊張について話すとき"],
+                 examples: [
+                    ("How did the first date go?", "初デートどうだった？"),
+                    ("I always get nervous on a first date.", "初デートはいつも緊張しちゃう。")
+                 ], ipa: "/ə ˌfɜːst ˈdeɪt/"),
+            make("a set menu", "a fixed selection of dishes at a fixed price in a restaurant",
+                 "コース料理・セットメニュー",
+                 useCases: ["レストランで注文を決めるとき", "お得なランチについて話すとき"],
+                 examples: [
+                    ("Shall we just go for the set menu? It's better value.", "コースにしない？そのほうがお得だし。"),
+                    ("They do a lovely two-course set menu at lunchtime.", "ランチに2品のおいしいセットメニューがあるんだ。")
+                 ], ipa: "/ə ˌset ˈmenjuː/"),
+            make("a shoulder to cry on", "someone who listens and comforts you when you are upset",
+                 "悩みを聞いてくれる人・心の支え",
+                 useCases: ["落ち込んでいる友人を支えるとき", "頼れる人について話すとき"],
+                 examples: [
+                    ("If you ever need a shoulder to cry on, I'm here.", "話を聞いてほしいときはいつでもいるからね。"),
+                    ("She's always been a shoulder to cry on for me.", "彼女はいつも私の心の支えになってくれた。")
+                 ], ipa: "/ə ˌʃəʊldə tə ˈkraɪ ɒn/"),
+            make("a pit stop", "a short stop during a journey for food, fuel or the toilet",
+                 "（移動中の）ちょっと休憩・寄り道",
+                 useCases: ["ドライブ中に休憩を提案するとき", "途中で軽く立ち寄るとき"],
+                 examples: [
+                    ("Let's make a quick pit stop for coffee.", "コーヒー休憩にちょっと寄ろうか。"),
+                    ("We made a pit stop at the services halfway.", "途中のサービスエリアでひと休みしたよ。")
+                 ], ipa: "/ə ˈpɪt ˌstɒp/"),
         ]
     }
 
