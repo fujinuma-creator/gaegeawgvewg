@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial320: [Word] {
+        [
+            make("a life hack", "a simple, clever trick that makes an everyday task easier",
+                 "ライフハック・生活の知恵",
+                 useCases: ["便利な小技を教えるとき", "ちょっとした工夫を褒めるとき"],
+                 examples: [
+                    ("Here's a life hack: put a wooden spoon over the pot so it doesn't boil over.", "ライフハックだけど、鍋に木べらを渡すと吹きこぼれないよ。"),
+                    ("Freezing grapes as ice cubes is my favourite life hack.", "ブドウを凍らせて氷代わりにするのが私のお気に入りの小技なんだ。")
+                 ], ipa: "/ə ˈlaɪf ˌhæk/"),
+            make("a show-off", "someone who keeps trying to impress people with their skills, money or possessions",
+                 "目立ちたがり屋・自慢したがる人",
+                 useCases: ["自慢ばかりする人について話すとき", "友達を冗談でからかうとき"],
+                 examples: [
+                    ("He's such a show-off — he always parks his sports car right outside.", "あいつ本当に見せびらかし屋だよね、いつもスポーツカーを目の前に停めるんだ。"),
+                    ("Stop being a show-off and just pass the ball!", "かっこつけてないでさっさとパスしなよ！")
+                 ], ipa: "/ə ˈʃəʊ ɒf/"),
+            make("spare change", "a few coins you have that you don't need",
+                 "小銭・余った小銭",
+                 useCases: ["小銭を持っているか聞くとき", "募金やチップについて話すとき"],
+                 examples: [
+                    ("Have you got any spare change for the parking meter?", "パーキングメーター用の小銭持ってない？"),
+                    ("I usually drop my spare change in the charity box.", "余った小銭はたいてい募金箱に入れてるんだ。")
+                 ], ipa: "/ˌspeə ˈtʃeɪndʒ/"),
+            make("an internship", "a period of work, often short and low-paid, to gain experience in a job",
+                 "インターンシップ・実務研修",
+                 useCases: ["学生の就職活動について話すとき", "職歴や経験を説明するとき"],
+                 examples: [
+                    ("She's doing a summer internship at a design studio in Berlin.", "彼女はベルリンのデザイン事務所で夏のインターンをしてるんだ。"),
+                    ("My internship turned into a full-time job.", "インターンがそのまま正社員の仕事になったんだ。")
+                 ], ipa: "/ən ˈɪntɜːnʃɪp/"),
+            make("a family heirloom", "a valuable object that has belonged to a family for generations",
+                 "家宝・代々受け継がれてきた品",
+                 useCases: ["祖父母から受け継いだ物について話すとき", "大切な古い品を紹介するとき"],
+                 examples: [
+                    ("This ring is a family heirloom — it was my great-grandmother's.", "この指輪は家宝なの。ひいおばあちゃんのものだったんだ。"),
+                    ("Be careful with that clock, it's a family heirloom.", "その時計気をつけてね、代々受け継いでるものだから。")
+                 ], ipa: "/ə ˈfæməli ˈeəluːm/"),
+            make("a stand-in", "a person who temporarily does someone else's job or takes their place",
+                 "代役・代理",
+                 useCases: ["誰かの代わりに仕事をするとき", "急な欠員を埋める人について話すとき"],
+                 examples: [
+                    ("I'm just a stand-in while Sarah's on holiday.", "サラが休暇中の間、私はただの代理なんだ。"),
+                    ("We need a stand-in for Saturday's match — are you free?", "土曜の試合の代わりの人が必要なんだけど、空いてる？")
+                 ], ipa: "/ə ˈstænd ɪn/"),
+            make("a hold-up", "a delay, especially one that stops traffic or progress",
+                 "遅れ・渋滞・足止め",
+                 useCases: ["遅刻の理由を説明するとき", "作業や手続きが止まっている理由を聞くとき"],
+                 examples: [
+                    ("Sorry I'm late — there was a hold-up on the motorway.", "遅れてごめん、高速で渋滞があってさ。"),
+                    ("What's the hold-up? We should have left ten minutes ago.", "何で止まってるの？10分前には出てるはずだったのに。")
+                 ], ipa: "/ə ˈhəʊld ʌp/"),
+            make("a breakdown", "when a car or machine stops working; also when someone becomes very upset and can't cope",
+                 "故障・（精神的な）参ってしまうこと",
+                 useCases: ["車が故障したことを伝えるとき", "誰かが精神的に限界になったことを話すとき"],
+                 examples: [
+                    ("We had a breakdown halfway to Edinburgh and had to call a tow truck.", "エディンバラに行く途中で車が故障して、レッカーを呼ぶはめになったよ。"),
+                    ("I nearly had a breakdown during exam week.", "試験週間はほんとに精神的に参りかけたよ。")
+                 ], ipa: "/ə ˈbreɪkdaʊn/"),
+            make("a hangout", "a place where someone likes to spend a lot of time, especially with friends",
+                 "たまり場・行きつけの場所",
+                 useCases: ["友達とよく行く場所を紹介するとき", "人気のスポットについて話すとき"],
+                 examples: [
+                    ("That little café was our favourite hangout at uni.", "あの小さなカフェが大学時代の僕らのたまり場だったんだ。"),
+                    ("The park is a popular hangout for teenagers.", "その公園は10代の子たちの人気のたまり場だよ。")
+                 ], ipa: "/ə ˈhæŋaʊt/"),
+            make("a hotspot", "a popular place where lots of people go; also a place offering Wi-Fi",
+                 "人気スポット・（Wi-Fiの）ホットスポット",
+                 useCases: ["人気の観光地や夜遊びの場所について話すとき", "スマホでネットを共有するとき"],
+                 examples: [
+                    ("Lisbon has become a real tourist hotspot.", "リスボンは本当に人気の観光地になったね。"),
+                    ("Can you turn on your hotspot? My data's run out.", "テザリングつけてくれる？データ使い切っちゃった。")
+                 ], ipa: "/ə ˈhɒtspɒt/"),
+            make("a sell-out", "an event for which all the tickets have been sold",
+                 "完売・満員御礼のイベント",
+                 useCases: ["コンサートや試合のチケットについて話すとき", "イベントが大成功だったと伝えるとき"],
+                 examples: [
+                    ("Their gig in Dublin was a complete sell-out.", "彼らのダブリンのライブは完全に売り切れだったよ。"),
+                    ("Book early — the show is expected to be a sell-out.", "早めに予約してね、そのショーは完売しそうだから。")
+                 ], ipa: "/ə ˈsel aʊt/"),
+            make("an eyesore", "something, especially a building, that is very ugly to look at",
+                 "目障りなもの・景観を損なうもの",
+                 useCases: ["醜い建物や景色について文句を言うとき", "散らかったものを片付けてほしいとき"],
+                 examples: [
+                    ("That new car park is a real eyesore.", "あの新しい駐車場、本当に目障りだよね。"),
+                    ("Can we get rid of that old sofa in the garden? It's an eyesore.", "庭のあの古いソファ処分できない？見た目が悪いよ。")
+                 ], ipa: "/ən ˈaɪsɔː/"),
+            make("a dilemma", "a situation where you have to make a difficult choice between two options",
+                 "ジレンマ・板挟み・悩みどころ",
+                 useCases: ["どちらにするか迷っているとき", "難しい選択について相談するとき"],
+                 examples: [
+                    ("I'm in a bit of a dilemma — two weddings on the same day.", "ちょっと困ってるんだ、結婚式が同じ日に2つあって。"),
+                    ("Pizza or curry? That's the eternal dilemma.", "ピザかカレーか？永遠の悩みだね。")
+                 ], ipa: "/ə dɪˈlemə/"),
+            make("the black sheep (of the family)", "a person who is seen as different from or a disappointment to the rest of their family or group",
+                 "（家族の中の）はみ出し者・厄介者",
+                 useCases: ["家族の中で変わり者の人について話すとき", "自分のことを冗談で言うとき"],
+                 examples: [
+                    ("I'm the black sheep of the family — everyone else is a doctor.", "僕は家族のはみ出し者だよ、他はみんな医者なんだ。"),
+                    ("My uncle was always the black sheep, but he's the most fun.", "おじさんはずっと一家の変わり者だけど、一番面白い人なんだ。")
+                 ], ipa: "/ðə ˌblæk ˈʃiːp/"),
+            make("a middle ground", "a position or compromise between two opposing opinions or options",
+                 "妥協点・中間の立場",
+                 useCases: ["意見が対立したときに歩み寄るとき", "極端ではない選択肢を提案するとき"],
+                 examples: [
+                    ("Let's try to find a middle ground we're both happy with.", "お互い納得できる妥協点を探そうよ。"),
+                    ("There's no middle ground with him — it's all or nothing.", "彼には中間がないんだ、いつも全部か無しかさ。")
+                 ], ipa: "/ə ˌmɪdl ˈɡraʊnd/"),
         ]
     }
 
