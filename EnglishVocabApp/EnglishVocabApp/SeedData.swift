@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322
         ]
         return groups.flatMap { $0 }
     }
@@ -47468,6 +47468,116 @@ enum SeedData {
                     ("Let's try to find a middle ground we're both happy with.", "お互い納得できる妥協点を探そうよ。"),
                     ("There's no middle ground with him — it's all or nothing.", "彼には中間がないんだ、いつも全部か無しかさ。")
                  ], ipa: "/ə ˌmɪdl ˈɡraʊnd/"),
+        ]
+    }
+
+    private static var britishColloquial322: [Word] {
+        [
+            make("a group photo", "a photo of several people together, usually taken to remember an event",
+                 "集合写真・みんなで撮る写真",
+                 useCases: ["パーティーや旅行でみんなで写真を撮るとき", "撮った写真を共有するとき"],
+                 examples: [
+                    ("Before anyone leaves, let's get a group photo!", "誰か帰る前に、みんなで写真撮ろう！"),
+                    ("I always end up with my eyes shut in group photos.", "集合写真だと、いつも目をつぶっちゃうんだよね。")
+                 ], ipa: "/ə ˌɡruːp ˈfəʊtəʊ/"),
+            make("team building", "activities that help colleagues get to know each other and work together better",
+                 "チームビルディング・社内の親睦活動",
+                 useCases: ["会社のイベントについて話すとき", "同僚との親睦行事を説明するとき"],
+                 examples: [
+                    ("We've got a team-building day on Friday — escape room, apparently.", "金曜はチームビルディングの日なんだ。脱出ゲームらしいよ。"),
+                    ("Honestly, the pub does more for team building than any workshop.", "正直、どんな研修よりパブの方がチームの結束に効くよ。")
+                 ], ipa: "/ˈtiːm ˌbɪldɪŋ/"),
+            make("Secret Santa", "a gift exchange where each person is secretly given one person to buy a small present for",
+                 "シークレットサンタ・匿名のプレゼント交換",
+                 useCases: ["職場や友達同士のクリスマス企画を話すとき", "プレゼント選びに悩んでいるとき"],
+                 examples: [
+                    ("Who did you get for Secret Santa?", "シークレットサンタ、誰に当たった？"),
+                    ("We're doing Secret Santa at work — the limit's ten euros.", "職場でプレゼント交換やるんだ。上限は10ユーロ。")
+                 ], ipa: "/ˌsiːkrət ˈsæntə/"),
+            make("an advent calendar", "a calendar with little doors, one opened each day in December until Christmas, often with chocolate inside",
+                 "アドベントカレンダー",
+                 useCases: ["12月のクリスマス準備について話すとき", "子どもや自分へのちょっとした楽しみを話すとき"],
+                 examples: [
+                    ("The kids fight every morning over who opens the advent calendar.", "毎朝、子どもたちが誰がアドベントカレンダーを開けるかで揉めるんだ。"),
+                    ("I've already eaten half my advent calendar — it's only the 5th!", "もうアドベントカレンダー半分食べちゃった。まだ5日なのに！")
+                 ], ipa: "/ən ˈædvent ˌkæləndə/"),
+            make("an ice lolly", "frozen flavoured water or juice on a stick (US: popsicle)",
+                 "アイスキャンディー",
+                 useCases: ["暑い日に冷たいものが欲しいとき", "子どもにおやつをあげるとき"],
+                 examples: [
+                    ("It's boiling — fancy an ice lolly?", "めちゃくちゃ暑いね。アイスキャンディー食べない？"),
+                    ("He dropped his ice lolly and burst into tears.", "あの子、アイスキャンディー落として泣き出しちゃった。")
+                 ], ipa: "/ən ˌaɪs ˈlɒli/"),
+            make("a sea view", "a view of the sea from a room, flat or house",
+                 "海の見える眺め・オーシャンビュー",
+                 useCases: ["ホテルを予約するとき", "旅行先の部屋について話すとき"],
+                 examples: [
+                    ("We paid a bit extra for a room with a sea view.", "ちょっと追加で払って、海の見える部屋にしたんだ。"),
+                    ("Imagine waking up to a sea view every morning!", "毎朝起きたら海が見えるなんて想像してみてよ！")
+                 ], ipa: "/ə ˌsiː ˈvjuː/"),
+            make("a driving test", "the official exam you must pass to get a driving licence",
+                 "運転免許の実技試験",
+                 useCases: ["免許取得について話すとき", "試験の結果を報告するとき"],
+                 examples: [
+                    ("I passed my driving test first time!", "運転免許の試験、一発で受かったよ！"),
+                    ("She's got her driving test next week and she's a nervous wreck.", "彼女、来週運転試験で、すっかりガチガチなんだ。")
+                 ], ipa: "/ə ˈdraɪvɪŋ ˌtest/"),
+            make("a speed camera", "a camera by the road that photographs cars going faster than the limit",
+                 "スピード違反取締カメラ・オービス",
+                 useCases: ["運転中に注意を促すとき", "スピード違反で捕まった話をするとき"],
+                 examples: [
+                    ("Slow down — there's a speed camera just after the bridge.", "スピード落として。橋のすぐ先に取締カメラがあるよ。"),
+                    ("I got flashed by a speed camera on the way to work.", "通勤途中にスピードカメラに撮られちゃった。")
+                 ], ipa: "/ə ˈspiːd ˌkæmərə/"),
+            make("a babysitter", "a person who looks after children while their parents are out",
+                 "ベビーシッター・子守り",
+                 useCases: ["夜の外出の予定を立てるとき", "子どもを預ける話をするとき"],
+                 examples: [
+                    ("We'd love to come, but we need to find a babysitter first.", "ぜひ行きたいんだけど、まずベビーシッターを探さないと。"),
+                    ("My mum's our go-to babysitter.", "うちは困ったら母が子守りしてくれるんだ。")
+                 ], ipa: "/ə ˈbeɪbiˌsɪtə/"),
+            make("food poisoning", "an illness caused by eating food that has gone bad or contains bacteria",
+                 "食中毒・食あたり",
+                 useCases: ["体調不良の理由を説明するとき", "怪しい食べ物を避けるよう注意するとき"],
+                 examples: [
+                    ("I think I've got food poisoning from that dodgy kebab.", "あの怪しいケバブで食あたりしたかも。"),
+                    ("I wouldn't eat that — you'll end up with food poisoning.", "それはやめといた方がいいよ。食中毒になるって。")
+                 ], ipa: "/ˈfuːd ˌpɔɪzənɪŋ/"),
+            make("a childhood friend", "someone you have been friends with since you were a child",
+                 "幼なじみ",
+                 useCases: ["昔からの友達を紹介するとき", "地元の話をするとき"],
+                 examples: [
+                    ("This is Tom — we're childhood friends from Leeds.", "こちらトム。リーズ出身の幼なじみなんだ。"),
+                    ("I bumped into a childhood friend at the airport.", "空港で幼なじみにばったり会ったよ。")
+                 ], ipa: "/ə ˈtʃaɪldhʊd ˌfrend/"),
+            make("an old flame", "a person you used to have a romantic relationship with",
+                 "昔の恋人・元カレ／元カノ",
+                 useCases: ["昔付き合っていた人の話をするとき", "偶然元恋人に会った話をするとき"],
+                 examples: [
+                    ("Guess who I saw at the wedding? An old flame from uni.", "結婚式で誰に会ったと思う？大学時代の元カノだよ。"),
+                    ("He's back in touch with an old flame.", "彼、昔の恋人とまた連絡取り合ってるんだって。")
+                 ], ipa: "/ən ˌəʊld ˈfleɪm/"),
+            make("a surprise party", "a party organised secretly so that the guest of honour doesn't know about it",
+                 "サプライズパーティー",
+                 useCases: ["友達の誕生日を計画するとき", "秘密を守るよう頼むとき"],
+                 examples: [
+                    ("We're throwing her a surprise party — don't say a word!", "彼女のためにサプライズパーティーやるんだ。絶対言わないでね！"),
+                    ("I nearly gave the surprise party away by accident.", "うっかりサプライズパーティーをバラしそうになったよ。")
+                 ], ipa: "/ə səˈpraɪz ˌpɑːti/"),
+            make("toothache", "a pain in one of your teeth",
+                 "歯痛・歯の痛み",
+                 useCases: ["体調や痛みを説明するとき", "歯医者に行く理由を話すとき"],
+                 examples: [
+                    ("I've had toothache all weekend — I need to see a dentist.", "週末ずっと歯が痛くて。歯医者に行かないと。"),
+                    ("Ice cream gives me toothache these days.", "最近アイスを食べると歯が痛むんだよね。")
+                 ], ipa: "/ˈtuːθeɪk/"),
+            make("a school trip", "a visit to a place such as a museum or farm that pupils make with their teachers",
+                 "遠足・校外学習・修学旅行",
+                 useCases: ["子どもの学校行事について話すとき", "子どもの頃の思い出を話すとき"],
+                 examples: [
+                    ("The kids are off on a school trip to the zoo tomorrow.", "子どもたち、明日は遠足で動物園に行くんだ。"),
+                    ("I remember that castle from a school trip years ago.", "あのお城、昔遠足で行ったのを覚えてるよ。")
+                 ], ipa: "/ə ˈskuːl ˌtrɪp/"),
         ]
     }
 
