@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial317: [Word] {
+        [
+            make("a mid-life crisis", "a period of worry or sudden change some people go through in their 40s or 50s",
+                 "中年の危機",
+                 useCases: ["中年の人の急な変化を冗談っぽく話すとき", "人生の転機について話すとき"],
+                 examples: [
+                    ("He bought a sports car — must be a mid-life crisis.", "彼スポーツカー買ったんだって。中年の危機だね。"),
+                    ("I'm not having a mid-life crisis, I just fancied a change!", "中年の危機じゃないよ、ただ気分を変えたかっただけ！")
+                 ], ipa: "/ə ˌmɪd laɪf ˈkraɪsɪs/"),
+            make("a one-way ticket", "a ticket for travelling to a place but not back again",
+                 "片道切符",
+                 useCases: ["電車や飛行機の切符を買うとき", "移住や戻らない決意を話すとき"],
+                 examples: [
+                    ("Just a one-way ticket to Manchester, please.", "マンチェスターまで片道1枚お願いします。"),
+                    ("She bought a one-way ticket to Lisbon and never looked back.", "彼女はリスボン行きの片道切符を買って、それっきり戻らなかった。")
+                 ], ipa: "/ə ˌwʌn weɪ ˈtɪkɪt/"),
+            make("a layover", "a short stop at a place during a long journey, especially between flights",
+                 "乗り継ぎ（待ち時間）",
+                 useCases: ["飛行機の乗り継ぎについて話すとき", "旅程を説明するとき"],
+                 examples: [
+                    ("We've got a three-hour layover in Frankfurt.", "フランクフルトで3時間の乗り継ぎがあるんだ。"),
+                    ("Is it a direct flight or is there a layover?", "直行便？それとも乗り継ぎあり？")
+                 ], ipa: "/ə ˈleɪˌəʊvə/"),
+            make("a travel buddy", "a friend you go travelling with",
+                 "旅仲間・旅の相棒",
+                 useCases: ["一緒に旅行する友人を紹介するとき", "旅の同行者を探すとき"],
+                 examples: [
+                    ("Tom's my usual travel buddy — we've done loads of trips together.", "トムはいつもの旅の相棒で、一緒にたくさん旅行してるんだ。"),
+                    ("I'm looking for a travel buddy for Italy this summer.", "この夏イタリアに一緒に行く旅仲間を探してるんだ。")
+                 ], ipa: "/ə ˈtrævl ˌbʌdi/"),
+            make("a chat-up line", "something you say to start a conversation with someone you find attractive",
+                 "口説き文句・ナンパの決まり文句",
+                 useCases: ["ナンパや口説き方を冗談で話すとき", "ベタなセリフを笑うとき"],
+                 examples: [
+                    ("That's the worst chat-up line I've ever heard!", "今まで聞いた中で最悪の口説き文句だよ！"),
+                    ("He tried a cheesy chat-up line on her and she just laughed.", "彼がベタな口説き文句を言ったら、彼女に笑われてた。")
+                 ], ipa: "/ə ˈtʃæt ʌp ˌlaɪn/"),
+            make("a hot water bottle", "a rubber container filled with hot water to keep you warm in bed",
+                 "湯たんぽ",
+                 useCases: ["寒い夜の過ごし方を話すとき", "体調が悪いときの対処を話すとき"],
+                 examples: [
+                    ("It's freezing — I'm going to bed with a hot water bottle.", "めちゃくちゃ寒いから湯たんぽ抱えて寝るよ。"),
+                    ("A hot water bottle really helps when you've got a stomach ache.", "お腹が痛いときは湯たんぽがすごく効くよ。")
+                 ], ipa: "/ə ˌhɒt ˈwɔːtə ˌbɒtl/"),
+            make("a winning streak", "a series of wins or successes one after another",
+                 "連勝・勝ち続き",
+                 useCases: ["スポーツチームの好調を話すとき", "仕事や運が続いているとき"],
+                 examples: [
+                    ("United are on a five-game winning streak.", "ユナイテッドは5連勝中だよ。"),
+                    ("I'm on a bit of a winning streak at the pub quiz lately.", "最近パブクイズで勝ち続きなんだ。")
+                 ], ipa: "/ə ˈwɪnɪŋ ˌstriːk/"),
+            make("a meal deal", "a set lunch, usually a sandwich, snack and drink, sold together for one price",
+                 "（サンドイッチ・スナック・飲み物の）お得なランチセット",
+                 useCases: ["コンビニやスーパーで昼食を買うとき", "手軽なランチについて話すとき"],
+                 examples: [
+                    ("I'll just grab a meal deal from Tesco for lunch.", "お昼はテスコでランチセット買ってくるよ。"),
+                    ("A meal deal is the best value lunch you can get.", "ランチセットが一番コスパいい昼ごはんだよ。")
+                 ], ipa: "/ə ˈmiːl ˌdiːl/"),
+            make("a bin bag", "a large plastic bag for putting rubbish in",
+                 "ゴミ袋",
+                 useCases: ["ゴミ出しや片付けのとき", "家事の話をするとき"],
+                 examples: [
+                    ("Can you grab me a bin bag from under the sink?", "シンクの下からゴミ袋取ってくれる？"),
+                    ("We filled three bin bags clearing out the garage.", "ガレージを片付けたらゴミ袋3つ分になったよ。")
+                 ], ipa: "/ə ˈbɪn ˌbæɡ/"),
+            make("a burst pipe", "a water pipe that has broken and is leaking water",
+                 "破裂した水道管",
+                 useCases: ["家の水漏れトラブルを話すとき", "冬の寒さによる被害を話すとき"],
+                 examples: [
+                    ("Sorry I'm late — we had a burst pipe in the kitchen.", "遅れてごめん、台所の水道管が破裂しちゃって。"),
+                    ("A burst pipe flooded the whole bathroom.", "水道管が破裂して浴室中が水浸しになった。")
+                 ], ipa: "/ə ˌbɜːst ˈpaɪp/"),
+            make("a season ticket", "a ticket you buy for a whole season or year, e.g. for a football club or train travel",
+                 "シーズンチケット・定期券",
+                 useCases: ["サッカー観戦の話をするとき", "通勤の定期券について話すとき"],
+                 examples: [
+                    ("My dad's had a season ticket at Arsenal for twenty years.", "父さんは20年アーセナルのシーズンチケットを持ってるんだ。"),
+                    ("An annual season ticket works out much cheaper for commuting.", "通勤なら年間定期のほうがずっと安く済むよ。")
+                 ], ipa: "/ə ˈsiːzn ˌtɪkɪt/"),
+            make("a bus pass", "a card or ticket that lets you travel on buses for a period of time",
+                 "バスの定期券・バスパス",
+                 useCases: ["通勤・通学の交通手段を話すとき", "乗車時に提示するとき"],
+                 examples: [
+                    ("I forgot my bus pass, so I had to pay for a ticket.", "バスパス忘れたから切符代払わなきゃいけなかった。"),
+                    ("Students get a discount on a monthly bus pass.", "学生は1か月のバスパスが割引になるよ。")
+                 ], ipa: "/ə ˈbʌs ˌpɑːs/"),
+            make("a kitty", "a pool of money that a group of people put in to pay for shared things",
+                 "共同の財布・みんなで出し合ったお金",
+                 useCases: ["飲み会や旅行で割り勘するとき", "シェアハウスの共同費用について話すとき"],
+                 examples: [
+                    ("Let's all put twenty quid in the kitty for drinks.", "みんなで飲み代として20ポンドずつ出し合おう。"),
+                    ("We pay for milk and loo roll out of the house kitty.", "牛乳とトイレットペーパーは家の共同費から払ってるよ。")
+                 ], ipa: "/ə ˈkɪti/"),
+            make("a home truth", "an unpleasant fact about yourself that someone tells you directly",
+                 "（耳の痛い）本当のこと・厳しい指摘",
+                 useCases: ["友人に率直に忠告するとき", "痛いところを突かれたとき"],
+                 examples: [
+                    ("It's time someone told him a few home truths.", "誰かが彼に耳の痛いことを言ってやるべきだよ。"),
+                    ("My sister told me some home truths, and she was right.", "姉に厳しいことを言われたけど、その通りだった。")
+                 ], ipa: "/ə ˌhəʊm ˈtruːθ/"),
+            make("a service station", "a place by a motorway with petrol, food, toilets and shops",
+                 "（高速道路の）サービスエリア",
+                 useCases: ["ドライブ中の休憩について話すとき", "長距離移動の計画を立てるとき"],
+                 examples: [
+                    ("Let's stop at the next service station — I need the loo.", "次のサービスエリアで止まろう、トイレ行きたい。"),
+                    ("Service station food is always so overpriced.", "サービスエリアの食べ物っていつも高すぎるよね。")
+                 ], ipa: "/ə ˈsɜːvɪs ˌsteɪʃn/"),
         ]
     }
 
