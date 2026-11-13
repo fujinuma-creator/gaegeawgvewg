@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial316: [Word] {
+        [
+            make("a household name", "a person or thing that almost everyone has heard of",
+                 "誰もが知っている名前・有名人",
+                 useCases: ["有名な人やブランドについて話すとき", "人気が出て有名になったことを話すとき"],
+                 examples: [
+                    ("She went from a local singer to a household name in a year.", "彼女は1年で地元の歌手から誰もが知る有名人になった。"),
+                    ("It's not exactly a household name, but the food's amazing.", "そんなに有名な店じゃないけど、料理は最高だよ。")
+                 ], ipa: "/ə ˌhaʊshəʊld ˈneɪm/"),
+            make("a role model", "someone whose behaviour others admire and copy",
+                 "お手本・憧れの存在",
+                 useCases: ["尊敬する人について話すとき", "子どもへの影響について話すとき"],
+                 examples: [
+                    ("My gran was always my biggest role model.", "おばあちゃんがずっと一番のお手本だったんだ。"),
+                    ("Footballers should remember they're role models for kids.", "サッカー選手は子どもたちのお手本だってことを忘れないでほしい。")
+                 ], ipa: "/ə ˈrəʊl ˌmɒdl/"),
+            make("a family man", "a man who loves spending time with his wife and children",
+                 "家族思いの男性・家庭的な人",
+                 useCases: ["家族を大切にする男性を紹介するとき", "生活スタイルの変化を話すとき"],
+                 examples: [
+                    ("He's a real family man — always home by six.", "彼は本当に家族思いで、いつも6時には帰るんだ。"),
+                    ("No more late nights for me, I'm a family man now!", "もう夜遊びはしないよ、今や家庭持ちだからね！")
+                 ], ipa: "/ə ˈfæməli ˌmæn/"),
+            make("a head cold", "a common cold that mainly blocks your nose and makes your head feel heavy",
+                 "鼻かぜ・頭が重いかぜ",
+                 useCases: ["体調が悪い理由を伝えるとき", "仕事や予定を休む連絡をするとき"],
+                 examples: [
+                    ("Sorry, I sound awful — I've got a stinking head cold.", "ごめん、ひどい声でしょ。ひどい鼻かぜなんだ。"),
+                    ("It's just a head cold, I'll be fine by Monday.", "ただの鼻かぜだから、月曜には治ってるよ。")
+                 ], ipa: "/ə ˈhed ˌkəʊld/"),
+            make("a nickname", "an informal name that friends or family call you",
+                 "あだ名・ニックネーム",
+                 useCases: ["呼び名を教えるとき", "子ども時代の思い出話で"],
+                 examples: [
+                    ("Everyone calls me Jonny — it's my nickname from school.", "みんなジョニーって呼ぶんだ。学校時代のあだ名でね。"),
+                    ("Did you have a nickname when you were little?", "小さいころ、あだ名あった？")
+                 ], ipa: "/ə ˈnɪkneɪm/"),
+            make("a middle name", "a name between your first name and your surname",
+                 "ミドルネーム",
+                 useCases: ["名前について話すとき", "書類に名前を記入するとき"],
+                 examples: [
+                    ("What's your middle name? Go on, tell me!", "ミドルネームは何？ねえ、教えてよ！"),
+                    ("Patience isn't exactly my middle name.", "我慢強さは私の取り柄じゃないんだよね。")
+                 ], ipa: "/ə ˈmɪdl ˌneɪm/"),
+            make("a first impression", "the opinion you form when you meet someone or see something for the first time",
+                 "第一印象",
+                 useCases: ["初対面の印象を話すとき", "面接やデートの準備のとき"],
+                 examples: [
+                    ("So, what was your first impression of him?", "で、彼の第一印象はどうだった？"),
+                    ("You only get one chance to make a first impression.", "第一印象を与えるチャンスは一度きりだよ。")
+                 ], ipa: "/ə ˌfɜːst ɪmˈpreʃn/"),
+            make("eye contact", "looking directly into someone's eyes while you talk to them",
+                 "アイコンタクト・目を合わせること",
+                 useCases: ["会話やプレゼンのコツを話すとき", "相手の態度について話すとき"],
+                 examples: [
+                    ("He wouldn't even make eye contact with me.", "彼、目も合わせてくれなかったんだ。"),
+                    ("Keep good eye contact in the interview.", "面接ではしっかり目を見て話してね。")
+                 ], ipa: "/ˈaɪ ˌkɒntækt/"),
+            make("body language", "the way your posture, gestures and expressions show what you feel",
+                 "ボディランゲージ・身振りや態度",
+                 useCases: ["相手の気持ちを読み取るとき", "印象をよくする話をするとき"],
+                 examples: [
+                    ("Her body language said she wasn't interested.", "彼女の態度からして、興味なさそうだったよ。"),
+                    ("Watch your body language — you look really nervous.", "身振りに気をつけて。すごく緊張して見えるよ。")
+                 ], ipa: "/ˈbɒdi ˌlæŋɡwɪdʒ/"),
+            make("a frame of mind", "the mood or mental state you are in at a particular time",
+                 "気分・心の状態",
+                 useCases: ["今の気分や心の準備について話すとき", "話を切り出すタイミングを図るとき"],
+                 examples: [
+                    ("I'm not in the right frame of mind to talk about it now.", "今はそれを話せるような気分じゃないんだ。"),
+                    ("A good walk always puts me in a better frame of mind.", "しっかり散歩すると、いつも気分が上向くんだ。")
+                 ], ipa: "/ə ˌfreɪm əv ˈmaɪnd/"),
+            make("teamwork", "people working well together to achieve something",
+                 "チームワーク・協力",
+                 useCases: ["みんなで何かを成し遂げたとき", "仕事やスポーツの話で"],
+                 examples: [
+                    ("We finished early — great teamwork, everyone!", "早く終わったね。みんな、ナイスチームワーク！"),
+                    ("Moving house is all about teamwork.", "引っ越しはとにかく協力が大事だよ。")
+                 ], ipa: "/ˈtiːmwɜːk/"),
+            make("a weak spot", "a part of something or someone that is easy to attack or criticise; a weakness",
+                 "弱点・泣きどころ",
+                 useCases: ["自分や相手の弱点を話すとき", "スポーツや仕事の分析で"],
+                 examples: [
+                    ("Maths has always been my weak spot.", "数学はずっと私の弱点なんだ。"),
+                    ("Their defence has a weak spot on the left.", "あのチームの守備は左側が弱点だね。")
+                 ], ipa: "/ə ˈwiːk ˌspɒt/"),
+            make("a flea market", "an outdoor market selling cheap second-hand goods",
+                 "フリーマーケット・蚤の市",
+                 useCases: ["週末の過ごし方を話すとき", "掘り出し物を見つけた話で"],
+                 examples: [
+                    ("I picked up this lamp at a flea market for five euros.", "このランプ、蚤の市で5ユーロで買ったんだ。"),
+                    ("There's a great flea market by the river on Sundays.", "日曜は川沿いでいい蚤の市があるよ。")
+                 ], ipa: "/ə ˈfliː ˌmɑːkɪt/"),
+            make("the fine print", "the details of a contract or offer, often in small letters, that people may miss",
+                 "細かい条件・注意書き",
+                 useCases: ["契約や申し込みの前に注意を促すとき", "思わぬ条件があったとき"],
+                 examples: [
+                    ("Always read the fine print before you sign anything.", "何かにサインする前は必ず細かい条件を読んでね。"),
+                    ("It sounded like a great deal until I read the fine print.", "細かい条件を読むまでは、すごくお得に思えたんだけど。")
+                 ], ipa: "/ðə ˈfaɪn ˌprɪnt/"),
+            make("a weekend break", "a short holiday over a weekend, often in a city",
+                 "週末旅行・週末の小旅行",
+                 useCases: ["週末の旅行計画を話すとき", "旅行の感想を話すとき"],
+                 examples: [
+                    ("We're off to Lisbon for a weekend break.", "週末にリスボンへ小旅行に行くんだ。"),
+                    ("A weekend break is just what I need right now.", "今まさに週末旅行が必要なんだよね。")
+                 ], ipa: "/ə ˌwiːkˈend ˌbreɪk/"),
         ]
     }
 
