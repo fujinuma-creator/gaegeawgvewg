@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial318: [Word] {
+        [
+            make("a pub crawl", "a night out where you visit several pubs one after another, having a drink in each",
+                 "はしご酒",
+                 useCases: ["友人と飲みに行く計画を立てるとき", "誕生日や送別会の夜の過ごし方を話すとき"],
+                 examples: [
+                    ("We're doing a pub crawl round Camden for Dave's birthday.", "デイブの誕生日にカムデンではしご酒するんだ。"),
+                    ("I'm too old for pub crawls these days.", "最近はもうはしご酒する歳じゃないよ。")
+                 ], ipa: "/ə ˈpʌb ˌkrɔːl/"),
+            make("a backseat driver", "a passenger who keeps telling the driver what to do",
+                 "運転に口うるさい同乗者・横から口を出す人",
+                 useCases: ["運転中に口出しされたとき", "他人の仕事に口を挟む人を冗談で言うとき"],
+                 examples: [
+                    ("Stop being such a backseat driver — I know where I'm going!", "いちいち口出ししないで、道は分かってるから！"),
+                    ("My mum's a terrible backseat driver.", "うちの母さん、助手席からの口出しがひどいんだ。")
+                 ], ipa: "/ə ˌbæksiːt ˈdraɪvə/"),
+            make("beauty sleep", "enough sleep to keep you looking and feeling good (often said jokingly)",
+                 "美容のための睡眠・たっぷりの睡眠",
+                 useCases: ["早めに寝ると言うとき", "睡眠不足を冗談っぽく話すとき"],
+                 examples: [
+                    ("I'm off to bed — I need my beauty sleep.", "もう寝るね。美容のための睡眠が必要だから。"),
+                    ("Don't call before ten, I'll be getting my beauty sleep.", "10時前に電話しないでね、ぐっすり寝てるから。")
+                 ], ipa: "/ˈbjuːti ˌsliːp/"),
+            make("a cheat day", "a day when you allow yourself to eat whatever you like while on a diet",
+                 "チートデイ（ダイエット中に好きなものを食べる日）",
+                 useCases: ["ダイエット中にご褒美を食べるとき", "食事制限の話をするとき"],
+                 examples: [
+                    ("Pizza tonight? Go on then, it's my cheat day.", "今夜ピザ？いいよ、今日はチートデイだから。"),
+                    ("Every day seems to be a cheat day for me lately.", "最近は毎日がチートデイになってる気がする。")
+                 ], ipa: "/ə ˈtʃiːt ˌdeɪ/"),
+            make("breathing space", "a short time to rest, think or recover before continuing",
+                 "一息つく時間・ゆとり",
+                 useCases: ["忙しさから少し解放されたいとき", "考える時間が欲しいとき"],
+                 examples: [
+                    ("The deadline's been pushed back, so that gives us a bit of breathing space.", "締め切りが延びたから、少し一息つけるね。"),
+                    ("I just need some breathing space to think it over.", "ちょっと考える時間が欲しいだけなんだ。")
+                 ], ipa: "/ˈbriːðɪŋ ˌspeɪs/"),
+            make("a tip-off", "a piece of secret or useful information given to someone in advance",
+                 "（事前の）情報提供・耳打ち",
+                 useCases: ["こっそり情報を教えてもらったとき", "警察への通報について話すとき"],
+                 examples: [
+                    ("Thanks for the tip-off about the sale — I got a great deal.", "セールのこと教えてくれてありがとう、すごくお得に買えたよ。"),
+                    ("The police acted on an anonymous tip-off.", "警察は匿名の通報をもとに動いた。")
+                 ], ipa: "/ə ˈtɪp ɒf/"),
+            make("a rundown", "a quick summary of the main facts or points",
+                 "概要・ざっとした説明",
+                 useCases: ["会議や出来事の要点を聞くとき", "状況をざっと説明するとき"],
+                 examples: [
+                    ("Can you give me a quick rundown of what I missed?", "私がいない間に何があったか、ざっと教えてくれる？"),
+                    ("Here's a rundown of the plan for tomorrow.", "明日の予定をざっと説明するね。")
+                 ], ipa: "/ə ˈrʌndaʊn/"),
+            make("a turnout", "the number of people who come to an event",
+                 "（イベントの）参加者数・人の集まり",
+                 useCases: ["パーティーやイベントの盛況ぶりを話すとき", "選挙の投票率について話すとき"],
+                 examples: [
+                    ("What a great turnout — thanks for coming, everyone!", "こんなにたくさん来てくれてありがとう、みんな！"),
+                    ("The turnout was pretty poor because of the rain.", "雨のせいで人の集まりはいまいちだった。")
+                 ], ipa: "/ə ˈtɜːnaʊt/"),
+            make("fairy lights", "small decorative electric lights on a string, used at Christmas or for decoration",
+                 "（飾り用の）豆電球・イルミネーションライト",
+                 useCases: ["クリスマスの飾り付けをするとき", "部屋のインテリアについて話すとき"],
+                 examples: [
+                    ("Let's put the fairy lights up on the tree tonight.", "今夜ツリーにライトを飾ろうよ。"),
+                    ("She's got fairy lights all round her bedroom window.", "彼女の寝室の窓のまわりには飾りライトがぐるっと付いてる。")
+                 ], ipa: "/ˈfeəri ˌlaɪts/"),
+            make("mate's rates", "a cheap price that you charge a friend for goods or work",
+                 "友達価格・身内割引",
+                 useCases: ["友人に安く仕事を頼むとき", "知り合い割引について話すとき"],
+                 examples: [
+                    ("My cousin's a plumber, so he did it at mate's rates.", "いとこが配管工だから、友達価格でやってくれたんだ。"),
+                    ("Any chance of mate's rates?", "友達価格でお願いできない？")
+                 ], ipa: "/ˌmeɪts ˈreɪts/"),
+            make("a goodie bag", "a small bag of free gifts or sweets given out at a party or event",
+                 "（パーティーやイベントの）お土産袋・おまけの袋",
+                 useCases: ["子どもの誕生日会の準備をするとき", "イベントでもらった景品の話をするとき"],
+                 examples: [
+                    ("Every kid gets a goodie bag at the end of the party.", "パーティーの最後に子どもたち全員にお土産袋を渡すよ。"),
+                    ("The goodie bag at the conference was actually pretty good.", "カンファレンスでもらったおまけの袋、結構良かったよ。")
+                 ], ipa: "/ə ˈɡʊdi ˌbæɡ/"),
+            make("a dead giveaway", "something that makes the truth very obvious",
+                 "見え見えの証拠・バレバレの手がかり",
+                 useCases: ["隠し事がバレたとき", "誰かの本心が明らかなとき"],
+                 examples: [
+                    ("You said you didn't eat the cake, but the crumbs are a dead giveaway.", "ケーキ食べてないって言うけど、食べかすでバレバレだよ。"),
+                    ("His accent was a dead giveaway that he was from Liverpool.", "訛りで彼がリバプール出身なのは一目瞭然だった。")
+                 ], ipa: "/ə ˌded ˈɡɪvəweɪ/"),
+            make("a fire drill", "a practice of what to do and where to go if there is a fire",
+                 "避難訓練・火災訓練",
+                 useCases: ["職場や学校の避難訓練について話すとき", "急に警報が鳴ったとき"],
+                 examples: [
+                    ("Don't panic — it's just a fire drill.", "慌てないで、ただの避難訓練だから。"),
+                    ("We had a fire drill in the middle of my meeting.", "会議の真っ最中に避難訓練があったんだ。")
+                 ], ipa: "/ə ˈfaɪə ˌdrɪl/"),
+            make("a wish list", "a list of things you would like to have or do",
+                 "欲しい物リスト・やりたいことリスト",
+                 useCases: ["誕生日やクリスマスのプレゼントを考えるとき", "将来の目標を話すとき"],
+                 examples: [
+                    ("Send me your Christmas wish list so I know what to get you.", "何をあげればいいか分かるように、クリスマスの欲しい物リスト送って。"),
+                    ("Japan's been at the top of my wish list for years.", "日本は何年も行きたい場所リストの一番上なんだ。")
+                 ], ipa: "/ə ˈwɪʃ ˌlɪst/"),
+            make("a shortlist", "a small group chosen from a larger number, from which the final choice will be made",
+                 "最終候補（リスト）",
+                 useCases: ["就職や賞の選考について話すとき", "候補を絞り込むとき"],
+                 examples: [
+                    ("I've made the shortlist for the job — fingers crossed!", "その仕事の最終候補に残ったよ、祈ってて！"),
+                    ("We've got a shortlist of three flats to look at.", "見に行くフラットを3つに絞ったんだ。")
+                 ], ipa: "/ə ˈʃɔːtlɪst/"),
         ]
     }
 
