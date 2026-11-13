@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331
         ]
         return groups.flatMap { $0 }
     }
@@ -47908,6 +47908,116 @@ enum SeedData {
                     ("Can I borrow your stapler for a sec?", "ちょっとホッチキス借りてもいい？"),
                     ("The stapler's jammed again — has anyone got another one?", "ホッチキスがまた詰まった。誰か他の持ってない？")
                  ], ipa: "/ə ˈsteɪplə/"),
+        ]
+    }
+
+    private static var britishColloquial331: [Word] {
+        [
+            make("a rubber band", "a thin loop of rubber used for holding things together",
+                 "輪ゴム",
+                 useCases: ["物をまとめるとき", "髪を結ぶものがないとき"],
+                 examples: [
+                    ("Have you got a rubber band? I need to tie my hair back.", "輪ゴムある？髪を結びたいの。"),
+                    ("Just put a rubber band round the bag of crisps to keep them fresh.", "ポテチの袋は輪ゴムで留めておけば湿気らないよ。")
+                 ], ipa: "/ə ˌrʌbə ˈbænd/"),
+            make("an iron", "an electrical device with a flat metal base, heated and used to press clothes",
+                 "アイロン",
+                 useCases: ["服のしわを伸ばすとき", "家を出た後に心配になったとき"],
+                 examples: [
+                    ("Did I leave the iron on? I can't remember turning it off.", "アイロンつけっぱなしにしたかな？消した記憶がない。"),
+                    ("Can I borrow your iron? My shirt's all creased.", "アイロン借りていい？シャツがしわくちゃなんだ。")
+                 ], ipa: "/ən ˈaɪən/"),
+            make("a jar", "a glass container with a wide opening and a lid, used for storing food",
+                 "瓶（ジャム瓶など）",
+                 useCases: ["蓋が開かないとき", "食品の保存について話すとき"],
+                 examples: [
+                    ("Can you open this jar for me? The lid's stuck.", "この瓶開けてくれる？蓋が固くて。"),
+                    ("I keep all my spare change in an old jam jar.", "小銭は全部古いジャム瓶に貯めてるんだ。")
+                 ], ipa: "/ə ˈdʒɑː/"),
+            make("a bench", "a long seat for two or more people, often outdoors in a park",
+                 "ベンチ",
+                 useCases: ["公園で休むとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("Let's sit on that bench for a bit — my feet are killing me.", "あのベンチでちょっと休もう。足が痛くて。"),
+                    ("I'll meet you by the bench next to the pond.", "池の横のベンチのところで会おう。")
+                 ], ipa: "/ə ˈbentʃ/"),
+            make("a picnic", "a meal eaten outdoors, with food you have brought with you",
+                 "ピクニック",
+                 useCases: ["天気の良い日の予定を立てるとき", "週末の過ごし方を話すとき"],
+                 examples: [
+                    ("If it's sunny on Saturday, shall we have a picnic in the park?", "土曜晴れたら、公園でピクニックしない？"),
+                    ("I'll bring sandwiches and you bring the picnic blanket.", "私がサンドイッチ持ってくから、レジャーシートお願い。")
+                 ], ipa: "/ə ˈpɪknɪk/"),
+            make("a rainbow", "an arch of colours in the sky, caused by sunlight shining through rain",
+                 "虹",
+                 useCases: ["雨上がりの空について話すとき", "写真を撮るとき"],
+                 examples: [
+                    ("Look out the window — there's a massive rainbow!", "窓の外見て！でっかい虹が出てるよ！"),
+                    ("I managed to get a photo of a double rainbow this morning.", "今朝、二重の虹の写真が撮れたんだ。")
+                 ], ipa: "/ə ˈreɪnbəʊ/"),
+            make("a speed bump", "a raised strip across a road that forces drivers to slow down",
+                 "スピードバンプ（減速帯）",
+                 useCases: ["運転するとき", "住宅街の道路について話すとき"],
+                 examples: [
+                    ("Slow down, there's a speed bump coming up.", "スピード落として、この先に減速帯があるよ。"),
+                    ("They've put speed bumps all along our road.", "うちの前の道、ずっと減速帯がつけられたんだ。")
+                 ], ipa: "/ə ˈspiːd bʌmp/"),
+            make("a mosquito bite", "an itchy red spot on your skin where a mosquito has bitten you",
+                 "蚊に刺された跡",
+                 useCases: ["かゆみについて話すとき", "夏や旅行の話をするとき"],
+                 examples: [
+                    ("I'm covered in mosquito bites from last night.", "昨日の夜、蚊にあちこち刺されちゃった。"),
+                    ("Try not to scratch that mosquito bite or it'll get worse.", "蚊に刺されたところ掻かないで、悪化するよ。")
+                 ], ipa: "/ə məˈskiːtəʊ baɪt/"),
+            make("a frost", "a thin white layer of ice that forms on surfaces when it is very cold",
+                 "霜",
+                 useCases: ["寒い朝の天気について話すとき", "車のフロントガラスについて話すとき"],
+                 examples: [
+                    ("There was a hard frost last night — the car's completely white.", "昨夜はひどい霜で、車が真っ白だよ。"),
+                    ("They're forecasting a frost, so bring the plants inside.", "霜の予報だから、植物を中に入れておいて。")
+                 ], ipa: "/ə ˈfrɒst/"),
+            make("a deckchair", "a folding chair made of wood and cloth, used on the beach or in the garden",
+                 "デッキチェア",
+                 useCases: ["ビーチや庭でくつろぐとき", "夏の過ごし方を話すとき"],
+                 examples: [
+                    ("All I want is a deckchair and a good book.", "デッキチェアと面白い本さえあれば十分だよ。"),
+                    ("Let's hire a couple of deckchairs on the beach.", "ビーチでデッキチェアを2つ借りよう。")
+                 ], ipa: "/ə ˈdektʃeə/"),
+            make("a scratch", "a small cut on the skin, or a thin mark on a surface",
+                 "かすり傷・ひっかき傷",
+                 useCases: ["怪我を心配されたとき", "車や家具の傷について話すとき"],
+                 examples: [
+                    ("Don't worry, it's only a scratch.", "心配しないで、ただのかすり傷だよ。"),
+                    ("Someone's left a scratch down the side of my car.", "誰かに車の横に傷をつけられたんだ。")
+                 ], ipa: "/ə ˈskrætʃ/"),
+            make("a sticker", "a small piece of paper or plastic with a picture or writing on it, that sticks to things",
+                 "シール・ステッカー",
+                 useCases: ["子どもとの会話で", "値札やラベルについて話すとき"],
+                 examples: [
+                    ("The kids have put stickers all over the fridge.", "子どもたちが冷蔵庫中にシール貼っちゃった。"),
+                    ("Can you peel the price sticker off before I wrap it?", "包む前に値札シール剥がしてくれる？")
+                 ], ipa: "/ə ˈstɪkə/"),
+            make("a postcard", "a card for sending a message by post, often with a picture of a place on one side",
+                 "絵はがき・ポストカード",
+                 useCases: ["旅行先から連絡するとき", "お土産について話すとき"],
+                 examples: [
+                    ("I'll send you a postcard from Rome.", "ローマから絵はがき送るね。"),
+                    ("Thanks for the postcard — it's on the fridge now.", "絵はがきありがとう。今冷蔵庫に貼ってあるよ。")
+                 ], ipa: "/ə ˈpəʊstkɑːd/"),
+            make("a balloon", "a small rubber bag that you fill with air or gas, used as a decoration",
+                 "風船",
+                 useCases: ["パーティーの準備をするとき", "子どもと出かけるとき"],
+                 examples: [
+                    ("Can you help me blow up the balloons for the party?", "パーティー用の風船膨らますの手伝ってくれる？"),
+                    ("She burst into tears when her balloon floated away.", "風船が飛んでいっちゃって、あの子泣き出しちゃった。")
+                 ], ipa: "/ə bəˈluːn/"),
+            make("a jigsaw", "a picture cut into small pieces that you fit together; a jigsaw puzzle",
+                 "ジグソーパズル",
+                 useCases: ["家で過ごす趣味について話すとき", "家族で遊ぶとき"],
+                 examples: [
+                    ("We spent the whole weekend doing a thousand-piece jigsaw.", "週末ずっと1000ピースのジグソーパズルやってたよ。"),
+                    ("Don't tell me there's a piece missing from the jigsaw!", "まさかパズルのピースが1つ足りないとか言わないでね！")
+                 ], ipa: "/ə ˈdʒɪɡsɔː/"),
         ]
     }
 
