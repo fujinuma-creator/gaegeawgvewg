@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328
         ]
         return groups.flatMap { $0 }
     }
@@ -47688,6 +47688,116 @@ enum SeedData {
                     ("Bring a padlock if you want to use the lockers at the gym.", "ジムのロッカー使うなら南京錠持ってきて。"),
                     ("I've put a little padlock on my suitcase, just in case.", "念のためスーツケースに小さい南京錠つけたよ。")
                  ], ipa: "/ə ˈpædlɒk/"),
+        ]
+    }
+
+    private static var britishColloquial328: [Word] {
+        [
+            make("a tap", "a device that controls the flow of water from a pipe, e.g. above a sink (US: faucet)",
+                 "蛇口",
+                 useCases: ["水回りのトラブルを伝えるとき", "台所や洗面所で"],
+                 examples: [
+                    ("Could you turn the tap off? It's still dripping.", "蛇口閉めてくれる？まだポタポタ垂れてるよ。"),
+                    ("The hot tap in the bathroom isn't working again.", "お風呂場のお湯の蛇口、また出なくなってる。")
+                 ], ipa: "/ə ˈtæp/"),
+            make("a lid", "a cover on top of a container such as a pot, jar or box, which can be removed",
+                 "ふた",
+                 useCases: ["料理をするとき", "容器を閉めるとき"],
+                 examples: [
+                    ("Put the lid on the pan so it boils quicker.", "早く沸くように鍋にふたしておいて。"),
+                    ("I can't get the lid off this jar — can you have a go?", "この瓶のふたが開かないんだ。やってみてくれる？")
+                 ], ipa: "/ə ˈlɪd/"),
+            make("a sponge", "a soft object full of small holes, used for washing dishes or cleaning",
+                 "スポンジ",
+                 useCases: ["皿洗いをするとき", "掃除をするとき"],
+                 examples: [
+                    ("Use the green side of the sponge for the burnt bits.", "焦げたところはスポンジの緑の面を使って。"),
+                    ("This sponge is falling apart — we need a new one.", "このスポンジ、ボロボロだね。新しいの要るわ。")
+                 ], ipa: "/ə ˈspʌndʒ/"),
+            make("toothpaste", "a paste that you put on a toothbrush to clean your teeth",
+                 "歯磨き粉",
+                 useCases: ["旅行の持ち物を確認するとき", "買い物リストを作るとき"],
+                 examples: [
+                    ("I forgot to pack toothpaste — can I borrow yours?", "歯磨き粉入れ忘れちゃった。借りてもいい？"),
+                    ("We're nearly out of toothpaste, so add it to the list.", "歯磨き粉もうすぐなくなるから、リストに入れておいて。")
+                 ], ipa: "/ˈtuːθpeɪst/"),
+            make("a screwdriver", "a tool used for turning screws",
+                 "ドライバー（ねじ回し）",
+                 useCases: ["家具を組み立てるとき", "ちょっとした修理をするとき"],
+                 examples: [
+                    ("Have you got a screwdriver? This handle's come loose.", "ドライバーある？この取っ手が緩んじゃって。"),
+                    ("You'll need a small screwdriver to open the battery cover.", "電池のふたを開けるには小さいドライバーが要るよ。")
+                 ], ipa: "/ə ˈskruːˌdraɪvə/"),
+            make("a bucket", "an open container with a handle, used for carrying water or other things",
+                 "バケツ",
+                 useCases: ["掃除や洗車をするとき", "雨漏りなどに対処するとき"],
+                 examples: [
+                    ("Grab a bucket of warm water and we'll wash the car.", "ぬるま湯をバケツに汲んできて。車洗おう。"),
+                    ("The roof's leaking, so I've put a bucket under it.", "屋根が雨漏りしてるから、下にバケツ置いといた。")
+                 ], ipa: "/ə ˈbʌkɪt/"),
+            make("a mop", "a long stick with a soft head on the end, used for washing floors",
+                 "モップ",
+                 useCases: ["床をこぼした水などを拭くとき", "掃除の分担をするとき"],
+                 examples: [
+                    ("Careful, I've just been round with the mop — the floor's still wet.", "気をつけて、今モップかけたばかりで床がまだ濡れてるの。"),
+                    ("Where do you keep the mop? I've spilt juice everywhere.", "モップどこにある？ジュースこぼしちゃった。")
+                 ], ipa: "/ə ˈmɒp/"),
+            make("a smoke alarm", "a device on the ceiling that makes a loud noise when it detects smoke",
+                 "火災報知器・煙探知機",
+                 useCases: ["料理で煙が出たとき", "家の安全について話すとき"],
+                 examples: [
+                    ("Open a window — the toast has set the smoke alarm off again.", "窓開けて。トーストでまた火災報知器が鳴っちゃった。"),
+                    ("The smoke alarm keeps beeping, so I think the battery's going.", "火災報知器がピーピー鳴り続けてる。電池が切れかけてるんだと思う。")
+                 ], ipa: "/ə ˈsməʊk əˌlɑːm/"),
+            make("a wheelie bin", "a large rubbish bin with wheels that you leave outside for collection",
+                 "（車輪付きの）大型ゴミ箱",
+                 useCases: ["ゴミの日について話すとき", "近所の人と話すとき"],
+                 examples: [
+                    ("It's bin day tomorrow — can you put the wheelie bin out tonight?", "明日ゴミの日だから、今夜ゴミ箱を外に出しておいてくれる？"),
+                    ("The recycling goes in the blue wheelie bin.", "リサイクルは青いゴミ箱に入れてね。")
+                 ], ipa: "/ə ˈwiːli ˌbɪn/"),
+            make("a tape measure", "a long strip of material or metal marked in centimetres or inches, used for measuring",
+                 "メジャー・巻き尺",
+                 useCases: ["家具のサイズを測るとき", "引っ越しや模様替えのとき"],
+                 examples: [
+                    ("Pass me the tape measure — I want to see if the sofa will fit.", "メジャー取って。ソファが入るか確かめたいの。"),
+                    ("Have you got a tape measure? I need the width of the window.", "メジャーある？窓の幅を測りたいんだ。")
+                 ], ipa: "/ə ˈteɪp ˌmeʒə/"),
+            make("nail clippers", "a small tool used for cutting your fingernails or toenails",
+                 "爪切り",
+                 useCases: ["身だしなみについて話すとき", "物の貸し借りをするとき"],
+                 examples: [
+                    ("Have you seen the nail clippers? They're not in the drawer.", "爪切り見なかった？引き出しにないんだけど。"),
+                    ("You can't take nail clippers with a blade in your hand luggage on some flights.", "便によっては刃付きの爪切りを機内持ち込みできないよ。")
+                 ], ipa: "/ˈneɪl ˌklɪpəz/"),
+            make("a sieve", "a kitchen tool with a fine net, used for separating liquid from solid food or for removing lumps",
+                 "ざる・こし器",
+                 useCases: ["パスタの湯を切るとき", "お菓子作りで粉をふるうとき"],
+                 examples: [
+                    ("Drain the rice through a sieve and give it a rinse.", "お米をざるにあけて、さっとすすいで。"),
+                    ("Put the flour through a sieve so there aren't any lumps.", "ダマにならないように小麦粉をふるいにかけて。")
+                 ], ipa: "/ə ˈsɪv/"),
+            make("a comb", "a flat piece of plastic or metal with a row of thin teeth, used for tidying your hair",
+                 "くし",
+                 useCases: ["身支度をするとき", "持ち物を借りるとき"],
+                 examples: [
+                    ("Have you got a comb? My hair's a complete mess from the wind.", "くし持ってる？風で髪がぐちゃぐちゃなんだ。"),
+                    ("Run a comb through your hair before the photo.", "写真の前にちょっと髪をとかしなよ。")
+                 ], ipa: "/ə ˈkəʊm/"),
+            make("a raincoat", "a light coat that keeps you dry in the rain",
+                 "レインコート",
+                 useCases: ["天気に合わせて服装を決めるとき", "旅行の準備をするとき"],
+                 examples: [
+                    ("Take a raincoat — it's meant to chuck it down this afternoon.", "レインコート持って行きな。午後は土砂降りらしいよ。"),
+                    ("A light raincoat is a must if you're going to Scotland.", "スコットランドに行くなら軽いレインコートは必須だよ。")
+                 ], ipa: "/ə ˈreɪnkəʊt/"),
+            make("a pair of scissors", "a cutting tool with two sharp blades joined in the middle",
+                 "はさみ（1本）",
+                 useCases: ["物を借りるとき", "工作や包装をするとき"],
+                 examples: [
+                    ("Have you got a pair of scissors I could borrow?", "はさみ貸してもらえる？"),
+                    ("I need a pair of scissors to get this packaging open.", "この包装開けるのにはさみが要るな。")
+                 ], ipa: "/ə ˌpeər əv ˈsɪzəz/"),
         ]
     }
 
