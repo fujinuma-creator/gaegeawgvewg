@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324
         ]
         return groups.flatMap { $0 }
     }
@@ -47578,6 +47578,116 @@ enum SeedData {
                     ("They asked for my ID card at the door, even though I'm forty.", "40歳なのに入口で身分証を見せてって言われたよ。"),
                     ("Don't forget your ID card — you'll need it to check in.", "身分証忘れないでね。チェックインで必要だから。")
                  ], ipa: "/ən ˌaɪ ˈdiː ˌkɑːd/"),
+        ]
+    }
+
+    private static var britishColloquial324: [Word] {
+        [
+            make("a sofa bed", "a sofa that can be pulled out and turned into a bed, often used for guests",
+                 "ソファーベッド",
+                 useCases: ["泊まりに来る友人の寝る場所を話すとき", "家具選びや狭い部屋の工夫を話すとき"],
+                 examples: [
+                    ("You're welcome to stay — we've got a sofa bed in the living room.", "泊まっていきなよ。リビングにソファーベッドがあるから。"),
+                    ("The sofa bed isn't the comfiest, but it'll do for one night.", "ソファーベッドはあまり寝心地良くないけど、一晩なら大丈夫だよ。")
+                 ], ipa: "/ə ˈsəʊfə ˌbed/"),
+            make("bin day", "the day of the week when the rubbish bins are collected from outside your house",
+                 "ゴミの収集日",
+                 useCases: ["家事やゴミ出しを思い出させるとき", "近所の生活リズムについて話すとき"],
+                 examples: [
+                    ("Don't forget it's bin day tomorrow — can you put the bins out?", "明日ゴミの日だって忘れないでね。ゴミ箱出しておいてくれる？"),
+                    ("I always miss bin day when there's a bank holiday.", "祝日があると、いつもゴミの日を逃しちゃうんだよね。")
+                 ], ipa: "/ˈbɪn ˌdeɪ/"),
+            make("a fire alarm", "a device that makes a loud noise to warn people of a fire; also a fire drill or the noise itself",
+                 "火災報知器・火災警報",
+                 useCases: ["料理で煙を出したとき", "職場やホテルでの避難訓練について話すとき"],
+                 examples: [
+                    ("I burnt the toast and set off the fire alarm again.", "またトースト焦がして火災報知器を鳴らしちゃった。"),
+                    ("The fire alarm went off at 3 a.m. and we all had to go outside.", "夜中の3時に火災警報が鳴って、みんな外に出なきゃいけなかったんだ。")
+                 ], ipa: "/ə ˈfaɪər əˌlɑːm/"),
+            make("a teabag", "a small paper bag containing tea leaves that you put in hot water",
+                 "ティーバッグ",
+                 useCases: ["お茶を入れるとき", "紅茶の好みや淹れ方を話すとき"],
+                 examples: [
+                    ("Just leave the teabag in a bit longer — I like it strong.", "ティーバッグもう少し入れたままにしておいて。濃いのが好きなんだ。"),
+                    ("We've run out of teabags. Can you grab some on your way home?", "ティーバッグ切れちゃった。帰りに買ってきてくれる？")
+                 ], ipa: "/ə ˈtiːbæɡ/"),
+            make("a bank card", "a plastic card from your bank that you use to pay for things or take out cash",
+                 "キャッシュカード・デビットカード",
+                 useCases: ["支払い方法を聞かれたとき", "カードをなくしたときや止めるとき"],
+                 examples: [
+                    ("I think I've left my bank card in the cashpoint!", "ATMにキャッシュカード置き忘れたかも！"),
+                    ("Can I pay with my bank card, or is it cash only?", "カードで払えますか？それとも現金のみですか？")
+                 ], ipa: "/ə ˈbæŋk ˌkɑːd/"),
+            make("a toaster", "an electric machine for making bread brown and crispy",
+                 "トースター",
+                 useCases: ["朝食の準備について話すとき", "家電や引っ越しの準備について話すとき"],
+                 examples: [
+                    ("Pop a couple of slices in the toaster, would you?", "トースターにパン2枚入れてくれる？"),
+                    ("Our new toaster burns everything, even on the lowest setting.", "新しいトースター、一番弱くしても全部焦げるんだよね。")
+                 ], ipa: "/ə ˈtəʊstə/"),
+            make("a bunk bed", "two single beds built one on top of the other, often used by children or in hostels",
+                 "二段ベッド",
+                 useCases: ["子ども部屋や兄弟の話をするとき", "ホステルや合宿の部屋について話すとき"],
+                 examples: [
+                    ("My brother and I fought over the top bunk bed for years.", "兄弟と何年も二段ベッドの上を取り合ってたよ。"),
+                    ("The hostel room had six bunk beds and one tiny window.", "ホステルの部屋は二段ベッドが6つに小さな窓が1つだけだった。")
+                 ], ipa: "/ə ˈbʌŋk ˌbed/"),
+            make("a fizzy drink", "a sweet drink with bubbles in it, such as cola or lemonade (US: soda)",
+                 "炭酸飲料・ジュース",
+                 useCases: ["飲み物を注文するとき", "健康や子どもの食生活について話すとき"],
+                 examples: [
+                    ("I'm trying to cut down on fizzy drinks.", "炭酸飲料を減らそうとしてるんだ。"),
+                    ("Do you want a fizzy drink or just some water?", "炭酸のジュースにする？それとも水でいい？")
+                 ], ipa: "/ə ˈfɪzi ˌdrɪŋk/"),
+            make("a sticky note", "a small piece of coloured paper with glue on the back that you can stick on things to remind you",
+                 "付箋",
+                 useCases: ["職場でメモを残すとき", "忘れっぽさを冗談にするとき"],
+                 examples: [
+                    ("I left you a sticky note on your screen about the meeting.", "会議のこと、画面に付箋貼っておいたよ。"),
+                    ("My desk is covered in sticky notes I never read.", "机が読まない付箋だらけなんだ。")
+                 ], ipa: "/ə ˈstɪki ˌnəʊt/"),
+            make("a coffee machine", "a machine that makes coffee, at home or in an office",
+                 "コーヒーメーカー・コーヒーマシン",
+                 useCases: ["職場の休憩や雑談のとき", "家電の買い物について話すとき"],
+                 examples: [
+                    ("The coffee machine's broken again — it's going to be a long day.", "またコーヒーマシン壊れてる。長い一日になりそう。"),
+                    ("We got a proper coffee machine, so I don't go to cafés any more.", "ちゃんとしたコーヒーマシンを買ったから、もうカフェに行かなくなったよ。")
+                 ], ipa: "/ə ˈkɒfi məˌʃiːn/"),
+            make("a shed", "a small wooden building in a garden used for storing tools, bikes and other things",
+                 "物置・（庭の）小屋",
+                 useCases: ["庭や家の収納について話すとき", "物のありかを伝えるとき"],
+                 examples: [
+                    ("The bikes are in the shed — the key's on the hook by the door.", "自転車は物置にあるよ。鍵はドアの横のフックにかかってる。"),
+                    ("My dad spends every Sunday pottering about in his shed.", "父は毎週日曜、物置小屋でのんびり何かいじってるんだ。")
+                 ], ipa: "/ə ˈʃed/"),
+            make("a doormat", "a mat by the door for wiping your feet; also a person who lets others treat them badly",
+                 "玄関マット・（比喩）言いなりになる人",
+                 useCases: ["玄関で靴の汚れを落としてもらうとき", "人に利用されている人について話すとき"],
+                 examples: [
+                    ("The spare key's under the doormat.", "スペアキーは玄関マットの下にあるよ。"),
+                    ("Stop letting him treat you like a doormat.", "あの人に言いなりにされるのはもうやめなよ。")
+                 ], ipa: "/ə ˈdɔːmæt/"),
+            make("the hairdresser's", "the shop where you go to have your hair cut or styled",
+                 "美容院・ヘアサロン",
+                 useCases: ["髪を切る予定を話すとき", "髪型の変化について話すとき"],
+                 examples: [
+                    ("I've got an appointment at the hairdresser's on Friday.", "金曜に美容院の予約があるんだ。"),
+                    ("Have you been to the hairdresser's? It looks lovely.", "美容院行った？すごく素敵だね。")
+                 ], ipa: "/ðə ˈheədresəz/"),
+            make("a tracksuit", "a loose, comfortable top and trousers worn for sport or relaxing at home",
+                 "ジャージ（上下）・スウェットの上下",
+                 useCases: ["部屋着や休日の格好について話すとき", "運動するときの服装を話すとき"],
+                 examples: [
+                    ("I spent the whole weekend in my tracksuit watching films.", "週末ずっとジャージで映画見てたよ。"),
+                    ("You can't go to the restaurant in a tracksuit!", "ジャージでレストランは行けないよ！")
+                 ], ipa: "/ə ˈtræksuːt/"),
+            make("a balcony", "a small area outside an upstairs window or flat where you can sit or stand",
+                 "バルコニー・ベランダ",
+                 useCases: ["部屋探しや住まいについて話すとき", "外でくつろぐ予定を話すとき"],
+                 examples: [
+                    ("The flat's small, but it's got a lovely balcony with a view.", "部屋は狭いけど、眺めのいい素敵なバルコニーがあるんだ。"),
+                    ("Let's have our coffee out on the balcony — it's a gorgeous day.", "バルコニーでコーヒー飲もうよ。すごくいい天気だし。")
+                 ], ipa: "/ə ˈbælkəni/"),
         ]
     }
 
