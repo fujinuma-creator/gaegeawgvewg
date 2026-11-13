@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321
         ]
         return groups.flatMap { $0 }
     }
@@ -47468,6 +47468,116 @@ enum SeedData {
                     ("Let's try to find a middle ground we're both happy with.", "お互い納得できる妥協点を探そうよ。"),
                     ("There's no middle ground with him — it's all or nothing.", "彼には中間がないんだ、いつも全部か無しかさ。")
                  ], ipa: "/ə ˌmɪdl ˈɡraʊnd/"),
+        ]
+    }
+
+    private static var britishColloquial321: [Word] {
+        [
+            make("a love-hate relationship", "feelings towards someone or something that are both positive and negative at the same time",
+                 "好きでもあり嫌いでもある関係・愛憎関係",
+                 useCases: ["好きだけど苛立つものについて話すとき", "複雑な気持ちを冗談っぽく表すとき"],
+                 examples: [
+                    ("I've got a love-hate relationship with running — I hate it during, love it after.", "ランニングとは愛憎関係なんだ。走ってる間は嫌いだけど、終わると大好き。"),
+                    ("She has a love-hate relationship with her phone.", "彼女はスマホと好きでも嫌いでもある関係なんだよね。")
+                 ], ipa: "/ə ˌlʌv ˈheɪt rɪˈleɪʃnʃɪp/"),
+            make("home comforts", "the things that make life at home pleasant, like your own bed, good food and hot showers",
+                 "家の快適さ・家ならではのくつろぎ",
+                 useCases: ["旅行や出張から帰ってきたとき", "家が恋しいと話すとき"],
+                 examples: [
+                    ("After two weeks of camping, I really missed my home comforts.", "2週間キャンプしたら、家の快適さが本当に恋しくなったよ。"),
+                    ("The hotel had all the home comforts — even a proper kettle.", "そのホテル、家みたいに何でも揃ってたよ。ちゃんとした電気ケトルまで。")
+                 ], ipa: "/ˌhəʊm ˈkʌmfəts/"),
+            make("headspace", "the mental time and calm you need to think clearly or deal with something",
+                 "心の余裕・考える余裕",
+                 useCases: ["忙しくて考える余裕がないとき", "少し一人の時間が欲しいと伝えるとき"],
+                 examples: [
+                    ("I don't have the headspace to deal with that right now.", "今はそれに向き合う余裕がないんだ。"),
+                    ("A long walk usually gives me a bit of headspace.", "長めに散歩すると、たいてい頭がすっきりするんだ。")
+                 ], ipa: "/ˈhedspeɪs/"),
+            make("comfort eating", "eating, often unhealthy food, because you feel sad, stressed or bored",
+                 "ストレス食い・やけ食い",
+                 useCases: ["ストレスで食べ過ぎたことを話すとき", "落ち込んでいる友達を気遣うとき"],
+                 examples: [
+                    ("Exam season always leads to a lot of comfort eating.", "試験期間はいつもストレス食いが増えちゃうんだよね。"),
+                    ("I've been comfort eating all week — pass me the crisps.", "今週ずっとやけ食いしてるの。ポテチ取って。")
+                 ], ipa: "/ˈkʌmfət ˌiːtɪŋ/"),
+            make("a games night", "an evening when friends get together at home to play board games or card games",
+                 "ゲームナイト・ボードゲーム会",
+                 useCases: ["友達を家に誘うとき", "週末の予定を話すとき"],
+                 examples: [
+                    ("We're having a games night on Friday — fancy coming?", "金曜にゲームナイトやるんだけど、来ない？"),
+                    ("Our games nights always get way too competitive.", "うちのゲーム会はいつも本気になりすぎるんだよ。")
+                 ], ipa: "/ə ˈɡeɪmz ˌnaɪt/"),
+            make("a New Year's resolution", "a promise you make to yourself at the start of the year to do something better",
+                 "新年の抱負・新年の目標",
+                 useCases: ["年末年始に目標を話すとき", "目標が続かなかったことを笑い話にするとき"],
+                 examples: [
+                    ("My New Year's resolution is to cook more and order less takeaway.", "今年の抱負は、もっと料理して出前を減らすことなんだ。"),
+                    ("So how long did your New Year's resolution last?", "で、新年の目標どれくらい続いたの？")
+                 ], ipa: "/ə ˌnjuː ˈjɪəz ˌrezəˈluːʃn/"),
+            make("a package holiday", "a holiday where the flights, hotel and sometimes meals are all booked together for one price",
+                 "パック旅行・パッケージツアー",
+                 useCases: ["休暇の予定を話すとき", "旅行の予約方法を比べるとき"],
+                 examples: [
+                    ("We just booked a package holiday to Crete — everything's included.", "クレタ島へのパック旅行を予約したよ。全部込みなんだ。"),
+                    ("Package holidays are easier when you've got kids.", "子どもがいるとパック旅行の方が楽だよね。")
+                 ], ipa: "/ə ˈpækɪdʒ ˌhɒlədeɪ/"),
+            make("a special offer", "a product sold at a lower price than usual for a short time",
+                 "特売・特別価格",
+                 useCases: ["買い物でお得な商品を見つけたとき", "安く買えた理由を話すとき"],
+                 examples: [
+                    ("The coffee was on special offer, so I bought three bags.", "コーヒーが特売だったから3袋買っちゃった。"),
+                    ("Is this part of the special offer, or is it full price?", "これって特売の対象？それとも定価？")
+                 ], ipa: "/ə ˌspeʃl ˈɒfə/"),
+            make("a best-before date", "the date printed on food after which it may not be at its best quality",
+                 "賞味期限",
+                 useCases: ["食べ物が古くないか確認するとき", "食品ロスについて話すとき"],
+                 examples: [
+                    ("This yoghurt is two days past its best-before date — still fine, though.", "このヨーグルト賞味期限2日過ぎてるけど、まだ大丈夫だよ。"),
+                    ("Always check the best-before date before you buy it.", "買う前に必ず賞味期限を確認してね。")
+                 ], ipa: "/ə ˌbest bɪˈfɔː ˌdeɪt/"),
+            make("a power bank", "a small portable battery you use to charge your phone when you're out",
+                 "モバイルバッテリー",
+                 useCases: ["スマホの充電が切れそうなとき", "旅行の持ち物を確認するとき"],
+                 examples: [
+                    ("My phone's on 5% — has anyone got a power bank?", "スマホ残り5%なんだけど、誰かモバイルバッテリー持ってない？"),
+                    ("Don't forget to pack the power bank for the flight.", "フライト用にモバイルバッテリー入れるの忘れないでね。")
+                 ], ipa: "/ə ˈpaʊə ˌbæŋk/"),
+            make("a flask", "a container that keeps drinks hot or cold for hours",
+                 "水筒・魔法瓶",
+                 useCases: ["ハイキングや外出の準備をするとき", "温かい飲み物を持ち歩くとき"],
+                 examples: [
+                    ("I've brought a flask of tea for the walk.", "散歩用に紅茶を水筒に入れてきたよ。"),
+                    ("Can you fill my flask with hot water, please?", "水筒にお湯を入れてもらえますか？")
+                 ], ipa: "/ə ˈflɑːsk/"),
+            make("a cancellation", "when something that was planned, like a flight, booking or event, is called off",
+                 "キャンセル・中止",
+                 useCases: ["予約が取れるか確認するとき", "予定が中止になったことを伝えるとき"],
+                 examples: [
+                    ("The restaurant's fully booked, but they'll call us if there's a cancellation.", "レストランは満席だけど、キャンセルが出たら電話くれるって。"),
+                    ("There have been loads of cancellations because of the storm.", "嵐のせいで欠航がたくさん出てるんだ。")
+                 ], ipa: "/ə ˌkænsəˈleɪʃn/"),
+            make("sunny spells", "short periods of sunshine between clouds, often used in weather forecasts",
+                 "時々晴れ・晴れ間",
+                 useCases: ["天気予報について話すとき", "週末の天気を確認するとき"],
+                 examples: [
+                    ("The forecast says cloudy with sunny spells this afternoon.", "予報だと午後は曇り時々晴れだって。"),
+                    ("We had a few sunny spells, so we managed a picnic.", "ちょっと晴れ間があったから、ピクニックできたよ。")
+                 ], ipa: "/ˌsʌni ˈspelz/"),
+            make("an office party", "a party for the people who work together, especially at Christmas",
+                 "会社のパーティー・職場の忘年会",
+                 useCases: ["職場のイベントについて話すとき", "年末の予定を話すとき"],
+                 examples: [
+                    ("Are you going to the office party on Friday?", "金曜の会社のパーティー行く？"),
+                    ("He had a bit too much to drink at the office party.", "彼、会社のパーティーでちょっと飲みすぎちゃってさ。")
+                 ], ipa: "/ən ˈɒfɪs ˌpɑːti/"),
+            make("a shop assistant", "a person whose job is to serve customers in a shop",
+                 "店員・販売員",
+                 useCases: ["店で助けを求めるとき", "アルバイトや仕事について話すとき"],
+                 examples: [
+                    ("Ask the shop assistant if they've got it in a bigger size.", "店員さんに大きいサイズあるか聞いてみなよ。"),
+                    ("I worked as a shop assistant all through uni.", "大学時代はずっと店員のバイトしてたんだ。")
+                 ], ipa: "/ə ˈʃɒp əˌsɪstənt/"),
         ]
     }
 
