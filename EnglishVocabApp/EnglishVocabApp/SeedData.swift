@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319
         ]
         return groups.flatMap { $0 }
     }
@@ -47358,6 +47358,116 @@ enum SeedData {
                     ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
                     ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
                  ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial319: [Word] {
+        [
+            make("a dream job", "the job you would most love to have",
+                 "夢の仕事・理想の仕事",
+                 useCases: ["将来やりたい仕事について話すとき", "新しい仕事が最高だと伝えるとき"],
+                 examples: [
+                    ("Working with animals has always been my dream job.", "動物と働くのがずっと夢の仕事なんだ。"),
+                    ("She's landed her dream job in Barcelona.", "彼女、バルセロナで夢だった仕事に就いたんだよ。")
+                 ], ipa: "/ə ˌdriːm ˈdʒɒb/"),
+            make("a makeover", "a complete change in how someone or something looks, usually to improve it",
+                 "イメチェン・模様替え・改装",
+                 useCases: ["髪型や服装を大きく変えたとき", "部屋やお店を改装したとき"],
+                 examples: [
+                    ("Our kitchen is badly in need of a makeover.", "うちのキッチン、そろそろ本気で改装が必要だね。"),
+                    ("Have you had a makeover? You look fantastic!", "イメチェンした？すごく素敵だよ！")
+                 ], ipa: "/ə ˈmeɪkˌəʊvə/"),
+            make("a flashback", "a sudden, vivid memory of something from the past; a scene showing earlier events in a film or book",
+                 "フラッシュバック・ふと蘇る記憶・回想シーン",
+                 useCases: ["昔のことを急に思い出したとき", "映画やドラマの回想シーンについて話すとき"],
+                 examples: [
+                    ("Hearing that song gave me a flashback to my uni days.", "その曲を聞いたら大学時代を一気に思い出したよ。"),
+                    ("The film is told mostly in flashbacks.", "その映画はほとんど回想シーンで語られるんだ。")
+                 ], ipa: "/ə ˈflæʃbæk/"),
+            make("a plot twist", "a sudden, unexpected change in the story of a film, book or real-life situation",
+                 "どんでん返し・予想外の展開",
+                 useCases: ["映画やドラマの感想を話すとき", "現実で予想外の出来事が起きたとき（冗談で）"],
+                 examples: [
+                    ("I did not see that plot twist coming at all!", "あのどんでん返しは全然予想してなかった！"),
+                    ("Plot twist: the meeting's been cancelled after all.", "まさかの展開：結局会議は中止だって。")
+                 ], ipa: "/ə ˈplɒt ˌtwɪst/"),
+            make("a tearjerker", "a sad film, book or song that makes people cry",
+                 "泣ける映画・お涙ちょうだいもの",
+                 useCases: ["感動的な映画を勧めるとき", "映画を見て泣いたことを話すとき"],
+                 examples: [
+                    ("Bring tissues — it's a real tearjerker.", "ティッシュ持っていきなよ、本当に泣ける映画だから。"),
+                    ("I'm not in the mood for a tearjerker tonight.", "今夜は泣ける映画を見る気分じゃないな。")
+                 ], ipa: "/ə ˈtɪəˌdʒɜːkə/"),
+            make("a school night", "an evening before a day of school or work, when you shouldn't stay out late (often said jokingly by adults)",
+                 "（翌日が平日の）夜・明日も仕事がある夜",
+                 useCases: ["平日の夜に飲みに誘われて断るとき", "夜更かしを控える理由を言うとき"],
+                 examples: [
+                    ("Just one drink — it's a school night!", "一杯だけね、明日仕事だから！"),
+                    ("We stayed out till two on a school night. Never again.", "平日の夜に2時まで遊んじゃった。もう二度としない。")
+                 ], ipa: "/ə ˈskuːl ˌnaɪt/"),
+            make("a jack of all trades", "someone who can do many different kinds of work reasonably well",
+                 "何でも屋・器用な人",
+                 useCases: ["何でもこなせる人を褒めるとき", "自分のスキルについて謙遜して話すとき"],
+                 examples: [
+                    ("My dad's a real jack of all trades — he can fix anything.", "うちの父は本当に何でも屋で、何でも直せるんだ。"),
+                    ("In a small company you have to be a jack of all trades.", "小さい会社だと何でもこなさないといけないよ。")
+                 ], ipa: "/ə ˌdʒæk əv ɔːl ˈtreɪdz/"),
+            make("a keepsake", "a small object you keep to remind you of a person, place or event",
+                 "記念品・形見",
+                 useCases: ["思い出の品について話すとき", "旅行や結婚式のお土産・記念品を渡すとき"],
+                 examples: [
+                    ("I kept the ticket as a keepsake from our first date.", "初デートの記念にそのチケットを取ってあるんだ。"),
+                    ("This ring is a keepsake from my gran.", "この指輪はおばあちゃんの形見なんだ。")
+                 ], ipa: "/ə ˈkiːpseɪk/"),
+            make("a dry spell", "a period when something you want or need, such as work, rain or success, doesn't happen",
+                 "（仕事・運などの）低迷期・不調期・日照り続き",
+                 useCases: ["仕事や依頼が少ない時期について話すとき", "スポーツや恋愛でうまくいかない時期を話すとき"],
+                 examples: [
+                    ("Work's been a bit of a dry spell since the summer.", "夏からちょっと仕事が少ない時期が続いてるんだ。"),
+                    ("The team finally ended their dry spell with a big win.", "チームはついに大勝して不調期を抜け出した。")
+                 ], ipa: "/ə ˌdraɪ ˈspel/"),
+            make("a lifeline", "something or someone that gives you help or support when you badly need it",
+                 "命綱・頼みの綱・心の支え",
+                 useCases: ["困った時に助けてくれた人や物について話すとき", "大事な支えに感謝するとき"],
+                 examples: [
+                    ("My phone was a lifeline when I first moved abroad.", "海外に引っ越したばかりの頃、スマホが命綱だったよ。"),
+                    ("That loan was a real lifeline for the business.", "あの融資は会社にとって本当に頼みの綱だった。")
+                 ], ipa: "/ə ˈlaɪflaɪn/"),
+            make("the nuts and bolts", "the basic practical details of how something works or is done",
+                 "基本的な仕組み・実務的な細部",
+                 useCases: ["物事の具体的なやり方を説明するとき", "大まかな話から実務の話に移るとき"],
+                 examples: [
+                    ("Let's get down to the nuts and bolts of the plan.", "計画の具体的なところを詰めよう。"),
+                    ("She knows the nuts and bolts of running a café.", "彼女はカフェ経営の実務を熟知してるよ。")
+                 ], ipa: "/ðə ˌnʌts ən ˈbəʊlts/"),
+            make("an earworm", "a catchy song or tune that keeps playing in your head",
+                 "頭から離れない曲",
+                 useCases: ["曲が頭の中でずっと流れているとき", "キャッチーな曲について話すとき"],
+                 examples: [
+                    ("That jingle is such an earworm — I can't stop humming it.", "あのCMソング、頭から離れなくて、ずっと口ずさんじゃう。"),
+                    ("Thanks a lot, now I've got an earworm for the rest of the day.", "ありがとね、おかげで一日中あの曲が頭の中で流れてるよ。")
+                 ], ipa: "/ən ˈɪəwɜːm/"),
+            make("a duvet day", "a day off work taken because you feel tired or just want to stay at home and relax",
+                 "（疲れて）家でゴロゴロする日・ズル休み",
+                 useCases: ["家でのんびり過ごしたい日のことを話すとき", "疲れて休みを取りたいとき"],
+                 examples: [
+                    ("I'm having a duvet day — films, snacks and no plans.", "今日は家でゴロゴロする日。映画とお菓子で予定なし。"),
+                    ("After that week, I think we all deserve a duvet day.", "あんな一週間の後なら、みんなゴロゴロする日があってもいいよね。")
+                 ], ipa: "/ə ˈduːveɪ ˌdeɪ/"),
+            make("a money pit", "something, such as a house or car, that keeps costing you more and more money",
+                 "金食い虫",
+                 useCases: ["修理費がかさむ家や車について愚痴るとき", "お金ばかりかかる趣味や事業について話すとき"],
+                 examples: [
+                    ("That old car is turning into a real money pit.", "あの古い車、本当に金食い虫になってきたよ。"),
+                    ("We love the house, but it's a bit of a money pit.", "その家は気に入ってるけど、ちょっとお金がかかりすぎるんだ。")
+                 ], ipa: "/ə ˈmʌni ˌpɪt/"),
+            make("a sing-along", "an occasion when people sing songs together, often informally",
+                 "みんなで歌うこと・合唱",
+                 useCases: ["パーティーや車の中でみんなで歌うとき", "誰もが知っている曲について話すとき"],
+                 examples: [
+                    ("By midnight the party had turned into a big sing-along.", "夜12時にはパーティーがみんなでの大合唱になってた。"),
+                    ("It's the perfect song for a sing-along in the car.", "車の中でみんなで歌うのにぴったりの曲だよ。")
+                 ], ipa: "/ə ˈsɪŋ əˌlɒŋ/"),
         ]
     }
 
