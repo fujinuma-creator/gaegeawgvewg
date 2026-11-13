@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333
         ]
         return groups.flatMap { $0 }
     }
@@ -47908,6 +47908,116 @@ enum SeedData {
                     ("Can I borrow your stapler for a sec?", "ちょっとホッチキス借りてもいい？"),
                     ("The stapler's jammed again — has anyone got another one?", "ホッチキスがまた詰まった。誰か他の持ってない？")
                  ], ipa: "/ə ˈsteɪplə/"),
+        ]
+    }
+
+    private static var britishColloquial333: [Word] {
+        [
+            make("a cold sore", "a small painful spot on or near your lips, often when you are tired or run down",
+                 "口唇ヘルペス・唇のできもの",
+                 useCases: ["体調や疲れについて話すとき", "薬局で薬を探すとき"],
+                 examples: [
+                    ("I always get a cold sore when I'm stressed.", "ストレスがたまると決まって唇にできものができるんだよね。"),
+                    ("Have you got any cream for a cold sore?", "唇のできもの用のクリームって置いてますか？")
+                 ], ipa: "/ə ˈkəʊld sɔː/"),
+            make("a piggy bank", "a small container, often shaped like a pig, that children keep coins in",
+                 "貯金箱",
+                 useCases: ["子どものお小遣いの話をするとき", "節約について冗談っぽく話すとき"],
+                 examples: [
+                    ("My son emptied his piggy bank to buy me a birthday present.", "息子が貯金箱を空にして誕生日プレゼントを買ってくれたの。"),
+                    ("I'll have to raid my piggy bank to pay for this trip.", "この旅行代、へそくりに手をつけなきゃだな。")
+                 ], ipa: "/ə ˈpɪɡi bæŋk/"),
+            make("a bus shelter", "a small covered place at a bus stop where people wait",
+                 "バス停の屋根付き待合所",
+                 useCases: ["待ち合わせ場所を伝えるとき", "雨宿りの話をするとき"],
+                 examples: [
+                    ("I'll wait for you in the bus shelter — it's pouring down.", "土砂降りだから、バス停の屋根の下で待ってるね。"),
+                    ("Someone's smashed the glass in the bus shelter again.", "また誰かがバス停の待合所のガラス割ってるよ。")
+                 ], ipa: "/ə ˈbʌs ʃeltə/"),
+            make("a number plate", "the metal sign on the front and back of a car that shows its registration number",
+                 "ナンバープレート",
+                 useCases: ["車について話すとき", "事故や駐車違反を説明するとき"],
+                 examples: [
+                    ("Did you get the number plate of the car that hit you?", "ぶつけてきた車のナンバー控えた？"),
+                    ("You can tell how old a car is from its number plate.", "ナンバープレートで車の年式がわかるんだよ。")
+                 ], ipa: "/ə ˈnʌmbə pleɪt/"),
+            make("the windscreen", "the large glass window at the front of a car",
+                 "（車の）フロントガラス",
+                 useCases: ["車の運転や天気について話すとき", "車の修理の話をするとき"],
+                 examples: [
+                    ("I had to scrape the ice off the windscreen this morning.", "今朝はフロントガラスの氷をガリガリ削らなきゃいけなかったよ。"),
+                    ("A stone hit the windscreen on the motorway and cracked it.", "高速で石が飛んできてフロントガラスにひびが入った。")
+                 ], ipa: "/ðə ˈwɪndskriːn/"),
+            make("a watering can", "a container with a handle and a long spout, used for watering plants",
+                 "じょうろ",
+                 useCases: ["ガーデニングの話をするとき", "植物の水やりを頼むとき"],
+                 examples: [
+                    ("Could you fill the watering can and do the tomatoes?", "じょうろに水入れて、トマトに水やってくれる？"),
+                    ("The watering can's by the back door.", "じょうろなら裏口のとこにあるよ。")
+                 ], ipa: "/ə ˈwɔːtərɪŋ kæn/"),
+            make("sticky tape", "clear plastic tape that is sticky on one side, used for sticking paper together",
+                 "セロハンテープ",
+                 useCases: ["プレゼントを包むとき", "文房具を借りるとき"],
+                 examples: [
+                    ("Have we got any sticky tape? I need to wrap this present.", "セロテープある？このプレゼント包みたいんだけど。"),
+                    ("I can never find the end of the sticky tape.", "セロテープの端っこって、いつも見つからないんだよね。")
+                 ], ipa: "/ˈstɪki teɪp/"),
+            make("a paper clip", "a small piece of bent wire used for holding sheets of paper together",
+                 "ゼムクリップ",
+                 useCases: ["書類をまとめるとき", "ちょっとした道具代わりに使うとき"],
+                 examples: [
+                    ("Just put a paper clip on those pages so they don't get mixed up.", "ごちゃ混ぜにならないように、そのページはクリップで留めといて。"),
+                    ("You can use a paper clip to get the SIM card out.", "SIMカードはクリップで取り出せるよ。")
+                 ], ipa: "/ə ˈpeɪpə klɪp/"),
+            make("a pencil case", "a small bag or box for keeping pens, pencils and other stationery in",
+                 "筆箱・ペンケース",
+                 useCases: ["学校や子どもの持ち物の話をするとき", "ペンを探しているとき"],
+                 examples: [
+                    ("Have a look in my pencil case — there should be a spare pen.", "私の筆箱の中見てみて。予備のペンがあるはず。"),
+                    ("She's left her pencil case at school again.", "あの子、また学校に筆箱置いてきちゃったよ。")
+                 ], ipa: "/ə ˈpensl keɪs/"),
+            make("a plug socket", "the place in a wall where you connect a plug to get electricity",
+                 "コンセント（差し込み口）",
+                 useCases: ["充電場所を探すとき", "ホテルやカフェで電源を聞くとき"],
+                 examples: [
+                    ("Is there a plug socket near the table? My phone's nearly dead.", "テーブルの近くにコンセントある？スマホの充電が切れそうで。"),
+                    ("The plug socket behind the sofa doesn't work.", "ソファの裏のコンセント、使えないんだよね。")
+                 ], ipa: "/ə ˈplʌɡ sɒkɪt/"),
+            make("the patio", "a flat paved area outside a house, used for sitting or eating outside",
+                 "テラス・パティオ",
+                 useCases: ["天気のいい日に外で過ごす話をするとき", "家や庭について話すとき"],
+                 examples: [
+                    ("It's lovely out — shall we have lunch on the patio?", "外気持ちいいね。テラスでお昼食べる？"),
+                    ("We've just had the patio redone.", "ちょうどテラスをやり直してもらったところなの。")
+                 ], ipa: "/ðə ˈpætiəʊ/"),
+            make("a lawnmower", "a machine used for cutting grass",
+                 "芝刈り機",
+                 useCases: ["庭の手入れの話をするとき", "近所の騒音について話すとき"],
+                 examples: [
+                    ("Can I borrow your lawnmower this weekend? Mine's broken.", "今週末、芝刈り機貸してもらえる？うちの壊れちゃって。"),
+                    ("The neighbours had the lawnmower going at eight on a Sunday!", "お隣さん、日曜の朝8時に芝刈り機回してたんだよ！")
+                 ], ipa: "/ə ˈlɔːnməʊə/"),
+            make("a highlighter", "a pen with bright see-through ink, used for marking important words",
+                 "蛍光ペン",
+                 useCases: ["勉強や仕事で書類を読むとき", "文房具を借りるとき"],
+                 examples: [
+                    ("Can I borrow a highlighter? I want to mark the important bits.", "蛍光ペン借りていい？大事なとこに線引きたくて。"),
+                    ("He's gone over the whole page with a highlighter.", "あいつ、ページ全部に蛍光ペン引いてるよ。")
+                 ], ipa: "/ə ˈhaɪlaɪtə/"),
+            make("the recycling bin", "a bin for things like paper, glass and plastic that can be used again",
+                 "リサイクル用のゴミ箱・資源ごみ",
+                 useCases: ["ゴミの分別について話すとき", "家事の分担をするとき"],
+                 examples: [
+                    ("Does this go in the recycling bin or the normal one?", "これって資源ごみ？それとも普通のゴミ？"),
+                    ("Can you put the recycling bin out tonight? They collect tomorrow.", "今夜リサイクルのゴミ箱出しといてくれる？明日回収だから。")
+                 ], ipa: "/ðə ˌriːˈsaɪklɪŋ bɪn/"),
+            make("a flowerpot", "a container, usually made of clay or plastic, for growing plants in",
+                 "植木鉢",
+                 useCases: ["ガーデニングや部屋の植物の話をするとき", "合鍵の隠し場所を伝えるとき"],
+                 examples: [
+                    ("The spare key's under the flowerpot by the front door.", "合鍵は玄関の植木鉢の下にあるよ。"),
+                    ("The cat knocked a flowerpot off the windowsill.", "猫が窓辺から植木鉢を落としちゃった。")
+                 ], ipa: "/ə ˈflaʊəpɒt/"),
         ]
     }
 
