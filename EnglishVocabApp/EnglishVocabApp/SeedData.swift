@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323
         ]
         return groups.flatMap { $0 }
     }
@@ -47468,6 +47468,116 @@ enum SeedData {
                     ("Let's try to find a middle ground we're both happy with.", "お互い納得できる妥協点を探そうよ。"),
                     ("There's no middle ground with him — it's all or nothing.", "彼には中間がないんだ、いつも全部か無しかさ。")
                  ], ipa: "/ə ˌmɪdl ˈɡraʊnd/"),
+        ]
+    }
+
+    private static var britishColloquial323: [Word] {
+        [
+            make("a baby shower", "a party held before a baby is born, where friends give presents for the baby",
+                 "ベビーシャワー・出産前のお祝いパーティー",
+                 useCases: ["友人の出産祝いの集まりについて話すとき", "プレゼント選びを相談するとき"],
+                 examples: [
+                    ("We're throwing Anna a baby shower next Saturday.", "来週の土曜、アンナのためにベビーシャワーを開くんだ。"),
+                    ("What do you usually bring to a baby shower?", "ベビーシャワーって普通何を持っていくの？")
+                 ], ipa: "/ə ˈbeɪbi ˌʃaʊə/"),
+            make("a wedding reception", "the party with food, drinks and dancing after a wedding ceremony",
+                 "結婚披露宴",
+                 useCases: ["結婚式の予定について話すとき", "式のあとのパーティーの様子を話すとき"],
+                 examples: [
+                    ("The ceremony's at two and the wedding reception starts at six.", "式は2時で、披露宴は6時からだよ。"),
+                    ("I danced so much at the wedding reception my feet still hurt.", "披露宴で踊りすぎて、まだ足が痛いよ。")
+                 ], ipa: "/ə ˈwedɪŋ rɪˌsepʃn/"),
+            make("a side dish", "a small amount of food served next to the main dish, such as salad or chips",
+                 "付け合わせ・サイドメニュー",
+                 useCases: ["レストランで注文するとき", "持ち寄りパーティーで何を作るか話すとき"],
+                 examples: [
+                    ("Shall we get a couple of side dishes to share?", "サイドメニューをいくつか頼んでシェアしない？"),
+                    ("I'll bring a side dish — maybe a potato salad.", "付け合わせを持っていくよ。ポテトサラダとかどう？")
+                 ], ipa: "/ə ˈsaɪd ˌdɪʃ/"),
+            make("a pram", "a small vehicle with four wheels that you push a baby around in (US: baby carriage, stroller)",
+                 "ベビーカー（乳母車）",
+                 useCases: ["赤ちゃん連れの外出について話すとき", "バスや店で場所を譲るとき"],
+                 examples: [
+                    ("Is there a lift? I've got the pram with me.", "エレベーターある？ベビーカーがあるんだ。"),
+                    ("Let me help you get the pram up the steps.", "ベビーカー、階段の上まで運ぶの手伝うよ。")
+                 ], ipa: "/ə ˈpræm/"),
+            make("a playground", "an outdoor area with swings and slides where children can play",
+                 "（公園の）遊び場・校庭",
+                 useCases: ["子どもを遊ばせる場所について話すとき", "子どもの頃の思い出を話すとき"],
+                 examples: [
+                    ("I'll take the kids to the playground to burn off some energy.", "子どもたちのエネルギー発散に、遊び場に連れて行くよ。"),
+                    ("There's a nice playground just behind our flat.", "うちのアパートのすぐ裏にいい遊び場があるんだ。")
+                 ], ipa: "/ə ˈpleɪɡraʊnd/"),
+            make("a waiting room", "a room where people sit and wait, for example at a doctor's or a station",
+                 "待合室",
+                 useCases: ["病院や駅で待っているとき", "待ち時間の長さに文句を言うとき"],
+                 examples: [
+                    ("I was stuck in the waiting room for over an hour.", "待合室で1時間以上も待たされたよ。"),
+                    ("You can wait in the waiting room — the doctor won't be long.", "待合室でお待ちください。先生はすぐ来ますので。")
+                 ], ipa: "/ə ˈweɪtɪŋ ˌruːm/"),
+            make("a washing machine", "a machine for washing clothes",
+                 "洗濯機",
+                 useCases: ["家事や家電について話すとき", "部屋探しで設備を確認するとき"],
+                 examples: [
+                    ("Does the flat come with a washing machine?", "その部屋、洗濯機付いてる？"),
+                    ("Our washing machine's broken, so I'm off to the launderette.", "うちの洗濯機が壊れたから、コインランドリーに行ってくる。")
+                 ], ipa: "/ə ˈwɒʃɪŋ məˌʃiːn/"),
+            make("a gym membership", "a paid arrangement that lets you use a gym, usually paid monthly",
+                 "ジムの会員権・ジム通いの契約",
+                 useCases: ["運動習慣について話すとき", "使っていないサブスクを冗談にするとき"],
+                 examples: [
+                    ("I've got a gym membership, I just never actually go.", "ジムの会員にはなってるんだけど、実際は全然行ってないんだ。"),
+                    ("I finally cancelled my gym membership — it was a waste of money.", "ついにジム解約したよ。お金の無駄だった。")
+                 ], ipa: "/ə ˈdʒɪm ˌmembəʃɪp/"),
+            make("a personal trainer", "someone who is paid to plan your exercise and train you one to one",
+                 "パーソナルトレーナー",
+                 useCases: ["本格的に体を鍛えたいとき", "運動のモチベーションについて話すとき"],
+                 examples: [
+                    ("She's got a personal trainer who makes her run at six in the morning.", "彼女、朝6時に走らせるパーソナルトレーナーがついてるんだ。"),
+                    ("I'd never stick to it without a personal trainer.", "パーソナルトレーナーがいなきゃ絶対続かないよ。")
+                 ], ipa: "/ə ˌpɜːsənl ˈtreɪnə/"),
+            make("a phone case", "a cover that protects your mobile phone",
+                 "スマホケース",
+                 useCases: ["スマホを落とした話をするとき", "買い物でアクセサリーを選ぶとき"],
+                 examples: [
+                    ("Thank God I had a phone case on — I dropped it on the pavement.", "スマホケース付けててよかった。歩道に落としちゃってさ。"),
+                    ("I keep my bank card in the back of my phone case.", "銀行のカードはスマホケースの裏に入れてるんだ。")
+                 ], ipa: "/ə ˈfəʊn ˌkeɪs/"),
+            make("lost property", "things that people have lost and that are kept somewhere until the owner collects them; also the office where they are kept",
+                 "遺失物・忘れ物取扱所",
+                 useCases: ["電車や店に忘れ物をしたとき", "落とし物を届けるとき"],
+                 examples: [
+                    ("I left my umbrella on the train — I'll check lost property.", "電車に傘忘れちゃった。忘れ物センターに問い合わせてみる。"),
+                    ("Someone handed my wallet in to lost property!", "誰かが財布を遺失物係に届けてくれたんだ！")
+                 ], ipa: "/ˌlɒst ˈprɒpəti/"),
+            make("a passport photo", "a small official photo of your face for a passport or ID card",
+                 "証明写真・パスポート用写真",
+                 useCases: ["パスポートやビザの申請をするとき", "写りの悪い写真を笑い話にするとき"],
+                 examples: [
+                    ("I need to get a passport photo taken before I renew it.", "更新する前に証明写真を撮らないと。"),
+                    ("Nobody looks good in their passport photo.", "パスポートの写真で写りがいい人なんていないよ。")
+                 ], ipa: "/ə ˈpɑːspɔːt ˌfəʊtəʊ/"),
+            make("an ice cube", "a small block of ice that you put in a drink to make it cold",
+                 "角氷・氷",
+                 useCases: ["飲み物を頼むとき", "暑い日に冷たい飲み物を作るとき"],
+                 examples: [
+                    ("Could I have a Coke with a couple of ice cubes, please?", "コーラに氷を2、3個入れてもらえますか？"),
+                    ("We've run out of ice cubes — can you grab a bag on the way?", "氷切らしちゃった。来る途中で一袋買ってきてくれる？")
+                 ], ipa: "/ən ˈaɪs ˌkjuːb/"),
+            make("tin foil", "very thin metal sheet used for wrapping or cooking food (also: aluminium foil)",
+                 "アルミホイル",
+                 useCases: ["料理や残り物の保存をするとき", "お弁当を包むとき"],
+                 examples: [
+                    ("Wrap the leftovers in tin foil and pop them in the fridge.", "残り物はアルミホイルで包んで冷蔵庫に入れといて。"),
+                    ("Cover the chicken with tin foil so it doesn't burn.", "焦げないように、鶏肉にアルミホイルをかぶせて。")
+                 ], ipa: "/ˌtɪn ˈfɔɪl/"),
+            make("an ID card", "an official card with your name and photo that proves who you are",
+                 "身分証明書・IDカード",
+                 useCases: ["身分証の提示を求められたとき", "バーや空港で年齢・身元を確認されるとき"],
+                 examples: [
+                    ("They asked for my ID card at the door, even though I'm forty.", "40歳なのに入口で身分証を見せてって言われたよ。"),
+                    ("Don't forget your ID card — you'll need it to check in.", "身分証忘れないでね。チェックインで必要だから。")
+                 ], ipa: "/ən ˌaɪ ˈdiː ˌkɑːd/"),
         ]
     }
 
