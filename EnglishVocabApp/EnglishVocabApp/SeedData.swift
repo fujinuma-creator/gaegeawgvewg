@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326
         ]
         return groups.flatMap { $0 }
     }
@@ -47578,6 +47578,116 @@ enum SeedData {
                     ("They asked for my ID card at the door, even though I'm forty.", "40歳なのに入口で身分証を見せてって言われたよ。"),
                     ("Don't forget your ID card — you'll need it to check in.", "身分証忘れないでね。チェックインで必要だから。")
                  ], ipa: "/ən ˌaɪ ˈdiː ˌkɑːd/"),
+        ]
+    }
+
+    private static var britishColloquial326: [Word] {
+        [
+            make("a hairdryer", "an electrical device that blows hot air to dry your hair",
+                 "ドライヤー",
+                 useCases: ["身支度について話すとき", "ホテルや家の備品を尋ねるとき"],
+                 examples: [
+                    ("Is there a hairdryer in the room, or should I bring mine?", "部屋にドライヤーある？それとも自分のを持っていったほうがいい？"),
+                    ("Sorry, I couldn't hear you — I had the hairdryer on.", "ごめん、聞こえなかった。ドライヤーかけてたんだ。")
+                 ], ipa: "/ə ˈheəˌdraɪə/"),
+            make("a light switch", "the small button or lever on the wall that turns the lights on and off",
+                 "電気のスイッチ",
+                 useCases: ["暗い部屋で電気をつけるとき", "家の中の物の場所を伝えるとき"],
+                 examples: [
+                    ("The light switch is just on the left as you go in.", "電気のスイッチは入ってすぐ左にあるよ。"),
+                    ("I can't find the light switch — it's pitch black in here.", "電気のスイッチが見つからない。ここ真っ暗だよ。")
+                 ], ipa: "/ə ˈlaɪt ˌswɪtʃ/"),
+            make("a colander", "a bowl with lots of small holes, used for draining water from pasta or washing vegetables",
+                 "水切りボウル・ザル",
+                 useCases: ["料理を手伝うとき", "パスタの湯切りをするとき"],
+                 examples: [
+                    ("Can you grab the colander? The pasta's ready.", "ザル取ってくれる？パスタがゆで上がったから。"),
+                    ("Just rinse the salad in the colander and leave it to drain.", "サラダはザルで洗って、水を切っておいて。")
+                 ], ipa: "/ə ˈkɒləndə/"),
+            make("a baking tray", "a flat metal tray that you put food on to cook it in the oven (US: baking sheet)",
+                 "天板・オーブン用トレイ",
+                 useCases: ["オーブン料理をするとき", "お菓子作りの話をするとき"],
+                 examples: [
+                    ("Pop the chips on a baking tray and stick them in for twenty minutes.", "ポテトを天板に並べて、20分オーブンに入れておいて。"),
+                    ("Line the baking tray with some foil so it doesn't get messy.", "汚れないように天板にアルミホイルを敷いてね。")
+                 ], ipa: "/ə ˈbeɪkɪŋ ˌtreɪ/"),
+            make("a flannel", "a small square of cloth used for washing your face or body (US: washcloth)",
+                 "（洗顔・体を洗う用の）小さなタオル",
+                 useCases: ["お風呂や洗面の話をするとき", "熱があるときに冷やすとき"],
+                 examples: [
+                    ("Put a cold flannel on your forehead — it'll help with the fever.", "おでこに冷たいタオルを当てて。熱に効くから。"),
+                    ("There's a clean towel and a flannel on the bed for you.", "ベッドの上にきれいなバスタオルと小さいタオル置いといたよ。")
+                 ], ipa: "/ə ˈflænəl/"),
+            make("a dustpan and brush", "a small flat container and a brush used for sweeping up dirt or broken things from the floor",
+                 "ちりとりとほうき（小型）",
+                 useCases: ["何かを割ってしまったとき", "掃除を手伝うとき"],
+                 examples: [
+                    ("Don't move — I'll get the dustpan and brush for that glass.", "動かないで。そのガラス、ちりとりとほうき持ってくるから。"),
+                    ("Where do you keep the dustpan and brush? I've spilled some rice.", "ちりとりどこにある？お米こぼしちゃった。")
+                 ], ipa: "/ə ˌdʌstpæn ən ˈbrʌʃ/"),
+            make("a coat hanger", "a shaped piece of wood, plastic or wire used for hanging clothes in a wardrobe",
+                 "ハンガー",
+                 useCases: ["服を片付けるとき", "来客の上着を預かるとき"],
+                 examples: [
+                    ("Here, let me get you a coat hanger for that jacket.", "ほら、そのジャケット用にハンガー持ってくるね。"),
+                    ("I never have enough coat hangers — half my clothes are on the chair.", "ハンガーがいつも足りなくて、服の半分は椅子の上なんだ。")
+                 ], ipa: "/ə ˈkəʊt ˌhæŋə/"),
+            make("an ironing board", "a long narrow folding table that you iron clothes on",
+                 "アイロン台",
+                 useCases: ["アイロンがけをするとき", "家事や収納の話をするとき"],
+                 examples: [
+                    ("Can you help me fold up the ironing board? It always gets stuck.", "アイロン台たたむの手伝ってくれる？いつも引っかかるんだ。"),
+                    ("The ironing board's been up in the spare room for a week.", "アイロン台、1週間も空き部屋に出しっぱなしなんだよね。")
+                 ], ipa: "/ən ˈaɪənɪŋ ˌbɔːd/"),
+            make("a pillowcase", "a cloth cover that you put over a pillow",
+                 "枕カバー",
+                 useCases: ["ベッドメイキングをするとき", "寝具の洗濯について話すとき"],
+                 examples: [
+                    ("I've put clean sheets and pillowcases on the bed for you.", "ベッドにきれいなシーツと枕カバーをつけておいたよ。"),
+                    ("Change your pillowcase more often — it's good for your skin.", "枕カバーはもっと頻繁に替えなよ。肌にいいから。")
+                 ], ipa: "/ə ˈpɪləʊˌkeɪs/"),
+            make("a windowsill", "the flat shelf at the bottom of a window, inside or outside",
+                 "窓台・窓枠の棚",
+                 useCases: ["物のありかを伝えるとき", "植物や部屋の飾りについて話すとき"],
+                 examples: [
+                    ("Your keys are on the windowsill in the kitchen.", "鍵ならキッチンの窓辺に置いてあるよ。"),
+                    ("I grow basil on the windowsill — it gets loads of sun there.", "窓辺でバジルを育ててるんだ。そこ日がよく当たるから。")
+                 ], ipa: "/ə ˈwɪndəʊˌsɪl/"),
+            make("a driveway", "a short private road from the street to a house, where you can park a car",
+                 "（家の）車寄せ・私道",
+                 useCases: ["駐車場所を伝えるとき", "家を訪ねる人に案内するとき"],
+                 examples: [
+                    ("Just park on the driveway when you get here.", "着いたら家の前の車寄せに停めちゃって。"),
+                    ("Someone's parked across our driveway again and I can't get out.", "また誰かがうちの車寄せの前に停めてて、出られないんだ。")
+                 ], ipa: "/ə ˈdraɪvweɪ/"),
+            make("Sellotape", "clear sticky tape in a roll, used for sticking paper and wrapping presents (US: Scotch tape)",
+                 "セロハンテープ",
+                 useCases: ["プレゼントを包むとき", "紙を貼るとき"],
+                 examples: [
+                    ("Have you got any Sellotape? I need to wrap this present.", "セロテープある？このプレゼント包まなきゃいけないんだ。"),
+                    ("I can never find the end of the Sellotape!", "セロテープの端っこがいつも見つからない！")
+                 ], ipa: "/ˈseləteɪp/"),
+            make("a drawing pin", "a short pin with a flat round head, used for fixing paper to a wall or noticeboard (US: thumbtack)",
+                 "画びょう",
+                 useCases: ["掲示板に紙を貼るとき", "部屋にポスターを飾るとき"],
+                 examples: [
+                    ("Stick it up on the noticeboard with a drawing pin.", "画びょうで掲示板に貼っておいて。"),
+                    ("Ouch! I just stood on a drawing pin.", "痛っ！画びょう踏んじゃった。")
+                 ], ipa: "/ə ˈdrɔːɪŋ ˌpɪn/"),
+            make("a laundry basket", "a basket where you put dirty clothes before washing them, or carry clean clothes in",
+                 "洗濯かご",
+                 useCases: ["洗濯物を片付けるとき", "家族に片付けを頼むとき"],
+                 examples: [
+                    ("Put your dirty socks in the laundry basket, not on the floor!", "汚れた靴下は床じゃなくて洗濯かごに入れて！"),
+                    ("The laundry basket's overflowing — I need to do a wash.", "洗濯かごがあふれてる。洗濯しなきゃ。")
+                 ], ipa: "/ə ˈlɔːndri ˌbɑːskɪt/"),
+            make("a porch", "a small covered area at the entrance of a house, in front of the front door",
+                 "玄関ポーチ・玄関先",
+                 useCases: ["荷物の置き場所を伝えるとき", "家の造りについて話すとき"],
+                 examples: [
+                    ("If I'm out, the courier can leave the parcel in the porch.", "留守だったら、配達の人には荷物を玄関ポーチに置いてもらっていいよ。"),
+                    ("Leave your muddy boots in the porch, would you?", "泥だらけのブーツは玄関先に置いておいてくれる？")
+                 ], ipa: "/ə ˈpɔːtʃ/"),
         ]
     }
 
