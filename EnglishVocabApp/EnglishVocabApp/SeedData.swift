@@ -90,7 +90,9 @@ enum SeedData {
             britishColloquial199, britishColloquial200, britishColloquial201, britishColloquial202, britishColloquial203, britishColloquial204,
             britishColloquial205, britishColloquial206, britishColloquial207, britishColloquial208, britishColloquial209, britishColloquial210,
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
-            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220
+            britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
+            britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351
         ]
         return groups.flatMap { $0 }
     }
@@ -39507,6 +39509,14819 @@ enum SeedData {
                     ("The shop closed five minutes before we got there — how annoying!", "着く5分前に店が閉まっちゃった、ほんとイラっとする！"),
                     ("Your train got cancelled again? How annoying.", "また電車運休になったの？それは面倒だね。")
                  ], ipa: "/ˌhaʊ əˈnɔɪɪŋ/"),
+        ]
+    }
+    private static var britishColloquial221: [Word] {
+        [
+            make("pig out", "(informal) to eat a very large amount of food, often greedily",
+                 "ドカ食いする・たらふく食べる",
+                 useCases: ["食べすぎたことを話すとき", "思いきり食べる予定を話すとき"],
+                 examples: [
+                    ("We pigged out on pizza last night and now I feel awful.", "昨日の夜ピザをドカ食いして、今めっちゃ気持ち悪い。"),
+                    ("It's my birthday — I'm allowed to pig out!", "誕生日なんだから、たらふく食べてもいいでしょ！")
+                 ], ipa: "/ˌpɪɡ ˈaʊt/"),
+            make("brunch", "a late-morning meal that combines breakfast and lunch",
+                 "ブランチ（朝昼兼用の食事）",
+                 useCases: ["週末の予定を立てるとき", "友人を食事に誘うとき"],
+                 examples: [
+                    ("Fancy meeting up for brunch on Sunday?", "日曜にブランチでもどう？"),
+                    ("We had a lazy brunch and then went for a walk.", "のんびりブランチしてから散歩に行ったよ。")
+                 ], ipa: "/brʌntʃ/"),
+            make("housemate", "(British) a person you share a house with, usually not a family member",
+                 "ハウスメイト・同居人",
+                 useCases: ["住まいの状況を説明するとき", "同居人の話をするとき"],
+                 examples: [
+                    ("I live with three housemates near the university.", "大学の近くでハウスメイト3人と住んでるよ。"),
+                    ("My housemate never does the washing-up.", "うちの同居人、全然洗い物しないんだよね。")
+                 ], ipa: "/ˈhaʊsmeɪt/"),
+            make("a weekend away", "a short trip somewhere for the weekend, usually to relax",
+                 "週末旅行・週末の小旅行",
+                 useCases: ["週末の旅行計画を話すとき", "休暇の思い出を話すとき"],
+                 examples: [
+                    ("We're having a weekend away in the Cotswolds.", "週末にコッツウォルズへ小旅行に行くんだ。"),
+                    ("You look so relaxed — a weekend away clearly did you good.", "すごくリラックスしてるね。週末旅行が効いたみたい。")
+                 ], ipa: "/ə ˌwiːkˈend əˈweɪ/"),
+            make("stretch my legs", "to go for a short walk, especially after sitting for a long time",
+                 "ちょっと歩いてくる・体をほぐす",
+                 useCases: ["長時間座った後に席を立つとき", "休憩を取るとき"],
+                 examples: [
+                    ("I've been at my desk all morning — I need to stretch my legs.", "朝からずっとデスクにいたから、ちょっと歩いてくる。"),
+                    ("Let's stop at the next services and stretch our legs.", "次のサービスエリアで止まって、ちょっと体をほぐそう。")
+                 ], ipa: "/ˌstretʃ maɪ ˈleɡz/"),
+            make("soaking wet", "completely wet, especially from rain",
+                 "びしょ濡れ・ずぶ濡れ",
+                 useCases: ["雨に降られたことを話すとき", "濡れた服について話すとき"],
+                 examples: [
+                    ("I forgot my umbrella and got soaking wet.", "傘を忘れてびしょ濡れになっちゃった。"),
+                    ("Take your coat off — it's soaking wet!", "コート脱いで、ずぶ濡れじゃん！")
+                 ], ipa: "/ˌsəʊkɪŋ ˈwet/"),
+            make("bad luck", "used to sympathise when something unfortunate happens to someone; misfortune",
+                 "運が悪かったね・ついてないね",
+                 useCases: ["相手の不運に同情するとき", "うまくいかなかった理由を言うとき"],
+                 examples: [
+                    ("You missed the train by one minute? Bad luck!", "1分差で電車逃したの？ついてないね！"),
+                    ("It wasn't your fault — it was just bad luck.", "君のせいじゃないよ、ただ運が悪かっただけ。")
+                 ], ipa: "/ˌbæd ˈlʌk/"),
+            make("oddly enough", "used to say that something is surprising or strange",
+                 "妙なことに・不思議なことに",
+                 useCases: ["意外な事実を話すとき", "話に驚きを添えるとき"],
+                 examples: [
+                    ("Oddly enough, I actually enjoyed the exam.", "不思議なことに、試験がけっこう楽しかったんだ。"),
+                    ("It was raining everywhere except, oddly enough, our village.", "妙なことに、うちの村以外はどこも雨だった。")
+                 ], ipa: "/ˈɒdli ɪˌnʌf/"),
+            make("sort yourself out", "(informal) to organise your life, deal with your problems, or get ready",
+                 "しっかりする・身の回りを整える・準備する",
+                 useCases: ["相手に態度を改めるよう言うとき", "準備を促すとき"],
+                 examples: [
+                    ("He really needs to sort himself out and find a job.", "彼、本当にしっかりして仕事を見つけないと。"),
+                    ("Sort yourself out — we're leaving in ten minutes.", "支度して、あと10分で出るよ。")
+                 ], ipa: "/ˌsɔːt jɔːˈself ˌaʊt/"),
+            make("at most", "not more than; used to give the highest possible number or amount",
+                 "せいぜい・多くても",
+                 useCases: ["時間や数の上限を伝えるとき", "大したことないと言うとき"],
+                 examples: [
+                    ("It'll take twenty minutes at most.", "せいぜい20分くらいで終わるよ。"),
+                    ("There were ten people there at most.", "多くても10人くらいしかいなかった。")
+                 ], ipa: "/ət ˈməʊst/"),
+            make("back then", "at that time in the past",
+                 "当時は・あの頃は",
+                 useCases: ["昔の話をするとき", "今と昔を比べるとき"],
+                 examples: [
+                    ("Back then, nobody had a mobile phone.", "当時は誰も携帯なんて持ってなかったよ。"),
+                    ("I was a lot shyer back then.", "あの頃はもっと人見知りだったな。")
+                 ], ipa: "/ˌbæk ˈðen/"),
+            make("burnt out", "extremely tired and stressed, usually because of working too hard for too long",
+                 "燃え尽きた・疲れ果てた",
+                 useCases: ["働きすぎの状態を話すとき", "休みが必要なことを伝えるとき"],
+                 examples: [
+                    ("I was completely burnt out after that project.", "あのプロジェクトの後、完全に燃え尽きてた。"),
+                    ("Take a holiday before you get burnt out.", "燃え尽きる前に休暇を取りなよ。")
+                 ], ipa: "/ˌbɜːnt ˈaʊt/"),
+            make("back on my feet", "healthy again after an illness, or stable again after a difficult time",
+                 "元気になって・立ち直って",
+                 useCases: ["病気からの回復を伝えるとき", "困難から立ち直ったことを話すとき"],
+                 examples: [
+                    ("I had the flu last week, but I'm back on my feet now.", "先週インフルだったけど、もう元気になったよ。"),
+                    ("It took a while to get back on my feet after the move.", "引っ越しの後、立ち直るまでしばらくかかった。")
+                 ], ipa: "/ˌbæk ɒn maɪ ˈfiːt/"),
+            make("if I get the chance", "if there is an opportunity; used when you're not sure you'll be able to do something",
+                 "機会があれば・できたら",
+                 useCases: ["確約せずに予定を話すとき", "やりたいことを控えめに言うとき"],
+                 examples: [
+                    ("I'll give you a ring later if I get the chance.", "できたらあとで電話するね。"),
+                    ("If I get the chance, I'd love to visit Lisbon.", "機会があれば、リスボンに行ってみたいな。")
+                 ], ipa: "/ɪf aɪ ˌɡet ðə ˈtʃɑːns/"),
+            make("I take it back", "used to say that you no longer mean something you said earlier",
+                 "今のは撤回するよ・前言撤回",
+                 useCases: ["失言を取り消すとき", "考えが変わったと伝えるとき"],
+                 examples: [
+                    ("Sorry, that was rude. I take it back.", "ごめん、失礼だったね。今のは撤回する。"),
+                    ("I said the film would be boring — I take it back, it was brilliant!", "退屈だって言ったけど前言撤回、最高だった！")
+                 ], ipa: "/aɪ ˌteɪk ɪt ˈbæk/"),
+        ]
+    }
+    private static var britishColloquial222: [Word] {
+        [
+            make("get a taxi", "to take or hire a taxi to go somewhere",
+                 "タクシーを拾う・タクシーで行く",
+                 useCases: ["移動手段を相談するとき", "帰りの方法を話すとき"],
+                 examples: [
+                    ("It's pouring — shall we just get a taxi?", "土砂降りだし、もうタクシーで行かない？"),
+                    ("I missed the last train, so I had to get a taxi home.", "終電を逃したから、タクシーで帰るしかなかったよ。")
+                 ], ipa: "/ˌɡet ə ˈtæksi/"),
+            make("take the tube", "(British) to travel on the London Underground",
+                 "地下鉄で行く（ロンドン）",
+                 useCases: ["ロンドンでの移動を話すとき", "道順を説明するとき"],
+                 examples: [
+                    ("It's quicker to take the tube than the bus.", "バスより地下鉄の方が早いよ。"),
+                    ("I usually take the tube to work, but today I walked.", "普段は地下鉄で通勤するけど、今日は歩いたんだ。")
+                 ], ipa: "/ˌteɪk ðə ˈtjuːb/"),
+            make("take the afternoon off", "to not work during the afternoon, usually as a short break",
+                 "午後休を取る・午後から休む",
+                 useCases: ["休みの予定を伝えるとき", "職場で予定を調整するとき"],
+                 examples: [
+                    ("I'm taking the afternoon off to see the dentist.", "歯医者に行くから午後休を取るね。"),
+                    ("You look exhausted — why don't you take the afternoon off?", "疲れ切ってるね、午後から休んだら？")
+                 ], ipa: "/ˌteɪk ði ˌɑːftəˈnuːn ˈɒf/"),
+            make("do the dishes", "to wash the plates, cups, pans, etc. after a meal",
+                 "皿洗いをする",
+                 useCases: ["家事の分担を話すとき", "食後に手伝いを申し出るとき"],
+                 examples: [
+                    ("You cooked, so I'll do the dishes.", "君が作ってくれたから、皿洗いは僕がやるよ。"),
+                    ("Can you do the dishes before you go out?", "出かける前に皿洗いしてくれる？")
+                 ], ipa: "/ˌduː ðə ˈdɪʃɪz/"),
+            make("affordable", "not too expensive; at a price people can pay",
+                 "手頃な値段の・お手頃な",
+                 useCases: ["お店や商品の値段を話すとき", "住まいや旅行の費用を比べるとき"],
+                 examples: [
+                    ("That little Italian place is really good and quite affordable.", "あの小さなイタリアン、すごく美味しいし結構お手頃だよ。"),
+                    ("It's hard to find affordable flats in the city centre.", "街の中心で手頃な家賃のフラットを見つけるのは大変。")
+                 ], ipa: "/əˈfɔːdəbl/"),
+            make("get cancelled", "(of an event, flight, train, etc.) to be called off and not happen",
+                 "中止になる・欠航になる",
+                 useCases: ["予定がなくなったことを伝えるとき", "交通の乱れを話すとき"],
+                 examples: [
+                    ("My flight got cancelled because of the fog.", "霧で私の便が欠航になっちゃった。"),
+                    ("Football practice got cancelled, so I'm free tonight.", "サッカーの練習が中止になったから、今夜空いてるよ。")
+                 ], ipa: "/ˌɡet ˈkænsld/"),
+            make("tea break", "(British) a short break from work to have a cup of tea or coffee",
+                 "お茶休憩・ちょっと一息",
+                 useCases: ["仕事の合間に休憩を提案するとき", "職場での習慣を話すとき"],
+                 examples: [
+                    ("Let's have a quick tea break before the next meeting.", "次の会議の前にちょっとお茶休憩しよう。"),
+                    ("We always chat about the weekend during our tea break.", "お茶休憩のときはいつも週末の話をしてるよ。")
+                 ], ipa: "/ˈtiː breɪk/"),
+            make("just in time", "with very little time to spare before it was too late",
+                 "ギリギリ間に合って・ちょうどいいときに",
+                 useCases: ["ギリギリ間に合ったことを話すとき", "タイミングよく来た人に言うとき"],
+                 examples: [
+                    ("We got to the station just in time for the train.", "駅にギリギリ間に合って電車に乗れたよ。"),
+                    ("Ah, you're just in time — dinner's on the table.", "ああ、ちょうどいいところに来たね。夕飯できてるよ。")
+                 ], ipa: "/ˌdʒʌst ɪn ˈtaɪm/"),
+            make("home-cooked", "(of food) made at home rather than bought or eaten in a restaurant",
+                 "手料理の・家庭料理の",
+                 useCases: ["家で作った料理を褒めるとき", "外食続きの後に話すとき"],
+                 examples: [
+                    ("I've missed a proper home-cooked meal.", "ちゃんとした手料理が恋しかったんだ。"),
+                    ("Nothing beats home-cooked food after a long trip.", "長旅の後は家庭料理に勝るものはないね。")
+                 ], ipa: "/ˌhəʊm ˈkʊkt/"),
+            make("dinner's ready", "used to tell people that the evening meal is ready to eat",
+                 "ご飯できたよ",
+                 useCases: ["家族や同居人を食事に呼ぶとき", "友人を招いた席で"],
+                 examples: [
+                    ("Dinner's ready! Come and sit down.", "ご飯できたよ！座って座って。"),
+                    ("Can you turn the telly off? Dinner's ready.", "テレビ消してくれる？ご飯できたよ。")
+                 ], ipa: "/ˌdɪnəz ˈredi/"),
+            make("pack your bags", "to put your things into bags or a suitcase before travelling or leaving",
+                 "荷造りをする・荷物をまとめる",
+                 useCases: ["旅行の準備を話すとき", "引っ越しや出発を話すとき"],
+                 examples: [
+                    ("Have you packed your bags yet? We leave at six.", "もう荷造りした？6時に出るよ。"),
+                    ("I always pack my bags the night before.", "いつも前の晩に荷物をまとめるんだ。")
+                 ], ipa: "/ˌpæk jɔː ˈbæɡz/"),
+            make("catch a flight", "to get on a plane, especially one you need to hurry for",
+                 "飛行機に乗る・便に間に合わせる",
+                 useCases: ["出発の予定を伝えるとき", "急いでいる理由を言うとき"],
+                 examples: [
+                    ("Sorry, I can't stay — I've got a flight to catch.", "ごめん、ゆっくりできないんだ。飛行機に乗らないといけなくて。"),
+                    ("We need to catch an early flight to Madrid tomorrow.", "明日はマドリード行きの早い便に乗らないと。")
+                 ], ipa: "/ˌkætʃ ə ˈflaɪt/"),
+            make("could we see the menu?", "a polite way to ask for the menu in a restaurant or café",
+                 "メニューを見せてもらえますか？",
+                 useCases: ["レストランで注文前に", "カフェで店員に声をかけるとき"],
+                 examples: [
+                    ("Hi, could we see the menu, please?", "すみません、メニューを見せてもらえますか？"),
+                    ("Could we see the menu again? We'd like some dessert.", "もう一度メニューいいですか？デザートも頼みたくて。")
+                 ], ipa: "/kʊd wi ˌsiː ðə ˈmenjuː/"),
+            make("make a booking", "(British) to reserve a table, room, ticket, etc. in advance",
+                 "予約する",
+                 useCases: ["レストランやホテルを予約するとき", "予約の有無を確認するとき"],
+                 examples: [
+                    ("I've made a booking for eight o'clock at that new place.", "あの新しいお店、8時に予約しておいたよ。"),
+                    ("Hi, I'd like to make a booking for four people on Friday.", "こんにちは、金曜日に4名で予約したいのですが。")
+                 ], ipa: "/ˌmeɪk ə ˈbʊkɪŋ/"),
+            make("boarding pass", "a card or digital pass that lets you get on a plane",
+                 "搭乗券",
+                 useCases: ["空港で手続きするとき", "旅行の準備を確認するとき"],
+                 examples: [
+                    ("Have you got your boarding pass on your phone?", "搭乗券、スマホに入ってる？"),
+                    ("I printed my boarding pass at home to save time.", "時間節約のために搭乗券は家で印刷してきた。")
+                 ], ipa: "/ˈbɔːdɪŋ pɑːs/"),
+        ]
+    }
+    private static var britishColloquial223: [Word] {
+        [
+            make("make a decision", "to decide something after thinking about it",
+                 "決める・決断する",
+                 useCases: ["迷っている人を促すとき", "自分の決断を伝えるとき"],
+                 examples: [
+                    ("We need to make a decision about the holiday by Friday.", "金曜までに休暇の行き先を決めないと。"),
+                    ("I've made a decision — I'm going to take the job.", "決めたよ、その仕事を受けることにする。")
+                 ], ipa: "/ˌmeɪk ə dɪˈsɪʒn/"),
+            make("make a mistake", "to do something wrong, often without meaning to",
+                 "間違える・ミスをする",
+                 useCases: ["自分のミスを認めるとき", "失敗した人を励ますとき"],
+                 examples: [
+                    ("Don't worry, everyone makes mistakes.", "気にしないで、誰だって間違えるよ。"),
+                    ("I think I made a mistake with the booking — it's for the wrong day.", "予約ミスったかも、日にちが違ってる。")
+                 ], ipa: "/ˌmeɪk ə mɪˈsteɪk/"),
+            make("get engaged", "to formally agree to marry someone",
+                 "婚約する",
+                 useCases: ["友人の婚約を話題にするとき", "おめでたい報告をするとき"],
+                 examples: [
+                    ("Guess what? Anna and Luke just got engaged!", "聞いて！アナとルーク、婚約したんだって！"),
+                    ("They got engaged in Paris last spring.", "二人は去年の春にパリで婚約したんだ。")
+                 ], ipa: "/ˌɡet ɪnˈɡeɪdʒd/"),
+            make("use up", "to use all of something so that none is left",
+                 "使い切る",
+                 useCases: ["食材や日用品が切れたとき", "残り物を片付けたいとき"],
+                 examples: [
+                    ("Who used up all the milk?", "牛乳全部使い切ったの誰？"),
+                    ("Let's make soup to use up the vegetables.", "野菜を使い切るためにスープ作ろう。")
+                 ], ipa: "/ˌjuːz ˈʌp/"),
+            make("I can't believe it", "used to show surprise or shock about something",
+                 "信じられない・嘘でしょ",
+                 useCases: ["驚くニュースを聞いたとき", "嬉しい・ショックな出来事に反応するとき"],
+                 examples: [
+                    ("We won? I can't believe it!", "勝ったの？信じられない！"),
+                    ("I can't believe it's already November.", "もう11月だなんて信じられない。")
+                 ], ipa: "/aɪ ˌkɑːnt bɪˈliːv ɪt/"),
+            make("feel at home", "to feel relaxed and comfortable somewhere, as if it were your own home",
+                 "くつろぐ・居心地がいい",
+                 useCases: ["新しい環境に馴染んだことを話すとき", "お客さんをもてなすとき"],
+                 examples: [
+                    ("Everyone was so friendly — I felt at home straight away.", "みんなすごく親切で、すぐに居心地よく感じたよ。"),
+                    ("It took me a few months to feel at home in Berlin.", "ベルリンに馴染むまで数ヶ月かかったよ。")
+                 ], ipa: "/ˌfiːl ət ˈhəʊm/"),
+            make("do the cooking", "to prepare the meals, usually as a regular household job",
+                 "料理を担当する・ご飯を作る",
+                 useCases: ["家事の分担を話すとき", "誰が料理するか決めるとき"],
+                 examples: [
+                    ("I'll do the cooking if you do the washing-up.", "皿洗いしてくれるなら料理は私がやるよ。"),
+                    ("My dad usually does the cooking at weekends.", "週末はたいてい父がご飯を作るんだ。")
+                 ], ipa: "/ˌduː ðə ˈkʊkɪŋ/"),
+            make("water the plants", "to give plants water so they stay healthy",
+                 "植物に水をやる",
+                 useCases: ["留守中のお願いをするとき", "家事を話すとき"],
+                 examples: [
+                    ("Could you water the plants while I'm away?", "留守の間、植物に水やってくれる？"),
+                    ("I forgot to water the plants and now they look sad.", "水やり忘れて、植物がしおれちゃった。")
+                 ], ipa: "/ˌwɔːtə ðə ˈplɑːnts/"),
+            make("the weather forecast", "a report saying what the weather is expected to be like",
+                 "天気予報",
+                 useCases: ["予定を立てる前に", "天気の話をするとき"],
+                 examples: [
+                    ("Have you checked the weather forecast for Saturday?", "土曜の天気予報見た？"),
+                    ("The weather forecast said sunshine, but it's raining again.", "天気予報は晴れだったのに、また雨だよ。")
+                 ], ipa: "/ðə ˈweðə ˌfɔːkɑːst/"),
+            make("it's windy", "used to say there is a lot of wind",
+                 "風が強い",
+                 useCases: ["天気の話をするとき", "服装や外出を相談するとき"],
+                 examples: [
+                    ("It's really windy today — hold on to your hat!", "今日は風が強いね、帽子飛ばされないように！"),
+                    ("It's too windy to sit outside.", "風が強すぎて外の席は無理だね。")
+                 ], ipa: "/ɪts ˈwɪndi/"),
+            make("turn it off and on again", "to switch a device off and then on, often to fix a problem",
+                 "一回電源を切って入れ直す・再起動する",
+                 useCases: ["機器の不調に対処するとき", "人にアドバイスするとき"],
+                 examples: [
+                    ("The Wi-Fi's not working. — Have you tried turning it off and on again?", "Wi-Fiが繋がらない。—一回電源切って入れ直してみた？"),
+                    ("I turned it off and on again and now it works fine.", "再起動したら普通に動いたよ。")
+                 ], ipa: "/ˌtɜːn ɪt ˈɒf ən ˈɒn əˌɡen/"),
+            make("take an umbrella", "to bring an umbrella with you in case it rains",
+                 "傘を持っていく",
+                 useCases: ["出かける人に声をかけるとき", "天気を気にするとき"],
+                 examples: [
+                    ("Take an umbrella — it's supposed to rain later.", "傘持っていきなよ、後で雨らしいよ。"),
+                    ("I didn't take an umbrella and got completely soaked.", "傘持っていかなくてずぶ濡れになったよ。")
+                 ], ipa: "/ˌteɪk ən ʌmˈbrelə/"),
+            make("order online", "to buy something on the internet",
+                 "ネットで注文する",
+                 useCases: ["買い物の方法を話すとき", "店に在庫がないとき"],
+                 examples: [
+                    ("They didn't have my size, so I ordered it online.", "サイズがなかったからネットで注文したよ。"),
+                    ("It's cheaper if you order online.", "ネットで注文した方が安いよ。")
+                 ], ipa: "/ˌɔːdər ɒnˈlaɪn/"),
+            make("get it delivered", "to have something brought to your home instead of collecting it yourself",
+                 "配達してもらう・届けてもらう",
+                 useCases: ["買い物や食事の受け取り方を話すとき", "重い物を買うとき"],
+                 examples: [
+                    ("The sofa's too big for the car, so we'll get it delivered.", "ソファは車に入らないから配達してもらおう。"),
+                    ("Shall we go out or just get pizza delivered?", "外に出る？それともピザ届けてもらう？")
+                 ], ipa: "/ˌɡet ɪt dɪˈlɪvəd/"),
+            make("in a good mood", "feeling happy and cheerful",
+                 "機嫌がいい",
+                 useCases: ["人の様子を話すとき", "頼み事のタイミングを計るとき"],
+                 examples: [
+                    ("You're in a good mood today! What happened?", "今日はご機嫌だね！何かあった？"),
+                    ("Ask the boss now — she's in a good mood.", "今上司に聞いてみなよ、機嫌いいから。")
+                 ], ipa: "/ɪn ə ˌɡʊd ˈmuːd/"),
+        ]
+    }
+    private static var britishColloquial224: [Word] {
+        [
+            make("lose weight", "to become thinner and lighter",
+                 "痩せる・体重を落とす",
+                 useCases: ["ダイエットの話をするとき", "誰かの見た目の変化に触れるとき"],
+                 examples: [
+                    ("I'm trying to lose weight before the summer.", "夏までに痩せようと頑張ってるんだ。"),
+                    ("Have you lost weight? You look great!", "痩せた？すごくいい感じだね！")
+                 ], ipa: "/ˌluːz ˈweɪt/"),
+            make("get married", "to become husband and wife; to have a wedding",
+                 "結婚する",
+                 useCases: ["結婚の予定を話すとき", "友人の近況を伝えるとき"],
+                 examples: [
+                    ("My sister's getting married in June.", "姉が6月に結婚するんだ。"),
+                    ("When did you two get married?", "お二人はいつ結婚したの？")
+                 ], ipa: "/ˌɡet ˈmærid/"),
+            make("see a doctor", "to visit a doctor to get medical advice or treatment",
+                 "医者に診てもらう",
+                 useCases: ["体調が悪い人に勧めるとき", "病院に行くことを伝えるとき"],
+                 examples: [
+                    ("That cough sounds bad — you should see a doctor.", "その咳ひどそうだよ、医者に診てもらった方がいい。"),
+                    ("I'm seeing a doctor about my back tomorrow.", "明日、腰のことで医者に診てもらうんだ。")
+                 ], ipa: "/ˌsiː ə ˈdɒktə/"),
+            make("apply for", "to formally ask for something such as a job, visa or place on a course",
+                 "〜に応募する・〜を申請する",
+                 useCases: ["仕事探しの話をするとき", "ビザや手続きの話をするとき"],
+                 examples: [
+                    ("I've applied for a job at a bank in Dublin.", "ダブリンの銀行の仕事に応募したんだ。"),
+                    ("You need to apply for a visa at least a month before.", "ビザは少なくとも1ヶ月前に申請しないとだめだよ。")
+                 ], ipa: "/əˈplaɪ fə/"),
+            make("set the table", "to put plates, knives, forks, glasses etc. on the table before a meal",
+                 "食卓の準備をする",
+                 useCases: ["家族に手伝いを頼むとき", "食事の準備中に"],
+                 examples: [
+                    ("Can you set the table? Dinner's almost ready.", "テーブルの準備してくれる？もうすぐご飯できるから。"),
+                    ("The kids always fight over who sets the table.", "子どもたちはいつも誰が食卓の準備をするかで揉めるんだ。")
+                 ], ipa: "/ˌset ðə ˈteɪbl/"),
+            make("pass an exam", "to succeed in a test by getting a high enough mark",
+                 "試験に合格する",
+                 useCases: ["試験結果を報告するとき", "受験する人を励ますとき"],
+                 examples: [
+                    ("Guess what — I passed my driving test!", "聞いて、運転免許の試験受かったよ！"),
+                    ("Don't worry, I'm sure you'll pass the exam.", "大丈夫、絶対合格するよ。")
+                 ], ipa: "/ˌpɑːs ən ɪɡˈzæm/"),
+            make("go on a diet", "to start eating less or eating only certain foods in order to lose weight",
+                 "ダイエットを始める",
+                 useCases: ["食事制限を始めると宣言するとき", "食べ過ぎた後の冗談で"],
+                 examples: [
+                    ("After all that Christmas food, I need to go on a diet.", "クリスマスにあれだけ食べたから、ダイエットしないと。"),
+                    ("No cake for me, thanks — I'm on a diet.", "ケーキはいいや、ありがとう。ダイエット中なんだ。")
+                 ], ipa: "/ˌɡəʊ ɒn ə ˈdaɪət/"),
+            make("miss the train", "to arrive too late to get on a train",
+                 "電車に乗り遅れる",
+                 useCases: ["遅刻の理由を説明するとき", "急がせるとき"],
+                 examples: [
+                    ("Sorry I'm late — I missed the train.", "遅れてごめん、電車に乗り遅れちゃった。"),
+                    ("Hurry up or we'll miss the train!", "急いで、電車に乗り遅れるよ！")
+                 ], ipa: "/ˌmɪs ðə ˈtreɪn/"),
+            make("take the stairs", "to walk up or down the stairs instead of using the lift",
+                 "階段を使う",
+                 useCases: ["エレベーターが混んでいるとき", "運動の話をするとき"],
+                 examples: [
+                    ("The lift's out of order, so we'll have to take the stairs.", "エレベーター故障中だから、階段で行くしかないね。"),
+                    ("I always take the stairs — it's my only exercise!", "いつも階段使ってるんだ、唯一の運動だよ！")
+                 ], ipa: "/ˌteɪk ðə ˈsteəz/"),
+            make("have a good time", "to enjoy yourself",
+                 "楽しむ・楽しく過ごす",
+                 useCases: ["出かける人を見送るとき", "イベントの感想を聞くとき"],
+                 examples: [
+                    ("Have a good time at the party tonight!", "今夜のパーティー楽しんでね！"),
+                    ("Did you have a good time in Lisbon?", "リスボン楽しかった？")
+                 ], ipa: "/ˌhæv ə ɡʊd ˈtaɪm/"),
+            make("pop out", "(informal) to go out for a short time",
+                 "ちょっと出かける・ちょっと外す",
+                 useCases: ["少しだけ外出することを伝えるとき", "電話で不在を伝えるとき"],
+                 examples: [
+                    ("I'm just popping out to get some bread.", "ちょっとパン買いに出てくるね。"),
+                    ("Sorry, she's just popped out — can I take a message?", "すみません、彼女ちょっと席を外していて。伝言を承りましょうか？")
+                 ], ipa: "/ˌpɒp ˈaʊt/"),
+            make("make a phone call", "to use the phone to speak to someone",
+                 "電話をかける",
+                 useCases: ["電話のために席を外すとき", "電話を借りたいとき"],
+                 examples: [
+                    ("Excuse me, I just need to make a quick phone call.", "すみません、ちょっと電話をかけてきます。"),
+                    ("Can I use your phone to make a call? Mine's dead.", "電話借りてもいい？自分のは電池切れで。")
+                 ], ipa: "/ˌmeɪk ə ˈfəʊn kɔːl/"),
+            make("get a job", "to find work and be employed",
+                 "仕事に就く・就職する",
+                 useCases: ["就職の報告をするとき", "仕事探しについて話すとき"],
+                 examples: [
+                    ("She got a job at a hotel in Vienna.", "彼女、ウィーンのホテルに就職したんだ。"),
+                    ("I need to get a job — I'm running out of money.", "仕事見つけないと、お金がなくなってきた。")
+                 ], ipa: "/ˌɡet ə ˈdʒɒb/"),
+            make("rent a car", "to pay to use a car for a short time, e.g. on holiday",
+                 "レンタカーを借りる",
+                 useCases: ["旅行の計画を立てるとき", "移動手段を相談するとき"],
+                 examples: [
+                    ("Let's rent a car and drive along the coast.", "レンタカー借りて海沿いをドライブしようよ。"),
+                    ("It's cheaper to rent a car at the airport.", "空港でレンタカー借りる方が安いよ。")
+                 ], ipa: "/ˌrent ə ˈkɑː/"),
+            make("do your best", "to try as hard as you can",
+                 "全力を尽くす・頑張る",
+                 useCases: ["誰かを励ますとき", "自分の決意を伝えるとき"],
+                 examples: [
+                    ("Just do your best — that's all anyone can ask.", "とにかくベストを尽くせばいいよ、それ以上誰も求めないから。"),
+                    ("I can't promise anything, but I'll do my best.", "約束はできないけど、できる限り頑張るよ。")
+                 ], ipa: "/ˌduː jə ˈbest/"),
+        ]
+    }
+    private static var britishColloquial225: [Word] {
+        [
+            make("keep a secret", "to not tell anyone something that you have been told privately",
+                 "秘密を守る",
+                 useCases: ["内緒話を打ち明けるとき", "誰かが口が軽いと話すとき"],
+                 examples: [
+                    ("Can you keep a secret? I'm handing in my notice next week.", "秘密守れる？来週退職届を出すんだ。"),
+                    ("Don't tell Tom — he can't keep a secret to save his life.", "トムには言わないで。あいつ本当に秘密を守れないから。")
+                 ], ipa: "/ˌkiːp ə ˈsiːkrət/"),
+            make("lose it", "to suddenly become very angry, upset or unable to stop laughing",
+                 "キレる・取り乱す・笑いが止まらなくなる",
+                 useCases: ["我慢の限界を超えたとき", "大笑いした場面を話すとき"],
+                 examples: [
+                    ("When he kept interrupting, I just lost it.", "あいつがずっと話を遮るから、ついキレちゃった。"),
+                    ("He pulled such a funny face that we all lost it.", "あいつがあまりに変な顔をするから、みんな爆笑しちゃった。")
+                 ], ipa: "/ˈluːz ɪt/"),
+            make("snap at", "to speak to someone suddenly in an angry or unfriendly way",
+                 "〜にきつく当たる・〜に八つ当たりする",
+                 useCases: ["イライラして言い過ぎたことを謝るとき", "疲れている人の態度を話すとき"],
+                 examples: [
+                    ("Sorry I snapped at you earlier — I'm just really tired.", "さっきはきつく当たってごめん。すごく疲れてて。"),
+                    ("There's no need to snap at me, I was only asking.", "そんなに怒らなくてもいいじゃん、聞いただけだよ。")
+                 ], ipa: "/ˈsnæp æt/"),
+            make("splurge", "to spend more money than usual on something nice, as a treat",
+                 "奮発する・パーッとお金を使う",
+                 useCases: ["ご褒美に高い買い物をしたとき", "旅行や食事で贅沢する話をするとき"],
+                 examples: [
+                    ("I splurged on a really nice coat in the sales.", "セールでいいコートを奮発して買っちゃった。"),
+                    ("It's our anniversary, so let's splurge on a fancy dinner.", "記念日だし、豪華なディナーで奮発しようよ。")
+                 ], ipa: "/splɜːdʒ/"),
+            make("Plan B", "a second plan to use if the first one doesn't work",
+                 "代わりの案・次の手",
+                 useCases: ["予定が崩れたときに", "念のための代案を考えるとき"],
+                 examples: [
+                    ("If it rains, what's Plan B?", "雨が降ったら、代わりの案はどうする？"),
+                    ("The restaurant's fully booked, so we need a Plan B.", "レストランが満席だから、別の手を考えないと。")
+                 ], ipa: "/ˌplæn ˈbiː/"),
+            make("disgusting", "extremely unpleasant to taste, smell, look at or think about",
+                 "気持ち悪い・ひどくまずい・最低な",
+                 useCases: ["食べ物や匂いがひどいとき", "人の行動に呆れたとき"],
+                 examples: [
+                    ("This coffee's been sitting here all day — it's disgusting.", "このコーヒー一日中置きっぱなしだったから、まずすぎる。"),
+                    ("The way he spoke to the waiter was disgusting.", "あの人のウェイターへの話し方は最低だった。")
+                 ], ipa: "/dɪsˈɡʌstɪŋ/"),
+            make("yuck", "used to show that you think something is very unpleasant",
+                 "うえっ・げっ（嫌悪感）",
+                 useCases: ["嫌いな食べ物を見たとき", "汚いものに触れたとき"],
+                 examples: [
+                    ("Yuck, there's a hair in my soup!", "うえっ、スープに髪の毛入ってる！"),
+                    ("Olives? Yuck, I can't stand them.", "オリーブ？げっ、無理なんだよね。")
+                 ], ipa: "/jʌk/"),
+            make("unfortunately", "used to say that something is sad, disappointing or not what you hoped",
+                 "残念ながら・あいにく",
+                 useCases: ["誘いや依頼を丁寧に断るとき", "悪い知らせを伝えるとき"],
+                 examples: [
+                    ("Unfortunately, I can't make it on Saturday.", "残念ながら、土曜日は行けないんだ。"),
+                    ("We wanted to go to the beach, but unfortunately it poured down.", "ビーチに行きたかったけど、あいにく土砂降りだった。")
+                 ], ipa: "/ʌnˈfɔːtʃənətli/"),
+            make("have butterflies", "to feel nervous and excited, especially before something important",
+                 "（緊張で）そわそわする・ドキドキする",
+                 useCases: ["面接や発表の前に", "初デートの前の気持ちを話すとき"],
+                 examples: [
+                    ("I've got butterflies — my interview's in ten minutes.", "緊張してきた。面接まであと10分なんだ。"),
+                    ("I always have butterflies before I go on stage.", "舞台に上がる前はいつもドキドキするんだ。")
+                 ], ipa: "/ˌhæv ˈbʌtəflaɪz/"),
+            make("terrified", "extremely frightened",
+                 "すごく怖い・怖くてたまらない",
+                 useCases: ["苦手なものを話すとき", "怖かった体験を話すとき"],
+                 examples: [
+                    ("I'm terrified of spiders.", "クモが本当に怖いんだ。"),
+                    ("I was terrified the first time I drove on the motorway.", "初めて高速道路を運転したときは怖くてたまらなかった。")
+                 ], ipa: "/ˈterɪfaɪd/"),
+            make("devastated", "extremely upset and shocked by bad news or a loss",
+                 "打ちのめされた・ひどくショックを受けた",
+                 useCases: ["悲しい知らせを受けたとき", "大きな失望を表すとき"],
+                 examples: [
+                    ("She was devastated when her dog died.", "犬が死んだとき、彼女は打ちのめされてた。"),
+                    ("I was devastated when I didn't get the job.", "その仕事に受からなくて、本当にショックだった。")
+                 ], ipa: "/ˈdevəsteɪtɪd/"),
+            make("heartbroken", "extremely sad, especially because of a relationship ending or a loss",
+                 "悲しみに暮れた・失恋して傷ついた",
+                 useCases: ["失恋した友人の話をするとき", "大切なものを失ったとき"],
+                 examples: [
+                    ("He's heartbroken since she left him.", "彼女に振られてから、あいつはすっかり落ち込んでる。"),
+                    ("The kids were heartbroken when we had to give the cat away.", "猫を手放すことになって、子どもたちはひどく悲しんだ。")
+                 ], ipa: "/ˈhɑːtbrəʊkən/"),
+            make("boring", "not interesting; making you feel bored",
+                 "つまらない・退屈な",
+                 useCases: ["映画や授業の感想を言うとき", "bored（退屈している）との違いに注意して"],
+                 examples: [
+                    ("The film was so boring I fell asleep.", "その映画、つまらなすぎて寝ちゃった。"),
+                    ("Sorry, am I being boring? I'll stop going on about work.", "ごめん、退屈だった？仕事の話はもうやめるね。")
+                 ], ipa: "/ˈbɔːrɪŋ/"),
+            make("lonely", "unhappy because you are alone or have no one to talk to",
+                 "寂しい・孤独な",
+                 useCases: ["一人暮らしや海外生活の気持ちを話すとき", "誰かを気遣うとき"],
+                 examples: [
+                    ("It got a bit lonely when I first moved to Berlin.", "ベルリンに引っ越したばかりの頃は、ちょっと寂しかった。"),
+                    ("Give your gran a call — she gets lonely.", "おばあちゃんに電話してあげて。寂しがってるから。")
+                 ], ipa: "/ˈləʊnli/"),
+            make("I'm touched", "used to say that someone's kindness has made you feel emotional and grateful",
+                 "感動した・心にしみる",
+                 useCases: ["思いがけないプレゼントをもらったとき", "優しい言葉をかけられたとき"],
+                 examples: [
+                    ("You remembered my birthday? I'm touched!", "誕生日覚えててくれたの？うれしいな！"),
+                    ("I'm really touched that you all came.", "みんな来てくれて、本当に感動してる。")
+                 ], ipa: "/aɪm ˈtʌtʃt/"),
+        ]
+    }
+    private static var britishColloquial226: [Word] {
+        [
+            make("laid-back", "relaxed and calm, not easily worried or stressed",
+                 "のんびりした・おおらかな",
+                 useCases: ["人の性格を紹介するとき", "職場や街の雰囲気を説明するとき"],
+                 examples: [
+                    ("My new boss is really laid-back, which is a nice change.", "新しい上司はすごくおおらかで、前と違ってありがたい。"),
+                    ("Lisbon has such a laid-back vibe.", "リスボンってすごくのんびりした雰囲気だよね。")
+                 ], ipa: "/ˌleɪd ˈbæk/"),
+            make("down-to-earth", "practical, honest and friendly, without acting important",
+                 "気取らない・地に足がついた",
+                 useCases: ["有名人や上司の人柄を褒めるとき", "親しみやすい人を紹介するとき"],
+                 examples: [
+                    ("For someone so successful, she's really down-to-earth.", "あんなに成功してるのに、彼女は全然気取らないんだ。"),
+                    ("His parents are lovely — really down-to-earth people.", "彼の両親は素敵だよ。すごく気さくな人たち。")
+                 ], ipa: "/ˌdaʊn tʊ ˈɜːθ/"),
+            make("good fun", "enjoyable, or (of a person) entertaining to be with",
+                 "楽しい・一緒にいて楽しい",
+                 useCases: ["イベントの感想を言うとき", "人柄を紹介するとき"],
+                 examples: [
+                    ("The party was good fun — you should've come.", "パーティー楽しかったよ。来ればよかったのに。"),
+                    ("You'll like Anna, she's good fun.", "アンナのこと気に入ると思うよ。一緒にいて楽しい子だから。")
+                 ], ipa: "/ˌɡʊd ˈfʌn/"),
+            make("blurt out", "to say something suddenly without thinking, often by accident",
+                 "うっかり口走る・思わず言ってしまう",
+                 useCases: ["秘密をつい言ってしまったとき", "緊張して変なことを言ったとき"],
+                 examples: [
+                    ("I blurted out the surprise before I could stop myself.", "止める間もなくサプライズのことを口走っちゃった。"),
+                    ("He just blurted out the answer in the middle of the meeting.", "彼、会議の途中でいきなり答えを言っちゃったんだ。")
+                 ], ipa: "/ˌblɜːt ˈaʊt/"),
+            make("put your foot in it", "to say something by accident that embarrasses or upsets someone",
+                 "失言する・地雷を踏む",
+                 useCases: ["気まずいことを言ってしまったとき", "失言を振り返るとき"],
+                 examples: [
+                    ("I really put my foot in it when I asked about her ex.", "元カレのこと聞いちゃって、完全に地雷踏んだ。"),
+                    ("Don't mention the job — you'll put your foot in it.", "仕事の話はしないで。失言になるから。")
+                 ], ipa: "/ˌpʊt jə ˈfʊt ɪn ɪt/"),
+            make("I could kick myself", "used to say you are annoyed with yourself for a silly mistake",
+                 "自分が情けない・やっちゃった",
+                 useCases: ["うっかりミスを悔やむとき", "チャンスを逃したとき"],
+                 examples: [
+                    ("I left my passport at home — I could kick myself.", "パスポート家に忘れた。ほんと自分が情けない。"),
+                    ("I could kick myself for not buying the tickets earlier.", "もっと早くチケット買っとけばよかった、やっちゃったよ。")
+                 ], ipa: "/aɪ kʊd ˈkɪk maɪˌself/"),
+            make("sounds familiar", "used to say that you think you have heard or experienced something before",
+                 "聞き覚えがある・よくある話だね",
+                 useCases: ["名前や話に聞き覚えがあるとき", "相手の体験に共感するとき"],
+                 examples: [
+                    ("Mark Jensen? Hmm, the name sounds familiar.", "マーク・ジェンセン？うーん、聞き覚えがあるな。"),
+                    ("Late trains and no announcements? Sounds familiar.", "電車が遅れてアナウンスもなし？よくある話だね。")
+                 ], ipa: "/ˌsaʊndz fəˈmɪliə/"),
+            make("you've got me there", "used to admit that you don't know the answer or that someone has made a good point",
+                 "それは分からないな・一本取られた",
+                 useCases: ["答えが分からない質問をされたとき", "相手の指摘に反論できないとき"],
+                 examples: [
+                    ("\"What's the capital of Australia?\" \"Ooh, you've got me there.\"", "「オーストラリアの首都は？」「うーん、それは分からないな。」"),
+                    ("Okay, you've got me there — I did say I'd cook tonight.", "分かった、一本取られたよ。確かに今夜は僕が作るって言った。")
+                 ], ipa: "/juːv ˌɡɒt ˈmiː ðeə/"),
+            make("lots of love", "a warm, friendly way to end a message to family or close friends",
+                 "愛を込めて（手紙・メッセージの結び）",
+                 useCases: ["家族や親友へのメッセージを締めるとき", "カードに一言書くとき"],
+                 examples: [
+                    ("Have a lovely birthday! Lots of love, Emma x", "素敵な誕生日を！愛を込めて、エマより"),
+                    ("Can't wait to see you all at Christmas. Lots of love.", "クリスマスにみんなに会えるのが楽しみ。愛を込めて。")
+                 ], ipa: "/ˌlɒts əv ˈlʌv/"),
+            make("big-headed", "thinking that you are more important or clever than you are",
+                 "うぬぼれた・天狗になった",
+                 useCases: ["自慢ばかりする人について話すとき", "成功して態度が変わった人を話すとき"],
+                 examples: [
+                    ("Since his promotion he's got a bit big-headed.", "昇進してから、あいつちょっと天狗になってる。"),
+                    ("I don't want to sound big-headed, but I nailed that interview.", "うぬぼれてるように聞こえたら嫌だけど、あの面接は完璧だった。")
+                 ], ipa: "/ˌbɪɡ ˈhedɪd/"),
+            make("full of yourself", "too proud of yourself and thinking you are very important",
+                 "自信過剰な・自分大好きな",
+                 useCases: ["偉そうな人に呆れたとき", "人の態度を批判するとき"],
+                 examples: [
+                    ("He's nice enough, but a bit full of himself.", "悪い人じゃないけど、ちょっと自信過剰なんだよね。"),
+                    ("Don't get too full of yourself — it was only one goal!", "調子に乗るなよ、1点決めただけだろ！")
+                 ], ipa: "/ˌfʊl əv jɔːˈself/"),
+            make("control freak", "a person who always wants to be in charge of everything",
+                 "何でも仕切りたがる人・管理魔",
+                 useCases: ["何でも自分で決めたがる人について話すとき", "自分の性格を冗談めかして言うとき"],
+                 examples: [
+                    ("I'll plan the trip — I'm a bit of a control freak.", "旅行の計画は私が立てるよ。ちょっと仕切りたがりだから。"),
+                    ("My old manager was a total control freak.", "前の上司は完全に何でも仕切りたがる人だった。")
+                 ], ipa: "/kənˈtrəʊl friːk/"),
+            make("pushover", "a person who is easy to persuade or who never says no",
+                 "押しに弱い人・言いなりになる人",
+                 useCases: ["断れない性格について話すとき", "甘い親や上司について話すとき"],
+                 examples: [
+                    ("Ask Dad, he's a total pushover.", "パパに頼みなよ、押しに弱いから。"),
+                    ("I need to stop being such a pushover at work.", "職場で言いなりになるのはもうやめないと。")
+                 ], ipa: "/ˈpʊʃˌəʊvə/"),
+            make("easy to talk to", "friendly and relaxed, so people feel comfortable talking to you",
+                 "話しやすい",
+                 useCases: ["人柄を褒めるとき", "相談相手について話すとき"],
+                 examples: [
+                    ("I liked the doctor — she was really easy to talk to.", "あの先生よかったよ。すごく話しやすかった。"),
+                    ("He's easy to talk to, so everyone goes to him with problems.", "彼は話しやすいから、みんな悩みを相談しに行くんだ。")
+                 ], ipa: "/ˌiːzi tə ˈtɔːk tuː/"),
+            make("a good listener", "someone who listens carefully and with interest when others talk",
+                 "聞き上手",
+                 useCases: ["人柄を褒めるとき", "友達の良さを話すとき"],
+                 examples: [
+                    ("Thanks for tonight — you're such a good listener.", "今夜はありがとう。本当に聞き上手だね。"),
+                    ("I'm not much of a talker, but I'm a good listener.", "話すのは得意じゃないけど、聞き上手なんだ。")
+                 ], ipa: "/ə ˌɡʊd ˈlɪsnə/"),
+        ]
+    }
+    private static var britishColloquial227: [Word] {
+        [
+            make("in a pickle", "in a difficult or awkward situation",
+                 "困った状況で・窮地に陥って",
+                 useCases: ["トラブルで困っているとき", "助けを求めるとき"],
+                 examples: [
+                    ("I've locked myself out — I'm in a bit of a pickle.", "鍵を中に置いたまま締め出されちゃって、ちょっと困ってるんだ。"),
+                    ("Can you help me? I'm in a real pickle with this report.", "手伝ってくれる？このレポートで本当に困ってて。")
+                 ], ipa: "/ɪn ə ˈpɪkəl/"),
+            make("party pooper", "someone who spoils other people's fun",
+                 "場をしらけさせる人・ノリの悪い人",
+                 useCases: ["早く帰ろうとする友達をからかうとき", "楽しい場に水を差されたとき"],
+                 examples: [
+                    ("Don't be a party pooper — stay for one more!", "ノリ悪いこと言わないで、もう一杯いこうよ！"),
+                    ("Sorry to be a party pooper, but I've got work tomorrow.", "しらけさせてごめん、でも明日仕事なんだ。")
+                 ], ipa: "/ˈpɑːti ˌpuːpə/"),
+            make("rummage through", "to search for something by moving things around carelessly",
+                 "ガサゴソ探す・引っかき回して探す",
+                 useCases: ["カバンや引き出しの中を探すとき", "物が見つからないとき"],
+                 examples: [
+                    ("I rummaged through my bag but couldn't find my keys.", "カバンの中をガサゴソ探したけど、鍵が見つからなかった。"),
+                    ("Stop rummaging through my drawers!", "私の引き出しを勝手に漁らないで！")
+                 ], ipa: "/ˈrʌmɪdʒ θruː/"),
+            make("dawdle", "to move or do something very slowly, wasting time",
+                 "ぐずぐずする・だらだら歩く",
+                 useCases: ["急いでいるのに相手が遅いとき", "子どもを急かすとき"],
+                 examples: [
+                    ("Stop dawdling — we'll miss the train!", "ぐずぐずしないで、電車に乗り遅れるよ！"),
+                    ("Sorry I'm late, I was dawdling in the shops.", "遅れてごめん、お店でだらだらしちゃってた。")
+                 ], ipa: "/ˈdɔːdəl/"),
+            make("slack off", "to work less hard or with less effort than usual",
+                 "サボる・手を抜く",
+                 useCases: ["仕事や勉強で気が緩んだとき", "同僚の働きぶりを話すとき"],
+                 examples: [
+                    ("I've been slacking off at the gym lately.", "最近ジムをサボりがちなんだ。"),
+                    ("We can't slack off now — the deadline's on Friday.", "今は手を抜けないよ。締め切りは金曜なんだから。")
+                 ], ipa: "/ˌslæk ˈɒf/"),
+            make("tight-fisted", "unwilling to spend or give money",
+                 "けちな・財布のひもが固い",
+                 useCases: ["お金を出したがらない人について話すとき", "冗談で友達をからかうとき"],
+                 examples: [
+                    ("He's so tight-fisted he won't even buy a round.", "あいつケチすぎて、一杯もおごらないんだよ。"),
+                    ("Don't be tight-fisted — it's her birthday!", "ケチケチしないで、彼女の誕生日なんだから！")
+                 ], ipa: "/ˌtaɪt ˈfɪstɪd/"),
+            make("up for it", "willing and keen to do something",
+                 "乗り気で・やる気がある",
+                 useCases: ["誘いに乗るか聞くとき", "挑戦する気があるか確かめるとき"],
+                 examples: [
+                    ("We're going for a hike on Sunday — are you up for it?", "日曜にハイキング行くんだけど、乗る？"),
+                    ("I'm tired, but I'm still up for it.", "疲れてるけど、まだ行く気はあるよ。")
+                 ], ipa: "/ˌʌp fər ɪt/"),
+            make("lost cause", "someone or something that has no chance of success or improvement",
+                 "見込みのないもの・お手上げ",
+                 useCases: ["何をしても改善しないとき", "冗談で自分を卑下するとき"],
+                 examples: [
+                    ("I've tried to teach him to cook, but he's a lost cause.", "彼に料理を教えようとしたけど、もうお手上げだよ。"),
+                    ("Don't give up — it's not a lost cause yet.", "諦めないで。まだ見込みがないわけじゃないよ。")
+                 ], ipa: "/ˌlɒst ˈkɔːz/"),
+            make("half-hearted", "done without much enthusiasm or effort",
+                 "気乗りしない・中途半端な",
+                 useCases: ["やる気のない態度を指摘するとき", "形だけの謝罪や努力について話すとき"],
+                 examples: [
+                    ("That was a pretty half-hearted apology.", "ずいぶん気持ちのこもってない謝罪だったね。"),
+                    ("I made a half-hearted attempt to tidy up.", "一応片付けようとはしたんだけど、中途半端で。")
+                 ], ipa: "/ˌhɑːf ˈhɑːtɪd/"),
+            make("don't jinx it", "don't say something that might cause bad luck by talking about good things too early",
+                 "縁起でもないこと言わないで・フラグ立てないで",
+                 useCases: ["物事が順調なときに楽観的な発言をされたとき", "結果が出る前に喜ばれたとき"],
+                 examples: [
+                    ("\"We're definitely going to win.\" \"Don't jinx it!\"", "「絶対勝てるよ」「フラグ立てないで！」"),
+                    ("The flight's on time so far — don't jinx it.", "今のところ飛行機は定刻だよ。余計なこと言わないでね。")
+                 ], ipa: "/ˌdəʊnt ˈdʒɪŋks ɪt/"),
+            make("tacky", "cheap-looking and in bad taste",
+                 "安っぽい・ダサい・悪趣味な",
+                 useCases: ["お土産や装飾の感想を言うとき", "センスについて話すとき"],
+                 examples: [
+                    ("The souvenirs were a bit tacky, to be honest.", "正直、お土産はちょっと安っぽかったな。"),
+                    ("Is it tacky to wear white to a wedding?", "結婚式に白を着るのって悪趣味かな？")
+                 ], ipa: "/ˈtæki/"),
+            make("fuming", "extremely angry",
+                 "カンカンに怒っている",
+                 useCases: ["誰かが激怒しているとき", "自分が腹を立てたことを話すとき"],
+                 examples: [
+                    ("She was fuming when she found out.", "それを知ったとき、彼女はカンカンだったよ。"),
+                    ("I'm absolutely fuming — they cancelled my flight again.", "もう本当に頭にきてる。また便が欠航になったんだ。")
+                 ], ipa: "/ˈfjuːmɪŋ/"),
+            make("sloppy", "careless and not done properly",
+                 "雑な・いい加減な",
+                 useCases: ["仕事の質を指摘するとき", "自分のミスを反省するとき"],
+                 examples: [
+                    ("Sorry, that was a bit sloppy of me.", "ごめん、ちょっと雑だったね。"),
+                    ("The service was really sloppy tonight.", "今夜のサービスは本当にいい加減だった。")
+                 ], ipa: "/ˈslɒpi/"),
+            make("nibbles", "small snacks served with drinks, e.g. at a party",
+                 "おつまみ・軽食",
+                 useCases: ["家に人を招くとき", "パーティーの準備をするとき"],
+                 examples: [
+                    ("Come round at seven — there'll be drinks and nibbles.", "7時においでよ。飲み物とおつまみ用意しとくから。"),
+                    ("I'll bring some nibbles for later.", "あとで食べるおつまみ持っていくね。")
+                 ], ipa: "/ˈnɪbəlz/"),
+            make("hard up", "not having much money",
+                 "金欠で・お金に困って",
+                 useCases: ["お金がなくて誘いを断るとき", "生活が苦しい時期を話すとき"],
+                 examples: [
+                    ("I'm a bit hard up this month, so I'll skip dinner.", "今月ちょっと金欠だから、夕食はパスするね。"),
+                    ("We were pretty hard up when we were students.", "学生の頃はけっこうお金に困ってたよ。")
+                 ], ipa: "/ˌhɑːd ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial228: [Word] {
+        [
+            make("throw out", "to get rid of something you no longer want",
+                 "捨てる・処分する",
+                 useCases: ["片付けや断捨離をするとき", "古くなった物を処分するとき"],
+                 examples: [
+                    ("I finally threw out all my old magazines.", "やっと古い雑誌を全部捨てたよ。"),
+                    ("Don't throw that out — I still need it!", "それ捨てないで、まだ使うんだから！")
+                 ], ipa: "/ˌθrəʊ ˈaʊt/"),
+            make("the best bit", "the most enjoyable or impressive part of something",
+                 "一番良かったところ・一番の見どころ",
+                 useCases: ["映画や旅行の感想を話すとき", "出来事のハイライトを伝えるとき"],
+                 examples: [
+                    ("The best bit of the trip was the food.", "旅行で一番良かったのは食べ物だね。"),
+                    ("Wait for it — this is the best bit!", "待って、ここからが一番いいところなんだ！")
+                 ], ipa: "/ðə ˌbest ˈbɪt/"),
+            make("well deserved", "fully earned because of hard work or good qualities",
+                 "当然の・頑張った甲斐のある",
+                 useCases: ["昇進や合格を祝うとき", "休暇を取る人に声をかけるとき"],
+                 examples: [
+                    ("Congrats on the promotion — it's well deserved!", "昇進おめでとう、当然の結果だよ！"),
+                    ("Enjoy your holiday, it's well deserved.", "休暇楽しんでね、それだけ頑張ったんだから。")
+                 ], ipa: "/ˌwel dɪˈzɜːvd/"),
+            make("be itching to", "to be very eager to do something",
+                 "〜したくてうずうずしている",
+                 useCases: ["何かを早くやりたいとき", "待ちきれない気持ちを伝えるとき"],
+                 examples: [
+                    ("I'm itching to get back on the slopes this winter.", "この冬、早くまたスキーに行きたくてうずうずしてる。"),
+                    ("She's been itching to tell you the news.", "彼女、ずっとあなたにその話をしたくてうずうずしてたよ。")
+                 ], ipa: "/biː ˈɪtʃɪŋ tuː/"),
+            make("forget about it", "don't worry about it; it's not important",
+                 "気にしないで・もういいよ",
+                 useCases: ["謝られたときに返すとき", "お礼を言われて遠慮するとき"],
+                 examples: [
+                    ("\"Sorry I'm late.\" \"Forget about it, we've only just sat down.\"", "「遅れてごめん」「気にしないで、今座ったところだから」"),
+                    ("Forget about it — you can pay me back whenever.", "いいって、いつでも返してくれればいいから。")
+                 ], ipa: "/fəˈɡet əˌbaʊt ɪt/"),
+            make("bless him", "(informal) used to show affection or sympathy for someone, often after describing something sweet or unlucky they did",
+                 "（あら）かわいいね・かわいそうに",
+                 useCases: ["子どもや友人の健気な行動を話すとき", "誰かに同情するとき"],
+                 examples: [
+                    ("He made me breakfast in bed, bless him.", "ベッドに朝ごはん持ってきてくれたの、かわいいよね。"),
+                    ("Aw, bless her — she's been working all weekend.", "あらら、かわいそうに。彼女、週末ずっと働いてたんだよ。")
+                 ], ipa: "/ˈbles ɪm/"),
+            make("clear my head", "to stop feeling stressed or confused so you can think properly",
+                 "頭をすっきりさせる・気分転換する",
+                 useCases: ["散歩や休憩に出るとき", "考えがまとまらないとき"],
+                 examples: [
+                    ("I'm going for a walk to clear my head.", "頭をすっきりさせるのにちょっと散歩してくるね。"),
+                    ("A swim always helps me clear my head.", "泳ぐといつも頭がすっきりするんだ。")
+                 ], ipa: "/ˌklɪə maɪ ˈhed/"),
+            make("hang tight", "(informal) to wait patiently for a short time",
+                 "ちょっと待ってて・そのまま待機して",
+                 useCases: ["相手に少し待ってもらうとき", "結果を待っている人を励ますとき"],
+                 examples: [
+                    ("Hang tight, I'll be there in ten minutes.", "ちょっと待ってて、10分で着くから。"),
+                    ("We haven't heard back yet, so just hang tight.", "まだ返事が来てないから、もう少し待ってて。")
+                 ], ipa: "/ˌhæŋ ˈtaɪt/"),
+            make("in a tick", "(British, informal) very soon; in a moment",
+                 "すぐに・ちょっと待ってね",
+                 useCases: ["すぐ戻ると伝えるとき", "少しだけ待ってもらうとき"],
+                 examples: [
+                    ("I'll be with you in a tick.", "すぐ行くからちょっと待ってね。"),
+                    ("Back in a tick — just grabbing my coat.", "すぐ戻るね、コート取ってくるだけ。")
+                 ], ipa: "/ɪn ə ˈtɪk/"),
+            make("dead right", "(British, informal) completely correct",
+                 "全くその通り・大正解",
+                 useCases: ["相手の意見に強く同意するとき", "予想が当たったとき"],
+                 examples: [
+                    ("You were dead right about that restaurant — it was amazing.", "あのレストランについては君の言う通りだった、最高だったよ。"),
+                    ("\"We should leave early to beat the traffic.\" \"Dead right.\"", "「渋滞を避けるために早めに出よう」「その通りだね」")
+                 ], ipa: "/ˌded ˈraɪt/"),
+            make("a spot of", "(British, informal) a small amount of something",
+                 "ちょっとした〜・少しの〜",
+                 useCases: ["軽い食事や活動に誘うとき", "ちょっとしたトラブルを控えめに言うとき"],
+                 examples: [
+                    ("Fancy a spot of lunch?", "ちょっとランチでもどう？"),
+                    ("We had a spot of bother with the car on the way.", "途中で車にちょっとしたトラブルがあってね。")
+                 ], ipa: "/ə ˈspɒt əv/"),
+            make("rock up", "(British, informal) to arrive somewhere, often casually or late",
+                 "（ふらっと）現れる・やって来る",
+                 useCases: ["遅れて来た人について話すとき", "気軽に到着することを伝えるとき"],
+                 examples: [
+                    ("He rocked up an hour late without even apologising.", "彼、1時間遅れてふらっと来て、謝りもしなかったよ。"),
+                    ("Just rock up whenever — we'll be there all afternoon.", "いつでも気軽に来てよ、午後はずっといるから。")
+                 ], ipa: "/ˌrɒk ˈʌp/"),
+            make("get your bearings", "to find out where you are or become familiar with a new place or situation",
+                 "方向感覚をつかむ・状況に慣れる",
+                 useCases: ["知らない街に着いたとき", "新しい職場に慣れるとき"],
+                 examples: [
+                    ("Give me a minute to get my bearings — which way is the station?", "ちょっと方向を確認させて、駅はどっち？"),
+                    ("It took me a few weeks to get my bearings at the new job.", "新しい仕事に慣れるのに数週間かかったよ。")
+                 ], ipa: "/ˌɡet jɔː ˈbeərɪŋz/"),
+            make("I'll go with", "(informal) used when choosing something, especially when ordering food or drink",
+                 "〜にします",
+                 useCases: ["レストランで注文するとき", "選択肢から選ぶとき"],
+                 examples: [
+                    ("I think I'll go with the fish, please.", "魚料理にしようかな、お願いします。"),
+                    ("Hmm, tough choice — I'll go with the blue one.", "うーん、迷うけど青い方にするよ。")
+                 ], ipa: "/aɪl ˈɡəʊ wɪð/"),
+            make("fill up on", "to eat a lot of one food so that you have no room for anything else",
+                 "〜でお腹いっぱいになる",
+                 useCases: ["食事の前におやつを食べ過ぎたとき", "メインのために控えるよう注意するとき"],
+                 examples: [
+                    ("Don't fill up on bread — the mains are huge.", "パンでお腹いっぱいにしないでね、メインがすごい量だから。"),
+                    ("I filled up on snacks and couldn't eat my dinner.", "おやつでお腹いっぱいになって夕食が食べられなかった。")
+                 ], ipa: "/ˌfɪl ˈʌp ɒn/"),
+        ]
+    }
+    private static var britishColloquial229: [Word] {
+        [
+            make("set up", "to prepare or arrange something so that it is ready to use or happen",
+                 "準備する・設定する・立ち上げる",
+                 useCases: ["機器やアカウントの設定をするとき", "会議やイベントの準備をするとき"],
+                 examples: [
+                    ("Can you help me set up my new phone?", "新しいスマホの設定、手伝ってくれる？"),
+                    ("I'll set up a quick call for tomorrow morning.", "明日の朝、ちょっと電話会議をセッティングしておくね。")
+                 ], ipa: "/ˌset ˈʌp/"),
+            make("stay on top of", "to keep control of something by dealing with it regularly so it doesn't build up",
+                 "〜をきちんと把握しておく・溜めないようにする",
+                 useCases: ["仕事や家事を溜めないようにするとき", "メールや予定を管理するとき"],
+                 examples: [
+                    ("I'm trying to stay on top of my emails this week.", "今週はメールを溜めないように頑張ってるんだ。"),
+                    ("It's hard to stay on top of the housework with two kids.", "子ども二人いると家事を回すのが大変だよ。")
+                 ], ipa: "/ˌsteɪ ɒn ˈtɒp ɒv/"),
+            make("pass by", "to go past a person or place, often on the way somewhere else",
+                 "（〜のそばを）通りかかる・通り過ぎる",
+                 useCases: ["ついでに立ち寄ることを伝えるとき", "道中で見かけたものを話すとき"],
+                 examples: [
+                    ("I passed by your old flat on the way here.", "ここに来る途中、君の前のアパートの前を通ったよ。"),
+                    ("If you pass by the bakery, could you grab some bread?", "パン屋の前を通るならパン買ってきてくれる？")
+                 ], ipa: "/ˌpɑːs ˈbaɪ/"),
+            make("check with", "to ask someone for permission or information before you decide something",
+                 "〜に確認する・〜に聞いてみる",
+                 useCases: ["予定を即答できないとき", "上司や家族の了承が必要なとき"],
+                 examples: [
+                    ("Let me check with my partner and get back to you.", "パートナーに確認してから連絡するね。"),
+                    ("I'll need to check with my boss first.", "まず上司に確認しないと。")
+                 ], ipa: "/ˈtʃek wɪð/"),
+            make("out of shape", "not physically fit because you haven't been exercising",
+                 "体がなまっている・運動不足",
+                 useCases: ["久しぶりに運動して疲れたとき", "体力の衰えを話すとき"],
+                 examples: [
+                    ("I'm so out of shape — I got tired walking up the stairs.", "体なまりすぎて、階段上るだけで疲れたよ。"),
+                    ("I got a bit out of shape over the winter.", "冬の間にちょっと体がなまっちゃった。")
+                 ], ipa: "/ˌaʊt əv ˈʃeɪp/"),
+            make("not yet", "used to say that something has not happened so far but probably will",
+                 "まだ（だよ）",
+                 useCases: ["「もう〜した？」と聞かれたとき", "進捗を聞かれたとき"],
+                 examples: [
+                    ("\"Have you seen the new series?\" \"Not yet, but I really want to.\"", "「新シリーズ見た？」「まだだけど、すごく見たい」"),
+                    ("\"Are we there yet?\" \"Not yet — about ten more minutes.\"", "「もう着く？」「まだだよ、あと10分くらい」")
+                 ], ipa: "/ˌnɒt ˈjet/"),
+            make("thankfully", "used to say that you are glad something happened or didn't happen",
+                 "ありがたいことに・幸い",
+                 useCases: ["トラブルが大事に至らなかったとき", "ほっとした出来事を話すとき"],
+                 examples: [
+                    ("Thankfully, nobody was hurt.", "幸い、誰もけがをしなかった。"),
+                    ("The train was late, but thankfully I still made the meeting.", "電車が遅れたけど、ありがたいことに会議には間に合ったよ。")
+                 ], ipa: "/ˈθæŋkfəli/"),
+            make("in a little while", "soon; after a short period of time",
+                 "もう少ししたら・ちょっと後で",
+                 useCases: ["すぐではないが近いうちにやるとき", "相手に少し待ってもらうとき"],
+                 examples: [
+                    ("I'll call you back in a little while.", "ちょっとしたら折り返すね。"),
+                    ("Dinner will be ready in a little while.", "夕飯、もう少しでできるよ。")
+                 ], ipa: "/ɪn ə ˌlɪtl ˈwaɪl/"),
+            make("way better", "(informal) much better",
+                 "ずっといい・断然いい",
+                 useCases: ["比べてはっきり良いと言うとき", "改善したことを伝えるとき"],
+                 examples: [
+                    ("The new place is way better than the old one.", "新しい店の方が前のより断然いいよ。"),
+                    ("I feel way better after a good night's sleep.", "ぐっすり寝たらずっと調子いいよ。")
+                 ], ipa: "/ˌweɪ ˈbetə/"),
+            make("at the earliest", "not before the time mentioned",
+                 "早くても",
+                 useCases: ["納期や到着時間を伝えるとき", "期待しすぎないよう伝えるとき"],
+                 examples: [
+                    ("I'll be home by eight at the earliest.", "帰りは早くても8時になるよ。"),
+                    ("It won't be ready until Friday at the earliest.", "早くても金曜まではできないね。")
+                 ], ipa: "/ət ði ˈɜːliəst/"),
+            make("sleep through", "to continue sleeping without being woken by something, or to sleep all night without waking",
+                 "（〜に気づかず）寝続ける・朝までぐっすり眠る",
+                 useCases: ["目覚ましに気づかなかったとき", "よく眠れたことを話すとき"],
+                 examples: [
+                    ("I slept through my alarm and missed the train.", "目覚ましに気づかず寝てて、電車に乗り遅れた。"),
+                    ("The baby finally slept through the night!", "赤ちゃんがやっと朝まで寝てくれた！")
+                 ], ipa: "/ˌsliːp ˈθruː/"),
+            make("run over", "to continue past the planned finishing time",
+                 "（予定の時間を）押す・延びる",
+                 useCases: ["会議が長引いたとき", "遅れる理由を伝えるとき"],
+                 examples: [
+                    ("Sorry, the meeting ran over a bit.", "ごめん、会議がちょっと押しちゃって。"),
+                    ("Let's not run over — we've all got places to be.", "時間オーバーしないようにしよう、みんな予定があるし。")
+                 ], ipa: "/ˌrʌn ˈəʊvə/"),
+            make("is it all right if", "a polite way of asking for permission to do something",
+                 "〜してもいいですか？",
+                 useCases: ["軽く許可を取りたいとき", "相手の家や職場で気を遣うとき"],
+                 examples: [
+                    ("Is it all right if I open the window?", "窓開けてもいい？"),
+                    ("Is it all right if I bring a friend along tonight?", "今夜、友達連れて行ってもいいかな？")
+                 ], ipa: "/ɪz ɪt ɔːl ˈraɪt ɪf/"),
+            make("in the mood for", "wanting to do or have something at a particular time",
+                 "〜の気分だ・〜したい気分",
+                 useCases: ["食べたいものを決めるとき", "やる気がないことを伝えるとき"],
+                 examples: [
+                    ("I'm in the mood for something spicy tonight.", "今夜は辛いものの気分だな。"),
+                    ("I'm not really in the mood for going out.", "あんまり出かける気分じゃないんだ。")
+                 ], ipa: "/ɪn ðə ˈmuːd fɔː/"),
+            make("an early start", "a situation in which you have to get up or begin something very early",
+                 "朝が早いこと・早起きの予定",
+                 useCases: ["早めに帰る・寝る理由を伝えるとき", "翌日の予定を話すとき"],
+                 examples: [
+                    ("I'd better head home — I've got an early start tomorrow.", "そろそろ帰らなきゃ、明日朝早いんだ。"),
+                    ("We made an early start to beat the traffic.", "渋滞を避けるために朝早く出発したよ。")
+                 ], ipa: "/ən ˌɜːli ˈstɑːt/"),
+        ]
+    }
+    private static var britishColloquial230: [Word] {
+        [
+            make("take a look", "to look at something, often quickly, to check or examine it",
+                 "ちょっと見てみる・目を通す",
+                 useCases: ["相手に何かを確認してほしいとき", "問題をチェックするとき"],
+                 examples: [
+                    ("Can you take a look at this email before I send it?", "送る前にこのメール、ちょっと見てくれる？"),
+                    ("I'll take a look at your laptop later.", "後で君のノートパソコン、見てみるよ。")
+                 ], ipa: "/ˌteɪk ə ˈlʊk/"),
+            make("back up", "to support someone by agreeing with them; also to make a copy of computer files",
+                 "（人を）援護する・味方する／バックアップを取る",
+                 useCases: ["会議で誰かの意見を支持するとき", "データを保存しておくとき"],
+                 examples: [
+                    ("Thanks for backing me up in the meeting.", "会議で味方してくれてありがとう。"),
+                    ("Make sure you back up your photos first.", "まず写真のバックアップを取っておいてね。")
+                 ], ipa: "/ˌbæk ˈʌp/"),
+            make("fill out", "to write the necessary information in the spaces on a form",
+                 "（書類・用紙に）記入する",
+                 useCases: ["申込書やアンケートを書くとき", "病院や役所の手続きのとき"],
+                 examples: [
+                    ("You'll need to fill out this form at reception.", "受付でこの用紙に記入してください。"),
+                    ("It only takes two minutes to fill out the survey.", "アンケートの記入は2分しかかからないよ。")
+                 ], ipa: "/ˌfɪl ˈaʊt/"),
+            make("favourite", "the person or thing that you like more than all the others",
+                 "お気に入り（の）・一番好きな",
+                 useCases: ["好きな食べ物や場所を話すとき", "おすすめを紹介するとき"],
+                 examples: [
+                    ("This is my favourite café in town.", "ここは街で一番お気に入りのカフェなんだ。"),
+                    ("Oh, I love this song — it's one of my favourites!", "この曲大好き、お気に入りの一つなんだ！")
+                 ], ipa: "/ˈfeɪvərɪt/"),
+            make("well spotted", "used to praise someone for noticing something, especially a mistake",
+                 "よく気づいたね・鋭いね",
+                 useCases: ["相手がミスや違いに気づいてくれたとき", "細かい点を見つけてくれたとき"],
+                 examples: [
+                    ("\"There's a typo in the title.\" \"Oh, well spotted!\"", "「タイトルに誤字があるよ」「あ、よく気づいたね！」"),
+                    ("Well spotted — I completely missed that.", "鋭いね、全然気づかなかったよ。")
+                 ], ipa: "/ˌwel ˈspɒtɪd/"),
+            make("glance at", "to look at something or someone very quickly",
+                 "〜をちらっと見る",
+                 useCases: ["時計やスマホをちらっと見るとき", "書類にざっと目をやるとき"],
+                 examples: [
+                    ("She kept glancing at her watch during dinner.", "彼女、夕食中ずっと時計をちらちら見てたよ。"),
+                    ("I only glanced at the menu, but it looked great.", "メニューはちらっと見ただけだけど、良さそうだったよ。")
+                 ], ipa: "/ˈɡlɑːns æt/"),
+            make("barbecue", "a meal or party where food is cooked outside over a fire or grill",
+                 "バーベキュー",
+                 useCases: ["週末の予定を話すとき", "友人を誘うとき"],
+                 examples: [
+                    ("We're having a barbecue on Saturday if you fancy coming.", "土曜にバーベキューするんだけど、よかったら来ない？"),
+                    ("Let's do a barbecue while the weather's still nice.", "天気がいいうちにバーベキューしようよ。")
+                 ], ipa: "/ˈbɑːbɪkjuː/"),
+            make("dinner party", "a social event where people are invited to someone's home for an evening meal",
+                 "（自宅での）夕食会・ホームパーティー",
+                 useCases: ["友人を家に招くとき", "週末の出来事を話すとき"],
+                 examples: [
+                    ("We're having a few friends round for a dinner party on Friday.", "金曜に友達を何人か呼んで夕食会をするんだ。"),
+                    ("I went to a lovely dinner party last night.", "昨夜、素敵なホームパーティーに行ってきたよ。")
+                 ], ipa: "/ˈdɪnə ˌpɑːti/"),
+            make("reunion", "a meeting of people who have not seen each other for a long time",
+                 "同窓会・再会（の集まり）",
+                 useCases: ["同窓会や家族の集まりの話をするとき", "久しぶりに集まる計画を立てるとき"],
+                 examples: [
+                    ("Are you going to the school reunion next month?", "来月の同窓会、行く？"),
+                    ("We have a big family reunion every summer.", "毎年夏に親戚が大集合するんだ。")
+                 ], ipa: "/riːˈjuːniən/"),
+            make("overdue", "happening or done later than expected or needed",
+                 "期限切れの・とっくに〜すべき",
+                 useCases: ["支払いや返却が遅れているとき", "やるべきことを先延ばしにしていたとき"],
+                 examples: [
+                    ("This holiday is long overdue — I really need a break.", "この休み、本当に待ちに待ってたんだ。休みが必要だったよ。"),
+                    ("My library books are a week overdue.", "図書館の本、返却期限を1週間過ぎてる。")
+                 ], ipa: "/ˌəʊvəˈdjuː/"),
+            make("scroll through", "to move through content on a phone or computer screen",
+                 "（スマホなどで）スクロールして見る・ざっと眺める",
+                 useCases: ["SNSや写真を見ているとき", "スマホを見すぎていることを話すとき"],
+                 examples: [
+                    ("I spent an hour scrolling through my phone in bed.", "ベッドで1時間もスマホをだらだら見ちゃった。"),
+                    ("Scroll through and find the photo from Saturday.", "スクロールして土曜日の写真を探してみて。")
+                 ], ipa: "/ˌskrəʊl ˈθruː/"),
+            make("episode", "one part of a TV series or podcast; also a single event or period of time",
+                 "（ドラマなどの）1話・回",
+                 useCases: ["ドラマやポッドキャストの話をするとき", "どこまで見たか話すとき"],
+                 examples: [
+                    ("Don't tell me what happens — I'm only on episode three.", "ネタバレしないで、まだ3話なんだから。"),
+                    ("Let's watch one more episode before bed.", "寝る前にもう1話だけ見よう。")
+                 ], ipa: "/ˈepɪsəʊd/"),
+            make("subtitles", "words shown at the bottom of a screen that translate or transcribe what is being said",
+                 "字幕",
+                 useCases: ["映画やドラマを見るとき", "外国語の作品を話題にするとき"],
+                 examples: [
+                    ("Do you mind if I put the subtitles on?", "字幕つけてもいい？"),
+                    ("I watched a Spanish film with English subtitles.", "英語字幕でスペイン映画を見たよ。")
+                 ], ipa: "/ˈsʌbˌtaɪtlz/"),
+            make("skip the queue", "to avoid waiting in line, often by booking or paying in advance",
+                 "列に並ばずに済む・行列をスキップする",
+                 useCases: ["観光地のチケットの話をするとき", "混雑を避ける方法を話すとき"],
+                 examples: [
+                    ("If you book online, you can skip the queue.", "ネットで予約すれば並ばずに入れるよ。"),
+                    ("We paid a bit extra to skip the queue at the museum.", "博物館で並ばずに済むように少し多めに払ったんだ。")
+                 ], ipa: "/ˌskɪp ðə ˈkjuː/"),
+            make("google it", "to search for information about something on the internet",
+                 "ググる・ネットで調べる",
+                 useCases: ["わからないことを調べるよう勧めるとき", "答えがわからないとき"],
+                 examples: [
+                    ("I've no idea what that means — let me google it.", "それどういう意味か全然わからないな、ググってみる。"),
+                    ("Just google it, it'll tell you the opening times.", "ググってみなよ、営業時間出てくるから。")
+                 ], ipa: "/ˈɡuːɡl ɪt/"),
+        ]
+    }
+    private static var britishColloquial231: [Word] {
+        [
+            make("be a good sport", "to be cheerful and easy-going, especially about losing, being teased or joining in",
+                 "ノリがいい・潔い・付き合いがいい",
+                 useCases: ["からかわれても笑って流してくれた人に", "ゲームで負けても気にしない人を褒めるとき"],
+                 examples: [
+                    ("Thanks for being such a good sport about the joke.", "あのジョーク、笑って流してくれてありがとう。"),
+                    ("Come on, be a good sport and join in!", "ほら、ノリよく一緒にやろうよ！")
+                 ], ipa: "/bi ə ˌɡʊd ˈspɔːt/"),
+            make("good company", "a person who is enjoyable to spend time with",
+                 "一緒にいて楽しい人",
+                 useCases: ["友人や同僚の人柄を褒めるとき", "楽しい時間を過ごした後に"],
+                 examples: [
+                    ("Your brother's really good company.", "君のお兄さん、一緒にいて本当に楽しいね。"),
+                    ("Thanks for tonight — you're always good company.", "今夜はありがとう、君といるといつも楽しいよ。")
+                 ], ipa: "/ˌɡʊd ˈkʌmpəni/"),
+            make("sofa", "a long, comfortable seat for two or more people",
+                 "ソファ",
+                 useCases: ["家でくつろぐ話をするとき", "泊まる場所を提案するとき"],
+                 examples: [
+                    ("I just want to curl up on the sofa tonight.", "今夜はソファで丸くなってのんびりしたいだけ。"),
+                    ("You're welcome to sleep on the sofa if you miss the last train.", "終電逃したら、うちのソファで寝ていいよ。")
+                 ], ipa: "/ˈsəʊfə/"),
+            make("upstairs", "on or to a higher floor of a building; the opposite is downstairs",
+                 "上の階（へ）・2階（へ）",
+                 useCases: ["家や店の中で場所を伝えるとき", "近所の人の話をするとき"],
+                 examples: [
+                    ("The toilets are upstairs on the left.", "トイレは上の階の左側です。"),
+                    ("The people upstairs are having a party again.", "上の階の人たち、またパーティーしてるよ。")
+                 ], ipa: "/ˌʌpˈsteəz/"),
+            make("the long way round", "a route that is longer than necessary, sometimes chosen on purpose",
+                 "遠回り（の道）",
+                 useCases: ["道を間違えたとき", "景色を楽しむためにわざと遠回りするとき"],
+                 examples: [
+                    ("Sorry, I think I took the long way round.", "ごめん、遠回りしちゃったみたい。"),
+                    ("Let's go the long way round — it's a nicer walk.", "遠回りして行こうよ、そっちの方が気持ちいい散歩道だから。")
+                 ], ipa: "/ðə ˌlɒŋ weɪ ˈraʊnd/"),
+            make("on strike", "refusing to work as a protest, usually about pay or conditions",
+                 "ストライキ中で",
+                 useCases: ["電車やバスが止まっているとき", "ニュースの話をするとき"],
+                 examples: [
+                    ("The train drivers are on strike tomorrow, so I'm working from home.", "明日は運転士がストだから在宅勤務にするよ。"),
+                    ("Are the nurses still on strike?", "看護師さんたち、まだストライキ中なの？")
+                 ], ipa: "/ɒn ˈstraɪk/"),
+            make("souvenir", "something you buy or keep to remember a place or holiday",
+                 "お土産・記念品",
+                 useCases: ["旅行先で買い物をするとき", "旅の思い出を話すとき"],
+                 examples: [
+                    ("I brought you a little souvenir from Lisbon.", "リスボンからちょっとしたお土産を買ってきたよ。"),
+                    ("Let's pick up some souvenirs at the airport.", "空港でお土産を買っていこう。")
+                 ], ipa: "/ˌsuːvəˈnɪə/"),
+            make("reply all", "to send an email reply to everyone who received the original message",
+                 "全員に返信する",
+                 useCases: ["仕事のメールのやり取りで", "うっかり全員に送ってしまったとき"],
+                 examples: [
+                    ("Please don't reply all — just send it to me.", "全員に返信しないで、僕にだけ送って。"),
+                    ("Oops, I accidentally hit reply all.", "しまった、間違えて全員に返信しちゃった。")
+                 ], ipa: "/rɪˌplaɪ ˈɔːl/"),
+            make("frozen", "(of a computer, phone or video call) stopped working and not responding",
+                 "（画面・パソコンが）フリーズした・固まった",
+                 useCases: ["ビデオ通話で映像が止まったとき", "パソコンが動かなくなったとき"],
+                 examples: [
+                    ("Sorry, you've frozen — can you say that again?", "ごめん、画面が固まってる。もう一回言ってくれる？"),
+                    ("My laptop's frozen again, I'll have to restart it.", "パソコンがまたフリーズした、再起動しなきゃ。")
+                 ], ipa: "/ˈfrəʊzn/"),
+            make("fare", "the money you pay to travel on a bus, train, plane or taxi",
+                 "運賃・乗車料金",
+                 useCases: ["交通費の話をするとき", "タクシー代を割り勘するとき"],
+                 examples: [
+                    ("The taxi fare was only about fifteen euros.", "タクシー代は15ユーロくらいだったよ。"),
+                    ("Train fares have gone up again this year.", "今年も電車の運賃が上がったね。")
+                 ], ipa: "/feə/"),
+            make("drawer", "a box-shaped part of a piece of furniture that slides in and out, used for storing things",
+                 "引き出し",
+                 useCases: ["物の置き場所を教えるとき", "探し物をしているとき"],
+                 examples: [
+                    ("The scissors are in the top drawer.", "ハサミは一番上の引き出しに入ってるよ。"),
+                    ("I've checked every drawer and I still can't find my charger.", "引き出しを全部見たけど、まだ充電器が見つからない。")
+                 ], ipa: "/drɔː/"),
+            make("traffic lights", "a set of red, amber and green lights that control traffic at a junction",
+                 "信号（機）",
+                 useCases: ["道案内をするとき", "運転中の会話で"],
+                 examples: [
+                    ("Turn left at the traffic lights and it's on your right.", "信号を左に曲がると右側にあるよ。"),
+                    ("We got stuck at every single traffic light.", "全部の信号に引っかかっちゃった。")
+                 ], ipa: "/ˈtræfɪk laɪts/"),
+            make("unplug", "to disconnect something from the electricity; informally, to switch off from technology and relax",
+                 "コンセントを抜く・（スマホ等から離れて）デジタルデトックスする",
+                 useCases: ["家電を止めるとき", "休暇でネットから離れたいとき"],
+                 examples: [
+                    ("Did you unplug the iron before we left?", "出かける前にアイロンのコンセント抜いた？"),
+                    ("I really need a weekend to just unplug.", "スマホから離れてのんびりする週末が本当に必要だよ。")
+                 ], ipa: "/ʌnˈplʌɡ/"),
+            make("suncream", "a cream you put on your skin to protect it from the sun",
+                 "日焼け止め",
+                 useCases: ["ビーチや外出の準備のとき", "日差しが強い日に"],
+                 examples: [
+                    ("Don't forget to put some suncream on — it's really strong today.", "日焼け止め塗るの忘れないでね、今日は日差しが強いから。"),
+                    ("Has anyone got any suncream I could borrow?", "誰か日焼け止め貸してくれない？")
+                 ], ipa: "/ˈsʌnkriːm/"),
+            make("passport", "an official document you need to travel to other countries",
+                 "パスポート",
+                 useCases: ["旅行の準備をするとき", "空港で"],
+                 examples: [
+                    ("Have you got your passport? Check before we leave!", "パスポート持った？出る前に確認して！"),
+                    ("My passport runs out next year, so I need to renew it.", "パスポートが来年切れるから更新しないと。")
+                 ], ipa: "/ˈpɑːspɔːt/"),
+        ]
+    }
+    private static var britishColloquial232: [Word] {
+        [
+            make("I spoke too soon", "said when something goes wrong right after you said it was going well",
+                 "言うのが早すぎた・言った途端にこれだ",
+                 useCases: ["「順調」と言った直後に問題が起きたとき", "天気が急に崩れたとき"],
+                 examples: [
+                    ("I said the train was on time — I spoke too soon.", "電車が時間通りって言ったのに、言った途端にこれだよ。"),
+                    ("Don't speak too soon, it might still rain.", "まだ言わない方がいいよ、雨が降るかもしれないし。")
+                 ], ipa: "/aɪ ˌspəʊk tuː ˈsuːn/"),
+            make("beginner's luck", "unexpected success when you try something for the first time",
+                 "ビギナーズラック",
+                 useCases: ["初めてのゲームやスポーツで勝ったとき", "謙遜するとき"],
+                 examples: [
+                    ("I won my first game of darts — must be beginner's luck.", "初めてのダーツで勝っちゃった、ビギナーズラックだね。"),
+                    ("Don't get too excited, it's just beginner's luck!", "あんまり喜ばないで、ただのビギナーズラックだから！")
+                 ], ipa: "/bɪˈɡɪnəz lʌk/"),
+            make("practice makes perfect", "doing something regularly is the way to become very good at it",
+                 "習うより慣れろ・練習あるのみ",
+                 useCases: ["上手くいかなくて落ち込む人を励ますとき", "上達のコツを話すとき"],
+                 examples: [
+                    ("Don't worry about your mistakes — practice makes perfect.", "ミスは気にしないで、練習あるのみだよ。"),
+                    ("My English is getting better. Practice makes perfect, I suppose.", "英語が上達してきた。やっぱり慣れだね。")
+                 ], ipa: "/ˌpræktɪs meɪks ˈpɜːfɪkt/"),
+            make("time will tell", "we will only know the answer or result in the future",
+                 "時間が経てば分かる・様子を見よう",
+                 useCases: ["結果がまだ分からないとき", "新しい決断について話すとき"],
+                 examples: [
+                    ("Was it the right decision? Only time will tell.", "正しい決断だった？それは時間が経たないと分からないね。"),
+                    ("They seem happy together, but time will tell.", "二人は仲良さそうだけど、どうなるかは様子見だね。")
+                 ], ipa: "/ˌtaɪm wɪl ˈtel/"),
+            make("on the edge of my seat", "very excited and nervous because you want to know what happens next",
+                 "ハラハラドキドキして・手に汗握って",
+                 useCases: ["映画や試合の感想を言うとき", "結果を待っているとき"],
+                 examples: [
+                    ("The ending had me on the edge of my seat.", "ラストは手に汗握ったよ。"),
+                    ("I was on the edge of my seat for the whole penalty shootout.", "PK戦の間ずっとハラハラしっぱなしだった。")
+                 ], ipa: "/ɒn ði ˌedʒ əv maɪ ˈsiːt/"),
+            make("cliffhanger", "an exciting ending to an episode that leaves you wanting to know what happens next",
+                 "（ドラマなどの）続きが気になる終わり方",
+                 useCases: ["ドラマの話をするとき", "続きが待ちきれないとき"],
+                 examples: [
+                    ("It ended on a massive cliffhanger!", "めちゃくちゃ続きが気になる終わり方だったよ！"),
+                    ("I hate cliffhangers — now I have to wait a whole week.", "引きのある終わり方は嫌い、1週間も待たなきゃいけないじゃん。")
+                 ], ipa: "/ˈklɪfˌhæŋə/"),
+            make("work up an appetite", "to become hungry, usually after physical activity",
+                 "（運動して）お腹を空かせる",
+                 useCases: ["散歩や運動の後の食事の話で", "食事前に体を動かそうと誘うとき"],
+                 examples: [
+                    ("That hike really worked up an appetite.", "あのハイキングでしっかりお腹が空いたよ。"),
+                    ("Let's go for a swim and work up an appetite before lunch.", "ランチの前に泳いでお腹を空かせようよ。")
+                 ], ipa: "/ˌwɜːk ʌp ən ˈæpɪtaɪt/"),
+            make("on the rocks", "(of a drink) served with ice; (of a relationship) having serious problems",
+                 "ロックで・（関係が）危機的で",
+                 useCases: ["バーで飲み物を注文するとき", "カップルの関係について話すとき"],
+                 examples: [
+                    ("A whisky on the rocks, please.", "ウイスキーをロックでお願いします。"),
+                    ("I heard their marriage is on the rocks.", "あの二人の結婚、危ないらしいよ。")
+                 ], ipa: "/ɒn ðə ˈrɒks/"),
+            make("waiting list", "a list of people who are waiting for something that is not yet available",
+                 "順番待ちリスト・キャンセル待ち",
+                 useCases: ["予約がいっぱいのとき", "人気の店やサービスの話で"],
+                 examples: [
+                    ("The restaurant's fully booked, but they put us on the waiting list.", "レストランは満席だけど、キャンセル待ちに入れてもらえた。"),
+                    ("There's a six-month waiting list for that course.", "あの講座は半年待ちなんだって。")
+                 ], ipa: "/ˈweɪtɪŋ lɪst/"),
+            make("a lucky escape", "a situation in which you just avoid something bad or dangerous",
+                 "危ないところで助かったこと・九死に一生",
+                 useCases: ["事故や失敗を間一髪で避けたとき", "別れた相手の話で冗談っぽく"],
+                 examples: [
+                    ("Nobody was hurt — it was a lucky escape.", "誰も怪我しなかった、本当に危ないところだったよ。"),
+                    ("You didn't get that job? Honestly, sounds like a lucky escape.", "あの仕事落ちたの？正直、逃れられてラッキーだったと思うよ。")
+                 ], ipa: "/ə ˌlʌki ɪˈskeɪp/"),
+            make("walk-in", "a customer who comes without an appointment or booking",
+                 "予約なしの客・飛び込み",
+                 useCases: ["美容院やレストランで予約なしで入りたいとき", "クリニックの受付で"],
+                 examples: [
+                    ("Do you take walk-ins, or do I need to book?", "予約なしでも大丈夫ですか、それとも予約が必要ですか？"),
+                    ("Sorry, we're not taking walk-ins today.", "申し訳ありません、本日は予約なしのお客様はお断りしています。")
+                 ], ipa: "/ˈwɔːk ɪn/"),
+            make("propose a toast", "to ask everyone to raise their glasses and drink to someone or something",
+                 "乾杯の音頭をとる",
+                 useCases: ["パーティーや結婚式で", "お祝いの食事の席で"],
+                 examples: [
+                    ("I'd like to propose a toast to the happy couple.", "新郎新婦に乾杯の音頭をとらせていただきます。"),
+                    ("Let's propose a toast to Sarah's new job!", "サラの新しい仕事に乾杯しよう！")
+                 ], ipa: "/prəˌpəʊz ə ˈtəʊst/"),
+            make("it's coming back to me", "said when you start to remember something you had forgotten",
+                 "思い出してきた",
+                 useCases: ["忘れていたことを思い出しかけたとき", "久しぶりに何かをやるとき"],
+                 examples: [
+                    ("Oh yes, it's all coming back to me now!", "ああそうだ、全部思い出してきたよ！"),
+                    ("I haven't skied for years, but it's slowly coming back to me.", "何年もスキーしてなかったけど、だんだん感覚が戻ってきた。")
+                 ], ipa: "/ɪts ˌkʌmɪŋ ˈbæk tə miː/"),
+            make("in your own time", "whenever you are ready, without hurrying",
+                 "自分のペースで・準備ができたらで",
+                 useCases: ["相手を急かしたくないとき", "写真撮影や説明の場面で"],
+                 examples: [
+                    ("No rush — just start in your own time.", "急がなくていいよ、準備ができたら始めて。"),
+                    ("Have a look through the menu in your own time.", "ごゆっくりメニューをご覧ください。")
+                 ], ipa: "/ɪn jɔːr ˌəʊn ˈtaɪm/"),
+            make("show someone the ropes", "to teach a new person how to do a job or activity",
+                 "（新人に）やり方を教える",
+                 useCases: ["新しい同僚を案内するとき", "初めての人に手順を教えるとき"],
+                 examples: [
+                    ("Tom will show you the ropes on your first day.", "初日はトムが仕事のやり方を教えてくれるよ。"),
+                    ("Can you show the new guy the ropes?", "新しく入った人に仕事を教えてあげてくれる？")
+                 ], ipa: "/ˌʃəʊ ˌsʌmwʌn ðə ˈrəʊps/"),
+        ]
+    }
+    private static var britishColloquial233: [Word] {
+        [
+            make("far-fetched", "difficult to believe because it is very unlikely",
+                 "こじつけの・ありえない・信じがたい",
+                 useCases: ["話や言い訳が信じられないとき", "映画の展開に無理があるとき"],
+                 examples: [
+                    ("That story sounds a bit far-fetched to me.", "その話、ちょっと信じがたいな。"),
+                    ("The plot was good, but the ending was a bit far-fetched.", "話は良かったけど、結末はちょっと無理があったね。")
+                 ], ipa: "/ˌfɑː ˈfetʃt/"),
+            make("have the time of my life", "to enjoy yourself very much",
+                 "最高に楽しい時間を過ごす",
+                 useCases: ["旅行やパーティーの感想を言うとき", "最高の思い出を話すとき"],
+                 examples: [
+                    ("We had the time of our lives in Barcelona.", "バルセロナで最高の時間を過ごしたよ。"),
+                    ("The kids are having the time of their lives at the beach.", "子どもたちはビーチで大はしゃぎしてるよ。")
+                 ], ipa: "/hæv ðə ˌtaɪm əv maɪ ˈlaɪf/"),
+            make("under pressure", "feeling stressed because you have to do a lot or meet expectations",
+                 "プレッシャーを感じて・追い詰められて",
+                 useCases: ["仕事や試験のストレスを話すとき", "相手を気遣うとき"],
+                 examples: [
+                    ("I'm under a lot of pressure at work at the moment.", "今、仕事でかなりプレッシャーがかかってるんだ。"),
+                    ("Don't feel under pressure — take as long as you need.", "プレッシャーに感じないで、必要なだけ時間をかけていいよ。")
+                 ], ipa: "/ˌʌndə ˈpreʃə/"),
+            make("out of the loop", "not informed about what is happening",
+                 "蚊帳の外で・事情を知らされていない",
+                 useCases: ["話についていけないとき", "休み明けに状況が分からないとき"],
+                 examples: [
+                    ("Sorry, I've been away — I'm a bit out of the loop.", "ごめん、休んでたからちょっと事情が分かってないんだ。"),
+                    ("Why does nobody tell me anything? I'm always out of the loop!", "なんで誰も教えてくれないの？いつも蚊帳の外だよ！")
+                 ], ipa: "/ˌaʊt əv ðə ˈluːp/"),
+            make("you're pulling my leg", "you are joking or teasing me",
+                 "からかってるでしょ・冗談でしょ",
+                 useCases: ["信じられない話を聞いたとき", "冗談か本気か確かめるとき"],
+                 examples: [
+                    ("You won the lottery? You're pulling my leg!", "宝くじ当たった？冗談でしょ！"),
+                    ("Relax, I'm only pulling your leg.", "落ち着いて、からかってるだけだよ。")
+                 ], ipa: "/jɔː ˌpʊlɪŋ maɪ ˈleɡ/"),
+            make("out of season", "outside the busy holiday period, or (of food) not naturally available now",
+                 "オフシーズンで・旬じゃない",
+                 useCases: ["旅行の時期を話すとき", "食材の旬について話すとき"],
+                 examples: [
+                    ("It's much cheaper to go out of season.", "オフシーズンに行く方がずっと安いよ。"),
+                    ("Strawberries are out of season, so they're really expensive.", "イチゴは今旬じゃないから、すごく高いね。")
+                 ], ipa: "/ˌaʊt əv ˈsiːzn/"),
+            make("one day at a time", "dealing with things gradually without worrying about the future",
+                 "一日一日を大切に・焦らず少しずつ",
+                 useCases: ["大変な状況の人を励ますとき", "回復中の人と話すとき"],
+                 examples: [
+                    ("Don't stress about next month — just take it one day at a time.", "来月のことは気にしないで、一日ずつやっていこう。"),
+                    ("I'm getting better, one day at a time.", "少しずつ良くなってるよ。")
+                 ], ipa: "/ˌwʌn ˈdeɪ ət ə ˈtaɪm/"),
+            make("dead end", "a road with no way out, or a situation with no chance of progress",
+                 "行き止まり・先がない状況",
+                 useCases: ["道案内のとき", "将来性のない仕事や状況を話すとき"],
+                 examples: [
+                    ("Don't go down there — it's a dead end.", "そっちに行かないで、行き止まりだから。"),
+                    ("I feel like I'm stuck in a dead-end job.", "先の見えない仕事にはまってる気がする。")
+                 ], ipa: "/ˌded ˈend/"),
+            make("long-winded", "too long and boring, using more words than necessary",
+                 "話が長ったらしい・回りくどい",
+                 useCases: ["長いスピーチや説明について", "自分の話が長くなったと謝るとき"],
+                 examples: [
+                    ("Sorry, that was a bit long-winded.", "ごめん、ちょっと話が長くなっちゃった。"),
+                    ("His explanations are always so long-winded.", "彼の説明はいつも回りくどいんだよね。")
+                 ], ipa: "/ˌlɒŋ ˈwɪndɪd/"),
+            make("in the small hours", "very early in the morning, just after midnight",
+                 "真夜中に・明け方近くに",
+                 useCases: ["夜更かしした話をするとき", "夜中の出来事を話すとき"],
+                 examples: [
+                    ("We were chatting until the small hours.", "明け方近くまでおしゃべりしてたよ。"),
+                    ("The baby woke up in the small hours again.", "赤ちゃんがまた夜中に起きちゃって。")
+                 ], ipa: "/ɪn ðə ˌsmɔːl ˈaʊəz/"),
+            make("on the way back", "while returning from somewhere",
+                 "帰り道に・帰りがけに",
+                 useCases: ["ついでの用事を頼むとき", "帰り道の出来事を話すとき"],
+                 examples: [
+                    ("Could you grab some milk on the way back?", "帰りに牛乳買ってきてくれる？"),
+                    ("We stopped for lunch on the way back.", "帰り道にお昼を食べたよ。")
+                 ], ipa: "/ɒn ðə ˌweɪ ˈbæk/"),
+            make("take a turn for the better", "to start to improve",
+                 "好転する・良い方向に向かう",
+                 useCases: ["病状や状況が良くなったとき", "天気が回復したとき"],
+                 examples: [
+                    ("Things have taken a turn for the better since I changed jobs.", "転職してから状況が好転したよ。"),
+                    ("Grandad's health has taken a turn for the better.", "おじいちゃんの体調が良くなってきたよ。")
+                 ], ipa: "/ˌteɪk ə ˈtɜːn fə ðə ˈbetə/"),
+            make("round trip", "a journey to a place and back again",
+                 "往復（の旅）",
+                 useCases: ["移動時間や距離を話すとき", "チケットを買うとき"],
+                 examples: [
+                    ("It's about a two-hour round trip.", "往復で2時間くらいだよ。"),
+                    ("Is it cheaper to book a round trip?", "往復で予約した方が安いですか？")
+                 ], ipa: "/ˌraʊnd ˈtrɪp/"),
+            make("ramble on", "to talk for a long time in a confused or boring way",
+                 "だらだらしゃべり続ける",
+                 useCases: ["話が脱線したと謝るとき", "長話について話すとき"],
+                 examples: [
+                    ("Sorry, I'm rambling on — what were you saying?", "ごめん、だらだら話しちゃって。何て言ってたっけ？"),
+                    ("He rambled on about his holiday for an hour.", "彼は休暇の話を1時間もだらだら話してたよ。")
+                 ], ipa: "/ˌræmbl ˈɒn/"),
+            make("pay in cash", "to pay with notes and coins instead of a card",
+                 "現金で払う",
+                 useCases: ["お店で支払うとき", "カードが使えるか確認するとき"],
+                 examples: [
+                    ("Do you mind if I pay in cash?", "現金で払ってもいいですか？"),
+                    ("It's a small café, so you'll need to pay in cash.", "小さなカフェだから、現金払いじゃないとダメだよ。")
+                 ], ipa: "/ˌpeɪ ɪn ˈkæʃ/"),
+        ]
+    }
+    private static var britishColloquial234: [Word] {
+        [
+            make("take it the wrong way", "to be offended by something that was not meant to upset you",
+                 "悪く取る・誤解して気を悪くする",
+                 useCases: ["言いにくいことを言う前に", "誤解されたときに弁解するとき"],
+                 examples: [
+                    ("Don't take this the wrong way, but you look really tired.", "悪く取らないでほしいんだけど、すごく疲れて見えるよ。"),
+                    ("I think she took it the wrong way — I was only joking.", "彼女、悪く取ったみたい。冗談のつもりだったのに。")
+                 ], ipa: "/ˌteɪk ɪt ðə ˈrɒŋ ˌweɪ/"),
+            make("back on track", "making progress again as planned after a problem or delay",
+                 "軌道に戻って・順調に戻って",
+                 useCases: ["遅れていた計画が持ち直したとき", "生活リズムを立て直すとき"],
+                 examples: [
+                    ("After a messy start, the project is finally back on track.", "出だしはバタバタしたけど、プロジェクトはやっと軌道に戻ったよ。"),
+                    ("I ate rubbish all weekend, but I'm back on track now.", "週末はジャンクばかり食べたけど、もう元の生活に戻ったよ。")
+                 ], ipa: "/ˌbæk ɒn ˈtræk/"),
+            make("hands-on", "involving doing something yourself rather than just watching or talking",
+                 "実践的な・自分で手を動かす",
+                 useCases: ["仕事や授業のスタイルを話すとき", "上司や親の関わり方を説明するとき"],
+                 examples: [
+                    ("I learn best with a hands-on approach.", "私は実際に手を動かす方が身につくタイプなんだ。"),
+                    ("Our manager is very hands-on — she helps with everything.", "うちのマネージャーはすごく現場主義で、何でも手伝ってくれるんだ。")
+                 ], ipa: "/ˌhændz ˈɒn/"),
+            make("pack light", "to take only a small amount of luggage",
+                 "荷物を少なくする・身軽に旅する",
+                 useCases: ["旅行の準備を話すとき", "格安航空で旅するとき"],
+                 examples: [
+                    ("We're only going for two days, so pack light.", "2日だけだから、荷物は少なめにね。"),
+                    ("I always try to pack light, but I end up taking too much.", "いつも身軽にしようとするんだけど、結局持って行きすぎちゃう。")
+                 ], ipa: "/ˌpæk ˈlaɪt/"),
+            make("my lips are sealed", "I promise I will not tell anyone your secret",
+                 "絶対に誰にも言わないよ・口外しない",
+                 useCases: ["秘密を打ち明けられたとき", "サプライズの計画を聞いたとき"],
+                 examples: [
+                    ("Don't worry, my lips are sealed.", "心配しないで、誰にも言わないから。"),
+                    ("It's a surprise party, so not a word to Tom! — My lips are sealed.", "サプライズパーティーだからトムには内緒ね！—絶対言わないよ。")
+                 ], ipa: "/maɪ ˈlɪps ə ˌsiːld/"),
+            make("forgive and forget", "to stop being angry about something and act as if it never happened",
+                 "水に流す・許して忘れる",
+                 useCases: ["喧嘩の後に仲直りするとき", "過去のトラブルを引きずらないとき"],
+                 examples: [
+                    ("Life's too short — let's just forgive and forget.", "人生は短いんだから、もう水に流そうよ。"),
+                    ("I'm trying to forgive and forget, but it's not easy.", "水に流そうとしてるけど、簡単じゃないよ。")
+                 ], ipa: "/fəˌɡɪv ən fəˈɡet/"),
+            make("on good terms", "having a friendly relationship with someone",
+                 "良好な関係で・仲が良い",
+                 useCases: ["元恋人や元同僚との関係を話すとき", "家族や近所との関係を説明するとき"],
+                 examples: [
+                    ("We broke up, but we're still on good terms.", "別れたけど、今でも仲はいいよ。"),
+                    ("I left the company on good terms with my boss.", "上司とは円満に会社を辞めたよ。")
+                 ], ipa: "/ɒn ˌɡʊd ˈtɜːmz/"),
+            make("look in on", "to visit someone briefly to check they are all right",
+                 "（様子を見に）ちょっと立ち寄る",
+                 useCases: ["高齢の家族や病気の人を気遣うとき", "留守中のペットや家を頼むとき"],
+                 examples: [
+                    ("Could you look in on my cat while I'm away?", "留守の間、猫の様子を見に寄ってもらえる？"),
+                    ("I'll look in on Gran on my way home.", "帰りにおばあちゃんの様子を見てくるよ。")
+                 ], ipa: "/ˌlʊk ˈɪn ɒn/"),
+            make("a getaway", "a short holiday somewhere away from home",
+                 "（短い）休暇旅行・小旅行",
+                 useCases: ["週末旅行の計画を話すとき", "日常から離れたいとき"],
+                 examples: [
+                    ("We're planning a little getaway to the coast this weekend.", "今週末、海の方にちょっと小旅行する予定なんだ。"),
+                    ("I really need a getaway — work has been crazy.", "本当にどこか行きたい。仕事がめちゃくちゃ忙しくてさ。")
+                 ], ipa: "/ə ˈɡetəweɪ/"),
+            make("so I heard", "I already know that because someone told me",
+                 "そうらしいね・そう聞いたよ",
+                 useCases: ["相手の話をすでに知っていたとき", "噂を確認するとき"],
+                 examples: [
+                    ("Mark's moving to Berlin. — So I heard!", "マークがベルリンに引っ越すんだって。—そうらしいね！"),
+                    ("You got the job? So I heard — congratulations!", "仕事決まったんだって？聞いたよ、おめでとう！")
+                 ], ipa: "/ˌsəʊ aɪ ˈhɜːd/"),
+            make("quite the opposite", "the complete reverse of what was just said or expected",
+                 "むしろその逆で・全く反対で",
+                 useCases: ["相手の思い込みを訂正するとき", "予想と違った結果を話すとき"],
+                 examples: [
+                    ("Was the film boring? — Quite the opposite, it was brilliant!", "映画つまらなかった？—むしろ逆、最高だったよ！"),
+                    ("I'm not annoyed at all. Quite the opposite, actually.", "全然怒ってないよ。むしろその逆なんだ。")
+                 ], ipa: "/ˌkwaɪt ði ˈɒpəzɪt/"),
+            make("crash at someone's place", "(informal) to sleep at someone's home for a night, usually unplanned",
+                 "（人の家に）泊めてもらう・転がり込む",
+                 useCases: ["終電を逃したとき", "友達の家に一晩泊まるとき"],
+                 examples: [
+                    ("You missed the last train? Just crash at my place.", "終電逃したの？うちに泊まっていきなよ。"),
+                    ("Can I crash at your place tonight?", "今夜、泊めてもらってもいい？")
+                 ], ipa: "/ˌkræʃ ət ˈsʌmwʌnz ˌpleɪs/"),
+            make("are you free tonight?", "a common way to ask if someone has plans this evening",
+                 "今夜空いてる？",
+                 useCases: ["友達を誘うとき", "急に予定を立てたいとき"],
+                 examples: [
+                    ("Are you free tonight? Fancy grabbing dinner?", "今夜空いてる？ご飯でもどう？"),
+                    ("I'm not free tonight, but how about tomorrow?", "今夜は空いてないけど、明日はどう？")
+                 ], ipa: "/ə juː ˌfriː təˈnaɪt/"),
+            make("yeah, right", "(sarcastic) I don't believe what you just said",
+                 "はいはい・まさか（皮肉で）",
+                 useCases: ["相手の話を信じていないとき", "ありえない言い訳を聞いたとき"],
+                 examples: [
+                    ("He says he'll be on time tomorrow. — Yeah, right.", "彼、明日は時間通りに来るって。—はいはい、どうだか。"),
+                    ("\"I'll start my diet on Monday.\" Yeah, right!", "「月曜からダイエットする」だって。まさか！")
+                 ], ipa: "/ˌjeə ˈraɪt/"),
+            make("over my dead body", "(humorous) used to say you will never allow something",
+                 "絶対にさせない・死んでもイヤ",
+                 useCases: ["強く反対するとき", "冗談っぽく断固拒否するとき"],
+                 examples: [
+                    ("You want to get a motorbike? Over my dead body!", "バイクが欲しい？絶対ダメ！"),
+                    ("He wants to paint the kitchen pink? Over my dead body.", "キッチンをピンクに塗りたいって？死んでもイヤだよ。")
+                 ], ipa: "/ˌəʊvə maɪ ˌded ˈbɒdi/"),
+        ]
+    }
+    private static var britishColloquial235: [Word] {
+        [
+            make("no laughing matter", "something serious that should not be joked about",
+                 "笑い事じゃない・深刻なこと",
+                 useCases: ["相手が軽く考えすぎているとき", "深刻な問題を強調するとき"],
+                 examples: [
+                    ("Losing your passport abroad is no laughing matter.", "海外でパスポートをなくすのは笑い事じゃないよ。"),
+                    ("I know it sounds funny, but it's no laughing matter for her.", "おかしく聞こえるだろうけど、彼女にとっては笑い事じゃないんだ。")
+                 ], ipa: "/nəʊ ˈlɑːfɪŋ ˌmætə/"),
+            make("fit like a glove", "to fit someone perfectly",
+                 "ぴったり合う・サイズが完璧",
+                 useCases: ["服や靴を試着したとき", "条件や役割がぴったりなとき"],
+                 examples: [
+                    ("Try this jacket on — I think it'll fit like a glove.", "このジャケット着てみて。ぴったりだと思うよ。"),
+                    ("These new shoes fit like a glove.", "この新しい靴、驚くほどぴったりなんだ。")
+                 ], ipa: "/ˌfɪt laɪk ə ˈɡlʌv/"),
+            make("fall apart", "to break into pieces because it is old or badly made; to stop working or become very upset",
+                 "ボロボロになる・崩れる・（精神的に）参る",
+                 useCases: ["古い物が壊れかけているとき", "計画や人が崩れてしまうとき"],
+                 examples: [
+                    ("My trainers are falling apart — I need a new pair.", "スニーカーがボロボロだから、新しいのが要るな。"),
+                    ("When his dad died, he completely fell apart.", "お父さんが亡くなったとき、彼はすっかり参ってしまった。")
+                 ], ipa: "/ˌfɔːl əˈpɑːt/"),
+            make("act up", "(of a machine) to not work properly; (of a child) to behave badly",
+                 "調子が悪い・（子どもが）言うことを聞かない",
+                 useCases: ["パソコンや車の不調を話すとき", "子どもがぐずっているとき"],
+                 examples: [
+                    ("My laptop's been acting up all morning.", "朝からずっとパソコンの調子が悪いんだ。"),
+                    ("The kids always act up when they're tired.", "子どもたちは疲れるといつも言うことを聞かなくなるんだよね。")
+                 ], ipa: "/ˌækt ˈʌp/"),
+            make("clear the table", "to take the plates and dishes away after a meal",
+                 "食卓を片付ける・食器を下げる",
+                 useCases: ["食後の家事を頼むとき", "手伝いを申し出るとき"],
+                 examples: [
+                    ("You cooked, so I'll clear the table.", "君が料理したから、片付けは僕がやるよ。"),
+                    ("Can someone help me clear the table, please?", "誰か食卓の片付け手伝ってくれる？")
+                 ], ipa: "/ˌklɪə ðə ˈteɪbl/"),
+            make("do a U-turn", "to turn a car round to go back; to completely change your opinion or plan",
+                 "Uターンする・（意見や方針を）180度変える",
+                 useCases: ["道を間違えたとき", "急に考えを変えた人について話すとき"],
+                 examples: [
+                    ("We missed the turning, so we had to do a U-turn.", "曲がるところを見逃したから、Uターンしなきゃいけなかった。"),
+                    ("He said he'd never move abroad, then did a complete U-turn.", "海外には絶対住まないって言ってたのに、完全に方針転換したんだよ。")
+                 ], ipa: "/ˌduː ə ˈjuː tɜːn/"),
+            make("a home from home", "a place where you feel as comfortable and relaxed as in your own home",
+                 "我が家のようにくつろげる場所",
+                 useCases: ["居心地の良い宿やカフェを褒めるとき", "友人の家でくつろいだとき"],
+                 examples: [
+                    ("This little hotel is a real home from home.", "この小さなホテル、本当に我が家みたいにくつろげるよ。"),
+                    ("My gran's house has always been a home from home for me.", "おばあちゃんの家は、いつも第二の我が家みたいな場所なんだ。")
+                 ], ipa: "/ə ˌhəʊm frəm ˈhəʊm/"),
+            make("search me", "(informal) I don't know; I have no idea",
+                 "さあね・知らないよ",
+                 useCases: ["答えがわからない質問をされたとき", "軽く肩をすくめて返すとき"],
+                 examples: [
+                    ("Where's Tom gone? — Search me.", "トムどこ行ったの？—さあね。"),
+                    ("Why is the train late again? — Search me!", "なんでまた電車遅れてるの？—知らないよ！")
+                 ], ipa: "/ˈsɜːtʃ ˌmiː/"),
+            make("take it as it comes", "to deal with things as they happen without planning or worrying too much",
+                 "成り行きに任せる・その都度対応する",
+                 useCases: ["先のことを心配しすぎないとき", "予定を決めずに過ごすとき"],
+                 examples: [
+                    ("I haven't planned the trip much — I'll just take it as it comes.", "旅行はあまり計画してないんだ。成り行きに任せるよ。"),
+                    ("New job, new city... I'm trying to take it as it comes.", "新しい仕事に新しい街…その都度対応していくつもりだよ。")
+                 ], ipa: "/ˌteɪk ɪt əz ɪt ˈkʌmz/"),
+            make("get in shape", "to become fit and healthy through exercise",
+                 "体を鍛える・体型を整える",
+                 useCases: ["運動を始める目標を話すとき", "夏や結婚式に向けて準備するとき"],
+                 examples: [
+                    ("I've joined a gym to get in shape before the summer.", "夏までに体を鍛えようとジムに入ったんだ。"),
+                    ("Running is a great way to get in shape.", "ランニングは体を絞るのにすごくいい方法だよ。")
+                 ], ipa: "/ˌɡet ɪn ˈʃeɪp/"),
+            make("pull a muscle", "to injure a muscle by stretching it too much",
+                 "筋を痛める・肉離れを起こす",
+                 useCases: ["運動中のケガを話すとき", "体が痛い理由を説明するとき"],
+                 examples: [
+                    ("I think I pulled a muscle playing football.", "サッカーしてて筋を痛めたみたい。"),
+                    ("Warm up first, or you'll pull a muscle.", "先にウォーミングアップしないと、筋を痛めるよ。")
+                 ], ipa: "/ˌpʊl ə ˈmʌsl/"),
+            make("talk it out", "to discuss a problem or disagreement openly until it is solved",
+                 "とことん話し合う・話し合って解決する",
+                 useCases: ["喧嘩や誤解を解消したいとき", "パートナーや同僚と問題を話し合うとき"],
+                 examples: [
+                    ("Instead of arguing by text, let's meet and talk it out.", "メッセージで言い合うより、会って話し合おうよ。"),
+                    ("We sat down and talked it out, and now we're fine.", "座ってじっくり話し合って、今はもう大丈夫だよ。")
+                 ], ipa: "/ˌtɔːk ɪt ˈaʊt/"),
+            make("have it out with", "to argue with someone openly in order to settle a problem",
+                 "（〜と）白黒つける・はっきり言い合う",
+                 useCases: ["不満を溜め込んでいる相手と対決するとき", "問題をはっきりさせたいとき"],
+                 examples: [
+                    ("I'm going to have it out with my flatmate about the mess.", "散らかしっぱなしの件、ルームメイトとはっきり話をつけるつもり。"),
+                    ("She finally had it out with her boss.", "彼女はついに上司と真っ向から言い合ったんだ。")
+                 ], ipa: "/ˌhæv ɪt ˈaʊt wɪð/"),
+            make("kiss and make up", "(informal) to become friends again after an argument",
+                 "仲直りする",
+                 useCases: ["喧嘩した友達やカップルについて話すとき", "仲直りを促すとき"],
+                 examples: [
+                    ("They had a big row, but they've already kissed and made up.", "大喧嘩したけど、もう仲直りしたよ。"),
+                    ("Come on, you two — kiss and make up!", "ほら二人とも、仲直りしなよ！")
+                 ], ipa: "/ˌkɪs ən ˌmeɪk ˈʌp/"),
+            make("put your foot down", "to be firm and refuse to allow something; (in a car) to accelerate",
+                 "断固として反対する・ビシッと言う・（車で）アクセルを踏む",
+                 useCases: ["子どもや相手のわがままをはっきり止めるとき", "急いで運転するとき"],
+                 examples: [
+                    ("The kids wanted to stay up till midnight, but I put my foot down.", "子どもたちは夜中まで起きてたがったけど、ビシッとダメって言ったよ。"),
+                    ("We're late — put your foot down!", "遅れてるよ、アクセル踏んで！")
+                 ], ipa: "/ˌpʊt jə ˈfʊt ˌdaʊn/"),
+        ]
+    }
+    private static var britishColloquial236: [Word] {
+        [
+            make("make it quick", "used to tell someone to do something fast or keep it short because there is not much time",
+                 "手短にね・急いでね",
+                 useCases: ["時間がないときに話を短くしてほしいとき", "ちょっとした用事を急いで済ませてほしいとき"],
+                 examples: [
+                    ("Sure, I've got two minutes — just make it quick.", "いいよ、2分だけあるから手短にね。"),
+                    ("You can pop into the shop, but make it quick — we're parked on double yellows.", "お店寄ってもいいけど急いでね。駐車禁止のとこに停めてるから。")
+                 ], ipa: "/ˌmeɪk ɪt ˈkwɪk/"),
+            make("mind out", "(British) used to warn someone to be careful or to move out of the way",
+                 "気をつけて！・どいて！",
+                 useCases: ["危ないものが近くにあるとき", "人に道を空けてほしいとき"],
+                 examples: [
+                    ("Mind out — the floor's wet!", "気をつけて、床が濡れてるよ！"),
+                    ("Mind out, I'm coming through with hot drinks.", "ちょっとどいて、熱い飲み物持って通るよ。")
+                 ], ipa: "/ˌmaɪnd ˈaʊt/"),
+            make("a tight squeeze", "a situation where there is only just enough space or time",
+                 "ぎゅうぎゅう・ギリギリ",
+                 useCases: ["車や部屋に人が多いとき", "時間に余裕がないとき"],
+                 examples: [
+                    ("Five of us in the back seat was a tight squeeze.", "後部座席に5人はぎゅうぎゅうだったよ。"),
+                    ("We can fit it in before lunch, but it'll be a tight squeeze.", "昼前に入れられるけど、かなりギリギリだね。")
+                 ], ipa: "/ə ˌtaɪt ˈskwiːz/"),
+            make("pick at your food", "to eat only small amounts of food slowly, because you are not hungry or not well",
+                 "食べ物をつつく・少しずつしか食べない",
+                 useCases: ["食欲がない人を気遣うとき", "子どもの食事について話すとき"],
+                 examples: [
+                    ("You're just picking at your food — are you feeling okay?", "さっきから料理つついてるだけだけど、大丈夫？"),
+                    ("She picked at her dinner and went straight to bed.", "彼女は夕食を少し口にしただけで、すぐ寝ちゃった。")
+                 ], ipa: "/ˌpɪk ət jɔː ˈfuːd/"),
+            make("a quick drink", "a short visit to a pub or bar for one drink",
+                 "軽く一杯",
+                 useCases: ["仕事帰りに誘うとき", "長居しないと伝えるとき"],
+                 examples: [
+                    ("Fancy a quick drink after work?", "仕事のあと軽く一杯どう？"),
+                    ("I'll come for a quick drink, but I can't stay late.", "軽く一杯なら行くけど、遅くまではいられないんだ。")
+                 ], ipa: "/ə ˌkwɪk ˈdrɪŋk/"),
+            make("I gather", "used to say that you believe something is true because of what you have heard",
+                 "〜らしいね・〜と聞いてるけど",
+                 useCases: ["人から聞いた情報を確認するとき", "話題を切り出すとき"],
+                 examples: [
+                    ("I gather you're moving to Berlin?", "ベルリンに引っ越すんだってね？"),
+                    ("From what I gather, the meeting didn't go well.", "聞いた感じだと、会議はうまくいかなかったみたいだね。")
+                 ], ipa: "/aɪ ˈɡæðə/"),
+            make("I clean forgot", "(informal) I completely forgot",
+                 "すっかり忘れてた",
+                 useCases: ["約束や頼まれごとを忘れたとき", "うっかりを謝るとき"],
+                 examples: [
+                    ("Oh no, your birthday! I clean forgot — I'm so sorry.", "しまった、誕生日だ！すっかり忘れてた、本当にごめん。"),
+                    ("I meant to call you back, but I clean forgot.", "折り返すつもりだったのに、完全に忘れてた。")
+                 ], ipa: "/aɪ ˌkliːn fəˈɡɒt/"),
+            make("something's come up", "something unexpected has happened that needs my attention",
+                 "急用ができた",
+                 useCases: ["予定をキャンセルするとき", "急に席を外すとき"],
+                 examples: [
+                    ("Sorry, something's come up — can we do Friday instead?", "ごめん、急用ができちゃって。金曜に変えてもいい？"),
+                    ("I have to go, something's come up at home.", "もう行かなきゃ。家でちょっと急用ができたんだ。")
+                 ], ipa: "/ˌsʌmθɪŋz kʌm ˈʌp/"),
+            make("be brought up", "to be raised and cared for as a child in a particular place or way",
+                 "育つ・育てられる",
+                 useCases: ["出身や育ちを話すとき", "価値観の背景を説明するとき"],
+                 examples: [
+                    ("I was born in London but brought up in Manchester.", "ロンドン生まれだけど、マンチェスター育ちなんだ。"),
+                    ("We were brought up to always say thank you.", "うちはいつもありがとうを言うように育てられたんだ。")
+                 ], ipa: "/biː ˌbrɔːt ˈʌp/"),
+            make("out of character", "not typical of the way someone usually behaves",
+                 "らしくない・普段の〜とは違う",
+                 useCases: ["友人の様子がいつもと違うとき", "意外な行動について話すとき"],
+                 examples: [
+                    ("It's really out of character for him to be late.", "彼が遅刻するなんて本当にらしくないね。"),
+                    ("She snapped at me, which is totally out of character.", "彼女に怒鳴られたんだけど、普段の彼女らしくないんだよね。")
+                 ], ipa: "/ˌaʊt əv ˈkærəktə/"),
+            make("have a sit-down", "(British, informal) to sit and rest for a short time",
+                 "ちょっと座って休む",
+                 useCases: ["歩き疲れたとき", "人に休憩を勧めるとき"],
+                 examples: [
+                    ("My feet are killing me — let's have a sit-down.", "足が痛くて。ちょっと座って休もうよ。"),
+                    ("You look shattered. Have a sit-down and I'll make tea.", "くたくたって顔してるよ。座ってて、お茶入れるから。")
+                 ], ipa: "/ˌhæv ə ˈsɪt daʊn/"),
+            make("perk up", "to become or make someone more cheerful or energetic",
+                 "元気になる・元気づける",
+                 useCases: ["人が元気を取り戻したとき", "コーヒーなどで目が覚めたとき"],
+                 examples: [
+                    ("She perked up as soon as she heard the good news.", "いい知らせを聞いた途端、彼女は元気になった。"),
+                    ("A strong coffee will perk you up.", "濃いコーヒー飲めばシャキッとするよ。")
+                 ], ipa: "/ˌpɜːk ˈʌp/"),
+            make("it's a breeze", "(informal) it is very easy to do",
+                 "楽勝だよ・すごく簡単",
+                 useCases: ["簡単だと安心させるとき", "慣れたことについて話すとき"],
+                 examples: [
+                    ("Don't worry about the form — it's a breeze.", "その書類は心配いらないよ、楽勝だから。"),
+                    ("Once you get used to it, driving here is a breeze.", "慣れれば、ここでの運転なんて簡単だよ。")
+                 ], ipa: "/ɪts ə ˈbriːz/"),
+            make("get the door", "to open the door for someone who has knocked or rung, or to hold it open",
+                 "ドアに出る・ドアを開けてあげる",
+                 useCases: ["来客があったとき", "荷物で手がふさがっている人を手伝うとき"],
+                 examples: [
+                    ("Can you get the door? My hands are full.", "ドア開けてくれる？手がふさがってて。"),
+                    ("That'll be the pizza — I'll get the door.", "ピザが来たんだね、僕が出るよ。")
+                 ], ipa: "/ˌɡet ðə ˈdɔː/"),
+            make("point me in the right direction", "to give someone basic help or advice so they know where to go or how to start",
+                 "（行き方や取っかかりを）教えてもらう",
+                 useCases: ["道に迷ったとき", "何から始めればいいか分からないとき"],
+                 examples: [
+                    ("Excuse me, could you point me in the right direction for the station?", "すみません、駅の方向を教えてもらえますか？"),
+                    ("I don't need the full answer — just point me in the right direction.", "答えは全部じゃなくていいから、取っかかりだけ教えて。")
+                 ], ipa: "/ˌpɔɪnt mi ɪn ðə ˌraɪt dəˈrekʃn/"),
+        ]
+    }
+    private static var britishColloquial237: [Word] {
+        [
+            make("big night", "an important or exciting evening, such as a party, a first date or a special event",
+                 "大事な夜・特別な夜",
+                 useCases: ["デートやイベント前の人を応援するとき", "前の晩の出来事を話すとき"],
+                 examples: [
+                    ("Good luck tonight — it's your big night!", "今夜がんばってね、大事な夜だもんね！"),
+                    ("You look tired. Big night last night?", "疲れてるね。昨日の夜は盛り上がったの？")
+                 ], ipa: "/ˌbɪɡ ˈnaɪt/"),
+            make("off the cuff", "said or done without any preparation",
+                 "即興で・ぶっつけ本番で",
+                 useCases: ["準備なしで話すとき", "思いつきの発言だと断るとき"],
+                 examples: [
+                    ("I didn't prepare a speech — I just said a few words off the cuff.", "スピーチは用意してなくて、即興でちょっと話しただけだよ。"),
+                    ("That was an off-the-cuff remark, so don't take it too seriously.", "あれは思いつきで言っただけだから、あまり真に受けないで。")
+                 ], ipa: "/ˌɒf ðə ˈkʌf/"),
+            make("light-headed", "feeling slightly dizzy, as if you might faint",
+                 "頭がくらくらする・ふらっとする",
+                 useCases: ["体調が悪いと伝えるとき", "空腹や暑さでふらつくとき"],
+                 examples: [
+                    ("I stood up too quickly and felt a bit light-headed.", "急に立ち上がったら、ちょっとくらっとした。"),
+                    ("If you feel light-headed, sit down and have some water.", "ふらっとしたら、座って水を飲んでね。")
+                 ], ipa: "/ˌlaɪt ˈhedɪd/"),
+            make("bend the rules", "to allow something that is not usually allowed, just this once",
+                 "ルールを少し曲げる・大目に見る",
+                 useCases: ["例外を頼むとき", "特別に許してもらったと話すとき"],
+                 examples: [
+                    ("We're not supposed to, but I'll bend the rules just this once.", "本当はダメなんだけど、今回だけ特別に大目に見るよ。"),
+                    ("Could you bend the rules a little and let us in ten minutes early?", "少しだけ融通をきかせて、10分早く入れてもらえませんか？")
+                 ], ipa: "/ˌbend ðə ˈruːlz/"),
+            make("good as gold", "(British) very well-behaved, especially of a child",
+                 "とってもいい子（にしてた）",
+                 useCases: ["子どもや動物の様子を伝えるとき", "預かった子を褒めるとき"],
+                 examples: [
+                    ("Thanks for having the kids — were they all right? / They were good as gold.", "子どもたちを見てくれてありがとう、大丈夫だった？／すごくいい子にしてたよ。"),
+                    ("The dog was good as gold on the train.", "電車の中で犬はとてもおりこうにしてたよ。")
+                 ], ipa: "/ˌɡʊd əz ˈɡəʊld/"),
+            make("same as ever", "used to say that someone or something has not changed",
+                 "相変わらず・いつも通り",
+                 useCases: ["近況を聞かれたとき", "変わらない人や物について話すとき"],
+                 examples: [
+                    ("How's work? / Same as ever — busy but fine.", "仕事どう？／相変わらずだよ。忙しいけど元気。"),
+                    ("You look the same as ever!", "全然変わってないね！")
+                 ], ipa: "/ˌseɪm əz ˈevə/"),
+            make("moving on", "used to change to a new subject in a conversation",
+                 "話は変わって・さて次に",
+                 useCases: ["話題を切り替えるとき", "気まずい話を終わらせたいとき"],
+                 examples: [
+                    ("Anyway, moving on — has everyone seen the new schedule?", "さて、話は変わるけど、みんな新しいスケジュール見た？"),
+                    ("Okay, that was embarrassing. Moving on!", "うわ、恥ずかしかった。はい、次いこう！")
+                 ], ipa: "/ˌmuːvɪŋ ˈɒn/"),
+            make("a sugar rush", "a short burst of energy after eating or drinking a lot of sugar",
+                 "糖分でハイになること・シュガーハイ",
+                 useCases: ["甘いものを食べて元気になったとき", "子どもがはしゃいでいるとき"],
+                 examples: [
+                    ("The kids are on a sugar rush after all that birthday cake.", "誕生日ケーキをたくさん食べて、子どもたちがハイになってる。"),
+                    ("I get a sugar rush and then crash about an hour later.", "甘いもの食べると一瞬元気になるけど、1時間後にはぐったりするんだ。")
+                 ], ipa: "/ə ˈʃʊɡə ˌrʌʃ/"),
+            make("keep your voice down", "used to ask someone to speak more quietly",
+                 "声を小さくして・静かに",
+                 useCases: ["周りに迷惑がかかりそうなとき", "内緒話をするとき"],
+                 examples: [
+                    ("Keep your voice down — the baby's asleep.", "声を落として、赤ちゃん寝てるから。"),
+                    ("Keep your voice down, everyone can hear you!", "声が大きいよ、みんなに聞こえてる！")
+                 ], ipa: "/ˌkiːp jə ˈvɔɪs ˌdaʊn/"),
+            make("out loud", "in a voice that other people can hear, rather than silently",
+                 "声に出して",
+                 useCases: ["音読するとき", "思わず口に出したとき"],
+                 examples: [
+                    ("Sorry, I was just thinking out loud.", "ごめん、ただ考えを口に出してただけ。"),
+                    ("Can you read it out loud for everyone?", "みんなのために声に出して読んでくれる？")
+                 ], ipa: "/ˌaʊt ˈlaʊd/"),
+            make("what's good here?", "used in a restaurant or café to ask for a recommendation",
+                 "ここのおすすめは？",
+                 useCases: ["初めての店で注文するとき", "店員や友人におすすめを聞くとき"],
+                 examples: [
+                    ("It's my first time here — what's good here?", "ここ初めてなんですけど、おすすめは何ですか？"),
+                    ("You've been here before, haven't you? What's good here?", "前に来たことあるよね？ここ何が美味しい？")
+                 ], ipa: "/ˌwɒts ˈɡʊd hɪə/"),
+            make("make that two", "used when ordering to say you want the same as the person before you",
+                 "それを2つで・私も同じので",
+                 useCases: ["友人と同じものを注文するとき", "注文の数を変えるとき"],
+                 examples: [
+                    ("I'll have a flat white. / Make that two, please.", "フラットホワイトをください。／それ2つでお願いします。"),
+                    ("A pint of lager, please — actually, make that two.", "ラガーを1パイント。あ、やっぱり2つで。")
+                 ], ipa: "/ˌmeɪk ðæt ˈtuː/"),
+            make("lighten the mood", "to make a tense or sad situation feel more relaxed or cheerful",
+                 "場をなごませる・雰囲気を明るくする",
+                 useCases: ["気まずい空気を変えたいとき", "冗談を言った理由を説明するとき"],
+                 examples: [
+                    ("He told a silly joke to lighten the mood.", "彼は場をなごませようとくだらない冗談を言った。"),
+                    ("Let's put some music on to lighten the mood.", "雰囲気を明るくするために音楽でもかけよう。")
+                 ], ipa: "/ˌlaɪtn ðə ˈmuːd/"),
+            make("push in", "(British) to unfairly join a queue in front of people who were already waiting",
+                 "（列に）割り込む",
+                 useCases: ["列に割り込まれたとき", "割り込みを注意するとき"],
+                 examples: [
+                    ("Excuse me, there's a queue — you can't just push in.", "すみません、列があるので割り込まないでください。"),
+                    ("Someone pushed in right in front of me at the bus stop.", "バス停で目の前に割り込まれたよ。")
+                 ], ipa: "/ˌpʊʃ ˈɪn/"),
+            make("it's a long way", "used to say that a place is far away",
+                 "けっこう遠いよ",
+                 useCases: ["道や距離を聞かれたとき", "歩くか乗り物にするか相談するとき"],
+                 examples: [
+                    ("Can we walk there? / It's a long way — let's get a taxi.", "歩いて行ける？／けっこう遠いよ、タクシーにしよう。"),
+                    ("It's a long way to come just for one meeting.", "会議ひとつのためにわざわざ来るには遠いよね。")
+                 ], ipa: "/ɪts ə ˌlɒŋ ˈweɪ/"),
+        ]
+    }
+    private static var britishColloquial238: [Word] {
+        [
+            make("you beat me to it", "used when someone does or says something just before you were going to",
+                 "先を越された・ちょうど言おうと思ってた",
+                 useCases: ["自分がやろうとしたことを先にされたとき", "同じことを言おうとしていたとき"],
+                 examples: [
+                    ("I was just about to text you — you beat me to it!", "ちょうど連絡しようと思ってたの、先を越されちゃった！"),
+                    ("Oh, you've already booked the table? You beat me to it.", "もうお店予約してくれたの？先にやられちゃったな。")
+                 ], ipa: "/ju ˌbiːt mi ˈtuː ɪt/"),
+            make("a food coma", "(informal) the sleepy, heavy feeling after eating a very big meal",
+                 "食べすぎて動けない・眠い状態",
+                 useCases: ["食後に眠くなったとき", "ごちそうを食べすぎたとき"],
+                 examples: [
+                    ("After that Sunday roast, I'm in a total food coma.", "あのサンデーローストのあとで、完全にお腹いっぱいで動けない。"),
+                    ("Let's go for a walk before we slip into a food coma.", "食べすぎて眠くなる前に、ちょっと散歩しよう。")
+                 ], ipa: "/ə ˈfuːd ˌkəʊmə/"),
+            make("a round of applause", "a period of clapping to show thanks or praise",
+                 "（みんなで）拍手",
+                 useCases: ["誰かを称えるとき", "スピーチや発表のあとで"],
+                 examples: [
+                    ("Let's give Sarah a round of applause for organising tonight.", "今夜を企画してくれたサラに拍手を送りましょう。"),
+                    ("He got a huge round of applause at the end.", "最後に彼は大きな拍手をもらった。")
+                 ], ipa: "/ə ˌraʊnd əv əˈplɔːz/"),
+            make("back in fashion", "popular or stylish again after a period of not being popular",
+                 "また流行っている・リバイバルしている",
+                 useCases: ["昔の服や物がまた流行っているとき", "トレンドの話をするとき"],
+                 examples: [
+                    ("Flared jeans are back in fashion, apparently.", "どうやらフレアジーンズがまた流行ってるらしいよ。"),
+                    ("Keep your old jacket — it'll be back in fashion in a few years.", "その古いジャケット取っておきなよ。数年したらまた流行るから。")
+                 ], ipa: "/ˌbæk ɪn ˈfæʃn/"),
+            make("have a sip", "to drink a very small amount of something, often to taste it",
+                 "一口飲む・ちょっと味見する",
+                 useCases: ["飲み物を少しもらうとき", "熱い飲み物を少しずつ飲むとき"],
+                 examples: [
+                    ("Can I have a sip of yours? I want to see what it's like.", "ちょっと一口もらっていい？どんな味か知りたくて。"),
+                    ("I only had a sip of wine, so I'm fine to drive.", "ワインは一口しか飲んでないから、運転して大丈夫。")
+                 ], ipa: "/ˌhæv ə ˈsɪp/"),
+            make("a mouthful", "1) an amount of food or drink you put in your mouth at once 2) a long word or name that is hard to say",
+                 "一口分・（長くて）言いにくい言葉",
+                 useCases: ["食べ物を一口と言うとき", "長い名前や言葉に対して"],
+                 examples: [
+                    ("Sorry, I can't talk — I've got a mouthful of cake.", "ごめん、今ケーキを口いっぱいに入れてて話せない。"),
+                    ("Her surname's a bit of a mouthful, so everyone calls her Kat.", "彼女の名字はちょっと言いにくいから、みんなキャットって呼んでる。")
+                 ], ipa: "/ə ˈmaʊθfʊl/"),
+            make("get a tan", "to make your skin darker by spending time in the sun",
+                 "日焼けする（こんがり焼く）",
+                 useCases: ["旅行帰りの人に声をかけるとき", "夏の予定を話すとき"],
+                 examples: [
+                    ("You've got a lovely tan — have you been away?", "いい感じに焼けてるね、どこか行ってたの？"),
+                    ("I just want to lie on the beach and get a tan.", "ビーチで寝転がって日焼けしたいだけなんだ。")
+                 ], ipa: "/ˌɡet ə ˈtæn/"),
+            make("a bit foggy", "(of memory or the mind) not clear; hard to remember or think clearly",
+                 "（記憶や頭が）ぼんやりしている",
+                 useCases: ["はっきり覚えていないとき", "寝起きや疲れで頭が働かないとき"],
+                 examples: [
+                    ("It was years ago, so my memory's a bit foggy.", "何年も前のことだから、記憶がちょっとあいまいなんだ。"),
+                    ("Sorry, my head's a bit foggy this morning.", "ごめん、今朝はちょっと頭がぼーっとしてて。")
+                 ], ipa: "/ə ˌbɪt ˈfɒɡi/"),
+            make("a house party", "a party held at someone's home",
+                 "ホームパーティー・家飲み",
+                 useCases: ["週末の予定を話すとき", "友達を誘うとき"],
+                 examples: [
+                    ("Tom's having a house party on Saturday — are you coming?", "トムが土曜に家でパーティーするんだけど、来る？"),
+                    ("The neighbours had a house party until 3 a.m.", "お隣さんが夜中の3時まで家でパーティーしてた。")
+                 ], ipa: "/ə ˈhaʊs ˌpɑːti/"),
+            make("run the show", "to be the person in charge and make the decisions",
+                 "仕切る・取り仕切る",
+                 useCases: ["誰が責任者か話すとき", "仕切りたがる人について"],
+                 examples: [
+                    ("Ask Emma — she's running the show today.", "エマに聞いて。今日は彼女が仕切ってるから。"),
+                    ("My mum always runs the show at Christmas.", "クリスマスはいつも母が全部取り仕切ってる。")
+                 ], ipa: "/ˌrʌn ðə ˈʃəʊ/"),
+            make("in the office", "working at your workplace rather than from home",
+                 "出社している・オフィスにいる",
+                 useCases: ["在宅か出社かを伝えるとき", "会う予定を合わせるとき"],
+                 examples: [
+                    ("I'm in the office on Tuesdays and Thursdays, and at home the rest of the week.", "火曜と木曜は出社で、それ以外は在宅だよ。"),
+                    ("Are you in the office tomorrow? We could grab lunch.", "明日出社する？ランチ行けるかも。")
+                 ], ipa: "/ɪn ði ˈɒfɪs/"),
+            make("take a sick day", "to have a day off work because you are ill",
+                 "病欠する・体調不良で休む",
+                 useCases: ["体調不良で休むと伝えるとき", "無理しないよう勧めるとき"],
+                 examples: [
+                    ("You sound awful — just take a sick day and rest.", "ひどい声だね。今日は休んでゆっくりしなよ。"),
+                    ("I had to take a sick day yesterday, so I'm a bit behind.", "昨日病欠したから、ちょっと仕事が遅れてる。")
+                 ], ipa: "/ˌteɪk ə ˈsɪk ˌdeɪ/"),
+            make("me time", "(informal) time you spend relaxing on your own, doing what you enjoy",
+                 "自分だけの時間・ひとりの時間",
+                 useCases: ["ひとりでのんびりしたいとき", "週末の過ごし方を話すとき"],
+                 examples: [
+                    ("The kids are at their gran's, so I'm having some me time.", "子どもたちはおばあちゃんの家だから、自分の時間を楽しんでるの。"),
+                    ("Everyone needs a bit of me time now and then.", "誰だってたまには自分だけの時間が必要だよ。")
+                 ], ipa: "/ˈmiː ˌtaɪm/"),
+            make("you've caught the sun", "(British) your skin has gone a bit red or brown from being in the sun",
+                 "日に焼けたね（ちょっと赤くなってる）",
+                 useCases: ["外出帰りの人に声をかけるとき", "うっかり日焼けしたとき"],
+                 examples: [
+                    ("Ooh, you've caught the sun! Were you in the garden all day?", "あら、日に焼けたね！一日中庭にいたの？"),
+                    ("I only sat outside for an hour, but I've really caught the sun.", "外に1時間座ってただけなのに、すっかり焼けちゃった。")
+                 ], ipa: "/juːv ˌkɔːt ðə ˈsʌn/"),
+            make("just a splash", "only a very small amount of a liquid, such as milk in tea",
+                 "ほんの少しだけ（注いで）",
+                 useCases: ["紅茶やコーヒーのミルクの量を聞かれたとき", "飲み物を少しだけ注いでもらうとき"],
+                 examples: [
+                    ("Milk? / Just a splash, thanks.", "ミルク入れる？／ほんの少しだけお願い。"),
+                    ("Can I have just a splash of wine? I'm driving.", "ワインはほんの少しだけでいい？運転するから。")
+                 ], ipa: "/ˌdʒʌst ə ˈsplæʃ/"),
+        ]
+    }
+    private static var britishColloquial239: [Word] {
+        [
+            make("hop in", "(informal) to get into a car quickly",
+                 "（車に）乗って・さあ乗って",
+                 useCases: ["車で迎えに来たとき", "誰かを車に乗せるとき"],
+                 examples: [
+                    ("Hop in — I'll drop you at the station.", "乗って。駅まで送るよ。"),
+                    ("Hop in the back, there's loads of room.", "後ろに乗って、スペースたっぷりあるから。")
+                 ], ipa: "/ˌhɒp ˈɪn/"),
+            make("pan out", "(informal) to develop or end in a particular way",
+                 "（結果的に）うまくいく・〜という展開になる",
+                 useCases: ["計画がどうなるか話すとき", "結果がまだ分からないとき"],
+                 examples: [
+                    ("Let's see how things pan out before we book anything.", "何か予約する前に、どうなるか様子を見よう。"),
+                    ("The new job didn't really pan out, so I'm looking again.", "新しい仕事はあまりうまくいかなくて、また探してるんだ。")
+                 ], ipa: "/ˌpæn ˈaʊt/"),
+            make("backfire", "(of a plan) to have the opposite result to the one you wanted",
+                 "裏目に出る",
+                 useCases: ["計画や作戦が逆効果だったとき", "良かれと思ったことが失敗したとき"],
+                 examples: [
+                    ("I tried to surprise her, but it totally backfired.", "サプライズしようとしたけど、完全に裏目に出ちゃった。"),
+                    ("Be careful — that joke could backfire on you.", "気をつけて。その冗談、自分に返ってくるかもよ。")
+                 ], ipa: "/ˌbækˈfaɪə/"),
+            make("here's to ...", "used when raising your glass to wish success or happiness to someone or something",
+                 "〜に乾杯",
+                 useCases: ["乾杯の音頭をとるとき", "お祝いの席で"],
+                 examples: [
+                    ("Here's to you, Tom — congratulations on the new job!", "トムに乾杯！転職おめでとう！"),
+                    ("Here's to a brilliant year ahead!", "最高の一年になりますように、乾杯！")
+                 ], ipa: "/ˈhɪəz tə/"),
+            make("a good night's sleep", "a night when you sleep well and for long enough",
+                 "ぐっすり眠ること・一晩よく寝ること",
+                 useCases: ["疲れているとき", "大事な日の前に"],
+                 examples: [
+                    ("What you need is a good night's sleep.", "君に必要なのは、ぐっすり眠ることだよ。"),
+                    ("I finally got a good night's sleep last night.", "昨日の夜、やっとぐっすり眠れた。")
+                 ], ipa: "/ə ˌɡʊd ˌnaɪts ˈsliːp/"),
+            make("on schedule", "happening at the planned time; not early or late",
+                 "予定通りに",
+                 useCases: ["電車や仕事の進み具合を話すとき", "計画が順調なとき"],
+                 examples: [
+                    ("Is the train running on schedule today?", "今日、電車は予定通り動いてる？"),
+                    ("Don't worry, the project's still on schedule.", "心配しないで、プロジェクトはまだ予定通りだよ。")
+                 ], ipa: "/ɒn ˈʃedjuːl/"),
+            make("where have you been?", "1) asking where someone was 2) saying you haven't seen someone for a long time",
+                 "どこに行ってたの？・久しぶり！",
+                 useCases: ["久しぶりに会った友達に", "帰りが遅かった人に"],
+                 examples: [
+                    ("Where have you been? I haven't seen you for ages!", "どこ行ってたの？すごく久しぶりじゃない！"),
+                    ("Where have you been? Dinner's gone cold.", "どこ行ってたの？夕飯冷めちゃったよ。")
+                 ], ipa: "/weər əv ju ˈbiːn/"),
+            make("best wishes", "a friendly way to end a message or send good wishes to someone",
+                 "よろしく・幸運を祈って（手紙やメッセージの結び）",
+                 useCases: ["メールやカードの結びに", "誰かの成功を祈るとき"],
+                 examples: [
+                    ("Give my best wishes to your parents.", "ご両親によろしく伝えてね。"),
+                    ("Best wishes for the new year, and see you soon!", "良い新年を、またすぐ会おうね！")
+                 ], ipa: "/ˌbest ˈwɪʃɪz/"),
+            make("for goodness' sake", "used to show you are annoyed or impatient",
+                 "まったくもう・いい加減にして",
+                 useCases: ["イライラしたとき", "相手を急かすとき"],
+                 examples: [
+                    ("For goodness' sake, just tell me what happened!", "もう、何があったのか早く教えてよ！"),
+                    ("Oh, for goodness' sake — I've locked myself out again.", "あーもう、また鍵を閉めたまま外に出ちゃった。")
+                 ], ipa: "/fə ˈɡʊdnɪs ˌseɪk/"),
+            make("what was I thinking?", "used when you realise you did something silly",
+                 "何考えてたんだろう・どうかしてた",
+                 useCases: ["自分の失敗を振り返るとき", "後悔している買い物や決断について"],
+                 examples: [
+                    ("I bought shoes two sizes too small. What was I thinking?", "2サイズも小さい靴を買っちゃった。何考えてたんだろう。"),
+                    ("Running a marathon with no training — what was I thinking?", "練習なしでマラソンなんて、どうかしてたよ。")
+                 ], ipa: "/ˌwɒt wəz aɪ ˈθɪŋkɪŋ/"),
+            make("come on in", "a warm, friendly way to invite someone inside",
+                 "どうぞ入って",
+                 useCases: ["家に客を迎えるとき", "部屋に人を招き入れるとき"],
+                 examples: [
+                    ("Come on in — make yourself comfortable.", "どうぞ入って、くつろいでね。"),
+                    ("The door's open, come on in!", "ドア開いてるから、入っておいで！")
+                 ], ipa: "/ˌkʌm ɒn ˈɪn/"),
+            make("stay the night", "to sleep at someone's home until the next morning",
+                 "泊まっていく・一晩泊まる",
+                 useCases: ["遅くなった友達に泊まるよう勧めるとき", "誰かの家に泊まる話をするとき"],
+                 examples: [
+                    ("It's really late — why don't you stay the night?", "もう遅いし、泊まっていきなよ。"),
+                    ("I stayed the night at Anna's after the party.", "パーティーのあと、アンナの家に泊まった。")
+                 ], ipa: "/ˌsteɪ ðə ˈnaɪt/"),
+            make("how long will you be?", "asking how much time someone needs before they are ready or arrive",
+                 "あとどれくらいかかる？",
+                 useCases: ["待ち合わせで", "相手の準備を待っているとき"],
+                 examples: [
+                    ("How long will you be? The taxi's outside.", "あとどれくらい？タクシーもう外に来てるよ。"),
+                    ("I'm just at the shop — how long will you be?", "今お店にいるんだけど、そっちはあとどのくらい？")
+                 ], ipa: "/ˌhaʊ ˈlɒŋ wɪl ju ˌbiː/"),
+            make("a second helping", "another portion of food after you have finished the first",
+                 "おかわり",
+                 useCases: ["食事をおかわりするとき", "料理を褒めるとき"],
+                 examples: [
+                    ("This is delicious — can I have a second helping?", "これすごく美味しい、おかわりしてもいい？"),
+                    ("There's plenty left if anyone wants a second helping.", "おかわりしたい人がいたら、まだたくさんあるよ。")
+                 ], ipa: "/ə ˌsekənd ˈhelpɪŋ/"),
+            make("bizarre", "very strange or unusual",
+                 "すごく変な・奇妙な",
+                 useCases: ["変わった出来事を話すとき", "理解できないことに驚いたとき"],
+                 examples: [
+                    ("I had the most bizarre dream last night.", "昨日の夜、めちゃくちゃ変な夢を見た。"),
+                    ("It's a bit bizarre that nobody told us.", "誰も教えてくれなかったなんて、ちょっと変だよね。")
+                 ], ipa: "/bɪˈzɑː/"),
+        ]
+    }
+    private static var britishColloquial242: [Word] {
+        [
+            make("plus one", "a person you bring with you to a party or event as your guest",
+                 "（招待客の）同伴者・連れ",
+                 useCases: ["結婚式やパーティーの招待について話すとき", "誰かを連れて行っていいか聞くとき"],
+                 examples: [
+                    ("Am I allowed to bring a plus one to the wedding?", "結婚式って、誰か一人連れて行ってもいいの？"),
+                    ("She's coming as my plus one.", "彼女は僕の同伴者として来るんだ。")
+                 ], ipa: "/ˌplʌs ˈwʌn/"),
+            make("lukewarm", "only slightly warm, when it should be hot; also not very enthusiastic",
+                 "ぬるい・（反応が）いまいち乗り気でない",
+                 useCases: ["飲み物や料理がぬるいとき", "反応が微妙だったとき"],
+                 examples: [
+                    ("My coffee's gone lukewarm — I forgot about it.", "コーヒー、忘れてたらぬるくなっちゃった。"),
+                    ("The reaction to my idea was a bit lukewarm.", "僕のアイデアへの反応はちょっといまいちだったね。")
+                 ], ipa: "/ˌluːkˈwɔːm/"),
+            make("neighbourhood", "the area around where you live, or a particular part of a town",
+                 "近所・界隈・地域",
+                 useCases: ["住んでいる場所について話すとき", "おすすめのエリアを聞くとき"],
+                 examples: [
+                    ("It's a really friendly neighbourhood.", "ほんとに感じのいい地域だよ。"),
+                    ("Are there any good cafés in your neighbourhood?", "君の家の近所に、いいカフェある？")
+                 ], ipa: "/ˈneɪbəhʊd/"),
+            make("upgrade", "to get something better, newer, or more expensive than you had before",
+                 "アップグレード（する）・格上げ（される）",
+                 useCases: ["スマホや部屋を新しくするとき", "飛行機やホテルで格上げされたとき"],
+                 examples: [
+                    ("We got upgraded to a suite for free!", "タダでスイートに格上げしてもらえたんだ！"),
+                    ("I really need to upgrade my phone.", "そろそろスマホを買い替えないとな。")
+                 ], ipa: "/ʌpˈɡreɪd/"),
+            make("queasy", "feeling slightly sick, as if you might vomit",
+                 "（ちょっと）吐き気がする・気持ち悪い",
+                 useCases: ["乗り物酔いしたとき", "食べ過ぎや体調不良を伝えるとき"],
+                 examples: [
+                    ("I always feel a bit queasy on boats.", "船に乗るといつもちょっと気持ち悪くなるんだ。"),
+                    ("Just thinking about it makes me queasy.", "考えただけで気分が悪くなるよ。")
+                 ], ipa: "/ˈkwiːzi/"),
+            make("downstairs", "on or to a lower floor of a building",
+                 "下の階（で・へ）・階下",
+                 useCases: ["家の中で居場所を伝えるとき", "店や建物の場所を案内するとき"],
+                 examples: [
+                    ("I'll be downstairs if you need me.", "何かあったら下にいるからね。"),
+                    ("The toilets are downstairs on the left.", "トイレは下の階の左側です。")
+                 ], ipa: "/ˌdaʊnˈsteəz/"),
+            make("hassle-free", "easy and without any problems or annoying complications",
+                 "面倒のない・手間いらずの",
+                 useCases: ["サービスや手続きの楽さを話すとき", "おすすめを伝えるとき"],
+                 examples: [
+                    ("Booking online was completely hassle-free.", "ネット予約はまったく面倒がなかったよ。"),
+                    ("I just want a hassle-free holiday this year.", "今年はとにかく面倒のない休暇にしたいんだ。")
+                 ], ipa: "/ˌhæsl ˈfriː/"),
+            make("fast asleep", "sleeping very deeply",
+                 "ぐっすり眠っている",
+                 useCases: ["子どもや家族が寝ている様子を話すとき", "すぐ寝てしまったことを話すとき"],
+                 examples: [
+                    ("The kids are fast asleep, finally.", "子どもたち、やっとぐっすり寝たよ。"),
+                    ("I was fast asleep by ten last night.", "昨日の夜は10時にはもうぐっすり寝てたよ。")
+                 ], ipa: "/ˌfɑːst əˈsliːp/"),
+            make("downpour", "a sudden, very heavy fall of rain",
+                 "どしゃ降り・豪雨",
+                 useCases: ["急な大雨について話すとき", "天気の話題で"],
+                 examples: [
+                    ("We got caught in a downpour on the way home.", "帰り道でどしゃ降りにあっちゃった。"),
+                    ("Let's wait in here until the downpour stops.", "どしゃ降りがやむまで、ここで待とうよ。")
+                 ], ipa: "/ˈdaʊnpɔː/"),
+            make("drenched", "completely wet",
+                 "びしょ濡れの・ずぶ濡れの",
+                 useCases: ["雨に濡れたとき", "汗だくのとき"],
+                 examples: [
+                    ("I forgot my umbrella and got absolutely drenched.", "傘を忘れて、完全にびしょ濡れになったよ。"),
+                    ("You're drenched! Come in and dry off.", "ずぶ濡れじゃない！入って乾かしなよ。")
+                 ], ipa: "/drentʃt/"),
+            make("part-time", "working or studying for only some of the day or week",
+                 "パートタイムの・非常勤の",
+                 useCases: ["仕事の働き方を話すとき", "学生のバイトについて話すとき"],
+                 examples: [
+                    ("I work part-time in a bookshop at weekends.", "週末は本屋でパートで働いてるんだ。"),
+                    ("She went part-time after having the baby.", "彼女は出産後、パートタイムに切り替えたんだ。")
+                 ], ipa: "/ˌpɑːt ˈtaɪm/"),
+            make("self-employed", "working for yourself instead of for a company",
+                 "自営業の・フリーで働いている",
+                 useCases: ["仕事について聞かれたとき", "働き方の話をするとき"],
+                 examples: [
+                    ("I've been self-employed for about three years now.", "自営でやって、もう3年くらいになるよ。"),
+                    ("Being self-employed means no paid holidays, though.", "でも自営業だと有給休暇はないんだよね。")
+                 ], ipa: "/ˌself ɪmˈplɔɪd/"),
+            make("freezer", "the very cold part of a fridge, or a separate machine, for keeping food frozen",
+                 "冷凍庫",
+                 useCases: ["食べ物の保存について話すとき", "家で料理をするとき"],
+                 examples: [
+                    ("There's some ice cream in the freezer.", "冷凍庫にアイスがあるよ。"),
+                    ("I always cook extra and stick it in the freezer.", "いつも多めに作って冷凍庫に入れておくんだ。")
+                 ], ipa: "/ˈfriːzə/"),
+            make("sunscreen", "cream you put on your skin to protect it from the sun",
+                 "日焼け止め",
+                 useCases: ["ビーチや外出の準備をするとき", "日焼けした話をするとき"],
+                 examples: [
+                    ("Don't forget to put sunscreen on.", "日焼け止め塗るの忘れないでね。"),
+                    ("I didn't wear any sunscreen and now I'm bright red.", "日焼け止め塗らなかったから、真っ赤になっちゃった。")
+                 ], ipa: "/ˈsʌnskriːn/"),
+            make("refreshing", "pleasantly new, different, or making you feel cooler and less tired",
+                 "爽やかな・すっきりする・新鮮な",
+                 useCases: ["冷たい飲み物や水泳の感想を言うとき", "意外に良かったことを褒めるとき"],
+                 examples: [
+                    ("A cold drink is so refreshing on a day like this.", "こんな日の冷たい飲み物って、ほんとに生き返るね。"),
+                    ("It's refreshing to meet someone so honest.", "こんなに正直な人に会えるのって新鮮だよ。")
+                 ], ipa: "/rɪˈfreʃɪŋ/"),
+        ]
+    }
+    private static var britishColloquial243: [Word] {
+        [
+            make("cutlery", "knives, forks and spoons used for eating",
+                 "ナイフ・フォーク・スプーン類（食器）",
+                 useCases: ["食事の準備をするとき", "レストランで食器が足りないとき"],
+                 examples: [
+                    ("Could you grab the cutlery and lay the table?", "ナイフとフォーク出して、テーブルの準備してくれる？"),
+                    ("Sorry, we haven't got any cutlery here.", "すみません、こっちにフォーク類がないんですけど。")
+                 ], ipa: "/ˈkʌtləri/"),
+            make("pillow", "a soft cushion you rest your head on in bed",
+                 "枕",
+                 useCases: ["寝心地について話すとき", "ホテルで追加をお願いするとき"],
+                 examples: [
+                    ("Could I get an extra pillow, please?", "枕をもう一つもらえますか？"),
+                    ("As soon as my head hit the pillow, I was out.", "枕に頭をつけた瞬間、寝ちゃったよ。")
+                 ], ipa: "/ˈpɪləʊ/"),
+            make("munch on", "to eat something steadily, often a snack, especially with noisy chewing",
+                 "（おやつなどを）むしゃむしゃ食べる・つまむ",
+                 useCases: ["お菓子をつまんでいるとき", "映画を見ながら食べるとき"],
+                 examples: [
+                    ("I was munching on crisps all through the film.", "映画の間ずっとポテチをむしゃむしゃ食べてたよ。"),
+                    ("Have something to munch on while you wait.", "待ってる間、何かつまんでて。")
+                 ], ipa: "/mʌntʃ ɒn/"),
+            make("come in useful", "to be helpful or practical at some point, often later than expected",
+                 "役に立つ・重宝する",
+                 useCases: ["物を取っておく理由を話すとき", "スキルが役立ったとき"],
+                 examples: [
+                    ("Keep that box — it might come in useful.", "その箱取っておいて。何かに使えるかもよ。"),
+                    ("My bit of French really came in useful in Paris.", "ちょっとだけのフランス語がパリでほんとに役立ったよ。")
+                 ], ipa: "/kʌm ɪn ˈjuːsfl/"),
+            make("painkillers", "medicine that reduces pain, such as paracetamol or ibuprofen",
+                 "痛み止め・鎮痛剤",
+                 useCases: ["頭痛や体の痛みがあるとき", "薬を持っているか聞くとき"],
+                 examples: [
+                    ("Have you got any painkillers? My head's killing me.", "痛み止め持ってる？頭がめちゃくちゃ痛くて。"),
+                    ("I took a couple of painkillers and went to bed.", "痛み止めを2錠飲んで寝たんだ。")
+                 ], ipa: "/ˈpeɪnˌkɪləz/"),
+            make("suitcase", "a large case with a handle for carrying clothes when you travel",
+                 "スーツケース",
+                 useCases: ["旅行の準備をするとき", "荷物の話をするとき"],
+                 examples: [
+                    ("I still haven't packed my suitcase.", "まだスーツケースに荷物詰めてないんだ。"),
+                    ("My suitcase didn't turn up at the airport.", "空港でスーツケースが出てこなかったんだ。")
+                 ], ipa: "/ˈsuːtkeɪs/"),
+            make("sun cream", "cream you put on your skin to protect it from the sun",
+                 "日焼け止め",
+                 useCases: ["ビーチや外出の準備をするとき", "日焼けを気にするとき"],
+                 examples: [
+                    ("Don't forget to put sun cream on!", "日焼け止め塗るの忘れないでね！"),
+                    ("Can I borrow some sun cream?", "日焼け止めちょっと借りていい？")
+                 ], ipa: "/ˈsʌn kriːm/"),
+            make("humid", "hot and wet in a way that feels uncomfortable",
+                 "蒸し暑い・じめじめした",
+                 useCases: ["天気について話すとき", "旅行先の気候を話すとき"],
+                 examples: [
+                    ("It's so humid today — I'm sweating already.", "今日すごく蒸し暑いね。もう汗かいてるよ。"),
+                    ("Tokyo gets really humid in summer.", "東京は夏になるとほんとにじめじめするんだ。")
+                 ], ipa: "/ˈhjuːmɪd/"),
+            make("overcast", "covered with grey clouds, so there is no sun",
+                 "曇った・どんよりした",
+                 useCases: ["天気について話すとき", "出かけるか迷うとき"],
+                 examples: [
+                    ("It's a bit overcast, but it should stay dry.", "ちょっと曇ってるけど、雨は降らないと思うよ。"),
+                    ("It's been overcast all week.", "今週ずっとどんよりした天気だね。")
+                 ], ipa: "/ˌəʊvəˈkɑːst/"),
+            make("curtains", "pieces of cloth that hang over a window to cover it",
+                 "カーテン",
+                 useCases: ["部屋を明るく・暗くするとき", "インテリアの話をするとき"],
+                 examples: [
+                    ("Can you open the curtains? It's so dark in here.", "カーテン開けてくれる？ここ暗すぎるよ。"),
+                    ("I need new curtains for the bedroom.", "寝室用に新しいカーテンが要るんだ。")
+                 ], ipa: "/ˈkɜːtnz/"),
+            make("pyjamas", "loose, comfortable clothes that you wear in bed",
+                 "パジャマ",
+                 useCases: ["家でくつろいでいるとき", "朝の様子を話すとき"],
+                 examples: [
+                    ("I spent the whole Sunday in my pyjamas.", "日曜日は一日中パジャマで過ごしたよ。"),
+                    ("Go and get your pyjamas on — it's bedtime.", "パジャマに着替えておいで。もう寝る時間だよ。")
+                 ], ipa: "/pəˈdʒɑːməz/"),
+            make("slippers", "soft, comfortable shoes that you wear indoors",
+                 "スリッパ・室内履き",
+                 useCases: ["家の中で履くものを話すとき", "寒い日の過ごし方を話すとき"],
+                 examples: [
+                    ("Have you seen my slippers anywhere?", "僕のスリッパどこかで見なかった？"),
+                    ("Feel free to borrow some slippers — the floor's cold.", "床が冷たいから、スリッパ遠慮なく使ってね。")
+                 ], ipa: "/ˈslɪpəz/"),
+            make("doorbell", "a bell or button by a front door that visitors press",
+                 "玄関のチャイム・呼び鈴",
+                 useCases: ["来客や配達の話をするとき", "家への行き方を伝えるとき"],
+                 examples: [
+                    ("Was that the doorbell?", "今チャイム鳴った？"),
+                    ("Just ring the doorbell when you get here.", "着いたらチャイム鳴らしてね。")
+                 ], ipa: "/ˈdɔːbel/"),
+            make("shopping list", "a list of things you need to buy",
+                 "買い物リスト",
+                 useCases: ["買い物に行く前", "家族に買う物を頼むとき"],
+                 examples: [
+                    ("Add milk to the shopping list, will you?", "買い物リストに牛乳足しといてくれる？"),
+                    ("I left the shopping list at home!", "買い物リスト家に忘れてきちゃった！")
+                 ], ipa: "/ˈʃɒpɪŋ lɪst/"),
+            make("toothbrush", "a small brush for cleaning your teeth",
+                 "歯ブラシ",
+                 useCases: ["旅行の持ち物を話すとき", "泊まりに行くとき"],
+                 examples: [
+                    ("I forgot my toothbrush — is there a shop nearby?", "歯ブラシ忘れちゃった。近くにお店ある？"),
+                    ("I keep a spare toothbrush for guests.", "お客さん用に予備の歯ブラシ置いてるんだ。")
+                 ], ipa: "/ˈtuːθbrʌʃ/"),
+        ]
+    }
+    private static var britishColloquial244: [Word] {
+        [
+            make("wallet", "a small flat case for keeping money and cards in",
+                 "財布",
+                 useCases: ["支払いのとき", "財布をなくしたとき"],
+                 examples: [
+                    ("Oh no, I've left my wallet at home.", "やばい、財布家に忘れてきた。"),
+                    ("Have you seen my wallet anywhere?", "私の財布どこかで見なかった？")
+                 ], ipa: "/ˈwɒlɪt/"),
+            make("napkin", "a piece of cloth or paper used to wipe your mouth and hands while eating",
+                 "ナプキン・紙ナプキン",
+                 useCases: ["レストランで頼むとき", "食事中に手や口を拭くとき"],
+                 examples: [
+                    ("Could we have a few more napkins, please?", "ナプキンをもう少しもらえますか？"),
+                    ("Grab a napkin — these wings are messy.", "ナプキン取って。この手羽先、手が汚れるから。")
+                 ], ipa: "/ˈnæpkɪn/"),
+            make("mug", "a large cup with straight sides and a handle, used for hot drinks",
+                 "マグカップ",
+                 useCases: ["お茶やコーヒーを入れるとき", "プレゼントの話をするとき"],
+                 examples: [
+                    ("Do you want it in a mug or a cup?", "マグカップがいい？それとも普通のカップ？"),
+                    ("I need a big mug of tea right now.", "今、大きいマグで紅茶が飲みたい。")
+                 ], ipa: "/mʌɡ/"),
+            make("headphones", "a pair of speakers you wear over or in your ears to listen privately",
+                 "ヘッドホン・イヤホン",
+                 useCases: ["音楽を聴くとき", "電車や職場で集中したいとき"],
+                 examples: [
+                    ("Sorry, I had my headphones in and didn't hear you.", "ごめん、イヤホンしてて聞こえなかった。"),
+                    ("I can't work without my headphones on.", "ヘッドホンしてないと仕事できないんだ。")
+                 ], ipa: "/ˈhedfəʊnz/"),
+            make("sunglasses", "dark glasses that protect your eyes from bright sunlight",
+                 "サングラス",
+                 useCases: ["晴れた日に出かけるとき", "旅行の持ち物を話すとき"],
+                 examples: [
+                    ("It's so bright — I should've brought my sunglasses.", "眩しすぎる。サングラス持ってくればよかった。"),
+                    ("Are those new sunglasses? They suit you.", "それ新しいサングラス？似合ってるね。")
+                 ], ipa: "/ˈsʌnˌɡlɑːsɪz/"),
+            make("sticky", "covered in something like glue, sugar or jam that makes things stick",
+                 "べたべたする・ねばねばした",
+                 useCases: ["手や机がべたつくとき", "子どもがお菓子を食べた後"],
+                 examples: [
+                    ("My hands are all sticky — where's the sink?", "手がべたべた。洗面台どこ？"),
+                    ("Careful, the table's a bit sticky.", "気をつけて、テーブルちょっとべたついてるから。")
+                 ], ipa: "/ˈstɪki/"),
+            make("slippery", "wet, icy or smooth so that it is difficult to walk on or hold",
+                 "滑りやすい・つるつるした",
+                 useCases: ["雨や雪の日に注意するとき", "床が濡れているとき"],
+                 examples: [
+                    ("Watch out, the floor's really slippery.", "気をつけて、床がすごく滑るよ。"),
+                    ("The roads are slippery this morning, so drive carefully.", "今朝は道が滑りやすいから、運転気をつけてね。")
+                 ], ipa: "/ˈslɪpəri/"),
+            make("crumbs", "very small pieces of bread, cake or biscuit",
+                 "（パンやお菓子の）くず・食べかす",
+                 useCases: ["食べた後の掃除のとき", "ソファやベッドで食べたとき"],
+                 examples: [
+                    ("Who left crumbs all over the sofa?", "ソファ中に食べかす散らかしたの誰？"),
+                    ("You've got crumbs on your jumper.", "セーターにパンくず付いてるよ。")
+                 ], ipa: "/krʌmz/"),
+            make("blister", "a small painful bubble on the skin, often caused by rubbing shoes",
+                 "（靴ずれなどの）水ぶくれ・まめ",
+                 useCases: ["たくさん歩いた後", "新しい靴を履いたとき"],
+                 examples: [
+                    ("These new shoes have given me blisters.", "この新しい靴で靴ずれができちゃった。"),
+                    ("I've got a massive blister on my heel.", "かかとにでっかい水ぶくれができた。")
+                 ], ipa: "/ˈblɪstə/"),
+            make("sprain your ankle", "to injure your ankle by twisting it suddenly",
+                 "足首をひねる・捻挫する",
+                 useCases: ["怪我の話をするとき", "運動中に足をひねったとき"],
+                 examples: [
+                    ("I sprained my ankle playing football.", "サッカーしてて足首ひねっちゃった。"),
+                    ("Be careful on those steps or you'll sprain your ankle.", "その階段気をつけて、足くじくよ。")
+                 ], ipa: "/spreɪn jɔːr ˈæŋkl/"),
+            make("frying pan", "a flat metal pan with a long handle, used for frying food",
+                 "フライパン",
+                 useCases: ["料理をするとき", "キッチン用品の話をするとき"],
+                 examples: [
+                    ("Heat a bit of oil in the frying pan first.", "まずフライパンで油を少し温めて。"),
+                    ("Where do you keep your frying pans?", "フライパンってどこにしまってる？")
+                 ], ipa: "/ˈfraɪɪŋ pæn/"),
+            make("chopping board", "a board made of wood or plastic that you cut food on",
+                 "まな板",
+                 useCases: ["料理の準備をするとき", "キッチンで手伝うとき"],
+                 examples: [
+                    ("Pass me the chopping board, would you?", "まな板取ってくれる？"),
+                    ("Use a separate chopping board for the raw chicken.", "生の鶏肉には別のまな板を使ってね。")
+                 ], ipa: "/ˈtʃɒpɪŋ bɔːd/"),
+            make("crossroads", "a place where two roads meet and cross each other",
+                 "交差点・十字路",
+                 useCases: ["道案内をするとき", "待ち合わせ場所を説明するとき"],
+                 examples: [
+                    ("Turn left at the crossroads and it's on your right.", "交差点を左に曲がると右側にあるよ。"),
+                    ("I'll meet you by the crossroads near the station.", "駅の近くの交差点のところで会おう。")
+                 ], ipa: "/ˈkrɒsrəʊdz/"),
+            make("dry off", "to become dry, or to make yourself or something dry, after getting wet",
+                 "（濡れた体や物を）乾かす・拭く",
+                 useCases: ["雨に濡れたとき", "泳いだ後やシャワーの後"],
+                 examples: [
+                    ("Come in and dry off — you're soaked!", "入って体拭きな。びしょ濡れじゃん！"),
+                    ("Leave your coat by the heater to dry off.", "コートはヒーターのそばに置いて乾かしておいて。")
+                 ], ipa: "/draɪ ɒf/"),
+            make("tissue", "a piece of soft thin paper used for blowing your nose",
+                 "ティッシュ",
+                 useCases: ["鼻をかみたいとき", "風邪をひいているとき"],
+                 examples: [
+                    ("Have you got a tissue? My nose won't stop running.", "ティッシュある？鼻水が止まらなくて。"),
+                    ("There's a box of tissues on the table.", "テーブルの上にティッシュの箱があるよ。")
+                 ], ipa: "/ˈtɪʃuː/"),
+        ]
+    }
+    private static var britishColloquial246: [Word] {
+        [
+            make("a close shave", "a situation where you only just avoid an accident or something bad",
+                 "危機一髪・間一髪",
+                 useCases: ["事故やトラブルをギリギリで避けたとき", "電車や締め切りにギリギリ間に合ったとき"],
+                 examples: [
+                    ("That car nearly hit us — what a close shave!", "あの車、もう少しでぶつかるところだった。危なかった！"),
+                    ("I made the flight, but it was a close shave.", "飛行機には間に合ったけど、ほんとギリギリだった。")
+                 ], ipa: "/ə kləʊs ʃeɪv/"),
+            make("when all's said and done", "used when giving your final opinion after considering everything",
+                 "結局のところ・なんだかんだ言っても",
+                 useCases: ["話をまとめて本音を言うとき", "いろいろあったけど結論を言うとき"],
+                 examples: [
+                    ("When all's said and done, he's still my brother.", "なんだかんだ言っても、あいつは僕の兄弟だからね。"),
+                    ("It was stressful, but when all's said and done, it was worth it.", "大変だったけど、結局やってよかったよ。")
+                 ], ipa: "/wen ɔːlz sed ən dʌn/"),
+            make("there and then", "immediately, at that exact time and place",
+                 "その場ですぐに",
+                 useCases: ["即決したことを話すとき", "その場で何かが起きたとき"],
+                 examples: [
+                    ("I loved the flat, so I signed the contract there and then.", "部屋が気に入ったから、その場で契約しちゃった。"),
+                    ("He asked me out and I said yes there and then.", "デートに誘われて、その場でOKしたの。")
+                 ], ipa: "/ðeər ən ðen/"),
+            make("the whole lot", "everything; all of something",
+                 "全部・まるごと",
+                 useCases: ["残さず全部食べた・使ったとき", "まとめて全部を指すとき"],
+                 examples: [
+                    ("Did you eat the whole lot? There's nothing left!", "全部食べちゃったの？何も残ってないじゃん！"),
+                    ("Just chuck the whole lot in the washing machine.", "全部まとめて洗濯機に放り込んじゃって。")
+                 ], ipa: "/ðə həʊl lɒt/"),
+            make("gear", "the equipment, clothes or things you need for a particular activity",
+                 "道具・用具・装備（一式）",
+                 useCases: ["スポーツやキャンプの道具について", "自分の荷物・持ち物をまとめて言うとき"],
+                 examples: [
+                    ("Don't forget your gym gear.", "ジムの用具一式、忘れないでね。"),
+                    ("Where can I leave all my gear?", "荷物はどこに置いておけばいい？")
+                 ], ipa: "/ɡɪə/"),
+            make("you're pushing it", "used to tell someone they are taking a risk or asking for too much",
+                 "それはちょっと無理があるよ・調子に乗りすぎ",
+                 useCases: ["時間的にギリギリなとき", "相手の要求が図々しいとき"],
+                 examples: [
+                    ("Leaving at half eight? You're pushing it a bit.", "8時半に出るの？ちょっとギリギリすぎない？"),
+                    ("One more biscuit is fine, but three? Now you're pushing it.", "クッキーもう1枚はいいけど、3枚？それは調子に乗りすぎ。")
+                 ], ipa: "/jɔː ˈpʊʃɪŋ ɪt/"),
+            make("give someone a piece of your mind", "to tell someone angrily what you think of them or what they have done",
+                 "（怒って）ガツンと言ってやる・文句を言う",
+                 useCases: ["腹が立つ相手に一言言いたいとき", "クレームを入れるとき"],
+                 examples: [
+                    ("If he's late again, I'll give him a piece of my mind.", "またあいつが遅れたら、ガツンと言ってやる。"),
+                    ("She gave the manager a piece of her mind.", "彼女は店長にはっきり文句を言った。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ə piːs əv jɔː maɪnd/"),
+            make("none of your business", "used to tell someone rudely or jokingly that something is private",
+                 "君には関係ないでしょ・余計なお世話",
+                 useCases: ["プライベートなことを聞かれたとき", "冗談っぽくはぐらかすとき"],
+                 examples: [
+                    ("Who was that on the phone? — None of your business!", "電話誰だったの？—関係ないでしょ！"),
+                    ("How much I earn is none of your business.", "私の稼ぎがいくらかなんて、あなたには関係ない。")
+                 ], ipa: "/nʌn əv jɔː ˈbɪznəs/"),
+            make("one thing at a time", "used to tell someone to deal with things separately, not all at once",
+                 "一つずつ・焦らず順番に",
+                 useCases: ["やることが多くて慌てている人に", "質問攻めにされたとき"],
+                 examples: [
+                    ("Calm down — one thing at a time.", "落ち着いて。一つずつやろう。"),
+                    ("One thing at a time! Let me finish this first.", "一個ずつね！まずこれ終わらせてから。")
+                 ], ipa: "/wʌn θɪŋ ət ə taɪm/"),
+            make("have a lot going on", "to be very busy or dealing with many things, often stressful ones",
+                 "いろいろ立て込んでいる・いろいろ抱えている",
+                 useCases: ["忙しくて余裕がないと伝えるとき", "相手の事情を気遣うとき"],
+                 examples: [
+                    ("Sorry I haven't replied — I've got a lot going on at the moment.", "返事できなくてごめん、今いろいろ立て込んでて。"),
+                    ("Go easy on her, she's had a lot going on lately.", "彼女には優しくしてあげて。最近いろいろあったから。")
+                 ], ipa: "/hæv ə lɒt ˈɡəʊɪŋ ɒn/"),
+            make("it's a start", "used to say that something is not much, but it is a good first step",
+                 "まずは第一歩だね・とりあえず前進だね",
+                 useCases: ["小さな進歩を励ますとき", "まだ足りないけど前向きに捉えるとき"],
+                 examples: [
+                    ("I only ran two kilometres. — Well, it's a start!", "2キロしか走れなかった。—まあ、第一歩だよ！"),
+                    ("It's not perfect, but it's a start.", "完璧じゃないけど、とりあえず前進だね。")
+                 ], ipa: "/ɪts ə stɑːt/"),
+            make("you win", "used to agree to what someone wants after arguing or discussing",
+                 "わかった、君の勝ち・はいはい、そうするよ",
+                 useCases: ["言い合いで折れるとき", "相手の提案に渋々同意するとき"],
+                 examples: [
+                    ("Fine, you win — we'll get pizza.", "わかったよ、君の勝ち。ピザにしよう。"),
+                    ("OK, OK, you win. I'll come to the party.", "はいはい、わかった。パーティー行くよ。")
+                 ], ipa: "/juː wɪn/"),
+            make("go out of your way", "to make a special effort to do something, especially to help someone",
+                 "わざわざ〜する・特別に手間をかける",
+                 useCases: ["親切にしてくれた人に感謝するとき", "わざわざしなくていいと伝えるとき"],
+                 examples: [
+                    ("Thanks for going out of your way to pick me up.", "わざわざ迎えに来てくれてありがとう。"),
+                    ("Please don't go out of your way for me.", "私のためにわざわざ手間かけないでね。")
+                 ], ipa: "/ɡəʊ aʊt əv jɔː weɪ/"),
+            make("get some sleep", "to rest by sleeping, especially when you are tired",
+                 "ちょっと寝る・ひと眠りする",
+                 useCases: ["疲れている人を気遣うとき", "会話を切り上げて寝るとき"],
+                 examples: [
+                    ("You look shattered — go and get some sleep.", "すごく疲れてるね。少し寝てきなよ。"),
+                    ("I need to get some sleep before my shift.", "シフトの前に少し寝ておかないと。")
+                 ], ipa: "/ɡet sʌm sliːp/"),
+            make("it happens", "used to tell someone not to worry because a mistake or problem is normal",
+                 "よくあることだよ・気にしないで",
+                 useCases: ["相手のミスを慰めるとき", "自分の失敗を軽く流すとき"],
+                 examples: [
+                    ("Sorry, I spilt my drink. — Don't worry, it happens.", "ごめん、飲み物こぼしちゃった。—大丈夫、よくあることだよ。"),
+                    ("I missed my stop again. Oh well, it happens.", "また乗り過ごしちゃった。まあ、よくあるよね。")
+                 ], ipa: "/ɪt ˈhæpənz/"),
+        ]
+    }
+    private static var britishColloquial247: [Word] {
+        [
+            make("the lion's share", "the largest part of something",
+                 "大部分・いちばん大きな取り分",
+                 useCases: ["仕事や費用の大半を誰かが担ったとき", "時間やお金の大部分を占めるものを言うとき"],
+                 examples: [
+                    ("She did the lion's share of the work.", "仕事の大部分は彼女がやってくれたよ。"),
+                    ("Rent takes the lion's share of my salary.", "給料のほとんどは家賃に消えるんだ。")
+                 ], ipa: "/ðə ˈlaɪənz ʃeə/"),
+            make("not in a million years", "used to say that something will definitely never happen",
+                 "絶対にありえない・死んでもしない",
+                 useCases: ["強く否定するとき", "まったく予想していなかったことを言うとき"],
+                 examples: [
+                    ("Would I go bungee jumping? Not in a million years!", "バンジージャンプ？絶対やらないよ！"),
+                    ("I'd never have guessed it in a million years.", "そんなの、どう考えても予想できなかったよ。")
+                 ], ipa: "/nɒt ɪn ə ˈmɪljən jɪəz/"),
+            make("the bare minimum", "the smallest amount that is necessary",
+                 "必要最低限",
+                 useCases: ["やる気がなく最低限しかしないとき", "荷物や出費を最小限にするとき"],
+                 examples: [
+                    ("He only ever does the bare minimum at work.", "あいつは仕事でいつも最低限のことしかしない。"),
+                    ("I'm just packing the bare minimum for the weekend.", "週末用に必要最低限だけ詰めてるよ。")
+                 ], ipa: "/ðə beə ˈmɪnɪməm/"),
+            make("on the cheap", "for very little money, often by spending less than usual",
+                 "安く・格安で・お金をかけずに",
+                 useCases: ["節約して旅行や買い物をするとき", "安上がりな方法を話すとき"],
+                 examples: [
+                    ("We did Italy on the cheap — hostels and pizza every night.", "イタリアは格安で回ったよ。毎晩ホステルとピザ。"),
+                    ("You can furnish a flat on the cheap if you buy second-hand.", "中古で買えば、部屋の家具も安くそろえられるよ。")
+                 ], ipa: "/ɒn ðə tʃiːp/"),
+            make("be keen to", "to really want to do something",
+                 "ぜひ～したい・～したがっている",
+                 useCases: ["やる気や希望を伝えるとき", "相手が乗り気かどうか話すとき"],
+                 examples: [
+                    ("I'm keen to try that new Thai place.", "あの新しいタイ料理の店、ぜひ行ってみたいんだ。"),
+                    ("He wasn't very keen to come, to be honest.", "正直、彼はあんまり来たがってなかったよ。")
+                 ], ipa: "/biː kiːn tuː/"),
+            make("fat chance", "used to say that something is very unlikely to happen",
+                 "まずありえない・望み薄だね",
+                 useCases: ["期待できないことを皮肉っぽく言うとき", "ありえない話を一蹴するとき"],
+                 examples: [
+                    ("He'll pay me back tomorrow? Fat chance!", "明日返してくれるって？まずないね！"),
+                    ("Fat chance of getting a table on a Saturday night.", "土曜の夜に席が取れるなんて望み薄だよ。")
+                 ], ipa: "/fæt tʃɑːns/"),
+            make("hard going", "difficult, tiring or boring to do or deal with",
+                 "骨が折れる・しんどい・退屈で進まない",
+                 useCases: ["読みにくい本や退屈な会議について", "大変な作業や道のりについて"],
+                 examples: [
+                    ("The book's good, but the first half is hard going.", "その本、いいんだけど前半は読み進めるのがしんどいんだ。"),
+                    ("The meeting was really hard going today.", "今日の会議、ほんとにきつかった。")
+                 ], ipa: "/hɑːd ˈɡəʊɪŋ/"),
+            make("that rings true", "used to say that something seems accurate or believable",
+                 "確かにそうだね・本当っぽいね",
+                 useCases: ["相手の話に納得したとき", "話の信憑性について言うとき"],
+                 examples: [
+                    ("What you said about stress really rings true for me.", "ストレスについての話、すごく思い当たるよ。"),
+                    ("His excuse didn't quite ring true.", "彼の言い訳、なんだか嘘っぽかった。")
+                 ], ipa: "/ðæt rɪŋz truː/"),
+            make("lose your touch", "to lose a skill or ability you used to have",
+                 "腕が鈍る・勘が鈍る",
+                 useCases: ["久しぶりで上手くできなかったとき", "冗談っぽく自分の失敗を言うとき"],
+                 examples: [
+                    ("I burnt the pancakes — I must be losing my touch.", "パンケーキ焦がしちゃった。腕が鈍ったかな。"),
+                    ("Don't worry, you haven't lost your touch.", "大丈夫、腕は全然落ちてないよ。")
+                 ], ipa: "/luːz jɔː tʌtʃ/"),
+            make("elbow room", "enough space to move around comfortably; freedom to do things your way",
+                 "ゆとりのあるスペース・自由にやれる余地",
+                 useCases: ["狭い場所について話すとき", "仕事で裁量がほしいとき"],
+                 examples: [
+                    ("Can we move to a bigger table? There's no elbow room here.", "もっと大きいテーブルに移らない？ここ窮屈すぎる。"),
+                    ("My boss gives me plenty of elbow room.", "上司はかなり自由にやらせてくれるんだ。")
+                 ], ipa: "/ˈelbəʊ ruːm/"),
+            make("be tight on", "to not have much of something, especially time or money",
+                 "（時間やお金が）カツカツ・余裕がない",
+                 useCases: ["時間がないと伝えるとき", "金欠で断るとき"],
+                 examples: [
+                    ("Sorry, I'm a bit tight on time today.", "ごめん、今日はちょっと時間に余裕がないんだ。"),
+                    ("We're tight on money this month, so let's eat in.", "今月はお金がカツカツだから、家で食べよう。")
+                 ], ipa: "/biː taɪt ɒn/"),
+            make("be over it", "to no longer be upset about something; or to be fed up with something",
+                 "もう気にしてない・もううんざり",
+                 useCases: ["過去の失恋やトラブルを吹っ切れたとき", "同じことにうんざりしているとき"],
+                 examples: [
+                    ("That was ages ago — I'm totally over it now.", "それ、だいぶ前の話だよ。もう完全に吹っ切れてる。"),
+                    ("Another rainy day? I'm so over it.", "また雨？もううんざり。")
+                 ], ipa: "/biː ˈəʊvər ɪt/"),
+            make("the lads", "a group of male friends",
+                 "（男の）仲間たち・いつものメンバー",
+                 useCases: ["男友達グループについて話すとき", "飲みや遊びの予定を言うとき"],
+                 examples: [
+                    ("I'm going out with the lads on Friday.", "金曜はいつもの仲間と飲みに行くんだ。"),
+                    ("Alright, lads? Who wants a drink?", "よう、みんな。何か飲む人？")
+                 ], ipa: "/ðə lædz/"),
+            make("make it up as you go along", "to decide what to do or say as things happen, without a plan",
+                 "その場その場でなんとかする・行き当たりばったりでやる",
+                 useCases: ["計画なしで進めているとき", "初めてのことを手探りでやっているとき"],
+                 examples: [
+                    ("Honestly, I've got no plan — I'm making it up as I go along.", "正直ノープランだよ。その場でなんとかしてる。"),
+                    ("Nobody knows how to be a parent. We all make it up as we go along.", "親のやり方なんて誰も知らないよ。みんな手探りなんだ。")
+                 ], ipa: "/meɪk ɪt ʌp əz juː ɡəʊ əˈlɒŋ/"),
+            make("the whole thing", "all of a situation, event or object",
+                 "全部・一部始終・そのこと全体",
+                 useCases: ["出来事全体について感想を言うとき", "まるごと全部を指すとき"],
+                 examples: [
+                    ("The whole thing was a bit of a disaster.", "全体的にちょっと散々だったよ。"),
+                    ("Just forget the whole thing, it doesn't matter.", "もう全部忘れて。大したことじゃないから。")
+                 ], ipa: "/ðə həʊl θɪŋ/"),
+        ]
+    }
+    private static var britishColloquial248: [Word] {
+        [
+            make("hit the ground running", "to start something new quickly and successfully, without needing time to prepare",
+                 "初日からすぐに全力で取りかかる・好スタートを切る",
+                 useCases: ["新しい仕事やプロジェクトの始まりについて", "準備万端ですぐ動けることを言うとき"],
+                 examples: [
+                    ("She really hit the ground running in her new job.", "彼女、新しい仕事で初日からバリバリやってるよ。"),
+                    ("We need someone who can hit the ground running.", "すぐに即戦力になれる人が必要なんだ。")
+                 ], ipa: "/hɪt ðə ɡraʊnd ˈrʌnɪŋ/"),
+            make("get into the habit of", "to start doing something regularly so that it becomes normal for you",
+                 "～する習慣がつく・～するのが癖になる",
+                 useCases: ["新しい習慣を始めたとき", "良い習慣・悪い癖について話すとき"],
+                 examples: [
+                    ("I've got into the habit of going for a walk after lunch.", "昼ごはんの後に散歩するのが習慣になったんだ。"),
+                    ("Try not to get into the habit of checking your phone in bed.", "ベッドでスマホを見るのは癖にしないほうがいいよ。")
+                 ], ipa: "/ɡet ˈɪntə ðə ˈhæbɪt əv/"),
+            make("last thing at night", "just before you go to bed",
+                 "寝る直前に・夜寝る前に",
+                 useCases: ["寝る前の習慣を話すとき", "一日の最後にすることを言うとき"],
+                 examples: [
+                    ("I always have a cup of tea last thing at night.", "寝る前にいつも紅茶を一杯飲むんだ。"),
+                    ("Don't check your work emails last thing at night.", "寝る直前に仕事のメールを見ちゃだめだよ。")
+                 ], ipa: "/lɑːst θɪŋ ət naɪt/"),
+            make("go back on your word", "to not do something that you promised to do",
+                 "約束を破る・前言を撤回する",
+                 useCases: ["約束を守らなかった人を責めるとき", "約束は守ると伝えるとき"],
+                 examples: [
+                    ("He said he'd help, then went back on his word.", "手伝うって言ってたのに、あいつ約束を破ったんだ。"),
+                    ("I promised I'd come, and I won't go back on my word.", "行くって約束したから、絶対に破らないよ。")
+                 ], ipa: "/ɡəʊ bæk ɒn jɔː wɜːd/"),
+            make("it takes two to tango", "used to say that both people involved in a situation are responsible for it",
+                 "片方だけのせいじゃない・お互いさま",
+                 useCases: ["ケンカやトラブルの責任が両方にあるとき", "一方だけが責められているとき"],
+                 examples: [
+                    ("Don't just blame him — it takes two to tango.", "彼だけを責めないで。どっちにも原因はあるんだから。"),
+                    ("Well, it takes two to tango, doesn't it?", "まあ、お互いさまってことでしょ？")
+                 ], ipa: "/ɪt teɪks tuː tə ˈtæŋɡəʊ/"),
+            make("an acquired taste", "something that people do not usually like at first, but start to like over time",
+                 "慣れるとハマる味・好みが分かれるもの",
+                 useCases: ["独特な食べ物や飲み物について", "クセのある音楽や映画について"],
+                 examples: [
+                    ("Blue cheese is a bit of an acquired taste.", "ブルーチーズはちょっと慣れが必要な味だよね。"),
+                    ("His sense of humour is an acquired taste.", "彼のユーモアは好みが分かれるんだよね。")
+                 ], ipa: "/ən əˈkwaɪəd teɪst/"),
+            make("seal the deal", "to do something that finally makes an agreement or success certain",
+                 "決め手になる・話をまとめる",
+                 useCases: ["購入や契約の決め手を話すとき", "何かを決定づけた理由を言うとき"],
+                 examples: [
+                    ("The garden really sealed the deal for us.", "庭があったのが私たちにとって決め手だったの。"),
+                    ("Offer them a discount and that should seal the deal.", "割引を提示すれば話はまとまるはずだよ。")
+                 ], ipa: "/siːl ðə diːl/"),
+            make("get your money's worth", "to get enough value or use from something to justify what you paid",
+                 "払った分の元を取る",
+                 useCases: ["チケットや会員費の元を取りたいとき", "コスパについて話すとき"],
+                 examples: [
+                    ("We stayed till the very end to get our money's worth.", "元を取るために最後の最後までいたよ。"),
+                    ("I go to the gym every day so I get my money's worth.", "元を取るためにジムに毎日通ってるんだ。")
+                 ], ipa: "/ɡet jɔː ˈmʌniz wɜːθ/"),
+            make("in the first place", "used to talk about the beginning or original reason for something",
+                 "そもそも・最初から",
+                 useCases: ["そもそもの理由を問うとき", "最初からやるべきではなかったと言うとき"],
+                 examples: [
+                    ("Why did you agree to it in the first place?", "そもそも、なんで引き受けたの？"),
+                    ("I should never have said yes in the first place.", "最初からOKするべきじゃなかったよ。")
+                 ], ipa: "/ɪn ðə fɜːst pleɪs/"),
+            make("as luck would have it", "used to say that something happened by chance, either good or bad",
+                 "運よく・たまたま・あいにく",
+                 useCases: ["偶然うまくいったことを話すとき", "運悪くそうなったことを話すとき"],
+                 examples: [
+                    ("As luck would have it, there was one room left.", "運よく、一部屋だけ空いてたんだ。"),
+                    ("As luck would have it, it rained all weekend.", "あいにく、週末はずっと雨だったよ。")
+                 ], ipa: "/əz lʌk wʊd hæv ɪt/"),
+            make("look before you leap", "used to say that you should think carefully before you do something",
+                 "よく考えてから行動しよう・転ばぬ先の杖",
+                 useCases: ["大きな決断をする人に助言するとき", "衝動的な行動をいさめるとき"],
+                 examples: [
+                    ("Quitting your job is a big step — look before you leap.", "仕事を辞めるのは大きな決断だよ。よく考えてからね。"),
+                    ("I'm all for it, but look before you leap.", "大賛成だけど、行動する前によく考えてね。")
+                 ], ipa: "/lʊk bɪˈfɔː juː liːp/"),
+            make("work wonders", "to be very effective in making something better",
+                 "驚くほど効く・すごく効果がある",
+                 useCases: ["薬や方法がよく効いたとき", "おすすめを伝えるとき"],
+                 examples: [
+                    ("A good night's sleep will work wonders.", "ぐっすり寝れば、驚くほど良くなるよ。"),
+                    ("This cream works wonders for dry skin.", "このクリーム、乾燥肌にすごく効くんだ。")
+                 ], ipa: "/wɜːk ˈwʌndəz/"),
+            make("the norm", "what is usual, normal or expected",
+                 "普通のこと・当たり前",
+                 useCases: ["一般的になったことを話すとき", "珍しいことと比べるとき"],
+                 examples: [
+                    ("Working from home is pretty much the norm now.", "今じゃ在宅勤務はほぼ当たり前だよね。"),
+                    ("Late trains are the exception, not the norm.", "電車が遅れるのは例外で、普通じゃないよ。")
+                 ], ipa: "/ðə nɔːm/"),
+            make("in theory", "used to say what should be true or happen, when the reality may be different",
+                 "理論上は・建前では",
+                 useCases: ["計画と現実のズレを言うとき", "本来はそうなるはずだと話すとき"],
+                 examples: [
+                    ("In theory, the train takes an hour.", "理論上は電車で1時間なんだけどね。"),
+                    ("It sounds great in theory, but will it work?", "理屈ではいいけど、うまくいくかな？")
+                 ], ipa: "/ɪn ˈθɪəri/"),
+            make("deep down", "used to talk about someone's real feelings or character, which may be hidden",
+                 "心の底では・本当は",
+                 useCases: ["本心を打ち明けるとき", "見た目と違う本当の性格を言うとき"],
+                 examples: [
+                    ("Deep down, I knew he was right.", "心の底では、彼が正しいって分かってたんだ。"),
+                    ("He seems grumpy, but deep down he's really kind.", "無愛想に見えるけど、本当はすごく優しいんだよ。")
+                 ], ipa: "/diːp daʊn/"),
+        ]
+    }
+    private static var britishColloquial249: [Word] {
+        [
+            make("take the plunge", "to finally decide to do something important or risky after thinking about it",
+                 "思い切ってやってみる・決心して踏み切る",
+                 useCases: ["転職・引っ越し・結婚など大きな決断について", "迷っていたことをついに始めたとき"],
+                 examples: [
+                    ("We finally took the plunge and bought a house.", "ついに思い切って家を買ったんだ。"),
+                    ("If you want to learn to surf, just take the plunge!", "サーフィンやりたいなら、思い切って始めちゃいなよ！")
+                 ], ipa: "/teɪk ðə plʌndʒ/"),
+            make("it remains to be seen", "used to say that something is not yet known or certain",
+                 "それはまだ分からない・今後次第だ",
+                 useCases: ["結果がまだ出ていないことについて", "楽観も悲観もせずに様子を見るとき"],
+                 examples: [
+                    ("It remains to be seen whether the plan will work.", "その計画がうまくいくかはまだ分からないね。"),
+                    ("He says he'll change, but that remains to be seen.", "変わるって言ってるけど、それはこれから次第だね。")
+                 ], ipa: "/ɪt rɪˈmeɪnz tə bi siːn/"),
+            make("in a word", "used before giving a very short answer or summary",
+                 "一言で言うと・要するに",
+                 useCases: ["感想や結論を一言でまとめるとき", "長く説明せずに答えるとき"],
+                 examples: [
+                    ("How was the holiday? In a word, amazing.", "休暇どうだった？一言で言うと、最高！"),
+                    ("In a word, no. I'm not doing it again.", "要するに、ノー。もう二度とやらないよ。")
+                 ], ipa: "/ɪn ə wɜːd/"),
+            make("not in so many words", "used to say that someone suggested something without saying it directly",
+                 "はっきりとは言わなかったけど（遠回しに）",
+                 useCases: ["相手が遠回しに伝えてきたことを説明するとき", "「本当にそう言ったの？」と聞かれたとき"],
+                 examples: [
+                    ("Did she say no? — Not in so many words, but yes.", "彼女、断ったの？—はっきりとは言わなかったけど、そういうこと。"),
+                    ("He told me, not in so many words, that I'd got the job.", "遠回しにだけど、採用だって彼が教えてくれたんだ。")
+                 ], ipa: "/nɒt ɪn səʊ ˈmeni wɜːdz/"),
+            make("hear it on the grapevine", "to hear news informally from other people, often as gossip",
+                 "噂で聞く・人づてに耳にする",
+                 useCases: ["噂話の出どころを言うとき", "正式発表前のニュースを聞いたとき"],
+                 examples: [
+                    ("I heard it on the grapevine that you're moving.", "引っ越すって噂で聞いたんだけど。"),
+                    ("Where did you hear that? — Oh, just on the grapevine.", "それどこで聞いたの？—いや、人づてにね。")
+                 ], ipa: "/hɪər ɪt ɒn ðə ˈɡreɪpvaɪn/"),
+            make("to the letter", "exactly, paying attention to every detail",
+                 "きっちりその通りに・一字一句守って",
+                 useCases: ["指示やレシピを正確に守るとき", "ルールを厳密に守ることを言うとき"],
+                 examples: [
+                    ("I followed the recipe to the letter, and it still went wrong.", "レシピ通りきっちり作ったのに、失敗しちゃった。"),
+                    ("You don't have to follow the rules to the letter.", "ルールをそこまで厳密に守らなくても大丈夫だよ。")
+                 ], ipa: "/tə ðə ˈletə/"),
+            make("fess up", "to admit that you have done something wrong (informal)",
+                 "白状する・正直に認める",
+                 useCases: ["いたずらや失敗を認めさせるとき", "自分のミスを打ち明けるとき"],
+                 examples: [
+                    ("Come on, fess up — who ate the last biscuit?", "ほら、白状して。最後のビスケット食べたの誰？"),
+                    ("I had to fess up that I'd forgotten her birthday.", "彼女の誕生日を忘れてたって正直に言うしかなかったよ。")
+                 ], ipa: "/fes ʌp/"),
+            make("get sidetracked", "to start doing or talking about something else and forget your main task",
+                 "脇道にそれる・気が散って本題から離れる",
+                 useCases: ["やるべきことが進まなかった理由を言うとき", "話が本題からそれたとき"],
+                 examples: [
+                    ("Sorry, I got sidetracked — what were we talking about?", "ごめん、話がそれちゃった。何の話してたっけ？"),
+                    ("I meant to tidy up, but I got sidetracked by my phone.", "片付けるつもりだったのに、スマホに気を取られちゃって。")
+                 ], ipa: "/ɡet ˈsaɪdtrækt/"),
+            make("go off on a tangent", "to suddenly start talking about something different from the main subject",
+                 "急に話が脱線する",
+                 useCases: ["話が関係ない方向に行ったとき", "自分の話の脱線を謝るとき"],
+                 examples: [
+                    ("Sorry, I've gone off on a tangent again.", "ごめん、また話が脱線しちゃった。"),
+                    ("He always goes off on a tangent in meetings.", "彼って会議でいつも話が脱線するんだよね。")
+                 ], ipa: "/ɡəʊ ɒf ɒn ə ˈtændʒənt/"),
+            make("you can't have it both ways", "used to say that someone cannot have two things that are not possible together",
+                 "両方いいとこ取りはできないよ",
+                 useCases: ["矛盾した要求をする人に言うとき", "どちらか選ぶ必要があるとき"],
+                 examples: [
+                    ("You want more free time but a bigger salary? You can't have it both ways.", "自由な時間も高い給料も欲しいって？両方は無理だよ。"),
+                    ("You can't have it both ways — either come or don't.", "いいとこ取りはできないよ。来るか来ないか決めて。")
+                 ], ipa: "/juː kɑːnt hæv ɪt bəʊθ weɪz/"),
+            make("try your hand at", "to try doing something for the first time to see if you can do it",
+                 "～に挑戦してみる・～をやってみる",
+                 useCases: ["新しい趣味やスキルを始めるとき", "初めてのことに挑戦した話をするとき"],
+                 examples: [
+                    ("I've decided to try my hand at baking bread.", "パン作りに挑戦してみることにしたんだ。"),
+                    ("Have you ever tried your hand at painting?", "絵を描いてみたことってある？")
+                 ], ipa: "/traɪ jɔː hænd æt/"),
+            make("dip your toe in the water", "to try something new carefully, in a small way, before fully committing",
+                 "まずは軽く試してみる・様子見で少しやってみる",
+                 useCases: ["新しいことを少しずつ始めるとき", "本格的に始める前に試すとき"],
+                 examples: [
+                    ("I'm just dipping my toe in the water with a part-time course.", "とりあえずパートタイムの講座で様子見してるところ。"),
+                    ("Why not dip your toe in the water before you quit your job?", "仕事を辞める前に、まずは少し試してみたら？")
+                 ], ipa: "/dɪp jɔː təʊ ɪn ðə ˈwɔːtə/"),
+            make("a step in the right direction", "an action that is a small but good improvement",
+                 "正しい方向への一歩・一歩前進",
+                 useCases: ["小さな改善を評価するとき", "まだ十分ではないが良い変化について"],
+                 examples: [
+                    ("It's not perfect, but it's a step in the right direction.", "完璧じゃないけど、一歩前進だよ。"),
+                    ("Going to bed earlier is a step in the right direction.", "早く寝るようにしたのは良い一歩だね。")
+                 ], ipa: "/ə step ɪn ðə raɪt dəˈrekʃn/"),
+            make("the done thing", "the socially accepted or polite way to behave in a situation",
+                 "当たり前のマナー・普通そうするもの",
+                 useCases: ["その場の常識やマナーを説明するとき", "習慣の違いについて話すとき"],
+                 examples: [
+                    ("Is tipping the done thing here?", "ここではチップを払うのが普通なの？"),
+                    ("Talking loudly on the train just isn't the done thing.", "電車で大声で話すのはマナー違反だよ。")
+                 ], ipa: "/ðə dʌn θɪŋ/"),
+            make("out of the picture", "no longer involved in a situation",
+                 "もう関わっていない・蚊帳の外",
+                 useCases: ["元恋人や関係者がもう関係ないと言うとき", "誰かが計画から外れたとき"],
+                 examples: [
+                    ("Her ex is completely out of the picture now.", "彼女の元カレはもう完全に関係ないよ。"),
+                    ("With Tom out of the picture, we need a new plan.", "トムが抜けたから、新しい計画が必要だね。")
+                 ], ipa: "/aʊt əv ðə ˈpɪktʃə/"),
+        ]
+    }
+    private static var britishColloquial250: [Word] {
+        [
+            make("run something by someone", "to tell someone about an idea or plan to get their opinion or approval",
+                 "（意見をもらうために）〜に話してみる・確認してもらう",
+                 useCases: ["上司や友人に案を確認してもらうとき", "決める前に相手の意見を聞きたいとき"],
+                 examples: [
+                    ("Let me run it by my boss first.", "まず上司に確認してみるね。"),
+                    ("Can I run something by you? I'd like your opinion.", "ちょっと聞いてもらっていい？意見が欲しいんだ。")
+                 ], ipa: "/rʌn ˈsʌmθɪŋ baɪ ˈsʌmwʌn/"),
+            make("pop the question", "to ask someone to marry you",
+                 "プロポーズする",
+                 useCases: ["プロポーズの話をするとき", "カップルの近況を話すとき"],
+                 examples: [
+                    ("He finally popped the question on holiday in Italy.", "彼、イタリア旅行でついにプロポーズしたんだって。"),
+                    ("When are you going to pop the question?", "いつプロポーズするつもりなの？")
+                 ], ipa: "/pɒp ðə ˈkwestʃən/"),
+            make("for good measure", "in addition to what is needed, as an extra",
+                 "おまけに・念のためにもう一つ",
+                 useCases: ["必要以上に少し足すとき", "念のために追加でやったことを言うとき"],
+                 examples: [
+                    ("I added a bit more chilli for good measure.", "おまけにチリをもう少し足しておいたよ。"),
+                    ("I locked the door and checked it twice for good measure.", "鍵をかけて、念のため2回確認したよ。")
+                 ], ipa: "/fə ɡʊd ˈmeʒə/"),
+            make("touch on", "to mention a subject briefly",
+                 "（話題に）軽く触れる",
+                 useCases: ["会議や会話で少しだけ話題に出すとき", "詳しく話さなかったことを説明するとき"],
+                 examples: [
+                    ("We only touched on the budget in the meeting.", "会議では予算について軽く触れただけだったよ。"),
+                    ("She touched on it, but didn't go into detail.", "彼女はそれに触れたけど、詳しくは話さなかったね。")
+                 ], ipa: "/tʌtʃ ɒn/"),
+            make("go through the motions", "to do something without real effort or interest, just because you have to",
+                 "形だけやる・気持ちが入らずにこなす",
+                 useCases: ["やる気がないまま仕事や練習をするとき", "惰性で続けている状態を言うとき"],
+                 examples: [
+                    ("I'm just going through the motions at work these days.", "最近、仕事は形だけこなしてる感じなんだ。"),
+                    ("If you're just going through the motions, take a break.", "気持ちが入ってないなら、少し休みなよ。")
+                 ], ipa: "/ɡəʊ θruː ðə ˈməʊʃənz/"),
+            make("get the go-ahead", "to receive permission to start doing something",
+                 "許可が出る・ゴーサインをもらう",
+                 useCases: ["計画やプロジェクトが承認されたとき", "何かを始める許可をもらったとき"],
+                 examples: [
+                    ("We got the go-ahead to start the project next month.", "来月プロジェクトを始めるゴーサインが出たよ。"),
+                    ("Have you got the go-ahead from your landlord?", "大家さんから許可はもらったの？")
+                 ], ipa: "/ɡet ðə ˈɡəʊ əhed/"),
+            make("give someone the green light", "to give permission for something to happen",
+                 "〜に許可を出す・ゴーサインを出す",
+                 useCases: ["上司や親などが許可したとき", "計画を進めてよいと伝えるとき"],
+                 examples: [
+                    ("My parents gave me the green light to go travelling.", "親が旅行に行っていいって許可してくれたんだ。"),
+                    ("The council has given the green light to the new park.", "市が新しい公園の計画を承認したよ。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ðə ɡriːn laɪt/"),
+            make("a bit of a gamble", "something risky that might or might not succeed",
+                 "ちょっとした賭け・リスクのあること",
+                 useCases: ["結果が読めない決断について", "思い切った選択をするとき"],
+                 examples: [
+                    ("Moving abroad is a bit of a gamble, but I'm excited.", "海外に引っ越すのはちょっとした賭けだけど、ワクワクしてる。"),
+                    ("Booking without reviews was a bit of a gamble.", "レビューなしで予約したのはちょっと賭けだったね。")
+                 ], ipa: "/ə bɪt əv ə ˈɡæmbəl/"),
+            make("the works", "everything that is usually included; all the extras",
+                 "全部入り・フルセット",
+                 useCases: ["料理のトッピングを全部のせにするとき", "サービスや準備を一通り全部揃えるとき"],
+                 examples: [
+                    ("I'll have a burger with the works, please.", "ハンバーガー、全部のせでお願いします。"),
+                    ("They had the works at their wedding — band, fireworks, the lot.", "彼らの結婚式はバンドに花火に、全部揃ってたよ。")
+                 ], ipa: "/ðə wɜːks/"),
+            make("have a crack at", "to try to do something, especially for the first time (informal)",
+                 "〜に挑戦してみる・やってみる",
+                 useCases: ["初めてのことに挑戦するとき", "難しそうなことを試してみるとき"],
+                 examples: [
+                    ("I've never made sushi, but I'll have a crack at it.", "お寿司は作ったことないけど、やってみるよ。"),
+                    ("Do you want to have a crack at fixing it?", "それ、直すの挑戦してみる？")
+                 ], ipa: "/hæv ə kræk æt/"),
+            make("get a kick out of", "to really enjoy something",
+                 "〜がすごく楽しい・〜にワクワクする",
+                 useCases: ["好きなことや楽しいことを話すとき", "意外なことが楽しいと言うとき"],
+                 examples: [
+                    ("I get a real kick out of cooking for friends.", "友達に料理を作るのが本当に楽しいんだ。"),
+                    ("Kids get a kick out of seeing the animals up close.", "子どもたちは動物を間近で見るのが大好きなんだよ。")
+                 ], ipa: "/ɡet ə kɪk aʊt əv/"),
+            make("a tall order", "something that is very difficult to do or achieve",
+                 "無理な注文・難しい要求",
+                 useCases: ["無理のある頼みごとやスケジュールについて", "達成が難しいことを言うとき"],
+                 examples: [
+                    ("Finishing it by Friday is a bit of a tall order.", "金曜までに終わらせるのはちょっと厳しいね。"),
+                    ("Finding a cheap flat in the centre is a tall order.", "中心部で安い部屋を見つけるのは難しいよ。")
+                 ], ipa: "/ə tɔːl ˈɔːdə/"),
+            make("par for the course", "what you would normally expect to happen, often something negative",
+                 "よくあること・いつものこと",
+                 useCases: ["遅延やトラブルが想定内だと言うとき", "ある状況では普通のことだと言うとき"],
+                 examples: [
+                    ("Delays are par for the course on this train line.", "この路線では遅延なんていつものことだよ。"),
+                    ("Long hours are par for the course in this job.", "この仕事だと長時間労働はよくあることなんだ。")
+                 ], ipa: "/pɑː fə ðə kɔːs/"),
+            make("in the thick of it", "very busy with or deeply involved in an activity or situation",
+                 "真っ只中で・まさに忙しい最中で",
+                 useCases: ["忙しさのピークにいるとき", "トラブルや出来事の中心にいるとき"],
+                 examples: [
+                    ("Sorry I haven't called — I'm in the thick of exams.", "連絡できなくてごめん、試験の真っ只中なんだ。"),
+                    ("She's always right in the thick of it when there's drama.", "揉め事があると、彼女はいつもど真ん中にいるよね。")
+                 ], ipa: "/ɪn ðə θɪk əv ɪt/"),
+            make("at a guess", "used when giving an answer you are not sure about",
+                 "たぶん・ざっと見当をつけると",
+                 useCases: ["正確には分からない数字や時間を答えるとき", "推測で答えるとき"],
+                 examples: [
+                    ("How many people came? — At a guess, about fifty.", "何人来た？—たぶん50人くらいかな。"),
+                    ("At a guess, I'd say it'll take two hours.", "ざっと見て、2時間くらいかかると思うよ。")
+                 ], ipa: "/æt ə ɡes/"),
+        ]
+    }
+    private static var britishColloquial251: [Word] {
+        [
+            make("foot the bill", "to pay for something, often something expensive",
+                 "（費用を）負担する・支払いを持つ",
+                 useCases: ["誰が費用を払うかを話すとき", "高い支払いを引き受けるとき"],
+                 examples: [
+                    ("Who's going to foot the bill for the party?", "パーティーの費用は誰が持つの？"),
+                    ("My company footed the bill for the hotel.", "ホテル代は会社が負担してくれたよ。")
+                 ], ipa: "/fʊt ðə bɪl/"),
+            make("my hands are tied", "I am not able to help or change things because of rules or other people",
+                 "どうすることもできない・私の一存では無理",
+                 useCases: ["ルールや上司の決定で動けないとき", "頼まれたが断るしかないとき"],
+                 examples: [
+                    ("I'd love to help, but my hands are tied.", "助けたいんだけど、私にはどうにもできないんだ。"),
+                    ("Sorry, my hands are tied – it's company policy.", "ごめん、会社の方針だからどうしようもないの。")
+                 ], ipa: "/maɪ hændz ə taɪd/"),
+            make("breathe down someone's neck", "to watch someone too closely, making them feel pressured",
+                 "〜をすぐそばで監視する・プレッシャーをかける",
+                 useCases: ["上司などに細かく見張られているとき", "急かされて落ち着かないとき"],
+                 examples: [
+                    ("My boss is always breathing down my neck.", "上司がいつも後ろから見張ってくるんだよ。"),
+                    ("I can't work with you breathing down my neck!", "そんなに見張られてたら仕事できないよ！")
+                 ], ipa: "/briːð daʊn ˈsʌmwʌnz nek/"),
+            make("talk to you later", "a friendly way of saying goodbye when you'll speak again soon",
+                 "またあとでね・また話そう",
+                 useCases: ["電話やチャットを終えるとき", "友達と別れるとき"],
+                 examples: [
+                    ("I've got to go – talk to you later!", "もう行かなきゃ、またあとでね！"),
+                    ("Okay, talk to you later. Bye!", "じゃあ、またあとで話そう。バイバイ！")
+                 ], ipa: "/tɔːk tə juː ˈleɪtə/"),
+            make("be set in one's ways", "to be unwilling to change habits or opinions",
+                 "考えや習慣が凝り固まっている・頑固である",
+                 useCases: ["年配の家族などの頑固さを話すとき", "なかなか習慣を変えない人について"],
+                 examples: [
+                    ("My dad's quite set in his ways.", "うちの父はけっこう頑固で変わらないんだ。"),
+                    ("I'm getting a bit set in my ways, to be honest.", "正直、最近ちょっと考えが凝り固まってきたかも。")
+                 ], ipa: "/set ɪn wʌnz weɪz/"),
+            make("get away from it all", "to go somewhere to escape from everyday life and stress",
+                 "日常から離れる・気分転換に遠くへ行く",
+                 useCases: ["休暇や旅行の目的を話すとき", "ストレスから逃れたいとき"],
+                 examples: [
+                    ("We went to the coast to get away from it all.", "日常を離れたくて海辺に行ったんだ。"),
+                    ("I just need to get away from it all for a few days.", "何日か全部から離れてのんびりしたいよ。")
+                 ], ipa: "/ɡet əˈweɪ frəm ɪt ɔːl/"),
+            make("have itchy feet", "to feel a strong desire to travel or move somewhere new",
+                 "旅に出たくてうずうずする・どこかへ移りたくなる",
+                 useCases: ["旅行したい気持ちを話すとき", "引っ越しや転職を考え始めたとき"],
+                 examples: [
+                    ("I've got itchy feet again – let's book a trip.", "また旅に出たくてうずうずしてる、旅行予約しよう。"),
+                    ("After two years in the job, she had itchy feet.", "その仕事を2年やって、彼女は新しい場所に移りたくなったんだ。")
+                 ], ipa: "/hæv ˈɪtʃi fiːt/"),
+            make("live out of a suitcase", "to travel so much that you don't fully unpack or settle anywhere",
+                 "スーツケース生活をする・出張や移動続きで落ち着けない",
+                 useCases: ["出張や旅行続きの生活を話すとき", "引っ越し直後で荷解きできていないとき"],
+                 examples: [
+                    ("I've been living out of a suitcase all month.", "今月はずっとスーツケース生活だよ。"),
+                    ("I'm tired of living out of a suitcase.", "移動ばかりの生活にはもう疲れたよ。")
+                 ], ipa: "/lɪv aʊt əv ə ˈsuːtkeɪs/"),
+            make("get paid", "to receive money for work you have done",
+                 "給料をもらう・支払いを受ける",
+                 useCases: ["給料日について話すとき", "仕事の報酬について話すとき"],
+                 examples: [
+                    ("I get paid on Friday, so drinks are on me.", "金曜に給料が入るから、飲みは私のおごりね。"),
+                    ("Do you get paid for overtime?", "残業代って出るの？")
+                 ], ipa: "/ɡet peɪd/"),
+            make("fly off the handle", "to suddenly become very angry",
+                 "急にカッとなる・キレる",
+                 useCases: ["誰かが突然怒ったとき", "怒りっぽい人について話すとき"],
+                 examples: [
+                    ("He flew off the handle over nothing.", "彼、何でもないことで急にキレたんだよ。"),
+                    ("Don't fly off the handle – just listen for a sec.", "カッとならないで、ちょっと聞いて。")
+                 ], ipa: "/flaɪ ɒf ðə ˈhændl/"),
+            make("keep the peace", "to stop people from arguing or fighting",
+                 "場を丸く収める・争いを避ける",
+                 useCases: ["家族や友人の喧嘩を止めるとき", "波風を立てたくないとき"],
+                 examples: [
+                    ("I didn't say anything, just to keep the peace.", "波風立てないように、何も言わなかったんだ。"),
+                    ("Mum's always the one keeping the peace at Christmas.", "クリスマスに場を丸く収めるのはいつもママなんだ。")
+                 ], ipa: "/kiːp ðə piːs/"),
+            make("trust your gut", "to follow your instinct or feeling rather than thinking too much",
+                 "直感を信じる",
+                 useCases: ["迷っている人にアドバイスするとき", "直感で決めたことを話すとき"],
+                 examples: [
+                    ("If it feels wrong, trust your gut.", "何か違うと感じるなら、直感を信じなよ。"),
+                    ("I trusted my gut and turned the job down.", "直感を信じてその仕事は断ったんだ。")
+                 ], ipa: "/trʌst jə ɡʌt/"),
+            make("wait and see", "to wait to find out what happens before deciding or acting",
+                 "様子を見る・成り行きを見守る",
+                 useCases: ["結果がまだ分からないとき", "すぐに決めずに待つとき"],
+                 examples: [
+                    ("We'll just have to wait and see.", "様子を見るしかないね。"),
+                    ("Let's wait and see what the weather's like tomorrow.", "明日の天気がどうなるか様子を見よう。")
+                 ], ipa: "/weɪt ən siː/"),
+            make("on speaking terms", "friendly enough with someone to talk to them, especially after an argument",
+                 "口をきく仲である（喧嘩の後などで）",
+                 useCases: ["喧嘩した相手との関係を話すとき", "仲直りしたかどうかを話すとき"],
+                 examples: [
+                    ("Are you two back on speaking terms yet?", "二人はもう口きくようになったの？"),
+                    ("They're not on speaking terms after the argument.", "あの喧嘩以来、彼らは口をきいてないんだ。")
+                 ], ipa: "/ɒn ˈspiːkɪŋ tɜːmz/"),
+            make("find your way around", "to learn how to get to places in a new area, or how a new system works",
+                 "（新しい場所や仕組みに）慣れる・勝手が分かる",
+                 useCases: ["引っ越しや旅行先で道を覚えるとき", "新しい職場やアプリに慣れるとき"],
+                 examples: [
+                    ("It took me a week to find my way around the city.", "その街の道が分かるまで1週間かかったよ。"),
+                    ("Don't worry, you'll soon find your way around the office.", "大丈夫、すぐに職場の勝手が分かるようになるよ。")
+                 ], ipa: "/faɪnd jə weɪ əˈraʊnd/"),
+        ]
+    }
+    private static var britishColloquial252: [Word] {
+        [
+            make("it's roasting", "it's very hot (weather or a room)",
+                 "めちゃくちゃ暑い・蒸し風呂みたい",
+                 useCases: ["夏の暑さについて話すとき", "暖房が効きすぎた部屋で"],
+                 examples: [
+                    ("It's roasting outside today!", "今日は外がめちゃくちゃ暑いよ！"),
+                    ("Can we open a window? It's roasting in here.", "窓開けてもいい？ここ暑すぎるよ。")
+                 ], ipa: "/ɪts ˈrəʊstɪŋ/"),
+            make("pre-drinks", "drinks at someone's home before going out to a bar or party",
+                 "（出かける前の）宅飲み・0次会",
+                 useCases: ["夜遊びの前に家で軽く飲むとき", "パーティー前の集まりを誘うとき"],
+                 examples: [
+                    ("Pre-drinks at mine at eight?", "8時にうちで0次会どう？"),
+                    ("We had pre-drinks before heading into town.", "街に出る前に家で軽く飲んだんだ。")
+                 ], ipa: "/ˈpriː drɪŋks/"),
+            make("running on fumes", "continuing although you have almost no energy (or fuel) left",
+                 "気力だけで動いている・ほぼ限界",
+                 useCases: ["疲れ切っている状態を伝えるとき", "車のガソリンが空に近いとき"],
+                 examples: [
+                    ("I've barely slept – I'm running on fumes.", "ほとんど寝てなくて、気力だけで動いてるよ。"),
+                    ("By Friday, the whole team was running on fumes.", "金曜にはチーム全員がもう限界だったよ。")
+                 ], ipa: "/ˈrʌnɪŋ ɒn fjuːmz/"),
+            make("be stuck with", "to have something or someone you don't want and can't get rid of",
+                 "〜を押し付けられる・〜から逃れられない",
+                 useCases: ["嫌な役目や物を押し付けられたとき", "選択肢がなく我慢するしかないとき"],
+                 examples: [
+                    ("I got stuck with the washing-up again.", "また皿洗いを押し付けられたよ。"),
+                    ("We're stuck with this old car for now.", "当分はこの古い車で我慢するしかないね。")
+                 ], ipa: "/biː stʌk wɪð/"),
+            make("pull out of", "to decide not to take part in something you had agreed to",
+                 "〜から手を引く・〜を辞退する",
+                 useCases: ["予定やイベントへの参加を取りやめるとき", "契約や計画から撤退するとき"],
+                 examples: [
+                    ("She pulled out of the race with a knee injury.", "彼女は膝のケガでレースを棄権したんだ。"),
+                    ("I had to pull out of the trip – work's crazy.", "仕事が忙しすぎて旅行は辞退したよ。")
+                 ], ipa: "/pʊl aʊt əv/"),
+            make("guilty pleasure", "something you enjoy even though you feel it's a bit silly or bad for you",
+                 "ひそかな楽しみ・ちょっと恥ずかしい好きなもの",
+                 useCases: ["人に言いづらい趣味や好物を話すとき", "ダメだと分かっていてやめられないもの"],
+                 examples: [
+                    ("Reality TV is my guilty pleasure.", "リアリティ番組は私のひそかな楽しみなんだ。"),
+                    ("Crisps in bed – my ultimate guilty pleasure.", "ベッドでポテチ、最高に背徳的な楽しみだよ。")
+                 ], ipa: "/ˈɡɪlti ˈpleʒə/"),
+            make("a gig", "a live music performance; also an informal word for a job",
+                 "ライブ・コンサート／（単発の）仕事",
+                 useCases: ["ライブに行く話をするとき", "単発の仕事やバイトについて話すとき"],
+                 examples: [
+                    ("Do you want to go to a gig on Saturday?", "土曜にライブ行かない？"),
+                    ("I've got a new gig at a design agency.", "デザイン会社で新しい仕事が決まったんだ。")
+                 ], ipa: "/ə ɡɪɡ/"),
+            make("the daily grind", "the boring, tiring routine of everyday work",
+                 "毎日の決まりきった仕事・単調な日常",
+                 useCases: ["仕事の単調さを愚痴るとき", "休暇明けに日常へ戻るとき"],
+                 examples: [
+                    ("Back to the daily grind on Monday.", "月曜からまたいつもの仕事の日々だよ。"),
+                    ("I need a holiday from the daily grind.", "単調な毎日から離れて休みが欲しいよ。")
+                 ], ipa: "/ðə ˈdeɪli ɡraɪnd/"),
+            make("plough through", "to work hard and slowly to finish something long or boring",
+                 "（大量の仕事などを）こつこつ片付ける・やっとのことで読み進める",
+                 useCases: ["大量のメールや書類を片付けるとき", "長くて退屈な本を読み進めるとき"],
+                 examples: [
+                    ("I ploughed through 200 emails this morning.", "今朝は200通のメールを必死に片付けたよ。"),
+                    ("I'm still ploughing through that book.", "あの本、まだ頑張って読み進めてるところ。")
+                 ], ipa: "/plaʊ θruː/"),
+            make("daydream", "to think about pleasant things instead of what you should be doing",
+                 "空想にふける・ぼーっと考え事をする",
+                 useCases: ["授業や会議中にぼーっとしていたとき", "休暇や夢について想像するとき"],
+                 examples: [
+                    ("Sorry, I was daydreaming – what did you say?", "ごめん、ぼーっとしてた。何て言った？"),
+                    ("I keep daydreaming about my holiday.", "ずっと休暇のことばかり考えちゃうよ。")
+                 ], ipa: "/ˈdeɪdriːm/"),
+            make("go freelance", "to leave a company job and work for yourself for different clients",
+                 "フリーランスになる・独立する",
+                 useCases: ["独立や働き方の変化を話すとき", "会社を辞めて自分で仕事を始めるとき"],
+                 examples: [
+                    ("I'm thinking of going freelance next year.", "来年フリーランスになろうかと考えてるんだ。"),
+                    ("Since she went freelance, she's much happier.", "独立してから、彼女ずっと楽しそうだよ。")
+                 ], ipa: "/ɡəʊ ˈfriːlɑːns/"),
+            make("text someone back", "to reply to someone's text message",
+                 "（メッセージに）返信する",
+                 useCases: ["返信が遅れたことを謝るとき", "返事をくれない人について話すとき"],
+                 examples: [
+                    ("Sorry I didn't text you back – I fell asleep.", "返信しなくてごめん、寝落ちしてた。"),
+                    ("He still hasn't texted me back.", "彼、まだ返信くれないんだよね。")
+                 ], ipa: "/tekst ˈsʌmwʌn bæk/"),
+            make("talk rubbish", "to say things that are silly or not true",
+                 "でたらめを言う・くだらないことを言う",
+                 useCases: ["相手の発言を否定するとき（親しい間柄で）", "冗談まじりにツッコむとき"],
+                 examples: [
+                    ("Don't talk rubbish – you look great!", "何言ってるの、すごく素敵だよ！"),
+                    ("He was talking rubbish after a few drinks.", "彼、何杯か飲んだらくだらないことばっかり言ってたよ。")
+                 ], ipa: "/tɔːk ˈrʌbɪʃ/"),
+            make("space out", "to stop paying attention and stare without thinking, often when tired",
+                 "ぼーっとする・上の空になる",
+                 useCases: ["疲れて集中できないとき", "話を聞き逃したことを謝るとき"],
+                 examples: [
+                    ("Sorry, I totally spaced out for a second.", "ごめん、一瞬完全にぼーっとしてた。"),
+                    ("I always space out in long meetings.", "長い会議だといつも上の空になっちゃう。")
+                 ], ipa: "/speɪs aʊt/"),
+            make("lose sleep over", "to worry about something so much that you can't sleep (often used in the negative)",
+                 "〜のことで眠れないほど悩む",
+                 useCases: ["気にしなくていいと励ますとき", "大したことではないと伝えるとき"],
+                 examples: [
+                    ("Don't lose sleep over it – it's not a big deal.", "そんなことで悩まないで、大したことじゃないよ。"),
+                    ("I'm not going to lose sleep over one bad review.", "悪いレビュー1件くらいで眠れなくなったりしないよ。")
+                 ], ipa: "/luːz sliːp ˈəʊvə/"),
+        ]
+    }
+    private static var britishColloquial253: [Word] {
+        [
+            make("buckle down", "to start working hard and seriously on something",
+                 "本腰を入れる・真剣に取りかかる",
+                 useCases: ["試験や締め切りに向けて集中するとき", "だらけていた状態から気持ちを切り替えるとき"],
+                 examples: [
+                    ("Exams are next week – time to buckle down.", "試験は来週だ、そろそろ本腰入れないと。"),
+                    ("Once he buckled down, he finished it in a day.", "本気を出したら、彼は1日で終わらせたよ。")
+                 ], ipa: "/ˈbʌkl daʊn/"),
+            make("pull your socks up", "to make more effort because your work or behaviour isn't good enough",
+                 "気合を入れ直す・しっかりやる",
+                 useCases: ["怠けている人に喝を入れるとき", "自分の反省を込めて言うとき"],
+                 examples: [
+                    ("You'll need to pull your socks up if you want that promotion.", "昇進したいなら気合入れ直さないとね。"),
+                    ("I really need to pull my socks up at the gym.", "ジムでもっと真剣にやらなきゃな。")
+                 ], ipa: "/pʊl jə sɒks ʌp/"),
+            make("muck in", "to join in and help with work, sharing the effort with others",
+                 "みんなで手伝う・協力して作業する",
+                 useCases: ["引っ越しや片付けを皆でやるとき", "チームで仕事を分担するとき"],
+                 examples: [
+                    ("Everyone mucked in and we cleared the garden in an hour.", "みんなで手伝って、庭は1時間で片付いたよ。"),
+                    ("If we all muck in, we'll be done by lunch.", "全員で協力すれば、お昼までに終わるよ。")
+                 ], ipa: "/mʌk ɪn/"),
+            make("jam-packed", "extremely full of people or things",
+                 "ぎゅうぎゅう詰め・予定がびっしり",
+                 useCases: ["電車や店が混んでいるとき", "スケジュールが詰まっているとき"],
+                 examples: [
+                    ("The train was jam-packed this morning.", "今朝の電車、ぎゅうぎゅう詰めだったよ。"),
+                    ("My week is jam-packed – can we do next Monday?", "今週は予定がびっしりなんだ、来週の月曜でもいい？")
+                 ], ipa: "/ˌdʒæm ˈpækt/"),
+            make("keep it under wraps", "to keep something secret for now",
+                 "（しばらく）内緒にしておく",
+                 useCases: ["発表前のニュースを口止めするとき", "サプライズの計画を秘密にするとき"],
+                 examples: [
+                    ("We're engaged, but keep it under wraps for now.", "婚約したんだけど、今は内緒にしておいてね。"),
+                    ("They kept the new design under wraps until the launch.", "新デザインは発売まで秘密にされていたんだ。")
+                 ], ipa: "/kiːp ɪt ˈʌndə ræps/"),
+            make("wolf down", "to eat something very quickly and hungrily",
+                 "がつがつ食べる・かきこむ",
+                 useCases: ["急いで食事を済ませるとき", "お腹ペコペコで勢いよく食べる様子"],
+                 examples: [
+                    ("I wolfed down a sandwich between meetings.", "会議の合間にサンドイッチをかきこんだよ。"),
+                    ("Slow down – you don't have to wolf it down!", "ゆっくり食べなよ、そんなにがっつかなくても！")
+                 ], ipa: "/wʊlf daʊn/"),
+            make("knock back", "to drink something quickly, especially alcohol; also to reject someone",
+                 "（酒を）ぐいっと飲む／断る・却下する",
+                 useCases: ["お酒を一気に飲む様子を話すとき", "申し出や応募を断られたとき"],
+                 examples: [
+                    ("He knocked back his pint and headed home.", "彼はビールをぐいっと飲み干して帰っていった。"),
+                    ("I got knocked back for the job, but I'll try again.", "その仕事は落ちたけど、また挑戦するよ。")
+                 ], ipa: "/nɒk bæk/"),
+            make("dig out", "to find something that has been put away or hidden for a long time",
+                 "（しまってある物を）引っ張り出す・探し出す",
+                 useCases: ["古い写真や服を探し出すとき", "書類やデータを見つけ出すとき"],
+                 examples: [
+                    ("I dug out my old winter coat this morning.", "今朝、古い冬用コートを引っ張り出したよ。"),
+                    ("Let me dig out that email and forward it to you.", "そのメール探して転送するね。")
+                 ], ipa: "/dɪɡ aʊt/"),
+            make("give someone a hug", "to put your arms around someone to show affection or comfort",
+                 "（人を）ハグする・抱きしめる",
+                 useCases: ["再会や別れのあいさつで", "落ち込んでいる人を慰めるとき"],
+                 examples: [
+                    ("Come here and give me a hug!", "こっちおいで、ハグしよう！"),
+                    ("She looked upset, so I gave her a hug.", "彼女が落ち込んでいたから、ハグしてあげたんだ。")
+                 ], ipa: "/ɡɪv ˈsʌmwʌn ə hʌɡ/"),
+            make("a leaving do", "a party for someone who is leaving a job or place",
+                 "送別会",
+                 useCases: ["同僚の退職・異動のとき", "引っ越す友人を送り出すとき"],
+                 examples: [
+                    ("Are you coming to Sarah's leaving do on Friday?", "金曜のサラの送別会、来る？"),
+                    ("We're having a leaving do for Tom at the pub.", "パブでトムの送別会をやるんだ。")
+                 ], ipa: "/ə ˈliːvɪŋ duː/"),
+            make("a whip-round", "when a group of people each give some money to buy something together",
+                 "（皆でお金を出し合う）カンパ・集金",
+                 useCases: ["同僚へのプレゼント代を集めるとき", "お祝いや寄付のお金を集めるとき"],
+                 examples: [
+                    ("We had a whip-round for her birthday present.", "彼女の誕生日プレゼントのためにみんなでカンパしたよ。"),
+                    ("Let's do a whip-round for the taxi.", "タクシー代、みんなで出し合おう。")
+                 ], ipa: "/ə ˈwɪp raʊnd/"),
+            make("fancy someone", "to find someone attractive and be romantically interested in them",
+                 "（異性として）〜が気になる・〜に気がある",
+                 useCases: ["恋愛の話をするとき", "友人の好きな人を冷やかすとき"],
+                 examples: [
+                    ("I think Jake fancies you!", "ジェイク、君に気があると思うよ！"),
+                    ("Do you fancy anyone at work?", "職場に気になる人いる？")
+                 ], ipa: "/ˈfænsi ˈsʌmwʌn/"),
+            make("lounge about", "to relax and do very little, usually sitting or lying around",
+                 "だらだら過ごす・ごろごろする",
+                 useCases: ["休日の過ごし方を話すとき", "何もしない一日を表すとき"],
+                 examples: [
+                    ("I just lounged about in my pyjamas all Sunday.", "日曜はずっとパジャマでごろごろしてたよ。"),
+                    ("Stop lounging about and help me with dinner!", "だらだらしてないで夕飯手伝ってよ！")
+                 ], ipa: "/laʊndʒ əˈbaʊt/"),
+            make("dunk", "to quickly dip food, like a biscuit, into a drink",
+                 "（ビスケットなどを飲み物に）浸す",
+                 useCases: ["紅茶やコーヒーにお菓子を浸すとき", "食べ方の好みを話すとき"],
+                 examples: [
+                    ("Do you dunk your biscuits in your tea?", "ビスケットを紅茶に浸して食べる派？"),
+                    ("Dunk the bread in the soup – it's lovely.", "パンをスープに浸してみて、美味しいよ。")
+                 ], ipa: "/dʌŋk/"),
+            make("a peck on the cheek", "a quick, light kiss on the cheek",
+                 "ほっぺへの軽いキス",
+                 useCases: ["あいさつのキスについて話すとき", "家族や友人への軽い愛情表現"],
+                 examples: [
+                    ("She gave her gran a peck on the cheek.", "彼女はおばあちゃんのほっぺに軽くキスをした。"),
+                    ("In France, friends greet each other with a peck on the cheek.", "フランスでは友達同士ほっぺに軽くキスしてあいさつするんだ。")
+                 ], ipa: "/ə pek ɒn ðə tʃiːk/"),
+        ]
+    }
+    private static var britishColloquial254: [Word] {
+        [
+            make("take stock", "to stop and think carefully about a situation before deciding what to do next",
+                 "現状を見つめ直す・状況を整理する",
+                 useCases: ["忙しさの中で一度立ち止まるとき", "失敗や変化のあとに今後を考えるとき"],
+                 examples: [
+                    ("Let's take stock before we make any big decisions.", "大きな決断をする前に、一度状況を整理しよう。"),
+                    ("After the move, I took a week off to take stock.", "引っ越しのあと、1週間休んで色々見つめ直したよ。")
+                 ], ipa: "/teɪk stɒk/"),
+            make("fall into place", "when things start to make sense or work out well together",
+                 "うまく収まる・すべてがつながる",
+                 useCases: ["計画が順調に進み始めたとき", "謎や疑問が急に理解できたとき"],
+                 examples: [
+                    ("Once I got the job, everything else fell into place.", "仕事が決まったら、他のことも全部うまくいったんだ。"),
+                    ("Don't worry – it'll all fall into place.", "心配しないで、きっと全部うまく収まるよ。")
+                 ], ipa: "/fɔːl ˈɪntə pleɪs/"),
+            make("fizzle out", "to gradually end in a weak or disappointing way",
+                 "尻すぼみになる・自然消滅する",
+                 useCases: ["盛り上がっていた話や関係が消えていくとき", "計画が途中で立ち消えになるとき"],
+                 examples: [
+                    ("The party kind of fizzled out after midnight.", "パーティーは夜中を過ぎたらなんとなくお開きになった。"),
+                    ("We chatted for a while, but it just fizzled out.", "しばらく連絡取ってたけど、自然消滅しちゃった。")
+                 ], ipa: "/ˈfɪzl aʊt/"),
+            make("bounce ideas off", "to share your ideas with someone to get their opinion or reaction",
+                 "（人に）アイデアをぶつけて意見をもらう",
+                 useCases: ["企画を同僚に相談するとき", "考えを整理するために誰かと話すとき"],
+                 examples: [
+                    ("Can I bounce a few ideas off you?", "いくつかアイデアがあるんだけど、意見聞いてもいい？"),
+                    ("It helps to have someone to bounce ideas off.", "アイデアをぶつけられる相手がいると助かるよ。")
+                 ], ipa: "/baʊns aɪˈdɪəz ɒf/"),
+            make("level-headed", "calm and sensible, especially in difficult situations",
+                 "冷静な・分別のある",
+                 useCases: ["トラブルでも落ち着いている人を褒めるとき", "頼れる人柄を説明するとき"],
+                 examples: [
+                    ("She's really level-headed in a crisis.", "彼女は緊急時でもすごく冷静なんだ。"),
+                    ("We need someone level-headed to lead the team.", "チームを率いるには冷静な人が必要だね。")
+                 ], ipa: "/ˌlevl ˈhedɪd/"),
+            make("play down", "to make something seem less important or serious than it really is",
+                 "（重要性などを）控えめに言う・軽く扱う",
+                 useCases: ["怪我や問題を大したことないと言うとき", "自分の功績を謙遜するとき"],
+                 examples: [
+                    ("He played down the injury, but it looked painful.", "彼は大した怪我じゃないって言ってたけど、痛そうだったよ。"),
+                    ("Stop playing it down – you did an amazing job!", "謙遜しないで、本当にすごい仕事だったよ！")
+                 ], ipa: "/pleɪ daʊn/"),
+            make("common ground", "shared interests, opinions or experiences between people",
+                 "共通点・共通の理解",
+                 useCases: ["初対面の人との共通の話題を探すとき", "意見の違う相手と妥協点を探るとき"],
+                 examples: [
+                    ("We found some common ground – we both love hiking.", "共通点が見つかったよ、二人ともハイキングが大好きなんだ。"),
+                    ("Let's try to find some common ground here.", "ここはお互いの共通点を探してみよう。")
+                 ], ipa: "/ˈkɒmən ɡraʊnd/"),
+            make("whip up", "to make something quickly, especially food",
+                 "（料理などを）さっと作る",
+                 useCases: ["手早く料理を作るとき", "急いで資料などを用意するとき"],
+                 examples: [
+                    ("I can whip up some pasta if you're hungry.", "お腹空いてるならパスタでもさっと作るよ。"),
+                    ("She whipped up a quick presentation in an hour.", "彼女は1時間でプレゼン資料をさっと作り上げた。")
+                 ], ipa: "/wɪp ʌp/"),
+            make("hard to come by", "difficult to find or get",
+                 "手に入りにくい・なかなか見つからない",
+                 useCases: ["チケットや物が品薄なとき", "良い人材や機会が少ないとき"],
+                 examples: [
+                    ("Tickets for that show are hard to come by.", "あのショーのチケットはなかなか手に入らないよ。"),
+                    ("Good flats in the centre are hard to come by.", "中心部のいい部屋はなかなか見つからないんだ。")
+                 ], ipa: "/hɑːd tə kʌm baɪ/"),
+            make("take on board", "to listen to and accept an idea, suggestion or criticism",
+                 "（意見・助言を）受け入れる・参考にする",
+                 useCases: ["フィードバックを素直に受け止めるとき", "相手の提案を検討すると伝えるとき"],
+                 examples: [
+                    ("Thanks for the feedback – I'll take it on board.", "フィードバックありがとう、参考にするね。"),
+                    ("They didn't take any of our suggestions on board.", "彼らは私たちの提案を何ひとつ聞き入れなかった。")
+                 ], ipa: "/teɪk ɒn bɔːd/"),
+            make("throw together", "to make or arrange something quickly without much planning",
+                 "ありあわせで作る・急ごしらえする",
+                 useCases: ["冷蔵庫の残り物で料理するとき", "急いで計画やイベントを用意するとき"],
+                 examples: [
+                    ("I just threw together a salad with what was in the fridge.", "冷蔵庫にあるものでサラダをささっと作っただけだよ。"),
+                    ("The plan was thrown together at the last minute.", "その計画は直前に急ごしらえされたものだった。")
+                 ], ipa: "/θrəʊ təˈɡeðə/"),
+            make("scrape by", "to manage to live or succeed with only just enough money or effort",
+                 "なんとかやりくりする・ぎりぎりで乗り切る",
+                 useCases: ["お金がギリギリの生活を話すとき", "試験などをぎりぎりで通過したとき"],
+                 examples: [
+                    ("We're scraping by on one salary at the moment.", "今は一人の給料でなんとかやりくりしてるんだ。"),
+                    ("I didn't study much, but I scraped by.", "あまり勉強しなかったけど、ぎりぎり合格したよ。")
+                 ], ipa: "/skreɪp baɪ/"),
+            make("hit a wall", "to reach a point where you cannot make any more progress",
+                 "壁にぶつかる・行き詰まる",
+                 useCases: ["仕事や勉強が進まなくなったとき", "疲れて限界に達したとき"],
+                 examples: [
+                    ("I hit a wall with my essay last night.", "昨夜、レポートで行き詰まっちゃった。"),
+                    ("Around mile twenty, I completely hit a wall.", "20マイルあたりで完全に限界がきたよ。")
+                 ], ipa: "/hɪt ə wɔːl/"),
+            make("leave it at that", "to stop discussing or doing something and not take it any further",
+                 "それくらいにしておく・それで終わりにする",
+                 useCases: ["議論を打ち切りたいとき", "これ以上深追いしないと決めたとき"],
+                 examples: [
+                    ("We disagree, so let's just leave it at that.", "意見が合わないし、この話はここまでにしよう。"),
+                    ("He said sorry, and I decided to leave it at that.", "彼が謝ったから、それで終わりにすることにしたよ。")
+                 ], ipa: "/liːv ɪt ət ðæt/"),
+            make("tone down", "to make something less strong, extreme or likely to offend",
+                 "（表現・色などを）控えめにする・和らげる",
+                 useCases: ["メールや発言の言い方を柔らかくするとき", "派手すぎるデザインや服を抑えるとき"],
+                 examples: [
+                    ("You might want to tone down that email a bit.", "そのメール、もう少し言い方を和らげたほうがいいかも。"),
+                    ("Can you tone down the colours on this slide?", "このスライドの色、もうちょっと控えめにできる？")
+                 ], ipa: "/təʊn daʊn/"),
+        ]
+    }
+    private static var britishColloquial255: [Word] {
+        [
+            make("take the edge off", "to make something unpleasant less strong or intense",
+                 "（つらさ・空腹などを）和らげる",
+                 useCases: ["軽く食べて空腹をしのぐとき", "ストレスや痛みを少し和らげるとき"],
+                 examples: [
+                    ("Have a biscuit – it'll take the edge off until dinner.", "ビスケット食べなよ、夕飯まで少しはしのげるよ。"),
+                    ("A quick walk usually takes the edge off my stress.", "ちょっと散歩するとたいていストレスが和らぐんだ。")
+                 ], ipa: "/teɪk ði edʒ ɒf/"),
+            make("loosen up", "to relax and become less tense, serious or formal",
+                 "リラックスする・肩の力を抜く",
+                 useCases: ["緊張している人に声をかけるとき", "場の雰囲気が和んできたとき"],
+                 examples: [
+                    ("Loosen up a bit – it's only a party!", "ちょっと肩の力抜きなよ、ただのパーティーだよ！"),
+                    ("Everyone loosened up after the first hour.", "最初の1時間が過ぎたら、みんな打ち解けてきた。")
+                 ], ipa: "/ˈluːsn ʌp/"),
+            make("the way forward", "the best plan or action to take in the future",
+                 "今後の進め方・打開策",
+                 useCases: ["会議で今後の方針を話すとき", "問題の解決策を提案するとき"],
+                 examples: [
+                    ("I think working together is the way forward.", "協力し合うことがこれからの道だと思う。"),
+                    ("Let's agree on the way forward before we leave.", "帰る前に今後の進め方を決めておこう。")
+                 ], ipa: "/ðə weɪ ˈfɔːwəd/"),
+            make("follow through", "to finish something you have started or do what you promised",
+                 "最後までやり遂げる・約束を実行する",
+                 useCases: ["口だけでなく実行するかを話すとき", "計画を途中で投げ出さないとき"],
+                 examples: [
+                    ("He makes lots of plans but never follows through.", "彼は計画はたくさん立てるけど、全然やり遂げないんだ。"),
+                    ("If you say you'll do it, follow through.", "やるって言ったなら、最後までやってね。")
+                 ], ipa: "/ˈfɒləʊ θruː/"),
+            make("pin down", "to find out or decide something exactly, or get someone to give a clear answer",
+                 "はっきり特定する・（人に）確約させる",
+                 useCases: ["日程や原因をはっきりさせたいとき", "なかなか返事をくれない人について話すとき"],
+                 examples: [
+                    ("It's hard to pin him down to a date.", "彼に日にちを決めてもらうのは難しいんだよね。"),
+                    ("I can't quite pin down what's wrong with it.", "何がおかしいのか、はっきりとは分からないんだ。")
+                 ], ipa: "/pɪn daʊn/"),
+            make("flesh out", "to add more details to an idea or plan",
+                 "（考え・計画を）肉付けする・具体化する",
+                 useCases: ["ざっくりした案を詳しくするとき", "企画書や話の中身を膨らませるとき"],
+                 examples: [
+                    ("It's a good idea – we just need to flesh it out.", "いいアイデアだね、あとは肉付けするだけだ。"),
+                    ("Could you flesh out the plan a bit for Monday?", "月曜までに計画をもう少し具体的にしてくれる？")
+                 ], ipa: "/fleʃ aʊt/"),
+            make("fall short", "to fail to reach a standard, goal or expectation",
+                 "（期待・目標に）届かない・及ばない",
+                 useCases: ["期待外れだったと言うとき", "目標にあと少し届かなかったとき"],
+                 examples: [
+                    ("The film fell a bit short of my expectations.", "その映画、期待にはちょっと届かなかったな。"),
+                    ("We fell just short of our target this month.", "今月は目標にあと一歩届かなかった。")
+                 ], ipa: "/fɔːl ʃɔːt/"),
+            make("sticking point", "an issue that people cannot agree on and that stops progress",
+                 "（交渉・話し合いの）障害・折り合いがつかない点",
+                 useCases: ["話し合いが行き詰まった原因を説明するとき", "合意できない部分を指摘するとき"],
+                 examples: [
+                    ("Money was the main sticking point.", "お金が一番の折り合いのつかない点だった。"),
+                    ("The only sticking point is the start date.", "唯一引っかかっているのは開始日なんだ。")
+                 ], ipa: "/ˈstɪkɪŋ pɔɪnt/"),
+            make("laugh off", "to treat something as unimportant or funny, often to hide that it bothers you",
+                 "笑い飛ばす・笑ってごまかす",
+                 useCases: ["失敗や批判を気にしないふりをするとき", "気まずい場面を笑って流すとき"],
+                 examples: [
+                    ("She tripped on stage but just laughed it off.", "彼女、舞台でつまずいたけど笑い飛ばしてたよ。"),
+                    ("He tried to laugh it off, but I could tell he was upset.", "彼は笑ってごまかそうとしたけど、傷ついてるのが分かった。")
+                 ], ipa: "/lɑːf ɒf/"),
+            make("price range", "the amount of money you are willing or able to spend",
+                 "予算・価格帯",
+                 useCases: ["買い物で予算を伝えるとき", "店員におすすめを聞くとき"],
+                 examples: [
+                    ("That's a bit out of my price range.", "それはちょっと予算オーバーだな。"),
+                    ("What sort of price range are you looking at?", "どのくらいのご予算をお考えですか？")
+                 ], ipa: "/praɪs reɪndʒ/"),
+            make("pass up", "to choose not to accept a chance or offer",
+                 "（機会・誘いを）見送る・逃す",
+                 useCases: ["チャンスを断ったことを話すとき", "いい誘いを逃したくないとき"],
+                 examples: [
+                    ("I couldn't pass up a free trip to Rome!", "ローマへのタダ旅行なんて見送れるわけないよ！"),
+                    ("Don't pass up this chance – you'll regret it.", "このチャンスを逃しちゃだめだよ、後悔するよ。")
+                 ], ipa: "/pɑːs ʌp/"),
+            make("the next best thing", "something that is not exactly what you want but is the closest alternative",
+                 "次善の策・その次にいいもの",
+                 useCases: ["本命が無理なときの代わりを話すとき", "妥協案を前向きに言うとき"],
+                 examples: [
+                    ("I couldn't go to the match, so watching it at the pub was the next best thing.", "試合には行けなかったから、パブで観るのが次善の策だった。"),
+                    ("Video calls aren't the same, but they're the next best thing.", "ビデオ通話は同じじゃないけど、その次にいい方法だよね。")
+                 ], ipa: "/ðə nekst best θɪŋ/"),
+            make("drawback", "a disadvantage or problem that makes something less attractive",
+                 "欠点・難点",
+                 useCases: ["物件や商品のデメリットを話すとき", "計画のマイナス面を指摘するとき"],
+                 examples: [
+                    ("The only drawback is that it's a bit far from town.", "唯一の難点は、街からちょっと遠いことなんだ。"),
+                    ("Every job has its drawbacks.", "どんな仕事にも欠点はあるよ。")
+                 ], ipa: "/ˈdrɔːbæk/"),
+            make("slip-up", "a small, careless mistake",
+                 "ちょっとしたミス・うっかり",
+                 useCases: ["小さなミスを謝るとき", "大したことのない失敗をフォローするとき"],
+                 examples: [
+                    ("Sorry, that was a slip-up on my part.", "ごめん、それは私のうっかりミスだ。"),
+                    ("One little slip-up and the whole thing crashed.", "ちょっとしたミスひとつで全部ダメになった。")
+                 ], ipa: "/ˈslɪp ʌp/"),
+            make("stand a chance", "to have a possibility of succeeding",
+                 "見込みがある・勝ち目がある",
+                 useCases: ["成功の可能性を話すとき", "勝負や応募の見込みを聞くとき"],
+                 examples: [
+                    ("Do you think we stand a chance of winning?", "私たち、勝てる見込みあると思う？"),
+                    ("Without a car, you don't stand a chance of getting there on time.", "車がなかったら、時間通りに着くのは無理だよ。")
+                 ], ipa: "/stænd ə tʃɑːns/"),
+        ]
+    }
+    private static var britishColloquial256: [Word] {
+        [
+            make("rustle up", "to make food or find something quickly, using whatever is available",
+                 "（あり合わせで）手早く作る・用意する",
+                 useCases: ["冷蔵庫の残り物で料理を作るとき", "急いで人や物を集めるとき"],
+                 examples: [
+                    ("I can rustle up some pasta if you're hungry.", "お腹空いてるなら、パスタくらいささっと作るよ。"),
+                    ("Can you rustle up a few people to help on Saturday?", "土曜に手伝ってくれる人を何人か集められる？")
+                 ], ipa: "/ˈrʌsl ʌp/"),
+            make("sound out", "to talk to someone to find out what they think about something",
+                 "（人の）意見をそれとなく探る・打診する",
+                 useCases: ["提案する前に相手の反応を確かめるとき", "上司や友人の考えを探るとき"],
+                 examples: [
+                    ("I'll sound her out before we make any plans.", "計画を立てる前に、彼女の考えを聞いてみるよ。"),
+                    ("Have you sounded out your boss about working from home?", "在宅勤務のこと、上司に打診してみた？")
+                 ], ipa: "/saʊnd aʊt/"),
+            make("spruce up", "to make someone or something look cleaner, tidier or more attractive",
+                 "（見た目を）小ぎれいにする・きれいに整える",
+                 useCases: ["部屋を手入れして見栄えを良くするとき", "出かける前に身だしなみを整えるとき"],
+                 examples: [
+                    ("We spruced up the flat before my parents came over.", "両親が来る前に部屋をきれいにしたんだ。"),
+                    ("Give me ten minutes to spruce myself up.", "身支度するのに10分ちょうだい。")
+                 ], ipa: "/spruːs ʌp/"),
+            make("ease off", "to become less strong or severe, or to do something with less effort or pressure",
+                 "（雨・痛みなどが）弱まる・（人に）手加減する",
+                 useCases: ["雨や痛みが和らいできたとき", "誰かに厳しくしすぎないよう言うとき"],
+                 examples: [
+                    ("Let's wait until the rain eases off.", "雨が弱まるまで待とうよ。"),
+                    ("Ease off a bit – he's only just started.", "少し手加減してあげて、彼は始めたばかりなんだから。")
+                 ], ipa: "/iːz ɒf/"),
+            make("track down", "to find someone or something after searching for a long time",
+                 "（探し回って）見つけ出す・突き止める",
+                 useCases: ["なかなか見つからない物をやっと見つけたとき", "連絡先や人を探し出すとき"],
+                 examples: [
+                    ("I finally tracked down that book you wanted.", "君が欲しがってた本、やっと見つけたよ。"),
+                    ("Can you track down his number for me?", "彼の電話番号、探してもらえる？")
+                 ], ipa: "/træk daʊn/"),
+            make("stick at", "to keep trying to do something even when it is difficult",
+                 "（諦めずに）根気よく続ける",
+                 useCases: ["習い事や勉強を続けるよう励ますとき", "続けた結果うまくいったと話すとき"],
+                 examples: [
+                    ("Learning the guitar is hard, but stick at it.", "ギターは難しいけど、諦めずに続けなよ。"),
+                    ("She stuck at it and passed her driving test.", "彼女は粘り強く続けて、運転免許の試験に受かったんだ。")
+                 ], ipa: "/stɪk æt/"),
+            make("catch my drift", "to understand the general meaning of what someone is saying, especially something implied",
+                 "言いたいこと（ニュアンス）が分かる",
+                 useCases: ["遠回しに言ったことが伝わったか確かめるとき", "相手の言いたいことを察したとき"],
+                 examples: [
+                    ("He's not exactly reliable, if you catch my drift.", "彼はあまり当てにならないってこと、分かるでしょ。"),
+                    ("I didn't quite catch your drift – what do you mean?", "言いたいことがよく分からなかったんだけど、どういう意味？")
+                 ], ipa: "/kætʃ maɪ drɪft/"),
+            make("the upshot", "the final result or outcome of a situation or discussion",
+                 "結局のところ・結果",
+                 useCases: ["長い話の結論を伝えるとき", "出来事の最終的な結果を説明するとき"],
+                 examples: [
+                    ("The upshot is we're moving to Manchester.", "結局のところ、マンチェスターに引っ越すことになったよ。"),
+                    ("We talked for hours, and the upshot was nothing changed.", "何時間も話したけど、結果的に何も変わらなかった。")
+                 ], ipa: "/ði ˈʌpʃɒt/"),
+            make("talk some sense into", "to persuade someone to stop behaving in a silly or unreasonable way",
+                 "（人を）説得して目を覚まさせる・正気に戻らせる",
+                 useCases: ["無茶なことをしようとしている友人を止めるとき", "誰かに説得を頼むとき"],
+                 examples: [
+                    ("Can you talk some sense into him? He wants to quit his job tomorrow.", "彼を説得してくれない？明日仕事辞めるって言ってるの。"),
+                    ("I tried to talk some sense into her, but she wouldn't listen.", "彼女の目を覚まさせようとしたけど、聞く耳を持たなかった。")
+                 ], ipa: "/tɔːk səm sens ˈɪntuː/"),
+            make("work around", "to find a way of dealing with a problem without solving it directly",
+                 "（問題を）うまく回避する・やりくりする",
+                 useCases: ["予定や制約に合わせて調整するとき", "問題を避けて別の方法で進めるとき"],
+                 examples: [
+                    ("Don't worry, we'll work around your schedule.", "心配しないで、君の予定に合わせるから。"),
+                    ("The app's a bit buggy, but you can work around it.", "そのアプリちょっとバグがあるけど、うまく回避できるよ。")
+                 ], ipa: "/wɜːk əˈraʊnd/"),
+            make("get through to", "to make someone understand something, or to reach someone by phone",
+                 "（人に）分かってもらう・（電話が）つながる",
+                 useCases: ["何度言っても伝わらないとき", "電話がなかなかつながらないとき"],
+                 examples: [
+                    ("I just can't get through to him – he never listens.", "彼にはどうしても伝わらないんだ、全然聞かないから。"),
+                    ("I've been trying to get through to the bank all morning.", "午前中ずっと銀行に電話してるけどつながらないんだ。")
+                 ], ipa: "/ɡet θruː tuː/"),
+            make("pick holes in", "to find small faults or weaknesses in something, often unfairly",
+                 "あら探しをする・ケチをつける",
+                 useCases: ["人の意見や計画に細かく文句を言うとき", "批判ばかりする人について話すとき"],
+                 examples: [
+                    ("He always picks holes in everything I suggest.", "彼は私が何を提案してもあら探しするんだ。"),
+                    ("It's easy to pick holes in it, but have you got a better idea?", "ケチをつけるのは簡単だけど、もっといい案ある？")
+                 ], ipa: "/pɪk həʊlz ɪn/"),
+            make("get wind of", "to hear about something secret or private, often by chance",
+                 "（秘密などを）嗅ぎつける・耳にする",
+                 useCases: ["内緒の話が漏れたとき", "噂を偶然聞きつけたとき"],
+                 examples: [
+                    ("Don't let Mum get wind of the party – it's a surprise.", "パーティーのことママに知られないでね、サプライズだから。"),
+                    ("The press got wind of the story before it was announced.", "発表前にマスコミがその話を嗅ぎつけた。")
+                 ], ipa: "/ɡet wɪnd ɒv/"),
+            make("chip away at", "to gradually reduce or weaken something, bit by bit",
+                 "少しずつ減らす・コツコツ取り組む",
+                 useCases: ["大量の仕事や借金を少しずつ片付けるとき", "自信などが徐々に削られるとき"],
+                 examples: [
+                    ("I'm slowly chipping away at my to-do list.", "やることリストを少しずつ片付けてるところ。"),
+                    ("All the criticism chipped away at her confidence.", "たくさんの批判で彼女の自信は少しずつ削られていった。")
+                 ], ipa: "/tʃɪp əˈweɪ æt/"),
+            make("the long and short of it", "used to give the basic facts of a situation without all the details",
+                 "要するに・かいつまんで言うと",
+                 useCases: ["長い話を手短にまとめるとき", "細かい経緯を省いて結論だけ言うとき"],
+                 examples: [
+                    ("The long and short of it is, we missed the flight.", "要するに、飛行機に乗り遅れたってこと。"),
+                    ("That's the long and short of it – I'll tell you the rest later.", "かいつまんで言うとそういうこと。残りは後で話すね。")
+                 ], ipa: "/ðə lɒŋ ən ʃɔːt əv ɪt/"),
+        ]
+    }
+    private static var britishColloquial257: [Word] {
+        [
+            make("polish off", "to finish food, drink or a task quickly and completely",
+                 "（食べ物・仕事を）平らげる・さっさと片付ける",
+                 useCases: ["料理や飲み物を全部食べ切ったとき", "残りの仕事を一気に終わらせるとき"],
+                 examples: [
+                    ("The kids polished off the whole pizza in ten minutes.", "子どもたち、ピザを10分で丸ごと平らげちゃったよ。"),
+                    ("I just need to polish off this report, then I'm free.", "このレポートを片付けたら、手が空くよ。")
+                 ], ipa: "/ˈpɒlɪʃ ɒf/"),
+            make("win over", "to persuade someone to support you or like you",
+                 "（人を）味方につける・心をつかむ",
+                 useCases: ["最初は乗り気でなかった人を説得できたとき", "初対面の人に気に入られたとき"],
+                 examples: [
+                    ("She wasn't keen at first, but I won her over.", "最初は乗り気じゃなかったけど、彼女を説得できたよ。"),
+                    ("Your mum's cooking totally won me over.", "君のお母さんの料理にすっかり心をつかまれたよ。")
+                 ], ipa: "/wɪn ˈəʊvə/"),
+            make("tail off", "to gradually become smaller, weaker or quieter",
+                 "だんだん減る・（声などが）次第に小さくなる",
+                 useCases: ["客足や売上が徐々に減ってきたとき", "話している声が尻すぼみになるとき"],
+                 examples: [
+                    ("Business usually tails off after Christmas.", "クリスマスが過ぎると、たいてい客足が落ちるんだ。"),
+                    ("His voice tailed off when he saw her face.", "彼女の顔を見て、彼の声は小さくなっていった。")
+                 ], ipa: "/teɪl ɒf/"),
+            make("swot up on", "to study a subject quickly and hard, especially before a test or meeting",
+                 "（試験・面接前に）詰め込みで勉強する",
+                 useCases: ["試験の前に集中して勉強するとき", "面接前に会社のことを調べておくとき"],
+                 examples: [
+                    ("I need to swot up on my French before the trip.", "旅行の前にフランス語を詰め込まなきゃ。"),
+                    ("Swot up on the company before your interview.", "面接の前に、その会社のことを調べておきなよ。")
+                 ], ipa: "/swɒt ʌp ɒn/"),
+            make("cotton on", "to finally understand or realise something",
+                 "（やっと）気づく・ピンとくる",
+                 useCases: ["しばらくして状況がやっと分かったとき", "相手が真実に気づいたかを話すとき"],
+                 examples: [
+                    ("It took me ages to cotton on to what was happening.", "何が起きてるのか気づくのに、すごく時間がかかったよ。"),
+                    ("Don't worry, he won't cotton on.", "大丈夫、彼は気づかないよ。")
+                 ], ipa: "/ˈkɒtn ɒn/"),
+            make("waffle on", "to talk or write a lot without saying anything important",
+                 "だらだらとまとまりのない話をする",
+                 useCases: ["話が長くて要点がない人について話すとき", "自分が話しすぎたと謝るとき"],
+                 examples: [
+                    ("Sorry, I'm waffling on – what was your question?", "ごめん、だらだら話しちゃった。質問は何だっけ？"),
+                    ("He waffled on for an hour and said nothing new.", "彼は1時間もだらだら話して、目新しいことは何も言わなかった。")
+                 ], ipa: "/ˈwɒfl ɒn/"),
+            make("scrub up well", "to look smart and attractive when you make an effort with your appearance",
+                 "（おしゃれすると）見違えるほどきれいになる",
+                 useCases: ["きちんとした格好の友人を褒めるとき", "結婚式やパーティーで身だしなみを整えたとき"],
+                 examples: [
+                    ("Look at you in a suit – you scrub up well!", "スーツ姿いいね、ちゃんとすると見違えるね！"),
+                    ("He doesn't half scrub up well for a wedding.", "結婚式となると、彼は本当にビシッと決めてくるよね。")
+                 ], ipa: "/skrʌb ʌp wel/"),
+            make("liven up", "to become or make something more interesting, exciting or full of energy",
+                 "（場を）盛り上げる・活気づける",
+                 useCases: ["静かなパーティーを盛り上げたいとき", "地味な料理や部屋に変化をつけるとき"],
+                 examples: [
+                    ("Let's put some music on to liven things up.", "音楽をかけて盛り上げようよ。"),
+                    ("The party really livened up after midnight.", "パーティーは夜中を過ぎてから本当に盛り上がったよ。")
+                 ], ipa: "/ˈlaɪvn ʌp/"),
+            make("take to", "to start to like someone or something, especially quickly",
+                 "（人・物事を）すぐに気に入る・なじむ",
+                 useCases: ["新しい環境や趣味にすぐなじんだとき", "人とすぐに打ち解けたとき"],
+                 examples: [
+                    ("The kids took to their new teacher straight away.", "子どもたちは新しい先生にすぐなついたよ。"),
+                    ("I never really took to golf.", "ゴルフはどうしても好きになれなかったな。")
+                 ], ipa: "/teɪk tuː/"),
+            make("stand in for", "to do someone's job or take their place for a short time",
+                 "（一時的に）代わりを務める・代役をする",
+                 useCases: ["休んだ同僚の代わりに仕事をするとき", "会議やイベントで代役を頼むとき"],
+                 examples: [
+                    ("Can you stand in for me at the meeting tomorrow?", "明日の会議、私の代わりに出てくれる？"),
+                    ("Tom's standing in for the manager this week.", "今週はトムがマネージャーの代わりをしてるよ。")
+                 ], ipa: "/stænd ɪn fɔː/"),
+            make("talk someone round", "to persuade someone to agree with you or change their mind",
+                 "（人を）説得して考えを変えさせる",
+                 useCases: ["反対している家族を説得するとき", "渋っている友人を納得させるとき"],
+                 examples: [
+                    ("Dad said no at first, but I talked him round.", "父さんは最初ダメって言ったけど、説得したよ。"),
+                    ("Leave it with me – I'll talk her round.", "任せて、彼女を説得してみるから。")
+                 ], ipa: "/tɔːk ˈsʌmwʌn raʊnd/"),
+            make("knock together", "to make something quickly and without much care, using what is available",
+                 "（ありあわせで）手早く作る・こしらえる",
+                 useCases: ["急いで料理や資料を用意するとき", "簡単な物を手作りするとき"],
+                 examples: [
+                    ("I'll knock together a quick salad for lunch.", "お昼に簡単なサラダをささっと作るね。"),
+                    ("We knocked together a few slides the night before.", "前の晩に、スライドを何枚か急いでこしらえたんだ。")
+                 ], ipa: "/nɒk təˈɡeðə/"),
+            make("chance it", "to take a risk and do something, hoping it will be all right",
+                 "一か八かやってみる・運に任せる",
+                 useCases: ["傘を持たずに出かけるか迷うとき", "予約なしで店に行ってみるとき"],
+                 examples: [
+                    ("It might rain, but I'll chance it without a coat.", "雨が降るかもしれないけど、コートなしで行ってみるよ。"),
+                    ("We didn't book – shall we just chance it?", "予約してないけど、とりあえず行ってみる？")
+                 ], ipa: "/tʃɑːns ɪt/"),
+            make("pipe down", "to stop talking or be quieter (often used as a friendly or impatient command)",
+                 "静かにする・黙る",
+                 useCases: ["騒いでいる子どもや友人を静かにさせるとき", "テレビや映画を見ているときに注意するとき"],
+                 examples: [
+                    ("Pipe down, you two – I'm on the phone!", "二人とも静かにして、電話中なの！"),
+                    ("Can you pipe down a bit? The baby's asleep.", "ちょっと静かにしてくれる？赤ちゃんが寝てるんだ。")
+                 ], ipa: "/paɪp daʊn/"),
+            make("pile in", "to enter a place or vehicle together quickly in a group, or to join in eagerly",
+                 "（大勢で）どっと乗り込む・一斉に加わる",
+                 useCases: ["みんなで車に乗り込むとき", "大勢が一斉に何かに加わるとき"],
+                 examples: [
+                    ("Right, everyone pile in – there's room in the back.", "よし、みんな乗って。後ろにまだ空きがあるよ。"),
+                    ("As soon as the food arrived, everyone piled in.", "料理が来た途端、みんな一斉に食べ始めたよ。")
+                 ], ipa: "/paɪl ɪn/"),
+        ]
+    }
+    private static var britishColloquial258: [Word] {
+        [
+            make("muddle through", "to manage to do something even though you are not organised or skilled at it",
+                 "（準備不足でも）何とか切り抜ける・どうにかやり過ごす",
+                 useCases: ["段取りが悪くてもどうにか乗り切ったとき", "慣れない言語や仕事で何とかやっていくとき"],
+                 examples: [
+                    ("I don't speak much Spanish, but I muddled through.", "スペイン語はあまり話せないけど、何とか切り抜けたよ。"),
+                    ("We'll just have to muddle through until the new manager starts.", "新しいマネージャーが来るまで、何とかやっていくしかないね。")
+                 ], ipa: "/ˈmʌdl θruː/"),
+            make("dash off", "to leave somewhere quickly; or to write something very quickly",
+                 "急いで出かける・（メールなどを）さっと書く",
+                 useCases: ["急ぎの用事で慌ただしく席を立つとき", "短いメッセージを手早く送るとき"],
+                 examples: [
+                    ("Sorry, I have to dash off – my train's in ten minutes.", "ごめん、急いで行かなきゃ。電車があと10分なんだ。"),
+                    ("I dashed off a quick email to the landlord.", "大家さんにさっとメールを送っておいたよ。")
+                 ], ipa: "/dæʃ ɒf/"),
+            make("crash out", "to fall asleep very quickly because you are extremely tired",
+                 "（疲れて）バタンと寝る・寝落ちする",
+                 useCases: ["疲れ果ててすぐ寝てしまったとき", "ソファや友人宅でそのまま寝てしまったとき"],
+                 examples: [
+                    ("I got home and crashed out on the sofa.", "家に帰ったら、ソファでそのまま寝落ちしちゃった。"),
+                    ("You look shattered – go and crash out for an hour.", "疲れ切ってるね。1時間くらい寝てきなよ。")
+                 ], ipa: "/kræʃ aʊt/"),
+            make("have a nose around", "to look around a place out of curiosity",
+                 "（好奇心で）ちょっと見て回る・のぞいてみる",
+                 useCases: ["新しい家やお店を見て回るとき", "気になる場所を軽く探索するとき"],
+                 examples: [
+                    ("Come in and have a nose around – the kitchen's just been done.", "入って見てってよ。キッチン、リフォームしたばかりなんだ。"),
+                    ("We had a nose around the old town before dinner.", "夕食の前に旧市街をちょっと見て回ったんだ。")
+                 ], ipa: "/hæv ə nəʊz əˈraʊnd/"),
+            make("make a beeline for", "to go straight towards someone or something quickly and directly",
+                 "（～に）一直線に向かう",
+                 useCases: ["パーティーで食べ物や知り合いに真っ先に向かうとき", "店に入ってすぐ目当ての売り場へ行くとき"],
+                 examples: [
+                    ("He made a beeline for the buffet as soon as we arrived.", "着いた途端、彼はビュッフェに一直線だったよ。"),
+                    ("The kids always make a beeline for the sweets aisle.", "子どもたちはいつもお菓子売り場に直行するんだ。")
+                 ], ipa: "/meɪk ə ˈbiːlaɪn fɔː/"),
+            make("in a huff", "annoyed or offended, often showing it by being silent or leaving",
+                 "むっとして・すねて",
+                 useCases: ["誰かが機嫌を損ねて黙り込んだとき", "怒って部屋を出て行ったとき"],
+                 examples: [
+                    ("She walked out in a huff after the argument.", "口論のあと、彼女はむっとして出て行っちゃった。"),
+                    ("Don't go off in a huff – I was only joking!", "すねないでよ、冗談だってば！")
+                 ], ipa: "/ɪn ə hʌf/"),
+            make("hair of the dog", "an alcoholic drink taken to feel better after drinking too much the night before",
+                 "迎え酒",
+                 useCases: ["二日酔いの翌朝に冗談まじりで一杯勧めるとき", "飲み会の翌日の会話で"],
+                 examples: [
+                    ("Feeling rough? Have a bit of hair of the dog.", "調子悪い？迎え酒でもどう？"),
+                    ("He swears by hair of the dog, but I just want water.", "彼は迎え酒が効くって言うけど、私は水でいいよ。")
+                 ], ipa: "/heər əv ðə dɒɡ/"),
+            make("walk it off", "to walk around to make pain, anger or a heavy feeling go away",
+                 "歩いて（痛み・怒り・満腹感などを）紛らわす",
+                 useCases: ["軽いケガや足の痛みを歩いて和らげるとき", "食べすぎや怒りを散歩で落ち着かせるとき"],
+                 examples: [
+                    ("I ate way too much – let's go and walk it off.", "食べすぎちゃった。散歩して腹ごなししよう。"),
+                    ("It's just a bump on the knee – you'll walk it off.", "膝をちょっとぶつけただけだよ、歩いてれば治まるって。")
+                 ], ipa: "/wɔːk ɪt ɒf/"),
+            make("play along", "to pretend to agree with someone or to go along with a plan or joke",
+                 "（話・冗談・計画に）調子を合わせる",
+                 useCases: ["サプライズのために知らないふりをするとき", "相手の冗談に乗ってあげるとき"],
+                 examples: [
+                    ("Just play along – it's a surprise party for Jen.", "話合わせてね、ジェンのサプライズパーティーなんだから。"),
+                    ("I didn't get the joke, but I played along.", "冗談が分からなかったけど、調子を合わせておいたよ。")
+                 ], ipa: "/pleɪ əˈlɒŋ/"),
+            make("sneak out", "to leave a place quietly so that nobody notices",
+                 "こっそり抜け出す",
+                 useCases: ["会議やパーティーから目立たずに帰るとき", "子どもが夜こっそり家を出るとき"],
+                 examples: [
+                    ("I'll sneak out early – nobody will notice.", "早めにこっそり抜けるよ。誰も気づかないって。"),
+                    ("We used to sneak out to the park when we were kids.", "子どもの頃、よくこっそり家を抜け出して公園に行ったよ。")
+                 ], ipa: "/sniːk aʊt/"),
+            make("throw on", "to put on clothes quickly and without much care",
+                 "（服を）さっと羽織る・急いで着る",
+                 useCases: ["急いで出かける準備をするとき", "ラフな格好で近所に出るとき"],
+                 examples: [
+                    ("Give me a sec – I'll just throw on a jumper.", "ちょっと待って、セーター羽織ってくるね。"),
+                    ("I threw on some jeans and ran to the shop.", "ジーンズをさっと履いてお店まで走ったよ。")
+                 ], ipa: "/θrəʊ ɒn/"),
+            make("make a dent in", "to reduce the amount of something, especially work or money, a little",
+                 "（仕事・量などを）少し減らす・はかどらせる",
+                 useCases: ["山積みの仕事が少し進んだとき", "貯金や食べ物が減ったと話すとき"],
+                 examples: [
+                    ("I worked all weekend and barely made a dent in it.", "週末ずっと働いたのに、ほとんど片付かなかったよ。"),
+                    ("That holiday made a real dent in my savings.", "あの旅行で貯金がかなり減ったよ。")
+                 ], ipa: "/meɪk ə dent ɪn/"),
+            make("breeze through", "to do something or pass something very easily",
+                 "（試験・課題などを）楽々こなす・難なく通過する",
+                 useCases: ["試験や面接を簡単にクリアしたとき", "仕事をスイスイ片付けたとき"],
+                 examples: [
+                    ("She breezed through her driving test.", "彼女、運転免許の試験を楽々パスしたんだ。"),
+                    ("Don't worry, you'll breeze through the interview.", "心配ないよ、面接なんて楽勝だって。")
+                 ], ipa: "/briːz θruː/"),
+            make("scrape through", "to only just succeed in passing an exam or getting through a difficult situation",
+                 "ぎりぎりで合格する・何とか乗り切る",
+                 useCases: ["試験にぎりぎりで受かったとき", "厳しい状況をかろうじて乗り越えたとき"],
+                 examples: [
+                    ("I only just scraped through my maths exam.", "数学の試験、ぎりぎりで受かったよ。"),
+                    ("Money was tight, but we scraped through the winter.", "お金は厳しかったけど、何とか冬を乗り切ったよ。")
+                 ], ipa: "/skreɪp θruː/"),
+            make("round off", "to finish something such as a meal, day or event in a pleasant way",
+                 "（食事・一日などを）締めくくる",
+                 useCases: ["食事の最後にデザートやコーヒーを頼むとき", "楽しい一日を何かで締めるとき"],
+                 examples: [
+                    ("Let's round off the evening with a drink by the river.", "川沿いで一杯飲んで、今夜は締めくくろう。"),
+                    ("We rounded off the meal with coffee and cake.", "食事の最後はコーヒーとケーキで締めたよ。")
+                 ], ipa: "/raʊnd ɒf/"),
+        ]
+    }
+    private static var britishColloquial259: [Word] {
+        [
+            make("give it a bash", "to try doing something, especially something you have not done before",
+                 "（試しに）やってみる・挑戦してみる",
+                 useCases: ["初めてのことに気軽に挑戦するとき", "相手に「やってみなよ」と勧めるとき"],
+                 examples: [
+                    ("I've never made bread before, but I'll give it a bash.", "パンは作ったことないけど、試しにやってみるよ。"),
+                    ("Go on, give it a bash – you might be good at it!", "ほら、やってみなよ。案外得意かもよ！")
+                 ], ipa: "/ɡɪv ɪt ə bæʃ/"),
+            make("do a runner", "to leave a place suddenly to avoid paying or facing a situation",
+                 "（支払いや面倒から）逃げ出す・トンズラする",
+                 useCases: ["客が代金を払わずに店から逃げたとき", "面倒な場面から急にいなくなった人について話すとき"],
+                 examples: [
+                    ("Two lads did a runner without paying for their meal.", "男2人が食事代を払わずに逃げたんだって。"),
+                    ("Where's Tom? Has he done a runner on the washing-up?", "トムどこ？皿洗いから逃げたな？")
+                 ], ipa: "/duː ə ˈrʌnə/"),
+            make("pull out all the stops", "to make the greatest possible effort to make something succeed",
+                 "あらゆる手を尽くす・全力を出す",
+                 useCases: ["パーティーやおもてなしに全力を注ぐとき", "締め切りに間に合わせるため総力を挙げるとき"],
+                 examples: [
+                    ("They really pulled out all the stops for her birthday.", "彼女の誕生日のために、みんな本当に全力を尽くしたんだ。"),
+                    ("We'll have to pull out all the stops to finish by Friday.", "金曜までに終わらせるには、総力を挙げないとね。")
+                 ], ipa: "/pʊl aʊt ɔːl ðə stɒps/"),
+            make("niggle", "a small worry, doubt or pain that continues to bother you; to bother someone slightly",
+                 "小さな気がかり・軽い痛み／（じわじわ）気になる",
+                 useCases: ["小さな不安や疑問が頭から離れないとき", "ちょっとした体の痛みについて話すとき"],
+                 examples: [
+                    ("I've got a niggle in my knee, so I'm skipping football.", "膝がちょっと痛むから、サッカーは休むよ。"),
+                    ("Something's been niggling me about that email.", "あのメール、何か引っかかってるんだよね。")
+                 ], ipa: "/ˈnɪɡl/"),
+            make("pester", "to keep annoying someone by asking for something again and again",
+                 "（しつこく頼んで）困らせる・せがむ",
+                 useCases: ["子どもが何度も物をねだるとき", "誰かに何度も催促してしまうとき"],
+                 examples: [
+                    ("The kids have been pestering me for a puppy all week.", "子どもたちが一週間ずっと子犬が欲しいってせがんでくるの。"),
+                    ("Sorry to pester you, but did you get a chance to look at it?", "しつこくてごめんね、あれ見てもらえた？")
+                 ], ipa: "/ˈpestə/"),
+            make("a big softie", "a kind, gentle person who is easily moved or not as tough as they seem",
+                 "（見かけによらず）心優しい人・涙もろい人",
+                 useCases: ["強面だけど実は優しい人を紹介するとき", "映画などですぐ泣く人をからかうとき"],
+                 examples: [
+                    ("He looks scary, but he's a big softie really.", "見た目は怖いけど、実はすごく優しいんだよ。"),
+                    ("You're crying at an advert? You big softie!", "CMで泣いてるの？涙もろいなあ！")
+                 ], ipa: "/ə bɪɡ ˈsɒfti/"),
+            make("chirpy", "cheerful and lively",
+                 "元気な・陽気な・ご機嫌な",
+                 useCases: ["朝から機嫌が良い人に声をかけるとき", "明るい店員や同僚について話すとき"],
+                 examples: [
+                    ("You're very chirpy this morning – good weekend?", "今朝はやけにご機嫌だね。いい週末だった？"),
+                    ("The woman at the café is always so chirpy.", "あのカフェの店員さん、いつも明るいよね。")
+                 ], ipa: "/ˈtʃɜːpi/"),
+            make("bubbly", "full of energy, friendly and cheerful (person); also informal for sparkling wine",
+                 "明るく快活な（人）／シャンパン・スパークリングワイン",
+                 useCases: ["明るく社交的な人の性格を説明するとき", "お祝いでシャンパンを開けるとき"],
+                 examples: [
+                    ("She's really bubbly – you'll get on with her straight away.", "彼女すごく明るいから、すぐ打ち解けられるよ。"),
+                    ("Let's open a bottle of bubbly to celebrate!", "お祝いにシャンパン開けよう！")
+                 ], ipa: "/ˈbʌbli/"),
+            make("absent-minded", "tending to forget things or not notice what is happening because you are thinking about something else",
+                 "うっかりした・忘れっぽい・ぼんやりした",
+                 useCases: ["物をよく置き忘れる人について話すとき", "自分のうっかりミスを説明するとき"],
+                 examples: [
+                    ("I'm so absent-minded – I put the milk in the cupboard again.", "ほんと忘れっぽくて、また牛乳を戸棚に入れちゃった。"),
+                    ("My grandad's a bit absent-minded these days.", "おじいちゃん、最近ちょっとぼんやりしてるんだ。")
+                 ], ipa: "/ˌæbsənt ˈmaɪndɪd/"),
+            make("butterfingers", "said jokingly to or about someone who drops things",
+                 "（物をよく落とす人に）不器用だな・ドジだな",
+                 useCases: ["誰かがボールや物を落としたときに冗談で", "自分が物を落としたときの照れ隠しに"],
+                 examples: [
+                    ("Butterfingers! That's the second glass today.", "ドジだなあ！今日2個目のグラスだよ。"),
+                    ("Sorry, butterfingers – I'll clean it up.", "ごめん、落としちゃった。片付けるね。")
+                 ], ipa: "/ˈbʌtəˌfɪŋɡəz/"),
+            make("sober up", "to become less drunk, or to make someone less drunk",
+                 "酔いを覚ます・酔いが覚める",
+                 useCases: ["飲みすぎた後にコーヒーや水で酔いを覚ますとき", "運転前にしっかり酔いが覚めるのを待つとき"],
+                 examples: [
+                    ("Have some water and sober up a bit before you go home.", "帰る前に水を飲んで、少し酔いを覚ましなよ。"),
+                    ("It took me ages to sober up after the wedding.", "結婚式のあと、酔いが覚めるまでめちゃくちゃ時間かかった。")
+                 ], ipa: "/ˈsəʊbər ʌp/"),
+            make("a wind-up", "a joke or trick intended to make someone believe something untrue or get annoyed",
+                 "からかい・冗談・担ぎ",
+                 useCases: ["信じられない話を聞いて「冗談でしょ？」と言うとき", "人をからかっていたと明かすとき"],
+                 examples: [
+                    ("Is this a wind-up? You're really moving to Australia?", "冗談でしょ？本当にオーストラリアに引っ越すの？"),
+                    ("Relax, it was just a wind-up!", "落ち着いて、ただのからかいだって！")
+                 ], ipa: "/ə ˈwaɪnd ʌp/"),
+            make("go down a treat", "to be very much enjoyed or appreciated",
+                 "大好評だ・とても喜ばれる",
+                 useCases: ["持っていった料理や手土産が好評だったとき", "提案やジョークがウケたとき"],
+                 examples: [
+                    ("Your brownies went down a treat at the party.", "君のブラウニー、パーティーで大好評だったよ。"),
+                    ("A cold beer would go down a treat right now.", "今、冷えたビールがあったら最高だろうなあ。")
+                 ], ipa: "/ɡəʊ daʊn ə triːt/"),
+            make("moreish", "so tasty that you want to keep eating more",
+                 "（おいしくて）あとを引く・止まらない",
+                 useCases: ["スナックやお菓子が止まらないとき", "料理を褒めるとき"],
+                 examples: [
+                    ("These crisps are dangerously moreish.", "このポテチ、止まらなくてやばい。"),
+                    ("Your cheese scones are so moreish – can I have another?", "チーズスコーン、あとを引くね。もう一個いい？")
+                 ], ipa: "/ˈmɔːrɪʃ/"),
+            make("clock off", "to finish work for the day",
+                 "仕事を終える・退勤する",
+                 useCases: ["仕事終わりの予定を話すとき", "今日は早めに上がると言うとき"],
+                 examples: [
+                    ("What time do you clock off on Fridays?", "金曜日は何時に仕事終わるの？"),
+                    ("I'm clocking off early today – fancy a drink?", "今日は早めに上がるんだ。一杯どう？")
+                 ], ipa: "/klɒk ɒf/"),
+        ]
+    }
+    private static var britishColloquial260: [Word] {
+        [
+            make("at long last", "finally, after a long time of waiting",
+                 "やっと・ようやく（待ちに待って）",
+                 useCases: ["長く待っていたことがついに実現したとき", "遅れてきた人や物が届いたときに冗談っぽく言うとき"],
+                 examples: [
+                    ("At long last, the sun's come out!", "やっと太陽が出てきたね！"),
+                    ("Ah, there you are at long last!", "おっ、ようやく来たね！")
+                 ], ipa: "/ət lɒŋ lɑːst/"),
+            make("make an effort", "to try hard to do something, especially to be friendly, look nice or take part",
+                 "努力する・頑張って〜する・気を遣う",
+                 useCases: ["人付き合いや身だしなみで頑張ったことを話すとき", "相手にもっと歩み寄ってほしいと伝えるとき"],
+                 examples: [
+                    ("You've really made an effort tonight – you look great!", "今夜はずいぶんおしゃれしてるね、素敵だよ！"),
+                    ("I know he's shy, but he could make a bit more of an effort.", "彼が人見知りなのはわかるけど、もう少し頑張ってもいいと思う。")
+                 ], ipa: "/meɪk ən ˈefət/"),
+            make("retail therapy", "shopping done to make yourself feel happier",
+                 "（気晴らしの）買い物セラピー・ストレス発散の買い物",
+                 useCases: ["嫌なことがあって買い物で気分転換するとき", "買い物しすぎた言い訳を冗談で言うとき"],
+                 examples: [
+                    ("Rough week? Sounds like you need some retail therapy.", "大変な一週間だった？こりゃ買い物で気晴らしが必要だね。"),
+                    ("I didn't need new shoes – it was pure retail therapy.", "新しい靴なんて要らなかったの。完全にストレス発散よ。")
+                 ], ipa: "/ˈriːteɪl ˈθerəpi/"),
+            make("pamper", "to look after someone or yourself very well, giving them comfort and treats",
+                 "甘やかす・（贅沢に）いたわる",
+                 useCases: ["スパや休日で自分を労わるとき", "ペットや子どもを甘やかしている人について話すとき"],
+                 examples: [
+                    ("I'm going to pamper myself this weekend – bath, face mask, the lot.", "今週末は自分を甘やかすの。お風呂にパックに、全部ね。"),
+                    ("That dog is so pampered – it eats better than I do!", "あの犬、甘やかされすぎ。私よりいいもの食べてるよ！")
+                 ], ipa: "/ˈpæmpə/"),
+            make("gloomy", "dark and grey (weather or place); or feeling sad and without hope",
+                 "どんよりした・薄暗い／憂うつな・悲観的な",
+                 useCases: ["曇って暗い天気について話すとき", "落ち込んでいる人や悲観的な見通しについて話すとき"],
+                 examples: [
+                    ("It's so gloomy today – I've had the lights on since lunch.", "今日はすごくどんよりしてるね。昼から電気つけっぱなしだよ。"),
+                    ("Don't look so gloomy – it might never happen!", "そんな暗い顔しないで、そうなるとは限らないよ！")
+                 ], ipa: "/ˈɡluːmi/"),
+            make("snug", "warm, comfortable and cosy; also fitting closely",
+                 "暖かくて居心地のいい・ぬくぬくした／（服が）ぴったりの",
+                 useCases: ["寒い日に毛布や部屋の中でぬくぬくしているとき", "服のサイズがぴったり、または少しきついとき"],
+                 examples: [
+                    ("We stayed in, all snug on the sofa with a film.", "家にいて、ソファでぬくぬく映画を観てたよ。"),
+                    ("These jeans are a bit snug after Christmas!", "クリスマスの後だから、このジーンズちょっときついわ！")
+                 ], ipa: "/snʌɡ/"),
+            make("ratty", "easily annoyed and bad-tempered",
+                 "イライラした・機嫌が悪い・怒りっぽい",
+                 useCases: ["寝不足や空腹で機嫌が悪いことを認めるとき", "不機嫌な人について話すとき"],
+                 examples: [
+                    ("Sorry I was ratty earlier – I'd barely slept.", "さっきはイライラしててごめん。ほとんど寝てなくて。"),
+                    ("He gets a bit ratty when he's hungry.", "彼、お腹が空くとちょっと機嫌悪くなるんだよね。")
+                 ], ipa: "/ˈræti/"),
+            make("grotty", "unpleasant, dirty or of poor quality; also feeling slightly ill",
+                 "汚い・ボロい・みすぼらしい／（体調が）なんだか悪い",
+                 useCases: ["汚い部屋やボロい店について話すとき", "風邪気味で気分がすぐれないとき"],
+                 examples: [
+                    ("We stayed in a grotty little hotel near the station.", "駅近くのボロい小さなホテルに泊まったんだ。"),
+                    ("I feel a bit grotty – I think I'm coming down with something.", "なんか体調悪いな。風邪ひきかけてるかも。")
+                 ], ipa: "/ˈɡrɒti/"),
+            make("miles better", "much, much better",
+                 "断然いい・はるかにいい",
+                 useCases: ["2つのものを比べて片方が圧倒的に良いとき", "体調や状況がかなり良くなったとき"],
+                 examples: [
+                    ("The new place is miles better than our old flat.", "新しい家、前のフラットより断然いいよ。"),
+                    ("I feel miles better after a good night's sleep.", "ぐっすり寝たら、ずっと気分が良くなった。")
+                 ], ipa: "/maɪlz ˈbetə/"),
+            make("streets ahead", "much better or more advanced than someone or something else",
+                 "（他より）ずっと優れている・はるかに先を行っている",
+                 useCases: ["実力や品質がライバルより大きく上回っているとき", "人や店を比べて褒めるとき"],
+                 examples: [
+                    ("Her cooking is streets ahead of mine.", "彼女の料理は私よりずっと上手だよ。"),
+                    ("This phone is streets ahead of the old model.", "このスマホ、旧モデルよりはるかに進んでる。")
+                 ], ipa: "/striːts əˈhed/"),
+            make("mooch around", "to walk or wander around slowly without any particular purpose",
+                 "ぶらぶらする・あてもなくうろつく",
+                 useCases: ["予定なく街や店をぶらつくとき", "家でだらだら過ごしたことを話すとき"],
+                 examples: [
+                    ("We just mooched around the shops all afternoon.", "午後はずっとお店をぶらぶらしてただけだよ。"),
+                    ("I spent Sunday mooching around the house in my pyjamas.", "日曜はパジャマのまま家でだらだらしてた。")
+                 ], ipa: "/muːtʃ əˈraʊnd/"),
+            make("dreary", "dull, boring and depressing",
+                 "退屈な・陰気な・うんざりする",
+                 useCases: ["雨の続く冬の天気について話すとき", "退屈な仕事や場所についてこぼすとき"],
+                 examples: [
+                    ("It's been such a dreary week – rain every single day.", "ほんと陰気な一週間だったね、毎日雨で。"),
+                    ("The meeting was long and dreary, as usual.", "会議はいつも通り長くて退屈だったよ。")
+                 ], ipa: "/ˈdrɪəri/"),
+            make("get glammed up", "to put on smart clothes and make-up to look glamorous",
+                 "おめかしする・ばっちりドレスアップする",
+                 useCases: ["パーティーや夜のお出かけのために着飾るとき", "いつもよりおしゃれしている友達に声をかけるとき"],
+                 examples: [
+                    ("We're getting glammed up for Sophie's birthday tonight.", "今夜はソフィーの誕生日だから、みんなでおめかしするの。"),
+                    ("Look at you, all glammed up! Where are you off to?", "ばっちりキメてるね！どこ行くの？")
+                 ], ipa: "/ɡet ɡlæmd ʌp/"),
+            make("next to nothing", "almost nothing; a very small amount (often of money)",
+                 "ほとんどゼロ・ただ同然",
+                 useCases: ["すごく安く買えたことを自慢するとき", "知識や量がほとんどないことを言うとき"],
+                 examples: [
+                    ("I got this jacket for next to nothing in the sale.", "このジャケット、セールでただ同然で買ったの。"),
+                    ("I know next to nothing about cars, to be honest.", "正直、車のことはほとんど何も知らないんだ。")
+                 ], ipa: "/nekst tə ˈnʌθɪŋ/"),
+            make("a people person", "someone who enjoys being with and talking to other people and is good at it",
+                 "人付き合いが得意な人・人と接するのが好きな人",
+                 useCases: ["自分や他人の性格を説明するとき", "接客や営業に向いている人について話すとき"],
+                 examples: [
+                    ("She's a real people person – she'd be great in sales.", "彼女は本当に人付き合いが上手だから、営業向きだよ。"),
+                    ("I'm not much of a people person before my morning coffee.", "朝のコーヒーを飲むまでは、人と話す気分じゃないんだ。")
+                 ], ipa: "/ə ˈpiːpl ˌpɜːsn/"),
+        ]
+    }
+    private static var britishColloquial263: [Word] {
+        [
+            make("fetch", "to go somewhere and bring something or someone back",
+                 "取ってくる・連れてくる",
+                 useCases: ["物を取りに行ってもらうとき", "人を迎えに行くとき"],
+                 examples: [
+                    ("Could you fetch my glasses from the kitchen?", "台所からメガネ取ってきてくれる？"),
+                    ("I'll fetch the kids from school at three.", "3時に子どもたちを学校に迎えに行くよ。")
+                 ], ipa: "/fetʃ/"),
+            make("shiver", "to shake slightly because you are cold or frightened",
+                 "（寒さ・恐怖で）震える",
+                 useCases: ["寒さで体が震えるとき", "ぞっとする話をするとき"],
+                 examples: [
+                    ("You're shivering – do you want my jacket?", "震えてるじゃん。僕の上着着る？"),
+                    ("Just thinking about it sends a shiver down my spine.", "考えただけで背筋がぞっとする。")
+                 ], ipa: "/ˈʃɪvə/"),
+            make("sneeze", "to suddenly force air out through your nose and mouth",
+                 "くしゃみ（をする）",
+                 useCases: ["花粉症や風邪の話をするとき", "くしゃみした人に声をかけるとき"],
+                 examples: [
+                    ("I can't stop sneezing – it must be the pollen.", "くしゃみが止まらない。花粉のせいだな。"),
+                    ("\"Atchoo!\" – \"Bless you!\"", "「ハクション！」「お大事に！」")
+                 ], ipa: "/sniːz/"),
+            make("thirsty", "feeling that you need to drink something",
+                 "のどが渇いた",
+                 useCases: ["飲み物が欲しいと伝えるとき", "暑い日や運動の後に"],
+                 examples: [
+                    ("I'm really thirsty – shall we grab a drink?", "めっちゃのど渇いた。何か飲みに行かない？"),
+                    ("Walking in this heat makes you so thirsty.", "この暑さの中を歩くとすごくのどが渇くね。")
+                 ], ipa: "/ˈθɜːsti/"),
+            make("rude", "not polite; showing a lack of respect",
+                 "失礼な・無礼な",
+                 useCases: ["人の態度に不満を言うとき", "自分の言動を謝るとき"],
+                 examples: [
+                    ("Sorry, I didn't mean to be rude.", "ごめん、失礼なことをするつもりじゃなかったんだ。"),
+                    ("It's a bit rude to check your phone during dinner.", "食事中にスマホ見るのはちょっと失礼だよ。")
+                 ], ipa: "/ruːd/"),
+            make("polite", "behaving in a way that shows respect and good manners",
+                 "礼儀正しい・丁寧な",
+                 useCases: ["人の感じの良さを褒めるとき", "建前で言うことを説明するとき"],
+                 examples: [
+                    ("Her kids are so polite – they always say thank you.", "彼女の子どもたちはすごく礼儀正しい。いつもありがとうって言うんだ。"),
+                    ("I only said yes to be polite.", "礼儀として「はい」と言っただけだよ。")
+                 ], ipa: "/pəˈlaɪt/"),
+            make("sarcastic", "saying the opposite of what you mean in order to mock or joke",
+                 "皮肉な・嫌みな",
+                 useCases: ["冗談・皮肉だったと説明するとき", "皮肉っぽい人について話すとき"],
+                 examples: [
+                    ("Relax, I was being sarcastic!", "落ち着いて、皮肉で言っただけだよ！"),
+                    ("He's got a really sarcastic sense of humour.", "彼のユーモアはかなり皮肉が効いてる。")
+                 ], ipa: "/sɑːˈkæstɪk/"),
+            make("careless", "not paying enough attention, so that you make mistakes",
+                 "不注意な・うっかりした",
+                 useCases: ["うっかりミスを認めるとき", "注意散漫な行動を指摘するとき"],
+                 examples: [
+                    ("That was careless of me – I'll fix it now.", "うっかりしてた。今すぐ直すね。"),
+                    ("I lost marks for careless mistakes again.", "またケアレスミスで点を落とした。")
+                 ], ipa: "/ˈkeələs/"),
+            make("wary", "careful because you think something might be dangerous or a problem",
+                 "用心している・警戒した",
+                 useCases: ["うまい話や怪しいものを警戒するとき", "初対面の相手に慎重になるとき"],
+                 examples: [
+                    ("I'm a bit wary of deals that sound too good to be true.", "話がうますぎる取引はちょっと警戒しちゃう。"),
+                    ("The dog was wary of me at first, but now we're friends.", "犬は最初は僕を警戒してたけど、今では仲良しだよ。")
+                 ], ipa: "/ˈweəri/"),
+            make("straightforward", "easy to do or understand; not complicated",
+                 "簡単な・わかりやすい",
+                 useCases: ["手続きや作業が簡単だと伝えるとき", "シンプルな説明を求めるとき"],
+                 examples: [
+                    ("Don't worry, the form's pretty straightforward.", "心配しないで、その書類はわりと簡単だから。"),
+                    ("It's not as straightforward as it looks.", "見た目ほど単純じゃないんだよ。")
+                 ], ipa: "/ˌstreɪtˈfɔːwəd/"),
+            make("upfront", "honest and open about something from the beginning",
+                 "率直な・最初から正直に",
+                 useCases: ["隠さず正直に伝えたいとき", "前もって条件を言うとき"],
+                 examples: [
+                    ("I'll be upfront with you – we can't afford it.", "正直に言うね。うちにはその余裕はないんだ。"),
+                    ("I appreciate you being so upfront about it.", "そのことを率直に話してくれてありがたいよ。")
+                 ], ipa: "/ˌʌpˈfrʌnt/"),
+            make("punctual", "arriving or doing something at the expected time; not late",
+                 "時間を守る・時間厳守の",
+                 useCases: ["時間に正確な人を褒めるとき", "電車やバスの正確さについて話すとき"],
+                 examples: [
+                    ("She's always punctual – if she's late, something's wrong.", "彼女はいつも時間通り。遅れてたら何かあったんだよ。"),
+                    ("The trains here are surprisingly punctual.", "ここの電車は意外と時間に正確だね。")
+                 ], ipa: "/ˈpʌŋktʃuəl/"),
+            make("muddy", "covered in or full of mud",
+                 "泥だらけの・ぬかるんだ",
+                 useCases: ["雨の後の道や服装について話すとき", "子どもやペットが汚れて帰ってきたとき"],
+                 examples: [
+                    ("Take your muddy boots off before you come in!", "入る前に泥だらけのブーツを脱いで！"),
+                    ("The path gets really muddy after it rains.", "雨のあとはその道がすごくぬかるむんだ。")
+                 ], ipa: "/ˈmʌdi/"),
+            make("lay the table", "to put plates, knives, forks, etc. on a table before a meal",
+                 "食卓の準備をする（イギリス英語）",
+                 useCases: ["食事の前に手伝いを頼むとき", "家の手伝いについて話すとき"],
+                 examples: [
+                    ("Can you lay the table? Dinner's nearly ready.", "テーブルの準備してくれる？もうすぐご飯できるから。"),
+                    ("The kids take turns laying the table.", "子どもたちが交代で食卓の準備をしてるんだ。")
+                 ], ipa: "/leɪ ðə ˈteɪbl/"),
+            make("later on", "at a time after now or after the time mentioned",
+                 "あとで・後ほど",
+                 useCases: ["その日のうちに後でまた会う・話すとき", "話の後半の展開を説明するとき"],
+                 examples: [
+                    ("I'll give you a ring later on.", "あとで電話するね。"),
+                    ("We had lunch, and later on we went for a walk by the river.", "お昼を食べて、そのあと川沿いを散歩したんだ。")
+                 ], ipa: "/ˈleɪtər ɒn/"),
+        ]
+    }
+    private static var britishColloquial264: [Word] {
+        [
+            make("it's baking", "it is extremely hot (used about the weather or a room)",
+                 "めちゃくちゃ暑い・うだるような暑さだ",
+                 useCases: ["真夏の暑さについて話すとき", "部屋や車内が暑すぎるとき"],
+                 examples: [
+                    ("It's baking out there – take some water with you.", "外めちゃくちゃ暑いよ。水持って行きな。"),
+                    ("Can we open a window? It's baking in here.", "窓開けてもいい？ここ暑すぎるよ。")
+                 ], ipa: "/ɪts ˈbeɪkɪŋ/"),
+            make("I'm melting", "I feel extremely hot",
+                 "暑くて溶けそう",
+                 useCases: ["暑さに参っていると伝えるとき", "冷房のない場所で愚痴るとき"],
+                 examples: [
+                    ("I'm melting – is there any air conditioning in here?", "溶けそう…ここエアコンないの？"),
+                    ("Let's sit in the shade, I'm melting.", "日陰に座ろう、暑くて溶けそう。")
+                 ], ipa: "/aɪm ˈmeltɪŋ/"),
+            make("thaw out", "to become warm again after being very cold; (of frozen food) to stop being frozen",
+                 "（冷えた体が）温まる・（冷凍食品が）解ける",
+                 useCases: ["寒い外から帰ってきたとき", "冷凍食品を解凍するとき"],
+                 examples: [
+                    ("Come and sit by the fire and thaw out.", "暖炉のそばに座って温まりなよ。"),
+                    ("Leave the chicken out to thaw out for a few hours.", "鶏肉を数時間出しておいて解凍して。")
+                 ], ipa: "/θɔː aʊt/"),
+            make("wipe down", "to clean a surface by rubbing it with a damp cloth",
+                 "（布で）拭く・拭き掃除する",
+                 useCases: ["テーブルや台所を拭くとき", "掃除を頼むとき"],
+                 examples: [
+                    ("Could you wipe down the table after dinner?", "夕飯の後テーブル拭いてくれる？"),
+                    ("I'll just wipe down the worktops and then we can go.", "調理台をさっと拭いたら出かけられるよ。")
+                 ], ipa: "/waɪp daʊn/"),
+            make("sweep up", "to clean dirt or broken pieces from the floor using a brush",
+                 "掃き集める・掃き掃除する",
+                 useCases: ["割れた物や床のゴミを片付けるとき", "パーティーの後片付けで"],
+                 examples: [
+                    ("Don't move – I'll sweep up the broken glass.", "動かないで。割れたガラス掃いちゃうから。"),
+                    ("Can someone sweep up the crumbs under the table?", "誰かテーブルの下のパンくず掃いてくれる？")
+                 ], ipa: "/swiːp ʌp/"),
+            make("mop up", "to remove liquid from a surface using a cloth or mop",
+                 "（こぼれた液体を）拭き取る",
+                 useCases: ["飲み物をこぼしたとき", "床の水を拭き取るとき"],
+                 examples: [
+                    ("Sorry, I've spilt my tea – have you got something to mop it up with?", "ごめん、紅茶こぼしちゃった。拭くもの何かある？"),
+                    ("It took ages to mop up all the water in the bathroom.", "浴室の水を全部拭き取るのにすごく時間がかかった。")
+                 ], ipa: "/mɒp ʌp/"),
+            make("a slice of", "a thin flat piece cut from something like bread, cake or pizza",
+                 "〜の一切れ・一枚",
+                 useCases: ["ケーキやピザを勧める・頼むとき", "パンの枚数を言うとき"],
+                 examples: [
+                    ("Would you like a slice of cake with your coffee?", "コーヒーと一緒にケーキ一切れどう？"),
+                    ("I just had a slice of toast for breakfast.", "朝ごはんはトースト一枚だけだった。")
+                 ], ipa: "/ə slaɪs əv/"),
+            make("defrost", "to let frozen food become unfrozen; to remove ice from a freezer or windscreen",
+                 "解凍する・（窓や冷凍庫の）霜を取る",
+                 useCases: ["冷凍食品を解凍するとき", "冬の朝、車のフロントガラスの氷を溶かすとき"],
+                 examples: [
+                    ("Did you remember to defrost the mince?", "ひき肉解凍しておくの覚えてた？"),
+                    ("I need ten minutes to defrost the car this morning.", "今朝は車の霜取りに10分かかるな。")
+                 ], ipa: "/ˌdiːˈfrɒst/"),
+            make("reheat", "to heat food again after it has been cooked and cooled",
+                 "温め直す",
+                 useCases: ["残り物を温めるとき", "冷めた料理について話すとき"],
+                 examples: [
+                    ("There's some soup left – just reheat it in the microwave.", "スープ残ってるから、電子レンジで温め直して。"),
+                    ("Curry always tastes better reheated the next day.", "カレーは次の日に温め直した方がいつも美味しいよね。")
+                 ], ipa: "/ˌriːˈhiːt/"),
+            make("peel", "to remove the skin of fruit or vegetables; (of skin) to come off in small pieces",
+                 "皮をむく・（日焼けで皮が）むける",
+                 useCases: ["料理の手伝いで", "日焼けした後の肌について"],
+                 examples: [
+                    ("Can you peel the potatoes while I chop the onions?", "玉ねぎ切ってる間にジャガイモの皮むいてくれる？"),
+                    ("I got so burnt on holiday that my nose is peeling.", "休暇でひどく日焼けして鼻の皮がむけてる。")
+                 ], ipa: "/piːl/"),
+            make("drip", "(of liquid) to fall in small drops; to let liquid fall in drops",
+                 "ポタポタ垂れる・したたる",
+                 useCases: ["蛇口の水漏れを伝えるとき", "濡れたまま入ってきた人に"],
+                 examples: [
+                    ("The kitchen tap's been dripping all night.", "台所の蛇口が一晩中ポタポタしてるんだ。"),
+                    ("You're dripping all over the floor – here's a towel.", "床がびしょびしょになってるよ。はい、タオル。")
+                 ], ipa: "/drɪp/"),
+            make("loo roll", "toilet paper (informal British)",
+                 "トイレットペーパー",
+                 useCases: ["買い物リストの話で", "トイレの紙が切れたとき"],
+                 examples: [
+                    ("We're out of loo roll – can you grab some on the way home?", "トイレットペーパー切れてる。帰りに買ってきてくれる？"),
+                    ("There's spare loo roll in the cupboard under the sink.", "予備のトイレットペーパーは洗面台の下の棚にあるよ。")
+                 ], ipa: "/ˈluː rəʊl/"),
+            make("an aisle seat", "a seat next to the passage on a plane, train or in a theatre",
+                 "通路側の席",
+                 useCases: ["飛行機や電車の座席を選ぶとき", "チェックインで希望を伝えるとき"],
+                 examples: [
+                    ("Could I have an aisle seat, please?", "通路側の席にしてもらえますか？"),
+                    ("I always book an aisle seat so I can stretch my legs.", "足を伸ばせるようにいつも通路側を予約してるんだ。")
+                 ], ipa: "/ən ˈaɪl siːt/"),
+            make("fold", "to bend something such as paper or clothes so that one part lies on another",
+                 "たたむ・折る",
+                 useCases: ["洗濯物をたたむとき", "紙を折るとき"],
+                 examples: [
+                    ("Can you help me fold the washing?", "洗濯物たたむの手伝ってくれる？"),
+                    ("Just fold the letter in half and pop it in the envelope.", "手紙を半分に折って封筒に入れておいて。")
+                 ], ipa: "/fəʊld/"),
+            make("easy peasy", "very easy (informal, playful)",
+                 "超簡単・ちょろい",
+                 useCases: ["簡単にできたと軽く言うとき", "子どもや友達を励ますとき"],
+                 examples: [
+                    ("Just press this button and you're done – easy peasy!", "このボタン押すだけで完了。超簡単！"),
+                    ("Was the exam hard? – No, easy peasy.", "試験難しかった？―いや、ちょろかったよ。")
+                 ], ipa: "/ˌiːzi ˈpiːzi/"),
+        ]
+    }
+    private static var britishColloquial265: [Word] {
+        [
+            make("knock over", "to accidentally hit something so that it falls over",
+                 "（うっかり）倒す・ひっくり返す",
+                 useCases: ["飲み物やコップを倒してしまったとき", "子どもやペットが物を倒したとき"],
+                 examples: [
+                    ("Sorry, I've just knocked over your drink!", "ごめん、今あなたの飲み物倒しちゃった！"),
+                    ("The dog knocked over the bin again.", "犬がまたゴミ箱をひっくり返した。")
+                 ], ipa: "/nɒk ˈəʊvə/"),
+            make("whose turn is it?", "used to ask which person should do something next",
+                 "誰の番？",
+                 useCases: ["ゲームで次の順番を確認するとき", "家事や支払いの当番を決めるとき"],
+                 examples: [
+                    ("Whose turn is it to do the washing-up?", "皿洗い、誰の番だっけ？"),
+                    ("Hang on, whose turn is it? I've lost track.", "待って、誰の番？わからなくなっちゃった。")
+                 ], ipa: "/huːz tɜːn ɪz ɪt/"),
+            make("tiptoe around", "to avoid talking about something or upsetting someone because the subject is sensitive",
+                 "（気を遣って）〜を避ける・腫れ物に触るように扱う",
+                 useCases: ["話しにくい話題を避けているとき", "相手に気を遣いすぎているとき"],
+                 examples: [
+                    ("Stop tiptoeing around the issue and just tell me.", "遠回しにしないで、はっきり言ってよ。"),
+                    ("We've all been tiptoeing around him since the break-up.", "彼が別れてから、みんな腫れ物に触るように接してる。")
+                 ], ipa: "/ˈtɪptəʊ əˈraʊnd/"),
+            make("skimp on", "to spend less money or effort on something than you should",
+                 "〜をケチる・手を抜く",
+                 useCases: ["お金や手間を惜しむことについて話すとき", "大事なものにはお金をかけるべきと言うとき"],
+                 examples: [
+                    ("Don't skimp on a good mattress – you spend a third of your life in bed.", "いいマットレスはケチらないで。人生の3分の1はベッドの上なんだから。"),
+                    ("They skimped on the cheese – this pizza is mostly bread.", "チーズをケチってるね。このピザほぼパンだよ。")
+                 ], ipa: "/skɪmp ɒn/"),
+            make("it takes all sorts", "people are all different, and you should accept that some behave strangely",
+                 "いろんな人がいるもんだ・人それぞれだね",
+                 useCases: ["変わった人や行動について軽くコメントするとき", "理解できない好みを受け流すとき"],
+                 examples: [
+                    ("He eats pizza with jam on it? Well, it takes all sorts.", "ピザにジャムつけて食べるの？まあ、いろんな人がいるね。"),
+                    ("She swims in the sea in January – it takes all sorts!", "彼女1月に海で泳ぐんだって。人それぞれだね！")
+                 ], ipa: "/ɪt teɪks ɔːl sɔːts/"),
+            make("my leg's gone to sleep", "my leg feels numb because I have been sitting in one position too long",
+                 "足がしびれた",
+                 useCases: ["正座や長時間座った後", "立ち上がれないときの言い訳に"],
+                 examples: [
+                    ("Give me a sec – my leg's gone to sleep.", "ちょっと待って、足しびれちゃった。"),
+                    ("I sat on the floor for so long that my foot's gone to sleep.", "床に長く座りすぎて足がしびれた。")
+                 ], ipa: "/maɪ legz gɒn tə sliːp/"),
+            make("get a splinter", "to have a small sharp piece of wood or glass stuck in your skin",
+                 "トゲが刺さる",
+                 useCases: ["木の家具や柵に触ってトゲが刺さったとき", "子どもの怪我について話すとき"],
+                 examples: [
+                    ("Ouch, I've got a splinter from that old bench.", "痛っ、あの古いベンチでトゲが刺さった。"),
+                    ("Have you got any tweezers? I need to get this splinter out.", "ピンセットある？このトゲ抜きたいんだ。")
+                 ], ipa: "/get ə ˈsplɪntə/"),
+            make("swollen", "larger than usual, often because of an injury or illness",
+                 "腫れた・むくんだ",
+                 useCases: ["怪我や虫刺されで腫れたとき", "足のむくみについて話すとき"],
+                 examples: [
+                    ("My ankle's really swollen – I think I should get it looked at.", "足首がすごく腫れてる。診てもらったほうがいいかも。"),
+                    ("My feet always get swollen on long flights.", "長時間のフライトだといつも足がむくむ。")
+                 ], ipa: "/ˈswəʊlən/"),
+            make("have a cough", "to have an illness that makes you cough a lot",
+                 "咳が出る・咳をしている",
+                 useCases: ["体調不良を伝えるとき", "風邪の症状を説明するとき"],
+                 examples: [
+                    ("I've had a cough for about a week now.", "もう1週間くらい咳が出てるんだ。"),
+                    ("Sorry, I've got a bit of a cough – I'll sit over here.", "ごめん、ちょっと咳が出てるからこっちに座るね。")
+                 ], ipa: "/hæv ə kɒf/"),
+            make("feel faint", "to feel as if you might lose consciousness",
+                 "気が遠くなる・クラクラする",
+                 useCases: ["暑さや空腹で倒れそうなとき", "血を見て気分が悪くなったとき"],
+                 examples: [
+                    ("I need to sit down – I feel a bit faint.", "座らせて。ちょっとクラクラする。"),
+                    ("She felt faint in the queue because it was so hot.", "暑すぎて、彼女は列に並んでいる間に気が遠くなった。")
+                 ], ipa: "/fiːl feɪnt/"),
+            make("smelly", "having an unpleasant smell",
+                 "臭い",
+                 useCases: ["臭いものについて文句を言うとき", "洗濯物や靴の臭いについて話すとき"],
+                 examples: [
+                    ("Get your smelly trainers out of the living room!", "臭いスニーカー、リビングから出して！"),
+                    ("This cheese is really smelly, but it tastes amazing.", "このチーズすごく臭いけど、味は最高。")
+                 ], ipa: "/ˈsmeli/"),
+            make("greedy", "wanting more food, money, etc. than you need",
+                 "欲張りな・食い意地の張った",
+                 useCases: ["食べ過ぎを冗談で言うとき", "欲張りな人について話すとき"],
+                 examples: [
+                    ("Don't be greedy – leave some for everyone else.", "欲張らないで。みんなの分も残しておいてよ。"),
+                    ("I know it's greedy, but I'm having a third slice.", "欲張りなのはわかってるけど、3切れ目食べちゃう。")
+                 ], ipa: "/ˈgriːdi/"),
+            make("pushy", "trying too hard to get what you want, in an annoying way",
+                 "押しが強い・強引な",
+                 useCases: ["しつこい店員や営業について話すとき", "自分が強引すぎないか気にするとき"],
+                 examples: [
+                    ("The salesman was really pushy, so we just left.", "店員がすごく押しが強かったから、帰ってきた。"),
+                    ("I don't want to be pushy, but have you had a chance to look at it?", "急かすつもりはないんだけど、見てもらえた？")
+                 ], ipa: "/ˈpʊʃi/"),
+            make("come out in a rash", "to suddenly get red spots on your skin, often because of an allergy",
+                 "発疹が出る・かぶれる",
+                 useCases: ["アレルギー反応について話すとき", "肌のトラブルを説明するとき"],
+                 examples: [
+                    ("I came out in a rash after using that new soap.", "あの新しい石鹸を使ったら発疹が出た。"),
+                    ("If I eat strawberries, I come out in a rash.", "イチゴを食べるとじんましんが出るんだ。")
+                 ], ipa: "/kʌm aʊt ɪn ə ræʃ/"),
+            make("spoilsport", "someone who stops other people from having fun",
+                 "人の楽しみに水を差す人・ノリが悪い人",
+                 useCases: ["誘いを断る人を冗談でからかうとき", "楽しみを止められたとき"],
+                 examples: [
+                    ("Oh, don't be a spoilsport – stay for one more!", "もう、ノリ悪いなあ。もう一杯だけいようよ！"),
+                    ("I hate to be a spoilsport, but we really need to go.", "水を差したくないんだけど、本当にもう行かないと。")
+                 ], ipa: "/ˈspɔɪlspɔːt/"),
+        ]
+    }
+    private static var britishColloquial266: [Word] {
+        [
+            make("throw a tantrum", "to suddenly behave in an angry, uncontrolled way, especially like a small child",
+                 "かんしゃくを起こす・駄々をこねる",
+                 useCases: ["子どもが泣きわめいて駄々をこねるとき", "大人が子どもっぽく怒ったときの冗談に"],
+                 examples: [
+                    ("He threw a tantrum in the middle of the supermarket.", "あの子、スーパーのど真ん中で駄々こねてたよ。"),
+                    ("My boss threw a bit of a tantrum when the printer broke.", "プリンターが壊れたとき、上司がちょっとキレてた。")
+                 ], ipa: "/θrəʊ ə ˈtæntrəm/"),
+            make("puddle", "a small pool of water on the ground, especially after rain",
+                 "水たまり",
+                 useCases: ["雨上がりの道について話すとき", "靴が濡れた理由を説明するとき"],
+                 examples: [
+                    ("I stepped right in a puddle and now my socks are soaked.", "水たまりにがっつり足突っ込んで、靴下びしょびしょ。"),
+                    ("Mind the puddle!", "水たまり気をつけて！")
+                 ], ipa: "/ˈpʌdl/"),
+            make("grubby", "slightly dirty, often from being used or handled a lot",
+                 "薄汚れた・汚い",
+                 useCases: ["手や服が少し汚れているとき", "使い古した物について話すとき"],
+                 examples: [
+                    ("Wash your hands – they're all grubby.", "手を洗ってきて。汚れてるよ。"),
+                    ("This sofa's looking a bit grubby; we should clean it.", "このソファ、ちょっと薄汚れてきたね。掃除しなきゃ。")
+                 ], ipa: "/ˈgrʌbi/"),
+            make("soft drink", "a cold drink that does not contain alcohol, such as cola or lemonade",
+                 "ソフトドリンク・清涼飲料",
+                 useCases: ["お酒を飲まない人の注文で", "パーティーの飲み物を準備するとき"],
+                 examples: [
+                    ("I'm driving, so just a soft drink for me, thanks.", "運転するから、ソフトドリンクでお願い。"),
+                    ("Can you grab some soft drinks for the kids?", "子ども用にソフトドリンク買ってきてくれる？")
+                 ], ipa: "/sɒft drɪŋk/"),
+            make("squint", "to look at something with your eyes partly closed, to see better or because of bright light",
+                 "目を細めて見る",
+                 useCases: ["まぶしいとき", "小さい文字が見えにくいとき"],
+                 examples: [
+                    ("I had to squint to read the menu – I need new glasses.", "メニュー読むのに目を細めなきゃいけなかった。新しい眼鏡が要るな。"),
+                    ("Stop squinting and put your sunglasses on!", "目を細めてないでサングラスかけなよ！")
+                 ], ipa: "/skwɪnt/"),
+            make("nudge", "to push someone gently, usually with your elbow; to gently encourage someone",
+                 "（肘で）軽くつつく・それとなく促す",
+                 useCases: ["注意を引くために軽くつつくとき", "相手をやんわり後押しするとき"],
+                 examples: [
+                    ("She nudged me when he walked in.", "彼が入ってきたとき、彼女が肘でつついてきた。"),
+                    ("If he forgets, just give him a nudge.", "彼が忘れてたら、ちょっと声かけてあげて。")
+                 ], ipa: "/nʌdʒ/"),
+            make("slouch", "to sit or stand with your shoulders and head bent forward in a lazy way",
+                 "猫背になる・だらっと座る",
+                 useCases: ["姿勢の悪さを注意するとき", "ソファでだらだらしているとき"],
+                 examples: [
+                    ("Sit up straight – stop slouching!", "背筋伸ばして。猫背になってるよ！"),
+                    ("I spent the whole evening slouched on the sofa.", "夜はずっとソファでだらっとしてた。")
+                 ], ipa: "/slaʊtʃ/"),
+            make("bedtime", "the time when you usually go to bed",
+                 "寝る時間",
+                 useCases: ["子どもを寝かしつけるとき", "夜遅くなったことを伝えるとき"],
+                 examples: [
+                    ("Right, it's way past your bedtime – off you go.", "さあ、もう寝る時間とっくに過ぎてるよ。行っておいで。"),
+                    ("It's nearly bedtime for me – I've got an early start.", "もうそろそろ寝る時間だ。明日早いんだ。")
+                 ], ipa: "/ˈbedtaɪm/"),
+            make("have the hiccups", "to make repeated sudden sounds in your throat that you cannot control",
+                 "しゃっくりが出る",
+                 useCases: ["しゃっくりが止まらないとき", "しゃっくりの止め方を話すとき"],
+                 examples: [
+                    ("I've had the hiccups for ten minutes now!", "もう10分もしゃっくりが止まらない！"),
+                    ("Hold your breath – that usually gets rid of the hiccups.", "息止めてみて。だいたいそれでしゃっくり止まるよ。")
+                 ], ipa: "/hæv ðə ˈhɪkʌps/"),
+            make("clear my diary", "to cancel or move other plans so that you are free",
+                 "予定を空ける",
+                 useCases: ["大事な用事のために予定を空けるとき", "相手のために時間を作ると伝えるとき"],
+                 examples: [
+                    ("I've cleared my diary for Friday, so I'm all yours.", "金曜は予定空けといたから、まるまる付き合えるよ。"),
+                    ("Can you clear your diary next week? We need you for the launch.", "来週予定空けられる？ローンチで君が必要なんだ。")
+                 ], ipa: "/klɪə maɪ ˈdaɪəri/"),
+            make("nursery", "a place where young children are looked after while their parents work",
+                 "保育園",
+                 useCases: ["子どもの送り迎えについて話すとき", "子育ての話題で"],
+                 examples: [
+                    ("I need to pick my daughter up from nursery at five.", "5時に娘を保育園に迎えに行かなきゃ。"),
+                    ("He's just started nursery and he loves it.", "あの子、保育園に通い始めたばかりだけど気に入ってるよ。")
+                 ], ipa: "/ˈnɜːsəri/"),
+            make("flick through", "to look quickly through the pages of a book or magazine, or through TV channels",
+                 "パラパラめくる・（チャンネルを）次々変える",
+                 useCases: ["雑誌や本を流し読みするとき", "テレビのチャンネルを適当に変えるとき"],
+                 examples: [
+                    ("I was just flicking through a magazine while I waited.", "待ってる間、雑誌をパラパラ見てただけ。"),
+                    ("Stop flicking through the channels and pick something!", "チャンネルころころ変えてないで、何か決めてよ！")
+                 ], ipa: "/flɪk θruː/"),
+            make("fight off", "to stop an illness from developing, or to resist something",
+                 "（病気などを）撃退する・食い止める",
+                 useCases: ["風邪のひき始めのとき", "眠気や誘惑に耐えるとき"],
+                 examples: [
+                    ("I think I'm fighting off a cold.", "風邪ひきかけてるのを今食い止めてるところ。"),
+                    ("I was fighting off sleep all through the meeting.", "会議中ずっと眠気と戦ってた。")
+                 ], ipa: "/faɪt ɒf/"),
+            make("hangry", "bad-tempered or irritable because you are hungry",
+                 "お腹が空いてイライラした",
+                 useCases: ["空腹で機嫌が悪いとき", "相手の不機嫌を冗談で指摘するとき"],
+                 examples: [
+                    ("Sorry for snapping – I'm just a bit hangry.", "きつく言ってごめん。お腹空いてイライラしてただけ。"),
+                    ("Let's get some food before he gets hangry.", "彼がお腹空いて不機嫌になる前に何か食べよう。")
+                 ], ipa: "/ˈhæŋgri/"),
+            make("overtake", "to go past a vehicle or person that is moving in the same direction",
+                 "追い越す・追い抜く",
+                 useCases: ["運転中の話で", "競争やランキングで抜いたとき"],
+                 examples: [
+                    ("Don't overtake on a bend – it's really dangerous.", "カーブで追い越しちゃダメ。本当に危ないから。"),
+                    ("A lorry overtook us doing about ninety.", "トラックが時速90マイルくらいで追い越していった。")
+                 ], ipa: "/ˌəʊvəˈteɪk/"),
+        ]
+    }
+    private static var britishColloquial267: [Word] {
+        [
+            make("snore", "to breathe noisily through your nose and mouth while you are asleep",
+                 "いびきをかく",
+                 useCases: ["家族やルームメイトのいびきについて話すとき", "眠れなかった理由を説明するとき"],
+                 examples: [
+                    ("I couldn't sleep a wink – he was snoring all night.", "一睡もできなかったよ。彼が一晩中いびきかいてて。"),
+                    ("Do I snore? Be honest.", "私っていびきかく？正直に言って。")
+                 ], ipa: "/snɔː/"),
+            make("wrinkled", "having small lines or folds in it, for example skin or clothes",
+                 "しわの寄った・しわしわの",
+                 useCases: ["服のしわについて話すとき", "お風呂上がりの指や年齢による肌の話で"],
+                 examples: [
+                    ("My fingers go all wrinkled if I stay in the bath too long.", "お風呂に長く入ってると指がしわしわになる。"),
+                    ("Your shirt's a bit wrinkled – did you sleep in it?", "シャツちょっとしわ寄ってるよ。それ着たまま寝たの？")
+                 ], ipa: "/ˈrɪŋkld/"),
+            make("creased", "having lines or folds in it because it has been crushed or folded",
+                 "（服・紙が）しわくちゃの・折り目がついた",
+                 useCases: ["スーツケースから出した服について", "紙や書類が折れてしまったとき"],
+                 examples: [
+                    ("My trousers got all creased in the suitcase.", "スーツケースに入れてたらズボンがしわくちゃになった。"),
+                    ("Sorry, the ticket's a bit creased, but it still works.", "ごめん、チケットちょっと折れてるけど使えるよ。")
+                 ], ipa: "/kriːst/"),
+            make("tangled", "twisted together in an untidy way that is difficult to separate",
+                 "絡まった・もつれた",
+                 useCases: ["イヤホンのコードや髪が絡まったとき", "状況がややこしくなったときにも"],
+                 examples: [
+                    ("My headphones are always tangled when I take them out of my pocket.", "ポケットから出すと、イヤホンがいつも絡まってるんだよね。"),
+                    ("Her hair gets really tangled in the wind.", "風が吹くと彼女の髪すごく絡まっちゃうんだ。")
+                 ], ipa: "/ˈtæŋgld/"),
+            make("smudge", "a dirty mark; to make a mark by rubbing something such as ink or make-up",
+                 "汚れ・にじみ／こすって汚す・にじませる",
+                 useCases: ["化粧やインクがにじんだとき", "画面や眼鏡の指紋汚れについて"],
+                 examples: [
+                    ("You've got a smudge of chocolate on your cheek.", "ほっぺにチョコついてるよ。"),
+                    ("Don't touch it – the paint's still wet and it'll smudge.", "触らないで。ペンキまだ乾いてないからにじんじゃう。")
+                 ], ipa: "/smʌdʒ/"),
+            make("wince", "to make a sudden face showing pain or embarrassment",
+                 "（痛み・気まずさで）顔をしかめる",
+                 useCases: ["痛そうな表情をしたとき", "聞いていて恥ずかしくなったとき"],
+                 examples: [
+                    ("He winced when the nurse put the needle in.", "看護師が針を刺したとき、彼は顔をしかめた。"),
+                    ("I still wince when I think about that speech.", "あのスピーチのこと思い出すと今でも顔が引きつるよ。")
+                 ], ipa: "/wɪns/"),
+            make("stub your toe", "to hurt your toe by accidentally hitting it against something",
+                 "足の指をぶつける",
+                 useCases: ["家具の角に足をぶつけたとき", "痛がっている理由を説明するとき"],
+                 examples: [
+                    ("Ow! I just stubbed my toe on the bed.", "痛っ！ベッドに足の指ぶつけた。"),
+                    ("I stubbed my toe in the dark and it's still throbbing.", "暗がりで足の指ぶつけて、まだズキズキしてる。")
+                 ], ipa: "/stʌb jɔː təʊ/"),
+            make("cranky", "easily annoyed or in a bad mood, often because you are tired or hungry",
+                 "不機嫌な・機嫌が悪い",
+                 useCases: ["寝不足や空腹で機嫌が悪い人について", "ぐずる子どもについて"],
+                 examples: [
+                    ("Sorry I'm so cranky – I barely slept last night.", "機嫌悪くてごめん。昨夜ほとんど寝てなくて。"),
+                    ("The kids get cranky if they miss their nap.", "子どもたちは昼寝しそびれると不機嫌になるんだ。")
+                 ], ipa: "/ˈkræŋki/"),
+            make("sleepyhead", "a friendly way of talking to someone who is tired or has just woken up",
+                 "お寝坊さん・眠たがり屋",
+                 useCases: ["寝起きの家族や恋人に声をかけるとき", "眠そうな人を親しみを込めてからかうとき"],
+                 examples: [
+                    ("Morning, sleepyhead! It's nearly eleven.", "おはよう、お寝坊さん！もうすぐ11時だよ。"),
+                    ("Come on, sleepyhead, time for bed.", "ほら、眠たがり屋さん、もう寝る時間だよ。")
+                 ], ipa: "/ˈsliːpihed/"),
+            make("brainy", "clever and good at studying (informal)",
+                 "頭のいい・秀才の",
+                 useCases: ["勉強ができる人を話題にするとき", "家族や友人を褒めるとき"],
+                 examples: [
+                    ("Ask Sarah – she's the brainy one in the family.", "サラに聞いてみて。家族で一番頭いいから。"),
+                    ("He was always a bit brainy at school.", "彼は学生時代からちょっと秀才タイプだったよ。")
+                 ], ipa: "/ˈbreɪni/"),
+            make("busybody", "a person who is too interested in other people's private lives",
+                 "おせっかい・詮索好きな人",
+                 useCases: ["近所の詮索好きな人について", "他人のことに首を突っ込む人を指して"],
+                 examples: [
+                    ("Our neighbour's a real busybody – she knows everyone's business.", "うちの隣の人、ほんと詮索好きでさ。みんなの事情を知ってるんだよ。"),
+                    ("I don't want to be a busybody, but is everything okay?", "おせっかいかもしれないけど、大丈夫？")
+                 ], ipa: "/ˈbɪzibɒdi/"),
+            make("thick-skinned", "not easily upset by criticism or rude comments",
+                 "打たれ強い・図太い",
+                 useCases: ["批判を気にしない人について", "厳しい仕事に向いている性格を話すとき"],
+                 examples: [
+                    ("You need to be pretty thick-skinned to work in sales.", "営業の仕事するなら、かなり打たれ強くないとね。"),
+                    ("Don't worry about him – he's quite thick-skinned.", "彼のことは心配いらないよ。けっこう図太いから。")
+                 ], ipa: "/ˌθɪkˈskɪnd/"),
+            make("scrounge", "to get something, especially small things, by asking other people for it rather than paying",
+                 "（ちょっとした物を）たかる・せびる・もらう",
+                 useCases: ["ペンやタバコなどをちょっと借りるとき", "人にたかってばかりの人について"],
+                 examples: [
+                    ("Can I scrounge a pen off you?", "ペン一本もらってもいい？"),
+                    ("He's always scrounging free food at the office.", "あいつ、いつも会社でタダ飯たかってるよね。")
+                 ], ipa: "/skraʊndʒ/"),
+            make("frizzy", "(of hair) having a lot of small, tight, dry curls, often because of damp weather",
+                 "（髪が）チリチリの・広がった",
+                 useCases: ["雨の日の髪の悩みを話すとき", "髪質について話すとき"],
+                 examples: [
+                    ("My hair goes really frizzy when it rains.", "雨の日は髪がすっごく広がるんだよね。"),
+                    ("Any tips for frizzy hair?", "髪のうねり・広がりに何かいい対策ある？")
+                 ], ipa: "/ˈfrɪzi/"),
+            make("slowcoach", "a person who moves or does things too slowly (friendly, British)",
+                 "のろま・ぐずぐずする人",
+                 useCases: ["遅れて歩いている人を急かすとき", "準備が遅い家族をからかうとき"],
+                 examples: [
+                    ("Hurry up, slowcoach! We'll miss the bus.", "早く、のろのろしてないで！バス逃しちゃうよ。"),
+                    ("Sorry, I'm a bit of a slowcoach in the mornings.", "ごめん、朝はどうしてもとろくて。")
+                 ], ipa: "/ˈsləʊkəʊtʃ/"),
+        ]
+    }
+    private static var britishColloquial269: [Word] {
+        [
+            make("roll up your sleeves", "to get ready to work hard, especially on a difficult job",
+                 "腕まくりする・本腰を入れて取りかかる",
+                 useCases: ["大変な作業に取りかかるとき", "みんなで頑張ろうと声をかけるとき"],
+                 examples: [
+                    ("Right, let's roll up our sleeves and get this kitchen cleaned.", "よし、腕まくりしてこのキッチン片付けちゃおう。"),
+                    ("If we roll up our sleeves, we can finish by Friday.", "本腰入れれば金曜までに終わるよ。")
+                 ], ipa: "/rəʊl ʌp jɔː sliːvz/"),
+            make("halfway through", "in the middle of doing or watching something",
+                 "～の途中で・半分まで",
+                 useCases: ["映画や本、作業の途中だと伝えるとき", "途中で何かが起きた話をするとき"],
+                 examples: [
+                    ("I'm halfway through the book – no spoilers!", "その本まだ半分まで読んだところだから、ネタバレしないでね！"),
+                    ("We left halfway through the film. It was awful.", "映画の途中で出ちゃった。ひどかったよ。")
+                 ], ipa: "/ˌhɑːfweɪ ˈθruː/"),
+            make("zip up", "to close a coat, bag, etc. with a zip",
+                 "ファスナーを閉める",
+                 useCases: ["寒いときに子どもや友達に声をかけるとき", "カバンをしっかり閉めるよう注意するとき"],
+                 examples: [
+                    ("Zip up your coat – it's freezing out there.", "コートのファスナー閉めて、外すごく寒いよ。"),
+                    ("Can you zip me up? I can't reach.", "ファスナー上げてくれる？手が届かないの。")
+                 ], ipa: "/zɪp ʌp/"),
+            make("frosty", "very cold, with frost on the ground; also unfriendly",
+                 "霜の降りた・冷え込んだ／（態度が）冷たい",
+                 useCases: ["寒い朝の天気について", "そっけない態度を表すとき"],
+                 examples: [
+                    ("It was a lovely frosty morning – everything was white.", "霜が降りた気持ちいい朝で、あたり一面真っ白だった。"),
+                    ("She was a bit frosty with me after the meeting.", "会議のあと、彼女ちょっと私に冷たかった。")
+                 ], ipa: "/ˈfrɒsti/"),
+            make("tucked away", "in a quiet place that is hard to find or not easily seen",
+                 "ひっそりとある・奥まったところにある",
+                 useCases: ["隠れ家的なお店や場所を紹介するとき", "物をしまった場所を伝えるとき"],
+                 examples: [
+                    ("There's a great little café tucked away behind the station.", "駅の裏にひっそりといい感じのカフェがあるんだ。"),
+                    ("I found some cash tucked away in an old jacket.", "古いジャケットの中にお金がしまってあるのを見つけた。")
+                 ], ipa: "/tʌkt əˈweɪ/"),
+            make("draughty", "letting cold air come in, so that a room feels cold",
+                 "すきま風が入る",
+                 useCases: ["古い家や部屋の寒さについて", "窓やドアの修理を話すとき"],
+                 examples: [
+                    ("The old house is lovely but really draughty in winter.", "その古い家は素敵だけど、冬はすきま風がひどいんだ。"),
+                    ("Close the door, it's a bit draughty in here.", "ドア閉めて、ちょっとすきま風が入るから。")
+                 ], ipa: "/ˈdrɑːfti/"),
+            make("roomy", "having plenty of space inside",
+                 "広々とした・ゆったりした",
+                 useCases: ["車や部屋、カバンの広さを褒めるとき", "服のサイズがゆったりしているとき"],
+                 examples: [
+                    ("The new car's really roomy – loads of space in the back.", "新しい車すごく広いよ。後ろもゆったり。"),
+                    ("These trousers are nice and roomy.", "このズボン、ゆったりしてていいね。")
+                 ], ipa: "/ˈruːmi/"),
+            make("ripe", "ready to eat because it is fully grown (fruit)",
+                 "熟した・食べごろの",
+                 useCases: ["果物が食べごろか確かめるとき", "買い物で果物を選ぶとき"],
+                 examples: [
+                    ("These avocados aren't ripe yet – give them a couple of days.", "このアボカドまだ熟してないね。あと2、3日置いといて。"),
+                    ("Is this mango ripe? It feels a bit hard.", "このマンゴー食べごろ？ちょっと硬い気がする。")
+                 ], ipa: "/raɪp/"),
+            make("sour", "having a sharp taste like a lemon; (of milk) gone bad",
+                 "酸っぱい／（牛乳が）腐って酸っぱくなった",
+                 useCases: ["味の感想を伝えるとき", "牛乳が傷んでいるとき"],
+                 examples: [
+                    ("Ugh, the milk's gone sour.", "うわ、牛乳酸っぱくなってる。"),
+                    ("I love sour sweets, the sourer the better.", "酸っぱいお菓子大好き、酸っぱいほどいい。")
+                 ], ipa: "/ˈsaʊə/"),
+            make("creamy", "thick and smooth, containing or tasting like cream",
+                 "クリーミーな・なめらかな",
+                 useCases: ["料理やスープの味や食感を褒めるとき", "注文時に好みを伝えるとき"],
+                 examples: [
+                    ("This pasta sauce is lovely and creamy.", "このパスタソース、クリーミーでおいしいね。"),
+                    ("I'd prefer something less creamy, to be honest.", "正直、もうちょっとクリーミーじゃないのがいいかな。")
+                 ], ipa: "/ˈkriːmi/"),
+            make("salty", "containing or tasting of salt; too salty",
+                 "しょっぱい・塩辛い",
+                 useCases: ["料理の味つけについて感想を言うとき", "海やスナックについて話すとき"],
+                 examples: [
+                    ("The soup's a bit too salty for me.", "このスープ、私にはちょっとしょっぱいな。"),
+                    ("I fancy something salty – have we got any crisps?", "何かしょっぱいもの食べたい。ポテチある？")
+                 ], ipa: "/ˈsɔːlti/"),
+            make("bitter", "having a strong, sharp taste that is not sweet; (of weather) extremely cold",
+                 "苦い／（寒さが）身を切るような",
+                 useCases: ["コーヒーやチョコの味について", "厳しい寒さを表すとき"],
+                 examples: [
+                    ("This coffee's really bitter – can I have some milk?", "このコーヒーすごく苦いね。ミルクもらえる？"),
+                    ("There's a bitter wind today, wrap up warm.", "今日は身を切るような風だから、暖かくしてね。")
+                 ], ipa: "/ˈbɪtə/"),
+            make("squeaky", "making a short, high sound",
+                 "キーキー鳴る・きしむ",
+                 useCases: ["ドアや床のきしみについて", "自転車や靴の音が気になるとき"],
+                 examples: [
+                    ("The bedroom door's really squeaky – it needs some oil.", "寝室のドアがすごくキーキー鳴るの。油ささなきゃ。"),
+                    ("My new trainers are a bit squeaky on the floor.", "新しいスニーカー、床でちょっとキュッキュ鳴るんだ。")
+                 ], ipa: "/ˈskwiːki/"),
+            make("pothole", "a hole in the surface of a road",
+                 "（道路の）穴・くぼみ",
+                 useCases: ["道路状況の文句を言うとき", "運転や自転車で気をつけるとき"],
+                 examples: [
+                    ("Watch out for the pothole at the end of the road.", "道の突き当たりの穴に気をつけてね。"),
+                    ("I hit a pothole and got a flat tyre.", "道路の穴にはまってタイヤがパンクしちゃった。")
+                 ], ipa: "/ˈpɒthəʊl/"),
+            make("on call", "available to go to work at any time if needed",
+                 "待機中で・呼び出しに備えて",
+                 useCases: ["仕事の呼び出し待機を伝えるとき", "誘いを断る理由として"],
+                 examples: [
+                    ("I can't have a drink tonight – I'm on call.", "今夜は飲めないんだ、待機当番だから。"),
+                    ("She's on call this weekend, so she might have to leave.", "彼女は今週末待機当番だから、途中で抜けるかも。")
+                 ], ipa: "/ɒn kɔːl/"),
+        ]
+    }
+    private static var britishColloquial273: [Word] {
+        [
+            make("cut in", "to interrupt someone who is speaking, or to push into a line of traffic or people",
+                 "（話に）割り込む・（車や列に）割り込む",
+                 useCases: ["会話に口をはさむとき", "割り込み運転に文句を言うとき"],
+                 examples: [
+                    ("Sorry to cut in, but we're running out of time.", "割り込んでごめん、でも時間がなくなってきてるんだ。"),
+                    ("Some idiot cut in right in front of me on the motorway.", "高速でどこかのバカが目の前に割り込んできた。")
+                 ], ipa: "/kʌt ɪn/"),
+            make("keep it short", "to say or write something briefly, without unnecessary detail",
+                 "手短にする・簡潔にまとめる",
+                 useCases: ["時間がないときに話を短くしてもらうとき", "スピーチや説明を簡潔にするとき"],
+                 examples: [
+                    ("I'll keep it short – I know everyone wants to get home.", "手短に話すね。みんな早く帰りたいだろうから。"),
+                    ("Can you keep it short? I've got a meeting in five minutes.", "手短にお願いできる？5分後に会議なんだ。")
+                 ], ipa: "/kiːp ɪt ʃɔːt/"),
+            make("pop back", "to return somewhere quickly or for a short time",
+                 "ちょっと戻る・また寄る",
+                 useCases: ["忘れ物を取りに戻るとき", "後でまた来ると伝えるとき"],
+                 examples: [
+                    ("I've left my keys – I'll just pop back and get them.", "鍵を忘れた。ちょっと戻って取ってくるね。"),
+                    ("He's not in right now. Can you pop back after lunch?", "彼は今いないんだ。お昼の後にまた寄ってもらえる？")
+                 ], ipa: "/pɒp bæk/"),
+            make("you're an angel", "said to thank someone warmly for being very kind or helpful",
+                 "本当に助かる・あなたって天使！",
+                 useCases: ["親切にしてもらったお礼を言うとき", "頼みごとを聞いてもらったとき"],
+                 examples: [
+                    ("You made me a coffee? You're an angel!", "コーヒー入れてくれたの？ほんと天使！"),
+                    ("Thanks for picking up the kids – you're an angel.", "子どもたちを迎えに行ってくれてありがとう。本当に助かったよ。")
+                 ], ipa: "/jɔːr ən ˈeɪndʒl/"),
+            make("a heavy sleeper", "someone who sleeps deeply and is not easily woken",
+                 "眠りが深い人・なかなか起きない人",
+                 useCases: ["騒音でも起きない人について話すとき", "目覚ましが必要な理由を言うとき"],
+                 examples: [
+                    ("I'm a heavy sleeper – I need three alarms to get up.", "眠りが深いから、起きるのに目覚ましが3つ必要なんだ。"),
+                    ("Don't worry about the noise, he's a heavy sleeper.", "音は気にしないで、彼は一度寝たら起きないから。")
+                 ], ipa: "/ə ˈhevi ˈsliːpə/"),
+            make("be seeing someone", "to be in a romantic relationship with someone, often a fairly new one",
+                 "（誰かと）付き合っている",
+                 useCases: ["恋人がいるか聞く・答えるとき", "新しい恋愛について話すとき"],
+                 examples: [
+                    ("Are you seeing anyone at the moment?", "今、付き合ってる人いるの？"),
+                    ("She's been seeing a guy from work for a few months.", "彼女、職場の人と数か月前から付き合ってるんだ。")
+                 ], ipa: "/bi ˈsiːɪŋ ˈsʌmwʌn/"),
+            make("be an item", "(of two people) to be in a romantic relationship",
+                 "（二人が）付き合っている・カップルだ",
+                 useCases: ["二人の関係を噂するとき", "カップルになったことを伝えるとき"],
+                 examples: [
+                    ("Wait, are Tom and Emma an item now?", "ちょっと待って、トムとエマって今付き合ってるの？"),
+                    ("They've been an item since uni.", "あの二人は大学の頃からカップルなんだ。")
+                 ], ipa: "/bi ən ˈaɪtəm/"),
+            make("go on a date", "to go out with someone you are romantically interested in",
+                 "デートに行く",
+                 useCases: ["デートの予定を話すとき", "デートの感想を話すとき"],
+                 examples: [
+                    ("I'm going on a date tonight – I'm so nervous!", "今夜デートなんだ。めっちゃ緊張する！"),
+                    ("We went on a few dates, but it didn't really work out.", "何回かデートしたけど、うまくいかなかった。")
+                 ], ipa: "/ɡəʊ ɒn ə deɪt/"),
+            make("gatecrash", "to go to a party or event without being invited",
+                 "（招待されずに）パーティーに押しかける",
+                 useCases: ["招かれていない人が来たとき", "冗談でパーティーに乱入すると言うとき"],
+                 examples: [
+                    ("A group of students gatecrashed our party last night.", "昨日の夜、学生たちがうちのパーティーに勝手に押しかけてきた。"),
+                    ("Mind if I gatecrash your lunch? I won't stay long.", "お昼にお邪魔してもいい？長居はしないから。")
+                 ], ipa: "/ˈɡeɪtkræʃ/"),
+            make("bring a bottle", "to bring a bottle of wine or another drink to a party or dinner as a guest",
+                 "（招かれた時に）お酒を一本持っていく",
+                 useCases: ["ホームパーティーに招かれたとき", "手土産について話すとき"],
+                 examples: [
+                    ("It's just a casual thing – bring a bottle if you like.", "気軽な集まりだから、よかったらお酒一本持ってきて。"),
+                    ("Should I bring a bottle or some food?", "お酒を持っていけばいい？それとも何か食べ物？")
+                 ], ipa: "/brɪŋ ə ˈbɒtl/"),
+            make("pick up a language", "to learn a language naturally, without formal study",
+                 "（自然に）言葉を覚える・身につける",
+                 useCases: ["外国語を覚えた経緯を話すとき", "海外生活について話すとき"],
+                 examples: [
+                    ("I picked up a bit of Spanish while I was living in Madrid.", "マドリードに住んでた時にスペイン語を少し覚えたんだ。"),
+                    ("Kids pick up languages so quickly.", "子どもって本当にすぐ言葉を覚えるよね。")
+                 ], ipa: "/pɪk ʌp ə ˈlæŋɡwɪdʒ/"),
+            make("leave someone on read", "to read someone's message but not reply to it",
+                 "既読スルーする",
+                 useCases: ["メッセージの返信がないとき", "わざと返事をしないとき"],
+                 examples: [
+                    ("She left me on read for two days!", "彼女に2日間も既読スルーされたんだけど！"),
+                    ("Sorry for leaving you on read – I was swamped.", "既読スルーしてごめん、めっちゃ忙しくて。")
+                 ], ipa: "/liːv ˈsʌmwʌn ɒn red/"),
+            make("best man", "the friend chosen by a groom to help him at his wedding",
+                 "ベストマン（新郎の付添人）",
+                 useCases: ["結婚式の話をするとき", "友人に大役を頼まれたとき"],
+                 examples: [
+                    ("Dan's asked me to be his best man!", "ダンにベストマンを頼まれたんだ！"),
+                    ("The best man's speech was hilarious.", "ベストマンのスピーチ、めちゃくちゃ面白かった。")
+                 ], ipa: "/best mæn/"),
+            make("a good fit", "someone or something that is suitable for a particular job, group or situation",
+                 "ぴったりな人（もの）・相性がいい",
+                 useCases: ["採用や人選について話すとき", "自分に合うかどうか判断するとき"],
+                 examples: [
+                    ("I think she'd be a really good fit for the team.", "彼女ならチームにすごく合うと思う。"),
+                    ("The job sounded great, but it just wasn't a good fit for me.", "仕事は良さそうだったけど、自分には合わなかった。")
+                 ], ipa: "/ə ɡʊd fɪt/"),
+            make("mispronounce", "to say a word or name wrongly",
+                 "発音を間違える",
+                 useCases: ["名前の読み方を確認するとき", "言い間違いを謝るとき"],
+                 examples: [
+                    ("Sorry if I'm mispronouncing your name – how do you say it?", "名前の発音が違ってたらごめんね。どう読むの？"),
+                    ("Everyone mispronounces the name of that town.", "みんなあの町の名前を間違えて発音するんだよね。")
+                 ], ipa: "/ˌmɪsprəˈnaʊns/"),
+        ]
+    }
+    private static var britishColloquial274: [Word] {
+        [
+            make("half asleep", "not fully awake; very tired and barely paying attention",
+                 "半分寝ている・寝ぼけている",
+                 useCases: ["朝起きたばかりのとき", "眠くて話をちゃんと聞けていないとき"],
+                 examples: [
+                    ("Sorry, I was half asleep when you called.", "ごめん、電話くれたとき半分寝てたんだ。"),
+                    ("I sat through the whole meeting half asleep.", "会議中ずっと寝ぼけたまま座ってたよ。")
+                 ], ipa: "/hɑːf əˈsliːp/"),
+            make("nice and early", "pleasantly or conveniently early (the pattern 'nice and + adjective' means 'pleasantly ~')",
+                 "早めに・余裕をもって（nice and＋形容詞で「ちょうどよく〜」）",
+                 useCases: ["余裕をもって到着したいとき", "nice and warm / quiet などと応用するとき"],
+                 examples: [
+                    ("Let's get there nice and early so we can grab a good seat.", "いい席を取れるように早めに行こう。"),
+                    ("The room's nice and warm now – come on in.", "部屋がちょうどいい暖かさになったよ。どうぞ入って。")
+                 ], ipa: "/naɪs ən ˈɜːli/"),
+            make("screen time", "the amount of time someone spends looking at a phone, computer or TV",
+                 "スクリーンタイム・画面を見ている時間",
+                 useCases: ["スマホの使いすぎについて話すとき", "子どものスマホ時間を制限するとき"],
+                 examples: [
+                    ("My screen time was nine hours yesterday – that's embarrassing.", "昨日のスクリーンタイム9時間だった。恥ずかしい。"),
+                    ("We try to limit the kids' screen time at weekends.", "週末は子どもの画面時間を制限するようにしてるんだ。")
+                 ], ipa: "/skriːn taɪm/"),
+            make("on the fly", "doing something quickly while other things are happening, without preparing in advance",
+                 "その場で・臨機応変に",
+                 useCases: ["準備なしで対応したとき", "予定を即興で変えるとき"],
+                 examples: [
+                    ("We didn't have a plan, so we just made it up on the fly.", "計画がなかったから、その場で考えたんだ。"),
+                    ("You'll have to make decisions on the fly in this job.", "この仕事ではその場で判断しなきゃいけないよ。")
+                 ], ipa: "/ɒn ðə flaɪ/"),
+            make("ease into", "to start something gradually and gently, instead of all at once",
+                 "（徐々に）慣らしていく・ゆっくり始める",
+                 useCases: ["新しい仕事や運動を少しずつ始めるとき", "休み明けに無理をしないとき"],
+                 examples: [
+                    ("Don't go mad at the gym – just ease into it.", "ジムで無理しないで、少しずつ慣らしていきなよ。"),
+                    ("I'm easing into the week with a few easy tasks.", "簡単な仕事から始めて、今週にゆっくり慣らしてるところ。")
+                 ], ipa: "/iːz ˈɪntuː/"),
+            make("write down", "to write something on paper so that you remember it",
+                 "書き留める・メモする",
+                 useCases: ["電話番号や住所をメモするとき", "忘れないように記録するとき"],
+                 examples: [
+                    ("Hang on, let me write that down.", "ちょっと待って、メモするから。"),
+                    ("Can you write down your address for me?", "住所を書いてもらえる？")
+                 ], ipa: "/raɪt daʊn/"),
+            make("livid", "extremely angry",
+                 "激怒している・カンカンに怒っている",
+                 useCases: ["誰かがひどく怒っていると伝えるとき", "自分の怒りを強調するとき"],
+                 examples: [
+                    ("Mum was livid when she saw the state of the kitchen.", "キッチンの惨状を見て母はカンカンだった。"),
+                    ("I was absolutely livid – they'd cancelled without telling me.", "本当に激怒したよ。何も言わずにキャンセルされたんだ。")
+                 ], ipa: "/ˈlɪvɪd/"),
+            make("jittery", "nervous and unable to relax, often shaky",
+                 "そわそわした・神経が高ぶった",
+                 useCases: ["緊張して落ち着かないとき", "コーヒーを飲みすぎたとき"],
+                 examples: [
+                    ("I always get jittery before a job interview.", "面接の前はいつもそわそわしちゃう。"),
+                    ("Three coffees and I'm all jittery now.", "コーヒー3杯飲んだら、手が震えて落ち着かない。")
+                 ], ipa: "/ˈdʒɪtəri/"),
+            make("be good with", "to be skilled at dealing with or handling people or things",
+                 "〜の扱いがうまい・〜と接するのが上手",
+                 useCases: ["子どもや人の扱いが上手な人をほめるとき", "数字や機械に強いと言うとき"],
+                 examples: [
+                    ("She's really good with kids – they love her.", "彼女は子どもの扱いが本当に上手。みんな彼女が大好きなんだ。"),
+                    ("I'm not very good with numbers, so you do the maths.", "数字は苦手だから、計算はお願い。")
+                 ], ipa: "/bi ɡʊd wɪð/"),
+            make("that's nonsense", "said when you strongly disagree with something and think it is untrue or silly",
+                 "そんなのばかげてる・そんなことないよ",
+                 useCases: ["相手の自虐を否定するとき", "根拠のない話を否定するとき"],
+                 examples: [
+                    ("You think you're boring? That's nonsense!", "自分がつまらない人間だって？そんなことないよ！"),
+                    ("That's nonsense – nobody said you had to pay.", "ばかげてるよ。誰も君が払えなんて言ってない。")
+                 ], ipa: "/ðæts ˈnɒnsəns/"),
+            make("scatterbrained", "often forgetting things and not organised or focused",
+                 "うっかりした・忘れっぽくて落ち着きがない",
+                 useCases: ["自分の忘れっぽさを笑うとき", "ドジな友達について話すとき"],
+                 examples: [
+                    ("I'm so scatterbrained today – I've lost my keys twice.", "今日はほんとうっかりしてる。鍵を2回もなくしたよ。"),
+                    ("He's a bit scatterbrained, but he means well.", "彼はちょっとそそっかしいけど、悪気はないんだ。")
+                 ], ipa: "/ˈskætəbreɪnd/"),
+            make("run around like a headless chicken", "to rush about in a panicked, disorganised way without achieving much",
+                 "（慌てて）バタバタ走り回る",
+                 useCases: ["忙しくて慌ただしい一日を話すとき", "パニック状態の様子を表すとき"],
+                 examples: [
+                    ("I've been running around like a headless chicken all morning.", "朝からずっとバタバタ走り回ってるよ。"),
+                    ("Stop running around like a headless chicken and make a list.", "慌ててバタバタしないで、リストを作りなよ。")
+                 ], ipa: "/rʌn əˈraʊnd laɪk ə ˈhedləs ˈtʃɪkɪn/"),
+            make("on autopilot", "doing something without thinking about it, out of habit or tiredness",
+                 "無意識に・惰性で",
+                 useCases: ["習慣で体が勝手に動いたとき", "疲れてぼーっと作業しているとき"],
+                 examples: [
+                    ("I drove home on autopilot – I don't remember the journey at all.", "無意識に運転して帰ってきた。道中の記憶がまったくないよ。"),
+                    ("By Friday I'm just working on autopilot.", "金曜になると、もう惰性で働いてるだけ。")
+                 ], ipa: "/ɒn ˈɔːtəʊpaɪlət/"),
+            make("lie awake", "to stay in bed unable to sleep, often because you are worried",
+                 "眠れずに横になっている・寝付けない",
+                 useCases: ["心配で眠れなかったとき", "不眠について話すとき"],
+                 examples: [
+                    ("I lay awake half the night worrying about the exam.", "試験が心配で夜中まで眠れなかった。"),
+                    ("Do you ever lie awake thinking about stupid things you said?", "自分が言ったバカなことを思い出して眠れなくなること、ない？")
+                 ], ipa: "/laɪ əˈweɪk/"),
+            make("self-care", "things you do to look after your own physical and mental health",
+                 "セルフケア・自分を労わること",
+                 useCases: ["自分のための休息について話すとき", "ストレス解消法を話すとき"],
+                 examples: [
+                    ("A hot bath and an early night – that's my idea of self-care.", "熱いお風呂と早寝。それが私なりのセルフケア。"),
+                    ("You've been working non-stop. Make some time for self-care.", "ずっと働きっぱなしだよ。自分を労わる時間も作って。")
+                 ], ipa: "/ˌself ˈkeə/"),
+        ]
+    }
+    private static var britishColloquial275: [Word] {
+        [
+            make("get wound up", "to become annoyed, stressed or agitated about something",
+                 "イライラする・カッカする",
+                 useCases: ["小さなことで怒っている人をなだめるとき", "ストレスでピリピリしているとき"],
+                 examples: [
+                    ("Don't get wound up about it – it's only a parking ticket.", "そんなことでカッカしないで。ただの駐車違反切符だよ。"),
+                    ("He gets really wound up when people are late.", "彼は人が遅れてくると本当にイライラするんだ。")
+                 ], ipa: "/ɡet waʊnd ʌp/"),
+            make("underwhelmed", "disappointed because something was less impressive than you expected",
+                 "期待外れでがっかりした・拍子抜けした",
+                 useCases: ["話題の映画や店が期待ほどでなかったとき", "感想を控えめに伝えるとき"],
+                 examples: [
+                    ("Everyone raved about that restaurant, but I was a bit underwhelmed.", "みんな絶賛してたけど、あの店はちょっと期待外れだった。"),
+                    ("Honestly, I came away feeling pretty underwhelmed.", "正直、見終わってかなり拍子抜けしたよ。")
+                 ], ipa: "/ˌʌndəˈwelmd/"),
+            make("an awkward silence", "a moment when nobody speaks and everyone feels uncomfortable",
+                 "気まずい沈黙",
+                 useCases: ["会話が途切れて気まずくなったとき", "失言のあとの空気を説明するとき"],
+                 examples: [
+                    ("After his joke there was a long, awkward silence.", "彼の冗談のあと、長くて気まずい沈黙が流れた。"),
+                    ("I just started talking to fill the awkward silence.", "気まずい沈黙を埋めようと、とりあえず話し始めたんだ。")
+                 ], ipa: "/ən ˈɔːkwəd ˈsaɪləns/"),
+            make("get stuck in your head", "(of a song or tune) to keep playing in your mind and not go away",
+                 "（曲が）頭から離れない",
+                 useCases: ["ある曲がずっと頭の中で流れているとき", "キャッチーな曲について話すとき"],
+                 examples: [
+                    ("That advert song has been stuck in my head all day.", "あのCMソングが一日中頭から離れないんだ。"),
+                    ("Don't sing it – it'll get stuck in my head!", "歌わないで、頭から離れなくなるから！")
+                 ], ipa: "/ɡet stʌk ɪn jɔː hed/"),
+            make("rewatch", "to watch a film or series again",
+                 "（映画・ドラマを）見返す・もう一度見る",
+                 useCases: ["好きなドラマを何度も見るとき", "見逃した部分を確認するとき"],
+                 examples: [
+                    ("I've rewatched that series about five times.", "あのドラマはもう5回くらい見返したよ。"),
+                    ("It's even better when you rewatch it and catch all the little details.", "見返して細かいところに気づくと、さらに面白いよ。")
+                 ], ipa: "/ˌriːˈwɒtʃ/"),
+            make("book in advance", "to reserve a table, ticket or room before the day you need it",
+                 "前もって予約する",
+                 useCases: ["人気店やチケットを予約するとき", "旅行の計画を立てるとき"],
+                 examples: [
+                    ("It's really popular, so you'll need to book in advance.", "すごく人気だから、前もって予約しないとダメだよ。"),
+                    ("Train tickets are much cheaper if you book in advance.", "電車の切符は早めに予約するとずっと安いよ。")
+                 ], ipa: "/bʊk ɪn ədˈvɑːns/"),
+            make("run out of petrol", "to have no fuel left in your car (US: run out of gas)",
+                 "ガス欠になる",
+                 useCases: ["車の燃料が切れたとき", "給油を忘れそうな人に注意するとき"],
+                 examples: [
+                    ("We ran out of petrol on the motorway – it was a nightmare.", "高速でガス欠になってさ、最悪だったよ。"),
+                    ("Fill up now or we'll run out of petrol before we get there.", "今給油しないと、着く前にガス欠になるよ。")
+                 ], ipa: "/rʌn aʊt əv ˈpetrəl/"),
+            make("maybe next time", "a friendly way of saying no to an invitation now but showing you'd like to another time",
+                 "また今度ね",
+                 useCases: ["誘いをやんわり断るとき", "次の機会に期待を残すとき"],
+                 examples: [
+                    ("I can't make it tonight, sorry – maybe next time?", "今夜は行けないんだ、ごめん。また今度ね？"),
+                    ("Shame you couldn't come. Maybe next time!", "来られなくて残念。また今度ね！")
+                 ], ipa: "/ˈmeɪbi nekst taɪm/"),
+            make("a pat on the back", "praise or approval for something someone has done well",
+                 "褒め言葉・よくやったという評価",
+                 useCases: ["頑張った人を褒めるとき", "自分を労うとき"],
+                 examples: [
+                    ("You deserve a pat on the back for sorting all that out.", "それを全部片付けたんだから、褒められて当然だよ。"),
+                    ("Give yourself a pat on the back – you smashed it!", "自分を褒めてあげなよ。完璧だったじゃん！")
+                 ], ipa: "/ə pæt ɒn ðə bæk/"),
+            make("credit where credit's due", "used to say that someone deserves praise, even if you don't usually praise them",
+                 "認めるべきところは認めないとね",
+                 useCases: ["ライバルや苦手な人を公平に褒めるとき", "成果を素直に評価するとき"],
+                 examples: [
+                    ("I'm not his biggest fan, but credit where credit's due – he did a great job.", "彼のファンじゃないけど、認めるべきところは認めないと。いい仕事したよ。"),
+                    ("Credit where credit's due, the new manager has really turned things around.", "認めるべきは認めるよ。新しい店長で本当に状況が良くなった。")
+                 ], ipa: "/ˈkredɪt weə ˈkredɪts djuː/"),
+            make("tune out", "to stop listening or paying attention",
+                 "聞き流す・上の空になる",
+                 useCases: ["話が長くて集中が切れたとき", "雑音を気にしないようにするとき"],
+                 examples: [
+                    ("Sorry, I completely tuned out for a minute there.", "ごめん、ちょっと完全に上の空になってた。"),
+                    ("I just put my headphones on and tune out the noise.", "ヘッドホンをつけて、周りの音をシャットアウトするんだ。")
+                 ], ipa: "/tjuːn aʊt/"),
+            make("FOMO", "fear of missing out: worry that others are having fun or doing something good without you",
+                 "取り残される不安・自分だけ逃している気がする感覚",
+                 useCases: ["SNSで友達の楽しそうな投稿を見たとき", "誘いを断るか迷っているとき"],
+                 examples: [
+                    ("I only went because of FOMO, to be honest.", "正直、行かないと損する気がして行っただけなんだ。"),
+                    ("Seeing everyone's holiday photos gives me serious FOMO.", "みんなの旅行写真を見ると、すごく取り残された気分になる。")
+                 ], ipa: "/ˈfəʊməʊ/"),
+            make("a page-turner", "a book that is so exciting you want to keep reading",
+                 "止まらなくなるほど面白い本",
+                 useCases: ["面白い本を人に勧めるとき", "一気読みした本の感想を言うとき"],
+                 examples: [
+                    ("It's a real page-turner – I finished it in two days.", "本当に止まらない本で、2日で読み終えたよ。"),
+                    ("Have you got any page-turners for the beach?", "ビーチで読める面白い本、何かある？")
+                 ], ipa: "/ə ˈpeɪdʒ ˌtɜːnə/"),
+            make("a must-see", "something so good or important that people should definitely see it",
+                 "必見のもの",
+                 useCases: ["映画や観光地を強く勧めるとき", "旅行のおすすめを聞くとき"],
+                 examples: [
+                    ("If you're in Lisbon, the old town is a must-see.", "リスボンに行くなら、旧市街は必見だよ。"),
+                    ("Everyone says the new exhibition is a must-see.", "みんな、新しい展示は絶対見るべきだって言ってる。")
+                 ], ipa: "/ə ˈmʌst siː/"),
+            make("flip-flops", "light, open rubber sandals held on by a strap between the toes",
+                 "ビーチサンダル",
+                 useCases: ["夏やビーチの持ち物を話すとき", "ラフな服装について話すとき"],
+                 examples: [
+                    ("Don't forget to pack your flip-flops.", "ビーサン持っていくの忘れないでね。"),
+                    ("You can't go for a hike in flip-flops!", "ビーサンでハイキングは無理だよ！")
+                 ], ipa: "/ˈflɪp flɒps/"),
+        ]
+    }
+    private static var britishColloquial276: [Word] {
+        [
+            make("sluggish", "feeling slow, tired and lacking energy",
+                 "だるい・体が重い",
+                 useCases: ["寝不足や食べ過ぎで体が重いとき", "パソコンや経済の動きが鈍いとき"],
+                 examples: [
+                    ("I always feel a bit sluggish after a big lunch.", "たくさんお昼を食べると、いつもちょっとだるくなるんだ。"),
+                    ("My laptop's been really sluggish lately.", "最近ノートパソコンの動きがすごく遅いんだよ。")
+                 ], ipa: "/ˈslʌɡɪʃ/"),
+            make("overdressed", "wearing clothes that are too formal or smart for the occasion",
+                 "（場に対して）服装がきちんとしすぎた",
+                 useCases: ["カジュアルな場にフォーマルな服で来てしまったとき", "服装選びに迷うとき"],
+                 examples: [
+                    ("I felt a bit overdressed – everyone else was in jeans.", "みんなジーンズで、私だけちょっと浮いた格好だった。"),
+                    ("You can't really be overdressed for a wedding.", "結婚式なら、きちんとしすぎってことはないよ。")
+                 ], ipa: "/ˌəʊvəˈdrest/"),
+            make("mishear", "to hear something wrongly",
+                 "聞き間違える",
+                 useCases: ["相手の言葉を聞き違えたとき", "勘違いを謝るとき"],
+                 examples: [
+                    ("Sorry, I must have misheard you – did you say Tuesday?", "ごめん、聞き間違えたかも。火曜日って言った？"),
+                    ("I misheard the name and called him Tom all evening.", "名前を聞き間違えて、一晩中彼をトムって呼んでたよ。")
+                 ], ipa: "/ˌmɪsˈhɪə/"),
+            make("fit someone in", "to find time to see someone or do something in a busy schedule",
+                 "（忙しい中で）予定に入れる・時間を作る",
+                 useCases: ["美容院や病院の予約を頼むとき", "忙しい中で会う時間を作るとき"],
+                 examples: [
+                    ("Could you fit me in on Thursday afternoon?", "木曜の午後に入れてもらえますか？"),
+                    ("I'm pretty busy, but I'll try to fit you in next week.", "かなり忙しいけど、来週どこかで時間作ってみるよ。")
+                 ], ipa: "/fɪt ˈsʌmwʌn ɪn/"),
+            make("a change of clothes", "an extra set of clothes you bring with you",
+                 "着替え（一式）",
+                 useCases: ["泊まりや旅行の持ち物を話すとき", "子どもや運動後の準備をするとき"],
+                 examples: [
+                    ("Bring a change of clothes in case it rains.", "雨に備えて着替えを持ってきてね。"),
+                    ("I always keep a change of clothes at work.", "職場にはいつも着替えを置いてるんだ。")
+                 ], ipa: "/ə tʃeɪndʒ əv kləʊðz/"),
+            make("I don't follow", "I don't understand what you mean or what you're explaining",
+                 "話がよく分からない・ついていけない",
+                 useCases: ["説明が理解できないとき", "もう一度説明してほしいとき"],
+                 examples: [
+                    ("Sorry, I don't follow – can you go back a bit?", "ごめん、よく分からない。ちょっと戻って説明してくれる？"),
+                    ("I don't quite follow. Why would he do that?", "いまいち話が見えないな。なんで彼はそんなことを？")
+                 ], ipa: "/aɪ dəʊnt ˈfɒləʊ/"),
+            make("lose your voice", "to become unable to speak normally, usually because of illness or shouting",
+                 "声が出なくなる・声がかれる",
+                 useCases: ["風邪で声が出ないとき", "ライブや応援で叫びすぎたとき"],
+                 examples: [
+                    ("I lost my voice after the concert last night.", "昨日のライブのあと、声が出なくなっちゃった。"),
+                    ("Sorry, I've almost lost my voice – it's this cold.", "ごめん、ほとんど声が出ないんだ。風邪のせいで。")
+                 ], ipa: "/luːz jɔː vɔɪs/"),
+            make("a typo", "a small mistake in typed or printed text",
+                 "誤字・タイプミス",
+                 useCases: ["メールや資料の打ち間違いを指摘するとき", "自分の誤字を謝るとき"],
+                 examples: [
+                    ("There's a typo in the second line of your email.", "メールの2行目に誤字があるよ。"),
+                    ("Sorry, typo – I meant Friday, not Monday.", "ごめん、打ち間違い。月曜じゃなくて金曜ね。")
+                 ], ipa: "/ə ˈtaɪpəʊ/"),
+            make("cut out", "(of a phone call, engine or sound) to suddenly stop working",
+                 "（電話・音・エンジンが）途切れる・止まる",
+                 useCases: ["電話やオンライン通話の音が途切れたとき", "車のエンジンが急に止まったとき"],
+                 examples: [
+                    ("You keep cutting out – I'll call you back.", "音が途切れ途切れだから、かけ直すね。"),
+                    ("The engine just cut out at the traffic lights.", "信号のところでエンジンが急に止まったんだ。")
+                 ], ipa: "/kʌt aʊt/"),
+            make("autocorrect", "the phone feature that automatically changes words you type, often wrongly",
+                 "自動修正・予測変換",
+                 useCases: ["変なメッセージを送ってしまった言い訳をするとき", "スマホの入力について話すとき"],
+                 examples: [
+                    ("Sorry, that was autocorrect – I definitely didn't mean that!", "ごめん、自動修正のせい。絶対そんなつもりじゃないよ！"),
+                    ("Autocorrect keeps changing my name to something weird.", "自動修正がいつも私の名前を変な言葉にしちゃうんだ。")
+                 ], ipa: "/ˈɔːtəʊkəˌrekt/"),
+            make("spam", "unwanted emails or messages, usually advertising",
+                 "迷惑メール・スパム",
+                 useCases: ["メールが届かないときに確認を促すとき", "迷惑メールに困っているとき"],
+                 examples: [
+                    ("Have a look in your spam folder – it might have ended up there.", "迷惑メールフォルダ見てみて。そっちに入ってるかも。"),
+                    ("I get so much spam these days.", "最近迷惑メールがすごく多いんだ。")
+                 ], ipa: "/spæm/"),
+            make("wrong number", "a phone number you have called or written by mistake",
+                 "番号違い・間違い電話",
+                 useCases: ["間違い電話がかかってきたとき", "番号を間違えてかけたとき"],
+                 examples: [
+                    ("Sorry, I think you've got the wrong number.", "すみません、番号をお間違えだと思いますよ。"),
+                    ("Oops, wrong number – sorry to bother you!", "あっ、番号間違えました。失礼しました！")
+                 ], ipa: "/rɒŋ ˈnʌmbə/"),
+            make("in the sale", "being sold at a reduced price during a shop's sale (US: on sale)",
+                 "セールで（安く）",
+                 useCases: ["安く買った物を自慢するとき", "セール品について話すとき"],
+                 examples: [
+                    ("I got this coat in the sale – it was half the price.", "このコート、セールで半額だったんだ。"),
+                    ("Wait until it's in the sale before you buy it.", "セールになるまで買うのは待ちなよ。")
+                 ], ipa: "/ɪn ðə seɪl/"),
+            make("unmute", "to turn the sound back on, especially your microphone in an online call",
+                 "ミュートを解除する",
+                 useCases: ["オンライン会議で発言するとき", "相手に音声オンを促すとき"],
+                 examples: [
+                    ("Can you unmute yourself? We can't hear you.", "ミュート解除してもらえる？聞こえないよ。"),
+                    ("Hang on, let me unmute – right, can you hear me now?", "ちょっと待って、ミュート解除するね。よし、聞こえる？")
+                 ], ipa: "/ʌnˈmjuːt/"),
+            make("run a bath", "to fill a bath with water so you can have one",
+                 "お風呂にお湯をためる",
+                 useCases: ["お風呂の準備をするとき", "疲れた人を気遣うとき"],
+                 examples: [
+                    ("You look exhausted – shall I run you a bath?", "疲れてるみたいだね。お風呂ためようか？"),
+                    ("I'm going to run a bath and have an early night.", "お風呂ためて、今日は早く寝るよ。")
+                 ], ipa: "/rʌn ə bɑːθ/"),
+        ]
+    }
+    private static var britishColloquial278: [Word] {
+        [
+            make("go for a jog", "to go running at a slow, steady pace for exercise",
+                 "ジョギングしに行く",
+                 useCases: ["朝や仕事帰りの運動の話をするとき", "体を動かしたいと言うとき"],
+                 examples: [
+                    ("I usually go for a jog before work.", "仕事の前にだいたいジョギングしに行くんだ。"),
+                    ("Fancy going for a jog in the park later?", "あとで公園にジョギングしに行かない？")
+                 ], ipa: "/ɡəʊ fər ə dʒɒɡ/"),
+            make("a podcast", "an audio programme you can download or stream and listen to any time",
+                 "ポッドキャスト",
+                 useCases: ["通勤中に聞いているものを話すとき", "おすすめの番組を勧めるとき"],
+                 examples: [
+                    ("I listen to podcasts on my way to work.", "通勤中はポッドキャストを聞いてるよ。"),
+                    ("You should check out this podcast – it's really good.", "このポッドキャスト聞いてみなよ、すごくいいから。")
+                 ], ipa: "/ə ˈpɒdkɑːst/"),
+            make("subscribe to", "to pay regularly for a service, or to sign up to receive something",
+                 "〜を定期購読する・（サービスに）登録する",
+                 useCases: ["動画配信や雑誌の契約の話をするとき", "チャンネル登録やメルマガ登録の話"],
+                 examples: [
+                    ("We subscribe to far too many streaming services.", "うち、動画配信サービスに入りすぎなんだよね。"),
+                    ("I've just subscribed to her channel.", "さっき彼女のチャンネル登録したところ。")
+                 ], ipa: "/səbˈskraɪb tuː/"),
+            make("my ex", "the person you used to be in a relationship with or married to",
+                 "元カレ・元カノ・元パートナー",
+                 useCases: ["以前付き合っていた人の話をするとき", "別れた相手と会ったとき"],
+                 examples: [
+                    ("I bumped into my ex at the supermarket – so awkward.", "スーパーで元カノにばったり会っちゃって、気まずかった。"),
+                    ("Are you still friends with your ex?", "元カレとはまだ友達なの？")
+                 ], ipa: "/maɪ eks/"),
+            make("a partner", "the person you live with or are in a long-term relationship with, married or not",
+                 "パートナー（恋人・配偶者）",
+                 useCases: ["結婚しているかどうかに関わらず恋人や配偶者を指すとき", "相手の性別をぼかしたいとき"],
+                 examples: [
+                    ("Feel free to bring your partner to the party.", "パーティーにはパートナーも連れてきてね。"),
+                    ("My partner and I have been together for ten years.", "パートナーとは付き合って10年になるんだ。")
+                 ], ipa: "/ə ˈpɑːtnə/"),
+            make("a hoodie", "a casual top with a hood, usually made of soft cotton",
+                 "パーカー（フード付きトレーナー）",
+                 useCases: ["普段着の話をするとき", "寒いから羽織るものを勧めるとき"],
+                 examples: [
+                    ("I just threw on a hoodie and jeans.", "パーカーとジーンズをささっと着ただけだよ。"),
+                    ("Bring a hoodie – it gets chilly in the evening.", "パーカー持ってきなよ、夜は冷えるから。")
+                 ], ipa: "/ə ˈhʊdi/"),
+            make("go vegan", "to stop eating or using any animal products",
+                 "ヴィーガンになる・完全菜食にする",
+                 useCases: ["食生活を変えた話をするとき", "食事の好みや制限を伝えるとき"],
+                 examples: [
+                    ("She went vegan last year and feels much better.", "彼女は去年ヴィーガンになって、体調がずっといいんだって。"),
+                    ("I could never go vegan – I love cheese too much.", "私には絶対ヴィーガンは無理、チーズが好きすぎて。")
+                 ], ipa: "/ɡəʊ ˈviːɡən/"),
+            make("gluten-free", "not containing gluten, a protein found in wheat and some other grains",
+                 "グルテンフリーの",
+                 useCases: ["レストランで食事制限を伝えるとき", "食品やメニューを選ぶとき"],
+                 examples: [
+                    ("Do you have anything gluten-free on the menu?", "メニューにグルテンフリーのものはありますか？"),
+                    ("I've been trying to eat gluten-free for a while.", "しばらくグルテンフリーの食事を心がけてるんだ。")
+                 ], ipa: "/ˈɡluːtn friː/"),
+            make("an anniversary", "the date each year when you remember something special, like a wedding",
+                 "記念日（結婚記念日など）",
+                 useCases: ["結婚記念日や交際記念日の話をするとき", "会社や出来事の周年を話すとき"],
+                 examples: [
+                    ("It's our wedding anniversary next week.", "来週は結婚記念日なんだ。"),
+                    ("We're going away for the weekend for our anniversary.", "記念日だから週末に旅行に行くんだ。")
+                 ], ipa: "/ən ˌænɪˈvɜːsəri/"),
+            make("earphones", "small speakers you put in or on your ears to listen to music or calls",
+                 "イヤホン",
+                 useCases: ["電車や作業中に音楽を聴くとき", "イヤホンをなくした・忘れたとき"],
+                 examples: [
+                    ("I've left my earphones at home again.", "またイヤホン家に忘れちゃった。"),
+                    ("Sorry, I had my earphones in and didn't hear you.", "ごめん、イヤホンしてて聞こえなかった。")
+                 ], ipa: "/ˈɪəfəʊnz/"),
+            make("dip into your savings", "to use some of the money you have saved",
+                 "貯金に手をつける・貯金を切り崩す",
+                 useCases: ["急な出費があったとき", "大きな買い物の資金の話をするとき"],
+                 examples: [
+                    ("We had to dip into our savings to fix the car.", "車の修理で貯金を切り崩すしかなかったんだ。"),
+                    ("I'd rather not dip into my savings for a holiday.", "旅行のために貯金に手をつけるのはやめておきたいな。")
+                 ], ipa: "/dɪp ˈɪntə jɔː ˈseɪvɪŋz/"),
+            make("decaf", "coffee (or tea) with the caffeine removed",
+                 "デカフェ・カフェインレス",
+                 useCases: ["カフェで注文するとき", "夜にコーヒーを飲みたいとき"],
+                 examples: [
+                    ("Can I get a decaf latte, please?", "デカフェのラテをお願いします。"),
+                    ("I switch to decaf after lunch or I can't sleep.", "お昼以降はデカフェにしてるんだ、じゃないと眠れなくて。")
+                 ], ipa: "/ˈdiːkæf/"),
+            make("a speeding ticket", "a fine you get for driving faster than the speed limit",
+                 "スピード違反の切符",
+                 useCases: ["運転中にスピード違反で捕まったとき", "運転の注意を促すとき"],
+                 examples: [
+                    ("I got a speeding ticket on the way to the airport.", "空港に向かう途中でスピード違反の切符切られちゃった。"),
+                    ("Slow down or you'll get a speeding ticket.", "スピード落として、じゃないと切符切られるよ。")
+                 ], ipa: "/ə ˈspiːdɪŋ ˈtɪkɪt/"),
+            make("be out of the office", "to be away from work, for example on holiday or at a meeting elsewhere",
+                 "不在にしている・会社にいない",
+                 useCases: ["休暇や出張で不在だと伝えるとき", "同僚の所在を聞かれたとき"],
+                 examples: [
+                    ("I'm out of the office until Monday.", "月曜まで不在にしています。"),
+                    ("She's out of the office today – can I take a message?", "彼女は今日不在なんですが、伝言を承りましょうか？")
+                 ], ipa: "/biː aʊt əv ði ˈɒfɪs/"),
+            make("online shopping", "buying things over the internet",
+                 "ネットショッピング・通販",
+                 useCases: ["ネットで買い物した話をするとき", "つい買いすぎてしまう話"],
+                 examples: [
+                    ("I do most of my shopping online these days.", "最近は買い物のほとんどをネットで済ませてるよ。"),
+                    ("Online shopping is dangerous – it's far too easy.", "ネットショッピングは危険だよ、簡単すぎて。")
+                 ], ipa: "/ˌɒnlaɪn ˈʃɒpɪŋ/"),
+        ]
+    }
+    private static var britishColloquial279: [Word] {
+        [
+            make("a sequel", "a film, book or game that continues the story of an earlier one",
+                 "続編",
+                 useCases: ["映画やドラマ、ゲームの続きの話をするとき", "続編の出来を比べるとき"],
+                 examples: [
+                    ("Have you heard they're making a sequel?", "続編が作られるって聞いた？"),
+                    ("The sequel wasn't as good as the first one.", "続編は1作目ほど良くなかったな。")
+                 ], ipa: "/ə ˈsiːkwəl/"),
+            make("chase up", "to contact someone again to remind them to do something or to check on progress",
+                 "（返事や対応を）催促する・確認の連絡をする",
+                 useCases: ["返事が来ないメールや依頼をせっつくとき", "注文や手続きの進み具合を確認するとき"],
+                 examples: [
+                    ("I'll chase them up if I don't hear back by Friday.", "金曜までに返事がなかったら催促しておくね。"),
+                    ("Can you chase up that invoice for me?", "あの請求書の件、確認の連絡してもらえる？")
+                 ], ipa: "/tʃeɪs ʌp/"),
+            make("correct me if I'm wrong", "a polite way of introducing something you think is true but aren't completely sure about",
+                 "間違ってたら言ってほしいんだけど",
+                 useCases: ["自信がないことを控えめに確認するとき", "相手の発言にやんわり異議を唱えるとき"],
+                 examples: [
+                    ("Correct me if I'm wrong, but didn't we agree on Tuesday?", "間違ってたらごめんだけど、火曜日って決めてなかったっけ？"),
+                    ("Correct me if I'm wrong, but you've been here before, right?", "違ったら言ってね、前にもここ来たことあるよね？")
+                 ], ipa: "/kəˈrekt mi ɪf aɪm rɒŋ/"),
+            make("don't quote me on that", "said when you are not completely sure that what you are saying is correct",
+                 "確かじゃないけどね・当てにしないでね",
+                 useCases: ["うろ覚えの情報を伝えるとき", "あとで責任を問われたくないとき"],
+                 examples: [
+                    ("I think it opens at nine, but don't quote me on that.", "9時開店だと思うけど、確かじゃないからね。"),
+                    ("It's about two hours away – don't quote me on that, though.", "2時間くらいかな、当てにしないでほしいけど。")
+                 ], ipa: "/dəʊnt kwəʊt mi ɒn ðæt/"),
+            make("if I remember rightly", "used when you think something is true but your memory might not be perfect",
+                 "私の記憶が正しければ・確か",
+                 useCases: ["昔の出来事を思い出しながら話すとき", "記憶があいまいなことを伝えるとき"],
+                 examples: [
+                    ("If I remember rightly, you two met at uni.", "確か、二人は大学で知り合ったんだよね。"),
+                    ("It was raining that day, if I remember rightly.", "記憶が正しければ、あの日は雨だったよ。")
+                 ], ipa: "/ɪf aɪ rɪˈmembə ˈraɪtli/"),
+            make("be in debt", "to owe money to someone, such as a bank or credit card company",
+                 "借金がある・お金を借りている",
+                 useCases: ["ローンやカードの支払いが残っている話", "お金の悩みを打ち明けるとき"],
+                 examples: [
+                    ("Loads of students are in debt by the time they graduate.", "卒業する頃には借金を抱えてる学生がたくさんいるよ。"),
+                    ("I hate being in debt, so I always pay my card off.", "借金があるのが嫌だから、カードはいつも全額払ってる。")
+                 ], ipa: "/biː ɪn det/"),
+            make("a gift card", "a card loaded with money that can be spent in a particular shop or online",
+                 "ギフトカード・商品券",
+                 useCases: ["プレゼントに迷ったとき", "もらった商品券の使い道を話すとき"],
+                 examples: [
+                    ("I didn't know what to get him, so I got him a gift card.", "何をあげればいいか分からなくて、ギフトカードにしたよ。"),
+                    ("Can I pay with a gift card?", "ギフトカードで払えますか？")
+                 ], ipa: "/ə ɡɪft kɑːd/"),
+            make("free delivery", "when a shop sends your order to you without charging for it",
+                 "送料無料・配送無料",
+                 useCases: ["ネットで買い物するとき", "お得な条件を伝えるとき"],
+                 examples: [
+                    ("You get free delivery if you spend over thirty pounds.", "30ポンド以上買うと送料無料になるよ。"),
+                    ("I only order from there because of the free delivery.", "送料無料だからあそこでしか頼まないんだ。")
+                 ], ipa: "/friː dɪˈlɪvəri/"),
+            make("a charity shop", "a shop that sells donated second-hand goods to raise money for a charity",
+                 "チャリティーショップ（寄付品を売るリサイクル店）",
+                 useCases: ["古着や中古品を安く買った話", "いらなくなった物を寄付するとき"],
+                 examples: [
+                    ("I found this jacket in a charity shop for a fiver.", "このジャケット、チャリティーショップで5ポンドで見つけたんだ。"),
+                    ("I'm taking a bag of old clothes to the charity shop.", "古着をひと袋チャリティーショップに持っていくところ。")
+                 ], ipa: "/ə ˈtʃærəti ʃɒp/"),
+            make("a board game", "a game played by moving pieces on a board, often with dice or cards",
+                 "ボードゲーム",
+                 useCases: ["家で過ごす休日の話", "友達や家族と遊ぶ計画を立てるとき"],
+                 examples: [
+                    ("We stayed in and played board games all evening.", "家にいて一晩中ボードゲームしてたよ。"),
+                    ("Our family gets really competitive over board games.", "うちの家族、ボードゲームになるとめちゃくちゃ本気になるんだ。")
+                 ], ipa: "/ə ˈbɔːd ɡeɪm/"),
+            make("get your nails done", "to have your nails painted or shaped by someone at a salon",
+                 "ネイルをしてもらう",
+                 useCases: ["ネイルサロンに行く予定を話すとき", "誰かのネイルを褒めるとき"],
+                 examples: [
+                    ("I'm getting my nails done before the wedding.", "結婚式の前にネイルしてもらうんだ。"),
+                    ("Oh, you've had your nails done – they look lovely!", "あ、ネイルしたんだ、すごく素敵！")
+                 ], ipa: "/ɡet jɔː neɪlz dʌn/"),
+            make("skincare", "the products and routine you use to look after the skin on your face and body",
+                 "スキンケア",
+                 useCases: ["美容や肌の手入れの話", "おすすめの化粧品を聞くとき"],
+                 examples: [
+                    ("What's your skincare routine? Your skin looks amazing.", "スキンケアどうしてるの？肌がすごくきれい。"),
+                    ("I've started taking skincare more seriously.", "スキンケアをもっとちゃんとするようにしたんだ。")
+                 ], ipa: "/ˈskɪnkeə/"),
+            make("trending", "being talked about or shared by lots of people online right now",
+                 "（SNSなどで）話題になっている・トレンド入りしている",
+                 useCases: ["SNSで話題のニュースや話題を話すとき", "流行っているものを紹介するとき"],
+                 examples: [
+                    ("Have you seen what's trending on Twitter today?", "今日ツイッターで何がトレンドか見た？"),
+                    ("That song's been trending all week.", "あの曲、今週ずっと話題になってるよ。")
+                 ], ipa: "/ˈtrendɪŋ/"),
+            make("say cheese!", "what you say to people just before you take their photo, to make them smile",
+                 "はい、チーズ！",
+                 useCases: ["写真を撮るとき", "集合写真で笑顔を促すとき"],
+                 examples: [
+                    ("Right, everyone squeeze in – say cheese!", "じゃあみんな詰めて、はい、チーズ！"),
+                    ("Say cheese! Oh, you blinked – one more.", "はい、チーズ！あ、目つぶった、もう1枚。")
+                 ], ipa: "/seɪ tʃiːz/"),
+            make("the season finale", "the last episode of a series of a TV show",
+                 "（ドラマの）シーズン最終話",
+                 useCases: ["ドラマの展開について話すとき", "見逃した回の話をするとき"],
+                 examples: [
+                    ("Did you watch the season finale last night?", "昨日のシーズン最終話見た？"),
+                    ("No spoilers – I haven't seen the season finale yet!", "ネタバレしないで、まだ最終話見てないんだから！")
+                 ], ipa: "/ðə ˈsiːzn fɪˈnɑːli/"),
+        ]
+    }
+    private static var britishColloquial284: [Word] {
+        [
+            make("I'll second that", "used to say that you completely agree with what someone has just said or suggested",
+                 "賛成・同感・私もそれに一票",
+                 useCases: ["相手の提案に賛成するとき", "意見に強く同意するとき"],
+                 examples: [
+                    ("\"Let's get pizza tonight.\" \"I'll second that!\"", "「今夜ピザにしよう」「賛成！」"),
+                    ("\"That was the best holiday ever.\" \"I'll second that.\"", "「今までで最高の休暇だったね」「同感」")
+                 ], ipa: "/aɪl ˈsekənd ðæt/"),
+            make("hear, hear!", "(British) used to show that you strongly agree with what someone has said, especially in a speech or toast",
+                 "そうだそうだ！・賛成！",
+                 useCases: ["スピーチや乾杯で賛同するとき", "相手の意見に大きく同意するとき"],
+                 examples: [
+                    ("\"To the happy couple!\" \"Hear, hear!\"", "「新郎新婦に乾杯！」「乾杯！そうだそうだ！」"),
+                    ("\"We should finish early on Fridays.\" \"Hear, hear!\"", "「金曜は早く上がるべきだよ」「賛成！」")
+                 ], ipa: "/ˌhɪə ˈhɪə/"),
+            make("now there's an idea", "used to say that someone's suggestion sounds good and is worth considering",
+                 "それいいね・いい考えだね",
+                 useCases: ["相手の提案に乗り気なとき", "思いがけない良案に反応するとき"],
+                 examples: [
+                    ("\"Why don't we just take the train?\" \"Now there's an idea.\"", "「電車で行けばいいんじゃない？」「それいいね」"),
+                    ("\"We could ask your sister to help.\" \"Now there's an idea!\"", "「お姉さんに手伝ってもらえば？」「いい考えだね！」")
+                 ], ipa: "/naʊ ðeəz ən aɪˈdɪə/"),
+            make("if memory serves", "used to say that you think something is true but you are relying on your memory",
+                 "確か・記憶が正しければ",
+                 useCases: ["うろ覚えの情報を伝えるとき", "昔のことを思い出しながら話すとき"],
+                 examples: [
+                    ("If memory serves, the restaurant was just round the corner.", "確か、レストランは角を曲がったところだったと思う。"),
+                    ("We met in 2015, if memory serves.", "記憶が正しければ、出会ったのは2015年だよ。")
+                 ], ipa: "/ɪf ˈmeməri ˈsɜːvz/"),
+            make("give the game away", "(British) to accidentally reveal a secret or a surprise",
+                 "うっかりバラす・ネタバレする",
+                 useCases: ["秘密やサプライズがバレたとき", "うっかり口を滑らせたとき"],
+                 examples: [
+                    ("Don't smile like that – you'll give the game away!", "そんなにニヤニヤしないで、バレちゃうよ！"),
+                    ("The cake in the fridge gave the game away.", "冷蔵庫のケーキでサプライズがバレちゃった。")
+                 ], ipa: "/ɡɪv ðə ˈɡeɪm əˈweɪ/"),
+            make("what's the harm?", "used to say that doing something probably won't cause any problems, so why not do it",
+                 "別にいいじゃん・何がまずいの？",
+                 useCases: ["気軽に試そうと促すとき", "相手の心配を和らげるとき"],
+                 examples: [
+                    ("Just ask him – what's the harm?", "とりあえず彼に聞いてみなよ、別に損はないでしょ？"),
+                    ("One more biscuit – what's the harm?", "もう1枚クッキー食べよう、別にいいじゃん。")
+                 ], ipa: "/wɒts ðə ˈhɑːm/"),
+            make("like what?", "used to ask someone to give an example of what they mean",
+                 "例えば？・たとえばどんな？",
+                 useCases: ["具体例を求めるとき", "相手の話を詳しく聞きたいとき"],
+                 examples: [
+                    ("\"We should do something fun this weekend.\" \"Like what?\"", "「週末なにか楽しいことしようよ」「例えば？」"),
+                    ("\"There are loads of things to see there.\" \"Like what?\"", "「そこは見どころがたくさんあるよ」「たとえばどんな？」")
+                 ], ipa: "/ˈlaɪk wɒt/"),
+            make("fair's fair", "(British, informal) used to say that something should be done because it is fair to everyone",
+                 "公平にいこう・それが筋だよ",
+                 useCases: ["順番や負担を公平にしたいとき", "相手にも分担を求めるとき"],
+                 examples: [
+                    ("I cooked last night, so fair's fair – you wash up.", "昨日は私が料理したんだから、公平にいこう、今日は洗い物お願い。"),
+                    ("Fair's fair, it's your turn to choose the film.", "公平にね、映画選ぶのは君の番だよ。")
+                 ], ipa: "/ˌfeəz ˈfeə/"),
+            make("no ifs or buts", "(British) used to say that something must happen and you will not accept any excuses",
+                 "言い訳なし・つべこべ言わずに",
+                 useCases: ["言い訳を許さないとき", "決定事項をはっきり伝えるとき"],
+                 examples: [
+                    ("You're going to bed at nine – no ifs or buts.", "9時には寝なさい、言い訳はなしよ。"),
+                    ("The report's due Friday, no ifs or buts.", "レポートは金曜締め切り、例外はなしだよ。")
+                 ], ipa: "/nəʊ ˈɪfs ɔː ˈbʌts/"),
+            make("I told you so", "used, often annoyingly, to remind someone that you warned them about something that has now happened",
+                 "だから言ったでしょ",
+                 useCases: ["忠告が当たったとき", "冗談っぽく相手をからかうとき"],
+                 examples: [
+                    ("It rained? I told you so – you should've brought a brolly.", "雨降った？だから言ったでしょ、傘持っていけばよかったのに。"),
+                    ("I hate to say I told you so, but...", "「だから言ったでしょ」とは言いたくないけど…")
+                 ], ipa: "/aɪ ˈtəʊld juː səʊ/"),
+            make("my goodness", "used to express surprise or shock",
+                 "あらまあ・なんてこと・すごい",
+                 useCases: ["驚いたとき", "感心したとき"],
+                 examples: [
+                    ("My goodness, you've grown so tall!", "あらまあ、ずいぶん背が伸びたね！"),
+                    ("My goodness, look at the queue!", "うわっ、あの行列見て！")
+                 ], ipa: "/maɪ ˈɡʊdnəs/"),
+            make("in your dreams", "(informal) used to say that something someone hopes for will definitely not happen",
+                 "夢でも見てな・ありえないね",
+                 useCases: ["相手の願望を冗談っぽく否定するとき", "ありえないと一蹴するとき"],
+                 examples: [
+                    ("\"I'm going to beat you at tennis.\" \"In your dreams!\"", "「テニスで君に勝つからね」「夢でも見てな！」"),
+                    ("Him, buy a round of drinks? In your dreams.", "あいつがみんなに一杯おごる？ありえないね。")
+                 ], ipa: "/ɪn jɔː ˈdriːmz/"),
+            make("who cares?", "used to say that something is not important and you are not worried about it",
+                 "どうでもいいじゃん・気にしない",
+                 useCases: ["些細なことを気にしないとき", "相手の心配を軽くするとき"],
+                 examples: [
+                    ("So we lost the quiz – who cares? It was fun.", "クイズで負けたけど、どうでもいいよ、楽しかったし。"),
+                    ("\"Your shirt's creased.\" \"Who cares?\"", "「シャツしわになってるよ」「気にしない」")
+                 ], ipa: "/huː ˈkeəz/"),
+            make("we're good", "(informal) used to say that there is no problem or bad feeling between you and someone",
+                 "もう大丈夫・わだかまりはないよ",
+                 useCases: ["謝られて許すとき", "関係に問題がないと伝えるとき"],
+                 examples: [
+                    ("\"Sorry about yesterday.\" \"Don't worry, we're good.\"", "「昨日はごめんね」「気にしないで、もう大丈夫だよ」"),
+                    ("I paid you back, so we're good, right?", "お金返したから、これでおあいこだよね？")
+                 ], ipa: "/wɪə ˈɡʊd/"),
+            make("full stop", "(British) used at the end of a statement to emphasise that it is final and there is nothing more to say",
+                 "以上・それだけ・絶対に",
+                 useCases: ["きっぱり言い切るとき", "議論を終わらせたいとき"],
+                 examples: [
+                    ("I'm not lending him money again, full stop.", "もう彼にお金は貸さない、以上。"),
+                    ("She's the best cook I know, full stop.", "彼女は私の知る中で一番料理が上手、それだけは確か。")
+                 ], ipa: "/ˌfʊl ˈstɒp/"),
+        ]
+    }
+    private static var britishColloquial285: [Word] {
+        [
+            make("money well spent", "used to say that something was worth what you paid for it",
+                 "払った価値がある・いい買い物だった",
+                 useCases: ["買ってよかったと言うとき", "体験や投資に満足したとき"],
+                 examples: [
+                    ("The new mattress was money well spent – I sleep so much better now.", "新しいマットレスは本当にいい買い物だった。ずっとよく眠れるようになったよ。"),
+                    ("Those cooking lessons were money well spent.", "あの料理教室はお金を払った価値があった。")
+                 ], ipa: "/ˈmʌni wel ˈspent/"),
+            make("more trouble than it's worth", "used to say that doing something causes more problems or effort than the benefit you get",
+                 "かえって面倒・割に合わない",
+                 useCases: ["手間に見合わないことを言うとき", "やめておこうと判断するとき"],
+                 examples: [
+                    ("Fixing this old printer is more trouble than it's worth.", "この古いプリンターを直すのは割に合わないよ。"),
+                    ("I tried making my own bread, but it was more trouble than it's worth.", "パンを手作りしてみたけど、かえって面倒だった。")
+                 ], ipa: "/mɔː ˈtrʌbl ðən ɪts ˈwɜːθ/"),
+            make("that's the first I've heard of it", "used to say that you did not know about something until now, often with surprise",
+                 "初耳だよ・そんなの聞いてない",
+                 useCases: ["知らなかった情報に驚くとき", "事前に知らされていなかったとき"],
+                 examples: [
+                    ("\"The meeting's been moved to Monday.\" \"That's the first I've heard of it.\"", "「会議は月曜に変更になったよ」「初耳だよ」"),
+                    ("\"Tom's moving to Spain?\" \"Really? That's the first I've heard of it!\"", "「トムがスペインに引っ越すって？」「本当？そんなの聞いてないよ！」")
+                 ], ipa: "/ðæts ðə ˈfɜːst aɪv ˈhɜːd əv ɪt/"),
+            make("I hadn't thought of that", "used to say that someone has made a good point that you had not considered",
+                 "それは考えてなかった・なるほど",
+                 useCases: ["相手の指摘に気づかされたとき", "新しい視点に感心するとき"],
+                 examples: [
+                    ("\"What if it rains on the day?\" \"Oh, I hadn't thought of that.\"", "「当日雨だったらどうする？」「あ、それは考えてなかった」"),
+                    ("Good point – I hadn't thought of that.", "いい指摘だね、それは思いつかなかった。")
+                 ], ipa: "/aɪ ˈhædnt ˈθɔːt əv ðæt/"),
+            make("mark my words", "used to tell someone to pay attention because you are sure that what you are saying will happen",
+                 "いいかい、見ててごらん・断言するよ",
+                 useCases: ["将来の予想に自信があるとき", "忠告を強調するとき"],
+                 examples: [
+                    ("Mark my words, they'll be married within a year.", "見ててごらん、あの2人は1年以内に結婚するよ。"),
+                    ("He'll regret it, mark my words.", "断言するけど、彼は後悔するよ。")
+                 ], ipa: "/ˈmɑːk maɪ ˈwɜːdz/"),
+            make("go for a wander", "(British, informal) to walk around slowly without a particular plan or destination",
+                 "ぶらぶらする・ぶらっと散歩する",
+                 useCases: ["目的なく散歩するとき", "街を気ままに見て回るとき"],
+                 examples: [
+                    ("Let's go for a wander round the old town after lunch.", "ランチの後、旧市街をぶらぶらしようよ。"),
+                    ("I went for a wander to clear my head.", "頭をすっきりさせるために、ぶらっと散歩してきた。")
+                 ], ipa: "/ɡəʊ fər ə ˈwɒndə/"),
+            make("slowly but surely", "used to say that progress is slow but steady and will reach its goal",
+                 "ゆっくりだけど着実に",
+                 useCases: ["少しずつ進歩していることを言うとき", "焦らず続けていることを伝えるとき"],
+                 examples: [
+                    ("\"How's the new job?\" \"I'm getting the hang of it, slowly but surely.\"", "「新しい仕事どう？」「ゆっくりだけど着実に慣れてきてるよ」"),
+                    ("Slowly but surely, the house is starting to look like a home.", "少しずつだけど、家がちゃんと住まいらしくなってきた。")
+                 ], ipa: "/ˈsləʊli bət ˈʃʊəli/"),
+            make("all the rage", "very popular and fashionable at a particular time",
+                 "大流行している・今すごく人気",
+                 useCases: ["流行っているものを話すとき", "昔の流行を振り返るとき"],
+                 examples: [
+                    ("Padel is all the rage in Spain at the moment.", "スペインでは今パデルが大流行してるよ。"),
+                    ("Those trainers were all the rage when I was at school.", "あのスニーカーは私が学生の頃すごく流行ってた。")
+                 ], ipa: "/ɔːl ðə ˈreɪdʒ/"),
+            make("old-fashioned", "not modern; typical of the past, or holding traditional ideas",
+                 "古風な・時代遅れの・昔ながらの",
+                 useCases: ["物や考え方が古いと言うとき", "昔ながらの良さを言うとき"],
+                 examples: [
+                    ("Call me old-fashioned, but I still prefer writing letters.", "古いと思われるかもしれないけど、今でも手紙を書くほうが好きなんだ。"),
+                    ("It's a lovely old-fashioned pub with a real fire.", "本物の暖炉がある、昔ながらの素敵なパブだよ。")
+                 ], ipa: "/ˌəʊld ˈfæʃnd/"),
+            make("I couldn't resist", "used to say that you did something because you wanted it so much that you could not stop yourself",
+                 "つい我慢できなくて・誘惑に負けちゃった",
+                 useCases: ["つい買ったり食べたりしたとき", "誘惑に負けたことを言い訳するとき"],
+                 examples: [
+                    ("I wasn't going to buy anything, but it was half price – I couldn't resist.", "何も買うつもりなかったけど、半額だったからつい買っちゃった。"),
+                    ("Sorry, I ate the last slice of cake. I couldn't resist!", "ごめん、最後のケーキ食べちゃった。我慢できなくて！")
+                 ], ipa: "/aɪ ˈkʊdnt rɪˈzɪst/"),
+            make("have a weakness for", "to like something very much, so that you find it hard to say no to it",
+                 "〜に目がない・〜に弱い",
+                 useCases: ["大好物や弱点を話すとき", "つい手が出てしまうものを言うとき"],
+                 examples: [
+                    ("I have a real weakness for chocolate.", "チョコレートには本当に目がないんだ。"),
+                    ("She's got a weakness for old cars.", "彼女はクラシックカーに弱いんだよ。")
+                 ], ipa: "/hæv ə ˈwiːknəs fɔː/"),
+            make("it's had its day", "used to say that something is no longer useful, popular or successful",
+                 "もう役目を終えた・時代は終わった",
+                 useCases: ["古くなった物を処分するとき", "流行が過ぎたものを話すとき"],
+                 examples: [
+                    ("This sofa has had its day – let's get a new one.", "このソファはもう役目を終えたね。新しいのを買おう。"),
+                    ("A lot of people think the DVD has had its day.", "DVDの時代はもう終わったと思っている人が多い。")
+                 ], ipa: "/ɪts ˈhæd ɪts ˈdeɪ/"),
+            make("past its best", "(British) no longer as good, fresh or attractive as it was before",
+                 "盛りを過ぎた・ちょっと古くなった",
+                 useCases: ["食べ物の鮮度が落ちたとき", "物の状態が悪くなったとき"],
+                 examples: [
+                    ("This milk is a bit past its best – I'd throw it away.", "この牛乳ちょっと古くなってるね。捨てたほうがいいよ。"),
+                    ("The hotel was nice, but it's a bit past its best now.", "そのホテルは良かったけど、今はちょっと盛りを過ぎた感じ。")
+                 ], ipa: "/ˈpɑːst ɪts ˈbest/"),
+            make("not my strong suit", "used to say, often humorously, that you are not good at something",
+                 "得意じゃない・苦手分野",
+                 useCases: ["自分の苦手なことを認めるとき", "謙遜しながら断るとき"],
+                 examples: [
+                    ("Don't ask me to sing – it's not my strong suit.", "歌は頼まないで、得意じゃないんだ。"),
+                    ("Patience has never been my strong suit.", "我慢強さは昔から私の苦手分野なんだ。")
+                 ], ipa: "/nɒt maɪ ˈstrɒŋ ˈsuːt/"),
+            make("can't get enough of", "to like something so much that you want more and more of it",
+                 "〜にハマってる・いくらでも欲しい",
+                 useCases: ["夢中になっているものを話すとき", "大好きでやめられないものを言うとき"],
+                 examples: [
+                    ("I can't get enough of this series – I've watched three episodes tonight.", "このドラマにハマっちゃって、今夜もう3話見たよ。"),
+                    ("The kids can't get enough of the beach.", "子どもたちはビーチが大好きで、いくらいても飽きないんだ。")
+                 ], ipa: "/kɑːnt ɡet ɪˈnʌf əv/"),
+        ]
+    }
+    private static var britishColloquial286: [Word] {
+        [
+            make("do the honours", "(informal) to perform a small task or duty for the group, such as pouring drinks, cutting a cake or making a speech",
+                 "（みんなの代表で）役目を務める・お願いする",
+                 useCases: ["ケーキを切る・飲み物を注ぐ役を頼むとき", "乾杯や挨拶を任せるとき"],
+                 examples: [
+                    ("It's your birthday, so you can do the honours and cut the cake.", "君の誕生日だから、ケーキを切る役をお願いね。"),
+                    ("\"Shall I do the honours?\" he said, picking up the wine.", "「僕が注ごうか？」と彼はワインを手に取って言った。")
+                 ], ipa: "/duː ði ˈɒnəz/"),
+            make("it's all right for some", "(British, informal) used, often jokingly, to say that someone is lucky to have something you do not",
+                 "いいご身分だね・うらやましいなあ",
+                 useCases: ["人の幸運を冗談っぽくうらやむとき", "休みや贅沢を聞いたとき"],
+                 examples: [
+                    ("\"I'm off to Greece for two weeks.\" \"It's all right for some!\"", "「2週間ギリシャに行ってくるよ」「いいご身分だね！」"),
+                    ("Finishing at three on a Friday? It's all right for some.", "金曜は3時上がり？うらやましいなあ。")
+                 ], ipa: "/ɪts ˈɔːl ˈraɪt fə sʌm/"),
+            make("that settles it", "used to say that something has helped you make a final decision",
+                 "それで決まりだ・もう迷わない",
+                 useCases: ["決め手があって決断したとき", "迷いが吹っ切れたとき"],
+                 examples: [
+                    ("It's raining again? Right, that settles it – we're staying in.", "また雨？よし、これで決まり。今日は家にいよう。"),
+                    ("They've got a garden as well? That settles it, I'm taking the flat.", "庭もあるの？それで決まりだ、あの部屋にするよ。")
+                 ], ipa: "/ðæt ˈsetlz ɪt/"),
+            make("it's not up to me", "used to say that you do not have the power or right to decide something",
+                 "私が決めることじゃない・私には決められない",
+                 useCases: ["決定権がないことを伝えるとき", "判断を他の人に委ねるとき"],
+                 examples: [
+                    ("I'd love to give you the day off, but it's not up to me.", "休みをあげたいけど、私が決めることじゃないんだ。"),
+                    ("Ask your mum – it's not up to me.", "お母さんに聞いて。私には決められないよ。")
+                 ], ipa: "/ɪts ˈnɒt ʌp tə ˈmiː/"),
+            make("I could have sworn", "used to say that you were sure something was true, although it now seems you were wrong",
+                 "確かに〜だと思ったんだけど",
+                 useCases: ["記憶と違って驚いたとき", "物をなくして首をかしげるとき"],
+                 examples: [
+                    ("I could have sworn I left my keys on the table.", "鍵は絶対テーブルに置いたと思ったんだけど。"),
+                    ("Really? I could have sworn the shop was open on Sundays.", "本当？確か日曜も開いてると思ってたのに。")
+                 ], ipa: "/aɪ kəd əv ˈswɔːn/"),
+            make("it's not on", "(British, informal) used to say that someone's behaviour is not acceptable",
+                 "それはないよ・ありえない",
+                 useCases: ["マナー違反に不満を言うとき", "許せない行動を指摘するとき"],
+                 examples: [
+                    ("Playing music that loud at 2 a.m.? It's just not on.", "夜中の2時にあんな大音量で音楽？ありえないよ。"),
+                    ("Cancelling at the last minute again – that's not on.", "またドタキャン？それはないでしょ。")
+                 ], ipa: "/ɪts ˈnɒt ˈɒn/"),
+            make("it's not happening", "(informal) used to say firmly that something will not happen or that you will not allow it",
+                 "それは無理・ありえないから",
+                 useCases: ["きっぱり断るとき", "計画が実現しないと伝えるとき"],
+                 examples: [
+                    ("You want to borrow my car for a week? Sorry, it's not happening.", "1週間車を貸してほしい？ごめん、それは無理。"),
+                    ("We were hoping to go camping, but with this weather it's not happening.", "キャンプに行きたかったけど、この天気じゃ無理だね。")
+                 ], ipa: "/ɪts ˈnɒt ˈhæpənɪŋ/"),
+            make("I'll take it from here", "used to say that you will now take over and deal with something yourself",
+                 "ここからは私がやるよ・あとは任せて",
+                 useCases: ["作業を引き継ぐとき", "手伝ってくれた人に礼を言って交代するとき"],
+                 examples: [
+                    ("Thanks for setting everything up – I'll take it from here.", "準備してくれてありがとう。ここからは私がやるね。"),
+                    ("Leave the paperwork with me, I'll take it from here.", "書類は置いといて、あとは任せて。")
+                 ], ipa: "/aɪl ˈteɪk ɪt frəm ˈhɪə/"),
+            make("fair game", "someone or something that it is acceptable to criticise, joke about or use",
+                 "格好の的・対象にしても構わないもの",
+                 useCases: ["からかい・批判の対象になると言うとき", "自由に取っていいものを指すとき"],
+                 examples: [
+                    ("Once you're famous, your private life is fair game for the papers.", "有名になったら、私生活もマスコミの格好の的だよ。"),
+                    ("Anything left in the fridge after Friday is fair game.", "金曜を過ぎて冷蔵庫に残ってるものは、誰が食べてもいいよ。")
+                 ], ipa: "/ˌfeə ˈɡeɪm/"),
+            make("a stopgap", "something you use for a short time until you can get something better",
+                 "一時しのぎ・つなぎ",
+                 useCases: ["その場しのぎの対応を言うとき", "仮の手段を説明するとき"],
+                 examples: [
+                    ("This old laptop is just a stopgap until I can afford a new one.", "この古いノートパソコンは、新しいのが買えるまでのつなぎだよ。"),
+                    ("The bar job was only meant to be a stopgap.", "バーの仕事はただの一時しのぎのつもりだったんだ。")
+                 ], ipa: "/ə ˈstɒpɡæp/"),
+            make("it's a bit late for that", "used to say that it is too late to do or worry about something now",
+                 "今さら遅いよ・もう手遅れだよ",
+                 useCases: ["後悔や今さらの提案に返すとき", "手遅れであることを伝えるとき"],
+                 examples: [
+                    ("\"Maybe we should have booked a table.\" \"It's a bit late for that now!\"", "「予約しておけばよかったかな」「今さら遅いよ！」"),
+                    ("You want to revise the night before the exam? It's a bit late for that.", "試験前夜に復習？もう手遅れだよ。")
+                 ], ipa: "/ɪts ə bɪt ˈleɪt fə ðæt/"),
+            make("a cheap shot", "an unfair or unkind remark, especially one that attacks someone's weak point",
+                 "卑怯な一言・言っちゃいけないこと",
+                 useCases: ["不公平な批判をたしなめるとき", "相手の弱点を突く発言を指摘するとき"],
+                 examples: [
+                    ("Bringing up his divorce in the meeting was a cheap shot.", "会議で彼の離婚を持ち出すなんて卑怯だよ。"),
+                    ("Sorry, that was a cheap shot. I didn't mean it.", "ごめん、今のは言っちゃいけなかった。本気じゃないよ。")
+                 ], ipa: "/ə ˌtʃiːp ˈʃɒt/"),
+            make("I'm not having it", "(British, informal) used to say firmly that you will not accept or allow something",
+                 "そんなの許さない・認めないよ",
+                 useCases: ["理不尽なことを拒否するとき", "強く反対するとき"],
+                 examples: [
+                    ("They want us to work every Saturday? I'm not having it.", "毎週土曜も働けって？そんなの認めないよ。"),
+                    ("My mum tried to pay for dinner, but I wasn't having it.", "母が夕食代を払おうとしたけど、私が譲らなかった。")
+                 ], ipa: "/aɪm ˈnɒt ˈhævɪŋ ɪt/"),
+            make("there's a first time for everything", "used when something happens that has never happened before, often humorously",
+                 "何事にも初めてはある",
+                 useCases: ["初めての経験をするとき", "珍しいことが起きたのを冗談っぽく言うとき"],
+                 examples: [
+                    ("You've never been skiing? Well, there's a first time for everything.", "スキーしたことないの？まあ、何事にも初めてはあるよ。"),
+                    ("Tom arrived early? There's a first time for everything!", "トムが早く来た？何事にも初めてはあるもんだね！")
+                 ], ipa: "/ðeəz ə ˈfɜːst ˈtaɪm fər ˈevriθɪŋ/"),
+            make("it's been a long time coming", "used to say that something has finally happened after people expected or wanted it for a long time",
+                 "やっとだね・待ちに待った",
+                 useCases: ["待望のことが実現したとき", "当然の結果がようやく出たとき"],
+                 examples: [
+                    ("Congratulations on the promotion – it's been a long time coming!", "昇進おめでとう！やっとだね！"),
+                    ("The new station finally opened. It's been a long time coming.", "新しい駅がついに開業した。待ちに待ったよ。")
+                 ], ipa: "/ɪts bɪn ə ˈlɒŋ taɪm ˈkʌmɪŋ/"),
+        ]
+    }
+    private static var britishColloquial287: [Word] {
+        [
+            make("to top it all off", "(informal) used to introduce the last and often worst thing in a series of bad events",
+                 "おまけに・挙げ句の果てに",
+                 useCases: ["悪いことが重なった話をするとき", "最後のとどめを強調するとき"],
+                 examples: [
+                    ("I missed the bus, spilt my coffee, and to top it all off, it started raining.", "バスに乗り遅れ、コーヒーをこぼし、おまけに雨まで降ってきた。"),
+                    ("The hotel was dirty, the food was cold, and to top it all off, they lost our booking.", "ホテルは汚いし料理は冷めてるし、挙げ句の果てに予約までなくされた。")
+                 ], ipa: "/tə ˈtɒp ɪt ˈɔːl ˈɒf/"),
+            make("knowing my luck", "(informal) used to say that you expect something bad to happen because you are often unlucky",
+                 "どうせ私のことだから・私の運じゃ",
+                 useCases: ["悪い予感を冗談っぽく言うとき", "自分の運の悪さを嘆くとき"],
+                 examples: [
+                    ("Knowing my luck, it'll rain the day of the barbecue.", "どうせ私のことだから、バーベキューの日は雨だよ。"),
+                    ("I'll enter the draw, but knowing my luck I won't win anything.", "抽選に応募するけど、私の運じゃ何も当たらないだろうね。")
+                 ], ipa: "/ˈnəʊɪŋ maɪ ˈlʌk/"),
+            make("this time next week", "at the same time one week from now; often used when looking forward to something",
+                 "来週の今ごろは",
+                 useCases: ["楽しみな予定を話すとき", "締め切りや変化を前にしたとき"],
+                 examples: [
+                    ("This time next week, we'll be lying on a beach in Spain.", "来週の今ごろはスペインのビーチで寝そべってるよ。"),
+                    ("This time next week it'll all be over, so don't worry.", "来週の今ごろには全部終わってるから、心配しないで。")
+                 ], ipa: "/ðɪs ˈtaɪm nekst ˈwiːk/"),
+            make("that's better", "used to say that something has improved, or to comfort someone who has stopped being upset",
+                 "そのほうがいい・よしよし、それでいい",
+                 useCases: ["状況が改善したとき", "相手が落ち着いたり笑顔になったとき"],
+                 examples: [
+                    ("I've turned the heating up. That's better, isn't it?", "暖房を強くしたよ。このほうがいいでしょ？"),
+                    ("Come on, give us a smile. That's better!", "ほら、笑って。そうそう、それでいい！")
+                 ], ipa: "/ðæts ˈbetə/"),
+            make("let's hope so", "used to say that you hope something will happen or is true",
+                 "そうだといいね・そう願おう",
+                 useCases: ["相手の楽観的な予想に応じるとき", "良い結果を願うとき"],
+                 examples: [
+                    ("\"The trains should be running again tomorrow.\" \"Let's hope so.\"", "「明日には電車が復旧するはずだよ」「そうだといいね」"),
+                    ("\"Do you think she'll say yes?\" \"Let's hope so!\"", "「彼女OKしてくれると思う？」「そう願おう！」")
+                 ], ipa: "/lets ˈhəʊp səʊ/"),
+            make("you could've fooled me", "(informal) used to say that you do not believe what someone has just said, because it does not seem true",
+                 "とてもそうは見えなかったけど・よく言うよ",
+                 useCases: ["相手の発言が実際と違うと感じたとき", "軽く皮肉を言うとき"],
+                 examples: [
+                    ("\"I'm not tired at all.\" \"You could've fooled me – you've been yawning all evening.\"", "「全然疲れてないよ」「とてもそうは見えないけど。一晩中あくびしてるじゃん」"),
+                    ("\"He's usually really organised.\" \"Could've fooled me!\"", "「彼、普段はすごくきっちりしてるんだよ」「よく言うよ！」")
+                 ], ipa: "/juː ˈkʊdəv ˈfuːld miː/"),
+            make("take the scenic route", "(humorous) to go a longer way than necessary, either to enjoy the view or because you got lost",
+                 "遠回りする・寄り道する（冗談で道に迷ったときにも）",
+                 useCases: ["景色のいい道を選ぶとき", "道に迷ったのをごまかすとき"],
+                 examples: [
+                    ("We're not lost – we're just taking the scenic route.", "迷ってないよ、ちょっと遠回りしてるだけ。"),
+                    ("Let's take the scenic route along the coast on the way home.", "帰りは海沿いの景色のいい道を通って帰ろう。")
+                 ], ipa: "/teɪk ðə ˈsiːnɪk ˈruːt/"),
+            make("don't mind me", "used to tell people to carry on with what they are doing and not to worry about you",
+                 "私のことは気にしないで・お構いなく",
+                 useCases: ["人の邪魔をしてしまったとき", "そっと通り抜けるとき"],
+                 examples: [
+                    ("Don't mind me – I'm just grabbing my charger.", "気にしないで、充電器を取りに来ただけだから。"),
+                    ("Carry on, don't mind me. I'll wait over here.", "続けて、お構いなく。こっちで待ってるね。")
+                 ], ipa: "/ˈdəʊnt ˈmaɪnd miː/"),
+            make("in what way?", "used to ask someone to explain more clearly what they mean",
+                 "どういう意味で？・どんなふうに？",
+                 useCases: ["相手の発言の具体的な内容を聞くとき", "曖昧な批判や意見を確認するとき"],
+                 examples: [
+                    ("\"The new place is different.\" \"In what way?\"", "「新しい店、なんか違うね」「どんなふうに？」"),
+                    ("\"I think he's changed.\" \"Really? In what way?\"", "「彼、変わったと思う」「本当？どういうところが？」")
+                 ], ipa: "/ɪn ˈwɒt ˈweɪ/"),
+            make("what are you after?", "(British, informal) used to ask someone what they want or are looking for, sometimes suspecting a favour",
+                 "何が欲しいの？・何が目的？・何をお探しですか",
+                 useCases: ["店で客の希望を聞くとき", "急に優しくされて下心を疑うとき"],
+                 examples: [
+                    ("You've made me breakfast? Okay, what are you after?", "朝ごはん作ってくれたの？で、何が目当て？"),
+                    ("\"Can I help you?\" \"Yes, I'm after a birthday present for my sister.\"", "「何かお探しですか？」「ええ、妹への誕生日プレゼントを探してて」")
+                 ], ipa: "/ˈwɒt ə juː ˈɑːftə/"),
+            make("I'll take that as a yes", "(informal) used to say that you understand someone's silence or reaction to mean they agree",
+                 "じゃあ「イエス」ってことね",
+                 useCases: ["相手が黙っていたり、うなずいたとき", "冗談っぽく同意を取り付けるとき"],
+                 examples: [
+                    ("\"Fancy another drink?\" … \"I'll take that smile as a yes.\"", "「もう一杯どう？」…「その笑顔はイエスってことね」"),
+                    ("No objections? Right, I'll take that as a yes.", "反対なし？よし、賛成ってことにするね。")
+                 ], ipa: "/aɪl ˈteɪk ðæt əz ə ˈjes/"),
+            make("you're not the only one", "used to tell someone that other people feel or experience the same thing",
+                 "あなただけじゃないよ・私もだよ",
+                 useCases: ["相手の悩みに共感するとき", "同じ気持ちだと伝えるとき"],
+                 examples: [
+                    ("\"I found that meeting so confusing.\" \"You're not the only one.\"", "「あの会議、すごく分かりにくかった」「あなただけじゃないよ」"),
+                    ("If you're nervous about the exam, you're not the only one.", "試験が不安なのは君だけじゃないよ。")
+                 ], ipa: "/jɔː ˈnɒt ði ˈəʊnli wʌn/"),
+            make("who'd have thought", "used to express surprise that something has happened or is true",
+                 "誰が想像しただろう・まさか〜とはね",
+                 useCases: ["意外な展開に驚いたとき", "昔と今を比べて感慨深いとき"],
+                 examples: [
+                    ("Who'd have thought we'd still be friends after twenty years?", "20年経ってもまだ友達だなんて、誰が想像した？"),
+                    ("Jack's running a marathon? Who'd have thought it!", "ジャックがマラソン？まさかね！")
+                 ], ipa: "/ˈhuːd əv ˈθɔːt/"),
+            make("life's too short", "used to say that you should not waste time worrying about unimportant things or doing things you do not enjoy",
+                 "人生は短いんだから・気にしてたらきりがない",
+                 useCases: ["小さなことを気にしないよう励ますとき", "やりたいことをやろうと背中を押すとき"],
+                 examples: [
+                    ("Just let it go – life's too short to stay angry.", "もう水に流しなよ。怒ってるには人生は短すぎるよ。"),
+                    ("Life's too short to drink bad coffee.", "まずいコーヒーを飲んでる暇はないよ、人生は短いんだから。")
+                 ], ipa: "/ˈlaɪfs tuː ˈʃɔːt/"),
+            make("no such luck", "(informal) used to say that something good you hoped for did not happen",
+                 "そううまくはいかなかった・残念ながら",
+                 useCases: ["期待が外れたことを伝えるとき", "「〜だった？」と聞かれて否定するとき"],
+                 examples: [
+                    ("I was hoping the meeting would be cancelled, but no such luck.", "会議が中止になればと思ってたけど、そううまくはいかなかった。"),
+                    ("\"Did you get the day off?\" \"No such luck.\"", "「休み取れた？」「残念ながら」")
+                 ], ipa: "/nəʊ ˈsʌtʃ ˈlʌk/"),
+        ]
+    }
+    private static var britishColloquial288: [Word] {
+        [
+            make("a quiet night in", "an evening spent relaxing at home rather than going out",
+                 "家でのんびり過ごす夜",
+                 useCases: ["週末の過ごし方を話すとき", "誘いを断って家にいたいとき"],
+                 examples: [
+                    ("I'm shattered, so I'm just having a quiet night in tonight.", "くたくただから、今夜は家でのんびりするよ。"),
+                    ("After a busy week, a quiet night in with a film sounds perfect.", "忙しい一週間の後は、家で映画を観てのんびりするのが最高だね。")
+                 ], ipa: "/ə ˈkwaɪət ˈnaɪt ˈɪn/"),
+            make("on second thoughts", "used to say that you have changed your mind about something you have just said or decided",
+                 "やっぱり・考え直したら",
+                 useCases: ["注文や予定をその場で変えるとき", "言ったことを撤回するとき"],
+                 examples: [
+                    ("I'll have the fish. Actually, on second thoughts, I'll go for the pasta.", "魚にします。あ、やっぱりパスタにします。"),
+                    ("On second thoughts, let's leave it until tomorrow.", "考え直したけど、明日にしよう。")
+                 ], ipa: "/ɒn ˈsekənd ˈθɔːts/"),
+            make("get a round in", "(informal) to buy drinks for everyone in your group at a pub or bar",
+                 "（パブで）みんなの分の飲み物をおごる",
+                 useCases: ["パブで飲み物を買うとき", "順番におごる文化の話をするとき"],
+                 examples: [
+                    ("Sit down, I'll get a round in.", "座ってて、みんなの分買ってくるよ。"),
+                    ("It's about time you got a round in – you've been drinking on us all night!", "そろそろ君がおごる番だよ。一晩中おごられっぱなしじゃないか！")
+                 ], ipa: "/ɡet ə ˈraʊnd ˈɪn/"),
+            make("ask for a refund", "to request that a shop or company gives you your money back",
+                 "返金を求める",
+                 useCases: ["買い物で不良品があったとき", "サービスに不満があるとき"],
+                 examples: [
+                    ("The headphones stopped working after a day, so I asked for a refund.", "ヘッドホンが一日で壊れたから、返金をお願いしたよ。"),
+                    ("If the flight's cancelled, you can ask for a full refund.", "フライトが欠航なら、全額返金を求められるよ。")
+                 ], ipa: "/ɑːsk fər ə ˈriːfʌnd/"),
+            make("keep the receipt", "to hold on to the paper showing you paid for something, in case you need to return it",
+                 "レシートを取っておく",
+                 useCases: ["プレゼントや服を買うとき", "返品の可能性があるとき"],
+                 examples: [
+                    ("Keep the receipt in case it doesn't fit.", "サイズが合わないといけないから、レシートは取っておいてね。"),
+                    ("I didn't keep the receipt, so they wouldn't take it back.", "レシートを取っておかなかったから、返品してもらえなかった。")
+                 ], ipa: "/kiːp ðə rɪˈsiːt/"),
+            make("best before", "the date printed on food showing when it is best to eat it by",
+                 "賞味期限（〜までにお召し上がりください）",
+                 useCases: ["食品の期限を確認するとき", "冷蔵庫の中身を整理するとき"],
+                 examples: [
+                    ("This yoghurt's best before yesterday – do you think it's still OK?", "このヨーグルト、賞味期限昨日だけど、まだ大丈夫かな？"),
+                    ("Check the best before date before you buy it.", "買う前に賞味期限を確認してね。")
+                 ], ipa: "/ˈbest bɪˈfɔː/"),
+            make("walk it", "(informal) to go somewhere on foot instead of taking transport",
+                 "歩いて行く",
+                 useCases: ["タクシーやバスを使うか決めるとき", "距離が近いと伝えるとき"],
+                 examples: [
+                    ("It's only ten minutes – we can walk it.", "10分くらいだから歩いて行けるよ。"),
+                    ("The buses weren't running, so we had to walk it.", "バスが動いてなかったから歩くしかなかった。")
+                 ], ipa: "/ˈwɔːk ɪt/"),
+            make("work a treat", "(informal) to work very well or have exactly the effect you wanted",
+                 "効果てきめんだ・ばっちりうまくいく",
+                 useCases: ["方法や道具がうまくいったとき", "おすすめを紹介するとき"],
+                 examples: [
+                    ("I tried that trick for the hiccups and it worked a treat.", "しゃっくりのあの裏技を試したら、効果てきめんだったよ。"),
+                    ("A bit of vinegar on the window works a treat.", "窓にちょっと酢をつけると、すごくきれいになるよ。")
+                 ], ipa: "/wɜːk ə ˈtriːt/"),
+            make("like a dream", "(informal) very well, smoothly or easily",
+                 "夢のように順調に・スムーズに",
+                 useCases: ["車や機械の調子がいいとき", "計画が順調に進んだとき"],
+                 examples: [
+                    ("The car's running like a dream since it was serviced.", "点検してから、車がすごく快調だよ。"),
+                    ("The whole wedding went like a dream.", "結婚式は最初から最後まで完璧にうまくいった。")
+                 ], ipa: "/laɪk ə ˈdriːm/"),
+            make("text me when you get home", "used when saying goodbye to ask someone to let you know they have arrived home safely",
+                 "家に着いたら連絡してね",
+                 useCases: ["夜に友達と別れるとき", "相手の帰り道が心配なとき"],
+                 examples: [
+                    ("Night, then! Text me when you get home.", "じゃあおやすみ！家に着いたら連絡してね。"),
+                    ("It's really late – text me when you get home, OK?", "もうだいぶ遅いから、着いたらメッセージしてね。")
+                 ], ipa: "/ˈtekst miː wen juː ɡet ˈhəʊm/"),
+            make("until then", "up to the time that has just been mentioned; often used when saying goodbye before a planned meeting",
+                 "それまで（は）・じゃあその時に",
+                 useCases: ["次に会う約束をして別れるとき", "ある時点までの予定を話すとき"],
+                 examples: [
+                    ("See you on Friday, then. Until then, take care!", "じゃあ金曜日に。それまで元気でね！"),
+                    ("The shop opens at ten, so we'll have a coffee until then.", "店は10時開店だから、それまでコーヒーでも飲もう。")
+                 ], ipa: "/ənˈtɪl ˈðen/"),
+            make("push something back", "to change a meeting or event to a later time or date",
+                 "（予定を）後ろにずらす・延期する",
+                 useCases: ["予定の時間を遅らせるとき", "締め切りを延ばしてもらうとき"],
+                 examples: [
+                    ("Can we push the meeting back to three?", "会議を3時にずらせる？"),
+                    ("The launch has been pushed back to next month.", "発売は来月に延期になった。")
+                 ], ipa: "/pʊʃ ˈsʌmθɪŋ ˈbæk/"),
+            make("bring something forward", "to change a meeting or event to an earlier time or date",
+                 "（予定を）前倒しにする・早める",
+                 useCases: ["予定を早めたいとき", "スケジュール調整をするとき"],
+                 examples: [
+                    ("Could we bring dinner forward to seven? I've got an early start.", "夕食を7時に早められる？明日朝早いんだ。"),
+                    ("They've brought the deadline forward by a week.", "締め切りが一週間前倒しになった。")
+                 ], ipa: "/brɪŋ ˈsʌmθɪŋ ˈfɔːwəd/"),
+            make("catch the sun", "(informal) to get slightly brown or red skin from being outside in the sun",
+                 "日に焼ける",
+                 useCases: ["外で過ごした後の肌について話すとき", "旅行帰りの人に声をかけるとき"],
+                 examples: [
+                    ("You've caught the sun! Have you been away?", "日焼けしたね！どこか行ってたの？"),
+                    ("I only sat in the garden for an hour, but I caught the sun on my neck.", "庭に1時間座ってただけなのに、首が日焼けしちゃった。")
+                 ], ipa: "/kætʃ ðə ˈsʌn/"),
+            make("a close call", "a situation in which something bad very nearly happened but was avoided",
+                 "危機一髪・ギリギリセーフ",
+                 useCases: ["事故や失敗をぎりぎり避けたとき", "間に合った・助かった話をするとき"],
+                 examples: [
+                    ("That cyclist nearly hit me – that was a close call!", "あの自転車にぶつかられるところだった、危機一髪！"),
+                    ("We made the train with a minute to spare. Close call!", "電車に1分前に間に合った。ギリギリセーフ！")
+                 ], ipa: "/ə ˈkləʊs ˈkɔːl/"),
+        ]
+    }
+    private static var britishColloquial289: [Word] {
+        [
+            make("a scorcher", "(informal) a very hot, sunny day",
+                 "猛烈に暑い日・かんかん照りの日",
+                 useCases: ["暑い日の天気の話をするとき", "週末の天気予報を話すとき"],
+                 examples: [
+                    ("It's going to be a scorcher tomorrow – don't forget your sun cream.", "明日はめちゃくちゃ暑くなるって。日焼け止め忘れないでね。"),
+                    ("What a scorcher! Shall we eat outside?", "すごく暑い日だね！外で食べようか？")
+                 ], ipa: "/ə ˈskɔːtʃə/"),
+            make("a mad rush", "(informal) a situation where people have to hurry a lot to get something done in time",
+                 "大慌て・てんやわんや",
+                 useCases: ["朝の準備や締め切り前の慌ただしさを話すとき", "混雑した状況を説明するとき"],
+                 examples: [
+                    ("It was a mad rush to get the kids ready for school this morning.", "今朝は子どもたちを学校に送り出すのに大慌てだったよ。"),
+                    ("There's always a mad rush before Christmas.", "クリスマス前はいつもてんやわんやだよね。")
+                 ], ipa: "/ə ˈmæd ˈrʌʃ/"),
+            make("a bit out of the way", "slightly far from the main places or difficult to get to",
+                 "ちょっと不便な場所にある・少し外れたところにある",
+                 useCases: ["店や家の場所を説明するとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("The restaurant's a bit out of the way, but the food's worth it.", "そのレストランはちょっと不便な場所だけど、料理は行く価値あるよ。"),
+                    ("Sorry it's a bit out of the way – I'll send you the directions.", "ちょっと分かりにくい場所でごめんね。道順を送るよ。")
+                 ], ipa: "/ə ˈbɪt ˈaʊt əv ðə ˈweɪ/"),
+            make("it's clouding over", "the sky is becoming covered with clouds",
+                 "曇ってきた",
+                 useCases: ["天気が変わってきたとき", "外出や洗濯物の判断をするとき"],
+                 examples: [
+                    ("It's clouding over – we'd better bring the washing in.", "曇ってきたね。洗濯物を取り込んだ方がいいよ。"),
+                    ("It was sunny this morning, but it's clouding over now.", "朝は晴れてたけど、今は曇ってきたね。")
+                 ], ipa: "/ɪts ˈklaʊdɪŋ ˈəʊvə/"),
+            make("the clocks go back", "when the time is changed back by one hour at the end of summer time (the clocks go forward in spring)",
+                 "時計を1時間戻す（夏時間が終わる）",
+                 useCases: ["夏時間・冬時間の切り替えを話すとき", "日が短くなる話をするとき"],
+                 examples: [
+                    ("The clocks go back this weekend, so we get an extra hour in bed.", "今週末で時計が1時間戻るから、1時間多く寝られるね。"),
+                    ("It gets dark so early once the clocks go back.", "時計が戻ると、暗くなるのがすごく早いよね。")
+                 ], ipa: "/ðə ˈklɒks ɡəʊ ˈbæk/"),
+            make("the town centre", "the main area of a town where most shops, cafés and businesses are",
+                 "町の中心部・繁華街",
+                 useCases: ["買い物や待ち合わせの場所を話すとき", "道を聞かれたとき"],
+                 examples: [
+                    ("I'm heading into the town centre – do you need anything?", "町の中心部に行くけど、何か要るものある？"),
+                    ("Let's meet in the town centre, outside the station.", "中心街の駅前で待ち合わせしよう。")
+                 ], ipa: "/ðə ˈtaʊn ˈsentə/"),
+            make("fully charged", "(of a phone, battery, etc.) having as much power as possible",
+                 "フル充電されている",
+                 useCases: ["スマホやPCのバッテリーの話をするとき", "出かける前の準備を話すとき"],
+                 examples: [
+                    ("Make sure your phone's fully charged before you go.", "出かける前にスマホをフル充電しておいてね。"),
+                    ("My laptop was fully charged this morning and it's already dead.", "朝フル充電したのに、もうノートパソコンの電池が切れた。")
+                 ], ipa: "/ˈfʊli ˈtʃɑːdʒd/"),
+            make("on my feet all day", "standing or walking for the whole day without much rest",
+                 "一日中立ちっぱなし・動きっぱなし",
+                 useCases: ["仕事の疲れを話すとき", "観光で歩き回った後"],
+                 examples: [
+                    ("I've been on my feet all day – I just need to sit down.", "一日中立ちっぱなしだったから、とにかく座りたい。"),
+                    ("Working in a shop means you're on your feet all day.", "お店で働くと一日中立ちっぱなしだよ。")
+                 ], ipa: "/ɒn maɪ ˈfiːt ɔːl ˈdeɪ/"),
+            make("I won't keep you", "a polite way of saying you will only take a short amount of someone's time, or of ending a conversation",
+                 "お時間は取らせません・じゃあこの辺で",
+                 useCases: ["忙しそうな人に話しかけるとき", "会話や電話を切り上げるとき"],
+                 examples: [
+                    ("I won't keep you – I just wanted to say thanks for yesterday.", "お時間は取らせないよ。昨日のお礼を言いたかっただけ。"),
+                    ("Anyway, I won't keep you. Have a good evening!", "まあ、この辺にしておくね。良い夜を！")
+                 ], ipa: "/aɪ ˈwəʊnt ˈkiːp juː/"),
+            make("keep the noise down", "to make less noise, often asked politely or with annoyance",
+                 "静かにする・音を立てないようにする",
+                 useCases: ["夜遅くや子どもが騒いでいるとき", "近所や同居人に配慮をお願いするとき"],
+                 examples: [
+                    ("Could you keep the noise down? The baby's asleep.", "少し静かにしてもらえる？赤ちゃんが寝てるの。"),
+                    ("We'll keep the noise down after eleven, I promise.", "11時以降は静かにするって約束するよ。")
+                 ], ipa: "/kiːp ðə ˈnɔɪz ˈdaʊn/"),
+            make("be short with sb", "to speak to someone in a rude or impatient way, using very few words",
+                 "（人に）そっけない態度をとる・つっけんどんに話す",
+                 useCases: ["自分の態度を謝るとき", "誰かの機嫌が悪かった話をするとき"],
+                 examples: [
+                    ("Sorry I was short with you earlier – I was really stressed.", "さっきはそっけなくてごめん。すごくストレスがたまってて。"),
+                    ("The receptionist was a bit short with me on the phone.", "受付の人、電話でちょっとそっけなかったな。")
+                 ], ipa: "/bi ˈʃɔːt wɪð ˈsʌmbədi/"),
+            make("have people round", "(informal) to invite friends or guests to your home",
+                 "人を家に招く",
+                 useCases: ["週末の予定を話すとき", "家でのパーティーや食事の話をするとき"],
+                 examples: [
+                    ("We're having people round on Saturday – do you want to come?", "土曜に友達を家に呼ぶんだけど、来ない？"),
+                    ("I love having people round for dinner.", "人を家に呼んで夕食するのが大好きなんだ。")
+                 ], ipa: "/hæv ˈpiːpl ˈraʊnd/"),
+            make("open a window", "to let fresh air into a room by opening a window",
+                 "窓を開ける",
+                 useCases: ["部屋が暑い・空気がこもっているとき", "許可を求めるとき"],
+                 examples: [
+                    ("Do you mind if I open a window? It's a bit stuffy in here.", "窓を開けてもいい？ちょっと空気がこもってて。"),
+                    ("Open a window – it smells of burnt toast in here!", "窓開けて。焦げたトーストのにおいがする！")
+                 ], ipa: "/ˈəʊpən ə ˈwɪndəʊ/"),
+            make("a quick tidy", "(informal) a short session of putting things back in order in a room or house",
+                 "さっと片付けること",
+                 useCases: ["来客前に部屋を片付けるとき", "家事の話をするとき"],
+                 examples: [
+                    ("Give me ten minutes – I just need to have a quick tidy before they arrive.", "10分ちょうだい。みんなが来る前にさっと片付けたいの。"),
+                    ("The kitchen just needs a quick tidy.", "キッチンはさっと片付ければ大丈夫だよ。")
+                 ], ipa: "/ə ˈkwɪk ˈtaɪdi/"),
+            make("go up a size", "to choose clothes or shoes in the next larger size",
+                 "ワンサイズ上げる",
+                 useCases: ["服や靴を試着したとき", "サイズ選びの相談をするとき"],
+                 examples: [
+                    ("These jeans are a bit tight – I think I'll go up a size.", "このジーンズ少しきついから、ワンサイズ上げようかな。"),
+                    ("They come up small, so you might want to go up a size.", "小さめの作りだから、ワンサイズ上げた方がいいかも。")
+                 ], ipa: "/ɡəʊ ˈʌp ə ˈsaɪz/"),
+        ]
+    }
+    private static var britishColloquial290: [Word] {
+        [
+            make("it's a slow day", "(at work, in a shop, etc.) there is not much to do or not many customers today",
+                 "今日は暇だ・客が少ない日だ",
+                 useCases: ["仕事が暇な日に同僚と話すとき", "お店の人と雑談するとき"],
+                 examples: [
+                    ("It's a slow day today – I've only had three customers.", "今日は暇だね。お客さん3人しか来てないよ。"),
+                    ("Since it's a slow day, I might leave a bit early.", "今日は暇だから、ちょっと早めに上がろうかな。")
+                 ], ipa: "/ɪts ə ˈsləʊ ˈdeɪ/"),
+            make("earlier on", "at an earlier time today or in a conversation; a little while ago",
+                 "さっき・先ほど",
+                 useCases: ["少し前の出来事を話すとき", "会話の前半に触れたことを持ち出すとき"],
+                 examples: [
+                    ("I saw your sister earlier on in the supermarket.", "さっきスーパーで君のお姉さんを見かけたよ。"),
+                    ("Like I said earlier on, I can't stay late tonight.", "さっきも言ったけど、今夜は遅くまでいられないんだ。")
+                 ], ipa: "/ˈɜːliər ˈɒn/"),
+            make("the night before", "the evening or night before a particular day or event",
+                 "前の晩・前夜",
+                 useCases: ["旅行や試験の準備を話すとき", "前日の出来事を説明するとき"],
+                 examples: [
+                    ("I always pack the night before I travel.", "旅行の前の晩にいつも荷造りするんだ。"),
+                    ("I didn't sleep much the night before the interview.", "面接の前の晩はあまり眠れなかったよ。")
+                 ], ipa: "/ðə ˈnaɪt bɪˈfɔː/"),
+            make("across the road", "on the other side of the street",
+                 "道の向かい側・通りの向こう",
+                 useCases: ["店や建物の場所を説明するとき", "近所の話をするとき"],
+                 examples: [
+                    ("There's a nice café just across the road.", "道の向かいに素敵なカフェがあるよ。"),
+                    ("The people across the road have just had a baby.", "向かいの家の人たち、赤ちゃんが生まれたばかりなんだ。")
+                 ], ipa: "/əˈkrɒs ðə ˈrəʊd/"),
+            make("the next stop", "the next place where a bus or train stops",
+                 "次の停留所・次の駅",
+                 useCases: ["バスや電車で降りる場所を確認するとき", "乗り物で人に道を聞くとき"],
+                 examples: [
+                    ("Excuse me, is the next stop the train station?", "すみません、次の停留所は駅ですか？"),
+                    ("We get off at the next stop.", "次で降りるよ。")
+                 ], ipa: "/ðə ˈnekst ˈstɒp/"),
+            make("a taxi rank", "(British) a place where taxis wait for passengers",
+                 "タクシー乗り場",
+                 useCases: ["駅や空港でタクシーを探すとき", "帰り方を相談するとき"],
+                 examples: [
+                    ("There's a taxi rank just outside the station.", "駅を出てすぐのところにタクシー乗り場があるよ。"),
+                    ("The queue at the taxi rank was massive.", "タクシー乗り場の列がものすごかったよ。")
+                 ], ipa: "/ə ˈtæksi ˈræŋk/"),
+            make("the services", "(British, informal) a service station on a motorway, with petrol, toilets, food and shops",
+                 "（高速道路の）サービスエリア",
+                 useCases: ["車での長距離移動中に休憩を提案するとき", "ドライブの計画を話すとき"],
+                 examples: [
+                    ("Let's stop at the next services – I need a coffee.", "次のサービスエリアで止まろう。コーヒー飲みたい。"),
+                    ("We grabbed a sandwich at the services on the way.", "途中のサービスエリアでサンドイッチを買ったよ。")
+                 ], ipa: "/ðə ˈsɜːvɪsɪz/"),
+            make("duty-free", "goods bought at airports without paying tax; the shop that sells them",
+                 "免税品・免税店",
+                 useCases: ["空港での買い物を話すとき", "旅行のお土産の話をするとき"],
+                 examples: [
+                    ("I picked up some perfume in duty-free.", "免税店で香水を買ったよ。"),
+                    ("Do you want anything from duty-free?", "免税店で何か欲しいものある？")
+                 ], ipa: "/ˌdjuːti ˈfriː/"),
+            make("passport control", "the place at an airport or border where officials check your passport",
+                 "入国審査・出国審査",
+                 useCases: ["空港での手続きを話すとき", "到着の遅れを説明するとき"],
+                 examples: [
+                    ("It took ages to get through passport control.", "入国審査を通るのにすごく時間がかかったよ。"),
+                    ("I'll text you once I'm through passport control.", "入国審査を抜けたらメッセージするね。")
+                 ], ipa: "/ˈpɑːspɔːt kənˈtrəʊl/"),
+            make("all-inclusive", "(of a holiday or hotel) with meals, drinks and activities included in the price",
+                 "オールインクルーシブ（食事・飲み物込み）の",
+                 useCases: ["旅行やホテルの話をするとき", "休暇の計画を立てるとき"],
+                 examples: [
+                    ("We went all-inclusive, so we didn't spend a penny all week.", "オールインクルーシブにしたから、1週間ほとんどお金を使わなかったよ。"),
+                    ("Is the hotel all-inclusive or just breakfast?", "そのホテルはオールインクルーシブ？それとも朝食だけ？")
+                 ], ipa: "/ˌɔːl ɪnˈkluːsɪv/"),
+            make("self-catering", "(of accommodation) where you cook your own meals instead of having them provided",
+                 "自炊式の（キッチン付きの宿泊施設）",
+                 useCases: ["休暇の宿泊先を話すとき", "旅行の予算を相談するとき"],
+                 examples: [
+                    ("We rented a self-catering apartment in Spain – much cheaper than a hotel.", "スペインで自炊できるアパートを借りたんだ。ホテルよりずっと安かったよ。"),
+                    ("Is it self-catering, or are meals included?", "自炊式？それとも食事付き？")
+                 ], ipa: "/ˌself ˈkeɪtərɪŋ/"),
+            make("room service", "a hotel service that brings food and drinks to your room",
+                 "ルームサービス",
+                 useCases: ["ホテル滞在の話をするとき", "旅行で疲れた夜のことを話すとき"],
+                 examples: [
+                    ("We were so tired we just ordered room service.", "疲れすぎてルームサービスを頼んだだけだったよ。"),
+                    ("Room service was a bit pricey, but the food was lovely.", "ルームサービスはちょっと高かったけど、料理は美味しかったよ。")
+                 ], ipa: "/ˈruːm ˌsɜːvɪs/"),
+            make("today's specials", "dishes that a restaurant offers only for that day, often written on a board",
+                 "本日のおすすめ料理",
+                 useCases: ["レストランで注文するとき", "店員におすすめを聞くとき"],
+                 examples: [
+                    ("Could you tell us what today's specials are?", "本日のおすすめを教えてもらえますか？"),
+                    ("I'll go for one of today's specials – the fish sounds nice.", "本日のおすすめにするよ。魚が美味しそう。")
+                 ], ipa: "/təˈdeɪz ˈspeʃəlz/"),
+            make("the school holidays", "the periods when schools are closed, e.g. in summer",
+                 "学校の休み（夏休み・冬休みなど）",
+                 useCases: ["子どもの予定や旅行時期を話すとき", "混雑や値段の話をするとき"],
+                 examples: [
+                    ("Flights are so expensive during the school holidays.", "学校が休みの時期は飛行機代がすごく高いよね。"),
+                    ("What are the kids up to over the school holidays?", "学校の休みの間、子どもたちは何してるの？")
+                 ], ipa: "/ðə ˈskuːl ˈhɒlədeɪz/"),
+            make("have the builders in", "(British, informal) to have workers doing building work or repairs on your home",
+                 "家の工事中だ・業者が入っている",
+                 useCases: ["家のリフォームや修理の話をするとき", "家に人を呼べない理由を説明するとき"],
+                 examples: [
+                    ("We've got the builders in, so the house is a total mess.", "今工事の業者が入ってて、家がめちゃくちゃなんだ。"),
+                    ("Sorry about the noise – the neighbours have the builders in.", "うるさくてごめんね。お隣が工事中なんだ。")
+                 ], ipa: "/hæv ðə ˈbɪldəz ˈɪn/"),
+        ]
+    }
+    private static var britishColloquial291: [Word] {
+        [
+            make("it's lovely out", "(British, informal) the weather outside is really nice",
+                 "外はすごくいい天気だ",
+                 useCases: ["天気がいい日に外出を誘うとき", "窓の外を見て天気の話をするとき"],
+                 examples: [
+                    ("It's lovely out – shall we eat in the garden?", "外すごくいい天気だね。庭で食べようか？"),
+                    ("Get outside while you can, it's lovely out today.", "今のうちに外に出なよ、今日はすごくいい天気だから。")
+                 ], ipa: "/ɪts ˈlʌvli ˈaʊt/"),
+            make("you'll love it", "said when you are sure someone will really enjoy something",
+                 "絶対気に入るよ",
+                 useCases: ["おすすめの店や映画を勧めるとき", "プレゼントを渡すとき"],
+                 examples: [
+                    ("You have to try that Italian place – you'll love it.", "あのイタリアンの店、行ってみなよ。絶対気に入るから。"),
+                    ("Open it! I think you'll love it.", "開けてみて！きっと気に入ると思うよ。")
+                 ], ipa: "/juːl ˈlʌv ɪt/"),
+            make("it grows on you", "you start to like it more over time, even if you didn't at first",
+                 "だんだん好きになる・クセになる",
+                 useCases: ["最初は微妙だったものを勧めるとき", "音楽や食べ物の好みを話すとき"],
+                 examples: [
+                    ("I didn't like the song at first, but it grows on you.", "最初はその曲好きじゃなかったけど、だんだん好きになるんだよね。"),
+                    ("The flat's a bit small, but it grows on you.", "そのアパートちょっと狭いけど、住んでるうちに好きになるよ。")
+                 ], ipa: "/ɪt ˈɡrəʊz ɒn juː/"),
+            make("I was just about to say", "used when someone says exactly what you were going to say",
+                 "今ちょうど言おうと思ってた",
+                 useCases: ["相手と同じことを考えていたとき", "相手の発言に強く同意するとき"],
+                 examples: [
+                    ("\"We should leave soon.\" \"I was just about to say that!\"", "「そろそろ出たほうがいいね」「今ちょうどそれ言おうと思ってた！」"),
+                    ("I was just about to say the same thing.", "ちょうど同じこと言おうとしてたよ。")
+                 ], ipa: "/aɪ wəz dʒʌst əˈbaʊt tə ˈseɪ/"),
+            make("a few doors down", "very close by on the same street, only a few houses away",
+                 "数軒先に・すぐ近所に",
+                 useCases: ["近所の人や店の場所を説明するとき", "引っ越し先の話をするとき"],
+                 examples: [
+                    ("My best friend lives just a few doors down.", "親友がほんの数軒先に住んでるんだ。"),
+                    ("There's a little bakery a few doors down from us.", "うちの数軒先に小さなパン屋があるよ。")
+                 ], ipa: "/ə ˈfjuː ˈdɔːz ˈdaʊn/"),
+            make("down the pub", "(British, informal) at or to the local pub",
+                 "パブで・パブに（飲みに）",
+                 useCases: ["仕事終わりの飲みに誘うとき", "誰かの居場所を話すとき"],
+                 examples: [
+                    ("A few of us are going down the pub later – coming?", "後で何人かでパブに行くんだけど、来る？"),
+                    ("He's probably down the pub watching the match.", "あいつたぶんパブで試合見てるよ。")
+                 ], ipa: "/ˈdaʊn ðə ˈpʌb/"),
+            make("could you pass me ...?", "a polite, everyday way to ask someone to hand you something nearby",
+                 "〜を取ってもらえる？",
+                 useCases: ["食事中に調味料を取ってほしいとき", "手の届かない物を頼むとき"],
+                 examples: [
+                    ("Could you pass me the salt, please?", "塩を取ってもらえる？"),
+                    ("Could you pass me that pen? Cheers.", "そのペン取ってくれる？ありがとう。")
+                 ], ipa: "/kʊd juː ˈpɑːs miː/"),
+            make("just the one", "(British, informal) only one, especially only one drink",
+                 "一杯だけ・一つだけ",
+                 useCases: ["飲みに誘われて軽く付き合うとき", "数を控えめにするとき"],
+                 examples: [
+                    ("Okay, I'll come – but just the one, I've got work tomorrow.", "わかった、行くよ。でも一杯だけね、明日仕事だから。"),
+                    ("\"How many kids have they got?\" \"Just the one.\"", "「あそこ子供何人いるの？」「一人だけだよ」")
+                 ], ipa: "/dʒʌst ðə ˈwʌn/"),
+            make("come and join us", "a friendly invitation for someone to sit with you or take part",
+                 "こっちおいでよ・一緒にどう？",
+                 useCases: ["知り合いを自分たちのテーブルに誘うとき", "活動に参加を促すとき"],
+                 examples: [
+                    ("We're in the corner – come and join us!", "私たち隅の席にいるよ。こっちおいで！"),
+                    ("If you're free on Saturday, come and join us for lunch.", "土曜空いてたら、一緒にランチしようよ。")
+                 ], ipa: "/ˈkʌm ənd ˈdʒɔɪn ʌs/"),
+            make("bring someone along", "to bring a friend or partner with you to an event",
+                 "（人を）連れてくる",
+                 useCases: ["パーティーに友達を連れてきていいか聞くとき", "相手に誰か誘っていいと伝えるとき"],
+                 examples: [
+                    ("Feel free to bring your partner along.", "パートナーも気軽に連れてきてね。"),
+                    ("Do you mind if I bring a friend along?", "友達連れて行ってもいい？")
+                 ], ipa: "/ˈbrɪŋ ˈsʌmwʌn əˈlɒŋ/"),
+            make("stick it in the fridge", "(informal) to put something in the fridge",
+                 "冷蔵庫に入れといて",
+                 useCases: ["料理や残り物の片付けを頼むとき", "飲み物を冷やすとき"],
+                 examples: [
+                    ("Just stick it in the fridge and we'll have it tomorrow.", "冷蔵庫に入れといて、明日食べよう。"),
+                    ("Stick the wine in the fridge for an hour.", "ワインを1時間冷蔵庫で冷やしといて。")
+                 ], ipa: "/ˈstɪk ɪt ɪn ðə ˈfrɪdʒ/"),
+            make("I'm not drinking tonight", "used to say you will not have any alcohol this evening",
+                 "今夜はお酒飲まないんだ",
+                 useCases: ["飲み会でお酒を断るとき", "車で来ていることを伝えるとき"],
+                 examples: [
+                    ("Just a lemonade for me – I'm not drinking tonight.", "私はレモネードで。今夜はお酒飲まないんだ。"),
+                    ("I'm not drinking tonight, I've got an early start.", "今夜は飲まないよ、明日朝早いから。")
+                 ], ipa: "/aɪm nɒt ˈdrɪŋkɪŋ təˈnaɪt/"),
+            make("the night is young", "it is still early in the evening, so there's plenty of time for more fun",
+                 "夜はまだこれからだ",
+                 useCases: ["早く帰ろうとする友達を引き止めるとき", "二次会に誘うとき"],
+                 examples: [
+                    ("Don't go yet – the night is young!", "まだ帰らないでよ、夜はこれからだよ！"),
+                    ("It's only ten, the night is young.", "まだ10時だよ、夜はまだこれからさ。")
+                 ], ipa: "/ðə ˈnaɪt ɪz ˈjʌŋ/"),
+            make("drink up", "to finish your drink, often because it's time to leave",
+                 "飲み干して・早く飲んじゃって",
+                 useCases: ["店を出る前に飲み物を飲み切るよう促すとき", "閉店時間に"],
+                 examples: [
+                    ("Drink up, the taxi's here.", "早く飲んじゃって、タクシー来たよ。"),
+                    ("They're closing soon, so drink up.", "もうすぐ閉店だから、飲み干しちゃって。")
+                 ], ipa: "/ˈdrɪŋk ˈʌp/"),
+            make("I'll sort you out", "(British, informal) I'll get you what you need or solve your problem",
+                 "なんとかしてあげるよ・用意しとくよ",
+                 useCases: ["友達の困りごとを引き受けるとき", "必要な物を用意してあげるとき"],
+                 examples: [
+                    ("Need a charger? Don't worry, I'll sort you out.", "充電器いる？心配しないで、用意してあげるよ。"),
+                    ("Leave it with me – I'll sort you out with a ticket.", "任せて、チケットなんとかしてあげるから。")
+                 ], ipa: "/aɪl ˈsɔːt juː ˈaʊt/"),
+        ]
+    }
+    private static var britishColloquial292: [Word] {
+        [
+            make("be run off your feet", "(British, informal) to be extremely busy, with no time to rest",
+                 "てんてこ舞いだ・忙しくて休む暇もない",
+                 useCases: ["仕事やバイトが忙しすぎたことを話すとき", "相手の忙しさを気遣うとき"],
+                 examples: [
+                    ("Sorry I didn't text back – I've been run off my feet all day.", "返信できなくてごめん、一日中てんてこ舞いだったんだ。"),
+                    ("The café was packed, so the staff were run off their feet.", "カフェが満員で、店員さんたち休む暇もなかったよ。")
+                 ], ipa: "/bi ˈrʌn ɒf jɔː ˈfiːt/"),
+            make("save for a rainy day", "to keep some money for a time in the future when you might need it",
+                 "まさかの時に備えて貯めておく",
+                 useCases: ["貯金の話をするとき", "臨時収入の使い道を話すとき"],
+                 examples: [
+                    ("I'm not spending my bonus – I'm saving it for a rainy day.", "ボーナスは使わないよ。何かあった時のために取っておくんだ。"),
+                    ("It's always good to have a bit put by for a rainy day.", "いざという時のために少し貯めておくのはいいことだよ。")
+                 ], ipa: "/ˈseɪv fər ə ˈreɪni ˈdeɪ/"),
+            make("whatever floats your boat", "(informal) do whatever makes you happy, even if it isn't my taste",
+                 "好きにすればいいよ・人それぞれだね",
+                 useCases: ["相手の変わった趣味を軽く受け流すとき", "自分は興味ないが否定はしないとき"],
+                 examples: [
+                    ("You want to go camping in November? Whatever floats your boat!", "11月にキャンプ？まあ、好きにすればいいよ！"),
+                    ("Pineapple on pizza isn't for me, but whatever floats your boat.", "ピザにパイナップルは私は無理だけど、人それぞれだね。")
+                 ], ipa: "/wɒtˈevə ˈfləʊts jɔː ˈbəʊt/"),
+            make("have a memory like a sieve", "(informal) to forget things very easily",
+                 "ものすごく忘れっぽい・ザル頭",
+                 useCases: ["自分の物忘れを笑い話にするとき", "リマインドを頼むとき"],
+                 examples: [
+                    ("Remind me tomorrow – I've got a memory like a sieve.", "明日リマインドしてね、すぐ忘れちゃうから。"),
+                    ("I forgot your birthday again? Sorry, I've got a memory like a sieve.", "また誕生日忘れてた？ごめん、ほんと忘れっぽくて。")
+                 ], ipa: "/hæv ə ˈmeməri laɪk ə ˈsɪv/"),
+            make("good effort", "(informal) said to praise someone for trying hard, even if the result wasn't perfect",
+                 "よく頑張ったね・ナイストライ",
+                 useCases: ["結果はいまいちでも努力を褒めるとき", "スポーツやゲームで相手を労うとき"],
+                 examples: [
+                    ("You didn't win, but that was a good effort.", "勝てなかったけど、よく頑張ったよ。"),
+                    ("Good effort on the cake – it tastes great, even if it looks a bit wonky!", "ケーキよく頑張ったね。ちょっと形は歪だけど、すごく美味しいよ！")
+                 ], ipa: "/ɡʊd ˈefət/"),
+            make("I can't believe my luck", "said when something unexpectedly good happens to you",
+                 "ついてるなんてもんじゃない・信じられないくらいラッキー",
+                 useCases: ["思わぬ幸運に恵まれたとき", "いい知らせを人に話すとき"],
+                 examples: [
+                    ("They upgraded me to business class – I can't believe my luck!", "ビジネスクラスにアップグレードしてもらえたの、信じられないくらいラッキー！"),
+                    ("Found a tenner in my old coat. I can't believe my luck.", "古いコートから10ポンド出てきた。ついてるなあ。")
+                 ], ipa: "/aɪ ˈkɑːnt bɪˈliːv maɪ ˈlʌk/"),
+            make("it takes me back", "it reminds me of an earlier time in my life, often in a pleasant way",
+                 "懐かしいなあ・昔を思い出す",
+                 useCases: ["昔の曲や写真に触れたとき", "思い出の場所を訪れたとき"],
+                 examples: [
+                    ("This song really takes me back to my uni days.", "この曲、大学時代を本当に思い出すなあ。"),
+                    ("Walking past my old school – it takes me back.", "母校の前を通ると、懐かしくなるよ。")
+                 ], ipa: "/ɪt ˈteɪks miː ˈbæk/"),
+            make("a blast from the past", "(informal) something or someone from the past that you suddenly see or hear again",
+                 "懐かしいもの・久しぶりの再会",
+                 useCases: ["昔の知人から連絡が来たとき", "懐かしい物を見つけたとき"],
+                 examples: [
+                    ("Wow, a message from my old flatmate – what a blast from the past!", "わあ、昔のルームメイトからメッセージ！懐かしい！"),
+                    ("They played some '90s hits – a real blast from the past.", "90年代のヒット曲がかかってて、すごく懐かしかったよ。")
+                 ], ipa: "/ə ˈblɑːst frəm ðə ˈpɑːst/"),
+            make("my brain's fried", "(informal) I'm so mentally tired that I can't think properly",
+                 "頭がもう回らない・脳みそが限界",
+                 useCases: ["長時間の勉強や仕事の後", "これ以上考えられないと伝えるとき"],
+                 examples: [
+                    ("Can we finish this tomorrow? My brain's fried.", "続きは明日にしない？もう頭が回らないよ。"),
+                    ("After eight hours of meetings, my brain's completely fried.", "8時間も会議して、もう脳みそが限界。")
+                 ], ipa: "/maɪ ˈbreɪnz ˈfraɪd/"),
+            make("a fair way", "(British, informal) quite a long distance",
+                 "結構な距離・かなり遠い",
+                 useCases: ["場所までの距離を説明するとき", "歩くか乗り物を使うか相談するとき"],
+                 examples: [
+                    ("It's a fair way to the station – shall we get a taxi?", "駅まで結構あるよ。タクシーにする？"),
+                    ("We walked a fair way before we found somewhere to eat.", "食べる所が見つかるまで、かなり歩いたよ。")
+                 ], ipa: "/ə ˈfeə ˈweɪ/"),
+            make("a big eater", "someone who usually eats a lot of food",
+                 "大食い・よく食べる人",
+                 useCases: ["食事の量について話すとき", "料理を多めに用意するか決めるとき"],
+                 examples: [
+                    ("My brother's a big eater, so make plenty.", "兄はよく食べるから、たくさん作っておいて。"),
+                    ("I'm not a big eater – just a small portion for me, please.", "私はあまり食べないので、少なめでお願いします。")
+                 ], ipa: "/ə ˈbɪɡ ˈiːtə/"),
+            make("the life and soul of the party", "a lively, fun person who makes a social event enjoyable for everyone",
+                 "パーティーの盛り上げ役・場のムードメーカー",
+                 useCases: ["社交的な友人を紹介するとき", "飲み会の様子を話すとき"],
+                 examples: [
+                    ("Invite Tom – he's always the life and soul of the party.", "トムを呼びなよ、いつも場を盛り上げてくれるから。"),
+                    ("She's quiet at work, but she's the life and soul of the party at weekends.", "彼女、職場では静かだけど、週末はムードメーカーなんだよ。")
+                 ], ipa: "/ðə ˈlaɪf ən ˈsəʊl əv ðə ˈpɑːti/"),
+            make("a social butterfly", "someone who loves meeting people and moves easily from one group to another",
+                 "社交的な人・誰とでも仲良くなれる人",
+                 useCases: ["社交的な人の性格を表すとき", "パーティーで色々な人と話す人について"],
+                 examples: [
+                    ("He knows everyone here – he's a real social butterfly.", "彼ここにいる全員と知り合いなんだよ。本当に社交的だよね。"),
+                    ("I'm not much of a social butterfly; I prefer small groups.", "私はあまり社交的なタイプじゃなくて、少人数の方が好き。")
+                 ], ipa: "/ə ˈsəʊʃl ˈbʌtəflaɪ/"),
+            make("hit the spot", "(informal) to be exactly what you wanted or needed, especially food or drink",
+                 "まさにこれが欲しかった・最高に満たされる",
+                 useCases: ["食べ物や飲み物に満足したとき", "疲れた時の一杯について話すとき"],
+                 examples: [
+                    ("That cup of tea really hit the spot.", "あの紅茶、まさに求めてた一杯だったよ。"),
+                    ("A hot bowl of soup on a cold day – that hits the spot.", "寒い日に熱々のスープ、最高だね。")
+                 ], ipa: "/ˈhɪt ðə ˈspɒt/"),
+            make("have a heart of gold", "to be a very kind and generous person",
+                 "とても優しい・心がきれいだ",
+                 useCases: ["人の優しさを褒めるとき", "見た目と違って優しい人を紹介するとき"],
+                 examples: [
+                    ("He seems a bit grumpy, but he's got a heart of gold.", "ちょっと無愛想に見えるけど、本当は心の優しい人なんだ。"),
+                    ("My gran has a heart of gold – she'd do anything for anyone.", "うちのおばあちゃんはすごく優しくて、誰のためにでも何でもするんだ。")
+                 ], ipa: "/hæv ə ˈhɑːt əv ˈɡəʊld/"),
+        ]
+    }
+    private static var britishColloquial293: [Word] {
+        [
+            make("pull a face", "to twist your face to show you dislike something, or to be funny",
+                 "顔をしかめる・変な顔をする",
+                 useCases: ["嫌そうな反応をした人について話すとき", "子どもがふざけて変顔をするとき"],
+                 examples: [
+                    ("He pulled a face when he tasted the coffee.", "彼、コーヒーを飲んだ瞬間に顔をしかめたよ。"),
+                    ("Stop pulling faces – I'm trying to take a nice photo!", "変顔しないで、ちゃんとした写真撮りたいんだから！")
+                 ], ipa: "/ˈpʊl ə ˈfeɪs/"),
+            make("same difference", "(informal) said when two things are basically the same, so the difference doesn't matter",
+                 "似たようなもんだよ・どっちでも同じ",
+                 useCases: ["細かい違いを指摘されたとき", "どちらでも結果は変わらないと言うとき"],
+                 examples: [
+                    ("It's not a sofa, it's a settee. – Same difference!", "それソファじゃなくて長椅子だよ。―似たようなもんでしょ！"),
+                    ("Leave at six or quarter past – same difference, we'll still hit traffic.", "6時に出ても6時15分に出ても同じだよ、どうせ渋滞にはまるし。")
+                 ], ipa: "/ˈseɪm ˈdɪfrəns/"),
+            make("sorry to interrupt", "a polite way to start speaking when someone else is talking or busy",
+                 "お話し中すみません・割り込んでごめんなさい",
+                 useCases: ["会話中の人に話しかけるとき", "会議で発言をはさむとき"],
+                 examples: [
+                    ("Sorry to interrupt, but your taxi's here.", "お話し中ごめんなさい、タクシーが来ましたよ。"),
+                    ("Sorry to interrupt – can I just add something quickly?", "割り込んですみません、ちょっとだけ付け足してもいいですか？")
+                 ], ipa: "/ˈsɒri tu ˌɪntəˈrʌpt/"),
+            make("take a wrong turn", "to go the wrong way at a junction; also, for things to start going badly",
+                 "道を間違える・（物事が）おかしな方向に行く",
+                 useCases: ["道に迷って遅れた理由を話すとき", "計画や会話が変な方向に行ったとき"],
+                 examples: [
+                    ("Sorry we're late – we took a wrong turn after the roundabout.", "遅れてごめん、ロータリーの後で道を間違えちゃって。"),
+                    ("The conversation took a wrong turn when politics came up.", "政治の話が出たところで会話がおかしな方向に行っちゃった。")
+                 ], ipa: "/ˈteɪk ə ˈrɒŋ ˈtɜːn/"),
+            make("crunch time", "(informal) the critical moment when you have to perform or make a decision",
+                 "正念場・追い込みの時期",
+                 useCases: ["試験や締め切り直前の状況を話すとき", "スポーツの勝負どころで"],
+                 examples: [
+                    ("Exams start Monday, so it's crunch time now.", "試験が月曜からだから、今が追い込みの時期なんだ。"),
+                    ("It's crunch time – we need this goal.", "ここが正念場だ、このゴールは絶対欲しい。")
+                 ], ipa: "/ˈkrʌntʃ taɪm/"),
+            make("impulse buy", "something you buy suddenly without planning to",
+                 "衝動買い（した物）",
+                 useCases: ["買った物について言い訳するとき", "買い物の失敗談を話すとき"],
+                 examples: [
+                    ("This jacket was a total impulse buy, but I love it.", "このジャケット完全に衝動買いだったけど、気に入ってるんだ。"),
+                    ("I try not to make impulse buys when I'm tired.", "疲れてる時は衝動買いしないようにしてるの。")
+                 ], ipa: "/ˈɪmpʌls baɪ/"),
+            make("job hunting", "the activity of looking for a job",
+                 "職探し・就活",
+                 useCases: ["転職や就職活動の近況を話すとき", "相手の仕事探しを応援するとき"],
+                 examples: [
+                    ("How's the job hunting going?", "職探しの調子はどう？"),
+                    ("I've been job hunting for months – it's exhausting.", "何ヶ月も就活してて、もうクタクタだよ。")
+                 ], ipa: "/ˈdʒɒb ˌhʌntɪŋ/"),
+            make("date night", "an evening that a couple plan to spend together, just the two of them",
+                 "デートの夜・夫婦（恋人）水入らずの夜",
+                 useCases: ["パートナーとの予定を話すとき", "子どもを預けて出かける話をするとき"],
+                 examples: [
+                    ("Mum's babysitting tonight, so it's date night!", "今夜は母が子守してくれるから、2人でデートなの！"),
+                    ("We try to have a date night once a month.", "月に一度は2人だけで出かけるようにしてるんだ。")
+                 ], ipa: "/ˈdeɪt naɪt/"),
+            make("take a day off", "to have one day away from work or school",
+                 "1日休みを取る",
+                 useCases: ["休暇の予定を話すとき", "疲れている人に休むよう勧めるとき"],
+                 examples: [
+                    ("I'm taking a day off on Friday to make it a long weekend.", "金曜に休みを取って3連休にするんだ。"),
+                    ("You look shattered – why don't you take a day off?", "すごく疲れてるみたい。1日休んだら？")
+                 ], ipa: "/ˈteɪk ə ˈdeɪ ɒf/"),
+            make("get it right", "to do something correctly or in the best way",
+                 "うまくやる・正しくやる",
+                 useCases: ["何度も挑戦してできたとき", "大事なことを丁寧にやりたいとき"],
+                 examples: [
+                    ("It took me three tries, but I finally got it right.", "3回かかったけど、やっとうまくできたよ。"),
+                    ("It's an important speech, so I want to get it right.", "大事なスピーチだから、ちゃんと決めたいんだ。")
+                 ], ipa: "/ˈɡet ɪt ˈraɪt/"),
+            make("overworked", "having to work too hard or for too many hours",
+                 "働きすぎの・過労気味の",
+                 useCases: ["職場の忙しさや不満を話すとき", "誰かの体調を気遣うとき"],
+                 examples: [
+                    ("Nurses are overworked and underpaid.", "看護師は働きすぎなのに給料が安いんだよ。"),
+                    ("I'm feeling a bit overworked at the moment.", "最近ちょっと働きすぎな気がする。")
+                 ], ipa: "/ˌəʊvəˈwɜːkt/"),
+            make("I'm terribly sorry", "(polite, British) a strong, sincere way of apologising",
+                 "本当に申し訳ありません",
+                 useCases: ["丁寧にしっかり謝るとき", "人にぶつかったり迷惑をかけたとき"],
+                 examples: [
+                    ("I'm terribly sorry – I didn't see you there.", "本当にすみません、いらっしゃるのに気づきませんでした。"),
+                    ("I'm terribly sorry for the wait.", "大変お待たせして申し訳ありません。")
+                 ], ipa: "/aɪm ˈterəbli ˈsɒri/"),
+            make("grow apart", "to slowly become less close to someone over time",
+                 "だんだん疎遠になる・心が離れていく",
+                 useCases: ["昔の友人との関係を話すとき", "別れの理由を説明するとき"],
+                 examples: [
+                    ("We were best mates at school, but we grew apart.", "学生時代は親友だったけど、だんだん疎遠になったんだ。"),
+                    ("There was no big fight – we just grew apart.", "大喧嘩したわけじゃなくて、自然と気持ちが離れていっただけ。")
+                 ], ipa: "/ˈɡrəʊ əˈpɑːt/"),
+            make("pick up a few bits", "(British, informal) to buy a few small things, usually from a shop",
+                 "ちょっとした物をいくつか買う",
+                 useCases: ["買い物に寄ると伝えるとき", "スーパーに行く用事を話すとき"],
+                 examples: [
+                    ("I'll just pop into Tesco to pick up a few bits.", "ちょっとスーパーに寄って細々した物買ってくるね。"),
+                    ("Do you need anything? I'm picking up a few bits for dinner.", "何かいる？夕飯用にいくつか買ってくるけど。")
+                 ], ipa: "/ˈpɪk ʌp ə fjuː ˈbɪts/"),
+            make("get some shut-eye", "(informal) to get some sleep",
+                 "ひと眠りする・少し寝る",
+                 useCases: ["疲れて寝たいと伝えるとき", "相手に休むよう勧めるとき"],
+                 examples: [
+                    ("I'm off to get some shut-eye – early start tomorrow.", "もう寝るね、明日早いから。"),
+                    ("You should get some shut-eye before the long drive.", "長距離運転の前に少し寝ておいた方がいいよ。")
+                 ], ipa: "/ˈɡet səm ˈʃʌt aɪ/"),
+        ]
+    }
+    private static var britishColloquial294: [Word] {
+        [
+            make("from day one", "right from the very beginning",
+                 "最初から・初日からずっと",
+                 useCases: ["始めからずっとそうだったと言うとき", "最初から分かっていたことを話すとき"],
+                 examples: [
+                    ("I've loved this job from day one.", "この仕事、初日からずっと好きなんだ。"),
+                    ("She's been honest with us from day one.", "彼女は最初からずっと私たちに正直だったよ。")
+                 ], ipa: "/frəm ˈdeɪ ˈwʌn/"),
+            make("day in, day out", "every day, continuously, often in a boring or tiring way",
+                 "来る日も来る日も・毎日毎日",
+                 useCases: ["同じことの繰り返しに疲れているとき", "毎日欠かさず続けていることを話すとき"],
+                 examples: [
+                    ("Same commute, day in, day out – I need a change.", "毎日毎日同じ通勤で、そろそろ変化が欲しいよ。"),
+                    ("He trains day in, day out, even in the rain.", "彼は雨の日でも来る日も来る日も練習してるんだ。")
+                 ], ipa: "/ˈdeɪ ˈɪn ˈdeɪ ˈaʊt/"),
+            make("take my word for it", "believe me – I know this is true from experience",
+                 "私の言うことを信じて・本当だってば",
+                 useCases: ["自分の経験から強く勧めるとき", "相手が疑っているとき"],
+                 examples: [
+                    ("Take my word for it – don't eat at that place.", "信じて、あの店では食べない方がいいよ。"),
+                    ("You don't have to take my word for it. Try it yourself.", "私の言うことを鵜呑みにしなくていいよ。自分で試してみて。")
+                 ], ipa: "/ˈteɪk maɪ ˈwɜːd fər ɪt/"),
+            make("hard to tell", "difficult to know, judge or see clearly",
+                 "何とも言えない・見分けにくい",
+                 useCases: ["判断がつかないとき", "見た目で区別しにくいとき"],
+                 examples: [
+                    ("Is he annoyed? – Hard to tell, he's always quiet.", "彼怒ってる？―何とも言えないな、いつも無口だし。"),
+                    ("It's hard to tell the twins apart.", "あの双子は見分けるのが難しいね。")
+                 ], ipa: "/ˈhɑːd tə ˈtel/"),
+            make("at your own pace", "at the speed that suits you, without being rushed",
+                 "自分のペースで",
+                 useCases: ["相手に急がなくていいと伝えるとき", "学習や運動の進め方を話すとき"],
+                 examples: [
+                    ("No rush – just go through it at your own pace.", "急がなくていいよ、自分のペースで進めてね。"),
+                    ("I like online courses because I can learn at my own pace.", "自分のペースで学べるからオンライン講座が好きなんだ。")
+                 ], ipa: "/ət jɔːr ˈəʊn ˈpeɪs/"),
+            make("first-hand", "from your own direct experience, not from someone else",
+                 "直接・身をもって・じかに",
+                 useCases: ["自分で体験したことを強調するとき", "現場を直接見たと言うとき"],
+                 examples: [
+                    ("I've seen first-hand how hard nurses work.", "看護師がどれだけ大変か、この目で見てきたよ。"),
+                    ("It's good to hear it first-hand rather than through gossip.", "噂じゃなくて本人から直接聞けて良かった。")
+                 ], ipa: "/ˌfɜːst ˈhænd/"),
+            make("on hand", "available and ready to help or be used",
+                 "手元に・待機して・すぐ使えるように",
+                 useCases: ["サポートがいると伝えるとき", "必要な物を用意しておくとき"],
+                 examples: [
+                    ("Staff will be on hand to answer any questions.", "質問があればスタッフが待機していますので。"),
+                    ("I always keep some plasters on hand with the kids.", "子どもがいるから絆創膏はいつも手元に置いてるの。")
+                 ], ipa: "/ɒn ˈhænd/"),
+            make("spare a thought for", "to think kindly about someone who is in a difficult situation",
+                 "〜のことを思いやる・〜の身にもなってみる",
+                 useCases: ["大変な状況の人を気遣うとき", "自分より大変な人がいると言うとき"],
+                 examples: [
+                    ("Spare a thought for the people working on Christmas Day.", "クリスマスに働いてる人たちのことも考えてあげて。"),
+                    ("We're cold, but spare a thought for those sleeping outside.", "私たちも寒いけど、外で寝てる人たちのことを思うとね。")
+                 ], ipa: "/ˈspeər ə ˈθɔːt fɔː/"),
+            make("allegedly", "(often humorous) said to be true, although not proven",
+                 "〜らしい・（一応）〜ということになっている",
+                 useCases: ["噂話を伝えるとき", "冗談っぽく疑いを込めて言うとき"],
+                 examples: [
+                    ("He's allegedly working from home today.", "彼、今日は一応在宅勤務してることになってるけどね。"),
+                    ("The train was allegedly on time – it wasn't.", "電車は定刻通りだったらしいけど、全然違ったよ。")
+                 ], ipa: "/əˈledʒɪdli/"),
+            make("tongue-tied", "unable to speak easily because you are nervous or shy",
+                 "（緊張で）言葉に詰まる・口ごもる",
+                 useCases: ["緊張してうまく話せなかったとき", "好きな人の前で固まったとき"],
+                 examples: [
+                    ("I always get tongue-tied when I meet someone famous.", "有名人に会うといつも緊張して言葉が出なくなるんだ。"),
+                    ("He was completely tongue-tied in the interview.", "彼、面接で完全に言葉に詰まってたよ。")
+                 ], ipa: "/ˈtʌŋ taɪd/"),
+            make("tongue-in-cheek", "said as a joke, not meant seriously",
+                 "冗談半分の・皮肉まじりの",
+                 useCases: ["本気ではない発言だと説明するとき", "皮肉っぽいユーモアについて話すとき"],
+                 examples: [
+                    ("Don't worry, the comment was tongue-in-cheek.", "心配しないで、あのコメントは冗談半分だから。"),
+                    ("The review was a bit tongue-in-cheek, but quite funny.", "そのレビュー、ちょっと皮肉まじりだったけど結構面白かったよ。")
+                 ], ipa: "/ˌtʌŋ ɪn ˈtʃiːk/"),
+            make("have the last word", "to make the final comment in an argument or discussion",
+                 "最後に一言言う・言い返して終わる",
+                 useCases: ["口論で負けず嫌いな人について話すとき", "最終決定権を持つ人について話すとき"],
+                 examples: [
+                    ("She always has to have the last word.", "彼女っていつも最後に一言言わないと気が済まないんだよね。"),
+                    ("The boss will have the last word on the budget.", "予算については上司が最終判断するよ。")
+                 ], ipa: "/hæv ðə ˈlɑːst ˈwɜːd/"),
+            make("state of mind", "the way you are feeling or thinking at a particular time",
+                 "心の状態・気持ち・精神状態",
+                 useCases: ["今の気分や精神状態を話すとき", "大事な決断のタイミングについて話すとき"],
+                 examples: [
+                    ("I'm not in the right state of mind to decide that now.", "今はそれを決められるような精神状態じゃないんだ。"),
+                    ("Exercise really helps my state of mind.", "運動すると本当に気持ちが前向きになるんだ。")
+                 ], ipa: "/ˈsteɪt əv ˈmaɪnd/"),
+            make("at first glance", "when you first look at something, before examining it closely",
+                 "ぱっと見は・一見すると",
+                 useCases: ["第一印象と実際が違ったとき", "ざっと見た感想を言うとき"],
+                 examples: [
+                    ("At first glance it looks easy, but it's actually quite tricky.", "ぱっと見は簡単そうだけど、実はかなり厄介なんだ。"),
+                    ("At first glance, I thought you were your sister!", "一瞬、あなたのお姉さんかと思ったよ！")
+                 ], ipa: "/ət ˈfɜːst ˈɡlɑːns/"),
+            make("to start with", "at the beginning; also used to give the first reason in a list",
+                 "最初は・まず第一に",
+                 useCases: ["最初の状況と今を比べるとき", "理由を順に挙げるとき"],
+                 examples: [
+                    ("To start with, I hated living here, but now I love it.", "最初はここに住むのが嫌だったけど、今は大好き。"),
+                    ("I'm not going. To start with, it's too expensive.", "行かないよ。まず第一に、高すぎるし。")
+                 ], ipa: "/tə ˈstɑːt wɪð/"),
+        ]
+    }
+    private static var britishColloquial295: [Word] {
+        [
+            make("by chance", "without planning it; by luck or accident",
+                 "偶然・たまたま",
+                 useCases: ["予定外の出来事を話すとき", "たまたま会った・見つけたと言うとき"],
+                 examples: [
+                    ("I bumped into my old teacher by chance at the station.", "駅で偶然、昔の先生にばったり会ったよ。"),
+                    ("Are you free on Friday, by chance?", "ひょっとして金曜日って空いてたりする？")
+                 ], ipa: "/baɪ ˈtʃɑːns/"),
+            make("hand out", "to give something to each person in a group",
+                 "配る・配布する",
+                 useCases: ["資料や物をみんなに配るとき", "アドバイスなどを気前よく与えるとき"],
+                 examples: [
+                    ("Could you hand these out to everyone, please?", "これ、みんなに配ってもらえる？"),
+                    ("They were handing out free samples outside the shop.", "店の前で無料サンプルを配ってたよ。")
+                 ], ipa: "/ˈhænd ˈaʊt/"),
+            make("out of reach", "too far away or too difficult to get or achieve",
+                 "手の届かないところに・手が出ない",
+                 useCases: ["子どもの手の届かない場所に置くとき", "値段や目標が高すぎるとき"],
+                 examples: [
+                    ("Keep the medicine out of reach of the kids.", "薬は子どもの手の届かないところに置いてね。"),
+                    ("Buying a house in London feels completely out of reach.", "ロンドンで家を買うなんて全く手が届かない感じだよ。")
+                 ], ipa: "/ˈaʊt əv ˈriːtʃ/"),
+            make("turn to", "to go to someone for help, advice or comfort",
+                 "〜に頼る・〜を頼りにする",
+                 useCases: ["困ったときに相談する相手を話すとき", "支えになる人について話すとき"],
+                 examples: [
+                    ("I didn't know who else to turn to.", "他に頼れる人がいなかったんだ。"),
+                    ("You can always turn to me if you need anything.", "何かあったらいつでも私を頼ってね。")
+                 ], ipa: "/ˈtɜːn tuː/"),
+            make("stick up for", "to defend or support someone, especially when others criticise them",
+                 "〜をかばう・〜の味方をする",
+                 useCases: ["誰かを擁護するとき", "かばってくれた人に感謝するとき"],
+                 examples: [
+                    ("Thanks for sticking up for me in the meeting.", "会議でかばってくれてありがとう。"),
+                    ("You need to stick up for yourself a bit more.", "もう少し自分の意見を主張した方がいいよ。")
+                 ], ipa: "/ˈstɪk ˈʌp fɔː/"),
+            make("sit through", "to stay until the end of something long or boring",
+                 "（退屈なものを）最後まで我慢して見る・聞く",
+                 useCases: ["長い会議や映画を我慢したと言うとき", "退屈なものに付き合わされたとき"],
+                 examples: [
+                    ("I had to sit through a two-hour presentation.", "2時間のプレゼンを最後まで我慢して聞かなきゃいけなかったよ。"),
+                    ("I can't sit through another one of his films.", "あの人の映画をもう一本最後まで観るのは無理だな。")
+                 ], ipa: "/ˈsɪt ˈθruː/"),
+            make("think back", "to remember something that happened in the past",
+                 "振り返る・思い返す",
+                 useCases: ["昔のことを思い出すとき", "過去を振り返って気づいたことを話すとき"],
+                 examples: [
+                    ("When I think back, I was so naive at uni.", "思い返すと、大学の頃はほんと世間知らずだったな。"),
+                    ("Think back – when did you last have your keys?", "思い出してみて、最後に鍵を持ってたのはいつ？")
+                 ], ipa: "/ˈθɪŋk ˈbæk/"),
+            make("talk down to", "to speak to someone as if they were less intelligent than you",
+                 "〜を見下した話し方をする・子ども扱いする",
+                 useCases: ["上から目線の話し方に不満なとき", "相手を尊重して話すべきだと言うとき"],
+                 examples: [
+                    ("I hate it when he talks down to me.", "彼に上から目線で話されるのが本当に嫌なんだ。"),
+                    ("Don't talk down to the kids – they understand more than you think.", "子ども扱いしないで、思ってるより分かってるから。")
+                 ], ipa: "/ˈtɔːk ˈdaʊn tuː/"),
+            make("bring back", "to make you remember something from the past; to return something",
+                 "（記憶を）よみがえらせる・返す・持ち帰る",
+                 useCases: ["懐かしい気持ちになったとき", "借りた物を返すと言うとき"],
+                 examples: [
+                    ("This song brings back so many memories.", "この曲、いろんな思い出がよみがえるなあ。"),
+                    ("Can you bring back my charger tomorrow?", "明日、私の充電器返してくれる？")
+                 ], ipa: "/ˈbrɪŋ ˈbæk/"),
+            make("line up", "to stand in a line; to arrange or organise something in advance",
+                 "並ぶ・（予定などを）手配する",
+                 useCases: ["列に並ぶとき", "予定や人を前もって押さえてあるとき"],
+                 examples: [
+                    ("People were lining up outside the bakery at 7am.", "朝7時からパン屋の前に人が並んでたよ。"),
+                    ("We've got a few things lined up for the weekend.", "週末はいくつか予定を入れてあるんだ。")
+                 ], ipa: "/ˈlaɪn ˈʌp/"),
+            make("round up", "to increase a number to the nearest whole or convenient amount; to gather people or things",
+                 "（数字を）切り上げる・（人や物を）集める",
+                 useCases: ["支払いや計算をキリのいい数字にするとき", "人を呼び集めるとき"],
+                 examples: [
+                    ("It's £18.60 – let's just round it up to twenty.", "18ポンド60だから、20ポンドに切り上げちゃおう。"),
+                    ("Can you round up the kids? We're leaving.", "子どもたちを集めてくれる？もう出るよ。")
+                 ], ipa: "/ˈraʊnd ˈʌp/"),
+            make("fit in with", "to suit or match someone's plans, or to be similar to the people around you",
+                 "〜（の予定）に合わせる・〜になじむ",
+                 useCases: ["相手の都合に合わせると言うとき", "周りになじめるか話すとき"],
+                 examples: [
+                    ("I'm flexible – I'll fit in with whatever you're doing.", "私は融通がきくから、そっちの予定に合わせるよ。"),
+                    ("Does the new guy fit in with the rest of the team?", "新しい人、チームになじんでる？")
+                 ], ipa: "/ˈfɪt ˈɪn wɪð/"),
+            make("in short supply", "scarce; not enough available",
+                 "不足している・品薄で",
+                 useCases: ["物が足りないとき", "時間や忍耐が足りないと冗談っぽく言うとき"],
+                 examples: [
+                    ("Eggs are in short supply at the moment.", "今、卵が品薄なんだよね。"),
+                    ("Patience is in short supply in this house this morning!", "今朝のこの家では、みんな我慢が足りてないね！")
+                 ], ipa: "/ɪn ˈʃɔːt səˈplaɪ/"),
+            make("step down", "to leave an important job or position",
+                 "（役職を）辞める・退く",
+                 useCases: ["誰かが役職を降りたと話すとき", "責任ある立場を引くとき"],
+                 examples: [
+                    ("Our manager is stepping down at the end of the year.", "うちの部長、年末で退くんだって。"),
+                    ("She stepped down as captain to focus on her studies.", "彼女は勉強に集中するためにキャプテンを降りたんだ。")
+                 ], ipa: "/ˈstep ˈdaʊn/"),
+            make("pay up", "(informal) to pay money that you owe, often unwillingly",
+                 "（しぶしぶ）払う・ちゃんと払う",
+                 useCases: ["賭けや貸しの支払いを求めるとき", "しぶしぶお金を払ったと言うとき"],
+                 examples: [
+                    ("I won the bet – come on, pay up!", "賭けは私の勝ち、ほら払って！"),
+                    ("The insurance company finally paid up after three months.", "3か月経って、ようやく保険会社が払ってくれたよ。")
+                 ], ipa: "/ˈpeɪ ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial296: [Word] {
+        [
+            make("run through", "to explain, check or practise something quickly from start to finish",
+                 "ざっと説明する・一通り確認する・通しで練習する",
+                 useCases: ["手順や予定をざっと説明するとき", "本番前にリハーサルするとき"],
+                 examples: [
+                    ("Can you run through the plan for tomorrow one more time?", "明日の予定、もう一回ざっと説明してくれる？"),
+                    ("Let's run through the speech before everyone arrives.", "みんなが来る前にスピーチを通しで練習しよう。")
+                 ], ipa: "/ˈrʌn ˈθruː/"),
+            make("pick on", "to keep treating someone unfairly, criticising or teasing them",
+                 "〜をいじめる・〜ばかり責める・目の敵にする",
+                 useCases: ["誰かが標的にされているとき", "自分ばかり責められて不満なとき"],
+                 examples: [
+                    ("Stop picking on your little brother!", "弟をいじめるのはやめなさい！"),
+                    ("Why are you always picking on me? It wasn't my fault.", "なんでいつも私ばっかり責めるの？私のせいじゃないのに。")
+                 ], ipa: "/ˈpɪk ɒn/"),
+            make("shell out", "(informal) to pay money for something, especially more than you want to",
+                 "（大金を）払う・出す",
+                 useCases: ["高い出費をぼやくとき", "しぶしぶお金を出したと言うとき"],
+                 examples: [
+                    ("I had to shell out two hundred quid to fix the car.", "車の修理に200ポンドも払う羽目になったよ。"),
+                    ("I'm not shelling out that much for a concert ticket.", "コンサートのチケットにそんな大金は出さないよ。")
+                 ], ipa: "/ˈʃel ˈaʊt/"),
+            make("snap out of it", "(informal) to stop feeling sad, upset or confused and return to normal",
+                 "（落ち込みなどから）立ち直る・気持ちを切り替える",
+                 useCases: ["落ち込んでいる人を励ますとき", "ぼんやりから我に返るとき"],
+                 examples: [
+                    ("Come on, snap out of it – it's only one bad exam.", "ほら、元気出して。たった一回テストが悪かっただけだよ。"),
+                    ("I was in a bit of a mood, but I've snapped out of it now.", "ちょっと機嫌悪かったけど、もう切り替えたよ。")
+                 ], ipa: "/ˈsnæp ˈaʊt əv ɪt/"),
+            make("make way", "to move aside so that someone or something can pass; to be replaced by something new",
+                 "道を空ける・（新しいものに）場所を譲る",
+                 useCases: ["人に道を空けてもらうとき", "古いものが取り壊されて新しいものになるとき"],
+                 examples: [
+                    ("Could you make way, please? He's carrying something heavy.", "道を空けてもらえますか？重い物を運んでるので。"),
+                    ("The old cinema was knocked down to make way for flats.", "古い映画館はマンションを建てるために取り壊されたんだ。")
+                 ], ipa: "/ˈmeɪk ˈweɪ/"),
+            make("get out of", "to avoid doing something you should do or don't want to do",
+                 "〜をサボる・〜から逃れる・〜を免れる",
+                 useCases: ["嫌な用事を避けたいとき", "うまく逃れた・逃れられなかったと言うとき"],
+                 examples: [
+                    ("I tried to get out of the meeting, but my boss insisted.", "会議をサボろうとしたけど、上司に絶対出ろって言われた。"),
+                    ("You're not getting out of the washing-up that easily!", "そんな簡単に皿洗いから逃れられると思わないでよ！")
+                 ], ipa: "/ˈɡet ˈaʊt əv/"),
+            make("fall over", "to fall to the ground from a standing position",
+                 "転ぶ・倒れる",
+                 useCases: ["転んだことを話すとき", "物が倒れたとき"],
+                 examples: [
+                    ("I slipped on the ice and fell over in front of everyone.", "氷で滑って、みんなの前で転んじゃった。"),
+                    ("Careful, that vase is going to fall over.", "気をつけて、その花瓶倒れそうだよ。")
+                 ], ipa: "/ˈfɔːl ˈəʊvə/"),
+            make("get up to", "(informal) to do something, often something surprising or slightly naughty",
+                 "（何かを）する・やらかす",
+                 useCases: ["週末などに何をしたか聞くとき", "子どもがいたずらしていないか気にするとき"],
+                 examples: [
+                    ("What did you get up to at the weekend?", "週末は何してたの？"),
+                    ("The kids are very quiet – I wonder what they're getting up to.", "子どもたちがやけに静かだな。何やってるんだろう。")
+                 ], ipa: "/ˈɡet ˈʌp tuː/"),
+            make("blow up", "(informal) to suddenly become very angry; to explode",
+                 "急にキレる・爆発する",
+                 useCases: ["誰かが突然怒り出したとき", "小さなことで大騒ぎになったとき"],
+                 examples: [
+                    ("He just blew up at me for being five minutes late.", "5分遅れただけで彼にキレられたよ。"),
+                    ("Sorry I blew up earlier – I was really stressed.", "さっきはキレてごめん、すごくストレス溜まってて。")
+                 ], ipa: "/ˈbləʊ ˈʌp/"),
+            make("dish up", "to put food onto plates so it can be eaten",
+                 "（料理を）皿に盛る・よそう",
+                 useCases: ["料理ができて盛り付けるとき", "食事の準備ができたと伝えるとき"],
+                 examples: [
+                    ("Dinner's ready – I'm just dishing up now.", "夕飯できたよ、今よそってるところ。"),
+                    ("Can you grab the plates while I dish up?", "私がよそってる間にお皿出してくれる？")
+                 ], ipa: "/ˈdɪʃ ˈʌp/"),
+            make("press on", "to continue doing something in a determined way, despite difficulties",
+                 "（めげずに）先へ進む・続ける",
+                 useCases: ["疲れていても作業を続けるとき", "困難があっても予定通り進めるとき"],
+                 examples: [
+                    ("We're nearly there, so let's press on.", "もうすぐ着くから、このまま進もう。"),
+                    ("It started raining, but we pressed on with the walk.", "雨が降り出したけど、そのまま散歩を続けたんだ。")
+                 ], ipa: "/ˈpres ɒn/"),
+            make("in the run-up to", "in the period of time just before an important event",
+                 "〜の直前の時期に・〜に向けて",
+                 useCases: ["イベント前の忙しい時期を話すとき", "クリスマスや試験前の様子を言うとき"],
+                 examples: [
+                    ("The shops are always packed in the run-up to Christmas.", "クリスマス前はいつも店が混んでるよね。"),
+                    ("I barely slept in the run-up to my exams.", "試験前はほとんど寝てなかったよ。")
+                 ], ipa: "/ɪn ðə ˈrʌn ʌp tuː/"),
+            make("go back a long way", "(of people) to have known each other for a long time",
+                 "古い付き合いだ・昔からの仲だ",
+                 useCases: ["長年の友人を紹介するとき", "誰かとの関係の長さを話すとき"],
+                 examples: [
+                    ("Tom and I go back a long way – we were at school together.", "トムとは古い付き合いなんだ。学校が一緒だったから。"),
+                    ("We go back a long way, so I trust her completely.", "彼女とは昔からの仲だから、完全に信頼してるよ。")
+                 ], ipa: "/ˈɡəʊ ˈbæk ə ˈlɒŋ ˈweɪ/"),
+            make("soldier on", "to continue doing something even though it is difficult or you feel unwell",
+                 "（つらくても）頑張り続ける・踏ん張る",
+                 useCases: ["体調が悪くても働き続けるとき", "大変な状況でも諦めずに続けるとき"],
+                 examples: [
+                    ("I've got a cold, but I'm soldiering on.", "風邪ひいてるけど、何とか頑張ってるよ。"),
+                    ("You don't have to soldier on – go home and rest.", "無理して頑張らなくていいよ。帰って休んで。")
+                 ], ipa: "/ˈsəʊldʒər ɒn/"),
+            make("let yourself go", "to relax and enjoy yourself freely; also, to stop taking care of your appearance",
+                 "羽目を外す・思い切り楽しむ／身なりに構わなくなる",
+                 useCases: ["遠慮せず楽しむよう勧めるとき", "見た目に気を使わなくなったと言うとき"],
+                 examples: [
+                    ("It's a party – just let yourself go and dance!", "パーティーなんだから、羽目を外して踊りなよ！"),
+                    ("I've really let myself go since I started working from home.", "在宅勤務になってから、すっかり身なりに構わなくなっちゃった。")
+                 ], ipa: "/ˈlet jɔːˈself ˈɡəʊ/"),
+        ]
+    }
+    private static var britishColloquial297: [Word] {
+        [
+            make("put forward", "to suggest an idea, plan or person for others to consider",
+                 "（案や意見を）出す・提案する・推薦する",
+                 useCases: ["会議やグループでアイデアを提案するとき", "誰かを候補に推薦するとき"],
+                 examples: [
+                    ("She put forward a really good idea in the meeting.", "彼女、会議でめっちゃいいアイデアを出してたよ。"),
+                    ("I've put your name forward for the team leader role.", "チームリーダーの候補に君の名前を推薦しておいたよ。")
+                 ], ipa: "/ˈpʊt ˈfɔːwəd/"),
+            make("catch-22", "a frustrating situation where you cannot win because each option depends on the other",
+                 "どうにもならない板挟み・八方ふさがり",
+                 useCases: ["矛盾した条件で身動きが取れないとき", "就職や手続きの理不尽さを嘆くとき"],
+                 examples: [
+                    ("You need experience to get a job, but you need a job to get experience – it's a catch-22.", "仕事に就くには経験が要るけど、経験を積むには仕事が要る。完全に八方ふさがりだよ。"),
+                    ("It's a bit of a catch-22, really.", "正直、ちょっとした板挟みなんだよね。")
+                 ], ipa: "/ˌkætʃ ˌtwenti ˈtuː/"),
+            make("cross off", "to draw a line through something on a list because it is done or no longer needed",
+                 "（リストから）消す・線を引いて消す",
+                 useCases: ["やることリストを片付けたとき", "候補から外すとき"],
+                 examples: [
+                    ("That's the shopping done – I can cross it off the list.", "買い物終わった。リストから消せるね。"),
+                    ("We crossed that restaurant off because it was too expensive.", "あのレストランは高すぎたから候補から外したよ。")
+                 ], ipa: "/ˈkrɒs ˈɒf/"),
+            make("bump up", "(informal) to increase something, such as a price, number or level",
+                 "（値段・数などを）上げる・増やす",
+                 useCases: ["値上げについて話すとき", "量や評価を引き上げるとき"],
+                 examples: [
+                    ("They've bumped up the price of coffee again.", "またコーヒーの値段上げたよ。"),
+                    ("Can you bump me up to the earlier train?", "早い方の電車に変更してもらえますか？")
+                 ], ipa: "/ˈbʌmp ˈʌp/"),
+            make("doodle", "to draw little pictures or patterns without thinking, especially when bored; such a drawing",
+                 "落書き（する）・いたずら書き（する）",
+                 useCases: ["会議や電話中に手持ち無沙汰なとき", "ノートの余白の絵について話すとき"],
+                 examples: [
+                    ("I always doodle when I'm on the phone.", "電話してるといつも落書きしちゃうんだよね。"),
+                    ("His notebook is full of doodles.", "彼のノートは落書きだらけだよ。")
+                 ], ipa: "/ˈduːdl/"),
+            make("done in", "(informal, British) extremely tired; exhausted",
+                 "へとへと・くたくた",
+                 useCases: ["一日の終わりに疲れ切ったとき", "長い移動や運動の後"],
+                 examples: [
+                    ("I'm completely done in – I'm going straight to bed.", "もうくたくた。すぐ寝るわ。"),
+                    ("You look done in. Sit down and I'll make you a tea.", "疲れきった顔してるね。座ってて、紅茶淹れるから。")
+                 ], ipa: "/ˈdʌn ˈɪn/"),
+            make("dicey", "(informal) risky, uncertain or slightly dangerous",
+                 "危なっかしい・きわどい・怪しい",
+                 useCases: ["天気や状況が微妙なとき", "リスクがありそうな計画について話すとき"],
+                 examples: [
+                    ("The weather looks a bit dicey for the barbecue.", "バーベキューするには天気がちょっと怪しいね。"),
+                    ("It got a bit dicey on the motorway in the snow.", "雪の高速道路でちょっとヒヤッとしたよ。")
+                 ], ipa: "/ˈdaɪsi/"),
+            make("it can't hurt", "used to say that trying something is a good idea because there is nothing to lose",
+                 "やってみて損はない・ダメ元でいい",
+                 useCases: ["ダメ元で試すよう勧めるとき", "聞くだけ聞いてみようと言うとき"],
+                 examples: [
+                    ("Just ask for a discount – it can't hurt.", "値引き頼んでみなよ。損はないって。"),
+                    ("It can't hurt to apply, even if you don't get it.", "受からなくても、応募して損はないよ。")
+                 ], ipa: "/ɪt ˈkɑːnt ˈhɜːt/"),
+            make("what's the worst that could happen?", "used to encourage someone by suggesting the risk is not very serious",
+                 "最悪どうなるっていうの？・失敗しても大したことないよ",
+                 useCases: ["迷っている人の背中を押すとき", "自分を奮い立たせるとき"],
+                 examples: [
+                    ("Just ask her out – what's the worst that could happen?", "デートに誘っちゃいなよ。最悪どうなるっていうの？"),
+                    ("Go for the interview. What's the worst that could happen?", "面接受けてみなよ。失敗しても大したことないって。")
+                 ], ipa: "/ˈwɒts ðə ˈwɜːst ðət kəd ˈhæpən/"),
+            make("the nitty-gritty", "(informal) the basic, practical details of a subject or situation",
+                 "細かい具体的な部分・肝心な詳細",
+                 useCases: ["本題の具体的な話に入るとき", "細部の詰めについて話すとき"],
+                 examples: [
+                    ("Let's get down to the nitty-gritty – how much will it cost?", "具体的な話に入ろう。いくらかかるの？"),
+                    ("I'll leave the nitty-gritty to you.", "細かいところは君に任せるよ。")
+                 ], ipa: "/ðə ˌnɪti ˈɡrɪti/"),
+            make("the bottom line", "the most important fact or point in a situation",
+                 "要するに・結局大事なのは・肝心な点",
+                 useCases: ["話を要点にまとめるとき", "結論をはっきり伝えるとき"],
+                 examples: [
+                    ("The bottom line is, we can't afford it.", "要するに、そんなお金ないってこと。"),
+                    ("I don't care how you do it – the bottom line is it has to be done by Friday.", "やり方はどうでもいいよ。肝心なのは金曜までに終わらせることだから。")
+                 ], ipa: "/ðə ˈbɒtəm ˈlaɪn/"),
+            make("tick off", "to mark items on a list as done; (British) to tell someone off",
+                 "（リストに）チェックを入れる・（英）叱る",
+                 useCases: ["やることを一つずつ片付けるとき", "怒られたことを話すとき"],
+                 examples: [
+                    ("I've ticked off everything on my to-do list today.", "今日はやることリスト全部チェックしたよ。"),
+                    ("I got ticked off for being late again.", "また遅刻して叱られちゃった。")
+                 ], ipa: "/ˈtɪk ˈɒf/"),
+            make("does that make sense?", "used to check that someone has understood what you have explained",
+                 "わかるかな？・伝わってる？",
+                 useCases: ["説明の途中で理解を確認するとき", "自分の話が伝わっているか不安なとき"],
+                 examples: [
+                    ("You press this first, then that. Does that make sense?", "まずこれを押して、次にそれ。わかるかな？"),
+                    ("I'm not sure I explained it well – does that make sense?", "うまく説明できたかわからないけど、伝わってる？")
+                 ], ipa: "/dʌz ðæt ˈmeɪk ˈsens/"),
+            make("dead easy", "(informal, British) very easy",
+                 "めちゃくちゃ簡単",
+                 useCases: ["何かが簡単だと伝えるとき", "相手を安心させるとき"],
+                 examples: [
+                    ("Don't worry, the recipe is dead easy.", "心配しないで、そのレシピめっちゃ簡単だから。"),
+                    ("The test was dead easy – I finished in twenty minutes.", "テストめちゃ簡単だった。20分で終わったよ。")
+                 ], ipa: "/ˈded ˈiːzi/"),
+            make("that's fair", "used to accept that what someone has said is reasonable",
+                 "それはもっともだね・確かにそうだね",
+                 useCases: ["相手の指摘や意見を認めるとき", "反論せず受け入れるとき"],
+                 examples: [
+                    ("\"You did say you'd help.\" \"Yeah, that's fair.\"", "「手伝うって言ってたじゃん」「うん、それは確かに」"),
+                    ("That's fair – I should have called you first.", "それはもっともだね。先に電話すべきだった。")
+                 ], ipa: "/ˈðæts ˈfeə/"),
+        ]
+    }
+    private static var britishColloquial298: [Word] {
+        [
+            make("let someone down", "to disappoint someone by not doing what they hoped or expected you to do",
+                 "（人を）がっかりさせる・期待を裏切る",
+                 useCases: ["約束を守れず相手を失望させたとき", "頼りにしていた人に裏切られたと感じるとき"],
+                 examples: [
+                    ("I'm really sorry – I feel like I've let you down.", "本当にごめん。君の期待を裏切っちゃった気がする。"),
+                    ("Don't worry, she won't let us down.", "心配しないで、彼女なら僕らをがっかりさせたりしないよ。")
+                 ], ipa: "/ˈlet ˌsʌmwʌn ˈdaʊn/"),
+            make("hold it against someone", "to stay annoyed with someone or think less of them because of something they did",
+                 "（そのことで）人を恨む・根に持つ",
+                 useCases: ["相手のミスを気にしていないと伝えるとき", "過去のことを根に持たれていないか心配なとき"],
+                 examples: [
+                    ("You were stressed – I don't hold it against you.", "ストレス溜まってたんだし、根に持ったりしてないよ。"),
+                    ("I hope he doesn't hold it against me.", "彼がそのことで僕を恨んでないといいんだけど。")
+                 ], ipa: "/ˈhəʊld ɪt əˈɡenst ˌsʌmwʌn/"),
+            make("see to it that", "to make sure that something happens or is done",
+                 "〜するよう取り計らう・必ず〜するようにする",
+                 useCases: ["責任を持って何かを手配すると約束するとき", "確実に実行させると伝えるとき"],
+                 examples: [
+                    ("I'll see to it that everyone gets a copy.", "全員に1部ずつ行き渡るようにしておくよ。"),
+                    ("Can you see to it that the door's locked before you leave?", "出る前にドアの鍵が閉まってるか確認しておいてくれる？")
+                 ], ipa: "/ˈsiː tʊ ɪt ðæt/"),
+            make("sensible", "showing good judgement; practical and reasonable rather than silly",
+                 "分別のある・賢明な・実用的な",
+                 useCases: ["判断や考え方がしっかりしていると褒めるとき", "服や靴が実用的だと言うとき"],
+                 examples: [
+                    ("That's a very sensible idea.", "それはすごく賢明な考えだね。"),
+                    ("Wear sensible shoes – we'll be walking a lot.", "歩きやすい靴で来てね。たくさん歩くから。")
+                 ], ipa: "/ˈsensəbl/"),
+            make("two-faced", "saying nice things to someone's face but unkind things behind their back",
+                 "裏表のある・二枚舌の",
+                 useCases: ["陰口を言う人について話すとき", "人の態度が場面で変わることを批判するとき"],
+                 examples: [
+                    ("She's so two-faced – nice to you, then slags you off behind your back.", "あの子ほんと裏表あるよ。目の前では優しいのに陰で悪口言うんだから。"),
+                    ("I can't stand two-faced people.", "裏表のある人はどうしても無理。")
+                 ], ipa: "/ˌtuː ˈfeɪst/"),
+            make("reserved", "(of a person) quiet and not quick to show feelings or talk about yourself",
+                 "控えめな・遠慮がちな・打ち解けにくい",
+                 useCases: ["人の性格を説明するとき", "初対面で口数が少ない人について話すとき"],
+                 examples: [
+                    ("He's a bit reserved at first, but he's lovely once you get to know him.", "最初はちょっと控えめだけど、仲良くなるとすごくいい人だよ。"),
+                    ("I tend to be quite reserved around new people.", "初対面の人の前だと割と遠慮しがちなんだ。")
+                 ], ipa: "/rɪˈzɜːvd/"),
+            make("tactful", "careful not to upset or offend people when you say something difficult",
+                 "気配りのある・言い方に配慮のある",
+                 useCases: ["言いにくいことを上手に伝える人を褒めるとき", "言い方に気をつけるよう促すとき"],
+                 examples: [
+                    ("Try to be tactful when you tell her.", "彼女に伝えるときは言い方に気をつけてね。"),
+                    ("That wasn't very tactful of him.", "あれは彼、ちょっと配慮が足りなかったね。")
+                 ], ipa: "/ˈtæktfl/"),
+            make("outspoken", "saying exactly what you think, even if it shocks or offends people",
+                 "ずけずけ物を言う・遠慮なく意見を言う",
+                 useCases: ["はっきり意見を言う人について話すとき", "率直すぎる発言について話すとき"],
+                 examples: [
+                    ("My gran is very outspoken – she'll tell you exactly what she thinks.", "うちのおばあちゃんはズバズバ言うタイプで、思ったことそのまま言うよ。"),
+                    ("He's always been quite outspoken about it.", "彼はそのことについて昔から遠慮なく意見を言ってるよ。")
+                 ], ipa: "/aʊtˈspəʊkən/"),
+            make("put a wash on", "(informal, British) to start a load of washing in the washing machine",
+                 "洗濯機を回す",
+                 useCases: ["家事の予定を話すとき", "ついでに洗濯することを伝えるとき"],
+                 examples: [
+                    ("I'll put a wash on before we go out.", "出かける前に洗濯機回しとくね。"),
+                    ("Have you got anything that needs washing? I'm putting a wash on.", "洗うものある？今から洗濯機回すけど。")
+                 ], ipa: "/ˈpʊt ə ˈwɒʃ ɒn/"),
+            make("up the road", "(informal) a short distance away along the same street or nearby",
+                 "すぐそこ・この道の少し先",
+                 useCases: ["近所の場所を説明するとき", "近くに住んでいると言うとき"],
+                 examples: [
+                    ("There's a nice café just up the road.", "すぐそこにいいカフェがあるよ。"),
+                    ("My sister lives just up the road from me.", "妹はうちのすぐ近くに住んでるんだ。")
+                 ], ipa: "/ˈʌp ðə ˈrəʊd/"),
+            make("read too much into", "to believe that something has more meaning or importance than it really has",
+                 "深読みしすぎる・考えすぎる",
+                 useCases: ["相手の言動を気にしすぎている人を励ますとき", "自分の深読みを反省するとき"],
+                 examples: [
+                    ("I wouldn't read too much into it – he's just busy.", "あんまり深読みしない方がいいよ。彼はただ忙しいだけだって。"),
+                    ("Maybe I'm reading too much into her text.", "彼女のメッセージ、深読みしすぎてるのかも。")
+                 ], ipa: "/ˈriːd tuː ˈmʌtʃ ˈɪntuː/"),
+            make("it's for the best", "used to say that something which seems bad now will be better in the end",
+                 "結果的にはそれでよかった・それが一番いい",
+                 useCases: ["別れや失敗を前向きに受け止めるとき", "落ち込んでいる人を慰めるとき"],
+                 examples: [
+                    ("I know it hurts, but maybe it's for the best.", "つらいのはわかるけど、たぶんこれでよかったんだよ。"),
+                    ("We didn't get the flat, but it's probably for the best.", "あの部屋は借りられなかったけど、たぶん結果的にはよかったんだと思う。")
+                 ], ipa: "/ɪts fə ðə ˈbest/"),
+            make("on top of that", "used to add another point, usually something bad, to what you have just said",
+                 "その上・おまけに・それに加えて",
+                 useCases: ["悪いことが重なったと話すとき", "理由を付け加えるとき"],
+                 examples: [
+                    ("I missed the bus, and on top of that it started raining.", "バスに乗り遅れて、おまけに雨まで降ってきたんだよ。"),
+                    ("It's cheap, and on top of that the food is great.", "安いし、それに加えて料理も最高なんだ。")
+                 ], ipa: "/ɒn ˈtɒp əv ˈðæt/"),
+            make("take someone at their word", "to believe that someone means exactly what they say",
+                 "（人の）言葉をそのまま信じる・言葉通りに受け取る",
+                 useCases: ["相手の言うことを信用すると伝えるとき", "遠慮の言葉を真に受けたとき"],
+                 examples: [
+                    ("He said he'd pay me back, and I took him at his word.", "彼が返すって言ったから、その言葉を信じたんだ。"),
+                    ("She said not to bring anything, so I took her at her word.", "彼女が何も持ってこなくていいって言うから、言葉通りに受け取ったよ。")
+                 ], ipa: "/ˈteɪk ˌsʌmwʌn ət ðeə ˈwɜːd/"),
+            make("give someone a hard time", "(informal) to criticise, tease or make things difficult for someone",
+                 "（人を）責める・からかう・困らせる",
+                 useCases: ["相手を責めすぎないよう言うとき", "冗談でいじられていることを話すとき"],
+                 examples: [
+                    ("Don't give him a hard time – it was an honest mistake.", "彼をあんまり責めないであげて。悪気のないミスなんだから。"),
+                    ("My mates gave me a hard time about my new haircut.", "新しい髪型のことで友達にめっちゃいじられたよ。")
+                 ], ipa: "/ˈɡɪv ˌsʌmwʌn ə ˈhɑːd ˈtaɪm/"),
+        ]
+    }
+    private static var britishColloquial299: [Word] {
+        [
+            make("follow suit", "to do the same thing that someone else has just done",
+                 "人に倣う・同じことをする",
+                 useCases: ["誰かの行動に他の人も続いたとき", "自分も同じようにすると言うとき"],
+                 examples: [
+                    ("One person left early, and everyone else followed suit.", "一人が早めに帰ったら、みんなそれに続いたんだ。"),
+                    ("If you order dessert, I'll follow suit.", "君がデザート頼むなら、僕もそうするよ。")
+                 ], ipa: "/ˈfɒləʊ ˈsuːt/"),
+            make("a clean slate", "a fresh start where past mistakes or problems are forgotten",
+                 "白紙の状態・一からの出直し",
+                 useCases: ["過去を水に流してやり直すとき", "新しい環境で心機一転するとき"],
+                 examples: [
+                    ("Let's forget about last week and start with a clean slate.", "先週のことは忘れて、一からやり直そう。"),
+                    ("Moving to a new city felt like a clean slate.", "新しい街に引っ越して、心機一転できた気がした。")
+                 ], ipa: "/ə ˈkliːn ˈsleɪt/"),
+            make("stick it out", "(informal) to continue doing something difficult or unpleasant until the end",
+                 "最後まで耐える・辛抱して続ける",
+                 useCases: ["辛い仕事や状況を我慢して続けるとき", "途中で諦めないよう励ますとき"],
+                 examples: [
+                    ("The job's tough, but I'm going to stick it out till summer.", "仕事はきついけど、夏までは辛抱して続けるつもり。"),
+                    ("Just stick it out – it gets easier after the first month.", "とにかく続けてみて。最初の1ヶ月を過ぎれば楽になるから。")
+                 ], ipa: "/ˈstɪk ɪt ˈaʊt/"),
+            make("grin and bear it", "to accept an unpleasant situation without complaining because you cannot change it",
+                 "笑って耐える・黙って我慢する",
+                 useCases: ["どうしようもない状況を受け入れるとき", "文句を言わず我慢するしかないとき"],
+                 examples: [
+                    ("I hate long meetings, but I just have to grin and bear it.", "長い会議は大嫌いだけど、我慢するしかないんだよね。"),
+                    ("There's nothing we can do about the weather – we'll just have to grin and bear it.", "天気はどうしようもないし、耐えるしかないね。")
+                 ], ipa: "/ˈɡrɪn ən ˈbeər ɪt/"),
+            make("face the music", "to accept criticism or punishment for something you have done",
+                 "（自分のしたことの）報いを受ける・責任を取る",
+                 useCases: ["ミスの責任を取りに行くとき", "怒られるのを覚悟するとき"],
+                 examples: [
+                    ("I broke Mum's vase – time to go home and face the music.", "母さんの花瓶割っちゃった。帰って怒られる覚悟をしなきゃ。"),
+                    ("Sooner or later, he'll have to face the music.", "遅かれ早かれ、彼は責任を取らなきゃいけなくなるよ。")
+                 ], ipa: "/ˈfeɪs ðə ˈmjuːzɪk/"),
+            make("suck it up", "(informal) to accept something unpleasant and deal with it without complaining",
+                 "（文句を言わず）我慢する・受け入れる",
+                 useCases: ["嫌なことでも割り切ってやるとき", "愚痴をやめて頑張れと言うとき"],
+                 examples: [
+                    ("It's not ideal, but we'll just have to suck it up.", "理想的じゃないけど、割り切ってやるしかないね。"),
+                    ("I didn't want to work the weekend, but I sucked it up.", "週末に働きたくなかったけど、我慢してやったよ。")
+                 ], ipa: "/ˈsʌk ɪt ˈʌp/"),
+            make("pipe up", "(informal) to suddenly start speaking, especially after being quiet",
+                 "（黙っていた人が）急に口を挟む・声を上げる",
+                 useCases: ["静かだった人が急に発言したとき", "遠慮せず意見を言ってと促すとき"],
+                 examples: [
+                    ("Then my little brother piped up, \"I want pizza!\"", "そしたら弟が急に「ピザがいい！」って言い出したんだ。"),
+                    ("If you've got a question, just pipe up.", "質問があったら遠慮なく言ってね。")
+                 ], ipa: "/ˈpaɪp ˈʌp/"),
+            make("say the word", "used to tell someone that you will do something as soon as they ask",
+                 "言ってくれればすぐやるよ・一言言ってくれれば",
+                 useCases: ["いつでも手伝うと申し出るとき", "準備ができたら合図してと言うとき"],
+                 examples: [
+                    ("If you need a lift, just say the word.", "車で送ってほしかったら、一言言ってね。"),
+                    ("Say the word and I'll book the table.", "言ってくれればすぐ席を予約するよ。")
+                 ], ipa: "/ˈseɪ ðə ˈwɜːd/"),
+            make("you have my word", "used to promise sincerely that you will do something",
+                 "約束する・誓うよ",
+                 useCases: ["真剣に約束するとき", "相手を安心させたいとき"],
+                 examples: [
+                    ("I won't tell anyone – you have my word.", "誰にも言わないよ。約束する。"),
+                    ("You have my word that it'll be finished by Friday.", "金曜までに必ず終わらせるって約束するよ。")
+                 ], ipa: "/ju ˈhæv maɪ ˈwɜːd/"),
+            make("keep your word", "to do what you promised you would do",
+                 "約束を守る",
+                 useCases: ["約束をきちんと守る人を褒めるとき", "約束を守ってと念を押すとき"],
+                 examples: [
+                    ("He said he'd help, and he kept his word.", "彼は手伝うって言って、ちゃんと約束を守ってくれた。"),
+                    ("I always try to keep my word.", "僕はいつも約束は守るようにしてるんだ。")
+                 ], ipa: "/ˈkiːp jɔː ˈwɜːd/"),
+            make("pep talk", "a short speech meant to encourage someone and make them feel more confident",
+                 "激励の言葉・はっぱをかけること",
+                 useCases: ["本番前に誰かを励ますとき", "落ち込んだ人に元気を出させるとき"],
+                 examples: [
+                    ("The coach gave us a pep talk before the match.", "試合前にコーチが激励の言葉をかけてくれた。"),
+                    ("I need a pep talk before my interview.", "面接の前に誰か励ましてほしいよ。")
+                 ], ipa: "/ˈpep ˌtɔːk/"),
+            make("you lot", "(informal, British) used to speak to or about a group of people",
+                 "君たち・あんたら（みんな）",
+                 useCases: ["友人グループや家族にまとめて話しかけるとき", "仲間内でくだけて呼びかけるとき"],
+                 examples: [
+                    ("Are you lot coming to the pub later?", "君たち、後でパブ来る？"),
+                    ("I'll see you lot tomorrow.", "じゃあみんな、また明日ね。")
+                 ], ipa: "/ˈjuː ˌlɒt/"),
+            make("get the giggles", "to start laughing and find it hard to stop, often at a bad moment",
+                 "笑いが止まらなくなる",
+                 useCases: ["笑ってはいけない場面で笑いが止まらないとき", "友達と笑い転げた話をするとき"],
+                 examples: [
+                    ("We got the giggles in the middle of the lesson.", "授業中に笑いが止まらなくなっちゃった。"),
+                    ("Don't look at me or I'll get the giggles!", "こっち見ないで、笑いが止まらなくなるから！")
+                 ], ipa: "/ˈɡet ðə ˈɡɪɡlz/"),
+            make("off topic", "not connected to the subject being discussed",
+                 "話がそれて・本題から外れて",
+                 useCases: ["余談を始めるとき", "話が脱線していると指摘するとき"],
+                 examples: [
+                    ("Slightly off topic, but has anyone seen my keys?", "ちょっと話それるけど、誰か僕の鍵見なかった？"),
+                    ("Sorry, we're getting a bit off topic.", "ごめん、ちょっと話が脱線してるね。")
+                 ], ipa: "/ˌɒf ˈtɒpɪk/"),
+            make("rack your brains", "to think very hard to try to remember or solve something",
+                 "知恵を絞る・必死に思い出そうとする",
+                 useCases: ["名前などを必死に思い出そうとするとき", "いいアイデアを懸命に考えるとき"],
+                 examples: [
+                    ("I've been racking my brains, but I can't remember her name.", "必死に考えてるんだけど、彼女の名前が思い出せない。"),
+                    ("We racked our brains for a present idea.", "プレゼントのアイデアをみんなで知恵を絞って考えた。")
+                 ], ipa: "/ˈræk jɔː ˈbreɪnz/"),
+        ]
+    }
+    private static var britishColloquial300: [Word] {
+        [
+            make("go all out", "(informal) to make the greatest possible effort, or to spend a lot of time or money on something",
+                 "全力を尽くす・（お金や手間を）惜しまない",
+                 useCases: ["パーティーや準備に気合を入れるとき", "本気で取り組むと言うとき"],
+                 examples: [
+                    ("They really went all out for her birthday party.", "彼女の誕生日パーティー、ほんとに気合入ってたね。"),
+                    ("We're going all out to finish this by Friday.", "金曜までに終わらせるために全力でやってるよ。")
+                 ], ipa: "/ˈɡəʊ ˈɔːl ˈaʊt/"),
+            make("give it your all", "to put all your energy and effort into something",
+                 "全力を出し切る・ベストを尽くす",
+                 useCases: ["試験や試合の前に励ますとき", "結果より努力を評価するとき"],
+                 examples: [
+                    ("Just go out there and give it your all.", "とにかく行って、全力を出し切っておいで。"),
+                    ("We lost, but at least we gave it our all.", "負けたけど、少なくとも全力は出し切ったよ。")
+                 ], ipa: "/ˈɡɪv ɪt jɔːr ˈɔːl/"),
+            make("practise what you preach", "to do the things that you advise other people to do",
+                 "自分で言ったことを自ら実行する・有言実行",
+                 useCases: ["人に言うことと自分の行動が違う人を指摘するとき", "自分も実践していると言うとき"],
+                 examples: [
+                    ("He tells everyone to eat healthily, but he doesn't practise what he preaches.", "彼はみんなに健康的に食べろって言うけど、自分は全然やってないんだよね。"),
+                    ("If I want the kids to read more, I need to practise what I preach.", "子どもにもっと本を読ませたいなら、まず自分がやらないとね。")
+                 ], ipa: "/ˈpræktɪs wɒt juː ˈpriːtʃ/"),
+            make("that's easy for you to say", "used to tell someone that they would not think something was easy if they were in your situation",
+                 "君だからそう言えるんだよ・他人事だと思って",
+                 useCases: ["気軽なアドバイスに反論するとき", "相手と自分の立場の違いを指摘するとき"],
+                 examples: [
+                    ("\"Just relax.\" \"That's easy for you to say – you're not giving the speech!\"", "「リラックスしなよ」「そりゃ君は言えるよ、スピーチするのは僕なんだから！」"),
+                    ("That's easy for you to say. You've got loads of free time.", "君だからそう言えるんだよ。暇がたくさんあるんだから。")
+                 ], ipa: "/ðæts ˈiːzi fə juː tə ˈseɪ/"),
+            make("the easy way out", "a way of dealing with a problem that needs the least effort, often not the best or bravest way",
+                 "安易な逃げ道・楽な解決策",
+                 useCases: ["楽な方を選んだことを批判するとき", "難しい道をあえて選ぶと言うとき"],
+                 examples: [
+                    ("Quitting would be the easy way out, but I want to see it through.", "辞めるのは楽な道だけど、最後までやり遂げたいんだ。"),
+                    ("He took the easy way out and just blamed someone else.", "彼は楽な方に逃げて、他の人のせいにしたんだ。")
+                 ], ipa: "/ði ˈiːzi ˈweɪ ˈaʊt/"),
+            make("put a damper on", "to make an event or situation less enjoyable or exciting",
+                 "（楽しい雰囲気に）水を差す・盛り下げる",
+                 useCases: ["天気やトラブルでイベントが台無しになったとき", "雰囲気を壊したくないと言うとき"],
+                 examples: [
+                    ("The rain put a bit of a damper on the barbecue.", "雨のせいでバーベキューがちょっと盛り下がっちゃった。"),
+                    ("I don't want to put a damper on things, but we need to leave soon.", "水を差したくないけど、そろそろ出ないと。")
+                 ], ipa: "/ˈpʊt ə ˈdæmpər ɒn/"),
+            make("feel a bit down", "to feel slightly sad or unhappy",
+                 "ちょっと落ち込んでいる・気分が沈んでいる",
+                 useCases: ["元気がない理由を話すとき", "友達の様子を気遣うとき"],
+                 examples: [
+                    ("I've been feeling a bit down since the holiday ended.", "休みが終わってから、ちょっと気分が沈んでてさ。"),
+                    ("You seem a bit down today – is everything OK?", "今日ちょっと元気ないね、大丈夫？")
+                 ], ipa: "/ˈfiːl ə ˈbɪt ˈdaʊn/"),
+            make("come out of your shell", "to become less shy and more confident with other people",
+                 "殻を破る・打ち解ける",
+                 useCases: ["内気だった人が明るくなったとき", "新しい環境で人と打ち解けたとき"],
+                 examples: [
+                    ("She's really come out of her shell since she started uni.", "彼女、大学に入ってからすっかり殻を破ったよね。"),
+                    ("Joining the football team helped him come out of his shell.", "サッカー部に入って、彼は人と打ち解けられるようになった。")
+                 ], ipa: "/ˈkʌm ˈaʊt əv jɔː ˈʃel/"),
+            make("brownie points", "(informal) credit or approval that you get from someone for doing something to please them",
+                 "（人に気に入られるための）点数稼ぎ・好感度",
+                 useCases: ["上司や恋人の評価を上げようとするとき", "気の利いた行動を冗談めかして言うとき"],
+                 examples: [
+                    ("Bringing coffee for the whole team earned me some brownie points.", "チーム全員にコーヒー買ってったら、ちょっと好感度上がったよ。"),
+                    ("He's only washing up to get brownie points.", "彼が皿洗いしてるのは点数稼ぎのためだけだよ。")
+                 ], ipa: "/ˈbraʊni ˌpɔɪnts/"),
+            make("buck up", "(British, informal) to become more cheerful, or to tell someone to hurry up or try harder",
+                 "元気を出す・（急いで／しっかり）しなさい",
+                 useCases: ["落ち込んでいる人を励ますとき", "もたもたしている人を急かすとき"],
+                 examples: [
+                    ("Buck up! It's not the end of the world.", "元気出して！この世の終わりじゃないんだから。"),
+                    ("You'll need to buck up if you want to catch the train.", "電車に間に合いたいなら急がないと。")
+                 ], ipa: "/ˈbʌk ˈʌp/"),
+            make("make a go of it", "(informal) to try hard to make something such as a business or relationship succeed",
+                 "（事業や関係を）うまくいかせようと頑張る",
+                 useCases: ["新しい事業や挑戦に本気で取り組むとき", "関係をやり直そうとするとき"],
+                 examples: [
+                    ("They opened a little café and really made a go of it.", "二人は小さなカフェを開いて、見事に軌道に乗せたんだ。"),
+                    ("We've decided to give it another try and make a go of it.", "もう一度やり直して、うまくいくよう頑張ることにしたよ。")
+                 ], ipa: "/ˈmeɪk ə ˈɡəʊ əv ɪt/"),
+            make("if I'm honest", "used when you are about to say what you really think, especially something slightly negative",
+                 "正直言うと・本音を言えば",
+                 useCases: ["遠慮がちに本音を伝えるとき", "あまり乗り気でないことを言うとき"],
+                 examples: [
+                    ("If I'm honest, I didn't really enjoy the film.", "正直言うと、あの映画あんまり楽しめなかったんだ。"),
+                    ("I'm a bit tired tonight, if I'm honest.", "本音を言うと、今夜はちょっと疲れてるんだよね。")
+                 ], ipa: "/ɪf aɪm ˈɒnɪst/"),
+            make("first off", "(informal) used to introduce the first point you want to make",
+                 "まず最初に・まず第一に",
+                 useCases: ["話の要点を順番に話し始めるとき", "まず言っておきたいことがあるとき"],
+                 examples: [
+                    ("First off, thanks everyone for coming.", "まず最初に、来てくれてみんなありがとう。"),
+                    ("First off, it's too expensive. Second, we don't need it.", "まず高すぎるし、それに必要ないよ。")
+                 ], ipa: "/ˈfɜːst ˈɒf/"),
+            make("I'll say!", "(informal) used to strongly agree with what someone has just said",
+                 "まったくだ！・本当にね！",
+                 useCases: ["相手の言葉に強く同意するとき", "驚きや感嘆を共有するとき"],
+                 examples: [
+                    ("\"That was a long meeting.\" \"I'll say!\"", "「長い会議だったね」「ほんとにね！」"),
+                    ("\"Is it cold out there?\" \"I'll say! I can't feel my fingers.\"", "「外寒い？」「寒いなんてもんじゃないよ！指の感覚がない。」")
+                 ], ipa: "/aɪl ˈseɪ/"),
+            make("a step up", "an improvement or a move to a better or more advanced position",
+                 "一段階上・進歩・ステップアップ",
+                 useCases: ["前より良くなったと言うとき", "昇進や難易度の上昇を話すとき"],
+                 examples: [
+                    ("This flat is a real step up from our last place.", "このフラット、前の部屋よりだいぶグレードアップしたね。"),
+                    ("The new job is a big step up for her.", "新しい仕事は彼女にとって大きなステップアップだよ。")
+                 ], ipa: "/ə ˈstep ˈʌp/"),
+        ]
+    }
+    private static var britishColloquial301: [Word] {
+        [
+            make("out of my league", "(informal) too good, expensive or attractive for me to be able to have or reach",
+                 "高嶺の花・自分には手が届かない",
+                 useCases: ["好きな人が自分には釣り合わないと言うとき", "値段やレベルが高すぎるものについて"],
+                 examples: [
+                    ("Honestly, she's way out of my league.", "正直、彼女は僕には高嶺の花だよ。"),
+                    ("That restaurant is a bit out of my league at the moment.", "あのレストランは今の僕にはちょっと手が届かないな。")
+                 ], ipa: "/ˈaʊt əv maɪ ˈliːɡ/"),
+            make("punch above your weight", "(informal) to do better or achieve more than people expect from someone of your size or ability",
+                 "実力以上の結果を出す・格上と渡り合う",
+                 useCases: ["小さなチームや会社が健闘しているとき", "自分より魅力的な相手と付き合っている人をからかうとき"],
+                 examples: [
+                    ("For such a small company, they really punch above their weight.", "あんなに小さな会社なのに、本当に実力以上の結果を出してるよね。"),
+                    ("Let's be honest, he's punching above his weight with her.", "正直、彼には彼女はもったいないよ。")
+                 ], ipa: "/ˈpʌntʃ əˈbʌv jɔː ˈweɪt/"),
+            make("in over your head", "involved in a situation that is too difficult for you to deal with",
+                 "手に負えない状況にはまっている・お手上げ",
+                 useCases: ["引き受けた仕事が難しすぎたとき", "誰かが無理をしていると心配するとき"],
+                 examples: [
+                    ("I took on this project, but I think I'm in over my head.", "このプロジェクトを引き受けたけど、自分の手に負えない気がする。"),
+                    ("Ask for help if you feel you're in over your head.", "手に負えないと思ったら助けを求めてね。")
+                 ], ipa: "/ɪn ˈəʊvə jɔː ˈhed/"),
+            make("on the back burner", "(of a plan or idea) put aside for now, to be dealt with later because it is not urgent",
+                 "後回しにして・保留にして",
+                 useCases: ["計画を一旦保留にするとき", "優先順位が下がったことを伝えるとき"],
+                 examples: [
+                    ("We've had to put the kitchen renovation on the back burner for now.", "キッチンのリフォームは、ひとまず後回しにせざるを得なかったんだ。"),
+                    ("My novel's been on the back burner since the baby arrived.", "赤ちゃんが生まれてから、小説はずっと後回しになってるよ。")
+                 ], ipa: "/ɒn ðə ˈbæk ˈbɜːnə/"),
+            make("no news is good news", "used to say that if you have not heard anything, it probably means nothing bad has happened",
+                 "便りのないのは良い便り",
+                 useCases: ["連絡が来なくて心配している人を安心させるとき", "結果待ちのとき"],
+                 examples: [
+                    ("I haven't heard back from the doctor yet, but no news is good news, I suppose.", "まだ医者から連絡ないけど、便りがないのは良い便りってことかな。"),
+                    ("Don't worry about him – no news is good news.", "彼のことは心配しないで。連絡がないのは元気な証拠だよ。")
+                 ], ipa: "/ˈnəʊ ˈnjuːz ɪz ˈɡʊd ˈnjuːz/"),
+            make("easy come, easy go", "used to say that something you got without effort can be lost just as easily, so it doesn't matter much",
+                 "悪銭身につかず・あぶく銭はすぐなくなる",
+                 useCases: ["簡単に手に入れたお金を失ったとき", "失ったものを気にしない態度を示すとき"],
+                 examples: [
+                    ("I won fifty quid and spent it the same night. Easy come, easy go!", "50ポンド当たったけど、その夜に使っちゃった。あぶく銭だね！"),
+                    ("He's very easy come, easy go about money.", "彼はお金に関してすごく執着がないんだ。")
+                 ], ipa: "/ˈiːzi ˈkʌm ˈiːzi ˈɡəʊ/"),
+            make("don't count your chickens", "(short for 'don't count your chickens before they hatch') don't be too confident that something good will happen before it actually does",
+                 "捕らぬ狸の皮算用はするな",
+                 useCases: ["まだ決まっていないことで浮かれている人に", "期待しすぎないよう注意するとき"],
+                 examples: [
+                    ("\"I'm sure I've got the job.\" \"Don't count your chickens just yet.\"", "「絶対あの仕事受かったと思う」「まだ浮かれるのは早いよ」"),
+                    ("We might win, but let's not count our chickens.", "勝てるかもしれないけど、皮算用はやめておこう。")
+                 ], ipa: "/ˈdəʊnt ˈkaʊnt jɔː ˈtʃɪkɪnz/"),
+            make("two heads are better than one", "used to say that two people working together can solve a problem more easily than one",
+                 "三人寄れば文殊の知恵・一人より二人",
+                 useCases: ["誰かに手伝いや相談を持ちかけるとき", "一緒に考えようと提案するとき"],
+                 examples: [
+                    ("Let me have a look with you – two heads are better than one.", "一緒に見てみるよ。一人より二人の方がいいでしょ。"),
+                    ("Can you help me with this? Two heads are better than one.", "これ手伝ってくれる？二人で考えた方が早いから。")
+                 ], ipa: "/ˈtuː ˈhedz ə ˈbetə ðən ˈwʌn/"),
+            make("when in Rome", "(short for 'when in Rome, do as the Romans do') used to say you should follow the customs of the place you are visiting",
+                 "郷に入っては郷に従え",
+                 useCases: ["旅行先で現地の習慣に合わせるとき", "普段しないことをする言い訳として"],
+                 examples: [
+                    ("I don't usually eat dinner at ten, but when in Rome...", "普段は10時に夕食なんて食べないけど、郷に入っては郷に従えだね…"),
+                    ("Everyone was dancing, so I joined in – when in Rome!", "みんな踊ってたから私も加わったよ。郷に入っては郷に従えってね！")
+                 ], ipa: "/ˈwen ɪn ˈrəʊm/"),
+            make("make a mountain out of a molehill", "to treat a small problem as if it were a very serious one",
+                 "大げさに騒ぎ立てる・針小棒大に言う",
+                 useCases: ["小さなことで大騒ぎしている人をなだめるとき", "自分が気にしすぎていたと認めるとき"],
+                 examples: [
+                    ("It's only a tiny scratch – you're making a mountain out of a molehill.", "ほんの小さな傷だよ。大げさに騒ぎすぎだって。"),
+                    ("Maybe I'm making a mountain out of a molehill, but it really annoyed me.", "大げさかもしれないけど、本当にイラッとしたんだよ。")
+                 ], ipa: "/ˈmeɪk ə ˈmaʊntɪn aʊt əv ə ˈməʊlhɪl/"),
+            make("blow something out of proportion", "to make a situation seem much more serious or important than it really is",
+                 "（物事を）実際より大げさにする・誇張する",
+                 useCases: ["噂や問題が大きくなりすぎたとき", "冷静になるよう促すとき"],
+                 examples: [
+                    ("The whole thing has been blown out of proportion by the media.", "その件はメディアのせいで大げさになりすぎてるよ。"),
+                    ("Let's not blow this out of proportion – it was just a misunderstanding.", "大ごとにするのはやめよう。ただの誤解だったんだから。")
+                 ], ipa: "/ˈbləʊ ˈsʌmθɪŋ aʊt əv prəˈpɔːʃn/"),
+            make("a storm in a teacup", "(British) a lot of anger or worry about something that is not important",
+                 "コップの中の嵐・取るに足らない騒ぎ",
+                 useCases: ["小さな揉め事がすぐ収まると言うとき", "騒ぎを冷静に評価するとき"],
+                 examples: [
+                    ("Don't worry about their argument – it's just a storm in a teacup.", "あの二人の言い合いは気にしないで。どうせすぐ収まるから。"),
+                    ("The whole row turned out to be a storm in a teacup.", "結局あの揉め事は大したことなかったんだ。")
+                 ], ipa: "/ə ˈstɔːm ɪn ə ˈtiːkʌp/"),
+            make("stand your ground", "to refuse to change your opinion or give way when someone is trying to make you do so",
+                 "自分の立場を貫く・一歩も引かない",
+                 useCases: ["交渉や議論で譲らないとき", "誰かを応援するとき"],
+                 examples: [
+                    ("If you think you're right, stand your ground.", "自分が正しいと思うなら、引いちゃだめだよ。"),
+                    ("She stood her ground and refused to pay the extra charge.", "彼女は一歩も引かずに追加料金の支払いを拒んだ。")
+                 ], ipa: "/ˈstænd jɔː ˈɡraʊnd/"),
+            make("there's no place like home", "used to say that your own home is the most comfortable and pleasant place to be",
+                 "やっぱり我が家が一番",
+                 useCases: ["旅行や出張から帰ってきたとき", "家でくつろぎながら"],
+                 examples: [
+                    ("Great holiday, but there's no place like home.", "最高の休暇だったけど、やっぱり家が一番だね。"),
+                    ("Ah, my own bed! There's no place like home.", "ああ、自分のベッド！やっぱり我が家が一番。")
+                 ], ipa: "/ðeəz ˈnəʊ ˈpleɪs laɪk ˈhəʊm/"),
+            make("back to the drawing board", "used to say that a plan has failed and you need to start again with a new one",
+                 "振り出しに戻る・一から考え直し",
+                 useCases: ["計画やアイデアがうまくいかなかったとき", "やり直しを提案するとき"],
+                 examples: [
+                    ("The client hated the design, so it's back to the drawing board.", "クライアントがデザインを全然気に入らなかったから、一からやり直しだよ。"),
+                    ("Well, that didn't work. Back to the drawing board!", "うーん、ダメだったね。振り出しに戻ろう！")
+                 ], ipa: "/ˈbæk tə ðə ˈdrɔːɪŋ ˌbɔːd/"),
+        ]
+    }
+    private static var britishColloquial303: [Word] {
+        [
+            make("on the plus side", "used to introduce the good or positive aspect of a situation that is otherwise not so good",
+                 "良い面を言えば・プラスに考えると",
+                 useCases: ["悪い状況の中の良い点を挙げるとき", "相手を前向きに励ますとき"],
+                 examples: [
+                    ("The flat's tiny, but on the plus side, it's really close to work.", "部屋は狭いけど、良い面を言えば職場にすごく近いんだ。"),
+                    ("We missed the train. On the plus side, we've got time for a coffee.", "電車に乗り遅れた。でもプラスに考えれば、コーヒー飲む時間ができたね。")
+                 ], ipa: "/ɒn ðə ˈplʌs ˌsaɪd/"),
+            make("let's be honest", "used before saying something that is true but that people may not want to admit",
+                 "正直に言おうよ・ぶっちゃけ",
+                 useCases: ["みんな薄々思っている本音を言うとき", "現実的な見方を示すとき"],
+                 examples: [
+                    ("Let's be honest, nobody actually reads the terms and conditions.", "ぶっちゃけ、利用規約なんて誰も読まないよね。"),
+                    ("Let's be honest – we're not going to finish this today.", "正直に言おうよ、今日中には終わらないって。")
+                 ], ipa: "/ˈlets bi ˈɒnɪst/"),
+            make("fair comment", "(British) used to say that a criticism or remark someone has made is reasonable",
+                 "ごもっとも・それはその通りだね",
+                 useCases: ["指摘や批判を素直に認めるとき", "相手の意見に一理あると認めるとき"],
+                 examples: [
+                    ("\"You could've told us earlier.\" \"Fair comment, sorry.\"", "「もっと早く言ってくれればよかったのに」「ごもっとも、ごめん」"),
+                    ("That's a fair comment – I'll change the wording.", "それはその通りだね。言い回しを変えておくよ。")
+                 ], ipa: "/ˌfeə ˈkɒment/"),
+            make("what was I saying?", "used when you have been interrupted or have forgotten what you were talking about",
+                 "何の話してたっけ？",
+                 useCases: ["話が脱線したり中断されたりした後", "話の続きを思い出したいとき"],
+                 examples: [
+                    ("Sorry, the phone rang – what was I saying?", "ごめん、電話が鳴っちゃって。何の話してたっけ？"),
+                    ("Anyway, where was I... what was I saying about the trip?", "で、どこまで話したっけ…旅行について何て言ってた？")
+                 ], ipa: "/ˈwɒt wəz aɪ ˈseɪɪŋ/"),
+            make("how's life?", "(informal) a friendly way of asking someone how they are and what is happening in their life",
+                 "最近どう？・元気にしてる？",
+                 useCases: ["久しぶりに会った友人への挨拶", "気軽に近況を尋ねるとき"],
+                 examples: [
+                    ("Hey Dan! How's life? Haven't seen you in ages.", "やあダン！最近どう？ずいぶん久しぶりだね。"),
+                    ("\"How's life treating you?\" \"Can't complain, really.\"", "「最近どう？」「まあ、悪くないよ」")
+                 ], ipa: "/ˌhaʊz ˈlaɪf/"),
+            make("be up to your neck in", "(informal) to have a very large amount of something, especially work or problems, to deal with",
+                 "（仕事・問題などに）首まで浸かっている・手一杯だ",
+                 useCases: ["仕事で手一杯なことを伝えるとき", "誘いを忙しさを理由に断るとき"],
+                 examples: [
+                    ("I'm up to my neck in work this week, so I can't come out.", "今週は仕事で手一杯だから、出かけられないんだ。"),
+                    ("They're up to their neck in debt after buying the house.", "家を買ってから、彼らは借金まみれなんだ。")
+                 ], ipa: "/bi ˈʌp tə jɔː ˈnek ɪn/"),
+            make("pay in instalments", "to pay for something in several smaller amounts over a period of time, rather than all at once",
+                 "分割で払う",
+                 useCases: ["高い買い物の支払い方法を話すとき", "お店で支払いオプションを尋ねるとき"],
+                 examples: [
+                    ("Can I pay in instalments, or does it have to be all at once?", "分割払いはできますか？それとも一括じゃないとダメですか？"),
+                    ("I'm paying for the new laptop in monthly instalments.", "新しいノートパソコンは毎月分割で払ってるんだ。")
+                 ], ipa: "/ˈpeɪ ɪn ɪnˈstɔːlmənts/"),
+            make("dated", "looking or seeming old-fashioned; no longer modern",
+                 "古臭い・時代遅れの",
+                 useCases: ["インテリアやデザインが古いと言うとき", "言葉遣いや考え方が古いと感じたとき"],
+                 examples: [
+                    ("The hotel was clean, but the rooms looked a bit dated.", "ホテルは清潔だったけど、部屋はちょっと古臭い感じだった。"),
+                    ("That phrase sounds a bit dated now.", "その言い回し、今だとちょっと古く聞こえるね。")
+                 ], ipa: "/ˈdeɪtɪd/"),
+            make("pre-order", "to order a product before it is officially available to buy",
+                 "予約注文する・予約購入",
+                 useCases: ["発売前の商品を買うとき", "新作のゲームや本の話をするとき"],
+                 examples: [
+                    ("I've already pre-ordered the new phone.", "新しいスマホ、もう予約注文しちゃった。"),
+                    ("If you pre-order now, you get a free case.", "今予約すると、ケースが無料でもらえるよ。")
+                 ], ipa: "/ˌpriː ˈɔːdə/"),
+            make("full price", "the normal price of something, without any discount",
+                 "定価・割引なしの値段",
+                 useCases: ["セール品と比べるとき", "割引を待つべきか話すとき"],
+                 examples: [
+                    ("I'm not paying full price – I'll wait for the sales.", "定価では買わないよ。セールまで待つ。"),
+                    ("Kids under five don't pay full price.", "5歳未満の子は正規料金じゃなくていいんだよ。")
+                 ], ipa: "/ˌfʊl ˈpraɪs/"),
+            make("beat the traffic", "to leave or travel early or late in order to avoid busy roads",
+                 "渋滞を避ける（ために早めに出る）",
+                 useCases: ["出発時間を相談するとき", "早めに帰る理由を説明するとき"],
+                 examples: [
+                    ("Let's leave at six to beat the traffic.", "渋滞を避けるために6時に出よう。"),
+                    ("I'm heading off a bit early to beat the traffic.", "渋滞にハマる前に、ちょっと早めに帰るね。")
+                 ], ipa: "/ˌbiːt ðə ˈtræfɪk/"),
+            make("split a taxi", "to share a taxi with someone and divide the cost",
+                 "タクシーを相乗りして割り勘にする",
+                 useCases: ["飲み会の帰りに方向が同じ人と", "空港までの移動を相談するとき"],
+                 examples: [
+                    ("We're going the same way – shall we split a taxi?", "同じ方向だし、タクシー割り勘にしない？"),
+                    ("If we split a taxi, it's cheaper than the train.", "タクシーを割り勘にしたら、電車より安いよ。")
+                 ], ipa: "/ˌsplɪt ə ˈtæksi/"),
+            make("hop on", "(informal) to get on a bus, train, bike, etc., quickly or casually",
+                 "（バス・電車などに）ひょいと乗る・さっと乗る",
+                 useCases: ["気軽な移動手段を説明するとき", "道案内で乗り物を勧めるとき"],
+                 examples: [
+                    ("Just hop on the number 12 – it goes straight there.", "12番のバスにさっと乗れば、そこまで直行だよ。"),
+                    ("I'll hop on a train after work and meet you there.", "仕事の後に電車に乗って、向こうで合流するね。")
+                 ], ipa: "/ˈhɒp ɒn/"),
+            make("line manager", "(British) the person at work who is directly in charge of you",
+                 "直属の上司",
+                 useCases: ["職場の休暇申請や相談の話", "自分の上司について話すとき"],
+                 examples: [
+                    ("You'll need to check with your line manager before booking time off.", "休みを取る前に直属の上司に確認してね。"),
+                    ("My line manager's really supportive, to be fair.", "正直、うちの上司はすごく協力的なんだ。")
+                 ], ipa: "/ˈlaɪn ˌmænɪdʒə/"),
+            make("sick leave", "time away from work because you are ill, often while still being paid",
+                 "病気休暇・病欠",
+                 useCases: ["同僚の不在理由を説明するとき", "職場の休暇制度について話すとき"],
+                 examples: [
+                    ("Mark's on sick leave until next Wednesday.", "マークは来週の水曜まで病欠だよ。"),
+                    ("How many days of sick leave do you get a year?", "病気休暇って年に何日もらえるの？")
+                 ], ipa: "/ˈsɪk ˌliːv/"),
+        ]
+    }
+    private static var britishColloquial304: [Word] {
+        [
+            make("up to a point", "partly but not completely; to some degree",
+                 "ある程度は・一部は",
+                 useCases: ["相手の意見に部分的に同意するとき", "完全には賛成できないと伝えるとき"],
+                 examples: [
+                    ("\"Money makes you happy.\" \"Up to a point, yes.\"", "「お金があれば幸せになれる」「まあ、ある程度はね」"),
+                    ("I agree with you up to a point, but it's not that simple.", "ある程度は賛成だけど、そんなに単純じゃないよ。")
+                 ], ipa: "/ˌʌp tu ə ˈpɔɪnt/"),
+            make("lie low", "to stay quiet and avoid attracting attention for a while",
+                 "目立たないようにしている・おとなしくしておく",
+                 useCases: ["騒ぎが収まるまで静かにしておくとき", "しばらく人前に出ないと言うとき"],
+                 examples: [
+                    ("I'd lie low for a bit until the boss calms down.", "上司が落ち着くまで、しばらくおとなしくしておいたほうがいいよ。"),
+                    ("After the party, I'm lying low this weekend.", "パーティー続きだったから、今週末は家でおとなしくしてるよ。")
+                 ], ipa: "/ˌlaɪ ˈləʊ/"),
+            make("I could be wrong, but", "used to say something politely while admitting you might not be right",
+                 "間違ってたら悪いんだけど・違うかもしれないけど",
+                 useCases: ["控えめに意見や指摘をするとき", "確信がないことを言うとき"],
+                 examples: [
+                    ("I could be wrong, but isn't the shop closed on Mondays?", "違うかもしれないけど、あの店って月曜休みじゃなかった？"),
+                    ("I could be wrong, but I think we've met before.", "間違ってたらごめんなさい、前にお会いしたことありますよね。")
+                 ], ipa: "/aɪ kʊd bi ˈrɒŋ bʌt/"),
+            make("bad call", "(informal) a wrong decision or judgement",
+                 "判断ミス・まずい選択",
+                 useCases: ["自分や他人の判断ミスを認めるとき", "選択を後悔しているとき"],
+                 examples: [
+                    ("Not bringing an umbrella was a bad call.", "傘を持ってこなかったのは判断ミスだったな。"),
+                    ("Yeah, booking the early flight was a bad call.", "うん、朝一の便を予約したのは失敗だったね。")
+                 ], ipa: "/ˌbæd ˈkɔːl/"),
+            make("nowhere near", "not at all; far from (a particular amount, quality or place)",
+                 "全然〜ない・〜には程遠い",
+                 useCases: ["期待や目標に全く届かないと言うとき", "距離や量がかけ離れていると言うとき"],
+                 examples: [
+                    ("I'm nowhere near finished – give me another hour.", "全然終わってないよ。あと1時間ちょうだい。"),
+                    ("The sequel is nowhere near as good as the first film.", "続編は1作目に比べたら全然だね。")
+                 ], ipa: "/ˈnəʊweə ˌnɪə/"),
+            make("not even close", "(informal) used to say that a guess or attempt is very far from being correct or successful",
+                 "全然違う・かすりもしない",
+                 useCases: ["相手の推測が大外れのとき", "比べ物にならないと言うとき"],
+                 examples: [
+                    ("\"Is he thirty?\" \"Not even close – he's forty-five!\"", "「彼30歳くらい？」「全然違う、45だよ！」"),
+                    ("Our team tried, but it wasn't even close.", "うちのチームも頑張ったけど、まるで歯が立たなかった。")
+                 ], ipa: "/ˌnɒt ˈiːvn ˈkləʊs/"),
+            make("there's not much in it", "(British) used to say that two things are almost equal and there is very little difference between them",
+                 "大差ない・ほとんど変わらない",
+                 useCases: ["2つの選択肢を比べるとき", "値段や品質の差が小さいと言うとき"],
+                 examples: [
+                    ("Bus or train? There's not much in it – both take about an hour.", "バスか電車？大差ないよ、どっちも1時間くらい。"),
+                    ("I prefer the blue one, but honestly there's not much in it.", "青いほうが好きだけど、正直ほとんど変わらないね。")
+                 ], ipa: "/ðeəz ˌnɒt ˈmʌtʃ ɪn ɪt/"),
+            make("too close to call", "used to say that it is impossible to predict who will win because the competitors are so equal",
+                 "接戦でどちらが勝つかわからない・甲乙つけがたい",
+                 useCases: ["試合や選挙の行方を話すとき", "どちらとも決めがたいとき"],
+                 examples: [
+                    ("The match is too close to call at the moment.", "今のところ試合は接戦でどっちが勝つかわからないね。"),
+                    ("Pizza or curry tonight? Too close to call!", "今夜はピザかカレーか？甲乙つけがたい！")
+                 ], ipa: "/ˌtuː ˈkləʊs tə ˈkɔːl/"),
+            make("lose-lose", "describing a situation in which every possible choice leads to a bad result for everyone",
+                 "どっちに転んでも損な・誰も得しない",
+                 useCases: ["どの選択肢も良くない状況を言うとき", "対立が誰の得にもならないと言うとき"],
+                 examples: [
+                    ("If we argue about it, it's a lose-lose situation.", "これで揉めたら、誰も得しないよ。"),
+                    ("Stay late or miss the deadline – it's lose-lose.", "残業するか締め切りを逃すか、どっちに転んでも損だね。")
+                 ], ipa: "/ˌluːz ˈluːz/"),
+            make("sign off on", "to give official approval to something",
+                 "〜を承認する・〜にゴーサインを出す",
+                 useCases: ["上司が計画や予算を承認するとき", "最終確認を待っているとき"],
+                 examples: [
+                    ("We can start once the manager signs off on the budget.", "マネージャーが予算を承認したら始められるよ。"),
+                    ("Has anyone signed off on the new design yet?", "新しいデザイン、もう誰か承認した？")
+                 ], ipa: "/ˌsaɪn ˈɒf ɒn/"),
+            make("a good while", "(informal) quite a long time",
+                 "けっこう長い間・かなりの時間",
+                 useCases: ["時間がそれなりにかかったと言うとき", "しばらく会っていないと言うとき"],
+                 examples: [
+                    ("It took a good while to find a parking space.", "駐車場を見つけるのにけっこう時間がかかった。"),
+                    ("I haven't seen her for a good while.", "彼女にはかなり長いこと会ってないな。")
+                 ], ipa: "/ə ˌɡʊd ˈwaɪl/"),
+            make("nine times out of ten", "almost always; in most cases",
+                 "十中八九・ほとんどの場合",
+                 useCases: ["経験上ほぼそうだと言うとき", "よくある傾向を話すとき"],
+                 examples: [
+                    ("Nine times out of ten, the bus is late.", "十中八九、バスは遅れてくるよ。"),
+                    ("If the laptop freezes, restarting it works nine times out of ten.", "パソコンが固まったら、たいていは再起動で直るよ。")
+                 ], ipa: "/ˌnaɪn ˌtaɪmz aʊt əv ˈten/"),
+            make("at the same time", "used to introduce a fact or opinion that should be considered along with what was just said; however",
+                 "とはいえ・でもその一方で",
+                 useCases: ["相手の意見を認めつつ別の視点を加えるとき", "両方の側面を伝えるとき"],
+                 examples: [
+                    ("I love living in London. At the same time, it's really expensive.", "ロンドン暮らしは大好き。でもその一方で、本当に物価が高いんだ。"),
+                    ("I see your point, but at the same time, we need to be realistic.", "言いたいことはわかる。とはいえ、現実的にならないと。")
+                 ], ipa: "/ət ðə ˌseɪm ˈtaɪm/"),
+            make("for the foreseeable future", "for as long as you can imagine or plan ahead; for a long time to come",
+                 "当分の間・しばらくは",
+                 useCases: ["当面の予定や状況を説明するとき", "しばらく変わらないと言うとき"],
+                 examples: [
+                    ("I'm working from home for the foreseeable future.", "当分の間は在宅勤務なんだ。"),
+                    ("The road will be closed for the foreseeable future.", "その道はしばらく通行止めになるらしい。")
+                 ], ipa: "/fə ðə fɔːˌsiːəbl ˈfjuːtʃə/"),
+            make("not any time soon", "(informal) not in the near future; probably not for a long time",
+                 "当分は〜ない・すぐには〜しない",
+                 useCases: ["しばらく実現しないと言うとき", "予定がないことを伝えるとき"],
+                 examples: [
+                    ("\"Are you moving out?\" \"Not any time soon!\"", "「引っ越すの？」「当分はないよ！」"),
+                    ("The rain won't stop any time soon, by the look of it.", "見た感じ、雨はすぐには止みそうにないね。")
+                 ], ipa: "/ˌnɒt ˌeni taɪm ˈsuːn/"),
+        ]
+    }
+    private static var britishColloquial305: [Word] {
+        [
+            make("hit a nerve", "to upset someone by mentioning something they are sensitive about",
+                 "痛いところを突く・気に障ることを言う",
+                 useCases: ["相手が気にしている話題に触れてしまったとき", "図星を指したとき"],
+                 examples: [
+                    ("I think I hit a nerve when I mentioned his ex.", "元カノの話をしたら、どうやら彼の痛いところを突いちゃったみたい。"),
+                    ("Sorry, did I hit a nerve?", "ごめん、気に障ること言っちゃった？")
+                 ], ipa: "/ˌhɪt ə ˈnɜːv/"),
+            make("strike a chord", "to make someone feel sympathy or recognise something because it matches their own experience",
+                 "共感を呼ぶ・心に響く",
+                 useCases: ["話や曲に共感したとき", "自分の経験と重なると言うとき"],
+                 examples: [
+                    ("What you said about missing home really struck a chord with me.", "地元が恋しいって話、すごく共感したよ。"),
+                    ("The film struck a chord with a lot of young people.", "その映画は多くの若者の心に響いた。")
+                 ], ipa: "/ˌstraɪk ə ˈkɔːd/"),
+            make("famous last words", "(humorous) said when someone confidently says something that will probably turn out to be wrong",
+                 "それ、フラグだよ・後で後悔するやつ",
+                 useCases: ["相手の楽観的な発言を茶化すとき", "自分の言葉が外れそうだと冗談で言うとき"],
+                 examples: [
+                    ("\"What could possibly go wrong?\" \"Famous last words!\"", "「何がまずいことになるっていうの？」「それ、フラグだよ！」"),
+                    ("I'll only have one drink tonight – famous last words.", "今夜は1杯だけにするよ…って、どうせ無理だけどね。")
+                 ], ipa: "/ˌfeɪməs ˌlɑːst ˈwɜːdz/"),
+            make("tempt fate", "to do or say something that might bring bad luck",
+                 "運を試すようなことをする・縁起でもないことを言う",
+                 useCases: ["悪いことが起こりそうな発言を止めるとき", "わざわざリスクを冒すとき"],
+                 examples: [
+                    ("Don't say we'll definitely win – you'll tempt fate.", "絶対勝つなんて言わないで、縁起でもない。"),
+                    ("I'm not going to tempt fate by leaving without an umbrella.", "傘なしで出かけて運試しなんてしないよ。")
+                 ], ipa: "/ˌtempt ˈfeɪt/"),
+            make("mum's the word", "(British, informal) used to promise that you will keep something secret",
+                 "内緒にしておくよ・誰にも言わない",
+                 useCases: ["秘密を守ると約束するとき", "サプライズの計画を黙っておくとき"],
+                 examples: [
+                    ("\"Don't tell anyone about the party.\" \"Don't worry, mum's the word.\"", "「パーティーのこと誰にも言わないでね」「大丈夫、内緒にしとくよ」"),
+                    ("It's a surprise, so mum's the word, OK?", "サプライズだから、黙っててね。")
+                 ], ipa: "/ˌmʌmz ðə ˈwɜːd/"),
+            make("start over", "to begin something again from the beginning",
+                 "最初からやり直す",
+                 useCases: ["うまくいかず一からやり直すとき", "新しい場所で人生を再出発するとき"],
+                 examples: [
+                    ("I messed up the recipe, so I had to start over.", "レシピを失敗したから、最初からやり直す羽目になった。"),
+                    ("She moved to Lisbon to start over.", "彼女は人生をやり直すためにリスボンに引っ越した。")
+                 ], ipa: "/ˌstɑːt ˈəʊvə/"),
+            make("it's just one of those things", "used to say that something unlucky happened and nobody can be blamed or could have prevented it",
+                 "仕方のないことだよ・よくあることさ",
+                 useCases: ["誰のせいでもない不運を慰めるとき", "どうしようもなかったと割り切るとき"],
+                 examples: [
+                    ("The train was cancelled – it's just one of those things.", "電車が運休になっちゃった。まあ仕方ないね。"),
+                    ("Don't blame yourself. It was just one of those things.", "自分を責めないで。どうしようもなかったんだよ。")
+                 ], ipa: "/ɪts ˌdʒʌst ˈwʌn əv ˌðəʊz ˈθɪŋz/"),
+            make("for my money", "(informal) in my opinion; used when giving your personal preference",
+                 "私に言わせれば・個人的には",
+                 useCases: ["自分のおすすめや好みを言うとき", "意見をはっきり述べるとき"],
+                 examples: [
+                    ("For my money, this is the best pizza in town.", "私に言わせれば、ここが街で一番のピザだよ。"),
+                    ("For my money, the first album was better.", "個人的には、ファーストアルバムのほうがよかったな。")
+                 ], ipa: "/fə ˈmaɪ ˌmʌni/"),
+            make("the beauty of it is", "used to introduce the best or most useful thing about a situation or plan",
+                 "何がいいって〜なところ・最大の利点は",
+                 useCases: ["アイデアや物の良さを説明するとき", "計画の利点を強調するとき"],
+                 examples: [
+                    ("The beauty of it is you can cook it all in one pan.", "何がいいって、全部フライパン1つで作れるところなんだ。"),
+                    ("The beauty of working from home is no commute.", "在宅勤務の最大の利点は通勤がないことだね。")
+                 ], ipa: "/ðə ˈbjuːti əv ɪt ɪz/"),
+            make("there are plenty more fish in the sea", "used to comfort someone after a relationship ends, meaning there are many other people they could meet",
+                 "相手は他にもたくさんいるよ",
+                 useCases: ["失恋した友達を慰めるとき", "一つの機会にこだわらなくていいと言うとき"],
+                 examples: [
+                    ("Forget him – there are plenty more fish in the sea.", "あんな人忘れなよ。相手なんて他にいくらでもいるって。"),
+                    ("I know it hurts, but there are plenty more fish in the sea.", "つらいのはわかるけど、出会いはまだまだあるよ。")
+                 ], ipa: "/ðeər ə ˌplenti ˌmɔː ˈfɪʃ ɪn ðə ˈsiː/"),
+            make("round about", "(British, informal) approximately; about",
+                 "だいたい・〜くらい",
+                 useCases: ["おおよその時間や数を言うとき", "はっきりしない数字を伝えるとき"],
+                 examples: [
+                    ("I'll be there round about seven.", "7時くらいに着くよ。"),
+                    ("It cost round about fifty quid.", "だいたい50ポンドくらいだったよ。")
+                 ], ipa: "/ˌraʊnd əˈbaʊt/"),
+            make("worth your while", "worth the time, money or effort you spend on it",
+                 "やる価値がある・損はない",
+                 useCases: ["何かを勧めるとき", "労力に見合うか話すとき"],
+                 examples: [
+                    ("It's worth your while booking in advance – it's much cheaper.", "前もって予約しておくと得だよ、ずっと安いから。"),
+                    ("I'll make it worth your while.", "損はさせないよ（お礼はするから）。")
+                 ], ipa: "/ˌwɜːθ jə ˈwaɪl/"),
+            make("closing time", "the time when a pub, bar or shop closes for the day",
+                 "閉店時間",
+                 useCases: ["パブや店の営業終了を話すとき", "急いで店に行こうと言うとき"],
+                 examples: [
+                    ("We stayed at the pub until closing time.", "閉店時間までパブにいたんだ。"),
+                    ("Hurry up, it's nearly closing time!", "急いで、もうすぐ閉店時間だよ！")
+                 ], ipa: "/ˈkləʊzɪŋ ˌtaɪm/"),
+            make("it's not the same without you", "used to tell someone that you miss them and that things are less enjoyable when they are not there",
+                 "あなたがいないと物足りない・寂しいよ",
+                 useCases: ["欠席した友人や離れた人に気持ちを伝えるとき", "職場を去る同僚に言うとき"],
+                 examples: [
+                    ("Come back soon – it's not the same without you.", "早く戻ってきてね、あなたがいないと寂しいよ。"),
+                    ("The office isn't the same without you.", "あなたがいないとオフィスも物足りないよ。")
+                 ], ipa: "/ɪts ˌnɒt ðə ˈseɪm wɪˌðaʊt ju/"),
+            make("the pleasure's all mine", "a polite and friendly reply when someone thanks you or says it was nice to meet you",
+                 "こちらこそ・とんでもない、こちらこそ嬉しいです",
+                 useCases: ["お礼に丁寧に返すとき", "「お会いできて嬉しい」に応えるとき"],
+                 examples: [
+                    ("\"Thanks so much for having us.\" \"The pleasure's all mine.\"", "「招いてくれて本当にありがとう」「こちらこそ来てくれて嬉しいよ」"),
+                    ("\"Lovely to meet you.\" \"The pleasure's all mine.\"", "「お会いできて嬉しいです」「こちらこそ」")
+                 ], ipa: "/ðə ˈpleʒəz ɔːl ˈmaɪn/"),
+        ]
+    }
+    private static var britishColloquial306: [Word] {
+        [
+            make("be a sucker for", "(informal) to like something so much that you cannot resist it",
+                 "〜に目がない・〜にめっぽう弱い",
+                 useCases: ["好きでたまらないものを言うとき", "つい買ってしまう・つい乗ってしまうと言うとき"],
+                 examples: [
+                    ("I'm a sucker for a good cheesecake.", "美味しいチーズケーキには目がないんだ。"),
+                    ("She's a sucker for romantic films.", "彼女は恋愛映画にめっぽう弱いの。")
+                 ], ipa: "/bi ə ˈsʌkə fɔː/"),
+            make("bugbear", "(mainly British) something that annoys or worries you, often repeatedly",
+                 "悩みの種・イライラの元",
+                 useCases: ["いつも気になる不満を話すとき", "苦手なことを挙げるとき"],
+                 examples: [
+                    ("My biggest bugbear is people who don't reply to messages.", "一番イラッとするのは、メッセージを返さない人だね。"),
+                    ("Parking is a real bugbear round here.", "この辺は駐車が本当に悩みの種なんだ。")
+                 ], ipa: "/ˈbʌɡbeə/"),
+            make("grate on someone", "to annoy someone, especially a sound, habit or way of speaking",
+                 "（声・癖などが）イラッとさせる・神経に障る",
+                 useCases: ["人の癖や声が気に障るとき", "繰り返されて嫌になったとき"],
+                 examples: [
+                    ("His laugh really grates on me.", "あの人の笑い方、本当に耳障りなんだよね。"),
+                    ("That song is starting to grate on me.", "あの曲、だんだん鬱陶しくなってきた。")
+                 ], ipa: "/ˈɡreɪt ɒn ˌsʌmwʌn/"),
+            make("make a meal of it", "(British, informal) to take more time or effort than necessary, or make something seem harder than it is",
+                 "大げさにする・必要以上に手間取る",
+                 useCases: ["簡単なことに時間をかけすぎている人に", "大騒ぎしすぎだと言うとき"],
+                 examples: [
+                    ("It's just one email – don't make a meal of it.", "メール1通だけだよ。そんなに大ごとにしないで。"),
+                    ("He really made a meal of putting up that shelf.", "彼、棚を付けるだけでやたら手こずってたよ。")
+                 ], ipa: "/ˌmeɪk ə ˈmiːl əv ɪt/"),
+            make("you know the type", "used when describing a kind of person you expect the listener to recognise",
+                 "ほら、ああいうタイプいるでしょ",
+                 useCases: ["人の性格をざっくり説明するとき", "相手も分かるはずの人物像を話すとき"],
+                 examples: [
+                    ("He's always talking about his car – you know the type.", "いつも車の話ばっかりでさ、ああいうタイプ分かるでしょ。"),
+                    ("She's one of those super-organised people. You know the type.", "彼女って超きっちりしてる人なの。ほら、いるじゃん、そういう人。")
+                 ], ipa: "/ju ˌnəʊ ðə ˈtaɪp/"),
+            make("chop chop", "(informal) used to tell someone to hurry up",
+                 "ほら急いで・さっさと",
+                 useCases: ["子どもや友達を急かすとき", "出発をせかすとき（軽い口調で）"],
+                 examples: [
+                    ("Chop chop, the taxi's waiting!", "ほら急いで、タクシー待ってるよ！"),
+                    ("Come on, chop chop – we'll miss the start.", "さあさあ、急がないと始まっちゃうよ。")
+                 ], ipa: "/ˌtʃɒp ˈtʃɒp/"),
+            make("push the boat out", "(British, informal) to spend a lot of money on something, especially to celebrate",
+                 "奮発する・パーッとお金を使う",
+                 useCases: ["お祝いで贅沢するとき", "いつもより高いものを選ぶとき"],
+                 examples: [
+                    ("It's your 30th, so let's push the boat out.", "30歳の誕生日なんだから、パーッといこうよ。"),
+                    ("We pushed the boat out and got the expensive wine.", "奮発して高いワインを頼んだんだ。")
+                 ], ipa: "/ˌpʊʃ ðə ˈbəʊt aʊt/"),
+            make("what have you got to lose?", "used to encourage someone to try something because there is no real risk",
+                 "ダメ元でしょ？・失うものなんてないじゃん",
+                 useCases: ["迷っている人の背中を押すとき", "リスクが少ないと励ますとき"],
+                 examples: [
+                    ("Just ask her out – what have you got to lose?", "とりあえず誘ってみなよ。ダメ元でしょ？"),
+                    ("Apply for the job anyway. What have you got to lose?", "一応応募してみれば？損することないじゃん。")
+                 ], ipa: "/ˌwɒt əv ju ɡɒt tə ˈluːz/"),
+            make("you wish!", "(informal) used to say that what someone hopes for is very unlikely to happen",
+                 "そうだったらいいけどね・ないない",
+                 useCases: ["相手の願望を軽くからかうとき", "あり得ないと冗談で返すとき"],
+                 examples: [
+                    ("\"I bet you'll let me drive.\" \"You wish!\"", "「運転させてくれるでしょ？」「残念でした！」"),
+                    ("\"Is the boss giving us Friday off?\" \"You wish!\"", "「社長、金曜休みにしてくれるの？」「そうだったらいいけどね！」")
+                 ], ipa: "/ju ˈwɪʃ/"),
+            make("by a mile", "(informal) by a very large amount; easily",
+                 "断トツで・圧倒的に",
+                 useCases: ["差が大きいことを強調するとき", "一番だと言い切るとき"],
+                 examples: [
+                    ("This is the best pizza in town by a mile.", "ここのピザ、街で断トツに美味しいよ。"),
+                    ("She won the race by a mile.", "彼女はレースで圧勝した。")
+                 ], ipa: "/baɪ ə ˈmaɪl/"),
+            make("not one bit", "not at all; used for emphasis",
+                 "全然〜ない・これっぽっちも〜ない",
+                 useCases: ["強く否定するとき", "まったく気にしていないと言うとき"],
+                 examples: [
+                    ("\"Did you miss me?\" \"Not one bit!\"", "「寂しかった？」「全然！」"),
+                    ("I didn't enjoy that film one bit.", "あの映画、これっぽっちも楽しめなかった。")
+                 ], ipa: "/ˌnɒt ˌwʌn ˈbɪt/"),
+            make("blow over", "(of an argument, problem or storm) to pass and be forgotten without serious effects",
+                 "（騒ぎ・ケンカが）収まる・落ち着く",
+                 useCases: ["揉め事がそのうち落ち着くと励ますとき", "時間が解決すると言うとき"],
+                 examples: [
+                    ("Don't worry, it'll all blow over in a few days.", "大丈夫、数日もすれば収まるよ。"),
+                    ("I'll wait until things blow over before I talk to him.", "落ち着くまで待ってから彼と話すよ。")
+                 ], ipa: "/ˌbləʊ ˈəʊvə/"),
+            make("third time lucky", "(British) used when you hope or find that you will succeed on your third attempt",
+                 "三度目の正直",
+                 useCases: ["2回失敗した後にもう一度挑戦するとき", "3回目でうまくいったとき"],
+                 examples: [
+                    ("I failed my driving test twice, but third time lucky!", "運転免許試験に2回落ちたけど、三度目の正直だ！"),
+                    ("Let's try calling again – third time lucky.", "もう一回電話してみよう。三度目の正直ってね。")
+                 ], ipa: "/ˌθɜːd taɪm ˈlʌki/"),
+            make("for old times' sake", "because of happy memories of the past, or a past relationship",
+                 "昔のよしみで・懐かしさから",
+                 useCases: ["昔の仲間と思い出の場所に行くとき", "昔の付き合いで頼みを聞くとき"],
+                 examples: [
+                    ("Let's go to our old pub for old times' sake.", "懐かしいし、昔よく行ったパブに行こうよ。"),
+                    ("He helped me out for old times' sake.", "彼は昔のよしみで助けてくれた。")
+                 ], ipa: "/fər ˌəʊld ˈtaɪmz seɪk/"),
+            make("draw a line under", "to decide that something is finished and stop thinking or talking about it",
+                 "〜に区切りをつける・〜を終わりにする",
+                 useCases: ["過去の揉め事を水に流すとき", "一つの区切りとして終わらせるとき"],
+                 examples: [
+                    ("Let's draw a line under it and move on.", "この件はもう終わりにして、前に進もう。"),
+                    ("I want to draw a line under that whole year.", "あの一年のことはもう区切りをつけたいんだ。")
+                 ], ipa: "/ˌdrɔːr ə ˈlaɪn ˌʌndə/"),
+        ]
+    }
+
+    private static var britishColloquial311: [Word] {
+        [
+            make("apart from", "except for; or in addition to",
+                 "〜を除いて・〜以外に／〜に加えて",
+                 useCases: ["例外を挙げるとき", "「それ以外にも」と付け足すとき"],
+                 examples: [
+                    ("Apart from the weather, the trip was brilliant.", "天気以外は、旅行は最高だったよ。"),
+                    ("Apart from work, what do you do for fun?", "仕事以外に、何して楽しんでるの？")
+                 ], ipa: "/əˈpɑːt frəm/"),
+            make("except for", "not including; but not",
+                 "〜を除いては・〜以外は",
+                 useCases: ["一つだけ例外があるとき", "全体の中で外れるものを言うとき"],
+                 examples: [
+                    ("Everyone came except for Tom.", "トム以外はみんな来たよ。"),
+                    ("The flat's lovely, except for the noise from the street.", "通りの騒音を除けば、いい部屋だよ。")
+                 ], ipa: "/ɪkˈsept fə/"),
+            make("regardless", "without being affected by something; anyway",
+                 "それでも・関係なく・とにかく",
+                 useCases: ["状況に関係なくやると言うとき", "反対があっても続けるとき"],
+                 examples: [
+                    ("It might rain, but we're going regardless.", "雨かもしれないけど、とにかく行くよ。"),
+                    ("Regardless of what he says, I think you did the right thing.", "彼が何て言おうと、君は正しいことをしたと思う。")
+                 ], ipa: "/rɪˈɡɑːdləs/"),
+            make("around the clock", "all day and all night, without stopping",
+                 "24時間ぶっ通しで・昼夜を問わず",
+                 useCases: ["休みなく働いている様子を言うとき", "24時間対応のサービスを説明するとき"],
+                 examples: [
+                    ("The nurses are working around the clock.", "看護師さんたちは昼も夜も働いてるよ。"),
+                    ("We've been working around the clock to finish this project.", "このプロジェクトを終わらせるために、ずっとぶっ通しで働いてるんだ。")
+                 ], ipa: "/əˌraʊnd ðə ˈklɒk/"),
+            make("go on and on", "to keep talking about something for too long",
+                 "延々としゃべり続ける・だらだら続く",
+                 useCases: ["話が長い人に困ったとき", "終わらない会議や話を愚痴るとき"],
+                 examples: [
+                    ("He went on and on about his new car.", "彼、新しい車の話を延々としてたよ。"),
+                    ("The meeting just went on and on.", "会議がだらだらと全然終わらなかったんだ。")
+                 ], ipa: "/ˌɡəʊ ˌɒn ənd ˈɒn/"),
+            make("over and over", "many times; repeatedly",
+                 "何度も何度も・繰り返し",
+                 useCases: ["同じことを繰り返すとき", "何度言っても伝わらないとき"],
+                 examples: [
+                    ("I've told him over and over, but he never listens.", "何度も何度も言ってるのに、彼は全然聞かないんだ。"),
+                    ("The kids watched the same film over and over again.", "子どもたちは同じ映画を繰り返し何回も観てたよ。")
+                 ], ipa: "/ˌəʊvər ənd ˈəʊvə/"),
+            make("all at once", "suddenly; or all at the same time",
+                 "突然・いきなり／一度に全部",
+                 useCases: ["急に何かが起きたとき", "一度にいろいろ重なったとき"],
+                 examples: [
+                    ("All at once, the lights went out.", "いきなり電気が消えたんだ。"),
+                    ("Don't try to do everything all at once.", "全部いっぺんにやろうとしないで。")
+                 ], ipa: "/ˌɔːl ət ˈwʌns/"),
+            make("half the time", "quite often; a lot of the time",
+                 "しょっちゅう・半分くらいは",
+                 useCases: ["よくあることを少し大げさに言うとき", "相手への不満を軽く言うとき"],
+                 examples: [
+                    ("Half the time he doesn't even answer his phone.", "彼、しょっちゅう電話にすら出ないんだよ。"),
+                    ("Half the time I've no idea what she's talking about.", "彼女が何の話をしてるのか、半分くらいはわからないよ。")
+                 ], ipa: "/ˌhɑːf ðə ˈtaɪm/"),
+            make("buy in bulk", "to buy a large amount of something at once, usually to save money",
+                 "まとめ買いする",
+                 useCases: ["節約のために大量に買うとき", "日用品の買い方を話すとき"],
+                 examples: [
+                    ("We buy toilet roll in bulk – it's much cheaper.", "トイレットペーパーはまとめ買いしてるよ。ずっと安いからね。"),
+                    ("Is it really worth buying in bulk if you live alone?", "一人暮らしでまとめ買いって本当に得なの？")
+                 ], ipa: "/ˌbaɪ ɪn ˈbʌlk/"),
+            make("the going rate", "the usual price that people pay for something at the moment",
+                 "相場・今の一般的な値段",
+                 useCases: ["値段が妥当か確かめるとき", "報酬や料金の相場を聞くとき"],
+                 examples: [
+                    ("What's the going rate for a babysitter these days?", "最近ベビーシッターの相場っていくらくらい？"),
+                    ("Fifty quid an hour is about the going rate.", "1時間50ポンドくらいが相場だね。")
+                 ], ipa: "/ðə ˌɡəʊɪŋ ˈreɪt/"),
+            make("have a clear-out", "to get rid of things you no longer need",
+                 "（いらない物を）片付ける・断捨離する",
+                 useCases: ["部屋や物を整理するとき", "引っ越し前に物を減らすとき"],
+                 examples: [
+                    ("I really need to have a clear-out of my wardrobe.", "クローゼットの中、本当に断捨離しなきゃ。"),
+                    ("We had a big clear-out before we moved.", "引っ越す前に大がかりな片付けをしたんだ。")
+                 ], ipa: "/ˌhæv ə ˈklɪər aʊt/"),
+            make("think ahead", "to plan for what might happen in the future",
+                 "先のことを考える・前もって計画する",
+                 useCases: ["準備の大切さを言うとき", "先を見越して行動した人を褒めるとき"],
+                 examples: [
+                    ("Good thinking ahead – I'd never have remembered the umbrella.", "先を読んでたね。傘なんて絶対忘れてたよ。"),
+                    ("You need to think ahead if you want a table on Saturday.", "土曜に席を取りたいなら、早めに考えておかないと。")
+                 ], ipa: "/ˌθɪŋk əˈhed/"),
+            make("see it through", "to continue doing something until it is finished, even if it is difficult",
+                 "最後までやり遂げる",
+                 useCases: ["途中で投げ出さないと言うとき", "大変でも続ける決意を伝えるとき"],
+                 examples: [
+                    ("It's tough, but I'm going to see it through.", "大変だけど、最後までやり遂げるつもりだよ。"),
+                    ("You've started the course, so you might as well see it through.", "コースを始めたんだから、最後までやったほうがいいよ。")
+                 ], ipa: "/ˌsiː ɪt ˈθruː/"),
+            make("stay out late", "to not come home until late at night",
+                 "夜遅くまで出歩く・帰りが遅くなる",
+                 useCases: ["夜遊びについて話すとき", "家族に帰りの時間を伝えるとき"],
+                 examples: [
+                    ("Don't stay out too late – you've got work tomorrow.", "あんまり遅くまで出歩かないでね。明日仕事でしょ。"),
+                    ("We stayed out late and missed the last train.", "遅くまで遊んでて、終電を逃しちゃった。")
+                 ], ipa: "/ˌsteɪ aʊt ˈleɪt/"),
+            make("get back at someone", "to do something bad to someone because they did something bad to you",
+                 "（人に）仕返しする",
+                 useCases: ["やり返したい気持ちを言うとき", "冗談で仕返しを宣言するとき"],
+                 examples: [
+                    ("He's just trying to get back at you for what you said.", "あなたが言ったことの仕返しをしようとしてるだけだよ。"),
+                    ("I'll get back at you for that prank, just you wait!", "あのいたずらの仕返し、覚えといてよ！")
+                 ], ipa: "/ˌɡet ˈbæk ət ˌsʌmwʌn/"),
+        ]
+    }
+
+    private static var britishColloquial320: [Word] {
+        [
+            make("a life hack", "a simple, clever trick that makes an everyday task easier",
+                 "ライフハック・生活の知恵",
+                 useCases: ["便利な小技を教えるとき", "ちょっとした工夫を褒めるとき"],
+                 examples: [
+                    ("Here's a life hack: put a wooden spoon over the pot so it doesn't boil over.", "ライフハックだけど、鍋に木べらを渡すと吹きこぼれないよ。"),
+                    ("Freezing grapes as ice cubes is my favourite life hack.", "ブドウを凍らせて氷代わりにするのが私のお気に入りの小技なんだ。")
+                 ], ipa: "/ə ˈlaɪf ˌhæk/"),
+            make("a show-off", "someone who keeps trying to impress people with their skills, money or possessions",
+                 "目立ちたがり屋・自慢したがる人",
+                 useCases: ["自慢ばかりする人について話すとき", "友達を冗談でからかうとき"],
+                 examples: [
+                    ("He's such a show-off — he always parks his sports car right outside.", "あいつ本当に見せびらかし屋だよね、いつもスポーツカーを目の前に停めるんだ。"),
+                    ("Stop being a show-off and just pass the ball!", "かっこつけてないでさっさとパスしなよ！")
+                 ], ipa: "/ə ˈʃəʊ ɒf/"),
+            make("spare change", "a few coins you have that you don't need",
+                 "小銭・余った小銭",
+                 useCases: ["小銭を持っているか聞くとき", "募金やチップについて話すとき"],
+                 examples: [
+                    ("Have you got any spare change for the parking meter?", "パーキングメーター用の小銭持ってない？"),
+                    ("I usually drop my spare change in the charity box.", "余った小銭はたいてい募金箱に入れてるんだ。")
+                 ], ipa: "/ˌspeə ˈtʃeɪndʒ/"),
+            make("an internship", "a period of work, often short and low-paid, to gain experience in a job",
+                 "インターンシップ・実務研修",
+                 useCases: ["学生の就職活動について話すとき", "職歴や経験を説明するとき"],
+                 examples: [
+                    ("She's doing a summer internship at a design studio in Berlin.", "彼女はベルリンのデザイン事務所で夏のインターンをしてるんだ。"),
+                    ("My internship turned into a full-time job.", "インターンがそのまま正社員の仕事になったんだ。")
+                 ], ipa: "/ən ˈɪntɜːnʃɪp/"),
+            make("a family heirloom", "a valuable object that has belonged to a family for generations",
+                 "家宝・代々受け継がれてきた品",
+                 useCases: ["祖父母から受け継いだ物について話すとき", "大切な古い品を紹介するとき"],
+                 examples: [
+                    ("This ring is a family heirloom — it was my great-grandmother's.", "この指輪は家宝なの。ひいおばあちゃんのものだったんだ。"),
+                    ("Be careful with that clock, it's a family heirloom.", "その時計気をつけてね、代々受け継いでるものだから。")
+                 ], ipa: "/ə ˈfæməli ˈeəluːm/"),
+            make("a stand-in", "a person who temporarily does someone else's job or takes their place",
+                 "代役・代理",
+                 useCases: ["誰かの代わりに仕事をするとき", "急な欠員を埋める人について話すとき"],
+                 examples: [
+                    ("I'm just a stand-in while Sarah's on holiday.", "サラが休暇中の間、私はただの代理なんだ。"),
+                    ("We need a stand-in for Saturday's match — are you free?", "土曜の試合の代わりの人が必要なんだけど、空いてる？")
+                 ], ipa: "/ə ˈstænd ɪn/"),
+            make("a hold-up", "a delay, especially one that stops traffic or progress",
+                 "遅れ・渋滞・足止め",
+                 useCases: ["遅刻の理由を説明するとき", "作業や手続きが止まっている理由を聞くとき"],
+                 examples: [
+                    ("Sorry I'm late — there was a hold-up on the motorway.", "遅れてごめん、高速で渋滞があってさ。"),
+                    ("What's the hold-up? We should have left ten minutes ago.", "何で止まってるの？10分前には出てるはずだったのに。")
+                 ], ipa: "/ə ˈhəʊld ʌp/"),
+            make("a breakdown", "when a car or machine stops working; also when someone becomes very upset and can't cope",
+                 "故障・（精神的な）参ってしまうこと",
+                 useCases: ["車が故障したことを伝えるとき", "誰かが精神的に限界になったことを話すとき"],
+                 examples: [
+                    ("We had a breakdown halfway to Edinburgh and had to call a tow truck.", "エディンバラに行く途中で車が故障して、レッカーを呼ぶはめになったよ。"),
+                    ("I nearly had a breakdown during exam week.", "試験週間はほんとに精神的に参りかけたよ。")
+                 ], ipa: "/ə ˈbreɪkdaʊn/"),
+            make("a hangout", "a place where someone likes to spend a lot of time, especially with friends",
+                 "たまり場・行きつけの場所",
+                 useCases: ["友達とよく行く場所を紹介するとき", "人気のスポットについて話すとき"],
+                 examples: [
+                    ("That little café was our favourite hangout at uni.", "あの小さなカフェが大学時代の僕らのたまり場だったんだ。"),
+                    ("The park is a popular hangout for teenagers.", "その公園は10代の子たちの人気のたまり場だよ。")
+                 ], ipa: "/ə ˈhæŋaʊt/"),
+            make("a hotspot", "a popular place where lots of people go; also a place offering Wi-Fi",
+                 "人気スポット・（Wi-Fiの）ホットスポット",
+                 useCases: ["人気の観光地や夜遊びの場所について話すとき", "スマホでネットを共有するとき"],
+                 examples: [
+                    ("Lisbon has become a real tourist hotspot.", "リスボンは本当に人気の観光地になったね。"),
+                    ("Can you turn on your hotspot? My data's run out.", "テザリングつけてくれる？データ使い切っちゃった。")
+                 ], ipa: "/ə ˈhɒtspɒt/"),
+            make("a sell-out", "an event for which all the tickets have been sold",
+                 "完売・満員御礼のイベント",
+                 useCases: ["コンサートや試合のチケットについて話すとき", "イベントが大成功だったと伝えるとき"],
+                 examples: [
+                    ("Their gig in Dublin was a complete sell-out.", "彼らのダブリンのライブは完全に売り切れだったよ。"),
+                    ("Book early — the show is expected to be a sell-out.", "早めに予約してね、そのショーは完売しそうだから。")
+                 ], ipa: "/ə ˈsel aʊt/"),
+            make("an eyesore", "something, especially a building, that is very ugly to look at",
+                 "目障りなもの・景観を損なうもの",
+                 useCases: ["醜い建物や景色について文句を言うとき", "散らかったものを片付けてほしいとき"],
+                 examples: [
+                    ("That new car park is a real eyesore.", "あの新しい駐車場、本当に目障りだよね。"),
+                    ("Can we get rid of that old sofa in the garden? It's an eyesore.", "庭のあの古いソファ処分できない？見た目が悪いよ。")
+                 ], ipa: "/ən ˈaɪsɔː/"),
+            make("a dilemma", "a situation where you have to make a difficult choice between two options",
+                 "ジレンマ・板挟み・悩みどころ",
+                 useCases: ["どちらにするか迷っているとき", "難しい選択について相談するとき"],
+                 examples: [
+                    ("I'm in a bit of a dilemma — two weddings on the same day.", "ちょっと困ってるんだ、結婚式が同じ日に2つあって。"),
+                    ("Pizza or curry? That's the eternal dilemma.", "ピザかカレーか？永遠の悩みだね。")
+                 ], ipa: "/ə dɪˈlemə/"),
+            make("the black sheep (of the family)", "a person who is seen as different from or a disappointment to the rest of their family or group",
+                 "（家族の中の）はみ出し者・厄介者",
+                 useCases: ["家族の中で変わり者の人について話すとき", "自分のことを冗談で言うとき"],
+                 examples: [
+                    ("I'm the black sheep of the family — everyone else is a doctor.", "僕は家族のはみ出し者だよ、他はみんな医者なんだ。"),
+                    ("My uncle was always the black sheep, but he's the most fun.", "おじさんはずっと一家の変わり者だけど、一番面白い人なんだ。")
+                 ], ipa: "/ðə ˌblæk ˈʃiːp/"),
+            make("a middle ground", "a position or compromise between two opposing opinions or options",
+                 "妥協点・中間の立場",
+                 useCases: ["意見が対立したときに歩み寄るとき", "極端ではない選択肢を提案するとき"],
+                 examples: [
+                    ("Let's try to find a middle ground we're both happy with.", "お互い納得できる妥協点を探そうよ。"),
+                    ("There's no middle ground with him — it's all or nothing.", "彼には中間がないんだ、いつも全部か無しかさ。")
+                 ], ipa: "/ə ˌmɪdl ˈɡraʊnd/"),
+        ]
+    }
+
+    private static var britishColloquial323: [Word] {
+        [
+            make("a baby shower", "a party held before a baby is born, where friends give presents for the baby",
+                 "ベビーシャワー・出産前のお祝いパーティー",
+                 useCases: ["友人の出産祝いの集まりについて話すとき", "プレゼント選びを相談するとき"],
+                 examples: [
+                    ("We're throwing Anna a baby shower next Saturday.", "来週の土曜、アンナのためにベビーシャワーを開くんだ。"),
+                    ("What do you usually bring to a baby shower?", "ベビーシャワーって普通何を持っていくの？")
+                 ], ipa: "/ə ˈbeɪbi ˌʃaʊə/"),
+            make("a wedding reception", "the party with food, drinks and dancing after a wedding ceremony",
+                 "結婚披露宴",
+                 useCases: ["結婚式の予定について話すとき", "式のあとのパーティーの様子を話すとき"],
+                 examples: [
+                    ("The ceremony's at two and the wedding reception starts at six.", "式は2時で、披露宴は6時からだよ。"),
+                    ("I danced so much at the wedding reception my feet still hurt.", "披露宴で踊りすぎて、まだ足が痛いよ。")
+                 ], ipa: "/ə ˈwedɪŋ rɪˌsepʃn/"),
+            make("a side dish", "a small amount of food served next to the main dish, such as salad or chips",
+                 "付け合わせ・サイドメニュー",
+                 useCases: ["レストランで注文するとき", "持ち寄りパーティーで何を作るか話すとき"],
+                 examples: [
+                    ("Shall we get a couple of side dishes to share?", "サイドメニューをいくつか頼んでシェアしない？"),
+                    ("I'll bring a side dish — maybe a potato salad.", "付け合わせを持っていくよ。ポテトサラダとかどう？")
+                 ], ipa: "/ə ˈsaɪd ˌdɪʃ/"),
+            make("a pram", "a small vehicle with four wheels that you push a baby around in (US: baby carriage, stroller)",
+                 "ベビーカー（乳母車）",
+                 useCases: ["赤ちゃん連れの外出について話すとき", "バスや店で場所を譲るとき"],
+                 examples: [
+                    ("Is there a lift? I've got the pram with me.", "エレベーターある？ベビーカーがあるんだ。"),
+                    ("Let me help you get the pram up the steps.", "ベビーカー、階段の上まで運ぶの手伝うよ。")
+                 ], ipa: "/ə ˈpræm/"),
+            make("a playground", "an outdoor area with swings and slides where children can play",
+                 "（公園の）遊び場・校庭",
+                 useCases: ["子どもを遊ばせる場所について話すとき", "子どもの頃の思い出を話すとき"],
+                 examples: [
+                    ("I'll take the kids to the playground to burn off some energy.", "子どもたちのエネルギー発散に、遊び場に連れて行くよ。"),
+                    ("There's a nice playground just behind our flat.", "うちのアパートのすぐ裏にいい遊び場があるんだ。")
+                 ], ipa: "/ə ˈpleɪɡraʊnd/"),
+            make("a waiting room", "a room where people sit and wait, for example at a doctor's or a station",
+                 "待合室",
+                 useCases: ["病院や駅で待っているとき", "待ち時間の長さに文句を言うとき"],
+                 examples: [
+                    ("I was stuck in the waiting room for over an hour.", "待合室で1時間以上も待たされたよ。"),
+                    ("You can wait in the waiting room — the doctor won't be long.", "待合室でお待ちください。先生はすぐ来ますので。")
+                 ], ipa: "/ə ˈweɪtɪŋ ˌruːm/"),
+            make("a washing machine", "a machine for washing clothes",
+                 "洗濯機",
+                 useCases: ["家事や家電について話すとき", "部屋探しで設備を確認するとき"],
+                 examples: [
+                    ("Does the flat come with a washing machine?", "その部屋、洗濯機付いてる？"),
+                    ("Our washing machine's broken, so I'm off to the launderette.", "うちの洗濯機が壊れたから、コインランドリーに行ってくる。")
+                 ], ipa: "/ə ˈwɒʃɪŋ məˌʃiːn/"),
+            make("a gym membership", "a paid arrangement that lets you use a gym, usually paid monthly",
+                 "ジムの会員権・ジム通いの契約",
+                 useCases: ["運動習慣について話すとき", "使っていないサブスクを冗談にするとき"],
+                 examples: [
+                    ("I've got a gym membership, I just never actually go.", "ジムの会員にはなってるんだけど、実際は全然行ってないんだ。"),
+                    ("I finally cancelled my gym membership — it was a waste of money.", "ついにジム解約したよ。お金の無駄だった。")
+                 ], ipa: "/ə ˈdʒɪm ˌmembəʃɪp/"),
+            make("a personal trainer", "someone who is paid to plan your exercise and train you one to one",
+                 "パーソナルトレーナー",
+                 useCases: ["本格的に体を鍛えたいとき", "運動のモチベーションについて話すとき"],
+                 examples: [
+                    ("She's got a personal trainer who makes her run at six in the morning.", "彼女、朝6時に走らせるパーソナルトレーナーがついてるんだ。"),
+                    ("I'd never stick to it without a personal trainer.", "パーソナルトレーナーがいなきゃ絶対続かないよ。")
+                 ], ipa: "/ə ˌpɜːsənl ˈtreɪnə/"),
+            make("a phone case", "a cover that protects your mobile phone",
+                 "スマホケース",
+                 useCases: ["スマホを落とした話をするとき", "買い物でアクセサリーを選ぶとき"],
+                 examples: [
+                    ("Thank God I had a phone case on — I dropped it on the pavement.", "スマホケース付けててよかった。歩道に落としちゃってさ。"),
+                    ("I keep my bank card in the back of my phone case.", "銀行のカードはスマホケースの裏に入れてるんだ。")
+                 ], ipa: "/ə ˈfəʊn ˌkeɪs/"),
+            make("lost property", "things that people have lost and that are kept somewhere until the owner collects them; also the office where they are kept",
+                 "遺失物・忘れ物取扱所",
+                 useCases: ["電車や店に忘れ物をしたとき", "落とし物を届けるとき"],
+                 examples: [
+                    ("I left my umbrella on the train — I'll check lost property.", "電車に傘忘れちゃった。忘れ物センターに問い合わせてみる。"),
+                    ("Someone handed my wallet in to lost property!", "誰かが財布を遺失物係に届けてくれたんだ！")
+                 ], ipa: "/ˌlɒst ˈprɒpəti/"),
+            make("a passport photo", "a small official photo of your face for a passport or ID card",
+                 "証明写真・パスポート用写真",
+                 useCases: ["パスポートやビザの申請をするとき", "写りの悪い写真を笑い話にするとき"],
+                 examples: [
+                    ("I need to get a passport photo taken before I renew it.", "更新する前に証明写真を撮らないと。"),
+                    ("Nobody looks good in their passport photo.", "パスポートの写真で写りがいい人なんていないよ。")
+                 ], ipa: "/ə ˈpɑːspɔːt ˌfəʊtəʊ/"),
+            make("an ice cube", "a small block of ice that you put in a drink to make it cold",
+                 "角氷・氷",
+                 useCases: ["飲み物を頼むとき", "暑い日に冷たい飲み物を作るとき"],
+                 examples: [
+                    ("Could I have a Coke with a couple of ice cubes, please?", "コーラに氷を2、3個入れてもらえますか？"),
+                    ("We've run out of ice cubes — can you grab a bag on the way?", "氷切らしちゃった。来る途中で一袋買ってきてくれる？")
+                 ], ipa: "/ən ˈaɪs ˌkjuːb/"),
+            make("tin foil", "very thin metal sheet used for wrapping or cooking food (also: aluminium foil)",
+                 "アルミホイル",
+                 useCases: ["料理や残り物の保存をするとき", "お弁当を包むとき"],
+                 examples: [
+                    ("Wrap the leftovers in tin foil and pop them in the fridge.", "残り物はアルミホイルで包んで冷蔵庫に入れといて。"),
+                    ("Cover the chicken with tin foil so it doesn't burn.", "焦げないように、鶏肉にアルミホイルをかぶせて。")
+                 ], ipa: "/ˌtɪn ˈfɔɪl/"),
+            make("an ID card", "an official card with your name and photo that proves who you are",
+                 "身分証明書・IDカード",
+                 useCases: ["身分証の提示を求められたとき", "バーや空港で年齢・身元を確認されるとき"],
+                 examples: [
+                    ("They asked for my ID card at the door, even though I'm forty.", "40歳なのに入口で身分証を見せてって言われたよ。"),
+                    ("Don't forget your ID card — you'll need it to check in.", "身分証忘れないでね。チェックインで必要だから。")
+                 ], ipa: "/ən ˌaɪ ˈdiː ˌkɑːd/"),
+        ]
+    }
+
+    private static var britishColloquial327: [Word] {
+        [
+            make("a tea bag", "a small paper bag with tea leaves inside, which you put in hot water to make tea",
+                 "ティーバッグ",
+                 useCases: ["お茶を淹れるとき", "台所で物の場所を尋ねるとき"],
+                 examples: [
+                    ("Just leave the tea bag in for a couple of minutes if you like it strong.", "濃いのが好きなら、ティーバッグを2、3分入れたままにしておいて。"),
+                    ("We've run out of tea bags — can you grab some on your way home?", "ティーバッグ切らしちゃった。帰りに買ってきてくれる？")
+                 ], ipa: "/ə ˈtiː ˌbæɡ/"),
+            make("a teaspoon", "a small spoon used for stirring tea or coffee, or for measuring small amounts",
+                 "ティースプーン・小さじ",
+                 useCases: ["飲み物を混ぜるとき", "料理の分量を伝えるとき"],
+                 examples: [
+                    ("Could you pass me a teaspoon? I need to stir this.", "ティースプーン取ってくれる？これ混ぜたいんだ。"),
+                    ("Add a teaspoon of salt and give it a good stir.", "塩を小さじ1杯入れて、よく混ぜて。")
+                 ], ipa: "/ə ˈtiːspuːn/"),
+            make("a jug", "a container with a handle and a lip for pouring liquids such as water or milk (US: pitcher)",
+                 "水差し・ピッチャー",
+                 useCases: ["食卓で水を出すとき", "料理で液体を量るとき"],
+                 examples: [
+                    ("I'll put a jug of water on the table for everyone.", "みんなの分、テーブルに水差し置いておくね。"),
+                    ("Measure the milk in the jug — you need about half a litre.", "牛乳は計量カップで量って。500mlくらい必要だよ。")
+                 ], ipa: "/ə ˈdʒʌɡ/"),
+            make("a coaster", "a small mat that you put under a cup or glass to protect the table",
+                 "コースター",
+                 useCases: ["人の家で飲み物を置くとき", "テーブルを汚したくないとき"],
+                 examples: [
+                    ("Could you use a coaster? That table marks really easily.", "コースター使ってくれる？そのテーブル跡がつきやすいんだ。"),
+                    ("There are some coasters in the drawer if you need one.", "コースター必要なら引き出しにあるよ。")
+                 ], ipa: "/ə ˈkəʊstə/"),
+            make("a bottle opener", "a small tool used for taking the metal tops off bottles",
+                 "栓抜き",
+                 useCases: ["瓶ビールなどを開けるとき", "パーティーの準備をするとき"],
+                 examples: [
+                    ("Has anyone got a bottle opener? These aren't twist-off.", "誰か栓抜き持ってる？これ回して開けるタイプじゃないんだ。"),
+                    ("There's a bottle opener on my keyring, actually.", "実はキーホルダーに栓抜きついてるよ。")
+                 ], ipa: "/ə ˈbɒtl ˌəʊpənə/"),
+            make("a peeler", "a small kitchen tool used for removing the skin from fruit and vegetables",
+                 "ピーラー・皮むき器",
+                 useCases: ["料理の下ごしらえを手伝うとき", "キッチン用品を探すとき"],
+                 examples: [
+                    ("It's much quicker if you use the peeler instead of a knife.", "包丁じゃなくてピーラー使ったほうがずっと早いよ。"),
+                    ("Where's the peeler? I'll do the carrots.", "ピーラーどこ？にんじんは私がやるよ。")
+                 ], ipa: "/ə ˈpiːlə/"),
+            make("a cheese grater", "a metal kitchen tool with sharp holes, used for cutting cheese or vegetables into small pieces",
+                 "チーズおろし・おろし器",
+                 useCases: ["料理をするとき", "パスタにチーズをかけるとき"],
+                 examples: [
+                    ("Watch your fingers on the cheese grater — it's really sharp.", "おろし器で指気をつけて。すごく切れるから。"),
+                    ("Can you pass me the cheese grater? I'll do some parmesan.", "チーズおろし取ってくれる？パルメザンおろすね。")
+                 ], ipa: "/ə ˈtʃiːz ˌɡreɪtə/"),
+            make("an oven glove", "a thick padded glove used for holding hot dishes from the oven (US: oven mitt)",
+                 "鍋つかみ・オーブンミトン",
+                 useCases: ["オーブンから料理を出すとき", "熱い鍋を持つとき"],
+                 examples: [
+                    ("Use an oven glove — that dish is boiling hot!", "鍋つかみ使って！その皿めちゃくちゃ熱いよ！"),
+                    ("I burnt my hand because I couldn't find the oven gloves.", "鍋つかみが見つからなくて手をやけどしちゃった。")
+                 ], ipa: "/ən ˈʌvn ˌɡlʌv/"),
+            make("the plughole", "the hole at the bottom of a sink or bath where the water drains away (US: drain)",
+                 "（流しや浴槽の）排水口",
+                 useCases: ["排水が詰まったとき", "何かを落としてしまったとき"],
+                 examples: [
+                    ("The plughole's blocked again — the water won't go down.", "また排水口が詰まってる。水が流れないよ。"),
+                    ("I nearly dropped my ring down the plughole!", "指輪を排水口に落としそうになったよ！")
+                 ], ipa: "/ðə ˈplʌɡhəʊl/"),
+            make("a bath mat", "a small mat that you stand on when you get out of the bath or shower",
+                 "バスマット",
+                 useCases: ["お風呂上がりの話をするとき", "家の備品について話すとき"],
+                 examples: [
+                    ("Put the bath mat down first, or you'll soak the floor.", "先にバスマット敷いて。じゃないと床がびしょびしょになるよ。"),
+                    ("The bath mat needs a wash — it's starting to smell.", "バスマット洗わなきゃ。においがしてきた。")
+                 ], ipa: "/ə ˈbɑːθ ˌmæt/"),
+            make("a hairbrush", "a brush that you use to make your hair tidy",
+                 "ヘアブラシ",
+                 useCases: ["身支度をするとき", "旅行の持ち物を確認するとき"],
+                 examples: [
+                    ("Can I borrow your hairbrush? Mine's in my other bag.", "ヘアブラシ借りていい？自分のは別のカバンに入ってるんだ。"),
+                    ("I always forget to pack a hairbrush when I go away.", "旅行に行くとき、いつもヘアブラシを入れ忘れるんだ。")
+                 ], ipa: "/ə ˈheəbrʌʃ/"),
+            make("a shoelace", "a thin string used for tying your shoes",
+                 "靴ひも",
+                 useCases: ["靴ひもがほどけていると教えるとき", "靴の話をするとき"],
+                 examples: [
+                    ("Your shoelace is undone — you'll trip over it.", "靴ひもほどけてるよ。つまずくよ。"),
+                    ("Hang on, I just need to do up my shoelaces.", "ちょっと待って、靴ひも結ぶから。")
+                 ], ipa: "/ə ˈʃuːleɪs/"),
+            make("an alarm clock", "a clock that makes a noise at a particular time to wake you up",
+                 "目覚まし時計",
+                 useCases: ["朝起きられなかった話をするとき", "朝の予定を話すとき"],
+                 examples: [
+                    ("Sorry I'm late — I slept right through my alarm clock.", "遅れてごめん。目覚ましに全然気づかずに寝てた。"),
+                    ("I set two alarm clocks because I've got an early flight.", "朝早い便だから目覚ましを2つセットしたよ。")
+                 ], ipa: "/ən əˈlɑːm ˌklɒk/"),
+            make("a door handle", "the part of a door that you hold and turn or push down to open it",
+                 "ドアノブ・ドアの取っ手",
+                 useCases: ["ドアの開け方を教えるとき", "家の不具合を話すとき"],
+                 examples: [
+                    ("You have to lift the door handle a bit, or it won't open.", "ドアノブを少し持ち上げないと開かないんだ。"),
+                    ("The door handle came off in my hand — I'm so sorry!", "ドアノブが取れちゃった。本当にごめん！")
+                 ], ipa: "/ə ˈdɔː ˌhændl/"),
+            make("a padlock", "a lock that you can put on a gate, bike, locker or bag, and remove when you want",
+                 "南京錠",
+                 useCases: ["ロッカーや自転車に鍵をかけるとき", "旅行の防犯の話をするとき"],
+                 examples: [
+                    ("Bring a padlock if you want to use the lockers at the gym.", "ジムのロッカー使うなら南京錠持ってきて。"),
+                    ("I've put a little padlock on my suitcase, just in case.", "念のためスーツケースに小さい南京錠つけたよ。")
+                 ], ipa: "/ə ˈpædlɒk/"),
+        ]
+    }
+
+    private static var britishColloquial328: [Word] {
+        [
+            make("a tap", "a device that controls the flow of water from a pipe, e.g. above a sink (US: faucet)",
+                 "蛇口",
+                 useCases: ["水回りのトラブルを伝えるとき", "台所や洗面所で"],
+                 examples: [
+                    ("Could you turn the tap off? It's still dripping.", "蛇口閉めてくれる？まだポタポタ垂れてるよ。"),
+                    ("The hot tap in the bathroom isn't working again.", "お風呂場のお湯の蛇口、また出なくなってる。")
+                 ], ipa: "/ə ˈtæp/"),
+            make("a lid", "a cover on top of a container such as a pot, jar or box, which can be removed",
+                 "ふた",
+                 useCases: ["料理をするとき", "容器を閉めるとき"],
+                 examples: [
+                    ("Put the lid on the pan so it boils quicker.", "早く沸くように鍋にふたしておいて。"),
+                    ("I can't get the lid off this jar — can you have a go?", "この瓶のふたが開かないんだ。やってみてくれる？")
+                 ], ipa: "/ə ˈlɪd/"),
+            make("a sponge", "a soft object full of small holes, used for washing dishes or cleaning",
+                 "スポンジ",
+                 useCases: ["皿洗いをするとき", "掃除をするとき"],
+                 examples: [
+                    ("Use the green side of the sponge for the burnt bits.", "焦げたところはスポンジの緑の面を使って。"),
+                    ("This sponge is falling apart — we need a new one.", "このスポンジ、ボロボロだね。新しいの要るわ。")
+                 ], ipa: "/ə ˈspʌndʒ/"),
+            make("toothpaste", "a paste that you put on a toothbrush to clean your teeth",
+                 "歯磨き粉",
+                 useCases: ["旅行の持ち物を確認するとき", "買い物リストを作るとき"],
+                 examples: [
+                    ("I forgot to pack toothpaste — can I borrow yours?", "歯磨き粉入れ忘れちゃった。借りてもいい？"),
+                    ("We're nearly out of toothpaste, so add it to the list.", "歯磨き粉もうすぐなくなるから、リストに入れておいて。")
+                 ], ipa: "/ˈtuːθpeɪst/"),
+            make("a screwdriver", "a tool used for turning screws",
+                 "ドライバー（ねじ回し）",
+                 useCases: ["家具を組み立てるとき", "ちょっとした修理をするとき"],
+                 examples: [
+                    ("Have you got a screwdriver? This handle's come loose.", "ドライバーある？この取っ手が緩んじゃって。"),
+                    ("You'll need a small screwdriver to open the battery cover.", "電池のふたを開けるには小さいドライバーが要るよ。")
+                 ], ipa: "/ə ˈskruːˌdraɪvə/"),
+            make("a bucket", "an open container with a handle, used for carrying water or other things",
+                 "バケツ",
+                 useCases: ["掃除や洗車をするとき", "雨漏りなどに対処するとき"],
+                 examples: [
+                    ("Grab a bucket of warm water and we'll wash the car.", "ぬるま湯をバケツに汲んできて。車洗おう。"),
+                    ("The roof's leaking, so I've put a bucket under it.", "屋根が雨漏りしてるから、下にバケツ置いといた。")
+                 ], ipa: "/ə ˈbʌkɪt/"),
+            make("a mop", "a long stick with a soft head on the end, used for washing floors",
+                 "モップ",
+                 useCases: ["床をこぼした水などを拭くとき", "掃除の分担をするとき"],
+                 examples: [
+                    ("Careful, I've just been round with the mop — the floor's still wet.", "気をつけて、今モップかけたばかりで床がまだ濡れてるの。"),
+                    ("Where do you keep the mop? I've spilt juice everywhere.", "モップどこにある？ジュースこぼしちゃった。")
+                 ], ipa: "/ə ˈmɒp/"),
+            make("a smoke alarm", "a device on the ceiling that makes a loud noise when it detects smoke",
+                 "火災報知器・煙探知機",
+                 useCases: ["料理で煙が出たとき", "家の安全について話すとき"],
+                 examples: [
+                    ("Open a window — the toast has set the smoke alarm off again.", "窓開けて。トーストでまた火災報知器が鳴っちゃった。"),
+                    ("The smoke alarm keeps beeping, so I think the battery's going.", "火災報知器がピーピー鳴り続けてる。電池が切れかけてるんだと思う。")
+                 ], ipa: "/ə ˈsməʊk əˌlɑːm/"),
+            make("a wheelie bin", "a large rubbish bin with wheels that you leave outside for collection",
+                 "（車輪付きの）大型ゴミ箱",
+                 useCases: ["ゴミの日について話すとき", "近所の人と話すとき"],
+                 examples: [
+                    ("It's bin day tomorrow — can you put the wheelie bin out tonight?", "明日ゴミの日だから、今夜ゴミ箱を外に出しておいてくれる？"),
+                    ("The recycling goes in the blue wheelie bin.", "リサイクルは青いゴミ箱に入れてね。")
+                 ], ipa: "/ə ˈwiːli ˌbɪn/"),
+            make("a tape measure", "a long strip of material or metal marked in centimetres or inches, used for measuring",
+                 "メジャー・巻き尺",
+                 useCases: ["家具のサイズを測るとき", "引っ越しや模様替えのとき"],
+                 examples: [
+                    ("Pass me the tape measure — I want to see if the sofa will fit.", "メジャー取って。ソファが入るか確かめたいの。"),
+                    ("Have you got a tape measure? I need the width of the window.", "メジャーある？窓の幅を測りたいんだ。")
+                 ], ipa: "/ə ˈteɪp ˌmeʒə/"),
+            make("nail clippers", "a small tool used for cutting your fingernails or toenails",
+                 "爪切り",
+                 useCases: ["身だしなみについて話すとき", "物の貸し借りをするとき"],
+                 examples: [
+                    ("Have you seen the nail clippers? They're not in the drawer.", "爪切り見なかった？引き出しにないんだけど。"),
+                    ("You can't take nail clippers with a blade in your hand luggage on some flights.", "便によっては刃付きの爪切りを機内持ち込みできないよ。")
+                 ], ipa: "/ˈneɪl ˌklɪpəz/"),
+            make("a sieve", "a kitchen tool with a fine net, used for separating liquid from solid food or for removing lumps",
+                 "ざる・こし器",
+                 useCases: ["パスタの湯を切るとき", "お菓子作りで粉をふるうとき"],
+                 examples: [
+                    ("Drain the rice through a sieve and give it a rinse.", "お米をざるにあけて、さっとすすいで。"),
+                    ("Put the flour through a sieve so there aren't any lumps.", "ダマにならないように小麦粉をふるいにかけて。")
+                 ], ipa: "/ə ˈsɪv/"),
+            make("a comb", "a flat piece of plastic or metal with a row of thin teeth, used for tidying your hair",
+                 "くし",
+                 useCases: ["身支度をするとき", "持ち物を借りるとき"],
+                 examples: [
+                    ("Have you got a comb? My hair's a complete mess from the wind.", "くし持ってる？風で髪がぐちゃぐちゃなんだ。"),
+                    ("Run a comb through your hair before the photo.", "写真の前にちょっと髪をとかしなよ。")
+                 ], ipa: "/ə ˈkəʊm/"),
+            make("a raincoat", "a light coat that keeps you dry in the rain",
+                 "レインコート",
+                 useCases: ["天気に合わせて服装を決めるとき", "旅行の準備をするとき"],
+                 examples: [
+                    ("Take a raincoat — it's meant to chuck it down this afternoon.", "レインコート持って行きな。午後は土砂降りらしいよ。"),
+                    ("A light raincoat is a must if you're going to Scotland.", "スコットランドに行くなら軽いレインコートは必須だよ。")
+                 ], ipa: "/ə ˈreɪnkəʊt/"),
+            make("a pair of scissors", "a cutting tool with two sharp blades joined in the middle",
+                 "はさみ（1本）",
+                 useCases: ["物を借りるとき", "工作や包装をするとき"],
+                 examples: [
+                    ("Have you got a pair of scissors I could borrow?", "はさみ貸してもらえる？"),
+                    ("I need a pair of scissors to get this packaging open.", "この包装開けるのにはさみが要るな。")
+                 ], ipa: "/ə ˌpeər əv ˈsɪzəz/"),
+        ]
+    }
+
+    private static var britishColloquial329: [Word] {
+        [
+            make("a ladder", "a piece of equipment with steps, used for climbing up to reach high places",
+                 "はしご・脚立",
+                 useCases: ["高い所の作業をするとき", "物を借りるとき"],
+                 examples: [
+                    ("Can you hold the ladder while I change the bulb?", "電球替える間、はしご押さえててくれる？"),
+                    ("Have you got a ladder I could borrow to clear the gutters?", "雨どいの掃除したいんだけど、はしご貸してもらえる？")
+                 ], ipa: "/ə ˈlædə/"),
+            make("a hammer", "a tool with a heavy metal head on a handle, used for hitting nails",
+                 "かなづち・ハンマー",
+                 useCases: ["家具の組み立てや修理をするとき", "壁に何かを掛けるとき"],
+                 examples: [
+                    ("Pass me the hammer — I want to put this picture up.", "ハンマー取って。この絵を掛けたいんだ。"),
+                    ("Mind your fingers with that hammer!", "そのハンマー、指に気をつけてね！")
+                 ], ipa: "/ə ˈhæmə/"),
+            make("a lunchbox", "a small container for carrying a packed lunch to school or work",
+                 "お弁当箱・ランチボックス",
+                 useCases: ["子どもの学校の準備をするとき", "職場の昼食について話すとき"],
+                 examples: [
+                    ("Don't forget your lunchbox — it's on the kitchen table.", "お弁当箱忘れないでね。台所のテーブルの上にあるよ。"),
+                    ("He came home with his lunchbox still full.", "あの子、お弁当箱いっぱいのまま帰ってきたのよ。")
+                 ], ipa: "/ə ˈlʌntʃbɒks/"),
+            make("shampoo", "a liquid soap used for washing your hair",
+                 "シャンプー",
+                 useCases: ["買い物リストを作るとき", "旅行やホテルのアメニティについて話すとき"],
+                 examples: [
+                    ("We've run out of shampoo — can you grab some on the way home?", "シャンプー切れちゃった。帰りに買ってきてくれる？"),
+                    ("Does the hotel provide shampoo, or should I pack my own?", "ホテルにシャンプーある？それとも自分のを持って行くべき？")
+                 ], ipa: "/ʃæmˈpuː/"),
+            make("a bath towel", "a large towel used for drying your body after a bath or shower",
+                 "バスタオル",
+                 useCases: ["来客を泊めるとき", "ジムやプールに行くとき"],
+                 examples: [
+                    ("I've left a clean bath towel on your bed.", "ベッドの上にきれいなバスタオル置いておいたよ。"),
+                    ("Can I borrow a bath towel? I forgot mine.", "バスタオル借りてもいい？自分の忘れちゃった。")
+                 ], ipa: "/ə ˈbɑːθ ˌtaʊəl/"),
+            make("a first aid kit", "a box or bag containing plasters, bandages and other things for treating minor injuries",
+                 "救急箱・応急手当セット",
+                 useCases: ["ちょっとした怪我をしたとき", "旅行やキャンプの準備をするとき"],
+                 examples: [
+                    ("Is there a first aid kit around? He's cut his hand.", "救急箱どこかにある？彼が手を切っちゃった。"),
+                    ("Always keep a first aid kit in the car.", "車には必ず救急箱を積んでおきなよ。")
+                 ], ipa: "/ə ˌfɜːst ˈeɪd ˌkɪt/"),
+            make("a hot-water bottle", "a rubber container that you fill with hot water to keep you warm in bed",
+                 "湯たんぽ",
+                 useCases: ["寒い夜について話すとき", "体調が悪いとき"],
+                 examples: [
+                    ("It's freezing tonight — I'm taking a hot-water bottle to bed.", "今夜は冷えるね。湯たんぽ持ってベッドに行くわ。"),
+                    ("A hot-water bottle really helps when I've got stomach ache.", "お腹が痛いときは湯たんぽがすごく効くの。")
+                 ], ipa: "/ə ˌhɒt ˈwɔːtə ˌbɒtl/"),
+            make("a toilet roll", "a roll of soft paper used in the toilet (US: toilet paper)",
+                 "トイレットペーパー（1ロール）",
+                 useCases: ["日用品の買い物をするとき", "トイレの備品が切れたとき"],
+                 examples: [
+                    ("There's no toilet roll in the downstairs loo.", "下のトイレ、トイレットペーパーがないよ。"),
+                    ("Pick up a pack of toilet rolls while you're at the shop.", "お店にいるついでにトイレットペーパー1パック買ってきて。")
+                 ], ipa: "/ə ˈtɔɪlət ˌrəʊl/"),
+            make("an envelope", "a flat paper cover that you put a letter or card in before sending it",
+                 "封筒",
+                 useCases: ["手紙やカードを送るとき", "書類を受け取るとき"],
+                 examples: [
+                    ("Have you got a spare envelope? I need to post this card.", "封筒余ってる？このカードを送りたいんだ。"),
+                    ("Just pop the documents in an envelope and drop them off.", "書類は封筒に入れて届けてくれればいいよ。")
+                 ], ipa: "/ən ˈenvələʊp/"),
+            make("a rolling pin", "a long round piece of wood used for flattening pastry or dough",
+                 "めん棒",
+                 useCases: ["お菓子やパンを作るとき", "料理道具を探すとき"],
+                 examples: [
+                    ("Roll the pastry out with a rolling pin until it's nice and thin.", "めん棒で生地を薄くなるまで伸ばしてね。"),
+                    ("I haven't got a rolling pin, so I'm using a wine bottle.", "めん棒がないから、ワインの瓶で代用してるの。")
+                 ], ipa: "/ə ˈrəʊlɪŋ ˌpɪn/"),
+            make("a safety pin", "a pin with a cover over the point so it does not stick into you, used to fasten things",
+                 "安全ピン",
+                 useCases: ["服のほつれなどの応急処置をするとき", "ゼッケンを付けるとき"],
+                 examples: [
+                    ("My button's come off — have you got a safety pin?", "ボタン取れちゃった。安全ピン持ってない？"),
+                    ("You'll need four safety pins to attach your race number.", "ゼッケンを付けるのに安全ピンが4つ要るよ。")
+                 ], ipa: "/ə ˈseɪfti ˌpɪn/"),
+            make("lip balm", "a cream you put on your lips to stop them getting dry or cracked",
+                 "リップクリーム",
+                 useCases: ["乾燥する季節に", "持ち物を確認するとき"],
+                 examples: [
+                    ("My lips are so dry — have you got any lip balm?", "唇がすごく乾燥してる。リップクリーム持ってる？"),
+                    ("I always keep lip balm in my pocket in winter.", "冬はいつもポケットにリップクリーム入れてるの。")
+                 ], ipa: "/ˈlɪp ˌbɑːm/"),
+            make("a whisk", "a kitchen tool made of curved wires, used for beating eggs or cream",
+                 "泡立て器",
+                 useCases: ["料理やお菓子作りをするとき", "キッチン用品を探すとき"],
+                 examples: [
+                    ("Give the eggs a quick beat with a whisk.", "泡立て器で卵をさっと溶いて。"),
+                    ("Where's the whisk? It's not in the drawer.", "泡立て器どこ？引き出しにないんだけど。")
+                 ], ipa: "/ə ˈwɪsk/"),
+            make("a tin opener", "a tool for opening tins of food (US: can opener)",
+                 "缶切り",
+                 useCases: ["料理をするとき", "キャンプの準備をするとき"],
+                 examples: [
+                    ("Have you got a tin opener? This one hasn't got a ring pull.", "缶切りある？これプルタブが付いてないんだ。"),
+                    ("Don't forget the tin opener if we're taking beans camping.", "キャンプに豆の缶詰持って行くなら、缶切り忘れないでね。")
+                 ], ipa: "/ə ˈtɪn ˌəʊpənə/"),
+            make("a stapler", "a small device used for fastening sheets of paper together with staples",
+                 "ホッチキス",
+                 useCases: ["オフィスで書類をまとめるとき", "文房具を借りるとき"],
+                 examples: [
+                    ("Can I borrow your stapler for a sec?", "ちょっとホッチキス借りてもいい？"),
+                    ("The stapler's jammed again — has anyone got another one?", "ホッチキスがまた詰まった。誰か他の持ってない？")
+                 ], ipa: "/ə ˈsteɪplə/"),
+        ]
+    }
+
+    private static var britishColloquial337: [Word] {
+        [
+            make("rubber gloves", "thick gloves made of rubber that you wear to protect your hands when cleaning or washing up",
+                 "ゴム手袋",
+                 useCases: ["掃除や洗い物をするとき", "家事を分担するとき"],
+                 examples: [
+                    ("Put some rubber gloves on before you clean the oven.", "オーブン掃除する前にゴム手袋つけてね。"),
+                    ("I always wear rubber gloves for the washing-up — the water's boiling.", "洗い物のときはいつもゴム手袋してる、お湯が熱いからね。")
+                 ], ipa: "/ˌrʌbə ˈɡlʌvz/"),
+            make("the front door", "the main door at the front of a house or flat that people use to come in",
+                 "玄関のドア",
+                 useCases: ["戸締まりを確認するとき", "来客や配達の対応をするとき"],
+                 examples: [
+                    ("Did you lock the front door when you left?", "出るとき玄関の鍵かけた？"),
+                    ("There's someone at the front door — can you get it?", "玄関に誰か来てる、出てくれる？")
+                 ], ipa: "/ðə ˌfrʌnt ˈdɔː/"),
+            make("a paddling pool", "a small plastic pool, often inflatable, that children play in during hot weather",
+                 "子ども用のビニールプール",
+                 useCases: ["夏に子どもを遊ばせるとき", "暑い日の過ごし方を話すとき"],
+                 examples: [
+                    ("The kids spent all afternoon in the paddling pool.", "子どもたちは午後ずっとビニールプールで遊んでたよ。"),
+                    ("Can you help me blow up the paddling pool?", "ビニールプール膨らますの手伝ってくれる？")
+                 ], ipa: "/ə ˈpædlɪŋ puːl/"),
+            make("goggles", "special glasses that fit closely around your eyes to protect them, especially when swimming",
+                 "ゴーグル",
+                 useCases: ["プールや海に行くとき", "持ち物を確認するとき"],
+                 examples: [
+                    ("I can't swim without my goggles — the chlorine kills my eyes.", "ゴーグルなしじゃ泳げない、塩素で目が痛くなるから。"),
+                    ("Have you packed your goggles for swimming?", "水泳用のゴーグル入れた？")
+                 ], ipa: "/ˈɡɒɡlz/"),
+            make("conditioner", "a liquid you put on your hair after shampoo to make it soft and smooth",
+                 "コンディショナー・リンス",
+                 useCases: ["シャンプーなどを買い足すとき", "旅行の荷造りをするとき"],
+                 examples: [
+                    ("We're out of conditioner — can you grab some on your way home?", "コンディショナー切れてるから、帰りに買ってきてくれる？"),
+                    ("Is this shampoo or conditioner? I can't read the label.", "これシャンプー？コンディショナー？ラベルが読めない。")
+                 ], ipa: "/kənˈdɪʃənə/"),
+            make("bathroom scales", "a machine you stand on to find out how heavy you are",
+                 "体重計",
+                 useCases: ["体重やダイエットの話をするとき", "家の物について話すとき"],
+                 examples: [
+                    ("I haven't dared step on the bathroom scales since Christmas.", "クリスマスから体重計に乗る勇気が出ないよ。"),
+                    ("I think the bathroom scales are broken — they say I've put on three kilos.", "体重計壊れてると思う、3キロ増えてるって出るんだもん。")
+                 ], ipa: "/ˈbɑːθruːm skeɪlz/"),
+            make("a teapot", "a pot with a handle and a spout, used for making and pouring tea",
+                 "ティーポット・急須",
+                 useCases: ["お茶を入れるとき", "来客をもてなすとき"],
+                 examples: [
+                    ("I'll make a pot of tea — where's the teapot?", "お茶入れるね、ティーポットどこ？"),
+                    ("There's still some tea left in the teapot if you want it.", "よかったらポットにまだお茶残ってるよ。")
+                 ], ipa: "/ə ˈtiːpɒt/"),
+            make("earplugs", "small pieces of soft material you put in your ears to block out noise",
+                 "耳栓",
+                 useCases: ["騒がしい場所で寝るとき", "飛行機やライブに行くとき"],
+                 examples: [
+                    ("My flatmate snores, so I sleep with earplugs in.", "ルームメイトがいびきかくから、耳栓して寝てる。"),
+                    ("Take some earplugs to the gig — it gets really loud.", "ライブには耳栓持ってって、すごくうるさいから。")
+                 ], ipa: "/ˈɪəplʌɡz/"),
+            make("a travel adapter", "a plug that lets you use your electrical things in another country's sockets",
+                 "海外旅行用の変換プラグ",
+                 useCases: ["海外旅行の準備をするとき", "ホテルで充電するとき"],
+                 examples: [
+                    ("Don't forget a travel adapter — the sockets are different over there.", "変換プラグ忘れないでね、向こうはコンセントの形が違うから。"),
+                    ("Have you got a spare travel adapter? I need to charge my phone.", "変換プラグ余分に持ってない？スマホ充電したくて。")
+                 ], ipa: "/ə ˈtrævl əˌdæptə/"),
+            make("an eye mask", "a soft cover that you wear over your eyes to block out light when sleeping",
+                 "アイマスク",
+                 useCases: ["飛行機や夜行バスで寝るとき", "明るい部屋で寝るとき"],
+                 examples: [
+                    ("I can't sleep on a plane without an eye mask.", "アイマスクがないと飛行機で寝られないんだ。"),
+                    ("It gets light at four in summer, so I wear an eye mask.", "夏は4時に明るくなるから、アイマスクして寝てる。")
+                 ], ipa: "/ən ˈaɪ mɑːsk/"),
+            make("a shower curtain", "a waterproof curtain that stops water splashing out of the shower",
+                 "シャワーカーテン",
+                 useCases: ["浴室の掃除や模様替えをするとき", "ルームシェアの話をするとき"],
+                 examples: [
+                    ("Close the shower curtain properly or the floor gets soaked.", "シャワーカーテンちゃんと閉めて、じゃないと床がびしょびしょになる。"),
+                    ("The shower curtain's gone mouldy — we need a new one.", "シャワーカーテンにカビ生えちゃった、新しいの買わないと。")
+                 ], ipa: "/ə ˈʃaʊə ˌkɜːtn/"),
+            make("a sun hat", "a hat with a wide brim that protects your face and head from the sun",
+                 "日よけ帽子",
+                 useCases: ["夏の外出やビーチに行くとき", "子どもの持ち物を準備するとき"],
+                 examples: [
+                    ("Make sure the kids wear a sun hat — it's scorching today.", "子どもたちに日よけ帽子かぶせてね、今日は焼けるように暑いから。"),
+                    ("I bought a sun hat at the beach because I forgot mine.", "自分のを忘れたから、ビーチで日よけ帽子を買ったよ。")
+                 ], ipa: "/ə ˈsʌn hæt/"),
+            make("a flower pot", "a container, usually made of clay or plastic, that you grow plants in",
+                 "植木鉢",
+                 useCases: ["ガーデニングの話をするとき", "鍵の隠し場所を伝えるとき"],
+                 examples: [
+                    ("The spare key's under the flower pot by the back door.", "合鍵は裏口の植木鉢の下にあるよ。"),
+                    ("I need a bigger flower pot — this plant's outgrown it.", "もっと大きい植木鉢がいるな、この植物大きくなりすぎた。")
+                 ], ipa: "/ə ˈflaʊə pɒt/"),
+            make("a luggage tag", "a label you attach to your bag with your name and address on it",
+                 "荷物タグ・ネームタグ",
+                 useCases: ["空港で荷物を預けるとき", "旅行の準備をするとき"],
+                 examples: [
+                    ("Put a luggage tag on your suitcase in case it gets lost.", "なくなったときのために、スーツケースにネームタグつけといて。"),
+                    ("All the black cases look the same, so I use a bright luggage tag.", "黒いスーツケースって全部同じに見えるから、派手な荷物タグつけてる。")
+                 ], ipa: "/ə ˈlʌɡɪdʒ tæɡ/"),
+            make("a neck pillow", "a U-shaped cushion that supports your neck when you sleep sitting up, e.g. on a plane",
+                 "ネックピロー・首枕",
+                 useCases: ["長距離のフライトや移動のとき", "旅行グッズの話をするとき"],
+                 examples: [
+                    ("A neck pillow is a lifesaver on long-haul flights.", "長距離フライトだとネックピローは本当に助かるよ。"),
+                    ("I fell asleep on the coach and woke up with a stiff neck — should've brought a neck pillow.", "長距離バスで寝ちゃって首が痛い、ネックピロー持ってくればよかった。")
+                 ], ipa: "/ə ˈnek ˌpɪləʊ/"),
+        ]
+    }
+
+    private static var britishColloquial343: [Word] {
+        [
+            make("a wooden spoon", "a spoon made of wood used for stirring food while cooking",
+                 "木べら・木のスプーン",
+                 useCases: ["料理をしているとき", "最下位の残念賞を冗談で言うとき"],
+                 examples: [
+                    ("Pass me the wooden spoon — the sauce is sticking.", "木べら取って、ソースが焦げ付いてきた。"),
+                    ("We came dead last and got the wooden spoon.", "ダントツ最下位で残念賞もらっちゃったよ。")
+                 ], ipa: "/ə ˌwʊdn ˈspuːn/"),
+            make("a fly swatter", "a flat tool with a handle used for hitting and killing flies",
+                 "ハエたたき",
+                 useCases: ["虫が部屋に入ってきたとき", "夏の家の中で"],
+                 examples: [
+                    ("Where's the fly swatter? There's a massive one by the window.", "ハエたたきどこ？窓のとこにでっかいのがいる。"),
+                    ("He's been chasing that fly with a fly swatter for ten minutes.", "彼、10分もハエたたき持ってあのハエ追いかけてるよ。")
+                 ], ipa: "/ə ˈflaɪ ˌswɒtə/"),
+            make("a measuring jug", "a plastic or glass jug with marks on the side for measuring liquids",
+                 "計量カップ（取っ手付き）",
+                 useCases: ["お菓子作りや料理のとき", "分量を量るとき"],
+                 examples: [
+                    ("Fill the measuring jug up to 500 mils.", "計量カップに500ミリまで入れて。"),
+                    ("I just eyeball it — I never use a measuring jug.", "目分量でやってる、計量カップなんて使わないよ。")
+                 ], ipa: "/ə ˈmeʒərɪŋ dʒʌɡ/"),
+            make("a penknife", "a small knife with a folding blade that you can carry in your pocket",
+                 "ポケットナイフ・折りたたみナイフ",
+                 useCases: ["キャンプやアウトドアで", "何かを切りたいとき"],
+                 examples: [
+                    ("Anyone got a penknife? I can't get this tag off.", "誰かナイフ持ってない？このタグが取れないんだ。"),
+                    ("My grandad never went anywhere without his penknife.", "じいちゃんはどこ行くにもポケットナイフを手放さなかったな。")
+                 ], ipa: "/ə ˈpennaɪf/"),
+            make("a dish rack", "a rack next to the sink where you leave washed dishes to dry",
+                 "水切りかご",
+                 useCases: ["皿洗いのとき", "キッチンを片付けるとき"],
+                 examples: [
+                    ("Just leave the plates in the dish rack, they'll dry.", "お皿は水切りかごに置いといて、そのうち乾くから。"),
+                    ("The dish rack's full — can you put some stuff away?", "水切りかごがいっぱいだよ、ちょっと片付けてくれる？")
+                 ], ipa: "/ə ˈdɪʃ ræk/"),
+            make("a bookmark", "a strip of paper or card you put in a book to keep your place; also a saved web page",
+                 "しおり・ブックマーク",
+                 useCases: ["本を読んでいるとき", "ウェブサイトを保存するとき"],
+                 examples: [
+                    ("Don't fold the page down — use a bookmark!", "ページ折らないで、しおり使って！"),
+                    ("I've bookmarked that recipe for the weekend.", "週末用にあのレシピ、ブックマークしといた。")
+                 ], ipa: "/ə ˈbʊkmɑːk/"),
+            make("a hole punch", "an office tool that makes holes in paper so it can go in a folder",
+                 "穴あけパンチ",
+                 useCases: ["オフィスで書類を整理するとき", "ファイルに綴じるとき"],
+                 examples: [
+                    ("Has anyone nicked the hole punch again?", "また誰か穴あけパンチ持ってった？"),
+                    ("Stick it through the hole punch and file it.", "パンチで穴あけてファイルしといて。")
+                 ], ipa: "/ə ˈhəʊl pʌntʃ/"),
+            make("a funnel", "a tube that is wide at the top and narrow at the bottom for pouring liquids into small openings",
+                 "じょうご・ファンネル",
+                 useCases: ["液体を瓶に移すとき", "車にオイルを入れるとき"],
+                 examples: [
+                    ("Use a funnel or you'll get oil everywhere.", "じょうご使わないと、そこらじゅうオイルだらけになるよ。"),
+                    ("Have we got a funnel for the olive oil bottle?", "オリーブオイルの瓶に入れるじょうごってある？")
+                 ], ipa: "/ə ˈfʌnl/"),
+            make("a spirit level", "a tool with a bubble in liquid that shows whether a surface is perfectly flat",
+                 "水平器",
+                 useCases: ["棚や絵を取り付けるとき", "DIYをするとき"],
+                 examples: [
+                    ("That shelf's wonky — did you even use a spirit level?", "あの棚傾いてるよ、水平器使った？"),
+                    ("Hold the spirit level on top while I drill.", "ドリルで穴あける間、上に水平器当てといて。")
+                 ], ipa: "/ə ˈspɪrɪt ˌlevl/"),
+            make("an egg cup", "a small cup that holds a boiled egg upright while you eat it",
+                 "エッグスタンド・ゆで卵立て",
+                 useCases: ["イギリス式の朝食で", "半熟卵を食べるとき"],
+                 examples: [
+                    ("Pop your egg in the egg cup and dip your soldiers in.", "卵をエッグスタンドに立てて、細切りトーストを浸して食べな。"),
+                    ("We've got loads of egg cups but never any eggs.", "エッグスタンドはいっぱいあるのに、卵がいつもないんだよね。")
+                 ], ipa: "/ən ˈeɡ kʌp/"),
+            make("it's your funeral", "said when someone insists on doing something you think is a bad idea — the consequences are theirs",
+                 "どうなっても知らないよ・自己責任だからね",
+                 useCases: ["相手が忠告を聞かないとき", "冗談まじりに突き放すとき"],
+                 examples: [
+                    ("You're going to tell the boss he's wrong? It's your funeral.", "上司に間違ってるって言うの？どうなっても知らないよ。"),
+                    ("Fine, eat the dodgy prawns — it's your funeral.", "いいよ、その怪しいエビ食べなよ。自己責任だからね。")
+                 ], ipa: "/ɪts jɔː ˈfjuːnərəl/"),
+            make("talk about ...!", "used to emphasise that something is a very good example of a quality",
+                 "…ってまさにこのことだよ！・なんて…なんだ！",
+                 useCases: ["驚きや皮肉を強調するとき", "状況にツッコむとき"],
+                 examples: [
+                    ("Talk about bad timing — the bus left as we got there.", "タイミング悪すぎでしょ、着いた瞬間にバスが出ちゃった。"),
+                    ("Three meetings before lunch? Talk about a long morning!", "昼前に会議3つ？なんて長い午前なんだ！")
+                 ], ipa: "/ˈtɔːk əˌbaʊt/"),
+            make("no prizes for guessing", "said when the answer to something is very obvious",
+                 "言うまでもないよね・誰でもわかるよね",
+                 useCases: ["答えが明らかなとき", "皮肉っぽく言うとき"],
+                 examples: [
+                    ("No prizes for guessing who ate the last biscuit.", "最後のビスケット誰が食べたか、言うまでもないよね。"),
+                    ("No prizes for guessing where he's been — he stinks of beer.", "どこ行ってたかバレバレだよ、ビール臭いもん。")
+                 ], ipa: "/nəʊ ˈpraɪzɪz fə ˈɡesɪŋ/"),
+            make("you heard me", "said firmly to repeat that you meant exactly what you said",
+                 "聞こえたでしょ・言った通りだよ",
+                 useCases: ["強く言い返すとき", "命令を念押しするとき"],
+                 examples: [
+                    ("\"Sorry, what?\" \"You heard me — bed, now.\"", "「え、何？」「聞こえたでしょ、今すぐ寝なさい。」"),
+                    ("Yes, I said no. You heard me.", "そう、ダメって言ったの。聞こえたでしょ。")
+                 ], ipa: "/juː ˈhɜːd miː/"),
+            make("I'll be the judge of that", "said when you refuse to let someone else decide something for you",
+                 "それは私が決めることだ",
+                 useCases: ["余計な口出しをされたとき", "自分で判断したいとき"],
+                 examples: [
+                    ("\"You'll love it.\" \"I'll be the judge of that.\"", "「絶対気に入るよ。」「それは私が決める。」"),
+                    ("Too much for me? I'll be the judge of that, thanks.", "私には無理？それは自分で判断するから、どうも。")
+                 ], ipa: "/aɪl biː ðə ˈdʒʌdʒ əv ðæt/"),
+            make("not on my watch", "said to mean you won't allow something bad to happen while you are in charge",
+                 "俺の目の黒いうちはさせない",
+                 useCases: ["何かを阻止すると宣言するとき", "責任者として守るとき"],
+                 examples: [
+                    ("Nobody's getting hurt — not on my watch.", "誰にもケガはさせない、俺がいる限りはな。"),
+                    ("Skipping vegetables? Not on my watch, young man.", "野菜残す？私の目の黒いうちは許しません。")
+                 ], ipa: "/nɒt ɒn maɪ ˈwɒtʃ/"),
+            make("what gives?", "an informal way to ask what is happening or why something is strange",
+                 "どうなってんの？・何があったの？",
+                 useCases: ["状況がおかしいと感じたとき", "相手の様子が変なとき"],
+                 examples: [
+                    ("You've not said a word all night. What gives?", "一晩中ひと言もしゃべってないじゃん。どうしたの？"),
+                    ("The shop's shut on a Saturday? What gives?", "土曜なのに店閉まってる？どうなってんの？")
+                 ], ipa: "/wɒt ˈɡɪvz/"),
+            make("don't make me laugh", "said to show you think an idea or claim is ridiculous",
+                 "笑わせないでよ・冗談でしょ",
+                 useCases: ["ありえない話を聞いたとき", "相手の自慢を一蹴するとき"],
+                 examples: [
+                    ("You, up before eight? Don't make me laugh.", "あんたが8時前に起きる？笑わせないで。"),
+                    ("Him, apologise? Don't make me laugh.", "あいつが謝る？冗談でしょ。")
+                 ], ipa: "/dəʊnt meɪk miː ˈlɑːf/"),
+            make("I'll let you off (this time)", "said when you decide not to punish or criticise someone for something",
+                 "（今回は）見逃してあげる・大目に見るよ",
+                 useCases: ["小さなミスを許すとき", "冗談っぽく許すとき"],
+                 examples: [
+                    ("You're late again, but I'll let you off this time.", "また遅刻だけど、今回は見逃してあげる。"),
+                    ("You forgot my birthday? Buy me a pint and I'll let you off.", "誕生日忘れた？一杯おごってくれたら許してやるよ。")
+                 ], ipa: "/aɪl let juː ˈɒf/"),
+            make("what's the hold-up?", "used to ask why something is taking so long or why there is a delay",
+                 "何でこんなに時間かかってるの？・何待ち？",
+                 useCases: ["待たされているとき", "作業が進まないとき"],
+                 examples: [
+                    ("We've been sat here for ages — what's the hold-up?", "ずっと待たされてるんだけど、何で止まってるの？"),
+                    ("Come on, what's the hold-up? The taxi's outside.", "ほら、何してんの？タクシーもう外に来てるよ。")
+                 ], ipa: "/wɒts ðə ˈhəʊld ʌp/"),
+        ]
+    }
+
+    private static var britishColloquial347: [Word] {
+        [
+            make("a hammock", "a long piece of cloth or net hung between two trees or posts that you lie in",
+                 "ハンモック",
+                 useCases: ["庭やビーチでくつろぐとき", "キャンプの話をするとき"],
+                 examples: [
+                    ("All I want this weekend is a hammock, a book and a cold beer.", "今週末は、ハンモックと本と冷えたビールさえあればいい。"),
+                    ("He fell asleep in the hammock and got sunburnt on one side.", "あいつハンモックで寝落ちして、片側だけ日焼けしたんだ。")
+                 ], ipa: "/ə ˈhæmək/"),
+            make("a megaphone", "a cone-shaped device you speak into to make your voice louder",
+                 "拡声器・メガホン",
+                 useCases: ["イベントやデモで", "大勢に呼びかけるとき"],
+                 examples: [
+                    ("The coach was shouting at us through a megaphone.", "コーチがメガホンで俺たちに怒鳴ってたよ。"),
+                    ("You don't need a megaphone, mate, we can all hear you.", "メガホンなんていらないよ、みんな聞こえてるって。")
+                 ], ipa: "/ə ˈmeɡəfəʊn/"),
+            make("a dummy", "a rubber or plastic object that a baby sucks to keep calm (US: pacifier)",
+                 "（赤ちゃんの）おしゃぶり",
+                 useCases: ["赤ちゃんが泣いたとき", "子育ての話をするとき"],
+                 examples: [
+                    ("She won't stop crying, where's her dummy?", "全然泣き止まない、おしゃぶりどこ？"),
+                    ("We're trying to get him off the dummy before he turns three.", "3歳になる前におしゃぶりをやめさせようとしてるんだ。")
+                 ], ipa: "/ə ˈdʌmi/"),
+            make("a bib", "a piece of cloth or plastic tied under a baby's chin to keep its clothes clean while eating",
+                 "よだれかけ・スタイ",
+                 useCases: ["赤ちゃんの食事のとき", "汚れそうな料理を食べるとき"],
+                 examples: [
+                    ("Put a bib on him first, he's covered in spaghetti every time.", "先によだれかけ付けて、毎回スパゲッティまみれになるから。"),
+                    ("They give you a plastic bib when you order lobster here.", "ここでロブスター頼むとビニールのエプロンくれるんだよ。")
+                 ], ipa: "/ə ˈbɪb/"),
+            make("a sledge", "a small vehicle that slides over snow, used for fun going down hills (US: sled)",
+                 "そり",
+                 useCases: ["雪が積もったとき", "冬の遊びの話で"],
+                 examples: [
+                    ("It's snowed! Grab the sledge, we're going up the hill.", "雪だ！そり持って、丘に行くぞ。"),
+                    ("We didn't have a sledge so we used a tea tray.", "そりがなかったから、お盆で代用したよ。")
+                 ], ipa: "/ə ˈsledʒ/"),
+            make("a snow globe", "a small glass ball containing a tiny scene and water with white bits that look like snow when you shake it",
+                 "スノードーム",
+                 useCases: ["お土産を選ぶとき", "クリスマスの飾りの話で"],
+                 examples: [
+                    ("I brought you back a tacky snow globe from Paris.", "パリからベタなスノードーム買ってきたよ。"),
+                    ("The kids love shaking the snow globe and watching it settle.", "子どもたち、スノードームを振って雪が落ちるのを見るのが大好きなんだ。")
+                 ], ipa: "/ə ˈsnəʊ ɡləʊb/"),
+            make("an ashtray", "a small dish for cigarette ash and ends",
+                 "灰皿",
+                 useCases: ["喫煙の話をするとき", "パブやテラス席で"],
+                 examples: [
+                    ("Is there an ashtray out on the terrace?", "テラスに灰皿ある？"),
+                    ("His car smells like an ashtray, I can't sit in it.", "あいつの車、灰皿みたいな臭いで乗ってられない。")
+                 ], ipa: "/ən ˈæʃtreɪ/"),
+            make("jump leads", "a pair of thick wires used to start a car with a flat battery from another car's battery (US: jumper cables)",
+                 "ブースターケーブル",
+                 useCases: ["車のバッテリーが上がったとき", "車の備えの話で"],
+                 examples: [
+                    ("My battery's flat. Have you got any jump leads?", "バッテリー上がっちゃった。ブースターケーブル持ってる？"),
+                    ("Always keep jump leads in the boot in winter.", "冬はトランクに必ずブースターケーブル入れときなよ。")
+                 ], ipa: "/ˈdʒʌmp liːdz/"),
+            make("an ice scraper", "a flat plastic tool for scraping ice off a car windscreen",
+                 "（車の）霜取りスクレーパー",
+                 useCases: ["寒い朝に車を出すとき", "冬の準備の話で"],
+                 examples: [
+                    ("The windscreen's frozen solid. Where's the ice scraper?", "フロントガラスがカチカチに凍ってる。スクレーパーどこ？"),
+                    ("I didn't have an ice scraper so I used my loyalty card.", "スクレーパーがなかったから、ポイントカードで削ったよ。")
+                 ], ipa: "/ən ˈaɪs ˌskreɪpə/"),
+            make("a draught excluder", "a long padded tube placed at the bottom of a door to stop cold air coming in",
+                 "すきま風よけ（ドア下のクッション）",
+                 useCases: ["冬に部屋が寒いとき", "節約の話をするとき"],
+                 examples: [
+                    ("Put the draught excluder back, there's a howling gale under that door.", "すきま風よけ戻して、ドアの下からビュービュー風が来てる。"),
+                    ("My nan knitted a draught excluder shaped like a sausage dog.", "おばあちゃんがダックスフントの形のすきま風よけを編んでくれたんだ。")
+                 ], ipa: "/ə ˈdrɑːft ɪkˌskluːdə/"),
+            make("you had one job", "a joke or complaint when someone fails at the one simple thing they were supposed to do",
+                 "それだけやればよかったのに・頼んだのそれだけだよ",
+                 useCases: ["簡単な頼み事を失敗されたとき", "冗談っぽくツッコむとき"],
+                 examples: [
+                    ("You forgot the cake? You had one job!", "ケーキ忘れたの？頼んだのそれだけだよ！"),
+                    ("The sign says 'Welcom'. Honestly, they had one job.", "看板に「Welcom」って。それだけちゃんとやればよかったのに。")
+                 ], ipa: "/juː hæd ˈwʌn dʒɒb/"),
+            make("the plot thickens", "used humorously when a situation becomes more complicated or mysterious",
+                 "話がややこしくなってきた・ますます怪しいね",
+                 useCases: ["噂話が面白くなってきたとき", "謎が深まったとき"],
+                 examples: [
+                    ("So he wasn't at work and he wasn't at home? The plot thickens.", "じゃあ仕事にも家にもいなかったの？ますます怪しいね。"),
+                    ("She's been texting her ex again. Ooh, the plot thickens!", "また元カレとやり取りしてるって。おっと、話がややこしくなってきた！")
+                 ], ipa: "/ðə ˌplɒt ˈθɪkənz/"),
+            make("we've got company", "used to say that someone has arrived or is watching, often unexpectedly",
+                 "誰か来たぞ・お客さんだ",
+                 useCases: ["予期せぬ人が来たとき", "見られていると気づいたとき"],
+                 examples: [
+                    ("Heads up, we've got company. The boss is coming over.", "気をつけて、誰か来た。上司がこっち来るよ。"),
+                    ("Looks like we've got company. Who invited him?", "お客さんみたいだね。誰があいつ呼んだの？")
+                 ], ipa: "/wiːv ɡɒt ˈkʌmpəni/"),
+            make("cat got your tongue?", "used to ask someone why they are not saying anything",
+                 "なんで黙ってるの？・言葉が出ない？",
+                 useCases: ["相手が黙り込んだとき", "からかうとき"],
+                 examples: [
+                    ("What's wrong? Cat got your tongue?", "どうしたの？急に黙っちゃって。"),
+                    ("You were so chatty a minute ago. Cat got your tongue now?", "さっきまであんなにしゃべってたのに。言葉が出ない？")
+                 ], ipa: "/ˌkæt ɡɒt jɔː ˈtʌŋ/"),
+            make("it's all Greek to me", "used to say you cannot understand something at all",
+                 "さっぱりわからない・ちんぷんかんぷんだ",
+                 useCases: ["難しい説明を聞いたとき", "専門用語ばかりのとき"],
+                 examples: [
+                    ("He tried to explain crypto to me, but it's all Greek to me.", "仮想通貨のこと説明してくれたけど、ちんぷんかんぷんだよ。"),
+                    ("Tax forms? Don't ask me, it's all Greek to me.", "税金の書類？聞かないで、さっぱりわからないから。")
+                 ], ipa: "/ɪts ˌɔːl ˈɡriːk tə miː/"),
+            make("money doesn't grow on trees", "used to tell someone, often a child, that money is limited and should not be wasted",
+                 "お金は湧いてくるもんじゃない",
+                 useCases: ["子どもにねだられたとき", "無駄遣いを注意するとき"],
+                 examples: [
+                    ("Another new phone? Money doesn't grow on trees, you know.", "また新しいスマホ？お金は湧いてくるもんじゃないんだよ。"),
+                    ("My dad always said money doesn't grow on trees.", "父さんはいつも「金は木に生えない」って言ってたよ。")
+                 ], ipa: "/ˈmʌni ˌdʌznt ɡrəʊ ɒn ˈtriːz/"),
+            make("it's a free country", "used to say that someone is allowed to do what they want",
+                 "自由でしょ・好きにさせてよ",
+                 useCases: ["口出しされたとき", "相手の自由を認めるとき"],
+                 examples: [
+                    ("I can sit wherever I like, it's a free country.", "どこに座ろうと勝手でしょ、自由なんだから。"),
+                    ("If he wants to wear socks with sandals, it's a free country.", "あいつがサンダルに靴下履きたいなら、それは自由だよ。")
+                 ], ipa: "/ɪts ə ˌfriː ˈkʌntri/"),
+            make("you and whose army?", "a jokey or defiant reply to someone who threatens to make you do something",
+                 "やれるもんならやってみな・誰がそんなことできるって？",
+                 useCases: ["脅し文句に言い返すとき", "冗談で強がるとき"],
+                 examples: [
+                    ("I'm going to kick you out of this house! — Oh yeah? You and whose army?", "この家から追い出してやる！—へえ？やれるもんならやってみな。"),
+                    ("You'll make me do the dishes? You and whose army?", "俺に皿洗いさせるって？やれるもんならね。")
+                 ], ipa: "/juː ən ˌhuːz ˈɑːmi/"),
+            make("the walls have ears", "used to warn someone to be careful what they say because others may be listening",
+                 "壁に耳あり・誰が聞いてるかわからないよ",
+                 useCases: ["秘密の話をするとき", "職場で噂話をするとき"],
+                 examples: [
+                    ("Keep your voice down, the walls have ears in this office.", "声小さくして、このオフィスは壁に耳ありだから。"),
+                    ("Let's talk about it outside. The walls have ears.", "外で話そう。誰が聞いてるかわからないし。")
+                 ], ipa: "/ðə ˌwɔːlz həv ˈɪəz/"),
+            make("cross my heart", "used to promise that what you are saying is true or that you will do something",
+                 "誓うよ・神に誓って",
+                 useCases: ["約束するとき", "本当だと信じてもらいたいとき"],
+                 examples: [
+                    ("I didn't tell anyone, cross my heart.", "誰にも言ってないよ、誓って。"),
+                    ("I'll be home by ten, cross my heart and hope to die.", "10時までに帰るよ、絶対に誓う。")
+                 ], ipa: "/ˌkrɒs maɪ ˈhɑːt/"),
+        ]
+    }
+
+    private static var britishColloquial351: [Word] {
+        [
+            make("a lilo", "an inflatable plastic or rubber mattress that you lie on to float in the sea or a swimming pool",
+                 "（海やプールで使う）浮き輪マット・エアマット",
+                 useCases: ["ビーチやプールで", "夏休みの持ち物の話で"],
+                 examples: [
+                    ("I spent the whole afternoon floating about on a lilo in the pool.", "午後はずっとプールでエアマットに乗ってぷかぷかしてたよ。"),
+                    ("Who's going to blow up the lilo? I'm not doing it, I'll pass out.", "誰がエアマット膨らますの？僕は無理、気絶しちゃう。")
+                 ], ipa: "/ə ˈlaɪləʊ/"),
+            make("a windbreak", "a screen of fabric held up by poles that you put up on a beach to protect yourself from the wind",
+                 "（ビーチ用の）風よけ・ウィンドスクリーン",
+                 useCases: ["風の強いビーチで", "キャンプやピクニックの準備で"],
+                 examples: [
+                    ("Stick the windbreak up or we'll have sand in our sandwiches.", "風よけ立てて、じゃないとサンドイッチが砂まみれになるよ。"),
+                    ("It's a proper British beach day — windbreak, flask of tea and a cagoule.", "これぞイギリスのビーチの日だね、風よけに水筒の紅茶にレインジャケット。")
+                 ], ipa: "/ə ˈwɪndbreɪk/"),
+            make("hair straighteners", "an electrical device with two hot flat plates that you use to make your hair straight",
+                 "ヘアアイロン（ストレート用）",
+                 useCases: ["出かける前の身支度で", "電源の切り忘れが心配なとき"],
+                 examples: [
+                    ("Did I turn my hair straighteners off? I'm going to worry about it all day now.", "ヘアアイロン切ったっけ？これで一日中気になっちゃうよ。"),
+                    ("Can I borrow your straighteners? Mine have packed in.", "ヘアアイロン借りていい？私の壊れちゃって。")
+                 ], ipa: "/ˈheə ˌstreɪtnəz/"),
+            make("a bucket and spade", "a small toy bucket and shovel that children use to play with sand on the beach",
+                 "（砂遊び用の）バケツとスコップ",
+                 useCases: ["子どもとビーチに行くとき", "海辺の懐かしい思い出の話で"],
+                 examples: [
+                    ("The kids won't leave the house without their bucket and spade.", "子どもたち、バケツとスコップなしじゃ家を出ようとしないんだ。"),
+                    ("It's a real bucket-and-spade kind of town — donkeys, ice cream, the lot.", "まさに昔ながらの海水浴の町だよ、ロバにアイスに何でもあり。")
+                 ], ipa: "/ə ˌbʌkɪt ən ˈspeɪd/"),
+            make("a snorkel", "a tube that you breathe through while swimming with your face under the water",
+                 "シュノーケル",
+                 useCases: ["南国旅行で海に潜るとき", "旅行の持ち物の話で"],
+                 examples: [
+                    ("Bring your mask and snorkel, the fish round those rocks are amazing.", "マスクとシュノーケル持ってきて、あの岩の周りの魚すごいから。"),
+                    ("I swallowed half the sea the first time I used a snorkel.", "初めてシュノーケル使ったとき、海水がぶがぶ飲んじゃったよ。")
+                 ], ipa: "/ə ˈsnɔːkl/"),
+            make("an Allen key", "a small L-shaped metal tool with six flat sides, used to turn screws, especially for putting together flat-pack furniture",
+                 "六角レンチ",
+                 useCases: ["組み立て家具を作るとき", "自転車の調整で"],
+                 examples: [
+                    ("The wardrobe came with one tiny Allen key and about three hundred screws.", "そのクローゼット、ちっちゃい六角レンチ1本とネジが300本くらい付いてきたよ。"),
+                    ("Have you seen the Allen key? I need to tighten my bike seat.", "六角レンチ見なかった？自転車のサドル締めたいんだけど。")
+                 ], ipa: "/ən ˈælən kiː/"),
+            make("a bike helmet", "a hard hat that you wear to protect your head when you ride a bicycle",
+                 "自転車用ヘルメット",
+                 useCases: ["自転車に乗る前に", "子どもへの注意で"],
+                 examples: [
+                    ("Don't even think about getting on that bike without your helmet.", "ヘルメットなしでその自転車に乗ろうなんて考えないでよ。"),
+                    ("My bike helmet saved my life when I came off on that roundabout.", "あのロータリーで転んだとき、ヘルメットのおかげで命拾いしたよ。")
+                 ], ipa: "/ə ˈbaɪk ˌhelmɪt/"),
+            make("a cafetière", "a glass coffee pot with a metal filter that you push down to separate the coffee grounds; a French press",
+                 "フレンチプレス（コーヒー器具）",
+                 useCases: ["家でコーヒーを淹れるとき", "来客をもてなすとき"],
+                 examples: [
+                    ("I'll make a cafetière — does anyone want one?", "フレンチプレスでコーヒー淹れるけど、誰かいる？"),
+                    ("Push the plunger down slowly or the cafetière will go everywhere.", "プランジャーはゆっくり押して、じゃないとそこら中に飛び散るよ。")
+                 ], ipa: "/ə ˌkæfəˈtjeə/"),
+            make("a blender", "an electric kitchen machine with sharp blades that mixes or crushes food into a liquid, e.g. for smoothies or soup",
+                 "ミキサー・ブレンダー",
+                 useCases: ["スムージーやスープを作るとき", "朝のうるさい音の話で"],
+                 examples: [
+                    ("Chuck it all in the blender and you've got soup in two minutes.", "全部ミキサーに放り込めば2分でスープの出来上がり。"),
+                    ("Please don't use the blender at six in the morning, I'm begging you.", "お願いだから朝6時にミキサー使わないで、頼むよ。")
+                 ], ipa: "/ə ˈblendə/"),
+            make("a skylight", "a window built into a roof or ceiling to let light in",
+                 "天窓",
+                 useCases: ["家や部屋の内見で", "屋根裏部屋の話で"],
+                 examples: [
+                    ("The loft's lovely and bright thanks to the skylight.", "天窓のおかげで屋根裏がすごく明るくていい感じだよ。"),
+                    ("You can lie in bed and watch the rain on the skylight — it's so cosy.", "ベッドに寝転がって天窓に当たる雨を眺められるんだ、すごく落ち着くよ。")
+                 ], ipa: "/ə ˈskaɪlaɪt/"),
+            make("you nearly gave me a heart attack", "said when someone has frightened or shocked you, often by appearing suddenly",
+                 "心臓止まるかと思った・びっくりさせないでよ",
+                 useCases: ["急に背後から話しかけられたとき", "相手の言動に驚かされたとき"],
+                 examples: [
+                    ("Don't creep up on me like that, you nearly gave me a heart attack!", "そんなふうに忍び寄らないでよ、心臓止まるかと思った！"),
+                    ("You nearly gave me a heart attack — I thought you'd crashed the car!", "びっくりさせないでよ、車ぶつけたのかと思ったじゃん！")
+                 ], ipa: "/ju ˈnɪəli ˌɡeɪv mi ə ˈhɑːt əˌtæk/"),
+            make("that'll teach you", "said, often with little sympathy, when something bad happens to someone because of their own foolish behaviour",
+                 "いい薬になったね・自業自得だよ",
+                 useCases: ["忠告を無視して失敗した相手に", "軽くからかうとき"],
+                 examples: [
+                    ("That'll teach you to leave your phone on the roof of the car.", "車の屋根にスマホ置きっぱなしにするからだよ、いい薬になったね。"),
+                    ("Hungover again? Well, that'll teach you to mix your drinks.", "また二日酔い？ちゃんぽんするからだよ、自業自得。")
+                 ], ipa: "/ˌðætl ˈtiːtʃ ju/"),
+            make("it's a fair cop", "a humorous way of admitting that you have been caught doing something wrong and accept the blame",
+                 "参りました・バレちゃったか",
+                 useCases: ["いたずらやズルがバレたとき", "冗談っぽく非を認めるとき"],
+                 examples: [
+                    ("\"You've eaten the last slice, haven't you?\" \"It's a fair cop.\"", "「最後の一切れ食べたでしょ？」「参りました、バレたか。」"),
+                    ("All right, it's a fair cop — I forgot your birthday.", "わかった、認めるよ、誕生日忘れてた。")
+                 ], ipa: "/ɪts ə ˌfeə ˈkɒp/"),
+            make("don't take it personally", "used to tell someone not to feel hurt or offended, because something is not meant as criticism of them",
+                 "気にしないで・あなたのせいじゃないよ",
+                 useCases: ["相手が冷たくされて落ち込んでいるとき", "断るときの前置きで"],
+                 examples: [
+                    ("Don't take it personally, he's grumpy with everyone before his coffee.", "気にしないで、あの人コーヒー飲むまでは誰にでも不機嫌だから。"),
+                    ("I'm going to say no, but please don't take it personally.", "断らせてもらうけど、あなたがどうこうって話じゃないからね。")
+                 ], ipa: "/ˌdəʊnt ˌteɪk ɪt ˈpɜːsənəli/"),
+            make("it does what it says on the tin", "used to say that something is exactly as good as it claims to be, no more and no less",
+                 "看板に偽りなし・期待通りの働きをする",
+                 useCases: ["商品やサービスの感想で", "シンプルで確実なものを褒めるとき"],
+                 examples: [
+                    ("It's not fancy, but it does what it says on the tin.", "おしゃれじゃないけど、看板通りちゃんと仕事するよ。"),
+                    ("The hotel does what it says on the tin — clean, cheap and near the station.", "そのホテルは看板に偽りなしだよ、清潔で安くて駅近。")
+                 ], ipa: "/ɪt ˌdʌz wɒt ɪt ˈsez ɒn ðə ˈtɪn/"),
+            make("be careful what you wish for", "a warning that something you want may turn out to have unpleasant consequences",
+                 "願い事には気をつけて・望んだことが叶うと大変かもよ",
+                 useCases: ["昇進や大きな変化を望む人に", "皮肉っぽく忠告するとき"],
+                 examples: [
+                    ("You want to be the boss? Be careful what you wish for.", "上司になりたいの？望むものには気をつけなよ。"),
+                    ("I begged for a quiet week and now I'm bored stiff — be careful what you wish for.", "静かな一週間を願ったら退屈で死にそう、願い事には気をつけないとね。")
+                 ], ipa: "/bi ˈkeəfl wɒt ju ˈwɪʃ fɔː/"),
+            make("it won't kill you", "used to tell someone that something they don't want to do is not as bad as they think",
+                 "死にはしないよ・それくらい大丈夫でしょ",
+                 useCases: ["面倒がる相手を説得するとき", "嫌いな食べ物を勧めるとき"],
+                 examples: [
+                    ("Eat a few vegetables, it won't kill you.", "野菜ちょっとは食べなよ、死にはしないから。"),
+                    ("It won't kill you to say sorry, you know.", "謝るくらいどうってことないでしょ。")
+                 ], ipa: "/ɪt ˌwəʊnt ˈkɪl ju/"),
+            make("count your blessings", "to remember how lucky you are and the good things you have, especially when you are feeling unhappy",
+                 "恵まれていることに感謝しなよ・ありがたいと思わなきゃ",
+                 useCases: ["愚痴を言う相手に", "自分を励ますとき"],
+                 examples: [
+                    ("You've got a job and a roof over your head — count your blessings.", "仕事も住む家もあるんだから、恵まれてると思わなきゃ。"),
+                    ("After the week I've had, I'm just counting my blessings that nobody got hurt.", "散々な一週間だったけど、誰も怪我しなかっただけありがたいよ。")
+                 ], ipa: "/ˌkaʊnt jə ˈblesɪŋz/"),
+            make("you snooze, you lose", "said when someone misses an opportunity because they were too slow to act",
+                 "ぼやぼやしてると損するよ・早い者勝ち",
+                 useCases: ["最後の一個を取ったとき", "チャンスを逃した人に"],
+                 examples: [
+                    ("Sorry, I had the last croissant — you snooze, you lose.", "ごめん、最後のクロワッサン食べちゃった、早い者勝ちだよ。"),
+                    ("The tickets sold out in ten minutes. You snooze, you lose.", "チケット10分で売り切れたよ。ぼやぼやしてたら負けだね。")
+                 ], ipa: "/ju ˈsnuːz ju ˈluːz/"),
+            make("who's counting?", "a joking way of saying that a number or amount doesn't matter, often when it clearly does",
+                 "誰も数えてないって・細かいことはいいじゃん",
+                 useCases: ["お代わりや回数を突っ込まれたとき", "年齢の話をごまかすとき"],
+                 examples: [
+                    ("\"Is that your fourth slice of cake?\" \"Who's counting?\"", "「それケーキ4切れ目じゃない？」「誰も数えてないでしょ。」"),
+                    ("I'm forty-something — but who's counting?", "40いくつだけど、まあ細かいことはいいじゃん？")
+                 ], ipa: "/ˌhuːz ˈkaʊntɪŋ/"),
+        ]
+    }
+
+    private static var britishColloquial350: [Word] {
+        [
+            make("a wing mirror", "one of the two mirrors on the outside of a car, next to the front doors, that let the driver see behind",
+                 "サイドミラー・ドアミラー",
+                 useCases: ["運転や駐車の話で", "車をこすったとき"],
+                 examples: [
+                    ("Some idiot clipped my wing mirror in the car park.", "駐車場でどっかのバカにサイドミラーこすられたよ。"),
+                    ("Fold your wing mirror in, it's a tight squeeze down this lane.", "サイドミラー畳んで、この道めちゃくちゃ狭いから。")
+                 ], ipa: "/ə ˈwɪŋ ˌmɪrə/"),
+            make("bubble wrap", "plastic sheeting with lots of small air bubbles in it, used for protecting things when you pack them",
+                 "プチプチ・緩衝材",
+                 useCases: ["引っ越しや荷造りのとき", "暇つぶしの話で"],
+                 examples: [
+                    ("Wrap the glasses in bubble wrap or they'll be in pieces by the time we get there.", "グラスはプチプチで包んでね、じゃないと着く頃には粉々だよ。"),
+                    ("Nothing's more satisfying than popping bubble wrap.", "プチプチ潰すほど気持ちいいことってないよね。")
+                 ], ipa: "/ˈbʌbl ræp/"),
+            make("a filing cabinet", "a piece of office furniture with deep drawers for storing documents in folders",
+                 "ファイルキャビネット・書類棚",
+                 useCases: ["オフィスで書類を探すとき", "古い書類の整理の話で"],
+                 examples: [
+                    ("It'll be in the filing cabinet somewhere, under 'miscellaneous'.", "ファイルキャビネットのどっかにあるよ、「その他」のとこに。"),
+                    ("Who keeps biscuits in the filing cabinet? Actually, genius.", "誰だよ書類棚にビスケット隠してるの？…いや、天才か。")
+                 ], ipa: "/ə ˈfaɪlɪŋ ˌkæbɪnət/"),
+            make("a high chair", "a tall chair with long legs and a small tray, for a baby or young child to sit in while eating",
+                 "（赤ちゃん用の）ハイチェア・子ども用椅子",
+                 useCases: ["レストランで子連れのとき", "育児の話で"],
+                 examples: [
+                    ("Could we get a high chair for the little one, please?", "この子用にハイチェアをお願いできますか？"),
+                    ("Half his dinner ends up on the floor around the high chair.", "あの子の晩ご飯の半分はハイチェアの周りの床行きだよ。")
+                 ], ipa: "/ə ˈhaɪ tʃeə/"),
+            make("earbuds", "very small headphones that fit inside your ears",
+                 "イヤホン・ワイヤレスイヤホン",
+                 useCases: ["通勤中に音楽を聴くとき", "なくし物の話で"],
+                 examples: [
+                    ("I've lost one of my earbuds again. Third time this month.", "またイヤホン片方なくした。今月3回目だよ。"),
+                    ("Take your earbuds out, I'm trying to talk to you!", "イヤホン外してよ、話しかけてるんだから！")
+                 ], ipa: "/ˈɪəbʌdz/"),
+            make("a parasol", "a large umbrella used to give shade from the sun, especially on a beach or over a garden table",
+                 "パラソル・日傘",
+                 useCases: ["ビーチやテラス席で", "暑い日の庭で"],
+                 examples: [
+                    ("Grab a table with a parasol, I'm burning already.", "パラソルのある席取って、もう日焼けしそう。"),
+                    ("The wind picked the parasol up and sent it flying down the beach.", "風でパラソルが浮いて、ビーチの向こうまで飛んでったよ。")
+                 ], ipa: "/ə ˈpærəsɒl/"),
+            make("a water cooler", "a machine in an office that provides cold drinking water; also used to mean office gossip and casual chat",
+                 "ウォーターサーバー（比喩で：職場の雑談）",
+                 useCases: ["職場で水を飲むとき", "社内のうわさ話の話で"],
+                 examples: [
+                    ("I'll be at the water cooler if anyone needs me.", "誰か用があったらウォーターサーバーのとこにいるね。"),
+                    ("That's the kind of thing everyone gossips about round the water cooler.", "そういうのってみんな給湯室で噂するネタだよね。")
+                 ], ipa: "/ə ˈwɔːtə ˌkuːlə/"),
+            make("a mouse mat", "a small flat pad that you move a computer mouse on",
+                 "マウスパッド",
+                 useCases: ["パソコン作業の話で", "デスク周りを整えるとき"],
+                 examples: [
+                    ("My mouse keeps jumping about, I think I need a new mouse mat.", "マウスがピョンピョン飛ぶんだよね、新しいマウスパッドが要るかも。"),
+                    ("He's got a mouse mat with his dog's face on it. Bless him.", "あいつ、自分の犬の顔のマウスパッド使ってるんだよ。かわいいやつ。")
+                 ], ipa: "/ə ˈmaʊs mæt/"),
+            make("a draining board", "the area next to a kitchen sink where you put washed dishes to dry",
+                 "水切りかご・水切り台",
+                 useCases: ["皿洗いの後で", "キッチンを片付けるとき"],
+                 examples: [
+                    ("Just leave the plates on the draining board, I'll put them away later.", "お皿は水切りかごに置いといて、後で片付けるから。"),
+                    ("The draining board's piled so high it's about to collapse.", "水切りかごが山盛りで、今にも崩れそう。")
+                 ], ipa: "/ə ˈdreɪnɪŋ bɔːd/"),
+            make("a bobble hat", "a warm knitted hat with a small ball of wool on the top",
+                 "ボンボン付きニット帽",
+                 useCases: ["寒い日の服装の話で", "冬のファッションで"],
+                 examples: [
+                    ("It's bitter out there, wear your bobble hat.", "外はめちゃくちゃ寒いよ、ボンボンのニット帽かぶって。"),
+                    ("He looks about five years old in that bobble hat.", "あのボンボン帽だと、あいつ5歳児にしか見えないね。")
+                 ], ipa: "/ə ˈbɒbl hæt/"),
+            make("spare me", "used to tell someone you do not want to hear something, such as excuses, details or a lecture",
+                 "勘弁してよ・聞きたくない",
+                 useCases: ["言い訳や説教を遮るとき", "詳しい話を聞きたくないとき"],
+                 examples: [
+                    ("Spare me the lecture, Dad. I know I messed up.", "説教は勘弁してよ、父さん。やらかしたのはわかってるから。"),
+                    ("\"So the surgery went like this—\" \"Please, spare me the details!\"", "「で、手術がさ…」「お願い、詳しいことは聞きたくない！」")
+                 ], ipa: "/ˈspeə mi/"),
+            make("cut the crap", "a rude way of telling someone to stop saying things that are untrue or unimportant and get to the point",
+                 "たわごとはやめろ・本題に入れ",
+                 useCases: ["嘘やごまかしにイラついたとき", "映画の尋問シーンで"],
+                 examples: [
+                    ("Cut the crap and tell me where you really were last night.", "ごまかすのはやめて、昨夜本当はどこにいたのか言えよ。"),
+                    ("Let's cut the crap — do you want the job or not?", "回りくどいのはなしだ。この仕事やりたいの、やりたくないの？")
+                 ], ipa: "/ˌkʌt ðə ˈkræp/"),
+            make("get over yourself", "used to tell someone to stop thinking they are so important or to stop being so dramatic",
+                 "何様のつもり？・大げさだよ",
+                 useCases: ["偉そうな人に言い返すとき", "大げさな友達をたしなめるとき"],
+                 examples: [
+                    ("Oh, get over yourself. Nobody's even looking at you.", "もう、自意識過剰だって。誰もあんたのことなんて見てないよ。"),
+                    ("He thinks he's a rock star because he's got one song on Spotify. Get over yourself, mate.", "Spotifyに1曲あるだけでロックスター気取りだよ。何様だよって。")
+                 ], ipa: "/ˌɡet ˈəʊvə jɔːˌself/"),
+            make("we'll see about that", "used to say that you intend to stop something from happening, or that you doubt what someone has said",
+                 "それはどうかな・そうはさせない",
+                 useCases: ["相手の自信に疑いを示すとき", "挑戦を受けて立つとき"],
+                 examples: [
+                    ("\"I'm going to win this year.\" \"Oh, we'll see about that.\"", "「今年は俺が勝つよ」「へえ、それはどうかな。」"),
+                    ("He thinks he can just walk in and take my parking space? We'll see about that.", "勝手に私の駐車スペース取れると思ってるの？そうはさせないから。")
+                 ], ipa: "/wiːl ˈsiː əˌbaʊt ðæt/"),
+            make("brace yourself", "used to warn someone that something unpleasant or shocking is about to happen or be said",
+                 "覚悟して・心の準備をしてね",
+                 useCases: ["悪い知らせを伝える前に", "衝撃に備えさせるとき"],
+                 examples: [
+                    ("Brace yourself — I've just seen the electricity bill.", "覚悟してね、今電気代の請求見ちゃった。"),
+                    ("Brace yourselves, the in-laws are here for the whole weekend.", "みんな心の準備して、義理の親が週末ずっといるから。")
+                 ], ipa: "/ˈbreɪs jɔːˌself/"),
+            make("what did I miss?", "used when you arrive late or come back to ask what has happened while you were away",
+                 "何かあった？・私がいない間どうなった？",
+                 useCases: ["遅れて合流したとき", "席を外して戻ったとき"],
+                 examples: [
+                    ("Sorry, sorry, the traffic was a nightmare. What did I miss?", "ごめんごめん、渋滞がひどくてさ。何か進展あった？"),
+                    ("I popped out for five minutes and everyone's crying. What did I miss?", "5分抜けただけでみんな泣いてるんだけど。何があったの？")
+                 ], ipa: "/ˌwɒt dɪd aɪ ˈmɪs/"),
+            make("you've been warned", "used to tell someone that you have told them about a danger or problem, so it is their fault if something goes wrong",
+                 "ちゃんと警告したからね・忠告はしたよ",
+                 useCases: ["自己責任だと念押しするとき", "冗談っぽく脅すとき"],
+                 examples: [
+                    ("The curry's really hot. You've been warned.", "そのカレー本当に辛いよ。忠告はしたからね。"),
+                    ("If you eat the last slice of cake again, you've been warned.", "またケーキの最後の一切れ食べたら…警告したからね。")
+                 ], ipa: "/juːv biːn ˈwɔːnd/"),
+            make("touché", "used to admit that someone has made a good point against you in an argument",
+                 "一本取られた・それを言われると痛い",
+                 useCases: ["言い返されて認めるとき", "軽い言い合いで"],
+                 examples: [
+                    ("\"You're always late.\" \"Says the man who missed his own wedding rehearsal.\" \"Touché.\"", "「お前いつも遅刻だな」「自分の結婚式のリハに遅れた人が言う？」「…一本取られた。」"),
+                    ("Touché. I suppose I did say that.", "それを言われると痛いな。確かに言ったわ。")
+                 ], ipa: "/tuːˈʃeɪ/"),
+            make("you do the maths", "used to say that the answer or conclusion is obvious from the facts you have just given",
+                 "考えればわかるでしょ・あとは察して",
+                 useCases: ["結論が明らかなとき", "皮肉っぽく説明を省くとき"],
+                 examples: [
+                    ("He left at midnight and she left two minutes later. You do the maths.", "彼が0時に帰って、彼女はその2分後に帰ったの。あとは察して。"),
+                    ("Rent's gone up, my pay hasn't. You do the maths.", "家賃は上がった、給料は上がってない。考えればわかるでしょ。")
+                 ], ipa: "/ju ˌduː ðə ˈmæθs/"),
+            make("don't look at me", "used to say that you are not responsible for something or do not know the answer",
+                 "私じゃないよ・こっち見ないで",
+                 useCases: ["犯人扱いされたとき", "答えを知らないとき"],
+                 examples: [
+                    ("\"Who ate all the biscuits?\" \"Don't look at me!\"", "「ビスケット全部食べたの誰？」「私じゃないよ！」"),
+                    ("Don't look at me, I've got no idea how to fix the Wi-Fi.", "こっち見ないで、Wi-Fiの直し方なんて全然わかんないから。")
+                 ], ipa: "/ˌdəʊnt ˈlʊk ət mi/"),
+        ]
+    }
+
+    private static var britishColloquial349: [Word] {
+        [
+            make("a pressure cooker", "a heavy pot with a tightly sealed lid that cooks food very quickly using steam; also a very stressful situation",
+                 "圧力鍋（比喩で：ピリピリした状況）",
+                 useCases: ["料理の時短の話で", "ストレスの多い職場を例えるとき"],
+                 examples: [
+                    ("Bung the beans in the pressure cooker and they'll be done in twenty minutes.", "豆は圧力鍋に入れとけば20分でできるよ。"),
+                    ("That office is a pressure cooker, no wonder everyone's quitting.", "あのオフィスは圧力鍋みたいにピリピリしてる、みんな辞めるのも無理ないよ。")
+                 ], ipa: "/ə ˈpreʃə ˌkʊkə/"),
+            make("an air fryer", "a small kitchen machine that cooks food by blowing very hot air around it, using little or no oil",
+                 "エアフライヤー・ノンフライヤー",
+                 useCases: ["家電の話で", "ヘルシーな料理の話で"],
+                 examples: [
+                    ("Honestly, the air fryer's changed my life. Chips in ten minutes!", "正直エアフライヤーで人生変わったよ。ポテトが10分だもん！"),
+                    ("Just stick the leftovers in the air fryer, they'll crisp right up.", "残り物はエアフライヤーに入れときな、すぐカリッとなるから。")
+                 ], ipa: "/ən ˈeə ˌfraɪə/"),
+            make("a ceiling fan", "a fan with large blades fixed to the ceiling of a room to move the air around",
+                 "シーリングファン・天井扇",
+                 useCases: ["暑い日の部屋の話で", "インテリアの話で"],
+                 examples: [
+                    ("Can you switch the ceiling fan on? It's boiling in here.", "シーリングファンつけてくれる？ここ暑くてたまらない。"),
+                    ("The ceiling fan in our hotel room was wobbling like mad.", "ホテルの部屋の天井扇、めちゃくちゃグラグラしてたんだよ。")
+                 ], ipa: "/ə ˈsiːlɪŋ fæn/"),
+            make("a clipboard", "a small board with a clip at the top for holding papers so you can write on them while standing",
+                 "クリップボード・バインダー",
+                 useCases: ["アンケートや点検のとき", "仕切りたがる人を茶化すとき"],
+                 examples: [
+                    ("Some bloke with a clipboard stopped me in the street asking about broadband.", "クリップボード持った男に道で呼び止められて、ネット回線の話されたよ。"),
+                    ("Give her a clipboard and she thinks she's running the place.", "あの子にバインダー持たせると、自分が仕切ってる気になるんだよね。")
+                 ], ipa: "/ə ˈklɪpbɔːd/"),
+            make("a vending machine", "a machine that sells drinks, snacks or other items when you put money or a card in",
+                 "自動販売機・自販機",
+                 useCases: ["駅や職場で飲み物を買うとき", "日本の話をするとき"],
+                 examples: [
+                    ("The vending machine's eaten my pound coin again!", "自販機がまた1ポンド玉飲み込んだ！"),
+                    ("In Japan there's a vending machine on literally every corner.", "日本って本当にどの角にも自販機があるんだよ。")
+                 ], ipa: "/ə ˈvendɪŋ məˌʃiːn/"),
+            make("a beach towel", "a large, brightly coloured towel that you lie on or dry yourself with at the beach or pool",
+                 "ビーチタオル",
+                 useCases: ["海やプールに行くとき", "ホテルのプールサイドで"],
+                 examples: [
+                    ("Don't forget to pack a beach towel, the hotel charges for them.", "ビーチタオル忘れないでね、ホテルだと有料なんだ。"),
+                    ("The Germans had already put their beach towels on all the sunbeds by seven.", "7時にはもう全部のデッキチェアにビーチタオルで場所取りされてたよ。")
+                 ], ipa: "/ə ˈbiːtʃ ˌtaʊəl/"),
+            make("a wetsuit", "a tight rubber suit that keeps you warm in cold water when surfing, diving or swimming",
+                 "ウェットスーツ",
+                 useCases: ["サーフィンやダイビングの話で", "冷たい海に入るとき"],
+                 examples: [
+                    ("You'd be mad to go in without a wetsuit, the sea's freezing.", "ウェットスーツなしで入るなんて正気じゃないよ、海めちゃ冷たいから。"),
+                    ("Getting out of a wetsuit is like wrestling an octopus.", "ウェットスーツ脱ぐのって、タコと格闘してるみたいだよね。")
+                 ], ipa: "/ə ˈwetsuːt/"),
+            make("a roof rack", "a metal frame fixed to the roof of a car for carrying luggage, bikes or other large things",
+                 "ルーフキャリア・ルーフラック",
+                 useCases: ["キャンプや旅行の荷物の話で", "車に自転車を積むとき"],
+                 examples: [
+                    ("We'll have to strap the bikes to the roof rack.", "自転車はルーフキャリアに縛りつけないとね。"),
+                    ("Did you tie that mattress to the roof rack properly? It's flapping about.", "そのマットレス、ちゃんとルーフラックに縛った？バタバタしてるよ。")
+                 ], ipa: "/ə ˈruːf ræk/"),
+            make("a tote bag", "a large, simple cloth bag with two handles, used for shopping or carrying everyday things",
+                 "トートバッグ・エコバッグ",
+                 useCases: ["買い物に行くとき", "ファッションの話で"],
+                 examples: [
+                    ("I've got about fifteen tote bags and I still forget one every time.", "トートバッグ15個くらい持ってるのに、毎回忘れるんだよね。"),
+                    ("Just chuck it in my tote bag, there's loads of room.", "私のトートに放り込んじゃって、まだ余裕あるから。")
+                 ], ipa: "/ə ˈtəʊt bæɡ/"),
+            make("a pencil sharpener", "a small tool with a blade inside that you turn a pencil in to make its point sharp",
+                 "鉛筆削り",
+                 useCases: ["文房具の話で", "子どもの学用品をそろえるとき"],
+                 examples: [
+                    ("Has anyone got a pencil sharpener? Mine's gone missing again.", "誰か鉛筆削り持ってない？また自分のがどっか行った。"),
+                    ("The kids need new pencil sharpeners for school, add it to the list.", "子どもたち学校用の鉛筆削りが要るから、リストに足しといて。")
+                 ], ipa: "/ə ˈpensl ˌʃɑːpənə/"),
+            make("that's my cue", "used to say that something that has just happened is the signal for you to leave or to do something",
+                 "じゃあ私の出番だね・そろそろ退散するよ",
+                 useCases: ["気まずい場から抜けるとき", "自分の番が来たとき"],
+                 examples: [
+                    ("Oh, they're talking about football again. That's my cue to leave.", "あ、またサッカーの話してる。じゃあ私は退散するね。"),
+                    ("\"Someone needs to carve the turkey.\" \"That's my cue!\"", "「誰か七面鳥切ってくれない？」「よし、俺の出番だ！」")
+                 ], ipa: "/ˌðæts maɪ ˈkjuː/"),
+            make("save it", "used rudely to tell someone you do not want to hear their excuses or explanation",
+                 "言い訳はいいから・もういいよ",
+                 useCases: ["言い訳を聞きたくないとき", "映画の口論シーンで"],
+                 examples: [
+                    ("\"Look, I can explain—\" \"Save it. I've heard it all before.\"", "「待って、説明させて…」「もういい。聞き飽きた。」"),
+                    ("Save it for someone who actually believes you.", "そういうのは信じてくれる人に言いな。")
+                 ], ipa: "/ˈseɪv ɪt/"),
+            make("who are you kidding?", "used to say that someone is not being honest, often with themselves",
+                 "誰を騙すつもり？・自分に嘘ついてどうするの",
+                 useCases: ["見え透いた嘘を指摘するとき", "強がりを茶化すとき"],
+                 examples: [
+                    ("You're 'just having one drink'? Who are you kidding?", "「一杯だけ」？誰に言ってんの？"),
+                    ("You're totally over him? Who are you kidding, you check his Instagram every day.", "彼のこと完全に吹っ切れた？嘘でしょ、毎日インスタ見てるくせに。")
+                 ], ipa: "/ˌhuː ə ju ˈkɪdɪŋ/"),
+            make("here goes nothing", "said just before you try something difficult that you don't expect to succeed at",
+                 "ダメもとでやってみるか・いざ勝負",
+                 useCases: ["自信がないけど挑戦するとき", "思い切った行動の直前に"],
+                 examples: [
+                    ("Right, I'm going to ask her to dance. Here goes nothing.", "よし、彼女をダンスに誘ってくる。ダメもとだ。"),
+                    ("I've never made a soufflé before... here goes nothing!", "スフレなんて作ったことないけど…いざ勝負！")
+                 ], ipa: "/ˌhɪə ɡəʊz ˈnʌθɪŋ/"),
+            make("you're on your own", "used to say that you will not help someone or join them in something",
+                 "そこからは自分でやってね・付き合いきれないよ",
+                 useCases: ["手伝いを断るとき", "無謀な計画から降りるとき"],
+                 examples: [
+                    ("If you're telling Mum you crashed the car, you're on your own.", "車ぶつけたって母さんに言うなら、お前一人でやれよ。"),
+                    ("I'll help you move the sofa, but after that you're on your own.", "ソファ運ぶのは手伝うけど、そこから先は自分でね。")
+                 ], ipa: "/jɔːr ˌɒn jɔːr ˈəʊn/"),
+            make("anything goes", "used to say that there are no rules and people can do whatever they like",
+                 "何でもあり・ルール無用",
+                 useCases: ["ドレスコードやルールの話で", "自由な雰囲気を説明するとき"],
+                 examples: [
+                    ("It's fancy dress, but anything goes, so just wear whatever.", "仮装パーティーだけど何でもありだから、好きなの着てきて。"),
+                    ("At my nan's house on Christmas Day, anything goes.", "クリスマスのおばあちゃんちは、もう何でもありだよ。")
+                 ], ipa: "/ˌeniθɪŋ ˈɡəʊz/"),
+            make("don't let it go to your head", "used to tell someone not to become too proud or arrogant after being praised or succeeding",
+                 "調子に乗るなよ・天狗にならないでね",
+                 useCases: ["褒めた後に釘を刺すとき", "冗談っぽく相手をからかうとき"],
+                 examples: [
+                    ("You were brilliant tonight. Just don't let it go to your head.", "今夜は最高だったよ。でも調子に乗るなよ。"),
+                    ("Yes, you look nice. Don't let it go to your head.", "はいはい、似合ってるよ。天狗にならないでね。")
+                 ], ipa: "/ˌdəʊnt let ɪt ˌɡəʊ tə jɔː ˈhed/"),
+            make("get a room", "a jokey thing to say to a couple who are kissing or being very affectionate in public",
+                 "よそでやってくれ・イチャつくなら他でやって",
+                 useCases: ["人前でイチャつくカップルに", "友達カップルをからかうとき"],
+                 examples: [
+                    ("Oh, come on, you two. Get a room!", "ちょっと二人とも、よそでやってよ！"),
+                    ("They were all over each other at the bar. Somebody told them to get a room.", "バーでベタベタしてたら、誰かに「よそでやれ」って言われてたよ。")
+                 ], ipa: "/ˌɡet ə ˈruːm/"),
+            make("is that so?", "used to show surprise or doubt about what someone has said, often sarcastically or as a challenge",
+                 "へえ、そうなの？・ほう、そうかい",
+                 useCases: ["相手の話に疑いを示すとき", "挑発に冷ややかに返すとき"],
+                 examples: [
+                    ("\"I could beat you with one hand.\" \"Is that so? Prove it.\"", "「片手でも勝てるね」「へえ、そうかい？やってみなよ。」"),
+                    ("\"He says he's never late.\" \"Oh, is that so?\"", "「あいつ遅刻したことないってさ」「ほう、そうなの？」")
+                 ], ipa: "/ˌɪz ðæt ˈsəʊ/"),
+            make("the nerve of some people", "used to express annoyance or disbelief at how rude or cheeky someone has been",
+                 "まったく図々しいにも程がある・信じられない神経",
+                 useCases: ["失礼な人に呆れたとき", "愚痴をこぼすとき"],
+                 examples: [
+                    ("He pushed straight past me in the queue. The nerve of some people!", "あの人、列で私を押しのけて割り込んだの。図々しいにも程がある！"),
+                    ("She borrowed my dress and gave it back with a stain. The nerve of some people.", "私のドレス借りて、シミつけて返してきたんだよ。信じられない神経。")
+                 ], ipa: "/ðə ˈnɜːv əv ˌsʌm ˈpiːpl/"),
+        ]
+    }
+
+    private static var britishColloquial348: [Word] {
+        [
+            make("a highchair", "a tall chair with long legs and a small tray, used for feeding a baby or small child",
+                 "（赤ちゃん用の）ハイチェア",
+                 useCases: ["レストランで子連れのとき", "離乳食をあげるとき"],
+                 examples: [
+                    ("Could we get a highchair for the little one, please?", "この子用にハイチェアをお願いできますか？"),
+                    ("He threw his peas all over the floor from his highchair.", "あの子、ハイチェアから豆を床中に投げ散らかしたんだ。")
+                 ], ipa: "/ə ˈhaɪtʃeə/"),
+            make("a slow cooker", "an electric pot that cooks food slowly over many hours (US: Crock-Pot)",
+                 "スロークッカー・電気煮込み鍋",
+                 useCases: ["作り置き料理の話で", "忙しい日の夕飯の話で"],
+                 examples: [
+                    ("I just chuck everything in the slow cooker in the morning and forget about it.", "朝スロークッカーに全部放り込んで、あとはほったらかし。"),
+                    ("This stew's been in the slow cooker for eight hours, it's falling apart.", "このシチュー、8時間煮込んだからホロホロだよ。")
+                 ], ipa: "/ə ˌsləʊ ˈkʊkə/"),
+            make("a fire extinguisher", "a metal container full of water, foam or gas that you spray onto a fire to put it out",
+                 "消火器",
+                 useCases: ["火事やボヤのとき", "防災の話をするとき"],
+                 examples: [
+                    ("Where's the fire extinguisher? The pan's on fire!", "消火器どこ？フライパンが燃えてる！"),
+                    ("Every flat has to have a fire extinguisher by law.", "法律で、どの部屋にも消火器を置かなきゃいけないんだ。")
+                 ], ipa: "/ə ˈfaɪər ɪkˌstɪŋɡwɪʃə/"),
+            make("a bouncy castle", "a large inflatable structure shaped like a castle that children jump around on (US: bounce house)",
+                 "（子ども用の）エアー遊具・ふわふわ",
+                 useCases: ["子どもの誕生日会で", "お祭りやイベントで"],
+                 examples: [
+                    ("We hired a bouncy castle for Tom's sixth birthday.", "トムの6歳の誕生日に、ふわふわ遊具をレンタルしたんだ。"),
+                    ("The dads ended up on the bouncy castle after the kids went home.", "子どもが帰った後、パパたちがエアー遊具で遊んでたよ。")
+                 ], ipa: "/ə ˌbaʊnsi ˈkɑːsl/"),
+            make("a garlic press", "a kitchen tool that crushes garlic by squeezing it through small holes",
+                 "ガーリックプレス・にんにく絞り",
+                 useCases: ["料理をするとき", "キッチン用品の話で"],
+                 examples: [
+                    ("Pass me the garlic press, would you? It's in the top drawer.", "ガーリックプレス取ってくれる？一番上の引き出しにあるから。"),
+                    ("Real chefs don't use a garlic press, they just smash it with a knife.", "本物のシェフはにんにく絞りなんて使わない、包丁で潰すんだよ。")
+                 ], ipa: "/ə ˈɡɑːlɪk pres/"),
+            make("a shower cap", "a waterproof plastic hat that you wear in the shower to keep your hair dry",
+                 "シャワーキャップ",
+                 useCases: ["ホテルのアメニティの話で", "髪を濡らしたくないとき"],
+                 examples: [
+                    ("The hotel didn't even have a shower cap, can you believe it?", "あのホテル、シャワーキャップすらなかったんだよ、信じられる？"),
+                    ("I've just had my hair done, so I'll wear a shower cap tonight.", "美容院行ったばかりだから、今夜はシャワーキャップかぶるよ。")
+                 ], ipa: "/ə ˈʃaʊə kæp/"),
+            make("a dartboard", "a round board with numbered sections that you throw darts at, often found in pubs",
+                 "ダーツボード",
+                 useCases: ["パブで遊ぶとき", "家の趣味の話で"],
+                 examples: [
+                    ("Fancy a game? The dartboard's free at the back.", "一勝負どう？奥のダーツボード空いてるよ。"),
+                    ("He put a dartboard up in the garage and now he's obsessed.", "ガレージにダーツボード付けてから、あいつハマりっぱなしだよ。")
+                 ], ipa: "/ə ˈdɑːtbɔːd/"),
+            make("a seesaw", "a long board balanced in the middle that two children sit on at each end and push up and down",
+                 "シーソー",
+                 useCases: ["公園で子どもと遊ぶとき", "気分や状況の浮き沈みを例えるとき"],
+                 examples: [
+                    ("You go on that end of the seesaw and I'll sit on this one.", "君はシーソーのあっち側、僕はこっちに座るね。"),
+                    ("My mood's been like a seesaw all week.", "今週はずっと気分がシーソーみたいに上がったり下がったりだよ。")
+                 ], ipa: "/ə ˈsiːsɔː/"),
+            make("a rocking chair", "a chair with curved pieces of wood under its legs so that it moves backwards and forwards",
+                 "ロッキングチェア・揺り椅子",
+                 useCases: ["家具の話をするとき", "老後やのんびりした生活の話で"],
+                 examples: [
+                    ("My grandad used to sit in his rocking chair and tell us stories.", "おじいちゃんはよく揺り椅子に座って話をしてくれたんだ。"),
+                    ("Give me a porch, a rocking chair and a cup of tea and I'm happy.", "ポーチとロッキングチェアと紅茶があれば、それで幸せ。")
+                 ], ipa: "/ə ˈrɒkɪŋ tʃeə/"),
+            make("a travel adaptor", "a plug that lets you connect your device to the electrical sockets of another country",
+                 "（海外旅行用の）変換プラグ",
+                 useCases: ["海外旅行の準備で", "充電できないとき"],
+                 examples: [
+                    ("Don't forget a travel adaptor, the plugs are different over there.", "変換プラグ忘れないでね、向こうはコンセントの形が違うから。"),
+                    ("I left my travel adaptor at the hotel, so my phone's dead.", "変換プラグをホテルに忘れて、スマホの充電が切れちゃった。")
+                 ], ipa: "/ə ˈtrævl əˌdæptə/"),
+            make("don't push it", "used to warn someone not to try to get more than they already have, or not to annoy you further",
+                 "調子に乗るなよ・それ以上はやめとけ",
+                 useCases: ["相手が図に乗ってきたとき", "もう一押ししようとする人を止めるとき"],
+                 examples: [
+                    ("I said you can stay out till eleven. Don't push it.", "11時までいいって言ったでしょ。調子に乗らないで。"),
+                    ("You got away with it once, mate. Don't push it.", "一回は見逃してもらえたんだから、それ以上はやめとけよ。")
+                 ], ipa: "/ˌdəʊnt ˈpʊʃ ɪt/"),
+            make("that's on you", "used to say that something is someone's own responsibility or fault",
+                 "それは自己責任だよ・それは君のせいだ",
+                 useCases: ["忠告を無視した相手に", "責任の所在をはっきりさせるとき"],
+                 examples: [
+                    ("I told you to bring a coat. If you're cold, that's on you.", "コート持ってこいって言ったよね。寒くても自己責任だよ。"),
+                    ("I'll book the restaurant, but if you're late, that's on you.", "店は予約するけど、遅れたらそれは君の責任ね。")
+                 ], ipa: "/ˌðæts ˈɒn juː/"),
+            make("I'm all over it", "used to say that you are dealing with something quickly and with lots of energy",
+                 "任せて・すぐやってる",
+                 useCases: ["仕事を頼まれたとき", "やる気を見せたいとき"],
+                 examples: [
+                    ("Can you sort out the booking? — I'm all over it.", "予約やっといてくれる？— 任せて、すぐやる。"),
+                    ("Don't worry about the report, Sarah's all over it.", "報告書は心配いらないよ、サラがバッチリやってるから。")
+                 ], ipa: "/aɪm ˌɔːl ˈəʊvər ɪt/"),
+            make("keep your eyes peeled", "to watch carefully for someone or something",
+                 "よく目を光らせておいて・見逃さないで",
+                 useCases: ["人や物を探しているとき", "運転中に標識を探すとき"],
+                 examples: [
+                    ("Keep your eyes peeled for a petrol station, we're nearly empty.", "ガソリンスタンド見逃さないでね、もうほぼ空なんだ。"),
+                    ("Keep your eyes peeled, he said he'd be wearing a red jacket.", "よく見ててね、赤いジャケット着てくるって言ってたから。")
+                 ], ipa: "/ˌkiːp jər ˌaɪz ˈpiːld/"),
+            make("don't flatter yourself", "used to tell someone that they are not as important or attractive as they think",
+                 "うぬぼれないで・思い上がるなよ",
+                 useCases: ["相手が勘違いしているとき", "冗談っぽく突っ込むとき"],
+                 examples: [
+                    ("Did you dress up for me? — Don't flatter yourself.", "俺のためにおめかししたの？— うぬぼれないで。"),
+                    ("Don't flatter yourself, I wasn't waiting for you, I was waiting for the bus.", "勘違いしないで、あなたを待ってたんじゃなくてバスを待ってたの。")
+                 ], ipa: "/ˌdəʊnt ˈflætə jɔːˌself/"),
+            make("what took you so long?", "used to ask, often with annoyance or relief, why someone arrived or did something so late",
+                 "何でこんなに時間かかったの？・遅かったじゃん",
+                 useCases: ["待たされたとき", "やっと来た相手に"],
+                 examples: [
+                    ("What took you so long? The film's already started!", "何でこんなに遅かったの？もう映画始まってるよ！"),
+                    ("You finally asked her out? What took you so long?", "やっと彼女をデートに誘ったの？遅すぎだろ。")
+                 ], ipa: "/ˌwɒt ˌtʊk ju ˌsəʊ ˈlɒŋ/"),
+            make("you've got some explaining to do", "used to tell someone that they need to give a reason for something suspicious or bad they have done",
+                 "説明してもらおうか・言い訳を聞かせてもらうよ",
+                 useCases: ["相手の怪しい行動を問い詰めるとき", "冗談っぽく追及するとき"],
+                 examples: [
+                    ("Whose lipstick is this on your collar? You've got some explaining to do.", "襟についてるこの口紅、誰の？説明してもらおうか。"),
+                    ("You ate the whole cake? Young man, you've got some explaining to do.", "ケーキ全部食べたの？ちょっと、説明してもらうわよ。")
+                 ], ipa: "/juv ˌɡɒt səm ɪkˈspleɪnɪŋ tə ˌduː/"),
+            make("hear me out", "used to ask someone to listen to everything you want to say before they react or decide",
+                 "最後まで聞いて・とりあえず話を聞いて",
+                 useCases: ["突飛な提案をするとき", "反対されそうなとき"],
+                 examples: [
+                    ("I know it sounds mad, but just hear me out.", "クレイジーに聞こえるのはわかるけど、とりあえず最後まで聞いて。"),
+                    ("Before you say no, hear me out — what if we moved to Spain?", "ダメって言う前に聞いて。スペインに引っ越すってのはどう？")
+                 ], ipa: "/ˌhɪə mi ˈaʊt/"),
+            make("don't be a stranger", "used when saying goodbye to tell someone to stay in touch and visit again",
+                 "また顔見せてね・連絡してね",
+                 useCases: ["別れ際に", "久しぶりに会った人と別れるとき"],
+                 examples: [
+                    ("It was great seeing you. Don't be a stranger, alright?", "会えてよかったよ。また顔見せてね。"),
+                    ("Good luck in London, and don't be a stranger!", "ロンドンでも頑張って、連絡ちょうだいね！")
+                 ], ipa: "/ˌdəʊnt bi ə ˈstreɪndʒə/"),
+            make("you won't regret it", "used to persuade someone that doing something will be a good decision",
+                 "絶対後悔しないよ・損はさせないよ",
+                 useCases: ["何かを勧めるとき", "迷っている人の背中を押すとき"],
+                 examples: [
+                    ("Order the lamb, trust me, you won't regret it.", "ラム頼みなよ、絶対後悔しないから。"),
+                    ("Come out with us tonight, you won't regret it.", "今夜一緒に出かけようよ、損はさせないって。")
+                 ], ipa: "/ju ˌwəʊnt rɪˈɡret ɪt/"),
+        ]
+    }
+
+    private static var britishColloquial346: [Word] {
+        [
+            make("a peephole", "a small hole in a front door that you look through to see who is outside",
+                 "ドアスコープ・のぞき穴",
+                 useCases: ["誰が来たか確認するとき", "防犯の話をするとき"],
+                 examples: [
+                    ("Check the peephole before you open the door.", "ドア開ける前にのぞき穴で確認して。"),
+                    ("I looked through the peephole and it was just the postman.", "のぞき穴から見たら、ただの郵便屋さんだったよ。")
+                 ], ipa: "/ə ˈpiːphəʊl/"),
+            make("a fuse box", "a box in a house containing the fuses or switches that control the electricity",
+                 "ブレーカー（分電盤）",
+                 useCases: ["停電したとき", "ブレーカーが落ちたとき"],
+                 examples: [
+                    ("The power's gone off again, can you check the fuse box?", "また電気落ちた、ブレーカー見てくれる？"),
+                    ("The fuse box is under the stairs, next to the hoover.", "ブレーカーは階段の下、掃除機の隣だよ。")
+                 ], ipa: "/ə ˈfjuːz bɒks/"),
+            make("a banister", "the rail along the side of a staircase that you hold on to",
+                 "（階段の）手すり",
+                 useCases: ["階段の上り下りで", "子どもが遊んでいるとき"],
+                 examples: [
+                    ("Hold on to the banister, the stairs are steep.", "手すりにつかまって、階段急だから。"),
+                    ("We used to slide down the banister when we were kids.", "子どもの頃、よく手すりを滑り降りてたよ。")
+                 ], ipa: "/ə ˈbænɪstə/"),
+            make("a trampoline", "a piece of equipment with a stretchy sheet on a frame that you jump up and down on",
+                 "トランポリン",
+                 useCases: ["庭や公園で遊ぶとき", "子どもの誕生日会で"],
+                 examples: [
+                    ("The kids have been bouncing on the trampoline all morning.", "子どもたち、朝からずっとトランポリンで跳ねてるよ。"),
+                    ("We got a trampoline for the garden and now I'm on it more than they are.", "庭用にトランポリン買ったら、子どもより俺の方が乗ってるよ。")
+                 ], ipa: "/ə ˈtræmpəliːn/"),
+            make("a deck of cards", "a complete set of 52 playing cards",
+                 "トランプ一組",
+                 useCases: ["ゲームをするとき", "旅行の暇つぶしに"],
+                 examples: [
+                    ("Has anyone got a deck of cards? Let's play poker.", "誰かトランプ持ってない？ポーカーやろうよ。"),
+                    ("Always pack a deck of cards when you go camping.", "キャンプにはいつもトランプ一組入れときなよ。")
+                 ], ipa: "/ə ˌdek əv ˈkɑːdz/"),
+            make("a kite", "a light frame covered with cloth or paper that you fly in the wind on a long string",
+                 "凧（たこ）",
+                 useCases: ["風の強い日に遊ぶとき", "海辺や公園で"],
+                 examples: [
+                    ("It's dead windy, perfect for flying a kite.", "めっちゃ風強いね、凧揚げにぴったりだ。"),
+                    ("My kite got stuck in a tree, typical.", "凧が木に引っかかったよ、いつものことだ。")
+                 ], ipa: "/ə ˈkaɪt/"),
+            make("a whiteboard", "a white board you write on with special pens and can wipe clean",
+                 "ホワイトボード",
+                 useCases: ["会議で", "家の予定を書くとき"],
+                 examples: [
+                    ("Let me draw it on the whiteboard, it's easier to explain.", "ホワイトボードに描かせて、その方が説明しやすい。"),
+                    ("We've got a whiteboard on the fridge for the shopping list.", "冷蔵庫に買い物リスト用のホワイトボード貼ってるんだ。")
+                 ], ipa: "/ə ˈwaɪtbɔːd/"),
+            make("a webcam", "a small camera on or connected to a computer, used for video calls",
+                 "ウェブカメラ",
+                 useCases: ["ビデオ通話のとき", "在宅勤務で"],
+                 examples: [
+                    ("Your webcam's off, we can't see you.", "カメラ切れてるよ、顔見えない。"),
+                    ("I always stick a plaster over my webcam, just in case.", "念のため、ウェブカメラにはいつも絆創膏貼ってるんだ。")
+                 ], ipa: "/ə ˈwebkæm/"),
+            make("a tripod", "a stand with three legs that holds a camera or phone steady",
+                 "三脚",
+                 useCases: ["写真や動画を撮るとき", "旅行で集合写真を撮るとき"],
+                 examples: [
+                    ("Bring the tripod so we can all be in the photo.", "三脚持ってきて、みんなで写真に入れるように。"),
+                    ("You'll need a tripod for night shots, otherwise it'll be blurry.", "夜の写真は三脚いるよ、じゃないとブレるから。")
+                 ], ipa: "/ə ˈtraɪpɒd/"),
+            make("a sun lounger", "a long chair that you can lie on outside to sunbathe, often by a pool or on a beach",
+                 "サンラウンジャー（日光浴用の寝椅子）",
+                 useCases: ["ホテルのプールで", "ビーチで"],
+                 examples: [
+                    ("People had towels on all the sun loungers by 7am.", "朝7時にはもう全部の寝椅子にタオルが置かれてたよ。"),
+                    ("I'm not moving from this sun lounger all day.", "今日は一日この寝椅子から動かないぞ。")
+                 ], ipa: "/ə ˈsʌn ˌlaʊndʒə/"),
+            make("no can do", "a casual way of saying that you can't or won't do something",
+                 "無理だね・それはできない",
+                 useCases: ["頼み事を軽く断るとき", "できないと即答するとき"],
+                 examples: [
+                    ("Can you cover my shift on Saturday? — Sorry, no can do.", "土曜のシフト代わってくれる？—ごめん、無理だわ。"),
+                    ("Lend you my car? No can do, mate.", "車貸せって？それは無理だよ。")
+                 ], ipa: "/ˌnəʊ kæn ˈduː/"),
+            make("level with me", "used to ask someone to be completely honest with you",
+                 "正直に言ってくれ",
+                 useCases: ["本音を聞き出したいとき", "隠し事を疑うとき"],
+                 examples: [
+                    ("Come on, level with me. What's really going on?", "なあ、正直に言ってくれ。本当は何があったんだ？"),
+                    ("I'll level with you, the project's in trouble.", "正直に言うよ、このプロジェクトはヤバい。")
+                 ], ipa: "/ˈlevl wɪð miː/"),
+            make("you look like you've seen a ghost", "used when someone looks pale and shocked",
+                 "幽霊でも見たような顔してるよ",
+                 useCases: ["相手が青ざめているとき", "ショックを受けた人に声をかけるとき"],
+                 examples: [
+                    ("Are you alright? You look like you've seen a ghost.", "大丈夫？幽霊でも見たような顔してるよ。"),
+                    ("You look like you've seen a ghost. Sit down, I'll get you some water.", "顔真っ青だよ。座って、水持ってくるから。")
+                 ], ipa: "/juː lʊk laɪk juːv siːn ə ɡəʊst/"),
+            make("I rest my case", "said, often jokingly, when something that just happened proves your point",
+                 "ほらね、言った通りでしょ",
+                 useCases: ["自分の主張が証明されたとき", "冗談で勝ち誇るとき"],
+                 examples: [
+                    ("He's always late. — And here he comes, twenty minutes late. — I rest my case.", "あいつはいつも遅刻する。—ほら来た、20分遅れで。—ほらね。"),
+                    ("You said it was easy and you've broken it already. I rest my case.", "簡単だって言ったのに、もう壊したじゃん。言った通りでしょ。")
+                 ], ipa: "/aɪ ˌrest maɪ ˈkeɪs/"),
+            make("it's a wrap", "said when a piece of work, especially filming, is finished",
+                 "これで終わり・撮影終了",
+                 useCases: ["仕事や作業が完了したとき", "イベントを締めるとき"],
+                 examples: [
+                    ("Last email sent. That's a wrap for today!", "最後のメール送った。今日はこれで終わり！"),
+                    ("Okay everyone, it's a wrap. Thanks for all your hard work.", "はい皆さん、これで撮影終了です。お疲れさまでした。")
+                 ], ipa: "/ɪts ə ˈræp/"),
+            make("game on", "said when a competition or challenge is about to start, or when things get exciting",
+                 "よし、勝負だ・面白くなってきた",
+                 useCases: ["挑戦を受けて立つとき", "試合が白熱したとき"],
+                 examples: [
+                    ("You think you can beat me at pool? Game on.", "ビリヤードで俺に勝てると思ってんの？よし勝負だ。"),
+                    ("They've just equalised. Game on!", "同点に追いついた。面白くなってきたぞ！")
+                 ], ipa: "/ˌɡeɪm ˈɒn/"),
+            make("we're even", "said when neither person owes the other anything any more",
+                 "これで貸し借りなし・おあいこだね",
+                 useCases: ["借りを返したとき", "お互い様のとき"],
+                 examples: [
+                    ("You paid for lunch, I'll get the drinks, then we're even.", "ランチ出してもらったから飲み物は俺が払う、それでチャラね。"),
+                    ("I helped you move, you fixed my car. We're even.", "引っ越し手伝って、車直してもらった。おあいこだね。")
+                 ], ipa: "/wɪər ˈiːvn/"),
+            make("you'll thank me later", "said when you make someone do something they don't like but which will help them",
+                 "後で感謝するよ",
+                 useCases: ["相手のためにお節介を焼くとき", "嫌がることを勧めるとき"],
+                 examples: [
+                    ("Take a coat. Trust me, you'll thank me later.", "コート持ってきな。信じて、後で感謝するから。"),
+                    ("I've booked you in for the dentist. You'll thank me later.", "歯医者予約しといたよ。後で感謝するって。")
+                 ], ipa: "/juːl ˈθæŋk miː ˈleɪtə/"),
+            make("it takes one to know one", "said in reply to an insult, meaning the speaker has the same fault",
+                 "人のこと言えないでしょ・お前もな",
+                 useCases: ["悪口を言い返すとき", "冗談で反撃するとき"],
+                 examples: [
+                    ("You're such a show-off. — Well, it takes one to know one.", "ほんと目立ちたがりだね。—それ、そっちもでしょ。"),
+                    ("Call me a nerd? It takes one to know one, mate.", "俺をオタク呼ばわり？お前もだろ。")
+                 ], ipa: "/ɪt ˌteɪks wʌn tə ˈnəʊ wʌn/"),
+            make("you've got some nerve", "used to tell someone they are being rude or bold in a way that surprises you",
+                 "いい度胸してるね・よくもまあ",
+                 useCases: ["図々しい相手に言うとき", "あきれたとき"],
+                 examples: [
+                    ("You've got some nerve showing up here after what you did.", "あんなことしといて、よくここに顔出せたね。"),
+                    ("He asked for a pay rise on his first day? He's got some nerve.", "初日に昇給を求めた？いい度胸してるな。")
+                 ], ipa: "/juːv ɡɒt səm ˈnɜːv/"),
+        ]
+    }
+
+    private static var britishColloquial345: [Word] {
+        [
+            make("a stepladder", "a small folding ladder with flat steps that stands on its own",
+                 "脚立",
+                 useCases: ["高い所の物を取るとき", "電球を替えるとき"],
+                 examples: [
+                    ("Grab the stepladder, I can't reach the top shelf.", "脚立持ってきて、一番上の棚に届かないんだ。"),
+                    ("Hold the stepladder steady while I change the bulb.", "電球替える間、脚立押さえといて。")
+                 ], ipa: "/ə ˈsteplædə/"),
+            make("a paperclip", "a small bent piece of wire used to hold sheets of paper together",
+                 "ゼムクリップ",
+                 useCases: ["書類をまとめるとき", "SIMトレイを開けるとき"],
+                 examples: [
+                    ("Have you got a paperclip? I need to pop the SIM tray out.", "クリップある？SIMトレイ出したいんだ。"),
+                    ("Just stick a paperclip on those receipts.", "そのレシート、クリップで留めといて。")
+                 ], ipa: "/ə ˈpeɪpəklɪp/"),
+            make("a jam jar", "a glass jar that jam is sold in, often reused for storing things or as a glass",
+                 "ジャムの空き瓶",
+                 useCases: ["瓶を再利用するとき", "おしゃれなカフェの話をするとき"],
+                 examples: [
+                    ("I keep all my loose change in an old jam jar.", "小銭は全部古いジャムの瓶に入れてるんだ。"),
+                    ("That trendy café serves cocktails in jam jars.", "あのおしゃれなカフェ、カクテルをジャム瓶で出すんだよ。")
+                 ], ipa: "/ə ˈdʒæm dʒɑː/"),
+            make("a placemat", "a small mat put on the table under each person's plate",
+                 "ランチョンマット",
+                 useCases: ["食卓の準備をするとき", "テーブルを汚したくないとき"],
+                 examples: [
+                    ("Can you put the placemats out? Dinner's nearly ready.", "ランチョンマット並べてくれる？もうすぐご飯だよ。"),
+                    ("Use a placemat, you'll mark the table.", "マット敷いて、テーブルに跡がつくから。")
+                 ], ipa: "/ə ˈpleɪsmæt/"),
+            make("a pepper mill", "a device you twist to grind black pepper onto food",
+                 "ペッパーミル・コショウ挽き",
+                 useCases: ["料理に味を足すとき", "レストランで"],
+                 examples: [
+                    ("Pass the pepper mill, would you? This needs a bit more.", "ペッパーミル取ってくれる？もうちょい欲しい。"),
+                    ("The waiter came round with a giant pepper mill.", "ウェイターがでっかいペッパーミル持って回ってきたよ。")
+                 ], ipa: "/ə ˈpepə mɪl/"),
+            make("a wheelbarrow", "a small cart with one wheel at the front and two handles, used in gardens",
+                 "手押し車・一輪車",
+                 useCases: ["庭仕事をするとき", "重い物を運ぶとき"],
+                 examples: [
+                    ("Chuck the weeds in the wheelbarrow and I'll take them to the tip.", "雑草は一輪車に放り込んで、俺がゴミ捨て場に持ってくから。"),
+                    ("We needed a wheelbarrow to shift all that soil.", "あの土全部運ぶのに一輪車が必要だったよ。")
+                 ], ipa: "/ə ˈwiːlbærəʊ/"),
+            make("a hosepipe", "a long flexible tube for watering the garden or washing the car",
+                 "（庭の）ホース",
+                 useCases: ["庭に水をまくとき", "洗車するとき"],
+                 examples: [
+                    ("There's a hosepipe ban, so no washing the car this week.", "散水禁止令が出てるから、今週は洗車なしだよ。"),
+                    ("The kids sprayed each other with the hosepipe all afternoon.", "子どもたちは午後ずっとホースで水をかけ合ってたよ。")
+                 ], ipa: "/ə ˈhəʊzpaɪp/"),
+            make("a hip flask", "a small flat metal bottle for carrying alcohol in your pocket",
+                 "スキットル（携帯用酒瓶）",
+                 useCases: ["寒い屋外イベントで", "映画でよく見る小道具の話"],
+                 examples: [
+                    ("He pulled out a hip flask at the football to keep warm.", "あいつサッカー観戦で体を温めようとスキットル出してきたよ。"),
+                    ("Grandad never went fishing without his hip flask.", "じいちゃんはスキットルなしで釣りに行くことはなかった。")
+                 ], ipa: "/ə ˈhɪp flɑːsk/"),
+            make("a pair of pliers", "a hand tool with two jaws for gripping, bending or cutting wire",
+                 "ペンチ・プライヤー",
+                 useCases: ["DIYや修理で", "固いものをつかむとき"],
+                 examples: [
+                    ("Have you got a pair of pliers? This nail won't budge.", "ペンチある？この釘びくともしないんだ。"),
+                    ("I had to open the jar with a pair of pliers in the end.", "結局ペンチで瓶開けるはめになったよ。")
+                 ], ipa: "/ə peər əv ˈplaɪəz/"),
+            make("a bread bin", "a container with a lid for keeping bread fresh in the kitchen",
+                 "パンケース",
+                 useCases: ["キッチンで物の場所を聞くとき", "パンの保存の話をするとき"],
+                 examples: [
+                    ("There's a fresh loaf in the bread bin.", "パンケースに焼きたての食パンあるよ。"),
+                    ("Don't put the bread in the fridge — use the bread bin.", "パンは冷蔵庫じゃなくてパンケースに入れて。")
+                 ], ipa: "/ə ˈbred bɪn/"),
+            make("not on your nelly", "absolutely not; no way (humorous British refusal)",
+                 "絶対やだね・とんでもない",
+                 useCases: ["きっぱり断るとき", "冗談っぽく拒否するとき"],
+                 examples: [
+                    ("Bungee jumping? Not on your nelly!", "バンジージャンプ？絶対やだね！"),
+                    ("\"Lend him your car?\" \"Not on your nelly.\"", "「あいつに車貸すの？」「とんでもない。」")
+                 ], ipa: "/nɒt ɒn jɔː ˈneli/"),
+            make("I haven't the foggiest", "I have no idea at all",
+                 "さっぱりわからない",
+                 useCases: ["全く見当がつかないとき", "道や答えを聞かれたとき"],
+                 examples: [
+                    ("\"Where's the remote?\" \"I haven't the foggiest.\"", "「リモコンどこ？」「全然わかんない。」"),
+                    ("I haven't the foggiest what he was going on about.", "あいつが何をくどくど言ってたのかさっぱりだよ。")
+                 ], ipa: "/aɪ ˈhævnt ðə ˈfɒɡiɪst/"),
+            make("pull your finger out", "stop being lazy and start working harder or faster",
+                 "さっさとやれ・本気出せ",
+                 useCases: ["ダラダラしている人を急かすとき", "締め切りが迫っているとき"],
+                 examples: [
+                    ("You'd better pull your finger out if you want to pass.", "合格したいならそろそろ本気出しなよ。"),
+                    ("Come on, lads, pull your fingers out — we're behind schedule.", "おい、みんな急げ、予定より遅れてるぞ。")
+                 ], ipa: "/pʊl jɔː ˈfɪŋɡər aʊt/"),
+            make("let sleeping dogs lie", "don't bring up an old problem that might cause trouble again",
+                 "寝た子を起こすな",
+                 useCases: ["過去の揉め事を蒸し返さないよう言うとき", "余計なことを言わない方がいいとき"],
+                 examples: [
+                    ("I wouldn't mention the wedding to her — let sleeping dogs lie.", "彼女に結婚式の話はしない方がいい。寝た子を起こすなって。"),
+                    ("They've made up now, so just let sleeping dogs lie.", "もう仲直りしたんだから、蒸し返すなよ。")
+                 ], ipa: "/let ˈsliːpɪŋ dɒɡz ˈlaɪ/"),
+            make("it'll all come out in the wash", "the truth will eventually be known, or the problem will sort itself out",
+                 "いずれはっきりする・なんとかなるさ",
+                 useCases: ["心配している人を安心させるとき", "真相は後でわかると言うとき"],
+                 examples: [
+                    ("Don't stress about the rumours. It'll all come out in the wash.", "噂なんて気にすんな。いずれ真相はわかるさ。"),
+                    ("We're a bit behind, but it'll all come out in the wash.", "少し遅れてるけど、最終的にはなんとかなるよ。")
+                 ], ipa: "/ɪtl ɔːl kʌm aʊt ɪn ðə ˈwɒʃ/"),
+            make("less of your cheek", "stop being rude or disrespectful (often said half-jokingly)",
+                 "生意気言うんじゃない",
+                 useCases: ["子どもや年下の口答えに", "からかわれて冗談っぽく返すとき"],
+                 examples: [
+                    ("\"You're getting a bit grey, Dad.\" \"Less of your cheek!\"", "「父さん、白髪増えたね」「生意気言うな！」"),
+                    ("Less of your cheek, young man, and finish your dinner.", "口答えはいいから、さっさとご飯食べなさい。")
+                 ], ipa: "/ˈles əv jɔː ˈtʃiːk/"),
+            make("no skin off my nose", "it doesn't affect or bother me at all",
+                 "私には痛くもかゆくもない",
+                 useCases: ["他人の決定に無関心を示すとき", "自分には関係ないと言うとき"],
+                 examples: [
+                    ("If he wants to quit, it's no skin off my nose.", "あいつが辞めたいなら、俺には痛くもかゆくもないね。"),
+                    ("Go to the party or don't — no skin off my nose.", "パーティー行こうが行くまいが、私には関係ないし。")
+                 ], ipa: "/nəʊ ˈskɪn ɒf maɪ ˈnəʊz/"),
+            make("I wouldn't put it past him", "I think he is quite capable of doing something bad or surprising",
+                 "あいつならやりかねない",
+                 useCases: ["誰かの悪だくみを疑うとき", "相手の性格を皮肉るとき"],
+                 examples: [
+                    ("Did he really eat your sandwich? I wouldn't put it past him.", "あいつが本当にお前のサンドイッチ食べたの？やりかねないな。"),
+                    ("I wouldn't put it past her to turn up uninvited.", "彼女なら呼ばれてなくても来かねないよ。")
+                 ], ipa: "/aɪ ˈwʊdnt pʊt ɪt ˈpɑːst hɪm/"),
+            make("that'll be the day", "that will never happen (said with disbelief)",
+                 "そんな日が来るもんか",
+                 useCases: ["ありえないことを皮肉るとき", "相手の約束を疑うとき"],
+                 examples: [
+                    ("Him, cooking dinner? That'll be the day!", "あいつが夕飯作る？そんな日来るかよ！"),
+                    ("\"I'll be on time tomorrow.\" \"That'll be the day.\"", "「明日は時間通り来るよ」「どうだか。」")
+                 ], ipa: "/ðætl biː ðə ˈdeɪ/"),
+            make("fair dos", "that's fair; I accept your point (casual British)",
+                 "まあ、それもそうだね・ごもっとも",
+                 useCases: ["相手の言い分を認めるとき", "公平さを認めるとき"],
+                 examples: [
+                    ("\"I paid last time.\" \"Fair dos, this one's on me.\"", "「前回は俺が払ったよ」「それもそうだな、今回は俺のおごり。」"),
+                    ("Fair dos to her, she worked really hard for that.", "彼女は大したもんだよ、あれのためにすごく頑張ったんだから。")
+                 ], ipa: "/ˌfeə ˈduːz/"),
+        ]
+    }
+
+    private static var britishColloquial344: [Word] {
+        [
+            make("a pair of tongs", "a tool with two arms for picking up hot food or other things",
+                 "トング",
+                 useCases: ["バーベキューで", "料理を取り分けるとき"],
+                 examples: [
+                    ("Pass me the tongs — these sausages are about to burn.", "トング取って、ソーセージ焦げそう。"),
+                    ("Use the tongs, mate, not your fingers.", "指じゃなくてトング使えよ。")
+                 ], ipa: "/ə peər əv ˈtɒŋz/"),
+            make("a cool bag", "an insulated bag for keeping food and drinks cold",
+                 "保冷バッグ",
+                 useCases: ["ピクニックや買い物で", "冷たい物を持ち運ぶとき"],
+                 examples: [
+                    ("Stick the drinks in the cool bag so they don't get warm.", "ぬるくならないように飲み物は保冷バッグに入れといて。"),
+                    ("I always take a cool bag to the supermarket in summer.", "夏はいつもスーパーに保冷バッグ持って行くんだ。")
+                 ], ipa: "/ə ˈkuːl bæɡ/"),
+            make("an egg timer", "a small timer, often a sand glass, for timing how long to cook eggs",
+                 "キッチンタイマー・砂時計",
+                 useCases: ["料理の時間を計るとき", "時間制限を決めるとき"],
+                 examples: [
+                    ("Set the egg timer for four minutes, will you?", "キッチンタイマー4分にセットしてくれる？"),
+                    ("Mum used an egg timer to stop us hogging the shower.", "母さんは僕らがシャワー占領しないように砂時計使ってたよ。")
+                 ], ipa: "/ən ˈeɡ ˌtaɪmə/"),
+            make("a tealight", "a small flat candle in a thin metal cup",
+                 "ティーライトキャンドル",
+                 useCases: ["部屋の雰囲気を作るとき", "停電のとき"],
+                 examples: [
+                    ("Light a few tealights — it'll feel cosier in here.", "ティーライトいくつか灯して、その方が落ち着くよ。"),
+                    ("The power's gone. Have we got any tealights?", "停電だ。キャンドルある？")
+                 ], ipa: "/ə ˈtiːlaɪt/"),
+            make("a spatula", "a kitchen tool with a wide flat blade for flipping or spreading food",
+                 "フライ返し・ヘラ",
+                 useCases: ["パンケーキを焼くとき", "ボウルの中身をかき出すとき"],
+                 examples: [
+                    ("Hand me the spatula, I need to flip these pancakes.", "フライ返し取って、パンケーキひっくり返さなきゃ。"),
+                    ("Scrape the bowl with a spatula — don't waste it.", "ヘラでボウルをこそげて、もったいないから。")
+                 ], ipa: "/ə ˈspætʃʊlə/"),
+            make("a soap dish", "a small dish for holding a bar of soap by the sink or bath",
+                 "石けん皿・ソープディッシュ",
+                 useCases: ["洗面所で", "お風呂場の物の話をするとき"],
+                 examples: [
+                    ("Put the soap back in the soap dish, it's all slimy now.", "石けん、石けん皿に戻して。ぬるぬるになってるよ。"),
+                    ("I knocked the soap dish into the bath again.", "また石けん皿をお風呂に落としちゃった。")
+                 ], ipa: "/ə ˈsəʊp dɪʃ/"),
+            make("a plunger", "a rubber cup on a stick used to clear blocked toilets or sinks",
+                 "（トイレの）ラバーカップ・スッポン",
+                 useCases: ["トイレや流しが詰まったとき", "家のトラブルを話すとき"],
+                 examples: [
+                    ("The loo's blocked again — where's the plunger?", "トイレまた詰まった、スッポンどこ？"),
+                    ("Don't call a plumber yet, try the plunger first.", "まだ業者呼ばないで、先にスッポン試してみて。")
+                 ], ipa: "/ə ˈplʌndʒə/"),
+            make("a mousetrap", "a device for catching mice",
+                 "ネズミ捕り",
+                 useCases: ["家にネズミが出たとき", "罠にはまる話をするとき"],
+                 examples: [
+                    ("We've got mice, so I've put a mousetrap behind the fridge.", "ネズミが出るから冷蔵庫の裏にネズミ捕り置いといた。"),
+                    ("Careful — I nearly stepped on the mousetrap!", "気をつけて、ネズミ捕り踏みそうになった！")
+                 ], ipa: "/ə ˈmaʊstræp/"),
+            make("a sandwich bag", "a small clear plastic bag for keeping food fresh",
+                 "ジップ袋・サンドイッチ袋",
+                 useCases: ["お弁当を詰めるとき", "小物を分けて入れるとき"],
+                 examples: [
+                    ("Pop the leftovers in a sandwich bag for tomorrow.", "残り物、明日用にジップ袋に入れといて。"),
+                    ("Put your liquids in a sandwich bag for airport security.", "空港の保安検査用に液体はジップ袋に入れてね。")
+                 ], ipa: "/ə ˈsænwɪdʒ bæɡ/"),
+            make("a cocktail stick", "a small thin pointed stick for picking up bits of food at parties",
+                 "ようじ・カクテルピック",
+                 useCases: ["パーティーでつまみを出すとき", "ケーキの焼き加減を確かめるとき"],
+                 examples: [
+                    ("Stick a cocktail stick in each bit of cheese.", "チーズひとつずつにピック刺しといて。"),
+                    ("Poke the cake with a cocktail stick to see if it's done.", "ようじでケーキ刺して焼けてるか見てみて。")
+                 ], ipa: "/ə ˈkɒkteɪl stɪk/"),
+            make("mind your step", "be careful where you walk; also a warning to behave carefully",
+                 "足元に気をつけて／言動に気をつけろ",
+                 useCases: ["段差を注意するとき", "相手に警告するとき"],
+                 examples: [
+                    ("Mind your step — the floor's a bit wet.", "足元気をつけて、床ちょっと濡れてるから。"),
+                    ("You'd better mind your step around the new boss.", "新しい上司の前では言動に気をつけた方がいいよ。")
+                 ], ipa: "/maɪnd jɔː ˈstep/"),
+            make("as you were", "carry on with what you were doing; also used to take back what you just said",
+                 "そのまま続けて／今のなし",
+                 useCases: ["部屋に入って邪魔したとき", "言い間違いを訂正するとき"],
+                 examples: [
+                    ("Sorry, didn't mean to interrupt. As you were.", "ごめん、邪魔するつもりじゃなかった。続けて。"),
+                    ("It's on Tuesday — no, as you were, Wednesday.", "火曜日だよ、いや、今のなし、水曜日だ。")
+                 ], ipa: "/æz juː ˈwɜː/"),
+            make("don't get your knickers in a twist", "don't get so upset or worked up about something minor",
+                 "そんなにカリカリするなよ",
+                 useCases: ["些細なことで怒る人をなだめるとき", "冗談っぽく落ち着かせるとき"],
+                 examples: [
+                    ("Don't get your knickers in a twist, it's only a scratch.", "そんなカリカリすんなって、ただのかすり傷だよ。"),
+                    ("He got his knickers in a twist over a parking space.", "あいつ駐車スペースひとつでカッカしてたよ。")
+                 ], ipa: "/dəʊnt ɡet jɔː ˈnɪkəz ɪn ə ˈtwɪst/"),
+            make("you scared the life out of me", "you frightened me very badly, usually by surprising me",
+                 "心臓止まるかと思った",
+                 useCases: ["急に驚かされたとき", "背後から声をかけられたとき"],
+                 examples: [
+                    ("Blimey, you scared the life out of me! Don't creep up like that.", "うわっ、心臓止まるかと思った！そんな風に忍び寄るなよ。"),
+                    ("That phone call at 3 a.m. scared the life out of me.", "夜中の3時の電話にはほんと肝を冷やしたよ。")
+                 ], ipa: "/juː skeəd ðə ˈlaɪf aʊt əv miː/"),
+            make("spit it out", "say what you want to say; stop hesitating",
+                 "はっきり言えよ・早く言って",
+                 useCases: ["相手が口ごもっているとき", "言いにくそうな人を促すとき"],
+                 examples: [
+                    ("Come on, spit it out — what's wrong?", "ほら、はっきり言って、どうしたの？"),
+                    ("If you've got something to say, just spit it out.", "言いたいことがあるなら、さっさと言えよ。")
+                 ], ipa: "/ˈspɪt ɪt aʊt/"),
+            make("you'll be the death of me", "you cause me so much worry or trouble (said with affection)",
+                 "あなたには本当に手を焼くよ",
+                 useCases: ["子どもやペットに振り回されたとき", "愛情を込めて呆れるとき"],
+                 examples: [
+                    ("Climbing on the roof again? You'll be the death of me.", "また屋根に登ってたの？ほんと寿命が縮むわ。"),
+                    ("That dog will be the death of me, I swear.", "あの犬にはほんと手を焼くよ、まったく。")
+                 ], ipa: "/juːl biː ðə ˈdeθ əv miː/"),
+            make("count yourself lucky", "you should feel fortunate, because things could have been much worse",
+                 "運が良かったと思いな",
+                 useCases: ["大事に至らなかったとき", "文句を言う人をたしなめるとき"],
+                 examples: [
+                    ("You only got a warning? Count yourself lucky.", "注意だけで済んだの？運が良かったと思いなよ。"),
+                    ("Count yourself lucky you weren't on that train.", "あの電車に乗ってなくてラッキーだったと思いな。")
+                 ], ipa: "/kaʊnt jɔːˈself ˈlʌki/"),
+            make("the story of my life", "this kind of bad luck always happens to me",
+                 "いつもこうなんだよ・毎度のことさ",
+                 useCases: ["ついてないことを自虐的に言うとき", "よくある失敗を笑うとき"],
+                 examples: [
+                    ("Missed the bus by ten seconds — story of my life.", "10秒差でバス逃したよ、いつものことさ。"),
+                    ("All the good ones are taken. The story of my life.", "いい人はみんな売約済み。毎度のことだよ。")
+                 ], ipa: "/ðə ˈstɔːri əv maɪ ˈlaɪf/"),
+            make("a likely story", "I don't believe what you're telling me",
+                 "そんな話信じるかよ・よく言うよ",
+                 useCases: ["言い訳を疑うとき", "冗談っぽく突っ込むとき"],
+                 examples: [
+                    ("The dog ate your homework? A likely story.", "犬が宿題食べた？よく言うよ。"),
+                    ("\"I was just about to call you.\" \"A likely story!\"", "「今ちょうど電話しようと思ってたんだ」「信じられるか！」")
+                 ], ipa: "/ə ˈlaɪkli ˈstɔːri/"),
+            make("is that a fact", "is that really true? (often said with mild doubt or sarcasm)",
+                 "へえ、そうなの？・本当かね",
+                 useCases: ["相手の話に軽く疑いを示すとき", "皮肉っぽく相づちを打つとき"],
+                 examples: [
+                    ("\"I could beat you with one hand.\" \"Is that a fact?\"", "「片手でも勝てるね」「へえ、そうかい？」"),
+                    ("You've never been late in your life? Is that a fact.", "一度も遅刻したことない？本当かねえ。")
+                 ], ipa: "/ɪz ðæt ə ˈfækt/"),
+        ]
+    }
+
+    private static var britishColloquial342: [Word] {
+        [
+            make("a doorstop", "a heavy object or wedge used to hold a door open",
+                 "ドアストッパー",
+                 useCases: ["ドアを開けておきたいとき", "重くて役に立たない物を皮肉るとき"],
+                 examples: [
+                    ("Grab the doorstop — it's boiling in here.", "ドアストッパー取って、ここ暑すぎるよ。"),
+                    ("That novel's so thick it'd make a decent doorstop.", "あの小説、分厚すぎてドアストッパーにちょうどいいくらいだよ。")
+                 ], ipa: "/ə ˈdɔːstɒp/"),
+            make("a shoehorn", "a curved tool that helps you slide your heel into a shoe",
+                 "靴べら",
+                 useCases: ["玄関で靴を履くとき", "無理やり詰め込む話をするとき"],
+                 examples: [
+                    ("Is there a shoehorn? These boots are a nightmare to get on.", "靴べらある？このブーツ履くのがひと苦労なんだ。"),
+                    ("They shoehorned six of us into one tiny car.", "小さい車一台に6人も無理やり押し込まれたよ。")
+                 ], ipa: "/ə ˈʃuːhɔːn/"),
+            make("a nail file", "a small rough tool for shaping and smoothing your fingernails",
+                 "爪やすり",
+                 useCases: ["身だしなみを整えるとき", "旅行の持ち物を確認するとき"],
+                 examples: [
+                    ("Have you got a nail file? I've just snagged my nail.", "爪やすり持ってる？今爪が引っかかっちゃって。"),
+                    ("Security took my nail file off me at the airport.", "空港の保安検査で爪やすり没収されちゃった。")
+                 ], ipa: "/ə ˈneɪl faɪl/"),
+            make("a magnifying glass", "a lens with a handle that makes things look bigger",
+                 "虫眼鏡・ルーペ",
+                 useCases: ["小さな文字を読むとき", "細かく調べることを冗談で言うとき"],
+                 examples: [
+                    ("You'd need a magnifying glass to read this small print.", "この細かい字、虫眼鏡がないと読めないよ。"),
+                    ("All right, Sherlock, put the magnifying glass away.", "はいはい名探偵さん、もう詮索はやめて。")
+                 ], ipa: "/ə ˈmæɡnɪfaɪɪŋ ɡlɑːs/"),
+            make("an ice pack", "a cold pack you put on an injury to reduce swelling",
+                 "保冷剤・アイスパック",
+                 useCases: ["ケガを冷やすとき", "クーラーボックスに入れるとき"],
+                 examples: [
+                    ("Stick an ice pack on that ankle and keep it up.", "その足首に保冷剤当てて、高くしておきな。"),
+                    ("Chuck a couple of ice packs in the cool box.", "クーラーボックスに保冷剤いくつか放り込んどいて。")
+                 ], ipa: "/ən ˈaɪs pæk/"),
+            make("a whistle", "a small device you blow into to make a loud high sound",
+                 "笛・ホイッスル",
+                 useCases: ["スポーツの試合について話すとき", "合図を出すとき"],
+                 examples: [
+                    ("The ref blew the whistle just before we scored.", "点が入る直前に審判が笛を吹いちゃったんだよ。"),
+                    ("The kettle's whistle means the water's ready.", "やかんのピーって音はお湯が沸いた合図だよ。")
+                 ], ipa: "/ə ˈwɪsl/"),
+            make("a raffle ticket", "a numbered ticket you buy for a chance to win a prize, often for charity",
+                 "福引き券・くじ引き券",
+                 useCases: ["チャリティーイベントで", "当選番号を確認するとき"],
+                 examples: [
+                    ("I bought five raffle tickets and didn't win a thing.", "くじ5枚も買ったのに何も当たらなかったよ。"),
+                    ("Hang on to your raffle ticket — they're drawing it at nine.", "くじ券なくさないでね、9時に抽選だから。")
+                 ], ipa: "/ə ˈræfl ˌtɪkɪt/"),
+            make("a lanyard", "a cord worn around the neck to hold an ID card or keys",
+                 "ネックストラップ・社員証の首かけ",
+                 useCases: ["職場やイベントで", "社員証を忘れたとき"],
+                 examples: [
+                    ("I left my lanyard at home, so I can't get past the barrier.", "首かけの社員証を家に忘れて、ゲート通れないんだ。"),
+                    ("You can spot the conference people by their lanyards.", "首からストラップ下げてるから、学会の人ってすぐわかるよね。")
+                 ], ipa: "/ə ˈlænjəd/"),
+            make("a pocket knife", "a small knife with a blade that folds into the handle",
+                 "ポケットナイフ・折りたたみナイフ",
+                 useCases: ["アウトドアで", "ちょっとした物を切りたいとき"],
+                 examples: [
+                    ("Anyone got a pocket knife? I can't get this packaging open.", "誰かポケットナイフ持ってない？この包装開かなくて。"),
+                    ("My grandad never went anywhere without his pocket knife.", "うちのおじいちゃん、どこへ行くにも折りたたみナイフを持ち歩いてたよ。")
+                 ], ipa: "/ə ˈpɒkɪt naɪf/"),
+            make("a scourer", "a rough pad used for scrubbing dirty pans",
+                 "たわし・研磨スポンジ",
+                 useCases: ["鍋を洗うとき", "台所用品を買うとき"],
+                 examples: [
+                    ("You'll need a scourer for that pan — the rice is welded on.", "その鍋はたわしが要るね、ご飯がこびりついてるから。"),
+                    ("Don't use a scourer on the non-stick, you'll ruin it.", "焦げ付き防止の鍋にたわしは使わないで、ダメになるから。")
+                 ], ipa: "/ə ˈskaʊərə/"),
+            make("egg on your face", "embarrassment after something you said or did goes wrong in public",
+                 "恥をかく・面目丸つぶれ",
+                 useCases: ["予想が外れて恥をかいたとき", "自信満々の発言が裏目に出たとき"],
+                 examples: [
+                    ("He bragged they'd win easily, and now he's got egg on his face.", "楽勝だって豪語してたのに、今じゃあいつ面目丸つぶれだよ。"),
+                    ("Check the facts first, or you'll end up with egg on your face.", "先に事実確認しないと恥かくことになるよ。")
+                 ], ipa: "/ˈeɡ ɒn jə ˈfeɪs/"),
+            make("keep your nose clean", "to stay out of trouble and behave well",
+                 "問題を起こさない・おとなしくしている",
+                 useCases: ["トラブルを避けるよう忠告するとき", "保護観察的な状況を話すとき"],
+                 examples: [
+                    ("Keep your nose clean for a few months and they'll promote you.", "数か月おとなしくしてれば昇進させてもらえるよ。"),
+                    ("I've kept my nose clean since the last warning.", "前回注意されてからは問題起こしてないよ。")
+                 ], ipa: "/kiːp jə ˈnəʊz kliːn/"),
+            make("go off on one", "to suddenly become very angry and start shouting or ranting",
+                 "急にキレる・まくしたてる",
+                 useCases: ["誰かが突然怒り出したとき", "上司の怒りを報告するとき"],
+                 examples: [
+                    ("I only asked where the stapler was and she went off on one.", "ホッチキスどこって聞いただけなのに、彼女いきなりキレたんだよ。"),
+                    ("Don't mention the football — Dad'll go off on one.", "サッカーの話は出さないで、父さんがまくしたて始めるから。")
+                 ], ipa: "/ɡəʊ ˈɒf ɒn wʌn/"),
+            make("you'll live", "a playful way of saying a small problem or injury is not serious",
+                 "死にゃしないよ・大げさだな",
+                 useCases: ["大げさに痛がる人をからかうとき", "小さな不満を受け流すとき"],
+                 examples: [
+                    ("'I've got a paper cut!' — 'Oh, you'll live.'", "「紙で指切った！」「はいはい、死にゃしないよ。」"),
+                    ("No Wi-Fi for one weekend? You'll live.", "週末一回Wi-Fiなしくらい何てことないって。")
+                 ], ipa: "/juːl ˈlɪv/"),
+            make("don't knock it till you've tried it", "don't criticise something before you've experienced it yourself",
+                 "やってもいないのにけなすなよ",
+                 useCases: ["食わず嫌いの人に勧めるとき", "新しいことを否定されたとき"],
+                 examples: [
+                    ("Pineapple on pizza is great — don't knock it till you've tried it.", "パイナップルのピザ最高だよ、食べてもないのにけなさないで。"),
+                    ("Cold showers sound awful, but don't knock it till you've tried it.", "冷水シャワーって最悪そうだけど、やってから言いなって。")
+                 ], ipa: "/dəʊnt ˈnɒk ɪt tɪl juːv ˈtraɪd ɪt/"),
+            make("off you pop", "a friendly way of telling someone to go now",
+                 "ほら行っておいで・さあ行って",
+                 useCases: ["人を送り出すとき", "子どもや後輩を促すとき"],
+                 examples: [
+                    ("Right, your taxi's here — off you pop.", "よし、タクシー来たよ。ほら行っておいで。"),
+                    ("Homework's done? Off you pop, then.", "宿題終わった？じゃあ遊びに行っておいで。")
+                 ], ipa: "/ˈɒf juː ˈpɒp/"),
+            make("chance would be a fine thing", "said when you would love something to happen but it probably won't",
+                 "そうなればいいんだけどね・そんな機会があればね",
+                 useCases: ["叶いそうにない願望について", "皮肉っぽく返すとき"],
+                 examples: [
+                    ("'Are you going away this summer?' — 'Chance would be a fine thing.'", "「この夏どこか行くの？」「行けたらいいんだけどね。」"),
+                    ("A lie-in on a Saturday? Chance would be a fine thing with three kids.", "土曜に朝寝坊？子ども3人いたらそんなの夢のまた夢だよ。")
+                 ], ipa: "/tʃɑːns wʊd bi ə ˈfaɪn θɪŋ/"),
+            make("in the doghouse", "in trouble with someone, usually a partner, because you upset them",
+                 "（パートナーなどの）機嫌を損ねている・大目玉を食らっている",
+                 useCases: ["恋人や家族を怒らせたとき", "失敗して叱られている状況を話すとき"],
+                 examples: [
+                    ("I forgot our anniversary, so I'm well and truly in the doghouse.", "記念日忘れちゃって、完全に奥さんのご機嫌損ねてるよ。"),
+                    ("Bring her flowers — it might get you out of the doghouse.", "花でも持っていきなよ、許してもらえるかも。")
+                 ], ipa: "/ɪn ðə ˈdɒɡhaʊs/"),
+            make("right as rain", "completely healthy or fine again after being ill or hurt",
+                 "すっかり元気・ピンピンしている",
+                 useCases: ["回復を伝えるとき", "相手を安心させるとき"],
+                 examples: [
+                    ("Get some sleep and you'll be right as rain tomorrow.", "よく寝れば明日にはすっかり元気になるよ。"),
+                    ("I had a dodgy stomach yesterday, but I'm right as rain now.", "昨日はお腹の調子が悪かったけど、今はもうピンピンしてる。")
+                 ], ipa: "/ˌraɪt əz ˈreɪn/"),
+            make("beggars can't be choosers", "when you're given something you need, you can't be fussy about it",
+                 "贅沢は言えない・もらえるだけありがたい",
+                 useCases: ["選択肢が限られているとき", "文句を言う人をたしなめるとき"],
+                 examples: [
+                    ("It's only the sofa, but beggars can't be choosers.", "ソファで寝るだけだけど、贅沢は言えないよね。"),
+                    ("The only seats left are at the back — beggars can't be choosers.", "残ってるのは後ろの席だけ、文句は言えないよ。")
+                 ], ipa: "/ˈbeɡəz kɑːnt bi ˈtʃuːzəz/")
+        ]
+    }
+
+    private static var britishColloquial341: [Word] {
+        [
+            make("a guilty conscience", "a bad feeling you have because you know you did something wrong",
+                 "良心の呵責・後ろめたさ",
+                 useCases: ["罪悪感を打ち明けるとき", "相手の態度の裏を読むとき"],
+                 examples: [
+                    ("I couldn't sleep — I had a guilty conscience about what I said to her.", "眠れなかったよ、彼女に言ったことが後ろめたくて。"),
+                    ("Why are you being so nice? Guilty conscience?", "なんでそんなに優しいの？何か後ろめたいことでも？")
+                 ], ipa: "/ə ˈɡɪlti ˈkɒnʃəns/"),
+            make("a smart alec", "an annoying person who always tries to seem clever or funny",
+                 "生意気な知ったかぶり・こざかしいやつ",
+                 useCases: ["茶化してくる相手に言い返すとき", "生意気な人を評するとき"],
+                 examples: [
+                    ("All right, smart alec, you do it then.", "はいはい、そんなに言うならお前がやってみろよ。"),
+                    ("There's always one smart alec at the back of the class.", "教室の後ろには必ず一人こざかしいやつがいるんだよな。")
+                 ], ipa: "/ə ˈsmɑːt ˌælɪk/"),
+            make("a jobsworth", "an official who sticks to petty rules to be unhelpful",
+                 "融通の利かない小役人・規則一点張りの人",
+                 useCases: ["窓口で融通が利かなかったとき", "細かい規則に文句を言うとき"],
+                 examples: [
+                    ("Some jobsworth wouldn't let me in because I was two minutes late.", "どこかの石頭が、2分遅れただけで入れてくれなかったんだよ。"),
+                    ("Don't be such a jobsworth — just let him through.", "そんな杓子定規なこと言わないで、通してあげなよ。")
+                 ], ipa: "/ə ˈdʒɒbzwɜːθ/"),
+            make("a goody two-shoes", "someone who always behaves perfectly and wants others to notice",
+                 "いい子ぶりっこ・優等生ぶる人",
+                 useCases: ["真面目すぎる人をからかうとき", "ルールを破りたくないとき"],
+                 examples: [
+                    ("Come on, don't be such a goody two-shoes — one more drink won't hurt.", "ほら、いい子ぶらないで。もう一杯くらい平気だって。"),
+                    ("She was a right goody two-shoes at school.", "あの子、学生時代は本当に優等生ぶってたよ。")
+                 ], ipa: "/ə ˌɡʊdi ˈtuː ʃuːz/"),
+            make("a crybaby", "someone who cries or complains too easily",
+                 "泣き虫・すぐ文句を言う人",
+                 useCases: ["大げさに嘆く人をからかうとき", "子どもをなだめるとき"],
+                 examples: [
+                    ("Stop being such a crybaby — it's only a scratch.", "そんな泣き言言わないの、ただのかすり傷でしょ。"),
+                    ("He lost one game and turned into a total crybaby.", "あいつ、1試合負けただけで完全に駄々っ子になったよ。")
+                 ], ipa: "/ə ˈkraɪbeɪbi/"),
+            make("a latecomer", "someone who arrives after something has already started",
+                 "遅れて来た人・新参者",
+                 useCases: ["会議やイベントに遅れて参加するとき", "後から始めたことを話すとき"],
+                 examples: [
+                    ("Latecomers won't be let in until the interval.", "遅れて来た人は休憩時間まで入れないよ。"),
+                    ("I'm a bit of a latecomer to the show — I've only just started season one.", "そのドラマ、ハマるの遅くてさ、まだシーズン1見始めたばかりなんだ。")
+                 ], ipa: "/ə ˈleɪtkʌmə/"),
+            make("a curtain-twitcher", "a nosy neighbour who secretly watches what everyone else is doing",
+                 "詮索好きな近所の人・のぞき見好き",
+                 useCases: ["近所の目が気になるとき", "噂好きの隣人について話すとき"],
+                 examples: [
+                    ("The curtain-twitcher across the road will have seen everything.", "向かいののぞき見好きのおばさん、絶対全部見てたよ。"),
+                    ("Keep your voice down — the street's full of curtain-twitchers.", "声落として、この通り詮索好きばっかりなんだから。")
+                 ], ipa: "/ə ˈkɜːtn ˌtwɪtʃə/"),
+            make("a hangnail", "a small piece of torn skin at the side of a fingernail",
+                 "ささくれ",
+                 useCases: ["指先の痛みを話すとき", "身だしなみの話をするとき"],
+                 examples: [
+                    ("I've got a hangnail and it's catching on everything.", "ささくれができて、何にでも引っかかるんだよね。"),
+                    ("Stop picking at that hangnail — you'll make it bleed.", "ささくれいじるのやめな、血が出るよ。")
+                 ], ipa: "/ə ˈhæŋneɪl/"),
+            make("a lay-by", "a small area at the side of a road where cars can stop",
+                 "道路脇の待避所・駐車スペース",
+                 useCases: ["ドライブ中に休憩するとき", "車を一時停止させるとき"],
+                 examples: [
+                    ("Pull into the next lay-by — I need to check the map.", "次の待避所に停めて、地図確認したいから。"),
+                    ("We had a picnic in a lay-by because everywhere else was full.", "どこもいっぱいだったから、道路脇の待避所でピクニックしたよ。")
+                 ], ipa: "/ə ˈleɪ baɪ/"),
+            make("a cameo", "a short appearance by a famous person in a film or show",
+                 "カメオ出演・ちょい役",
+                 useCases: ["映画やドラマの話をするとき", "誰かが少しだけ顔を出したとき"],
+                 examples: [
+                    ("Did you spot the director's cameo in the first scene?", "最初のシーンに監督がカメオ出演してたの気づいた？"),
+                    ("My brother made a cameo at the party — stayed ten minutes and left.", "兄貴がパーティーにちょっとだけ顔出して、10分で帰ったよ。")
+                 ], ipa: "/ə ˈkæmiəʊ/"),
+            make("put a sock in it", "(rude, jokey) tell someone to stop talking or making noise",
+                 "黙れ・ちょっと静かにして",
+                 useCases: ["しつこい話を止めたいとき", "うるさい友人を冗談っぽく黙らせるとき"],
+                 examples: [
+                    ("Oh, put a sock in it — we've heard that story a hundred times.", "もう黙ってくれよ、その話100回は聞いたって。"),
+                    ("Can you two put a sock in it? I'm trying to watch this.", "二人とも静かにしてくれる？これ見てるんだから。")
+                 ], ipa: "/ˌpʊt ə ˈsɒk ɪn ɪt/"),
+            make("read the room", "to understand the mood of a group and act appropriately",
+                 "空気を読む",
+                 useCases: ["場違いな発言をした人に言うとき", "場の雰囲気に合わせるとき"],
+                 examples: [
+                    ("Mate, read the room — now's not the time for jokes.", "おい、空気読めよ、今は冗談言う時じゃないって。"),
+                    ("I read the room and decided not to bring up the pay rise.", "空気を読んで、昇給の話は持ち出さないことにした。")
+                 ], ipa: "/ˌriːd ðə ˈruːm/"),
+            make("there's no accounting for taste", "people's tastes are strange and impossible to explain",
+                 "蓼食う虫も好き好き・好みは人それぞれ",
+                 useCases: ["人の趣味に首をかしげるとき", "意外な好みを皮肉っぽく言うとき"],
+                 examples: [
+                    ("She's actually going out with him? Well, there's no accounting for taste.", "彼女があいつと付き合ってるの？まあ、蓼食う虫も好き好きだね。"),
+                    ("He loves that song. There's no accounting for taste, is there?", "あいつ、あの曲が大好きなんだって。好みって本当に人それぞれだよね。")
+                 ], ipa: "/ðeəz ˌnəʊ əˈkaʊntɪŋ fə ˈteɪst/"),
+            make("mind your language", "a warning to stop swearing or speaking rudely",
+                 "言葉遣いに気をつけて",
+                 useCases: ["汚い言葉を注意するとき", "子どもの前で話すとき"],
+                 examples: [
+                    ("Oi, mind your language — there are kids here.", "おい、言葉遣いに気をつけろ、子どもがいるんだぞ。"),
+                    ("Mind your language in front of your nan.", "おばあちゃんの前では言葉遣いに気をつけなさい。")
+                 ], ipa: "/ˌmaɪnd jə ˈlæŋɡwɪdʒ/"),
+            make("not on your life", "a strong way of saying 'absolutely not'",
+                 "絶対いやだ・とんでもない",
+                 useCases: ["きっぱり断るとき", "ありえない提案を拒むとき"],
+                 examples: [
+                    ("Me, go bungee jumping? Not on your life.", "僕がバンジージャンプ？冗談じゃない、絶対いやだ。"),
+                    ("Will I lend him money again? Not on your life!", "またあいつに金を貸すかって？とんでもない！")
+                 ], ipa: "/ˌnɒt ɒn jə ˈlaɪf/"),
+            make("how's tricks?", "a casual, friendly way of asking how someone is",
+                 "調子どう？・最近どう？",
+                 useCases: ["久しぶりの友人に声をかけるとき", "気軽に近況を尋ねるとき"],
+                 examples: [
+                    ("Dave! How's tricks? Haven't seen you in ages.", "デイブ！調子どう？久しぶりじゃん。"),
+                    ("How's tricks at the new job?", "新しい職場はどんな感じ？")
+                 ], ipa: "/ˌhaʊz ˈtrɪks/"),
+            make("get your skates on", "hurry up",
+                 "急いで・早くして",
+                 useCases: ["出発を急かすとき", "時間が迫っているとき"],
+                 examples: [
+                    ("Get your skates on — the train leaves in ten minutes.", "急いで、電車あと10分で出るよ。"),
+                    ("You'll need to get your skates on if you want a ticket.", "チケット欲しいなら急いだほうがいいよ。")
+                 ], ipa: "/ˌɡet jə ˈskeɪts ɒn/"),
+            make("be all fingers and thumbs", "to be clumsy with your hands, especially when nervous",
+                 "手先が不器用になっている・もたもたする",
+                 useCases: ["緊張して手元がおぼつかないとき", "細かい作業に手こずるとき"],
+                 examples: [
+                    ("Sorry, I'm all fingers and thumbs today — can you do the buttons?", "ごめん、今日は手がもたついて。ボタン留めてくれる？"),
+                    ("I was all fingers and thumbs trying to open the ring box.", "指輪のケースを開けようとして、手が震えてもたもたしちゃった。")
+                 ], ipa: "/biː ˌɔːl ˌfɪŋɡəz ən ˈθʌmz/"),
+            make("I'm not made of money", "I can't afford to keep paying for things",
+                 "お金は無限にあるわけじゃない",
+                 useCases: ["おねだりを断るとき", "出費が続いて困ったとき"],
+                 examples: [
+                    ("Another new phone? I'm not made of money, you know.", "また新しいスマホ？お金が湧いて出るわけじゃないんだよ。"),
+                    ("Let's eat in tonight — I'm not made of money.", "今夜は家で食べよう、お金ないんだから。")
+                 ], ipa: "/aɪm ˌnɒt meɪd əv ˈmʌni/"),
+            make("wouldn't be seen dead in", "would never wear, use or go somewhere because it's embarrassing",
+                 "死んでもいやだ・絶対身につけない・行かない",
+                 useCases: ["ダサいものを全力で拒否するとき", "好みじゃない場所や服について話すとき"],
+                 examples: [
+                    ("I wouldn't be seen dead in those trousers.", "あんなズボン、死んでも履かないよ。"),
+                    ("He wouldn't be seen dead in a place like that.", "彼はあんな店には絶対行かないタイプだよ。")
+                 ], ipa: "/ˌwʊdnt biː siːn ˈded ɪn/"),
+        ]
+    }
+
+    private static var britishColloquial340: [Word] {
+        [
+            make("a buzzkill", "someone or something that spoils other people's fun or good mood",
+                 "場をしらけさせる人・興ざめなもの",
+                 useCases: ["盛り上がりに水を差されたとき", "冗談っぽく人をからかうとき"],
+                 examples: [
+                    ("Don't be such a buzzkill — it's only one more drink.", "そんなしらけること言うなよ、あと一杯だけだって。"),
+                    ("Getting a parking ticket was a real buzzkill after such a great day.", "最高の一日だったのに、駐禁切られて一気に興ざめだよ。")
+                 ], ipa: "/ə ˈbʌzkɪl/"),
+            make("a red herring", "something that takes attention away from the real issue or misleads people",
+                 "目くらまし・話をそらすもの",
+                 useCases: ["ミステリーやドラマの話をするとき", "本題から外れた議論を指摘するとき"],
+                 examples: [
+                    ("The butler was just a red herring — the real killer was the sister.", "執事はただのミスリードで、本当の犯人は妹だったんだよ。"),
+                    ("Forget the budget, that's a red herring. The real problem is the deadline.", "予算の話はいいよ、それは本題じゃない。本当の問題は締め切りだ。")
+                 ], ipa: "/ə ˌred ˈherɪŋ/"),
+            make("a sob story", "a sad story someone tells to get sympathy or help",
+                 "お涙ちょうだい話",
+                 useCases: ["同情を誘う言い訳を疑うとき", "言い訳を聞きたくないとき"],
+                 examples: [
+                    ("Spare me the sob story — just tell me why you're late.", "お涙ちょうだいはいいから、なんで遅れたか言って。"),
+                    ("He gave me some sob story about his car, and I lent him fifty quid.", "車がどうとかいう泣き落としにやられて、50ポンド貸しちゃった。")
+                 ], ipa: "/ə ˈsɒb ˌstɔːri/"),
+            make("the fall guy", "a person who is unfairly blamed for something other people did",
+                 "身代わり・責任を押し付けられる人",
+                 useCases: ["責任を押し付けられそうなとき", "不公平な扱いを話すとき"],
+                 examples: [
+                    ("I'm not going to be the fall guy for your mistake.", "君のミスの身代わりになるつもりはないからね。"),
+                    ("They needed a fall guy, and the new intern was the easy choice.", "誰かに責任をかぶせたくて、新人のインターンが標的にされたんだ。")
+                 ], ipa: "/ðə ˈfɔːl ɡaɪ/"),
+            make("a cop-out", "an excuse to avoid doing something difficult or taking responsibility",
+                 "逃げ・言い逃れ",
+                 useCases: ["相手が責任から逃げたとき", "安易な結末に文句を言うとき"],
+                 examples: [
+                    ("\"It was all a dream\"? What a cop-out of an ending!", "「全部夢でした」？なんて逃げの結末だよ！"),
+                    ("Saying you're too busy is a bit of a cop-out, isn't it?", "忙しいって言うのはちょっと逃げじゃない？")
+                 ], ipa: "/ə ˈkɒp aʊt/"),
+            make("a knock-off", "a cheap copy of a famous brand's product",
+                 "パチモン・偽ブランド品",
+                 useCases: ["安いブランド品を疑うとき", "買い物の話をするとき"],
+                 examples: [
+                    ("That's not a real Rolex — it's a knock-off from the market.", "それ本物のロレックスじゃないよ、市場のパチモンだ。"),
+                    ("The knock-off fell apart after a week.", "偽物は1週間でバラバラになったよ。")
+                 ], ipa: "/ə ˈnɒk ɒf/"),
+            make("a crash course", "a short, intensive course to learn a lot about something quickly",
+                 "速習・短期集中講座",
+                 useCases: ["急いで何かを覚える必要があるとき", "人に手早く教えるとき"],
+                 examples: [
+                    ("Can you give me a crash course in this software before the meeting?", "会議の前にこのソフトの使い方、ざっと教えてくれない？"),
+                    ("I did a crash course in Italian before the trip.", "旅行の前にイタリア語を短期集中で勉強したんだ。")
+                 ], ipa: "/ə ˈkræʃ kɔːs/"),
+            make("a low blow", "an unfair or cruel remark or action, especially one that hits a sensitive point",
+                 "卑怯な一言・痛いところを突く言葉",
+                 useCases: ["相手の発言がひどいと抗議するとき", "口げんかの話をするとき"],
+                 examples: [
+                    ("Bringing up my ex? That was a low blow.", "元カノの話持ち出す？それは卑怯だろ。"),
+                    ("Okay, that was a low blow. I'm sorry.", "ごめん、今のは言い過ぎだった。")
+                 ], ipa: "/ə ˌləʊ ˈbləʊ/"),
+            make("a smooth talker", "someone who speaks in a charming, persuasive way, often to get what they want",
+                 "口がうまい人・口達者",
+                 useCases: ["口のうまい人を警戒するとき", "誰かの話し方について話すとき"],
+                 examples: [
+                    ("Watch out for him — he's a smooth talker.", "あいつには気をつけて、口がうまいから。"),
+                    ("The salesman was such a smooth talker I ended up buying two.", "店員さんの口がうますぎて、結局2つ買っちゃった。")
+                 ], ipa: "/ə ˌsmuːð ˈtɔːkə/"),
+            make("a wallflower", "a shy person who stays at the side at parties and doesn't join in",
+                 "（パーティーで）壁の花・人見知りな人",
+                 useCases: ["パーティーで人を誘うとき", "自分の性格を話すとき"],
+                 examples: [
+                    ("Come and dance — don't be a wallflower!", "一緒に踊ろうよ、隅っこにいないでさ！"),
+                    ("I was a bit of a wallflower at school.", "学生時代はちょっと引っ込み思案だったんだ。")
+                 ], ipa: "/ə ˈwɔːlˌflaʊə/"),
+            make("stick out like a sore thumb", "to be very noticeable because you look different from everyone else",
+                 "ひどく浮いている・悪目立ちする",
+                 useCases: ["服装や見た目が場違いなとき", "目立つものを指摘するとき"],
+                 examples: [
+                    ("I turned up in a suit and stuck out like a sore thumb.", "スーツで行ったら、めちゃくちゃ浮いちゃった。"),
+                    ("That bright orange car sticks out like a sore thumb.", "あの真っオレンジの車、すごい目立つね。")
+                 ], ipa: "/ˌstɪk aʊt laɪk ə ˌsɔː ˈθʌm/"),
+            make("be in a tight spot", "to be in a difficult situation that is hard to get out of",
+                 "窮地に立たされている・困っている",
+                 useCases: ["困っていて助けを求めるとき", "誰かのピンチを話すとき"],
+                 examples: [
+                    ("I'm in a bit of a tight spot — could you lend me some money till Friday?", "ちょっと困っててさ、金曜までお金貸してくれない？"),
+                    ("Thanks for helping me out. I was in a real tight spot.", "助けてくれてありがとう、本当にピンチだったんだ。")
+                 ], ipa: "/bi ɪn ə ˌtaɪt ˈspɒt/"),
+            make("you do you", "do whatever feels right for you, without worrying about what others think",
+                 "好きにしなよ・自分らしくいきなよ",
+                 useCases: ["相手の選択を尊重するとき", "ちょっと呆れつつ認めるとき"],
+                 examples: [
+                    ("Pineapple on pizza? Well, you do you.", "ピザにパイナップル？まあ、好きにしなよ。"),
+                    ("If you want to quit and travel the world, you do you.", "仕事辞めて世界旅行したいなら、自分の思うようにやりなよ。")
+                 ], ipa: "/ˌjuː ˈduː juː/"),
+            make("it's not you, it's me", "a phrase used when ending a relationship, saying the problem lies with the speaker",
+                 "君のせいじゃない、僕の問題なんだ（別れ文句）",
+                 useCases: ["別れ話の定番として", "冗談で断るとき"],
+                 examples: [
+                    ("He actually said, \"It's not you, it's me.\" Can you believe it?", "あいつ本当に「君のせいじゃない、僕の問題なんだ」って言ったんだよ、信じられる？"),
+                    ("Sorry, gym — it's not you, it's me. I'm cancelling my membership.", "ごめんねジム、君のせいじゃなくて僕の問題なんだ。退会します。")
+                 ], ipa: "/ɪts ˌnɒt ˈjuː ɪts ˈmiː/"),
+            make("stay out of it", "don't get involved in something that isn't your business",
+                 "口出ししないで・首を突っ込まないで",
+                 useCases: ["他人の口出しを止めるとき", "揉め事に関わらないよう忠告するとき"],
+                 examples: [
+                    ("This is between me and my brother, so stay out of it.", "これは兄貴と俺の問題だから、口出ししないで。"),
+                    ("If I were you, I'd stay out of it.", "私だったら関わらないでおくな。")
+                 ], ipa: "/ˌsteɪ ˈaʊt əv ɪt/"),
+            make("I wouldn't hold my breath", "I don't think it will happen any time soon, so don't wait for it",
+                 "期待しない方がいいよ・当てにしないで",
+                 useCases: ["実現しそうにないことを話すとき", "人の約束を疑うとき"],
+                 examples: [
+                    ("He said he'd pay me back, but I wouldn't hold my breath.", "返すって言ってたけど、期待はしてないよ。"),
+                    ("\"The landlord's fixing the heating soon.\" \"I wouldn't hold your breath.\"", "「大家さんがもうすぐ暖房直すって」「当てにしない方がいいよ」")
+                 ], ipa: "/aɪ ˌwʊdnt ˌhəʊld maɪ ˈbreθ/"),
+            make("go figure", "used to say that something is surprising, strange or hard to explain",
+                 "わけわかんないよね・不思議なもんだ",
+                 useCases: ["理屈に合わないことに呆れるとき", "意外な結果を話すとき"],
+                 examples: [
+                    ("I studied all night and failed, he didn't study at all and passed. Go figure.", "徹夜で勉強した私が落ちて、全然勉強してないあいつが受かった。わけわかんない。"),
+                    ("The cheap wine tasted better than the expensive one. Go figure.", "安いワインの方が高いのより美味しかった。不思議だよね。")
+                 ], ipa: "/ˌɡəʊ ˈfɪɡə/"),
+            make("for crying out loud", "used to show you are annoyed or impatient",
+                 "いい加減にしてよ・まったくもう",
+                 useCases: ["イライラしたとき", "相手を急かすとき"],
+                 examples: [
+                    ("For crying out loud, can you turn that music down?", "まったくもう、その音楽小さくしてくれる？"),
+                    ("Just make a decision, for crying out loud!", "いい加減に決めてよ！")
+                 ], ipa: "/fə ˌkraɪɪŋ aʊt ˈlaʊd/"),
+            make("what's eating you?", "what's bothering or worrying you?",
+                 "何をイライラしてるの？・何か悩んでる？",
+                 useCases: ["機嫌の悪い人を気遣うとき", "友達の様子がおかしいとき"],
+                 examples: [
+                    ("You've been in a mood all day. What's eating you?", "一日中機嫌悪いね。何かあったの？"),
+                    ("Something's eating him, but he won't say what.", "あいつ何か悩んでるみたいだけど、言おうとしないんだ。")
+                 ], ipa: "/ˌwɒts ˈiːtɪŋ juː/"),
+            make("you took the words right out of my mouth", "you said exactly what I was going to say",
+                 "まさに今それを言おうと思ってた",
+                 useCases: ["相手と全く同じ考えだったとき", "強く同意するとき"],
+                 examples: [
+                    ("\"Shall we just get a takeaway?\" \"You took the words right out of my mouth.\"", "「もうテイクアウトにしない？」「まさにそれ言おうと思ってた」"),
+                    ("You took the words right out of my mouth — that film was awful.", "まさに言おうとしてたこと言われた、あの映画ひどかったよね。")
+                 ], ipa: "/ju ˌtʊk ðə ˈwɜːdz raɪt aʊt əv maɪ ˈmaʊθ/"),
+        ]
+    }
+
+    private static var britishColloquial339: [Word] {
+        [
+            make("a doorknob", "the round handle you turn to open a door",
+                 "ドアノブ",
+                 useCases: ["ドアの不具合を話すとき", "掃除や除菌をするとき"],
+                 examples: [
+                    ("The doorknob's come off in my hand again.", "またドアノブが手の中で取れちゃったよ。"),
+                    ("Give the doorknobs a wipe — everyone's had a cold.", "ドアノブ拭いといて、みんな風邪ひいてたから。")
+                 ], ipa: "/ə ˈdɔːnɒb/"),
+            make("a keyhole", "the small hole in a lock that you put a key into",
+                 "鍵穴",
+                 useCases: ["暗い中で鍵を開けるとき", "鍵の不具合を話すとき"],
+                 examples: [
+                    ("I can't find the keyhole in the dark — shine your phone over here.", "暗くて鍵穴が見つからない、スマホでこっち照らして。"),
+                    ("The key's snapped off in the keyhole. Brilliant.", "鍵が鍵穴の中で折れた。最高だよ、まったく。")
+                 ], ipa: "/ə ˈkiːhəʊl/"),
+            make("a lampshade", "a cover that goes over a light bulb to make the light softer",
+                 "ランプシェード・電気の笠",
+                 useCases: ["部屋の模様替えをするとき", "インテリアの話をするとき"],
+                 examples: [
+                    ("We need a new lampshade — this one's gone all yellow.", "新しいランプシェードが要るね、これ真っ黄色になってる。"),
+                    ("I bumped my head on the lampshade again.", "また電気の笠に頭ぶつけた。")
+                 ], ipa: "/ə ˈlæmpʃeɪd/"),
+            make("mouthwash", "a liquid you rinse your mouth with to keep it clean and your breath fresh",
+                 "マウスウォッシュ・洗口液",
+                 useCases: ["歯磨きや身だしなみの話をするとき", "日用品を買い足すとき"],
+                 examples: [
+                    ("Have you got any mouthwash? I've just had a garlic pizza.", "マウスウォッシュある？ニンニクのピザ食べたばっかりで。"),
+                    ("We're nearly out of mouthwash — add it to the list.", "マウスウォッシュもうすぐなくなるから、リストに入れといて。")
+                 ], ipa: "/ˈmaʊθwɒʃ/"),
+            make("cotton buds", "small sticks with cotton wool on each end, used for cleaning ears or removing make-up",
+                 "綿棒",
+                 useCases: ["耳掃除やメイク直しのとき", "日用品を買うとき"],
+                 examples: [
+                    ("You're not supposed to put cotton buds in your ears, you know.", "綿棒って耳の中に入れちゃダメなんだよ、知ってた？"),
+                    ("Grab me a cotton bud — I've smudged my eyeliner.", "綿棒取って、アイライナーにじんじゃった。")
+                 ], ipa: "/ˈkɒtn bʌdz/"),
+            make("mittens", "gloves that cover the four fingers together and the thumb separately",
+                 "ミトン（親指だけ分かれた手袋）",
+                 useCases: ["冬の服装を話すとき", "子どもの支度をするとき"],
+                 examples: [
+                    ("Put your mittens on, it's freezing out there.", "ミトンしなさい、外めっちゃ寒いよ。"),
+                    ("She's lost another mitten — that's the third this winter.", "あの子また片方のミトンなくした、この冬3回目だよ。")
+                 ], ipa: "/ˈmɪtnz/"),
+            make("a beanie", "a soft, close-fitting woollen hat with no brim",
+                 "ニット帽",
+                 useCases: ["寒い日に出かけるとき", "髪型や服装の話をするとき"],
+                 examples: [
+                    ("I'm having a bad hair day, so I'm just going to wear a beanie.", "今日は髪が決まらないから、ニット帽かぶっちゃう。"),
+                    ("Is that a new beanie? It suits you.", "それ新しいニット帽？似合ってるね。")
+                 ], ipa: "/ə ˈbiːni/"),
+            make("a onesie", "a loose, one-piece garment covering the body, arms and legs, worn for relaxing at home",
+                 "着ぐるみパジャマ・オールインワンの部屋着",
+                 useCases: ["家でくつろぐとき", "寝る前の格好について話すとき"],
+                 examples: [
+                    ("I'm spending the whole day in my onesie watching films.", "今日は一日中着ぐるみパジャマで映画観る。"),
+                    ("He answered the door in a dinosaur onesie.", "あいつ恐竜の着ぐるみパジャマで玄関に出てきたんだよ。")
+                 ], ipa: "/ə ˈwʌnzi/"),
+            make("a key ring", "a metal ring that you keep your keys on, often with a small decoration",
+                 "キーホルダー（鍵の輪）",
+                 useCases: ["お土産を選ぶとき", "鍵をなくしたとき"],
+                 examples: [
+                    ("I got you a little key ring from Paris — it's a tiny Eiffel Tower.", "パリでキーホルダー買ってきたよ、ちっちゃいエッフェル塔。"),
+                    ("Put the spare key on a key ring so it doesn't get lost.", "なくさないように合鍵はキーホルダーにつけといて。")
+                 ], ipa: "/ə ˈkiː rɪŋ/"),
+            make("the barber's", "a shop where men go to have their hair cut",
+                 "床屋",
+                 useCases: ["髪を切りに行くとき", "予定を話すとき"],
+                 examples: [
+                    ("I need to pop to the barber's — I look like a sheepdog.", "床屋行かなきゃ、牧羊犬みたいになってる。"),
+                    ("There was a massive queue at the barber's this morning.", "今朝床屋がめっちゃ混んでたよ。")
+                 ], ipa: "/ðə ˈbɑːbəz/"),
+            make("a coffee table", "a low table in a living room, usually in front of the sofa",
+                 "（ソファ前の）ローテーブル",
+                 useCases: ["リビングの片付けをするとき", "物の置き場所を伝えるとき"],
+                 examples: [
+                    ("Your phone's on the coffee table.", "スマホならローテーブルの上にあるよ。"),
+                    ("Feet off the coffee table, please!", "ローテーブルに足のせないで！")
+                 ], ipa: "/ə ˈkɒfi ˌteɪbl/"),
+            make("a photo frame", "a frame that you put a photograph in to display it",
+                 "写真立て・フォトフレーム",
+                 useCases: ["プレゼントを選ぶとき", "部屋の飾りについて話すとき"],
+                 examples: [
+                    ("I'm going to put this one in a photo frame — it's such a nice picture.", "これ写真立てに入れよう、すごくいい写真だから。"),
+                    ("Who knocked the photo frame off the shelf?", "棚の写真立て落としたの誰？")
+                 ], ipa: "/ə ˈfəʊtəʊ freɪm/"),
+            make("a beanbag", "a large soft bag filled with small beads, used as a seat",
+                 "ビーズクッション",
+                 useCases: ["部屋でくつろぐとき", "家具の話をするとき"],
+                 examples: [
+                    ("The dog's taken over the beanbag again.", "また犬がビーズクッション占領してる。"),
+                    ("Grab a beanbag and make yourself comfortable.", "ビーズクッション使って楽にしてて。")
+                 ], ipa: "/ə ˈbiːnbæɡ/"),
+            make("a plant pot", "a container that you grow a plant in",
+                 "植木鉢",
+                 useCases: ["植物を育てるとき", "鍵の隠し場所を伝えるとき"],
+                 examples: [
+                    ("The spare key's under the plant pot by the door.", "合鍵はドアの横の植木鉢の下にあるよ。"),
+                    ("This basil needs a bigger plant pot.", "このバジル、もっと大きい植木鉢が要るね。")
+                 ], ipa: "/ə ˈplɑːnt pɒt/"),
+            make("a dead cert", "something that is certain to happen or succeed",
+                 "確実なこと・鉄板",
+                 useCases: ["結果を予想するとき", "自信を持って言い切るとき"],
+                 examples: [
+                    ("She'll get the job — it's a dead cert.", "あの子が採用されるよ、間違いない。"),
+                    ("I thought it was a dead cert, but we lost three-nil.", "鉄板だと思ったのに、3対0で負けたよ。")
+                 ], ipa: "/ə ˌded ˈsɜːt/"),
+            make("a slap on the wrist", "a very mild punishment or warning",
+                 "軽いお叱り・お咎め程度",
+                 useCases: ["処分や罰が軽いと話すとき", "怒られた話をするとき"],
+                 examples: [
+                    ("He only got a slap on the wrist for crashing the company car.", "社用車ぶつけたのに、あいつ軽く注意されただけだったよ。"),
+                    ("Don't worry, it'll just be a slap on the wrist.", "心配しないで、軽く叱られるくらいだよ。")
+                 ], ipa: "/ə ˌslæp ɒn ðə ˈrɪst/"),
+            make("a fly on the wall", "someone who secretly watches what happens without being noticed",
+                 "（こっそり見ている）壁のハエ・その場を覗き見たい人",
+                 useCases: ["その場を見てみたかったと言うとき", "気になる話し合いについて話すとき"],
+                 examples: [
+                    ("I'd love to be a fly on the wall when she tells her parents.", "あの子が親に話すとこ、こっそり見てみたいなあ。"),
+                    ("I wish I'd been a fly on the wall in that meeting.", "あの会議、こっそり覗いてみたかったよ。")
+                 ], ipa: "/ə ˌflaɪ ɒn ðə ˈwɔːl/"),
+            make("a rite of passage", "an experience that marks an important stage in someone's life",
+                 "通過儀礼・誰もが通る道",
+                 useCases: ["人生の節目について話すとき", "失敗を慰めるとき"],
+                 examples: [
+                    ("Your first hangover is a bit of a rite of passage.", "初めての二日酔いはまあ通過儀礼みたいなもんだよ。"),
+                    ("Getting lost on the Tube is a rite of passage in London.", "地下鉄で迷うのはロンドンじゃ誰もが通る道だよ。")
+                 ], ipa: "/ə ˌraɪt əv ˈpæsɪdʒ/"),
+            make("a shot in the dark", "a guess made with very little information",
+                 "当てずっぽう",
+                 useCases: ["自信のない推測をするとき", "ダメ元で試すとき"],
+                 examples: [
+                    ("This is a shot in the dark, but is your password your dog's name?", "当てずっぽうだけど、パスワードって犬の名前？"),
+                    ("It was a total shot in the dark, but I got it right!", "完全に当てずっぽうだったけど、当たった！")
+                 ], ipa: "/ə ˌʃɒt ɪn ðə ˈdɑːk/"),
+            make("a turn-up for the books", "a surprising and unexpected event, usually a pleasant one",
+                 "まさかの出来事・びっくりな展開",
+                 useCases: ["意外な出来事に驚くとき", "人の珍しい行動をからかうとき"],
+                 examples: [
+                    ("You, up before eight on a Saturday? That's a turn-up for the books.", "君が土曜に8時前に起きてる？まさかだね。"),
+                    ("Well, that's a turn-up for the books — the bus is actually on time.", "いやあ、びっくりだね、バスが時間通りに来たよ。")
+                 ], ipa: "/ə ˌtɜːn ʌp fə ðə ˈbʊks/"),
+        ]
+    }
+
+    private static var britishColloquial338: [Word] {
+        [
+            make("a fender bender", "a minor car accident in which there is only slight damage and nobody is hurt",
+                 "（軽い）接触事故",
+                 useCases: ["遅刻の理由を説明するとき", "ちょっとした車のトラブルを話すとき"],
+                 examples: [
+                    ("Sorry I'm late — there was a fender bender on the motorway.", "遅れてごめん、高速で軽い接触事故があってさ。"),
+                    ("It was just a fender bender, nobody got hurt.", "ただの軽い接触事故だよ、誰も怪我してない。")
+                 ], ipa: "/ə ˈfendə ˌbendə/"),
+            make("a loose cannon", "a person who behaves in an unpredictable way and may cause trouble for others",
+                 "何をしでかすかわからない人・危なっかしい人",
+                 useCases: ["予測不能な同僚や知人について話すとき", "誰かを任せるのが不安なとき"],
+                 examples: [
+                    ("Don't put him in front of the client — he's a loose cannon.", "あいつを客の前に出すなよ、何言い出すかわからないから。"),
+                    ("She's brilliant, but a bit of a loose cannon.", "彼女は優秀だけど、ちょっと危なっかしいところがあるんだよね。")
+                 ], ipa: "/ə ˌluːs ˈkænən/"),
+            make("a freeloader", "someone who takes food, money or a place to stay from others without paying or giving anything back",
+                 "たかり屋・居候",
+                 useCases: ["お金を払わない人に文句を言うとき", "居座る友人について話すとき"],
+                 examples: [
+                    ("He's been on my sofa for three weeks — he's a total freeloader.", "あいつ3週間もうちのソファにいるんだ、完全な居候だよ。"),
+                    ("I'm not a freeloader — I'll pay you back on Friday.", "たかってるわけじゃないよ、金曜に返すから。")
+                 ], ipa: "/ə ˈfriːˌləʊdə/"),
+            make("a can of worms", "a situation that causes a lot of new problems once you start dealing with it",
+                 "厄介な問題・パンドラの箱",
+                 useCases: ["面倒な話題に触れたくないとき", "問題が次々出てきたとき"],
+                 examples: [
+                    ("Let's not bring up the money thing — it's a real can of worms.", "お金の話はやめとこう、ほんとに厄介なことになるから。"),
+                    ("Asking about her ex opened a whole can of worms.", "彼女の元カレのこと聞いたら、とんでもない話になっちゃった。")
+                 ], ipa: "/ə ˌkæn əv ˈwɜːmz/"),
+            make("an underdog", "a person or team that is expected to lose a competition or fight",
+                 "勝ち目が薄い方・劣勢な側",
+                 useCases: ["試合や勝負の話をするとき", "応援する側を説明するとき"],
+                 examples: [
+                    ("I always root for the underdog.", "いつも勝ち目の薄い方を応援しちゃうんだよね。"),
+                    ("We went into the final as the underdogs, and we won!", "決勝は不利って言われてたのに、勝ったんだ！")
+                 ], ipa: "/ən ˈʌndədɒɡ/"),
+            make("a troublemaker", "someone who deliberately causes problems, arguments or bad behaviour",
+                 "問題児・トラブルメーカー",
+                 useCases: ["騒ぎを起こす人について話すとき", "子どもや同僚のことを話すとき"],
+                 examples: [
+                    ("Keep an eye on that one — he's a bit of a troublemaker.", "あの子には気をつけて、ちょっと問題児だから。"),
+                    ("I'm not trying to be a troublemaker, I'm just asking a question.", "揉め事起こしたいんじゃなくて、ただ質問してるだけだよ。")
+                 ], ipa: "/ə ˈtrʌblˌmeɪkə/"),
+            make("a wingman", "a friend who goes out with you and helps you talk to someone you find attractive",
+                 "（ナンパや出会いの）サポート役の友達",
+                 useCases: ["飲みに行く友達を誘うとき", "恋愛の手助けを頼むとき"],
+                 examples: [
+                    ("Come out tonight — I need a wingman.", "今夜出てきてよ、サポート役が必要なんだ。"),
+                    ("Thanks for being my wingman last night, mate.", "昨日の夜はアシストありがとな。")
+                 ], ipa: "/ə ˈwɪŋmæn/"),
+            make("a partner in crime", "a close friend who you often do fun or slightly naughty things with",
+                 "悪友・いつもつるんでる相棒",
+                 useCases: ["仲の良い友達を紹介するとき", "一緒に遊ぶ相手について話すとき"],
+                 examples: [
+                    ("This is Jess, my partner in crime since school.", "こちらジェス、学生時代からの悪友なんだ。"),
+                    ("Where's your partner in crime tonight?", "今夜はいつもの相棒はどうしたの？")
+                 ], ipa: "/ə ˌpɑːtnər ɪn ˈkraɪm/"),
+            make("a damp squib", "an event that is much less exciting or successful than people expected",
+                 "期待外れ・拍子抜け",
+                 useCases: ["イベントや結果にがっかりしたとき", "盛り上がらなかった集まりを話すとき"],
+                 examples: [
+                    ("The party was a bit of a damp squib — hardly anyone turned up.", "パーティーはちょっと拍子抜けだった、ほとんど誰も来なくて。"),
+                    ("Everyone hyped the match up, but it turned out to be a damp squib.", "みんな盛り上げてたけど、試合は期待外れだったね。")
+                 ], ipa: "/ə ˌdæmp ˈskwɪb/"),
+            make("legwork", "the boring or tiring practical work that has to be done to achieve something",
+                 "下調べ・地道な作業",
+                 useCases: ["準備作業を分担するとき", "誰が大変な部分をやったか話すとき"],
+                 examples: [
+                    ("I've done all the legwork — you just need to sign it.", "面倒なとこは全部やっといたから、あとはサインするだけだよ。"),
+                    ("Finding a flat takes a lot of legwork.", "部屋探しは結構足で稼がないといけないんだよね。")
+                 ], ipa: "/ˈleɡwɜːk/"),
+            make("a sidekick", "a person who helps and spends a lot of time with someone more important or more noticeable",
+                 "相棒・子分・お供",
+                 useCases: ["いつも一緒にいる二人について冗談を言うとき", "手伝い役を紹介するとき"],
+                 examples: [
+                    ("He's not my boss, and I'm not his sidekick!", "あいつは俺の上司じゃないし、俺はあいつの子分じゃない！"),
+                    ("Here comes Tom and his trusty sidekick.", "トムとお供が来たぞ。")
+                 ], ipa: "/ə ˈsaɪdkɪk/"),
+            make("a cash cow", "a product or business that makes a lot of money easily and reliably",
+                 "ドル箱・金のなる木",
+                 useCases: ["儲かる商売について話すとき", "仕事やビジネスの話をするとき"],
+                 examples: [
+                    ("That coffee shop is a real cash cow for them.", "あのカフェはあの人たちにとってほんとにドル箱だよ。"),
+                    ("They just see the fans as a cash cow.", "あいつらはファンを金づるとしか見てないんだ。")
+                 ], ipa: "/ə ˈkæʃ kaʊ/"),
+            make("the pecking order", "the informal ranking of who is more important or powerful in a group",
+                 "序列・力関係",
+                 useCases: ["職場や家族の上下関係を話すとき", "新しいグループに入ったとき"],
+                 examples: [
+                    ("As the new guy, I'm right at the bottom of the pecking order.", "新入りだから、序列は一番下なんだよ。"),
+                    ("The cat definitely knows where it is in the pecking order.", "うちの猫は家の中の力関係をちゃんとわかってるね。")
+                 ], ipa: "/ðə ˈpekɪŋ ˌɔːdə/"),
+            make("a test drive", "a short drive in a car you are thinking of buying; also used for trying anything out before deciding",
+                 "試乗・お試し",
+                 useCases: ["車を買うとき", "何かを試してみるとき"],
+                 examples: [
+                    ("Can I take it for a test drive before I decide?", "決める前に試乗してもいいですか？"),
+                    ("Give the new app a test drive and tell me what you think.", "新しいアプリちょっと試して、感想教えて。")
+                 ], ipa: "/ə ˈtest draɪv/"),
+            make("I'm not buying it", "used to say you do not believe what someone is telling you",
+                 "信じないね・その手には乗らないよ",
+                 useCases: ["言い訳が怪しいとき", "話を疑うとき"],
+                 examples: [
+                    ("He says he was stuck in traffic for two hours? I'm not buying it.", "2時間渋滞にはまってたって？信じられないね。"),
+                    ("Nice story, but I'm not buying it.", "いい話だけど、その手には乗らないよ。")
+                 ], ipa: "/aɪm nɒt ˈbaɪɪŋ ɪt/"),
+            make("get a load of this", "used to tell someone to look at or listen to something surprising or funny",
+                 "ちょっとこれ見てよ・聞いてよ",
+                 useCases: ["驚くものを見せるとき", "面白い話を始めるとき"],
+                 examples: [
+                    ("Get a load of this — she's dyed her hair bright green!", "ちょっと見てよ、あの子髪を真緑に染めてる！"),
+                    ("Get a load of this: they're charging ten quid for a coffee.", "聞いてよ、コーヒー1杯10ポンドだって。")
+                 ], ipa: "/ˌɡet ə ˈləʊd əv ðɪs/"),
+            make("watch your mouth", "used to warn someone to stop being rude or swearing",
+                 "口の利き方に気をつけろ",
+                 useCases: ["失礼な言い方を注意するとき", "子どもの言葉遣いを叱るとき"],
+                 examples: [
+                    ("Oi, watch your mouth — there are kids here.", "おい、言葉に気をつけろ、子どもがいるんだぞ。"),
+                    ("You'd better watch your mouth when you talk to my mum.", "うちの母さんと話すときは口の利き方に気をつけろよ。")
+                 ], ipa: "/ˌwɒtʃ jɔː ˈmaʊθ/"),
+            make("good riddance", "used to say you are glad that someone or something has gone",
+                 "いなくなってせいせいする",
+                 useCases: ["嫌な人が去ったとき", "いらない物を処分したとき"],
+                 examples: [
+                    ("He finally moved out? Good riddance!", "あいつやっと出てったの？せいせいした！"),
+                    ("I threw that awful old sofa out — good riddance.", "あのひどい古いソファ捨てたよ、すっきりした。")
+                 ], ipa: "/ˌɡʊd ˈrɪdns/"),
+            make("that's a stretch", "used to say that an idea or claim is hard to believe or goes too far",
+                 "それはちょっと無理があるよ・こじつけだよ",
+                 useCases: ["大げさな主張に突っ込むとき", "強引な理屈を指摘するとき"],
+                 examples: [
+                    ("Calling it a five-star hotel is a bit of a stretch.", "あれを5つ星ホテルって呼ぶのはちょっと無理があるよ。"),
+                    ("You think he likes you because he said hi? That's a stretch.", "挨拶されたから好かれてるって？それはこじつけだよ。")
+                 ], ipa: "/ðæts ə ˈstretʃ/"),
+            make("nice try", "used to tell someone that you have noticed their attempt to trick you or that their attempt failed",
+                 "惜しかったね・その手は通じないよ",
+                 useCases: ["見え透いた言い訳を受け流すとき", "失敗した人を励ますとき"],
+                 examples: [
+                    ("Nice try, but you're still doing the dishes.", "残念でした、それでも皿洗いはあなたね。"),
+                    ("Nice try — you'll get it next time.", "惜しかったね、次はいけるよ。")
+                 ], ipa: "/ˌnaɪs ˈtraɪ/"),
+        ]
+    }
+
+
+    private static var britishColloquial336: [Word] {
+        [
+            make("hand cream", "a cream you rub into your hands to stop the skin getting dry",
+                 "ハンドクリーム",
+                 useCases: ["冬に手が乾燥するとき", "人に物を借りるとき"],
+                 examples: [
+                    ("Have you got any hand cream? My hands are so dry.", "ハンドクリーム持ってる？手がめっちゃ乾燥してて。"),
+                    ("I keep a tube of hand cream in my bag all winter.", "冬の間はずっとハンドクリームをかばんに入れてるよ。")
+                 ], ipa: "/ˈhænd kriːm/"),
+            make("a sleeping bag", "a warm padded bag that you sleep in, especially when camping",
+                 "寝袋",
+                 useCases: ["キャンプの準備をするとき", "友達の家に泊まるとき"],
+                 examples: [
+                    ("Don't forget to bring a sleeping bag — it gets cold at night.", "寝袋忘れないでね、夜は冷えるから。"),
+                    ("You can crash on the floor if you've got a sleeping bag.", "寝袋あるなら床で寝ていいよ。")
+                 ], ipa: "/ə ˈsliːpɪŋ bæɡ/"),
+            make("a picnic blanket", "a large blanket you put on the grass to sit on when eating outside",
+                 "レジャーシート・ピクニック用ブランケット",
+                 useCases: ["公園でピクニックするとき", "外出の持ち物を確認するとき"],
+                 examples: [
+                    ("I'll bring the picnic blanket if you sort out the food.", "食べ物用意してくれるなら、レジャーシートは持ってくよ。"),
+                    ("Let's put the picnic blanket down under that tree.", "あの木の下にシート敷こうよ。")
+                 ], ipa: "/ə ˈpɪknɪk ˌblæŋkɪt/"),
+            make("a cool box", "a box that keeps food and drinks cold, used for picnics or trips",
+                 "クーラーボックス",
+                 useCases: ["ピクニックやバーベキューの準備をするとき", "飲み物を冷やしておきたいとき"],
+                 examples: [
+                    ("Stick the drinks in the cool box so they stay cold.", "飲み物はクーラーボックスに入れといて、冷えたままになるから。"),
+                    ("Has anyone got a cool box we can borrow for the barbecue?", "バーベキュー用にクーラーボックス貸してくれる人いる？")
+                 ], ipa: "/ə ˈkuːl bɒks/"),
+            make("a shoe rack", "a shelf or frame for keeping shoes tidy, usually by the front door",
+                 "靴箱・シューズラック",
+                 useCases: ["家に人を招くとき", "部屋の片付けの話をするとき"],
+                 examples: [
+                    ("Just leave your shoes on the shoe rack by the door.", "靴はドアのとこのシューズラックに置いといてね。"),
+                    ("We need a bigger shoe rack — there are trainers everywhere.", "もっと大きい靴箱いるね、スニーカーそこら中にあるし。")
+                 ], ipa: "/ə ˈʃuː ræk/"),
+            make("a clothes horse", "a folding frame that you hang wet clothes on to dry indoors",
+                 "室内用の物干しラック",
+                 useCases: ["洗濯物を干すとき", "雨の日の家事の話をするとき"],
+                 examples: [
+                    ("It's raining, so I've put the washing on the clothes horse.", "雨だから洗濯物は室内の物干しにかけといたよ。"),
+                    ("Can you move the clothes horse? It's blocking the radiator.", "物干しラック動かしてくれる？暖房をふさいでるから。")
+                 ], ipa: "/ə ˈkləʊðz hɔːs/"),
+            make("a traffic warden", "an official whose job is to check that cars are parked legally and give fines",
+                 "駐車違反の取締員",
+                 useCases: ["路上駐車するとき", "駐車違反の切符を切られたとき"],
+                 examples: [
+                    ("Hurry up, there's a traffic warden coming down the street!", "急いで、取締員が通りをこっちに来てる！"),
+                    ("I was gone five minutes and a traffic warden gave me a ticket.", "5分離れただけで取締員に切符切られたよ。")
+                 ], ipa: "/ə ˈtræfɪk ˌwɔːdn/"),
+            make("a water bottle", "a bottle you carry with you and refill with water",
+                 "水筒・マイボトル",
+                 useCases: ["運動や外出の準備をするとき", "持ち物を確認するとき"],
+                 examples: [
+                    ("I've left my water bottle at the gym again.", "またジムに水筒置いてきちゃった。"),
+                    ("Bring a water bottle — it's going to be hot on the walk.", "水筒持ってきてね、散歩中暑くなるから。")
+                 ], ipa: "/ə ˈwɔːtə ˌbɒtl/"),
+            make("a bike lock", "a lock with a chain or cable that stops someone stealing your bicycle",
+                 "自転車のロック（鍵）",
+                 useCases: ["自転車で出かけるとき", "盗難の話をするとき"],
+                 examples: [
+                    ("Get a decent bike lock — bikes get nicked all the time round here.", "ちゃんとした自転車の鍵買いなよ、この辺しょっちゅう盗まれるから。"),
+                    ("I can't find the key to my bike lock anywhere.", "自転車のロックの鍵がどこにも見つからない。")
+                 ], ipa: "/ə ˈbaɪk lɒk/"),
+            make("the ticket barrier", "the gates at a station that you go through with your ticket or card",
+                 "（駅の）改札",
+                 useCases: ["駅で待ち合わせるとき", "切符やカードが通らないとき"],
+                 examples: [
+                    ("I'll meet you by the ticket barriers at half six.", "6時半に改札のとこで会おう。"),
+                    ("My card didn't work, so I got stuck at the ticket barrier.", "カードが反応しなくて改札で止められちゃった。")
+                 ], ipa: "/ðə ˈtɪkɪt ˌbæriə/"),
+            make("a hair tie", "a stretchy band used to hold long hair back in a ponytail",
+                 "ヘアゴム",
+                 useCases: ["髪をまとめたいとき", "物を借りるとき"],
+                 examples: [
+                    ("Have you got a spare hair tie? It's so windy.", "ヘアゴムの予備ある？風がすごくて。"),
+                    ("I always lose my hair ties — I don't know where they go.", "ヘアゴムいつもなくすんだよね、どこ行っちゃうんだろ。")
+                 ], ipa: "/ə ˈheə taɪ/"),
+            make("a screen protector", "a thin clear plastic or glass sheet that you put on a phone screen to protect it",
+                 "画面保護フィルム",
+                 useCases: ["スマホを買ったとき", "画面が割れたときの話をするとき"],
+                 examples: [
+                    ("Luckily only the screen protector cracked, not the phone.", "幸い割れたのは保護フィルムだけで、スマホは無事だった。"),
+                    ("You should get a screen protector before you drop it.", "落とす前に保護フィルム貼っときなよ。")
+                 ], ipa: "/ə ˈskriːn prəˌtektə/"),
+            make("a gym bag", "a bag for carrying your sports clothes and things to the gym",
+                 "ジムバッグ",
+                 useCases: ["仕事帰りにジムへ行くとき", "持ち物の話をするとき"],
+                 examples: [
+                    ("I've brought my gym bag so I can go straight after work.", "仕事終わりにそのまま行けるようにジムバッグ持ってきた。"),
+                    ("Something in my gym bag really stinks.", "ジムバッグの中の何かがめっちゃ臭うんだけど。")
+                 ], ipa: "/ə ˈdʒɪm bæɡ/"),
+            make("shower gel", "liquid soap that you use to wash your body in the shower",
+                 "ボディソープ",
+                 useCases: ["買い物リストを作るとき", "旅行の持ち物を話すとき"],
+                 examples: [
+                    ("We're out of shower gel — can you grab some on the way home?", "ボディソープ切れてるんだ、帰りに買ってきてくれる？"),
+                    ("The hotel gives you free shower gel, so don't bother packing any.", "ホテルにボディソープあるから、持っていかなくていいよ。")
+                 ], ipa: "/ˈʃaʊə dʒel/"),
+            make("a yoga mat", "a soft mat that you use when doing yoga or exercises on the floor",
+                 "ヨガマット",
+                 useCases: ["家で運動するとき", "ヨガのクラスに行くとき"],
+                 examples: [
+                    ("Do I need to bring my own yoga mat to the class?", "クラスにヨガマット持参しなきゃいけない？"),
+                    ("I bought a yoga mat in January and I've used it twice.", "1月にヨガマット買ったけど、2回しか使ってない。")
+                 ], ipa: "/ə ˈjəʊɡə mæt/"),
+        ]
+    }
+
+    private static var britishColloquial335: [Word] {
+        [
+            make("a bum bag", "a small bag on a belt that you wear around your waist",
+                 "ウエストポーチ",
+                 useCases: ["旅行の持ち物を話すとき", "ファッションについて話すとき"],
+                 examples: [
+                    ("I always take a bum bag when I travel so my passport's safe.", "旅行のときはパスポートが安全なようにいつもウエストポーチを持ってくんだ。"),
+                    ("Bum bags are back in fashion, apparently.", "ウエストポーチ、また流行ってるらしいよ。")
+                 ], ipa: "/ə ˈbʌm bæɡ/"),
+            make("a garden centre", "a large shop that sells plants, garden tools and things for the home",
+                 "ガーデンセンター（園芸用品店）",
+                 useCases: ["週末の予定を話すとき", "植物や庭いじりの話をするとき"],
+                 examples: [
+                    ("We spent the whole Sunday at the garden centre.", "日曜はまるまる園芸店で過ごしたよ。"),
+                    ("The garden centre down the road has a really nice café.", "近くの園芸店にすごくいいカフェがあるんだ。")
+                 ], ipa: "/ə ˈɡɑːdn ˌsentə/"),
+            make("the chemist's", "a shop where you can buy medicine, toiletries and get prescriptions",
+                 "薬局・ドラッグストア",
+                 useCases: ["薬を買いに行くとき", "体調が悪いときに助言するとき"],
+                 examples: [
+                    ("I'm just popping to the chemist's for some paracetamol.", "ちょっと薬局に頭痛薬買いに行ってくるね。"),
+                    ("Ask at the chemist's — they'll know what to give you.", "薬局で聞いてみなよ、何がいいか教えてくれるから。")
+                 ], ipa: "/ðə ˈkemɪsts/"),
+            make("a launderette", "a place with coin-operated washing machines and dryers that the public can use",
+                 "コインランドリー",
+                 useCases: ["洗濯機が壊れたとき", "旅先や一人暮らしの生活の話をするとき"],
+                 examples: [
+                    ("Our washing machine's broken, so I've been going to the launderette.", "洗濯機が壊れてて、コインランドリーに通ってるんだ。"),
+                    ("Is there a launderette near the hostel?", "ホステルの近くにコインランドリーある？")
+                 ], ipa: "/ə ˌlɔːndəˈret/"),
+            make("the thermostat", "the device on the wall that controls the temperature of the heating",
+                 "サーモスタット（暖房の温度調節器）",
+                 useCases: ["部屋の暑さ寒さについて話すとき", "光熱費の話をするとき"],
+                 examples: [
+                    ("Who turned the thermostat up? It's boiling in here!", "誰が暖房の温度上げたの？ここめっちゃ暑いんだけど！"),
+                    ("We keep the thermostat at nineteen to save money.", "節約のために暖房は19度にしてるんだ。")
+                 ], ipa: "/ðə ˈθɜːməstæt/"),
+            make("phone signal", "the strength of the connection your mobile phone has to the network",
+                 "（携帯の）電波",
+                 useCases: ["電話が繋がりにくいとき", "田舎や地下にいるとき"],
+                 examples: [
+                    ("Sorry, I've got no phone signal out here.", "ごめん、ここ全然電波ないんだ。"),
+                    ("The phone signal's terrible in this building.", "この建物の中、電波最悪だね。")
+                 ], ipa: "/ˈfəʊn ˌsɪɡnəl/"),
+            make("seconds", "a second serving of food after you have finished your first plate",
+                 "おかわり",
+                 useCases: ["食事でおかわりを勧めるとき", "料理を褒めるとき"],
+                 examples: [
+                    ("Does anyone want seconds? There's loads left.", "誰かおかわりいる？まだいっぱいあるよ。"),
+                    ("This is delicious — I'm definitely going back for seconds.", "これ美味しい、絶対おかわりしに行く。")
+                 ], ipa: "/ˈsekəndz/"),
+            make("a car wash", "a place where you can pay to have your car washed",
+                 "洗車場",
+                 useCases: ["車の手入れの話をするとき", "用事を伝えるとき"],
+                 examples: [
+                    ("The car's filthy — I need to take it through the car wash.", "車が泥だらけだから洗車機に通さなきゃ。"),
+                    ("There's a hand car wash next to the petrol station.", "ガソリンスタンドの隣に手洗い洗車があるよ。")
+                 ], ipa: "/ə ˈkɑː wɒʃ/"),
+            make("a spare tyre", "an extra wheel kept in a car in case one gets a puncture",
+                 "スペアタイヤ",
+                 useCases: ["車のトラブルの話をするとき", "ドライブの準備をするとき"],
+                 examples: [
+                    ("Have you got a spare tyre in the boot?", "トランクにスペアタイヤある？"),
+                    ("We got a puncture on the motorway and had to put the spare tyre on.", "高速でパンクして、スペアタイヤに替えなきゃならなかったよ。")
+                 ], ipa: "/ə ˌspeə ˈtaɪə/"),
+            make("a toolbox", "a box for keeping tools such as hammers and screwdrivers in",
+                 "工具箱",
+                 useCases: ["家の修理をするとき", "道具を借りたいとき"],
+                 examples: [
+                    ("Can you grab the toolbox from under the stairs?", "階段下から工具箱取ってきてくれる？"),
+                    ("Have you got a screwdriver in your toolbox I could borrow?", "工具箱にドライバーある？ちょっと借りたいんだけど。")
+                 ], ipa: "/ə ˈtuːlbɒks/"),
+            make("the blinds", "a covering for a window that you can pull up and down or open and close",
+                 "ブラインド",
+                 useCases: ["部屋の明るさを調整するとき", "日差しがまぶしいとき"],
+                 examples: [
+                    ("Can you close the blinds? The sun's right in my eyes.", "ブラインド閉めてくれる？日差しがまともに目に入るんだ。"),
+                    ("I open the blinds as soon as I get up.", "起きたらすぐブラインドを開けるんだ。")
+                 ], ipa: "/ðə blaɪndz/"),
+            make("a delay", "a period of time when something happens later than planned",
+                 "遅延・遅れ",
+                 useCases: ["電車や飛行機が遅れたとき", "遅れることを伝えるとき"],
+                 examples: [
+                    ("There's a twenty-minute delay on the trains, so I'll be late.", "電車が20分遅れてるから、遅れるね。"),
+                    ("Sorry for the delay in getting back to you.", "返事が遅くなってごめんね。")
+                 ], ipa: "/ə dɪˈleɪ/"),
+            make("a seat reservation", "a booking that keeps a particular seat for you on a train or coach",
+                 "座席指定",
+                 useCases: ["電車の切符を買うとき", "席を譲ってもらうよう頼むとき"],
+                 examples: [
+                    ("It's worth getting a seat reservation — the train's always packed on Fridays.", "座席指定取った方がいいよ、金曜の電車はいつも満員だから。"),
+                    ("Sorry, I think you're in my seat — I've got a seat reservation.", "すみません、そこ私の席だと思います。座席指定してあるので。")
+                 ], ipa: "/ə ˈsiːt rezəˌveɪʃn/"),
+            make("a rail strike", "a time when train workers refuse to work, so trains don't run",
+                 "鉄道ストライキ",
+                 useCases: ["移動手段の話をするとき", "予定が狂ったとき"],
+                 examples: [
+                    ("There's a rail strike tomorrow, so I'm working from home.", "明日鉄道ストだから、在宅勤務にするよ。"),
+                    ("We had to cancel the trip because of the rail strike.", "鉄道ストのせいで旅行キャンセルしなきゃならなかった。")
+                 ], ipa: "/ə ˈreɪl straɪk/"),
+            make("wallpaper", "paper with a pattern that you stick on the walls of a room; also the background picture on a screen",
+                 "壁紙・（スマホやPCの）待ち受け画像",
+                 useCases: ["部屋の模様替えの話をするとき", "スマホの画面について話すとき"],
+                 examples: [
+                    ("We're stripping the old wallpaper in the bedroom this weekend.", "今週末、寝室の古い壁紙をはがすんだ。"),
+                    ("Is that your dog on your wallpaper? He's so cute!", "待ち受けのそれ、あなたの犬？すごくかわいい！")
+                 ], ipa: "/ˈwɔːlpeɪpə/"),
+        ]
+    }
+
+    private static var britishColloquial334: [Word] {
+        [
+            make("a postbox", "a red metal box in the street where you put letters to be posted",
+                 "郵便ポスト",
+                 useCases: ["手紙を出す場所を聞くとき", "道案内の目印にするとき"],
+                 examples: [
+                    ("Is there a postbox near here? I need to send this card.", "この近くにポストある？このカード出したいんだけど。"),
+                    ("Turn left at the postbox and it's the second house on the right.", "ポストのとこを左に曲がって、右側の2軒目だよ。")
+                 ], ipa: "/ə ˈpəʊstbɒks/"),
+            make("a ponytail", "hair tied together at the back of the head so that it hangs down",
+                 "ポニーテール",
+                 useCases: ["髪型について話すとき", "人の見た目を説明するとき"],
+                 examples: [
+                    ("I just put my hair in a ponytail when I'm in a rush.", "急いでるときは髪をポニーテールにまとめるだけだよ。"),
+                    ("She's the tall one with the blonde ponytail.", "金髪のポニーテールの背の高い子がその人だよ。")
+                 ], ipa: "/ə ˈpəʊniteɪl/"),
+            make("the staff room", "a room in a school or workplace where teachers or staff can relax",
+                 "職員室・スタッフの休憩室",
+                 useCases: ["学校や職場の話をするとき", "休憩場所を伝えるとき"],
+                 examples: [
+                    ("There's always cake in the staff room on Fridays.", "金曜は休憩室にいつもケーキがあるんだ。"),
+                    ("I left my mug in the staff room again.", "またマグカップを休憩室に置いてきちゃった。")
+                 ], ipa: "/ðə ˈstɑːf ruːm/"),
+            make("a car boot sale", "an outdoor sale where people sell unwanted things from the back of their cars",
+                 "フリーマーケット（車のトランクで売る形式）",
+                 useCases: ["週末の予定を話すとき", "安く買った物の話をするとき"],
+                 examples: [
+                    ("I got this lamp for two quid at a car boot sale.", "このランプ、フリマで2ポンドで買ったんだ。"),
+                    ("We're doing a car boot sale on Sunday to clear out the garage.", "ガレージを片付けるのに日曜フリマに出すんだ。")
+                 ], ipa: "/ə ˌkɑː ˈbuːt seɪl/"),
+            make("council tax", "a tax that people in the UK pay to their local council for local services",
+                 "住民税（地方自治体の税金）",
+                 useCases: ["家賃や生活費の話をするとき", "引っ越しの手続きの話をするとき"],
+                 examples: [
+                    ("Is council tax included in the rent?", "家賃に住民税って含まれてる？"),
+                    ("Our council tax has gone up again this year.", "今年も住民税が上がったよ。")
+                 ], ipa: "/ˈkaʊnsl tæks/"),
+            make("a conservatory", "a room with glass walls and roof, built onto the side of a house",
+                 "サンルーム",
+                 useCases: ["家の間取りを説明するとき", "家でくつろぐ場所の話をするとき"],
+                 examples: [
+                    ("We have breakfast in the conservatory when it's sunny.", "晴れた日はサンルームで朝ごはんを食べるんだ。"),
+                    ("The conservatory gets boiling in summer.", "夏はサンルームがめちゃくちゃ暑くなるんだよね。")
+                 ], ipa: "/ə kənˈsɜːvətri/"),
+            make("an escalator", "moving stairs that carry people up or down in a shop or station",
+                 "エスカレーター",
+                 useCases: ["駅や店で道を案内するとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("Meet me at the bottom of the escalator.", "エスカレーターの下で待ち合わせね。"),
+                    ("The escalator's broken, so we'll have to take the stairs.", "エスカレーター止まってるから、階段で行くしかないね。")
+                 ], ipa: "/ən ˈeskəleɪtə/"),
+            make("a bag for life", "a strong reusable shopping bag that you buy at a supermarket",
+                 "エコバッグ（スーパーで買う丈夫な袋）",
+                 useCases: ["買い物に行くとき", "レジで袋について聞かれたとき"],
+                 examples: [
+                    ("I forgot my bag for life again, so I had to buy another one.", "またエコバッグ忘れて、もう一つ買う羽目になったよ。"),
+                    ("Keep a bag for life in the car — it's really handy.", "車にエコバッグ入れとくと、ほんと便利だよ。")
+                 ], ipa: "/ə ˌbæɡ fə ˈlaɪf/"),
+            make("crutches", "a pair of sticks that you put under your arms to help you walk when you have hurt your leg",
+                 "松葉杖",
+                 useCases: ["けがについて話すとき", "誰かの体調を気遣うとき"],
+                 examples: [
+                    ("He's on crutches for six weeks after breaking his ankle.", "足首を骨折して、6週間松葉杖なんだって。"),
+                    ("Getting up the stairs on crutches is a nightmare.", "松葉杖で階段を上るのは本当に大変だよ。")
+                 ], ipa: "/ˈkrʌtʃɪz/"),
+            make("nail varnish", "coloured liquid that you paint on your nails",
+                 "マニキュア・ネイル",
+                 useCases: ["おしゃれについて話すとき", "身支度の話をするとき"],
+                 examples: [
+                    ("I love that colour nail varnish — where did you get it?", "そのネイルの色すてき！どこで買ったの？"),
+                    ("Don't touch anything, my nail varnish is still wet.", "何も触らないで、まだネイル乾いてないの。")
+                 ], ipa: "/ˈneɪl vɑːnɪʃ/"),
+            make("shaving foam", "a white foam that you put on your skin before you shave",
+                 "シェービングフォーム",
+                 useCases: ["日用品の買い物をするとき", "旅行の持ち物の話をするとき"],
+                 examples: [
+                    ("Can you grab some shaving foam while you're at the shops?", "お店行くついでにシェービングフォーム買ってきてくれる？"),
+                    ("You can't take a big can of shaving foam in your hand luggage.", "大きいシェービングフォームは機内持ち込みできないよ。")
+                 ], ipa: "/ˈʃeɪvɪŋ fəʊm/"),
+            make("dental floss", "thin thread used for cleaning between your teeth",
+                 "デンタルフロス",
+                 useCases: ["歯医者の話をするとき", "歯のケアについて話すとき"],
+                 examples: [
+                    ("The dentist told me to use dental floss every night.", "歯医者に毎晩フロスしなさいって言われた。"),
+                    ("Have you got any dental floss? I've got something stuck in my teeth.", "フロス持ってる？歯に何か挟まっちゃって。")
+                 ], ipa: "/ˈdentl flɒs/"),
+            make("a fitted sheet", "a bed sheet with elastic corners that fits tightly over the mattress",
+                 "ボックスシーツ",
+                 useCases: ["ベッドメイクをするとき", "寝具を買うとき"],
+                 examples: [
+                    ("Folding a fitted sheet is impossible, honestly.", "ボックスシーツをたたむのって、ほんと無理。"),
+                    ("Make sure you get a fitted sheet for a double bed.", "ダブルベッド用のボックスシーツを買ってね。")
+                 ], ipa: "/ə ˌfɪtɪd ˈʃiːt/"),
+            make("a lift", "a machine that carries people up and down between floors in a building",
+                 "エレベーター",
+                 useCases: ["建物の中で移動するとき", "道案内をするとき"],
+                 examples: [
+                    ("Shall we take the lift or the stairs?", "エレベーターにする？階段にする？"),
+                    ("The lift's out of order, so we'll have to walk up.", "エレベーター故障中だから、歩いて上がるしかないね。")
+                 ], ipa: "/ə ˈlɪft/"),
+            make("school uniform", "the special clothes that children wear at a particular school",
+                 "制服",
+                 useCases: ["子どもや学校の話をするとき", "学生時代の思い出を話すとき"],
+                 examples: [
+                    ("I need to buy new school uniform before September.", "9月までに新しい制服を買わなきゃ。"),
+                    ("I hated wearing a tie with my school uniform.", "制服でネクタイするのが本当に嫌だったな。")
+                 ], ipa: "/ˌskuːl ˈjuːnɪfɔːm/")
+        ]
+    }
+
+    private static var britishColloquial333: [Word] {
+        [
+            make("a cold sore", "a small painful spot on or near your lips, often when you are tired or run down",
+                 "口唇ヘルペス・唇のできもの",
+                 useCases: ["体調や疲れについて話すとき", "薬局で薬を探すとき"],
+                 examples: [
+                    ("I always get a cold sore when I'm stressed.", "ストレスがたまると決まって唇にできものができるんだよね。"),
+                    ("Have you got any cream for a cold sore?", "唇のできもの用のクリームって置いてますか？")
+                 ], ipa: "/ə ˈkəʊld sɔː/"),
+            make("a piggy bank", "a small container, often shaped like a pig, that children keep coins in",
+                 "貯金箱",
+                 useCases: ["子どものお小遣いの話をするとき", "節約について冗談っぽく話すとき"],
+                 examples: [
+                    ("My son emptied his piggy bank to buy me a birthday present.", "息子が貯金箱を空にして誕生日プレゼントを買ってくれたの。"),
+                    ("I'll have to raid my piggy bank to pay for this trip.", "この旅行代、へそくりに手をつけなきゃだな。")
+                 ], ipa: "/ə ˈpɪɡi bæŋk/"),
+            make("a bus shelter", "a small covered place at a bus stop where people wait",
+                 "バス停の屋根付き待合所",
+                 useCases: ["待ち合わせ場所を伝えるとき", "雨宿りの話をするとき"],
+                 examples: [
+                    ("I'll wait for you in the bus shelter — it's pouring down.", "土砂降りだから、バス停の屋根の下で待ってるね。"),
+                    ("Someone's smashed the glass in the bus shelter again.", "また誰かがバス停の待合所のガラス割ってるよ。")
+                 ], ipa: "/ə ˈbʌs ʃeltə/"),
+            make("a number plate", "the metal sign on the front and back of a car that shows its registration number",
+                 "ナンバープレート",
+                 useCases: ["車について話すとき", "事故や駐車違反を説明するとき"],
+                 examples: [
+                    ("Did you get the number plate of the car that hit you?", "ぶつけてきた車のナンバー控えた？"),
+                    ("You can tell how old a car is from its number plate.", "ナンバープレートで車の年式がわかるんだよ。")
+                 ], ipa: "/ə ˈnʌmbə pleɪt/"),
+            make("the windscreen", "the large glass window at the front of a car",
+                 "（車の）フロントガラス",
+                 useCases: ["車の運転や天気について話すとき", "車の修理の話をするとき"],
+                 examples: [
+                    ("I had to scrape the ice off the windscreen this morning.", "今朝はフロントガラスの氷をガリガリ削らなきゃいけなかったよ。"),
+                    ("A stone hit the windscreen on the motorway and cracked it.", "高速で石が飛んできてフロントガラスにひびが入った。")
+                 ], ipa: "/ðə ˈwɪndskriːn/"),
+            make("a watering can", "a container with a handle and a long spout, used for watering plants",
+                 "じょうろ",
+                 useCases: ["ガーデニングの話をするとき", "植物の水やりを頼むとき"],
+                 examples: [
+                    ("Could you fill the watering can and do the tomatoes?", "じょうろに水入れて、トマトに水やってくれる？"),
+                    ("The watering can's by the back door.", "じょうろなら裏口のとこにあるよ。")
+                 ], ipa: "/ə ˈwɔːtərɪŋ kæn/"),
+            make("sticky tape", "clear plastic tape that is sticky on one side, used for sticking paper together",
+                 "セロハンテープ",
+                 useCases: ["プレゼントを包むとき", "文房具を借りるとき"],
+                 examples: [
+                    ("Have we got any sticky tape? I need to wrap this present.", "セロテープある？このプレゼント包みたいんだけど。"),
+                    ("I can never find the end of the sticky tape.", "セロテープの端っこって、いつも見つからないんだよね。")
+                 ], ipa: "/ˈstɪki teɪp/"),
+            make("a paper clip", "a small piece of bent wire used for holding sheets of paper together",
+                 "ゼムクリップ",
+                 useCases: ["書類をまとめるとき", "ちょっとした道具代わりに使うとき"],
+                 examples: [
+                    ("Just put a paper clip on those pages so they don't get mixed up.", "ごちゃ混ぜにならないように、そのページはクリップで留めといて。"),
+                    ("You can use a paper clip to get the SIM card out.", "SIMカードはクリップで取り出せるよ。")
+                 ], ipa: "/ə ˈpeɪpə klɪp/"),
+            make("a pencil case", "a small bag or box for keeping pens, pencils and other stationery in",
+                 "筆箱・ペンケース",
+                 useCases: ["学校や子どもの持ち物の話をするとき", "ペンを探しているとき"],
+                 examples: [
+                    ("Have a look in my pencil case — there should be a spare pen.", "私の筆箱の中見てみて。予備のペンがあるはず。"),
+                    ("She's left her pencil case at school again.", "あの子、また学校に筆箱置いてきちゃったよ。")
+                 ], ipa: "/ə ˈpensl keɪs/"),
+            make("a plug socket", "the place in a wall where you connect a plug to get electricity",
+                 "コンセント（差し込み口）",
+                 useCases: ["充電場所を探すとき", "ホテルやカフェで電源を聞くとき"],
+                 examples: [
+                    ("Is there a plug socket near the table? My phone's nearly dead.", "テーブルの近くにコンセントある？スマホの充電が切れそうで。"),
+                    ("The plug socket behind the sofa doesn't work.", "ソファの裏のコンセント、使えないんだよね。")
+                 ], ipa: "/ə ˈplʌɡ sɒkɪt/"),
+            make("the patio", "a flat paved area outside a house, used for sitting or eating outside",
+                 "テラス・パティオ",
+                 useCases: ["天気のいい日に外で過ごす話をするとき", "家や庭について話すとき"],
+                 examples: [
+                    ("It's lovely out — shall we have lunch on the patio?", "外気持ちいいね。テラスでお昼食べる？"),
+                    ("We've just had the patio redone.", "ちょうどテラスをやり直してもらったところなの。")
+                 ], ipa: "/ðə ˈpætiəʊ/"),
+            make("a lawnmower", "a machine used for cutting grass",
+                 "芝刈り機",
+                 useCases: ["庭の手入れの話をするとき", "近所の騒音について話すとき"],
+                 examples: [
+                    ("Can I borrow your lawnmower this weekend? Mine's broken.", "今週末、芝刈り機貸してもらえる？うちの壊れちゃって。"),
+                    ("The neighbours had the lawnmower going at eight on a Sunday!", "お隣さん、日曜の朝8時に芝刈り機回してたんだよ！")
+                 ], ipa: "/ə ˈlɔːnməʊə/"),
+            make("a highlighter", "a pen with bright see-through ink, used for marking important words",
+                 "蛍光ペン",
+                 useCases: ["勉強や仕事で書類を読むとき", "文房具を借りるとき"],
+                 examples: [
+                    ("Can I borrow a highlighter? I want to mark the important bits.", "蛍光ペン借りていい？大事なとこに線引きたくて。"),
+                    ("He's gone over the whole page with a highlighter.", "あいつ、ページ全部に蛍光ペン引いてるよ。")
+                 ], ipa: "/ə ˈhaɪlaɪtə/"),
+            make("the recycling bin", "a bin for things like paper, glass and plastic that can be used again",
+                 "リサイクル用のゴミ箱・資源ごみ",
+                 useCases: ["ゴミの分別について話すとき", "家事の分担をするとき"],
+                 examples: [
+                    ("Does this go in the recycling bin or the normal one?", "これって資源ごみ？それとも普通のゴミ？"),
+                    ("Can you put the recycling bin out tonight? They collect tomorrow.", "今夜リサイクルのゴミ箱出しといてくれる？明日回収だから。")
+                 ], ipa: "/ðə ˌriːˈsaɪklɪŋ bɪn/"),
+            make("a flowerpot", "a container, usually made of clay or plastic, for growing plants in",
+                 "植木鉢",
+                 useCases: ["ガーデニングや部屋の植物の話をするとき", "合鍵の隠し場所を伝えるとき"],
+                 examples: [
+                    ("The spare key's under the flowerpot by the front door.", "合鍵は玄関の植木鉢の下にあるよ。"),
+                    ("The cat knocked a flowerpot off the windowsill.", "猫が窓辺から植木鉢を落としちゃった。")
+                 ], ipa: "/ə ˈflaʊəpɒt/"),
+        ]
+    }
+
+    private static var britishColloquial332: [Word] {
+        [
+            make("a paper cut", "a small, painful cut on your finger from the edge of a piece of paper",
+                 "紙で切った傷",
+                 useCases: ["指のちょっとした怪我について話すとき", "書類や封筒を扱っているとき"],
+                 examples: [
+                    ("Ouch! I've just given myself a paper cut opening this envelope.", "痛っ！封筒開けてたら紙で指切っちゃった。"),
+                    ("Paper cuts are tiny, but they sting like mad.", "紙で切った傷って小さいのに、めちゃくちゃしみるよね。")
+                 ], ipa: "/ə ˈpeɪpə kʌt/"),
+            make("a cracked screen", "a phone or tablet screen with a break or line across the glass",
+                 "画面のひび割れ",
+                 useCases: ["スマホを落としたとき", "修理について話すとき"],
+                 examples: [
+                    ("I dropped my phone again and now I've got a cracked screen.", "またスマホ落として、画面にひび入っちゃった。"),
+                    ("How much does it cost to fix a cracked screen?", "画面のひび割れの修理っていくらかかるの？")
+                 ], ipa: "/ə ˌkrækt ˈskriːn/"),
+            make("a toothpick", "a small thin stick used for removing bits of food from between your teeth",
+                 "つまようじ",
+                 useCases: ["食後に歯に何か挟まったとき", "料理やおつまみを出すとき"],
+                 examples: [
+                    ("Have you got a toothpick? I've got something stuck in my teeth.", "つまようじある？歯に何か挟まっちゃって。"),
+                    ("Stick a toothpick in the cake to see if it's cooked.", "ケーキにつまようじ刺して、焼けてるか確かめて。")
+                 ], ipa: "/ə ˈtuːθpɪk/"),
+            make("a cobweb", "a net of thin threads made by a spider, especially an old dusty one",
+                 "クモの巣",
+                 useCases: ["掃除をするとき", "気分転換について話すとき（blow away the cobwebs）"],
+                 examples: [
+                    ("There are cobwebs all over the ceiling — when did we last clean in here?", "天井クモの巣だらけだよ。最後にここ掃除したのいつ？"),
+                    ("Let's go for a walk and blow away the cobwebs.", "散歩に行って頭をすっきりさせよう。")
+                 ], ipa: "/ə ˈkɒbweb/"),
+            make("a lamppost", "a tall post in the street with a light at the top",
+                 "街灯（の柱）",
+                 useCases: ["道案内や待ち合わせのとき", "歩きスマホの話をするとき"],
+                 examples: [
+                    ("I was looking at my phone and walked straight into a lamppost.", "スマホ見てたら街灯に正面からぶつかっちゃった。"),
+                    ("I've parked just by the lamppost outside the shop.", "店の前の街灯のすぐそばに停めたよ。")
+                 ], ipa: "/ə ˈlæmppəʊst/"),
+            make("a nosebleed", "an occasion when blood comes out of your nose",
+                 "鼻血",
+                 useCases: ["体調について話すとき", "子どもの怪我の対応をするとき"],
+                 examples: [
+                    ("I woke up with a nosebleed this morning — it's the dry air.", "今朝起きたら鼻血が出てて。空気が乾燥してるせいだね。"),
+                    ("Lean forward, not back, if you've got a nosebleed.", "鼻血が出たら、上じゃなくて前かがみになってね。")
+                 ], ipa: "/ə ˈnəʊzbliːd/"),
+            make("the landing", "the flat area at the top of the stairs in a house",
+                 "（階段上の）踊り場・2階の廊下",
+                 useCases: ["家の中で物の場所を伝えるとき", "家の間取りを説明するとき"],
+                 examples: [
+                    ("I've left the clean towels on the landing.", "きれいなタオル、2階の廊下に置いといたよ。"),
+                    ("Can you switch the landing light off on your way to bed?", "寝るついでに階段の上の電気消してくれる？")
+                 ], ipa: "/ðə ˈlændɪŋ/"),
+            make("a hedge", "a row of bushes growing closely together, used as a fence around a garden",
+                 "生け垣",
+                 useCases: ["庭の手入れについて話すとき", "近所の話をするとき"],
+                 examples: [
+                    ("I spent all Sunday cutting the hedge.", "日曜はずっと生け垣を刈ってたよ。"),
+                    ("The ball went over the hedge into next door's garden.", "ボールが生け垣を越えて隣の庭に入っちゃった。")
+                 ], ipa: "/ə ˈhedʒ/"),
+            make("a ladle", "a big deep spoon with a long handle, used for serving soup",
+                 "おたま",
+                 useCases: ["料理を取り分けるとき", "キッチンで道具を探すとき"],
+                 examples: [
+                    ("Pass me the ladle and I'll dish up the soup.", "おたま取って、スープよそうから。"),
+                    ("Where's the ladle gone? It's not in the drawer.", "おたまどこいった？引き出しにないんだけど。")
+                 ], ipa: "/ə ˈleɪdl/"),
+            make("a fruit bowl", "a bowl on a table or kitchen counter where fruit is kept",
+                 "果物かご・フルーツボウル",
+                 useCases: ["家の中で物の場所を伝えるとき", "おやつを勧めるとき"],
+                 examples: [
+                    ("Help yourself to something from the fruit bowl.", "果物かごから好きなの取って食べてね。"),
+                    ("Your keys are next to the fruit bowl.", "鍵ならフルーツボウルの横にあるよ。")
+                 ], ipa: "/ə ˈfruːt bəʊl/"),
+            make("a draught", "a current of cold air coming into a room, e.g. under a door",
+                 "すきま風",
+                 useCases: ["部屋が寒いとき", "窓やドアを閉めてほしいとき"],
+                 examples: [
+                    ("Can you shut the door? There's a terrible draught.", "ドア閉めてくれる？すきま風がひどくて。"),
+                    ("There's a draught coming in under the window.", "窓の下からすきま風が入ってくる。")
+                 ], ipa: "/ə ˈdrɑːft/"),
+            make("a ringtone", "the sound your mobile phone makes when someone calls you",
+                 "着信音",
+                 useCases: ["電話が鳴ったとき", "スマホの設定について話すとき"],
+                 examples: [
+                    ("Is that your phone? I don't recognise the ringtone.", "それ君のスマホ？着信音に聞き覚えがなくて。"),
+                    ("Can you change your ringtone? It drives me mad.", "着信音変えてくれない？イライラするんだよ。")
+                 ], ipa: "/ə ˈrɪŋtəʊn/"),
+            make("a lump", "a small hard swelling on your body, or a small solid piece of something",
+                 "こぶ・しこり・かたまり",
+                 useCases: ["頭をぶつけたとき", "砂糖や料理のダマについて話すとき"],
+                 examples: [
+                    ("I banged my head on the cupboard and now I've got a lump.", "戸棚に頭ぶつけて、たんこぶできちゃった。"),
+                    ("Keep stirring so the sauce doesn't go lumpy — there's still a lump there.", "ソースがダマにならないように混ぜ続けて。まだかたまりがあるよ。")
+                 ], ipa: "/ə ˈlʌmp/"),
+            make("a cold sweat", "sweat caused by fear or nervousness rather than heat",
+                 "冷や汗",
+                 useCases: ["ヒヤッとした体験を話すとき", "緊張した場面について話すとき"],
+                 examples: [
+                    ("I broke out in a cold sweat when I couldn't find my passport.", "パスポートが見つからなくて冷や汗が出たよ。"),
+                    ("Just thinking about that exam brings me out in a cold sweat.", "あの試験のことを思い出すだけで冷や汗が出る。")
+                 ], ipa: "/ə ˌkəʊld ˈswet/"),
+            make("a fridge magnet", "a small decorative magnet you stick on the fridge door",
+                 "冷蔵庫に貼るマグネット",
+                 useCases: ["旅行のお土産を選ぶとき", "メモを貼っておくとき"],
+                 examples: [
+                    ("I always buy a fridge magnet wherever I go on holiday.", "旅行に行ったらいつも冷蔵庫マグネットを買うんだ。"),
+                    ("I've stuck the shopping list on the fridge with a magnet.", "買い物リスト、冷蔵庫にマグネットで貼っといたよ。")
+                 ], ipa: "/ə ˈfrɪdʒ ˌmæɡnət/"),
+        ]
+    }
+
+    private static var britishColloquial331: [Word] {
+        [
+            make("a rubber band", "a thin loop of rubber used for holding things together",
+                 "輪ゴム",
+                 useCases: ["物をまとめるとき", "髪を結ぶものがないとき"],
+                 examples: [
+                    ("Have you got a rubber band? I need to tie my hair back.", "輪ゴムある？髪を結びたいの。"),
+                    ("Just put a rubber band round the bag of crisps to keep them fresh.", "ポテチの袋は輪ゴムで留めておけば湿気らないよ。")
+                 ], ipa: "/ə ˌrʌbə ˈbænd/"),
+            make("an iron", "an electrical device with a flat metal base, heated and used to press clothes",
+                 "アイロン",
+                 useCases: ["服のしわを伸ばすとき", "家を出た後に心配になったとき"],
+                 examples: [
+                    ("Did I leave the iron on? I can't remember turning it off.", "アイロンつけっぱなしにしたかな？消した記憶がない。"),
+                    ("Can I borrow your iron? My shirt's all creased.", "アイロン借りていい？シャツがしわくちゃなんだ。")
+                 ], ipa: "/ən ˈaɪən/"),
+            make("a jar", "a glass container with a wide opening and a lid, used for storing food",
+                 "瓶（ジャム瓶など）",
+                 useCases: ["蓋が開かないとき", "食品の保存について話すとき"],
+                 examples: [
+                    ("Can you open this jar for me? The lid's stuck.", "この瓶開けてくれる？蓋が固くて。"),
+                    ("I keep all my spare change in an old jam jar.", "小銭は全部古いジャム瓶に貯めてるんだ。")
+                 ], ipa: "/ə ˈdʒɑː/"),
+            make("a bench", "a long seat for two or more people, often outdoors in a park",
+                 "ベンチ",
+                 useCases: ["公園で休むとき", "待ち合わせ場所を決めるとき"],
+                 examples: [
+                    ("Let's sit on that bench for a bit — my feet are killing me.", "あのベンチでちょっと休もう。足が痛くて。"),
+                    ("I'll meet you by the bench next to the pond.", "池の横のベンチのところで会おう。")
+                 ], ipa: "/ə ˈbentʃ/"),
+            make("a picnic", "a meal eaten outdoors, with food you have brought with you",
+                 "ピクニック",
+                 useCases: ["天気の良い日の予定を立てるとき", "週末の過ごし方を話すとき"],
+                 examples: [
+                    ("If it's sunny on Saturday, shall we have a picnic in the park?", "土曜晴れたら、公園でピクニックしない？"),
+                    ("I'll bring sandwiches and you bring the picnic blanket.", "私がサンドイッチ持ってくから、レジャーシートお願い。")
+                 ], ipa: "/ə ˈpɪknɪk/"),
+            make("a rainbow", "an arch of colours in the sky, caused by sunlight shining through rain",
+                 "虹",
+                 useCases: ["雨上がりの空について話すとき", "写真を撮るとき"],
+                 examples: [
+                    ("Look out the window — there's a massive rainbow!", "窓の外見て！でっかい虹が出てるよ！"),
+                    ("I managed to get a photo of a double rainbow this morning.", "今朝、二重の虹の写真が撮れたんだ。")
+                 ], ipa: "/ə ˈreɪnbəʊ/"),
+            make("a speed bump", "a raised strip across a road that forces drivers to slow down",
+                 "スピードバンプ（減速帯）",
+                 useCases: ["運転するとき", "住宅街の道路について話すとき"],
+                 examples: [
+                    ("Slow down, there's a speed bump coming up.", "スピード落として、この先に減速帯があるよ。"),
+                    ("They've put speed bumps all along our road.", "うちの前の道、ずっと減速帯がつけられたんだ。")
+                 ], ipa: "/ə ˈspiːd bʌmp/"),
+            make("a mosquito bite", "an itchy red spot on your skin where a mosquito has bitten you",
+                 "蚊に刺された跡",
+                 useCases: ["かゆみについて話すとき", "夏や旅行の話をするとき"],
+                 examples: [
+                    ("I'm covered in mosquito bites from last night.", "昨日の夜、蚊にあちこち刺されちゃった。"),
+                    ("Try not to scratch that mosquito bite or it'll get worse.", "蚊に刺されたところ掻かないで、悪化するよ。")
+                 ], ipa: "/ə məˈskiːtəʊ baɪt/"),
+            make("a frost", "a thin white layer of ice that forms on surfaces when it is very cold",
+                 "霜",
+                 useCases: ["寒い朝の天気について話すとき", "車のフロントガラスについて話すとき"],
+                 examples: [
+                    ("There was a hard frost last night — the car's completely white.", "昨夜はひどい霜で、車が真っ白だよ。"),
+                    ("They're forecasting a frost, so bring the plants inside.", "霜の予報だから、植物を中に入れておいて。")
+                 ], ipa: "/ə ˈfrɒst/"),
+            make("a deckchair", "a folding chair made of wood and cloth, used on the beach or in the garden",
+                 "デッキチェア",
+                 useCases: ["ビーチや庭でくつろぐとき", "夏の過ごし方を話すとき"],
+                 examples: [
+                    ("All I want is a deckchair and a good book.", "デッキチェアと面白い本さえあれば十分だよ。"),
+                    ("Let's hire a couple of deckchairs on the beach.", "ビーチでデッキチェアを2つ借りよう。")
+                 ], ipa: "/ə ˈdektʃeə/"),
+            make("a scratch", "a small cut on the skin, or a thin mark on a surface",
+                 "かすり傷・ひっかき傷",
+                 useCases: ["怪我を心配されたとき", "車や家具の傷について話すとき"],
+                 examples: [
+                    ("Don't worry, it's only a scratch.", "心配しないで、ただのかすり傷だよ。"),
+                    ("Someone's left a scratch down the side of my car.", "誰かに車の横に傷をつけられたんだ。")
+                 ], ipa: "/ə ˈskrætʃ/"),
+            make("a sticker", "a small piece of paper or plastic with a picture or writing on it, that sticks to things",
+                 "シール・ステッカー",
+                 useCases: ["子どもとの会話で", "値札やラベルについて話すとき"],
+                 examples: [
+                    ("The kids have put stickers all over the fridge.", "子どもたちが冷蔵庫中にシール貼っちゃった。"),
+                    ("Can you peel the price sticker off before I wrap it?", "包む前に値札シール剥がしてくれる？")
+                 ], ipa: "/ə ˈstɪkə/"),
+            make("a postcard", "a card for sending a message by post, often with a picture of a place on one side",
+                 "絵はがき・ポストカード",
+                 useCases: ["旅行先から連絡するとき", "お土産について話すとき"],
+                 examples: [
+                    ("I'll send you a postcard from Rome.", "ローマから絵はがき送るね。"),
+                    ("Thanks for the postcard — it's on the fridge now.", "絵はがきありがとう。今冷蔵庫に貼ってあるよ。")
+                 ], ipa: "/ə ˈpəʊstkɑːd/"),
+            make("a balloon", "a small rubber bag that you fill with air or gas, used as a decoration",
+                 "風船",
+                 useCases: ["パーティーの準備をするとき", "子どもと出かけるとき"],
+                 examples: [
+                    ("Can you help me blow up the balloons for the party?", "パーティー用の風船膨らますの手伝ってくれる？"),
+                    ("She burst into tears when her balloon floated away.", "風船が飛んでいっちゃって、あの子泣き出しちゃった。")
+                 ], ipa: "/ə bəˈluːn/"),
+            make("a jigsaw", "a picture cut into small pieces that you fit together; a jigsaw puzzle",
+                 "ジグソーパズル",
+                 useCases: ["家で過ごす趣味について話すとき", "家族で遊ぶとき"],
+                 examples: [
+                    ("We spent the whole weekend doing a thousand-piece jigsaw.", "週末ずっと1000ピースのジグソーパズルやってたよ。"),
+                    ("Don't tell me there's a piece missing from the jigsaw!", "まさかパズルのピースが1つ足りないとか言わないでね！")
+                 ], ipa: "/ə ˈdʒɪɡsɔː/"),
+        ]
+    }
+
+    private static var britishColloquial330: [Word] {
+        [
+            make("a candle", "a stick of wax with a wick that you burn to give light or a nice smell",
+                 "ろうそく・キャンドル",
+                 useCases: ["誕生日ケーキを準備するとき", "部屋の雰囲気作りや停電について話すとき"],
+                 examples: [
+                    ("Have we got any candles for the birthday cake?", "誕生日ケーキ用のろうそくってある？"),
+                    ("The power's gone off — can you find a candle?", "停電しちゃった。ろうそく探してくれる？")
+                 ], ipa: "/ə ˈkændl/"),
+            make("a vase", "a container used for holding cut flowers",
+                 "花瓶",
+                 useCases: ["花をもらったとき", "部屋の飾りについて話すとき"],
+                 examples: [
+                    ("These flowers are lovely — let me find a vase for them.", "素敵なお花！花瓶を探してくるね。"),
+                    ("Careful, the cat nearly knocked the vase over.", "気をつけて、猫が花瓶を倒しそうになったよ。")
+                 ], ipa: "/ə ˈvɑːz/"),
+            make("a rug", "a small carpet that covers part of a floor",
+                 "ラグ・敷物",
+                 useCases: ["インテリアについて話すとき", "床の汚れや掃除について話すとき"],
+                 examples: [
+                    ("We bought a new rug for the living room.", "リビング用に新しいラグを買ったんだ。"),
+                    ("Mind the rug — I've just spilt coffee near it.", "ラグに気をつけて。今その近くにコーヒーこぼしちゃった。")
+                 ], ipa: "/ə ˈrʌɡ/"),
+            make("a broom", "a brush with a long handle used for sweeping floors",
+                 "ほうき",
+                 useCases: ["掃除をするとき", "庭や玄関先を掃くとき"],
+                 examples: [
+                    ("Where's the broom? There's glass all over the floor.", "ほうきどこ？床中ガラスだらけなの。"),
+                    ("I'll grab the broom and sweep the leaves off the path.", "ほうき持ってきて、小道の落ち葉を掃いておくね。")
+                 ], ipa: "/ə ˈbruːm/"),
+            make("tweezers", "a small tool with two narrow arms used for pulling out hairs or splinters",
+                 "ピンセット・毛抜き",
+                 useCases: ["トゲが刺さったとき", "身だしなみを整えるとき"],
+                 examples: [
+                    ("Have you got any tweezers? I've got a splinter.", "毛抜きある？トゲが刺さっちゃった。"),
+                    ("The tweezers are in the bathroom cabinet.", "ピンセットはお風呂場の棚に入ってるよ。")
+                 ], ipa: "/ˈtwiːzəz/"),
+            make("a needle and thread", "a thin pointed piece of metal with a hole, and the thread used with it for sewing",
+                 "針と糸",
+                 useCases: ["ボタンが取れたとき", "服のほつれを直すとき"],
+                 examples: [
+                    ("My button's come off — have you got a needle and thread?", "ボタン取れちゃった。針と糸ある？"),
+                    ("Two minutes with a needle and thread and it's good as new.", "針と糸で2分あれば新品同様だよ。")
+                 ], ipa: "/ə ˌniːdl ən ˈθred/"),
+            make("a purse", "a small bag for carrying money, especially coins (UK); a handbag (US)",
+                 "財布（小銭入れ）・（米）ハンドバッグ",
+                 useCases: ["支払いをするとき", "落とし物について話すとき"],
+                 examples: [
+                    ("Hang on, I think I've left my purse in the car.", "ちょっと待って、財布を車に置いてきたかも。"),
+                    ("She found a purse on the bus and handed it in.", "彼女、バスで財布を拾って届けたんだって。")
+                 ], ipa: "/ə ˈpɜːs/"),
+            make("a lighter", "a small device that produces a flame, used for lighting cigarettes, candles or a gas hob",
+                 "ライター",
+                 useCases: ["ろうそくやコンロに火をつけるとき", "バーベキューの準備をするとき"],
+                 examples: [
+                    ("Has anyone got a lighter for the barbecue?", "バーベキュー用にライター持ってる人いる？"),
+                    ("The lighter's run out — use the matches instead.", "ライター切れちゃった。代わりにマッチ使って。")
+                 ], ipa: "/ə ˈlaɪtə/"),
+            make("a sewing kit", "a small box or bag containing needles, thread, pins and buttons for basic repairs",
+                 "ソーイングセット・裁縫セット",
+                 useCases: ["旅行の荷造りをするとき", "ホテルのアメニティについて話すとき"],
+                 examples: [
+                    ("I always pack a little sewing kit when I travel.", "旅行のときはいつも小さい裁縫セットを持って行くの。"),
+                    ("Ask reception — they usually have a sewing kit.", "フロントに聞いてみて。たいてい裁縫セットがあるから。")
+                 ], ipa: "/ə ˈsəʊɪŋ ˌkɪt/"),
+            make("an elastic band", "a thin ring of rubber used for holding things together (also: a rubber band)",
+                 "輪ゴム",
+                 useCases: ["袋の口を閉じるとき", "髪や書類をまとめるとき"],
+                 examples: [
+                    ("Pop an elastic band round the crisps so they don't go stale.", "しけないように、ポテチの袋に輪ゴムかけといて。"),
+                    ("Have you got an elastic band? I need to tie my hair back.", "輪ゴムある？髪を後ろで結びたいの。")
+                 ], ipa: "/ən ɪˈlæstɪk ˌbænd/"),
+            make("a razor", "a tool with a sharp blade used for shaving",
+                 "カミソリ・ひげそり",
+                 useCases: ["身支度をするとき", "旅行の持ち物について話すとき"],
+                 examples: [
+                    ("I forgot my razor, so I haven't shaved for three days.", "カミソリ忘れて、3日もひげ剃ってないんだ。"),
+                    ("Can you pick up some razors from the chemist?", "薬局でカミソリ買ってきてくれる？")
+                 ], ipa: "/ə ˈreɪzə/"),
+            make("kitchen scales", "a device used in the kitchen for weighing food when cooking or baking",
+                 "キッチンスケール・はかり",
+                 useCases: ["お菓子作りをするとき", "レシピの分量について話すとき"],
+                 examples: [
+                    ("I can't bake without proper kitchen scales.", "ちゃんとしたキッチンスケールがないとお菓子作れないよ。"),
+                    ("Pop the flour on the kitchen scales — we need 200 grams.", "小麦粉をスケールに乗せて。200グラム必要なの。")
+                 ], ipa: "/ˌkɪtʃɪn ˈskeɪlz/"),
+            make("a plug", "the part on the end of an electrical wire that you push into a socket; also the stopper for a sink or bath",
+                 "（電源の）プラグ・（流しや浴槽の）栓",
+                 useCases: ["家電を使うとき", "海外旅行の電源について話すとき"],
+                 examples: [
+                    ("The plug's different here — you'll need an adaptor.", "ここはプラグの形が違うから、変換アダプターが必要だよ。"),
+                    ("Pull the plug out before you clean the toaster.", "トースターを掃除する前にプラグを抜いてね。")
+                 ], ipa: "/ə ˈplʌɡ/"),
+            make("a shelf", "a flat board fixed to a wall or inside a cupboard for putting things on",
+                 "棚",
+                 useCases: ["物の置き場所を説明するとき", "部屋の模様替えをするとき"],
+                 examples: [
+                    ("The mugs are on the top shelf, above the sink.", "マグカップはシンクの上の一番上の棚にあるよ。"),
+                    ("We need another shelf for all these books.", "この本全部置くのに、棚がもう一つ必要だね。")
+                 ], ipa: "/ə ˈʃelf/"),
+            make("a heater", "a device used for warming a room",
+                 "ヒーター・暖房器具",
+                 useCases: ["寒い日について話すとき", "光熱費について話すとき"],
+                 examples: [
+                    ("It's freezing in here — shall I put the heater on?", "ここ寒すぎ。ヒーターつけようか？"),
+                    ("Don't leave the heater on all night; it costs a fortune.", "ヒーターつけっぱなしで寝ないで。電気代がすごいことになるから。")
+                 ], ipa: "/ə ˈhiːtə/"),
+        ]
+    }
+
+    private static var britishColloquial326: [Word] {
+        [
+            make("a hairdryer", "an electrical device that blows hot air to dry your hair",
+                 "ドライヤー",
+                 useCases: ["身支度について話すとき", "ホテルや家の備品を尋ねるとき"],
+                 examples: [
+                    ("Is there a hairdryer in the room, or should I bring mine?", "部屋にドライヤーある？それとも自分のを持っていったほうがいい？"),
+                    ("Sorry, I couldn't hear you — I had the hairdryer on.", "ごめん、聞こえなかった。ドライヤーかけてたんだ。")
+                 ], ipa: "/ə ˈheəˌdraɪə/"),
+            make("a light switch", "the small button or lever on the wall that turns the lights on and off",
+                 "電気のスイッチ",
+                 useCases: ["暗い部屋で電気をつけるとき", "家の中の物の場所を伝えるとき"],
+                 examples: [
+                    ("The light switch is just on the left as you go in.", "電気のスイッチは入ってすぐ左にあるよ。"),
+                    ("I can't find the light switch — it's pitch black in here.", "電気のスイッチが見つからない。ここ真っ暗だよ。")
+                 ], ipa: "/ə ˈlaɪt ˌswɪtʃ/"),
+            make("a colander", "a bowl with lots of small holes, used for draining water from pasta or washing vegetables",
+                 "水切りボウル・ザル",
+                 useCases: ["料理を手伝うとき", "パスタの湯切りをするとき"],
+                 examples: [
+                    ("Can you grab the colander? The pasta's ready.", "ザル取ってくれる？パスタがゆで上がったから。"),
+                    ("Just rinse the salad in the colander and leave it to drain.", "サラダはザルで洗って、水を切っておいて。")
+                 ], ipa: "/ə ˈkɒləndə/"),
+            make("a baking tray", "a flat metal tray that you put food on to cook it in the oven (US: baking sheet)",
+                 "天板・オーブン用トレイ",
+                 useCases: ["オーブン料理をするとき", "お菓子作りの話をするとき"],
+                 examples: [
+                    ("Pop the chips on a baking tray and stick them in for twenty minutes.", "ポテトを天板に並べて、20分オーブンに入れておいて。"),
+                    ("Line the baking tray with some foil so it doesn't get messy.", "汚れないように天板にアルミホイルを敷いてね。")
+                 ], ipa: "/ə ˈbeɪkɪŋ ˌtreɪ/"),
+            make("a flannel", "a small square of cloth used for washing your face or body (US: washcloth)",
+                 "（洗顔・体を洗う用の）小さなタオル",
+                 useCases: ["お風呂や洗面の話をするとき", "熱があるときに冷やすとき"],
+                 examples: [
+                    ("Put a cold flannel on your forehead — it'll help with the fever.", "おでこに冷たいタオルを当てて。熱に効くから。"),
+                    ("There's a clean towel and a flannel on the bed for you.", "ベッドの上にきれいなバスタオルと小さいタオル置いといたよ。")
+                 ], ipa: "/ə ˈflænəl/"),
+            make("a dustpan and brush", "a small flat container and a brush used for sweeping up dirt or broken things from the floor",
+                 "ちりとりとほうき（小型）",
+                 useCases: ["何かを割ってしまったとき", "掃除を手伝うとき"],
+                 examples: [
+                    ("Don't move — I'll get the dustpan and brush for that glass.", "動かないで。そのガラス、ちりとりとほうき持ってくるから。"),
+                    ("Where do you keep the dustpan and brush? I've spilled some rice.", "ちりとりどこにある？お米こぼしちゃった。")
+                 ], ipa: "/ə ˌdʌstpæn ən ˈbrʌʃ/"),
+            make("a coat hanger", "a shaped piece of wood, plastic or wire used for hanging clothes in a wardrobe",
+                 "ハンガー",
+                 useCases: ["服を片付けるとき", "来客の上着を預かるとき"],
+                 examples: [
+                    ("Here, let me get you a coat hanger for that jacket.", "ほら、そのジャケット用にハンガー持ってくるね。"),
+                    ("I never have enough coat hangers — half my clothes are on the chair.", "ハンガーがいつも足りなくて、服の半分は椅子の上なんだ。")
+                 ], ipa: "/ə ˈkəʊt ˌhæŋə/"),
+            make("an ironing board", "a long narrow folding table that you iron clothes on",
+                 "アイロン台",
+                 useCases: ["アイロンがけをするとき", "家事や収納の話をするとき"],
+                 examples: [
+                    ("Can you help me fold up the ironing board? It always gets stuck.", "アイロン台たたむの手伝ってくれる？いつも引っかかるんだ。"),
+                    ("The ironing board's been up in the spare room for a week.", "アイロン台、1週間も空き部屋に出しっぱなしなんだよね。")
+                 ], ipa: "/ən ˈaɪənɪŋ ˌbɔːd/"),
+            make("a pillowcase", "a cloth cover that you put over a pillow",
+                 "枕カバー",
+                 useCases: ["ベッドメイキングをするとき", "寝具の洗濯について話すとき"],
+                 examples: [
+                    ("I've put clean sheets and pillowcases on the bed for you.", "ベッドにきれいなシーツと枕カバーをつけておいたよ。"),
+                    ("Change your pillowcase more often — it's good for your skin.", "枕カバーはもっと頻繁に替えなよ。肌にいいから。")
+                 ], ipa: "/ə ˈpɪləʊˌkeɪs/"),
+            make("a windowsill", "the flat shelf at the bottom of a window, inside or outside",
+                 "窓台・窓枠の棚",
+                 useCases: ["物のありかを伝えるとき", "植物や部屋の飾りについて話すとき"],
+                 examples: [
+                    ("Your keys are on the windowsill in the kitchen.", "鍵ならキッチンの窓辺に置いてあるよ。"),
+                    ("I grow basil on the windowsill — it gets loads of sun there.", "窓辺でバジルを育ててるんだ。そこ日がよく当たるから。")
+                 ], ipa: "/ə ˈwɪndəʊˌsɪl/"),
+            make("a driveway", "a short private road from the street to a house, where you can park a car",
+                 "（家の）車寄せ・私道",
+                 useCases: ["駐車場所を伝えるとき", "家を訪ねる人に案内するとき"],
+                 examples: [
+                    ("Just park on the driveway when you get here.", "着いたら家の前の車寄せに停めちゃって。"),
+                    ("Someone's parked across our driveway again and I can't get out.", "また誰かがうちの車寄せの前に停めてて、出られないんだ。")
+                 ], ipa: "/ə ˈdraɪvweɪ/"),
+            make("Sellotape", "clear sticky tape in a roll, used for sticking paper and wrapping presents (US: Scotch tape)",
+                 "セロハンテープ",
+                 useCases: ["プレゼントを包むとき", "紙を貼るとき"],
+                 examples: [
+                    ("Have you got any Sellotape? I need to wrap this present.", "セロテープある？このプレゼント包まなきゃいけないんだ。"),
+                    ("I can never find the end of the Sellotape!", "セロテープの端っこがいつも見つからない！")
+                 ], ipa: "/ˈseləteɪp/"),
+            make("a drawing pin", "a short pin with a flat round head, used for fixing paper to a wall or noticeboard (US: thumbtack)",
+                 "画びょう",
+                 useCases: ["掲示板に紙を貼るとき", "部屋にポスターを飾るとき"],
+                 examples: [
+                    ("Stick it up on the noticeboard with a drawing pin.", "画びょうで掲示板に貼っておいて。"),
+                    ("Ouch! I just stood on a drawing pin.", "痛っ！画びょう踏んじゃった。")
+                 ], ipa: "/ə ˈdrɔːɪŋ ˌpɪn/"),
+            make("a laundry basket", "a basket where you put dirty clothes before washing them, or carry clean clothes in",
+                 "洗濯かご",
+                 useCases: ["洗濯物を片付けるとき", "家族に片付けを頼むとき"],
+                 examples: [
+                    ("Put your dirty socks in the laundry basket, not on the floor!", "汚れた靴下は床じゃなくて洗濯かごに入れて！"),
+                    ("The laundry basket's overflowing — I need to do a wash.", "洗濯かごがあふれてる。洗濯しなきゃ。")
+                 ], ipa: "/ə ˈlɔːndri ˌbɑːskɪt/"),
+            make("a porch", "a small covered area at the entrance of a house, in front of the front door",
+                 "玄関ポーチ・玄関先",
+                 useCases: ["荷物の置き場所を伝えるとき", "家の造りについて話すとき"],
+                 examples: [
+                    ("If I'm out, the courier can leave the parcel in the porch.", "留守だったら、配達の人には荷物を玄関ポーチに置いてもらっていいよ。"),
+                    ("Leave your muddy boots in the porch, would you?", "泥だらけのブーツは玄関先に置いておいてくれる？")
+                 ], ipa: "/ə ˈpɔːtʃ/"),
+        ]
+    }
+
+    private static var britishColloquial325: [Word] {
+        [
+            make("a washing line", "a rope or wire outside, usually in the garden, where you hang wet clothes to dry",
+                 "物干しロープ・洗濯ロープ",
+                 useCases: ["洗濯物を外に干すとき", "天気と洗濯について話すとき"],
+                 examples: [
+                    ("It's sunny — let's get the sheets out on the washing line.", "晴れてるし、シーツを物干しロープに干そうよ。"),
+                    ("It started pouring and all my clothes were still on the washing line.", "土砂降りになったのに、服が全部まだ外に干しっぱなしだったんだ。")
+                 ], ipa: "/ə ˈwɒʃɪŋ ˌlaɪn/"),
+            make("a clothes peg", "a small wooden or plastic clip used to hold wet clothes on a washing line (US: clothespin)",
+                 "洗濯ばさみ",
+                 useCases: ["洗濯物を干すのを手伝うとき", "風で洗濯物が飛びそうなとき"],
+                 examples: [
+                    ("Can you pass me a few more clothes pegs? It's really windy.", "洗濯ばさみもう少し取ってくれる？すごく風が強いんだ。"),
+                    ("We've run out of clothes pegs, so I just hung the towels over the line.", "洗濯ばさみが足りなくなったから、タオルはロープに掛けただけだよ。")
+                 ], ipa: "/ə ˈkləʊðz ˌpeɡ/"),
+            make("an extension lead", "a long cable with several sockets that lets you plug things in further from the wall (US: extension cord)",
+                 "延長コード・電源タップ",
+                 useCases: ["コンセントが遠い・足りないとき", "引っ越しや部屋の配置を話すとき"],
+                 examples: [
+                    ("Have you got an extension lead? The socket's miles away from the bed.", "延長コードある？コンセントがベッドからすごく遠いんだ。"),
+                    ("Don't plug the heater into the extension lead — it's not safe.", "ヒーターは延長コードにつながないで。危ないから。")
+                 ], ipa: "/ən ɪkˈstenʃən ˌliːd/"),
+            make("washing-up liquid", "liquid soap used for washing dishes by hand (US: dish soap)",
+                 "食器用洗剤",
+                 useCases: ["皿洗いのとき", "買い物リストを作るとき"],
+                 examples: [
+                    ("We're nearly out of washing-up liquid — can you add it to the list?", "食器用洗剤がもうすぐなくなるから、リストに入れておいてくれる？"),
+                    ("You've used half the bottle of washing-up liquid on two plates!", "皿2枚に洗剤半分も使ったの！")
+                 ], ipa: "/ˌwɒʃɪŋ ˈʌp ˌlɪkwɪd/"),
+            make("a chest of drawers", "a piece of bedroom furniture with several drawers for keeping clothes in",
+                 "タンス・整理ダンス",
+                 useCases: ["家具や収納について話すとき", "物のありかを伝えるとき"],
+                 examples: [
+                    ("Your socks are in the top drawer of the chest of drawers.", "靴下はタンスの一番上の引き出しにあるよ。"),
+                    ("We picked up an old chest of drawers at a car boot sale and painted it.", "フリーマーケットで古いタンスを買って、ペンキを塗ったんだ。")
+                 ], ipa: "/ə ˌtʃest əv ˈdrɔːz/"),
+            make("a bedside table", "a small table or cupboard next to a bed (US: nightstand)",
+                 "ベッドサイドテーブル・ナイトテーブル",
+                 useCases: ["物のありかを伝えるとき", "寝室の家具について話すとき"],
+                 examples: [
+                    ("I left my glasses on the bedside table.", "メガネはベッド脇のテーブルに置いてきたよ。"),
+                    ("My phone's always on the bedside table, which doesn't help me sleep.", "スマホをいつもベッド脇に置いてるから、よく眠れないんだよね。")
+                 ], ipa: "/ə ˈbedsaɪd ˌteɪbəl/"),
+            make("a cardigan", "a knitted jumper that opens at the front, usually with buttons",
+                 "カーディガン",
+                 useCases: ["寒さ対策の服装を話すとき", "出かける前に羽織るものを勧めるとき"],
+                 examples: [
+                    ("Bring a cardigan — the air con in that restaurant is freezing.", "カーディガン持っていきなよ。あのレストラン、冷房がすごく効いてるから。"),
+                    ("I just throw a cardigan on over everything in autumn.", "秋は何にでもカーディガンを羽織っちゃうんだ。")
+                 ], ipa: "/ə ˈkɑːdɪɡən/"),
+            make("a handbag", "a bag, usually a woman's, for carrying a purse, keys, phone and other personal things (US: purse)",
+                 "ハンドバッグ・（女性用の）カバン",
+                 useCases: ["持ち物を探すとき", "買い物やファッションについて話すとき"],
+                 examples: [
+                    ("Hang on, my keys are somewhere at the bottom of my handbag.", "待って、鍵がカバンの底のどこかにあるの。"),
+                    ("Keep an eye on your handbag — there are pickpockets around here.", "カバンに気をつけてね。このあたりスリがいるから。")
+                 ], ipa: "/ə ˈhændbæɡ/"),
+            make("a swimming costume", "a piece of clothing you wear for swimming (also: swimsuit; casual: cozzie)",
+                 "水着",
+                 useCases: ["プールや海に行く準備をするとき", "旅行の荷造りのとき"],
+                 examples: [
+                    ("Don't forget your swimming costume — the hotel's got a pool.", "水着忘れないでね。ホテルにプールがあるから。"),
+                    ("I need a new swimming costume before we go on holiday.", "休暇に行く前に新しい水着が要るなあ。")
+                 ], ipa: "/ə ˈswɪmɪŋ ˌkɒstjuːm/"),
+            make("a beer garden", "an outdoor area at a pub where people can sit and drink, especially in summer",
+                 "（パブの）屋外席・ビアガーデン",
+                 useCases: ["天気のいい日に飲みに誘うとき", "パブでの席を選ぶとき"],
+                 examples: [
+                    ("It's gorgeous out — fancy a drink in the beer garden after work?", "外すごくいい天気だね。仕事のあとパブの外の席で一杯どう？"),
+                    ("Every beer garden in town was packed on Saturday.", "土曜日は町中のパブの外席がどこも満席だったよ。")
+                 ], ipa: "/ə ˈbɪə ˌɡɑːdən/"),
+            make("a rucksack", "a bag you carry on your back, used for walking, travelling or school (also: backpack)",
+                 "リュックサック",
+                 useCases: ["旅行やハイキングの荷物を話すとき", "持ち物の置き場所を伝えるとき"],
+                 examples: [
+                    ("I'm only going for three days, so I'll just take a rucksack.", "3日間だけだから、リュック一つで行くよ。"),
+                    ("There's a water bottle in the side pocket of my rucksack.", "リュックのサイドポケットに水筒が入ってるよ。")
+                 ], ipa: "/ə ˈrʌksæk/"),
+            make("a saucepan", "a deep round metal pot with a long handle, used for cooking on the hob",
+                 "片手鍋・ソースパン",
+                 useCases: ["料理の手順を説明するとき", "台所の道具を借りるとき"],
+                 examples: [
+                    ("Bring a saucepan of water to the boil, then add the pasta.", "鍋にお湯を沸かして、それからパスタを入れて。"),
+                    ("Who left the saucepan soaking in the sink for three days?", "鍋を3日もシンクに浸けっぱなしにしたの誰？")
+                 ], ipa: "/ə ˈsɔːspən/"),
+            make("a scarf", "a long piece of cloth you wear around your neck to keep warm",
+                 "マフラー・スカーフ",
+                 useCases: ["寒い日の服装を話すとき", "忘れ物を伝えるとき"],
+                 examples: [
+                    ("Wrap up warm and take a scarf — it's bitter out there.", "暖かくしてマフラー持っていきなよ。外すごく寒いから。"),
+                    ("I think I left my scarf at the pub last night.", "昨日の夜、パブにマフラー忘れてきたかも。")
+                 ], ipa: "/ə ˈskɑːf/"),
+            make("sunburn", "red, painful skin caused by staying in the sun too long",
+                 "日焼け（ひりひりする炎症）",
+                 useCases: ["休暇や海での失敗を話すとき", "日焼け止めを勧めるとき"],
+                 examples: [
+                    ("I fell asleep on the beach and got terrible sunburn on my back.", "ビーチで寝ちゃって、背中がひどく日焼けしたんだ。"),
+                    ("Put some suncream on, or you'll end up with sunburn.", "日焼け止め塗りなよ。じゃないと真っ赤に焼けちゃうよ。")
+                 ], ipa: "/ˈsʌnbɜːn/"),
+            make("a keyring", "a metal ring for keeping keys together, often with a small decoration attached (US: key chain)",
+                 "キーホルダー・キーリング",
+                 useCases: ["鍵やお土産について話すとき", "鍵を見分けるとき"],
+                 examples: [
+                    ("It's the key with the little Eiffel Tower keyring.", "小さいエッフェル塔のキーホルダーがついてる鍵だよ。"),
+                    ("I brought you back a keyring from Lisbon — sorry, it's a bit naff.", "リスボンのお土産にキーホルダー買ってきたよ。ちょっとダサいけどごめんね。")
+                 ], ipa: "/ə ˈkiːrɪŋ/"),
+        ]
+    }
+
+    private static var britishColloquial324: [Word] {
+        [
+            make("a sofa bed", "a sofa that can be pulled out and turned into a bed, often used for guests",
+                 "ソファーベッド",
+                 useCases: ["泊まりに来る友人の寝る場所を話すとき", "家具選びや狭い部屋の工夫を話すとき"],
+                 examples: [
+                    ("You're welcome to stay — we've got a sofa bed in the living room.", "泊まっていきなよ。リビングにソファーベッドがあるから。"),
+                    ("The sofa bed isn't the comfiest, but it'll do for one night.", "ソファーベッドはあまり寝心地良くないけど、一晩なら大丈夫だよ。")
+                 ], ipa: "/ə ˈsəʊfə ˌbed/"),
+            make("bin day", "the day of the week when the rubbish bins are collected from outside your house",
+                 "ゴミの収集日",
+                 useCases: ["家事やゴミ出しを思い出させるとき", "近所の生活リズムについて話すとき"],
+                 examples: [
+                    ("Don't forget it's bin day tomorrow — can you put the bins out?", "明日ゴミの日だって忘れないでね。ゴミ箱出しておいてくれる？"),
+                    ("I always miss bin day when there's a bank holiday.", "祝日があると、いつもゴミの日を逃しちゃうんだよね。")
+                 ], ipa: "/ˈbɪn ˌdeɪ/"),
+            make("a fire alarm", "a device that makes a loud noise to warn people of a fire; also a fire drill or the noise itself",
+                 "火災報知器・火災警報",
+                 useCases: ["料理で煙を出したとき", "職場やホテルでの避難訓練について話すとき"],
+                 examples: [
+                    ("I burnt the toast and set off the fire alarm again.", "またトースト焦がして火災報知器を鳴らしちゃった。"),
+                    ("The fire alarm went off at 3 a.m. and we all had to go outside.", "夜中の3時に火災警報が鳴って、みんな外に出なきゃいけなかったんだ。")
+                 ], ipa: "/ə ˈfaɪər əˌlɑːm/"),
+            make("a teabag", "a small paper bag containing tea leaves that you put in hot water",
+                 "ティーバッグ",
+                 useCases: ["お茶を入れるとき", "紅茶の好みや淹れ方を話すとき"],
+                 examples: [
+                    ("Just leave the teabag in a bit longer — I like it strong.", "ティーバッグもう少し入れたままにしておいて。濃いのが好きなんだ。"),
+                    ("We've run out of teabags. Can you grab some on your way home?", "ティーバッグ切れちゃった。帰りに買ってきてくれる？")
+                 ], ipa: "/ə ˈtiːbæɡ/"),
+            make("a bank card", "a plastic card from your bank that you use to pay for things or take out cash",
+                 "キャッシュカード・デビットカード",
+                 useCases: ["支払い方法を聞かれたとき", "カードをなくしたときや止めるとき"],
+                 examples: [
+                    ("I think I've left my bank card in the cashpoint!", "ATMにキャッシュカード置き忘れたかも！"),
+                    ("Can I pay with my bank card, or is it cash only?", "カードで払えますか？それとも現金のみですか？")
+                 ], ipa: "/ə ˈbæŋk ˌkɑːd/"),
+            make("a toaster", "an electric machine for making bread brown and crispy",
+                 "トースター",
+                 useCases: ["朝食の準備について話すとき", "家電や引っ越しの準備について話すとき"],
+                 examples: [
+                    ("Pop a couple of slices in the toaster, would you?", "トースターにパン2枚入れてくれる？"),
+                    ("Our new toaster burns everything, even on the lowest setting.", "新しいトースター、一番弱くしても全部焦げるんだよね。")
+                 ], ipa: "/ə ˈtəʊstə/"),
+            make("a bunk bed", "two single beds built one on top of the other, often used by children or in hostels",
+                 "二段ベッド",
+                 useCases: ["子ども部屋や兄弟の話をするとき", "ホステルや合宿の部屋について話すとき"],
+                 examples: [
+                    ("My brother and I fought over the top bunk bed for years.", "兄弟と何年も二段ベッドの上を取り合ってたよ。"),
+                    ("The hostel room had six bunk beds and one tiny window.", "ホステルの部屋は二段ベッドが6つに小さな窓が1つだけだった。")
+                 ], ipa: "/ə ˈbʌŋk ˌbed/"),
+            make("a fizzy drink", "a sweet drink with bubbles in it, such as cola or lemonade (US: soda)",
+                 "炭酸飲料・ジュース",
+                 useCases: ["飲み物を注文するとき", "健康や子どもの食生活について話すとき"],
+                 examples: [
+                    ("I'm trying to cut down on fizzy drinks.", "炭酸飲料を減らそうとしてるんだ。"),
+                    ("Do you want a fizzy drink or just some water?", "炭酸のジュースにする？それとも水でいい？")
+                 ], ipa: "/ə ˈfɪzi ˌdrɪŋk/"),
+            make("a sticky note", "a small piece of coloured paper with glue on the back that you can stick on things to remind you",
+                 "付箋",
+                 useCases: ["職場でメモを残すとき", "忘れっぽさを冗談にするとき"],
+                 examples: [
+                    ("I left you a sticky note on your screen about the meeting.", "会議のこと、画面に付箋貼っておいたよ。"),
+                    ("My desk is covered in sticky notes I never read.", "机が読まない付箋だらけなんだ。")
+                 ], ipa: "/ə ˈstɪki ˌnəʊt/"),
+            make("a coffee machine", "a machine that makes coffee, at home or in an office",
+                 "コーヒーメーカー・コーヒーマシン",
+                 useCases: ["職場の休憩や雑談のとき", "家電の買い物について話すとき"],
+                 examples: [
+                    ("The coffee machine's broken again — it's going to be a long day.", "またコーヒーマシン壊れてる。長い一日になりそう。"),
+                    ("We got a proper coffee machine, so I don't go to cafés any more.", "ちゃんとしたコーヒーマシンを買ったから、もうカフェに行かなくなったよ。")
+                 ], ipa: "/ə ˈkɒfi məˌʃiːn/"),
+            make("a shed", "a small wooden building in a garden used for storing tools, bikes and other things",
+                 "物置・（庭の）小屋",
+                 useCases: ["庭や家の収納について話すとき", "物のありかを伝えるとき"],
+                 examples: [
+                    ("The bikes are in the shed — the key's on the hook by the door.", "自転車は物置にあるよ。鍵はドアの横のフックにかかってる。"),
+                    ("My dad spends every Sunday pottering about in his shed.", "父は毎週日曜、物置小屋でのんびり何かいじってるんだ。")
+                 ], ipa: "/ə ˈʃed/"),
+            make("a doormat", "a mat by the door for wiping your feet; also a person who lets others treat them badly",
+                 "玄関マット・（比喩）言いなりになる人",
+                 useCases: ["玄関で靴の汚れを落としてもらうとき", "人に利用されている人について話すとき"],
+                 examples: [
+                    ("The spare key's under the doormat.", "スペアキーは玄関マットの下にあるよ。"),
+                    ("Stop letting him treat you like a doormat.", "あの人に言いなりにされるのはもうやめなよ。")
+                 ], ipa: "/ə ˈdɔːmæt/"),
+            make("the hairdresser's", "the shop where you go to have your hair cut or styled",
+                 "美容院・ヘアサロン",
+                 useCases: ["髪を切る予定を話すとき", "髪型の変化について話すとき"],
+                 examples: [
+                    ("I've got an appointment at the hairdresser's on Friday.", "金曜に美容院の予約があるんだ。"),
+                    ("Have you been to the hairdresser's? It looks lovely.", "美容院行った？すごく素敵だね。")
+                 ], ipa: "/ðə ˈheədresəz/"),
+            make("a tracksuit", "a loose, comfortable top and trousers worn for sport or relaxing at home",
+                 "ジャージ（上下）・スウェットの上下",
+                 useCases: ["部屋着や休日の格好について話すとき", "運動するときの服装を話すとき"],
+                 examples: [
+                    ("I spent the whole weekend in my tracksuit watching films.", "週末ずっとジャージで映画見てたよ。"),
+                    ("You can't go to the restaurant in a tracksuit!", "ジャージでレストランは行けないよ！")
+                 ], ipa: "/ə ˈtræksuːt/"),
+            make("a balcony", "a small area outside an upstairs window or flat where you can sit or stand",
+                 "バルコニー・ベランダ",
+                 useCases: ["部屋探しや住まいについて話すとき", "外でくつろぐ予定を話すとき"],
+                 examples: [
+                    ("The flat's small, but it's got a lovely balcony with a view.", "部屋は狭いけど、眺めのいい素敵なバルコニーがあるんだ。"),
+                    ("Let's have our coffee out on the balcony — it's a gorgeous day.", "バルコニーでコーヒー飲もうよ。すごくいい天気だし。")
+                 ], ipa: "/ə ˈbælkəni/"),
+        ]
+    }
+
+    private static var britishColloquial322: [Word] {
+        [
+            make("a group photo", "a photo of several people together, usually taken to remember an event",
+                 "集合写真・みんなで撮る写真",
+                 useCases: ["パーティーや旅行でみんなで写真を撮るとき", "撮った写真を共有するとき"],
+                 examples: [
+                    ("Before anyone leaves, let's get a group photo!", "誰か帰る前に、みんなで写真撮ろう！"),
+                    ("I always end up with my eyes shut in group photos.", "集合写真だと、いつも目をつぶっちゃうんだよね。")
+                 ], ipa: "/ə ˌɡruːp ˈfəʊtəʊ/"),
+            make("team building", "activities that help colleagues get to know each other and work together better",
+                 "チームビルディング・社内の親睦活動",
+                 useCases: ["会社のイベントについて話すとき", "同僚との親睦行事を説明するとき"],
+                 examples: [
+                    ("We've got a team-building day on Friday — escape room, apparently.", "金曜はチームビルディングの日なんだ。脱出ゲームらしいよ。"),
+                    ("Honestly, the pub does more for team building than any workshop.", "正直、どんな研修よりパブの方がチームの結束に効くよ。")
+                 ], ipa: "/ˈtiːm ˌbɪldɪŋ/"),
+            make("Secret Santa", "a gift exchange where each person is secretly given one person to buy a small present for",
+                 "シークレットサンタ・匿名のプレゼント交換",
+                 useCases: ["職場や友達同士のクリスマス企画を話すとき", "プレゼント選びに悩んでいるとき"],
+                 examples: [
+                    ("Who did you get for Secret Santa?", "シークレットサンタ、誰に当たった？"),
+                    ("We're doing Secret Santa at work — the limit's ten euros.", "職場でプレゼント交換やるんだ。上限は10ユーロ。")
+                 ], ipa: "/ˌsiːkrət ˈsæntə/"),
+            make("an advent calendar", "a calendar with little doors, one opened each day in December until Christmas, often with chocolate inside",
+                 "アドベントカレンダー",
+                 useCases: ["12月のクリスマス準備について話すとき", "子どもや自分へのちょっとした楽しみを話すとき"],
+                 examples: [
+                    ("The kids fight every morning over who opens the advent calendar.", "毎朝、子どもたちが誰がアドベントカレンダーを開けるかで揉めるんだ。"),
+                    ("I've already eaten half my advent calendar — it's only the 5th!", "もうアドベントカレンダー半分食べちゃった。まだ5日なのに！")
+                 ], ipa: "/ən ˈædvent ˌkæləndə/"),
+            make("an ice lolly", "frozen flavoured water or juice on a stick (US: popsicle)",
+                 "アイスキャンディー",
+                 useCases: ["暑い日に冷たいものが欲しいとき", "子どもにおやつをあげるとき"],
+                 examples: [
+                    ("It's boiling — fancy an ice lolly?", "めちゃくちゃ暑いね。アイスキャンディー食べない？"),
+                    ("He dropped his ice lolly and burst into tears.", "あの子、アイスキャンディー落として泣き出しちゃった。")
+                 ], ipa: "/ən ˌaɪs ˈlɒli/"),
+            make("a sea view", "a view of the sea from a room, flat or house",
+                 "海の見える眺め・オーシャンビュー",
+                 useCases: ["ホテルを予約するとき", "旅行先の部屋について話すとき"],
+                 examples: [
+                    ("We paid a bit extra for a room with a sea view.", "ちょっと追加で払って、海の見える部屋にしたんだ。"),
+                    ("Imagine waking up to a sea view every morning!", "毎朝起きたら海が見えるなんて想像してみてよ！")
+                 ], ipa: "/ə ˌsiː ˈvjuː/"),
+            make("a driving test", "the official exam you must pass to get a driving licence",
+                 "運転免許の実技試験",
+                 useCases: ["免許取得について話すとき", "試験の結果を報告するとき"],
+                 examples: [
+                    ("I passed my driving test first time!", "運転免許の試験、一発で受かったよ！"),
+                    ("She's got her driving test next week and she's a nervous wreck.", "彼女、来週運転試験で、すっかりガチガチなんだ。")
+                 ], ipa: "/ə ˈdraɪvɪŋ ˌtest/"),
+            make("a speed camera", "a camera by the road that photographs cars going faster than the limit",
+                 "スピード違反取締カメラ・オービス",
+                 useCases: ["運転中に注意を促すとき", "スピード違反で捕まった話をするとき"],
+                 examples: [
+                    ("Slow down — there's a speed camera just after the bridge.", "スピード落として。橋のすぐ先に取締カメラがあるよ。"),
+                    ("I got flashed by a speed camera on the way to work.", "通勤途中にスピードカメラに撮られちゃった。")
+                 ], ipa: "/ə ˈspiːd ˌkæmərə/"),
+            make("a babysitter", "a person who looks after children while their parents are out",
+                 "ベビーシッター・子守り",
+                 useCases: ["夜の外出の予定を立てるとき", "子どもを預ける話をするとき"],
+                 examples: [
+                    ("We'd love to come, but we need to find a babysitter first.", "ぜひ行きたいんだけど、まずベビーシッターを探さないと。"),
+                    ("My mum's our go-to babysitter.", "うちは困ったら母が子守りしてくれるんだ。")
+                 ], ipa: "/ə ˈbeɪbiˌsɪtə/"),
+            make("food poisoning", "an illness caused by eating food that has gone bad or contains bacteria",
+                 "食中毒・食あたり",
+                 useCases: ["体調不良の理由を説明するとき", "怪しい食べ物を避けるよう注意するとき"],
+                 examples: [
+                    ("I think I've got food poisoning from that dodgy kebab.", "あの怪しいケバブで食あたりしたかも。"),
+                    ("I wouldn't eat that — you'll end up with food poisoning.", "それはやめといた方がいいよ。食中毒になるって。")
+                 ], ipa: "/ˈfuːd ˌpɔɪzənɪŋ/"),
+            make("a childhood friend", "someone you have been friends with since you were a child",
+                 "幼なじみ",
+                 useCases: ["昔からの友達を紹介するとき", "地元の話をするとき"],
+                 examples: [
+                    ("This is Tom — we're childhood friends from Leeds.", "こちらトム。リーズ出身の幼なじみなんだ。"),
+                    ("I bumped into a childhood friend at the airport.", "空港で幼なじみにばったり会ったよ。")
+                 ], ipa: "/ə ˈtʃaɪldhʊd ˌfrend/"),
+            make("an old flame", "a person you used to have a romantic relationship with",
+                 "昔の恋人・元カレ／元カノ",
+                 useCases: ["昔付き合っていた人の話をするとき", "偶然元恋人に会った話をするとき"],
+                 examples: [
+                    ("Guess who I saw at the wedding? An old flame from uni.", "結婚式で誰に会ったと思う？大学時代の元カノだよ。"),
+                    ("He's back in touch with an old flame.", "彼、昔の恋人とまた連絡取り合ってるんだって。")
+                 ], ipa: "/ən ˌəʊld ˈfleɪm/"),
+            make("a surprise party", "a party organised secretly so that the guest of honour doesn't know about it",
+                 "サプライズパーティー",
+                 useCases: ["友達の誕生日を計画するとき", "秘密を守るよう頼むとき"],
+                 examples: [
+                    ("We're throwing her a surprise party — don't say a word!", "彼女のためにサプライズパーティーやるんだ。絶対言わないでね！"),
+                    ("I nearly gave the surprise party away by accident.", "うっかりサプライズパーティーをバラしそうになったよ。")
+                 ], ipa: "/ə səˈpraɪz ˌpɑːti/"),
+            make("toothache", "a pain in one of your teeth",
+                 "歯痛・歯の痛み",
+                 useCases: ["体調や痛みを説明するとき", "歯医者に行く理由を話すとき"],
+                 examples: [
+                    ("I've had toothache all weekend — I need to see a dentist.", "週末ずっと歯が痛くて。歯医者に行かないと。"),
+                    ("Ice cream gives me toothache these days.", "最近アイスを食べると歯が痛むんだよね。")
+                 ], ipa: "/ˈtuːθeɪk/"),
+            make("a school trip", "a visit to a place such as a museum or farm that pupils make with their teachers",
+                 "遠足・校外学習・修学旅行",
+                 useCases: ["子どもの学校行事について話すとき", "子どもの頃の思い出を話すとき"],
+                 examples: [
+                    ("The kids are off on a school trip to the zoo tomorrow.", "子どもたち、明日は遠足で動物園に行くんだ。"),
+                    ("I remember that castle from a school trip years ago.", "あのお城、昔遠足で行ったのを覚えてるよ。")
+                 ], ipa: "/ə ˈskuːl ˌtrɪp/"),
+        ]
+    }
+
+    private static var britishColloquial321: [Word] {
+        [
+            make("a love-hate relationship", "feelings towards someone or something that are both positive and negative at the same time",
+                 "好きでもあり嫌いでもある関係・愛憎関係",
+                 useCases: ["好きだけど苛立つものについて話すとき", "複雑な気持ちを冗談っぽく表すとき"],
+                 examples: [
+                    ("I've got a love-hate relationship with running — I hate it during, love it after.", "ランニングとは愛憎関係なんだ。走ってる間は嫌いだけど、終わると大好き。"),
+                    ("She has a love-hate relationship with her phone.", "彼女はスマホと好きでも嫌いでもある関係なんだよね。")
+                 ], ipa: "/ə ˌlʌv ˈheɪt rɪˈleɪʃnʃɪp/"),
+            make("home comforts", "the things that make life at home pleasant, like your own bed, good food and hot showers",
+                 "家の快適さ・家ならではのくつろぎ",
+                 useCases: ["旅行や出張から帰ってきたとき", "家が恋しいと話すとき"],
+                 examples: [
+                    ("After two weeks of camping, I really missed my home comforts.", "2週間キャンプしたら、家の快適さが本当に恋しくなったよ。"),
+                    ("The hotel had all the home comforts — even a proper kettle.", "そのホテル、家みたいに何でも揃ってたよ。ちゃんとした電気ケトルまで。")
+                 ], ipa: "/ˌhəʊm ˈkʌmfəts/"),
+            make("headspace", "the mental time and calm you need to think clearly or deal with something",
+                 "心の余裕・考える余裕",
+                 useCases: ["忙しくて考える余裕がないとき", "少し一人の時間が欲しいと伝えるとき"],
+                 examples: [
+                    ("I don't have the headspace to deal with that right now.", "今はそれに向き合う余裕がないんだ。"),
+                    ("A long walk usually gives me a bit of headspace.", "長めに散歩すると、たいてい頭がすっきりするんだ。")
+                 ], ipa: "/ˈhedspeɪs/"),
+            make("comfort eating", "eating, often unhealthy food, because you feel sad, stressed or bored",
+                 "ストレス食い・やけ食い",
+                 useCases: ["ストレスで食べ過ぎたことを話すとき", "落ち込んでいる友達を気遣うとき"],
+                 examples: [
+                    ("Exam season always leads to a lot of comfort eating.", "試験期間はいつもストレス食いが増えちゃうんだよね。"),
+                    ("I've been comfort eating all week — pass me the crisps.", "今週ずっとやけ食いしてるの。ポテチ取って。")
+                 ], ipa: "/ˈkʌmfət ˌiːtɪŋ/"),
+            make("a games night", "an evening when friends get together at home to play board games or card games",
+                 "ゲームナイト・ボードゲーム会",
+                 useCases: ["友達を家に誘うとき", "週末の予定を話すとき"],
+                 examples: [
+                    ("We're having a games night on Friday — fancy coming?", "金曜にゲームナイトやるんだけど、来ない？"),
+                    ("Our games nights always get way too competitive.", "うちのゲーム会はいつも本気になりすぎるんだよ。")
+                 ], ipa: "/ə ˈɡeɪmz ˌnaɪt/"),
+            make("a New Year's resolution", "a promise you make to yourself at the start of the year to do something better",
+                 "新年の抱負・新年の目標",
+                 useCases: ["年末年始に目標を話すとき", "目標が続かなかったことを笑い話にするとき"],
+                 examples: [
+                    ("My New Year's resolution is to cook more and order less takeaway.", "今年の抱負は、もっと料理して出前を減らすことなんだ。"),
+                    ("So how long did your New Year's resolution last?", "で、新年の目標どれくらい続いたの？")
+                 ], ipa: "/ə ˌnjuː ˈjɪəz ˌrezəˈluːʃn/"),
+            make("a package holiday", "a holiday where the flights, hotel and sometimes meals are all booked together for one price",
+                 "パック旅行・パッケージツアー",
+                 useCases: ["休暇の予定を話すとき", "旅行の予約方法を比べるとき"],
+                 examples: [
+                    ("We just booked a package holiday to Crete — everything's included.", "クレタ島へのパック旅行を予約したよ。全部込みなんだ。"),
+                    ("Package holidays are easier when you've got kids.", "子どもがいるとパック旅行の方が楽だよね。")
+                 ], ipa: "/ə ˈpækɪdʒ ˌhɒlədeɪ/"),
+            make("a special offer", "a product sold at a lower price than usual for a short time",
+                 "特売・特別価格",
+                 useCases: ["買い物でお得な商品を見つけたとき", "安く買えた理由を話すとき"],
+                 examples: [
+                    ("The coffee was on special offer, so I bought three bags.", "コーヒーが特売だったから3袋買っちゃった。"),
+                    ("Is this part of the special offer, or is it full price?", "これって特売の対象？それとも定価？")
+                 ], ipa: "/ə ˌspeʃl ˈɒfə/"),
+            make("a best-before date", "the date printed on food after which it may not be at its best quality",
+                 "賞味期限",
+                 useCases: ["食べ物が古くないか確認するとき", "食品ロスについて話すとき"],
+                 examples: [
+                    ("This yoghurt is two days past its best-before date — still fine, though.", "このヨーグルト賞味期限2日過ぎてるけど、まだ大丈夫だよ。"),
+                    ("Always check the best-before date before you buy it.", "買う前に必ず賞味期限を確認してね。")
+                 ], ipa: "/ə ˌbest bɪˈfɔː ˌdeɪt/"),
+            make("a power bank", "a small portable battery you use to charge your phone when you're out",
+                 "モバイルバッテリー",
+                 useCases: ["スマホの充電が切れそうなとき", "旅行の持ち物を確認するとき"],
+                 examples: [
+                    ("My phone's on 5% — has anyone got a power bank?", "スマホ残り5%なんだけど、誰かモバイルバッテリー持ってない？"),
+                    ("Don't forget to pack the power bank for the flight.", "フライト用にモバイルバッテリー入れるの忘れないでね。")
+                 ], ipa: "/ə ˈpaʊə ˌbæŋk/"),
+            make("a flask", "a container that keeps drinks hot or cold for hours",
+                 "水筒・魔法瓶",
+                 useCases: ["ハイキングや外出の準備をするとき", "温かい飲み物を持ち歩くとき"],
+                 examples: [
+                    ("I've brought a flask of tea for the walk.", "散歩用に紅茶を水筒に入れてきたよ。"),
+                    ("Can you fill my flask with hot water, please?", "水筒にお湯を入れてもらえますか？")
+                 ], ipa: "/ə ˈflɑːsk/"),
+            make("a cancellation", "when something that was planned, like a flight, booking or event, is called off",
+                 "キャンセル・中止",
+                 useCases: ["予約が取れるか確認するとき", "予定が中止になったことを伝えるとき"],
+                 examples: [
+                    ("The restaurant's fully booked, but they'll call us if there's a cancellation.", "レストランは満席だけど、キャンセルが出たら電話くれるって。"),
+                    ("There have been loads of cancellations because of the storm.", "嵐のせいで欠航がたくさん出てるんだ。")
+                 ], ipa: "/ə ˌkænsəˈleɪʃn/"),
+            make("sunny spells", "short periods of sunshine between clouds, often used in weather forecasts",
+                 "時々晴れ・晴れ間",
+                 useCases: ["天気予報について話すとき", "週末の天気を確認するとき"],
+                 examples: [
+                    ("The forecast says cloudy with sunny spells this afternoon.", "予報だと午後は曇り時々晴れだって。"),
+                    ("We had a few sunny spells, so we managed a picnic.", "ちょっと晴れ間があったから、ピクニックできたよ。")
+                 ], ipa: "/ˌsʌni ˈspelz/"),
+            make("an office party", "a party for the people who work together, especially at Christmas",
+                 "会社のパーティー・職場の忘年会",
+                 useCases: ["職場のイベントについて話すとき", "年末の予定を話すとき"],
+                 examples: [
+                    ("Are you going to the office party on Friday?", "金曜の会社のパーティー行く？"),
+                    ("He had a bit too much to drink at the office party.", "彼、会社のパーティーでちょっと飲みすぎちゃってさ。")
+                 ], ipa: "/ən ˈɒfɪs ˌpɑːti/"),
+            make("a shop assistant", "a person whose job is to serve customers in a shop",
+                 "店員・販売員",
+                 useCases: ["店で助けを求めるとき", "アルバイトや仕事について話すとき"],
+                 examples: [
+                    ("Ask the shop assistant if they've got it in a bigger size.", "店員さんに大きいサイズあるか聞いてみなよ。"),
+                    ("I worked as a shop assistant all through uni.", "大学時代はずっと店員のバイトしてたんだ。")
+                 ], ipa: "/ə ˈʃɒp əˌsɪstənt/"),
+        ]
+    }
+
+    private static var britishColloquial319: [Word] {
+        [
+            make("a dream job", "the job you would most love to have",
+                 "夢の仕事・理想の仕事",
+                 useCases: ["将来やりたい仕事について話すとき", "新しい仕事が最高だと伝えるとき"],
+                 examples: [
+                    ("Working with animals has always been my dream job.", "動物と働くのがずっと夢の仕事なんだ。"),
+                    ("She's landed her dream job in Barcelona.", "彼女、バルセロナで夢だった仕事に就いたんだよ。")
+                 ], ipa: "/ə ˌdriːm ˈdʒɒb/"),
+            make("a makeover", "a complete change in how someone or something looks, usually to improve it",
+                 "イメチェン・模様替え・改装",
+                 useCases: ["髪型や服装を大きく変えたとき", "部屋やお店を改装したとき"],
+                 examples: [
+                    ("Our kitchen is badly in need of a makeover.", "うちのキッチン、そろそろ本気で改装が必要だね。"),
+                    ("Have you had a makeover? You look fantastic!", "イメチェンした？すごく素敵だよ！")
+                 ], ipa: "/ə ˈmeɪkˌəʊvə/"),
+            make("a flashback", "a sudden, vivid memory of something from the past; a scene showing earlier events in a film or book",
+                 "フラッシュバック・ふと蘇る記憶・回想シーン",
+                 useCases: ["昔のことを急に思い出したとき", "映画やドラマの回想シーンについて話すとき"],
+                 examples: [
+                    ("Hearing that song gave me a flashback to my uni days.", "その曲を聞いたら大学時代を一気に思い出したよ。"),
+                    ("The film is told mostly in flashbacks.", "その映画はほとんど回想シーンで語られるんだ。")
+                 ], ipa: "/ə ˈflæʃbæk/"),
+            make("a plot twist", "a sudden, unexpected change in the story of a film, book or real-life situation",
+                 "どんでん返し・予想外の展開",
+                 useCases: ["映画やドラマの感想を話すとき", "現実で予想外の出来事が起きたとき（冗談で）"],
+                 examples: [
+                    ("I did not see that plot twist coming at all!", "あのどんでん返しは全然予想してなかった！"),
+                    ("Plot twist: the meeting's been cancelled after all.", "まさかの展開：結局会議は中止だって。")
+                 ], ipa: "/ə ˈplɒt ˌtwɪst/"),
+            make("a tearjerker", "a sad film, book or song that makes people cry",
+                 "泣ける映画・お涙ちょうだいもの",
+                 useCases: ["感動的な映画を勧めるとき", "映画を見て泣いたことを話すとき"],
+                 examples: [
+                    ("Bring tissues — it's a real tearjerker.", "ティッシュ持っていきなよ、本当に泣ける映画だから。"),
+                    ("I'm not in the mood for a tearjerker tonight.", "今夜は泣ける映画を見る気分じゃないな。")
+                 ], ipa: "/ə ˈtɪəˌdʒɜːkə/"),
+            make("a school night", "an evening before a day of school or work, when you shouldn't stay out late (often said jokingly by adults)",
+                 "（翌日が平日の）夜・明日も仕事がある夜",
+                 useCases: ["平日の夜に飲みに誘われて断るとき", "夜更かしを控える理由を言うとき"],
+                 examples: [
+                    ("Just one drink — it's a school night!", "一杯だけね、明日仕事だから！"),
+                    ("We stayed out till two on a school night. Never again.", "平日の夜に2時まで遊んじゃった。もう二度としない。")
+                 ], ipa: "/ə ˈskuːl ˌnaɪt/"),
+            make("a jack of all trades", "someone who can do many different kinds of work reasonably well",
+                 "何でも屋・器用な人",
+                 useCases: ["何でもこなせる人を褒めるとき", "自分のスキルについて謙遜して話すとき"],
+                 examples: [
+                    ("My dad's a real jack of all trades — he can fix anything.", "うちの父は本当に何でも屋で、何でも直せるんだ。"),
+                    ("In a small company you have to be a jack of all trades.", "小さい会社だと何でもこなさないといけないよ。")
+                 ], ipa: "/ə ˌdʒæk əv ɔːl ˈtreɪdz/"),
+            make("a keepsake", "a small object you keep to remind you of a person, place or event",
+                 "記念品・形見",
+                 useCases: ["思い出の品について話すとき", "旅行や結婚式のお土産・記念品を渡すとき"],
+                 examples: [
+                    ("I kept the ticket as a keepsake from our first date.", "初デートの記念にそのチケットを取ってあるんだ。"),
+                    ("This ring is a keepsake from my gran.", "この指輪はおばあちゃんの形見なんだ。")
+                 ], ipa: "/ə ˈkiːpseɪk/"),
+            make("a dry spell", "a period when something you want or need, such as work, rain or success, doesn't happen",
+                 "（仕事・運などの）低迷期・不調期・日照り続き",
+                 useCases: ["仕事や依頼が少ない時期について話すとき", "スポーツや恋愛でうまくいかない時期を話すとき"],
+                 examples: [
+                    ("Work's been a bit of a dry spell since the summer.", "夏からちょっと仕事が少ない時期が続いてるんだ。"),
+                    ("The team finally ended their dry spell with a big win.", "チームはついに大勝して不調期を抜け出した。")
+                 ], ipa: "/ə ˌdraɪ ˈspel/"),
+            make("a lifeline", "something or someone that gives you help or support when you badly need it",
+                 "命綱・頼みの綱・心の支え",
+                 useCases: ["困った時に助けてくれた人や物について話すとき", "大事な支えに感謝するとき"],
+                 examples: [
+                    ("My phone was a lifeline when I first moved abroad.", "海外に引っ越したばかりの頃、スマホが命綱だったよ。"),
+                    ("That loan was a real lifeline for the business.", "あの融資は会社にとって本当に頼みの綱だった。")
+                 ], ipa: "/ə ˈlaɪflaɪn/"),
+            make("the nuts and bolts", "the basic practical details of how something works or is done",
+                 "基本的な仕組み・実務的な細部",
+                 useCases: ["物事の具体的なやり方を説明するとき", "大まかな話から実務の話に移るとき"],
+                 examples: [
+                    ("Let's get down to the nuts and bolts of the plan.", "計画の具体的なところを詰めよう。"),
+                    ("She knows the nuts and bolts of running a café.", "彼女はカフェ経営の実務を熟知してるよ。")
+                 ], ipa: "/ðə ˌnʌts ən ˈbəʊlts/"),
+            make("an earworm", "a catchy song or tune that keeps playing in your head",
+                 "頭から離れない曲",
+                 useCases: ["曲が頭の中でずっと流れているとき", "キャッチーな曲について話すとき"],
+                 examples: [
+                    ("That jingle is such an earworm — I can't stop humming it.", "あのCMソング、頭から離れなくて、ずっと口ずさんじゃう。"),
+                    ("Thanks a lot, now I've got an earworm for the rest of the day.", "ありがとね、おかげで一日中あの曲が頭の中で流れてるよ。")
+                 ], ipa: "/ən ˈɪəwɜːm/"),
+            make("a duvet day", "a day off work taken because you feel tired or just want to stay at home and relax",
+                 "（疲れて）家でゴロゴロする日・ズル休み",
+                 useCases: ["家でのんびり過ごしたい日のことを話すとき", "疲れて休みを取りたいとき"],
+                 examples: [
+                    ("I'm having a duvet day — films, snacks and no plans.", "今日は家でゴロゴロする日。映画とお菓子で予定なし。"),
+                    ("After that week, I think we all deserve a duvet day.", "あんな一週間の後なら、みんなゴロゴロする日があってもいいよね。")
+                 ], ipa: "/ə ˈduːveɪ ˌdeɪ/"),
+            make("a money pit", "something, such as a house or car, that keeps costing you more and more money",
+                 "金食い虫",
+                 useCases: ["修理費がかさむ家や車について愚痴るとき", "お金ばかりかかる趣味や事業について話すとき"],
+                 examples: [
+                    ("That old car is turning into a real money pit.", "あの古い車、本当に金食い虫になってきたよ。"),
+                    ("We love the house, but it's a bit of a money pit.", "その家は気に入ってるけど、ちょっとお金がかかりすぎるんだ。")
+                 ], ipa: "/ə ˈmʌni ˌpɪt/"),
+            make("a sing-along", "an occasion when people sing songs together, often informally",
+                 "みんなで歌うこと・合唱",
+                 useCases: ["パーティーや車の中でみんなで歌うとき", "誰もが知っている曲について話すとき"],
+                 examples: [
+                    ("By midnight the party had turned into a big sing-along.", "夜12時にはパーティーがみんなでの大合唱になってた。"),
+                    ("It's the perfect song for a sing-along in the car.", "車の中でみんなで歌うのにぴったりの曲だよ。")
+                 ], ipa: "/ə ˈsɪŋ əˌlɒŋ/"),
+        ]
+    }
+
+    private static var britishColloquial318: [Word] {
+        [
+            make("a pub crawl", "a night out where you visit several pubs one after another, having a drink in each",
+                 "はしご酒",
+                 useCases: ["友人と飲みに行く計画を立てるとき", "誕生日や送別会の夜の過ごし方を話すとき"],
+                 examples: [
+                    ("We're doing a pub crawl round Camden for Dave's birthday.", "デイブの誕生日にカムデンではしご酒するんだ。"),
+                    ("I'm too old for pub crawls these days.", "最近はもうはしご酒する歳じゃないよ。")
+                 ], ipa: "/ə ˈpʌb ˌkrɔːl/"),
+            make("a backseat driver", "a passenger who keeps telling the driver what to do",
+                 "運転に口うるさい同乗者・横から口を出す人",
+                 useCases: ["運転中に口出しされたとき", "他人の仕事に口を挟む人を冗談で言うとき"],
+                 examples: [
+                    ("Stop being such a backseat driver — I know where I'm going!", "いちいち口出ししないで、道は分かってるから！"),
+                    ("My mum's a terrible backseat driver.", "うちの母さん、助手席からの口出しがひどいんだ。")
+                 ], ipa: "/ə ˌbæksiːt ˈdraɪvə/"),
+            make("beauty sleep", "enough sleep to keep you looking and feeling good (often said jokingly)",
+                 "美容のための睡眠・たっぷりの睡眠",
+                 useCases: ["早めに寝ると言うとき", "睡眠不足を冗談っぽく話すとき"],
+                 examples: [
+                    ("I'm off to bed — I need my beauty sleep.", "もう寝るね。美容のための睡眠が必要だから。"),
+                    ("Don't call before ten, I'll be getting my beauty sleep.", "10時前に電話しないでね、ぐっすり寝てるから。")
+                 ], ipa: "/ˈbjuːti ˌsliːp/"),
+            make("a cheat day", "a day when you allow yourself to eat whatever you like while on a diet",
+                 "チートデイ（ダイエット中に好きなものを食べる日）",
+                 useCases: ["ダイエット中にご褒美を食べるとき", "食事制限の話をするとき"],
+                 examples: [
+                    ("Pizza tonight? Go on then, it's my cheat day.", "今夜ピザ？いいよ、今日はチートデイだから。"),
+                    ("Every day seems to be a cheat day for me lately.", "最近は毎日がチートデイになってる気がする。")
+                 ], ipa: "/ə ˈtʃiːt ˌdeɪ/"),
+            make("breathing space", "a short time to rest, think or recover before continuing",
+                 "一息つく時間・ゆとり",
+                 useCases: ["忙しさから少し解放されたいとき", "考える時間が欲しいとき"],
+                 examples: [
+                    ("The deadline's been pushed back, so that gives us a bit of breathing space.", "締め切りが延びたから、少し一息つけるね。"),
+                    ("I just need some breathing space to think it over.", "ちょっと考える時間が欲しいだけなんだ。")
+                 ], ipa: "/ˈbriːðɪŋ ˌspeɪs/"),
+            make("a tip-off", "a piece of secret or useful information given to someone in advance",
+                 "（事前の）情報提供・耳打ち",
+                 useCases: ["こっそり情報を教えてもらったとき", "警察への通報について話すとき"],
+                 examples: [
+                    ("Thanks for the tip-off about the sale — I got a great deal.", "セールのこと教えてくれてありがとう、すごくお得に買えたよ。"),
+                    ("The police acted on an anonymous tip-off.", "警察は匿名の通報をもとに動いた。")
+                 ], ipa: "/ə ˈtɪp ɒf/"),
+            make("a rundown", "a quick summary of the main facts or points",
+                 "概要・ざっとした説明",
+                 useCases: ["会議や出来事の要点を聞くとき", "状況をざっと説明するとき"],
+                 examples: [
+                    ("Can you give me a quick rundown of what I missed?", "私がいない間に何があったか、ざっと教えてくれる？"),
+                    ("Here's a rundown of the plan for tomorrow.", "明日の予定をざっと説明するね。")
+                 ], ipa: "/ə ˈrʌndaʊn/"),
+            make("a turnout", "the number of people who come to an event",
+                 "（イベントの）参加者数・人の集まり",
+                 useCases: ["パーティーやイベントの盛況ぶりを話すとき", "選挙の投票率について話すとき"],
+                 examples: [
+                    ("What a great turnout — thanks for coming, everyone!", "こんなにたくさん来てくれてありがとう、みんな！"),
+                    ("The turnout was pretty poor because of the rain.", "雨のせいで人の集まりはいまいちだった。")
+                 ], ipa: "/ə ˈtɜːnaʊt/"),
+            make("fairy lights", "small decorative electric lights on a string, used at Christmas or for decoration",
+                 "（飾り用の）豆電球・イルミネーションライト",
+                 useCases: ["クリスマスの飾り付けをするとき", "部屋のインテリアについて話すとき"],
+                 examples: [
+                    ("Let's put the fairy lights up on the tree tonight.", "今夜ツリーにライトを飾ろうよ。"),
+                    ("She's got fairy lights all round her bedroom window.", "彼女の寝室の窓のまわりには飾りライトがぐるっと付いてる。")
+                 ], ipa: "/ˈfeəri ˌlaɪts/"),
+            make("mate's rates", "a cheap price that you charge a friend for goods or work",
+                 "友達価格・身内割引",
+                 useCases: ["友人に安く仕事を頼むとき", "知り合い割引について話すとき"],
+                 examples: [
+                    ("My cousin's a plumber, so he did it at mate's rates.", "いとこが配管工だから、友達価格でやってくれたんだ。"),
+                    ("Any chance of mate's rates?", "友達価格でお願いできない？")
+                 ], ipa: "/ˌmeɪts ˈreɪts/"),
+            make("a goodie bag", "a small bag of free gifts or sweets given out at a party or event",
+                 "（パーティーやイベントの）お土産袋・おまけの袋",
+                 useCases: ["子どもの誕生日会の準備をするとき", "イベントでもらった景品の話をするとき"],
+                 examples: [
+                    ("Every kid gets a goodie bag at the end of the party.", "パーティーの最後に子どもたち全員にお土産袋を渡すよ。"),
+                    ("The goodie bag at the conference was actually pretty good.", "カンファレンスでもらったおまけの袋、結構良かったよ。")
+                 ], ipa: "/ə ˈɡʊdi ˌbæɡ/"),
+            make("a dead giveaway", "something that makes the truth very obvious",
+                 "見え見えの証拠・バレバレの手がかり",
+                 useCases: ["隠し事がバレたとき", "誰かの本心が明らかなとき"],
+                 examples: [
+                    ("You said you didn't eat the cake, but the crumbs are a dead giveaway.", "ケーキ食べてないって言うけど、食べかすでバレバレだよ。"),
+                    ("His accent was a dead giveaway that he was from Liverpool.", "訛りで彼がリバプール出身なのは一目瞭然だった。")
+                 ], ipa: "/ə ˌded ˈɡɪvəweɪ/"),
+            make("a fire drill", "a practice of what to do and where to go if there is a fire",
+                 "避難訓練・火災訓練",
+                 useCases: ["職場や学校の避難訓練について話すとき", "急に警報が鳴ったとき"],
+                 examples: [
+                    ("Don't panic — it's just a fire drill.", "慌てないで、ただの避難訓練だから。"),
+                    ("We had a fire drill in the middle of my meeting.", "会議の真っ最中に避難訓練があったんだ。")
+                 ], ipa: "/ə ˈfaɪə ˌdrɪl/"),
+            make("a wish list", "a list of things you would like to have or do",
+                 "欲しい物リスト・やりたいことリスト",
+                 useCases: ["誕生日やクリスマスのプレゼントを考えるとき", "将来の目標を話すとき"],
+                 examples: [
+                    ("Send me your Christmas wish list so I know what to get you.", "何をあげればいいか分かるように、クリスマスの欲しい物リスト送って。"),
+                    ("Japan's been at the top of my wish list for years.", "日本は何年も行きたい場所リストの一番上なんだ。")
+                 ], ipa: "/ə ˈwɪʃ ˌlɪst/"),
+            make("a shortlist", "a small group chosen from a larger number, from which the final choice will be made",
+                 "最終候補（リスト）",
+                 useCases: ["就職や賞の選考について話すとき", "候補を絞り込むとき"],
+                 examples: [
+                    ("I've made the shortlist for the job — fingers crossed!", "その仕事の最終候補に残ったよ、祈ってて！"),
+                    ("We've got a shortlist of three flats to look at.", "見に行くフラットを3つに絞ったんだ。")
+                 ], ipa: "/ə ˈʃɔːtlɪst/"),
+        ]
+    }
+
+    private static var britishColloquial317: [Word] {
+        [
+            make("a mid-life crisis", "a period of worry or sudden change some people go through in their 40s or 50s",
+                 "中年の危機",
+                 useCases: ["中年の人の急な変化を冗談っぽく話すとき", "人生の転機について話すとき"],
+                 examples: [
+                    ("He bought a sports car — must be a mid-life crisis.", "彼スポーツカー買ったんだって。中年の危機だね。"),
+                    ("I'm not having a mid-life crisis, I just fancied a change!", "中年の危機じゃないよ、ただ気分を変えたかっただけ！")
+                 ], ipa: "/ə ˌmɪd laɪf ˈkraɪsɪs/"),
+            make("a one-way ticket", "a ticket for travelling to a place but not back again",
+                 "片道切符",
+                 useCases: ["電車や飛行機の切符を買うとき", "移住や戻らない決意を話すとき"],
+                 examples: [
+                    ("Just a one-way ticket to Manchester, please.", "マンチェスターまで片道1枚お願いします。"),
+                    ("She bought a one-way ticket to Lisbon and never looked back.", "彼女はリスボン行きの片道切符を買って、それっきり戻らなかった。")
+                 ], ipa: "/ə ˌwʌn weɪ ˈtɪkɪt/"),
+            make("a layover", "a short stop at a place during a long journey, especially between flights",
+                 "乗り継ぎ（待ち時間）",
+                 useCases: ["飛行機の乗り継ぎについて話すとき", "旅程を説明するとき"],
+                 examples: [
+                    ("We've got a three-hour layover in Frankfurt.", "フランクフルトで3時間の乗り継ぎがあるんだ。"),
+                    ("Is it a direct flight or is there a layover?", "直行便？それとも乗り継ぎあり？")
+                 ], ipa: "/ə ˈleɪˌəʊvə/"),
+            make("a travel buddy", "a friend you go travelling with",
+                 "旅仲間・旅の相棒",
+                 useCases: ["一緒に旅行する友人を紹介するとき", "旅の同行者を探すとき"],
+                 examples: [
+                    ("Tom's my usual travel buddy — we've done loads of trips together.", "トムはいつもの旅の相棒で、一緒にたくさん旅行してるんだ。"),
+                    ("I'm looking for a travel buddy for Italy this summer.", "この夏イタリアに一緒に行く旅仲間を探してるんだ。")
+                 ], ipa: "/ə ˈtrævl ˌbʌdi/"),
+            make("a chat-up line", "something you say to start a conversation with someone you find attractive",
+                 "口説き文句・ナンパの決まり文句",
+                 useCases: ["ナンパや口説き方を冗談で話すとき", "ベタなセリフを笑うとき"],
+                 examples: [
+                    ("That's the worst chat-up line I've ever heard!", "今まで聞いた中で最悪の口説き文句だよ！"),
+                    ("He tried a cheesy chat-up line on her and she just laughed.", "彼がベタな口説き文句を言ったら、彼女に笑われてた。")
+                 ], ipa: "/ə ˈtʃæt ʌp ˌlaɪn/"),
+            make("a hot water bottle", "a rubber container filled with hot water to keep you warm in bed",
+                 "湯たんぽ",
+                 useCases: ["寒い夜の過ごし方を話すとき", "体調が悪いときの対処を話すとき"],
+                 examples: [
+                    ("It's freezing — I'm going to bed with a hot water bottle.", "めちゃくちゃ寒いから湯たんぽ抱えて寝るよ。"),
+                    ("A hot water bottle really helps when you've got a stomach ache.", "お腹が痛いときは湯たんぽがすごく効くよ。")
+                 ], ipa: "/ə ˌhɒt ˈwɔːtə ˌbɒtl/"),
+            make("a winning streak", "a series of wins or successes one after another",
+                 "連勝・勝ち続き",
+                 useCases: ["スポーツチームの好調を話すとき", "仕事や運が続いているとき"],
+                 examples: [
+                    ("United are on a five-game winning streak.", "ユナイテッドは5連勝中だよ。"),
+                    ("I'm on a bit of a winning streak at the pub quiz lately.", "最近パブクイズで勝ち続きなんだ。")
+                 ], ipa: "/ə ˈwɪnɪŋ ˌstriːk/"),
+            make("a meal deal", "a set lunch, usually a sandwich, snack and drink, sold together for one price",
+                 "（サンドイッチ・スナック・飲み物の）お得なランチセット",
+                 useCases: ["コンビニやスーパーで昼食を買うとき", "手軽なランチについて話すとき"],
+                 examples: [
+                    ("I'll just grab a meal deal from Tesco for lunch.", "お昼はテスコでランチセット買ってくるよ。"),
+                    ("A meal deal is the best value lunch you can get.", "ランチセットが一番コスパいい昼ごはんだよ。")
+                 ], ipa: "/ə ˈmiːl ˌdiːl/"),
+            make("a bin bag", "a large plastic bag for putting rubbish in",
+                 "ゴミ袋",
+                 useCases: ["ゴミ出しや片付けのとき", "家事の話をするとき"],
+                 examples: [
+                    ("Can you grab me a bin bag from under the sink?", "シンクの下からゴミ袋取ってくれる？"),
+                    ("We filled three bin bags clearing out the garage.", "ガレージを片付けたらゴミ袋3つ分になったよ。")
+                 ], ipa: "/ə ˈbɪn ˌbæɡ/"),
+            make("a burst pipe", "a water pipe that has broken and is leaking water",
+                 "破裂した水道管",
+                 useCases: ["家の水漏れトラブルを話すとき", "冬の寒さによる被害を話すとき"],
+                 examples: [
+                    ("Sorry I'm late — we had a burst pipe in the kitchen.", "遅れてごめん、台所の水道管が破裂しちゃって。"),
+                    ("A burst pipe flooded the whole bathroom.", "水道管が破裂して浴室中が水浸しになった。")
+                 ], ipa: "/ə ˌbɜːst ˈpaɪp/"),
+            make("a season ticket", "a ticket you buy for a whole season or year, e.g. for a football club or train travel",
+                 "シーズンチケット・定期券",
+                 useCases: ["サッカー観戦の話をするとき", "通勤の定期券について話すとき"],
+                 examples: [
+                    ("My dad's had a season ticket at Arsenal for twenty years.", "父さんは20年アーセナルのシーズンチケットを持ってるんだ。"),
+                    ("An annual season ticket works out much cheaper for commuting.", "通勤なら年間定期のほうがずっと安く済むよ。")
+                 ], ipa: "/ə ˈsiːzn ˌtɪkɪt/"),
+            make("a bus pass", "a card or ticket that lets you travel on buses for a period of time",
+                 "バスの定期券・バスパス",
+                 useCases: ["通勤・通学の交通手段を話すとき", "乗車時に提示するとき"],
+                 examples: [
+                    ("I forgot my bus pass, so I had to pay for a ticket.", "バスパス忘れたから切符代払わなきゃいけなかった。"),
+                    ("Students get a discount on a monthly bus pass.", "学生は1か月のバスパスが割引になるよ。")
+                 ], ipa: "/ə ˈbʌs ˌpɑːs/"),
+            make("a kitty", "a pool of money that a group of people put in to pay for shared things",
+                 "共同の財布・みんなで出し合ったお金",
+                 useCases: ["飲み会や旅行で割り勘するとき", "シェアハウスの共同費用について話すとき"],
+                 examples: [
+                    ("Let's all put twenty quid in the kitty for drinks.", "みんなで飲み代として20ポンドずつ出し合おう。"),
+                    ("We pay for milk and loo roll out of the house kitty.", "牛乳とトイレットペーパーは家の共同費から払ってるよ。")
+                 ], ipa: "/ə ˈkɪti/"),
+            make("a home truth", "an unpleasant fact about yourself that someone tells you directly",
+                 "（耳の痛い）本当のこと・厳しい指摘",
+                 useCases: ["友人に率直に忠告するとき", "痛いところを突かれたとき"],
+                 examples: [
+                    ("It's time someone told him a few home truths.", "誰かが彼に耳の痛いことを言ってやるべきだよ。"),
+                    ("My sister told me some home truths, and she was right.", "姉に厳しいことを言われたけど、その通りだった。")
+                 ], ipa: "/ə ˌhəʊm ˈtruːθ/"),
+            make("a service station", "a place by a motorway with petrol, food, toilets and shops",
+                 "（高速道路の）サービスエリア",
+                 useCases: ["ドライブ中の休憩について話すとき", "長距離移動の計画を立てるとき"],
+                 examples: [
+                    ("Let's stop at the next service station — I need the loo.", "次のサービスエリアで止まろう、トイレ行きたい。"),
+                    ("Service station food is always so overpriced.", "サービスエリアの食べ物っていつも高すぎるよね。")
+                 ], ipa: "/ə ˈsɜːvɪs ˌsteɪʃn/"),
+        ]
+    }
+
+    private static var britishColloquial316: [Word] {
+        [
+            make("a household name", "a person or thing that almost everyone has heard of",
+                 "誰もが知っている名前・有名人",
+                 useCases: ["有名な人やブランドについて話すとき", "人気が出て有名になったことを話すとき"],
+                 examples: [
+                    ("She went from a local singer to a household name in a year.", "彼女は1年で地元の歌手から誰もが知る有名人になった。"),
+                    ("It's not exactly a household name, but the food's amazing.", "そんなに有名な店じゃないけど、料理は最高だよ。")
+                 ], ipa: "/ə ˌhaʊshəʊld ˈneɪm/"),
+            make("a role model", "someone whose behaviour others admire and copy",
+                 "お手本・憧れの存在",
+                 useCases: ["尊敬する人について話すとき", "子どもへの影響について話すとき"],
+                 examples: [
+                    ("My gran was always my biggest role model.", "おばあちゃんがずっと一番のお手本だったんだ。"),
+                    ("Footballers should remember they're role models for kids.", "サッカー選手は子どもたちのお手本だってことを忘れないでほしい。")
+                 ], ipa: "/ə ˈrəʊl ˌmɒdl/"),
+            make("a family man", "a man who loves spending time with his wife and children",
+                 "家族思いの男性・家庭的な人",
+                 useCases: ["家族を大切にする男性を紹介するとき", "生活スタイルの変化を話すとき"],
+                 examples: [
+                    ("He's a real family man — always home by six.", "彼は本当に家族思いで、いつも6時には帰るんだ。"),
+                    ("No more late nights for me, I'm a family man now!", "もう夜遊びはしないよ、今や家庭持ちだからね！")
+                 ], ipa: "/ə ˈfæməli ˌmæn/"),
+            make("a head cold", "a common cold that mainly blocks your nose and makes your head feel heavy",
+                 "鼻かぜ・頭が重いかぜ",
+                 useCases: ["体調が悪い理由を伝えるとき", "仕事や予定を休む連絡をするとき"],
+                 examples: [
+                    ("Sorry, I sound awful — I've got a stinking head cold.", "ごめん、ひどい声でしょ。ひどい鼻かぜなんだ。"),
+                    ("It's just a head cold, I'll be fine by Monday.", "ただの鼻かぜだから、月曜には治ってるよ。")
+                 ], ipa: "/ə ˈhed ˌkəʊld/"),
+            make("a nickname", "an informal name that friends or family call you",
+                 "あだ名・ニックネーム",
+                 useCases: ["呼び名を教えるとき", "子ども時代の思い出話で"],
+                 examples: [
+                    ("Everyone calls me Jonny — it's my nickname from school.", "みんなジョニーって呼ぶんだ。学校時代のあだ名でね。"),
+                    ("Did you have a nickname when you were little?", "小さいころ、あだ名あった？")
+                 ], ipa: "/ə ˈnɪkneɪm/"),
+            make("a middle name", "a name between your first name and your surname",
+                 "ミドルネーム",
+                 useCases: ["名前について話すとき", "書類に名前を記入するとき"],
+                 examples: [
+                    ("What's your middle name? Go on, tell me!", "ミドルネームは何？ねえ、教えてよ！"),
+                    ("Patience isn't exactly my middle name.", "我慢強さは私の取り柄じゃないんだよね。")
+                 ], ipa: "/ə ˈmɪdl ˌneɪm/"),
+            make("a first impression", "the opinion you form when you meet someone or see something for the first time",
+                 "第一印象",
+                 useCases: ["初対面の印象を話すとき", "面接やデートの準備のとき"],
+                 examples: [
+                    ("So, what was your first impression of him?", "で、彼の第一印象はどうだった？"),
+                    ("You only get one chance to make a first impression.", "第一印象を与えるチャンスは一度きりだよ。")
+                 ], ipa: "/ə ˌfɜːst ɪmˈpreʃn/"),
+            make("eye contact", "looking directly into someone's eyes while you talk to them",
+                 "アイコンタクト・目を合わせること",
+                 useCases: ["会話やプレゼンのコツを話すとき", "相手の態度について話すとき"],
+                 examples: [
+                    ("He wouldn't even make eye contact with me.", "彼、目も合わせてくれなかったんだ。"),
+                    ("Keep good eye contact in the interview.", "面接ではしっかり目を見て話してね。")
+                 ], ipa: "/ˈaɪ ˌkɒntækt/"),
+            make("body language", "the way your posture, gestures and expressions show what you feel",
+                 "ボディランゲージ・身振りや態度",
+                 useCases: ["相手の気持ちを読み取るとき", "印象をよくする話をするとき"],
+                 examples: [
+                    ("Her body language said she wasn't interested.", "彼女の態度からして、興味なさそうだったよ。"),
+                    ("Watch your body language — you look really nervous.", "身振りに気をつけて。すごく緊張して見えるよ。")
+                 ], ipa: "/ˈbɒdi ˌlæŋɡwɪdʒ/"),
+            make("a frame of mind", "the mood or mental state you are in at a particular time",
+                 "気分・心の状態",
+                 useCases: ["今の気分や心の準備について話すとき", "話を切り出すタイミングを図るとき"],
+                 examples: [
+                    ("I'm not in the right frame of mind to talk about it now.", "今はそれを話せるような気分じゃないんだ。"),
+                    ("A good walk always puts me in a better frame of mind.", "しっかり散歩すると、いつも気分が上向くんだ。")
+                 ], ipa: "/ə ˌfreɪm əv ˈmaɪnd/"),
+            make("teamwork", "people working well together to achieve something",
+                 "チームワーク・協力",
+                 useCases: ["みんなで何かを成し遂げたとき", "仕事やスポーツの話で"],
+                 examples: [
+                    ("We finished early — great teamwork, everyone!", "早く終わったね。みんな、ナイスチームワーク！"),
+                    ("Moving house is all about teamwork.", "引っ越しはとにかく協力が大事だよ。")
+                 ], ipa: "/ˈtiːmwɜːk/"),
+            make("a weak spot", "a part of something or someone that is easy to attack or criticise; a weakness",
+                 "弱点・泣きどころ",
+                 useCases: ["自分や相手の弱点を話すとき", "スポーツや仕事の分析で"],
+                 examples: [
+                    ("Maths has always been my weak spot.", "数学はずっと私の弱点なんだ。"),
+                    ("Their defence has a weak spot on the left.", "あのチームの守備は左側が弱点だね。")
+                 ], ipa: "/ə ˈwiːk ˌspɒt/"),
+            make("a flea market", "an outdoor market selling cheap second-hand goods",
+                 "フリーマーケット・蚤の市",
+                 useCases: ["週末の過ごし方を話すとき", "掘り出し物を見つけた話で"],
+                 examples: [
+                    ("I picked up this lamp at a flea market for five euros.", "このランプ、蚤の市で5ユーロで買ったんだ。"),
+                    ("There's a great flea market by the river on Sundays.", "日曜は川沿いでいい蚤の市があるよ。")
+                 ], ipa: "/ə ˈfliː ˌmɑːkɪt/"),
+            make("the fine print", "the details of a contract or offer, often in small letters, that people may miss",
+                 "細かい条件・注意書き",
+                 useCases: ["契約や申し込みの前に注意を促すとき", "思わぬ条件があったとき"],
+                 examples: [
+                    ("Always read the fine print before you sign anything.", "何かにサインする前は必ず細かい条件を読んでね。"),
+                    ("It sounded like a great deal until I read the fine print.", "細かい条件を読むまでは、すごくお得に思えたんだけど。")
+                 ], ipa: "/ðə ˈfaɪn ˌprɪnt/"),
+            make("a weekend break", "a short holiday over a weekend, often in a city",
+                 "週末旅行・週末の小旅行",
+                 useCases: ["週末の旅行計画を話すとき", "旅行の感想を話すとき"],
+                 examples: [
+                    ("We're off to Lisbon for a weekend break.", "週末にリスボンへ小旅行に行くんだ。"),
+                    ("A weekend break is just what I need right now.", "今まさに週末旅行が必要なんだよね。")
+                 ], ipa: "/ə ˌwiːkˈend ˌbreɪk/"),
+        ]
+    }
+
+    private static var britishColloquial315: [Word] {
+        [
+            make("a sense of humour", "the ability to find things funny and make others laugh",
+                 "ユーモアのセンス",
+                 useCases: ["人の性格を褒めるとき", "冗談が通じるかどうかを話すとき"],
+                 examples: [
+                    ("She's got a brilliant sense of humour.", "彼女、ユーモアのセンスが抜群なんだ。"),
+                    ("Relax, it was a joke — where's your sense of humour?", "落ち着いて、冗談だよ。ユーモアのセンスはどこ行ったの？")
+                 ], ipa: "/ə ˌsens əv ˈhjuːmə/"),
+            make("a helping hand", "help or assistance given to someone",
+                 "手助け・助けの手",
+                 useCases: ["手伝いを申し出るとき", "誰かに助けてもらったことを話すとき"],
+                 examples: [
+                    ("Need a helping hand with those boxes?", "その箱運ぶの、手伝おうか？"),
+                    ("My neighbour gave me a helping hand with the garden.", "近所の人が庭仕事を手伝ってくれたんだ。")
+                 ], ipa: "/ə ˌhelpɪŋ ˈhænd/"),
+            make("a reality check", "something that makes you see the real situation, often an unpleasant one",
+                 "現実を思い知ること・目を覚ますきっかけ",
+                 useCases: ["甘い考えを改めさせられたとき", "相手に現実を見るよう促すとき"],
+                 examples: [
+                    ("Seeing my bank balance was a real reality check.", "口座残高を見て、現実を思い知らされたよ。"),
+                    ("I think he needs a bit of a reality check.", "彼、ちょっと現実を見たほうがいいと思う。")
+                 ], ipa: "/ə riˈæləti ˌtʃek/"),
+            make("a shopping spree", "a short period when you buy a lot of things",
+                 "爆買い・買い物三昧",
+                 useCases: ["一度にたくさん買い物したとき", "セールやボーナスの後の話題に"],
+                 examples: [
+                    ("I went on a bit of a shopping spree in the sales.", "セールでちょっと爆買いしちゃった。"),
+                    ("Payday tomorrow — time for a shopping spree!", "明日は給料日、買い物三昧だ！")
+                 ], ipa: "/ə ˈʃɒpɪŋ ˌspriː/"),
+            make("a price tag", "the cost of something, especially when it is high",
+                 "値札・値段",
+                 useCases: ["値段の高さについて話すとき", "物の価格に驚いたとき"],
+                 examples: [
+                    ("Lovely coat, but have you seen the price tag?", "素敵なコートだけど、値段見た？"),
+                    ("The new stadium comes with a huge price tag.", "新しいスタジアムには莫大な費用がかかる。")
+                 ], ipa: "/ə ˈpraɪs ˌtæɡ/"),
+            make("a day job", "the main job that pays your bills, as opposed to a hobby or ambition",
+                 "本業・普段の仕事",
+                 useCases: ["趣味や副業と本業を区別するとき", "（冗談で）才能がないとからかうとき"],
+                 examples: [
+                    ("He plays in a band, but his day job is in accounting.", "彼はバンドをやってるけど、本業は経理なんだ。"),
+                    ("Nice singing — but don't quit your day job!", "いい歌だね…でも本業は辞めないほうがいいよ！")
+                 ], ipa: "/ə ˈdeɪ ˌdʒɒb/"),
+            make("a pen pal", "a friend you write to, often in another country, usually without meeting",
+                 "ペンフレンド・文通相手",
+                 useCases: ["海外の文通相手について話すとき", "オンラインでやり取りする友人を紹介するとき"],
+                 examples: [
+                    ("I had a pen pal in France when I was at school.", "学生のころフランスに文通相手がいたんだ。"),
+                    ("We started as pen pals and finally met last year.", "最初は文通相手で、去年ようやく会えたんだ。")
+                 ], ipa: "/ə ˈpen ˌpæl/"),
+            make("a guest list", "a list of people invited to an event",
+                 "招待客リスト・ゲストリスト",
+                 useCases: ["パーティーや結婚式の準備のとき", "イベントの入場について話すとき"],
+                 examples: [
+                    ("Is your sister on the guest list?", "妹さんは招待客リストに入ってる？"),
+                    ("We had to cut the guest list down to fifty.", "招待客を50人に絞らなきゃいけなかった。")
+                 ], ipa: "/ə ˈɡest ˌlɪst/"),
+            make("a falling-out", "an argument that ends a friendship or relationship for a while",
+                 "仲たがい・けんか別れ",
+                 useCases: ["友人や家族との不和を話すとき", "誰かと疎遠になった理由を説明するとき"],
+                 examples: [
+                    ("They had a falling-out over money years ago.", "彼らは何年も前にお金のことで仲たがいしたんだ。"),
+                    ("Have you two had a falling-out or something?", "二人、けんかでもしたの？")
+                 ], ipa: "/ə ˌfɔːlɪŋ ˈaʊt/"),
+            make("a lookalike", "a person who looks very similar to someone else, often someone famous",
+                 "そっくりさん",
+                 useCases: ["有名人に似ている人を話題にするとき", "人違いをしたとき"],
+                 examples: [
+                    ("Your brother is a total Ed Sheeran lookalike.", "君のお兄さん、エド・シーランのそっくりさんだね。"),
+                    ("I waved at a lookalike thinking it was you!", "君だと思ってそっくりな人に手を振っちゃった！")
+                 ], ipa: "/ə ˈlʊkəlaɪk/"),
+            make("the spitting image of", "looking exactly like someone, often a family member",
+                 "～に瓜二つ・そっくり",
+                 useCases: ["子どもが親に似ていると言うとき", "誰かと驚くほど似ている人を見たとき"],
+                 examples: [
+                    ("She's the spitting image of her mum.", "彼女はお母さんに瓜二つだね。"),
+                    ("He's the spitting image of his grandad at that age.", "彼はあの年の頃のおじいさんにそっくりだ。")
+                 ], ipa: "/ðə ˌspɪtɪŋ ˈɪmɪdʒ əv/"),
+            make("a first date", "the first time two people go out together romantically",
+                 "初デート",
+                 useCases: ["恋愛の話題で", "デートの場所や緊張について話すとき"],
+                 examples: [
+                    ("How did the first date go?", "初デートどうだった？"),
+                    ("I always get nervous on a first date.", "初デートはいつも緊張しちゃう。")
+                 ], ipa: "/ə ˌfɜːst ˈdeɪt/"),
+            make("a set menu", "a fixed selection of dishes at a fixed price in a restaurant",
+                 "コース料理・セットメニュー",
+                 useCases: ["レストランで注文を決めるとき", "お得なランチについて話すとき"],
+                 examples: [
+                    ("Shall we just go for the set menu? It's better value.", "コースにしない？そのほうがお得だし。"),
+                    ("They do a lovely two-course set menu at lunchtime.", "ランチに2品のおいしいセットメニューがあるんだ。")
+                 ], ipa: "/ə ˌset ˈmenjuː/"),
+            make("a shoulder to cry on", "someone who listens and comforts you when you are upset",
+                 "悩みを聞いてくれる人・心の支え",
+                 useCases: ["落ち込んでいる友人を支えるとき", "頼れる人について話すとき"],
+                 examples: [
+                    ("If you ever need a shoulder to cry on, I'm here.", "話を聞いてほしいときはいつでもいるからね。"),
+                    ("She's always been a shoulder to cry on for me.", "彼女はいつも私の心の支えになってくれた。")
+                 ], ipa: "/ə ˌʃəʊldə tə ˈkraɪ ɒn/"),
+            make("a pit stop", "a short stop during a journey for food, fuel or the toilet",
+                 "（移動中の）ちょっと休憩・寄り道",
+                 useCases: ["ドライブ中に休憩を提案するとき", "途中で軽く立ち寄るとき"],
+                 examples: [
+                    ("Let's make a quick pit stop for coffee.", "コーヒー休憩にちょっと寄ろうか。"),
+                    ("We made a pit stop at the services halfway.", "途中のサービスエリアでひと休みしたよ。")
+                 ], ipa: "/ə ˈpɪt ˌstɒp/"),
+        ]
+    }
+
+    private static var britishColloquial314: [Word] {
+        [
+            make("nothing springs to mind", "I can't think of anything right now",
+                 "パッと思い浮かばない",
+                 useCases: ["アイデアや例をすぐに出せないとき", "おすすめを聞かれて思いつかないとき"],
+                 examples: [
+                    ("Any good restaurants around here? — Hmm, nothing springs to mind.", "この辺にいいレストランある？ — うーん、パッと思い浮かばないな。"),
+                    ("If anything springs to mind, let me know.", "何か思いついたら教えてね。")
+                 ], ipa: "/ˌnʌθɪŋ ˌsprɪŋz tə ˈmaɪnd/"),
+            make("tough luck", "used to say that someone must accept a bad situation",
+                 "残念だったね・仕方ないね",
+                 useCases: ["どうにもならない不運に同情するとき", "（少し突き放して）諦めるしかないと言うとき"],
+                 examples: [
+                    ("Tough luck, mate — maybe next time.", "残念だったな、また次があるさ。"),
+                    ("If you're late, tough luck — the train won't wait.", "遅れたら仕方ないよ、電車は待ってくれないから。")
+                 ], ipa: "/ˌtʌf ˈlʌk/"),
+            make("that's on me", "that was my fault; I take responsibility",
+                 "それは私のせいだ・私の責任です",
+                 useCases: ["自分のミスを素直に認めるとき", "相手を責めずに責任を引き受けるとき"],
+                 examples: [
+                    ("Sorry, I forgot to book the table — that's on me.", "ごめん、予約し忘れた。僕のせいだ。"),
+                    ("We missed the deadline, but honestly, that's on me.", "締め切りに遅れたけど、正直それは私の責任です。")
+                 ], ipa: "/ˌðæts ˈɒn miː/"),
+            make("I dare say", "I think it's probably true",
+                 "たぶん～だろう・おそらく",
+                 useCases: ["控えめに推測を述べるとき", "相手の言葉にある程度同意するとき"],
+                 examples: [
+                    ("I dare say you're hungry after that long trip.", "長旅の後だから、たぶんお腹空いてるよね。"),
+                    ("I dare say it'll all work out in the end.", "まあ、最終的には何とかなるだろうね。")
+                 ], ipa: "/aɪ ˌdeə ˈseɪ/"),
+            make("be onto something", "to have found an idea that seems good or likely to succeed",
+                 "いいところに目をつけている・何かつかんでいる",
+                 useCases: ["相手のアイデアが良さそうだと思うとき", "真相に近づいていると感じるとき"],
+                 examples: [
+                    ("You might be onto something there.", "それ、いいところ突いてるかもね。"),
+                    ("I think we're onto something with this idea.", "このアイデア、何か手応えがある気がする。")
+                 ], ipa: "/bi ˈɒntə ˌsʌmθɪŋ/"),
+            make("get out of bed on the wrong side", "to be in a bad mood all day for no clear reason",
+                 "朝から機嫌が悪い・虫の居所が悪い",
+                 useCases: ["朝から不機嫌な人をからかうとき", "理由もなくイライラしている日に"],
+                 examples: [
+                    ("What's up with him? Did he get out of bed on the wrong side?", "あいつどうしたの？朝から機嫌悪いね。"),
+                    ("Sorry I'm grumpy — I got out of bed on the wrong side today.", "不機嫌でごめん、今日は朝からなんか調子悪くて。")
+                 ], ipa: "/ˌɡet aʊt əv ˈbed ɒn ðə ˌrɒŋ ˈsaɪd/"),
+            make("in a bad mood", "feeling annoyed or unhappy",
+                 "機嫌が悪い",
+                 useCases: ["誰かが不機嫌なことを伝えるとき", "自分がイライラしていると説明するとき"],
+                 examples: [
+                    ("Careful, the boss is in a bad mood today.", "気をつけて、今日は上司の機嫌が悪いよ。"),
+                    ("Sorry, I'm in a bit of a bad mood.", "ごめん、ちょっと機嫌が悪くて。")
+                 ], ipa: "/ɪn ə ˌbæd ˈmuːd/"),
+            make("a dream come true", "something you have wanted for a long time that finally happens",
+                 "夢が叶ったこと・夢みたい",
+                 useCases: ["長年の願いが実現したとき", "最高に嬉しい出来事を表すとき"],
+                 examples: [
+                    ("Visiting Rome was a dream come true.", "ローマに行けたのは夢が叶ったみたいだった。"),
+                    ("This job is a dream come true for me.", "この仕事は私にとって夢が叶ったようなものなんだ。")
+                 ], ipa: "/ə ˌdriːm kʌm ˈtruː/"),
+            make("give someone a second chance", "to let someone try again after they have failed or made a mistake",
+                 "（人に）もう一度チャンスを与える",
+                 useCases: ["失敗した人を許してやり直させるとき", "関係修復を考えるとき"],
+                 examples: [
+                    ("Everyone deserves a second chance.", "誰にだってもう一度チャンスはあるべきだよ。"),
+                    ("I decided to give him a second chance.", "彼にもう一回チャンスをあげることにした。")
+                 ], ipa: "/ˌɡɪv ˌsʌmwʌn ə ˌsekənd ˈtʃɑːns/"),
+            make("back to front", "with the back part where the front should be",
+                 "前後逆に",
+                 useCases: ["服を前後逆に着ているとき", "順番が逆になっていると指摘するとき"],
+                 examples: [
+                    ("Your jumper's on back to front.", "セーター、前後逆に着てるよ。"),
+                    ("I put the battery in back to front.", "電池を逆向きに入れちゃった。")
+                 ], ipa: "/ˌbæk tə ˈfrʌnt/"),
+            make("the wrong way round", "in the opposite position or order to the correct one",
+                 "逆向きに・あべこべに",
+                 useCases: ["向きや順番が逆だと伝えるとき", "物事を逆に理解しているとき"],
+                 examples: [
+                    ("You've got the picture the wrong way round.", "その絵、逆さまに掛けてるよ。"),
+                    ("No, it's the wrong way round — she called him, not the other way.", "いや、逆だよ。彼女が彼に電話したんだって。")
+                 ], ipa: "/ðə ˌrɒŋ weɪ ˈraʊnd/"),
+            make("at worst", "if the worst possible thing happens",
+                 "最悪の場合でも・悪くても",
+                 useCases: ["最悪のケースを想定して安心させるとき", "リスクが小さいことを伝えるとき"],
+                 examples: [
+                    ("At worst, we'll just have to take a taxi.", "最悪でも、タクシーに乗ればいいだけだよ。"),
+                    ("Just ask her — at worst, she'll say no.", "とりあえず聞いてみなよ。最悪でも断られるだけだし。")
+                 ], ipa: "/ət ˈwɜːst/"),
+            make("my two cents", "my opinion, offered casually",
+                 "私の意見としては・ちょっと言わせてもらうと",
+                 useCases: ["控えめに自分の意見を言うとき", "求められていないけど一言添えるとき"],
+                 examples: [
+                    ("Just my two cents, but I'd go for the blue one.", "あくまで私の意見だけど、青い方にするかな。"),
+                    ("Can I add my two cents here?", "ちょっと一言いいかな？")
+                 ], ipa: "/maɪ ˌtuː ˈsents/"),
+            make("you're in luck", "you are fortunate because what you want is available",
+                 "ついてるね・運がいいね",
+                 useCases: ["欲しいものがちょうどあると伝えるとき", "相手にとって嬉しい知らせを言うとき"],
+                 examples: [
+                    ("You're in luck — we've got one table left.", "運がいいですね、ちょうど一席空いてますよ。"),
+                    ("Looking for a charger? You're in luck, I've got a spare.", "充電器探してる？ついてるね、予備持ってるよ。")
+                 ], ipa: "/jɔːr ɪn ˈlʌk/"),
+            make("let's do it", "used to agree enthusiastically to a plan",
+                 "よし、やろう！・それでいこう",
+                 useCases: ["誘いや提案に乗り気で応じるとき", "何かを始める前に気合いを入れるとき"],
+                 examples: [
+                    ("Weekend in Paris? Let's do it!", "週末パリ？いいね、行こう！"),
+                    ("Right, everyone ready? Let's do it.", "よし、みんな準備いい？始めよう。")
+                 ], ipa: "/ˌlets ˈduː ɪt/"),
+        ]
+    }
+
+    private static var britishColloquial313: [Word] {
+        [
+            make("it's out of my hands", "I no longer have any control over it",
+                 "もう自分ではどうにもできない",
+                 useCases: ["決定権が自分にないと伝えるとき", "手を尽くした後に結果を待つとき"],
+                 examples: [
+                    ("I'd love to help, but it's out of my hands now.", "助けたいけど、もう僕にはどうにもできないんだ。"),
+                    ("I've sent the application, so it's out of my hands.", "申請は出したから、あとは待つだけだよ。")
+                 ], ipa: "/ɪts ˌaʊt əv maɪ ˈhændz/"),
+            make("can't make head or tail of", "can't understand something at all",
+                 "さっぱり分からない・ちんぷんかんぷん",
+                 useCases: ["説明書や文章が全く理解できないとき", "状況が意味不明なとき"],
+                 examples: [
+                    ("I can't make head or tail of these instructions.", "この説明書、さっぱり分からないよ。"),
+                    ("She explained it twice, but I still couldn't make head or tail of it.", "彼女が二回説明してくれたけど、それでもちんぷんかんぷんだった。")
+                 ], ipa: "/ˌkɑːnt meɪk ˌhed ɔː ˈteɪl əv/"),
+            make("looking back", "when I think about it now, after it happened",
+                 "今振り返ってみると",
+                 useCases: ["過去を振り返って感想を言うとき", "後から気づいたことを話すとき"],
+                 examples: [
+                    ("Looking back, it was the best year of my life.", "今振り返ると、人生で最高の一年だったな。"),
+                    ("Looking back, I should have listened to my mum.", "今思えば、母の言うことを聞いておけばよかった。")
+                 ], ipa: "/ˌlʊkɪŋ ˈbæk/"),
+            make("just to be clear", "used to make sure there's no misunderstanding",
+                 "念のためはっきりさせておくと",
+                 useCases: ["誤解がないよう確認するとき", "自分の立場をはっきり伝えるとき"],
+                 examples: [
+                    ("Just to be clear, we're meeting at six, not seven?", "念のため確認だけど、7時じゃなくて6時集合だよね？"),
+                    ("Just to be clear, I'm not angry with you.", "はっきり言っておくけど、君に怒ってるわけじゃないよ。")
+                 ], ipa: "/ˌdʒʌst tə bi ˈklɪə/"),
+            make("run sth by sb", "to tell someone about an idea to get their opinion",
+                 "（人に）意見を聞く・確認してもらう",
+                 useCases: ["決める前に誰かの意見を聞くとき", "上司や家族に相談するとき"],
+                 examples: [
+                    ("Can I run something by you?", "ちょっと意見聞いてもいい？"),
+                    ("Let me run it by my wife first.", "まず妻に確認させて。")
+                 ], ipa: "/ˈrʌn ˌsʌmθɪŋ baɪ ˌsʌmwʌn/"),
+            make("talk it through", "to discuss something carefully and in detail",
+                 "じっくり話し合う",
+                 useCases: ["問題を一緒に整理したいとき", "悩んでいる人の話を聞くとき"],
+                 examples: [
+                    ("Let's sit down and talk it through.", "座ってじっくり話し合おう。"),
+                    ("It helped to talk it through with a friend.", "友達と話してみたら気持ちが整理できたよ。")
+                 ], ipa: "/ˌtɔːk ɪt ˈθruː/"),
+            make("think it through", "to consider all the possible results of a plan",
+                 "よく考える・じっくり考え抜く",
+                 useCases: ["焦って決めないよう促すとき", "決断の前に時間を取るとき"],
+                 examples: [
+                    ("Don't rush — think it through first.", "焦らないで、まずよく考えて。"),
+                    ("I didn't really think it through, did I?", "ちゃんと考えてなかったね、僕。")
+                 ], ipa: "/ˌθɪŋk ɪt ˈθruː/"),
+            make("on the subject of", "while we're talking about",
+                 "～の話といえば・～について言うと",
+                 useCases: ["関連する話題に移るとき", "話の流れで別の話を持ち出すとき"],
+                 examples: [
+                    ("On the subject of holidays, where are you going this summer?", "休みの話といえば、この夏はどこ行くの？"),
+                    ("While we're on the subject of money, you still owe me a tenner.", "お金の話が出たついでに、10ポンドまだ返してもらってないよ。")
+                 ], ipa: "/ˌɒn ðə ˈsʌbdʒɪkt əv/"),
+            make("whatever happens", "no matter what happens",
+                 "何があっても・どうなろうと",
+                 useCases: ["相手を励ますとき", "固い決意を伝えるとき"],
+                 examples: [
+                    ("Whatever happens, I'm proud of you.", "どうなろうと、君を誇りに思うよ。"),
+                    ("Whatever happens, don't miss the last train.", "何があっても終電は逃さないでね。")
+                 ], ipa: "/wɒtˌevə ˈhæpənz/"),
+            make("it's a long way off", "it won't happen for a long time",
+                 "まだずっと先の話だ",
+                 useCases: ["予定や目標がまだ遠いと言うとき", "今心配する必要はないと伝えるとき"],
+                 examples: [
+                    ("Retirement? That's a long way off for me.", "引退？僕にはまだずっと先の話だよ。"),
+                    ("The wedding's a long way off, so don't panic.", "結婚式はまだ先だから、焦らなくていいよ。")
+                 ], ipa: "/ɪts ə ˌlɒŋ weɪ ˈɒf/"),
+            make("while we're at it", "since we are already doing this, we can also…",
+                 "ついでに",
+                 useCases: ["ついでに別のこともしようと提案するとき", "作業中に追加をお願いするとき"],
+                 examples: [
+                    ("While we're at it, let's clean the windows too.", "ついでに窓も掃除しちゃおう。"),
+                    ("Can you grab some milk while you're at it?", "ついでに牛乳も買ってきてくれる？")
+                 ], ipa: "/ˌwaɪl wɪər ˈæt ɪt/"),
+            make("bogged down", "stuck and unable to make progress",
+                 "（仕事・細かいことに）はまって進まない",
+                 useCases: ["仕事に追われて身動きが取れないとき", "細部にこだわりすぎるのを注意するとき"],
+                 examples: [
+                    ("I've been bogged down with emails all morning.", "午前中ずっとメール処理で手一杯だったよ。"),
+                    ("Let's not get bogged down in the details.", "細かいことにこだわりすぎないようにしよう。")
+                 ], ipa: "/ˌbɒɡd ˈdaʊn/"),
+            make("in the grand scheme of things", "when you consider the whole situation",
+                 "大局的に見れば・長い目で見れば",
+                 useCases: ["小さな失敗を気にしないよう励ますとき", "物事を大きな視点で見るとき"],
+                 examples: [
+                    ("In the grand scheme of things, it's not a big problem.", "大きな目で見れば、大した問題じゃないよ。"),
+                    ("One bad exam doesn't matter in the grand scheme of things.", "長い目で見れば、テスト一回の失敗なんて関係ないよ。")
+                 ], ipa: "/ɪn ðə ˌɡrænd ˈskiːm əv ˌθɪŋz/"),
+            make("that's the plan", "that is what I intend to do",
+                 "そのつもりだよ・その予定",
+                 useCases: ["予定を聞かれて肯定するとき", "うまくいくか分からないが意図を伝えるとき"],
+                 examples: [
+                    ("So you're moving to Lisbon? — That's the plan.", "じゃあリスボンに引っ越すの？ — そのつもり。"),
+                    ("Finish by Friday — well, that's the plan anyway.", "金曜までに終わらせる…まあ、一応その予定。")
+                 ], ipa: "/ˌðæts ðə ˈplæn/"),
+            make("it's worth mentioning", "it's a good idea to say this",
+                 "言っておく価値がある・一応言っておくと",
+                 useCases: ["補足情報を付け加えるとき", "大事なことをさりげなく伝えるとき"],
+                 examples: [
+                    ("It's worth mentioning that the shop closes early on Sundays.", "一応言っておくと、そのお店は日曜は早く閉まるよ。"),
+                    ("I didn't think it was worth mentioning.", "わざわざ言うほどのことじゃないと思ってた。")
+                 ], ipa: "/ɪts ˌwɜːθ ˈmenʃənɪŋ/"),
+        ]
+    }
+
+    private static var britishColloquial312: [Word] {
+        [
+            make("far from it", "not at all; quite the opposite",
+                 "とんでもない・全然そんなことない",
+                 useCases: ["相手の思い込みを強く否定するとき", "「むしろ逆だよ」と言うとき"],
+                 examples: [
+                    ("Were you bored? — Far from it, I loved every minute.", "退屈だった？ — とんでもない、ずっと楽しかったよ。"),
+                    ("I'm not rich — far from it.", "お金持ちなんかじゃないよ、全然。")
+                 ], ipa: "/ˌfɑː frəm ˈɪt/"),
+            make("all over again", "once more from the beginning",
+                 "また一から・もう一度最初から",
+                 useCases: ["やり直しになったとき", "同じことがまた起きたとき"],
+                 examples: [
+                    ("My laptop crashed, so I had to write it all over again.", "パソコンが落ちて、また一から書き直しだったよ。"),
+                    ("Here we go all over again.", "また始まったよ。")
+                 ], ipa: "/ˌɔːl ˌəʊvər əˈɡen/"),
+            make("vice versa", "the other way round as well",
+                 "逆もまた同じ・その逆も",
+                 useCases: ["関係が双方向だと言うとき", "「逆も然り」と付け足すとき"],
+                 examples: [
+                    ("I help her with English and vice versa.", "僕が彼女の英語を手伝って、彼女も僕を手伝ってくれるんだ。"),
+                    ("If you need me, call me — and vice versa.", "困ったら電話して。逆もまたしかりね。")
+                 ], ipa: "/ˌvaɪsə ˈvɜːsə/"),
+            make("on the contrary", "used to say that the opposite is true",
+                 "それどころか・むしろ逆に",
+                 useCases: ["相手の予想と逆だと伝えるとき", "否定した後に本当のことを言うとき"],
+                 examples: [
+                    ("I don't mind at all. On the contrary, I'd love to help.", "全然かまわないよ。むしろ喜んで手伝うよ。"),
+                    ("It wasn't boring — on the contrary, it was fascinating.", "退屈じゃなかったよ。それどころか、すごく面白かった。")
+                 ], ipa: "/ˌɒn ðə ˈkɒntrəri/"),
+            make("before you know it", "very soon; much sooner than you expect",
+                 "あっという間に・気づいたら",
+                 useCases: ["時間がすぐ過ぎると言うとき", "相手を励ますとき"],
+                 examples: [
+                    ("It'll be Christmas before you know it.", "あっという間にクリスマスだよ。"),
+                    ("Don't worry, you'll be fluent before you know it.", "大丈夫、気づいたらペラペラになってるよ。")
+                 ], ipa: "/bɪˌfɔː ju ˈnəʊ ɪt/"),
+            make("the whole time", "during the entire period",
+                 "その間ずっと・最初から最後まで",
+                 useCases: ["ずっと続いていたことを言うとき", "気づかなかったことに驚くとき"],
+                 examples: [
+                    ("It rained the whole time we were in Scotland.", "スコットランドにいる間ずっと雨だったよ。"),
+                    ("You knew the whole time and didn't tell me?", "ずっと知ってたのに教えてくれなかったの？")
+                 ], ipa: "/ðə ˌhəʊl ˈtaɪm/"),
+            make("all day long", "for the whole day",
+                 "一日中・朝から晩まで",
+                 useCases: ["一日中何かしていたと言うとき", "ずっと続いて大変だったとき"],
+                 examples: [
+                    ("I've been on the phone all day long.", "一日中電話しっぱなしだったよ。"),
+                    ("The kids played outside all day long.", "子どもたちは一日中外で遊んでたよ。")
+                 ], ipa: "/ˌɔːl deɪ ˈlɒŋ/"),
+            make("thanks anyway", "thank you, even though you couldn't help",
+                 "とにかくありがとう・それでもありがとう",
+                 useCases: ["助けてもらえなかったけど感謝を伝えるとき", "断られた後に礼儀正しく終えるとき"],
+                 examples: [
+                    ("Sorry, I don't know where it is. — No worries, thanks anyway.", "ごめん、どこか分からないや。 — 大丈夫、ありがとね。"),
+                    ("They were fully booked, but thanks anyway.", "満席だったけど、とにかくありがとう。")
+                 ], ipa: "/ˌθæŋks ˈeniweɪ/"),
+            make("thanks for asking", "said when someone asks how you are or shows interest",
+                 "聞いてくれてありがとう・気にかけてくれてありがとう",
+                 useCases: ["体調や近況を聞かれたとき", "気遣ってもらったお礼を言うとき"],
+                 examples: [
+                    ("How's your mum doing? — Much better, thanks for asking.", "お母さんの具合どう？ — だいぶ良くなったよ、聞いてくれてありがとう。"),
+                    ("I'm fine, thanks for asking.", "元気だよ、気にかけてくれてありがとう。")
+                 ], ipa: "/ˌθæŋks fər ˈɑːskɪŋ/"),
+            make("at best", "even in the most positive case",
+                 "せいぜい・よくても",
+                 useCases: ["期待値を下げて言うとき", "最良の場合でも大したことないと言うとき"],
+                 examples: [
+                    ("We'll get there by six at best.", "よくても着くのは6時だね。"),
+                    ("The food was average at best.", "料理はせいぜい普通ってところだったね。")
+                 ], ipa: "/ət ˈbest/"),
+            make("in return", "as a way of giving something back",
+                 "お返しに・その代わりに",
+                 useCases: ["何かのお礼にお返しするとき", "交換条件を言うとき"],
+                 examples: [
+                    ("He fixed my bike, so I bought him lunch in return.", "自転車を直してくれたから、お返しにランチをおごったよ。"),
+                    ("What do you want in return?", "その代わりに何がほしいの？")
+                 ], ipa: "/ɪn rɪˈtɜːn/"),
+            make("on average", "usually; as a typical amount",
+                 "平均して・だいたい",
+                 useCases: ["普段の量や頻度を言うとき", "ざっくりした目安を伝えるとき"],
+                 examples: [
+                    ("On average, I go to the gym three times a week.", "平均して週3回ジムに行ってるよ。"),
+                    ("It takes about 40 minutes on average.", "だいたい平均40分くらいかかるよ。")
+                 ], ipa: "/ɒn ˈævərɪdʒ/"),
+            make("as it is", "already; in the present situation",
+                 "ただでさえ・現状でも",
+                 useCases: ["すでに十分大変だと言うとき", "今の状態のままでと言うとき"],
+                 examples: [
+                    ("We're late as it is — don't stop for coffee!", "ただでさえ遅れてるんだから、コーヒー買いに寄らないで！"),
+                    ("Leave it as it is, it looks fine.", "そのままでいいよ、いい感じだから。")
+                 ], ipa: "/əz ˈɪt ɪz/"),
+            make("not anymore", "used to say something was true before but isn't now",
+                 "もう〜ない・今はもう違う",
+                 useCases: ["以前と状況が変わったと言うとき", "もうやめた習慣を言うとき"],
+                 examples: [
+                    ("Do you still live in Manchester? — Not anymore, I moved to Leeds.", "まだマンチェスターに住んでるの？ — もう住んでないよ、リーズに引っ越した。"),
+                    ("I used to smoke, but not anymore.", "前はタバコ吸ってたけど、もうやめたよ。")
+                 ], ipa: "/ˌnɒt ˌeniˈmɔː/"),
+            make("that's about it", "that's all; there's nothing more",
+                 "まあそんなところかな・それくらいだよ",
+                 useCases: ["話や説明を締めくくるとき", "他に何もないと伝えるとき"],
+                 examples: [
+                    ("I went shopping, had a nap, and that's about it.", "買い物して、昼寝して、まあそんなとこかな。"),
+                    ("Anything else? — No, that's about it, thanks.", "他に何かある？ — いや、それくらいかな、ありがとう。")
+                 ], ipa: "/ˌðæts əˈbaʊt ɪt/"),
+        ]
+    }
+
+    private static var britishColloquial310: [Word] {
+        [
+            make("a slippery slope", "a situation where one small step is likely to lead to worse things",
+                 "坂道を転がるように悪化しかねないこと・危険な前例",
+                 useCases: ["一度許すと歯止めがきかなくなりそうなとき", "小さな妥協が大問題につながると警告するとき"],
+                 examples: [
+                    ("Skipping the gym once is fine, but it's a slippery slope.", "ジムを1回サボるのはいいけど、そこからズルズルいくんだよね。"),
+                    ("If we let one person work from home every day, it's a slippery slope.", "一人に毎日在宅を認めたら、なし崩しになるよ。")
+                 ], ipa: "/ə ˌslɪpəri ˈsləʊp/"),
+            make("a hot topic", "a subject that a lot of people are talking about or arguing about",
+                 "話題のテーマ・ホットな話題",
+                 useCases: ["みんなが話題にしていることを言うとき", "議論になりやすいテーマを紹介するとき"],
+                 examples: [
+                    ("Rent prices are a hot topic at the moment.", "今は家賃の高さがホットな話題だね。"),
+                    ("Don't bring up politics – it's a bit of a hot topic in this family.", "政治の話はやめて。うちの家族ではちょっと荒れる話題なんだ。")
+                 ], ipa: "/ə ˌhɒt ˈtɒpɪk/"),
+            make("a figure of speech", "words used in a way that is not meant literally",
+                 "言葉のあや・比喩的な言い方",
+                 useCases: ["本気で言ったわけではないと説明するとき", "文字通りの意味ではないと弁解するとき"],
+                 examples: [
+                    ("I didn't mean I'd actually kill him – it's just a figure of speech.", "本気で殺すって意味じゃないよ、ただの言葉のあやだって。"),
+                    ("\"Dying of hunger\" is a figure of speech, don't worry.", "「お腹が空いて死にそう」は言葉のあやだから心配しないで。")
+                 ], ipa: "/ə ˌfɪɡər əv ˈspiːtʃ/"),
+            make("a mixed blessing", "something that has both good and bad effects",
+                 "良し悪しのあるもの・ありがた迷惑な面もあること",
+                 useCases: ["良い面と悪い面の両方があると言うとき", "手放しで喜べないとき"],
+                 examples: [
+                    ("Working from home is a mixed blessing – no commute, but I never switch off.", "在宅勤務は良し悪しだね。通勤はないけど、全然オフにならない。"),
+                    ("Having my parents nearby is a mixed blessing.", "親が近くに住んでるのは、ありがたいような困るような感じだよ。")
+                 ], ipa: "/ə ˌmɪkst ˈblesɪŋ/"),
+            make("a hard sell", "something that is difficult to persuade people to accept or like",
+                 "説得するのが難しいこと・受け入れてもらいにくい話",
+                 useCases: ["相手を納得させるのが難しそうなとき", "提案が受け入れられにくいと予想するとき"],
+                 examples: [
+                    ("Camping in November is going to be a hard sell to the kids.", "11月にキャンプなんて、子どもたちを説得するのは大変そうだ。"),
+                    ("A pay cut is always a hard sell.", "減給を納得してもらうのはいつだって難しいよ。")
+                 ], ipa: "/ə ˌhɑːd ˈsel/"),
+            make("have a quiet word", "to speak to someone privately, often to tell them about a problem politely",
+                 "こっそり話をする・それとなく注意する",
+                 useCases: ["人前ではなく個別に注意したいとき", "内々に相談したいとき"],
+                 examples: [
+                    ("I'll have a quiet word with him about the noise.", "騒音のこと、彼にそれとなく言っておくよ。"),
+                    ("Can I have a quiet word with you after the meeting?", "会議の後、ちょっと二人で話せる？")
+                 ], ipa: "/hæv ə ˌkwaɪət ˈwɜːd/"),
+            make("for the long haul", "for a long period of time, especially when something is difficult",
+                 "長期戦で・長い目で見て腰を据えて",
+                 useCases: ["長く続けるつもりだと言うとき", "すぐには終わらないと覚悟するとき"],
+                 examples: [
+                    ("We're in this for the long haul, so pace yourself.", "これは長期戦だから、ペース配分してね。"),
+                    ("Learning a language is something you do for the long haul.", "語学は腰を据えてやるものだよ。")
+                 ], ipa: "/fə ðə ˌlɒŋ ˈhɔːl/"),
+            make("a trial run", "a test of something to see if it works before doing it properly",
+                 "試運転・お試し・リハーサル",
+                 useCases: ["本番前に試してみるとき", "新しいやり方をお試しでやるとき"],
+                 examples: [
+                    ("Let's do a trial run before the guests arrive.", "お客さんが来る前に一度試しにやってみよう。"),
+                    ("Think of this week as a trial run for the new schedule.", "今週は新しいスケジュールのお試し期間だと思って。")
+                 ], ipa: "/ə ˈtraɪəl ˌrʌn/"),
+            make("a talking point", "a subject that people discuss or that gets people talking",
+                 "話のネタ・話題になるもの",
+                 useCases: ["話のきっかけになるものを言うとき", "みんなが話題にしていることを指すとき"],
+                 examples: [
+                    ("That giant painting is a real talking point when people visit.", "あの巨大な絵は、人が来ると必ず話のネタになるんだ。"),
+                    ("The referee's decision was the main talking point after the match.", "試合後はレフェリーの判定が一番の話題だったね。")
+                 ], ipa: "/ə ˈtɔːkɪŋ ˌpɔɪnt/"),
+            make("a judgement call", "a decision you have to make based on your own opinion because there's no clear rule",
+                 "自分の判断に委ねられること・判断の分かれ目",
+                 useCases: ["正解がなく自分で判断するしかないとき", "判断を相手に任せるとき"],
+                 examples: [
+                    ("Whether to cancel is a judgement call – it's up to you.", "中止するかどうかは判断次第だね。君に任せるよ。"),
+                    ("I made a judgement call and left early.", "自分の判断で早めに帰ったんだ。")
+                 ], ipa: "/ə ˈdʒʌdʒmənt ˌkɔːl/"),
+            make("growing pains", "problems that happen when something new or growing is developing",
+                 "成長に伴う問題・立ち上げ期の苦労",
+                 useCases: ["新しい会社や仕組みのトラブルを説明するとき", "変化の途中のゴタゴタを言うとき"],
+                 examples: [
+                    ("The new system has a few growing pains, but it'll settle down.", "新システムはまだいくつか問題があるけど、そのうち落ち着くよ。"),
+                    ("Every new team goes through growing pains.", "新しいチームは必ず最初は苦労するものだよ。")
+                 ], ipa: "/ˈɡrəʊɪŋ ˌpeɪnz/"),
+            make("a hot potato", "a difficult or controversial issue that nobody wants to deal with",
+                 "扱いにくい問題・厄介な案件",
+                 useCases: ["誰も触れたがらない問題を言うとき", "責任を押し付け合っている話題のとき"],
+                 examples: [
+                    ("Immigration is a bit of a hot potato right now.", "移民問題は今ちょっと扱いにくい話題だね。"),
+                    ("Nobody wants to deal with the budget – it's a real hot potato.", "誰も予算の件に触りたがらない。本当に厄介な案件だよ。")
+                 ], ipa: "/ə ˌhɒt pəˈteɪtəʊ/"),
+            make("a stroke of luck", "something lucky that happens unexpectedly",
+                 "思いがけない幸運・ラッキーな偶然",
+                 useCases: ["思わぬ幸運に恵まれたとき", "たまたまうまくいったとき"],
+                 examples: [
+                    ("By a stroke of luck, there was one table left.", "運よく、テーブルが一つだけ空いてたんだ。"),
+                    ("Finding this flat was a real stroke of luck.", "このフラットが見つかったのは本当にラッキーだった。")
+                 ], ipa: "/ə ˌstrəʊk əv ˈlʌk/"),
+            make("a knee-jerk reaction", "a quick reaction made without thinking carefully",
+                 "反射的な反応・脊髄反射的な対応",
+                 useCases: ["よく考えずに反応してしまったとき", "感情的な即断を戒めるとき"],
+                 examples: [
+                    ("Sorry, that was a knee-jerk reaction – let me think about it.", "ごめん、反射的に言っちゃった。ちょっと考えさせて。"),
+                    ("Banning phones completely feels like a knee-jerk reaction.", "スマホを全面禁止するのは、ちょっと短絡的な対応に思えるな。")
+                 ], ipa: "/ə ˌniː dʒɜːk riˈækʃən/"),
+            make("a new lease of life", "new energy or a chance to be successful or useful again",
+                 "新たな活力・第二の人生・息を吹き返すこと",
+                 useCases: ["元気を取り戻した人を言うとき", "古いものが再び使えるようになったとき"],
+                 examples: [
+                    ("Retirement has given my dad a new lease of life.", "引退してから父は生き生きしてるよ。"),
+                    ("A bit of paint gave the old chair a new lease of life.", "ペンキを少し塗ったら、古い椅子が生き返ったよ。")
+                 ], ipa: "/ə ˌnjuː ˌliːs əv ˈlaɪf/"),
+        ]
+    }
+
+    private static var britishColloquial309: [Word] {
+        [
+            make("a running joke", "a joke that people keep repeating over a long time",
+                 "お決まりのネタ・内輪の定番ジョーク",
+                 useCases: ["仲間内でずっと続いているネタを話すとき", "毎回からかわれることを説明するとき"],
+                 examples: [
+                    ("It's become a running joke in the office that I'm always late.", "僕がいつも遅刻するのは、もう職場のお決まりのネタになってるよ。"),
+                    ("The broken coffee machine is a running joke at this point.", "壊れたコーヒーマシンはもはや定番のネタだね。")
+                 ], ipa: "/ə ˌrʌnɪŋ ˈdʒəʊk/"),
+            make("a fish out of water", "someone who feels uncomfortable in an unfamiliar situation",
+                 "場違いな人・水を得ない魚（居心地が悪い状態）",
+                 useCases: ["慣れない場所で居心地が悪いとき", "場違いだと感じたとき"],
+                 examples: [
+                    ("I felt like a fish out of water at that posh dinner.", "あの高級なディナーではすごく場違いな気がしたよ。"),
+                    ("He was a bit of a fish out of water on his first day.", "彼、初日はちょっと居心地悪そうだったね。")
+                 ], ipa: "/ə ˌfɪʃ aʊt əv ˈwɔːtə/"),
+            make("a drop in the ocean", "an amount that is too small to make a difference",
+                 "焼け石に水・ほんのわずか",
+                 useCases: ["量が少なすぎて効果がないとき", "全体に比べてごくわずかだと言うとき"],
+                 examples: [
+                    ("A hundred quid is a drop in the ocean compared to what we owe.", "借金に比べたら100ポンドなんて焼け石に水だよ。"),
+                    ("It's only a drop in the ocean, but every little helps.", "ほんのわずかだけど、少しでも助けになるからね。")
+                 ], ipa: "/ə ˌdrɒp ɪn ði ˈəʊʃən/"),
+            make("the bigger picture", "the situation as a whole, not just the small details",
+                 "全体像・大局",
+                 useCases: ["細かいことにとらわれている人に視野を広げてほしいとき", "長い目で考えるとき"],
+                 examples: [
+                    ("Don't worry about one bad day – look at the bigger picture.", "一日うまくいかなかったくらいで気にしないで。全体を見てよ。"),
+                    ("We need to keep the bigger picture in mind here.", "ここは大局を忘れないようにしないとね。")
+                 ], ipa: "/ðə ˌbɪɡə ˈpɪktʃə/"),
+            make("a false alarm", "a warning or worry about something that turns out not to happen",
+                 "誤報・取り越し苦労",
+                 useCases: ["心配したけど何でもなかったとき", "警報が誤作動だったとき"],
+                 examples: [
+                    ("Don't panic – it was just a false alarm.", "慌てないで、ただの誤報だったから。"),
+                    ("I thought I'd lost my passport, but it was a false alarm.", "パスポートなくしたと思ったけど、勘違いだったよ。")
+                 ], ipa: "/ə ˌfɔːls əˈlɑːm/"),
+            make("force of habit", "doing something automatically because you always do it",
+                 "いつもの癖・習慣でつい",
+                 useCases: ["無意識にいつもの行動をしてしまったとき", "癖を言い訳するとき"],
+                 examples: [
+                    ("Sorry, I locked the door out of force of habit.", "ごめん、いつもの癖でドアに鍵かけちゃった。"),
+                    ("I still wake up at six – force of habit, I suppose.", "まだ6時に目が覚めるんだ。習慣だろうね。")
+                 ], ipa: "/ˌfɔːs əv ˈhæbɪt/"),
+            make("a pipe dream", "a hope or plan that is very unlikely to happen",
+                 "叶わぬ夢・絵に描いた餅",
+                 useCases: ["実現しそうにない計画を話すとき", "夢物語だと自嘲するとき"],
+                 examples: [
+                    ("Retiring at forty is probably a pipe dream.", "40歳で引退なんて、たぶん夢のまた夢だよ。"),
+                    ("Owning a house in London feels like a pipe dream.", "ロンドンに家を持つなんて叶わぬ夢みたい。")
+                 ], ipa: "/ə ˈpaɪp ˌdriːm/"),
+            make("a means to an end", "something you do only to achieve something else, not because you enjoy it",
+                 "目的のための手段・ただの手段",
+                 useCases: ["好きではないけど目的のためにやっていることを話すとき", "仕事への割り切りを表すとき"],
+                 examples: [
+                    ("This job is just a means to an end until I finish my degree.", "この仕事は学位を取るまでのただの手段だよ。"),
+                    ("For me, running is a means to an end – I just want to get fit.", "僕にとってランニングは手段にすぎないよ。健康になりたいだけ。")
+                 ], ipa: "/ə ˌmiːnz tʊ ən ˈend/"),
+            make("a labour of love", "hard work that you do because you enjoy it, not for money",
+                 "好きでやっている仕事・愛情を注いだ作品",
+                 useCases: ["趣味や好きなことに手間をかけたとき", "採算度外視の作品を紹介するとき"],
+                 examples: [
+                    ("Restoring this old car has been a real labour of love.", "この古い車の修理は、まさに好きでやってることなんだ。"),
+                    ("The garden is her labour of love.", "あの庭は彼女が愛情を込めて手入れしてるんだよ。")
+                 ], ipa: "/ə ˌleɪbər əv ˈlʌv/"),
+            make("the flip side", "the opposite or less positive aspect of something",
+                 "裏を返せば・反面",
+                 useCases: ["良い面と悪い面の両方を話すとき", "物事の別の側面を指摘するとき"],
+                 examples: [
+                    ("Working from home is great, but the flip side is you never switch off.", "在宅勤務は最高だけど、反面ずっとオフにならないんだよね。"),
+                    ("On the flip side, it's a lot cheaper.", "逆に言えば、ずっと安いけどね。")
+                 ], ipa: "/ðə ˈflɪp ˌsaɪd/"),
+            make("a two-way street", "a situation where both people must make an effort",
+                 "お互い様・持ちつ持たれつ",
+                 useCases: ["一方だけが努力するのはおかしいと言うとき", "相互の協力を求めるとき"],
+                 examples: [
+                    ("Respect is a two-way street.", "敬意はお互い様だよ。"),
+                    ("Friendship's a two-way street – you have to make an effort too.", "友情は持ちつ持たれつ。君も努力しなきゃ。")
+                 ], ipa: "/ə ˌtuː weɪ ˈstriːt/"),
+            make("a vicious circle", "a bad situation that keeps making itself worse",
+                 "悪循環",
+                 useCases: ["悪いことが連鎖しているとき", "抜け出せない状況を説明するとき"],
+                 examples: [
+                    ("I'm tired so I drink coffee, then I can't sleep – it's a vicious circle.", "疲れてコーヒー飲んで、眠れなくなる。悪循環だよ。"),
+                    ("We need to break this vicious circle somehow.", "どうにかこの悪循環を断ち切らないと。")
+                 ], ipa: "/ə ˌvɪʃəs ˈsɜːkəl/"),
+            make("a selling point", "a feature that makes something attractive to people",
+                 "売り・セールスポイント",
+                 useCases: ["物件や商品の魅力を話すとき", "何が一番の長所かを伝えるとき"],
+                 examples: [
+                    ("The big garden is the main selling point of the flat.", "広い庭がそのフラットの一番の売りだね。"),
+                    ("Honestly, the price is its biggest selling point.", "正直、値段が一番のセールスポイントだよ。")
+                 ], ipa: "/ə ˈselɪŋ ˌpɔɪnt/"),
+            make("a late bloomer", "someone who becomes successful or skilled later than usual",
+                 "遅咲きの人・大器晩成",
+                 useCases: ["人より遅れて才能が開花した人を話すとき", "自分の成長が遅かったことを話すとき"],
+                 examples: [
+                    ("I was a bit of a late bloomer – I didn't find my career until thirty.", "僕はちょっと遅咲きでね、30歳までキャリアが見つからなかったんだ。"),
+                    ("Don't worry about him – some kids are just late bloomers.", "彼のことは心配いらないよ。大器晩成の子もいるから。")
+                 ], ipa: "/ə ˌleɪt ˈbluːmə/"),
+            make("a people-pleaser", "someone who always tries hard to make others happy, often too much",
+                 "人に合わせすぎる人・八方美人",
+                 useCases: ["断れない性格を話すとき", "人の顔色を気にしすぎる人を表すとき"],
+                 examples: [
+                    ("I'm such a people-pleaser – I can never say no.", "私って本当に人に合わせすぎるの。全然断れないんだ。"),
+                    ("Stop being a people-pleaser and do what you want for once.", "人の顔色ばかり見てないで、たまには自分のしたいことしなよ。")
+                 ], ipa: "/ə ˈpiːpəl ˌpliːzə/"),
+        ]
+    }
+    private static var britishColloquial308: [Word] {
+        [
+            make("a dry run", "a practice or rehearsal before the real event",
+                 "予行演習・リハーサル",
+                 useCases: ["本番前に一度試してみるとき", "プレゼンや発表の練習を提案するとき"],
+                 examples: [
+                    ("Let's do a dry run of the presentation tomorrow morning.", "明日の朝、プレゼンの予行演習をしようよ。"),
+                    ("We did a dry run last week, so it should go smoothly.", "先週リハーサルしたから、うまくいくはずだよ。")
+                 ], ipa: "/ə ˌdraɪ ˈrʌn/"),
+            make("a happy medium", "a satisfactory balance between two extremes",
+                 "ちょうどいい落としどころ・ほどよい中間",
+                 useCases: ["極端を避けてバランスを取りたいとき", "妥協点を探すとき"],
+                 examples: [
+                    ("I'm trying to find a happy medium between work and family.", "仕事と家族のちょうどいいバランスを探してるんだ。"),
+                    ("Three days in the office seems like a happy medium.", "週3日出社くらいがちょうどいい落としどころじゃないかな。")
+                 ], ipa: "/ə ˌhæpi ˈmiːdiəm/"),
+            make("a lightbulb moment", "a moment when you suddenly understand or have a good idea",
+                 "ひらめいた瞬間・ピンときた瞬間",
+                 useCases: ["急に理解できたとき", "良いアイデアが浮かんだとき"],
+                 examples: [
+                    ("It was a real lightbulb moment when she explained it like that.", "彼女にそう説明されて、まさにピンときたよ。"),
+                    ("I had a lightbulb moment in the shower this morning.", "今朝シャワー中にひらめいたんだ。")
+                 ], ipa: "/ə ˈlaɪtbʌlb ˌməʊmənt/"),
+            make("put a pin in it", "(informal) to pause a topic and come back to it later",
+                 "いったん保留にする・後で話そう",
+                 useCases: ["会議で話題を後回しにするとき", "今は決めずに置いておくとき"],
+                 examples: [
+                    ("Good idea – let's put a pin in it and come back to it next week.", "いい案だね。いったん保留にして来週また話そう。"),
+                    ("Can we put a pin in that? We're running out of time.", "それ、後回しにしてもいい？時間がなくなってきたから。")
+                 ], ipa: "/ˌpʊt ə ˈpɪn ɪn ɪt/"),
+            make("a fine line", "a very small difference between two things",
+                 "紙一重・微妙な境目",
+                 useCases: ["二つのものの違いがわずかなとき", "やりすぎに注意を促すとき"],
+                 examples: [
+                    ("There's a fine line between confident and arrogant.", "自信があるのと傲慢なのは紙一重だよ。"),
+                    ("It's a fine line between being helpful and being nosy.", "親切とおせっかいの境目って微妙だよね。")
+                 ], ipa: "/ə ˌfaɪn ˈlaɪn/"),
+            make("be thrown in at the deep end", "to be made to do something difficult without preparation or help",
+                 "いきなり難しいことを任される・ぶっつけ本番",
+                 useCases: ["新しい仕事でいきなり大役を任されたとき", "準備なしで始めた経験を話すとき"],
+                 examples: [
+                    ("I was thrown in at the deep end on my first day.", "初日からいきなり大変な仕事を任されたよ。"),
+                    ("Being thrown in at the deep end is the best way to learn.", "いきなり実践でやらされるのが一番身につくよね。")
+                 ], ipa: "/bi ˌθrəʊn ɪn ət ðə ˌdiːp ˈend/"),
+            make("a wild guess", "a guess made with no real information",
+                 "当てずっぽう・あてずっぽうの推測",
+                 useCases: ["根拠なく推測するとき", "答えに自信がないと伝えるとき"],
+                 examples: [
+                    ("I'm just taking a wild guess, but is it about twenty quid?", "当てずっぽうだけど、20ポンドくらい？"),
+                    ("Can you give me a wild guess? Just roughly.", "当てずっぽうでいいから、ざっくりでいいよ。")
+                 ], ipa: "/ə ˌwaɪld ˈɡes/"),
+            make("a sounding board", "a person you discuss ideas with to get their opinion",
+                 "相談相手・意見を聞いてもらう人",
+                 useCases: ["アイデアを聞いてもらいたいとき", "頼れる相談相手を紹介するとき"],
+                 examples: [
+                    ("Can I use you as a sounding board for a minute?", "ちょっとだけ考えを聞いてもらってもいい？"),
+                    ("My sister's always been a great sounding board.", "姉はずっと最高の相談相手なんだ。")
+                 ], ipa: "/ə ˈsaʊndɪŋ ˌbɔːd/"),
+            make("a curveball", "(informal) something unexpected that is difficult to deal with",
+                 "予想外の出来事・想定外の展開",
+                 useCases: ["突然の問題や変化を話すとき", "予定が狂ったとき"],
+                 examples: [
+                    ("Life threw us a bit of a curveball this year.", "今年は人生で予想外のことが起きたんだ。"),
+                    ("That question was a real curveball.", "あの質問は完全に想定外だったよ。")
+                 ], ipa: "/ə ˈkɜːvbɔːl/"),
+            make("a tough call", "a difficult decision",
+                 "難しい判断・悩ましい決断",
+                 useCases: ["どちらを選ぶか迷っているとき", "相手の決断の難しさに共感するとき"],
+                 examples: [
+                    ("Pizza or curry? That's a tough call.", "ピザかカレーか？悩ましいな。"),
+                    ("It was a tough call, but I think we made the right decision.", "難しい判断だったけど、正しい選択だったと思う。")
+                 ], ipa: "/ə ˌtʌf ˈkɔːl/"),
+            make("a whole new ball game", "a completely different situation from before",
+                 "まったく別の話・状況がガラッと変わる",
+                 useCases: ["以前と全然違う状況を説明するとき", "新しい環境の大変さを話すとき"],
+                 examples: [
+                    ("Having kids is a whole new ball game.", "子どもがいると、もう全然違う世界だよ。"),
+                    ("Driving in London is a whole new ball game.", "ロンドンでの運転はまったく別物だよ。")
+                 ], ipa: "/ə ˌhəʊl njuː ˈbɔːl ɡeɪm/"),
+            make("a must-have", "something that you think is essential to own",
+                 "必需品・絶対に持っておきたいもの",
+                 useCases: ["おすすめのアイテムを紹介するとき", "欠かせない物を話すとき"],
+                 examples: [
+                    ("A good umbrella is a must-have in this country.", "この国ではいい傘は必需品だよ。"),
+                    ("These headphones are a must-have for long flights.", "このヘッドホンは長距離フライトには絶対必要だね。")
+                 ], ipa: "/ə ˈmʌst hæv/"),
+            make("a fallback", "something you can use or do if your first plan fails",
+                 "代わりの案・保険・予備の手段",
+                 useCases: ["プランBを用意しておくとき", "うまくいかない場合の備えを話すとき"],
+                 examples: [
+                    ("If it rains, the pub's our fallback.", "雨が降ったら、パブが代わりの案ね。"),
+                    ("It's always good to have a fallback.", "保険を用意しておくのはいつだって大事だよ。")
+                 ], ipa: "/ə ˈfɔːlbæk/"),
+            make("have a wobble", "(British, informal) to suddenly feel nervous, unsure or lose confidence",
+                 "急に不安になる・気持ちが揺らぐ",
+                 useCases: ["直前で自信がなくなったとき", "一時的に弱気になったことを話すとき"],
+                 examples: [
+                    ("I had a bit of a wobble before the interview, but I was fine.", "面接の前にちょっと弱気になったけど、大丈夫だったよ。"),
+                    ("Everyone has a wobble now and then – don't worry.", "誰だって時々気持ちが揺らぐものだよ。気にしないで。")
+                 ], ipa: "/ˌhæv ə ˈwɒbl/"),
+            make("throw a spanner in the works", "(British, informal) to cause a problem that stops a plan from going smoothly",
+                 "計画を台無しにする・邪魔が入る",
+                 useCases: ["予定外の問題で計画が狂ったとき", "誰かが邪魔をしたと話すとき"],
+                 examples: [
+                    ("The train strike has really thrown a spanner in the works.", "電車のストで計画が完全に狂っちゃったよ。"),
+                    ("I don't want to throw a spanner in the works, but I can't make Friday.", "水を差したくないんだけど、金曜は行けないんだ。")
+                 ], ipa: "/ˌθrəʊ ə ˈspænər ɪn ðə ˈwɜːks/"),
+        ]
+    }
+    private static var britishColloquial307: [Word] {
+        [
+            make("a flying visit", "(British, informal) a very short visit",
+                 "ちょっと立ち寄るだけ・短い訪問",
+                 useCases: ["長居できないと伝えるとき", "短時間だけ会いに行ったと話すとき"],
+                 examples: [
+                    ("It's only a flying visit – I've got to be back by six.", "ちょっと寄っただけなんだ。6時までに戻らなきゃいけなくて。"),
+                    ("My parents paid us a flying visit at the weekend.", "週末に両親がちょっとだけ顔を出してくれたよ。")
+                 ], ipa: "/ə ˌflaɪɪŋ ˈvɪzɪt/"),
+            make("for donkey's years", "(British, informal) for a very long time",
+                 "ものすごく長い間・何年も前から",
+                 useCases: ["長い付き合い・長年の習慣を話すとき", "久しぶりだと強調するとき"],
+                 examples: [
+                    ("We've known each other for donkey's years.", "私たち、もう何年来の付き合いだよ。"),
+                    ("I haven't been to the cinema for donkey's years.", "映画館なんてもう何年も行ってないな。")
+                 ], ipa: "/fə ˈdɒŋkiz ˌjɪəz/"),
+            make("a slog", "(informal) a long, tiring piece of work, journey or period",
+                 "骨の折れる大変なこと・長くてしんどい作業",
+                 useCases: ["しんどい仕事や移動を話すとき", "根気がいる作業を表すとき"],
+                 examples: [
+                    ("The drive up was a bit of a slog.", "行きの運転はちょっとしんどかったよ。"),
+                    ("Revising for exams is such a slog.", "試験勉強って本当に骨が折れるよね。")
+                 ], ipa: "/ə ˈslɒɡ/"),
+            make("have your head in the clouds", "to be dreamy and not pay attention to practical things",
+                 "ぼんやりしている・上の空・夢見がち",
+                 useCases: ["ぼーっとしている人に", "現実離れした考えの人を言うとき"],
+                 examples: [
+                    ("Sorry, I've got my head in the clouds today.", "ごめん、今日は上の空でさ。"),
+                    ("He's lovely, but he's always got his head in the clouds.", "いい人なんだけど、いつもぼんやりしてるんだよね。")
+                 ], ipa: "/hæv jə ˌhed ɪn ðə ˈklaʊdz/"),
+            make("don't sweat it", "(informal) used to tell someone not to worry about something",
+                 "気にしないで・心配いらないよ",
+                 useCases: ["謝られたときに軽く返すとき", "相手の不安を和らげるとき"],
+                 examples: [
+                    ("You forgot to call? Don't sweat it.", "電話忘れた？気にしないでいいよ。"),
+                    ("Don't sweat it – we've got plenty of time.", "心配いらないよ、時間はたっぷりあるから。")
+                 ], ipa: "/ˌdəʊnt ˈswet ɪt/"),
+            make("brekkie", "(British/Australian, informal) breakfast",
+                 "朝ごはん（くだけた言い方）",
+                 useCases: ["友達や家族と朝食の話をするとき", "カジュアルに朝ごはんに誘うとき"],
+                 examples: [
+                    ("Fancy grabbing brekkie before work?", "仕事の前に朝ごはん食べに行かない？"),
+                    ("What did you have for brekkie?", "朝ごはん何食べた？")
+                 ], ipa: "/ˈbreki/"),
+            make("a staple", "something that is used or eaten regularly and is very important",
+                 "定番・欠かせないもの",
+                 useCases: ["いつも食べているもの・使うものを話すとき", "定番アイテムを紹介するとき"],
+                 examples: [
+                    ("Pasta is a staple in our house.", "うちではパスタは欠かせない定番なんだ。"),
+                    ("A good black coat is a wardrobe staple.", "いい黒のコートはクローゼットの定番だよ。")
+                 ], ipa: "/ə ˈsteɪpl/"),
+            make("muscle memory", "the ability to do something automatically because you have done it many times",
+                 "体が覚えている感覚",
+                 useCases: ["久しぶりでも自然にできたとき", "練習の大切さを話すとき"],
+                 examples: [
+                    ("I hadn't played for years, but muscle memory kicked in.", "何年も弾いてなかったけど、体が覚えてたよ。"),
+                    ("It's all muscle memory at this point.", "もうここまで来ると体が勝手に動くんだ。")
+                 ], ipa: "/ˈmʌsl ˌmeməri/"),
+            make("sharpish", "(British, informal) quickly; without delay",
+                 "さっさと・急いで・すぐに",
+                 useCases: ["急いでやる必要があるとき", "相手に早めの行動を促すとき"],
+                 examples: [
+                    ("We'd better leave sharpish or we'll miss the train.", "さっさと出ないと電車に乗り遅れるよ。"),
+                    ("I need that back sharpish, if that's OK.", "悪いけど、それすぐ返してほしいんだ。")
+                 ], ipa: "/ˈʃɑːpɪʃ/"),
+            make("nifty", "(informal) clever, useful and well designed",
+                 "気が利いた・便利な・よくできた",
+                 useCases: ["便利な道具やアイデアを褒めるとき", "ちょっとした工夫に感心したとき"],
+                 examples: [
+                    ("That's a nifty little gadget.", "それ、気の利いた便利グッズだね。"),
+                    ("She showed me a nifty trick for folding shirts.", "彼女がシャツをきれいに畳む便利な技を教えてくれた。")
+                 ], ipa: "/ˈnɪfti/"),
+            make("a snip", "(British, informal) something that is surprisingly cheap",
+                 "お買い得・格安",
+                 useCases: ["安く買えたと自慢するとき", "値段がお得だと言うとき"],
+                 examples: [
+                    ("It was a snip at twenty quid.", "20ポンドなんて激安だったよ。"),
+                    ("These flights are a snip if you book early.", "早めに予約すればこの便はかなりお得だよ。")
+                 ], ipa: "/ə ˈsnɪp/"),
+            make("be hard work", "(informal) to be tiring or difficult to deal with, often said about a person or situation",
+                 "（人・状況が）手がかかる・疲れる",
+                 useCases: ["付き合うのが疲れる人のことを言うとき", "しんどい状況を話すとき"],
+                 examples: [
+                    ("The kids were hard work today.", "今日は子どもたちが手に負えなくて疲れたよ。"),
+                    ("Honestly, he can be really hard work sometimes.", "正直、彼って時々すごく疲れるんだよね。")
+                 ], ipa: "/bi ˌhɑːd ˈwɜːk/"),
+            make("plonk yourself down", "(British, informal) to sit down heavily and casually",
+                 "ドカッと座る・どっかり腰を下ろす",
+                 useCases: ["疲れて座り込むとき", "気軽に座ってと勧めるとき"],
+                 examples: [
+                    ("Just plonk yourself down anywhere.", "どこでも適当に座ってね。"),
+                    ("I got home and plonked myself down on the sofa.", "家に帰ってソファにドカッと座り込んだよ。")
+                 ], ipa: "/ˈplɒŋk jɔːself ˈdaʊn/"),
+            make("what a palaver", "(British, informal) used to complain about a lot of fuss or complicated procedure",
+                 "なんて面倒くさい・大騒ぎだな",
+                 useCases: ["手続きが面倒なとき", "ちょっとしたことで大騒ぎになったとき"],
+                 examples: [
+                    ("Three forms just to change my address – what a palaver!", "住所変更だけで書類3枚って、なんて面倒なんだ！"),
+                    ("Getting everyone in the car was a right palaver.", "全員を車に乗せるのが一苦労だったよ。")
+                 ], ipa: "/ˌwɒt ə pəˈlɑːvə/"),
+            make("a smart cookie", "(informal) a clever, sensible person",
+                 "頭の切れる人・しっかり者",
+                 useCases: ["人の賢さを褒めるとき", "抜け目のない人を言うとき"],
+                 examples: [
+                    ("Your daughter's a smart cookie.", "娘さん、頭の回転が速いね。"),
+                    ("Don't try to fool her – she's a smart cookie.", "彼女をごまかそうとしても無駄だよ、賢いから。")
+                 ], ipa: "/ə ˌsmɑːt ˈkʊki/"),
+        ]
+    }
+    private static var britishColloquial302: [Word] {
+        [
+            make("any joy?", "(British, informal) used to ask whether someone has had any success with something",
+                 "うまくいった？・成果あった？",
+                 useCases: ["頼んでいたことの進み具合を聞くとき", "探し物や問い合わせの結果を尋ねるとき"],
+                 examples: [
+                    ("Any joy with the landlord about the boiler?", "ボイラーの件、大家さんとはうまくいった？"),
+                    ("I tried calling them again, but no joy.", "もう一回電話してみたけど、ダメだったよ。")
+                 ], ipa: "/ˈeni ˈdʒɔɪ/"),
+            make("make a night of it", "to decide to spend the whole evening enjoying yourself, rather than just going out for a short time",
+                 "（せっかくだから）夜通し楽しむ・とことん楽しむ",
+                 useCases: ["軽く出かけるつもりが長く遊ぶことにしたとき", "特別な夜を存分に楽しもうと提案するとき"],
+                 examples: [
+                    ("We only went for one drink, but ended up making a night of it.", "一杯だけのつもりが、結局夜通し楽しんじゃった。"),
+                    ("It's your birthday – let's make a night of it!", "誕生日なんだから、とことん楽しもうよ！")
+                 ], ipa: "/ˈmeɪk ə ˈnaɪt əv ɪt/"),
+            make("last I heard", "according to the most recent information I have",
+                 "最後に聞いた話では・私が知る限り最近は",
+                 useCases: ["知人の近況を伝えるとき", "情報が古いかもしれないと前置きするとき"],
+                 examples: [
+                    ("Last I heard, Tom was living in Berlin.", "最後に聞いた話だと、トムはベルリンに住んでたよ。"),
+                    ("Last I heard, the meeting was still on for Friday.", "私が聞いた限りでは、会議はまだ金曜の予定だったよ。")
+                 ], ipa: "/ˈlɑːst aɪ ˈhɜːd/"),
+            make("word has it", "people are saying (that); there is a rumour (that)",
+                 "噂では〜らしい・〜という話だ",
+                 useCases: ["噂話を伝えるとき", "確定していない情報を共有するとき"],
+                 examples: [
+                    ("Word has it they're opening a new café on the high street.", "噂だと、大通りに新しいカフェができるらしいよ。"),
+                    ("Word has it Sarah's leaving the company.", "サラが会社を辞めるって話だよ。")
+                 ], ipa: "/ˈwɜːd hæz ɪt/"),
+            make("try your luck", "to attempt to do something, hoping that you will be successful even though it might not work",
+                 "運試しをする・ダメ元でやってみる",
+                 useCases: ["ダメ元で挑戦するとき", "予約なしでお店に行ってみるとき"],
+                 examples: [
+                    ("We didn't book, but we thought we'd try our luck.", "予約はしてないけど、ダメ元で来てみたんだ。"),
+                    ("He's moving to London to try his luck as an actor.", "彼は俳優として運試しするためにロンドンに引っ越すんだ。")
+                 ], ipa: "/ˈtraɪ jɔː ˈlʌk/"),
+            make("a bit of a stretch", "(informal) a claim or idea that is difficult to believe or accept; something slightly beyond what is reasonable",
+                 "ちょっと無理がある・こじつけっぽい",
+                 useCases: ["相手の主張が強引だと感じたとき", "予算や目標が厳しいと言うとき"],
+                 examples: [
+                    ("Calling it a 'luxury hotel' is a bit of a stretch.", "あれを「高級ホテル」と呼ぶのはちょっと無理があるよ。"),
+                    ("Finishing it by Monday might be a bit of a stretch.", "月曜までに終わらせるのはちょっと厳しいかも。")
+                 ], ipa: "/ə ˈbɪt əv ə ˈstretʃ/"),
+            make("paint the town red", "(informal) to go out and enjoy yourself in a lively way, especially by going to bars, clubs or parties",
+                 "派手に遊びに繰り出す・飲み歩いて盛り上がる",
+                 useCases: ["お祝いで夜遊びに出かけるとき", "週末の予定を楽しそうに話すとき"],
+                 examples: [
+                    ("Exams are over – let's go and paint the town red!", "試験終わったし、パーッと遊びに行こう！"),
+                    ("They went out to paint the town red after the wedding.", "結婚式の後、みんなで派手に飲み歩いたんだ。")
+                 ], ipa: "/ˈpeɪnt ðə ˈtaʊn ˈred/"),
+            make("bank on", "to depend on something happening or on someone doing something",
+                 "〜を当てにする・〜を頼りにする",
+                 useCases: ["期待しすぎないよう忠告するとき", "確実に起こると見込むとき"],
+                 examples: [
+                    ("I wouldn't bank on the trains running on time.", "電車が時間通りに来るとは当てにしない方がいいよ。"),
+                    ("You can bank on Mike to bring the snacks.", "お菓子はマイクが絶対持ってくるから大丈夫。")
+                 ], ipa: "/ˈbæŋk ɒn/"),
+            make("set in your ways", "having habits and opinions that you have had for a long time and do not want to change",
+                 "考え方ややり方が凝り固まっている・頑固な",
+                 useCases: ["年配の家族について話すとき", "自分が変化を嫌うと認めるとき"],
+                 examples: [
+                    ("My dad's a bit set in his ways – he won't even try a smartphone.", "父はちょっと頑固でさ、スマホを試そうともしないんだ。"),
+                    ("I'm getting set in my ways in my old age.", "年を取ってだんだん自分のやり方を変えられなくなってきたよ。")
+                 ], ipa: "/ˈset ɪn jɔː ˈweɪz/"),
+            make("a stickler for", "a person who thinks a particular type of behaviour or rule is very important and expects others to follow it",
+                 "〜にうるさい人・〜にこだわる人",
+                 useCases: ["時間やルールに厳しい人を説明するとき", "細かいことにこだわる性格を話すとき"],
+                 examples: [
+                    ("My boss is a real stickler for punctuality.", "うちの上司は時間厳守にすごくうるさいんだ。"),
+                    ("She's a stickler for grammar, so check your email twice.", "彼女は文法に厳しいから、メールは二度確認してね。")
+                 ], ipa: "/ə ˈstɪklə fɔː/"),
+            make("stuck-up", "(informal) thinking you are better than other people and behaving in an unfriendly way",
+                 "お高くとまった・気取った",
+                 useCases: ["感じの悪い人について話すとき", "第一印象と実際が違ったと言うとき"],
+                 examples: [
+                    ("I thought she was stuck-up at first, but she's actually really nice.", "最初はお高くとまってると思ったけど、実はすごくいい人なんだ。"),
+                    ("The staff there are a bit stuck-up.", "あそこの店員はちょっと気取ってるんだよね。")
+                 ], ipa: "/ˌstʌk ˈʌp/"),
+            make("kind-hearted", "having a kind and caring nature",
+                 "心の優しい・思いやりのある",
+                 useCases: ["人の人柄を褒めるとき", "誰かを紹介するとき"],
+                 examples: [
+                    ("Our neighbour is such a kind-hearted woman – she always checks on us.", "お隣さんは本当に心の優しい人で、いつも様子を見に来てくれるんだ。"),
+                    ("He can seem gruff, but he's very kind-hearted.", "彼はぶっきらぼうに見えるけど、とても優しいんだよ。")
+                 ], ipa: "/ˌkaɪnd ˈhɑːtɪd/"),
+            make("light-hearted", "not serious; cheerful and intended to be fun",
+                 "気楽な・軽いノリの・陽気な",
+                 useCases: ["冗談や話題が深刻でないと伝えるとき", "映画や雰囲気を説明するとき"],
+                 examples: [
+                    ("It was just a light-hearted joke – don't take it the wrong way.", "ただの軽い冗談だよ、悪く取らないで。"),
+                    ("Let's watch something light-hearted tonight.", "今夜は何か気楽に見られるものにしよう。")
+                 ], ipa: "/ˌlaɪt ˈhɑːtɪd/"),
+            make("short-tempered", "becoming angry very easily",
+                 "短気な・怒りっぽい",
+                 useCases: ["疲れてイライラしていると謝るとき", "怒りっぽい人について話すとき"],
+                 examples: [
+                    ("Sorry I was short-tempered earlier – I'm just really tired.", "さっきはイライラしててごめん、すごく疲れてて。"),
+                    ("He gets a bit short-tempered when he's hungry.", "彼はお腹が空くとちょっと怒りっぽくなるんだ。")
+                 ], ipa: "/ˌʃɔːt ˈtempəd/"),
+            make("a bit of a character", "(British, informal) someone who is interesting, amusing and a little unusual",
+                 "ちょっと変わった面白い人・個性的な人",
+                 useCases: ["ユニークな知人を紹介するとき", "愛嬌のある変わり者を好意的に話すとき"],
+                 examples: [
+                    ("You'll like my grandad – he's a bit of a character.", "うちのおじいちゃん、きっと気に入るよ。ちょっと面白い人なんだ。"),
+                    ("The landlord of our local is a bit of a character.", "行きつけのパブの主人はなかなか個性的な人なんだ。")
+                 ], ipa: "/ə ˈbɪt əv ə ˈkærəktə/"),
+        ]
+    }
+    private static var britishColloquial283: [Word] {
+        [
+            make("no chance", "(informal) used to say that something will definitely not happen or that you refuse to do it",
+                 "絶対無理・ありえない・お断り",
+                 useCases: ["可能性がゼロだと言うとき", "きっぱり断るとき"],
+                 examples: [
+                    ("\"Will we get tickets now?\" \"No chance – they sold out in minutes.\"", "「今からチケット取れるかな？」「無理だよ、数分で売り切れたんだから」"),
+                    ("Lend him my car? No chance!", "あいつに車を貸す？絶対いやだね！")
+                 ], ipa: "/nəʊ ˈtʃɑːns/"),
+            make("I should think so", "used to agree, saying that something is probably true or is only right and reasonable",
+                 "たぶんそうだと思う・当然だよ",
+                 useCases: ["控えめに肯定するとき", "当然だと言うとき"],
+                 examples: [
+                    ("\"Will the shop still be open?\" \"I should think so.\"", "「お店まだ開いてるかな？」「たぶん開いてると思うよ」"),
+                    ("\"He apologised.\" \"I should think so too!\"", "「彼、謝ったよ」「当然だよ！」")
+                 ], ipa: "/aɪ ʃʊd ˈθɪŋk səʊ/"),
+            make("at the minute", "(British, informal) at the present time; now",
+                 "今のところ・今は・最近は",
+                 useCases: ["近況を話すとき", "今の状況を説明するとき"],
+                 examples: [
+                    ("I'm really busy at the minute.", "今ほんとに忙しいんだ。"),
+                    ("She's living in Leeds at the minute.", "彼女は今リーズに住んでるよ。")
+                 ], ipa: "/æt ðə ˈmɪnɪt/"),
+            make("it'll come to me", "used when you can't remember something right now but expect to remember it soon",
+                 "そのうち思い出す・喉まで出てるんだけど",
+                 useCases: ["名前などが思い出せないとき", "会話中にど忘れしたとき"],
+                 examples: [
+                    ("What's that actor called? Hang on, it'll come to me.", "あの俳優なんて名前だっけ？待って、思い出すから。"),
+                    ("I can't remember her name right now, but it'll come to me.", "今は名前が出てこないけど、そのうち思い出すよ。")
+                 ], ipa: "/ˈɪtl kʌm tə miː/"),
+            make("what are the chances?", "used to express surprise at a coincidence or to say something is very unlikely",
+                 "すごい偶然！・そんなことある？",
+                 useCases: ["偶然に驚いたとき", "可能性が低いと言うとき"],
+                 examples: [
+                    ("We bumped into each other in Paris – what are the chances?", "パリでばったり会ったんだよ、すごい偶然でしょ？"),
+                    ("Same birthday as me? What are the chances!", "誕生日が私と同じ？そんなことある！")
+                 ], ipa: "/wɒt ə ðə ˈtʃɑːnsɪz/"),
+            make("if you say so", "used to accept what someone says even though you don't really believe or agree with it",
+                 "あなたがそう言うなら・まあ、そういうことにしておく",
+                 useCases: ["納得していないが反論しないとき", "軽く疑いを示すとき"],
+                 examples: [
+                    ("\"I'm not tired at all.\" \"If you say so.\"", "「全然疲れてないよ」「そう言うならいいけど」"),
+                    ("\"This is the quickest way.\" \"Well, if you say so...\"", "「これが一番の近道だよ」「まあ、あなたがそう言うなら…」")
+                 ], ipa: "/ɪf juː ˈseɪ səʊ/"),
+            make("I wouldn't know", "used to say that you don't know something, often because it's not something you have experience of",
+                 "さあ、わからない・私には知りようがない",
+                 useCases: ["知らないことを聞かれたとき", "自分には関係ないと伝えるとき"],
+                 examples: [
+                    ("\"Is the new gym any good?\" \"I wouldn't know – I never go.\"", "「新しいジム良い？」「さあ、行ったことないから」"),
+                    ("\"How much does a yacht cost?\" \"I wouldn't know!\"", "「ヨットっていくらするの？」「私に分かるわけないよ！」")
+                 ], ipa: "/aɪ ˈwʊdnt nəʊ/"),
+            make("I'd say so", "used to agree with something, giving your opinion in a slightly cautious way",
+                 "そうだと思うよ・まあそうだね",
+                 useCases: ["意見を聞かれて肯定するとき", "やや控えめに同意するとき"],
+                 examples: [
+                    ("\"Is it worth the money?\" \"I'd say so, yeah.\"", "「値段の価値ある？」「うん、あると思うよ」"),
+                    ("\"Was it a good match?\" \"I'd say so – best one this season.\"", "「いい試合だった？」「そうだね、今シーズン一番だった」")
+                 ], ipa: "/aɪd ˈseɪ səʊ/"),
+            make("more often than not", "usually; in most cases",
+                 "たいてい・大抵の場合",
+                 useCases: ["習慣や傾向を話すとき", "よくあることを説明するとき"],
+                 examples: [
+                    ("More often than not, I just have toast for breakfast.", "朝ごはんはたいていトーストだけだよ。"),
+                    ("The bus is late more often than not.", "バスはしょっちゅう遅れるんだ。")
+                 ], ipa: "/ˈmɔːr ˈɒfn ðən ˈnɒt/"),
+            make("no hurry", "used to tell someone they don't need to do something quickly",
+                 "急がなくていいよ・ゆっくりでいいよ",
+                 useCases: ["相手を急かさないとき", "返事や返却に期限がないとき"],
+                 examples: [
+                    ("Give the book back whenever – no hurry.", "本はいつ返してくれてもいいよ、急がないから。"),
+                    ("\"Sorry, I'm still deciding.\" \"No hurry!\"", "「ごめん、まだ迷ってる」「ゆっくりでいいよ！」")
+                 ], ipa: "/nəʊ ˈhʌri/"),
+            make("that's not like you", "used to say that someone is behaving differently from how they usually do",
+                 "あなたらしくないね・珍しいね",
+                 useCases: ["相手の様子がいつもと違うとき", "心配や驚きを伝えるとき"],
+                 examples: [
+                    ("You're late? That's not like you.", "遅刻？あなたらしくないね。"),
+                    ("You've hardly said a word all night – that's not like you.", "一晩中ほとんど喋ってないね、珍しいじゃん。")
+                 ], ipa: "/ðæts nɒt ˈlaɪk juː/"),
+            make("that's me done", "(British, informal) used to say that you have finished what you were doing",
+                 "これで終わり・私はもう終わった",
+                 useCases: ["仕事や作業を終えたとき", "食事や買い物を済ませたとき"],
+                 examples: [
+                    ("Right, that's me done for the day. See you tomorrow!", "よし、今日はこれで終わり。また明日！"),
+                    ("Last email sent – that's me done.", "最後のメール送った、これで終わり。")
+                 ], ipa: "/ðæts miː ˈdʌn/"),
+            make("when you get a chance", "used to politely ask someone to do something when they have time",
+                 "手が空いたときに・時間があるときに",
+                 useCases: ["丁寧にお願いするとき", "急ぎでない依頼をするとき"],
+                 examples: [
+                    ("Could you have a look at this when you get a chance?", "手が空いたときにこれ見てもらえる？"),
+                    ("Call me back when you get a chance.", "時間があるときに折り返して。")
+                 ], ipa: "/wen juː ɡet ə ˈtʃɑːns/"),
+            make("I can live with that", "used to say that you accept something, even if it isn't perfect",
+                 "それでいいよ・まあ許容範囲だね",
+                 useCases: ["妥協案を受け入れるとき", "条件に納得したとき"],
+                 examples: [
+                    ("\"We can meet at seven instead of six.\" \"I can live with that.\"", "「6時じゃなくて7時でもいい？」「それでいいよ」"),
+                    ("It's a bit small, but I can live with that.", "ちょっと狭いけど、まあ許容範囲だね。")
+                 ], ipa: "/aɪ kən ˈlɪv wɪð ðæt/"),
+            make("I'd have done the same", "used to tell someone that you understand or support what they did",
+                 "私でもそうしたよ・同じことをしたと思う",
+                 useCases: ["相手の行動に共感するとき", "相手を安心させるとき"],
+                 examples: [
+                    ("Don't feel bad – I'd have done the same.", "気にしないで、私でもそうしたよ。"),
+                    ("You walked out? Honestly, I'd have done the same.", "途中で出てきたの？正直、私も同じことしたと思う。")
+                 ], ipa: "/aɪd əv dʌn ðə ˈseɪm/"),
+        ]
+    }
+    private static var britishColloquial282: [Word] {
+        [
+            make("how's things?", "(British, informal) a casual way of asking how someone's life is going",
+                 "調子どう？・最近どう？",
+                 useCases: ["知り合いに会ったときの挨拶", "久しぶりに連絡するとき"],
+                 examples: [
+                    ("Hiya! How's things?", "やあ！最近どう？"),
+                    ("How's things with you and Tom?", "トムとはうまくいってる？")
+                 ], ipa: "/haʊz θɪŋz/"),
+            make("I thought as much", "used to say that something you suspected has turned out to be true",
+                 "やっぱりね・そうだと思った",
+                 useCases: ["予想が当たったとき", "相手の言い訳を見抜いたとき"],
+                 examples: [
+                    ("\"The train's cancelled.\" \"I thought as much.\"", "「電車運休だって」「やっぱりね」"),
+                    ("He forgot again? I thought as much.", "彼また忘れたの？そうだと思った。")
+                 ], ipa: "/aɪ ˈθɔːt əz mʌtʃ/"),
+            make("just as well", "used to say that it is lucky or a good thing that something happened",
+                 "〜でよかった・かえって好都合",
+                 useCases: ["結果的に良かったと言うとき", "ついていた状況を話すとき"],
+                 examples: [
+                    ("It's just as well we left early – the traffic was awful.", "早めに出てよかったよ、渋滞がひどかった。"),
+                    ("Just as well I brought an umbrella!", "傘持ってきてよかった！")
+                 ], ipa: "/dʒʌst əz ˈwel/"),
+            make("I'd have thought", "used to politely say what you expected or what seems reasonable",
+                 "〜だと思うけどね・普通は〜でしょう",
+                 useCases: ["やんわり意見を言うとき", "意外だと伝えるとき"],
+                 examples: [
+                    ("I'd have thought they'd be here by now.", "もう着いてる頃だと思ったけど。"),
+                    ("I'd have thought a taxi would be quicker.", "タクシーのほうが早いと思うけどね。")
+                 ], ipa: "/aɪd əv ˈθɔːt/"),
+            make("make a day of it", "to turn a trip or activity into a whole day out, doing other enjoyable things too",
+                 "せっかくだから一日楽しむ・一日がかりで出かける",
+                 useCases: ["週末の外出を計画するとき", "ついでに観光や食事をするとき"],
+                 examples: [
+                    ("Let's go to the market and make a day of it.", "市場に行って、せっかくだから一日楽しもうよ。"),
+                    ("We drove to the coast and made a day of it.", "海まで車で行って一日満喫したよ。")
+                 ], ipa: "/meɪk ə ˈdeɪ əv ɪt/"),
+            make("neither do I", "used to agree with a negative statement someone has just made",
+                 "私も〜ない・僕もそう（否定への同意）",
+                 useCases: ["否定文に同意するとき", "好みや意見が同じだと伝えるとき"],
+                 examples: [
+                    ("\"I don't really like horror films.\" \"Neither do I.\"", "「ホラー映画あんまり好きじゃないんだ」「私も」"),
+                    ("\"I don't know where it is.\" \"Neither do I, to be honest.\"", "「どこにあるかわからない」「正直、僕も」")
+                 ], ipa: "/ˈnaɪðər duː aɪ/"),
+            make("believe me", "used to emphasise that what you are saying is true, often from experience",
+                 "本当だって・信じて・ほんとに",
+                 useCases: ["経験から強く言うとき", "相手を説得するとき"],
+                 examples: [
+                    ("Believe me, you don't want to drive in Rome.", "ほんとに、ローマで運転はやめたほうがいいよ。"),
+                    ("It's worth the wait, believe me.", "待つ価値あるって、本当だよ。")
+                 ], ipa: "/bɪˈliːv miː/"),
+            make("God knows", "(informal) used to say that nobody knows something; also used to emphasise something",
+                 "さあね・誰にもわからない・本当に",
+                 useCases: ["全く見当がつかないとき", "強調するとき"],
+                 examples: [
+                    ("God knows where I put my keys.", "鍵どこに置いたか全然わからない。"),
+                    ("God knows I've tried to help him.", "本当に、彼を助けようとしてきたんだよ。")
+                 ], ipa: "/ɡɒd nəʊz/"),
+            make("do you need a bag?", "a question commonly asked by shop staff at the till",
+                 "袋はご入用ですか？",
+                 useCases: ["レジで会計するとき", "買い物の場面"],
+                 examples: [
+                    ("\"Do you need a bag?\" \"No thanks, I've got one.\"", "「袋いりますか？」「いえ、持ってます」"),
+                    ("Do you need a bag? It's 10p.", "袋いりますか？10ペンスです。")
+                 ], ipa: "/duː jə niːd ə bæɡ/"),
+            make("the wifi's down", "the wireless internet connection is not working",
+                 "Wi-Fiが落ちてる・ネットがつながらない",
+                 useCases: ["自宅や職場でネットが使えないとき", "カフェやホテルで"],
+                 examples: [
+                    ("The wifi's down again – can you restart the router?", "またWi-Fi落ちてる、ルーター再起動してくれる？"),
+                    ("Sorry I didn't reply, the wifi was down.", "返信できなくてごめん、ネットが落ちてたんだ。")
+                 ], ipa: "/ðə ˈwaɪfaɪz daʊn/"),
+            make("what a week!", "used to say that the past week has been very busy, tiring or eventful",
+                 "なんて一週間だ・大変な一週間だった",
+                 useCases: ["週末に一週間を振り返るとき", "疲れを共有するとき"],
+                 examples: [
+                    ("Phew, what a week! I need a drink.", "ふう、大変な一週間だった！一杯飲みたい。"),
+                    ("What a week – three deadlines and a cold.", "なんて週だよ、締切3つに風邪まで。")
+                 ], ipa: "/wɒt ə ˈwiːk/"),
+            make("thank God it's Friday", "(informal) used to express relief that the working week is nearly over; often shortened to TGIF",
+                 "やっと金曜日だ・花金",
+                 useCases: ["金曜日に同僚と話すとき", "週末を楽しみにしているとき"],
+                 examples: [
+                    ("Thank God it's Friday – any plans tonight?", "やっと金曜だね、今夜何か予定ある？"),
+                    ("I'm so tired. Thank God it's Friday.", "もうクタクタ。金曜でよかった。")
+                 ], ipa: "/θæŋk ɡɒd ɪts ˈfraɪdeɪ/"),
+            make("is there anything good on?", "used to ask whether there is an interesting programme on TV or a good film showing",
+                 "何か面白いのやってる？",
+                 useCases: ["テレビを見る前に", "映画を観に行くか相談するとき"],
+                 examples: [
+                    ("Is there anything good on tonight?", "今夜何か面白いのやってる？"),
+                    ("Is there anything good on at the cinema this weekend?", "今週末、映画館で何か良いのやってる？")
+                 ], ipa: "/ɪz ðər ˈeniθɪŋ ɡʊd ɒn/"),
+            make("I've got a train to catch", "used to explain that you need to leave soon",
+                 "電車の時間があるから（そろそろ行かなきゃ）",
+                 useCases: ["会話を切り上げるとき", "急いでいる理由を伝えるとき"],
+                 examples: [
+                    ("Sorry, I can't stay – I've got a train to catch.", "ごめん、ゆっくりできないんだ、電車の時間があって。"),
+                    ("I'd love another drink, but I've got a train to catch.", "もう一杯飲みたいけど、電車に乗らなきゃ。")
+                 ], ipa: "/aɪv ɡɒt ə treɪn tə kætʃ/"),
+            make("I don't want to hold you up", "used politely when you think you may be delaying someone",
+                 "引き止めちゃ悪いから・お時間取らせたくないので",
+                 useCases: ["相手が忙しそうなとき", "会話を丁寧に終えるとき"],
+                 examples: [
+                    ("I don't want to hold you up, so I'll be quick.", "お引き止めしたくないので手短に話しますね。"),
+                    ("Go on, I don't want to hold you up.", "どうぞ行って、引き止めちゃ悪いし。")
+                 ], ipa: "/aɪ dəʊnt wɒnt tə həʊld juː ʌp/"),
+        ]
+    }
+    private static var britishColloquial281: [Word] {
+        [
+            make("the big shop", "(British) the main weekly or monthly trip to the supermarket to buy most of your food",
+                 "まとめ買い・週一の大きな買い出し",
+                 useCases: ["週末の予定を話すとき", "スーパーでの買い出しについて話すとき"],
+                 examples: [
+                    ("We usually do the big shop on Saturday mornings.", "うちはだいたい土曜の朝にまとめ買いするんだ。"),
+                    ("I can't come – I'm in the middle of the big shop.", "今行けないや、ちょうどスーパーで買い出し中なんだ。")
+                 ], ipa: "/ðə bɪɡ ʃɒp/"),
+            make("on reflection", "after thinking about something again more carefully",
+                 "よく考えてみると・考え直してみると",
+                 useCases: ["考えが変わったことを伝えるとき", "一度言ったことを修正するとき"],
+                 examples: [
+                    ("On reflection, maybe I was a bit harsh with him.", "考えてみたら、彼にちょっときつく言いすぎたかも。"),
+                    ("On reflection, the earlier train might be better.", "よく考えると、早い電車のほうがいいかもね。")
+                 ], ipa: "/ɒn rɪˈflekʃn/"),
+            make("I have to say", "used to emphasise your honest opinion, often a compliment or a mild criticism",
+                 "正直言って・言わせてもらうと",
+                 useCases: ["素直な感想や褒め言葉を強調するとき", "やんわりと本音を言うとき"],
+                 examples: [
+                    ("I have to say, this is the best curry I've ever had.", "正直言って、今まで食べた中で一番美味しいカレーだよ。"),
+                    ("I have to say, I was a bit disappointed.", "言わせてもらうと、ちょっとがっかりしたな。")
+                 ], ipa: "/aɪ ˈhæv tə seɪ/"),
+            make("while I think of it", "used to mention something now before you forget it",
+                 "忘れないうちに言っておくと・ついでに",
+                 useCases: ["急に思い出した用件を伝えるとき", "話の途中で別件を挟むとき"],
+                 examples: [
+                    ("Oh, while I think of it – can you send me that photo?", "あ、忘れないうちに、あの写真送ってくれる？"),
+                    ("While I think of it, I still owe you a tenner.", "ついでに言うと、まだ10ポンド借りたままだったね。")
+                 ], ipa: "/waɪl aɪ ˈθɪŋk əv ɪt/"),
+            make("I'm partial to", "(British) I quite like something, especially a type of food or drink",
+                 "〜にはちょっと目がない・〜が結構好き",
+                 useCases: ["好きな食べ物や飲み物を控えめに言うとき", "好みを聞かれたとき"],
+                 examples: [
+                    ("I'm partial to a bit of chocolate after dinner.", "夕食後のチョコにはちょっと目がないんだ。"),
+                    ("She's quite partial to a glass of red.", "彼女、赤ワインが結構好きなんだよ。")
+                 ], ipa: "/aɪm ˈpɑːʃl tə/"),
+            make("I'm more of a ... person", "used to say which of two things you prefer or which type of person you are",
+                 "どちらかというと〜派",
+                 useCases: ["好みや性格を伝えるとき", "誘いをやんわり断るとき"],
+                 examples: [
+                    ("I'm more of a tea person, to be honest.", "正直、どちらかというと紅茶派なんだ。"),
+                    ("I'm more of a morning person than a night owl.", "夜型より朝型なんだよね。")
+                 ], ipa: "/aɪm ˈmɔːr əv ə ... ˈpɜːsn/"),
+            make("we've all been there", "used to show sympathy by saying everyone has had the same bad experience",
+                 "誰でも経験あるよ・みんな通る道だよ",
+                 useCases: ["失敗した人を励ますとき", "共感を示すとき"],
+                 examples: [
+                    ("Don't worry about it – we've all been there.", "気にしないで、誰でも経験あるって。"),
+                    ("Locked yourself out? We've all been there.", "締め出されちゃった？みんな一度はやるよね。")
+                 ], ipa: "/wiːv ɔːl biːn ðeə/"),
+            make("it happens to the best of us", "used to tell someone their mistake is normal and nothing to be embarrassed about",
+                 "誰にでもあることだよ",
+                 useCases: ["ミスした相手を慰めるとき", "自分の失敗を軽く流すとき"],
+                 examples: [
+                    ("You forgot her name? It happens to the best of us.", "名前忘れちゃった？誰にでもあることだよ。"),
+                    ("I missed my stop again – it happens to the best of us!", "また降りる駅を乗り過ごしたよ、誰にでもあるよね！")
+                 ], ipa: "/ɪt ˈhæpənz tə ðə best əv ʌs/"),
+            make("it'll all work out", "used to reassure someone that things will end well in the end",
+                 "なんとかなるよ・きっとうまくいくよ",
+                 useCases: ["不安がっている人を安心させるとき", "先行きが見えないとき"],
+                 examples: [
+                    ("Try not to stress – it'll all work out.", "あんまり気に病まないで、なんとかなるよ。"),
+                    ("I'm sure it'll all work out in the end.", "最終的にはきっとうまくいくって。")
+                 ], ipa: "/ɪtl ɔːl wɜːk aʊt/"),
+            make("let me know how it goes", "used to ask someone to tell you the result of something they are about to do",
+                 "どうだったか教えてね",
+                 useCases: ["面接や試験の前の人に声をかけるとき", "相手の予定に関心を示すとき"],
+                 examples: [
+                    ("Good luck tomorrow – let me know how it goes!", "明日頑張ってね、どうだったか教えて！"),
+                    ("Let me know how it goes with the new flat.", "新しい部屋の件、どうなったか教えてね。")
+                 ], ipa: "/let mi ˈnəʊ haʊ ɪt ɡəʊz/"),
+            make("I haven't stopped", "(British) used to say you have been extremely busy all day without a break",
+                 "ずっと動きっぱなしだよ・休む暇もない",
+                 useCases: ["忙しかった一日を話すとき", "疲れている理由を伝えるとき"],
+                 examples: [
+                    ("I haven't stopped since six this morning.", "朝6時からずっと動きっぱなしだよ。"),
+                    ("Sorry I didn't reply – I literally haven't stopped today.", "返信できなくてごめん、今日はほんとに休む暇もなかった。")
+                 ], ipa: "/aɪ ˈhævnt stɒpt/"),
+            make("I can't think straight", "used to say you are too tired, stressed or distracted to think clearly",
+                 "頭が回らない・まともに考えられない",
+                 useCases: ["疲れや眠気で判断できないとき", "決断を先延ばしにしたいとき"],
+                 examples: [
+                    ("I'm so tired I can't think straight.", "疲れすぎて頭が回らないよ。"),
+                    ("Can we talk tomorrow? I can't think straight right now.", "明日話せる？今はまともに考えられなくて。")
+                 ], ipa: "/aɪ kɑːnt θɪŋk streɪt/"),
+            make("tap your card", "to pay by touching your bank card or phone against the card machine",
+                 "カードをタッチして払う",
+                 useCases: ["お店やバスで支払うとき", "支払い方法を説明するとき"],
+                 examples: [
+                    ("You can just tap your card on the reader.", "読み取り機にカードをタッチするだけでいいですよ。"),
+                    ("I tapped my card but it didn't go through.", "カードをタッチしたのに決済が通らなかった。")
+                 ], ipa: "/tæp jə kɑːd/"),
+            make("cash back", "money you take out in cash when paying by card at a shop; also money returned to you after buying something",
+                 "キャッシュバック・（レジでの）現金引き出し",
+                 useCases: ["レジで現金を引き出したいとき", "購入特典について話すとき"],
+                 examples: [
+                    ("Would you like any cash back?", "現金の引き出しはご利用になりますか？"),
+                    ("This card gives you two percent cash back.", "このカード、2パーセントキャッシュバックがあるんだ。")
+                 ], ipa: "/ˈkæʃ bæk/"),
+            make("catch my breath", "to rest for a moment after running or being very busy so you can breathe normally again",
+                 "一息つく・呼吸を整える",
+                 useCases: ["走ったり急いだりした後", "忙しさの合間に少し休みたいとき"],
+                 examples: [
+                    ("Give me a minute to catch my breath.", "ちょっと一息つかせて。"),
+                    ("I haven't had a chance to catch my breath all week.", "今週はずっと一息つく暇もなかったよ。")
+                 ], ipa: "/kætʃ maɪ breθ/"),
+        ]
+    }
+    private static var britishColloquial280: [Word] {
+        [
+            make("the underground", "the railway system that runs under the ground in a big city",
+                 "地下鉄",
+                 useCases: ["都市での移動手段を話すとき", "道順や待ち合わせ方法を決めるとき"],
+                 examples: [
+                    ("It's quicker to take the underground than a taxi.", "タクシーより地下鉄のほうが早いよ。"),
+                    ("The underground was packed this morning.", "今朝の地下鉄、ぎゅうぎゅうだったよ。")
+                 ], ipa: "/ði ˈʌndəɡraʊnd/"),
+            make("a bus stop", "a place at the side of a road where buses stop to let people on and off",
+                 "バス停",
+                 useCases: ["待ち合わせ場所を伝えるとき", "道を教えるとき"],
+                 examples: [
+                    ("I'll meet you at the bus stop outside the station.", "駅前のバス停で待ち合わせね。"),
+                    ("Is there a bus stop near here?", "この近くにバス停ってありますか？")
+                 ], ipa: "/ə ˈbʌs stɒp/"),
+            make("the house wine", "the cheapest standard wine a restaurant offers, usually sold by the glass or carafe",
+                 "ハウスワイン",
+                 useCases: ["レストランで飲み物を頼むとき", "手頃なワインを選ぶとき"],
+                 examples: [
+                    ("Shall we just get a bottle of the house red?", "ハウスワインの赤をボトルで頼もうか？"),
+                    ("The house wine here is actually really good.", "ここのハウスワイン、実はすごく美味しいんだよ。")
+                 ], ipa: "/ðə haʊs waɪn/"),
+            make("a gathering", "a small, informal meeting of friends or family, often at someone's home",
+                 "集まり・ちょっとした会",
+                 useCases: ["気軽なホームパーティーに誘うとき", "家族の集まりについて話すとき"],
+                 examples: [
+                    ("It's just a small gathering, nothing fancy.", "ちょっとした集まりだよ、大げさなものじゃないから。"),
+                    ("We've got a family gathering this weekend.", "今週末は親戚の集まりがあるんだ。")
+                 ], ipa: "/ə ˈɡæðərɪŋ/"),
+            make("the dentist", "a person whose job is to look after people's teeth; also used for their surgery",
+                 "歯医者",
+                 useCases: ["予定や用事を伝えるとき", "歯の痛みについて話すとき"],
+                 examples: [
+                    ("I can't make it – I've got the dentist at three.", "行けないや、3時に歯医者があるんだ。"),
+                    ("You should really go to the dentist about that tooth.", "その歯、ちゃんと歯医者に行ったほうがいいよ。")
+                 ], ipa: "/ðə ˈdentɪst/"),
+            make("out for delivery", "used to say that a parcel is on its way and will arrive that day",
+                 "配達中・本日お届け予定",
+                 useCases: ["ネットで頼んだ荷物の状況を話すとき", "荷物を待っていて外出できないとき"],
+                 examples: [
+                    ("My parcel's out for delivery, so I'm staying in.", "荷物が配達中だから、家にいるよ。"),
+                    ("It's been 'out for delivery' since eight this morning!", "朝8時からずっと『配達中』のままなんだけど！")
+                 ], ipa: "/aʊt fə dɪˈlɪvəri/"),
+            make("a tracking number", "a number that lets you check online where your parcel is",
+                 "追跡番号",
+                 useCases: ["荷物の行方を確認するとき", "配送トラブルを問い合わせるとき"],
+                 examples: [
+                    ("Did they send you a tracking number?", "追跡番号は送られてきた？"),
+                    ("I'll text you the tracking number.", "追跡番号、メッセージで送るね。")
+                 ], ipa: "/ə ˈtrækɪŋ ˌnʌmbə/"),
+            make("the card machine", "the small device in a shop or restaurant you use to pay by card",
+                 "カード決済端末",
+                 useCases: ["お店でカード払いをするとき", "端末の不調で支払えないとき"],
+                 examples: [
+                    ("Sorry, the card machine's down – cash only today.", "すみません、カード端末が使えなくて、今日は現金のみです。"),
+                    ("Could you bring the card machine over?", "カードの端末を持ってきてもらえますか？")
+                 ], ipa: "/ðə ˈkɑːd məˌʃiːn/"),
+            make("cool off", "to become calmer after being angry, or to become less hot",
+                 "頭を冷やす・涼む",
+                 useCases: ["ケンカのあと少し時間を置くとき", "暑い日に涼むとき"],
+                 examples: [
+                    ("Give him a minute to cool off before you talk to him.", "話しかける前に、少し頭を冷やす時間をあげなよ。"),
+                    ("Let's go for a swim and cool off.", "泳いで涼もうよ。")
+                 ], ipa: "/kuːl ɒf/"),
+            make("legroom", "the amount of space for your legs when you are sitting, especially on a plane or bus",
+                 "足元の広さ",
+                 useCases: ["飛行機やバスの座席について話すとき", "席を選ぶとき"],
+                 examples: [
+                    ("There's hardly any legroom on these budget flights.", "こういう格安便は足元がほとんど狭くて。"),
+                    ("I paid extra for more legroom.", "足元が広い席に追加料金払ったよ。")
+                 ], ipa: "/ˈleɡruːm/"),
+            make("the gate", "the area in an airport where you wait before getting on your plane",
+                 "搭乗ゲート",
+                 useCases: ["空港で搭乗口を確認するとき", "搭乗時間に急ぐとき"],
+                 examples: [
+                    ("We'd better head to the gate – it's boarding soon.", "そろそろゲートに行こう、もうすぐ搭乗だよ。"),
+                    ("They've changed the gate again!", "またゲートが変わったよ！")
+                 ], ipa: "/ðə ɡeɪt/"),
+            make("turbulence", "sudden rough movement of a plane caused by changes in the air",
+                 "（飛行機の）揺れ・乱気流",
+                 useCases: ["フライトの感想を話すとき", "飛行機が苦手な話をするとき"],
+                 examples: [
+                    ("There was loads of turbulence on the way over.", "行きの便、すごく揺れたんだよ。"),
+                    ("I hate turbulence – I always grip the armrest.", "揺れが大嫌いで、いつも肘掛けを握りしめちゃう。")
+                 ], ipa: "/ˈtɜːbjələns/"),
+            make("a discount code", "a short code you type in when shopping online to get money off",
+                 "割引コード・クーポンコード",
+                 useCases: ["ネットで買い物するとき", "友達にお得情報を教えるとき"],
+                 examples: [
+                    ("I've got a discount code for 20% off if you want it.", "20%オフの割引コードあるけど、使う？"),
+                    ("The discount code didn't work at checkout.", "決済のときに割引コードが使えなかったんだ。")
+                 ], ipa: "/ə ˈdɪskaʊnt kəʊd/"),
+            make("a corkscrew", "a tool for pulling corks out of wine bottles",
+                 "コルク抜き・ワインオープナー",
+                 useCases: ["ホームパーティーでワインを開けるとき", "キッチンの道具を探すとき"],
+                 examples: [
+                    ("Has anyone got a corkscrew?", "誰かコルク抜き持ってない？"),
+                    ("We brought wine but forgot the corkscrew!", "ワインは持ってきたのに、コルク抜き忘れた！")
+                 ], ipa: "/ə ˈkɔːkskruː/"),
+            make("the vet", "a doctor who treats animals; also used for their surgery",
+                 "獣医・動物病院",
+                 useCases: ["ペットの体調について話すとき", "ペットの予防接種などの予定を話すとき"],
+                 examples: [
+                    ("I've got to take the dog to the vet this afternoon.", "今日の午後、犬を動物病院に連れて行かなきゃ。"),
+                    ("The cat's not eating, so I'm calling the vet.", "猫がご飯食べないから、獣医さんに電話してみる。")
+                 ], ipa: "/ðə vet/"),
+        ]
+    }
+    private static var britishColloquial277: [Word] {
+        [
+            make("go viral", "to spread very quickly online and be seen by huge numbers of people",
+                 "（ネットで）バズる・一気に拡散される",
+                 useCases: ["SNSの投稿や動画が一気に広まったとき", "ネットで話題になったものを話すとき"],
+                 examples: [
+                    ("That video of his dog went viral overnight.", "彼の犬の動画、一晩でバズったんだよ。"),
+                    ("I never expected my post to go viral.", "自分の投稿がバズるなんて思ってもみなかった。")
+                 ], ipa: "/ɡəʊ ˈvaɪrəl/"),
+            make("a playlist", "a list of songs you have chosen to listen to",
+                 "プレイリスト・曲のリスト",
+                 useCases: ["好きな曲をまとめたものを話すとき", "運転中や作業中に流す音楽の話"],
+                 examples: [
+                    ("I've made a playlist for the road trip.", "ドライブ用にプレイリスト作ったよ。"),
+                    ("Can you send me that playlist? It's brilliant.", "そのプレイリスト送ってくれる？すごくいいね。")
+                 ], ipa: "/ə ˈpleɪlɪst/"),
+            make("a meme", "a funny picture, video or phrase that is copied and shared widely online",
+                 "ミーム・ネットでよく出回るネタ画像",
+                 useCases: ["友達とネタ画像を送り合うとき", "ネットで流行っているネタを話すとき"],
+                 examples: [
+                    ("He sent me a meme that had me in stitches.", "彼が送ってきたミームで大笑いしたよ。"),
+                    ("That phrase has basically become a meme now.", "その言い回し、もう完全にネタ化してるよね。")
+                 ], ipa: "/ə miːm/"),
+            make("a trailer", "a short advert for a film or TV series showing parts of it",
+                 "（映画などの）予告編",
+                 useCases: ["新作映画の話をするとき", "観るかどうか決めるとき"],
+                 examples: [
+                    ("Have you seen the trailer for the new Bond film?", "新しいボンド映画の予告編見た？"),
+                    ("The trailer looked great, but the film was a bit disappointing.", "予告編はすごく良かったけど、映画自体はちょっと期待外れだった。")
+                 ], ipa: "/ə ˈtreɪlə/"),
+            make("the front row", "the row of seats closest to the stage or screen",
+                 "最前列",
+                 useCases: ["ライブや劇場の席の話をするとき", "授業や会議で座る場所の話"],
+                 examples: [
+                    ("We managed to get tickets in the front row!", "最前列のチケットが取れたんだよ！"),
+                    ("I'd rather not sit in the front row – it's too close.", "最前列はやめとこうかな、近すぎるから。")
+                 ], ipa: "/ðə frʌnt rəʊ/"),
+            make("snack on", "to eat small amounts of food between meals",
+                 "〜をつまむ・間食する",
+                 useCases: ["お菓子や軽いものをつまむとき", "食習慣について話すとき"],
+                 examples: [
+                    ("I've been snacking on crisps all afternoon.", "午後ずっとポテチつまんでたよ。"),
+                    ("Try snacking on fruit instead of biscuits.", "ビスケットの代わりに果物をつまむようにしてみたら？")
+                 ], ipa: "/snæk ɒn/"),
+            make("text someone back", "to reply to someone's text message",
+                 "（メッセージに）返信する",
+                 useCases: ["メッセージの返事について話すとき", "返信が遅れたことを謝るとき"],
+                 examples: [
+                    ("Sorry I didn't text you back – I fell asleep.", "返信しなくてごめん、寝ちゃってたんだ。"),
+                    ("She still hasn't texted me back.", "彼女からまだ返信が来ないんだよね。")
+                 ], ipa: "/tekst ˈsʌmwʌn bæk/"),
+            make("be on a tight schedule", "to have very little free time because you have a lot planned",
+                 "スケジュールが詰まっている・時間に余裕がない",
+                 useCases: ["予定がぎっしりで余裕がないとき", "手短に済ませたいとき"],
+                 examples: [
+                    ("We're on a tight schedule, so let's keep this quick.", "時間に余裕がないから、手短にいこう。"),
+                    ("I'm on a really tight schedule this week.", "今週は本当に予定がぎっしりなんだ。")
+                 ], ipa: "/bi ɒn ə taɪt ˈʃedjuːl/"),
+            make("make excuses", "to give reasons, often untrue, to avoid doing something or being blamed",
+                 "言い訳をする",
+                 useCases: ["やらない理由ばかり言う人について話すとき", "言い訳せずに認めるとき"],
+                 examples: [
+                    ("Stop making excuses and just get it done.", "言い訳してないで、さっさとやっちゃいなよ。"),
+                    ("I'm not making excuses – the train really was late.", "言い訳じゃないって、本当に電車が遅れたんだよ。")
+                 ], ipa: "/meɪk ɪkˈskjuːsɪz/"),
+            make("keep buffering", "(of a video) to keep stopping while it loads because the connection is slow",
+                 "（動画が）何度も止まって読み込み中になる",
+                 useCases: ["動画やライブ配信が止まるとき", "ネット回線が遅いことを伝えるとき"],
+                 examples: [
+                    ("The film keeps buffering – the Wi-Fi's terrible here.", "映画が何度も止まるんだよ。ここのWi-Fi最悪。"),
+                    ("It kept buffering, so I gave up and went to bed.", "ずっと読み込み中で止まるから、諦めて寝たよ。")
+                 ], ipa: "/kiːp ˈbʌfərɪŋ/"),
+            make("put your phone on silent", "to set your phone so it does not make sounds",
+                 "スマホをマナーモード（消音）にする",
+                 useCases: ["映画館や会議の前", "着信音で邪魔したくないとき"],
+                 examples: [
+                    ("Could everyone put their phones on silent, please?", "皆さん、携帯をマナーモードにしていただけますか？"),
+                    ("Sorry I missed your call – my phone was on silent.", "電話出られなくてごめん、マナーモードにしてたんだ。")
+                 ], ipa: "/pʊt jɔː fəʊn ɒn ˈsaɪlənt/"),
+            make("sign for something", "to write your name to show you have received a parcel or delivery",
+                 "（荷物などの）受け取りにサインする",
+                 useCases: ["宅配便を受け取るとき", "代わりに荷物を受け取ってもらうとき"],
+                 examples: [
+                    ("Could you sign for my parcel if I'm not in?", "留守だったら、荷物のサイン代わりにしてもらえる？"),
+                    ("The courier needs someone to sign for it.", "配達員さん、誰かに受け取りサインしてほしいって。")
+                 ], ipa: "/saɪn fɔː ˈsʌmθɪŋ/"),
+            make("pop something in the post", "to send something by post, casually",
+                 "（気軽に）郵便で送る・ポストに入れる",
+                 useCases: ["手紙や書類を郵送するとき", "ついでに送っておくと伝えるとき"],
+                 examples: [
+                    ("I'll pop the forms in the post tomorrow.", "明日書類をポストに入れておくね。"),
+                    ("Just pop it in the post – there's no rush.", "郵便で送ってくれればいいよ、急がないから。")
+                 ], ipa: "/pɒp ˈsʌmθɪŋ ɪn ðə pəʊst/"),
+            make("a light bulb", "the glass part of an electric light that produces light",
+                 "電球",
+                 useCases: ["電球が切れたとき", "家の細かい修理の話"],
+                 examples: [
+                    ("The light bulb in the bathroom's gone again.", "お風呂場の電球、また切れちゃった。"),
+                    ("Can you help me change this light bulb? I can't reach it.", "この電球替えるの手伝ってくれる？手が届かなくて。")
+                 ], ipa: "/ə ˈlaɪt bʌlb/"),
+            make("turn the volume up", "to make the sound louder (or 'turn it down' to make it quieter)",
+                 "音量を上げる（down なら下げる）",
+                 useCases: ["テレビや音楽の音量を調整するとき", "うるさい・聞こえないと伝えるとき"],
+                 examples: [
+                    ("Can you turn the volume up a bit? I can't hear it.", "ちょっと音量上げてくれる？聞こえないんだ。"),
+                    ("Turn the volume down – the baby's asleep.", "音量下げて、赤ちゃんが寝てるから。")
+                 ], ipa: "/tɜːn ðə ˈvɒljuːm ʌp/"),
+        ]
+    }
+    private static var britishColloquial272: [Word] {
+        [
+            make("cross the line", "to behave in a way that is unacceptable or goes too far",
+                 "一線を越える・やりすぎる",
+                 useCases: ["冗談がやりすぎだったとき", "許せない言動を指摘するとき"],
+                 examples: [
+                    ("That joke really crossed the line.", "あの冗談は完全に一線を越えてたよ。"),
+                    ("I don't mind a bit of teasing, but that's crossing the line.", "ちょっとからかうのは平気だけど、それはやりすぎ。")
+                 ], ipa: "/krɒs ðə laɪn/"),
+            make("be loaded", "to be very rich",
+                 "大金持ちだ・お金がたんまりある",
+                 useCases: ["お金持ちの人について話すとき", "相手におごってもらう冗談のとき"],
+                 examples: [
+                    ("His parents are loaded, so he's never had to worry about rent.", "彼の親は大金持ちだから、家賃の心配なんてしたことないんだ。"),
+                    ("You get the drinks – you're loaded!", "飲み物はおごってよ、お金持ちなんだから！")
+                 ], ipa: "/bi ˈləʊdɪd/"),
+            make("well off", "having enough money to live comfortably",
+                 "裕福な・暮らし向きがいい",
+                 useCases: ["家庭の経済状況を話すとき", "生活の余裕について話すとき"],
+                 examples: [
+                    ("They're quite well off, but they don't show it.", "あの人たちはかなり裕福だけど、それを見せびらかさない。"),
+                    ("We weren't well off when I was a kid.", "子どもの頃、うちは裕福じゃなかった。")
+                 ], ipa: "/wel ɒf/"),
+            make("a bit merry", "slightly drunk in a happy, cheerful way",
+                 "ほろ酔いで上機嫌",
+                 useCases: ["お酒が少し回ったとき", "飲み会で楽しくなってきたとき"],
+                 examples: [
+                    ("After two glasses of wine I was already a bit merry.", "ワイン2杯でもうほろ酔いだった。"),
+                    ("Everyone got a bit merry at the Christmas party.", "クリスマスパーティーでみんなほろ酔いになってた。")
+                 ], ipa: "/ə bɪt ˈmeri/"),
+            make("teetotal", "never drinking alcohol",
+                 "お酒を一切飲まない・禁酒している",
+                 useCases: ["お酒を断るとき", "飲まない理由を説明するとき"],
+                 examples: [
+                    ("No thanks, I'm teetotal – I'll have a lemonade.", "ありがとう、でもお酒は飲まないんだ。レモネードにするね。"),
+                    ("He's been teetotal for about five years now.", "彼はもう5年くらいお酒を一切飲んでない。")
+                 ], ipa: "/tiːˈtəʊtl/"),
+            make("kick the habit", "to stop doing something harmful that you have done for a long time",
+                 "（悪い）習慣をやめる",
+                 useCases: ["禁煙などについて話すとき", "やめたい癖について話すとき"],
+                 examples: [
+                    ("He finally kicked the habit after twenty years of smoking.", "彼は20年吸ってたタバコをついにやめた。"),
+                    ("I check my phone constantly – I really need to kick the habit.", "スマホをずっと見ちゃうんだ。本気でこの癖やめないと。")
+                 ], ipa: "/kɪk ðə ˈhæbɪt/"),
+            make("make conversation", "to talk to someone just to be polite or avoid silence",
+                 "（気まずくならないよう）話を合わせる・会話をつなぐ",
+                 useCases: ["初対面の人と話すとき", "気まずい沈黙を避けるとき"],
+                 examples: [
+                    ("I was just making conversation – I didn't mean to pry.", "話をつなごうとしただけで、詮索するつもりはなかったんだ。"),
+                    ("It's hard to make conversation with someone who only answers yes or no.", "「はい」か「いいえ」しか言わない人と会話を続けるのは難しい。")
+                 ], ipa: "/meɪk ˌkɒnvəˈseɪʃn/"),
+            make("strike up a conversation", "to start talking to someone you don't know",
+                 "（知らない人と）話し始める",
+                 useCases: ["旅先や電車で知らない人と話したとき", "出会いのきっかけを話すとき"],
+                 examples: [
+                    ("I struck up a conversation with the guy next to me on the train.", "電車で隣の人と話し始めたんだ。"),
+                    ("That's how we met – she struck up a conversation in the queue.", "それが出会いだよ。列で彼女が話しかけてきたんだ。")
+                 ], ipa: "/straɪk ʌp ə ˌkɒnvəˈseɪʃn/"),
+            make("change the subject", "to start talking about something different, often to avoid a topic",
+                 "話題を変える",
+                 useCases: ["気まずい話を避けるとき", "相手が話をそらしたと指摘するとき"],
+                 examples: [
+                    ("Don't change the subject – where were you last night?", "話をそらさないで。昨日の夜どこにいたの？"),
+                    ("Anyway, let's change the subject. How's work?", "まあ、話題を変えよう。仕事はどう？")
+                 ], ipa: "/tʃeɪndʒ ðə ˈsʌbdʒɪkt/"),
+            make("go quiet", "to suddenly stop talking or stop being in contact",
+                 "急に黙る・連絡がなくなる",
+                 useCases: ["相手が急に黙り込んだとき", "連絡が途絶えたとき"],
+                 examples: [
+                    ("He went really quiet when I mentioned his ex.", "元カノの話をしたら、彼急に黙り込んだんだ。"),
+                    ("She's gone a bit quiet lately – I hope she's OK.", "最近彼女からあまり連絡がないんだ。大丈夫だといいけど。")
+                 ], ipa: "/ɡəʊ ˈkwaɪət/"),
+            make("mean well", "to have good intentions, even if the result is not helpful",
+                 "悪気はない・良かれと思っている",
+                 useCases: ["お節介な人をかばうとき", "相手の意図を理解してあげるとき"],
+                 examples: [
+                    ("My mum can be a bit much, but she means well.", "母さんはちょっとうるさいけど、良かれと思ってるんだよ。"),
+                    ("I know you meant well, but I'd rather sort it out myself.", "善意なのはわかってるけど、自分で何とかしたいんだ。")
+                 ], ipa: "/miːn wel/"),
+            make("a splitting headache", "a very bad headache",
+                 "割れるような頭痛",
+                 useCases: ["ひどい頭痛を訴えるとき", "早退や欠席の理由を言うとき"],
+                 examples: [
+                    ("I've got a splitting headache – I think I'll go home.", "頭が割れるように痛い。帰ろうかな。"),
+                    ("I woke up with a splitting headache this morning.", "今朝ひどい頭痛で目が覚めた。")
+                 ], ipa: "/ə ˈsplɪtɪŋ ˈhedeɪk/"),
+            make("have a lie-down", "to lie on a bed or sofa for a short rest",
+                 "ちょっと横になる",
+                 useCases: ["疲れや体調不良で休むとき", "相手に休むよう勧めるとき"],
+                 examples: [
+                    ("I'm not feeling great – I'm going to have a lie-down.", "ちょっと調子が悪いから、少し横になるね。"),
+                    ("Why don't you have a lie-down before dinner?", "夕飯の前にちょっと横になったら？")
+                 ], ipa: "/hæv ə ˈlaɪ daʊn/"),
+            make("keep yourself to yourself", "to be private and not get very involved with other people",
+                 "人付き合いを控えめにする・あまり人と関わらない",
+                 useCases: ["物静かな隣人について話すとき", "自分の性格を説明するとき"],
+                 examples: [
+                    ("Our neighbours are nice, but they keep themselves to themselves.", "うちの隣人はいい人だけど、あまり人と関わらないんだ。"),
+                    ("At work I tend to keep myself to myself.", "職場では、あまり深く人と関わらないようにしてる。")
+                 ], ipa: "/kiːp jɔːˈself tə jɔːˈself/"),
+            make("get on someone's good side", "to make someone like you or be pleased with you",
+                 "～に気に入られる・機嫌を取る",
+                 useCases: ["上司や先生に好かれたいとき", "誰かの機嫌を取る作戦を話すとき"],
+                 examples: [
+                    ("Bring her coffee in the morning – that's how you get on her good side.", "朝コーヒーを持っていくといいよ。それで彼女に気に入られるから。"),
+                    ("I'm trying to get on the landlord's good side before I ask about the repairs.", "修理の話をする前に、大家さんに気に入られようとしてるんだ。")
+                 ], ipa: "/ɡet ɒn ˈsʌmwʌnz ɡʊd saɪd/"),
+        ]
+    }
+    private static var britishColloquial271: [Word] {
+        [
+            make("take someone up on", "to accept an offer or invitation that someone has made",
+                 "（申し出・誘いに）乗る・甘える",
+                 useCases: ["相手の親切な申し出を受けるとき", "誘いに後で乗るかもと伝えるとき"],
+                 examples: [
+                    ("Thanks for the offer of a lift – I might take you up on that.", "送ってくれるって話、ありがとう。お言葉に甘えるかも。"),
+                    ("She said I could stay at hers, so I took her up on it.", "泊まっていいって言ってくれたから、甘えさせてもらった。")
+                 ], ipa: "/teɪk ˈsʌmwʌn ʌp ɒn/"),
+            make("I'll catch you up", "used to tell someone to go ahead and that you will join them soon",
+                 "先に行ってて、すぐ追いつくから",
+                 useCases: ["友達に先に行ってもらうとき", "用事を済ませてから合流するとき"],
+                 examples: [
+                    ("You go on ahead – I'll catch you up in a minute.", "先に行ってて、すぐ追いつくから。"),
+                    ("I just need to grab my coat. I'll catch you up!", "コート取ってくるだけ。すぐ追いつく！")
+                 ], ipa: "/aɪl kætʃ jə ʌp/"),
+            make("you're cutting out", "used on the phone or a video call when the other person's voice keeps stopping",
+                 "（電話・通話で）声が途切れてるよ",
+                 useCases: ["電話の電波が悪いとき", "オンライン通話で音声が途切れるとき"],
+                 examples: [
+                    ("Sorry, you're cutting out – can you say that again?", "ごめん、声が途切れてる。もう一回言って？"),
+                    ("The signal's terrible here, I keep cutting out.", "ここ電波最悪で、ずっと途切れちゃう。")
+                 ], ipa: "/jɔː ˈkʌtɪŋ aʊt/"),
+            make("be fluent in", "to be able to speak a language easily and well",
+                 "（言語が）ペラペラだ・流暢だ",
+                 useCases: ["話せる言語を紹介するとき", "語学力について話すとき"],
+                 examples: [
+                    ("She's fluent in French and gets by in Spanish.", "彼女はフランス語がペラペラで、スペイン語も少しなら話せる。"),
+                    ("I'm not fluent yet, but I'm getting there.", "まだ流暢じゃないけど、だいぶ近づいてきたよ。")
+                 ], ipa: "/bi ˈfluːənt ɪn/"),
+            make("lost in translation", "used when the meaning or humour of something disappears when put into another language",
+                 "訳すと（ニュアンスが）伝わらない",
+                 useCases: ["ジョークが通じなかったとき", "言葉のニュアンスの違いを話すとき"],
+                 examples: [
+                    ("It's a brilliant joke in Italian, but it gets lost in translation.", "イタリア語だと最高のジョークなんだけど、訳すと伝わらないんだ。"),
+                    ("I think something got lost in translation there.", "今の、何か意味がちゃんと伝わらなかった気がする。")
+                 ], ipa: "/lɒst ɪn trænzˈleɪʃn/"),
+            make("make yourself understood", "to manage to communicate what you mean, especially in a foreign language",
+                 "（何とか）言いたいことを伝える・通じさせる",
+                 useCases: ["旅行先で言葉が通じるか話すとき", "語学力が足りない中で頑張るとき"],
+                 examples: [
+                    ("My German's not great, but I can make myself understood.", "ドイツ語は上手じゃないけど、言いたいことは伝えられるよ。"),
+                    ("I used my hands a lot to make myself understood.", "通じるように身振り手振りを使いまくった。")
+                 ], ipa: "/meɪk jɔːˈself ˌʌndəˈstʊd/"),
+            make("a language barrier", "difficulty communicating because people speak different languages",
+                 "言葉の壁",
+                 useCases: ["海外での苦労を話すとき", "外国人とのコミュニケーションについて"],
+                 examples: [
+                    ("There was a bit of a language barrier, but we managed.", "ちょっと言葉の壁はあったけど、何とかなったよ。"),
+                    ("Moving abroad was hard at first because of the language barrier.", "最初は言葉の壁があって海外移住は大変だった。")
+                 ], ipa: "/ə ˈlæŋɡwɪdʒ ˈbæriə/"),
+            make("check up on", "to make sure someone is all right or something is being done properly",
+                 "（様子を）確かめる・見に行く",
+                 useCases: ["体調の悪い人の様子を見るとき", "子どもや作業の様子を確認するとき"],
+                 examples: [
+                    ("I'll pop round later to check up on Gran.", "後でおばあちゃんの様子を見に寄ってくるね。"),
+                    ("Stop checking up on me – I'm fine!", "いちいち様子見に来ないで、大丈夫だから！")
+                 ], ipa: "/tʃek ʌp ɒn/"),
+            make("what's the word?", "used when you are trying to remember a word you can't think of",
+                 "何て言うんだっけ？（言葉が出てこないとき）",
+                 useCases: ["会話中に単語を思い出せないとき", "相手に助けを求めるとき"],
+                 examples: [
+                    ("He's very… what's the word? Stubborn!", "彼ってすごく…何て言うんだっけ？頑固！"),
+                    ("It was a bit… oh, what's the word I'm looking for?", "ちょっと…あれ、何て言えばいいんだっけ？")
+                 ], ipa: "/wɒts ðə wɜːd/"),
+            make("mother tongue", "the first language you learned as a child",
+                 "母語",
+                 useCases: ["出身や話す言語を紹介するとき", "語学の話題で"],
+                 examples: [
+                    ("My mother tongue is Japanese, but I use English at work.", "母語は日本語だけど、仕事では英語を使ってる。"),
+                    ("It's hard to explain jokes in anything but your mother tongue.", "ジョークを母語以外で説明するのは難しい。")
+                 ], ipa: "/ˈmʌðə tʌŋ/"),
+            make("have an accent", "to speak in a way that shows where you come from",
+                 "なまりがある・（～の）アクセントで話す",
+                 useCases: ["出身地を推測するとき", "話し方の特徴について話すとき"],
+                 examples: [
+                    ("You've got a lovely accent – where are you from?", "素敵なアクセントだね、出身はどこ？"),
+                    ("He's got a really strong Scottish accent.", "彼はすごく強いスコットランドなまりがある。")
+                 ], ipa: "/hæv ən ˈæksent/"),
+            make("how shall I put it?", "used when you are trying to say something carefully or politely",
+                 "何て言えばいいかな…（言葉を選ぶとき）",
+                 useCases: ["言いにくいことを伝えるとき", "遠回しに表現したいとき"],
+                 examples: [
+                    ("The food was… how shall I put it? A bit of an acquired taste.", "料理は…何て言えばいいかな、ちょっとクセがあったね。"),
+                    ("He's not, how shall I put it, the most patient person.", "彼は、何て言うか、あまり気が長い方じゃない。")
+                 ], ipa: "/haʊ ʃəl aɪ pʊt ɪt/"),
+            make("spell it out", "to explain something very clearly and simply, often because someone hasn't understood",
+                 "はっきり・具体的に言う",
+                 useCases: ["察してくれない相手にはっきり言うとき", "わかりやすく説明してほしいとき"],
+                 examples: [
+                    ("Do I have to spell it out for you? I'm not coming!", "はっきり言わなきゃわからない？行かないってば！"),
+                    ("Can you spell it out for me? I'm a bit lost.", "具体的に説明してくれる？ちょっとついていけてなくて。")
+                 ], ipa: "/spel ɪt aʊt/"),
+            make("short for", "used to say that a name or word is a shorter form of a longer one",
+                 "～の略・～の愛称",
+                 useCases: ["名前のニックネームを説明するとき", "略語の意味を伝えるとき"],
+                 examples: [
+                    ("Call me Alex – it's short for Alexandra.", "アレックスって呼んで、アレクサンドラの略なの。"),
+                    ("'Uni' is short for university.", "「uni」はuniversityの略だよ。")
+                 ], ipa: "/ʃɔːt fɔː/"),
+            make("pronounce", "to say a word or sound in a particular way",
+                 "発音する",
+                 useCases: ["名前や単語の読み方を聞くとき", "発音の難しさを話すとき"],
+                 examples: [
+                    ("Sorry, how do you pronounce your surname?", "すみません、名字はどう発音するんですか？"),
+                    ("I can never pronounce that word properly.", "その単語、どうしてもちゃんと発音できないんだ。")
+                 ], ipa: "/prəˈnaʊns/"),
+        ]
+    }
+    private static var britishColloquial270: [Word] {
+        [
+            make("fill in for", "to do someone's job for them while they are away",
+                 "（一時的に）～の代わりを務める",
+                 useCases: ["同僚の代理を頼む・引き受けるとき", "休んでいる人の穴埋めを話すとき"],
+                 examples: [
+                    ("Could you fill in for me on Friday? I've got a dentist's appointment.", "金曜、代わりに入ってもらえる？歯医者の予約があって。"),
+                    ("I'm just filling in for Sarah while she's on holiday.", "サラが休暇中だから、代わりにやってるだけなんだ。")
+                 ], ipa: "/fɪl ɪn fɔː/"),
+            make("make up for lost time", "to do a lot of something because you could not do it earlier",
+                 "遅れを取り戻す・失った時間を埋め合わせる",
+                 useCases: ["久しぶりに会った人と過ごすとき", "出遅れた分を取り戻そうとするとき"],
+                 examples: [
+                    ("We hadn't seen each other for years, so we're making up for lost time.", "何年も会ってなかったから、今その分を取り戻してるところ。"),
+                    ("He started travelling late, but he's really making up for lost time.", "彼は旅を始めたのは遅かったけど、今まさに取り戻してるね。")
+                 ], ipa: "/meɪk ʌp fə lɒst taɪm/"),
+            make("what do you call ...?", "used to ask for the name of something you don't know the word for",
+                 "～って（英語で）何て言うの？",
+                 useCases: ["単語が出てこないとき", "物の名前を尋ねるとき"],
+                 examples: [
+                    ("What do you call that thing you use to open wine bottles?", "ワインのボトルを開けるあれ、何て言うんだっけ？"),
+                    ("What do you call this in English?", "これって英語で何て言うの？")
+                 ], ipa: "/wɒt də jə kɔːl/"),
+            make("how do you spell that?", "used to ask someone to say the letters of a word or name",
+                 "それはどう綴るんですか？",
+                 useCases: ["名前やメールアドレスを聞き取るとき", "予約や電話で確認するとき"],
+                 examples: [
+                    ("Sorry, how do you spell that? Is it with one 'n' or two?", "すみません、どう綴りますか？nは1つ、それとも2つ？"),
+                    ("It's Siobhan. – Lovely name! How do you spell that?", "シボーンです。―素敵な名前！どう綴るの？")
+                 ], ipa: "/haʊ də jə spel ðæt/"),
+            make("squeeze someone in", "to find time for someone or something in a busy schedule",
+                 "（忙しい中）予定に組み込む・時間を作る",
+                 useCases: ["予約を無理に入れてもらうとき", "忙しい日に何かを入れるとき"],
+                 examples: [
+                    ("The doctor's busy today, but she can squeeze you in at four.", "先生は今日忙しいけど、4時なら入れられるって。"),
+                    ("I'll try to squeeze in a quick run before work.", "仕事前にちょっとランニングを入れてみるよ。")
+                 ], ipa: "/skwiːz ˈsʌmwʌn ɪn/"),
+            make("power through", "to keep going and finish something even though you are tired or it is hard",
+                 "（疲れていても）頑張ってやり切る",
+                 useCases: ["眠い・疲れている中で作業を続けるとき", "大変なことを乗り切った話をするとき"],
+                 examples: [
+                    ("I was knackered, but I powered through and finished the report.", "クタクタだったけど、頑張ってレポートを仕上げたよ。"),
+                    ("Just power through – it's nearly the weekend!", "あとひと踏ん張り、もうすぐ週末だよ！")
+                 ], ipa: "/ˈpaʊə θruː/"),
+            make("take a stab at", "to try to do or guess something, even if you might be wrong",
+                 "試しにやってみる・当てずっぽうで言ってみる",
+                 useCases: ["自信がないけど挑戦するとき", "答えを推測してみるとき"],
+                 examples: [
+                    ("I've never made bread before, but I'll take a stab at it.", "パン作ったことないけど、試しにやってみる。"),
+                    ("Go on, take a stab at how old he is.", "ほら、彼が何歳か当ててみて。")
+                 ], ipa: "/teɪk ə stæb æt/"),
+            make("small change", "coins of low value",
+                 "小銭",
+                 useCases: ["小銭を持っているか聞くとき", "駐車場やバスの支払いのとき"],
+                 examples: [
+                    ("Have you got any small change for the parking meter?", "駐車メーター用の小銭ある？"),
+                    ("Sorry, I've only got a note – no small change.", "ごめん、お札しかなくて小銭がないんだ。")
+                 ], ipa: "/smɔːl tʃeɪndʒ/"),
+            make("have you got change for ...?", "used to ask someone to swap a note for smaller notes or coins",
+                 "～を両替してもらえますか？・～をくずせますか？",
+                 useCases: ["お札をくずしてほしいとき", "お店で小銭がないとき"],
+                 examples: [
+                    ("Have you got change for a twenty?", "20ポンド札くずせる？"),
+                    ("Sorry, I haven't got change for a fifty.", "ごめん、50ポンド札はくずせないや。")
+                 ], ipa: "/hæv jə ɡɒt tʃeɪndʒ fɔː/"),
+            make("put it on my card", "to pay for something using a bank or credit card",
+                 "カードで払う・カードにつけておく",
+                 useCases: ["お店やレストランで支払うとき", "誰が払うか話すとき"],
+                 examples: [
+                    ("Don't worry about cash – just put it on my card.", "現金は気にしないで、私のカードで払っておいて。"),
+                    ("Can I put it all on one card?", "全部1枚のカードで払えますか？")
+                 ], ipa: "/pʊt ɪt ɒn maɪ kɑːd/"),
+            make("a mix-up", "a mistake that causes confusion, especially about arrangements",
+                 "手違い・行き違い",
+                 useCases: ["予約や注文の間違いを説明するとき", "誤解があったと伝えるとき"],
+                 examples: [
+                    ("Sorry, there's been a mix-up with your booking.", "申し訳ありません、ご予約に手違いがありまして。"),
+                    ("There was a bit of a mix-up and we both went to different stations.", "ちょっと行き違いがあって、二人とも別の駅に行っちゃった。")
+                 ], ipa: "/ə ˈmɪks ʌp/"),
+            make("shall we say ...?", "used to suggest a time, place or amount when making plans",
+                 "～ってことでどう？（時間・場所などを提案）",
+                 useCases: ["待ち合わせ時間を決めるとき", "値段や数を提案するとき"],
+                 examples: [
+                    ("Shall we say seven o'clock outside the cinema?", "7時に映画館の前ってことでどう？"),
+                    ("Shall we say twenty quid each?", "一人20ポンドってことでどう？")
+                 ], ipa: "/ʃəl wi seɪ/"),
+            make("I'll put you through", "used on the phone to say you will connect the caller to someone",
+                 "（電話を）おつなぎします",
+                 useCases: ["電話を担当者に回すとき", "会社やお店への電話で"],
+                 examples: [
+                    ("Hold on a sec, I'll put you through to the manager.", "少々お待ちください、店長におつなぎします。"),
+                    ("Could you put me through to reception, please?", "受付につないでもらえますか？")
+                 ], ipa: "/aɪl pʊt jə θruː/"),
+            make("indulge in", "to let yourself enjoy something nice, especially food or a treat",
+                 "（好きなものを）思いきり楽しむ・ちょっと贅沢する",
+                 useCases: ["ご褒美に贅沢するとき", "甘いものなどを我慢しないとき"],
+                 examples: [
+                    ("It's my birthday, so I'm going to indulge in a big slice of cake.", "誕生日だから、大きなケーキを思いきり食べちゃう。"),
+                    ("We indulged in a long lunch by the sea.", "海辺でのんびりランチを楽しむ贅沢をしたよ。")
+                 ], ipa: "/ɪnˈdʌldʒ ɪn/"),
+            make("turn the heating up", "to make a heating system produce more heat",
+                 "暖房（の温度）を上げる",
+                 useCases: ["部屋が寒いとき", "家族や同居人に頼むとき"],
+                 examples: [
+                    ("It's freezing in here – can we turn the heating up a bit?", "ここ寒すぎる、暖房ちょっと上げてもいい？"),
+                    ("Don't turn the heating up, just put a jumper on!", "暖房上げないで、セーター着なさい！")
+                 ], ipa: "/tɜːn ðə ˈhiːtɪŋ ʌp/"),
+        ]
+    }
+    private static var britishColloquial268: [Word] {
+        [
+            make("shrink", "to become smaller, especially after being washed (past: shrank, shrunk)",
+                 "縮む（洗濯で服が縮むなど）",
+                 useCases: ["洗濯で服が縮んだとき", "予算や人数が減ったことを話すとき"],
+                 examples: [
+                    ("My favourite jumper shrank in the wash.", "お気に入りのセーターが洗濯で縮んじゃった。"),
+                    ("Wash it on cold or it'll shrink.", "冷水で洗ってね、じゃないと縮むよ。")
+                 ], ipa: "/ʃrɪŋk/"),
+            make("faded", "having lost its colour or brightness over time",
+                 "色あせた",
+                 useCases: ["服やジーンズの色落ちについて", "昔の写真や記憶について話すとき"],
+                 examples: [
+                    ("These jeans are a bit faded, but I love them.", "このジーンズちょっと色あせてるけど、気に入ってるんだ。"),
+                    ("The sofa's faded where the sun hits it.", "ソファの日が当たるところが色あせちゃった。")
+                 ], ipa: "/ˈfeɪdɪd/"),
+            make("mouldy", "covered with mould because it is old or has been kept somewhere damp",
+                 "カビの生えた",
+                 useCases: ["パンや食べ物にカビが生えたとき", "湿った部屋や浴室の話で"],
+                 examples: [
+                    ("Don't eat that bread – it's gone mouldy.", "そのパン食べないで、カビ生えてるよ。"),
+                    ("There's a mouldy smell in the bathroom.", "お風呂場がカビ臭いね。")
+                 ], ipa: "/ˈməʊldi/"),
+            make("undercooked", "not cooked enough",
+                 "生焼けの・火が通っていない",
+                 useCases: ["料理に火が通っていないとき", "レストランで料理を戻すとき"],
+                 examples: [
+                    ("The chicken's a bit undercooked – can you put it back in?", "チキンちょっと生焼けだね。もう一回入れてくれる？"),
+                    ("I'd rather it was overcooked than undercooked.", "生焼けより焼きすぎの方がまだいいな。")
+                 ], ipa: "/ˌʌndəˈkʊkt/"),
+            make("drowsy", "tired and almost asleep",
+                 "眠気がある・うとうとした",
+                 useCases: ["薬の副作用について話すとき", "食後や運転中の眠気について"],
+                 examples: [
+                    ("These tablets make me really drowsy.", "この薬飲むとすごく眠くなるんだよね。"),
+                    ("I always feel drowsy after lunch.", "昼ご飯の後はいつも眠くなる。")
+                 ], ipa: "/ˈdraʊzi/"),
+            make("bumpy", "not smooth; with a lot of sudden movements up and down",
+                 "でこぼこの・揺れる",
+                 useCases: ["飛行機や車の揺れについて", "うまくいかない時期を例えるときにも"],
+                 examples: [
+                    ("It was a really bumpy flight – I felt sick.", "すごく揺れるフライトで、気持ち悪くなった。"),
+                    ("We've had a bit of a bumpy start, but it's getting better.", "出だしはちょっとつまずいたけど、良くなってきてるよ。")
+                 ], ipa: "/ˈbʌmpi/"),
+            make("go smoothly", "to happen without any problems",
+                 "順調に進む・スムーズにいく",
+                 useCases: ["予定やイベントがうまくいったか聞くとき", "引っ越しや手続きの報告で"],
+                 examples: [
+                    ("Did everything go smoothly at the airport?", "空港では全部スムーズにいった？"),
+                    ("Fingers crossed it all goes smoothly tomorrow.", "明日、全部うまくいくといいな。")
+                 ], ipa: "/gəʊ ˈsmuːðli/"),
+            make("hallway", "the area inside the front door of a house, or a passage between rooms",
+                 "玄関ホール・廊下",
+                 useCases: ["靴や荷物の置き場所を伝えるとき", "家の間取りを説明するとき"],
+                 examples: [
+                    ("Just leave your shoes in the hallway.", "靴は玄関に置いといてね。"),
+                    ("The bathroom's at the end of the hallway on the left.", "トイレは廊下の突き当たり左だよ。")
+                 ], ipa: "/ˈhɔːlweɪ/"),
+            make("tumble dryer", "a machine that dries clothes by turning them in hot air",
+                 "（回転式）衣類乾燥機",
+                 useCases: ["洗濯物の乾かし方について話すとき", "服が縮んだ理由を説明するとき"],
+                 examples: [
+                    ("Don't put that in the tumble dryer – it'll shrink.", "それ乾燥機に入れないで、縮むから。"),
+                    ("Our flat hasn't got a tumble dryer, so I hang everything up.", "うちのアパートには乾燥機がないから、全部干してる。")
+                 ], ipa: "/ˈtʌmbl ˌdraɪə/"),
+            make("back in stock", "available to buy again after being sold out",
+                 "再入荷した",
+                 useCases: ["売り切れていた商品が戻ったとき", "店員に再入荷時期を尋ねるとき"],
+                 examples: [
+                    ("Do you know when these will be back in stock?", "これいつ再入荷するかわかりますか？"),
+                    ("Good news – those trainers are back in stock!", "朗報、あのスニーカー再入荷したよ！")
+                 ], ipa: "/bæk ɪn stɒk/"),
+            make("a bad hair day", "a day when your hair looks messy, or a day when everything seems to go wrong",
+                 "髪がまとまらない日・ついてない日",
+                 useCases: ["髪型が決まらないとき", "何もかもうまくいかない日を冗談っぽく言うとき"],
+                 examples: [
+                    ("Don't look at me – I'm having a bad hair day.", "見ないで、今日髪が全然まとまらないの。"),
+                    ("Sorry I snapped – it's just been a bad hair day.", "きつく当たってごめん、今日はついてない日でさ。")
+                 ], ipa: "/ə bæd heə deɪ/"),
+            make("reasonably priced", "not too expensive; costing a fair amount",
+                 "手頃な値段の",
+                 useCases: ["お店やレストランをおすすめするとき", "値段について感想を言うとき"],
+                 examples: [
+                    ("The food's good and it's reasonably priced.", "料理は美味しいし、値段も手頃だよ。"),
+                    ("Do you know anywhere reasonably priced near the station?", "駅の近くで手頃なお店知ってる？")
+                 ], ipa: "/ˈriːznəbli praɪst/"),
+            make("blurry", "not clear, so you cannot see the shape or details properly",
+                 "ぼやけた・ピンボケの",
+                 useCases: ["写真がピンボケのとき", "目が疲れて見えにくいとき"],
+                 examples: [
+                    ("This photo's all blurry – can you take another one?", "この写真ブレてるね。もう一枚撮ってくれる？"),
+                    ("My eyes go blurry if I look at a screen for too long.", "画面を長く見てると目がかすむんだよね。")
+                 ], ipa: "/ˈblɜːri/"),
+            make("fluffy", "soft and light, like fur, wool or whipped cream",
+                 "ふわふわの",
+                 useCases: ["タオルや動物、ブランケットについて", "パンケーキや卵料理の食感を言うとき"],
+                 examples: [
+                    ("These pancakes are so light and fluffy!", "このパンケーキ、すごく軽くてふわふわ！"),
+                    ("I love your dog – he's so fluffy.", "君の犬かわいいね、すごくもふもふ。")
+                 ], ipa: "/ˈflʌfi/"),
+            make("leaky", "having a hole or crack that lets water or air escape",
+                 "水漏れする・漏れる",
+                 useCases: ["蛇口や屋根の水漏れについて", "大家さんに修理を頼むとき"],
+                 examples: [
+                    ("The kitchen tap's leaky again – it drips all night.", "台所の蛇口また水漏れしてて、一晩中ポタポタいってる。"),
+                    ("I need new boots – these ones are leaky.", "新しいブーツが要る。これ水が染みてくるんだ。")
+                 ], ipa: "/ˈliːki/"),
+        ]
+    }
+    private static var britishColloquial262: [Word] {
+        [
+            make("baffled", "completely unable to understand or explain something",
+                 "さっぱりわからない・困惑した",
+                 useCases: ["理由がまったく理解できないとき", "予想外の結果に首をかしげるとき"],
+                 examples: [
+                    ("I'm completely baffled – it worked fine yesterday.", "さっぱりわからないよ。昨日はちゃんと動いてたのに。"),
+                    ("Everyone was baffled by his decision to quit.", "彼が辞めると決めたことに、みんな首をかしげてた。")
+                 ], ipa: "/ˈbæfld/"),
+            make("puzzled", "confused because you cannot understand something",
+                 "けげんな・戸惑った",
+                 useCases: ["相手の言葉や態度がよくわからないとき", "不思議そうな表情を描写するとき"],
+                 examples: [
+                    ("You look puzzled – shall I explain it again?", "戸惑ってるみたいだね。もう一回説明しようか？"),
+                    ("She gave me a puzzled look when I mentioned it.", "その話をしたら、彼女はけげんな顔をした。")
+                 ], ipa: "/ˈpʌzld/"),
+            make("forgetful", "often forgetting things",
+                 "忘れっぽい",
+                 useCases: ["物忘れが多い自分を笑って話すとき", "年配の家族について話すとき"],
+                 examples: [
+                    ("Sorry, I'm so forgetful these days – what was your name again?", "ごめん、最近ほんと忘れっぽくて。お名前何でしたっけ？"),
+                    ("My gran's getting a bit forgetful, so I ring her every day.", "おばあちゃんが少し忘れっぽくなってきたから、毎日電話してるんだ。")
+                 ], ipa: "/fəˈɡetfl/"),
+            make("clueless", "knowing nothing about something; having no idea",
+                 "まったくわからない・疎い",
+                 useCases: ["ある分野に全然詳しくないと言うとき", "状況を全く把握していない人について話すとき"],
+                 examples: [
+                    ("I'm totally clueless when it comes to cars.", "車のことになると、私は全然わからないんだ。"),
+                    ("He was clueless about the surprise party.", "彼はサプライズパーティーのことを全く知らなかった。")
+                 ], ipa: "/ˈkluːləs/"),
+            make("tummy", "an informal word for stomach",
+                 "おなか（くだけた言い方）",
+                 useCases: ["おなかの調子が悪いと伝えるとき", "子どもや親しい人との会話で"],
+                 examples: [
+                    ("I've got a bit of a tummy ache – I'll skip dessert.", "ちょっとおなかが痛いから、デザートはやめとくね。"),
+                    ("My tummy's rumbling – is lunch nearly ready?", "おなかが鳴ってるよ。お昼もうすぐできる？")
+                 ], ipa: "/ˈtʌmi/"),
+            make("gadget", "a small, clever device or tool",
+                 "ガジェット・便利な小道具",
+                 useCases: ["新しい電子機器や便利グッズの話をするとき", "機械好きな人について話すとき"],
+                 examples: [
+                    ("He loves gadgets – he's always buying the latest phone.", "彼はガジェット好きで、いつも最新のスマホを買ってるよ。"),
+                    ("What's this little gadget for?", "この小さい道具、何に使うの？")
+                 ], ipa: "/ˈɡædʒɪt/"),
+            make("toddler", "a young child who has recently learnt to walk",
+                 "よちよち歩きの幼児（1〜3歳くらい）",
+                 useCases: ["小さい子どもがいる家庭の話をするとき", "子育ての大変さを話すとき"],
+                 examples: [
+                    ("Having a toddler in the house means nothing stays tidy.", "家によちよち歩きの子がいると、何も片付いたままにならないよ。"),
+                    ("She's got two toddlers, so she's knackered most days.", "彼女は小さい子が二人いて、たいてい疲れ切ってる。")
+                 ], ipa: "/ˈtɒdlə/"),
+            make("deserted", "empty, with no people around",
+                 "人けのない・がらんとした",
+                 useCases: ["街や店に誰もいないとき", "休日や早朝の静かな場所を描写するとき"],
+                 examples: [
+                    ("The town centre was completely deserted on Sunday morning.", "日曜の朝、街の中心部は全く人けがなかった。"),
+                    ("Where is everyone? The office is deserted!", "みんなどこ？ オフィスががらんとしてるよ！")
+                 ], ipa: "/dɪˈzɜːtɪd/"),
+            make("trip over", "to catch your foot on something and fall or nearly fall",
+                 "（〜に）つまずく",
+                 useCases: ["物につまずいて転びそうになったとき", "床に物を置かないよう注意するとき"],
+                 examples: [
+                    ("I tripped over the cable and nearly dropped my coffee.", "コードにつまずいて、コーヒーを落としそうになった。"),
+                    ("Move your bag, or someone's going to trip over it.", "かばんどけて、誰かつまずくよ。")
+                 ], ipa: "/trɪp ˈəʊvə/"),
+            make("hold the line", "to wait on the phone without hanging up",
+                 "（電話を切らずに）そのままお待ちください",
+                 useCases: ["電話で相手に少し待ってもらうとき", "問い合わせ窓口で待たされるとき"],
+                 examples: [
+                    ("Could you hold the line, please? I'll just check.", "そのままお待ちいただけますか？ 確認しますので。"),
+                    ("I've been holding the line for twenty minutes!", "もう20分も電話で待たされてるよ！")
+                 ], ipa: "/həʊld ðə laɪn/"),
+            make("blush", "to go red in the face because you are embarrassed or shy",
+                 "顔が赤くなる・赤面する",
+                 useCases: ["褒められて照れたとき", "恥ずかしがる人をからかうとき"],
+                 examples: [
+                    ("Stop it, you're making me blush!", "やめてよ、照れちゃうじゃん！"),
+                    ("He blushed when she said hello.", "彼女に挨拶されて、彼は顔を赤くした。")
+                 ], ipa: "/blʌʃ/"),
+            make("cuddle", "to hold someone or something close in your arms to show love; a hug",
+                 "抱きしめる・ぎゅっとする／ハグ",
+                 useCases: ["子どもやペットを抱きしめるとき", "落ち込んでいる人を慰めるとき"],
+                 examples: [
+                    ("Come here and give me a cuddle.", "こっちおいで、ぎゅってさせて。"),
+                    ("The kids love cuddling the dog on the sofa.", "子どもたちはソファで犬を抱っこするのが大好きなんだ。")
+                 ], ipa: "/ˈkʌdl/"),
+            make("graze", "a small injury where the skin is scraped; to scrape the skin slightly",
+                 "すり傷・擦りむく",
+                 useCases: ["転んで膝やひじを擦りむいたとき", "大したけがではないと伝えるとき"],
+                 examples: [
+                    ("It's only a graze – I'll put a plaster on it.", "ただのすり傷だよ。絆創膏貼っとくね。"),
+                    ("He fell off his bike and grazed his knee.", "彼は自転車から落ちて膝を擦りむいた。")
+                 ], ipa: "/ɡreɪz/"),
+            make("scream", "to shout loudly in a high voice because of fear, excitement, or pain; also something very funny",
+                 "叫ぶ・悲鳴を上げる／（口語で）めちゃくちゃ面白いもの・人",
+                 useCases: ["驚いて叫んだことを話すとき", "とても面白い人や出来事を褒めるとき"],
+                 examples: [
+                    ("I nearly screamed when I saw the spider.", "クモを見て、思わず叫びそうになったよ。"),
+                    ("You should meet her – she's an absolute scream.", "彼女に会ってみなよ、めちゃくちゃ面白いから。")
+                 ], ipa: "/skriːm/"),
+            make("snuggle up", "to get into a warm, comfortable position, often close to someone",
+                 "（暖かく）寄り添う・くるまる",
+                 useCases: ["寒い日に毛布にくるまって過ごすとき", "家でのんびりする予定を話すとき"],
+                 examples: [
+                    ("I just want to snuggle up on the sofa with a film tonight.", "今夜はソファで毛布にくるまって映画を観たいな。"),
+                    ("The kids snuggled up together under the blanket.", "子どもたちは毛布の中で寄り添ってた。")
+                 ], ipa: "/ˈsnʌɡl ʌp/"),
+        ]
+    }
+    private static var britishColloquial261: [Word] {
+        [
+            make("wet blanket", "someone who spoils other people's fun by being negative or unenthusiastic",
+                 "場をしらけさせる人・ノリの悪い人",
+                 useCases: ["盛り上がっているのに乗ってこない人について話すとき", "自分がノリ悪いと思われたくないときに冗談で言うとき"],
+                 examples: [
+                    ("Come on, don't be such a wet blanket – just one more drink!", "ほら、そんなにノリ悪くしないで、もう一杯だけ！"),
+                    ("I don't want to be a wet blanket, but it's nearly midnight.", "水を差したくはないけど、もうすぐ夜中の12時だよ。")
+                 ], ipa: "/wet ˈblæŋkɪt/"),
+            make("killjoy", "a person who stops others from enjoying themselves",
+                 "興ざめさせる人・楽しみを台無しにする人",
+                 useCases: ["ルールや注意で楽しみを止める人をからかうとき", "自分が止め役になるときに先に言っておくとき"],
+                 examples: [
+                    ("Sorry to be a killjoy, but we really need to leave now.", "興ざめさせてごめん、でも本当にもう出なきゃ。"),
+                    ("Who turned the music off? What a killjoy!", "誰が音楽止めたの？ 空気読めないなあ！")
+                 ], ipa: "/ˈkɪldʒɔɪ/"),
+            make("third wheel", "a person who is with a couple and feels unwanted or left out",
+                 "（カップルと一緒にいる）お邪魔虫・余計な一人",
+                 useCases: ["カップルと3人で出かけて居心地が悪いとき", "誘いを断るときの理由として冗談っぽく言うとき"],
+                 examples: [
+                    ("I'm not coming – I'll just feel like a third wheel.", "私は行かないよ。お邪魔虫になるだけだから。"),
+                    ("I spent the whole evening playing third wheel to them.", "一晩中あの二人のお邪魔虫をやってたよ。")
+                 ], ipa: "/θɜːd wiːl/"),
+            make("achy", "feeling slight, continuous pain in your body",
+                 "体が痛い・だるくて節々が痛む",
+                 useCases: ["風邪のひき始めで体がだるいとき", "運動した翌日に筋肉痛のとき"],
+                 examples: [
+                    ("I feel all achy – I think I'm coming down with something.", "体中がだるくて痛い。何かにかかりかけてるかも。"),
+                    ("My legs are a bit achy after that hike yesterday.", "昨日のハイキングで足がちょっと痛いんだ。")
+                 ], ipa: "/ˈeɪki/"),
+            make("breezy", "with a fairly strong but pleasant wind; also relaxed and cheerful",
+                 "風のある・そよ風が吹く／明るく気さくな",
+                 useCases: ["風が強めの天気について話すとき", "明るくさっぱりした人の態度を表すとき"],
+                 examples: [
+                    ("It's a bit breezy by the sea, so bring a jacket.", "海辺は少し風があるから、上着を持ってきてね。"),
+                    ("She was all bright and breezy this morning.", "彼女、今朝はすごく明るくて元気だったよ。")
+                 ], ipa: "/ˈbriːzi/"),
+            make("icy", "very cold, or covered with ice; also unfriendly",
+                 "凍った・凍えるほど冷たい／（態度が）冷ややかな",
+                 useCases: ["道路が凍っていて注意を促すとき", "冷たい態度や視線について話すとき"],
+                 examples: [
+                    ("Watch your step – the pavement's really icy this morning.", "足元に気をつけて、今朝は歩道がツルツルだよ。"),
+                    ("She gave me an icy look when I walked in late.", "遅れて入ったら、彼女に冷ややかな目で見られた。")
+                 ], ipa: "/ˈaɪsi/"),
+            make("empty-handed", "without bringing or getting anything",
+                 "手ぶらで・何も持たずに／収穫なしで",
+                 useCases: ["人の家に手土産なしで行きたくないとき", "探し物や買い物で何も得られなかったとき"],
+                 examples: [
+                    ("I can't turn up empty-handed – let's grab some wine.", "手ぶらで行くわけにいかないよ。ワインでも買っていこう。"),
+                    ("I went to three shops but came back empty-handed.", "3軒回ったけど、結局何も買えずに帰ってきた。")
+                 ], ipa: "/ˌempti ˈhændɪd/"),
+            make("learn by heart", "to learn something so well that you can remember it perfectly",
+                 "暗記する・そらで覚える",
+                 useCases: ["歌詞や台詞、番号を覚えているとき", "勉強法について話すとき"],
+                 examples: [
+                    ("I've watched it so often I know it by heart.", "何度も観たから、もう全部そらで言えるよ。"),
+                    ("You'll have to learn your lines by heart before Friday.", "金曜までに台詞を暗記しないとね。")
+                 ], ipa: "/lɜːn baɪ hɑːt/"),
+            make("a little bird told me", "said when you don't want to reveal who told you a piece of information",
+                 "風の噂で聞いたよ・ある筋から聞いたんだ",
+                 useCases: ["情報源を内緒にしたまま知っていることを伝えるとき", "誕生日やお祝い事を知っていたことを茶目っ気たっぷりに言うとき"],
+                 examples: [
+                    ("Happy birthday! A little bird told me it was today.", "誕生日おめでとう！ 今日だって風の噂で聞いてさ。"),
+                    ("A little bird told me you've got a new job – congrats!", "新しい仕事が決まったって小耳に挟んだよ、おめでとう！")
+                 ], ipa: "/ə ˈlɪtl bɜːd təʊld miː/"),
+            make("what's-his-name", "used when you can't remember or don't want to say someone's name",
+                 "なんとかって人・あの人（名前が出てこないとき）",
+                 useCases: ["話している相手の名前を思い出せないとき", "名前を出したくない人をぼかして話すとき"],
+                 examples: [
+                    ("I saw what's-his-name from your office at the gym.", "ジムで君の会社のなんとかって人を見かけたよ。"),
+                    ("Is she still going out with what's-his-name?", "彼女、まだあの何とかって人と付き合ってるの？")
+                 ], ipa: "/ˈwɒtsɪzneɪm/"),
+            make("so-and-so", "used instead of a name, when the exact name doesn't matter; also a polite word for an annoying person",
+                 "誰それ・某さん／（遠回しに）嫌なやつ",
+                 useCases: ["具体的な名前は重要でない例え話をするとき", "腹の立つ人をきつい言葉を避けて呼ぶとき"],
+                 examples: [
+                    ("It's always 'so-and-so said this, so-and-so did that' with him.", "彼っていつも『誰それがこう言った、誰それがああした』ばっかり。"),
+                    ("That cheeky so-and-so took my parking space!", "あの図々しいやつ、私の駐車スペースを取ったよ！")
+                 ], ipa: "/ˈsəʊ ən səʊ/"),
+            make("and whatnot", "and other similar things (used at the end of a list)",
+                 "〜とかいろいろ・〜なんかも",
+                 useCases: ["細かく全部挙げずに例をまとめるとき", "会話でざっくり説明するとき"],
+                 examples: [
+                    ("We need plates, cups, napkins and whatnot for the party.", "パーティー用に皿とかコップとかナプキンとか、いろいろ要るね。"),
+                    ("She's busy with emails and meetings and whatnot.", "彼女はメールやら会議やらで忙しいんだ。")
+                 ], ipa: "/ən ˈwɒtnɒt/"),
+            make("scaredy-cat", "a person who is easily frightened (used playfully)",
+                 "怖がり・弱虫（からかって言う）",
+                 useCases: ["ホラー映画や絶叫マシンを怖がる人をからかうとき", "自分が怖がりだと冗談で認めるとき"],
+                 examples: [
+                    ("Don't be such a scaredy-cat – it's only a spider!", "そんなに怖がらないで、ただのクモだよ！"),
+                    ("I'm a total scaredy-cat when it comes to horror films.", "ホラー映画に関しては私、完全に怖がりなの。")
+                 ], ipa: "/ˈskeədi kæt/"),
+            make("teacher's pet", "a student who is the teacher's favourite; also someone who tries too hard to please the boss",
+                 "先生のお気に入り・（上司に）えこひいきされる人",
+                 useCases: ["学生時代の思い出話をするとき", "上司に気に入られている同僚を冗談でからかうとき"],
+                 examples: [
+                    ("I was a bit of a teacher's pet at school, to be honest.", "正直、学生のころはちょっと先生のお気に入りだったんだ。"),
+                    ("He's always first to volunteer – such a teacher's pet!", "彼っていつも真っ先に手を挙げるよね、上司の点数稼ぎだなあ！")
+                 ], ipa: "/ˈtiːtʃəz pet/"),
+            make("big mouth", "a person who talks too much, especially one who can't keep a secret",
+                 "口が軽い人・おしゃべり",
+                 useCases: ["秘密をばらしてしまった人について話すとき", "うっかり言ってしまった自分を反省するとき"],
+                 examples: [
+                    ("Don't tell Tom – he's got a big mouth.", "トムには言わないで、口が軽いから。"),
+                    ("Me and my big mouth! I didn't mean to spoil the surprise.", "私ったら余計なことを！ サプライズを台無しにするつもりはなかったの。")
+                 ], ipa: "/bɪɡ maʊθ/"),
+        ]
+    }
+    private static var britishColloquial245: [Word] {
+        [
+            make("take forever", "to take a very long time, often annoyingly long",
+                 "めちゃくちゃ時間がかかる",
+                 useCases: ["待たされてイライラするとき", "作業がなかなか終わらないとき"],
+                 examples: [
+                    ("This download is taking forever.", "このダウンロード、全然終わらないんだけど。"),
+                    ("Sorry I took forever — the queue was massive.", "遅くなってごめん、列がすごく長くて。")
+                 ], ipa: "/teɪk fəˈrevə/"),
+            make("pass the buck", "to make someone else responsible for a problem instead of dealing with it yourself",
+                 "責任を押し付ける・たらい回しにする",
+                 useCases: ["職場で責任逃れをする人について", "窓口でたらい回しにされたとき"],
+                 examples: [
+                    ("Stop passing the buck and just sort it out.", "人のせいにしてないで、さっさと何とかしてよ。"),
+                    ("Every department I called just passed the buck.", "電話した部署はどこもたらい回しだった。")
+                 ], ipa: "/pɑːs ðə bʌk/"),
+            make("it's a tough one", "used when a question or decision is difficult to answer or make",
+                 "それは難しいね・悩むところだね",
+                 useCases: ["答えにくい質問をされたとき", "どちらか選べないとき"],
+                 examples: [
+                    ("Pizza or curry? Ooh, it's a tough one.", "ピザかカレー？うーん、悩むなあ。"),
+                    ("Should I take the job? It's a tough one, to be honest.", "その仕事受けるべき？正直、難しいところだね。")
+                 ], ipa: "/ɪts ə tʌf wʌn/"),
+            make("soggy", "unpleasantly wet and soft",
+                 "（水分で）ふやけた・べちゃっとした",
+                 useCases: ["揚げ物やパンがしなしなになったとき", "雨で靴や服がびしょびしょのとき"],
+                 examples: [
+                    ("The chips have gone all soggy.", "ポテトがすっかりしなしなになっちゃった。"),
+                    ("My shoes are soggy from the rain.", "雨で靴がぐしょぐしょだよ。")
+                 ], ipa: "/ˈsɒɡi/"),
+            make("crispy", "pleasantly hard and dry on the outside, so it breaks easily when you bite it",
+                 "カリカリの・パリッとした",
+                 useCases: ["料理の食感を褒めるとき", "焼き加減を注文するとき"],
+                 examples: [
+                    ("I love it when the bacon's really crispy.", "ベーコンがカリカリなのが大好き。"),
+                    ("The skin on this chicken is so crispy!", "このチキン、皮がすごくパリパリ！")
+                 ], ipa: "/ˈkrɪspi/"),
+            make("crunchy", "firm and making a loud noise when you bite it, in a pleasant way",
+                 "ザクザクした・シャキシャキした",
+                 useCases: ["野菜やナッツの食感を言うとき", "シリアルやお菓子を食べるとき"],
+                 examples: [
+                    ("These apples are lovely and crunchy.", "このリンゴ、シャキシャキで美味しい。"),
+                    ("Do you prefer smooth or crunchy peanut butter?", "ピーナッツバターはなめらか派？粒入り派？")
+                 ], ipa: "/ˈkrʌntʃi/"),
+            make("chewy", "needing to be chewed a lot before you can swallow it",
+                 "噛みごたえのある・（肉などが）硬い",
+                 useCases: ["お菓子のもちもち感を言うとき", "肉が硬いとき"],
+                 examples: [
+                    ("The steak was a bit chewy, to be honest.", "正直、ステーキがちょっと硬かった。"),
+                    ("I like cookies that are chewy in the middle.", "真ん中がしっとりもちっとしたクッキーが好き。")
+                 ], ipa: "/ˈtʃuːi/"),
+            make("yawn", "to open your mouth wide and breathe in deeply because you are tired or bored",
+                 "あくび（をする）",
+                 useCases: ["眠いとき", "退屈なとき"],
+                 examples: [
+                    ("Sorry, I can't stop yawning — I barely slept.", "ごめん、あくびが止まらない。ほとんど寝てなくて。"),
+                    ("Stop yawning, you're making me do it too!", "あくびやめて、こっちまでうつるじゃん！")
+                 ], ipa: "/jɔːn/"),
+            make("grin", "a wide smile; to smile widely",
+                 "にっこり笑う・にやにやする",
+                 useCases: ["嬉しそうな人を見たとき", "何か企んでいそうな人に"],
+                 examples: [
+                    ("What are you grinning about?", "何ニヤニヤしてるの？"),
+                    ("He came in with a massive grin on his face.", "彼、満面の笑みで入ってきたよ。")
+                 ], ipa: "/ɡrɪn/"),
+            make("frown", "to move your eyebrows together because you are annoyed, worried or thinking hard",
+                 "顔をしかめる・眉をひそめる",
+                 useCases: ["不機嫌そうな人について", "考え込んでいる人に"],
+                 examples: [
+                    ("Why are you frowning? Is something wrong?", "なんで眉間にしわ寄せてるの？何かあった？"),
+                    ("She frowned when she saw the bill.", "彼女、請求書を見て顔をしかめた。")
+                 ], ipa: "/fraʊn/"),
+            make("gulp", "to swallow something quickly or in large amounts, or to swallow because you are nervous",
+                 "ごくっと飲む・（緊張で）ごくりと唾をのむ",
+                 useCases: ["急いで飲むとき", "緊張する場面で"],
+                 examples: [
+                    ("He gulped down his coffee and ran out the door.", "彼はコーヒーを一気に飲んで飛び出していった。"),
+                    ("I gulped when I saw how much it cost.", "値段を見てごくりと唾をのんだよ。")
+                 ], ipa: "/ɡʌlp/"),
+            make("fidget", "to keep moving your hands or body because you are nervous, bored or restless",
+                 "そわそわする・もぞもぞ動く",
+                 useCases: ["落ち着きのない子どもに", "緊張して手をいじるとき"],
+                 examples: [
+                    ("Stop fidgeting and sit still for a minute.", "もぞもぞしないで、ちょっとじっとしてて。"),
+                    ("I always fidget when I'm nervous.", "緊張するといつもそわそわしちゃう。")
+                 ], ipa: "/ˈfɪdʒɪt/"),
+            make("spooky", "strange and slightly frightening",
+                 "不気味な・ちょっと怖い",
+                 useCases: ["暗い場所や古い建物について", "偶然の一致に驚いたとき"],
+                 examples: [
+                    ("This house is a bit spooky at night.", "この家、夜はちょっと不気味だね。"),
+                    ("That's spooky — I was just thinking about you!", "怖っ、ちょうど君のこと考えてたところ！")
+                 ], ipa: "/ˈspuːki/"),
+            make("yummy", "tasting very good (informal)",
+                 "おいしい・うまっ",
+                 useCases: ["食べ物を褒めるとき", "子どもや友達との会話で"],
+                 examples: [
+                    ("Mmm, this cake is so yummy!", "んー、このケーキすごくおいしい！"),
+                    ("That looks yummy — where did you get it?", "それおいしそう。どこで買ったの？")
+                 ], ipa: "/ˈjʌmi/"),
+            make("nitpick", "to criticise small, unimportant details",
+                 "細かいことにケチをつける・揚げ足を取る",
+                 useCases: ["細かい指摘ばかりする人に", "自分が細かいことを言う前置きに"],
+                 examples: [
+                    ("I don't want to nitpick, but there's a typo here.", "細かいこと言いたくないんだけど、ここ誤字あるよ。"),
+                    ("Stop nitpicking — it's fine as it is.", "揚げ足取らないで。このままで大丈夫だよ。")
+                 ], ipa: "/ˈnɪtpɪk/"),
+        ]
+    }
+    private static var britishColloquial241: [Word] {
+        [
+            make("drag your feet", "to be slow to do something because you don't really want to do it",
+                 "（やりたくなくて）ぐずぐずする・先延ばしにする",
+                 useCases: ["誰かがなかなか動かないとき", "自分が先延ばしにしていることを認めるとき"],
+                 examples: [
+                    ("Stop dragging your feet and just book the tickets!", "ぐずぐずしてないで、さっさとチケット取っちゃいなよ！"),
+                    ("I've been dragging my feet on this essay all week.", "このレポート、一週間ずっと先延ばしにしてるんだ。")
+                 ], ipa: "/ˌdræɡ jɔː ˈfiːt/"),
+            make("find your feet", "to become comfortable and confident in a new place or situation",
+                 "新しい環境に慣れる・勝手がわかってくる",
+                 useCases: ["引っ越しや転職の後の様子を話すとき", "新人を励ますとき"],
+                 examples: [
+                    ("Don't worry, you'll find your feet in a couple of weeks.", "心配しないで、2、3週間もすれば慣れるよ。"),
+                    ("It took me a while to find my feet in London.", "ロンドンに慣れるまで、しばらくかかったよ。")
+                 ], ipa: "/ˌfaɪnd jɔː ˈfiːt/"),
+            make("weekday", "any day from Monday to Friday",
+                 "平日",
+                 useCases: ["予定や営業時間を話すとき", "混雑具合を話すとき"],
+                 examples: [
+                    ("It's much quieter here on weekdays.", "ここは平日のほうがずっと空いてるよ。"),
+                    ("I can only meet up in the evenings on weekdays.", "平日は夜しか会えないんだ。")
+                 ], ipa: "/ˈwiːkdeɪ/"),
+            make("paperwork", "the forms, documents, and admin that you have to deal with",
+                 "書類仕事・事務手続き",
+                 useCases: ["仕事の面倒な作業を話すとき", "役所や引っ越しの手続きを話すとき"],
+                 examples: [
+                    ("I spent the whole morning doing paperwork.", "午前中ずっと書類仕事してたよ。"),
+                    ("Moving abroad involves so much paperwork.", "海外への引っ越しって、手続きがほんとに多いんだよね。")
+                 ], ipa: "/ˈpeɪpəwɜːk/"),
+            make("portion", "the amount of food served to one person",
+                 "（料理の）一人前・量",
+                 useCases: ["レストランの量について話すとき", "食べきれないとき"],
+                 examples: [
+                    ("The portions here are massive — let's share a starter.", "ここ量がすごいから、前菜はシェアしようよ。"),
+                    ("Could I get a smaller portion, please?", "少なめにしてもらえますか？")
+                 ], ipa: "/ˈpɔːʃn/"),
+            make("work-life balance", "the balance between time spent working and time for your personal life",
+                 "仕事と私生活のバランス・ワークライフバランス",
+                 useCases: ["働き方について話すとき", "転職の理由を話すとき"],
+                 examples: [
+                    ("The pay's lower, but the work-life balance is so much better.", "給料は下がったけど、ワークライフバランスはずっと良くなったよ。"),
+                    ("I'm trying to get a better work-life balance this year.", "今年は仕事と私生活のバランスをもっと良くしようとしてるんだ。")
+                 ], ipa: "/ˌwɜːk ˈlaɪf ˌbæləns/"),
+            make("team player", "someone who works well with other people in a group",
+                 "チームワークを大切にする人・協調性のある人",
+                 useCases: ["同僚を褒めるとき", "面接で自分をアピールするとき"],
+                 examples: [
+                    ("She's a real team player — always happy to help.", "彼女は本当に協調性があるよ。いつも喜んで手伝ってくれる。"),
+                    ("Come on, be a team player and stay a bit later.", "ほら、チームのためにもう少し残ってよ。")
+                 ], ipa: "/ˈtiːm ˌpleɪə/"),
+            make("boss someone around", "to keep telling someone what to do in an annoying way",
+                 "（人に）偉そうに指図する・こき使う",
+                 useCases: ["兄弟や同僚に文句を言うとき", "偉そうな人について話すとき"],
+                 examples: [
+                    ("Stop bossing me around — I know what I'm doing!", "偉そうに指図しないでよ。自分でわかってるから！"),
+                    ("My older sister used to boss me around all the time.", "姉にはいつもこき使われてたよ。")
+                 ], ipa: "/ˌbɒs ˈsʌmwʌn əˌraʊnd/"),
+            make("open-plan", "(of a room or office) having few or no walls, so it is one big space",
+                 "（部屋・オフィスが）仕切りのない・オープンな",
+                 useCases: ["家の間取りを話すとき", "職場の環境を話すとき"],
+                 examples: [
+                    ("Our new flat has an open-plan kitchen and living room.", "新しい部屋はキッチンとリビングがつながってるんだ。"),
+                    ("I find it hard to concentrate in an open-plan office.", "仕切りのないオフィスだと集中しにくいんだよね。")
+                 ], ipa: "/ˌəʊpən ˈplæn/"),
+            make("house-proud", "(British) caring a lot about keeping your home clean, tidy, and nice-looking",
+                 "家をきれいに保つことにこだわる・家自慢の",
+                 useCases: ["きれい好きな人について話すとき", "人の家を訪ねたとき"],
+                 examples: [
+                    ("Take your shoes off — my mum's very house-proud.", "靴脱いでね。うちの母、家をきれいにすることにうるさいから。"),
+                    ("I've become a bit house-proud since buying my own place.", "自分の家を買ってから、ちょっと家の手入れにこだわるようになったよ。")
+                 ], ipa: "/ˈhaʊs ˌpraʊd/"),
+            make("hybrid working", "a way of working where you spend some days in the office and some days at home",
+                 "ハイブリッド勤務（出社と在宅の組み合わせ）",
+                 useCases: ["働き方について話すとき", "会社の制度を説明するとき"],
+                 examples: [
+                    ("We do hybrid working — two days in the office, three at home.", "うちはハイブリッド勤務で、出社2日、在宅3日なんだ。"),
+                    ("Hybrid working has made my commute so much easier.", "ハイブリッド勤務になって、通勤がすごく楽になったよ。")
+                 ], ipa: "/ˌhaɪbrɪd ˈwɜːkɪŋ/"),
+            make("own goal", "(informal) something you do that accidentally harms yourself instead of helping",
+                 "自滅・墓穴を掘る行為（元はサッカーのオウンゴール）",
+                 useCases: ["誰かの失敗が裏目に出たとき", "自分のミスを笑うとき"],
+                 examples: [
+                    ("Raising prices just before Christmas was a real own goal.", "クリスマス直前の値上げは完全に自滅だったね。"),
+                    ("I forgot my own password — total own goal.", "自分のパスワード忘れちゃった。完全に自爆だよ。")
+                 ], ipa: "/ˌəʊn ˈɡəʊl/"),
+            make("step outside", "to go out of a building or room for a short time",
+                 "（ちょっと）外に出る",
+                 useCases: ["電話のために席を外すとき", "外の空気を吸いに行くとき"],
+                 examples: [
+                    ("Sorry, I need to step outside to take this call.", "ごめん、この電話に出るのにちょっと外に出るね。"),
+                    ("It's freezing — don't even step outside without a coat.", "めちゃくちゃ寒いよ。コートなしで外に出ちゃダメだよ。")
+                 ], ipa: "/ˌstep ˌaʊtˈsaɪd/"),
+            make("flat-pack", "furniture sold in pieces in a flat box that you put together yourself",
+                 "組み立て式（の家具）",
+                 useCases: ["家具を買うとき", "引っ越し後の作業を話すとき"],
+                 examples: [
+                    ("I spent all Sunday putting together a flat-pack wardrobe.", "日曜は丸一日、組み立て式のクローゼットを組み立ててたよ。"),
+                    ("Flat-pack furniture is cheap, but the instructions are a nightmare.", "組み立て家具は安いけど、説明書がほんと大変なんだよね。")
+                 ], ipa: "/ˈflæt ˌpæk/"),
+            make("parking space", "a place where you can leave a car",
+                 "駐車スペース",
+                 useCases: ["車で出かけるとき", "家や職場の駐車事情を話すとき"],
+                 examples: [
+                    ("It took me twenty minutes to find a parking space.", "駐車スペースを見つけるのに20分もかかったよ。"),
+                    ("Does the flat come with a parking space?", "その部屋、駐車場付き？")
+                 ], ipa: "/ˈpɑːkɪŋ ˌspeɪs/"),
+        ]
+    }
+    private static var britishColloquial240: [Word] {
+        [
+            make("public transport", "buses, trains, and other shared ways of travelling that anyone can use",
+                 "公共交通機関",
+                 useCases: ["通勤・移動手段を話すとき", "街の便利さを話すとき"],
+                 examples: [
+                    ("I don't drive — I just use public transport.", "運転しないんだ。公共交通機関を使ってるよ。"),
+                    ("The public transport here is brilliant.", "ここの公共交通機関はすごく便利だよ。")
+                 ], ipa: "/ˌpʌblɪk ˈtrænspɔːt/"),
+            make("window seat", "a seat next to the window on a plane, train, or bus",
+                 "窓側の席",
+                 useCases: ["飛行機や電車の席を選ぶとき", "チェックインのとき"],
+                 examples: [
+                    ("Could I have a window seat, please?", "窓側の席をお願いできますか？"),
+                    ("I always go for the window seat so I can sleep.", "寝られるから、いつも窓側の席にするんだ。")
+                 ], ipa: "/ˈwɪndəʊ ˌsiːt/"),
+            make("booked up", "having no free time or places left because everything has been reserved",
+                 "予約でいっぱい・予定が埋まっている",
+                 useCases: ["レストランやホテルが満席のとき", "自分の予定が詰まっているとき"],
+                 examples: [
+                    ("Sorry, we're booked up for tonight.", "申し訳ありません、今夜は予約でいっぱいです。"),
+                    ("I'm booked up all week, but Saturday's free.", "今週はずっと予定が埋まってるけど、土曜なら空いてるよ。")
+                 ], ipa: "/ˌbʊkt ˈʌp/"),
+            make("leave a tip", "to give extra money to a waiter, driver, etc. for good service",
+                 "チップを置く・チップを渡す",
+                 useCases: ["レストランで会計するとき", "チップの習慣を話すとき"],
+                 examples: [
+                    ("Should we leave a tip? The service was lovely.", "チップ置いていく？サービスすごく良かったし。"),
+                    ("In the UK, people usually leave a tip of about ten percent.", "イギリスでは、だいたい10％くらいチップを置くのが普通だよ。")
+                 ], ipa: "/ˌliːv ə ˈtɪp/"),
+            make("the locals", "the people who live in a particular place",
+                 "地元の人たち",
+                 useCases: ["旅行先でおすすめを聞くとき", "その土地の雰囲気を話すとき"],
+                 examples: [
+                    ("Let's eat where the locals eat.", "地元の人が食べてるところで食べようよ。"),
+                    ("The locals were really friendly.", "地元の人たちは本当に親切だったよ。")
+                 ], ipa: "/ðə ˈləʊklz/"),
+            make("a short walk", "a distance that is quick and easy to walk",
+                 "歩いてすぐ（の距離）・ちょっとした散歩",
+                 useCases: ["道案内や場所の説明をするとき", "散歩に誘うとき"],
+                 examples: [
+                    ("The station's only a short walk from here.", "駅はここから歩いてすぐだよ。"),
+                    ("Fancy a short walk after lunch?", "お昼のあと、ちょっと散歩しない？")
+                 ], ipa: "/ə ˌʃɔːt ˈwɔːk/"),
+            make("multitask", "to do several things at the same time",
+                 "同時に複数のことをする・ながら作業する",
+                 useCases: ["忙しさを話すとき", "自分の得意・不得意を話すとき"],
+                 examples: [
+                    ("I'm rubbish at multitasking — one thing at a time.", "同時に色々やるの苦手なんだ。一つずつやるよ。"),
+                    ("She's cooking and on the phone — she can really multitask.", "料理しながら電話してる。彼女、本当に器用だね。")
+                 ], ipa: "/ˌmʌltiˈtɑːsk/"),
+            make("connecting flight", "a second flight that you take to continue a journey",
+                 "乗り継ぎ便",
+                 useCases: ["旅行の行程を話すとき", "空港で乗り継ぐとき"],
+                 examples: [
+                    ("I've got a connecting flight in Amsterdam.", "アムステルダムで乗り継ぎ便があるんだ。"),
+                    ("We nearly missed our connecting flight.", "危うく乗り継ぎ便に乗り遅れるところだった。")
+                 ], ipa: "/kəˌnektɪŋ ˈflaɪt/"),
+            make("catch up on", "to do something you haven't had time to do, such as work or sleep",
+                 "（たまった〜を）取り戻す・片付ける",
+                 useCases: ["週末の予定を話すとき", "寝不足や仕事の遅れを取り戻すとき"],
+                 examples: [
+                    ("I'm just going to catch up on some sleep this weekend.", "今週末は寝不足を取り戻すつもり。"),
+                    ("I need to catch up on my emails.", "たまったメールを片付けなきゃ。")
+                 ], ipa: "/ˌkætʃ ˈʌp ɒn/"),
+            make("as I said", "used to repeat or refer back to something you mentioned before",
+                 "さっきも言ったけど・前にも言ったように",
+                 useCases: ["話を繰り返すとき", "自分の意見を念押しするとき"],
+                 examples: [
+                    ("As I said, I'm happy either way.", "さっきも言ったけど、どっちでもいいよ。"),
+                    ("As I said on the phone, I'll be a bit late.", "電話でも言ったけど、ちょっと遅れるね。")
+                 ], ipa: "/əz aɪ ˈsed/"),
+            make("have a nice day", "a friendly way to say goodbye to someone",
+                 "良い一日を",
+                 useCases: ["お店で別れ際に", "朝、誰かを見送るとき"],
+                 examples: [
+                    ("Thanks for your help — have a nice day!", "助かりました。良い一日を！"),
+                    ("Have a nice day at work, see you tonight.", "仕事頑張ってね、また夜に。")
+                 ], ipa: "/ˌhæv ə ˌnaɪs ˈdeɪ/"),
+            make("I'm driving", "used to say you won't drink alcohol because you have to drive",
+                 "車だから（お酒はやめとく）",
+                 useCases: ["お酒を勧められて断るとき", "飲み会で"],
+                 examples: [
+                    ("Not for me, thanks — I'm driving.", "僕はいいや、ありがとう。車だから。"),
+                    ("I'll just have a lemonade, I'm driving tonight.", "レモネードにしとく。今夜は車なんだ。")
+                 ], ipa: "/aɪm ˈdraɪvɪŋ/"),
+            make("medium rare", "(of meat, especially steak) cooked so that the inside is still pink",
+                 "ミディアムレア",
+                 useCases: ["ステーキを注文するとき", "焼き加減を聞かれたとき"],
+                 examples: [
+                    ("How would you like your steak? — Medium rare, please.", "ステーキの焼き加減は？ーミディアムレアでお願いします。"),
+                    ("I prefer my burger medium rare.", "ハンバーガーはミディアムレアが好きなんだ。")
+                 ], ipa: "/ˌmiːdiəm ˈreə/"),
+            make("make it two", "used when ordering to say you want the same thing as someone else",
+                 "それを2つで・私も同じので",
+                 useCases: ["カフェやバーで注文するとき", "友達と同じものを頼むとき"],
+                 examples: [
+                    ("A flat white, please. — Actually, make it two.", "フラットホワイトを一つ。ーやっぱり二つで。"),
+                    ("I'll have the fish. — Make it two!", "魚にします。ー私も同じので！")
+                 ], ipa: "/ˌmeɪk ɪt ˈtuː/"),
+            make("do a food shop", "(British) to go and buy food and groceries for the house",
+                 "食料品の買い出しをする",
+                 useCases: ["週末の予定を話すとき", "冷蔵庫が空のとき"],
+                 examples: [
+                    ("I need to do a food shop — the fridge is empty.", "買い出し行かなきゃ。冷蔵庫空っぽなんだ。"),
+                    ("We usually do a big food shop on Sundays.", "うちはいつも日曜にまとめて買い出しするんだ。")
+                 ], ipa: "/ˌduː ə ˈfuːd ʃɒp/"),
         ]
     }
     private static var britishColloquial220: [Word] {
