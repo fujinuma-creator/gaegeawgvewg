@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350
         ]
         return groups.flatMap { $0 }
     }
@@ -48308,6 +48308,151 @@ enum SeedData {
                     ("I didn't tell anyone, cross my heart.", "誰にも言ってないよ、誓って。"),
                     ("I'll be home by ten, cross my heart and hope to die.", "10時までに帰るよ、絶対に誓う。")
                  ], ipa: "/ˌkrɒs maɪ ˈhɑːt/"),
+        ]
+    }
+
+    private static var britishColloquial350: [Word] {
+        [
+            make("a wing mirror", "one of the two mirrors on the outside of a car, next to the front doors, that let the driver see behind",
+                 "サイドミラー・ドアミラー",
+                 useCases: ["運転や駐車の話で", "車をこすったとき"],
+                 examples: [
+                    ("Some idiot clipped my wing mirror in the car park.", "駐車場でどっかのバカにサイドミラーこすられたよ。"),
+                    ("Fold your wing mirror in, it's a tight squeeze down this lane.", "サイドミラー畳んで、この道めちゃくちゃ狭いから。")
+                 ], ipa: "/ə ˈwɪŋ ˌmɪrə/"),
+            make("bubble wrap", "plastic sheeting with lots of small air bubbles in it, used for protecting things when you pack them",
+                 "プチプチ・緩衝材",
+                 useCases: ["引っ越しや荷造りのとき", "暇つぶしの話で"],
+                 examples: [
+                    ("Wrap the glasses in bubble wrap or they'll be in pieces by the time we get there.", "グラスはプチプチで包んでね、じゃないと着く頃には粉々だよ。"),
+                    ("Nothing's more satisfying than popping bubble wrap.", "プチプチ潰すほど気持ちいいことってないよね。")
+                 ], ipa: "/ˈbʌbl ræp/"),
+            make("a filing cabinet", "a piece of office furniture with deep drawers for storing documents in folders",
+                 "ファイルキャビネット・書類棚",
+                 useCases: ["オフィスで書類を探すとき", "古い書類の整理の話で"],
+                 examples: [
+                    ("It'll be in the filing cabinet somewhere, under 'miscellaneous'.", "ファイルキャビネットのどっかにあるよ、「その他」のとこに。"),
+                    ("Who keeps biscuits in the filing cabinet? Actually, genius.", "誰だよ書類棚にビスケット隠してるの？…いや、天才か。")
+                 ], ipa: "/ə ˈfaɪlɪŋ ˌkæbɪnət/"),
+            make("a high chair", "a tall chair with long legs and a small tray, for a baby or young child to sit in while eating",
+                 "（赤ちゃん用の）ハイチェア・子ども用椅子",
+                 useCases: ["レストランで子連れのとき", "育児の話で"],
+                 examples: [
+                    ("Could we get a high chair for the little one, please?", "この子用にハイチェアをお願いできますか？"),
+                    ("Half his dinner ends up on the floor around the high chair.", "あの子の晩ご飯の半分はハイチェアの周りの床行きだよ。")
+                 ], ipa: "/ə ˈhaɪ tʃeə/"),
+            make("earbuds", "very small headphones that fit inside your ears",
+                 "イヤホン・ワイヤレスイヤホン",
+                 useCases: ["通勤中に音楽を聴くとき", "なくし物の話で"],
+                 examples: [
+                    ("I've lost one of my earbuds again. Third time this month.", "またイヤホン片方なくした。今月3回目だよ。"),
+                    ("Take your earbuds out, I'm trying to talk to you!", "イヤホン外してよ、話しかけてるんだから！")
+                 ], ipa: "/ˈɪəbʌdz/"),
+            make("a parasol", "a large umbrella used to give shade from the sun, especially on a beach or over a garden table",
+                 "パラソル・日傘",
+                 useCases: ["ビーチやテラス席で", "暑い日の庭で"],
+                 examples: [
+                    ("Grab a table with a parasol, I'm burning already.", "パラソルのある席取って、もう日焼けしそう。"),
+                    ("The wind picked the parasol up and sent it flying down the beach.", "風でパラソルが浮いて、ビーチの向こうまで飛んでったよ。")
+                 ], ipa: "/ə ˈpærəsɒl/"),
+            make("a water cooler", "a machine in an office that provides cold drinking water; also used to mean office gossip and casual chat",
+                 "ウォーターサーバー（比喩で：職場の雑談）",
+                 useCases: ["職場で水を飲むとき", "社内のうわさ話の話で"],
+                 examples: [
+                    ("I'll be at the water cooler if anyone needs me.", "誰か用があったらウォーターサーバーのとこにいるね。"),
+                    ("That's the kind of thing everyone gossips about round the water cooler.", "そういうのってみんな給湯室で噂するネタだよね。")
+                 ], ipa: "/ə ˈwɔːtə ˌkuːlə/"),
+            make("a mouse mat", "a small flat pad that you move a computer mouse on",
+                 "マウスパッド",
+                 useCases: ["パソコン作業の話で", "デスク周りを整えるとき"],
+                 examples: [
+                    ("My mouse keeps jumping about, I think I need a new mouse mat.", "マウスがピョンピョン飛ぶんだよね、新しいマウスパッドが要るかも。"),
+                    ("He's got a mouse mat with his dog's face on it. Bless him.", "あいつ、自分の犬の顔のマウスパッド使ってるんだよ。かわいいやつ。")
+                 ], ipa: "/ə ˈmaʊs mæt/"),
+            make("a draining board", "the area next to a kitchen sink where you put washed dishes to dry",
+                 "水切りかご・水切り台",
+                 useCases: ["皿洗いの後で", "キッチンを片付けるとき"],
+                 examples: [
+                    ("Just leave the plates on the draining board, I'll put them away later.", "お皿は水切りかごに置いといて、後で片付けるから。"),
+                    ("The draining board's piled so high it's about to collapse.", "水切りかごが山盛りで、今にも崩れそう。")
+                 ], ipa: "/ə ˈdreɪnɪŋ bɔːd/"),
+            make("a bobble hat", "a warm knitted hat with a small ball of wool on the top",
+                 "ボンボン付きニット帽",
+                 useCases: ["寒い日の服装の話で", "冬のファッションで"],
+                 examples: [
+                    ("It's bitter out there, wear your bobble hat.", "外はめちゃくちゃ寒いよ、ボンボンのニット帽かぶって。"),
+                    ("He looks about five years old in that bobble hat.", "あのボンボン帽だと、あいつ5歳児にしか見えないね。")
+                 ], ipa: "/ə ˈbɒbl hæt/"),
+            make("spare me", "used to tell someone you do not want to hear something, such as excuses, details or a lecture",
+                 "勘弁してよ・聞きたくない",
+                 useCases: ["言い訳や説教を遮るとき", "詳しい話を聞きたくないとき"],
+                 examples: [
+                    ("Spare me the lecture, Dad. I know I messed up.", "説教は勘弁してよ、父さん。やらかしたのはわかってるから。"),
+                    ("\"So the surgery went like this—\" \"Please, spare me the details!\"", "「で、手術がさ…」「お願い、詳しいことは聞きたくない！」")
+                 ], ipa: "/ˈspeə mi/"),
+            make("cut the crap", "a rude way of telling someone to stop saying things that are untrue or unimportant and get to the point",
+                 "たわごとはやめろ・本題に入れ",
+                 useCases: ["嘘やごまかしにイラついたとき", "映画の尋問シーンで"],
+                 examples: [
+                    ("Cut the crap and tell me where you really were last night.", "ごまかすのはやめて、昨夜本当はどこにいたのか言えよ。"),
+                    ("Let's cut the crap — do you want the job or not?", "回りくどいのはなしだ。この仕事やりたいの、やりたくないの？")
+                 ], ipa: "/ˌkʌt ðə ˈkræp/"),
+            make("get over yourself", "used to tell someone to stop thinking they are so important or to stop being so dramatic",
+                 "何様のつもり？・大げさだよ",
+                 useCases: ["偉そうな人に言い返すとき", "大げさな友達をたしなめるとき"],
+                 examples: [
+                    ("Oh, get over yourself. Nobody's even looking at you.", "もう、自意識過剰だって。誰もあんたのことなんて見てないよ。"),
+                    ("He thinks he's a rock star because he's got one song on Spotify. Get over yourself, mate.", "Spotifyに1曲あるだけでロックスター気取りだよ。何様だよって。")
+                 ], ipa: "/ˌɡet ˈəʊvə jɔːˌself/"),
+            make("we'll see about that", "used to say that you intend to stop something from happening, or that you doubt what someone has said",
+                 "それはどうかな・そうはさせない",
+                 useCases: ["相手の自信に疑いを示すとき", "挑戦を受けて立つとき"],
+                 examples: [
+                    ("\"I'm going to win this year.\" \"Oh, we'll see about that.\"", "「今年は俺が勝つよ」「へえ、それはどうかな。」"),
+                    ("He thinks he can just walk in and take my parking space? We'll see about that.", "勝手に私の駐車スペース取れると思ってるの？そうはさせないから。")
+                 ], ipa: "/wiːl ˈsiː əˌbaʊt ðæt/"),
+            make("brace yourself", "used to warn someone that something unpleasant or shocking is about to happen or be said",
+                 "覚悟して・心の準備をしてね",
+                 useCases: ["悪い知らせを伝える前に", "衝撃に備えさせるとき"],
+                 examples: [
+                    ("Brace yourself — I've just seen the electricity bill.", "覚悟してね、今電気代の請求見ちゃった。"),
+                    ("Brace yourselves, the in-laws are here for the whole weekend.", "みんな心の準備して、義理の親が週末ずっといるから。")
+                 ], ipa: "/ˈbreɪs jɔːˌself/"),
+            make("what did I miss?", "used when you arrive late or come back to ask what has happened while you were away",
+                 "何かあった？・私がいない間どうなった？",
+                 useCases: ["遅れて合流したとき", "席を外して戻ったとき"],
+                 examples: [
+                    ("Sorry, sorry, the traffic was a nightmare. What did I miss?", "ごめんごめん、渋滞がひどくてさ。何か進展あった？"),
+                    ("I popped out for five minutes and everyone's crying. What did I miss?", "5分抜けただけでみんな泣いてるんだけど。何があったの？")
+                 ], ipa: "/ˌwɒt dɪd aɪ ˈmɪs/"),
+            make("you've been warned", "used to tell someone that you have told them about a danger or problem, so it is their fault if something goes wrong",
+                 "ちゃんと警告したからね・忠告はしたよ",
+                 useCases: ["自己責任だと念押しするとき", "冗談っぽく脅すとき"],
+                 examples: [
+                    ("The curry's really hot. You've been warned.", "そのカレー本当に辛いよ。忠告はしたからね。"),
+                    ("If you eat the last slice of cake again, you've been warned.", "またケーキの最後の一切れ食べたら…警告したからね。")
+                 ], ipa: "/juːv biːn ˈwɔːnd/"),
+            make("touché", "used to admit that someone has made a good point against you in an argument",
+                 "一本取られた・それを言われると痛い",
+                 useCases: ["言い返されて認めるとき", "軽い言い合いで"],
+                 examples: [
+                    ("\"You're always late.\" \"Says the man who missed his own wedding rehearsal.\" \"Touché.\"", "「お前いつも遅刻だな」「自分の結婚式のリハに遅れた人が言う？」「…一本取られた。」"),
+                    ("Touché. I suppose I did say that.", "それを言われると痛いな。確かに言ったわ。")
+                 ], ipa: "/tuːˈʃeɪ/"),
+            make("you do the maths", "used to say that the answer or conclusion is obvious from the facts you have just given",
+                 "考えればわかるでしょ・あとは察して",
+                 useCases: ["結論が明らかなとき", "皮肉っぽく説明を省くとき"],
+                 examples: [
+                    ("He left at midnight and she left two minutes later. You do the maths.", "彼が0時に帰って、彼女はその2分後に帰ったの。あとは察して。"),
+                    ("Rent's gone up, my pay hasn't. You do the maths.", "家賃は上がった、給料は上がってない。考えればわかるでしょ。")
+                 ], ipa: "/ju ˌduː ðə ˈmæθs/"),
+            make("don't look at me", "used to say that you are not responsible for something or do not know the answer",
+                 "私じゃないよ・こっち見ないで",
+                 useCases: ["犯人扱いされたとき", "答えを知らないとき"],
+                 examples: [
+                    ("\"Who ate all the biscuits?\" \"Don't look at me!\"", "「ビスケット全部食べたの誰？」「私じゃないよ！」"),
+                    ("Don't look at me, I've got no idea how to fix the Wi-Fi.", "こっち見ないで、Wi-Fiの直し方なんて全然わかんないから。")
+                 ], ipa: "/ˌdəʊnt ˈlʊk ət mi/"),
         ]
     }
 
