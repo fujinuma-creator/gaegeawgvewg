@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336
         ]
         return groups.flatMap { $0 }
     }
@@ -47908,6 +47908,116 @@ enum SeedData {
                     ("Can I borrow your stapler for a sec?", "ちょっとホッチキス借りてもいい？"),
                     ("The stapler's jammed again — has anyone got another one?", "ホッチキスがまた詰まった。誰か他の持ってない？")
                  ], ipa: "/ə ˈsteɪplə/"),
+        ]
+    }
+
+    private static var britishColloquial336: [Word] {
+        [
+            make("hand cream", "a cream you rub into your hands to stop the skin getting dry",
+                 "ハンドクリーム",
+                 useCases: ["冬に手が乾燥するとき", "人に物を借りるとき"],
+                 examples: [
+                    ("Have you got any hand cream? My hands are so dry.", "ハンドクリーム持ってる？手がめっちゃ乾燥してて。"),
+                    ("I keep a tube of hand cream in my bag all winter.", "冬の間はずっとハンドクリームをかばんに入れてるよ。")
+                 ], ipa: "/ˈhænd kriːm/"),
+            make("a sleeping bag", "a warm padded bag that you sleep in, especially when camping",
+                 "寝袋",
+                 useCases: ["キャンプの準備をするとき", "友達の家に泊まるとき"],
+                 examples: [
+                    ("Don't forget to bring a sleeping bag — it gets cold at night.", "寝袋忘れないでね、夜は冷えるから。"),
+                    ("You can crash on the floor if you've got a sleeping bag.", "寝袋あるなら床で寝ていいよ。")
+                 ], ipa: "/ə ˈsliːpɪŋ bæɡ/"),
+            make("a picnic blanket", "a large blanket you put on the grass to sit on when eating outside",
+                 "レジャーシート・ピクニック用ブランケット",
+                 useCases: ["公園でピクニックするとき", "外出の持ち物を確認するとき"],
+                 examples: [
+                    ("I'll bring the picnic blanket if you sort out the food.", "食べ物用意してくれるなら、レジャーシートは持ってくよ。"),
+                    ("Let's put the picnic blanket down under that tree.", "あの木の下にシート敷こうよ。")
+                 ], ipa: "/ə ˈpɪknɪk ˌblæŋkɪt/"),
+            make("a cool box", "a box that keeps food and drinks cold, used for picnics or trips",
+                 "クーラーボックス",
+                 useCases: ["ピクニックやバーベキューの準備をするとき", "飲み物を冷やしておきたいとき"],
+                 examples: [
+                    ("Stick the drinks in the cool box so they stay cold.", "飲み物はクーラーボックスに入れといて、冷えたままになるから。"),
+                    ("Has anyone got a cool box we can borrow for the barbecue?", "バーベキュー用にクーラーボックス貸してくれる人いる？")
+                 ], ipa: "/ə ˈkuːl bɒks/"),
+            make("a shoe rack", "a shelf or frame for keeping shoes tidy, usually by the front door",
+                 "靴箱・シューズラック",
+                 useCases: ["家に人を招くとき", "部屋の片付けの話をするとき"],
+                 examples: [
+                    ("Just leave your shoes on the shoe rack by the door.", "靴はドアのとこのシューズラックに置いといてね。"),
+                    ("We need a bigger shoe rack — there are trainers everywhere.", "もっと大きい靴箱いるね、スニーカーそこら中にあるし。")
+                 ], ipa: "/ə ˈʃuː ræk/"),
+            make("a clothes horse", "a folding frame that you hang wet clothes on to dry indoors",
+                 "室内用の物干しラック",
+                 useCases: ["洗濯物を干すとき", "雨の日の家事の話をするとき"],
+                 examples: [
+                    ("It's raining, so I've put the washing on the clothes horse.", "雨だから洗濯物は室内の物干しにかけといたよ。"),
+                    ("Can you move the clothes horse? It's blocking the radiator.", "物干しラック動かしてくれる？暖房をふさいでるから。")
+                 ], ipa: "/ə ˈkləʊðz hɔːs/"),
+            make("a traffic warden", "an official whose job is to check that cars are parked legally and give fines",
+                 "駐車違反の取締員",
+                 useCases: ["路上駐車するとき", "駐車違反の切符を切られたとき"],
+                 examples: [
+                    ("Hurry up, there's a traffic warden coming down the street!", "急いで、取締員が通りをこっちに来てる！"),
+                    ("I was gone five minutes and a traffic warden gave me a ticket.", "5分離れただけで取締員に切符切られたよ。")
+                 ], ipa: "/ə ˈtræfɪk ˌwɔːdn/"),
+            make("a water bottle", "a bottle you carry with you and refill with water",
+                 "水筒・マイボトル",
+                 useCases: ["運動や外出の準備をするとき", "持ち物を確認するとき"],
+                 examples: [
+                    ("I've left my water bottle at the gym again.", "またジムに水筒置いてきちゃった。"),
+                    ("Bring a water bottle — it's going to be hot on the walk.", "水筒持ってきてね、散歩中暑くなるから。")
+                 ], ipa: "/ə ˈwɔːtə ˌbɒtl/"),
+            make("a bike lock", "a lock with a chain or cable that stops someone stealing your bicycle",
+                 "自転車のロック（鍵）",
+                 useCases: ["自転車で出かけるとき", "盗難の話をするとき"],
+                 examples: [
+                    ("Get a decent bike lock — bikes get nicked all the time round here.", "ちゃんとした自転車の鍵買いなよ、この辺しょっちゅう盗まれるから。"),
+                    ("I can't find the key to my bike lock anywhere.", "自転車のロックの鍵がどこにも見つからない。")
+                 ], ipa: "/ə ˈbaɪk lɒk/"),
+            make("the ticket barrier", "the gates at a station that you go through with your ticket or card",
+                 "（駅の）改札",
+                 useCases: ["駅で待ち合わせるとき", "切符やカードが通らないとき"],
+                 examples: [
+                    ("I'll meet you by the ticket barriers at half six.", "6時半に改札のとこで会おう。"),
+                    ("My card didn't work, so I got stuck at the ticket barrier.", "カードが反応しなくて改札で止められちゃった。")
+                 ], ipa: "/ðə ˈtɪkɪt ˌbæriə/"),
+            make("a hair tie", "a stretchy band used to hold long hair back in a ponytail",
+                 "ヘアゴム",
+                 useCases: ["髪をまとめたいとき", "物を借りるとき"],
+                 examples: [
+                    ("Have you got a spare hair tie? It's so windy.", "ヘアゴムの予備ある？風がすごくて。"),
+                    ("I always lose my hair ties — I don't know where they go.", "ヘアゴムいつもなくすんだよね、どこ行っちゃうんだろ。")
+                 ], ipa: "/ə ˈheə taɪ/"),
+            make("a screen protector", "a thin clear plastic or glass sheet that you put on a phone screen to protect it",
+                 "画面保護フィルム",
+                 useCases: ["スマホを買ったとき", "画面が割れたときの話をするとき"],
+                 examples: [
+                    ("Luckily only the screen protector cracked, not the phone.", "幸い割れたのは保護フィルムだけで、スマホは無事だった。"),
+                    ("You should get a screen protector before you drop it.", "落とす前に保護フィルム貼っときなよ。")
+                 ], ipa: "/ə ˈskriːn prəˌtektə/"),
+            make("a gym bag", "a bag for carrying your sports clothes and things to the gym",
+                 "ジムバッグ",
+                 useCases: ["仕事帰りにジムへ行くとき", "持ち物の話をするとき"],
+                 examples: [
+                    ("I've brought my gym bag so I can go straight after work.", "仕事終わりにそのまま行けるようにジムバッグ持ってきた。"),
+                    ("Something in my gym bag really stinks.", "ジムバッグの中の何かがめっちゃ臭うんだけど。")
+                 ], ipa: "/ə ˈdʒɪm bæɡ/"),
+            make("shower gel", "liquid soap that you use to wash your body in the shower",
+                 "ボディソープ",
+                 useCases: ["買い物リストを作るとき", "旅行の持ち物を話すとき"],
+                 examples: [
+                    ("We're out of shower gel — can you grab some on the way home?", "ボディソープ切れてるんだ、帰りに買ってきてくれる？"),
+                    ("The hotel gives you free shower gel, so don't bother packing any.", "ホテルにボディソープあるから、持っていかなくていいよ。")
+                 ], ipa: "/ˈʃaʊə dʒel/"),
+            make("a yoga mat", "a soft mat that you use when doing yoga or exercises on the floor",
+                 "ヨガマット",
+                 useCases: ["家で運動するとき", "ヨガのクラスに行くとき"],
+                 examples: [
+                    ("Do I need to bring my own yoga mat to the class?", "クラスにヨガマット持参しなきゃいけない？"),
+                    ("I bought a yoga mat in January and I've used it twice.", "1月にヨガマット買ったけど、2回しか使ってない。")
+                 ], ipa: "/ə ˈjəʊɡə mæt/"),
         ]
     }
 
