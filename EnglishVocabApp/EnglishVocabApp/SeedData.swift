@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351, britishColloquial352, britishColloquial353, britishColloquial354, britishColloquial355, britishColloquial356, britishColloquial357, britishColloquial358, britishColloquial359, britishColloquial360, britishColloquial361, britishColloquial362, britishColloquial363, britishColloquial364, britishColloquial365, britishColloquial366, britishColloquial367, britishColloquial368, britishColloquial369, britishColloquial370, britishColloquial371, britishColloquial372, britishColloquial373, britishColloquial374, britishColloquial375, britishColloquial376, britishColloquial377, britishColloquial378, britishColloquial379
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351, britishColloquial352, britishColloquial353, britishColloquial354, britishColloquial355, britishColloquial356, britishColloquial357, britishColloquial358, britishColloquial359, britishColloquial360, britishColloquial361, britishColloquial362, britishColloquial363, britishColloquial364, britishColloquial365, britishColloquial366, britishColloquial367, britishColloquial368, britishColloquial369, britishColloquial370, britishColloquial371, britishColloquial372, britishColloquial373, britishColloquial374, britishColloquial375, britishColloquial376, britishColloquial377, britishColloquial378, britishColloquial379, britishColloquial380
         ]
         return groups.flatMap { $0 }
     }
@@ -50193,6 +50193,151 @@ enum SeedData {
                     ("Give him a cup of tea and the cricket on telly and he's as happy as Larry.", "紅茶とテレビのクリケットさえあれば彼はご機嫌だよ。"),
                     ("She's been as happy as Larry since she retired.", "彼女、退職してからずっと幸せそうだよ。")
                  ], ipa: "/bi əz ˌhæpi əz ˈlæri/"),
+        ]
+    }
+
+    private static var britishColloquial380: [Word] {
+        [
+            make("I'll be mother", "a jokey way of saying you will pour the tea or serve the food for everyone",
+                 "（冗談で）私がお茶を注ぐね・取り分けるね",
+                 useCases: ["ティーポットを手に取って皆に注ぐとき", "料理を取り分ける役を買って出るとき"],
+                 examples: [
+                    ("Right, pass me the teapot — I'll be mother.", "よし、ティーポット貸して。私が注ぐよ。"),
+                    ("He picked up the serving spoon and said, \"I'll be mother, shall I?\"", "彼は取り分け用のスプーンを手に「僕が取り分けようか？」と言った。")
+                 ], ipa: "/aɪl bi ˈmʌðə/"),
+            make("who's she, the cat's mother?", "a playful telling-off when someone refers to a woman present as \"she\" instead of using her name",
+                 "「彼女」って誰よ、名前で呼びなさい（冗談まじりのたしなめ）",
+                 useCases: ["その場にいる女性を「she」と呼んだ子どもをたしなめるとき", "家族間の軽い冗談で"],
+                 examples: [
+                    ("\"She said I could have a biscuit.\" — \"Who's she, the cat's mother?\"", "「あの人がビスケット食べていいって」「あの人って誰？猫のお母さん？」"),
+                    ("My gran always says \"Who's she, the cat's mother?\" if you don't use her name.", "うちのおばあちゃん、名前で呼ばないと必ず「誰よ、猫のお母さん？」って言うんだ。")
+                 ], ipa: "/huːz ʃiː ðə ˈkæts ˈmʌðə/"),
+            make("all fur coat and no knickers", "looking glamorous or impressive on the outside but lacking substance underneath",
+                 "見た目は豪華だけど中身がない",
+                 useCases: ["見かけ倒しの人や店をからかうとき", "派手だけど中身の伴わないものについて"],
+                 examples: [
+                    ("That new restaurant is all fur coat and no knickers — gorgeous décor, awful food.", "あの新しいレストラン、見かけ倒しだよ。内装は素敵なのに料理はひどい。"),
+                    ("He drives a flashy car, but he's all fur coat and no knickers.", "彼、派手な車に乗ってるけど、中身は空っぽだよ。")
+                 ], ipa: "/ɔːl ˈfɜː ˈkəʊt ən nəʊ ˈnɪkəz/"),
+            make("the lights are on but nobody's home", "a jokey way of saying someone is not paying attention or not very bright",
+                 "心ここにあらず・頭が働いていない",
+                 useCases: ["ぼーっとしている人をからかうとき", "話が通じない様子を冗談で言うとき"],
+                 examples: [
+                    ("I asked him three times — the lights are on but nobody's home.", "3回も聞いたのに、あいつ完全に上の空だよ。"),
+                    ("Sorry, I didn't sleep last night. The lights are on but nobody's home.", "ごめん、昨夜寝てなくて。頭が全然働いてないんだ。")
+                 ], ipa: "/ðə ˈlaɪts ər ˈɒn bət ˈnəʊbədiz ˈhəʊm/"),
+            make("a few sandwiches short of a picnic", "a humorous way of saying someone is a bit silly or not quite all there",
+                 "ちょっと抜けている・頭のネジが足りない",
+                 useCases: ["変なことをした人を軽くからかうとき", "自分のうっかりを自虐するとき"],
+                 examples: [
+                    ("He tried to pay for petrol with a library card — a few sandwiches short of a picnic, that one.", "彼、図書館カードでガソリン代払おうとしたんだ。ちょっと抜けてるよね。"),
+                    ("I put the milk in the cupboard again. I'm a few sandwiches short of a picnic today.", "また牛乳を戸棚にしまっちゃった。今日の私、ネジが足りないわ。")
+                 ], ipa: "/ə fjuː ˈsænwɪdʒɪz ʃɔːt əv ə ˈpɪknɪk/"),
+            make("not the sharpest tool in the shed", "a gentle, jokey way of saying someone is not very clever",
+                 "あまり頭が切れるほうじゃない",
+                 useCases: ["誰かの鈍さを柔らかく言うとき", "自分を自虐的に言うとき"],
+                 examples: [
+                    ("Lovely lad, but he's not the sharpest tool in the shed.", "いい子なんだけど、あんまり頭が切れるほうじゃないんだよね。"),
+                    ("I'm not the sharpest tool in the shed when it comes to maths.", "数学に関しては、私あんまり賢くないんだ。")
+                 ], ipa: "/nɒt ðə ˈʃɑːpɪst ˈtuːl ɪn ðə ˈʃed/"),
+            make("a face like a wet weekend", "a very gloomy, miserable expression",
+                 "どんよりした暗い顔・浮かない顔",
+                 useCases: ["不機嫌そうな人をからかうとき", "落ち込んだ顔を冗談めかして言うとき"],
+                 examples: [
+                    ("What's up with you? You've got a face like a wet weekend.", "どうしたの？雨の週末みたいな暗い顔して。"),
+                    ("He sat there with a face like a wet weekend after his team lost.", "チームが負けて、彼はずっと浮かない顔で座ってた。")
+                 ], ipa: "/ə ˈfeɪs laɪk ə ˌwet ˌwiːkˈend/"),
+            make("it's brass monkeys", "a jokey way of saying it is extremely cold (short for \"cold enough to freeze the balls off a brass monkey\")",
+                 "めちゃくちゃ寒い",
+                 useCases: ["冬の朝に外に出たとき", "寒さを大げさに言うとき"],
+                 examples: [
+                    ("Put a coat on — it's brass monkeys out there!", "コート着なよ、外はめちゃくちゃ寒いよ！"),
+                    ("It was brass monkeys at the bus stop this morning.", "今朝のバス停、凍えるほど寒かった。")
+                 ], ipa: "/ɪts ˌbrɑːs ˈmʌŋkiz/"),
+            make("more tea, vicar?", "a jokey phrase said to cover an embarrassing noise such as a burp or fart",
+                 "（げっぷやおならの後に）おっと失礼（ごまかしの冗談）",
+                 useCases: ["誰かがげっぷ・おならをした場を和ませるとき", "気まずい音をごまかすとき"],
+                 examples: [
+                    ("He let out a huge burp, then said, \"More tea, vicar?\"", "彼は大きなげっぷをして「お茶のおかわりはいかが、牧師様？」とごまかした。"),
+                    ("Whenever the dog breaks wind, Dad says \"More tea, vicar?\"", "犬がおならをするたびに、父は「お茶のおかわりは？」って言うんだ。")
+                 ], ipa: "/ˈmɔː ˈtiː ˈvɪkə/"),
+            make("as much use as a chocolate teapot", "completely useless",
+                 "まったく役に立たない",
+                 useCases: ["役に立たない道具や人をからかうとき", "壊れかけの物について冗談で言うとき"],
+                 examples: [
+                    ("This umbrella is about as much use as a chocolate teapot.", "この傘、チョコレートのティーポットくらい役に立たないよ。"),
+                    ("The instructions were as much use as a chocolate teapot.", "説明書はまったく役に立たなかった。")
+                 ], ipa: "/əz ˈmʌtʃ ˈjuːs əz ə ˈtʃɒklət ˈtiːpɒt/"),
+            make("tired and emotional", "a humorous euphemism for drunk",
+                 "（婉曲・冗談で）酔っ払っている",
+                 useCases: ["飲みすぎた人を遠回しに言うとき", "パーティー後の様子を冗談で話すとき"],
+                 examples: [
+                    ("Uncle Pete got a bit tired and emotional at the wedding.", "ピートおじさん、結婚式でちょっと「お疲れ」になっちゃってね。"),
+                    ("By midnight, half the office was tired and emotional.", "夜中の12時には、会社の半分が出来上がってた。")
+                 ], ipa: "/ˈtaɪəd ən ɪˈməʊʃənl/"),
+            make("have a face for radio", "a jokey, teasing way of saying someone is not very good-looking",
+                 "（冗談で）ラジオ向きの顔をしている",
+                 useCases: ["親しい友人を軽くからかうとき", "写真写りが悪い自分を自虐するとき"],
+                 examples: [
+                    ("Me on telly? No thanks, I've got a face for radio.", "私がテレビに？いやいや、私はラジオ向きの顔だから。"),
+                    ("He's a brilliant presenter, but let's be honest, he has a face for radio.", "彼は素晴らしい司会者だけど、正直ラジオ向きの顔だよね。")
+                 ], ipa: "/hæv ə ˈfeɪs fə ˈreɪdiəʊ/"),
+            make("as mad as a box of frogs", "completely crazy or wildly eccentric, usually said affectionately",
+                 "めちゃくちゃぶっ飛んでいる・変わり者",
+                 useCases: ["愛すべき変人について話すとき", "ハチャメチャな人を冗談で表すとき"],
+                 examples: [
+                    ("My aunt is as mad as a box of frogs, but she's great fun.", "うちのおばさん、相当ぶっ飛んでるけど、すごく楽しい人なんだ。"),
+                    ("Our new flatmate is mad as a box of frogs — he keeps a pet tortoise in the bath.", "新しいルームメイト、変わり者すぎる。風呂でカメ飼ってるんだよ。")
+                 ], ipa: "/əz ˈmæd əz ə ˈbɒks əv ˈfrɒɡz/"),
+            make("all mouth and no trousers", "talking big but never actually doing anything",
+                 "口ばっかりで行動が伴わない",
+                 useCases: ["大口をたたく人をからかうとき", "言うだけで実行しない人について"],
+                 examples: [
+                    ("He keeps saying he'll quit and start a business, but he's all mouth and no trousers.", "彼、仕事辞めて起業するって言い続けてるけど、口ばっかりだよ。"),
+                    ("Don't worry about him — he's all mouth and no trousers.", "あいつのことは気にしないで。口だけだから。")
+                 ], ipa: "/ɔːl ˈmaʊθ ən nəʊ ˈtraʊzəz/"),
+            make("cream crackered", "Cockney rhyming slang for \"knackered\" — absolutely exhausted",
+                 "（韻を踏んだ俗語で）ヘトヘトに疲れた",
+                 useCases: ["長い一日の後に疲れを冗談めかして言うとき", "運動や引っ越しの後に"],
+                 examples: [
+                    ("I've been on my feet all day — I'm cream crackered.", "一日中立ちっぱなしで、もうヘトヘトだよ。"),
+                    ("After moving all those boxes, we were completely cream crackered.", "あの箱を全部運んだら、私たち完全にクタクタだった。")
+                 ], ipa: "/ˌkriːm ˈkrækəd/"),
+            make("there's more meat on a butcher's pencil", "a jokey way of saying someone is very thin",
+                 "（冗談で）ガリガリだね",
+                 useCases: ["痩せている人を親しみを込めてからかうとき", "もっと食べるよう勧めるとき"],
+                 examples: [
+                    ("Have another slice of cake, love — there's more meat on a butcher's pencil.", "ケーキもう一切れ食べなさい、ガリガリじゃないの。"),
+                    ("My grandad looked at my skinny brother and said there was more meat on a butcher's pencil.", "おじいちゃんは痩せっぽちの弟を見て「肉屋の鉛筆のほうが肉付きがいいな」と言った。")
+                 ], ipa: "/ðeəz ˈmɔː ˈmiːt ɒn ə ˈbʊtʃəz ˈpensl/"),
+            make("see a man about a dog", "a jokey way of saying you are leaving without saying why, often to go to the toilet",
+                 "（行き先をはぐらかして）ちょっと野暮用で",
+                 useCases: ["トイレに行くとき冗談めかして", "行き先を言いたくないとき"],
+                 examples: [
+                    ("Back in a minute — I've just got to see a man about a dog.", "すぐ戻るね、ちょっと野暮用で。"),
+                    ("\"Where are you off to?\" — \"Just going to see a man about a dog.\"", "「どこ行くの？」「ちょっとね、野暮用。」")
+                 ], ipa: "/siː ə ˈmæn əˈbaʊt ə ˈdɒɡ/"),
+            make("spend a penny", "a polite, old-fashioned and humorous way of saying go to the toilet",
+                 "（婉曲・冗談で）お手洗いに行く",
+                 useCases: ["上品にトイレに行くと伝えるとき", "年配の人の言い回しをまねて冗談で"],
+                 examples: [
+                    ("Excuse me, I just need to spend a penny.", "失礼、ちょっとお手洗いに。"),
+                    ("Let's stop at the services — the kids need to spend a penny.", "サービスエリアに寄ろう、子どもたちがトイレだって。")
+                 ], ipa: "/ˈspend ə ˈpeni/"),
+            make("have hollow legs", "to be able to eat or drink a huge amount without seeming affected",
+                 "いくら食べても（飲んでも）平気",
+                 useCases: ["大食いの人を冗談でからかうとき", "お酒に強い人について話すとき"],
+                 examples: [
+                    ("Where does he put it all? He must have hollow legs.", "あれ全部どこに入るの？足が空洞なんじゃない？"),
+                    ("Teenage boys have hollow legs — the fridge is empty again.", "10代の男の子は底なしだね。冷蔵庫がまた空っぽだよ。")
+                 ], ipa: "/hæv ˌhɒləʊ ˈleɡz/"),
+            make("go down like a lead balloon", "to be received very badly, especially a joke or suggestion",
+                 "（冗談・提案が）見事にスベる・まったくウケない",
+                 useCases: ["冗談がスベったとき", "提案が不評だった話で"],
+                 examples: [
+                    ("My joke about the boss went down like a lead balloon.", "上司についての私の冗談、見事にスベったよ。"),
+                    ("The idea of a Saturday meeting went down like a lead balloon.", "土曜に会議をするという案は大不評だった。")
+                 ], ipa: "/ɡəʊ ˈdaʊn laɪk ə ˌled bəˈluːn/"),
         ]
     }
 
