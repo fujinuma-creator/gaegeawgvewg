@@ -323,7 +323,10 @@ struct ShadowingSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             intro
-            ownAudioCard
+            // Only needed while some sentence has no bundled original audio.
+            if !ShadowingSeed.all.allSatisfy({ ShadowingPlayer.audioURL(for: $0) != nil }) {
+                ownAudioCard
+            }
             speedRow
             HStack(spacing: 8) {
                 ForEach(Filter.allCases, id: \.self) { f in
