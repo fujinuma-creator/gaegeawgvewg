@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351, britishColloquial352, britishColloquial353, britishColloquial354, britishColloquial355, britishColloquial356, britishColloquial357, britishColloquial358, britishColloquial359, britishColloquial360, britishColloquial361, britishColloquial362, britishColloquial363, britishColloquial364, britishColloquial365, britishColloquial366, britishColloquial367, britishColloquial368, britishColloquial369, britishColloquial370, britishColloquial371, britishColloquial372, britishColloquial373, britishColloquial374, britishColloquial375, britishColloquial376, britishColloquial377, britishColloquial378
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351, britishColloquial352, britishColloquial353, britishColloquial354, britishColloquial355, britishColloquial356, britishColloquial357, britishColloquial358, britishColloquial359, britishColloquial360, britishColloquial361, britishColloquial362, britishColloquial363, britishColloquial364, britishColloquial365, britishColloquial366, britishColloquial367, britishColloquial368, britishColloquial369, britishColloquial370, britishColloquial371, britishColloquial372, britishColloquial373, britishColloquial374, britishColloquial375, britishColloquial376, britishColloquial377, britishColloquial378, britishColloquial379
         ]
         return groups.flatMap { $0 }
     }
@@ -50048,6 +50048,151 @@ enum SeedData {
                     ("If he's going to be like that, he can take a hike.", "あいつがそういう態度なら、勝手に消えればいい。"),
                     ("Tell your brother to take a hike — this is a girls' night.", "お兄さんにあっち行けって言って。今夜は女子会なんだから。")
                  ], ipa: "/ˌteɪk ə ˈhaɪk/"),
+        ]
+    }
+
+    private static var britishColloquial379: [Word] {
+        [
+            make("take a shine to", "to start to like someone or something quickly, often without a clear reason",
+                 "（人・物を）すぐに気に入る",
+                 useCases: ["人やペットが誰かを気に入った話で", "第一印象について話すとき"],
+                 examples: [
+                    ("The dog's really taken a shine to you — he never does that.", "犬がすっかり君を気に入ったね、普段そんなことしないのに。"),
+                    ("I think my nan's taken a shine to your brother.", "うちのおばあちゃん、君のお兄さんのこと気に入ったみたい。")
+                 ], ipa: "/teɪk ə ˈʃaɪn tə/"),
+            make("have the collywobbles", "to feel nervous, often with a slightly upset stomach",
+                 "（緊張で）お腹がそわそわする・ビビる",
+                 useCases: ["試験や面接の前に", "人前で話す前の緊張を表すとき"],
+                 examples: [
+                    ("I always get the collywobbles before a job interview.", "面接の前はいつもお腹がそわそわするんだ。"),
+                    ("She had the collywobbles all morning before her driving test.", "彼女、運転免許の試験前で朝からずっとビビってた。")
+                 ], ipa: "/hæv ðə ˈkɒliˌwɒblz/"),
+            make("be on tenterhooks", "to be nervous and excited while waiting for something to happen",
+                 "やきもきしている・気が気でない",
+                 useCases: ["結果や知らせを待っているとき", "ドキドキしながら待つ状況で"],
+                 examples: [
+                    ("We've been on tenterhooks all week waiting for the test results.", "検査結果を待って、一週間ずっと気が気じゃなかった。"),
+                    ("Don't keep me on tenterhooks — did you get the job or not?", "じらさないでよ、仕事決まったの？"),
+                 ], ipa: "/bi ɒn ˈtentəhʊks/"),
+            make("be at sixes and sevens", "to be confused, disorganised or not ready",
+                 "ごちゃごちゃで混乱している",
+                 useCases: ["引っ越しや準備が整っていないとき", "職場が混乱している話で"],
+                 examples: [
+                    ("Sorry about the mess — we're all at sixes and sevens since the move.", "散らかっててごめん、引っ越してからずっとてんやわんやで。"),
+                    ("The office was at sixes and sevens after the new system went live.", "新システム導入後、オフィスは大混乱だった。")
+                 ], ipa: "/bi ət ˈsɪksɪz ən ˈsevnz/"),
+            make("be quick off the mark", "to react or understand very quickly",
+                 "反応が早い・行動が素早い",
+                 useCases: ["素早く動いた人を褒めるとき", "チャンスをすぐつかんだ話で"],
+                 examples: [
+                    ("You were quick off the mark — the tickets sold out in ten minutes.", "素早かったね、チケット10分で売り切れたよ。"),
+                    ("He's not always quick off the mark first thing in the morning.", "彼、朝イチはいつも反応が鈍いんだよね。")
+                 ], ipa: "/bi ˈkwɪk ɒf ðə ˈmɑːk/"),
+            make("take a dim view of", "to disapprove of something",
+                 "～を快く思わない・よく思わない",
+                 useCases: ["上司や学校がルール違反をよく思わないとき", "やんわり否定的な態度を伝えるとき"],
+                 examples: [
+                    ("The boss takes a dim view of people turning up late.", "上司は遅刻する人をよく思ってないんだ。"),
+                    ("My mum took a dim view of me dyeing my hair green.", "母は私が髪を緑に染めたのをよく思わなかった。")
+                 ], ipa: "/teɪk ə ˈdɪm vjuː əv/"),
+            make("get the hump", "to become annoyed or sulky, often about something small",
+                 "むっとする・へそを曲げる",
+                 useCases: ["誰かが小さなことで機嫌を損ねたとき", "友人同士のいざこざの話で"],
+                 examples: [
+                    ("He got the hump because we started eating without him.", "彼抜きで食べ始めたから、あいつむっとしちゃってさ。"),
+                    ("Don't get the hump — I was only joking!", "へそ曲げないでよ、冗談だってば！")
+                 ], ipa: "/ɡet ðə ˈhʌmp/"),
+            make("be in a flap", "to be anxious, flustered and rushing around",
+                 "あたふたしている・慌てている",
+                 useCases: ["準備に追われて慌てている人について", "落ち着くよう声をかけるとき"],
+                 examples: [
+                    ("Mum's in a right flap — the guests arrive in half an hour.", "母さん大慌てだよ、30分後にお客さん来るから。"),
+                    ("There's no need to get in a flap, we've got plenty of time.", "慌てる必要ないよ、時間はたっぷりあるから。")
+                 ], ipa: "/bi ɪn ə ˈflæp/"),
+            make("like a bear with a sore head", "in a very bad mood and irritable",
+                 "ひどく機嫌が悪い",
+                 useCases: ["不機嫌な人について話すとき", "寝不足や二日酔いの人について"],
+                 examples: [
+                    ("Steer clear of Dad today — he's like a bear with a sore head.", "今日は父さんに近づかないほうがいい、めちゃくちゃ機嫌悪いから。"),
+                    ("I was like a bear with a sore head after that night shift.", "あの夜勤のあと、私すごく機嫌悪かった。")
+                 ], ipa: "/laɪk ə ˈbeə wɪð ə ˌsɔː ˈhed/"),
+            make("be in a tizzy", "to be in a state of nervous excitement or confusion",
+                 "パニック気味になっている・そわそわしている",
+                 useCases: ["小さなことで大騒ぎしている人について", "イベント前の慌ただしさを話すとき"],
+                 examples: [
+                    ("She's in a tizzy because she can't find her passport.", "彼女、パスポートが見つからなくてパニックになってる。"),
+                    ("The whole village was in a tizzy about the royal visit.", "王族の訪問で村中がそわそわしてた。")
+                 ], ipa: "/bi ɪn ə ˈtɪzi/"),
+            make("be at the end of one's tether", "to have no patience or energy left",
+                 "我慢の限界だ・もう限界",
+                 useCases: ["育児や仕事で疲れ果てたとき", "我慢が限界に達したことを伝えるとき"],
+                 examples: [
+                    ("The baby's been crying all night — I'm at the end of my tether.", "赤ちゃん一晩中泣いてて、もう限界だよ。"),
+                    ("I'm at the end of my tether with this broadband company.", "このネット回線の会社にはもう我慢の限界だ。")
+                 ], ipa: "/bi ət ði ˈend əv wʌnz ˈteðə/"),
+            make("be hot under the collar", "to be angry, annoyed or embarrassed",
+                 "カッとなっている・頭にきている",
+                 useCases: ["誰かが怒っている様子を伝えるとき", "議論が白熱したときに"],
+                 examples: [
+                    ("He got a bit hot under the collar when they mentioned his parking.", "駐車の仕方を指摘されて、彼ちょっとカッとなってた。"),
+                    ("There's no point getting hot under the collar about it now.", "今さらそのことでカッカしても仕方ないよ。")
+                 ], ipa: "/bi ˌhɒt ˌʌndə ðə ˈkɒlə/"),
+            make("be tickled pink", "to be very pleased or amused",
+                 "すごく喜んでいる・大喜びしている",
+                 useCases: ["プレゼントや知らせを喜んでいる人について", "嬉しい気持ちを表すとき"],
+                 examples: [
+                    ("Grandma was tickled pink with the flowers you sent.", "送ってくれた花、おばあちゃんすごく喜んでたよ。"),
+                    ("I was tickled pink when they asked me to be godmother.", "名付け親を頼まれたとき、すごく嬉しかった。")
+                 ], ipa: "/bi ˌtɪkld ˈpɪŋk/"),
+            make("be in fine fettle", "to be in good health or good condition",
+                 "元気いっぱい・絶好調",
+                 useCases: ["久しぶりに会った人の様子を話すとき", "体調や状態がいいことを伝えるとき"],
+                 examples: [
+                    ("You're looking in fine fettle — have you been on holiday?", "元気そうだね、休暇でも行ってたの？"),
+                    ("The old car's still in fine fettle after twenty years.", "あの古い車、20年経ってもまだ絶好調だよ。")
+                 ], ipa: "/bi ɪn ˌfaɪn ˈfetl/"),
+            make("be fed up to the back teeth", "to be extremely tired of or annoyed by something",
+                 "心底うんざりしている",
+                 useCases: ["同じことの繰り返しに疲れたとき", "強い不満を伝えるとき"],
+                 examples: [
+                    ("I'm fed up to the back teeth with this rain.", "この雨には心底うんざりだよ。"),
+                    ("She's fed up to the back teeth of doing everyone's washing-up.", "彼女、みんなの皿洗いをさせられるのに心底うんざりしてる。")
+                 ], ipa: "/bi ˌfed ˈʌp tə ðə ˌbæk ˈtiːθ/"),
+            make("be all at sea", "to be completely confused and not know what to do",
+                 "途方に暮れている・さっぱりわからない",
+                 useCases: ["新しい環境や仕事に戸惑っているとき", "説明が理解できないとき"],
+                 examples: [
+                    ("I was all at sea for my first few weeks in the new job.", "新しい仕事の最初の数週間は全然わからなくて途方に暮れてた。"),
+                    ("Honestly, I'm all at sea with these tax forms.", "正直、この税金の書類はさっぱりわからない。")
+                 ], ipa: "/bi ˌɔːl ət ˈsiː/"),
+            make("be none the wiser", "to still not understand something, even after it has been explained; or to not find out about something",
+                 "（説明されても）さっぱりわからないまま・（誰にも）気づかれない",
+                 useCases: ["説明を聞いても理解できなかったとき", "ばれずに済むことを話すとき"],
+                 examples: [
+                    ("He explained it twice and I'm still none the wiser.", "彼が2回説明してくれたけど、いまだにさっぱりわからない。"),
+                    ("Just put it back — nobody will be any the wiser.", "元に戻しておけば誰にも気づかれないよ。")
+                 ], ipa: "/bi ˌnʌn ðə ˈwaɪzə/"),
+            make("be slow on the uptake", "to take a long time to understand things",
+                 "飲み込みが遅い・察しが悪い",
+                 useCases: ["冗談やヒントに気づかなかったとき", "自分の鈍さを自虐的に言うとき"],
+                 examples: [
+                    ("Sorry, I'm a bit slow on the uptake this morning — not enough coffee.", "ごめん、今朝はちょっと頭の回転が鈍くて。コーヒーが足りない。"),
+                    ("He's quite slow on the uptake when it comes to hints.", "彼、ヒントを出しても察しが悪いんだよね。")
+                 ], ipa: "/bi ˌsləʊ ɒn ði ˈʌpteɪk/"),
+            make("be as keen as mustard", "to be very eager and enthusiastic",
+                 "やる気満々・すごく乗り気",
+                 useCases: ["新人や子どものやる気を褒めるとき", "熱心な人について話すとき"],
+                 examples: [
+                    ("The new lad's as keen as mustard — first in, last out.", "新しく入った子、やる気満々だよ。一番に来て最後に帰る。"),
+                    ("The kids were as keen as mustard to go swimming.", "子どもたち、泳ぎに行くのにすごく乗り気だった。")
+                 ], ipa: "/bi əz ˌkiːn əz ˈmʌstəd/"),
+            make("be as happy as Larry", "to be very happy and contented",
+                 "とても幸せ・ご機嫌",
+                 useCases: ["満足している人の様子を話すとき", "のんびり楽しんでいる様子を表すとき"],
+                 examples: [
+                    ("Give him a cup of tea and the cricket on telly and he's as happy as Larry.", "紅茶とテレビのクリケットさえあれば彼はご機嫌だよ。"),
+                    ("She's been as happy as Larry since she retired.", "彼女、退職してからずっと幸せそうだよ。")
+                 ], ipa: "/bi əz ˌhæpi əz ˈlæri/"),
         ]
     }
 
