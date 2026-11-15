@@ -92,7 +92,7 @@ enum SeedData {
             britishColloquial211, britishColloquial212, britishColloquial213, britishColloquial214, britishColloquial215, britishColloquial216,
             britishColloquial217, britishColloquial218, britishColloquial219, britishColloquial220, britishColloquial221, britishColloquial222,
             britishColloquial223, britishColloquial224, britishColloquial225, britishColloquial226, britishColloquial227,
-            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351, britishColloquial352, britishColloquial353, britishColloquial354, britishColloquial355, britishColloquial356, britishColloquial357, britishColloquial358, britishColloquial359, britishColloquial360, britishColloquial361, britishColloquial362, britishColloquial363, britishColloquial364, britishColloquial365, britishColloquial366, britishColloquial367, britishColloquial368
+            britishColloquial228, britishColloquial229, britishColloquial230, britishColloquial231, britishColloquial232, britishColloquial233, britishColloquial234, britishColloquial235, britishColloquial236, britishColloquial237, britishColloquial238, britishColloquial239, britishColloquial240, britishColloquial241, britishColloquial242, britishColloquial243, britishColloquial244, britishColloquial245, britishColloquial246, britishColloquial247, britishColloquial248, britishColloquial249, britishColloquial250, britishColloquial251, britishColloquial252, britishColloquial253, britishColloquial254, britishColloquial255, britishColloquial256, britishColloquial257, britishColloquial258, britishColloquial259, britishColloquial260, britishColloquial261, britishColloquial262, britishColloquial263, britishColloquial264, britishColloquial265, britishColloquial266, britishColloquial267, britishColloquial268, britishColloquial269, britishColloquial270, britishColloquial271, britishColloquial272, britishColloquial273, britishColloquial274, britishColloquial275, britishColloquial276, britishColloquial277, britishColloquial278, britishColloquial279, britishColloquial280, britishColloquial281, britishColloquial282, britishColloquial283, britishColloquial284, britishColloquial285, britishColloquial286, britishColloquial287, britishColloquial288, britishColloquial289, britishColloquial290, britishColloquial291, britishColloquial292, britishColloquial293, britishColloquial294, britishColloquial295, britishColloquial296, britishColloquial297, britishColloquial298, britishColloquial299, britishColloquial300, britishColloquial301, britishColloquial302, britishColloquial303, britishColloquial304, britishColloquial305, britishColloquial306, britishColloquial307, britishColloquial308, britishColloquial309, britishColloquial310, britishColloquial311, britishColloquial312, britishColloquial313, britishColloquial314, britishColloquial315, britishColloquial316, britishColloquial317, britishColloquial318, britishColloquial319, britishColloquial320, britishColloquial321, britishColloquial322, britishColloquial323, britishColloquial324, britishColloquial325, britishColloquial326, britishColloquial327, britishColloquial328, britishColloquial329, britishColloquial330, britishColloquial331, britishColloquial332, britishColloquial333, britishColloquial334, britishColloquial335, britishColloquial336, britishColloquial337, britishColloquial338, britishColloquial339, britishColloquial340, britishColloquial341, britishColloquial342, britishColloquial343, britishColloquial344, britishColloquial345, britishColloquial346, britishColloquial347, britishColloquial348, britishColloquial349, britishColloquial350, britishColloquial351, britishColloquial352, britishColloquial353, britishColloquial354, britishColloquial355, britishColloquial356, britishColloquial357, britishColloquial358, britishColloquial359, britishColloquial360, britishColloquial361, britishColloquial362, britishColloquial363, britishColloquial364, britishColloquial365, britishColloquial366, britishColloquial367, britishColloquial368, britishColloquial369
         ]
         return groups.flatMap { $0 }
     }
@@ -49468,6 +49468,151 @@ enum SeedData {
                     ("Take a chill pill, mate — it's only a parking ticket.", "落ち着けって。ただの駐禁じゃん。"),
                     ("Mum, take a chill pill, I'll be home by midnight.", "ママ、カリカリしないで。12時までには帰るから。")
                  ], ipa: "/teɪk ə ˈtʃɪl pɪl/"),
+        ]
+    }
+
+    private static var britishColloquial369: [Word] {
+        [
+            make("a wine rack", "a frame or shelf with slots for storing bottles of wine on their sides",
+                 "ワインラック",
+                 useCases: ["キッチンやダイニングの話で", "引っ越し・インテリアの話で"],
+                 examples: [
+                    ("Grab a red from the wine rack, would you? Anything but the expensive one.", "ワインラックから赤を一本取ってくれる？高いやつ以外ならどれでもいいから。"),
+                    ("Our wine rack's been empty since Christmas, to be honest.", "正直、うちのワインラックはクリスマス以来空っぽだよ。")
+                 ], ipa: "/ə ˈwaɪn ræk/"),
+            make("a camping stove", "a small portable cooker that runs on gas, used outdoors when camping",
+                 "キャンプ用コンロ・ガスバーナー",
+                 useCases: ["キャンプやアウトドアで", "停電のときの話で"],
+                 examples: [
+                    ("Did you remember the gas for the camping stove? Please tell me you did.", "キャンプコンロのガス持ってきた？持ってきたって言って。"),
+                    ("We made pasta on a camping stove halfway up a mountain. Best meal ever.", "山の中腹でキャンプコンロでパスタ作ったんだ。人生最高の食事だったよ。")
+                 ], ipa: "/ə ˈkæmpɪŋ stəʊv/"),
+            make("a hand warmer", "a small pouch that heats up and is held or kept in a pocket to warm your hands",
+                 "カイロ・ハンドウォーマー",
+                 useCases: ["寒い日の外出で", "スポーツ観戦やスキーで"],
+                 examples: [
+                    ("It's freezing at the match — bring a couple of hand warmers.", "試合会場めちゃくちゃ寒いから、カイロ何個か持ってきな。"),
+                    ("I've got a hand warmer in each pocket and I'm still shivering.", "両ポケットにカイロ入れてるのにまだ震えてるよ。")
+                 ], ipa: "/ə ˈhænd wɔːmə/"),
+            make("a skewer", "a long thin metal or wooden stick used to hold pieces of food together while cooking",
+                 "串・スキュアー",
+                 useCases: ["バーベキューで", "料理の焼き加減を見るとき"],
+                 examples: [
+                    ("Stick a skewer in the cake — if it comes out clean, it's done.", "ケーキに串を刺してみて。何もついてこなければ焼けてるよ。"),
+                    ("Soak the wooden skewers first or they'll catch fire on the barbecue.", "木の串は先に水に浸けといて。じゃないとバーベキューで燃えちゃうから。")
+                 ], ipa: "/ə ˈskjuːə/"),
+            make("an intercom", "a system with a speaker and microphone for talking to someone at the door or in another room",
+                 "インターホン",
+                 useCases: ["マンションの入口で", "来客や配達のとき"],
+                 examples: [
+                    ("Buzz me on the intercom when you get here and I'll let you in.", "着いたらインターホン鳴らして。開けるから。"),
+                    ("The intercom's broken again, so the delivery guy just left it outside.", "またインターホンが壊れてて、配達の人が外に置いてっちゃった。")
+                 ], ipa: "/ən ˈɪntəkɒm/"),
+            make("a mantelpiece", "a shelf above a fireplace, often used to display photos and ornaments",
+                 "マントルピース・暖炉の上の棚",
+                 useCases: ["家のインテリアの話で", "物の置き場所を伝えるとき"],
+                 examples: [
+                    ("Your keys are on the mantelpiece, next to Grandad's photo.", "鍵なら暖炉の上の棚、おじいちゃんの写真の隣にあるよ。"),
+                    ("She keeps all her trophies lined up on the mantelpiece.", "彼女、トロフィーを全部暖炉の上にずらっと並べてるんだ。")
+                 ], ipa: "/ə ˈmæntlpiːs/"),
+            make("a steak knife", "a sharp knife with a serrated edge for cutting cooked meat at the table",
+                 "ステーキナイフ",
+                 useCases: ["レストランや食卓で", "食器をそろえる話で"],
+                 examples: [
+                    ("Could we get a steak knife, please? This one's not cutting it.", "ステーキナイフもらえますか？これだと切れなくて。"),
+                    ("We only own four steak knives, so someone's getting a butter knife.", "うちにはステーキナイフが4本しかないから、誰かはバターナイフね。")
+                 ], ipa: "/ə ˈsteɪk naɪf/"),
+            make("a log burner", "a closed metal stove that burns wood to heat a room",
+                 "薪ストーブ",
+                 useCases: ["冬の家での過ごし方の話で", "田舎のコテージで"],
+                 examples: [
+                    ("There's nothing better than a glass of red in front of the log burner.", "薪ストーブの前で赤ワインを一杯、これに勝るものはないね。"),
+                    ("The cottage has a log burner, so bring something warm to sit around in.", "コテージには薪ストーブがあるから、くつろげる暖かい服持ってきて。")
+                 ], ipa: "/ə ˈlɒɡ bɜːnə/"),
+            make("a phone stand", "a small holder that keeps a mobile phone upright on a desk or table",
+                 "スマホスタンド",
+                 useCases: ["デスクワークで", "ビデオ通話や動画視聴のとき"],
+                 examples: [
+                    ("Prop it up on the phone stand so we can both watch.", "スマホスタンドに立てといて、二人で見られるように。"),
+                    ("I got a phone stand so I'm not holding it at a weird angle on video calls.", "スマホスタンド買ったんだ。ビデオ通話で変な角度で持たなくて済むように。")
+                 ], ipa: "/ə ˈfəʊn stænd/"),
+            make("a cake stand", "a raised plate on a stem used for displaying and serving cakes",
+                 "ケーキスタンド",
+                 useCases: ["アフタヌーンティーで", "パーティーの準備で"],
+                 examples: [
+                    ("She brought out the scones on a three-tier cake stand — very posh.", "彼女、3段のケーキスタンドでスコーンを出してきたの。すごく上品。"),
+                    ("Can I borrow your cake stand for Saturday? It's my sister's birthday.", "土曜日にケーキスタンド借りてもいい？妹の誕生日なんだ。")
+                 ], ipa: "/ə ˈkeɪk stænd/"),
+            make("if the cap fits", "used to say that if a criticism applies to you, you should accept it (short for 'if the cap fits, wear it')",
+                 "思い当たるなら認めなさい・図星ならそういうこと",
+                 useCases: ["遠回しの批判に相手が反応したとき", "皮肉っぽく言い返すとき"],
+                 examples: [
+                    ("\"Are you calling me lazy?\" \"I didn't say that — but if the cap fits...\"", "「僕が怠け者だって言うの？」「そうは言ってないけど、思い当たるならね…」"),
+                    ("I wasn't talking about anyone in particular. If the cap fits, wear it.", "特定の誰かの話をしたわけじゃないよ。心当たりがあるなら、そういうことでしょ。")
+                 ], ipa: "/ɪf ðə ˈkæp fɪts/"),
+            make("it's been a while", "used when you haven't seen someone or done something for a long time",
+                 "久しぶりだね・ずいぶんご無沙汰だ",
+                 useCases: ["久しぶりに人と会ったとき", "しばらくやっていないことを再開するとき"],
+                 examples: [
+                    ("Tom! Wow, it's been a while — how are you doing?", "トム！うわ、久しぶりだね。元気にしてた？"),
+                    ("Go easy on me, it's been a while since I've played tennis.", "手加減してよ、テニスするのずいぶん久しぶりなんだから。")
+                 ], ipa: "/ɪts bɪn ə ˈwaɪl/"),
+            make("no rest for the wicked", "a humorous way of saying you have to keep working and can't relax",
+                 "休む暇もないよ・貧乏暇なし",
+                 useCases: ["忙しくて休めないことを冗談っぽく言うとき", "週末も仕事のとき"],
+                 examples: [
+                    ("\"You're working on a Sunday?\" \"No rest for the wicked.\"", "「日曜なのに仕事？」「休む暇もないのさ。」"),
+                    ("Right, back to the grindstone — no rest for the wicked.", "さて、また仕事に戻るか。貧乏暇なしだね。")
+                 ], ipa: "/nəʊ ˈrest fə ðə ˈwɪkɪd/"),
+            make("less is more", "used to say that something simple is often better or more effective than something complicated",
+                 "シンプルなほうがいい・引き算が大事",
+                 useCases: ["ファッションやメイクのアドバイスで", "デザインや文章の話で"],
+                 examples: [
+                    ("Take off the scarf and the necklace — trust me, less is more.", "スカーフとネックレス外しな。信じて、シンプルなほうがいいって。"),
+                    ("Your speech is great, but cut it down a bit. Less is more.", "スピーチいいけど、少し削ったら？短いほうが響くよ。")
+                 ], ipa: "/ˈles ɪz ˈmɔː/"),
+            make("so be it", "used to say you accept a situation, even though you don't like it",
+                 "それならそれで仕方ない・それでいい",
+                 useCases: ["不本意な結果を受け入れるとき", "覚悟を決めたとき"],
+                 examples: [
+                    ("If they want to fire me for telling the truth, so be it.", "本当のことを言ってクビにしたいなら、それならそれでいいさ。"),
+                    ("He's not coming? Fine. So be it — more cake for us.", "あいつ来ないの？いいよ、仕方ない。ケーキが余分に食べられるし。")
+                 ], ipa: "/ˈsəʊ ˈbiː ɪt/"),
+            make("there you have it", "used to say that you have finished explaining or showing something",
+                 "というわけです・以上、こんな感じ",
+                 useCases: ["説明や話をまとめるとき", "完成したものを見せるとき"],
+                 examples: [
+                    ("Add a pinch of salt, give it a stir, and there you have it — the perfect risotto.", "塩をひとつまみ、ひと混ぜして、はい完成。完璧なリゾットのできあがり。"),
+                    ("So I missed the train, lost my phone and got soaked. There you have it.", "電車に乗り遅れて、携帯なくして、ずぶ濡れ。まあ、そういうわけ。")
+                 ], ipa: "/ˈðeə ju ˈhæv ɪt/"),
+            make("that takes the biscuit", "used to say that something is the most annoying or surprising thing in a series of bad things",
+                 "それはひどすぎる・あきれて物も言えない",
+                 useCases: ["呆れるような話を聞いたとき", "不満が限界に達したとき"],
+                 examples: [
+                    ("He ate my lunch and then complained it was too salty? That takes the biscuit.", "僕の弁当食べといて、しょっぱすぎるって文句言ったの？ありえないでしょ。"),
+                    ("I've heard some excuses, but that one really takes the biscuit.", "色んな言い訳聞いてきたけど、それは極めつけだね。")
+                 ], ipa: "/ðæt ˈteɪks ðə ˈbɪskɪt/"),
+            make("rules are rules", "used to say that a rule must be followed even if it seems unfair or silly",
+                 "決まりは決まりだから",
+                 useCases: ["例外を認めないとき", "店や職場での対応で"],
+                 examples: [
+                    ("Sorry, mate, no ID, no entry. Rules are rules.", "悪いね、身分証なしじゃ入れないよ。決まりは決まりだから。"),
+                    ("I know it's only five minutes late, but rules are rules.", "たった5分の遅れなのはわかってるけど、決まりは決まりだからさ。")
+                 ], ipa: "/ˈruːlz ə ˈruːlz/"),
+            make("a deal's a deal", "used to say that an agreement must be kept, even if someone wants to change it",
+                 "約束は約束だよ",
+                 useCases: ["相手が約束を破ろうとしたとき", "賭けや取り決めの結果で"],
+                 examples: [
+                    ("You lost the bet, so you're doing the dishes. A deal's a deal.", "賭けに負けたんだから皿洗いね。約束は約束だよ。"),
+                    ("Don't try to back out now — a deal's a deal.", "今さら逃げようとしないでよ。約束は約束なんだから。")
+                 ], ipa: "/ə ˈdiːlz ə ˈdiːl/"),
+            make("boys will be boys", "used to say that boys or men often behave in a noisy, rough or silly way and you shouldn't be surprised",
+                 "男の子ってそういうもの・男ってしょうがないね",
+                 useCases: ["男の子のやんちゃを話すとき", "男友達のバカ騒ぎに呆れるとき"],
+                 examples: [
+                    ("They broke the window playing football, but boys will be boys.", "サッカーしてて窓割っちゃったけど、男の子ってそういうものよね。"),
+                    ("Forty years old and still having water fights — boys will be boys.", "40歳にもなってまだ水かけ合いしてるよ。男ってしょうがないね。")
+                 ], ipa: "/ˈbɔɪz wɪl bi ˈbɔɪz/"),
         ]
     }
 
