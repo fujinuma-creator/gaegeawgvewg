@@ -1,141 +1,168 @@
 # -*- coding: utf-8 -*-
-"""Shadowing sentences for the 発音 → シャドウイング tab.
+"""Shadowing passages for the 発音 → シャドウイング tab.
 
-Every sentence is taken word for word from the learner's own recordings and
-is played in that original voice (tools/shadowing/clips.json holds where it
-is). Sentences without original audio are not used.
+Every passage is taken word for word from the learner's own recordings
+(A: interview, about 5 min / B: drama episode, about 18 min) and is played
+in that original voice. tools/shadowing/clips.json holds where each one is;
+the cut audio lives in EnglishVocabApp/EnglishVocabApp/ShadowingAudio.
 
 Each entry: (id, english, japanese, [発音のコツ ...]).
-The id is also the audio file name: ShadowingAudio/shadow_<id>.m4a
-(optional word timings: ShadowingAudio/shadow_<id>.json).
 Run build.py to regenerate ShadowingSeed.swift (IPA via espeak-ng, British RP).
 """
 
 SENTENCES = [
-    # ── 録音（インタビュー・ドラマ）で実際に使われていた、短い日常表現 ──
-    ("s31", "Thank you for joining us.", "ご参加ありがとうございます。", [
-        "Thank の th は舌先を歯に当てて息を出す /θ/。",
-        "joining us は「ジョイニンガス」とつなげます。",
-        "司会が最初に言う決まり文句。joining を一番強く。",
+    ("p01", "Well, first of all, I think if somebody is doing something that is useful to the rest of society, I think that's a good thing.",
+     "まず第一に、誰かが社会の役に立つことをしているなら、それは良いことだと思う。", [
+        "first of all は「ファーストヴォール」とつなげ、ひとかたまりで言います。",
+        "is doing something that is useful は弱い語（is, that）を軽く流し、doing と useful を強めます。",
+        "rest of society は「レストヴソサイエティ」。of は弱く /əv/。",
+        "息継ぎは society のあと。I think that's a good thing は下げて言い切ります。",
     ]),
-    ("s32", "Thanks for having me.", "呼んでくれてありがとう。", [
-        "for は弱く /fə/。「ファ」と短く。",
-        "having の h は弱くなり、me まで一息で。",
-        "招かれた側の定番の返事。Thanks と having を強く読みます。",
+    ("p02", "So we want to spend the time today talking about your view of the future and what people should work on.",
+     "今日は、未来についてのあなたの考えと、人々が何に取り組むべきかを話したいと思います。", [
+        "want to spend は want の t を止めて「ウォントゥスペンド」。to は弱く。",
+        "talking about は「トーキンガバウト」とつなげます。talk の l は読みません。",
+        "view of the future は「ヴューアヴザフューチャー」。of the は弱く速く。",
+        "work on は「ワーコン」とつなげ、最後の on を少し強めて終えます。",
     ]),
-    ("s33", "That would be wonderful.", "それは素晴らしいね。", [
-        "That would は t を止めて「ザッウッド」。would の l は読みません。",
-        "wonderful は /ˈwʌndəfəl/。最初の母音は「ア」に近い /ʌ/。",
-        "強く読むのは WON-derful。語尾は弱く短く。",
+    ("p03", "If you were 22 today, what would the five problems that you would think about working on be?",
+     "もし今日あなたが22歳だったら、取り組みたいと思う5つの問題は何ですか？", [
+        "If you were は弱く速く「イフユワ」。仮定法なので were を使います。",
+        "22 は twenty-two。twenty の t はイギリス英語ではっきり発音します。",
+        "what would は「ワッウッド」と t を止めます。",
+        "最後の be は疑問の締めくくり。working on be と続けて下げます。",
     ]),
-    ("s34", "I really was just trying to be useful.", "本当に、ただ役に立ちたかっただけなんだ。", [
-        "really was just は弱く速く。was は /wəz/、just の t は trying の前で止めるだけ。",
-        "trying to be は「トライイントゥビ」。to は弱く /tə/。",
-        "useful は /ˈjuːsfəl/。「ユースフォ」のように語尾の l は暗く。",
+    ("p04", "If you can actually solve genetic diseases, if you can prevent dementia or Alzheimer's or something like that with genetic reprogramming, that would be wonderful.",
+     "もし遺伝性の病気を本当に治せたら、遺伝子の書き換えで認知症やアルツハイマー病などを防げたら、素晴らしいことだ。", [
+        "If you can が2回繰り返されるリズムをまねます。can は弱く /kən/。",
+        "genetic は /dʒəˈnetɪk/。真ん中の ne に強勢。",
+        "dementia は /dɪˈmenʃə/、Alzheimer's は /ˈæltshaɪməz/。",
+        "something like that で一度下げ、that would be wonderful で気持ちを込めて締めます。",
     ]),
-    ("s35", "We really need to make sure it goes right.", "うまくいくように、しっかり確かめないと。", [
-        "need to は d を止めて「ニートゥ」。",
-        "make sure it は「メイクショーリット」とつなげます（イギリス英語でも母音の前では r が現れます）。",
-        "really と right の r は、舌先をどこにも付けずに。",
+    ("p05", "Well, I think first of all, I should say that I do not expect to be involved in all these things.",
+     "まず言っておくと、これらすべてに自分が関わるとは思っていません。", [
+        "I should say that は弱く速く。should は /ʃəd/。",
+        "do not と分けて言うことで「〜しない」を強調しています。not を強めます。",
+        "involved in all は「インヴォルヴディノール」とつなげます。",
+        "話し言葉の速さなので、まず 0.5 倍でリズムをつかむのがおすすめです。",
     ]),
-    ("s36", "That's the most important thing, I think, right now.", "今はそれが一番大事なことだと思う。", [
-        "most important は t が次の母音につながり「モウスティンポータント」。",
-        "thing の ng は舌の奥を上あごに付けたまま、g を破裂させません。",
-        "I think は挟み込みの言葉なので、低く軽く言ってから right now を強めます。",
+    ("p06", "I'm sure everyone could use the extra help since this year's heist was so spur of the moment and no one had time to plan anything too complicated.",
+     "今年の大会は急に決まったから、みんな手助けがほしいはず。複雑な計画を立てる時間なんて誰もなかったしね。",[
+        "could use は「〜があると助かる」。could は弱く /kəd/。",
+        "spur of the moment は「その場の思いつき」。「スパーラヴザモーメント」とつなげます。",
+        "no one had time は no one を強め、had は弱く。",
+        "anything too complicated は too を強く伸ばして皮肉っぽく言います。",
     ]),
-    ("s37", "We'll talk about this later.", "この話はまたあとで。", [
-        "We'll は /wiːl/ を短く「ウィォ」。",
-        "talk about は「トーカバウト」。talk の l は読みません。",
-        "about this は t を止めて、すぐ th へ。",
+    ("p07", "But I don't get it. Why don't you want us to be on the same team? Because, Amy, no one can know that we're working together. And Charles will never be suspicious because he'll be so excited to be your teammate.",
+     "でも分からない。どうして同じチームになりたくないの？／だって、エイミー、僕たちが組んでるって誰にも知られちゃいけないんだ。それにチャールズは君と組めて大喜びするから、絶対に怪しまないよ。", [
+        "2人の会話です。前半の質問と後半の説明で声の調子が変わるところもまねます。",
+        "don't get it は t を止めて「ドンゲッティット」。",
+        "Why don't you は「ワイドンチュ」。t と y が混ざって「チュ」になります。",
+        "working together は「ワーキントゥゲザー」。suspicious は /səˈspɪʃəs/。",
     ]),
-    ("s38", "What did you just say?", "今なんて言ったの？", [
-        "What did you は「ワッディジュ」と一気に。did you は「ディジュ」。",
-        "just say は t が落ちて「ジャッセイ」。",
-        "驚きを込めるときは just と say を強く、最後を上げます。",
+    ("p08", "Well, for weeks we've been trying to figure out how you can do your new job and still have us be there for Mac as much as we want. And I really think this is it.",
+     "何週間も、君が新しい仕事をしながら、僕たちが望むだけマックのそばにいられる方法を考えてきたよね。これがその答えだと本気で思うんだ。", [
+        "we've been trying to は弱く速く「ウィヴビントライイントゥ」。",
+        "figure out は「フィガラウト」とつなげます。",
+        "as much as は「アズマッチャズ」。2つの as は弱く /əz/。",
+        "this is it は「ディスィズィット」。最後の it を強めて言い切ります。",
     ]),
-    ("s39", "What do you mean?", "どういう意味？", [
-        "What do you は弱く速く「ワッドゥユ」→「ワッジュ」。",
-        "mean を長めに /miːn/、口を横に引きます。",
-        "強く読むのは mean。文末は下げます。",
+    ("p09", "Look, you know I was scared about having kids because I didn't want to be like my dad. But if I do this, I have a chance to be the exact opposite. And I don't want Mac to ever feel the way I felt growing up.",
+     "ほら、僕が父親みたいになりたくなくて、子どもを持つのが怖かったのは知ってるよね。でもこうすれば、正反対になれるチャンスがある。マックには、僕が子どもの頃に感じたような思いを絶対させたくないんだ。", [
+        "scared about は「スケアダバウト」とつなげます。",
+        "didn't want to は t が重なるので「ディドゥンウォントゥ」。",
+        "exact opposite は「イグザクタポズィット」。exact の t が次の母音に流れます。",
+        "the way I felt growing up は感情を込めて、ゆっくり下げて終えます。",
     ]),
-    ("s40", "I don't understand.", "分からないな。", [
-        "don't understand は t が落ちて「ドウナンダスタンド」とつながります。",
-        "understand の強勢は最後 un-der-STAND。",
-        "語尾の d は軽く止めるだけ。",
+    ("p10", "Now, all I care about is what's best for our family. And, Ames, this is it. I mean, you've earned this incredible opportunity. You can't do it halfway. It's too important.",
+     "今は家族にとって一番いいことしか考えてない。エイムズ、これなんだよ。だって君はこのすごいチャンスを勝ち取ったんだ。中途半端にはできない。大事すぎるよ。", [
+        "all I care about は「オーライケアラバウト」とつなげます。",
+        "what's best は t を止めて「ウォッツベスト」。",
+        "can't はイギリス英語で /kɑːnt/「カーント」。can と区別して強く。",
+        "短い文が続くので、文ごとに区切ってリズムよく言います。too important の too を強めます。",
     ]),
-    ("s41", "That's what I want to do.", "それが私のやりたいことなんだ。", [
-        "what I は「ウォタイ」とつなげます。",
-        "want to は t を1回だけ「ウォントゥ」。to は弱く /tə/。",
-        "強く読むのは That's と do。",
+    ("p11", "You really think you'll be happy? I don't want you to give up your dream job just for me. I have a new dream job now. Trust me, I wouldn't say it if I didn't mean it.",
+     "本当にそれで幸せになれると思う？私のためだけに夢の仕事をあきらめてほしくない。／今は新しい夢の仕事があるんだ。信じて、本気じゃなかったら言わないよ。", [
+        "2人の会話です。最初の質問は Do を省いた口語の疑問文で、文末を上げます。",
+        "want you to は「ウォンチュトゥ」。t と y が混ざります。",
+        "give up は「ギヴァップ」とつなげます。",
+        "say it if I は「セイイティファイ」。didn't mean it は「ディドゥンミーニット」。",
     ]),
-    ("s42", "But only if you agree.", "でも、あなたが賛成してくれるならね。", [
-        "But only は「バットウンリ」。only は /ˈəʊnli/「オウンリ」。",
-        "if you は弱く「イフュ」。",
-        "agree は後ろに強勢 a-GREE。gr は一気に。",
+    ("p12", "Because in order for this to work, we absolutely have to win the first leg of the heist. It doubles our chances.",
+     "これをうまくいかせるには、大会の第1ラウンドは絶対に勝たないといけない。そうすればチャンスが倍になる。", [
+        "in order for this to work はひとかたまり。for と to は弱く。",
+        "absolutely は /ˌæbsəˈluːtli/。lu に強勢を置いて強調します。",
+        "have to はイギリス英語でも「ハフトゥ」と f の音になります。",
+        "doubles our は「ダブルザウア」とつなげます。",
     ]),
-    ("s43", "We have other options.", "ほかにも選択肢はあるよ。", [
-        "other の th は声を出す /ð/。舌先を歯に当てて震わせます。",
-        "other options は、イギリス英語でも r が現れて「アザロプションズ」。",
-        "options は /ˈɒpʃənz/。p は唇を閉じるだけで sh へ。",
+    ("p13", "And since I'm not competing, I've agreed to help out. I designed the first part of the heist to be a scavenger hunt through memorable moments from the last eight years.",
+     "それに私は参加しないから、手伝うことにしたの。第1部は、この8年の思い出の場面をめぐる宝探しにしたわ。", [
+        "help out は「ヘルパウト」とつなげます。",
+        "first part は t が重なるので最初の t は止めるだけ「ファースパート」。",
+        "scavenger hunt は /ˈskævɪndʒə hʌnt/。scav を強く。",
+        "last eight years は「ラーステイトイヤーズ」。last の t が eight へつながります。",
     ]),
-    ("s44", "I think this is the best one.", "これが一番いいと思う。", [
-        "think と this で th が続きます。息だけの /θ/ と声を出す /ð/ を区別。",
-        "this is は「ディスィズ」とつなげます。",
-        "best one は t を止めて「ベスワン」。",
+    ("p14", "Well, a vending machine code is usually a letter followed by a double-digit number.",
+     "自動販売機の番号は、ふつうアルファベット1文字に2桁の数字が続くんだよ。", [
+        "vending machine は vending に強勢。machine は /məˈʃiːn/。",
+        "usually は /ˈjuːʒuəli/。「ユージュアリ」の ʒ は「ジュ」を柔らかく。",
+        "letter はイギリス英語で t をはっきり /ˈletə/。",
+        "followed by a は「フォロウドバイア」と弱く速く流します。",
     ]),
-    ("s45", "I get that, I really do.", "それは分かるよ、本当に。", [
-        "get that は t を止めて、すぐ th へ「ゲッザット」。",
-        "really do の do をはっきり強く。気持ちを込めるところです。",
-        "コンマで軽く間を置きます。",
+    ("p15", "It felt like it was great for the heist, and it's also just such a wonderful way to flex on you guys how rich I am now.",
+     "大会にぴったりだと思ったし、今どれだけお金持ちか、あんたたちに見せびらかすのにもすごくいい方法だしね。", [
+        "felt like it was は「フェルトライキットワズ」と一気に。",
+        "such a wonderful way は such a を「サッチャ」とつなげます。",
+        "flex on は「見せびらかす」というくだけた言い方。「フレクソン」とつなげます。",
+        "how rich I am now は気取った調子で、rich を強く伸ばします。",
     ]),
-    ("s46", "I would do anything for you.", "あなたのためなら何でもするよ。", [
-        "would do は d が重なるので1回だけ「ウッドゥー」。",
-        "anything は /ˈeniθɪŋ/。th で舌先を歯に当てます。",
-        "for you は弱く /fə juː/。強く読むのは anything。",
+    ("p16", "You left of your own volition. We each spent meaningful time with you. We were incredibly supportive.",
+     "あなたは自分の意思で辞めたのよ。みんなそれぞれあなたと有意義な時間を過ごしたし、すごく応援してたじゃない。", [
+        "of your own は「オヴヨーロウン」とつなげます。",
+        "volition は /vəˈlɪʃən/。v は下唇を軽くかみます。",
+        "spent meaningful は t を止めて「スペンミーニングフル」。",
+        "incredibly supportive は 2語とも強く、皮肉っぽく言うのがポイントです。",
     ]),
-    ("s47", "You've got to stop asking.", "もうその話を聞くのはやめて。", [
-        "got to は「ゴットゥ」。くだけると「ガッタ」に近くなります。",
-        "stop asking は p が次の母音につながり「ストッパースキン」。",
-        "asking はイギリス英語で /ˈɑːskɪŋ/「アースキン」と伸ばします。",
+    ("p17", "In a difficult job, it's vital to give people a chance to blow off some steam. That's just good leadership, Bob. I was sure you'd be angry. I figured this interview was over.",
+     "大変な仕事では、みんなに息抜きの機会を与えることが欠かせない。それが良いリーダーシップってもんだよ、ボブ。／きっと怒られると思ってました。面接は終わりだと思ったんです。", [
+        "2人の会話です。前半は落ち着いた上司、後半はほっとした部下の調子です。",
+        "blow off some steam は「ストレスを発散する」。「ブロウオフサムスティーム」。",
+        "I was sure you'd be は弱く速く「アイワズショーユドゥビ」。",
+        "interview was over は「インタヴューワゾウヴァ」とつなげます。",
     ]),
-    ("s48", "You really think you'll be happy?", "本当にそれで幸せになれると思う？", [
-        "Do を省いた口語の疑問文。語順は平叙文のまま、文末を上げて質問にします。",
-        "you'll は /juːl/ を短く「ユォ」。",
-        "happy の h はしっかり息を出し、/æ/ は口を横に開いて「エァ」。",
+    ("p18", "Mac's done with daycare, so we had the babysitter bring him by so we could say hi. Because we're going to be home late tonight.",
+     "マックの保育園が終わったから、ベビーシッターに連れてきてもらって、ちょっと顔を見に来たの。今夜は帰りが遅くなるから。", [
+        "done with は「ダンウィズ」。daycare は day に強勢。",
+        "bring him by は him の h が落ちて「ブリンギムバイ」。",
+        "so we could say hi は軽く明るく。could は弱く /kəd/。",
+        "going to be home late は going to を速く弱く言います。",
     ]),
-    ("s49", "Trust me, I wouldn't say it if I didn't mean it.", "信じて。本気じゃなかったら言わないよ。", [
-        "Trust me は t が落ちて「トラスミー」。",
-        "say it if I は「セイイティファイ」と全部つなげます。",
-        "wouldn't、didn't の t は止めるだけ。mean it は「ミーニット」。",
+    ("p19", "Okay, so this truck is a fortress on wheels, and we are not getting in there without an intricate plan.",
+     "いい？このトラックは走る要塞なの。綿密な計画なしには入れないわ。", [
+        "fortress on wheels は「フォートレソンウィールズ」とつなげます。",
+        "we are not と縮めずに言うことで強い否定になっています。not を強く。",
+        "getting in there は「ゲティンインゼア」。",
+        "intricate は /ˈɪntrɪkət/。最初の in に強勢。",
     ]),
-    ("s50", "The important thing is we're on the same page.", "大事なのは、私たちの考えが同じだってこと。", [
-        "thing is は「スィンギズ」とつなげます。",
-        "we're on は「ウィアロン」。on the same page は「同じ考えである」という決まり文句。",
-        "same page は m で唇を閉じてから p へ。",
+    ("p20", "We're not gonna force our way into an armored vehicle. We'll need to use our brains in the end.",
+     "装甲車に力ずくで入るのは無理だ。結局は頭を使うしかない。", [
+        "gonna は going to のくだけた形で「ガナ」。",
+        "force our way into は「フォーサウェイイントゥ」とつなげます。",
+        "armored vehicle は「アーマドヴィークル」。イギリスのつづりは armoured。",
+        "in the end は「インディエンド」。end を強めて締めます。",
     ]),
-    ("s51", "Let me tell you about the plan.", "計画について話させて。", [
-        "Let me は t を止めて「レッミー」。",
-        "tell you about は「テリュアバウト」とつなげます。",
-        "plan の /æ/ は口を横に開いて「プレァン」。",
+    ("p21", "You made me meet with a fake person just so you can trick me into sitting out the heist? That interview was important. It's my shot to become captain.",
+     "大会に参加させないために、偽物の人と会わせたっていうのか？あの面接は大事だったんだぞ。署長になるチャンスなんだ。", [
+        "怒って問い詰める調子です。made と fake を強く言います。",
+        "meet with a は「ミートウィザ」とつなげます。",
+        "sitting out は「スィティンガウト」。sit out は「参加しない」。",
+        "It's my shot は「チャンス」。shot を強く、captain は /ˈkæptɪn/。",
     ]),
-    ("s52", "I think it's gonna work out.", "うまくいくと思うよ。", [
-        "gonna は going to のくだけた形で「ガナ」。弱く速く言います。",
-        "work out は「ワーカウト」とつなげます。work は /wɜːk/、口をあまり開けないこもった音。",
-        "walk /wɔːk/ と混同しないように注意。",
-    ]),
-    ("s53", "Come on, it'll just take a second.", "お願い、すぐ済むから。", [
-        "Come on は「カモン」とつなげます。",
-        "it'll は「イトォ」。t のあとすぐ暗い l。",
-        "just take は t が1つになり「ジャステイク」。take a は「テイカ」。",
-    ]),
-    ("s54", "I'm sorry, what's happening?", "ごめん、何が起きてるの？", [
-        "sorry はイギリス英語で /ˈsɒri/「ソリ」。短い「オ」です。",
-        "what's happening は「ウォッツハプニン」。happening は2音節のように短く。",
-        "聞き返すときは文末を上げ気味に。",
-    ]),
-    ("s55", "I don't think we want to do that.", "それはやめておいたほうがいいと思う。", [
-        "don't think は t を止めて th へ。",
-        "want to do は「ウォントゥドゥー」。to は弱く。",
-        "やんわり反対する言い方。that を軽く下げて終わります。",
+    ("p22", "Then why was he in a fake office? Oh, Terry, he just relocated to make room for the new reform unit on the sixth floor. It's a temporary space.",
+     "じゃあ、なんで偽物のオフィスにいたんだ？／ああテリー、6階の新しい改革部署の場所を空けるために、移動しただけよ。仮の場所なの。", [
+        "2人の会話です。最初の疑問文は why を強く、文末を下げます。",
+        "fake office は「フェイコフィス」とつなげます。",
+        "make room for は「スペースを空ける」。「メイクルームフォ」。",
+        "sixth floor は th が続いて難しい音。/sɪksθ/ をゆっくり練習します。",
     ]),
 ]

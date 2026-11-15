@@ -300,8 +300,10 @@ final class ShadowingPlayer: NSObject, ObservableObject, @unchecked Sendable {
 
 struct ShadowingSection: View {
     @ObservedObject private var player = ShadowingPlayer.shared
-    @AppStorage("shadowing.speed") private var speedRaw: Double = 1.0
     @AppStorage("shadowing.done") private var doneRaw: String = ""
+    @AppStorage("shadowing.shuffled") private var shuffled = false
+    /// Changes every time シャッフル is pressed, so each press gives a new order.
+    @AppStorage("shadowing.shuffleSalt") private var shuffleSalt = 0
     @State private var filter: Filter = .all
     @ObservedObject private var sources = ShadowingSourceStore.shared
     @State private var importing = false
@@ -309,14 +311,22 @@ struct ShadowingSection: View {
 
     enum Filter: String, CaseIterable { case all = "すべて", todo = "未チェック", done = "チェック済み" }
 
-    private var speed: ShadowingSpeed { ShadowingSpeed(rawValue: speedRaw) ?? .x10 }
-    private var done: Set<String> { Set(doneRaw.split(separator: ",").map(String.init)) }
+    /// Checked passages that still exist (old ids from earlier lists are ignored).
+    private var done: Set<String> {
+        Set(doneRaw.split(separator: ",").map(String.init)).intersection(ShadowingSeed.all.map(\.id))
+    }
+
+    private var ordered: [ShadowingItem] {
+        guard shuffled else { return ShadowingSeed.all }
+        var rng = SplitMix64(seed: UInt64(bitPattern: Int64(shuffleSalt &* 7_919 &+ 101)))
+        return ShadowingSeed.all.shuffled(using: &rng)
+    }
 
     private var items: [ShadowingItem] {
         switch filter {
-        case .all:  return ShadowingSeed.all
-        case .todo: return ShadowingSeed.all.filter { !done.contains($0.id) }
-        case .done: return ShadowingSeed.all.filter { done.contains($0.id) }
+        case .all:  return ordered
+        case .todo: return ordered.filter { !done.contains($0.id) }
+        case .done: return ordered.filter { done.contains($0.id) }
         }
     }
 
@@ -327,10 +337,41 @@ struct ShadowingSection: View {
             if !ShadowingSeed.all.allSatisfy({ ShadowingPlayer.audioURL(for: $0) != nil }) {
                 ownAudioCard
             }
-            speedRow
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(Filter.allCases, id: \.self) { f in
+                        SketchChip(title: f.rawValue, selected: filter == f) { filter = f }
+                    }
+                }
+                .padding(.vertical, 3)
+            }
             HStack(spacing: 8) {
-                ForEach(Filter.allCases, id: \.self) { f in
-                    SketchChip(title: f.rawValue, selected: filter == f) { filter = f }
+                Button {
+                    player.stop()
+                    withAnimation(.easeInOut(duration: 0.25)) {
+                        shuffleSalt &+= 1
+                        shuffled = true
+                    }
+                } label: {
+                    HStack(spacing: 5) {
+                        Image(systemName: "shuffle").font(.system(size: 12, weight: .bold))
+                        Text("シャッフル")
+                    }
+                    .font(LFont.heading(13))
+                    .foregroundStyle(shuffled ? .white : Palette.text)
+                    .padding(.vertical, 6).padding(.horizontal, 12)
+                    .background(ZStack {
+                        Rectangle().fill(Palette.ink).offset(x: 2, y: 2)
+                        Rectangle().fill(shuffled ? Palette.green : Palette.paper)
+                        Rectangle().strokeBorder(Palette.ink, lineWidth: 1.2)
+                    })
+                }
+                .buttonStyle(.plain)
+                if shuffled {
+                    SketchChip(title: "番号順に戻す") {
+                        player.stop()
+                        withAnimation(.easeInOut(duration: 0.25)) { shuffled = false }
+                    }
                 }
                 Spacer()
                 Text("チェック \(done.count) / \(ShadowingSeed.all.count)")
@@ -345,7 +386,6 @@ struct ShadowingSection: View {
                 ShadowingCard(item: item,
                               number: (ShadowingSeed.all.firstIndex(of: item) ?? 0) + 1,
                               checked: done.contains(item.id),
-                              speed: speed.rawValue,
                               onToggleCheck: { toggle(item.id) })
             }
         }
@@ -404,34 +444,12 @@ struct ShadowingSection: View {
         VStack(alignment: .leading, spacing: 6) {
             Text("シャドウイング").font(LFont.heading(17)).foregroundStyle(Palette.text)
                 .marker(Palette.markerBlue, height: 9, yOffset: 3)
-            Text("音声のすぐ後ろを影のように追いかけて、同じリズム・同じ音で声に出す練習です。単語をタップすると、そこから再生します。最初はゆっくり、慣れたら1倍へ。")
+            Text("音声のすぐ後ろを影のように追いかけて、同じリズム・同じ音で声に出す練習です。単語をタップすると、そこから再生します。速さは文ごとに選べます。最初はゆっくり、慣れたら1倍へ。")
                 .font(LFont.body(13)).foregroundStyle(Palette.subText)
                 .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .sketchCard(padding: 14)
-    }
-
-    private var speedRow: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("再生スピード").font(LFont.heading(13)).foregroundStyle(Palette.text)
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    ForEach(ShadowingSpeed.allCases) { s in
-                        SketchChip(title: s.label, selected: speed == s) { setSpeed(s) }
-                    }
-                }
-                .padding(.vertical, 3)
-            }
-        }
-    }
-
-    private func setSpeed(_ s: ShadowingSpeed) {
-        speedRaw = s.rawValue
-        // Changing speed mid-sentence restarts from the word being read.
-        if let id = player.playingId, let item = ShadowingSeed.all.first(where: { $0.id == id }) {
-            player.play(item, fromWord: player.currentWord ?? 0, speed: s.rawValue)
-        }
     }
 
     private func toggle(_ id: String) {
@@ -445,10 +463,49 @@ struct ShadowingCard: View {
     let item: ShadowingItem
     let number: Int
     let checked: Bool
-    let speed: Double
     let onToggleCheck: () -> Void
     @ObservedObject private var player = ShadowingPlayer.shared
     @ObservedObject private var sources = ShadowingSourceStore.shared
+    /// This passage's own playback speed, remembered per passage.
+    @AppStorage private var speed: Double
+
+    init(item: ShadowingItem, number: Int, checked: Bool, onToggleCheck: @escaping () -> Void) {
+        self.item = item
+        self.number = number
+        self.checked = checked
+        self.onToggleCheck = onToggleCheck
+        _speed = AppStorage(wrappedValue: 1.0, "shadowing.speed.\(item.id)")
+    }
+
+    private func setSpeed(_ s: ShadowingSpeed) {
+        speed = s.rawValue
+        // Changing speed mid-passage restarts from the word being read.
+        if isPlaying { player.play(item, fromWord: player.currentWord ?? 0, speed: s.rawValue) }
+    }
+
+    private var speedRow: some View {
+        HStack(spacing: 6) {
+            Image(systemName: "gauge.with.dots.needle.33percent")
+                .font(.system(size: 12, weight: .bold)).foregroundStyle(Palette.subText)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 6) {
+                    ForEach(ShadowingSpeed.allCases) { s in
+                        let on = abs(speed - s.rawValue) < 0.001
+                        Button { setSpeed(s) } label: {
+                            Text(s.label)
+                                .font(LFont.heading(12))
+                                .foregroundStyle(on ? .white : Palette.text)
+                                .padding(.vertical, 4).padding(.horizontal, 8)
+                                .background(on ? Palette.green : Palette.paper)
+                                .overlay(Rectangle().strokeBorder(Palette.ink.opacity(on ? 1 : 0.5), lineWidth: 1))
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+                .padding(.vertical, 2)
+            }
+        }
+    }
 
     private var isPlaying: Bool { player.playingId == item.id }
 
@@ -487,6 +544,8 @@ struct ShadowingCard: View {
                 .disabled(!canPlay)
                 .accessibilityLabel(isPlaying ? "停止" : "最初から再生")
             }
+
+            speedRow
 
             FlowLayout(spacing: 6) {
                 ForEach(Array(item.words.enumerated()), id: \.offset) { i, w in
