@@ -118,8 +118,9 @@ enum ShadowingSpeed: Double, CaseIterable, Identifiable {
 /// AVAudioEngine + a time-pitch unit, so the voice slows down without
 /// dropping in pitch (AVAudioPlayer can't go below 0.5×). Word timings come
 /// from shadow_<id>.json when present, otherwise they are estimated from the
-/// word lengths. Without a file the iPhone voice reads the sentence instead.
-final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDelegate, @unchecked Sendable {
+/// word lengths. Only original recordings are played: there is no
+/// synthesized-voice fallback.
+final class ShadowingPlayer: NSObject, ObservableObject, @unchecked Sendable {
     static let shared = ShadowingPlayer()
 
     @Published private(set) var playingId: String? = nil
@@ -135,15 +136,9 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
     /// Bumped on every play/stop so stale completion callbacks are ignored.
     private var token = 0
 
-    private let synth = AVSpeechSynthesizer()
-    private var ttsOffset = 0
-    private var ttsWordOffsets: [Int] = []
-    private var ttsUtterance: AVSpeechUtterance?
-
     private override init() {
         super.init()
         _ = SpeechManager.shared   // sets up the playback audio session
-        synth.delegate = self
     }
 
     // MARK: Files
@@ -217,7 +212,8 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
                     times: found.clip.wordStarts, fromWord: start, speed: speed) {
             return
         }
-        playTTS(item, fromWord: start, speed: speed)
+        // No original audio available yet: nothing is played.
+        stop()
     }
 
     func stop() {
@@ -225,8 +221,6 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
         timer?.invalidate()
         timer = nil
         if node.isPlaying { node.stop() }
-        if synth.isSpeaking { synth.stopSpeaking(at: .immediate) }
-        ttsUtterance = nil
         if playingId != nil {
             playingId = nil
             currentWord = nil
@@ -299,40 +293,6 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
         let now = fileStart + Double(pt.sampleTime) / pt.sampleRate
         let idx = (wordTimes.lastIndex { $0 <= now + 0.02 }) ?? 0
         if idx != currentWord { currentWord = idx }
-    }
-
-    private func playTTS(_ item: ShadowingItem, fromWord: Int, speed: Double) {
-        let offsets = item.wordOffsets
-        let startOffset = offsets.indices.contains(fromWord) ? offsets[fromWord] : 0
-        let ns = item.english as NSString
-        let text = ns.substring(from: startOffset)
-        ttsOffset = startOffset
-        ttsWordOffsets = offsets
-        let u = AVSpeechUtterance(string: text)
-        u.voice = SpeechManager.shared.currentVoice()
-        let rate = Float(AppSettings.shared.speechRate) * AVSpeechUtteranceDefaultSpeechRate * Float(speed)
-        u.rate = max(AVSpeechUtteranceMinimumSpeechRate, min(rate, AVSpeechUtteranceMaximumSpeechRate))
-        u.preUtteranceDelay = 0
-        ttsUtterance = u
-        synth.speak(u)
-    }
-
-    // MARK: AVSpeechSynthesizerDelegate
-
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
-        DispatchQueue.main.async {
-            guard utterance === self.ttsUtterance else { return }
-            let loc = characterRange.location + self.ttsOffset
-            let idx = (self.ttsWordOffsets.lastIndex { $0 <= loc }) ?? 0
-            if idx != self.currentWord { self.currentWord = idx }
-        }
-    }
-
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        DispatchQueue.main.async {
-            guard utterance === self.ttsUtterance else { return }
-            self.stop()
-        }
     }
 }
 
@@ -489,15 +449,15 @@ struct ShadowingCard: View {
 
     private var isPlaying: Bool { player.playingId == item.id }
 
-    /// Small label saying which voice will be heard.
-    private var audioTag: (String, Color)? {
-        if ShadowingPlayer.audioURL(for: item) != nil { return nil }
-        if let clip = ShadowingClips.all[item.id] {
-            return sources.url(for: clip.source) != nil
-                ? ("原音", Palette.markerGreen)
-                : ("録音を取り込むと原音で再生", Palette.cream)
-        }
-        return ("iPhoneの声", Palette.cream)
+    /// True once the original recording for this sentence is on the device.
+    private var canPlay: Bool {
+        if ShadowingPlayer.audioURL(for: item) != nil { return true }
+        guard let clip = ShadowingClips.all[item.id] else { return false }
+        return sources.url(for: clip.source) != nil
+    }
+
+    private var audioTag: (String, Color) {
+        canPlay ? ("原音", Palette.markerGreen) : ("録音を取り込むと再生できます", Palette.cream)
     }
 
     var body: some View {
@@ -508,9 +468,7 @@ struct ShadowingCard: View {
                     .accessibilityLabel(checked ? "チェックを外す" : "練習済みにする")
                 Text(String(format: "%02d", number))
                     .font(LFont.title(18)).foregroundStyle(Palette.stageBlue)
-                if let tag = audioTag {
-                    SketchTag(text: tag.0, fill: tag.1)
-                }
+                SketchTag(text: audioTag.0, fill: audioTag.1)
                 Spacer()
                 Button {
                     if isPlaying { player.stop() } else { player.play(item, fromWord: 0, speed: speed) }
@@ -519,10 +477,11 @@ struct ShadowingCard: View {
                         .font(.system(size: 15, weight: .bold))
                         .foregroundStyle(.white)
                         .frame(width: 38, height: 38)
-                        .background(Circle().fill(isPlaying ? Palette.stageRed : Palette.green))
+                        .background(Circle().fill(isPlaying ? Palette.stageRed : (canPlay ? Palette.green : Palette.faint)))
                         .overlay(Circle().stroke(Palette.ink, lineWidth: 1.3))
                 }
                 .buttonStyle(.plain)
+                .disabled(!canPlay)
                 .accessibilityLabel(isPlaying ? "停止" : "最初から再生")
             }
 
@@ -538,6 +497,7 @@ struct ShadowingCard: View {
                             .overlay(Rectangle().strokeBorder(Palette.ink.opacity(lit ? 0.8 : 0.2), lineWidth: lit ? 1.4 : 1))
                     }
                     .buttonStyle(.plain)
+                    .disabled(!canPlay)
                 }
             }
 
