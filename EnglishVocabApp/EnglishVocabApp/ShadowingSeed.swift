@@ -394,3 +394,36 @@ enum ShadowingSeed {
                    "やんわり反対する言い方。that を軽く下げて終わります。"]),
     ]
 }
+
+/// Where each sentence sits inside the learner's own recordings (seconds).
+/// Positions only: the audio is imported on the device and never shipped.
+enum ShadowingClips {
+    static let sources: [ShadowingSource] = [
+        ShadowingSource(key: "A", label: "録音A（約5分）", duration: 314.39),
+        ShadowingSource(key: "B", label: "録音B（約18分）", duration: 1067.2),
+    ]
+
+    static let all: [String: ShadowingClip] = [
+        "s31": ShadowingClip(source: "A", start: 0.68, end: 1.80, wordStarts: [0.68, 0.76, 1.08, 1.18, 1.40]),
+        "s32": ShadowingClip(source: "A", start: 2.02, end: 2.64, wordStarts: [2.02, 2.16, 2.26, 2.40]),
+        "s33": ShadowingClip(source: "A", start: 126.00, end: 126.94, wordStarts: [126.00, 126.08, 126.20, 126.44]),
+        "s35": ShadowingClip(source: "A", start: 94.84, end: 97.44, wordStarts: [94.84, 95.40, 95.60, 95.74, 95.80, 95.90, 96.08, 96.20, 96.42]),
+        "s37": ShadowingClip(source: "B", start: 76.77, end: 77.61, wordStarts: [76.77, 76.89, 77.03, 77.21, 77.37]),
+        "s38": ShadowingClip(source: "B", start: 228.50, end: 229.54, wordStarts: [228.50, 228.90, 229.02, 229.12, 229.30]),
+        "s39": ShadowingClip(source: "B", start: 235.35, end: 235.89, wordStarts: [235.35, 235.59, 235.67, 235.77]),
+        "s40": ShadowingClip(source: "B", start: 240.39, end: 241.19, wordStarts: [240.39, 240.59, 240.77]),
+        "s41": ShadowingClip(source: "B", start: 237.35, end: 238.43, wordStarts: [237.35, 237.71, 237.79, 237.91, 238.03, 238.15]),
+        "s42": ShadowingClip(source: "B", start: 238.75, end: 240.11, wordStarts: [238.75, 239.15, 239.55, 239.73, 239.85]),
+        "s43": ShadowingClip(source: "B", start: 249.49, end: 251.03, wordStarts: [249.49, 250.07, 250.25, 250.51]),
+        "s44": ShadowingClip(source: "B", start: 252.91, end: 254.07, wordStarts: [252.91, 253.01, 253.15, 253.31, 253.43, 253.57, 253.71]),
+        "s45": ShadowingClip(source: "B", start: 265.05, end: 266.77, wordStarts: [265.05, 265.23, 265.41, 265.77, 266.07, 266.29]),
+        "s46": ShadowingClip(source: "B", start: 300.20, end: 301.66, wordStarts: [300.20, 300.38, 300.54, 300.68, 301.18, 301.46]),
+        "s47": ShadowingClip(source: "B", start: 308.40, end: 309.58, wordStarts: [308.40, 308.70, 308.84, 308.98, 309.16]),
+        "s49": ShadowingClip(source: "B", start: 318.52, end: 320.52, wordStarts: [318.52, 318.60, 318.84, 318.96, 319.12, 319.36, 319.48, 319.56, 319.68, 319.90, 320.02]),
+        "s50": ShadowingClip(source: "B", start: 344.02, end: 345.56, wordStarts: [344.02, 344.14, 344.38, 344.52, 344.62, 344.74, 344.86, 344.96, 345.16]),
+        "s51": ShadowingClip(source: "B", start: 346.14, end: 347.12, wordStarts: [346.14, 346.46, 346.54, 346.64, 346.72, 346.82, 346.94]),
+        "s53": ShadowingClip(source: "B", start: 603.89, end: 604.85, wordStarts: [603.89, 603.97, 604.15, 604.27, 604.41, 604.53, 604.69]),
+        "s54": ShadowingClip(source: "B", start: 597.21, end: 597.91, wordStarts: [597.21, 597.35, 597.59, 597.73]),
+        "s55": ShadowingClip(source: "B", start: 528.10, end: 529.28, wordStarts: [528.10, 528.32, 528.46, 528.58, 528.68, 528.82, 528.90, 529.04]),
+    ]
+}

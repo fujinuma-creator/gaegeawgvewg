@@ -5,6 +5,7 @@ each sentence from espeak-ng (-v en-gb-x-rp --ipa).
 
     python3 tools/shadowing/build.py
 """
+import json
 import os
 import subprocess
 import sys
@@ -24,6 +25,35 @@ def ipa(sentence):
 
 def q(s):
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+# The learner's own recordings these sentences can be practised against.
+# Only positions (seconds) are stored here; the audio itself is never part
+# of the app or the repository: each person imports their own file on device.
+SOURCES = [("A", "録音A（約5分）", 314.39), ("B", "録音B（約18分）", 1067.2)]
+
+
+def clips_swift(valid_ids):
+    path = os.path.join(HERE, "clips.json")
+    clips = json.load(open(path)) if os.path.exists(path) else {}
+    words = {sid: len(en.split()) for sid, en, _, _ in SENTENCES}
+    rows = []
+    for sid in sorted(clips):
+        c = clips[sid]
+        assert sid in valid_ids, sid
+        assert len(c["words"]) == words[sid], (sid, len(c["words"]), words[sid])
+        times = ", ".join(f"{t:.2f}" for t in c["words"])
+        rows.append(f'        {q(sid)}: ShadowingClip(source: {q(c["source"])}, start: {c["start"]:.2f}, '
+                    f'end: {c["end"]:.2f}, wordStarts: [{times}]),')
+    srcs = "\n".join(f"        ShadowingSource(key: {q(k)}, label: {q(l)}, duration: {d})," for k, l, d in SOURCES)
+    return (
+        "\n/// Where each sentence sits inside the learner's own recordings (seconds).\n"
+        "/// Positions only: the audio is imported on the device and never shipped.\n"
+        "enum ShadowingClips {\n"
+        "    static let sources: [ShadowingSource] = [\n" + srcs + "\n    ]\n\n"
+        "    static let all: [String: ShadowingClip] = [\n" + "\n".join(rows) + "\n    ]\n"
+        "}\n"
+    )
 
 
 def main():
@@ -53,6 +83,7 @@ def main():
         "    ]\n"
         "}\n"
     )
+    swift += clips_swift({sid for sid, _, _, _ in SENTENCES})
     open(OUT, "w", encoding="utf-8").write(swift)
     print(f"sentences {len(SENTENCES)} -> {OUT}")
 

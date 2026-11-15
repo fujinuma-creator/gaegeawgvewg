@@ -1,5 +1,6 @@
 import SwiftUI
 import AVFoundation
+import UniformTypeIdentifiers
 
 // MARK: - Model
 
@@ -24,6 +25,82 @@ struct ShadowingItem: Identifiable, Hashable {
             inWord = !isSpace
         }
         return out
+    }
+}
+
+/// One of the learner's own recordings that sentences can be practised against.
+struct ShadowingSource: Identifiable {
+    let key: String
+    let label: String
+    /// Length in seconds, used to recognise the file when it is imported.
+    let duration: Double
+    var id: String { key }
+}
+
+/// Where a sentence sits inside a recording (seconds from its start).
+struct ShadowingClip {
+    let source: String
+    let start: Double
+    let end: Double
+    let wordStarts: [Double]
+}
+
+/// The learner's own audio files, imported on this device from Files.
+/// They are copied into the app's Documents folder and stay there: nothing
+/// is bundled with the app, uploaded or shared.
+final class ShadowingSourceStore: ObservableObject {
+    static let shared = ShadowingSourceStore()
+    @Published private(set) var imported: [String: URL] = [:]
+
+    private var folder: URL {
+        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            .appendingPathComponent("ShadowingSources", isDirectory: true)
+    }
+
+    private init() { refresh() }
+
+    func url(for key: String) -> URL? { imported[key] }
+
+    private func refresh() {
+        var found: [String: URL] = [:]
+        let files = (try? FileManager.default.contentsOfDirectory(at: folder, includingPropertiesForKeys: nil)) ?? []
+        for f in files {
+            let name = f.deletingPathExtension().lastPathComponent
+            if name.hasPrefix("source_") { found[String(name.dropFirst("source_".count))] = f }
+        }
+        imported = found
+    }
+
+    /// Copies a picked file in and works out which recording it is from its
+    /// length. Returns a message for the user.
+    func importFile(_ picked: URL) -> String {
+        let scoped = picked.startAccessingSecurityScopedResource()
+        defer { if scoped { picked.stopAccessingSecurityScopedResource() } }
+        guard let file = try? AVAudioFile(forReading: picked) else {
+            return "「\(picked.lastPathComponent)」は音声ファイルとして開けませんでした。"
+        }
+        let seconds = Double(file.length) / file.processingFormat.sampleRate
+        guard let source = ShadowingClips.sources.min(by: { abs($0.duration - seconds) < abs($1.duration - seconds) }),
+              abs(source.duration - seconds) < 2.5 else {
+            return "「\(picked.lastPathComponent)」（\(Int(seconds))秒）は、登録されている録音と長さが合いません。"
+        }
+        do {
+            try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+            if let old = imported[source.key] { try? FileManager.default.removeItem(at: old) }
+            let ext = picked.pathExtension.isEmpty ? "m4a" : picked.pathExtension
+            let dest = folder.appendingPathComponent("source_\(source.key).\(ext)")
+            try? FileManager.default.removeItem(at: dest)
+            try FileManager.default.copyItem(at: picked, to: dest)
+        } catch {
+            return "取り込みに失敗しました。もう一度お試しください。"
+        }
+        refresh()
+        return "\(source.label) を取り込みました。"
+    }
+
+    func remove(_ key: String) {
+        if let u = imported[key] { try? FileManager.default.removeItem(at: u) }
+        refresh()
     }
 }
 
@@ -80,7 +157,16 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
         return nil
     }
 
-    static func hasAudio(_ item: ShadowingItem) -> Bool { audioURL(for: item) != nil }
+    /// The sentence's place in one of the learner's imported recordings.
+    static func importedClip(for item: ShadowingItem) -> (url: URL, clip: ShadowingClip)? {
+        guard let clip = ShadowingClips.all[item.id],
+              let url = ShadowingSourceStore.shared.url(for: clip.source) else { return nil }
+        return (url, clip)
+    }
+
+    static func hasAudio(_ item: ShadowingItem) -> Bool {
+        audioURL(for: item) != nil || importedClip(for: item) != nil
+    }
 
     /// Start time of each word in seconds.
     static func timings(for item: ShadowingItem, duration: TimeInterval) -> [TimeInterval] {
@@ -122,7 +208,13 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
         playingId = item.id
         currentWord = start
         BGMManager.shared.duck(true)
-        if let url = Self.audioURL(for: item), playFile(url, item: item, fromWord: start, speed: speed) {
+        if let url = Self.audioURL(for: item),
+           playFile(url, item: item, segment: nil, times: nil, fromWord: start, speed: speed) {
+            return
+        }
+        if let found = Self.importedClip(for: item),
+           playFile(found.url, item: item, segment: (max(0, found.clip.start - 0.1), found.clip.end + 0.18),
+                    times: found.clip.wordStarts, fromWord: start, speed: speed) {
             return
         }
         playTTS(item, fromWord: start, speed: speed)
@@ -147,7 +239,10 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
         stop()
     }
 
-    private func playFile(_ url: URL, item: ShadowingItem, fromWord: Int, speed: Double) -> Bool {
+    /// `segment` limits playback to part of the file (start, end in seconds);
+    /// `times` are the word start times inside the file when known.
+    private func playFile(_ url: URL, item: ShadowingItem, segment: (TimeInterval, TimeInterval)?,
+                          times: [TimeInterval]?, fromWord: Int, speed: Double) -> Bool {
         guard let file = try? AVAudioFile(forReading: url) else { return false }
         let format = file.processingFormat
         if !attached {
@@ -163,11 +258,19 @@ final class ShadowingPlayer: NSObject, ObservableObject, AVSpeechSynthesizerDele
 
         let sr = format.sampleRate
         let duration = Double(file.length) / sr
-        wordTimes = Self.timings(for: item, duration: duration)
-        let startTime = max(0, (wordTimes.indices.contains(fromWord) ? wordTimes[fromWord] : 0) - 0.04)
+        let segStart = max(0, segment?.0 ?? 0)
+        let segEnd = min(duration, segment?.1 ?? duration)
+        if let times, times.count == item.words.count {
+            wordTimes = times
+        } else {
+            wordTimes = Self.timings(for: item, duration: duration)
+        }
+        let wordStart = wordTimes.indices.contains(fromWord) ? wordTimes[fromWord] : segStart
+        let startTime = fromWord == 0 ? segStart : max(segStart, wordStart - 0.05)
         let startFrame = AVAudioFramePosition(startTime * sr)
-        guard startFrame < file.length else { return false }
-        let frames = AVAudioFrameCount(file.length - startFrame)
+        let endFrame = min(file.length, AVAudioFramePosition(segEnd * sr))
+        guard startFrame < endFrame else { return false }
+        let frames = AVAudioFrameCount(endFrame - startFrame)
 
         do {
             if !engine.isRunning {
@@ -240,6 +343,9 @@ struct ShadowingSection: View {
     @AppStorage("shadowing.speed") private var speedRaw: Double = 1.0
     @AppStorage("shadowing.done") private var doneRaw: String = ""
     @State private var filter: Filter = .all
+    @ObservedObject private var sources = ShadowingSourceStore.shared
+    @State private var importing = false
+    @State private var importMessage: String? = nil
 
     enum Filter: String, CaseIterable { case all = "すべて", todo = "未チェック", done = "チェック済み" }
 
@@ -257,6 +363,7 @@ struct ShadowingSection: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             intro
+            ownAudioCard
             speedRow
             HStack(spacing: 8) {
                 ForEach(Filter.allCases, id: \.self) { f in
@@ -280,6 +387,54 @@ struct ShadowingSection: View {
             }
         }
         .onDisappear { player.stop() }
+        .fileImporter(isPresented: $importing, allowedContentTypes: [.audio], allowsMultipleSelection: true) { result in
+            switch result {
+            case .success(let urls):
+                importMessage = urls.map { sources.importFile($0) }.joined(separator: "\n")
+            case .failure:
+                importMessage = "ファイルを開けませんでした。"
+            }
+        }
+    }
+
+    /// 自分の録音ファイルを取り込んで、原音で練習する（端末の中だけに保存）。
+    private var ownAudioCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("自分の録音で練習する").font(LFont.heading(14)).foregroundStyle(Palette.text)
+            Text("iPhone の「ファイル」にある自分の録音を取り込むと、対応する文を元の音声で再生します。音声はこの端末の中だけに保存され、アプリには含まれません。")
+                .font(LFont.caption(11)).foregroundStyle(Palette.subText)
+                .fixedSize(horizontal: false, vertical: true)
+            ForEach(ShadowingClips.sources) { src in
+                let count = ShadowingClips.all.values.filter { $0.source == src.key }.count
+                HStack(spacing: 8) {
+                    Image(systemName: sources.url(for: src.key) != nil ? "checkmark.circle.fill" : "circle")
+                        .foregroundStyle(sources.url(for: src.key) != nil ? Palette.green : Palette.faint)
+                    Text("\(src.label)・\(count)文").font(LFont.body(13)).foregroundStyle(Palette.text)
+                    Spacer()
+                    if sources.url(for: src.key) != nil {
+                        Button { player.stop(); sources.remove(src.key) } label: {
+                            Text("削除").font(LFont.caption(12)).foregroundStyle(Palette.stageRed)
+                        }
+                        .buttonStyle(.plain)
+                    } else {
+                        Text("未取り込み").font(LFont.caption(11)).foregroundStyle(Palette.faint)
+                    }
+                }
+            }
+            Button { importing = true } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "square.and.arrow.down").font(.system(size: 12, weight: .bold))
+                    Text("音声ファイルを取り込む")
+                }
+            }
+            .buttonStyle(OutlineButtonStyle(fullWidth: false))
+            if let m = importMessage {
+                Text(m).font(LFont.caption(12)).foregroundStyle(Palette.green)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .sketchCard(padding: 14)
     }
 
     private var intro: some View {
@@ -330,8 +485,20 @@ struct ShadowingCard: View {
     let speed: Double
     let onToggleCheck: () -> Void
     @ObservedObject private var player = ShadowingPlayer.shared
+    @ObservedObject private var sources = ShadowingSourceStore.shared
 
     private var isPlaying: Bool { player.playingId == item.id }
+
+    /// Small label saying which voice will be heard.
+    private var audioTag: (String, Color)? {
+        if ShadowingPlayer.audioURL(for: item) != nil { return nil }
+        if let clip = ShadowingClips.all[item.id] {
+            return sources.url(for: clip.source) != nil
+                ? ("原音", Palette.markerGreen)
+                : ("録音を取り込むと原音で再生", Palette.cream)
+        }
+        return ("iPhoneの声", Palette.cream)
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -341,8 +508,8 @@ struct ShadowingCard: View {
                     .accessibilityLabel(checked ? "チェックを外す" : "練習済みにする")
                 Text(String(format: "%02d", number))
                     .font(LFont.title(18)).foregroundStyle(Palette.stageBlue)
-                if !ShadowingPlayer.hasAudio(item) {
-                    SketchTag(text: "音声準備中・iPhoneの声", fill: Palette.cream)
+                if let tag = audioTag {
+                    SketchTag(text: tag.0, fill: tag.1)
                 }
                 Spacer()
                 Button {
