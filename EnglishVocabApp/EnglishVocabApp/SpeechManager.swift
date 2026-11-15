@@ -154,6 +154,11 @@ final class SpeechManager: NSObject, AVSpeechSynthesizerDelegate, @unchecked Sen
         return "\(v.name)（\(q)）"
     }
 
+    /// The voice the speaker buttons use right now (accent from 設定).
+    func currentVoice() -> AVSpeechSynthesisVoice? {
+        bestVoice(for: AppSettings.shared.accent)
+    }
+
     private func bestVoice(for accent: EnglishAccent) -> AVSpeechSynthesisVoice? {
         if let cached = cachedVoice, cachedAccent == accent { return cached }
         let chosen = pickVoice(for: accent)

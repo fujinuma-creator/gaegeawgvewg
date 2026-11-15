@@ -6,6 +6,8 @@ struct PronunciationView: View {
     @EnvironmentObject var settings: AppSettings
     @Binding var path: NavigationPath
     @State private var group: SoundGroup = .vowels
+    /// 「シャドウイング」タブ（子音の右）を表示中か。
+    @AppStorage("pron.showShadowing") private var showShadowing = false
     @State private var selected: SoundItem? = PronunciationSeed.vowels.first
     @State private var shownWords: [SoundWord] = []
     @State private var generating = false
@@ -22,28 +24,39 @@ struct PronunciationView: View {
                 VStack(spacing: 16) {
                     ScreenTopBar { path.removeLast() }
                     ScreenHeaderCard(title: "発音", tagline: "耳で聞いて、\n口でまねる。", image: "hdr_mic", markerColor: Palette.markerBlue)
-                    HStack(spacing: 8) {
-                        ForEach(SoundGroup.allCases) { g in
-                            SketchChip(title: g.rawValue, selected: group == g) {
-                                group = g
-                                selected = PronunciationSeed.items(in: g).first
-                                reshuffle()
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            ForEach(SoundGroup.allCases) { g in
+                                SketchChip(title: g.rawValue, selected: !showShadowing && group == g) {
+                                    showShadowing = false
+                                    group = g
+                                    selected = PronunciationSeed.items(in: g).first
+                                    reshuffle()
+                                }
+                            }
+                            SketchChip(title: "シャドウイング", selected: showShadowing) {
+                                showShadowing = true
                             }
                         }
-                        Spacer()
+                        .padding(.vertical, 3)
+                        .padding(.trailing, 4)
                     }
-                    LazyVGrid(columns: columns, spacing: 10) {
-                        ForEach(items) { item in
-                            tile(item)
+                    if showShadowing {
+                        ShadowingSection()
+                    } else {
+                        LazyVGrid(columns: columns, spacing: 10) {
+                            ForEach(items) { item in
+                                tile(item)
+                            }
                         }
+                        if let note = PronunciationSeed.note[group] {
+                            Text(note)
+                                .font(LFont.caption(11)).foregroundStyle(Palette.subText)
+                                .padding(.vertical, 4).padding(.horizontal, 10)
+                                .background(Palette.paper.opacity(0.9))
+                        }
+                        if let s = selected { detailCard(s) }
                     }
-                    if let note = PronunciationSeed.note[group] {
-                        Text(note)
-                            .font(LFont.caption(11)).foregroundStyle(Palette.subText)
-                            .padding(.vertical, 4).padding(.horizontal, 10)
-                            .background(Palette.paper.opacity(0.9))
-                    }
-                    if let s = selected { detailCard(s) }
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 8)

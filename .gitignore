@@ -29,3 +29,4 @@ Pods/
 *.pem
 *.orig.*
 tools/bgm/*.wav
+__pycache__/
