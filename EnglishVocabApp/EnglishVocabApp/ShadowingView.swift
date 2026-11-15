@@ -547,16 +547,21 @@ struct ShadowingCard: View {
 
             speedRow
 
-            FlowLayout(spacing: 6) {
+            // Plain running text: each word is still tappable, and only the
+            // word being read gets a marker highlight.
+            FlowLayout(spacing: 2) {
                 ForEach(Array(item.words.enumerated()), id: \.offset) { i, w in
                     let lit = isPlaying && player.currentWord == i
                     Button { player.play(item, fromWord: i, speed: speed) } label: {
                         Text(w)
                             .font(LFont.heading(18))
                             .foregroundStyle(Palette.text)
-                            .padding(.vertical, 4).padding(.horizontal, 6)
-                            .background(lit ? Palette.markerYellow : Palette.paper)
-                            .overlay(Rectangle().strokeBorder(Palette.ink.opacity(lit ? 0.8 : 0.2), lineWidth: lit ? 1.4 : 1))
+                            .padding(.vertical, 3).padding(.horizontal, 2)
+                            .background(
+                                RoundedRectangle(cornerRadius: 3)
+                                    .fill(lit ? Palette.markerYellow : Color.clear)
+                            )
+                            .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .disabled(!canPlay)
